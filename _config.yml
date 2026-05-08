@@ -12,7 +12,23 @@ kramdown:
   syntax_highlighter: rouge
   hard_wrap: false
 
-# Pretty URLs (so /folder/file.md shows up cleanly)
+# Plugins (whitelisted by GitHub Pages)
+plugins:
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+
+# Auto-convert .md links inside markdown content to clean .html links
+relative_links:
+  enabled: true
+  collections: true
+
+# Treat all .md files as Jekyll pages even without front matter
+optional_front_matter:
+  remove_originals: true
+  enabled: true
+
+# Pretty URLs (so /folder/file shows up cleanly without .md)
 permalink: pretty
 
 # Apply our custom protected layout to every markdown page
