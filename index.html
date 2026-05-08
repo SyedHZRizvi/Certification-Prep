@@ -3,10 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Cert Hub — Free Scrum Master & PMP Course</title>
-  <meta name="description" content="A free, comprehensive, story-driven self-study course to pass the Scrum Master (PSM I) and PMP exams. 18 modules, 6 practice exams, flashcards, and a 12-week study plan." />
-  <meta property="og:title" content="The Cert Hub — Free Scrum Master & PMP Course" />
-  <meta property="og:description" content="Pass PSM I and PMP without falling asleep. Engaging lessons, practice exams, flashcards. Free forever." />
+  <title>The Cert Hub — Scrum Master & PMP Course by Syed HZ Rizvi</title>
+  <meta name="description" content="A comprehensive, story-driven self-study course to pass the Scrum Master (PSM I) and PMP exams. Designed and authored by Syed HZ Rizvi." />
+  <meta name="author" content="Syed HZ Rizvi" />
+  <meta name="copyright" content="© 2026 Syed HZ Rizvi. All Rights Reserved." />
+  <meta name="robots" content="noarchive, noimageindex" />
+  <meta property="og:title" content="The Cert Hub — Scrum Master & PMP Course" />
+  <meta property="og:description" content="Pass PSM I and PMP. Story-driven lessons by Syed HZ Rizvi." />
   <meta property="og:type" content="website" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🎓%3C/text%3E%3C/svg%3E" />
   <script src="https://cdn.tailwindcss.com"></script>
@@ -15,8 +18,19 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
   <style>
     html { scroll-behavior: smooth; }
-    body { font-family: 'Inter', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      /* Disable text selection */
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-touch-callout: none;
+      -webkit-tap-highlight-color: transparent;
+    }
     h1, h2, h3, .display { font-family: 'Plus Jakarta Sans', 'Inter', sans-serif; letter-spacing: -0.02em; }
+    img, video { pointer-events: none; -webkit-user-drag: none; user-drag: none; }
     .grain {
       background-image:
         radial-gradient(circle at 20% 30%, rgba(99, 102, 241, 0.15), transparent 40%),
@@ -41,14 +55,61 @@
       padding: .25rem .75rem; border-radius: 9999px;
       font-size: .75rem; font-weight: 600; letter-spacing: .02em;
     }
-    /* nav backdrop */
     .nav-blur { backdrop-filter: saturate(150%) blur(12px); }
+
+    /* Watermark — subtle, repeating, behind content */
+    .watermark-overlay {
+      position: fixed; inset: 0; pointer-events: none; z-index: 1;
+      background-image: repeating-linear-gradient(
+        -30deg,
+        transparent 0,
+        transparent 200px,
+        rgba(0,0,0,0.025) 200px,
+        rgba(0,0,0,0.025) 240px
+      );
+      mix-blend-mode: multiply;
+    }
+    .watermark-text {
+      position: fixed; inset: 0; pointer-events: none; z-index: 1;
+      display: grid; place-items: center;
+      overflow: hidden;
+    }
+    .watermark-text::before {
+      content: '© Syed HZ Rizvi · Cert Hub · © Syed HZ Rizvi · Cert Hub · © Syed HZ Rizvi · Cert Hub';
+      position: absolute;
+      width: 200%; height: 200%;
+      transform: rotate(-25deg);
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: 0.5em;
+      color: rgba(15, 23, 42, 0.035);
+      line-height: 6em;
+      text-align: center;
+      white-space: pre-wrap;
+      word-spacing: 4em;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    /* Make sure the actual content sits above watermark */
+    nav, section, footer { position: relative; z-index: 2; }
+    /* Print blocking */
+    @media print {
+      body * { visibility: hidden !important; }
+      body::after {
+        content: 'This content is © 2026 Syed HZ Rizvi. All Rights Reserved. Printing is not permitted. Visit https://syedhzrizvi.github.io/Certification-Prep/ to view online.';
+        visibility: visible !important;
+        display: block; position: fixed; inset: 0;
+        padding: 4em; font-size: 1.2em;
+      }
+    }
   </style>
 </head>
 <body class="bg-white text-slate-900">
 
+  <!-- Watermarks -->
+  <div class="watermark-text" aria-hidden="true"></div>
+
   <!-- ============== NAV ============== -->
-  <nav class="sticky top-0 z-50 bg-white/80 nav-blur border-b border-slate-200/60">
+  <nav class="sticky top-0 z-50 bg-white/85 nav-blur border-b border-slate-200/60">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
       <a href="#" class="flex items-center gap-2 font-extrabold text-lg">
         <span class="text-2xl">🎓</span>
@@ -57,7 +118,7 @@
       <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
         <a href="#paths" class="hover:text-slate-900 transition">Courses</a>
         <a href="#how" class="hover:text-slate-900 transition">How It Works</a>
-        <a href="#curriculum" class="hover:text-slate-900 transition">Curriculum</a>
+        <a href="#author" class="hover:text-slate-900 transition">About the Creator</a>
         <a href="#start" class="hover:text-slate-900 transition">Get Started</a>
       </div>
       <a href="#start" class="inline-flex items-center gap-1.5 bg-slate-900 hover:bg-slate-800 text-white text-sm font-semibold px-4 py-2 rounded-lg transition">
@@ -73,15 +134,18 @@
     <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-24 md:pt-28 md:pb-32 text-center">
       <span class="pill bg-indigo-500/15 text-indigo-300 ring-1 ring-indigo-400/30 mb-6">
         <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-        100% Free · No signup · MIT licensed
+        Designed &amp; authored by Syed HZ Rizvi
       </span>
       <h1 class="display text-5xl sm:text-6xl md:text-7xl font-extrabold leading-[1.05] mb-6">
         Pass <span class="gradient-text-blue">Scrum Master</span><br class="hidden sm:block" />
-        & <span class="gradient-text-blue">PMP</span> with confidence.
+        &amp; <span class="gradient-text-blue">PMP</span> with confidence.
       </h1>
-      <p class="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed">
+      <p class="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto mb-4 leading-relaxed">
         A complete, story-driven self-study course built to make studying actually
         <em>enjoyable</em> — without falling asleep, drowning in jargon, or hating your life.
+      </p>
+      <p class="text-sm text-slate-400 max-w-xl mx-auto mb-10">
+        Created by <strong class="text-white">Syed HZ Rizvi</strong> · © 2026 · All Rights Reserved
       </p>
       <div class="flex flex-col sm:flex-row gap-3 justify-center">
         <a href="#paths" class="inline-flex items-center justify-center gap-2 bg-white text-slate-900 font-semibold px-7 py-3.5 rounded-xl hover:bg-slate-100 transition shadow-lg shadow-indigo-500/20">
@@ -107,8 +171,8 @@
           <div class="text-sm text-slate-400 mt-1">Week study plan</div>
         </div>
         <div>
-          <div class="text-3xl md:text-4xl font-extrabold gradient-text-blue">$0</div>
-          <div class="text-sm text-slate-400 mt-1">Forever free</div>
+          <div class="text-3xl md:text-4xl font-extrabold gradient-text-blue">200+</div>
+          <div class="text-sm text-slate-400 mt-1">Practice questions</div>
         </div>
       </div>
     </div>
@@ -118,7 +182,7 @@
   <section id="paths" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
     <div class="text-center mb-14">
       <span class="pill bg-slate-100 text-slate-700 mb-4">02 · Pick your goal</span>
-      <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Two world-class certifications.<br />One free curriculum.</h2>
+      <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Two world-class certifications.<br />One thoughtfully-designed curriculum.</h2>
       <p class="text-lg text-slate-600 max-w-2xl mx-auto">
         Start with whichever fits your timeline. Doing both? We recommend Scrum Master first — it's faster, cheaper, and builds the foundation.
       </p>
@@ -285,10 +349,54 @@
     </div>
   </section>
 
+  <!-- ============== ABOUT THE CREATOR ============== -->
+  <section id="author" class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
+    <div class="bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 rounded-3xl p-8 md:p-14 text-white relative overflow-hidden">
+      <div class="absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_top_right,_rgba(167,139,250,0.4),_transparent_60%)]"></div>
+      <div class="relative grid md:grid-cols-3 gap-8 items-center">
+        <div class="md:col-span-1 text-center">
+          <div class="w-32 h-32 rounded-full bg-gradient-to-br from-indigo-400 to-pink-400 mx-auto flex items-center justify-center text-5xl font-extrabold text-white shadow-2xl">
+            SR
+          </div>
+          <p class="mt-4 text-indigo-200 text-sm font-medium">Designer · Author · Curator</p>
+        </div>
+        <div class="md:col-span-2">
+          <span class="pill bg-white/10 text-white ring-1 ring-white/20 mb-4">04 · About the creator</span>
+          <h2 class="display text-3xl md:text-4xl font-extrabold mb-4">
+            Designed &amp; authored by<br /><span class="gradient-text-blue">Syed HZ Rizvi</span>
+          </h2>
+          <p class="text-slate-300 leading-relaxed mb-4">
+            Every module, story, quiz, practice exam, flashcard, and cheat sheet on this site
+            was <strong class="text-white">designed and written by Syed HZ Rizvi</strong> — built from the ground
+            up to be the kind of study experience he wished existed when prepping for these exams himself.
+          </p>
+          <p class="text-slate-300 leading-relaxed mb-6">
+            The goal: make passing the Scrum Master and PMP exams accessible to anyone with the
+            discipline to follow the plan — without a $1,000+ bootcamp.
+          </p>
+          <div class="flex flex-wrap gap-3">
+            <a href="https://github.com/SyedHZRizvi" class="inline-flex items-center gap-2 bg-white text-slate-900 font-semibold px-5 py-2.5 rounded-lg hover:bg-slate-100 transition text-sm">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              @SyedHZRizvi
+            </a>
+            <a href="#start" class="inline-flex items-center gap-2 bg-white/10 ring-1 ring-white/20 hover:bg-white/15 text-white font-semibold px-5 py-2.5 rounded-lg transition text-sm">
+              Begin the course →
+            </a>
+          </div>
+          <p class="text-xs text-slate-400 mt-6 leading-relaxed">
+            All content © 2026 Syed HZ Rizvi. All Rights Reserved.
+            This material is provided for personal study only — copying, reproduction,
+            or redistribution is not permitted without prior written consent.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ============== CURRICULUM ============== -->
   <section id="curriculum" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
     <div class="text-center mb-14">
-      <span class="pill bg-slate-100 text-slate-700 mb-4">04 · Curriculum</span>
+      <span class="pill bg-slate-100 text-slate-700 mb-4">05 · Curriculum</span>
       <h2 class="text-4xl md:text-5xl font-extrabold mb-4">What you'll master</h2>
       <p class="text-lg text-slate-600 max-w-2xl mx-auto">
         18 modules. ~150 hours of focused content. Click any topic to start.
@@ -350,64 +458,12 @@
     </div>
   </section>
 
-  <!-- ============== WHAT YOU GET ============== -->
-  <section class="bg-slate-950 text-white">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
-      <div class="text-center mb-14">
-        <span class="pill bg-white/10 text-white ring-1 ring-white/20 mb-4">05 · Everything included</span>
-        <h2 class="text-4xl md:text-5xl font-extrabold mb-4">A complete learning kit.</h2>
-      </div>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        <div class="bg-white/5 ring-1 ring-white/10 rounded-2xl p-6">
-          <div class="text-3xl mb-3">📖</div>
-          <div class="font-bold mb-1">18 reading modules</div>
-          <div class="text-sm text-slate-400">Story-driven, exam-focused.</div>
-        </div>
-        <div class="bg-white/5 ring-1 ring-white/10 rounded-2xl p-6">
-          <div class="text-3xl mb-3">🎥</div>
-          <div class="font-bold mb-1">Curated video links</div>
-          <div class="text-sm text-slate-400">Best free YouTube content per topic.</div>
-        </div>
-        <div class="bg-white/5 ring-1 ring-white/10 rounded-2xl p-6">
-          <div class="text-3xl mb-3">✏️</div>
-          <div class="font-bold mb-1">Quizzes per module</div>
-          <div class="text-sm text-slate-400">200+ practice Qs with full explanations.</div>
-        </div>
-        <div class="bg-white/5 ring-1 ring-white/10 rounded-2xl p-6">
-          <div class="text-3xl mb-3">🃏</div>
-          <div class="font-bold mb-1">150+ flashcards</div>
-          <div class="text-sm text-slate-400">Anki-ready, organized by topic.</div>
-        </div>
-        <div class="bg-white/5 ring-1 ring-white/10 rounded-2xl p-6">
-          <div class="text-3xl mb-3">🧪</div>
-          <div class="font-bold mb-1">6 mock exams</div>
-          <div class="text-sm text-slate-400">3 per cert, with answer keys.</div>
-        </div>
-        <div class="bg-white/5 ring-1 ring-white/10 rounded-2xl p-6">
-          <div class="text-3xl mb-3">📋</div>
-          <div class="font-bold mb-1">Cheat sheets</div>
-          <div class="text-sm text-slate-400">One-page review per module.</div>
-        </div>
-        <div class="bg-white/5 ring-1 ring-white/10 rounded-2xl p-6">
-          <div class="text-3xl mb-3">📅</div>
-          <div class="font-bold mb-1">12-week plan</div>
-          <div class="text-sm text-slate-400">Day-by-day study schedule.</div>
-        </div>
-        <div class="bg-white/5 ring-1 ring-white/10 rounded-2xl p-6">
-          <div class="text-3xl mb-3">🎯</div>
-          <div class="font-bold mb-1">Exam-day tactics</div>
-          <div class="text-sm text-slate-400">Mindset, time management, traps.</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- ============== START CTA ============== -->
   <section id="start" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 text-center">
     <span class="pill bg-emerald-100 text-emerald-800 mb-5">06 · Ready when you are</span>
     <h2 class="text-4xl md:text-5xl font-extrabold mb-5">Your prep starts in the next 60 seconds.</h2>
     <p class="text-lg text-slate-600 mb-8 max-w-2xl mx-auto">
-      Read the Quick-Start Guide, pick a path, and start Module 1 today. No signups, no upsells, no nonsense.
+      Read the Quick-Start Guide, pick a path, and start Module 1 today.
     </p>
     <div class="flex flex-col sm:flex-row gap-3 justify-center mb-12">
       <a href="00-Study-Plan/Quick-Start-Guide.md" class="inline-flex items-center justify-center gap-2 bg-slate-900 hover:bg-slate-800 text-white font-semibold px-7 py-3.5 rounded-xl transition shadow-lg">
@@ -421,12 +477,12 @@
     <!-- share -->
     <div class="mt-10 bg-gradient-to-br from-indigo-50 to-pink-50 border border-indigo-100 rounded-2xl p-6 md:p-8">
       <p class="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-2">Know someone studying?</p>
-      <p class="text-lg font-medium text-slate-800 mb-4">Share this free course with them.</p>
+      <p class="text-lg font-medium text-slate-800 mb-4">Share the course link with them.</p>
       <div class="flex flex-wrap gap-2 justify-center">
-        <a href="https://wa.me/?text=Free%20study%20course%20for%20Scrum%20Master%20%26%20PMP%20exams%3A%20https%3A%2F%2Fsyedhzrizvi.github.io%2FCertification-Prep%2F" class="bg-white px-4 py-2 rounded-lg ring-1 ring-slate-200 text-sm font-medium hover:bg-slate-50">📱 WhatsApp</a>
+        <a href="https://wa.me/?text=Free%20study%20course%20for%20Scrum%20Master%20%26%20PMP%20exams%20by%20Syed%20HZ%20Rizvi%3A%20https%3A%2F%2Fsyedhzrizvi.github.io%2FCertification-Prep%2F" class="bg-white px-4 py-2 rounded-lg ring-1 ring-slate-200 text-sm font-medium hover:bg-slate-50">📱 WhatsApp</a>
         <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsyedhzrizvi.github.io%2FCertification-Prep%2F" class="bg-white px-4 py-2 rounded-lg ring-1 ring-slate-200 text-sm font-medium hover:bg-slate-50">💼 LinkedIn</a>
-        <a href="mailto:?subject=Free%20Scrum%20Master%20%26%20PMP%20Course&body=Check%20out%20this%20free%20study%20course%3A%20https%3A%2F%2Fsyedhzrizvi.github.io%2FCertification-Prep%2F" class="bg-white px-4 py-2 rounded-lg ring-1 ring-slate-200 text-sm font-medium hover:bg-slate-50">📧 Email</a>
-        <a href="https://twitter.com/intent/tweet?text=Free%20study%20course%20for%20Scrum%20Master%20%26%20PMP%20exams%3A%20https%3A%2F%2Fsyedhzrizvi.github.io%2FCertification-Prep%2F" class="bg-white px-4 py-2 rounded-lg ring-1 ring-slate-200 text-sm font-medium hover:bg-slate-50">🐦 Twitter/X</a>
+        <a href="mailto:?subject=Scrum%20Master%20%26%20PMP%20Course%20by%20Syed%20HZ%20Rizvi&body=Check%20out%20this%20study%20course%3A%20https%3A%2F%2Fsyedhzrizvi.github.io%2FCertification-Prep%2F" class="bg-white px-4 py-2 rounded-lg ring-1 ring-slate-200 text-sm font-medium hover:bg-slate-50">📧 Email</a>
+        <a href="https://twitter.com/intent/tweet?text=Scrum%20Master%20%26%20PMP%20study%20course%20by%20Syed%20HZ%20Rizvi%3A%20https%3A%2F%2Fsyedhzrizvi.github.io%2FCertification-Prep%2F" class="bg-white px-4 py-2 rounded-lg ring-1 ring-slate-200 text-sm font-medium hover:bg-slate-50">🐦 Twitter/X</a>
       </div>
     </div>
   </section>
@@ -437,8 +493,8 @@
       <div>
         <div class="flex items-center gap-2 font-extrabold mb-2"><span class="text-xl">🎓</span> The Cert Hub</div>
         <p class="text-sm text-slate-500 leading-relaxed">
-          A free, MIT-licensed self-study course for the Scrum Master (PSM I) and PMP exams.
-          Built by <a href="https://github.com/SyedHZRizvi" class="text-slate-900 font-medium hover:underline">@SyedHZRizvi</a>.
+          Designed &amp; authored by <strong class="text-slate-900">Syed HZ Rizvi</strong>.
+          A complete self-study course for the Scrum Master (PSM I) and PMP exams.
         </p>
       </div>
       <div>
@@ -454,19 +510,92 @@
         <p class="text-sm font-bold mb-2">Resources</p>
         <ul class="text-sm space-y-1.5 text-slate-600">
           <li><a href="Resources/Books-and-Links.md" class="hover:text-slate-900">Books &amp; Links</a></li>
-          <li><a href="Resources/Free-Practice-Tests.md" class="hover:text-slate-900">Free Practice Tests</a></li>
+          <li><a href="Resources/Free-Practice-Tests.md" class="hover:text-slate-900">Practice Tests</a></li>
           <li><a href="Resources/Communities.md" class="hover:text-slate-900">Communities</a></li>
-          <li><a href="https://github.com/SyedHZRizvi/Certification-Prep" class="hover:text-slate-900">View on GitHub ↗</a></li>
+          <li><a href="https://github.com/SyedHZRizvi" class="hover:text-slate-900">GitHub: @SyedHZRizvi ↗</a></li>
         </ul>
       </div>
     </div>
-    <div class="border-t border-slate-100">
+    <div class="border-t border-slate-100 bg-slate-50">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row gap-2 items-center justify-between text-xs text-slate-500">
-        <p>MIT licensed · Free forever · No tracking</p>
+        <p>
+          © 2026 <strong class="text-slate-700">Syed HZ Rizvi</strong>. All Rights Reserved.
+          Personal study use only — copying &amp; reproduction prohibited.
+        </p>
         <p>Not affiliated with PMI® or Scrum.org. PMP and PSM are trademarks of their respective owners.</p>
       </div>
     </div>
   </footer>
+
+  <!-- ============== CONTENT PROTECTION ============== -->
+  <script>
+    (function () {
+      // Disable right-click context menu
+      document.addEventListener('contextmenu', function (e) {
+        e.preventDefault();
+        showWarning();
+        return false;
+      });
+
+      // Disable text selection
+      document.addEventListener('selectstart', function (e) {
+        e.preventDefault();
+        return false;
+      });
+
+      // Disable copy / cut / paste
+      ['copy', 'cut', 'paste'].forEach(function (evt) {
+        document.addEventListener(evt, function (e) {
+          e.preventDefault();
+          showWarning();
+          return false;
+        });
+      });
+
+      // Disable image drag
+      document.addEventListener('dragstart', function (e) {
+        e.preventDefault();
+        return false;
+      });
+
+      // Block keyboard shortcuts
+      document.addEventListener('keydown', function (e) {
+        var key = e.keyCode || e.which;
+        var ctrl = e.ctrlKey || e.metaKey;
+
+        // F12 (DevTools)
+        if (key === 123) { e.preventDefault(); showWarning(); return false; }
+        // Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+Shift+C (DevTools)
+        if (ctrl && e.shiftKey && (key === 73 || key === 74 || key === 67)) {
+          e.preventDefault(); showWarning(); return false;
+        }
+        // Ctrl+U (View source)
+        if (ctrl && key === 85) { e.preventDefault(); showWarning(); return false; }
+        // Ctrl+S (Save)
+        if (ctrl && key === 83) { e.preventDefault(); showWarning(); return false; }
+        // Ctrl+P (Print)
+        if (ctrl && key === 80) { e.preventDefault(); showWarning(); return false; }
+        // Ctrl+A (Select all)
+        if (ctrl && key === 65) { e.preventDefault(); return false; }
+        // Ctrl+C (Copy)
+        if (ctrl && key === 67) { e.preventDefault(); showWarning(); return false; }
+      });
+
+      // Subtle warning toast
+      var warningTimeout;
+      function showWarning() {
+        var existing = document.getElementById('cph-warn');
+        if (existing) existing.remove();
+        var t = document.createElement('div');
+        t.id = 'cph-warn';
+        t.style.cssText = 'position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:#0f172a;color:#fff;padding:14px 20px;border-radius:10px;font-size:14px;font-weight:500;z-index:9999;box-shadow:0 10px 30px rgba(0,0,0,.25);font-family:Inter,sans-serif;max-width:90%;';
+        t.innerHTML = '🔒 This content is © 2026 Syed HZ Rizvi. Copying is not permitted.';
+        document.body.appendChild(t);
+        clearTimeout(warningTimeout);
+        warningTimeout = setTimeout(function () { if (t.parentNode) t.remove(); }, 3000);
+      }
+    })();
+  </script>
 
 </body>
 </html>

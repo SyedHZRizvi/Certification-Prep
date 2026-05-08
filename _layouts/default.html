@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ page.title | default: site.title }} — by Syed HZ Rizvi</title>
+  <meta name="description" content="{{ page.description | default: site.description }}" />
+  <meta name="author" content="Syed HZ Rizvi" />
+  <meta name="copyright" content="© 2026 Syed HZ Rizvi. All Rights Reserved." />
+  <meta name="robots" content="noarchive, noimageindex" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🎓%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      background: #fafafa;
+      color: #0f172a;
+      margin: 0;
+      line-height: 1.7;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-touch-callout: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+    img, video { pointer-events: none; -webkit-user-drag: none; user-drag: none; max-width: 100%; }
+    h1, h2, h3, h4 { font-family: 'Plus Jakarta Sans', 'Inter', sans-serif; letter-spacing: -0.02em; line-height: 1.25; }
+
+    /* Top bar */
+    .topbar {
+      position: sticky; top: 0; z-index: 50;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: saturate(150%) blur(12px);
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .topbar-inner {
+      max-width: 880px; margin: 0 auto; padding: 0 24px;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 60px;
+    }
+    .topbar a.brand {
+      display: flex; align-items: center; gap: 8px;
+      text-decoration: none; color: #0f172a; font-weight: 800;
+    }
+    .topbar .author-tag {
+      font-size: 12px; color: #64748b; font-weight: 500;
+    }
+    .topbar .home-btn {
+      background: #0f172a; color: #fff; padding: 8px 14px;
+      border-radius: 8px; font-size: 13px; font-weight: 600;
+      text-decoration: none; transition: background 0.2s;
+    }
+    .topbar .home-btn:hover { background: #1e293b; }
+
+    /* Container */
+    .page {
+      max-width: 880px; margin: 0 auto; padding: 48px 24px 80px;
+      position: relative; z-index: 2;
+    }
+
+    /* Author byline */
+    .byline {
+      display: flex; align-items: center; gap: 12px;
+      padding: 12px 16px; margin-bottom: 32px;
+      background: linear-gradient(135deg, #eef2ff, #fce7f3);
+      border: 1px solid #c7d2fe;
+      border-radius: 12px;
+      font-size: 13px; color: #475569;
+    }
+    .byline .avatar {
+      width: 32px; height: 32px; border-radius: 50%;
+      background: linear-gradient(135deg, #6366f1, #ec4899);
+      color: #fff; display: grid; place-items: center;
+      font-weight: 800; font-size: 12px;
+      flex-shrink: 0;
+    }
+    .byline strong { color: #0f172a; }
+
+    /* Markdown content */
+    .content { background: #fff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 40px 48px; }
+    .content h1 { font-size: 2.25rem; font-weight: 800; margin: 0 0 24px; }
+    .content h2 { font-size: 1.625rem; font-weight: 800; margin: 36px 0 16px; padding-top: 8px; border-top: 1px solid #f1f5f9; }
+    .content h2:first-child { margin-top: 0; padding-top: 0; border-top: 0; }
+    .content h3 { font-size: 1.25rem; font-weight: 700; margin: 28px 0 12px; }
+    .content h4 { font-size: 1.05rem; font-weight: 700; margin: 22px 0 10px; }
+    .content p { margin: 0 0 16px; }
+    .content a { color: #4f46e5; text-decoration: none; border-bottom: 1px solid rgba(79,70,229,0.3); }
+    .content a:hover { color: #4338ca; border-bottom-color: #4338ca; }
+    .content ul, .content ol { margin: 0 0 16px; padding-left: 28px; }
+    .content li { margin-bottom: 6px; }
+    .content blockquote {
+      border-left: 4px solid #818cf8;
+      background: #eef2ff;
+      padding: 14px 20px;
+      margin: 20px 0;
+      border-radius: 0 8px 8px 0;
+      color: #3730a3;
+    }
+    .content blockquote p:last-child { margin-bottom: 0; }
+    .content code {
+      background: #f1f5f9; padding: 2px 7px;
+      border-radius: 5px; font-family: 'Menlo', 'Consolas', monospace;
+      font-size: 0.9em; color: #1e293b;
+    }
+    .content pre {
+      background: #0f172a; color: #e2e8f0;
+      padding: 18px 22px; border-radius: 10px;
+      overflow-x: auto; margin: 20px 0;
+      font-size: 0.875rem; line-height: 1.55;
+    }
+    .content pre code { background: transparent; color: inherit; padding: 0; }
+    .content table {
+      width: 100%; border-collapse: collapse; margin: 20px 0;
+      font-size: 0.92rem;
+    }
+    .content th, .content td {
+      padding: 10px 14px; text-align: left;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .content th { background: #f8fafc; font-weight: 700; color: #0f172a; }
+    .content tr:hover td { background: #fafafa; }
+    .content hr { border: 0; border-top: 1px solid #e2e8f0; margin: 32px 0; }
+    .content strong { color: #0f172a; font-weight: 700; }
+    .content em { color: #475569; }
+
+    /* Footer */
+    .pagefoot {
+      max-width: 880px; margin: 0 auto;
+      padding: 24px; text-align: center;
+      color: #64748b; font-size: 13px;
+    }
+    .pagefoot strong { color: #0f172a; }
+    .pagefoot a { color: #4f46e5; text-decoration: none; }
+    .pagefoot a:hover { text-decoration: underline; }
+
+    /* Watermark */
+    .watermark {
+      position: fixed; inset: 0; pointer-events: none; z-index: 1;
+      display: grid; place-items: center; overflow: hidden;
+    }
+    .watermark::before {
+      content: '© Syed HZ Rizvi · Cert Hub · © Syed HZ Rizvi · Cert Hub · © Syed HZ Rizvi · Cert Hub';
+      position: absolute;
+      width: 200%; height: 200%;
+      transform: rotate(-25deg);
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: 0.5em;
+      color: rgba(15, 23, 42, 0.04);
+      line-height: 6em;
+      text-align: center;
+      white-space: pre-wrap;
+      word-spacing: 4em;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    /* Print blocking */
+    @media print {
+      body * { visibility: hidden !important; }
+      body::after {
+        content: 'This content is © 2026 Syed HZ Rizvi. All Rights Reserved. Printing is not permitted. Visit https://syedhzrizvi.github.io/Certification-Prep/ to view online.';
+        visibility: visible !important;
+        display: block; position: fixed; inset: 0;
+        padding: 4em; font-size: 1.2em;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .content { padding: 24px 20px; border-radius: 12px; }
+      .content h1 { font-size: 1.75rem; }
+      .topbar .author-tag { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="watermark" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="{{ '/' | relative_url }}" class="brand">
+        <span style="font-size:22px;">🎓</span>
+        <span>The Cert Hub</span>
+      </a>
+      <span class="author-tag">by <strong>Syed HZ Rizvi</strong></span>
+      <a href="{{ '/' | relative_url }}" class="home-btn">← Home</a>
+    </div>
+  </header>
+
+  <main class="page">
+    <div class="byline">
+      <div class="avatar">SR</div>
+      <div>
+        Designed &amp; authored by <strong>Syed HZ Rizvi</strong> &middot; © 2026, All Rights Reserved.<br />
+        <span style="font-size:12px;opacity:.85;">Personal study use only — copying &amp; reproduction prohibited.</span>
+      </div>
+    </div>
+
+    <article class="content">
+      {{ content }}
+    </article>
+  </main>
+
+  <footer class="pagefoot">
+    <p>
+      © 2026 <strong>Syed HZ Rizvi</strong>. All Rights Reserved.<br />
+      <a href="{{ '/' | relative_url }}">Back to course home</a> &middot;
+      <a href="https://github.com/SyedHZRizvi">@SyedHZRizvi</a>
+    </p>
+    <p style="font-size:11px;margin-top:14px;opacity:.7;">
+      Not affiliated with PMI® or Scrum.org. PMP and PSM are trademarks of their respective owners.
+    </p>
+  </footer>
+
+  <!-- Content Protection -->
+  <script>
+    (function () {
+      document.addEventListener('contextmenu', function (e) { e.preventDefault(); showWarning(); return false; });
+      document.addEventListener('selectstart', function (e) { e.preventDefault(); return false; });
+      ['copy','cut','paste'].forEach(function (evt) {
+        document.addEventListener(evt, function (e) { e.preventDefault(); showWarning(); return false; });
+      });
+      document.addEventListener('dragstart', function (e) { e.preventDefault(); return false; });
+      document.addEventListener('keydown', function (e) {
+        var key = e.keyCode || e.which;
+        var ctrl = e.ctrlKey || e.metaKey;
+        if (key === 123) { e.preventDefault(); showWarning(); return false; }
+        if (ctrl && e.shiftKey && (key === 73 || key === 74 || key === 67)) { e.preventDefault(); showWarning(); return false; }
+        if (ctrl && (key === 85 || key === 83 || key === 80 || key === 67)) { e.preventDefault(); showWarning(); return false; }
+        if (ctrl && key === 65) { e.preventDefault(); return false; }
+      });
+      var warnTimeout;
+      function showWarning() {
+        var existing = document.getElementById('cph-warn');
+        if (existing) existing.remove();
+        var t = document.createElement('div');
+        t.id = 'cph-warn';
+        t.style.cssText = 'position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:#0f172a;color:#fff;padding:14px 20px;border-radius:10px;font-size:14px;font-weight:500;z-index:9999;box-shadow:0 10px 30px rgba(0,0,0,.25);font-family:Inter,sans-serif;max-width:90%;';
+        t.innerHTML = '🔒 © 2026 Syed HZ Rizvi. Copying is not permitted.';
+        document.body.appendChild(t);
+        clearTimeout(warnTimeout);
+        warnTimeout = setTimeout(function () { if (t.parentNode) t.remove(); }, 3000);
+      }
+    })();
+  </script>
+
+</body>
+</html>
