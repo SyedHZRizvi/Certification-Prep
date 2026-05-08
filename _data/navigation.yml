@@ -1,0 +1,143 @@
+# Course navigation structure
+# Used by _layouts/default.html to render sidebar, breadcrumbs, prev/next
+
+tracks:
+  - id: scrum
+    title: Scrum Master
+    subtitle: PSM I Certification
+    color: blue
+    color_from: "#2563eb"
+    color_to: "#7c3aed"
+    icon: "🏃"
+    base: "/Certification-Prep/01-Scrum-Master/"
+    modules:
+      - num: 1
+        title: The Agile Mindset
+        slug: Module-01-Agile-Mindset
+      - num: 2
+        title: The Scrum Framework
+        slug: Module-02-Scrum-Framework
+      - num: 3
+        title: Roles (Accountabilities)
+        slug: Module-03-Roles
+      - num: 4
+        title: The 5 Events
+        slug: Module-04-Events
+      - num: 5
+        title: Artifacts & Commitments
+        slug: Module-05-Artifacts
+      - num: 6
+        title: Done & Estimation
+        slug: Module-06-Done-Estimation
+      - num: 7
+        title: Servant Leadership
+        slug: Module-07-Servant-Leadership
+      - num: 8
+        title: Scaling Scrum
+        slug: Module-08-Scaling
+    extras:
+      - num: 9
+        title: Practice Exam 1
+        slug: Practice-Exams/Practice-Exam-1
+        single_file: true
+      - num: 10
+        title: Practice Exam 2
+        slug: Practice-Exams/Practice-Exam-2
+        single_file: true
+      - num: 11
+        title: Final Mock Exam
+        slug: Practice-Exams/Final-Mock-Exam
+        single_file: true
+      - num: 12
+        title: Master Flashcards
+        slug: Flashcards
+        single_file: true
+
+  - id: pmp
+    title: PMP
+    subtitle: Project Management Professional
+    color: orange
+    color_from: "#ea580c"
+    color_to: "#dc2626"
+    icon: "📊"
+    base: "/Certification-Prep/02-PMP/"
+    modules:
+      - num: 1
+        title: Foundations
+        slug: Module-01-Foundations
+      - num: 2
+        title: People Domain (42%)
+        slug: Module-02-People-Domain
+      - num: 3
+        title: Process Domain (50%)
+        slug: Module-03-Process-Domain
+      - num: 4
+        title: Business Environment
+        slug: Module-04-Business-Environment
+      - num: 5
+        title: Agile & Hybrid
+        slug: Module-05-Agile-Hybrid
+      - num: 6
+        title: Earned Value Management
+        slug: Module-06-Earned-Value
+      - num: 7
+        title: Risk Management
+        slug: Module-07-Risk
+      - num: 8
+        title: Quality Management
+        slug: Module-08-Quality
+      - num: 9
+        title: Procurement
+        slug: Module-09-Procurement
+      - num: 10
+        title: Stakeholders
+        slug: Module-10-Stakeholders
+    extras:
+      - num: 11
+        title: Practice Exam 1
+        slug: Practice-Exams/Practice-Exam-1
+        single_file: true
+      - num: 12
+        title: Practice Exam 2
+        slug: Practice-Exams/Practice-Exam-2
+        single_file: true
+      - num: 13
+        title: Final Mock Exam
+        slug: Practice-Exams/Final-Mock-Exam
+        single_file: true
+      - num: 14
+        title: Master Flashcards
+        slug: Flashcards
+        single_file: true
+
+# Sub-pages within each module
+module_pages:
+  - id: Reading
+    label: 📖 Lesson
+  - id: Videos
+    label: 🎥 Videos
+  - id: Quiz
+    label: ✏️ Quiz
+  - id: Cheat-Sheet
+    label: 📋 Cheat Sheet
+
+# Other pages
+extra_links:
+  - title: Quick Start Guide
+    url: "/Certification-Prep/00-Study-Plan/Quick-Start-Guide/"
+    icon: "🚀"
+  - title: 12-Week Study Plan
+    url: "/Certification-Prep/00-Study-Plan/12-Week-Study-Plan/"
+    icon: "📅"
+  - title: Exam Day Tips
+    url: "/Certification-Prep/00-Study-Plan/Exam-Day-Tips/"
+    icon: "🎯"
+  - title: Books & Links
+    url: "/Certification-Prep/Resources/Books-and-Links/"
+    icon: "📚"
+  - title: Free Practice Tests
+    url: "/Certification-Prep/Resources/Free-Practice-Tests/"
+    icon: "🧪"
+  - title: Communities
+    url: "/Certification-Prep/Resources/Communities/"
+    icon: "🤝"
