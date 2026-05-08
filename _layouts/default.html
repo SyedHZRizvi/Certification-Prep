@@ -22,13 +22,15 @@
       background: #f8fafc;
       color: #0f172a;
       margin: 0; padding: 0;
-      -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;
-      -webkit-touch-callout: none; -webkit-tap-highlight-color: transparent;
     }
-    img, video { pointer-events: none; -webkit-user-drag: none; user-drag: none; max-width: 100%; }
+    img, video { -webkit-user-drag: none; user-drag: none; max-width: 100%; }
     h1, h2, h3, h4, .display { font-family: 'Plus Jakarta Sans', 'Inter', sans-serif; letter-spacing: -0.02em; line-height: 1.25; }
 
-    /* ============ TOP BAR ============ */
+    /* ============ TOP BAR (with gradient stripe matching landing) ============ */
+    .topbar-stripe {
+      height: 3px;
+      background: linear-gradient(90deg, #6366f1 0%, #a78bfa 25%, #ec4899 50%, #f97316 75%, #ef4444 100%);
+    }
     .topbar {
       position: sticky; top: 0; z-index: 50;
       background: rgba(255,255,255,0.95);
@@ -41,8 +43,12 @@
       display: flex; align-items: center; justify-content: space-between;
     }
     .brand { display: flex; align-items: center; gap: 8px; text-decoration: none; color: #0f172a; font-weight: 800; }
+    .brand-grad {
+      background: linear-gradient(135deg, #6366f1, #ec4899);
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+    }
 
-    /* ============ LAYOUT ============ */
+    /* ============ SHELL ============ */
     .shell { max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: 280px 1fr; min-height: calc(100vh - 60px); }
     @media (max-width: 1024px) { .shell { grid-template-columns: 1fr; } .sidebar { display: none; } }
 
@@ -51,12 +57,26 @@
       border-right: 1px solid #e2e8f0;
       background: #fff;
       padding: 20px 16px;
-      max-height: calc(100vh - 60px);
+      max-height: calc(100vh - 63px);
       overflow-y: auto;
-      position: sticky; top: 60px;
+      position: sticky; top: 63px;
     }
     .sidebar::-webkit-scrollbar { width: 6px; }
     .sidebar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+    .progress-summary {
+      padding: 12px 14px; border-radius: 10px;
+      background: linear-gradient(135deg, #eef2ff, #fce7f3);
+      margin-bottom: 16px; font-size: 12px; color: #475569;
+    }
+    .progress-summary strong { color: #0f172a; }
+    .progress-bar { height: 6px; background: #e2e8f0; border-radius: 3px; overflow: hidden; margin-top: 6px; }
+    .progress-fill { height: 100%; background: linear-gradient(90deg, #6366f1, #ec4899); width: 0; transition: width .4s ease; }
+    .progress-summary button {
+      background: none; border: none; color: #6366f1; font-size: 11px;
+      cursor: pointer; padding: 0; margin-top: 6px; font-weight: 600;
+    }
+    .progress-summary button:hover { color: #4338ca; text-decoration: underline; }
+
     .track-header {
       display: flex; align-items: center; gap: 10px;
       padding: 12px 14px; border-radius: 10px;
@@ -81,9 +101,12 @@
       font-size: 11px; font-weight: 700;
       background: #e2e8f0; color: #475569;
       flex-shrink: 0;
+      transition: background .2s, color .2s;
     }
     .module-list a.active .num { background: #4338ca; color: #fff; }
     .module-list a.completed .num { background: #10b981; color: #fff; }
+    .module-list a.completed .num::before { content: '✓'; }
+    .module-list a.completed .num span { display: none; }
     .sidebar-divider { border: 0; border-top: 1px solid #e2e8f0; margin: 18px 0; }
     .sidebar-section-title {
       font-size: 11px; font-weight: 700; text-transform: uppercase;
@@ -96,6 +119,7 @@
       text-decoration: none; color: #64748b; font-size: 13px;
     }
     .extra-links a:hover { background: #f1f5f9; color: #0f172a; }
+    .extra-links a.active { background: #eef2ff; color: #4338ca; font-weight: 600; }
 
     /* ============ MAIN CONTENT ============ */
     .main { padding: 28px 48px 80px; max-width: 920px; }
@@ -111,7 +135,7 @@
     .module-meta .badge { background: #eef2ff; color: #4338ca; padding: 4px 10px; border-radius: 6px; font-weight: 600; }
     .module-meta .read-time { display: flex; align-items: center; gap: 5px; }
 
-    .subpage-tabs { display: flex; gap: 4px; border-bottom: 1px solid #e2e8f0; margin-bottom: 28px; padding-bottom: 0; }
+    .subpage-tabs { display: flex; gap: 4px; border-bottom: 1px solid #e2e8f0; margin-bottom: 28px; padding-bottom: 0; flex-wrap: wrap; }
     .subpage-tabs a {
       padding: 10px 18px; border-radius: 8px 8px 0 0;
       font-size: 14px; font-weight: 600; color: #64748b;
@@ -168,6 +192,22 @@
     .content strong { color: #0f172a; font-weight: 700; }
     .content em { color: #475569; }
 
+    /* ============ MARK COMPLETE BUTTON ============ */
+    .mark-complete-row { display: flex; align-items: center; justify-content: center; gap: 12px; margin: 28px 0; }
+    .mark-complete-btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 12px 24px; border-radius: 10px;
+      background: linear-gradient(135deg, #10b981, #059669);
+      color: #fff; font-weight: 700; font-size: 14px;
+      border: 0; cursor: pointer; transition: transform .15s, box-shadow .15s;
+      box-shadow: 0 4px 14px -2px rgba(16, 185, 129, 0.4);
+    }
+    .mark-complete-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 20px -2px rgba(16, 185, 129, 0.5); }
+    .mark-complete-btn.completed {
+      background: linear-gradient(135deg, #6366f1, #8b5cf6);
+      box-shadow: 0 4px 14px -2px rgba(99, 102, 241, 0.4);
+    }
+
     /* ============ PREV / NEXT NAV ============ */
     .pager { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 32px; }
     @media (max-width: 640px) { .pager { grid-template-columns: 1fr; } }
@@ -186,7 +226,7 @@
     .pagefoot strong { color: #0f172a; }
     .pagefoot a { color: #4f46e5; text-decoration: none; }
 
-    /* ============ WATERMARK ============ */
+    /* ============ WATERMARK (kept) ============ */
     .watermark { position: fixed; inset: 0; pointer-events: none; z-index: 0; display: grid; place-items: center; overflow: hidden; }
     .watermark::before {
       content: '© Syed HZ Rizvi · Cert Hub · © Syed HZ Rizvi · Cert Hub · © Syed HZ Rizvi · Cert Hub';
@@ -196,22 +236,13 @@
       line-height: 6em; text-align: center; white-space: pre-wrap; word-spacing: 4em;
       font-family: 'Plus Jakarta Sans', sans-serif;
     }
-    .topbar, .shell, .pagefoot { position: relative; z-index: 1; }
+    .topbar, .topbar-stripe, .shell, .pagefoot { position: relative; z-index: 1; }
 
     /* ============ MOBILE HAMBURGER ============ */
     .hamburger { display: none; }
     @media (max-width: 1024px) {
       .hamburger { display: flex; align-items: center; gap: 8px; background: #f1f5f9; border: 1px solid #e2e8f0; padding: 6px 12px; border-radius: 8px; font-size: 13px; font-weight: 600; color: #475569; cursor: pointer; }
-      .sidebar.mobile-open { display: block; position: fixed; top: 60px; left: 0; right: 0; bottom: 0; z-index: 40; padding: 24px; overflow-y: auto; }
-    }
-
-    /* ============ PRINT BLOCK ============ */
-    @media print {
-      body * { visibility: hidden !important; }
-      body::after {
-        content: '© 2026 Syed HZ Rizvi. All Rights Reserved. Printing not permitted. Visit https://syedhzrizvi.github.io/Certification-Prep/ to view.';
-        visibility: visible !important; display: block; position: fixed; inset: 0; padding: 4em; font-size: 1.1em;
-      }
+      .sidebar.mobile-open { display: block; position: fixed; top: 63px; left: 0; right: 0; bottom: 0; z-index: 40; padding: 24px; overflow-y: auto; }
     }
   </style>
 </head>
@@ -220,14 +251,15 @@
   <div class="watermark" aria-hidden="true"></div>
 
   <!-- ========== TOP BAR ========== -->
+  <div class="topbar-stripe"></div>
   <header class="topbar">
     <div class="topbar-inner">
       <a href="{{ '/' | relative_url }}" class="brand">
         <span style="font-size:22px;">🎓</span>
-        <span>The Cert Hub</span>
+        <span>The <span class="brand-grad">Cert Hub</span></span>
       </a>
       <button class="hamburger" onclick="document.querySelector('.sidebar').classList.toggle('mobile-open')">
-        <span>☰</span> Modules
+        <span>☰</span> Menu
       </button>
       <div class="hidden md:flex items-center gap-4 text-sm">
         <span class="text-slate-500 text-xs">by <strong class="text-slate-900">Syed HZ Rizvi</strong></span>
@@ -236,17 +268,21 @@
     </div>
   </header>
 
-  <!-- ========== SHELL (Sidebar + Main) ========== -->
+  <!-- ========== SHELL ========== -->
   <div class="shell">
 
-    {%- comment -%} page.url has no baseurl — paths in navigation.yml are relative, so this comparison works directly {%- endcomment -%}
     {%- assign current_path = page.url -%}
     {%- assign current_track = nil -%}
     {%- assign current_module = nil -%}
     {%- assign current_subpage = nil -%}
+    {%- assign current_section = nil -%}
+    {%- assign current_section_title = nil -%}
+
+    {%- comment -%} Detect current track + module {%- endcomment -%}
     {%- for tr in site.data.navigation.tracks -%}
       {%- if current_path contains tr.base -%}
         {%- assign current_track = tr -%}
+        {%- assign current_section = "track" -%}
         {%- for m in tr.modules -%}
           {%- assign mpath = tr.base | append: m.slug | append: '/' -%}
           {%- if current_path contains mpath -%}
@@ -267,8 +303,26 @@
       {%- endif -%}
     {%- endfor -%}
 
+    {%- comment -%} Detect Resources / Study Plan sections {%- endcomment -%}
+    {%- if current_path contains "/Resources/" -%}
+      {%- assign current_section = "resources" -%}
+      {%- assign current_section_title = "Resources" -%}
+    {%- elsif current_path contains "/00-Study-Plan/" -%}
+      {%- assign current_section = "studyplan" -%}
+      {%- assign current_section_title = "Study Plan" -%}
+    {%- endif -%}
+
     <!-- ========== SIDEBAR ========== -->
     <aside class="sidebar">
+
+      <!-- Progress summary -->
+      <div class="progress-summary">
+        <strong>Your progress</strong>
+        <div id="prog-text" style="margin-top:4px;">0 of 18 modules complete</div>
+        <div class="progress-bar"><div class="progress-fill" id="prog-fill"></div></div>
+        <button onclick="window.cphubResetProgress()">Reset progress</button>
+      </div>
+
       {%- for tr in site.data.navigation.tracks -%}
         <div class="track-header" style="background: linear-gradient(135deg, {{ tr.color_from }}, {{ tr.color_to }});">
           <span class="icon">{{ tr.icon }}</span>
@@ -283,8 +337,8 @@
             {%- assign is_active = false -%}
             {%- if current_module and current_module.slug == m.slug and current_track.id == tr.id -%}{%- assign is_active = true -%}{%- endif -%}
             <li>
-              <a href="{{ m_url }}" {% if is_active %}class="active"{% endif %}>
-                <span class="num">{{ m.num }}</span>
+              <a href="{{ m_url }}" data-module-key="{{ tr.id }}-{{ m.slug }}" {% if is_active %}class="active"{% endif %}>
+                <span class="num"><span>{{ m.num }}</span></span>
                 <span>{{ m.title }}</span>
               </a>
             </li>
@@ -294,8 +348,8 @@
             {%- assign is_active = false -%}
             {%- if current_module and current_module.slug == ex.slug and current_track.id == tr.id -%}{%- assign is_active = true -%}{%- endif -%}
             <li>
-              <a href="{{ ex_url }}" {% if is_active %}class="active"{% endif %}>
-                <span class="num">{{ ex.num }}</span>
+              <a href="{{ ex_url }}" data-module-key="{{ tr.id }}-{{ ex.slug }}" {% if is_active %}class="active"{% endif %}>
+                <span class="num"><span>{{ ex.num }}</span></span>
                 <span>{{ ex.title }}</span>
               </a>
             </li>
@@ -307,7 +361,9 @@
       <p class="sidebar-section-title">Resources</p>
       <ul class="extra-links" style="list-style:none;padding:0;margin:0;">
         {%- for link in site.data.navigation.extra_links -%}
-          <li><a href="{{ link.url | prepend: site.baseurl }}"><span>{{ link.icon }}</span><span>{{ link.title }}</span></a></li>
+          {%- assign link_active = false -%}
+          {%- if current_path == link.url -%}{%- assign link_active = true -%}{%- endif -%}
+          <li><a href="{{ link.url | prepend: site.baseurl }}" {% if link_active %}class="active"{% endif %}><span>{{ link.icon }}</span><span>{{ link.title }}</span></a></li>
         {%- endfor -%}
       </ul>
 
@@ -322,40 +378,43 @@
     <!-- ========== MAIN ========== -->
     <main class="main">
 
-      <!-- Breadcrumbs -->
-      {%- if current_track -%}
-        <nav class="breadcrumb" aria-label="Breadcrumb">
-          <a href="{{ '/' | relative_url }}">🏠 Home</a>
+      <!-- Breadcrumbs (track / module / subpage OR resources / studyplan) -->
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="{{ '/' | relative_url }}">🏠 Home</a>
+        {%- if current_track -%}
           <span class="sep">›</span>
           <a href="{{ current_track.base | prepend: site.baseurl }}">{{ current_track.title }}</a>
           {%- if current_module -%}
             <span class="sep">›</span>
-            <span class="current">Module {{ current_module.num }}: {{ current_module.title }}</span>
+            <span class="current">{% if current_module.num %}Module {{ current_module.num }}: {% endif %}{{ current_module.title }}</span>
           {%- endif -%}
           {%- if current_subpage -%}
             <span class="sep">›</span>
             <span class="current">{{ current_subpage.label }}</span>
           {%- endif -%}
-        </nav>
-      {%- else -%}
-        <nav class="breadcrumb" aria-label="Breadcrumb">
-          <a href="{{ '/' | relative_url }}">🏠 Home</a>
+        {%- elsif current_section_title -%}
+          <span class="sep">›</span>
+          <span class="current">{{ current_section_title }}</span>
+          <span class="sep">›</span>
+          <span class="current">{{ page.title | default: page.name | replace: '.md','' | replace: '-',' ' }}</span>
+        {%- else -%}
           <span class="sep">›</span>
           <span class="current">{{ page.title | default: page.name }}</span>
-        </nav>
-      {%- endif -%}
+        {%- endif -%}
+      </nav>
 
       <!-- Module meta -->
       {%- if current_module and current_track -%}
         <div class="module-meta">
-          <span class="badge">Module {{ current_module.num }} of {{ current_track.modules.size }}</span>
+          {%- if current_module.num -%}
+            <span class="badge">Module {{ current_module.num }} of {{ current_track.modules.size }}</span>
+          {%- endif -%}
           {%- if current_subpage -%}
             <span class="read-time">{{ current_subpage.label }}</span>
           {%- endif -%}
           <span class="read-time">⏱ ~{{ content | strip_html | number_of_words | divided_by: 200 | plus: 1 }} min read</span>
         </div>
 
-        <!-- Sub-page tabs -->
         {%- unless current_module.single_file -%}
           <div class="subpage-tabs">
             {%- for sp in site.data.navigation.module_pages -%}
@@ -370,6 +429,17 @@
       <article class="content">
         {{ content }}
       </article>
+
+      <!-- Mark Complete (only on module sub-pages) -->
+      {%- if current_module and current_track -%}
+        <div class="mark-complete-row">
+          <button id="mark-complete-btn" class="mark-complete-btn"
+                  data-module-key="{{ current_track.id }}-{{ current_module.slug }}"
+                  onclick="window.cphubToggleComplete('{{ current_track.id }}-{{ current_module.slug }}', this)">
+            ✓ Mark this module as complete
+          </button>
+        </div>
+      {%- endif -%}
 
       <!-- Prev / Next -->
       {%- if current_module and current_track -%}
@@ -425,38 +495,121 @@
     </main>
   </div>
 
-  <!-- ============ CONTENT PROTECTION ============ -->
+  <!-- ============ LIGHT PROTECTION + PROGRESS TRACKING ============ -->
   <script>
     (function () {
-      document.addEventListener('contextmenu', function (e) { e.preventDefault(); showWarning(); return false; });
-      document.addEventListener('selectstart', function (e) {
-        // Allow selection in input/textarea
-        if (e.target && (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA')) return;
-        e.preventDefault(); return false;
+      // === LIGHT PROTECTION (only right-click; Ctrl+C/P/S allowed for studying) ===
+      document.addEventListener('contextmenu', function (e) {
+        e.preventDefault();
+        showToast('🔒 © 2026 Syed HZ Rizvi · Right-click disabled. Content is for personal study.');
+        return false;
       });
-      ['copy','cut','paste'].forEach(function (evt) {
-        document.addEventListener(evt, function (e) { e.preventDefault(); showWarning(); return false; });
+      document.addEventListener('dragstart', function (e) {
+        if (e.target && e.target.tagName === 'IMG') { e.preventDefault(); return false; }
       });
-      document.addEventListener('dragstart', function (e) { e.preventDefault(); return false; });
+      // Block ONLY devtools shortcuts (F12, Ctrl+Shift+I/J/C, Ctrl+U) — NOT Ctrl+C/A/P/S
       document.addEventListener('keydown', function (e) {
         var key = e.keyCode || e.which;
         var ctrl = e.ctrlKey || e.metaKey;
-        if (key === 123) { e.preventDefault(); showWarning(); return false; }
-        if (ctrl && e.shiftKey && (key === 73 || key === 74 || key === 67)) { e.preventDefault(); showWarning(); return false; }
-        if (ctrl && (key === 85 || key === 83 || key === 80 || key === 67)) { e.preventDefault(); showWarning(); return false; }
-        if (ctrl && key === 65) { e.preventDefault(); return false; }
+        if (key === 123) { e.preventDefault(); showToast('🔒 Dev tools shortcut disabled'); return false; }
+        if (ctrl && e.shiftKey && (key === 73 || key === 74 || key === 67)) { e.preventDefault(); return false; }
+        if (ctrl && key === 85) { e.preventDefault(); return false; }
       });
-      var warnTimeout;
-      function showWarning() {
-        var existing = document.getElementById('cph-warn');
+
+      var toastTimeout;
+      function showToast(msg) {
+        var existing = document.getElementById('cph-toast');
         if (existing) existing.remove();
         var t = document.createElement('div');
-        t.id = 'cph-warn';
-        t.style.cssText = 'position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:#0f172a;color:#fff;padding:14px 22px;border-radius:10px;font-size:14px;font-weight:500;z-index:9999;box-shadow:0 12px 30px rgba(0,0,0,.3);font-family:Inter,sans-serif;max-width:90%;';
-        t.innerHTML = '🔒 © 2026 Syed HZ Rizvi · Copying not permitted';
+        t.id = 'cph-toast';
+        t.style.cssText = 'position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:#0f172a;color:#fff;padding:12px 20px;border-radius:10px;font-size:13px;font-weight:500;z-index:9999;box-shadow:0 12px 30px rgba(0,0,0,.3);font-family:Inter,sans-serif;max-width:90%;';
+        t.textContent = msg;
         document.body.appendChild(t);
-        clearTimeout(warnTimeout);
-        warnTimeout = setTimeout(function () { if (t.parentNode) t.remove(); }, 2500);
+        clearTimeout(toastTimeout);
+        toastTimeout = setTimeout(function () { if (t.parentNode) t.remove(); }, 2500);
+      }
+      window.cphubShowToast = showToast;
+
+      // === PROGRESS TRACKING (LocalStorage) ===
+      var STORAGE_KEY = 'cphub-progress-v1';
+      function getProgress() {
+        try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]'); }
+        catch(e) { return []; }
+      }
+      function setProgress(arr) {
+        try { localStorage.setItem(STORAGE_KEY, JSON.stringify(arr)); } catch(e) {}
+      }
+
+      function applyProgressToSidebar() {
+        var done = getProgress();
+        document.querySelectorAll('.module-list a[data-module-key]').forEach(function (a) {
+          var key = a.getAttribute('data-module-key');
+          if (done.indexOf(key) !== -1 && !a.classList.contains('active')) {
+            a.classList.add('completed');
+          }
+        });
+        // Total modules across both tracks (numbered items only): 8 + 10 = 18
+        var totalNumberedKeys = [];
+        document.querySelectorAll('.module-list a[data-module-key] .num span').forEach(function (sp) {
+          var num = parseInt(sp.textContent, 10);
+          if (!isNaN(num) && num <= 10) totalNumberedKeys.push(sp.parentElement.parentElement.getAttribute('data-module-key'));
+        });
+        var total = totalNumberedKeys.length || 18;
+        var doneCount = done.filter(function(k){ return totalNumberedKeys.indexOf(k) !== -1; }).length;
+        var pct = total ? Math.round((doneCount / total) * 100) : 0;
+        var txt = document.getElementById('prog-text');
+        var fill = document.getElementById('prog-fill');
+        if (txt) txt.innerHTML = '<strong>' + doneCount + '</strong> of ' + total + ' modules · ' + pct + '%';
+        if (fill) fill.style.width = pct + '%';
+      }
+
+      window.cphubToggleComplete = function (key, btn) {
+        var done = getProgress();
+        var idx = done.indexOf(key);
+        if (idx === -1) {
+          done.push(key);
+          btn.classList.add('completed');
+          btn.innerHTML = '✓ Completed! Click to undo';
+          showToast('✓ Marked complete. Great work!');
+        } else {
+          done.splice(idx, 1);
+          btn.classList.remove('completed');
+          btn.innerHTML = '✓ Mark this module as complete';
+          showToast('Removed from completed.');
+        }
+        setProgress(done);
+        applyProgressToSidebar();
+      };
+
+      window.cphubResetProgress = function () {
+        if (confirm('Reset all progress? This will clear your completion checkmarks across all modules.')) {
+          setProgress([]);
+          applyProgressToSidebar();
+          var btn = document.getElementById('mark-complete-btn');
+          if (btn) {
+            btn.classList.remove('completed');
+            btn.innerHTML = '✓ Mark this module as complete';
+          }
+          showToast('Progress reset.');
+        }
+      };
+
+      // Initialize on load
+      function init() {
+        applyProgressToSidebar();
+        var btn = document.getElementById('mark-complete-btn');
+        if (btn) {
+          var key = btn.getAttribute('data-module-key');
+          if (getProgress().indexOf(key) !== -1) {
+            btn.classList.add('completed');
+            btn.innerHTML = '✓ Completed! Click to undo';
+          }
+        }
+      }
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
       }
     })();
   </script>

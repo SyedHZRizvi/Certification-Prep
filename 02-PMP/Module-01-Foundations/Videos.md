@@ -1,41 +1,101 @@
+<style>
+.vg-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 18px; margin: 22px 0 30px; }
+.vg-card { display: block; background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; text-decoration: none; color: inherit; transition: transform .2s, box-shadow .2s, border-color .2s; }
+.vg-card:hover { transform: translateY(-3px); box-shadow: 0 12px 24px -8px rgba(0,0,0,.15); border-color: #fb923c; }
+.vg-thumb { position: relative; aspect-ratio: 16 / 9; background: linear-gradient(135deg, #ea580c, #dc2626); display: flex; align-items: center; justify-content: center; color: #fff; font-size: 48px; }
+.vg-thumb img { width: 100%; height: 100%; object-fit: cover; }
+.vg-play { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,.35); color: #fff; font-size: 48px; opacity: 0; transition: opacity .2s; }
+.vg-card:hover .vg-play { opacity: 1; }
+.vg-meta { padding: 14px 16px; }
+.vg-tag { display: inline-block; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; padding: 3px 8px; border-radius: 4px; margin-bottom: 8px; }
+.vg-tag.essential { background: #fed7aa; color: #9a3412; }
+.vg-tag.recommended { background: #fef3c7; color: #92400e; }
+.vg-tag.optional { background: #fee2e2; color: #991b1b; }
+.vg-title { font-weight: 700; font-size: 14px; line-height: 1.4; margin: 0 0 4px; color: #0f172a; }
+.vg-creator { font-size: 12.5px; color: #64748b; margin: 0 0 6px; }
+.vg-duration { font-size: 11px; color: #94a3b8; font-weight: 600; }
+</style>
+
 # 🎥 PMP Module 1 Videos: Foundations
 
-## 🎯 ESSENTIAL (~60 min)
+> **How to use:** Click any card to search YouTube. Watch in order. Pause and take notes.
 
-### 1. "PMP Exam Overview 2024" — Andrew Ramdayal (PMP YouTube legend)
-- ⏱️ 18 min
-- 🔗 Search: **"Andrew Ramdayal PMP overview"**
-- 🎯 ⭐ THIS GUY'S CHANNEL IS GOLD. Subscribe.
+## ⭐ Essential watching (~60 min)
 
-### 2. "PMP Mindset: How to Think Like a PM" — David McLachlan
-- ⏱️ 15 min
-- 🔗 Search: **"PMP Mindset David McLachlan"**
-- 🎯 ⭐ Most important video for the new PMP
+<div class="vg-grid">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Andrew+Ramdayal+PMP+overview" target="_blank" rel="noopener">
+    <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
+    <div class="vg-meta">
+      <span class="vg-tag essential">Essential</span>
+      <p class="vg-title">PMP Exam Overview 2024 ⭐ Channel is gold — subscribe</p>
+      <p class="vg-creator">Andrew Ramdayal</p>
+      <span class="vg-duration">⏱ 18 min</span>
+    </div>
+  </a>
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=PMP+Mindset+David+McLachlan" target="_blank" rel="noopener">
+    <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
+    <div class="vg-meta">
+      <span class="vg-tag essential">Essential</span>
+      <p class="vg-title">PMP Mindset: How to Think Like a PM ⭐ Most important video</p>
+      <p class="vg-creator">David McLachlan</p>
+      <span class="vg-duration">⏱ 15 min</span>
+    </div>
+  </a>
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=PMBOK+7+Principles+Aileen+Ellis" target="_blank" rel="noopener">
+    <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
+    <div class="vg-meta">
+      <span class="vg-tag essential">Essential</span>
+      <p class="vg-title">PMBOK 7 Principles</p>
+      <p class="vg-creator">Aileen Ellis</p>
+      <span class="vg-duration">⏱ 14 min</span>
+    </div>
+  </a>
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=PMI+Code+of+Ethics+PrepCast" target="_blank" rel="noopener">
+    <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
+    <div class="vg-meta">
+      <span class="vg-tag essential">Essential</span>
+      <p class="vg-title">PMI Code of Ethics</p>
+      <p class="vg-creator">PrepCast</p>
+      <span class="vg-duration">⏱ 12 min</span>
+    </div>
+  </a>
+</div>
 
-### 3. "PMBOK 7 Principles" — Aileen Ellis
-- ⏱️ 14 min
-- 🔗 Search: **"PMBOK 7 Principles Aileen Ellis"**
+## 📚 Recommended (~40 min)
 
-### 4. "PMI Code of Ethics" — PrepCast
-- ⏱️ 12 min
-- 🔗 Search: **"PMI Code of Ethics PrepCast"**
+<div class="vg-grid">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Predictive+vs+Agile+vs+Hybrid+Edward+Chung" target="_blank" rel="noopener">
+    <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
+    <div class="vg-meta">
+      <span class="vg-tag recommended">Recommended</span>
+      <p class="vg-title">Predictive vs Agile vs Hybrid</p>
+      <p class="vg-creator">Edward Chung</p>
+      <span class="vg-duration">⏱ 12 min</span>
+    </div>
+  </a>
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Organizational+Structures+Joseph+Phillips" target="_blank" rel="noopener">
+    <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
+    <div class="vg-meta">
+      <span class="vg-tag recommended">Recommended</span>
+      <p class="vg-title">Organizational Structures Explained</p>
+      <p class="vg-creator">Joseph Phillips</p>
+      <span class="vg-duration">⏱ 14 min</span>
+    </div>
+  </a>
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=EEFs+vs+OPAs+Mohammad+Khalil" target="_blank" rel="noopener">
+    <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
+    <div class="vg-meta">
+      <span class="vg-tag recommended">Recommended</span>
+      <p class="vg-title">EEFs vs OPAs</p>
+      <p class="vg-creator">Mohammad Khalil</p>
+      <span class="vg-duration">⏱ 8 min</span>
+    </div>
+  </a>
+</div>
 
 ---
 
-## 📚 RECOMMENDED (~40 min)
-
-### 5. "Predictive vs Agile vs Hybrid" — Edward Chung
-- ⏱️ 12 min
-
-### 6. "Organizational Structures Explained" — Joseph Phillips
-- ⏱️ 14 min
-
-### 7. "EEFs vs OPAs" — Mohammad Khalil
-- ⏱️ 8 min
-
----
-
-## 🏆 BEST CHANNELS TO SUBSCRIBE
+## 🏆 Best Channels to Subscribe
 
 | Channel | Why |
 |---------|-----|
@@ -48,7 +108,7 @@
 
 ---
 
-## ✅ Self-Test
+## ✅ Self-Test After Watching
 
 1. Define "project" per PMI.
 2. Name the 8 Performance Domains.

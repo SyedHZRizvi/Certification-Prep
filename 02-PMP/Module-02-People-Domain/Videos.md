@@ -1,46 +1,119 @@
+<style>
+.vg-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 18px; margin: 22px 0 30px; }
+.vg-card { display: block; background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; text-decoration: none; color: inherit; transition: transform .2s, box-shadow .2s, border-color .2s; }
+.vg-card:hover { transform: translateY(-3px); box-shadow: 0 12px 24px -8px rgba(0,0,0,.15); border-color: #fb923c; }
+.vg-thumb { position: relative; aspect-ratio: 16 / 9; background: linear-gradient(135deg, #ea580c, #dc2626); display: flex; align-items: center; justify-content: center; color: #fff; font-size: 48px; }
+.vg-thumb img { width: 100%; height: 100%; object-fit: cover; }
+.vg-play { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,.35); color: #fff; font-size: 48px; opacity: 0; transition: opacity .2s; }
+.vg-card:hover .vg-play { opacity: 1; }
+.vg-meta { padding: 14px 16px; }
+.vg-tag { display: inline-block; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; padding: 3px 8px; border-radius: 4px; margin-bottom: 8px; }
+.vg-tag.essential { background: #fed7aa; color: #9a3412; }
+.vg-tag.recommended { background: #fef3c7; color: #92400e; }
+.vg-tag.optional { background: #fee2e2; color: #991b1b; }
+.vg-title { font-weight: 700; font-size: 14px; line-height: 1.4; margin: 0 0 4px; color: #0f172a; }
+.vg-creator { font-size: 12.5px; color: #64748b; margin: 0 0 6px; }
+.vg-duration { font-size: 11px; color: #94a3b8; font-weight: 600; }
+</style>
+
 # 🎥 PMP Module 2 Videos: People Domain
 
-## 🎯 ESSENTIAL (~80 min — this is the biggest domain!)
+> **How to use:** Click any card to search YouTube. Watch in order. Pause and take notes. People is the biggest exam domain — give it weight.
 
-### 1. "PMP People Domain Mastery" — Andrew Ramdayal
-- ⏱️ 25 min
-- 🔗 Search: **"Andrew Ramdayal People Domain"**
-- 🎯 ⭐ THE VIDEO. Watch twice.
+## ⭐ Essential watching (~80 min)
 
-### 2. "Tuckman's Stages of Team Development" — David McLachlan
-- ⏱️ 12 min
-- 🔗 Search: **"Tuckman Stages McLachlan"**
+<div class="vg-grid">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Andrew+Ramdayal+People+Domain" target="_blank" rel="noopener">
+    <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
+    <div class="vg-meta">
+      <span class="vg-tag essential">Essential</span>
+      <p class="vg-title">PMP People Domain Mastery ⭐ THE video — watch twice</p>
+      <p class="vg-creator">Andrew Ramdayal</p>
+      <span class="vg-duration">⏱ 25 min</span>
+    </div>
+  </a>
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Tuckman+Stages+McLachlan" target="_blank" rel="noopener">
+    <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
+    <div class="vg-meta">
+      <span class="vg-tag essential">Essential</span>
+      <p class="vg-title">Tuckman's Stages of Team Development</p>
+      <p class="vg-creator">David McLachlan</p>
+      <span class="vg-duration">⏱ 12 min</span>
+    </div>
+  </a>
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Conflict+Resolution+PMP+Khalil" target="_blank" rel="noopener">
+    <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
+    <div class="vg-meta">
+      <span class="vg-tag essential">Essential</span>
+      <p class="vg-title">Conflict Resolution for PMs</p>
+      <p class="vg-creator">Mohammad Khalil</p>
+      <span class="vg-duration">⏱ 15 min</span>
+    </div>
+  </a>
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Servant+Leadership+PMP+Ellis" target="_blank" rel="noopener">
+    <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
+    <div class="vg-meta">
+      <span class="vg-tag essential">Essential</span>
+      <p class="vg-title">Servant Leadership for PMs</p>
+      <p class="vg-creator">Aileen Ellis</p>
+      <span class="vg-duration">⏱ 12 min</span>
+    </div>
+  </a>
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Communication+Channels+Formula+Joseph+Phillips" target="_blank" rel="noopener">
+    <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
+    <div class="vg-meta">
+      <span class="vg-tag essential">Essential</span>
+      <p class="vg-title">Communication Channels Formula</p>
+      <p class="vg-creator">Joseph Phillips</p>
+      <span class="vg-duration">⏱ 8 min</span>
+    </div>
+  </a>
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Maslow+Herzberg+McGregor+PMP+Edward+Chung" target="_blank" rel="noopener">
+    <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
+    <div class="vg-meta">
+      <span class="vg-tag essential">Essential</span>
+      <p class="vg-title">Maslow + Herzberg + McGregor for PMP</p>
+      <p class="vg-creator">Edward Chung</p>
+      <span class="vg-duration">⏱ 14 min</span>
+    </div>
+  </a>
+</div>
 
-### 3. "Conflict Resolution for PMs" — Mohammad Khalil
-- ⏱️ 15 min
-- 🔗 Search: **"Conflict Resolution PMP Khalil"**
+## 📚 Recommended (~40 min)
 
-### 4. "Servant Leadership for PMs" — Aileen Ellis
-- ⏱️ 12 min
-- 🔗 Search: **"Servant Leadership PMP Ellis"**
-
-### 5. "Communication Channels Formula" — Joseph Phillips
-- ⏱️ 8 min
-
-### 6. "Maslow + Herzberg + McGregor for PMP" — Edward Chung
-- ⏱️ 14 min
+<div class="vg-grid">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Emotional+Intelligence+PMP+Cornelius+Fichtner" target="_blank" rel="noopener">
+    <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
+    <div class="vg-meta">
+      <span class="vg-tag recommended">Recommended</span>
+      <p class="vg-title">Emotional Intelligence for PMs</p>
+      <p class="vg-creator">Cornelius Fichtner</p>
+      <span class="vg-duration">⏱ 15 min</span>
+    </div>
+  </a>
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Virtual+Teams+Best+Practices+PMI" target="_blank" rel="noopener">
+    <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
+    <div class="vg-meta">
+      <span class="vg-tag recommended">Recommended</span>
+      <p class="vg-title">Virtual Teams Best Practices</p>
+      <p class="vg-creator">PMI</p>
+      <span class="vg-duration">⏱ 12 min</span>
+    </div>
+  </a>
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Stakeholder+Engagement+Strategies+David+McLachlan" target="_blank" rel="noopener">
+    <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
+    <div class="vg-meta">
+      <span class="vg-tag recommended">Recommended</span>
+      <p class="vg-title">Stakeholder Engagement Strategies</p>
+      <p class="vg-creator">David McLachlan</p>
+      <span class="vg-duration">⏱ 10 min</span>
+    </div>
+  </a>
+</div>
 
 ---
 
-## 📚 RECOMMENDED (~40 min)
-
-### 7. "Emotional Intelligence for PMs" — Cornelius Fichtner
-- ⏱️ 15 min
-
-### 8. "Virtual Teams Best Practices" — PMI
-- ⏱️ 12 min
-
-### 9. "Stakeholder Engagement Strategies" — David McLachlan
-- ⏱️ 10 min
-
----
-
-## ✅ Self-Test
+## ✅ Self-Test After Watching
 
 1. List Tuckman's 5 stages.
 2. What's the "best default" conflict resolution technique?

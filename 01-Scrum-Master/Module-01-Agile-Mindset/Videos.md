@@ -1,73 +1,135 @@
+<style>
+.vg-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 18px; margin: 22px 0 30px; }
+.vg-card { display: block; background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; text-decoration: none; color: inherit; transition: transform .2s, box-shadow .2s, border-color .2s; }
+.vg-card:hover { transform: translateY(-3px); box-shadow: 0 12px 24px -8px rgba(0,0,0,.15); border-color: #818cf8; }
+.vg-thumb { position: relative; aspect-ratio: 16 / 9; background: linear-gradient(135deg, #4f46e5, #8b5cf6); display: flex; align-items: center; justify-content: center; color: #fff; font-size: 48px; }
+.vg-thumb img { width: 100%; height: 100%; object-fit: cover; }
+.vg-play { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,.35); color: #fff; font-size: 48px; opacity: 0; transition: opacity .2s; }
+.vg-card:hover .vg-play { opacity: 1; }
+.vg-meta { padding: 14px 16px; }
+.vg-tag { display: inline-block; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; padding: 3px 8px; border-radius: 4px; margin-bottom: 8px; }
+.vg-tag.essential { background: #ddd6fe; color: #5b21b6; }
+.vg-tag.recommended { background: #dbeafe; color: #1e40af; }
+.vg-tag.optional { background: #fef3c7; color: #92400e; }
+.vg-title { font-weight: 700; font-size: 14px; line-height: 1.4; margin: 0 0 4px; color: #0f172a; }
+.vg-creator { font-size: 12.5px; color: #64748b; margin: 0 0 6px; }
+.vg-duration { font-size: 11px; color: #94a3b8; font-weight: 600; }
+.vg-section-title { font-size: 18px; font-weight: 800; margin: 30px 0 8px; color: #0f172a; }
+.vg-section-desc { font-size: 14px; color: #64748b; margin: 0 0 4px; }
+</style>
+
 # 🎥 Module 1 Videos: The Agile Mindset
 
-> **How to use:** Watch in order. Take notes. Most are under 15 minutes.
-> 🚫 Don't binge — pause after each video, summarize what you learned in your own words.
+> **How to use:** Click any video card to search YouTube and watch the latest top result for that topic. Curated picks shown in the order to watch them. Pause and take notes after each one — don't binge.
+
+## ⭐ Essential watching (~45 min)
+
+<div class="vg-grid">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Agile+Project+Management+Brent+Aubin" target="_blank" rel="noopener">
+    <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
+    <div class="vg-meta">
+      <span class="vg-tag essential">Essential</span>
+      <p class="vg-title">Agile Project Management in Under 9 Minutes</p>
+      <p class="vg-creator">Brent Aubin</p>
+      <span class="vg-duration">⏱ 9 min · 🍕 Pizza analogy</span>
+    </div>
+  </a>
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Mountain+Goat+Software+Agile+Manifesto" target="_blank" rel="noopener">
+    <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
+    <div class="vg-meta">
+      <span class="vg-tag essential">Essential</span>
+      <p class="vg-title">The Agile Manifesto Explained Simply</p>
+      <p class="vg-creator">Mountain Goat Software</p>
+      <span class="vg-duration">⏱ 8 min · Why each value matters</span>
+    </div>
+  </a>
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=What+Is+Empiricism+in+Scrum+Scrum.org" target="_blank" rel="noopener">
+    <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
+    <div class="vg-meta">
+      <span class="vg-tag essential">Essential</span>
+      <p class="vg-title">What Is Empiricism in Scrum?</p>
+      <p class="vg-creator">Scrum.org</p>
+      <span class="vg-duration">⏱ 6 min · The 3 pillars</span>
+    </div>
+  </a>
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Agile+vs+Waterfall+Simplilearn" target="_blank" rel="noopener">
+    <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
+    <div class="vg-meta">
+      <span class="vg-tag essential">Essential</span>
+      <p class="vg-title">Agile vs Waterfall — Which Should You Use?</p>
+      <p class="vg-creator">Simplilearn</p>
+      <span class="vg-duration">⏱ 12 min · When NOT to use Agile</span>
+    </div>
+  </a>
+</div>
+
+## 📚 Recommended (~30 min)
+
+<div class="vg-grid">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Agile+in+3+Minutes+Mark+Shead" target="_blank" rel="noopener">
+    <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
+    <div class="vg-meta">
+      <span class="vg-tag recommended">Recommended</span>
+      <p class="vg-title">Agile in 3 Minutes (animated whiteboard)</p>
+      <p class="vg-creator">Mark Shead</p>
+      <span class="vg-duration">⏱ 3 min · Quick reinforcement</span>
+    </div>
+  </a>
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Development+That+Pays+12+Principles+Agile+Manifesto" target="_blank" rel="noopener">
+    <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
+    <div class="vg-meta">
+      <span class="vg-tag recommended">Recommended</span>
+      <p class="vg-title">12 Principles of the Agile Manifesto</p>
+      <p class="vg-creator">Development That Pays</p>
+      <span class="vg-duration">⏱ 14 min · Which principles really matter</span>
+    </div>
+  </a>
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Henrik+Kniberg+Agile+Product+Ownership+in+a+Nutshell" target="_blank" rel="noopener">
+    <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
+    <div class="vg-meta">
+      <span class="vg-tag recommended">Recommended</span>
+      <p class="vg-title">The History of Agile (Kniberg's channel)</p>
+      <p class="vg-creator">Henrik Kniberg</p>
+      <span class="vg-duration">⏱ 15 min · Must-see</span>
+    </div>
+  </a>
+</div>
+
+## 🍿 Optional deep dives
+
+<div class="vg-grid">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Atlassian+Agile+Transformation" target="_blank" rel="noopener">
+    <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
+    <div class="vg-meta">
+      <span class="vg-tag optional">Optional</span>
+      <p class="vg-title">Agile Transformation Stories</p>
+      <p class="vg-creator">Atlassian</p>
+      <span class="vg-duration">⏱ 25 min · Real failures &amp; wins</span>
+    </div>
+  </a>
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Why+Agile+Works+Gartner" target="_blank" rel="noopener">
+    <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
+    <div class="vg-meta">
+      <span class="vg-tag optional">Optional</span>
+      <p class="vg-title">Why Agile Works (And Why It Doesn't)</p>
+      <p class="vg-creator">Gartner Research</p>
+      <span class="vg-duration">⏱ 18 min · Critical perspective</span>
+    </div>
+  </a>
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Agile+Manifesto+20+Years+Later" target="_blank" rel="noopener">
+    <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
+    <div class="vg-meta">
+      <span class="vg-tag optional">Optional</span>
+      <p class="vg-title">Original Agile Manifesto Signers' Reflections</p>
+      <p class="vg-creator">Panel discussion</p>
+      <span class="vg-duration">⏱ 60 min · Where agile should have gone</span>
+    </div>
+  </a>
+</div>
 
 ---
 
-## 🎯 ESSENTIAL (Watch These First — ~45 minutes total)
-
-### 1. "Agile Project Management in Under 9 Minutes" — Brent Aubin
-- ⏱️ 9 minutes
-- 🔗 Search YouTube: **"Agile Project Management Brent Aubin"**
-- 🎯 Watch for: The shift from waterfall to agile. Pizza analogy 🍕
-
-### 2. "The Agile Manifesto Explained Simply" — Mountain Goat Software
-- ⏱️ 8 minutes
-- 🔗 Search YouTube: **"Mountain Goat Software Agile Manifesto"**
-- 🎯 Watch for: Why each value matters in real teams
-
-### 3. "What Is Empiricism in Scrum?" — Scrum.org
-- ⏱️ 6 minutes
-- 🔗 https://www.youtube.com/c/Scrumorg
-- 🎯 Watch for: Transparency, Inspection, Adaptation — the 3 pillars
-
-### 4. "Agile vs Waterfall - Which Should You Use?" — Simplilearn
-- ⏱️ 12 minutes
-- 🔗 Search YouTube: **"Agile vs Waterfall Simplilearn"**
-- 🎯 Watch for: When NOT to use Agile (yes, that's a real thing)
-
----
-
-## 📚 RECOMMENDED (~30 minutes additional)
-
-### 5. "Agile in 3 Minutes" — Mark Shead (animated whiteboard)
-- ⏱️ 3 minutes
-- 🔗 Search YouTube: **"Agile in 3 Minutes Mark Shead"**
-- 🎯 Quick reinforcement, great for review days
-
-### 6. "12 Principles of the Agile Manifesto" — Development That Pays
-- ⏱️ 14 minutes
-- 🔗 Search YouTube: **"Development That Pays 12 Principles"**
-- 🎯 The principles you actually need vs the ones you can skim
-
-### 7. "The History of Agile" — Henrik Kniberg (must-see)
-- ⏱️ 15 minutes
-- 🔗 Search YouTube: **"Henrik Kniberg Agile Product Ownership in a Nutshell"** (different video, but his channel is gold)
-- 🎯 Watch for: How agile evolved from real engineering pain
-
----
-
-## 🍿 OPTIONAL DEEP DIVES (For The Curious)
-
-### 8. "Agile Transformation Stories" — Atlassian
-- ⏱️ 25 minutes
-- 🔗 Search YouTube: **"Atlassian Agile Transformation"**
-- 🎯 Real companies, real failures, real successes
-
-### 9. "Why Agile Works (And Why It Doesn't)" — Gartner Research
-- ⏱️ 18 minutes
-- 🔗 Search YouTube: **"Why Agile Works Gartner"**
-- 🎯 Critical perspective — agile isn't a magic bullet
-
-### 10. Original Agile Manifesto Signers' Reflections (panel)
-- ⏱️ 60 minutes (long but fascinating)
-- 🔗 Search YouTube: **"Agile Manifesto 20 Years Later"**
-- 🎯 Where agile *should* have gone vs where it went
-
----
-
-## 🏆 BEST CHANNELS TO SUBSCRIBE TO
+## 🏆 Best channels to subscribe to
 
 | Channel | Why |
 |---------|-----|
@@ -79,7 +141,7 @@
 
 ---
 
-## ✅ After Watching
+## ✅ After watching
 
 Answer these in your notebook (without re-watching):
 
@@ -89,5 +151,4 @@ Answer these in your notebook (without re-watching):
 4. When is Waterfall better than Agile?
 5. What is "ScrumBut" and why is it bad?
 
-If you can answer all 5, you're ready for the [Quiz](./Quiz.md).
-If not, re-watch video #2 and #3.
+If you can answer all 5, you're ready for the [Quiz](./Quiz.md). If not, re-watch video #2 and #3.

@@ -21,16 +21,9 @@
     body {
       font-family: 'Inter', system-ui, sans-serif;
       -webkit-font-smoothing: antialiased;
-      /* Disable text selection */
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-      -webkit-touch-callout: none;
-      -webkit-tap-highlight-color: transparent;
     }
     h1, h2, h3, .display { font-family: 'Plus Jakarta Sans', 'Inter', sans-serif; letter-spacing: -0.02em; }
-    img, video { pointer-events: none; -webkit-user-drag: none; user-drag: none; }
+    img, video { -webkit-user-drag: none; user-drag: none; }
     .grain {
       background-image:
         radial-gradient(circle at 20% 30%, rgba(99, 102, 241, 0.15), transparent 40%),
@@ -527,72 +520,39 @@
     </div>
   </footer>
 
-  <!-- ============== CONTENT PROTECTION ============== -->
+  <!-- ============== LIGHT PROTECTION (right-click + devtools shortcuts only) ============== -->
   <script>
     (function () {
-      // Disable right-click context menu
+      // Block right-click (visible deterrent)
       document.addEventListener('contextmenu', function (e) {
         e.preventDefault();
-        showWarning();
+        showWarning('🔒 © 2026 Syed HZ Rizvi · Right-click disabled. Content for personal study.');
         return false;
       });
-
-      // Disable text selection
-      document.addEventListener('selectstart', function (e) {
-        e.preventDefault();
-        return false;
-      });
-
-      // Disable copy / cut / paste
-      ['copy', 'cut', 'paste'].forEach(function (evt) {
-        document.addEventListener(evt, function (e) {
-          e.preventDefault();
-          showWarning();
-          return false;
-        });
-      });
-
-      // Disable image drag
+      // Block image drag specifically (allow text drag if user wants)
       document.addEventListener('dragstart', function (e) {
-        e.preventDefault();
-        return false;
+        if (e.target && e.target.tagName === 'IMG') { e.preventDefault(); return false; }
       });
-
-      // Block keyboard shortcuts
+      // Block ONLY devtools keyboard shortcuts. Allow Ctrl+C/A/P/S/F so students can study.
       document.addEventListener('keydown', function (e) {
         var key = e.keyCode || e.which;
         var ctrl = e.ctrlKey || e.metaKey;
-
-        // F12 (DevTools)
-        if (key === 123) { e.preventDefault(); showWarning(); return false; }
-        // Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+Shift+C (DevTools)
-        if (ctrl && e.shiftKey && (key === 73 || key === 74 || key === 67)) {
-          e.preventDefault(); showWarning(); return false;
-        }
-        // Ctrl+U (View source)
-        if (ctrl && key === 85) { e.preventDefault(); showWarning(); return false; }
-        // Ctrl+S (Save)
-        if (ctrl && key === 83) { e.preventDefault(); showWarning(); return false; }
-        // Ctrl+P (Print)
-        if (ctrl && key === 80) { e.preventDefault(); showWarning(); return false; }
-        // Ctrl+A (Select all)
-        if (ctrl && key === 65) { e.preventDefault(); return false; }
-        // Ctrl+C (Copy)
-        if (ctrl && key === 67) { e.preventDefault(); showWarning(); return false; }
+        if (key === 123) { e.preventDefault(); showWarning('🔒 Dev tools shortcut disabled'); return false; }
+        if (ctrl && e.shiftKey && (key === 73 || key === 74 || key === 67)) { e.preventDefault(); return false; }
+        if (ctrl && key === 85) { e.preventDefault(); return false; }
       });
 
-      // Subtle warning toast
       var warningTimeout;
-      function showWarning() {
+      function showWarning(msg) {
         var existing = document.getElementById('cph-warn');
         if (existing) existing.remove();
         var t = document.createElement('div');
         t.id = 'cph-warn';
-        t.style.cssText = 'position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:#0f172a;color:#fff;padding:14px 20px;border-radius:10px;font-size:14px;font-weight:500;z-index:9999;box-shadow:0 10px 30px rgba(0,0,0,.25);font-family:Inter,sans-serif;max-width:90%;';
-        t.innerHTML = '🔒 This content is © 2026 Syed HZ Rizvi. Copying is not permitted.';
+        t.style.cssText = 'position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:#0f172a;color:#fff;padding:12px 20px;border-radius:10px;font-size:13px;font-weight:500;z-index:9999;box-shadow:0 12px 30px rgba(0,0,0,.3);font-family:Inter,sans-serif;max-width:90%;';
+        t.textContent = msg;
         document.body.appendChild(t);
         clearTimeout(warningTimeout);
-        warningTimeout = setTimeout(function () { if (t.parentNode) t.remove(); }, 3000);
+        warningTimeout = setTimeout(function () { if (t.parentNode) t.remove(); }, 2500);
       }
     })();
   </script>
