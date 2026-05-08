@@ -239,6 +239,7 @@
   <!-- ========== SHELL (Sidebar + Main) ========== -->
   <div class="shell">
 
+    {%- comment -%} page.url has no baseurl — paths in navigation.yml are relative, so this comparison works directly {%- endcomment -%}
     {%- assign current_path = page.url -%}
     {%- assign current_track = nil -%}
     {%- assign current_module = nil -%}
@@ -278,7 +279,7 @@
         </div>
         <ul class="module-list">
           {%- for m in tr.modules -%}
-            {%- assign m_url = tr.base | append: m.slug | append: '/Reading/' -%}
+            {%- assign m_url = tr.base | append: m.slug | append: '/Reading/' | prepend: site.baseurl -%}
             {%- assign is_active = false -%}
             {%- if current_module and current_module.slug == m.slug and current_track.id == tr.id -%}{%- assign is_active = true -%}{%- endif -%}
             <li>
@@ -289,7 +290,7 @@
             </li>
           {%- endfor -%}
           {%- for ex in tr.extras -%}
-            {%- assign ex_url = tr.base | append: ex.slug | append: '/' -%}
+            {%- assign ex_url = tr.base | append: ex.slug | append: '/' | prepend: site.baseurl -%}
             {%- assign is_active = false -%}
             {%- if current_module and current_module.slug == ex.slug and current_track.id == tr.id -%}{%- assign is_active = true -%}{%- endif -%}
             <li>
@@ -306,7 +307,7 @@
       <p class="sidebar-section-title">Resources</p>
       <ul class="extra-links" style="list-style:none;padding:0;margin:0;">
         {%- for link in site.data.navigation.extra_links -%}
-          <li><a href="{{ link.url }}"><span>{{ link.icon }}</span><span>{{ link.title }}</span></a></li>
+          <li><a href="{{ link.url | prepend: site.baseurl }}"><span>{{ link.icon }}</span><span>{{ link.title }}</span></a></li>
         {%- endfor -%}
       </ul>
 
@@ -326,7 +327,7 @@
         <nav class="breadcrumb" aria-label="Breadcrumb">
           <a href="{{ '/' | relative_url }}">🏠 Home</a>
           <span class="sep">›</span>
-          <a href="{{ current_track.base }}">{{ current_track.title }}</a>
+          <a href="{{ current_track.base | prepend: site.baseurl }}">{{ current_track.title }}</a>
           {%- if current_module -%}
             <span class="sep">›</span>
             <span class="current">Module {{ current_module.num }}: {{ current_module.title }}</span>
@@ -358,7 +359,7 @@
         {%- unless current_module.single_file -%}
           <div class="subpage-tabs">
             {%- for sp in site.data.navigation.module_pages -%}
-              {%- assign sp_url = current_track.base | append: current_module.slug | append: '/' | append: sp.id | append: '/' -%}
+              {%- assign sp_url = current_track.base | append: current_module.slug | append: '/' | append: sp.id | append: '/' | prepend: site.baseurl -%}
               <a href="{{ sp_url }}" {% if current_subpage and current_subpage.id == sp.id %}class="active"{% endif %}>{{ sp.label }}</a>
             {%- endfor -%}
           </div>
@@ -383,9 +384,9 @@
           {%- if prev_idx >= 0 -%}
             {%- assign prev_m = all_modules[prev_idx] -%}
             {%- if prev_m.single_file -%}
-              {%- assign prev_url = current_track.base | append: prev_m.slug | append: '/' -%}
+              {%- assign prev_url = current_track.base | append: prev_m.slug | append: '/' | prepend: site.baseurl -%}
             {%- else -%}
-              {%- assign prev_url = current_track.base | append: prev_m.slug | append: '/Reading/' -%}
+              {%- assign prev_url = current_track.base | append: prev_m.slug | append: '/Reading/' | prepend: site.baseurl -%}
             {%- endif -%}
             <a href="{{ prev_url }}" class="prev">
               <div class="label">← Previous</div>
@@ -401,9 +402,9 @@
           {%- if next_idx < all_modules.size -%}
             {%- assign next_m = all_modules[next_idx] -%}
             {%- if next_m.single_file -%}
-              {%- assign next_url = current_track.base | append: next_m.slug | append: '/' -%}
+              {%- assign next_url = current_track.base | append: next_m.slug | append: '/' | prepend: site.baseurl -%}
             {%- else -%}
-              {%- assign next_url = current_track.base | append: next_m.slug | append: '/Reading/' -%}
+              {%- assign next_url = current_track.base | append: next_m.slug | append: '/Reading/' | prepend: site.baseurl -%}
             {%- endif -%}
             <a href="{{ next_url }}" class="next">
               <div class="label">Next →</div>

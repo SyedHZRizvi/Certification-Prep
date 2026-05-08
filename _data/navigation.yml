@@ -1,5 +1,5 @@
 # Course navigation structure
-# Used by _layouts/default.html to render sidebar, breadcrumbs, prev/next
+# NOTE: All paths are RELATIVE (no baseurl prefix). The layout prepends site.baseurl when generating href values.
 
 tracks:
   - id: scrum
@@ -9,7 +9,7 @@ tracks:
     color_from: "#2563eb"
     color_to: "#7c3aed"
     icon: "🏃"
-    base: "/Certification-Prep/01-Scrum-Master/"
+    base: "/01-Scrum-Master/"
     modules:
       - num: 1
         title: The Agile Mindset
@@ -60,7 +60,7 @@ tracks:
     color_from: "#ea580c"
     color_to: "#dc2626"
     icon: "📊"
-    base: "/Certification-Prep/02-PMP/"
+    base: "/02-PMP/"
     modules:
       - num: 1
         title: Foundations
@@ -121,23 +121,23 @@ module_pages:
   - id: Cheat-Sheet
     label: 📋 Cheat Sheet
 
-# Other pages
+# Other pages (relative — baseurl prepended in layout)
 extra_links:
   - title: Quick Start Guide
-    url: "/Certification-Prep/00-Study-Plan/Quick-Start-Guide/"
+    url: "/00-Study-Plan/Quick-Start-Guide/"
     icon: "🚀"
   - title: 12-Week Study Plan
-    url: "/Certification-Prep/00-Study-Plan/12-Week-Study-Plan/"
+    url: "/00-Study-Plan/12-Week-Study-Plan/"
     icon: "📅"
   - title: Exam Day Tips
-    url: "/Certification-Prep/00-Study-Plan/Exam-Day-Tips/"
+    url: "/00-Study-Plan/Exam-Day-Tips/"
     icon: "🎯"
   - title: Books & Links
-    url: "/Certification-Prep/Resources/Books-and-Links/"
+    url: "/Resources/Books-and-Links/"
     icon: "📚"
   - title: Free Practice Tests
-    url: "/Certification-Prep/Resources/Free-Practice-Tests/"
+    url: "/Resources/Free-Practice-Tests/"
     icon: "🧪"
   - title: Communities
-    url: "/Certification-Prep/Resources/Communities/"
+    url: "/Resources/Communities/"
     icon: "🤝"
