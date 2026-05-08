@@ -5,6 +5,14 @@
 ![PMP](https://img.shields.io/badge/PMI-PMP-orange.svg)
 ![Free](https://img.shields.io/badge/Cost-FREE-brightgreen.svg)
 
+## 🌐 [Visit the live course site →](https://syedhzrizvi.github.io/Certification-Prep/)
+
+**Looking for the friendly version?** Visit **[syedhzrizvi.github.io/Certification-Prep](https://syedhzrizvi.github.io/Certification-Prep/)** for the polished course landing page with a beautiful UI.
+
+This repository view (with folders below) is for browsing the raw content. Both work — pick whichever you prefer.
+
+---
+
 > **Goal:** Take you from zero (or rusty) to *passing* both the **Professional Scrum Master I (PSM I)** and **PMP** exams — without falling asleep, drowning in jargon, or hating your life.
 
 > 📤 **Share this with anyone preparing for these exams!** It's free, MIT-licensed, and built to make studying actually enjoyable.

@@ -1,0 +1,39 @@
+# Jekyll config for GitHub Pages
+title: "The Cert Hub — Free Scrum Master & PMP Course"
+description: "A free, story-driven, complete self-study course for the Scrum Master (PSM I) and PMP exams."
+author: "Syed HZ Rizvi"
+url: "https://syedhzrizvi.github.io"
+baseurl: "/Certification-Prep"
+
+# Use a clean, learning-friendly theme for markdown pages
+# (the index.html is custom and overrides this for the landing page)
+theme: jekyll-theme-cayman
+
+# Markdown engine
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  hard_wrap: false
+
+# Pretty URLs (so /folder/file.md shows up cleanly)
+permalink: pretty
+
+# Don't process these in Jekyll build
+exclude:
+  - README.md
+  - LICENSE
+  - .gitignore
+  - .gitattributes
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+
+# Make sure Jekyll picks up all the markdown
+include:
+  - "*.md"
+
+# SEO
+twitter:
+  username: SyedHZRizvi
+  card: summary_large_image
