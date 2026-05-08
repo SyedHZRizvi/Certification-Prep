@@ -1,0 +1,19 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# Personal study notes (uncomment if you want to keep your scratch notes private)
+# my-notes/
+# scratch/
+
+# Build outputs (in case you add Jekyll/Pages later)
+_site/
+.jekyll-cache/
+.sass-cache/
