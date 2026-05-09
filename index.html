@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Cert Hub — Scrum Master & PMP Course by Syed HZ Rizvi</title>
-  <meta name="description" content="A comprehensive, story-driven self-study course to pass the Scrum Master (PSM I) and PMP exams. Designed and authored by Syed HZ Rizvi." />
-  <meta name="author" content="Syed HZ Rizvi" />
-  <meta name="copyright" content="© 2026 Syed HZ Rizvi. All Rights Reserved." />
+  <title>The Cert Hub — Scrum Master & PMP Course by Syed Humayun Zafar Rizvi</title>
+  <meta name="description" content="A comprehensive, story-driven self-study course to pass the Scrum Master (PSM I) and PMP exams. Designed and authored by Syed Humayun Zafar Rizvi, Toronto, Canada." />
+  <meta name="author" content="Syed Humayun Zafar Rizvi" />
+  <meta name="copyright" content="© 2026 Syed Humayun Zafar Rizvi. All Rights Reserved." />
   <meta name="robots" content="noarchive, noimageindex" />
   <meta property="og:title" content="The Cert Hub — Scrum Master & PMP Course" />
-  <meta property="og:description" content="Pass PSM I and PMP. Story-driven lessons by Syed HZ Rizvi." />
+  <meta property="og:description" content="Pass PSM I and PMP. Story-driven lessons by Syed Humayun Zafar Rizvi (Toronto, Canada)." />
   <meta property="og:type" content="website" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🎓%3C/text%3E%3C/svg%3E" />
   <script src="https://cdn.tailwindcss.com"></script>
@@ -50,6 +50,87 @@
     }
     .nav-blur { backdrop-filter: saturate(150%) blur(12px); }
 
+    /* ============== AUTHOR BADGE (Hero) ============== */
+    .author-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      padding: 12px 26px;
+      background: linear-gradient(135deg, rgba(99,102,241,0.25) 0%, rgba(167,139,250,0.18) 50%, rgba(236,72,153,0.22) 100%);
+      border: 1px solid rgba(167,139,250,0.5);
+      border-radius: 9999px;
+      font-size: 15px;
+      color: #e0e7ff;
+      font-weight: 500;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 32px -8px rgba(99,102,241,0.4), inset 0 1px 0 rgba(255,255,255,0.1);
+      letter-spacing: .005em;
+    }
+    .author-badge .ab-avatar {
+      width: 38px; height: 38px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #6366f1, #ec4899);
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      font-size: 13px;
+      color: #fff;
+      flex-shrink: 0;
+      box-shadow: 0 4px 14px -2px rgba(99,102,241,0.6);
+      letter-spacing: 0;
+    }
+    .author-badge .ab-label {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: .14em;
+      color: #a5b4fc;
+      font-weight: 700;
+      display: block;
+      margin-bottom: 2px;
+    }
+    .author-badge .ab-name {
+      color: #fff;
+      font-weight: 800;
+      font-size: 16px;
+      display: block;
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+    }
+    .author-badge .ab-divider {
+      width: 1px;
+      height: 34px;
+      background: rgba(255,255,255,0.22);
+      margin: 0 4px;
+    }
+    .author-badge .ab-location {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      color: #c7d2fe;
+      font-weight: 600;
+      opacity: 0.95;
+    }
+    .author-badge .ab-pulse {
+      width: 9px; height: 9px;
+      border-radius: 50%;
+      background: #34d399;
+      animation: ab-pulse 2s infinite;
+      flex-shrink: 0;
+    }
+    @keyframes ab-pulse {
+      0% { box-shadow: 0 0 0 0 rgba(52,211,153,0.7); }
+      70% { box-shadow: 0 0 0 10px rgba(52,211,153,0); }
+      100% { box-shadow: 0 0 0 0 rgba(52,211,153,0); }
+    }
+    @media (max-width: 640px) {
+      .author-badge { padding: 10px 18px; gap: 10px; font-size: 13px; flex-wrap: wrap; justify-content: center; max-width: 95%; }
+      .author-badge .ab-avatar { width: 34px; height: 34px; font-size: 12px; }
+      .author-badge .ab-name { font-size: 14px; }
+      .author-badge .ab-divider { display: none; }
+      .author-badge .ab-location { width: 100%; justify-content: center; padding-top: 6px; border-top: 1px solid rgba(255,255,255,0.15); margin-top: 4px; }
+    }
+
     /* Watermark — subtle, repeating, behind content */
     .watermark-overlay {
       position: fixed; inset: 0; pointer-events: none; z-index: 1;
@@ -68,7 +149,7 @@
       overflow: hidden;
     }
     .watermark-text::before {
-      content: '© Syed HZ Rizvi · Cert Hub · © Syed HZ Rizvi · Cert Hub · © Syed HZ Rizvi · Cert Hub';
+      content: '© Syed Humayun Zafar Rizvi · Cert Hub · © Syed Humayun Zafar Rizvi · Cert Hub';
       position: absolute;
       width: 200%; height: 200%;
       transform: rotate(-25deg);
@@ -88,7 +169,7 @@
     @media print {
       body * { visibility: hidden !important; }
       body::after {
-        content: 'This content is © 2026 Syed HZ Rizvi. All Rights Reserved. Printing is not permitted. Visit https://syedhzrizvi.github.io/Certification-Prep/ to view online.';
+        content: 'This content is © 2026 Syed Humayun Zafar Rizvi (Toronto, Canada). All Rights Reserved. Printing is not permitted. Visit https://syedhzrizvi.github.io/Certification-Prep/ to view online.';
         visibility: visible !important;
         display: block; position: fixed; inset: 0;
         padding: 4em; font-size: 1.2em;
@@ -125,10 +206,17 @@
     <div class="absolute inset-0 grain opacity-90"></div>
     <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(99,102,241,0.25),_transparent_60%)]"></div>
     <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-24 md:pt-28 md:pb-32 text-center">
-      <span class="pill bg-indigo-500/15 text-indigo-300 ring-1 ring-indigo-400/30 mb-6">
-        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-        Designed &amp; authored by Syed HZ Rizvi
-      </span>
+      <div class="author-badge mb-7">
+        <div class="ab-avatar">SR</div>
+        <div>
+          <span class="ab-label">Designed &amp; authored by</span>
+          <span class="ab-name">Syed Humayun Zafar Rizvi</span>
+        </div>
+        <div class="ab-divider"></div>
+        <span class="ab-location">📍 Toronto, Canada</span>
+        <div class="ab-divider"></div>
+        <span class="ab-pulse"></span>
+      </div>
       <h1 class="display text-5xl sm:text-6xl md:text-7xl font-extrabold leading-[1.05] mb-6">
         Pass <span class="gradient-text-blue">Scrum Master</span><br class="hidden sm:block" />
         &amp; <span class="gradient-text-blue">PMP</span> with confidence.
@@ -138,7 +226,7 @@
         <em>enjoyable</em> — without falling asleep, drowning in jargon, or hating your life.
       </p>
       <p class="text-sm text-slate-400 max-w-xl mx-auto mb-10">
-        Created by <strong class="text-white">Syed HZ Rizvi</strong> · © 2026 · All Rights Reserved
+        Created by <strong class="text-white">Syed Humayun Zafar Rizvi</strong> · Toronto, Canada · © 2026 · All Rights Reserved
       </p>
       <div class="flex flex-col sm:flex-row gap-3 justify-center">
         <a href="#paths" class="inline-flex items-center justify-center gap-2 bg-white text-slate-900 font-semibold px-7 py-3.5 rounded-xl hover:bg-slate-100 transition shadow-lg shadow-indigo-500/20">
@@ -352,15 +440,17 @@
             SR
           </div>
           <p class="mt-4 text-indigo-200 text-sm font-medium">Designer · Author · Curator</p>
+          <p class="mt-2 text-slate-400 text-xs font-medium">📍 Toronto, Canada</p>
         </div>
         <div class="md:col-span-2">
           <span class="pill bg-white/10 text-white ring-1 ring-white/20 mb-4">04 · About the creator</span>
           <h2 class="display text-3xl md:text-4xl font-extrabold mb-4">
-            Designed &amp; authored by<br /><span class="gradient-text-blue">Syed HZ Rizvi</span>
+            Designed &amp; authored by<br /><span class="gradient-text-blue">Syed Humayun Zafar Rizvi</span>
           </h2>
+          <p class="text-indigo-200 text-sm font-medium mb-4">📍 Toronto, Canada</p>
           <p class="text-slate-300 leading-relaxed mb-4">
             Every module, story, quiz, practice exam, flashcard, and cheat sheet on this site
-            was <strong class="text-white">designed and written by Syed HZ Rizvi</strong> — built from the ground
+            was <strong class="text-white">designed and written by Syed Humayun Zafar Rizvi</strong> — built from the ground
             up to be the kind of study experience he wished existed when prepping for these exams himself.
           </p>
           <p class="text-slate-300 leading-relaxed mb-6">
@@ -377,7 +467,7 @@
             </a>
           </div>
           <p class="text-xs text-slate-400 mt-6 leading-relaxed">
-            All content © 2026 Syed HZ Rizvi. All Rights Reserved.
+            All content © 2026 Syed Humayun Zafar Rizvi (Toronto, Canada). All Rights Reserved.
             This material is provided for personal study only — copying, reproduction,
             or redistribution is not permitted without prior written consent.
           </p>
@@ -486,7 +576,8 @@
       <div>
         <div class="flex items-center gap-2 font-extrabold mb-2"><span class="text-xl">🎓</span> The Cert Hub</div>
         <p class="text-sm text-slate-500 leading-relaxed">
-          Designed &amp; authored by <strong class="text-slate-900">Syed HZ Rizvi</strong>.
+          Designed &amp; authored by <strong class="text-slate-900">Syed Humayun Zafar Rizvi</strong>
+          <span class="text-slate-400">· 📍 Toronto, Canada</span>.<br />
           A complete self-study course for the Scrum Master (PSM I) and PMP exams.
         </p>
       </div>
@@ -512,7 +603,7 @@
     <div class="border-t border-slate-100 bg-slate-50">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row gap-2 items-center justify-between text-xs text-slate-500">
         <p>
-          © 2026 <strong class="text-slate-700">Syed HZ Rizvi</strong>. All Rights Reserved.
+          © 2026 <strong class="text-slate-700">Syed Humayun Zafar Rizvi</strong> · Toronto, Canada · All Rights Reserved.
           Personal study use only — copying &amp; reproduction prohibited.
         </p>
         <p>Not affiliated with PMI® or Scrum.org. PMP and PSM are trademarks of their respective owners.</p>
@@ -526,7 +617,7 @@
       // Block right-click (visible deterrent)
       document.addEventListener('contextmenu', function (e) {
         e.preventDefault();
-        showWarning('🔒 © 2026 Syed HZ Rizvi · Right-click disabled. Content for personal study.');
+        showWarning('🔒 © 2026 Syed Humayun Zafar Rizvi · Right-click disabled. Content for personal study.');
         return false;
       });
       // Block image drag specifically (allow text drag if user wants)
