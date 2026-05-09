@@ -329,6 +329,6 @@ You now know:
 
 ## 📚 Further Reading (Optional)
 
-- 📖 *The Scrum Guide* (THE source) — https://scrumguides.org/scrum-guide.html
+- 📖 *The Scrum Guide* (THE source) — <https://scrumguides.org/scrum-guide.html>
 - 📖 *Scrum: A Pocket Guide* by Gunther Verheyen — concise, exam-ready
 - 📖 *Scrum Insights for Practitioners* by Hiren Doshi — great Q&A style

@@ -9,16 +9,16 @@
 ### TOP RECOMMENDED (Free)
 
 #### 1. Scrum.org Open Assessments ⭐⭐⭐⭐⭐
-- **URL:** https://www.scrum.org/open-assessments
+- **URL:** <https://www.scrum.org/open-assessments>
 - **Why:** Direct from the certification body. Same style as the real PSM I.
 - **Strategy:** Take "Scrum Open" 5+ times, scoring 100% before booking the real exam.
 
 #### 2. Mikhail Lapshin's PSM I Test
-- **URL:** https://mlapshin.com/index.php/scrum-quizzes/
+- **URL:** <https://mlapshin.com/index.php/scrum-quizzes/>
 - **Why:** Excellent question pool, similar difficulty.
 
 #### 3. Volkerdon
-- **URL:** https://volkerdon.com/practice-questions
+- **URL:** <https://volkerdon.com/practice-questions>
 - **Why:** Solid free questions with explanations.
 
 #### 4. Real Time Scenarios
@@ -31,23 +31,23 @@
 ### TOP RECOMMENDED (Free)
 
 #### 1. PM Aspire Free Mock Test ⭐⭐⭐⭐
-- **URL:** https://www.pmaspire.com/
+- **URL:** <https://www.pmaspire.com/>
 - **Why:** Closest free test to actual exam style.
 
 #### 2. PrepCast Free Sample Test
-- **URL:** https://www.pm-exam-simulator.com/free-sample-test
+- **URL:** <https://www.pm-exam-simulator.com/free-sample-test>
 - **Why:** 50 free realistic questions.
 
 #### 3. Mohammad Khalil's Free Questions
-- **URL:** https://exams4sure.com/ (and YouTube channel)
+- **URL:** <https://exams4sure.com/> (and YouTube channel)
 - **Why:** Hundreds of free questions explained on YouTube.
 
 #### 4. PMTraining.com (limited free)
-- **URL:** https://www.pmtraining.com/
+- **URL:** <https://www.pmtraining.com/>
 - **Why:** Free first batch of questions; comprehensive paid version.
 
 #### 5. Mosaic Project (Lynda Bourne)
-- **URL:** http://mosaicprojects.com.au/
+- **URL:** <http://mosaicprojects.com.au/>
 - **Why:** Free articles + sample questions.
 
 ---

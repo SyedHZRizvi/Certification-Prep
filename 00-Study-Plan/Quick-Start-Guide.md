@@ -30,7 +30,7 @@ Pick ONE:
 You need **three free things** to study effectively:
 
 ### 1. Anki (Flashcards) — FREE
-- Download: https://apps.ankiweb.net/
+- Download: <https://apps.ankiweb.net/>
 - Why: Spaced repetition will save you 50% of your study time. No exaggeration.
 
 ### 2. A Notebook (Paper or Digital)
@@ -39,19 +39,19 @@ You need **three free things** to study effectively:
 
 ### 3. A Timer
 - Use the **Pomodoro technique:** 25 min focused study, 5 min break.
-- Web timer: https://pomofocus.io/
+- Web timer: <https://pomofocus.io/>
 
 ---
 
 ## 📚 Free Resources To Bookmark RIGHT NOW
 
 ### For Scrum Master:
-1. **The Scrum Guide** (the *only* official source) — https://scrumguides.org/scrum-guide.html
+1. **The Scrum Guide** (the *only* official source) — <https://scrumguides.org/scrum-guide.html>
    - It's 13 pages. **Read it 3+ times before the exam.**
-2. **Scrum.org Open Assessments** (free practice questions) — https://www.scrum.org/open-assessments
+2. **Scrum.org Open Assessments** (free practice questions) — <https://www.scrum.org/open-assessments>
 
 ### For PMP:
-1. **PMI Exam Content Outline** — https://www.pmi.org/-/media/pmi/documents/public/pdf/certifications/pmp-examination-content-outline.pdf
+1. **PMI Exam Content Outline** — <https://www.pmi.org/-/media/pmi/documents/public/pdf/certifications/pmp-examination-content-outline.pdf>
 2. **Process Groups: A Practice Guide** (PMI publication, library access often free)
 3. **Andrew Ramdayal's free PMP videos** — search "Andrew Ramdayal PMP" on YouTube
 

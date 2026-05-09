@@ -222,7 +222,7 @@ You now know:
 
 ## 📚 Further Reading (Optional)
 
-- 📖 *Agile Manifesto* (full text + signatories): https://agilemanifesto.org/
-- 📖 *Agile Manifesto Principles:* https://agilemanifesto.org/principles.html
+- 📖 *Agile Manifesto* (full text + signatories): <https://agilemanifesto.org/>
+- 📖 *Agile Manifesto Principles:* <https://agilemanifesto.org/principles.html>
 - 📖 *"The Phoenix Project"* by Gene Kim — a fun novel about agile/DevOps transformation
 - 📖 *"Scrum: The Art of Doing Twice the Work in Half the Time"* by Jeff Sutherland (Scrum co-creator)

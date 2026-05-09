@@ -5,8 +5,8 @@
 ## 🎯 SCRUM MASTER (PSM I)
 
 ### 📖 ESSENTIAL (Free)
-- **The Scrum Guide** (THE source — read 3+ times!) — https://scrumguides.org/scrum-guide.html
-- **Scrum.org Open Assessments** — https://www.scrum.org/open-assessments
+- **The Scrum Guide** (THE source — read 3+ times!) — <https://scrumguides.org/scrum-guide.html>
+- **Scrum.org Open Assessments** — <https://www.scrum.org/open-assessments>
   - Scrum Open
   - Product Owner Open
   - Developer Open
@@ -35,9 +35,9 @@
 ## 📊 PMP
 
 ### 📖 ESSENTIAL (Free)
-- **PMI Exam Content Outline (ECO)** — https://www.pmi.org/-/media/pmi/documents/public/pdf/certifications/pmp-examination-content-outline.pdf
-- **PMI Code of Ethics & Professional Conduct** — https://www.pmi.org/-/media/pmi/documents/public/pdf/ethics/pmi-code-of-ethics.pdf
-- **PMI Talent Triangle** — https://www.pmi.org/learning/training-development/talent-triangle
+- **PMI Exam Content Outline (ECO)** — <https://www.pmi.org/-/media/pmi/documents/public/pdf/certifications/pmp-examination-content-outline.pdf>
+- **PMI Code of Ethics & Professional Conduct** — <https://www.pmi.org/-/media/pmi/documents/public/pdf/ethics/pmi-code-of-ethics.pdf>
+- **PMI Talent Triangle** — <https://www.pmi.org/learning/training-development/talent-triangle>
 
 ### 📚 RECOMMENDED BOOKS
 1. **PMBOK Guide 7th Edition** (PMI publication; comes with PMI membership)
@@ -84,17 +84,17 @@
 - **"Toyota Production System"** by Taiichi Ohno (Lean origin)
 
 ### 🌐 USEFUL WEBSITES
-- **Agile Manifesto** — https://agilemanifesto.org/
-- **Agile Alliance** — https://www.agilealliance.org/
-- **Mountain Goat Software (Mike Cohn)** — https://www.mountaingoatsoftware.com/
-- **Atlassian Agile Coach** — https://www.atlassian.com/agile
+- **Agile Manifesto** — <https://agilemanifesto.org/>
+- **Agile Alliance** — <https://www.agilealliance.org/>
+- **Mountain Goat Software (Mike Cohn)** — <https://www.mountaingoatsoftware.com/>
+- **Atlassian Agile Coach** — <https://www.atlassian.com/agile>
 
 ---
 
 ## 🛠️ TOOLS YOU'LL USE
 
 ### Free
-- **Anki** — flashcards (spaced repetition) — https://apps.ankiweb.net/
+- **Anki** — flashcards (spaced repetition) — <https://apps.ankiweb.net/>
 - **Notion** — note-taking
 - **Pomofocus.io** — pomodoro timer
 - **Trello** — Kanban practice (free)
@@ -108,13 +108,13 @@
 ## 🎓 OFFICIAL CERTIFICATION SITES
 
 ### Scrum.org (PSM I)
-- **Get Started:** https://www.scrum.org/professional-scrum-certifications/professional-scrum-master-i-certification
+- **Get Started:** <https://www.scrum.org/professional-scrum-certifications/professional-scrum-master-i-certification>
 - **Cost:** $200 USD
 - **Format:** 80 questions, 60 minutes, online
 - **Pass:** 85%
 
 ### PMI (PMP)
-- **Get Started:** https://www.pmi.org/certifications/project-management-pmp
+- **Get Started:** <https://www.pmi.org/certifications/project-management-pmp>
 - **Cost:** $405 member / $555 non-member
 - **Format:** 180 questions, 230 minutes, online or in-person
 - **Pass:** Above target across 3 domains

@@ -7,23 +7,23 @@
 ## 💬 REDDIT
 
 ### r/PMP
-- **URL:** https://reddit.com/r/PMP
+- **URL:** <https://reddit.com/r/PMP>
 - **Activity:** Very active
 - **Why:** Real exam experiences, study tips, "I just passed" posts (motivating!)
 - **Use it for:** Specific question doubts, study plans, cert maintenance
 
 ### r/scrum
-- **URL:** https://reddit.com/r/scrum
+- **URL:** <https://reddit.com/r/scrum>
 - **Activity:** Active
 - **Why:** Practical Scrum advice, job market
 
 ### r/agile
-- **URL:** https://reddit.com/r/agile
+- **URL:** <https://reddit.com/r/agile>
 - **Activity:** Very active
 - **Why:** Broader agile community
 
 ### r/projectmanagement
-- **URL:** https://reddit.com/r/projectmanagement
+- **URL:** <https://reddit.com/r/projectmanagement>
 - **Activity:** Very active
 - **Why:** General PM career, certifications, practical advice
 
@@ -94,11 +94,11 @@
 
 ### PMI Chapters
 - 300+ local PMI chapters worldwide
-- Find yours: https://www.pmi.org/about/chapters
+- Find yours: <https://www.pmi.org/about/chapters>
 - Benefits: Networking, study groups, mentor matching, PDU events
 
 ### Agile Alliance Local Groups
-- https://www.agilealliance.org/
+- <https://www.agilealliance.org/>
 
 ---
 
