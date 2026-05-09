@@ -1,3 +1,8 @@
+---
+permalink: /01-Scrum-Master/
+title: Scrum Master Track (PSM I)
+---
+
 # 🏃 Scrum Master Track (PSM I)
 
 > **Goal:** Pass the Professional Scrum Master I exam from Scrum.org with 85%+

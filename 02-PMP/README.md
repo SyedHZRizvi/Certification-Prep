@@ -1,3 +1,8 @@
+---
+permalink: /02-PMP/
+title: PMP Track
+---
+
 # 📊 PMP Track (Project Management Professional)
 
 > **Goal:** Pass PMI's PMP exam — the world's most respected PM credential.
