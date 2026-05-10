@@ -98,6 +98,102 @@ D. Escalate to executives
 
 ---
 
+### Q16. The Scrum Master is BEST described as accountable for:
+A. Maximizing the value of the product
+B. Establishing Scrum as defined in the Scrum Guide
+C. Creating the Sprint Backlog
+D. Assigning tasks to Developers
+
+---
+
+### Q17. A Project Manager has been assigned to "oversee" a Scrum Team. What should the Scrum Master do?
+A. Defer to the PM and let them run the team
+B. Coach the organization on Scrum's structure: there is no PM in Scrum
+C. Make the PM the Product Owner
+D. Make the PM a Developer
+
+---
+
+### Q18. Who estimates the work on Product Backlog items?
+A. The Product Owner
+B. The Scrum Master
+C. The Developers (those doing the work)
+D. The stakeholders
+
+---
+
+### Q19. Which combination is explicitly NOT allowed in Scrum?
+A. Scrum Master who is also a Developer
+B. Scrum Master who is also a Product Owner
+C. Product Owner who is also a Developer
+D. One Scrum Master serving multiple Scrum Teams
+
+---
+
+### Q20. A "Proxy PO" who has no real decision authority and passes everything to the "real" decision-maker is:
+A. Acceptable per the Scrum Guide
+B. An anti-pattern; the PO must have real authority
+C. Recommended for large enterprises
+D. Required for regulated industries
+
+---
+
+### Q21. The Scrum Master serves the Product Owner by:
+A. Making product decisions when the PO is busy
+B. Helping with backlog management techniques and stakeholder collaboration
+C. Ordering the backlog
+D. Approving Sprint Goals
+
+---
+
+### Q22. The 2020 Scrum Guide describes the Scrum Master as a:
+A. Servant of the project manager
+B. Manager of the team
+C. True leader who serves the Scrum Team and the larger organization
+D. Process auditor
+
+---
+
+### Q23. A Scrum Team is preparing to start. The PO insists on having a "co-PO" so they can share the workload. The CORRECT response is:
+A. Allow it for fairness
+B. Have the two POs alternate Sprints
+C. Coach them: the Product Owner is ONE person, not a committee
+D. Let the SM mediate disputes
+
+---
+
+### Q24. In a Scrum Team with 3 backend developers, 2 frontend developers, 1 QA engineer, and 1 UX designer, how many Developers are there?
+A. 5
+B. 6
+C. 7
+D. 8
+
+---
+
+### Q25. A Developer needs domain knowledge they currently lack. The BEST Scrum response is:
+A. Hand the work to a contractor outside the team
+B. Skip the work and do it next Sprint
+C. The team self-organizes to share or acquire the skill internally
+D. Bring in a manager to assign the work elsewhere
+
+---
+
+### Q26. A stakeholder calls a Developer mid-Sprint and demands a new feature. The Developer should:
+A. Add the feature
+B. Ignore the request
+C. Refer the stakeholder to the Product Owner, who decides if/when it enters the backlog
+D. Ask the Scrum Master to override the request
+
+---
+
+### Q27. The Scrum Master serves the organization by:
+A. Reporting on team productivity to executives
+B. Coaching Scrum adoption and helping employees understand empirical work
+C. Building the budget
+D. Hiring developers
+
+---
+
 ## 🎯 Answers + Explanations
 
 ### Q1: **B. Maximizing the value of the product**
@@ -144,6 +240,42 @@ Cross-functional teams collectively have all needed skills. Skill gaps → team 
 
 ### Q15: **C. The Product Owner decides**
 After consultation if useful, but the PO has final authority.
+
+### Q16: **B. Establishing Scrum as defined in the Scrum Guide**
+Direct from the 2020 Scrum Guide. The PO maximizes value; the SM establishes Scrum; the Developers create the Increment.
+
+### Q17: **B. Coach the organization on Scrum's structure**
+There is no Project Manager accountability in Scrum. The SM coaches the org on the three accountabilities and clarifies that the PM role does not exist within a Scrum Team.
+
+### Q18: **C. The Developers**
+Those doing the work estimate it. PO defines what/why; Developers determine how and how much.
+
+### Q19: **B. Scrum Master who is also Product Owner**
+PO + SM combined creates a fundamental conflict of interest (value vs. process/team protection). The other combinations are allowed though not always ideal.
+
+### Q20: **B. An anti-pattern**
+A Proxy PO has no authority and merely transcribes others' decisions. The Scrum Guide requires the PO to have real authority on backlog ordering.
+
+### Q21: **B. Helping with backlog management and stakeholder collaboration**
+The SM serves the PO via empirical product planning, refinement techniques, and stakeholder facilitation — not by making product decisions.
+
+### Q22: **C. True leader who serves**
+The 2020 guide updated "servant leader" to "true leader who serves." The SM is NOT a manager.
+
+### Q23: **C. The PO is ONE person**
+The Scrum Guide is explicit: "The Product Owner is one person, not a committee." Co-POs create accountability ambiguity.
+
+### Q24: **C. 7**
+3 backend + 2 frontend + 1 QA + 1 UX = 7. All are "Developers" in Scrum, regardless of job title.
+
+### Q25: **C. The team self-organizes to share or acquire the skill**
+Cross-functional Scrum Teams collectively have all needed skills. Skill gaps trigger learning and pairing within the team, not external handoffs.
+
+### Q26: **C. Refer the stakeholder to the PO**
+The PO is the single source for backlog changes. Mid-Sprint additions go through the PO and must respect the Sprint Goal.
+
+### Q27: **B. Coaching Scrum adoption and empirical work**
+Per the Scrum Guide, the SM serves the organization by leading/coaching Scrum adoption, advising implementation, removing barriers, and helping the org grasp empirical/complex work.
 
 ---
 

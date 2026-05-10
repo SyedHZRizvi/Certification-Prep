@@ -103,6 +103,102 @@ D. Multi-year roadmaps
 
 ---
 
+### Q13. The Agile Manifesto's first value places "Individuals and interactions" over:
+A. Documentation
+B. Processes and tools
+C. Contracts
+D. Detailed plans
+
+---
+
+### Q14. A team posts a public burndown chart, holds a Sprint Review, and adjusts next Sprint based on feedback. Which empiricism pillar is shown by posting the burndown chart?
+A. Adaptation
+B. Inspection
+C. Transparency
+D. Validation
+
+---
+
+### Q15. Which of the following is the BEST example of "Customer collaboration over contract negotiation"?
+A. Locking scope in a master service agreement
+B. Treating customers as partners and incorporating their feedback throughout
+C. Sending weekly status reports
+D. Refusing change requests outside the original scope
+
+---
+
+### Q16. A team meeting at a ski lodge in Snowbird, Utah produced what document?
+A. The Scrum Guide
+B. The PMBOK
+C. The Agile Manifesto
+D. The Lean Startup
+
+---
+
+### Q17. A company with stable, well-known requirements and strict regulatory sign-offs is most likely BETTER served by:
+A. Pure Scrum
+B. A predictive (Waterfall) approach
+C. Kanban only
+D. SAFe at scale
+
+---
+
+### Q18. The Retrospective is the embodiment of which Agile principle?
+A. "Welcome changing requirements"
+B. "Build projects around motivated individuals"
+C. "At regular intervals, the team reflects and tunes its behavior"
+D. "Working software is the primary measure of progress"
+
+---
+
+### Q19. A stakeholder demands that the team "stop changing things and just follow the original plan." This contradicts which Agile value MOST directly?
+A. Individuals over processes
+B. Working software over documentation
+C. Customer collaboration over contract negotiation
+D. Responding to change over following a plan
+
+---
+
+### Q20. Which statement about Agile is TRUE?
+A. Agile means no planning at all
+B. Agile means continuous planning rather than no planning
+C. Agile forbids any documentation
+D. Agile guarantees faster total project completion
+
+---
+
+### Q21. A team has built a beautiful 100-page design document but has shipped no working software in 3 months. Which Agile value is being violated?
+A. Working software over comprehensive documentation
+B. Individuals over processes
+C. Customer collaboration over contracts
+D. Responding to change
+
+---
+
+### Q22. Which is NOT a framework that implements Agile?
+A. Scrum
+B. Kanban
+C. XP (eXtreme Programming)
+D. PRINCE2
+
+---
+
+### Q23. Empirical process control answers what question?
+A. "How do we predict the schedule?"
+B. "How do we make decisions when things are uncertain?"
+C. "How do we reduce headcount?"
+D. "How do we lock down requirements?"
+
+---
+
+### Q24. A team decides "We do Scrum, but we never hold the Daily Scrum." This is an example of:
+A. Self-organization
+B. Lean thinking
+C. ScrumBut (an anti-pattern)
+D. Continuous improvement
+
+---
+
 ## 🎯 Answers + Explanations
 
 ### Q1: **B. Comprehensive documentation**
@@ -149,6 +245,42 @@ Examples: "We do Scrum, but we skip retros." Or: "We do Scrum, but our PO assign
 
 ### Q12: **C. Motivated individuals with trust and support**
 Agile Principle #5. The cornerstone of servant leadership.
+
+### Q13: **B. Processes and tools**
+The 1st value of the Agile Manifesto: "Individuals and interactions over processes and tools." A great team with a whiteboard beats a mediocre team with $50,000 in tools.
+
+### Q14: **C. Transparency**
+Posting the burndown chart so all see the same truth = Transparency. The Sprint Review = Inspection. Adjusting the next Sprint = Adaptation.
+
+### Q15: **B. Treating customers as partners**
+The 3rd Agile value emphasizes ongoing partnership rather than contractual fights about scope. Locking scope or refusing changes contradicts collaboration.
+
+### Q16: **C. The Agile Manifesto**
+17 software developers met in Snowbird, Utah in February 2001 and authored the 68-word Agile Manifesto.
+
+### Q17: **B. A predictive (Waterfall) approach**
+Agile shines under uncertainty. When requirements are stable and well-understood (e.g., construction, regulatory), Waterfall can be the better fit. "Agile is always best" is a trap.
+
+### Q18: **C. Reflect and tune behavior at regular intervals**
+Principle #12 directly maps to the Sprint Retrospective — regular reflection and process adjustment.
+
+### Q19: **D. Responding to change over following a plan**
+The 4th Manifesto value. "Stick to the original plan" is rarely the agile answer.
+
+### Q20: **B. Continuous planning rather than no planning**
+A common misconception. Agile values planning — but planning is continuous and adaptive, not done once upfront.
+
+### Q21: **A. Working software over comprehensive documentation**
+Producing extensive docs but no working product is the textbook violation. Documentation has value, but a working product has more.
+
+### Q22: **D. PRINCE2**
+PRINCE2 is a predictive project management methodology, not an Agile framework. Scrum, Kanban, XP, SAFe, LeSS, and Nexus all implement Agile.
+
+### Q23: **B. How to make decisions under uncertainty**
+Empirical process control means deciding based on what is observed, not predicted — exactly when conditions are uncertain or complex.
+
+### Q24: **C. ScrumBut (an anti-pattern)**
+"We do Scrum, but..." = ScrumBut. The Scrum Guide is clear: skipping Scrum elements means you're not doing Scrum.
 
 ---
 

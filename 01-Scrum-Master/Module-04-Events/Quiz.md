@@ -98,6 +98,102 @@ D. Sprint Retrospective
 
 ---
 
+### Q16. For a 2-week Sprint, the maximum Sprint Planning timebox is:
+A. 2 hours
+B. 4 hours
+C. 6 hours
+D. 8 hours
+
+---
+
+### Q17. Which event focuses on inspecting the team's process (people, interactions, tools)?
+A. Sprint Planning
+B. Sprint Review
+C. Sprint Retrospective
+D. Daily Scrum
+
+---
+
+### Q18. The Daily Scrum's purpose is to:
+A. Provide status updates to the manager
+B. Inspect progress toward the Sprint Goal and adapt the Sprint Backlog
+C. Solve every blocker on the spot
+D. Replace the Sprint Review
+
+---
+
+### Q19. Which is NOT a Scrum event?
+A. Sprint Planning
+B. Backlog Refinement
+C. Sprint Review
+D. Daily Scrum
+
+---
+
+### Q20. The maximum Sprint Retrospective timebox for a 2-week Sprint is:
+A. 1 hour
+B. 1.5 hours
+C. 2 hours
+D. 3 hours
+
+---
+
+### Q21. The Sprint Retrospective should produce, at minimum:
+A. A backlog of bugs
+B. A formal status report
+C. At least one improvement to act on next Sprint
+D. A new Sprint Goal
+
+---
+
+### Q22. The Daily Scrum is for:
+A. The Scrum Master
+B. The Product Owner
+C. The Developers
+D. Senior management
+
+---
+
+### Q23. Per the 2020 Scrum Guide, the Daily Scrum's prescribed format (yesterday/today/blockers):
+A. Is required for all Scrum Teams
+B. Is no longer prescribed; teams choose their own format
+C. Was added in 2020
+D. Must be approved by the Scrum Master
+
+---
+
+### Q24. The Sprint Review's outcome is:
+A. A signed-off contract
+B. A revised Product Backlog informed by stakeholder feedback
+C. A new Definition of Done
+D. The next Sprint Goal
+
+---
+
+### Q25. A Scrum Team's Daily Scrum has been routinely running 30 minutes for two weeks. The Scrum Master should FIRST:
+A. Cancel the Daily Scrum
+B. Coach the team to focus on Sprint Goal progress and respect the 15-min timebox
+C. Take over running the meeting
+D. Ask the manager to enforce the timebox
+
+---
+
+### Q26. For a 1-week Sprint, the maximum Sprint Review timebox is:
+A. 1 hour
+B. 2 hours
+C. 4 hours
+D. 8 hours
+
+---
+
+### Q27. Which sequence is correct at the end of a Sprint?
+A. Retrospective → Sprint Review → Next Sprint Planning
+B. Sprint Review → Sprint Retrospective → Next Sprint Planning
+C. Sprint Review → Next Sprint Planning → Retrospective
+D. Daily Scrum → Sprint Review → Retrospective
+
+---
+
 ## 🎯 Answers + Explanations
 
 ### Q1: **C. 8 hours**
@@ -144,6 +240,42 @@ Predictability supports focus and team rhythm.
 
 ### Q15: **C. Sprint Review**
 The ONE event where stakeholders are actively invited.
+
+### Q16: **B. 4 hours**
+8 hours for 4-week Sprint, scaled proportionally. 2-week = 4 hours.
+
+### Q17: **C. Sprint Retrospective**
+Retro = process (people, interactions, tools, DoD). Review = product. Memorize: "Review = product, Retro = process."
+
+### Q18: **B. Inspect progress toward the Sprint Goal and adapt the Sprint Backlog**
+Direct from the 2020 Scrum Guide. Daily is not a status meeting and is not for solving every problem on the spot.
+
+### Q19: **B. Backlog Refinement**
+Refinement is an ongoing activity, not a formal Scrum event. The 5 Scrum events are: Sprint, Sprint Planning, Daily Scrum, Sprint Review, Sprint Retrospective.
+
+### Q20: **B. 1.5 hours**
+3 hours for a 4-week Sprint, halved for a 2-week Sprint = 1.5 hours.
+
+### Q21: **C. At least one improvement to act on next Sprint**
+Per the Scrum Guide, the Retrospective should plan ways to increase quality and effectiveness, including identifying actionable improvements for the next Sprint.
+
+### Q22: **C. The Developers**
+The Daily Scrum is for the Developers to inspect and adapt their plan. PO/SM may attend; managers and stakeholders typically do not.
+
+### Q23: **B. No longer prescribed; teams choose**
+The 2020 Scrum Guide removed the prescribed 3 questions, leaving format up to the team — as long as it inspects progress to the Sprint Goal.
+
+### Q24: **B. A revised Product Backlog informed by stakeholder feedback**
+The Sprint Review is a working session that adapts the Product Backlog. It's NOT a formal sign-off gate.
+
+### Q25: **B. Coach the team**
+The SM coaches on the value and timebox. Cancelling the Daily, taking over, or escalating to a manager are anti-patterns.
+
+### Q26: **A. 1 hour**
+4 hours for a 4-week Sprint, scaled to 1 hour for a 1-week Sprint.
+
+### Q27: **B. Review then Retrospective then Next Planning**
+Always: Sprint Review → Sprint Retrospective → next Sprint Planning. Review (product) before Retro (process).
 
 ---
 
