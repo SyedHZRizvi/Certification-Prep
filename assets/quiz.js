@@ -1,12 +1,19 @@
 /* ============================================================
-   Interactive Quiz Engine
-   Auto-detects pages with Q1./Q2. structure and converts the static
-   markdown into an interactive quiz with answer-checking, color-coded
-   feedback, score display, and explanations for wrong answers.
+   Interactive Quiz Engine v2 — with randomization
    © 2026 Syed Humayun Zafar Rizvi
+
+   Each attempt:
+     - Picks a random subset of questions (configurable size)
+     - Shuffles question order
+     - Shuffles answer-option order (A/B/C/D positions change)
+   "Try Again" reshuffles → genuinely different test experience.
    ============================================================ */
 (function () {
   'use strict';
+
+  // Default subset size when bank is large. If bank has fewer questions,
+  // shows all of them (still shuffled).
+  var DEFAULT_SUBSET = 15;
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
@@ -18,7 +25,6 @@
     var article = document.querySelector('article.content');
     if (!article) return;
 
-    // Detect quiz pages: must have multiple <h3> Q1./Q2. headers
     var allH3 = article.querySelectorAll('h3');
     if (allH3.length < 2) return;
 
@@ -27,23 +33,45 @@
       if (/^Q\d+\./.test(allH3[i].textContent.trim())) qTest++;
       if (qTest >= 2) break;
     }
-    if (qTest < 2) return; // Not a quiz page
+    if (qTest < 2) return;
 
-    var data = parseAll(article);
-    if (!data.questions.length) return;
+    var pool = parseAll(article);
+    if (!pool.length) return;
 
-    var widget = buildWidget(data, article);
+    // Build widget shell + first attempt
+    var widget = document.createElement('div');
+    widget.className = 'qz-widget';
+    var pageTitle = '';
+    var h1 = article.querySelector('h1');
+    if (h1) pageTitle = h1.textContent.replace(/^\s*✏️?\s*/, '').trim();
+
+    var intro = '';
+    if (h1) {
+      var n = h1.nextElementSibling;
+      while (n && n.tagName !== 'P' && n.tagName !== 'BLOCKQUOTE' && n.tagName !== 'H2') n = n.nextElementSibling;
+      if (n && (n.tagName === 'P' || n.tagName === 'BLOCKQUOTE')) intro = n.textContent.trim();
+    }
+
     article.insertBefore(widget, article.firstChild);
     hideSource(article, widget);
+
+    // State held in closure
+    var state = {
+      pool: pool,
+      pageTitle: pageTitle,
+      intro: intro,
+      currentSet: null
+    };
+
+    renderAttempt(widget, state);
   }
 
   // ========== PARSING ==========
   function parseAll(article) {
-    var questions = [];
-    var answers = {};
     var allH3 = Array.from(article.querySelectorAll('h3'));
+    var qByNum = {};
 
-    // First pass: questions (### Q1. ...:)
+    // Pass 1: questions
     allH3.forEach(function (h3) {
       var text = h3.textContent.trim();
       var m = text.match(/^Q(\d+)\.\s+(.+?)\??:?\s*$/);
@@ -58,19 +86,20 @@
       if (!sib || sib.tagName !== 'P') return;
 
       var optionsText = sib.textContent.trim();
-      var options = parseOptions(optionsText);
-      if (Object.keys(options).length < 2) return;
+      var optionsMap = parseOptionsMap(optionsText);
+      if (Object.keys(optionsMap).length < 2) return;
 
-      questions.push({
+      qByNum[qNum] = {
         num: qNum,
         text: qText,
-        options: options,
-        sourceH3: h3,
-        sourceP: sib
-      });
+        optionsByLetter: optionsMap,
+        correctLetter: null,
+        correctText: null,
+        explanation: ''
+      };
     });
 
-    // Second pass: answers (### Q1: **B. text**)
+    // Pass 2: answers
     allH3.forEach(function (h3) {
       var text = h3.textContent.trim();
       var m = text.match(/^Q(\d+):\s*\*?\*?([A-D])\.?\s*(.*?)\*?\*?\s*$/);
@@ -78,8 +107,11 @@
       var qNum = parseInt(m[1], 10);
       var letter = m[2];
       var fullText = (m[3] || '').replace(/\*\*/g, '').trim();
+      if (!qByNum[qNum]) return;
 
-      // Gather explanation: siblings until next h3 or h2
+      qByNum[qNum].correctLetter = letter;
+      qByNum[qNum].correctText = fullText || qByNum[qNum].optionsByLetter[letter] || '';
+
       var sib = h3.nextElementSibling;
       var explHTML = '';
       while (sib && sib.tagName !== 'H3' && sib.tagName !== 'H2' && sib.tagName !== 'HR') {
@@ -88,45 +120,32 @@
         }
         sib = sib.nextElementSibling;
       }
-
-      answers[qNum] = {
-        letter: letter,
-        fullText: fullText,
-        explanation: explHTML,
-        sourceH3: h3,
-        explSiblings: collectExplanationSiblings(h3)
-      };
+      qByNum[qNum].explanation = explHTML;
     });
 
-    // Merge
-    questions.forEach(function (q) {
-      var a = answers[q.num];
-      if (a) {
-        q.correctLetter = a.letter;
-        q.correctFullText = a.fullText || (q.options[a.letter] || '');
-        q.explanation = a.explanation;
-        q.answerSourceH3 = a.sourceH3;
-        q.explSiblings = a.explSiblings;
-      }
+    var pool = [];
+    Object.keys(qByNum).forEach(function (k) {
+      var q = qByNum[k];
+      if (!q.correctLetter) return;
+      // Convert options dict to array of {text, isCorrect}
+      var optsArr = ['A','B','C','D'].filter(function (l) { return q.optionsByLetter[l]; }).map(function (l) {
+        return { text: q.optionsByLetter[l], isCorrect: (l === q.correctLetter) };
+      });
+      if (optsArr.length < 2) return;
+      pool.push({
+        origNum: q.num,
+        text: q.text,
+        options: optsArr,            // canonical order
+        correctText: q.correctText || (optsArr.find(function(o){return o.isCorrect;}) || {}).text || '',
+        explanation: q.explanation
+      });
     });
 
-    var validQuestions = questions.filter(function (q) { return q.correctLetter; });
-    return { questions: validQuestions, allQuestions: questions };
+    return pool;
   }
 
-  function collectExplanationSiblings(h3) {
-    var sibs = [];
-    var sib = h3.nextElementSibling;
-    while (sib && sib.tagName !== 'H3' && sib.tagName !== 'H2' && sib.tagName !== 'HR') {
-      sibs.push(sib);
-      sib = sib.nextElementSibling;
-    }
-    return sibs;
-  }
-
-  function parseOptions(text) {
+  function parseOptionsMap(text) {
     var options = {};
-    // Pattern matches: "A. text up to next letter or end"
     var regex = /\b([A-D])\.\s+([\s\S]+?)(?=\s+\b[A-D]\.\s|$)/g;
     var m;
     while ((m = regex.exec(text)) !== null) {
@@ -135,80 +154,94 @@
     return options;
   }
 
-  // ========== UI ==========
-  function buildWidget(data, article) {
-    var wrapper = document.createElement('div');
-    wrapper.className = 'qz-widget';
-
-    var pageTitle = '';
-    var h1 = article.querySelector('h1');
-    if (h1) pageTitle = h1.textContent.replace(/^\s*✏️?\s*/, '').trim();
-
-    // Get intro text (first paragraph or blockquote after H1)
-    var intro = '';
-    if (h1) {
-      var n = h1.nextElementSibling;
-      while (n && n.tagName !== 'P' && n.tagName !== 'BLOCKQUOTE' && n.tagName !== 'H2') {
-        n = n.nextElementSibling;
-      }
-      if (n && (n.tagName === 'P' || n.tagName === 'BLOCKQUOTE')) {
-        intro = n.textContent.trim();
-      }
+  // ========== RANDOMIZATION ==========
+  function shuffleArr(arr) {
+    var a = arr.slice();
+    for (var i = a.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var t = a[i]; a[i] = a[j]; a[j] = t;
     }
+    return a;
+  }
 
-    var nQ = data.questions.length;
-    wrapper.innerHTML =
+  function pickAttempt(pool, size) {
+    var subsetSize = Math.min(size, pool.length);
+    var shuffledPool = shuffleArr(pool);
+    var subset = shuffledPool.slice(0, subsetSize);
+    return subset.map(function (q, idx) {
+      var shuffledOpts = shuffleArr(q.options);
+      return {
+        displayNum: idx + 1,
+        origNum: q.origNum,
+        text: q.text,
+        options: shuffledOpts,            // randomized A/B/C/D positions
+        correctText: q.correctText,
+        explanation: q.explanation
+      };
+    });
+  }
+
+  // ========== RENDER ==========
+  function renderAttempt(widget, state) {
+    state.currentSet = pickAttempt(state.pool, DEFAULT_SUBSET);
+    var displayedN = state.currentSet.length;
+    var totalN = state.pool.length;
+
+    var poolNote = displayedN < totalN
+      ? '<strong>' + displayedN + ' random questions</strong> drawn from a pool of ' + totalN
+      : '<strong>' + displayedN + ' question' + (displayedN === 1 ? '' : 's') + '</strong>';
+
+    widget.innerHTML =
       '<div class="qz-header">' +
-        '<h2>📝 ' + escapeHTML(pageTitle || 'Interactive Quiz') + '</h2>' +
+        '<h2>📝 ' + escapeHTML(state.pageTitle || 'Interactive Quiz') + '</h2>' +
         '<p class="qz-meta">' +
-          (intro ? escapeHTML(intro) + '<br>' : '') +
-          '<strong>' + nQ + ' question' + (nQ === 1 ? '' : 's') + '</strong> · ' +
-          'Select your answer for each question, then click <strong>Submit</strong>.' +
+          (state.intro ? escapeHTML(state.intro) + '<br>' : '') +
+          poolNote + ' · ' +
+          '<span style="color:#6366f1;font-weight:600;">🔀 Order &amp; choices randomized</span> · ' +
+          'Pick the best answer for each, then click <strong>Submit</strong>.' +
         '</p>' +
         '<div class="qz-progress-bar"><div class="qz-progress-fill" id="qz-progress"></div></div>' +
       '</div>' +
       '<div class="qz-questions" id="qz-questions">' +
-        data.questions.map(renderQuestion).join('') +
+        state.currentSet.map(renderQuestion).join('') +
       '</div>' +
       '<div class="qz-actions">' +
         '<button class="qz-btn qz-btn-submit" id="qz-submit">✓ Submit Answers</button>' +
-        '<button class="qz-btn qz-btn-reset" id="qz-reset" style="display:none;">↻ Try Again</button>' +
-        '<button class="qz-btn qz-btn-show" id="qz-show" style="display:none;">📖 Show all explanations</button>' +
+        '<button class="qz-btn qz-btn-reset" id="qz-reset" style="display:none;">🔀 Try Again (new set)</button>' +
       '</div>' +
       '<div class="qz-result" id="qz-result"></div>';
 
-    // Attach handlers
     setTimeout(function () {
-      wrapper.querySelectorAll('input[type="radio"]').forEach(function (r) {
-        r.addEventListener('change', function () { updateProgress(wrapper, nQ); });
+      widget.querySelectorAll('input[type="radio"]').forEach(function (r) {
+        r.addEventListener('change', function () { updateProgress(widget, displayedN); });
       });
-      wrapper.querySelector('#qz-submit').addEventListener('click', function () {
-        gradeQuiz(wrapper, data.questions);
+      widget.querySelector('#qz-submit').addEventListener('click', function () {
+        gradeQuiz(widget, state);
       });
-      wrapper.querySelector('#qz-reset').addEventListener('click', function () {
-        resetQuiz(wrapper, data.questions);
-      });
-      wrapper.querySelector('#qz-show').addEventListener('click', function () {
-        showAllExplanations(wrapper, data.questions);
+      widget.querySelector('#qz-reset').addEventListener('click', function () {
+        toastReshuffle();
+        renderAttempt(widget, state);
+        widget.scrollIntoView({ behavior: 'smooth', block: 'start' });
       });
     }, 0);
-
-    return wrapper;
   }
 
   function renderQuestion(q) {
-    var optionsHTML = ['A','B','C','D'].filter(function (k) { return q.options[k]; }).map(function (letter) {
-      return '<label class="qz-option" data-q="' + q.num + '" data-letter="' + letter + '">' +
-        '<input type="radio" name="qz-q-' + q.num + '" value="' + letter + '">' +
+    // q.options is already shuffled. Display at positions 0..3 = letters A..D.
+    var letters = ['A', 'B', 'C', 'D'];
+    var optionsHTML = q.options.map(function (opt, idx) {
+      var letter = letters[idx];
+      return '<label class="qz-option" data-q="' + q.displayNum + '" data-letter="' + letter + '" data-idx="' + idx + '">' +
+        '<input type="radio" name="qz-q-' + q.displayNum + '" value="' + idx + '">' +
         '<span class="qz-letter">' + letter + '</span>' +
-        '<span class="qz-option-text">' + escapeHTML(q.options[letter]) + '</span>' +
+        '<span class="qz-option-text">' + escapeHTML(opt.text) + '</span>' +
       '</label>';
     }).join('');
 
-    return '<div class="qz-question" data-q="' + q.num + '">' +
-      '<h3 class="qz-q-title"><span class="qz-q-num">' + q.num + '</span>' + escapeHTML(q.text) + '</h3>' +
+    return '<div class="qz-question" data-q="' + q.displayNum + '">' +
+      '<h3 class="qz-q-title"><span class="qz-q-num">' + q.displayNum + '</span>' + escapeHTML(q.text) + '</h3>' +
       '<div class="qz-options">' + optionsHTML + '</div>' +
-      '<div class="qz-feedback" id="qz-fb-' + q.num + '"></div>' +
+      '<div class="qz-feedback" id="qz-fb-' + q.displayNum + '"></div>' +
     '</div>';
   }
 
@@ -220,67 +253,65 @@
   }
 
   // ========== GRADING ==========
-  function gradeQuiz(widget, questions) {
+  function gradeQuiz(widget, state) {
+    var questions = state.currentSet;
     var correct = 0;
     var skipped = 0;
+    var letters = ['A', 'B', 'C', 'D'];
 
     questions.forEach(function (q) {
-      var selected = widget.querySelector('input[name="qz-q-' + q.num + '"]:checked');
-      var userAnswer = selected ? selected.value : null;
-      var isCorrect = userAnswer === q.correctLetter;
+      var selectedInput = widget.querySelector('input[name="qz-q-' + q.displayNum + '"]:checked');
+      var userIdx = selectedInput ? parseInt(selectedInput.value, 10) : null;
+      var correctIdx = q.options.findIndex(function (o) { return o.isCorrect; });
+      var isCorrect = userIdx === correctIdx;
       if (isCorrect) correct++;
-      if (userAnswer === null) skipped++;
+      if (userIdx === null) skipped++;
 
-      // Color-code options
-      var qEl = widget.querySelector('.qz-question[data-q="' + q.num + '"]');
+      var qEl = widget.querySelector('.qz-question[data-q="' + q.displayNum + '"]');
       if (!qEl) return;
 
       qEl.querySelectorAll('.qz-option').forEach(function (opt) {
-        var letter = opt.getAttribute('data-letter');
+        var idx = parseInt(opt.getAttribute('data-idx'), 10);
         opt.classList.add('qz-graded');
-        if (letter === q.correctLetter) opt.classList.add('qz-correct');
-        else if (letter === userAnswer) opt.classList.add('qz-wrong');
+        if (idx === correctIdx) opt.classList.add('qz-correct');
+        else if (idx === userIdx) opt.classList.add('qz-wrong');
         var inp = opt.querySelector('input');
         if (inp) inp.disabled = true;
       });
 
-      // Feedback
-      var fb = widget.querySelector('#qz-fb-' + q.num);
+      var fb = widget.querySelector('#qz-fb-' + q.displayNum);
       if (!fb) return;
-      var correctFull = q.correctLetter + '. ' + escapeHTML(q.correctFullText || q.options[q.correctLetter] || '');
-
+      var correctOpt = q.options[correctIdx];
+      var correctFull = letters[correctIdx] + '. ' + escapeHTML(correctOpt.text);
       var explHTML = q.explanation ? '<div class="qz-explanation">' + q.explanation + '</div>' : '';
 
-      if (userAnswer === null) {
+      if (userIdx === null) {
         fb.innerHTML = '<div class="qz-fb qz-fb-skip">' +
           '<div class="qz-fb-title">⚠️ Skipped — no answer selected</div>' +
-          'Correct answer: <strong>' + correctFull + '</strong>' +
-          explHTML +
-          '</div>';
+          'Correct answer: <strong>' + correctFull + '</strong>' + explHTML +
+        '</div>';
       } else if (isCorrect) {
         fb.innerHTML = '<div class="qz-fb qz-fb-correct">' +
           '<div class="qz-fb-title">✅ Correct! Nice work.</div>' +
-          'Answer: <strong>' + correctFull + '</strong>' +
-          explHTML +
-          '</div>';
+          'Answer: <strong>' + correctFull + '</strong>' + explHTML +
+        '</div>';
       } else {
+        var userLetter = letters[userIdx];
+        var userText = q.options[userIdx].text;
         fb.innerHTML = '<div class="qz-fb qz-fb-wrong">' +
           '<div class="qz-fb-title">❌ Not quite</div>' +
-          'You picked <strong>' + userAnswer + '. ' + escapeHTML(q.options[userAnswer] || '') + '</strong>.<br>' +
-          'Correct answer: <strong>' + correctFull + '</strong>' +
-          explHTML +
-          '</div>';
+          'You picked <strong>' + userLetter + '. ' + escapeHTML(userText) + '</strong>.<br>' +
+          'Correct answer: <strong>' + correctFull + '</strong>' + explHTML +
+        '</div>';
       }
     });
 
-    // Score
     var pct = questions.length ? Math.round((correct / questions.length) * 100) : 0;
     showScore(widget, correct, questions.length, pct, skipped);
 
     widget.querySelector('#qz-submit').style.display = 'none';
     widget.querySelector('#qz-reset').style.display = 'inline-flex';
 
-    // Smooth-scroll to score
     setTimeout(function () {
       var result = widget.querySelector('#qz-result');
       if (result) result.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -292,50 +323,37 @@
     if (pct === 100) {
       badge = '🏆'; msg = 'Perfect score! You know this material cold.'; cls = 'is-perfect';
     } else if (pct >= 85) {
-      badge = '✅'; msg = 'Excellent — exam-ready on this topic. Review any wrong ones, then move on.'; cls = 'is-good';
+      badge = '✅'; msg = 'Excellent — exam-ready on this topic. Hit Try Again for a fresh test.'; cls = 'is-good';
     } else if (pct >= 70) {
-      badge = '👍'; msg = 'Good. Read the wrong-answer explanations carefully, then retake in a few days.'; cls = 'is-good';
+      badge = '👍'; msg = 'Good. Read the wrong-answer explanations, then Try Again with a new set.'; cls = 'is-good';
     } else if (pct >= 50) {
-      badge = '⚠️'; msg = 'Halfway there. Re-read the module reading, focus on the wrong answers below.'; cls = 'is-mid';
+      badge = '⚠️'; msg = 'Halfway there. Re-read the module, then come back for a fresh quiz set.'; cls = 'is-mid';
     } else {
-      badge = '🔁'; msg = 'Re-study the entire module before continuing. The explanations below show what to focus on.'; cls = 'is-low';
+      badge = '🔁'; msg = 'Re-study the entire module. The explanations below show what to focus on.'; cls = 'is-low';
     }
-
     var skipNote = skipped > 0 ? '<div class="qz-score-msg">⚠️ ' + skipped + ' question' + (skipped === 1 ? '' : 's') + ' skipped (counted as incorrect).</div>' : '';
-
     var result = widget.querySelector('#qz-result');
     if (!result) return;
     result.innerHTML = '<div class="qz-score-card ' + cls + '">' +
-        '<div class="qz-score-badge">' + badge + '</div>' +
-        '<div>' +
-          '<div class="qz-score-num">' + correct + ' / ' + total + '</div>' +
-          '<div class="qz-score-pct">' + pct + '% correct</div>' +
-          '<div class="qz-score-msg">' + msg + '</div>' +
-          skipNote +
-        '</div>' +
-      '</div>';
+      '<div class="qz-score-badge">' + badge + '</div>' +
+      '<div>' +
+        '<div class="qz-score-num">' + correct + ' / ' + total + '</div>' +
+        '<div class="qz-score-pct">' + pct + '% correct</div>' +
+        '<div class="qz-score-msg">' + msg + '</div>' +
+        skipNote +
+      '</div>' +
+    '</div>';
   }
 
-  function resetQuiz(widget, questions) {
-    widget.querySelectorAll('input[type="radio"]').forEach(function (r) {
-      r.checked = false; r.disabled = false;
-    });
-    widget.querySelectorAll('.qz-option').forEach(function (o) {
-      o.classList.remove('qz-graded', 'qz-correct', 'qz-wrong');
-    });
-    widget.querySelectorAll('.qz-feedback').forEach(function (fb) { fb.innerHTML = ''; });
-    var result = widget.querySelector('#qz-result');
-    if (result) result.innerHTML = '';
-    widget.querySelector('#qz-submit').style.display = 'inline-flex';
-    widget.querySelector('#qz-reset').style.display = 'none';
-    var showBtn = widget.querySelector('#qz-show');
-    if (showBtn) showBtn.style.display = 'none';
-    updateProgress(widget, questions.length);
-    widget.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }
-
-  function showAllExplanations(widget, questions) {
-    // No-op for now (can be wired later if user wants this)
+  function toastReshuffle() {
+    var existing = document.getElementById('qz-toast');
+    if (existing) existing.remove();
+    var t = document.createElement('div');
+    t.id = 'qz-toast';
+    t.style.cssText = 'position:fixed;top:80px;left:50%;transform:translateX(-50%);background:#0f172a;color:#fff;padding:12px 22px;border-radius:10px;font-size:14px;font-weight:600;z-index:9999;box-shadow:0 12px 30px rgba(0,0,0,.35);font-family:Inter,sans-serif;';
+    t.innerHTML = '🔀 Fresh test — questions and answer choices reshuffled';
+    document.body.appendChild(t);
+    setTimeout(function () { if (t.parentNode) t.remove(); }, 2200);
   }
 
   // ========== HIDE SOURCE ==========
@@ -344,30 +362,21 @@
     var hideMode = false;
     children.forEach(function (el) {
       if (el === widget) return;
-      // Start hiding from the first h3 (Q1) or from the "Questions" h2
       if (!hideMode) {
         if (el.tagName === 'H2' && /Question/i.test(el.textContent)) hideMode = true;
         else if (el.tagName === 'H3' && /^Q\d+\./.test(el.textContent.trim())) hideMode = true;
-        else if (el.tagName === 'H1') {
-          // Hide H1 too — widget has its own title
-          el.classList.add('qz-source-hidden');
-          return;
-        } else if (el.tagName === 'P' || el.tagName === 'BLOCKQUOTE') {
-          // Intro paragraphs — can hide since widget displays the intro
+        else if (el.tagName === 'H1') { el.classList.add('qz-source-hidden'); return; }
+        else if (el.tagName === 'P' || el.tagName === 'BLOCKQUOTE') {
           if (el.previousElementSibling === null || (el.previousElementSibling && el.previousElementSibling.classList.contains('qz-source-hidden'))) {
             el.classList.add('qz-source-hidden');
           }
           return;
-        } else if (el.tagName === 'HR') {
-          el.classList.add('qz-source-hidden');
-          return;
-        }
+        } else if (el.tagName === 'HR') { el.classList.add('qz-source-hidden'); return; }
       }
       if (hideMode) el.classList.add('qz-source-hidden');
     });
   }
 
-  // ========== UTIL ==========
   function escapeHTML(s) {
     return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
       return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' }[c];
