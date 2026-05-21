@@ -44,6 +44,8 @@ PROTECTED_FILES = [
     "_config.yml",
     "assets/quiz.js",
     "assets/protect.js",
+    "assets/freshness.js",
+    "version.html",
     "scripts/verify-baseline.py",
     "scripts/git-hooks/pre-commit",
     "scripts/install-hooks.sh",
@@ -303,6 +305,37 @@ def check_content_protection_wired(r: Result) -> None:
         r.ok("content protection (CSS + JS) wired in _layouts/default.html and index.html")
 
 
+def check_freshness_wired(r: Result) -> None:
+    layout = ROOT / "_layouts/default.html"
+    index = ROOT / "index.html"
+    version = ROOT / "version.html"
+    issues = []
+    if not version.is_file():
+        issues.append("version.html (Jekyll source for /version.txt) missing")
+    else:
+        t = version.read_text(encoding="utf-8", errors="ignore")
+        if "permalink: /version.txt" not in t:
+            issues.append("version.html missing 'permalink: /version.txt' front matter")
+        if "site.time" not in t:
+            issues.append("version.html missing {{ site.time | date }} template")
+    for label, p in [("_layouts/default.html", layout), ("index.html", index)]:
+        if not p.is_file():
+            issues.append(f"{label} not found")
+            continue
+        t = p.read_text(encoding="utf-8", errors="ignore")
+        if "__CERTHUB_BUILD__" not in t:
+            issues.append(f"{label} missing __CERTHUB_BUILD__ inline build-stamp")
+        if "freshness.js" not in t:
+            issues.append(f"{label} missing <script src=freshness.js>")
+        if "no-cache" not in t.lower():
+            issues.append(f"{label} missing Cache-Control no-cache meta tag")
+    if issues:
+        for it in issues:
+            r.fail(it)
+    else:
+        r.ok("freshness mechanism (version.txt + freshness.js + cache-control) wired")
+
+
 def check_navigation_yaml(r: Result) -> None:
     nav = ROOT / "_data/navigation.yml"
     if not nav.is_file():
@@ -351,6 +384,7 @@ def main() -> int:
         check_quiz_format,
         check_protected_files_exist,
         check_content_protection_wired,
+        check_freshness_wired,
         check_navigation_yaml,
         check_index_has_all_course_links,
         check_enforcement_executable,

@@ -1,3 +1,7 @@
+---
+layout: null
+sitemap: false
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +14,12 @@
   <meta name="robots" content="noindex, nofollow, noarchive, noimageindex, nosnippet" />
   <meta name="googlebot" content="noindex, nofollow, noarchive, noimageindex, nosnippet" />
   <meta name="bingbot" content="noindex, nofollow, noarchive" />
+
+  <!-- ====== CACHE-BUSTING (auto-reload stale pages after a new deploy) ====== -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <script>window.__CERTHUB_BUILD__ = '{{ site.time | date: "%s" }}';</script>
   <!-- Search Console verification (paste codes when you have them) -->
   <!-- <meta name="google-site-verification" content="YOUR_GOOGLE_CODE" /> -->
   <!-- <meta name="msvalidate.01" content="YOUR_BING_CODE" /> -->
@@ -1045,5 +1055,6 @@
   </script>
 
   <script src="assets/protect.js"></script>
+  <script src="assets/freshness.js"></script>
 </body>
 </html>

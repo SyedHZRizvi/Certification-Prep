@@ -10,6 +10,12 @@
   <meta name="robots" content="noindex, nofollow, noarchive, noimageindex, nosnippet" />
   <meta name="googlebot" content="noindex, nofollow, noarchive, noimageindex, nosnippet" />
   <meta name="bingbot" content="noindex, nofollow, noarchive" />
+
+  <!-- ====== CACHE-BUSTING (auto-reload stale pages after a new deploy) ====== -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <script>window.__CERTHUB_BUILD__ = '{{ site.time | date: "%s" }}';</script>
   <!-- ============================================================
        SEARCH CONSOLE VERIFICATION (paste your codes when ready)
        Google: https://search.google.com/search-console → Add property → URL prefix
@@ -650,5 +656,6 @@
   <!-- Interactive Quiz Engine — auto-activates on any page with Q1./Q2./... structure -->
   <script src="{{ '/assets/quiz.js' | relative_url }}"></script>
   <script src="{{ '/assets/protect.js' | relative_url }}"></script>
+  <script src="{{ '/assets/freshness.js' | relative_url }}"></script>
 </body>
 </html>
