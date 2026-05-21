@@ -110,6 +110,375 @@ tracks:
         slug: Flashcards
         single_file: true
 
+  - id: aws-clp
+    title: AWS Cloud Practitioner
+    subtitle: CLF-C02 Foundation Certification
+    color: amber
+    color_from: "#f59e0b"
+    color_to: "#d97706"
+    icon: "☁️"
+    base: "/03-AWS-Cloud-Practitioner/"
+    modules:
+      - num: 1
+        title: Cloud & AWS Fundamentals
+        slug: Module-01-Cloud-Fundamentals
+      - num: 2
+        title: Core Compute
+        slug: Module-02-Core-Compute
+      - num: 3
+        title: Core Storage
+        slug: Module-03-Core-Storage
+      - num: 4
+        title: Networking & CDN
+        slug: Module-04-Networking-CDN
+      - num: 5
+        title: Databases
+        slug: Module-05-Databases
+      - num: 6
+        title: Security, Identity & Compliance
+        slug: Module-06-Security-Identity-Compliance
+      - num: 7
+        title: Management, Monitoring & Pricing
+        slug: Module-07-Management-Monitoring-Pricing
+      - num: 8
+        title: Well-Architected & Migration
+        slug: Module-08-Well-Architected-Migration
+    extras:
+      - num: 9
+        title: Practice Exam 1
+        slug: Practice-Exams/Practice-Exam-1
+        single_file: true
+      - num: 10
+        title: Practice Exam 2
+        slug: Practice-Exams/Practice-Exam-2
+        single_file: true
+      - num: 11
+        title: Final Mock Exam (65q / 90min)
+        slug: Practice-Exams/Final-Mock-Exam
+        single_file: true
+      - num: 12
+        title: Master Flashcards
+        slug: Flashcards
+        single_file: true
+
+  - id: aws-saa
+    title: AWS Solutions Architect Associate
+    subtitle: SAA-C03 Associate Certification
+    color: orange
+    color_from: "#f97316"
+    color_to: "#c2410c"
+    icon: "🏗️"
+    base: "/04-AWS-Solutions-Architect-Associate/"
+    modules:
+      - num: 1
+        title: Foundations & Well-Architected
+        slug: Module-01-Foundations-Well-Architected
+      - num: 2
+        title: IAM & Organizations
+        slug: Module-02-IAM-Organizations
+      - num: 3
+        title: EC2 Deep Dive
+        slug: Module-03-EC2-Deep-Dive
+      - num: 4
+        title: VPC Deep Dive
+        slug: Module-04-VPC-Deep-Dive
+      - num: 5
+        title: S3 Deep Dive
+        slug: Module-05-S3-Deep-Dive
+      - num: 6
+        title: Databases
+        slug: Module-06-Databases
+      - num: 7
+        title: Decoupling & Integration
+        slug: Module-07-Decoupling-Integration
+      - num: 8
+        title: Caching, CDN & Edge
+        slug: Module-08-Caching-CDN-Edge
+      - num: 9
+        title: Monitoring & Cost Optimization
+        slug: Module-09-Monitoring-Cost-Optimization
+      - num: 10
+        title: DR, Migration & Hybrid
+        slug: Module-10-DR-Migration-Hybrid
+    extras:
+      - num: 11
+        title: Practice Exam 1
+        slug: Practice-Exams/Practice-Exam-1
+        single_file: true
+      - num: 12
+        title: Practice Exam 2
+        slug: Practice-Exams/Practice-Exam-2
+        single_file: true
+      - num: 13
+        title: Final Mock Exam (65q / 130min)
+        slug: Practice-Exams/Final-Mock-Exam
+        single_file: true
+      - num: 14
+        title: Master Flashcards
+        slug: Flashcards
+        single_file: true
+
+  - id: az-900
+    title: Azure Fundamentals
+    subtitle: AZ-900 Foundation Certification
+    color: cyan
+    color_from: "#06b6d4"
+    color_to: "#0e7490"
+    icon: "🌥️"
+    base: "/05-Azure-Fundamentals/"
+    modules:
+      - num: 1
+        title: Cloud Concepts
+        slug: Module-01-Cloud-Concepts
+      - num: 2
+        title: Azure Architecture
+        slug: Module-02-Azure-Architecture
+      - num: 3
+        title: Core Services
+        slug: Module-03-Core-Services
+      - num: 4
+        title: Identity, Governance & Security
+        slug: Module-04-Identity-Governance-Security
+      - num: 5
+        title: Cost Management & SLAs
+        slug: Module-05-Cost-Management-SLAs
+      - num: 6
+        title: Tools & Features
+        slug: Module-06-Tools-Features
+    extras:
+      - num: 7
+        title: Practice Exam 1
+        slug: Practice-Exams/Practice-Exam-1
+        single_file: true
+      - num: 8
+        title: Practice Exam 2
+        slug: Practice-Exams/Practice-Exam-2
+        single_file: true
+      - num: 9
+        title: Final Mock Exam (50q / 45min)
+        slug: Practice-Exams/Final-Mock-Exam
+        single_file: true
+      - num: 10
+        title: Master Flashcards
+        slug: Flashcards
+        single_file: true
+
+  - id: az-104
+    title: Azure Administrator
+    subtitle: AZ-104 Associate Certification
+    color: blue
+    color_from: "#0ea5e9"
+    color_to: "#1e40af"
+    icon: "🛠️"
+    base: "/06-Azure-Administrator/"
+    modules:
+      - num: 1
+        title: Subscriptions & Resource Hierarchy
+        slug: Module-01-Subscriptions-Resource-Hierarchy
+      - num: 2
+        title: Entra ID & RBAC
+        slug: Module-02-Entra-ID-RBAC
+      - num: 3
+        title: Storage Accounts & Blobs
+        slug: Module-03-Storage-Accounts-Blobs
+      - num: 4
+        title: Azure Files & File Sync
+        slug: Module-04-Azure-Files-File-Sync
+      - num: 5
+        title: Virtual Machines
+        slug: Module-05-Virtual-Machines
+      - num: 6
+        title: App Services & Containers
+        slug: Module-06-App-Services-Containers
+      - num: 7
+        title: Virtual Networks
+        slug: Module-07-Virtual-Networks
+      - num: 8
+        title: Network Security
+        slug: Module-08-Network-Security
+      - num: 9
+        title: Backup, Recovery & Migration
+        slug: Module-09-Backup-Recovery-Migration
+      - num: 10
+        title: Monitor & Governance
+        slug: Module-10-Monitor-Governance
+    extras:
+      - num: 11
+        title: Practice Exam 1
+        slug: Practice-Exams/Practice-Exam-1
+        single_file: true
+      - num: 12
+        title: Practice Exam 2
+        slug: Practice-Exams/Practice-Exam-2
+        single_file: true
+      - num: 13
+        title: Final Mock Exam (55q / 100min)
+        slug: Practice-Exams/Final-Mock-Exam
+        single_file: true
+      - num: 14
+        title: Master Flashcards
+        slug: Flashcards
+        single_file: true
+
+  - id: aws-aif
+    title: AWS AI Practitioner
+    subtitle: AIF-C01 GenAI Certification
+    color: purple
+    color_from: "#a855f7"
+    color_to: "#7e22ce"
+    icon: "🤖"
+    base: "/07-AWS-AI-Practitioner/"
+    modules:
+      - num: 1
+        title: AI/ML Fundamentals
+        slug: Module-01-AI-ML-Fundamentals
+      - num: 2
+        title: ML Workflow & SageMaker
+        slug: Module-02-ML-Workflow-SageMaker
+      - num: 3
+        title: Generative AI Fundamentals
+        slug: Module-03-Generative-AI-Fundamentals
+      - num: 4
+        title: AWS GenAI Stack (Bedrock, Q)
+        slug: Module-04-AWS-GenAI-Stack
+      - num: 5
+        title: Prompt Engineering & RAG
+        slug: Module-05-Prompt-Engineering-RAG
+      - num: 6
+        title: Fine-Tuning & Customization
+        slug: Module-06-Fine-Tuning-Customization
+      - num: 7
+        title: Responsible AI
+        slug: Module-07-Responsible-AI
+      - num: 8
+        title: AI Security & Governance
+        slug: Module-08-AI-Security-Governance
+    extras:
+      - num: 9
+        title: Practice Exam 1
+        slug: Practice-Exams/Practice-Exam-1
+        single_file: true
+      - num: 10
+        title: Practice Exam 2
+        slug: Practice-Exams/Practice-Exam-2
+        single_file: true
+      - num: 11
+        title: Final Mock Exam (65q / 120min)
+        slug: Practice-Exams/Final-Mock-Exam
+        single_file: true
+      - num: 12
+        title: Master Flashcards
+        slug: Flashcards
+        single_file: true
+
+  - id: az-ai102
+    title: Azure AI Engineer
+    subtitle: AI-102 Associate Certification
+    color: pink
+    color_from: "#ec4899"
+    color_to: "#be185d"
+    icon: "🧠"
+    base: "/08-Azure-AI-Engineer/"
+    modules:
+      - num: 1
+        title: AI Services Overview
+        slug: Module-01-AI-Services-Overview
+      - num: 2
+        title: Responsible AI & Content Safety
+        slug: Module-02-Responsible-AI-Content-Safety
+      - num: 3
+        title: Computer Vision
+        slug: Module-03-Computer-Vision
+      - num: 4
+        title: Natural Language Processing
+        slug: Module-04-Natural-Language-Processing
+      - num: 5
+        title: Document Intelligence & Knowledge Mining
+        slug: Module-05-Document-Intelligence-Knowledge-Mining
+      - num: 6
+        title: Conversational AI
+        slug: Module-06-Conversational-AI
+      - num: 7
+        title: Azure OpenAI Service
+        slug: Module-07-Azure-OpenAI-Service
+      - num: 8
+        title: Build GenAI Apps (AI Foundry)
+        slug: Module-08-Build-GenAI-Apps
+    extras:
+      - num: 9
+        title: Practice Exam 1
+        slug: Practice-Exams/Practice-Exam-1
+        single_file: true
+      - num: 10
+        title: Practice Exam 2
+        slug: Practice-Exams/Practice-Exam-2
+        single_file: true
+      - num: 11
+        title: Final Mock Exam (55q / 100min)
+        slug: Practice-Exams/Final-Mock-Exam
+        single_file: true
+      - num: 12
+        title: Master Flashcards
+        slug: Flashcards
+        single_file: true
+
+  - id: secplus
+    title: CompTIA Security+
+    subtitle: SY0-701 Cybersecurity Certification
+    color: red
+    color_from: "#dc2626"
+    color_to: "#7f1d1d"
+    icon: "🛡️"
+    base: "/09-CompTIA-Security-Plus/"
+    modules:
+      - num: 1
+        title: Security Fundamentals
+        slug: Module-01-Security-Fundamentals
+      - num: 2
+        title: Cryptography & PKI
+        slug: Module-02-Cryptography-PKI
+      - num: 3
+        title: Identity & Access Management
+        slug: Module-03-Identity-Access-Management
+      - num: 4
+        title: Threats & Threat Actors
+        slug: Module-04-Threats-Threat-Actors
+      - num: 5
+        title: Vulnerabilities & Attacks
+        slug: Module-05-Vulnerabilities-Attacks
+      - num: 6
+        title: Network Security
+        slug: Module-06-Network-Security
+      - num: 7
+        title: Endpoint, Mobile & Cloud Security
+        slug: Module-07-Endpoint-Mobile-Cloud-Security
+      - num: 8
+        title: Security Operations
+        slug: Module-08-Security-Operations
+      - num: 9
+        title: GRC, Risk & Compliance
+        slug: Module-09-GRC-Risk-Compliance
+      - num: 10
+        title: Application & Data Security
+        slug: Module-10-Application-Data-Security
+    extras:
+      - num: 11
+        title: Practice Exam 1
+        slug: Practice-Exams/Practice-Exam-1
+        single_file: true
+      - num: 12
+        title: Practice Exam 2
+        slug: Practice-Exams/Practice-Exam-2
+        single_file: true
+      - num: 13
+        title: Final Mock Exam (90q / 90min + PBQs)
+        slug: Practice-Exams/Final-Mock-Exam
+        single_file: true
+      - num: 14
+        title: Master Flashcards
+        slug: Flashcards
+        single_file: true
+
 # Sub-pages within each module
 module_pages:
   - id: Reading

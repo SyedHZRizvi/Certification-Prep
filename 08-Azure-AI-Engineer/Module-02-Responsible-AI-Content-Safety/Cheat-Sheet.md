@@ -1,0 +1,135 @@
+# 📋 Module 2 Cheat Sheet: Responsible AI & Content Safety
+
+> One page. Print it. Tape it to your monitor. Review before the exam.
+
+---
+
+## 🧭 The 6 RAI Principles (MEMORIZE)
+
+```
+1. FAIRNESS              — equitable outcomes across groups
+2. RELIABILITY & SAFETY  — works under expected + edge conditions
+3. PRIVACY & SECURITY    — protect data; don't leak training data
+4. INCLUSIVENESS         — usable by diverse abilities
+5. TRANSPARENCY          — users know it's AI + how it decided
+6. ACCOUNTABILITY        — humans answer for AI outcomes
+```
+🧠 Mnemonic: **F**riendly **R**obots **P**rotect **I**nclusive **T**ech **A**ccountably
+
+---
+
+## 🚨 Harm Categories + Severity
+
+| Category | Hate · Sexual · Violence · Self-Harm |
+|---|---|
+| Severity | **0 / 2 / 4 / 6** (discrete; no odd numbers) |
+| Default OpenAI threshold | **Medium** (blocks 4+) |
+
+---
+
+## 🧪 Content Safety APIs
+
+| API | Catches |
+|---|---|
+| `analyze_text` / `analyze_image` | Harmful content in 4 categories |
+| `shield_prompt` (Prompt Shields) | Jailbreaks (**user attack**) + indirect injection (**document attack**) |
+| `detect_groundedness` | LLM output not supported by sources |
+| Protected Material Detection | Reproducing copyrighted text/code |
+| Custom Categories (preview) | Your own classifier (e.g. competitor mentions) |
+
+```python
+from azure.ai.contentsafety import ContentSafetyClient
+from azure.ai.contentsafety.models import AnalyzeTextOptions
+client = ContentSafetyClient(endpoint, AzureKeyCredential(key))
+r = client.analyze_text(AnalyzeTextOptions(text="..."))
+```
+
+---
+
+## 🏗️ Azure OpenAI Content Filtering
+
+- Built-in, ON by default for new deployments
+- 4 categories × 2 directions (prompt + completion)
+- Configure via **Azure AI Foundry → Content filters**
+- Apply a **custom configuration** per **deployment**
+- Includes: Prompt Shields, Protected Material, Groundedness (where supported)
+
+---
+
+## 🚦 The 4-Step Workflow
+
+```
+1. IDENTIFY harms
+2. MEASURE them (test sets + evaluation)
+3. MITIGATE with 4 layers:
+     Model · Safety system · Metaprompt + grounding · UX
+4. OPERATE (staged rollout, monitoring, IR plan)
+```
+
+🚨 Skipping **Measure** is the classic mistake.
+
+---
+
+## 📑 RAI Documentation Artifacts
+
+| Artifact | What it is |
+|---|---|
+| **Transparency Note** | Capabilities, limits, recommended uses per service |
+| **Impact Assessment** | Internal RAI checklist for big deployments |
+| **Code of Conduct** | Customer terms for Azure OpenAI use |
+| **Limited Access form** | Application for Face ID, Custom Neural Voice, Speaker Recognition |
+
+---
+
+## 🩺 RAI Dashboard + GenAI Eval
+
+| Tool | Use |
+|---|---|
+| RAI Dashboard | Error analysis, interpretability (SHAP), counterfactuals, causal, data slicing |
+| AI Foundry Evaluation | Score on **Groundedness · Relevance · Coherence · Fluency · Similarity · Safety** |
+| Fairlearn | Bias assessment + mitigation |
+| InterpretML | Glassbox + explainability |
+| PyRIT | Open-source GenAI red-teaming |
+
+---
+
+## 🏆 Exam Power Phrases
+
+**Usually right**:
+- ✅ "Custom content filter configuration"
+- ✅ "Prompt Shields document attack" (for indirect injection)
+- ✅ "Detect groundedness against grounding sources"
+- ✅ "Apply layered mitigations"
+- ✅ "Measure harm rates before mitigating"
+
+**Usually wrong**:
+- ❌ "Disable Content Safety entirely"
+- ❌ "Sustainability principle"
+- ❌ "Severity 3" (no odd severities)
+- ❌ "Built-in filter is off by default"
+
+---
+
+## ⚠️ Anti-Patterns
+
+- ❌ Mitigations without measurement baseline
+- ❌ Confusing Inclusiveness with Fairness
+- ❌ Bot pretending to be human (Transparency)
+- ❌ "The AI made the decision" (Accountability)
+- ❌ Using default filter for clinical/medical workloads
+
+---
+
+## ✏️ Quick Self-Check
+
+1. Recite the 6 principles in order.
+2. List the 4 harm categories.
+3. Severity values? ___
+4. Prompt Shield types? ___
+5. 4 mitigation layers? ___
+
+If you can answer all 5 in 60 seconds, you own Module 2. ✅
+
+---
+
+➡️ [Module 3: Computer Vision](../Module-03-Computer-Vision/Reading.md)

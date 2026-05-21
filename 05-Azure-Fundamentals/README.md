@@ -1,0 +1,131 @@
+---
+permalink: /05-Azure-Fundamentals/
+title: Azure Fundamentals Track (AZ-900)
+---
+
+# ☁️ Azure Fundamentals Track (AZ-900)
+
+> **Goal:** Pass the Microsoft Certified: Azure Fundamentals (AZ-900) exam on your first try with 800+/1000.
+> **Duration:** 3–4 weeks part-time (about 30 hours)
+> **Cost:** $99 USD (lifetime cert — no renewal required)
+
+---
+
+## 🎯 What You'll Learn
+
+By the end of this track, you'll be able to:
+- Explain the cloud business model in plain English (CapEx vs OpEx, consumption pricing)
+- Tell the difference between IaaS, PaaS, and SaaS in 10 seconds
+- Pick the right Azure compute / storage / database service for a given scenario
+- Read an Azure resource hierarchy (mgmt group → subscription → RG → resource) without panic
+- Explain Microsoft Entra ID, RBAC, Azure Policy, and Defender for Cloud
+- Use the Pricing Calculator, TCO Calculator, and Cost Management to estimate spend
+- Pass the AZ-900 — and have the vocabulary to move on to AZ-104 next
+
+---
+
+## 📚 The 6 Modules
+
+| # | Module | Time | What You'll Master |
+|---|--------|------|--------------------|
+| 1 | [Cloud Concepts](./Module-01-Cloud-Concepts/Reading.md) | 3 hrs | IaaS/PaaS/SaaS, cloud models, CapEx vs OpEx, scaling, HA |
+| 2 | [Azure Architecture](./Module-02-Azure-Architecture/Reading.md) | 3 hrs | Regions, AZs, region pairs, resource hierarchy |
+| 3 | [Core Services](./Module-03-Core-Services/Reading.md) | 5 hrs | Compute, networking, storage, databases — the big map |
+| 4 | [Identity, Governance & Security](./Module-04-Identity-Governance-Security/Reading.md) | 4 hrs | Entra ID, RBAC, Policy, Locks, Defender, Sentinel, Zero Trust |
+| 5 | [Cost Management & SLAs](./Module-05-Cost-Management-SLAs/Reading.md) | 3 hrs | Pricing tools, Reservations, Spot, Hybrid Benefit, SLAs |
+| 6 | [Tools & Features](./Module-06-Tools-Features/Reading.md) | 3 hrs | Portal, CLI, Cloud Shell, ARM/Bicep, Monitor, Advisor |
+
+**Total study time:** ~21 hours of reading + 5 hours of videos + 4 hours of quizzes = **~30 hours**
+
+---
+
+## 🧪 Practice Exams (Located in `Practice-Exams/`)
+
+| Exam | Questions | Time | When To Take It | Difficulty |
+|------|-----------|------|-----------------|------------|
+| [Practice-Exam-1](./Practice-Exams/Practice-Exam-1.md) | 25 | 25 min | After finishing Modules 1–3 | ⭐⭐⭐ |
+| [Practice-Exam-2](./Practice-Exams/Practice-Exam-2.md) | 40 | 40 min | After finishing all modules | ⭐⭐⭐⭐ |
+| [Final-Mock-Exam](./Practice-Exams/Final-Mock-Exam.md) | 50 | 45 min | One day before the real exam | ⭐⭐⭐⭐⭐ |
+
+**Plus:** Take the free Microsoft Learn self-assessment and the official AZ-900 practice assessment — score 85%+ before booking the real exam.
+
+---
+
+## 📖 The Single Most Important Resource
+
+🔗 **[Microsoft Learn — AZ-900 official learning path](https://learn.microsoft.com/training/courses/az-900t00)** — Free. Comprehensive. Aligned exactly with the exam objectives. Treat it like the Scrum Guide: the source of truth.
+
+Backup the official path with the **[AZ-900 Exam Skills Outline (PDF)](https://learn.microsoft.com/credentials/certifications/resources/study-guides/az-900)** — keep it open while you study and check off each line.
+
+---
+
+## 🎓 What Is The AZ-900 Exam?
+
+| Detail | Specification |
+|--------|---------------|
+| Provider | Microsoft (Pearson VUE delivery) |
+| Cost | $99 USD (varies by country) |
+| Time | 45 minutes (60 min total seat time) |
+| Questions | 40–60 (typically ~45) |
+| Format | Multiple choice, multiple answer, true/false, drag-drop, hot-area, **Yes/No/Yes** scenario sets |
+| Pass mark | 700 / 1000 (≈ 70%) |
+| Delivery | Online proctored at home, OR test center |
+| Retake | 24-hour wait after first fail; 14-day wait after subsequent attempts |
+| Expiration | Does NOT expire (Fundamentals certs are lifetime) |
+
+**Exam objective weights (memorize these):**
+
+| Domain | Weight |
+|--------|--------|
+| Describe cloud concepts | 25–30% |
+| Describe Azure architecture and services | 35–40% |
+| Describe Azure management and governance | 30–35% |
+
+---
+
+## 🚦 Recommended Path
+
+### 4-Week Plan (best for working professionals)
+
+```
+Week 1: Modules 1 & 2 → Module 1+2 quizzes
+Week 2: Module 3 (deep — there's a lot) → Practice Exam 1
+Week 3: Modules 4 & 5 → Module 4+5 quizzes
+Week 4: Module 6 → Practice Exam 2 → Flashcards every day → Final Mock → REAL EXAM
+```
+
+### 2-Week Crash Plan (only if you already work with cloud)
+
+```
+Days 1–3: Modules 1, 2, 3
+Day 4:    Practice Exam 1 + review wrong answers
+Days 5–7: Modules 4, 5, 6
+Day 8:    Practice Exam 2 + review
+Days 9–10: Flashcards + Final Mock + REAL EXAM
+```
+
+---
+
+## ⚠️ The 7 Most Common Reasons People Fail
+
+1. ❌ Studied "Azure VMs" but couldn't pick between **VM Scale Sets, App Service, ACI, AKS, and Functions** on a scenario question (Module 3 fixes this)
+2. ❌ Confused old "**Azure AD**" name — Microsoft renamed it to **Microsoft Entra ID** in 2023. The exam uses the new name.
+3. ❌ Memorized service names but couldn't map them to a use case ("which service provides X?")
+4. ❌ Didn't understand **shared responsibility** — kept picking "Microsoft" for things customers actually own
+5. ❌ Mixed up **Azure Policy** (compliance rules) vs **RBAC** (who can do what) vs **Locks** (prevent deletion)
+6. ❌ Skipped the **SLA composite calculation** trick (multiply dependent SLAs — see Module 5)
+7. ❌ Didn't practice **Yes/No/Yes** style scenario sets — they're half the exam and trip up first-timers
+
+---
+
+## 🧠 Master Flashcards
+
+👉 [**Open Flashcards**](./Flashcards.md) — 80+ interactive cards, organized by module. Use the Section dropdown to drill the weakest area.
+
+---
+
+## 🎬 Start Here
+
+👉 [**Module 1: Cloud Concepts**](./Module-01-Cloud-Concepts/Reading.md)
+
+You got this. ☁️💪

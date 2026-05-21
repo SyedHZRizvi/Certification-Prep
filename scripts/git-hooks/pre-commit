@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+# ============================================================
+# Pre-commit hook — The Cert Hub
+# ============================================================
+# Refuses any commit that breaks the baseline asserted by
+# scripts/verify-baseline.py (the machine version of CLAUDE.md).
+#
+# Bypass:  git commit --no-verify
+# Bypass is reserved for DELIBERATE baseline changes. Before
+# bypassing you MUST update BOTH:
+#   - CLAUDE.md (human rulebook)
+#   - scripts/verify-baseline.py (machine assertions)
+# in the SAME commit. The commit message should start with
+# "baseline change:" to make this explicit in git log.
+# ============================================================
+set -e
+
+REPO=$(git rev-parse --show-toplevel)
+cd "$REPO"
+
+if [ ! -f "scripts/verify-baseline.py" ]; then
+  echo "✗ scripts/verify-baseline.py not found — refusing commit."
+  echo "  The baseline verifier is mandatory in this repo."
+  exit 1
+fi
+
+echo "→ pre-commit: running scripts/verify-baseline.py ..."
+if python3 scripts/verify-baseline.py; then
+  echo "→ pre-commit: baseline OK — commit allowed."
+  exit 0
+fi
+
+echo ""
+echo "✗ Baseline verifier FAILED. Commit REFUSED."
+echo ""
+echo "  Fix the underlying issue, re-stage, and commit again."
+echo ""
+echo "  If this is an INTENTIONAL baseline change, you must:"
+echo "    1. Update CLAUDE.md to document the new rule"
+echo "    2. Update scripts/verify-baseline.py to assert the new state"
+echo "    3. Commit those changes WITH the change that broke the old"
+echo "       baseline, and bypass this hook ONCE with:"
+echo "         git commit --no-verify -m 'baseline change: <reason>'"
+echo ""
+exit 1
