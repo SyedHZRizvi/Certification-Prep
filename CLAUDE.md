@@ -7,7 +7,7 @@
 
 ## 0. Project identity
 
-This is **The Cert Hub** — a Jekyll site authored by Syed Humayun Zafar Rizvi. It hosts free, story-driven self-study courses for **9 industry certifications**:
+This is **The Cert Hub** — a Jekyll site authored by Syed Humayun Zafar Rizvi. It hosts free, story-driven self-study courses for **13 industry certifications**:
 
 | # | Folder | Cert | Modules |
 |---|---|---|---|
@@ -20,8 +20,12 @@ This is **The Cert Hub** — a Jekyll site authored by Syed Humayun Zafar Rizvi.
 | 7 | `07-AWS-AI-Practitioner` | AIF-C01 | 8 |
 | 8 | `08-Azure-AI-Engineer` | AI-102 | 8 |
 | 9 | `09-CompTIA-Security-Plus` | SY0-701 | 10 |
+| 10 | `10-ASCM-CSCP` | CSCP (Supply Chain Pro) | 10 |
+| 11 | `11-ASCM-CPIM` | CPIM (Planning & Inventory) | 8 |
+| 12 | `12-ASCM-CLTD` | CLTD (Logistics & Distribution) | 8 |
+| 13 | `13-ISM-CPSM` | CPSM (Supply Management) | 8 |
 
-Total: **78 modules · 27 practice exams · 9 flashcard decks · 9 READMEs**.
+Total: **112 modules · 39 practice exams · 13 flashcard decks · 13 READMEs**.
 
 The frozen baseline tagged `stable-2026-05-20` is the canonical reference for "what this repo should look like." Any deviation must either (a) maintain or improve every assertion in `verify-baseline.py`, or (b) update both the assertions and `CLAUDE.md` in the same commit.
 

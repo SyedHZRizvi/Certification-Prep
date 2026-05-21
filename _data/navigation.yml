@@ -422,6 +422,216 @@ tracks:
         slug: Flashcards
         single_file: true
 
+  - id: cscp
+    title: ASCM CSCP
+    subtitle: Certified Supply Chain Professional
+    color: teal
+    color_from: "#0d9488"
+    color_to: "#115e59"
+    icon: "🔗"
+    base: "/10-ASCM-CSCP/"
+    modules:
+      - num: 1
+        title: SCM Foundations & Strategy
+        slug: Module-01-SCM-Foundations-Strategy
+      - num: 2
+        title: Supply Chain Design
+        slug: Module-02-Supply-Chain-Design
+      - num: 3
+        title: Demand & Forecasting
+        slug: Module-03-Demand-Forecasting
+      - num: 4
+        title: Supply Planning & S&OP
+        slug: Module-04-Supply-Planning-SOP
+      - num: 5
+        title: Inventory & Capacity
+        slug: Module-05-Inventory-Capacity
+      - num: 6
+        title: Sourcing & Supplier Management
+        slug: Module-06-Sourcing-Supplier-Management
+      - num: 7
+        title: Logistics, Distribution & Warehousing
+        slug: Module-07-Logistics-Distribution-Warehousing
+      - num: 8
+        title: International Trade & Customs
+        slug: Module-08-International-Trade-Customs
+      - num: 9
+        title: Sustainability, Risk & CSR
+        slug: Module-09-Sustainability-Risk-CSR
+      - num: 10
+        title: Continuous Improvement
+        slug: Module-10-Continuous-Improvement
+    extras:
+      - num: 11
+        title: Practice Exam 1
+        slug: Practice-Exams/Practice-Exam-1
+        single_file: true
+      - num: 12
+        title: Practice Exam 2
+        slug: Practice-Exams/Practice-Exam-2
+        single_file: true
+      - num: 13
+        title: Final Mock Exam (150q / 210min)
+        slug: Practice-Exams/Final-Mock-Exam
+        single_file: true
+      - num: 14
+        title: Master Flashcards
+        slug: Flashcards
+        single_file: true
+
+  - id: cpim
+    title: ASCM CPIM
+    subtitle: Planning & Inventory Management
+    color: indigo
+    color_from: "#4f46e5"
+    color_to: "#3730a3"
+    icon: "🏭"
+    base: "/11-ASCM-CPIM/"
+    modules:
+      - num: 1
+        title: Manufacturing Strategy
+        slug: Module-01-Manufacturing-Strategy
+      - num: 2
+        title: Demand Planning & Forecasting
+        slug: Module-02-Demand-Planning-Forecasting
+      - num: 3
+        title: S&OP
+        slug: Module-03-SOP-Sales-Operations-Planning
+      - num: 4
+        title: MPS & MRP
+        slug: Module-04-Master-Production-Scheduling-MRP
+      - num: 5
+        title: Capacity Planning
+        slug: Module-05-Capacity-Planning
+      - num: 6
+        title: Inventory Management
+        slug: Module-06-Inventory-Management
+      - num: 7
+        title: Production Activity Control
+        slug: Module-07-Production-Activity-Control
+      - num: 8
+        title: Quality, Lean & CI
+        slug: Module-08-Quality-Lean-CI
+    extras:
+      - num: 9
+        title: Practice Exam 1
+        slug: Practice-Exams/Practice-Exam-1
+        single_file: true
+      - num: 10
+        title: Practice Exam 2
+        slug: Practice-Exams/Practice-Exam-2
+        single_file: true
+      - num: 11
+        title: Final Mock Exam (150q / 210min)
+        slug: Practice-Exams/Final-Mock-Exam
+        single_file: true
+      - num: 12
+        title: Master Flashcards
+        slug: Flashcards
+        single_file: true
+
+  - id: cltd
+    title: ASCM CLTD
+    subtitle: Logistics, Transportation & Distribution
+    color: emerald
+    color_from: "#10b981"
+    color_to: "#047857"
+    icon: "🚛"
+    base: "/12-ASCM-CLTD/"
+    modules:
+      - num: 1
+        title: Logistics Strategy & Network
+        slug: Module-01-Logistics-Strategy-Network
+      - num: 2
+        title: Capacity & Demand (Logistics)
+        slug: Module-02-Capacity-Demand-Logistics
+      - num: 3
+        title: Order Management & Fulfillment
+        slug: Module-03-Order-Management-Fulfillment
+      - num: 4
+        title: Inventory in Distribution
+        slug: Module-04-Inventory-Distribution
+      - num: 5
+        title: Warehouse Operations
+        slug: Module-05-Warehouse-Operations
+      - num: 6
+        title: Transportation Modes
+        slug: Module-06-Transportation-Modes
+      - num: 7
+        title: Global Logistics & Customs
+        slug: Module-07-Global-Logistics-Customs
+      - num: 8
+        title: Reverse Logistics & Sustainability
+        slug: Module-08-Reverse-Logistics-Sustainability
+    extras:
+      - num: 9
+        title: Practice Exam 1
+        slug: Practice-Exams/Practice-Exam-1
+        single_file: true
+      - num: 10
+        title: Practice Exam 2
+        slug: Practice-Exams/Practice-Exam-2
+        single_file: true
+      - num: 11
+        title: Final Mock Exam (150q / 210min)
+        slug: Practice-Exams/Final-Mock-Exam
+        single_file: true
+      - num: 12
+        title: Master Flashcards
+        slug: Flashcards
+        single_file: true
+
+  - id: cpsm
+    title: ISM CPSM
+    subtitle: Certified Professional in Supply Management
+    color: violet
+    color_from: "#7c3aed"
+    color_to: "#5b21b6"
+    icon: "🤝"
+    base: "/13-ISM-CPSM/"
+    modules:
+      - num: 1
+        title: Supply Management Foundations
+        slug: Module-01-Supply-Management-Foundations
+      - num: 2
+        title: Category Management & Sourcing
+        slug: Module-02-Category-Management-Sourcing
+      - num: 3
+        title: Negotiation & Contracts
+        slug: Module-03-Negotiation-Contracts
+      - num: 4
+        title: Supplier Relationship Management
+        slug: Module-04-Supplier-Relationship-Management
+      - num: 5
+        title: Cost Management & TCO
+        slug: Module-05-Cost-Management-TCO
+      - num: 6
+        title: International Supply
+        slug: Module-06-International-Supply
+      - num: 7
+        title: Risk, Compliance & Ethics
+        slug: Module-07-Risk-Compliance-Ethics
+      - num: 8
+        title: Leadership & Project Management
+        slug: Module-08-Leadership-Project-Management
+    extras:
+      - num: 9
+        title: Practice Exam 1
+        slug: Practice-Exams/Practice-Exam-1
+        single_file: true
+      - num: 10
+        title: Practice Exam 2
+        slug: Practice-Exams/Practice-Exam-2
+        single_file: true
+      - num: 11
+        title: Final Mock Exam (165q / 180min)
+        slug: Practice-Exams/Final-Mock-Exam
+        single_file: true
+      - num: 12
+        title: Master Flashcards
+        slug: Flashcards
+        single_file: true
+
   - id: secplus
     title: CompTIA Security+
     subtitle: SY0-701 Cybersecurity Certification

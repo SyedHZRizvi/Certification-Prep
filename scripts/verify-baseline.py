@@ -32,11 +32,15 @@ EXPECTED_COURSES = {
     "07-AWS-AI-Practitioner":               8,
     "08-Azure-AI-Engineer":                 8,
     "09-CompTIA-Security-Plus":             10,
+    "10-ASCM-CSCP":                         10,
+    "11-ASCM-CPIM":                         8,
+    "12-ASCM-CLTD":                         8,
+    "13-ISM-CPSM":                          8,
 }
-EXPECTED_TOTAL_MODULES = sum(EXPECTED_COURSES.values())  # 78
-EXPECTED_TOTAL_PRACTICE_EXAMS = len(EXPECTED_COURSES) * 3  # 27
-MIN_TOTAL_COURSE_MD_FILES = 357
-MIN_YT_SEARCH_URLS = 700
+EXPECTED_TOTAL_MODULES = sum(EXPECTED_COURSES.values())  # 112
+EXPECTED_TOTAL_PRACTICE_EXAMS = len(EXPECTED_COURSES) * 3  # 39
+MIN_TOTAL_COURSE_MD_FILES = 500   # was 357 with 9 courses; ~143 added with the 4 SCM tracks
+MIN_YT_SEARCH_URLS = 1000         # was 700; ~300 added with the 4 SCM tracks
 
 PROTECTED_FILES = [
     "_layouts/default.html",
@@ -85,7 +89,7 @@ def check_course_directories(r: Result) -> None:
     for course in EXPECTED_COURSES:
         if not (ROOT / course).is_dir():
             r.fail(f"missing course directory: {course}")
-    actual = sorted(p.name for p in ROOT.glob("0[1-9]-*") if p.is_dir())
+    actual = sorted(p.name for p in [p for p in ROOT.glob("[01][0-9]-*") if not p.name.startswith("00-")] if p.is_dir())
     expected = sorted(EXPECTED_COURSES)
     if actual != expected:
         extras = set(actual) - set(expected)
@@ -95,7 +99,7 @@ def check_course_directories(r: Result) -> None:
         if missing:
             r.fail(f"missing course directories: {sorted(missing)}")
     else:
-        r.ok(f"all 9 course directories present")
+        r.ok(f"all {len(EXPECTED_COURSES)} course directories present")
 
 
 def check_modules_per_course(r: Result) -> None:
@@ -158,11 +162,11 @@ def check_readme_and_flashcards(r: Result) -> None:
     if missing_flashcards:
         r.fail(f"missing Flashcards.md in: {missing_flashcards}")
     if not missing_readme and not missing_flashcards:
-        r.ok("all 9 courses have README.md and Flashcards.md")
+        r.ok(f"all {len(EXPECTED_COURSES)} courses have README.md and Flashcards.md")
 
 
 def check_total_markdown_files(r: Result) -> None:
-    total = sum(1 for _ in ROOT.glob("0[1-9]-*/**/*.md"))
+    total = sum(1 for _ in (p for p in ROOT.glob("[01][0-9]-*/**/*.md") if not p.relative_to(ROOT).parts[0].startswith("00-")))
     if total < MIN_TOTAL_COURSE_MD_FILES:
         r.fail(
             f"total course markdown files: expected >= {MIN_TOTAL_COURSE_MD_FILES}, "
@@ -174,7 +178,7 @@ def check_total_markdown_files(r: Result) -> None:
 
 def check_no_direct_youtube_urls(r: Result) -> None:
     offenders = []
-    for md in ROOT.glob("0[1-9]-*/**/*.md"):
+    for md in (p for p in ROOT.glob("[01][0-9]-*/**/*.md") if not p.relative_to(ROOT).parts[0].startswith("00-")):
         text = md.read_text(encoding="utf-8", errors="ignore")
         if DIRECT_YT_RE.search(text):
             offenders.append(str(md.relative_to(ROOT)))
@@ -189,7 +193,7 @@ def check_no_direct_youtube_urls(r: Result) -> None:
 
 def check_search_youtube_urls_present(r: Result) -> None:
     total = 0
-    for md in ROOT.glob("0[1-9]-*/**/*.md"):
+    for md in (p for p in ROOT.glob("[01][0-9]-*/**/*.md") if not p.relative_to(ROOT).parts[0].startswith("00-")):
         text = md.read_text(encoding="utf-8", errors="ignore")
         total += len(SEARCH_YT_RE.findall(text))
     if total < MIN_YT_SEARCH_URLS:
@@ -206,7 +210,7 @@ def check_quiz_format(r: Result) -> None:
     # current state without forcing edits to live student content.
     bad_new = []
     bad_existing = []
-    for q in ROOT.glob("0[1-9]-*/Module-*/Quiz.md"):
+    for q in (p for p in ROOT.glob("[01][0-9]-*/Module-*/Quiz.md") if not p.relative_to(ROOT).parts[0].startswith("00-")):
         text = q.read_text(encoding="utf-8", errors="ignore")
         n = len(QUIZ_Q_RE.findall(text))
         rel = str(q.relative_to(ROOT))
@@ -362,7 +366,7 @@ def check_index_has_all_course_links(r: Result) -> None:
     if missing:
         r.fail(f"index.html: missing links to {missing}")
     else:
-        r.ok("index.html links to all 9 courses")
+        r.ok(f"index.html links to all {len(EXPECTED_COURSES)} courses")
 
 
 # ---------------------------------------------------------------------------
