@@ -4,7 +4,7 @@
 
 ## 🎯 SCRUM MASTER (PSM I)
 
-### 📖 ESSENTIAL (Free)
+### 📖 ESSENTIAL — Official Sources
 - **The Scrum Guide** (THE source — read 3+ times!) — <https://scrumguides.org/scrum-guide.html>
 - **Scrum.org Open Assessments** — <https://www.scrum.org/open-assessments>
   - Scrum Open

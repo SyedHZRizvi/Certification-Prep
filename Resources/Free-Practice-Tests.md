@@ -1,4 +1,4 @@
-# 🧪 Free Practice Tests
+# 🧪 External Practice Tests
 
 > **Goal varies by cert** — but more practice questions = more pattern recognition. Suggested minimums:
 > - **PSM I:** 200+ practice questions

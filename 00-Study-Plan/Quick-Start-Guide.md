@@ -81,12 +81,12 @@ You need **three free things** to study effectively:
 3. **AWS Well-Architected Framework** (required reading for SAA-C03) — <https://aws.amazon.com/architecture/well-architected/>
 
 ### For Azure (AZ-900 / AZ-104 / AI-102):
-1. **Microsoft Learn** (free official training, exam-aligned learning paths) — <https://learn.microsoft.com/training/>
-2. **Microsoft Learn Practice Assessments** (free, official, exam-style) — linked from each certification page on <https://learn.microsoft.com/credentials/certifications/>
-3. **Microsoft Reactor / Virtual Training Days** (free events, sometimes include free exam vouchers) — <https://developer.microsoft.com/reactor/>
+1. **Microsoft Learn** (official training portal, exam-aligned learning paths) — <https://learn.microsoft.com/training/>
+2. **Microsoft Learn Practice Assessments** (official, exam-style) — linked from each certification page on <https://learn.microsoft.com/credentials/certifications/>
+3. **Microsoft Reactor / Virtual Training Days** (community events, sometimes include exam vouchers) — <https://developer.microsoft.com/reactor/>
 
 ### For CompTIA Security+ (SY0-701):
-1. **Professor Messer's free SY0-701 video course** — <https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/sy0-701-comptia-security-plus-course/>
+1. **Professor Messer's SY0-701 video course** — <https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/sy0-701-comptia-security-plus-course/>
 2. **CompTIA SY0-701 exam objectives PDF** (the source of truth) — <https://www.comptia.org/certifications/security>
 
 ### For ASCM CSCP / CPIM / CLTD:
@@ -135,11 +135,11 @@ After studying thousands of pass/fail patterns, these stand out:
 
 **Q: Can I pass without buying a course?**
 **A:** Depends on the cert.
-- **Scrum Master:** Yes — free Scrum Guide + this material is enough.
+- **Scrum Master:** Yes — the Scrum Guide + this material is enough.
 - **PMP:** Most people benefit from a paid course (Andrew Ramdayal's $20 Udemy course is the de-facto standard), but not strictly required if disciplined.
-- **AWS (CLF-C02, SAA-C03, AIF-C01):** AWS Skill Builder is free and exam-aligned. A $15-20 Udemy course (Stephane Maarek) is the cheap+powerful upgrade most people choose.
-- **Azure (AZ-900, AZ-104, AI-102):** Microsoft Learn is free, exam-aligned, and often sufficient — especially for AZ-900. Add a cheap Udemy course (Scott Duffy, Tim Warner) for AZ-104 / AI-102 if you want more practice.
-- **Security+ (SY0-701):** Professor Messer's free video course + Jason Dion's $15-20 Udemy practice exams is the most-recommended free/cheap stack.
+- **AWS (CLF-C02, SAA-C03, AIF-C01):** AWS Skill Builder is exam-aligned and vendor-provided. A $15-20 Udemy course (Stephane Maarek) is the cheap+powerful upgrade most people choose.
+- **Azure (AZ-900, AZ-104, AI-102):** Microsoft Learn is exam-aligned, vendor-provided, and often sufficient — especially for AZ-900. Add a cheap Udemy course (Scott Duffy, Tim Warner) for AZ-104 / AI-102 if you want more practice.
+- **Security+ (SY0-701):** Professor Messer's video course + Jason Dion's $15-20 Udemy practice exams is the most-recommended cheap stack.
 - **ASCM CSCP / CPIM / CLTD:** The official ASCM Learning System is the practical requirement; community consensus is that going without it is hard.
 - **ISM CPSM:** Heavily benefits from ISM's official materials. Possible without, harder.
 

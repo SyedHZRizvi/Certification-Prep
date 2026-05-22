@@ -1,20 +1,19 @@
 # 🎓 The Cert Hub — 13 Certification Study Courses
 
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Certifications: 13](https://img.shields.io/badge/Certifications-13-blueviolet.svg)
 ![Modules: 112](https://img.shields.io/badge/Modules-112-blue.svg)
 ![Mock Exams: 39](https://img.shields.io/badge/Mock_Exams-39-orange.svg)
-![Free](https://img.shields.io/badge/Cost-FREE-brightgreen.svg)
+![Questions: 8000+](https://img.shields.io/badge/Practice_Questions-8%2C000%2B-green.svg)
 
 ## 🌐 [Visit the live course site →](https://syedhzrizvi.github.io/Certification-Prep/)
 
-This repository contains the raw markdown for **13 free, story-driven self-study courses** across project management, cloud, AI/GenAI, cybersecurity, and supply chain. The polished site is at **[syedhzrizvi.github.io/Certification-Prep](https://syedhzrizvi.github.io/Certification-Prep/)** — same content, prettier UI.
+This repository contains the raw markdown for **13 story-driven self-study courses** across project management, cloud, AI/GenAI, cybersecurity, and supply chain. The polished site is at **[syedhzrizvi.github.io/Certification-Prep](https://syedhzrizvi.github.io/Certification-Prep/)** — same content, prettier UI.
 
 ---
 
-> **Goal:** Take you from zero (or rusty) to *passing* your chosen industry certification — without falling asleep, drowning in jargon, or paying $1,000+ for a bootcamp.
+> **Goal:** Take you from zero (or rusty) to *passing* your chosen industry certification — without falling asleep or drowning in jargon.
 
-> 📤 **Share this with anyone preparing for these exams.** It's free, MIT-licensed, and built to make studying actually enjoyable.
+> 📤 **Share this with anyone preparing for these exams.** Built to make studying actually enjoyable.
 
 ---
 
@@ -60,7 +59,7 @@ Each track is a **guided journey** built on three pillars:
 | 12 | [`12-ASCM-CLTD/`](./12-ASCM-CLTD/README.md) | ASCM Certified in Logistics, Transportation & Distribution (CLTD) | 8 | 150 Q / 210 min |
 | 13 | [`13-ISM-CPSM/`](./13-ISM-CPSM/README.md) | ISM Certified Professional in Supply Management (CPSM) | 8 | 165 Q / 180 min |
 
-**Totals:** 13 certifications · 112 modules · 39 full-length mock exams · 8,000+ practice questions · ~600 hours of focused content. All free.
+**Totals:** 13 certifications · 112 modules · 39 full-length mock exams · 8,000+ practice questions · ~600 hours of focused content.
 
 ---
 
@@ -141,4 +140,4 @@ Good luck. Let's go.
 
 ## 🔒 License & Use
 
-This repository is MIT-licensed for personal study use. Copying, reproduction, or redistribution of the rendered site content is prohibited. All trademarks (PSM, PMP, AWS, Azure, CompTIA Security+, CSCP, CPIM, CLTD, CPSM) belong to their respective owners (Scrum.org, PMI, Amazon Web Services, Microsoft, CompTIA, ASCM, Institute for Supply Management). Not affiliated with any certification body.
+© 2026 Syed Humayun Zafar Rizvi. All Rights Reserved. This material is provided for enrolled-student personal study use only — copying, reproduction, or redistribution of the rendered site content is prohibited without prior written consent. All trademarks (PSM, PMP, AWS, Azure, CompTIA Security+, CSCP, CPIM, CLTD, CPSM) belong to their respective owners (Scrum.org, PMI, Amazon Web Services, Microsoft, CompTIA, ASCM, Institute for Supply Management). Not affiliated with any certification body.

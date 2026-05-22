@@ -7,7 +7,7 @@
 
 ## 0. Project identity
 
-This is **The Cert Hub** — a Jekyll site authored by Syed Humayun Zafar Rizvi. It hosts free, story-driven self-study courses for **13 industry certifications**:
+This is **The Cert Hub** — a Jekyll site authored by Syed Humayun Zafar Rizvi. It hosts story-driven self-study courses for **13 industry certifications**:
 
 | # | Folder | Cert | Modules |
 |---|---|---|---|
