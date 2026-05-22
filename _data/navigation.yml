@@ -218,6 +218,57 @@ tracks:
         slug: Flashcards
         single_file: true
 
+  - id: aws-aif
+    title: AWS AI Practitioner
+    subtitle: AIF-C01 GenAI Certification
+    color: purple
+    color_from: "#a855f7"
+    color_to: "#7e22ce"
+    icon: "🤖"
+    base: "/07-AWS-AI-Practitioner/"
+    modules:
+      - num: 1
+        title: AI/ML Fundamentals
+        slug: Module-01-AI-ML-Fundamentals
+      - num: 2
+        title: ML Workflow & SageMaker
+        slug: Module-02-ML-Workflow-SageMaker
+      - num: 3
+        title: Generative AI Fundamentals
+        slug: Module-03-Generative-AI-Fundamentals
+      - num: 4
+        title: AWS GenAI Stack (Bedrock, Q)
+        slug: Module-04-AWS-GenAI-Stack
+      - num: 5
+        title: Prompt Engineering & RAG
+        slug: Module-05-Prompt-Engineering-RAG
+      - num: 6
+        title: Fine-Tuning & Customization
+        slug: Module-06-Fine-Tuning-Customization
+      - num: 7
+        title: Responsible AI
+        slug: Module-07-Responsible-AI
+      - num: 8
+        title: AI Security & Governance
+        slug: Module-08-AI-Security-Governance
+    extras:
+      - num: 9
+        title: Practice Exam 1
+        slug: Practice-Exams/Practice-Exam-1
+        single_file: true
+      - num: 10
+        title: Practice Exam 2
+        slug: Practice-Exams/Practice-Exam-2
+        single_file: true
+      - num: 11
+        title: Final Mock Exam (65q / 120min)
+        slug: Practice-Exams/Final-Mock-Exam
+        single_file: true
+      - num: 12
+        title: Master Flashcards
+        slug: Flashcards
+        single_file: true
+
   - id: az-900
     title: Azure Fundamentals
     subtitle: AZ-900 Foundation Certification
@@ -316,57 +367,6 @@ tracks:
         slug: Practice-Exams/Final-Mock-Exam
         single_file: true
       - num: 14
-        title: Master Flashcards
-        slug: Flashcards
-        single_file: true
-
-  - id: aws-aif
-    title: AWS AI Practitioner
-    subtitle: AIF-C01 GenAI Certification
-    color: purple
-    color_from: "#a855f7"
-    color_to: "#7e22ce"
-    icon: "🤖"
-    base: "/07-AWS-AI-Practitioner/"
-    modules:
-      - num: 1
-        title: AI/ML Fundamentals
-        slug: Module-01-AI-ML-Fundamentals
-      - num: 2
-        title: ML Workflow & SageMaker
-        slug: Module-02-ML-Workflow-SageMaker
-      - num: 3
-        title: Generative AI Fundamentals
-        slug: Module-03-Generative-AI-Fundamentals
-      - num: 4
-        title: AWS GenAI Stack (Bedrock, Q)
-        slug: Module-04-AWS-GenAI-Stack
-      - num: 5
-        title: Prompt Engineering & RAG
-        slug: Module-05-Prompt-Engineering-RAG
-      - num: 6
-        title: Fine-Tuning & Customization
-        slug: Module-06-Fine-Tuning-Customization
-      - num: 7
-        title: Responsible AI
-        slug: Module-07-Responsible-AI
-      - num: 8
-        title: AI Security & Governance
-        slug: Module-08-AI-Security-Governance
-    extras:
-      - num: 9
-        title: Practice Exam 1
-        slug: Practice-Exams/Practice-Exam-1
-        single_file: true
-      - num: 10
-        title: Practice Exam 2
-        slug: Practice-Exams/Practice-Exam-2
-        single_file: true
-      - num: 11
-        title: Final Mock Exam (65q / 120min)
-        slug: Practice-Exams/Final-Mock-Exam
-        single_file: true
-      - num: 12
         title: Master Flashcards
         slug: Flashcards
         single_file: true
@@ -479,6 +479,57 @@ tracks:
         slug: Flashcards
         single_file: true
 
+  - id: cpim
+    title: ASCM CPIM
+    subtitle: Planning & Inventory Management
+    color: indigo
+    color_from: "#4f46e5"
+    color_to: "#3730a3"
+    icon: "🏭"
+    base: "/11-ASCM-CPIM/"
+    modules:
+      - num: 1
+        title: Manufacturing Strategy
+        slug: Module-01-Manufacturing-Strategy
+      - num: 2
+        title: Demand Planning & Forecasting
+        slug: Module-02-Demand-Planning-Forecasting
+      - num: 3
+        title: S&OP
+        slug: Module-03-SOP-Sales-Operations-Planning
+      - num: 4
+        title: MPS & MRP
+        slug: Module-04-Master-Production-Scheduling-MRP
+      - num: 5
+        title: Capacity Planning
+        slug: Module-05-Capacity-Planning
+      - num: 6
+        title: Inventory Management
+        slug: Module-06-Inventory-Management
+      - num: 7
+        title: Production Activity Control
+        slug: Module-07-Production-Activity-Control
+      - num: 8
+        title: Quality, Lean & CI
+        slug: Module-08-Quality-Lean-CI
+    extras:
+      - num: 9
+        title: Practice Exam 1
+        slug: Practice-Exams/Practice-Exam-1
+        single_file: true
+      - num: 10
+        title: Practice Exam 2
+        slug: Practice-Exams/Practice-Exam-2
+        single_file: true
+      - num: 11
+        title: Final Mock Exam (150q / 210min)
+        slug: Practice-Exams/Final-Mock-Exam
+        single_file: true
+      - num: 12
+        title: Master Flashcards
+        slug: Flashcards
+        single_file: true
+
   - id: cscp
     title: ASCM CSCP
     subtitle: Certified Supply Chain Professional
@@ -532,57 +583,6 @@ tracks:
         slug: Practice-Exams/Final-Mock-Exam
         single_file: true
       - num: 14
-        title: Master Flashcards
-        slug: Flashcards
-        single_file: true
-
-  - id: cpim
-    title: ASCM CPIM
-    subtitle: Planning & Inventory Management
-    color: indigo
-    color_from: "#4f46e5"
-    color_to: "#3730a3"
-    icon: "🏭"
-    base: "/11-ASCM-CPIM/"
-    modules:
-      - num: 1
-        title: Manufacturing Strategy
-        slug: Module-01-Manufacturing-Strategy
-      - num: 2
-        title: Demand Planning & Forecasting
-        slug: Module-02-Demand-Planning-Forecasting
-      - num: 3
-        title: S&OP
-        slug: Module-03-SOP-Sales-Operations-Planning
-      - num: 4
-        title: MPS & MRP
-        slug: Module-04-Master-Production-Scheduling-MRP
-      - num: 5
-        title: Capacity Planning
-        slug: Module-05-Capacity-Planning
-      - num: 6
-        title: Inventory Management
-        slug: Module-06-Inventory-Management
-      - num: 7
-        title: Production Activity Control
-        slug: Module-07-Production-Activity-Control
-      - num: 8
-        title: Quality, Lean & CI
-        slug: Module-08-Quality-Lean-CI
-    extras:
-      - num: 9
-        title: Practice Exam 1
-        slug: Practice-Exams/Practice-Exam-1
-        single_file: true
-      - num: 10
-        title: Practice Exam 2
-        slug: Practice-Exams/Practice-Exam-2
-        single_file: true
-      - num: 11
-        title: Final Mock Exam (150q / 210min)
-        slug: Practice-Exams/Final-Mock-Exam
-        single_file: true
-      - num: 12
         title: Master Flashcards
         slug: Flashcards
         single_file: true
