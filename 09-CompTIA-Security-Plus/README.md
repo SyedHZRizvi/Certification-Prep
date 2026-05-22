@@ -80,7 +80,7 @@ Honorable mentions:
 | Validity | 3 years; renew with CEUs, a higher cert, or by retaking |
 | Prerequisites | None official; CompTIA recommends Network+ and ~2 years IT security experience |
 
-### Domain weights (memorize the proportions — it tells you where to spend study time)
+### Domain Weights (Memorize the Proportions — It Tells You Where to Spend Study Time)
 
 | Domain | Weight | Modules |
 |--------|--------|---------|
@@ -96,7 +96,7 @@ Security Operations is the **biggest domain** — don't shortchange Modules 8 an
 
 ## 🚦 Recommended Path
 
-### 6-week intensive plan
+### 6-Week Intensive Plan
 ```
 Week 1: Modules 1, 2          → Quizzes
 Week 2: Modules 3, 4          → Quizzes
@@ -106,7 +106,7 @@ Week 5: Modules 8, 9          → Quizzes
 Week 6: Module 10 + review    → Practice Exam 2 → Final Mock → REAL EXAM
 ```
 
-### 8-week relaxed plan
+### 8-Week Relaxed Plan
 ```
 Weeks 1-2: Modules 1-3 + Professor Messer domain 1
 Weeks 3-4: Modules 4-5 + Practice Exam 1 + Messer domain 2

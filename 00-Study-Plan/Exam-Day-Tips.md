@@ -1,6 +1,8 @@
-# 🎯 Exam Day Tips (Both Exams)
+# 🎯 Exam Day Tips
 
 > **Read this the morning of your exam. Then re-read it. Then close it and trust yourself.**
+
+> 🌍 **Scope:** The night-before routine, morning routine, time management, and mental tactics in this guide work for **every certification in this course** — Scrum, PMP, AWS, Azure, AI, Security+, ASCM, ISM. The two cert-specific tables (PSM I, PMP) cover those exams in detail; for AWS, Azure, Security+, and supply-chain exams, see the `Cheat-Sheet.md` inside each track folder for cert-specific exam-day notes (question count, time limit, scaled-score passing line, break policy).
 
 ---
 
@@ -143,8 +145,16 @@ Breathe. Trust. Execute. 🎯
 ### If You Pass:
 - 🎉 Celebrate. You earned it.
 - 📝 Update LinkedIn within 24 hours (recruiter searches spike).
-- 🎓 PMP: Maintain via 60 PDUs every 3 years. Set a reminder.
-- 🎓 PSM I: Lifetime cert. No renewal. Forever.
+- 🎓 **Maintenance varies by cert:**
+  - **PSM I:** Lifetime cert. No renewal.
+  - **PMP:** 60 PDUs every 3 years.
+  - **AWS (CLF-C02 / SAA-C03 / AIF-C01):** Valid 3 years; recertify by retaking the exam or earning a higher cert in the same path.
+  - **Azure AZ-900:** Lifetime (fundamentals don't expire).
+  - **Azure AZ-104 / AI-102:** Annual free online renewal assessment on Microsoft Learn.
+  - **CompTIA Security+ (SY0-701):** Valid 3 years; renew via 50 CEUs, a higher cert, or retaking.
+  - **ASCM CSCP / CPIM / CLTD:** Valid 5 years; renew via 75 maintenance points.
+  - **ISM CPSM:** Valid 4 years; renew via 60 continuing-education hours.
+- 📅 **Set a calendar reminder** for renewal a year before expiry.
 
 ### If You Don't Pass:
 - 💭 Take 24 hours OFF. Don't think about it.

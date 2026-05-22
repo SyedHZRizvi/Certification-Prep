@@ -354,10 +354,12 @@
     <!-- ========== SIDEBAR ========== -->
     <aside class="sidebar">
 
-      <!-- Progress summary -->
+      <!-- Progress summary — total module count computed from navigation.yml at build time -->
+      {%- assign sidebar_total_modules = 0 -%}
+      {%- for tr in site.data.navigation.tracks -%}{%- assign m = tr.modules | size -%}{%- assign sidebar_total_modules = sidebar_total_modules | plus: m -%}{%- endfor -%}
       <div class="progress-summary">
         <strong>Your progress</strong>
-        <div id="prog-text" style="margin-top:4px;">0 of 18 modules complete</div>
+        <div id="prog-text" style="margin-top:4px;">0 of {{ sidebar_total_modules }} modules complete</div>
         <div class="progress-bar"><div class="progress-fill" id="prog-fill"></div></div>
         <button onclick="window.cphubResetProgress()">Reset progress</button>
       </div>
@@ -587,13 +589,15 @@
             a.classList.add('completed');
           }
         });
-        // Total modules across both tracks (numbered items only): 8 + 10 = 18
+        // Total modules across ALL tracks (numbered items only). Build-time value is
+        // injected by Jekyll Liquid from _data/navigation.yml so this stays in sync as
+        // tracks are added/removed. JS recomputes from DOM in case nav loads partially.
         var totalNumberedKeys = [];
         document.querySelectorAll('.module-list a[data-module-key] .num span').forEach(function (sp) {
           var num = parseInt(sp.textContent, 10);
           if (!isNaN(num) && num <= 10) totalNumberedKeys.push(sp.parentElement.parentElement.getAttribute('data-module-key'));
         });
-        var total = totalNumberedKeys.length || 18;
+        var total = totalNumberedKeys.length || {{ sidebar_total_modules }};
         var doneCount = done.filter(function(k){ return totalNumberedKeys.indexOf(k) !== -1; }).length;
         var pct = total ? Math.round((doneCount / total) * 100) : 0;
         var txt = document.getElementById('prog-text');

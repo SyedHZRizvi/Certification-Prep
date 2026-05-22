@@ -1,16 +1,20 @@
-# 📅 The 12-Week Study Plan (Both Exams)
+# 📅 The 12-Week Study Plan (Scrum Master → PMP)
+
+> ⚠️ **Scope of this plan:** The week-by-week schedule below is written for the **Scrum Master → PMP** path. If you're preparing for AWS, Azure, AI, Security+, or one of the supply-chain certs, see [Adapting This Plan To Other Certs](#-adapting-this-plan-to-other-certs) at the bottom — the same principles, pacing logic, and mock-exam cadence transfer cleanly.
 
 > **Reality check:** This plan assumes ~10 hours/week. Less time? Stretch it to 16 weeks. More time? Compress to 8.
 
 ---
 
-## 🧠 The Science Behind This Plan
+## 🧠 The Science Behind This Plan (Applies to Every Cert)
 
 Three principles drive the schedule:
 
 1. **Spaced repetition** — You'll revisit concepts at increasing intervals (Day 1, Day 3, Day 7, Day 14, Day 30).
 2. **Interleaving** — Mixing topics beats blocking. Your brain learns to *distinguish*, not just recognize.
 3. **Active recall** — You'll be quizzed to *death*. Reading without testing is studying theater.
+
+These principles work identically whether you're studying Scrum, AWS, Azure, AI, Security+, or any ASCM/ISM exam — only the *content* and *cadence* change.
 
 ---
 
@@ -173,4 +177,35 @@ It happens. ~30% of PMP test-takers fail their first attempt.
 
 **Scrum.org PSM I:** You can retake immediately for $150. Most second-attempt scores are dramatically higher because you've seen the question style.
 
+**AWS / Azure / Security+ / ASCM / ISM exams** all have their own retake policies — generally a 14-30 day cooldown and a re-payment of the exam fee. Always check the official exam policy on the cert's official page before booking a retake.
+
 You got this. 💪
+
+---
+
+## 🔧 Adapting This Plan To Other Certs
+
+The 12 weeks above were written for **Scrum Master (Weeks 1-4) → PMP (Weeks 5-12)**. If you're studying for another cert in this course, use the same *structure* but swap the *content*. Rough templates:
+
+### Cloud Practitioner / Fundamentals tier (CLF-C02, AZ-900, AIF-C01)
+- **Length:** 4-6 weeks at ~10 hours/week.
+- **Cadence:** Module 1-2 per week (read + video + quiz), full review week, two mocks + Final Mock Exam in the last week.
+- **Modules:** See each track's `README.md` for the module list (6-8 modules per track).
+
+### Associate / Administrator tier (SAA-C03, AZ-104, AI-102, Security+ SY0-701)
+- **Length:** 10-12 weeks at ~10 hours/week.
+- **Cadence:** Mirrors the PMP cadence above — domain-by-domain reading and quizzing, two practice exams in Week 11, full mock in Week 12.
+- **Hands-on labs:** Add 1-2 hours/week for hands-on (AWS Free Tier, Azure Free Account, or labs in the track).
+
+### AI tier (AIF-C01, AI-102)
+- **Length:** AIF-C01 ~5 weeks; AI-102 ~10 weeks (assumes some Azure or AI background).
+- **Cadence:** Same structure as cloud certs. Front-load reading for vocabulary, back-load hands-on.
+
+### Supply Chain (ASCM CSCP, CPIM, CLTD, ISM CPSM)
+- **Length:** 12-16 weeks per cert at ~10 hours/week.
+- **Cadence:** Heavier vocabulary loading in the first 2 weeks (APICS Dictionary for ASCM; ISM Bridge of Knowledge for CPSM). Mocks weighted toward the final 3 weeks.
+
+### How to Adapt the Daily Tables
+For any track, replace `Module N` references in the tables above with the equivalent module from your chosen track. The activity types (Read → Watch → Quiz → Flashcards → Mock) stay the same. The science (spaced repetition, interleaving, active recall) stays the same.
+
+For per-cert pacing, see the `README.md` and `Cheat-Sheet.md` inside each track folder.

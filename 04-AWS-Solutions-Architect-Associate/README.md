@@ -82,7 +82,7 @@ Also pin these:
 | Validity | 3 years; renew with any current AWS associate/pro/specialty cert or recert exam |
 | Retake | 14-day wait between attempts; no annual cap |
 
-### 📊 Domain weights (memorize these — they tell you where to spend study time)
+### 📊 Domain Weights (Memorize These — They Tell You Where to Spend Study Time)
 
 | Domain | Weight |
 |--------|--------|
@@ -97,7 +97,7 @@ Also pin these:
 
 ## 🚦 Recommended Path
 
-### 8-week plan (recommended — sustainable)
+### 8-Week Plan (Recommended — Sustainable)
 
 ```
 Week 1: Module 1 (Foundations)        + Module 2 (IAM)
@@ -110,7 +110,7 @@ Week 7: Module 9 (Monitoring)         + Module 10 (DR/Migration) + Practice Exam
 Week 8: Re-watch weak topics + Final Mock Exam + REAL EXAM
 ```
 
-### 4-week sprint (if you already know cloud basics)
+### 4-Week Sprint (if You Already Know Cloud Basics)
 
 ```
 Week 1: Modules 1-3

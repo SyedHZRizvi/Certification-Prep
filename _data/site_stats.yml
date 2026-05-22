@@ -1,0 +1,28 @@
+# Site-wide stats and metadata used by Liquid templates in index.html
+# and elsewhere. Values that can be COMPUTED from navigation.yml are
+# computed inline in the templates (track_count, module_count, etc.).
+# This file holds the "fuzzy" estimates that don't derive from data
+# (total study hours, total practice questions) plus the list of
+# trademark holders we acknowledge in the footer.
+
+# Update these whenever a new cert is added.
+practice_question_estimate: "8,000+"
+total_hours_estimate: 600
+
+# Trademark holders / cert issuing bodies represented on the site.
+# Used in the footer trademark notice.
+trademark_holders:
+  - name: "Scrum.org"
+    marks: "PSM"
+  - name: "PMI®"
+    marks: "PMP"
+  - name: "Amazon Web Services"
+    marks: "AWS, Cloud Practitioner, Solutions Architect, AI Practitioner"
+  - name: "Microsoft"
+    marks: "Azure, AZ-900, AZ-104, AI-102"
+  - name: "CompTIA"
+    marks: "Security+, SY0-701"
+  - name: "ASCM / APICS"
+    marks: "CSCP, CPIM, CLTD"
+  - name: "Institute for Supply Management"
+    marks: "ISM, CPSM"

@@ -73,7 +73,7 @@ Backup the official path with the **[AZ-900 Exam Skills Outline (PDF)](https://l
 | Retake | 24-hour wait after first fail; 14-day wait after subsequent attempts |
 | Expiration | Does NOT expire (Fundamentals certs are lifetime) |
 
-**Exam objective weights (memorize these):**
+**Exam Objective Weights (Memorize These):**
 
 | Domain | Weight |
 |--------|--------|
@@ -94,7 +94,7 @@ Week 3: Modules 4 & 5 → Module 4+5 quizzes
 Week 4: Module 6 → Practice Exam 2 → Flashcards every day → Final Mock → REAL EXAM
 ```
 
-### 2-Week Crash Plan (only if you already work with cloud)
+### 2-Week Crash Plan (Only if You Already Work with Cloud)
 
 ```
 Days 1–3: Modules 1, 2, 3

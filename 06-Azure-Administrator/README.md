@@ -82,7 +82,7 @@ Also bookmark:
 | Validity | 1 year — renew free via online assessment on Microsoft Learn |
 | Prereq | None required (AZ-900 strongly recommended) |
 
-### Domain weights (memorize these)
+### Domain Weights (Memorize These)
 
 | Domain | Weight |
 |--------|--------|
@@ -94,7 +94,7 @@ Also bookmark:
 
 ---
 
-## 🚦 Recommended Path (6-week plan)
+## 🚦 Recommended Path (6-Week Plan)
 
 ```
 Week 1: Module 1 (governance) + Module 2 (Entra/RBAC)

@@ -45,7 +45,7 @@ tracks:
         slug: Practice-Exams/Practice-Exam-2
         single_file: true
       - num: 11
-        title: Final Mock Exam
+        title: Final Mock Exam (60q / 60min)
         slug: Practice-Exams/Final-Mock-Exam
         single_file: true
       - num: 12
@@ -102,7 +102,7 @@ tracks:
         slug: Practice-Exams/Practice-Exam-2
         single_file: true
       - num: 13
-        title: Final Mock Exam
+        title: Final Mock Exam (90q / 115min)
         slug: Practice-Exams/Final-Mock-Exam
         single_file: true
       - num: 14
@@ -422,6 +422,63 @@ tracks:
         slug: Flashcards
         single_file: true
 
+  - id: secplus
+    title: CompTIA Security+
+    subtitle: SY0-701 Cybersecurity Certification
+    color: red
+    color_from: "#dc2626"
+    color_to: "#7f1d1d"
+    icon: "🛡️"
+    base: "/09-CompTIA-Security-Plus/"
+    modules:
+      - num: 1
+        title: Security Fundamentals
+        slug: Module-01-Security-Fundamentals
+      - num: 2
+        title: Cryptography & PKI
+        slug: Module-02-Cryptography-PKI
+      - num: 3
+        title: Identity & Access Management
+        slug: Module-03-Identity-Access-Management
+      - num: 4
+        title: Threats & Threat Actors
+        slug: Module-04-Threats-Threat-Actors
+      - num: 5
+        title: Vulnerabilities & Attacks
+        slug: Module-05-Vulnerabilities-Attacks
+      - num: 6
+        title: Network Security
+        slug: Module-06-Network-Security
+      - num: 7
+        title: Endpoint, Mobile & Cloud Security
+        slug: Module-07-Endpoint-Mobile-Cloud-Security
+      - num: 8
+        title: Security Operations
+        slug: Module-08-Security-Operations
+      - num: 9
+        title: GRC, Risk & Compliance
+        slug: Module-09-GRC-Risk-Compliance
+      - num: 10
+        title: Application & Data Security
+        slug: Module-10-Application-Data-Security
+    extras:
+      - num: 11
+        title: Practice Exam 1
+        slug: Practice-Exams/Practice-Exam-1
+        single_file: true
+      - num: 12
+        title: Practice Exam 2
+        slug: Practice-Exams/Practice-Exam-2
+        single_file: true
+      - num: 13
+        title: Final Mock Exam (90q / 90min + PBQs)
+        slug: Practice-Exams/Final-Mock-Exam
+        single_file: true
+      - num: 14
+        title: Master Flashcards
+        slug: Flashcards
+        single_file: true
+
   - id: cscp
     title: ASCM CSCP
     subtitle: Certified Supply Chain Professional
@@ -628,63 +685,6 @@ tracks:
         slug: Practice-Exams/Final-Mock-Exam
         single_file: true
       - num: 12
-        title: Master Flashcards
-        slug: Flashcards
-        single_file: true
-
-  - id: secplus
-    title: CompTIA Security+
-    subtitle: SY0-701 Cybersecurity Certification
-    color: red
-    color_from: "#dc2626"
-    color_to: "#7f1d1d"
-    icon: "🛡️"
-    base: "/09-CompTIA-Security-Plus/"
-    modules:
-      - num: 1
-        title: Security Fundamentals
-        slug: Module-01-Security-Fundamentals
-      - num: 2
-        title: Cryptography & PKI
-        slug: Module-02-Cryptography-PKI
-      - num: 3
-        title: Identity & Access Management
-        slug: Module-03-Identity-Access-Management
-      - num: 4
-        title: Threats & Threat Actors
-        slug: Module-04-Threats-Threat-Actors
-      - num: 5
-        title: Vulnerabilities & Attacks
-        slug: Module-05-Vulnerabilities-Attacks
-      - num: 6
-        title: Network Security
-        slug: Module-06-Network-Security
-      - num: 7
-        title: Endpoint, Mobile & Cloud Security
-        slug: Module-07-Endpoint-Mobile-Cloud-Security
-      - num: 8
-        title: Security Operations
-        slug: Module-08-Security-Operations
-      - num: 9
-        title: GRC, Risk & Compliance
-        slug: Module-09-GRC-Risk-Compliance
-      - num: 10
-        title: Application & Data Security
-        slug: Module-10-Application-Data-Security
-    extras:
-      - num: 11
-        title: Practice Exam 1
-        slug: Practice-Exams/Practice-Exam-1
-        single_file: true
-      - num: 12
-        title: Practice Exam 2
-        slug: Practice-Exams/Practice-Exam-2
-        single_file: true
-      - num: 13
-        title: Final Mock Exam (90q / 90min + PBQs)
-        slug: Practice-Exams/Final-Mock-Exam
-        single_file: true
-      - num: 14
         title: Master Flashcards
         slug: Flashcards
         single_file: true

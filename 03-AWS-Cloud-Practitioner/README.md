@@ -75,7 +75,7 @@ Pair it with **[AWS Cloud Practitioner Essentials](https://explore.skillbuilder.
 | Validity | 3 years (recertify by retaking exam or passing any higher AWS cert) |
 | Prerequisites | None — no AWS experience required |
 
-### Domain weights (memorize these!)
+### Domain Weights (Memorize These!)
 
 | Domain | Weight |
 |--------|--------|
@@ -113,7 +113,7 @@ Week 4: Modules 7 & 8 → Practice Exam 2 → Final Mock → REAL EXAM
 
 ---
 
-## 💡 Free hands-on (optional but highly recommended)
+## 💡 Free Hands-On (Optional but Highly Recommended)
 
 You don't *need* hands-on for CLF-C02 — but 4–6 hours of clicking around the AWS console makes the concepts stick.
 

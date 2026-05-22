@@ -77,7 +77,7 @@ Also free and worth the time: **AWS Skill Builder → "Standard Exam Prep Plan: 
 | Validity | 3 years (recertify via any current AWS cert or retake) |
 | Released | August 2024 |
 
-**Domain weights:**
+**Domain Weights:**
 
 | Domain | Weight | Coverage in this course |
 |--------|--------|-------------------------|
@@ -91,7 +91,7 @@ Also free and worth the time: **AWS Skill Builder → "Standard Exam Prep Plan: 
 
 ## 🚦 Recommended Path
 
-### 4-Week Sprint (intense)
+### 4-Week Sprint (Intense)
 ```
 Week 1: Modules 1 & 2 → Quizzes
 Week 2: Modules 3 & 4 → Practice Exam 1
@@ -99,7 +99,7 @@ Week 3: Modules 5 & 6 → Quizzes
 Week 4: Modules 7 & 8 → Practice Exam 2 → Final Mock → EXAM
 ```
 
-### 6-Week Cruise (comfortable)
+### 6-Week Cruise (Comfortable)
 ```
 Week 1: Module 1 (AI/ML foundations)
 Week 2: Module 2 (SageMaker)

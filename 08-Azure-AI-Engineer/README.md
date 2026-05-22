@@ -82,7 +82,7 @@ Pair the study guide with the **[Microsoft Learn AI-102 learning path](https://l
 | Validity | 1 year — renew free online via Microsoft Learn |
 | Prereqs | None official, but you'll suffer without Azure Fundamentals knowledge |
 
-### Domain weights (current as of 2025)
+### Domain Weights (Current as of 2025)
 
 | Domain | Weight |
 |--------|--------|
@@ -95,7 +95,7 @@ Pair the study guide with the **[Microsoft Learn AI-102 learning path](https://l
 
 ---
 
-## 🚦 Recommended Path (6-week plan)
+## 🚦 Recommended Path (6-Week Plan)
 
 ```
 Week 1: Module 1 (AI Services) + Module 2 (Responsible AI)

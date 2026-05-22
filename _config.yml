@@ -1,6 +1,6 @@
 # Jekyll config for GitHub Pages
-title: "The Cert Hub — Scrum Master & PMP Course"
-description: "A complete self-study course for the Scrum Master (PSM I) and PMP exams, designed and authored by Syed HZ Rizvi."
+title: "The Cert Hub — 13 Certification Study Courses"
+description: "Free, story-driven self-study courses for 13 industry certifications — Scrum (PSM I), PMP, AWS (CLF-C02, SAA-C03, AIF-C01), Azure (AZ-900, AZ-104, AI-102), CompTIA Security+ (SY0-701), and ASCM/ISM supply chain (CSCP, CPIM, CLTD, CPSM). Designed and authored by Syed HZ Rizvi."
 author: "Syed HZ Rizvi"
 url: "https://syedhzrizvi.github.io"
 baseurl: "/Certification-Prep"

@@ -7,8 +7,8 @@ sitemap: false
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Cert Hub — PM · Cloud · AI · Cybersecurity Certifications by Syed Humayun Zafar Rizvi</title>
-  <meta name="description" content="A comprehensive, story-driven self-study hub for 9 industry-recognized certifications: PSM I, PMP, AWS CLF-C02, AWS SAA-C03, AZ-900, AZ-104, AWS AI Practitioner (AIF-C01), Azure AI Engineer (AI-102), and CompTIA Security+ (SY0-701). Designed and authored by Syed Humayun Zafar Rizvi, Toronto, Canada." />
+  <title>The Cert Hub — PM · Cloud · AI · Cybersecurity · Supply Chain Certifications by Syed Humayun Zafar Rizvi</title>
+  <meta name="description" content="A comprehensive, story-driven self-study hub for 13 industry-recognized certifications spanning project management (PSM I, PMP), cloud (AWS CLF-C02, AWS SAA-C03, AZ-900, AZ-104), AI / GenAI (AIF-C01, AI-102), cybersecurity (CompTIA Security+ SY0-701), and international supply chain (ASCM CSCP, CPIM, CLTD, and ISM CPSM). 112 modules, 39 full-length mock exams, 8,000+ practice questions. Designed and authored by Syed Humayun Zafar Rizvi, Toronto, Canada." />
   <meta name="author" content="Syed Humayun Zafar Rizvi" />
   <meta name="copyright" content="© 2026 Syed Humayun Zafar Rizvi. All Rights Reserved." />
   <meta name="robots" content="noindex, nofollow, noarchive, noimageindex, nosnippet" />
@@ -23,8 +23,8 @@ sitemap: false
   <!-- Search Console verification (paste codes when you have them) -->
   <!-- <meta name="google-site-verification" content="YOUR_GOOGLE_CODE" /> -->
   <!-- <meta name="msvalidate.01" content="YOUR_BING_CODE" /> -->
-  <meta property="og:title" content="The Cert Hub — PM · Cloud · AI · Cybersecurity Certifications" />
-  <meta property="og:description" content="Pass PSM I, PMP, AWS, Azure, GenAI, and CompTIA Security+ — 9 industry certs taught the same story-driven way. By Syed Humayun Zafar Rizvi (Toronto, Canada)." />
+  <meta property="og:title" content="The Cert Hub — PM · Cloud · AI · Cybersecurity · Supply Chain Certifications" />
+  <meta property="og:description" content="Pass PSM I, PMP, AWS, Azure, GenAI, CompTIA Security+, and ASCM/ISM supply chain — 13 industry certs taught the same story-driven way. By Syed Humayun Zafar Rizvi (Toronto, Canada)." />
   <meta property="og:type" content="website" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🎓%3C/text%3E%3C/svg%3E" />
   <script src="https://cdn.tailwindcss.com"></script>
@@ -296,22 +296,26 @@ sitemap: false
         </a>
       </div>
 
-      <!-- stats -->
+      <!-- stats — auto-computed from _data/navigation.yml + _data/site_stats.yml -->
+      {% assign cert_count = site.data.navigation.tracks | size %}
+      {% assign mock_exam_count = cert_count | times: 3 %}
+      {% assign total_modules = 0 %}
+      {% for t in site.data.navigation.tracks %}{% assign m = t.modules | size %}{% assign total_modules = total_modules | plus: m %}{% endfor %}
       <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto mt-16 pt-12 border-t border-white/10">
         <div>
-          <div class="text-3xl md:text-4xl font-extrabold gradient-text-blue">13</div>
+          <div class="text-3xl md:text-4xl font-extrabold gradient-text-blue">{{ cert_count }}</div>
           <div class="text-sm text-slate-400 mt-1">Industry certifications</div>
         </div>
         <div>
-          <div class="text-3xl md:text-4xl font-extrabold gradient-text-blue">112</div>
+          <div class="text-3xl md:text-4xl font-extrabold gradient-text-blue">{{ total_modules }}</div>
           <div class="text-sm text-slate-400 mt-1">In-depth modules</div>
         </div>
         <div>
-          <div class="text-3xl md:text-4xl font-extrabold gradient-text-blue">39</div>
+          <div class="text-3xl md:text-4xl font-extrabold gradient-text-blue">{{ mock_exam_count }}</div>
           <div class="text-sm text-slate-400 mt-1">Full-length mock exams</div>
         </div>
         <div>
-          <div class="text-3xl md:text-4xl font-extrabold gradient-text-blue">8,000+</div>
+          <div class="text-3xl md:text-4xl font-extrabold gradient-text-blue">{{ site.data.site_stats.practice_question_estimate }}</div>
           <div class="text-sm text-slate-400 mt-1">Practice questions</div>
         </div>
       </div>
@@ -323,7 +327,7 @@ sitemap: false
     <div class="text-center mb-14">
       <h2 class="text-4xl md:text-5xl font-extrabold mb-4">What You'll Master</h2>
       <p class="text-lg text-slate-600 max-w-2xl mx-auto">
-        112 modules across 13 certifications · ~600 hours of focused content. Click any topic to start.
+        {{ total_modules }} modules across {{ cert_count }} certifications · ~{{ site.data.site_stats.total_hours_estimate }} hours of focused content. Click any topic to start.
       </p>
     </div>
 
@@ -799,10 +803,10 @@ sitemap: false
       <p class="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-2">Know Someone Studying?</p>
       <p class="text-lg font-medium text-slate-800 mb-4">Share the Hub with Them.</p>
       <div class="flex flex-wrap gap-2 justify-center">
-        <a href="https://wa.me/?text=Free%20cert%20prep%20for%209%20industry%20certifications%20%E2%80%94%20PM%2C%20Cloud%2C%20AI%2C%20Cybersecurity%20%E2%80%94%20by%20Syed%20HZ%20Rizvi%3A%20https%3A%2F%2Fsyedhzrizvi.github.io%2FCertification-Prep%2F" class="bg-white px-4 py-2 rounded-lg ring-1 ring-slate-200 text-sm font-medium hover:bg-slate-50">📱 WhatsApp</a>
+        <a href="https://wa.me/?text=Free%20cert%20prep%20for%2013%20industry%20certifications%20%E2%80%94%20PM%2C%20Cloud%2C%20AI%2C%20Cybersecurity%20%26%20Supply%20Chain%20%E2%80%94%20by%20Syed%20HZ%20Rizvi%3A%20https%3A%2F%2Fsyedhzrizvi.github.io%2FCertification-Prep%2F" class="bg-white px-4 py-2 rounded-lg ring-1 ring-slate-200 text-sm font-medium hover:bg-slate-50">📱 WhatsApp</a>
         <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsyedhzrizvi.github.io%2FCertification-Prep%2F" class="bg-white px-4 py-2 rounded-lg ring-1 ring-slate-200 text-sm font-medium hover:bg-slate-50">💼 LinkedIn</a>
-        <a href="mailto:?subject=Free%20Cert%20Prep%20Hub%20by%20Syed%20HZ%20Rizvi%20%E2%80%94%20PM%2C%20Cloud%2C%20AI%2C%20Cybersecurity&body=Free%20study%20materials%20for%209%20industry%20certifications%20%E2%80%94%20Scrum%20Master%2C%20PMP%2C%20AWS%2C%20Azure%2C%20GenAI%2C%20and%20CompTIA%20Security%2B.%0A%0Ahttps%3A%2F%2Fsyedhzrizvi.github.io%2FCertification-Prep%2F" class="bg-white px-4 py-2 rounded-lg ring-1 ring-slate-200 text-sm font-medium hover:bg-slate-50">📧 Email</a>
-        <a href="https://twitter.com/intent/tweet?text=Free%20cert%20prep%20hub%20%E2%80%94%209%20certifications%20across%20PM%2C%20Cloud%2C%20AI%20%26%20Cybersecurity%20%E2%80%94%20by%20%40SyedHZRizvi%3A%20https%3A%2F%2Fsyedhzrizvi.github.io%2FCertification-Prep%2F" class="bg-white px-4 py-2 rounded-lg ring-1 ring-slate-200 text-sm font-medium hover:bg-slate-50">🐦 Twitter/X</a>
+        <a href="mailto:?subject=Free%20Cert%20Prep%20Hub%20by%20Syed%20HZ%20Rizvi%20%E2%80%94%20PM%2C%20Cloud%2C%20AI%2C%20Cybersecurity%20%26%20Supply%20Chain&body=Free%20study%20materials%20for%2013%20industry%20certifications%20%E2%80%94%20Scrum%20Master%2C%20PMP%2C%20AWS%2C%20Azure%2C%20GenAI%2C%20CompTIA%20Security%2B%2C%20and%20ASCM%2FISM%20supply%20chain.%0A%0Ahttps%3A%2F%2Fsyedhzrizvi.github.io%2FCertification-Prep%2F" class="bg-white px-4 py-2 rounded-lg ring-1 ring-slate-200 text-sm font-medium hover:bg-slate-50">📧 Email</a>
+        <a href="https://twitter.com/intent/tweet?text=Free%20cert%20prep%20hub%20%E2%80%94%2013%20certifications%20across%20PM%2C%20Cloud%2C%20AI%2C%20Cybersecurity%20%26%20Supply%20Chain%20%E2%80%94%20by%20%40SyedHZRizvi%3A%20https%3A%2F%2Fsyedhzrizvi.github.io%2FCertification-Prep%2F" class="bg-white px-4 py-2 rounded-lg ring-1 ring-slate-200 text-sm font-medium hover:bg-slate-50">🐦 Twitter/X</a>
       </div>
     </div>
   </section>
@@ -850,24 +854,25 @@ sitemap: false
     </div>
   </section>
 
-  <!-- ============== FOOTER ============== -->
+  <!-- ============== FOOTER (Liquid-driven from _data/navigation.yml + _data/site_stats.yml) ============== -->
   <footer class="border-t border-slate-200 bg-white">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 grid md:grid-cols-3 gap-6 items-start">
-      <div>
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 grid md:grid-cols-4 gap-6 items-start">
+      <div class="md:col-span-2">
         <div class="flex items-center gap-2 font-extrabold mb-2"><span class="text-xl">🎓</span> The Cert Hub</div>
         <p class="text-sm text-slate-500 leading-relaxed">
           Designed &amp; authored by <strong class="text-slate-900">Syed Humayun Zafar Rizvi</strong>
           <span class="text-slate-400">· 📍 Toronto, Canada</span>.<br />
-          A complete self-study hub for 9 industry certifications across project management, cloud, AI, and cybersecurity.
+          A complete self-study hub for <strong class="text-slate-700">{{ cert_count }} industry certifications</strong>
+          across project management, cloud, AI, cybersecurity, and supply chain — <strong class="text-slate-700">{{ total_modules }} modules</strong>,
+          <strong class="text-slate-700">{{ mock_exam_count }} full-length mock exams</strong>, all free.
         </p>
       </div>
       <div>
-        <p class="text-sm font-bold mb-2">Tracks</p>
-        <ul class="text-sm space-y-1.5 text-slate-600">
-          <li><a href="01-Scrum-Master/" class="hover:text-slate-900">Scrum Master (PSM I)</a></li>
-          <li><a href="02-PMP/" class="hover:text-slate-900">PMP</a></li>
-          <li><a href="00-Study-Plan/12-Week-Study-Plan/" class="hover:text-slate-900">12-Week Study Plan</a></li>
-          <li><a href="00-Study-Plan/Exam-Day-Tips/" class="hover:text-slate-900">Exam-Day Tips</a></li>
+        <p class="text-sm font-bold mb-2">All Tracks</p>
+        <ul class="text-sm space-y-1 text-slate-600">
+          {% for t in site.data.navigation.tracks %}
+          <li><a href="{{ t.base | remove_first: '/' }}" class="hover:text-slate-900">{{ t.icon }} {{ t.title }}</a></li>
+          {% endfor %}
         </ul>
       </div>
       <div>
@@ -877,16 +882,20 @@ sitemap: false
           <li><a href="Resources/Free-Practice-Tests/" class="hover:text-slate-900">Practice Tests</a></li>
           <li><a href="Resources/Communities/" class="hover:text-slate-900">Communities</a></li>
           <li><a href="00-Study-Plan/Quick-Start-Guide/" class="hover:text-slate-900">Quick Start Guide</a></li>
+          <li><a href="00-Study-Plan/12-Week-Study-Plan/" class="hover:text-slate-900">Study Plan</a></li>
+          <li><a href="00-Study-Plan/Exam-Day-Tips/" class="hover:text-slate-900">Exam-Day Tips</a></li>
         </ul>
       </div>
     </div>
     <div class="border-t border-slate-100 bg-slate-50">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row gap-2 items-center justify-between text-xs text-slate-500">
         <p>
-          © 2026 <strong class="text-slate-700">Syed Humayun Zafar Rizvi</strong> · Toronto, Canada · All Rights Reserved.
+          © {{ site.time | date: "%Y" }} <strong class="text-slate-700">Syed Humayun Zafar Rizvi</strong> · Toronto, Canada · All Rights Reserved.
           Personal study use only — copying &amp; reproduction prohibited.
         </p>
-        <p>Not affiliated with PMI® or Scrum.org. PMP and PSM are trademarks of their respective owners.</p>
+        <p class="max-w-xl md:text-right">
+          Not affiliated with any certification body. All trademarks (PMP, PSM, AWS, Azure, AIF-C01, AI-102, Security+, SY0-701, CSCP, CPIM, CLTD, CPSM) belong to their respective owners ({% for h in site.data.site_stats.trademark_holders %}{{ h.name }}{% unless forloop.last %}, {% endunless %}{% endfor %}).
+        </p>
       </div>
     </div>
   </footer>

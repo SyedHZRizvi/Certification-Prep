@@ -94,9 +94,10 @@ NN-Course-Slug/
 
 ### 2.3 Index page and navigation
 
-- `index.html` contains exactly 9 curriculum cards (one per course), all linked correctly.
-- `_data/navigation.yml` has exactly 9 `tracks:` entries with module slugs matching the folder structure.
-- The homepage hero references all 9 certifications by their official IDs.
+- `index.html` contains exactly 13 curriculum cards (one per course), all linked correctly. Counts and the "Tracks" list in the footer are **Liquid-driven** from `_data/navigation.yml` and `_data/site_stats.yml` — do not hardcode them.
+- `_data/navigation.yml` has exactly 13 `tracks:` entries in folder-numeric order (01 Scrum → 13 ISM CPSM) with module slugs matching the folder structure.
+- The homepage hero references all 13 certifications by their official IDs as pills.
+- The homepage uses `{% assign cert_count = site.data.navigation.tracks | size %}` and similar Liquid to compute counts dynamically.
 
 ---
 
@@ -180,14 +181,15 @@ The commit message should start with **`baseline change:`** so it's discoverable
 
 This tag is the canonical snapshot of the site as of 2026-05-20. It contains:
 
-- 9 course directories
-- 78 modules
-- 27 practice exams
-- 357+ markdown files inside the course directories
+- 13 course directories
+- 112 modules
+- 39 practice exams
+- 500+ markdown files inside the course directories
 - 0 direct YouTube URLs
-- ≥700 YouTube search URLs
+- ≥1,000 YouTube search URLs
 - Content protection enabled in both `index.html` and `_layouts/default.html`
-- The `scripts/verify-baseline.py` script passing
+- Freshness mechanism (`/version.txt` + `assets/freshness.js`) wired so future deploys auto-bust stale browser caches
+- The `scripts/verify-baseline.py` script passing (15 invariants)
 
 If you need to roll back: `git checkout stable-2026-05-20`.
 
