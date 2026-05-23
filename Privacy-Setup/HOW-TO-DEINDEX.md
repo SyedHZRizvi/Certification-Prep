@@ -87,7 +87,7 @@ educational website from the Wayback Machine.
 
 Site URL prefix: https://syedhzrizvi.github.io/Certification-Prep/
 Repository owner: SyedHZRizvi (verifiable via the github.io subdomain)
-Site author: Syed Humayun Zafar Rizvi (Toronto, Canada)
+Site author: Humayun Zafar (Toronto, Canada)
 Reason: This is private educational content. The site has been
 configured with noindex robots meta tags and a robots.txt directive
 disallowing all crawlers. I would like existing Wayback Machine
@@ -96,7 +96,7 @@ snapshots to be excluded as well.
 Please confirm when the exclusion has been processed.
 
 Thank you,
-Syed Humayun Zafar Rizvi
+Humayun Zafar
 ```
 
 > ⚠️ **Send from an email address that ties to ownership** (e.g. an email associated

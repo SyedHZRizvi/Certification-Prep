@@ -35,7 +35,7 @@
 ### F2: `_layouts/default.html` page-title template hardcodes Scrum/PMP-only suffix (NOTE: actually it's fine — but two embedded comments/counters in the same file ARE stale, see F3 + F4)
 - **File:** `/Users/syed/Projects/Certification-Prep-Preview/_layouts/default.html`
 - **Line(s):** 6
-- **Current text:** `<title>{{ page.title | default: page.name | default: "Lesson" }} — The Cert Hub by Syed Humayun Zafar Rizvi</title>`
+- **Current text:** `<title>{{ page.title | default: page.name | default: "Lesson" }} — The Cert Hub by Humayun Zafar</title>`
 - **Why it's stale:** Not stale. False positive. The title template is cert-agnostic.
 - **Suggested fix:** None — leave as-is.
 - **Suggested fix type:** edit (no change needed; documenting for completeness so the next auditor doesn't re-flag it)
@@ -124,7 +124,7 @@
 - **Suggested fix:** Consider adding a small trademark notice in the footer of `_layouts/default.html` that loops over `site.data.site_stats.trademark_holders`. Example, replacing/augmenting L531–533:
   ```liquid
   <footer class="pagefoot">
-    © 2026 <strong>Syed Humayun Zafar Rizvi</strong> · 📍 Toronto, Canada · All Rights Reserved · <a href="{{ '/' | relative_url }}">Course Home</a>
+    © 2026 <strong>Humayun Zafar</strong> · 📍 Toronto, Canada · All Rights Reserved · <a href="{{ '/' | relative_url }}">Course Home</a>
     <div style="margin-top:8px;font-size:11px;color:#94a3b8;">
       Trademarks of:
       {%- for h in site.data.site_stats.trademark_holders -%}
@@ -177,11 +177,11 @@
 - **Line(s):** 2–3
 - **Current text (before fix):**
   - L2: `title: "The Cert Hub — Scrum Master & PMP Course"`
-  - L3: `description: "A complete self-study course for the Scrum Master (PSM I) and PMP exams, designed and authored by Syed HZ Rizvi."`
+  - L3: `description: "A complete self-study course for the Scrum Master (PSM I) and PMP exams, designed and authored by Humayun Zafar."`
 - **Why it's stale:** Title and description never updated when the site expanded to 9 then 13 certs. This is the highest-impact stale string in the audited scope because `<title>` (rendered via `default.html` L6) is the only SEO-visible string when a page omits its own title (e.g. a directory index page) and `site.description` is the meta-description fallback in `default.html` L7.
 - **Suggested fix (applied):**
   - L2: `title: "The Cert Hub — 13 Certification Study Courses"`
-  - L3: `description: "Free, story-driven self-study courses for 13 industry certifications — Scrum (PSM I), PMP, AWS (CLF-C02, SAA-C03, AIF-C01), Azure (AZ-900, AZ-104, AI-102), CompTIA Security+ (SY0-701), and ASCM/ISM supply chain (CSCP, CPIM, CLTD, CPSM). Designed and authored by Syed HZ Rizvi."`
+  - L3: `description: "Free, story-driven self-study courses for 13 industry certifications — Scrum (PSM I), PMP, AWS (CLF-C02, SAA-C03, AIF-C01), Azure (AZ-900, AZ-104, AI-102), CompTIA Security+ (SY0-701), and ASCM/ISM supply chain (CSCP, CPIM, CLTD, CPSM). Designed and authored by Humayun Zafar."`
 - **Suggested fix type:** edit — **APPLIED IN THIS AUDIT** (see "Issues you fixed yourself" below).
 
 ---

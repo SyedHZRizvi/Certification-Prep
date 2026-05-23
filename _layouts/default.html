@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{{ page.title | default: page.name | default: "Lesson" }} — The Cert Hub by Syed Humayun Zafar Rizvi</title>
+  <title>{{ page.title | default: page.name | default: "Lesson" }} — The Cert Hub by Humayun Zafar</title>
   <meta name="description" content="{{ page.description | default: site.description }}" />
-  <meta name="author" content="Syed Humayun Zafar Rizvi" />
-  <meta name="copyright" content="© 2026 Syed Humayun Zafar Rizvi. All Rights Reserved." />
+  <meta name="author" content="Humayun Zafar" />
+  <meta name="copyright" content="© 2026 Humayun Zafar. All Rights Reserved." />
   <meta name="robots" content="noindex, nofollow, noarchive, noimageindex, nosnippet" />
   <meta name="googlebot" content="noindex, nofollow, noarchive, noimageindex, nosnippet" />
   <meta name="bingbot" content="noindex, nofollow, noarchive" />
@@ -268,7 +268,7 @@
     /* ============ WATERMARK (kept) ============ */
     .watermark { position: fixed; inset: 0; pointer-events: none; z-index: 0; display: grid; place-items: center; overflow: hidden; }
     .watermark::before {
-      content: '© Syed Humayun Zafar Rizvi · Cert Hub · © Syed Humayun Zafar Rizvi · Cert Hub · © Syed Humayun Zafar Rizvi · Cert Hub';
+      content: '© Humayun Zafar · Cert Hub · © Humayun Zafar · Cert Hub · © Humayun Zafar · Cert Hub';
       position: absolute; width: 200%; height: 200%;
       transform: rotate(-25deg); font-size: 1.5rem; font-weight: 800;
       letter-spacing: 0.5em; color: rgba(15,23,42,0.025);
@@ -301,7 +301,7 @@
         <span>☰</span> Menu
       </button>
       <div class="hidden md:flex items-center gap-4 text-sm">
-        <span class="text-slate-500 text-xs">by <strong class="text-slate-900">Syed Humayun Zafar Rizvi</strong></span>
+        <span class="text-slate-500 text-xs">by <strong class="text-slate-900">Humayun Zafar</strong></span>
         <a href="{{ '/' | relative_url }}" class="bg-slate-900 hover:bg-slate-800 text-white font-semibold px-4 py-2 rounded-lg transition text-xs">← Course Home</a>
       </div>
     </div>
@@ -442,7 +442,7 @@
 
       <hr class="sidebar-divider" />
       <div style="padding:0 14px;font-size:11px;color:#94a3b8;line-height:1.6;">
-        © 2026 <strong style="color:#475569;">Syed Humayun Zafar Rizvi</strong><br/>
+        © 2026 <strong style="color:#475569;">Humayun Zafar</strong><br/>
         📍 Toronto, Canada<br/>
         All Rights Reserved · Personal study only.
       </div>
@@ -563,7 +563,7 @@
       {%- endif -%}
 
       <footer class="pagefoot">
-        © 2026 <strong>Syed Humayun Zafar Rizvi</strong> · 📍 Toronto, Canada · All Rights Reserved · <a href="{{ '/' | relative_url }}">Course Home</a>
+        © 2026 <strong>Humayun Zafar</strong> · 📍 Toronto, Canada · All Rights Reserved · <a href="{{ '/' | relative_url }}">Course Home</a>
       </footer>
     </main>
   </div>
@@ -574,7 +574,7 @@
       // === LIGHT PROTECTION (only right-click; Ctrl+C/P/S allowed for studying) ===
       document.addEventListener('contextmenu', function (e) {
         e.preventDefault();
-        showToast('🔒 © 2026 Syed Humayun Zafar Rizvi · Right-click disabled. Content is for personal study.');
+        showToast('🔒 © 2026 Humayun Zafar · Right-click disabled. Content is for personal study.');
         return false;
       });
       document.addEventListener('dragstart', function (e) {

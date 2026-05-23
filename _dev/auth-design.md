@@ -1,7 +1,7 @@
 # Auth & Entitlements Design — The Cert Hub on Cloudflare
 
 Status: design draft (Phase 3 of the Cloudflare migration plan).
-Owner: Syed Humayun Zafar Rizvi (super-user).
+Owner: Humayun Zafar (super-user).
 
 ---
 
@@ -137,7 +137,7 @@ To start (will go in the Worker code as a constant when we get to Phase 3):
 
 ```js
 const SUPERUSER_EMAILS = [
-  "syed@transcrypts.com",   // Syed Humayun Zafar Rizvi — site owner / developer
+  "syed@transcrypts.com",   // Humayun Zafar — site owner / developer
   // Add more by edit + redeploy. Never managed from the admin UI.
 ];
 ```

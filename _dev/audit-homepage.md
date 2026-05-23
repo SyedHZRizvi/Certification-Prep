@@ -11,24 +11,24 @@ The remaining stale copy is concentrated in SEO meta tags (head) and three share
 
 ### F1: Meta description still says "9 industry-recognized certifications" and enumerates only 9
 - **Line:** 11
-- **Current text:** `"A comprehensive, story-driven self-study hub for 9 industry-recognized certifications: PSM I, PMP, AWS CLF-C02, AWS SAA-C03, AZ-900, AZ-104, AWS AI Practitioner (AIF-C01), Azure AI Engineer (AI-102), and CompTIA Security+ (SY0-701). Designed and authored by Syed Humayun Zafar Rizvi, Toronto, Canada."`
+- **Current text:** `"A comprehensive, story-driven self-study hub for 9 industry-recognized certifications: PSM I, PMP, AWS CLF-C02, AWS SAA-C03, AZ-900, AZ-104, AWS AI Practitioner (AIF-C01), Azure AI Engineer (AI-102), and CompTIA Security+ (SY0-701). Designed and authored by Humayun Zafar, Toronto, Canada."`
 - **Why it's stale:** Site now hosts 13 certs. The 4 supply-chain certs (ASCM CSCP, CPIM, CLTD, ISM CPSM) are missing entirely and the count is wrong. This is the single highest-priority issue because search engines and social previews use this text, and the homepage already iterates 13 cards visually.
-- **Suggested fix:** `"A comprehensive, story-driven self-study hub for 13 industry-recognized certifications across Project Management, Cloud, AI/GenAI, Cybersecurity, and Supply Chain — PSM I, PMP, AWS CLF-C02 & SAA-C03, AZ-900 & AZ-104, AIF-C01, AI-102, CompTIA Security+ (SY0-701), ASCM CSCP/CPIM/CLTD, and ISM CPSM. Designed and authored by Syed Humayun Zafar Rizvi, Toronto, Canada."`
+- **Suggested fix:** `"A comprehensive, story-driven self-study hub for 13 industry-recognized certifications across Project Management, Cloud, AI/GenAI, Cybersecurity, and Supply Chain — PSM I, PMP, AWS CLF-C02 & SAA-C03, AZ-900 & AZ-104, AIF-C01, AI-102, CompTIA Security+ (SY0-701), ASCM CSCP/CPIM/CLTD, and ISM CPSM. Designed and authored by Humayun Zafar, Toronto, Canada."`
 - **Suggested fix type:** edit
 
 ### F2: og:description still says "9 industry certs" and omits Security+/supply-chain framing
 - **Line:** 27
-- **Current text:** `"Pass PSM I, PMP, AWS, Azure, GenAI, and CompTIA Security+ — 9 industry certs taught the same story-driven way. By Syed Humayun Zafar Rizvi (Toronto, Canada)."`
+- **Current text:** `"Pass PSM I, PMP, AWS, Azure, GenAI, and CompTIA Security+ — 9 industry certs taught the same story-driven way. By Humayun Zafar (Toronto, Canada)."`
 - **Why it's stale:** Same root cause as F1 — outdated count, missing supply-chain track. This is what LinkedIn/Twitter/WhatsApp preview cards will render.
-- **Suggested fix:** `"Pass PSM I, PMP, AWS, Azure, GenAI, CompTIA Security+, and ASCM/ISM supply-chain certs — 13 industry exams taught the same story-driven way. By Syed Humayun Zafar Rizvi (Toronto, Canada)."`
+- **Suggested fix:** `"Pass PSM I, PMP, AWS, Azure, GenAI, CompTIA Security+, and ASCM/ISM supply-chain certs — 13 industry exams taught the same story-driven way. By Humayun Zafar (Toronto, Canada)."`
 - **Suggested fix type:** edit
 
 ### F3: og:title and <title> tag omit Supply Chain category
 - **Lines:** 10, 26
-- **Current text (line 10):** `"The Cert Hub — PM · Cloud · AI · Cybersecurity Certifications by Syed Humayun Zafar Rizvi"`
+- **Current text (line 10):** `"The Cert Hub — PM · Cloud · AI · Cybersecurity Certifications by Humayun Zafar"`
 - **Current text (line 26):** `<meta property="og:title" content="The Cert Hub — PM · Cloud · AI · Cybersecurity Certifications" />`
 - **Why it's stale:** The hero subhead correctly lists 5 categories (PM, Cloud, AI/GenAI, Cybersecurity, **Supply Chain**), and the section H3 on line 592 says "Supply Chain & Operations." Title tags don't reflect this.
-- **Suggested fix (line 10):** `<title>The Cert Hub — PM · Cloud · AI · Cybersecurity · Supply Chain Certifications by Syed Humayun Zafar Rizvi</title>`
+- **Suggested fix (line 10):** `<title>The Cert Hub — PM · Cloud · AI · Cybersecurity · Supply Chain Certifications by Humayun Zafar</title>`
 - **Suggested fix (line 26):** `<meta property="og:title" content="The Cert Hub — PM · Cloud · AI · Cybersecurity · Supply Chain Certifications" />`
 - **Suggested fix type:** edit
 

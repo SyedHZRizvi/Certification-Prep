@@ -140,4 +140,4 @@ Good luck. Let's go.
 
 ## 🔒 License & Use
 
-© 2026 Syed Humayun Zafar Rizvi. All Rights Reserved. This material is provided for enrolled-student personal study use only — copying, reproduction, or redistribution of the rendered site content is prohibited without prior written consent. All trademarks (PSM, PMP, AWS, Azure, CompTIA Security+, CSCP, CPIM, CLTD, CPSM) belong to their respective owners (Scrum.org, PMI, Amazon Web Services, Microsoft, CompTIA, ASCM, Institute for Supply Management). Not affiliated with any certification body.
+© 2026 Humayun Zafar. All Rights Reserved. This material is provided for enrolled-student personal study use only — copying, reproduction, or redistribution of the rendered site content is prohibited without prior written consent. All trademarks (PSM, PMP, AWS, Azure, CompTIA Security+, CSCP, CPIM, CLTD, CPSM) belong to their respective owners (Scrum.org, PMI, Amazon Web Services, Microsoft, CompTIA, ASCM, Institute for Supply Management). Not affiliated with any certification body.
