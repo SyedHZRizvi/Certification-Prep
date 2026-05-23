@@ -533,7 +533,7 @@ The CPSM real exam tests **judgment**. If you missed scenario questions, slow do
 
 ---
 
-## 📚 Detailed Answer Rationales
+## 🎯 Detailed answer rationales
 
 These rationales explain why the correct answer wins AND why each distractor fails. Use them to build the judgment patterns CPSM tests.
 

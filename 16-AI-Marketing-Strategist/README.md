@@ -17,6 +17,15 @@ This is where you stop being the person who *runs* campaigns and start being the
 
 ---
 
+## 🎓 Capstone & Recommended Readings
+
+This track includes two course-root resources that go beyond exam prep:
+
+- 🏆 [**Capstone-Project.md**](./Capstone-Project.md) — A 7-deliverable, 6-month scenario where you act as the new Director of Marketing Analytics & Strategy at a $400M B2B SaaS company. Unifies GA4 + CRM + product data into a CDP, ships MMM-informed budget allocation, designs privacy-first measurement architecture, and lays the foundation for predictive LTV/churn scoring.
+- 📚 [**Recommended-Readings.md**](./Recommended-Readings.md) — The full canonical bibliography: Kaushik's *Web Analytics 2.0*, Hanssens/Parsons/Schultz on MMM, Kohavi/Tang/Xu on A/B testing, Fader's *Customer Centricity*; seminal papers (Fader & Hardie BG/NBD, Google Bayesian MMM); industry resources (Avinash Kaushik, Simo Ahava, MeasureSchool); free academic courses (Stanford CS246, MIT 15.071, Wharton Customer Analytics).
+
+---
+
 ## 🎯 What You'll Master
 
 By the end of this track, you'll be able to:

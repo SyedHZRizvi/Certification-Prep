@@ -22,6 +22,15 @@ Either way, by the end of this track you will be able to walk into a 2026 market
 
 ---
 
+## 🎓 Capstone & Recommended Readings
+
+This track includes two course-root resources that go beyond exam prep:
+
+- 🏆 [**Capstone-Project.md**](./Capstone-Project.md) — A 7-deliverable, 8-week scenario where you act as the new Marketing Manager at a Series-A B2B SaaS company taking MRR from $115K to $200K. Integrates ICP, content calendar, paid testing, GA4, AI tooling, OKRs, and a board 1-pager.
+- 📚 [**Recommended-Readings.md**](./Recommended-Readings.md) — The full canonical bibliography: Cialdini's *Influence*, Berger's *Contagious*, Sheridan's *They Ask You Answer*, Miller's *StoryBrand*; seminal HBR papers (Porter, Christensen JTBD, Doerr OKRs); industry resources (HubSpot, Marketing Examples, SparkToro); free academic courses (Andrew Ng's *Generative AI for Everyone*, Google Skillshop, Meta Blueprint).
+
+---
+
 ## 🎯 What You'll Learn
 
 By the end of this track, you will be able to:

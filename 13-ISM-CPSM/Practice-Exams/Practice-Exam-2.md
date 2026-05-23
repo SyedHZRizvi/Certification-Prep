@@ -804,7 +804,7 @@ For each miss, identify the originating module (5–8), re-read it, add flashcar
 
 ---
 
-## 📚 Detailed Answer Rationales
+## 🎯 Detailed answer rationales
 
 These rationales explain why the correct answer wins AND why each distractor fails. Read carefully — Module 5-8 scenarios are where CPSM heavily weights judgment.
 

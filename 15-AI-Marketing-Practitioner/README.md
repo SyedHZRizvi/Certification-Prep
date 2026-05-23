@@ -12,6 +12,15 @@ title: AI Marketing Practitioner Track
 
 ---
 
+## 🎓 Capstone & Recommended Readings
+
+This track includes two course-root resources that go beyond exam prep:
+
+- 🏆 [**Capstone-Project.md**](./Capstone-Project.md) — A 6-deliverable, 12-week scenario where you act as the new Senior Performance Marketer at a $20M DTC e-commerce brand cutting CAC 25% in 90 days. Integrates attribution audit, Google Ads + Meta restructure with AI creative pipeline, CRO, email retention, and a blended scorecard.
+- 📚 [**Recommended-Readings.md**](./Recommended-Readings.md) — The full canonical bibliography: Ellis & Brown's *Hacking Growth*, Croll & Yoskovitz's *Lean Analytics*, Saleh's *Conversion Optimization*, Kohavi/Tang/Xu's *Trustworthy Online Controlled Experiments*; seminal papers on attribution and CRO; industry resources (Marketing Examined, Kasim Aslam, Ben Heath, Common Thread Collective); free academic courses (Google Skillshop, Meta Blueprint, CXL Institute).
+
+---
+
 ## 🎯 What You'll Learn
 
 By the end of this track, you'll be able to:

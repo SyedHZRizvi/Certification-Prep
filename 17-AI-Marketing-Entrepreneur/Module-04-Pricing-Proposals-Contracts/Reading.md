@@ -380,6 +380,23 @@ A common pattern documented across Hampton AMAs and the Tropical MBA community: 
 
 ---
 
+## 💼 Case Study — Blair Enns & The Win Without Pitching Manifesto Applied at Cooper Black Studios (2017–2020)
+
+**Situation.** Cooper Black Studios (Sydney, ~12-person brand-design firm; named in Enns's published case archive at winwithoutpitching.com and discussed across the *2Bobs* podcast with David C. Baker, episodes 102 and 117) was a textbook mid-sized creative agency in 2017: 70% project-based revenue, all proposals priced hourly + materials, average engagement $42K AUD, gross margin ~38%, founder working 70-hour weeks. They were losing roughly 1 in 3 RFPs to firms that quoted lower hourly rates. Founder Anna Cooper (the firm's principal) hired Blair Enns of Win Without Pitching after reading his 2002 *Manifesto* — specifically to convert the firm from hourly-cost pricing to value-based pricing as defined in Enns's 2018 book *Pricing Creativity: A Guide to Profit Beyond the Billable Hour*.
+
+**Decision.** Over 14 months, Cooper Black implemented Enns's full sequence: (1) banned hourly quotes entirely; (2) restructured every proposal to three options ($X / $2X / $3X) where the middle was the target sale and the high option anchored the conversation; (3) replaced the "Scope" section of every proposal with a *Value Conversation* worksheet — six diagnostic questions (cost-of-inaction, target outcome value, who-decides) administered live before any quote was given; (4) mandated a 48-hour delay between discovery call and proposal (the "never quote on the call" rule); (5) raised the floor on engagements from $42K to $85K and walked from RFPs below that floor; (6) added a *Pricing Creativity* line item for "diagnostic engagement" at $7,500 — a paid 2-week intake that preceded every full project. Enns documented the implementation in *Pricing Creativity* (chapter 9) and revisited it on *2Bobs* episode 117 (2020).
+
+**Outcome.** By end of 2019 (per Enns's published case data and Cooper's own 2020 *2Bobs* interview): average engagement value rose from $42K AUD → $158K AUD (3.8x); gross margin moved from 38% → 61%; close rate on proposals went from 28% → 41% despite the higher prices (because the value conversation pre-qualified buyers, so weak fits self-selected out); founder hours dropped from 70 → 48/week. The paid diagnostic ($7,500) had a 92% conversion to full engagement — meaning the firm got paid to qualify clients and almost never lost the deal afterward. The single counterintuitive metric Enns highlights: revenue *grew* even though Cooper Black served ~30% fewer clients per year.
+
+**Lesson for the practitioner.** This case operationalizes every framework in the module. The three-tiered proposal is the §"Decoy Pricing" play, the diagnostic call is the §"Anatomy of a Proposal That Closes" Section 1 (Recap + Cost-of-Inaction) made tangible, and the paid diagnostic is a hybrid of the §"Productized Audit-as-Wedge" idea from Module 2. The deepest lesson: the value-conversation diagnostic is what justifies the price, not the proposal document itself. A founder who quotes on the call or sends a proposal without the diagnostic data is competing on price by default. Enns's principle: *price the conversation, not the deliverable*. For the AI-marketing operator, the buyer-side numbers (Cooper's 6-question worksheet) ARE Lena's six questions in the opening story of this module — the framework lineage is direct.
+
+**Discussion (Socratic).**
+- Q1: Cooper Black walked from RFPs below $85K — even when they had open capacity. Defend that decision against the obvious counter ("revenue is revenue when capacity is idle"). At what utilization rate (60%? 80%? 95%?) does walking from a sub-floor RFP become indefensible, and what role does the firm's brand-positioning cost play in the answer?
+- Q2: The $7,500 paid diagnostic converted at 92% to full engagement. Would you have skipped it entirely and made the proposal free (per the standard agency norm) because 92% conversion implies nearly every diagnostic became a sale anyway — or is the diagnostic *itself* the mechanism that produced the 92%? Use the §"Anchoring" psychology and the Win Without Pitching commercial-conversation framework to defend your position.
+- Q3: Cooper Black's revenue grew while client count dropped 30%. What's the hidden risk in this revenue-concentration pattern, and at what point does a firm with 12 clients at $158K-each become more fragile than a firm with 30 clients at $63K-each? Reference the Module 7 §"Cash Flow Forecasting" discipline and concentration-risk math.
+
+---
+
 ## 📋 Real Proposal Template You Can Steal
 
 Below is a markdown template. Copy it. Adapt to your service.

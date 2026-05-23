@@ -1,6 +1,8 @@
 # 🚀 Quick Start Guide
 
-> **Goal of this page:** Get you *doing* something within 10 minutes — no matter which of the 18 certifications you're chasing.
+> **Goal of this page:** Get you *doing* something within 10 minutes — no matter which of the 20 certifications you're chasing.
+>
+> 🏆 **Looking for the certification you want to chase?** See the [**International Certifications Catalog**](../Resources/International-Certifications/) for every certification this site maps to — with issuing body, fee, exam format, registration procedure, and renewal rules.
 
 ---
 
@@ -40,6 +42,16 @@ A 5-course ladder built to the Cornell/Harvard/Stanford bar — fundamentals →
 - **Path R — "I want to start an AI marketing agency / consultancy"** → [AI Marketing Entrepreneur](../17-AI-Marketing-Entrepreneur/README.md) · Plan: ~6-8 weeks. Productize services, pricing, client acquisition, tech stack, hiring.
 - **Path S — "I want a portfolio + first paying client"** → [AI Marketing Capstone Portfolio](../18-AI-Marketing-Capstone-Portfolio/README.md) · Plan: ~8-10 weeks. Build the actual deliverables that win contracts.
 - **Path T — "The full AI marketing ladder, in order"** → 14 → 15 → 16 → 17 → 18. Plan: ~9-12 months part-time. Comes out the other side market-ready as an AI-driven digital marketing professional.
+
+### Bitcoin & Cryptocurrency
+A 10-module track mapped to Princeton's foundational *Bitcoin and Cryptocurrency Technologies* (Narayanan) → Certified Bitcoin Professional (CBP) → Certified Blockchain Solution Architect (CBSA) → University of Nicosia MSc ladder.
+- **Path U — "I want to understand Bitcoin from first principles"** → [Bitcoin & Cryptocurrency](../19-Bitcoin-Cryptocurrency/README.md) · Plan: ~10-14 weeks. Maps to Princeton MOOC + CBP exam.
+- **Path V — "Already in finance/IT — fast-track to CBP"** → start at Module 3 (Network & Consensus); the 10-module track covers white paper, cryptography, Lightning, regulation, custody, ETFs, and the broader blockchain ecosystem. ~6-8 weeks.
+
+### E-Commerce
+A 10-module track mapped to Google Digital Marketing & E-Commerce → Google Ads Shopping → Adobe Commerce Business Practitioner → Wharton Online Digital Marketing & E-Commerce specialization.
+- **Path W — "I want to launch / run a serious e-commerce business"** → [E-Commerce](../20-E-Commerce/README.md) · Plan: ~12-16 weeks. Covers platforms, PIM, payments, fulfillment, CRO, paid + organic acquisition, attribution, marketplaces, cross-border, B2B, and composable architecture.
+- **Path X — "I have a Shopify store — make me an analytics-driven operator"** → Modules 6 (CRO) + 7 (Paid) + 9 (Analytics + Attribution) in that order. ~4-6 weeks.
 
 ### "I'm already certified — which makes sense next?"
 - **Have CSM/PSM I?** → PMP is the natural next step.
@@ -188,6 +200,8 @@ After studying thousands of pass/fail patterns, these stand out:
 - AI Marketing Strategist: 120–160 hours
 - AI Marketing Entrepreneur: 60–100 hours
 - AI Marketing Capstone Portfolio: 100–140 hours (project-driven, varies by ambition)
+- Bitcoin & Cryptocurrency: 80–140 hours (CBP-aligned; ~14 weeks part-time)
+- E-Commerce: 100–160 hours (Adobe Commerce Business Practitioner-aligned; ~14 weeks)
 
 **Q: Should I memorize ITTOs (Inputs/Tools/Outputs) for PMP?**
 **A:** No. The new PMP (since 2021) is mostly situational. Understand *concepts*, not lists.

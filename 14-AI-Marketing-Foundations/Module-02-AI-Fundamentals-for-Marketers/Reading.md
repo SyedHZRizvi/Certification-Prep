@@ -371,6 +371,23 @@ You now know:
 
 ---
 
+## 💼 Case Study — Klarna (2024)
+
+**Situation.** Klarna, the Swedish buy-now-pay-later fintech, ran a global customer-service operation supporting roughly 150 million consumers across 45 markets in 23 languages. By late 2023, the cost of human-staffed support — across an outsourced agent network of approximately 700 full-time-equivalents — had become a major operating-margin drag, and Klarna's then-IPO trajectory put intense pressure on cost-to-serve. The CEO Sebastian Siemiatkowski had been publicly enthusiastic about generative AI since the launch of ChatGPT, and Klarna had been one of the first major non-tech enterprises to sign an OpenAI enterprise partnership.
+
+**Decision.** In February 2024 Klarna publicly disclosed that, after a one-month live test, it had deployed an **OpenAI-powered customer-service assistant** capable of handling roughly two-thirds of all consumer-service chats end-to-end (without escalation to a human agent). The assistant ran on a fine-tuned + RAG-grounded GPT-4 stack — using RAG over Klarna's own help-center articles, refund policies, and consumer dispute records, with a multi-language layer wrapping the model. The system was designed to do "the work of 700 full-time agents" — those 700 had been employed via an outsourced contract that Klarna chose not to renew.
+
+**Outcome.** Klarna's own public Q1 2024 release reported: 2.3 million conversations handled by the AI assistant in its first month; customer-satisfaction scores statistically indistinguishable from human-agent baselines; resolution times reduced from an average of 11 minutes (human) to under 2 minutes (AI); estimated annual cost savings of **~$40 million**. The story drove a wave of coverage in *The Wall Street Journal*, *Bloomberg*, and *Fortune*, and became the canonical 2024 reference for "this is what generative AI actually does at enterprise scale." Subsequent reporting in 2025 surfaced a caveat — Klarna later announced it would re-hire some human agents for complex disputes, suggesting the 2/3 ratio was not the ceiling but a steady-state mix.
+
+**Lesson for the exam / for practitioners.** Klarna is the most-cited 2024 reference for the *RAG-plus-LLM enterprise pattern* taught in this module: a foundation model (GPT-4) is the engine, but the deployment-grade system layered RAG over Klarna's own first-party documents (refund policies, help center, dispute history). That's not "fine-tuning" and it's not "prompt engineering alone" — it's the middle layer (RAG) doing 80% of the value lift. The case also illustrates the hallucination-mitigation discipline: customer service is a high-trust context, so Klarna grounded the model in verifiable internal documents rather than relying on the model's pretraining. The exam-relevant principle: when a case asks "we want our AI to answer using our knowledge base in our brand voice," the right answer is almost always **RAG + a strong system prompt**, not fine-tuning.
+
+**Discussion (Socratic).**
+- Q1: Klarna's reported figure of "700 FTEs replaced" was widely covered, but later reporting suggested it brought some human agents back for complex cases. If you were Klarna's CMO or CTO in early 2024, how would you have framed the 700-agent number publicly without either overstating the win or understating the legitimate productivity gain?
+- Q2: The official answer here is RAG over fine-tuning. Why does RAG win for Klarna's customer-service use case specifically, and what kind of use case (give a concrete example) would have made fine-tuning the right call instead?
+- Q3: Klarna implicitly accepted the trade-off that ~1/3 of conversations still need human escalation. What's the dimension along which that 1/3 is distributed — and is the "best" remaining human work the *hardest* cases or the *most ambiguous-policy* cases? Defend a routing strategy.
+
+---
+
 ## 💬 Discussion — Socratic prompts
 
 1. **RAG vs fine-tuning under a regulatory constraint.** Your company sells a regulated SaaS product (think healthcare or legal-tech). The CMO wants an AI assistant that answers prospect questions in your CEO's voice while citing FDA-approved language verbatim. A consultant insists you must fine-tune. Your engineer counters: "RAG over our documents + a strong system prompt for voice is faster and cheaper." Walk through the trade-offs. Which is the right call, and what's the smallest hybrid that buys you 90% of the benefit?

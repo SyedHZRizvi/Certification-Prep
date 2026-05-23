@@ -393,6 +393,23 @@ GROUP BY 1, 2, 3;
 
 ---
 
+## 💼 Case Study — eBay's GA4 + BigQuery Analytics Platform (2023)
+
+**Situation.** Universal Analytics (UA) stopped collecting data on **July 1, 2023**, and the UA reporting interface itself was scheduled for sunset in July 2024. eBay — a marketplace with hundreds of millions of monthly active users, ~190 million buyers, and a complex multi-region property portfolio (eBay.com, eBay.de, eBay.co.uk, eBay.com.au and dozens of country sites) — faced a deadline-driven migration problem that most teams under-prepared for: years of UA-trained dashboards, alerts, attribution rules, and bid-optimization integrations all had to be reproduced on GA4's *event-only* data model before the UA cutoff. eBay also had a strategic need to consolidate measurement across web + Android app + iOS app + email — exactly the kind of cross-stream unification GA4 was designed for and UA was not.
+
+**Decision.** eBay's analytics leadership (publicly profiled at the 2023 Google Cloud Next conference) chose a **GA4 + BigQuery + Looker** architecture rather than rebuilding within the GA4 UI alone. Specifically: (1) every GA4 property was linked to BigQuery via the *free* daily-export feature plus streaming export for time-sensitive events; (2) all executive dashboards were rebuilt in Looker on top of curated BigQuery views, with the GA4 UI used only for ad-hoc analyst work and Explorations; (3) custom dimensions and Key Events were standardized via a *single global event taxonomy* enforced through a centralized server-side GTM container; (4) Key Events were ruthlessly cut to fewer than a dozen per region — under GA4's 50-event cap — with everything else relegated to non-conversion custom events for diagnostic use. The migration ran in parallel with UA from late 2022 through July 2023.
+
+**Outcome.** Google Cloud published eBay's migration as a customer-reference case study in 2023; the eBay analytics team disclosed that the BigQuery-first model gave them **no sampling on any standard executive report**, dashboard rebuilds completed roughly 30% faster than the original UA timeline, and the unified event taxonomy enabled cross-region analyses (e.g., "compare conversion-rate decay of new mobile users across eBay.com and eBay.de") that were genuinely impossible on the UA stack. The most important quantitative result: post-migration, the analytics team's average time-to-answer for a senior-leadership ad-hoc question dropped from "next-business-day" on UA to **under 15 minutes on BigQuery** — a ~95% reduction that fundamentally changed how the marketing org operated.
+
+**Lesson for the exam / for practitioners.** eBay is the canonical 2023 reference for the principle this module's strategist rule encodes: *free GA4 + BigQuery export gives you 95% of GA4 360's value at 0% of the cost.* The migration also illustrates the *event-taxonomy discipline* the module emphasizes — eBay's pre-migration UA implementation had drifted into hundreds of event names with overlapping semantics; the post-migration GA4 implementation collapsed those into a single global taxonomy of ~30 recommended-event-aligned names with ruthless Key Event prioritization. On the exam, recognize: when a case describes a large enterprise migrating from UA with sampling-sensitive reports, the right architecture is GA4 + BigQuery + a BI tool, not GA4 360 alone.
+
+**Discussion (Socratic).**
+- Q1: eBay's migration succeeded in part because the team cut hundreds of legacy UA events down to a few dozen GA4 events in a single sweep. The CMO at a smaller company sees that case and wants to do the same cut. What's the test you'd apply, event-by-event, before deciding which to keep — and what's the most predictable downstream cost of an over-aggressive cut?
+- Q2: The official answer here is to rebuild dashboards on BigQuery rather than inside GA4. Why does BigQuery + Looker win over GA4-native dashboards for an enterprise at eBay's scale, and at what *smaller* scale does the trade-off reverse — i.e., when is "use GA4 UI dashboards directly" actually the right call?
+- Q3: eBay's implicit trade-off is that BigQuery + Looker requires SQL + data-engineering capability the GA4 UI does not. For a marketing-org structure where SQL fluency is uneven, what's the operating model that protects the BigQuery investment without creating a permanent "the data team is the bottleneck" problem?
+
+---
+
 ## Discussion — Socratic prompts
 
 1. GA4's hard cap of 50 Key Events per property forces ruthless prioritization. A client comes to you with 38 Key Events already configured, most of them low-volume micro-conversions. What heuristic would you apply to *cut* the list back to 12–15 — and how would you defend the cuts to the team that set up the original 38?

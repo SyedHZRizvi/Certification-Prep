@@ -41,11 +41,13 @@ EXPECTED_COURSES = {
     "16-AI-Marketing-Strategist":               10,
     "17-AI-Marketing-Entrepreneur":             8,
     "18-AI-Marketing-Capstone-Portfolio":       8,
+    "19-Bitcoin-Cryptocurrency":                10,
+    "20-E-Commerce":                            10,
 }
-EXPECTED_TOTAL_MODULES = sum(EXPECTED_COURSES.values())  # 158
-EXPECTED_TOTAL_PRACTICE_EXAMS = len(EXPECTED_COURSES) * 3  # 54
-MIN_TOTAL_COURSE_MD_FILES = 700   # was 500 with 13 courses; ~200 added with the 5 AI-Marketing tracks
-MIN_YT_SEARCH_URLS = 1300         # was 1000; ~400 added with the 5 AI-Marketing tracks
+EXPECTED_TOTAL_MODULES = sum(EXPECTED_COURSES.values())  # 178
+EXPECTED_TOTAL_PRACTICE_EXAMS = len(EXPECTED_COURSES) * 3  # 60
+MIN_TOTAL_COURSE_MD_FILES = 850   # was 700 with 18 courses; ~150 added with Bitcoin + E-Commerce tracks
+MIN_YT_SEARCH_URLS = 1700         # was 1300; ~400 added with Bitcoin + E-Commerce (20 modules × ~10 cards each)
 
 PROTECTED_FILES = [
     "_layouts/default.html",
@@ -94,7 +96,7 @@ def check_course_directories(r: Result) -> None:
     for course in EXPECTED_COURSES:
         if not (ROOT / course).is_dir():
             r.fail(f"missing course directory: {course}")
-    actual = sorted(p.name for p in [p for p in ROOT.glob("[01][0-9]-*") if not p.name.startswith("00-")] if p.is_dir())
+    actual = sorted(p.name for p in [p for p in ROOT.glob("[0-9][0-9]-*") if not p.name.startswith("00-")] if p.is_dir())
     expected = sorted(EXPECTED_COURSES)
     if actual != expected:
         extras = set(actual) - set(expected)
@@ -171,7 +173,7 @@ def check_readme_and_flashcards(r: Result) -> None:
 
 
 def check_total_markdown_files(r: Result) -> None:
-    total = sum(1 for _ in (p for p in ROOT.glob("[01][0-9]-*/**/*.md") if not p.relative_to(ROOT).parts[0].startswith("00-")))
+    total = sum(1 for _ in (p for p in ROOT.glob("[0-9][0-9]-*/**/*.md") if not p.relative_to(ROOT).parts[0].startswith("00-")))
     if total < MIN_TOTAL_COURSE_MD_FILES:
         r.fail(
             f"total course markdown files: expected >= {MIN_TOTAL_COURSE_MD_FILES}, "
@@ -183,7 +185,7 @@ def check_total_markdown_files(r: Result) -> None:
 
 def check_no_direct_youtube_urls(r: Result) -> None:
     offenders = []
-    for md in (p for p in ROOT.glob("[01][0-9]-*/**/*.md") if not p.relative_to(ROOT).parts[0].startswith("00-")):
+    for md in (p for p in ROOT.glob("[0-9][0-9]-*/**/*.md") if not p.relative_to(ROOT).parts[0].startswith("00-")):
         text = md.read_text(encoding="utf-8", errors="ignore")
         if DIRECT_YT_RE.search(text):
             offenders.append(str(md.relative_to(ROOT)))
@@ -198,7 +200,7 @@ def check_no_direct_youtube_urls(r: Result) -> None:
 
 def check_search_youtube_urls_present(r: Result) -> None:
     total = 0
-    for md in (p for p in ROOT.glob("[01][0-9]-*/**/*.md") if not p.relative_to(ROOT).parts[0].startswith("00-")):
+    for md in (p for p in ROOT.glob("[0-9][0-9]-*/**/*.md") if not p.relative_to(ROOT).parts[0].startswith("00-")):
         text = md.read_text(encoding="utf-8", errors="ignore")
         total += len(SEARCH_YT_RE.findall(text))
     if total < MIN_YT_SEARCH_URLS:
@@ -215,7 +217,7 @@ def check_quiz_format(r: Result) -> None:
     # current state without forcing edits to live student content.
     bad_new = []
     bad_existing = []
-    for q in (p for p in ROOT.glob("[01][0-9]-*/Module-*/Quiz.md") if not p.relative_to(ROOT).parts[0].startswith("00-")):
+    for q in (p for p in ROOT.glob("[0-9][0-9]-*/Module-*/Quiz.md") if not p.relative_to(ROOT).parts[0].startswith("00-")):
         text = q.read_text(encoding="utf-8", errors="ignore")
         n = len(QUIZ_Q_RE.findall(text))
         rel = str(q.relative_to(ROOT))

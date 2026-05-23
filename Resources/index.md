@@ -9,6 +9,22 @@ title: Resources
 
 ---
 
+## 🏆 [International Certifications Catalog](./International-Certifications/)
+
+**Every international cert that the 20 courses on this site map to** — with issuing body, fee in USD, exam format, registration procedure, renewal cycle, market standing, and a course-to-cert mapping. The single most-referenced page once you're ready to actually take an exam:
+
+- **Project & Agile** — PSM I, PMP, CAPM, CSM, PMI-ACP
+- **Cloud — AWS** — CLF-C02, SAA-C03, AIF-C01 + Pro/Specialty next steps
+- **Cloud — Azure** — AZ-900, AZ-104, AI-102 + Architect/DevOps next steps
+- **Cybersecurity** — Security+, CISSP, CISM, CEH, OSCP, CySA+, CASP+, CISA
+- **Supply Chain** — CSCP, CPIM, CLTD, CPSM
+- **AI / Digital Marketing** — HubSpot Inbound, Google Ads, Meta Blueprint, GA4 IQ, Wharton Online
+- **Bitcoin / Crypto** — CBP (C4), CBSA (BTA), CCAS (ACAMS), UNIC MSc
+- **E-Commerce** — Google D-M & E-C, Adobe Commerce, Salesforce B2C, Shopify
+- **"Which cert next?" decision matrix** + renewal tracker + fee-honesty guide
+
+---
+
 ## 📖 [Books & Links](./Books-and-Links/)
 
 The single most-recommended resources (both free vendor materials and paid books/courses), organized by cert family:

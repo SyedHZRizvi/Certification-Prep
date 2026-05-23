@@ -1051,7 +1051,7 @@ For EACH wrong answer:
 
 ---
 
-## 📚 Detailed Answer Rationales
+## 🎯 Detailed answer rationales
 
 Because the Final Mock Exam revisits concepts tested in Practice Exams 1 and 2, the rationales below focus on the most common scenarios and the specific judgment patterns CPSM rewards. For every miss, also re-read the cited Reading.md section.
 

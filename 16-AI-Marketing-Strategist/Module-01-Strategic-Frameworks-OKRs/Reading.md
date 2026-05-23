@@ -430,6 +430,23 @@ Each leaf is owned by a team. The Notifications team owns the "sessions/DAU" bra
 
 ---
 
+## 💼 Case Study — Google's OKR Adoption (1999) and John Doerr's *Measure What Matters* (2018)
+
+**Situation.** In the late 1990s, the OKR system had been invented two decades earlier by Andy Grove at Intel — Grove called them "iMBOs" (a refinement of Drucker's Management by Objectives, with measurable Key Results bolted on). The system worked at Intel but had never crossed over into consumer-internet companies. By 1999, Grove's protégé John Doerr was a partner at Kleiner Perkins and had just led the firm's investment in a 40-person Silicon Valley start-up called Google. Founders Larry Page and Sergey Brin had no formal management training and were already struggling to align their fast-growing engineering org around shared priorities.
+
+**Decision.** In the autumn of 1999, Doerr gave Page and Brin an in-person presentation introducing the OKR framework — what would later become the famous 19-slide deck reproduced in Doerr's 2018 book *Measure What Matters* (Portfolio/Penguin). The founders adopted OKRs immediately and made them mandatory across every team in the company. Three operating commitments accompanied the adoption: **all OKRs are public** (every Googler could see every other team's OKRs through the company directory); **OKRs are not used in performance reviews** (decoupling from compensation was non-negotiable); **the target attainment band is 60–70%, not 100%** (anything consistently at 100% meant the goals were sandbagged).
+
+**Outcome.** Google scaled from approximately 40 employees in 1999 to over 180,000 by the time *Measure What Matters* was published in 2018 — and through every era of that growth (the AdWords ramp, Gmail, Android, YouTube, Cloud, the Alphabet restructuring), OKRs remained the official quarterly operating cadence. Doerr's book became a global best-seller and triggered an explicit OKR adoption wave across Spotify (2014), LinkedIn (the Reid Hoffman era), Adobe, Twitter, Uber, BMW, and the Bill & Melinda Gates Foundation. By 2024, "OKRs" was the top-searched management term on LinkedIn Learning, and the framework was operational at an estimated 60%+ of US tech companies of >100 employees.
+
+**Lesson for the exam / for practitioners.** The Google + Doerr story is the canonical reference for two distinct concepts this module tests on. First, the *structure*: Objectives are qualitative + inspirational; Key Results are measurable + outcome-based (not output-based); and Initiatives are the activities you do — frequently confused with Key Results, which is the single most common OKR failure mode. Second, the *operating principles*: public visibility, decoupling from compensation, and a 60–70% attainment band. When an exam case study describes a team where "everyone hit 100% of their OKRs for three quarters in a row," the correct diagnosis is **sandbagging**, not excellence — and the prescribed remedy is to recalibrate targets, not to celebrate.
+
+**Discussion (Socratic).**
+- Q1: Doerr's canonical rule is "OKRs must not be used in performance reviews." Many companies adopt OKRs and then quietly tie compensation to them anyway. What's the strongest steel-manned argument *for* the compensation tie-in, and how would you neutralize the predictable failure mode it triggers (sandbagging during goal-setting)?
+- Q2: Google's adoption succeeded in part because both founders enforced public visibility of all OKRs across all 40 (then 180,000) employees. Why did Doerr and Grove favor *transparency* over the traditional management instinct toward confidentiality of team goals — and what specific dysfunction does private OKR setting reliably produce?
+- Q3: The 60–70% attainment band is presented as the universal target. But for some classes of Key Result — regulatory compliance, security-incident response, payroll accuracy — the floor must be 100% (or else the consequence is unacceptable). What's the right operating discipline that lets a single org run both 60–70% stretch KRs and 100%-floor KRs without confusing the two?
+
+---
+
 ## Discussion — Socratic prompts
 
 Sit with these for ten minutes each. There is no single right answer; defending your position is the point.

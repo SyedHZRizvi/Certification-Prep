@@ -11,6 +11,15 @@ title: AI Marketing Entrepreneur Track
 
 ---
 
+## 🎓 Capstone & Recommended Readings
+
+This track includes two course-root resources that go beyond the per-module work:
+
+- 🏆 [**Capstone-Project.md**](./Capstone-Project.md) — A 7-deliverable, 12-week scenario where you launch your own AI marketing agency. Includes ICP + positioning memo, productized service spec sheet, client-acquisition pipeline, pricing/proposal/contract templates, tech-stack architecture, first-contractor JD, and a 12-month P&L projection — plus a first-3-engagements retro to write at Month 4-6.
+- 📚 [**Recommended-Readings.md**](./Recommended-Readings.md) — The full canonical bibliography: Hormozi's *$100M Offers* + *$100M Leads*, Bogusky's *The Win Without Pitching Manifesto*, Warrillow's *Built to Sell*, Michalowicz's *Profit First*, Gerber's *The E-Myth Revisited*; industry voices (Justin Welsh, Dan Koe, Alex Hormozi, Charlie Morgan, Eisha Armstrong on productization); free academic resources (MIT Sloan executive papers, HBR online, YC Startup School).
+
+---
+
 ## 🎯 What You'll Master
 
 By the end of this track, you'll have:

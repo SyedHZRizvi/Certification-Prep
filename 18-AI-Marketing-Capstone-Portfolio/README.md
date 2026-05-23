@@ -21,6 +21,15 @@ This course makes you build those links.
 
 ---
 
+## 🎓 Capstone & Recommended Readings
+
+This track includes two course-root resources that frame the entire 8-module portfolio sprint:
+
+- 🏆 [**Capstone-Project.md**](./Capstone-Project.md) — A pointer document explaining that **this entire course IS the capstone** for the AI Marketing track. Provides the unified portfolio-level rubric, the integrated 12-week timeline across all 8 modules, the self-assessment "am I market-ready?" checklist, and reference examples of what "done" looks like (Justin Welsh's LinkedIn, Designjoy's portfolio site, public Shapley attribution sheets, public AI-agent repos).
+- 📚 [**Recommended-Readings.md**](./Recommended-Readings.md) — The full canonical bibliography: Kleon's *Show Your Work!* + *Steal Like an Artist*, Clear's *Atomic Habits*, Newport's *Deep Work*, Roach's *The Diamond Cutter* (for ethical sales); industry voices (Justin Welsh, Dan Koe, Sahil Bloom, Pieter Levels, Ali Abdaal); free academic resources (HubSpot Academy's Inbound Marketing Certification, Stanford's *Designing Your Life*, YC Startup School).
+
+---
+
 ## 🧱 The 5 Capstones You'll Ship
 
 | # | Capstone | What You'll Have In Hand |

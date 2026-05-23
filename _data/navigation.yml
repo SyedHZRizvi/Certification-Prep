@@ -962,6 +962,120 @@ tracks:
         slug: Flashcards
         single_file: true
 
+  - id: bitcoin
+    title: Bitcoin & Cryptocurrency
+    subtitle: Fundamentals → CBP → CBSA → MSc ladder
+    color: orange
+    color_from: "#f59e0b"
+    color_to: "#7c2d12"
+    icon: "₿"
+    base: "/19-Bitcoin-Cryptocurrency/"
+    modules:
+      - num: 1
+        title: The Bitcoin White Paper & Origins
+        slug: Module-01-Bitcoin-White-Paper-Origins
+      - num: 2
+        title: Cryptographic Foundations
+        slug: Module-02-Cryptographic-Foundations
+      - num: 3
+        title: The Bitcoin Network & Consensus
+        slug: Module-03-Bitcoin-Network-Consensus
+      - num: 4
+        title: Wallets, Keys & Self-Custody
+        slug: Module-04-Wallets-Keys-Self-Custody
+      - num: 5
+        title: Mining & Proof-of-Work Economics
+        slug: Module-05-Mining-Proof-of-Work-Economics
+      - num: 6
+        title: Bitcoin Script & Programmability
+        slug: Module-06-Bitcoin-Script-Programmability
+      - num: 7
+        title: Lightning Network & Layer-2
+        slug: Module-07-Lightning-Network-Layer-2
+      - num: 8
+        title: Regulatory, Compliance & Tax
+        slug: Module-08-Regulatory-Compliance-Tax
+      - num: 9
+        title: Trading, Custody & Institutional
+        slug: Module-09-Trading-Custody-Institutional
+      - num: 10
+        title: Beyond Bitcoin — Blockchain Ecosystem
+        slug: Module-10-Beyond-Bitcoin-Blockchain-Ecosystem
+    extras:
+      - num: 11
+        title: Practice Exam 1
+        slug: Practice-Exams/Practice-Exam-1
+        single_file: true
+      - num: 12
+        title: Practice Exam 2
+        slug: Practice-Exams/Practice-Exam-2
+        single_file: true
+      - num: 13
+        title: Final Mock Exam (75q / 75min · CBP)
+        slug: Practice-Exams/Final-Mock-Exam
+        single_file: true
+      - num: 14
+        title: Master Flashcards
+        slug: Flashcards
+        single_file: true
+
+  - id: ecommerce
+    title: E-Commerce
+    subtitle: Google → Adobe Commerce → Wharton ladder
+    color: pink
+    color_from: "#ec4899"
+    color_to: "#7e22ce"
+    icon: "🛒"
+    base: "/20-E-Commerce/"
+    modules:
+      - num: 1
+        title: E-Commerce Fundamentals & Business Models
+        slug: Module-01-E-Commerce-Fundamentals-Business-Models
+      - num: 2
+        title: Storefront Platforms & Architecture
+        slug: Module-02-Storefront-Platforms-Architecture
+      - num: 3
+        title: Product Catalog & Information Management
+        slug: Module-03-Product-Catalog-Information-Management
+      - num: 4
+        title: Payments, Tax & Fraud
+        slug: Module-04-Payments-Tax-Fraud
+      - num: 5
+        title: Fulfillment, Logistics & Returns
+        slug: Module-05-Fulfillment-Logistics-Returns
+      - num: 6
+        title: Conversion Optimization & UX
+        slug: Module-06-Conversion-Optimization-UX
+      - num: 7
+        title: Paid Acquisition for E-Commerce
+        slug: Module-07-Paid-Acquisition-E-Commerce
+      - num: 8
+        title: SEO, Content & Lifecycle Marketing
+        slug: Module-08-SEO-Content-Lifecycle-Marketing
+      - num: 9
+        title: Analytics, Attribution & Marketplaces
+        slug: Module-09-Analytics-Attribution-Marketplaces
+      - num: 10
+        title: Cross-Border, B2B & Composable Commerce
+        slug: Module-10-Cross-Border-B2B-Composable-Commerce
+    extras:
+      - num: 11
+        title: Practice Exam 1
+        slug: Practice-Exams/Practice-Exam-1
+        single_file: true
+      - num: 12
+        title: Practice Exam 2
+        slug: Practice-Exams/Practice-Exam-2
+        single_file: true
+      - num: 13
+        title: Final Mock Exam (60q / 60min)
+        slug: Practice-Exams/Final-Mock-Exam
+        single_file: true
+      - num: 14
+        title: Master Flashcards
+        slug: Flashcards
+        single_file: true
+
 # Sub-pages within each module
 module_pages:
   - id: Reading
@@ -984,6 +1098,9 @@ extra_links:
   - title: Exam Day Tips
     url: "/00-Study-Plan/Exam-Day-Tips/"
     icon: "🎯"
+  - title: Certifications Catalog
+    url: "/Resources/International-Certifications/"
+    icon: "🏆"
   - title: Books & Links
     url: "/Resources/Books-and-Links/"
     icon: "📚"
