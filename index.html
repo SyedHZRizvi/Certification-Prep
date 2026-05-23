@@ -94,6 +94,109 @@ sitemap: false
     }
     .nav-blur { backdrop-filter: saturate(150%) blur(12px); }
 
+    /* ============== TRENDY NAV PILLS ============== */
+    .nav-pill {
+      display: inline-flex; align-items: center; gap: 0.55rem;
+      padding: 0.6rem 1.05rem;
+      border-radius: 0.875rem;
+      font-size: 0.9375rem;
+      font-weight: 800;
+      letter-spacing: 0.045em;
+      color: #ffffff;
+      text-shadow: 0 1px 0 rgba(0,0,0,0.15);
+      box-shadow:
+        0 6px 16px -6px rgba(0,0,0,0.25),
+        inset 0 1px 0 rgba(255,255,255,0.28),
+        inset 0 -1px 0 rgba(0,0,0,0.10);
+      transition: transform .22s cubic-bezier(0.34, 1.56, 0.64, 1),
+                  box-shadow .22s ease,
+                  filter .22s ease;
+      will-change: transform;
+      position: relative;
+      overflow: hidden;
+    }
+    .nav-pill:hover {
+      transform: translateY(-2px) scale(1.04);
+      filter: brightness(1.08) saturate(1.1);
+    }
+    .nav-pill:active { transform: translateY(0) scale(0.98); }
+    .nav-pill-icon {
+      font-size: 1.15rem; line-height: 1;
+      display: inline-block;
+      filter: drop-shadow(0 1px 2px rgba(0,0,0,0.25));
+      transition: transform .35s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    .nav-pill:hover .nav-pill-icon {
+      transform: scale(1.25) rotate(-8deg);
+    }
+    /* Shine sweep on hover */
+    .nav-pill::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(110deg, transparent 35%, rgba(255,255,255,0.32) 50%, transparent 65%);
+      transform: translateX(-110%);
+      transition: transform .65s cubic-bezier(0.4, 0, 0.2, 1);
+      pointer-events: none;
+    }
+    .nav-pill:hover::after { transform: translateX(110%); }
+
+    @media (min-width: 1024px) {
+      .nav-pill { font-size: 1rem; padding: 0.65rem 1.2rem; }
+      .nav-pill-icon { font-size: 1.25rem; }
+    }
+
+    /* Per-pill gradient + matching shadow */
+    .nav-pill-cert-hub {
+      background-image: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%);
+      box-shadow:
+        0 8px 22px -6px rgba(139,92,246,0.55),
+        inset 0 1px 0 rgba(255,255,255,0.28),
+        inset 0 -1px 0 rgba(0,0,0,0.10);
+    }
+    .nav-pill-courses {
+      background-image: linear-gradient(135deg, #3b82f6 0%, #2563eb 50%, #1e40af 100%);
+      box-shadow:
+        0 8px 22px -6px rgba(37,99,235,0.55),
+        inset 0 1px 0 rgba(255,255,255,0.28),
+        inset 0 -1px 0 rgba(0,0,0,0.10);
+    }
+    .nav-pill-certs {
+      background-image: linear-gradient(135deg, #f59e0b 0%, #f97316 50%, #ea580c 100%);
+      box-shadow:
+        0 8px 22px -6px rgba(249,115,22,0.55),
+        inset 0 1px 0 rgba(255,255,255,0.32),
+        inset 0 -1px 0 rgba(0,0,0,0.10);
+    }
+    .nav-pill-how {
+      background-image: linear-gradient(135deg, #10b981 0%, #059669 50%, #047857 100%);
+      box-shadow:
+        0 8px 22px -6px rgba(16,185,129,0.55),
+        inset 0 1px 0 rgba(255,255,255,0.28),
+        inset 0 -1px 0 rgba(0,0,0,0.10);
+    }
+    .nav-pill-about {
+      background-image: linear-gradient(135deg, #ec4899 0%, #db2777 50%, #be185d 100%);
+      box-shadow:
+        0 8px 22px -6px rgba(236,72,153,0.55),
+        inset 0 1px 0 rgba(255,255,255,0.28),
+        inset 0 -1px 0 rgba(0,0,0,0.10);
+    }
+    .nav-pill-cta {
+      background-image: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #312e81 100%);
+      box-shadow:
+        0 10px 26px -6px rgba(30,41,59,0.65),
+        inset 0 1px 0 rgba(255,255,255,0.20),
+        inset 0 -1px 0 rgba(0,0,0,0.10);
+    }
+    .nav-pill-cta:hover {
+      background-image: linear-gradient(135deg, #4338ca 0%, #6366f1 50%, #8b5cf6 100%);
+    }
+
+    /* Mobile-friendly: hide the 4-tab middle row on small screens; keep cert-hub + CTA */
+    @media (prefers-reduced-motion: reduce) {
+      .nav-pill, .nav-pill-icon, .nav-pill::after { transition: none !important; animation: none !important; }
+    }
+
     /* ============== CERT CARDS (homepage course tiles) ============== */
     .cert-card {
       position: relative;
@@ -321,25 +424,25 @@ sitemap: false
   <!-- ============== NAV ============== -->
   <nav class="sticky top-0 z-50 bg-white/85 nav-blur border-b border-slate-200/60">
     <div class="max-w-[1700px] mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-      <a href="#" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-base lg:text-lg font-bold text-indigo-700 hover:text-white hover:bg-indigo-600 ring-1 ring-indigo-200 hover:ring-indigo-600 transition-all">
-        <span class="text-lg">🎓</span> THE CERT HUB
+      <a href="#" class="nav-pill nav-pill-cert-hub">
+        <span class="nav-pill-icon">🎓</span> THE CERT HUB
       </a>
-      <div class="hidden md:flex items-center gap-3 lg:gap-4 font-bold">
-        <a href="#curriculum" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-base lg:text-lg text-blue-700 hover:text-white hover:bg-blue-600 ring-1 ring-blue-200 hover:ring-blue-600 transition-all">
-          <span class="text-lg">📚</span> COURSES
+      <div class="hidden md:flex items-center gap-2.5 lg:gap-3.5 font-extrabold">
+        <a href="#curriculum" class="nav-pill nav-pill-courses">
+          <span class="nav-pill-icon">📚</span> COURSES
         </a>
-        <a href="Resources/International-Certifications/" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-base lg:text-lg text-amber-700 hover:text-white hover:bg-amber-500 ring-1 ring-amber-200 hover:ring-amber-500 transition-all">
-          <span class="text-lg">📜</span> CERTIFICATIONS
+        <a href="Resources/International-Certifications/" class="nav-pill nav-pill-certs">
+          <span class="nav-pill-icon">📜</span> CERTIFICATIONS
         </a>
-        <a href="#how" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-base lg:text-lg text-emerald-700 hover:text-white hover:bg-emerald-600 ring-1 ring-emerald-200 hover:ring-emerald-600 transition-all">
-          <span class="text-lg">⚙️</span> HOW IT WORKS
+        <a href="#how" class="nav-pill nav-pill-how">
+          <span class="nav-pill-icon">⚙️</span> HOW IT WORKS
         </a>
-        <a href="#author" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-base lg:text-lg text-pink-700 hover:text-white hover:bg-pink-600 ring-1 ring-pink-200 hover:ring-pink-600 transition-all">
-          <span class="text-lg">👤</span> ABOUT THE CREATOR
+        <a href="#author" class="nav-pill nav-pill-about">
+          <span class="nav-pill-icon">👤</span> ABOUT THE CREATOR
         </a>
       </div>
-      <a href="#curriculum" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-base lg:text-lg font-bold text-white bg-slate-900 hover:bg-indigo-700 ring-1 ring-slate-900 hover:ring-indigo-700 transition-all">
-        <span class="text-lg">🚀</span> START LEARNING →
+      <a href="#curriculum" class="nav-pill nav-pill-cta">
+        <span class="nav-pill-icon">🚀</span> START LEARNING <span class="ml-0.5">→</span>
       </a>
     </div>
   </nav>
