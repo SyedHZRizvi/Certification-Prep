@@ -236,3 +236,102 @@ DoD can be raised over time. Lowering it is the anti-pattern; adding rigor is th
 - INVEST acronym
 
 ➡️ [Cheat Sheet](./Cheat-Sheet.md) → [Module 7](../Module-07-Servant-Leadership/Reading.md)
+
+---
+
+## 🧠 Bloom's-taxonomy mapping (existing Q1–Q24)
+
+| Q# | Bloom level |
+|---|---|
+| Q1, Q2, Q3, Q4, Q5, Q6, Q9, Q11, Q12, Q13, Q14, Q15, Q19, Q20 | Remember (DoD/velocity/story points/INVEST recall) |
+| Q7, Q8, Q10, Q16, Q17, Q18, Q21, Q23 | Understand (relations, definitions) |
+| Q22, Q24 | Analyze (identify misuse / evolution) |
+
+**Current distribution:** Remember 14 (58%), Understand 8 (33%), Apply 0, Analyze 2 (8%), Evaluate 0, Create 0. The most Remember-heavy quiz in the course — appropriate because the "what is NOT in the Scrum Guide" tests rely on exact recall (DoR not in Guide, Velocity not in Guide, INVEST not in Guide, etc.).
+
+---
+
+## 🚀 Additional higher-Bloom questions (Q25–Q30, advanced)
+
+### Q25. Microsoft Windows 7 (Module 6 case study) enforced "no exceptions" on milestone DoD — features that missed the quality bar were cut, not deferred. Analyze whether this is consistent with the Scrum Guide. *(Analyze)*
+A. Inconsistent — Scrum allows partial completion
+B. Consistent — the Scrum Guide says work that doesn't meet DoD is not Done; cutting un-Done features is enforcement of DoD, not violation of Scrum. The Increment then ships with what *is* Done, and the un-Done work returns to the backlog for refinement
+C. Inconsistent — Microsoft isn't using real Scrum
+D. Consistent only because Microsoft is special
+
+---
+
+### Q26. A team's velocity has been 30, 28, 32, 27, 31 over the last 5 Sprints. A VP demands they "hit 40 next Sprint" to make a customer commitment. Apply Module 6's reasoning to explain what will happen if the team complies. *(Apply)*
+A. They'll hit 40 and everyone wins
+B. The team will inflate estimates (5 becomes 8) without changing actual throughput; velocity will report 40 but real value delivered will not increase. Quality will likely regress as corners are cut to "ship 40 points." Within 2-3 Sprints, the team's data will become noise
+C. They'll ask for double the developers
+D. They'll work overtime indefinitely
+
+---
+
+### Q27. Vasco Duarte's #NoEstimates movement argues estimation itself is waste. Evaluate whether a #NoEstimates team can be Scrum-Guide-compliant. *(Evaluate)*
+A. No — the Scrum Guide requires estimation
+B. Yes — the Scrum Guide is *silent* on estimation methods. It requires Developers to be responsible for estimates and PBIs at the top of the backlog to be small enough to fit in a Sprint. A #NoEstimates team can satisfy both: they count completed PBIs (a primitive form of estimate) and keep PBIs small. Scrum Guide compliance turns on whether items fit in a Sprint, not on whether story points exist
+C. Only if they use story points secretly
+D. No — Cohn requires estimation
+
+---
+
+### Q28. Design a Definition of Done evolution roadmap for a team that has just adopted Scrum. Apply the principle that DoD can be tightened over time. Which trajectory MOST CLOSELY matches Module 6's "DoD evolves" pattern? *(Create / Apply)*
+A. Sprint 1: 14-item DoD; Sprint 30: 14-item DoD
+B. Sprint 1: 3 items (code reviewed, unit tests pass, deployable to staging); Sprint 5: + acceptance tests; Sprint 10: + performance budget; Sprint 20: + security scan; Sprint 30: + accessibility WCAG 2.1 AA. Each addition follows a Retrospective that exposes a quality gap the team is ready to close
+C. Sprint 1: 14-item DoD; Sprint 5: lower to 7 items because team is behind; Sprint 10: lower to 3
+D. No DoD at all until Sprint 10
+
+---
+
+### Q29. A new team has decided to use t-shirt sizes (XS, S, M, L, XL) instead of story points "because story points feel pseudo-quantitative." Evaluate whether this is Scrum-Guide-compliant AND whether it's a good practice. *(Evaluate)*
+A. Forbidden by Scrum
+B. Scrum-Guide-compliant (Guide is silent on technique) AND defensible — t-shirt sizes are honest about relative-not-quantitative nature, reduce false-precision arguments, and work well for early-stage backlog where precision is impossible. The trade-off: less mathematical aggregation, harder to compute "velocity" — which may itself be a feature, not a bug, for a team trying to escape velocity-targeting
+C. Required for new teams
+D. The Scrum Master decides
+
+---
+
+### Q30. Analyze why Scrum's Definition of Done is mandatory but Definition of Ready is not — what does this asymmetry reveal about the Scrum Guide's design philosophy? *(Analyze)*
+A. Sutherland forgot to add DoR
+B. DoD is mandatory because it gates whether work is *done* — without it, "done" is undefined and the Increment quality is lottery. DoR is *not* mandatory because gating what can *enter* a Sprint is a Waterfall-style upfront gate; Scrum trusts the team to refine items as they emerge. The asymmetry reflects empiricism: trust the team upstream, enforce quality at the output
+C. DoR is in the Scrum Guide just hidden
+D. Both should be mandatory
+
+---
+
+## 🎯 Answer key — Q25–Q30
+
+### Q25: **B. Consistent with Scrum**
+The Scrum Guide says work that doesn't meet DoD is *not Done*. Cutting un-Done features means: "this work doesn't yet meet DoD, so it returns to the backlog for refinement and a future Sprint." The Increment ships with what *is* Done. This is canonical Scrum, not violation. Microsoft's discipline is what *enabled* faster release cadence — the opposite of how it looks at first glance.
+
+### Q26: **B. Inflation, not improvement**
+The classic velocity-targeting anti-pattern. The team can't fundamentally change throughput by changing the unit, so they inflate the estimates — a 5 becomes an 8 — to "hit 40." Reported velocity rises, real value doesn't, and quality regresses as the team takes shortcuts to "ship 40 points." Within 2–3 Sprints, the data is meaningless. This is the failure mode Cohn warned about in *Agile Estimating and Planning* (2005) and the lesson Microsoft learned in 2011 (Module 6 case study reference).
+
+### Q27: **B. #NoEstimates is Scrum-compatible**
+The Scrum Guide does NOT prescribe estimation method. It requires Developers to be responsible for estimates and PBIs at top of backlog to fit in a Sprint. A #NoEstimates team satisfies both — they count completed PBIs (which is itself a primitive estimate) and keep items small. Vasco Duarte's argument is that *the estimation effort itself* is waste; a Scrum team can decide that's true for their context. Compliance turns on outcome (items fit in Sprint), not method.
+
+### Q28: **B. Gradual tightening over time**
+DoD evolves *upward* — adding rigor as the team's capability and the product's stakes grow. The progression in (B) is realistic: start with what's truly achievable, add rigor at points where the Retrospective exposes a quality gap the team is ready to close. (A) is rigid and unrealistic; (C) is the anti-pattern (lowering DoD); (D) is impossible — you can't ship without a DoD.
+
+### Q29: **B. Compliant and defensible**
+The Scrum Guide is silent on technique. T-shirt sizes work for early-stage backlogs and reduce false-precision debates. They make "velocity" harder to compute — which may itself be valuable if the team is trying to escape velocity-as-target dysfunction. This is a legitimate, often-superior choice for the right context.
+
+### Q30: **B. Empiricism reveals the asymmetry**
+DoD gates *output* — without it, the team has no shared definition of "done" and quality becomes lottery. DoR gates *input* — making it mandatory would re-introduce Waterfall-style "all requirements complete before Sprint" thinking. The Scrum Guide trusts the team to refine emergent items and demands rigor at the output. This is empiricism: trust the upstream process, enforce the downstream quality.
+
+---
+
+## 📊 Updated distribution after Q25–Q30
+
+| Bloom level | Count | % | Target |
+|---|---|---|---|
+| Remember | 14 | 47% | ≤ 25% |
+| Understand | 8 | 27% | ~ 25% |
+| Apply | 2 | 7% | ~ 25% |
+| Analyze | 4 | 13% | ~ 20% |
+| Evaluate | 2 | 7% | within 20% |
+| Create | 1 | 3% | ~ 5% |
+
+Still Remember-heavy because the "what is NOT in the Scrum Guide" tests rely on exact recall. The higher-Bloom additions exercise the *reasoning* about *why* each non-Guide concept exists and when to use it.

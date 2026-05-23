@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~45 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+S3+explained+for+beginners+Stephane+Maarek" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+S3+explained+for+beginners+Stephane+Maarek" data-video-id="Ns3KyQnSeVQ" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 14 min · S3 fundamentals</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=S3+storage+classes+Standard+IA+Glacier+explained" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=S3+storage+classes+Standard+IA+Glacier+explained" data-video-id="0NkoMca764Y" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 12 min · The high-yield drill</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=EBS+vs+EFS+vs+S3+difference+AWS" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=EBS+vs+EFS+vs+S3+difference+AWS" data-video-id="JIbIYCM48to" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 10 min · The trichotomy</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Snow+Family+Snowball+Snowcone+explained" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Snow+Family+Snowball+Snowcone+explained" data-video-id="zXyudn7KeZM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~25 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=EBS+volume+types+gp3+io2+st1+sc1+explained" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=EBS+volume+types+gp3+io2+st1+sc1+explained" data-video-id="PRdShBP3adA" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 9 min · When to pick which</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Storage+Gateway+File+Volume+Tape+explained" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Storage+Gateway+File+Volume+Tape+explained" data-video-id="ciRmcXTV-8A" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 10 min · Hybrid storage</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Amazon+FSx+for+Windows+Lustre+NetApp+overview" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Amazon+FSx+for+Windows+Lustre+NetApp+overview" data-video-id="wQJiOnuk0rc" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=S3+lifecycle+policies+demo+savings" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=S3+lifecycle+policies+demo+savings" data-video-id="NYjc2gluzTk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 12 min · Hands-on demo</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=S3+versioning+vs+replication+vs+object+lock" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=S3+versioning+vs+replication+vs+object+lock" data-video-id="b18KlhIgmjQ" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

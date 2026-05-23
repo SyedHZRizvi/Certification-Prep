@@ -6,7 +6,7 @@
 
 ## Questions
 
-### Q1. Which EC2 pricing model offers up to 90% off but can be reclaimed by AWS with a 2-minute warning?
+### Q1. Which EC2 pricing model offers up to 90% off but can be reclaimed by AWS with a 2-minute warning? *(Remember)*
 A. On-Demand
 B. Reserved Instance
 C. Spot Instance
@@ -14,7 +14,7 @@ D. Savings Plan
 
 ---
 
-### Q2. The maximum Lambda function execution time is:
+### Q2. The maximum Lambda function execution time is: *(Remember)*
 A. 5 minutes
 B. 15 minutes
 C. 1 hour
@@ -22,7 +22,7 @@ D. Unlimited
 
 ---
 
-### Q3. A company wants to run containers on AWS without managing the underlying EC2 instances. They should use:
+### Q3. A company wants to run containers on AWS without managing the underlying EC2 instances. They should use: *(Apply)*
 A. ECS on EC2 launch type
 B. ECS or EKS on Fargate
 C. Lambda
@@ -30,7 +30,7 @@ D. Elastic Beanstalk
 
 ---
 
-### Q4. Which instance family is BEST for machine learning training workloads requiring GPUs?
+### Q4. Which instance family is BEST for machine learning training workloads requiring GPUs? *(Apply)*
 A. `t` (general purpose)
 B. `c` (compute optimized)
 C. `r` (memory optimized)
@@ -38,7 +38,7 @@ D. `p` or `g` (accelerated computing)
 
 ---
 
-### Q5. A team runs a 24/7 production application on EC2 for the next 3 years. The MOST cost-effective option is:
+### Q5. A team runs a 24/7 production application on EC2 for the next 3 years. The MOST cost-effective option is: *(Evaluate)*
 A. On-Demand Instances
 B. Spot Instances
 C. Reserved Instances or Savings Plans
@@ -46,7 +46,7 @@ D. Dedicated Hosts
 
 ---
 
-### Q6. An EC2 instance is stopped (not terminated). Which charges still apply?
+### Q6. An EC2 instance is stopped (not terminated). Which charges still apply? *(Understand)*
 A. Compute charges only
 B. EBS storage charges only
 C. Both compute and EBS
@@ -54,7 +54,7 @@ D. No charges at all
 
 ---
 
-### Q7. A startup wants to deploy a simple WordPress site with predictable monthly billing. The simplest option is:
+### Q7. A startup wants to deploy a simple WordPress site with predictable monthly billing. The simplest option is: *(Apply)*
 A. EC2 with Auto Scaling
 B. AWS Lightsail
 C. EKS on Fargate
@@ -62,7 +62,7 @@ D. AWS Batch
 
 ---
 
-### Q8. Which AWS service handles batch jobs by queueing them and provisioning the right compute?
+### Q8. Which AWS service handles batch jobs by queueing them and provisioning the right compute? *(Remember)*
 A. AWS Batch
 B. AWS Step Functions
 C. AWS Lambda
@@ -70,7 +70,7 @@ D. AWS Glue
 
 ---
 
-### Q9. Which is TRUE about AWS Fargate?
+### Q9. Which is TRUE about AWS Fargate? *(Understand)*
 A. It's a separate orchestrator from ECS
 B. It's a serverless compute engine for ECS and EKS
 C. It only supports Lambda
@@ -78,7 +78,7 @@ D. It runs only on bare metal
 
 ---
 
-### Q10. Which AWS service is BEST described as "Platform-as-a-Service" — you upload code and AWS handles EC2, ELB, Auto Scaling, and monitoring?
+### Q10. Which AWS service is BEST described as "Platform-as-a-Service" — you upload code and AWS handles EC2, ELB, Auto Scaling, and monitoring? *(Understand)*
 A. EC2
 B. Lambda
 C. Elastic Beanstalk
@@ -86,7 +86,7 @@ D. ECS
 
 ---
 
-### Q11. A workload requires BYOL Windows Server licensing tied to physical CPU sockets. Which option is required?
+### Q11. A workload requires BYOL Windows Server licensing tied to physical CPU sockets. Which option is required? *(Apply)*
 A. Spot Instances
 B. Dedicated Hosts
 C. Lambda
@@ -94,7 +94,7 @@ D. Lightsail
 
 ---
 
-### Q12. Which best describes an Auto Scaling Group (ASG)?
+### Q12. Which best describes an Auto Scaling Group (ASG)? *(Understand)*
 A. A load balancer that distributes requests
 B. A managed group of EC2 instances that scales in/out automatically based on metrics
 C. A network firewall
@@ -102,7 +102,7 @@ D. A managed Kubernetes cluster
 
 ---
 
-### Q13. Savings Plans differ from Reserved Instances primarily in that they:
+### Q13. Savings Plans differ from Reserved Instances primarily in that they: *(Analyze)*
 A. Offer no discount
 B. Are limited to Spot capacity
 C. Commit by $/hour and are more flexible across instance families and Regions
@@ -110,7 +110,7 @@ D. Require a 5-year commitment
 
 ---
 
-### Q14. A serverless function processes images uploaded to S3. The image processing takes 30 minutes. The BEST compute choice is:
+### Q14. A serverless function processes images uploaded to S3. The image processing takes 30 minutes. The BEST compute choice is: *(Apply)*
 A. AWS Lambda
 B. Fargate or EC2 (Lambda exceeds 15-min limit)
 C. AWS Step Functions alone
@@ -118,7 +118,7 @@ D. CloudFront
 
 ---
 
-### Q15. The AWS Lambda billing model charges you for:
+### Q15. The AWS Lambda billing model charges you for: *(Remember)*
 A. Per-second EC2 time only
 B. Invocations + execution duration (rounded to milliseconds) + memory allocated
 C. Per-day flat fee
@@ -126,7 +126,7 @@ D. Bandwidth only
 
 ---
 
-### Q16. Which describes Amazon ECR?
+### Q16. Which describes Amazon ECR? *(Remember)*
 A. A container orchestrator
 B. A managed Docker image registry
 C. A serverless function service
@@ -134,7 +134,7 @@ D. A VPN service
 
 ---
 
-### Q17. To make an EC2-based web app survive an Availability Zone failure, the BEST architecture is:
+### Q17. To make an EC2-based web app survive an Availability Zone failure, the BEST architecture is: *(Apply)*
 A. Single EC2 in one AZ with a big EBS volume
 B. Multi-AZ Auto Scaling Group behind an Elastic Load Balancer
 C. Multiple Spot Instances in one AZ
@@ -142,7 +142,7 @@ D. Lambda only
 
 ---
 
-### Q18. AWS Outposts is BEST described as:
+### Q18. AWS Outposts is BEST described as: *(Remember)*
 A. AWS hardware racks deployed in YOUR data center
 B. A free educational program
 C. A type of S3 storage class
@@ -150,7 +150,7 @@ D. The AWS support portal
 
 ---
 
-### Q19. Which scenario is the BEST use of Spot Instances?
+### Q19. Which scenario is the BEST use of Spot Instances? *(Evaluate)*
 A. Hosting a database that requires 99.99% uptime
 B. Running a CI/CD pipeline that can retry failed jobs
 C. Hosting a single-instance e-commerce site
@@ -158,7 +158,7 @@ D. A real-time stock trading engine
 
 ---
 
-### Q20. A 4-week scientific simulation runs nightly on AWS. It can be split into thousands of independent jobs. The BEST service is:
+### Q20. A 4-week scientific simulation runs nightly on AWS. It can be split into thousands of independent jobs. The BEST service is: *(Apply)*
 A. Lambda
 B. AWS Batch (often on Spot/Fargate)
 C. Lightsail
@@ -166,7 +166,7 @@ D. Elastic Beanstalk
 
 ---
 
-### Q21. Which Lambda runtime is NOT natively supported?
+### Q21. Which Lambda runtime is NOT natively supported? *(Remember)*
 A. Python
 B. Node.js
 C. Java
@@ -174,7 +174,7 @@ D. Cold Fusion
 
 ---
 
-### Q22. To stop ALL billing for an EC2 instance and its root volume, you should:
+### Q22. To stop ALL billing for an EC2 instance and its root volume, you should: *(Apply)*
 A. Stop the instance
 B. Hibernate the instance
 C. Terminate the instance
@@ -182,7 +182,7 @@ D. Detach the EBS volume
 
 ---
 
-### Q23. Which service is FREE itself (you only pay for underlying resources it creates)?
+### Q23. Which service is FREE itself (you only pay for underlying resources it creates)? *(Understand)*
 A. EC2
 B. AWS Elastic Beanstalk
 C. RDS
@@ -190,7 +190,7 @@ D. AWS Outposts
 
 ---
 
-### Q24. Which compute service is BEST for a brand-new container app where the developer wants ZERO infrastructure decisions?
+### Q24. You are designing the compute plan for a 12-person Series-A startup with a containerized FastAPI backend, ~50 req/sec average and ~500 req/sec peak. You want the FEWEST infrastructure decisions and the FASTEST path from `git push` to production. Which compute service maps best? *(Create)*
 A. EC2 with custom AMI
 B. AWS App Runner
 C. EKS on EC2
@@ -198,7 +198,7 @@ D. AWS Batch
 
 ---
 
-### Q25. A "Capacity Reservation" in EC2 differs from a Reserved Instance because it:
+### Q25. A "Capacity Reservation" in EC2 differs from a Reserved Instance because it: *(Analyze)*
 A. Provides a price discount
 B. Reserves capacity in a specific AZ but provides NO pricing discount
 C. Requires a 5-year commitment

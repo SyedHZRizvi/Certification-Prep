@@ -7,7 +7,7 @@
 
 ## Questions
 
-### Q1. Which Azure tool is a browser-based shell that requires NO local installation?
+### Q1. Which Azure tool is a browser-based shell that requires NO local installation? *(Remember)*
 A. Azure CLI
 B. Azure PowerShell
 C. Azure Cloud Shell
@@ -15,7 +15,7 @@ D. Visual Studio Code
 
 ---
 
-### Q2. Which is the modern Azure-native IaC language that compiles to ARM templates?
+### Q2. Which is the modern Azure-native IaC language that compiles to ARM templates? *(Remember)*
 A. Terraform
 B. Bicep
 C. YAML
@@ -23,7 +23,7 @@ D. Pulumi
 
 ---
 
-### Q3. Which service collects metrics and logs from YOUR resources and lets you build alerts?
+### Q3. Which service collects metrics and logs from YOUR resources and lets you build alerts? *(Understand)*
 A. Azure Service Health
 B. Azure Status
 C. Azure Monitor
@@ -31,7 +31,7 @@ D. Azure Advisor
 
 ---
 
-### Q4. Which service provides a PERSONALIZED view of Azure platform issues affecting your subscriptions?
+### Q4. Which service provides a PERSONALIZED view of Azure platform issues affecting your subscriptions? *(Apply)*
 A. Azure Monitor
 B. Azure Service Health
 C. Azure Status (status.azure.com)
@@ -39,7 +39,7 @@ D. Azure Advisor
 
 ---
 
-### Q5. Where do you go to see Azure's PUBLIC global service status?
+### Q5. Where do you go to see Azure's PUBLIC global service status? *(Remember)*
 A. Azure Monitor
 B. Azure Service Health
 C. status.azure.com (Azure Status)
@@ -47,7 +47,7 @@ D. Azure Advisor
 
 ---
 
-### Q6. Azure Advisor provides recommendations in how many pillars?
+### Q6. Azure Advisor provides recommendations in how many pillars? *(Remember)*
 A. 3
 B. 4
 C. 5
@@ -55,13 +55,13 @@ D. 7
 
 ---
 
-### Q7. Yes/No: ARM templates and Bicep deploy to the same Azure Resource Manager engine.
+### Q7. Yes/No: ARM templates and Bicep deploy to the same Azure Resource Manager engine. *(Analyze)*
 A. Yes
 B. No
 
 ---
 
-### Q8. To project on-premises servers and AWS resources into Azure for unified management, use:
+### Q8. To project on-premises servers and AWS resources into Azure for unified management, use: *(Apply)*
 A. Azure Migrate
 B. Azure Site Recovery
 C. Azure Arc
@@ -69,7 +69,7 @@ D. Azure CLI
 
 ---
 
-### Q9. Which tool would you use to discover and assess on-prem servers, databases, and web apps before migrating to Azure?
+### Q9. Which tool would you use to discover and assess on-prem servers, databases, and web apps before migrating to Azure? *(Apply)*
 A. Azure Arc
 B. Azure Migrate
 C. Azure Monitor
@@ -77,7 +77,7 @@ D. Azure Advisor
 
 ---
 
-### Q10. To physically ship terabytes of data to Microsoft on a managed appliance for ingestion, use:
+### Q10. To physically ship terabytes of data to Microsoft on a managed appliance for ingestion, use: *(Apply)*
 A. ExpressRoute
 B. Azure Data Box
 C. Azure Site Recovery
@@ -85,7 +85,7 @@ D. Storage Account
 
 ---
 
-### Q11. Where can you download Microsoft's ISO 27001, SOC 2, and HIPAA audit reports?
+### Q11. Where can you download Microsoft's ISO 27001, SOC 2, and HIPAA audit reports? *(Remember)*
 A. Azure Portal Dashboard
 B. Service Trust Portal
 C. Azure Monitor
@@ -93,7 +93,7 @@ D. Defender for Cloud
 
 ---
 
-### Q12. Which is TRUE about Azure CLI vs Azure PowerShell?
+### Q12. Which is TRUE about Azure CLI vs Azure PowerShell? *(Analyze)*
 A. PowerShell only runs on Windows
 B. Both are cross-platform and can manage Azure
 C. CLI only runs on Linux
@@ -101,7 +101,7 @@ D. They are the same tool
 
 ---
 
-### Q13. To create a personalized notification when Azure has a planned maintenance event affecting your region, set up:
+### Q13. To create a personalized notification when Azure has a planned maintenance event affecting your region, set up: *(Apply)*
 A. Azure Monitor metric alert
 B. Azure Service Health alert
 C. Azure Status RSS feed
@@ -109,7 +109,7 @@ D. Azure Advisor alert
 
 ---
 
-### Q14. The Azure Mobile App is BEST for:
+### Q14. The Azure Mobile App is BEST for: *(Understand)*
 A. Writing ARM templates
 B. Quick monitoring, alerts, and on-the-go operations from a phone
 C. Heavy automation scripts
@@ -117,7 +117,7 @@ D. Bulk VM deployment
 
 ---
 
-### Q15. Which is the MOST appropriate tool to deploy infrastructure as code across Azure, AWS, AND GCP from one codebase?
+### Q15. Which is the MOST appropriate tool to deploy infrastructure as code across Azure, AWS, AND GCP from one codebase? *(Apply)*
 A. ARM templates
 B. Bicep
 C. Terraform
@@ -125,13 +125,13 @@ D. PowerShell DSC
 
 ---
 
-### Q16. Yes/No: Azure Advisor automatically applies its recommendations.
+### Q16. Yes/No: Azure Advisor automatically applies its recommendations. *(Analyze)*
 A. Yes
 B. No (read-only recommendations)
 
 ---
 
-### Q17. Application Insights is BEST described as:
+### Q17. Application Insights is BEST described as: *(Remember)*
 A. A SIEM
 B. APM (Application Performance Monitoring) feature of Azure Monitor
 C. A firewall
@@ -139,7 +139,7 @@ D. A subscription type
 
 ---
 
-### Q18. Which language is used to query Azure Monitor logs in Log Analytics?
+### Q18. Which language is used to query Azure Monitor logs in Log Analytics? *(Remember)*
 A. SQL
 B. KQL (Kusto Query Language)
 C. PromQL
@@ -147,7 +147,7 @@ D. PowerShell
 
 ---
 
-### Q19. To migrate VMs into Azure (or between regions) with continuous replication and failover, use:
+### Q19. To migrate VMs into Azure (or between regions) with continuous replication and failover, use: *(Apply)*
 A. Azure Data Box
 B. Azure Site Recovery
 C. Azure Backup
@@ -155,13 +155,13 @@ D. Azure Migrate's web-app tool
 
 ---
 
-### Q20. Yes/No: Cloud Shell requires a backing storage account for persistent files.
+### Q20. Yes/No: Cloud Shell requires a backing storage account for persistent files. *(Understand)*
 A. Yes
 B. No
 
 ---
 
-### Q21. Which is TRUE about Bicep?
+### Q21. Which is TRUE about Bicep? *(Analyze)*
 A. Multi-cloud
 B. JSON-based with strict syntax
 C. Azure-only DSL that compiles to ARM JSON
@@ -169,7 +169,7 @@ D. Replaces RBAC
 
 ---
 
-### Q22. The MOST appropriate tool to track an org's compliance status across frameworks (ISO, NIST, HIPAA) is:
+### Q22. The MOST appropriate tool to track an org's compliance status across frameworks (ISO, NIST, HIPAA) is: *(Apply)*
 A. Compliance Manager
 B. Azure Monitor
 C. Azure Advisor
@@ -177,13 +177,13 @@ D. Azure CLI
 
 ---
 
-### Q23. Yes/No: status.azure.com requires you to log in with your Azure credentials to view region health.
+### Q23. Yes/No: status.azure.com requires you to log in with your Azure credentials to view region health. *(Understand)*
 A. Yes
 B. No (it's public)
 
 ---
 
-### Q24. Which scenario fits Azure Arc BEST?
+### Q24. Which scenario fits Azure Arc BEST? *(Evaluate)*
 A. Migrate Hyper-V VMs to Azure
 B. Apply Azure Policy to on-prem Linux servers without moving them
 C. Stream desktops to remote users
@@ -191,7 +191,7 @@ D. Auto-scale App Service
 
 ---
 
-### Q25. The 5 pillars of Azure Advisor are:
+### Q25. The 5 pillars of Azure Advisor are: *(Remember)*
 A. Cost, Security, Performance, Reliability, Operational Excellence
 B. Compute, Network, Storage, Identity, Apps
 C. Speed, Quality, Cost, Scope, Risk
@@ -199,7 +199,7 @@ D. IaaS, PaaS, SaaS, FaaS, DaaS
 
 ---
 
-### Q26. To deploy a VM from a script that will run from a developer's MacBook AND in a Linux CI pipeline, the MOST appropriate tool is:
+### Q26. To deploy a VM from a script that will run from a developer's MacBook AND in a Linux CI pipeline, the MOST appropriate tool is: *(Apply)*
 A. Azure CLI
 B. Azure Portal
 C. Cloud Shell only

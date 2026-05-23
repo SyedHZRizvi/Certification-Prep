@@ -23,7 +23,7 @@
 ## ⭐ Essential watching (~60 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Andrew+Ramdayal+PMP+overview" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Andrew+Ramdayal+PMP+overview" data-video-id="AdyX9ZfWgn0" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -32,7 +32,7 @@
       <span class="vg-duration">⏱ 18 min</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=PMP+Mindset+David+McLachlan" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=PMP+Mindset+David+McLachlan" data-video-id="A93jBCNRpjU" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -41,7 +41,7 @@
       <span class="vg-duration">⏱ 15 min</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=PMBOK+7+Principles+Aileen+Ellis" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=PMBOK+7+Principles+Aileen+Ellis" data-video-id="bHBLJECtzys" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -50,7 +50,7 @@
       <span class="vg-duration">⏱ 14 min</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=PMI+Code+of+Ethics+PrepCast" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=PMI+Code+of+Ethics+PrepCast" data-video-id="500tmpXOsDw" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -64,7 +64,7 @@
 ## 📚 Recommended (~40 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Predictive+vs+Agile+vs+Hybrid+Edward+Chung" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Predictive+vs+Agile+vs+Hybrid+Edward+Chung" data-video-id="WR6CzUdGLUI" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -73,7 +73,7 @@
       <span class="vg-duration">⏱ 12 min</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Organizational+Structures+Joseph+Phillips" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Organizational+Structures+Joseph+Phillips" data-video-id="FGBZMJ--5cA" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -82,7 +82,7 @@
       <span class="vg-duration">⏱ 14 min</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=EEFs+vs+OPAs+Mohammad+Khalil" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=EEFs+vs+OPAs+Mohammad+Khalil" data-video-id="yDyKb2pDUgI" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>

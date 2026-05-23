@@ -125,4 +125,49 @@ If you can answer all 5 in 60 seconds, you own Module 6. ✅
 
 ---
 
+## 🧩 Bot Framework Concept → Foundry Agent Equivalent
+
+| Bot Framework | Foundry Agent Service |
+|---|---|
+| Bot | Agent / Assistant |
+| Channel | UI you build atop the Assistants API |
+| TurnContext | Run + Thread + Message |
+| Dialog | Tool sequence chosen by the model |
+| ConversationState | Persistent Thread |
+| CLU (intent + entity) | Model's tool-call decision |
+| QA Knowledge Base | File Search tool over uploaded docs |
+| Orchestration Workflow | Plugin/Tool routing in the agent |
+
+This isomorphism is why Module 8 builds the *modern* analog of Module 6.
+
+## 🛡️ Auth + Identity Pattern
+
+| Resource | Identity used |
+|---|---|
+| Bot Service | App Registration (created on provision) |
+| Calling AI Language for CLU | **Managed identity** + `Cognitive Services User` role |
+| Calling Azure OpenAI for LLM | Managed identity + `Cognitive Services OpenAI User` role |
+| Calling Cosmos for state | Managed identity + `Cosmos DB Built-in Data Contributor` |
+| OAuth user sign-in | Connection Setting on the Azure Bot resource |
+
+## 📐 Case-Study Pattern
+
+| Scenario | Composition |
+|---|---|
+| FAQs + commands + voice (Teams + Web Chat) | Bot Service + CLU + QA + Orchestration + Direct Line Speech |
+| Modern "agent" replacement (Security Copilot style) | Foundry Agent Service + Plugins + Threads + Adaptive Cards (no Bot Framework needed) |
+| Multilingual help desk | Above + Translator (Module 4) upstream |
+| HIPAA voice intake | Bot Service + Direct Line Speech + Managed Identity + Private Endpoints |
+
+## 📚 Citations
+
+| Concept | Source |
+|---|---|
+| Bot Framework SDK | Microsoft Learn (verified 2026-05) |
+| Adaptive Cards 1.5 | adaptivecards.io specification |
+| Microsoft Security Copilot architecture | Microsoft Security blog (March 2023; GA April 2024) |
+| RAI Standard v2 (citation provenance) | Microsoft (June 2022) |
+
+---
+
 ➡️ [Module 7: Azure OpenAI](../Module-07-Azure-OpenAI-Service/Reading.md)

@@ -2,6 +2,12 @@
 
 > **Why this module matters:** The "Design Secure Architectures" domain is **30%** of SAA-C03 — the largest single domain. Nearly every question in it pivots on IAM. If you don't know the difference between an identity policy and a resource policy, between an SCP and a permissions boundary, or how AssumeRole works, you can't pass this exam.
 
+> **Prerequisites for this module.**
+> - [Module 1: Foundations & Well-Architected](../Module-01-Foundations-Well-Architected/Reading.md) — especially the Shared Responsibility Model and "Security pillar"
+> - Basic understanding of authentication vs authorization, public-key crypto (you'll see KMS asymmetric concepts)
+> - Familiarity with JSON — every policy is JSON
+> - If you've done **`09-CompTIA-Security-Plus`** Module 06 (Identity & Access Management), you'll recognize ~70% of the conceptual content; AWS just gives it specific names
+
 ---
 
 ## 🏨 A Story: The Grand Hotel Key System
@@ -22,6 +28,18 @@ Now translate:
 - **Camera log → CloudTrail** (audit of every door swipe / API call)
 
 Master that hotel and you've mastered AWS IAM. Now let's get specific.
+
+---
+
+## 📜 Theoretical Foundations of IAM
+
+Before the AWS-specific jargon, know that IAM stands on shoulders:
+- **The principle of least privilege** comes from Saltzer & Schroeder's seminal paper *"The Protection of Information in Computer Systems"* (Saltzer & Schroeder, **Communications of the ACM, 1975**). Their eight design principles are still cited verbatim in the AWS Security pillar. Least privilege is principle #4: *"Every program and every user of the system should operate using the least set of privileges necessary to complete the job."*
+- **The CIA Triad** (Confidentiality, Integrity, Availability) was systematized in the same Saltzer & Schroeder paper and codified in the U.S. NIST Special Publication 800-12 (1995). When the SAA exam asks "which pillar is improved by enabling encryption?" it's asking about Confidentiality.
+- **The "confused deputy" problem**, which AWS solves with `ExternalId`, was first described by Norman Hardy in *"The Confused Deputy"* (Hardy, **ACM Operating Systems Review, 1988**). The hotel-valet analogy AWS uses in its docs comes directly from Hardy's paper.
+- **Role-based access control (RBAC)** as a formal model is from Ferraiolo & Kuhn's *"Role-Based Access Controls"* (Ferraiolo & Kuhn, **NIST/NCSC National Computer Security Conference, 1992**). IAM roles are the AWS implementation; attribute-based access control (ABAC) — which AWS calls "tag-based authorization" — is the academic descendant codified in NIST SP 800-162 (2014).
+
+These citations are not academic flourish: the exam questions are deliberately written to test whether you can distinguish "authentication" from "authorization," "principle of least privilege" from "defense in depth," and "RBAC" from "ABAC." Knowing the textbook source makes the distinctions reflexive.
 
 ---
 
@@ -346,9 +364,69 @@ These four services are part of nearly every "secure architecture" answer:
 
 ---
 
+## 📖 Case Study — Capital One's Serverless Bet and the 2019 Breach (2016–2019)
+
+**Situation.** Capital One Financial Corporation — a top-10 U.S. bank with ~$370B in assets — announced in 2015 that it would close its last on-premises data center by 2018 and run *everything* on AWS. This was unprecedented for a regulated bank. Then-CIO Rob Alexander spoke at re:Invent 2015 and again in 2016 (keynote, viewable on AWS's YouTube channel) declaring AWS the "safer choice" — counter-intuitive in 2015 — because of the operational discipline AWS enforces.
+
+**Decision.** Capital One went **serverless-first**:
+- New workloads on **Lambda, API Gateway, DynamoDB, Step Functions** — not EC2
+- **IAM roles** everywhere, with permissions boundaries to cap blast radius
+- **Service Control Policies** to enforce region restrictions, encryption-at-rest, and CloudTrail-must-stay-on
+- Open-sourced **Cloud Custodian** (an SCP-and-policy enforcement engine), used by 1,000+ companies today
+- Heavy use of **AWS Macie** for PII detection — Capital One was an early design partner
+
+**Outcome — the celebrated part.** Capital One demonstrably moved faster than its competitors: a feature that took 18 months at JPMorgan Chase shipped in 6 weeks at Capital One. Lambda invocations exceeded **2 billion per month** by 2018. Operational cost per transaction dropped roughly 40%. Capital One became the case study in every bank board deck for "cloud done right."
+
+**Outcome — the painful part.** In **July 2019**, a former AWS engineer, Paige Thompson (online handle "erratic"), exploited a **misconfigured WAF on an EC2 instance** to perform a **server-side request forgery (SSRF)** attack against the EC2 instance metadata service (IMDSv1). She obtained the IAM role credentials attached to the instance — credentials that had been granted overly broad S3 permissions — and exfiltrated **106 million customer records** (US and Canadian credit-card applicants, including 140,000 SSNs and 80,000 linked bank account numbers).
+
+**The breach was a *configuration* failure, not an AWS failure.** Specifically:
+1. The WAF was misconfigured to allow the proxied request
+2. The IAM role attached to the EC2 instance had `s3:ListBucket` and `s3:GetObject` on **all** buckets in the account — not just the one the application needed
+3. **IMDSv1** (the unauthenticated metadata service) was the default at the time — IMDSv2 (which requires session tokens and largely prevents SSRF attacks) was released by AWS in **November 2019**, four months *after* the breach
+4. The over-permissive role violated the **principle of least privilege** (Saltzer & Schroeder, 1975)
+
+Capital One was fined **$80 million** by the OCC and paid **$190 million** in a class-action settlement. Thompson was convicted in 2022.
+
+**Lesson for the exam / for practitioners.** Every concept in this module would have prevented or contained the breach:
+- **IAM roles scoped to specific buckets** (not `*`) — least privilege
+- **Permissions boundary** on the EC2 role — caps what credentials can do even if stolen
+- **SCP** denying `s3:*` outside the application's expected resource pattern
+- **IMDSv2** (now the default for new EC2 launches since 2024) — defeats SSRF-based credential theft
+- **VPC endpoint for S3 + bucket policy with `aws:SourceVpce` condition** — bucket only reachable from the *expected* VPC
+
+When the SAA exam asks "which combination provides defense in depth for an EC2 application reading from S3?" — every layer above is a legitimate answer. The Capital One breach is *why* exam writers chain them together in questions.
+
+**Discussion (Socratic).**
+- **Q1.** The Capital One incident had multiple independent failure points (misconfigured WAF, over-permissive IAM, IMDSv1, no SCP guardrails). Argue: was this primarily a **technology failure**, a **process failure**, or a **culture failure**? Where would each kind of organization invest first to prevent the next breach?
+- **Q2.** Capital One's IAM role had `s3:ListBucket` on `*`. The "fix" is to scope to specific bucket ARNs. But in a fast-moving microservices org where new buckets appear weekly, who *owns* updating the role policy as buckets proliferate? Design an architecture or governance pattern that solves this without slowing developers.
+- **Q3.** IMDSv1 was widely known to be SSRF-vulnerable for *years* before the breach. AWS published guidance to migrate to IMDSv2 in 2019 but didn't make it mandatory until 2024. Defend AWS's gradual-rollout approach AND attack it. Where does the responsibility line under the Shared Responsibility Model fall when AWS knows about a vulnerability but hasn't made the fix mandatory?
+
+---
+
+## 💬 Discussion — Socratic Prompts
+
+1. **The SCP-vs-permissions-boundary boundary.** Both are "caps" on what an identity can do. At what kind of company / org structure does an SCP do work that boundaries can't, and vice versa? Build a decision tree.
+2. **The Identity Center migration debate.** Existing IAM users still work; Identity Center is the new path. A team has 200 IAM users with rotated keys, all working fine. Is migration to Identity Center worth the 3-month engineering investment? Argue both sides with quantified estimates.
+3. **The "Deny everything by default" SCP playbook.** Some shops apply a deny-list SCP (deny specific dangerous actions) and others apply an allow-list SCP (deny everything not on a permitted list). Compare from a security, operational, and developer-experience perspective.
+4. **MFA on IAM users — when does it make a real-world security difference?** Argue both for and against requiring hardware MFA (YubiKey) for all root and IAM admin users. What's the operational tax, and what attack does it actually defeat?
+5. **Cross-account vs single-account-with-OUs.** Some orgs use one AWS account per environment (dev/stage/prod); others use one account per *application*. What's the trade-off matrix on blast radius, cost, IAM complexity, and audit?
+
+---
+
+## ➡️ Where This Leads
+
+> **Where this leads.**
+> - **Inside this course:** Module 04 (VPC) layers network-level defenses (Security Groups, NACLs) on top of IAM. Module 05 (S3) covers bucket policies — the most common IAM mistake on the exam. Module 09 (Monitoring) covers CloudTrail, IAM Access Analyzer, and GuardDuty — which would have detected the Capital One breach.
+> - **Cross-course:** `09-CompTIA-Security-Plus` Module 06 covers RBAC, ABAC, and DAC at the academic level. `07-AWS-AI-Practitioner` Module 08 covers IAM for AI workloads (Bedrock, SageMaker). `04` and `07` overlap heavily here.
+> - **Practice:** Practice Exam 1 has 5 IAM questions; Final Mock Exam has 7.
+> - **Real world:** Run an IAM Access Analyzer scan on a personal AWS account — free; surfaces real cross-account exposure. Try AWS's *"Well-Architected Tool"* Security pillar questionnaire.
+
+---
+
 ## ✅ Module 2 Summary
 
 You now know:
+- 📜 The 1975 Saltzer & Schroeder origins of least privilege (and the "confused deputy" of 1988)
 - 🔑 IAM principal/action/resource/condition (PARC) model
 - 👥 Users vs Groups vs Roles and when each fits
 - 📜 The 7 policy types and how they combine
@@ -356,19 +434,37 @@ You now know:
 - 🆔 IAM Identity Center for modern human access
 - 🔄 STS AssumeRole for cross-account and 3rd-party patterns (with ExternalId)
 - 🚨 The 7 most-tested IAM exam traps
+- 📖 The Capital One 2019 breach and what every IAM concept would have prevented
 
 **Next steps:**
 1. 🎥 Watch the videos in [`Videos.md`](./Videos.md)
-2. ✏️ Take the [`Quiz.md`](./Quiz.md) (target: 20/24)
+2. ✏️ Take the [`Quiz.md`](./Quiz.md) (target: 21/26)
 3. 📋 Review [`Cheat-Sheet.md`](./Cheat-Sheet.md)
 4. ➡️ Move on to [Module 3: EC2 Deep Dive](../Module-03-EC2-Deep-Dive/Reading.md)
 
 ---
 
-## 📚 Further Reading (Optional)
+## 📚 Further Sources (This Module)
 
-- 📖 **[IAM Best Practices (official)](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)**
-- 📖 **[Policy Evaluation Logic](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html)**
-- 📖 **[AWS Organizations User Guide](https://docs.aws.amazon.com/organizations/latest/userguide/)**
-- 📖 **[IAM Identity Center docs](https://docs.aws.amazon.com/singlesignon/latest/userguide/)**
-- 📖 **[Confused Deputy Problem](https://docs.aws.amazon.com/IAM/latest/UserGuide/confused-deputy.html)**
+**AWS official**
+- 📖 **IAM Best Practices** — `docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html`
+- 📖 **Policy Evaluation Logic** — `docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html`
+- 📖 **AWS Organizations User Guide** — `docs.aws.amazon.com/organizations/latest/userguide/`
+- 📖 **IAM Identity Center docs** — `docs.aws.amazon.com/singlesignon/latest/userguide/`
+- 📖 **Confused Deputy Problem (AWS docs)** — `docs.aws.amazon.com/IAM/latest/UserGuide/confused-deputy.html`
+- 📖 **AWS Security Best Practices whitepaper** — `docs.aws.amazon.com/whitepapers/latest/aws-security-best-practices/`
+
+**re:Invent talks**
+- 🎤 **SEC308 (2023): *Beyond IAM access keys: Modern authentication approaches*** — Cognito + Identity Center deep-dive.
+- 🎤 **SEC405 (2023): *Become an IAM policy ninja*** — the canonical IAM-deep-dive talk that returns nearly every year.
+
+**Academic foundations**
+- 📄 **Saltzer, Jerome H. & Schroeder, Michael D. (1975).** *The Protection of Information in Computer Systems.* Communications of the ACM. *(The least-privilege paper.)*
+- 📄 **Hardy, Norman (1988).** *The Confused Deputy: (or why capabilities might have been invented).* ACM Operating Systems Review 22(4). *(The ExternalId origin story.)*
+- 📄 **Ferraiolo, David & Kuhn, D. Richard (1992).** *Role-Based Access Controls.* National Computer Security Conference Proceedings, NIST. *(RBAC paper.)*
+- 📖 **NIST SP 800-162 (2014):** *Guide to Attribute Based Access Control (ABAC) Definition and Considerations.* Free PDF — `csrc.nist.gov/publications/detail/sp/800-162/final`.
+
+**Industry / incident analysis**
+- 📰 **U.S. Senate report on the Capital One breach (2020)** — public PDF; reads like a textbook chapter on what NOT to do.
+- 📰 **Krebs on Security** — multiple long-form posts on the Capital One incident.
+- 📰 **AWS Blog (2019).** *"Add defense in depth against open firewalls, reverse proxies, and SSRF vulnerabilities with enhancements to the EC2 Instance Metadata Service"* — AWS's own response paper announcing IMDSv2.

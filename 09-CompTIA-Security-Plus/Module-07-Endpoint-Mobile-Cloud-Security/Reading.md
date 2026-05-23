@@ -1,6 +1,12 @@
 # Module 7: Endpoint, Mobile & Cloud Security 💻📱☁️
 
-> **Why this module matters:** SY0-701 added significant cloud, mobile, container, and IoT/ICS content versus the older SY0-601. Endpoint + cloud security spans Domain 3 (Architecture, 18%) heavily and overlaps Domain 4 (Operations). About 15% of exam questions live here.
+> **Why this module matters:** SY0-701 added significant cloud, mobile, container, and IoT/ICS content versus the older SY0-601 (released November 2020, retired July 2024). Endpoint + cloud security spans Domain 3 (Architecture, 18%) heavily and overlaps Domain 4 (Operations). About 15% of exam questions live here.
+
+> **Prerequisites for this module.** Before starting, you should be comfortable with:
+> - [Network zones and segmentation](../Module-06-Network-Security/Reading.md) — the same vocabulary applies in cloud VPCs/VNETs.
+> - [Encryption at rest / in transit / in use](../Module-02-Cryptography-PKI/Reading.md) — needed for cloud KMS and confidential-computing questions.
+> - [IAM concepts](../Module-03-Identity-Access-Management/Reading.md) — overly-permissive cloud IAM is the #1 cloud-breach pattern.
+> - [Threat-actor / supply-chain awareness](../Module-04-Threats-Threat-Actors/Reading.md) — needed for mobile, OT, and SaaS-supply-chain scenarios.
 
 ---
 
@@ -108,6 +114,8 @@ Three very different places where data lives — three very different defenses. 
 ---
 
 ## ☁️ Cloud Security Fundamentals
+
+The **NIST definition of cloud computing** (SP 800-145, September 2011: Mell & Grance) established the standard model — IaaS, PaaS, SaaS — that Sec+ still tests today. The **shared-responsibility model** was articulated publicly by AWS in early **AWS Well-Architected** materials starting 2012 and standardized via [aws.amazon.com/compliance/shared-responsibility-model](https://aws.amazon.com/compliance/shared-responsibility-model/). Azure ([learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility](https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility)) and GCP ([cloud.google.com/security/overview/shared-responsibility](https://cloud.google.com/security/overview/shared-responsibility)) maintain comparable docs. The **Cloud Security Alliance** publishes the *Cloud Controls Matrix (CCM) v4* (2021, current) as the consensus control taxonomy across providers.
 
 ### Service models — and the shared responsibility implication
 
@@ -237,6 +245,28 @@ PBQ might ask you to drag containment, eradication, and recovery actions into th
 
 ---
 
+## 📊 Case Study — Capital One AWS Breach (July 2019)
+
+**Situation.** **Capital One Financial** is one of the largest US consumer-credit-card issuers and was an early, public AWS-customer reference — by 2018 Capital One had migrated >70% of its workloads to AWS and shut down legacy data centers. The architecture: a **ModSecurity-based web application firewall** in front of a US-East-region application; behind it, an EC2 instance running on **IAM role permissions that allowed reading S3 buckets** in the same account. Capital One stored credit-application data — names, addresses, DOBs, credit scores, **140,000 SSNs**, **80,000 linked bank-account numbers**, and 1 million Canadian Social Insurance Numbers — in those S3 buckets.
+
+**Decision.** In **March 2019** a former AWS engineer (Paige Thompson, who had left AWS in 2016) discovered the misconfigured ModSecurity WAF. The WAF was configured in a way that, when sent a specially crafted request, would issue **outbound HTTP requests on the attacker's behalf** — a textbook **Server-Side Request Forgery (SSRF)** vulnerability (OWASP A10:2021, covered Module 5). Specifically, the attacker pointed the SSRF at the AWS Instance Metadata Service v1 (**IMDSv1**) endpoint: `http://169.254.169.254/latest/meta-data/iam/security-credentials/<role-name>`. AWS IMDSv1 returned the temporary security credentials for the EC2 instance's IAM role *without any authentication* — that was IMDSv1's design. The attacker then used those credentials to list **700+ S3 buckets** and download **~30 GB** of credit-application data.
+
+**Outcome.** Thompson posted bragging on GitHub Gist and on Slack. A Capital One security researcher (a friend of Thompson's contact) saw the posts and reported it to Capital One on **17 July 2019**. Capital One confirmed the breach within hours, notified the FBI within a day, and patched the SSRF the same week. Public disclosure: **29 July 2019**. **~106 million** Americans and Canadians were affected. Capital One paid **$80M in OCC penalty** (August 2020) and **$190M in a class-action settlement** (December 2021). Internal incident-response cost was estimated at $150M+. Thompson was convicted in 2022 of seven federal counts and sentenced to time served plus probation; the lighter-than-expected sentence triggered intense academic and industry debate about how to charge "researcher-curious" intrusion vs malicious attack. AWS responded by accelerating **IMDSv2** (released November 2019) which requires session-token-based PUT requests (defeating SSRF-style abuse), and in mid-2024 began *defaulting* new instances to IMDSv2-only.
+
+**Lesson for the exam / for practitioners.** This case touches every cloud topic Sec+ tests:
+- **Shared responsibility model.** AWS provided IMDSv1 (a service); Capital One **configured it, configured the IAM role with broad S3 access, and configured the WAF that allowed SSRF.** Sec+ tests this exact framing: "A public S3 bucket exposed customer data — who is responsible?" → the customer. "An EC2 instance with an over-permissive IAM role — who is responsible?" → the customer.
+- **SSRF (Module 5) + IMDS (Module 7) = cloud-credential theft.** This pattern recurs constantly. The countermeasure is IMDSv2 (network-layer enforcement) **plus** scoped IAM roles **plus** runtime SSRF-prevention (block egress to `169.254.169.254` from anything but the legitimate AWS SDK). Sec+ tests each layer.
+- **CSPM would have caught this.** Cloud Security Posture Management tools (Wiz, Orca, Lacework, Prisma Cloud) would have flagged: (a) the S3 buckets accessible to the EC2 instance role; (b) the IAM role's over-broad scope; (c) the WAF being on a public-internet path with outbound metadata-IP access. Sec+ asks: "what tool would have detected this?" → **CSPM** for config drift, **CIEM** for entitlement, **CWPP** for runtime.
+- **Logging and detection failure.** Capital One had **CloudTrail** enabled but did not have **alerts** on anomalous IAM activity (one credential, 700 buckets, 30 GB downloaded in hours). Module 8 SIEM/SOAR tuning would have caught the volumetric anomaly.
+- **The breach reshaped industry practice.** IMDSv2 is now mandatory by default for new AWS accounts as of 2024; AWS introduced **GuardDuty** anomaly detection and **IAM Access Analyzer** as direct responses; the entire **Cloud Native Application Protection Platform (CNAPP)** product category exists in part because of Capital One.
+
+**Discussion (Socratic).**
+- **Q1:** Capital One was a sophisticated AWS-native bank with a security team. The breach happened because of a *configuration* failure, not a missing technology. Argue: is the *organizational* failure (no one inventoried IAM permissions, no anomaly alerts on S3 download volume) more fundamental than the *technical* failure (SSRF in ModSecurity)? Defend one as the "true root cause" with reference to NIST IR process (Module 8).
+- **Q2:** AWS designed IMDSv1 in 2008 — pre-SSRF awareness in enterprise IT. The 2019 incident drove IMDSv2. Were AWS's choices *negligent* (they should have foreseen SSRF) or *reasonable for 2008*? Build the case both ways. Reference vendor responsibility doctrine and the FTC's evolving cloud-misconfiguration enforcement.
+- **Q3:** Paige Thompson was a former AWS engineer (insider knowledge of IMDSv1 mechanics) but had left 3 years before the attack. Is this best classified as **insider threat** (Module 4 — privileged knowledge) or **external attacker** (no current access)? Defend a position with reference to NIST and FBI threat-actor taxonomy.
+
+---
+
 ## ⚠️ Exam Traps & Common Misconceptions
 
 | Misconception | Reality |
@@ -311,13 +341,31 @@ You now know:
 3. 📋 [Cheat-Sheet.md](./Cheat-Sheet.md)
 4. ➡️ [Module 8 — Security Operations](../Module-08-Security-Operations/Reading.md) (the biggest domain)
 
+> **Where this leads.**
+> - Inside this course: [Module 8](../Module-08-Security-Operations/Reading.md) covers SIEM correlation, threat hunting, and IR for the cloud telemetry CSPM/CIEM produce; [Module 9](../Module-09-GRC-Risk-Compliance/Reading.md) covers third-party / SaaS vendor risk; [Module 10](../Module-10-Application-Data-Security/Reading.md) covers SBOM, IaC scanning, and container image signing.
+> - Cross-course: AWS courses 03/04/07 are the next step for cloud-native depth. Azure courses 05/06/08 cover the Microsoft equivalents.
+> - Practice: Practice Exam 2 has ~12 endpoint/cloud questions; Final Mock has ~13.
+
 ---
 
 ## 📚 Further Reading (Optional)
 
-- 📖 [AWS Shared Responsibility Model](https://aws.amazon.com/compliance/shared-responsibility-model/)
-- 📖 [Microsoft Shared Responsibility for Cloud](https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility)
-- 📖 [CIS Benchmarks](https://www.cisecurity.org/cis-benchmarks)
-- 📖 [NIST SP 800-82 — Guide to ICS Security](https://csrc.nist.gov/publications/detail/sp/800-82/rev-3/final)
+**Primary sources / standards:**
+- 📄 NIST SP 800-145 (Mell & Grance, 2011). [*The NIST Definition of Cloud Computing*](https://csrc.nist.gov/publications/detail/sp/800-145/final). (The canonical IaaS/PaaS/SaaS/on-demand definitions.)
+- 📄 NIST SP 800-82 Rev 3 (2023). [*Guide to Operational Technology Security*](https://csrc.nist.gov/publications/detail/sp/800-82/rev-3/final). (The ICS/SCADA/OT reference.)
+- 📄 [AWS Shared Responsibility Model](https://aws.amazon.com/compliance/shared-responsibility-model/) (verified 2026-05)
+- 📄 [Microsoft Shared Responsibility for Cloud](https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility) (verified 2026-05)
+- 📄 [GCP Shared Responsibility Matrix](https://cloud.google.com/security/overview/shared-responsibility) (verified 2026-05)
+- 📄 Cloud Security Alliance (2021). [*Cloud Controls Matrix v4*](https://cloudsecurityalliance.org/research/cloud-controls-matrix/).
+
+**Case-study sources (Capital One):**
+- 📄 US v. Paige A. Thompson, 2:19-cr-00159 (W.D. Wash.). Indictment + plea.
+- 📄 OCC consent order (August 2020) — $80M penalty.
+- 📄 Krebs, B. (2019). "What We Can Learn from the Capital One Hack." [Krebs on Security](https://krebsonsecurity.com/2019/08/what-we-can-learn-from-the-capital-one-hack/), 2 August 2019.
+- 📄 AWS (2019-2020). Multiple blog posts on IMDSv2 design and rollout.
+
+**Practitioner:**
+- 📖 [CIS Benchmarks](https://www.cisecurity.org/cis-benchmarks) — platform hardening guides
 - 📖 [OWASP Container Security Verification Standard](https://owasp.org/www-project-container-security-verification-standard/)
 - 📖 [Cloud Security Alliance — CCSK / CCM](https://cloudsecurityalliance.org/)
+- 📖 [HardenedBSD / DISA STIGs](https://public.cyber.mil/stigs/) — DoD-grade hardening

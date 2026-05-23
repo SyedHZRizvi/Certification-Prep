@@ -6,7 +6,7 @@
 
 ## Questions
 
-### Q1. Which AWS service tracks resource configuration drift and evaluates against rules like "S3 buckets must not be public"?
+### Q1. Which AWS service tracks resource configuration drift and evaluates against rules like "S3 buckets must not be public"? *(Apply)*
 A. CloudWatch
 B. CloudTrail
 C. AWS Config
@@ -14,7 +14,7 @@ D. AWS Health Dashboard
 
 ---
 
-### Q2. Which service collects metrics, logs, and triggers alarms?
+### Q2. Which service collects metrics, logs, and triggers alarms? *(Remember)*
 A. AWS Config
 B. CloudWatch
 C. CloudTrail
@@ -22,7 +22,7 @@ D. Trusted Advisor
 
 ---
 
-### Q3. CloudTrail's primary purpose is:
+### Q3. CloudTrail's primary purpose is: *(Understand)*
 A. Performance metrics
 B. Recording every AWS API call made in your account
 C. Cost forecasting
@@ -30,7 +30,7 @@ D. Threat detection
 
 ---
 
-### Q4. Which AWS Support plan provides 24/7 access to engineers and a response time of LESS THAN 1 HOUR for production-down issues, plus ALL Trusted Advisor checks?
+### Q4. Which AWS Support plan provides 24/7 access to engineers and a response time of LESS THAN 1 HOUR for production-down issues, plus ALL Trusted Advisor checks? *(Apply)*
 A. Basic
 B. Developer
 C. Business
@@ -38,7 +38,7 @@ D. Enterprise
 
 ---
 
-### Q5. Which support tier provides a DEDICATED Technical Account Manager (TAM)?
+### Q5. Which support tier provides a DEDICATED Technical Account Manager (TAM)? *(Remember)*
 A. Developer
 B. Business
 C. Enterprise On-Ramp (POOL of TAMs)
@@ -46,7 +46,7 @@ D. Enterprise
 
 ---
 
-### Q6. AWS data transfer pricing:
+### Q6. AWS data transfer pricing: *(Understand)*
 A. Costs the same in all directions
 B. Inbound to AWS is generally FREE; outbound to internet is paid
 C. Outbound is free; inbound is paid
@@ -54,7 +54,7 @@ D. Is always free within AWS
 
 ---
 
-### Q7. To estimate the cost of a workload BEFORE deploying, the BEST tool is:
+### Q7. To estimate the cost of a workload BEFORE deploying, the BEST tool is: *(Apply)*
 A. AWS Cost Explorer
 B. AWS Pricing Calculator
 C. AWS Budgets
@@ -62,7 +62,7 @@ D. AWS Trusted Advisor
 
 ---
 
-### Q8. Which is TRUE about the AWS Basic Support plan?
+### Q8. Which is TRUE about the AWS Basic Support plan? *(Understand)*
 A. Provides 24/7 technical support
 B. Is FREE — billing/account only, no tech support, 7 core Trusted Advisor checks
 C. Includes a Technical Account Manager
@@ -70,7 +70,7 @@ D. Costs $29/mo
 
 ---
 
-### Q9. Which service provides ML-based right-sizing recommendations for EC2, EBS, and Lambda?
+### Q9. Which service provides ML-based right-sizing recommendations for EC2, EBS, and Lambda? *(Remember)*
 A. Trusted Advisor
 B. AWS Compute Optimizer
 C. Cost Explorer
@@ -78,7 +78,7 @@ D. CloudWatch
 
 ---
 
-### Q10. AWS Trusted Advisor checks fall into 5 categories. Which is NOT one of them?
+### Q10. AWS Trusted Advisor checks fall into 5 categories. Which is NOT one of them? *(Analyze)*
 A. Cost Optimization
 B. Performance
 C. Security
@@ -86,7 +86,7 @@ D. Migration
 
 ---
 
-### Q11. To get an alert when AWS schedules maintenance on YOUR EC2 instance:
+### Q11. To get an alert when AWS schedules maintenance on YOUR EC2 instance: *(Apply)*
 A. Subscribe to the AWS Public Status Dashboard
 B. Use AWS Health Dashboard (Your Account Health)
 C. Use AWS Config
@@ -94,7 +94,7 @@ D. Wait for an email from AWS Marketing
 
 ---
 
-### Q12. CloudWatch Alarms can trigger which of the following?
+### Q12. CloudWatch Alarms can trigger which of the following? *(Understand)*
 A. SNS notifications
 B. Auto Scaling actions
 C. EC2 stop / terminate / recover
@@ -102,7 +102,7 @@ D. All of the above
 
 ---
 
-### Q13. To SSH-lessly connect to an EC2 instance via the browser without opening port 22, use:
+### Q13. To SSH-lessly connect to an EC2 instance via the browser without opening port 22, use: *(Apply)*
 A. AWS Direct Connect
 B. AWS Systems Manager Session Manager
 C. Bastion host on a public subnet
@@ -110,7 +110,7 @@ D. CloudShell
 
 ---
 
-### Q14. AWS Budgets:
+### Q14. AWS Budgets: *(Understand)*
 A. Automatically prevent further spending when threshold is hit
 B. Send alerts (email/SNS) when spend or usage approaches/exceeds threshold
 C. Are only available with Enterprise Support
@@ -118,7 +118,7 @@ D. Cost $100/mo
 
 ---
 
-### Q15. The MOST granular billing data export (down to per-resource per-hour) is:
+### Q15. The MOST granular billing data export (down to per-resource per-hour) is: *(Remember)*
 A. Cost Explorer
 B. AWS Cost & Usage Report (CUR)
 C. Trusted Advisor
@@ -126,7 +126,7 @@ D. The monthly PDF invoice
 
 ---
 
-### Q16. To categorize AWS spend by team or project, use:
+### Q16. To categorize AWS spend by team or project, use: *(Apply)*
 A. Cost Allocation Tags
 B. IAM Groups
 C. Security Groups
@@ -134,7 +134,7 @@ D. VPCs
 
 ---
 
-### Q17. The AWS Marketplace is BEST described as:
+### Q17. The AWS Marketplace is BEST described as: *(Understand)*
 A. AWS's stock-photo library
 B. A catalog of 3rd-party software (AMIs, containers, SaaS) you can buy through AWS billing
 C. The AWS Free Tier
@@ -142,7 +142,7 @@ D. The AWS Job Board
 
 ---
 
-### Q18. Amazon QuickSight is:
+### Q18. Amazon QuickSight is: *(Remember)*
 A. A serverless BI / dashboarding service
 B. A search engine
 C. A DDoS protection service
@@ -150,7 +150,7 @@ D. A container registry
 
 ---
 
-### Q19. Which is TRUE about the AWS Free Tier?
+### Q19. Which is TRUE about the AWS Free Tier? *(Understand)*
 A. It is only the 12-month tier
 B. It has 3 categories: 12-Months, Always Free, and Trials
 C. It is automatically Enterprise Support
@@ -158,7 +158,7 @@ D. It does not include S3
 
 ---
 
-### Q20. To save money on a steady 24/7 workload running EC2 for the next 3 years, the BEST option is:
+### Q20. To save money on a steady 24/7 workload running EC2 for the next 3 years, the BEST option is: *(Evaluate)*
 A. On-Demand Instances only
 B. Reserved Instances or Savings Plans (1-yr or 3-yr commitment)
 C. Spot Instances
@@ -166,7 +166,7 @@ D. AWS Outposts
 
 ---
 
-### Q21. Which service centrally aggregates findings from multiple AWS security tools into one dashboard?
+### Q21. Which service centrally aggregates findings from multiple AWS security tools into one dashboard? *(Remember)*
 A. CloudWatch
 B. AWS Security Hub
 C. Trusted Advisor
@@ -174,7 +174,7 @@ D. AWS Config
 
 ---
 
-### Q22. AWS Personal Health Dashboard / AWS Health Dashboard (Your Account Health):
+### Q22. AWS Personal Health Dashboard / AWS Health Dashboard (Your Account Health): *(Understand)*
 A. Shows global AWS service status (public)
 B. Shows events that affect YOUR resources (e.g., EC2 retirement notices, scheduled maintenance)
 C. Provides DDoS protection
@@ -182,7 +182,7 @@ D. Generates compliance reports
 
 ---
 
-### Q23. The Developer Support plan provides:
+### Q23. The Developer Support plan provides: *(Remember)*
 A. 24/7 phone support and TAMs
 B. Business-hours email support with one contact
 C. ALL Trusted Advisor checks
@@ -190,7 +190,7 @@ D. Free TLS certs
 
 ---
 
-### Q24. Which is TRUE about IAM and VPC pricing?
+### Q24. Which is TRUE about IAM and VPC pricing? *(Analyze)*
 A. Both are paid services
 B. Both are free — you pay only for resources they create / use
 C. Only IAM is free
@@ -198,7 +198,7 @@ D. Only VPC is free
 
 ---
 
-### Q25. The Enterprise Support plan exclusively offers:
+### Q25. The Enterprise Support plan exclusively offers: *(Apply)*
 A. Multi-AZ deployments
 B. Infrastructure Event Management (IEM) for large launches, dedicated TAM, AWS Concierge support
 C. Free EC2

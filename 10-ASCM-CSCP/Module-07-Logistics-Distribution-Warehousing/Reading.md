@@ -2,6 +2,12 @@
 
 > **Why this module matters:** Logistics is where supply chains actually move. Expect 8–12 exam questions on transportation mode trade-offs, warehouse operations, DC types, and 3PL/4PL relationships. The vocabulary is dense and the trade-offs are calculable.
 
+> **Prerequisites for this module.** Before starting, you should be comfortable with:
+> - [Network design (centralized vs decentralized, crossdock, hub-and-spoke)](../Module-02-Supply-Chain-Design/Reading.md) — Module 2
+> - [Inventory math (EOQ, SS, ROP)](../Module-05-Inventory-Capacity/Reading.md) — Module 5
+> - [Supplier contracts and SLA basics](../Module-06-Sourcing-Supplier-Management/Reading.md) — Module 6
+> Course `12-ASCM-CLTD` (Certified in Logistics, Transportation, and Distribution) takes this module's content 4× deeper if logistics is your career focus.
+
 ---
 
 ## 🚢 A Story: The Sneaker Brand That Stopped Flying
@@ -59,7 +65,7 @@ The **8 logistics activities** (used on the exam):
 - **Multimodal**: multiple modes under one contract
 - **Intermodal**: same shipping container moves across modes (truck → rail → ship → truck) without rehandling
 
-🎯 **Exam tip:** Intermodal containerization is THE innovation that made global logistics economical. Containerization invented by Malcolm McLean in 1956 → "The Box" book.
+🎯 **Exam tip:** Intermodal containerization is THE innovation that made global logistics economical. Containerization invented by **Malcolm McLean** (Sea-Land Industries) in April 1956 with the SS *Ideal X* sailing Newark → Houston. The history is documented in **Marc Levinson, *The Box: How the Shipping Container Made the World Smaller and the World Economy Bigger*** (Princeton University Press, 2e 2016).
 
 ### Truck variants
 
@@ -249,6 +255,23 @@ Reverse logistics handles flows of returns, recalls, repairs, recycling, and end
 
 ---
 
+## 📊 Case Study — Red Sea / Houthi Attacks and the Cape Diversion (Nov 2023-2024)
+
+**Situation.** Starting November 2023, Houthi militants in Yemen launched missile and drone attacks on commercial vessels in the Red Sea / Bab el-Mandeb strait, the southern gateway to the Suez Canal. By January 2024, attacks had hit ships from ~50 countries. The strait normally carries **12-15% of global trade** including 30% of global container traffic. Major carriers — Maersk, MSC, CMA CGM, Hapag-Lloyd — initially paused, then progressively re-routed around the Cape of Good Hope. The diversion added **10-14 days of transit** Asia ↔ Europe and consumed 20-25% more bunker fuel per voyage.
+
+**Decision.** Mid-December 2023, Maersk (Copenhagen) and CMA CGM (Marseille) committed to Cape routing for indefinite duration. MSC (Geneva), the world's largest by capacity, followed. By Q1 2024 ~90% of Asia-Europe container volume had shifted. Logistics responses cascaded down: 3PLs renegotiated rates, demand-shifted to **air freight** for time-critical cargo (air rates Asia-EU spiked 100-200%), and shippers like IKEA, Walmart, Tesla announced shortages or price surcharges. The Suez Canal Authority lost ~$2B in transit fee revenue in H1 2024. The combat coalition Operation Prosperity Guardian (US, UK, France, others) escorted some vessels through the Red Sea, but commercial insurance premiums quintupled — pushing most carriers to Cape routing anyway.
+
+**Outcome.** As of mid-2024, Red Sea transit volume was 50-60% below pre-attack baseline. Container freight rates Asia-EU rose 200-300% Q1 2024 vs Q4 2023 (Drewry's WCI). Inventory days at European retailers crept up 5-10 days as buffer against the longer lane. The crisis became a logistics case study in MIT CTL's 2024 *Supply Chain Frontiers* and ASCM's *SCM Now* 2024 issues. Notably, Maersk's Q1 2024 EBITDA rose vs Q4 2023 — spot freight gains more than offset diversion costs, mirroring their 2021 Suez performance. Strategically: nearshoring and India / Mexico sourcing accelerated, multimodal Asia-EU rail (China Railway Express through Russia, Trans-Caspian rail through Central Asia) saw a 30%+ volume jump.
+
+**Lesson for the exam / for practitioners.** This case is the modern follow-on to the 2021 Suez (Maersk Ever Given) story — same chokepoint, different failure mode. On the exam, expect questions on **mode-shift economics** (when does air make sense for cargo previously moving by ocean?), **3PL/4PL crisis governance** (multi-carrier orchestration when individual carriers diverge), and the **inventory-vs-transit math** (the safety-stock cost of a 14-day lengthened lane). The structural lesson: global logistics is fragile to geopolitics; "resilience over efficiency" (the post-2020 mantra) means active route diversification, dual-port strategies, and contractual capacity reservation — not just safety stock.
+
+**Discussion (Socratic).**
+- Q1: An Asia-EU shipper has a 30-day customer SLA on inventory; transit time was 28 days pre-attack, 42 days post-Houthi. They can pay 8× ocean for air freight or push back on customer SLA. Walk through the calculation that picks the answer, and the secondary effects of each choice.
+- Q2: Suez handled ~12% of global trade; the Panama Canal handled ~6% (with 2023-2024 drought also restricting it). Where else in 2024-2026 do you see structural chokepoint risk, and which is most under-priced by current insurance markets?
+- Q3: Some shippers signed long-term contracts (12-24 months) at peak 2024 rates. As volumes normalize, they're paying double the spot rate. Defend their decision from a Hau Lee "agile" perspective.
+
+---
+
 ## ⚠️ Common Misconceptions
 
 | Misconception | Reality |
@@ -317,10 +340,30 @@ You now know:
 
 ---
 
+> **Where this leads.**
+> - Inside this course: Module 8 adds the international trade compliance layer (Incoterms, customs, FX) to physical movement; Module 9 connects logistics carbon footprint to ESG reporting.
+> - Cross-course: `12-ASCM-CLTD` Modules 3-5 deepen transportation, warehouse, and DC operations to certification-level depth; CSCP scratches the surface, CLTD is the deep dive.
+> - Practice: Practice Exam 2 has ~10 logistics questions; Final Mock has ~12.
+
+---
+
+## 💬 Discussion — Socratic prompts
+
+1. **The 4PL vs in-house orchestrator debate.** A $1B firm with 8 3PLs is debating whether to hire a 4PL or build in-house orchestration (Project44, FourKites integration). Build the case for each, and identify the size threshold where in-house becomes credible.
+2. **Last-mile drones vs vans, 2024-2026.** Amazon Prime Air, Wing (Alphabet), and Manna have all expanded drone delivery 2023-2024. Walk through the unit economics — when does a drone beat a van, and what's the regulatory + airspace constraint that blocks general scale-up?
+3. **The crossdock that became a warehouse.** A retailer designed a crossdock for high-velocity SKUs; demand variability has increased, and goods now sit 4-7 days "in crossdock" before shipping. Diagnose the failure and prescribe the fix.
+4. **OTIF or perfect order — which to incentivize?** A logistics director is choosing between OTIF and perfect-order KPI for carrier contracts. Perfect order is harder to measure (documentation accuracy) but truer. Defend each side and the right answer for what type of business.
+5. **Reverse logistics in fast fashion.** Shein, Temu, and similar models drive 30%+ return rates on apparel. Reverse logistics is now ~15% of total logistics cost. Construct a 2026 strategy where return-cost is reduced 50% without harming sales.
+
+---
+
 ## 📚 Further Reading (Optional)
 
-- 📖 Marc Levinson, *The Box* — history of the shipping container
-- 📖 Edward Frazelle, *World-Class Warehousing and Material Handling*
-- 📖 CSCMP State of Logistics Report (annual) — free
-- 📖 ASCM CSCP Learning System Module 7
-- 📖 *Logistics Management* magazine — practitioner trends
+- 📖 Marc Levinson, *The Box: How the Shipping Container Made the World Smaller and the World Economy Bigger* — Princeton University Press, 2e 2016
+- 📖 Edward H. Frazelle, *World-Class Warehousing and Material Handling* — McGraw-Hill, 2e 2016 (the warehouse design canon)
+- 📖 Yossi Sheffi, *The Resilient Enterprise: Overcoming Vulnerability for Competitive Advantage* — MIT Press, 2007 (the foundational post-9/11 SC resilience text)
+- 📖 CSCMP *State of Logistics Report* (annual, free for non-members in summary) — current US logistics economy data
+- 📖 Martin Christopher, *Logistics & Supply Chain Management* — FT Publishing, 5e 2016 (Cranfield School of Management textbook)
+- 📖 ASCM CSCP Learning System Module 7 + ASCM CLTD Learning System (for deeper logistics)
+- 📰 *Journal of Commerce* (joc.com) — ocean and intermodal news; *FreightWaves* — daily trucking + logistics data; Lloyd's List — ocean trade
+- 📰 ASCM *SCM Now*, Spring 2024 — Red Sea / Suez disruption coverage

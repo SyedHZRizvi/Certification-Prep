@@ -7,7 +7,7 @@
 
 ## Questions
 
-### Q1. A buyer wants market intelligence on capabilities of potential suppliers. The correct document is:
+### Q1. A buyer wants market intelligence on capabilities of potential suppliers. The correct document is: *(Apply)*
 A. RFI
 B. RFP
 C. RFQ
@@ -15,7 +15,7 @@ D. PO
 
 ---
 
-### Q2. A custom electric motor used in only one of your product platforms is in the Kraljic quadrant:
+### Q2. A custom electric motor used in only one of your product platforms is in the Kraljic quadrant: *(Apply)*
 A. Routine
 B. Leverage
 C. Bottleneck
@@ -23,7 +23,7 @@ D. Strategic
 
 ---
 
-### Q3. The 7-step strategic sourcing process starts with:
+### Q3. The 7-step strategic sourcing process starts with: *(Remember)*
 A. Negotiate
 B. Spend analysis
 C. RFP
@@ -31,7 +31,7 @@ D. Supplier scorecard
 
 ---
 
-### Q4. RFQ is BEST used when:
+### Q4. RFQ is BEST used when: *(Apply)*
 A. Capabilities are unknown
 B. The buyer has a well-defined spec and wants price quotes
 C. The buyer wants comprehensive solutions
@@ -39,7 +39,7 @@ D. The buyer plans a multi-year strategic alliance
 
 ---
 
-### Q5. TCO differs from price because TCO includes:
+### Q5. TCO differs from price because TCO includes: *(Understand)*
 A. Only purchase price
 B. Operating, maintenance, and disposal across lifecycle
 C. Setup time only
@@ -47,7 +47,7 @@ D. Carrying cost only
 
 ---
 
-### Q6. A reverse auction is generally INAPPROPRIATE for:
+### Q6. A reverse auction is generally INAPPROPRIATE for: *(Evaluate)*
 A. Office supplies
 B. Bulk packaging
 C. Strategic custom components requiring deep collaboration
@@ -55,7 +55,7 @@ D. Standard cabling
 
 ---
 
-### Q7. Office paper purchased through an e-catalog by 200 buyers across the firm is BEST classified as:
+### Q7. Office paper purchased through an e-catalog by 200 buyers across the firm is BEST classified as: *(Apply)*
 A. Strategic
 B. Leverage
 C. Bottleneck
@@ -63,7 +63,7 @@ D. Routine
 
 ---
 
-### Q8. In a Kraljic "bottleneck" item (high supply risk, low profit impact), the BEST sourcing strategy is:
+### Q8. In a Kraljic "bottleneck" item (high supply risk, low profit impact), the BEST sourcing strategy is: *(Evaluate)*
 A. Lowest-price competitive bidding
 B. Ensure supply via dual-sourcing or safety stock
 C. Eliminate the supplier
@@ -71,7 +71,7 @@ D. Centralize spend
 
 ---
 
-### Q9. A cost-plus contract transfers MORE risk to:
+### Q9. A cost-plus contract transfers MORE risk to: *(Understand)*
 A. The buyer
 B. The supplier
 C. The freight forwarder
@@ -79,7 +79,7 @@ D. The end customer
 
 ---
 
-### Q10. SLA stands for:
+### Q10. SLA stands for: *(Remember)*
 A. Supplier Liability Agreement
 B. Service-Level Agreement
 C. Strategic Liaison Authority
@@ -87,7 +87,7 @@ D. Supply Lane Audit
 
 ---
 
-### Q11. BATNA refers to:
+### Q11. BATNA refers to: *(Remember)*
 A. Best Alternative To a Negotiated Agreement
 B. Buyer's Aggregate Total Net Asset
 C. Backup-Allocated TCO Negotiation Aid
@@ -95,7 +95,7 @@ D. Backup Asset Tax Number Agreement
 
 ---
 
-### Q12. A supplier scorecard typically gives the HIGHEST weight to:
+### Q12. A supplier scorecard typically gives the HIGHEST weight to: *(Understand)*
 A. Quality and on-time delivery
 B. Phone responsiveness
 C. Number of staff
@@ -103,7 +103,7 @@ D. Number of certifications
 
 ---
 
-### Q13. SRM at the "strategic alliance" level typically includes:
+### Q13. SRM at the "strategic alliance" level typically includes: *(Understand)*
 A. Pure price competition
 B. Joint R&D, shared scorecards, sometimes equity
 C. One-off transactions
@@ -111,7 +111,7 @@ D. No information sharing
 
 ---
 
-### Q14. A buyer who must purchase a single-supplier specialty pigment with no substitute should:
+### Q14. A buyer who must purchase a single-supplier specialty pigment with no substitute should: *(Evaluate)*
 A. Reverse auction every quarter
 B. Develop alternates, increase safety stock, and qualify a second source
 C. Drop the supplier
@@ -119,7 +119,7 @@ D. Issue an RFI
 
 ---
 
-### Q15. Acquisition + operating + maintenance + disposal best describes:
+### Q15. Acquisition + operating + maintenance + disposal best describes: *(Remember)*
 A. EOQ
 B. TCO
 C. ROP
@@ -127,7 +127,7 @@ D. CPFR
 
 ---
 
-### Q16. A leverage item in Kraljic terms is BEST sourced via:
+### Q16. A leverage item in Kraljic terms is BEST sourced via: *(Apply)*
 A. Long-term strategic alliance
 B. Competitive bidding / reverse auction
 C. Single-source vertical integration
@@ -135,7 +135,7 @@ D. Sole-source manual catalog
 
 ---
 
-### Q17. Which is NOT a strategic sourcing step?
+### Q17. Which is NOT a strategic sourcing step? *(Understand)*
 A. Analyze spend
 B. Solicit suppliers (RFx)
 C. Negotiate and award
@@ -143,7 +143,7 @@ D. Compute EOQ
 
 ---
 
-### Q18. Dickson's classic top supplier-selection criterion was:
+### Q18. Dickson's classic top supplier-selection criterion was: *(Remember)*
 A. Lowest price
 B. Quality
 C. Geographic proximity
@@ -151,7 +151,7 @@ D. Financial leverage
 
 ---
 
-### Q19. MFN (most favored nation) clause means:
+### Q19. MFN (most favored nation) clause means: *(Remember)*
 A. The supplier promises buyer pricing at least as good as any other customer
 B. Most freight nationally
 C. Multi-firm negotiation agreement
@@ -159,7 +159,7 @@ D. Mandatory free notice
 
 ---
 
-### Q20. A fixed-price contract is BEST when:
+### Q20. A fixed-price contract is BEST when: *(Apply)*
 A. Scope is unknown
 B. Scope is clearly defined and stable
 C. The supplier is new
@@ -167,7 +167,7 @@ D. The market is volatile
 
 ---
 
-### Q21. e-RFx, e-auctions, and CLM are examples of:
+### Q21. e-RFx, e-auctions, and CLM are examples of: *(Remember)*
 A. Inventory tools
 B. Forecasting tools
 C. Procurement technology stack
@@ -175,7 +175,7 @@ D. Production scheduling tools
 
 ---
 
-### Q22. A buyer with a strong BATNA can:
+### Q22. A buyer with a strong BATNA can: *(Understand)*
 A. Make concessions to keep the supplier
 B. Hold firm on terms because they have alternatives
 C. Avoid all contracts
@@ -183,7 +183,7 @@ D. Skip negotiation
 
 ---
 
-### Q23. In global sourcing, currency volatility is BEST mitigated by:
+### Q23. In global sourcing, currency volatility is BEST mitigated by: *(Apply)*
 A. Ignoring exchange rates
 B. FX hedging and multi-currency invoicing
 C. Always paying in supplier currency
@@ -191,7 +191,7 @@ D. Single-currency policy regardless of risk
 
 ---
 
-### Q24. A supplier rated "strategic" in Kraljic deserves:
+### Q24. A supplier rated "strategic" in Kraljic deserves: *(Evaluate)*
 A. Reverse auctions every 6 months
 B. Deep partnership, multi-year contract, joint planning
 C. Transactional ordering only
@@ -199,7 +199,7 @@ D. Mandatory price cuts
 
 ---
 
-### Q25. A buyer for industrial bolts purchased in massive volume with many qualified global suppliers should pursue:
+### Q25. A buyer for industrial bolts purchased in massive volume with many qualified global suppliers should pursue: *(Apply)*
 A. Strategic alliance
 B. Competitive RFQs / reverse auctions
 C. Vertical integration

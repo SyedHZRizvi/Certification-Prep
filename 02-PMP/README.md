@@ -158,3 +158,19 @@ Pick the 2 most relevant. Read carefully.
 👉 [**Module 1: PMP Foundations**](./Module-01-Foundations/Reading.md)
 
 Buckle up. PMP is hard. But everyone who studies smart passes. So will you. 💪
+
+---
+
+## 📚 What's New in This Elevation Pass
+
+The PMP track has been augmented to the Cornell/Harvard/Stanford pedagogical bar. **All existing module content, quiz questions, and practice-exam questions are preserved unchanged** — these additions are layered *on top* of what you've been studying:
+
+- 📊 **Real-world case studies** in every module — Boeing 737 MAX, Spotify, Knight Capital, Channel Tunnel, HealthCare.gov, NASA Mars Climate Orbiter, Big Dig, Hubble, Denver Airport baggage system, and Sydney Opera House — each in the Harvard-case-method format with situation/decision/outcome/lesson and Socratic discussion questions.
+- 💬 **Socratic discussion prompts** appended to each Reading, designed to force reasoning from principles rather than recall.
+- 📚 **Named-source citations** for every framework — Tuckman 1965, Maslow 1943, Kotter 1996, Flyvbjerg 2003/2023, the PMBOK editions, PMI Pulse of the Profession 2024, Standish CHAOS 2024, and more.
+- 🧠 **Bloom's-taxonomy tags** on every existing quiz question, plus 4–6 higher-Bloom bonus questions per module (Apply / Analyze / Evaluate / Create) to stretch your reasoning.
+- 📝 **Detailed wrong-answer rationales** appended to all three practice exams (PE-1, PE-2, Final Mock) — every question now has both the original letter-only key AND a per-distractor explanation.
+- 🎓 **[Capstone Project](./Capstone-Project.md)** — a $14M digital-transformation rollout at a regional bank acquiring a fintech. Produces 6 real-PM artifacts (Charter, Stakeholder Register, Risk Register, Communications Plan, EVM Dashboard, Lessons-Learned design) over a 6-week timeline. Rubric included for self-assessment.
+- 📖 **[Recommended Readings](./Recommended-Readings.md)** — 36 entries spanning PMBOK 7, Rita Mulcahy, Andrew Ramdayal, Kerzner, Flyvbjerg, Kahneman, Goleman, MIT OCW, Stanford SCPD, the FAR, and PMI's Pulse of the Profession 2024.
+
+Nothing above your current location in the course has changed — keep studying from wherever you are. The new material appears in clearly labeled sections at the end of each Reading.md and Quiz.md, and as the two new root-level files above.

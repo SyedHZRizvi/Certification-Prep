@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~75 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Karpathy+intro+to+large+language+models+1+hour" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Karpathy+intro+to+large+language+models+1+hour" target="_blank" rel="noopener" data-video-id="zjkBMFhNj_g">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 60 min · The single best free LLM explainer</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=what+are+tokens+embeddings+context+window+explained" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=what+are+tokens+embeddings+context+window+explained" target="_blank" rel="noopener" data-video-id="5sLYAQS9sWQ">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 10 min · The three concepts that anchor every LLM question</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AIF-C01+generative+AI+fundamentals+ExamPro" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=AIF-C01+generative+AI+fundamentals+ExamPro" target="_blank" rel="noopener" data-video-id="ME-7gs74g6c">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 18 min · Domain 2 in one sitting</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=LLM+hallucinations+explained+DeepLearningAI" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=LLM+hallucinations+explained+DeepLearningAI" target="_blank" rel="noopener" data-video-id="cfqtFvWOfg0">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~35 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=temperature+top+p+top+k+LLM+sampling+explained" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=temperature+top+p+top+k+LLM+sampling+explained" target="_blank" rel="noopener" data-video-id="YMIQrH9BQK0">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 9 min · The 4 inference knobs visualized</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=3blue1brown+transformers+attention" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=3blue1brown+transformers+attention" target="_blank" rel="noopener" data-video-id="wjZofJX0v4M">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 26 min · Optional depth; gorgeous animation</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=multimodal+AI+explained+Amazon+Nova+Claude" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=multimodal+AI+explained+Amazon+Nova+Claude" target="_blank" rel="noopener" data-video-id="KEzL6VywPBQ">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Stephen+Wolfram+what+is+ChatGPT+doing" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Stephen+Wolfram+what+is+ChatGPT+doing" target="_blank" rel="noopener" data-video-id="flXrLGPY3SU">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 1 hr · Conceptual deep dive — long, rewarding</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=vector+embeddings+semantic+search+pinecone" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=vector+embeddings+semantic+search+pinecone" target="_blank" rel="noopener" data-video-id="EpmIIDC2Xgg">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 15 min · Sets up RAG (Module 5)</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Stable+Diffusion+how+it+works+explained" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Stable+Diffusion+how+it+works+explained" target="_blank" rel="noopener" data-video-id="1CIpzeNxIhU">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

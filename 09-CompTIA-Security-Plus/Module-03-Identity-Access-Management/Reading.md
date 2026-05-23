@@ -1,6 +1,11 @@
 # Module 3: Identity & Access Management 🪪
 
-> **Why this module matters:** Identity is the new perimeter. The Verizon DBIR consistently finds that ~80% of breaches involve credentials. Sec+ tests every authentication factor, federation protocol (SAML/OAuth/OIDC), access-control model (DAC/MAC/RBAC/ABAC), and privileged-access concept. This is one of the most heavily tested modules — about 12–15% of exam questions touch IAM directly.
+> **Why this module matters:** Identity is the new perimeter. The Verizon *Data Breach Investigations Report* consistently finds that **~74-80% of breaches involve a human element**, and roughly half involve stolen or misused credentials (Verizon DBIR 2024 — 17th annual edition). Sec+ tests every authentication factor, federation protocol (SAML/OAuth/OIDC), access-control model (DAC/MAC/RBAC/ABAC), and privileged-access concept. This is one of the most heavily tested modules — about 12–15% of exam questions touch IAM directly.
+
+> **Prerequisites for this module.** Before starting, you should be comfortable with:
+> - [AAA — Authentication, Authorization, Accounting](../Module-01-Security-Fundamentals/Reading.md) — the access lifecycle this module builds on.
+> - [Digital signatures and public-key cryptography](../Module-02-Cryptography-PKI/Reading.md) — SAML signed assertions, OIDC JWTs, and FIDO2 passkeys all depend on Module 2's primitives. If you can't explain why "sender's private key signs," go back to Module 2.
+> - General LDAP / directory concepts (a tree of objects with attributes) — helpful but not required.
 
 ---
 
@@ -89,6 +94,8 @@ Sec+ recognizes **five** factors. Most people remember 3 — you need all 5.
 Federation = your identity from one trusted Identity Provider (IdP) is accepted by many Service Providers (SPs).
 
 ### Key Protocols
+
+Citations: **SAML 2.0** is an OASIS standard ratified March 2005 (Cantor et al., OASIS Standard, 15 March 2005). **OAuth 2.0** is IETF **RFC 6749** (Hardt, October 2012). **OpenID Connect 1.0** is the OpenID Foundation specification published 25 February 2014. **Kerberos** (v5) is **RFC 4120** (Neuman, Yu, Hartman & Raeburn, 2005), based on MIT's Project Athena work — original paper: Steiner, Neuman & Schiller, "Kerberos: An Authentication Service for Open Network Systems," *USENIX Winter Conference*, 1988. **RADIUS** is **RFC 2865/2866** (Rigney et al., 2000). **TACACS+** is **RFC 8907** (Dahm et al., September 2020 — finally standardized after ~30 years as a Cisco protocol).
 
 | Protocol | Purpose | Format | Where you see it |
 |----------|---------|--------|------------------|
@@ -238,6 +245,28 @@ A PBQ might present an event log and ask you to drag controls into the order the
 
 ---
 
+## 📊 Case Study — Okta Customer Support Breach (October 2023)
+
+**Situation.** **Okta** is the largest pure-play identity provider, sitting in front of authentication for **18,000+ enterprises** including federal agencies, Fortune 500 companies, and 1Password, BeyondTrust, and Cloudflare — the security industry itself. In late September 2023 an Okta customer-support engineer signed into their *personal* Google account on a managed Chrome browser while triaging a customer ticket. The personal account's saved-password vault included credentials for a **service account** the engineer used to access Okta's customer-support case-management system. Chrome's auto-sync uploaded those credentials to the personal Google account.
+
+**Decision.** Okta's policy already required service-account credentials to live in a corporate password manager — not in personal browser vaults. But there was no *technical* control (DLP, browser-policy block on personal Google sign-in for managed endpoints, or token-binding on the service account) preventing the engineer from doing what they did. The attacker — later attributed to the financially-motivated group tracked as **Scattered Spider / 0ktapus / Muddled Libra** — gained access to the personal Google account (vector unknown; likely info-stealer malware on a different personal device), then used the synced credentials to log into Okta's support portal between **28 September and 17 October 2023**.
+
+**Outcome.** The attacker exfiltrated **HAR files** (HTTP Archive recordings) that customers had uploaded to Okta's support portal for troubleshooting. HAR files routinely contain live session tokens. Okta's *customers* — including **1Password (20 Sept), BeyondTrust (2 Oct), Cloudflare (18 Oct)** — detected unusual access using those tokens and reported it back to Okta. Okta initially under-counted the impact, telling investors only ~1% of customers were affected. On **3 November 2023** Okta disclosed that the attacker had downloaded a customer-support report containing **all 18,400 active Okta customers' names and email addresses**. Okta's stock fell 11% on disclosure day; by year-end the breach had cost Okta an estimated **$1.4B in market cap**. The CEO later called this the company's most significant security incident.
+
+**Lesson for the exam / for practitioners.** Every Sec+ IAM concept appears here:
+- **Service-account hygiene.** The compromised credential was a non-human service account. Best practice (Module 3 PAM section): service accounts should be *non-interactive*, vaulted, with rotation and behavioral monitoring. Okta's policy required it; the technical enforcement did not match the policy. Sec+ tests this exact gap.
+- **Session token theft = MFA bypass.** The HAR files contained valid session tokens. Once the attacker had the token, the customer's MFA was already complete; the attacker simply *replayed* the session. This is why **passkey / FIDO2 with token-binding** matters: a stolen token from another origin cannot be replayed. SMS- and TOTP-based MFA do not protect the session token after issuance.
+- **Conditional Access / Adaptive Identity.** The support engineer signed in from their normal device, normal location, normal time. Adaptive-Identity signals (geo, device posture, behavioral) would not have flagged this. The *attacker's* login from a residential VPN range — *would have* flagged. Conditional Access policies for service accounts (allow only from specified IPs / managed devices) would have blocked the attacker entirely.
+- **Joiner-Mover-Leaver discipline.** The service account in question had broader access than the engineer's day-to-day work required. Periodic access review (quarterly minimum, monthly for sensitive) would have caught the scope creep.
+- **Cross-organization supply-chain identity risk.** 1Password and Cloudflare detected the incident before Okta did — because they were watching their *own* token usage. This is the modern reality: your customers' SOCs are part of your detection fabric, whether you like it or not.
+
+**Discussion (Socratic).**
+- **Q1:** Okta's CISO post-mortem committed to "phishing-resistant MFA for all employees" and "blocking sign-in to personal Google accounts on managed Chromes." Are these *technical* (preventive) controls, *managerial* (policy) controls, or both? What edge cases would still defeat them, and what compensating detective controls would you layer in?
+- **Q2:** The attacker exfiltrated session tokens from HAR files. Okta's customers had uploaded those files voluntarily for troubleshooting. Design a *secure-by-default* alternative: how would you let a support engineer debug a customer's auth flow *without* the engineer (or anyone else) ever seeing a live session token? Argue trade-offs between debug fidelity and confidentiality.
+- **Q3:** Cloudflare and 1Password detected the breach by watching their *own* logs for anomalous Okta-token usage. Okta itself did not detect it for ~3 weeks. What does this say about IdP-side vs SP-side monitoring, and what's the right division of detection responsibility in a federated trust relationship?
+
+---
+
 ## ⚠️ Exam Traps & Common Misconceptions
 
 | Misconception | Reality |
@@ -320,11 +349,32 @@ You now know:
 3. 📋 [Cheat-Sheet.md](./Cheat-Sheet.md)
 4. ➡️ [Module 4 — Threats & Threat Actors](../Module-04-Threats-Threat-Actors/Reading.md)
 
+> **Where this leads.**
+> - Inside this course: [Module 4](../Module-04-Threats-Threat-Actors/Reading.md) covers Scattered Spider / Okta-class actors; [Module 5](../Module-05-Vulnerabilities-Attacks/Reading.md) covers credential-stuffing, spraying, and session hijacking that target the protocols in this module; [Module 8](../Module-08-Security-Operations/Reading.md) covers SIEM detection rules for anomalous IdP activity.
+> - Cross-course: Azure Administrator (course 06) covers Entra ID / Conditional Access in depth; AWS Solutions Architect (course 04) covers IAM, IAM Identity Center, and federation.
+> - Practice: Practice Exam 1 has ~6 IAM questions; Final Mock has ~10. Pay extra attention to SAML vs OIDC distinctions and the JIT/ephemeral-credential angle — frequently tested.
+
 ---
 
 ## 📚 Further Reading (Optional)
 
-- 📖 [NIST SP 800-63B Digital Identity Guidelines — Authentication](https://pages.nist.gov/800-63-3/sp800-63b.html) — the authoritative password/MFA guidance
+**Primary sources / standards:**
+- 📄 NIST SP 800-63B (2017, updated 2024). [*Digital Identity Guidelines — Authentication and Lifecycle Management*](https://pages.nist.gov/800-63-3/sp800-63b.html). (Authoritative password/MFA guidance; mandates *against* periodic password rotation absent compromise.)
+- 📄 NIST SP 800-63-4 (Draft, 2024). The next revision; expected final 2025-2026.
+- 📄 IETF RFC 6749 (Hardt, 2012). [OAuth 2.0 Authorization Framework](https://datatracker.ietf.org/doc/html/rfc6749).
+- 📄 IETF RFC 4120 (Neuman et al., 2005). [The Kerberos Network Authentication Service (V5)](https://datatracker.ietf.org/doc/html/rfc4120). Original paper: Steiner, Neuman & Schiller, "Kerberos: An Authentication Service for Open Network Systems," USENIX Winter, 1988.
+- 📄 OASIS (2005). *Security Assertion Markup Language (SAML) v2.0* Standard.
+- 📄 OpenID Foundation (2014). *OpenID Connect Core 1.0*.
+- 📄 W3C / FIDO Alliance. *Web Authentication (WebAuthn) Level 3* — W3C Candidate Recommendation, 2023. Passkey specifications.
+- 📄 IETF RFC 2865/2866 (Rigney et al., 2000) — RADIUS; RFC 8907 (Dahm et al., 2020) — TACACS+.
+
+**Case-study sources:**
+- Okta (2023). *Security Incident October 2023 — Final Update.* Okta Security blog, 3 November 2023; subsequent SEC 8-K filings.
+- Cloudflare (2023). "Thanksgiving 2023 security incident." Cloudflare blog, 1 February 2024 (separate but Okta-linked).
+- 1Password (2023). "1Password detection of suspicious activity in our Okta tenant." 23 October 2023 incident report.
+
+**Practitioner:**
 - 📖 [OWASP Authentication Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html)
 - 📖 [Auth0: SAML vs OAuth vs OIDC](https://auth0.com/intro-to-iam/saml-vs-oauth-vs-oidc) — clear explainer
 - 📖 [Microsoft Learn: Zero Trust + Conditional Access](https://learn.microsoft.com/en-us/azure/active-directory/conditional-access/overview)
+- 📖 [Verizon Data Breach Investigations Report 2024](https://www.verizon.com/business/resources/reports/dbir/) — the empirical case that "identity is the new perimeter."

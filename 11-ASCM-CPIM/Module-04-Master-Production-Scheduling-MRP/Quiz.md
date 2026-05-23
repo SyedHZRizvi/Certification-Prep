@@ -7,7 +7,7 @@
 
 ## Questions
 
-### Q1. The Master Production Schedule plans for:
+### Q1. The Master Production Schedule plans for: *(Remember)*
 A. Raw materials
 B. Components
 C. Finished goods (end items)
@@ -15,7 +15,7 @@ D. Production workers
 
 ---
 
-### Q2. MRP plans for:
+### Q2. MRP plans for: *(Remember)*
 A. Finished goods only
 B. Independent demand items
 C. Dependent demand items (components, materials)
@@ -23,7 +23,7 @@ D. Suppliers
 
 ---
 
-### Q3. A part that is sold as a spare to a customer is:
+### Q3. A part that is sold as a spare to a customer is: *(Analyze)*
 A. Always dependent demand
 B. Independent demand when sold as a spare; dependent when consumed inside a finished good
 C. Always dependent demand
@@ -31,7 +31,7 @@ D. Both dependent and independent simultaneously, requiring double counting
 
 ---
 
-### Q4. The Demand Time Fence (DTF) is:
+### Q4. The Demand Time Fence (DTF) is: *(Understand)*
 A. Further out in time than the Planning Time Fence
 B. Closer in time than the Planning Time Fence
 C. The same as PTF
@@ -39,7 +39,7 @@ D. Only used in ETO environments
 
 ---
 
-### Q5. Inside the Demand Time Fence, the Projected Available Balance is driven by:
+### Q5. Inside the Demand Time Fence, the Projected Available Balance is driven by: *(Understand)*
 A. The forecast only
 B. Customer orders only (forecast is ignored)
 C. Both, in a weighted average
@@ -47,7 +47,7 @@ D. The Master Scheduler's judgment
 
 ---
 
-### Q6. Available-to-Promise (ATP) for a given period is:
+### Q6. Available-to-Promise (ATP) for a given period is: *(Remember)*
 A. The MPS for that period minus all customer orders for the next year
 B. The MPS for that period minus customer orders before the next MPS receipt
 C. The forecast minus the MPS
@@ -55,7 +55,7 @@ D. The on-hand inventory plus scheduled receipts
 
 ---
 
-### Q7. MPS for week 4 = 200. Customer orders against that receipt (until the next MPS receipt): 130. ATP for week 4 is:
+### Q7. MPS for week 4 = 200. Customer orders against that receipt (until the next MPS receipt): 130. ATP for week 4 is: *(Apply)*
 A. 70
 B. 130
 C. 200
@@ -63,7 +63,7 @@ D. 330
 
 ---
 
-### Q8. A bicycle uses 2 pedals per bike. The MPS for week 3 is 1,000 bikes. The gross requirement for pedals in week 3 is:
+### Q8. A bicycle uses 2 pedals per bike. The MPS for week 3 is 1,000 bikes. The gross requirement for pedals in week 3 is: *(Apply)*
 A. 500
 B. 1,000
 C. 2,000
@@ -71,7 +71,7 @@ D. 4,000
 
 ---
 
-### Q9. For a component with on-hand = 400, scheduled receipt week 1 = 600, gross requirement week 1 = 1,200, the net requirement in week 1 is:
+### Q9. For a component with on-hand = 400, scheduled receipt week 1 = 600, gross requirement week 1 = 1,200, the net requirement in week 1 is: *(Apply)*
 A. 0
 B. 200
 C. 600
@@ -79,7 +79,7 @@ D. 1,200
 
 ---
 
-### Q10. A component has lead time = 2 weeks. Planned order receipt is week 5. Planned order release week is:
+### Q10. A component has lead time = 2 weeks. Planned order receipt is week 5. Planned order release week is: *(Apply)*
 A. Week 3
 B. Week 4
 C. Week 5
@@ -87,7 +87,7 @@ D. Week 7
 
 ---
 
-### Q11. Low-level coding in MRP is used to:
+### Q11. Low-level coding in MRP is used to: *(Understand)*
 A. Speed up the printing of BOMs
 B. Ensure an item is processed only once, with all parent demand netted
 C. Reduce the BOM file size
@@ -95,7 +95,7 @@ D. Assign workers to lower-level tasks
 
 ---
 
-### Q12. The MRP action message "Reschedule in" means:
+### Q12. The MRP action message "Reschedule in" means: *(Remember)*
 A. Push an open order later
 B. Pull an open order earlier
 C. Cancel an open order
@@ -103,7 +103,7 @@ D. Release a new order
 
 ---
 
-### Q13. Lot-for-Lot (L4L) sizing:
+### Q13. Lot-for-Lot (L4L) sizing: *(Remember)*
 A. Orders a fixed quantity each time
 B. Orders the exact net requirement each period
 C. Always orders EOQ
@@ -111,7 +111,7 @@ D. Always orders the period's forecast
 
 ---
 
-### Q14. A supplier requires a minimum order of 5,000 units; weekly demand is 1,200 units. Most appropriate lot-sizing rule:
+### Q14. A supplier requires a minimum order of 5,000 units; weekly demand is 1,200 units. Most appropriate lot-sizing rule: *(Apply)*
 A. Lot-for-Lot
 B. EOQ
 C. Fixed Order Quantity at 5,000 (or POQ covering several weeks)
@@ -119,7 +119,7 @@ D. Min/Max with low Max
 
 ---
 
-### Q15. MPS for Bike A: 800/wk for 4 weeks. BOM uses 1 frame per bike. Lead time for frame = 3 weeks. Frame on-hand = 1,000 at start of week 1. If we use L4L, planned order release in week 1 is:
+### Q15. MPS for Bike A: 800/wk for 4 weeks. BOM uses 1 frame per bike. Lead time for frame = 3 weeks. Frame on-hand = 1,000 at start of week 1. If we use L4L, planned order release in week 1 is: *(Apply)*
 A. 0
 B. 600
 C. 800
@@ -127,7 +127,7 @@ D. 1,000
 
 ---
 
-### Q16. CTP (Capable-to-Promise) differs from ATP in that CTP:
+### Q16. CTP (Capable-to-Promise) differs from ATP in that CTP: *(Analyze)*
 A. Considers a replanning of capacity and materials, not just existing schedule
 B. Only applies to ETO
 C. Replaces ATP entirely
@@ -135,7 +135,7 @@ D. Has nothing to do with promise dates
 
 ---
 
-### Q17. A two-level MPS is typically used in which environment?
+### Q17. A two-level MPS is typically used in which environment? *(Apply)*
 A. Pure MTS
 B. ATO
 C. ETO
@@ -143,7 +143,7 @@ D. Job shop
 
 ---
 
-### Q18. The Planning Time Fence is typically set to:
+### Q18. The Planning Time Fence is typically set to: *(Understand)*
 A. One week
 B. The cumulative lead time of the longest material path
 C. The current month
@@ -151,7 +151,7 @@ D. The fiscal year
 
 ---
 
-### Q19. Which of these is NOT a typical MRP input?
+### Q19. Which of these is NOT a typical MRP input? *(Remember)*
 A. Master Production Schedule
 B. Bill of Materials
 C. Lead times
@@ -159,7 +159,7 @@ D. Customer satisfaction scores
 
 ---
 
-### Q20. The output of MRP includes all of the following EXCEPT:
+### Q20. The output of MRP includes all of the following EXCEPT: *(Remember)*
 A. Planned order receipts
 B. Planned order releases
 C. Action messages
@@ -167,7 +167,7 @@ D. Worker performance reviews
 
 ---
 
-### Q21. A planner sees "Reschedule out" for an open purchase order. This means:
+### Q21. A planner sees "Reschedule out" for an open purchase order. This means: *(Remember)*
 A. Cancel the order
 B. Receive it later than originally planned
 C. Receive it sooner than originally planned
@@ -175,7 +175,7 @@ D. Split it between two suppliers
 
 ---
 
-### Q22. A component's projected on-hand goes negative in week 3. The system should generate:
+### Q22. A component's projected on-hand goes negative in week 3. The system should generate: *(Understand)*
 A. A planned order to arrive in week 3
 B. A scheduled receipt for week 1
 C. A cancellation message
@@ -183,7 +183,7 @@ D. A capacity alert only
 
 ---
 
-### Q23. The MPS is reconciled with which higher-level plan?
+### Q23. The MPS is reconciled with which higher-level plan? *(Understand)*
 A. CRP
 B. S&OP / IBP
 C. PAC
@@ -191,7 +191,7 @@ D. The strategic plan only
 
 ---
 
-### Q24. MRP "pegging" provides:
+### Q24. MRP "pegging" provides: *(Understand)*
 A. A way to find out which parent's demand created a given component requirement
 B. Inventory location data
 C. Supplier scorecard data
@@ -199,7 +199,7 @@ D. Cost roll-up data
 
 ---
 
-### Q25. MPS for week 6 = 500. Scheduled receipts = 0. Customer orders in week 6 = 350. ATP for week 6 is:
+### Q25. MPS for week 6 = 500. Scheduled receipts = 0. Customer orders in week 6 = 350. ATP for week 6 is: *(Apply)*
 A. 0
 B. 150
 C. 350
@@ -207,7 +207,7 @@ D. 500
 
 ---
 
-### Q26. The single most-tested critical *idea* of MRP is:
+### Q26. The single most-tested critical *idea* of MRP is: *(Evaluate)*
 A. Forecast everything
 B. Calculate dependent demand from MPS + BOM, offset by lead time
 C. Schedule by the closest due date
@@ -215,7 +215,7 @@ D. Use safety stock for everything
 
 ---
 
-### Q27. A scheduled receipt is:
+### Q27. A scheduled receipt is: *(Remember)*
 A. An order placed but not yet received
 B. The MPS itself
 C. Inventory on-hand
@@ -223,7 +223,7 @@ D. A forecast revision
 
 ---
 
-### Q28. A "firm planned order" in MRP differs from a normal planned order in that it:
+### Q28. A "firm planned order" in MRP differs from a normal planned order in that it: *(Understand)*
 A. Will not be moved or modified by the system automatically
 B. Has not been released yet
 C. Has higher priority

@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~95 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+Azure+VM+sizes+families+suffix" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+Azure+VM+sizes+families+suffix" target="_blank" rel="noopener" data-video-id="h5PyYtClt-c">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 25 min · Letter + suffix breakdown</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+availability+zones+sets+fault+update+domains" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+availability+zones+sets+fault+update+domains" target="_blank" rel="noopener" data-video-id="iX87AomIqTw">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 22 min · SLA math + diagrams</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+Azure+managed+disks+Premium+SSD+v2+Ultra" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+Azure+managed+disks+Premium+SSD+v2+Ultra" target="_blank" rel="noopener" data-video-id="2nPZyLmciN4">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 24 min · IOPS / throughput math</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Adam+Marczak+VM+Scale+Sets+autoscale" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Adam+Marczak+VM+Scale+Sets+autoscale" target="_blank" rel="noopener" data-video-id="inaXkN2UrFE">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~40 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Compute+Gallery+shared+image+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Compute+Gallery+shared+image+tutorial" target="_blank" rel="noopener" data-video-id="aR3u5oBsydM">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 13 min · Capture + replicate</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+VM+extensions+custom+script+run+command" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+VM+extensions+custom+script+run+command" target="_blank" rel="noopener" data-video-id="BunAIDBhdUY">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 12 min · Real demos</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+disk+encryption+ADE+host+encryption+CMK" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+disk+encryption+ADE+host+encryption+CMK" target="_blank" rel="noopener" data-video-id="EOXgzTqceok">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Spot+VMs+Azure+eviction+strategies" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Spot+VMs+Azure+eviction+strategies" target="_blank" rel="noopener" data-video-id="LWA4SCALYCY">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 14 min · Up to 90% off</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Update+Manager+patch+management" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Update+Manager+patch+management" target="_blank" rel="noopener" data-video-id="LVmNh5YgBOQ">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 12 min · Replaces legacy Update Mgmt</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Bastion+RDP+SSH+secure+jump+host" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Bastion+RDP+SSH+secure+jump+host" target="_blank" rel="noopener" data-video-id="MbnWB_bAhPk">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

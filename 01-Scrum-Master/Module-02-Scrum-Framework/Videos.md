@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~50 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Scrum+in+Under+10+Minutes+Hamid" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Scrum+in+Under+10+Minutes+Hamid" target="_blank" rel="noopener" data-video-id="XU0llRltyFM">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 9 min · Big picture</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Scrum+Framework+Explained+Scrum.org" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Scrum+Framework+Explained+Scrum.org" target="_blank" rel="noopener" data-video-id="-xudUyGsNfc">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 12 min · Most exam-aligned</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Scrum+Guide+2020+Updates+Scrum.org" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Scrum+Guide+2020+Updates+Scrum.org" target="_blank" rel="noopener" data-video-id="Dfxo3PZwDI8">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 15 min · EXAM ESSENTIAL</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Mountain+Goat+Software+Scrum+Walkthrough" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Mountain+Goat+Software+Scrum+Walkthrough" target="_blank" rel="noopener" data-video-id="hmQvg1aUidI">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~40 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=5+Scrum+Values+Scrum.org" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=5+Scrum+Values+Scrum.org" target="_blank" rel="noopener" data-video-id="bOCSGhSN4c8">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 8 min · Each value w/ examples</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Geoff+Watts+Scrum+methodology" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Geoff+Watts+Scrum+methodology" target="_blank" rel="noopener" data-video-id="bDYTeUSj3pA">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 11 min · Framework vs methodology</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Sprint+Heart+of+Scrum+Lucas+Caicoya" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Sprint+Heart+of+Scrum+Lucas+Caicoya" target="_blank" rel="noopener" data-video-id="ga3ZP1mobB8">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -93,7 +93,7 @@
       <span class="vg-duration">⏱ 10 min · Why Sprints are timeboxed</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Ken+Schwaber+Empiricism" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Ken+Schwaber+Empiricism" target="_blank" rel="noopener" data-video-id="cjwHilLh64o">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -107,7 +107,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Jeff+Sutherland+Scrum+future" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Jeff+Sutherland+Scrum+future" target="_blank" rel="noopener" data-video-id="2L1oBLTICx4">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 45 min · Co-creator's perspective</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=20+Years+of+Scrum+Retrospective+Agile+Alliance" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=20+Years+of+Scrum+Retrospective+Agile+Alliance" target="_blank" rel="noopener" data-video-id="U2vmsXSYf9w">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

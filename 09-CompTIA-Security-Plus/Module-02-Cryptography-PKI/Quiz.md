@@ -2,12 +2,16 @@
 
 > **Instructions:** Answer all 26 questions WITHOUT looking at the reading.
 > Aim for 22/26 minimum.
+>
+> Every question is tagged with its **Bloom's taxonomy level**.
+>
+> **Bloom distribution (this quiz):** Remember 6 (23%) · Understand 9 (35%) · Apply 6 (23%) · Analyze/Evaluate 4 (15%) · Create 1 (4%).
 
 ---
 
 ## Questions
 
-### Q1. Which algorithm is a symmetric block cipher and the modern standard?
+### Q1. Which algorithm is a symmetric block cipher and the modern standard? *(Remember)*
 A. RSA
 B. AES
 C. SHA-256
@@ -15,7 +19,7 @@ D. ECC
 
 ---
 
-### Q2. To digitally sign a message, the sender encrypts the message's hash with:
+### Q2. To digitally sign a message, the sender encrypts the message's hash with: *(Understand)*
 A. The sender's public key
 B. The sender's private key
 C. The recipient's public key
@@ -23,7 +27,7 @@ D. The recipient's private key
 
 ---
 
-### Q3. To send a confidential message that only Bob can read, Alice encrypts it with:
+### Q3. To send a confidential message that only Bob can read, Alice encrypts it with: *(Apply)*
 A. Alice's private key
 B. Alice's public key
 C. Bob's public key
@@ -31,7 +35,7 @@ D. Bob's private key
 
 ---
 
-### Q4. Which provides authenticated encryption (confidentiality AND integrity in one mode)?
+### Q4. Which provides authenticated encryption (confidentiality AND integrity in one mode)? *(Understand)*
 A. AES-ECB
 B. AES-CBC
 C. AES-GCM
@@ -39,7 +43,7 @@ D. RC4
 
 ---
 
-### Q5. The PRIMARY reason ECC (elliptic curve) is popular on mobile and IoT devices is:
+### Q5. The PRIMARY reason ECC (elliptic curve) is popular on mobile and IoT devices is: *(Understand)*
 A. Stronger security than RSA at any size
 B. Smaller key sizes for equivalent strength
 C. It is symmetric so it's faster
@@ -47,7 +51,7 @@ D. It does not require certificates
 
 ---
 
-### Q6. Which key exchange provides Perfect Forward Secrecy?
+### Q6. Which key exchange provides Perfect Forward Secrecy? *(Remember)*
 A. RSA key transport
 B. Static DH
 C. DHE / ECDHE
@@ -55,7 +59,7 @@ D. SHA-256
 
 ---
 
-### Q7. Which is BROKEN and should not be used for security purposes?
+### Q7. Which is BROKEN and should not be used for security purposes? *(Remember)*
 A. SHA-256
 B. SHA-3
 C. MD5
@@ -63,7 +67,7 @@ D. HMAC-SHA256
 
 ---
 
-### Q8. A salt is added to a password BEFORE hashing to:
+### Q8. A salt is added to a password BEFORE hashing to: *(Understand)*
 A. Slow brute-force attempts
 B. Defeat rainbow tables and prevent identical passwords from producing identical hashes
 C. Encrypt the password
@@ -71,7 +75,7 @@ D. Recover the password later
 
 ---
 
-### Q9. Which is NOT a password-hashing/key-stretching algorithm?
+### Q9. Which is NOT a password-hashing/key-stretching algorithm? *(Remember)*
 A. bcrypt
 B. PBKDF2
 C. Argon2
@@ -79,7 +83,7 @@ D. AES-256
 
 ---
 
-### Q10. The signature on a TLS certificate is produced by:
+### Q10. The signature on a TLS certificate is produced by: *(Understand)*
 A. The browser
 B. The web server
 C. The Certificate Authority (CA)
@@ -87,7 +91,7 @@ D. The DNS resolver
 
 ---
 
-### Q11. Which file format typically contains BOTH the certificate AND the private key, password-protected?
+### Q11. Which file format typically contains BOTH the certificate AND the private key, password-protected? *(Remember)*
 A. PEM
 B. DER
 C. PKCS#7 (.p7b)
@@ -95,7 +99,7 @@ D. PKCS#12 (.pfx / .p12)
 
 ---
 
-### Q12. A wildcard certificate for `*.example.com` covers:
+### Q12. A wildcard certificate for `*.example.com` covers: *(Apply)*
 A. example.com only
 B. www.example.com and api.example.com but not test.dev.example.com
 C. Every single-label subdomain of example.com (e.g., www, api, mail)
@@ -103,7 +107,7 @@ D. Every domain owned by the company
 
 ---
 
-### Q13. OCSP **stapling** improves on plain OCSP by:
+### Q13. OCSP **stapling** improves on plain OCSP by: *(Understand)*
 A. Encrypting the OCSP response
 B. Letting the server pre-fetch and attach the OCSP response so the client does not phone home
 C. Replacing CRLs with stapled lists
@@ -111,7 +115,7 @@ D. Requiring mutual TLS
 
 ---
 
-### Q14. A self-signed certificate causes a browser warning because:
+### Q14. A self-signed certificate causes a browser warning because: *(Analyze)*
 A. It uses a weak hash
 B. The chain cannot terminate at a trusted root in the OS/browser trust store
 C. It has no SAN entries
@@ -119,7 +123,7 @@ D. It does not include OCSP info
 
 ---
 
-### Q15. The PRIMARY reason we combine symmetric + asymmetric (hybrid encryption) is:
+### Q15. The PRIMARY reason we combine symmetric + asymmetric (hybrid encryption) is: *(Analyze)*
 A. Stronger math
 B. Asymmetric is slow; symmetric is fast — so use asymmetric to exchange a fast symmetric key
 C. Compliance requirement
@@ -127,7 +131,7 @@ D. Asymmetric cannot encrypt data at all
 
 ---
 
-### Q16. A TPM is typically used to:
+### Q16. A TPM is typically used to: *(Apply)*
 A. Store cloud KMS keys
 B. Hold a hardware root of trust and protect keys for the local device (e.g., BitLocker)
 C. Replace a smartcard
@@ -135,7 +139,7 @@ D. Generate quantum-resistant keys
 
 ---
 
-### Q17. Which Sec+ term describes a tamper-resistant appliance specifically built to generate and store cryptographic keys at enterprise scale?
+### Q17. Which Sec+ term describes a tamper-resistant appliance specifically built to generate and store cryptographic keys at enterprise scale? *(Remember)*
 A. TPM
 B. HSM
 C. KMS
@@ -143,7 +147,7 @@ D. RAID
 
 ---
 
-### Q18. Tokenization differs from encryption because:
+### Q18. Tokenization differs from encryption because: *(Understand)*
 A. Tokenization is reversible without a key
 B. The token has no mathematical relationship to the original; only a vault lookup recovers it
 C. Tokenization is faster than AES
@@ -151,7 +155,7 @@ D. Tokens are always 16 characters
 
 ---
 
-### Q19. Hiding a secret message inside the pixel data of an image is:
+### Q19. Hiding a secret message inside the pixel data of an image is: *(Apply)*
 A. Encryption
 B. Tokenization
 C. Steganography
@@ -159,7 +163,7 @@ D. Obfuscation
 
 ---
 
-### Q20. Base64 encoding is:
+### Q20. Base64 encoding is: *(Understand)*
 A. A strong stream cipher
 B. Encoding, not encryption — anyone can decode it instantly
 C. A hashing function
@@ -167,7 +171,7 @@ D. A key-stretching technique
 
 ---
 
-### Q21. Which property does a digital signature provide that ordinary encryption does not?
+### Q21. Which property does a digital signature provide that ordinary encryption does not? *(Analyze)*
 A. Confidentiality
 B. Availability
 C. Non-repudiation
@@ -175,7 +179,7 @@ D. Compression
 
 ---
 
-### Q22. In an internal PKI, the Root CA is usually:
+### Q22. In an internal PKI, the Root CA is usually: *(Apply)*
 A. Online and used to issue every certificate
 B. Kept offline; only used to sign intermediate CAs
 C. Replaced monthly
@@ -183,7 +187,7 @@ D. The same machine as the RA
 
 ---
 
-### Q23. Which protocol modernizes key exchange in TLS 1.3 to make PFS the default?
+### Q23. Which protocol modernizes key exchange in TLS 1.3 to make PFS the default? *(Apply)*
 A. Static RSA key exchange
 B. ECDHE
 C. SSLv3
@@ -191,7 +195,7 @@ D. PBKDF2
 
 ---
 
-### Q24. A blockchain provides integrity primarily because:
+### Q24. A blockchain provides integrity primarily because: *(Understand)*
 A. Each block stores the hash of the previous block
 B. Every block is encrypted with AES
 C. Blocks are stored in a single central database
@@ -199,7 +203,7 @@ D. Only authorized users can write blocks
 
 ---
 
-### Q25 (Scenario). A bank's server certificate expired at 02:00 UTC. By 02:15 customers report "ERR_CERT_DATE_INVALID." Which is the QUICKEST appropriate fix?
+### Q25 (Scenario). A bank's server certificate expired at 02:00 UTC. By 02:15 customers report "ERR_CERT_DATE_INVALID." Which is the QUICKEST appropriate fix? *(Evaluate)*
 A. Disable HTTPS site-wide
 B. Install a new, valid certificate from the CA (or renew & deploy)
 C. Tell users to ignore the warning
@@ -207,7 +211,7 @@ D. Force browsers to ignore date checks via group policy
 
 ---
 
-### Q26 (Scenario). A pen-tester finds the corporate web app stores passwords as `SHA-256(password)` with no salt. What is the BEST remediation?
+### Q26 (Scenario). A pen-tester finds the corporate web app stores passwords as `SHA-256(password)` with no salt. What is the BEST remediation? *(Create)*
 A. Switch to MD5 for speed
 B. Add Base64 encoding before hashing
 C. Re-hash all stored passwords with a salted, key-stretched algorithm such as bcrypt/Argon2 on next user login

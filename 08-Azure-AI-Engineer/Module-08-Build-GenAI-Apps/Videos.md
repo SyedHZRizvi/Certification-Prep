@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~70 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+AI+Foundry+tour+walkthrough" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+AI+Foundry+tour+walkthrough" target="_blank" rel="noopener" data-video-id="Sq8Cq7RZM2o">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 18 min · Hub, Project, Catalog</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+prompt+flow+tutorial+RAG" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+prompt+flow+tutorial+RAG" target="_blank" rel="noopener" data-video-id="hSF_E_FxGvc">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 20 min · Visual DAG end-to-end</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+AI+Agent+Service+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+AI+Agent+Service+tutorial" target="_blank" rel="noopener" data-video-id="o1auJY8I34k">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 15 min · Tools + threads</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+AI+Foundry+evaluation+metrics" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+AI+Foundry+evaluation+metrics" target="_blank" rel="noopener" data-video-id="kafq_h2EmZs">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~40 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Semantic+Kernel+Microsoft+tutorial+python" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Semantic+Kernel+Microsoft+tutorial+python" target="_blank" rel="noopener" data-video-id="kCGZPhnTGHM">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 18 min · Kernel + plugins + planner</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+AI+Foundry+model+catalog+MaaS" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+AI+Foundry+model+catalog+MaaS" target="_blank" rel="noopener" data-video-id="gvYO5d-6kfA">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 12 min · Llama, Mistral, OSS</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+OpenAI+RAG+reference+architecture" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+OpenAI+RAG+reference+architecture" target="_blank" rel="noopener" data-video-id="uDVkcZwB0EU">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=GenAI+evaluation+LLM+as+judge+best+practices" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=GenAI+evaluation+LLM+as+judge+best+practices" target="_blank" rel="noopener" data-video-id="4beZUMADQro">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 25 min · Reliable scoring</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=agent+patterns+ReAct+plan+execute" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=agent+patterns+ReAct+plan+execute" target="_blank" rel="noopener" data-video-id="Y-VCZ_KTuzo">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

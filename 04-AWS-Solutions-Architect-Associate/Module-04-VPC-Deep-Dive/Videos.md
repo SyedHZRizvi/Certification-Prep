@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~85 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+VPC+full+tutorial+Stephane+Maarek" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="zWBmr7kfmi8" href="https://www.youtube.com/results?search_query=AWS+VPC+full+tutorial+Stephane+Maarek" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🌐</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 25 min · The foundation</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+VPC+endpoint+gateway+interface+PrivateLink" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="tPqqC_L5dOM" href="https://www.youtube.com/results?search_query=AWS+VPC+endpoint+gateway+interface+PrivateLink" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🚦</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 18 min · Gateway vs Interface</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Transit+Gateway+demo" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="-bbAXe9NS4c" href="https://www.youtube.com/results?search_query=AWS+Transit+Gateway+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🔄</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 22 min · TGW vs peering</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Security+Groups+vs+NACL+explained" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="r99PVi4Tujk" href="https://www.youtube.com/results?search_query=AWS+Security+Groups+vs+NACL+explained" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🛡️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~50 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Direct+Connect+vs+VPN+comparison" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="G6oiD5FnY44" href="https://www.youtube.com/results?search_query=AWS+Direct+Connect+vs+VPN+comparison" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🔌</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 18 min · When each fits</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=NAT+Gateway+vs+NAT+Instance+AWS" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="hFGXq66mcqM" href="https://www.youtube.com/results?search_query=NAT+Gateway+vs+NAT+Instance+AWS" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🚪</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 12 min · Cost & HA</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+VPC+peering+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="5CHAEnJVOsw" href="https://www.youtube.com/results?search_query=AWS+VPC+peering+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🔗</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+VPC+Flow+Logs+troubleshooting" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="j4ab0R_XPTA" href="https://www.youtube.com/results?search_query=AWS+VPC+Flow+Logs+troubleshooting" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>📊</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 25 min · Real diagnostics</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Client+VPN+demo" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="kGHNOxr_o7M" href="https://www.youtube.com/results?search_query=AWS+Client+VPN+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>👨‍💻</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 22 min · Laptop-to-VPC</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+IPv6+VPC+egress+only+IGW" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="CHsgqbTHSCo" href="https://www.youtube.com/results?search_query=AWS+IPv6+VPC+egress+only+IGW" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>6️⃣</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

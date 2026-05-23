@@ -311,3 +311,72 @@ You now know:
 2. ✏️ [Quiz.md](./Quiz.md)
 3. 📋 [Cheat-Sheet.md](./Cheat-Sheet.md)
 4. ➡️ [Module 7: Servant Leadership](../Module-07-Servant-Leadership/Reading.md)
+
+---
+
+> **Prerequisites for this module.** Before starting, you should be comfortable with:
+> - The three Scrum artifacts and their commitments — especially the Increment → DoD pairing ([Module 5](../Module-05-Artifacts/Reading.md))
+> - Who owns what: Developers own the Sprint Backlog and *estimate*, PO orders the backlog ([Module 3](../Module-03-Roles/Reading.md))
+> - The Sprint timebox and its rules (no scope changes that endanger the Sprint Goal, quality does not decrease) — [Module 4](../Module-04-Events/Reading.md)
+>
+> The Scrum Guide is deliberately silent on *how* to estimate, but the exam tests several common techniques as exam-trap concepts ("Velocity is NOT in the Scrum Guide"). Make sure you know which terms are *Scrum Guide* vs *common practice*.
+
+---
+
+## 📊 Case Study — Microsoft Windows: Scrum Adoption (2008–2014, Sinofsky era)
+
+**Situation.** By 2007, Microsoft's Windows division had become the textbook case of how *not* to ship software. Windows Vista (released January 2007 after multiple delays) was widely viewed as a quality disaster — laptops shipped with "Vista-capable" stickers that mid-tier hardware couldn't actually run, OEM complaints, customer backlash, and a 5-year gap since Windows XP. Senior VP Steven Sinofsky (who had transformed Office's engineering after Office XP) was named president of Windows in late 2006 and inherited a team of ~7,000 engineers organized into functional silos with no shared release cadence.
+
+**Decision.** Between 2008 and 2010, Sinofsky's leadership team restructured Windows engineering around feature crews of ~20–40 engineers (dev + test + PM disciplines, a "three-amigos" pattern) operating on synchronized milestones with explicit Definition of Done gates. Each milestone (M1, M2, M3, beta, RC) had a published quality bar that *no* feature could ship past without meeting. The new DoD included: code reviewed, automated tests passing (Microsoft's enormous internal test infrastructure), performance benchmarks met, security review passed, accessibility compliance, and localization-ready. Sinofsky famously enforced the "no exceptions" rule on milestone DoD — features that missed the bar were cut, not deferred.
+
+**Outcome.** Windows 7 shipped October 2009 — 32 months after Vista, and considered the most successful Windows release since XP. Customer satisfaction (per Forrester/Net Promoter measurement) rose dramatically. Windows 8 shipped on schedule October 2012 (though the UX was controversial — a different debate). The "Scrum + milestone DoD" approach became Microsoft's de facto standard, propagating into the Azure division (which adopted full Scrum 2010–2012) and eventually into Office 365. Sinofsky's 2014 essay *"One Strategy"* and Pete Brown's internal write-ups documented the transition; Sutherland used Windows 7 as a case in his 2014 book.
+
+**Lesson for the exam / for practitioners.** Three takeaways. (1) **A strict, non-negotiable DoD is what *enables* speed**, not what slows it down — Windows 7 shipped faster than Vista despite a tighter quality bar. (2) **Estimation is the developers' job**, not the PO's: Microsoft moved to story-point estimation done by the feature crews, with PO-equivalents (PMs) accepting estimates rather than dictating dates. (3) **Velocity is a forecasting tool, not a goal**: when a Microsoft division tried to *target* a velocity number in 2011, quality regressed within two sprints and they reverted to using velocity for forecasting only.
+
+**Discussion (Socratic).**
+- Q1: Sinofsky enforced "no exceptions" on milestone DoD — features that missed the bar were cut. What's the strongest argument that this *violates* the Scrum Guide (which says scope can flex, but Sprint Goal stays)? What's the strongest defense?
+- Q2: Why did targeting a velocity number cause quality to regress? Walk through the mechanism step by step — what does the team optimize for instead of value?
+- Q3: Microsoft used story points sized 1, 2, 3, 5, 8, 13, 20. Why not 1, 2, 3, 4, 5? What's the principle behind the Fibonacci-like scale, and what would you lose by using linear scales?
+
+---
+
+> **Where this leads.**
+> - Inside this course: [Module 7 — Servant Leadership](../Module-07-Servant-Leadership/Reading.md) covers the SM behaviors needed to coach a team toward stricter DoD without crushing morale. [Module 8 — Scaling](../Module-08-Scaling/Reading.md) covers the shared-DoD requirement when multiple teams ship one product.
+> - Cross-course: `02-PMP` Module 8 (Quality Management — control charts, Pareto, cost of quality) covers the predictive counterpart to DoD. `02-PMP` Module 6 (Schedule Management — three-point estimation, PERT, critical path) covers predictive estimation as the foil to Scrum's deliberate silence on estimation method.
+> - Practice: Practice-Exam-2 has ~8 questions on DoD, estimation, velocity. Final Mock has ~6. DoD/estimation traps are common — they test whether you know which terms are *Scrum Guide* vs *common practice*.
+
+---
+
+## 💬 Discussion — Socratic prompts
+
+1. **The "DoD is too strict" complaint.** A new team complains the org-mandated DoD takes 30% of their Sprint capacity to satisfy. They want to relax it temporarily. What's the SM's correct coaching response, and what's the *systemic* issue that's actually being surfaced?
+2. **Velocity comparison.** A VP wants to publish team velocities on a dashboard for "transparency." Walk through the conversation you'd have with the VP. What's the harm? What alternative metrics would you propose, and why? Cite Cohn's *Agile Estimating and Planning* (2005) if helpful.
+3. **Story points or hours?** A team estimates in hours because "story points are too abstract." Defend hours-based estimation, then defend story-point estimation. Which is *more accurate* in practice, and which is *more useful* for planning? Are those the same question?
+4. **DoR (Definition of Ready) as ScrumBut?** The Scrum Guide doesn't mention Definition of Ready. Many teams use it anyway. Is DoR ScrumBut? When is it useful, and when does it become a Waterfall-style gate?
+5. **#NoEstimates.** Vasco Duarte's #NoEstimates movement argues that estimation itself is the waste. Defend that position. What does a #NoEstimates team lose, and what do they gain? Could a Scrum team be #NoEstimates while still being compliant with the Scrum Guide? (Yes — explain why.)
+
+---
+
+## 📑 Named-source citations (this module)
+
+| Framework / concept | Originator(s) | Year | Venue / publication |
+|---|---|---|---|
+| Definition of Done | Schwaber | 2002 | *Agile Software Development with Scrum* (Schwaber & Beedle, Prentice Hall) |
+| Definition of Ready (NOT in Scrum Guide) | Cohn | 2014 (formal naming) | Mountain Goat Software blog, mountaingoatsoftware.com; commonly traced to Boris Gloger |
+| Story points (relative-sizing technique) | Beck | 1999 (originated in XP) | *Extreme Programming Explained* (Addison-Wesley) |
+| Planning Poker | Grenning | 2002 | James Grenning's *"Planning Poker"* article, renaissancesoftware.net |
+| Fibonacci-like sizing scale | Cohn | 2005 | *Agile Estimating and Planning* (Mike Cohn, Prentice Hall PTR) — the canonical estimation reference |
+| T-shirt sizing | Cohn | 2005 | *Agile Estimating and Planning* (also widely used in pre-Scrum estimation) |
+| Affinity estimation | Cohn (popularized); Lowell Lindstrom (originated) | 2002–2005 | *Agile Estimating and Planning*; also Lindstrom's writings at the Object Mentor blog |
+| Velocity (NOT in Scrum Guide) | Cohn | 2005 | *Agile Estimating and Planning* — Cohn defines velocity formally |
+| Burndown chart (NOT in Scrum Guide) | Schwaber | 2004 (popularized) | *Agile Project Management with Scrum* (Microsoft Press) |
+| Burnup chart (NOT in Scrum Guide) | Cohn (popularized) | 2005 | *Agile Estimating and Planning* |
+| INVEST criteria for user stories (NOT in Scrum Guide) | Wake | 2003 | "INVEST in good stories" blog post, xp123.com |
+| User-story format | Cohn | 2004 | *User Stories Applied* (Addison-Wesley) |
+| #NoEstimates movement | Duarte | 2013 | Vasco Duarte's blog and 2015 book *#NoEstimates: How To Measure Project Progress Without Estimating* |
+| Cone of Uncertainty (estimation theory) | Boehm; McConnell | 1981; 1996 | *Software Engineering Economics* (Boehm); *Rapid Development* (McConnell) |
+| *Agile Estimating and Planning* — THE estimation reference | Cohn | 2005 | Prentice Hall PTR |
+| Microsoft Windows 7 case | Sinofsky | 2009–2014 | Steven Sinofsky's *"One Strategy"* (Wiley, 2010); cited in Sutherland's *Scrum: The Art of Doing Twice the Work in Half the Time* (2014) |
+| Sutherland's "Hyperproductive Development" paper (cited for Scrum velocity claims) | Sutherland | 2011 | *"The Scrum Papers"*, Sutherland & Schwaber, scruminc.com |
+
+**Verification note.** The most important takeaway: **DoR, Velocity, Burndown/Burnup, Story Points, INVEST, and User-Story format are *not* in the Scrum Guide.** They are all common practice — many drawn from XP (Beck) or codified by Cohn. The PSM I exam explicitly tests whether you can distinguish *Scrum Guide content* from *common Scrum practice*. Cohn's *Agile Estimating and Planning* (2005) is the canonical reference outside the Guide.

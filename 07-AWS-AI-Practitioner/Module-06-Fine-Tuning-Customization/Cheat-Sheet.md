@@ -119,6 +119,14 @@ Usually wrong:
 
 ---
 
+## 📚 Reference case (high-signal recall)
+
+| Case | What it proves |
+|------|----------------|
+| **BloombergGPT (Wu et al., 2023, arXiv:2303.17564)** | Continued-pre-training-style from-scratch on 363B finance-domain tokens; rare correct choice; usually a fine-tuned frontier FM beats it on cost/quality |
+
+---
+
 ## ✏️ Quick Self-Check
 
 1. 4 customization approaches + cost order? ___

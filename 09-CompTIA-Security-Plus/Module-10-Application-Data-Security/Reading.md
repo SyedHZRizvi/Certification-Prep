@@ -2,6 +2,12 @@
 
 > **Why this module matters:** This module pulls together SDLC, secure coding, app testing (SAST/DAST/SCA), data classification, encryption states, DLP, and tokenization/masking. It spans Domain 3 and Domain 4 and is heavily tested in scenarios. It's also where the highest-paying jobs live (DevSecOps, AppSec).
 
+> **Prerequisites for this module.** Before starting, you should be comfortable with:
+> - [Web vulnerabilities / OWASP Top 10](../Module-05-Vulnerabilities-Attacks/Reading.md) — this module covers *prevention* (SAST/DAST/SCA) of the vulns Module 5 covered as attacks.
+> - [Cryptographic primitives + data-at-rest/in-transit](../Module-02-Cryptography-PKI/Reading.md) — needed for the data-states + encryption/tokenization/masking distinctions.
+> - [Cloud / IaC concepts](../Module-07-Endpoint-Mobile-Cloud-Security/Reading.md) — needed for CI/CD pipeline security.
+> - [Privacy regulations (GDPR, HIPAA, PCI-DSS)](../Module-09-GRC-Risk-Compliance/Reading.md) — drive data-classification and DLP requirements.
+
 ---
 
 ## 🍕 A Story: Two Bakeries, Two Approaches To Recipes
@@ -44,12 +50,15 @@ Bakery B is doing **secure SDLC + DevSecOps**. Bakery A is doing what most compa
 | **Retire** | Sanitize data, revoke access, decommission |
 
 ### Threat Modeling (often referenced)
+
+Citations: **STRIDE** was developed at Microsoft by **Loren Kohnfelder and Praerit Garg** ("The Threats To Our Products," internal Microsoft memo, **1999**) and codified externally by Howard & LeBlanc in *Writing Secure Code* (Microsoft Press, 2002). **PASTA** is from **Tony UcedaVélez and Marco M. Morana**, *Risk Centric Threat Modeling: Process for Attack Simulation and Threat Analysis* (Wiley, 2015, ISBN 978-0470500965). **DREAD** was also a Microsoft methodology, later largely deprecated by Microsoft itself (2010s) due to subjective scoring. **Attack Trees** were popularized by **Bruce Schneier** in *Secrets and Lies* (Wiley, 2000, ISBN 978-0471253112).
+
 | Methodology | Use |
 |-------------|-----|
-| **STRIDE** | Spoofing, Tampering, Repudiation, Info disclosure, DoS, Elevation of privilege |
-| **PASTA** | Process for Attack Simulation and Threat Analysis |
-| **DREAD** | Damage, Reproducibility, Exploitability, Affected users, Discoverability |
-| **Attack Trees** | Visualization of attack paths |
+| **STRIDE** (Kohnfelder & Garg, Microsoft 1999) | Spoofing, Tampering, Repudiation, Info disclosure, DoS, Elevation of privilege |
+| **PASTA** (UcedaVélez & Morana, 2015) | Process for Attack Simulation and Threat Analysis |
+| **DREAD** (Microsoft, 2000s) | Damage, Reproducibility, Exploitability, Affected users, Discoverability (deprecated for scoring, sometimes still used as a categorization mnemonic) |
+| **Attack Trees** (Schneier, *Secrets and Lies*, 2000) | Visualization of attack paths |
 
 ---
 
@@ -266,6 +275,28 @@ A PBQ might ask you to drag activities into the right pipeline stages (Commit �
 
 ---
 
+## 📊 Case Study — Twitter / X API Email Leak (January 2023)
+
+**Situation.** Between **June 2021** and **January 2022**, an authorization-check bug in Twitter's user-lookup REST API endpoint (`POST /1.1/account/login_verification.json` and related endpoints) returned an authenticated user's email address and phone number even when those fields were configured as private in user privacy settings. Twitter (now X) fixed the bug **upon HackerOne disclosure in January 2022**. The HackerOne report was paid out under Twitter's bug-bounty program. Standard bug-bounty disclosure: report → fix → reward → public eventually.
+
+**Decision.** Twitter's response was *technically correct* (fix the bug; pay the bounty; do not disclose to users). But during the **8-month exposure window**, multiple attackers had independently discovered the same bug and *scraped* the API en masse — submitting **hundreds of millions of email addresses** against the endpoint and recording which ones produced matched Twitter accounts. The attackers then compiled the result into massive **email-to-Twitter-handle correlation lists**. Twitter did not detect the volumetric API abuse during the window — there was no API rate-limit / anomaly-detection capable of catching it because the API was *designed* to handle high-volume lookups, and the attackers used many residential-IP proxies.
+
+**Outcome.** The first datasets surfaced on hacker forums in **July 2022** (~5.4M user records offered for sale). The full scope became clear when, in **January 2023**, another actor dumped a **~200M-record correlated dataset** (Twitter handle ↔ email) free on a public hacker forum. (Some reports said 235M; many records were duplicates.) Twitter's December 2022 official statement said the bug had been fixed and "there is no evidence that data was taken." The January 2023 dump made that statement obviously false; the company quietly amended it. The Irish Data Protection Commission (DPC) opened a GDPR investigation; the FTC opened an inquiry under Twitter's 2011/2022 consent decree. Twitter (under new ownership) was later fined €450,000 by the Irish DPC for the breach disclosure issues (December 2023). The downstream effects — using the email-to-handle map to deanonymize pseudonymous Twitter accounts of journalists, activists, and dissidents — continue into 2026. Some reports tied the data to subsequent targeted-phishing campaigns and to physical-safety incidents for activists in restrictive regimes.
+
+**Lesson for the exam / for practitioners.** Module 10 (and adjacent Modules 5/8/9) concepts are illustrated end-to-end:
+- **Authorization design failure (OWASP A01: Broken Access Control).** The API trusted the *requester* (any authenticated Twitter user) rather than checking whether the *target user* had made their info public. A textbook IDOR / broken access-control issue. Sec+ tests this in OWASP-Top-10 questions.
+- **Detection failure — API security telemetry.** Twitter's monitoring lacked **API-level anomaly detection** (rate limits per token, behavioral analytics on lookup volumes per principal). Modern **CASB**/**API gateways** with anomaly detection (Salt Security, Noname Security, etc.) plus **CSPM/CIEM** for cloud-API-policy posture would have caught the volumetric abuse. Sec+ tests this as "what control would have detected?"
+- **Data classification + privacy regulation.** Emails linked to pseudonymous handles are **personal data** under GDPR Article 4(1). The breach triggered GDPR breach-notification (Article 33: 72-hour notification) — which Twitter mishandled. Sec+ Module 9 concepts.
+- **SDLC / DAST gap.** Authorization tests at the API layer are notoriously weak in standard DAST (Module 10). **API security testing** is an emerging discipline (OWASP API Security Top 10 2023 lists authorization failures as #1, #3, and #5). The exam asks "what testing would have caught this?" — answer: API-specific DAST + manual penetration test + threat modeling.
+- **Bug-bounty disclosure asymmetry.** The bounty paid in January 2022 patched the bug, but the *bug had been exploited for months prior*. Bug-bounty programs cover the future; they don't cover the past. Sec+ Domain 5 vendor-risk concepts cover this disclosure-pipeline issue.
+
+**Discussion (Socratic).**
+- **Q1:** Twitter's December 2022 statement said "no evidence data was taken" — which was true *only because Twitter had insufficient logs to detect the data exfiltration*. Is "no evidence" disclosure honesty or PR misdirection? Build the strongest argument both ways, then propose a standardized regulatory-disclosure language ("we have not detected exfiltration; our detection capabilities for this vector are: X").
+- **Q2:** The bounty program incentivized the *original* discoverer to disclose responsibly, but did not deter independent re-discoverers from exploiting silently. Design a complementary control architecture: bug-bounty program + ... ? Defend each addition against a budget objection.
+- **Q3:** GDPR's 72-hour breach-notification rule (Article 33) starts when the controller becomes *aware* of a breach. Twitter "became aware" in 2022 (bug fix) but didn't *believe* data had been taken until 2023. At what point should the 72-hour clock have started? Argue both sides with reference to the EDPB's Guidelines 9/2022 on Personal Data Breach Notification.
+
+---
+
 ## ⚠️ Exam Traps & Common Misconceptions
 
 | Misconception | Reality |
@@ -362,13 +393,39 @@ You now know:
 6. 🧪 Take the **[Final Mock Exam](../Practice-Exams/Final-Mock-Exam.md)** — 90 questions, 90 minutes
 7. 📚 Re-watch Professor Messer's full SY0-701 playlist if time
 8. 🎯 **Book the real exam** when you score 85%+ on the Final Mock
+9. 🧠 Pivot to the **[Capstone Project](../Capstone-Project.md)** for cross-domain application
+
+> **Where this leads.**
+> - Inside this course: the [Capstone Project](../Capstone-Project.md) integrates every module — this is the last reading before the integrative exercise. The [Recommended Readings](../Recommended-Readings.md) deepen any of the topics covered.
+> - Cross-course: AWS SAA (course 04) covers AWS-native SAST/DAST integrations (CodeGuru, Inspector, GuardDuty); Azure courses cover Defender for Cloud. AI courses 07/08 introduce LLM-specific application-security concerns (prompt injection, training-data poisoning) building on OWASP LLM Top 10 (2023).
+> - Practice: Practice Exam 2 has ~11 application/data questions; Final Mock has ~12.
 
 ---
 
 ## 📚 Further Reading (Optional)
 
-- 📖 [OWASP Application Security Verification Standard (ASVS)](https://owasp.org/www-project-application-security-verification-standard/)
-- 📖 [NIST SP 800-218 — Secure Software Development Framework (SSDF)](https://csrc.nist.gov/publications/detail/sp/800-218/final)
-- 📖 [SLSA — Supply-chain Levels for Software Artifacts](https://slsa.dev/)
-- 📖 [CISA Secure-by-Design pledge](https://www.cisa.gov/securebydesign)
+**Primary sources / standards:**
+- 📄 NIST SP 800-218 (2022). [*Secure Software Development Framework (SSDF) v1.1*](https://csrc.nist.gov/publications/detail/sp/800-218/final). (US federal SDLC baseline; supports EO 14028.)
+- 📄 OWASP. [*Application Security Verification Standard (ASVS) v4.0.3*](https://owasp.org/www-project-application-security-verification-standard/) (2021).
+- 📄 OWASP API Security Top 10 (2023). [owasp.org/API-Security](https://owasp.org/API-Security/).
+- 📄 OWASP Top 10 for LLM Applications (2023) — the new AI/LLM-focused vulnerability list.
+- 📄 [SLSA — Supply-chain Levels for Software Artifacts](https://slsa.dev/) — provenance/integrity framework (Google + Linux Foundation).
+- 📄 [CISA Secure-by-Design pledge](https://www.cisa.gov/securebydesign) (2024).
+- 📄 ISO/IEC 27034 — Application Security. ISO/IEC 27018 — PII in public clouds.
+- 📄 NIST SP 800-122 — Guide to Protecting the Confidentiality of PII.
+
+**Threat-modeling primary sources:**
+- 📖 Howard, M. & LeBlanc, D. (2002). *Writing Secure Code* (2nd ed.). Microsoft Press. (STRIDE.)
+- 📖 UcedaVélez, T. & Morana, M. (2015). *Risk Centric Threat Modeling: PASTA Methodology*. Wiley. (PASTA.)
+- 📖 Schneier, B. (2000). *Secrets and Lies: Digital Security in a Networked World*. Wiley. (Attack trees + canonical security-thinking text.)
+- 📖 Shostack, A. (2014). *Threat Modeling: Designing for Security*. Wiley. (Modern Microsoft-aligned treatment.)
+
+**Case-study sources (Twitter API leak):**
+- 📄 Twitter/X public statements (December 2022, January 2023).
+- 📄 Irish Data Protection Commission. Investigation closure, December 2023. (€450,000 fine.)
+- 📄 HackerOne disclosure record HackerOne #1454956 (related to the original disclosure).
+
+**Practitioner / hands-on:**
+- 📖 [PortSwigger Web Security Academy](https://portswigger.net/web-security) — Authorization labs are particularly relevant.
 - 📖 [Microsoft Threat Modeling Tool guidance](https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool)
+- 📖 The OWASP Cheat Sheet Series — short reference sheets on every Top-10 risk.

@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~55 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+SY0-701+Authentication+factors" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+SY0-701+Authentication+factors" data-video-id="MpIzA4fNWew" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 9 min · The 5 factors</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+SY0-701+SAML+OAuth+OpenID" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+SY0-701+SAML+OAuth+OpenID" data-video-id="R8Mw3XJ1dlA" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 11 min · Protocol comparison</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+SY0-701+Access+Control+DAC+MAC+RBAC+ABAC" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+SY0-701+Access+Control+DAC+MAC+RBAC+ABAC" data-video-id="9ANHcZwJfdQ" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 10 min · The 5 models</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Dion+Training+Kerberos+explained" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Dion+Training+Kerberos+explained" data-video-id="5N242XcKAsM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~30 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+SY0-701+RADIUS+TACACS" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+SY0-701+RADIUS+TACACS" data-video-id="JynPMcC4XmI" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 7 min · Network AAA</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=NetworkChuck+passkeys+FIDO2+webauthn" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=NetworkChuck+passkeys+FIDO2+webauthn" data-video-id="xYfiOnufBSk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 14 min · Future of passwords</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Privileged+Access+Management+PAM+explained" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Privileged+Access+Management+PAM+explained" data-video-id="VBmpdzLYB5Q" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Hammond+kerberoasting+attack" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Hammond+kerberoasting+attack" data-video-id="tRCvagjqx3c" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 18 min · See an attack on AD</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=IppSec+active+directory+pass+the+hash" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=IppSec+active+directory+pass+the+hash" data-video-id="YVhlfUvsqYc" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 20 min · HackTheBox walkthrough</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SCIM+provisioning+demo+SaaS" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=SCIM+provisioning+demo+SaaS" data-video-id="GMunhcCk418" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

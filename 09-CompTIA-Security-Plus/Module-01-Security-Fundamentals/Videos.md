@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~50 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+SY0-701+CIA+Triad" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+SY0-701+CIA+Triad" data-video-id="SBcDGb9l6yo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 7 min · The core 3</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+SY0-701+Security+Controls" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+SY0-701+Security+Controls" data-video-id="STM3EUvL7wg" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 9 min · The 4×6 grid</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+SY0-701+Zero+Trust" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+SY0-701+Zero+Trust" data-video-id="zC_Pndpg8-c" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 11 min · PEP / PE / PA</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Dion+Training+Security+Plus+AAA+Authentication" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Dion+Training+Security+Plus+AAA+Authentication" data-video-id="AhaZtj5P2a8" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~25 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+SY0-701+Change+Management" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+SY0-701+Change+Management" data-video-id="48wRbMdHFVI" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 10 min · CAB, backout, dependencies</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=NetworkChuck+Zero+Trust+explained" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=NetworkChuck+Zero+Trust+explained" data-video-id="1lZ3FQSv-wI" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 12 min · Great intro vibes</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Mike+Chapple+Security+Plus+Non-Repudiation" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Mike+Chapple+Security+Plus+Non-Repudiation" data-video-id="XxnCxPEllMg" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=NIST+800-207+Zero+Trust+Architecture+walkthrough" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=NIST+800-207+Zero+Trust+Architecture+walkthrough" data-video-id="IdWTu1s0vcY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 25 min · The authoritative source</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Hammond+gap+analysis+security" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Hammond+gap+analysis+security" data-video-id="cuTVyyS5C7M" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 15 min · Real-world examples</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=David+Bombal+security+controls+examples" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=David+Bombal+security+controls+examples" data-video-id="puRXMXOtmXc" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

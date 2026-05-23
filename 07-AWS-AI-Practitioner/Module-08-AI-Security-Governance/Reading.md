@@ -2,6 +2,13 @@
 
 > **Why this module matters:** Domain 5 ("Security, Compliance & Governance for AI Solutions") is the final 14% of the exam. It overlaps significantly with general AWS security, but with an AI twist: IAM for Bedrock and SageMaker, VPC endpoints for Bedrock, KMS keys for custom models, audit trails for AI APIs, shared responsibility *for AI*, and the regulations that bite (HIPAA, GDPR). Strong showing here also gives you confidence for the broader AWS security knowledge most cloud roles need.
 
+> **Prerequisites for this module.** Before starting, you should be comfortable with:
+> - [Module 4: AWS GenAI Stack](../Module-04-AWS-GenAI-Stack/Reading.md) — Amazon Bedrock, model providers
+> - [Module 7: Responsible AI](../Module-07-Responsible-AI/Reading.md) — Guardrails, Model Cards, NIST AI RMF, EU AI Act
+> - Basic AWS security vocabulary: IAM roles, KMS keys, S3 encryption, VPC, security groups
+>
+> If [`04-AWS-Solutions-Architect-Associate`](../../04-AWS-Solutions-Architect-Associate/) Module 5 (IAM) and Module 7 (VPC + PrivateLink) are fresh, you're ready. If not, this module will move quickly through patterns those courses unpack at depth.
+
 ---
 
 ## 🍕 A Story: When a Helpful Chatbot Leaked the Customer List
@@ -268,6 +275,45 @@ This single architecture answers about 60% of Domain 5 scenario questions.
 
 ---
 
+## 📊 Case Study — Samsung's ChatGPT Source-Code Leak Ban (Apr 2023)
+
+**Situation.** In early 2023, Samsung Electronics' semiconductor division — one of the world's most strategically sensitive engineering operations — quietly began allowing engineers to use public ChatGPT to help with their work. Within three weeks (March 2023), three separate incidents were documented internally:
+1. An engineer pasted proprietary source code from a *new* semiconductor manufacturing program into ChatGPT to ask the model to debug it.
+2. Another engineer pasted internal *test sequences for chip yield optimization* into ChatGPT to ask it to make the code more efficient.
+3. A third engineer pasted *meeting recording transcripts* from an internal product meeting and asked ChatGPT to summarize them.
+
+In each case, the data went to OpenAI's servers, where (under OpenAI's then-default terms) it could be retained, reviewed, and potentially used to improve the model. The data left Samsung's security perimeter. Once data is in a third-party LLM's training pipeline, *deleting* it is non-trivial — modern LLMs don't have a clean "forget this customer" button.
+
+**Decision.** Samsung's response, announced internally in late March / publicly via Bloomberg and *The Economist Korea* in May 2023:
+- **Immediate ban on public-generative-AI use** (ChatGPT, Google Bard at the time, similar tools) on Samsung-owned devices and corporate networks
+- Strict policy: any engineer found uploading proprietary information to a third-party AI tool would face *disciplinary action up to and including termination*
+- Per-prompt size limit of 1024 bytes for *any* sanctioned external AI use (to prevent code-paste leaks)
+- Internal R&D effort to build a *Samsung-internal* generative AI alternative, eventually announced as Samsung Gauss (Nov 2023) — usable inside the perimeter
+- Procurement direction: prefer enterprise contracts (Microsoft Azure OpenAI, Amazon Bedrock, Anthropic enterprise terms) for *any* business use of LLMs, because they offer contractual no-train-on-customer-data guarantees
+
+**Outcome.** Within 12 months:
+- Nearly every Fortune 500 enterprise had a documented "internal AI use policy" — many borrowed Samsung's language verbatim
+- Public-LLM adoption velocity slowed in regulated industries while enterprise contracts (Bedrock, Azure OpenAI, Anthropic Workspaces) accelerated
+- Microsoft and OpenAI rolled out **ChatGPT Enterprise** (Aug 2023) with explicit no-train-on-customer-data terms and SOC 2 Type 2 compliance, directly in response to incidents like Samsung's
+- AWS leaned into Bedrock's *default* no-train-on-customer-data posture as a competitive advantage; data residency in customer Region and customer-managed KMS keys became standard talking points
+- Cybersecurity vendors built a new product category — *AI data loss prevention* — to detect and block proprietary data being pasted into public LLM interfaces
+
+**Lesson for the exam / for practitioners.** Five AIF-C01 talking points anchor here:
+1. **The biggest GenAI security risk is *not* prompt injection or model extraction — it's the well-meaning employee.** The vast majority of incidents are insider-mistake exfiltration via public LLM interfaces. The mitigation isn't algorithmic; it's *policy + enterprise-contracted alternative + DLP at the egress*. The exam tests this through "which architecture prevents data leakage?" scenarios — answer: enterprise Bedrock + IAM + PrivateLink + invocation logging + Guardrails PII filter.
+2. **Bedrock's *default* contractual posture is the answer to Samsung's class of incident.** AWS publishes that customer prompts and outputs are not used to train base models, data stays in the customer's Region/account, and customer-managed KMS keys are recommended for custom models. The exam tests this verbatim — Q15 of Module 4's quiz, Q9 of Module 8's quiz, plus PE questions.
+3. **PrivateLink for Bedrock is the network-layer companion.** TLS-encrypted public-internet traffic was good enough for *most* SaaS — but for sensitive workloads, customers want the additional assurance that traffic *never leaves the AWS backbone*. The exam loves this pattern: "How do you keep Bedrock traffic off the public internet?" → **PrivateLink VPC Interface Endpoint**.
+4. **Invocation logging is the audit trail.** Post-Samsung, every regulated industry wants the ability to answer "show me everything every employee sent to and received from a Bedrock model in the last 18 months." That's **Bedrock model invocation logging → S3 (KMS) + CloudWatch Logs**. CloudTrail captures only the API metadata; invocation logging captures the *content*.
+5. **The Italian DPA's temporary GDPR ban on ChatGPT (Mar 2023)** preceded Samsung by a month, for related reasons: lack of lawful basis, no age gate, no data subject rights. The Italian regulator's intervention shifted enterprise procurement preferences toward services that *built in* compliance posture (Bedrock, Azure OpenAI). This is the European parallel to Samsung's incident.
+
+**Discussion (Socratic).**
+- Q1: Samsung's ban was effective at stopping the leak class of incident but came at a *productivity* cost (their engineers were genuinely getting value from ChatGPT before the ban). Sketch the *better* policy: how would you allow LLM use while preventing the Samsung incident? Use AWS-native primitives in your answer.
+- Q2: A startup CISO reads the Samsung case and writes a one-line policy: "No employee may use any AI tool that's not explicitly approved." Six months later, employees are using personal accounts on personal devices, and 40% of the company is doing so. What's the *failure mode* of strict bans, and what's the alternative posture?
+- Q3: The Italian DPA's GDPR action on ChatGPT and the Samsung ban happened within a month of each other. Argue that they were *the same incident* (different surface, same root cause) and what AWS-architecture posture addresses both.
+- Q4: Imagine Samsung today (2026) decides to standardize on Amazon Bedrock + Claude. Sketch the 5-control rollout: (1) IAM resource-level policies, (2) PrivateLink + VPC endpoint policies, (3) invocation logging, (4) Guardrails (which filters?), (5) something for the human/policy layer. For each, name the specific AWS feature and a concrete configuration choice.
+- Q5: The 1024-byte per-prompt limit Samsung initially imposed is comically small — it would block almost any real engineering use. Argue that it was the *right* call as a stopgap, and design the *graduated* relaxation: when do you raise it to 4K, 32K, full context? What evidence would you need before each raise?
+
+---
+
 ## ✅ Module 8 Summary
 
 You now know:
@@ -287,6 +333,23 @@ You now know:
 3. 📋 Review [`Cheat-Sheet.md`](./Cheat-Sheet.md)
 4. 🧪 Take [**Practice Exam 2**](../Practice-Exams/Practice-Exam-2.md) — you've now covered all 5 domains
 5. 🧪 Then take the [**Final Mock Exam**](../Practice-Exams/Final-Mock-Exam.md) 2–3 days before the real exam
+
+---
+
+> **Where this leads.**
+> - Inside this course: This is the final module. From here, your prep is *practice exams + the Capstone Project + the Recommended Readings list*.
+> - Cross-course: `04-AWS-Solutions-Architect-Associate` deepens IAM, KMS, PrivateLink, and VPC; `09-CompTIA-Security-Plus` covers the general security frameworks (NIST CSF, ISO 27001, MITRE ATT&CK) that complement AI-specific governance.
+> - Practice: Practice Exam 2 has 10+ Domain-5 questions; the Final Mock Exam tests cross-domain integration; the **Capstone Project** at the course root requires you to design a complete secure Bedrock architecture.
+
+---
+
+## 💬 Discussion — Socratic prompts
+
+1. **Shared Responsibility — the AI twist.** AWS's classic Shared Responsibility Model was clear for IaaS. For Bedrock, draw the new lines: what's AWS responsible for, what's the model provider (Anthropic, Meta, Mistral) responsible for, and what's the customer responsible for? Where do the seams create *ambiguity* in practice (e.g., who's responsible when a model hallucinates harmful advice)?
+2. **PrivateLink's *cost*.** PrivateLink VPC Interface Endpoints aren't free — they're priced per endpoint-hour plus per GB. At what monthly Bedrock spend does PrivateLink overhead become noise vs material? When is *not* using PrivateLink the right call?
+3. **CloudTrail vs invocation logging — the audit-cost debate.** A compliance officer wants "every prompt and response from every Bedrock call logged for 7 years." What's the storage cost (estimated) for a mid-size deployment, and what's the *retention-tiering* strategy? At what point does the cost itself force a more surgical logging policy?
+4. **The "we use Bedrock so we're HIPAA-compliant" fallacy.** A Director of Engineering announces: "We're on Bedrock and it's HIPAA-eligible, so we're HIPAA-compliant." What are *three* things they still need that the HIPAA-eligibility checkbox does not provide? Explicitly map each to NIST AI RMF or HIPAA Security Rule sections.
+5. **Insecure tool use in Bedrock Agents — the *real* security risk of 2025–2026.** Bedrock Agents (Module 5) execute actions via Lambda or API calls. An over-permissive action group is one prompt injection away from a real-world incident. Walk through the *least-privilege* design for an agent's Lambda execution role, the allow-list pattern for tool calls, and the approval-gate pattern for sensitive actions. How would you red-team your own agent before production?
 
 ---
 

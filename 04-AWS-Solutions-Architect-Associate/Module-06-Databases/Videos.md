@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~80 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+RDS+Multi-AZ+vs+Read+Replicas" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="1tQhyK5wBAc" href="https://www.youtube.com/results?search_query=AWS+RDS+Multi-AZ+vs+Read+Replicas" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🛢️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 15 min · HA vs read scaling</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Aurora+architecture+explained+AWS" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="I4uOEoUYPC8" href="https://www.youtube.com/results?search_query=Aurora+architecture+explained+AWS" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🌿</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 20 min · The 6-way storage</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=DynamoDB+deep+dive+capacity+modes" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="lZ_-evQM2cM" href="https://www.youtube.com/results?search_query=DynamoDB+deep+dive+capacity+modes" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>⚡</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 25 min · End-to-end</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=ElastiCache+Redis+vs+Memcached" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="aV7hvL7_7U4" href="https://www.youtube.com/results?search_query=ElastiCache+Redis+vs+Memcached" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🔥</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~45 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=DynamoDB+DAX+vs+ElastiCache" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="kjquJMOqi_M" href="https://www.youtube.com/results?search_query=DynamoDB+DAX+vs+ElastiCache" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>💨</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 14 min · Microsecond reads</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Redshift+architecture+overview" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="dzqHYjXOg24" href="https://www.youtube.com/results?search_query=AWS+Redshift+architecture+overview" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>📊</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 18 min · MPP data warehouse</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+RDS+Proxy+Lambda+demo" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="dgj9cvqgYYs" href="https://www.youtube.com/results?search_query=AWS+RDS+Proxy+Lambda+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🔌</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Amazon+Neptune+graph+database+demo" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="Y6jbFC8tvVw" href="https://www.youtube.com/results?search_query=Amazon+Neptune+graph+database+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🕸️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 18 min · Social graphs</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Amazon+Timestream+IoT+time+series" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="kQ8Q5Dsb-6E" href="https://www.youtube.com/results?search_query=Amazon+Timestream+IoT+time+series" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>⏲️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 14 min · Time-series done right</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Amazon+QLDB+ledger+database" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="0WtPYMLUs7c" href="https://www.youtube.com/results?search_query=Amazon+QLDB+ledger+database" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>📜</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

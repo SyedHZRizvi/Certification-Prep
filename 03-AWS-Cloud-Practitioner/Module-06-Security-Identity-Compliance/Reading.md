@@ -2,6 +2,15 @@
 
 > **Why this module matters:** Security & Compliance is **30% of the exam** — the LARGEST domain. If you only deeply learn one module, make it this one. The Shared Responsibility Model alone will appear in 4–6 questions.
 
+> **Prerequisites for this module.** Before starting, you should be comfortable with:
+> - [Cloud Fundamentals](../Module-01-Cloud-Fundamentals/Reading.md) — IaaS vs PaaS vs SaaS (the boundary that the Shared Responsibility Model rides on)
+> - [Core Storage](../Module-03-Core-Storage/Reading.md) — what an S3 bucket policy is
+> - [Networking](../Module-04-Networking-CDN/Reading.md) — Security Groups, NACLs, VPCs
+> - The general security mental model: confidentiality, integrity, availability — the **CIA Triad** (Saltzer & Schroeder, *"The Protection of Information in Computer Systems,"* Proceedings of the IEEE, 1975)
+> - Authentication vs authorization (CompTIA Security+ chapter 1 level is plenty)
+>
+> If you're familiar with the term "least privilege" and have ever set up a router firewall, you have enough background.
+
 ---
 
 ## 🏦 A Story: The Bank Vault Analogy
@@ -20,6 +29,9 @@ Memorize this analogy. The exam will test it half a dozen ways.
 ---
 
 ## 🛡️ The Shared Responsibility Model (THE MOST-TESTED CONCEPT)
+
+The Shared Responsibility Model is AWS's formal articulation of the security boundary between cloud provider and customer. AWS first published it as a whitepaper in 2011 (*"Amazon Web Services: Overview of Security Processes,"* AWS Whitepapers) and has refreshed it most recently in 2024. The same pattern appears in Microsoft's *Azure Shared Responsibility Model* (Microsoft Docs, 2017) and Google's *GCP Shared Responsibility Matrix* — but AWS's version is the most-tested on the exam.
+
 
 ```
    ┌─────────────────────────────────────────────────┐
@@ -63,6 +75,8 @@ Memorize this analogy. The exam will test it half a dozen ways.
 ---
 
 ## 👤 AWS IAM (Identity & Access Management)
+
+IAM operationalizes the **principle of least privilege** — articulated by Jerome Saltzer and Michael Schroeder in *"The Protection of Information in Computer Systems"* (Proceedings of the IEEE, 1975). Their eight design principles for security (least privilege, fail-safe defaults, complete mediation, open design, separation of privilege, least common mechanism, psychological acceptability, work factor) are the philosophical bedrock of every modern IAM system. CompTIA Security+ tests them by name; CLF-C02 tests them by application.
 
 **IAM = the front door of AWS.** Every API call to AWS must be authenticated and authorized.
 
@@ -295,6 +309,45 @@ You download reports from **AWS Artifact** (no fee, self-service).
 
 ---
 
+## 🏛️ Case Study — The Capital One Breach (March–July 2019)
+
+**Situation.** Capital One was mid-migration to AWS (see Module 1's case). The bank's web application firewall (WAF) was hosted on EC2 in front of internal services. The WAF instance had an IAM role attached granting it permissions to list and read S3 buckets in the Capital One AWS account. The role was **over-permissioned** — it could read essentially every customer-data bucket, not just the buckets the WAF legitimately needed.
+
+In March 2019, a former AWS engineer named Paige Thompson — who had left AWS in late 2016 — discovered a **Server-Side Request Forgery (SSRF)** vulnerability in Capital One's misconfigured WAF. SSRF lets an attacker trick a web server into making HTTP requests on the attacker's behalf. Thompson used SSRF to query the EC2 Instance Metadata Service (IMDS v1, which doesn't require session tokens) at `http://169.254.169.254/latest/meta-data/iam/security-credentials/[role-name]`, retrieving temporary credentials for the WAF's IAM role.
+
+**Decision (the breach steps).** Once Thompson had the IAM credentials:
+1. She used the AWS CLI from her own machine, authenticated as the WAF role, to list all S3 buckets in the Capital One account (`aws s3 ls`).
+2. She used `aws s3 sync` to download ~30 GB of S3 data including ~106 million applicant records from a credit-card-application bucket.
+3. She posted snippets on GitHub and a public Slack channel, where another security researcher noticed and reported it to Capital One on July 17, 2019.
+
+**Outcome.** Capital One disclosed the breach July 29, 2019. The damage:
+- ~106 million customers affected (US + Canada)
+- ~140,000 SSN exposures, ~80,000 bank account numbers, ~1M Canadian SIN numbers
+- **$80M civil penalty from the OCC** (Office of the Comptroller of the Currency) in 2020
+- **~$190M+ in customer settlement** (2021 class-action approval)
+- Paige Thompson convicted in 2022 (wire fraud + unauthorized access), sentenced to time served plus 5 years probation
+- The breach is now case study #1 in essentially every cloud-security curriculum
+
+**Root cause analysis (what AWS did vs what the customer did).**
+- AWS infrastructure was **not** breached. The hypervisor, the underlying EC2 hardware, the AWS network, the AWS IAM service all functioned correctly. They authenticated and authorized exactly what they were told to.
+- The customer was responsible for:
+  1. The WAF misconfiguration (the SSRF vulnerability)
+  2. The over-permissioned IAM role (violated least privilege — Saltzer & Schroeder, 1975)
+  3. The choice to use IMDS v1 (which AWS had already announced was being deprecated in favor of IMDS v2's session-token model — released November 2019, three months after the breach)
+  4. Insufficient detective controls (GuardDuty was apparently not configured to alert on anomalous S3 listing patterns; CloudTrail logs existed but weren't being monitored in near-real-time)
+
+**Lesson for the exam / for practitioners.** Capital One is *the* canonical illustration of the Shared Responsibility Model. On CLF-C02, expect 3–5 questions where the exam asks "who is responsible for X?" — and the answer is "the customer" because **the breach mechanism (misconfigured WAF + over-permissioned IAM + slow detection) is entirely on the customer side of the boundary**. Practitioners take three operational lessons:
+1. **Least privilege isn't a slogan — it's a control**. The WAF role should have been limited to one bucket, not all buckets.
+2. **IMDS v2 is now the default**. Force it on; block IMDS v1 at the org level via SCP.
+3. **GuardDuty + Macie + automated alerting** would have flagged the bulk-S3-download pattern in hours, not weeks.
+
+**Discussion (Socratic).**
+- Q1: Capital One's lawyers argued in court that AWS bore partial responsibility because IMDS v1 was the default at the time. AWS argued the customer chose the WAF configuration and the IAM permissions. Who is right? At what point does "the default" of the platform become the provider's responsibility vs the customer's?
+- Q2: Imagine you are the new CISO at Capital One in August 2019. Build a 30-day plan to ensure this exact attack class cannot happen again. What's the *first* thing you change? Defend the ordering.
+- Q3: GuardDuty *would* have detected this pattern but Capital One's GuardDuty findings were not being acted on in near-real-time. Is the failure here "Detective controls weren't configured" or "Responsive controls weren't automated"? What's the difference, and which one matters more?
+
+---
+
 ## ✅ Module 6 Summary
 
 You now know:
@@ -304,12 +357,30 @@ You now know:
 - 🔐 KMS for encryption, CloudHSM for FIPS 140-2 L3
 - 🛡️ Security services taxonomy: WAF/Shield (preventive), GuardDuty/Macie/Inspector (detective), Config/CloudTrail (audit), Security Hub (aggregator), Artifact (compliance reports)
 - 📋 Compliance: SOC, ISO, PCI, HIPAA, FedRAMP, GDPR — get reports from Artifact
+- 🚨 The Capital One breach (2019) as the canonical Shared Responsibility cautionary tale
 
 **Next steps:**
 1. 🎥 [Videos](./Videos.md)
 2. ✏️ [Quiz](./Quiz.md)
 3. 📋 [Cheat-Sheet](./Cheat-Sheet.md)
 4. ➡️ [Module 7: Management, Monitoring & Pricing](../Module-07-Management-Monitoring-Pricing/Reading.md)
+
+---
+
+> **Where this leads.**
+> - Inside this course: Module 7 (Mgmt/Monitoring) covers CloudTrail and AWS Config in operational depth — the detective controls Capital One under-used. Module 8 (Well-Architected) revisits Security as one of the 6 pillars.
+> - Cross-course: `04-AWS-Solutions-Architect-Associate` Module 6 deepens with VPC Flow Logs, Network Firewall, AWS WAF rule design, and the SAA-C03 security-specific scenarios. `09-CompTIA-Security-Plus` (SY0-701) Modules 6, 7, and 9 cover IAM, encryption, and incident response from the vendor-neutral side — every concept transfers.
+> - Practice: Practice Exam 2 has 13 security questions (Qs 1–12 + 50). Final Mock Exam has 19 security questions (the largest single domain by question count, ~30% of exam).
+
+---
+
+## 💬 Discussion — Socratic prompts
+
+1. **Root user paradox.** The root user is the most powerful identity in any AWS account, but the official guidance is "almost never use it." If it's that dangerous, why does AWS keep it? Could the root user be eliminated? Argue why AWS keeps it and what the practical workflow looks like.
+2. **SCPs vs IAM policies.** Both restrict permissions. When does an SCP belong at the org level vs an IAM policy at the user/role level? Walk through a concrete scenario where you'd use both layered together.
+3. **GuardDuty vs Inspector vs Macie.** All three are "AWS security services that detect something." Build the decision tree: when does each one win? Where do they overlap?
+4. **Shield Standard vs Shield Advanced economics.** Shield Standard is free. Shield Advanced is ~$3,000/month + traffic. For a typical SaaS doing $10M ARR, when does Shield Advanced become defensible? What's the *threshold event* that justifies the upgrade?
+5. **KMS Customer-Managed Keys vs AWS-Managed Keys.** Both encrypt your data. CMKs let you set rotation, restrict who can use them via key policy, and revoke. When does the additional CMK overhead become necessary vs theater?
 
 ---
 
@@ -320,3 +391,15 @@ You now know:
 - 📖 [AWS Security Whitepaper (Best Practices)](https://docs.aws.amazon.com/whitepapers/latest/aws-security-best-practices/welcome.html)
 - 📖 [AWS Compliance Programs](https://aws.amazon.com/compliance/programs/)
 - 📖 [AWS Artifact](https://aws.amazon.com/artifact/) — download SOC 2, ISO reports
+
+---
+
+## 📚 Further sources (this module)
+
+- ⚖️ ***United States v. Paige Thompson* (US District Court, Western District of Washington, 2019)** — primary-source criminal indictment and trial documents. The complaint is public; pages 4–9 walk through the SSRF + IMDS attack in technical detail.
+- 📰 **Capital One — *"Information on the Capital One Cyber Incident"* (capitalone.com/facts2019, 2019; updated 2020)** — Capital One's own breach disclosure and remediation summary.
+- 📄 **Office of the Comptroller of the Currency — *Consent Order, Capital One, August 2020*** — the OCC's $80M civil penalty and a 17-page list of what Capital One must change. Free PDF on the OCC website.
+- 📄 **Saltzer, J. & Schroeder, M. — *"The Protection of Information in Computer Systems"* (Proceedings of the IEEE, September 1975)** — the foundational paper that defined least privilege, separation of privilege, complete mediation, etc. ~30 pages; still tested by name on CompTIA Security+ and CISSP.
+- 📖 **AWS — *"Security Pillar — AWS Well-Architected Framework"* whitepaper (2024 refresh)** — AWS's own articulation of the Security pillar. Free PDF; ~80 pages.
+- 📖 **AWS Builders' Library — *"My CI/CD pipeline is my release captain"* by Sean Kelly** — explains the deployment-pipeline security controls that, applied to Capital One's stack, would have caught the misconfiguration before production. Free read.
+- 🎓 **CIS Controls v8 + CIS AWS Benchmark v3** (Center for Internet Security, 2024) — free, vendor-neutral baseline of controls that map cleanly to AWS services. The benchmark is the most widely-used hardening checklist after Well-Architected.

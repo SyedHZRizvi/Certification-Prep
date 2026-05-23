@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~70 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+Azure+Backup+RSV+policy" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+Azure+Backup+RSV+policy" target="_blank" rel="noopener" data-video-id="PcJ6fMcrcrg">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 25 min · Vaults, policies, soft delete</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+Azure+Site+Recovery+ASR+overview" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+Azure+Site+Recovery+ASR+overview" target="_blank" rel="noopener" data-video-id="8fvO3WArG-Y">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 22 min · RPO/RTO, failover types</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Adam+Marczak+Azure+Migrate+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Adam+Marczak+Azure+Migrate+tutorial" target="_blank" rel="noopener" data-video-id="x4MMNESP6lw">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 14 min · Discover → Assess → Migrate</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Backup+vs+Site+Recovery+comparison" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Backup+vs+Site+Recovery+comparison" target="_blank" rel="noopener" data-video-id="Tkhj06dqvzY">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~30 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Backup+MUA+multi+user+authorization+resource+guard" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Backup+MUA+multi+user+authorization+resource+guard" target="_blank" rel="noopener" data-video-id="BFhw7SvY0fs">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 11 min · Resource Guard pattern</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Site+Recovery+test+failover+recovery+plan" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Site+Recovery+test+failover+recovery+plan" target="_blank" rel="noopener" data-video-id="wjGY4E2DLaY">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 14 min · Test without breaking prod</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Backup+immutable+vault+ransomware" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Backup+immutable+vault+ransomware" target="_blank" rel="noopener" data-video-id="TYvlCTY94ms">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Migrate+VMware+migration+to+Azure" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Migrate+VMware+migration+to+Azure" target="_blank" rel="noopener" data-video-id="_k0ahnQVCsw">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 16 min · Hands-on appliance</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Backup+MARS+agent+on-prem+files" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Backup+MARS+agent+on-prem+files" target="_blank" rel="noopener" data-video-id="KlDOi5Etu1I">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~52 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=order+to+cash+cycle+explained" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="oXN1aOmcShI" href="https://www.youtube.com/results?search_query=order+to+cash+cycle+explained" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 11 min · 10 steps</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=ATP+CTP+available+to+promise+supply+chain" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="KMJyE17d1j8" href="https://www.youtube.com/results?search_query=ATP+CTP+available+to+promise+supply+chain" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 9 min · Worked example</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=picking+strategies+warehouse+batch+zone+wave" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="vGw2bdEaXtc" href="https://www.youtube.com/results?search_query=picking+strategies+warehouse+batch+zone+wave" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 13 min · Trade-offs explained</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=perfect+order+metric+supply+chain+OTIF" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="hMt93U7zBhU" href="https://www.youtube.com/results?search_query=perfect+order+metric+supply+chain+OTIF" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -61,7 +61,7 @@
       <span class="vg-duration">⏱ 10 min · Multiplicative math</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=EDI+850+855+856+810+supply+chain" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="SIxpEivx9ck" href="https://www.youtube.com/results?search_query=EDI+850+855+856+810+supply+chain" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -75,7 +75,7 @@
 ## 📚 Recommended (~35 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=pick+to+light+voice+picking+warehouse" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="jms3DexfA1Y" href="https://www.youtube.com/results?search_query=pick+to+light+voice+picking+warehouse" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 12 min · Throughput vs CapEx</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=omnichannel+fulfillment+BOPIS+dark+store" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="t4ZN5RzTzSQ" href="https://www.youtube.com/results?search_query=omnichannel+fulfillment+BOPIS+dark+store" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -93,7 +93,7 @@
       <span class="vg-duration">⏱ 14 min · Modern retail flow</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=last+mile+delivery+cost+structure" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="d27jyVwDwnY" href="https://www.youtube.com/results?search_query=last+mile+delivery+cost+structure" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -107,7 +107,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=micro+fulfillment+center+grocery+urban" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="x8JLg36N-NA" href="https://www.youtube.com/results?search_query=micro+fulfillment+center+grocery+urban" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 18 min · Urban fulfillment</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=walmart+OTIF+chargeback+supplier" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="587NLIGVxVc" href="https://www.youtube.com/results?search_query=walmart+OTIF+chargeback+supplier" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -125,7 +125,7 @@
       <span class="vg-duration">⏱ 20 min · Supplier reality</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=goods+to+person+robot+warehouse+Kiva+AutoStore" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="6KRjuuEVEZs" href="https://www.youtube.com/results?search_query=goods+to+person+robot+warehouse+Kiva+AutoStore" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

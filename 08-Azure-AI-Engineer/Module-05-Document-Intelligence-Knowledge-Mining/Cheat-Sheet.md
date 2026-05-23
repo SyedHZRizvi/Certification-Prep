@@ -137,4 +137,48 @@ If you can answer all 5 in 60 seconds, you own Module 5. ✅
 
 ---
 
+## 🧮 Retrieval Quality Knobs
+
+| Knob | Effect on quality | Effect on cost |
+|---|---|---|
+| Chunk size (tokens) | Smaller = sharper retrieval | More chunks → more storage / queries |
+| Chunk overlap | Avoids info splits | Slight ↑ storage |
+| Top-k | Higher = better recall | ↑ context tokens (LLM cost) |
+| Hybrid vs vector-only | Hybrid wins for keyword-precise terms | Marginal ↑ |
+| Semantic re-ranker | Better top-of-list quality | Tier upgrade + per-query cost |
+| Embedding model size | -3-large > -3-small > ada-002 (usually) | ↑ embedding cost + storage |
+
+## 📚 Index Field Decision Matrix
+
+| Need | Set on the field |
+|---|---|
+| Doc returned in results | `retrievable: true` |
+| Searchable text | `searchable: true` + `analyzer` |
+| Numeric range / equality | `filterable: true` |
+| Order results | `sortable: true` |
+| Facet UI ("brand:Apple (32)") | `facetable: true` |
+| Unique ID | `key: true` |
+| Vector | `Collection(Edm.Single)` + `dimensions` + `vectorSearchProfile` |
+
+## 🛡️ Compliance Pattern
+
+| Constraint | Lever |
+|---|---|
+| PHI / GDPR | Private Endpoints + disable public network |
+| Customer KMS | CMK via Key Vault |
+| Data residency | Region pinning (S0+); EU Data Zone for Azure OpenAI |
+| Audit | Diagnostic settings → Log Analytics |
+| Per-document RBAC | Security trimming (filter by user claims) |
+
+## 📖 Citations
+
+| Concept | Source |
+|---|---|
+| HNSW vector algorithm | Malkov & Yashunin (2018), IEEE TPAMI |
+| BM25 keyword scoring | Robertson & Walker (1994), SIGIR |
+| Transformer / embeddings lineage | Vaswani et al. (2017), NeurIPS |
+| Hybrid + semantic gold standard | Microsoft Learn (verified 2026-05) |
+
+---
+
 ➡️ [Module 6: Conversational AI](../Module-06-Conversational-AI/Reading.md)

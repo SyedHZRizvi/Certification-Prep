@@ -72,6 +72,15 @@ The Final-Mock-Exam matches the size and time of **one** real ISM exam. Treat it
 
 ---
 
+## 🎓 Capstone Project + Recommended Readings
+
+This track also includes two course-root resources that go beyond exam preparation:
+
+- 🏆 [**Capstone-Project.md**](./Capstone-Project.md) — A 6-deliverable, 4-8 week scenario where you act as the new VP Supply Management at a $1.4B specialty-foods manufacturer recovering from a sub-tier-caused recall. Builds your portfolio piece and integrates every module. Self-graded with a 7-criterion rubric.
+- 📚 [**Recommended-Readings.md**](./Recommended-Readings.md) — The full canonical bibliography: ISM Mastery Model, Johnson & Leenders, Christopher, Liker's *The Toyota Way*, Goldratt's *The Goal*; seminal HBR papers (Kraljic 1983, Fisher 1997, Hau Lee 2004, Porter, Kotter, Elkington); industry resources (ISM, CIPS, Spend Matters, Procurement Leaders); free academic courses (MIT CTL MicroMasters, Stanford GSB).
+
+---
+
 ## 📖 The Single Most Important Resource
 
 🔗 **The ISM CPSM Study Guide & Body of Knowledge** — buy the latest edition from the ISM bookstore (`ismworld.org`). The three exam blueprints (one per exam) describe every testable topic. If a question in this course contradicts the official ISM blueprint, the ISM blueprint wins.
@@ -79,6 +88,7 @@ The Final-Mock-Exam matches the size and time of **one** real ISM exam. Treat it
 Secondary musts:
 - **ISM Principles of Sustainability & Social Responsibility** (free PDF on ismworld.org)
 - **Incoterms 2020** rules (International Chamber of Commerce)
+- See [Recommended-Readings.md](./Recommended-Readings.md) for the full reference library.
 
 ---
 

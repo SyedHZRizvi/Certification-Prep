@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~45 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Microsoft+Responsible+AI+principles+overview" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Microsoft+Responsible+AI+principles+overview" target="_blank" rel="noopener" data-video-id="UYjj0yJZrwM">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 10 min · The six pillars</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+AI+Content+Safety+demo+walkthrough" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+AI+Content+Safety+demo+walkthrough" target="_blank" rel="noopener" data-video-id="T0eygrQ3cYQ">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 15 min · Text + image + Prompt Shields</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+OpenAI+content+filter+configuration+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+OpenAI+content+filter+configuration+tutorial" target="_blank" rel="noopener" data-video-id="DR9l8gJPfPY">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 12 min · Foundry filter UI</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Prompt+injection+attacks+LLM+defenses+Azure" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Prompt+injection+attacks+LLM+defenses+Azure" target="_blank" rel="noopener" data-video-id="MppNtk31jNY">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~25 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=groundedness+detection+RAG+Azure+AI" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=groundedness+detection+RAG+Azure+AI" target="_blank" rel="noopener" data-video-id="odxAPb0uf34">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 10 min · Detect ungrounded LLM answers</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Responsible+AI+dashboard+Azure+Machine+Learning" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Responsible+AI+dashboard+Azure+Machine+Learning" target="_blank" rel="noopener" data-video-id="hXq-KHHkJvk">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 15 min · Error analysis + interpretability</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=PyRIT+Microsoft+red+team+generative+AI" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=PyRIT+Microsoft+red+team+generative+AI" target="_blank" rel="noopener" data-video-id="oAttV-5rFsI">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Fairlearn+bias+mitigation+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Fairlearn+bias+mitigation+tutorial" target="_blank" rel="noopener" data-video-id="1Au1z9CtLq4">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 25 min · Hands-on</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Microsoft+transparency+note+Azure+AI" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Microsoft+transparency+note+Azure+AI" target="_blank" rel="noopener" data-video-id="q5CbK0Hs1pg">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

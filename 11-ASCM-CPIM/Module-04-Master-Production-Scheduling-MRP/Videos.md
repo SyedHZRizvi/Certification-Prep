@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~70 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Master+Production+Schedule+MPS+example" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="sQsAMNF0c4Y" href="https://www.youtube.com/results?search_query=Master+Production+Schedule+MPS+example" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 18 min · Build an MPS table</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=MRP+Material+Requirements+Planning+calculation+example" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="wf4KYeyMrJA" href="https://www.youtube.com/results?search_query=MRP+Material+Requirements+Planning+calculation+example" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 22 min · The math you must know</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Available+to+Promise+ATP+calculation+CPIM" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="52qA1vKJBwM" href="https://www.youtube.com/results?search_query=Available+to+Promise+ATP+calculation+CPIM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 14 min · The ATP exam pattern</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Demand+Time+Fence+Planning+Time+Fence+MPS" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="J5f-bCkKC5U" href="https://www.youtube.com/results?search_query=Demand+Time+Fence+Planning+Time+Fence+MPS" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~40 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Bill+of+Materials+BOM+low+level+coding" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="GouWNPZbKe0" href="https://www.youtube.com/results?search_query=Bill+of+Materials+BOM+low+level+coding" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 12 min · Why MRP needs it</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Lot+sizing+rules+L4L+EOQ+POQ" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="B-W2P4pSsJQ" href="https://www.youtube.com/results?search_query=Lot+sizing+rules+L4L+EOQ+POQ" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 14 min · Trade-offs explained</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=MRP+action+messages+reschedule+release" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="JwSx4O3DkZ4" href="https://www.youtube.com/results?search_query=MRP+action+messages+reschedule+release" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=DDMRP+Demand+Driven+MRP+explained" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="6XT_w9JYMLU" href="https://www.youtube.com/results?search_query=DDMRP+Demand+Driven+MRP+explained" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 25 min · The modern variant</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Capable+to+Promise+CTP+vs+ATP" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="KMJyE17d1j8" href="https://www.youtube.com/results?search_query=Capable+to+Promise+CTP+vs+ATP" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 12 min · The promise hierarchy</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Two+level+MPS+ATO+modules+final+assembly" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="rGJV7ZWX-To" href="https://www.youtube.com/results?search_query=Two+level+MPS+ATO+modules+final+assembly" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

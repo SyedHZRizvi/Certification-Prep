@@ -50,7 +50,19 @@ By the end of this track, you'll be able to:
 | [Practice-Exam-2](./Practice-Exams/Practice-Exam-2.md) | After Modules 5–8 | 50 Q · 90 min | ⭐⭐⭐⭐ |
 | [Final-Mock-Exam](./Practice-Exams/Final-Mock-Exam.md) | 2–3 days before the real exam | 65 Q · 120 min | ⭐⭐⭐⭐⭐ |
 
+Every practice exam now includes a **Detailed answer rationales** section explaining why each correct answer is correct *and* why each distractor is wrong — Harvard Law's case-method discernment training, applied to AIF-C01.
+
 **Plus:** Take the [AWS Official Practice Question Set for AIF-C01](https://explore.skillbuilder.aws/learn) on AWS Skill Builder. It's free and the closest you'll get to real exam wording.
+
+---
+
+## 🧪 Capstone Project
+
+After finishing all 8 modules and the three practice exams, complete the **[Capstone Project](./Capstone-Project.md)** — an integrative case where you are hired as the AI Lead at a mid-size US insurance carrier (~$800M premium) tasked with deploying a Bedrock-powered claims FNOL summarizer in 16 weeks and proposing a 12-month, 5-use-case GenAI roadmap. Six executive-ready deliverables, scored against a 100-point rubric. Designed to be defensible in front of a board, a CISO, and a CFO.
+
+## 📚 Recommended Readings
+
+The course has a curated **[Recommended Readings list](./Recommended-Readings.md)** — five canonical textbooks (Goodfellow et al., Géron, Ng, Huyen, the official Sybex study guide), the seminal Transformer / GPT-3 / InstructGPT / Constitutional AI / Chain-of-Thought / ReAct / BloombergGPT papers, the AWS Responsible AI whitepaper, the NIST AI RMF, the EU AI Act, weekly industry resources (Karpathy, Raschka, Jack Clark's *Import AI*, *AI Snake Oil*), and four free academic courses (Ng's Machine Learning Specialization, Karpathy's *Zero to Hero*, Stanford CS231n/CS224n/CS336, Fast.ai). Sequenced module-by-module.
 
 ---
 

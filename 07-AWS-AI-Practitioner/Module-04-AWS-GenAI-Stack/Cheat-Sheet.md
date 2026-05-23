@@ -104,6 +104,14 @@ Usually wrong:
 
 ---
 
+## 📚 Reference case (high-signal recall)
+
+| Case | What it proves |
+|------|----------------|
+| **Goldman Sachs Bedrock adoption (re:Invent 2024)** | Regulated industry's GenAI on-ramp = Bedrock + Claude + PrivateLink + IAM resource-level + KMS + invocation logging; 10,000+ engineers using internal tools daily |
+
+---
+
 ## ✏️ Quick Self-Check
 
 1. Name 6 Bedrock providers. ___

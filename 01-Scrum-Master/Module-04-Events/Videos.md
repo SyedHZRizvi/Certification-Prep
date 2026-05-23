@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~60 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Scrum+Events+Explained+Scrum.org" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Scrum+Events+Explained+Scrum.org" target="_blank" rel="noopener" data-video-id="hgmOS_MxvNI">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 18 min · Watch this twice</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Sprint+Planning+Mike+Cohn" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Sprint+Planning+Mike+Cohn" target="_blank" rel="noopener" data-video-id="En3ifkDYgHM">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 12 min</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Effective+Daily+Scrum+Atlassian" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Effective+Daily+Scrum+Atlassian" target="_blank" rel="noopener" data-video-id="5hSVy-xi_vA">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 10 min</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Sprint+Review+vs+Retrospective+Develpreneur" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Sprint+Review+vs+Retrospective+Develpreneur" target="_blank" rel="noopener" data-video-id="8lFQKeXXmME">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -61,7 +61,7 @@
       <span class="vg-duration">⏱ 8 min · EXAM ESSENTIAL</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Sprint+Retrospective+Formats+Aga+Szostek" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Sprint+Retrospective+Formats+Aga+Szostek" target="_blank" rel="noopener" data-video-id="ET4PDGje1Tg">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -75,7 +75,7 @@
 ## 📚 Recommended (~30 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Roman+Pichler+backlog+refinement" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Roman+Pichler+backlog+refinement" target="_blank" rel="noopener" data-video-id="LbXzaHaorTc">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 10 min</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Common+Scrum+Event+Mistakes+Scrum.org" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Common+Scrum+Event+Mistakes+Scrum.org" target="_blank" rel="noopener" data-video-id="jrMgfSPvkto">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -93,7 +93,7 @@
       <span class="vg-duration">⏱ 12 min</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Henrik+Kniberg+Daily+Scrum+not+status+meeting" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Henrik+Kniberg+Daily+Scrum+not+status+meeting" target="_blank" rel="noopener" data-video-id="SgiRM5dqz0k">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>

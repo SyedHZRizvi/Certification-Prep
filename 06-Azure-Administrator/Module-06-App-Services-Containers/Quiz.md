@@ -6,7 +6,7 @@
 
 ## Questions
 
-### Q1. The MINIMUM App Service Plan tier that supports deployment slots is:
+### Q1. The MINIMUM App Service Plan tier that supports deployment slots is: *(Remember)*
 A. Free
 B. Basic
 C. Standard
@@ -14,7 +14,7 @@ D. Premium v3
 
 ---
 
-### Q2. Zone redundancy for App Service requires:
+### Q2. Zone redundancy for App Service requires: *(Remember)*
 A. Free tier
 B. Basic
 C. Premium v3 (or Isolated v2)
@@ -22,7 +22,7 @@ D. Any tier
 
 ---
 
-### Q3. An App Service Plan can host:
+### Q3. An App Service Plan can host: *(Understand)*
 A. Exactly one web app
 B. Up to 10 web apps regardless of size
 C. Multiple web apps that share the plan's compute
@@ -30,7 +30,7 @@ D. Only Linux apps
 
 ---
 
-### Q4. To deploy a web app inside your VNet with a **private IP for inbound** access, you need:
+### Q4. To deploy a web app inside your VNet with a **private IP for inbound** access, you need: *(Apply)*
 A. Standard tier with VNet integration
 B. Premium v3 with private endpoint (or Isolated v2 / ASE)
 C. Free tier
@@ -38,7 +38,7 @@ D. Any Linux plan
 
 ---
 
-### Q5. **Order these steps** to release new code with zero downtime via slot swap.
+### Q5. **Order these steps** to release new code with zero downtime via slot swap. *(Create)*
 
 1. Create a Standard or higher App Service Plan
 2. Create the web app
@@ -53,7 +53,7 @@ D. 1 → 2 → 4 → 3 → 5
 
 ---
 
-### Q6. Marking an app setting as a "slot setting" means:
+### Q6. Marking an app setting as a "slot setting" means: *(Understand)*
 A. It moves with the slot during a swap
 B. It STAYS with the slot during a swap (doesn't swap)
 C. It is encrypted automatically
@@ -61,7 +61,7 @@ D. It is read-only
 
 ---
 
-### Q7. Scale UP for App Service means:
+### Q7. Scale UP for App Service means: *(Remember)*
 A. Add more instances
 B. Move to a larger plan SKU (more CPU/RAM)
 C. Spread across more regions
@@ -69,7 +69,7 @@ D. Reduce instance count
 
 ---
 
-### Q8. ACI is the BEST fit for:
+### Q8. ACI is the BEST fit for: *(Apply)*
 A. A WordPress site with daily traffic spikes
 B. A 5-minute container that processes a queue message and exits
 C. A 24/7 microservice with strict SLA
@@ -77,7 +77,7 @@ D. A stateful PostgreSQL DB
 
 ---
 
-### Q9. Yes/No — ACI.
+### Q9. Yes/No — ACI. *(Evaluate)*
 
 **S1:** A container group can have multiple containers sharing one IP and storage.
 **S2:** ACI supports deployment into a delegated subnet of a VNet.
@@ -90,7 +90,7 @@ D. Yes / No / No
 
 ---
 
-### Q10. Microsoft charges you for the AKS:
+### Q10. Microsoft charges you for the AKS: *(Remember)*
 A. Control plane only
 B. Nodes (and add-ons), but not the standard control plane
 C. Both — node + control plane per hour
@@ -98,7 +98,7 @@ D. Pods individually
 
 ---
 
-### Q11. In AKS, the system node pool is for:
+### Q11. In AKS, the system node pool is for: *(Understand)*
 A. Production workloads
 B. CoreDNS, kube-proxy, and other cluster-critical pods
 C. Spot interruption testing
@@ -106,7 +106,7 @@ D. Karpenter only
 
 ---
 
-### Q12. The Horizontal Pod Autoscaler (HPA) scales:
+### Q12. The Horizontal Pod Autoscaler (HPA) scales: *(Remember)*
 A. Nodes in a pool
 B. The number of pod replicas based on CPU/memory or custom metrics
 C. The control plane size
@@ -114,7 +114,7 @@ D. Disk size
 
 ---
 
-### Q13. The cluster autoscaler scales:
+### Q13. The cluster autoscaler scales: *(Remember)*
 A. Pods
 B. The number of nodes in a node pool based on pending-pod pressure
 C. Container groups
@@ -122,7 +122,7 @@ D. App Service plans
 
 ---
 
-### Q14. Yes/No — AKS networking.
+### Q14. Yes/No — AKS networking. *(Evaluate)*
 
 **S1:** With Azure CNI, pods get IPs directly from the VNet.
 **S2:** Azure CNI Overlay assigns pod IPs from an overlay CIDR, conserving VNet IPs.
@@ -135,7 +135,7 @@ D. Yes / No / Yes
 
 ---
 
-### Q15. To do layer-7 ingress with WAF for AKS, the BEST option is:
+### Q15. To do layer-7 ingress with WAF for AKS, the BEST option is: *(Apply)*
 A. Standard Load Balancer service
 B. Application Gateway (AGIC) or Application Gateway for Containers
 C. Azure Front Door only
@@ -143,7 +143,7 @@ D. NSG on the node pool
 
 ---
 
-### Q16. To mount the SAME persistent volume to multiple AKS pods (RWX), use:
+### Q16. To mount the SAME persistent volume to multiple AKS pods (RWX), use: *(Apply)*
 A. Azure Disk CSI driver
 B. Azure File CSI driver
 C. Ephemeral OS disk
@@ -151,7 +151,7 @@ D. Local emptyDir
 
 ---
 
-### Q17. A long-running 24/7 .NET 8 web app with custom domain + SSL is BEST hosted on:
+### Q17. A long-running 24/7 .NET 8 web app with custom domain + SSL is BEST hosted on: *(Analyze)*
 A. ACI
 B. App Service (Standard or Premium v3)
 C. AKS (overkill for a single app)
@@ -159,7 +159,7 @@ D. Azure Functions
 
 ---
 
-### Q18. Auto-swap for slots is:
+### Q18. Auto-swap for slots is: *(Understand)*
 A. A toggle that automatically swaps a slot to production after deployment
 B. A backup feature
 C. Only available in AKS
@@ -167,7 +167,7 @@ D. The same as scale out
 
 ---
 
-### Q19. To run a Python web app behind an Azure-private endpoint AND integrate outbound calls to a VNet-only Storage Account:
+### Q19. To run a Python web app behind an Azure-private endpoint AND integrate outbound calls to a VNet-only Storage Account: *(Analyze)*
 A. Basic plan
 B. Standard plan with VNet integration (outbound) + Premium v3 plan with private endpoint (inbound)
 C. Free tier
@@ -175,7 +175,7 @@ D. Use ACI
 
 ---
 
-### Q20. Yes/No — App Service tiers.
+### Q20. Yes/No — App Service tiers. *(Understand)*
 
 **S1:** Free tier supports custom domain.
 **S2:** Standard tier supports auto-scale and 5 slots.
@@ -188,7 +188,7 @@ D. Yes / No / Yes
 
 ---
 
-### Q21. To bind a custom domain `www.contoso.com` with HTTPS, on App Service you need:
+### Q21. To bind a custom domain `www.contoso.com` with HTTPS, on App Service you need: *(Apply)*
 A. Basic+ plan, custom domain validation, and an SSL/TLS binding (App Service Managed Cert or BYO)
 B. Free tier
 C. AKS only
@@ -196,7 +196,7 @@ D. WAF policy
 
 ---
 
-### Q22. ACI restart policies are:
+### Q22. ACI restart policies are: *(Remember)*
 A. Always, OnFailure, Never
 B. None, Always
 C. OnSuccess, Always
@@ -204,7 +204,7 @@ D. Restart-allowed, restart-denied
 
 ---
 
-### Q23. Which is TRUE about AKS upgrades?
+### Q23. Which is TRUE about AKS upgrades? *(Understand)*
 A. Microsoft auto-upgrades on a fixed schedule with no override
 B. You choose the Kubernetes version and can upgrade via the portal/CLI (`az aks upgrade`)
 C. AKS does not support cluster upgrades
@@ -212,7 +212,7 @@ D. Each upgrade requires a new cluster
 
 ---
 
-### Q24. Which of the following is a valid AKS service ingress option?
+### Q24. Which of the following is a valid AKS service ingress option? *(Understand)*
 A. Standard Load Balancer (Service type LoadBalancer)
 B. Application Gateway Ingress Controller (AGIC)
 C. NGINX or Istio

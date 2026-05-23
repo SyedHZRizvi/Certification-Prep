@@ -1,12 +1,13 @@
 # ✏️ Module 7 Quiz: Global Logistics & Customs
 
 > **Instructions:** 25 questions. Incoterms-heavy. Aim for 20/25.
+> Each question tagged with its **Bloom's level**.
 
 ---
 
 ## Questions
 
-### Q1. Incoterms 2020 contains how many rules?
+### Q1. Incoterms 2020 contains how many rules? *(Remember)*
 A. 7
 B. 9
 C. 11
@@ -14,7 +15,7 @@ D. 13
 
 ---
 
-### Q2. Under Incoterms 2020, FOB should be used for:
+### Q2. Under Incoterms 2020, FOB should be used for: *(Analyze)*
 A. Containerized ocean shipments
 B. Bulk ocean / inland-waterway shipments where goods are loaded on a vessel
 C. Air freight
@@ -22,7 +23,7 @@ D. Multimodal road/rail
 
 ---
 
-### Q3. For a container shipped by ocean, the CORRECT Incoterm if the importer arranges main freight is:
+### Q3. For a container shipped by ocean, the CORRECT Incoterm if the importer arranges main freight is: *(Apply)*
 A. FOB
 B. FCA
 C. CIF
@@ -30,7 +31,7 @@ D. EXW only
 
 ---
 
-### Q4. Under EXW, the seller's responsibility ends:
+### Q4. Under EXW, the seller's responsibility ends: *(Remember)*
 A. At the destination port
 B. At the seller's premises (buyer picks up)
 C. On board the vessel
@@ -38,7 +39,7 @@ D. At customs clearance
 
 ---
 
-### Q5. Under CIF, risk transfers from seller to buyer:
+### Q5. Under CIF, risk transfers from seller to buyer: *(Analyze)*
 A. At the destination port
 B. On board the vessel at the origin port
 C. At the buyer's warehouse
@@ -46,7 +47,7 @@ D. After customs clearance
 
 ---
 
-### Q6. The Incoterm where the seller pays EVERYTHING including import duty is:
+### Q6. The Incoterm where the seller pays EVERYTHING including import duty is: *(Remember)*
 A. CIF
 B. CIP
 C. DPU
@@ -54,7 +55,7 @@ D. DDP
 
 ---
 
-### Q7. The Incoterm renamed from DAT to DPU in 2020 means:
+### Q7. The Incoterm renamed from DAT to DPU in 2020 means: *(Remember)*
 A. Delivered at Place Unloaded (seller unloads)
 B. Delivered at Place Unpaid
 C. Direct Partial Unload
@@ -62,7 +63,7 @@ D. Deferred Payment Unloaded
 
 ---
 
-### Q8. CIP requires the seller to obtain:
+### Q8. CIP requires the seller to obtain: *(Understand)*
 A. No insurance
 B. Minimum cover (Institute Cargo Clauses C)
 C. All-risk cover (Institute Cargo Clauses A)
@@ -70,7 +71,7 @@ D. Cargo loss only
 
 ---
 
-### Q9. HS codes are how many digits at the global standard level?
+### Q9. HS codes are how many digits at the global standard level? *(Remember)*
 A. 4
 B. 6
 C. 8
@@ -78,7 +79,7 @@ D. 10
 
 ---
 
-### Q10. The US HTS extends HS codes to:
+### Q10. The US HTS extends HS codes to: *(Remember)*
 A. 6 digits
 B. 8 digits
 C. 10 digits
@@ -86,7 +87,7 @@ D. 12 digits
 
 ---
 
-### Q11. The Importer of Record (IOR) is:
+### Q11. The Importer of Record (IOR) is: *(Understand)*
 A. The freight forwarder
 B. Legally responsible for customs declaration, duty, and compliance
 C. The carrier
@@ -94,7 +95,7 @@ D. The shipping line
 
 ---
 
-### Q12. A customs broker:
+### Q12. A customs broker: *(Remember)*
 A. Owns the goods
 B. Files customs entries on behalf of the importer
 C. Operates ships
@@ -102,7 +103,7 @@ D. Issues bills of lading
 
 ---
 
-### Q13. A freight forwarder:
+### Q13. A freight forwarder: *(Understand)*
 A. Owns trucks and ships
 B. Books transport and prepares documents, usually without taking possession of goods
 C. Is the same as a customs broker
@@ -110,7 +111,7 @@ D. Operates only domestically
 
 ---
 
-### Q14. An NVOCC:
+### Q14. An NVOCC: *(Remember)*
 A. Owns vessels
 B. Is a Non-Vessel Operating Common Carrier — issues own BL but does not own ships
 C. Is a customs broker
@@ -118,7 +119,7 @@ D. Is a freight class
 
 ---
 
-### Q15. USMCA replaced:
+### Q15. USMCA replaced: *(Remember)*
 A. NAFTA in 2020
 B. CPTPP
 C. RCEP
@@ -126,7 +127,7 @@ D. EU
 
 ---
 
-### Q16. To qualify for FTA preferential treatment, goods must:
+### Q16. To qualify for FTA preferential treatment, goods must: *(Understand)*
 A. Be cheap
 B. Originate per the FTA's rules of origin, with a certificate of origin
 C. Be shipped in containers
@@ -134,7 +135,7 @@ D. Be paid via Letter of Credit
 
 ---
 
-### Q17. A Free Trade Zone (FTZ) PRIMARILY provides:
+### Q17. A Free Trade Zone (FTZ) PRIMARILY provides: *(Apply)*
 A. Tax holidays
 B. Duty deferral until goods enter commerce of the host country
 C. Free shipping
@@ -142,7 +143,7 @@ D. Free labor
 
 ---
 
-### Q18. Anti-dumping duty is applied when:
+### Q18. Anti-dumping duty is applied when: *(Understand)*
 A. Goods are dropped during shipping
 B. Goods are sold in the importing market below normal market value
 C. The exporter receives subsidies
@@ -150,7 +151,7 @@ D. The currency falls
 
 ---
 
-### Q19. Letter of Credit payment is triggered by:
+### Q19. Letter of Credit payment is triggered by: *(Analyze)*
 A. The buyer's verbal approval
 B. Documents matching the LC terms
 C. The carrier's notification
@@ -158,7 +159,7 @@ D. The forwarder's invoice
 
 ---
 
-### Q20. Ad valorem duty is calculated as:
+### Q20. Ad valorem duty is calculated as: *(Remember)*
 A. $ per unit
 B. % of declared customs value
 C. Flat fee per shipment
@@ -166,7 +167,7 @@ D. Per kilogram
 
 ---
 
-### Q21. C-TPAT (US) provides:
+### Q21. C-TPAT (US) provides: *(Apply)*
 A. Lower freight rates
 B. Expedited customs treatment for security-compliant trusted traders
 C. Free trade zone status
@@ -174,7 +175,7 @@ D. Duty refunds
 
 ---
 
-### Q22. DAP and DDP differ in that DDP includes:
+### Q22. DAP and DDP differ in that DDP includes: *(Analyze)*
 A. Insurance
 B. Import duty paid by seller
 C. Unloading at destination
@@ -182,7 +183,7 @@ D. Carrier selection by buyer
 
 ---
 
-### Q23. A trade-show exhibitor wants to bring goods into a country temporarily without paying duty. The mechanism is:
+### Q23. A trade-show exhibitor wants to bring goods into a country temporarily without paying duty. The mechanism is: *(Apply)*
 A. Open account
 B. ATA Carnet (Temporary Importation under Bond)
 C. Letter of Credit
@@ -190,7 +191,7 @@ D. Bonded warehouse
 
 ---
 
-### Q24. The Incoterms order from LOWEST to HIGHEST seller responsibility starts with:
+### Q24. The Incoterms order from LOWEST to HIGHEST seller responsibility starts with: *(Understand)*
 A. DDP, DPU, DAP …
 B. EXW, FCA, FAS, FOB …
 C. CIP, CPT …
@@ -198,7 +199,7 @@ D. CIF, CFR …
 
 ---
 
-### Q25. Under DPU, the seller's responsibility:
+### Q25. Under DPU, the seller's responsibility: *(Analyze)*
 A. Ends at the seller's premises
 B. Ends on board the vessel
 C. Includes delivery AND unloading at the named place of destination

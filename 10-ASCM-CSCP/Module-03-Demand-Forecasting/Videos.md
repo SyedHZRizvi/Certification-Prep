@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~50 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Demand+forecasting+methods+supply+chain+Edureka" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="LxYy_1I5eHk" href="https://www.youtube.com/results?search_query=Demand+forecasting+methods+supply+chain+Edureka" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 18 min · Qualitative + quantitative</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Exponential+smoothing+forecasting+example" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="PIvvWrvFDvY" href="https://www.youtube.com/results?search_query=Exponential+smoothing+forecasting+example" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 11 min · Alpha tuning shown step-by-step</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=MAD+MAPE+forecast+error+calculation" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="5W8K7iUJoYc" href="https://www.youtube.com/results?search_query=MAD+MAPE+forecast+error+calculation" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 12 min · All three formulas worked</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=CPFR+collaborative+planning+forecasting+replenishment" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="QXogeG5hNKs" href="https://www.youtube.com/results?search_query=CPFR+collaborative+planning+forecasting+replenishment" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~28 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Moving+average+forecast+example" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="3Jn_U8dMpf4" href="https://www.youtube.com/results?search_query=Moving+average+forecast+example" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 8 min · Clear walkthrough</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Holt+Winters+forecasting+method+seasonality" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="iAvZujE602U" href="https://www.youtube.com/results?search_query=Holt+Winters+forecasting+method+seasonality" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 12 min · Worked seasonal example</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Tracking+signal+forecast+monitoring" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="k5ugyeITdkk" href="https://www.youtube.com/results?search_query=Tracking+signal+forecast+monitoring" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Delphi+method+forecasting" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="ESxuo1CePZI" href="https://www.youtube.com/results?search_query=Delphi+method+forecasting" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 9 min · Multi-round expert panel</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Demand+sensing+real+time+POS" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="wuNcOsXkzpE" href="https://www.youtube.com/results?search_query=Demand+sensing+real+time+POS" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 10 min · IoT + POS integration</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Croston+intermittent+demand+forecast" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="fNybdd7nyUg" href="https://www.youtube.com/results?search_query=Croston+intermittent+demand+forecast" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

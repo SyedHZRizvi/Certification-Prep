@@ -2,6 +2,13 @@
 
 > **Why this module matters:** The CSCP is deliberately *global*. Expect 8–12 questions on **Incoterms 2020 (all 11)**, customs documentation, letters of credit, tariffs, currency risk, and free trade zones. This is a vocabulary-rich module; mnemonic everything.
 
+> **Prerequisites for this module.** Before starting, you should be comfortable with:
+> - [Logistics modes and DC/3PL vocabulary](../Module-07-Logistics-Distribution-Warehousing/Reading.md) — Module 7
+> - [Sourcing contracts and SLA basics](../Module-06-Sourcing-Supplier-Management/Reading.md) — Module 6
+> - General awareness of import/export concepts (tariffs, duties, customs)
+> - Basic finance fluency: exchange rates, hedging conceptually
+> Most students find this module the densest in pure vocabulary; build flashcards aggressively.
+
 ---
 
 ## ⛴️ A Story: The Coffee Importer That Lost $40K on One Container
@@ -18,7 +25,7 @@ She redid the next deal under **FCA (Free Carrier) — Port of Djibouti**. Same 
 
 ## 📜 Incoterms 2020 — The Headline Framework
 
-Incoterms (International Commercial Terms) are published by the **International Chamber of Commerce (ICC)** and updated roughly every decade. The current version is **Incoterms 2020** (replaced 2010 in January 2020).
+Incoterms (International Commercial Terms) are published by the **International Chamber of Commerce (ICC)** (Paris, founded 1919) and updated roughly every decade. The current version is **Incoterms 2020** (ICC Publication 723E, effective 1 January 2020) — replaced Incoterms 2010 (ICC Publication 715E). The Incoterms 2020 drafting group was chaired by Charles Debattista (University of Southampton).
 
 ### Two key changes from 2010:
 1. **DAT → DPU** (Delivered at Terminal renamed Delivered at Place Unloaded — broader location flexibility)
@@ -269,6 +276,23 @@ These programs grant faster clearance + reduced inspections in exchange for docu
 
 ---
 
+## 📊 Case Study — Apple's iPhone India + Vietnam Diversification (2022-2025)
+
+**Situation.** For ~15 years (2007-2022), Apple manufactured >95% of iPhones at Foxconn's "iPhone City" complex in Zhengzhou, Henan, China — at peak employing 350,000 workers and producing half of the world's iPhones from one campus. By 2022, geopolitical reality was breaking this concentration: US-China trade tensions intensified under both the Trump (2017-2020) and Biden (2020-2024) administrations with new tariffs and export controls; COVID-19 lockdowns in Zhengzhou (October-November 2022) cost Apple an estimated **$1 billion per week** in lost iPhone Pro production at peak Q4 holiday demand; the November 2022 worker unrest at Zhengzhou (caught on viral video) accelerated investor pressure. Tim Cook publicly committed to "increasing the resiliency of our supply chain."
+
+**Decision.** Apple committed 2022-2025 to a multi-axis diversification strategy: (1) **India**: contracts to Tata Electronics (acquired Wistron's India ops in 2023) + Foxconn India + Pegatron India for iPhone assembly. Production target: ~25% of iPhones from India by 2027 (per Bloomberg / TF International Securities analysis). India's Production Linked Incentive (PLI) scheme provided 4-6% subsidies on incremental production. (2) **Vietnam**: AirPods (already there since 2020), MacBook + iPad shifting to Vietnamese assembly via Luxshare and Foxconn Vietnam. (3) **Critical**: the supply chain — chips (TSMC Taiwan), camera modules (Sony Japan), displays (Samsung Korea + LG) — was preserved; only final assembly diversified initially. Apple navigated **Incoterms** strategically: most India-assembly contracts used **FCA (Free Carrier) at the named port of departure** rather than EXW, so Apple's logistics partners (DHL, Expeditors) handled India export clearance and onward shipping. Apple invoiced into Apple Operations International (Ireland) under DDP terms into the US — a complex multi-leg arrangement that minimized customs friction.
+
+**Outcome.** By Q4 2024: ~14% of iPhones were assembled outside China (India + Vietnam combined), up from ~5% in 2022. India production reached 25 million iPhones/year (~12% of global volume). Apple's India revenue hit ~$8B in FY2024 with manufacturing creating ~150,000 jobs. The Zhengzhou plant remained the largest single site but no longer indispensable. When the 2025 US tariff regime under Trump-2 added 145% China tariffs (initially), Apple's diversified position allowed continued sales without immediate price-pass-through. Counter-argument: cost per iPhone rose ~8-10% on India-assembled units due to higher logistics + smaller economies of scale; Apple absorbed margin to maintain US retail price competitiveness. The case study appears in MIT Sloan and HBS curricula 2024-2025 as the canonical "geopolitical supply chain diversification" play.
+
+**Lesson for the exam / for practitioners.** This is the modern Hau Lee "agile" supply chain in action — Apple maintains responsive consumer-electronics fundamentals (Module 1) AND adds risk-hedging geographic diversification. International trade compliance was central: **Incoterms 2020** terms selected to allocate customs work, **HS code classification** carefully managed to optimize FTA preferential tariffs (India is part of ASEAN dialogue partner agreements; Vietnam is CPTPP member), and **rules-of-origin engineering** ensured iPhones met the country-of-origin tests required for various FTAs. On the exam: international trade competence is not just compliance — it's strategic positioning. Apple's "FCA + DDP multi-leg" pattern is a worked example of how big firms structure cross-border deals.
+
+**Discussion (Socratic).**
+- Q1: A mid-cap firm wants to copy Apple's diversification but lacks Apple's scale leverage to negotiate FCA terms. What 3 structural changes to their contracts would help them reduce China dependence without falling into the "EXW everything" trap that hurt Lara at Brewline (the module's opening story)?
+- Q2: India's PLI subsidy expires 2027. What's the case for committing to India production *anyway*, and what's the case for retreating to China when subsidies end?
+- Q3: Apple's India ramp coincided with US-China trade war escalation. To what extent would Apple have diversified *without* the geopolitical pressure — purely on COVID + Zhengzhou unrest grounds? Construct the counterfactual.
+
+---
+
 ## ⚠️ Common Misconceptions
 
 | Misconception | Reality |
@@ -337,10 +361,30 @@ You now know:
 
 ---
 
+> **Where this leads.**
+> - Inside this course: Module 9 takes geopolitical and trade-compliance risk into the formal SCRM framework (ISO 31000); Module 10 connects international trade efficiency to continuous-improvement KPIs.
+> - Cross-course: `12-ASCM-CLTD` Module 8 covers logistics-side international trade in more operational depth; `13-ISM-CPSM` Module 4 takes international sourcing strategy deeper.
+> - Practice: Practice Exam 2 has ~12 Incoterms questions; Final Mock has 11-13 questions in this domain.
+
+---
+
+## 💬 Discussion — Socratic prompts
+
+1. **DDP looks generous; defend the seller.** A US importer always demands DDP terms ("seller handles everything including duty"). A Chinese supplier hates DDP — they don't know US tariff regimes. Construct the cost analysis where the Chinese supplier should ACCEPT DDP anyway, and where they should refuse.
+2. **The 2025 tariff cliff.** The US-China tariff regime changed sharply in 2025. Construct the argument: should a US importer accelerate India / Vietnam orders during the 145% Trump-2 tariff peak, or wait for negotiated reductions? What's the financial breakeven?
+3. **FTZ vs bonded warehouse.** Both defer duty. When does an FTZ beat a bonded warehouse, and when does it lose? Cite the inverted-tariff scenario.
+4. **The LC discrepancy game.** Banks reject ~50% of first-presentation LCs for "discrepancies." A small exporter takes 30-60 day payment delays as a result. Defend the proposition that LCs are no longer worth the cost for sub-$500K transactions, and identify when LCs still earn their keep.
+5. **Natural vs financial hedge.** A US importer with €100M annual euro payables can either buy €100M forward contracts every year OR open a European subsidiary that generates €60M revenue (partial natural hedge). Walk through the strategic trade-off — when does the operational hedge win the financial one?
+
+---
+
 ## 📚 Further Reading (Optional)
 
-- 📖 ICC, *Incoterms 2020* — the authoritative reference
-- 📖 ICC, *UCP 600* — LC rules
-- 📖 World Customs Organization (WCO) HS Nomenclature
+- 📖 ICC, *Incoterms 2020* — ICC Publication 723E, 2019 (the authoritative reference; available at iccwbo.org)
+- 📖 ICC, *UCP 600* — Uniform Customs and Practice for Documentary Credits — ICC Publication 600, 2007
+- 📖 World Customs Organization (WCO) HS Nomenclature — current 2022 edition (revised every 5 years)
 - 📖 ASCM CSCP Learning System Module 8
-- 📖 US CBP (cbp.gov) — official US customs guidance
+- 📖 US CBP (cbp.gov) — official US customs guidance; EU TARIC database — eur-lex.europa.eu
+- 📖 World Trade Organization, *World Trade Report* (annual) — global trade trends with 2024 issue covering nearshoring
+- 📰 Peterson Institute for International Economics (piie.com) — current US trade policy analysis
+- 📰 *Journal of International Business Studies* (Academy of International Business) — academic FDI/trade research

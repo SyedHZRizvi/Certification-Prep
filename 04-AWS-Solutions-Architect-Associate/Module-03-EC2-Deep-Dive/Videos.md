@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~75 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=EC2+instance+types+explained+Stephane+Maarek" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="ik2J0txfbdM" href="https://www.youtube.com/results?search_query=EC2+instance+types+explained+Stephane+Maarek" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>💻</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 18 min · T/M/C/R/I/G families</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=EC2+pricing+options+On-Demand+Reserved+Spot+Savings+Plan" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="-t148tYgnJU" href="https://www.youtube.com/results?search_query=EC2+pricing+options+On-Demand+Reserved+Spot+Savings+Plan" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>💰</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 22 min · When to pick which</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Auto+Scaling+Group+demo+launch+template" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="25hIy-ewuWw" href="https://www.youtube.com/results?search_query=AWS+Auto+Scaling+Group+demo+launch+template" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>📈</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 18 min · Hands-on walkthrough</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=ALB+vs+NLB+vs+GWLB+AWS+ExamPro" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="aOzC0pEmhqI" href="https://www.youtube.com/results?search_query=ALB+vs+NLB+vs+GWLB+AWS+ExamPro" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>⚖️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~35 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+EBS+volume+types+gp3+io2+st1+sc1" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="WdiHIxkhplY" href="https://www.youtube.com/results?search_query=AWS+EBS+volume+types+gp3+io2+st1+sc1" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🗄️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 12 min · gp3, io2, st1, sc1</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+placement+groups+cluster+spread+partition" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="xABE2P_453c" href="https://www.youtube.com/results?search_query=AWS+placement+groups+cluster+spread+partition" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎯</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 10 min · The 3 patterns</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=EFS+vs+EBS+vs+FSx+comparison" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="CglWS2rfYRo" href="https://www.youtube.com/results?search_query=EFS+vs+EBS+vs+FSx+comparison" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>📁</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Spot+Instance+best+practices" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="tny8N-hkCqs" href="https://www.youtube.com/results?search_query=AWS+Spot+Instance+best+practices" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎰</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 25 min · Real cost savings</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Graviton+vs+x86+AWS+benchmarks" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="HKAl4tSCp7o" href="https://www.youtube.com/results?search_query=Graviton+vs+x86+AWS+benchmarks" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🧠</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 18 min · ARM on AWS</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=ALB+path+based+routing+demo" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="GiZuOVNKZ2c" href="https://www.youtube.com/results?search_query=ALB+path+based+routing+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🛣️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

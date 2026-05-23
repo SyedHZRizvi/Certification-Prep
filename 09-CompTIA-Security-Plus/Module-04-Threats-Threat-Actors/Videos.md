@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~45 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+SY0-701+threat+actors" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+SY0-701+threat+actors" data-video-id="6xUH0t6ugIM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 8 min · The 6 actor categories</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+SY0-701+threat+vectors" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+SY0-701+threat+vectors" data-video-id="4lAbGpTDZ18" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 10 min · Every entry path</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+SY0-701+threat+intelligence" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+SY0-701+threat+intelligence" data-video-id="86fruE9jkKk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 9 min · OSINT, ISAC, dark web</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=MITRE+ATT%26CK+framework+explained" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=MITRE+ATT%26CK+framework+explained" data-video-id="Wxww4d9zFrw" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~30 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SolarWinds+supply+chain+attack+explained" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=SolarWinds+supply+chain+attack+explained" data-video-id="Q_iAW9RNafA" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 12 min · Nation-state APT case study</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Conti+ransomware+gang+explained" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Conti+ransomware+gang+explained" data-video-id="5ITP56cyQ20" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 14 min · Organized crime case study</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=insider+threat+real+case+study" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=insider+threat+real+case+study" data-video-id="nbnSSiVUSSw" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Hammond+ransomware+as+a+service" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Hammond+ransomware+as+a+service" data-video-id="9zEXov_L0os" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 20 min · Affiliate model</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=APT+nation+state+attack+timeline" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=APT+nation+state+attack+timeline" data-video-id="88o-uifbJSE" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 25 min · How a real APT operates</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=MyDFIR+threat+hunting+IOCs" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=MyDFIR+threat+hunting+IOCs" data-video-id="wbV1u22ihBo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

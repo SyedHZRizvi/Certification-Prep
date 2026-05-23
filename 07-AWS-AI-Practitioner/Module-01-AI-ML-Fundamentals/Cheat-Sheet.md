@@ -110,6 +110,14 @@ Usually wrong:
 
 ---
 
+## 📚 Reference case (high-signal recall)
+
+| Case | What it proves |
+|------|----------------|
+| **Google DeepMind AlphaFold 2 (2020–2024)** | Supervised deep learning + Transformer architecture + scale → 50-year-open biology problem solved; 2024 Nobel Prize in Chemistry |
+
+---
+
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:

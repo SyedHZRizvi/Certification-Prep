@@ -23,7 +23,7 @@
 ## ⭐ Essential watching (~55 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+SY0-701+firewall+types" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+SY0-701+firewall+types" data-video-id="VgNyh4HEqSU" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -32,7 +32,7 @@
       <span class="vg-duration">⏱ 10 min</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+SY0-701+IDS+IPS" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+SY0-701+IDS+IPS" data-video-id="7QuYupuic3Q" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -41,7 +41,7 @@
       <span class="vg-duration">⏱ 8 min</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+SY0-701+VPN+IPSec" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+SY0-701+VPN+IPSec" data-video-id="uU3e_ntg-3g" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -50,7 +50,7 @@
       <span class="vg-duration">⏱ 12 min</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+SY0-701+secure+protocols+ports" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+SY0-701+secure+protocols+ports" data-video-id="9NAKCyOtFH0" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -64,7 +64,7 @@
 ## 📚 Recommended (~35 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=NetworkChuck+VPN+IPSec+tunnel+vs+transport" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=NetworkChuck+VPN+IPSec+tunnel+vs+transport" data-video-id="mJxSKIRDpPQ" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -73,7 +73,7 @@
       <span class="vg-duration">⏱ 12 min</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=DMARC+SPF+DKIM+email+security+explained" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=DMARC+SPF+DKIM+email+security+explained" data-video-id="qA-MVF2ve10" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -82,7 +82,7 @@
       <span class="vg-duration">⏱ 11 min</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=David+Bombal+802.1X+RADIUS+wifi" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=David+Bombal+802.1X+RADIUS+wifi" data-video-id="tewrii8bsic" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -96,7 +96,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=microsegmentation+zero+trust+network" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=microsegmentation+zero+trust+network" data-video-id="BHC7z6YQH94" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -105,7 +105,7 @@
       <span class="vg-duration">⏱ 18 min</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Hammond+pcap+analysis+wireshark" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Hammond+pcap+analysis+wireshark" data-video-id="A4_DOr7Eiqo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -114,7 +114,7 @@
       <span class="vg-duration">⏱ 25 min</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=WireGuard+VPN+how+it+works" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=WireGuard+VPN+how+it+works" data-video-id="KzcCrW0J61A" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

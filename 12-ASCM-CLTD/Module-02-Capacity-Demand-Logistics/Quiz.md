@@ -2,12 +2,13 @@
 
 > **Instructions:** Answer all 25 questions WITHOUT looking at the reading.
 > Aim for 20/25 minimum.
+> Each question is tagged with its **Bloom's level** (Remember / Understand / Apply / Analyze / Evaluate / Create).
 
 ---
 
 ## Questions
 
-### Q1. A DC has 10 forklifts (theoretical), runs at 80% utilization and 90% efficiency. Rated capacity equals:
+### Q1. A DC has 10 forklifts (theoretical), runs at 80% utilization and 90% efficiency. Rated capacity equals: *(Apply)*
 A. 8.0 forklift-equivalents
 B. 7.2 forklift-equivalents
 C. 9.0 forklift-equivalents
@@ -15,7 +16,7 @@ D. 10.0 forklift-equivalents
 
 ---
 
-### Q2. A toy retailer expects 40% of annual sales in Q4. The MOST appropriate capacity strategy is:
+### Q2. A toy retailer expects 40% of annual sales in Q4. The MOST appropriate capacity strategy is: *(Apply)*
 A. Lead with permanent capacity expansion
 B. Lag (let stockouts occur)
 C. Hybrid: pre-build inventory + seasonal labor + 3PL overflow
@@ -23,7 +24,7 @@ D. Match daily with fixed-staff only
 
 ---
 
-### Q3. "Capacity cushion" refers to:
+### Q3. "Capacity cushion" refers to: *(Remember)*
 A. The mattresses in the break room
 B. Planned slack — the unused fraction of capacity
 C. The overtime budget
@@ -31,7 +32,7 @@ D. The contingency reserve in dollars
 
 ---
 
-### Q4. Utilization measures:
+### Q4. Utilization measures: *(Understand)*
 A. Output speed per unit time
 B. Fraction of available time the resource is actually used
 C. The number of breakdowns per shift
@@ -39,7 +40,7 @@ D. The throughput in dollars
 
 ---
 
-### Q5. Above what utilization level does queueing theory predict severe delay blow-ups?
+### Q5. Above what utilization level does queueing theory predict severe delay blow-ups? *(Understand)*
 A. ~25%
 B. ~50%
 C. ~85–90%
@@ -47,7 +48,7 @@ D. 100% — utilization is always good
 
 ---
 
-### Q6. MAD is calculated as:
+### Q6. MAD is calculated as: *(Remember)*
 A. Σ(Actual − Forecast) / N
 B. Σ |Actual − Forecast| / N
 C. Σ(Actual − Forecast)² / N
@@ -55,7 +56,7 @@ D. Σ(Forecast / Actual) × 100
 
 ---
 
-### Q7. A forecast consistently over-predicts demand. The forecast has:
+### Q7. A forecast consistently over-predicts demand. The forecast has: *(Analyze)*
 A. High MAD
 B. Negative bias
 C. Positive bias
@@ -63,7 +64,7 @@ D. High RMSE only
 
 ---
 
-### Q8. The tracking signal generally raises an alarm when its absolute value exceeds:
+### Q8. The tracking signal generally raises an alarm when its absolute value exceeds: *(Remember)*
 A. 0.1
 B. 1.0
 C. 4 to 6
@@ -71,7 +72,7 @@ D. 100
 
 ---
 
-### Q9. A 3-month moving average of monthly demand 100, 110, 120 is:
+### Q9. A 3-month moving average of monthly demand 100, 110, 120 is: *(Apply)*
 A. 100
 B. 105
 C. 110
@@ -79,7 +80,7 @@ D. 115
 
 ---
 
-### Q10. Forecasts at the aggregate level (region, category) tend to be:
+### Q10. Forecasts at the aggregate level (region, category) tend to be: *(Understand)*
 A. Less accurate than SKU-level
 B. More accurate than SKU-level (relative error)
 C. The same accuracy
@@ -87,7 +88,7 @@ D. Useless
 
 ---
 
-### Q11. A "Lead" capacity strategy is best for:
+### Q11. A "Lead" capacity strategy is best for: *(Apply)*
 A. Commodity, declining markets
 B. Growing markets where service is a competitive weapon
 C. Highly seasonal retail
@@ -95,7 +96,7 @@ D. Cost-minimizing operations
 
 ---
 
-### Q12. The Theory of Constraints' first focusing step is:
+### Q12. The Theory of Constraints' first focusing step is: *(Remember)*
 A. Hire more staff
 B. Identify the bottleneck
 C. Buy more equipment
@@ -103,7 +104,7 @@ D. Subordinate everyone to the constraint
 
 ---
 
-### Q13. Two SKUs have these patterns: SKU-A predictable peak each December; SKU-B random spikes weekly. The right safeguards:
+### Q13. Two SKUs have these patterns: SKU-A predictable peak each December; SKU-B random spikes weekly. The right safeguards: *(Analyze)*
 A. Both need safety stock
 B. SKU-A needs scheduled pre-build; SKU-B needs safety stock
 C. SKU-B needs scheduled pre-build; SKU-A needs safety stock
@@ -111,7 +112,7 @@ D. Both need scheduled pre-build
 
 ---
 
-### Q14. ABC analysis typically finds that ~20% of SKUs drive ~___ of throughput.
+### Q14. ABC analysis typically finds that ~20% of SKUs drive ~___ of throughput. *(Remember)*
 A. 20%
 B. 50%
 C. 80%
@@ -119,7 +120,7 @@ D. 95%
 
 ---
 
-### Q15. The 6-step capacity planning cycle ENDS with:
+### Q15. The 6-step capacity planning cycle ENDS with: *(Remember)*
 A. Determine throughput requirements
 B. Identify alternatives
 C. Implement
@@ -127,7 +128,7 @@ D. Monitor and adjust
 
 ---
 
-### Q16. A Match (chase) strategy's biggest hidden cost is:
+### Q16. A Match (chase) strategy's biggest hidden cost is: *(Analyze)*
 A. Excess space rental
 B. Hiring, training, and turnover churn
 C. Carrier surcharges
@@ -135,7 +136,7 @@ D. Higher fuel cost
 
 ---
 
-### Q17. Postponement reduces capacity needs by:
+### Q17. Postponement reduces capacity needs by: *(Understand)*
 A. Forcing earlier decisions
 B. Letting you forecast at the aggregate, less-uncertain level
 C. Outsourcing the bottleneck
@@ -143,7 +144,7 @@ D. Eliminating safety stock entirely
 
 ---
 
-### Q18. Effective capacity differs from theoretical capacity in that effective:
+### Q18. Effective capacity differs from theoretical capacity in that effective: *(Understand)*
 A. Adds overtime
 B. Subtracts planned maintenance, setups, breaks
 C. Includes only successful units
@@ -151,7 +152,7 @@ D. Is measured in dollars
 
 ---
 
-### Q19. In a DC bottleneck analysis, a backup at the dock doors during receiving indicates the bottleneck is:
+### Q19. In a DC bottleneck analysis, a backup at the dock doors during receiving indicates the bottleneck is: *(Apply)*
 A. Picking
 B. Putaway
 C. Receiving
@@ -159,7 +160,7 @@ D. Shipping
 
 ---
 
-### Q20. Demand-sensing techniques typically use:
+### Q20. Demand-sensing techniques typically use: *(Understand)*
 A. Annual aggregated forecasts
 B. Near-real-time POS / sell-through signals and ML
 C. Spreadsheet-only methods
@@ -167,7 +168,7 @@ D. Three-month moving averages only
 
 ---
 
-### Q21. An A-mover SKU should be slotted:
+### Q21. An A-mover SKU should be slotted: *(Apply)*
 A. At the back of the warehouse, on the top shelf
 B. In a forward-pick area, in the ergonomic golden zone (waist-shoulder)
 C. Anywhere — velocity doesn't affect slotting
@@ -175,7 +176,7 @@ D. In the reserve area only
 
 ---
 
-### Q22. A toy retailer's Q4 demand is so predictable that capacity decisions can use:
+### Q22. A toy retailer's Q4 demand is so predictable that capacity decisions can use: *(Apply)*
 A. Causal models with regression
 B. Seasonal time-series (e.g., Holt-Winters)
 C. Delphi only
@@ -183,7 +184,7 @@ D. Random number generators
 
 ---
 
-### Q23. A logistics director chooses to maintain a base load with permanent staff and flex peaks with temps and 3PL overflow. This is BEST described as:
+### Q23. A logistics director chooses to maintain a base load with permanent staff and flex peaks with temps and 3PL overflow. This is BEST described as: *(Understand)*
 A. Pure Lead strategy
 B. Pure Lag strategy
 C. Pure Match strategy
@@ -191,7 +192,7 @@ D. Hybrid (Chase + Level)
 
 ---
 
-### Q24. Bias and MAD differ in that:
+### Q24. Bias and MAD differ in that: *(Analyze)*
 A. Bias is the magnitude; MAD is the direction
 B. Bias is the direction (chronic over/under); MAD is the magnitude
 C. They are the same metric
@@ -199,7 +200,7 @@ D. Only one is exam-relevant
 
 ---
 
-### Q25. A forecast has tracking signal +8 for 4 weeks running. The correct action:
+### Q25. A forecast has tracking signal +8 for 4 weeks running. The correct action: *(Evaluate)*
 A. Ignore — tracking signal is unreliable
 B. Tighten safety stock
 C. Investigate and retune the forecast model

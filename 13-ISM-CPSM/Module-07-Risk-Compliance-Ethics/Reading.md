@@ -2,6 +2,12 @@
 
 > **Why this module matters:** CPSM weights ethics, sustainability, and risk heavily — and the questions are almost always judgment scenarios. There's no shortcut: you must internalize the ISM Principles and the risk-management toolkit until they're instinctive.
 
+> **Prerequisites for this module.** Before starting, you should be comfortable with:
+> - [Module 4 — SRM and tiering](../Module-04-Supplier-Relationship-Management/Reading.md): risk register builds on tier classification
+> - [Module 6 — FCPA, sanctions, FTAs](../Module-06-International-Supply/Reading.md): compliance hooks back here
+> - Cross-course: [Security+ Module 5 — Risk Management](../../09-CompTIA-Security-Plus/Module-05-Risk-Management/Reading.md) for ISO 31000 risk taxonomy that's identical to the supply-chain application
+> If Module 4 is shaky, pause and review before continuing.
+
 ---
 
 ## 🚒 A Story: The Tier-3 Supplier Nobody Mapped
@@ -205,13 +211,15 @@ ISM publishes **Principles of Sustainability and Social Responsibility** — a f
 🎯 **MEMORIZE THIS.** CPSM scenarios with ethical dilemmas almost always have an answer that aligns with these principles.
 
 ### Triple Bottom Line
-**People · Planet · Profit** — sustainability as the intersection of social, environmental, and economic performance. CPSM rewards this framing in answers.
+**People · Planet · Profit** — coined by John Elkington in his 1994 paper "Towards the Sustainable Corporation: Win-Win-Win Business Strategies for Sustainable Development" (Elkington, *California Management Review*, 1994) and expanded in his book *Cannibals with Forks: The Triple Bottom Line of 21st Century Business* (Elkington, 1997, Capstone). Sustainability as the intersection of social, environmental, and economic performance. CPSM rewards this framing in answers. (Note: Elkington himself published a 2018 *HBR* piece, "25 Years Ago I Coined the Phrase 'Triple Bottom Line.' Here's Why It's Time to Rethink It," arguing the term had been reduced to accounting and lost its original transformational ambition — useful nuance for a discussion answer.)
 
 ---
 
 ## 🏆 ESG in Supply Management
 
-ESG = Environmental, Social, Governance. Modern supply functions report on:
+ESG = Environmental, Social, Governance — a framing that traces to the 2004 UN Global Compact report *Who Cares Wins* and is now codified into law through the EU **Corporate Sustainability Reporting Directive (CSRD, effective January 2024 for large EU companies, phasing in through 2028)** and the related **Corporate Sustainability Due Diligence Directive (CSDDD, 2024, with phased deadlines through 2027-2029)**. A useful complementary frame is **Archie Carroll's CSR Pyramid** (Carroll, "A Three-Dimensional Conceptual Model of Corporate Performance," *Academy of Management Review*, 1979; later "The Pyramid of Corporate Social Responsibility," *Business Horizons*, 1991) which sequences corporate responsibilities as: economic → legal → ethical → philanthropic.
+
+Modern supply functions report on:
 
 | Pillar | Examples |
 |---|---|
@@ -243,6 +251,36 @@ Every CPSM professional is bound by ISM's ethical standards. Core obligations:
 7. **Promote and uphold responsible sourcing**
 
 🎯 **Exam pattern:** When a scenario presents a tempting unethical option, the right answer is almost always: **decline + document + disclose + escalate**. There are no "minor" ethics violations on the CPSM.
+
+---
+
+## 📊 Case Study — Foxconn / Apple Labor-Rights Audit Lifecycle and UFLPA (2010-2024)
+
+**Situation.** In 2010, Foxconn's Longhua "iPhone City" facility in Shenzhen made global headlines after a cluster of worker suicides — 14 confirmed deaths by mid-2010 against a workforce of ~400,000. Foxconn was Apple's largest assembler; Apple was Foxconn's largest customer. The crisis exposed Apple's then-light supply-chain labor visibility (Apple's first Supplier Code of Conduct dated only to 2005, audits to 2006). What followed over the next 14 years became the most-watched supply-chain labor case in modern business, threading through multiple regulatory regimes.
+
+**Decision.** Apple, with Tim Cook taking over supply chain leadership (and later CEO in 2011), executed a multi-decade response:
+1. **Supplier Responsibility Reports** — annual, public, with growing detail. By 2024, Apple was publishing audit findings on hundreds of suppliers including remediation plans.
+2. **Independent monitoring** — Fair Labor Association (FLA) brought in for Foxconn 2012 audit; findings included excessive working hours, underage workers in some facilities, unsafe conditions.
+3. **Wage and hour reforms** at Foxconn — Apple pressured Foxconn (alongside FLA findings) to reduce work hours from 60+/week to a target of 49, raise base wages, and end illegal use of student "interns" as full-time workers.
+4. **Tier-2/Tier-3 visibility** — Apple began mapping smelters of conflict minerals (Module 7 above) and aluminum suppliers.
+5. **Geographic diversification away from highest-risk Tier-3 origins** — particularly after the **US Uyghur Forced Labor Prevention Act (UFLPA, enacted December 2021, effective June 2022)** which created a rebuttable presumption against goods made wholly or partly in Xinjiang. Apple, like Nike, H&M, Volkswagen, and others, was forced to map and exit Xinjiang-origin cotton, polysilicon, and certain other inputs — a multi-year project still being executed in 2024-2025.
+
+Foxconn itself moved significant assembly to India and Vietnam (see Module 2 Apple case) — partly driven by labor cost, partly by tariff exposure, partly by labor-rights diversification.
+
+**Outcome.** By 2024, Apple's Supplier Responsibility program audited ~1,000 supplier facilities annually with thousands of corrective-action items. Foxconn's working conditions improved materially (though NGOs continued to flag specific cases). The 2010 suicide cluster did not repeat at the same scale. UFLPA enforcement has led to hundreds of US Customs and Border Protection (CBP) detentions of imported electronics with suspected Xinjiang content, with cumulative value over $3.5B in detained shipments by mid-2024 (CBP UFLPA statistics). Apple itself avoided major CBP detentions through aggressive supply-chain mapping that competitors did not match early enough.
+
+**Lesson for the exam / for practitioners.** This is the textbook **supplier conduct audit lifecycle**:
+- **Audit → Findings → Remediation → Re-audit → Disclosure** is the core loop.
+- **Tier-1 visibility is insufficient.** UFLPA enforcement requires Tier-3+ mapping for cotton, polysilicon, and certain minerals — and other regulations are catching up.
+- **The ISM Principles (sustainability, human rights, labor rights) are now codified into law** in jurisdictions Apple and its peers ship into. What was once "ESG nice-to-have" is now legal compliance.
+- **Switching alone doesn't fix the problem** — Apple could not simply switch from Foxconn in 2010 (no alternative at scale), and switching out of Xinjiang requires *multi-tier visibility* you can't acquire overnight.
+
+Note four exam-relevant patterns: (1) when an audit finds a labor violation, the textbook CPSM response is *engage on remediation; escalate; document; prepare contractual action up to termination* — and the Apple-Foxconn case is the playbook executed at scale; (2) Module 7's ISM Principles are explicitly aligned with how Apple frames its supplier code; (3) the **Triple Bottom Line** (Elkington 1994) and **Carroll's CSR Pyramid** (1979) are the academic foundations; (4) UFLPA, EU CSDDD, and UK Modern Slavery Act are converging into a de facto global standard that procurement now owns.
+
+**Discussion (Socratic).**
+- Q1: Apple was criticized in 2010 for "audit theater" — paying for audits but not improving conditions. By 2024, the program is widely regarded as the industry leader. What's the specific difference between performative auditing and effective auditing, and which failure mode is more common today?
+- Q2: UFLPA creates a *rebuttable presumption* against Xinjiang-origin goods — buyers can clear shipments only by proving the goods are not made with forced labor. Defend the policy as a procurement burden you'd accept. Then attack it as a barrier to legitimate trade. Which would you defend at a Senate hearing?
+- Q3: Apple's 2024 Supplier Responsibility Report identifies dozens of suppliers with active corrective-action plans. Some watchdogs argue Apple should *publicly name* every supplier in remediation. Apple does not. What's the trade-off, and which way would you push the policy?
 
 ---
 
@@ -310,6 +348,16 @@ Every CPSM professional is bound by ISM's ethical standards. Core obligations:
 
 ---
 
+## 💬 Discussion — Socratic Prompts
+
+1. **EU CSRD and the small-supplier squeeze.** Effective January 2024, the EU CSRD requires large companies to report on supply-chain sustainability and obtain data from suppliers. Small suppliers face a major reporting burden they can't easily absorb. Defend a position on whether the cost should be (a) borne by suppliers, (b) borne by buyers, or (c) reduced by mandatory standardized templates. What's the trade-off?
+2. **Risk treatment economics revisited.** Module 7 says "accept" the risk when treatment cost exceeds expected loss. But low-probability/high-impact events (Black Swans) systematically violate expected-value math — Nassim Taleb's argument. Build the case that supply organizations should *over*-mitigate Black Swan supply-chain risks even when the textbook math says accept.
+3. **The single source you can't get rid of.** A category manager has a single-source supplier in a high-risk jurisdiction. Switching is genuinely impossible for 2-3 years. What's the BEST risk treatment when avoidance is not feasible, transfer is partial, and mitigation has hit a ceiling?
+4. **ISM ethics vs local practice.** ISM's code is absolute: decline gifts of significant value. Yet in some markets, refusing a customary gift is a serious offense. Defend a *policy* that resolves this tension at a global company — what would you write in the supplier code of conduct?
+5. **Scope 3 emissions as procurement's KPI.** For most companies, Scope 3 is 70-90% of total emissions. Defend the case that procurement should own Scope 3 reduction as its #1 KPI, OR defend the case that it should remain Sustainability's KPI with procurement as a contributor. Which would you push?
+
+---
+
 ## ✅ Module 7 Summary
 
 You now know:
@@ -330,14 +378,23 @@ You now know:
 3. 📋 [Cheat-Sheet](./Cheat-Sheet.md)
 4. ➡️ [Module 8: Leadership & Project Management](../Module-08-Leadership-Project-Management/Reading.md)
 
+> **Where this leads.**
+> - Inside this course: Module 8 covers the leadership and stakeholder work required to actually implement risk and ESG programs.
+> - Cross-course: [Security+ Module 5](../../09-CompTIA-Security-Plus/Module-05-Risk-Management/Reading.md) for ISO 31000 risk taxonomy; [ASCM CSCP Module 9](../../10-ASCM-CSCP/Module-09-Risk-Management/Reading.md) for the broader chain-of-chains risk lens.
+> - Practice: Practice Exam 2 has ~20 questions drawn from this module (risk treatments, BCP, conflict minerals, modern slavery, ISM Principles).
+
 ---
 
 ## 📚 Further Reading (Optional)
 
-- 📖 *ISM Principles of Sustainability and Social Responsibility* (free at ismworld.org)
-- 📖 ISO 31000 (Risk Management) — overview free
-- 📖 OECD Due Diligence Guidance for Responsible Supply Chains
-- 📖 GHG Protocol Corporate Standard (Scope 1/2/3)
-- 📖 Responsible Minerals Initiative (responsiblemineralsinitiative.org)
-- 📖 *The Risk-Driven Business Model* by Girotra & Netessine
-- 📖 Resilinc, Everstream Analytics, Sphera supply-chain risk platforms
+- 📖 ISM *Principles of Sustainability and Social Responsibility* — free at ismworld.org
+- 📖 ISO 31000:2018 (Risk Management — Guidelines) — overview free from iso.org
+- 📖 Elkington, "Towards the Sustainable Corporation" — *California Management Review*, 1994 (Triple Bottom Line origin)
+- 📖 Elkington, "25 Years Ago I Coined the Phrase 'Triple Bottom Line.' Here's Why It's Time to Rethink It" — *HBR*, June 2018
+- 📖 Carroll, "The Pyramid of Corporate Social Responsibility" — *Business Horizons*, July-August 1991
+- 📖 OECD *Due Diligence Guidance for Responsible Supply Chains* — free PDF
+- 📖 GHG Protocol Corporate Standard (Scope 1/2/3) — ghgprotocol.org
+- 📖 Responsible Minerals Initiative (responsiblemineralsinitiative.org) — CMRT and EMRT templates
+- 📖 EU CSRD and CSDDD official documentation — eur-lex.europa.eu
+- 📖 *The Risk-Driven Business Model* by Girotra & Netessine (2014, HBS Press)
+- 📖 Resilinc, Everstream Analytics, Sphera, Interos — supply-chain risk platforms with public research

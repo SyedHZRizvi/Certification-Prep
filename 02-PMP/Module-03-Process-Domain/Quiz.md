@@ -246,3 +246,81 @@ Bottom-up estimating sums detailed estimates of each work package — most accur
 ## 📊 Score: 27+/30 🏆 / 22–26 ✅ / <22 🔁
 
 ➡️ [Cheat Sheet](./Cheat-Sheet.md) → [Module 4](../Module-04-Business-Environment/Reading.md)
+
+---
+
+## Bloom's-taxonomy tags for the questions above
+
+| Q | Bloom level | Why this level |
+|---|---|---|
+| Q1 | Remember | Recall who signs the Charter. |
+| Q2 | Remember | Recall the Critical Path definition. |
+| Q3 | Remember | Recall float on critical-path tasks. |
+| Q4 | Remember | Recall the PERT formula. |
+| Q5 | Understand | Distinguish fast-tracking from crashing. |
+| Q6 | Understand | Explain the cost characteristic of crashing. |
+| Q7 | Remember | Recall the Scope Baseline components. |
+| Q8 | Remember | Recall the Contingency Reserve purpose. |
+| Q9 | Remember | Recall sponsor's control over Management Reserve. |
+| Q10 | Understand | Explain what a work package is. |
+| Q11 | Apply | Apply the change-control sequence to a scope-addition request. |
+| Q12 | Remember | Recall lessons-learned cadence. |
+| Q13 | Understand | Identify PMB composition. |
+| Q14 | Remember | Recall ROM range. |
+| Q15 | Remember | Recall the 5 Process Groups. |
+| Q16 | Understand | Explain what approved CR outputs trigger. |
+| Q17 | Understand | Explain why the longest path is the shortest possible duration. |
+| Q18 | Understand | Identify the estimation technique from description. |
+| Q19 | Apply | Apply PERT formula to specific numbers. |
+| Q20 | Apply | Apply float math to a delay scenario. |
+| Q21 | Apply | Choose crashing vs fast-tracking given conditions. |
+| Q22 | Apply | Apply reserve logic to an unknown unknown. |
+| Q23 | Apply | Apply change-control first-step sequence. |
+| Q24 | Remember | Recall Charter's primary purpose. |
+| Q25 | Remember | Recall which artifact the 100% Rule applies to. |
+| Q26 | Understand | Explain lessons-learned storage location. |
+| Q27 | Understand | Distinguish T&M risk allocation from FP/CR. |
+| Q28 | Understand | Identify the PMB exclusion. |
+| Q29 | Remember | Recall the definitive estimate range. |
+| Q30 | Understand | Identify the most accurate estimation technique. |
+
+**Bloom distribution for Q1–Q30:** Remember 14 (~47%) · Understand 11 (~37%) · Apply 5 (~17%). The bonus questions below push Apply/Analyze/Evaluate/Create higher.
+
+---
+
+## Bonus questions (higher-Bloom)
+
+### Q31. You inherit a project where the previous PM "tailored" change control down to "approval by the PM only" because the team complained about CCB overhead. The team has been shipping for six months without issue. The new sponsor asks: is the tailoring defensible under PMBOK 7's Tailoring principle? *(Evaluate)*
+A. Yes — six months of stability proves it works.
+B. Yes — Tailoring permits any modification a PM chooses.
+C. Partially defensible only if (a) the project's risk profile and stakeholder count justify a lighter governance, (b) the alternatives were considered and documented, (c) escalation paths to a formal CCB exist for changes above a threshold, and (d) compliance/regulatory requirements still allow it. Otherwise, restore proper integrated change control.
+D. No — Tailoring is never appropriate for change control.
+
+### Q32. Knight Capital (from the case study). You are PM of a similar high-stakes financial-services deployment. Design a minimum set of pre-deployment gates that would have caught the legacy-code-still-present scenario. *(Create)*
+A. Manual checklist signed by the PM.
+B. A multi-layer set: configuration-management audit of all eight servers (file-hash comparison), automated regression test of the legacy code path, a documented rollback runbook practiced against production-shaped data, a CCB sign-off referencing a deployment-validation checklist, a kill-switch tested at the desk level, and a "go/no-go" gate at deploy time with named decision-makers — each gate mapped to a specific PMBOK 7 principle.
+C. A single QA cycle the day before launch.
+D. Trust the deployment engineer and skip gates to preserve velocity.
+
+### Q33. Your Critical Path analysis identifies a 3-week schedule overrun risk on a $4M project. Two options on the table: (A) Crashing adds $180K and removes ~2 weeks, with vendor risk; (B) Fast-tracking removes ~3 weeks but introduces a 35% chance of rework worth $300K. Using EMV + PMBOK 7's Risk principle, which is more defensible at a sponsor review? *(Analyze)*
+A. Crashing — $180K is less than the EMV of fast-track rework (0.35 × $300K = $105K) plus residual schedule risk, but only if vendor risk is mitigable; recommend crashing with a vendor performance clause and document the EMV reasoning.
+B. Fast-tracking always.
+C. Reduce scope unilaterally.
+D. Accept the overrun.
+
+### Q34. A regulated medical-device project has a fixed FDA submission deadline 11 months out. Mid-project, three "small" scope additions arrive from the clinical team. PMBOK 7's Tailoring principle says match governance to context. What's the MOST appropriate change-control posture? *(Apply)*
+A. Heavy-weight CCB review for every change, with documented impact analysis, regulatory-impact assessment, and traceability to validation artifacts; communicate the burden upfront so clinical understands the cost.
+B. Allow scope additions silently to keep clinical happy.
+C. Reject all changes after baseline.
+D. Defer to the FDA submission team only after the fact.
+
+### Q35. Standish CHAOS 2024 reports ~31% of IT projects deliver "on time, on budget, with required features," and ~19% are outright failures. You are pitching a senior executive on doubling PM rigor for a $40M program. Which argument is MOST evidence-based? *(Evaluate)*
+A. "Trust me, more process is always better."
+B. Frame the investment as expected-value reduction in failure probability: cite Standish CHAOS 2024 baseline, PMI Pulse 2024 finding that "value-driven" project organizations are ~2× more likely to meet objectives, link the process investment to specific control points (Change Control Board, baseline integrity, lessons-learned reuse), and propose a 90-day measurement window with named metrics.
+C. "Other companies do it."
+D. Threaten resignation if the budget isn't approved.
+
+```
+Bonus answer key
+31.C  32.B  33.A  34.A  35.B
+```

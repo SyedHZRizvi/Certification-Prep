@@ -2,6 +2,12 @@
 
 > **Why this module matters:** This module is only 12% of the exam, but it gives you the *vocabulary* for the other 88%. Every later question — about firewalls, ransomware, PKI, audits — will assume you can speak CIA, AAA, Zero Trust, and "control type vs control category" in your sleep.
 
+> **Prerequisites for this module.** Before starting, you should be comfortable with:
+> - Basic networking concepts (IP addresses, ports, client/server) — covered in CompTIA Network+ or equivalent practical exposure
+> - General computing literacy (operating systems, what an "admin" account is)
+>
+> If those are shaky, pause and review before continuing. This module assumes zero prior security background but does assume you've used computers professionally.
+
 ---
 
 ## 🍕 A Story: The Bakery That Got Robbed Twice
@@ -21,7 +27,7 @@ Welcome to security. We never rely on one control. We layer **preventive, deterr
 
 ## 🎯 The CIA Triad (You Will Be Tested. A Lot.)
 
-Every security decision protects one or more of these three properties. **Memorize cold.**
+The three properties — Confidentiality, Integrity, Availability — were articulated most influentially by Saltzer & Schroeder in "The Protection of Information in Computer Systems" (*Communications of the ACM*, September 1975; also published in *Proceedings of the IEEE*, vol. 63, no. 9). NIST later codified the triad in **SP 800-12 Rev 1** (*An Introduction to Information Security*, 2017) and the Federal Information Security Modernization Act (FISMA) builds its entire risk framework on it. Every security decision protects one or more of these three properties. **Memorize cold.**
 
 | Letter | Property | Means | Broken by | Protected by |
 |--------|----------|-------|-----------|--------------|
@@ -49,7 +55,7 @@ Every security decision protects one or more of these three properties. **Memori
 
 ## 🔐 AAA — Authentication, Authorization, Accounting
 
-A separate trio, but commonly confused with CIA. AAA is the **access lifecycle**.
+AAA was standardized for network access by the IETF in the RADIUS specs (Rigney et al., **RFC 2865** *Remote Authentication Dial In User Service*, 2000, and **RFC 2866** for accounting) and TACACS+ in **RFC 8907** (Dahm et al., 2020). A separate trio from CIA, but commonly confused with it. AAA is the **access lifecycle**.
 
 | Letter | Means | Example | Tool |
 |--------|-------|---------|------|
@@ -68,6 +74,8 @@ Sec+ also sometimes lists **AAA + Identification** as the full sequence:
 ---
 
 ## 🚪 Zero Trust — The Modern Architectural Default
+
+The term "Zero Trust" was coined by **John Kindervag** at Forrester Research in 2010 ("No More Chewy Centers: Introducing the Zero Trust Model of Information Security," Forrester Report, September 2010). Google operationalized it across its own corporate network as **BeyondCorp** (Ward & Beyer, "BeyondCorp: A New Approach to Enterprise Security," *;login:* USENIX magazine, December 2014). NIST then standardized the reference architecture in **SP 800-207** (*Zero Trust Architecture*, August 2020), which is what Sec+ tests on.
 
 The old model was a **castle-and-moat**: hard outer firewall, soft squishy inside. Once you were on the corporate network, you were trusted.
 
@@ -261,6 +269,29 @@ This is what a PBQ might show as a diagram — drag the labels (PEP, PE, PA, Ada
 
 ---
 
+## 📊 Case Study — Equifax (2017)
+
+**Situation.** Equifax, one of the three major US consumer credit-reporting bureaus, ran a public consumer-dispute portal on Apache Struts 2. On 7 March 2017, the Apache Software Foundation disclosed **CVE-2017-5638**, a remote-code-execution flaw in Struts' Jakarta Multipart parser, with a patch available the same day. US-CERT (now CISA) issued a public advisory the next day. Equifax's IT operations team circulated an internal "patch within 48 hours" directive on 9 March 2017.
+
+**Decision.** Equifax did *not* patch the dispute portal. The mandated patch never reached the affected server because the scanning tool used to verify compliance was misconfigured (the scan ran from a network segment that could not reach the host). On 10 March 2017 attackers exploited the unpatched flaw. They moved laterally onto file servers and ran undetected for **76 days** (mid-May through 29 July 2017). A SSL certificate on the network-monitoring device had expired 19 months earlier, so encrypted exfiltration traffic was never inspected. Equifax detected the breach only when the certificate was renewed in late July 2017.
+
+**Outcome.** **147.9 million** US consumers (45% of the US adult population), 15 million UK residents, and 19,000 Canadian records were exposed — SSNs, dates of birth, addresses, driver's-license numbers, and ~209,000 credit-card numbers. Equifax's CEO, CIO, and CSO retired within weeks. Equifax paid **$575–700 million** in a 2019 settlement with the FTC, CFPB, and 50 US states/territories — the largest data-breach settlement to that point (FTC press release, 22 July 2019). The US House Oversight Committee published a 96-page post-mortem ("The Equifax Data Breach," December 2018) that became required reading in corporate-governance and risk classes at Harvard Business School and Wharton.
+
+**Lesson for the exam / for practitioners.** Equifax violated **all three** CIA pillars simultaneously and failed at the basic control-management discipline this module teaches:
+- **Confidentiality** — 148M SSNs and DOBs exfiltrated to the open internet.
+- **Integrity** — attackers had write access; data integrity could not be assured.
+- **Availability** — the consumer portal was taken offline during incident response.
+- **Control-management failure** — a patch policy existed (managerial/directive) but the *detective* control (vulnerability scanner) was misconfigured, and the *corrective* control (patch deployment) never executed. Defense-in-depth (preventive + detective + corrective) collapsed because no single human owned end-to-end verification. The expired SSL cert on the inspection device meant the **detective** layer had been silently broken for 19 months.
+
+This case is exactly the scenario Security+ tests when asking, "Which control would have prevented this?" The answer is rarely one control — it is a *layered* failure.
+
+**Discussion (Socratic).**
+- **Q1:** If you were Equifax's CISO on 8 March 2017 (the day after the CVE dropped), what *three* compensating controls could you have stood up in 24 hours to mitigate a missed patch — accepting that you may not be able to deploy the patch itself in time? Defend each against the cost of false positives.
+- **Q2:** The expired SSL cert disabled deep-packet inspection for 19 months. Whose job was it to notice — the network team that owned the device, the SOC that consumed its alerts, or the GRC team that owned monitoring requirements? Argue for and against each.
+- **Q3:** Equifax's executives kept their stock-sale schedules during the breach window before public disclosure (a separate SEC investigation followed). Beyond the legal issues, what *organizational* signal does that send about CIA priorities, and how would you redesign incident-disclosure governance to remove the perverse incentive?
+
+---
+
 ## ✅ Module 1 Summary
 
 You now know:
@@ -277,11 +308,28 @@ You now know:
 3. 📋 Review the [Cheat-Sheet.md](./Cheat-Sheet.md) before bed
 4. ➡️ Move on: [Module 2 — Cryptography & PKI](../Module-02-Cryptography-PKI/Reading.md)
 
+> **Where this leads.**
+> - Inside this course: [Module 2](../Module-02-Cryptography-PKI/Reading.md) operationalizes Integrity (hashing, signatures) and Confidentiality (encryption); [Module 3](../Module-03-Identity-Access-Management/Reading.md) deepens AAA into MFA, SAML/OIDC, and PAM; [Module 9](../Module-09-GRC-Risk-Compliance/Reading.md) revisits control classification under NIST SP 800-53.
+> - Cross-course: AWS Solutions Architect Associate (course 04) Module on Security uses the same CIA/AAA vocabulary in AWS-specific terms (KMS, IAM, CloudTrail). Azure Administrator (course 06) covers Conditional Access — the Microsoft implementation of Adaptive Identity.
+> - Practice: Practice Exam 1 has ~8 questions drawing from this module; the Final Mock has ~10.
+
 ---
 
 ## 📚 Further Reading (Optional)
 
-- 📖 [NIST SP 800-207 — Zero Trust Architecture](https://csrc.nist.gov/publications/detail/sp/800-207/final) — the authoritative Zero Trust document
-- 📖 [NIST SP 800-53 Rev 5 — Security and Privacy Controls](https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final) — the giant control catalog
+**Primary sources (the originals):**
+- 📄 Saltzer, J.H. & Schroeder, M.D. (1975). "The Protection of Information in Computer Systems." *Proceedings of the IEEE*, 63(9), 1278-1308. (The CIA-triad-shaped paper. Foundational.)
+- 📄 Kindervag, J. (2010). "No More Chewy Centers: Introducing the Zero Trust Model of Information Security." *Forrester Research*. (Coined "Zero Trust.")
+- 📄 Ward, R. & Beyer, B. (2014). "BeyondCorp: A New Approach to Enterprise Security." *;login:* USENIX, 39(6). (Google's operational Zero Trust.)
+- 📄 NIST SP 800-207 (2020). [*Zero Trust Architecture*](https://csrc.nist.gov/publications/detail/sp/800-207/final). (Authoritative reference architecture.)
+- 📄 NIST SP 800-53 Rev 5 (2020, updated 2023). [*Security and Privacy Controls*](https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final). (The giant control catalog.)
+- 📄 NIST SP 800-12 Rev 1 (2017). [*An Introduction to Information Security*](https://csrc.nist.gov/publications/detail/sp/800-12/rev-1/final). (Gentle on-ramp.)
+- 📄 IETF RFC 2865 (Rigney et al., 2000) — RADIUS; IETF RFC 8907 (Dahm et al., 2020) — TACACS+.
+
+**Case-study sources:**
+- 📄 US House Committee on Oversight (2018). *The Equifax Data Breach* (Majority Staff Report, December 2018). 96 pp.
+- 📄 Federal Trade Commission (2019). *Equifax Data Breach Settlement* press release, 22 July 2019.
+
+**Practitioner / exam:**
 - 📖 [CompTIA Security+ SY0-701 Exam Objectives (PDF)](https://www.comptia.org/certifications/security) — read the official objectives at least twice during your studies
 - 📖 [Professor Messer SY0-701 video index](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video-training-course/) — free, comprehensive lecture set

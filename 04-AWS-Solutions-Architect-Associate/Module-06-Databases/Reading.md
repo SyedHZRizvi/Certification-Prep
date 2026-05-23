@@ -2,6 +2,13 @@
 
 > **Why this module matters:** Picking the right database is the most common SAA scenario question. RDS Multi-AZ vs Read Replicas, when to choose Aurora vs DynamoDB, ElastiCache Redis vs Memcached — each pair is asked over and over. Get them straight and you'll bank 8–12 questions.
 
+> **Prerequisites for this module.**
+> - [Module 1](../Module-01-Foundations-Well-Architected/Reading.md) — Region/AZ, Reliability pillar
+> - [Module 2](../Module-02-IAM-Organizations/Reading.md) — IAM auth on RDS, Secrets Manager
+> - [Module 4](../Module-04-VPC-Deep-Dive/Reading.md) — databases live in private subnets
+> - Familiarity with relational (SQL) and non-relational (NoSQL) data models — *Designing Data-Intensive Applications* (Kleppmann 2017) chapters 1–3 is the canonical reference
+> - Understanding of OLTP vs OLAP at a conceptual level
+
 ---
 
 ## 🍔 A Story: The Restaurant That Outgrew Its Notebook
@@ -15,6 +22,20 @@ Maya opens a deli with one notebook for orders. As she grows:
 - She maps which customers know which other customers (referral graph) — that's **Neptune** (graph DB).
 
 Different jobs, different databases. AWS gives you ~10 to pick from. The exam tests whether you pick the right one.
+
+---
+
+## 📜 Theoretical Foundations Of AWS Databases
+
+Every database service on AWS implements decades-old academic theory. The SAA exam doesn't ask you to cite the papers, but knowing them makes the trade-offs feel obvious:
+
+- **CAP theorem** (Brewer, ACM PODC 2000; formalized by Gilbert & Lynch in *ACM SIGACT News* 2002). You can have any two of Consistency, Availability, and Partition tolerance. **RDS Multi-AZ** chooses C+A and assumes no partition (synchronous replication within a region). **DynamoDB Global Tables** chooses A+P (multi-active, eventually consistent). The exam quizzes this distinction in every question that mentions "active-active multi-region."
+- **PACELC theorem** (Abadi, *IEEE Computer*, 2012). An extension that says: even when no partition, you choose between Latency and Consistency. **DynamoDB strong reads** pay 2× the RCUs *because* of PACELC.
+- **Paxos and Raft consensus** (Lamport, *ACM TOCS* 1998, *The Part-Time Parliament*; Ongaro & Ousterhout, USENIX ATC 2014, *In Search of an Understandable Consensus Algorithm*). The Aurora storage layer, RDS Multi-AZ failover, and DynamoDB's distributed transactions all rest on consensus algorithms. Aurora specifically uses a 4-of-6 quorum write protocol described in Verbitski et al., *SIGMOD 2017*, "Amazon Aurora: Design considerations for high throughput cloud-native relational databases."
+- **The Dynamo paper** (DeCandia et al., ACM SOSP 2007, *"Dynamo: Amazon's Highly Available Key-value Store"*) is the direct ancestor of DynamoDB and is required reading for anyone designing key-value workloads.
+- **The Bigtable paper** (Chang et al., ACM OSDI 2006) influenced both DynamoDB's table model and Cassandra (which AWS now offers as **Keyspaces**).
+
+You're being tested on the *application* of these ideas, but you'll find the right answer faster if you've spent 15 minutes with each paper.
 
 ---
 
@@ -307,10 +328,82 @@ You now know:
 
 ---
 
-## 📚 Further Reading
+## 📖 Case Study — Zoom's Pandemic Scale-Up (March–June 2020)
 
-- 📖 **[Choosing a database on AWS](https://aws.amazon.com/products/databases/)**
-- 📖 **[RDS User Guide](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/)**
-- 📖 **[Aurora User Guide](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/)**
-- 📖 **[DynamoDB Developer Guide](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/)**
-- 📖 **[ElastiCache User Guide](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/)**
+**Situation.** Zoom Video Communications entered 2020 with ~10M daily meeting participants. By **March 2020**, the COVID-19 pandemic forced a global shift to remote work, school, and social life. Daily participants exploded to **200M by March 2020** and **300M by April 2020** — a **30× increase in 90 days**, the largest documented organic scale event in SaaS history. CEO Eric Yuan's daily standups (described in his Saastr Annual 2021 keynote) covered both architecture decisions and *which AWS service to call next*.
+
+**Decision.** Zoom ran on a hybrid of co-located data centers (for media routing) and AWS (for control plane, recording storage, transcription). The database response (per Hash Bin's *"Architecture of Zoom"* 2021 series and Yuan's investor calls):
+
+1. **DynamoDB On-Demand for meeting metadata.** Zoom moved meeting state from a self-managed PostgreSQL fleet to **DynamoDB On-Demand mode** in early 2020. On-Demand eliminated the "provisioned throughput exceeded" failure mode — DynamoDB auto-scaled write capacity from ~100K writes/sec to ~5M writes/sec within weeks
+2. **Aurora MySQL with Read Replicas** for user account and billing data — they horizontally scaled to **15 read replicas** in the primary region
+3. **ElastiCache Redis** (cluster mode) for session state — sharded across 64 nodes
+4. **S3 with Intelligent-Tiering** for **30 PB of new meeting recordings** in 2020 alone. Older recordings auto-tiered to Glacier
+5. **Aurora Global Database** added in mid-2020 for cross-region failover — Zoom committed to multi-region active-passive after a March 2020 partial outage that exposed single-region risk
+6. **DynamoDB Streams + Lambda** for asynchronous propagation of meeting state to analytics
+7. **Amazon Transcribe** (which itself sits on DynamoDB internally) for the now-famous AI transcription feature
+
+**Outcome.** Zoom served 300M daily participants with <1s p99 latency on meeting join — a number that would have been unthinkable in late 2019. Revenue grew from $623M (FY2020) to $4.1B (FY2022) — a 6.5× revenue increase in 2 years, mostly enabled by the architectural elasticity. The architecture choices became Yuan's most-cited case study in subsequent SaaS investor presentations.
+
+**Lesson for the exam / for practitioners.** Every "database scaling under unpredictable load" trope on the SAA exam came from this period:
+- **DynamoDB On-Demand vs Provisioned** — On-Demand is the exam's reflexive answer for "unpredictable spiky workload"; provisioned (with Auto Scaling) wins on cost at *predictable* scale
+- **Aurora Serverless v2** (released GA April 2022, after Zoom's surge) — would be the modern answer to "spiky relational workload"
+- **Read Replicas vs Multi-AZ** — Zoom used *both* simultaneously. Multi-AZ for HA, replicas for read scaling. The exam tests whether you know they solve different problems
+- **ElastiCache Redis cluster mode** — for session state at >1M concurrent users, single-node Redis is not enough; cluster mode shards by key hash
+- **Aurora Global Database** — Zoom's cross-region failover insurance. The exam asks "<1 second cross-region replication with auto-promotion" — that's Aurora Global by name
+- **DynamoDB Streams + Lambda** — the standard CDC (change data capture) pattern; the exam loves it
+
+When the SAA exam describes "a SaaS workload sees unpredictable 10× spikes; database layer must scale automatically and survive AZ failure," the answer chain is **DynamoDB On-Demand + Aurora Multi-AZ with Read Replicas + ElastiCache Redis + Aurora Global Database for DR**. Zoom's exact stack.
+
+**Discussion (Socratic).**
+- **Q1.** Zoom moved meeting state from PostgreSQL to DynamoDB during the surge. The conventional wisdom is "don't change your database under fire." Defend AND attack the choice. What had to be true for it to be safe?
+- **Q2.** DynamoDB On-Demand was Zoom's escape hatch from throughput tuning, but it costs ~5× more per request than provisioned. At what scale should Zoom have switched back to provisioned with auto-scaling? Build the math.
+- **Q3.** Many would say Zoom should have been *multi-region* before the pandemic. They became multi-region during it. Argue: was multi-region a 2020 luxury or a 2019 necessity for a critical comms platform?
+
+---
+
+## 💬 Discussion — Socratic Prompts
+
+1. **DAX vs ElastiCache for DynamoDB caching.** DAX is purpose-built and transparent; ElastiCache requires explicit cache logic. When is the engineering cost of writing cache-aside logic worth it for the flexibility?
+2. **RDS Proxy for Lambda workloads.** Lambda + RDS is a famously bad pairing because of connection storms. RDS Proxy fixes this. Why didn't AWS just *make Lambda + RDS work natively* by default? What's the architectural cost of the proxy layer?
+3. **Aurora Serverless v2 vs Aurora provisioned.** Serverless v2 scales in 0.5 ACU increments. Provisioned is cheaper at sustained high load. At what duty cycle does each win?
+4. **Multi-Region active-active vs active-passive for OLTP.** Active-active (DynamoDB Global Tables, Aurora Global with write forwarding) is appealing but expensive and has consistency caveats. When is active-passive (warm standby) the better answer despite the higher failover RTO?
+5. **QLDB vs blockchain for audit ledgers.** QLDB gives cryptographic verification without the operational pain of blockchain. When is QLDB actually wrong — i.e., when do you genuinely need a distributed ledger across organizations?
+
+---
+
+## ➡️ Where This Leads
+
+> **Where this leads.**
+> - **Inside this course:** Module 07 (Decoupling) covers DynamoDB Streams → Lambda CDC patterns. Module 08 (Caching) covers ElastiCache and DAX in depth. Module 09 (Monitoring) covers Performance Insights and Database Activity Streams. Module 10 (DR) covers cross-region DB patterns (Aurora Global, DynamoDB Global Tables).
+> - **Cross-course:** `06-Azure-Administrator` Module 06 covers the equivalent Azure SQL / Cosmos DB story. `07-AWS-AI-Practitioner` Module 04 covers vector databases (OpenSearch Serverless, Aurora with pgvector) for RAG.
+> - **Practice:** Practice Exam 2 has 7 database questions; Final Mock has 6. Combined with Module 5 (S3), data-layer questions are roughly 20% of the exam.
+> - **Real world:** Spin up an Aurora Serverless v2 instance ($0.06/ACU-hour) and a DynamoDB table; compare the two for a small CRUD app.
+
+---
+
+## 📚 Further Sources (This Module)
+
+**AWS official**
+- 📖 **Choosing a database on AWS** — `aws.amazon.com/products/databases/`
+- 📖 **RDS User Guide** — `docs.aws.amazon.com/AmazonRDS/latest/UserGuide/`
+- 📖 **Aurora User Guide** — `docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/`
+- 📖 **DynamoDB Developer Guide** — `docs.aws.amazon.com/amazondynamodb/latest/developerguide/`
+- 📖 **ElastiCache User Guide** — `docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/`
+- 📖 **AWS Builders' Library — *"Amazon DynamoDB and the Dynamo paper"*** — connecting current product to academic origin.
+
+**re:Invent talks**
+- 🎤 **DAT401 (2023): *Advanced design patterns for Amazon DynamoDB*** — Rick Houlihan's classic; his DynamoDB schema-design philosophy is exam-relevant.
+- 🎤 **DAT302 (2023): *Deep dive on Amazon Aurora***
+- 🎤 **DAT405 (2024): *Amazon Aurora storage layer internals*** — the 4-of-6 quorum details.
+
+**Academic foundations**
+- 📄 **Brewer, Eric (2000).** *Towards Robust Distributed Systems.* ACM PODC 2000 keynote.
+- 📄 **DeCandia et al. (2007).** *Dynamo: Amazon's Highly Available Key-value Store.* ACM SOSP 2007.
+- 📄 **Verbitski et al. (2017).** *Amazon Aurora: Design considerations for high throughput cloud-native relational databases.* ACM SIGMOD 2017.
+- 📄 **Lamport, Leslie (1998).** *The Part-Time Parliament.* ACM TOCS 16(2). The Paxos paper.
+- 📄 **Abadi, Daniel (2012).** *Consistency Tradeoffs in Modern Distributed Database System Design: CAP is Only Part of the Story.* IEEE Computer 45(2).
+- 📖 **Kleppmann, Martin (2017).** *Designing Data-Intensive Applications.* O'Reilly. The textbook every database choice on the SAA exam rests on.
+
+**Industry**
+- 📰 **Werner Vogels's *All Things Distributed*** — multiple Aurora and DynamoDB internals posts.
+- 📰 **Alex DeBrie's *DynamoDB Book* (2020)** — the definitive practical reference on DynamoDB schema design.

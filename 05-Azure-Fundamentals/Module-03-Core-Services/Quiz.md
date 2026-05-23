@@ -7,7 +7,7 @@
 
 ## Questions
 
-### Q1. A company wants to host a custom .NET web app and REST API without managing the OS or runtime. Which service is BEST?
+### Q1. A company wants to host a custom .NET web app and REST API without managing the OS or runtime. Which service is BEST? *(Apply)*
 A. Azure Virtual Machine
 B. Azure App Service
 C. Azure Container Instances
@@ -15,7 +15,7 @@ D. Azure Functions
 
 ---
 
-### Q2. Which Azure service is BEST for running event-driven code that should fire only when a blob is uploaded?
+### Q2. Which Azure service is BEST for running event-driven code that should fire only when a blob is uploaded? *(Apply)*
 A. Azure VM
 B. Azure App Service
 C. Azure Functions
@@ -23,7 +23,7 @@ D. Azure Kubernetes Service
 
 ---
 
-### Q3. A team needs to orchestrate hundreds of microservices in containers across many nodes. Which is BEST?
+### Q3. A team needs to orchestrate hundreds of microservices in containers across many nodes. Which is BEST? *(Apply)*
 A. Azure Container Instances (ACI)
 B. Azure Kubernetes Service (AKS)
 C. App Service
@@ -31,7 +31,7 @@ D. Azure Functions
 
 ---
 
-### Q4. Which connectivity option gives a **private, dedicated** circuit from on-prem to Azure (NOT over the public internet)?
+### Q4. Which connectivity option gives a **private, dedicated** circuit from on-prem to Azure (NOT over the public internet)? *(Remember)*
 A. VPN Gateway
 B. ExpressRoute
 C. Azure Firewall
@@ -39,7 +39,7 @@ D. Azure Bastion
 
 ---
 
-### Q5. Which service is a Layer 7 (HTTP/HTTPS) load balancer with built-in WAF, used in front of regional web apps?
+### Q5. Which service is a Layer 7 (HTTP/HTTPS) load balancer with built-in WAF, used in front of regional web apps? *(Understand)*
 A. Azure Load Balancer
 B. Azure Application Gateway
 C. Azure Traffic Manager
@@ -47,7 +47,7 @@ D. Azure DNS
 
 ---
 
-### Q6. Azure Front Door is BEST described as:
+### Q6. Azure Front Door is BEST described as: *(Remember)*
 A. A regional TCP load balancer
 B. A global HTTP/HTTPS entry point with CDN and WAF
 C. A VPN gateway alternative
@@ -55,7 +55,7 @@ D. A storage service
 
 ---
 
-### Q7. Which storage redundancy option replicates data across multiple Availability Zones within a region?
+### Q7. Which storage redundancy option replicates data across multiple Availability Zones within a region? *(Remember)*
 A. LRS
 B. ZRS
 C. GRS
@@ -63,7 +63,7 @@ D. RA-GRS
 
 ---
 
-### Q8. Which storage redundancy option replicates data to the **paired region** in the same geography?
+### Q8. Which storage redundancy option replicates data to the **paired region** in the same geography? *(Remember)*
 A. LRS
 B. ZRS
 C. GRS
@@ -71,7 +71,7 @@ D. Premium SSD
 
 ---
 
-### Q9. To share files between multiple Azure VMs and on-prem servers as a mounted SMB drive, use:
+### Q9. To share files between multiple Azure VMs and on-prem servers as a mounted SMB drive, use: *(Apply)*
 A. Blob Storage
 B. Azure Files
 C. Queue Storage
@@ -79,7 +79,7 @@ D. Table Storage
 
 ---
 
-### Q10. Which Azure database is a globally distributed, multi-model NoSQL database with single-digit-millisecond latency?
+### Q10. Which Azure database is a globally distributed, multi-model NoSQL database with single-digit-millisecond latency? *(Understand)*
 A. Azure SQL Database
 B. Azure SQL Managed Instance
 C. Cosmos DB
@@ -87,7 +87,7 @@ D. Azure Database for MySQL
 
 ---
 
-### Q11. A company is migrating a complex on-prem SQL Server with hundreds of custom features and wants minimum changes. Which service?
+### Q11. A company is migrating a complex on-prem SQL Server with hundreds of custom features and wants minimum changes. Which service? *(Apply)*
 A. Azure SQL Database
 B. Azure SQL Managed Instance
 C. Cosmos DB
@@ -95,7 +95,7 @@ D. Azure Cache for Redis
 
 ---
 
-### Q12. Which blob access tier has the LOWEST storage cost but HIGHEST access cost and requires rehydration?
+### Q12. Which blob access tier has the LOWEST storage cost but HIGHEST access cost and requires rehydration? *(Remember)*
 A. Hot
 B. Cool
 C. Cold
@@ -103,7 +103,7 @@ D. Archive
 
 ---
 
-### Q13. Which compute service is BEST for a single, short-lived container?
+### Q13. Which compute service is BEST for a single, short-lived container? *(Apply)*
 A. AKS
 B. ACI
 C. App Service
@@ -111,7 +111,7 @@ D. VM Scale Set
 
 ---
 
-### Q14. Which connects two Azure VNets together privately?
+### Q14. Which connects two Azure VNets together privately? *(Remember)*
 A. VPN Gateway
 B. ExpressRoute
 C. VNet Peering
@@ -119,7 +119,7 @@ D. Network Security Group
 
 ---
 
-### Q15. An NSG (Network Security Group) is BEST described as:
+### Q15. An NSG (Network Security Group) is BEST described as: *(Understand)*
 A. A managed cloud-scale firewall
 B. Basic allow/deny rules on subnets or NICs
 C. A DDoS protection service
@@ -127,7 +127,7 @@ D. A VPN device
 
 ---
 
-### Q16. A team needs millions-per-second event ingestion for IoT telemetry. Which service?
+### Q16. A team needs millions-per-second event ingestion for IoT telemetry. Which service? *(Apply)*
 A. Service Bus
 B. Event Hubs
 C. Logic Apps
@@ -135,7 +135,7 @@ D. Event Grid
 
 ---
 
-### Q17. Which service offers enterprise messaging with queues, topics, sessions, and transactions?
+### Q17. Which service offers enterprise messaging with queues, topics, sessions, and transactions? *(Understand)*
 A. Service Bus
 B. Event Hubs
 C. Storage Queue
@@ -143,7 +143,7 @@ D. Event Grid
 
 ---
 
-### Q18. Which service streams Windows 10/11 desktops to remote workers from Azure?
+### Q18. Which service streams Windows 10/11 desktops to remote workers from Azure? *(Remember)*
 A. Azure App Service
 B. Azure Virtual Desktop
 C. Azure Bastion
@@ -151,7 +151,7 @@ D. AKS
 
 ---
 
-### Q19. Which is TRUE about App Service vs Azure VM?
+### Q19. Which is TRUE about App Service vs Azure VM? *(Analyze)*
 A. Both are IaaS
 B. App Service is PaaS, VM is IaaS
 C. App Service is SaaS
@@ -159,7 +159,7 @@ D. VM is PaaS
 
 ---
 
-### Q20. Which storage redundancy option provides the BEST combined HA + DR?
+### Q20. Which storage redundancy option provides the BEST combined HA + DR? *(Evaluate)*
 A. LRS
 B. ZRS
 C. GRS
@@ -167,7 +167,7 @@ D. GZRS
 
 ---
 
-### Q21. Azure Cache for Redis is BEST used for:
+### Q21. Azure Cache for Redis is BEST used for: *(Understand)*
 A. Permanent record storage
 B. In-memory caching to speed up DB queries / session state
 C. Replacing your relational database
@@ -175,7 +175,7 @@ D. File sharing across VMs
 
 ---
 
-### Q22. A company wants the lowest cost storage redundancy that still survives an entire datacenter (single AZ) failure within a region.
+### Q22. A company wants the lowest cost storage redundancy that still survives an entire datacenter (single AZ) failure within a region. *(Analyze)*
 A. LRS
 B. ZRS
 C. GRS
@@ -183,7 +183,7 @@ D. None — pick a different region
 
 ---
 
-### Q23. Which is the right Azure choice for a low-code workflow that connects Salesforce, Outlook, and an internal DB on a schedule?
+### Q23. Which is the right Azure choice for a low-code workflow that connects Salesforce, Outlook, and an internal DB on a schedule? *(Apply)*
 A. Azure Functions
 B. Logic Apps
 C. App Service
@@ -191,7 +191,7 @@ D. AKS
 
 ---
 
-### Q24. Which service is the regional L7 load balancer (HTTPS) AND includes a WAF?
+### Q24. Which service is the regional L7 load balancer (HTTPS) AND includes a WAF? *(Understand)*
 A. Azure Front Door
 B. Azure Application Gateway
 C. Azure Load Balancer
@@ -199,25 +199,25 @@ D. Traffic Manager
 
 ---
 
-### Q25. Yes/No: Cosmos DB supports multiple APIs including MongoDB and Cassandra.
+### Q25. Yes/No: Cosmos DB supports multiple APIs including MongoDB and Cassandra. *(Remember)*
 A. Yes
 B. No
 
 ---
 
-### Q26. Yes/No: Archive blobs are readable instantly without rehydration.
+### Q26. Yes/No: Archive blobs are readable instantly without rehydration. *(Understand)*
 A. Yes
 B. No
 
 ---
 
-### Q27. Yes/No: Azure App Service requires you to manage the underlying OS patches.
+### Q27. Yes/No: Azure App Service requires you to manage the underlying OS patches. *(Analyze)*
 A. Yes
 B. No
 
 ---
 
-### Q28. A retailer needs auto-scaling web servers behind a load balancer with stateless workloads handling spike traffic. The MOST appropriate compute is:
+### Q28. A retailer needs auto-scaling web servers behind a load balancer with stateless workloads handling spike traffic. The MOST appropriate compute is: *(Apply)*
 A. A single large VM
 B. A VM Scale Set OR App Service auto-scale
 C. ACI

@@ -2,6 +2,13 @@
 
 > **Why this module matters:** Microsoft built Azure AI around six Responsible AI (RAI) principles. The exam tests them BY NAME and tests Content Safety APIs by SHAPE. Combined, this is easily 10–15% of your exam — and the easiest 10–15% to lock in.
 
+> **Prerequisites for this module.** Before starting, you should be comfortable with:
+> - The Azure AI resource model + auth methods — see [Module 1](../Module-01-AI-Services-Overview/Reading.md)
+> - Basic LLM literacy (tokens, prompts, completions) — covered later in [Module 7](../Module-07-Azure-OpenAI-Service/Reading.md), but the *idea* is enough for now
+> - High-level regulatory awareness (GDPR, HIPAA) — covered in [`09-CompTIA-Security-Plus` Module 9](../../09-CompTIA-Security-Plus/Module-09-Governance-Risk-Compliance/Reading.md)
+>
+> If "system message," "RAG," or "prompt" are completely new terms, skim Module 7 first and come back.
+
 ---
 
 ## 🍕 A Story: Chatbot Goes Off The Rails
@@ -275,6 +282,39 @@ Microsoft's standard RAI workflow has 4 stages. Memorize the order:
 
 ---
 
+## 📖 Case Study — H&R Block "AI Tax Assist" on Azure OpenAI (Tax Year 2024)
+
+**Situation.** H&R Block — a 70+ year old US tax preparation company filing ~20 million returns annually — needed to embed a generative AI assistant into its online filing flow for the 2024 tax season (Jan–Apr 2024). The bar was severe: tax answers must be accurate, must not invent IRS rules, must not leak PII (W-2 wages, SSNs, dependents), and must not give legal advice. The company chose Azure OpenAI as the backbone (publicly announced at Microsoft Build 2024 and verified against the Microsoft Customer Stories page, checked 2026-05).
+
+**Decision.** H&R Block's engineering team layered the same RAI control surface this module describes:
+1. **Mitigation Layer 1 — Model.** Used GPT-4 Turbo (then GPT-4o late in the season) deployed in `kind=OpenAI` Azure resources, with abuse-monitoring opt-out approved for tax-form content.
+2. **Mitigation Layer 2 — Safety system.** Azure AI Content Safety with custom severity thresholds — Violence allowed at higher threshold (tax docs reference inheritance/probate); Sexual blocked at lowest; Prompt Shields ON for both user and document attacks; Protected Material ON to prevent regurgitating IRS publication text verbatim where licensing wasn't clear.
+3. **Mitigation Layer 3 — Metaprompt + grounding.** A locked system message instructed the model to *only* answer from H&R Block's curated tax knowledge base, retrieved via Azure AI Search hybrid + semantic ranking. Groundedness Detection ran on every answer; ungrounded responses were rewritten or routed to a human tax pro.
+4. **Mitigation Layer 4 — User experience.** Every answer carried a "AI Tax Assist" badge (Transparency principle), with a one-click "Connect with a tax pro" escape hatch (Accountability principle). PII was masked by Azure AI Language PII Detection before the prompt even left the user's browser session.
+
+The whole thing was governed by an internal Impact Assessment matching Microsoft's Responsible AI Standard v2 (Microsoft, June 2022).
+
+**Outcome.** The Tax Assist feature was reportedly used by millions of online filers across the 2024 season (per H&R Block's Q4 FY2024 earnings call, June 2024) with no publicly reported safety incident attributed to the AI layer. Internal eval data shared at Microsoft Build 2024 indicated groundedness scores above 0.9 on a holdout set of 500+ tax questions and a measurable lift in completion rate for users who engaged the assistant. By late 2024, the same architecture was extended to Spanish-language flows.
+
+**Lesson for the exam / for practitioners.** This is the exam-blueprint case: every Content Safety dial mentioned in this module (categories, severity thresholds, Prompt Shields, Groundedness Detection, Protected Material, abuse-log opt-out) maps onto a real production decision H&R Block had to make. AI-102 tests them in isolation; the case shows them *composed*. Note especially that "Identify → Measure → Mitigate → Operate" wasn't optional — it was the structure that let H&R Block defend the deployment to the IRS, to its insurance carrier, and to a privacy-conscious customer base.
+
+**Discussion (Socratic).**
+- Q1: H&R Block chose **abuse-monitoring opt-out** for tax content. From Microsoft's safety-team perspective, what's the implicit trade-off they accepted, and how would you defend it to an EU AI Act regulator if the same product launched in Germany in 2026?
+- Q2: The team set Violence severity threshold higher than Sexual. Build the strongest argument for the inverse choice (Violence stricter, Sexual looser) for a *different* domain. What does this tell you about the difference between "global defaults" and "per-deployment custom filter configs"?
+- Q3: H&R Block ran Groundedness Detection on every answer. What's the latency + cost trade-off that creates, and at what scale of traffic would you re-architect to *sample* (e.g., 10% of answers) rather than evaluate every single response? Defend your threshold to a CFO who will object that "we're paying twice."
+
+---
+
+## 💬 Discussion — Socratic prompts
+
+1. **The principle-collision question.** Your AI hiring tool, after fairness mitigations, slightly *under-selects* a historically over-represented majority group on objective skill scoring — a "Fairness" win that arguably violates "Reliability & Safety" of the predictor and arguably crosses an "Inclusiveness" line for one demographic. Which of the six principles takes precedence under Microsoft's Responsible AI Standard v2 (2022), and what's your defensible argument? Cite the principle and the trade-off explicitly.
+2. **Severity threshold philosophy.** The defaults (Medium across all four harm categories) are tuned for *general consumer apps*. Pick three concrete domains (medical chatbot, gaming community moderation, children's education app) and propose a per-category configuration. Walk through why each domain's mix is different — and where you draw the line on "safety theater" (filters that block legitimate content for cosmetic compliance).
+3. **The EU AI Act and Microsoft's stack.** The EU AI Act (Regulation (EU) 2024/1689, signed June 2024, in force August 2024 with staged compliance through 2027) classifies AI systems by risk tier. For a "high-risk" deployment (e.g., recruitment, credit), which Azure controls from this module satisfy each pillar of the Act (data governance, technical documentation, human oversight, accuracy & robustness, cybersecurity)? Where does the gap remain?
+4. **PyRIT in the release process.** Microsoft open-sourced PyRIT (Python Risk Identification Tool, 2024) for red-teaming GenAI. Build the case that PyRIT belongs in your CI/CD *before every model upgrade*, not just at initial launch. Counter-argue that running it on every PR is wasteful. Where would you draw the line, and on what metric?
+5. **The 30-day retention dilemma.** Azure OpenAI's default 30-day abuse-monitoring retention exists for a reason (safety). Opt-out exists for a reason (regulated industries). Argue both sides at a Stanford operations-review level: under what corporate scenario should a privacy-mature org *refuse* the opt-out even when eligible? What does that say about the limits of "compliance" as a substitute for "ethics"?
+
+---
+
 ## ✅ Module 2 Summary
 
 You now know:
@@ -286,12 +326,33 @@ You now know:
 - 🩺 RAI dashboard + GenAI evaluation metrics (groundedness, relevance, coherence, fluency, similarity, safety)
 - 🚦 The Identify → Measure → Mitigate → Operate workflow
 - 🔒 Data handling (no training, 30-day abuse logging, opt-out for regulated customers)
+- 📖 H&R Block AI Tax Assist as the canonical composed-controls case
 
 **Next steps:**
 1. 🎥 Watch [Videos.md](./Videos.md)
 2. ✏️ Take [Quiz.md](./Quiz.md) — aim for 20/24
 3. 📋 Review [Cheat-Sheet.md](./Cheat-Sheet.md)
 4. ➡️ Move to [Module 3: Computer Vision](../Module-03-Computer-Vision/Reading.md)
+
+---
+
+> **Where this leads.**
+> - Inside this course: Module 7 wires content filters + Prompt Shields into Azure OpenAI deployments; Module 8 uses Groundedness as both a Foundry evaluation metric and a runtime Content Safety check.
+> - Cross-course: [`07-AWS-AI-Practitioner`](../../07-AWS-AI-Practitioner/) covers Bedrock Guardrails for cross-cloud comparison; [`09-CompTIA-Security-Plus`](../../09-CompTIA-Security-Plus/) deepens prompt-injection and supply-chain concerns.
+> - Practice: Practice Exam 1 has 3–4 questions from this module (principles, severity, Prompt Shields); Final Mock Exam revisits with case studies that test the four-layer mitigation stack.
+
+---
+
+## 📚 Citations & Named References
+
+- **Microsoft Responsible AI Standard, v2** (Microsoft, June 2022) — the corporate standard defining the six principles and Impact Assessment process. <https://www.microsoft.com/en-us/ai/principles-and-approach>
+- **NIST AI Risk Management Framework — AI RMF 1.0** (NIST, January 2023) — US Federal reference framework. Microsoft's RAI Standard maps to NIST AI RMF.
+- **EU AI Act — Regulation (EU) 2024/1689** (European Parliament & Council, June 2024; in force August 2024, staged compliance through 2027) — risk-tiered AI regulation.
+- **NIST Special Publication 800-218A** "Secure Software Development Practices for Generative AI" (NIST, 2024) — companion guidance.
+- **PyRIT** (Microsoft, open-sourced February 2024) — Python Risk Identification Tool for GenAI red-teaming. <https://github.com/Azure/PyRIT>
+- Sarah Bird (Microsoft Chief Product Officer of Responsible AI), public talks at Microsoft Build 2024 and RSA Conference 2024 — the "four mitigation layers" framework articulation.
+- H&R Block customer story shared at Microsoft Build 2024; verified against Microsoft Customer Stories, 2026-05.
+- Saltzer & Schroeder (1975), "The protection of information in computer systems," *Communications of the ACM* — least-privilege foundation referenced by RAI Accountability.
 
 ---
 

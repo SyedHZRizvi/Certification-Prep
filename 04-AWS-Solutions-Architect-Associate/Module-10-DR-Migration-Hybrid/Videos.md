@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~55 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+disaster+recovery+strategies+backup+pilot+light+warm+standby" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="dn4F15S4cNw" href="https://www.youtube.com/results?search_query=AWS+disaster+recovery+strategies+backup+pilot+light+warm+standby" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>⛑️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 15 min · The official ladder</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Snow+family+Snowball+Snowmobile" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="zXyudn7KeZM" href="https://www.youtube.com/results?search_query=AWS+Snow+family+Snowball+Snowmobile" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>❄️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 12 min · Snowcone, Snowball, Snowmobile</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Storage+Gateway+File+Volume+Tape" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="QaCfOatTIDA" href="https://www.youtube.com/results?search_query=AWS+Storage+Gateway+File+Volume+Tape" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🌉</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 14 min · Hybrid bridge</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+DMS+database+migration+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="09Kc1g2JKM0" href="https://www.youtube.com/results?search_query=AWS+DMS+database+migration+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🛢️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~35 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+DataSync+vs+Storage+Gateway+comparison" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="xCNDN3IkwVI" href="https://www.youtube.com/results?search_query=AWS+DataSync+vs+Storage+Gateway+comparison" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🚚</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 12 min · Online vs hybrid</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Application+Migration+Service+MGN" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="8w-Ks_GEGPw" href="https://www.youtube.com/results?search_query=AWS+Application+Migration+Service+MGN" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>💻</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 12 min · Lift-and-shift VMs</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Outposts+overview" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="D9ozrzGHAJo" href="https://www.youtube.com/results?search_query=AWS+Outposts+overview" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>📦</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Backup+service+demo" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="dCy7ixko3tE" href="https://www.youtube.com/results?search_query=AWS+Backup+service+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>💾</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 18 min · One policy for many services</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Aurora+Global+Database+failover+demo" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="yaOnBLmnTcI" href="https://www.youtube.com/results?search_query=Aurora+Global+Database+failover+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🌐</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 14 min · Cross-region DR</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Transfer+Family+SFTP+demo" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="yMg5z9Y3t_g" href="https://www.youtube.com/results?search_query=AWS+Transfer+Family+SFTP+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>📁</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

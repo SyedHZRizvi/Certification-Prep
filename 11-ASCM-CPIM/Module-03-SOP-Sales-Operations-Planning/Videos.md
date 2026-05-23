@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~52 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Sales+and+Operations+Planning+5+step+process+ASCM" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="vbx2DzVYd4w" href="https://www.youtube.com/results?search_query=Sales+and+Operations+Planning+5+step+process+ASCM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 14 min · Official 5-step model</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Tom+Wallace+Sales+Operations+Planning" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="1fBQelU8iZ0" href="https://www.youtube.com/results?search_query=Tom+Wallace+Sales+Operations+Planning" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 18 min · From the author of the canonical book</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Aggregate+Production+Planning+Level+Chase+Hybrid" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="EsoescUVPQI" href="https://www.youtube.com/results?search_query=Aggregate+Production+Planning+Level+Chase+Hybrid" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 12 min · With numbers</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Integrated+Business+Planning+IBP+Oliver+Wight" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="F2-N8R7KQkE" href="https://www.youtube.com/results?search_query=Integrated+Business+Planning+IBP+Oliver+Wight" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~30 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=S+and+OP+executive+meeting+best+practices" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="EQVYrUAtdn8" href="https://www.youtube.com/results?search_query=S+and+OP+executive+meeting+best+practices" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 10 min · How CEO-level meetings run</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Resource+Planning+Rough+Cut+Capacity+Planning" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="X-JeePiJHU4" href="https://www.youtube.com/results?search_query=Resource+Planning+Rough+Cut+Capacity+Planning" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 12 min · Where S&amp;OP meets capacity</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Demand+Supply+Reconciliation+Pre+SOP" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="OZQN7iYUaDc" href="https://www.youtube.com/results?search_query=Demand+Supply+Reconciliation+Pre+SOP" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=S+OP+maturity+model+5+stage" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="M1cdKXdj_jc" href="https://www.youtube.com/results?search_query=S+OP+maturity+model+5+stage" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 18 min · Reactive → integrated</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Sales+Operations+Planning+software+ERP" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="qjrOjzo88qM" href="https://www.youtube.com/results?search_query=Sales+Operations+Planning+software+ERP" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 22 min · SAP IBP, Oracle, Kinaxis</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Linear+Programming+Aggregate+Planning" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="Yps1Hlj0rQg" href="https://www.youtube.com/results?search_query=Linear+Programming+Aggregate+Planning" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

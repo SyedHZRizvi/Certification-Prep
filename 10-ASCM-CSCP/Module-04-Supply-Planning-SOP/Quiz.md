@@ -7,7 +7,7 @@
 
 ## Questions
 
-### Q1. The 5-step Wallace/Stahl S&OP cycle ends with which step?
+### Q1. The 5-step Wallace/Stahl S&OP cycle ends with which step? *(Remember)*
 A. Demand review
 B. Supply review
 C. Pre-S&OP reconciliation
@@ -15,7 +15,7 @@ D. Executive S&OP meeting
 
 ---
 
-### Q2. The output of an S&OP cycle is BEST described as:
+### Q2. The output of an S&OP cycle is BEST described as: *(Understand)*
 A. SKU-level weekly schedule
 B. Family-level aggregate plan covering 12–24 months
 C. Material requirement explosion
@@ -23,7 +23,7 @@ D. Daily shop-floor dispatch
 
 ---
 
-### Q3. A manufacturer wants stable headcount and accepts inventory variability. Which aggregate planning strategy fits?
+### Q3. A manufacturer wants stable headcount and accepts inventory variability. Which aggregate planning strategy fits? *(Apply)*
 A. Chase
 B. Level
 C. Hybrid
@@ -31,7 +31,7 @@ D. Drum-buffer-rope
 
 ---
 
-### Q4. MPS plans at what level of granularity?
+### Q4. MPS plans at what level of granularity? *(Remember)*
 A. Product family
 B. End-item / SKU
 C. Component
@@ -39,7 +39,7 @@ D. Workstation
 
 ---
 
-### Q5. The 3 main inputs to MRP are:
+### Q5. The 3 main inputs to MRP are: *(Remember)*
 A. MPS, BOM, inventory records
 B. Forecast, S&OP, routings
 C. ATP, CTP, MAD
@@ -47,7 +47,7 @@ D. RCCP, CRP, I/O
 
 ---
 
-### Q6. The demand time fence is BEST described as:
+### Q6. The demand time fence is BEST described as: *(Understand)*
 A. The horizon beyond which only forecast applies
 B. The horizon inside which only firm customer orders count
 C. The lead time of the longest supplier
@@ -55,7 +55,7 @@ D. The MRP run schedule
 
 ---
 
-### Q7. RCCP differs from CRP because:
+### Q7. RCCP differs from CRP because: *(Understand)*
 A. RCCP runs after the MRP
 B. RCCP focuses on key work centers at MPS level; CRP covers all work centers at MRP level
 C. CRP is part of S&OP
@@ -63,7 +63,7 @@ D. RCCP uses routings; CRP uses BOMs
 
 ---
 
-### Q8. A scheduler wants exactly the net requirement ordered each period to minimize inventory. The lot-sizing rule is:
+### Q8. A scheduler wants exactly the net requirement ordered each period to minimize inventory. The lot-sizing rule is: *(Apply)*
 A. FOQ
 B. EOQ
 C. Lot-for-lot
@@ -71,7 +71,7 @@ D. POQ
 
 ---
 
-### Q9. Integrated Business Planning extends S&OP MOST by adding:
+### Q9. Integrated Business Planning extends S&OP MOST by adding: *(Understand)*
 A. Bill of materials
 B. Financial, strategic, and new-product integration
 C. Tracking signal
@@ -79,7 +79,7 @@ D. Drum-buffer-rope
 
 ---
 
-### Q10. Capable-to-promise (CTP) considers what beyond ATP?
+### Q10. Capable-to-promise (CTP) considers what beyond ATP? *(Understand)*
 A. Customer credit
 B. Manufacturing capacity and material availability
 C. Tax position
@@ -87,7 +87,7 @@ D. Tracking signal
 
 ---
 
-### Q11. A service business (e.g., hospital) prefers which aggregate planning approach?
+### Q11. A service business (e.g., hospital) prefers which aggregate planning approach? *(Apply)*
 A. Level
 B. Hybrid biased toward chase
 C. Pure JIT
@@ -95,7 +95,7 @@ D. Lot-for-lot
 
 ---
 
-### Q12. A master scheduler receives a "move-in" reschedule message from the MRP engine. This means:
+### Q12. A master scheduler receives a "move-in" reschedule message from the MRP engine. This means: *(Apply)*
 A. Move an order earlier in time
 B. Delete the order
 C. Move the order later
@@ -103,7 +103,7 @@ D. Increase the lot size
 
 ---
 
-### Q13. Inside the demand time fence, MPS changes should be:
+### Q13. Inside the demand time fence, MPS changes should be: *(Evaluate)*
 A. Auto-applied by MRP
 B. Allowed only with master scheduler intervention; preference for actual orders
 C. Driven by forecast
@@ -111,7 +111,7 @@ D. Random
 
 ---
 
-### Q14. Which sequence is correct from longest to shortest horizon?
+### Q14. Which sequence is correct from longest to shortest horizon? *(Remember)*
 A. MPS → S&OP → Strategic → MRP
 B. Strategic → S&OP → MPS → MRP → PAC
 C. MRP → MPS → S&OP → Strategic
@@ -119,7 +119,7 @@ D. S&OP → Strategic → PAC → MPS
 
 ---
 
-### Q15. The PRIMARY benefit of CPFR feeding into S&OP is:
+### Q15. The PRIMARY benefit of CPFR feeding into S&OP is: *(Evaluate)*
 A. Eliminates the need for MRP
 B. Aligns demand forecast across channel partners, dampening bullwhip
 C. Replaces capacity planning
@@ -127,7 +127,7 @@ D. Removes safety stock
 
 ---
 
-### Q16. Which is NOT a typical lever in aggregate planning?
+### Q16. Which is NOT a typical lever in aggregate planning? *(Understand)*
 A. Overtime
 B. Hiring / firing
 C. Subcontracting
@@ -135,7 +135,7 @@ D. Issuing dividends
 
 ---
 
-### Q17. The S&OP "pre-S&OP" meeting purpose is to:
+### Q17. The S&OP "pre-S&OP" meeting purpose is to: *(Understand)*
 A. Train new planners
 B. Reconcile demand and supply views and surface decisions for the executive meeting
 C. Approve marketing budgets
@@ -143,7 +143,7 @@ D. Run MRP
 
 ---
 
-### Q18. Available-to-Promise (ATP) is calculated using:
+### Q18. Available-to-Promise (ATP) is calculated using: *(Apply)*
 A. Forecast minus actual orders
 B. On-hand plus scheduled MPS receipts minus committed customer orders
 C. RCCP capacity
@@ -151,7 +151,7 @@ D. MAD over MFE
 
 ---
 
-### Q19. A manufacturer's bicycle MPS calls for 200 units in week 4. Each bicycle uses 2 wheels. Wheel BOM has 28-day lead time. MRP would plan to release a wheel purchase order:
+### Q19. A manufacturer's bicycle MPS calls for 200 units in week 4. Each bicycle uses 2 wheels. Wheel BOM has 28-day lead time. MRP would plan to release a wheel purchase order: *(Apply)*
 A. 28 days before week 4 with quantity 400
 B. 28 days after week 4 with quantity 200
 C. The same week with quantity 400
@@ -159,7 +159,7 @@ D. Not at all — wheels are independent demand
 
 ---
 
-### Q20. Outside the planning time fence, MRP-driven planning is:
+### Q20. Outside the planning time fence, MRP-driven planning is: *(Remember)*
 A. Frozen
 B. Slushy
 C. Liquid — system can replan freely
@@ -167,7 +167,7 @@ D. Manual only
 
 ---
 
-### Q21. The S&OP executive meeting's PRIMARY deliverable is:
+### Q21. The S&OP executive meeting's PRIMARY deliverable is: *(Evaluate)*
 A. An MPS
 B. One committed plan that aligns sales, ops, finance, and exec leadership
 C. A purchase order
@@ -175,7 +175,7 @@ D. A profitability analysis
 
 ---
 
-### Q22. Drum-buffer-rope is a scheduling technique associated with:
+### Q22. Drum-buffer-rope is a scheduling technique associated with: *(Remember)*
 A. JIT
 B. Theory of Constraints
 C. CPFR
@@ -183,7 +183,7 @@ D. Lean Six Sigma
 
 ---
 
-### Q23. Which lot-sizing rule is best when carrying cost is high and setup cost is low?
+### Q23. Which lot-sizing rule is best when carrying cost is high and setup cost is low? *(Apply)*
 A. EOQ
 B. FOQ
 C. Lot-for-lot
@@ -191,7 +191,7 @@ D. POQ
 
 ---
 
-### Q24. Capacity planning at the strategic horizon is called:
+### Q24. Capacity planning at the strategic horizon is called: *(Remember)*
 A. RCCP
 B. CRP
 C. Resource Requirements Planning (RRP)
@@ -199,7 +199,7 @@ D. PAC
 
 ---
 
-### Q25. A demand forecast of 1,000 units, on-hand 200, scheduled MPS receipts of 500 across the horizon, and customer orders booked of 300. ATP at horizon end ≈:
+### Q25. A demand forecast of 1,000 units, on-hand 200, scheduled MPS receipts of 500 across the horizon, and customer orders booked of 300. ATP at horizon end ≈: *(Apply)*
 A. 100
 B. 200
 C. 400
@@ -207,7 +207,7 @@ D. 700
 
 ---
 
-### Q26. The MOST common reason S&OP implementations fail is:
+### Q26. The MOST common reason S&OP implementations fail is: *(Evaluate)*
 A. Bad forecasting algorithms
 B. Lack of executive commitment and discipline
 C. Excessive MRP runs

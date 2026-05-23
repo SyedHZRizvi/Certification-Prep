@@ -721,4 +721,230 @@ For EACH wrong answer:
 
 ---
 
+## Detailed answer rationales
+
+> Use these to drill the *discrimination* logic — why the right answer beats each distractor. Format inspired by Harvard Law's case method.
+
+**Q1. C — Inventory carrying.** Square-root rule: SS scales √N with DCs. (Outbound transport actually falls.) **Distractors:** A (outbound) falls; B (order processing) is roughly flat; D (stockouts) improves.
+
+**Q2. B — Demand volume.** COG weights by Vi. **Distractors:** A, C, D belong to factor-rating, not COG.
+
+**Q3. D — Clean-slate.** Greenfield = no constraints. **Distractors:** A (existing) is brownfield; B (agricultural) is literal mis-read; C (LEED) is sustainability cert.
+
+**Q4. A — Cross-dock.** Sub-day dwell. **Distractors:** B, C, D all hold inventory for days+.
+
+**Q5. B — Lead logistics provider, orchestrates LSPs.** 4PL is asset-light. **Distractors:** A is 2PL; C is partial 3PL; D is e-commerce platform.
+
+**Q6. B — Consolidate many small shipments.** Hub-and-spoke aggregates LTL/parcel. **Distractors:** A (fastest) — direct is faster. C (large direct) is point-to-point. D (one-to-one) is direct.
+
+**Q7. A — √N × single-loc SS.** Square-root rule. **Distractors:** B (linear) overstates; C (1/N) is backwards; D (log) wrong functional form.
+
+**Q8. A — Holds assets.** 3PL = asset; 4PL = orchestration. **Distractors:** B, C, D are misleading on regulation/cost/scope.
+
+**Q9. D — 18.** (4000×10 + 1000×50) / 5000 = 18. **Distractors:** A (40), B (22), C (30) all miscompute.
+
+**Q10. C — Defers duty.** FTZ defers until commerce. **Distractors:** A (immediate) is direct import; B (no storage) wrong; D (export-only) wrong.
+
+**Q11. C — Long-term, capital-intensive.** Strategic horizon. **Distractors:** A (daily) is operational; B (IT only) absurd; D (identical to ops) definitionally wrong.
+
+**Q12. C — Hybrid.** 40% Q4 too peaked for any pure strategy. **Distractors:** A (pure Lead) wastes capex; B (Lag) loses sales; D (Match with fixed staff) is self-contradictory.
+
+**Q13. B — T × U × E.** Memorize. **Distractors:** A, C, D mis-shuffle the operators.
+
+**Q14. D — ~85–90%.** Queueing theory wall. **Distractors:** A, B are below; C ignores variability.
+
+**Q15. C — Σ|A−F|/N.** Absolute values prevent cancellation. **Distractors:** A (no abs) is bias; B (squared) is MSE; D (ratio) is MAPE-ish.
+
+**Q16. C — Negative bias.** ASCM convention bias=Σ(A−F)/N; over-forecast → negative. **Distractors:** A, D (magnitude only) miss the *direction*; B (positive) wrong sign under ASCM convention.
+
+**Q17. B — 4 to 6.** TS threshold. **Distractors:** A, C, D are not the canonical threshold.
+
+**Q18. C — 80%.** Pareto 80/20. **Distractors:** A (20) flat; B (50) middle; D (95) overstates.
+
+**Q19. A — Identify.** TOC Step 1. **Distractors:** B (hire), C (buy) are Step 4 (Elevate); D (Subordinate) is Step 3.
+
+**Q20. A — Aggregate forecasting.** Defer differentiation → aggregate-level forecast (less error). **Distractors:** B (earlier) opposite; C (outsource) different lever; D (eliminate SS) overstates.
+
+**Q21. D — Cash collection.** OTC ends at cash. **Distractors:** A (delivery) mid-cycle; B (invoice) just before cash; C (returns) post-cycle.
+
+**Q22. A — On-hand minus committed.** ATP definition. **Distractors:** B is CTP; C, D unrelated.
+
+**Q23. A — Planned receipts.** CTP future-aware. **Distractors:** B–D don't define CTP.
+
+**Q24. D — PO.** EDI 850. **Distractors:** A=810; B=855; C=856.
+
+**Q25. B — ASN.** EDI 856. **Distractors:** A=810; C=850; D=820.
+
+**Q26. B — Invoice.** EDI 810. **Distractors:** A=850; C=856; D=855.
+
+**Q27. D — Batch.** High overlap + many orders → batch. **Distractors:** A (discrete) wastes travel; B (paper) tech, not strategy; C (zone only) needs zones.
+
+**Q28. A — Cutoffs drive timing.** Wave is time-driven. **Distractors:** B (few orders) no payoff; C reckless; D doesn't need waves.
+
+**Q29. D — Multiplicative product.** Memorize. **Distractors:** A, B, C overstate compounded misses.
+
+**Q30. A — 81.5%.** 0.95⁴ ≈ 0.815. **Distractors:** B (90), C (86), D (95) all miss the compounding.
+
+**Q31. C — Retailer-imposed, often with chargebacks.** Walmart's model. **Distractors:** A (self-reported only); B (same as PO); D (intl-only) all wrong.
+
+**Q32. C — Last-mile.** 28–53% of parcel cost. **Distractors:** A (trunk amortized); B (cross-dock small); D (customs only intl).
+
+**Q33. B — BOPIS = Buy Online Pickup In Store.** **Distractors:** A nonsense; C wrong meaning; D backorder confusion.
+
+**Q34. C — Closed-to-public online fulfillment.** Dark store definition. **Distractors:** A (no lights) literal; B (clandestine) conspiracy; D (returns-only) different facility.
+
+**Q35. C — Large DC, many SKUs, pass-through.** Zone needs scale. **Distractors:** A (small DC), B (identical), D (one picker) don't fit.
+
+**Q36. C — Plans network replenishment.** DRP definition. **Distractors:** A, B, D describe MRP.
+
+**Q37. B — OH + OO − BO.** Inventory position. **Distractors:** A (OH only) double-orders; C, D wrong formulas.
+
+**Q38. C — Z × σ × √L.** Memorize. **Distractors:** A (EOQ), B (d × L) are different formulas; D (Max−Min) is rule of thumb.
+
+**Q39. C — 1.65.** Z(95%). **Distractors:** A (1.00) = 84%; B (1.28) = 90%; D (2.33) = 99%.
+
+**Q40. A — Amplifies upstream.** Bullwhip. **Distractors:** B, C, D all wrong direction.
+
+**Q41. B — Form postponement.** Benetton dyes by color demand. **Distractors:** A (place), C (time), D (push) are different types.
+
+**Q42. B — Shared POS/CPFR.** Information cure. **Distractors:** A (larger batches) worsens; C (lock LT) ineffective; D (more SS) band-aid.
+
+**Q43. A — 10–30%.** Industry MEIO benefit. **Distractors:** B (1–2%) understates; C (50%) unrealistic; D (negative) wrong.
+
+**Q44. C — Monthly (A-items).** Most frequent count. **Distractors:** A (annually), B (quarterly), D (never).
+
+**Q45. D — 95–99%.** IRA target. **Distractors:** A (75–85%), B (50–70%) poor; C (100%) impossible.
+
+**Q46. D — Reorder Point.** ROP = (d × L) + SS. **Distractors:** A, B, C invented.
+
+**Q47. C — Promotions/launches.** Push when downstream can't pull. **Distractors:** A (staples), B (long-tail), D (JIT) all pull.
+
+**Q48. C — Periodic review.** P-system definition. **Distractors:** A (continuous) is Q; B (1-for-1) is base-stock; D (no max) wrong.
+
+**Q49. C — CPFR.** Acronym memorization. **Distractors:** A, B, D invented.
+
+**Q50. A — Release = receipt − LT.** Time-phased basics. **Distractors:** B (forward) opposite; C (two weeks always) generic; D (variability) wrong driver.
+
+**Q51. D — 7.2.** Rated = 10 × 0.8 × 0.9. **Distractors:** A (8) one factor; B (9) other factor; C (10) theoretical.
+
+**Q52. A — Initial baseline refined.** COG limitation. **Distractors:** B (final), C (rates), D (software) all wrong use.
+
+**Q53. C — Customer segmentation.** Tiered SLAs. **Distractors:** A (SKU rationalization), B (ABC), D (cycle counting) different concepts.
+
+**Q54. C — Fastest manual, high CapEx.** Pick-to-light. **Distractors:** A, B, D wrong.
+
+**Q55. D — MABD enforced.** OTIF clock. **Distractors:** A, B, C downplay enforcement.
+
+**Q56. D — Block release.** Credit hold logic. **Distractors:** A, B, C create financial risk.
+
+**Q57. D — Upstream substitutes downstream.** MEIO premise. **Distractors:** A, B, C unrelated.
+
+**Q58. D — Random/chaotic with WMS.** Random = any-slot, WMS-tracked. **Distractors:** A (fixed) wastes; B (no tracking) reckless; C (unsupervised) misconception.
+
+**Q59. B — Pre-distribution cross-dock.** Walmart model. **Distractors:** A, C, D different cross-dock variants.
+
+**Q60. D — Drive-in LIFO.** Highest density. **Distractors:** A (selective) lower density; B (flow) FIFO; C (AS/RS) automation.
+
+**Q61. A — Paper.** 95–98% accuracy. **Distractors:** B, C, D all 99.5%+.
+
+**Q62. B — Hub-and-spoke terminals.** LTL standard. **Distractors:** A (direct) FTL; C (random) nonsense; D (air) wrong mode.
+
+**Q63. A — Dock-to-stock.** Receipt to putaway. **Distractors:** B, C, D measure other things.
+
+**Q64. B — Monitor and adjust.** Step 6 ends cycle. **Distractors:** A is Step 1; C Step 5; D Step 4.
+
+**Q65. B — Truck dispatch.** Tactical. **Distractors:** A, C, D strategic.
+
+**Q66. A — Place postponement.** Hold central, deploy on order. **Distractors:** B (form), C (time), D (push).
+
+**Q67. A — Theoretical minus losses.** Effective definition. **Distractors:** B, C, D wrong.
+
+**Q68. B — Direction.** Bias = direction. **Distractors:** A, C, D confuse with magnitude.
+
+**Q69. A — Carrier RFP.** Not in OTC. **Distractors:** B, C, D canonical OTC steps.
+
+**Q70. C — Acknowledge PO.** EDI 855. **Distractors:** A=810; B=856; D=820.
+
+**Q71. C — Min of total cost.** Optimal node count. **Distractors:** A (max) silly; B (min inbound) partial; D (max service) ignores cost.
+
+**Q72. D — Forward pick golden zone.** A-mover slotting. **Distractors:** A, B, C wrong placement.
+
+**Q73. A — Real-time POS + ML.** Demand sensing. **Distractors:** B, C, D traditional or random.
+
+**Q74. A — More accurate at aggregate.** Law of large numbers. **Distractors:** B (less), C (useless), D (same) all wrong.
+
+**Q75. A — Add Eastern DC.** Structural fix. **Distractors:** B, C, D tactical.
+
+**Q76. C — U-shape.** Same-side docks. **Distractors:** A, B, D wrong layouts.
+
+**Q77. A — High-volume automated.** I-shape (straight-through). **Distractors:** B (low-volume) waste; C (cross-dock only) too narrow; D (bonded) unrelated.
+
+**Q78. D — Receiving.** 7-step workflow starts here. **Distractors:** A, B, C are later steps.
+
+**Q79. D — Pre-distribution cross-dock.** Walmart pre-labels. **Distractors:** A, B, C variant cross-docks.
+
+**Q80. B — Available slot, WMS tracked.** Random putaway. **Distractors:** A (unsupervised) misconception; C (no tracking); D (fixed reassigned daily) odd.
+
+**Q81. C — Few SKUs, deep, LIFO.** Drive-in racking. **Distractors:** A (many SKUs FIFO) selective; B (e-com) shelving; D (cold FIFO) flow rack.
+
+**Q82. A — Crane-based AS/RS.** AS/RS definition. **Distractors:** B (AGV), C (forklift), D (conveyor) different equipment.
+
+**Q83. A — AGV fixed paths; AMR dynamic.** Key distinction. **Distractors:** B (fuel) wrong; C (cheaper) varies; D (letters) absurd.
+
+**Q84. D — Waist-to-shoulder.** Golden zone. **Distractors:** A (closest to receiving) different metric; B, C wrong heights.
+
+**Q85. B — 65–85%.** Cube utilization sweet spot. **Distractors:** A (99%+) destroys productivity; C (90%+) too high; D (below 50%) wasteful.
+
+**Q86. C — 99.5%+.** Pick accuracy benchmark. **Distractors:** A, B, D too low.
+
+**Q87. C — LMS.** Labor management. **Distractors:** A (YMS) yard; B (TMS) transport; D (OMS) orders.
+
+**Q88. B — Customs security.** C-TPAT. **Distractors:** A (pallet), C (layout), D (EDI) all wrong.
+
+**Q89. B — 0–8°C.** Refrigerated range. **Distractors:** A (frozen), C (controlled ambient), D (hot) wrong ranges.
+
+**Q90. B — Supplier labels by destination.** Pre-distribution. **Distractors:** A (allocate at dock) post; C (rework) costly; D (gov approval) wrong.
+
+**Q91. B — Vertical storage tower, small parts.** VLM. **Distractors:** A (conveyor); C (robotic arm); D (forklift attachment) all different.
+
+**Q92. D — Frequent SKU churn / lumpy demand.** Auto bad fit. **Distractors:** A, B, C are auto good fits.
+
+**Q93. C — MOST analysis / time studies.** Engineered standards. **Distractors:** A (random) imprecise; B (manager opinion) subjective; D (self-reports) gameable.
+
+**Q94. B — Zones by velocity, random within.** ABC-class putaway. **Distractors:** A, C, D wrong putaway schemes.
+
+**Q95. B — 29 CFR 1910.178.** OSHA forklift standard. **Distractors:** A (21 CFR Part 11) pharma e-records; C (ISO 14001) env; D (HACCP) food safety.
+
+**Q96. A — Hands-free, mid CapEx, accurate.** Voice picking. **Distractors:** B, C, D wrong.
+
+**Q97. A — Directed work.** WMS dispatch. **Distractors:** B (push), C (manual), D (self-organized) all wrong.
+
+**Q98. B — Receipt to putaway-complete.** Dock-to-stock. **Distractors:** A (order cycle), C (mfg to receipt), D (cycle count) different KPIs.
+
+**Q99. B — FIFO.** Pallet/carton flow rack. **Distractors:** A (LIFO) drive-in; C (random) nonsense; D (none) wrong.
+
+**Q100. B — Manual cart + WMS.** Low volume + SKU churn. **Distractors:** A (AS/RS), C (GTP), D (conveyor) all over-invest.
+
+**Q101. A — FTL.** 15 pallets, 28k lbs. **Distractors:** B (LTL) too small; C (parcel) too small; D (air) wrong mode.
+
+**Q102. D — LTL.** 1,200 lbs. **Distractors:** A (FTL) too small order; B (parcel) too big; C (air) overkill.
+
+**Q103. D — Twenty-foot Equivalent Unit.** TEU memorization. **Distractors:** A, B, C invented expansions.
+
+**Q104. B — 2.** FEU = 40' = 2 TEU. **Distractors:** A, C, D wrong.
+
+**Q105. C — Fuel adjustment.** BAF (bunker = ship fuel). **Distractors:** A (currency) is CAF; B (customs) is brokerage; D (cargo class) is LTL.
+
+**Q106. C — Container On Flat Car.** COFC. **Distractors:** A, B, D invented.
+
+**Q107. A — Short-distance truck.** Drayage. **Distractors:** B (rail), C (air), D (ocean) different scope.
+
+**Q108. B — 1 kg : 6,000 cm³.** Air freight dim factor. **Distractors:** A, C, D wrong.
+
+**Q109. D — 80 kg.** 480,000 / 6,000 = 80. **Distractors:** A (40 actual), B (60), C (100) all wrong.
+
+**Q110. D — Liquids and gases.** Pipeline. **Distractors:** A (mixed retail), B (bulk grains), C (containers) wrong cargo.
+
+---
+
 ➡️ When ready: [Final Mock Exam](./Final-Mock-Exam.md) — 150 questions, 210 minutes, real-exam conditions.

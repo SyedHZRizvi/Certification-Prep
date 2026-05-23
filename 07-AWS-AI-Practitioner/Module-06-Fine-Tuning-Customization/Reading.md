@@ -2,6 +2,13 @@
 
 > **Why this module matters:** Out of every question in Domain 3, the *single hardest* sub-topic is "RAG vs fine-tuning vs continued pre-training vs prompt engineering — which should the customer use?" If you can answer that scenario fluently and quote BLEU / ROUGE / perplexity by heart, you'll bank 4–6 marks that most candidates lose.
 
+> **Prerequisites for this module.** Before starting, you should be comfortable with:
+> - [Module 3: Generative AI Fundamentals](../Module-03-Generative-AI-Fundamentals/Reading.md) — pre-training vs fine-tuning vocabulary
+> - [Module 5: Prompt Engineering & RAG](../Module-05-Prompt-Engineering-RAG/Reading.md) — the *no-weight-change* options you're now contrasting with
+> - The notion that fine-tuning is *expensive but bounded* — and continued pre-training is *much more expensive and rarely warranted*
+>
+> If you've not yet seen the LoRA paper (Hu et al., ICLR 2022) or *any* discussion of parameter-efficient fine-tuning, that's fine — the exam tests names and intuition, not math.
+
 ---
 
 ## 🍕 A Story: Four Ways To Make a New Apprentice
@@ -254,6 +261,39 @@ Match each scenario to the best customization approach. (Try first, then peek.)
 
 ---
 
+## 📊 Case Study — BloombergGPT, the 50B-Parameter Finance LLM (2023)
+
+**Situation.** Bloomberg L.P. — the financial data and terminal company — holds a 40+ year corpus of financial news, regulatory filings, earnings transcripts, press releases, and analyst content: ~363 billion tokens of finance-specific text. Their terminal customers (banks, hedge funds, central banks) were experimenting with off-the-shelf LLMs (GPT-3 / GPT-3.5) but found:
+- Generic models were weak on Bloomberg-specific tickers, abbreviations, and finance jargon
+- Hallucination rates on numerical reasoning tasks were unacceptable for regulated finance use cases
+- Sending Bloomberg's proprietary data to a third-party API raised confidentiality concerns
+
+**Decision.** Bloomberg published **BloombergGPT: A Large Language Model for Finance** (Wu et al., 2023; arXiv:2303.17564) — a 50-billion-parameter Transformer trained from scratch on a mixed corpus of:
+- ~363 billion tokens of Bloomberg's *finance-specific* archive (FinPile)
+- ~345 billion tokens of *general* public text (The Pile, C4, Wikipedia)
+
+This was a deliberate choice for **continued pre-training / domain-specific from-scratch training** (the deepest, most expensive customization on the spectrum) rather than fine-tuning an existing FM. Training reportedly used ~64 AWS p4d.24xlarge instances (8× A100 GPUs each) for ~53 days, plus extensive evaluation. The result was a finance-tuned base model evaluated against open benchmarks (financial sentiment, NER, classification, generation) and held internally for Bloomberg products.
+
+**Outcome.**
+- BloombergGPT outperformed comparably-sized general models (BLOOM-176B, GPT-NeoX-20B) on **finance-specific benchmarks** by 30–60% on several tasks, while matching them on general NLP benchmarks
+- Bloomberg never publicly opened the model for external API use — keeping the finance-specific signal as competitive moat
+- By 2024–2025, the industry consensus *evolved away* from "every domain needs its own from-scratch LLM": fine-tuning + RAG on top of a frontier model (Claude, Llama, Nova) increasingly matched or beat domain-from-scratch on most tasks at a fraction of the cost. Bloomberg itself has since (per public statements 2024) experimented with hybrid approaches combining its specialized model with frontier general models
+- The paper became *the* canonical reference cited whenever an executive asks "should we train our own LLM from scratch?" — and the answer the AIF-C01 expects is usually "no, unless you're Bloomberg-scale."
+
+**Lesson for the exam / for practitioners.** Four AIF-C01 talking points anchor here:
+1. **From-scratch / continued pre-training is the *rarest* customization choice — and the exam tests when it's justified.** BloombergGPT used continued-pre-training-style work because they had (a) 363B tokens of domain-specific unlabeled text, (b) >$10M training budget, (c) a *moat* rationale beyond pure accuracy. Without all three, the answer is fine-tuning or RAG. The exam frequently uses Bloomberg's profile as a foil — "a small startup wants to train its own LLM" is virtually always the *wrong* answer; the right one is RAG or fine-tuning an existing FM.
+2. **The customization cost ladder is real and predictable.** Prompting (¢) → RAG ($) → Fine-tuning ($$) → Continued pre-training ($$$$). The order of magnitude on Bloomberg's training run (~$10M+ all-in) maps to the **$$$$** tier; the exam wants you to recognize this scale.
+3. **Behavior vs facts is the discriminator.** Bloomberg's bet was that finance *behaviors* (vocabulary, formulaic reasoning, awareness of finance-specific entity types) needed to be *baked in*. For pure factual lookup (yesterday's earnings number), RAG over their data would have been cheaper and fresher. The exam pattern: when the scenario describes *deep domain vocabulary needing to live in the weights*, continued pre-training is the right framing; when it describes *recent data needing to be reflected*, RAG is.
+4. **Model evaluation matters more than model choice.** BloombergGPT's value claim rested on a battery of finance-specific benchmarks (FPB, FiQA SA, Headline, NER, ConvFinQA). On AWS, this is **Bedrock Model Evaluation** territory — automatic on standard datasets, human eval for high-stakes outputs, LLM-as-judge for scale, Knowledge Base eval for RAG faithfulness.
+
+**Discussion (Socratic).**
+- Q1: With 2025-era frontier models (Claude 4, Nova Premier, GPT-4o-class) plus fine-tuning + RAG, could you replicate ~80% of BloombergGPT's value at <5% of the cost? Build the strongest case for "yes" and the strongest case for "no." What's the *strategic* rationale Bloomberg still has for owning its model that pure cost-benefit math misses?
+- Q2: If Bloomberg were a Bedrock customer, what would the equivalent *Bedrock-native* customization plan look like? Sketch the JSONL training format for finance-tuning Titan Text or Claude (Haiku, via supported customization), the eval harness, and the Provisioned Throughput sizing for the resulting custom model. What changes if the team has 100K labeled examples vs 100M?
+- Q3: A regulated insurance carrier asks "should we build our own LLM?" Use the BloombergGPT criteria (proprietary unlabeled corpus, training budget, moat rationale) to build the explicit checklist. At what proprietary-data scale and what budget does the answer flip from "no" to "maybe"?
+- Q4: BloombergGPT chose 50B parameters, ~700B training tokens (Chinchilla-optimal ratio per Hoffmann et al., NeurIPS 2022). Walk through the *reasoning* behind picking model size vs token count for a custom training run, and the AWS infrastructure implications (Trainium vs GPU, distributed training topology, checkpoint storage in S3 with KMS).
+
+---
+
 ## ✅ Module 6 Summary
 
 You now know:
@@ -270,6 +310,23 @@ You now know:
 2. ✏️ Take [`Quiz.md`](./Quiz.md) — aim for 20/24
 3. 📋 Review [`Cheat-Sheet.md`](./Cheat-Sheet.md)
 4. ➡️ Move to [Module 7: Responsible AI](../Module-07-Responsible-AI/Reading.md)
+
+---
+
+> **Where this leads.**
+> - Inside this course: Module 7 covers Responsible AI — when you fine-tune, you inherit responsibility for the data and behavior; Module 8 covers KMS encryption of custom models, IAM on Bedrock customization, and audit logging.
+> - Cross-course: `08-Azure-AI-Engineer` covers the Azure OpenAI fine-tuning equivalent and `14-AI-Marketing-Foundations` Module 2 frames the same trade-offs for marketing teams.
+> - Practice: Practice Exam 1 and 2 both test RAG-vs-fine-tuning scenarios; the Final Mock Exam revisits with cost-optimization framing.
+
+---
+
+## 💬 Discussion — Socratic prompts
+
+1. **The decision tree's hardest call.** You have an enterprise chatbot that drifts to off-brand tone 1 in 20 turns despite good prompting. Argue for fine-tuning AND for sticking with prompt-engineering + system-prompt redesign. At what error rate does fine-tuning become the obvious answer, and what does the data-collection burden actually look like?
+2. **The "all our data is unlabeled — what can we do?" question.** A pharma company has 12 TB of internal research PDFs, almost none of which are labeled. Walk through the three customization approaches available (continued pre-training, supervised fine-tuning with synthetic labels generated by an LLM, RAG only). Which delivers the best near-term ROI, and which is the right long-term bet? Defend the sequencing.
+3. **The evaluation harness as a moat.** BloombergGPT was credible partly because of its finance-specific benchmarks. Sketch what a *good* evaluation harness for a healthcare-domain LLM would look like — what datasets, what graders, what success metrics. How does Amazon Bedrock Model Evaluation's KB-eval + LLM-as-judge + human modes map onto your design?
+4. **PEFT / LoRA in practice on Bedrock.** Bedrock customization under the hood is widely understood to use PEFT-style methods. What does this mean for *cost* (vs full-weight fine-tuning) and for *behavior* (catastrophic forgetting, ability to combine multiple adapters)? Build the operating-cost case for fine-tuning a Haiku-sized model vs an Opus-sized one for a specific task.
+5. **Provisioned Throughput's hidden math.** Custom Bedrock models require Provisioned Throughput at inference. What's the break-even monthly token volume below which you should not fine-tune at all, because the inference cost (PT) will swamp any quality gain? Sketch the back-of-envelope calculation a CFO would ask for.
 
 ---
 

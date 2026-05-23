@@ -2,6 +2,13 @@
 
 > **Why this module matters:** Before you touch a single AWS service, you need to *think* like a cloud architect. This module rewires your brain from "data center" to "cloud" — and once you get it, EC2, S3, Lambda, all of it, makes sense in 10 seconds instead of an hour.
 
+> **Prerequisites for this module.** Before starting, you should be comfortable with:
+> - Basic IT literacy: what a server is, what a data center is, what an IP address is
+> - Light economics fluency: capital expense vs operating expense, depreciation in one paragraph
+> - Comfort with simple ratios (utilization %, $/hour, breakeven point)
+>
+> No prior AWS experience is required — this is the foundation the rest of the course builds on. If terms like "hypervisor," "tenancy," or "elastic" are new, that's fine; the module defines each. If you have completed a basic IT course (CompTIA A+, Network+, or any cloud-fundamentals MOOC), skim quickly and use this as a vocabulary refresher for AWS-specific terms (Region, AZ, Edge Location, Outposts).
+
 ---
 
 ## 🍕 A Story: Maria Opens A Second Pizza Shop
@@ -50,7 +57,7 @@ The three pieces:
 
 ## 💰 The 6 Benefits of Cloud (AWS Loves This List)
 
-The CLF-C02 exam asks about these in roughly this order of frequency:
+These six benefits trace back to Andy Jassy's 2012 re:Invent keynote and are formalized in the **AWS Cloud Adoption Framework (AWS CAF)** — first published by AWS in 2015, last refreshed in 2023 — and in Nicholas Carr's *The Big Switch: Rewiring the World, from Edison to Google* (Norton, 2008), which made the original "computing as a utility" argument that AWS productized. The CLF-C02 exam asks about them in roughly this order of frequency:
 
 | # | Benefit | One-line meaning |
 |---|---------|------------------|
@@ -67,7 +74,7 @@ The CLF-C02 exam asks about these in roughly this order of frequency:
 
 ## 🏗️ The 3 Cloud Service Models (IaaS / PaaS / SaaS)
 
-This is on every cloud exam. The trick: **how much do YOU manage vs. how much does the provider manage?**
+The IaaS / PaaS / SaaS taxonomy comes from NIST's **Special Publication 800-145 — "The NIST Definition of Cloud Computing"** (Mell & Grance, NIST, September 2011). Every exam blueprint — AWS, Azure, GCP, CompTIA Cloud+ — references this definition. The trick: **how much do YOU manage vs. how much does the provider manage?**
 
 ```
    YOU MANAGE MORE                         PROVIDER MANAGES MORE
@@ -90,7 +97,7 @@ This is on every cloud exam. The trick: **how much do YOU manage vs. how much do
 
 ## 🌍 The 3 Cloud Deployment Models
 
-Don't confuse these with the service models above.
+These four deployment models (public / private / hybrid / community) are also from **NIST SP 800-145** (Mell & Grance, 2011) — the same paper that defines IaaS/PaaS/SaaS. AWS markets a fourth bucket, "multi-cloud," that NIST does not formally define. Don't confuse deployment models with service models above.
 
 | Model | What it means | Real example |
 |-------|---------------|--------------|
@@ -252,23 +259,62 @@ AWS gives newcomers a free tier — and the exam tests that you know the **three
 
 ---
 
+## 🏛️ Case Study — Capital One Closes 8 of 9 Data Centers (2015–2020)
+
+**Situation.** In 2014, Capital One — the eighth-largest US bank by assets — operated nine on-premises data centers running a heterogeneous Oracle / IBM mainframe / VMware stack. Their CIO Rob Alexander faced a board mandate to "out-innovate the fintechs." Regulators (the OCC, the Federal Reserve) had historically been skeptical of public cloud for tier-1 banking workloads. Internal IT estimated that a typical new product line took 12 to 18 months to provision — they were losing the speed war to Plaid, Stripe, and Chime.
+
+**Decision.** Alexander committed to an all-in AWS public-cloud migration. Capital One announced it publicly at AWS re:Invent 2015, becoming the first major US bank to do so. They spent five years (2015–2020) systematically migrating core banking systems, including credit-card processing, while shutting down data centers in waves. They co-developed the open-source security tooling Cloud Custodian (released 2016) with AWS to satisfy regulators. By November 2020 they announced the last on-prem data center had been decommissioned — going from 9 facilities to 0.
+
+**Outcome.** Capital One reported that engineers could now provision production-grade environments in minutes instead of months. The company's mobile app — built on the cloud-native stack — went from a feature laggard to one of the highest-rated US banking apps (J.D. Power, 2019). However, in July 2019, while still mid-migration, Capital One disclosed a data breach affecting 106 million customers, caused by a former AWS engineer exploiting a Server-Side Request Forgery (SSRF) vulnerability and an over-permissioned IAM role on a misconfigured WAF. The breach cost roughly $190M+ in regulatory fines, customer remediation, and class-action settlements (CFPB consent order, 2020). We unpack this breach in detail in Module 6 — it is the most-tested cloud-era breach in the entire CLF-C02 / SAA-C03 universe.
+
+**Lesson for the exam / for practitioners.** Capital One is the textbook example of the **6 cloud benefits made real** — "Trade fixed for variable expense" (decommissioning hardware), "Go global in minutes" (multi-Region failover), "Stop spending on data centers." It is also the textbook example of **why "security IN the cloud" is the customer's problem** — AWS infrastructure was not breached; the customer's IAM and WAF configuration was. When CLF-C02 asks "Which benefit of cloud does X represent?" — Capital One's data-center decommission is almost always the implicit example. When CLF-C02 asks about Shared Responsibility, Capital One is the cautionary tale.
+
+**Discussion (Socratic).**
+- Q1: If you were Alexander in 2014, would you have moved tier-1 banking workloads to AWS *before* the regulators had explicit guidance, or waited for the OCC to publish a cloud-supervision letter (which finally came in 2020)? Which way preserves more option value, and why?
+- Q2: The breach disclosure (July 2019) came mid-migration. Defend the position: "Capital One should have *paused* the migration after the breach to harden security baselines before continuing." Then defend the opposing position: "Continuing the migration was the right call — the on-prem stack was a bigger long-term risk." Which view do you defend at a board review?
+- Q3: Capital One co-developed Cloud Custodian to satisfy regulators. What is the *implicit trade-off* the company accepted by open-sourcing their security tooling — competitive advantage vs ecosystem leverage? When does giving away your security playbook make business sense?
+
+---
+
 ## ✅ Module 1 Summary
 
 You now know:
-- ☁️ The official AWS definition of cloud computing
+- ☁️ The official AWS definition of cloud computing (per AWS, derived from NIST SP 800-145)
 - 💰 The 6 benefits of cloud (Variable, Scale, Capacity, Speed, Datacenters, Global)
-- 🏗️ IaaS vs PaaS vs SaaS — and who manages what
+- 🏗️ IaaS vs PaaS vs SaaS — and who manages what (NIST taxonomy)
 - 🌍 Public vs Private vs Hybrid deployment models
 - 🗺️ Regions (geographic), AZs (datacenters), Edge Locations (cache PoPs)
 - 🇺🇸 GovCloud, China regions, Local Zones, Wavelength, Outposts
 - 🛠️ Console, CLI, SDK, IaC as ways to interact with AWS
 - 🎁 The 3 flavors of AWS Free Tier
+- 🏛️ Capital One's data-center exit (2015–2020) as the canonical "cloud benefits realized" case
 
 **Next steps:**
 1. 🎥 Watch the videos in [Videos.md](./Videos.md)
 2. ✏️ Take the [Quiz](./Quiz.md) (aim for 22/24)
 3. 📋 Review the [Cheat-Sheet](./Cheat-Sheet.md)
 4. ➡️ Move to [Module 2: Core Compute](../Module-02-Core-Compute/Reading.md)
+
+---
+
+> **Where this leads.**
+> - Inside this course: Module 2 (Core Compute) operationalizes "elasticity" — the cloud benefit you just met — into EC2 Auto Scaling and Spot Instances. Module 6 (Security & Identity) revisits Capital One in depth to teach Shared Responsibility and IAM least-privilege. Module 8 (Well-Architected) returns to the 6 benefits as the implicit philosophy behind the 6 pillars.
+> - Cross-course: `04-AWS-Solutions-Architect-Associate` Module 1 deepens Region/AZ/Edge architecture for HA and DR design (Multi-AZ vs Multi-Region trade-offs). `07-AWS-AI-Practitioner` Module 1 inherits the same Region/AZ vocabulary when picking where to host Bedrock and SageMaker workloads.
+> - Practice: Practice Exam 1 has 7 questions drawing directly from this module (Qs 1, 2, 3, 18, 23, 29, 31). Final Mock Exam revisits with cross-module synthesis (Cloud Concepts domain = 24% / ~16 questions).
+
+---
+
+## 💬 Discussion — Socratic prompts
+
+Use these as journal prompts, study-group questions, or interview-prep drills. Each is open-ended; the best answers cite specific frameworks, numbers, or cases.
+
+1. **The single-AZ MVP question.** A two-founder startup running a 50-customer SaaS argues their entire AWS architecture in a single AZ is "fine" because their SLA promise is 99.5%, not 99.99%. Multi-AZ would roughly double their RDS and ALB bill (~$280/mo → ~$560/mo) for a benefit they say they don't need. Build the strongest argument FOR their single-AZ position AND AGAINST it. Which would you defend at a CTO review — and at what point in their growth (revenue, customers, geographic spread) does the answer flip?
+2. **Carr's utility-computing prediction.** In *The Big Switch* (2008), Nicholas Carr predicted that computing would become a utility like electricity — measured, fungible, commodified. Two decades on, AWS, Azure, GCP have ~65% combined market share but margins remain 30%+. Why hasn't compute commoditized to electricity-like 3–5% margins? What does this imply for a cloud-strategy course's framing of "cloud is just a utility"?
+3. **The Capital One pre-migration question.** Imagine you are advising Capital One's board in **2013** — one year before the migration decision. The board says "Banks don't put core workloads in public cloud — too risky." Build a 3-bullet argument that Alexander could have used to win the board over. What would have been the *strongest* counter-argument from a skeptical board member, and how would you have addressed it?
+4. **Region choice under conflicting constraints.** A B2B SaaS with 60% revenue in the EU but its engineering team in São Paulo must pick a primary AWS Region. Cheapest = `us-east-1` (N. Virginia). Closest to engineering = `sa-east-1` (São Paulo). Closest to revenue + GDPR-aligned = `eu-west-1` (Ireland). Walk through how you'd actually decide this, citing the Module 1 trade-offs (latency vs compliance vs cost vs service availability). Defend why one factor outranks the others.
+5. **NIST vs marketing.** AWS sometimes uses "cloud" terminology more loosely than NIST SP 800-145. Find one example where AWS's marketing definition diverges from the NIST definition (e.g., how AWS positions Outposts as "cloud"). Why does the divergence exist, and is the exam testing AWS's definition or NIST's?
+
+There are no "official" answers — defend your reasoning with specifics. Strong responses cite at least one named framework (NIST SP 800-145, AWS Well-Architected, Carr 2008), one named case (Capital One 2015–2020, Mailchimp, your own employer), and one piece of cloud math (TCO, $/AZ-hr, RTO/RPO).
 
 ---
 
@@ -279,3 +325,14 @@ You now know:
 - 📖 [What is Cloud Computing?](https://aws.amazon.com/what-is-cloud-computing/) — official AWS intro
 - 📖 [AWS Free Tier](https://aws.amazon.com/free/) — create an account, try services free
 - 📖 [AWS Cloud Practitioner Exam Guide (PDF)](https://d1.awsstatic.com/training-and-certification/docs-cloud-practitioner/AWS-Certified-Cloud-Practitioner_Exam-Guide.pdf) — read this every week
+
+---
+
+## 📚 Further sources (this module)
+
+- 📄 **Mell, P. & Grance, T. — *The NIST Definition of Cloud Computing* (NIST SP 800-145, September 2011)** — the canonical NIST definition of IaaS/PaaS/SaaS and public/private/hybrid deployment. Read sections 2 and 3 (4 pages) before the exam.
+- 📖 **Carr, N. — *The Big Switch: Rewiring the World, from Edison to Google* (W. W. Norton, 2008)** — the "utility computing" thesis that made the original economic argument for what AWS is now selling. Chapter 4 ("Goodbye, Mr. Gates") is the must-read.
+- 📄 **AWS — *Overview of Amazon Web Services* whitepaper (last refreshed 2023)** — AWS's own framing of the 6 cloud benefits, the global infrastructure, and the service families. Free PDF; ~70 pages.
+- 📄 **Vogels, W. — *"10 Lessons from 10 Years of Amazon Web Services"* (All Things Distributed blog, March 2016)** — Werner Vogels' retrospective on what AWS got right and wrong in its first decade. Pair with his 2017 + 2023 re:Invent keynotes.
+- 🎙️ **Andy Jassy — re:Invent 2012 keynote, "AWS: A Look Back, A Look Forward"** — first public articulation of the 6 cloud benefits in their modern form.
+- 📰 **Capital One press release + DOJ indictment (US v. Thompson, 2019)** — primary sources on the data-center exit and the 2019 breach. Mod 6 returns to this in detail.

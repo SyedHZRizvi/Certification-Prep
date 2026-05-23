@@ -78,7 +78,7 @@
       height: 60px;
     }
     .topbar-inner {
-      max-width: 1400px; margin: 0 auto; padding: 0 20px; height: 100%;
+      max-width: 1800px; margin: 0 auto; padding: 0 20px; height: 100%;
       display: flex; align-items: center; justify-content: space-between;
     }
     .brand { display: flex; align-items: center; gap: 8px; text-decoration: none; color: #0f172a; font-weight: 800; }
@@ -88,7 +88,7 @@
     }
 
     /* ============ SHELL ============ */
-    .shell { max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: 280px 1fr; min-height: calc(100vh - 60px); }
+    .shell { max-width: 1800px; margin: 0 auto; display: grid; grid-template-columns: 280px 1fr; min-height: calc(100vh - 60px); }
     @media (max-width: 1024px) { .shell { grid-template-columns: 1fr; } .sidebar { display: none; } }
 
     /* ============ SIDEBAR ============ */
@@ -161,7 +161,7 @@
     .extra-links a.active { background: #eef2ff; color: #4338ca; font-weight: 600; }
 
     /* ============ MAIN CONTENT ============ */
-    .main { padding: 28px 48px 80px; max-width: 920px; }
+    .main { padding: 28px 56px 80px; max-width: 1200px; }
     @media (max-width: 768px) { .main { padding: 20px 18px 60px; } }
 
     .breadcrumb { font-size: 13px; color: #64748b; margin-bottom: 18px; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
@@ -364,39 +364,71 @@
         <button onclick="window.cphubResetProgress()">Reset progress</button>
       </div>
 
-      {%- for tr in site.data.navigation.tracks -%}
-        <div class="track-header" style="background: linear-gradient(135deg, {{ tr.color_from }}, {{ tr.color_to }});">
-          <span class="icon">{{ tr.icon }}</span>
+      {%- comment -%}
+        Sidebar shows ONLY the current course's modules (per user request).
+        If no current course is detected (e.g. on a study-plan / resources page),
+        show all tracks as collapsed clickable headers so the user can navigate.
+      {%- endcomment -%}
+
+      {%- if current_track -%}
+        {%- comment -%} === Expanded: only the current track === {%- endcomment -%}
+        <div class="track-header" style="background: linear-gradient(135deg, {{ current_track.color_from }}, {{ current_track.color_to }});">
+          <span class="icon">{{ current_track.icon }}</span>
           <div>
-            <div>{{ tr.title }}</div>
-            <div class="meta">{{ tr.subtitle }}</div>
+            <div>{{ current_track.title }}</div>
+            <div class="meta">{{ current_track.subtitle }}</div>
           </div>
         </div>
         <ul class="module-list">
-          {%- for m in tr.modules -%}
-            {%- assign m_url = tr.base | append: m.slug | append: '/Reading/' | prepend: site.baseurl -%}
+          {%- for m in current_track.modules -%}
+            {%- assign m_url = current_track.base | append: m.slug | append: '/Reading/' | prepend: site.baseurl -%}
             {%- assign is_active = false -%}
-            {%- if current_module and current_module.slug == m.slug and current_track.id == tr.id -%}{%- assign is_active = true -%}{%- endif -%}
+            {%- if current_module and current_module.slug == m.slug -%}{%- assign is_active = true -%}{%- endif -%}
             <li>
-              <a href="{{ m_url }}" data-module-key="{{ tr.id }}-{{ m.slug }}" {% if is_active %}class="active"{% endif %}>
+              <a href="{{ m_url }}" data-module-key="{{ current_track.id }}-{{ m.slug }}" {% if is_active %}class="active"{% endif %}>
                 <span class="num"><span>{{ m.num }}</span></span>
                 <span>{{ m.title }}</span>
               </a>
             </li>
           {%- endfor -%}
-          {%- for ex in tr.extras -%}
-            {%- assign ex_url = tr.base | append: ex.slug | append: '/' | prepend: site.baseurl -%}
+          {%- for ex in current_track.extras -%}
+            {%- assign ex_url = current_track.base | append: ex.slug | append: '/' | prepend: site.baseurl -%}
             {%- assign is_active = false -%}
-            {%- if current_module and current_module.slug == ex.slug and current_track.id == tr.id -%}{%- assign is_active = true -%}{%- endif -%}
+            {%- if current_module and current_module.slug == ex.slug -%}{%- assign is_active = true -%}{%- endif -%}
             <li>
-              <a href="{{ ex_url }}" data-module-key="{{ tr.id }}-{{ ex.slug }}" {% if is_active %}class="active"{% endif %}>
+              <a href="{{ ex_url }}" data-module-key="{{ current_track.id }}-{{ ex.slug }}" {% if is_active %}class="active"{% endif %}>
                 <span class="num"><span>{{ ex.num }}</span></span>
                 <span>{{ ex.title }}</span>
               </a>
             </li>
           {%- endfor -%}
         </ul>
-      {%- endfor -%}
+
+        {%- comment -%} Back to all courses + collapsed list of OTHER tracks (just the clickable headers) {%- endcomment -%}
+        <hr class="sidebar-divider" />
+        <p class="sidebar-section-title">Other tracks</p>
+        <a href="{{ site.baseurl }}/" class="text-xs text-slate-600 hover:text-slate-900 block mb-3 underline" style="font-size:11px; text-decoration:none;">← Back to all {{ site.data.navigation.tracks | size }} courses</a>
+        {%- for tr in site.data.navigation.tracks -%}
+          {%- if tr.id != current_track.id -%}
+            <a href="{{ tr.base | prepend: site.baseurl }}" class="track-header-mini" style="display:flex; gap:10px; padding:8px 12px; margin-bottom:6px; border-radius:8px; background:linear-gradient(135deg, {{ tr.color_from }}, {{ tr.color_to }}); color:#fff; text-decoration:none; font-size:12px; align-items:center; line-height:1.2;">
+              <span style="font-size:18px;">{{ tr.icon }}</span>
+              <span style="font-weight:600;">{{ tr.title }}</span>
+            </a>
+          {%- endif -%}
+        {%- endfor -%}
+
+      {%- else -%}
+        {%- comment -%} === No current track (e.g. study plan / resources): show all tracks as collapsed clickable headers === {%- endcomment -%}
+        {%- for tr in site.data.navigation.tracks -%}
+          <a href="{{ tr.base | prepend: site.baseurl }}" class="track-header" style="display:flex; gap:10px; align-items:center; padding:12px 14px; margin-bottom:8px; border-radius:10px; background:linear-gradient(135deg, {{ tr.color_from }}, {{ tr.color_to }}); color:#fff; text-decoration:none; font-weight:600; font-size:14px;">
+            <span class="icon" style="font-size:22px;">{{ tr.icon }}</span>
+            <div>
+              <div>{{ tr.title }}</div>
+              <div class="meta" style="font-size:11px; opacity:.85; font-weight:500;">{{ tr.subtitle }}</div>
+            </div>
+          </a>
+        {%- endfor -%}
+      {%- endif -%}
 
       <hr class="sidebar-divider" />
       <p class="sidebar-section-title">Resources</p>
@@ -661,5 +693,6 @@
   <script src="{{ '/assets/quiz.js' | relative_url }}"></script>
   <script src="{{ '/assets/protect.js' | relative_url }}"></script>
   <script src="{{ '/assets/freshness.js' | relative_url }}"></script>
+  <script src="{{ '/assets/video-modal.js' | relative_url }}"></script>
 </body>
 </html>

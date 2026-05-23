@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~50 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=capacity+planning+supply+chain+logistics" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="a5PSUQNCnqE" href="https://www.youtube.com/results?search_query=capacity+planning+supply+chain+logistics" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 11 min · Theoretical vs effective</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=lead+lag+match+capacity+strategy" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="k0Jbs3_3gRE" href="https://www.youtube.com/results?search_query=lead+lag+match+capacity+strategy" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 10 min · When to use each</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=demand+forecasting+methods+MAD+MAPE" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="k5ugyeITdkk" href="https://www.youtube.com/results?search_query=demand+forecasting+methods+MAD+MAPE" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 14 min · Worked examples</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=exponential+smoothing+forecast+demand" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="PIvvWrvFDvY" href="https://www.youtube.com/results?search_query=exponential+smoothing+forecast+demand" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~35 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=ABC+analysis+slow+fast+movers+warehouse" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="v1OED4yv3vg" href="https://www.youtube.com/results?search_query=ABC+analysis+slow+fast+movers+warehouse" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 12 min · Pareto in the DC</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=seasonal+demand+capacity+strategy+retail" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="yQAC3AURW8Y" href="https://www.youtube.com/results?search_query=seasonal+demand+capacity+strategy+retail" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 9 min · Q4 retail prep</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=theory+of+constraints+bottleneck+goldratt" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="EqD5jZPwbeQ" href="https://www.youtube.com/results?search_query=theory+of+constraints+bottleneck+goldratt" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=demand+sensing+machine+learning+supply+chain" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="pf6ULz0fA3E" href="https://www.youtube.com/results?search_query=demand+sensing+machine+learning+supply+chain" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 20 min · Modern forecasting</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Amazon+warehouse+seasonal+hiring+peak" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="Lbtd7h3OIM4" href="https://www.youtube.com/results?search_query=Amazon+warehouse+seasonal+hiring+peak" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

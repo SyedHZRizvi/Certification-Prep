@@ -143,6 +143,38 @@ Usually wrong:
 
 ---
 
+## 🗺️ Security Concern ↔ Control Quick Map
+
+| If the scenario says… | Reach for |
+|------------------------|-----------|
+| "restrict this team to specific Bedrock models" | Resource-level IAM policy on the model ARN |
+| "keep Bedrock traffic off the public internet" | PrivateLink VPC interface endpoint |
+| "capture the prompt + response for audit" | **Bedrock model invocation logging** (to S3 / CloudWatch Logs) |
+| "log who called what API and when" | **CloudTrail** |
+| "discover PII at rest in S3" | **AWS Macie** |
+| "block / redact PII at inference time" | **Bedrock Guardrails — Sensitive Information filter** |
+| "encrypt custom Bedrock model with auditable keys" | **Customer-managed KMS (CMK)** |
+| "compliance report (SOC, ISO, HIPAA, FedRAMP)" | **AWS Artifact** |
+| "evidence package aligned to NIST / ISO / PCI" | **AWS Audit Manager** |
+| "HIPAA on Bedrock" | **Signed BAA + HIPAA-eligible services** |
+| "GDPR for an EU resident's data" | Region choice + customer-managed KMS + invocation log retention policy |
+| "attacker queried the model thousands of times to copy it" | **Model extraction** → rate limit + monitor + watermark |
+| "attacker reconstructed training data from outputs" | **Model inversion** → limit verbose output, differential privacy |
+| "attacker poisoned the training / RAG data" | **Data poisoning** → source validation + integrity hashing |
+| "Bedrock Agent's Lambda action group is over-permissive" | **Insecure tool use** → least-privilege + allow-list + approval gate |
+
+---
+
+## 📚 Reference cases (high-signal recall)
+
+| Case | What it proves | Module |
+|------|----------------|--------|
+| **Samsung ChatGPT source-code leak ban (Apr 2023)** | The biggest GenAI security risk is the well-meaning employee → enterprise contracts (Bedrock) + DLP + policy | 8 |
+| **Italian DPA temporary GDPR ban on ChatGPT (Mar 2023)** | Lack of lawful basis / data-subject rights = enforceable risk | 8 |
+| **Goldman Sachs Bedrock adoption (re:Invent 2024)** | Regulated industry + frontier model = Bedrock + PrivateLink + IAM + KMS + logging | 4, 8 |
+
+---
+
 ## ✏️ Quick Self-Check
 
 1. CloudTrail vs Bedrock invocation logging? ___

@@ -7,7 +7,7 @@
 
 ## Questions
 
-### Q1. Under the AWS Shared Responsibility Model for AI, the CUSTOMER is responsible for:
+### Q1. Under the AWS Shared Responsibility Model for AI, the CUSTOMER is responsible for: *(Understand)*
 A. The physical data center
 B. The hypervisor
 C. The data they upload, IAM permissions, and configuring Guardrails
@@ -15,7 +15,7 @@ D. AWS's base FM training
 
 ---
 
-### Q2. To restrict a team's Bedrock IAM role to ONLY invoke Claude models, you would:
+### Q2. To restrict a team's Bedrock IAM role to ONLY invoke Claude models, you would: *(Apply)*
 A. Disable Guardrails
 B. Use a resource-level IAM policy limiting `bedrock:InvokeModel` to the Claude model ARN(s)
 C. Encrypt the model
@@ -23,7 +23,7 @@ D. Move to GovCloud
 
 ---
 
-### Q3. To keep Bedrock traffic from your VPC OFF the public internet, use:
+### Q3. To keep Bedrock traffic from your VPC OFF the public internet, use: *(Apply)*
 A. AWS WAF
 B. AWS Shield Advanced
 C. A VPC Interface Endpoint (PrivateLink) for Bedrock
@@ -31,7 +31,7 @@ D. CloudFront
 
 ---
 
-### Q4. CloudTrail logs:
+### Q4. CloudTrail logs: *(Remember)*
 A. The full prompt and completion content
 B. Bedrock API call metadata (who called what, when)
 C. CPU utilization
@@ -39,7 +39,7 @@ D. KMS key material
 
 ---
 
-### Q5. To capture the actual PROMPTS and RESPONSES from Bedrock for audit, enable:
+### Q5. To capture the actual PROMPTS and RESPONSES from Bedrock for audit, enable: *(Apply)*
 A. CloudWatch metrics
 B. Bedrock model invocation logging (to S3 or CloudWatch Logs)
 C. AWS Config
@@ -47,7 +47,7 @@ D. SageMaker Model Monitor
 
 ---
 
-### Q6. To discover PII in an S3 bucket BEFORE ingesting it into a Knowledge Base, use:
+### Q6. To discover PII in an S3 bucket BEFORE ingesting it into a Knowledge Base, use: *(Apply)*
 A. AWS Macie
 B. AWS Shield
 C. AWS WAF
@@ -55,7 +55,7 @@ D. SageMaker Clarify
 
 ---
 
-### Q7. Which AWS service is the repository for SOC, ISO, HIPAA, FedRAMP compliance reports?
+### Q7. Which AWS service is the repository for SOC, ISO, HIPAA, FedRAMP compliance reports? *(Remember)*
 A. AWS Artifact
 B. AWS CloudTrail
 C. AWS Config
@@ -63,7 +63,7 @@ D. AWS Trusted Advisor
 
 ---
 
-### Q8. To run a HIPAA workload on Bedrock you typically need:
+### Q8. To run a HIPAA workload on Bedrock you typically need: *(Evaluate)*
 A. Nothing extra — Bedrock auto-complies
 B. A signed Business Associate Addendum (BAA) with AWS, plus use of HIPAA-eligible services
 C. A separate AWS account in GovCloud
@@ -71,7 +71,7 @@ D. To disable encryption
 
 ---
 
-### Q9. Which is TRUE about Bedrock and customer data?
+### Q9. Which is TRUE about Bedrock and customer data? *(Analyze)*
 A. AWS uses customer prompts to retrain base FMs by default
 B. By default, customer prompts and outputs are NOT used to train base FMs and stay in the customer's account/Region
 C. All Bedrock data is public
@@ -79,7 +79,7 @@ D. Bedrock automatically anonymizes everything
 
 ---
 
-### Q10. "Data poisoning" is BEST defined as:
+### Q10. "Data poisoning" is BEST defined as: *(Remember)*
 A. PII leakage from outputs
 B. An attacker inserting malicious examples into training or RAG data
 C. Network packet flooding
@@ -87,7 +87,7 @@ D. Token loss
 
 ---
 
-### Q11. Which AI threat involves an attacker querying a model thousands of times to copy its behavior?
+### Q11. Which AI threat involves an attacker querying a model thousands of times to copy its behavior? *(Analyze)*
 A. Prompt injection
 B. Model extraction (model theft)
 C. Model inversion
@@ -95,7 +95,7 @@ D. Cross-site scripting
 
 ---
 
-### Q12. The SageMaker EXECUTION ROLE is:
+### Q12. The SageMaker EXECUTION ROLE is: *(Remember)*
 A. The IAM role the SageMaker job/endpoint assumes to access AWS resources (S3, ECR, KMS)
 B. A KMS key
 C. A VPC subnet
@@ -103,7 +103,7 @@ D. A network ACL
 
 ---
 
-### Q13. Which is NOT a typical encryption-at-rest option for SageMaker resources?
+### Q13. Which is NOT a typical encryption-at-rest option for SageMaker resources? *(Analyze)*
 A. AWS-managed KMS keys
 B. Customer-managed KMS keys (CMK)
 C. Plaintext S3 (unencrypted)
@@ -111,7 +111,7 @@ D. Default KMS encryption
 
 ---
 
-### Q14. A custom (fine-tuned) Bedrock model is:
+### Q14. A custom (fine-tuned) Bedrock model is: *(Understand)*
 A. Public by default
 B. Stored encrypted (KMS — customer-managed key recommended) and owned by the customer
 C. Trained on other customers' data
@@ -119,7 +119,7 @@ D. Hosted by the model provider
 
 ---
 
-### Q15. Which AWS service AGGREGATES audit evidence into framework-aligned packages?
+### Q15. Which AWS service AGGREGATES audit evidence into framework-aligned packages? *(Remember)*
 A. AWS Audit Manager
 B. AWS Snowball
 C. AWS Glue
@@ -127,7 +127,7 @@ D. AWS Direct Connect
 
 ---
 
-### Q16. To filter PII at INFERENCE TIME on Bedrock prompts and responses, use:
+### Q16. To filter PII at INFERENCE TIME on Bedrock prompts and responses, use: *(Apply)*
 A. AWS Macie
 B. Bedrock Guardrails — Sensitive Information filter
 C. AWS Config
@@ -135,7 +135,7 @@ D. AWS Artifact
 
 ---
 
-### Q17. Which scenario describes MODEL INVERSION?
+### Q17. Which scenario describes MODEL INVERSION? *(Understand)*
 A. Reordering layers of a neural network
 B. Reconstructing training data from model outputs
 C. Reversing a Lambda function
@@ -143,7 +143,7 @@ D. Inverting a vector store
 
 ---
 
-### Q18. To detect drift in a deployed SageMaker model's accuracy or fairness, use:
+### Q18. To detect drift in a deployed SageMaker model's accuracy or fairness, use: *(Apply)*
 A. SageMaker Model Monitor (with Clarify for bias drift)
 B. AWS CloudFront
 C. AWS Glue
@@ -151,7 +151,7 @@ D. Amazon Athena
 
 ---
 
-### Q19. A VPC endpoint POLICY allows you to:
+### Q19. A VPC endpoint POLICY allows you to: *(Understand)*
 A. Encrypt data
 B. Further restrict which actions / principals / resources can use the endpoint
 C. Replace IAM
@@ -159,7 +159,7 @@ D. Create new model providers
 
 ---
 
-### Q20. Which is a strong defense against MODEL EXTRACTION attacks?
+### Q20. Which is a strong defense against MODEL EXTRACTION attacks? *(Evaluate)*
 A. Lower the temperature to 0
 B. Apply rate limiting, monitoring of query volume, and consider watermarking
 C. Remove the system prompt
@@ -167,7 +167,7 @@ D. Disable Guardrails
 
 ---
 
-### Q21. GDPR applies to a US-based AI service if:
+### Q21. GDPR applies to a US-based AI service if: *(Understand)*
 A. The service has any customers anywhere
 B. The service processes personal data of EU residents
 C. The service uses GPUs
@@ -175,7 +175,7 @@ D. Never — GDPR is US-only
 
 ---
 
-### Q22. To version trained models and gate them through an approval workflow before deployment, use:
+### Q22. To version trained models and gate them through an approval workflow before deployment, use: *(Apply)*
 A. SageMaker Model Registry
 B. Bedrock Knowledge Bases
 C. PartyRock
@@ -183,7 +183,7 @@ D. Amazon Polly
 
 ---
 
-### Q23. Which BEST sequence describes a secure Bedrock architecture for sensitive data?
+### Q23. Which BEST sequence describes a secure Bedrock architecture for sensitive data? *(Create)*
 A. Public internet → no IAM → no encryption → no logging
 B. VPC endpoint + least-privilege IAM + KMS encryption + Guardrails + invocation logging + Macie on the source data
 C. Run on EC2 with full admin permissions
@@ -191,7 +191,7 @@ D. Use root credentials for simplicity
 
 ---
 
-### Q24. "Insecure plugin/tool use" by a Bedrock Agent is BEST mitigated by:
+### Q24. "Insecure plugin/tool use" by a Bedrock Agent is BEST mitigated by: *(Evaluate)*
 A. Removing the FM
 B. Least-privilege IAM on action groups, allow-listed APIs, and human approval gates for sensitive actions
 C. Increasing context window

@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~55 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=ASCM+CLTD+logistics+network+design+overview" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="DAIecDpuxqA" href="https://www.youtube.com/results?search_query=ASCM+CLTD+logistics+network+design+overview" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 12 min · Big picture</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=center+of+gravity+method+supply+chain+facility+location" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="cipzCjYhs38" href="https://www.youtube.com/results?search_query=center+of+gravity+method+supply+chain+facility+location" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 10 min · Worked example</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=hub+and+spoke+vs+point+to+point+logistics" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="h8xT4tMGBjg" href="https://www.youtube.com/results?search_query=hub+and+spoke+vs+point+to+point+logistics" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 9 min · FedEx vs LTL example</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=3PL+4PL+difference+explained+logistics" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="9J2pTNTksno" href="https://www.youtube.com/results?search_query=3PL+4PL+difference+explained+logistics" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -61,7 +61,7 @@
       <span class="vg-duration">⏱ 11 min · Make-or-buy decision</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=supply+chain+network+optimization+trade+offs" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="C_CzGP0N2w0" href="https://www.youtube.com/results?search_query=supply+chain+network+optimization+trade+offs" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -75,7 +75,7 @@
 ## 📚 Recommended (~35 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=greenfield+vs+brownfield+facility+siting" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="HqD1oIpglfY" href="https://www.youtube.com/results?search_query=greenfield+vs+brownfield+facility+siting" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 8 min · When to use each</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=cross+dock+distribution+center+explained" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="7oNzCUYMA1A" href="https://www.youtube.com/results?search_query=cross+dock+distribution+center+explained" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -93,7 +93,7 @@
       <span class="vg-duration">⏱ 12 min · Walmart example</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=multi+echelon+distribution+network+design" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="hAxMYIKzp3Q" href="https://www.youtube.com/results?search_query=multi+echelon+distribution+network+design" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -107,7 +107,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=nearshoring+reshoring+supply+chain+strategy" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="JhiNs3Cql5o" href="https://www.youtube.com/results?search_query=nearshoring+reshoring+supply+chain+strategy" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 20 min · Mexico shift</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=omnichannel+logistics+strategy+retail" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="mW6D05WnBWs" href="https://www.youtube.com/results?search_query=omnichannel+logistics+strategy+retail" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -125,7 +125,7 @@
       <span class="vg-duration">⏱ 18 min · BOPIS, ship-from-store</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=supply+chain+digital+twin+control+tower" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="k5LGdAa1TyI" href="https://www.youtube.com/results?search_query=supply+chain+digital+twin+control+tower" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

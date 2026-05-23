@@ -7,7 +7,7 @@
 
 ## Questions
 
-### Q1. The transport mode with the LOWEST cost per ton-mile is:
+### Q1. The transport mode with the LOWEST cost per ton-mile is: *(Remember)*
 A. Air
 B. Truck
 C. Rail
@@ -15,7 +15,7 @@ D. Ocean
 
 ---
 
-### Q2. A single container moving from a Chinese factory by truck → rail → ocean → truck without rehandling is called:
+### Q2. A single container moving from a Chinese factory by truck → rail → ocean → truck without rehandling is called: *(Apply)*
 A. Multimodal
 B. Intermodal
 C. Drop-ship
@@ -23,7 +23,7 @@ D. Bonded
 
 ---
 
-### Q3. A logistics provider that orchestrates multiple 3PLs but owns no assets is:
+### Q3. A logistics provider that orchestrates multiple 3PLs but owns no assets is: *(Understand)*
 A. 1PL
 B. 2PL
 C. 3PL
@@ -31,7 +31,7 @@ D. 4PL / LLP
 
 ---
 
-### Q4. The strictest service KPI among these is:
+### Q4. The strictest service KPI among these is: *(Understand)*
 A. On-time delivery
 B. Fill rate
 C. OTIF
@@ -39,7 +39,7 @@ D. Perfect order
 
 ---
 
-### Q5. Receiving → Putaway → Storage → Picking → Packing → Shipping is the order of:
+### Q5. Receiving → Putaway → Storage → Picking → Packing → Shipping is the order of: *(Remember)*
 A. CPFR cycle
 B. Warehouse core operations
 C. SCOR processes
@@ -47,7 +47,7 @@ D. ABC analysis
 
 ---
 
-### Q6. A picking strategy where one worker stays in their zone and orders move between zones is:
+### Q6. A picking strategy where one worker stays in their zone and orders move between zones is: *(Apply)*
 A. Discrete picking
 B. Batch picking
 C. Zone picking
@@ -55,7 +55,7 @@ D. Wave picking
 
 ---
 
-### Q7. A goods-to-person system would BEST suit:
+### Q7. A goods-to-person system would BEST suit: *(Apply)*
 A. A small craft brewery
 B. A high-throughput e-commerce fulfillment center
 C. A pipeline operator
@@ -63,7 +63,7 @@ D. A bulk grain elevator
 
 ---
 
-### Q8. A bonded warehouse provides:
+### Q8. A bonded warehouse provides: *(Remember)*
 A. Free storage
 B. Customs supervision with deferred duty
 C. Refrigerated storage
@@ -71,7 +71,7 @@ D. Drop-shipping
 
 ---
 
-### Q9. The 5-mode trade-off for time-critical, high-value, low-weight cargo favors:
+### Q9. The 5-mode trade-off for time-critical, high-value, low-weight cargo favors: *(Apply)*
 A. Ocean
 B. Rail
 C. Truck
@@ -79,7 +79,7 @@ D. Air
 
 ---
 
-### Q10. A retailer takes the customer order but the manufacturer ships direct to the customer. This is:
+### Q10. A retailer takes the customer order but the manufacturer ships direct to the customer. This is: *(Apply)*
 A. Crossdocking
 B. Drop-shipping
 C. Direct rail
@@ -87,7 +87,7 @@ D. Milk run
 
 ---
 
-### Q11. Two suppliers ship parts that are merged at a hub before going to a single customer. This logistics technique is:
+### Q11. Two suppliers ship parts that are merged at a hub before going to a single customer. This logistics technique is: *(Apply)*
 A. In-transit merge
 B. Crossdocking
 C. Drop-ship
@@ -95,7 +95,7 @@ D. Bonded transfer
 
 ---
 
-### Q12. A 20-foot ocean container is commonly abbreviated:
+### Q12. A 20-foot ocean container is commonly abbreviated: *(Remember)*
 A. TEU
 B. ULD
 C. GMA
@@ -103,7 +103,7 @@ D. LTL
 
 ---
 
-### Q13. Air cargo containers used inside aircraft are called:
+### Q13. Air cargo containers used inside aircraft are called: *(Remember)*
 A. ULDs
 B. TEUs
 C. EURs
@@ -111,7 +111,7 @@ D. RPCs
 
 ---
 
-### Q14. Crossdocking is BEST for:
+### Q14. Crossdocking is BEST for: *(Evaluate)*
 A. Slow-moving spare parts
 B. High-velocity SKUs with predictable demand
 C. Custom one-off products
@@ -119,7 +119,7 @@ D. Bonded goods awaiting customs
 
 ---
 
-### Q15. A perfect order requires all EXCEPT:
+### Q15. A perfect order requires all EXCEPT: *(Understand)*
 A. On time
 B. In full
 C. Undamaged
@@ -127,7 +127,7 @@ D. Lowest price
 
 ---
 
-### Q16. A sneaker company uses ocean for replenishment and air for hot SKUs. This is an example of:
+### Q16. A sneaker company uses ocean for replenishment and air for hot SKUs. This is an example of: *(Analyze)*
 A. Pure mode strategy
 B. Hybrid / mixed mode strategy
 C. Drop-ship
@@ -135,7 +135,7 @@ D. Crossdock
 
 ---
 
-### Q17. The North American standard wood pallet is:
+### Q17. The North American standard wood pallet is: *(Remember)*
 A. 48 × 40 (GMA)
 B. 1200 × 800 (EUR)
 C. 50 × 50
@@ -143,7 +143,7 @@ D. 60 × 36
 
 ---
 
-### Q18. Reverse logistics in SCOR falls under which process?
+### Q18. Reverse logistics in SCOR falls under which process? *(Remember)*
 A. Plan
 B. Source
 C. Make
@@ -151,7 +151,7 @@ D. Return
 
 ---
 
-### Q19. A 3PL that operates warehousing AND transportation services is providing:
+### Q19. A 3PL that operates warehousing AND transportation services is providing: *(Understand)*
 A. Asset-light orchestration
 B. Multi-function outsourced logistics
 C. Pure carriage
@@ -159,7 +159,7 @@ D. 5PL aggregation
 
 ---
 
-### Q20. Last-mile delivery innovations include all EXCEPT:
+### Q20. Last-mile delivery innovations include all EXCEPT: *(Understand)*
 A. Lockers
 B. Drones
 C. AMRs (autonomous mobile robots)
@@ -167,7 +167,7 @@ D. Open-pit mining
 
 ---
 
-### Q21. A bill of lading is:
+### Q21. A bill of lading is: *(Remember)*
 A. A customs receipt
 B. A freight contract + receipt of cargo
 C. A pallet specification
@@ -175,7 +175,7 @@ D. A WMS report
 
 ---
 
-### Q22. A flatbed trailer is BEST for:
+### Q22. A flatbed trailer is BEST for: *(Apply)*
 A. Refrigerated goods
 B. Oversized industrial loads
 C. Small parcels
@@ -183,7 +183,7 @@ D. Frozen fish
 
 ---
 
-### Q23. Random storage is preferred when:
+### Q23. Random storage is preferred when: *(Evaluate)*
 A. Findability matters most
 B. Maximum cubic density is the priority
 C. Operators are new
@@ -191,7 +191,7 @@ D. SKUs rarely move
 
 ---
 
-### Q24. OTIF stands for:
+### Q24. OTIF stands for: *(Remember)*
 A. On Time In Full
 B. Order Type Inventory Forecast
 C. Overhead Transportation Insurance Factor
@@ -199,7 +199,7 @@ D. Outbound Transportation Inbound Freight
 
 ---
 
-### Q25. The PRIMARY trade-off in adding a regional crossdock vs centralized DC is:
+### Q25. The PRIMARY trade-off in adding a regional crossdock vs centralized DC is: *(Analyze)*
 A. Higher inventory but faster local delivery
 B. Lower inventory but slower delivery
 C. Lower customer service

@@ -2,6 +2,12 @@
 
 > **Why this module matters:** Together with Module 4, this completes Domain 2 (22% of the exam). You'll be asked to **identify an attack from a 1-paragraph scenario** dozens of times on the real test. The trick is having an internal taxonomy so attacks don't blur together.
 
+> **Prerequisites for this module.** Before starting, you should be comfortable with:
+> - [Threat actors and motivations](../Module-04-Threats-Threat-Actors/Reading.md) — Module 4 covers *who*; this module covers *how*.
+> - [Cryptography basics](../Module-02-Cryptography-PKI/Reading.md) — needed for pass-the-hash, replay attacks, and weak-cipher questions.
+> - [Authentication factors and federation protocols](../Module-03-Identity-Access-Management/Reading.md) — needed for credential attacks and session-hijack scenarios.
+> - Basic web concepts (HTTP, cookies, request/response) — needed for SQLi/XSS/CSRF/SSRF questions.
+
 ---
 
 ## 🍕 A Story: The Bank That Got Robbed in 12 Different Ways
@@ -52,7 +58,7 @@ Each family has sub-types — pass-the-hash vs brute force, phishing vs vishing,
 
 ## 🕷️ OWASP Top 10 (Web App Vulnerabilities)
 
-The 2021 OWASP Top 10 — Sec+ references this list (don't memorize all 10 in order, but know the heavy-hitters):
+The **OWASP Top 10** is a periodic consensus list of the most critical web-application security risks, maintained by the **Open Worldwide Application Security Project** (founded by Mark Curphey, 2001; the first Top 10 was published 2003). The current edition is **OWASP Top 10:2021** — the next refresh is expected late 2025/2026. Sec+ references this list (don't memorize all 10 in order, but know the heavy-hitters):
 
 1. **A01 Broken Access Control** — IDOR (`?user_id=42`), missing authorization checks
 2. **A02 Cryptographic Failures** — weak ciphers, no HTTPS, hardcoded keys
@@ -249,6 +255,28 @@ A PBQ might show 4 log snippets — drag each to its attack name.
 
 ---
 
+## 📊 Case Study — Log4Shell (CVE-2021-44228, December 2021)
+
+**Situation.** **Apache Log4j 2** is a Java logging library embedded in roughly **2.5 billion** devices and applications worldwide — every Java enterprise stack, every major SaaS, half the Fortune 500's middleware, Minecraft servers, iCloud, Apple's enterprise infrastructure, AWS, Steam, Tesla, government systems. Logging libraries are *boring infrastructure* — invisible to most developers and absent from most threat models. In 2013 Log4j had added a feature for "**lookups**," including JNDI (Java Naming and Directory Interface) lookups that let log strings resolve to remote LDAP/DNS objects at log time — a reasonable feature for a 2013 enterprise SOA world, dangerous in any modern context.
+
+**Decision.** On **24 November 2021** an Alibaba security researcher (Chen Zhaojun) responsibly disclosed the flaw — later assigned **CVE-2021-44228**, CVSS **10.0** (max) — to the Apache Software Foundation. Apache developers (all volunteers) began drafting a patch. On **9 December 2021** before the official disclosure, a **proof-of-concept exploit** appeared in a Chinese Minecraft modder's tweet. Within hours, the PoC was confirmed: an attacker who could control *any string that ends up logged* — a User-Agent header, an HTTP URL, a chat message, an iPhone device name (which iCloud logged) — could trigger Log4j to fetch and execute remote Java code. The official Apache disclosure came **10 December 2021** with patch 2.15.0. The patch itself was incomplete, leading to **CVE-2021-45046** (a related flaw) on 14 December and **CVE-2021-44832** on 28 December. Three patches in 18 days.
+
+**Outcome.** Within **72 hours** of public disclosure, Microsoft's threat-intel team observed **state actors from China, Iran, North Korea, and Turkey** weaponizing Log4Shell. By 17 December, the **Belgian Ministry of Defense** disclosed it had been breached via Log4Shell. **CISA Director Jen Easterly** called it "one of the most serious vulnerabilities I've seen in my entire career" (Senate testimony, 4 February 2022). CISA added Log4Shell to the **KEV catalog** the same day as disclosure and issued **Emergency Directive 22-02** ordering all federal civilian agencies to inventory and patch within days. Over the following weeks, CISA tracked exploitation against the **US Department of Defense**, **Belgian Ministry**, **Iran-linked attacks on a US federal civilian agency** (later confirmed February 2022), and tens of thousands of commercial systems. The cleanup tail was *years* — as late as 2024 Log4Shell still ranked in the top exploited CVEs because of the long tail of embedded systems, vendor appliances, and air-gapped industrial systems with no upgrade path. The US **Cyber Safety Review Board** published its first-ever report on Log4Shell (July 2022) and recommended sweeping changes to open-source funding, SBOM mandates (codified in Executive Order 14028), and mandatory vendor coordinated-disclosure programs.
+
+**Lesson for the exam / for practitioners.** Log4Shell is the canonical 2020s example of nearly every Module 5 concept:
+- **CVE / CVSS / KEV / EPSS** all crystallized around this incident. CVSS 10.0; KEV listing within hours; EPSS top-10 for years. The exam tests these scoring systems — practice by ranking patches with Log4Shell-style "10 CVSS, 95% EPSS, on KEV" against an internal SQLi (8.0, 5% EPSS, not on KEV but on your customer-facing app) — Log4Shell wins prioritization every time.
+- **Insecure design + Vulnerable & outdated components** (OWASP A04 + A06). Log4j's JNDI-lookup feature was a 2013 design that became a 2021 RCE. A06 "Vulnerable & Outdated Components" exists *because* of this exact pattern. Software Composition Analysis (SCA — Module 10) flags this kind of risk.
+- **Defense-in-depth as the only practical mitigation** during the patch lag. WAF rules to block `${jndi:` strings, egress filtering to block outbound LDAP/RMI from servers, removal of the `JndiLookup.class` from running JARs as a hot-patch — none was a complete fix, but layered, they bought time until proper patches were deployed.
+- **Supply chain transparency.** Software Bill of Materials (**SBOM**) became mandatory for US federal software because of Log4Shell (EO 14028, May 2021, codified via NIST SP 800-218 SSDF). Without an SBOM, you couldn't even *answer* the question "do we use Log4j?" — Module 10 covers SBOMs in depth.
+- **The patch-was-incomplete pattern.** Three CVEs in 18 days. The exam tests patch-management discipline (Module 7/8): the right answer to "we patched, are we safe?" is *re-scan* and *verify*, not assume.
+
+**Discussion (Socratic).**
+- **Q1:** Log4j was maintained by ~5 volunteer developers, supported by ~$2,500/year in donations (similar to OpenSSL pre-Heartbleed). The Apache Software Foundation has hundreds of similar projects with similar exposure. If you had $50M as a CISO-funded "critical open source" budget, how would you allocate it? Among: paid maintainers, formal-verification tooling, alternative implementations of critical functionality (so single bugs don't take out 60% of the internet), vendor liability frameworks, university research grants? Defend your allocation against a "the market should solve this" objection.
+- **Q2:** When the PoC dropped before the patch (9 December), Apache was effectively forced to release the patch a day early — incompletely. Should *responsible disclosure* timelines be shortened to prevent this race, or lengthened? Argue both sides referencing CERT/CC's 45-day default vs Google Project Zero's 90+30 day policy.
+- **Q3:** Internal applications running pre-2015 versions of Log4j on air-gapped industrial systems may *never* be patched. Are these systems "vulnerable" in any meaningful sense? Defend a position on whether the *compensating control* (air-gap, segmentation, monitoring) is materially equivalent to patching, with reference to the NIST SP 800-82 (ICS Security) guidance covered in Module 7.
+
+---
+
 ## ⚠️ Exam Traps & Common Misconceptions
 
 | Misconception | Reality |
@@ -330,12 +358,29 @@ You now know:
 4. 🧪 You're now ready for **[Practice Exam 1](../Practice-Exams/Practice-Exam-1.md)** (after Modules 1–5)
 5. ➡️ [Module 6 — Network Security](../Module-06-Network-Security/Reading.md)
 
+> **Where this leads.**
+> - Inside this course: [Module 6](../Module-06-Network-Security/Reading.md) covers WAFs, IDS/IPS, segmentation — the network-layer defenses against these attacks; [Module 8](../Module-08-Security-Operations/Reading.md) covers SIEM detection rules for the IOCs/IOAs in this module; [Module 10](../Module-10-Application-Data-Security/Reading.md) covers SAST/DAST/SCA — *prevention* of these vulns at build time.
+> - Cross-course: AWS Solutions Architect (course 04) covers AWS WAF and GuardDuty.
+> - Practice: Practice Exam 1 has ~12 questions from this module (the largest single source); Final Mock has ~15.
+
 ---
 
 ## 📚 Further Reading (Optional)
 
-- 📖 [OWASP Top 10 — 2021](https://owasp.org/Top10/) — read each category page
-- 📖 [PortSwigger Web Security Academy](https://portswigger.net/web-security) — free hands-on web vuln labs
+**Primary sources:**
+- 📖 [OWASP Top 10 — 2021](https://owasp.org/Top10/) — read each category page; next refresh expected 2025-2026.
+- 📄 OWASP API Security Top 10 (2023 edition) — increasingly tested as APIs eclipse traditional web apps.
+- 📄 Stuttard, D. & Pinto, M. (2011). *The Web Application Hacker's Handbook* (2nd ed.). Wiley. ISBN 978-1118026472. (The canonical web-attack textbook — still the field reference despite age.)
+- 📄 OWASP ASVS (Application Security Verification Standard) v4.0.3, 2021.
+
+**Case-study sources (Log4Shell):**
+- 📄 Apache Software Foundation (2021). *Apache Log4j Security Vulnerabilities* page — list of CVE-2021-44228, -45046, -45105, -44832.
+- 📄 US Cyber Safety Review Board (2022). *Review of the December 2021 Log4j Event*. (Free, ~50 pp. The definitive after-action.)
+- 📄 CISA (2021-2022). [*Apache Log4j Vulnerability Guidance*](https://www.cisa.gov/news-events/news/apache-log4j-vulnerability-guidance). Ongoing.
+
+**Practitioner labs / hands-on:**
+- 📖 [PortSwigger Web Security Academy](https://portswigger.net/web-security) — free hands-on web vuln labs (the best free training resource for SQLi/XSS/CSRF/SSRF)
 - 📖 [MITRE ATT&CK Techniques](https://attack.mitre.org/techniques/enterprise/)
+- 📖 [HackTricks](https://book.hacktricks.xyz/) — practitioner attack playbook (free)
 - 📖 [Verizon DBIR — Patterns chapter](https://www.verizon.com/business/resources/reports/dbir/)
 - 📖 [CISA Stop Ransomware guide](https://www.cisa.gov/stopransomware)

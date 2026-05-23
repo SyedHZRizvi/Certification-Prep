@@ -2,6 +2,14 @@
 
 > **Why this module matters:** Networking sets up the highways; this module is about the toll booths, guard posts, and traffic cops. NSG rule precedence is the most common AZ-104 trick question. Load Balancer vs App Gateway vs Front Door is the most common Yes/No grouping. Master both and you'll pick up easy points.
 
+> **Prerequisites for this module.** Before starting, you should be comfortable with:
+> - [Module 7](../Module-07-Virtual-Networks/Reading.md): VNets, subnets, reserved subnet names (`AzureFirewallSubnet`, `AzureBastionSubnet`), and the hub-spoke topology.
+> - [Module 2](../Module-02-Entra-ID-RBAC/Reading.md): Conditional Access (this module's controls operate at the *network* layer; CA operates at the *identity* layer — they're complementary).
+> - OSI model layers 3, 4, and 7 — you need to know what "L4 stateful" vs. "L7 inspection" actually means.
+> - The OWASP Top 10 (2021 revision; refresh expected late 2025) — App Gateway and Front Door WAF rules are based on it. Covered in [`09-CompTIA-Security-Plus` Module 5](../../09-CompTIA-Security-Plus/Module-05-Security-Operations/Reading.md).
+>
+> This module is dense. If NSG rule precedence has never clicked, do Microsoft Learn's *Network Security* sandbox before reading.
+
 ---
 
 ## 🍕 A Story: The Mall With Five Different Security Layers
@@ -390,6 +398,55 @@ You now know:
 
 ---
 
+## 📊 Case Study — The MOVEit Transfer Breach (2023) and What Azure Network Security Would Have Stopped
+
+**Situation.** MOVEit Transfer is a managed file-transfer (MFT) product made by Progress Software, deployed by thousands of enterprises for B2B file exchange (healthcare records, payroll, government data). On May 27, 2023, a previously-unknown SQL injection vulnerability (**CVE-2023-34362**) was actively exploited by the **Cl0p ransomware group**. By the time Progress shipped a patch on May 31, hundreds of organizations had been compromised. Final tally (per *Emsisoft, MOVEit Hack Victim Tracker*, December 2023): **~2,773 confirmed organizations breached**, including the U.S. Department of Energy, Shell, BBC, British Airways, the State of Maine, the Government of Nova Scotia, IBM, and PwC. **~95 million individuals' data** was exfiltrated. Direct losses, settlements, and remediation costs are estimated north of **$15 billion** industry-wide (*IT Governance Limited*, breach impact analysis, 2024).
+
+**Decision.** The MOVEit Transfer software itself was the vulnerability, but the *blast radius* was determined by how victim organizations had networked it. Two architecture patterns separated organizations that lost millions of records from those that did not:
+1. **Public exposure**: Organizations that deployed MOVEit with a *public IP*, no WAF, and no upstream proxy — typical "stand it up in the DMZ" architecture — had the vulnerability reachable from the open internet. The attacker scanned, exploited, and exfiltrated in hours.
+2. **No L7 anomaly detection on egress**: Even after the SQL injection succeeded, exfil required the MOVEit host to upload gigabytes of data outbound. Organizations without **NSG egress restrictions**, **Azure Firewall with FQDN-based allow-listing**, or **network anomaly detection** had no choke point. The data left through a default `0.0.0.0/0 → Internet` egress path.
+
+If MOVEit had been deployed on Azure with this module's recommended controls, the attack would have been substantially mitigated:
+- **Azure Front Door Premium with WAF policy in Prevention mode** would have blocked the SQL-injection POST against managed-rule "OWASP CRS 3.2: SQL Injection / SQLI" — even though the CVE was novel, the *attack pattern* (`'; DECLARE @s VARCHAR(8000) ...`) matched a CRS rule that's been in place since 2017.
+- **Private Link origin** from Front Door to the MOVEit App Service / VM would have eliminated the public IP exposure. Even if WAF was bypassed, the attacker would need to compromise something inside the VNet first.
+- **Azure Firewall Premium with IDPS** would have alerted on the post-exploit C2 traffic (Cl0p's beacons hit known-bad IPs catalogued in Microsoft Threat Intelligence). IDPS rules block-on-known-malicious automatically.
+- **NSG egress rule**: outbound from MOVEit subnet allowed only to specific FQDNs (your partner upload endpoints + Microsoft Update). Exfiltration to attacker-controlled servers blocked at the subnet edge.
+
+**Outcome.** As of 2024, multiple MOVEit victims (the BBC, Shell, BMO, Schneider Electric) publicly disclosed they were migrating to either Microsoft-managed Secure File Exchange or to architectures where MFT runs behind Azure Front Door + Private Link + WAF. The CISO of one Fortune 500 victim told *Wall Street Journal* (2023-09-15): "Our root cause wasn't that we ran MOVEit. It was that we ran MOVEit with a public IP."
+
+**Lesson for the exam / for practitioners.** AZ-104 won't name MOVEit. It will name the *pattern*. Every "publish a third-party app to the internet" question is testing whether you reflexively answer **Front Door Premium with WAF + Private Link origin + Azure Firewall egress + NSG defense-in-depth**. The "Big Comparison" table in this module is essentially the multiple-choice form of the MOVEit lesson:
+- *L4 distribution in a region* → Standard LB.
+- *L7 with WAF in a region* → App Gateway WAF v2.
+- *Global L7 + WAF + CDN* → Front Door.
+- *Stateful L3–L7 firewall* → Azure Firewall.
+- *Micro-segmentation between tiers* → NSG + ASG.
+
+The exam-favorite trap is reaching for *one* of these when the right answer is *all of them, layered*. MOVEit is the cautionary tale for why layering matters.
+
+**Discussion (Socratic).**
+- **Q1.** WAFs in 2023 had rules covering SQL injection patterns going back decades — yet hundreds of orgs were breached. Defend the strongest argument that WAFs are still the right primary control. Then defend the strongest counter-argument (that WAFs invite complacency). Where does the practitioner's defense land?
+- **Q2.** Azure Firewall Premium IDPS subscribes to Microsoft Threat Intelligence and updates continuously. A skeptic argues that IDPS gives a false sense of security against novel zero-days (like MOVEit's was). Construct the strongest case for IDPS as a *defense-in-depth* layer specifically against zero-days. (Hint: think about what IDPS catches *after* the initial compromise.)
+- **Q3.** NSG egress controls are widely under-used because they break "things just work." Walk through the operational discipline a team needs to deploy *deny-by-default egress* with FQDN allow-lists for a 30-microservice estate. What's the realistic month-one acceptance criterion versus month-six?
+
+---
+
+> **Where this leads.**
+> - Inside this course: Module 10 wires NSG Flow Logs, WAF logs, and Firewall logs into Azure Monitor — the *detection* half of the prevention-detect-respond loop this module covered.
+> - Cross-course: [`09-CompTIA-Security-Plus`](../../09-CompTIA-Security-Plus/) Modules 4, 5 cover the threat-actor side (Cl0p, ransomware-as-a-service models, MITRE ATT&CK techniques); [`04-AWS-Solutions-Architect-Associate` Module 8](../../04-AWS-Solutions-Architect-Associate/Module-08-Security-Identity/Reading.md) covers the AWS analogues (Security Groups, AWS WAF, Shield, GuardDuty).
+> - Practice: PE-2 has 12 questions from this module — it's the heaviest single-module test; Final Mock combines with VNet, identity, monitoring.
+
+---
+
+## 💬 Discussion — Socratic prompts
+
+1. **The NSG priority trap.** A team adds an `AllowHttpsFromInternet` rule at priority 4096 and a `DenyAll` rule at priority 100, then complains traffic is blocked. Walk through the evaluation and identify the misconception. Then propose a *team policy* (priority allocation scheme) that makes this misconfiguration nearly impossible at design time.
+2. **Service tags vs. hard IPs.** Service tags (`Storage.EastUS`, `AzureFrontDoor.Backend`) are symbolic and auto-update. Hard-coded CIDR allow-lists are explicit. When is the *explicit-IP* approach actually better? (Hint: think about regulatory audit reports that require "the IP allow-list as of date X.")
+3. **Azure Firewall Standard vs. Premium.** Standard is roughly half the price; Premium adds TLS inspection, IDPS, URL filtering. For an internal-only workload (no external attack surface), is Premium overkill? Construct the strongest case for *Standard is enough* and the strongest case for *Premium is mandatory*. What workload type tips the answer?
+4. **WAF detection-mode vs. prevention-mode.** Teams routinely deploy WAF in detection-only "to avoid breaking things." The MOVEit lesson is that detection-only is not the same as protection. Defend a 30-day move from detection to prevention as a *standard procedure*. What's the right monitoring discipline to make it safe?
+5. **Bastion vs. JIT VM access.** Both let you administer VMs without a public IP. When is Bastion (always-on, RDP/SSH-in-the-browser) the right answer, and when is JIT VM access (open NSG rule for a fixed window when requested) better? At what fleet size does Bastion's per-hour cost stop being worth it?
+
+---
+
 ## 📚 Further Reading (Optional)
 
 - 📖 [NSG overview](https://learn.microsoft.com/azure/virtual-network/network-security-groups-overview)
@@ -397,3 +454,6 @@ You now know:
 - 📖 [Application Gateway overview](https://learn.microsoft.com/azure/application-gateway/overview)
 - 📖 [Azure Front Door overview](https://learn.microsoft.com/azure/frontdoor/front-door-overview)
 - 📖 [Load Balancer SKUs](https://learn.microsoft.com/azure/load-balancer/skus)
+- 📖 *OWASP Top 10* (2021; new revision expected late 2025) — the WAF managed-rule basis.
+- 📖 *NIST Cybersecurity Framework 2.0* (NIST, February 2024) — the modern reference for the prevent / detect / respond / recover loop this module exemplifies.
+- 📖 CISA, *MOVEit Transfer Advisory* (AA23-158A, June 2023; updated through 2024) — the canonical incident write-up.

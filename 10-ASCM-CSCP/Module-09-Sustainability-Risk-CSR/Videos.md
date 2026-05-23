@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~52 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Triple+bottom+line+sustainability+supply+chain" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="CJ8ZzV17bFs" href="https://www.youtube.com/results?search_query=Triple+bottom+line+sustainability+supply+chain" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 14 min · People/Planet/Profit framework</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Scope+1+2+3+emissions+explained" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="Ho4e5TI3Jts" href="https://www.youtube.com/results?search_query=Scope+1+2+3+emissions+explained" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 11 min · Why scope 3 dominates</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=ISO+31000+risk+management+process" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="A9IaYI1xHWw" href="https://www.youtube.com/results?search_query=ISO+31000+risk+management+process" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 13 min · Step-by-step walkthrough</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Business+continuity+plan+BCP+RTO+RPO" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="cEb79PGWCL8" href="https://www.youtube.com/results?search_query=Business+continuity+plan+BCP+RTO+RPO" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~30 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Circular+economy+Ellen+MacArthur" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="aSCQd6A19YQ" href="https://www.youtube.com/results?search_query=Circular+economy+Ellen+MacArthur" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 9 min · Linear vs circular</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=ESG+investing+supply+chain+sustainability" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="Tr8aqBenSG4" href="https://www.youtube.com/results?search_query=ESG+investing+supply+chain+sustainability" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 11 min · MSCI / Sustainalytics</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=FMEA+failure+mode+effects+analysis+RPN" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="7RmkdNOvnTM" href="https://www.youtube.com/results?search_query=FMEA+failure+mode+effects+analysis+RPN" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Supply+chain+resilience+post+COVID" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="k7dhnWUVPlo" href="https://www.youtube.com/results?search_query=Supply+chain+resilience+post+COVID" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 16 min · Industry survey insights</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Modern+slavery+act+supply+chain+human+rights" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="Q3FTpj8-ZQQ" href="https://www.youtube.com/results?search_query=Modern+slavery+act+supply+chain+human+rights" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 13 min · UK / EU / US regulations</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=NIST+cybersecurity+framework+supply+chain" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="Z_0za8rbpQE" href="https://www.youtube.com/results?search_query=NIST+cybersecurity+framework+supply+chain" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

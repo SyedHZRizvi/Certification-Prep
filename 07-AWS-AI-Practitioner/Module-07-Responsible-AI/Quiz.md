@@ -7,7 +7,7 @@
 
 ## Questions
 
-### Q1. Which AWS service is the GO-TO for detecting bias in a model and providing feature-attribution explainability?
+### Q1. Which AWS service is the GO-TO for detecting bias in a model and providing feature-attribution explainability? *(Remember)*
 A. AWS Macie
 B. SageMaker Clarify
 C. Amazon Bedrock Guardrails
@@ -15,7 +15,7 @@ D. AWS Audit Manager
 
 ---
 
-### Q2. A chatbot must NOT reveal customer SSNs or credit-card numbers. The BEST AWS feature to apply is:
+### Q2. A chatbot must NOT reveal customer SSNs or credit-card numbers. The BEST AWS feature to apply is: *(Apply)*
 A. SageMaker Clarify
 B. Guardrails for Amazon Bedrock (PII filter)
 C. Amazon CloudFront
@@ -23,7 +23,7 @@ D. AWS WAF
 
 ---
 
-### Q3. Which Bedrock Guardrails filter blocks topics like "do not give legal advice"?
+### Q3. Which Bedrock Guardrails filter blocks topics like "do not give legal advice"? *(Apply)*
 A. Word filters
 B. Denied topics
 C. PII filter
@@ -31,7 +31,7 @@ D. Image filter
 
 ---
 
-### Q4. A bank's loan-approval model approves Group A at 70% and Group B at 40%. The right diagnostic is:
+### Q4. A bank's loan-approval model approves Group A at 70% and Group B at 40%. The right diagnostic is: *(Analyze)*
 A. A privacy issue
 B. A bias / fairness issue (disparate impact)
 C. A latency issue
@@ -39,7 +39,7 @@ D. A throughput issue
 
 ---
 
-### Q5. SHAP is BEST described as:
+### Q5. SHAP is BEST described as: *(Understand)*
 A. A vector database
 B. A feature-attribution technique that explains individual predictions
 C. A Bedrock model
@@ -47,7 +47,7 @@ D. An IAM action
 
 ---
 
-### Q6. Which is TRUE about SageMaker Model Cards vs AWS AI Service Cards?
+### Q6. Which is TRUE about SageMaker Model Cards vs AWS AI Service Cards? *(Analyze)*
 A. They are the same thing
 B. Model Cards are customer-authored; AI Service Cards are published by AWS for AWS AI services
 C. Both are published by AWS
@@ -55,7 +55,7 @@ D. AI Service Cards are required by law
 
 ---
 
-### Q7. A hospital wants every AI-generated diagnosis reviewed by a doctor before action. Which pattern + service?
+### Q7. A hospital wants every AI-generated diagnosis reviewed by a doctor before action. Which pattern + service? *(Apply)*
 A. Human-over-the-loop with CloudWatch
 B. Human-in-the-loop with Amazon Augmented AI (A2I)
 C. Fully automated approval
@@ -63,7 +63,7 @@ D. SageMaker Edge Manager
 
 ---
 
-### Q8. Which is NOT a Bedrock Guardrails filter category?
+### Q8. Which is NOT a Bedrock Guardrails filter category? *(Analyze)*
 A. Content filters (hate, insults, violence, etc.)
 B. Denied topics
 C. PII / sensitive information
@@ -71,7 +71,7 @@ D. Encrypted volume scanning
 
 ---
 
-### Q9. "Adversarial examples" in ML are:
+### Q9. "Adversarial examples" in ML are: *(Remember)*
 A. Misconfigured IAM policies
 B. Inputs intentionally crafted to fool a model
 C. Test set leakage
@@ -79,7 +79,7 @@ D. Noisy training labels
 
 ---
 
-### Q10. Which feature in Bedrock Guardrails helps catch HALLUCINATIONS in RAG outputs?
+### Q10. Which feature in Bedrock Guardrails helps catch HALLUCINATIONS in RAG outputs? *(Apply)*
 A. Contextual grounding check
 B. AWS Macie
 C. Provisioned Throughput
@@ -87,7 +87,7 @@ D. Word filter
 
 ---
 
-### Q11. SageMaker Model Monitor's BIAS DRIFT capability is built on top of:
+### Q11. SageMaker Model Monitor's BIAS DRIFT capability is built on top of: *(Understand)*
 A. AWS Config
 B. SageMaker Clarify
 C. Amazon Lex
@@ -95,7 +95,7 @@ D. AWS Backup
 
 ---
 
-### Q12. Which is NOT one of AWS's named Responsible AI pillars?
+### Q12. Which is NOT one of AWS's named Responsible AI pillars? *(Analyze)*
 A. Fairness
 B. Explainability
 C. Profitability
@@ -103,7 +103,7 @@ D. Privacy & Security
 
 ---
 
-### Q13. "Disparate impact" is a measure of:
+### Q13. "Disparate impact" is a measure of: *(Remember)*
 A. GPU usage
 B. Difference in selection rates across demographic groups
 C. Model size
@@ -111,7 +111,7 @@ D. Token throughput
 
 ---
 
-### Q14. Which AWS service classifies and discovers PII inside S3 buckets at scale?
+### Q14. Which AWS service classifies and discovers PII inside S3 buckets at scale? *(Remember)*
 A. AWS Macie
 B. AWS CloudTrail
 C. AWS Shield
@@ -119,7 +119,7 @@ D. AWS Backup
 
 ---
 
-### Q15. "Interpretability" differs from "explainability" because:
+### Q15. "Interpretability" differs from "explainability" because: *(Understand)*
 A. They mean the same thing
 B. Interpretability = directly inspect the model; explainability = post-hoc explanation of opaque models
 C. Explainability is for trees only
@@ -127,7 +127,7 @@ D. Interpretability only applies to LLMs
 
 ---
 
-### Q16. Which framework is the U.S. federal voluntary framework for managing AI risk?
+### Q16. Which framework is the U.S. federal voluntary framework for managing AI risk? *(Remember)*
 A. NIST AI RMF
 B. PCI DSS
 C. SOC 2
@@ -135,7 +135,7 @@ D. ITIL
 
 ---
 
-### Q17. The EU AI Act classifies AI systems primarily by:
+### Q17. The EU AI Act classifies AI systems primarily by: *(Understand)*
 A. Model size in parameters
 B. Risk level (unacceptable / high / limited / minimal)
 C. Latency
@@ -143,7 +143,7 @@ D. Country of origin
 
 ---
 
-### Q18. Which AWS document gives you SOC, ISO, HIPAA compliance reports?
+### Q18. Which AWS document gives you SOC, ISO, HIPAA compliance reports? *(Remember)*
 A. AWS CloudTrail
 B. AWS Artifact
 C. AWS Config
@@ -151,7 +151,7 @@ D. AWS WAF
 
 ---
 
-### Q19. Which is the BEST description of "red-teaming" in AI?
+### Q19. Which is the BEST description of "red-teaming" in AI? *(Understand)*
 A. Doing security pen-tests on EC2 instances
 B. Proactive adversarial testing of an AI model to find safety failures
 C. A type of fine-tuning
@@ -159,7 +159,7 @@ D. An IAM role naming convention
 
 ---
 
-### Q20. To run automatic + human + LLM-as-judge evaluations of foundation models on YOUR data, use:
+### Q20. To run automatic + human + LLM-as-judge evaluations of foundation models on YOUR data, use: *(Apply)*
 A. Amazon Bedrock Model Evaluation
 B. SageMaker Edge Manager
 C. AWS Glue DataBrew
@@ -167,7 +167,7 @@ D. AWS Snowball
 
 ---
 
-### Q21. SageMaker Clarify CANNOT do which of the following?
+### Q21. SageMaker Clarify CANNOT do which of the following? *(Evaluate)*
 A. Pre-training bias detection
 B. Post-training bias detection
 C. SHAP feature attributions
@@ -175,7 +175,7 @@ D. Real-time PII redaction in chatbot outputs
 
 ---
 
-### Q22. Which is an example of CONTROLLABILITY?
+### Q22. Which is an example of CONTROLLABILITY? *(Apply)*
 A. Encrypting data at rest
 B. The ability to override, intervene in, or shut down an AI system
 C. Tokenization
@@ -183,7 +183,7 @@ D. Embedding generation
 
 ---
 
-### Q23. A model trained on data where one group is underrepresented exhibits:
+### Q23. A model trained on data where one group is underrepresented exhibits: *(Understand)*
 A. Adversarial robustness
 B. Sampling bias
 C. Algorithmic transparency
@@ -191,7 +191,7 @@ D. Reinforcement learning
 
 ---
 
-### Q24. To filter user-uploaded IMAGES sent to a multimodal model for safety, use:
+### Q24. To filter user-uploaded IMAGES sent to a multimodal model for safety, use: *(Create)*
 A. Bedrock Guardrails image content filters
 B. SageMaker Edge Manager
 C. AWS Glue

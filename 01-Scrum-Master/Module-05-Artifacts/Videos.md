@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~45 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Scrum+Artifacts+Scrum.org" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Scrum+Artifacts+Scrum.org" target="_blank" rel="noopener" data-video-id="0dSlaXBhiy8">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 12 min</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Definition+of+Done+vs+Acceptance+Criteria+Mountain+Goat" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Definition+of+Done+vs+Acceptance+Criteria+Mountain+Goat" target="_blank" rel="noopener" data-video-id="T4j4iZJ04Wo">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 10 min · EXAM CRITICAL</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Roman+Pichler+Product+Backlog" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Roman+Pichler+Product+Backlog" target="_blank" rel="noopener" data-video-id="LbXzaHaorTc">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 13 min</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Writing+Sprint+Goals+Atlassian" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Writing+Sprint+Goals+Atlassian" target="_blank" rel="noopener" data-video-id="-K6bS5Ltwtk">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~30 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=User+Stories+Beginners+Guide+Mike+Cohn" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=User+Stories+Beginners+Guide+Mike+Cohn" target="_blank" rel="noopener" data-video-id="98Fe7X7_vyw">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 14 min</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Burndown+Charts+Explained+Develpreneur" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Burndown+Charts+Explained+Develpreneur" target="_blank" rel="noopener" data-video-id="BVTZxAe-8Wc">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 8 min</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Henrik+Kniberg+Definition+of+Done" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Henrik+Kniberg+Definition+of+Done" target="_blank" rel="noopener" data-video-id="YMtaXwJcgns">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>

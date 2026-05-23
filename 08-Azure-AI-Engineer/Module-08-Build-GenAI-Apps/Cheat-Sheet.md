@@ -175,4 +175,41 @@ If you can answer all 5 in 60 seconds, you own Module 8. ✅
 
 ---
 
-➡️ [Practice Exam 2](../Practice-Exams/Practice-Exam-2.md) — then [Final Mock Exam](../Practice-Exams/Final-Mock-Exam.md)
+## 🧩 Agent Reasoning Patterns
+
+| Pattern | What it does | Source |
+|---|---|---|
+| **Chain-of-Thought (CoT)** | "Let's think step by step" — single-shot reasoning | Wei et al., NeurIPS 2022 |
+| **ReAct (Reason + Act)** | Alternates reasoning + tool call + observation | Yao et al., ICLR 2023 |
+| **Plan-and-Execute** | Plan whole sequence, then execute each step | LangChain blog (2023) + academic variants |
+| **Reflection** | Model critiques and revises its own answer | Shinn et al. (2023), "Reflexion" |
+| **Multi-agent** | Specialised agents collaborate | Park et al. (2023), "Generative Agents" |
+
+## 🏛️ Foundry → Capstone Mapping
+
+| Capstone deliverable | Foundry feature |
+|---|---|
+| Target architecture | Hub + Project + Connections |
+| RAG eval harness | Foundry Evaluation workflow |
+| Citation provenance | On Your Data + `in_scope:true` |
+| Content safety per RAI | Custom content filter config |
+| Security review | Managed identity + Private Endpoint + CMK |
+| Cost forecast | Deployment SKU mix (Standard / PTU / Global Batch) + token forecast |
+| Observability dashboard | Foundry monitoring → Application Insights |
+| Go/no-go gate | Foundry Evaluation thresholds before each upgrade |
+
+## 📚 Citations
+
+| Concept | Source |
+|---|---|
+| Transformer | Vaswani et al. (2017), NeurIPS |
+| Chain-of-Thought | Wei et al. (2022), NeurIPS |
+| ReAct | Yao et al. (2023), ICLR |
+| RAI Standard v2 | Microsoft (June 2022) |
+| NIST AI RMF 1.0 | NIST (January 2023) |
+| EU AI Act | Reg (EU) 2024/1689 (June 2024) |
+| GitHub Copilot evolution | GitHub blog 2021–2024; GitHub Universe 2024 keynote |
+
+---
+
+➡️ [Practice Exam 2](../Practice-Exams/Practice-Exam-2.md) — then [Final Mock Exam](../Practice-Exams/Final-Mock-Exam.md) — then [Capstone Project](../Capstone-Project.md)

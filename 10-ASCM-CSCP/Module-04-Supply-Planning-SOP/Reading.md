@@ -2,6 +2,13 @@
 
 > **Why this module matters:** S&OP / IBP is the "executive heartbeat" of supply chain. The CSCP expects you to recite Wallace/Stahl's five-step monthly cycle, link aggregate plans to MPS and MRP, and explain RCCP vs CRP cold. Multi-question scenarios in Domain 3 hinge on this.
 
+> **Prerequisites for this module.** Before starting, you should be comfortable with:
+> - [Forecasting methods + error metrics](../Module-03-Demand-Forecasting/Reading.md) — Module 3
+> - [CPFR and one-number forecasting](../Module-03-Demand-Forecasting/Reading.md) — Module 3
+> - [The bullwhip effect](../Module-01-SCM-Foundations-Strategy/Reading.md) — Module 1
+> - Basic BOM and routing intuition
+> If you've never read about Bill of Materials structures or MRP, skim a quick intro before tackling the MRP section.
+
 ---
 
 ## 🏗️ A Story: The Forklift Maker's Monday Meeting
@@ -54,7 +61,7 @@ Each tier translates the previous tier into more granular numbers. **The plans m
 
 ## 🗓️ S&OP — The Five-Step Monthly Cycle (Wallace / Stahl)
 
-This is the **single most-tested S&OP framework** on CSCP. Memorize the order:
+**Thomas F. Wallace and Robert A. Stahl, *Sales & Operations Planning: The How-To Handbook*** (T. F. Wallace & Co., 3rd edition 2008; original 1999 — Wallace was a co-founder of the Oliver Wight Companies). This is the **single most-tested S&OP framework** on CSCP. Memorize the order:
 
 ### Step 1 — Data Gathering
 Collect last month's sales, forecast, supply actuals, inventory, financials.
@@ -84,7 +91,7 @@ The C-suite reviews KPIs, debates options, and **commits to one plan** that driv
 
 ## 🚀 IBP — Integrated Business Planning (S&OP's grown-up sibling)
 
-Oliver Wight popularized IBP as an evolution of S&OP. Differences:
+**Oliver Wight International** (founded 1969 by Oliver W. Wight; published the *IBP Reference Model* in multiple editions; current 2024 edition under George Palmatier) popularized IBP as an evolution of S&OP. Differences:
 
 | Dimension | S&OP | IBP |
 |-----------|------|-----|
@@ -232,6 +239,23 @@ Eliyahu Goldratt's TOC says throughput is set by the **constraint** (the bottlen
 
 ---
 
+## 📊 Case Study — Toyota's Semiconductor Resilience (2021-2023)
+
+**Situation.** When the global semiconductor shortage hit in early 2021, every major automaker — GM, Ford, Volkswagen, Stellantis — slashed production. Ford lost ~1.1 million vehicles in 2021 (Q1 reported $2.5B EBIT hit). GM idled multiple North American plants for weeks at a time. The Tier-1 chip suppliers (Infineon, NXP, Renesas, ON Semi, STMicro) couldn't make automotive-grade microcontrollers fast enough because they'd shifted capacity to higher-margin consumer electronics during 2020 COVID. **Toyota's outlook in March 2021: barely affected.** Production targets held. By Q3 2021, Toyota briefly became the world's #1 automaker by volume — overtaking GM for the first time since 1931 — partly because rivals were idled.
+
+**Decision.** This was not a 2021 decision. It was a **2011 decision**, made after the Tōhoku earthquake and tsunami devastated Renesas Electronics' Naka 8-inch fab in Hitachinaka, Ibaraki. After 2011, Toyota's S&OP / IBP discipline (the Toyota Way + Wallace/Stahl-style monthly cycle, scaled across keiretsu suppliers) added a multi-year **supplier capacity reservation** program for semiconductors. Toyota committed forward-buy and capacity reservations 4-6 months ahead — much longer than the 1-2 week JIT lookahead the industry assumed Toyota used. Internally called *kanban-with-strategic-buffer* or "BCP inventory" (business continuity inventory), Toyota maintained 2-6 months of safety stock specifically on chips, sensors, and other long-lead-time critical components. The keiretsu-level S&OP shared aggregated forecasts with Tier-2 suppliers (chip foundries) so they could plan capacity reservations 18-24 months out.
+
+**Outcome.** In FY2022 (Apr 2021-Mar 2022) Toyota produced 8.6 million vehicles, +9% YoY. Operating profit reached **¥2.99 trillion (~$23 billion)** — a record. By contrast, GM's full-year 2021 wholesale volume fell 13%. The 2021-2022 "Toyota beats GM" story became a Harvard Business Review case study (*"What Toyota Knows About Supply Chain Resilience That Others Don't"* by Yossi Sheffi, HBR Spring 2022). The Toyota strategy was not anti-JIT — it was JIT for *non-critical* parts and strategic-buffer for *critical/long-lead-time* parts. Critics who had labeled Toyota's pre-2021 chip inventory "obvious waste under JIT" went silent.
+
+**Lesson for the exam / for practitioners.** This is the IBP case study. Toyota's S&OP was integrated with finance (the BCP buffer cost ~$1B/year, accepted as risk insurance), with strategy (the 10-year roadmap to electrification), and with supplier relationships (capacity reservations require trust + commercial commitment). On the exam: pure JIT is the wrong answer when supply uncertainty is high on critical items. The Wallace/Stahl 5-step process (cycle: data → demand → supply → pre-S&OP → executive) is mechanically how Toyota produced one number across 350+ Tier-1 partners. The "Enable" SCOR process — governance + risk + IT — is what made the buffer decisions executable.
+
+**Discussion (Socratic).**
+- Q1: Toyota's $1B/year buffer "cost" looks defensible only with hindsight. How would you, as a 2018 CFO, defend that line item against an activist investor demanding "lean Lean Lean"?
+- Q2: Many competitors (GM, Ford) had S&OP processes mechanically equivalent to Toyota's. What did the Toyota process include that theirs didn't? Cite IBP-specific elements (financial integration, strategic horizon, NPI integration).
+- Q3: In 2024-2026 the EV transition is shifting chip demand patterns — more, different, larger chips per vehicle. Toyota's BCP inventory of the *previous-generation* chip stock could become obsolete. How does the S&OP / IBP cycle catch this risk, and where would it surface (which of the 5 steps)?
+
+---
+
 ## ⚠️ Common Misconceptions
 
 | Misconception | Reality |
@@ -298,10 +322,29 @@ You now know:
 
 ---
 
+> **Where this leads.**
+> - Inside this course: Module 5 uses MPS-derived demand to compute EOQ/SS at SKU level; Module 6 sources the supplier capacity that supply planning relies on; Module 10 connects RCCP/CRP feasibility to TOC and Lean.
+> - Cross-course: `11-ASCM-CPIM` Module 4 takes MPS and MRP into vastly more depth (MPS techniques, time-phased planning, capacity at every level). If you're going CSCP → CPIM, plan to revisit this module.
+> - Practice: Practice Exam 1 has ~12 S&OP/MPS/MRP questions; Final Mock has ~15 including a worked MRP scenario.
+
+---
+
+## 💬 Discussion — Socratic prompts
+
+1. **The S&OP that's actually a budget review.** A mid-cap firm's "S&OP" meeting is really a finance review where the CFO interrogates volume vs budget. Construct the strongest argument that this is *not* S&OP, citing Wallace/Stahl steps. What's missing, and how would you redesign?
+2. **DTF vs PTF in a 2-day-lead-time business.** A grocery wholesaler has 2-day customer lead time and 60-day supplier lead time. Where should DTF and PTF sit, and what makes that placement controversial within the firm?
+3. **Chase vs level under inflation.** Inflation 2022-2024 changed the labor-cost math for chase strategies. Argue whether a chase strategy that was correct in 2019 should be revisited under 2024 labor markets.
+4. **IBP is just a rename.** A skeptical operations director says "IBP is what Oliver Wight calls S&OP plus PowerPoint slides — there's no real difference." Build the rebuttal using specific IBP capabilities (financial integration, NPI, scenario planning).
+5. **The 2025 AI-augmented S&OP.** Generative AI tools (Anthropic Claude, OpenAI GPT-4) now draft S&OP narratives, summarize variance, and propose scenarios. Where do humans still need to own decisions in the 5-step cycle, and where is AI sufficient?
+
+---
+
 ## 📚 Further Reading (Optional)
 
-- 📖 Wallace & Stahl, *Sales & Operations Planning: The How-To Handbook*
-- 📖 Oliver Wight, *Integrated Business Planning Reference Model*
-- 📖 Goldratt, *The Goal* — TOC novel, must-read
-- 📖 APICS *Master Planning of Resources (CPIM-MPR)* — deeper dive into S&OP/MPS
+- 📖 Thomas F. Wallace & Robert A. Stahl, *Sales & Operations Planning: The How-To Handbook* — T. F. Wallace & Co., 3e 2008 (the canonical S&OP reference)
+- 📖 George Palmatier & Colleen Crum, *The Transition from Sales and Operations Planning to Integrated Business Planning* — Oliver Wight Companies, 2024 update
+- 📖 Eliyahu Goldratt, *The Goal: A Process of Ongoing Improvement* — North River Press, 4e 2014 (original 1984; the TOC novel — must-read)
+- 📖 Yossi Sheffi, *The New (Ab)Normal: Reshaping Business and Supply Chain Strategy Beyond Covid-19* — MIT CTL Media, 2020 (the Toyota case + S&OP resilience)
+- 📖 APICS *Master Planning of Resources (CPIM-MPR)* learning system — deeper dive into S&OP/MPS/MRP
 - 📖 ASCM CSCP Learning System Module 4
+- 📰 *Journal of Business Forecasting* — quarterly practitioner journal on S&OP / IBP

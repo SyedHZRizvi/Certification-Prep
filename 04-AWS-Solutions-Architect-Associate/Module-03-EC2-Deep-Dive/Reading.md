@@ -2,6 +2,12 @@
 
 > **Why this module matters:** EC2 is the oldest compute service and still the most heavily tested. SAA throws scenarios at you involving instance families (M vs C vs R vs G), purchase options (Reserved vs Spot vs Savings Plan), Auto Scaling, and load balancer choice (ALB vs NLB vs GWLB). Pick the wrong type or option and you blow either the cost or the SLA.
 
+> **Prerequisites for this module.**
+> - [Module 1: Foundations & Well-Architected](../Module-01-Foundations-Well-Architected/Reading.md) — Region/AZ vocabulary, Shared Responsibility
+> - [Module 2: IAM & Organizations](../Module-02-IAM-Organizations/Reading.md) — instance profiles / IAM roles attached to EC2
+> - Basic Linux command-line literacy (you'll see `aws ec2 run-instances` examples)
+> - Understanding of TCP vs UDP, OSI layer 4 vs layer 7 (for load balancer choice)
+
 ---
 
 ## 🏗️ A Story: The Construction Crew
@@ -255,6 +261,58 @@ Hibernate is great for "long-cached" instances (like dev VDIs) that you want to 
 
 ---
 
+## 📖 Case Study — Pinterest's $4M Cost Optimization (2017–2020)
+
+**Situation.** Pinterest, with 250M+ MAU by 2017, ran one of the largest image-serving infrastructures on AWS. By 2017 its monthly bill was estimated at $25M+ (per Pinterest's S-1 IPO filing, October 2018). The CFO and engineering leadership both wanted *predictable* cost — neither wanted to slow product velocity. Initial cost-reduction attempts (limiting instance count manually, blocking expensive families) caused outages and engineer frustration. The pre-IPO scrutiny demanded a more rigorous answer.
+
+**Decision.** Pinterest formed a small "Cloud Economics" team (recounted by Suman Karumuri at AWS re:Invent 2019, ENT212 *"How Pinterest scales on AWS"*). The program:
+
+1. **Tagged every resource by `Team`, `Product`, `Environment`** — without this, all subsequent steps are guesswork
+2. **Bought ~70% of steady-state compute as Reserved Instances** — 3-year convertibles for flexibility — locking in roughly 60% off list. This single move was the biggest dollar saver
+3. **Migrated stateless web tier and Hadoop batch to Spot Fleet** with a mixed-instances policy across **10+ instance types** to reduce interruption risk
+4. **Used AWS Compute Optimizer (free, ML-based)** to identify right-sizing candidates — 23% of EC2 instances were over-provisioned by ≥1 size
+5. **Per-team cost dashboards** with chargeback — each product team saw their own monthly burn and could justify it
+6. **Eliminated NAT Gateway egress to S3** by deploying Gateway VPC Endpoints across all VPCs (a single fix that saved roughly $300K/year)
+
+**Outcome.** Pinterest publicly reported **$4M+ annual savings** by 2020 (re:Invent 2019 talk; corroborated in their 10-K), against an unchanged or growing workload. EC2 unit cost dropped ~37%. Engineering velocity *increased* because teams could see cost as a metric alongside latency. Pinterest IPO'd in April 2019 with infrastructure cost-control cited as a strength in analyst notes.
+
+**Lesson for the exam / for practitioners.** Every cost-optimization concept SAA-C03 tests is in this case:
+- **Reserved Instances** for steady-state baseline (Standard 3-year all-upfront wins on raw discount; Convertible wins on flexibility)
+- **Spot Fleet with mixed instances policy** for fault-tolerant tiers — this is the SAA's #1 answer to "lowest cost batch workload"
+- **Compute Optimizer** — free, ML-based; the exam often calls it out by name
+- **Gateway VPC Endpoint for S3** — eliminates NAT data-processing charges; covered in Module 4
+- **Tagging strategy** — the foundation of *any* cost report
+- **Aurora Serverless v2 / Lambda / Fargate** — pay-per-use for variable workloads (Pinterest added these post-2020)
+
+When the exam says "company wants to reduce EC2 cost without sacrificing reliability for a steady production workload," the answer chain is RI for baseline + Spot Fleet for batch + Compute Optimizer recommendations + Gateway VPC Endpoint cleanup. That's Pinterest's exact playbook.
+
+**Discussion (Socratic).**
+- **Q1.** Pinterest used **3-year Convertible RIs** for the bulk of compute. The alternative is **Compute Savings Plans** (introduced post-Pinterest's program, 2019). With Savings Plans now available, would Pinterest's same architecture be better served by SPs today? Where do SPs win and where do RIs still win?
+- **Q2.** Spot Fleet interruption rates are now generally low (under 5% interrupted per month for diversified pools), but the SLA implication is real. At what kind of workload does the operational complexity of Spot finally outweigh the 70–90% discount? Build a decision rubric.
+- **Q3.** Pinterest's chargeback model gave teams visibility but no enforcement. An alternative is hard "cost budgets" per team that fail deploys at threshold. Which model produces better behavior at a 5,000-engineer company? Why?
+
+---
+
+## 💬 Discussion — Socratic Prompts
+
+1. **Graviton migration economics.** AWS Graviton (ARM) processors are typically 20–40% cheaper than x86 for equivalent throughput. The migration cost is non-trivial — recompile, retest, sometimes refactor. For a Series-C company with 200 EC2 instances, when is the Graviton migration worth it, and what's the payback period?
+2. **The "Auto Scaling is always the answer" trap.** Auto Scaling is the exam's reflexive answer to elasticity, but the exam also has cases where **scheduled scaling** beats target tracking (predictable peaks) and cases where **predictive scaling** beats both (ML forecast). Build a decision rule.
+3. **ALB vs API Gateway for a microservices façade.** Both can front Lambda. ALB is cheaper at high throughput; API Gateway has richer auth, throttling, and caching. At what request volume does ALB win, and what features does it lack?
+4. **Mixed-instance policies and instance interruption.** An ASG with mixed instance types reduces the chance that a single instance-type shortage takes down the fleet. What's the cost of this resilience (in engineering and ops complexity)? Are there cases where uniformity is *better* despite the higher interruption risk?
+5. **Capacity Reservation vs Reserved Instance.** Both seem similar. When is a Capacity Reservation the right answer, and when does buying an RI without a reservation suffice? (Hint: it has to do with regulated workloads and stockouts at major events.)
+
+---
+
+## ➡️ Where This Leads
+
+> **Where this leads.**
+> - **Inside this course:** Module 04 (VPC) handles the networking around EC2 — Security Groups, NACLs, NAT. Module 05 (S3) and Module 06 (Databases) are where most EC2 instances send their data. Module 09 (Monitoring) covers Compute Optimizer recommendations and CloudWatch alarms that drive ASG scaling.
+> - **Cross-course:** `03-AWS-Cloud-Practitioner` Module 03 has a gentler EC2 intro. `06-Azure-Administrator` Module 03 covers the equivalent Azure VM concepts; the architectural patterns are identical, only the names differ.
+> - **Practice:** Practice Exam 1 has 6 EC2/ELB questions; Final Mock Exam has 9.
+> - **Real world:** Spin up a `t3.micro` (free-tier eligible) and an `t4g.micro` (Graviton, also free-tier) — both run for 12 months free; useful for testing user-data scripts and IAM role attachment.
+
+---
+
 ## ✅ Module 3 Summary
 
 You now know:
@@ -265,19 +323,35 @@ You now know:
 - 📈 ASG with launch templates and scaling policy types
 - ⚖️ ALB vs NLB vs GWLB and target types
 - 🚨 The 8 most-tested EC2 exam traps
+- 📖 Pinterest's $4M annual cost-optimization program — the canonical EC2 cost story
 
 **Next steps:**
 1. 🎥 Watch the videos in [`Videos.md`](./Videos.md)
-2. ✏️ Take the [`Quiz.md`](./Quiz.md) (target: 20/24)
+2. ✏️ Take the [`Quiz.md`](./Quiz.md) (target: 21/26)
 3. 📋 Review [`Cheat-Sheet.md`](./Cheat-Sheet.md)
 4. ➡️ Move on to [Module 4: VPC Deep Dive](../Module-04-VPC-Deep-Dive/Reading.md)
 
 ---
 
-## 📚 Further Reading
+## 📚 Further Sources (This Module)
 
-- 📖 **[EC2 User Guide (official)](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/)**
-- 📖 **[EC2 Instance Types](https://aws.amazon.com/ec2/instance-types/)**
-- 📖 **[Savings Plans User Guide](https://docs.aws.amazon.com/savingsplans/latest/userguide/)**
-- 📖 **[ELB Comparison (official)](https://aws.amazon.com/elasticloadbalancing/features/#Product_comparisons)**
-- 📖 **[Auto Scaling Best Practices](https://docs.aws.amazon.com/autoscaling/ec2/userguide/scaling-plan-design.html)**
+**AWS official**
+- 📖 **EC2 User Guide** — `docs.aws.amazon.com/AWSEC2/latest/UserGuide/`
+- 📖 **EC2 Instance Types catalog** — `aws.amazon.com/ec2/instance-types/`
+- 📖 **Savings Plans User Guide** — `docs.aws.amazon.com/savingsplans/latest/userguide/`
+- 📖 **ELB Comparison (official)** — `aws.amazon.com/elasticloadbalancing/features/#Product_comparisons`
+- 📖 **Auto Scaling Best Practices** — `docs.aws.amazon.com/autoscaling/ec2/userguide/scaling-plan-design.html`
+- 📖 **AWS Builders' Library — *"Caching challenges and strategies"* (Becky Weiss)** — relevant for understanding the load-balancer ↔ ASG interplay.
+
+**re:Invent talks**
+- 🎤 **ENT212 (2019): *How Pinterest scales on AWS*** — the source for this module's case study.
+- 🎤 **CMP404 (2023): *Spot Instances: A deep dive*** — current Spot best practices and Fleet patterns.
+- 🎤 **ARC318 (2023): *Right-sizing in production: Compute Optimizer and Savings Plans*** — the canonical cost-optimization talk.
+
+**Industry**
+- 📰 **The Duckbill Group blog (Corey Quinn)** — sharpest cloud-cost critic on the internet; *"AWS Morning Brief"* podcast highly recommended.
+- 📰 **Spot.io (formerly Spotinst) blog** — third-party tooling vendor with deep Spot interruption analysis.
+- 📰 **AWS Blog: *"Lessons learned from the largest single-day savings plan purchase"*** — Pinterest's specific RI/SP commitment writeup.
+
+**Academic foundations**
+- 📖 **Patterson, David & Hennessy, John (2020).** *Computer Organization and Design.* Morgan Kaufmann, 6th ed. — chapter on virtualization and multi-tenancy; useful for understanding why Dedicated Hosts have a cost premium.

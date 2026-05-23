@@ -1,12 +1,13 @@
 # ✏️ Module 8 Quiz: Reverse Logistics & Sustainability
 
 > **Instructions:** 24 questions. Aim for 19/24.
+> Each question tagged with its **Bloom's level**.
 
 ---
 
 ## Questions
 
-### Q1. Reverse logistics is BEST defined as:
+### Q1. Reverse logistics is BEST defined as: *(Understand)*
 A. The process of moving freight forward
 B. Backward flows for value recovery and responsible disposal
 C. Customs paperwork
@@ -14,7 +15,7 @@ D. Inventory management
 
 ---
 
-### Q2. The first cost-control step in returns is:
+### Q2. The first cost-control step in returns is: *(Apply)*
 A. Gatekeeping
 B. Refurbishment
 C. RMA authorization
@@ -22,7 +23,7 @@ D. Recycling
 
 ---
 
-### Q3. The "gatekeeping" step in returns is where:
+### Q3. The "gatekeeping" step in returns is where: *(Understand)*
 A. The carrier picks up
 B. The disposition decision is made
 C. The customer is refunded
@@ -30,7 +31,7 @@ D. Receiving counts inbound
 
 ---
 
-### Q4. Refurbished and remanufactured products differ in that remanufactured:
+### Q4. Refurbished and remanufactured products differ in that remanufactured: *(Analyze)*
 A. Has shorter warranty than refurbished
 B. Is fully disassembled and restored, typically with new-equivalent warranty
 C. Is exactly the same as refurbished
@@ -38,7 +39,7 @@ D. Cannot be sold
 
 ---
 
-### Q5. Caterpillar Reman is an example of:
+### Q5. Caterpillar Reman is an example of: *(Apply)*
 A. Recycling
 B. Closed-loop supply chain
 C. Linear supply chain
@@ -46,7 +47,7 @@ D. Just-in-time
 
 ---
 
-### Q6. The 7Rs hierarchy starts with:
+### Q6. The 7Rs hierarchy starts with: *(Remember)*
 A. Recycle
 B. Refuse
 C. Reuse
@@ -54,7 +55,7 @@ D. Recover
 
 ---
 
-### Q7. The Triple Bottom Line consists of:
+### Q7. The Triple Bottom Line consists of: *(Remember)*
 A. Cost, Service, Quality
 B. People, Planet, Profit
 C. Lean, Agile, Resilient
@@ -62,7 +63,7 @@ D. Scope 1, 2, 3
 
 ---
 
-### Q8. Scope 1 emissions are:
+### Q8. Scope 1 emissions are: *(Remember)*
 A. From purchased electricity
 B. Direct from your own fleet/facilities
 C. From customers' use of products
@@ -70,7 +71,7 @@ D. From suppliers
 
 ---
 
-### Q9. Scope 2 emissions are:
+### Q9. Scope 2 emissions are: *(Remember)*
 A. Direct fleet fuel burn
 B. Purchased energy (grid electricity for warehouse)
 C. Upstream suppliers
@@ -78,7 +79,7 @@ D. Customer use phase
 
 ---
 
-### Q10. Purchased transportation (carrier emissions) is generally classified as:
+### Q10. Purchased transportation (carrier emissions) is generally classified as: *(Analyze)*
 A. Scope 1
 B. Scope 2
 C. Scope 3
@@ -86,7 +87,7 @@ D. Not counted
 
 ---
 
-### Q11. The GHG Protocol is:
+### Q11. The GHG Protocol is: *(Remember)*
 A. A pollution-reduction regulation
 B. A global corporate emissions accounting standard
 C. A trade agreement
@@ -94,7 +95,7 @@ D. An ISO standard
 
 ---
 
-### Q12. The GLEC Framework is:
+### Q12. The GLEC Framework is: *(Remember)*
 A. A logistics-specific GHG accounting method
 B. A trucking regulation
 C. An EU sanctions list
@@ -102,7 +103,7 @@ D. A returns process
 
 ---
 
-### Q13. Air freight is approximately how many times more carbon-intensive per ton-km than ocean?
+### Q13. Air freight is approximately how many times more carbon-intensive per ton-km than ocean? *(Understand)*
 A. 1–2×
 B. 5–10×
 C. 50–100×
@@ -110,7 +111,7 @@ D. 1,000×
 
 ---
 
-### Q14. ISO 14001 is the standard for:
+### Q14. ISO 14001 is the standard for: *(Remember)*
 A. Quality management
 B. Environmental management systems
 C. GHG quantification
@@ -118,7 +119,7 @@ D. Occupational health & safety
 
 ---
 
-### Q15. ISO 14064 is the standard for:
+### Q15. ISO 14064 is the standard for: *(Analyze)*
 A. Quality management
 B. Environmental management systems (EMS)
 C. GHG quantification and reporting
@@ -126,7 +127,7 @@ D. Forest stewardship
 
 ---
 
-### Q16. GRI (Global Reporting Initiative) is:
+### Q16. GRI (Global Reporting Initiative) is: *(Remember)*
 A. A logistics company
 B. A multi-stakeholder ESG reporting framework
 C. A trade agreement
@@ -134,7 +135,7 @@ D. A carrier ratings agency
 
 ---
 
-### Q17. The EU CSRD requires:
+### Q17. The EU CSRD requires: *(Apply)*
 A. Voluntary climate reporting
 B. Mandatory corporate sustainability reporting for EU-operating firms
 C. Tariff increases
@@ -142,7 +143,7 @@ D. Container labeling
 
 ---
 
-### Q18. WEEE is an EU directive covering:
+### Q18. WEEE is an EU directive covering: *(Remember)*
 A. Welding equipment
 B. Electronic waste end-of-life
 C. Water emissions
@@ -150,7 +151,7 @@ D. Energy efficiency
 
 ---
 
-### Q19. Backhaul utilization means:
+### Q19. Backhaul utilization means: *(Remember)*
 A. Empty return trips
 B. Loaded return trips after the outbound delivery
 C. Drop-off only routes
@@ -158,7 +159,7 @@ D. Cross-docking
 
 ---
 
-### Q20. A primary sustainability lever in transportation is:
+### Q20. A primary sustainability lever in transportation is: *(Apply)*
 A. Buying more trucks
 B. Mode shift (e.g., truck → rail)
 C. Adding more DCs
@@ -166,7 +167,7 @@ D. Insurance coverage
 
 ---
 
-### Q21. Closed-loop supply chain differs from circular economy in that closed-loop is:
+### Q21. Closed-loop supply chain differs from circular economy in that closed-loop is: *(Analyze)*
 A. Larger in scope
 B. Firm-level (your products flow back to you)
 C. Mandatory by law
@@ -174,7 +175,7 @@ D. The same as circular economy
 
 ---
 
-### Q22. The carbon offset is:
+### Q22. The carbon offset is: *(Evaluate)*
 A. A primary reduction strategy
 B. A last-resort mechanism after internal reductions
 C. A type of duty
@@ -182,7 +183,7 @@ D. A type of insurance
 
 ---
 
-### Q23. A returned electronic device that the WMS routes for full disassembly and rebuild is undergoing:
+### Q23. A returned electronic device that the WMS routes for full disassembly and rebuild is undergoing: *(Apply)*
 A. Refurbishment
 B. Remanufacturing
 C. Recycling
@@ -190,7 +191,7 @@ D. Liquidation
 
 ---
 
-### Q24. A KPI that measures % of waste diverted from landfill is:
+### Q24. A KPI that measures % of waste diverted from landfill is: *(Remember)*
 A. Diversion rate
 B. Cube utilization
 C. Tender acceptance

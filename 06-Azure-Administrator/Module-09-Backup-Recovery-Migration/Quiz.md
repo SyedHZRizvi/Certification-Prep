@@ -6,7 +6,7 @@
 
 ## Questions
 
-### Q1. The Recovery Services Vault redundancy choice is set:
+### Q1. The Recovery Services Vault redundancy choice is set: *(Remember)*
 A. After backup is configured
 B. At vault creation (LRS / GRS / ZRS) — hard to change later
 C. By the policy
@@ -14,7 +14,7 @@ D. Automatically based on region
 
 ---
 
-### Q2. Cross-Region Restore for Azure Backup requires:
+### Q2. Cross-Region Restore for Azure Backup requires: *(Apply)*
 A. LRS vault
 B. GRS vault + the cross-region-restore feature enabled
 C. ZRS vault
@@ -22,7 +22,7 @@ D. Site Recovery enabled
 
 ---
 
-### Q3. Which is application-consistent on Windows Azure VMs?
+### Q3. Which is application-consistent on Windows Azure VMs? *(Understand)*
 A. Snapshot only
 B. VSS-coordinated snapshot
 C. Crash-consistent dump
@@ -30,7 +30,7 @@ D. iSCSI clone
 
 ---
 
-### Q4. MARS agent backs up:
+### Q4. MARS agent backs up: *(Remember)*
 A. Linux files only
 B. Windows files/folders + System State to Azure
 C. SQL Server only
@@ -38,7 +38,7 @@ D. Entire VMs
 
 ---
 
-### Q5. Yes/No — Vaults & soft delete.
+### Q5. Yes/No — Vaults & soft delete. *(Evaluate)*
 
 **S1:** Soft delete is on by default and retains deleted recovery points for 14 days minimum.
 **S2:** An immutable vault prevents disabling soft delete.
@@ -51,7 +51,7 @@ D. Yes / Yes / Yes
 
 ---
 
-### Q6. To require a second admin's approval before disabling backup, use:
+### Q6. To require a second admin's approval before disabling backup, use: *(Apply)*
 A. PIM only
 B. Multi-User Authorization (MUA) via a Resource Guard
 C. Resource Locks
@@ -59,7 +59,7 @@ D. NSGs
 
 ---
 
-### Q7. Azure Site Recovery (ASR) is best for:
+### Q7. Azure Site Recovery (ASR) is best for: *(Understand)*
 A. Restoring a deleted Word file
 B. Failing over an entire region to a paired region with RPO measured in seconds
 C. Backing up Azure SQL DB
@@ -67,7 +67,7 @@ D. Migrating from AWS
 
 ---
 
-### Q8. **Order these steps** to protect a production VM with backup + DR.
+### Q8. **Order these steps** to protect a production VM with backup + DR. *(Create)*
 
 1. Create a GRS vault
 2. Enable MUA / Resource Guard
@@ -83,7 +83,7 @@ D. 1 → 5 → 2 → 3 → 4 → 6
 
 ---
 
-### Q9. The ASR failover type you'd use during a real disaster is:
+### Q9. The ASR failover type you'd use during a real disaster is: *(Apply)*
 A. Test failover
 B. Planned failover
 C. Unplanned failover
@@ -91,7 +91,7 @@ D. Recovery plan
 
 ---
 
-### Q10. ASR Test failover:
+### Q10. ASR Test failover: *(Understand)*
 A. Affects production
 B. Spins up the replica in an isolated network with no impact on production
 C. Requires region migration
@@ -99,7 +99,7 @@ D. Costs nothing
 
 ---
 
-### Q11. RPO stands for:
+### Q11. RPO stands for: *(Remember)*
 A. Recovery Plan Order
 B. Recovery Point Objective — max data you can lose
 C. Replicated Process Output
@@ -107,7 +107,7 @@ D. Resource Provider Owner
 
 ---
 
-### Q12. Azure Migrate phases are:
+### Q12. Azure Migrate phases are: *(Remember)*
 A. Plan → Execute → Validate
 B. Discover → Assess → Migrate
 C. Inventory → Replicate → Cut over
@@ -115,7 +115,7 @@ D. Scan → Move → Confirm
 
 ---
 
-### Q13. Yes/No — Backup workloads.
+### Q13. Yes/No — Backup workloads. *(Understand)*
 
 **S1:** Azure Backup supports backing up Azure Files shares.
 **S2:** Azure Backup supports SQL Server and SAP HANA running inside Azure VMs.
@@ -128,7 +128,7 @@ D. Yes / Yes / No
 
 ---
 
-### Q14. The GFS retention scheme uses:
+### Q14. The GFS retention scheme uses: *(Remember)*
 A. Year/Day only
 B. Grandfather (yearly), Father (monthly), Son (daily/weekly)
 C. Random sampling
@@ -136,7 +136,7 @@ D. Hourly only
 
 ---
 
-### Q15. Which is FALSE about ASR replication?
+### Q15. Which is FALSE about ASR replication? *(Analyze)*
 A. Replication is continuous
 B. Multiple recovery points are kept for app-consistency
 C. ASR is a substitute for daily backups
@@ -144,7 +144,7 @@ D. Failback re-replicates the target VM back to the source
 
 ---
 
-### Q16. For Linux VMs, application-consistent backups are achieved via:
+### Q16. For Linux VMs, application-consistent backups are achieved via: *(Apply)*
 A. VSS writer
 B. Pre-script and post-script in `/etc/azure/`
 C. Forced reboot
@@ -152,7 +152,7 @@ D. Filesystem freeze automatically
 
 ---
 
-### Q17. Which storage redundancy enables Cross-Region Restore?
+### Q17. Which storage redundancy enables Cross-Region Restore? *(Remember)*
 A. LRS
 B. ZRS
 C. GRS
@@ -160,7 +160,7 @@ D. RA-GZRS
 
 ---
 
-### Q18. A primary Azure region fails. Without ASR, what's the fastest restore option from a GRS backup vault?
+### Q18. A primary Azure region fails. Without ASR, what's the fastest restore option from a GRS backup vault? *(Analyze)*
 A. Wait for the region to come back
 B. Use **Cross-Region Restore** to restore to the paired region
 C. Re-deploy from scratch
@@ -168,7 +168,7 @@ D. Manual data export
 
 ---
 
-### Q19. Azure Migrate's assessment tool produces:
+### Q19. Azure Migrate's assessment tool produces: *(Understand)*
 A. Performance + dependency graph + Azure VM size recommendations + cost estimate
 B. Just a list of VMs
 C. A NIST 800-53 report
@@ -176,7 +176,7 @@ D. A NSG simulation
 
 ---
 
-### Q20. Yes/No — Site Recovery.
+### Q20. Yes/No — Site Recovery. *(Evaluate)*
 
 **S1:** ASR can replicate Azure VMs to another Azure region.
 **S2:** ASR can replicate VMware on-prem to Azure.
@@ -189,7 +189,7 @@ D. Yes / No / No
 
 ---
 
-### Q21. Vaulted (immutable) blob backups protect against:
+### Q21. Vaulted (immutable) blob backups protect against: *(Understand)*
 A. Cost overruns
 B. Ransomware / malicious deletion
 C. Network outages
@@ -197,7 +197,7 @@ D. RBAC misconfiguration
 
 ---
 
-### Q22. The Instant Restore tier retains:
+### Q22. The Instant Restore tier retains: *(Understand)*
 A. Snapshots near the source for fast restore (1–5 days)
 B. Long-term backups
 C. ASR replication data
@@ -205,7 +205,7 @@ D. Vault diagnostic settings
 
 ---
 
-### Q23. To migrate a SQL Server from on-prem to Azure SQL Managed Instance, the right tool is:
+### Q23. To migrate a SQL Server from on-prem to Azure SQL Managed Instance, the right tool is: *(Apply)*
 A. Azure Site Recovery
 B. Azure Migrate Database tool (or Azure DMS / DMA)
 C. AzCopy
@@ -213,7 +213,7 @@ D. ARM templates
 
 ---
 
-### Q24. **Order these steps** for an Azure Migrate VMware-to-Azure migration.
+### Q24. **Order these steps** for an Azure Migrate VMware-to-Azure migration. *(Create)*
 
 1. Create an Azure Migrate project
 2. Deploy the Azure Migrate appliance on-prem (registers with the project)

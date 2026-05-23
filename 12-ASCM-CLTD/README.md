@@ -54,6 +54,13 @@ By the end of this track, you'll be able to:
 
 ---
 
+## 🎓 Capstone & Deep Readings
+
+- **[Capstone Project](./Capstone-Project.md)** — End-to-end logistics transformation case. You play newly-hired Director of Global Logistics at a $720M building-materials distributor; deliver 7 artifacts in 8 weeks (network optimization, TMS RFP, carrier scorecard, reverse-logistics redesign, trade-compliance baseline, risk register, sustainability scorecard). Cornell / MIT Sloan / Stanford GSB-grade rubric (90+ = excellent).
+- **[Recommended Readings](./Recommended-Readings.md)** — Canonical textbooks (Christopher, Bowersox, Coyle, Frazelle, Tompkins), seminal HBR/Sloan papers (Forrester 1958, Lee 1997, Lee 2004 Triple-A), the GLEC Framework, *The Box* and *Ninety Percent of Everything*, industry resources (CSCMP, FreightWaves, Gartner, Loadstar), and free MIT/Stanford courses.
+
+---
+
 ## 📖 The Single Most Important Resource
 
 🔗 **ASCM CLTD Learning System** (the official prep) — chapters mirror the exam blueprint. Read each module twice. The exam pulls vocabulary and frameworks directly from this body of knowledge, so know APICS dictionary definitions cold.

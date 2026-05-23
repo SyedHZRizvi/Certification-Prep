@@ -305,3 +305,127 @@ Empirical process control means deciding based on what is observed, not predicte
 ---
 
 ➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md) for one-page review, then [Module 2](../Module-02-Scrum-Framework/Reading.md)
+
+---
+
+## 🧠 Bloom's-taxonomy mapping (existing Q1–Q24)
+
+Each existing question above is mapped to Bloom's cognitive level. The Cornell/Harvard/Stanford bar targets ≤25% Remember, ~25% Understand, ~25% Apply, ~20% Analyze/Evaluate, and ~5% Create. This module is currently weighted toward Remember/Understand; the new questions below rebalance toward Apply/Analyze/Evaluate.
+
+| Q# | Bloom level | Why |
+|---|---|---|
+| Q1 | Remember | Direct recall of Manifesto Value 2 |
+| Q2 | Remember | Recall of the three empiricism pillars |
+| Q3 | Apply | Map a scenario to a Manifesto principle |
+| Q4 | Remember | Recall of year (2001) |
+| Q5 | Remember | Recall of Manifesto Value 4 |
+| Q6 | Apply | Scenario — pick the SM's correct action |
+| Q7 | Understand | Explain empiricism in own words |
+| Q8 | Evaluate | Judge Agile vs Waterfall as a "which is better" claim |
+| Q9 | Remember | Recall of number 17 |
+| Q10 | Apply | Map scenarios to Adaptation pillar |
+| Q11 | Understand | Define ScrumBut |
+| Q12 | Remember | Recall of Manifesto Principle 5 |
+| Q13 | Remember | Recall of Manifesto Value 1 |
+| Q14 | Analyze | Distinguish which empiricism pillar a specific action exemplifies |
+| Q15 | Apply | Pick best example of Manifesto Value 3 |
+| Q16 | Remember | Recall of historical fact (Snowbird) |
+| Q17 | Evaluate | Judge which lifecycle suits a context |
+| Q18 | Apply | Map Retrospective to a principle |
+| Q19 | Analyze | Identify which Manifesto value is contradicted |
+| Q20 | Understand | Distinguish "no planning" from "continuous planning" |
+| Q21 | Apply | Identify which Agile value is violated |
+| Q22 | Understand | Distinguish Agile frameworks from non-Agile methods |
+| Q23 | Understand | Explain what empirical process control answers |
+| Q24 | Apply | Recognize ScrumBut from a scenario |
+
+**Current distribution:** Remember 9 (37%), Understand 6 (25%), Apply 7 (29%), Analyze 2 (8%), Evaluate 2 (8%), Create 0 (0%) — *over* the 25% Remember ceiling. The new questions below add Apply/Analyze/Evaluate/Create to bring the module closer to the target distribution without removing any existing questions.
+
+---
+
+## 🚀 Additional higher-Bloom questions (Q25–Q30, advanced)
+
+These extend the module toward the Cornell bar's Apply/Analyze/Evaluate/Create distribution. Take them after you've scored 21+/24 on Q1–Q24.
+
+### Q25. Your team has been doing 2-week Sprints for a year. Velocity has been stable at ~30 points/Sprint until the last 3 Sprints, where it dropped to 18, 22, and 20 respectively. The Product Owner has *not* changed scope expectations. Applying empirical process control, what should the team do FIRST? *(Apply)*
+A. Force velocity back to 30 by adding overtime
+B. Lower the Definition of Done temporarily to clear work faster
+C. Inspect the cause at the next Sprint Retrospective and adapt
+D. Replace the lowest-performing developer
+
+---
+
+### Q26. A team's Sprint Retrospective has been "What went well / What didn't / Action items" for 30 consecutive Sprints. Engagement is low and the same impediments keep appearing. Analyzing this through the empiricism lens, what's the MOST LIKELY root cause? *(Analyze)*
+A. The format is fine; the team is at fault
+B. The Inspection step is happening but Adaptation isn't — actions don't translate into behavior change
+C. Retrospectives are no longer needed at year two
+D. The Scrum Master should run the meeting instead of facilitating
+
+---
+
+### Q27. Two teams in your org both claim to "do Agile." Team A holds daily stand-ups, uses Jira, and ships every 6 months. Team B has no daily standups, uses Trello, and ships every 2 weeks with customer demos. Evaluating against the Manifesto, which team is MORE Agile? *(Evaluate)*
+A. Team A — they follow more rituals
+B. Team B — they prioritize working software and customer feedback over ritual adherence
+C. Both equally Agile because they each follow some practices
+D. Neither — Agile requires both daily standups AND short cycles
+
+---
+
+### Q28. A regulated medical-device firm argues that Agile cannot work for them because FDA approval requires "complete documentation before code freeze." Apply the Manifesto's reasoning to construct the strongest case that they CAN adopt an Agile mindset within their constraints. *(Apply / Evaluate)*
+A. They cannot — Agile is incompatible with regulation
+B. They should drop FDA compliance to be Agile
+C. They can value working software and *necessary* documentation; the Manifesto values items on the right (documentation, contracts) too — just less than items on the left
+D. They should adopt SAFe to bypass FDA review
+
+---
+
+### Q29. Design a 4-Sprint experiment to introduce empiricism to a team that currently uses 6-month Waterfall plans. Which sequence MOST DIRECTLY exercises Transparency, Inspection, and Adaptation in that order? *(Create)*
+A. Sprint 1: shorten cycle to 2 weeks; Sprint 2: add daily standup; Sprint 3: add review demo; Sprint 4: add retrospective
+B. Sprint 1: make work visible on a board (Transparency); Sprint 2: hold a review of the work (Inspection); Sprint 3: change one practice based on review feedback (Adaptation); Sprint 4: repeat the loop
+C. Sprint 1: rewrite the project plan; Sprint 2: add Jira; Sprint 3: hire a coach; Sprint 4: rename the PM to Scrum Master
+D. All four pillars must be added at once or the change won't take
+
+---
+
+### Q30. A senior engineer argues that the Spotify model (squads, tribes, chapters, guilds) is "the proven way to scale Agile" and your 80-person org should adopt it. Evaluating this claim against Module 1's case study, what's the strongest counter-argument? *(Evaluate)*
+A. The Spotify model is illegal outside Sweden
+B. Spotify themselves walked back many elements of the published model by 2017; copying the structure without the underlying mindset is a known anti-pattern
+C. The Spotify model only works for music products
+D. Squads must be exactly 7 people to count
+
+---
+
+## 🎯 Answer key — Q25–Q30 (advanced)
+
+### Q25: **C. Inspect at the Retrospective and adapt**
+Empiricism says: when observation reveals a change (velocity drop), inspect the cause, then adapt. *Don't* force a number (A — that's the velocity-as-target anti-pattern from Module 6); *don't* lower DoD (B — quality does not decrease per Scrum Guide); *don't* punish individuals (D — Scrum measures team, not individuals).
+
+### Q26: **B. Inspection without Adaptation**
+The team is performing the inspect step (the retro happens) but failing to adapt — actions stay on paper, nothing changes. This is the canonical "Adaptation gap" in empiricism. The format is *fine*; the failure is downstream. (A and D are common scapegoats; C is wrong — retros never expire.)
+
+### Q27: **B. Team B is more Agile**
+The Manifesto values working software over comprehensive documentation, customer collaboration over contract negotiation, and responding to change over following a plan. Team B exhibits all three. Team A is "cargo-cult Agile" — rituals without the value. (A and C confuse ritual with mindset; D adds a requirement the Manifesto doesn't impose.)
+
+### Q28: **C. Necessary documentation is consistent with the Manifesto**
+The Manifesto explicitly says "while there is value in the items on the right, we value the items on the left more." Documentation isn't *forbidden*; it's *valued less than working software*. A regulated firm can prioritize working medical-device software *and* maintain the documentation FDA requires. This is the principled answer — many regulated firms (medical, finance, aerospace) successfully adopt Agile within compliance constraints.
+
+### Q29: **B. Board → review → change one practice → repeat**
+This sequence maps directly to the three empiricism pillars: make work visible (Transparency), hold a review (Inspection), change a practice based on what you saw (Adaptation), then iterate. A is "boil the ocean" and misses the pillars; C is cargo-cult; D is false — gradual adoption is fine.
+
+### Q30: **B. Spotify walked back the model**
+The Module 1 case study documents that Spotify itself dismantled or quietly modified most prescriptive elements (squads, autonomy norms) by 2017. Jeremiah Lee and Joakim Sundén (both former Spotify engineers) have publicly criticized the literal-copy adoption pattern. A and C are absurd; D conflates with the (also wrong) "Scrum requires 7 people" trope.
+
+---
+
+## 📊 Updated distribution after Q25–Q30
+
+| Bloom level | Count | % | Target |
+|---|---|---|---|
+| Remember | 9 | 30% | ≤ 25% |
+| Understand | 6 | 20% | ~ 25% |
+| Apply | 9 | 30% | ~ 25% |
+| Analyze | 3 | 10% | ~ 20% |
+| Evaluate | 4 | 13% | within 20% |
+| Create | 1 | 3% | ~ 5% |
+
+Closer to the Cornell bar. Future revisions could retire 1–2 of the recall-only Remember questions to bring that bucket under 25%; for now, no existing question is modified.

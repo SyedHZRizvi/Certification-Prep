@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~55 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=CPIM+Manufacturing+Strategy+ASCM" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="s0zJkhaZW_c" href="https://www.youtube.com/results?search_query=CPIM+Manufacturing+Strategy+ASCM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 12 min · Official body-of-knowledge framing</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Make+to+Stock+vs+Make+to+Order+vs+ATO+vs+ETO" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="-Ezucb1Y_5s" href="https://www.youtube.com/results?search_query=Make+to+Stock+vs+Make+to+Order+vs+ATO+vs+ETO" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 15 min · The decoupling-point story</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Order+Qualifiers+and+Order+Winners+Terry+Hill" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="SRotLevrIww" href="https://www.youtube.com/results?search_query=Order+Qualifiers+and+Order+Winners+Terry+Hill" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 10 min · Vocab you must memorize</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Hayes+Wheelwright+Product+Process+Matrix" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="4WLBHxyKCyk" href="https://www.youtube.com/results?search_query=Hayes+Wheelwright+Product+Process+Matrix" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~32 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Postponement+Strategy+HP+Printer+Case+Study" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="-igMXYB1r4w" href="https://www.youtube.com/results?search_query=Postponement+Strategy+HP+Printer+Case+Study" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 14 min · The classic CPIM example</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Mass+Customization+Operations+Management" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="4h6adna8D84" href="https://www.youtube.com/results?search_query=Mass+Customization+Operations+Management" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 10 min · How Dell turned ATO into a strategy</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Triple+Bottom+Line+Sustainability+Manufacturing" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="1-Ct_53XKYY" href="https://www.youtube.com/results?search_query=Triple+Bottom+Line+Sustainability+Manufacturing" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Competitive+Priorities+Operations+Strategy" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="MAkZ2FqdyVo" href="https://www.youtube.com/results?search_query=Competitive+Priorities+Operations+Strategy" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 25 min · Why trade-offs are real</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Toyota+Production+System+strategy+history" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="IQfaFKlW6kw" href="https://www.youtube.com/results?search_query=Toyota+Production+System+strategy+history" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 30 min · How TPS shaped global ops</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Reshoring+supply+chain+strategy+manufacturing" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="tEjdhdLpt7g" href="https://www.youtube.com/results?search_query=Reshoring+supply+chain+strategy+manufacturing" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

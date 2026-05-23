@@ -7,7 +7,7 @@
 
 ## Questions
 
-### Q1. The new name (as of 2023) for "Azure Active Directory" is:
+### Q1. The new name (as of 2023) for "Azure Active Directory" is: *(Remember)*
 A. Azure Identity
 B. Microsoft Entra ID
 C. Azure Identity Service
@@ -15,7 +15,7 @@ D. Microsoft Identity Cloud
 
 ---
 
-### Q2. Which Azure service answers "WHO can do WHAT on WHICH resources"?
+### Q2. Which Azure service answers "WHO can do WHAT on WHICH resources"? *(Remember)*
 A. Azure Policy
 B. RBAC (Role-Based Access Control)
 C. Resource Locks
@@ -23,7 +23,7 @@ D. Defender for Cloud
 
 ---
 
-### Q3. Which Azure service answers "WHAT resources are allowed to exist and how must they be configured"?
+### Q3. Which Azure service answers "WHAT resources are allowed to exist and how must they be configured"? *(Understand)*
 A. RBAC
 B. Azure Policy
 C. Resource Locks
@@ -31,7 +31,7 @@ D. Conditional Access
 
 ---
 
-### Q4. Which RBAC built-in role allows full management of resources EXCEPT granting access to others?
+### Q4. Which RBAC built-in role allows full management of resources EXCEPT granting access to others? *(Understand)*
 A. Owner
 B. Contributor
 C. Reader
@@ -39,7 +39,7 @@ D. User Access Administrator
 
 ---
 
-### Q5. To prevent ANY user (including Owners) from accidentally deleting a critical production database, use:
+### Q5. To prevent ANY user (including Owners) from accidentally deleting a critical production database, use: *(Apply)*
 A. RBAC Reader role
 B. CanNotDelete resource lock
 C. Azure Policy
@@ -47,7 +47,7 @@ D. NSG
 
 ---
 
-### Q6. Which Entra ID capability provides ONE login for many SaaS apps?
+### Q6. Which Entra ID capability provides ONE login for many SaaS apps? *(Remember)*
 A. MFA
 B. SSO (Single Sign-On)
 C. Conditional Access
@@ -55,7 +55,7 @@ D. RBAC
 
 ---
 
-### Q7. Which Entra ID feature is the POLICY ENGINE that decides when MFA is required (e.g., only when off-network)?
+### Q7. Which Entra ID feature is the POLICY ENGINE that decides when MFA is required (e.g., only when off-network)? *(Apply)*
 A. SSO
 B. RBAC
 C. Conditional Access
@@ -63,13 +63,13 @@ D. Privileged Identity Management
 
 ---
 
-### Q8. Yes/No: Microsoft Entra ID and on-premises Active Directory Domain Services use the same protocols and structure.
+### Q8. Yes/No: Microsoft Entra ID and on-premises Active Directory Domain Services use the same protocols and structure. *(Analyze)*
 A. Yes
 B. No
 
 ---
 
-### Q9. To sync on-prem AD identities to Microsoft Entra ID, use:
+### Q9. To sync on-prem AD identities to Microsoft Entra ID, use: *(Apply)*
 A. Azure Site Recovery
 B. Microsoft Entra Connect
 C. Azure Migrate
@@ -77,7 +77,7 @@ D. Azure Arc
 
 ---
 
-### Q10. Which is BEST for centrally collecting security logs from Azure, AWS, and on-prem, then automating response?
+### Q10. Which is BEST for centrally collecting security logs from Azure, AWS, and on-prem, then automating response? *(Apply)*
 A. Defender for Cloud
 B. Microsoft Sentinel
 C. Azure Monitor
@@ -85,7 +85,7 @@ D. Azure Policy
 
 ---
 
-### Q11. Which provides Cloud Security Posture Management (CSPM) with a Secure Score and workload protection?
+### Q11. Which provides Cloud Security Posture Management (CSPM) with a Secure Score and workload protection? *(Understand)*
 A. Microsoft Sentinel
 B. Microsoft Defender for Cloud
 C. Azure Policy
@@ -93,7 +93,7 @@ D. Azure Key Vault
 
 ---
 
-### Q12. Which Zero Trust principle says "Verify each access request as if it originates from an open network"?
+### Q12. Which Zero Trust principle says "Verify each access request as if it originates from an open network"? *(Understand)*
 A. Verify explicitly
 B. Use least-privilege access
 C. Assume breach
@@ -101,7 +101,7 @@ D. Defense in depth
 
 ---
 
-### Q13. To invite an external partner's existing Microsoft account into your tenant, use:
+### Q13. To invite an external partner's existing Microsoft account into your tenant, use: *(Apply)*
 A. Entra ID Free tier only
 B. Entra External ID (B2B collaboration)
 C. Local accounts in your subscription
@@ -109,7 +109,7 @@ D. ExpressRoute
 
 ---
 
-### Q14. Which Azure Policy effect BLOCKS creation of a non-compliant resource?
+### Q14. Which Azure Policy effect BLOCKS creation of a non-compliant resource? *(Remember)*
 A. Audit
 B. Append
 C. Deny
@@ -117,7 +117,7 @@ D. DeployIfNotExists
 
 ---
 
-### Q15. A team needs to enforce a tag (`CostCenter`) on every new resource. The BEST approach is:
+### Q15. A team needs to enforce a tag (`CostCenter`) on every new resource. The BEST approach is: *(Apply)*
 A. Manually email developers
 B. Azure Policy with Append or Modify effect
 C. RBAC custom role
@@ -125,7 +125,7 @@ D. Resource Lock
 
 ---
 
-### Q16. To securely store database passwords and SSL certificates, use:
+### Q16. To securely store database passwords and SSL certificates, use: *(Apply)*
 A. Storage account with public access disabled
 B. Azure Key Vault
 C. Cosmos DB
@@ -133,7 +133,7 @@ D. Resource group description field
 
 ---
 
-### Q17. Which built-in RBAC role grants the LEAST privilege but still allows viewing resources?
+### Q17. Which built-in RBAC role grants the LEAST privilege but still allows viewing resources? *(Understand)*
 A. Owner
 B. Contributor
 C. Reader
@@ -141,7 +141,7 @@ D. User Access Administrator
 
 ---
 
-### Q18. To allow remote workers to RDP/SSH into Azure VMs through a browser WITHOUT exposing public IPs on the VMs, use:
+### Q18. To allow remote workers to RDP/SSH into Azure VMs through a browser WITHOUT exposing public IPs on the VMs, use: *(Apply)*
 A. VPN Gateway
 B. Azure Bastion
 C. Application Gateway
@@ -149,7 +149,7 @@ D. NSG
 
 ---
 
-### Q19. A "policy initiative" (a.k.a. policy set) is:
+### Q19. A "policy initiative" (a.k.a. policy set) is: *(Remember)*
 A. A custom RBAC role
 B. A bundle of related Azure Policies
 C. A region-specific deployment
@@ -157,7 +157,7 @@ D. A resource lock template
 
 ---
 
-### Q20. RBAC assignment inheritance flows:
+### Q20. RBAC assignment inheritance flows: *(Understand)*
 A. From resource up to subscription
 B. From management group down to subscriptions, RGs, and resources
 C. Sideways across regions
@@ -165,25 +165,25 @@ D. There is no inheritance
 
 ---
 
-### Q21. Yes/No: Resource locks override RBAC and apply to Owners too.
+### Q21. Yes/No: Resource locks override RBAC and apply to Owners too. *(Analyze)*
 A. Yes
 B. No
 
 ---
 
-### Q22. Yes/No: Azure Policy can restrict the regions in which resources may be created.
+### Q22. Yes/No: Azure Policy can restrict the regions in which resources may be created. *(Apply)*
 A. Yes
 B. No
 
 ---
 
-### Q23. Yes/No: Microsoft Sentinel is Microsoft's cloud-native SIEM and SOAR platform.
+### Q23. Yes/No: Microsoft Sentinel is Microsoft's cloud-native SIEM and SOAR platform. *(Remember)*
 A. Yes
 B. No
 
 ---
 
-### Q24. A bank wants every web request authenticated, each session re-evaluated for risk, and minimum privileges everywhere. Which model are they following?
+### Q24. A bank wants every web request authenticated, each session re-evaluated for risk, and minimum privileges everywhere. Which model are they following? *(Evaluate)*
 A. Defense in Depth only
 B. Zero Trust
 C. Perimeter security
@@ -191,7 +191,7 @@ D. Network segmentation only
 
 ---
 
-### Q25. Which is TRUE about Conditional Access?
+### Q25. Which is TRUE about Conditional Access? *(Analyze)*
 A. It is included in Entra ID Free tier
 B. It requires Entra ID P1 or higher
 C. It is a network appliance
@@ -199,7 +199,7 @@ D. It replaces RBAC
 
 ---
 
-### Q26. To bring a PaaS service (e.g., Azure SQL Database) into your private VNet so it has no public endpoint, use:
+### Q26. To bring a PaaS service (e.g., Azure SQL Database) into your private VNet so it has no public endpoint, use: *(Apply)*
 A. Azure Firewall
 B. Private Endpoint / Private Link
 C. NSG

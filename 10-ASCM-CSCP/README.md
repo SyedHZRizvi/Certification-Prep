@@ -124,6 +124,15 @@ For a 16-week schedule: stretch Weeks 1–10 by 50% and add two review weeks bef
 
 ---
 
+## 🎓 Capstone & Canonical Readings
+
+After finishing the 10 modules and 3 practice exams, two final resources complete the track:
+
+- 🎯 **[Capstone Project](./Capstone-Project.md)** — an 18-month CSCO transformation scenario at a $2.4B CPG firm. Seven deliverables (SCOR-mapped strategy, Kraljic supplier segmentation, S&OP redesign, CSRD sustainability scorecard, ISO 31000 risk register, capability roadmap, Board metrics dashboard) graded on a 100-point rubric. Integrates ≥60% of the modules; designed as a portfolio-grade artifact you can take to job interviews.
+- 📚 **[Recommended Readings](./Recommended-Readings.md)** — the canonical reading list spanning ASCM CSCP Learning System, Christopher's *Logistics & Supply Chain Management*, Goldratt's *The Goal*, Liker's *The Toyota Way*, the Kraljic / Fisher / Hau Lee / Porter / Elkington / Carroll / Kaplan-Norton papers, industry publications (ASCM *SCM Now*, CSCMP Quarterly, McKinsey Operations, Gartner SCM, Lloyd's List), and free academic resources (MIT CTL MicroMasters, Stanford GSB content, MIT Sloan *Supply Chain Frontiers*).
+
+---
+
 ## 🎬 Start Here
 
 👉 [**Module 1: SCM Foundations & Strategy**](./Module-01-SCM-Foundations-Strategy/Reading.md)

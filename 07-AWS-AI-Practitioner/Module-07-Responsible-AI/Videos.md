@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~55 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Guardrails+for+Amazon+Bedrock+demo+walkthrough" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Guardrails+for+Amazon+Bedrock+demo+walkthrough" target="_blank" rel="noopener" data-video-id="6_jRXLRKPHA">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 18 min · PII, denied topics, content filters, grounding</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SageMaker+Clarify+bias+detection+explainability+demo" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=SageMaker+Clarify+bias+detection+explainability+demo" target="_blank" rel="noopener" data-video-id="jvcPZmnXaxo">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 15 min · Pre/post-training bias + SHAP</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Responsible+AI+AWS+overview+pillars" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Responsible+AI+AWS+overview+pillars" target="_blank" rel="noopener" data-video-id="VVjAviy8frc">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 12 min · Fairness, Explainability, Privacy, etc.</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AIF-C01+responsible+AI+walkthrough+ExamPro" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=AIF-C01+responsible+AI+walkthrough+ExamPro" target="_blank" rel="noopener" data-video-id="uRI0dllESko">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~35 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Amazon+A2I+augmented+AI+human+in+the+loop" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Amazon+A2I+augmented+AI+human+in+the+loop" target="_blank" rel="noopener" data-video-id="tdQPMdkXul4">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 12 min · Workforce + review workflows</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SageMaker+Model+Cards+demo" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=SageMaker+Model+Cards+demo" target="_blank" rel="noopener" data-video-id="lwCBXYZhJyc">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 10 min · What goes in a model card</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SHAP+LIME+explainability+machine+learning" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=SHAP+LIME+explainability+machine+learning" target="_blank" rel="noopener" data-video-id="d4PPMpdUCz8">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=NIST+AI+RMF+framework+overview" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=NIST+AI+RMF+framework+overview" target="_blank" rel="noopener" data-video-id="-v2zEkKQv2Y">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 22 min · External governance framework</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=EU+AI+Act+explained+risk+categories" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=EU+AI+Act+explained+risk+categories" target="_blank" rel="noopener" data-video-id="XM9-I6844b8">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 20 min · Prohibited / high-risk / limited / minimal</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=red+teaming+LLMs+adversarial+testing" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=red+teaming+LLMs+adversarial+testing" target="_blank" rel="noopener" data-video-id="npAcymuDmeA">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

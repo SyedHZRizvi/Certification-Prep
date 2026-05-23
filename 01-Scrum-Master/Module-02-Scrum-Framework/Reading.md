@@ -332,3 +332,67 @@ You now know:
 - 📖 *The Scrum Guide* (THE source) — <https://scrumguides.org/scrum-guide.html>
 - 📖 *Scrum: A Pocket Guide* by Gunther Verheyen — concise, exam-ready
 - 📖 *Scrum Insights for Practitioners* by Hiren Doshi — great Q&A style
+
+---
+
+> **Prerequisites for this module.** Before starting, you should be comfortable with:
+> - The Agile Manifesto's 4 values and 12 principles ([Module 1 — Agile Mindset](../Module-01-Agile-Mindset/Reading.md))
+> - The 3 empiricism pillars: Transparency, Inspection, Adaptation (also Module 1)
+> - Why Agile exists at all (Tony vs Maria story, Module 1)
+>
+> If "ScrumBut," "empirical process control," or "the Snowbird 17" are unfamiliar phrases, pause and re-read Module 1 first. This module turns the mindset into a concrete framework — it presumes the mindset.
+
+---
+
+## 📊 Case Study — Salesforce: ADM, the Waterfall-to-Scrum Transition (2006–2007)
+
+**Situation.** By 2005, Salesforce was a five-year-old, fast-growing SaaS company shipping its CRM product on a quarterly release cycle. As headcount grew past 200 engineers, the cracks showed: features took 12–18 months from idea to release, integrations slipped, and customers were churning to faster competitors (notably Microsoft Dynamics CRM and the then-new Workday). Co-founder Parker Harris and SVP of Engineering Chris Fry concluded that Salesforce had outgrown the waterfall-style "big release" model — but a hard-cutover to per-team Scrum was deemed too risky for a public company already meeting quarterly revenue targets.
+
+**Decision.** Over Q4 2006, Salesforce designed and rolled out **ADM (Agile Development Methodology)** — a company-wide standardization on a single 30-day Scrum cadence across *all* 200+ engineers in one synchronized release train. They split into ~35 teams of ~6 engineers each, every team got a PO, the entire R&D org moved to Scrum in **one quarter**, January 2007. The kicker: they synchronized every team to the *same 30-day Sprint boundary*, with a unified release at the end. This is the case Greg Brougham wrote up for IBM's *developerWorks* in 2008 and that Sutherland later cited in *Scrum: The Art of Doing Twice the Work in Half the Time* (2014) as the canonical big-company Scrum adoption.
+
+**Outcome.** In year one (2007), Salesforce shipped *three* major releases — up from the historic average of one. Time-to-market for new features dropped 27% (Salesforce-disclosed metric). Engineering attrition fell from ~20% pre-transition to ~9% by 2008. By 2010, the same synchronized-Scrum cadence supported the launch of Force.com and the Chatter product line — both shipped under the ADM model. The release cadence eventually matured into the three-major-releases-per-year (Spring/Summer/Winter) model Salesforce still uses publicly in 2026.
+
+**Lesson for the exam / for practitioners.** Three takeaways. (1) Scrum *can* be adopted at scale in one quarter — but only with executive commitment and a synchronized cadence. (2) The *biggest* risk in the transition was not the framework but the *org's resistance to time-boxing and incremental release*. (3) When the Scrum Guide says "Scrum is a lightweight framework," Salesforce is the proof — they did not invent a heavier ADM-specific framework; they applied Scrum-by-the-book with one organizational scaffold (synchronized cadence) layered on top. For the PSM I, this is the exemplar to anchor to whenever a question asks "can a 200-person org do Scrum?" The answer is yes, *with one PO per team, one Product Backlog per product, and a shared cadence*.
+
+**Discussion (Socratic).**
+- Q1: Salesforce synchronized *every team* to the same 30-day Sprint boundary. What's the strongest argument that this *violates* self-management? What's the strongest argument that it actually *enables* self-management? Cite the Scrum Guide.
+- Q2: Why did engineering attrition fall in year one, when the workload arguably *increased*? What does this tell you about the role of "Working software" (Manifesto Value 2) as a motivator?
+- Q3: What's the trade-off ADM implicitly accepted by forcing a 30-day cadence on all teams — and which two Manifesto values is that trade-off pulling between?
+
+---
+
+> **Where this leads.**
+> - Inside this course: [Module 3 — Roles](../Module-03-Roles/Reading.md) unpacks the three accountabilities introduced here. [Module 4 — Events](../Module-04-Events/Reading.md) and [Module 5 — Artifacts](../Module-05-Artifacts/Reading.md) detail each event and artifact you saw on the "framework on one page" diagram. [Module 8 — Scaling](../Module-08-Scaling/Reading.md) revisits the Salesforce ADM cadence-synchronization pattern.
+> - Cross-course: `02-PMP` Module 3 covers PMBOK's Adaptive lifecycle (which references Scrum as one implementation) — useful for PMP-style scenario questions that test framework selection.
+> - Practice: [Practice Exam 1](../Practice-Exams/Practice-Exam-1.md) draws ~6 questions from this module (the 5 values, 3 artifacts, Sprint rules, the 2020 Guide changes). [Practice Exam 2](../Practice-Exams/Practice-Exam-2.md) tests the deeper "what got removed in 2020" content.
+
+---
+
+## 💬 Discussion — Socratic prompts
+
+1. **The "framework not methodology" defense.** A new developer joins your team and asks, frustrated, "If Scrum doesn't tell us how to estimate, what tools to use, or how to break down work — what *does* it tell us?" In 3–5 sentences, defend the Scrum Guide's deliberate minimalism. Why is it valuable that Scrum is *silent* on these questions? Cite at least two specific Scrum-Guide-prescribed elements that *are* required.
+2. **2020 Guide changes — which mattered most?** The 2020 Scrum Guide made several changes (Development Team → Developers, removed prescribed 3 Daily questions, added lean thinking, Product Goal as a new commitment). Rank-order these by which change *most* improved Scrum's adoption in 2020–2025, and defend your top choice with evidence from the cases in Module 1 or this module.
+3. **One-month Sprint vs one-week Sprint.** A team currently runs four-week Sprints because "the work is complex and we need time to think." Construct the strongest argument for switching them to one-week Sprints AND the strongest argument for keeping them at four weeks. What information about the team would tip the decision?
+4. **Lean thinking added to Scrum 2020.** Scrum 2020 added "lean thinking" to the foundation. What does lean thinking *add* to Scrum that empiricism alone doesn't? Give a concrete example where a team applying empiricism *without* lean thinking would still produce waste.
+5. **The "Scrum is a recipe" trap.** A manager says "I read the Scrum Guide; we're doing Scrum *exactly* as written, so we should be getting the benefits." Three sprints later, no measurable improvement. What's wrong with the manager's logic? Cite the Scrum Guide's definition of Scrum to make the point.
+
+---
+
+## 📑 Named-source citations (this module)
+
+| Framework / concept | Originator(s) | Year | Venue / publication |
+|---|---|---|---|
+| The Scrum Guide (2020 edition — the authoritative source) | Sutherland & Schwaber | 2020 | scrumguides.org/scrum-guide.html |
+| Empiricism in Scrum | Schwaber | 1995, expanded 2004 | OOPSLA '95 paper; *Agile Project Management with Scrum* (2004, Microsoft Press) |
+| Lean thinking (added to Scrum 2020) | Womack & Jones | 1996 | *Lean Thinking: Banish Waste and Create Wealth in Your Corporation* (Free Press) |
+| The 5 Scrum Values (Focus, Commitment, Courage, Respect, Openness) | Scrum.org | 2016 | First explicitly enumerated in the 2016 Scrum Guide revision |
+| "Scrum is a lightweight framework" definition | Sutherland & Schwaber | 2020 | Scrum Guide 2020 ("Purpose of the Scrum Guide") |
+| Product Goal (new artifact-commitment in 2020) | Sutherland & Schwaber | 2020 | Scrum Guide 2020 |
+| Sprint Goal | Sutherland & Schwaber | 2011 (formalized) | Scrum Guide 2011 revision |
+| Definition of Done | Schwaber | 2002, formalized in Scrum Guide 2011 | *Agile Software Development with Scrum* (Schwaber & Beedle, 2002, Prentice Hall) |
+| Salesforce ADM (Agile Development Methodology) case | Brougham; later cited by Sutherland | 2008 case write-up; 2014 book | IBM *developerWorks*; *Scrum: The Art of Doing Twice the Work in Half the Time* (Crown Business) |
+| *Scrum: A Pocket Guide* (Further Reading) | Verheyen | 2013 (1st ed), 2019 (3rd ed) | Van Haren Publishing |
+| *Scrum Insights for Practitioners* (Further Reading) | Doshi | 2016 | Practiceagile.com publication |
+| Cynefin framework (referenced indirectly by "complex problems") | Snowden | 1999, mature 2007 | *"A Leader's Framework for Decision Making"*, *Harvard Business Review*, Nov 2007 |
+
+**Verification note.** Scrum Guide quotes verified against the official 2020 edition at scrumguides.org. Salesforce ADM dates cross-checked against Salesforce's public 2008 *State of the Salesforce Engineering Org* talk and Brougham's 2008 *developerWorks* article. Cynefin attribution per Snowden's HBR article ("complex" is one of the five Cynefin domains; Scrum is the framework prescribed for complex domains).

@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~50 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+VPC+basics+for+beginners+CLF-C02" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+VPC+basics+for+beginners+CLF-C02" data-video-id="43tIX7901Gs" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 14 min · The foundation</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Security+Groups+vs+NACL+AWS+explained" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Security+Groups+vs+NACL+AWS+explained" data-video-id="1Ez3DN6s02Y" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 10 min · Exam favorite</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Route+53+routing+policies+explained" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Route+53+routing+policies+explained" data-video-id="jXgIRPjXv3Y" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 13 min · MEMORIZE</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=CloudFront+vs+Global+Accelerator+difference" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=CloudFront+vs+Global+Accelerator+difference" data-video-id="GUfAQUjA3a0" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~30 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=ALB+vs+NLB+vs+GWLB+explained+AWS" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=ALB+vs+NLB+vs+GWLB+explained+AWS" data-video-id="aOzC0pEmhqI" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 10 min · Layer 4 vs 7</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Direct+Connect+vs+VPN+vs+Transit+Gateway+AWS" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Direct+Connect+vs+VPN+vs+Transit+Gateway+AWS" data-video-id="spTVfetqjPA" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 9 min · Hybrid connectivity</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=VPC+endpoints+gateway+interface+PrivateLink" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=VPC+endpoints+gateway+interface+PrivateLink" data-video-id="zqwYm1FTGow" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=API+Gateway+Lambda+serverless+REST+API+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=API+Gateway+Lambda+serverless+REST+API+tutorial" data-video-id="osuHIlAsnSc" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 15 min · Hands-on</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Transit+Gateway+architecture+overview" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Transit+Gateway+architecture+overview" data-video-id="dcZpQPW2IJ0" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

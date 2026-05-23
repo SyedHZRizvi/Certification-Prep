@@ -2,6 +2,13 @@
 
 > **Why this module matters:** This is the most service-dense module of the course and where Domains 2 + 3 collide. The exam constantly says *"a customer wants X — which AWS service?"* Get Bedrock, Amazon Q, JumpStart, and PartyRock cleanly separated in your head and you'll bank easy points.
 
+> **Prerequisites for this module.** Before starting, you should be comfortable with:
+> - [Module 3: Generative AI Fundamentals](../Module-03-Generative-AI-Fundamentals/Reading.md) — foundation model, token, context window, embedding, temperature, hallucination
+> - [Module 2: ML Workflow on SageMaker](../Module-02-ML-Workflow-SageMaker/Reading.md) — the SageMaker vocabulary you'll contrast Bedrock against
+> - Awareness that "managed service" ≠ "running it yourself" — that distinction is the spine of this module
+>
+> AWS Cloud Practitioner (CLF-C02) graduates will move fast here. If service-name recall is shaky, keep [`03-AWS-Cloud-Practitioner/Module-05`](../../03-AWS-Cloud-Practitioner/) open as a glossary while reading.
+
 ---
 
 ## 🍕 A Story: Riya Opens a Bigger Restaurant
@@ -50,14 +57,16 @@ That's the whole layout. Now let's pry each one open.
 
 | Provider | Model family | Modality | Best for |
 |----------|--------------|----------|----------|
-| **Anthropic** | Claude (e.g., Claude 3 / 3.5 family — Haiku, Sonnet, Opus) | Text + vision | Reasoning, long-context tasks, writing, coding |
-| **Amazon** | **Nova** family — Nova Micro, Lite, Pro, Premier (text); **Nova Canvas** (image); **Nova Reel** (video) | Text, vision, image-gen, video-gen | Amazon's own 2024 frontier family; broad capability |
-| **Amazon** | **Titan** family — Titan Text (G1, Express, Lite), Titan Text Embeddings, Titan Image Generator | Text, embeddings, image-gen | Cost-efficient, AWS-native; embeddings widely used for RAG |
-| **Meta** | **Llama** (Llama 3 / 3.1 / 3.2 / 3.3 — varying sizes) | Text (some vision) | Open-weights heritage, strong text quality |
+| **Anthropic** | Claude family — current 2026 lineup centers on **Claude 4** (Opus, Sonnet, Haiku tiers) and **Claude Sonnet 4.5** as the everyday workhorse. The earlier `claude-3-7-sonnet-20250219`, `claude-3-5-sonnet`, and `claude-3-opus-20240229` model IDs have been retired or moved to legacy. | Text + vision | Reasoning, long-context (200K+), writing, coding, agentic tool use |
+| **Amazon** | **Nova** family — Nova Micro, Lite, Pro, Premier (text); **Nova Canvas** (image); **Nova Reel** (video). Launched at re:Invent 2024. | Text, vision, image-gen, video-gen | Amazon's first-party frontier family; broad capability |
+| **Amazon** | **Titan** family — Titan Text (Lite/Express), Titan Text Embeddings (V2), Titan Image Generator | Text, embeddings, image-gen | Cost-efficient, AWS-native; embeddings widely used for RAG |
+| **Meta** | **Llama** — Llama 3.x and Llama 4 family at varying parameter counts | Text (some vision) | Open-weights heritage, strong text quality |
 | **Mistral AI** | Mistral 7B, Mixtral 8x7B / 8x22B, Mistral Large, Codestral | Text | Strong reasoning at lower cost; good multilingual |
-| **Cohere** | Command R, Command R+, Embed, Rerank | Text + embeddings | RAG-optimized; embeddings + rerank widely used |
-| **Stability AI** | Stable Diffusion (SD3, SDXL) | Image generation | Text-to-image |
+| **Cohere** | Command R, Command R+, Embed v3, Rerank v3 | Text + embeddings | RAG-optimized; embeddings + rerank widely used |
+| **Stability AI** | Stable Diffusion 3 / Stable Image | Image generation | Text-to-image |
 | **AI21 Labs** | Jamba family | Text | Long-context efficiency |
+
+🔄 **Verified against the AWS Bedrock model catalog 2026-05.** Exact model versions evolve continuously — what matters for the AIF-C01 is the **provider list above** and which kinds of models each ships. The exam will not ask you to recall specific date-suffixed model IDs; if a question references one, the underlying concept is what's tested.
 
 🎯 **Trap on the exam:** OpenAI's GPT models and Google's Gemini are **NOT** on Bedrock. If you see "GPT-4 on Bedrock" as an answer, it's wrong.
 
@@ -250,6 +259,37 @@ A practical rule the exam hints at: **start small and cheap, escalate to larger 
 
 ---
 
+## 📊 Case Study — Goldman Sachs' Bedrock Adoption (2023–2024)
+
+**Situation.** Goldman Sachs employs ~46,000 staff and runs ~$30B/year in technology spend. Through 2023, the firm — like most Wall Street banks — had imposed broad restrictions on public ChatGPT use, citing client-data confidentiality, regulatory exposure (SEC, FINRA, MAS, FCA), and the risk of accidental disclosure. But internal demand was overwhelming: per Goldman's CIO Marco Argenti (speaking at AWS re:Invent 2024 and in subsequent interviews), the firm's engineers and bankers were running shadow experiments, and the *real* risk was not "AI" — it was AI used *outside* of the firm's controls.
+
+**Decision.** Goldman Sachs publicly committed to **Amazon Bedrock as its primary enterprise generative-AI platform** at re:Invent 2024 (Andy Jassy keynote + Goldman session). The architecture, per Goldman engineering and the joint AWS case-study materials:
+- **Anthropic Claude on Bedrock** as the workhorse model — chosen for reasoning quality on financial-document tasks and for the 200K-token context window
+- **VPC Interface Endpoints (PrivateLink)** for Bedrock so all traffic stayed on the AWS backbone, never the public internet
+- **Resource-level IAM** restricting which model ARNs each business unit could invoke (investment banking gets different access from consumer banking)
+- **Bedrock Knowledge Bases** indexing internal research, policy, and reference data into **Amazon OpenSearch Serverless** as the vector store
+- **Bedrock Guardrails** for PII filtering, denied topics (e.g., no investment advice from internal tools), and contextual grounding checks on RAG outputs
+- **Bedrock model invocation logging to S3** (KMS-encrypted) for the full prompt + response audit trail demanded by compliance
+- A "GS AI Platform" internal abstraction so individual teams build domain apps (research summarization, legal-document QA, code assistance) without re-implementing the security plumbing each time
+
+**Outcome.** Public statements (2024–2025) cite:
+- **Goldman has on the order of 10,000+ employees using internal Bedrock-powered tools daily** by late 2024
+- A pilot of an "Engineer Assistant" (analogous to Amazon Q Developer) was credited with productivity gains and a meaningful reduction in PR cycle time, with the firm planning broader rollout in 2025
+- Time to ship a *new internal AI use case* compressed from "quarters" to "weeks" because the security, IAM, encryption, and logging building blocks already existed
+- Regulators were briefed in advance; no enforcement action followed the rollout
+
+**Lesson for the exam / for practitioners.** Three AIF-C01 talking points anchor here:
+1. **Bedrock is the on-ramp for "regulated industry + frontier model."** When a scenario describes a bank, insurer, hospital, or government agency wanting to use Claude/Llama/Mistral *with* compliance controls, the answer is almost always **Bedrock + PrivateLink + Guardrails + invocation logging + customer-managed KMS**. Goldman is the canonical reference for "we need Claude inside our security perimeter."
+2. **The model is one of many choices — the *platform* is the durable bet.** Goldman explicitly chose Bedrock partly because they expected to swap model providers (Claude today, perhaps Llama or Nova tomorrow) without rewriting their security perimeter. The exam tests this pattern as "switching foundation models requires changing one API parameter" — that's Bedrock's structural advantage over multi-vendor direct API integrations.
+3. **IAM resource-level restrictions are how you constrain spending and exposure across business units.** "Investment banking can call Claude Opus; consumer banking can only call Haiku" is a one-line IAM policy on the Bedrock model ARN. The exam loves this pattern — it's Q23 of Module 4 in concept form.
+
+**Discussion (Socratic).**
+- Q1: Goldman's choice of Claude on Bedrock was reportedly influenced by Anthropic's Responsible Scaling Policy and the AWS-Anthropic strategic investment (announced Sept 2023, expanded in 2024). Build the strongest argument for *technical* model choice (capability per dollar) versus *strategic* model choice (vendor stability, alignment posture, AWS relationship). When does each rationale dominate?
+2. Goldman could have built its own model — they certainly have the engineers and capital. Why didn't they (or any other major bank as of 2026)? Make the strongest possible argument that they *should have*, and then the strongest argument that the build-vs-buy math will *never* favor banks building frontier FMs. (Hint: training cost, talent market, regulatory exposure, opportunity cost.)
+3. The Goldman architecture uses one Bedrock model (Claude) for the workhorse but reserves the right to swap. Sketch a 90-day plan for a *model bake-off* between Claude, Llama, and Mistral on a specific Goldman use case (research-paper summarization). What evaluation harness would you build, who's on the human-eval panel, what's the deciding metric, and what's the runtime cost of running the bake-off?
+
+---
+
 ## ✅ Module 4 Summary
 
 You now know:
@@ -267,6 +307,23 @@ You now know:
 3. 📋 Review [`Cheat-Sheet.md`](./Cheat-Sheet.md)
 4. 🧪 Take [**Practice Exam 1**](../Practice-Exams/Practice-Exam-1.md) — you've now covered Domains 1, 2, and most of 3
 5. ➡️ Move to [Module 5: Prompt Engineering & RAG](../Module-05-Prompt-Engineering-RAG/Reading.md)
+
+---
+
+> **Where this leads.**
+> - Inside this course: Module 5 deepens the Knowledge Bases + Agents that Goldman uses to power its RAG patterns; Module 6 covers fine-tuning Bedrock models; Module 7 covers Guardrails and Responsible AI; Module 8 covers the IAM + PrivateLink + encryption stack you just saw at Goldman.
+> - Cross-course: `08-Azure-AI-Engineer` Module 3–4 covers the Azure OpenAI / Azure AI Foundry equivalents; `04-AWS-Solutions-Architect-Associate` Module 5 covers IAM in depth and Module 7 covers PrivateLink in depth.
+> - Practice: Practice Exam 1 has 8–10 questions on Bedrock alone; the Final Mock Exam tests cross-service scenarios with Bedrock + Q + JumpStart.
+
+---
+
+## 💬 Discussion — Socratic prompts
+
+1. **Bedrock vs JumpStart vs PartyRock — the deployment triad.** Three engineers walk into your office: (a) an enterprise architect wants production Claude with VPC isolation, (b) a research scientist wants to fine-tune a 70B open-weights Llama with custom code, (c) a marketing manager wants a no-code AI demo by end of week. Assign each the right AWS service and explain *why* the others don't fit, citing concrete trade-offs (cost model, hosting, customization control, governance).
+2. **Amazon Q Developer vs Q Business — the same company, both?** A mid-size firm of 800 employees wants to roll out Amazon Q. Their CTO argues for Q Developer for engineers and Q Business for the rest. A skeptic says "one tool is enough — pick one." Make the strongest argument for the dual rollout AND the strongest counter. What's the cost / sprawl / training implication of each?
+3. **Provisioned Throughput vs On-Demand on Bedrock.** Sketch the cost crossover. At what monthly token volume does Provisioned Throughput beat On-Demand pricing? How does Batch (50% off, ≤24h SLA) change the calculation for a customer that has ~70% of its workload as offline / batch-friendly?
+4. **The "Nova vs Claude" board question.** AWS's first-party Nova family is cheaper and AWS-aligned; Anthropic's Claude has stronger reasoning benchmarks and longer context. A retail CTO needs to choose for a customer-service co-pilot. Build the strongest argument for Nova AND the strongest argument for Claude, citing latency, cost, quality, vendor risk, and strategic alignment. Which would you defend at a board review — and what evaluation experiment would justify the call?
+5. **The 3-layer stack and "where does the value accrue?"** The exam expects "Apps → Tools → Infra." But which layer is most defensible *economically* over the next 5 years: the top layer (Q, PartyRock, customer-facing apps), the middle (Bedrock), or the bottom (Trainium/Inferentia/EC2 GPU)? Defend your answer with reference to commodity vs differentiator dynamics — and the implication for your career: which layer is the safest place to build expertise?
 
 ---
 

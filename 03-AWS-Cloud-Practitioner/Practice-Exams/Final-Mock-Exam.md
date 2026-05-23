@@ -426,6 +426,140 @@ D. 6
 
 ---
 
+## 📚 Detailed answer rationales
+
+**Q1. B.** AWS's verbatim definition: on-demand IT resources over the internet, pay-as-you-go. **A:** free unlimited isn't AWS's model. **C:** describes on-prem, not cloud. **D:** dedicated single-tenant is an *option* (Dedicated Hosts), not the definition. **Takeaway.** Memorize the AWS verbatim definition.
+
+**Q2. B.** Multi-AZ inside a Region = HA. **A:** Edge Locations only cache content. **C:** Multiple accounts is organizational. **D:** Multiple OSes is irrelevant. **Takeaway.** HA = multi-AZ; DR = multi-Region.
+
+**Q3. B.** CloudFront + Route 53 terminate at Edge Locations. **A:** EC2/EBS live in AZs. **C:** RDS/DynamoDB are Region-scoped. **D:** IAM/KMS are control-plane. **Takeaway.** Edge = CloudFront + Route 53 + Shield + WAF + Global Accelerator.
+
+**Q4. D.** Wavelength = AWS compute inside 5G carrier networks for ultra-low mobile latency. **A:** S3 is for storage. **B:** IAM doesn't address latency. **C:** Wavelength is purpose-built for mobile-5G use, not on-prem databases. **Takeaway.** "Inside 5G" → Wavelength.
+
+**Q5. B.** Each Region has 3+ AZs, low-latency private fiber between AZs. **A:** Most have 3+, not exactly 2. **C:** AZs are within a single Region. **D:** Edges are not AZs. **Takeaway.** 3+ AZs per Region, ~10–100 km apart, private fiber.
+
+**Q6. A.** Per-second EC2 On-Demand = variable OpEx. **B:** Buying servers = CapEx. **C/D:** Long-term lease / build DC = CapEx. **Takeaway.** Pay-per-use = OpEx. Upfront = CapEx.
+
+**Q7. B.** `r`/`x`/`z` family = memory-optimized (in-memory DBs). **A:** general purpose. **C:** compute-optimized. **D:** storage-optimized. **Takeaway.** Memorize family letters: T/M general, C compute, R/X/Z memory, I/D/H storage, P/G/Inf/Trn accelerated.
+
+**Q8. C.** Spot = up to 90% off, can be reclaimed → only for fault-tolerant. **A:** 24/7 production needs On-Demand or RIs. **B:** Stable IPs/uptime ≠ Spot. **D:** Financial transactions can't tolerate interruption. **Takeaway.** Spot only for batch/CI/transcoding.
+
+**Q9. D.** Lambda max = 15 minutes per invocation. **A:** 5 min was historical (pre-2018). **B/C:** wrong magnitude. **Takeaway.** Lambda 15 min; longer → Fargate / EC2 / Batch.
+
+**Q10. B.** Fargate launch type = no host management. **A:** EC2 launch type still requires host management. **C:** Lambda isn't a container launch type. **D:** Outposts is on-prem hardware. **Takeaway.** "Containers + no host management" → Fargate.
+
+**Q11. C.** Stopped = no compute, but EBS volumes still bill. **A:** Wrong (EBS still charges). **B:** Backwards. **D:** Network only — wrong. **Takeaway.** Stop = no compute, keep storage. Terminate = no compute, no storage (default).
+
+**Q12. D.** Glacier Deep Archive = cheapest, 12–48 hr retrieval. **A:** Standard-IA has ms retrieval. **B:** Glacier Instant has ms retrieval. **C:** Glacier Flexible is minutes-hours, not 12-48 hr. **Takeaway.** Cheapest + slowest = Glacier Deep Archive.
+
+**Q13. A.** S3 object max = 5 TB. **B:** 5 GB is single-PUT max. **C/D:** wrong. **Takeaway.** S3 object max 5 TB. Bucket size unlimited.
+
+**Q14. A.** Snowball Edge for slow-internet bulk migration. **B:** DX is for one-time but takes weeks to provision. **C:** DataSync over internet would also be slow. **D:** CloudFront is a CDN. **Takeaway.** Petabyte-scale physical migration → Snow Family.
+
+**Q15. D.** EFS = managed NFS for Linux. **A:** Object = S3. **B:** Block-single-attach = EBS. **C:** Tape = Tape Gateway. **Takeaway.** Linux + shared file = EFS.
+
+**Q16. D.** FSx for Windows File Server = SMB + AD integration. **A:** EFS is NFS/Linux. **B:** Time-series = Timestream. **C:** Object = S3. **Takeaway.** Windows + AD-integrated shares → FSx for Windows.
+
+**Q17. A.** VPC Gateway Endpoint for S3 = free private access. **B:** NAT routes outbound to internet. **C:** CloudFront is a CDN. **D:** Direct Connect connects on-prem, not VPC-to-S3. **Takeaway.** "VPC → S3 privately" → Gateway Endpoint.
+
+**Q18. B.** SG = stateful, allow-only. **A:** Stateless + DENY = NACL. **C:** Subnet-level = NACL. **D:** SGs absolutely apply to EC2. **Takeaway.** Memorize SG vs NACL.
+
+**Q19. C.** NACL = stateless, allow + deny, at subnet boundary. **A:** Stateful = SG. **B:** Per-instance = SG. **D:** Different from SG. **Takeaway.** NACL allows DENY; SG does not.
+
+**Q20. A.** Geolocation routes by user country = GDPR pattern. **B:** Latency-based routes by network distance (might cross EU border). **C:** Weighted is for A/B. **D:** Multivalue is HA. **Takeaway.** Compliance / sovereignty → Geolocation.
+
+**Q21. A.** DX = private fiber, NOT encrypted by default. **B:** Wrong (no encryption default). **C:** CDN is CloudFront. **D:** DDoS is Shield. **Takeaway.** DX is private but pair with VPN for encryption.
+
+**Q22. D.** NLB = Layer 4 TCP/UDP, ultra-low latency. **A:** ALB is Layer 7. **B:** CLB is legacy. **C:** GWLB is Layer 3 for inserting security appliances. **Takeaway.** TCP/UDP + low-latency + static IP → NLB.
+
+**Q23. A.** CloudFront caches at 400+ Edges for global delivery. **B:** DX is on-prem connectivity. **C:** EBS Multi-AZ is unrelated. **D:** S3 Standard-IA doesn't deliver content globally. **Takeaway.** Global content delivery → CloudFront.
+
+**Q24. B.** CloudFront caches HTTP content; Global Accelerator routes any TCP/UDP via AWS backbone. **A:** Wrong (different products). **C:** Cost isn't the distinction. **D:** GA works in many regions. **Takeaway.** CloudFront = HTTP caching. GA = TCP/UDP routing.
+
+**Q25. C.** RDS Multi-AZ = sync standby + auto failover for HA. **A:** Read scaling = Read Replicas. **B:** Free backups isn't accurate. **D:** Cross-Region is CRR / Global Database. **Takeaway.** Multi-AZ = HA only.
+
+**Q26. C.** Read Replicas = async, used to offload reads. **A:** Sync HA = Multi-AZ. **B:** Backups are automated. **D:** Migration = DMS. **Takeaway.** Read Replicas ≠ Multi-AZ.
+
+**Q27. D.** Aurora MySQL + Aurora PostgreSQL. **A:** Cassandra = Keyspaces. **B:** Oracle/SQL Server = RDS for those engines. **C:** MongoDB = DocumentDB. **Takeaway.** Aurora = MySQL OR PostgreSQL.
+
+**Q28. A.** Aurora's 6 copies across 3 AZs. **B/C/D:** wrong replication models. **Takeaway.** Aurora storage = 6×3.
+
+**Q29. C.** DynamoDB = serverless key-value, ms latency. **A:** OLAP = Redshift. **B:** Graph = Neptune. **D:** Time-series = Timestream. **Takeaway.** Serverless KV at scale → DynamoDB.
+
+**Q30. C.** DAX = DynamoDB-specific in-memory cache for microsecond reads. **A:** ElastiCache is general-purpose, not DDB-native. **B:** RDS doesn't accelerate DDB. **D:** S3 isn't a cache. **Takeaway.** DDB + microseconds → DAX.
+
+**Q31. D.** ElastiCache = managed Redis or Memcached. **A:** Migration = DMS. **B:** Graph = Neptune. **C:** Object = S3. **Takeaway.** In-memory cache = ElastiCache.
+
+**Q32. D.** Redshift = petabyte OLAP. **A:** Aurora is OLTP. **B:** DynamoDB is OLTP key-value. **C:** ElastiCache is in-memory. **Takeaway.** BI + petabytes → Redshift.
+
+**Q33. B.** DMS + SCT for cross-engine. **A:** DataSync is for files. **C:** Snowball is physical. **D:** CloudFront is CDN. **Takeaway.** DB migration → DMS (+ SCT cross-engine).
+
+**Q34. B.** EC2 (IaaS) = customer patches OS. **A:** AWS patches the hypervisor, not the guest OS. **C/D:** wrong responsibility split. **Takeaway.** EC2 OS = customer.
+
+**Q35. A.** RDS (PaaS) = AWS patches underlying OS. **B/C/D:** wrong. **Takeaway.** RDS OS = AWS.
+
+**Q36. B.** Least privilege + MFA = IAM canonical best practice. **A:** Never use root daily. **C/D:** Never share or hard-code creds. **Takeaway.** Memorize the IAM Best Practices list.
+
+**Q37. C.** IAM Role on the instance = temporary credentials, auto-rotated. **A:** Public bucket exposes data. **B:** Root creds = blast radius infinity. **D:** Long-lived keys are the Capital One pattern — avoid. **Takeaway.** EC2 → AWS service = IAM Role always.
+
+**Q38. D.** Explicit Deny always wins. **A:** Allow loses. **B/C:** order doesn't matter. **Takeaway.** Single most-tested IAM rule.
+
+**Q39. A.** KMS = managed encryption keys. **B:** DDoS = Shield. **C:** DNS = Route 53. **D:** Free TLS = ACM. **Takeaway.** "Encryption keys" → KMS.
+
+**Q40. A.** CloudHSM = dedicated, single-tenant, FIPS 140-2 Level 3. **B:** KMS CMKs are FIPS 140-2 Level 2/3 multi-tenant. **C:** ACM = TLS certs. **D:** Secrets Manager stores secrets. **Takeaway.** "Dedicated HSM / FIPS L3" → CloudHSM.
+
+**Q41. B.** ACM = free public TLS for AWS services. **A:** Paid-only is wrong. **C:** SSH keys are managed elsewhere. **D:** Code-signing is a separate ACM PCA feature. **Takeaway.** "Free public TLS" → ACM.
+
+**Q42. C.** GuardDuty = log-based threat detection. **A:** Health Dashboard is operational events. **B:** Trusted Advisor is best-practice scoring. **D:** CloudWatch is metrics/logs. **Takeaway.** "Anomalies / crypto-mining / port scans" → GuardDuty.
+
+**Q43. C.** Macie = S3 PII discovery. **A:** Shield = DDoS. **B:** Inspector = vulnerability scanning. **D:** CloudFront = CDN. **Takeaway.** "PII in S3" → Macie.
+
+**Q44. C.** Inspector scans EC2 / ECR / Lambda for CVEs. **A:** CloudTrail = API audit. **B:** GuardDuty = behavior. **D:** WAF = HTTP-layer filtering. **Takeaway.** "Vulnerability scanning" → Inspector.
+
+**Q45. A.** WAF blocks SQLi/XSS at HTTP layer. **B:** Shield = DDoS. **C:** NACLs are Layer 3/4. **D:** KMS is encryption. **Takeaway.** "Layer 7 / HTTP-aware filtering" → WAF.
+
+**Q46. A.** Shield Standard is free + automatic. **B:** Not premium. **C:** Not tied to Enterprise Support. **D:** Not compliance. **Takeaway.** Shield Standard = free basic DDoS, automatic.
+
+**Q47. D.** Shield Advanced = DRT + cost protection during attacks. **A:** Not free CloudFront. **B:** Not free EC2. **C:** Multi-AZ is unrelated. **Takeaway.** Shield Advanced (~$3K/mo) for tier-1 workloads.
+
+**Q48. D.** Organizations + SCPs = multi-account guardrails. **A:** Encryption is KMS. **B:** IAM users are per-account. **C:** DDoS is Shield. **Takeaway.** Org-level "no-X-allowed" → SCP.
+
+**Q49. D.** Artifact = self-service compliance reports. **A:** CI/CD = CodePipeline. **B:** Vuln scans = Inspector. **C:** Provision = console. **Takeaway.** "Download compliance reports" → Artifact.
+
+**Q50. A.** Security Hub aggregates findings. **B:** Trusted Advisor is best-practice. **C:** CloudWatch Logs = operational. **D:** Marketplace = software catalog. **Takeaway.** "Single security dashboard" → Security Hub.
+
+**Q51. C.** CloudTrail = every API call. **A:** CPU = CloudWatch. **B:** Drift = Config. **D:** App performance = X-Ray. **Takeaway.** WHO called WHICH API → CloudTrail.
+
+**Q52. C.** CloudWatch = metrics + logs + alarms + EventBridge for state changes. **A:** API audit = CloudTrail. **B:** DDoS = Shield. **D:** Compliance = Artifact. **Takeaway.** Observability of resources → CloudWatch.
+
+**Q53. C.** Config = resource configuration over time + rules. **A:** CPU = CloudWatch. **B:** Bandwidth = CloudWatch / VPC FL. **D:** Cache hits = CloudFront. **Takeaway.** "What does the resource look like, and is it compliant?" → Config.
+
+**Q54. C.** Session Manager = browser-based SSH-less shell. **A:** DX is connectivity. **B:** Bastion still uses SSH. **D:** CloudShell is the AWS CLI shell, different feature. **Takeaway.** "No port 22 needed" → Session Manager.
+
+**Q55. D.** Trusted Advisor 5: Cost, Performance, Security, Fault Tolerance, Service Limits. **A/B/C:** wrong sets. **Takeaway.** Memorize the 5 TA categories.
+
+**Q56. A.** Business < 1 hr response. **B:** 30 min = Enterprise On-Ramp. **C:** 15 min = Enterprise. **D:** Below Business standard. **Takeaway.** Memorize the 4 paid plans' SLAs.
+
+**Q57. B.** Enterprise = dedicated TAM. **A:** Developer has no TAM. **C:** On-Ramp = pool. **D:** Business has no TAM. **Takeaway.** Dedicated TAM = Enterprise. Pool = Enterprise On-Ramp.
+
+**Q58. B.** Budgets = alert. **A:** Don't block spend. **C:** Don't auto-buy SP. **D:** Don't replace CloudWatch. **Takeaway.** Budgets alert; SCPs prevent.
+
+**Q59. A.** Data IN generally free; OUT to internet $. **B:** Not all free. **C:** Backwards. **D:** Cross-AZ outbound costs per GB. **Takeaway.** Inbound free, outbound expensive.
+
+**Q60. B.** Pricing Calculator estimates BEFORE deployment. **A:** Cost Explorer = past + forecast. **C:** Budgets = alerts. **D:** TA = recommendations. **Takeaway.** "Before deploying" → Pricing Calculator.
+
+**Q61. B.** 6 pillars. **A:** 4 is too few. **C:** 5 is pre-2021. **D:** 7 is wrong. **Takeaway.** 6 pillars since 2021.
+
+**Q62. A.** Sustainability added 2021 (re:Invent). **B/C:** too early. **D:** too late. **Takeaway.** Sustainability = 2021.
+
+**Q63. C.** Rehost = lift-and-shift. **A:** Refactor = rewrite. **B:** Replatform = lift + tweak. **D:** Retire = decommission. **Takeaway.** Trigger phrases per R.
+
+**Q64. D.** Repurchase = switch products (on-prem CRM → Salesforce). **A:** Refactor = rewrite. **B:** Replatform = optimize same. **C:** Retain = keep. **Takeaway.** "Switch products" → Repurchase.
+
+**Q65. D.** CAF = 6 perspectives. **A/B/C:** wrong counts. **Takeaway.** CAF 6 perspectives, Well-Architected 6 pillars, different sets.
+
+---
+
 ## 📊 Scoring
 
 | Score | Verdict | Action |

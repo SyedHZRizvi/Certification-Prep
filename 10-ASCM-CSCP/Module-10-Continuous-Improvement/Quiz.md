@@ -7,7 +7,7 @@
 
 ## Questions
 
-### Q1. The 7 wastes of Lean (TIMWOOD) include all EXCEPT:
+### Q1. The 7 wastes of Lean (TIMWOOD) include all EXCEPT: *(Remember)*
 A. Transportation
 B. Inventory
 C. Motion
@@ -15,7 +15,7 @@ D. Forecasting
 
 ---
 
-### Q2. Six Sigma targets a defect rate of approximately:
+### Q2. Six Sigma targets a defect rate of approximately: *(Remember)*
 A. 3.4 per thousand
 B. 3.4 per million opportunities
 C. 6 per million
@@ -23,7 +23,7 @@ D. 1 per billion
 
 ---
 
-### Q3. The DMAIC sequence is:
+### Q3. The DMAIC sequence is: *(Remember)*
 A. Define, Measure, Analyze, Improve, Control
 B. Design, Measure, Apply, Implement, Check
 C. Define, Manage, Audit, Improve, Communicate
@@ -31,7 +31,7 @@ D. Design, Make, Adapt, Inspect, Continue
 
 ---
 
-### Q4. The Theory of Constraints' SECOND focusing step is:
+### Q4. The Theory of Constraints' SECOND focusing step is: *(Remember)*
 A. Identify the constraint
 B. Exploit the constraint
 C. Subordinate everything else
@@ -39,7 +39,7 @@ D. Elevate the constraint
 
 ---
 
-### Q5. OEE formula is:
+### Q5. OEE formula is: *(Remember)*
 A. Availability + Performance + Quality
 B. Availability × Performance × Quality
 C. Availability / Performance × Quality
@@ -47,7 +47,7 @@ D. Performance × Output
 
 ---
 
-### Q6. The 5S Lean methodology stands for:
+### Q6. The 5S Lean methodology stands for: *(Remember)*
 A. Sort, Set, Shine, Standardize, Sustain
 B. Scope, Source, Schedule, Save, Score
 C. Stop, Solve, Standardize, Scale, Succeed
@@ -55,7 +55,7 @@ D. Sense, Specify, Simplify, Sustain, Strategize
 
 ---
 
-### Q7. A team uses a fishbone diagram to brainstorm causes of late deliveries. They are in which DMAIC phase?
+### Q7. A team uses a fishbone diagram to brainstorm causes of late deliveries. They are in which DMAIC phase? *(Apply)*
 A. Define
 B. Measure
 C. Analyze
@@ -63,7 +63,7 @@ D. Control
 
 ---
 
-### Q8. Kaizen emphasizes:
+### Q8. Kaizen emphasizes: *(Understand)*
 A. Radical top-down redesign
 B. Continuous small improvements driven by frontline staff
 C. Replacing all systems with AI
@@ -71,7 +71,7 @@ D. Six Sigma certification
 
 ---
 
-### Q9. The Balanced Scorecard's 4 perspectives are:
+### Q9. The Balanced Scorecard's 4 perspectives are: *(Remember)*
 A. Sales, Marketing, Operations, Finance
 B. Financial, Customer, Internal Process, Learning & Growth
 C. Plan, Execute, Inspect, Adapt
@@ -79,7 +79,7 @@ D. Quality, Cost, Delivery, Safety
 
 ---
 
-### Q10. Throughput in TOC is BEST defined as:
+### Q10. Throughput in TOC is BEST defined as: *(Understand)*
 A. Total revenue
 B. Money generated through sales (revenue − truly variable costs)
 C. Net profit
@@ -87,7 +87,7 @@ D. Inventory value
 
 ---
 
-### Q11. Business Process Reengineering (BPR) differs from Kaizen MOST in:
+### Q11. Business Process Reengineering (BPR) differs from Kaizen MOST in: *(Analyze)*
 A. Industry of use
 B. Pace and magnitude (radical vs incremental)
 C. Cost
@@ -95,7 +95,7 @@ D. Country of origin
 
 ---
 
-### Q12. Perfect order is defined as:
+### Q12. Perfect order is defined as: *(Remember)*
 A. On-time only
 B. On-time + in-full + undamaged + correct documentation
 C. Lowest price + on-time
@@ -103,7 +103,7 @@ D. Largest order + on-time
 
 ---
 
-### Q13. A control chart is used in DMAIC's:
+### Q13. A control chart is used in DMAIC's: *(Apply)*
 A. Define phase
 B. Measure phase
 C. Improve phase
@@ -111,7 +111,7 @@ D. Control phase
 
 ---
 
-### Q14. Cash-to-cash cycle equals:
+### Q14. Cash-to-cash cycle equals: *(Remember)*
 A. Inventory turns
 B. DIO + DSO − DPO
 C. DPO + DSO − DIO
@@ -119,7 +119,7 @@ D. AR − AP
 
 ---
 
-### Q15. SMED stands for:
+### Q15. SMED stands for: *(Remember)*
 A. Single-Minute Exchange of Die — quick changeover
 B. Standard Mode Equipment Design
 C. Small Manufacturing Engineering Department
@@ -127,7 +127,7 @@ D. Step-Method Estimation Diagram
 
 ---
 
-### Q16. Poka-yoke is:
+### Q16. Poka-yoke is: *(Remember)*
 A. A scheduling system
 B. A mistake-proofing technique
 C. A Six Sigma belt level
@@ -135,7 +135,7 @@ D. A balanced-scorecard perspective
 
 ---
 
-### Q17. PDCA stands for:
+### Q17. PDCA stands for: *(Remember)*
 A. Plan, Do, Check, Act
 B. Plan, Define, Communicate, Act
 C. Process, Design, Control, Audit
@@ -143,7 +143,7 @@ D. Prepare, Develop, Calculate, Apply
 
 ---
 
-### Q18. Jidoka in Lean refers to:
+### Q18. Jidoka in Lean refers to: *(Remember)*
 A. Goods-to-person automation
 B. Autonomation — stop the line when defect detected
 C. Vendor-managed inventory
@@ -151,7 +151,7 @@ D. Quick changeover
 
 ---
 
-### Q19. Comparing your DC's productivity to Amazon's is:
+### Q19. Comparing your DC's productivity to Amazon's is: *(Analyze)*
 A. Internal benchmarking
 B. Competitive benchmarking
 C. Functional benchmarking (best-in-class outside industry)
@@ -159,7 +159,7 @@ D. Generic benchmarking
 
 ---
 
-### Q20. A Six Sigma Green Belt is BEST described as:
+### Q20. A Six Sigma Green Belt is BEST described as: *(Understand)*
 A. Full-time project leader
 B. Awareness only
 C. Part-time project member who applies tools within their role
@@ -167,7 +167,7 @@ D. Master Black Belt mentor
 
 ---
 
-### Q21. Andon is a Lean tool that:
+### Q21. Andon is a Lean tool that: *(Remember)*
 A. Levels production
 B. Provides visual signals when problems occur on the line
 C. Maps the value stream
@@ -175,7 +175,7 @@ D. Schedules constraints
 
 ---
 
-### Q22. The classic 7 quality tools include all EXCEPT:
+### Q22. The classic 7 quality tools include all EXCEPT: *(Understand)*
 A. Pareto chart
 B. Fishbone diagram
 C. Control chart
@@ -183,7 +183,7 @@ D. SWOT analysis
 
 ---
 
-### Q23. Industry 4.0 enables which kind of digital model of a physical system?
+### Q23. Industry 4.0 enables which kind of digital model of a physical system? *(Remember)*
 A. Digital twin
 B. Digital sketch
 C. Digital fork
@@ -191,7 +191,7 @@ D. Digital relay
 
 ---
 
-### Q24. A team running a Gemba walk is:
+### Q24. A team running a Gemba walk is: *(Apply)*
 A. Generating a forecast
 B. Going to the actual workplace to observe work
 C. Doing a Six Sigma DOE
@@ -199,7 +199,7 @@ D. Forecasting demand sensing
 
 ---
 
-### Q25. TOC's "drum-buffer-rope" technique pulls upstream releases at the pace of:
+### Q25. TOC's "drum-buffer-rope" technique pulls upstream releases at the pace of: *(Understand)*
 A. The fastest resource
 B. The slowest non-constraint resource
 C. The constraint

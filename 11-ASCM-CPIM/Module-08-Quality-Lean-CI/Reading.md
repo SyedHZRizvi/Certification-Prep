@@ -2,6 +2,13 @@
 
 > **Why this module matters:** Lean and quality concepts are ~15% of the CPIM exam. The 7 wastes, kanban math, takt time, DMAIC, control charts — these are *guaranteed* to appear. Many candidates skim this module; don't.
 
+> **Prerequisites for this module.** Before starting, you should be comfortable with:
+> - [Module 5: Capacity Planning](../Module-05-Capacity-Planning/Reading.md) — TOC's "constraint" thinking pairs with Lean's "waste" thinking
+> - [Module 7: Production Activity Control](../Module-07-Production-Activity-Control/Reading.md) — pull-vs-push, SMED, manufacturing-cell concepts previewed here
+> - Basic statistics (mean, standard deviation) for control-chart sections
+>
+> The case-study volume in this module is heaviest — most named concepts (kanban, jidoka, poka-yoke, kaizen, takt time) come directly from a single source (Toyota). The exam expects you to know the *vocabulary*, the *core formulas* (kanban sizing, takt, OEE, Cpk), and the *history* (Ohno, Deming, Goldratt, Womack/Jones).
+
 ---
 
 ## 🍕 A Story: The Auto Plant That Beat Detroit
@@ -19,6 +26,8 @@ This module is what CPIM expects you to know about that system.
 ---
 
 ## 🗑️ The 7 Wastes of Lean (TIMWOOD / DOWNTIME)
+
+> **Citation.** The 7 wastes (Japanese: *muda*) were codified by **Taiichi Ohno** at Toyota in *Toyota seisan hōshiki* (1978; English: *Toyota Production System: Beyond Large-Scale Production*, Productivity Press, 1988). Ohno developed the framework through the 1950s–1970s at Toyota; the English translation of his book is the canonical Western primary source. The 8th waste ("unused human talent / underutilized intellect") was added by **Jeffrey Liker** in *The Toyota Way* (McGraw-Hill, 2004) and is now standard in most modern lean curricula and in the ASCM Dictionary (16th ed., 2022).
 
 🔥 **MEMORIZE THESE.** They're tested every single CPIM exam.
 
@@ -41,6 +50,8 @@ Some modern lists add an **8th waste**: **Unused Talent / Underutilized Human Po
 ---
 
 ## 🎯 The 5 Lean Principles (Womack & Jones)
+
+> **Citation.** Womack, James P. & Jones, Daniel T., *Lean Thinking: Banish Waste and Create Wealth in Your Corporation* (Simon & Schuster, 1996; 2nd ed. 2003). The companion foundational work is Womack, Jones & Roos, *The Machine That Changed the World: The Story of Lean Production* (Rawson Associates / Macmillan, 1990) — the original MIT-IMVP global automotive study that named "lean" as a movement distinct from Toyota's internal terminology.
 
 1. **Value** — define value from the customer's perspective
 2. **Value Stream** — map every step; eliminate non-value-add
@@ -178,6 +189,8 @@ The Kaizen mindset:
 
 ## 📊 Six Sigma & DMAIC
 
+> **Citation.** Six Sigma originated at **Motorola** in 1986 under **Bill Smith** (engineer) and **Mikel Harry** (director, Operations and Systems Research), formally launched company-wide in 1987. Motorola won the inaugural Malcolm Baldrige National Quality Award in 1988 substantially on the strength of Six Sigma adoption. The methodology was popularized by **General Electric** under **Jack Welch** starting 1995. The DMAIC framework was formalized in Pyzdek, Thomas, *The Six Sigma Handbook* (3rd ed. McGraw-Hill, 2010) and George, Michael L., *Lean Six Sigma: Combining Six Sigma Quality with Lean Production Speed* (McGraw-Hill, 2002). The TQM antecedents — Deming, Juran, Crosby, Ishikawa — preceded Six Sigma by decades; see "TQM" section below for those citations.
+
 **Six Sigma** = a data-driven quality improvement methodology pioneered by Motorola (1986) and popularized by GE (Welch, 1995). Target: ≤ **3.4 defects per million opportunities (DPMO)** = 6σ from the mean.
 
 🔥 **MEMORIZE DMAIC** — the 5-phase improvement cycle:
@@ -235,6 +248,14 @@ Cpk = min[ (USL − μ) / (3σ),  (μ − LSL) / (3σ) ]
 ---
 
 ## 🧠 TQM — Total Quality Management
+
+> **Citations.** TQM has four named founders, each with a primary text:
+> - **W. Edwards Deming**, *Out of the Crisis* (MIT CAES, 1982; reissued MIT Press, 2000). The 14 Points and the Plan-Do-Study-Act cycle (Deming preferred PDSA over PDCA).
+> - **Joseph M. Juran**, *Quality Control Handbook* (McGraw-Hill, 1951; current ed. *Juran's Quality Handbook*, 7th ed. 2017). The Juran Trilogy: planning, control, improvement.
+> - **Philip B. Crosby**, *Quality is Free* (McGraw-Hill, 1979). "Zero defects" and "cost of quality."
+> - **Kaoru Ishikawa**, *What Is Total Quality Control? The Japanese Way* (Prentice-Hall, 1985). The 7 basic quality tools (below) and the fishbone diagram.
+>
+> ASCM Dictionary (16th ed., 2022) treats TQM, the 7 basic tools, and PDCA/PDSA as core entries.
 
 Pre-Six-Sigma quality movement (Deming, Juran, Crosby, Ishikawa) emphasizing:
 - Customer focus
@@ -294,6 +315,33 @@ Often used as the *engine* of kaizen events.
 ## 🏁 Theory of Constraints Reprise
 
 Goldratt's TOC (Module 5) fits within lean's "perfection" principle — but TOC focuses on *the constraint* while pure lean focuses on *all waste*. Most modern factories blend the two.
+
+---
+
+## 📊 Case Study — Toyota Production System (1948–onwards): Codified by Ohno, Studied Globally
+
+**Situation.** In the post-war reconstruction era (1948 onward), Toyota Motor Corporation faced existential constraints: chronic capital scarcity, fragmented domestic demand across many small vehicle classes, no access to Detroit-scale economies. Mass production as practiced by Ford and GM — long runs of identical vehicles, large WIP buffers, large finished-goods inventory — was not financially survivable for Toyota. The company needed to produce small batches of varied vehicles at competitive unit cost, with capital efficiency far higher than the American competition.
+
+**Decision.** Over roughly three decades (1948 through the late 1970s) **Taiichi Ohno**, an engineer at Toyota, built what came to be called the **Toyota Production System (TPS)**. The journey:
+- **1949–1953**: Inspired by American supermarkets observed by Toyoda Eiji on a visit to Detroit (customer pulls product from shelves, supplier replenishes only what's sold), Ohno developed the **kanban** signal as a manual pull-replenishment mechanism.
+- **1950s**: Implemented **jidoka** (autonomation — machines stop on defect) and **andon** (visual signal). Inspired by the auto-stop mechanism on Toyoda Loom Works' 1924 automatic looms (Toyota's founding company).
+- **1960s**: **Shigeo Shingo**, a Toyota consultant, formalized **SMED** (Single Minute Exchange of Die) — reducing press setups from hours to single-digit minutes, enabling smaller economical batch sizes.
+- **1970s**: TPS reached operational maturity. Toyota was producing varied vehicles at remarkably low WIP and inventory levels, with quality outcomes (defects per vehicle, customer-reported issues) systematically better than competitors.
+- **1973 oil shock**: While American manufacturers struggled with the recessionary period, Toyota's flexible TPS allowed rapid adaptation. Public attention to Toyota's performance accelerated. Honda followed similar principles independently.
+
+**Outcome and global influence.** The 1990 MIT-IMVP study (Womack, Jones & Roos, *The Machine That Changed the World*, 1990) made the global automotive industry's TPS-vs-mass-production gap unmistakable. Japanese assembly plants required **half the hours per vehicle** of American plants with **half the inventory** and **a third of the defect rate**. The MIT study coined "Lean Production" as the Western label for the principles. From that point forward:
+- Toyota's global market share grew from ~5% (1980) to ~12% (2000) to ~17% (2024) — overtaking GM in 2008 as the world's largest automaker by volume. As of 2024, Toyota is again #1 (10.8M vehicles vs Volkswagen's ~9.0M, GM's ~6.0M).
+- TPS was adopted (with varying fidelity) across global manufacturing: GE's lean transformation under Welch (1995+), Boeing's "Lean Manufacturing" program (1995+), Ford's revival of Henry Ford-era flow concepts (2000s), and across non-manufacturing sectors (lean healthcare at Virginia Mason, lean software at IMVU/Toyota Connected, lean government at the Veterans Health Administration).
+- Toyota maintained the discipline through the 2009–2011 unintended-acceleration recall crisis and the 2020–2022 chip shortage, with notably better outcomes than competitors in both cases.
+
+**Lesson for the exam / for practitioners.** TPS demonstrates that **a coherent operations system** (alignment of principles, tools, culture, leadership behavior, supplier relationships, employee development) compounds in ways that copying individual tools cannot replicate. Western firms have spent four decades trying to "be lean"; few have matched Toyota's results because few have invested the time horizon and leadership consistency that built TPS. The CPIM exam tests the *tools* (kanban, jidoka, poka-yoke, SMED, 5S, kaizen, takt) and the *principles* (Value, Value Stream, Flow, Pull, Perfection). The real-world distinction — between adopting a tool and building a system — is what separates Lean adopters from Lean masters.
+
+The CPIM exam-takeaway: when an exam question describes a company that "implemented kanban" but still has the bullwhip, overproduction, and quality problems Lean is supposed to solve, the right answer is usually **system integrity**, not "implement more tools." A kanban without jidoka, andon, kaizen culture, supplier integration, and management standard-work is just a card on a board.
+
+**Discussion (Socratic).**
+- Q1: Why has Toyota's TPS been copied for 40+ years and yet so few Western automakers have caught up on the underlying metrics (defects/vehicle, hours/vehicle, inventory turns)? Build the strongest argument that this is *cultural* (Japanese vs Western management philosophy, employment models) AND that it's *structural* (capital allocation, supplier relationship horizon). Which would you defend, and what would you change first at a Western manufacturer trying to actually close the gap?
+- Q2: Industry 4.0 / smart manufacturing (sensors, ML-driven quality detection, digital twins) emerged in the 2010s and accelerated 2020–2026. Is Industry 4.0 *replacing* TPS, *augmenting* it, or *building on* its principles? Cite at least one specific Industry 4.0 capability (e.g., MES-integrated anomaly detection, predictive maintenance) and map it to a TPS principle (jidoka, kaizen, etc.).
+- Q3: Lean services / Lean healthcare / Lean software adapted TPS to non-manufacturing contexts. The Virginia Mason Health System (Seattle) is the canonical Lean healthcare reference; Toyota Kata is the canonical Lean leadership reference. Pick one non-manufacturing application of Lean and identify the *one* principle that travels well AND the *one* principle that travels poorly. Why does the analogy break?
 
 ---
 
@@ -378,12 +426,33 @@ You now know:
 
 ---
 
+> **Where this leads.**
+> - Inside this course: Module 8 closes the CPIM canon. The capstone project at the course root brings every module together (S&OP → MPS → MRP → Capacity → Inventory → PAC → Lean).
+> - Cross-course: `10-ASCM-CSCP` Module 10 extends Lean to the multi-tier supply chain (Lean Six Sigma at network scale); `12-ASCM-CLTD` Module 9 applies Lean to warehouse and transportation operations.
+> - Practice: Practice Exam 2 has 18+ questions on Lean / Six Sigma / TPM; Final Mock Exam has 22+. This is one of the highest-yield modules — drill the formulas (kanban, takt, OEE, Cpk) and the case-named concepts (TIMWOOD/DOWNTIME, 5S, DMAIC).
+
+---
+
+## 💬 Discussion — Socratic prompts
+
+1. **The 8th waste's legitimacy.** Liker (2004) added "unused human talent" as the 8th waste. Argue that this is a *genuine extension* of Ohno's framework AND that it's a *Western dilution* of a focused operational concept. Which would you defend, and what's the consequence for how you teach Lean to a new operations team?
+2. **Industry 4.0 vs TPS — pick a side.** With digital twins, IoT-enabled OEE tracking, ML-driven SPC, and AI-augmented kaizen ("auto-detect waste from sensor data"), is the human operator still the heart of Lean? Defend either position with a current technology example.
+3. **Six Sigma vs Lean — which wins where?** A 1,000-person CNC machine shop with quality issues and high variability would benefit from Six Sigma's statistical discipline; a 200-person assembly cell with quality OK but high WIP would benefit from Lean's flow focus. Construct a sharper rule: at what symptom mix does each win, and where is "Lean Six Sigma" (the combination) actually right?
+4. **Toyota's culture transferability.** Toyota Kata (Rother, 2009) argues the *real* Toyota secret is a daily improvement-coaching practice, not the tools. If Kata is right, can Lean ever be truly transplanted to a Western firm with quarterly earnings pressure, high executive turnover, and union/management distrust? Defend either yes or no.
+5. **Lean in 2026's reshoring era.** A US manufacturer reshoring from China to a Mexican / US-Southern plant has the chance to build a TPS-style operation greenfield. Walk through the 5 Lean principles in *implementation order* — which would you tackle first, and why? Defend against the "do all five at once" alternative.
+
+---
+
 ## 📚 Further Reading (Optional)
 
-- 📖 *The Toyota Way* — Jeffrey Liker (the canonical Western book on TPS)
-- 📖 *Lean Thinking* — Womack & Jones (origin of the 5 lean principles)
-- 📖 *The Goal* — Eliyahu Goldratt (TOC — pairs nicely with lean)
-- 📖 *Out of the Crisis* — W. Edwards Deming (the TQM foundations)
-- 📖 *The Machine That Changed the World* — Womack, Jones, Roos (the original lean book, 1990)
-- 📖 ASCM Dictionary entries: 7 wastes, kanban, takt time, SMED, DMAIC, OEE, control chart, Cpk
-- 📖 *A Study of the Toyota Production System* — Shigeo Shingo
+- 📖 *The Toyota Way: 14 Management Principles from the World's Greatest Manufacturer, 2nd ed.* — Liker, Jeffrey K. (McGraw-Hill, 2021) — the canonical Western book on TPS.
+- 📖 *Lean Thinking: Banish Waste and Create Wealth in Your Corporation* — Womack, James P. & Jones, Daniel T., 2nd ed. (Simon & Schuster, 2003) — origin of the 5 lean principles.
+- 📖 *The Machine That Changed the World: The Story of Lean Production* — Womack, James P., Jones, Daniel T. & Roos, Daniel (Free Press, 1990) — the original MIT-IMVP study.
+- 📖 *Toyota Production System: Beyond Large-Scale Production* — Ohno, Taiichi (Productivity Press, 1988; Japanese original 1978) — primary source on TPS by its principal architect.
+- 📖 *Toyota Kata: Managing People for Improvement, Adaptiveness, and Superior Results* — Rother, Mike (McGraw-Hill, 2009) — the leadership-and-coaching layer of Lean.
+- 📖 *The Goal* — Goldratt, Eliyahu M. (North River Press, 1984) — TOC pairs naturally with Lean.
+- 📖 *Out of the Crisis* — Deming, W. Edwards (MIT Press reissue 2000; original 1982) — the TQM foundations.
+- 📖 *Lean Six Sigma: Combining Six Sigma Quality with Lean Production Speed* — George, Michael L. (McGraw-Hill, 2002).
+- 📖 *A Revolution in Manufacturing: The SMED System* — Shingo, Shigeo (Productivity Press, 1985).
+- 📖 ASCM Dictionary, 16th edition (2022) — entries for 7 wastes, kanban, takt time, SMED, DMAIC, OEE, control chart, Cpk, jidoka, andon, poka-yoke, kaizen, 5S.
+- 📰 Lean Enterprise Institute (lean.org) — current practitioner content; the *Lean Post* and *Lean Solutions* periodicals.

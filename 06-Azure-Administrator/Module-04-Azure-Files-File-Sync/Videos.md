@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~60 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+Azure+Files+SMB+NFS+overview" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+Azure+Files+SMB+NFS+overview" target="_blank" rel="noopener" data-video-id="MXXS4n-Tk4o">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 24 min · Tiers + identity</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Adam+Marczak+Azure+Files+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Adam+Marczak+Azure+Files+tutorial" target="_blank" rel="noopener" data-video-id="UzTtastcBsk">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 14 min · Create + mount</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+Azure+File+Sync+cloud+tiering" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+Azure+File+Sync+cloud+tiering" target="_blank" rel="noopener" data-video-id="uH1iDOt9A9c">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 20 min · Hybrid file server</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Files+Entra+Kerberos+identity+auth+SMB" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Files+Entra+Kerberos+identity+auth+SMB" target="_blank" rel="noopener" data-video-id="LWKkva4ksdg">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~30 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Travis+Roberts+Azure+File+Sync+deployment" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Travis+Roberts+Azure+File+Sync+deployment" target="_blank" rel="noopener" data-video-id="moY9CcPkNNQ">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 12 min · Hands-on lab</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Files+NFS+4.1+Linux+premium" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Files+NFS+4.1+Linux+premium" target="_blank" rel="noopener" data-video-id="44qVRZg-bMA">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 10 min · Premium-only gotchas</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Files+share+snapshot+restore+backup" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Files+share+snapshot+restore+backup" target="_blank" rel="noopener" data-video-id="_ngGRpM3BAQ">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Files+performance+tuning+premium+vs+standard" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Files+performance+tuning+premium+vs+standard" target="_blank" rel="noopener" data-video-id="TFWph81tueY">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 16 min · IOPS math</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=migrate+on-prem+file+server+Azure+Files+robocopy+Storage+Migration+Service" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=migrate+on-prem+file+server+Azure+Files+robocopy+Storage+Migration+Service" target="_blank" rel="noopener" data-video-id="dogfMUOztdQ">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

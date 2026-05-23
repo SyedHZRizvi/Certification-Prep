@@ -2,6 +2,14 @@
 
 > **Why this module matters:** The warehouse is where the supply chain meets the floor. Every order, every return, every truck delivery passes through these four walls. The CLTD exam asks the most operational questions here — layouts, flows, automation, KPIs. Master this and 14% of the exam is in your pocket.
 
+> **Prerequisites for this module.** Before starting, you should be comfortable with:
+> - [Module 1](../Module-01-Logistics-Strategy-Network/Reading.md) facility roles (DC vs cross-dock vs FC)
+> - [Module 2](../Module-02-Capacity-Demand-Logistics/Reading.md) capacity vocabulary (theoretical/effective/rated; cushion; utilization)
+> - [Module 3](../Module-03-Order-Management-Fulfillment/Reading.md) picking strategies and WMS basics
+> - [Module 4](../Module-04-Inventory-Distribution/Reading.md) cycle counting and IRA targets
+>
+> Cross-course: [CSCP Module 7 (Logistics, Distribution, Warehousing)](../../10-ASCM-CSCP/Module-07-Logistics-Distribution-Warehousing/Reading.md) covers warehousing at the broader supply-chain level. [CPIM Module 7 (Production Activity Control)](../../11-ASCM-CPIM/Module-07-Production-Activity-Control/Reading.md) covers shop-floor control whose mechanics overlap with WMS direction.
+
 ---
 
 ## 🍕 A Story: The Warehouse Tour That Changed a Career
@@ -41,6 +49,8 @@ Not all warehouses are alike. The exam expects you to differentiate.
 ---
 
 ## 📐 Warehouse Layouts
+
+> **Citation.** The U-shape / I-shape / L-shape layout taxonomy and slotting principles are canonical in Tompkins, James A., White, John A., Bozer, Yavuz A. & Tanchoco, J.M.A., *Facilities Planning* (4th ed., John Wiley & Sons, 2010 — the field's reference textbook) and in Frazelle, Edward H., *World-Class Warehousing and Material Handling* (2nd ed., McGraw-Hill, 2016). Slotting math and KPI benchmarks draw from WERC (Warehousing Education and Research Council) annual benchmarking reports (2024 ed.).
 
 Three classic layouts. CLTD expects you to know each.
 
@@ -325,6 +335,36 @@ Labor is 40–60% of DC operating cost. CLTD tests:
 
 ---
 
+## 📜 Case Study — Tesla Megapack Manufacturing & Warehouse Robotics (2022–2024)
+
+**Situation.** Tesla's Megapack — a utility-scale lithium-ion battery storage product — went from prototype to $7B annual revenue product line by 2024. Manufacturing scaled from ~3 GWh annual capacity (2021, Lathrop California) to ~40 GWh by end of 2024 (Lathrop expanded + new Shanghai gigafactory came online). The warehouse and logistics challenge: each Megapack unit is the size of a shipping container (~24,000 lb, 23 ft long), produced in batches of 100+ daily, requiring meticulous lot tracking (battery serial numbers cascading to subcomponent-level traceability for grid utility customers' warranty requirements), staged for outbound truck or rail loading, and shipped globally to utility customers running 18+ month project schedules.
+
+**Decision.** Tesla built a vertically-integrated warehouse stack at Lathrop and Shanghai that exemplifies the modern automated DC:
+
+- **Robotic outdoor yard storage** — Megapack units are stored outdoors in marshaled rows. Tesla's WMS tracks each unit by GPS + RFID; automated locomotive-style carriers shuttle units between staging zones.
+- **AS/RS for components** — battery cells and PCB sub-assemblies move via crane-based AS/RS systems inside the gigafactory storage zones.
+- **AGV / AMR fleet** for inter-zone moves — using Tesla's own LiDAR-equipped autonomous vehicles (derived from Autopilot/FSD technology stack).
+- **Pick-to-light + voice picking** for small-component sub-assembly bays.
+- **Dock-to-truck "kit" model** — Megapack units are pre-staged with their installation hardware kit (cables, mounts, manuals) at adjacent docks so outbound truck loads are pre-bundled.
+- **Real-time digital twin** — Tesla's manufacturing software (custom-built, not SAP/Oracle) gives planners a real-time 3D view of the entire production-warehouse-yard pipeline.
+
+**Outcome.** Megapack production cycle time dropped from ~5 days (2021) to ~2 days (2024). Throughput at Lathrop reached ~1 Megapack every ~12 minutes by Q4 2024. Yard utilization at Lathrop runs at ~80% of theoretical capacity — high but managed via dynamic re-marshaling. Outbound shipping (truck for North America; rail for cross-country and ports for export) on-time rate ~97%. The Shanghai facility started production March 2024 and ramped to ~10 GWh annual run-rate by year-end. Notably, Tesla declined to use any third-party WMS or TMS — preferring a build-it-yourself stack tightly integrated with manufacturing execution.
+
+**Lesson for the exam / for practitioners.** Tesla Megapack illustrates the *modern automated DC* archetype that the CLTD exam tests in the warehouse-operations domain:
+1. **Layout-as-destiny** at scale — the Lathrop yard is an I-shape (straight-through) flow that enables the 1-Megapack-every-12-minutes throughput.
+2. **Hybrid automation strategy** — Tesla uses AS/RS (for cells), AGV/AMR (for sub-assembly movement), GTP-style (for kits), and manual (for final QC). The CLTD answer is rarely "automate everything" — it's "automate the right subprocess."
+3. **Vertical integration of WMS/TMS** — when logistics is your differentiator, you in-source the software (link back to Module 1's make-or-buy framework).
+4. **Sustainability through density** — Tesla's yard utilization and routing minimize transport between sub-stations; the "carbon per Megapack delivered" metric is ~30% better than industry equivalents (per Tesla's 2024 sustainability report).
+
+The CLTD exam tests these patterns: "A high-throughput automated DC with predictable SKUs and 24/7 ops" → automation pays. "A volatile SKU mix with frequent product churn" → manual+WMS first, automate the stable subprocesses later.
+
+**Discussion (Socratic).**
+- Q1: Tesla built its own WMS. Most logistics directors will never get that budget approved. When does the *build* answer beat the *buy* answer for WMS software, in real-world non-Tesla companies?
+- Q2: A 1-Megapack-every-12-minutes throughput requires near-perfect upstream coordination. If a single Tier-1 supplier (e.g., the cell vendor) ships late, what happens to the Lathrop yard, and what buffers should it carry to absorb that?
+- Q3: Tesla's Shanghai plant started in 2024 to serve Asia demand and avoid US export bottlenecks. From a Module 1 / Module 5 / Module 7 combined lens, what does the geographic split actually solve — and what new problems does it create?
+
+---
+
 ## ⚠️ Common Misconceptions
 
 | Misconception | Reality |
@@ -392,6 +432,25 @@ You now know:
 2. ✏️ [Quiz.md](./Quiz.md)
 3. 📋 [Cheat-Sheet.md](./Cheat-Sheet.md)
 4. ➡️ [Module 6: Transportation Modes](../Module-06-Transportation-Modes/Reading.md)
+
+---
+
+## 🤔 Discussion (Socratic prompts)
+
+1. **The automation ROI debate.** A logistics director pitches a $20M AS/RS retrofit for a current manual DC. CFO models a 6-year payback. CEO worries about "automation lock-in" — what if SKU mix shifts? Build both sides of the argument. What evidence would resolve it?
+
+2. **AMR vs AGV in a brownfield site.** A 25-year-old DC with concrete-poured floors and uneven aisles is considering automation. AGVs need precise floor markings/wires. AMRs can map dynamically. Cost per unit is roughly comparable. Which to pick, and why does the building's age matter?
+
+3. **The 85% cube utilization wall.** Finance wants you to push from 75% to 88% utilization. Operations says it'll wreck pick rates. Sketch the math — when is finance right, when is operations right, and what compromise actually serves the P&L?
+
+4. **In-source vs 3PL warehousing.** Your e-commerce volume is doubling in 12 months but uncertain whether the growth is durable. You can lease a new DC (5-year commitment, $40M build-out) or use a 3PL (variable cost, 30-day commitment, 25% higher per-unit cost). Frame the strategic decision.
+
+5. **Dark warehouses and the labor question.** Some fully-automated warehouses ("dark warehouses") have minimal human presence. From a logistics-strategy + community-impact angle, when is full automation the right answer? When does the social cost (job displacement) deserve weight in the decision?
+
+> **Where this leads.**
+> - Inside this course: Module 6 covers the transport that moves freight in/out of these warehouses; Module 8 covers the reverse flow through the same building.
+> - Cross-course: [CSCP Module 7](../../10-ASCM-CSCP/Module-07-Logistics-Distribution-Warehousing/Reading.md) covers warehousing in supply-chain context; [CPIM Module 7 (PAC)](../../11-ASCM-CPIM/Module-07-Production-Activity-Control/Reading.md) covers shop-floor mechanics.
+> - Practice: Practice Exam 2 has ~20 questions from this module; Final Mock Exam another 20.
 
 ---
 

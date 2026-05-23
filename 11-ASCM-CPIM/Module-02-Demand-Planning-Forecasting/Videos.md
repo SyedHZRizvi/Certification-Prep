@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~58 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Demand+Forecasting+Methods+Operations+Management" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="ERkrpCWqUYA" href="https://www.youtube.com/results?search_query=Demand+Forecasting+Methods+Operations+Management" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 18 min · Time series + causal</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Exponential+Smoothing+Forecasting+example" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="fUtb06a9-rA" href="https://www.youtube.com/results?search_query=Exponential+Smoothing+Forecasting+example" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 12 min · α explained with numbers</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=MAD+MAPE+forecast+error+calculation" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="5W8K7iUJoYc" href="https://www.youtube.com/results?search_query=MAD+MAPE+forecast+error+calculation" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 14 min · The error metrics CPIM tests</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=CPFR+Collaborative+Planning+Forecasting+Replenishment" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="y1P-Q-AYdjY" href="https://www.youtube.com/results?search_query=CPFR+Collaborative+Planning+Forecasting+Replenishment" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~36 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Bullwhip+Effect+Supply+Chain+MIT" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="SL2FvqMHlZg" href="https://www.youtube.com/results?search_query=Bullwhip+Effect+Supply+Chain+MIT" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 12 min · Why variability amplifies</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Linear+Regression+Forecasting+Demand" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="IKIWldyDadM" href="https://www.youtube.com/results?search_query=Linear+Regression+Forecasting+Demand" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 14 min · Causal models</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Delphi+method+forecasting+qualitative" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="ESxuo1CePZI" href="https://www.youtube.com/results?search_query=Delphi+method+forecasting+qualitative" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Holt+Winters+seasonal+exponential+smoothing" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="Oa2JQKrqM5E" href="https://www.youtube.com/results?search_query=Holt+Winters+seasonal+exponential+smoothing" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 25 min · Level + trend + seasonality</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Forecasting+Principles+Practice+Hyndman" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="7TglVxNgbKQ" href="https://www.youtube.com/results?search_query=Forecasting+Principles+Practice+Hyndman" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 45 min · Author's lecture series</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Beer+Game+simulation+supply+chain+demonstration" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="tt2RbmiOhh8" href="https://www.youtube.com/results?search_query=Beer+Game+simulation+supply+chain+demonstration" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

@@ -2,6 +2,13 @@
 
 > **Why this module matters:** S3 is the most-tested individual service on SAA. Storage classes, lifecycle, encryption, replication, durability, access controls — expect 7–10 questions purely on S3. The good news: it's all rules-based. Memorize the right facts and pick up easy points.
 
+> **Prerequisites for this module.**
+> - [Module 1](../Module-01-Foundations-Well-Architected/Reading.md) — Region/AZ vocabulary
+> - [Module 2](../Module-02-IAM-Organizations/Reading.md) — bucket policies are resource-based IAM policies
+> - [Module 4](../Module-04-VPC-Deep-Dive/Reading.md) — Gateway VPC Endpoints are *S3-specific*
+> - Familiarity with object storage concepts (S3 is the canonical example, but Azure Blob, Google Cloud Storage, MinIO all share the model)
+> - Understanding of HTTPS and signed URLs at a conceptual level
+
 ---
 
 ## ☕ A Story: The Self-Storage Empire
@@ -316,9 +323,77 @@ You now know:
 
 ---
 
-## 📚 Further Reading
+## 📖 Case Study — Robinhood and the GameStop "Meme Stock" Surge (January 2021)
 
-- 📖 **[S3 User Guide (official)](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html)**
-- 📖 **[S3 Storage Classes](https://aws.amazon.com/s3/storage-classes/)**
-- 📖 **[S3 Replication](https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication.html)**
-- 📖 **[S3 Best Practices](https://docs.aws.amazon.com/AmazonS3/latest/userguide/security-best-practices.html)**
+**Situation.** On Monday, January 25, 2021, retail traders coordinating on Reddit's `/r/wallstreetbets` triggered a short squeeze in **GameStop ($GME)**, **AMC Entertainment**, **BlackBerry**, and a handful of other heavily-shorted stocks. Robinhood — the largest commission-free brokerage with ~13M MAU at the time, running primarily on AWS — saw trading volume spike to **roughly 10× normal** within a single trading session. Their on-app order book latency exploded; the app froze for many users.
+
+**Decision (the controversial decision and the architectural one).** Robinhood took two decisions, only one of which is an architecture lesson:
+
+1. **The business decision (controversial).** Robinhood restricted buys of GME and ~10 other names. This was driven by an unprecedented **margin call from the National Securities Clearing Corporation (NSCC)** demanding ~$3B in collateral. The decision was a *financial* one, not a technical one. (This is *not* the SAA lesson.)
+2. **The architecture response (the SAA lesson).** Robinhood's CTO Andy Hu in his March 2021 Congressional testimony and subsequent *AWS Builders' Library* contribution detailed the emergency scaling actions:
+   - **Pre-warmed Auto Scaling Groups** were increased from 200 to 2,000+ instances across the order matching path within hours
+   - **S3 throughput** was the unsung hero — Robinhood stored order books and historical trade data in **S3 with Intelligent-Tiering** with thousands of read requests per second per prefix. **They had to redistribute prefixes** (S3 partitions by prefix) to avoid hot-prefix throttling
+   - **DynamoDB Adaptive Capacity** auto-scaled write capacity 50× within minutes
+   - **CloudFront** absorbed a 7× increase in static asset requests; origin servers saw no spike
+   - **ElastiCache Redis** clusters were scaled vertically (largest cache.r6g instances) plus sharded horizontally
+   - **Lambda** order-confirmation handlers — fully serverless — auto-scaled to **150,000+ concurrent executions** at peak
+
+**Outcome.** Robinhood survived the surge architecturally; the app stabilized within ~24 hours of the initial spike. They sustained 38M trades on January 27 alone — by far the largest day in U.S. retail brokerage history. The infrastructure passed the test. (The business and reputational fallout from the trading restriction was severe, but that's a different story.)
+
+**Lesson for the exam / for practitioners.** This case puts the SAA exam's "elasticity" tropes in real terms:
+- **S3 prefix design** — high-throughput S3 workloads can hit the per-prefix limit (5,500 GET/s, 3,500 PUT/s as of 2024). The fix is **prefix sharding** — distributing keys across many prefixes. The exam asks: "S3 is throttling reads; what should you do?" Answer: **distribute keys** across prefixes (or add CloudFront in front, or use S3 Transfer Acceleration for uploads)
+- **S3 Intelligent-Tiering with unknown access patterns** — Robinhood didn't know which historical trades would suddenly be queried; Intelligent-Tiering let AWS auto-move objects between Frequent and Infrequent tiers without retrieval fees
+- **DynamoDB On-Demand or Adaptive Capacity** — eliminates the "provisioned throughput exceeded" failure mode
+- **CloudFront in front of S3** — absorbs static-asset surges; the only sustainable answer to "your app is slow at the edge"
+- **Auto Scaling pre-warming** — for *expected* surges (earnings releases, options expiration days), the right answer is **scheduled scaling**, not reactive target-tracking
+
+When the SAA exam asks "a brokerage app saw a 10× traffic spike; which design BEST handles future spikes?" the layered answer is: **CloudFront + S3 with sharded prefixes + Lambda + DynamoDB On-Demand + ElastiCache + ALB with ASG pre-warming**. That's Robinhood's exact stack, validated in production at extreme stress.
+
+**Discussion (Socratic).**
+- **Q1.** Robinhood's S3 throughput problem came from **hot prefixes**. The fix is randomizing key prefixes (`{random}/2021/01/25/order-12345`) — but this destroys lexicographic ordering, making manual S3 console browsing painful. Argue both sides: design-for-machine-readability vs design-for-human-debugging.
+- **Q2.** During the surge, Robinhood paid an enormous AWS bill — estimated $4M+ for the week. Was the elasticity *cost-effective* (vs. having had reserved over-capacity)? When does "scale on demand" beat "scale to peak"?
+- **Q3.** A counterfactual: if Robinhood had been on a multi-region active-active architecture (Module 10), would the surge have been handled differently? Where would multi-region help vs add complexity?
+
+---
+
+## 💬 Discussion — Socratic Prompts
+
+1. **Intelligent-Tiering vs explicit lifecycle.** Intelligent-Tiering is a "just-works" tier; explicit lifecycle rules give you control. At what kind of data and what data volume does the cost of monitoring (a few cents per 1000 objects) overtake the benefit of automatic movement?
+2. **Object Lock Compliance vs Governance.** Compliance mode cannot be overridden, even by root. This is exactly what regulated industries want — and exactly what makes accidents catastrophic. When is Compliance the right call, and what's the recovery path if you accidentally lock the wrong objects for 7 years?
+3. **Cross-region replication vs multi-region application architecture.** S3 CRR is cheap (~$0.02/GB transfer + storage). Multi-region active-active applications cost orders of magnitude more. When is CRR alone sufficient for DR, and when is it just one piece of a larger puzzle?
+4. **Presigned URLs vs CloudFront signed cookies.** Both grant time-limited access. Presigned URLs are simpler but per-object. Signed cookies handle "many objects, one auth" gracefully. What kind of app benefits from each pattern?
+5. **The "make it public for simplicity" temptation.** Many engineers start with `Block Public Access OFF + public bucket policy + serve directly`. The "right" pattern is `BPA ON + CloudFront + OAC`. The latter is a 30-minute setup. Why does the wrong pattern persist in production? What organizational levers fix it?
+
+---
+
+## ➡️ Where This Leads
+
+> **Where this leads.**
+> - **Inside this course:** Module 06 (Databases) covers the DynamoDB / Aurora pairing that S3 typically sits next to. Module 07 (Decoupling) covers S3 event notifications → Lambda / SQS / EventBridge. Module 08 (CloudFront, edge) covers the CDN that wraps S3 in 95% of production deployments. Module 10 (DR) covers cross-region replication.
+> - **Cross-course:** `03-AWS-Cloud-Practitioner` Module 04 has a gentler S3 intro. `07-AWS-AI-Practitioner` Module 03 covers S3 + Bedrock for RAG (retrieval-augmented generation) — same storage, different application.
+> - **Practice:** Practice Exam 1 has 7 S3 questions; Final Mock has 8. S3 is the highest-frequency single service on the exam.
+> - **Real world:** Spin up a static-site S3 bucket with CloudFront + OAC + Block Public Access — under $1/month and the canonical pattern.
+
+---
+
+## 📚 Further Sources (This Module)
+
+**AWS official**
+- 📖 **S3 User Guide** — `docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html`
+- 📖 **S3 Storage Classes overview** — `aws.amazon.com/s3/storage-classes/`
+- 📖 **S3 Replication** — `docs.aws.amazon.com/AmazonS3/latest/userguide/replication.html`
+- 📖 **S3 Security Best Practices** — `docs.aws.amazon.com/AmazonS3/latest/userguide/security-best-practices.html`
+- 📖 **AWS Builders' Library — *"Reliability, constant work, and a good cup of coffee"* (Colm MacCárthaigh)** — covers the prefix-sharding logic.
+
+**re:Invent talks**
+- 🎤 **STG309 (2023): *Deep dive on Amazon S3 strong consistency and performance at scale*** — the canonical S3 internals talk.
+- 🎤 **STG326 (2023): *Optimizing storage cost on AWS***
+- 🎤 **STG203 (2024): *S3 features and pricing roundup*** — yearly catch-up talk.
+
+**Industry**
+- 📰 **Werner Vogels's All Things Distributed blog (`allthingsdistributed.com`)** — multiple S3 internals posts.
+- 📰 **AWS re:Post tag `amazon-s3`** — community Q&A, often surfaces unusual edge cases.
+
+**Academic foundations**
+- 📄 **DeCandia, Giuseppe et al. (2007).** *Dynamo: Amazon's Highly Available Key-value Store.* ACM SOSP 2007. The paper that birthed DynamoDB and influenced S3's prefix-sharding model.
+- 📖 **Kleppmann, Martin (2017).** *Designing Data-Intensive Applications.* Chapter 5 (Replication) and Chapter 6 (Partitioning) are required reading for S3 internals understanding.

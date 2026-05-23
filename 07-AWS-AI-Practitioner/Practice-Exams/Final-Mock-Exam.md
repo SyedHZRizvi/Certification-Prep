@@ -420,6 +420,140 @@ D. Computing exact payroll tax owed by formula
 
 ---
 
+## Detailed answer rationales
+
+**Q1. Answer: B.** AI ⊃ ML ⊃ Deep Learning ⊃ Generative AI. Canonical Russian-doll hierarchy from Module 1. A reverses it; C says ML and AI are unrelated (false); D inverts the containment of DL and AI. **Exam-takeaway:** memorize the four-level hierarchy.
+
+**Q2. Answer: B.** Recall on the churn class (and/or F1). Imbalanced classification (98% no-churn) makes accuracy meaningless. RMSE (C) and R² (D) are regression metrics. **Exam-takeaway:** imbalanced classification → recall/F1, not accuracy.
+
+**Q3. Answer: B.** Unsupervised anomaly detection. No labels available → start unsupervised. Supervised classification (A) needs labels; RL (C) needs reward signals; text summarization (D) is wrong modality. **Exam-takeaway:** no labels + flag unusual → unsupervised anomaly detection.
+
+**Q4. Answer: D.** Learning rate. Controls how big a step the optimizer takes when updating weights. Activation (A), loss (B), and bias (C) are different. **Exam-takeaway:** "step size" hyperparameter = learning rate.
+
+**Q5. Answer: B.** Inference. Using a trained model on new data is inference. Training (A) builds the model; validation (C) tunes hyperparameters; backpropagation (D) is the gradient-update mechanism within training. **Exam-takeaway:** scoring new data = inference.
+
+**Q6. Answer: A.** AutoML on tabular data — explores algorithms + hyperparameters and returns the best model. Autopilot's core function. No-code visual prep (B) is Canvas; vector DB (C) is unrelated; Kubernetes (D) is EKS. **Exam-takeaway:** AutoML for tabular → Autopilot.
+
+**Q7. Answer: B.** Batch transform. Score a static large dataset once with no live API need. Real-time (A) charges idle hours; async (C) is for big payloads with live response; serverless (D) is for spiky API traffic. **Exam-takeaway:** one-off bulk scoring → Batch Transform.
+
+**Q8. Answer: C.** Amazon Transcribe (Call Analytics). Speech-to-text with call-center-specific features. Polly (A) is TTS; Comprehend (B) is NLP on text; Lex (D) is a chatbot. **Exam-takeaway:** voice → text (call center) → Transcribe Call Analytics.
+
+**Q9. Answer: D.** Amazon Kendra. Enterprise NL search across documents. Personalize (A) is recommendations; Translate (B) is language; Glue (C) is ETL. **Exam-takeaway:** enterprise document NL search → Kendra.
+
+**Q10. Answer: B.** SageMaker Clarify. Model Monitor's bias drift uses Clarify under the hood. Config (A) is resource config; Lex (C) is chatbot; WAF (D) is web ACL. **Exam-takeaway:** bias drift in production = Model Monitor backed by Clarify.
+
+**Q11. Answer: C.** A large pre-trained, general-purpose model adaptable to many tasks. Textbook FM definition. The other options miscount or misuse the term. **Exam-takeaway:** four-attribute FM definition: large, pre-trained, general, adaptable.
+
+**Q12. Answer: D.** 1,000 input + output tokens. Bedrock and most LLM APIs price per 1K tokens. CPU-hours (A), storage (B), and network packets (C) are unrelated. **Exam-takeaway:** tokens drive cost.
+
+**Q13. Answer: A.** Lower temperature toward 0. Determinism = low temperature. Top-p (B) widens the candidate pool; max tokens (C) caps length; top-k (D) also widens. **Exam-takeaway:** deterministic = temperature near 0.
+
+**Q14. Answer: A.** Retrieval-Augmented Generation (RAG). Inject real source data into prompts. Fine-tuning (B), Provisioned Throughput (C), and WAF (D) don't ground answers in source data. **Exam-takeaway:** hallucination + needs your data → RAG.
+
+**Q15. Answer: D.** Numerically close in vector space. Embeddings encode meaning geometrically; similar meaning → small cosine distance. **Exam-takeaway:** embeddings = vectors; similar meaning = close vectors.
+
+**Q16. Answer: D.** OpenAI. Not natively on Bedrock as of 2024–2026. Anthropic, Meta, Mistral are all on Bedrock. **Exam-takeaway:** Bedrock providers list (Anthropic, Amazon, Meta, Mistral, Cohere, Stability, AI21) — OpenAI and Google are NOT on it.
+
+**Q17. Answer: A.** AI coding assistant inside IDEs / AWS console. Q Developer is for engineers (was CodeWhisperer). Enterprise RAG (B) is Q Business; image gen (C) and forecasting (D) are different services. **Exam-takeaway:** Q Developer = IDE + console for engineers.
+
+**Q18. Answer: B.** Enterprise chatbot / RAG over company SaaS and file content. Q Business is the business-user RAG over 40+ connectors. **Exam-takeaway:** Q Business = enterprise RAG over company data.
+
+**Q19. Answer: C.** A no-code sandbox on top of Bedrock for prototyping. Free, shareable, perfect for demos. Not production-grade (A), not a vector store (B), not a SageMaker IDE (D). **Exam-takeaway:** PartyRock = Bedrock sandbox.
+
+**Q20. Answer: A.** Applications / Tools / Infrastructure. AWS's 3-layer GenAI stack. **Exam-takeaway:** memorize this verbatim.
+
+**Q21. Answer: A.** Trainium for training, Inferentia for inference. Custom AWS silicon for ML. **Exam-takeaway:** Trainium → training; Inferentia → inference.
+
+**Q22. Answer: D.** Chain-of-Thought prompting. "Let's think step by step" is the canonical CoT phrase (Wei et al., NeurIPS 2022). Few-shot (A) is multiple examples; RAG (B) is retrieval; prompt injection (C) is adversarial. **Exam-takeaway:** "step by step" → CoT.
+
+**Q23. Answer: A.** Malicious instructions hidden in content (PDF, web page) the LLM ingests. Indirect injection is via the *data* the model reads. Direct user input (B) is direct injection. **Exam-takeaway:** indirect = via ingested content.
+
+**Q24. Answer: B.** Bedrock Guardrails — Sensitive Information filter. Inference-time PII filter. Macie (A) is at-rest; Config (C) is resource config; Artifact (D) is compliance reports. **Exam-takeaway:** runtime PII → Guardrails sensitive-info filter.
+
+**Q25. Answer: C.** AWS Macie. ML-powered PII discovery in S3 buckets. Shield (A) is DDoS; Guardrails (B) is runtime; Clarify (D) is bias. **Exam-takeaway:** at-rest PII discovery → Macie.
+
+**Q26. Answer: C.** Amazon OpenSearch Serverless. Bedrock KB default vector store. **Exam-takeaway:** Bedrock KB default → OpenSearch Serverless.
+
+**Q27. Answer: D.** Bedrock Agent with two action groups (Salesforce + Zendesk). Multi-step API orchestration → Agent + action groups. **Exam-takeaway:** multi-system orchestration with LLM reasoning → Bedrock Agent.
+
+**Q28. Answer: A.** Letting the chatbot use this week's product catalog with citations. Fresh data + citations = RAG. Tone/format enforcement (B) is fine-tuning; exact math (C) is the wrong tool; real-time fraud at scale (D) is classical ML. **Exam-takeaway:** RAG for facts.
+
+**Q29. Answer: C.** Enforcing a specific JSON output format and brand tone. Behavior baked in = fine-tuning. Pricing updates (A) are RAG; replacing reviewers (B) is wrong framing; indexing PDFs (D) is RAG/KB. **Exam-takeaway:** fine-tuning for behaviors.
+
+**Q30. Answer: C.** Prompting → RAG → Fine-tuning → Continued pre-training. The customization cost ladder. **Exam-takeaway:** memorize this ordering.
+
+**Q31. Answer: D.** Provisioned Throughput. Required to invoke fine-tuned Bedrock models. Backup (A), Direct Connect (B), Outposts (C) are unrelated. **Exam-takeaway:** custom Bedrock model invocation → Provisioned Throughput.
+
+**Q32. Answer: D.** BLEU. Translation metric. F1 (A) is classification; ROUGE (B) is summarization; R² (C) is regression. **Exam-takeaway:** BLEU = translation.
+
+**Q33. Answer: B.** ROUGE. Summarization metric. **Exam-takeaway:** ROUGE = summarization.
+
+**Q34. Answer: B.** Lower is better (model is less surprised). Perplexity = how surprised the model is by held-out text; lower = better fit. **Exam-takeaway:** lower perplexity = better.
+
+**Q35. Answer: A.** Bias detection + explainability (SHAP). Clarify's two jobs. **Exam-takeaway:** Clarify = bias + explainability.
+
+**Q36. Answer: B.** SageMaker Model Cards. Customer-authored standardized model documentation. **Exam-takeaway:** customer model docs → Model Cards.
+
+**Q37. Answer: C.** AWS-published responsible-AI documentation for AWS AI services. AI Service Cards are AWS-authored for Rekognition, Textract, Q, etc. **Exam-takeaway:** AWS service docs → AI Service Cards.
+
+**Q38. Answer: D.** Detect dataset class imbalance during pre-training. Guardrails don't do this — that's Clarify's pre-training bias detection. **Exam-takeaway:** Guardrails ≠ bias detection.
+
+**Q39. Answer: A.** Build human-in-the-loop review workflows for AI predictions. Amazon A2I supports Textract, Rekognition, Comprehend, and custom models. **Exam-takeaway:** HITL on AWS → A2I.
+
+**Q40. Answer: A.** Fairness across groups. The 80% / four-fifths rule is a fairness metric (disparate impact threshold). **Exam-takeaway:** 80% rule lives in Fairness.
+
+**Q41. Answer: B.** Physical infra, hypervisor, service availability, and base FM training (by providers). AWS's "of the cloud" responsibilities. Customer handles encryption choice (A), IAM (C), and Guardrails configuration (D). **Exam-takeaway:** AWS = of the cloud; customer = in the cloud.
+
+**Q42. Answer: C.** API call metadata (caller, action, time). CloudTrail logs the *who/what/when*, not content. **Exam-takeaway:** CloudTrail = API metadata only.
+
+**Q43. Answer: C.** Enable Bedrock model invocation logging (S3 / CloudWatch Logs). Opt-in capture of prompts + completions. **Exam-takeaway:** prompt+response audit → invocation logging.
+
+**Q44. Answer: C.** PrivateLink VPC interface endpoint for Bedrock. Keeps traffic on AWS backbone. **Exam-takeaway:** private Bedrock traffic → PrivateLink.
+
+**Q45. Answer: A.** `bedrock:InvokeModel`. The IAM action that invokes a Bedrock foundation model. `s3:GetObject` (B), `kms:Decrypt` (C), and `iam:PassRole` (D) are unrelated to Bedrock invocation. **Exam-takeaway:** memorize the `bedrock:InvokeModel` action name.
+
+**Q46. Answer: A.** A signed BAA and HIPAA-eligible services. HIPAA on AWS requires both. **Exam-takeaway:** HIPAA on AWS = BAA + eligible services list.
+
+**Q47. Answer: D.** Model extraction (model theft). Many queries → reconstruct model behavior. **Exam-takeaway:** "querying to copy" → model extraction.
+
+**Q48. Answer: D.** Apply rate limiting, monitor query volume, consider watermarking. Defenses scale with attacker's query budget. **Exam-takeaway:** model extraction defense = rate limit + monitor + watermark.
+
+**Q49. Answer: D.** AWS Audit Manager. Aggregates evidence into framework-aligned packages. Snowball (B) is data transfer; Glue (C) is ETL; Direct Connect (A) is network. **Exam-takeaway:** evidence-aggregation for compliance frameworks → Audit Manager.
+
+**Q50. Answer: A.** SageMaker Model Registry. Version + approval workflow for trained models. **Exam-takeaway:** model versioning + approval gate → Model Registry.
+
+**Q51. Answer: C.** Bedrock Batch inference. ~50% off, async, ≤24h SLA. PartyRock (A) is a sandbox; Provisioned Throughput (B) is for steady high traffic, not cost reduction; SageMaker Spot (D) is training only. **Exam-takeaway:** 50% off offline workload → Bedrock Batch.
+
+**Q52. Answer: C.** Anthropic Claude (text + vision). Claude is multimodal. Polly (A) is TTS only; Glue (B) is ETL; SES (D) is email. **Exam-takeaway:** Claude vision = multimodal on Bedrock.
+
+**Q53. Answer: C.** An Amazon Nova family model that GENERATES short VIDEO from text prompts. Nova Reel = text-to-video. Not storage (A), not an IDE (B), not a SQL database (D). **Exam-takeaway:** Nova Reel = text-to-video.
+
+**Q54. Answer: C.** Cohere Rerank. Reranks the top-K retrieved chunks to a higher-quality top-N. Command (A) is text; Embed (B) is embeddings; "Chat" (D) is not a distinct Cohere product on Bedrock. **Exam-takeaway:** Cohere Rerank = improve RAG retrieval precision.
+
+**Q55. Answer: D.** Use a customer-managed KMS key (CMK) for the custom model and audit usage via CloudTrail. The strong-encryption + audit pattern. The other options (no encryption, root credentials, public S3) are anti-patterns. **Exam-takeaway:** sensitive custom Bedrock model → customer-managed KMS + CloudTrail.
+
+**Q56. Answer: A.** LLM-as-a-judge. One strong LLM grades another's outputs at scale. **Exam-takeaway:** Bedrock Model Evaluation has automatic, human, KB, and LLM-as-judge modes.
+
+**Q57. Answer: B.** Set persistent persona, tone, and policy rules invisible to the end user. The durable place for behavioral instructions. **Exam-takeaway:** system prompt = invisible persistent rules.
+
+**Q58. Answer: B.** Fine-tuning is generally cheaper than RAG for adding new facts each week. **FALSE** — RAG is far cheaper for adding new facts because you just re-index, no retraining required. A, C, D are all TRUE. **Exam-takeaway:** RAG is cheaper for fresh data; fine-tuning is more expensive but enforces behaviors.
+
+**Q59. Answer: A.** Retrieval-Augmented Generation. Chunk + embed + store in a vector DB = RAG's index phase. SageMaker Pipelines (B) is orchestration; Glue (C) is ETL; Backup (D) is data backup. **Exam-takeaway:** chunk → embed → vector store = RAG indexing.
+
+**Q60. Answer: B.** CloudTrail + Bedrock model invocation logging. CloudTrail captures API metadata; invocation logging captures content. Use both for full audit. **Exam-takeaway:** complete Bedrock audit = CloudTrail + invocation logging.
+
+**Q61. Answer: B.** Bedrock Guardrails, input/output filtering, system-prompt isolation, and least-privilege tool access. Defense in depth against prompt injection. **Exam-takeaway:** prompt injection defense = Guardrails + filtering + isolation + least privilege.
+
+**Q62. Answer: A.** Controllability. The Responsible AI pillar covering "ability to override and shut down." Veracity (B) is truthfulness; Profitability (C) isn't a pillar; Accuracy (D) is performance. **Exam-takeaway:** override/shutdown = Controllability pillar.
+
+**Q63. Answer: C.** A set of APIs / Lambda functions the agent can invoke. Action group = the tools an agent can call. **Exam-takeaway:** action group = agent's tool palette.
+
+**Q64. Answer: D.** SageMaker JumpStart. One-click pretrained FMs deployable to a SageMaker endpoint with full fine-tune control. PartyRock (A) is sandbox; Lex (B) is chatbot; Personalize (C) is recommendation. **Exam-takeaway:** VPC + full control + fine-tune → JumpStart.
+
+**Q65. Answer: D.** Computing exact payroll tax owed by formula. Deterministic math is the wrong job for probabilistic GenAI. **Exam-takeaway:** GenAI is the wrong tool for exact deterministic math.
+
+---
+
 ## 📊 Scoring
 
 | Score | Verdict |

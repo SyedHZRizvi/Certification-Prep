@@ -2,6 +2,13 @@
 
 > **Why this module matters:** A logistics network is only as good as the orders flowing through it. Get order management right and the warehouse sings. Get it wrong and you'll have perfect inventory levels — sitting on the wrong product, in the wrong DC, while customers cancel.
 
+> **Prerequisites for this module.** Before starting, you should be comfortable with:
+> - [Module 1](../Module-01-Logistics-Strategy-Network/Reading.md) network types — order management is the *software* layer atop the physical network
+> - [Module 2](../Module-02-Capacity-Demand-Logistics/Reading.md) forecasting and ABC velocity — drives ATP/CTP behavior
+> - General EDI / API concepts at a high level (you'll learn the specific 850/855/856/810 codes here)
+>
+> Cross-course: [CSCP Module 7 (Logistics, Distribution, Warehousing)](../../10-ASCM-CSCP/Module-07-Logistics-Distribution-Warehousing/Reading.md) covers an introductory view of order flow. [CPIM Module 4 (MPS/MRP)](../../11-ASCM-CPIM/Module-04-Master-Production-Scheduling-MRP/Reading.md) shows how ATP/CTP works *inside* manufacturing planning, which dovetails with the distribution view here.
+
 ---
 
 ## 🍕 A Story: The Espresso Order That Took Two Weeks
@@ -27,6 +34,8 @@ Order management is the **nervous system** of logistics. This module covers ever
 ---
 
 ## 🔄 The Order-to-Cash (OTC) Cycle
+
+> **Citation.** The OTC framework as a process-with-cash-as-endpoint is canonical in Christopher (2016) and the ASCM SCOR Digital Standard 13.0 (released 2017, current major version updated 2022, Council of Supply Chain Management Professionals / ASCM). EDI document codes (850/855/856/810/etc.) are standardized by the *Accredited Standards Committee X12* under ANSI; the global counterpart is *EDIFACT* under the UN/CEFACT. The "perfect order" multiplicative metric was originally proposed in Coyle, J. J., Bardi, E. J. & Langley, C. J., *The Management of Business Logistics* (Cengage / South-Western), refined in industry practice through CSCMP, and is now formally defined in the ASCM *Dictionary* (16th ed., 2022).
 
 The single most-tested concept in this module. **Memorize the 10 steps:**
 
@@ -275,6 +284,35 @@ Checks:
 
 ---
 
+## 📜 Case Study — Amazon's Last-Mile Build-Out (2014–2024)
+
+**Situation.** By 2014 Amazon's package volume had grown to ~3 million packages/day in the US. The two major US parcel integrators (UPS and FedEx) were charging ~$4–$8 per package on Amazon volume — a sum that, multiplied across the year, was eating massive margin. UPS and FedEx also had structural service ceilings: Sunday delivery was rare/expensive, and last-mile density in suburban America wasn't optimized for the e-commerce surge Amazon was generating. CEO Jeff Bezos famously concluded: "We need to control our own destiny in delivery."
+
+**Decision.** Amazon launched what became the largest last-mile build-out in logistics history. Key milestones:
+
+- **2014:** First "Amazon Logistics" pilots; Amazon Flex (gig drivers, 2015) launched in Seattle.
+- **2018:** **Delivery Service Partner (DSP) program** launched — Amazon would fund and equip independent small businesses to deliver Amazon packages exclusively. Branded Mercedes-Benz Sprinter vans rolled out. By 2024, the DSP program supported ~3,500 DSP companies and ~280,000 drivers.
+- **2019:** Amazon Air launched commercial aircraft operations from Cincinnati/Northern Kentucky Airport (CVG) — its own dedicated cargo hub.
+- **2019:** Amazon ordered **100,000 electric delivery vans from Rivian** (one of the largest single EV orders in history). First vans deployed in Los Angeles in 2021.
+- **2021–2024:** Massive sortation center build-out — by 2024, Amazon operated ~600 last-mile delivery stations in North America, more than UPS and FedEx combined for residential deliveries.
+- **2024 milestone:** Amazon Logistics delivered ~84% of Amazon packages itself in the US (up from ~10% in 2017), making Amazon the *largest US private parcel network* by package count, surpassing UPS and FedEx US Ground.
+
+**Outcome.** Amazon Logistics revenue (mostly internal transfer pricing + a small external "Buy with Prime" business) was estimated at ~$80B in 2024 — making Amazon Logistics, if a standalone company, the largest US logistics provider by revenue. Per-package cost dropped from ~$5+ (UPS/FedEx era) to an estimated ~$3.50 internal cost by 2024. The Rivian fleet hit ~20,000 vans deployed by 2024 with a stated goal of 100,000 by 2030. Critically, Amazon's network density (more drops per route) and proximity (more stations closer to suburban demand) enabled *same-day* delivery for ~50% of US Prime members by 2024 — a service product UPS and FedEx structurally cannot match without a similar build-out.
+
+**Lesson for the exam / for practitioners.** The Amazon case operationalizes three module concepts at once:
+1. **Last-mile cost dominance** — last mile is 28–53% of parcel cost; Amazon's vertical integration captures that economics internally.
+2. **Order sourcing and DOM** — Amazon's distributed order management system orchestrates across 600+ delivery stations and routes by *closest-to-customer + capacity-aware*, exactly the framework taught in this module.
+3. **Make-or-buy reversal** — Module 1's framework predicts that when logistics becomes the *differentiating* part of your value chain, you in-source. Amazon validated the prediction.
+
+The CLTD exam tests this pattern: in a scenario where logistics is the competitive weapon (Amazon, Tesla, Apple's iPhone supply chain), in-house wins. In a scenario where logistics is undifferentiated (a regional industrial distributor), 3PL/4PL outsourcing wins.
+
+**Discussion (Socratic).**
+- Q1: Amazon's last-mile build cost an estimated $50B+ in capex over 2014–2024. A smaller e-commerce player (Wayfair, Chewy, Etsy) cannot replicate this. What strategic responses are open to them, and which best mimics Amazon's economics without the capex?
+- Q2: Amazon Logistics is now offering "Buy with Prime" — letting Shopify merchants use Amazon's network. Is this a strategic move toward becoming a 4PL (orchestrator-for-others), or a defensive moat? Argue both reads.
+- Q3: UPS/FedEx have responded by raising rates on Amazon-style high-density e-com packages and steering capacity toward higher-margin B2B freight. Is that the right move, or a slow-motion abandonment of the residential delivery market?
+
+---
+
 ## ⚠️ Common Misconceptions
 
 | Misconception | Reality |
@@ -340,6 +378,25 @@ You now know:
 2. ✏️ [Quiz.md](./Quiz.md)
 3. 📋 [Cheat-Sheet.md](./Cheat-Sheet.md)
 4. ➡️ [Module 4: Inventory & Distribution](../Module-04-Inventory-Distribution/Reading.md)
+
+---
+
+## 🤔 Discussion (Socratic prompts)
+
+1. **OTIF chargebacks at Walmart.** Walmart imposes ~1–3% invoice chargebacks for OTIF misses below ~98%. Some suppliers absorb the chargebacks as a cost of doing business; others invest in TMS/visibility to hit the target. Build the financial frame: under what conditions does each strategy win?
+
+2. **ATP/CTP design choice.** A grocery distributor's OMS today only does ATP (current on-hand). Adding CTP would let them quote based on inbound truck arrivals. The IT cost is $2M. The Sales VP loves CTP because it can grow orders. The Ops VP fears it because over-promising creates fulfillment risk. How would you decide?
+
+3. **Picking strategy under SKU churn.** A 2026-era DTC apparel brand has high SKU churn (50% of SKUs change quarterly). Their current pick strategy is zone (legacy). Argue for switching to cluster, batch, or wave — and the trade-offs of each in this specific scenario.
+
+4. **Perfect-order theatre.** A logistics director reports 95% perfect order and gets a bonus. But the 95% is calculated only on shipped orders, excluding orders cancelled before ship (which are growing). Is that gaming, or legitimate scope-limiting? How would you fix the metric?
+
+5. **BOPIS vs ship-from-store.** A regional retailer (50 stores) can implement BOPIS (Buy Online Pick In Store) or ship-from-store. Both leverage store inventory as a fulfillment node. When is each the right choice? What does the demographic of the customer base imply for the choice?
+
+> **Where this leads.**
+> - Inside this course: Module 4 deepens the inventory side (DRP, MEIO, postponement) that ATP/CTP relies on; Module 5 covers the warehouse execution that fulfills the order; Module 6 picks up parcel carrier choice for the outbound leg.
+> - Cross-course: [CPIM Module 4 (MPS/MRP)](../../11-ASCM-CPIM/Module-04-Master-Production-Scheduling-MRP/Reading.md) covers ATP/CTP from the manufacturing side; [CSCP Module 4 (Supply Planning & S&OP)](../../10-ASCM-CSCP/Module-04-Supply-Planning-SOP/Reading.md) covers how S&OP feeds order-promising.
+> - Practice: Practice Exam 1 has ~16 questions from this module; Final Mock Exam has another 16.
 
 ---
 

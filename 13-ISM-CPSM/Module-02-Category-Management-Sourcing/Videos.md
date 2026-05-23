@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~55 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Kraljic+matrix+explained+procurement" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="dxIrf8Yi3bo" href="https://www.youtube.com/results?search_query=Kraljic+matrix+explained+procurement" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 12 min · Four quadrants in depth</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=spend+analysis+procurement+how+to" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="iapr2wEIDxg" href="https://www.youtube.com/results?search_query=spend+analysis+procurement+how+to" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 14 min · Pareto, taxonomies</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=category+management+procurement+strategy" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="3gc-wOasZfE" href="https://www.youtube.com/results?search_query=category+management+procurement+strategy" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 13 min · Category strategy template</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=RFI+vs+RFP+vs+RFQ+difference" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="WkyTuhnFZDQ" href="https://www.youtube.com/results?search_query=RFI+vs+RFP+vs+RFQ+difference" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -61,7 +61,7 @@
       <span class="vg-duration">⏱ 8 min · Decision tree</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=reverse+auction+procurement+how+to" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="0YG0gWioR8A" href="https://www.youtube.com/results?search_query=reverse+auction+procurement+how+to" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -75,7 +75,7 @@
 ## 📚 Recommended (~32 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=strategic+sourcing+7+step+process" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="2U4ork04hLI" href="https://www.youtube.com/results?search_query=strategic+sourcing+7+step+process" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 14 min · End-to-end walkthrough</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=supplier+evaluation+weighted+scoring+model" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="C3Y58HCmX3Y" href="https://www.youtube.com/results?search_query=supplier+evaluation+weighted+scoring+model" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -93,7 +93,7 @@
       <span class="vg-duration">⏱ 10 min · Build the scorecard</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=bullwhip+effect+supply+chain+explained" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="3dXCaRetzdw" href="https://www.youtube.com/results?search_query=bullwhip+effect+supply+chain+explained" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -107,7 +107,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=specification+types+performance+functional+procurement" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="ow4oOhsxuPk" href="https://www.youtube.com/results?search_query=specification+types+performance+functional+procurement" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 15 min · Performance vs. design</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=indirect+spend+management+procurement" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="qox4ZqAsSwI" href="https://www.youtube.com/results?search_query=indirect+spend+management+procurement" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

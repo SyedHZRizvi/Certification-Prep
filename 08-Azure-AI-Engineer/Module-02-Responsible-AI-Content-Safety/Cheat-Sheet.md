@@ -132,4 +132,45 @@ If you can answer all 5 in 60 seconds, you own Module 2. ✅
 
 ---
 
+## 🎯 Principle → Test Scenario Lookup
+
+| If the question says… | Principle violated |
+|---|---|
+| "Bot impersonates a human" | Transparency |
+| "Model rejects women at 2× the rate" | Fairness |
+| "Speech model fails on non-American English" | Inclusiveness |
+| "LLM regurgitates training PII" | Privacy & Security |
+| "Self-driving can't handle snow / unusual conditions" | Reliability & Safety |
+| "'The AI decided to deny the loan'" | Accountability |
+
+## 🧱 The 4 Mitigation Layers (Sarah Bird's framing, MS Build 2024)
+
+| # | Layer | Lever | Azure feature |
+|---|---|---|---|
+| 1 | Model | Choose safer base model; fine-tune | Azure OpenAI / Foundry model catalog |
+| 2 | Safety system | Filters + Shields + Groundedness | Azure AI Content Safety; built-in OpenAI filters |
+| 3 | Metaprompt + grounding | System prompt + RAG `in_scope=true` + citations | Foundry prompt flow; On Your Data |
+| 4 | User experience | UX cues, badges, "report" button, escape hatch | Application code + Adaptive Cards |
+
+## 📋 Regulatory Mapping (2024–2026)
+
+| Regulation | Year | Microsoft alignment |
+|---|---|---|
+| **Microsoft Responsible AI Standard v2** | June 2022 | The source standard |
+| **NIST AI RMF 1.0** | January 2023 | Microsoft maps RAI controls to NIST |
+| **EU AI Act (Reg. 2024/1689)** | June 2024 (force Aug 2024) | Risk-tier compliance staged through 2027 |
+| **NIST SP 800-218A — GenAI Secure Dev** | 2024 | Companion guidance |
+| **ISO/IEC 42001 (AI Management)** | December 2023 | Voluntary AI management certification |
+
+## 🏷️ Limited-Access Services To Memorize
+
+| Service | What's gated | Why |
+|---|---|---|
+| Face — Verify / Identify | 1-to-1, 1-to-N | Biometric privacy |
+| Custom Neural Voice | Train branded voice | Deepfake / impersonation risk |
+| Speaker Recognition | Voice-print auth | Biometric privacy |
+| Azure OpenAI Abuse-Monitoring Opt-Out | Disable 30-day prompt retention | Regulated workloads only |
+
+---
+
 ➡️ [Module 3: Computer Vision](../Module-03-Computer-Vision/Reading.md)

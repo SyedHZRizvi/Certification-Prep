@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~65 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+CloudFront+complete+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="cZ7PhGCCZDA" href="https://www.youtube.com/results?search_query=AWS+CloudFront+complete+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>☁️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 22 min · Origins, behaviors, OAC</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=CloudFront+vs+Global+Accelerator" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="shayltziZSI" href="https://www.youtube.com/results?search_query=CloudFront+vs+Global+Accelerator" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🚀</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 14 min · The big trap</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Route+53+routing+policies+demo" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="jXgIRPjXv3Y" href="https://www.youtube.com/results?search_query=Route+53+routing+policies+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🌍</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 18 min · Latency, failover, geo</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+WAF+Shield+CloudFront" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="pT0xvs3Dueg" href="https://www.youtube.com/results?search_query=AWS+WAF+Shield+CloudFront" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🛡️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~35 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Lambda+at+Edge+vs+CloudFront+Functions" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="owVVykBJ0RI" href="https://www.youtube.com/results?search_query=Lambda+at+Edge+vs+CloudFront+Functions" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>⚡</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 13 min · Decision tree</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=CloudFront+signed+URL+signed+cookie" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="JIW_pV3zau8" href="https://www.youtube.com/results?search_query=CloudFront+signed+URL+signed+cookie" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🔐</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 11 min · Private content</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=ElastiCache+caching+strategies" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="EgjM6CHob8o" href="https://www.youtube.com/results?search_query=ElastiCache+caching+strategies" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🔥</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Route+53+failover+health+check+demo" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="Kxpl0ICzQV0" href="https://www.youtube.com/results?search_query=Route+53+failover+health+check+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🩺</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 18 min · Active-passive DR</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=CloudFront+origin+access+control+OAC" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="GB_R9S6XJqs" href="https://www.youtube.com/results?search_query=CloudFront+origin+access+control+OAC" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🔒</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 11 min · Newer = better</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Global+Accelerator+gaming+demo" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="IjYk8lkNf9o" href="https://www.youtube.com/results?search_query=Global+Accelerator+gaming+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎮</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

@@ -7,7 +7,7 @@
 
 ## Questions
 
-### Q1. Which statement correctly describes the AI / ML / Deep Learning hierarchy?
+### Q1. Which statement correctly describes the AI / ML / Deep Learning hierarchy? *(Understand)*
 A. ML is a superset of AI
 B. AI is a subset of ML
 C. Deep Learning is a subset of Machine Learning, which is a subset of AI
@@ -15,7 +15,7 @@ D. Generative AI and Deep Learning are unrelated
 
 ---
 
-### Q2. A team has 50,000 emails, each already labeled "spam" or "not spam," and wants to build a classifier. Which type of ML applies?
+### Q2. A team has 50,000 emails, each already labeled "spam" or "not spam," and wants to build a classifier. Which type of ML applies? *(Apply)*
 A. Supervised learning
 B. Unsupervised learning
 C. Reinforcement learning
@@ -23,7 +23,7 @@ D. Generative AI
 
 ---
 
-### Q3. A retailer wants to group customers into segments without predefined categories. Which approach fits BEST?
+### Q3. A retailer wants to group customers into segments without predefined categories. Which approach fits BEST? *(Apply)*
 A. Linear regression
 B. Classification
 C. Clustering (unsupervised)
@@ -31,7 +31,7 @@ D. Reinforcement learning
 
 ---
 
-### Q4. AWS DeepRacer trains a 1/18-scale race car by trial, error, and reward signals. Which paradigm is this?
+### Q4. AWS DeepRacer trains a 1/18-scale race car by trial, error, and reward signals. Which paradigm is this? *(Understand)*
 A. Supervised learning
 B. Unsupervised learning
 C. Reinforcement learning
@@ -39,7 +39,7 @@ D. Self-supervised learning
 
 ---
 
-### Q5. A model achieves 98% accuracy on training data but only 62% on the test set. The MOST likely problem is:
+### Q5. A model achieves 98% accuracy on training data but only 62% on the test set. The MOST likely problem is: *(Analyze)*
 A. Underfitting
 B. Overfitting
 C. The test set is too small
@@ -47,7 +47,7 @@ D. Wrong loss function
 
 ---
 
-### Q6. Which is a HYPERPARAMETER (not a parameter)?
+### Q6. Which is a HYPERPARAMETER (not a parameter)? *(Remember)*
 A. The weights of a neural network
 B. The bias values inside a layer
 C. The learning rate you set before training
@@ -55,7 +55,7 @@ D. The output prediction value
 
 ---
 
-### Q7. "Inference" in ML means:
+### Q7. "Inference" in ML means: *(Remember)*
 A. Training the model
 B. Using a trained model to make predictions on new data
 C. Splitting data into train/validation/test
@@ -63,7 +63,7 @@ D. Tuning hyperparameters
 
 ---
 
-### Q8. Which problem is BEST solved by regression rather than classification?
+### Q8. Which problem is BEST solved by regression rather than classification? *(Apply)*
 A. Will this email arrive as spam? (yes/no)
 B. Which of these 5 product categories does this image belong to?
 C. What price will this house sell for next month?
@@ -71,7 +71,7 @@ D. Should we flag this transaction as fraud?
 
 ---
 
-### Q9. A bank's fraud-detection model is 99.5% accurate. Investigation finds it labels EVERY transaction "not fraud." What metric reveals the problem?
+### Q9. A bank's fraud-detection model is 99.5% accurate. Investigation finds it labels EVERY transaction "not fraud." What metric reveals the problem? *(Analyze)*
 A. Accuracy
 B. Recall on the positive (fraud) class
 C. Mean Squared Error
@@ -79,7 +79,7 @@ D. R-squared
 
 ---
 
-### Q10. Which is NOT a typical split of a dataset for training?
+### Q10. Which is NOT a typical split of a dataset for training? *(Remember)*
 A. Training set
 B. Validation set
 C. Test set
@@ -87,7 +87,7 @@ D. Inference set
 
 ---
 
-### Q11. One full pass through the entire training dataset is called:
+### Q11. One full pass through the entire training dataset is called: *(Remember)*
 A. A batch
 B. An epoch
 C. An iteration
@@ -95,7 +95,7 @@ D. A gradient
 
 ---
 
-### Q12. Which algorithm is typically the strongest choice on a tabular dataset and is a SageMaker built-in?
+### Q12. Which algorithm is typically the strongest choice on a tabular dataset and is a SageMaker built-in? *(Apply)*
 A. K-Means
 B. PCA
 C. XGBoost
@@ -103,7 +103,7 @@ D. Stable Diffusion
 
 ---
 
-### Q13. "Generative AI" is BEST described as:
+### Q13. "Generative AI" is BEST described as: *(Understand)*
 A. A type of supervised learning that classifies images
 B. Any AI system that uses rules
 C. A subset of deep learning that creates new content (text, images, audio, code)
@@ -111,7 +111,7 @@ D. A separate field from machine learning
 
 ---
 
-### Q14. A model performs poorly on BOTH training AND test data. The most likely issue is:
+### Q14. A model performs poorly on BOTH training AND test data. The most likely issue is: *(Analyze)*
 A. Overfitting
 B. Underfitting
 C. Data leakage
@@ -119,7 +119,7 @@ D. Too many features
 
 ---
 
-### Q15. Which of the following is an UNSUPERVISED learning task?
+### Q15. Which of the following is an UNSUPERVISED learning task? *(Apply)*
 A. Predicting house prices from past sales
 B. Classifying tumors as malignant or benign from labeled scans
 C. Detecting anomalies in network traffic with no labeled examples
@@ -127,7 +127,7 @@ D. Predicting which customer will churn next month
 
 ---
 
-### Q16. Which technique is a common defense against OVERFITTING?
+### Q16. Which technique is a common defense against OVERFITTING? *(Understand)*
 A. Increase the model size
 B. Train for many more epochs
 C. Apply regularization (e.g. L2, dropout)
@@ -135,7 +135,7 @@ D. Remove the validation set
 
 ---
 
-### Q17. A "label" in supervised learning is:
+### Q17. A "label" in supervised learning is: *(Remember)*
 A. The name of a column
 B. The known correct answer the model is trying to predict
 C. The model's prediction
@@ -143,7 +143,7 @@ D. The training algorithm
 
 ---
 
-### Q18. RLHF (Reinforcement Learning from Human Feedback) is MOST commonly used to:
+### Q18. RLHF (Reinforcement Learning from Human Feedback) is MOST commonly used to: *(Understand)*
 A. Train a model on tabular sales data
 B. Cluster customers
 C. Align a large language model's outputs to human preferences
@@ -151,7 +151,7 @@ D. Compress images
 
 ---
 
-### Q19. Which is a CORRECT description of bias and variance?
+### Q19. Which is a CORRECT description of bias and variance? *(Understand)*
 A. High bias = the model overfits the data
 B. High variance = the model underfits the data
 C. High bias = the model is too simple (underfits); high variance = the model overfits
@@ -159,7 +159,7 @@ D. Bias and variance are unrelated to model performance
 
 ---
 
-### Q20. A hospital has 10 years of unlabeled MRI scans and wants to train a system to flag unusual images automatically. The team has no time to label thousands of scans. The BEST initial approach is:
+### Q20. A hospital has 10 years of unlabeled MRI scans and wants to train a system to flag unusual images automatically. The team has no time to label thousands of scans. The BEST initial approach is: *(Apply)*
 A. Supervised classification
 B. Unsupervised anomaly detection
 C. Reinforcement learning
@@ -167,7 +167,7 @@ D. Generative AI text summarization
 
 ---
 
-### Q21. Which scenario is the WORST fit for a machine learning solution?
+### Q21. Which scenario is the WORST fit for a machine learning solution? *(Evaluate)*
 A. Recommending movies to users
 B. Forecasting next month's electricity demand
 C. Calculating an employee's tax withholding from a fixed formula
@@ -175,7 +175,7 @@ D. Detecting credit card fraud
 
 ---
 
-### Q22. A learning rate that is TOO HIGH typically causes:
+### Q22. A learning rate that is TOO HIGH typically causes: *(Understand)*
 A. Slow but steady convergence
 B. The model to oscillate or diverge instead of converging
 C. Perfect training every time
@@ -183,7 +183,7 @@ D. Lower memory usage
 
 ---
 
-### Q23. The Sprint of an ML lifecycle that uses a trained model to score new live data is called:
+### Q23. The stage of an ML lifecycle that uses a trained model to score new live data is called: *(Understand)*
 A. Training
 B. Inference
 C. Validation
@@ -191,7 +191,7 @@ D. Backpropagation
 
 ---
 
-### Q24. Which statement is TRUE about deep learning vs classical ML?
+### Q24. Which statement is TRUE about deep learning vs classical ML? *(Evaluate)*
 A. Deep learning is always the better choice
 B. Deep learning typically wins on images, audio, and language; classical ML (e.g. XGBoost) often wins on tabular data
 C. Deep learning cannot be used for generative AI

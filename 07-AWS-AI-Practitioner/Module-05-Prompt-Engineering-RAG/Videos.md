@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~75 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=DeepLearningAI+ChatGPT+prompt+engineering+for+developers" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=DeepLearningAI+ChatGPT+prompt+engineering+for+developers" target="_blank" rel="noopener" data-video-id="tRvcAdqsJWo">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 25 min (highlight reel) · Zero/few-shot, CoT, structure</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Knowledge+Bases+for+Amazon+Bedrock+demo" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Knowledge+Bases+for+Amazon+Bedrock+demo" target="_blank" rel="noopener" data-video-id="NU3RGTPUMyI">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 18 min · The exam's reference RAG architecture</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Bedrock+Agents+walkthrough+AWS" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Bedrock+Agents+walkthrough+AWS" target="_blank" rel="noopener" data-video-id="UcehCSSOMQA">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 20 min · Action groups, ReAct loop, KBs</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=prompt+injection+jailbreaking+LLM+security+OWASP" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=prompt+injection+jailbreaking+LLM+security+OWASP" target="_blank" rel="noopener" data-video-id="jrHRe9lSqqA">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~35 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=RAG+explained+retrieval+augmented+generation+IBM" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=RAG+explained+retrieval+augmented+generation+IBM" target="_blank" rel="noopener" data-video-id="T-D1OfcDW1M">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 8 min · Best 8-minute RAG primer</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Chain+of+Thought+prompting+explained" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Chain+of+Thought+prompting+explained" target="_blank" rel="noopener" data-video-id="AFE6x81AP4k">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 10 min · Why "think step-by-step" works</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=hybrid+search+vector+keyword+OpenSearch" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=hybrid+search+vector+keyword+OpenSearch" target="_blank" rel="noopener" data-video-id="emKkoeFjH_M">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Aurora+pgvector+RAG+demo" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Aurora+pgvector+RAG+demo" target="_blank" rel="noopener" data-video-id="e9SHaO9RNzk">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 22 min · Vector search inside Postgres</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=GraphRAG+knowledge+graph+RAG+Neptune" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=GraphRAG+knowledge+graph+RAG+Neptune" target="_blank" rel="noopener" data-video-id="HJAGy-PA2fY">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 30 min · Multi-hop reasoning over graphs</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=ReAct+prompting+agents+LangChain" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=ReAct+prompting+agents+LangChain" target="_blank" rel="noopener" data-video-id="EcB0PiNmbFo">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

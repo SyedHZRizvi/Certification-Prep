@@ -2,11 +2,13 @@
 
 > **Instructions:** 24 questions, ~30 min. Target 20/24.
 
+> **Bloom's distribution.** Remember 5 (21%) · Understand 6 (25%) · Apply 8 (33%) · Analyze/Evaluate 4 (17%) · Create 1 (4%).
+
 ---
 
 ## Questions
 
-### Q1. The cheapest DR strategy on AWS, with RTO measured in HOURS:
+### Q1. The cheapest DR strategy on AWS, with RTO measured in HOURS: *(Apply)*
 A. Backup & Restore
 B. Pilot Light
 C. Warm Standby
@@ -14,7 +16,7 @@ D. Multi-Site Active-Active
 
 ---
 
-### Q2. A workload requires RPO and RTO of seconds. The BEST DR strategy is:
+### Q2. A workload requires RPO and RTO of seconds. The BEST DR strategy is: *(Apply)*
 A. Backup & Restore
 B. Pilot Light
 C. Warm Standby
@@ -22,7 +24,7 @@ D. Multi-Site Active-Active
 
 ---
 
-### Q3. In Pilot Light DR, what's typically running in the standby region?
+### Q3. In Pilot Light DR, what's typically running in the standby region? *(Understand)*
 A. Full production-sized stack
 B. Nothing
 C. Core data + DB replicating; application compute is OFF or minimal
@@ -30,7 +32,7 @@ D. Same as production with traffic
 
 ---
 
-### Q4. To migrate an on-prem Oracle database to Aurora PostgreSQL with minimal downtime, use:
+### Q4. To migrate an on-prem Oracle database to Aurora PostgreSQL with minimal downtime, use: *(Apply)*
 A. DMS + Schema Conversion Tool (SCT)
 B. Snowball only
 C. AWS Backup
@@ -38,7 +40,7 @@ D. Storage Gateway
 
 ---
 
-### Q5. To lift-and-shift hundreds of VMware VMs to EC2:
+### Q5. To lift-and-shift hundreds of VMware VMs to EC2: *(Apply)*
 A. AWS Application Migration Service (MGN)
 B. AWS Backup
 C. Snowball Edge
@@ -46,7 +48,7 @@ D. CloudFront
 
 ---
 
-### Q6. 500 TB of data to move to AWS. The on-prem internet link is 100 Mbps. The BEST option is:
+### Q6. 500 TB of data to move to AWS. The on-prem internet link is 100 Mbps. The BEST option is: *(Analyze)*
 A. DataSync over the internet (will take weeks)
 B. Snowball Edge (ship physical device)
 C. Direct Connect (months to provision)
@@ -54,7 +56,7 @@ D. SFTP
 
 ---
 
-### Q7. To replace a physical tape backup library while keeping the existing backup software:
+### Q7. To replace a physical tape backup library while keeping the existing backup software: *(Apply)*
 A. Storage Gateway — Tape Gateway (VTL)
 B. AWS Backup
 C. DataSync
@@ -62,7 +64,7 @@ D. Glacier directly
 
 ---
 
-### Q8. To sync 10 TB of files daily from on-prem NFS to S3 over a network connection:
+### Q8. To sync 10 TB of files daily from on-prem NFS to S3 over a network connection: *(Apply)*
 A. AWS DataSync
 B. Snowball Edge
 C. Storage Gateway Volume Gateway
@@ -70,7 +72,7 @@ D. Site-to-Site VPN alone
 
 ---
 
-### Q9. To run AWS services (EC2, EBS, S3) inside your own data center, managed by AWS:
+### Q9. To run AWS services (EC2, EBS, S3) inside your own data center, managed by AWS: *(Remember)*
 A. Local Zone
 B. Wavelength
 C. Outposts
@@ -78,7 +80,7 @@ D. Direct Connect
 
 ---
 
-### Q10. Aurora Global Database supports:
+### Q10. Aurora Global Database supports: *(Remember)*
 A. <1 second cross-region replication and fast failover
 B. Only same-region replicas
 C. Cross-region snapshots only
@@ -86,7 +88,7 @@ D. Manual failover only
 
 ---
 
-### Q11. To centralize backups across EBS, RDS, EFS, DynamoDB, FSx with a single policy:
+### Q11. To centralize backups across EBS, RDS, EFS, DynamoDB, FSx with a single policy: *(Apply)*
 A. AWS Backup
 B. CloudWatch
 C. Snowball
@@ -94,7 +96,7 @@ D. DMS
 
 ---
 
-### Q12. Storage Gateway Volume Gateway in CACHED mode:
+### Q12. Storage Gateway Volume Gateway in CACHED mode: *(Understand)*
 A. Stores primary data on-prem with EBS snapshots in S3
 B. Stores primary data in S3 with on-prem caching of frequently accessed data
 C. Same as Tape Gateway
@@ -102,7 +104,7 @@ D. Is for SMB file shares
 
 ---
 
-### Q13. To inventory on-prem servers and their dependencies before migrating:
+### Q13. To inventory on-prem servers and their dependencies before migrating: *(Apply)*
 A. AWS Application Discovery Service
 B. CloudTrail
 C. Inspector
@@ -110,7 +112,7 @@ D. Macie
 
 ---
 
-### Q14. The Warm Standby pattern means:
+### Q14. The Warm Standby pattern means: *(Understand)*
 A. Full prod-size stack running in standby
 B. A scaled-DOWN but functional stack always running in standby
 C. Nothing running
@@ -118,7 +120,7 @@ D. Only S3 backups
 
 ---
 
-### Q15. To migrate an application running on Linux VMs (not refactoring) to AWS with minimal downtime:
+### Q15. To migrate an application running on Linux VMs (not refactoring) to AWS with minimal downtime: *(Apply)*
 A. Application Migration Service (MGN) with block-level replication
 B. Database Migration Service
 C. Rewrite for Lambda
@@ -126,7 +128,7 @@ D. Storage Gateway
 
 ---
 
-### Q16. The Snowball Edge Compute Optimized model is BEST when:
+### Q16. The Snowball Edge Compute Optimized model is BEST when: *(Understand)*
 A. You also need to run local compute/Lambda/EC2 at the edge during transfer
 B. You only need cold storage shipping
 C. Network is fast
@@ -134,7 +136,7 @@ D. Data is tiny
 
 ---
 
-### Q17. To bridge an on-prem app to AWS via an iSCSI interface backed by S3:
+### Q17. To bridge an on-prem app to AWS via an iSCSI interface backed by S3: *(Remember)*
 A. Volume Gateway
 B. File Gateway
 C. Tape Gateway
@@ -142,7 +144,7 @@ D. DataSync
 
 ---
 
-### Q18. The single most cost-effective DR option for a non-critical workload (rebuild on disaster, no live infra):
+### Q18. The single most cost-effective DR option for a non-critical workload (rebuild on disaster, no live infra): *(Evaluate)*
 A. Backup & Restore
 B. Pilot Light
 C. Warm Standby
@@ -150,7 +152,7 @@ D. Multi-Site Active-Active
 
 ---
 
-### Q19. To get cross-region, multi-active writes for a globally distributed NoSQL app with single-digit ms reads:
+### Q19. To get cross-region, multi-active writes for a globally distributed NoSQL app with single-digit ms reads: *(Create)*
 A. DynamoDB Global Tables
 B. RDS Read Replicas
 C. Aurora Multi-AZ
@@ -158,7 +160,7 @@ D. Single-region DynamoDB
 
 ---
 
-### Q20. Application Migration Service replication uses:
+### Q20. Application Migration Service replication uses: *(Understand)*
 A. Block-level continuous replication to AWS until cutover
 B. Application-level export/import
 C. Direct database dump
@@ -166,7 +168,7 @@ D. Manual snapshot copy
 
 ---
 
-### Q21. AWS Local Zones are BEST for:
+### Q21. AWS Local Zones are BEST for: *(Remember)*
 A. Sub-10ms latency to users in major metros (e.g., LA, Boston) outside main regions
 B. On-prem server racks
 C. Tape backup
@@ -174,7 +176,7 @@ D. 5G edge
 
 ---
 
-### Q22. To copy backups to a separate AWS account for ransomware protection:
+### Q22. To copy backups to a separate AWS account for ransomware protection: *(Analyze)*
 A. AWS Backup cross-account vault copy
 B. Snowball
 C. DataSync
@@ -182,7 +184,7 @@ D. S3 ACL
 
 ---
 
-### Q23. Direct Connect Gateway:
+### Q23. Direct Connect Gateway: *(Remember)*
 A. Connects one DX connection to multiple VPCs across multiple regions
 B. Provides DDoS protection
 C. Is an IGW
@@ -190,7 +192,7 @@ D. Replaces a NAT
 
 ---
 
-### Q24. A DR test should occur:
+### Q24. A DR test should occur: *(Evaluate)*
 A. Never
 B. Once during initial design
 C. Regularly (Game Days) so failover actually works when needed

@@ -7,151 +7,151 @@
 
 ## Questions
 
-### Q1. The capacity-planning technique aligned with the MPS layer is:
+### Q1. The capacity-planning technique aligned with the MPS layer is: *(Remember)*
 A. Resource Planning (RRP)
 B. Rough-Cut Capacity Planning (RCCP)
 C. Capacity Requirements Planning (CRP)
 D. Input/Output Control
 
-### Q2. CRP supports which planning layer?
+### Q2. CRP supports which planning layer? *(Remember)*
 A. S&OP
 B. MPS
 C. MRP
 D. PAC
 
-### Q3. Input/Output Control is associated with:
+### Q3. Input/Output Control is associated with: *(Remember)*
 A. S&OP
 B. MPS
 C. MRP
 D. PAC (shop floor)
 
-### Q4. Long-range strategic capacity decisions (new plants, major equipment) belong to:
+### Q4. Long-range strategic capacity decisions (new plants, major equipment) belong to: *(Understand)*
 A. RRP
 B. RCCP
 C. CRP
 D. I/O
 
-### Q5. Theoretical maximum output under ideal conditions is:
+### Q5. Theoretical maximum output under ideal conditions is: *(Remember)*
 A. Effective capacity
 B. Design capacity
 C. Demonstrated capacity
 D. Rated capacity
 
-### Q6. Effective capacity reflects:
+### Q6. Effective capacity reflects: *(Understand)*
 A. Idealized maximum
 B. Realistic max given mix, scheduling, maintenance
 C. Actual recent output
 D. Effective × utilization × efficiency
 
-### Q7. Demonstrated (actual) capacity is:
+### Q7. Demonstrated (actual) capacity is: *(Understand)*
 A. The theoretical maximum
 B. What the plant has actually produced in recent history
 C. Effective × utilization
 D. Always 100%
 
-### Q8. Rated capacity formula:
+### Q8. Rated capacity formula: *(Remember)*
 A. Design × shifts
 B. Effective × utilization × efficiency
 C. Design − downtime
 D. Demonstrated × headcount
 
-### Q9. A work center has 4 machines × 8 hr × 2 shifts × 5 days = 320 hr theoretical. Utilization = 0.85, efficiency = 0.90. Rated capacity is:
+### Q9. A work center has 4 machines × 8 hr × 2 shifts × 5 days = 320 hr theoretical. Utilization = 0.85, efficiency = 0.90. Rated capacity is: *(Apply)*
 A. 240.0 hr
 B. 244.8 hr
 C. 280.0 hr
 D. 320.0 hr
 
-### Q10. Utilization measures:
+### Q10. Utilization measures: *(Understand)*
 A. Hours used ÷ Hours available
 B. Standard hours earned ÷ Hours worked
 C. Output ÷ Demand
 D. Output ÷ Design capacity
 
-### Q11. Efficiency measures:
+### Q11. Efficiency measures: *(Understand)*
 A. Hours used ÷ Hours available
 B. Standard hours earned ÷ Actual hours worked
 C. Throughput ÷ Inventory
 D. Demand ÷ Capacity
 
-### Q12. The Lead capacity strategy:
+### Q12. The Lead capacity strategy: *(Remember)*
 A. Adds capacity AFTER demand exceeds it
 B. Adds capacity BEFORE demand arrives
 C. Matches capacity to demand incrementally
 D. Eliminates capacity changes
 
-### Q13. A startup with highly uncertain growth in a regulated market should probably:
+### Q13. A startup with highly uncertain growth in a regulated market should probably: *(Apply)*
 A. Use Lag strategy aggressively
 B. Use Match strategy with small adds
 C. Use Lead strategy to never miss demand
 D. Outsource everything
 
-### Q14. The 5 Focusing Steps of TOC begin with:
+### Q14. The 5 Focusing Steps of TOC begin with: *(Remember)*
 A. Elevate
 B. Subordinate
 C. Identify the constraint
 D. Exploit
 
-### Q15. After ELEVATING the constraint, the next step in TOC is:
+### Q15. After ELEVATING the constraint, the next step in TOC is: *(Understand)*
 A. Stop
 B. Repeat from Step 1
 C. Increase utilization on non-bottlenecks
 D. Hire more workers
 
-### Q16. In Drum-Buffer-Rope, the *Drum* is:
+### Q16. In Drum-Buffer-Rope, the *Drum* is: *(Remember)*
 A. A safety stock
 B. The bottleneck (constraint), whose pace sets the plant's rhythm
 C. The S&OP cycle
 D. The shop floor supervisor
 
-### Q17. In DBR, the *Buffer* is:
+### Q17. In DBR, the *Buffer* is: *(Understand)*
 A. Inventory placed BEFORE the bottleneck to protect it from starvation
 B. The shop floor planning system
 C. The final inspection station
 D. The CEO's reserved capacity
 
-### Q18. The TOC definition of *Throughput* is:
+### Q18. The TOC definition of *Throughput* is: *(Remember)*
 A. Units shipped per hour
 B. Sales revenue minus raw-material (truly variable) costs
 C. Standard hours produced
 D. Direct labor productivity
 
-### Q19. An hour saved at a non-bottleneck is:
+### Q19. An hour saved at a non-bottleneck is: *(Understand)*
 A. A direct gain in throughput
 B. A mirage — does not increase system throughput
 C. Worth more than an hour at the bottleneck
 D. Only counted if recorded by accounting
 
-### Q20. A plant adds a 2nd shift on a non-bottleneck work center. Throughput stays flat. The MOST LIKELY reason:
+### Q20. A plant adds a 2nd shift on a non-bottleneck work center. Throughput stays flat. The MOST LIKELY reason: *(Analyze)*
 A. Workers are inefficient
 B. The bottleneck was elsewhere; adding capacity to a non-bottleneck doesn't help throughput
 C. Inventory was too low
 D. Customer demand decreased
 
-### Q21. A required-capacity calculation for one item: 500 units × 0.4 standard hours = ?
+### Q21. A required-capacity calculation for one item: 500 units × 0.4 standard hours = ? *(Apply)*
 A. 100 hr
 B. 200 hr
 C. 500 hr
 D. 1,250 hr
 
-### Q22. RCCP typically uses:
+### Q22. RCCP typically uses: *(Remember)*
 A. Full routings of every component
 B. A Bill of Resources covering only critical work centers
 C. The General Ledger
 D. Forecast data only
 
-### Q23. Compared with CRP, RCCP is:
+### Q23. Compared with CRP, RCCP is: *(Analyze)*
 A. More detailed but slower to compute
 B. Less detailed and used at the MPS layer
 C. Identical
 D. Only used in ETO
 
-### Q24. Activating a non-bottleneck work center to 100%:
+### Q24. Activating a non-bottleneck work center to 100%: *(Evaluate)*
 A. Always increases throughput
 B. Usually just creates excess WIP inventory
 C. Reduces the bottleneck's queue
 D. Is required by TOC
 
-### Q25. When required capacity exceeds available, options include all EXCEPT:
+### Q25. When required capacity exceeds available, options include all EXCEPT: *(Apply)*
 A. Overtime
 B. Outsourcing
 C. Adjusting the MPS later

@@ -2,6 +2,13 @@
 
 > **Why this module matters:** The AIF-C01 doesn't ask you to *write* training code, but it absolutely asks "which SageMaker tool fits this stage of the ML lifecycle?" Get the stages right and the service mapping is easy. Get them wrong and you'll lose 4–6 marks in a hurry.
 
+> **Prerequisites for this module.** Before starting, you should be comfortable with:
+> - [Module 1: AI/ML Fundamentals](../Module-01-AI-ML-Fundamentals/Reading.md) — supervised vs unsupervised, training vs inference, overfitting
+> - Basic AWS service-naming conventions (S3 buckets, IAM roles, Region selection)
+> - Comfort with the idea of an "API endpoint" and "managed service"
+>
+> If [`03-AWS-Cloud-Practitioner`](../../03-AWS-Cloud-Practitioner/README.md) Module 5 (AWS AI/ML services overview) is fresh, you can move faster through the AI Services menu at the end. If you've never seen IAM roles in action, also skim [`04-AWS-Solutions-Architect-Associate/Module-02-Compute`](../../04-AWS-Solutions-Architect-Associate/) for context.
+
 ---
 
 ## 🍕 A Story: Building Riya's Cappuccino Predictor — End to End
@@ -250,6 +257,36 @@ This is a *very* common trap on the AIF-C01.
 
 ---
 
+## 📊 Case Study — Pinterest's MLOps on Amazon SageMaker (2020–2024)
+
+**Situation.** Pinterest's entire business is recommendation: serving the right pin to the right user out of a catalog of ~5 billion pins, ~500 million monthly active users (2024 IR filings), and ~5 billion impressions per day. Pre-2020, Pinterest's ML platform was a sprawl of bespoke Python and Spark pipelines. Each team trained its own models on its own infrastructure; reproducibility was poor, drift detection ad-hoc, and onboarding new ML engineers took weeks. Around 50+ production models powered Home Feed, related-pin, search, shopping, and ads — and the team forecasted the next two years would need that to triple. The CTO's mandate (per the 2021 Pinterest Engineering blog series): "consolidate to one ML platform; reduce time-to-production from weeks to days."
+
+**Decision.** Starting in 2020 and accelerating through 2022, Pinterest standardized on **Amazon SageMaker** as the unified ML platform, while continuing to run inference at the edge on its own Kubernetes infrastructure. The architecture, as described in AWS and Pinterest joint blog posts (2021–2023) and Pinterest's engineering channel:
+- **SageMaker Training Jobs** for distributed training across hundreds of GPU instances, using Spot pricing for ~70% cost reduction on non-time-sensitive jobs
+- **SageMaker Processing Jobs** for feature engineering at petabyte scale
+- **SageMaker Feature Store** (rolled out in 2022) as the central feature catalog — solving the train/serve skew that had bitten the team multiple times
+- **SageMaker Experiments + Model Registry** to track every training run and gate models behind a manual-approval step before promotion
+- **SageMaker Pipelines** for the end-to-end orchestration; CI/CD ran on top
+- Custom inference *outside* SageMaker (Pinterest's own systems) for latency reasons — a deliberate hybrid choice
+
+**Outcome.** Per Pinterest engineering blog (2022) and the AWS re:Invent 2022 talk "How Pinterest scaled ML on SageMaker":
+- Time-to-production for a new model dropped from **3+ weeks to 3–5 days** for typical recommendation experiments
+- The number of production ML models grew from ~50 (2020) to **300+** (2023) without proportionally increasing platform headcount
+- Training-compute costs fell **~60%** through Spot-instance adoption and right-sized instance recommendations
+- A 2023 outage post-mortem credited SageMaker Model Registry's approval workflow with catching a regression that would have shipped if the team's older "git-push-and-pray" pipeline had still been in use
+
+**Lesson for the exam / for practitioners.** Pinterest is the canonical "managed-platform-beats-bespoke" reference for SageMaker. Three AIF-C01 talking points:
+1. **The right answer is rarely "build it yourself."** Pinterest is famously engineering-rich. Even *they* chose to use the managed platform for the undifferentiated heavy lifting (training infra, experiment tracking, model registry) and only customized where they had real edge cases (inference latency). The exam pattern: when a scenario describes "we want full control of every detail," that's often wrong — managed services usually win on TCO. When a scenario describes "we need millisecond inference at extreme scale," that's the rare case where roll-your-own may be justified.
+2. **The Feature Store is the most-underused SageMaker feature.** Pinterest's train/serve skew bugs (where a feature computed offline at training time differed subtly from the same feature computed online at inference time) were among the most-painful production incidents. Feature Store's online + offline architecture (single feature definition, two access patterns) is the cure. The exam often asks "what prevents train/serve skew?" — the answer is **Feature Store**.
+3. **MLOps maturity = Model Registry + Pipelines + Model Monitor.** The "MLOps" buzzword on the exam means *these three together*: versioned models with approval workflow (Registry), repeatable CI/CD-style execution (Pipelines), and drift detection in production (Model Monitor). Pinterest's outcome — 300 models, 5-day time-to-production, 60% cost reduction — is the kind of payoff the exam expects you to associate with this combo.
+
+**Discussion (Socratic).**
+- Q1: Pinterest deliberately kept *inference* outside SageMaker for latency reasons but consolidated *training* inside it. Build the strongest argument for each side of this hybrid choice. At what scale (latency budget, request volume, dollar value per ms) does it stop making sense to manage your own inference, and at what scale is the latency penalty of SageMaker Real-time endpoints worth the operational savings?
+- Q2: A competitor (say, a smaller image-platform startup with 20 ML engineers, not 200) wants to copy Pinterest's playbook. Which three SageMaker tools should they adopt first, and which three should they *skip* until later? Defend a sequencing that prioritizes ROI over feature completeness.
+- Q3: Pinterest used Spot Instances for ~70% of training jobs. Spot can be reclaimed with 2-minute notice. What kind of training workloads are safe for Spot, what kind are not — and how would you design a Pipeline that *automatically* falls back from Spot to On-Demand if a job has been preempted three times? (Hint: SageMaker Managed Spot Training has built-in checkpointing.)
+
+---
+
 ## ✅ Module 2 Summary
 
 You now know:
@@ -265,6 +302,23 @@ You now know:
 2. ✏️ Take [`Quiz.md`](./Quiz.md) — aim for 20/24
 3. 📋 Review [`Cheat-Sheet.md`](./Cheat-Sheet.md)
 4. ➡️ Move to [Module 3: Generative AI Fundamentals](../Module-03-Generative-AI-Fundamentals/Reading.md)
+
+---
+
+> **Where this leads.**
+> - Inside this course: Module 4 contrasts SageMaker (general ML platform) with Amazon Bedrock (managed-FM API); Module 6 returns to SageMaker for *fine-tuning* foundation models; Module 7 returns to SageMaker Clarify for bias detection and to Model Monitor for fairness drift; Module 8 returns to SageMaker for IAM execution roles and VPC mode.
+> - Cross-course: `08-Azure-AI-Engineer` covers Azure Machine Learning (the SageMaker equivalent); `04-AWS-Solutions-Architect-Associate` Module 7 (storage) deepens the S3 + KMS integration patterns under SageMaker training data.
+> - Practice: Practice Exam 1 has 10+ SageMaker questions; the Final Mock Exam revisits with multi-service scenarios.
+
+---
+
+## 💬 Discussion — Socratic prompts
+
+1. **Canvas vs Autopilot vs JumpStart — strategic positioning.** A pharma company has three internal teams: data scientists, business analysts, and platform engineers. Each wants "an ML capability." Assign one of the three tools (Canvas / Autopilot / JumpStart) to each team and defend why — including the *political* trade-off (data scientists may feel demoted by Canvas; business analysts may feel out-skilled by Autopilot). What's the rollout sequence?
+2. **Batch transform vs Real-time vs Async — the same model, three deployments.** Imagine you've trained a single image-classification model. Sketch three production scenarios where the same model would be best served by Real-time, Batch Transform, and Async respectively. For each, name a concrete payload size, latency budget, and cost rationale. This is the structure of about 1 in 5 questions in Domain 1/2.
+3. **The "use Amazon Comprehend or fine-tune in SageMaker?" debate.** Your team needs sentiment analysis on 50 million customer reviews per month. Comprehend's per-unit cost is moderate but predictable; a fine-tuned in-house model might be 70% cheaper at this volume but adds engineering and maintenance. At what monthly volume does the math flip, and how does the answer change if accuracy requirements are stricter than Comprehend's published benchmarks? Build the TCO comparison framework you'd present to a CFO.
+4. **Ground Truth and the labeling-quality dilemma.** A medical-imaging startup needs to label 500,000 X-rays for tumor presence. Public Mechanical Turk is the cheapest path but lacks HIPAA eligibility and clinical expertise. A vendor workforce is HIPAA-eligible but 5× the cost. A private workforce (radiologists on staff) is 20× the cost but produces gold-standard labels. Design a *hybrid* strategy that uses each appropriately. How does Ground Truth's active-learning feature change the math?
+5. **Model Monitor's four drift types in practice.** For each of: (a) a credit-approval model, (b) a YouTube-thumbnail click-through-rate model, (c) a manufacturing-defect computer-vision model — rank the four drift types (data quality, model quality, bias, feature attribution) by which is most likely to fire first in production, and why. Then propose the response runbook for each.
 
 ---
 

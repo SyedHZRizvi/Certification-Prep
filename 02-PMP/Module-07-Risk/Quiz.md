@@ -188,3 +188,75 @@ EMV = Probability × Impact = 0.25 × -$200K = -$50K. Negative impact (loss) yie
 The Risk Register is a living document. New risks emerge; existing risks change probability/impact; closed risks need archiving. Monitor Risks process explicitly drives these updates.
 
 ➡️ [Cheat Sheet](./Cheat-Sheet.md) → [Module 8](../Module-08-Quality/Reading.md)
+
+---
+
+## Bloom's-taxonomy tags for the questions above
+
+| Q | Bloom level | Why this level |
+|---|---|---|
+| Q1 | Remember | Identify Transfer strategy. |
+| Q2 | Remember | Identify Avoid strategy. |
+| Q3 | Understand | Distinguish risk from issue. |
+| Q4 | Remember | Recall that risks include opportunities. |
+| Q5 | Remember | Recall EMV formula. |
+| Q6 | Apply | Apply EMV formula. |
+| Q7 | Remember | Recall Exploit strategy. |
+| Q8 | Remember | Recall Risk Appetite definition. |
+| Q9 | Remember | Recall risk-process ordering. |
+| Q10 | Remember | Recall Risk Register cadence. |
+| Q11 | Remember | Recall Share strategy. |
+| Q12 | Apply | Apply Escalate when out of PM authority. |
+| Q13 | Apply | Apply Mitigate classification. |
+| Q14 | Apply | Apply EMV to a two-branch decision. |
+| Q15 | Understand | Distinguish Passive vs Active Acceptance. |
+| Q16 | Understand | Distinguish issue from risk. |
+| Q17 | Understand | Identify Monte Carlo's purpose. |
+| Q18 | Apply | Apply Share strategy to a partner scenario. |
+| Q19 | Remember | Recall the post-qualitative step. |
+| Q20 | Apply | Apply Escalate at the right organizational level. |
+| Q21 | Understand | Distinguish Threshold vs Tolerance. |
+| Q22 | Apply | Apply Avoid via scope removal. |
+| Q23 | Apply | Apply EMV with negative impact. |
+| Q24 | Understand | Explain Risk Register's living-document nature. |
+
+**Bloom distribution for Q1–Q24:** Remember 11 (~46%) · Understand 6 (~25%) · Apply 7 (~29%). The bonus questions below push Analyze/Evaluate/Create higher.
+
+---
+
+## Bonus questions (higher-Bloom)
+
+### Q25. Big Dig (from the case study). You are PM on a $400M tunnel project. An internal engineer raises a concern about epoxy-anchor durability under expected vibration loads. The team estimates a 4% probability of failure within 10 years, with consequences potentially including fatalities and ~$300M in liability. Using PMBOK 7's Risk principle, what's the MOST defensible response? *(Evaluate)*
+A. Document in the Risk Register, classify as Accept (low probability), continue.
+B. Treat the concern as a high-impact threat regardless of probability: commission an independent engineering review, quantitatively model failure consequences (including loss-of-life dollar valuation per regulatory standards), present at least three response options to the CCB (Avoid via re-design, Mitigate via reinforced anchoring, Transfer via warranty/insurance — and explain why pure Accept is not defensible for fatality-class outcomes), assign a named risk owner, require formal sponsor sign-off on the chosen response, and re-review quarterly.
+C. Suppress the concern to preserve schedule.
+D. Escalate only after a failure occurs.
+
+### Q26. You manage two options. Option A: 60% chance of $200K gain, 40% chance of $150K loss. Option B: 30% chance of $400K gain, 70% chance of $100K loss. Compute EMVs AND argue beyond pure EMV. *(Analyze)*
+A. EMV(A) = $60K; EMV(B) = $50K. A wins on EMV.
+B. EMV(A) = 0.6×$200K - 0.4×$150K = $120K − $60K = $60K. EMV(B) = 0.3×$400K - 0.7×$100K = $120K − $70K = $50K. A wins on EMV. But for a small org where a $150K loss is existential and a $100K loss is survivable, B's lower downside may dominate; recommend A only if the organization can absorb the $150K loss without operational impact, and document the risk-appetite logic (cite ISO 31000).
+C. EMV(A) = $80K; EMV(B) = $30K.
+D. B always wins.
+
+### Q27. A regulatory change introduces a new known unknown with 25% probability and $800K impact. Current Contingency Reserve has $50K free. What's the MOST defensible response? *(Apply)*
+A. Use existing Contingency.
+B. Compute EMV = 0.25 × -$800K = -$200K; recognize Contingency is insufficient; request access to Management Reserve from the sponsor with documented EMV analysis; explore Transfer (regulatory-rider insurance) or Mitigate (lobbying, structural design choice that reduces probability) as alternatives; present all options with EMVs and recommend the lowest-EMV path.
+C. Ignore the risk.
+D. Escalate without analysis.
+
+### Q28. Most teams over-focus on threats and under-identify opportunities. Design a workshop format that systematically surfaces opportunities (positive risks). *(Create)*
+A. Same workshop as for threats, hope opportunities emerge.
+B. A dedicated 90-minute "positive-risk premortem": split team into pairs, each pair generates 5 "what could go unexpectedly well" scenarios, prioritize using probability × benefit scoring, apply the 5 opportunity strategies (Exploit/Enhance/Share/Accept/Escalate), assign owners, schedule a 30-day review, and embed it into the kickoff and quarterly rituals as a permanent counter-balance to threat-focused thinking; document outcomes in the Risk Register's positive-risk section.
+C. Outsource opportunity identification to consultants.
+D. Skip opportunities entirely.
+
+### Q29. A sponsor pressures you to remove a known risk from the Risk Register because "it'll spook investors." Using PMI's Code of Ethics, what's the MOST defensible PM response? *(Evaluate)*
+A. Comply.
+B. Refuse silently and keep the register hidden.
+C. Refuse with documentation: explain that the Risk Register is the project's truthful record; offer to present the risk with mitigation strategy and EMV-justified investor framing rather than concealment; cite the Honesty + Responsibility values of the Code of Ethics; if the sponsor insists, escalate to the steering committee or PMO and document the request in writing; recognize that misrepresenting risk to investors may have legal consequences.
+D. Quit.
+
+```
+Bonus answer key
+25.B  26.B  27.B  28.B  29.C
+```

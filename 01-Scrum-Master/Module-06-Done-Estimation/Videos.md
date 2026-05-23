@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~40 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Definition+of+Done+Scrum.org" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Definition+of+Done+Scrum.org" target="_blank" rel="noopener" data-video-id="YMtaXwJcgns">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 10 min</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Story+Points+vs+Hours+Mike+Cohn" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Story+Points+vs+Hours+Mike+Cohn" target="_blank" rel="noopener" data-video-id="rww2Mx3sXt8">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 12 min · Why relative beats absolute</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Planning+Poker+Atlassian" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Planning+Poker+Atlassian" target="_blank" rel="noopener" data-video-id="3apRqd67hrQ">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 8 min</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Henrik+Kniberg+velocity" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Henrik+Kniberg+velocity" target="_blank" rel="noopener" data-video-id="qD14aI1vhIc">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~30 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=INVEST+User+Stories+Mountain+Goat" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=INVEST+User+Stories+Mountain+Goat" target="_blank" rel="noopener" data-video-id="uj5iUbDf-iw">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 10 min</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Definition+of+Done+vs+Definition+of+Ready+Develpreneur" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Definition+of+Done+vs+Definition+of+Ready+Develpreneur" target="_blank" rel="noopener" data-video-id="kfSeI6Qvt_Q">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 8 min · DoR is NOT in Scrum Guide</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Burndown+Charts+Use+Wisely+Scrum.org" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Burndown+Charts+Use+Wisely+Scrum.org" target="_blank" rel="noopener" data-video-id="CVwC6HeFHXQ">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>

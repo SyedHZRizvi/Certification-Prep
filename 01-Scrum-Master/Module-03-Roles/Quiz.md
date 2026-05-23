@@ -298,3 +298,126 @@ Per the Scrum Guide, the SM serves the organization by leading/coaching Scrum ad
 - "PO + SM can't be same person"
 
 ➡️ [Cheat Sheet](./Cheat-Sheet.md) → [Module 4: Events](../Module-04-Events/Reading.md)
+
+---
+
+## 🧠 Bloom's-taxonomy mapping (existing Q1–Q27)
+
+| Q# | Bloom level | Why |
+|---|---|---|
+| Q1 | Remember | PO accountability recall |
+| Q2 | Remember | SM serves-whom recall |
+| Q3 | Apply | Count Developers from a description |
+| Q4 | Understand | Distinguish PO/SM combinability |
+| Q5 | Understand | Distinguish who attends Daily |
+| Q6 | Remember | Who decides task breakdown |
+| Q7 | Apply | Scenario — mid-Sprint stakeholder request |
+| Q8 | Apply | SM behavior when team misses goals |
+| Q9 | Remember | PO = one person |
+| Q10 | Remember | Who orders backlog |
+| Q11 | Remember | 2020 renaming |
+| Q12 | Remember | SM definition |
+| Q13 | Understand | Scrum Team properties |
+| Q14 | Apply | Skill-gap scenario |
+| Q15 | Apply | Stakeholder disagreement scenario |
+| Q16 | Remember | SM core accountability |
+| Q17 | Evaluate | Judge an org's "PM oversees Scrum Team" stance |
+| Q18 | Remember | Who estimates |
+| Q19 | Analyze | Which combination is NOT allowed |
+| Q20 | Analyze | Identify Proxy PO anti-pattern |
+| Q21 | Understand | SM-serves-PO behavior |
+| Q22 | Remember | "True leader who serves" recall |
+| Q23 | Apply | Co-PO request scenario |
+| Q24 | Apply | Count Developers (variation) |
+| Q25 | Apply | Skill-gap variation |
+| Q26 | Apply | Mid-Sprint stakeholder variation |
+| Q27 | Understand | SM-serves-org behavior |
+
+**Current distribution:** Remember 10 (37%), Understand 5 (19%), Apply 8 (30%), Analyze 2 (7%), Evaluate 1 (4%), Create 0 (0%). Role-boundary questions tend to be Apply-heavy, which is good — they exercise scenario reasoning. The new questions deepen Analyze/Evaluate/Create.
+
+---
+
+## 🚀 Additional higher-Bloom questions (Q28–Q33, advanced)
+
+### Q28. At ING Netherlands (Module 3 case study), the Chapter Lead role provided functional career growth without violating "no one manages the Scrum Team." Analyzing this design: which Scrum Guide principle MOST DIRECTLY justifies the Chapter Lead role as compatible with Scrum? *(Analyze)*
+A. The Scrum Guide explicitly requires Chapter Leads
+B. The Scrum Guide is *silent* on org structures outside the Scrum Team — as long as Chapter Leads don't assign work to specific Scrum Team members, they coexist with Scrum
+C. Scrum requires every employee to report to a manager
+D. The 2020 Scrum Guide added Chapter Lead as a fourth accountability
+
+---
+
+### Q29. A 9-person Scrum Team has the same person as Product Owner AND a Developer. The team has been productive for 6 months. Your CTO asks if this is sustainable. Evaluate, citing tradeoffs. *(Evaluate)*
+A. Always sustainable — Scrum explicitly allows PO+Developer
+B. Always unsustainable — PO+Developer is forbidden
+C. Sustainable in some contexts (small team, low stakeholder load, simple product) but at risk in others (high stakeholder demand can starve the Developer work, and vice versa); the Scrum Guide allows it but does not recommend it
+D. The CTO must hire a second PO immediately
+
+---
+
+### Q30. Your Scrum Master serves three Scrum Teams simultaneously. Analyzing the trade-offs, what's the MOST LIKELY first failure mode to appear, and at what team-count is it likely to emerge? *(Analyze)*
+A. The SM cannot attend every Daily Scrum (~3 teams); facilitation depth and impediment-removal speed suffer
+B. The SM becomes too senior — under-utilizing leadership
+C. There is no failure mode — one SM scales infinitely
+D. The SM becomes a Project Manager by default
+
+---
+
+### Q31. A new VP demands "weekly status reports of individual developer productivity" from the Scrum Master. Construct the *3-step* coaching response that honors servant leadership, the Scrum Guide's prohibition on individual-level measurement, AND the VP's legitimate need for visibility. *(Create)*
+A. Refuse outright and escalate to HR
+B. (1) Acknowledge the VP's underlying need (visibility into delivery); (2) explain Scrum's team-level accountability and the harm of individual-level reporting; (3) offer team-level alternatives — Sprint Goals met, value delivered, Increment demos at Review — that meet the visibility need without measuring individuals
+C. Provide the report — the VP outranks the SM
+D. Tell the team to log all their hours so the VP can have data
+
+---
+
+### Q32. A Product Owner is a former Project Manager who has reverted to assigning tasks to specific developers ("Joe, you do PBI-7; Maria, you do PBI-12"). Apply the role boundaries to identify which Scrum Guide rule(s) are being violated AND propose the SM's coaching script. *(Apply / Create)*
+A. No violation — POs can assign tasks
+B. The PO is violating Developer self-management (Devs decide who-does-what-when-how) AND blurring the PO/Developer accountability line. SM should coach the PO in a 1:1: surface the pattern, explain the harm (Developer growth stalls, ownership erodes), and reframe the PO's job as "what and why" while leaving "who and how" to Devs
+C. The Scrum Master should overrule the PO publicly in the Daily Scrum
+D. Joe and Maria should refuse to do the work
+
+---
+
+### Q33. Evaluate the claim: "A Scrum Master is just an Agile Project Manager with a different title." Construct the strongest argument for AND against, then defend a position. *(Evaluate)*
+A. The claim is correct; the terms are interchangeable
+B. The claim is incorrect; while both roles aim for project success, the SM has *no* authority to assign work, set deadlines, or manage individuals — these are core PM authorities. The SM operates via coaching, not via command. A PM transitioning to SM must explicitly relinquish those authorities or they will accidentally re-create command-and-control patterns
+C. The claim is irrelevant — neither role exists in modern teams
+D. The two roles must always be performed by different individuals
+
+---
+
+## 🎯 Answer key — Q28–Q33
+
+### Q28: **B. The Scrum Guide is silent on outside-team org structures**
+The Scrum Guide defines what happens *inside* a Scrum Team — three accountabilities, five events, three artifacts. It does *not* prohibit broader org structures (HR, Chapters, Communities of Practice) as long as they don't violate the team-level rules. The Chapter Lead does NOT assign work to specific Scrum Team members; they support functional skill development. This is legitimate scaling, not ScrumBut.
+
+### Q29: **C. Context-dependent**
+The Scrum Guide does allow PO + Developer combined. It works in small, focused contexts (startup, low-stakeholder product). It strains in high-demand contexts where stakeholder management AND development both need full attention. The honest exam answer is "allowed but not recommended in general." A and B overstate; D is the wrong remedy.
+
+### Q30: **A. Daily Scrum coverage + impediment lag**
+At ~3 teams, the SM physically cannot attend every Daily (especially across time zones). This is the canonical first failure — daily facilitation degrades, then impediment-removal lag emerges. The deeper failure (SM drifting to PM) comes later. B is the opposite; C is fantasy; D is a real risk but emerges later than (A).
+
+### Q31: **B. Three-step coaching response**
+The three steps map directly to servant leadership: (1) listen to the underlying need (visibility), (2) teach why the proposed solution is harmful (Scrum measures team-level, not individual), (3) offer alternatives that meet the legitimate need (Sprint Goals achieved, Review demos, value delivered). A is confrontational and doesn't serve the org; C abandons the role; D actively makes things worse.
+
+### Q32: **B. Multiple violations + structured coaching**
+This is a classic PO-as-recovering-PM pattern. The violations: Developer self-management (Devs decide who-does-what) AND blurred accountabilities (PO doing Developer work). The right response is *private* coaching (not Daily-Scrum confrontation per option C), framed around growth and ownership rather than rule-citation. A misdiagnoses; C and D would damage trust and team dynamics.
+
+### Q33: **B. Distinct roles with distinct authority structures**
+The strongest distinction is *authority*: a PM has authority to assign, schedule, and manage; a Scrum Master explicitly does not. The PM-to-SM transition is a known *anti-pattern producer* if the individual doesn't actively relinquish command behaviors. The Scrum Guide's "no one manages the Scrum Team" rule is the load-bearing fact. (A is the common cargo-cult; C is dismissive; D is overstated — same person CAN transition over time, but must change behavior.)
+
+---
+
+## 📊 Updated distribution after Q28–Q33
+
+| Bloom level | Count | % | Target |
+|---|---|---|---|
+| Remember | 10 | 30% | ≤ 25% |
+| Understand | 5 | 15% | ~ 25% |
+| Apply | 10 | 30% | ~ 25% |
+| Analyze | 4 | 12% | ~ 20% |
+| Evaluate | 3 | 9% | within 20% |
+| Create | 1 | 3% | ~ 5% |
+
+Role-boundary scenarios are intrinsically Apply-heavy, which serves the exam well. The Analyze and Evaluate additions strengthen the senior-SM coaching skills tested in PSM I scenario questions.

@@ -129,3 +129,16 @@ Week 10: Final Mock-Exam (150 Q, 210 min) → REAL EXAM
 👉 [**Module 1: Manufacturing Strategy**](./Module-01-Manufacturing-Strategy/Reading.md)
 
 You got this. 💪
+
+---
+
+## 🏁 After the Modules — Capstone & Deeper Reading
+
+Two additional resources sit at the course root:
+
+| File | What it's for |
+|------|---------------|
+| [**Capstone-Project.md**](./Capstone-Project.md) | A 6–8 week applied capstone in which you act as the newly hired Director of Production & Inventory Control at a $480M industrial-equipment manufacturer. Integrates every module of the course — S&OP design, MRP→DDMRP transition, capacity re-baseline, top-50 SKU kanban pilot, S&OE control tower, 12-month change-management roadmap. Self-graded against a 100-point rubric. |
+| [**Recommended-Readings.md**](./Recommended-Readings.md) | Curated reading list — canonical textbooks (Vollmann/Berry, Hill, Wallace, Goldratt's *The Goal*, Ohno's *Toyota Production System*), seminal HBR/Sloan papers (Lee-Padmanabhan-Whang on bullwhip, Skinner on manufacturing strategy, the HP postponement case), industry resources, and free academic courses (MIT MicroMasters SCM, Stanford OPS, Wharton OM). |
+
+The capstone is what separates "passed the exam" from "could walk into a Harvard Business School Operations case discussion and contribute." Strong students engage with the capstone for portfolio value even when the exam is the immediate goal.

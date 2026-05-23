@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~60 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=transportation+modes+supply+chain+truck+rail+ocean+air" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="yg0Rjk85R9Y" href="https://www.youtube.com/results?search_query=transportation+modes+supply+chain+truck+rail+ocean+air" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 12 min · Mode overview</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=FTL+LTL+difference+trucking" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="ugNWp-coLW8" href="https://www.youtube.com/results?search_query=FTL+LTL+difference+trucking" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 10 min · Pricing & lanes</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=intermodal+rail+container+drayage" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="IbGkkjEPRzA" href="https://www.youtube.com/results?search_query=intermodal+rail+container+drayage" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 11 min · Doublestack visuals</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=ocean+container+shipping+FCL+LCL+TEU" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="wKBzfQxgisQ" href="https://www.youtube.com/results?search_query=ocean+container+shipping+FCL+LCL+TEU" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -61,7 +61,7 @@
       <span class="vg-duration">⏱ 13 min · Routes and rates</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=air+cargo+ULD+freighter+chargeable+weight" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="WLqx47U2m4c" href="https://www.youtube.com/results?search_query=air+cargo+ULD+freighter+chargeable+weight" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -75,7 +75,7 @@
 ## 📚 Recommended (~40 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=mode+selection+freight+transportation+decision" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="-t5AVFb_6js" href="https://www.youtube.com/results?search_query=mode+selection+freight+transportation+decision" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 11 min · Trade-off matrix</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=TMS+transportation+management+system+benefits" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="ZHr0dTapcX4" href="https://www.youtube.com/results?search_query=TMS+transportation+management+system+benefits" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -93,7 +93,7 @@
       <span class="vg-duration">⏱ 14 min · Manhattan, Oracle, Blue Yonder</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=vehicle+routing+problem+VRP+algorithm" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="PuI-M18wELM" href="https://www.youtube.com/results?search_query=vehicle+routing+problem+VRP+algorithm" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -107,7 +107,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=pipeline+transportation+oil+gas+logistics" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="OU519LBDLuA" href="https://www.youtube.com/results?search_query=pipeline+transportation+oil+gas+logistics" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 16 min · Often-forgotten mode</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=parcel+zone+skipping+last+mile+e+commerce" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="cuz8j2LGhYo" href="https://www.youtube.com/results?search_query=parcel+zone+skipping+last+mile+e+commerce" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -125,7 +125,7 @@
       <span class="vg-duration">⏱ 18 min · Parcel cost savings</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=ocean+alliances+2M+Ocean+Alliance+THE" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="vKO2elPPtQg" href="https://www.youtube.com/results?search_query=ocean+alliances+2M+Ocean+Alliance+THE" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

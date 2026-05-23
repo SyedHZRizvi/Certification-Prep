@@ -2,11 +2,13 @@
 
 > **Instructions:** 26 questions, ~35 min. Target 21/26.
 
+> **Bloom's distribution.** Remember 5 (19%) · Understand 6 (23%) · Apply 9 (35%) · Analyze/Evaluate 5 (19%) · Create 1 (4%).
+
 ---
 
 ## Questions
 
-### Q1. A subnet is considered "public" when:
+### Q1. A subnet is considered "public" when: *(Understand)*
 A. It uses a /24 CIDR
 B. Its route table has a route `0.0.0.0/0 → IGW`
 C. Its NACL allows port 443
@@ -14,7 +16,7 @@ D. AWS marks it as public in the console
 
 ---
 
-### Q2. A company has 12 VPCs across 3 AWS accounts that all need to communicate, plus an on-prem network. The BEST design is:
+### Q2. A company has 12 VPCs across 3 AWS accounts that all need to communicate, plus an on-prem network. The BEST design is: *(Apply)*
 A. Full mesh of VPC peerings
 B. Transit Gateway with attachments for each VPC and a DX/VPN to on-prem
 C. Site-to-Site VPN between every pair
@@ -22,7 +24,7 @@ D. CloudFront
 
 ---
 
-### Q3. An EC2 in a private subnet must read objects from S3 without traversing the internet AND minimize cost. The BEST solution is:
+### Q3. An EC2 in a private subnet must read objects from S3 without traversing the internet AND minimize cost. The BEST solution is: *(Apply)*
 A. NAT Gateway
 B. NAT Instance with Elastic IP
 C. Gateway VPC Endpoint for S3
@@ -30,7 +32,7 @@ D. Interface VPC Endpoint for S3
 
 ---
 
-### Q4. To block a specific malicious IP range from reaching ANY instance in a subnet, the right tool is:
+### Q4. To block a specific malicious IP range from reaching ANY instance in a subnet, the right tool is: *(Apply)*
 A. Security Group with deny rule
 B. NACL with explicit deny entry
 C. IAM policy
@@ -38,7 +40,7 @@ D. Route table
 
 ---
 
-### Q5. A company needs the lowest-latency, highest-throughput private connection from its on-prem data center to AWS, with predictable performance. They should use:
+### Q5. A company needs the lowest-latency, highest-throughput private connection from its on-prem data center to AWS, with predictable performance. They should use: *(Apply)*
 A. Site-to-Site VPN
 B. AWS Direct Connect
 C. Client VPN
@@ -46,7 +48,7 @@ D. CloudFront
 
 ---
 
-### Q6. VPC peering is:
+### Q6. VPC peering is: *(Remember)*
 A. Transitive — A↔B and B↔C grants A↔C
 B. Non-transitive — A↔B does not grant A↔C
 C. Always region-local
@@ -54,7 +56,7 @@ D. Limited to one account
 
 ---
 
-### Q7. To make a NAT Gateway architecture highly available across an outage of a single AZ, you should:
+### Q7. To make a NAT Gateway architecture highly available across an outage of a single AZ, you should: *(Apply)*
 A. Deploy one NAT Gateway per AZ with the per-AZ subnets routing to their local NAT GW
 B. Deploy one NAT Gateway in one AZ with a backup IGW
 C. Use a NAT instance instead
@@ -62,7 +64,7 @@ D. Disable cross-AZ failover
 
 ---
 
-### Q8. An app in a private subnet must call SQS without using a NAT Gateway. The right solution is:
+### Q8. An app in a private subnet must call SQS without using a NAT Gateway. The right solution is: *(Apply)*
 A. Gateway endpoint for SQS
 B. Interface endpoint for SQS (PrivateLink)
 C. CloudFront
@@ -70,7 +72,7 @@ D. Direct Connect
 
 ---
 
-### Q9. Which is TRUE about security groups?
+### Q9. Which is TRUE about security groups? *(Understand)*
 A. They are stateless
 B. They support explicit deny rules
 C. They are stateful — return traffic is automatically allowed
@@ -78,7 +80,7 @@ D. They apply at the subnet level
 
 ---
 
-### Q10. An EC2 instance in a public subnet has a public IP but cannot reach the internet. Most likely cause:
+### Q10. An EC2 instance in a public subnet has a public IP but cannot reach the internet. Most likely cause: *(Analyze)*
 A. The IGW is missing from the route table OR the SG/NACL blocks outbound
 B. EC2 instances cannot reach the internet from public subnets
 C. The instance is on Spot
@@ -86,7 +88,7 @@ D. The VPC has no name
 
 ---
 
-### Q11. Which is TRUE about Direct Connect?
+### Q11. Which is TRUE about Direct Connect? *(Understand)*
 A. Traffic is encrypted by default
 B. Traffic is NOT encrypted by default — use MACsec or VPN over DX
 C. Setup takes minutes
@@ -94,7 +96,7 @@ D. It works only with us-east-1
 
 ---
 
-### Q12. A Site-to-Site VPN is established between on-prem and an AWS VPC. Traffic from another VPC peered to that VPC must reach on-prem. Will it work without changes?
+### Q12. A Site-to-Site VPN is established between on-prem and an AWS VPC. Traffic from another VPC peered to that VPC must reach on-prem. Will it work without changes? *(Analyze)*
 A. Yes, peering is transitive
 B. No, peering is not transitive — use a Transit Gateway
 C. Yes, with a NACL change
@@ -102,7 +104,7 @@ D. Yes, with a CloudFront distribution
 
 ---
 
-### Q13. The default behavior of a newly-created custom security group is:
+### Q13. The default behavior of a newly-created custom security group is: *(Remember)*
 A. Allow all inbound, allow all outbound
 B. Deny all inbound, deny all outbound
 C. Deny all inbound, allow all outbound
@@ -110,7 +112,7 @@ D. Allow all inbound, deny all outbound
 
 ---
 
-### Q14. Which is the cheapest endpoint type for accessing S3 privately from a VPC?
+### Q14. Which is the cheapest endpoint type for accessing S3 privately from a VPC? *(Remember)*
 A. Interface endpoint
 B. Gateway endpoint (free)
 C. NAT Gateway
@@ -118,7 +120,7 @@ D. Direct Connect
 
 ---
 
-### Q15. The maximum CIDR block size for a VPC is:
+### Q15. The maximum CIDR block size for a VPC is: *(Remember)*
 A. /8
 B. /16
 C. /24
@@ -126,7 +128,7 @@ D. /28
 
 ---
 
-### Q16. To privately expose your SaaS service (running behind an NLB) to customer VPCs without VPC peering, use:
+### Q16. To privately expose your SaaS service (running behind an NLB) to customer VPCs without VPC peering, use: *(Apply)*
 A. CloudFront
 B. AWS PrivateLink (Endpoint Service + Interface Endpoint)
 C. NAT Gateway
@@ -134,7 +136,7 @@ D. Direct Connect
 
 ---
 
-### Q17. An Egress-Only Internet Gateway provides:
+### Q17. An Egress-Only Internet Gateway provides: *(Understand)*
 A. Inbound IPv6
 B. Outbound-only IPv6 (analogous to NAT for IPv4)
 C. Outbound IPv4
@@ -142,7 +144,7 @@ D. Encrypted DX
 
 ---
 
-### Q18. Which routing service supports cross-region peering for hub-and-spoke topologies?
+### Q18. Which routing service supports cross-region peering for hub-and-spoke topologies? *(Understand)*
 A. VPC peering only
 B. Transit Gateway (TGW supports inter-region peering)
 C. Internet Gateway
@@ -150,7 +152,7 @@ D. NAT Gateway
 
 ---
 
-### Q19. VPC Flow Logs can capture:
+### Q19. VPC Flow Logs can capture: *(Remember)*
 A. Full packet payloads
 B. Metadata about IP traffic (accepted/rejected)
 C. Only S3 API calls
@@ -158,7 +160,7 @@ D. Only TLS metadata
 
 ---
 
-### Q20. A company needs remote employees to connect into the corporate VPC from their laptops. The BEST AWS service is:
+### Q20. A company needs remote employees to connect into the corporate VPC from their laptops. The BEST AWS service is: *(Apply)*
 A. Site-to-Site VPN
 B. Direct Connect
 C. AWS Client VPN
@@ -166,7 +168,7 @@ D. CloudFront
 
 ---
 
-### Q21. Which is TRUE about NACLs?
+### Q21. Which is TRUE about NACLs? *(Understand)*
 A. They apply per-instance
 B. They are stateful
 C. They support both allow and deny rules and are evaluated in numbered order
@@ -174,7 +176,7 @@ D. There can be many NACLs per subnet
 
 ---
 
-### Q22. Two VPCs in different AWS Regions need private connectivity. Options include:
+### Q22. Two VPCs in different AWS Regions need private connectivity. Options include: *(Evaluate)*
 A. Inter-region VPC peering OR Transit Gateway peering
 B. Only NAT Gateway
 C. Only Site-to-Site VPN
@@ -182,7 +184,7 @@ D. CloudFront
 
 ---
 
-### Q23. An instance launched without a public IP in a public subnet:
+### Q23. An instance launched without a public IP in a public subnet: *(Analyze)*
 A. Will get a public IP automatically
 B. Will NOT have a public IP unless auto-assign is on or you attach an EIP
 C. Will use the NAT Gateway's IP
@@ -190,7 +192,7 @@ D. Will be deleted
 
 ---
 
-### Q24. A company wants to encrypt traffic over a Direct Connect link. The BEST option is:
+### Q24. A company wants to encrypt traffic over a Direct Connect link. The BEST option is: *(Apply)*
 A. MACsec on a supported DX port OR an IPSec VPN over the DX
 B. Direct Connect always encrypts
 C. Encrypt at the app layer only and ignore DX
@@ -198,7 +200,7 @@ D. CloudFront
 
 ---
 
-### Q25. An app in VPC-A must call only one specific microservice in VPC-B (different account) — not full network connectivity. The MOST appropriate solution is:
+### Q25. An app in VPC-A must call only one specific microservice in VPC-B (different account) — not full network connectivity. The MOST appropriate solution is: *(Create)*
 A. Transit Gateway
 B. AWS PrivateLink (Interface Endpoint to that service)
 C. VPC peering
@@ -206,7 +208,7 @@ D. Direct Connect
 
 ---
 
-### Q26. The default NACL on a new VPC subnet:
+### Q26. The default NACL on a new VPC subnet: *(Understand)*
 A. Denies everything
 B. Allows ALL inbound and outbound
 C. Allows only port 443

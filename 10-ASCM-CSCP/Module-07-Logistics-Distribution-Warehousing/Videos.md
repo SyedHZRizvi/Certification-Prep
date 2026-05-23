@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~50 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Transportation+modes+supply+chain+comparison" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="YF1wBXoih3M" href="https://www.youtube.com/results?search_query=Transportation+modes+supply+chain+comparison" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 13 min · Cost / speed / capacity</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Warehouse+operations+receiving+picking+shipping" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="wlwNksBSHxc" href="https://www.youtube.com/results?search_query=Warehouse+operations+receiving+picking+shipping" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 14 min · Receiving → shipping</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=3PL+vs+4PL+logistics+provider+explained" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="9J2pTNTksno" href="https://www.youtube.com/results?search_query=3PL+vs+4PL+logistics+provider+explained" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 11 min · With real provider examples</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Intermodal+container+shipping+how+it+works" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="7hSE1PjbOkI" href="https://www.youtube.com/results?search_query=Intermodal+container+shipping+how+it+works" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~30 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Warehouse+picking+strategies+batch+zone+wave" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="tA3ip66xpAw" href="https://www.youtube.com/results?search_query=Warehouse+picking+strategies+batch+zone+wave" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 10 min · Side-by-side comparison</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Last+mile+delivery+innovation+e+commerce" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="T_4bokK5VSk" href="https://www.youtube.com/results?search_query=Last+mile+delivery+innovation+e+commerce" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 11 min · Lockers, drones, AMRs</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Reverse+logistics+returns+management" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="bmfixQCNL3g" href="https://www.youtube.com/results?search_query=Reverse+logistics+returns+management" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Amazon+robotics+kiva+warehouse+automation" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="6KRjuuEVEZs" href="https://www.youtube.com/results?search_query=Amazon+robotics+kiva+warehouse+automation" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 18 min · Inside an FC</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Container+shipping+history+Malcolm+McLean" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="znCAAeEx4w4" href="https://www.youtube.com/results?search_query=Container+shipping+history+Malcolm+McLean" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 22 min · History of containerization</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Cross+docking+vs+warehouse+storage" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="pITW1nAq0U0" href="https://www.youtube.com/results?search_query=Cross+docking+vs+warehouse+storage" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

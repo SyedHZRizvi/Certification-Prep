@@ -7,7 +7,7 @@
 
 ## Questions
 
-### Q1. The official AWS definition of cloud computing emphasizes three things. Which is NOT one of them?
+### Q1. The official AWS definition of cloud computing emphasizes three things. Which is NOT one of them? *(Remember)*
 A. On-demand delivery
 B. Over the internet
 C. Pay-as-you-go pricing
@@ -15,7 +15,7 @@ D. Single-tenant dedicated hardware
 
 ---
 
-### Q2. A company wants to deploy a workload in three separate datacenters within Northern Virginia for high availability. What AWS construct enables this?
+### Q2. A company wants to deploy a workload in three separate datacenters within Northern Virginia for high availability. What AWS construct enables this? *(Apply)*
 A. Multiple Regions
 B. Multiple Availability Zones in the `us-east-1` Region
 C. Multiple Edge Locations
@@ -23,7 +23,7 @@ D. Multiple Local Zones
 
 ---
 
-### Q3. Which is the BEST example of trading capital expense (CapEx) for variable expense (OpEx)?
+### Q3. Which is the BEST example of trading capital expense (CapEx) for variable expense (OpEx)? *(Understand)*
 A. Pre-paying for a 3-year Reserved Instance
 B. Buying servers and racking them in your office
 C. Launching EC2 on-demand and being billed per second of use
@@ -31,7 +31,7 @@ D. Signing a 10-year colocation lease
 
 ---
 
-### Q4. Which service model puts the MOST responsibility on the customer?
+### Q4. Which service model puts the MOST responsibility on the customer? *(Understand)*
 A. SaaS
 B. PaaS
 C. IaaS
@@ -39,7 +39,7 @@ D. FaaS
 
 ---
 
-### Q5. An EU customer must ensure all customer data stays within the European Union. What AWS feature primarily addresses this?
+### Q5. An EU customer must ensure all customer data stays within the European Union. What AWS feature primarily addresses this? *(Apply)*
 A. Edge Locations
 B. Choosing an EU Region
 C. AWS WAF
@@ -47,7 +47,7 @@ D. Amazon CloudFront
 
 ---
 
-### Q6. Which AWS service brings AWS hardware physically into a customer's own data center?
+### Q6. Which AWS service brings AWS hardware physically into a customer's own data center? *(Remember)*
 A. AWS Wavelength
 B. AWS Local Zones
 C. AWS Outposts
@@ -55,7 +55,7 @@ D. AWS Direct Connect
 
 ---
 
-### Q7. The "Always Free" tier of the AWS Free Tier:
+### Q7. The "Always Free" tier of the AWS Free Tier: *(Remember)*
 A. Expires after 12 months
 B. Is only for non-profit organizations
 C. Offers some services free forever within usage limits
@@ -63,7 +63,7 @@ D. Requires Enterprise Support
 
 ---
 
-### Q8. An application needs single-digit-millisecond latency to mobile users on a 5G network. The BEST AWS offering is:
+### Q8. An application needs single-digit-millisecond latency to mobile users on a 5G network. The BEST AWS offering is: *(Apply)*
 A. CloudFront
 B. AWS Wavelength
 C. AWS Outposts
@@ -71,7 +71,7 @@ D. Direct Connect
 
 ---
 
-### Q9. Which statement about Edge Locations is TRUE?
+### Q9. Which statement about Edge Locations is TRUE? *(Understand)*
 A. They are the same as Availability Zones
 B. You can launch EC2 instances in an Edge Location
 C. They cache content for services like CloudFront and Route 53
@@ -79,7 +79,7 @@ D. There are only 30 of them worldwide
 
 ---
 
-### Q10. A startup wants to "go global in minutes" with their web app. Which cloud benefit BEST describes this?
+### Q10. A startup wants to "go global in minutes" with their web app. Which cloud benefit BEST describes this? *(Remember)*
 A. Trade fixed expense for variable expense
 B. Benefit from massive economies of scale
 C. Increase speed and agility
@@ -87,7 +87,7 @@ D. Go global in minutes
 
 ---
 
-### Q11. Which deployment model uses BOTH on-premises infrastructure AND public cloud, connected together?
+### Q11. Which deployment model uses BOTH on-premises infrastructure AND public cloud, connected together? *(Remember)*
 A. Public cloud
 B. Private cloud
 C. Hybrid cloud
@@ -95,7 +95,7 @@ D. Community cloud
 
 ---
 
-### Q12. Amazon Elastic Beanstalk is BEST classified as:
+### Q12. Amazon Elastic Beanstalk is BEST classified as: *(Understand)*
 A. IaaS
 B. PaaS
 C. SaaS
@@ -103,7 +103,7 @@ D. On-premises
 
 ---
 
-### Q13. The MAIN purpose of CloudFormation is to:
+### Q13. The MAIN purpose of CloudFormation is to: *(Understand)*
 A. Monitor running EC2 instances
 B. Provision AWS resources from code templates (Infrastructure as Code)
 C. Compress storage
@@ -111,7 +111,7 @@ D. Replace IAM
 
 ---
 
-### Q14. Which Region is typically the cheapest and the first to receive new AWS services?
+### Q14. Which Region is typically the cheapest and the first to receive new AWS services? *(Remember)*
 A. `ap-south-1` (Mumbai)
 B. `us-east-1` (N. Virginia)
 C. `eu-west-3` (Paris)
@@ -119,7 +119,7 @@ D. `sa-east-1` (São Paulo)
 
 ---
 
-### Q15. A customer must run workloads that comply with US government FedRAMP High. They should use:
+### Q15. A customer must run workloads that comply with US government FedRAMP High. They should use: *(Apply)*
 A. The standard `us-east-1` Region
 B. AWS GovCloud (US) Regions
 C. AWS Outposts
@@ -127,7 +127,7 @@ D. Any commercial Region
 
 ---
 
-### Q16. What's the difference between "scalability" and "elasticity"?
+### Q16. What's the difference between "scalability" and "elasticity"? *(Analyze)*
 A. They mean the same thing
 B. Scalability = capacity to handle growth; elasticity = automatic scaling up/down with demand
 C. Elasticity = vertical scaling only
@@ -135,7 +135,7 @@ D. Scalability is only for storage
 
 ---
 
-### Q17. A bank wants its data stored in S3 in `eu-west-1` to ALSO survive a full Region outage in Ireland. What MUST they configure?
+### Q17. A bank wants its data stored in S3 in `eu-west-1` to ALSO survive a full Region outage in Ireland. What MUST they configure? *(Apply)*
 A. Multi-AZ deployment for S3
 B. Cross-Region Replication to another Region
 C. CloudFront caching
@@ -143,7 +143,7 @@ D. Edge Locations
 
 ---
 
-### Q18. Which is a valid way to interact with AWS services?
+### Q18. Which is a valid way to interact with AWS services? *(Remember)*
 A. AWS Management Console
 B. AWS CLI
 C. AWS SDKs (Python, Java, etc.)
@@ -151,7 +151,7 @@ D. All of the above
 
 ---
 
-### Q19. A company has 200 servers running at 20% utilization 24/7 with very predictable load. Which statement is MOST accurate?
+### Q19. A company has 200 servers running at 20% utilization 24/7 with very predictable load. Which statement is MOST accurate? *(Evaluate)*
 A. Cloud is automatically cheaper
 B. On-premises may actually be cheaper for steady, predictable workloads
 C. They must move to AWS to save money
@@ -159,7 +159,7 @@ D. Cloud cannot handle this workload
 
 ---
 
-### Q20. The shared private fiber that connects AZs within a Region provides:
+### Q20. The shared private fiber that connects AZs within a Region provides: *(Understand)*
 A. Public internet routing only
 B. Low-latency, high-bandwidth private connectivity for replication
 C. CDN caching
@@ -167,7 +167,7 @@ D. Encryption keys
 
 ---
 
-### Q21. Which AWS infrastructure layer is automatically used by Route 53 and CloudFront to serve requests close to users?
+### Q21. Which AWS infrastructure layer is automatically used by Route 53 and CloudFront to serve requests close to users? *(Apply)*
 A. Regions
 B. Availability Zones
 C. Edge Locations
@@ -175,7 +175,7 @@ D. Outposts
 
 ---
 
-### Q22. Fault tolerance is BEST described as:
+### Q22. Fault tolerance is BEST described as: *(Understand)*
 A. The ability to remain operational when components fail
 B. The ability to recover from a failure within a few hours
 C. The ability to scale up automatically
@@ -183,7 +183,7 @@ D. The ability to back up data nightly
 
 ---
 
-### Q23. Which statement about AWS Regions and AZs is TRUE?
+### Q23. Which statement about AWS Regions and AZs is TRUE? *(Analyze)*
 A. Every Region has exactly two AZs
 B. AZs in the same Region are typically 10–100 km apart and connected by low-latency private fiber
 C. Edge Locations are a type of AZ
@@ -191,11 +191,11 @@ D. AZs are publicly addressable buildings you can visit
 
 ---
 
-### Q24. A team wants version-controlled, repeatable infrastructure provisioning. The BEST AWS tool is:
-A. The AWS Management Console
-B. AWS CloudFormation (or the AWS CDK)
-C. The AWS Billing dashboard
-D. Trusted Advisor
+### Q24. You are sketching the foundation architecture for a brand-new SaaS startup that will sell to both US enterprise and EU SMBs. Pick the option that best balances repeatability, compliance, and the cloud's "go global in minutes" benefit. *(Create)*
+A. Build everything by hand in the AWS Management Console for now; document later
+B. Use AWS CloudFormation / CDK templates to provision identical stacks in both `us-east-1` and `eu-west-1`, parameterized by Region
+C. Run everything from a single `sa-east-1` Region and rely on CloudFront edges in EU/US
+D. Use AWS Trusted Advisor as the provisioning tool
 
 ---
 
@@ -270,8 +270,8 @@ Fault tolerance > high availability. HA recovers quickly; fault tolerance keeps 
 ### Q23: **B. AZs in the same Region are typically 10–100 km apart and connected by low-latency private fiber**
 Spec from AWS itself. Each Region has 3+ AZs (not "exactly two"), AZs are not publicly visitable, and Edges are NOT AZs.
 
-### Q24: **B. AWS CloudFormation (or the AWS CDK)**
-IaC = the right answer for "repeatable, version-controlled." Console clicks aren't reproducible; Trusted Advisor is a recommender, not a provisioner.
+### Q24: **B. Use AWS CloudFormation / CDK templates to provision identical stacks in both `us-east-1` and `eu-west-1`, parameterized by Region**
+IaC = the right answer for "repeatable, version-controlled" *and* "go global in minutes." Console clicks aren't reproducible; Trusted Advisor is a recommender, not a provisioner; a single `sa-east-1` region won't satisfy EU data sovereignty even with CloudFront edges (the data still lives in Brazil).
 
 ---
 

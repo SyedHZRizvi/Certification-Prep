@@ -2,12 +2,16 @@
 
 > **Instructions:** Answer all 26 questions WITHOUT looking at the reading.
 > Then check your answers below. Aim for 22/26 minimum.
+>
+> Every question is tagged with its **Bloom's taxonomy level** so you can self-diagnose: if you miss recall ("Remember") questions, you need more flashcards; if you miss application ("Apply") or evaluation ("Analyze") questions, you need more scenario practice.
+>
+> **Bloom distribution (this quiz):** Remember 5 · Understand 7 · Apply 7 · Analyze/Evaluate 6 · Create 1.
 
 ---
 
 ## Questions
 
-### Q1. A ransomware attack encrypts every file on the file server. Which CIA property is MOST directly violated?
+### Q1. A ransomware attack encrypts every file on the file server. Which CIA property is MOST directly violated? *(Apply)*
 A. Confidentiality
 B. Integrity
 C. Availability
@@ -15,7 +19,7 @@ D. Non-repudiation
 
 ---
 
-### Q2. A bank's transaction log is altered after the fact to hide a transfer. Which property failed?
+### Q2. A bank's transaction log is altered after the fact to hide a transfer. Which property failed? *(Apply)*
 A. Confidentiality
 B. Integrity
 C. Availability
@@ -23,7 +27,7 @@ D. Authentication
 
 ---
 
-### Q3. Which of the following is NOT part of the CIA triad?
+### Q3. Which of the following is NOT part of the CIA triad? *(Remember)*
 A. Confidentiality
 B. Integrity
 C. Authentication
@@ -31,7 +35,7 @@ D. Availability
 
 ---
 
-### Q4. Non-repudiation guarantees:
+### Q4. Non-repudiation guarantees: *(Understand)*
 A. The message was not altered in transit
 B. The sender cannot later deny sending the message
 C. Only the intended recipient can read the message
@@ -39,7 +43,7 @@ D. The message reaches the destination on time
 
 ---
 
-### Q5. In the AAA model, what does the third A stand for?
+### Q5. In the AAA model, what does the third A stand for? *(Remember)*
 A. Authorization
 B. Accounting
 C. Auditing only
@@ -47,7 +51,7 @@ D. Access
 
 ---
 
-### Q6. A user enters their username, password, and a code from their authenticator app. This is:
+### Q6. A user enters their username, password, and a code from their authenticator app. This is: *(Apply)*
 A. Authorization
 B. Authentication
 C. Accounting
@@ -55,7 +59,7 @@ D. Identification
 
 ---
 
-### Q7. After login, the system checks whether the user can view /payroll. This is:
+### Q7. After login, the system checks whether the user can view /payroll. This is: *(Apply)*
 A. Authentication
 B. Authorization
 C. Identification
@@ -63,7 +67,7 @@ D. Auditing
 
 ---
 
-### Q8. In Zero Trust, which component makes the access decision based on policy and risk signals?
+### Q8. In Zero Trust, which component makes the access decision based on policy and risk signals? *(Remember)*
 A. Policy Enforcement Point (PEP)
 B. Policy Administrator (PA)
 C. Policy Engine (PE)
@@ -71,7 +75,7 @@ D. Implicit Trust Zone
 
 ---
 
-### Q9. Which Zero Trust component sits in the **data plane** and physically allows or blocks the request?
+### Q9. Which Zero Trust component sits in the **data plane** and physically allows or blocks the request? *(Remember)*
 A. Policy Engine
 B. Policy Administrator
 C. Policy Enforcement Point
@@ -79,7 +83,7 @@ D. Threat Scope Reduction
 
 ---
 
-### Q10. "Adaptive Identity" in Zero Trust means:
+### Q10. "Adaptive Identity" in Zero Trust means: *(Understand)*
 A. The user can change their identity at runtime
 B. Authentication strength scales with context (device, location, behavior)
 C. The PEP rewrites the identity token
@@ -87,7 +91,7 @@ D. Multiple identities are merged into one
 
 ---
 
-### Q11. An employee sees a sign that says "Premises monitored 24/7 by CCTV." Even if no camera exists, what is the sign?
+### Q11. An employee sees a sign that says "Premises monitored 24/7 by CCTV." Even if no camera exists, what is the sign? *(Analyze)*
 A. Preventive control
 B. Corrective control
 C. Deterrent control
@@ -95,7 +99,7 @@ D. Compensating control
 
 ---
 
-### Q12. A motion sensor that triggers a SIEM alert when someone enters the server room after hours is:
+### Q12. A motion sensor that triggers a SIEM alert when someone enters the server room after hours is: *(Apply)*
 A. Preventive
 B. Detective
 C. Deterrent
@@ -103,7 +107,7 @@ D. Directive
 
 ---
 
-### Q13. The company's Acceptable Use Policy (AUP) is which type of control?
+### Q13. The company's Acceptable Use Policy (AUP) is which type of control? *(Understand)*
 A. Technical
 B. Managerial
 C. Operational
@@ -111,7 +115,7 @@ D. Physical
 
 ---
 
-### Q14. A biometric door lock at the data center is best classified as:
+### Q14. A biometric door lock at the data center is best classified as: *(Apply)*
 A. Technical / Preventive
 B. Physical / Preventive
 C. Physical / Deterrent
@@ -119,7 +123,7 @@ D. Operational / Detective
 
 ---
 
-### Q15. The team cannot patch a legacy SCADA system without breaking it, so they air-gap it and add extra logging. The extra logging is a:
+### Q15. The team cannot patch a legacy SCADA system without breaking it, so they air-gap it and add extra logging. The extra logging is a: *(Analyze)*
 A. Preventive control
 B. Compensating control
 C. Directive control
@@ -127,7 +131,7 @@ D. Corrective control
 
 ---
 
-### Q16. Antivirus software quarantines a malicious file mid-execution. The quarantine action is BEST classified as:
+### Q16. Antivirus software quarantines a malicious file mid-execution. The quarantine action is BEST classified as: *(Analyze)*
 A. Preventive
 B. Corrective
 C. Detective
@@ -135,7 +139,7 @@ D. Deterrent
 
 ---
 
-### Q17. A CISO wants to know how the current security program compares to ISO 27001 requirements. The appropriate exercise is a:
+### Q17. A CISO wants to know how the current security program compares to ISO 27001 requirements. The appropriate exercise is a: *(Apply)*
 A. Penetration test
 B. Gap analysis
 C. Tabletop exercise
@@ -143,7 +147,7 @@ D. Risk register update
 
 ---
 
-### Q18. Which of the following is a **Directive** control?
+### Q18. Which of the following is a **Directive** control? *(Understand)*
 A. A firewall rule blocking port 23
 B. A poster reminding employees not to tailgate
 C. Restoring a server from backup
@@ -151,7 +155,7 @@ D. A camera recording the lobby
 
 ---
 
-### Q19. Before deploying a change to production, a team writes down the steps to undo it if the change fails. This is the:
+### Q19. Before deploying a change to production, a team writes down the steps to undo it if the change fails. This is the: *(Remember)*
 A. Maintenance window
 B. Impact analysis
 C. Backout plan
@@ -159,7 +163,7 @@ D. Standard Operating Procedure
 
 ---
 
-### Q20. Which body typically approves a high-risk production change?
+### Q20. Which body typically approves a high-risk production change? *(Understand)*
 A. SOC analyst
 B. Change Advisory Board (CAB)
 C. Help desk
@@ -167,7 +171,7 @@ D. CFO
 
 ---
 
-### Q21. A user complains that they were granted access yesterday but not today, even though nothing about *them* changed. The Zero Trust system likely re-evaluated:
+### Q21. A user complains that they were granted access yesterday but not today, even though nothing about *them* changed. The Zero Trust system likely re-evaluated: *(Analyze)*
 A. Their MAC address only
 B. The risk signals via the Policy Engine
 C. The Implicit Trust Zone size
@@ -175,7 +179,7 @@ D. The Policy Administrator's name
 
 ---
 
-### Q22. Which of the following BEST illustrates "least privilege" combined with Zero Trust's "Threat Scope Reduction"?
+### Q22. Which of the following BEST illustrates "least privilege" combined with Zero Trust's "Threat Scope Reduction"? *(Evaluate)*
 A. Giving every employee Domain Admin to simplify support
 B. Restricting each service account to only the APIs it needs
 C. Sharing one privileged account among the SOC team
@@ -183,7 +187,7 @@ D. Disabling logging to reduce noise
 
 ---
 
-### Q23. A scenario: An attacker forges an email pretending to be the CFO, instructing finance to wire $50,000. Finance wires the money. Which security property would have BEST prevented the CFO from later denying their (fake) instructions had they been real?
+### Q23. A scenario: An attacker forges an email pretending to be the CFO, instructing finance to wire $50,000. Finance wires the money. Which security property would have BEST prevented the CFO from later denying their (fake) instructions had they been real? *(Analyze)*
 A. Confidentiality
 B. Availability
 C. Non-repudiation (via digital signatures on email)
@@ -191,7 +195,7 @@ D. Integrity of the SMTP header only
 
 ---
 
-### Q24. Which sequence reflects the correct access lifecycle?
+### Q24. Which sequence reflects the correct access lifecycle? *(Understand)*
 A. Authorization → Authentication → Identification → Accounting
 B. Identification → Authentication → Authorization → Accounting
 C. Accounting → Identification → Authentication → Authorization
@@ -199,7 +203,7 @@ D. Authentication → Identification → Accounting → Authorization
 
 ---
 
-### Q25. The control category for **mandatory security awareness training** delivered annually is BEST described as:
+### Q25. The control category for **mandatory security awareness training** delivered annually is BEST described as: *(Understand)*
 A. Preventive (it teaches users to avoid phishing)
 B. Corrective
 C. Directive only
@@ -207,7 +211,9 @@ D. Compensating
 
 ---
 
-### Q26. A small company has no SIEM and cannot afford one. They implement weekly manual log reviews instead. The manual reviews function as a:
+### Q26. A small company has no SIEM and cannot afford one. They implement weekly manual log reviews instead. The manual reviews function as a: *(Create)*
+
+> *Create-level note:* the question is framed as a control-design exercise — you are choosing *which* category best describes the *substitute architecture* you've designed.
 A. Preventive control
 B. Compensating control
 C. Directive control

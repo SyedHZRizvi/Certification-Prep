@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~50 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=supplier+relationship+management+explained" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="OzxCaaQrOKw" href="https://www.youtube.com/results?search_query=supplier+relationship+management+explained" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 10 min · SRM lifecycle</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=supplier+segmentation+tiering+procurement" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="67gQEUtbjSE" href="https://www.youtube.com/results?search_query=supplier+segmentation+tiering+procurement" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 11 min · Strategic to tail</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=supplier+scorecard+KPI+QCD" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="MtsVTZoiTqU" href="https://www.youtube.com/results?search_query=supplier+scorecard+KPI+QCD" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 12 min · QCDS + ESG</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=supplier+development+kaizen+improvement" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="MmsIcO_0_dA" href="https://www.youtube.com/results?search_query=supplier+development+kaizen+improvement" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -61,7 +61,7 @@
       <span class="vg-duration">⏱ 9 min · Kaizen at suppliers</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=supplier+diversity+program+MBE+WBE+benefits" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="NwihMW6z1Ls" href="https://www.youtube.com/results?search_query=supplier+diversity+program+MBE+WBE+benefits" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -75,7 +75,7 @@
 ## 📚 Recommended (~32 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=quarterly+business+review+QBR+supplier+template" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="Jw-hDwr3mYM" href="https://www.youtube.com/results?search_query=quarterly+business+review+QBR+supplier+template" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 11 min · Agenda + cadence</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=supplier+audit+types+quality+social" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="La4F-vde8sQ" href="https://www.youtube.com/results?search_query=supplier+audit+types+quality+social" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -93,7 +93,7 @@
       <span class="vg-duration">⏱ 11 min · Quality, social, cyber</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=supplier+innovation+program+best+practice" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="3Jj_ebzta1o" href="https://www.youtube.com/results?search_query=supplier+innovation+program+best+practice" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -107,7 +107,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=vested+outsourcing+sourcing+business+model" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="mGLheZVBvH4" href="https://www.youtube.com/results?search_query=vested+outsourcing+sourcing+business+model" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 22 min · Win-win outsourcing model</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=supplier+exit+management+plan" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="RVsLW-CYrIs" href="https://www.youtube.com/results?search_query=supplier+exit+management+plan" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

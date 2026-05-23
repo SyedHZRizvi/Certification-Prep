@@ -7,7 +7,7 @@
 
 ## Questions
 
-### Q1. A "foundation model" is BEST described as:
+### Q1. A "foundation model" is BEST described as: *(Remember)*
 A. A small model trained for one specific task
 B. A large pre-trained model adaptable to many downstream tasks
 C. An older rule-based AI system
@@ -15,7 +15,7 @@ D. A SQL database optimized for ML
 
 ---
 
-### Q2. The neural network architecture underlying virtually every modern LLM is the:
+### Q2. The neural network architecture underlying virtually every modern LLM is the: *(Remember)*
 A. Convolutional Neural Network (CNN)
 B. Recurrent Neural Network (RNN)
 C. Transformer
@@ -23,7 +23,7 @@ D. Decision Tree
 
 ---
 
-### Q3. In an LLM, a "token" is:
+### Q3. In an LLM, a "token" is: *(Remember)*
 A. A user authentication credential
 B. A small chunk of text (usually 3–4 characters) the model processes
 C. A parameter of the neural network
@@ -31,7 +31,7 @@ D. An API call
 
 ---
 
-### Q4. An "embedding" is:
+### Q4. An "embedding" is: *(Understand)*
 A. A multi-dimensional numerical vector that represents the meaning of text/image/audio
 B. The same thing as a token
 C. The model's loss function
@@ -39,7 +39,7 @@ D. A type of GPU
 
 ---
 
-### Q5. The "context window" of an LLM refers to:
+### Q5. The "context window" of an LLM refers to: *(Understand)*
 A. The screen size of the chat UI
 B. The maximum number of tokens (prompt + response) the model can process in a single call
 C. The number of training documents
@@ -47,7 +47,7 @@ D. The number of users connected concurrently
 
 ---
 
-### Q6. You want the same factual answer every time when looking up a customer ID. The BEST inference parameter to lower is:
+### Q6. You want the same factual answer every time when looking up a customer ID. The BEST inference parameter to lower is: *(Apply)*
 A. Max tokens
 B. Top-p
 C. Temperature
@@ -55,7 +55,7 @@ D. Batch size
 
 ---
 
-### Q7. Which inference parameter caps the LENGTH of the generated response?
+### Q7. Which inference parameter caps the LENGTH of the generated response? *(Remember)*
 A. Top-k
 B. Temperature
 C. Max tokens
@@ -63,7 +63,7 @@ D. Top-p
 
 ---
 
-### Q8. Which statement about hallucinations is TRUE?
+### Q8. Which statement about hallucinations is TRUE? *(Understand)*
 A. They only happen with very small models
 B. They are confidently wrong outputs that sound plausible
 C. They are eliminated by setting temperature to 0
@@ -71,7 +71,7 @@ D. They cannot be reduced
 
 ---
 
-### Q9. The MOST common architectural technique for reducing hallucinations by feeding real source data into the prompt is:
+### Q9. The MOST common architectural technique for reducing hallucinations by feeding real source data into the prompt is: *(Apply)*
 A. Fine-tuning
 B. Retrieval-Augmented Generation (RAG)
 C. Lowering top-k
@@ -79,7 +79,7 @@ D. Quantization
 
 ---
 
-### Q10. Which is a MULTIMODAL capability?
+### Q10. Which is a MULTIMODAL capability? *(Understand)*
 A. Plain text-to-text chat
 B. Accepting an image as input and producing a text description
 C. SQL query execution
@@ -87,7 +87,7 @@ D. Network packet inspection
 
 ---
 
-### Q11. For English text, roughly how many words equals 1,000 tokens?
+### Q11. For English text, roughly how many words equals 1,000 tokens? *(Remember)*
 A. ~250
 B. ~500
 C. ~750
@@ -95,7 +95,7 @@ D. ~5,000
 
 ---
 
-### Q12. The PRIMARY cost driver for most LLM API usage (including Bedrock) is:
+### Q12. The PRIMARY cost driver for most LLM API usage (including Bedrock) is: *(Understand)*
 A. The number of GPU instances
 B. The number of input + output tokens processed
 C. The number of users
@@ -103,7 +103,7 @@ D. The size of the model file
 
 ---
 
-### Q13. Which task is GENERATIVE AI BEST suited for?
+### Q13. Which task is GENERATIVE AI BEST suited for? *(Apply)*
 A. Real-time fraud scoring of millions of transactions
 B. Calculating payroll tax withholding
 C. Summarizing long customer support transcripts
@@ -111,7 +111,7 @@ D. Storing customer data
 
 ---
 
-### Q14. Which set of inference parameters would BEST encourage creative, varied output?
+### Q14. Which set of inference parameters would BEST encourage creative, varied output? *(Apply)*
 A. Temperature 0.0, top-p 0.1, max tokens 50
 B. Temperature 0.8, top-p 0.9, max tokens 500
 C. Temperature 0.0, top-k 1, max tokens 50
@@ -119,7 +119,7 @@ D. Temperature 0.0, max tokens 1000
 
 ---
 
-### Q15. A "Large Language Model" (LLM) is:
+### Q15. A "Large Language Model" (LLM) is: *(Remember)*
 A. A graphics rendering algorithm
 B. A foundation model specialized in text
 C. A database system
@@ -127,7 +127,7 @@ D. A type of CPU
 
 ---
 
-### Q16. Which is NOT typically a way to reduce hallucinations?
+### Q16. Which is NOT typically a way to reduce hallucinations? *(Analyze)*
 A. Use RAG to ground answers in real data
 B. Lower the temperature
 C. Add detailed system prompts and few-shot examples
@@ -135,7 +135,7 @@ D. Increase the temperature and top-p
 
 ---
 
-### Q17. Two documents about the same topic will have embeddings that are:
+### Q17. Two documents about the same topic will have embeddings that are: *(Understand)*
 A. Identical character strings
 B. Numerically close in vector space (small cosine distance)
 C. Stored in different databases
@@ -143,7 +143,7 @@ D. Always exactly the same vector
 
 ---
 
-### Q18. Which AWS service provides text-EMBEDDING foundation models on Amazon Bedrock?
+### Q18. Which AWS service provides text-EMBEDDING foundation models on Amazon Bedrock? *(Remember)*
 A. Amazon Titan Text Embeddings
 B. Amazon Polly
 C. Amazon Personalize
@@ -151,7 +151,7 @@ D. AWS Glue
 
 ---
 
-### Q19. Pre-training a foundation model from scratch is:
+### Q19. Pre-training a foundation model from scratch is: *(Evaluate)*
 A. Done by most enterprises monthly
 B. A free feature of AWS Free Tier
 C. Extremely expensive — typically done by model providers, not customers
@@ -159,7 +159,7 @@ D. Automatic when you call Bedrock
 
 ---
 
-### Q20. A 200K-token context window allows you to fit approximately:
+### Q20. A 200K-token context window allows you to fit approximately: *(Apply)*
 A. Two pages of text
 B. About 500 pages of text
 C. One sentence
@@ -167,7 +167,7 @@ D. A 5 GB binary file
 
 ---
 
-### Q21. Generative AI is the WRONG choice when:
+### Q21. Generative AI is the WRONG choice when: *(Evaluate)*
 A. Drafting marketing copy
 B. Summarizing customer reviews
 C. Computing exact financial totals that must reconcile to the cent
@@ -175,7 +175,7 @@ D. Translating product descriptions across languages
 
 ---
 
-### Q22. Which is TRUE about temperature?
+### Q22. Which is TRUE about temperature? *(Analyze)*
 A. A higher temperature always increases accuracy
 B. A higher temperature increases randomness/creativity but can also increase hallucinations
 C. Temperature has no effect on output
@@ -183,7 +183,7 @@ D. Temperature controls input token length
 
 ---
 
-### Q23. Embeddings are MOST commonly used to power:
+### Q23. Embeddings are MOST commonly used to power: *(Apply)*
 A. Semantic search, recommendations, clustering, and RAG retrieval
 B. GPU memory allocation
 C. The serverless inference cold-start fix
@@ -191,7 +191,7 @@ D. IAM policy evaluation
 
 ---
 
-### Q24. Which is the BEST description of multimodal models?
+### Q24. Which is the BEST description of multimodal models? *(Understand)*
 A. Models that only work in one modality (text)
 B. Models that natively handle multiple input/output modalities (e.g., text + image)
 C. Models that run on multiple GPUs simultaneously

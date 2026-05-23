@@ -2,6 +2,11 @@
 
 > **Why this module matters:** Domain 2 (Threats, Vulnerabilities & Mitigations) is **22%** of the exam — the second-largest domain. Half of that is recognizing *who* attacks and *why*. Get the threat-actor matrix cold and a huge chunk of scenario questions become free points.
 
+> **Prerequisites for this module.** Before starting, you should be comfortable with:
+> - [The CIA triad and control types](../Module-01-Security-Fundamentals/Reading.md) — every actor in this module is attempting to violate one or more.
+> - [IAM concepts](../Module-03-Identity-Access-Management/Reading.md) — most attacks chain through credential or identity compromise.
+> - General internet topology (DNS, public IPs, TLS) — useful for understanding C2 infrastructure and watering-hole attacks.
+
 ---
 
 ## 🍕 A Story: Four People Want To Get Into Your House
@@ -142,11 +147,12 @@ Knowing your enemy = better defense. Sec+ tests these intel categories:
 - C2 server fingerprints
 
 ### Threat intelligence terms
-- **TTPs** — Tactics, Techniques, Procedures (MITRE ATT&CK framework)
-- **Indicators of Compromise (IOC)** — artifacts that suggest a compromise
+- **TTPs** — Tactics, Techniques, Procedures (MITRE ATT&CK framework, **MITRE Corporation, 2013** — first public release; refreshed continually, with v15 published April 2024)
+- **Indicators of Compromise (IOC)** — artifacts that suggest a compromise (concept introduced by Mandiant in *OpenIOC*, 2011)
 - **Indicators of Attack (IOA)** — patterns suggesting an attack in progress
 - **Threat hunting** — proactively searching for unknown threats already in your environment (vs reactive IR)
-- **MITRE ATT&CK** — global knowledge base of adversary TTPs
+- **MITRE ATT&CK** — global knowledge base of adversary TTPs (the Lockheed Martin **Cyber Kill Chain** model, Hutchins, Cloppert & Amin, *Leading Issues in Information Warfare and Security Research*, 2011, is the predecessor)
+- **Diamond Model of Intrusion Analysis** — Caltagirone, Pendergast & Betz (2013) — four-vertex model (Adversary, Capability, Infrastructure, Victim); referenced by Sec+ as an analytical framework
 
 ---
 
@@ -179,6 +185,28 @@ Knowing your enemy = better defense. Sec+ tests these intel categories:
 | 3 | **Hacktivist** | Philosophical / political | **Web defacement monitoring** + WAF + integrity monitoring on web root |
 
 PBQ might present 4 incidents + 4 actor names and ask you to drag-match.
+
+---
+
+## 📊 Case Study — SolarWinds Sunburst / Nobelium (2020-2021)
+
+**Situation.** **SolarWinds Orion** is a network-monitoring suite used by 33,000+ enterprises, including all five branches of the US military, the State Department, Treasury, Department of Homeland Security, Commerce, Energy (including the National Nuclear Security Administration), Cisco, Intel, Microsoft, Deloitte, and ~425 of the Fortune 500. Between **September 2019 and February 2020**, attackers later attributed by the US Cybersecurity & Infrastructure Security Agency (CISA), the FBI, and NSA to the Russian Foreign Intelligence Service (**SVR**, tracked as APT29 / Cozy Bear / Nobelium / Midnight Blizzard) compromised SolarWinds' build pipeline.
+
+**Decision.** Rather than steal code or burn the foothold, the attackers added a **malicious DLL (SolarWinds.Orion.Core.BusinessLayer.dll)** to legitimate Orion software updates. The trojanized DLL was signed with SolarWinds' valid code-signing certificate — meaning every customer's automatic update mechanism trusted it. From **March to June 2020**, SolarWinds digitally signed and shipped the backdoored update (later named **SUNBURST**) to ~18,000 customers worldwide. SUNBURST sat dormant for 12-14 days post-install to evade dynamic analysis, then beaconed to a domain (`avsvmcloud[.]com`) using DGA-generated subdomains that looked like Orion telemetry. From the 18,000 compromised customers, the attackers hand-selected **~100 high-value targets** for second-stage **TEARDROP** and **RAINDROP** payloads — sufficient operational security to evade detection for **8-9 months**.
+
+**Outcome.** Disclosure came not from SolarWinds or the US government but from **FireEye (now Mandiant)**, which on **8 December 2020** publicly disclosed that its own red-team tools had been stolen. FireEye's investigation traced the breach to SolarWinds Orion. Microsoft, the US Treasury, Commerce, State, DHS, and Energy departments all confirmed breaches by 14 December. The Microsoft CEO Satya Nadella publicly stated SolarWinds was "the largest and most sophisticated attack the world has ever seen." Remediation cost the US federal government an estimated **$100+ billion** (Brookings Institution estimate, 2021). SolarWinds' stock fell 40% in one week. The CEO retired. In October 2023 the **SEC charged SolarWinds and its CISO with securities fraud** for misleading investors about cybersecurity practices — the first time a public-company CISO faced personal SEC charges. The charges against the CISO personally were dismissed by a federal judge in July 2024, but the case against the company continued.
+
+**Lesson for the exam / for practitioners.** This case touches almost every concept in Module 4:
+- **Actor classification.** SVR is the textbook **APT / nation-state** — patient (8-9 months pre-detection), well-resourced (custom malware that evaded every commercial AV/EDR), motivated by **espionage** (intelligence collection), not financial. Sec+ tests this distinction: a campaign with no monetization but extensive persistence is APT, not organized crime.
+- **Supply-chain vector.** SUNBURST exploited *trust* in vendor software updates. The compromised code was *signed* with a legitimate certificate. The exam asks: which threat vector is illustrated? — answer is **supply chain**, specifically **vendor / software supply chain**. Compare with Kaseya (2021, RMM-as-vector) and CCleaner (2017, same pattern).
+- **Threat intel sources.** The detection came from a *private commercial* source (FireEye), not government feeds. **CISA's Emergency Directive 21-01** (13 December 2020) ordered all federal civilian agencies to disconnect Orion immediately. This is exactly the kind of cross-sector sharing that **ISACs / AIS / STIX-TAXII** are designed to enable; SolarWinds also drove faster updates to those programs.
+- **IOC vs IOA.** Static IOCs (`avsvmcloud[.]com`, file hashes of the trojanized DLL) were published within days; **IOA** patterns (long dormant period after install + DGA-generated subdomains + targeting of Active Directory) generalized to detect *future* similar attacks — these IOAs became part of MITRE ATT&CK as new techniques.
+- **The CISO-personal-liability angle.** The SEC's case against the CISO marked an inflection point: corporate security disclosures are now SEC-relevant under the **Cybersecurity Disclosure Rule** (effective December 2023; companies must disclose material cybersecurity incidents within 4 business days). Sec+ Domain 5 (GRC) covers this.
+
+**Discussion (Socratic).**
+- **Q1:** SolarWinds' build pipeline was compromised for months. Modern secure-CI/CD practice (Module 10) emphasizes reproducible builds, signed provenance (SLSA / Sigstore), and SBOMs. If you were SolarWinds' new CISO in 2021, what *three* technical controls would you prioritize in the first 90 days — and how would you decide between fixing the build pipeline versus offering customers better runtime detection? Argue each side.
+- **Q2:** ~18,000 customers were exposed; ~100 were hand-selected for stage-2 implants. The other 17,900 were not exploited but still trusted a backdoored binary in their environment. Were those 17,900 *breached* or merely *compromised*? Defend a definition with reference to NIST SP 800-61 (Module 8) IR terminology, and explain how this affects breach-notification obligations under GDPR/state laws.
+- **Q3:** The SEC charged the CISO personally. Critics argue this chills security-honesty (CISOs will hide problems to avoid personal liability); proponents argue it's the only way to force public-company boards to take cybersecurity seriously. Build the strongest argument on each side, then state which you'd defend in a CISO peer-network discussion and why.
 
 ---
 
@@ -255,12 +283,30 @@ You now know:
 3. 📋 [Cheat-Sheet.md](./Cheat-Sheet.md)
 4. ➡️ [Module 5 — Vulnerabilities & Attacks](../Module-05-Vulnerabilities-Attacks/Reading.md) (the big one)
 
+> **Where this leads.**
+> - Inside this course: [Module 5](../Module-05-Vulnerabilities-Attacks/Reading.md) covers *how* actors execute (the techniques in the MITRE ATT&CK matrix); [Module 8](../Module-08-Security-Operations/Reading.md) covers detection, threat hunting, and incident response on actor behaviors; [Module 9](../Module-09-GRC-Risk-Compliance/Reading.md) covers third-party / supply-chain risk programs that SolarWinds put on every CISO agenda.
+> - Cross-course: AWS AI Practitioner (course 07) discusses prompt-injection threats — a new "AI-era" actor capability.
+> - Practice: Practice Exam 1 has ~5 actor/intel questions; Final Mock has ~8.
+
 ---
 
 ## 📚 Further Reading (Optional)
 
-- 📖 [MITRE ATT&CK Framework](https://attack.mitre.org/) — the canonical TTP database
+**Primary sources / frameworks:**
+- 📄 MITRE Corporation. *ATT&CK for Enterprise* (2013-present). [attack.mitre.org](https://attack.mitre.org/). v15 (April 2024) is the current major release.
+- 📄 Hutchins, Cloppert & Amin (2011). "Intelligence-Driven Computer Network Defense Informed by Analysis of Adversary Campaigns and Intrusion Kill Chains." Lockheed Martin / *Leading Issues in Information Warfare and Security Research*. (The Cyber Kill Chain.)
+- 📄 Caltagirone, S., Pendergast, A. & Betz, C. (2013). *The Diamond Model of Intrusion Analysis*. Center for Cyber Intelligence Analysis and Threat Research.
+- 📄 OASIS *STIX 2.1* (2021) and *TAXII 2.1* — structured threat-intel exchange standards.
+
+**Case-study sources (SolarWinds):**
+- 📄 FireEye/Mandiant (2020). "Highly Evasive Attacker Leverages SolarWinds Supply Chain to Compromise Multiple Global Victims with SUNBURST Backdoor." 8 December 2020 disclosure.
+- 📄 CISA (2020). [*Emergency Directive 21-01*](https://www.cisa.gov/news-events/directives/ed-21-01-mitigate-solarwinds-orion-code-compromise). 13 December 2020.
+- 📄 US Senate Homeland Security & Governmental Affairs Committee (2021). *SolarWinds Hearings*. (Public testimony from CrowdStrike, Microsoft, FireEye, SolarWinds.)
+- 📄 SEC v. SolarWinds Corp. & Brown, 1:23-cv-09518 (S.D.N.Y., filed 30 October 2023). The complaint and the July 2024 partial dismissal opinion are read in corporate-governance and security-disclosure courses.
+
+**Practitioner:**
 - 📖 [CISA Known Exploited Vulnerabilities (KEV) catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)
-- 📖 [Verizon Data Breach Investigations Report (DBIR)](https://www.verizon.com/business/resources/reports/dbir/) — annual breach trends
-- 📖 [Mandiant APT reports](https://www.mandiant.com/resources/reports) — case studies of named APT groups
-- 📖 [CISA Automated Indicator Sharing](https://www.cisa.gov/topics/cyber-threats-and-advisories/information-sharing/automated-indicator-sharing-ais)
+- 📖 [Verizon Data Breach Investigations Report 2024](https://www.verizon.com/business/resources/reports/dbir/) — annual breach trends
+- 📖 [Mandiant M-Trends Annual Report 2024](https://www.mandiant.com/m-trends) — dwell times, sectoral data
+- 📖 [CISA Automated Indicator Sharing (AIS)](https://www.cisa.gov/topics/cyber-threats-and-advisories/information-sharing/automated-indicator-sharing-ais)
+- 📖 [Microsoft Digital Defense Report 2024](https://www.microsoft.com/en-us/security/security-insider/microsoft-digital-defense-report-2024) — global threat landscape

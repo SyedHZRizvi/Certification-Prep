@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~60 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=EOQ+Economic+Order+Quantity+derivation" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="gFbvAivvU3g" href="https://www.youtube.com/results?search_query=EOQ+Economic+Order+Quantity+derivation" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 16 min · The classic derivation</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Reorder+Point+Safety+Stock+service+level" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="XFqC8jEelho" href="https://www.youtube.com/results?search_query=Reorder+Point+Safety+Stock+service+level" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 14 min · z-values and σ_LT</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=ABC+analysis+inventory+Pareto" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="iZR22lA6JiE" href="https://www.youtube.com/results?search_query=ABC+analysis+inventory+Pareto" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 12 min · 80/20 in inventory</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Cycle+counting+IRA+inventory+accuracy" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="S2oUW7iBAW4" href="https://www.youtube.com/results?search_query=Cycle+counting+IRA+inventory+accuracy" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~32 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=EPQ+Economic+Production+Quantity+formula" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="tSYOpAwM_yw" href="https://www.youtube.com/results?search_query=EPQ+Economic+Production+Quantity+formula" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 10 min · Production vs purchase</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Inventory+Turnover+Days+Supply+calculation" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="27UBb6U5DYA" href="https://www.youtube.com/results?search_query=Inventory+Turnover+Days+Supply+calculation" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 10 min · KPI math</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Vendor+Managed+Inventory+VMI+supply+chain" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="jFPl55jsZCQ" href="https://www.youtube.com/results?search_query=Vendor+Managed+Inventory+VMI+supply+chain" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Quantity+Discount+EOQ+model" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="FUxC98sKR34" href="https://www.youtube.com/results?search_query=Quantity+Discount+EOQ+model" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 22 min · Price-break model</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=ABC+XYZ+matrix+inventory+classification" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="-GoYI746kEY" href="https://www.youtube.com/results?search_query=ABC+XYZ+matrix+inventory+classification" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 16 min · The 9-cell view</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=FIFO+LIFO+weighted+average+inventory+valuation" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="r1qSaaSyY3c" href="https://www.youtube.com/results?search_query=FIFO+LIFO+weighted+average+inventory+valuation" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

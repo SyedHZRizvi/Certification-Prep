@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~54 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Manufacturing+lead+time+queue+setup+run+wait+move" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="e2QUnEk5wBo" href="https://www.youtube.com/results?search_query=Manufacturing+lead+time+queue+setup+run+wait+move" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 14 min · Q-S-R-W-M</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Dispatching+rules+SPT+EDD+FCFS+example" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="L8981RRV-y4" href="https://www.youtube.com/results?search_query=Dispatching+rules+SPT+EDD+FCFS+example" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 14 min · Worked sequence example</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Critical+Ratio+CR+priority+sequencing" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="YwqUoRe0Ms4" href="https://www.youtube.com/results?search_query=Critical+Ratio+CR+priority+sequencing" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 10 min · CR formula explained</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Shop+floor+control+production+activity+control" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="rvxbA0JiHVQ" href="https://www.youtube.com/results?search_query=Shop+floor+control+production+activity+control" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~32 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Manufacturing+cell+group+technology+layout" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="u38l1tV5lkc" href="https://www.youtube.com/results?search_query=Manufacturing+cell+group+technology+layout" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 12 min · Cell layout benefits</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Gantt+chart+scheduling+production" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="BtbuShkGj4I" href="https://www.youtube.com/results?search_query=Gantt+chart+scheduling+production" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 10 min · Visual scheduling</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Push+vs+Pull+manufacturing+system" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="3kremrFIGPo" href="https://www.youtube.com/results?search_query=Push+vs+Pull+manufacturing+system" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Johnson+rule+two+machine+scheduling" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="Kk5zhoRA1Uc" href="https://www.youtube.com/results?search_query=Johnson+rule+two+machine+scheduling" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 20 min · Multi-machine extension</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Factory+Physics+little+law+WIP" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="c5HNkn6ZibY" href="https://www.youtube.com/results?search_query=Factory+Physics+little+law+WIP" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 25 min · WIP = TH × CT</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Manufacturing+execution+system+MES+shop+floor" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="lRHl1zTxMRQ" href="https://www.youtube.com/results?search_query=Manufacturing+execution+system+MES+shop+floor" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

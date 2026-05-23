@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~100 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+Azure+VNet+fundamentals+subnets" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+Azure+VNet+fundamentals+subnets" target="_blank" rel="noopener" data-video-id="nDtCSQyG_I8">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 28 min · Start here</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+hub+spoke+topology+Azure+VNet+peering" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+hub+spoke+topology+Azure+VNet+peering" target="_blank" rel="noopener" data-video-id="J4S6AxYNDtM">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 25 min · Non-transitivity, UDRs</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+private+endpoint+vs+service+endpoint" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+private+endpoint+vs+service+endpoint" target="_blank" rel="noopener" data-video-id="57ZwdztCx2w">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 24 min · DNS gotcha included</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Adam+Marczak+Azure+VPN+gateway+ExpressRoute" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Adam+Marczak+Azure+VPN+gateway+ExpressRoute" target="_blank" rel="noopener" data-video-id="5NMcM4zJPM4">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~45 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+ExpressRoute+SKU+local+standard+premium+global+reach" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+ExpressRoute+SKU+local+standard+premium+global+reach" target="_blank" rel="noopener" data-video-id="oevwZZ1YFS0">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 18 min · Global Reach + Direct</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+private+DNS+zone+resolver+hybrid" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+private+DNS+zone+resolver+hybrid" target="_blank" rel="noopener" data-video-id="V7tHg_954t8">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 14 min · Hybrid DNS done right</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+UDR+route+table+forced+tunneling" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+UDR+route+table+forced+tunneling" target="_blank" rel="noopener" data-video-id="jxIi0Ul52Hc">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Virtual+WAN+overview" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Virtual+WAN+overview" target="_blank" rel="noopener" data-video-id="QvAvnq9aI9I">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 20 min · Global SD-WAN as a service</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Network+Watcher+troubleshoot+connectivity" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Network+Watcher+troubleshoot+connectivity" target="_blank" rel="noopener" data-video-id="TDwNzB3AOn0">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

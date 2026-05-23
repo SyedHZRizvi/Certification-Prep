@@ -1,12 +1,13 @@
 # ✏️ Module 4 Quiz: Inventory & Distribution
 
 > **Instructions:** 25 questions. Aim for 20/25.
+> Each question tagged with its **Bloom's level**.
 
 ---
 
 ## Questions
 
-### Q1. DRP differs from MRP in that DRP:
+### Q1. DRP differs from MRP in that DRP: *(Analyze)*
 A. Drives off the Master Production Schedule
 B. Explodes a Bill of Materials
 C. Plans distribution network replenishment using time-phased echelons
@@ -14,7 +15,7 @@ D. Is only used inside the plant
 
 ---
 
-### Q2. Inventory Position is:
+### Q2. Inventory Position is: *(Remember)*
 A. On-Hand only
 B. On-Hand + On-Order − Backorders
 C. On-Hand − Safety Stock
@@ -22,7 +23,7 @@ D. Forecasted demand for next month
 
 ---
 
-### Q3. A retailer has 1 DC with safety stock = 1,000. It decentralizes to 4 DCs with similar demand. By the square-root rule, total SS ≈:
+### Q3. A retailer has 1 DC with safety stock = 1,000. It decentralizes to 4 DCs with similar demand. By the square-root rule, total SS ≈: *(Apply)*
 A. 250
 B. 1,000
 C. 2,000
@@ -30,7 +31,7 @@ D. 4,000
 
 ---
 
-### Q4. Safety stock formula:
+### Q4. Safety stock formula: *(Remember)*
 A. Z × σ × √L
 B. d × L
 C. EOQ × cycle time
@@ -38,7 +39,7 @@ D. (Max − Min) / 2
 
 ---
 
-### Q5. Moving from 95% to 99.9% service level approximately:
+### Q5. Moving from 95% to 99.9% service level approximately: *(Understand)*
 A. Doubles safety stock
 B. Halves safety stock
 C. Has no impact on safety stock
@@ -46,7 +47,7 @@ D. Eliminates safety stock
 
 ---
 
-### Q6. The Bullwhip Effect refers to:
+### Q6. The Bullwhip Effect refers to: *(Understand)*
 A. Demand smoothing across periods
 B. Amplification of demand variability as it moves upstream
 C. Reduction in lead time
@@ -54,7 +55,7 @@ D. Improvement in service level
 
 ---
 
-### Q7. Postponement that ships generic units to a region and configures locally is called:
+### Q7. Postponement that ships generic units to a region and configures locally is called: *(Analyze)*
 A. Time postponement
 B. Form postponement
 C. Place postponement
@@ -62,7 +63,7 @@ D. Pull postponement
 
 ---
 
-### Q8. Benetton dyeing sweaters to actual color demand is an example of:
+### Q8. Benetton dyeing sweaters to actual color demand is an example of: *(Apply)*
 A. Form postponement
 B. Place postponement
 C. Time postponement
@@ -70,7 +71,7 @@ D. Push strategy
 
 ---
 
-### Q9. In a DRP record, the planned order RELEASE is:
+### Q9. In a DRP record, the planned order RELEASE is: *(Understand)*
 A. Equal to the planned order receipt
 B. The receipt offset earlier by the lead time
 C. Always two weeks before receipt
@@ -78,7 +79,7 @@ D. Random
 
 ---
 
-### Q10. ABC classification typically puts ~80% of value into:
+### Q10. ABC classification typically puts ~80% of value into: *(Remember)*
 A. C-items
 B. B-items
 C. A-items
@@ -86,7 +87,7 @@ D. All equally
 
 ---
 
-### Q11. XYZ classification groups by:
+### Q11. XYZ classification groups by: *(Remember)*
 A. Value
 B. Velocity
 C. Demand variability (stability)
@@ -94,7 +95,7 @@ D. Margin
 
 ---
 
-### Q12. FSN classification flags inventory that has not moved as:
+### Q12. FSN classification flags inventory that has not moved as: *(Remember)*
 A. Fast
 B. Slow
 C. Non-moving
@@ -102,7 +103,7 @@ D. Standard
 
 ---
 
-### Q13. VED is typically applied to:
+### Q13. VED is typically applied to: *(Apply)*
 A. Finished goods
 B. Spare parts
 C. Raw materials
@@ -110,7 +111,7 @@ D. Promotional items
 
 ---
 
-### Q14. Cycle counting differs from annual physical inventory in that cycle counting:
+### Q14. Cycle counting differs from annual physical inventory in that cycle counting: *(Understand)*
 A. Counts everything once a year
 B. Is continuous, rotating, and minimally disruptive
 C. Requires shutting down operations
@@ -118,7 +119,7 @@ D. Is less accurate
 
 ---
 
-### Q15. A target Inventory Record Accuracy (IRA) for a high-quality DC is:
+### Q15. A target Inventory Record Accuracy (IRA) for a high-quality DC is: *(Remember)*
 A. 50–70%
 B. 75–85%
 C. 95–99%
@@ -126,7 +127,7 @@ D. Exactly 100%
 
 ---
 
-### Q16. ROP = (d × L) + SS — this stands for:
+### Q16. ROP = (d × L) + SS — this stands for: *(Remember)*
 A. Reorder Point
 B. Rate Order Plan
 C. Replenishment Order Period
@@ -134,7 +135,7 @@ D. Receiving Operations Plan
 
 ---
 
-### Q17. Push replenishment is BEST for:
+### Q17. Push replenishment is BEST for: *(Apply)*
 A. Stable, predictable demand
 B. Daily consumer staples
 C. New product launches and promotions
@@ -142,7 +143,7 @@ D. Long-tail slow movers
 
 ---
 
-### Q18. A primary cure for the bullwhip effect is:
+### Q18. A primary cure for the bullwhip effect is: *(Analyze)*
 A. Larger order batches
 B. Shared POS/sell-through information (CPFR)
 C. Locking down lead times
@@ -150,7 +151,7 @@ D. Increasing safety stock everywhere
 
 ---
 
-### Q19. MEIO (Multi-Echelon Inventory Optimization) generally reduces total network inventory by approximately:
+### Q19. MEIO (Multi-Echelon Inventory Optimization) generally reduces total network inventory by approximately: *(Remember)*
 A. 1–2%
 B. 10–30%
 C. 50%
@@ -158,7 +159,7 @@ D. None — it adds inventory
 
 ---
 
-### Q20. A Periodic Review (P-system) policy:
+### Q20. A Periodic Review (P-system) policy: *(Understand)*
 A. Continuously monitors inventory
 B. Reviews every T periods and orders up to a target level
 C. Reorders 1-for-1 with each unit consumed
@@ -166,7 +167,7 @@ D. Has no maximum
 
 ---
 
-### Q21. The cycle counting method that counts items when the bin reaches zero is:
+### Q21. The cycle counting method that counts items when the bin reaches zero is: *(Remember)*
 A. Random sample
 B. Geographic
 C. Opportunity-based
@@ -174,7 +175,7 @@ D. Control group
 
 ---
 
-### Q22. CPFR stands for:
+### Q22. CPFR stands for: *(Remember)*
 A. Customer Personalized Forecast Reorder
 B. Collaborative Planning, Forecasting, and Replenishment
 C. Capacity Planned Flexible Reorder
@@ -182,7 +183,7 @@ D. Customer Promotion Forecast Refresh
 
 ---
 
-### Q23. In the DRP record:
+### Q23. In the DRP record: *(Apply)*
 
 | Week | 1 | 2 | 3 | 4 |
 |------|---|---|---|---|
@@ -197,7 +198,7 @@ D. Week 4
 
 ---
 
-### Q24. The reorder-point system reorders when:
+### Q24. The reorder-point system reorders when: *(Apply)*
 A. Inventory POSITION ≤ ROP
 B. On-hand ≤ ROP
 C. Cycle time exceeds threshold
@@ -205,7 +206,7 @@ D. Forecast equals zero
 
 ---
 
-### Q25. A DC has Z-score 1.65 (95% service), demand σ = 20 units/wk, lead time = 4 weeks. Safety stock ≈:
+### Q25. A DC has Z-score 1.65 (95% service), demand σ = 20 units/wk, lead time = 4 weeks. Safety stock ≈: *(Apply)*
 A. 33
 B. 66
 C. 80

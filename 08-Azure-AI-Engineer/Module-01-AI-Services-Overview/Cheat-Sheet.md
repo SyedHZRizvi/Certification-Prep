@@ -136,4 +136,43 @@ If you can answer all 5 in 30 seconds, you own Module 1. ✅
 
 ---
 
+## 📐 Decision Matrix — One Glance
+
+| Constraint | Pick |
+|---|---|
+| Need free tier (any kind) | Single-service F0 (one per kind per sub) |
+| Need one bill + one key | Multi-service `AIServices` S0 |
+| Need Azure OpenAI | Always separate `OpenAI` resource (gated) |
+| Code in Azure (App Service / Func / AKS / VM) | System-assigned MI + `Cognitive Services User` role |
+| Code on laptop (dev) | `AzureKeyCredential(key)` |
+| CI/CD off Azure | Service principal w/ Federated Identity (preferred) or client secret |
+| Traffic off public net | Private Endpoint + disable public network |
+| Compliance KMS | CMK + Azure Key Vault |
+| EU-only data residency | EU Data Zone (Azure OpenAI) or single-region S0 |
+| HIPAA + no prompt retention | Azure OpenAI + approved abuse-monitoring opt-out form |
+
+## 🧮 SLA + Throughput Cheats
+
+| Symbol | Means | Where it shows up |
+|---|---|---|
+| **TPM** | Tokens per minute | Azure OpenAI deployment quota |
+| **RPM** | Requests per minute | Azure OpenAI deployment quota |
+| **PTU** | Provisioned Throughput Unit | Reserved capacity SKU |
+| **Standard** | Pay-as-you-go, region-pinned | Default for most Azure OpenAI deployments |
+| **Global Standard** | Cheaper PAYG, globally routed | Use when latency tolerance allows |
+| **Global Batch** | Async batched, ~50% cheaper, 24h SLA | High-volume offline workloads |
+
+## 🛡️ Citations On The Page
+
+| Concept | Source | Year |
+|---|---|---|
+| Multi-tenant resource model | Microsoft Azure ARM docs | 2014→ |
+| Least-privilege RBAC | Saltzer & Schroeder, *Communications of the ACM* | 1975 |
+| Managed Identity | Microsoft Entra ID GA | 2018 (then renamed from Azure AD in 2023) |
+| Responsible AI Standard v2 | Microsoft, *Responsible AI Standard* | June 2022 |
+| Azure OpenAI Service GA | Microsoft Azure blog | January 2023 |
+| NIST AI RMF 1.0 | NIST | January 2023 |
+
+---
+
 ➡️ [Module 2: Responsible AI & Content Safety](../Module-02-Responsible-AI-Content-Safety/Reading.md)

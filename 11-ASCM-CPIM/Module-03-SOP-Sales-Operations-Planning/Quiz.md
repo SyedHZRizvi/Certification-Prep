@@ -7,7 +7,7 @@
 
 ## Questions
 
-### Q1. The S&OP process is run on what cadence?
+### Q1. The S&OP process is run on what cadence? *(Remember)*
 A. Weekly
 B. Monthly
 C. Quarterly
@@ -15,7 +15,7 @@ D. Annually
 
 ---
 
-### Q2. At what level of aggregation does S&OP plan?
+### Q2. At what level of aggregation does S&OP plan? *(Remember)*
 A. SKU level
 B. Component level
 C. Product family level
@@ -23,7 +23,7 @@ D. Work order level
 
 ---
 
-### Q3. In the 5-step Wallace S&OP model, which step is the *demand review*?
+### Q3. In the 5-step Wallace S&OP model, which step is the *demand review*? *(Understand)*
 A. Step 1
 B. Step 2
 C. Step 3
@@ -31,7 +31,7 @@ D. Step 4
 
 ---
 
-### Q4. Which step of S&OP is led by the Operations function?
+### Q4. Which step of S&OP is led by the Operations function? *(Understand)*
 A. Step 1 — Product/Portfolio
 B. Step 2 — Demand Review
 C. Step 3 — Supply Review
@@ -39,7 +39,7 @@ D. Step 5 — Executive S&OP
 
 ---
 
-### Q5. The Executive S&OP meeting is:
+### Q5. The Executive S&OP meeting is: *(Understand)*
 A. Step 1
 B. Step 3
 C. Step 4
@@ -47,7 +47,7 @@ D. Step 5
 
 ---
 
-### Q6. Pre-S&OP (the reconciliation working session) is:
+### Q6. Pre-S&OP (the reconciliation working session) is: *(Understand)*
 A. Step 1
 B. Step 2
 C. Step 4
@@ -55,7 +55,7 @@ D. Step 5
 
 ---
 
-### Q7. The S&OP demand plan should be:
+### Q7. The S&OP demand plan should be: *(Understand)*
 A. Constrained by current capacity
 B. Unconstrained, then reconciled to supply later
 C. Approved only by Sales
@@ -63,7 +63,7 @@ D. Locked for 12 months
 
 ---
 
-### Q8. IBP (Integrated Business Planning) differs from classic S&OP in that IBP:
+### Q8. IBP (Integrated Business Planning) differs from classic S&OP in that IBP: *(Analyze)*
 A. Is shorter horizon
 B. Eliminates the executive review
 C. Adds explicit financial and strategic integration
@@ -71,7 +71,7 @@ D. Operates at the SKU level
 
 ---
 
-### Q9. A plant uses a *level* aggregate strategy. This means:
+### Q9. A plant uses a *level* aggregate strategy. This means: *(Understand)*
 A. Production rate is constant; inventory absorbs demand variation
 B. Production exactly matches demand each period
 C. Production happens only when demand exists
@@ -79,7 +79,7 @@ D. Workforce is hired and fired each month
 
 ---
 
-### Q10. A *chase* aggregate strategy means:
+### Q10. A *chase* aggregate strategy means: *(Remember)*
 A. Production rate is constant
 B. Production exactly matches demand each period
 C. Inventory grows steadily
@@ -87,7 +87,7 @@ D. Workforce is fixed
 
 ---
 
-### Q11. Demand for a product family over 6 months totals 7,200 units. Under a pure *level* strategy, monthly production would be:
+### Q11. Demand for a product family over 6 months totals 7,200 units. Under a pure *level* strategy, monthly production would be: *(Apply)*
 A. 600
 B. 1,000
 C. 1,200
@@ -95,7 +95,7 @@ D. 7,200
 
 ---
 
-### Q12. A union contract prohibits laying off workers and limits overtime severely. Which aggregate strategy fits BEST?
+### Q12. A union contract prohibits laying off workers and limits overtime severely. Which aggregate strategy fits BEST? *(Apply)*
 A. Pure chase
 B. Pure level
 C. Outsourced production
@@ -103,7 +103,7 @@ D. JIT pull
 
 ---
 
-### Q13. A company makes fresh dairy products that cannot be stored. Which aggregate strategy is forced on them?
+### Q13. A company makes fresh dairy products that cannot be stored. Which aggregate strategy is forced on them? *(Apply)*
 A. Level
 B. Chase
 C. Hybrid with heavy inventory
@@ -111,7 +111,7 @@ D. Backorder
 
 ---
 
-### Q14. The S&OP planning horizon is typically:
+### Q14. The S&OP planning horizon is typically: *(Remember)*
 A. 1–4 weeks
 B. 4–12 weeks
 C. 12–24 months or longer
@@ -119,7 +119,7 @@ D. 5+ years
 
 ---
 
-### Q15. Below the S&OP layer in the planning hierarchy sits:
+### Q15. Below the S&OP layer in the planning hierarchy sits: *(Remember)*
 A. The Strategic Plan
 B. Master Production Schedule (MPS)
 C. Production Activity Control (PAC)
@@ -127,7 +127,7 @@ D. Capacity Requirements Planning (CRP)
 
 ---
 
-### Q16. The S&OP process produces "one set of numbers" that integrates:
+### Q16. The S&OP process produces "one set of numbers" that integrates: *(Understand)*
 A. Demand plan, supply plan, financial plan
 B. Quality plan, safety plan, payroll plan
 C. Marketing plan, R&D plan, IT plan
@@ -135,7 +135,7 @@ D. Just the demand and inventory plans
 
 ---
 
-### Q17. Resource Planning (RRP) sits at what level of the capacity hierarchy?
+### Q17. Resource Planning (RRP) sits at what level of the capacity hierarchy? *(Understand)*
 A. The longest-range, strategic layer
 B. The shop-floor execution layer
 C. Inside MRP
@@ -143,7 +143,7 @@ D. Inside PAC
 
 ---
 
-### Q18. A "rolling horizon" in S&OP means:
+### Q18. A "rolling horizon" in S&OP means: *(Understand)*
 A. The plan is frozen for the year
 B. The plan is replanned every monthly cycle
 C. The plan is only updated when major events occur
@@ -151,7 +151,7 @@ D. The plan is set by the board annually
 
 ---
 
-### Q19. In a properly run S&OP, who chairs the Executive S&OP meeting?
+### Q19. In a properly run S&OP, who chairs the Executive S&OP meeting? *(Remember)*
 A. Sales VP
 B. Operations VP
 C. CEO (or top executive)
@@ -159,7 +159,7 @@ D. Supply Chain Director
 
 ---
 
-### Q20. Sales says they can sell 50,000 units in Q4. Operations says capacity is 30,000. This is BEST surfaced in:
+### Q20. Sales says they can sell 50,000 units in Q4. Operations says capacity is 30,000. This is BEST surfaced in: *(Apply)*
 A. Daily shift huddles
 B. Pre-S&OP reconciliation
 C. Each function's individual P&L review
@@ -167,7 +167,7 @@ D. The retrospective
 
 ---
 
-### Q21. A hybrid aggregate strategy might:
+### Q21. A hybrid aggregate strategy might: *(Understand)*
 A. Use level production for the workforce baseline and overtime/contract for demand peaks
 B. Eliminate inventory entirely
 C. Outsource 100% of production
@@ -175,7 +175,7 @@ D. Run only on weekends
 
 ---
 
-### Q22. Step 1 of the 5-step S&OP model is:
+### Q22. Step 1 of the 5-step S&OP model is: *(Remember)*
 A. Demand Review
 B. Supply Review
 C. Product / Portfolio Review
@@ -183,7 +183,7 @@ D. Executive S&OP
 
 ---
 
-### Q23. A company has demand-supply imbalance with demand > supply. The S&OP cycle should consider:
+### Q23. A company has demand-supply imbalance with demand > supply. The S&OP cycle should consider: *(Evaluate)*
 A. Adding capacity, overtime, or de-prioritizing low-margin SKUs
 B. Running a promotion to drive more demand
 C. Laying off workers
@@ -191,7 +191,7 @@ D. Idling the plant
 
 ---
 
-### Q24. S&OP plans should be denominated in:
+### Q24. S&OP plans should be denominated in: *(Understand)*
 A. Units only
 B. Dollars only
 C. Both units AND dollars (especially in mature IBP)
@@ -199,7 +199,7 @@ D. Hours only
 
 ---
 
-### Q25. A team plans every SKU separately and then sums to a total. This is best described as:
+### Q25. A team plans every SKU separately and then sums to a total. This is best described as: *(Apply)*
 A. Top-down forecasting
 B. Bottom-up forecasting
 C. Pyramid forecasting

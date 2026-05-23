@@ -100,3 +100,14 @@ Week 4: Mock exams + Scrum Guide re-reads → REAL EXAM
 👉 [**Module 1: The Agile Mindset**](./Module-01-Agile-Mindset/Reading.md)
 
 You got this. 💪
+
+---
+
+## 🎓 Going Beyond the Exam — Capstone + Recommended Readings
+
+Two additional resources sit alongside the modules:
+
+- 📌 [**Capstone Project**](./Capstone-Project.md) — A 90-day scenario at a 70-person SaaS startup where you diagnose, intervene, and report on a struggling Scrum implementation. Six deliverables, a rubric, and an interview-portfolio-ready output. Integrates ~75% of the course's content. Optional but strongly recommended after Module 8.
+- 📚 [**Recommended Readings**](./Recommended-Readings.md) — A curated map of the canonical Scrum books (Sutherland 2014, Cohn 2005, Adkins 2010, Derby & Larsen 2006, Larman & Vodde 2010), seminal papers (Takeuchi & Nonaka 1986, the Agile Manifesto 2001, Tuckman 1965), industry resources (Scrum.org blog, Atlassian Agile Coach, Mountain Goat Software, *InfoQ* Agile track), and free academic courses (MIT OpenCourseWare 16.842, Stanford's *Designing Lean Operations*, Harvard's *Agile Leadership* on edX). Use it during the course and after passing the exam.
+
+Each module's Reading.md also includes an appended **Case Study** (Spotify, Salesforce ADM, ING Netherlands, John Deere ISG, GE Aviation Digital Twin, Microsoft Windows 7, Toyota's hoshin kanri, Bosch SAFe), **Socratic discussion prompts**, and a **named-source citation appendix** mapping every framework to its originator, year, and publication venue.

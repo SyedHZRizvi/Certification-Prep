@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~45 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+Azure+monitor+log+analytics+overview" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="v68jL-l9Fww" href="https://www.youtube.com/results?search_query=John+Savill+Azure+monitor+log+analytics+overview" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 18 min · Full observability stack</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Adam+Marczak+Azure+Bicep+vs+ARM+templates" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="wkQIyenVfxc" href="https://www.youtube.com/results?search_query=Adam+Marczak+Azure+Bicep+vs+ARM+templates" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 12 min · Modern IaC</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+CLI+vs+PowerShell+cloud+shell" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="8JHY0xPssb8" href="https://www.youtube.com/results?search_query=Azure+CLI+vs+PowerShell+cloud+shell" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 8 min · Which tool when</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Service+Health+vs+Azure+Status+vs+Monitor" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="M1xPK4T4Vls" href="https://www.youtube.com/results?search_query=Azure+Service+Health+vs+Azure+Status+vs+Monitor" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~25 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Advisor+recommendations+walkthrough" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="55lTTFACw-E" href="https://www.youtube.com/results?search_query=Azure+Advisor+recommendations+walkthrough" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 8 min · Recommendations in action</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+Azure+Arc+overview" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="rQBFAKJ-Ea8" href="https://www.youtube.com/results?search_query=John+Savill+Azure+Arc+overview" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 12 min · Multi-cloud / hybrid mgmt</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Migrate+walkthrough+demo" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="SAQwYb9F-_c" href="https://www.youtube.com/results?search_query=Azure+Migrate+walkthrough+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Bicep+language+tutorial+for+beginners" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="17FI_KXQfMg" href="https://www.youtube.com/results?search_query=Bicep+language+tutorial+for+beginners" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 20 min · Hands-on deploy</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Data+Box+how+it+works" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="trBZN7hVeOE" href="https://www.youtube.com/results?search_query=Azure+Data+Box+how+it+works" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 8 min · TB-PB offline transfer</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Microsoft+Service+Trust+Portal+compliance+manager" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="ZMr0kp_cncA" href="https://www.youtube.com/results?search_query=Microsoft+Service+Trust+Portal+compliance+manager" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

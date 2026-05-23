@@ -106,6 +106,16 @@ Usually wrong:
 
 ---
 
+## 📚 Reference cases (high-signal recall)
+
+| Case | What it proves |
+|------|----------------|
+| **ChatGPT launch (Nov 2022)** | Productized conversational UI + RLHF alignment created the GenAI moment; 100M users in 2 months |
+| **Anthropic Claude 3 on Bedrock (Mar 2024)** | Enterprise frontier model with AWS-native IAM/VPC/Guardrails wrapping |
+| **Italian DPA temporary GDPR ban on ChatGPT (Mar 2023)** | Regulatory exposure for public LLMs without data-subject rights |
+
+---
+
 ## ✏️ Quick Self-Check
 
 1. Define foundation model in one sentence. ___

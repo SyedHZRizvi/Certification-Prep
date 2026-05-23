@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~48 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Supply+chain+network+design+strategic" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="IqmrNUoiy7g" href="https://www.youtube.com/results?search_query=Supply+chain+network+design+strategic" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 15 min · Centralized vs decentralized</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Center+of+gravity+facility+location+example" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="r-Z22ddHb_I" href="https://www.youtube.com/results?search_query=Center+of+gravity+facility+location+example" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 11 min · Walk-through with numbers</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Make+or+buy+decision+analysis+example" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="Kho73fZnqBU" href="https://www.youtube.com/results?search_query=Make+or+buy+decision+analysis+example" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 12 min · Numerical break-even</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Outsourcing+offshoring+nearshoring+reshoring+difference" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="8Co1MysXpRk" href="https://www.youtube.com/results?search_query=Outsourcing+offshoring+nearshoring+reshoring+difference" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~30 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Vertical+integration+horizontal+integration+strategy" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="P7dSsPEx8No" href="https://www.youtube.com/results?search_query=Vertical+integration+horizontal+integration+strategy" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 10 min · Real cases (Apple, Tesla)</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Single+source+vs+multi+source+supply" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="CRYG1ThJomA" href="https://www.youtube.com/results?search_query=Single+source+vs+multi+source+supply" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 9 min · Risk vs leverage trade-off</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Supplier+segmentation+Kraljic+matrix" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="67gQEUtbjSE" href="https://www.youtube.com/results?search_query=Supplier+segmentation+Kraljic+matrix" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Cross+docking+how+it+works+Walmart" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="7oNzCUYMA1A" href="https://www.youtube.com/results?search_query=Cross+docking+how+it+works+Walmart" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 16 min · Real-world DC ops</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Caltech+supply+chain+network+optimization" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="djrhQK-dBx0" href="https://www.youtube.com/results?search_query=Caltech+supply+chain+network+optimization" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 28 min · Quant-heavy lecture</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Service+supply+chain+management" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="zvWV2gDkwWE" href="https://www.youtube.com/results?search_query=Service+supply+chain+management" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

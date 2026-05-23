@@ -2,12 +2,16 @@
 
 > **Instructions:** Answer all 26 questions WITHOUT looking at the reading.
 > Aim for 22/26 minimum.
+>
+> Every question is tagged with its **Bloom's taxonomy level**.
+>
+> **Bloom distribution (this quiz):** Remember 6 (23%) · Understand 8 (31%) · Apply 7 (27%) · Analyze/Evaluate 4 (15%) · Create 1 (4%).
 
 ---
 
 ## Questions
 
-### Q1. A user logs in with a password and a fingerprint. This is:
+### Q1. A user logs in with a password and a fingerprint. This is: *(Apply)*
 A. Single-factor (both are "you know")
 B. Two-factor (you know + you are)
 C. Two-factor (both are "you have")
@@ -15,7 +19,7 @@ D. Not authentication, only identification
 
 ---
 
-### Q2. Which of the following is NOT a standard authentication factor recognized by Sec+?
+### Q2. Which of the following is NOT a standard authentication factor recognized by Sec+? *(Remember)*
 A. Something you know
 B. Something you have
 C. Something you are
@@ -23,7 +27,7 @@ D. Something you remember
 
 ---
 
-### Q3. Which biometric metric do you want to be the LOWEST?
+### Q3. Which biometric metric do you want to be the LOWEST? *(Apply)*
 A. FAR (False Acceptance Rate)
 B. FRR (False Rejection Rate)
 C. CER (Crossover Error Rate)
@@ -31,7 +35,7 @@ D. All of the above
 
 ---
 
-### Q4. TOTP differs from HOTP in that:
+### Q4. TOTP differs from HOTP in that: *(Understand)*
 A. TOTP is counter-based; HOTP is time-based
 B. TOTP rotates on a clock (typically 30 sec); HOTP increments per-use
 C. TOTP requires a hardware token; HOTP does not
@@ -39,7 +43,7 @@ D. TOTP is symmetric; HOTP is asymmetric
 
 ---
 
-### Q5. Which MFA method is considered PHISHING-RESISTANT?
+### Q5. Which MFA method is considered PHISHING-RESISTANT? *(Apply)*
 A. SMS code
 B. Push notification with simple Approve/Deny
 C. FIDO2 / WebAuthn hardware token (passkey)
@@ -47,7 +51,7 @@ D. Email magic link
 
 ---
 
-### Q6. SAML uses what data format for assertions?
+### Q6. SAML uses what data format for assertions? *(Remember)*
 A. JSON
 B. JWT
 C. XML
@@ -55,7 +59,7 @@ D. CBOR
 
 ---
 
-### Q7. OAuth 2.0 is primarily used for:
+### Q7. OAuth 2.0 is primarily used for: *(Understand)*
 A. Authentication (logging users in)
 B. Authorization (delegating access to a resource)
 C. Identity provisioning
@@ -63,7 +67,7 @@ D. Encrypting cookies
 
 ---
 
-### Q8. "Log in with Google" buttons on a third-party site typically use:
+### Q8. "Log in with Google" buttons on a third-party site typically use: *(Understand)*
 A. Pure SAML
 B. OAuth 2.0 with OIDC on top
 C. LDAP
@@ -71,7 +75,7 @@ D. Kerberos
 
 ---
 
-### Q9. Kerberos requires what infrastructure assumption to be true within ~5 minutes?
+### Q9. Kerberos requires what infrastructure assumption to be true within ~5 minutes? *(Remember)*
 A. Single domain
 B. Time synchronization across hosts
 C. IPv6
@@ -79,7 +83,7 @@ D. Direct internet access
 
 ---
 
-### Q10. Which protocol uses TCP 49 and separates authentication from authorization, common for network device admin?
+### Q10. Which protocol uses TCP 49 and separates authentication from authorization, common for network device admin? *(Remember)*
 A. RADIUS
 B. TACACS+
 C. LDAP
@@ -87,7 +91,7 @@ D. Kerberos
 
 ---
 
-### Q11. RADIUS by default uses what transport and ports?
+### Q11. RADIUS by default uses what transport and ports? *(Remember)*
 A. TCP 49
 B. UDP 1812 (auth) and 1813 (accounting)
 C. TCP 443
@@ -95,7 +99,7 @@ D. UDP 514
 
 ---
 
-### Q12. The Ticket Granting Ticket (TGT) in Kerberos is issued by:
+### Q12. The Ticket Granting Ticket (TGT) in Kerberos is issued by: *(Understand)*
 A. TGS
 B. Service Provider
 C. AS (Authentication Service) within the KDC
@@ -103,7 +107,7 @@ D. The end service
 
 ---
 
-### Q13. A US military system requires Top Secret clearance to read a Top Secret document — owners CANNOT override. This describes:
+### Q13. A US military system requires Top Secret clearance to read a Top Secret document — owners CANNOT override. This describes: *(Apply)*
 A. DAC
 B. MAC
 C. RBAC
@@ -111,7 +115,7 @@ D. ABAC
 
 ---
 
-### Q14. Maria owns a folder and can grant Tom read access. This is:
+### Q14. Maria owns a folder and can grant Tom read access. This is: *(Apply)*
 A. DAC
 B. MAC
 C. RBAC
@@ -119,7 +123,7 @@ D. Rule-Based
 
 ---
 
-### Q15. An access decision based on user.department == "Finance" AND time IS business-hours AND device.compliant == true is:
+### Q15. An access decision based on user.department == "Finance" AND time IS business-hours AND device.compliant == true is: *(Apply)*
 A. DAC
 B. MAC
 C. RBAC
@@ -127,7 +131,7 @@ D. ABAC
 
 ---
 
-### Q16. Which access control model is BEST for a typical enterprise where access is assigned by job function?
+### Q16. Which access control model is BEST for a typical enterprise where access is assigned by job function? *(Apply)*
 A. DAC
 B. MAC
 C. RBAC
@@ -135,7 +139,7 @@ D. Rule-Based only
 
 ---
 
-### Q17. Just-In-Time (JIT) privileged access reduces risk MOST by:
+### Q17. Just-In-Time (JIT) privileged access reduces risk MOST by: *(Analyze)*
 A. Encrypting admin passwords
 B. Limiting the time window during which standing privilege exists
 C. Increasing audit log volume
@@ -143,7 +147,7 @@ D. Making admins use biometrics
 
 ---
 
-### Q18. Which of these is a typical PAM capability?
+### Q18. Which of these is a typical PAM capability? *(Understand)*
 A. Issuing TLS certificates to web servers
 B. Vaulting privileged passwords, injecting them into sessions, and recording the session
 C. Patching workstations on a schedule
@@ -151,7 +155,7 @@ D. Translating SAML to OAuth
 
 ---
 
-### Q19. A shared admin account used by 5 sysadmins is a problem PRIMARILY because:
+### Q19. A shared admin account used by 5 sysadmins is a problem PRIMARILY because: *(Analyze)*
 A. It violates encryption policies
 B. It destroys accountability — you can't tell who did what
 C. It cannot be MFA-protected
@@ -159,7 +163,7 @@ D. Vendor licenses prohibit it
 
 ---
 
-### Q20. SCIM is used to:
+### Q20. SCIM is used to: *(Understand)*
 A. Sign JWTs
 B. Provision and deprovision identities across systems automatically
 C. Replace SAML
@@ -167,7 +171,7 @@ D. Enforce RBAC at runtime
 
 ---
 
-### Q21. Which is the MOST recommended action when an employee is terminated?
+### Q21. Which is the MOST recommended action when an employee is terminated? *(Evaluate)*
 A. Wait 30 days then delete the account
 B. Disable the account immediately, preserve data per retention policy, then deprovision per process
 C. Email the password to HR
@@ -175,7 +179,7 @@ D. Convert to a shared account
 
 ---
 
-### Q22. NIST 800-63B's current guidance on periodic password rotation is:
+### Q22. NIST 800-63B's current guidance on periodic password rotation is: *(Understand)*
 A. Force rotation every 30 days
 B. Force rotation every 90 days
 C. Do NOT force periodic rotation absent evidence of compromise
@@ -183,7 +187,7 @@ D. Force rotation weekly for admins
 
 ---
 
-### Q23. An attacker is bombarding a user with login push prompts hoping they approve one by mistake. This attack is:
+### Q23. An attacker is bombarding a user with login push prompts hoping they approve one by mistake. This attack is: *(Apply)*
 A. Pass-the-hash
 B. MFA fatigue (push bombing)
 C. Kerberoasting
@@ -191,7 +195,7 @@ D. Credential stuffing
 
 ---
 
-### Q24. LDAPS uses what port?
+### Q24. LDAPS uses what port? *(Remember)*
 A. 389
 B. 443
 C. 636
@@ -199,7 +203,7 @@ D. 1812
 
 ---
 
-### Q25 (Scenario). A new SaaS app must integrate with the enterprise IdP. The app supports modern token-based login, mobile clients, and exposes APIs. The BEST protocol choice is:
+### Q25 (Scenario). A new SaaS app must integrate with the enterprise IdP. The app supports modern token-based login, mobile clients, and exposes APIs. The BEST protocol choice is: *(Create)*
 A. LDAP
 B. SAML 2.0 only
 C. OIDC (on top of OAuth 2.0)
@@ -207,7 +211,7 @@ D. RADIUS
 
 ---
 
-### Q26 (Scenario). A SOC sees a dormant account (disabled 6 months ago) successfully authenticate from a foreign IP. The MOST likely failed control is:
+### Q26 (Scenario). A SOC sees a dormant account (disabled 6 months ago) successfully authenticate from a foreign IP. The MOST likely failed control is: *(Analyze)*
 A. Encryption at rest
 B. Deprovisioning / access review (the account should not be authenticatable)
 C. CRL distribution

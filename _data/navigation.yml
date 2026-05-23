@@ -689,6 +689,279 @@ tracks:
         slug: Flashcards
         single_file: true
 
+  - id: aimkt-found
+    title: Digital Marketing — Foundations
+    subtitle: Digital marketing + AI essentials (beginner)
+    color: rose
+    color_from: "#f43f5e"
+    color_to: "#9f1239"
+    icon: "🚀"
+    base: "/14-AI-Marketing-Foundations/"
+    modules:
+      - num: 1
+        title: Digital Marketing Landscape 2026
+        slug: Module-01-Digital-Marketing-Landscape-2026
+      - num: 2
+        title: AI Fundamentals for Marketers
+        slug: Module-02-AI-Fundamentals-for-Marketers
+      - num: 3
+        title: SEO in the AI Era
+        slug: Module-03-SEO-in-the-AI-Era
+      - num: 4
+        title: Content Marketing & Generative AI
+        slug: Module-04-Content-Marketing-Generative-AI
+      - num: 5
+        title: Social Media & AI Tools
+        slug: Module-05-Social-Media-AI-Tools
+      - num: 6
+        title: Email Marketing & AI Personalization
+        slug: Module-06-Email-Marketing-AI-Personalization
+      - num: 7
+        title: Paid Advertising Fundamentals
+        slug: Module-07-Paid-Advertising-Fundamentals
+      - num: 8
+        title: Analytics & Measurement Basics
+        slug: Module-08-Analytics-Measurement-Basics
+      - num: 9
+        title: AI Ethics, Privacy & Compliance
+        slug: Module-09-AI-Ethics-Privacy-Compliance
+      - num: 10
+        title: Building Your AI-Marketer Toolkit
+        slug: Module-10-Building-Your-AI-Marketer-Toolkit
+    extras:
+      - num: 11
+        title: Practice Exam 1
+        slug: Practice-Exams/Practice-Exam-1
+        single_file: true
+      - num: 12
+        title: Practice Exam 2
+        slug: Practice-Exams/Practice-Exam-2
+        single_file: true
+      - num: 13
+        title: Final Mock Exam (60q / 90min)
+        slug: Practice-Exams/Final-Mock-Exam
+        single_file: true
+      - num: 14
+        title: Master Flashcards
+        slug: Flashcards
+        single_file: true
+
+  - id: aimkt-pract
+    title: Digital Marketing — Practitioner
+    subtitle: Hands-on campaign execution (intermediate)
+    color: fuchsia
+    color_from: "#d946ef"
+    color_to: "#86198f"
+    icon: "🎯"
+    base: "/15-AI-Marketing-Practitioner/"
+    modules:
+      - num: 1
+        title: Campaign Strategy & Brief Writing
+        slug: Module-01-Campaign-Strategy-Brief-Writing
+      - num: 2
+        title: Google Ads Search Mastery
+        slug: Module-02-Google-Ads-Search-Mastery
+      - num: 3
+        title: Google Ads PMax / Display / Video
+        slug: Module-03-Google-Ads-PMax-Display-Video
+      - num: 4
+        title: Meta Ads (Facebook + Instagram)
+        slug: Module-04-Meta-Ads-Mastery-FB-IG
+      - num: 5
+        title: TikTok & LinkedIn Ads (B2B)
+        slug: Module-05-TikTok-LinkedIn-Ads-B2B
+      - num: 6
+        title: Programmatic & Retargeting
+        slug: Module-06-Programmatic-Retargeting
+      - num: 7
+        title: CRO, Landing Pages & Personalization
+        slug: Module-07-CRO-Landing-Pages-Personalization
+      - num: 8
+        title: AI Content Production at Scale
+        slug: Module-08-AI-Content-Production-Scale
+      - num: 9
+        title: Marketing Automation & AI
+        slug: Module-09-Marketing-Automation-AI
+      - num: 10
+        title: Capstone — Launch a Real Campaign
+        slug: Module-10-Capstone-Launch-Real-Campaign
+    extras:
+      - num: 11
+        title: Practice Exam 1
+        slug: Practice-Exams/Practice-Exam-1
+        single_file: true
+      - num: 12
+        title: Practice Exam 2
+        slug: Practice-Exams/Practice-Exam-2
+        single_file: true
+      - num: 13
+        title: Final Mock Exam (80q / 110min)
+        slug: Practice-Exams/Final-Mock-Exam
+        single_file: true
+      - num: 14
+        title: Master Flashcards
+        slug: Flashcards
+        single_file: true
+
+  - id: aimkt-strat
+    title: Digital Marketing — Strategist
+    subtitle: Analytics, attribution, MMM, predictive (advanced)
+    color: purple
+    color_from: "#8b5cf6"
+    color_to: "#5b21b6"
+    icon: "📈"
+    base: "/16-AI-Marketing-Strategist/"
+    modules:
+      - num: 1
+        title: Strategic Frameworks & OKRs
+        slug: Module-01-Strategic-Frameworks-OKRs
+      - num: 2
+        title: CDP & Server-Side Tracking
+        slug: Module-02-CDP-Server-Side-Tracking
+      - num: 3
+        title: GA4 Mastery & Custom Events
+        slug: Module-03-GA4-Mastery-Custom-Events
+      - num: 4
+        title: Multi-Touch Attribution (MTA)
+        slug: Module-04-Multi-Touch-Attribution
+      - num: 5
+        title: Marketing Mix Modeling (MMM)
+        slug: Module-05-Marketing-Mix-Modeling
+      - num: 6
+        title: Predictive Analytics — LTV & Churn
+        slug: Module-06-Predictive-Analytics-LTV-Churn
+      - num: 7
+        title: AI Personalization at Scale
+        slug: Module-07-AI-Personalization-Scale
+      - num: 8
+        title: Audience Intelligence & Cohorts
+        slug: Module-08-Audience-Intelligence-Cohorts
+      - num: 9
+        title: Privacy-First Measurement
+        slug: Module-09-Privacy-First-Measurement
+      - num: 10
+        title: Marketing Org & Tech Stack Design
+        slug: Module-10-Marketing-Org-Tech-Stack-Design
+    extras:
+      - num: 11
+        title: Practice Exam 1
+        slug: Practice-Exams/Practice-Exam-1
+        single_file: true
+      - num: 12
+        title: Practice Exam 2
+        slug: Practice-Exams/Practice-Exam-2
+        single_file: true
+      - num: 13
+        title: Final Mock Exam (75q / 100min)
+        slug: Practice-Exams/Final-Mock-Exam
+        single_file: true
+      - num: 14
+        title: Master Flashcards
+        slug: Flashcards
+        single_file: true
+
+  - id: aimkt-entre
+    title: Digital Marketing — Entrepreneur
+    subtitle: Agency / freelance launch playbook (expert)
+    color: amber
+    color_from: "#f59e0b"
+    color_to: "#92400e"
+    icon: "💼"
+    base: "/17-AI-Marketing-Entrepreneur/"
+    modules:
+      - num: 1
+        title: Niche & Service Offering
+        slug: Module-01-Niche-Service-Offering
+      - num: 2
+        title: Productizing AI-Marketing Services
+        slug: Module-02-Productizing-AI-Marketing-Services
+      - num: 3
+        title: Client Acquisition Channels
+        slug: Module-03-Client-Acquisition-Channels
+      - num: 4
+        title: Pricing, Proposals & Contracts
+        slug: Module-04-Pricing-Proposals-Contracts
+      - num: 5
+        title: Cost-Efficient Tech Stack
+        slug: Module-05-AI-Marketing-Tech-Stack-Cost-Efficient
+      - num: 6
+        title: Hiring & Managing AI-Native Teams
+        slug: Module-06-Hiring-Managing-AI-Native-Teams
+      - num: 7
+        title: Financials, Cash Flow & Taxes
+        slug: Module-07-Financials-Cash-Flow-Taxes
+      - num: 8
+        title: Capstone — First Client Engagement
+        slug: Module-08-Capstone-First-Client-Engagement
+    extras:
+      - num: 9
+        title: Practice Exam 1
+        slug: Practice-Exams/Practice-Exam-1
+        single_file: true
+      - num: 10
+        title: Practice Exam 2
+        slug: Practice-Exams/Practice-Exam-2
+        single_file: true
+      - num: 11
+        title: Final Mock Exam (50q / 70min)
+        slug: Practice-Exams/Final-Mock-Exam
+        single_file: true
+      - num: 12
+        title: Master Flashcards
+        slug: Flashcards
+        single_file: true
+
+  - id: aimkt-capstone
+    title: Digital Marketing — Capstone Portfolio
+    subtitle: Build 5 portfolio pieces + first-client pitch
+    color: yellow
+    color_from: "#eab308"
+    color_to: "#854d0e"
+    icon: "🏆"
+    base: "/18-AI-Marketing-Capstone-Portfolio/"
+    modules:
+      - num: 1
+        title: Portfolio Strategy — What to Build
+        slug: Module-01-Portfolio-Strategy-What-To-Build
+      - num: 2
+        title: Capstone — SEO + Content Audit
+        slug: Module-02-Capstone-SEO-Content-Audit
+      - num: 3
+        title: Capstone — Live Paid Campaign
+        slug: Module-03-Capstone-Paid-Campaign-Live
+      - num: 4
+        title: Capstone — Marketing Automation
+        slug: Module-04-Capstone-Marketing-Automation-Workflow
+      - num: 5
+        title: Capstone — Attribution Model
+        slug: Module-05-Capstone-Attribution-Model-Spreadsheet
+      - num: 6
+        title: Capstone — AI Agent Build
+        slug: Module-06-Capstone-AI-Agent-Build
+      - num: 7
+        title: Personal Brand & Online Presence
+        slug: Module-07-Personal-Brand-Online-Presence
+      - num: 8
+        title: First Client Pitch — Real Conversation
+        slug: Module-08-First-Client-Pitch-Real-Conversation
+    extras:
+      - num: 9
+        title: Mid-Program Portfolio Review
+        slug: Practice-Exams/Practice-Exam-1
+        single_file: true
+      - num: 10
+        title: Full Portfolio Review
+        slug: Practice-Exams/Practice-Exam-2
+        single_file: true
+      - num: 11
+        title: Recruiter Readiness (50q / 70min)
+        slug: Practice-Exams/Final-Mock-Exam
+        single_file: true
+      - num: 12
+        title: Master Flashcards
+        slug: Flashcards
+        single_file: true
+
 # Sub-pages within each module
 module_pages:
   - id: Reading

@@ -192,3 +192,75 @@ CPI = EV/AC = $100K/$125K = 0.80. EAC = BAC/CPI = $250K/0.80 = $312.5K. VAC = BA
 ## 📊 Score: 11+/12 🏆 / 9-10 ✅ / <9 🔁 (drill formulas!)
 
 ➡️ [Cheat Sheet](./Cheat-Sheet.md) → [Module 7: Risk](../Module-07-Risk/Reading.md)
+
+---
+
+## Bloom's-taxonomy tags for the questions above
+
+| Q | Bloom level | Why this level |
+|---|---|---|
+| Q1 | Remember | Recall CV formula. |
+| Q2 | Remember | Recall SPI formula. |
+| Q3 | Understand | Explain CPI = 0.85's economic meaning. |
+| Q4 | Understand | Explain SPI = 1.10. |
+| Q5 | Remember | Recall default EAC formula. |
+| Q6 | Remember | Recall ETC formula. |
+| Q7 | Remember | Recall VAC formula. |
+| Q8 | Apply | Apply CPI formula to specific numbers. |
+| Q9 | Apply | Apply SV formula to specific numbers. |
+| Q10 | Apply | Apply EAC default to BAC + CPI. |
+| Q11 | Understand | Identify what combination of CPI/SPI signals dual underperformance. |
+| Q12 | Understand | Explain TCPI > 1's implications. |
+| Q13 | Apply | Apply CV formula. |
+| Q14 | Apply | Apply CPI formula. |
+| Q15 | Apply | Apply EAC default. |
+| Q16 | Apply | Apply SPI formula. |
+| Q17 | Apply | Apply VAC formula. |
+| Q18 | Apply | Apply ETC formula. |
+| Q19 | Apply | Apply TCPI-to-BAC formula. |
+| Q20 | Analyze | Combine SPI and CPI signals into a status diagnosis. |
+| Q21 | Understand | Identify the correct EAC variant for stated assumptions. |
+| Q22 | Analyze | Combine multiple EVM signals into a status assessment. |
+| Q23 | Understand | Explain CV's sign convention. |
+| Q24 | Apply | Multi-step: CPI → EAC → VAC. |
+
+**Bloom distribution for Q1–Q24:** Remember 6 (~25%) · Understand 7 (~29%) · Apply 9 (~38%) · Analyze 2 (~8%). The bonus questions below push Analyze/Evaluate/Create higher.
+
+---
+
+## Bonus questions (higher-Bloom)
+
+### Q25. Mars Climate Orbiter (from the case study). Your project's EVM dashboard shows CPI = 1.05 and SPI = 1.02 — both green. A junior engineer raises a concern that two subsystems may be using inconsistent units. Using PMBOK 7's Measurement principle, what is the MOST defensible PM action? *(Evaluate)*
+A. Dismiss the concern — EVM is green.
+B. Reduce IV&V cycles further to "lock in the cost win."
+C. Treat EVM as necessary-but-not-sufficient: launch an immediate interface-control review against the unit-convention documentation; do not allow the green metrics to suppress signal-from-the-team; document the concern in the risk register; report transparently to the sponsor that EVM does not cover interface integrity; if needed, invoke the Code of Ethics' Responsibility provision to refuse to proceed without resolution.
+D. Tell the engineer to "let the metrics speak."
+
+### Q26. Project: BAC = $4M; AC = $2.4M; EV = $1.8M; PV = $2.0M; the team is 60% time-elapsed. The sponsor wants a single recommendation: continue as planned, re-baseline, or terminate. Using EVM + PMBOK 7's Value principle, what's MOST defensible? *(Analyze)*
+A. Continue as planned.
+B. Run the EVM diagnostic: CPI = EV/AC = 0.75; SPI = EV/PV = 0.90; default EAC = BAC/CPI = ~$5.33M; VAC ≈ -$1.33M (33% overrun forecast). Reconcile with the Business Case: if the original NPV assumed BAC, recalculate at the projected EAC. Present three options to the sponsor (re-baseline, scope reduction, terminate) each with revised NPV and risk profile, and recommend the option that preserves positive NPV.
+C. Terminate without analysis.
+D. Triple the team to spend faster.
+
+### Q27. A regulated medical-device project shows CPI = 1.10 but a known unknown (an upcoming FDA inspection) has been raised by QA. The sponsor proposes celebrating the cost win in a board update. What's the MOST defensible PM action? *(Evaluate)*
+A. Celebrate — CPI is great.
+B. Hold off on celebration: report CPI honestly but contextualize it with the upcoming inspection risk; present an EAC that includes Contingency for inspection-driven rework (probabilistically weighted); cite the Code of Ethics' Honesty value in support of presenting both data points to the board; do not let a single good metric override transparent risk communication.
+C. Suppress the inspection risk.
+D. Resign.
+
+### Q28. Pure-agile teams (no traditional baseline) object to EVM as "incompatible." Design an adaptation that gives sponsors meaningful EVM-like signals without violating agile principles. *(Create)*
+A. Force traditional EVM and ignore the resistance.
+B. Skip measurement entirely.
+C. Adapt: define "value units" as completed-to-Definition-of-Done backlog items weighted by customer-defined business value (story points × value-tier multiplier); PV = planned value units per sprint; EV = actually completed value units; AC = actual cost (team-time burn); apply CPI/SPI to those units; reconcile every quarter against actual realized customer outcomes; document the tailoring decision per PMBOK 7 §3.7.
+D. Use story points alone as "value."
+
+### Q29. A senior engineer quits at sprint 8 of 12. CPI = 1.02 currently, but the engineer's work was on the critical path. The default EAC = BAC/CPI predicts under-budget completion. Which EAC variant should you use, and why? *(Analyze)*
+A. EAC = BAC / CPI (default) — it predicts the optimistic outcome.
+B. EAC = AC + (BAC - EV) / (CPI × SPI) and/or EAC = AC + Bottom-up ETC: the default assumes current cost efficiency continues, but the engineer's departure invalidates that assumption — both the CPI×SPI variant (accounts for forecasted schedule slip) and a re-estimated bottom-up ETC capture the post-event reality; present both to the sponsor with the assumption stated.
+C. EAC = AC + (BAC - EV) — assumes future at original rate, ignoring the loss.
+D. Refuse to re-forecast.
+
+```
+Bonus answer key
+25.C  26.B  27.B  28.C  29.B
+```

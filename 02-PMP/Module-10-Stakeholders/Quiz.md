@@ -176,3 +176,73 @@ Moving Neutral to Supportive requires understanding what matters to them and sho
 The Stakeholder Cube adds the Attitude dimension to Power and Interest, yielding 8 categories. The Salience Model is a separate 3D framework using Power, Legitimacy, and Urgency.
 
 ➡️ [Cheat Sheet](./Cheat-Sheet.md) → [Practice Exam](../Practice-Exams/Practice-Exam-1.md)
+
+---
+
+## Bloom's-taxonomy tags for the questions above
+
+| Q | Bloom level | Why this level |
+|---|---|---|
+| Q1 | Remember | Recall the 5 engagement levels. |
+| Q2 | Apply | Apply Power-Interest Grid to high/high. |
+| Q3 | Remember | Recall Salience dimensions. |
+| Q4 | Apply | Apply engagement strategy to a Resistant stakeholder. |
+| Q5 | Remember | Recall Stakeholder Register cadence. |
+| Q6 | Remember | Recall Sponsor responsibilities. |
+| Q7 | Remember | Recall the Unaware engagement level. |
+| Q8 | Apply | Apply escalation-to-sponsor sequence. |
+| Q9 | Remember | Recall agile-stakeholder engagement mechanism. |
+| Q10 | Apply | Apply Power-Interest Grid to low-power/high-interest. |
+| Q11 | Apply | Apply listen-first to a Resistant stakeholder. |
+| Q12 | Remember | Recall Stakeholder Register's role. |
+| Q13 | Apply | Apply Power-Interest Grid to a regulator. |
+| Q14 | Apply | Apply register-update process to a new emerging stakeholder. |
+| Q15 | Remember | Recall Salience Model dimensions. |
+| Q16 | Apply | Apply engagement strategy to a Leading stakeholder. |
+| Q17 | Understand | Distinguish sponsor from PM responsibilities. |
+| Q18 | Apply | Apply escalation-after-team-options sequence. |
+| Q19 | Remember | Recall agile-engagement primary mechanism. |
+| Q20 | Apply | Apply facilitate-first to conflicting requirements. |
+| Q21 | Apply | Apply tailored engagement to Neutral-to-Supportive movement. |
+| Q22 | Remember | Recall the Cube extension. |
+
+**Bloom distribution for Q1–Q22:** Remember 11 (~50%) · Understand 1 (~5%) · Apply 10 (~45%). The bonus questions below push Analyze/Evaluate/Create higher.
+
+---
+
+## Bonus questions (higher-Bloom)
+
+### Q23. Sydney Opera House (from the case study). A new political sponsor enters mid-project with different priorities than the original Premier. The architect (whose design is the project's defining feature) feels his authority is being undermined. What is the MOST defensible PM response? *(Evaluate)*
+A. Continue executing the original Charter as if nothing changed.
+B. Defer entirely to the new sponsor.
+C. Treat the sponsor change as a high-impact stakeholder event: re-execute Identify Stakeholders, update the Stakeholder Register, propose a Charter amendment that captures the new sponsor's priorities while preserving the architect's design authority via explicit mechanisms (named design-review process, dispute escalation path, public commitment to the design vision); facilitate a joint conversation between architect and new sponsor; if the new sponsor's intent is to remove the architect, document the project-risk implications and present alternatives.
+D. Resign in protest.
+
+### Q24. The Salience Model (Mitchell, Agle & Wood 1997) classifies a stakeholder by Power, Legitimacy, and Urgency. A controversial wind-farm project has: (a) local fishing community (low power, high legitimacy, high urgency); (b) federal regulator (high power, high legitimacy, low urgency); (c) financier (high power, high legitimacy, low urgency); (d) press (low power, low legitimacy, high urgency). Apply the engagement strategy implied by each classification. *(Apply)*
+A. Treat all stakeholders identically.
+B. Fishing community = Dependent stakeholder (lacks power; needs advocate, regular dialogue, document concerns formally so they have a path to influence). Regulator = Dominant (formal compliance management, named relationship owner). Financier = Dominant (clear reporting cadence, transparent risk disclosure). Press = Demanding (proactive communication strategy, do not ignore — uncontrolled stakeholder can elevate other concerns). Document the classification in the Stakeholder Register and revisit quarterly.
+C. Focus only on power and ignore legitimacy + urgency.
+D. Escalate all to the sponsor.
+
+### Q25. A previously unknown stakeholder community emerges mid-project — citizens concerned about facial-recognition cameras in a city-traffic project. They were not identified at kickoff. Using PMI's Code of Ethics and PMBOK 7's Stakeholders principle, what's the MOST defensible PM response? *(Evaluate)*
+A. Continue execution; the cameras are within scope.
+B. Add the community to the Stakeholder Register, perform full identification + analysis, engage transparently (public consultation, response to concerns), evaluate the ethical and regulatory exposure (e.g., GDPR, US state privacy laws), present findings to the steering committee with options ranging from full deployment with controls, to scope modification, to project termination — frame the decision in stewardship + responsibility terms; do not let initial omission justify continued opacity.
+C. Hide the deployment.
+D. Cancel the project unilaterally.
+
+### Q26. A stakeholder labeled "Resistant" in the register turns out to be raising legitimate concerns about a regulatory blind spot the team had missed. Their resistance is *correct*, not pathological. What does this tell you about the engagement matrix, and how should the PM act? *(Evaluate)*
+A. Re-label the stakeholder Supportive without changing engagement.
+B. Recognize that "Resistant" is a description of behavior, not a verdict on legitimacy: investigate the substance of their concerns; if the concerns are valid, treat them as an inbound risk signal not a stakeholder-management problem; thank the stakeholder publicly, escalate the regulatory issue formally, update the project plan; the engagement-matrix label should not preclude listening; document the lesson learned for future register reviews.
+C. Suppress the concern.
+D. Ignore as "noise."
+
+### Q27. Design a quarterly Stakeholder Register review ritual that keeps the register accurate without becoming bureaucratic theater. *(Create)*
+A. No review ever.
+B. 90-minute facilitated review: PM + sponsor + delegates from comms, risk, and a rotating team member; review each registered stakeholder against (a) engagement-level change, (b) new stakeholders emerged, (c) departed stakeholders, (d) Salience-Model dimension changes; produce one-page outputs (top 3 new stakeholders, top 3 deteriorating relationships, top 3 actions); align with sprint/quarter cadence; close-loop with named owners; time-box rigorously; cite PMBOK 7 Monitor Stakeholder Engagement process; review the ritual's own ROI annually.
+C. Annual review only.
+D. Replace the register with a single sponsor opinion.
+
+```
+Bonus answer key
+23.C  24.B  25.B  26.B  27.B
+```

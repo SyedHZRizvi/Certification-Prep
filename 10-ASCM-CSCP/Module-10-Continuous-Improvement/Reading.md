@@ -2,6 +2,13 @@
 
 > **Why this module matters:** Domain 4 ("Improvements and Best Practices") is 15% of the CSCP. Expect dense vocabulary on Lean, Six Sigma DMAIC, TOC, Kaizen, balanced scorecard, and the supply-chain KPIs that appear across every other domain. Master this and the rest of the exam stops feeling random.
 
+> **Prerequisites for this module.** Before starting, you should be comfortable with:
+> - [JIT, Kanban, and lean inventory](../Module-05-Inventory-Capacity/Reading.md) — Module 5
+> - [Drum-Buffer-Rope and TOC preview](../Module-04-Supply-Planning-SOP/Reading.md) — Module 4
+> - [SCOR Performance attributes and KPIs](../Module-01-SCM-Foundations-Strategy/Reading.md) — Module 1
+> - Basic project management vocabulary (charter, scope, deliverables)
+> This module is also a strong primer for the **CSSGB / CSSBB (Six Sigma)** certification path.
+
 ---
 
 ## 🍞 A Story: The Bread Plant That Saved $2M With Sticky Notes
@@ -147,7 +154,7 @@ Define → Measure → Analyze → Design → Verify. Used to design new process
 
 ## ⛓️ Theory of Constraints (TOC)
 
-Eliyahu Goldratt, *The Goal* (1984). TOC says throughput is set by the **constraint** (bottleneck) — every other resource has slack.
+**Eliyahu M. Goldratt and Jeff Cox, *The Goal: A Process of Ongoing Improvement*** (North River Press, 1984; 4th edition 2014). Goldratt was an Israeli physicist who applied scientific-method thinking to operations. TOC says throughput is set by the **constraint** (bottleneck) — every other resource has slack.
 
 ### The 5 focusing steps
 
@@ -193,7 +200,7 @@ Japanese for "change for the better." Philosophy of continuous small improvement
 
 ## 📊 Balanced Scorecard (Kaplan & Norton, 1992)
 
-Translate strategy into operational measures across **four perspectives**:
+**Robert S. Kaplan and David P. Norton, *"The Balanced Scorecard — Measures That Drive Performance"*** (Harvard Business Review, January-February 1992 — Harvard Business School). Their book *The Balanced Scorecard: Translating Strategy into Action* (HBS Press, 1996) became the canonical reference. Translate strategy into operational measures across **four perspectives**:
 
 | Perspective | Sample Metric |
 |-------------|---------------|
@@ -240,7 +247,7 @@ Translate strategy into operational measures across **four perspectives**:
 
 ## 🚀 Business Process Reengineering (BPR)
 
-Michael Hammer, *Reengineering the Corporation* (1993). Radical, top-down redesign of entire processes for breakthrough improvement (vs. Kaizen's incremental approach).
+**Michael Hammer and James Champy, *Reengineering the Corporation: A Manifesto for Business Revolution*** (Harper Business, 1993; revised 2003 — Hammer was an MIT computer science professor turned consultant). Radical, top-down redesign of entire processes for breakthrough improvement (vs. Kaizen's incremental approach).
 
 | Dimension | Kaizen | BPR |
 |-----------|--------|-----|
@@ -281,6 +288,23 @@ Michael Hammer, *Reengineering the Corporation* (1993). Radical, top-down redesi
 - **CMMI** for processes (Initial → Managed → Defined → Quantitatively managed → Optimizing)
 - **Gartner SCM maturity** (5 stages)
 - **SCOR-mature** organizations adopt all 4 levels of SCOR
+
+---
+
+## 📊 Case Study — Walmart RFID Mandates (2003-2008, and 2022-2024 Second Wave)
+
+**Situation.** In June 2003, Walmart (Bentonville, AR) issued an unprecedented supplier mandate: the **top 100 suppliers** must put RFID tags on case + pallet shipments to designated Walmart DCs by January 2005. The supplier list (Procter & Gamble, Coca-Cola, Unilever, Kraft, Gillette, Johnson & Johnson, etc.) was forced into a $2-9M-per-supplier investment in RFID tag readers, middleware, ERP integration, and tag procurement. Walmart's stated goal: real-time inventory visibility, reduced stockouts, accelerated continuous improvement (DMAIC cycle on inventory accuracy). The case became a famous "supplier-extortion or strategic-improvement" debate in operations academia.
+
+**Decision.** Walmart's CIO Linda Dillman led the program. The continuous-improvement scaffolding was DMAIC: **Define** the inventory-accuracy problem (Walmart was losing ~$2B/year to invisible inventory + stockouts), **Measure** with pre-RFID baselines, **Analyze** root causes (mis-shelving, theft, supplier shipment errors), **Improve** via RFID tagging + Walmart's Retail Link analytics, **Control** via supplier compliance scorecards. Walmart published OTIF / fill-rate KPIs supplier-by-supplier; non-compliant suppliers paid fines and lost shelf space. Supplier reaction: P&G largely supported (already RFID-experimenting), but mid-tier suppliers like Tyson Foods balked at cost vs benefit math. RFID tags in 2003 were $0.30-1.00 each — economically infeasible at SKU level.
+
+**Outcome.** Wave 1 (2003-2008) results were mixed. Walmart's pilot DCs showed 16-30% reduction in stockouts and 50% faster inventory cycles per a 2007 University of Arkansas RFID Research Center study. But the program plateaued: tag costs didn't fall fast enough, scanner read accuracy in real warehouses hit 70-85% (not the lab 99%), and mid-tier suppliers passed costs to Walmart via price negotiations. By 2008-2010, Walmart de-emphasized the mandate (without admitting failure). **Wave 2 (2022-2024)**: with RFID tag costs at $0.04-0.08 (Avery Dennison, Impinj), Walmart re-launched the program — September 2022 announced expanded RFID requirements to broader categories (men's apparel, home goods, electronics by 2024). This time it's economically viable. Walmart's 2024 stockout reduction targets and digital-shelf accuracy targets are RFID-anchored. The case is now studied as both a **DMAIC implementation** and a **technology adoption with TOC constraint identification** (constraint shifted from "do we have visibility?" to "is technology affordable?").
+
+**Lesson for the exam / for practitioners.** Wave 1 illustrates the DMAIC framework working but bumping against a TOC constraint (technology cost). Wave 2 illustrates Goldratt's "Repeat" step — elevate the constraint, find the next one. On the exam, expect: "What CI methodology drives supplier scorecard improvement?" Answer: DMAIC + Balanced Scorecard. "What's the role of a Master Black Belt in a multi-supplier program like Walmart RFID?" Answer: cross-supplier program leadership, mentoring Green/Black Belts in suppliers, standardizing the measurement system. The case also illustrates **OEE-style measurement at the supply chain level** — Walmart effectively created an "OTIF-RFID-accuracy × supplier-compliance × consumer-availability" multi-factor KPI.
+
+**Discussion (Socratic).**
+- Q1: A mid-cap retailer's CEO wants to copy Walmart's RFID mandate. They have $400M revenue and 200 suppliers (vs Walmart's $560B and 100,000+). What scales and what doesn't from the Walmart playbook, and how would you redesign Wave 2 for a smaller scale?
+- Q2: Walmart's Wave 1 partly failed because tag costs were too high. As CSCO, how would you have known in 2003 that the technology wasn't ready, and what TOC-style analysis would have shown the constraint?
+- Q3: 2024-2026 brings new AI computer-vision systems (e.g., Amazon Just Walk Out) that *could* replace RFID for inventory accuracy. Construct the case for which technology Walmart should bet on for 2030, with what evidence.
 
 ---
 
@@ -359,14 +383,36 @@ You now know:
 2. ✏️ [Quiz.md](./Quiz.md)
 3. 📋 [Cheat-Sheet.md](./Cheat-Sheet.md)
 4. 🧪 [Practice Exam 1](../Practice-Exams/Practice-Exam-1.md) (if not already taken) → Practice Exam 2 → Final Mock
+5. 🎯 [Capstone Project](../Capstone-Project.md) — integrate everything you've learned in a CSCO transformation scenario
+
+---
+
+> **Where this leads.**
+> - Inside this course: Practice Exam 2 + Final Mock test Domain 4 (Improvements) heavily; the Capstone Project requires you to design a Balanced Scorecard for your transformation plan.
+> - Cross-course: ASQ's Certified Six Sigma Green Belt (CSSGB) / Black Belt (CSSBB) take DMAIC and the quality tools 4× deeper; Toyota Production System Association / Lean Enterprise Institute have advanced Lean certifications.
+> - Practice: Practice Exam 2 has ~16 CI questions; Final Mock has ~23.
+
+---
+
+## 💬 Discussion — Socratic prompts
+
+1. **DMAIC vs DMADV in 2024-2026 AI projects.** A firm wants to introduce a generative-AI-augmented S&OP. Is the project DMAIC (improving existing) or DMADV (designing new)? Defend a position and identify the boundary.
+2. **The Six Sigma "diminishing returns" question.** A semiconductor fab hits 5.5σ on a process. Going to 6σ costs $40M. The defects saved are $8M/year. Defend BOTH "continue to 6σ for brand and customer expectation" AND "stop at 5.5σ — invest the $40M elsewhere."
+3. **Kaizen culture in 2026 hybrid work.** Toyota's Gemba walks assume a co-located shop floor. A SaaS firm's "shop floor" is distributed engineers on Slack. How does Kaizen + 5S + Andon translate to distributed knowledge work? Defend a 2026 model.
+4. **Balanced Scorecard's hidden risk.** Adding non-financial metrics (customer, internal process, L&G) without ruthless prioritization can result in "scorecards with 47 KPIs." How would you trim a bloated BSC, and what's the *minimum number* of KPIs per perspective that's defensible?
+5. **TOC + Lean + Six Sigma — pick one or combine?** Some firms try all three (Lean Six Sigma + TOC). Others pick one. Construct the case for unification AND for purist single-methodology approaches; identify the firm-type where each wins.
 
 ---
 
 ## 📚 Further Reading (Optional)
 
-- 📖 Womack & Jones, *Lean Thinking* and *The Machine That Changed The World*
-- 📖 Goldratt, *The Goal* — TOC novel, must-read
-- 📖 Imai, *Kaizen: The Key to Japan's Competitive Success*
-- 📖 Kaplan & Norton, *The Balanced Scorecard*
-- 📖 Hammer & Champy, *Reengineering the Corporation*
+- 📖 James P. Womack & Daniel T. Jones, *Lean Thinking: Banish Waste and Create Wealth in Your Corporation* — Free Press, 2003
+- 📖 Womack, Jones, & Daniel Roos, *The Machine That Changed the World* — Free Press, 1990 (the founding lean-production study)
+- 📖 Eliyahu M. Goldratt, *The Goal: A Process of Ongoing Improvement* — North River Press, 4e 2014 (TOC original; must-read)
+- 📖 Masaaki Imai, *Kaizen: The Key to Japan's Competitive Success* — McGraw-Hill, 1986
+- 📖 Robert S. Kaplan & David P. Norton, *The Balanced Scorecard: Translating Strategy into Action* — Harvard Business School Press, 1996
+- 📖 Michael Hammer & James Champy, *Reengineering the Corporation: A Manifesto for Business Revolution* — Harper Business, revised 2003
+- 📖 Mikel J. Harry & Richard Schroeder, *Six Sigma: The Breakthrough Management Strategy* — Currency Doubleday, 2000 (Motorola/GE history)
+- 📖 Gene Kim, *The Phoenix Project: A Novel About IT, DevOps, and Helping Your Business Win* — IT Revolution Press, 5th anniversary ed. 2018 (modern TOC application to IT ops)
 - 📖 ASCM CSCP Learning System Module 10
+- 📰 *Quality Progress* (ASQ monthly), *Industrial Engineer* (IISE), *Operations Research Letters*

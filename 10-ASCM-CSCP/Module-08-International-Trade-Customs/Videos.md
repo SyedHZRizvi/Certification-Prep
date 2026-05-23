@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~52 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Incoterms+2020+all+11+explained" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="GTUTLRXcVuA" href="https://www.youtube.com/results?search_query=Incoterms+2020+all+11+explained" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 18 min · Full chart walkthrough</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Letters+of+credit+UCP+600+explained" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="PS8JH8sZ6kY" href="https://www.youtube.com/results?search_query=Letters+of+credit+UCP+600+explained" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 12 min · Parties + flow</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=HS+code+customs+tariff+classification" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="csw9p9XUPUE" href="https://www.youtube.com/results?search_query=HS+code+customs+tariff+classification" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 10 min · Real product examples</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Currency+hedging+forward+contract+importer" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="zJSQ8Z1RQAU" href="https://www.youtube.com/results?search_query=Currency+hedging+forward+contract+importer" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~30 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=EXW+FCA+FOB+CIF+difference" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="fXUtrf2OXAc" href="https://www.youtube.com/results?search_query=EXW+FCA+FOB+CIF+difference" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 11 min · Buyer / seller perspective</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Free+trade+zone+bonded+warehouse" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="9oxcmn1eHY8" href="https://www.youtube.com/results?search_query=Free+trade+zone+bonded+warehouse" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 10 min · Duty deferment basics</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=USMCA+rules+of+origin+FTA" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="OJ9iJ7KOoRA" href="https://www.youtube.com/results?search_query=USMCA+rules+of+origin+FTA" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=ATA+carnet+temporary+import" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="v3dlG-SnorQ" href="https://www.youtube.com/results?search_query=ATA+carnet+temporary+import" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 8 min · Trade-show use</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=C+TPAT+AEO+trusted+trader" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="zQQxGooHDqY" href="https://www.youtube.com/results?search_query=C+TPAT+AEO+trusted+trader" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 13 min · Why companies join</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anti+dumping+duty+countervailing" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="3oTIh_A2-Mo" href="https://www.youtube.com/results?search_query=Anti+dumping+duty+countervailing" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

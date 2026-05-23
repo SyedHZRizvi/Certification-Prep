@@ -312,6 +312,580 @@ D. Azure adds RBAC, private networking, region pinning, content filters, residen
 
 ---
 
+## Detailed answer rationales
+
+**Q1. Answer: C (Azure AI Document Intelligence)**
+
+**Why C is correct.** Form Recognizer was rebranded Document Intelligence in 2023; the SDK package is now `azure-ai-documentintelligence`.
+
+**Why the other options are wrong.**
+- A (Azure AI Forms): Not a real product name.
+- B (Azure AI Reader): Made-up.
+- D (Smart Parser): Made-up.
+
+**Exam-takeaway.** Document Intelligence is one of the most-tested renames.
+
+---
+
+**Q2. Answer: C (Custom Template)**
+
+**Why C is correct.** Consistent layout from one vendor → **Custom Template** (one set of fields, fixed positions).
+
+**Why the other options are wrong.**
+- A (Read): Returns only raw text, no field structure.
+- B (Layout): Tables + paragraphs but no named fields.
+- D (Custom Neural): For varying layouts, not consistent.
+
+**Exam-takeaway.** Template = fixed. Neural = varying.
+
+---
+
+**Q3. Answer: A (Custom Neural)**
+
+**Why A is correct.** Varying layouts, common fields → **Custom Neural**.
+
+**Why the other options are wrong.**
+- B (Custom Template): Fails on layout variation.
+- C (Layout only): No named fields.
+- D (Read): No structured extraction.
+
+**Exam-takeaway.** Pair with Q2; the two are intentionally tested back-to-back.
+
+---
+
+**Q4. Answer: D (Custom Classifier)**
+
+**Why D is correct.** Custom Classifier categorizes docs before routing to the right extraction model.
+
+**Why the other options are wrong.**
+- A (Prebuilt-Invoice): Only invoices.
+- B (Custom Composed): Combines models AFTER classification, but classification itself is the Classifier.
+- C (Layout): Returns structure, doesn't categorize.
+
+**Exam-takeaway.** Classify first, then extract.
+
+---
+
+**Q5. Answer: A (Index, Indexer, Skillset, Knowledge Store, Data Source)**
+
+**Why A is correct.** The DISKS mnemonic — these five concepts are the spine of Azure AI Search.
+
+**Why the other options are wrong.**
+- B, C, D: Other systems' terminology (Elasticsearch, Solr, S3) — not Azure AI Search.
+
+**Exam-takeaway.** DISKS is a guaranteed exam question.
+
+---
+
+**Q6. Answer: D (Pulls data from a data source on a schedule)**
+
+**Why D is correct.** Indexer is a pull-based crawler.
+
+**Why the other options are wrong.**
+- A: Push API exists but the indexer is the pull mechanism.
+- B / C: Indexer ≠ vector DB or embedder.
+
+**Exam-takeaway.** Indexer = pull; Index = the store; Skillset = enrichment pipeline.
+
+---
+
+**Q7. Answer: B (Storage Backup)**
+
+**Why B is correct.** Not a real skill category.
+
+**Why the other options are wrong.**
+- A, C, D: All real skill categories (Vision, Utility, Language).
+
+**Exam-takeaway.** Real categories include Vision, Language, Utility, Custom, GenAI.
+
+---
+
+**Q8. Answer: C (`retrievable: true`)**
+
+**Why C is correct.** Makes the field return in search results.
+
+**Why the other options are wrong.**
+- A (`searchable`): Makes it searchable, not necessarily returnable.
+- B (`key`): Uniqueness, one per index.
+- D (`analyzer`): Tokenization.
+
+**Exam-takeaway.** Each field attribute has one purpose; memorize the table.
+
+---
+
+**Q9. Answer: C (HNSW)**
+
+**Why C is correct.** Default vector algorithm in Azure AI Search.
+
+**Why the other options are wrong.**
+- A (Exact KNN): Available but slower.
+- B (FAISS): Different vendor's library.
+- D (ANN-Lite): Made-up.
+
+**Exam-takeaway.** HNSW + cosine = defaults.
+
+---
+
+**Q10. Answer: D (Cosine)**
+
+**Why D is correct.** Default distance for vector search.
+
+**Why the other options are wrong.**
+- A, B, C: All real metrics but not the default.
+
+**Exam-takeaway.** Pair with Q9.
+
+---
+
+**Q11. Answer: D (3072)**
+
+**Why D is correct.** `text-embedding-3-large` outputs 3072-dim vectors.
+
+**Why the other options are wrong.**
+- A (768): BERT-family typical.
+- B (1024): Some older embedding models.
+- C (1536): `text-embedding-3-small` and `text-embedding-ada-002`.
+
+**Exam-takeaway.** The three you must memorize: ada-002 = 1536, 3-small = 1536, 3-large = 3072.
+
+---
+
+**Q12. Answer: B (Standard S1 or higher)**
+
+**Why B is correct.** Semantic Ranker requires Standard SKU.
+
+**Why the other options are wrong.**
+- A, C: Free and Basic don't include semantic.
+- D: Premium isn't the threshold (Standard is).
+
+**Exam-takeaway.** Semantic = paid feature.
+
+---
+
+**Q13. Answer: A (Reciprocal Rank Fusion / RRF)**
+
+**Why A is correct.** Hybrid combines keyword + vector via RRF.
+
+**Why the other options are wrong.**
+- B / C / D: Not the documented Azure AI Search hybrid fusion algorithm.
+
+**Exam-takeaway.** Hybrid = RRF.
+
+---
+
+**Q14. Answer: A (Hosting + channel connectivity)**
+
+**Why A is correct.** Bot Service hosts and connects channels; the *logic* is in the Bot Framework SDK code.
+
+**Why the other options are wrong.**
+- B (Bot logic): That's your code.
+- C (NLP): That's Language service.
+- D (Vector storage): That's AI Search.
+
+**Exam-takeaway.** Bot Service = hosting; SDK = code; Language services = NLP.
+
+---
+
+**Q15. Answer: A (Direct Line Speech)**
+
+**Why A is correct.** Combines Bot Service + Speech SDK for voice in/out, keyword activation, echo cancellation.
+
+**Why the other options are wrong.**
+- B (Direct Line): Text-based custom client.
+- C (Web Chat): Iframe text chat.
+- D (SignalR): Real-time messaging library, not a Bot Service channel.
+
+**Exam-takeaway.** Voice = Direct Line Speech.
+
+---
+
+**Q16. Answer: D (Orchestration workflow over CLU + Question Answering)**
+
+**Why D is correct.** Microsoft's canonical mixed-bot pattern.
+
+**Why the other options are wrong.**
+- A / B: Single-tool answers miss the other use case.
+- C (Hardcoded if/else): Brittle, not the recommended Azure pattern.
+
+**Exam-takeaway.** FAQ + commands = Orchestration.
+
+---
+
+**Q17. Answer: D (CosmosDbPartitionedStorage or BlobStorage)**
+
+**Why D is correct.** Both are durable, multi-instance-safe.
+
+**Why the other options are wrong.**
+- A (MemoryStorage): Dev only — lost on restart, not multi-instance safe.
+- B / C: Not standard Bot Framework patterns.
+
+**Exam-takeaway.** Cosmos or Blob in production.
+
+---
+
+**Q18. Answer: D (Retired — use CLU instead)**
+
+**Why D is correct.** LUIS authoring retired in 2023; CLU is the successor.
+
+**Why the other options are wrong.**
+- A / B: LUIS authoring is gone.
+- C: Replaced by CLU, not Bot Service.
+
+**Exam-takeaway.** LUIS → CLU.
+
+---
+
+**Q19. Answer: B (OpenAI)**
+
+**Why B is correct.** Azure OpenAI is provisioned as `kind=OpenAI`, separate from the multi-service `AIServices`.
+
+**Why the other options are wrong.**
+- A (AIServices): Excludes Azure OpenAI.
+- C (CognitiveServices): A different kind.
+- D (AzureML): Azure Machine Learning, different service.
+
+**Exam-takeaway.** Azure OpenAI is always its own resource kind.
+
+---
+
+**Q20. Answer: B (Your deployment name)**
+
+**Why B is correct.** The chat completions API targets the deployment, not the base model.
+
+**Why the other options are wrong.**
+- A (Base model name): Wrong — deployments are named separately.
+- C (API version): Different parameter.
+- D (Region): Set via endpoint URL.
+
+**Exam-takeaway.** Deployment name in `model=`.
+
+---
+
+**Q21. Answer: B (`AzureOpenAI`)**
+
+**Why B is correct.** From the official `openai` Python SDK.
+
+**Why the other options are wrong.**
+- A (OpenAIClient): Not the class name.
+- C (AzureGPT): Made-up.
+- D (LanguageClient): Different service.
+
+**Exam-takeaway.** `from openai import AzureOpenAI`.
+
+---
+
+**Q22. Answer: C (PTU)**
+
+**Why C is correct.** Provisioned Throughput Units reserve capacity for predictable latency.
+
+**Why the other options are wrong.**
+- A (Standard): PAYG; latency varies.
+- B (Global Standard): No regional pin; latency still variable.
+- D (Global Batch): Async, not real-time latency-bound.
+
+**Exam-takeaway.** PTU = reserved.
+
+---
+
+**Q23. Answer: C (Global Batch)**
+
+**Why C is correct.** Async, 24-hr SLA, ~50% cheaper than Standard.
+
+**Why the other options are wrong.**
+- A / B: Not the cheapest async option.
+- D (Premium): Not a real Azure OpenAI deployment SKU.
+
+**Exam-takeaway.** Global Batch = cheapest async.
+
+---
+
+**Q24. Answer: D (Medium)**
+
+**Why D is correct.** Default block threshold for new Azure OpenAI deployments.
+
+**Why the other options are wrong.**
+- A / B / C: Other thresholds, but Medium is the default.
+
+**Exam-takeaway.** Default = Medium.
+
+---
+
+**Q25. Answer: B (Refuse to answer outside retrieved sources)**
+
+**Why B is correct.** `in_scope: true` enforces grounded-only answers.
+
+**Why the other options are wrong.**
+- A / C / D: Not behaviors of `in_scope`.
+
+**Exam-takeaway.** `in_scope` = stay grounded.
+
+---
+
+**Q26. Answer: C (Style / tone / output format)**
+
+**Why C is correct.** Fine-tuning best suits style, tone, output-format consistency — not adding facts.
+
+**Why the other options are wrong.**
+- A: Knowledge → RAG.
+- B: RAG and fine-tune are complementary.
+- D: Fine-tuning doesn't reduce token cost directly.
+
+**Exam-takeaway.** Knowledge = RAG; style = fine-tune.
+
+---
+
+**Q27. Answer: B (RAG over a refreshable index)**
+
+**Why B is correct.** Re-indexing daily keeps knowledge current without retraining.
+
+**Why the other options are wrong.**
+- A: Nightly fine-tuning is slow + costly.
+- C: Retraining base models is not customer-side work.
+- D: Hardcoding doesn't scale.
+
+**Exam-takeaway.** Knowledge that changes = RAG with indexer refresh.
+
+---
+
+**Q28. Answer: A (JSONL with `{"messages":[...]}` per line)**
+
+**Why A is correct.** Each line is a complete chat example.
+
+**Why the other options are wrong.**
+- B / C / D: Other tabular formats not used for fine-tuning.
+
+**Exam-takeaway.** Memorize JSONL.
+
+---
+
+**Q29. Answer: C (Hub → Project)**
+
+**Why C is correct.** Foundry's hierarchy: Hub (shared infra, connections, security) → Project (app workspace with deployments, flows, evaluations).
+
+**Why the other options are wrong.**
+- A / B / D: Wrong ordering or wrong terminology.
+
+**Exam-takeaway.** Hub on top, Project under it.
+
+---
+
+**Q30. Answer: A (Reusable, RBAC-secured handle to an external service)**
+
+**Why A is correct.** Connections avoid hardcoding endpoints + keys.
+
+**Why the other options are wrong.**
+- B / C / D: Not what a Foundry Connection is.
+
+**Exam-takeaway.** Connections = pre-auth handles.
+
+---
+
+**Q31. Answer: D (Serverless, pay-per-token)**
+
+**Why D is correct.** MaaS = no infra to manage.
+
+**Why the other options are wrong.**
+- A: MaaP (Platform) is managed compute.
+- B: Both Microsoft and partner models offered as MaaS.
+- C: Not free.
+
+**Exam-takeaway.** MaaS = serverless; MaaP = managed compute.
+
+---
+
+**Q32. Answer: D (A/B comparison of prompt versions)**
+
+**Why D is correct.** Variants enable A/B testing prompts.
+
+**Why the other options are wrong.**
+- A / B / C: Unrelated features.
+
+**Exam-takeaway.** Variants = A/B for prompts.
+
+---
+
+**Q33. Answer: C (Loss)**
+
+**Why C is correct.** Loss is a *training* metric, not a Foundry built-in eval. Foundry built-ins: Groundedness, Relevance, Coherence, Fluency, Similarity, Safety.
+
+**Why the other options are wrong.**
+- A / B / D: All real Foundry eval metrics.
+
+**Exam-takeaway.** Six built-ins + Safety + custom.
+
+---
+
+**Q34. Answer: A (File Search, Code Interpreter, Function Calling)**
+
+**Why A is correct.** Plus Browser (preview).
+
+**Why the other options are wrong.**
+- B / C / D: Other Azure features, not Agent Service tools.
+
+**Exam-takeaway.** File_search + code_interpreter + function calling are the three core tools.
+
+---
+
+**Q35. Answer: C (Open-source orchestration SDK)**
+
+**Why C is correct.** Semantic Kernel is Microsoft's open-source LLM orchestration SDK (C# / Python / Java).
+
+**Why the other options are wrong.**
+- A: Visual designer is Prompt Flow.
+- B: Bot Framework is the bot SDK.
+- D: SK is not a vector DB.
+
+**Exam-takeaway.** SK = code; Prompt Flow = visual.
+
+---
+
+**Q36. Answer: A (Hybrid + semantic re-ranking)**
+
+**Why A is correct.** Microsoft's documented RAG retrieval gold standard.
+
+**Why the other options are wrong.**
+- B / C: Pure vector or pure keyword is weaker for production RAG.
+- D: SQL fulltext isn't Azure AI Search.
+
+**Exam-takeaway.** Hybrid + semantic.
+
+---
+
+**Q37. Answer: A (Fairness, Reliability & Safety, Privacy & Security, Inclusiveness, Transparency, Accountability)**
+
+**Why A is correct.** The exact six RAI principles per Microsoft Responsible AI Standard v2 (2022).
+
+**Why the other options are wrong.**
+- B / C / D: Made-up or different framework lists.
+
+**Exam-takeaway.** Mnemonic: F-R-P-I-T-A.
+
+---
+
+**Q38. Answer: B (0, 2, 4, 6)**
+
+**Why B is correct.** Discrete severity levels in Content Safety.
+
+**Why the other options are wrong.**
+- A (1-10): Wrong scale.
+- C (Low/Medium/High): Threshold labels, not raw severities.
+- D (1-4): Wrong.
+
+**Exam-takeaway.** No odd severities.
+
+---
+
+**Q39. Answer: A (Direct + indirect prompt injection attacks)**
+
+**Why A is correct.** Prompt Shields catches user-attack jailbreaks AND document-attack indirect injection.
+
+**Why the other options are wrong.**
+- B (Network attacks): Not Prompt Shields' role.
+- C (PII): That's PII Detection.
+- D (Profanity): That's content moderation.
+
+**Exam-takeaway.** Two flavors of Prompt Shield.
+
+---
+
+**Q40. Answer: B (Quantifies harm rates with test datasets before applying mitigations)**
+
+**Why B is correct.** Measure is step 2 of Identify → Measure → Mitigate → Operate.
+
+**Why the other options are wrong.**
+- A: Not optional.
+- C: Measure precedes monitoring.
+- D: Not the last step.
+
+**Exam-takeaway.** Measure before mitigating.
+
+---
+
+**Q41A. Answer: B (Bot Framework + Direct Line Speech)**
+
+**Why B is correct.** The voice + Teams + Web Chat composition is exactly what Bot Service is for.
+
+**Why the other options are wrong.**
+- A (Custom Vision): Not voice.
+- C (Whisper alone): Doesn't include the bot.
+- D (CLU alone): Doesn't include voice channels.
+
+**Exam-takeaway.** Bot Service + Direct Line Speech for voice.
+
+---
+
+**Q41B. Answer: B (Azure AI Search hybrid + semantic + On Your Data)**
+
+**Why B is correct.** The canonical RAG stack with citations.
+
+**Why the other options are wrong.**
+- A / C / D: None provides hybrid + semantic + grounded RAG.
+
+**Exam-takeaway.** Hybrid+semantic + OYD for citations.
+
+---
+
+**Q41C. Answer: B (Azure AI Language + Translator)**
+
+**Why B is correct.** Detect + sentiment + PII via Language; translation via Translator.
+
+**Why the other options are wrong.**
+- A / C / D: Each misses one of the four required features.
+
+**Exam-takeaway.** Composition of purpose-built services.
+
+---
+
+**Q42. Answer: A (Managed identity + Cognitive Services User)**
+
+**Why A is correct.** No secrets in code; auditable per-app identity.
+
+**Why the other options are wrong.**
+- B / C / D: Either secret-bearing or unauthenticated.
+
+**Exam-takeaway.** MI everywhere in Azure.
+
+---
+
+**Q43. Answer: C (Batch transcription via REST + Azure Storage)**
+
+**Why C is correct.** Best for hours of audio.
+
+**Why the other options are wrong.**
+- A: Real-time tops at ~30 min.
+- B: Wrong service.
+- D: File-size limit.
+
+**Exam-takeaway.** Long audio = batch.
+
+---
+
+**Q44. Answer: B (Compact domain + export)**
+
+**Why B is correct.** Only Compact domains can be exported for edge.
+
+**Why the other options are wrong.**
+- A: General can't export.
+- C: SKU doesn't matter; domain does.
+- D: Different service.
+
+**Exam-takeaway.** Edge = Compact.
+
+---
+
+**Q45. Answer: D (Azure adds RBAC, private networking, region pinning, content filters, residency)**
+
+**Why D is correct.** Same models, enterprise plumbing.
+
+**Why the other options are wrong.**
+- A: Related services.
+- B: Pricing depends; OpenAI.com isn't universally cheaper.
+- C: Mostly same models.
+
+**Exam-takeaway.** Azure adds enterprise control.
+
+---
+
 ## 📊 Scoring
 
 | Score | Verdict |

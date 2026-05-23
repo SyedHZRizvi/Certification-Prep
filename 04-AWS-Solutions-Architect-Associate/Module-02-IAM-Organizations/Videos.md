@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~70 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+IAM+for+beginners+Stephane+Maarek" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="I_Uh1ra3RYU" href="https://www.youtube.com/results?search_query=AWS+IAM+for+beginners+Stephane+Maarek" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🔐</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 25 min · The foundation</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+IAM+policy+evaluation+logic+Be+A+Better+Dev" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="qsF6Kauh2J4" href="https://www.youtube.com/results?search_query=AWS+IAM+policy+evaluation+logic+Be+A+Better+Dev" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🧮</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 12 min · Deny always wins</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+STS+AssumeRole+cross+account+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="b-R40XGKrF4" href="https://www.youtube.com/results?search_query=AWS+STS+AssumeRole+cross+account+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🔄</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 18 min · STS in practice</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Organizations+SCP+explained" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="vBoLC2oSUPo" href="https://www.youtube.com/results?search_query=AWS+Organizations+SCP+explained" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🏢</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~40 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+IAM+Identity+Center+demo" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="4yJp5-jGGNk" href="https://www.youtube.com/results?search_query=AWS+IAM+Identity+Center+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🆔</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 18 min · Modern multi-account SSO</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+IAM+permissions+boundary+vs+SCP" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="aeRkFDVurAM" href="https://www.youtube.com/results?search_query=AWS+IAM+permissions+boundary+vs+SCP" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🛂</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 10 min · The classic confusion</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+IAM+role+EC2+instance+profile" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="TlCuOjviOhk" href="https://www.youtube.com/results?search_query=AWS+IAM+role+EC2+instance+profile" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>💻</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+confused+deputy+ExternalId" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="jnWHZMVCHSo" href="https://www.youtube.com/results?search_query=AWS+confused+deputy+ExternalId" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🕵️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 14 min · Vendor access patterns</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+IAM+Access+Analyzer+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="ioBgpcDiguA" href="https://www.youtube.com/results?search_query=AWS+IAM+Access+Analyzer+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🔎</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 12 min · Real-world detection</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Amazon+Cognito+identity+pool+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="eQ64C7q4C2U" href="https://www.youtube.com/results?search_query=Amazon+Cognito+identity+pool+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>👤</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

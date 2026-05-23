@@ -2,6 +2,13 @@
 
 > **Why this module matters:** The "Cost-Optimized Architectures" domain is 20% of SAA-C03 and you cannot answer those questions without knowing CloudWatch, Compute Optimizer, Cost Explorer, Budgets, and how tagging works. Monitoring/logging questions also pepper the Resilient and Secure domains: CloudTrail, X-Ray, Config, GuardDuty. This module makes sure those are easy points.
 
+> **Prerequisites for this module.**
+> - All previous modules — monitoring touches everything
+> - [Module 2](../Module-02-IAM-Organizations/Reading.md) — CloudTrail is the IAM audit log
+> - [Module 3](../Module-03-EC2-Deep-Dive/Reading.md) — Compute Optimizer rightsizing
+> - [Module 6](../Module-06-Databases/Reading.md) — Performance Insights for RDS
+> - Basic understanding of telemetry concepts: **metrics**, **logs**, **traces** — see the Google SRE book (Beyer et al., O'Reilly 2016) chapters 6 and 11
+
 ---
 
 ## 🩺 A Story: The Hospital With No Vital Signs Monitors
@@ -276,10 +283,84 @@ You now know:
 
 ---
 
-## 📚 Further Reading
+## 📖 Case Study — Twitter/X's Partial Migration Off the Cloud (2022–2024)
 
-- 📖 **[CloudWatch User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/)**
-- 📖 **[CloudTrail User Guide](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/)**
-- 📖 **[Config Developer Guide](https://docs.aws.amazon.com/config/latest/developerguide/)**
-- 📖 **[Cost Management User Guide](https://docs.aws.amazon.com/cost-management/latest/userguide/)**
-- 📖 **[Compute Optimizer User Guide](https://docs.aws.amazon.com/compute-optimizer/latest/ug/)**
+**Situation.** Twitter (rebranded as X in 2023) had run its core feed-generation pipeline on Google Cloud Platform (GCP) and AWS for years, complemented by its own data centers. Following Elon Musk's October 2022 acquisition, cost-cutting became existential — Musk publicly stated infrastructure costs were "roughly $1B/year" and that the cloud bill was excessive. Engineering leadership (much of it new) was directed to **repatriate** workloads from cloud to owned data centers.
+
+**Decision.** Per Musk's December 2022 thread and subsequent SREcon 2024 talks by former and current Twitter/X engineers, the program:
+1. **Audited every cloud-hosted service** and tagged each as "must repatriate," "stays on cloud," or "evaluate." Roughly 60% of workloads were tagged for repatriation
+2. **Built out two new data centers** (Sacramento and Portland) totaling ~100,000 servers added in 2023
+3. **Migrated batch and feed-generation pipelines** (the largest cost line) back to on-premises Hadoop / Kubernetes clusters
+4. **Kept**: edge / CDN traffic on cloud (CloudFront-equivalent), some non-critical analytics, and DR-only standby capacity
+5. **Cut Google Cloud spend by ~60%** and AWS spend by similar; net infrastructure savings reported as **$1B+ annually** by mid-2024 (Musk's posts; corroborated by analyst notes)
+
+**The architecture-level audit drivers** (what every team had to defend):
+- **Data egress cost** ("Slack-style cross-AZ tax") — Twitter's feed generation made *enormous* lateral data movement; in the cloud this was the dominant cost line
+- **Compute utilization** — Twitter's workload was steady 24/7, the worst possible match for cloud's "pay for what you use" pricing model. On-prem with depreciated hardware was ~70% cheaper at 95%+ utilization
+- **Predictable scale** — Twitter's traffic peaks (US Sports finals, election nights) are predictable; elasticity premium wasn't worth $200M/year
+- **Engineering capacity** — Twitter had the SRE depth to run a data center; many companies don't, which changes the math
+
+**Outcome.** Twitter/X's repatriation became the high-water mark for the **"come down from the cloud"** movement that emerged in 2022–2024. David Heinemeier Hansson's *37signals* blog post *"Why we're leaving the cloud"* (October 2022, `world.hey.com/dhh`) had set the tone; Twitter validated it at extreme scale. The HBR article *"How Companies Are Trying to Bring the Cloud Down to Earth"* (HBR, 2024) cited Twitter, 37signals, and Dropbox (which had famously partially repatriated in 2017) as the trio defining the pattern.
+
+**Lesson for the exam / for practitioners.** The SAA exam does **not** test you on when *NOT* to use AWS — but the FinOps / cost-optimization frame matters for every "most cost-effective" question. The Twitter case sharpens the framing:
+- **Compute Optimizer + Trusted Advisor** are the AWS-native version of the audit Twitter did manually
+- **Reserved Instances / Savings Plans (3-year all-upfront)** capture ~60% of the on-prem efficiency without the operational cost
+- **Outposts** give you the AWS API on your own hardware — splits the difference between full cloud and full repatriation
+- **AWS Backup cross-region + Aurora Global** can serve as DR for a primary on-prem deployment
+
+When the SAA exam asks "company runs a steady 24/7 workload for 5 years — most cost-effective EC2 purchase option?" the answer is **3-year Standard Reserved Instances, all upfront**. That's the "closest to on-prem economics" option AWS offers.
+
+The bigger meta-lesson: **monitoring and cost data are the prerequisite to any optimization, on-cloud or off-cloud**. Twitter couldn't have repatriated without first knowing where every dollar went. The same Compute Optimizer / Cost Explorer / Cost Anomaly Detection toolkit on the SAA exam is what made the audit possible.
+
+**Discussion (Socratic).**
+- **Q1.** Twitter saved ~$1B/year. But they hired hundreds of SRE / data-center engineers to operate the new facilities. At what fully-loaded-cost ratio does "operate yourself" beat "rent from AWS"? Build the formula.
+- **Q2.** Most companies cannot replicate Twitter's repatriation because they lack the engineering depth to run a data center. Is the right alternative (a) accept higher costs as the "AWS operations tax," (b) use Outposts, or (c) something else?
+- **Q3.** Twitter kept *edge / CDN* on cloud. Why was the edge tier the part they kept, and what does that say about which workloads should *never* be repatriated?
+
+---
+
+## 💬 Discussion — Socratic Prompts
+
+1. **Cost allocation tags as governance.** Tagging requires discipline — SCPs can enforce "no untagged resources." Argue: should tag enforcement live in SCPs (deny create without required tags), in IaC pipeline checks (CloudFormation guard), or in post-deploy audits (Config rules + Lambda)? Trade-offs?
+2. **CloudWatch Logs Insights vs OpenSearch vs third-party (Datadog).** All can query logs. CloudWatch is cheapest, OpenSearch is most flexible, Datadog has the best UX. Build a 3-axis decision rule.
+3. **Compute Optimizer's recommendations — when do you trust them?** They're ML-based but lack business context. What's the SRE workflow for going from "Compute Optimizer says downsize" to actually shipping it without an incident?
+4. **Budgets vs Cost Anomaly Detection.** Budgets are threshold-based and predictable. Anomaly Detection is ML-based and finds surprises. Why use both? What's the failure mode if you skip one?
+5. **GuardDuty + Security Hub vs SIEM (Splunk, Datadog Security).** AWS's native security tooling vs a vendor SIEM. What's the cost-vs-coverage trade-off, and when does each win?
+
+---
+
+## ➡️ Where This Leads
+
+> **Where this leads.**
+> - **Inside this course:** Module 10 (DR) builds on the monitoring foundation — CloudWatch alarms + Route 53 health checks drive failover. The Capstone Project requires you to design the full cost model, including FinOps governance.
+> - **Cross-course:** `02-PMP` Module 08 (Cost Management) covers EVM and forecasting — applicable to cloud cost forecasting. `07-AWS-AI-Practitioner` Module 07 covers cost monitoring for Bedrock/SageMaker workloads (a fast-growing share).
+> - **Practice:** Practice Exam 2 has 6 monitoring/cost questions; Final Mock has 7.
+> - **Real world:** Enable Cost Explorer + Compute Optimizer + Trusted Advisor (free tier) in a personal AWS account; tag every resource by environment.
+
+---
+
+## 📚 Further Sources (This Module)
+
+**AWS official**
+- 📖 **CloudWatch User Guide** — `docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/`
+- 📖 **CloudTrail User Guide** — `docs.aws.amazon.com/awscloudtrail/latest/userguide/`
+- 📖 **Config Developer Guide** — `docs.aws.amazon.com/config/latest/developerguide/`
+- 📖 **Cost Management User Guide** — `docs.aws.amazon.com/cost-management/latest/userguide/`
+- 📖 **Compute Optimizer User Guide** — `docs.aws.amazon.com/compute-optimizer/latest/ug/`
+- 📖 **AWS Well-Architected — Cost Optimization Pillar Whitepaper** — free PDF; the source of every cost question on the exam.
+
+**re:Invent talks**
+- 🎤 **COP201 (2023): *AWS Cost optimization fundamentals***
+- 🎤 **COP402 (2024): *Advanced cost optimization for large enterprises***
+- 🎤 **ENT207 (2023): *AWS FinOps at scale***
+
+**Academic foundations**
+- 📖 **Beyer, Betsy et al. (2016).** *Site Reliability Engineering.* O'Reilly. The Google SRE book; chapters 6 (Monitoring), 9 (Simplicity), 11 (Being On-Call), and 18 (Software Engineering in SRE).
+- 📖 **Beyer, Betsy et al. (2018).** *The Site Reliability Workbook.* O'Reilly. The companion volume — chapter 5 on Alerting on SLOs.
+- 📰 **The FinOps Foundation (finops.org)** — the canonical cloud financial management body, with a free certification curriculum.
+
+**Industry**
+- 📰 **David Heinemeier Hansson (2022).** *"Why we're leaving the cloud."* world.hey.com/dhh — the manifesto.
+- 📰 **HBR (2024).** *"How Companies Are Trying to Bring the Cloud Down to Earth."* Harvard Business Review — the broader trend piece.
+- 📰 **Corey Quinn — *Last Week in AWS* and *AWS Morning Brief*** — sharpest cost commentary in public.
+- 📰 **The Duckbill Group case studies** — public AWS bill audits.

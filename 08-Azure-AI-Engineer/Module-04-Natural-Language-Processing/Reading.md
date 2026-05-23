@@ -2,6 +2,13 @@
 
 > **Why this module matters:** NLP is 15–20% of AI-102 and is split across three services — Azure AI Language, Translator, and Speech. The exam tests each by SDK call shape, by feature name, and by service selection. Don't mix them up.
 
+> **Prerequisites for this module.** Before starting, you should be comfortable with:
+> - The Azure AI resource model + auth — [Module 1](../Module-01-AI-Services-Overview/Reading.md)
+> - Responsible-AI principles (PII Detection sits here for a reason) — [Module 2](../Module-02-Responsible-AI-Content-Safety/Reading.md)
+> - Optional but helpful: the attention/transformer mental model from Vaswani et al. (2017), *"Attention Is All You Need"*, NeurIPS — every modern NLP feature in this module descends from that line of work.
+>
+> If you've never written a Python function that calls an HTTP API, walk through Module 1's snippets first.
+
 ---
 
 ## 🍕 A Story: Maya Goes Global
@@ -319,6 +326,39 @@ print(result.translations["es"])
 
 ---
 
+## 📖 Case Study — Walmart "Sparky" Shopping Assistant (2024)
+
+**Situation.** Walmart, the world's largest retailer by revenue, faced the post-2023 reality that its 250M+ weekly customers expected conversational, multilingual, multimodal shopping help — including voice. In April 2024, Walmart publicly announced **Sparky**, its generative-AI-powered shopping assistant, with Microsoft and OpenAI as part of the technology stack (Walmart corporate communications, April 2024; corroborated at Microsoft Build 2024 and Walmart's 2024 *Investor Community Meeting*; verified 2026-05).
+
+**Decision.** Sparky composes the entire NLP triad covered in this module:
+- **Azure AI Language** for input understanding — Sentiment Analysis on review prompts ("show me a kid-friendly version"), PII Detection so customer-uploaded photos / questions don't carry SSNs into the prompt context, and CLU for command intents ("track my order").
+- **Azure AI Translator** for multilingual flows — Walmart serves customers in dozens of languages across its global stores; Translator handles real-time text in/out plus Document Translation for international compliance documents (e.g., supplier contracts).
+- **Azure AI Speech** for voice in/out — STT (real-time + batch), TTS using Neural Voices for accessibility, and Speech Translation in pilot markets.
+- An **Orchestration Workflow** routes between Sparky's CLU command intents and a Question Answering knowledge base over Walmart's help-center content.
+
+Critically, the team applied **Responsible AI** controls from Module 2: PII Detection upstream of every GPT-4o prompt; gender_neutral_caption equivalents in image-rich flows; Translator's region-header was set correctly so EU customer text stayed in EU Data Zones for GDPR.
+
+**Outcome.** By H2 2024, Sparky had been rolled out broadly across Walmart's online surface area. Walmart's investor-day materials cited a measurable lift in conversion among assistants users vs control. Microsoft used Sparky as a flagship reference at Build 2024 and again at Ignite 2024 for "enterprise GenAI with composed Azure AI services" — exactly the pattern this module teaches.
+
+**Lesson for the exam / for practitioners.** Walmart did not pick one NLP service — they composed all three (Language + Translator + Speech) with Orchestration on top. This is how the exam's case studies are written; this is how the real world looks. The principle: choose services by *task type*, then layer them; don't force an LLM to do work the specialized service does better (cheaper, faster, more compliant).
+
+**Discussion (Socratic).**
+- Q1: Walmart could have used Azure OpenAI's GPT-4o for translation and skipped Translator. Build the strongest argument for that choice (one model, fewer services) and against (Translator is purpose-built, cheaper, region-pinned, supports Document Translation for compliance docs, has a Custom Translator for retail-domain jargon). Where do you draw the line?
+- Q2: PII Detection sits *before* the prompt. From a Responsible AI standpoint, why is "redact then prompt" almost always better than "prompt then redact"? Defend the inverse for at least one scenario.
+- Q3: Walmart's Spanish-language flows used Translator with EU/US data-zone pinning. Argue the equivalent design for a healthcare provider that needs HIPAA + multilingual support — what changes? What stays the same?
+
+---
+
+## 💬 Discussion — Socratic prompts
+
+1. **CLU vs Question Answering vs Orchestration.** A retail chatbot needs both "track my order" (command) and "what's your return policy?" (FAQ). One PM proposes a single GPT-4o prompt with both tools. Another proposes the canonical Azure stack (CLU + QA + Orchestration). Walk through the trade-offs (latency, cost, maintainability, fallback behaviour, observability). At what conversation volume does each architecture decisively beat the other?
+2. **Custom Translator's economics.** Training a Custom Translator model for legal terminology takes a parallel corpus of ~10K sentence pairs and engineering time. Argue both sides at a CFO meeting: when does the per-token translation savings + accuracy lift make it a winning investment, and when does the engineering time make it overkill?
+3. **Extractive vs Abstractive summarization.** Build the strongest case for extractive (no hallucination risk, citations point to source sentences) AND for abstractive (better reads, paragraph-style summary). For a clinical note-summarization product, which would you ship in 2026, and why?
+4. **Custom Neural Voice's ethical edge.** Microsoft's Custom Neural Voice is Limited Access *and* requires recorded voice-talent consent. Walk through why those two layers (Microsoft gate + customer-side consent) exist redundantly. Argue both sides of "redundant controls": efficiency-minded engineers might trim one; an EU AI Act regulator might say neither is enough.
+5. **The region-header trap.** Translator's global resource needs `Ocp-Apim-Subscription-Region` in the request. From a Cornell systems-design view, what does that API decision tell you about how Microsoft thought about cross-region routing? What would the better design look like, and why was that design rejected?
+
+---
+
 ## ✅ Module 4 Summary
 
 You now know:
@@ -328,6 +368,7 @@ You now know:
 - 🧩 SSML for fine-grained voice control
 - 🔀 Service selection across Language vs Translator vs Speech
 - 🚨 Renaming gotchas (LUIS → CLU, QnA Maker → Question Answering)
+- 📖 Walmart "Sparky" as the composed Language + Translator + Speech case study (2024)
 
 **Next steps:**
 1. 🎥 Watch [Videos.md](./Videos.md)
@@ -335,6 +376,25 @@ You now know:
 3. 📋 Review [Cheat-Sheet.md](./Cheat-Sheet.md)
 4. 🧪 Take [**Practice Exam 1**](../Practice-Exams/Practice-Exam-1.md) — you now have the foundation for Modules 1–4
 5. ➡️ Move to [Module 5: Document Intelligence + AI Search](../Module-05-Document-Intelligence-Knowledge-Mining/Reading.md)
+
+---
+
+> **Where this leads.**
+> - Inside this course: Module 6 wires CLU + Question Answering into Bot Service for production conversational AI; Module 7 covers when Azure OpenAI **replaces** a NLP feature (e.g., GPT-4o for abstractive summarization) and when it complements one.
+> - Cross-course: [`07-AWS-AI-Practitioner`](../../07-AWS-AI-Practitioner/) covers Comprehend / Translate / Polly / Transcribe for cross-cloud comparison.
+> - Practice: Practice Exam 1 has ~9 questions from this module (the largest single-module share in PE1); Final Mock revisits with Speech / Translator / Language case studies.
+
+---
+
+## 📚 Citations & Named References
+
+- **Vaswani et al. (2017).** *"Attention Is All You Need."* NeurIPS 2017. The transformer foundation under every modern NLP feature here.
+- **Devlin et al. (2018).** *"BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding."* The encoder-only line that powers many of Language service's classification / NER models.
+- **Brown et al. (2020).** *"Language Models are Few-Shot Learners."* (GPT-3 paper, NeurIPS 2020) — the lineage that culminates in GPT-4o.
+- **Microsoft Responsible AI Standard v2** (June 2022) — drove Custom Neural Voice's Limited Access policy and voice-talent attestation requirements.
+- **EU AI Act** (Regulation (EU) 2024/1689, June 2024) — synthetic voice / deepfake disclosure obligations.
+- **Walmart corporate communications (April 2024)** — public Sparky announcement; verified at Microsoft Build 2024 and Walmart investor-day materials, 2026-05.
+- **Microsoft Mechanics** (2024) — *Azure AI Language deep dive* and *Azure AI Speech: Custom Neural Voice* episodes.
 
 ---
 

@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~55 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=RAG+vs+fine+tuning+IBM+technology" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=RAG+vs+fine+tuning+IBM+technology" target="_blank" rel="noopener" data-video-id="00Q0G84kq3M">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 10 min · The most-tested comparison</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Amazon+Bedrock+model+customization+fine-tuning+demo" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Amazon+Bedrock+model+customization+fine-tuning+demo" target="_blank" rel="noopener" data-video-id="Sh1XBtf8ISg">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 15 min · JSONL → custom model → Provisioned Throughput</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=BLEU+ROUGE+perplexity+LLM+evaluation+metrics" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=BLEU+ROUGE+perplexity+LLM+evaluation+metrics" target="_blank" rel="noopener" data-video-id="RTaZqGflrJ8">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 12 min · The exam-relevant metrics in one shot</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Bedrock+Model+Evaluation+human+LLM+judge+demo" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Bedrock+Model+Evaluation+human+LLM+judge+demo" target="_blank" rel="noopener" data-video-id="WYdcTChKeig">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~30 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=LoRA+PEFT+parameter+efficient+fine+tuning+explained" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=LoRA+PEFT+parameter+efficient+fine+tuning+explained" target="_blank" rel="noopener" data-video-id="LuszqkM1s88">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 12 min · Why modern fine-tuning is affordable</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=RLHF+reinforcement+learning+human+feedback+Hugging+Face" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=RLHF+reinforcement+learning+human+feedback+Hugging+Face" target="_blank" rel="noopener" data-video-id="2MBJOuVq380">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 10 min · How Claude / GPT are aligned</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=cost+optimization+Amazon+Bedrock+GenAI+workload" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=cost+optimization+Amazon+Bedrock+GenAI+workload" target="_blank" rel="noopener" data-video-id="P2fpid5AeNc">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=continued+pre-training+vs+fine-tuning+LLM" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=continued+pre-training+vs+fine-tuning+LLM" target="_blank" rel="noopener" data-video-id="cybEKSNBp-w">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 14 min · The big-data vs small-data distinction</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SageMaker+JumpStart+fine+tune+Llama+demo" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=SageMaker+JumpStart+fine+tune+Llama+demo" target="_blank" rel="noopener" data-video-id="dyhKBax4Bxw">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 25 min · The JumpStart customization path</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=DPO+direct+preference+optimization+vs+RLHF" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=DPO+direct+preference+optimization+vs+RLHF" target="_blank" rel="noopener" data-video-id="XZLc09hkMwA">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

@@ -2,6 +2,12 @@
 
 > **Why this module matters:** A great category strategy dies in a bad negotiation. A good negotiation evaporates without a tight contract. CPSM tests both — and the language is precise. Get this module wrong and you will lose questions on every exam.
 
+> **Prerequisites for this module.** Before starting, you should be comfortable with:
+> - [Module 2 — Kraljic matrix](../Module-02-Category-Management-Sourcing/Reading.md): you need it to pick negotiation style
+> - Basic legal vocabulary (offer, acceptance, consideration)
+> - Cross-course: [PMP Module 9 — Procurement Management](../../02-PMP/Module-09-Procurement-Management/Reading.md) for contract-type taxonomy (PMP and CPSM share the fixed-price / cost-plus / T&M tree)
+> If Module 2 is shaky, pause and review before continuing.
+
 ---
 
 ## 🥶 A Story: The $12 Million Misunderstanding
@@ -42,7 +48,7 @@ Negotiation is a **process of two or more parties seeking mutually acceptable ag
 
 ### BATNA — Best Alternative To a Negotiated Agreement
 
-Coined by Fisher and Ury (*Getting to Yes*, 1981). Your BATNA is what you'll do **if the negotiation fails**.
+Coined by Roger Fisher and William Ury of the Harvard Negotiation Project in *Getting to Yes: Negotiating Agreement Without Giving In* (Fisher, Ury & Patton, 1981; 3rd ed. Penguin, 2011). Your BATNA is what you'll do **if the negotiation fails**.
 
 - Strong BATNA = leverage. You can walk away credibly.
 - Weak BATNA = pressure. The other side senses it.
@@ -78,7 +84,7 @@ The first number put on the table. Research shows it strongly biases the final o
 
 ## 🪜 The Negotiation Process (5 Phases)
 
-Most frameworks (Lewicki, Camp, Fisher-Ury) describe roughly:
+Most frameworks (Lewicki et al., *Negotiation*, 8th ed., 2020, McGraw-Hill; Camp, *Start with No*, 2002, Crown; Fisher & Ury, *Getting to Yes*, 1981) describe roughly:
 
 1. **Prepare** — Know your needs, BATNA, ZOPA, target, walk-away; research the supplier; assemble cross-functional team.
 2. **Open** — Establish rapport, agree on agenda, exchange information.
@@ -270,6 +276,34 @@ Most contracts mandate steps before litigation:
 
 ---
 
+## 📊 Case Study — ASML's EUV Lithography Monopoly and How TSMC, Intel, Samsung Negotiate (2020-2024)
+
+**Situation.** ASML Holding N.V. (Veldhoven, Netherlands) is the **sole producer worldwide** of Extreme Ultraviolet (EUV) lithography machines — the only equipment capable of patterning chips at 7nm and below. Each machine sells for **€150-220M** and weighs ~180 tonnes. ASML's order book at the start of 2024 stood at over €38B, and the company shipped just 53 EUV machines in 2023. The three buyers that matter — TSMC, Samsung, and Intel — are negotiating against a supplier with **no realistic BATNA on the buy side**: no other company on Earth makes a competing product.
+
+**Decision.** Each buyer ran a different negotiation playbook with the same supplier:
+1. **TSMC** (largest buyer): negotiated *priority allocation slots* in exchange for prepayments, long-term volume commitments (10+ year roadmap visibility), and joint R&D investment. TSMC accepted that they could not negotiate unit price down meaningfully — instead they negotiated for *time-to-receive*, getting first delivery of the next-generation High-NA EUV in 2024.
+2. **Intel** (rebuilding fab capacity): paid a reported €350M+ for the **first** High-NA EUV machine in early 2024 — a publicity-driven move signaling its return to leading-edge manufacturing. Intel traded headline price for first-mover positioning.
+3. **Samsung**: negotiated multi-year capacity reservations and pursued process improvements (Korean officials publicly pressed ASML on access during 2022-2024 export-control discussions).
+
+The US, Dutch, and Japanese governments simultaneously imposed export controls (2023-2024) blocking sales of advanced EUV to China — narrowing ASML's customer base but *not* changing the supplier-power asymmetry for non-restricted buyers.
+
+**Outcome.** ASML's gross margin held above 51% throughout 2024. The company was able to set delivery slots years in advance. Buyers competed for time-of-arrival rather than price. TSMC's strategy paid off most cleanly: first-mover on High-NA gave them an 18-month process lead. Intel's bet was riskier — the company has since slowed its fab buildout amid demand softness, but secured strategic positioning.
+
+**Lesson for the exam / for practitioners.** This is the textbook **no-BATNA negotiation**. When the supplier holds the only product, conventional negotiation theory (BATNA, ZOPA, walk-away pricing) requires translation:
+- **You can't negotiate unit price meaningfully.** Don't waste leverage trying.
+- **You can negotiate everything else.** Slot priority, payment terms, joint R&D, capability transfer, future-product first-look rights, support terms — these are the real ZOPA.
+- **Long-term integrative posture is forced.** Distributive tactics (Module 3) burn the relationship, and the supplier has zero incentive to absorb the burn.
+- **Strategic patience matters.** TSMC's willingness to lock in 10-year commitments was the substantive concession that bought slot priority.
+
+When a CPSM scenario describes a *true* sole-source negotiation, the right answer is rarely "negotiate harder on price" — it's "redirect the negotiation toward non-price terms where ZOPA exists" plus a parallel Module 2 effort to develop alternatives over the medium term.
+
+**Discussion (Socratic).**
+- Q1: Intel paid a reported €350M+ for the *first* High-NA EUV machine — well above the unit price others paid later. Defend the decision from the buyer's TCO perspective. Then attack it. Which would you defend at an Intel board review?
+- Q2: ASML's CEO Peter Wennink (until April 2024, succeeded by Christophe Fouquet) repeatedly emphasized "we partner with our customers." Cynics call this PR; supporters say ASML can't ship without buyer R&D. What evidence would convince you which is right?
+- Q3: If you were leading supply at a fourth-tier chip fab (e.g., a Chinese SMIC after sanctions, or an Israeli Tower Semiconductor), how would you re-architect your strategy knowing you cannot buy EUV? What's the trade-off you'd implicitly accept?
+
+---
+
 ## 🧪 Warranties — Express vs Implied
 
 | Type | Description |
@@ -321,6 +355,16 @@ Implied warranties can be disclaimed ("AS IS"), but with specific language. Don'
 
 ---
 
+## 💬 Discussion — Socratic Prompts
+
+1. **Anchoring with weak data.** Conventional wisdom says "anchor first if you have solid market data." Build the strongest case for anchoring *aggressively* with weak data. Then build the case against. When does each approach fail catastrophically?
+2. **Fixed-price on R&D — when is it defensible?** Module 3 says fixed-price on undefined scope is a trap. Yet defense contractors regularly bid fixed-price on novel work (sometimes successfully). Under what conditions is fixed-price on R&D *not* a guaranteed dispute?
+3. **The post-2024 force majeure question.** After COVID, climate disasters, the Red Sea Houthi attacks (2023-2024), and the Suez/Ever Given blockage, courts have grown more skeptical of force-majeure invocations. Argue whether the standard force-majeure clause should be *narrowed* (events must be enumerated specifically) or *broadened* (any disruption with material impact). Which would you sign as a buyer? As a seller?
+4. **The two-tier ethics question.** ISM's code requires you to "decline gifts of significant value during active business." In high-context cultures (Module 6) where gift-giving is part of relationship-building, this can offend. How do you reconcile the absolute ethics rule with the practical risk of insulting a strategic partner?
+5. **ASML's pricing power and antitrust.** The ASML case in this module shows extreme supplier power. At what point does monopolistic pricing power trigger antitrust action — and would a 2025-2030 antitrust split of ASML actually serve buyers, or hurt them?
+
+---
+
 ## ✅ Module 3 Summary
 
 You now know:
@@ -341,13 +385,20 @@ You now know:
 3. 📋 [Cheat-Sheet](./Cheat-Sheet.md)
 4. ➡️ [Module 4: Supplier Relationship Management](../Module-04-Supplier-Relationship-Management/Reading.md)
 
+> **Where this leads.**
+> - Inside this course: Module 4 manages the supplier post-signing; Module 5 quantifies TCO inside the should-cost conversation; Module 6 layers cross-cultural and Incoterms onto the contract.
+> - Cross-course: [PMP Module 9 — Procurement Management](../../02-PMP/Module-09-Procurement-Management/Reading.md) for the project-side contract-administration view.
+> - Practice: Practice Exam 1 has ~22 questions drawn from this module (BATNA, ZOPA, contract types, force majeure, dispute resolution).
+
 ---
 
 ## 📚 Further Reading (Optional)
 
-- 📖 *Getting to Yes* by Fisher, Ury & Patton — the foundational text
-- 📖 *Negotiation Genius* by Malhotra & Bazerman
-- 📖 *Start with No* by Jim Camp (distributive counterpoint)
-- 📖 UCC Article 2 (goods) — free online (Cornell LII)
-- 📖 *Contract Drafting and Negotiation for Engineers and Project Managers* by Bockrath
-- 📖 World Commerce & Contracting (WorldCC) free resources
+- 📖 Fisher, Ury & Patton, *Getting to Yes: Negotiating Agreement Without Giving In*, 3rd ed. (Penguin, 2011) — the foundational text
+- 📖 Malhotra & Bazerman, *Negotiation Genius* (Bantam, 2007) — HBS-flavored cases
+- 📖 Camp, *Start with No: The Negotiating Tools the Pros Don't Want You to Know* (Crown, 2002) — distributive counterpoint
+- 📖 Lewicki, Saunders & Barry, *Negotiation*, 8th ed. (McGraw-Hill, 2020) — comprehensive academic text
+- 📖 UCC Article 2 (Sale of Goods) — free online via Cornell Legal Information Institute (LII)
+- 📖 CISG full text — free via UNCITRAL
+- 📖 *Contract Drafting and Negotiation for Engineers and Project Managers* by Joseph Bockrath
+- 📖 World Commerce & Contracting (WorldCC) — free resources, especially the *Most Negotiated Terms* annual report

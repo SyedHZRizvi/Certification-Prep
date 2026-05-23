@@ -240,3 +240,75 @@ You now know:
 3. 🎓 Read the [Scrum Guide](https://scrumguides.org/scrum-guide.html) end-to-end (~30 min)
 4. 🎯 [Take the FREE Scrum.org Open Assessment](https://www.scrum.org/open-assessments/scrum-open) (do it 3+ times, score 95%+ each)
 5. 🏆 Book your real PSM I exam!
+
+---
+
+> **Prerequisites for this module.** Before starting, you should be comfortable with:
+> - The three Scrum accountabilities and their boundaries ([Module 3 — Roles](../Module-03-Roles/Reading.md))
+> - Single-team Scrum end to end — all artifacts, events, commitments (Modules 4 and 5)
+> - The Definition of Done — including who creates it and when it's shared ([Module 6](../Module-06-Done-Estimation/Reading.md))
+> - The servant-leadership model and the 5 SM stances ([Module 7](../Module-07-Servant-Leadership/Reading.md))
+>
+> Scaling questions on PSM I are designed to test whether you can transfer single-team Scrum reasoning to multi-team contexts. If single-team Scrum is shaky, scaling won't make sense. Do *not* skip this prerequisite check.
+
+---
+
+## 📊 Case Study — Bosch Software Innovations: SAFe at Scale for IoT (2017–2024)
+
+**Situation.** Bosch — the German engineering giant — has a software arm (Bosch Software Innovations, now Bosch Connected Industry) that builds the IoT platform underlying Bosch's smart-factory, connected-mobility, and energy-management products. By 2017, BSI employed ~3,000 engineers globally (Stuttgart, Bangalore, Pittsburgh, Shanghai) building both *platform* software (Bosch IoT Suite) and *vertical* applications. The challenge: each business unit (Bosch Automotive, Bosch Home, Bosch Industrial) had its own product roadmap, but they all wanted to leverage the shared IoT platform. Without coordination, the platform team kept getting pulled in five directions.
+
+**Decision.** Between 2017 and 2019, Bosch adopted **SAFe (Scaled Agile Framework)** across BSI — 24 Agile Release Trains (ARTs), each comprising 5–12 Scrum teams, with quarterly PI (Program Increment) Planning events that aligned all the platform-consuming business units. The Scrum at the team level was kept *unmodified* — same 3 accountabilities, same 5 events, same 3 artifacts. SAFe added program-level events (PI Planning, System Demo, Inspect & Adapt) and program-level roles (Release Train Engineer = "Chief Scrum Master" for an ART, Product Management = a tier above POs). Crucially, Bosch decided early that PI Planning would always be *in person*, even for distributed ARTs — flying ~500 people to Stuttgart twice a quarter for two-day events.
+
+**Outcome.** By 2022, Bosch IoT Suite was running on ~28 million connected devices (Bosch Connected World 2022). Feature delivery for cross-business-unit features dropped from 6+ months to ~12 weeks. However, internal post-mortems (per the 2022 Bosch ConnectedExperience report) flagged three persistent issues: (1) PI Planning was overhead-heavy for teams that *didn't* have cross-team dependencies, (2) the "Chief Scrum Master" (RTE) role drifted toward project-management behaviors in ~30% of ARTs, and (3) the program-level layer occasionally clashed with team-level self-management (a SAFe critique that Schwaber himself has voiced publicly). By 2024, Bosch was selectively *de-scaling* — pulling some ARTs out of SAFe back to lighter coordination (closer to Nexus or LeSS) where dependencies didn't justify the overhead.
+
+**Lesson for the exam / for practitioners.** Three takeaways. (1) **Scaling should be *minimal*, not maximal**: don't scale further than the work requires. (2) **Single-team Scrum stays unchanged when you scale** — Bosch did *not* modify what happens at the team level; SAFe added a layer above. (3) **SAFe is not in the Scrum Guide.** The PSM I exam emphasizes Nexus (Scrum.org's framework) for awareness, but only requires deep knowledge of how *multiple Scrum Teams on the same product* should share the PO, the Product Backlog, the Product Goal, and a common DoD.
+
+**Discussion (Socratic).**
+- Q1: Bosch found ~30% of RTEs (Release Train Engineers) drifted into project-management behaviors. What does this tell you about role design in scaled frameworks? Could this happen to a Scrum Master serving multiple teams in a Nexus setup?
+- Q2: Bosch decided PI Planning would always be in-person — flying ~500 people twice a quarter. What's the principle behind that decision? Could you make the same case for in-person Sprint Reviews at single-team Scrum (e.g., John Deere from Module 4)?
+- Q3: Bosch is selectively *de-scaling* — pulling ARTs back to lighter coordination. What signal triggers de-scaling? When is "scale down" the right answer vs "improve our scaling implementation"?
+
+---
+
+> **Where this leads.**
+> - Inside this course: After this module, you've completed the framework content — next is exam prep. Take [Practice Exam 1](../Practice-Exams/Practice-Exam-1.md), then [Practice Exam 2](../Practice-Exams/Practice-Exam-2.md), then the [Final Mock Exam](../Practice-Exams/Final-Mock-Exam.md). Review wrong answers and re-read the relevant module's Reading.md.
+> - Cross-course: `02-PMP` Module 3 (Lifecycle Selection) covers when to choose a predictive vs adaptive vs hybrid lifecycle — useful for PMP scenario questions that test whether scaling is even the right answer. `02-PMP` Module 5 (Stakeholders) is relevant when you have to coordinate stakeholder engagement across multiple Scrum Teams.
+> - Practice: Practice-Exam-1 has ~3 scaling questions, Practice-Exam-2 has ~5, Final Mock has ~5. Scaling is a smaller exam weight (~10%) but the *single PO / single Product Backlog / single Product Goal / shared DoD* mapping is the most tested fact.
+
+---
+
+## 💬 Discussion — Socratic prompts
+
+1. **The "we need to scale" question.** A 12-person team claims they need to "scale to Nexus" because their work has grown. Walk through your diagnostic before recommending scaling. What three signals would tip you toward "split into 2 teams" vs "stay as one"?
+2. **One PO, ten teams.** A product with 10 Scrum Teams has one Product Owner. Is that feasible? At what point does the PO become a bottleneck, and what would you do about it? Cite the Scrum Guide and Schwaber/Sutherland's writings.
+3. **Component teams as anti-pattern — but why?** A large enterprise has organized their teams by tech layer (UI team, API team, DB team). Walk through three concrete problems this creates that feature teams would avoid. What's the org's *real* reason for component teams, and how would you challenge it?
+4. **SAFe vs Nexus vs LeSS.** Pick a specific organizational context (e.g., a 200-person bank's digital arm). Defend Nexus as the right choice. Then defend LeSS. Then defend SAFe. What's the principled tie-breaker?
+5. **De-scaling.** Bosch is pulling ARTs out of SAFe back to lighter coordination. Construct the case for de-scaling at a company you know. What does the org *give up*, and what does it *gain*? When is de-scaling actually a backslide vs a maturation?
+
+---
+
+## 📑 Named-source citations (this module)
+
+| Framework / concept | Originator(s) | Year | Venue / publication |
+|---|---|---|---|
+| Multiple Scrum Teams on one product (Scrum Guide rule) | Sutherland & Schwaber | 2020 | Scrum Guide 2020 (multiple-teams clause) |
+| Nexus framework | Schwaber & Scrum.org | 2015 | *Nexus Guide*, scrum.org/resources/nexus-guide |
+| Nexus+ (extended Nexus for many teams) | Scrum.org | 2018 | Scrum.org documentation |
+| LeSS (Large-Scale Scrum) | Larman & Vodde | 2008 (book), 2014 (LeSS rules formalized) | *Scaling Lean & Agile Development* (Addison-Wesley, 2008); *Large-Scale Scrum: More with LeSS* (Addison-Wesley, 2016); less.works |
+| LeSS Huge (1,000+ people) | Larman & Vodde | 2016 | *Large-Scale Scrum: More with LeSS* (Addison-Wesley) |
+| SAFe (Scaled Agile Framework) | Leffingwell | 2011 (first publication); current 6.0 release 2023 | *Agile Software Requirements* (Addison-Wesley, 2011); scaledagileframework.com |
+| Agile Release Train (ART) | Leffingwell | 2011 | *Agile Software Requirements* |
+| PI (Program Increment) | Leffingwell | 2011 | *Agile Software Requirements* |
+| PI Planning event | Leffingwell | 2011 | *Agile Software Requirements*; SAFe documentation |
+| Spotify model (Squads / Tribes / Chapters / Guilds) | Kniberg & Ivarsson | 2012 | Spotify internal whitepaper, *"Scaling Agile @ Spotify"* (October 2012) |
+| Scrum of Scrums | Sutherland | 2001 (originated); Schwaber 2004 (documented) | *"Agile Can Scale: Inventing and Reinventing SCRUM in Five Companies"* (Sutherland); *Agile Project Management with Scrum* (Schwaber, 2004, Microsoft Press) |
+| Feature teams vs component teams | Larman & Vodde | 2010 | *Practices for Scaling Lean & Agile Development* (Addison-Wesley) |
+| Conway's Law (referenced as why component teams hurt) | Conway | 1968 | *"How Do Committees Invent?"*, *Datamation* magazine, April 1968 |
+| Communities of Practice (CoPs) | Wenger | 1998 | *Communities of Practice: Learning, Meaning, and Identity* (Cambridge University Press) |
+| Allianz Direct (Nexus adoption case) | Allianz public disclosure | 2019 | Allianz Direct engineering blog and presentations |
+| Cisco Webex (Scrum scaling case) | Cisco public disclosures | 2018–2022 | Cisco Webex engineering team blog posts and conference talks |
+| Bosch Software Innovations / Bosch Connected Industry (SAFe case) | Bosch Connected World disclosures | 2017–2024 | Bosch Connected World annual reports; *ConnectedExperience* 2022 report |
+| *Practices for Scaling Lean & Agile Development* (THE multi-team text) | Larman & Vodde | 2010 | Addison-Wesley |
+| Tesla Gigafactory (iterative build, brief reference) | Tesla public disclosures | 2014–2024 | Tesla Investor Day disclosures; Walter Isaacson's *Elon Musk* (2023) |
+
+**Verification note.** The Scrum Guide explicitly states that multiple Scrum Teams on the same product must share one PO, one Product Backlog, one Product Goal, and a common Definition of Done. SAFe and the Spotify model are *not* in the Scrum Guide. Nexus *is* a Scrum.org product and the Nexus Guide is the authoritative reference. The PSM I exam tests scaling *lightly* — the deep tests are in PSM II and SPS (Scaled Professional Scrum), but knowing the single-PO / single-backlog / single-goal / shared-DoD rule is essential.

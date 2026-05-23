@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~55 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Amazon+Bedrock+security+best+practices+IAM+VPC" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Amazon+Bedrock+security+best+practices+IAM+VPC" target="_blank" rel="noopener" data-video-id="ybWH1K5yLIw">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 18 min · IAM, VPC endpoints, KMS, logging</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Shared+Responsibility+Model+AI" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Shared+Responsibility+Model+AI" target="_blank" rel="noopener" data-video-id="o13js0hIO_o">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 12 min · The cloud / in-the-cloud split for AI</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AIF-C01+security+governance+ExamPro" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=AIF-C01+security+governance+ExamPro" target="_blank" rel="noopener" data-video-id="kc7Qf43fblg">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 15 min · Exam-aligned recap</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Macie+PII+discovery+demo" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Macie+PII+discovery+demo" target="_blank" rel="noopener" data-video-id="PVnFYotwqyo">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~35 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+CloudTrail+Bedrock+model+invocation+logging" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+CloudTrail+Bedrock+model+invocation+logging" target="_blank" rel="noopener" data-video-id="qt38XTSAG50">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 12 min · The two different log streams</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=OWASP+Top+10+LLM+applications+threats" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=OWASP+Top+10+LLM+applications+threats" target="_blank" rel="noopener" data-video-id="mDiglllKPwg">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 15 min · Threat catalog the exam paraphrases</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+PrivateLink+VPC+endpoint+Bedrock" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+PrivateLink+VPC+endpoint+Bedrock" target="_blank" rel="noopener" data-video-id="fAkr-4cZrSY">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=KMS+customer+managed+key+best+practices" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=KMS+customer+managed+key+best+practices" target="_blank" rel="noopener" data-video-id="f3APF1dP8w0">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 18 min · Key rotation, policies, audit</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=HIPAA+on+AWS+Bedrock+healthcare+AI" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=HIPAA+on+AWS+Bedrock+healthcare+AI" target="_blank" rel="noopener" data-video-id="aTiz6ocJm4Q">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 22 min · BAA + eligible services</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Nitro+Enclaves+confidential+AI" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Nitro+Enclaves+confidential+AI" target="_blank" rel="noopener" data-video-id="PZTtJu1QtBE">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

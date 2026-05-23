@@ -412,6 +412,132 @@ D. Identify → Measure → Mitigate → Operate
 
 ---
 
+## Detailed answer rationales
+
+> Format: each entry states why the keyed answer is correct, then why every other option is wrong, then a one-line exam takeaway. Use these as the basis for spaced-repetition flashcards.
+
+**Q1. Answer: D (Azure AI services).** Current umbrella name (renamed from Cognitive Services in 2023). A is the broader ML platform; B is made-up; C is the *old* name. **Takeaway:** the rebrand is the #1-tested fact.
+
+**Q2. Answer: A (DefaultAzureCredential / ManagedIdentityCredential).** Standard Entra ID auth via the `azure-identity` package. B is for key auth; C / D are made-up. **Takeaway:** "Entra ID" + Python → `DefaultAzureCredential`.
+
+**Q3. Answer: C (`Ocp-Apim-Subscription-Key`).** Legacy from APIM gateway, still current. A is for Entra tokens; B / D are not Azure headers. **Takeaway:** memorize the header verbatim.
+
+**Q4. Answer: D (`AIServices`).** Multi-service resource kind. A is search-specific; B is a label, not a kind; C is Azure OpenAI's kind. **Takeaway:** `--kind AIServices` for multi-service.
+
+**Q5. Answer: B (Access form approval; `kind=OpenAI`).** Azure OpenAI is gated and provisioned as its own kind. A is wrong (gated). C / D apply to other services. **Takeaway:** Azure OpenAI is always separate + gated.
+
+**Q6. Answer: D (Sustainability).** The six RAI principles do **not** include Sustainability. A, B, C are all real principles. **Takeaway:** the classic "spot the extra" distractor.
+
+**Q7. Answer: D (Hate, Sexual, Violence, Self-Harm).** Content Safety's four categories. A swaps in Drugs; B is a different taxonomy; C is security-flavoured. **Takeaway:** memorize H/S/V/SH exactly.
+
+**Q8. Answer: D (0, 2, 4, 6).** Discrete severity values, no odd numbers. A / B / C use other scales. **Takeaway:** "Severity 3" is the classic trap.
+
+**Q9. Answer: A (Prompt Shields — document attack).** Catches indirect injection inside grounding documents. B finds personal info; C is moderation; D scores groundedness. **Takeaway:** document-attack ≠ user-attack ≠ moderation.
+
+**Q10. Answer: B (Grounding sources you provide).** Groundedness compares LLM output to passed-in sources. A / C / D are unrelated semantics. **Takeaway:** groundedness needs sources at request time.
+
+**Q11. Answer: C (Medium).** Default filter threshold across Hate / Sexual / Violence / Self-Harm. A / B / D are other thresholds. **Takeaway:** Medium = block at severity 4+.
+
+**Q12. Answer: A (One call with `visual_features=[…]`).** 4.0 API pattern; pass a list of features. B is 3.x style; C is REST-only and wrong shape; D is a different service. **Takeaway:** one call, all features.
+
+**Q13. Answer: D (`[VisualFeatures.READ, VisualFeatures.CAPTION, VisualFeatures.TAGS]`).** Correct enum-list shape. A wrong shape; B is string-comma legacy; C is no such enum. **Takeaway:** enum list, not strings.
+
+**Q14. Answer: C (Emotion).** Retired in 2022. A / B / D are still GA Face attributes. **Takeaway:** any answer that uses Emotion is wrong post-2022.
+
+**Q15. Answer: D (Limited Access + trained person group).** Identification needs both. A is wrong (gated); B / C are unrelated. **Takeaway:** two gates for 1-to-N.
+
+**Q16. Answer: B (Compact domain + export).** Only Compact domains can export. A general won't. C is a SKU misnomer; D is a different service. **Takeaway:** edge = Compact.
+
+**Q17. Answer: D (Custom Vision object detection).** mAP is uniquely object-detection. A uses confidence; B uses WER; C uses precision/recall. **Takeaway:** mAP = object detection.
+
+**Q18. Answer: B (CLU).** Replaces LUIS. A replaces QnA Maker; C / D are unrelated. **Takeaway:** LUIS → CLU.
+
+**Q19. Answer: D (Question Answering in Azure AI Language).** Replaces QnA Maker. A replaces LUIS; B is legacy authoring; C is a transitional name. **Takeaway:** QnA Maker → Question Answering.
+
+**Q20. Answer: C (Orchestration workflow routing CLU + QA).** Microsoft's mixed-bot canonical pattern. A / B miss one; D is brittle. **Takeaway:** mixed bot = Orchestration on top.
+
+**Q21. Answer: A (`recognize_pii_entities` returning `.redacted_text`).** PII detection includes redaction. B / C / D do not perform PII detection. **Takeaway:** PII via Azure AI Language, not via LLM prompt.
+
+**Q22. Answer: B (`Ocp-Apim-Subscription-Region`).** Required for global Translator. A / C / D are wrong header names. **Takeaway:** region header is unique to Translator's global resource.
+
+**Q23. Answer: A (Document Translation + Custom Translator category).** Preserves DOCX formatting + uses domain-tuned model. B fails on format. C is wrong service. D is manual. **Takeaway:** doc preservation + domain = combo.
+
+**Q24. Answer: C (`en-US-JennyNeural`).** Locale-Lang-NameNeural format. A / B / D are made-up. **Takeaway:** memorize the format.
+
+**Q25. Answer: C (Sentiment polarity).** SSML doesn't control sentiment; that's an NLP analysis on text. A / B / D are all real SSML controls. **Takeaway:** SSML = rendering, not analysis.
+
+**Q26. Answer: A (Limited Access + voice talent consent).** CNV's double gate. B / C / D missing one or both gates. **Takeaway:** CNV is the most-gated single Speech feature.
+
+**Q27. Answer: D (Batch transcription).** Hours of audio = batch. A tops at ~30 min; B is wrong channel; C has file-size limit and is the wrong primary tool. **Takeaway:** long audio = batch.
+
+**Q28. Answer: A (Document Intelligence).** Renamed from Form Recognizer in 2023. B / C / D are made-up. **Takeaway:** renaming pair: FR → DI.
+
+**Q29. Answer: B (Custom Template).** Identical layout = Template. A / D miss the structure; C has no fields. **Takeaway:** identical layout = Template.
+
+**Q30. Answer: A (Either B or C — pick C if prebuilt covers the fields).** The question intentionally probes the prebuilt-vs-custom decision: try prebuilt-Invoice first if fields are standard; fall back to Custom Neural if not. **Takeaway:** prebuilt before custom when fields match.
+
+**Q31. Answer: B (Custom Classifier).** Categorizes before routing. A combines AFTER classification; C / D return text/structure. **Takeaway:** classify, then extract.
+
+**Q32. Answer: B (DISKS — Data source, Indexer, Skillset, Knowledge store, Search index).** The exact five concepts. A / C / D are other vendors or made-up. **Takeaway:** memorize DISKS.
+
+**Q33. Answer: C (Pulls + optionally enriches via skillset + writes to index).** Indexer is the orchestrator. A / B / D miss the role. **Takeaway:** indexer = pull-based crawler.
+
+**Q34. Answer: C (`retrievable: true`).** Returns the field. A makes it searchable; B is tokenization; D is uniqueness. **Takeaway:** each field attribute has one purpose.
+
+**Q35. Answer: C (HNSW + Cosine).** Defaults. A / B / D pair wrong algorithms or distances. **Takeaway:** HNSW + cosine.
+
+**Q36. Answer: A (Standard S1+).** Semantic ranker tier requirement. B / C don't include semantic; D isn't the threshold. **Takeaway:** semantic = paid tier.
+
+**Q37. Answer: C (Hybrid + semantic re-ranking).** RAG gold standard. A / B / D are single-mode or wrong-service. **Takeaway:** hybrid + semantic.
+
+**Q38. Answer: D (3072).** `text-embedding-3-large`. A / B / C are smaller models. **Takeaway:** large = 3072.
+
+**Q39. Answer: D (Chosen by you, used as `model` in API).** Deployment name is your choice. A is wrong; B / C are misconceptions. **Takeaway:** deployment name, not model name.
+
+**Q40. Answer: A (PTU).** Reserved capacity, predictable latency. B / C are PAYG; D is async-batch. **Takeaway:** PTU = reserved.
+
+**Q41. Answer: A (Global Batch).** Cheapest async at scale. B / C / D are not async-cheap. **Takeaway:** Global Batch = cheapest async.
+
+**Q42. Answer: C (Style / tone / format).** Fine-tune for style. A is RAG's job; B / D are misconceptions. **Takeaway:** fine-tune = style; RAG = knowledge.
+
+**Q43. Answer: C (`in_scope: true`).** Forces grounded-only answers. A is temperature; B / D are made-up. **Takeaway:** `in_scope` controls grounding behavior.
+
+**Q44. Answer: C (JSONL with messages per line).** Fine-tune format. A / B / D are wrong formats. **Takeaway:** JSONL.
+
+**Q45. Answer: B (Azure AI Foundry).** Studio → Foundry rename. A / C / D are made-up. **Takeaway:** Studio is the old name.
+
+**Q46. Answer: A (Hub → Project → Connections / Deployments / Flows / Evals).** Foundry hierarchy. B / C / D have wrong ordering. **Takeaway:** Hub on top.
+
+**Q47. Answer: B (File Search, Code Interpreter, Function Calling, Browser preview).** Agent Service tools. A / C / D miss the full set. **Takeaway:** four built-in tools.
+
+**Q48. Answer: B (Serverless, pay-per-token).** MaaS definition. A is MaaP; C is wrong (paid); D is wrong (multi-provider). **Takeaway:** MaaS = serverless.
+
+**Q49. Answer: A (Open-source orchestration SDK).** Semantic Kernel. B / C / D wrong. **Takeaway:** SK = code SDK; Prompt Flow = visual.
+
+**Q50. Answer: B (Groundedness, Relevance, Coherence, Fluency, Similarity, Safety).** Foundry's built-in eval metrics. A is training metrics; C / D are single-dimension. **Takeaway:** six built-in evaluation metrics for GenAI.
+
+**Q51A. Answer: B (Document Intelligence Custom Template).** Consistent insurance-form layout. A returns text only; C / D miss structure. **Takeaway:** consistent layout → Template.
+
+**Q51B. Answer: B (AI Search hybrid + semantic + Azure OpenAI On Your Data).** Canonical RAG with citations. A / C / D missing key components. **Takeaway:** gold-standard RAG.
+
+**Q51C. Answer: B (Translator text translation).** Real-time multilingual queries. A / C / D wrong services. **Takeaway:** Translator for text; Speech Translation for audio.
+
+**Q51D. Answer: B (PII Detection + Groundedness + custom content filter).** Layered RAI. A removes safety; C raises hallucination; D is brittle. **Takeaway:** compose Language + Content Safety + Foundry filter config.
+
+**Q52A. Answer: B (Direct Line Speech).** Voice channel for Bot Service. A / C / D miss voice. **Takeaway:** voice = Direct Line Speech.
+
+**Q52B. Answer: B (Connect both Teams + Web Chat channels).** One bot, multiple channels. A is wasteful; C / D miss reach. **Takeaway:** Bot Service handles channel conversion.
+
+**Q52C. Answer: B (Azure AI Search indexer with SharePoint Online data source → skillset → vector + semantic).** Modern Microsoft pattern. A misses GenAI features; C / D are wrong services. **Takeaway:** SharePoint + AI Search via indexer (preview connector).
+
+**Q53. Answer: C (Check TPM/RPM; backoff; quota increase or PTU).** Canonical 429 mitigation. A / B / D are unhelpful or wrong. **Takeaway:** 429 → quota + backoff → PTU.
+
+**Q54. Answer: B (Managed identity + Cognitive Services User on the Azure OpenAI resource).** Secret-free production auth. A / C / D introduce secrets or fail. **Takeaway:** MI everywhere on Azure.
+
+**Q55. Answer: D (Identify → Measure → Mitigate → Operate).** The Microsoft RAI workflow. A / B / C wrong ordering or wrong stages. **Takeaway:** memorize the four stages and their order.
+
+---
+
 ## 📊 Scoring (out of 55 base + 7 case-study sub-questions = 62 graded items)
 
 | Score | Verdict |

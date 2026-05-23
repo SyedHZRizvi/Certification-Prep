@@ -2,6 +2,12 @@
 
 > **Why this module matters:** Network security spans firewalls, IDS/IPS, VPNs, segmentation, and secure protocols — collectively the bulk of Domain 3 (Security Architecture, 18%). PBQs love network diagrams: "drag the firewall, IDS, jump server into the right zone." Get this module right and you'll ace those.
 
+> **Prerequisites for this module.** Before starting, you should be comfortable with:
+> - [The CIA triad and defense-in-depth](../Module-01-Security-Fundamentals/Reading.md) — segmentation and zones are the textbook application of defense-in-depth.
+> - [TLS and PKI](../Module-02-Cryptography-PKI/Reading.md) — needed for VPN, HTTPS, SSH, IPSec, and DNSSEC questions.
+> - [IAM and federation](../Module-03-Identity-Access-Management/Reading.md) — needed for 802.1X, RADIUS, and ZTNA questions.
+> - OSI Layer 1-7 model and TCP/IP basics — covered in CompTIA Network+ or equivalent. If you can't name what layer DNS, ARP, TLS, BGP, HTTP, and Ethernet live at, pause and review.
+
 ---
 
 ## 🍕 A Story: The Office Building With Three Lobbies
@@ -98,6 +104,8 @@ Every layer doing one job, layered together — that's defense in depth and netw
 ---
 
 ## 🏗️ Network Architecture Patterns
+
+The concept of **defense in depth** in modern infosec descends from US **NSA / NSTISSI No. 4011** (1994), which formalized "layered defense" for federal information systems. The modern security-engineering treatment is Bruce Schneier's ***Beyond Fear*** (2003, Copernicus Books, ISBN 978-0387026206) and **Ross Anderson's *Security Engineering*** (3rd ed., Wiley, 2020 — free online from cam.ac.uk: [www.cl.cam.ac.uk/~rja14/book.html](https://www.cl.cam.ac.uk/~rja14/book.html)) — the most-cited security-engineering textbook in graduate computer science.
 
 ### Zones
 
@@ -285,6 +293,28 @@ A real PBQ might pre-place some boxes and let you drag the rest, scoring placeme
 
 ---
 
+## 📊 Case Study — Colonial Pipeline (May 2021)
+
+**Situation.** **Colonial Pipeline Company** operates the largest refined-petroleum pipeline in the United States — **5,500 miles** from Houston refineries to ports up the US East Coast, delivering **~45% of all gasoline, diesel, and jet fuel consumed on the East Coast** (Energy Information Administration data). Colonial maintained a corporate IT network for billing, scheduling, and back-office, separate from the operational technology (OT) network that controls the actual pumps and valves. Remote access into the corporate network was provided through a legacy VPN concentrator that did **not** require multi-factor authentication. One former employee's account remained active in the VPN — a credential that, after they left, was exposed in a *separate* data breach and ended up on a credential dump.
+
+**Decision.** On or before **29 April 2021**, an affiliate of the **DarkSide** ransomware-as-a-service (RaaS) gang (later attributed to a Russia-based group) used the leaked single-factor credential to log into the Colonial VPN. Once inside the corporate network, they spent ~6 days reconnoitering, then on **6-7 May 2021** deployed **DarkSide ransomware** across Colonial's billing and corporate systems. The attackers also exfiltrated ~100 GB of data for double-extortion leverage. The OT network controlling the actual pipeline was not directly compromised — but because Colonial could not *bill* customers without the corporate system, on the morning of **7 May 2021** Colonial's leadership made a precautionary decision: **shut down the entire pipeline**.
+
+**Outcome.** The pipeline was offline for **6 days** (7-13 May 2021). Gasoline supplies cratered along the US East Coast; states from Florida to Virginia saw 70%+ of gas stations run dry. Average US pump prices crossed **$3/gallon** for the first time since 2014. Colonial paid the attackers **~75 BTC ($4.4M at the time)** for the decryptor — though it was so slow that Colonial mostly restored from its own backups. The decryptor key transaction was tracked on-chain; the FBI's **Cyber Action Team** recovered **63.7 BTC** (~$2.3M of the $4.4M) by following the on-chain trail and seizing the wallet (US DOJ press release, 7 June 2021 — the first major public bitcoin clawback). DarkSide's infrastructure was taken down by an unspecified law-enforcement action days later. The incident triggered: TSA Security Directive **TSA-Pipeline 2021-01** (27 May 2021) requiring pipeline operators to report cyber incidents within 12 hours and designate a 24/7 cybersecurity coordinator; the **Cyber Incident Reporting for Critical Infrastructure Act (CIRCIA)** of 2022 making such reporting *statutory* across all critical-infrastructure sectors; CISA's *Shields Up* campaign; and, ultimately, **Executive Order 14028** (May 2021), the EO that drove the SBOM mandate and Zero Trust adoption across federal agencies.
+
+**Lesson for the exam / for practitioners.** Colonial illustrates almost every Module 6 concept and several from other modules:
+- **VPN as single point of failure.** A legacy remote-access VPN with no MFA and no continuous identity verification is the *exact* model Zero Trust Network Access (**ZTNA**) is designed to replace. Sec+ tests this: "modern replacement for traditional VPN" → ZTNA.
+- **Segmentation worked — partially.** The OT/SCADA network was *not* directly compromised. The IT/OT segmentation prevented the worst outcome: a remote-controlled pipeline malfunction. The exam tests this exact pattern: industrial systems should be segmented from corporate IT (Module 7 — Purdue Model).
+- **MFA was the single missing control.** Phishing-resistant or even basic MFA on the VPN would have blocked the attack. The exam asks: "what single control would have prevented?" — MFA tops the answer list for VPN-credential-based attacks.
+- **Backups + IR readiness.** Colonial restored from its own backups rather than rely on the paid decryptor. Module 8 (BCP) covers this: tested, immutable backups + a rehearsed IR playbook are what make ransomware survivable.
+- **Critical-infrastructure law.** Colonial directly drove TSA pipeline cybersecurity rules, CIRCIA 2022, and EO 14028. Domain 5 (GRC, Module 9) covers these. As of 2026, *every* pipeline, water, electric, and most healthcare entities are under CIRCIA-style mandatory reporting.
+
+**Discussion (Socratic).**
+- **Q1:** Colonial paid the ransom (then mostly used their own backups anyway). The FBI clawed back 36% of it. Build the strongest argument for *and against* paying ransom in a critical-infrastructure context. Reference the OFAC Advisory (US Treasury, October 2020/September 2021) on potential sanctions liability for ransom payments to designated entities.
+- **Q2:** The leaked credential was for an *ex-employee* account that was never disabled. Joiner-Mover-Leaver discipline (Module 3) is supposed to catch this. Whose job was it — IT, HR, or the SOC — to ensure that account was disabled? Design a control architecture that makes this kind of failure impossible rather than possible-but-monitored. Estimate the *cost* of that architecture and defend it against a budget objection.
+- **Q3:** Colonial's IT/OT segmentation prevented the *physical* worst case but did not prevent the *operational* worst case (shutdown decision). Should the lesson be "tighter segmentation" or "design business processes that can continue when IT is degraded"? Argue both. Reference NIST SP 800-82 (ICS/OT) and the Purdue Reference Model.
+
+---
+
 ## ⚠️ Exam Traps & Common Misconceptions
 
 | Misconception | Reality |
@@ -370,11 +400,31 @@ You now know:
 3. 📋 [Cheat-Sheet.md](./Cheat-Sheet.md) — use this for port memorization
 4. ➡️ [Module 7 — Endpoint, Mobile & Cloud Security](../Module-07-Endpoint-Mobile-Cloud-Security/Reading.md)
 
+> **Where this leads.**
+> - Inside this course: [Module 7](../Module-07-Endpoint-Mobile-Cloud-Security/Reading.md) covers ZTNA / SASE / SSE — the modern replacements for VPN; [Module 8](../Module-08-Security-Operations/Reading.md) covers SIEM ingest from firewall/IDS/IPS logs; [Module 9](../Module-09-GRC-Risk-Compliance/Reading.md) covers BCP/DR planning for the Colonial-style critical-infrastructure scenario.
+> - Cross-course: AWS Solutions Architect (course 04) covers AWS-native equivalents (Security Groups, NACLs, VPC, Route 53 DNS Firewall, GuardDuty). Azure Administrator (course 06) covers NSGs and Azure Firewall.
+> - Practice: Practice Exam 2 has ~10 network-security questions; Final Mock has ~12. Port numbers + SFTP-vs-FTPS are extremely common Sec+ "easy points."
+
 ---
 
 ## 📚 Further Reading (Optional)
 
-- 📖 [NIST SP 800-41 — Firewall Guide](https://csrc.nist.gov/publications/detail/sp/800-41/rev-1/final)
-- 📖 [NIST SP 800-77 — IPsec VPNs](https://csrc.nist.gov/publications/detail/sp/800-77/rev-1/final)
+**Primary sources / standards:**
+- 📄 NSA / NSTISSI No. 4011 (1994). *National Training Standard for Information Systems Security Professionals*. (Origin of "defense in depth" in modern US doctrine.)
+- 📄 Schneier, B. (2003). *Beyond Fear*. Copernicus Books. ISBN 978-0387026206.
+- 📄 Anderson, R. (2020). *Security Engineering* (3rd ed.). Wiley. Free online: [www.cl.cam.ac.uk/~rja14/book.html](https://www.cl.cam.ac.uk/~rja14/book.html).
+- 📄 NIST SP 800-207 (2020) — Zero Trust Architecture (covered Module 1; the same standard underpins ZTNA).
+- 📄 NIST SP 800-41 Rev 1 (2009). [*Guidelines on Firewalls and Firewall Policy*](https://csrc.nist.gov/publications/detail/sp/800-41/rev-1/final).
+- 📄 NIST SP 800-77 Rev 1 (2020). [*Guide to IPsec VPNs*](https://csrc.nist.gov/publications/detail/sp/800-77/rev-1/final).
+- 📄 IETF RFC 8446 (Rescorla, 2018). TLS 1.3.
+- 📄 IETF RFC 4949 (Shirey, 2007). *Internet Security Glossary, Version 2.* (Authoritative network-security terminology.)
+
+**Case-study sources (Colonial Pipeline):**
+- 📄 US Government Accountability Office (GAO-22-105269, March 2022). *Critical Infrastructure Protection: Federal Efforts to Enhance Pipeline Cybersecurity*.
+- 📄 US DOJ press release, 7 June 2021. *Department of Justice Seizes $2.3 Million in Cryptocurrency Paid to the Ransomware Extortionists Darkside*.
+- 📄 TSA Security Directive Pipeline-2021-01 (27 May 2021) and follow-on 2021-02.
+
+**Practitioner:**
 - 📖 [Cloudflare Learning: DNS Security](https://www.cloudflare.com/learning/dns/dns-security/)
 - 📖 [SANS Network Architecture: Defensible Network Design](https://www.sans.org/white-papers/)
+- 📖 [Krebs on Security](https://krebsonsecurity.com/) — Brian Krebs has covered nearly every major network-security incident since 2005.

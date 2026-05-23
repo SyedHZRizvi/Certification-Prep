@@ -55,6 +55,15 @@ By the end of this track, you'll be able to:
 
 ---
 
+## 🎯 Capstone Project + Recommended Readings
+
+Once you've completed the 10 modules and three practice exams, you have **two more artifacts** to engage with — these are what separate someone who *passed Sec+* from someone who is *ready to walk into a Stanford CS155 seminar or a CISO interview*:
+
+- 🛡️ [**Capstone Project — CMCU Credit Union CISO scenario**](./Capstone-Project.md) — a 6-week integrative project where you stand up a security program from scratch for a fictional regional credit union after a peer-institution breach. Seven deliverables including NIST CSF 2.0 gap assessment, IR playbook + tabletop transcript, board-level metrics dashboard, and a 5-page executive memo. Scored to 100; 70+ is portfolio-grade.
+- 📚 [**Recommended Readings — the full literature**](./Recommended-Readings.md) — canonical textbooks (Anderson, Schneier, Mitnick), seminal papers (Saltzer-Schroeder 1975, Diffie-Hellman 1976, RSA 1978, Kerberos 1988), industry blogs/podcasts worth subscribing to, and free MIT/Stanford/Cambridge courses to deepen any topic.
+
+---
+
 ## 📖 The Single Most Important Resource
 
 🔗 **[Professor Messer's free SY0-701 video course](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video-training-course/)** — Hundreds of bite-sized videos that cover every objective. Free. The de facto Sec+ teacher. Pair them with [Messer's Notes (paid PDF)](https://www.professormesser.com/) for the perfect lecture+notes combo.

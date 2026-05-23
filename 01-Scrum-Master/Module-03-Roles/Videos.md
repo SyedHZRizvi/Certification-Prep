@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~50 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Product+Owner+Scrum.org" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Product+Owner+Scrum.org" target="_blank" rel="noopener" data-video-id="6I64BdOuo8E">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 12 min · Official take</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=What+Does+Scrum+Master+Do+Mountain+Goat" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=What+Does+Scrum+Master+Do+Mountain+Goat" target="_blank" rel="noopener" data-video-id="0tC_CxeIdQc">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 15 min · Day-in-the-life view</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Developers+in+Scrum+Scrum.org" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Developers+in+Scrum+Scrum.org" target="_blank" rel="noopener" data-video-id="hSJ1-ydzIxc">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 10 min · Cross-functional teams</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Scrum+Master+vs+Project+Manager+Develpreneur" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Scrum+Master+vs+Project+Manager+Develpreneur" target="_blank" rel="noopener" data-video-id="8QVifnMWcBg">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~30 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Henrik+Kniberg+servant+leadership" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Henrik+Kniberg+servant+leadership" target="_blank" rel="noopener" data-video-id="_d1LpOPw9n8">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 12 min</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Product+Owner+Anti-Patterns+Scrum.org" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Product+Owner+Anti-Patterns+Scrum.org" target="_blank" rel="noopener" data-video-id="VnopIzbRJ8k">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 8 min</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Self-Managing+Teams+Atlassian" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Self-Managing+Teams+Atlassian" target="_blank" rel="noopener" data-video-id="swVWLqG0fBE">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Product+Owner+day+in+the+life+vlog" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Product+Owner+day+in+the+life+vlog" target="_blank" rel="noopener" data-video-id="4Pee58mbotE">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

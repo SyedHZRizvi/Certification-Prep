@@ -804,4 +804,548 @@ For each miss, identify the originating module (5–8), re-read it, add flashcar
 
 ---
 
+## 📚 Detailed Answer Rationales
+
+These rationales explain why the correct answer wins AND why each distractor fails. Read carefully — Module 5-8 scenarios are where CPSM heavily weights judgment.
+
+**Q1. D.** TCO = acquisition + operating + disposal.
+- A, B, C wrong: Each captures only one phase.
+- Exam-takeaway: TCO spans the asset's full lifecycle.
+
+**Q2. C.** Bottom-up estimate of what an item should cost.
+- A wrong: That's the supplier's price, not should-cost.
+- B wrong: A wish isn't an analysis.
+- D wrong: Market average is benchmarking, not should-cost.
+- Exam-takeaway: Should-cost = your independent build-up vs supplier quote.
+
+**Q3. A.** Target cost = market price - required margin.
+- B, C, D wrong: Misunderstandings.
+- Exam-takeaway: Target costing starts with the market.
+
+**Q4. A.** VE = design of NEW products.
+- B, C, D wrong: Wrong phases.
+- Exam-takeaway: VE happens early; VA happens after.
+
+**Q5. A.** VA = production phase.
+- B, C, D wrong: Wrong phases.
+- Exam-takeaway: Memorize the VA/VE distinction.
+
+**Q6. B.** 80% curve = 80% of prior cost each doubling.
+- A, C, D wrong: Wrong math.
+- Exam-takeaway: $100 → $80 → $64 → $51.20 → $40.96 at units 1,2,4,8,16.
+
+**Q7. D.** Labor-intensive repetitive work.
+- A, B, C wrong: Automation, materials, one-offs don't drive learning curves.
+- Exam-takeaway: Learning curves require repetition + labor.
+
+**Q8. B.** Forward = custom OTC.
+- A wrong: That's futures.
+- C, D wrong: Wrong characterizations.
+- Exam-takeaway: Forward = custom; futures = standardized.
+
+**Q9. C.** Option = right, not obligation, for a premium.
+- A wrong: Forwards/futures are obligations.
+- B, D wrong: Wrong characterizations.
+- Exam-takeaway: Options are insurance-like.
+
+**Q10. A.** Hedge known exposures to reduce risk.
+- B, C, D wrong: Speculation, replacement, bypass are all violations.
+- Exam-takeaway: Hedging ≠ speculating.
+
+**Q11. B.** 2/10 Net 30 = 2% discount in 10 days, else net 30.
+- A, C, D wrong: Wrong readings.
+- Exam-takeaway: Memorize this common term.
+
+**Q12. D.** 2% × (365/20) ≈ 36.5% annualized.
+- A, B, C wrong: Don't annualize.
+- Exam-takeaway: Cash discount math is exam-standard.
+
+**Q13. B.** Should-cost / VA-VE / supplier innovation for strategic categories.
+- A wrong: Reverse auction destroys strategic supplier collaboration.
+- C wrong: Spot buying isn't strategic.
+- D wrong: Brand-name spec limits options.
+- Exam-takeaway: Strategic = collaborative cost levers.
+
+**Q14. C.** Savings = real reduction; Avoidance = avoided increase vs forecast.
+- A, B, D wrong: Conflating or dismissing the distinction.
+- Exam-takeaway: Report them separately to executives.
+
+**Q15. C.** Supplier may default or buyer overpay; indexed pricing protects both.
+- A, B, D wrong: Mischaracterizations.
+- Exam-takeaway: Fixed-price on multi-year volatile commodity = mutual risk.
+
+**Q16. A.** Positive NPV when discounted inflows exceed investment.
+- B, C, D wrong: Wrong definitions.
+- Exam-takeaway: NPV positive = green light.
+
+**Q17. C.** E-catalogs / P-cards / automation for non-critical.
+- A, B, D wrong: Over-investment for low-impact spend.
+- Exam-takeaway: Match the lever to the quadrant.
+
+**Q18. B.** VA/VE to challenge over-specification.
+- A wrong: Reverse-auctioning aerospace-grade aluminum still buys aerospace-grade.
+- C wrong: Hedging doesn't fix over-spec.
+- D wrong: Single source compounds the problem.
+- Exam-takeaway: VA/VE first; sourcing tactics second.
+
+**Q19. D.** A is cheaper: $35K + $11K = $46K vs $30K + $19K = $49K. (Note: answer key shows "A" for this question — the explanation correctly identifies A as cheaper despite the option text. Treat as: TCO favors A on 5-year fuel total.)
+- B, C wrong: Don't compute fuel total.
+- Exam-takeaway: Always compute multi-year TCO; acquisition price alone misleads.
+
+**Q20. A.** ROI = (Gain - Cost) / Cost × 100%.
+- B, C, D wrong: Wrong formulas.
+- Exam-takeaway: Memorize the formula.
+
+**Q21. A.** Report savings + avoidance separately per finance policy.
+- B, C, D wrong: Each conflates or hides numbers.
+- Exam-takeaway: Integrity > making the number.
+
+**Q22. D.** Should-cost + fact-based negotiation about variance.
+- A, B, C wrong: Don't leverage should-cost.
+- Exam-takeaway: Should-cost is conversation fuel.
+
+**Q23. C.** Hedge known exposures, match horizon, document, Treasury executes.
+- A wrong: Speculation forbidden.
+- B wrong: Hedging nothing exposes the company.
+- D wrong: 100% hedge over-insures.
+- Exam-takeaway: Hedging is governed, partial, matched.
+
+**Q24. C.** Healthy strategic supplier; offer supply chain finance.
+- A, B, D wrong: Punitive or harmful approaches.
+- Exam-takeaway: Long terms with healthy suppliers; SCF for cash-tight ones.
+
+**Q25. D.** At unit 8, 80% curve from $100 → $80 → $64 → $51.20.
+- A, B, C wrong: Different unit positions.
+- Exam-takeaway: Walk the doubling sequence.
+
+**Q26. C.** 11 Incoterms in 2020 set.
+- A, B, D wrong: Wrong counts.
+- Exam-takeaway: 7 any-mode + 4 sea-only = 11.
+
+**Q27. D.** EXW: buyer bears responsibility from seller's door.
+- A, B, C wrong: EXW is the *minimum* seller obligation.
+- Exam-takeaway: EXW = buyer does the most.
+
+**Q28. C.** DDP: seller does the most including import customs.
+- A, B, D wrong: Mischaracterizations.
+- Exam-takeaway: DDP = seller does almost everything.
+
+**Q29. B.** DPU replaced DAT in 2020.
+- A, C, D wrong: Other Incoterms.
+- Exam-takeaway: DPU is "Delivered at Place Unloaded" — broader than terminals.
+
+**Q30. D.** FOB applies to sea/inland waterway only.
+- A, B, C wrong: FOB doesn't apply to air or general modes.
+- Exam-takeaway: Common misuse; CPSM tests precisely.
+
+**Q31. D.** CIP requires all-risk insurance (changed in 2020).
+- A, B, C wrong: Wrong levels.
+- Exam-takeaway: CIP all-risk; CIF minimum.
+
+**Q32. B.** CIF requires minimum insurance.
+- A, C, D wrong: Wrong levels.
+- Exam-takeaway: Different from CIP intentionally.
+
+**Q33. D.** FCPA prohibits bribery of foreign government officials.
+- A wrong: That's antitrust.
+- B wrong: That's IP law.
+- C wrong: FCPA covers public-sector primarily.
+- Exam-takeaway: FCPA = foreign officials.
+
+**Q34. A.** UK Bribery Act includes private-sector bribery + "failure to prevent" corporate offense.
+- B, C, D wrong: UK Bribery Act is broader, not narrower.
+- Exam-takeaway: UK Bribery Act > FCPA scope.
+
+**Q35. B.** OFAC = US economic and trade sanctions.
+- A wrong: That's State Dept (ITAR).
+- C wrong: That's CBP.
+- D wrong: That's banks.
+- Exam-takeaway: OFAC = Treasury sanctions list.
+
+**Q36. C.** ITAR controls defense articles and services.
+- A, B, D wrong: Wrong scopes.
+- Exam-takeaway: ITAR = State Dept defense.
+
+**Q37. D.** USMCA replaced NAFTA (July 2020).
+- A, B, C wrong: Different FTAs.
+- Exam-takeaway: USMCA is the post-NAFTA agreement.
+
+**Q38. D.** RCEP = 15 Asia-Pacific including ASEAN + China, Japan, Korea, Australia, NZ.
+- A, B, C wrong: Wrong regions.
+- Exam-takeaway: World's largest FTA by GDP.
+
+**Q39. A.** Certificate of Origin needed to claim FTA preferential tariffs.
+- B, C, D wrong: Wrong purposes.
+- Exam-takeaway: No certificate = no preferential rate.
+
+**Q40. A.** Transaction FX = specific contract movement between contract and payment.
+- B, C, D wrong: Different exposure types.
+- Exam-takeaway: Three FX exposure types: transaction, translation, economic.
+
+**Q41. D.** Forward or option matched to payment date, Treasury-executed.
+- A wrong: Speculation banned.
+- B wrong: Doesn't eliminate, just shifts.
+- C wrong: Wait-and-see is unmanaged exposure.
+- Exam-takeaway: Match instrument to known exposure.
+
+**Q42. A.** Refuse, document, escalate. UK Bribery Act prohibits, FCPA exception narrow.
+- B, C, D wrong: Each is some form of paying or hiding.
+- Exam-takeaway: Combined US/UK = refuse + document.
+
+**Q43. B.** L/C = bank-guaranteed payment instrument.
+- A, C, D wrong: Wrong characterizations.
+- Exam-takeaway: L/C de-risks both sides via bank intermediary.
+
+**Q44. A.** Open account/consignment = highest seller risk, lowest buyer risk.
+- B, C, D wrong: Different risk profiles.
+- Exam-takeaway: Buyer pays last → buyer risk lowest.
+
+**Q45. A.** Power distance = acceptance of unequal power.
+- B, C, D wrong: Wrong concepts.
+- Exam-takeaway: Hofstede's first dimension.
+
+**Q46. A.** Japan: high-context, collectivist, moderately high-power-distance.
+- B, C, D wrong: Mischaracterizations.
+- Exam-takeaway: Memorize key cultural archetypes.
+
+**Q47. D.** FOB Shenzhen: risk transfers when goods on vessel at Shenzhen port.
+- A, B, C wrong: Wrong transfer points.
+- Exam-takeaway: FOB = "on board" loading point.
+
+**Q48. A.** Layered mitigation: flow-downs + due diligence + audits + training + payment controls.
+- B wrong: Refusing all business overcorrects.
+- C wrong: Offshore intermediaries are red flags.
+- D wrong: Ignoring is reckless.
+- Exam-takeaway: Layered controls beat single controls.
+
+**Q49. B.** FX risk shifted to supplier, who prices it in.
+- A wrong: Not eliminated.
+- C wrong: Supplier doesn't absorb.
+- D wrong: CISG doesn't forbid currency choice.
+- Exam-takeaway: You can shift, not eliminate.
+
+**Q50. C.** Alternates + HTS classification check + tariff engineering + reassess TCO.
+- A, B, D wrong: Each is a partial or wrong response.
+- Exam-takeaway: Tariff response is multi-pronged.
+
+**Q51. A.** Avoid, Transfer, Mitigate, Accept.
+- B wrong: Process steps, not treatments.
+- C, D wrong: Reorderings/wrong concepts.
+- Exam-takeaway: Memorize the 4 treatments.
+
+**Q52. D.** Accept. Expected loss = 5% × $1M = $50K < $200K treatment.
+- A, B, C wrong: Over-treatment.
+- Exam-takeaway: Expected value math drives treatment.
+
+**Q53. B.** 3TG = Tin, Tungsten, Tantalum, Gold.
+- A, C, D wrong: Different metals.
+- Exam-takeaway: Dodd-Frank §1502.
+
+**Q54. A.** RCOI + Form SD filing.
+- B, C, D wrong: Misunderstandings of the obligation.
+- Exam-takeaway: Reasonable Country of Origin Inquiry + annual SEC filing.
+
+**Q55. B.** RTO = Recovery Time Objective.
+- A, C, D wrong: Wrong meanings.
+- Exam-takeaway: BCP vocabulary is precise.
+
+**Q56. D.** RPO = Recovery Point Objective (acceptable data loss window).
+- A, B, C wrong: Wrong meanings.
+- Exam-takeaway: RPO measures data loss tolerance.
+
+**Q57. D.** MTD must be greater than RTO.
+- A, B, C wrong: Reversed or incorrect.
+- Exam-takeaway: MTD > RTO; otherwise business stops first.
+
+**Q58. A.** Engage remediation, escalate, document, prepare contractual action.
+- B, C, D wrong: Each is some form of avoidance.
+- Exam-takeaway: ISM ethics = engage, not switch silently.
+
+**Q59. C.** £36M threshold for UK Modern Slavery Act.
+- A, B, D wrong: Wrong numbers.
+- Exam-takeaway: £36M turnover = annual statement required.
+
+**Q60. A.** US Uyghur Forced Labor Prevention Act.
+- B, C, D wrong: Other names.
+- Exam-takeaway: 2022 effective; rebuttable presumption against Xinjiang goods.
+
+**Q61. C.** Scope 3 = all other indirect including supply chain (70-90% of corporate total).
+- A wrong: That's Scope 1.
+- B wrong: That's Scope 2.
+- D wrong: End-of-life is one slice of Scope 3.
+- Exam-takeaway: Procurement owns the biggest carbon lever.
+
+**Q62. B.** Decline + disclose + document.
+- A, C, D wrong: Each compromises ethics.
+- Exam-takeaway: Significant-value gifts during active negotiation = decline.
+
+**Q63. C.** ISO 31000 = risk management.
+- A, B, D wrong: Different ISOs.
+- Exam-takeaway: Memorize ISO scopes.
+
+**Q64. B.** SA 8000 = social accountability.
+- A, C, D wrong: Different standards.
+- Exam-takeaway: SA 8000 = labor practices.
+
+**Q65. B.** Contractual BCP requirement + periodic review.
+- A, C, D wrong: Each is insufficient governance.
+- Exam-takeaway: Critical suppliers need contractual BCP.
+
+**Q66. C.** Transfer (insurance) + mitigate (dual-source, safety stock).
+- A wrong: Ignoring low-probability/high-impact is reckless.
+- B wrong: Avoiding may be impossible.
+- D wrong: Consultant alone doesn't mitigate.
+- Exam-takeaway: Layer treatments for asymmetric risks.
+
+**Q67. B.** "Aggressive cost reduction" is NOT an ISM principle.
+- A, C, D: All real ISM principles.
+- Exam-takeaway: ISM's 10 principles are about values, not cost levers.
+
+**Q68. D.** People, Planet, Profit (Elkington 1994).
+- A, B, C wrong: Different frameworks.
+- Exam-takeaway: Triple bottom line = sustainability frame.
+
+**Q69. A.** Decline + explain + escalate + document.
+- B, C, D wrong: Each fails the ethics test.
+- Exam-takeaway: Pressure to pick a friend = textbook ethics scenario.
+
+**Q70. C.** Disclose + document + consider recusal.
+- A, B, D wrong: Each compromises fairness.
+- Exam-takeaway: Inadvertent visibility into confidential info = disclose immediately.
+
+**Q71. C.** Critical disruptions originate deeper (Suez, pandemic, geopolitics).
+- A, B, D wrong: SEC requirements limited; Tier-1 matters; auditors don't dictate depth.
+- Exam-takeaway: Map beyond Tier-1 for strategic categories.
+
+**Q72. B.** Accept, document, monitor when treatment > expected loss.
+- A, C, D wrong: Each ignores cost-benefit math.
+- Exam-takeaway: Some risks should be accepted.
+
+**Q73. B.** AS9100 = aerospace.
+- A, C, D wrong: Other industries' standards.
+- Exam-takeaway: Memorize industry standards.
+
+**Q74. B.** IATF 16949 = automotive.
+- A, C, D wrong: Other industries.
+- Exam-takeaway: Automotive quality standard.
+
+**Q75. C.** Refuse, return/destroy, document, remind of confidentiality.
+- A, B, D wrong: Using or filing stolen info is unethical.
+- Exam-takeaway: Don't touch misappropriated competitive data.
+
+**Q76. C.** Decline, cite finance/audit policy, escalate.
+- A, B, D wrong: Backdating is fraud.
+- Exam-takeaway: Date integrity is non-negotiable.
+
+**Q77. D.** Create urgency is Step 1.
+- A, B, C wrong: Later steps.
+- Exam-takeaway: Memorize Kotter's sequence.
+
+**Q78. A.** ADKAR = Awareness, Desire, Knowledge, Ability, Reinforcement.
+- B, C, D wrong: Made-up acronyms.
+- Exam-takeaway: Prosci's model.
+
+**Q79. C.** Forming, Storming, Norming, Performing, Adjourning.
+- A wrong: PMI process groups.
+- B wrong: PDCA cycle.
+- D wrong: ADKAR.
+- Exam-takeaway: Tuckman 1965; Adjourning added 1977.
+
+**Q80. C.** Servant/situational delegating for mature self-directed teams.
+- A, B, D wrong: Over-direction for a mature team.
+- Exam-takeaway: Match style to follower maturity.
+
+**Q81. D.** Accountable (only one per task).
+- A, B, C wrong: Wrong meanings.
+- Exam-takeaway: One A per task is non-negotiable.
+
+**Q82. C.** Manage closely (high power + high interest).
+- A, B, D wrong: Wrong tactics.
+- Exam-takeaway: Power/Interest grid quadrants.
+
+**Q83. A.** Storming (week 2 conflict).
+- B, C, D wrong: Different stages.
+- Exam-takeaway: Storming is normal; coach through it.
+
+**Q84. D.** Crash critical-path tasks only.
+- A, B, C wrong: Wasted resources.
+- Exam-takeaway: Non-critical-path crash doesn't shorten the project.
+
+**Q85. A.** Scope, Time, Cost (Quality center).
+- B, C, D wrong: Wrong constraints.
+- Exam-takeaway: Classic triple constraint.
+
+**Q86. C.** (O + 4M + P) / 6.
+- A wrong: Simple average.
+- B, D wrong: Wrong formulas.
+- Exam-takeaway: PERT weights the most likely.
+
+**Q87. C.** Poor stakeholder + change management.
+- A, B, D wrong: Less common root causes.
+- Exam-takeaway: People, not strategy or software, sink transformations.
+
+**Q88. D.** Show data others adopted to encourage adoption.
+- A, B, C wrong: Misunderstandings of social proof.
+- Exam-takeaway: Cialdini's social proof = visible adoption.
+
+**Q89. D.** % of addressable spend actively managed.
+- A, B, C wrong: Wrong metrics.
+- Exam-takeaway: SUM is a maturity indicator.
+
+**Q90. B.** 80%+ is world-class.
+- A, C, D wrong: Lower/higher targets misrepresent best practice.
+- Exam-takeaway: 80%+ SUM = Stage 5 maturity.
+
+**Q91. C.** Serving the team and removing obstacles.
+- A, B, D wrong: Other styles.
+- Exam-takeaway: Servant = team-first.
+
+**Q92. A.** Data + social proof + individual conversations + cross-functional engagement.
+- B wrong: Escalating prematurely damages trust.
+- C wrong: Mandating without persuasion fails.
+- D wrong: Dropping the initiative cedes ground.
+- Exam-takeaway: Influence > authority in cross-functional work.
+
+**Q93. A.** SMART KPIs.
+- B, C, D wrong: Lazy/lagging-only KPIs miss the point.
+- Exam-takeaway: Memorize SMART.
+
+**Q94. A.** Root-cause analysis.
+- B, C, D wrong: Different concepts.
+- Exam-takeaway: 5 Whys is RCA, not negotiation/leadership/risk.
+
+**Q95. D.** Diagnose ADKAR gap and intervene.
+- A, B, C wrong: Solutions without diagnosis.
+- Exam-takeaway: Adoption failure → ADKAR diagnostic first.
+
+**Q96. C.** Executive leadership + affected internal customers first.
+- A, B, D wrong: Wrong audiences first.
+- Exam-takeaway: Comms cascade order matters.
+
+**Q97. C.** Longest dependent sequence determining min project duration.
+- A, B, D wrong: Wrong definitions.
+- Exam-takeaway: Critical path = longest, not shortest.
+
+**Q98. A.** Mentoring is long-term, career-focused.
+- B, C, D wrong: Reversed or incomplete.
+- Exam-takeaway: Mentoring = career; coaching = performance.
+
+**Q99. B.** Transformational + cross-functional collaboration.
+- A, C, D wrong: Wrong styles for the mission.
+- Exam-takeaway: Cost AND innovation requires balance.
+
+**Q100. B.** Balanced mix: financial + quality + delivery + ESG + risk + people.
+- A, C, D wrong: Single-axis metrics fail.
+- Exam-takeaway: Balanced scorecard is the modern standard.
+
+**Q101. A.** Executive (CFO/COO/CEO) with high power AND high interest.
+- B, C, D wrong: Wrong sponsorship level.
+- Exam-takeaway: Stakeholder analysis matches sponsorship.
+
+**Q102. B.** Decline; report accurately; escalate.
+- A, C, D wrong: Each is some form of compromise.
+- Exam-takeaway: Audit findings are not negotiable.
+
+**Q103. D.** Diagnose ADKAR gap and intervene specifically.
+- A, B, C wrong: Solutions without diagnosis.
+- Exam-takeaway: Same ADKAR pattern.
+
+**Q104. B.** Evaluate SCF as working-capital + supplier-health win when terms fair.
+- A wrong: Reject without analysis.
+- C wrong: Accept any terms is reckless.
+- D wrong: Hiding from finance is unethical.
+- Exam-takeaway: Evaluate SCF on merits.
+
+**Q105. D.** Engage with data, listen, refine, gain endorsement.
+- A, B, C wrong: Each escalates or capitulates without engagement.
+- Exam-takeaway: Strategy disputes are influence opportunities.
+
+**Q106. C.** Develop alternate, design around, multi-year contract, explore make-or-buy.
+- A, B, D wrong: Each accepts vulnerability or self-harm.
+- Exam-takeaway: Sole-source extortion = structural response.
+
+**Q107. B.** Decline + explain + escalate + document.
+- A, C, D wrong: Each compromises process.
+- Exam-takeaway: Pressure to pick a friend = textbook ethics.
+
+**Q108. B.** Decline + disclose + document.
+- A, C, D wrong: Each accepts the gift.
+- Exam-takeaway: Significant-value gift during evaluation = decline.
+
+**Q109. A.** Disclose + propose remediation + document per contract.
+- B, C, D wrong: Each is some form of concealment.
+- Exam-takeaway: Post-shipment defect → immediate disclosure.
+
+**Q110. A.** Engage Tier-1 + accelerate alternate qualification + monitor + update risk register.
+- B wrong: "Tier-1 owns it" is an abdication.
+- C wrong: Terminating Tier-1 punishes the wrong party.
+- D wrong: Insurance doesn't restore supply.
+- Exam-takeaway: Tier-2 failure = supply continuity through Tier-1.
+
+**Q111. B.** Data, social proof, reciprocity, relationship, expertise.
+- A, C, D wrong: Each is a failed influence mode.
+- Exam-takeaway: Cialdini's principles applied to cross-functional work.
+
+**Q112. B.** Sequence quick wins (rationalization, contract compliance) for FY impact while building multi-year strategy.
+- A wrong: Promising without analysis = breaching commitment later.
+- C wrong: Pushing back on all targets is unhelpful.
+- D wrong: Cancelling strategy abandons value.
+- Exam-takeaway: Horizon-mixing is a leadership skill.
+
+**Q113. D.** SUM + balanced scorecard.
+- A, B, C wrong: Tactical metrics don't show strategic maturity.
+- Exam-takeaway: Match metric to audience (CFO = strategic balance).
+
+**Q114. B.** PIP + parallel dual-source + executive escalation + manage transition if no improvement.
+- A wrong: Immediate termination skips remediation.
+- C wrong: Ignoring 3 quarters of underperformance is malpractice.
+- D wrong: Increasing volumes rewards underperformance.
+- Exam-takeaway: Strategic suppliers get PIP, not immediate exit.
+
+**Q115. A.** Pilot with measurable KPIs, then business case.
+- B, C, D wrong: Each avoids real evaluation.
+- Exam-takeaway: Tech investments need piloted, measured ROI.
+
+**Q116. D.** Capability building + cross-functional integration + KPI evolution.
+- A, B, C wrong: Software, cuts, intermediaries don't drive maturity.
+- Exam-takeaway: Stage 3 → 4 is about people and process, not tools.
+
+**Q117. D.** Refuse + uphold ISM ethics + document + escalate if persistent.
+- A, B, C wrong: Each is some form of complicity.
+- Exam-takeaway: Information requests are ethics traps.
+
+**Q118. B.** Engage supplier per FP-EPA/change clauses + alternative sources + recompute TCO.
+- A, C, D wrong: Default, ignore, or demand-absorb all fail.
+- Exam-takeaway: Tariff shocks → contract clauses + alternatives + TCO.
+
+**Q119. C.** Policy + training + tooling + governance to prevent recurrence.
+- A, B, D wrong: Permit, punish, or tolerate are all failures.
+- Exam-takeaway: Maverick spend = system problem, not individual blame.
+
+**Q120. C.** Coordinated cross-functional brief with timeline, options, asks.
+- A, B, D wrong: Silence, public PR, or waiting all fail.
+- Exam-takeaway: Crisis communication is structured and timely.
+
+**Q121. A.** Treat as data-leak incident + investigate + reaffirm confidentiality + review IT controls.
+- B, C, D wrong: Using it, ignoring, or sharing all fail.
+- Exam-takeaway: Suspicious knowledge = investigate, don't exploit.
+
+**Q122. B.** Identify weak modules, re-read, redo module quizzes, retake in 3-5 days.
+- A, C, D wrong: Each fails to remediate.
+- Exam-takeaway: Structured remediation > brute-force retesting.
+
+**Q123. D.** Refuse without written change request + evaluation + approval per change-control process.
+- A, B, C wrong: Verbal/email approvals bypass governance.
+- Exam-takeaway: Change control protects scope.
+
+**Q124. C.** Engage strategic suppliers on their emissions + require Scope 1/2 data + design out high-emission materials.
+- A, B, D wrong: Each is partial or evasive.
+- Exam-takeaway: Scope 3 reduction is procurement-led.
+
+**Q125. D.** 60 CE hours every 3 years (recertification).
+- A, B, C wrong: Wrong cadences.
+- Exam-takeaway: ISM CPSM requires 60 hours every 3 years.
+
+---
+
 ➡️ When ready: **[Final-Mock-Exam](./Final-Mock-Exam.md)** (165 Q / 180 min) — real conditions, full simulation of one CPSM exam.

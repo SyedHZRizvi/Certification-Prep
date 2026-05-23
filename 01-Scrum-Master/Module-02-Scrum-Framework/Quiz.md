@@ -307,3 +307,126 @@ Direct from the Scrum Guide. NOT a methodology, NOT a process, NOT best practice
 ---
 
 ➡️ [Cheat Sheet](./Cheat-Sheet.md) → [Module 3: Roles](../Module-03-Roles/Reading.md)
+
+---
+
+## 🧠 Bloom's-taxonomy mapping (existing Q1–Q27)
+
+| Q# | Bloom level | Why |
+|---|---|---|
+| Q1 | Remember | Recall of 2020 Scrum Guide team-size rule |
+| Q2 | Remember | Recall of Sprint timebox max |
+| Q3 | Remember | Recall of which is *not* a Scrum value |
+| Q4 | Remember | Artifact↔commitment mapping recall |
+| Q5 | Remember | Recall of who cancels Sprint |
+| Q6 | Understand | Define Sprint Goal in own words |
+| Q7 | Understand | Distinguish "framework" from "methodology" |
+| Q8 | Apply | Scenario — pick correct action |
+| Q9 | Remember | Recall of Scrum's two foundations |
+| Q10 | Remember | Recall of quality rule |
+| Q11 | Apply | Map value to scenario (admitting "I don't know") |
+| Q12 | Remember | Artifact↔commitment mapping recall |
+| Q13 | Remember | Recall of Increment frequency rule |
+| Q14 | Remember | Recall of 2020 renaming |
+| Q15 | Evaluate | Judge fit of Scrum for stable requirements |
+| Q16 | Remember | Artifact↔commitment recall |
+| Q17 | Understand | Distinguish "endangers Sprint Goal" vs "clarifies scope" |
+| Q18 | Apply | Map missing value to scenario |
+| Q19 | Analyze | Distinguish what's prescribed vs not |
+| Q20 | Remember | Recall the 5 values |
+| Q21 | Apply | Pick correct action when Sprint Goal becomes obsolete |
+| Q22 | Remember | Recall of "accountabilities" term |
+| Q23 | Evaluate | Judge whether a 14-person team is properly sized |
+| Q24 | Remember | Recall of "Lean thinking" addition |
+| Q25 | Understand | Define Scrum Team properties |
+| Q26 | Analyze | Identify which Scrum rule is violated |
+| Q27 | Understand | Define what Scrum is |
+
+**Current distribution:** Remember 13 (48%), Understand 5 (19%), Apply 4 (15%), Analyze 2 (7%), Evaluate 2 (7%), Create 0 (0%). Recall-heavy — the new questions below add Apply/Analyze/Evaluate/Create depth.
+
+---
+
+## 🚀 Additional higher-Bloom questions (Q28–Q33, advanced)
+
+### Q28. Your CTO has read the Scrum Guide and announces: "We follow the Guide exactly, so we should see results in 3 months." After 3 months, no measurable improvement. Analyzing this through the framework-vs-methodology lens, what's the MOST LIKELY error in the CTO's reasoning? *(Analyze)*
+A. The Scrum Guide is too detailed; they over-implemented
+B. Scrum is a framework — following the Guide is *necessary but not sufficient*; the team's practices inside the framework determine outcomes
+C. Three months is too short — Scrum requires 6 months minimum
+D. The CTO should have hired a Scrum Master before starting
+
+---
+
+### Q29. The 2020 Scrum Guide added lean thinking to the foundation alongside empiricism. Construct the strongest argument for WHY this addition was needed in 2020 (not 2010 or 2015). *(Create / Evaluate)*
+A. Lean was newly invented in 2020
+B. Scrum without lean encouraged accidental waste (over-engineered DoD, refinement bloat, ceremony overhead); explicit lean thinking corrects against accumulating ritual cruft
+C. Lean is required by the FDA as of 2020
+D. Lean and empiricism contradict each other; the Guide acknowledged the tension
+
+---
+
+### Q30. A team's Sprint Goal is "Enable users to reset passwords via email." Mid-Sprint, the PO realizes that an upcoming GDPR change requires *also* enabling SMS-based reset. The PO wants to add SMS reset to the current Sprint. Evaluating against the Scrum Guide, what's the correct response? *(Apply)*
+A. The PO can add SMS reset — they own the backlog
+B. Coach the PO: scope can be *clarified* with the PO, but changes that *endanger the Sprint Goal* are prohibited. Adding SMS reset is a new goal; defer to next Sprint or cancel and re-plan
+C. The Developers should add SMS reset because regulations override Scrum
+D. The Scrum Master should cancel the Sprint
+
+---
+
+### Q31. Salesforce's ADM transition (Module 2 case study) synchronized every team to the same 30-day Sprint boundary. Construct the case that this *enables* self-management AND the case that this *violates* self-management. Which is the stronger case for a 200-engineer org? *(Evaluate)*
+A. Synchronization is always anti-Scrum
+B. Synchronization is always pro-Scrum
+C. Synchronization enables self-management at scale by giving teams predictable integration points; teams still self-organize *within* the Sprint — the cadence is a shared constraint, not a directive
+D. Self-management is unnecessary in orgs of 100+ people
+
+---
+
+### Q32. The Scrum Guide says "Scrum is deliberately incomplete." A junior Scrum Master asks why. Apply the framework-not-methodology principle to defend the Guide's minimalism in 3-5 sentences-worth of reasoning. Which statement BEST captures this? *(Apply)*
+A. Sutherland and Schwaber ran out of time when writing it
+B. Detail is sold separately by Scrum.org as a revenue model
+C. Deliberate incompleteness preserves team self-organization; teams fill in the practices that fit their context, preventing one-size-fits-all anti-patterns
+D. Scrum requires you to read other books to understand it
+
+---
+
+### Q33. Design the *minimum viable* Sprint cadence for a brand-new 6-person team that has never done Scrum before. Which choice MOST closely follows the Scrum Guide while staying practical? *(Create)*
+A. Skip Sprint Planning the first month; let the team find their feet
+B. 1-week Sprint with all 5 events at proportional timeboxes (Planning 2 hr, Daily 15 min, Review 1 hr, Retro 45 min); team chooses 2 PBIs to start; DoD = "deployable to staging"
+C. 4-week Sprint to give the team breathing room; only hold Retro at the end
+D. 2-week Sprint with all events plus an extra "Sprint Zero" of 4 weeks for setup
+
+---
+
+## 🎯 Answer key — Q28–Q33
+
+### Q28: **B. Framework, not methodology**
+The Guide defines the *minimum* required structure (3 accountabilities, 5 events, 3 artifacts, 3 commitments). It deliberately leaves estimation, tooling, refinement practice, story format, and dozens of other choices to the team. Following the Guide *exactly* without filling in those choices well will produce no improvement — the team has to learn what works for *their* context. A is the opposite of true; C is arbitrary; D conflates with hiring practice.
+
+### Q29: **B. Lean prevents ritual cruft**
+By 2020, Sutherland and Schwaber had seen 25 years of Scrum implementations accumulate ceremony bloat, over-engineered DoDs, refinement-as-meeting overload, and so on. Adding lean thinking explicitly invites teams to *eliminate waste* — including waste in their own Scrum practice. (A is factually wrong — lean is 1948+; C is invented; D is wrong — lean and empiricism are complementary, not contradictory.)
+
+### Q30: **B. Coach the PO**
+The Scrum Guide is explicit: scope can be clarified with the PO as more is learned, but changes that *endanger the Sprint Goal* are prohibited. SMS reset is a new goal, not a clarification of "email reset." Options: defer to next Sprint, or — *if* the email-reset goal has been rendered obsolete by GDPR — the PO can *cancel* the Sprint (rare). The SM should NOT cancel (D — only PO can); the team should not just add it (A, C).
+
+### Q31: **C. Synchronization enables self-management at scale**
+The strongest defense for ADM-style synchronization is that cross-team integration points (release boundaries) impose a *constraint* on cadence but not on *how* teams work inside the Sprint. Each team still self-organizes within its Sprint. This is similar to all employees being required to attend an annual review meeting — the requirement is real, but doesn't dictate how they work day-to-day. Salesforce's experience supports this view: attrition went *down*, not up, after synchronization.
+
+### Q32: **C. Deliberate incompleteness preserves self-organization**
+This is the Scrum Guide's own framing — Sutherland and Schwaber repeatedly emphasize that the Guide is "minimum sufficient" and that adding rules would defeat the framework's purpose. Teams in different contexts (regulated, distributed, hardware-coupled) need different practices; the Guide stays out of those choices. A, B, and D are dismissive non-answers.
+
+### Q33: **B. 1-week Sprint with proportional timeboxes and a tight starting DoD**
+For a *new* team, 1-week Sprints maximize feedback cycles and force the team to encounter all 5 events quickly. Timeboxes scale proportionally (Planning 2 hr / Daily 15 min / Review 1 hr / Retro 45 min). Starting with a tight, achievable DoD ("deployable to staging") prevents the team from being crushed by perfectionism. Two PBIs to start is small enough to ship. A skips a required event; C delays critical learning (the Retro is *the* learning loop); D introduces "Sprint Zero" which is *not* in the Scrum Guide.
+
+---
+
+## 📊 Updated distribution after Q28–Q33
+
+| Bloom level | Count | % | Target |
+|---|---|---|---|
+| Remember | 13 | 39% | ≤ 25% |
+| Understand | 5 | 15% | ~ 25% |
+| Apply | 7 | 21% | ~ 25% |
+| Analyze | 3 | 9% | ~ 20% |
+| Evaluate | 4 | 12% | within 20% |
+| Create | 2 | 6% | ~ 5% |
+
+Still above the 25% Remember ceiling — but no existing questions were modified (per the ADDITIVE-ONLY constraint). The new Q28–Q33 raise the floor of higher-Bloom coverage.

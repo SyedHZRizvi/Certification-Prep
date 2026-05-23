@@ -7,7 +7,7 @@
 
 ## Questions
 
-### Q1. Elkington's triple bottom line measures success on:
+### Q1. Elkington's triple bottom line measures success on: *(Remember)*
 A. Profit, payroll, productivity
 B. People, planet, profit
 C. People, partners, profit
@@ -15,7 +15,7 @@ D. Process, product, place
 
 ---
 
-### Q2. Within the GHG Protocol, emissions from a company's purchased electricity are classified as:
+### Q2. Within the GHG Protocol, emissions from a company's purchased electricity are classified as: *(Apply)*
 A. Scope 1
 B. Scope 2
 C. Scope 3
@@ -23,7 +23,7 @@ D. Not counted
 
 ---
 
-### Q3. Supplier-side emissions and employee commute typically fall under:
+### Q3. Supplier-side emissions and employee commute typically fall under: *(Apply)*
 A. Scope 1
 B. Scope 2
 C. Scope 3
@@ -31,7 +31,7 @@ D. Outside the inventory
 
 ---
 
-### Q4. The 9 R hierarchy places which strategy HIGHEST?
+### Q4. The 9 R hierarchy places which strategy HIGHEST? *(Remember)*
 A. Recycle
 B. Recover
 C. Refuse
@@ -39,7 +39,7 @@ D. Repair
 
 ---
 
-### Q5. ISO 14001 certifies:
+### Q5. ISO 14001 certifies: *(Remember)*
 A. Information security
 B. Environmental management systems
 C. Quality management
@@ -47,7 +47,7 @@ D. Energy management
 
 ---
 
-### Q6. The ISO standard for risk management is:
+### Q6. The ISO standard for risk management is: *(Remember)*
 A. ISO 14001
 B. ISO 9001
 C. ISO 27001
@@ -55,7 +55,7 @@ D. ISO 31000
 
 ---
 
-### Q7. The 4 risk treatment options (4 T's) include all EXCEPT:
+### Q7. The 4 risk treatment options (4 T's) include all EXCEPT: *(Understand)*
 A. Tolerate
 B. Treat / mitigate
 C. Transfer
@@ -63,7 +63,7 @@ D. Tabulate
 
 ---
 
-### Q8. An FMEA's RPN is calculated as:
+### Q8. An FMEA's RPN is calculated as: *(Remember)*
 A. Severity + Occurrence + Detection
 B. Severity × Occurrence × Detection
 C. Severity − Occurrence − Detection
@@ -71,7 +71,7 @@ D. Severity / Occurrence
 
 ---
 
-### Q9. RTO is BEST defined as:
+### Q9. RTO is BEST defined as: *(Understand)*
 A. Maximum data loss acceptable
 B. Target time to restore a function after disruption
 C. Average backup retention
@@ -79,7 +79,7 @@ D. Recovery point average
 
 ---
 
-### Q10. RPO is BEST defined as:
+### Q10. RPO is BEST defined as: *(Understand)*
 A. The longest a business can be down
 B. The maximum acceptable data loss
 C. The time to restore IT
@@ -87,7 +87,7 @@ D. The total backup size
 
 ---
 
-### Q11. CSR's foundational layer in Carroll's pyramid is:
+### Q11. CSR's foundational layer in Carroll's pyramid is: *(Remember)*
 A. Philanthropic
 B. Ethical
 C. Legal
@@ -95,7 +95,7 @@ D. Economic
 
 ---
 
-### Q12. ESG ratings typically come from:
+### Q12. ESG ratings typically come from: *(Remember)*
 A. UN
 B. MSCI, Sustainalytics, ISS, S&P Global
 C. ISO directly
@@ -103,7 +103,7 @@ D. WTO
 
 ---
 
-### Q13. Apple has a CSR controversy when a Tier-3 mine in Africa shows child labor. The PRIMARY risk category is:
+### Q13. Apple has a CSR controversy when a Tier-3 mine in Africa shows child labor. The PRIMARY risk category is: *(Analyze)*
 A. Demand risk
 B. Reputational and compliance risk
 C. Currency risk
@@ -111,7 +111,7 @@ D. Pipeline risk
 
 ---
 
-### Q14. A supply chain that absorbs shocks AND adapts is described as:
+### Q14. A supply chain that absorbs shocks AND adapts is described as: *(Understand)*
 A. Lean
 B. Resilient
 C. Efficient
@@ -119,7 +119,7 @@ D. Centralized
 
 ---
 
-### Q15. Multi-tier supplier visibility is increasingly DRIVEN by:
+### Q15. Multi-tier supplier visibility is increasingly DRIVEN by: *(Understand)*
 A. CPFR
 B. Forced-labor regulations (UFLPA, EU CSDDD, Modern Slavery Acts)
 C. EOQ models
@@ -127,7 +127,7 @@ D. Drum-buffer-rope
 
 ---
 
-### Q16. A company purchases insurance to cover supplier disruption losses. This is risk:
+### Q16. A company purchases insurance to cover supplier disruption losses. This is risk: *(Apply)*
 A. Avoidance
 B. Acceptance
 C. Mitigation
@@ -135,7 +135,7 @@ D. Transfer
 
 ---
 
-### Q17. The Science-Based Targets initiative (SBTi) validates:
+### Q17. The Science-Based Targets initiative (SBTi) validates: *(Remember)*
 A. Carbon offsets
 B. Net-zero targets aligned with climate science
 C. ISO certifications
@@ -143,7 +143,7 @@ D. Supplier scorecards
 
 ---
 
-### Q18. TCFD focuses on:
+### Q18. TCFD focuses on: *(Remember)*
 A. Energy management
 B. Climate-related financial risk disclosure
 C. Trade compliance
@@ -151,7 +151,7 @@ D. Carrier rate optimization
 
 ---
 
-### Q19. The UN Sustainable Development Goals were adopted in:
+### Q19. The UN Sustainable Development Goals were adopted in: *(Remember)*
 A. 2000
 B. 2010
 C. 2015
@@ -159,7 +159,7 @@ D. 2020
 
 ---
 
-### Q20. The risk heatmap plots:
+### Q20. The risk heatmap plots: *(Understand)*
 A. Cost vs revenue
 B. Likelihood vs impact
 C. Probability vs urgency
@@ -167,7 +167,7 @@ D. Time vs distance
 
 ---
 
-### Q21. A company runs annual tabletop exercises to test response to a port closure. This is part of:
+### Q21. A company runs annual tabletop exercises to test response to a port closure. This is part of: *(Apply)*
 A. EOQ
 B. BCP / DRP testing
 C. ABC analysis
@@ -175,7 +175,7 @@ D. CPFR
 
 ---
 
-### Q22. The UN Global Compact's 10 principles cover:
+### Q22. The UN Global Compact's 10 principles cover: *(Remember)*
 A. Trade, tariffs, customs
 B. Human rights, labor, environment, anti-corruption
 C. Forecasting accuracy
@@ -183,7 +183,7 @@ D. Logistics performance
 
 ---
 
-### Q23. The CSR pyramid's TOP layer is:
+### Q23. The CSR pyramid's TOP layer is: *(Remember)*
 A. Economic
 B. Legal
 C. Ethical
@@ -191,7 +191,7 @@ D. Philanthropic
 
 ---
 
-### Q24. NIST CSF's 5 core functions are:
+### Q24. NIST CSF's 5 core functions are: *(Remember)*
 A. Plan, Source, Make, Deliver, Return
 B. Identify, Protect, Detect, Respond, Recover
 C. Predict, Prevent, Pursue, Persist, Prosper
@@ -199,7 +199,7 @@ D. Scope, Spec, Source, Ship, Settle
 
 ---
 
-### Q25. A natural disaster has 30% likelihood and high impact. A risk heatmap would categorize this as:
+### Q25. A natural disaster has 30% likelihood and high impact. A risk heatmap would categorize this as: *(Apply)*
 A. Low
 B. Medium
 C. High

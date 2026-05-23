@@ -2,6 +2,13 @@
 
 > **Why this module matters:** Networking is where most beginners freeze. The good news: CLF-C02 only tests the *concepts* — not the routing tables. Master the 8 services in this module and you'll handle every networking question.
 
+> **Prerequisites for this module.** Before starting, you should be comfortable with:
+> - [Cloud Fundamentals](../Module-01-Cloud-Fundamentals/Reading.md) — Regions, AZs, Edge Locations
+> - [Core Storage](../Module-03-Core-Storage/Reading.md) — what S3 is (CloudFront often sits in front of it)
+> - Basic networking literacy: what an IP address, subnet, and DNS name are
+>
+> No CCNA needed — CLF-C02 keeps networking conceptual. If you've configured a home router's port forwarding, you know enough about the underlying network model to handle this module.
+
 ---
 
 ## 🏘️ A Story: Maria's Pizza Empire Goes Global
@@ -104,6 +111,8 @@ Route 53 also does **domain registration** and **health checks**.
 ---
 
 ## 📦 Amazon CloudFront — CDN
+
+CloudFront launched in November 2008. The general "CDN" architecture pattern — push content out to geographically distributed edge nodes — was popularized by Akamai (founded 1998, MIT spinout from Daniel Lewin and Tom Leighton's research) and is described academically in Leighton et al., *"Globally Distributed Content Delivery,"* IEEE Internet Computing 2002. Brewer's CAP theorem (Brewer, PODC keynote 2000; formalized by Gilbert & Lynch, *ACM SIGACT News*, 2002) explains why CDN caches favor availability + partition tolerance over strong consistency.
 
 **CloudFront = AWS's CDN.** Caches your content at **400+ Edge Locations** worldwide for low-latency delivery.
 
@@ -250,6 +259,25 @@ By default, EC2 → S3 traffic goes out the IGW (over the public internet). **VP
 
 ---
 
+## 🏛️ Case Study — Netflix: AWS + Open Connect (2008–present)
+
+**Situation.** In August 2008 — five years before Netflix's "all-in" AWS announcement — a corrupted database in Netflix's own Los Gatos data center caused three days of DVD-shipping downtime. CEO Reed Hastings concluded that running their own physical infrastructure was a strategic liability. By 2008, streaming was growing fast and Netflix did not want to be in the data-center business while also reinventing how the world watches TV.
+
+**Decision.** Netflix made two layered architectural bets between 2008 and 2016:
+1. **Migrate everything except video delivery to AWS** (2008–2015). The control plane, recommendation engine, encoding pipeline, billing, A/B testing — all on AWS. By January 2016, Netflix announced the on-prem data center was closed. Yury Izrailevsky (then VP Cloud) blogged the milestone (*"Completing the Netflix Cloud Migration,"* Netflix Tech Blog, Feb 2016).
+2. **Build their own CDN — Open Connect (OCAs) — for the actual video bits** (2011 onwards). Rather than pay AWS CloudFront margin on petabytes/hour of streaming, Netflix shipped purpose-built cache appliances to ISPs around the world for free. Comcast, Verizon, Telstra, Liberty Global, KPN — all install Open Connect Appliances in their PoPs. By 2024, Open Connect delivers ~95% of Netflix traffic; CloudFront / AWS is used only for sub-second control-plane responses, fallback, and ramp-up.
+
+**Outcome.** Netflix is the largest video-streaming service in the world (~270M paid subscribers, 2024 Q1). Streaming-quality metrics consistently outperform competitors because Open Connect terminates *inside* the ISP's network — eliminating the "ISP-to-CDN" hop entirely. Compute / control-plane elasticity comes from AWS; bandwidth economics come from Open Connect. Netflix open-sourced major pieces of its AWS-native stack: **Chaos Monkey** (2011), **Hystrix** (2012), **Eureka** (2012), and the entire **Spinnaker** continuous-delivery platform (2014, co-developed with Google).
+
+**Lesson for the exam / for practitioners.** Netflix is the textbook case for *"AWS for what's elastic; build-your-own for what's high-bandwidth and predictable."* On CLF-C02, Netflix is the implicit example whenever the exam mentions "global content delivery" or CloudFront. For practitioners, the lesson is sharper: at high enough scale, **the CDN bill is its own business model**, not a line item — and the same logic that Dropbox applied to S3 (Module 3) Netflix applied to CloudFront. AWS's response was to add the **CloudFront Save Plans / committed-use pricing** that didn't exist when Netflix made its decision.
+
+**Discussion (Socratic).**
+- Q1: Netflix could have used 100% CloudFront. Why didn't they? At what subscriber count (1M? 10M? 100M?) does the Open Connect investment break even? What other factors besides cost (e.g., ISP relationships, latency control) tip the answer?
+- Q2: AWS reportedly *helped* Netflix design Open Connect — even though it cannibalized AWS CDN revenue. Why would AWS support a customer competing with one of its own products? What does that tell you about Amazon's broader strategic playbook?
+- Q3: Netflix's choice (cloud for control plane, owned for bandwidth) is sometimes called the "hourglass" architecture. Where else does this pattern apply? (Hint: think about Spotify's audio streaming, or Twitter / X's image hosting.)
+
+---
+
 ## ✅ Module 4 Summary
 
 You now know:
@@ -261,6 +289,7 @@ You now know:
 - ⚖️ ALB (Layer 7), NLB (Layer 4), GWLB (Layer 3)
 - 🚀 Global Accelerator vs CloudFront — when to pick which
 - 🛜 API Gateway for serverless APIs
+- 🎬 Netflix's AWS-control-plane + Open-Connect-bandwidth split as the canonical hybrid CDN case
 
 **Next steps:**
 1. 🎥 [Videos](./Videos.md)
@@ -271,6 +300,23 @@ You now know:
 
 ---
 
+> **Where this leads.**
+> - Inside this course: Module 6 (Security) covers WAF, Shield, and OAC for locking down CloudFront origins. Module 8 (Well-Architected) revisits Performance Efficiency through the lens of edge caching and Global Accelerator.
+> - Cross-course: `04-AWS-Solutions-Architect-Associate` Module 4 introduces ALB Listener Rules, target groups, sticky sessions, and SAA-specific topics like Network Firewall and AWS PrivateLink for cross-account services.
+> - Practice: Practice Exam 1 has 9 networking questions (Qs 12–17, 25, 26, 32). Final Mock Exam has 8 networking questions distributed across the Cloud Tech & Services domain.
+
+---
+
+## 💬 Discussion — Socratic prompts
+
+1. **Security Group vs NACL design.** A new team-mate argues "let's just put all the deny rules in Security Groups." Explain in two sentences why that's impossible. Then walk through the design principle for *when* you actually need NACLs vs when SGs are sufficient — citing a concrete example.
+2. **Direct Connect's hidden gotcha.** A finance customer asks "we'll use Direct Connect because it's encrypted." Walk through why that's wrong, what AWS *does* and *doesn't* encrypt by default, and what the customer should actually use (DX + VPN, or MACsec on DX) for end-to-end encryption.
+3. **CloudFront vs Global Accelerator design choice.** A WebSocket-based real-time multiplayer game wants global low latency. CloudFront is "the CDN" — but is it the right answer here? Walk through why Global Accelerator might be better, and when CloudFront would still win.
+4. **Transit Gateway vs many VPC Peerings.** At what number of VPCs does Transit Gateway start being cheaper / simpler than mesh peering? What's the *operational* (not financial) tipping point?
+5. **The S3 + CloudFront "private origin" trap.** Beginners often make their S3 bucket public to serve via CloudFront. What's wrong with that, and how does OAC (Origin Access Control, replaced OAI in 2022) fix it? What's the right exam answer?
+
+---
+
 ## 📚 Further Reading (Optional)
 
 - 📖 [VPC User Guide](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html)
@@ -278,3 +324,14 @@ You now know:
 - 📖 [Choosing Between ALB / NLB / GWLB](https://aws.amazon.com/elasticloadbalancing/features/#Product_comparisons)
 - 📖 [CloudFront Developer Guide](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html)
 - 📖 [Direct Connect vs VPN](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/introduction.html)
+
+---
+
+## 📚 Further sources (this module)
+
+- 📰 **Izrailevsky, Y. — *"Completing the Netflix Cloud Migration"* (Netflix Tech Blog, February 2016)** — primary-source disclosure of the 7-year AWS migration. Pair with Adrian Cockcroft's 2013 QCon talk *"How Netflix Uses Cassandra and AWS at Scale."*
+- 🎙️ **Netflix Open Connect engineering — *"Open Connect Architecture"* (Netflix Tech Blog, 2020 update)** — how the CDN appliances integrate with ISP networks. Free PDF.
+- 📄 **Leighton, T., et al. — *"Globally Distributed Content Delivery"* (IEEE Internet Computing, Sep 2002)** — the academic paper that defined modern CDN architecture. Tom Leighton co-founded Akamai based on this research.
+- 📄 **Gilbert, S. & Lynch, N. — *"Brewer's Conjecture and the Feasibility of Consistent, Available, Partition-Tolerant Web Services"* (ACM SIGACT News, June 2002)** — the formal proof of Brewer's CAP theorem. Explains the consistency / availability trade-off every CDN makes.
+- 📖 **AWS Builders' Library — *"Caching challenges and strategies"* by Matt Brinkley** — the canonical AWS-side discussion of cache invalidation, TTL design, and stampede protection. Free, ~25-min read.
+- 🎓 **Stanford CS244 *Advanced Topics in Networking* (David Mazières, free on Stanford's site)** — module on CDN architecture covers Akamai, CloudFront, and Open Connect as compare-and-contrast.

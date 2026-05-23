@@ -991,4 +991,180 @@ Aim for ≥75% per domain before the real exam.
 
 ---
 
+## Detailed answer rationales
+
+### Domain 1 — Strategy & Environment (Q1-Q37)
+
+- **Q1 (A. Material, information, cash)** — APICS dictionary. B is outcomes, C is actors, D is concepts.
+- **Q2 (C. 6)** — SCOR has 6 top-level processes (Plan/Source/Make/Deliver/Return/Enable).
+- **Q3 (D. 11)** — Enable was added in SCOR version 11 (2012).
+- **Q4 (A. Perfect order)** — Reliability metric. B is responsiveness, C is agility, D is asset.
+- **Q5 (A. Efficient)** — Stable predictable = Fisher functional product → efficient SC.
+- **Q6 (B. Agile)** — Apple = high demand uncertainty + high supply uncertainty (rare earths, geopolitics).
+- **Q7 (D. Responsive)** — Fisher pairs innovative products with responsive SCs.
+- **Q8 (A. Raw materials)** — MTO CODP at raw materials. Components held; products built on order.
+- **Q9 (C. Lower freight costs)** — Not a bullwhip cause. The 5 are: forecast updating, batching, price fluctuations, rationing, long lead times.
+- **Q10 (D. Share POS via CPFR/VMI)** — Information sharing attacks the root cause.
+- **Q11 (A. Downstream)** — Postponement moves CODP downstream (closer to customer).
+- **Q12 (B. 85 days)** — C2C = 70 + 45 − 30 = 85.
+- **Q13 (C. Postponement)** — HP printer power packs = delayed differentiation.
+- **Q14 (A. People, planet, profit)** — Elkington's TBL (1994).
+- **Q15 (A. Direct emissions)** — Scope 1 = directly owned sources.
+- **Q16 (B. 70-90%)** — Scope 3 dominates total footprint in most industries.
+- **Q17 (B. EMS)** — ISO 14001 certifies environmental management systems.
+- **Q18 (B. Net-zero targets)** — SBTi validates climate-aligned targets.
+- **Q19 (B. Refuse)** — Top of 9R hierarchy is Refuse (don't make/buy at all).
+- **Q20 (D. MSCI, etc.)** — ESG raters are private firms, not UN/WTO/ISO.
+- **Q21 (A. Economic)** — Carroll's CSR pyramid foundation = economic.
+- **Q22 (C. 2015)** — UN SDGs adopted September 2015 (Agenda 2030).
+- **Q23 (D. Multi-tier visibility)** — UFLPA + CSDDD + Modern Slavery Acts force multi-tier visibility.
+- **Q24 (C. Risk management)** — ISO 31000.
+- **Q25 (B. Tabulate)** — 4 T's: Tolerate, Treat, Transfer, Terminate.
+- **Q26 (A. Transfer)** — Insurance = risk transfer.
+- **Q27 (D. S × O × D)** — FMEA RPN multiplicative.
+- **Q28 (B. Likelihood × impact)** — Risk heatmap axes.
+- **Q29 (D. Target time to restore)** — RTO definition.
+- **Q30 (B. Max acceptable data loss)** — RPO definition.
+- **Q31 (A. BCP development)** — BIA quantifies impact per function for BCP / RTO / RPO.
+- **Q32 (D. Identify/Protect/Detect/Respond/Recover)** — NIST CSF 2.0 functions.
+- **Q33 (B. Redundancy, flexibility, visibility)** — Resilience levers vs pure efficiency.
+- **Q34 (B. Circular)** — Patagonia Worn Wear = closed-loop / circular economy.
+- **Q35 (A. Align demand, supply, finance, exec)** — S&OP's strategic-interface purpose.
+- **Q36 (C. Financial, strategic, NPI)** — IBP extends S&OP.
+- **Q37 (A. Reduced flexibility, capital lock-up)** — Vertical integration downside.
+
+### Domain 2 — Design (Q38-Q67)
+
+- **Q38 (A)** — Center-of-gravity assumes straight-line, single facility, uniform freight rate.
+- **Q39 (C. 60,000)** — Break-even: 1,000,000 + 20x = 400,000 + 30x → 600,000 = 10x → x = 60,000.
+- **Q40 (D. 40%)** — √(4/10) ≈ 0.632, so SS reduces by ~37%, closest to 40%.
+- **Q41 (D. Pooling vs longer outbound)** — Centralized network trade-off.
+- **Q42 (A. Inventory up, transport down)** — U-shape cost curve.
+- **Q43 (D. Many micro-FCs)** — 1-hour urban requires proximity.
+- **Q44 (B. Core competency, IP-rich)** — Make rationale.
+- **Q45 (A. External firm; foreign country)** — Outsourcing vs offshoring definitions.
+- **Q46 (A. Nearshoring)** — China → Mexico for US market.
+- **Q47 (C. Strategic)** — Custom IC = high impact + high supply risk = Strategic quadrant.
+- **Q48 (D. Leverage)** — High volume + many qualified suppliers = Leverage quadrant.
+- **Q49 (A. Single sourcing)** — Chose ONE of many possible (not "sole" which is only one).
+- **Q50 (C. 70-80%)** — Class A SKUs typical value share.
+- **Q51 (B. Capability information)** — RFI gathers capability data.
+- **Q52 (B. Well-defined spec, price-dominant)** — RFQ use case.
+- **Q53 (A. Spend analysis)** — Step 1 of 7-step sourcing.
+- **Q54 (D. Acquisition + operating + maintenance + disposal + hidden)** — TCO scope.
+- **Q55 (D. Joint R&D, scorecards, equity)** — Strategic alliance level SRM.
+- **Q56 (D. BATNA)** — Best Alternative To a Negotiated Agreement (Fisher & Ury).
+- **Q57 (A. Buyer)** — Cost-plus transfers cost risk to the buyer.
+- **Q58 (D. Strategic custom components)** — Reverse auctions inappropriate for strategic items.
+- **Q59 (C. Service-Level Agreement)** — SLA.
+- **Q60 (A. Best-customer pricing)** — MFN clause = supplier promises buyer at least the best price any customer gets.
+- **Q61 (D. Trusted-trader programs)** — C-TPAT/AEO/PIP.
+- **Q62 (B. Aligns forecasts; dampens bullwhip)** — CPFR's bullwhip mechanism.
+- **Q63 (D. Services can't be inventoried)** — Capacity is the buffer.
+- **Q64 (C. Lower SS requirements)** — Inventory pooling benefit.
+- **Q65 (C. 11)** — Incoterms 2020 count.
+- **Q66 (D. Seller's premises)** — EXW: seller does nothing.
+- **Q67 (A. Seller)** — DDP is hardest on the seller (does everything including import duties).
+
+### Domain 3 — Planning & Execution (Q68-Q127)
+
+- **Q68 (B. Forecast)** — Independent demand = forecast.
+- **Q69 (D. MRP from BOM)** — Dependent demand = calculated.
+- **Q70 (D. 106)** — F = 0.3·120 + 0.7·100 = 36 + 70 = 106.
+- **Q71 (B. Trend)** — Holt extends ES with trend component.
+- **Q72 (A. Trend + seasonality)** — Holt-Winters scope.
+- **Q73 (C. Lumpy / intermittent)** — Croston's method use case.
+- **Q74 (C. 10)** — MAD = (5+10+15+10)/4 = 10.
+- **Q75 (D. Investigate model for bias)** — |TS| > 4.
+- **Q76 (A. Actuals near zero)** — MAPE breaks down.
+- **Q77 (C. Joint planning with shared forecast)** — CPFR definition.
+- **Q78 (C. CPFR joint, VMI supplier-executed)** — Critical distinction.
+- **Q79 (B. Executive S&OP)** — Step 5 of Wallace/Stahl.
+- **Q80 (A. Product family)** — S&OP granularity.
+- **Q81 (B. MPS, BOM, inventory records)** — MRP inputs verbatim.
+- **Q82 (B. Inside firm orders only)** — DTF definition.
+- **Q83 (A. MPS at key work centers)** — RCCP scope.
+- **Q84 (D. Capacity + materials)** — CTP extends ATP.
+- **Q85 (C. Net requirement each period)** — Lot-for-lot.
+- **Q86 (D. √(2DS/H))** — EOQ formula.
+- **Q87 (C. Quantity discounts)** — Not assumed by EOQ.
+- **Q88 (A. 550)** — Avg LT demand 500; SS = 1.65 × 30 = 49.5; ROP ≈ 550.
+- **Q89 (D. 10)** — Turns = 50/5 = 10.
+- **Q90 (B. 36)** — DIO = 365/10 ≈ 36.5.
+- **Q91 (B. $500)** — 25% × $2,000 = $500.
+- **Q92 (C. 0.90)** — Critical ratio = 90/(90+10) = 0.90.
+- **Q93 (B. Pareto distribution)** — ABC analysis basis.
+- **Q94 (C. Continuous accuracy, no shutdown)** — Cycle counting benefit.
+- **Q95 (B. In-transit)** — Pipeline inventory.
+- **Q96 (B. Reliability, short LT, quality)** — JIT supplier requirements.
+- **Q97 (C. Forecasting)** — Not in TIMWOOD.
+- **Q98 (D. Realistic mix, schedule, maintenance)** — Effective capacity.
+- **Q99 (A. Wait time increases)** — Past 85% utilization, queueing explodes.
+- **Q100 (B. Ocean)** — Lowest cost per ton-mile.
+- **Q101 (B. Same container across modes)** — Intermodal definition.
+- **Q102 (B. Asset-light orchestrator)** — 4PL definition.
+- **Q103 (A. Perfect order)** — Strictest service KPI.
+- **Q104 (B. Pickers stay in zones)** — Zone picking.
+- **Q105 (B. E-commerce FC)** — Goods-to-person for high-throughput.
+- **Q106 (C. Customs-supervised, deferred duty)** — Bonded warehouse.
+- **Q107 (A. Drop-shipping)** — Retailer takes order, manufacturer ships direct.
+- **Q108 (C. 48 × 40 GMA)** — NA standard pallet.
+- **Q109 (A. Freight contract + receipt)** — Bill of Lading.
+- **Q110 (C. Temporary admission for trade shows)** — ATA Carnet.
+- **Q111 (C. DDP)** — Seller pays import duties.
+- **Q112 (C. Insurance Clause C)** — CIF adds insurance vs CFR.
+- **Q113 (D. Containerized cargo)** — ICC recommends FCA over FOB.
+- **Q114 (C. DPU)** — Incoterms 2020 renamed DAT to DPU.
+- **Q115 (B. Clause A)** — CIP requires Clause A (broad) vs CIF's Clause C.
+- **Q116 (B. 6 digits)** — HS codes harmonized globally at 6.
+- **Q117 (A. Below fair value)** — Anti-dumping duty trigger.
+- **Q118 (C. Letters of credit)** — UCP 600.
+- **Q119 (C. Confirming bank)** — Adds extra guarantee.
+- **Q120 (D. Repeated shipments)** — Revolving LC use case.
+- **Q121 (D. Forward contract)** — Known-amount, known-date FX hedge.
+- **Q122 (D. Defer duty until release)** — FTZ benefit.
+- **Q123 (B. FTA preferential tariff)** — Rules of Origin purpose.
+- **Q124 (C. FTA preferential tariff)** — Country of origin matters for FTA qualification.
+- **Q125 (A. Cost to dest port; risk at loading)** — CFR mechanics.
+- **Q126 (D. Matching-currency invoicing)** — Natural hedge.
+- **Q127 (A. Transaction value)** — WTO valuation method 1.
+
+### Domain 4 — Improvements (Q128-Q150)
+
+- **Q128 (C. Skills underused)** — TIMWOODS 8th waste.
+- **Q129 (B. 3.4 per million)** — Six Sigma DPMO target.
+- **Q130 (A. Define, Measure, Analyze, Improve, Control)** — DMAIC sequence.
+- **Q131 (A. New process/product design)** — DMADV purpose (Design for Six Sigma).
+- **Q132 (C. Exploit)** — TOC step 2.
+- **Q133 (C. A × P × Q)** — OEE multiplicative formula.
+- **Q134 (D. Sort, Set, Shine, Standardize, Sustain)** — 5S.
+- **Q135 (D. Analyze)** — Fishbone is brainstorming causes → Analyze phase.
+- **Q136 (C. Continuous small frontline)** — Kaizen.
+- **Q137 (A. Financial/Customer/Internal/L&G)** — BSC perspectives.
+- **Q138 (C. Money via sales − truly variable)** — TOC throughput definition.
+- **Q139 (C. Pace and magnitude)** — BPR vs Kaizen.
+- **Q140 (A. On-time + in-full + undamaged + correct docs)** — Perfect order.
+- **Q141 (B. Control)** — Control charts in Control phase.
+- **Q142 (D. Single-Minute Exchange of Die)** — SMED.
+- **Q143 (B. Mistake-proofing)** — Poka-yoke.
+- **Q144 (C. Plan, Do, Check, Act)** — PDCA cycle.
+- **Q145 (D. Functional benchmarking)** — Compared best-in-class outside industry.
+- **Q146 (A. Part-time within role)** — Green Belt scope.
+- **Q147 (B. Visual signal of problem)** — Andon.
+- **Q148 (B. Digital twin)** — Industry 4.0 simulated physical-system model.
+- **Q149 (D. Go to actual workplace)** — Gemba walk.
+- **Q150 (D. The constraint)** — Drum-buffer-rope pulls at constraint pace.
+
+### Exam-takeaway patterns to memorize
+
+1. **APICS dictionary verbatim** — 3 flows, perfect order, dependent vs independent demand, RCCP vs CRP.
+2. **Hau Lee + Fisher matrices** — recognize the quadrant from scenario.
+3. **5-step S&OP** — Data → Demand → Supply → Pre-S&OP → Executive (Wallace/Stahl 1999).
+4. **EOQ + SS + ROP math** — practice 10+ calculations until automatic.
+5. **Incoterms 2020 all 11** — flashcard daily until exam.
+6. **Kraljic 4 quadrants** — match item description → quadrant → sourcing strategy.
+7. **DMAIC, 9R hierarchy, TOC 5 steps, BSC 4 perspectives** — order matters; memorize.
+
+---
+
 🎉 Good luck! You've put in the work. Go earn that CSCP. 🚚

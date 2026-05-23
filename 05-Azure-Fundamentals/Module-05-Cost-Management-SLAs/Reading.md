@@ -2,6 +2,15 @@
 
 > **Why this module matters:** This module covers two topics the exam loves to mix up: **forecasting/managing spend** (pricing tools, cost management, tags, reservations) and **service guarantees** (SLAs, composite SLAs, lifecycle stages). Get the composite SLA math right and you're winning 3–5 questions for free.
 
+> **Prerequisites for this module.** Before starting, you should be comfortable with:
+> - [CapEx vs OpEx](../Module-01-Cloud-Concepts/Reading.md#-capex-vs-opex-you-will-be-tested-on-this) — covered in Module 1
+> - [HA vs DR vs Fault Tolerance](../Module-01-Cloud-Concepts/Reading.md#-fault-tolerance-disaster-recovery-and-ha--dont-mix-them-up) — covered in Module 1
+> - [Availability Zones + region pairs](../Module-02-Azure-Architecture/Reading.md#-region-pairs-aka-paired-regions) — covered in Module 2
+> - [Tags](../Module-04-Identity-Governance-Security/Reading.md#-tags--organize-and-bill) and the basics of Azure Policy from Module 4
+> - Comfort with multiplication and basic percentages (the composite SLA math)
+>
+> If you're hazy on what an AZ is, the composite-SLA math in §"Composite SLA" will be confusing. Pause and re-read Module 2's AZ table.
+
 ---
 
 ## 🍕 A Story: Anna's First Azure Bill
@@ -237,6 +246,38 @@ The Azure free account includes:
 
 ---
 
+## 📊 Case Study — GitHub on Azure (2018 acquisition through 2024 Copilot scale-up)
+
+**Situation.** Microsoft acquired **GitHub** for $7.5 billion in stock in October 2018 (Microsoft press release, 2018-10-26). At acquisition, GitHub was serving roughly **31 million developers**, hosting more than **100 million repositories**, and running its own hybrid infrastructure (some AWS, some bare-metal datacenters, custom MySQL clusters). By 2024, GitHub was at **>100 million developers** with billions of API calls per day — and had become the launch substrate for **GitHub Copilot**, Microsoft's most successful AI product line by paid-seat count. The migration from GitHub's pre-acquisition stack to "GitHub on Azure" plus the Copilot scale-up is the canonical Microsoft case for *cost stewardship at planet scale*.
+
+**Decision.** Microsoft did *not* do a forced lift-and-shift. Nat Friedman (then GitHub CEO) and the GitHub team retained operational autonomy — Microsoft's commitment was "GitHub stays GitHub." But over 2018–2023 the infrastructure quietly migrated to Azure for everything where it made economic sense. Key moves:
+- **Compute migration to Azure** — repositories, Actions, Codespaces, Pages, and the Copilot inference fleet moved to Azure (US East/West + EU North/West + Asia regions). Codespaces specifically was built Azure-native from the start (GitHub Blog, 2020-05-06, "Codespaces beta").
+- **Reservations + Savings Plans for the steady-state estate** — GitHub's repository hosting, search index, and Actions worker pool are 24/7 workloads with predictable baselines. 3-year reservations on the appropriate VM SKUs saved an estimated 50–60% on the steady portion of the bill versus pay-as-you-go (Microsoft customer testimony has cited "tens of millions" annualized).
+- **Spot capacity for the elastic portion** — Actions CI/CD runners absorb massive bursty load (commits at peak working hours, deep idle overnight). Where evictability is acceptable, GitHub uses Spot pricing for cost arbitrage.
+- **Tagging + Cost Management at scale** — every Azure resource at GitHub carries product / team / environment tags so finance can attribute exactly which Copilot region is costing what. Cost Management exports flow to Power BI for monthly board reporting.
+- **Composite SLA discipline for Copilot** — Copilot completions involve Azure OpenAI (99.9% baseline) + Azure App Service Premium (99.95%) + Cosmos DB (99.999%) + the GitHub auth path. The product SLA the company commits to is *deliberately conservative*, recognizing that the composite of dependencies multiplies down — a textbook AZ-900 §"Composite SLA" application.
+- **Hybrid Benefit for Windows server workloads** — GitHub's enterprise on-prem connectors and the Windows portion of Actions runners use Azure Hybrid Benefit on the inherited Microsoft licenses (Software Assurance).
+
+**Outcome.** By 2024:
+- **GitHub Copilot crossed 1.8 million paid subscribers** (Microsoft FY24 Q4 earnings, 2024-07-30) — the fastest-growing developer-tools product in Microsoft history. The product wouldn't have been economically viable without the Azure cost stack (Reservations + Spot + Hybrid Benefit) under it.
+- GitHub crossed **150 million developers globally** by Universe 2024 (GitHub Universe 2024 keynote, 2024-10-29).
+- Microsoft's own data centers run hundreds of thousands of *internal* developer accounts on GitHub Enterprise — Microsoft itself is GitHub's largest single customer, validating the cost-and-SLA design at the most demanding internal load.
+- Crucially, GitHub's pricing to developers (Free tier, $4/month Pro, $21/month Copilot Pro, enterprise tiers) is *competitive* — which is only possible because the cost engineering on the Azure side is disciplined.
+
+**Lesson for the exam / for practitioners.** Three AZ-900 cost-and-SLA concepts visible end-to-end:
+1. **Pricing-model mix is the cost lever, not "discounts."** GitHub uses Pay-As-You-Go (PAYG) for unpredictable spikes, Reservations for steady-state, Spot for evictable workloads, and Hybrid Benefit for license-eligible workloads — all simultaneously. The exam's "which option saves money?" questions assume you understand this is *not* an "either/or" — it's a portfolio.
+2. **Composite SLA discipline at planet scale.** When you stack four Azure services that each have a 99.9–99.99% SLA, the composite is always lower than the worst single component. GitHub publishes Copilot's SLA conservatively because the math doesn't lie. The exam tests this multiplicatively.
+3. **Tags + Cost Management = the *unit economics* answer.** Microsoft would not let GitHub make pricing commitments to developers if it couldn't attribute cost to product-line-and-region. Tags are the AZ-900's exam answer for "how do we chargeback?" — they're also the only way a billion-row, planet-scale product runs profitably.
+
+GitHub-on-Azure has been used by Satya Nadella and CFO Amy Hood in multiple investor presentations as the canonical example of "the AI platform shift" — and the cost discipline behind it is exactly what *The Cloud Adoption Framework: Manage* methodology (Microsoft, current edition checked 2026-05) prescribes.
+
+**Discussion (Socratic).**
+- **Q1:** GitHub uses *3-year Reservations* for steady workloads despite the fact that 3 years is a long time in cloud-economics terms (instance families change, Microsoft sometimes drops list prices). Argue both sides: (a) Reservations are the right answer for known-baseline workloads even with the lock-in risk; (b) Savings Plans (more flexible, smaller discount) are the right answer because they preserve optionality. What's the breakeven workload-volatility threshold?
+- **Q2:** Copilot's composite SLA includes Azure OpenAI (99.9%), App Service (99.95%), Cosmos DB (99.999%), and the GitHub auth path. Compute the composite SLA assuming the auth path has 99.99% uptime. Then explain *why* GitHub publishes a more conservative number to customers than the math suggests. What hidden cost is "publishing a higher SLA than you can actually defend" creating?
+- **Q3:** GitHub's Spot-VM strategy for Actions runners assumes evictability is acceptable — if a runner is evicted mid-build, the build retries. But customers see *some* failed builds as a result, especially during Azure capacity-tight periods. Walk through the trade-off between (a) GitHub's cost saving from Spot vs (b) the customer-experience cost of build retries. At what point would you, as GitHub's VP of Engineering, switch back from Spot to Reservation for Actions runners?
+
+---
+
 ## ✅ Module 5 Summary
 
 You now know:
@@ -247,6 +288,7 @@ You now know:
 - 📜 Standard SLA tiers (99.9 / 99.95 / 99.99)
 - 🧮 **Composite SLA math** (multiply dependencies)
 - 🌱 Preview vs GA — and why Preview has no SLA
+- 📊 One canonical cost-and-SLA case (GitHub on Azure + Copilot scale-up, 2018–2024)
 
 **Next steps:**
 1. 🎥 Watch the videos in [`Videos.md`](./Videos.md)
@@ -256,11 +298,30 @@ You now know:
 
 ---
 
+> **Where this leads.**
+> - Inside this course: Module 6 introduces Azure Advisor — the in-portal tool that surfaces Reservation/Spot/Hybrid Benefit recommendations programmatically. The Cost Management work in this module is *manual cost analysis*; Advisor automates the recommendation layer.
+> - Cross-course: `06-Azure-Administrator` (AZ-104) operationalizes cost management — setting up budgets, configuring action groups for budget alerts, automating shutdown-on-budget via Logic Apps. `04-AWS-Solutions-Architect-Associate` Module 8 covers the equivalent AWS cost-optimization patterns (Reserved Instances, Savings Plans, Spot) — useful for multi-cloud architects.
+> - Practice: Practice Exam 2 has 8–10 questions on pricing-model selection and SLA math; the final mock includes the canonical composite-SLA arithmetic question (Q32).
+
+---
+
+## 💬 Discussion — Socratic prompts
+
+1. **The Reservation vs Savings Plan strategic choice.** A 200-person company is committing to Azure for the next 3 years. They have ~$2M/year of steady compute (production web tier + databases) and ~$500K/year of spiky workloads (Actions-style CI/CD). The cloud architect proposes: 100% Reservations for the steady portion (max discount), Pay-As-You-Go for the spiky portion. The CFO counter-proposes: 100% Savings Plans for everything (more flexibility, smaller discount). Which is right, and why? Build out the 3-year cost model qualitatively. (Hint: the answer involves portfolio thinking, not "winner takes all.")
+2. **The composite-SLA inflation trick.** A vendor pitches their service as "99.99% SLA" — but it depends on Azure SQL (99.99%), Azure App Service (99.95%), and a custom auth tier (97% — they don't publish this). Compute the actual composite. What's the marketing trap, and what's the right question to ask the vendor before signing? Cite the Module 5 composite-SLA formula explicitly.
+3. **Egress vs ingress economics.** A customer asks: "If ingress is free, why don't we just architect everything to minimize egress?" An engineer responds: "Because then your customers can't get the data out." Walk through the realistic egress patterns where a) the cost is trivial, b) the cost is the dominant line item on the bill, and c) the cost should fundamentally redesign your architecture (e.g., putting compute close to the data instead of pulling the data to the compute). When does egress economics dictate where you run your business logic?
+4. **The "Spot for production" hot take.** A junior engineer reads about Spot's 90% discount and pitches running production stateless web workloads on Spot. The senior engineer pushes back. Build the strongest argument for Spot-in-production (rapid recovery from eviction, cost savings funded by accepting brief interruptions). Build the strongest argument against (customer-facing impact, on-call burden, error budget burn). At what kind of workload (latency-sensitive consumer vs batch back-end vs internal tooling) does Spot become defensible?
+5. **The budget-doesn't-shut-down trap.** A team sets a budget at $5,000/month. Mid-month, a runaway feedback loop scales their App Service to 50 instances and the bill hits $4,800 in 10 days. The team is shocked their budget didn't "shut it off." Walk through the actual semantics of an Azure budget (alert, not enforcement). What's the *right* governance pattern to actually prevent runaway spend, drawing on Policy + Logic Apps + Action Groups? Why doesn't Microsoft just add a "hard stop" feature?
+
+---
+
 ## 📚 Further Reading (Optional)
 
-- 🔗 [Azure Pricing Calculator](https://azure.microsoft.com/pricing/calculator/)
-- 🔗 [Azure Total Cost of Ownership (TCO) Calculator](https://azure.microsoft.com/pricing/tco/calculator/)
-- 🔗 [Microsoft Cost Management documentation](https://learn.microsoft.com/azure/cost-management-billing/)
-- 🔗 [Azure SLA summary](https://www.microsoft.com/licensing/docs/view/Service-Level-Agreements-SLA-for-Online-Services)
-- 🔗 [Reservations overview](https://learn.microsoft.com/azure/cost-management-billing/reservations/save-compute-costs-reservations)
-- 🔗 [Azure Updates / roadmap](https://azure.microsoft.com/updates/)
+- 🔗 [Azure Pricing Calculator](https://azure.microsoft.com/pricing/calculator/) — the official estimator
+- 🔗 [Azure Total Cost of Ownership (TCO) Calculator](https://azure.microsoft.com/pricing/tco/calculator/) — on-prem-vs-Azure comparator
+- 🔗 [Microsoft Cost Management documentation](https://learn.microsoft.com/azure/cost-management-billing/) — the post-deploy spend tool
+- 🔗 [Azure SLA summary](https://www.microsoft.com/licensing/docs/view/Service-Level-Agreements-SLA-for-Online-Services) — the current SLA per service (revised periodically)
+- 🔗 [Reservations overview](https://learn.microsoft.com/azure/cost-management-billing/reservations/save-compute-costs-reservations) — Reservation purchase + scope mechanics
+- 🔗 [Azure Updates / roadmap](https://azure.microsoft.com/updates/) — Preview / GA / Retirement announcements
+- 📖 **Microsoft Cloud Adoption Framework — *Manage* methodology** (Microsoft, current edition checked 2026-05). §"Cloud Economics" + §"Workload management" are the operational playbook this module's concepts implement.
+- 📖 *Hit Refresh* — Satya Nadella, 2017, HarperCollins. The GitHub acquisition rationale (chapter on the developer-platform thesis) is in the CEO's own voice.

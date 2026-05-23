@@ -2,6 +2,14 @@
 
 > **Why this module matters:** This is the smallest domain by exam weight (~9%) but the easiest to fully master. It's also the fastest-growing area of logistics — circular economy, ESG reporting, and carbon-aware shipping are reshaping the field.
 
+> **Prerequisites for this module.** Before starting, you should be comfortable with:
+> - [Module 4](../Module-04-Inventory-Distribution/Reading.md) inventory mechanics — returns are inventory in motion
+> - [Module 5](../Module-05-Warehouse-Operations/Reading.md) warehouse processes — returns centers are specialized warehouses
+> - [Module 7](../Module-07-Global-Logistics-Customs/Reading.md) FTZ + customs — returns of imported goods have special rules
+> - Basic emissions vocabulary (CO₂e, ton-km, kWh) — Module 8 deepens this
+>
+> Cross-course: [CSCP Module 9 (Sustainability, Risk, CSR)](../../10-ASCM-CSCP/Module-09-Sustainability-Risk-CSR/Reading.md) covers sustainability at the broader supply-chain level with deeper risk and CSR content.
+
 ---
 
 ## 🍕 A Story: The Sneaker Box That Cost More to Return Than to Buy
@@ -19,6 +27,8 @@ Now multiply by 30% of all apparel orders being returned. **Returns are a logist
 This module covers reverse logistics, returns management, and the sustainability frameworks ASCM expects you to know.
 
 ---
+
+> **Citation.** The reverse-logistics definition used by ASCM derives from Rogers, Dale S. & Tibben-Lembke, Ronald S., *Going Backwards: Reverse Logistics Trends and Practices* (Reverse Logistics Executive Council, 1998 — the foundational academic study) and Stock, James R., *Reverse Logistics* (Council of Logistics Management, 1992). The closed-loop / circular economy framing draws from McDonough, William & Braungart, Michael, *Cradle to Cradle: Remaking the Way We Make Things* (North Point Press, 2002) and the Ellen MacArthur Foundation's *Towards the Circular Economy* (Vol. 1, 2012; Vol. 3, 2014). The triple-bottom-line framework was named in Elkington, John, *Cannibals with Forks: The Triple Bottom Line of 21st Century Business* (Capstone Publishing, 1997). Modern GHG accounting standards: WRI + WBCSD, *The Greenhouse Gas Protocol: A Corporate Accounting and Reporting Standard* (Revised ed., World Resources Institute, 2004) and the *Corporate Value Chain (Scope 3) Standard* (WRI/WBCSD, 2011). Logistics-specific factors: Smart Freight Centre, *Global Logistics Emissions Council (GLEC) Framework v3.0* (Smart Freight Centre, 2023). Science-based targets: Science Based Targets initiative (SBTi), *Corporate Net-Zero Standard* (SBTi, 2021; updated 2023).
 
 ## 🔄 What is Reverse Logistics?
 
@@ -318,6 +328,43 @@ Drives both cost and emissions.
 
 ---
 
+## 📜 Case Study — DHL Resilience360 / NEXST Risk-Visibility Platform (2018–2024)
+
+**Situation.** Following the Fukushima earthquake (2011), the Thailand floods (2011), and the Tianjin port explosion (2015), global shippers realized their supply chains lacked real-time risk visibility. A volcanic eruption, a port strike, or a hurricane could disrupt deliveries for weeks before anyone in the logistics control tower knew. DHL Supply Chain, the world's largest contract logistics provider, developed an internal capability to monitor ~150 risk types (geopolitical, climate, labor, supply, regulatory) globally — and decided to commercialize it.
+
+**Decision.** In 2018 DHL launched **Resilience360** as a standalone subscription SaaS platform, sold to non-DHL shippers including Cisco, Daimler, GlaxoSmithKline, and Procter & Gamble. Key capabilities through 2024:
+
+- **Real-time risk monitoring** — feeds from 30,000+ public + private sources (news, weather, port data, government alerts) classified by AI/ML.
+- **Supplier mapping** — visibility of tier-1, tier-2, tier-3 suppliers' physical locations matched against risk events.
+- **Shipment tracking** — real-time location of in-transit ocean/air/road shipments, with ETA recomputation when disruptions occur.
+- **Scenario simulation** — "what if Port of Long Beach closes for 3 days?" — model the impact on specific SKUs and lanes.
+- **2021:** Spun out as **Everstream Analytics** via partnership with private-equity firm Columbia Capital. DHL retained a stake.
+- **2022:** Everstream acquired **NEXST** (specialized in supply chain risk) and rolled it into the platform.
+- **2024:** Everstream Analytics partnered with several major TMS providers (project44, FourKites) for embedded risk visibility. Platform was tracking ~4M+ active shipments daily.
+
+**Outcome.** Resilience360/Everstream demonstrated several Module 8 + cross-module concepts:
+- During the 2024 Red Sea Houthi attacks (see Module 6 case), Everstream-subscribing shippers received automated routing recommendations within hours, while non-subscribing shippers needed days of manual analysis.
+- During the 2024 Baltimore Francis Scott Key Bridge collapse (March 2024 cargo ship strike → bridge collapse → Port of Baltimore closure for ~3 months), Everstream subscribers had pre-modeled scenarios for Port of Baltimore disruptions and could shift to NY/NJ or Norfolk within hours.
+- Adoption: by Q4 2024, ~600+ major shippers globally subscribed to Everstream-class platforms (also from competitors Riskmethods/Sphera, Interos, Sayari).
+- Business model validation: DHL's pivot from "logistics provider" to also "risk-visibility SaaS vendor" generated ~€200M annual SaaS revenue by 2024 — a 4PL/5PL evolution.
+
+**Lesson for the exam / for practitioners.** Three Module 8 themes converge here:
+
+1. **Reverse logistics is one of many supply-chain risk dimensions, not a standalone topic.** Risk visibility platforms monitor *forward* (delivery delays), *reverse* (recall events, product safety alerts), *supplier* (financial distress, ESG violations), and *regulatory* (sanctions, customs changes) — all in one frame.
+
+2. **The 5PL evolution.** A risk-visibility platform integrates data from carriers, customs, weather, suppliers, news — exactly the data-orchestrator role that Module 1 defined as 5PL. DHL effectively created a 5PL business as a sustainability+resilience layer atop its 3PL/4PL operations.
+
+3. **ESG / TCFD risk reporting requires this data.** TCFD (Task Force on Climate-related Financial Disclosures) and the EU CSRD require companies to disclose climate-related supply-chain risk. Without a platform like Everstream, this disclosure is essentially impossible at scale. Module 8's ESG reporting frameworks (GRI, SASB, TCFD, ISSB, CSRD) are *demand drivers* for these platforms.
+
+The CLTD exam tests this in scenarios about "the logistics function's role in enterprise risk management" — the modern answer is: a logistics director *owns* supply-chain risk visibility as a Board-level KPI.
+
+**Discussion (Socratic).**
+- Q1: A risk-visibility platform costs ~$300K–$1.5M/yr at scale. A small importer ($50M revenue) cannot afford it. What lower-cost alternatives can capture 60–70% of the value?
+- Q2: Risk monitoring is reactive (you find out about the disruption as it happens or hours later). True resilience requires *pre-positioned* alternatives (dual sourcing, safety stock, alternative routes). How should a logistics director allocate budget between visibility (find-it-fast) and resilience (have-an-alternative-ready)?
+- Q3: ESG reporting under CSRD now requires disclosing tier-2 and tier-3 supplier emissions. Most logistics directors don't even know their tier-2 suppliers. How would you build a phased compliance plan?
+
+---
+
 ## ⚠️ Common Misconceptions
 
 | Misconception | Reality |
@@ -390,6 +437,27 @@ You now know:
 3. 📋 [Cheat-Sheet.md](./Cheat-Sheet.md)
 4. 🧪 Take [Practice Exam 2](../Practice-Exams/Practice-Exam-2.md) (Modules 1–8 covered)
 5. 🧪 Then [Final Mock Exam](../Practice-Exams/Final-Mock-Exam.md)
+6. 🎓 [Capstone Project](../Capstone-Project.md) — end-to-end transformation case
+7. 📖 [Recommended Readings](../Recommended-Readings.md) — depth resources
+
+---
+
+## 🤔 Discussion (Socratic prompts)
+
+1. **Free-returns moral hazard.** Many e-commerce retailers have abandoned free returns in 2023–2024 (Zara, H&M, J. Crew now charge returns fees). Free returns drove higher purchase rates but also higher return rates (~30%+ in apparel). Build both arguments — is charging returns fees the right strategic shift, or short-term profit at long-term brand damage?
+
+2. **Scope 3 measurement reality.** Most logistics teams know their Scope 1 (fleet fuel) and Scope 2 (warehouse electricity) emissions. Scope 3 (purchased transportation + supplier emissions) is theoretically required by CSRD but practically impossible to measure precisely. What measurement standard should logistics adopt today — perfect-but-impossible or imperfect-and-actionable?
+
+3. **Carbon-offset legitimacy.** Companies like Amazon, Microsoft, Google have spent billions on carbon offsets in 2020–2024. Some recent journalism (Guardian, 2023) found ~90% of rainforest offsets had no real climate benefit. Argue both sides — should logistics teams use offsets or refuse them on integrity grounds?
+
+4. **Closed-loop economics at small scale.** Caterpillar Reman works at CAT's scale. A medium-size equipment dealer with $80M annual revenue probably *can't* run a closed-loop remanufacturing program profitably. When does closed-loop economics break? Where is the size threshold?
+
+5. **The 2026 sustainability mandate.** Beginning 2024–2025, large EU companies must report Scope 3 emissions under CSRD. Many US companies in their supply chains *also* must comply (extraterritoriality). What changes does this force on US logistics directors who have ignored Scope 3 to date?
+
+> **Where this leads.**
+> - Inside this course: This is the final module. The [Capstone Project](../Capstone-Project.md) integrates all 8 modules into one transformation case.
+> - Cross-course: [CSCP Module 9 (Sustainability, Risk, CSR)](../../10-ASCM-CSCP/Module-09-Sustainability-Risk-CSR/Reading.md) covers sustainability at the broader supply-chain level; [CSCP Module 10 (Continuous Improvement)](../../10-ASCM-CSCP/Module-10-Continuous-Improvement/Reading.md) covers improvement methodologies that apply across all logistics functions.
+> - Practice: Practice Exam 2 has ~25 questions from this module; Final Mock Exam another 25.
 
 ---
 

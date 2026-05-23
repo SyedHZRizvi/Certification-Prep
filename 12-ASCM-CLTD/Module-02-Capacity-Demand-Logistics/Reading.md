@@ -2,6 +2,13 @@
 
 > **Why this module matters:** Networks are built once. Capacity is set every quarter. Demand changes every week. If your DCs and trucks are sized for peak, you're bleeding money for 10 months of the year. If they're sized for average, Black Friday breaks you. This module is about choosing where to live on that spectrum.
 
+> **Prerequisites for this module.** Before starting, you should be comfortable with:
+> - [Module 1's strategic decisions](../Module-01-Logistics-Strategy-Network/Reading.md) — capacity decisions cascade from network design
+> - Basic statistics: standard deviation, simple regression, moving averages
+> - The idea that variability (random) and seasonality (predictable) are different beasts
+>
+> Cross-course: [CSCP Module 3 (Demand Forecasting)](../../10-ASCM-CSCP/Module-03-Demand-Forecasting/Reading.md) covers the forecasting math at the broader supply-chain level. [CPIM Module 2 (Demand Planning & Forecasting)](../../11-ASCM-CPIM/Module-02-Demand-Planning-Forecasting/Reading.md) goes deeper on Holt-Winters and time-series mechanics.
+
 ---
 
 ## 🍕 A Story: The Toy Store That Cried Christmas
@@ -239,6 +246,8 @@ For a toy retailer, an apparel brand, or any business with 30%+ seasonality:
 
 ## 📉 Capacity Constraints & Theory of Constraints (TOC)
 
+> **Citation.** The Theory of Constraints was developed by Eliyahu M. Goldratt and popularized in Goldratt, E. M. & Cox, J., *The Goal: A Process of Ongoing Improvement* (North River Press, 1984; 4th ed. 2014) and Goldratt, E. M., *What Is This Thing Called Theory of Constraints and How Should It Be Implemented?* (North River Press, 1990). The Five Focusing Steps as formalized below are now codified in ASCM's *Dictionary* (16th ed., 2022) and the CLTD/CPIM bodies of knowledge. Companion reading: Hopp, Wallace J. & Spearman, Mark L., *Factory Physics* (3rd ed., Waveland Press, 2011) — the rigorous queueing-theory treatment of *why* utilization above ~85% blows up wait times.
+
 If a single resource limits flow, that's the **bottleneck**. Eli Goldratt's Five Focusing Steps:
 
 ```
@@ -250,6 +259,26 @@ If a single resource limits flow, that's the **bottleneck**. Eli Goldratt's Five
 ```
 
 🎯 **Exam tip:** In a logistics scenario, the bottleneck might be dock doors (receiving), not labor. Don't assume the obvious.
+
+---
+
+## 📜 Case Study — FedEx and UPS During the 2020–2021 Pandemic Capacity Crisis
+
+**Situation.** In March 2020 US e-commerce orders went vertical. According to the US Census Bureau, e-commerce share of retail jumped from 11.8% in Q1 2020 to 16.4% by Q2 2020 — a multi-year compounding move concentrated into a single quarter. The two dominant US parcel integrators, FedEx and UPS, faced a wartime-scale capacity shock. Both had built their networks for steady ~5–8%/yr e-com growth, not 36% in 90 days. Peak (Q4) 2020 was projected to be 86 million packages/day vs network capacity of ~75M/day — a structural ~11M/day capacity shortfall.
+
+**Decision.** The two responded *differently*:
+
+- **UPS (CEO Carol Tomé, just appointed June 2020) cut accounts.** UPS imposed shipper-by-shipper *volume caps* in October 2020, refusing additional volume from large e-commerce shippers (most famously Gap and L.L. Bean for several weeks) when they exceeded their pre-agreed daily quotas. Tomé's framing: "better-not-bigger." UPS hired ~100,000 seasonal workers, leased temporary aircraft, but explicitly chose to *protect service quality and pricing power* over volume.
+- **FedEx (CEO Fred Smith) chased volume.** FedEx Ground hired 70,000 seasonal workers, expanded Sunday delivery aggressively, and accepted incremental volume but absorbed degraded on-time performance (FedEx Ground OT% fell to ~88% during peak vs ~95% target). FedEx Ground's 2020 revenue grew ~33% Y/Y but per-package operating margins compressed sharply.
+
+**Outcome.** By 2022 results were diverging clearly. UPS posted record operating margins (13.5% in 2021, peaking at ~14% in 2022) and stock outperformed FedEx by ~40% over the 2020–2022 window. FedEx posted a massive earnings miss in September 2022 ($0.74B operating-income shortfall vs guidance, attributed to e-com volume normalization), CEO Raj Subramaniam (Fred Smith's successor) announced a $1B cost-cut program, and FedEx Express began parking aircraft. By 2024, both were in active retrenchment: FedEx merged FedEx Ground + Express into "Network 2.0" (one combined US delivery network) and announced 1,800 layoffs; UPS announced 12,000 layoffs in early 2024 after the Teamsters contract pushed labor costs up ~30%.
+
+**Lesson for the exam / for practitioners.** The contrast is the textbook Lead vs Lag capacity-strategy decision in real time. UPS chose a *Lag-leaning* strategy — refuse some demand, protect margin, accept some lost volume. FedEx chose a *Lead/Match* strategy — flex hard to capture share, accept margin compression. The CLTD exam loves to test which strategy fits which industry condition: when demand is structurally over-spike (transient), Lag wins (UPS's bet); when the spike is durable (industry repositioning), Lead/Match wins. Both bet — UPS read the spike as transient, FedEx read it as durable. UPS was directionally correct, but the *real* lesson is that capacity strategy is not a one-time choice; it's continuously revised against demand-pattern intelligence (see ASCM Dictionary, 16th ed., entry: "capacity strategy"). The companion lesson from Hopp & Spearman's *Factory Physics*: above ~85% utilization, queueing variability dominates and service collapses — exactly what happened to FedEx Ground in Q4 2020.
+
+**Discussion (Socratic).**
+- Q1: With perfect hindsight UPS won the strategic bet. But shareholders of either company would have been right to demand the *other* strategy at certain points. When during 2020–2024 would the FedEx strategy have been the right call, and when would UPS's?
+- Q2: A capacity-strategy decision implicitly bets on whether demand is *transient* or *durable*. What signals (data points, leading indicators) would have helped a logistics director distinguish the two in real time in mid-2020?
+- Q3: UPS used *price + volume caps* to ration demand. FedEx used *service degradation*. From a long-run customer-relationship perspective, which form of rationing is healthier and why?
 
 ---
 
@@ -314,6 +343,25 @@ You now know:
 2. ✏️ Take the [Quiz](./Quiz.md)
 3. 📋 Review the [Cheat-Sheet](./Cheat-Sheet.md)
 4. ➡️ Move to [Module 3: Order Management & Fulfillment](../Module-03-Order-Management-Fulfillment/Reading.md)
+
+---
+
+## 🤔 Discussion (Socratic prompts)
+
+1. **The 85% utilization wall.** Hopp & Spearman's *Factory Physics* shows that queueing wait time approaches infinity as utilization → 100% with any variability. Yet finance teams routinely push DC managers to "hit 95% utilization to justify the rent." Build the strongest argument for the finance side AND for the operations side. Where should a CLTD-grade director actually settle the dial — and what data would shift it?
+
+2. **Forecast accuracy ROI.** Improving SKU-level forecast MAPE from 25% to 18% might cost $1.2M in a demand-sensing platform. The forecast feeds DRP, which feeds DC capacity. When is that investment worth it, and how would you build the business case?
+
+3. **Match-strategy moral hazard.** Match (chase) strategies routinely hire ~30% seasonal labor. Amazon's seasonal-hiring announcements (~250K each Q4 2020–2024) drew labor-practice criticism. If your CFO loves match for the cost story but HR pushes back on the labor-volatility story, how do you adjudicate as logistics director?
+
+4. **Demand sensing vs traditional forecasting.** Demand sensing uses near-real-time POS + ML; traditional forecasting uses Holt-Winters or causal models. A consulting firm pitches 8–12% lower inventory if you adopt demand sensing. What conditions actually have to be true for that ROI to land? When is the traditional forecast still better?
+
+5. **The "right" service-level number.** Going from 95% to 99.9% safety stock cost is exponential. But for life-critical SKUs (insulin, ER medical supplies), 99% might be morally inadequate. How do you decide service level for *different* product categories within the same company?
+
+> **Where this leads.**
+> - Inside this course: Module 3 turns the demand-and-capacity frame into order-management decisions; Module 4 turns it into multi-echelon DRP/inventory math; Module 5 implements the capacity decisions inside the warehouse.
+> - Cross-course: [CSCP Module 3 (Demand Forecasting)](../../10-ASCM-CSCP/Module-03-Demand-Forecasting/Reading.md) and [CPIM Module 2](../../11-ASCM-CPIM/Module-02-Demand-Planning-Forecasting/Reading.md) develop the underlying forecasting math; [CPIM Module 5 (Capacity Planning)](../../11-ASCM-CPIM/Module-05-Capacity-Planning/Reading.md) goes deeper on capacity-planning mechanics inside manufacturing.
+> - Practice: Practice Exam 1 has ~9 questions from this module; Final Mock has another 9.
 
 ---
 

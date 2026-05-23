@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~50 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+AZ-900+cloud+concepts" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="BqNbzeuxTaE" href="https://www.youtube.com/results?search_query=John+Savill+AZ-900+cloud+concepts" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 20 min · The gold standard</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Adam+Marczak+IaaS+PaaS+SaaS+Azure" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="9CVBohl6w0Q" href="https://www.youtube.com/results?search_query=Adam+Marczak+IaaS+PaaS+SaaS+Azure" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 10 min · Pizza-as-a-Service visual</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Microsoft+Learn+cloud+computing+benefits+AZ-900" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="VaMdHKJQ15c" href="https://www.youtube.com/results?search_query=Microsoft+Learn+cloud+computing+benefits+AZ-900" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 8 min · HA, scale, reliability, security</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Tim+Warner+CapEx+vs+OpEx+Azure" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="alypQvim_vg" href="https://www.youtube.com/results?search_query=Tim+Warner+CapEx+vs+OpEx+Azure" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~25 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=NetworkChuck+what+is+the+cloud" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="poDIT2ruQ9M" href="https://www.youtube.com/results?search_query=NetworkChuck+what+is+the+cloud" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 10 min · Fun, fast intro</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Adam+Marczak+public+private+hybrid+cloud" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="XlNR7myQydI" href="https://www.youtube.com/results?search_query=Adam+Marczak+public+private+hybrid+cloud" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 8 min · Deployment models</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+shared+responsibility+model+Azure" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="RElRL7PKhC0" href="https://www.youtube.com/results?search_query=John+Savill+shared+responsibility+model+Azure" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Microsoft+Mechanics+Azure+overview" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="-jbO1uRWolo" href="https://www.youtube.com/results?search_query=Microsoft+Mechanics+Azure+overview" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 15 min · Big picture of Azure</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+vertical+vs+horizontal+scaling+explained" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="Zwfguhx8Ufc" href="https://www.youtube.com/results?search_query=Azure+vertical+vs+horizontal+scaling+explained" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 10 min · Visual examples</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=high+availability+vs+disaster+recovery+Azure" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="gbsG1i3zqHM" href="https://www.youtube.com/results?search_query=high+availability+vs+disaster+recovery+Azure" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

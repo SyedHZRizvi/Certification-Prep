@@ -450,3 +450,119 @@ D. 1 → 2 → 3 → 4 → 5 → 6
 ➡️ **Schedule your AZ-104 exam at [Pearson VUE](https://www.pearsonvue.com/microsoft) or via Microsoft Learn.**
 
 🎉 Good luck. You earned this.
+
+---
+
+## Detailed answer rationales
+
+> Per the elevation spec, each option (correct and incorrect) is annotated. These rationales also cite the Microsoft Learn AZ-104 chapter / CAF design area where the answer is canonical, so you can dive deeper after the mock.
+
+**Q1. Answer: D.** *Why D.* Tenant → MG → Sub → RG → Resource (Microsoft Learn AZ-104 ch.1; CAF 2020). *Wrong options.* **A**: subscription is not the top. **B**: MG sits above sub, not below. **C**: Tenant is top, not MG. *Takeaway.* T-M-S-R-R.
+
+**Q2. Answer: A.** *Why A.* MG nesting depth = 6 (plus the non-counted Tenant Root Group). *Wrong options.* **B/C**: too shallow. **D**: not unlimited. *Takeaway.* 6 deep.
+
+**Q3. Answer: C.** *Why C.* Tags don't auto-inherit; Modify policy is the supported mechanism. *Wrong options.* **A**: trap. **B**: never auto. **D**: same trap. *Takeaway.* Inherit-a-tag Modify policy.
+
+**Q4. Answer: D.** *Why D.* Apply at the MG that covers the affected subs. *Wrong options.* **A**: Tenant Root over-applies. **B**: per-RG drifts. **C**: per-sub duplicates. *Takeaway.* Smallest scope that fully covers.
+
+**Q5. Answer: B.** *Why B.* CA requires P1. *Wrong options.* **A**: Free is Security Defaults only. **C**: P2 adds Identity Protection on top of CA. **D**: M365 Apps doesn't include P1. *Takeaway.* CA = P1.
+
+**Q6. Answer: D.** *Why D.* Identity Protection (risk-based CA) is the P2 feature. *Wrong options.* **A/B**: Free/P1 don't include risk-based CA. **C**: Office 365 E5 includes Defender for O365, not Entra P2 directly. *Takeaway.* Risk-based CA = P2.
+
+**Q7. Answer: D.** *Why D.* All three statements true (Contributor can't assign, PIM = time-bound + MFA, MIs preferred over SP secrets). *Wrong options.* A/B/C each invert one true statement. *Takeaway.* All three are exam reflexes.
+
+**Q8. Answer: D.** *Why D.* Control plane ≠ data plane. *Wrong options.* **A**: data role needed for data. **B**: PE is network. **C**: SSL is transport. *Takeaway.* Need Storage Blob Data role for blobs.
+
+**Q9. Answer: A.** *Why A.* ZRS = cheapest AZ-resilient. *Wrong options.* **B**: LRS no AZ resilience. **C**: GRS is region-resilient, not AZ. **D**: GZRS is more expensive. *Takeaway.* ZRS for AZ, GZRS for AZ + region.
+
+**Q10. Answer: B.** *Why B.* GZRS = 3 AZs primary + 3 LRS paired. *Wrong options.* **A**: not 6 regions. **C**: not single-DC. **D**: distribution reversed. *Takeaway.* GZRS = ZRS primary + LRS paired.
+
+**Q11. Answer: C.** *Why C.* Cool 30 / Cold 90 / Archive 180. *Wrong options.* **A/B/D**: numbers wrong. *Takeaway.* Memorize 30/90/180.
+
+**Q12. Answer: A.** *Why A.* Rehydrate to Hot/Cool first (hours). *Wrong options.* **B**: no special API. **C**: SAS doesn't bypass. **D**: not a wait timer. *Takeaway.* Archive = rehydrate.
+
+**Q13. Answer: D.** *Why D.* User Delegation SAS = Entra-signed, per-user audit. *Wrong options.* **A/B**: key-signed. **C**: not a real SAS type. *Takeaway.* User Delegation SAS for audit.
+
+**Q14. Answer: C.** *Why C.* KV → MI → key → grant → switch. *Wrong options.* **A**: MI without vault to access. **B**: key before MI ordering off. **D**: key before vault impossible. *Takeaway.* Vault first, key, MI, grant, switch.
+
+**Q15. Answer: D.** *Why D.* Service endpoint = optimize routing, PaaS keeps public IP. *Wrong options.* **A**: PE = private IP. **B**: different feature. **C**: RBAC independent. *Takeaway.* SE optimizes; PE privatizes.
+
+**Q16. Answer: B.** *Why B.* Private DNS Zone linked to VNet + auto-registration. *Wrong options.* **A**: required. **C**: public DNS resolves to public IP. **D**: SLB is network L4. *Takeaway.* PE requires DNS zone group.
+
+**Q17. Answer: D.** *Why D.* S1 yes (NFS = Premium FileStorage); S2 yes (Premium = provisioned billing); S3 yes (cloud tiering uses stubs). *Wrong options.* A/B/C each invert one truth. *Takeaway.* Three classic Azure Files facts.
+
+**Q18. Answer: B.** *Why B.* MARS = Windows files/folders + System State. *Wrong options.* **A**: no Linux. **C**: SQL via workload extension. **D**: VMs via snapshot Azure Backup. *Takeaway.* MARS = lightweight Windows.
+
+**Q19. Answer: D.** *Why D.* Canonical SLAs: 99.9 / 99.95 / 99.99. *Wrong options.* **A/B/C**: numbers shifted. *Takeaway.* 3 / 3.5 / 4 nines.
+
+**Q20. Answer: C.** *Why C.* AS must be set at create. *Wrong options.* **A/B/D**: AS membership is platform-locked at creation. *Takeaway.* Plan AS membership upfront.
+
+**Q21. Answer: A.** *Why A.* Both Premium SSD v2 and Ultra = data disks only. *Wrong options.* **B/C/D**: cannot be OS. *Takeaway.* OS disk = Premium SSD or Standard SSD.
+
+**Q22. Answer: B.** *Why B.* AS max: 3 FD × 20 UD. *Wrong options.* **A**: that's the default. **C**: wrong numbers. **D**: not unlimited. *Takeaway.* 3 / 20 max.
+
+**Q23. Answer: A.** *Why A.* S1 yes (Flexible mixed sizes + AZs). S2 yes (ADE = BitLocker/dm-crypt). S3 no (Spot has no SLA). *Wrong options.* **B**: S3 wrong. **C/D**: each inverts one. *Takeaway.* Spot = no SLA.
+
+**Q24. Answer: C.** *Why C.* Spot eviction = 30 sec notice. *Wrong options.* **A**: there is notice. **B**: 5 min wrong. **D**: 1 hr wrong. *Takeaway.* 30 sec.
+
+**Q25. Answer: C.** *Why C.* VMSS Flexible across zones + zone-redundant SLB. *Wrong options.* **A**: single VM = no HA. **B**: AS not zone-redundant. **D**: regional, not zone-redundant. *Takeaway.* Zone-redundant tier = VMSS Flex + SLB.
+
+**Q26. Answer: A.** *Why A.* Slots start at Standard. *Wrong options.* **B/C**: Free/Basic no slots. **D**: PV3 supports but isn't minimum. *Takeaway.* Standard minimum.
+
+**Q27. Answer: D.** *Why D.* ASPs can host multiple apps sharing compute. *Wrong options.* **A**: not limited to 1. **B**: not "regardless of size." **C**: not Linux-only. *Takeaway.* Plan = compute SKU; many apps share.
+
+**Q28. Answer: A.** *Why A.* Standard control plane free, nodes paid. *Wrong options.* **B**: standard tier is free. **C**: required for production is opinion. **D**: 50-node cap doesn't apply. *Takeaway.* AKS standard control plane = free.
+
+**Q29. Answer: B.** *Why B.* HPA = pod replicas. *Wrong options.* **A**: cluster autoscaler. **C**: storage unrelated. **D**: ingress is separate. *Takeaway.* HPA = pods.
+
+**Q30. Answer: A.** *Why A.* Cluster autoscaler scales nodes by pending-pod pressure. *Wrong options.* **B**: HPA scales pods. **C**: storage independent. **D**: not simultaneous. *Takeaway.* Pods → HPA; Nodes → cluster autoscaler.
+
+**Q31. Answer: B.** *Why B.* Azure File CSI = SMB/NFS = RWX. *Wrong options.* **A**: Disk CSI is RWO. **C**: ephemeral disk has no PV semantics. **D**: emptyDir is per-pod local. *Takeaway.* Multi-pod RWX = Azure File CSI.
+
+**Q32. Answer: B.** *Why B.* 5 reserved IPs (.0/.1/.2/.3/.255). *Wrong options.* **A/C/D**: wrong count. *Takeaway.* 5 IPs reserved per subnet.
+
+**Q33. Answer: C.** *Why C.* Peering non-transitive — hub firewall + UDRs to transit. *Wrong options.* **A/B**: wrong. **D**: peers per VNet are high. *Takeaway.* Non-transitive is THE peering fact.
+
+**Q34. Answer: C.** *Why C.* DNS zone → VNet link → PE → zone group. *Wrong options.* **A**: PE before DNS link leaves a public window. **B**: out of order. **D**: out of order. *Takeaway.* DNS first, then PE.
+
+**Q35. Answer: C.** *Why C.* AzureFirewallSubnet min /26; AzureBastionSubnet min /26. *Wrong options.* **A/B/D**: wrong. *Takeaway.* /26 each.
+
+**Q36. Answer: A.** *Why A.* VpnGw1AZ or higher for zone-redundant route-based. *Wrong options.* **B**: Basic doesn't support BGP. **C**: ER is separate. **D**: Front Door is L7. *Takeaway.* Modern hybrid = VpnGw1AZ or higher.
+
+**Q37. Answer: C.** *Why C.* Lower number = first evaluated. *Wrong options.* **A/B/D**: misconceptions. *Takeaway.* 100 wins over 200.
+
+**Q38. Answer: D.** *Why D.* DenyAllInBound at 65500. *Wrong options.* **A**: AllowVnetInBound is 65000. **B**: AllowAzureLoadBalancerInBound is 65001. **C**: not a default. *Takeaway.* 65500 = catch-all deny.
+
+**Q39. Answer: D.** *Why D.* All three: stateful, both NSGs apply, service tags auto-maintained. *Wrong options.* A/B/C each invert. *Takeaway.* Three NSG facts to reflex.
+
+**Q40. Answer: A.** *Why A.* DNAT → Network → Application. *Wrong options.* **B**: reversed. **C**: order wrong. **D**: not random. *Takeaway.* Firewall rule order is fixed.
+
+**Q41. Answer: A.** *Why A.* Front Door = global L7 + CDN + WAF. *Wrong options.* **B**: regional L7. **C**: regional L4. **D**: DNS-only. *Takeaway.* Global L7 + CDN + WAF = Front Door.
+
+**Q42. Answer: C.** *Why C.* TM = DNS-only steering. *Wrong options.* **A/B/D**: wrong category. *Takeaway.* TM doesn't proxy.
+
+**Q43. Answer: C.** *Why C.* ASGs single-VNet only. *Wrong options.* **A**: not multi-region. **B**: not multi-sub. **D**: not tenant-wide. *Takeaway.* ASG = single VNet.
+
+**Q44. Answer: C.** *Why C.* Standard rollout: policy → Detection → observe → tune → Prevention. *Wrong options.* **A**: skips observation. **B**: policy must exist first. **D**: out of order. *Takeaway.* Always tune before Prevention.
+
+**Q45. Answer: B.** *Why B.* CRR = GRS vault + CRR feature toggled on. *Wrong options.* **A**: LRS no cross-region. **C**: ZRS within region. **D**: RA-GZRS is storage redundancy, not vault. *Takeaway.* CRR = GRS + toggle.
+
+**Q46. Answer: A.** *Why A.* ASR = continuous replication for region DR. *Wrong options.* **B**: scheduled. **C**: different. **D**: snapshots aren't full DR. *Takeaway.* ASR = region failover.
+
+**Q47. Answer: B.** *Why B.* Discover → Assess → Migrate. *Wrong options.* **A/C/D**: not the named phases. *Takeaway.* DAM.
+
+**Q48. Answer: B.** *Why B.* S1 yes (soft delete default + 14 days min). S2 yes (GRS unlocks CRR). S3 yes (MUA = 4-eyes). *Wrong options.* A/C/D each miss one. *Takeaway.* All three are backup fundamentals.
+
+**Q49. Answer: A.** *Why A.* Test failover = isolated network, no prod impact. *Wrong options.* **B**: not production-impacting. **C**: not same cost. **D**: test failovers are repeatable. *Takeaway.* Test failover is the dry-run.
+
+**Q50. Answer: B.** *Why B.* Activity Log default = 90 days. *Wrong options.* **A**: 30 wrong. **C**: 60 wrong. **D**: not forever. *Takeaway.* 90 days; export to extend.
+
+**Q51. Answer: B.** *Why B.* AMA + DCRs = modern. *Wrong options.* **A**: MMA retired. **C**: OMS legacy. **D**: Diagnostics Extension legacy. *Takeaway.* AMA = modern.
+
+**Q52. Answer: A.** *Why A.* `summarize` aggregates. *Wrong options.* **B**: filters. **C**: returns top N. **D**: selects columns. *Takeaway.* Aggregation = summarize.
+
+**Q53. Answer: C.** *Why C.* DINE runs ARM deployment to remediate. *Wrong options.* **A**: Audit logs only. **B**: Deny blocks. **D**: Append adds property at create. *Takeaway.* DINE = auto-remediate.
+
+**Q54. Answer: B.** *Why B.* S1 yes (hub firewall + UDRs for spoke-to-spoke). S2 yes (non-overlapping required). S3 yes (gateway-transit toggle pair). *Wrong options.* A/C/D each invert. *Takeaway.* Three hub-spoke truths.
+
+**Q55. Answer: D.** *Why D.* Plan → app → PE → FD → WAF Detection → Prevention. *Wrong options.* **A**: FD before PE leaves a gap. **B**: PE before app makes no sense. **C**: app before plan impossible. *Takeaway.* Build dependency stack bottom-up; WAF Detection then Prevention.

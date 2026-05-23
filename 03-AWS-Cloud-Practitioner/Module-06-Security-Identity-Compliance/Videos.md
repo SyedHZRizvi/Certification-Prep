@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~60 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Shared+Responsibility+Model+explained+CLF-C02" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Shared+Responsibility+Model+explained+CLF-C02" data-video-id="HlEv_9-VSxM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 14 min · HIGHEST-yield video</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+IAM+users+groups+roles+policies+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+IAM+users+groups+roles+policies+tutorial" data-video-id="bmBzYFwUwsk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 12 min · Core IAM</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=GuardDuty+Macie+Inspector+difference+AWS+security" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=GuardDuty+Macie+Inspector+difference+AWS+security" data-video-id="h7pq95RMuEQ" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 13 min · Service disambiguation</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+KMS+encryption+at+rest+CloudHSM+difference" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+KMS+encryption+at+rest+CloudHSM+difference" data-video-id="ItzzgWe7elE" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~30 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Organizations+SCPs+multi+account+strategy" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Organizations+SCPs+multi+account+strategy" data-video-id="0YMb51VuD54" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 10 min · Enterprise guardrails</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=WAF+Shield+Standard+Advanced+AWS+DDoS+protection" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=WAF+Shield+Standard+Advanced+AWS+DDoS+protection" data-video-id="jcE2gyVkhYo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 9 min · Edge protection</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=CloudTrail+vs+Config+AWS+governance" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=CloudTrail+vs+Config+AWS+governance" data-video-id="MT-DNQUSLT8" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+IAM+Identity+Center+SSO+setup+demo" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+IAM+Identity+Center+SSO+setup+demo" data-video-id="4yJp5-jGGNk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 15 min · Federated workforce</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Security+Hub+demo+aggregated+findings" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Security+Hub+demo+aggregated+findings" data-video-id="nBusvrDEjdk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

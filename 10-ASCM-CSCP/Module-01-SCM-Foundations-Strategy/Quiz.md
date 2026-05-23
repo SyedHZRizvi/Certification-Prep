@@ -7,7 +7,7 @@
 
 ## Questions
 
-### Q1. According to the APICS dictionary, a supply chain involves the flow of which three things?
+### Q1. According to the APICS dictionary, a supply chain involves the flow of which three things? *(Remember)*
 A. Product, people, profit
 B. Material, information, and cash
 C. Suppliers, manufacturers, and retailers
@@ -15,7 +15,7 @@ D. Demand, supply, and inventory
 
 ---
 
-### Q2. The SCOR 13.0 model contains how many top-level processes?
+### Q2. The SCOR 13.0 model contains how many top-level processes? *(Remember)*
 A. 4
 B. 5
 C. 6
@@ -23,7 +23,7 @@ D. 7
 
 ---
 
-### Q3. Which SCOR process covers procurement and inbound receiving?
+### Q3. Which SCOR process covers procurement and inbound receiving? *(Understand)*
 A. Plan
 B. Source
 C. Make
@@ -31,7 +31,7 @@ D. Enable
 
 ---
 
-### Q4. A 40-store coffee chain sells stable, predictable products. According to Fisher's framework, what supply chain strategy fits BEST?
+### Q4. A 40-store coffee chain sells stable, predictable products. According to Fisher's framework, what supply chain strategy fits BEST? *(Apply)*
 A. Responsive
 B. Risk-hedging
 C. Efficient
@@ -39,7 +39,7 @@ D. Agile
 
 ---
 
-### Q5. A semiconductor manufacturer faces both volatile demand AND constant supply disruption from rare-earth metals. Per Hau Lee, the most appropriate SC strategy is:
+### Q5. A semiconductor manufacturer faces both volatile demand AND constant supply disruption from rare-earth metals. Per Hau Lee, the most appropriate SC strategy is: *(Apply)*
 A. Efficient
 B. Responsive
 C. Risk-hedging
@@ -47,7 +47,7 @@ D. Agile
 
 ---
 
-### Q6. The Customer Order Decoupling Point (CODP) is BEST described as:
+### Q6. The Customer Order Decoupling Point (CODP) is BEST described as: *(Understand)*
 A. The point where freight rates change
 B. Where the chain switches from forecast-driven (push) to order-driven (pull)
 C. The supplier's MRP horizon
@@ -55,7 +55,7 @@ D. The cash-to-cash boundary
 
 ---
 
-### Q7. Hewlett-Packard delays installing region-specific power packs until printers reach the regional distribution center. This strategy is called:
+### Q7. Hewlett-Packard delays installing region-specific power packs until printers reach the regional distribution center. This strategy is called: *(Apply)*
 A. Centralization
 B. Postponement
 C. Outsourcing
@@ -63,7 +63,7 @@ D. Vertical integration
 
 ---
 
-### Q8. Which is NOT one of the five commonly cited causes of the bullwhip effect?
+### Q8. Which is NOT one of the five commonly cited causes of the bullwhip effect? *(Understand)*
 A. Demand forecast updating at each tier
 B. Order batching
 C. Lower freight costs
@@ -71,7 +71,7 @@ D. Rationing and shortage gaming
 
 ---
 
-### Q9. A retailer requires that all laptop suppliers offer ≥ 8 GB RAM to be considered. Customers ultimately pick the brand with the longest battery life. In Terry Hill's terms:
+### Q9. A retailer requires that all laptop suppliers offer ≥ 8 GB RAM to be considered. Customers ultimately pick the brand with the longest battery life. In Terry Hill's terms: *(Analyze)*
 A. RAM is the winner; battery life is the qualifier
 B. RAM is the qualifier; battery life is the winner
 C. Both are winners
@@ -79,7 +79,7 @@ D. Neither — these are operational metrics
 
 ---
 
-### Q10. The competitive priority that focuses on changing volume, mix, or new-product introduction quickly is:
+### Q10. The competitive priority that focuses on changing volume, mix, or new-product introduction quickly is: *(Remember)*
 A. Cost
 B. Quality
 C. Flexibility
@@ -87,7 +87,7 @@ D. Reliability
 
 ---
 
-### Q11. A construction company building a one-of-a-kind hydroelectric dam best fits which manufacturing strategy?
+### Q11. A construction company building a one-of-a-kind hydroelectric dam best fits which manufacturing strategy? *(Apply)*
 A. Make-to-Stock
 B. Assemble-to-Order
 C. Make-to-Order
@@ -95,7 +95,7 @@ D. Engineer-to-Order
 
 ---
 
-### Q12. Compared to a value chain, a supply chain:
+### Q12. Compared to a value chain, a supply chain: *(Analyze)*
 A. Is internal to a single firm
 B. Includes primary AND support activities of one firm
 C. Spans multiple firms from raw material to end consumer
@@ -103,7 +103,7 @@ D. Was coined by Michael Porter
 
 ---
 
-### Q13. The SCOR performance attribute that measures "perfect order fulfillment" falls under which dimension?
+### Q13. The SCOR performance attribute that measures "perfect order fulfillment" falls under which dimension? *(Understand)*
 A. Customer-facing reliability
 B. Customer-facing responsiveness
 C. Internal-facing cost
@@ -111,7 +111,7 @@ D. Internal-facing asset
 
 ---
 
-### Q14. Cash-to-cash cycle time is BEST interpreted as:
+### Q14. Cash-to-cash cycle time is BEST interpreted as: *(Understand)*
 A. Days of revenue collected per quarter
 B. Days of working capital tied up between paying suppliers and collecting from customers
 C. Time to convert raw material to finished goods
@@ -119,7 +119,7 @@ D. Days between purchase order and goods receipt
 
 ---
 
-### Q15. A consumer-electronics brand wants to source from three different Asian factories rather than one to reduce disruption risk. This is an example of:
+### Q15. A consumer-electronics brand wants to source from three different Asian factories rather than one to reduce disruption risk. This is an example of: *(Apply)*
 A. Reshoring
 B. Postponement
 C. Risk-hedging
@@ -127,7 +127,7 @@ D. Bullwhip mitigation by forecast updating
 
 ---
 
-### Q16. Which statement about Hau Lee's matrix is TRUE?
+### Q16. Which statement about Hau Lee's matrix is TRUE? *(Remember)*
 A. The two axes are cost and quality
 B. The two axes are demand uncertainty and supply uncertainty
 C. The four cells are Push, Pull, Lean, and Agile
@@ -135,7 +135,7 @@ D. It only applies to manufacturing, not services
 
 ---
 
-### Q17. A grocery store carrying salt, sugar, and milk should design its SC around:
+### Q17. A grocery store carrying salt, sugar, and milk should design its SC around: *(Apply)*
 A. Speed and flexibility
 B. Cost efficiency
 C. Innovation and customization
@@ -143,7 +143,7 @@ D. Engineer-to-order capability
 
 ---
 
-### Q18. A pharmaceutical company facing strict regulation, high supply uncertainty, but low demand uncertainty is BEST served by a:
+### Q18. A pharmaceutical company facing strict regulation, high supply uncertainty, but low demand uncertainty is BEST served by a: *(Analyze)*
 A. Efficient supply chain
 B. Responsive supply chain
 C. Risk-hedging supply chain
@@ -151,7 +151,7 @@ D. Agile supply chain
 
 ---
 
-### Q19. The most effective long-term remedy for the bullwhip effect across a multi-tier supply chain is:
+### Q19. The most effective long-term remedy for the bullwhip effect across a multi-tier supply chain is: *(Evaluate)*
 A. Increasing safety stock at every tier
 B. Sharing point-of-sale data with upstream partners (e.g., CPFR or VMI)
 C. Lengthening batch order intervals
@@ -159,7 +159,7 @@ D. Promoting forward-buying on price promotions
 
 ---
 
-### Q20. A laptop assembler holds component inventory but builds finished units only after a confirmed online order. This is BEST described as:
+### Q20. A laptop assembler holds component inventory but builds finished units only after a confirmed online order. This is BEST described as: *(Apply)*
 A. MTS
 B. ATO
 C. MTO
@@ -167,7 +167,7 @@ D. ETO
 
 ---
 
-### Q21. A multinational electronics maker decides to move some of its Chinese production back to Mexico to shorten the supply chain to US customers. This is called:
+### Q21. A multinational electronics maker decides to move some of its Chinese production back to Mexico to shorten the supply chain to US customers. This is called: *(Apply)*
 A. Reshoring (or nearshoring)
 B. Outsourcing
 C. Globalization
@@ -175,7 +175,7 @@ D. Vertical integration
 
 ---
 
-### Q22. SCOR added which process category in version 11 that didn't exist in earlier versions?
+### Q22. SCOR added which process category in version 11 that didn't exist in earlier versions? *(Remember)*
 A. Plan
 B. Return
 C. Enable
@@ -183,7 +183,7 @@ D. Source
 
 ---
 
-### Q23. The PRIMARY purpose of aligning supply chain strategy with corporate strategy is to:
+### Q23. The PRIMARY purpose of aligning supply chain strategy with corporate strategy is to: *(Evaluate)*
 A. Reduce headcount in operations
 B. Ensure functional decisions support overall competitive advantage
 C. Enable use of a single ERP system
@@ -191,7 +191,7 @@ D. Satisfy regulators
 
 ---
 
-### Q24. An online furniture retailer offers customer-configurable sofas. Fabric, frame, and color are picked at order time, then built and shipped within 14 days. The CODP is located at:
+### Q24. An online furniture retailer offers customer-configurable sofas. Fabric, frame, and color are picked at order time, then built and shipped within 14 days. The CODP is located at: *(Apply)*
 A. Finished goods
 B. Sub-assemblies
 C. Raw materials
@@ -199,7 +199,7 @@ D. Design phase
 
 ---
 
-### Q25. Which statement BEST captures the difference between push and pull?
+### Q25. Which statement BEST captures the difference between push and pull? *(Understand)*
 A. Push uses pulling motion; pull uses pushing motion
 B. Push uses customer demand triggers; pull uses forecasts
 C. Push uses forecasts and plans; pull uses actual customer demand
@@ -207,7 +207,7 @@ D. Push and pull are functionally identical
 
 ---
 
-### Q26. The APICS dictionary defines "perfect order" as one that is:
+### Q26. The APICS dictionary defines "perfect order" as one that is: *(Remember)*
 A. Delivered before the promised date
 B. On-time, complete, undamaged, and with correct documentation
 C. Larger than the standard order quantity

@@ -2,6 +2,13 @@
 
 > **Why this module matters:** Forecasting drives every downstream planning decision — S&OP, inventory, capacity, sourcing. Domain 3 ("Planning and Execution") is 40% of the exam. Expect 8–12 questions that test forecasting *methods, error metrics, and CPFR* head-on.
 
+> **Prerequisites for this module.** Before starting, you should be comfortable with:
+> - [The bullwhip effect](../Module-01-SCM-Foundations-Strategy/Reading.md) — covered in Module 1
+> - [SCOR-Plan vocabulary](../Module-01-SCM-Foundations-Strategy/Reading.md) — covered in Module 1
+> - Basic statistics: mean, standard deviation, variance, normal distribution
+> - Time-series intuition (trends, cycles, seasonality)
+> If statistics feels rusty, review Khan Academy's "Statistics & Probability — Sampling distributions" before starting the quantitative methods section.
+
 ---
 
 ## 🍦 A Story: The Ice Cream Plant That Always Ran Out
@@ -243,6 +250,23 @@ You can shape demand to match supply:
 
 ---
 
+## 📊 Case Study — Walmart, Warner-Lambert, and the Birth of CPFR (1995-2024)
+
+**Situation.** In 1995 Walmart and pharma firm Warner-Lambert (maker of Listerine) shared an embarrassing problem: every time Walmart ran a Listerine end-cap promotion, Warner-Lambert's plant in Lititz, PA went into emergency mode. Demand at the shelf went up 3×. Walmart's order to Warner-Lambert went up 8× (bullwhip from store inventory replenishment). Warner-Lambert's order to its bottle supplier went up 14×. The plant ran weekend overtime, the bottle supplier paid expedite premiums, and 6 weeks later inventory backed up at every tier. Independent forecasting was the disease; better algorithms weren't the cure.
+
+**Decision.** A joint team (Walmart's Lee Scott, Warner-Lambert's Pete Smithee, with consultants from Surgency including Bob Bruce) piloted what they called **CFAR — Collaborative Forecasting and Replenishment**. The mechanic: a shared online workbench where Walmart's POS forecasts and Warner-Lambert's production forecasts were *both* visible, and exception-management triggered joint conversations when they diverged more than ±15%. Promotions were pre-shared 8 weeks in advance — not as a courtesy, but as joint planning. Both sides committed to *one number* — a single negotiated forecast rather than two separate ones with each side defending its own.
+
+**Outcome.** Listerine specifically: Walmart inventory days dropped from 88 days to 39 days. Out-of-stock dropped from 11% to 2%. Warner-Lambert's plant overtime dropped 53%. A formal CFAR Voluntary Industry Standard was published by the **Voluntary Interindustry Commerce Standards Association (VICS)** in 1998, renamed **CPFR (Collaborative Planning, Forecasting and Replenishment)** in 2000. CPFR governance moved to GS1 in 2012 and remains the reference framework for joint planning. By 2024, AMR Research's longitudinal studies showed CPFR-mature retailers/suppliers carried 20-30% less inventory and grew sales 5-15% faster than control groups. P&G, Unilever, and Coca-Cola all built modern S&OP processes on top of CPFR principles. The pilot that started with Listerine bottle caps in 1995 became the architectural pattern for modern retail planning — and the conceptual basis for SAP IBP, Kinaxis, o9, and Blue Yonder demand-planning modules.
+
+**Lesson for the exam / for practitioners.** CPFR's superpower is not the algorithm — it's the **one-number forecast** governance. The math (exponential smoothing, Holt-Winters) was identical before and after; what changed was who agreed to it and what information flowed. On the exam: CPFR ≠ VMI. VMI is supplier-executes-replenishment; CPFR is supplier-and-buyer-plan-jointly. CPFR dampens bullwhip because every tier sees the same downstream demand signal. Modern AI demand-sensing (POS, weather, social) layered on top of CPFR is the 2024-2026 standard.
+
+**Discussion (Socratic).**
+- Q1: Many 2020-2022 CPFR programs fell apart during COVID because partners hoarded information about their own supply problems. Reconstruct: was CPFR fundamentally fragile to crisis, or was it implementation-shallow? Defend a position.
+- Q2: A regional retailer's CEO objects to CPFR with their biggest supplier because "we'll lose pricing leverage when they see our true demand." Build the counter-argument that information sharing increases joint surplus more than it shifts the split.
+- Q3: Generative-AI demand forecasting (e.g., Snowflake + Anthropic Claude, 2024-2026) can ingest raw text — news, social, weather — that CPFR's structured signal can't. Does this make CPFR obsolete or strengthen it? Cite where the human-in-the-loop fits.
+
+---
+
 ## ⚠️ Common Misconceptions
 
 | Misconception | Reality |
@@ -310,10 +334,30 @@ You now know:
 
 ---
 
+> **Where this leads.**
+> - Inside this course: Module 4 turns forecasts into MPS via the S&OP cycle; Module 5 uses the σ_LT from your error metrics for safety-stock math; Module 9 connects forecast accuracy to demand risk.
+> - Cross-course: `11-ASCM-CPIM` Module 3 takes Croston's method and intermittent-demand forecasting much deeper.
+> - Practice: Practice Exam 1 includes ~10 forecasting questions including 1-2 calculation (ES, MAD); Final Mock has 6-8.
+
+---
+
+## 💬 Discussion — Socratic prompts
+
+1. **Aggregate vs SKU forecast paradox.** Aggregate forecasts are more accurate than SKU forecasts — but operations must execute at SKU level. Build the principled argument for *where* in the planning hierarchy each forecast lives, and what governance forces them to reconcile.
+2. **When naïve beats fancy.** Spyros Makridakis's M-competition (1982, M3 in 2000, M5 in 2020) repeatedly found that simple methods (naïve, exponential smoothing) beat sophisticated ARIMA in many real datasets. Construct an honest argument for when sophistication is worth it — and when it's vanity. Cite at least one demand pattern from this module's typology.
+3. **Demand sensing's edge case.** Your firm pays a vendor for hourly POS-based demand sensing. Your data scientist shows it improves the 1-week forecast by 8% MAPE — but increases the *6-month* forecast volatility because the model over-weights recent signal. How would you reconcile S&OP (6-12 months) vs replenishment (days)?
+4. **The α dial.** A planner sets α = 0.9 because "I want the model to react fast." The forecast bias swings wildly. Walk through the conceptual + math reason why high α hurts here, and how you'd defend a lower α to a planner who insists the higher number "feels right."
+5. **MAPE's collapse and the WMAPE rescue.** A spare-parts business has many SKUs with intermittent demand and frequent zeros. MAPE is mathematically undefined for those weeks. Defend the choice between WMAPE, MASE, and Mean Absolute Error to a CFO who wants "one number that's comparable across the business."
+
+---
+
 ## 📚 Further Reading (Optional)
 
-- 📖 Nahmias, *Production and Operations Analysis* — forecasting chapter
-- 📖 Hyndman & Athanasopoulos, *Forecasting: Principles and Practice* (free at otexts.com/fpp3) — best free reference
-- 📖 ASCM CSCP Learning System — Module 3 vocabulary
-- 📖 VICS CPFR Guide (now under GS1)
-- 📖 P&G's classic demand-sensing case (search HBR archives)
+- 📖 Steven Nahmias, *Production and Operations Analysis* — McGraw-Hill, 7e 2015 (forecasting chapter is the academic reference)
+- 📖 Rob J. Hyndman & George Athanasopoulos, *Forecasting: Principles and Practice* — OTexts, 3e 2021 (free at otexts.com/fpp3 — best free reference, used by Monash University)
+- 📖 Marshall L. Fisher, Ananth Raman, et al., *"Reducing the Cost of Demand Uncertainty Through Accurate Response"* — Operations Research 1996 (the foundational accurate-response paper)
+- 📖 VICS CPFR Guidelines (now governed by GS1 US) — <https://www.gs1us.org/>
+- 📖 Tom Davenport's *Competing on Analytics* — HBS Press, updated 2017 (P&G's demand-sensing case)
+- 📖 Spyros Makridakis et al., *"The M5 Competition: Conclusions"* — International Journal of Forecasting 2022 (state of the art empirical comparison)
+- 📖 ASCM CSCP Learning System — Module 3 vocabulary mirrors APICS dictionary verbatim
+- 📰 *Foresight* (the practitioner journal of the International Institute of Forecasters) — quarterly

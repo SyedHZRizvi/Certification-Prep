@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~60 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Incoterms+2020+all+11+explained" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="GTUTLRXcVuA" href="https://www.youtube.com/results?search_query=Incoterms+2020+all+11+explained" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 15 min · Risk transfer points</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Incoterms+2020+changes+from+2010+DPU+CIP" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="cKcCmmIp-FM" href="https://www.youtube.com/results?search_query=Incoterms+2020+changes+from+2010+DPU+CIP" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 10 min · DAT → DPU, CIP insurance</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=FCPA+UK+Bribery+Act+compliance+procurement" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="acJnbHI93Cw" href="https://www.youtube.com/results?search_query=FCPA+UK+Bribery+Act+compliance+procurement" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 12 min · What's banned</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=foreign+exchange+hedging+procurement+forward+contract" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="mm-TZKLU3e4" href="https://www.youtube.com/results?search_query=foreign+exchange+hedging+procurement+forward+contract" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -61,7 +61,7 @@
       <span class="vg-duration">⏱ 12 min · Forwards, options, swaps</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Hofstede+cultural+dimensions+negotiation+business" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="h3P0Db32lLE" href="https://www.youtube.com/results?search_query=Hofstede+cultural+dimensions+negotiation+business" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -75,7 +75,7 @@
 ## 📚 Recommended (~30 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=USMCA+RCEP+free+trade+agreement+explained" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="371CRxnGkA8" href="https://www.youtube.com/results?search_query=USMCA+RCEP+free+trade+agreement+explained" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 10 min · Rules of origin</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=letter+of+credit+international+trade+explained" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="tUIziJCLTzE" href="https://www.youtube.com/results?search_query=letter+of+credit+international+trade+explained" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -93,7 +93,7 @@
       <span class="vg-duration">⏱ 11 min · UCP 600 process</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=country+risk+assessment+supply+chain" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="_oj5ybMTKIQ" href="https://www.youtube.com/results?search_query=country+risk+assessment+supply+chain" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -107,7 +107,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=OFAC+sanctions+compliance+screening" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="aQAb7Cf6keI" href="https://www.youtube.com/results?search_query=OFAC+sanctions+compliance+screening" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 15 min · SDN list screening</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=high+context+low+context+culture+communication" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="i92yIOSiBkc" href="https://www.youtube.com/results?search_query=high+context+low+context+culture+communication" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

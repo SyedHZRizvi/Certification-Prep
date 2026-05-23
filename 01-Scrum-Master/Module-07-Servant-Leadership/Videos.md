@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~40 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Servant+Leadership+Scrum.org" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Servant+Leadership+Scrum.org" target="_blank" rel="noopener" data-video-id="_d1LpOPw9n8">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 12 min</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=5+Stances+Scrum+Master+Overeem" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=5+Stances+Scrum+Master+Overeem" target="_blank" rel="noopener" data-video-id="Ts2Tl82fcXQ">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 14 min · Memorize these</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Coaching+vs+Mentoring+agile+Mountain+Goat" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Coaching+vs+Mentoring+agile+Mountain+Goat" target="_blank" rel="noopener" data-video-id="aaY5Ls8Alu8">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 10 min</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Henrik+Kniberg+Impediment+Removal" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Henrik+Kniberg+Impediment+Removal" target="_blank" rel="noopener" data-video-id="gMTXmft4R-Q">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~30 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Powerful+Questions+Coaches+Lyssa+Adkins" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Powerful+Questions+Coaches+Lyssa+Adkins" target="_blank" rel="noopener" data-video-id="0bBeCTh14tw">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 12 min</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=5+Whys+Technique+Atlassian" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=5+Whys+Technique+Atlassian" target="_blank" rel="noopener" data-video-id="833SdKlZ6Pk">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 8 min</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Avoiding+Toxic+Positivity+Scrum+Develpreneur" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Avoiding+Toxic+Positivity+Scrum+Develpreneur" target="_blank" rel="noopener" data-video-id="qzCV7Bp1R9Y">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>

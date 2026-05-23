@@ -6,7 +6,7 @@
 
 ## Questions
 
-### Q1. From top to bottom, what is the correct order of Azure's resource hierarchy?
+### Q1. From top to bottom, what is the correct order of Azure's resource hierarchy? *(Remember)*
 A. Subscription → Tenant → Resource Group → Resource
 B. Tenant → Management Group → Subscription → Resource Group → Resource
 C. Management Group → Tenant → Subscription → Resource
@@ -14,7 +14,7 @@ D. Tenant → Subscription → Management Group → Resource Group → Resource
 
 ---
 
-### Q2. How many management groups deep can you nest under the Tenant Root Group?
+### Q2. How many management groups deep can you nest under the Tenant Root Group? *(Remember)*
 A. 3
 B. 4
 C. 6
@@ -22,7 +22,7 @@ D. Unlimited
 
 ---
 
-### Q3. A resource group has a region setting. Why?
+### Q3. A resource group has a region setting. Why? *(Understand)*
 A. All resources in the RG must be in that region
 B. Only for billing purposes
 C. To store the RG's metadata; resources can live in other regions
@@ -30,7 +30,7 @@ D. To enforce data sovereignty
 
 ---
 
-### Q4. Which statement about tags is TRUE?
+### Q4. Which statement about tags is TRUE? *(Understand)*
 A. Tags inherit automatically from RG to resource
 B. Tags are NOT inherited automatically; use a policy to enforce inheritance
 C. Tags can be applied only to resource groups, not individual resources
@@ -38,7 +38,7 @@ D. Tags inherit from subscription to RG but not RG to resource
 
 ---
 
-### Q5. An admin applies a `Deny` policy at the Tenant Root Group that blocks `eastus2` deployments. A team in a child subscription needs to deploy to `eastus2`. What's the cleanest fix?
+### Q5. An admin applies a `Deny` policy at the Tenant Root Group that blocks `eastus2` deployments. A team in a child subscription needs to deploy to `eastus2`. What's the cleanest fix? *(Apply)*
 A. Override the policy at the subscription with an Allow policy
 B. Move the subscription out of the management group hierarchy
 C. Create a policy exemption at the appropriate scope
@@ -46,7 +46,7 @@ D. Delete the parent policy
 
 ---
 
-### Q6. Which lock type can break operations like listing storage account keys?
+### Q6. Which lock type can break operations like listing storage account keys? *(Understand)*
 A. CanNotDelete
 B. ReadOnly
 C. NoAccess
@@ -54,7 +54,7 @@ D. Audit
 
 ---
 
-### Q7. Who can create or remove resource locks by default?
+### Q7. Who can create or remove resource locks by default? *(Remember)*
 A. Any Reader
 B. Contributors
 C. Owners and User Access Administrators
@@ -62,7 +62,7 @@ D. Only the subscription's billing admin
 
 ---
 
-### Q8. You want to move a VM (with managed disks, NIC, public IP) from Subscription A to Subscription B. Which is NOT required?
+### Q8. You want to move a VM (with managed disks, NIC, public IP) from Subscription A to Subscription B. Which is NOT required? *(Apply)*
 A. Both subscriptions must be in the same Entra ID tenant
 B. You must remove any resource locks first
 C. You must stop (deallocate) the VM
@@ -70,7 +70,7 @@ D. You must validate the move (e.g. `validateMoveResources`) first
 
 ---
 
-### Q9. Which subscription type is the modern, billing-portal-driven replacement for the Enterprise Agreement?
+### Q9. Which subscription type is the modern, billing-portal-driven replacement for the Enterprise Agreement? *(Remember)*
 A. Pay-As-You-Go
 B. CSP
 C. Microsoft Customer Agreement (MCA)
@@ -78,7 +78,7 @@ D. Visual Studio Subscription
 
 ---
 
-### Q10. A subscription is currently associated with `contoso.onmicrosoft.com`. Can it be transferred to a different Entra ID tenant?
+### Q10. A subscription is currently associated with `contoso.onmicrosoft.com`. Can it be transferred to a different Entra ID tenant? *(Understand)*
 A. No — subscriptions are permanently bound to their original tenant
 B. Yes, via the "Change directory" action by a Billing Account Admin
 C. Only by opening a Microsoft support ticket
@@ -86,7 +86,7 @@ D. Only if it's an MCA subscription
 
 ---
 
-### Q11. Which Azure Policy effect would automatically deploy a missing diagnostic setting after a resource is created?
+### Q11. Which Azure Policy effect would automatically deploy a missing diagnostic setting after a resource is created? *(Apply)*
 A. Audit
 B. Deny
 C. Append
@@ -94,7 +94,7 @@ D. DeployIfNotExists
 
 ---
 
-### Q12. You need to apply a single set of controls (allowed locations, required tags, encryption) consistently. The right artifact is:
+### Q12. You need to apply a single set of controls (allowed locations, required tags, encryption) consistently. The right artifact is: *(Apply)*
 A. A single policy
 B. An initiative (a.k.a. policy set)
 C. A resource lock
@@ -102,7 +102,7 @@ D. An ARM template
 
 ---
 
-### Q13. **Order these steps to move a VM from RG-A to RG-B (same subscription).** Pick the right sequence.
+### Q13. **Order these steps to move a VM from RG-A to RG-B (same subscription).** Pick the right sequence. *(Apply)*
 
 1. Remove any locks on RG-A
 2. Run `az resource invoke-action validateMoveResources`
@@ -116,7 +116,7 @@ D. 3 → 1 → 2 → 4
 
 ---
 
-### Q14. Which is TRUE about subscriptions and resource quotas?
+### Q14. Which is TRUE about subscriptions and resource quotas? *(Understand)*
 A. Quotas are tenant-wide
 B. Quotas are per-RG
 C. Quotas are per-subscription per-region
@@ -124,7 +124,7 @@ D. There are no quotas — Azure is unlimited
 
 ---
 
-### Q15. The CFO wants a forecasted monthly Azure spend, sliceable by department. Which combination is the BEST?
+### Q15. The CFO wants a forecasted monthly Azure spend, sliceable by department. Which combination is the BEST? *(Analyze)*
 A. Azure Advisor + budgets
 B. Tags (e.g. `CostCenter`) + Cost Management cost analysis
 C. Resource locks + activity log
@@ -132,7 +132,7 @@ D. Policy initiatives + cost alerts
 
 ---
 
-### Q16. You want all resources in a subscription to be tagged `CostCenter` automatically when missing. Which built-in policy effect fits BEST?
+### Q16. You want all resources in a subscription to be tagged `CostCenter` automatically when missing. Which built-in policy effect fits BEST? *(Apply)*
 A. Deny
 B. Audit
 C. Modify (e.g. "Inherit a tag from the resource group")
@@ -140,7 +140,7 @@ D. ReadOnly
 
 ---
 
-### Q17. Which of the following is NOT a valid Azure Policy effect?
+### Q17. Which of the following is NOT a valid Azure Policy effect? *(Remember)*
 A. Audit
 B. AuditIfNotExists
 C. ForceDelete
@@ -148,7 +148,7 @@ D. Append
 
 ---
 
-### Q18. Reserved Instances primarily save money in exchange for:
+### Q18. Reserved Instances primarily save money in exchange for: *(Understand)*
 A. Lower SLA
 B. A 1- or 3-year commitment to a region & VM family
 C. Eviction risk
@@ -156,7 +156,7 @@ D. Less premium support
 
 ---
 
-### Q19. Spot VMs offer huge discounts but can be evicted with:
+### Q19. Spot VMs offer huge discounts but can be evicted with: *(Remember)*
 A. No notice
 B. 30 seconds' notice
 C. 5 minutes' notice
@@ -164,7 +164,7 @@ D. 24 hours' notice
 
 ---
 
-### Q20. A resource group is deleted. What happens to the resources inside?
+### Q20. A resource group is deleted. What happens to the resources inside? *(Remember)*
 A. They are kept and moved to a "default" RG
 B. They are soft-deleted for 30 days
 C. They are permanently deleted (unless protected by a lock)
@@ -172,7 +172,7 @@ D. They are detached and orphaned
 
 ---
 
-### Q21. Yes/No — For each statement, mark Yes or No.
+### Q21. Yes/No — For each statement, mark Yes or No. *(Understand)*
 
 **S1:** A subscription can belong to two management groups simultaneously.
 **S2:** A resource can belong to two resource groups simultaneously.
@@ -185,7 +185,7 @@ D. No / Yes / No
 
 ---
 
-### Q22. A `CanNotDelete` lock applied at a subscription means:
+### Q22. A `CanNotDelete` lock applied at a subscription means: *(Apply)*
 A. Only the subscription itself can't be deleted
 B. Resources in the subscription can be deleted but the sub itself cannot
 C. Every resource inside inherits the lock and cannot be deleted
@@ -193,7 +193,7 @@ D. The lock has no effect at subscription level
 
 ---
 
-### Q23. You need to constrain all deployments to `westeurope` and `northeurope`. The BEST place to apply this policy is:
+### Q23. You need to constrain all deployments to `westeurope` and `northeurope`. The BEST place to apply this policy is: *(Analyze)*
 A. Each individual resource
 B. Each resource group
 C. The management group above all affected subscriptions
@@ -201,7 +201,7 @@ D. The Tenant Root Group only
 
 ---
 
-### Q24. The Azure Hybrid Benefit reduces cost on Azure VMs by allowing you to:
+### Q24. The Azure Hybrid Benefit reduces cost on Azure VMs by allowing you to: *(Understand)*
 A. Use Spot pricing for Windows workloads
 B. Apply existing on-premises Windows Server / SQL licenses to Azure VMs
 C. Buy 5-year reservations
@@ -209,7 +209,7 @@ D. Receive a 10% credit for any deployment
 
 ---
 
-### Q25. Yes/No — A team needs hard isolation between Prod and Dev (separate billing, separate quotas, separate Owner permissions). Mark Yes or No.
+### Q25. Yes/No — A team needs hard isolation between Prod and Dev (separate billing, separate quotas, separate Owner permissions). Mark Yes or No. *(Evaluate)*
 
 **S1:** Two resource groups in the same subscription satisfy this.
 **S2:** Two subscriptions in the same management group satisfy this.

@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~55 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Global+Infrastructure+Stephane+Maarek" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="BxHaLBRZWyc" href="https://www.youtube.com/results?search_query=AWS+Global+Infrastructure+Stephane+Maarek" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🌍</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 10 min · Regions, AZs, edge locations</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Well-Architected+Framework+6+pillars+ExamPro" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="o4NYjMPZPZE" href="https://www.youtube.com/results?search_query=AWS+Well-Architected+Framework+6+pillars+ExamPro" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🏛️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 20 min · Pillar-by-pillar walk-through</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Shared+Responsibility+Model+explained" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="ESPBBEK-cvo" href="https://www.youtube.com/results?search_query=AWS+Shared+Responsibility+Model+explained" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🤝</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 12 min · Where the line moves</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SAA-C03+exam+overview+Tutorials+Dojo" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="6kJ0JhnptlQ" href="https://www.youtube.com/results?search_query=SAA-C03+exam+overview+Tutorials+Dojo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>📝</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~35 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+regions+AZs+edge+locations+Be+A+Better+Dev" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="Ia-UEYYR44s" href="https://www.youtube.com/results?search_query=AWS+regions+AZs+edge+locations+Be+A+Better+Dev" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🗺️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 12 min · Cost, latency, compliance</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+IaaS+PaaS+SaaS+Serverless+freeCodeCamp" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="_SbDJvHreLM" href="https://www.youtube.com/results?search_query=AWS+IaaS+PaaS+SaaS+Serverless+freeCodeCamp" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🧱</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 13 min · Where AWS services fit</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+pricing+fundamentals+Stephane+Maarek" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="7ZNLIIhFflY" href="https://www.youtube.com/results?search_query=AWS+pricing+fundamentals+Stephane+Maarek" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>💵</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+re%3AInvent+Well-Architected+Framework+session" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="UXtZCoE9qfQ" href="https://www.youtube.com/results?search_query=AWS+re%3AInvent+Well-Architected+Framework+session" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎤</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 60 min · Real customer architectures</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+sustainability+pillar+Graviton" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="pzSvcsduijM" href="https://www.youtube.com/results?search_query=AWS+sustainability+pillar+Graviton" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🌱</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 25 min · The newest pillar</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+account+setup+best+practices+MFA+root" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="FRQ9fE4fd5g" href="https://www.youtube.com/results?search_query=AWS+account+setup+best+practices+MFA+root" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🔐</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

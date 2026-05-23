@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~55 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=What+is+Supply+Chain+Management+Edureka" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="zvWV2gDkwWE" href="https://www.youtube.com/results?search_query=What+is+Supply+Chain+Management+Edureka" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 15 min · End-to-end overview</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SCOR+model+explained+ASCM+APICS" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="gL4IT2H65I8" href="https://www.youtube.com/results?search_query=SCOR+model+explained+ASCM+APICS" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 12 min · The 6 SCOR processes</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Hau+Lee+supply+chain+strategy+matrix" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="DWO4KOBVT8U" href="https://www.youtube.com/results?search_query=Hau+Lee+supply+chain+strategy+matrix" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 14 min · Efficient/Responsive/Risk-hedging/Agile</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Bullwhip+effect+MIT+beer+game" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="y_lthnTm6Vw" href="https://www.youtube.com/results?search_query=Bullwhip+effect+MIT+beer+game" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~32 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Push+vs+pull+supply+chain+decoupling+point" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="UdeW80ipksU" href="https://www.youtube.com/results?search_query=Push+vs+pull+supply+chain+decoupling+point" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 10 min · CODP movement explained</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Order+winners+qualifiers+Terry+Hill" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="SRotLevrIww" href="https://www.youtube.com/results?search_query=Order+winners+qualifiers+Terry+Hill" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 8 min · The competitive priority framework</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Value+chain+Porter+vs+supply+chain" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="gNXaRX5ZJSE" href="https://www.youtube.com/results?search_query=Value+chain+Porter+vs+supply+chain" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Caltech+supply+chain+strategy+lecture" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="IqmrNUoiy7g" href="https://www.youtube.com/results?search_query=Caltech+supply+chain+strategy+lecture" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 50 min · Academic deep dive</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Apple+supply+chain+case+study" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="prQfQX6JgOQ" href="https://www.youtube.com/results?search_query=Apple+supply+chain+case+study" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 18 min · Real-world strategy</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Reshoring+nearshoring+post+pandemic+supply+chain" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="JhiNs3Cql5o" href="https://www.youtube.com/results?search_query=Reshoring+nearshoring+post+pandemic+supply+chain" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

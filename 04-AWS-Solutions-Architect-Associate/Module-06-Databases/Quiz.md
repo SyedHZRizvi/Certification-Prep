@@ -2,11 +2,13 @@
 
 > **Instructions:** 26 questions, ~35 min. Target 21/26.
 
+> **Bloom's distribution.** Remember 5 (19%) · Understand 6 (23%) · Apply 9 (35%) · Analyze/Evaluate 5 (19%) · Create 1 (4%).
+
 ---
 
 ## Questions
 
-### Q1. An RDS Multi-AZ deployment provides:
+### Q1. An RDS Multi-AZ deployment provides: *(Understand)*
 A. Read scaling via the standby
 B. Synchronous replication with automatic failover to a standby in another AZ
 C. Asynchronous cross-region replication
@@ -14,7 +16,7 @@ D. A cache layer
 
 ---
 
-### Q2. To scale read traffic on RDS, the correct mechanism is:
+### Q2. To scale read traffic on RDS, the correct mechanism is: *(Apply)*
 A. Multi-AZ
 B. Read Replicas
 C. RDS Proxy
@@ -22,7 +24,7 @@ D. Bigger instance type
 
 ---
 
-### Q3. A workload needs cross-region disaster recovery for a MySQL database with under 1 second cross-region replication and the ability to fail over rapidly. The BEST choice is:
+### Q3. A workload needs cross-region disaster recovery for a MySQL database with under 1 second cross-region replication and the ability to fail over rapidly. The BEST choice is: *(Apply)*
 A. RDS MySQL Multi-AZ
 B. Aurora Global Database
 C. Cross-region snapshot copy nightly
@@ -30,7 +32,7 @@ D. DynamoDB Global Tables
 
 ---
 
-### Q4. A spiky relational workload that runs for a few minutes then idle. The MOST cost-effective option:
+### Q4. A spiky relational workload that runs for a few minutes then idle. The MOST cost-effective option: *(Apply)*
 A. Aurora Provisioned
 B. Aurora Serverless v2
 C. RDS Multi-AZ
@@ -38,7 +40,7 @@ D. Redshift
 
 ---
 
-### Q5. DynamoDB On-Demand capacity mode is BEST for:
+### Q5. DynamoDB On-Demand capacity mode is BEST for: *(Understand)*
 A. Predictable, steady workloads
 B. Unpredictable or new workloads where you don't want to manage RCU/WCU
 C. Analytical batch queries
@@ -46,7 +48,7 @@ D. Transactional joins across many tables
 
 ---
 
-### Q6. A read-heavy DynamoDB table has hot keys that need single-digit MICROsecond latency. The right addition is:
+### Q6. A read-heavy DynamoDB table has hot keys that need single-digit MICROsecond latency. The right addition is: *(Apply)*
 A. ElastiCache Redis
 B. DAX (DynamoDB Accelerator)
 C. CloudFront
@@ -54,7 +56,7 @@ D. RDS Proxy
 
 ---
 
-### Q7. A leaderboard service requires sorted-set operations, persistence, and Multi-AZ failover. The BEST cache is:
+### Q7. A leaderboard service requires sorted-set operations, persistence, and Multi-AZ failover. The BEST cache is: *(Apply)*
 A. Memcached
 B. Redis
 C. DynamoDB
@@ -62,7 +64,7 @@ D. Athena
 
 ---
 
-### Q8. Memcached is BEST when:
+### Q8. Memcached is BEST when: *(Understand)*
 A. You need replication and persistence
 B. You want simple multi-threaded distributed cache with no persistence
 C. You need sorted sets
@@ -70,7 +72,7 @@ D. You need geospatial queries
 
 ---
 
-### Q9. To restore an RDS database to a state 4 hours ago (within retention window):
+### Q9. To restore an RDS database to a state 4 hours ago (within retention window): *(Apply)*
 A. Manual snapshot restore
 B. Point-in-Time Recovery (PITR) from automated backups
 C. Multi-AZ failover
@@ -78,7 +80,7 @@ D. Spin up a Read Replica
 
 ---
 
-### Q10. Encrypting an existing unencrypted RDS instance:
+### Q10. Encrypting an existing unencrypted RDS instance: *(Apply)*
 A. Can be done in place with a console toggle
 B. Requires snapshot → copy as encrypted → restore
 C. Is not possible
@@ -86,7 +88,7 @@ D. Requires changing engine
 
 ---
 
-### Q11. Which database is BEST for petabyte-scale analytics with complex aggregations across years of sales data?
+### Q11. Which database is BEST for petabyte-scale analytics with complex aggregations across years of sales data? *(Apply)*
 A. RDS PostgreSQL
 B. DynamoDB
 C. Redshift
@@ -94,7 +96,7 @@ D. ElastiCache
 
 ---
 
-### Q12. To query data directly in S3 from Redshift (data lake) without loading it first, use:
+### Q12. To query data directly in S3 from Redshift (data lake) without loading it first, use: *(Remember)*
 A. Athena
 B. Redshift Spectrum
 C. EMR
@@ -102,7 +104,7 @@ D. Glue
 
 ---
 
-### Q13. A Lambda function opens many short-lived RDS connections, causing connection storms. The BEST fix is:
+### Q13. A Lambda function opens many short-lived RDS connections, causing connection storms. The BEST fix is: *(Apply)*
 A. Larger RDS instance
 B. RDS Proxy
 C. CloudFront
@@ -110,7 +112,7 @@ D. Read Replica
 
 ---
 
-### Q14. DynamoDB Global Tables provide:
+### Q14. DynamoDB Global Tables provide: *(Remember)*
 A. Cross-region read-only replicas
 B. Multi-region, multi-active replication
 C. Cross-AZ replication only
@@ -118,7 +120,7 @@ D. ACID multi-table transactions
 
 ---
 
-### Q15. An IoT solution collects sensor readings every second from 10,000 devices. Which is the BEST database?
+### Q15. An IoT solution collects sensor readings every second from 10,000 devices. Which is the BEST database? *(Apply)*
 A. RDS Oracle
 B. DynamoDB
 C. Timestream
@@ -126,7 +128,7 @@ D. Neptune
 
 ---
 
-### Q16. A workload needs an immutable, cryptographically verifiable audit log of transactions. The BEST service is:
+### Q16. A workload needs an immutable, cryptographically verifiable audit log of transactions. The BEST service is: *(Apply)*
 A. RDS PostgreSQL
 B. QLDB
 C. DynamoDB
@@ -134,7 +136,7 @@ D. Aurora
 
 ---
 
-### Q17. Aurora's storage is replicated:
+### Q17. Aurora's storage is replicated: *(Remember)*
 A. 2 copies in 1 AZ
 B. 3 copies across 3 AZs
 C. 6 copies across 3 AZs
@@ -142,7 +144,7 @@ D. 4 copies in 2 AZs
 
 ---
 
-### Q18. Aurora Backtrack lets you:
+### Q18. Aurora Backtrack lets you: *(Understand)*
 A. Replicate to another region
 B. Rewind the database to a point in time without restore
 C. Encrypt at rest
@@ -150,7 +152,7 @@ D. Auto-scale capacity
 
 ---
 
-### Q19. To replicate a MongoDB workload to AWS with minimal app changes, use:
+### Q19. To replicate a MongoDB workload to AWS with minimal app changes, use: *(Remember)*
 A. DynamoDB
 B. DocumentDB
 C. Aurora MySQL
@@ -158,7 +160,7 @@ D. Redshift
 
 ---
 
-### Q20. Read replicas can be promoted to standalone primaries:
+### Q20. Read replicas can be promoted to standalone primaries: *(Understand)*
 A. Automatically, by AWS
 B. Manually, by the user
 C. Only in another region
@@ -166,7 +168,7 @@ D. Never
 
 ---
 
-### Q21. A company runs OLTP on RDS and wants to offload heavy reporting reads. They should add:
+### Q21. A company runs OLTP on RDS and wants to offload heavy reporting reads. They should add: *(Apply)*
 A. Multi-AZ
 B. Read Replicas (and point reports at them)
 C. ElastiCache
@@ -174,7 +176,7 @@ D. CloudFront
 
 ---
 
-### Q22. An RDS database is at 90% storage and growing. To prevent downtime:
+### Q22. An RDS database is at 90% storage and growing. To prevent downtime: *(Analyze)*
 A. Manually resize storage
 B. Enable RDS Storage Auto Scaling
 C. Add a Read Replica
@@ -182,7 +184,7 @@ D. Move to DynamoDB
 
 ---
 
-### Q23. Which is TRUE about DynamoDB Streams?
+### Q23. Which is TRUE about DynamoDB Streams? *(Analyze)*
 A. They retain data for 30 days
 B. They retain change events for 24 hours and can be consumed by Lambda
 C. They are required for global tables
@@ -190,7 +192,7 @@ D. They store full table snapshots
 
 ---
 
-### Q24. To find shortest paths and patterns in a network of users and relationships, the BEST database is:
+### Q24. To find shortest paths and patterns in a network of users and relationships, the BEST database is: *(Create)*
 A. Neptune
 B. DynamoDB
 C. RDS
@@ -198,7 +200,7 @@ D. Redshift
 
 ---
 
-### Q25. RDS Multi-AZ failover typically completes in:
+### Q25. RDS Multi-AZ failover typically completes in: *(Evaluate)*
 A. < 1 second
 B. ~60–120 seconds (RDS single-instance Multi-AZ)
 C. 10+ minutes
@@ -206,7 +208,7 @@ D. Manual only
 
 ---
 
-### Q26. The default consistency for a DynamoDB GetItem is:
+### Q26. The default consistency for a DynamoDB GetItem is: *(Analyze)*
 A. Strongly consistent
 B. Eventually consistent
 C. ACID-transactional

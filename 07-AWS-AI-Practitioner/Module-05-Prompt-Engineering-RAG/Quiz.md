@@ -7,7 +7,7 @@
 
 ## Questions
 
-### Q1. Which prompting technique provides several worked examples before the new input?
+### Q1. Which prompting technique provides several worked examples before the new input? *(Remember)*
 A. Zero-shot
 B. One-shot
 C. Few-shot
@@ -15,7 +15,7 @@ D. Chain-of-Thought
 
 ---
 
-### Q2. Adding "Let's think step by step" to a math word-problem prompt is an example of:
+### Q2. Adding "Let's think step by step" to a math word-problem prompt is an example of: *(Apply)*
 A. Few-shot prompting
 B. Chain-of-Thought (CoT) prompting
 C. RAG
@@ -23,7 +23,7 @@ D. ReAct
 
 ---
 
-### Q3. RAG primarily addresses which TWO LLM weaknesses?
+### Q3. RAG primarily addresses which TWO LLM weaknesses? *(Understand)*
 A. GPU cost and latency
 B. Hallucinations and lack of access to private/fresh data
 C. Tokenization and embedding errors
@@ -31,7 +31,7 @@ D. IAM and networking
 
 ---
 
-### Q4. In a RAG pipeline, the user's question is converted into:
+### Q4. In a RAG pipeline, the user's question is converted into: *(Understand)*
 A. A SQL query
 B. A vector (embedding) that is searched against a vector store
 C. A regex pattern
@@ -39,7 +39,7 @@ D. A REST API call
 
 ---
 
-### Q5. Which AWS service provides FULLY MANAGED RAG (chunking, embedding, retrieval) on Bedrock?
+### Q5. Which AWS service provides FULLY MANAGED RAG (chunking, embedding, retrieval) on Bedrock? *(Remember)*
 A. Knowledge Bases for Amazon Bedrock
 B. SageMaker Pipelines
 C. Amazon Personalize
@@ -47,7 +47,7 @@ D. Amazon Polly
 
 ---
 
-### Q6. Which is NOT a vector store supported by Knowledge Bases for Amazon Bedrock?
+### Q6. Which is NOT a vector store supported by Knowledge Bases for Amazon Bedrock? *(Analyze)*
 A. Amazon OpenSearch Serverless
 B. Amazon Aurora PostgreSQL (pgvector)
 C. Pinecone
@@ -55,7 +55,7 @@ D. Amazon Redshift
 
 ---
 
-### Q7. The MOST common Bedrock-native default vector store for Knowledge Bases is:
+### Q7. The MOST common Bedrock-native default vector store for Knowledge Bases is: *(Remember)*
 A. Amazon Aurora pgvector
 B. Pinecone
 C. Amazon OpenSearch Serverless
@@ -63,7 +63,7 @@ D. Amazon DynamoDB
 
 ---
 
-### Q8. "Prompt injection" is BEST described as:
+### Q8. "Prompt injection" is BEST described as: *(Understand)*
 A. Inserting a SQL command into an LLM
 B. A malicious user (or content) overriding the system prompt with crafted instructions
 C. An IAM permission error
@@ -71,7 +71,7 @@ D. A pricing tier of Bedrock
 
 ---
 
-### Q9. INDIRECT prompt injection happens when malicious instructions are hidden in:
+### Q9. INDIRECT prompt injection happens when malicious instructions are hidden in: *(Understand)*
 A. The system prompt
 B. A PDF or web page that the LLM is asked to read
 C. A user's email address
@@ -79,7 +79,7 @@ D. The Bedrock model registry
 
 ---
 
-### Q10. Which Bedrock-native service helps block prompts/responses by topic, PII, or content filter?
+### Q10. Which Bedrock-native service helps block prompts/responses by topic, PII, or content filter? *(Apply)*
 A. Guardrails for Amazon Bedrock
 B. AWS Shield
 C. Amazon Detective
@@ -87,7 +87,7 @@ D. AWS WAF
 
 ---
 
-### Q11. A "system prompt" is BEST used to:
+### Q11. A "system prompt" is BEST used to: *(Understand)*
 A. Encode user-specific data
 B. Set persistent persona, tone, and policy rules invisible to the user
 C. Store API keys
@@ -95,7 +95,7 @@ D. Run SQL queries
 
 ---
 
-### Q12. A Bedrock Agent's "action group" is:
+### Q12. A Bedrock Agent's "action group" is: *(Remember)*
 A. A logging system
 B. A set of APIs / Lambda functions the agent can invoke
 C. A list of vector stores
@@ -103,7 +103,7 @@ D. An IAM role
 
 ---
 
-### Q13. Which technique combines vector similarity AND keyword search?
+### Q13. Which technique combines vector similarity AND keyword search? *(Remember)*
 A. Hybrid search
 B. Pure semantic search
 C. Lexical search only
@@ -111,7 +111,7 @@ D. Fuzzy search
 
 ---
 
-### Q14. Reranking (e.g., Cohere Rerank) is typically used to:
+### Q14. Reranking (e.g., Cohere Rerank) is typically used to: *(Understand)*
 A. Replace the embedding model
 B. Re-score the initial top-K retrieved chunks and surface higher-quality top-N
 C. Generate text
@@ -119,7 +119,7 @@ D. Train a new model
 
 ---
 
-### Q15. A "ReAct" prompt pattern alternates:
+### Q15. A "ReAct" prompt pattern alternates: *(Understand)*
 A. Read and Act
 B. Reason, Act, Observe — repeatedly until a final answer
 C. Retrieve and Acknowledge
@@ -127,7 +127,7 @@ D. Real-time and Async
 
 ---
 
-### Q16. The MAIN reason RAG is preferred over fine-tuning for "use my docs" scenarios is:
+### Q16. The MAIN reason RAG is preferred over fine-tuning for "use my docs" scenarios is: *(Evaluate)*
 A. RAG always gives better accuracy than fine-tuning
 B. RAG is cheaper, can be updated instantly, and lets you cite sources without changing model weights
 C. RAG eliminates the need for a foundation model
@@ -135,7 +135,7 @@ D. RAG only works with Stable Diffusion
 
 ---
 
-### Q17. "Prompt chaining" means:
+### Q17. "Prompt chaining" means: *(Understand)*
 A. Encrypting prompts in transit
 B. Breaking a complex task into a pipeline of smaller LLM calls
 C. Concatenating multiple users' prompts
@@ -143,7 +143,7 @@ D. Caching prompts in Redis
 
 ---
 
-### Q18. Which BEDROCK API returns the retrieved chunks AND the final LLM-generated answer with citations?
+### Q18. Which BEDROCK API returns the retrieved chunks AND the final LLM-generated answer with citations? *(Remember)*
 A. Invoke
 B. Retrieve
 C. RetrieveAndGenerate
@@ -151,7 +151,7 @@ D. CreateAgent
 
 ---
 
-### Q19. A team wants their LLM to look up a customer in Salesforce and create a Jira ticket as part of one conversation. The BEST AWS pattern is:
+### Q19. A team wants their LLM to look up a customer in Salesforce and create a Jira ticket as part of one conversation. The BEST AWS pattern is: *(Create)*
 A. SageMaker Endpoint with custom code
 B. Bedrock Agent with two action groups (Salesforce + Jira)
 C. Amazon Lex with manual integrations
@@ -159,7 +159,7 @@ D. Amazon Polly + Amazon Translate
 
 ---
 
-### Q20. Which chunking strategy indexes small chunks for retrieval but returns larger parent chunks for context?
+### Q20. Which chunking strategy indexes small chunks for retrieval but returns larger parent chunks for context? *(Apply)*
 A. Fixed-size chunking
 B. Sentence chunking
 C. Hierarchical (parent-child) chunking
@@ -167,7 +167,7 @@ D. Document-level chunking
 
 ---
 
-### Q21. The cost / invasiveness ordering of LLM customization (cheapest to most expensive) is generally:
+### Q21. The cost / invasiveness ordering of LLM customization (cheapest to most expensive) is generally: *(Evaluate)*
 A. Prompting < RAG < Fine-tuning < Continued pre-training
 B. Continued pre-training < Fine-tuning < RAG < Prompting
 C. RAG < Prompting < Fine-tuning < Continued pre-training
@@ -175,7 +175,7 @@ D. Fine-tuning < Prompting < Continued pre-training < RAG
 
 ---
 
-### Q22. "Jailbreaking" an LLM means:
+### Q22. "Jailbreaking" an LLM means: *(Remember)*
 A. Reverse-engineering the model weights
 B. Getting the model to bypass its built-in safety guidelines
 C. Hosting the model on a jailbroken device
@@ -183,7 +183,7 @@ D. Switching from Bedrock to JumpStart
 
 ---
 
-### Q23. A defense AGAINST prompt injection is:
+### Q23. A defense AGAINST prompt injection is: *(Apply)*
 A. Storing the system prompt in plaintext on a public website
 B. Using Bedrock Guardrails, input/output filtering, and least-privilege tool access
 C. Removing the system prompt entirely
@@ -191,7 +191,7 @@ D. Increasing temperature to 1.0
 
 ---
 
-### Q24. Which is TRUE about Knowledge Bases for Bedrock?
+### Q24. Which is TRUE about Knowledge Bases for Bedrock? *(Analyze)*
 A. They require you to manage your own embedding pipeline
 B. They provide managed data ingestion, chunking, embedding, and retrieval
 C. They are a SageMaker feature, not Bedrock
@@ -199,7 +199,7 @@ D. They only support PDF files
 
 ---
 
-### Q25. A vector store with a knowledge graph for multi-hop reasoning supported by Bedrock is:
+### Q25. A vector store with a knowledge graph for multi-hop reasoning supported by Bedrock is: *(Apply)*
 A. Amazon DynamoDB
 B. Amazon Neptune (Analytics, for GraphRAG)
 C. Amazon ElastiCache
@@ -207,7 +207,7 @@ D. Amazon Athena
 
 ---
 
-### Q26. A user asks "Show me ticket #5678 details." Pure semantic search misses it because of the exact identifier. The BEST fix is:
+### Q26. A user asks "Show me ticket #5678 details." Pure semantic search misses it because of the exact identifier. The BEST fix is: *(Analyze)*
 A. Increase temperature
 B. Use hybrid search (semantic + keyword)
 C. Fine-tune the model

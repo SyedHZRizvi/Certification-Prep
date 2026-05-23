@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~55 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=distribution+requirements+planning+DRP+example" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="UFhMCEpHyc4" href="https://www.youtube.com/results?search_query=distribution+requirements+planning+DRP+example" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 14 min · Fill-in example</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=multi+echelon+inventory+optimization+MEIO" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="si8Klzl80Ww" href="https://www.youtube.com/results?search_query=multi+echelon+inventory+optimization+MEIO" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 11 min · Why MEIO beats silo</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=postponement+supply+chain+strategy+benetton" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="d1IK_HaPFGM" href="https://www.youtube.com/results?search_query=postponement+supply+chain+strategy+benetton" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 10 min · Form, time, place</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=safety+stock+formula+lead+time+service+level" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="KVnzZjj-93Y" href="https://www.youtube.com/results?search_query=safety+stock+formula+lead+time+service+level" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -61,7 +61,7 @@
       <span class="vg-duration">⏱ 12 min · Worked formulas</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=bullwhip+effect+supply+chain+cause+cure" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="NgYnDORn3iw" href="https://www.youtube.com/results?search_query=bullwhip+effect+supply+chain+cause+cure" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -75,7 +75,7 @@
 ## 📚 Recommended (~35 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=push+pull+supply+chain+strategy" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="UdeW80ipksU" href="https://www.youtube.com/results?search_query=push+pull+supply+chain+strategy" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 9 min · Hybrid boundaries</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=cycle+counting+warehouse+inventory+accuracy" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="tGOAWkWVGK4" href="https://www.youtube.com/results?search_query=cycle+counting+warehouse+inventory+accuracy" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -93,7 +93,7 @@
       <span class="vg-duration">⏱ 13 min · ABC-based count</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=ABC+XYZ+FSN+inventory+classification" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="g43s3WS_trY" href="https://www.youtube.com/results?search_query=ABC+XYZ+FSN+inventory+classification" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -107,7 +107,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=CPFR+collaborative+planning+forecasting+replenishment" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="QXogeG5hNKs" href="https://www.youtube.com/results?search_query=CPFR+collaborative+planning+forecasting+replenishment" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 18 min · Walmart/P&G example</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=vendor+managed+inventory+VMI+benefits" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="3lJA9k4blag" href="https://www.youtube.com/results?search_query=vendor+managed+inventory+VMI+benefits" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

@@ -234,3 +234,102 @@ The fix for "Scrum theater" is bringing the WHY back into the events — not lec
 - "SM serves 3 groups: team, PO, org"
 
 ➡️ [Cheat Sheet](./Cheat-Sheet.md) → [Module 8](../Module-08-Scaling/Reading.md)
+
+---
+
+## 🧠 Bloom's-taxonomy mapping (existing Q1–Q24)
+
+| Q# | Bloom level |
+|---|---|
+| Q1, Q4, Q5, Q17, Q22 | Remember (recall of SM definition, stances, who-serves-whom) |
+| Q2, Q3, Q6, Q7, Q9, Q15, Q23 | Understand (definitions of coaching, teaching, facilitating) |
+| Q8, Q10, Q11, Q12, Q13, Q14, Q16, Q18, Q19, Q20, Q21, Q24 | Apply (scenario response — most heavily tested band) |
+
+**Current distribution:** Remember 5 (21%), Understand 7 (29%), Apply 12 (50%), Analyze 0, Evaluate 0, Create 0. Servant-leadership quizzes are intrinsically Apply-heavy because the exam tests scenario judgment. The new questions add Analyze/Evaluate/Create depth.
+
+---
+
+## 🚀 Additional higher-Bloom questions (Q25–Q30, advanced)
+
+### Q25. Taiichi Ohno's andon-cord culture at Toyota lets any worker stop the production line (Module 7 case study). Analyze the closest Scrum equivalent — which mechanism most directly mirrors the andon cord? *(Analyze)*
+A. The Sprint Goal — only the PO can change it
+B. The Daily Scrum — any Developer can flag impediments that, if unresolved, halt progress toward the Sprint Goal. The team can also collectively decide to pause work (e.g., suspend a feature) when quality is at risk. The mechanism is less *individual veto* and more *team transparency that surfaces andon-equivalent signals*
+C. The Definition of Done — work that doesn't meet it cannot ship
+D. The Scrum Master — they're the only person who can stop work
+
+---
+
+### Q26. A new SM has spent 2 weeks reading the Scrum Guide and is now their team's "Scrum compliance enforcer." They've started citing the Guide at every disagreement. Evaluate this behavior against servant leadership. *(Evaluate)*
+A. Correct — the SM ensures Scrum is followed
+B. Incorrect — the SM's accountability is to *establish* Scrum (which involves teaching), not to enforce as a rule cop. Citing the Guide at every disagreement signals lack of trust in the team and prevents the team from developing its own understanding. The mature SM teaches *once*, then asks questions that lead the team to discover the answer themselves
+C. Correct — only the SM can interpret the Guide
+D. Incorrect — the SM should never reference the Guide
+
+---
+
+### Q27. A manager asks the SM: "Who are your top performers? I need to give out bonuses." Construct a coaching response that honors servant leadership, the Scrum Guide's team-level accountability, AND the manager's legitimate need to recognize good work. *(Create)*
+A. Provide the rankings
+B. (1) Acknowledge the manager's underlying need (recognizing good work); (2) explain why individual-level rankings damage team collaboration and contradict Scrum's team-level accountability; (3) offer alternatives — recognize team-level achievements (Sprint Goals met, customer value delivered), or pair bonuses to team outcomes, or let the team itself nominate peers
+C. Refuse and report to HR
+D. Make up rankings to satisfy the manager
+
+---
+
+### Q28. Apply the Tell-vs-Coach continuum to the following scenario: A Developer asks the SM, "Should I use Python or Go for this microservice?" The correct SM response is which mode, and why? *(Apply)*
+A. Tell — the SM is the technical authority
+B. Coach — this is a "how" question the team should decide. The SM should ask questions like "What are the team's existing skills?" "What's the maintenance trajectory?" "What does the architecture suggest?" The developer's own reasoning produces a better answer than the SM's directive
+C. Mentor — the SM shares their personal Python experience
+D. Escalate — the SM cannot answer
+
+---
+
+### Q29. Compare Greenleaf's 1970 essay framing ("the servant leader serves first, leadership emerges from service") with the 2020 Scrum Guide's "true leader who serves" rephrasing. Evaluate what changed and why. *(Evaluate)*
+A. The phrases are identical — no change
+B. "Servant leader" was sometimes misread as "subservient" — the leader having no agency. "True leader who serves" preserves Greenleaf's intent (service is the primary motive) while emphasizing that the role *is* leadership — the SM has voice, perspective, and the courage to challenge the team and the organization. The rephrasing was a calibration to prevent disempowered Scrum Masters, not a content shift
+C. Sutherland disagreed with Greenleaf and removed the lineage
+D. The rephrasing was arbitrary
+
+---
+
+### Q30. Analyze the failure mode of a Scrum Master who is *too* servant-oriented — what does an over-serving SM look like, and what's the symptom you'd see? *(Analyze)*
+A. They never speak in meetings
+B. They become a "doormat SM" — taking notes, scheduling meetings, fetching coffee, but failing to *challenge* the team or the organization. Symptoms: chronic impediments that never escalate; team avoids hard conversations; the SM's voice disappears in Retrospectives. Servant leadership requires courage to challenge AND service — both, not either alone
+C. They yell at developers
+D. They become the team's manager
+
+---
+
+## 🎯 Answer key — Q25–Q30
+
+### Q25: **B. Daily Scrum + team transparency**
+The Scrum analog to the andon cord is collective rather than individual — the Daily Scrum surfaces impediments and the team can collectively decide to pause/replan based on what's inspected. The Scrum Guide's emphasis on Transparency is the closer analog than any single-person veto power. (A is about Sprint Goal, not stopping work; C is about quality at output, not stopping in-progress work; D contradicts servant leadership — the SM doesn't unilaterally stop work.)
+
+### Q26: **B. Rule-cop is anti-servant-leader**
+The Scrum Master's accountability is to *establish* Scrum — which involves teaching, coaching, and modeling. Citing the Guide as a rule-cop signals distrust and prevents team learning. The mature SM teaches once, then asks questions that lead the team to discover the answer. Greenleaf's servant-leader does not "enforce" — they enable.
+
+### Q27: **B. Three-step coaching response**
+Acknowledge → teach → offer alternatives. This is the canonical servant-leader pattern for handling org-level pressure that conflicts with Scrum values. (A undermines team; C is confrontational and unhelpful; D is unethical.)
+
+### Q28: **B. Coach with questions**
+Technology choice is a Developer self-management decision — the team should decide based on their context. The SM coaches by asking questions ("What are the team's skills?" "What does the architecture suggest?") rather than dictating. The Tell-mode is reserved for Scrum-Guide rules, safety, and emergencies. This is neither.
+
+### Q29: **B. Calibration to prevent disempowerment**
+The 2020 rephrasing addressed a documented misreading of "servant" as "subservient." The new phrasing preserves Greenleaf's intent while emphasizing leadership *is* the role — service is *how*, not *whether*. This calibration matters in practice because many Scrum Masters reported being disempowered by leaders who took "servant" too literally.
+
+### Q30: **B. Doormat SM — failure of courage**
+The over-serving SM fails the Scrum value of Courage. Symptoms: chronic unresolved impediments, team avoids hard conversations, SM's voice fades. Servant leadership is *both* service AND challenge — Greenleaf's essay explicitly emphasizes the leader's discernment and willingness to challenge.
+
+---
+
+## 📊 Updated distribution after Q25–Q30
+
+| Bloom level | Count | % | Target |
+|---|---|---|---|
+| Remember | 5 | 17% | ≤ 25% |
+| Understand | 7 | 23% | ~ 25% |
+| Apply | 13 | 43% | ~ 25% |
+| Analyze | 3 | 10% | ~ 20% |
+| Evaluate | 2 | 7% | within 20% |
+| Create | 1 | 3% | ~ 5% |
+
+This is the best-distributed quiz in the course. Scenario-based SM behavior questions are intrinsically Apply-heavy, which serves the PSM I exam well — most exam role/behavior questions are scenarios.

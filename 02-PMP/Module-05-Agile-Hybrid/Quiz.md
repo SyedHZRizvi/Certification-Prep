@@ -178,3 +178,73 @@ Velocity-based forecasting: 180 / 30 = 6 sprints.
 That's the correct PMP behavior, not a trap. The other three (assigning tasks, locked baselines, controlling standups) are anti-patterns.
 
 ➡️ [Cheat Sheet](./Cheat-Sheet.md) → [Module 6: EVM](../Module-06-Earned-Value/Reading.md)
+
+---
+
+## Bloom's-taxonomy tags for the questions above
+
+| Q | Bloom level | Why this level |
+|---|---|---|
+| Q1 | Remember | Recall Kanban's core mechanism. |
+| Q2 | Apply | Apply approach-selection to support-tickets work. |
+| Q3 | Remember | Recall the agile-triangle flex. |
+| Q4 | Remember | Recall TIM-WOODS expansion. |
+| Q5 | Understand | Explain what WIP limits prevent. |
+| Q6 | Remember | Recall agile PM role. |
+| Q7 | Understand | Identify when hybrid wins. |
+| Q8 | Remember | Recall XP practices' origin. |
+| Q9 | Remember | Recall cycle-time definition. |
+| Q10 | Understand | Explain what CFD reveals. |
+| Q11 | Apply | Apply TIM-WOODS classification to a report-overproduction example. |
+| Q12 | Understand | Distinguish Lead Time from Cycle Time. |
+| Q13 | Apply | Choose hybrid for stable-hardware/evolving-firmware. |
+| Q14 | Apply | Apply agile-triangle response to scope growth. |
+| Q15 | Apply | Apply CFD interpretation to a bottleneck. |
+| Q16 | Remember | Recall PMP-2021 PM role description. |
+| Q17 | Understand | Explain WIP-limit purposes. |
+| Q18 | Remember | Recall XP-origin practices. |
+| Q19 | Understand | Identify PMP terminology-agnostic stance. |
+| Q20 | Apply | Apply TIM-WOODS classification to under-utilized engineer. |
+| Q21 | Apply | Apply velocity-forecasting math. |
+| Q22 | Analyze | Distinguish four agile behaviors and find the non-trap. |
+
+**Bloom distribution for Q1–Q22:** Remember 9 (~41%) · Understand 6 (~27%) · Apply 6 (~27%) · Analyze 1 (~5%). The bonus questions below push Analyze/Evaluate/Create higher.
+
+---
+
+## Bonus questions (higher-Bloom)
+
+### Q23. HealthCare.gov (from the case study). You are PM on a federal IT project two months from launch, and the program is in similar trouble: 55 contractors, fixed-price waterfall contracts, integration testing crammed into the final two weeks. Using PMBOK 7's Tailoring + Adaptability principles, what intervention is MOST defensible? *(Create)*
+A. Hold the schedule; finish what was signed.
+B. Cancel the project.
+C. Stand up a small cross-functional "war-room" cell drawn from the highest-impact contractor work, run twice-daily standups against the top-5 user flows, freeze low-value scope, negotiate emergency contract modifications to allow time-and-materials work for the rescue, and present the methodology shift to the sponsor with named outcome metrics and a 6-week review point — citing the original specification's mismatch to the actual complexity.
+D. Pivot quietly without telling the sponsor; replace the contractors.
+
+### Q24. A team's velocity has been flat at 28 points/sprint for 6 sprints. The new VP asks you to "drive it to 40 by next quarter." Using DORA's research (Forsgren/Humble/Kim 2018) AND PMBOK 7's Team principle, what's the MOST defensible response? *(Evaluate)*
+A. Comply — set a 40-point target.
+B. Refuse politely.
+C. Reframe: velocity is a forecasting input, not a performance metric; propose DORA's four key metrics (deployment frequency, lead time for changes, change failure rate, mean time to restore) as a richer dashboard; quantify the bottleneck driving flat velocity (using a CFD) and propose a 90-day intervention aimed at the bottleneck, with the VP signing off on the diagnosis before any target-setting; document that gaming velocity erodes trust.
+D. Hire more developers to mechanically lift the number.
+
+### Q25. A regulated medical-device firm has stable hardware specs and evolving firmware. Procurement wants a Firm Fixed-Price contract for the whole vendor relationship. Using PMBOK 7's Adaptability principle, what's the MOST defensible contract structure for the buyer? *(Create)*
+A. Single FFP for everything — simplest.
+B. Single Cost-Reimbursable for everything.
+C. Hybrid contract: FFP for the hardware deliverables (stable spec, clear acceptance criteria), capped T&M or sprint-based fixed-price for the firmware (evolving spec, frequent acceptance), an integration acceptance gate, and a governance clause allowing methodology shifts on the firmware side without renegotiating the hardware side — with shared milestone reviews.
+D. T&M for everything.
+
+### Q26. Two senior engineers argue: one wants Scrum (sprint-based) because "predictability sells to the customer"; the other wants Kanban because "our work is unpredictable support." Using the Stacey Matrix (Stacey 1996), which is right? *(Analyze)*
+A. Always Scrum.
+B. Always Kanban.
+C. It depends on requirement stability + complexity: predictable feature work with stable requirements maps to predictive or Scrum; unpredictable interrupt-driven work with high variability maps to Kanban; if both kinds of work coexist on one team, propose a "Scrumban" hybrid with WIP limits inside a sprint cadence and discuss the trade-off explicitly with both engineers and the customer.
+D. Outsource the decision.
+
+### Q27. A 200-person product organization is structured as 20 Scrum teams with autonomy. Cross-team dependencies are slowing delivery. Citing both the Spotify model walk-back (Module 02's case study) AND PMBOK 7's Tailoring principle, what's the MOST defensible scale-up intervention? *(Evaluate)*
+A. Adopt SAFe immediately and impose its events.
+B. Keep total autonomy.
+C. Pilot a thin coordination overlay (e.g., release-train style events, named dependency owners, explicit "missions" with dated outcomes) on 4–6 teams for one quarter; measure cycle-time and delivered customer value before/after; expand or roll back based on evidence; resist wholesale SAFe adoption unless evidence supports it.
+D. Reorganize all 20 teams into 4 mega-teams.
+
+```
+Bonus answer key
+23.C  24.C  25.C  26.C  27.C
+```

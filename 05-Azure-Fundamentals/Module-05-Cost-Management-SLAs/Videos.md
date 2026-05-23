@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~40 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+Azure+cost+management+billing" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="RjuTQvGm1zQ" href="https://www.youtube.com/results?search_query=John+Savill+Azure+cost+management+billing" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 18 min · Cost mgmt deep dive</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Adam+Marczak+Azure+pricing+calculator+TCO" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="ZV2bfoqFpZ8" href="https://www.youtube.com/results?search_query=Adam+Marczak+Azure+pricing+calculator+TCO" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 10 min · Tell them apart</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+SLA+composite+SLA+calculation" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="WuzpcMZ1UxI" href="https://www.youtube.com/results?search_query=Azure+SLA+composite+SLA+calculation" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 8 min · The multiply trick</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+reservations+vs+savings+plans" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="n5yqsjOIUfU" href="https://www.youtube.com/results?search_query=Azure+reservations+vs+savings+plans" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~25 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Hybrid+Benefit+Windows+SQL+licenses" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="dt4LDm-ptQk" href="https://www.youtube.com/results?search_query=Azure+Hybrid+Benefit+Windows+SQL+licenses" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 8 min · Discount with existing licenses</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+spot+VMs+cost+savings" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="UfQgR-nLfno" href="https://www.youtube.com/results?search_query=Azure+spot+VMs+cost+savings" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 10 min · 90% off but evictable</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+tags+cost+allocation+showback" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="_5N61IjdrkE" href="https://www.youtube.com/results?search_query=Azure+tags+cost+allocation+showback" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+free+account+sign+up+services" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="SZVcLkpjTto" href="https://www.youtube.com/results?search_query=Azure+free+account+sign+up+services" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 8 min · Free tier walkthrough</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+service+lifecycle+preview+GA" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="J4HzsmuClV0" href="https://www.youtube.com/results?search_query=Azure+service+lifecycle+preview+GA" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 6 min · Quick reference</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+budgets+alerts+cost+control" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="0pwt8-J3t7U" href="https://www.youtube.com/results?search_query=Azure+budgets+alerts+cost+control" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

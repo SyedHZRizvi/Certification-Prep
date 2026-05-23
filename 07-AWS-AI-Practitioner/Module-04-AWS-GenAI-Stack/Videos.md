@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~70 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Amazon+Bedrock+overview+AWS+2024" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Amazon+Bedrock+overview+AWS+2024" target="_blank" rel="noopener" data-video-id="_vdK5PgcNvc">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 20 min · Official tour of providers, KBs, agents, guardrails</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Amazon+Q+Developer+vs+Q+Business+explained" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Amazon+Q+Developer+vs+Q+Business+explained" target="_blank" rel="noopener" data-video-id="op62mHU_CTk">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 18 min · The exam-critical distinction</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Amazon+Nova+foundation+models+reinvent+2024" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Amazon+Nova+foundation+models+reinvent+2024" target="_blank" rel="noopener" data-video-id="Xx4D6TqXuG0">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 18 min · Nova Micro/Lite/Pro/Premier + Canvas + Reel</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AIF-C01+Bedrock+walkthrough+Stephane+Maarek" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=AIF-C01+Bedrock+walkthrough+Stephane+Maarek" target="_blank" rel="noopener" data-video-id="BY4YlxhSKr8">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~30 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=PartyRock+AWS+demo+how+to+use" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=PartyRock+AWS+demo+how+to+use" target="_blank" rel="noopener" data-video-id="-6p-u-BwJww">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 10 min · Hands-on; go play afterward</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Amazon+Bedrock+vs+SageMaker+JumpStart+comparison" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Amazon+Bedrock+vs+SageMaker+JumpStart+comparison" target="_blank" rel="noopener" data-video-id="l53yDWWQCFQ">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 12 min · Removes the #2 confusion in Module 4</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Trainium+Inferentia+chips+explained" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Trainium+Inferentia+chips+explained" target="_blank" rel="noopener" data-video-id="Bteba8KLeGc">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+Claude+on+Amazon+Bedrock+demo" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+Claude+on+Amazon+Bedrock+demo" target="_blank" rel="noopener" data-video-id="ZLEm-cLTXEo">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 25 min · Real demo of Claude through Bedrock</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Amazon+Q+in+QuickSight+demo" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Amazon+Q+in+QuickSight+demo" target="_blank" rel="noopener" data-video-id="uBG7lFXV6II">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 14 min · Natural-language dashboards</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+HealthScribe+demo+generative+AI+clinical+notes" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+HealthScribe+demo+generative+AI+clinical+notes" target="_blank" rel="noopener" data-video-id="lmklf-yP50s">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

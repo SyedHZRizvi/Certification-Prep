@@ -124,6 +124,15 @@ Days 9–10: Flashcards + Final Mock + REAL EXAM
 
 ---
 
+## 🎯 Capstone & Recommended Reading
+
+This course is built to the Cornell / Harvard / Stanford pedagogical bar. Two cross-module resources extend the course beyond the multiple-choice exam:
+
+- 📋 [**Capstone Project**](./Capstone-Project.md) — a 6-week scenario engagement for a 110-person law firm choosing between on-prem renewal and Azure + M365. Seven deliverables (architecture, TCO, compliance, identity, runbook, change plan, risk register) scored against a 100-point rubric. Integrates all 6 modules.
+- 📚 [**Recommended Readings**](./Recommended-Readings.md) — 20 curated resources (4 canonical books, 8 seminal papers, 5 industry resources, 3 free academic courses) with a "when to read what" sequence aligned to the modules.
+
+---
+
 ## 🎬 Start Here
 
 👉 [**Module 1: Cloud Concepts**](./Module-01-Cloud-Concepts/Reading.md)

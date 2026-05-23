@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~50 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=reverse+logistics+process+returns+management" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="wQ3Z60YFBaY" href="https://www.youtube.com/results?search_query=reverse+logistics+process+returns+management" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 12 min · 5-step flow</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=circular+economy+supply+chain+closed+loop" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="ma6_02TiaHk" href="https://www.youtube.com/results?search_query=circular+economy+supply+chain+closed+loop" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 10 min · 7Rs framework</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=scope+1+2+3+emissions+GHG+protocol" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="YcZC_KMYFIg" href="https://www.youtube.com/results?search_query=scope+1+2+3+emissions+GHG+protocol" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 11 min · GHG Protocol basics</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=triple+bottom+line+sustainability+people+planet+profit" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="WT-QEoyo7Rc" href="https://www.youtube.com/results?search_query=triple+bottom+line+sustainability+people+planet+profit" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -61,7 +61,7 @@
       <span class="vg-duration">⏱ 9 min · 3P framework</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=refurbish+remanufacture+recycle+difference" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="KAD4baB-H4Y" href="https://www.youtube.com/results?search_query=refurbish+remanufacture+recycle+difference" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -75,7 +75,7 @@
 ## 📚 Recommended (~30 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=ESG+reporting+GRI+SASB+TCFD" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="q_E-Xut3bA4" href="https://www.youtube.com/results?search_query=ESG+reporting+GRI+SASB+TCFD" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 13 min · Framework tour</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=ISO+14001+environmental+management+system" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="jERk13d_v74" href="https://www.youtube.com/results?search_query=ISO+14001+environmental+management+system" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=sustainable+packaging+supply+chain" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="9gRoPCSLx6A" href="https://www.youtube.com/results?search_query=sustainable+packaging+supply+chain" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 16 min · Right-sizing, returnable</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=electric+truck+fleet+sustainability+logistics" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="b7OGiR7_x_o" href="https://www.youtube.com/results?search_query=electric+truck+fleet+sustainability+logistics" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

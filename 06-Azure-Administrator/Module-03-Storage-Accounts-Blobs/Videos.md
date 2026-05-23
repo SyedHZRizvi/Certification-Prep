@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~80 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+Azure+storage+redundancy+LRS+ZRS+GRS+GZRS" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+Azure+storage+redundancy+LRS+ZRS+GRS+GZRS" target="_blank" rel="noopener" data-video-id="E1t-x0T2bn0">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 22 min · The definitive comparison</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Adam+Marczak+Azure+storage+accounts+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Adam+Marczak+Azure+storage+accounts+tutorial" target="_blank" rel="noopener" data-video-id="_Qlkvd4ZQuo">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 18 min · Kinds + creation walkthrough</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+blob+access+tiers+lifecycle+management" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+blob+access+tiers+lifecycle+management" target="_blank" rel="noopener" data-video-id="ZNuzmUKt6IE">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 20 min · Hot/Cool/Cold/Archive + JSON rules</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Tim+Warner+Azure+SAS+shared+access+signature+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Tim+Warner+Azure+SAS+shared+access+signature+tutorial" target="_blank" rel="noopener" data-video-id="lFFYcNbDvdo">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~40 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AzCopy+v10+tutorial+azure+storage" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=AzCopy+v10+tutorial+azure+storage" target="_blank" rel="noopener" data-video-id="K_2yUH2FqaY">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 14 min · sync, copy, resume</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Inside+Cloud+and+Security+Azure+storage+private+endpoint" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Inside+Cloud+and+Security+Azure+storage+private+endpoint" target="_blank" rel="noopener" data-video-id="X319wzJOSSA">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 18 min · vs service endpoints</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+storage+CMK+customer+managed+key+vault" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+storage+CMK+customer+managed+key+vault" target="_blank" rel="noopener" data-video-id="JlkCnTD4pcU">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+blob+immutable+storage+WORM+legal+hold" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+blob+immutable+storage+WORM+legal+hold" target="_blank" rel="noopener" data-video-id="59IQEPAF7nA">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 15 min · Compliance workloads</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+storage+explorer+tutorial+upload+download" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+storage+explorer+tutorial+upload+download" target="_blank" rel="noopener" data-video-id="aaDM130tGr4">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 10 min · GUI walkthrough</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Data+Box+offline+transfer+petabytes" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Data+Box+offline+transfer+petabytes" target="_blank" rel="noopener" data-video-id="trBZN7hVeOE">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

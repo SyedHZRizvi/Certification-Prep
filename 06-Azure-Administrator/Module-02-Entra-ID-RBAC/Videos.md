@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~90 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+Microsoft+Entra+ID+complete+overview" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+Microsoft+Entra+ID+complete+overview" target="_blank" rel="noopener" data-video-id="cE3IiHGuHvs">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 30 min · The definitive intro</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+Azure+RBAC+deep+dive" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+Azure+RBAC+deep+dive" target="_blank" rel="noopener" data-video-id="qFoHDTxkQII">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 25 min · Control vs data plane</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Adam+Marczak+Azure+Conditional+Access+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Adam+Marczak+Azure+Conditional+Access+tutorial" target="_blank" rel="noopener" data-video-id="zFyXTA7o7J4">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 18 min · Signals → controls</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+Privileged+Identity+Management+PIM" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+Privileged+Identity+Management+PIM" target="_blank" rel="noopener" data-video-id="OJZqgj68AnQ">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~45 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Tim+Warner+Entra+ID+dynamic+groups+membership+rules" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Tim+Warner+Entra+ID+dynamic+groups+membership+rules" target="_blank" rel="noopener" data-video-id="qw4A82_bD-0">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 12 min · Rule syntax</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Microsoft+Entra+ID+B2B+B2C+External+ID+explained" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Microsoft+Entra+ID+B2B+B2C+External+ID+explained" target="_blank" rel="noopener" data-video-id="EfVs5qurGBU">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 14 min · Customer vs partner</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Inside+Cloud+and+Security+managed+identity+vs+service+principal" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Inside+Cloud+and+Security+managed+identity+vs+service+principal" target="_blank" rel="noopener" data-video-id="QP3ZH8d6q1Y">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+Entra+ID+Identity+Protection+risk+policies" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+Entra+ID+Identity+Protection+risk+policies" target="_blank" rel="noopener" data-video-id="Nx2ych3xHl0">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 20 min · P2 feature deep dive</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+RBAC+custom+role+definition+JSON+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+RBAC+custom+role+definition+JSON+tutorial" target="_blank" rel="noopener" data-video-id="qLRFjLsNl7s">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 12 min · JSON walkthrough</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Microsoft+Entra+passwordless+FIDO2+Authenticator" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Microsoft+Entra+passwordless+FIDO2+Authenticator" target="_blank" rel="noopener" data-video-id="wTLB0Yh70_0">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

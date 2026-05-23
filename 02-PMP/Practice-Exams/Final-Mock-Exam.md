@@ -348,3 +348,279 @@ A. The Charter  B. Master plan + baselines  C. Schedule  D. Risk register
 8. ✅ **Take the exam!**
 
 🎉 **You got this.** 🎉
+
+---
+
+## Detailed answer rationales
+
+Per-question rationales — why the correct answer is correct, and why each distractor is wrong. Q numbers match the questions above.
+
+**Q1. Answer: B.** Project = "temporary, unique result" (PMI definition). A is operations; C is a program; D is operations/improvement.
+*Takeaway:* memorize PMI's exact definition.
+
+**Q2. Answer: D.** PMs spend ~90% of time communicating. A/B/C under-state.
+*Takeaway:* ~90%.
+
+**Q3. Answer: A.** Confronting/Problem-solving is the PMP-default. B/C/D are anti-patterns.
+*Takeaway:* Default = Confronting.
+
+**Q4. Answer: B.** EAC default = BAC / CPI. A multiplies; C is wrong arithmetic; D is the alternative-assumption variant.
+*Takeaway:* Default EAC = BAC/CPI.
+
+**Q5. Answer: B.** Critical Path = longest path. A/C/D are not the definition.
+*Takeaway:* longest path = zero float = shortest possible duration.
+
+**Q6. Answer: B.** SPI > 1 = ahead. A reverses sign; C is cost; D would be SPI = 1.
+*Takeaway:* >1 good.
+
+**Q7. Answer: B.** CV = EV − AC. A is SV; C/D are unrelated.
+*Takeaway:* Cost = AC; Schedule = PV.
+
+**Q8. Answer: A.** EMV = 0.30 × −$100K = −$30K. B reverses sign; C/D are wrong math.
+*Takeaway:* Sign matters.
+
+**Q9. Answer: B.** Insurance = Transfer. A removes scope; C reduces P/I; D takes risk.
+*Takeaway:* Insurance/FFP = Transfer.
+
+**Q10. Answer: B.** Tuckman Storming = role/conflict surfacing. A/C/D are other stages.
+*Takeaway:* Conflicts surface → Storming.
+
+**Q11. Answer: B.** R-R-F-H. A/C/D invented sets.
+*Takeaway:* Memorize.
+
+**Q12. Answer: B.** No extra cost → Fast-track. A costs more; C is crashing; D is anti-PMP.
+*Takeaway:* No cost = Fast-track.
+
+**Q13. Answer: A.** PERT = (O+4M+P)/6. B is simple average; C/D mis-state.
+*Takeaway:* 4 weighting on M.
+
+**Q14. Answer: B.** Fishbone = root cause. A/C/D for other domains.
+*Takeaway:* Root cause → Fishbone.
+
+**Q15. Answer: C.** High/High = Manage Closely. A monitors; B is low-power-high-interest; D is high-power-low-interest.
+*Takeaway:* High/High = manage closely.
+
+**Q16. Answer: C.** RFQ for price-defined commodities. A is info; B is unclear-solution; D is sealed bids.
+*Takeaway:* Defined scope + price → RFQ.
+
+**Q17. Answer: B.** 8(7)/2 = 28. A is just n; C is 7×n; D is n².
+*Takeaway:* n(n−1)/2.
+
+**Q18. Answer: B.** Agile triangle: scope flexes when time/cost fixed.
+*Takeaway:* fix time/cost → flex scope.
+
+**Q19. Answer: B.** NPV: higher better. A payback lower better; C negative CPI bad; D EAC>BAC bad.
+*Takeaway:* NPV ↑ wins.
+
+**Q20. Answer: B.** Sponsor signs the Charter. A/C/D not the formal signatory.
+*Takeaway:* Charter → Sponsor.
+
+**Q21. Answer: B.** CPI = 0.9 → $0.90 earned/$1.00 spent → over budget. A is schedule; C reverses sign; D unrelated.
+*Takeaway:* CPI < 1 = over budget.
+
+**Q22. Answer: B.** Theory Y = self-motivated. A/C/D are Theory X.
+*Takeaway:* X = control; Y = trust.
+
+**Q23. Answer: A.** 5 Scrum events: Sprint + Planning + Daily + Review + Retro. B/C/D mis-list.
+*Takeaway:* Sprint itself counts.
+
+**Q24. Answer: C.** DoD created by Developers (or org). A/B/D mis-attribute.
+*Takeaway:* DoD = Dev-owned.
+
+**Q25. Answer: B.** Compliance gap → Stop, document, address, inform. A/C/D evade.
+*Takeaway:* Don't continue silently.
+
+**Q26. Answer: C.** ADKAR = change adoption. A/B/D for other domains.
+*Takeaway:* ADKAR = OCM.
+
+**Q27. Answer: C.** Mid-project scope: Analyze impact → CCB. A/B/D skip analysis.
+*Takeaway:* Always analyze first.
+
+**Q28. Answer: A.** CPFF = Cost Plus Fixed Fee. B/C/D invented.
+*Takeaway:* Memorize.
+
+**Q29. Answer: B.** Sprint Review = team + stakeholders. A too narrow; C drops devs; D drops stakeholders.
+*Takeaway:* Review is the stakeholder demo.
+
+**Q30. Answer: A.** DMAIC = Define, Measure, Analyze, Improve, Control. B/C/D invented.
+*Takeaway:* Memorize DMAIC.
+
+**Q31. Answer: B.** Cost baseline = budget + Contingency (not Mgmt Reserve). A/C/D mis-include.
+*Takeaway:* Mgmt Reserve outside baseline.
+
+**Q32. Answer: A.** ETC = EAC − AC = $200K − $80K = $120K. B/C/D wrong arithmetic.
+*Takeaway:* ETC = forecast remaining cost.
+
+**Q33. Answer: B.** Functional org = low PM authority. A/C/D mis-state.
+*Takeaway:* Functional → low PM authority.
+
+**Q34. Answer: A.** Agile = Story Points. B/C/D are time units.
+*Takeaway:* Story Points = relative.
+
+**Q35. Answer: B.** Monte Carlo = quantitative risk. A/C/D unrelated.
+*Takeaway:* MC = quantitative.
+
+**Q36. Answer: B.** Rule of 7 = 7 points one side = out of control. A/C/D mis-state.
+*Takeaway:* Memorize.
+
+**Q37. Answer: B.** Lead Time = request → delivery. A/C/D unrelated.
+*Takeaway:* Lead includes wait.
+
+**Q38. Answer: C.** People = 42%. A/B/D mis-state.
+*Takeaway:* People 42% / Process 50% / Business 8%.
+
+**Q39. Answer: C.** New team → Teach first. A/B/D are later modes.
+*Takeaway:* New team = Teach.
+
+**Q40. Answer: B.** Velocity for same-team forecasting only. A/C/D = anti-patterns.
+*Takeaway:* Don't compare across teams.
+
+**Q41. Answer: B.** Critical path = zero float. A/C/D not critical path.
+*Takeaway:* Memorize.
+
+**Q42. Answer: A.** Unaware level. B/C/D require awareness.
+*Takeaway:* Don't know → Unaware.
+
+**Q43. Answer: A.** Approved CR → plan + baseline updates. B skips updates; C/D under-state.
+*Takeaway:* Update plan + baselines.
+
+**Q44. Answer: B.** Payback: lower = better. A/C/D higher better.
+*Takeaway:* Payback alone is "lower better."
+
+**Q45. Answer: B.** Recurring defect root cause → Fishbone. A/C/D do other things.
+*Takeaway:* Root cause = Fishbone.
+
+**Q46. Answer: B.** Sprint Goal = collaborative in Planning. A/C/D mis-attribute.
+*Takeaway:* Planning produces the goal.
+
+**Q47. Answer: B.** Salience = Power/Legitimacy/Urgency. A/C/D mis-state.
+*Takeaway:* P-L-U.
+
+**Q48. Answer: A.** TIM-WOODS list. B/C/D not the Lean 8 wastes.
+*Takeaway:* T-I-M-W-O-O-D-S.
+
+**Q49. Answer: B.** Charter = project + PM authority. A/C/D under-state.
+*Takeaway:* Both.
+
+**Q50. Answer: B.** Higher CPI = better cost performance. A reverses; C is schedule; D unrelated.
+*Takeaway:* CPI ↑ good.
+
+**Q51. Answer: B.** PMBOK 7 = 8 Performance Domains + 12 Principles. A is PMBOK 6.
+*Takeaway:* Memorize PMBOK 7 structure.
+
+**Q52. Answer: B.** Enhance = increase opportunity probability/impact. A makes certain; C partners; D no action.
+*Takeaway:* Enhance = increase.
+
+**Q53. Answer: A.** EAC = BAC/CPI = $500K/1.2 = $416,667. B/C/D wrong arithmetic.
+*Takeaway:* CPI>1 → EAC < BAC.
+
+**Q54. Answer: B.** SEAM = Current vs Desired. A/C/D mis-state.
+*Takeaway:* C vs D.
+
+**Q55. Answer: B.** Uncertain scope = CR. A/C/D require defined scope.
+*Takeaway:* Uncertain → CR.
+
+**Q56. Answer: B.** Storming → Coach. A/C/D anti-patterns.
+*Takeaway:* Coach through Storming.
+
+**Q57. Answer: B.** Refinement = ongoing. A/C/D mis-state.
+*Takeaway:* Continuous activity.
+
+**Q58. Answer: B.** Pareto = 80/20. A/C/D unrelated.
+*Takeaway:* Memorize.
+
+**Q59. Answer: A.** PERT SD = (P−O)/6. B/C/D wrong.
+*Takeaway:* (P−O)/6.
+
+**Q60. Answer: B.** Threshold breached → escalate/stronger response. A/C/D fail to act.
+*Takeaway:* Don't ignore breaches.
+
+**Q61. Answer: B.** PMP-2021 = Serve and Lead. A old-school; C/D under-state.
+*Takeaway:* Servant leadership.
+
+**Q62. Answer: A.** U-R-N-S-L. B/C/D invented.
+*Takeaway:* Memorize.
+
+**Q63. Answer: C.** Same product = shared PO + Backlog + Goal + DoD. A/B too narrow; D too narrow.
+*Takeaway:* Multi-team Scrum same product → 4 shared.
+
+**Q64. Answer: B.** Plan Quality output: QM Plan + Metrics. A/C/D from other processes.
+*Takeaway:* Plan produces plans.
+
+**Q65. Answer: B.** New risk → register, analyze, plan. A/C/D mis-handle.
+*Takeaway:* Always document and analyze.
+
+**Q66. Answer: B.** CFD bottleneck = widening band. A stable; C low volume; D not a bottleneck.
+*Takeaway:* Width = bottleneck.
+
+**Q67. Answer: B.** Theory X = lazy, need control. A/C/D Theory Y.
+*Takeaway:* X = control.
+
+**Q68. Answer: B.** SV = -$10K = behind schedule by $10K in value. A reverses; C unrelated; D mixes.
+*Takeaway:* SV in $ value.
+
+**Q69. Answer: B.** T&M = small/short. A/C/D mis-fit.
+*Takeaway:* T&M = small/short.
+
+**Q70. Answer: C.** Sprint Backlog = Developers. A/B/D mis-attribute.
+*Takeaway:* Dev-owned.
+
+**Q71. Answer: B.** Risk ID = continuous. A/C/D under-state.
+*Takeaway:* Continuous.
+
+**Q72. Answer: B.** ~85% system. A/C/D under-include.
+*Takeaway:* Memorize.
+
+**Q73. Answer: B.** Velocity = SP/Sprint. A/C/D mis-state.
+*Takeaway:* Velocity in SP.
+
+**Q74. Answer: B.** Missed goals → coach inspect/adapt. A/C/D mis-handle.
+*Takeaway:* Coach > replace.
+
+**Q75. Answer: B.** DoR NOT in Scrum Guide (optional). A/C/D mis-state.
+*Takeaway:* DoR optional.
+
+**Q76. Answer: B.** Charter = project. A is Sprint Goal; C is contract; D is risk.
+*Takeaway:* Charter = project authorization.
+
+**Q77. Answer: B.** 230 min. A/C/D mis-state.
+*Takeaway:* Memorize.
+
+**Q78. Answer: B.** I&A appears in multiple Scrum events. A/C/D under-state.
+*Takeaway:* Distributed across events.
+
+**Q79. Answer: B.** Decision Tree = quantitative. A wrong category; C/D wrong domain.
+*Takeaway:* DT = quantitative.
+
+**Q80. Answer: B.** SM coaches: Retro = team only. A/C/D mis-handle.
+*Takeaway:* Retro = team.
+
+**Q81. Answer: A.** CPI ≥ 1.0 = cost-efficient. B reverses; C is schedule; D unrelated.
+*Takeaway:* CPI ≥ 1 good.
+
+**Q82. Answer: B.** F-C-C-R-O. A/C/D invented.
+*Takeaway:* Memorize.
+
+**Q83. Answer: B.** Members + certificants. A/C/D mis-scope.
+*Takeaway:* All PMI.
+
+**Q84. Answer: B.** ROI = Return on Investment (%). A/C/D mis-state.
+*Takeaway:* ROI is a %.
+
+**Q85. Answer: B.** Scope creep = uncontrolled additions. A/C/D mis-state.
+*Takeaway:* Uncontrolled = creep.
+
+**Q86. Answer: C.** Transition = Closing. A/B/D wrong process group.
+*Takeaway:* Transition → Closing.
+
+**Q87. Answer: B.** Theory Y = empower + trust. A/C/D Theory X.
+*Takeaway:* Y = empower.
+
+**Q88. Answer: B.** Cost of Conformance = Prevention + Appraisal. A/C/D are Non-Conformance.
+*Takeaway:* P + A = Conformance.
+
+**Q89. Answer: B.** Tailor engagement to level/preference. A/C/D mis-handle.
+*Takeaway:* Tailoring wins.
+
+**Q90. Answer: B.** Project Management Plan = master plan + baselines. A is authorization; C/D are components.
+*Takeaway:* PMP = master plan + baselines.

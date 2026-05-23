@@ -7,7 +7,7 @@
 
 ## Questions
 
-### Q1. The BEST definition of "supply management" is:
+### Q1. The BEST definition of "supply management" is: *(Remember)*
 A. Issuing purchase orders to vendors
 B. Acquiring goods and services and managing the supply base to deliver value
 C. Negotiating the lowest unit price on every part
@@ -15,7 +15,7 @@ D. Receiving and inspecting incoming materials
 
 ---
 
-### Q2. Which is the MOST strategic activity?
+### Q2. Which is the MOST strategic activity? *(Understand)*
 A. Expediting a late shipment
 B. Issuing a PO for office supplies
 C. Designing a multi-year category strategy
@@ -23,7 +23,7 @@ D. Resolving an invoice dispute
 
 ---
 
-### Q3. A company pursues a differentiation strategy based on innovation. The CFO insists on running reverse auctions for every category. The MOST appropriate response is:
+### Q3. A company pursues a differentiation strategy based on innovation. The CFO insists on running reverse auctions for every category. The MOST appropriate response is: *(Apply)*
 A. Run the auctions; price savings are always good
 B. Push back; reverse auctions on innovation-critical categories destroy supplier collaboration and contradict corporate strategy
 C. Run them only on goods, not services
@@ -31,7 +31,7 @@ D. Defer to the CFO without comment
 
 ---
 
-### Q4. In Porter's Five Forces, which scenario indicates HIGH supplier bargaining power?
+### Q4. In Porter's Five Forces, which scenario indicates HIGH supplier bargaining power? *(Apply)*
 A. Many suppliers, low switching costs, and substitutes available
 B. One global supplier with no substitutes and high switching costs
 C. Buyers are concentrated and standardized
@@ -39,7 +39,7 @@ D. New entrants are flooding the market
 
 ---
 
-### Q5. Porter classified procurement as which type of activity in the value chain?
+### Q5. Porter classified procurement as which type of activity in the value chain? *(Remember)*
 A. Primary activity
 B. Support activity
 C. Logistics activity
@@ -47,7 +47,7 @@ D. Marketing activity
 
 ---
 
-### Q6. A company has highly diverse business units in unrelated industries. Which supply-management organizational model is MOST appropriate?
+### Q6. A company has highly diverse business units in unrelated industries. Which supply-management organizational model is MOST appropriate? *(Apply)*
 A. Fully centralized
 B. Fully decentralized or hybrid with strong local autonomy
 C. Single Center of Excellence with no buyers
@@ -55,7 +55,7 @@ D. Outsource all procurement
 
 ---
 
-### Q7. A Center of Excellence (CoE) primarily:
+### Q7. A Center of Excellence (CoE) primarily: *(Understand)*
 A. Owns all spend across the organization
 B. Provides methodology, tools, and analytics that enable other teams
 C. Replaces all category managers
@@ -63,7 +63,7 @@ D. Handles only IT category spend
 
 ---
 
-### Q8. A supply team only measures price variance against last year and has no spend analytics. What maturity stage are they MOST likely in?
+### Q8. A supply team only measures price variance against last year and has no spend analytics. What maturity stage are they MOST likely in? *(Analyze)*
 A. Stage 1–2 (reactive / mechanical)
 B. Stage 3 (proactive)
 C. Stage 4 (strategic)
@@ -71,7 +71,7 @@ D. Stage 5 (world class)
 
 ---
 
-### Q9. Which is NOT one of the classic "Five Rights" of supply management?
+### Q9. Which is NOT one of the classic "Five Rights" of supply management? *(Remember)*
 A. Right quality
 B. Right quantity
 C. Right relationship
@@ -79,7 +79,7 @@ D. Right time
 
 ---
 
-### Q10. A manufacturer is debating whether to make or buy a proprietary component containing trade secrets. The STRONGEST factor pushing toward "make" is:
+### Q10. A manufacturer is debating whether to make or buy a proprietary component containing trade secrets. The STRONGEST factor pushing toward "make" is: *(Apply)*
 A. Lower direct labor cost in-house
 B. Strategic importance and IP protection
 C. Existing supplier capacity
@@ -87,7 +87,7 @@ D. Smaller capital expenditure
 
 ---
 
-### Q11. Modern supply management's view of suppliers is BEST described as:
+### Q11. Modern supply management's view of suppliers is BEST described as: *(Understand)*
 A. Adversaries to be squeezed for the lowest price
 B. Interchangeable order-takers
 C. Partners whose performance and innovation drive joint value
@@ -95,7 +95,7 @@ D. A risk to be minimized through legal contracts only
 
 ---
 
-### Q12. Which stakeholder is MOST likely to care about supplier ethical conduct and brand reputation?
+### Q12. Which stakeholder is MOST likely to care about supplier ethical conduct and brand reputation? *(Understand)*
 A. CFO
 B. HR / Marketing / Board
 C. Receiving dock
@@ -103,7 +103,7 @@ D. Accounts payable
 
 ---
 
-### Q13. In a hybrid (center-led) model, corporate supply typically owns:
+### Q13. In a hybrid (center-led) model, corporate supply typically owns: *(Remember)*
 A. All transactional POs across the organization
 B. Strategic categories, policy, and standards; local teams handle tactical/local spend
 C. Nothing — every BU operates independently
@@ -111,7 +111,7 @@ D. Only the supplier scorecards
 
 ---
 
-### Q14. Threat of substitutes (Porter) means:
+### Q14. Threat of substitutes (Porter) means: *(Understand)*
 A. Competitors who copy your product
 B. Customers swapping to a different product entirely (e.g., Zoom replacing flights)
 C. New suppliers entering the market
@@ -119,7 +119,7 @@ D. Internal customers bypassing supply mgmt
 
 ---
 
-### Q15. Which is a sign of a Stage 5 (world-class) supply organization?
+### Q15. Which is a sign of a Stage 5 (world-class) supply organization? *(Analyze)*
 A. The team owns all expediting
 B. Supplier-enabled innovation contributes to revenue, not just cost savings
 C. Lowest-price-wins is the dominant award criterion
@@ -127,7 +127,7 @@ D. Procurement is buried two levels below operations
 
 ---
 
-### Q16. A senior supply manager is spending 60% of her time expediting late shipments and resolving invoice disputes. The BEST coaching is:
+### Q16. A senior supply manager is spending 60% of her time expediting late shipments and resolving invoice disputes. The BEST coaching is: *(Apply)*
 A. Hire her an assistant
 B. Delegate tactical work and refocus on category strategy, supplier relationships, and risk
 C. Tell her to work weekends
@@ -135,7 +135,7 @@ D. Outsource the entire department
 
 ---
 
-### Q17. A make-or-buy analysis should consider all of the following EXCEPT:
+### Q17. A make-or-buy analysis should consider all of the following EXCEPT: *(Understand)*
 A. Strategic importance of the item
 B. IP and confidentiality risk
 C. Internal capacity and capability
@@ -143,7 +143,7 @@ D. The personal preference of the buyer
 
 ---
 
-### Q18. The Five Forces framework PRIMARILY helps a supply manager:
+### Q18. The Five Forces framework PRIMARILY helps a supply manager: *(Understand)*
 A. Choose an ERP system
 B. Understand the competitive structure of a supply market to inform sourcing strategy
 C. Set inventory turnover targets
@@ -151,7 +151,7 @@ D. Negotiate contract clauses
 
 ---
 
-### Q19. A scenario states: "Marketing demands a new supplier within 48 hours to support a product launch. Supply manager has never used this supplier and no qualification has been done." The MOST appropriate action is:
+### Q19. A scenario states: "Marketing demands a new supplier within 48 hours to support a product launch. Supply manager has never used this supplier and no qualification has been done." The MOST appropriate action is: *(Apply)*
 A. Place the order to keep Marketing happy
 B. Refuse the request and escalate to legal
 C. Engage Marketing, explain the risk, expedite a fast-track qualification, and align on contingency
@@ -159,7 +159,7 @@ D. Tell Marketing to delay the launch
 
 ---
 
-### Q20. In Porter's value chain, which is a PRIMARY activity?
+### Q20. In Porter's value chain, which is a PRIMARY activity? *(Remember)*
 A. Procurement
 B. HR Management
 C. Outbound logistics
@@ -167,7 +167,7 @@ D. Technology development
 
 ---
 
-### Q21. Which of the following is the BEST example of "strategic alignment" between supply and corporate strategy?
+### Q21. Which of the following is the BEST example of "strategic alignment" between supply and corporate strategy? *(Evaluate)*
 A. A cost-leader firm aggressively consolidates spend with the lowest-priced suppliers
 B. A differentiator firm reverse-auctions its R&D-critical suppliers
 C. A niche-focus firm sources from the largest commodity producers
@@ -175,7 +175,7 @@ D. A cost-leader firm enters joint R&D partnerships with multiple small specialt
 
 ---
 
-### Q22. ISM defines supply management to include all of the following EXCEPT:
+### Q22. ISM defines supply management to include all of the following EXCEPT: *(Understand)*
 A. Identifying need and specifications
 B. Sourcing, contracting, and supplier management
 C. Setting customer pricing for the company's products
@@ -183,7 +183,7 @@ D. Risk and ethics oversight of the supply base
 
 ---
 
-### Q23. A new buyer asks: "Why don't we always centralize? Leverage is best, right?" The BEST answer:
+### Q23. A new buyer asks: "Why don't we always centralize? Leverage is best, right?" The BEST answer: *(Evaluate)*
 A. We should — centralized is universally cheapest
 B. Centralization maximizes leverage but can damage responsiveness when business units have very different needs; the optimal model depends on context
 C. Decentralized is always best because it's faster
@@ -191,7 +191,7 @@ D. It depends on what software we use
 
 ---
 
-### Q24. The BEST measure of mature supply management performance is:
+### Q24. The BEST measure of mature supply management performance is: *(Evaluate)*
 A. Number of POs issued per buyer
 B. Price variance vs. budget only
 C. A balanced set of metrics including TCO savings, risk, supplier innovation, and ESG
@@ -199,7 +199,7 @@ D. Headcount in the procurement function
 
 ---
 
-### Q25. Which is the MOST ETHICAL response when an internal customer pressures supply to skip the standard supplier-qualification process for a personal friend's company?
+### Q25. Which is the MOST ETHICAL response when an internal customer pressures supply to skip the standard supplier-qualification process for a personal friend's company? *(Apply)*
 A. Skip the process to maintain the internal relationship
 B. Skip the process but document it in writing
 C. Decline to skip the process; explain the policy and risk; escalate if pressured further
@@ -207,7 +207,7 @@ D. Refer the friend's company to a different department to avoid the conflict
 
 ---
 
-### Q26. A scenario asks the BEST way to move a Stage-2 organization toward Stage-3 maturity. The strongest first step is:
+### Q26. A scenario asks the BEST way to move a Stage-2 organization toward Stage-3 maturity. The strongest first step is: *(Create)*
 A. Cut headcount
 B. Implement spend analysis and category strategies
 C. Adopt blockchain

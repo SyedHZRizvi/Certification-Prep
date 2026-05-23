@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~64 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=7+wastes+lean+TIMWOOD+manufacturing" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="GmVb-qx7uWA" href="https://www.youtube.com/results?search_query=7+wastes+lean+TIMWOOD+manufacturing" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 14 min · The CPIM acronym</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Kanban+sizing+formula+example+lean" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="P8sqBCnFtPI" href="https://www.youtube.com/results?search_query=Kanban+sizing+formula+example+lean" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 12 min · The math</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Takt+time+calculation+lean+manufacturing" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="GiIjNKlGwGI" href="https://www.youtube.com/results?search_query=Takt+time+calculation+lean+manufacturing" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 10 min · Takt vs cycle vs lead time</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=DMAIC+Six+Sigma+5+phases+example" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="W_wqDoExqFM" href="https://www.youtube.com/results?search_query=DMAIC+Six+Sigma+5+phases+example" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -61,7 +61,7 @@
       <span class="vg-duration">⏱ 14 min · Define-Measure-Analyze-Improve-Control</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Control+chart+Statistical+Process+Control+SPC" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="aey2c0VsZNc" href="https://www.youtube.com/results?search_query=Control+chart+Statistical+Process+Control+SPC" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -75,7 +75,7 @@
 ## 📚 Recommended (~38 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Value+stream+mapping+lean+VSM+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="8Zlc3yy6K4s" href="https://www.youtube.com/results?search_query=Value+stream+mapping+lean+VSM+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 16 min · Current state → future state</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=5S+workplace+organization+lean" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="OFk3zbXKHao" href="https://www.youtube.com/results?search_query=5S+workplace+organization+lean" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -93,7 +93,7 @@
       <span class="vg-duration">⏱ 10 min · The 5 S's in order</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=OEE+Overall+Equipment+Effectiveness+TPM" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="5lN_aYJJVdQ" href="https://www.youtube.com/results?search_query=OEE+Overall+Equipment+Effectiveness+TPM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -107,7 +107,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Toyota+Production+System+TPS+history+documentary" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="EcXK-KrTmhk" href="https://www.youtube.com/results?search_query=Toyota+Production+System+TPS+history+documentary" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 45 min · The origin story</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Cp+Cpk+process+capability+example" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="zJS4o2lkGak" href="https://www.youtube.com/results?search_query=Cp+Cpk+process+capability+example" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -125,7 +125,7 @@
       <span class="vg-duration">⏱ 18 min · Math walkthrough</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Deming+PDCA+W+Edwards+Deming+14+points" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="tsF-8u-V4j4" href="https://www.youtube.com/results?search_query=Deming+PDCA+W+Edwards+Deming+14+points" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

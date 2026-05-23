@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~55 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=warehouse+layout+design+U+shape+I+shape" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="xz7GXrxvWFM" href="https://www.youtube.com/results?search_query=warehouse+layout+design+U+shape+I+shape" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 11 min · Visual comparison</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=warehouse+workflow+receiving+to+shipping" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="wlwNksBSHxc" href="https://www.youtube.com/results?search_query=warehouse+workflow+receiving+to+shipping" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 13 min · Receiving to shipping</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AS+RS+automated+storage+retrieval+system" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="FoSKAYcSt0o" href="https://www.youtube.com/results?search_query=AS+RS+automated+storage+retrieval+system" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 10 min · Cranes in action</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AGV+AMR+autonomous+mobile+robot+warehouse" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="ienmTXSGaHw" href="https://www.youtube.com/results?search_query=AGV+AMR+autonomous+mobile+robot+warehouse" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -61,7 +61,7 @@
       <span class="vg-duration">⏱ 9 min · Fleet management</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=warehouse+KPIs+benchmarks+productivity" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="7wlHnj6JUCA" href="https://www.youtube.com/results?search_query=warehouse+KPIs+benchmarks+productivity" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -75,7 +75,7 @@
 ## 📚 Recommended (~40 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=slotting+optimization+warehouse+ABC+golden+zone" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="5Hq-uaDDKL4" href="https://www.youtube.com/results?search_query=slotting+optimization+warehouse+ABC+golden+zone" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 14 min · ABC + golden zone</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=goods+to+person+kiva+autostore+geek+plus" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="iHC9ec591lI" href="https://www.youtube.com/results?search_query=goods+to+person+kiva+autostore+geek+plus" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -93,7 +93,7 @@
       <span class="vg-duration">⏱ 13 min · Robotics tour</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=cold+chain+warehouse+pharma+temperature" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="qBrAE_K8bv0" href="https://www.youtube.com/results?search_query=cold+chain+warehouse+pharma+temperature" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -107,7 +107,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Amazon+robotics+warehouse+fulfillment+tour" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="xogTTbKPB6I" href="https://www.youtube.com/results?search_query=Amazon+robotics+warehouse+fulfillment+tour" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 20 min · Real automation</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=pallet+racking+drive+in+push+back+selective" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="lDwqShk_3K0" href="https://www.youtube.com/results?search_query=pallet+racking+drive+in+push+back+selective" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

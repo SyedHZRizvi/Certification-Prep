@@ -2,6 +2,14 @@
 
 > **Why this module matters:** Backups are boring until you need one. Azure Backup, Azure Site Recovery (ASR), and Azure Migrate together cover protection, DR, and lift-and-shift. The exam tests vault types, retention policies, and "what's the right tool for X" scenarios.
 
+> **Prerequisites for this module.** Before starting, you should be comfortable with:
+> - [Module 3](../Module-03-Storage-Accounts-Blobs/Reading.md): redundancy SKUs (LRS / ZRS / GRS / GZRS) — vault redundancy reuses the same model.
+> - [Module 5](../Module-05-Virtual-Machines/Reading.md): VM, managed disk, and Availability Zone concepts — ASR replicates these.
+> - [Module 7](../Module-07-Virtual-Networks/Reading.md): VNet topology — DR design depends on how you replicate networks (and the gotcha of cross-region IP-address-space planning).
+> - RPO and RTO as concepts — covered briefly in [`02-PMP`](../../02-PMP/) risk-management modules and in [`09-CompTIA-Security-Plus` Module 6](../../09-CompTIA-Security-Plus/Module-06-Security-Program-Management/Reading.md).
+>
+> Backup design is one place where on-prem and cloud admin intuitions both apply — but the *automation* is what Azure changes. Treat this module as a re-mapping of skills you may already have to Azure-native tooling.
+
 ---
 
 ## 🍕 A Story: The Bookstore That Survived a Flood
@@ -282,9 +290,65 @@ You now know:
 
 ---
 
+## 📊 Case Study — A.P. Moller-Maersk and NotPetya (June 2017): The Domain Controller in Ghana
+
+**Situation.** On June 27, 2017, the **NotPetya** wiper malware — disguised as ransomware, actually a destructive cyberweapon attributed by the U.S., U.K., and several other governments to Russia's GRU Sandworm unit — was distributed via a compromised Ukrainian tax-accounting software update (M.E.Doc). It spread internally using stolen NSA exploits (EternalBlue, EternalRomance) and Mimikatz credential extraction. Within hours, NotPetya had encrypted hundreds of thousands of corporate Windows machines globally with no recovery key. **A.P. Moller-Maersk** — operator of about one in seven shipping containers worldwide — was a collateral victim because one office in Odessa, Ukraine, ran M.E.Doc.
+
+By the end of June 27, Maersk's *entire global IT* was offline. ~49,000 laptops, 4,000 servers, 2,500 applications. Containers stopped moving. The world's largest shipping company was reduced to writing destinations on the side of containers with chalk. Estimated direct loss: **$250–$300 million** (Maersk Q3 2017 earnings disclosure; *Wired*, *The Untold Story of NotPetya*, August 2018).
+
+**Decision.** Maersk's recovery hinged on a single, almost-comedic fact: every Active Directory domain controller in Maersk's global estate had been wiped — *except one* in Ghana that happened to have been offline due to a local power outage at the moment NotPetya propagated. That single domain controller had a healthy `ntds.dit` (the AD database). Maersk physically flew the disk image from Accra to Maidenhead, UK (because the network was down and London Heathrow wasn't running), and used it as the seed to rebuild the entire forest.
+
+In parallel, the response team:
+1. Identified surviving backups for ~50% of mission-critical systems (the rest had to be rebuilt from scratch or restored from cold archives).
+2. Re-provisioned ~45,000 endpoints in 10 days — buying laptops in bulk and reimaging at Maersk offices around the clock.
+3. Wrote off ~$300M in revenue and direct costs.
+
+After NotPetya, Maersk publicly committed to (and over 2018–2024 executed) a cloud-first strategy with Azure (announced at Microsoft Inspire 2020). The "Ghana DC" lesson — that *one accidentally-offline-during-the-attack copy* of a critical asset saved the company — became the canonical example for why immutable, isolated, geo-redundant backups matter.
+
+What Maersk would have done differently with current Azure tooling, all of it covered in this module:
+- **Recovery Services Vault with GRS + Cross-Region Restore enabled** so critical workloads are recoverable in a paired region without manual disk-image trafficking.
+- **Immutable vaults + Multi-User Authentication (MUA / Resource Guard)** so an attacker who compromised AD couldn't *also* disable backups. NotPetya specifically targeted backup servers — the Maersk backup admin's credentials were among the first compromised.
+- **Azure Site Recovery** for the core SAP, container-management, and port-system workloads — RPO of seconds, RTO of an hour. Compare to NotPetya's actual RTO of *days* for the lucky workloads and *months* for the rest.
+- **Soft delete on the RSV** set to the maximum (180 days as of 2024) and **WORM-locked** so even an attacker with vault Owner rights cannot reduce the retention window inside the locked period.
+
+**Outcome.** NotPetya's total global damage is now estimated at **>$10 billion** across all victims (Maersk, Merck, FedEx/TNT, Mondelez, Saint-Gobain, the U.K. National Health Service via the related WannaCry, and others). It is, dollar-for-dollar, the most expensive cyberattack in history. Insurance disputes over whether NotPetya was "an act of war" reshaped the cyber-insurance industry (*Merck v. ACE American*, 2022 NJ ruling; *Mondelez v. Zurich*, 2022 IL settlement).
+
+**Lesson for the exam / for practitioners.** Every Azure Backup feature exists because of a lesson from incidents like NotPetya:
+- *Soft delete defaults are 14 days*, but the AZ-104 exam will ask "what's the right setting for a regulated workload" — answer is **the maximum your retention window allows, locked**, because attackers who get vault access will try to *delete* backups first, and you want a guaranteed recovery window.
+- *MUA / Resource Guard requires a second admin's approval* — this is exactly the control NotPetya defeated at Maersk by compromising the lone backup admin.
+- *Cross-Region Restore is free with GRS* — turn it on. The alternative is shipping disks like Maersk did from Ghana.
+- *Test failover is mandatory* — Maersk discovered post-incident that several "backed up" systems weren't actually restorable. Untested DR is wishful thinking, not insurance.
+
+**Discussion (Socratic).**
+- **Q1.** Maersk's saving grace was *an accident* (a power outage in Ghana). The principle of *immutable, isolated, geo-redundant* backups is supposed to remove the dependency on luck. Design the Azure backup architecture that would have made the Ghana DC *unnecessary* — and identify the operational discipline (not just configuration) required to make it actually work.
+- **Q2.** NotPetya was a wiper disguised as ransomware. Most ransomware encrypts and demands payment; NotPetya destroyed data with no recovery option. How does this distinction change your backup strategy? Defend the case that the *backup retention period* matters more for wiper attacks than for true ransomware. (Hint: ransomware victims sometimes pay; wiper victims must restore.)
+- **Q3.** Maersk's recovery took 10 days for endpoints and weeks-to-months for full system restoration. If the same attack happened today against an Azure-native organization with the controls this module describes, what's a realistic RTO? Build the timeline — from "first malicious activity detected" to "core operations resumed" — for a well-architected Azure tenant.
+
+---
+
+> **Where this leads.**
+> - Inside this course: Module 10 covers the Azure Monitor + Sentinel detection layer that would have *alerted* on NotPetya's lateral movement before it took down the backup infrastructure.
+> - Cross-course: [`09-CompTIA-Security-Plus`](../../09-CompTIA-Security-Plus/) Modules 4, 5, 6 cover incident response and recovery planning frameworks; [`02-PMP`](../../02-PMP/) Module 9 covers risk and contingency planning at the project layer.
+> - Practice: PE-2 has 7 questions from this module; Final Mock revisits with cross-domain scenarios (backup + identity + monitoring).
+
+---
+
+## 💬 Discussion — Socratic prompts
+
+1. **GRS vs. ZRS vault redundancy.** ZRS protects against single-AZ failure but not a regional outage. GRS protects against regional outage but isn't AZ-redundant within a region. When is each the right choice? Defend a case where ZRS is actually safer than GRS (hint: think about regulatory data-residency requirements).
+2. **Backup vault vs. Recovery Services vault.** Microsoft now offers both. RSV is the older, broader vault; Backup Vault is the newer, blob/disk/PostgreSQL-specific kind. Why did Microsoft introduce a second vault type rather than expanding RSV? What workload migration path is implied?
+3. **Operational vs. vaulted backups for Blob.** Operational backup keeps data inside the source storage account. Vaulted backup copies it to a separate vault. Argue both: when is operational sufficient, and when does the *air gap* of a vaulted backup justify the duplicate storage cost?
+4. **Test failover cadence.** Microsoft recommends quarterly ASR test failovers. Some regulated industries do them monthly; others annually. Construct the trade-off (cost, operational burden, confidence) and pick a cadence for: (a) a 5-VM SMB workload, (b) a 500-VM financial services workload, (c) a critical hospital EHR. Defend each answer.
+5. **Azure Migrate dependency mapping.** Migrate's *dependency analysis* often reveals undocumented inter-system traffic that breaks lift-and-shift assumptions. Walk through how to read a dependency map and identify the three categories of "surprise" it commonly surfaces. What's the operational discipline before signing off on a migration plan?
+
+---
+
 ## 📚 Further Reading (Optional)
 
 - 📖 [Azure Backup overview](https://learn.microsoft.com/azure/backup/backup-overview)
 - 📖 [Azure Site Recovery overview](https://learn.microsoft.com/azure/site-recovery/site-recovery-overview)
 - 📖 [Azure Migrate overview](https://learn.microsoft.com/azure/migrate/migrate-services-overview)
 - 📖 [Soft delete + MUA](https://learn.microsoft.com/azure/backup/multi-user-authentication-concept)
+- 📖 Andy Greenberg, *Sandworm: A New Era of Cyberwar and the Hunt for the Kremlin's Most Dangerous Hackers* (Doubleday, 2019) — the definitive NotPetya / Maersk narrative.
+- 📖 *Wired*, *The Untold Story of NotPetya* (August 2018) — Andy Greenberg's long-form piece, the "Ghana DC" source.
+- 📖 NIST CSF 2.0 (February 2024) — *Recover* function maps to the controls in this module.

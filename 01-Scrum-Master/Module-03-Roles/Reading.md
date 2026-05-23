@@ -284,3 +284,69 @@ You now know:
 2. ✏️ [Quiz.md](./Quiz.md)
 3. 📋 [Cheat-Sheet.md](./Cheat-Sheet.md)
 4. ➡️ [Module 4: The 5 Events](../Module-04-Events/Reading.md)
+
+---
+
+> **Prerequisites for this module.** Before starting, you should be comfortable with:
+> - The Agile Manifesto (especially Value 1 and Principle 5 — see [Module 1](../Module-01-Agile-Mindset/Reading.md))
+> - The Scrum framework on one page — the 1-team / 5-events / 3-artifacts picture from [Module 2](../Module-02-Scrum-Framework/Reading.md)
+> - Why the 2020 Scrum Guide replaced "roles" with "accountabilities" (Module 2)
+>
+> Roles are where most exam points are scored. Re-read Module 2's framework diagram before this module so you can map each accountability to the artifact/event it owns.
+
+---
+
+## 📊 Case Study — ING Netherlands: 350 Squads, 13 Tribes (2015 transformation)
+
+**Situation.** In mid-2014, ING Netherlands (the retail bank arm of ING Group) faced a textbook crisis: customer expectations were shifting toward digital-native banking (mobile-first, instant transfers, real-time KYC), but ING's IT was structured into 17 hierarchical, function-aligned departments with quarterly release cycles. The CIO and HR head jointly proposed dissolving the existing IT/Product/Marketing org structures entirely and rebuilding around the Spotify model adapted for a regulated bank.
+
+**Decision.** Between January and June 2015, ING Netherlands restructured **~3,500 IT and product staff** into **350 multi-disciplinary Squads** (8–9 people each, each with a PO and a Scrum Master accountability) grouped into **13 Tribes** of ~150 people each, with Chapter Leads providing cross-squad functional discipline (e.g., a "data-engineering chapter" or a "compliance chapter"). Every employee re-applied for a job inside the new structure — only ~2,500 were hired back, with attrition shaped by the org change itself. ING built a **dual career ladder**: people could progress as Chapter members (deep skill mastery) or as Tribe/Squad leads (broader product accountability) without forcing every IC into management.
+
+**Outcome.** ING reported (McKinsey 2017 case write-up, *"ING's agile transformation"*): time-to-market dropped from quarterly to bi-weekly release for most products; employee Net Promoter Score rose ~30 points in the first 18 months; the IT operating cost of the Netherlands business dropped ~30% over the 2015–2018 period. However, internal accounts (including a 2019 University of Tilburg case study) noted that ~10% of the squads were "Scrum in name only" — no clear PO authority, fluid sprint boundaries, and Chapter Leads de facto operating as old-school managers. ING-Belgium subsequently adopted a *modified* version of the model (with fewer squads and stronger central PO governance) after observing both the wins and the dilution.
+
+**Lesson for the exam / for practitioners.** The dual-ladder structure is the takeaway — and it matters for PSM I role questions. ING built it precisely because Scrum says *no one manages the Scrum Team*; but a 3,500-person bank still needs HR career paths. The Chapter Lead role was *not* a Scrum Master, *not* a Product Owner, and *not* a manager-in-disguise — they led functional skill development (think "head of front-end engineering practice") while having no work-assignment authority over individual squad members. When the exam asks "Can the Scrum Master also be the line manager?" — ING's answer (and the right exam answer) is **no**: separate the work-assignment authority from the skill-development authority.
+
+**Discussion (Socratic).**
+- Q1: ING required every employee to re-apply for a job. What's the strongest argument that this was *necessary* for the transformation to work? What's the strongest argument that it violated the Manifesto's value of "Individuals and interactions"?
+- Q2: ~10% of ING's squads drifted into "Scrum in name only." Of the three accountabilities (PO, SM, Developers), which one's *absence* is most likely to be the root cause of that drift? Cite the Scrum Guide.
+- Q3: Why did ING create the Chapter Lead role instead of just letting squads be fully autonomous? What's the trade-off they accepted, and what would the Spotify model purists have done differently?
+
+---
+
+> **Where this leads.**
+> - Inside this course: [Module 4 — Events](../Module-04-Events/Reading.md) shows how each accountability participates in each event (e.g., who runs the Daily Scrum, who attends the Retrospective). [Module 7 — Servant Leadership](../Module-07-Servant-Leadership/Reading.md) deepens the Scrum Master behavior model (the 5 stances). [Module 8 — Scaling](../Module-08-Scaling/Reading.md) revisits ING's structure under the Nexus and LeSS lenses.
+> - Cross-course: `02-PMP` Module 5 (Stakeholders and Communication) covers stakeholder identification and engagement frameworks — useful counterpart since stakeholders in Scrum are NOT team members.
+> - Practice: ~10 of the 40 Practice-Exam-1 questions, and ~8 of the 40 Practice-Exam-2 questions, test role boundaries. Role questions are *the* most reliable source of exam points.
+
+---
+
+## 💬 Discussion — Socratic prompts
+
+1. **The proxy PO problem.** A team you coach has a PO who "passes everything to the steering committee for sign-off." Walk through how you would coach this PO over four Sprints — what specifically would you do in each Sprint? At what point would you escalate to the org, and what would you say?
+2. **Cross-functional team in a specialist world.** Your team includes a single security specialist whose skill is required to ship any feature. The org claims the team is "cross-functional" because the specialist is on it. Defend or attack that claim. What's the strongest counter? (Hint: read the Scrum Guide's definition of "cross-functional" carefully.)
+3. **PO + Developer combined.** The Scrum Guide allows the same person to be PO and a Developer. Construct the strongest argument that this is a *good* idea for a 4-person startup AND the strongest argument that it's a *bad* idea for a 9-person corporate team. What changes between the two contexts?
+4. **ING's Chapter Lead role.** ING built the Chapter Lead role to give functional career growth without violating Scrum's "no one manages the team" rule. Is the Chapter Lead role compatible with the Scrum Guide? Cite the Guide to defend your position. What's the failure mode if the Chapter Lead drifts into work-assignment behavior?
+5. **One SM, multiple teams.** A common scaling pattern is one SM serving 2–3 teams. What does the SM lose, and what does the SM gain? At what point should the org hire a second SM? Defend your threshold.
+
+---
+
+## 📑 Named-source citations (this module)
+
+| Framework / concept | Originator(s) | Year | Venue / publication |
+|---|---|---|---|
+| Scrum's three accountabilities (PO, SM, Developers) | Sutherland & Schwaber | 2020 (current naming); 1995 (original "roles" framing) | Scrum Guide 2020; OOPSLA '95 paper |
+| "Accountabilities" terminology (replacing "roles") | Sutherland & Schwaber | 2020 | Scrum Guide 2020 |
+| Cross-functional team concept | Katzenbach & Smith | 1993 | *The Wisdom of Teams* (Harvard Business School Press) |
+| Self-managing teams (organizational research) | Hackman | 1986, 2002 | "The Psychology of Self-Management in Organizations" (American Psychological Association, 1986); *Leading Teams* (HBS Press, 2002) |
+| Servant leadership (lineage) | Greenleaf | 1970 (essay), 1977 (book) | *"The Servant as Leader"* essay (Center for Applied Studies, 1970); *Servant Leadership: A Journey into the Nature of Legitimate Power and Greatness* (Paulist Press, 1977) |
+| "True leader who serves" rephrasing | Sutherland & Schwaber | 2020 | Scrum Guide 2020 |
+| Stakeholder management | Freeman | 1984 | *Strategic Management: A Stakeholder Approach* (Pitman) |
+| Product Owner role definition | Schwaber | 2002 | *Agile Software Development with Scrum* (Schwaber & Beedle, Prentice Hall) |
+| ING Netherlands case | McKinsey | 2017 | *"ING's agile transformation"*, McKinsey Quarterly, January 2017 |
+| ING follow-up case | University of Tilburg | 2019 | Tilburg School of Economics and Management case series |
+| Type X / Y / Z patterns (referenced briefly) | Sutherland | 2014 | *Scrum: The Art of Doing Twice the Work in Half the Time* (Crown Business) |
+| Toyota's hoshin kanri (servant-leadership lineage referenced in Module 7) | Akao | 1991 | *Hoshin Kanri: Policy Deployment for Successful TQM* (Productivity Press) |
+| RACI matrix (counter-example — *not* in Scrum) | Smith & Erwin (often cited); originated in PMI symposia | 1981; codified in PMBOK 4th ed (2008) | *Project Management Institute Symposium* |
+| *Coaching Agile Teams* (definitive SM behavior text) | Adkins | 2010 | Addison-Wesley Professional |
+
+**Verification note.** Greenleaf's *Servant as Leader* essay is the canonical citation for servant leadership; the 1970 essay predates Greenleaf's 1977 book by seven years and is the more academically cited source. ING transformation numbers are from McKinsey's January 2017 public case write-up. The "Type X/Y/Z patterns" framing of teams is from Sutherland's 2014 book, which itself draws on Takeuchi & Nonaka's 1986 HBR article *"The New New Product Development Game"* — the paper that gave Scrum its name.

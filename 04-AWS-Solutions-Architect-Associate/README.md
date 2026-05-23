@@ -139,6 +139,18 @@ Week 4: Flashcards + Final Mock + REAL EXAM
 
 ---
 
+## 🏗️ Capstone Project
+
+🔗 **[Capstone Project — Larkin Health Analytics migration](./Capstone-Project.md)** — Once you've finished all 10 modules, the capstone is the Cornell/Harvard/Stanford-grade synthesis exercise: a 7-deliverable migration design for a Series-C healthcare SaaS (~$2.8M budget, 9-month deadline, HIPAA + GDPR + SOC 2). Rubric scored out of 100. This is the difference between "I passed SAA" and "I could lead this at a real company on Monday."
+
+---
+
+## 📚 Recommended Readings
+
+🔗 **[Recommended Readings — full bibliography](./Recommended-Readings.md)** — 65+ curated sources: canonical textbooks (Kleppmann's *DDIA*, the Sybex SAA study guide, *The Phoenix Project*, the Google SRE Book), seminal academic papers (CAP, Paxos, Dynamo, Aurora SIGMOD), the AWS Builders' Library essays, re:Invent talks 2014–2024, industry blogs (Quinn, DeBrie, Cockcroft), and three free academic courses (MIT 6.824, Stanford CS245, CMU 15-721). Sequenced by where in the course to engage with each.
+
+---
+
 ## 🎬 Start Here
 
 👉 [**Module 1: Foundations & Well-Architected**](./Module-01-Foundations-Well-Architected/Reading.md)

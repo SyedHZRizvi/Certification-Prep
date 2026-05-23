@@ -1,12 +1,16 @@
 # ✏️ Module 8 Quiz: Security Operations
 
 > **Instructions:** 28 questions. Aim for 23/28. This is the biggest domain — drill these.
+>
+> Every question is tagged with its **Bloom's taxonomy level**.
+>
+> **Bloom distribution (this quiz):** Remember 7 (25%) · Understand 7 (25%) · Apply 7 (25%) · Analyze/Evaluate 6 (21%) · Create 1 (4%).
 
 ---
 
 ## Questions
 
-### Q1. A SIEM primarily provides:
+### Q1. A SIEM primarily provides: *(Remember)*
 A. Endpoint malware quarantine
 B. Log aggregation, correlation, and alerting
 C. Firewall rule management
@@ -14,7 +18,7 @@ D. Patch deployment
 
 ---
 
-### Q2. A SOAR adds what to a SIEM-based SOC?
+### Q2. A SOAR adds what to a SIEM-based SOC? *(Understand)*
 A. More log storage
 B. Orchestration and automated response via playbooks
 C. Replaces the firewall
@@ -22,7 +26,7 @@ D. Encryption of logs
 
 ---
 
-### Q3. Which is the FIRST phase of the NIST IR lifecycle?
+### Q3. Which is the FIRST phase of the NIST IR lifecycle? *(Remember)*
 A. Detection & Analysis
 B. Containment
 C. Preparation
@@ -30,7 +34,7 @@ D. Lessons Learned
 
 ---
 
-### Q4. The CORRECT NIST IR phase order is:
+### Q4. The CORRECT NIST IR phase order is: *(Apply)*
 A. Prep → Detect → Contain → Eradicate → Recover → Lessons
 B. Detect → Prep → Eradicate → Contain → Recover → Lessons
 C. Prep → Eradicate → Detect → Recover → Contain → Lessons
@@ -38,7 +42,7 @@ D. Lessons → Prep → Detect → Contain → Recover → Eradicate
 
 ---
 
-### Q5. According to the order of volatility, you should capture FIRST:
+### Q5. According to the order of volatility, you should capture FIRST: *(Remember)*
 A. Hard disk image
 B. RAM (volatile memory) and running process state
 C. Email logs
@@ -46,7 +50,7 @@ D. Backup tapes
 
 ---
 
-### Q6. Chain of custody documentation begins:
+### Q6. Chain of custody documentation begins: *(Understand)*
 A. After litigation is filed
 B. The moment evidence is touched or seized
 C. Only for criminal cases
@@ -54,7 +58,7 @@ D. After the incident is resolved
 
 ---
 
-### Q7. A "write blocker" is used to:
+### Q7. A "write blocker" is used to: *(Apply)*
 A. Prevent forensic image edits
 B. Ensure the evidence drive cannot be modified during acquisition
 C. Block writes from a firewall
@@ -62,7 +66,7 @@ D. Disable SSDs
 
 ---
 
-### Q8. Forensic analysis should always be performed on:
+### Q8. Forensic analysis should always be performed on: *(Analyze)*
 A. The original drive
 B. A working copy of a hashed forensic image
 C. The cloud backup
@@ -70,7 +74,7 @@ D. The metadata only
 
 ---
 
-### Q9. SSDs CANNOT be securely sanitized via:
+### Q9. SSDs CANNOT be securely sanitized via: *(Apply)*
 A. Crypto-erase
 B. Physical destruction
 C. Degaussing
@@ -78,7 +82,7 @@ D. Vendor secure-erase command
 
 ---
 
-### Q10. The CVSS score ranges from:
+### Q10. The CVSS score ranges from: *(Remember)*
 A. 0 to 5
 B. 0 to 10
 C. 1 to 100
@@ -86,7 +90,7 @@ D. -10 to +10
 
 ---
 
-### Q11. EPSS provides:
+### Q11. EPSS provides: *(Remember)*
 A. A category name (CWE)
 B. Probability a vuln will be exploited in the wild
 C. A vendor's patch status
@@ -94,7 +98,7 @@ D. The IR phase to take
 
 ---
 
-### Q12. CISA's KEV catalog lists:
+### Q12. CISA's KEV catalog lists: *(Remember)*
 A. All known CVEs
 B. Vulnerabilities known to be actively exploited
 C. Vendor advisories
@@ -102,7 +106,7 @@ D. Encryption deprecations
 
 ---
 
-### Q13. A credentialed vulnerability scan differs from non-credentialed because credentialed scans:
+### Q13. A credentialed vulnerability scan differs from non-credentialed because credentialed scans: *(Apply)*
 A. Are illegal without consent
 B. Log in to see actual installed packages and configs
 C. Use only public IPs
@@ -110,7 +114,7 @@ D. Run faster
 
 ---
 
-### Q14. A "tabletop exercise" is:
+### Q14. A "tabletop exercise" is: *(Understand)*
 A. A live failover to the DR site
 B. A discussion-based walkthrough of an incident scenario
 C. A red-team penetration test
@@ -118,7 +122,7 @@ D. An automated SOAR playbook
 
 ---
 
-### Q15. A "parallel test" of disaster recovery means:
+### Q15. A "parallel test" of disaster recovery means: *(Understand)*
 A. Two teams run the same incident
 B. Failover to the DR site without taking prod down
 C. Two ISPs are used at once
@@ -126,7 +130,7 @@ D. Two firewalls evaluate rules
 
 ---
 
-### Q16. NetFlow, sFlow, and IPFIX share what trait?
+### Q16. NetFlow, sFlow, and IPFIX share what trait? *(Understand)*
 A. They capture full packet payloads
 B. They are flow-data formats showing connection metadata
 C. They are encryption protocols
@@ -134,7 +138,7 @@ D. They are vulnerability scanners
 
 ---
 
-### Q17. PCAP files are LARGER than flow data because:
+### Q17. PCAP files are LARGER than flow data because: *(Understand)*
 A. They include payload (full packet contents)
 B. They have more metadata
 C. They are uncompressed text
@@ -142,7 +146,7 @@ D. They include encryption overhead
 
 ---
 
-### Q18. Threat hunting differs from reactive IR by being:
+### Q18. Threat hunting differs from reactive IR by being: *(Apply)*
 A. Faster
 B. Proactive — searches for adversaries that automated detection missed
 C. Performed by Tier 1 analysts only
@@ -150,7 +154,7 @@ D. Compliance-driven
 
 ---
 
-### Q19. Which is the BEST source for IOCs to drive threat hunts in a financial company?
+### Q19. Which is the BEST source for IOCs to drive threat hunts in a financial company? *(Evaluate)*
 A. Public news sites
 B. FS-ISAC + commercial threat intel + internal incidents
 C. Random tweets
@@ -158,7 +162,7 @@ D. Vendor marketing webinars
 
 ---
 
-### Q20. After containing a malware infection, the next IR phase is:
+### Q20. After containing a malware infection, the next IR phase is: *(Apply)*
 A. Lessons Learned
 B. Eradication
 C. Detection
@@ -166,7 +170,7 @@ D. Preparation
 
 ---
 
-### Q21. A SOC analyst should isolate a compromised endpoint via EDR network containment as part of:
+### Q21. A SOC analyst should isolate a compromised endpoint via EDR network containment as part of: *(Apply)*
 A. Eradication
 B. Containment
 C. Recovery
@@ -174,7 +178,7 @@ D. Preparation
 
 ---
 
-### Q22. UEBA stands for:
+### Q22. UEBA stands for: *(Remember)*
 A. User and Entity Behavior Analytics
 B. Universal Endpoint Behavior Algorithm
 C. User Entitlement Based Auditing
@@ -182,7 +186,7 @@ D. Unified Event Broker Architecture
 
 ---
 
-### Q23. A "legal hold" order requires the organization to:
+### Q23. A "legal hold" order requires the organization to: *(Analyze)*
 A. Delete data quickly
 B. Suspend deletion/retention to preserve potentially relevant data
 C. Notify customers
@@ -190,7 +194,7 @@ D. Block external email
 
 ---
 
-### Q24. Sec+ "Lessons Learned" phase outputs include:
+### Q24. Sec+ "Lessons Learned" phase outputs include: *(Understand)*
 A. New detection rules and updated playbooks
 B. The eradication script
 C. The forensic image
@@ -198,7 +202,7 @@ D. The customer notification letter
 
 ---
 
-### Q25 (Scenario). At 3am, a host shows: PowerShell encoded command, outbound DNS to known C2, and lateral SMB to 4 other hosts. The CORRECT first action is:
+### Q25 (Scenario). At 3am, a host shows: PowerShell encoded command, outbound DNS to known C2, and lateral SMB to 4 other hosts. The CORRECT first action is: *(Evaluate)*
 A. Re-image immediately
 B. Capture memory + isolate via EDR; THEN triage scope
 C. Notify the press
@@ -206,7 +210,7 @@ D. Shut down the data center
 
 ---
 
-### Q26 (Scenario). After a phishing campaign you discover hundreds of victim accounts. The MOST efficient way to mass-respond is:
+### Q26 (Scenario). After a phishing campaign you discover hundreds of victim accounts. The MOST efficient way to mass-respond is: *(Analyze)*
 A. Manual ticket per user
 B. SOAR playbook: revoke sessions, force password reset + MFA enrollment, search inboxes for similar messages, block sender
 C. Reboot every server
@@ -214,7 +218,7 @@ D. Disable all email
 
 ---
 
-### Q27 (Scenario). A vendor publishes CVE-2025-1234 (CVSS 9.8). Your CSPM shows 14 vulnerable instances. EPSS is 0.92 and CISA added it to KEV today. Priority?
+### Q27 (Scenario). A vendor publishes CVE-2025-1234 (CVSS 9.8). Your CSPM shows 14 vulnerable instances. EPSS is 0.92 and CISA added it to KEV today. Priority? *(Evaluate)*
 A. Patch next quarter
 B. Patch immediately — highest priority
 C. Accept the risk
@@ -222,7 +226,7 @@ D. Disable EDR to investigate
 
 ---
 
-### Q28 (Scenario). The SOC discovers an active intrusion in progress and wants to preserve evidence WITHOUT alerting the attacker. The BEST approach is:
+### Q28 (Scenario). The SOC discovers an active intrusion in progress and wants to preserve evidence WITHOUT alerting the attacker. The BEST approach is: *(Create)*
 A. Power off all hosts
 B. Notify the attacker
 C. Quietly capture memory + traffic, continue passive observation, prepare a coordinated cutoff

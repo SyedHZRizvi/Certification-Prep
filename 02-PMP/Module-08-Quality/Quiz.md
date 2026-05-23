@@ -176,3 +176,73 @@ DMAIC (Define, Measure, Analyze, Improve, Control) is the Six Sigma improvement 
 Gold plating is adding features beyond requirements without authorization. PMI considers it a quality anti-pattern — it inflates cost/schedule without adding contracted value and can introduce defects.
 
 ➡️ [Cheat Sheet](./Cheat-Sheet.md) → [Module 9](../Module-09-Procurement/Reading.md)
+
+---
+
+## Bloom's-taxonomy tags for the questions above
+
+| Q | Bloom level | Why this level |
+|---|---|---|
+| Q1 | Understand | Distinguish quality from grade. |
+| Q2 | Remember | Recall fishbone–Ishikawa association. |
+| Q3 | Remember | Recall PDCA expansion. |
+| Q4 | Remember | Recall DMAIC expansion. |
+| Q5 | Remember | Recall the 80/20 statement. |
+| Q6 | Remember | Recall Rule of 7. |
+| Q7 | Remember | Recall what conformance covers. |
+| Q8 | Understand | Identify the right quality philosophy. |
+| Q9 | Apply | Apply fishbone selection to recurring defects. |
+| Q10 | Remember | Recall "Quality is free" attribution. |
+| Q11 | Remember | Recall Juran association. |
+| Q12 | Remember | Recall Six Sigma defect target. |
+| Q13 | Understand | Distinguish non-conformance from conformance. |
+| Q14 | Apply | Apply Rule of 7 diagnostic. |
+| Q15 | Understand | Distinguish quality from grade via Corolla example. |
+| Q16 | Remember | Recall scatter-diagram purpose. |
+| Q17 | Remember | Recall Control Quality's role. |
+| Q18 | Apply | Apply COQ prevention-vs-failure logic. |
+| Q19 | Understand | Distinguish tolerances from control limits. |
+| Q20 | Apply | Apply Pareto prioritization. |
+| Q21 | Remember | Recall DMAIC's parent methodology. |
+| Q22 | Understand | Identify gold-plating from description. |
+
+**Bloom distribution for Q1–Q22:** Remember 12 (~55%) · Understand 6 (~27%) · Apply 4 (~18%). The bonus questions below push Analyze/Evaluate/Create higher.
+
+---
+
+## Bonus questions (higher-Bloom)
+
+### Q23. Hubble (from the case study). Two independent verification tests of a critical specification produce conflicting results. The team has time pressure and the primary test (the "more familiar" one) shows pass; the secondary test shows fail. What is the MOST defensible PM action? *(Evaluate)*
+A. Trust the primary test — it's more familiar.
+B. Trust the secondary test only.
+C. Treat the conflict itself as a quality signal: do not allow either test result to override the other; commission an independent third verification with explicit reconciliation criteria; document the conflict in the quality log; communicate to the sponsor that the launch decision depends on reconciliation; cite Ishikawa's fishbone analysis as the root-cause framework; refuse to release until reconciled, invoking the Code of Ethics' Responsibility value if the sponsor pressures release.
+D. Average the two results.
+
+### Q24. A team has $50K/sprint quality budget. Sprint 1: $30K prevention, $20K appraisal. Defects in production: 12. Sprint 2: $10K prevention, $40K appraisal. Defects in production: 28. Citing Crosby (1979) and Feigenbaum (1956), what's the MOST defensible recommendation for Sprint 3? *(Evaluate)*
+A. Move all $50K to appraisal.
+B. Sprint 1's prevention-heavy mix produced 57% fewer escaped defects per dollar; recommend shifting back to ~$30K+ prevention, propose specific prevention investments (root-cause analysis on the 28 defects using Fishbone + Pareto to find the vital few), measure defect-per-sprint trend over 4 sprints before declaring victory; document the COQ reasoning for the sponsor.
+C. Cut quality budget entirely.
+D. Outsource QA.
+
+### Q25. A 5-person SaaS startup considers adopting Six Sigma (Smith/Motorola, 1986). Using PMBOK 7's Tailoring principle, is this defensible? *(Evaluate)*
+A. Always adopt Six Sigma.
+B. Never adopt at small scale.
+C. Adopt selectively: full Six Sigma rigor (DPMO targets, formal Black-Belt certification) is overkill for a 5-person startup; but specific Six Sigma tools (DMAIC for one critical process, Pareto for defect prioritization, basic SPC) can pay off; tailor the framework to the team size and process maturity; document which tools were adopted and why, and revisit when the team exceeds ~30 people.
+D. Use Six Sigma only for marketing copy.
+
+### Q26. A defective-product investigation produces a fishbone with five branches (People, Process, Equipment, Materials, Methods). Pareto analysis shows 78% of defects trace to "Process." Design the next 90-day quality intervention. *(Create)*
+A. Replace all 5 fishbone categories with new ones.
+B. Focus on Process: deconstruct it into a flowchart, identify decision points and handoffs, time-box experiments to test process variants (e.g., A/B test), measure with a control chart, weekly review against an explicit defect-rate target, and consolidate learnings into an updated SOP; preserve the broader fishbone analysis for the residual 22% of defects but resource Process 4× more heavily; cite Pareto and Ishikawa explicitly.
+C. Ignore the Pareto result.
+D. Outsource the process to an external consultant.
+
+### Q27. A regulated medical-device project has a customer-specified tolerance of ±0.05 mm and natural process variation showing control limits at ±0.08 mm. The CFO suggests "loosening the tolerance" to avoid rework. What's the MOST defensible response? *(Evaluate)*
+A. Loosen the tolerance — CFO has authority.
+B. Refuse and shut down the project.
+C. Refuse to loosen the customer-specified tolerance unilaterally: customer tolerances are externally set; the gap between customer tolerance (±0.05) and control limits (±0.08) means the process is not capable; investments must go into process improvement (reduce control limits) or formal customer negotiation to relax tolerance (with documented engineering justification and regulatory approval where applicable); present both paths with COQ analysis; cite ISO 9001 §8.2.2 and the Code of Ethics' Honesty value.
+D. Hide the data.
+
+```
+Bonus answer key
+23.C  24.B  25.C  26.B  27.C
+```

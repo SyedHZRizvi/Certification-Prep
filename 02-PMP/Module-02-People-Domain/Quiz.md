@@ -281,3 +281,81 @@ Servant leadership applies: listen first to understand, then bring the parties t
 ## 📊 Score: 27+/30 🏆 / 22–26 ✅ / <22 🔁
 
 ➡️ [Cheat Sheet](./Cheat-Sheet.md) → [Module 3](../Module-03-Process-Domain/Reading.md)
+
+---
+
+## Bloom's-taxonomy tags for the questions above
+
+| Q | Bloom level | Why this level |
+|---|---|---|
+| Q1 | Apply | Apply the Confronting/Problem-solving default to a novel disagreement scenario. |
+| Q2 | Understand | Identify which Tuckman stage the description maps to. |
+| Q3 | Apply | Apply n(n−1)/2 to a specific stakeholder count. |
+| Q4 | Apply | Apply servant-leadership default to a disengaged team member. |
+| Q5 | Understand | Explain Herzberg's hygiene-factor concept. |
+| Q6 | Evaluate | Compare four techniques and judge the worst. |
+| Q7 | Understand | Match performance description to the Performing stage. |
+| Q8 | Understand | Identify the missing EQ component from observable behavior. |
+| Q9 | Remember | Recall the Maslow ordering. |
+| Q10 | Apply | Apply the coaching default to a junior team member. |
+| Q11 | Remember | Recall how a Team Charter is created. |
+| Q12 | Remember | Recall the "Unaware" engagement level. |
+| Q13 | Remember | Recall the PMP-2021 default leadership style. |
+| Q14 | Understand | Distinguish pull communication from push/interactive. |
+| Q15 | Apply | Apply virtual-team principles to a trust problem. |
+| Q16 | Remember | Recall Theory Y assumptions. |
+| Q17 | Analyze | Diagnose a decision-authority drift and prescribe a coaching response. |
+| Q18 | Remember | Recall the ~90% communication figure. |
+| Q19 | Apply | Apply the channels formula to a delta calculation. |
+| Q20 | Analyze | Diagnose the unmet Maslow level driving disengagement. |
+| Q21 | Apply | Apply Confronting to a storming-stage role-clarification conflict. |
+| Q22 | Understand | Identify the engagement level from a behavioral description. |
+| Q23 | Understand | Distinguish motivators from hygiene factors. |
+| Q24 | Apply | Apply virtual-team best practices to a disconnect scenario. |
+| Q25 | Apply | Apply EQ self-regulation to a pressure scenario. |
+| Q26 | Apply | Apply servant-leadership default to a Performing-stage team. |
+| Q27 | Understand | Identify the comm method from the described mechanism. |
+| Q28 | Analyze | Diagnose the senior/junior dynamic and prescribe intervention. |
+| Q29 | Remember | Recall the Team Charter ownership rule. |
+| Q30 | Apply | Apply listen-then-facilitate sequence to a feud scenario. |
+
+**Bloom distribution for Q1–Q30:** Remember 8 (~27%) · Understand 9 (~30%) · Apply 11 (~37%) · Analyze 3 (~10%) · Evaluate 1 (~3%). Bonus questions below push Analyze/Evaluate/Create higher.
+
+---
+
+## Bonus questions (higher-Bloom)
+
+### Q31. You inherit a 22-person team where the previous PM was widely admired and is now CEO of a competitor. Two senior engineers openly compare every decision to "what [previous PM] would have done." Using Greenleaf's (1970) servant-leadership concept AND Goleman's EQ framework, what is the MOST defensible 90-day plan? *(Create)*
+A. Forbid the team from mentioning the previous PM.
+B. Schedule 1-on-1s with each engineer to surface what they valued; co-create new team norms in an open team-charter session; publicly credit the previous regime's strengths while introducing one or two intentional pivots; review the social contract at week 6 and week 12.
+C. Reorganize the team to disrupt the old dynamics.
+D. Match the previous PM's style precisely so the team feels continuity.
+
+### Q32. A high-performing team enters its 9th month together. Two members start arriving late, missing standups, and producing lower-quality work. Tuckman (1965/1977) would suggest examining whether the team has slipped from Performing back toward Storming/Norming. Which diagnostic + intervention is MOST aligned with both PMBOK 7's Team principle and Tuckman's stage theory? *(Analyze)*
+A. Discipline the two members; the team is fine.
+B. Replace the two members to preserve high performance.
+C. Treat the symptom as systemic: facilitate a retrospective focused on what changed (workload, recognition, growth opportunities); diagnose against Maslow + Herzberg to see which need has decayed; co-design corrective norms; if the issue is individual, follow up in 1-on-1s after the team-level work.
+D. Issue a team-wide reminder about expectations.
+
+### Q33. Spotify (from the case study) walked back the squad model partly because cross-squad dependencies overwhelmed autonomy benefits. You are PM of a 60-person program with 6 squads and growing inter-squad coupling. Per PMBOK 7's Tailoring principle, which intervention is MOST likely to preserve agile values without sacrificing coordination? *(Evaluate)*
+A. Abandon agile entirely; revert to a Gantt-chart waterfall.
+B. Keep the squad model unchanged — coordination problems will self-resolve.
+C. Add a thin program-management layer (a "missions" overlay or release-train coordinator), publish explicit dependency-mapping rituals, and time-box the experiment to one quarter with measurable health metrics; revisit fit.
+D. Outsource the coordination to a Directive PMO.
+
+### Q34. Two engineers escalate a technical disagreement to you at 4:55 PM on a Friday. Both are emotionally activated. The PMP-default is Confronting/Problem-solving, but Goleman's self-regulation principle suggests timing matters. Which sequence is MOST defensible? *(Apply)*
+A. Force a resolution before they leave on Friday.
+B. Acknowledge the conflict, briefly hear both sides separately to scope it, agree on a Monday-morning facilitated joint session, set ground rules in writing, and ensure no decisions are made in the heated state.
+C. Pick one engineer's position and move on.
+D. Tell them to figure it out themselves over the weekend.
+
+### Q35. Your sponsor proposes tying engineer bonuses to individual velocity (story points completed). The team is high-trust, currently Performing, and self-organizing. Using McGregor's (1960) Theory Y AND Herzberg's (1959) two-factor theory, evaluate the proposal. *(Evaluate)*
+A. Accept — financial incentives always work.
+B. Push back: individual-velocity bonuses are a hygiene-factor manipulation that erodes Theory-Y trust; propose alternatives such as team-level recognition tied to delivered customer value, professional-growth budgets, or peer-recognition systems, and frame the pushback in business terms (velocity gaming, sub-optimization) to the sponsor.
+C. Implement quietly without telling the team.
+D. Accept but cap the bonus at $500 so it's "harmless."
+
+```
+Bonus answer key
+31.B  32.C  33.C  34.B  35.B
+```

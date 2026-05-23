@@ -324,6 +324,122 @@ D. It supports multiple APIs (NoSQL native, MongoDB, Cassandra, Gremlin, Table) 
 
 ---
 
+## Detailed answer rationales
+
+**Q1. Answer: C.** Cloud is on-demand delivery of IT services over the internet with pay-as-you-go pricing. A is wrong because IaaS still requires customer-side OS management. B is wrong because cloud isn't always cheaper. D is wrong because security is a *shared* responsibility, not eliminated. **Takeaway:** Definitions are simple but distractors lean on overconfidence.
+
+**Q2. Answer: C.** Elasticity = automatic add/remove of capacity to match demand. A is vertical scaling. B is pre-purchase. D is geographic redundancy. **Takeaway:** Elasticity vs scalability vs redundancy — distinct concepts.
+
+**Q3. Answer: A.** IaaS gives full OS control. B (PaaS) hides OS. C (SaaS) hides everything. D (FaaS) is even more abstracted than PaaS. **Takeaway:** Maximum customer control = IaaS.
+
+**Q4. Answer: C.** Dynamics 365 is a fully managed Microsoft business application — SaaS. **Takeaway:** M365, Dynamics 365, GitHub.com = SaaS.
+
+**Q5. Answer: B.** Cloud converts CapEx (upfront capital purchase) into OpEx (pay-as-you-consume). A reverses the definitions. C does the same. D collapses the distinction. **Takeaway:** CapEx → OpEx is the canonical cloud econ.
+
+**Q6. Answer: B (No).** Reservations are paid over time without buying an asset — that's OpEx. The 1–3 year commitment doesn't change the accounting treatment. **Takeaway:** Reservations = OpEx, despite the commitment length.
+
+**Q7. Answer: A.** Data, endpoints, accounts, access management, and identities are always the customer's. B/C/D are always Microsoft's. **Takeaway:** Always-customer four (plus identity/endpoints) is the most-tested shared-responsibility fact.
+
+**Q8. Answer: B.** North Europe (Ireland) pairs with West Europe (Netherlands). A is wrong (different geography). C (UK South) pairs with UK West, not North Europe. D is wrong (the pair exists). **Takeaway:** Know the major EU and US pairs.
+
+**Q9. Answer: A (Yes).** RG location is metadata only — the RG can hold resources from any region. **Takeaway:** Famous AZ-900 trap.
+
+**Q10. Answer: A.** Applying a Policy at the management-group level inherits to all subscriptions below. B is wasteful and inconsistent. C is wrong scope. D is incorrect (Policy isn't a PowerShell-per-VM thing). **Takeaway:** Single policy across many subs = MG-level assignment.
+
+**Q11. Answer: A.** AZs are physically separate datacenters within a region with independent power, cooling, and networking. B (logical container) describes RGs. C (multiple regions) describes geography. D (backup copies) confuses with redundancy options. **Takeaway:** AZs are physical infrastructure within a region.
+
+**Q12. Answer: A.** 2+ VMs across AZs = 99.99% SLA. B (Availability Set) = 99.95%. C (single Standard HDD VM) doesn't have a documented uptime SLA. D conflates region with sovereignty. **Takeaway:** AZ deployment is the path to 99.99% VM SLA.
+
+**Q13. Answer: D.** ZRS = 3 copies across 3 AZs in one region, no cross-region. A (LRS) is one DC. B (GZRS) crosses regions too. C (GRS) crosses regions. **Takeaway:** ZRS = in-region AZ redundancy only.
+
+**Q14. Answer: D.** Functions is event-driven serverless — perfect for queue-message triggers. A (VM) is over-engineered. B (App Service) is always-on. C (AKS) is container orchestration. **Takeaway:** Event-driven = Functions.
+
+**Q15. Answer: C.** App Service is the textbook PaaS for web apps + APIs. A (VM) requires OS management. B (ACI) is for single containers. D (AKS) is overkill. **Takeaway:** Web app + API, no OS = App Service.
+
+**Q16. Answer: A.** Cosmos DB = globally distributed multi-model NoSQL. B/C are relational SQL. D is in-memory cache. **Takeaway:** Cosmos's tagline maps exactly.
+
+**Q17. Answer: C.** AKS is managed Kubernetes — for hundreds of microservices. A (ACI) is single container. B (App Service) doesn't orchestrate containers at scale. D (VMSS) is plain VM scale-set. **Takeaway:** Many containers = AKS.
+
+**Q18. Answer: C.** Front Door is the global L7 entry point with CDN and WAF. A (App Gateway) is regional. B (Load Balancer) is L4. D (NSG) is a firewall ruleset. **Takeaway:** Global L7 + CDN + WAF = Front Door.
+
+**Q19. Answer: D.** ExpressRoute = private dedicated circuit, high bandwidth, low latency. A (VPN) is over public internet. B (NSG) is filtering. C (Front Door) is HTTPS entry. **Takeaway:** Private circuit = ExpressRoute.
+
+**Q20. Answer: B (No).** Ingress (data into Azure) is free. Only egress is billed. **Takeaway:** Memorize this — drives multi-region cost design.
+
+**Q21. Answer: D.** Azure free account = $200 USD credit for 30 days + 12 months of select services + always-free tier. A/B/C are all incorrect free-account offerings. **Takeaway:** Three-part free offer.
+
+**Q22. Answer: B.** SQL Managed Instance gives near-100% SQL Server compatibility — designed for complex lift-and-shift. A (SQL DB single) is cloud-native, less SQL Server compatible. C (Cosmos) is NoSQL. D (SQL on VM) works but requires full OS management. **Takeaway:** Complex SQL Server lift = SQL Managed Instance.
+
+**Q23. Answer: A.** Renamed to Microsoft Entra ID in 2023. **Takeaway:** New name is on every exam.
+
+**Q24. Answer: B.** Contributor does everything except grant access. A (Owner) can grant. C (Reader) can't even modify. D (UAA) only manages access. **Takeaway:** Contributor ≠ Owner — Contributor can't grant access.
+
+**Q25. Answer: D.** CanNotDelete lock applies to everyone including Owners. A (Reader) doesn't prevent delete by others. B (NSG) is network, not delete protection. C (Audit policy) just flags. **Takeaway:** Locks > RBAC for "prevent delete."
+
+**Q26. Answer: D.** Azure Policy answers "what resources can exist / how they must be configured." A (RBAC) is who. B (Defender) is security posture. C (Locks) is delete prevention. **Takeaway:** Resource shape/config = Policy.
+
+**Q27. Answer: D.** Conditional Access decides *when* to require MFA based on signals. A (RBAC) is permissions. B (MFA alone) is always-on. C (Identity Protection) flags risky sign-ins but doesn't set policy. **Takeaway:** "When MFA?" = Conditional Access.
+
+**Q28. Answer: B.** Sentinel is multi-source SIEM + SOAR. A (Defender for Cloud) is CSPM, not multi-source SIEM. C (Monitor) is workload metrics. D (Advisor) is recommendations. **Takeaway:** Multi-source SIEM + automation = Sentinel.
+
+**Q29. Answer: C.** Defender for Cloud provides CSPM + workload protection + Secure Score. A is Front Door / WAF. B is Sentinel. D is Azure DNS / Traffic Manager. **Takeaway:** Secure Score = Defender for Cloud signature.
+
+**Q30. Answer: B.** Verify explicitly, least-privilege access, assume breach — Microsoft's Zero Trust principles verbatim. A is old "trust but verify." C is AAA. D is incident response phases. **Takeaway:** Memorize the three principles literally.
+
+**Q31. Answer: B (No).** Budgets alert; they don't shut down resources. **Takeaway:** Common trap.
+
+**Q32. Answer: D.** 0.999 × 0.9995 = 0.99850 ≈ 99.85%. A/C are too high; B (100%) is impossible. **Takeaway:** Composite is always lower than the lowest component.
+
+**Q33. Answer: D.** Spot offers up to 90% discount with eviction risk. A (Reservation) requires commitment, not evictable. B (Dev/Test) is reduced pricing, not 90%. C (Savings Plan) is up to 65%, no eviction. **Takeaway:** 90% off + evictable = Spot.
+
+**Q34. Answer: D.** Hybrid Benefit reuses on-prem Win/SQL licenses with Software Assurance. A is wrong (mirroring is Entra Connect). B/C conflate with unrelated services. **Takeaway:** Hybrid Benefit = bring your own license.
+
+**Q35. Answer: B.** Pricing Calculator estimates NEW resources. A (TCO) compares on-prem vs Azure. C (Cost Management) analyzes actual spend. D (Advisor) recommends optimizations. **Takeaway:** New resources = Pricing Calculator.
+
+**Q36. Answer: A.** TCO Calculator compares on-prem to Azure equivalent. B (Pricing) is Azure-only. C (Service Health) is platform health. D (Bicep) is IaC. **Takeaway:** On-prem vs Azure = TCO Calculator.
+
+**Q37. Answer: C.** Bicep is Microsoft's recommended modern IaC. A (ARM JSON) is the predecessor. B (Terraform) is third-party multi-cloud. D (Ansible) is config management. **Takeaway:** Modern Azure-native IaC = Bicep.
+
+**Q38. Answer: C.** Cloud Shell runs in the browser, requires no install. A/B are local installs. D is an IDE. **Takeaway:** Browser shell = Cloud Shell.
+
+**Q39. Answer: C.** Advisor's five pillars: Cost, Security, Performance, Reliability, Operational Excellence. A is project mgmt vocab. B is service models. D is security acronyms. **Takeaway:** Memorize the five literally.
+
+**Q40. Answer: A.** Azure Arc extends Azure mgmt to non-Azure resources. B (Site Recovery) is DR. C (Migrate) is for *moving*. D (Bastion) is VM access. **Takeaway:** Arc = manage in place. Migrate = move.
+
+---
+
+**Scenario set 41–43 — Contoso App Service + SQL DB + Entra ID with CA**
+
+**Q41. Answer: B (No).** App Service is PaaS — Microsoft patches the OS. **Takeaway:** PaaS OS patches = Microsoft.
+
+**Q42. Answer: A (Yes).** Conditional Access can require MFA *only* when sign-ins come from outside the corporate network (using location signal). **Takeaway:** CA is the "when MFA?" engine.
+
+**Q43. Answer: B (No).** A single-region default-redundant Azure SQL DB does NOT survive a regional outage — you need geo-replication / failover groups. **Takeaway:** Single-region ≠ region failure protection.
+
+---
+
+**Q44. Answer: A.** status.azure.com is the public, anonymous global Azure status page. B is general portal. C is the personalized portal blade. D is compliance docs. **Takeaway:** Public global = status.azure.com.
+
+**Q45. Answer: A (Yes).** Sentinel is multi-source — ingests Azure, AWS, on-prem, M365, third-party. **Takeaway:** Multi-source SIEM = Sentinel.
+
+**Q46. Answer: B (No).** Azure Arc *extends Azure management* to non-Azure resources — it does NOT migrate them. **Takeaway:** Arc ≠ Migrate.
+
+---
+
+**Scenario set 47–49 — Fabrikam MG-level Policy + RG-level Lock**
+
+**Q47. Answer: B (No).** Policy at the MG level inherits down to child subscriptions. The Contributor in a child subscription is blocked by the MG-level Deny policy from deploying to Brazil South. **Takeaway:** MG inheritance is the whole point of MG-level Policy.
+
+**Q48. Answer: B (No).** CanNotDelete locks apply to *everyone*, including Owners, until the lock is removed. **Takeaway:** Locks override RBAC for delete actions.
+
+**Q49. Answer: B (No).** With Deny effect on the missing-tag rule, the storage-account deployment is blocked. (If the effect were Audit, it would deploy and flag.) **Takeaway:** Deny effect blocks; Audit effect flags.
+
+---
+
+**Q50. Answer: D.** Cosmos DB supports multiple APIs (NoSQL native, MongoDB, Cassandra, Gremlin, Table) and offers multi-region writes with single-digit-ms latency. A is wrong (it's multi-API). B is wrong (Cosmos isn't Files). C is wrong (Cosmos is NoSQL, not relational warehouse). **Takeaway:** Cosmos's tagline maps to D verbatim.
+
+---
+
 ## 📊 Scoring (real-exam pass mark)
 
 | Score | Verdict |

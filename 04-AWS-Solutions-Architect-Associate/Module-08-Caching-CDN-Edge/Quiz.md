@@ -2,11 +2,13 @@
 
 > **Instructions:** 24 questions, ~30 min. Target 20/24.
 
+> **Bloom's distribution.** Remember 5 (21%) · Understand 6 (25%) · Apply 8 (33%) · Analyze/Evaluate 4 (17%) · Create 1 (4%).
+
 ---
 
 ## Questions
 
-### Q1. To privately serve a static S3 site behind CloudFront with the bucket NOT publicly reachable:
+### Q1. To privately serve a static S3 site behind CloudFront with the bucket NOT publicly reachable: *(Apply)*
 A. CloudFront + OAC + Block Public Access on bucket
 B. Make the bucket public
 C. Use NAT Gateway
@@ -14,7 +16,7 @@ D. Use Direct Connect
 
 ---
 
-### Q2. CloudFront and Global Accelerator differ in that:
+### Q2. CloudFront and Global Accelerator differ in that: *(Understand)*
 A. CloudFront caches; Global Accelerator only routes
 B. They are identical
 C. Only CloudFront uses AWS backbone
@@ -22,7 +24,7 @@ D. Only Global Accelerator works in CDN mode
 
 ---
 
-### Q3. For a global multiplayer game using UDP needing static IPs and lowest latency between users and regional servers:
+### Q3. For a global multiplayer game using UDP needing static IPs and lowest latency between users and regional servers: *(Apply)*
 A. CloudFront
 B. Global Accelerator
 C. Route 53 latency routing alone
@@ -30,7 +32,7 @@ D. NAT Gateway
 
 ---
 
-### Q4. To rewrite HTTP headers at the edge with sub-millisecond latency and minimal cost:
+### Q4. To rewrite HTTP headers at the edge with sub-millisecond latency and minimal cost: *(Apply)*
 A. Lambda@Edge
 B. CloudFront Functions
 C. API Gateway authorizer
@@ -38,7 +40,7 @@ D. ALB Listener Rule
 
 ---
 
-### Q5. To run JWT validation against an external IdP at the edge:
+### Q5. To run JWT validation against an external IdP at the edge: *(Apply)*
 A. CloudFront Functions
 B. Lambda@Edge
 C. NACL
@@ -46,7 +48,7 @@ D. WAF custom rule only
 
 ---
 
-### Q6. Active-passive disaster recovery with auto DNS failover based on health checks:
+### Q6. Active-passive disaster recovery with auto DNS failover based on health checks: *(Apply)*
 A. Route 53 Simple routing
 B. Route 53 Failover routing with health checks
 C. Route 53 Weighted routing
@@ -54,7 +56,7 @@ D. Route 53 Geolocation
 
 ---
 
-### Q7. Route 53 routing that returns the AWS region closest to the user (by measured latency, not pure geography):
+### Q7. Route 53 routing that returns the AWS region closest to the user (by measured latency, not pure geography): *(Remember)*
 A. Geolocation
 B. Latency-based
 C. Geoproximity
@@ -62,7 +64,7 @@ D. Multivalue
 
 ---
 
-### Q8. Compliance requires that users in Germany are served by the Frankfurt region. Use:
+### Q8. Compliance requires that users in Germany are served by the Frankfurt region. Use: *(Apply)*
 A. Geolocation routing
 B. Latency routing
 C. Weighted routing
@@ -70,7 +72,7 @@ D. Simple routing
 
 ---
 
-### Q9. A blue/green deployment splits 90/10 between two versions. Use:
+### Q9. A blue/green deployment splits 90/10 between two versions. Use: *(Apply)*
 A. Failover routing
 B. Latency routing
 C. Weighted routing
@@ -78,7 +80,7 @@ D. Multivalue
 
 ---
 
-### Q10. CloudFront Signed URLs are MOST appropriate for:
+### Q10. CloudFront Signed URLs are MOST appropriate for: *(Understand)*
 A. Granting time-limited access to ONE specific file
 B. Granting access to many files for a user session
 C. Geo restriction
@@ -86,7 +88,7 @@ D. WAF
 
 ---
 
-### Q11. CloudFront Signed Cookies are MOST appropriate for:
+### Q11. CloudFront Signed Cookies are MOST appropriate for: *(Understand)*
 A. One-time download of a single file
 B. Granting access to many files for a session
 C. DDoS protection
@@ -94,7 +96,7 @@ D. Caching dynamic content
 
 ---
 
-### Q12. To shield against SQL-injection and XSS on a public web app:
+### Q12. To shield against SQL-injection and XSS on a public web app: *(Apply)*
 A. AWS Shield Advanced
 B. AWS WAF (rules + managed rule groups)
 C. Network ACL
@@ -102,7 +104,7 @@ D. Direct Connect
 
 ---
 
-### Q13. AWS Shield Standard cost:
+### Q13. AWS Shield Standard cost: *(Remember)*
 A. ~$3,000/month
 B. Free for all customers
 C. Per-region
@@ -110,7 +112,7 @@ D. Pay-per-attack
 
 ---
 
-### Q14. DAX provides which of the following?
+### Q14. DAX provides which of the following? *(Remember)*
 A. Sub-millisecond writes to RDS
 B. Microsecond reads to DynamoDB
 C. Object caching for S3
@@ -118,7 +120,7 @@ D. CDN edge caching
 
 ---
 
-### Q15. To cache repeated database query results in the app tier with persistence and failover:
+### Q15. To cache repeated database query results in the app tier with persistence and failover: *(Apply)*
 A. ElastiCache Redis
 B. ElastiCache Memcached
 C. CloudFront
@@ -126,7 +128,7 @@ D. DAX
 
 ---
 
-### Q16. To distribute incoming HTTPS requests from worldwide users to two regional ALBs by lowest latency:
+### Q16. To distribute incoming HTTPS requests from worldwide users to two regional ALBs by lowest latency: *(Evaluate)*
 A. Route 53 latency-based routing OR Global Accelerator
 B. NAT Gateway
 C. CloudFront alone
@@ -134,7 +136,7 @@ D. Site-to-Site VPN
 
 ---
 
-### Q17. Multivalue Answer routing in Route 53 is:
+### Q17. Multivalue Answer routing in Route 53 is: *(Understand)*
 A. A pure load balancer
 B. Returns up to 8 healthy records — provides basic load distribution with health checks
 C. The same as latency routing
@@ -142,7 +144,7 @@ D. A failover-only mode
 
 ---
 
-### Q18. The MAIN benefit of Origin Shield is:
+### Q18. The MAIN benefit of Origin Shield is: *(Analyze)*
 A. Hosting an origin in the cloud
 B. Adding a regional caching layer between edges and origin to reduce origin load
 C. DDoS protection
@@ -150,7 +152,7 @@ D. SSL termination
 
 ---
 
-### Q19. CloudFront edge locations exist in:
+### Q19. CloudFront edge locations exist in: *(Remember)*
 A. Just AWS regions
 B. Hundreds of cities globally (600+)
 C. Only N. America
@@ -158,7 +160,7 @@ D. Same as Availability Zones
 
 ---
 
-### Q20. A common pattern for ElastiCache with RDS:
+### Q20. A common pattern for ElastiCache with RDS: *(Understand)*
 A. Replace RDS entirely
 B. Cache-aside: app checks cache → miss → reads RDS → writes to cache
 C. Use as DNS
@@ -166,7 +168,7 @@ D. Use as load balancer
 
 ---
 
-### Q21. To centrally manage WAF and Shield policies across many accounts in an Organization:
+### Q21. To centrally manage WAF and Shield policies across many accounts in an Organization: *(Apply)*
 A. AWS Firewall Manager
 B. AWS Config
 C. CloudWatch
@@ -174,7 +176,7 @@ D. CloudTrail
 
 ---
 
-### Q22. Compared to OAI, OAC is:
+### Q22. Compared to OAI, OAC is: *(Analyze)*
 A. Deprecated
 B. The newer recommended way to lock CloudFront → S3 (supports SSE-KMS, all regions)
 C. The same exact thing
@@ -182,7 +184,7 @@ D. Only for video streaming
 
 ---
 
-### Q23. To serve private video to authenticated subscribers globally with edge caching:
+### Q23. To serve private video to authenticated subscribers globally with edge caching: *(Create)*
 A. Public S3 with CloudFront
 B. CloudFront with signed cookies + private S3 + OAC
 C. S3 Transfer Acceleration
@@ -190,7 +192,7 @@ D. Lambda@Edge alone
 
 ---
 
-### Q24. Route 53 Geoproximity routing (Traffic Flow) lets you:
+### Q24. Route 53 Geoproximity routing (Traffic Flow) lets you: *(Understand)*
 A. Route based on physical distance with a bias toward specific resources
 B. Route only by country
 C. Route to lowest latency only

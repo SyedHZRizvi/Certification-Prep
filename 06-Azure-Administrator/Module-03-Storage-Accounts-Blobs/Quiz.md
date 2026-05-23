@@ -6,7 +6,7 @@
 
 ## Questions
 
-### Q1. The cheapest redundancy that survives a single Availability Zone outage is:
+### Q1. The cheapest redundancy that survives a single Availability Zone outage is: *(Apply)*
 A. LRS
 B. ZRS
 C. GRS
@@ -14,7 +14,7 @@ D. GZRS
 
 ---
 
-### Q2. You need 6 copies of data — 3 in your primary region across AZs, 3 in the paired region — for both AZ and regional resilience. Which SKU?
+### Q2. You need 6 copies of data — 3 in your primary region across AZs, 3 in the paired region — for both AZ and regional resilience. Which SKU? *(Apply)*
 A. LRS
 B. ZRS
 C. GRS
@@ -22,7 +22,7 @@ D. GZRS
 
 ---
 
-### Q3. The minimum storage duration for the Archive tier (before early-deletion penalty) is:
+### Q3. The minimum storage duration for the Archive tier (before early-deletion penalty) is: *(Remember)*
 A. 7 days
 B. 30 days
 C. 90 days
@@ -30,7 +30,7 @@ D. 180 days
 
 ---
 
-### Q4. To read an Archive-tier blob, you must:
+### Q4. To read an Archive-tier blob, you must: *(Understand)*
 A. Use AzCopy with `--archive` flag
 B. Rehydrate it to Hot or Cool (hours)
 C. Promote the entire container
@@ -38,7 +38,7 @@ D. Use a SAS with `Archive` permission
 
 ---
 
-### Q5. Which storage account kind should you default to in 2026?
+### Q5. Which storage account kind should you default to in 2026? *(Remember)*
 A. StorageV1 (general-purpose v1)
 B. StorageV2 (general-purpose v2)
 C. BlockBlobStorage
@@ -46,7 +46,7 @@ D. FileStorage
 
 ---
 
-### Q6. A Service SAS token can be revoked easily if it is associated with:
+### Q6. A Service SAS token can be revoked easily if it is associated with: *(Understand)*
 A. The account key
 B. A Stored Access Policy (SAP)
 C. A Conditional Access policy
@@ -54,7 +54,7 @@ D. The Reader RBAC role
 
 ---
 
-### Q7. Which SAS type uses Entra ID credentials for signing (no account key needed)?
+### Q7. Which SAS type uses Entra ID credentials for signing (no account key needed)? *(Remember)*
 A. Account SAS
 B. Service SAS
 C. User Delegation SAS
@@ -62,7 +62,7 @@ D. Anonymous SAS
 
 ---
 
-### Q8. A storage account with a Service Endpoint:
+### Q8. A storage account with a Service Endpoint: *(Understand)*
 A. Has no public IP
 B. Still has a public IP, but traffic from the allowed subnet routes over the Azure backbone
 C. Is reachable only from the same region
@@ -70,7 +70,7 @@ D. Is automatically encrypted with CMK
 
 ---
 
-### Q9. A storage account with a Private Endpoint:
+### Q9. A storage account with a Private Endpoint: *(Understand)*
 A. Has a private IP inside your VNet; you can also disable public network access
 B. Is reachable only from on-prem
 C. Cannot be used by managed identities
@@ -78,7 +78,7 @@ D. Requires Premium tier
 
 ---
 
-### Q10. Customer-Managed Key (CMK) encryption for a storage account requires the Key Vault to have:
+### Q10. Customer-Managed Key (CMK) encryption for a storage account requires the Key Vault to have: *(Remember)*
 A. RBAC mode enabled
 B. Soft delete + purge protection enabled
 C. A premium SKU
@@ -86,7 +86,7 @@ D. A private endpoint
 
 ---
 
-### Q11. **Order these steps** to set up CMK encryption for a storage account.
+### Q11. **Order these steps** to set up CMK encryption for a storage account. *(Create)*
 
 1. Enable a system-assigned managed identity on the storage account
 2. Create a Key Vault with soft delete + purge protection
@@ -101,7 +101,7 @@ D. 3 → 2 → 1 → 4 → 5
 
 ---
 
-### Q12. Yes/No — Mark each.
+### Q12. Yes/No — Mark each. *(Evaluate)*
 
 **S1:** LRS protects against an Availability Zone failure.
 **S2:** ZRS replicates data across at least 3 AZs in one region.
@@ -114,7 +114,7 @@ D. No / Yes / Yes
 
 ---
 
-### Q13. The storage account name `Contoso_Data_001` is invalid because:
+### Q13. The storage account name `Contoso_Data_001` is invalid because: *(Understand)*
 A. It contains numbers
 B. Storage account names must be lowercase + digits only, 3–24 chars, globally unique
 C. Underscores are valid; the issue is the length
@@ -122,7 +122,7 @@ D. It uses CamelCase
 
 ---
 
-### Q14. Which built-in role lets a user read blob contents but not change the storage account configuration?
+### Q14. Which built-in role lets a user read blob contents but not change the storage account configuration? *(Apply)*
 A. Storage Account Contributor
 B. Storage Blob Data Reader
 C. Reader
@@ -130,7 +130,7 @@ D. Storage Blob Data Owner
 
 ---
 
-### Q15. Yes/No — Lifecycle management.
+### Q15. Yes/No — Lifecycle management. *(Analyze)*
 
 **S1:** A lifecycle rule can transition blobs from Hot to Cool to Archive automatically.
 **S2:** Lifecycle rules evaluate hourly without delay.
@@ -143,7 +143,7 @@ D. Yes / No / No
 
 ---
 
-### Q16. A 4-year-old blob in Hot tier is being read once per year. The MOST cost-effective tier is:
+### Q16. A 4-year-old blob in Hot tier is being read once per year. The MOST cost-effective tier is: *(Apply)*
 A. Hot
 B. Cool
 C. Cold
@@ -151,7 +151,7 @@ D. Archive
 
 ---
 
-### Q17. The fastest way to transfer 50 TB from on-prem to Azure with very limited bandwidth is:
+### Q17. The fastest way to transfer 50 TB from on-prem to Azure with very limited bandwidth is: *(Apply)*
 A. AzCopy over the internet
 B. Azure Storage Explorer
 C. Azure Data Box (physical appliance)
@@ -159,7 +159,7 @@ D. Run multiple `az storage blob upload` jobs in parallel
 
 ---
 
-### Q18. RA-GRS gives you what extra benefit over GRS?
+### Q18. RA-GRS gives you what extra benefit over GRS? *(Understand)*
 A. Writable secondary
 B. Read access to the secondary region
 C. Higher SLA
@@ -167,7 +167,7 @@ D. Lower cost
 
 ---
 
-### Q19. What is the minimum TLS version Microsoft recommends (and you should enforce) on storage accounts?
+### Q19. What is the minimum TLS version Microsoft recommends (and you should enforce) on storage accounts? *(Remember)*
 A. TLS 1.0
 B. TLS 1.1
 C. TLS 1.2
@@ -175,7 +175,7 @@ D. TLS 1.3
 
 ---
 
-### Q20. A "Legal Hold" on a blob container:
+### Q20. A "Legal Hold" on a blob container: *(Understand)*
 A. Locks blobs for a fixed time period
 B. Locks blobs indefinitely until the legal-hold tag is removed
 C. Encrypts blobs with a customer key
@@ -183,7 +183,7 @@ D. Prevents tier changes
 
 ---
 
-### Q21. Soft delete for blobs lets you:
+### Q21. Soft delete for blobs lets you: *(Remember)*
 A. Permanently delete in one click
 B. Recover deleted blobs within a configurable retention window (default 7 days)
 C. Move blobs to Archive automatically
@@ -191,7 +191,7 @@ D. Replicate blobs to another region
 
 ---
 
-### Q22. Yes/No — SAS tokens.
+### Q22. Yes/No — SAS tokens. *(Evaluate)*
 
 **S1:** An Account SAS can grant access across multiple service types (blob/file/queue/table) at once.
 **S2:** A User Delegation SAS works for file shares.
@@ -204,7 +204,7 @@ D. Yes / Yes / No
 
 ---
 
-### Q23. Which redundancy CANNOT be selected for Premium block blob accounts (in most regions)?
+### Q23. Which redundancy CANNOT be selected for Premium block blob accounts (in most regions)? *(Understand)*
 A. LRS
 B. ZRS
 C. GRS
@@ -212,7 +212,7 @@ D. Both LRS and ZRS
 
 ---
 
-### Q24. The default at-rest encryption for storage accounts is:
+### Q24. The default at-rest encryption for storage accounts is: *(Remember)*
 A. None — you must enable it
 B. AES-128 with Microsoft-managed keys
 C. AES-256 with Microsoft-managed keys (always on, can't disable)
@@ -220,7 +220,7 @@ D. AES-256 with customer-managed keys
 
 ---
 
-### Q25. A storage firewall allows access from "selected networks" only. From which sources can you grant access?
+### Q25. A storage firewall allows access from "selected networks" only. From which sources can you grant access? *(Apply)*
 A. Specific public IPs, VNets/subnets (via service endpoints), Microsoft trusted services
 B. Only specific public IPs
 C. Only resource groups
@@ -228,7 +228,7 @@ D. Only management groups
 
 ---
 
-### Q26. A team needs to ingest a 100 GB nightly file from on-prem to Azure storage with checksums and resume capability. The right tool is:
+### Q26. A team needs to ingest a 100 GB nightly file from on-prem to Azure storage with checksums and resume capability. The right tool is: *(Apply)*
 A. `az storage blob upload`
 B. Azure Storage Explorer
 C. AzCopy

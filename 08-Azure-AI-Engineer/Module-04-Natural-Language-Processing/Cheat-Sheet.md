@@ -127,4 +127,43 @@ If you can answer all 5 in 60 seconds, you own Module 4. ✅
 
 ---
 
+## 🎤 STT Mode Comparison
+
+| Mode | Latency | Max input | Cost shape | Best for |
+|---|---|---|---|---|
+| Real-time SDK | <300ms | ~30 min | Per-second | Live captions, voice commands |
+| Batch (REST) | Async (mins-hrs) | Hours | Per-second + storage | Recorded meetings, hours of audio |
+| Whisper (Azure OpenAI) | Per-call | 25 MB / file | Per-second | Quick transcribe with LLM downstream |
+| Speech translation | Real-time | ~30 min | Per-second | Multilingual meetings |
+
+## 🛡️ Voice + Identity Limited Access
+
+| Feature | Why gated |
+|---|---|
+| **Custom Neural Voice** | Deepfake / impersonation risk; needs voice-talent consent recording per RAI Standard v2 |
+| **Speaker Recognition (Verify/Identify)** | Biometric voice-print; GDPR Article 9 special-category data |
+| **Custom Person in Video Indexer** | Same biometric concerns as Face Identification |
+
+## 📐 Case-Study Pattern
+
+| Scenario | Composition |
+|---|---|
+| Multilingual customer support (Walmart Sparky) | Language + Translator + Speech + Orchestration |
+| HIPAA voice intake | Custom Speech (no CNV) + PII Detection + region-pinned Translator |
+| Legal-domain DOCX translation | Document Translation + Custom Translator (category) |
+| Voice-enabled Teams bot | Bot Service + Direct Line Speech + CLU + QA |
+| Long-form meeting summarization | Batch STT → Extractive Summarization → optional Abstractive |
+
+## 📚 Named References
+
+| Concept | Source |
+|---|---|
+| Transformer | Vaswani et al. (2017), *Attention Is All You Need* |
+| BERT (encoder) | Devlin et al. (2018) |
+| GPT-3 (decoder) | Brown et al. (2020) |
+| Microsoft RAI Standard v2 | Microsoft (June 2022) |
+| EU AI Act deepfake disclosure | Reg (EU) 2024/1689 |
+
+---
+
 ➡️ [Practice Exam 1](../Practice-Exams/Practice-Exam-1.md) — checkpoint! · then [Module 5](../Module-05-Document-Intelligence-Knowledge-Mining/Reading.md)

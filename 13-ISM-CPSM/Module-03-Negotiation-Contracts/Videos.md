@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~55 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=BATNA+ZOPA+negotiation+Harvard" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="iI-mIiKE9OM" href="https://www.youtube.com/results?search_query=BATNA+ZOPA+negotiation+Harvard" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 12 min · Foundational vocabulary</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=distributive+vs+integrative+negotiation" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="9VJgN6r1Toc" href="https://www.youtube.com/results?search_query=distributive+vs+integrative+negotiation" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 9 min · When to use each</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=contract+types+fixed+price+cost+plus+time+materials" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="MM3naIlYKls" href="https://www.youtube.com/results?search_query=contract+types+fixed+price+cost+plus+time+materials" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 14 min · Fixed, cost+, T&M</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=force+majeure+clause+procurement+pandemic" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="AnC82ucTyiw" href="https://www.youtube.com/results?search_query=force+majeure+clause+procurement+pandemic" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -61,7 +61,7 @@
       <span class="vg-duration">⏱ 10 min · What it does and doesn't cover</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=UCC+article+2+sale+of+goods+explained" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="ZQ7Vz_p49nQ" href="https://www.youtube.com/results?search_query=UCC+article+2+sale+of+goods+explained" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -75,7 +75,7 @@
 ## 📚 Recommended (~30 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=negotiation+tactics+anchoring+nibbling" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="90svIa07ilQ" href="https://www.youtube.com/results?search_query=negotiation+tactics+anchoring+nibbling" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 13 min · Anchor, nibble, bogey</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=service+level+agreement+SLA+procurement" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="NX4-GKtBSHQ" href="https://www.youtube.com/results?search_query=service+level+agreement+SLA+procurement" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -93,7 +93,7 @@
       <span class="vg-duration">⏱ 10 min · Metrics + remedies</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=CISG+international+sale+of+goods+explained" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="ExkLI3t3jWU" href="https://www.youtube.com/results?search_query=CISG+international+sale+of+goods+explained" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -107,7 +107,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Getting+to+Yes+Fisher+Ury+summary" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="EKHg9H0G6go" href="https://www.youtube.com/results?search_query=Getting+to+Yes+Fisher+Ury+summary" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 15 min · Principled negotiation</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=cross+cultural+negotiation+international+business" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="TX0fUAhBAfc" href="https://www.youtube.com/results?search_query=cross+cultural+negotiation+international+business" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

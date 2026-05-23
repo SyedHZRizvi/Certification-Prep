@@ -296,3 +296,69 @@ You now know:
 2. ✏️ [Quiz.md](./Quiz.md)
 3. 📋 [Cheat-Sheet.md](./Cheat-Sheet.md)
 4. ➡️ [Module 6: Done & Estimation](../Module-06-Done-Estimation/Reading.md)
+
+---
+
+> **Prerequisites for this module.** Before starting, you should be comfortable with:
+> - Sprint Planning's three topics — Why / What / How ([Module 4 — Events](../Module-04-Events/Reading.md))
+> - Who owns what (PO → backlog, Devs → Sprint Backlog) — [Module 3 — Roles](../Module-03-Roles/Reading.md)
+> - The 2020 Scrum Guide's introduction of "commitments" as a new concept ([Module 2](../Module-02-Scrum-Framework/Reading.md))
+>
+> The artifact-commitment pairing (Product Backlog→Product Goal, Sprint Backlog→Sprint Goal, Increment→DoD) is the single most-tested table in the Scrum Guide. Memorize it before going further.
+
+---
+
+## 📊 Case Study — GE Aviation: Digital-Twin Sprint Boards (2017–2023)
+
+**Situation.** GE Aviation builds and services jet engines (CF6, CFM56, GE9X, GEnx) for Boeing 747/777/787 and Airbus A380/A350 fleets — high-stakes hardware with software, sensors, and predictive-maintenance models embedded in every engine. By 2017, GE Aviation's Digital business was building "digital twins" — software models of physical engines that ingest real-time sensor data and predict maintenance needs. The team ran on Scrum, but with a unique artifact problem: their Product Backlog had to coordinate across software releases, sensor firmware updates, ML model versions, and physical-engine certification cycles (each subject to FAA approval). Sprint Backlogs were *literally* dependent on physical hardware ground-test slots in Cincinnati.
+
+**Decision.** Between 2017 and 2019, the Digital Twin team built a *layered* Product Backlog visualization that ran across two large physical walls in their Cincinnati War Room and was mirrored in Azure DevOps: the **top swimlane** held the Product Goal ("predict any engine failure 30+ days before in-flight detection by 2022"), the **middle band** held the active Product Backlog with FAA-certification dependencies tagged in red, and the **bottom band** held the Increment-in-progress (the latest digital-twin version flying live on a customer's fleet). Every Sprint Backlog was constrained by: (1) FAA certification windows, (2) sensor-data refresh cadence from operating engines, (3) the model-validation queue. The Definition of Done explicitly required FAA-clearable code paths.
+
+**Outcome.** By 2020, GE Aviation had deployed digital twins on ~30,000 engines worldwide. The 30-day-prediction-window goal was met for the CFM56 fleet by Q2 2021 (announced at Paris Air Show 2021). Maintenance cost reductions for participating airlines (Delta, Lufthansa, Air France-KLM, ANA) were $250–$400M aggregate over 2021–2023 (GE Aviation 2023 Industrials Day). The artifact visualization itself became internal benchmark: GE Power and GE Healthcare adopted the same layered Product Backlog format for their own regulated-product Scrum teams.
+
+**Lesson for the exam / for practitioners.** Three takeaways. (1) The Product Backlog is *emergent* — even in a regulated industry, GE Aviation didn't lock the backlog upfront; they let it evolve with FAA cycles. (2) The Definition of Done can encode regulatory requirements — and *should*, when the product is safety-critical. (3) The artifact-commitment pairing matters operationally: when the Product Goal is "predict failures 30 days early," every backlog item is judged by *that* commitment, not by feature checklists.
+
+**Discussion (Socratic).**
+- Q1: GE Aviation's DoD required FAA-clearable code paths. Is that DoD too strict — is GE Aviation accidentally re-introducing Waterfall sign-offs into Scrum? Defend with a citation from the Scrum Guide on what DoD is *for*.
+- Q2: GE's Product Backlog was visualized across a physical wall *and* mirrored in Azure DevOps. What does the Scrum Guide say about backlog tooling? Could GE have used the wall alone — and what would they have lost?
+- Q3: GE Aviation's Product Goal ("predict any engine failure 30+ days in advance") spanned 5+ years. Is that an appropriate Product Goal, or is it actually a vision? Cite the Scrum Guide's definition of Product Goal.
+
+---
+
+> **Where this leads.**
+> - Inside this course: [Module 6 — Done & Estimation](../Module-06-Done-Estimation/Reading.md) deep-dives the Definition of Done you've now met. [Module 8 — Scaling](../Module-08-Scaling/Reading.md) revisits multi-team artifact sharing (one Product Backlog across multiple teams).
+> - Cross-course: `02-PMP` Module 4 covers Scope Management (WBS, scope baseline) — the predictive counterpart to Product Backlog management. `02-PMP` Module 8 covers Quality Management — the predictive counterpart to Definition of Done.
+> - Practice: Practice-Exam-1 has ~6 artifact questions; Practice-Exam-2 has ~10. Artifacts and their commitments are an exam goldmine — they're concrete and unambiguous.
+
+---
+
+## 💬 Discussion — Socratic prompts
+
+1. **Multiple backlogs anti-pattern.** A 60-person Scrum org has one Product Owner and three teams working on the same product, but each team has built its own backlog of "their" work. What's wrong with this picture? What organizational pressure typically produces this anti-pattern? Cite the Scrum Guide.
+2. **Sprint Backlog ownership.** The Scrum Guide says Developers own the Sprint Backlog. But the Product Owner often wants to update it mid-Sprint to add a "small" new item. Walk through the SM's coaching response. When is mid-Sprint scope-add OK, and when is it ScrumBut?
+3. **The Increment vs the release.** GE Aviation produced Increments every 2 weeks but only released to airlines quarterly (FAA cadence). Is that consistent with the Scrum Guide's definition of Increment? Cite the Guide.
+4. **DoD evolving over time.** A team's DoD started at "code reviewed + unit tests pass." Three years later, it's a 14-item checklist. Is that a healthy evolution or a sign of bloat? What's the test?
+5. **Product Goal vs Vision.** Many teams confuse the Product Goal (Scrum Guide concept, in the backlog) with the Product Vision (a broader, longer-term statement). What's the *operational* difference, and why did Sutherland and Schwaber add the Product Goal to the 2020 Guide?
+
+---
+
+## 📑 Named-source citations (this module)
+
+| Framework / concept | Originator(s) | Year | Venue / publication |
+|---|---|---|---|
+| Product Backlog | Schwaber | 1995, formalized 2002 | OOPSLA '95 paper; *Agile Software Development with Scrum* (2002, Prentice Hall) |
+| Sprint Backlog (3-part structure: Goal + PBIs + plan) | Sutherland & Schwaber | 2020 | Scrum Guide 2020 (the 3-part structure is a 2020 update) |
+| Increment | Sutherland & Schwaber | 2020 (multiple-per-Sprint clarified); originally 1995 | Scrum Guide 2020 |
+| Product Goal (new artifact commitment in 2020) | Sutherland & Schwaber | 2020 | Scrum Guide 2020 |
+| Definition of Done | Schwaber | 2002 | *Agile Software Development with Scrum* (Schwaber & Beedle, Prentice Hall) |
+| Acceptance Criteria | Cohn | 2004 | *User Stories Applied* (Addison-Wesley); also XP tradition (Beck) |
+| INVEST criteria for user stories | Wake | 2003 | *"INVEST in good stories, and SMART tasks"* — Bill Wake's blog post, xp123.com |
+| User-story format ("As a … I want … so that …") | Cohn | 2004 | *User Stories Applied* (Addison-Wesley); originated in XP (Beck 1999) |
+| Backlog Refinement | Sutherland & Schwaber | 2020 | Scrum Guide 2020 |
+| Cone of Uncertainty (referenced indirectly via "emergent" backlog) | Boehm; later McConnell | 1981; 1996 | *Software Engineering Economics* (Boehm, Prentice Hall, 1981); *Rapid Development* (McConnell, Microsoft Press, 1996) |
+| GE Aviation Digital Twin case | GE Aviation Industrials Day disclosures | 2023 | GE Aviation 2023 Industrials Day; also Paris Air Show 2021 |
+| Single-team / single-backlog / single-PO for one product | Sutherland & Schwaber | 2020 | Scrum Guide 2020 ("Scrum Team" section) |
+| MoSCoW prioritization (referenced as ordering technique, *not* in Scrum) | Clegg & Barker | 1994 | *Fast-Track A New Approach to Drug Development* (Avebury); later popularized by DSDM Consortium |
+| Kano model (referenced as ordering technique, *not* in Scrum) | Kano | 1984 | *"Attractive quality and must-be quality"*, *Journal of the Japanese Society for Quality Control* |
+
+**Verification note.** The Sprint Backlog's "3 parts" (Sprint Goal + selected PBIs + actionable plan) is a 2020 Scrum Guide change — pre-2020, the Sprint Backlog was defined as just the PBIs + plan, with the Sprint Goal as a separate concept. The exam tests this explicitly. INVEST is from Bill Wake's blog post and is *not* in the Scrum Guide — the Guide is intentionally silent on user-story criteria.

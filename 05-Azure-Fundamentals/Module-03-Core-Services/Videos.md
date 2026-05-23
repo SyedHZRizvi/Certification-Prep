@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~70 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+AZ-900+core+services+compute+networking+storage" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="yKDSAYDLGrI" href="https://www.youtube.com/results?search_query=John+Savill+AZ-900+core+services+compute+networking+storage" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 25 min · One-shot tour</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Adam+Marczak+Azure+compute+services+comparison" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="inaXkN2UrFE" href="https://www.youtube.com/results?search_query=Adam+Marczak+Azure+compute+services+comparison" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 15 min · The 5-way comparison you NEED</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Adam+Marczak+Azure+storage+blob+files+queue+table" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="_Qlkvd4ZQuo" href="https://www.youtube.com/results?search_query=Adam+Marczak+Azure+storage+blob+files+queue+table" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 15 min · All four explained</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+Azure+VNet+ExpressRoute+VPN" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="aNK0C9Oj2sg" href="https://www.youtube.com/results?search_query=John+Savill+Azure+VNet+ExpressRoute+VPN" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~40 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Adam+Marczak+Azure+SQL+vs+Cosmos+DB" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="RqD4nMyBazU" href="https://www.youtube.com/results?search_query=Adam+Marczak+Azure+SQL+vs+Cosmos+DB" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 12 min · Database picker</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Microsoft+Mechanics+Azure+Front+Door+Application+Gateway+Load+Balancer" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="A8ALdExHub0" href="https://www.youtube.com/results?search_query=Microsoft+Mechanics+Azure+Front+Door+Application+Gateway+Load+Balancer" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 14 min · Untangles L4 vs L7 + global</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+blob+storage+access+tiers+hot+cool+archive" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="sxa8NihIi9M" href="https://www.youtube.com/results?search_query=Azure+blob+storage+access+tiers+hot+cool+archive" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Kubernetes+Service+AKS+for+beginners" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="ba0reoJLIdA" href="https://www.youtube.com/results?search_query=Azure+Kubernetes+Service+AKS+for+beginners" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 20 min · Containers at scale</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Virtual+Desktop+AVD+overview" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="aPEibGMvxZw" href="https://www.youtube.com/results?search_query=Azure+Virtual+Desktop+AVD+overview" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 12 min · DaaS in Azure</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Functions+serverless+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="ansa4M7iTmg" href="https://www.youtube.com/results?search_query=Azure+Functions+serverless+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

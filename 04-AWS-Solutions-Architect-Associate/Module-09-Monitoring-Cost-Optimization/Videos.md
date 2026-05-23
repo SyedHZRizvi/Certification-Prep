@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~60 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+CloudWatch+complete+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="dQPXBohP0hw" href="https://www.youtube.com/results?search_query=AWS+CloudWatch+complete+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>📊</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 22 min · The full picture</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=CloudTrail+CloudWatch+Config+differences" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="D_rvCse6lAY" href="https://www.youtube.com/results?search_query=CloudTrail+CloudWatch+Config+differences" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🔭</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 12 min · The audit triangle</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Cost+Explorer+Budgets+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="3C2TqgploOE" href="https://www.youtube.com/results?search_query=AWS+Cost+Explorer+Budgets+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>💸</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 14 min · Cost management toolkit</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Compute+Optimizer+Trusted+Advisor" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="6nMmJMMzaPo" href="https://www.youtube.com/results?search_query=AWS+Compute+Optimizer+Trusted+Advisor" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎯</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~30 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+GuardDuty+Macie+Inspector+Security+Hub" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="hsFBt0hxy3I" href="https://www.youtube.com/results?search_query=AWS+GuardDuty+Macie+Inspector+Security+Hub" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🛡️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 14 min · Detection stack</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+X-Ray+distributed+tracing+demo" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="Ueh7vyXNtog" href="https://www.youtube.com/results?search_query=AWS+X-Ray+distributed+tracing+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🔬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 13 min · Find latency bottlenecks</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Config+rules+remediation" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="2Bdxh9WXDX8" href="https://www.youtube.com/results?search_query=AWS+Config+rules+remediation" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>⚙️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+cost+optimization+best+practices" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="GFakkHD9aQY" href="https://www.youtube.com/results?search_query=AWS+cost+optimization+best+practices" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>📉</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 45 min · Real customer stories</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=CloudWatch+agent+EC2+memory+disk" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="kksPEerXIGs" href="https://www.youtube.com/results?search_query=CloudWatch+agent+EC2+memory+disk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🤖</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 11 min · Common gotcha</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+tagging+strategy+cost+allocation" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="5NnFi6gjg2M" href="https://www.youtube.com/results?search_query=AWS+tagging+strategy+cost+allocation" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🏷️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

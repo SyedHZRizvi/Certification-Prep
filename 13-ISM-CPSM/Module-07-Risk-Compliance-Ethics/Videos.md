@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~60 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=supply+chain+risk+management+framework" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="7-jpmngs6aw" href="https://www.youtube.com/results?search_query=supply+chain+risk+management+framework" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 13 min · Identify → Assess → Treat</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=ISM+principles+sustainability+social+responsibility" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="z9o1I2jOuYM" href="https://www.youtube.com/results?search_query=ISM+principles+sustainability+social+responsibility" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 12 min · 10 principles</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=business+continuity+plan+BCP+supply+chain" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="qKFPa1Ce9U4" href="https://www.youtube.com/results?search_query=business+continuity+plan+BCP+supply+chain" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 11 min · BCP fundamentals</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=conflict+minerals+3TG+Dodd+Frank+compliance" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="XXvAHHUu6Uo" href="https://www.youtube.com/results?search_query=conflict+minerals+3TG+Dodd+Frank+compliance" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -61,7 +61,7 @@
       <span class="vg-duration">⏱ 10 min · RCOI + CMRT</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=modern+slavery+supply+chain+compliance" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="Q3FTpj8-ZQQ" href="https://www.youtube.com/results?search_query=modern+slavery+supply+chain+compliance" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -75,7 +75,7 @@
 ## 📚 Recommended (~33 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Scope+3+emissions+supply+chain+procurement" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="QkSWY6rBOFI" href="https://www.youtube.com/results?search_query=Scope+3+emissions+supply+chain+procurement" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 12 min · GHG Protocol</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=risk+register+template+probability+impact" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="8hTWChDnkpQ" href="https://www.youtube.com/results?search_query=risk+register+template+probability+impact" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -93,7 +93,7 @@
       <span class="vg-duration">⏱ 11 min · Heatmap + treatments</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=ISO+31000+risk+management+overview" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="rzrqOXhtSck" href="https://www.youtube.com/results?search_query=ISO+31000+risk+management+overview" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -107,7 +107,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Ever+Given+Suez+canal+supply+chain+lessons" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="iIkJMBhyyN8" href="https://www.youtube.com/results?search_query=Ever+Given+Suez+canal+supply+chain+lessons" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 16 min · Tier-N mapping</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=ISM+code+of+ethics+CPSM+scenarios" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="kTUMOHaRC9I" href="https://www.youtube.com/results?search_query=ISM+code+of+ethics+CPSM+scenarios" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

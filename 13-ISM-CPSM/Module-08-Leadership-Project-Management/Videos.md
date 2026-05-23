@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~55 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Kotter+8+steps+change+management+explained" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="22coAwMD9M0" href="https://www.youtube.com/results?search_query=Kotter+8+steps+change+management+explained" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 13 min · With procurement examples</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=ADKAR+change+management+Prosci" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="zYe2fG8m4Ow" href="https://www.youtube.com/results?search_query=ADKAR+change+management+Prosci" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 9 min · Diagnose adoption gaps</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Tuckman+forming+storming+norming+performing" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="-RwkZxGPQb8" href="https://www.youtube.com/results?search_query=Tuckman+forming+storming+norming+performing" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 9 min · Leader role at each stage</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=stakeholder+management+power+interest+grid" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="dP_26LxUDY8" href="https://www.youtube.com/results?search_query=stakeholder+management+power+interest+grid" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -61,7 +61,7 @@
       <span class="vg-duration">⏱ 11 min · RACI included</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=critical+path+method+project+management+example" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="m8P367jmIzc" href="https://www.youtube.com/results?search_query=critical+path+method+project+management+example" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -75,7 +75,7 @@
 ## 📚 Recommended (~30 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Cialdini+6+principles+influence+persuasion" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="cFdCzN7RYbw" href="https://www.youtube.com/results?search_query=Cialdini+6+principles+influence+persuasion" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 12 min · Animated summary</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=KPI+procurement+balanced+scorecard" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="B5C8MADm46k" href="https://www.youtube.com/results?search_query=KPI+procurement+balanced+scorecard" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -93,7 +93,7 @@
       <span class="vg-duration">⏱ 10 min · Beyond cost savings</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=servant+leadership+vs+transformational" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="zCoWzX6cWPw" href="https://www.youtube.com/results?search_query=servant+leadership+vs+transformational" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -107,7 +107,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=lean+six+sigma+DMAIC+procurement" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="s2HCrhNVfak" href="https://www.youtube.com/results?search_query=lean+six+sigma+DMAIC+procurement" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 16 min · Worked case</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=spend+under+management+KPI+procurement" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="BWBLqlU1cb0" href="https://www.youtube.com/results?search_query=spend+under+management+KPI+procurement" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

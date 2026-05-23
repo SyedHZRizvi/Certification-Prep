@@ -50,7 +50,18 @@ By the end of this track, you'll be able to:
 | [Practice-Exam-2](./Practice-Exams/Practice-Exam-2.md) | After Modules 5–8 | 45 Q / 80 min | ⭐⭐⭐⭐ |
 | [Final-Mock-Exam](./Practice-Exams/Final-Mock-Exam.md) | One week before the real exam | 55 Q / 100 min | ⭐⭐⭐⭐⭐ |
 
+Every practice exam now ships with **detailed answer rationales** — for the keyed answer and for each distractor. This is the Harvard-Law case-method format: discernment, not just lookup. Read every rationale (not just the misses); you learn more from the distractors than from the keyed answers.
+
 **Plus:** Microsoft Learn ships a free official practice assessment for AI-102 — burn through it twice. You should be hitting 80%+ before you book.
+
+---
+
+## 🏛️ Capstone + Recommended Readings
+
+Two course-root deliverables built to Cornell / Harvard / Stanford pedagogical standard:
+
+- **[Capstone Project](./Capstone-Project.md)** — a 20-week production-grade brief at *Harbor Mutual Insurance* (1,800-person mid-market insurer) covering target architecture, RAG eval harness, Responsible-AI control plan, security review, cost forecast, observability dashboard, and a go/no-go review against the AI-102 blueprint. 7 deliverables, 100-pt rubric, integrates Modules 1, 2, 5, 7, 8 as load-bearing.
+- **[Recommended Readings](./Recommended-Readings.md)** — canonical textbooks (Cheshire AI-102 Exam Ref; Goodfellow et al. *Deep Learning*; Vajjala NLP); seminal papers (Vaswani 2017, Brown 2020, Wei 2022, Yao 2023, Anthropic Constitutional AI 2022); industry sources (Microsoft AI blog, Microsoft Mechanics, Sarah Bird talks); free academic courses (Microsoft Learn AI-102, Stanford CS224n, Karpathy *Zero to Hero*). 6-week reading map included.
 
 ---
 

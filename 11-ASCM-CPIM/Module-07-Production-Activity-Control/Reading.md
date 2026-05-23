@@ -2,6 +2,13 @@
 
 > **Why this module matters:** PAC is the *execution* layer — where work orders meet the shop floor. CPIM tests dispatching rules, lead-time elements, and shop-floor scheduling in roughly 10–15% of exam questions. Once you can read a dispatch list and compute manufacturing lead time, you're solid.
 
+> **Prerequisites for this module.** Before starting, you should be comfortable with:
+> - [Module 4: MPS / MRP](../Module-04-Master-Production-Scheduling-MRP/Reading.md) — PAC executes the planned releases from MRP
+> - [Module 5: Capacity Planning](../Module-05-Capacity-Planning/Reading.md) — I/O Control is the PAC-layer capacity execution; bottleneck reasoning shapes dispatching
+> - Basic arithmetic with averages
+>
+> PAC's hardest exam content is the 5-element lead-time decomposition (Q-S-R-W-M) and the dispatching rules (SPT, EDD, CR). Drill these until automatic.
+
 ---
 
 ## 🍕 A Story: The Auto Shop That Stopped Fighting Fires
@@ -136,7 +143,7 @@ Three jobs at one work center, arriving in this order:
 
 **SPT lowered average flow time and reduced tardiness** — typical result.
 
-🎯 **Theorem you should know:** SPT *always* minimizes mean flow time on a single work center (proven by Smith, 1956).
+🎯 **Theorem you should know:** SPT *always* minimizes mean flow time on a single work center (proven by Smith, Wayne E., "Various Optimizers for Single-Stage Production," *Naval Research Logistics Quarterly* 3(1–2), 1956, pp. 59–66). This is one of the few results in scheduling theory with a clean closed-form proof.
 
 ---
 
@@ -202,6 +209,34 @@ Deep dive in Module 8.
 | Best for | Variable lead times, complex BOMs | Stable demand, repetitive flow |
 
 Many real plants are **hybrid**: MRP for materials planning, kanban for component replenishment at the cells.
+
+---
+
+## 📊 Case Study — Stitch Fix Algorithmic Merchandising (2014–2024)
+
+**Situation.** Stitch Fix launched in 2011 as a personal-styling subscription: customers complete a style profile, the company sends a curated box of clothing every month, customer keeps what fits and returns the rest. IPO'd 2017 at $1.6B market cap. From inception, Stitch Fix's competitive moat was *algorithmic merchandising*: combining customer-supplied data with implicit preferences (purchase history, return reasons, styling notes) to predict which SKUs would convert for which customers. By 2017 the company had ~80 data scientists and a vertically integrated inventory model that combined elements of MTS (basics, denim) with ATO-like assortment customization (the curated box). This created a PAC problem unlike a traditional retailer: instead of releasing work orders to a factory floor, Stitch Fix released *picking-and-packing orders* to its distribution centers (Indianapolis, Dallas, Phoenix, Pittsburgh, Atlanta), with each box containing 5 individually-selected items.
+
+**Decision.** Stitch Fix built a vertically integrated **AI-augmented merchandising and operations stack**:
+- **Demand forecasting** at the customer × style × size × color granularity (well below SKU), using ML models retrained nightly.
+- **Inventory positioning** that placed deep SKU coverage in the highest-volume DCs and tail SKUs centralized — a hybrid push-pull architecture.
+- **Box-construction algorithm** that selected the 5 items for each customer given (a) the customer's profile and history, (b) DC inventory positions, (c) per-customer styling-overlay by human stylist, (d) cost-to-serve constraints (return rate penalties).
+- **PAC at the DC** treated by classical dispatching rules adapted for batch-pick: similar to SPT for one-customer boxes, EDD for time-sensitive boxes, with a custom *constraint-style* rule for boxes whose SKU coverage was challenged by inventory positions.
+- **Stylist task allocation**: ~5,000 part-time stylists each handle 25–40 boxes/day; the task-allocation algorithm functioned as a meta-dispatching system at the human-resource layer.
+
+**Outcome.** Stitch Fix peaked at $2.1B revenue (FY 2021, post-COVID DTC surge) with ~4M active customers. The model's return rate (industry secret, but reported as 35–45%) was the operational headwind — every "no" item is a reverse-logistics cost. From 2022 onward the company struggled as the subscription-DTC category cooled and competition from Amazon Personal Shopper plus the algorithmic-shopping features on Shein/Temu eroded the moat. FY 2024 revenue dropped to ~$1.0B (Stitch Fix Q4 FY 2024 earnings, Oct 2024) and the company has taken multiple restructuring charges. By 2024, Stitch Fix was canonical case material in MIT Sloan Management Review pieces on "AI-augmented retail operations" and the Stanford GSB / Wharton OMP curriculum on data-driven inventory management.
+
+**Lesson for the exam / for practitioners.** Stitch Fix demonstrates several PAC + inventory + scheduling extensions of the classical CPIM framework:
+1. **Dispatching at the order-construction layer**, not the work-center layer. The "work center" is a stylist + DC pick crew, and the "work order" is a customer box. The CPIM canonical rules (SPT, EDD, CR) still apply but at a different granularity.
+2. **Forecast aggregation below SKU** (customer × SKU) violates the classical "more accurate at higher aggregation" rule — Stitch Fix made it work by combining heavy ML with the human-stylist override layer.
+3. **Reverse logistics as a PAC consideration.** Return rate is a planning input, not a passive outcome.
+4. **The limits of algorithmic merchandising at scale.** When the data signal (customer preferences) is no longer differentiated from competitors (who now have similar data), the operations advantage erodes.
+
+The CPIM exam-takeaway: the **classical PAC framework** (release / schedule / dispatch / monitor / report) is *generalizable* — it applies to factory floors, DC picking, stylist task allocation, and even AI-coordinated systems. The principles don't change; the work-center definition does.
+
+**Discussion (Socratic).**
+- Q1: A traditional retailer with 8,000 SKUs and 50 stores argues that Stitch Fix's per-customer forecasting model is overkill for its business — "we don't need to know what each customer wants; we just need stores to have the right SKUs." Build the strongest case that the retailer is right *and* that they are missing the future. At what scale (revenue, SKU count, customer concentration) does the calculation flip?
+- Q2: Stitch Fix's stylist-task-allocation is a meta-dispatching problem with humans as the work centers. Apply the SPT/EDD/CR vocabulary to it — what's the equivalent of "processing time," "due date," and "critical ratio" for a stylist's box assignment? What constraints exist for a human work center that don't apply to a machine?
+- Q3: Stitch Fix's return rate (35–45%) would be catastrophic in a manufacturing context — it would mean 35–45% rework. Why is it tolerated as a structural cost in subscription-DTC, and what's the right operations response: accept it, reduce it, or change the business model?
 
 ---
 
@@ -277,10 +312,30 @@ You now know:
 
 ---
 
+> **Where this leads.**
+> - Inside this course: Module 8 (Lean) — PAC's "pull" idea formalizes into kanban; SMED previewed here is detailed there.
+> - Cross-course: `10-ASCM-CSCP` Module 9 generalizes execution to multi-plant networks; `12-ASCM-CLTD` Module 8 applies PAC concepts to warehouse pick/pack/ship.
+> - Practice: Practice Exam 2 has 10–12 PAC questions; Final Mock Exam includes 5+ calculation questions on SPT, EDD, CR, and the 5 lead-time elements.
+
+---
+
+## 💬 Discussion — Socratic prompts
+
+1. **SPT's hidden cost.** Smith (1956) proved SPT minimizes mean flow time on a single machine. But SPT can leave long jobs perpetually delayed in the queue ("starvation"). At what point should you switch from SPT to a fairness-blended rule (FCFS or EDD)? Defend with a concrete heuristic.
+2. **Queue dominance at the bottleneck.** PAC dogma says queue time is 60–80% of lead time. At a TOC-managed plant, the bottleneck *deliberately* maintains a queue (to avoid starvation). Reconcile the two — when is queue at the bottleneck *correct* and when is it *waste*?
+3. **AI-augmented dispatching.** Modern MES platforms (Siemens Opcenter, GE Proficy, AVEVA System Platform) include AI-driven dispatching that can outperform SPT/EDD/CR for multi-machine problems. Argue that this replaces the classical rules and argue that the classical rules remain pedagogically essential. Where does each position win?
+4. **Pull vs push at the cell level.** Many factories run MRP (push) for materials planning and kanban (pull) at the cell. The exam tests this as a hybrid; in practice it's a culture clash between planning and execution organizations. What's the right governance structure to make the hybrid work?
+5. **The Stitch Fix question.** Stitch Fix used the PAC framework outside a factory. Pick another non-factory operation (hospital OR scheduling, food-delivery courier dispatching, call-center routing) and translate the SPT/EDD/CR vocabulary onto it. Where does the analogy break down?
+
+---
+
 ## 📚 Further Reading (Optional)
 
-- 📖 *Manufacturing Planning and Control* — Jacobs et al., Chapter 7
-- 📖 *Factory Physics* — Hopp & Spearman (the math of WIP, throughput, LT)
-- 📖 *A Revolution in Manufacturing: The SMED System* — Shigeo Shingo
-- 📖 ASCM Dictionary entries: PAC, dispatching, critical ratio, queue time, manufacturing lead time, cellular layout, group technology
-- 📖 *The Goal* — Goldratt (TOC scheduling continues to apply at PAC layer)
+- 📖 *Manufacturing Planning and Control for Supply Chain Management* — Vollmann, Berry, Whybark & Jacobs, 6th ed. (McGraw-Hill, 2011), Chapter 7.
+- 📖 *Factory Physics, 3rd ed.* — Hopp, Wallace J. & Spearman, Mark L. (Waveland Press, 2008) — the math of WIP, throughput, and lead time.
+- 📖 *A Revolution in Manufacturing: The SMED System* — Shingo, Shigeo (Productivity Press, 1985) — origin of single-minute exchange of die.
+- 📖 *Toyota Production System: Beyond Large-Scale Production* — Ohno, Taiichi (Productivity Press English ed. 1988; Japanese original *Toyota seisan hōshiki*, 1978) — foundational; pull / kanban, jidoka, the 7 wastes.
+- 📖 ASCM Dictionary, 16th edition (2022) — entries for PAC, dispatching, critical ratio, queue time, manufacturing lead time, cellular layout, group technology.
+- 📖 *The Goal* — Goldratt, Eliyahu M. (North River Press, 1984) — TOC scheduling applies at PAC.
+- 📰 *Various Optimizers for Single-Stage Production* — Smith, Wayne E., *Naval Research Logistics Quarterly* 3(1–2), 1956 — the SPT theorem.
+- 📰 Stitch Fix S-1 (IPO filing) 2017 and 10-K filings 2017–2024 (SEC EDGAR); MIT Sloan Management Review piece on Stitch Fix's stylist-AI hybrid (2019).

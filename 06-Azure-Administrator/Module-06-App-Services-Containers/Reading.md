@@ -2,6 +2,14 @@
 
 > **Why this module matters:** Not every workload needs a VM. Azure has three "managed compute" tracks: App Service (PaaS web apps), Azure Container Instances (one-off containers), and AKS (managed Kubernetes). The AZ-104 exam tests when to pick which and how to configure plans, slots, scaling, and the basics of node pools.
 
+> **Prerequisites for this module.** Before starting, you should be comfortable with:
+> - [Module 5](../Module-05-Virtual-Machines/Reading.md): VM sizing and availability concepts — App Service plans, ACI, and AKS node pools all sit on VMs underneath.
+> - [Module 2](../Module-02-Entra-ID-RBAC/Reading.md): managed identity — every modern App Service or AKS workload should authenticate to other Azure services via MI, not stored secrets.
+> - Container fundamentals: a working mental model of Docker images, layers, and `docker run`. If "container," "image," and "registry" are new, watch the Microsoft Learn "Introduction to Docker containers" 30-minute path before this module.
+> - For the AKS half: the concept of a Kubernetes pod, deployment, and service. AZ-104 does not test YAML, but the case-study questions assume you know what a pod is.
+>
+> If those are shaky, AZ-204 (Azure Developer) and Microsoft Learn's "Deploy containers to AKS" sandbox are the right warm-up.
+
 ---
 
 ## 🍕 A Story: The Restaurant That Stopped Owning Its Kitchen
@@ -331,6 +339,53 @@ You now know:
 
 ---
 
+## 📊 Case Study — Heineken's "Brewing a Better Connected Company" on Azure (2022–2024)
+
+**Situation.** Heineken N.V., the world's second-largest brewer (165+ breweries across 70 countries, ~85,000 employees), undertook the **"Brewing a Better Connected Company"** digital transformation in 2022. The challenge: hundreds of plant-floor applications (MES, OEE dashboards, beer-line PLC integration), a legacy monolithic e-commerce platform for B2B partners, plus a global SAP estate. The architecture was a patchwork of VMs in three data centers across the Netherlands and Mexico, with each acquisition (Cruzcampo, Tiger Beer, Lagunitas, Beavertown) layering its own application stack. Time-to-deploy a new market pilot was 6–9 months; cloud was minimal.
+
+**Decision.** Heineken partnered with Microsoft (announced at Microsoft Ignite 2022; refreshed publicly in 2024) on a tri-modal Azure compute strategy that lines up exactly with this module's three managed-compute options:
+1. **Azure Kubernetes Service (AKS)** for the new microservice-based e-commerce platform replacing the monolith. Node pools spanned three AZs in `westeurope`; Azure CNI Overlay was the networking mode (chosen to conserve VNet IPs given the org's 165-site network topology). **Cluster autoscaler** scaled nodes between 6 and 60 based on pending-pod pressure; **Horizontal Pod Autoscaler (HPA)** scaled per-service pods on RPS metrics fed from App Insights.
+2. **Azure App Service Premium v3** for the customer-facing partner portals (B2B "MyHeineken" and consumer apps), with **deployment slots** for blue-green releases, **Easy Auth** for Entra ID and social IdP sign-in, and **VNet integration** to talk to the AKS APIs over private endpoints.
+3. **Azure Container Instances (ACI)** for bursty integration jobs — a single ACI spins up to ingest a partner EDI feed, processes it, and exits. ACI was chosen over AKS for these because the *concurrency model* is "one job, one container, sub-30-sec startup, no orchestration overhead."
+
+The architecture mapped to public Microsoft customer references (*Heineken — Building a more connected, sustainable, agile business with Microsoft*, Microsoft customer stories, 2022; refreshed 2024) and to industry coverage (*Computing UK*, *Heineken modernises with Microsoft Azure*, 2023-06).
+
+**Outcome.** Heineken reported (Microsoft Ignite 2024 keynote; *Computing UK*, 2024-04):
+- **Time-to-deploy a new market pilot** fell from 6–9 months to ~6 weeks, primarily by replacing per-environment VM provisioning with AKS deployments parameterized by Helm charts.
+- **E-commerce platform peak burst capacity** went from "max-provisioned VMs at all times" to a 6-to-60-node AKS autoscaler that idled at 6 nodes overnight and burst on demand. Year-over-year compute cost dropped despite a 4× growth in transaction volume.
+- **Developer experience** improved: a new microservice goes from local Docker image to deployed in a staging slot in 90 minutes via Azure DevOps + ACR + AKS pipeline.
+
+**Lesson for the exam / for practitioners.** Heineken's architecture is the canonical "which managed compute?" decision tree:
+- *Long-running, stateful, microservice-architected platform with K8s ecosystem dependencies* → **AKS**.
+- *Stateless web app, slots-based blue/green, custom-domain + cert management* → **App Service Premium v3**.
+- *Bursty container jobs that run for 1–10 minutes and exit* → **ACI**.
+
+When AZ-104 hands you a scenario, map it to one of those three. The exam *never* uses the language "Heineken's MES platform" — but the patterns are identical to "a global brewer wants to deploy microservices in Western Europe with private network integration." That is the AKS answer.
+
+**Discussion (Socratic).**
+- **Q1.** Heineken chose Azure CNI **Overlay** mode for AKS rather than standard Azure CNI. Defend the choice on VNet-IP-conservation grounds, and identify the *one workload class* where Overlay's NAT semantics force you back to standard CNI. (Hint: workloads that require their pod IP to be directly reachable from on-prem.)
+- **Q2.** The team picked App Service Premium v3 over Premium v2 for new deployments. What does v3 buy you over v2 that justifies the price uplift? At what scale does App Service Isolated v2 (ASE) become the right move instead? Where does the line sit for a B2B portal with sensitive data?
+- **Q3.** Heineken uses ACI for EDI ingestion. A consultant suggests Azure Functions on a Consumption plan would be cheaper. Build the case for ACI and the case for Functions. What's the architectural fork — when is the container abstraction worth the cold-start cost difference?
+
+---
+
+> **Where this leads.**
+> - Inside this course: Module 7 covers the VNet design AKS and App Service VNet integration sit on; Module 8 covers the Front Door + Private Link origin pattern Heineken's portals use; Module 10 covers Container Insights and Workspace-based App Insights.
+> - Cross-course: [`08-Azure-AI-Engineer`](../../08-Azure-AI-Engineer/) modules deploy AI workloads on AKS using the same patterns; AZ-204 (Developer) goes deeper on App Service deployment slot mechanics.
+> - Practice: PE-2 has 7 questions from this module; Final Mock revisits with case-study synthesis (App Service + private endpoint + WAF in one scenario).
+
+---
+
+## 💬 Discussion — Socratic prompts
+
+1. **Slots warmup mechanics.** When you swap a staging slot to production, App Service warms up the staging instances first to avoid a cold-start hit. What is the *exact mechanism* (application-initialization configuration, slot-swap auto-warm-up via `applicationInitialization` paths) and why does it sometimes silently fail? When should you write custom *swap-with-preview* checks vs. trusting auto-swap?
+2. **Multi-tenant App Service Plans.** A single ASP can host multiple web apps sharing compute. When is "1 plan per app" justified, and when does the resource-pooling argument win? Construct the cost vs. blast-radius trade-off using a concrete example (3 small APIs + 1 big web app).
+3. **AKS networking modes head-to-head.** Compare Kubenet, Azure CNI, and Azure CNI Overlay on the three axes that matter for an enterprise: VNet-IP consumption, network-policy support, and on-prem reachability of pod IPs. Make a recommendation for a 30-microservice deployment in a /24 VNet (hint: this is the trick — /24 won't work everywhere).
+4. **ACI vs. AKS for short-lived jobs.** ACI has a per-second billing model and supports container groups (multiple containers sharing IP/storage). Why might you still keep these jobs *in* an AKS cluster — what does "everything in one cluster" buy you operationally that ACI gives up?
+5. **Application Gateway for Containers (AGFC) vs. AGIC.** Microsoft has begun positioning AGFC as the modern AKS ingress over AGIC (Application Gateway Ingress Controller). What's the architectural delta, and when does the older AGIC still make sense? (Hint: think about who manages the App Gateway resource.)
+
+---
+
 ## 📚 Further Reading (Optional)
 
 - 📖 [App Service plan tiers comparison](https://learn.microsoft.com/azure/app-service/overview-hosting-plans)
@@ -338,3 +393,5 @@ You now know:
 - 📖 [ACI overview](https://learn.microsoft.com/azure/container-instances/container-instances-overview)
 - 📖 [AKS concepts](https://learn.microsoft.com/azure/aks/concepts-clusters-workloads)
 - 📖 [Azure CNI Overlay networking](https://learn.microsoft.com/azure/aks/azure-cni-overlay)
+- 📖 Brendan Burns, *Kubernetes Up & Running*, 3rd ed., O'Reilly, 2022 — the AKS team co-founder's reference book; assumed reading for anyone running AKS at scale.
+- 📖 Microsoft *Well-Architected Framework — Performance Efficiency pillar* — the source for the autoscale-rule-design guidance referenced above.

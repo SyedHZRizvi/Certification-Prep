@@ -7,7 +7,7 @@
 
 ## Questions
 
-### Q1. The total number of Incoterms 2020 is:
+### Q1. The total number of Incoterms 2020 is: *(Remember)*
 A. 7
 B. 9
 C. 11
@@ -15,7 +15,7 @@ D. 13
 
 ---
 
-### Q2. Under EXW (Ex Works), the SELLER's responsibility is limited to:
+### Q2. Under EXW (Ex Works), the SELLER's responsibility is limited to: *(Understand)*
 A. Making goods available at the seller's premises
 B. Delivering to the port
 C. Loading onto the vessel
@@ -23,7 +23,7 @@ D. Paying import duties
 
 ---
 
-### Q3. Which Incoterm makes the SELLER responsible for everything including import duties?
+### Q3. Which Incoterm makes the SELLER responsible for everything including import duties? *(Remember)*
 A. EXW
 B. FOB
 C. CIF
@@ -31,7 +31,7 @@ D. DDP
 
 ---
 
-### Q4. CIF differs from CFR because CIF adds:
+### Q4. CIF differs from CFR because CIF adds: *(Understand)*
 A. Container shipping
 B. Carriage
 C. Insurance (Institute Cargo Clause C minimum)
@@ -39,7 +39,7 @@ D. Customs clearance
 
 ---
 
-### Q5. Incoterms 2020 renamed DAT to:
+### Q5. Incoterms 2020 renamed DAT to: *(Remember)*
 A. DPU
 B. DDP
 C. DAP
@@ -47,7 +47,7 @@ D. CIP
 
 ---
 
-### Q6. CIP requires the seller to procure insurance at:
+### Q6. CIP requires the seller to procure insurance at: *(Understand)*
 A. Institute Cargo Clause C (minimum)
 B. Institute Cargo Clause A (broad coverage)
 C. No insurance required
@@ -55,7 +55,7 @@ D. Marine cargo policy only
 
 ---
 
-### Q7. ICC recommends FCA over FOB for which type of shipment?
+### Q7. ICC recommends FCA over FOB for which type of shipment? *(Apply)*
 A. Bulk liquids
 B. Containerized cargo
 C. Air freight that has switched modes
@@ -63,7 +63,7 @@ D. Pipeline shipments
 
 ---
 
-### Q8. HS codes are globally harmonized at how many digits?
+### Q8. HS codes are globally harmonized at how many digits? *(Remember)*
 A. 4
 B. 6
 C. 8
@@ -71,7 +71,7 @@ D. 10
 
 ---
 
-### Q9. An anti-dumping duty is imposed when:
+### Q9. An anti-dumping duty is imposed when: *(Understand)*
 A. Goods damaged in transit
 B. Import is priced below fair value (dumping)
 C. Goods are recycled
@@ -79,7 +79,7 @@ D. Sales are domestic
 
 ---
 
-### Q10. The MFN tariff refers to:
+### Q10. The MFN tariff refers to: *(Remember)*
 A. Most Favorable Name tariff
 B. Standard rate WTO members give each other
 C. Marine Freight Notice
@@ -87,7 +87,7 @@ D. Mexican Free Network
 
 ---
 
-### Q11. The Bill of Lading PRIMARILY serves as:
+### Q11. The Bill of Lading PRIMARILY serves as: *(Remember)*
 A. A customs entry
 B. A freight contract and receipt of cargo
 C. A trade compliance certificate
@@ -95,7 +95,7 @@ D. An export license
 
 ---
 
-### Q12. UCP 600 is the ICC rulebook governing:
+### Q12. UCP 600 is the ICC rulebook governing: *(Remember)*
 A. Incoterms
 B. Letters of credit
 C. Air waybills
@@ -103,7 +103,7 @@ D. Free trade zones
 
 ---
 
-### Q13. The LC party that initially issues the credit is the:
+### Q13. The LC party that initially issues the credit is the: *(Remember)*
 A. Beneficiary
 B. Issuing bank (buyer's bank)
 C. Advising bank
@@ -111,7 +111,7 @@ D. Confirming bank
 
 ---
 
-### Q14. A revolving LC is BEST used for:
+### Q14. A revolving LC is BEST used for: *(Apply)*
 A. A single one-off purchase
 B. Repeated shipments under similar terms
 C. A standby guarantee
@@ -119,7 +119,7 @@ D. Importing controlled goods
 
 ---
 
-### Q15. A US importer expecting a €1M payable in 60 days at risk of currency rise should typically:
+### Q15. A US importer expecting a €1M payable in 60 days at risk of currency rise should typically: *(Apply)*
 A. Wait and pay spot
 B. Lock the rate with a 60-day forward contract
 C. Use a swap
@@ -127,7 +127,7 @@ D. Pay in USD and let the supplier convert
 
 ---
 
-### Q16. A free trade zone (FTZ) PRIMARILY benefits importers by:
+### Q16. A free trade zone (FTZ) PRIMARILY benefits importers by: *(Evaluate)*
 A. Eliminating all duty
 B. Deferring duty until goods leave the zone for the domestic market
 C. Removing inspection
@@ -135,7 +135,7 @@ D. Replacing customs entirely
 
 ---
 
-### Q17. The ATA Carnet allows:
+### Q17. The ATA Carnet allows: *(Remember)*
 A. Permanent duty-free import
 B. Temporary admission of goods like trade-show samples
 C. Confiscation of goods
@@ -143,7 +143,7 @@ D. Free freight
 
 ---
 
-### Q18. A buyer purchasing goods under DAP must:
+### Q18. A buyer purchasing goods under DAP must: *(Apply)*
 A. Arrange main carriage
 B. Clear import customs and unload
 C. Pay export duties
@@ -151,7 +151,7 @@ D. Buy insurance
 
 ---
 
-### Q19. Country of origin matters MOST for:
+### Q19. Country of origin matters MOST for: *(Analyze)*
 A. Carrier selection
 B. FTA preferential tariff qualification
 C. Pallet specification
@@ -159,7 +159,7 @@ D. Bonded warehouse choice
 
 ---
 
-### Q20. Under CFR, the seller is responsible for cost up to ___ but risk passes when ___:
+### Q20. Under CFR, the seller is responsible for cost up to ___ but risk passes when ___: *(Analyze)*
 A. Destination port; goods loaded on board origin port
 B. Origin port; arrival
 C. Destination port; arrival
@@ -167,7 +167,7 @@ D. Origin port; loading
 
 ---
 
-### Q21. C-TPAT, AEO, and PIP are all:
+### Q21. C-TPAT, AEO, and PIP are all: *(Remember)*
 A. Tariff systems
 B. Trusted-trader / supply chain security programs
 C. LC types
@@ -175,7 +175,7 @@ D. Incoterms variants
 
 ---
 
-### Q22. An exporter who wants minimum involvement after the cargo is handed to the carrier at the origin should pick:
+### Q22. An exporter who wants minimum involvement after the cargo is handed to the carrier at the origin should pick: *(Evaluate)*
 A. EXW
 B. FCA
 C. DDP
@@ -183,7 +183,7 @@ D. CIF
 
 ---
 
-### Q23. A French importer of Brazilian coffee uses an Incoterm where the seller bears cost and risk to the French port of entry. The most appropriate is:
+### Q23. A French importer of Brazilian coffee uses an Incoterm where the seller bears cost and risk to the French port of entry. The most appropriate is: *(Apply)*
 A. EXW
 B. DAP at French port
 C. FOB Brazilian port
@@ -191,7 +191,7 @@ D. CFR French port — risk passes earlier at Brazilian port
 
 ---
 
-### Q24. A natural hedge against FX exposure means:
+### Q24. A natural hedge against FX exposure means: *(Understand)*
 A. Hedging with a forward
 B. Invoicing in the currency that matches your cost base
 C. Holding gold
@@ -199,7 +199,7 @@ D. Switching to barter
 
 ---
 
-### Q25. WTO customs valuation begins with:
+### Q25. WTO customs valuation begins with: *(Remember)*
 A. Computed value
 B. Transaction value
 C. Deductive value
@@ -207,7 +207,7 @@ D. Fallback method
 
 ---
 
-### Q26. A confirming bank in an LC:
+### Q26. A confirming bank in an LC: *(Understand)*
 A. Replaces the issuing bank
 B. Adds its own payment guarantee to the LC
 C. Approves the goods

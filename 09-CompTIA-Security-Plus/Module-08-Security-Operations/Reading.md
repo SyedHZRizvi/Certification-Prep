@@ -2,6 +2,13 @@
 
 > **Why this module matters:** Domain 4 (Security Operations) is **28%** of the Sec+ exam — the largest single domain. This is where the SOC actually lives: SIEM, SOAR, incident response, forensics, threat hunting, vulnerability management. Master this and you're more than a quarter of the way to passing.
 
+> **Prerequisites for this module.** Before starting, you should be comfortable with:
+> - [Threat actor types, motivations, TTPs](../Module-04-Threats-Threat-Actors/Reading.md) — needed to interpret what you're detecting.
+> - [Attack indicators](../Module-05-Vulnerabilities-Attacks/Reading.md) — the IOCs/IOAs the SIEM is looking for.
+> - [Network appliances and log sources](../Module-06-Network-Security/Reading.md) — what feeds the SIEM.
+> - [Endpoint EDR and cloud telemetry](../Module-07-Endpoint-Mobile-Cloud-Security/Reading.md) — major detection sources.
+> - General Linux/Windows admin literacy — needed for forensics, scripting, and EDR concepts.
+
 ---
 
 ## 🍕 A Story: The Hospital ER for Computers
@@ -127,7 +134,7 @@ Important: **NetFlow vs sFlow vs IPFIX**
 
 ## 🚨 Incident Response (IR) — The Lifecycle
 
-Sec+ uses **NIST SP 800-61** IR lifecycle. Memorize the phases **in order**:
+Sec+ uses the **NIST SP 800-61 Rev 2** IR lifecycle (Cichonski, Millar, Grance & Scarfone, *Computer Security Incident Handling Guide*, August 2012). The successor **SP 800-61 Rev 3** (final, April 2024) restructures the lifecycle around the NIST Cybersecurity Framework 2.0 functions (Govern, Identify, Protect, Detect, Respond, Recover) but Sec+ as of 2026 still tests on the Rev 2 six-phase model below. Memorize the phases **in order**:
 
 ```
 1. PREPARATION
@@ -333,6 +340,30 @@ A PBQ would let you drag the actions into ordered slots.
 
 ---
 
+## 📊 Case Study — MGM Resorts Ransomware (September 2023)
+
+**Situation.** **MGM Resorts International** operates 31 hotel-casino properties (Bellagio, MGM Grand, ARIA, Mandalay Bay, Cosmopolitan, Borgata, etc.), 75,000+ employees, ~$14B annual revenue. MGM's IT estate spans hospitality (Property Management Systems), gaming (slot-machine and table-game floor systems), point-of-sale, payroll, loyalty programs, and reservations. In September 2023 MGM was running a cloud-first identity strategy on **Okta** as its primary IdP and **Microsoft Active Directory** on-prem for legacy systems.
+
+**Decision.** On **10 September 2023** a young English-speaking attacker (later named **"Scattered Spider"** / UNC3944 / 0ktapus / Muddled Libra — overlapping with the Okta-targeting group from Module 3) used **publicly available LinkedIn data** to identify an MGM IT employee, then called the **MGM IT help desk** impersonating that employee, claiming to be locked out. The help-desk technician — following standard procedures — verified the caller's identity using *publicly available* corporate-directory information (employee ID, manager name, last 4 of SSN — which had been previously breached elsewhere). The technician then **reset the employee's MFA** and gave the attacker an Okta authentication code. Total elapsed time: **~10 minutes**. With the IT employee's identity, the attacker enrolled their own MFA device, gained Okta admin access, escalated to Microsoft Azure (Entra ID) admin, and from there acquired domain-admin on the on-prem AD forest. Within hours, the attacker deployed **ALPHV/BlackCat ransomware** across thousands of servers.
+
+**Outcome.** MGM's IT teams responded by **shutting down nearly every internet-facing system** — including reservations, room keys, slot machines, ATMs, restaurant POS, and the digital casino-floor systems — for **10 days** (10-20 September 2023, with full restoration not until late September). Guests checked in with handwritten keys, couldn't use room charges, found slot machines bricked. The MGM mobile app, websites, and reservation systems went dark. Public statements were silent for days; SEC 8-K disclosure on **12 September 2023**. Total reported impact: **$100M+ in revenue loss** (MGM Q3 2023 earnings call), plus ~$10M in IR costs, plus class-action litigation continuing into 2024-2025. Caesar's Entertainment — separately attacked by the *same* group days earlier — had quietly paid **~$15M ransom** and avoided MGM's public ordeal. The contrast became a case study in itself: pay-vs-don't-pay calculus.
+
+The **same week**, the FTC and SEC opened investigations. CISA published an advisory on Scattered Spider TTPs (AA23-320A, November 2023). MGM's CFO later acknowledged the recovery cost was *less* than the demanded ransom — vindicating the no-pay decision financially even setting aside legal/ethical concerns.
+
+**Lesson for the exam / for practitioners.** MGM is the textbook 2020s SOC case:
+- **Vishing + help-desk social engineering** (Module 5) — 10 minutes of phone call defeated MFA. The attack vector wasn't a 0-day; it was a *process* gap. Sec+ tests: "what control would have prevented this?" → caller-callback verification, MFA reset only via in-person / video-verified protocol, **just-in-time admin elevation** with separate approval.
+- **Privilege escalation in cloud-and-on-prem hybrid** (Module 3, 7) — Okta → Azure → on-prem AD pivot. MGM's hybrid identity design meant compromising Okta cascaded to domain admin. PAM (Privileged Access Management) would have required just-in-time elevation for each tier.
+- **IR lifecycle execution** (this module) — MGM's NIST IR phases unfolded in real time: Detection (Sept 10), Containment (Sept 11, by shutting *everything* off — extreme containment), Eradication + Recovery (Sept 11-20), Lessons Learned (ongoing through 2024). The "shut everything down" choice is a textbook **extreme containment** — Sec+ tests when this is and isn't appropriate.
+- **Tabletop exercises and IR playbook readiness** — MGM had IR plans but had not tabletop-tested the "help-desk-was-social-engineered + ransomware + can't process payments" scenario. The 10-day outage suggests the playbook addressed individual systems but not full-stack outage.
+- **Threat intel sharing** — CISA's AA23-320A advisory listed Scattered Spider TTPs derived in part from MGM/Caesar's incidents. ISACs (Module 4) — particularly the Gaming-ISAC and IT-ISAC — distributed IOCs and detection rules across casinos and other targeted sectors within weeks.
+
+**Discussion (Socratic).**
+- **Q1:** Caesar's paid ~$15M and avoided MGM's 10-day public outage; MGM didn't pay and lost $100M+ in revenue. Strictly financially, Caesar's "won." Build the case that MGM's no-pay decision was nonetheless correct — referencing OFAC ransom-payment guidance, incentive effects on future attacks, and stakeholder ethics. Then argue the opposing view. Which would you defend at a board-of-directors meeting?
+- **Q2:** The compromised vector was a help-desk MFA reset. Designing the *next* MGM help desk: how would you balance ITIL/customer-service goals (fast resolution, low friction) against zero-trust security (callback verification, in-person verification, manager approval)? At what scale is each level economically defensible?
+- **Q3:** MGM's "containment by total shutdown" preserved evidence and stopped lateral movement, but cost $100M in revenue. A more surgical containment might have cost less directly but allowed undetected re-entry. As IR commander on the night of 10 September, what containment criteria would you apply (decision rule, not a single answer) — and how would you defend that rule in a post-incident board review?
+
+---
+
 ## ⚠️ Exam Traps & Common Misconceptions
 
 | Misconception | Reality |
@@ -414,13 +445,31 @@ You now know:
 3. 📋 [Cheat-Sheet.md](./Cheat-Sheet.md)
 4. ➡️ [Module 9 — GRC, Risk & Compliance](../Module-09-GRC-Risk-Compliance/Reading.md)
 
+> **Where this leads.**
+> - Inside this course: [Module 9](../Module-09-GRC-Risk-Compliance/Reading.md) covers BCP/DR — the post-recovery business-continuity planning that complements technical IR; [Module 10](../Module-10-Application-Data-Security/Reading.md) covers application-layer prevention.
+> - Cross-course: AWS Solutions Architect (course 04) covers AWS Security Hub, CloudTrail, GuardDuty — the AWS-native SIEM stack. Azure courses cover Sentinel.
+> - Practice: Practice Exam 2 has ~12 SOC/IR/forensics questions; Final Mock has ~16 (the largest module slice). Order-of-volatility and NIST IR phase order are nearly guaranteed exam questions.
+
 ---
 
 ## 📚 Further Reading (Optional)
 
-- 📖 [NIST SP 800-61 Rev 2 — Computer Security Incident Handling Guide](https://csrc.nist.gov/publications/detail/sp/800-61/rev-2/final)
-- 📖 [NIST SP 800-86 — Guide to Integrating Forensic Techniques](https://csrc.nist.gov/publications/detail/sp/800-86/final)
-- 📖 [MITRE ATT&CK](https://attack.mitre.org/)
-- 📖 [CISA Known Exploited Vulnerabilities Catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)
-- 📖 [FIRST CVSS Calculator](https://www.first.org/cvss/calculator/3.1)
-- 📖 [EPSS](https://www.first.org/epss/)
+**Primary sources:**
+- 📄 NIST SP 800-61 Rev 2 (2012). [*Computer Security Incident Handling Guide*](https://csrc.nist.gov/publications/detail/sp/800-61/rev-2/final). (The IR lifecycle Sec+ tests on.)
+- 📄 NIST SP 800-61 Rev 3 (2024, draft → final). The successor under NIST CSF 2.0. (Sec+ will eventually shift to this; track CompTIA exam-objective updates.)
+- 📄 NIST SP 800-86 (2006). [*Guide to Integrating Forensic Techniques into Incident Response*](https://csrc.nist.gov/publications/detail/sp/800-86/final). (Order-of-volatility canonical source.)
+- 📄 FIRST (Forum of Incident Response and Security Teams). CVSS v4.0 (released November 2023). [first.org/cvss](https://www.first.org/cvss/).
+- 📄 FIRST. [EPSS — Exploit Prediction Scoring System](https://www.first.org/epss/).
+- 📄 CISA. [Known Exploited Vulnerabilities Catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) (updated continually).
+- 📄 MITRE ATT&CK v15 (April 2024) — [attack.mitre.org](https://attack.mitre.org/).
+
+**Case-study sources (MGM):**
+- 📄 MGM Resorts International, SEC 8-K filing, 12 September 2023; subsequent Q3 2023 earnings call (8 November 2023).
+- 📄 CISA Advisory AA23-320A (November 2023). *Scattered Spider*.
+- 📄 Krebs, B. (2023). MGM Resorts coverage on [Krebs on Security](https://krebsonsecurity.com/), September-October 2023.
+
+**Practitioner / hands-on:**
+- 📖 The Volatility Foundation. *Volatility 3* — memory-forensics framework.
+- 📖 SANS Reading Room — annual SOC and DFIR papers.
+- 📖 The DFIR Report — public IR walkthroughs of real ransomware engagements.
+- 📖 Anderson, R. (2020). *Security Engineering* (3rd ed.). Chapters on intrusion detection and incident response.

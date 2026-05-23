@@ -8,7 +8,7 @@ sitemap: false
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Cert Hub — PM · Cloud · AI · Cybersecurity · Supply Chain Certifications by Syed Humayun Zafar Rizvi</title>
-  <meta name="description" content="A comprehensive, story-driven self-study hub for 13 industry-recognized certifications spanning project management (PSM I, PMP), cloud (AWS CLF-C02, AWS SAA-C03, AZ-900, AZ-104), AI / GenAI (AIF-C01, AI-102), cybersecurity (CompTIA Security+ SY0-701), and international supply chain (ASCM CSCP, CPIM, CLTD, and ISM CPSM). 112 modules, 39 full-length mock exams, 8,000+ practice questions. Designed and authored by Syed Humayun Zafar Rizvi, Toronto, Canada." />
+  <meta name="description" content="A comprehensive, story-driven self-study hub for 18 industry-recognized certifications built to the teaching &amp; learning gold standard of Cornell, Harvard, and Stanford — spanning Project Management (Scrum Master, PMP), Cloud (AWS CLF-C02, AWS SAA-C03, AZ-900, AZ-104), AI &amp; GenAI (AIF-C01, AI-102), Cybersecurity (CompTIA Security+ SY0-701), International Supply Chain (ASCM CSCP, CPIM, CLTD, ISM CPSM), and AI-Based Digital Marketing (5-course ladder). 158 modules, 54 full-length mock exams, 8,000+ practice questions. Designed and authored by Syed Humayun Zafar Rizvi, Toronto, Canada." />
   <meta name="author" content="Syed Humayun Zafar Rizvi" />
   <meta name="copyright" content="© 2026 Syed Humayun Zafar Rizvi. All Rights Reserved." />
   <meta name="robots" content="noindex, nofollow, noarchive, noimageindex, nosnippet" />
@@ -24,7 +24,7 @@ sitemap: false
   <!-- <meta name="google-site-verification" content="YOUR_GOOGLE_CODE" /> -->
   <!-- <meta name="msvalidate.01" content="YOUR_BING_CODE" /> -->
   <meta property="og:title" content="The Cert Hub — PM · Cloud · AI · Cybersecurity · Supply Chain Certifications" />
-  <meta property="og:description" content="Pass PSM I, PMP, AWS, Azure, GenAI, CompTIA Security+, and ASCM/ISM supply chain — 13 industry certs taught the same story-driven way. By Syed Humayun Zafar Rizvi (Toronto, Canada)." />
+  <meta property="og:description" content="Pass Scrum Master, PMP, AWS, Azure, GenAI, CompTIA Security+, ASCM/ISM Supply Chain, and AI-Based Digital Marketing — 18 industry certs built to the teaching &amp; learning gold standard of Cornell, Harvard, and Stanford. By Syed Humayun Zafar Rizvi (Toronto, Canada)." />
   <meta property="og:type" content="website" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🎓%3C/text%3E%3C/svg%3E" />
   <script src="https://cdn.tailwindcss.com"></script>
@@ -83,11 +83,108 @@ sitemap: false
       box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
     }
     .pill {
-      display: inline-flex; align-items: center; gap: .375rem;
-      padding: .25rem .75rem; border-radius: 9999px;
-      font-size: .75rem; font-weight: 600; letter-spacing: .02em;
+      display: inline-flex; align-items: center; gap: .5rem;
+      padding: .55rem 1.15rem; border-radius: 9999px;
+      font-size: 1rem; font-weight: 600; letter-spacing: .02em;
+    }
+    .pill .pill-emoji { font-size: 1.25rem; line-height: 1; }
+    @media (min-width: 640px) {
+      .pill { padding: .65rem 1.35rem; font-size: 1.0625rem; }
+      .pill .pill-emoji { font-size: 1.375rem; }
     }
     .nav-blur { backdrop-filter: saturate(150%) blur(12px); }
+
+    /* ============== CERT CARDS (homepage course tiles) ============== */
+    .cert-card {
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+      transition: transform .35s cubic-bezier(0.34, 1.56, 0.64, 1),
+                  box-shadow .35s ease,
+                  border-color .35s ease;
+    }
+    .cert-card:hover {
+      transform: translateY(-10px) scale(1.025);
+      box-shadow: 0 35px 70px -15px rgba(99,102,241,0.35),
+                  0 0 0 1px rgba(167,139,250,0.3);
+    }
+    .cert-card-icon {
+      transition: transform .4s cubic-bezier(0.34, 1.56, 0.64, 1);
+      display: inline-block;
+    }
+    .cert-card:hover .cert-card-icon {
+      transform: scale(1.15) rotate(-3deg);
+    }
+    .cert-card .shine-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(110deg, transparent 35%, rgba(255,255,255,0.18) 50%, transparent 65%);
+      transform: translateX(-110%);
+      transition: transform .8s cubic-bezier(0.4, 0, 0.2, 1);
+      pointer-events: none;
+      z-index: 1;
+    }
+    .cert-card:hover .shine-overlay { transform: translateX(110%); }
+    .cert-card-cta {
+      transition: background-color .25s ease, transform .25s ease;
+    }
+    .cert-card:hover .cert-card-cta {
+      background-color: rgba(255,255,255,0.28);
+      transform: translateX(4px);
+    }
+
+    /* ============== SCROLL REVEAL ============== */
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity .8s cubic-bezier(0.16, 1, 0.3, 1),
+                  transform .8s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: opacity, transform;
+    }
+    .reveal.in-view {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ============== CATEGORY BADGE PULSE ============== */
+    @keyframes cat-pulse {
+      0%, 100% { transform: scale(1); box-shadow: 0 25px 50px -12px rgba(167,139,250,0.4); }
+      50%      { transform: scale(1.04); box-shadow: 0 30px 60px -12px rgba(167,139,250,0.55); }
+    }
+    .cat-badge {
+      animation: cat-pulse 4s ease-in-out infinite;
+    }
+
+    /* ============== GOLD-STANDARD ANIMATED GRADIENT ============== */
+    .gold-banner {
+      background-size: 200% 100% !important;
+      animation: gold-shift 8s ease-in-out infinite;
+    }
+    @keyframes gold-shift {
+      0%, 100% { background-position: 0% 50%; }
+      50%      { background-position: 100% 50%; }
+    }
+
+    /* ============== CURRICULUM SECTION DRAMA ============== */
+    .curriculum-bg {
+      background:
+        radial-gradient(circle at 12% 20%, rgba(99,102,241,0.07), transparent 45%),
+        radial-gradient(circle at 88% 15%, rgba(236,72,153,0.06), transparent 40%),
+        radial-gradient(circle at 50% 90%, rgba(59,130,246,0.07), transparent 45%);
+    }
+
+    /* ============== REDUCED MOTION ============== */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+      .reveal {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+    }
 
     /* ============== AUTHOR BADGE (Hero) ============== */
     .author-badge {
@@ -223,7 +320,7 @@ sitemap: false
 
   <!-- ============== NAV ============== -->
   <nav class="sticky top-0 z-50 bg-white/85 nav-blur border-b border-slate-200/60">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+    <div class="max-w-[1700px] mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
       <a href="#" class="flex items-center gap-2 font-extrabold text-lg">
         <span class="text-2xl">🎓</span>
         <span>The Cert Hub</span>
@@ -232,9 +329,8 @@ sitemap: false
         <a href="#curriculum" class="hover:text-slate-900 transition">Courses</a>
         <a href="#how" class="hover:text-slate-900 transition">How It Works</a>
         <a href="#author" class="hover:text-slate-900 transition">About the Creator</a>
-        <a href="#start" class="hover:text-slate-900 transition">Get Started</a>
       </div>
-      <a href="#start" class="inline-flex items-center gap-1.5 bg-slate-900 hover:bg-slate-800 text-white text-sm font-semibold px-4 py-2 rounded-lg transition">
+      <a href="#curriculum" class="inline-flex items-center gap-1.5 bg-slate-900 hover:bg-slate-800 text-white text-sm font-semibold px-4 py-2 rounded-lg transition">
         Start Learning →
       </a>
     </div>
@@ -244,49 +340,69 @@ sitemap: false
   <section class="relative overflow-hidden bg-slate-950 text-white">
     <div class="absolute inset-0 grain opacity-90"></div>
     <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(99,102,241,0.25),_transparent_60%)]"></div>
-    <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-24 md:pt-28 md:pb-32 text-center">
-      <div class="author-badge mb-7">
-        <div class="ab-avatar">SR</div>
-        <div>
-          <span class="ab-label">Designed &amp; authored by</span>
-          <span class="ab-name">Syed Humayun Zafar Rizvi</span>
+    <div class="relative max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-24 md:pt-28 md:pb-32 text-center">
+      <!-- (Author badge moved off the hero — "About the Creator" section at the bottom remains the dedicated attribution.) -->
+
+      <!-- ============== GOLD-STANDARD BANNER (Cornell · Harvard · Stanford) — big & prominent ============== -->
+      <div class="mb-12 md:mb-14 flex flex-col items-center gap-6">
+        <div class="gold-banner inline-flex items-center gap-5 md:gap-7 px-8 py-5 md:px-12 md:py-6 rounded-2xl
+                    bg-gradient-to-r from-amber-500/30 via-yellow-400/25 to-orange-500/30
+                    ring-2 ring-amber-300/60
+                    shadow-[0_0_80px_rgba(251,191,36,0.4),inset_0_1px_0_rgba(255,255,255,0.15)]
+                    backdrop-blur-sm">
+          <span class="text-4xl md:text-5xl drop-shadow-lg">🏛️</span>
+          <div class="text-center">
+            <div class="text-[11px] md:text-xs font-extrabold tracking-[0.32em] uppercase text-amber-300/90 mb-1.5">— The Gold Standard —</div>
+            <div class="display text-2xl md:text-3xl lg:text-4xl font-extrabold uppercase tracking-[0.1em]
+                        bg-gradient-to-r from-amber-100 via-white to-amber-100 bg-clip-text text-transparent">
+              Cornell · Harvard · Stanford
+            </div>
+          </div>
+          <span class="text-4xl md:text-5xl drop-shadow-lg">🏛️</span>
         </div>
-        <div class="ab-divider"></div>
-        <span class="ab-location">📍 Toronto, Canada</span>
-        <div class="ab-divider"></div>
-        <span class="ab-pulse"></span>
+        <p class="text-lg md:text-xl lg:text-2xl text-amber-100/95 max-w-3xl px-4 leading-relaxed font-medium">
+          Every course built to the teaching &amp; learning
+          <strong class="text-white font-bold">gold standard of Ivy League and Stanford-tier graduate programs</strong> —
+          Harvard-style case studies, Stanford rigor, Cornell depth, applied to every certification.
+        </p>
       </div>
+
       <h1 class="display text-5xl sm:text-6xl md:text-7xl font-extrabold leading-[1.05] mb-6">
         Pass Your Next<br class="hidden sm:block" />
         Big <span class="gradient-text-blue">Certification</span>.
       </h1>
-      <p class="text-lg sm:text-xl text-slate-300 max-w-3xl mx-auto mb-5 leading-relaxed">
-        Thirteen industry-recognized exams across
+      {%- comment -%} cert_count is set later in the file (stats block); but Liquid is one-pass, so we recompute it here. {%- endcomment -%}
+      {%- assign hero_cert_count = site.data.navigation.tracks | size -%}
+      <p class="text-xl sm:text-2xl text-slate-300 max-w-3xl mx-auto mb-5 leading-relaxed">
+        {{ hero_cert_count }} industry-recognized credentials across
         <strong class="text-white">Project Management</strong>,
         <strong class="text-white">Cloud</strong>,
         <strong class="text-white">AI / GenAI</strong>,
-        <strong class="text-white">Cybersecurity</strong>, and
-        <strong class="text-white">Supply Chain</strong> — taught the same story-driven way
-        that's made our PSM I &amp; PMP tracks work for thousands of students.
+        <strong class="text-white">Cybersecurity</strong>,
+        <strong class="text-white">Supply Chain</strong>, and
+        <strong class="text-white">AI-Based Digital Marketing</strong> — taught the same story-driven way
+        that's made our Scrum Master &amp; PMP tracks work for thousands of students.
       </p>
-      <div class="flex flex-wrap justify-center gap-1.5 mb-8 max-w-3xl mx-auto px-4">
-        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20" style="font-size:11px;">🏃 PSM I</span>
-        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20" style="font-size:11px;">📊 PMP</span>
-        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20" style="font-size:11px;">☁️ AWS CLF-C02</span>
-        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20" style="font-size:11px;">🏗️ AWS SAA-C03</span>
-        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20" style="font-size:11px;">🤖 AIF-C01</span>
-        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20" style="font-size:11px;">🌥️ AZ-900</span>
-        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20" style="font-size:11px;">🛠️ AZ-104</span>
-        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20" style="font-size:11px;">🧠 AI-102</span>
-        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20" style="font-size:11px;">🛡️ Security+ SY0-701</span>
-        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20" style="font-size:11px;">🏭 ASCM CPIM</span>
-        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20" style="font-size:11px;">🔗 ASCM CSCP</span>
-        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20" style="font-size:11px;">🚛 ASCM CLTD</span>
-        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20" style="font-size:11px;">🤝 ISM CPSM</span>
+      <div class="flex flex-wrap justify-center gap-1.5 mb-10 max-w-5xl mx-auto px-4">
+        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20">🏃 Scrum Master</span>
+        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20">📊 PMP</span>
+        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20">☁️ AWS CLF-C02</span>
+        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20">🏗️ AWS SAA-C03</span>
+        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20">🤖 AIF-C01</span>
+        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20">🌥️ AZ-900</span>
+        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20">🛠️ AZ-104</span>
+        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20">🧠 AI-102</span>
+        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20">🛡️ Security+ SY0-701</span>
+        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20">🏭 ASCM CPIM</span>
+        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20">🔗 ASCM CSCP</span>
+        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20">🚛 ASCM CLTD</span>
+        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20">🤝 ISM CPSM</span>
+        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20">🚀 Digital Marketing — Foundations</span>
+        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20">🎯 Digital Marketing — Practitioner</span>
+        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20">📈 Digital Marketing — Strategist</span>
+        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20">💼 Digital Marketing — Entrepreneur</span>
+        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20">🏆 Capstone Portfolio</span>
       </div>
-      <p class="text-sm text-slate-400 max-w-xl mx-auto mb-10">
-        Created by <strong class="text-white">Syed Humayun Zafar Rizvi</strong> · Toronto, Canada · © 2026 · All Rights Reserved
-      </p>
       <div class="flex flex-col sm:flex-row gap-3 justify-center">
         <a href="#curriculum" class="inline-flex items-center justify-center gap-2 bg-white text-slate-900 font-semibold px-7 py-3.5 rounded-xl hover:bg-slate-100 transition shadow-lg shadow-indigo-500/20">
           Choose Your Path →
@@ -301,7 +417,7 @@ sitemap: false
       {% assign mock_exam_count = cert_count | times: 3 %}
       {% assign total_modules = 0 %}
       {% for t in site.data.navigation.tracks %}{% assign m = t.modules | size %}{% assign total_modules = total_modules | plus: m %}{% endfor %}
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto mt-16 pt-12 border-t border-white/10">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto mt-16 pt-12 border-t border-white/10">
         <div>
           <div class="text-3xl md:text-4xl font-extrabold gradient-text-blue">{{ cert_count }}</div>
           <div class="text-sm text-slate-400 mt-1">Industry certifications</div>
@@ -323,10 +439,11 @@ sitemap: false
   </section>
 
   <!-- ============== CURRICULUM ============== -->
-  <section id="curriculum" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
-    <div class="text-center mb-14">
+  <section id="curriculum" class="curriculum-bg">
+    <div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
+    <div class="reveal text-center mb-14">
       <h2 class="text-4xl md:text-5xl font-extrabold mb-4">What You'll Master</h2>
-      <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+      <p class="text-xl md:text-2xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
         {{ total_modules }} modules across {{ cert_count }} certifications · ~{{ site.data.site_stats.total_hours_estimate }} hours of focused content. Click any topic to start.
       </p>
     </div>
@@ -334,400 +451,293 @@ sitemap: false
     <div class="space-y-14">
 
       <!-- ===== category: Project Management (2 cards, centered 2-col) ===== -->
-      <div>
+      <div class="reveal">
         <div class="text-center mb-10">
-          <div class="inline-flex items-center justify-center w-20 h-20 md:w-24 md:h-24 rounded-2xl bg-gradient-to-br from-blue-500 via-violet-500 to-pink-500 text-4xl md:text-5xl mb-5 shadow-xl shadow-violet-500/40 ring-4 ring-white">
+          <div class="cat-badge inline-flex items-center justify-center w-20 h-20 md:w-24 md:h-24 rounded-2xl bg-gradient-to-br from-blue-500 via-violet-500 to-pink-500 text-4xl md:text-5xl mb-5 shadow-xl shadow-violet-500/40 ring-4 ring-white">
             <span class="drop-shadow-lg">📊</span>
           </div>
-          <h3 class="display text-3xl md:text-4xl font-extrabold mb-2">Project Management</h3>
-          <p class="text-slate-600 text-sm md:text-base">2 flagship certifications · the foundation of professional delivery</p>
+          <h3 class="display text-4xl md:text-5xl font-extrabold mb-2">Project Management</h3>
+          <p class="text-slate-600 text-base md:text-lg">2 flagship certifications · the foundation of professional delivery</p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-[1100px] mx-auto">
 
-      <!-- Scrum modules list -->
-      <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden">
-        <div class="p-6 bg-gradient-to-br from-blue-600 to-violet-700 text-white">
-          <div class="flex items-center justify-between">
-            <div>
-              <h3 class="display text-2xl font-extrabold">Scrum Master Track</h3>
-              <p class="text-blue-100 text-sm mt-1">8 modules · ~30 hours</p>
-            </div>
-            <span class="text-3xl">🏃</span>
-          </div>
-        </div>
-        <ol class="divide-y divide-slate-100 text-sm">
-          <li><a href="01-Scrum-Master/Module-01-Agile-Mindset/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-blue-100 text-blue-700 text-xs font-bold flex items-center justify-center shrink-0">1</span>The Agile Mindset</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="01-Scrum-Master/Module-02-Scrum-Framework/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-blue-100 text-blue-700 text-xs font-bold flex items-center justify-center shrink-0">2</span>The Scrum Framework</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="01-Scrum-Master/Module-03-Roles/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-blue-100 text-blue-700 text-xs font-bold flex items-center justify-center shrink-0">3</span>The Roles</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="01-Scrum-Master/Module-04-Events/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-blue-100 text-blue-700 text-xs font-bold flex items-center justify-center shrink-0">4</span>The 5 Events</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="01-Scrum-Master/Module-05-Artifacts/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-blue-100 text-blue-700 text-xs font-bold flex items-center justify-center shrink-0">5</span>Artifacts &amp; Commitments</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="01-Scrum-Master/Module-06-Done-Estimation/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-blue-100 text-blue-700 text-xs font-bold flex items-center justify-center shrink-0">6</span>Done &amp; Estimation</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="01-Scrum-Master/Module-07-Servant-Leadership/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-blue-100 text-blue-700 text-xs font-bold flex items-center justify-center shrink-0">7</span>Servant Leadership</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="01-Scrum-Master/Module-08-Scaling/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-blue-100 text-blue-700 text-xs font-bold flex items-center justify-center shrink-0">8</span>Scaling Scrum</span><span class="text-slate-400">→</span></a></li>
-          <li class="bg-slate-50"><a href="01-Scrum-Master/Practice-Exams/Practice-Exam-1/" class="flex items-center justify-between p-3.5 hover:bg-slate-100 transition font-semibold"><span class="flex items-center gap-3"><span class="text-lg">🧪</span>3 Practice Exams + Final Mock</span><span class="text-slate-400">→</span></a></li>
-        </ol>
-      </div>
+      <!-- Scrum Master card -->
+      <a href="01-Scrum-Master/" class="cert-card group block rounded-2xl border border-slate-200 bg-gradient-to-br from-blue-600 to-violet-700 text-white p-8 md:p-10 text-center">
+        <span class="shine-overlay"></span>
+        <span class="cert-card-icon block text-7xl md:text-8xl mb-5 drop-shadow-2xl">🏃</span>
+        <h3 class="display text-3xl md:text-4xl font-extrabold mb-2">Scrum Master</h3>
+        <p class="text-blue-100 text-base md:text-lg mb-6">8 modules · ~30 hours</p>
+        <span class="cert-card-cta inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/15 ring-1 ring-white/30 backdrop-blur-sm text-sm md:text-base font-semibold">
+          Open course <span aria-hidden="true">→</span>
+        </span>
+      </a>
 
-      <!-- PMP modules list -->
-      <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden">
-        <div class="p-6 bg-gradient-to-br from-orange-500 to-red-600 text-white">
-          <div class="flex items-center justify-between">
-            <div>
-              <h3 class="display text-2xl font-extrabold">PMP Track</h3>
-              <p class="text-orange-100 text-sm mt-1">10 modules · ~115 hours</p>
-            </div>
-            <span class="text-3xl">📊</span>
-          </div>
-        </div>
-        <ol class="divide-y divide-slate-100 text-sm">
-          <li><a href="02-PMP/Module-01-Foundations/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-orange-100 text-orange-700 text-xs font-bold flex items-center justify-center shrink-0">1</span>Foundations</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="02-PMP/Module-02-People-Domain/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-orange-100 text-orange-700 text-xs font-bold flex items-center justify-center shrink-0">2</span>People Domain (42%)</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="02-PMP/Module-03-Process-Domain/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-orange-100 text-orange-700 text-xs font-bold flex items-center justify-center shrink-0">3</span>Process Domain (50%)</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="02-PMP/Module-04-Business-Environment/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-orange-100 text-orange-700 text-xs font-bold flex items-center justify-center shrink-0">4</span>Business Environment</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="02-PMP/Module-05-Agile-Hybrid/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-orange-100 text-orange-700 text-xs font-bold flex items-center justify-center shrink-0">5</span>Agile &amp; Hybrid</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="02-PMP/Module-06-Earned-Value/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-orange-100 text-orange-700 text-xs font-bold flex items-center justify-center shrink-0">6</span>Earned Value (formulas!)</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="02-PMP/Module-07-Risk/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-orange-100 text-orange-700 text-xs font-bold flex items-center justify-center shrink-0">7</span>Risk Management</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="02-PMP/Module-08-Quality/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-orange-100 text-orange-700 text-xs font-bold flex items-center justify-center shrink-0">8</span>Quality Management</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="02-PMP/Module-09-Procurement/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-orange-100 text-orange-700 text-xs font-bold flex items-center justify-center shrink-0">9</span>Procurement</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="02-PMP/Module-10-Stakeholders/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-orange-100 text-orange-700 text-xs font-bold flex items-center justify-center shrink-0">10</span>Stakeholders</span><span class="text-slate-400">→</span></a></li>
-          <li class="bg-slate-50"><a href="02-PMP/Practice-Exams/Practice-Exam-1/" class="flex items-center justify-between p-3.5 hover:bg-slate-100 transition font-semibold"><span class="flex items-center gap-3"><span class="text-lg">🧪</span>3 Practice Exams + Final Mock</span><span class="text-slate-400">→</span></a></li>
-        </ol>
-      </div>
+      <!-- PMP card -->
+      <a href="02-PMP/" class="cert-card group block rounded-2xl border border-slate-200 bg-gradient-to-br from-orange-500 to-red-600 text-white p-8 md:p-10 text-center">
+        <span class="shine-overlay"></span>
+        <span class="cert-card-icon block text-7xl md:text-8xl mb-5 drop-shadow-2xl">📊</span>
+        <h3 class="display text-3xl md:text-4xl font-extrabold mb-2">PMP</h3>
+        <p class="text-orange-100 text-base md:text-lg mb-6">10 modules · ~115 hours · PMP</p>
+        <span class="cert-card-cta inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/15 ring-1 ring-white/30 backdrop-blur-sm text-sm md:text-base font-semibold">
+          Open course <span aria-hidden="true">→</span>
+        </span>
+      </a>
 
         </div>
       </div>
 
       <!-- ===== category: Cloud, AI & Cybersecurity (7 cards, 3-col grid) ===== -->
-      <div>
+      <div class="reveal">
         <div class="text-center mb-10 pt-10 border-t border-slate-200">
-          <div class="inline-flex items-center justify-center w-20 h-20 md:w-24 md:h-24 rounded-2xl bg-gradient-to-br from-cyan-500 via-purple-500 to-red-500 text-4xl md:text-5xl mb-5 shadow-xl shadow-purple-500/40 ring-4 ring-white">
+          <div class="cat-badge inline-flex items-center justify-center w-20 h-20 md:w-24 md:h-24 rounded-2xl bg-gradient-to-br from-cyan-500 via-purple-500 to-red-500 text-4xl md:text-5xl mb-5 shadow-xl shadow-purple-500/40 ring-4 ring-white">
             <span class="drop-shadow-lg">🌐</span>
           </div>
-          <h3 class="display text-3xl md:text-4xl font-extrabold mb-2">Cloud, AI &amp; Cybersecurity</h3>
-          <p class="text-slate-600 text-sm md:text-base">7 industry certifications · AWS, Azure, GenAI, and CompTIA Security+</p>
+          <h3 class="display text-4xl md:text-5xl font-extrabold mb-2">Cloud, AI &amp; Cybersecurity</h3>
+          <p class="text-slate-600 text-base md:text-lg">7 industry certifications · AWS, Azure, GenAI, and CompTIA Security+</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-      <!-- AWS Cloud Practitioner modules list -->
-      <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden">
-        <div class="p-6 bg-gradient-to-br from-amber-400 to-orange-600 text-white">
-          <div class="flex items-center justify-between">
-            <div>
-              <h3 class="display text-2xl font-extrabold">AWS Cloud Practitioner</h3>
-              <p class="text-amber-50 text-sm mt-1">8 modules · ~25 hours · CLF-C02</p>
-            </div>
-            <span class="text-3xl">☁️</span>
-          </div>
-        </div>
-        <ol class="divide-y divide-slate-100 text-sm">
-          <li><a href="03-AWS-Cloud-Practitioner/Module-01-Cloud-Fundamentals/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-amber-100 text-amber-700 text-xs font-bold flex items-center justify-center shrink-0">1</span>Cloud Fundamentals</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="03-AWS-Cloud-Practitioner/Module-02-Core-Compute/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-amber-100 text-amber-700 text-xs font-bold flex items-center justify-center shrink-0">2</span>Core Compute</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="03-AWS-Cloud-Practitioner/Module-03-Core-Storage/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-amber-100 text-amber-700 text-xs font-bold flex items-center justify-center shrink-0">3</span>Core Storage</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="03-AWS-Cloud-Practitioner/Module-04-Networking-CDN/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-amber-100 text-amber-700 text-xs font-bold flex items-center justify-center shrink-0">4</span>Networking &amp; CDN</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="03-AWS-Cloud-Practitioner/Module-05-Databases/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-amber-100 text-amber-700 text-xs font-bold flex items-center justify-center shrink-0">5</span>Databases</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="03-AWS-Cloud-Practitioner/Module-06-Security-Identity-Compliance/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-amber-100 text-amber-700 text-xs font-bold flex items-center justify-center shrink-0">6</span>Security &amp; Compliance</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="03-AWS-Cloud-Practitioner/Module-07-Management-Monitoring-Pricing/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-amber-100 text-amber-700 text-xs font-bold flex items-center justify-center shrink-0">7</span>Monitoring &amp; Pricing</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="03-AWS-Cloud-Practitioner/Module-08-Well-Architected-Migration/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-amber-100 text-amber-700 text-xs font-bold flex items-center justify-center shrink-0">8</span>Well-Architected &amp; Migration</span><span class="text-slate-400">→</span></a></li>
-          <li class="bg-slate-50"><a href="03-AWS-Cloud-Practitioner/Practice-Exams/Practice-Exam-1/" class="flex items-center justify-between p-3.5 hover:bg-slate-100 transition font-semibold"><span class="flex items-center gap-3"><span class="text-lg">🧪</span>3 Practice Exams + Final Mock</span><span class="text-slate-400">→</span></a></li>
-        </ol>
-      </div>
+      <!-- AWS Cloud Practitioner card -->
+      <a href="03-AWS-Cloud-Practitioner/" class="cert-card group block rounded-2xl border border-slate-200 bg-gradient-to-br from-amber-400 to-orange-600 text-white p-8 md:p-10 text-center">
+        <span class="shine-overlay"></span>
+        <span class="cert-card-icon block text-7xl md:text-8xl mb-5 drop-shadow-2xl">☁️</span>
+        <h3 class="display text-3xl md:text-4xl font-extrabold mb-2">AWS Cloud Practitioner</h3>
+        <p class="text-amber-50 text-base md:text-lg mb-6">8 modules · ~25 hours · CLF-C02</p>
+        <span class="cert-card-cta inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/15 ring-1 ring-white/30 backdrop-blur-sm text-sm md:text-base font-semibold">
+          Open course <span aria-hidden="true">→</span>
+        </span>
+      </a>
 
-      <!-- AWS Solutions Architect Associate modules list -->
-      <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden">
-        <div class="p-6 bg-gradient-to-br from-orange-500 to-orange-800 text-white">
-          <div class="flex items-center justify-between">
-            <div>
-              <h3 class="display text-2xl font-extrabold">AWS Solutions Architect</h3>
-              <p class="text-orange-50 text-sm mt-1">10 modules · ~50 hours · SAA-C03</p>
-            </div>
-            <span class="text-3xl">🏗️</span>
-          </div>
-        </div>
-        <ol class="divide-y divide-slate-100 text-sm">
-          <li><a href="04-AWS-Solutions-Architect-Associate/Module-01-Foundations-Well-Architected/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-orange-100 text-orange-700 text-xs font-bold flex items-center justify-center shrink-0">1</span>Foundations &amp; Well-Architected</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="04-AWS-Solutions-Architect-Associate/Module-02-IAM-Organizations/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-orange-100 text-orange-700 text-xs font-bold flex items-center justify-center shrink-0">2</span>IAM &amp; Organizations</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="04-AWS-Solutions-Architect-Associate/Module-03-EC2-Deep-Dive/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-orange-100 text-orange-700 text-xs font-bold flex items-center justify-center shrink-0">3</span>EC2 Deep Dive</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="04-AWS-Solutions-Architect-Associate/Module-04-VPC-Deep-Dive/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-orange-100 text-orange-700 text-xs font-bold flex items-center justify-center shrink-0">4</span>VPC Deep Dive</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="04-AWS-Solutions-Architect-Associate/Module-05-S3-Deep-Dive/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-orange-100 text-orange-700 text-xs font-bold flex items-center justify-center shrink-0">5</span>S3 Deep Dive</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="04-AWS-Solutions-Architect-Associate/Module-06-Databases/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-orange-100 text-orange-700 text-xs font-bold flex items-center justify-center shrink-0">6</span>Databases</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="04-AWS-Solutions-Architect-Associate/Module-07-Decoupling-Integration/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-orange-100 text-orange-700 text-xs font-bold flex items-center justify-center shrink-0">7</span>Decoupling &amp; Integration</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="04-AWS-Solutions-Architect-Associate/Module-08-Caching-CDN-Edge/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-orange-100 text-orange-700 text-xs font-bold flex items-center justify-center shrink-0">8</span>Caching, CDN &amp; Edge</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="04-AWS-Solutions-Architect-Associate/Module-09-Monitoring-Cost-Optimization/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-orange-100 text-orange-700 text-xs font-bold flex items-center justify-center shrink-0">9</span>Monitoring &amp; Cost</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="04-AWS-Solutions-Architect-Associate/Module-10-DR-Migration-Hybrid/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-orange-100 text-orange-700 text-xs font-bold flex items-center justify-center shrink-0">10</span>DR, Migration &amp; Hybrid</span><span class="text-slate-400">→</span></a></li>
-          <li class="bg-slate-50"><a href="04-AWS-Solutions-Architect-Associate/Practice-Exams/Practice-Exam-1/" class="flex items-center justify-between p-3.5 hover:bg-slate-100 transition font-semibold"><span class="flex items-center gap-3"><span class="text-lg">🧪</span>3 Practice Exams + Final Mock</span><span class="text-slate-400">→</span></a></li>
-        </ol>
-      </div>
+      <!-- AWS Solutions Architect Associate card -->
+      <a href="04-AWS-Solutions-Architect-Associate/" class="cert-card group block rounded-2xl border border-slate-200 bg-gradient-to-br from-orange-500 to-orange-800 text-white p-8 md:p-10 text-center">
+        <span class="shine-overlay"></span>
+        <span class="cert-card-icon block text-7xl md:text-8xl mb-5 drop-shadow-2xl">🏗️</span>
+        <h3 class="display text-3xl md:text-4xl font-extrabold mb-2">AWS Solutions Architect</h3>
+        <p class="text-orange-50 text-base md:text-lg mb-6">10 modules · ~50 hours · SAA-C03</p>
+        <span class="cert-card-cta inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/15 ring-1 ring-white/30 backdrop-blur-sm text-sm md:text-base font-semibold">
+          Open course <span aria-hidden="true">→</span>
+        </span>
+      </a>
 
-      <!-- AWS AI Practitioner modules list -->
-      <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden">
-        <div class="p-6 bg-gradient-to-br from-purple-500 to-purple-900 text-white">
-          <div class="flex items-center justify-between">
-            <div>
-              <h3 class="display text-2xl font-extrabold">AWS AI Practitioner</h3>
-              <p class="text-purple-50 text-sm mt-1">8 modules · ~25 hours · AIF-C01</p>
-            </div>
-            <span class="text-3xl">🤖</span>
-          </div>
-        </div>
-        <ol class="divide-y divide-slate-100 text-sm">
-          <li><a href="07-AWS-AI-Practitioner/Module-01-AI-ML-Fundamentals/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-purple-100 text-purple-700 text-xs font-bold flex items-center justify-center shrink-0">1</span>AI/ML Fundamentals</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="07-AWS-AI-Practitioner/Module-02-ML-Workflow-SageMaker/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-purple-100 text-purple-700 text-xs font-bold flex items-center justify-center shrink-0">2</span>ML Workflow &amp; SageMaker</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="07-AWS-AI-Practitioner/Module-03-Generative-AI-Fundamentals/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-purple-100 text-purple-700 text-xs font-bold flex items-center justify-center shrink-0">3</span>Generative AI Fundamentals</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="07-AWS-AI-Practitioner/Module-04-AWS-GenAI-Stack/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-purple-100 text-purple-700 text-xs font-bold flex items-center justify-center shrink-0">4</span>AWS GenAI Stack (Bedrock, Q)</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="07-AWS-AI-Practitioner/Module-05-Prompt-Engineering-RAG/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-purple-100 text-purple-700 text-xs font-bold flex items-center justify-center shrink-0">5</span>Prompt Engineering &amp; RAG</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="07-AWS-AI-Practitioner/Module-06-Fine-Tuning-Customization/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-purple-100 text-purple-700 text-xs font-bold flex items-center justify-center shrink-0">6</span>Fine-Tuning &amp; Customization</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="07-AWS-AI-Practitioner/Module-07-Responsible-AI/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-purple-100 text-purple-700 text-xs font-bold flex items-center justify-center shrink-0">7</span>Responsible AI</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="07-AWS-AI-Practitioner/Module-08-AI-Security-Governance/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-purple-100 text-purple-700 text-xs font-bold flex items-center justify-center shrink-0">8</span>AI Security &amp; Governance</span><span class="text-slate-400">→</span></a></li>
-          <li class="bg-slate-50"><a href="07-AWS-AI-Practitioner/Practice-Exams/Practice-Exam-1/" class="flex items-center justify-between p-3.5 hover:bg-slate-100 transition font-semibold"><span class="flex items-center gap-3"><span class="text-lg">🧪</span>3 Practice Exams + Final Mock</span><span class="text-slate-400">→</span></a></li>
-        </ol>
-      </div>
+      <!-- AWS AI Practitioner card -->
+      <a href="07-AWS-AI-Practitioner/" class="cert-card group block rounded-2xl border border-slate-200 bg-gradient-to-br from-purple-500 to-purple-900 text-white p-8 md:p-10 text-center">
+        <span class="shine-overlay"></span>
+        <span class="cert-card-icon block text-7xl md:text-8xl mb-5 drop-shadow-2xl">🤖</span>
+        <h3 class="display text-3xl md:text-4xl font-extrabold mb-2">AWS AI Practitioner</h3>
+        <p class="text-purple-50 text-base md:text-lg mb-6">8 modules · ~25 hours · AIF-C01</p>
+        <span class="cert-card-cta inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/15 ring-1 ring-white/30 backdrop-blur-sm text-sm md:text-base font-semibold">
+          Open course <span aria-hidden="true">→</span>
+        </span>
+      </a>
 
-      <!-- Azure Fundamentals modules list -->
-      <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden">
-        <div class="p-6 bg-gradient-to-br from-cyan-500 to-cyan-800 text-white">
-          <div class="flex items-center justify-between">
-            <div>
-              <h3 class="display text-2xl font-extrabold">Azure Fundamentals</h3>
-              <p class="text-cyan-50 text-sm mt-1">6 modules · ~15 hours · AZ-900</p>
-            </div>
-            <span class="text-3xl">🌥️</span>
-          </div>
-        </div>
-        <ol class="divide-y divide-slate-100 text-sm">
-          <li><a href="05-Azure-Fundamentals/Module-01-Cloud-Concepts/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-cyan-100 text-cyan-700 text-xs font-bold flex items-center justify-center shrink-0">1</span>Cloud Concepts</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="05-Azure-Fundamentals/Module-02-Azure-Architecture/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-cyan-100 text-cyan-700 text-xs font-bold flex items-center justify-center shrink-0">2</span>Azure Architecture</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="05-Azure-Fundamentals/Module-03-Core-Services/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-cyan-100 text-cyan-700 text-xs font-bold flex items-center justify-center shrink-0">3</span>Core Services</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="05-Azure-Fundamentals/Module-04-Identity-Governance-Security/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-cyan-100 text-cyan-700 text-xs font-bold flex items-center justify-center shrink-0">4</span>Identity &amp; Governance</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="05-Azure-Fundamentals/Module-05-Cost-Management-SLAs/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-cyan-100 text-cyan-700 text-xs font-bold flex items-center justify-center shrink-0">5</span>Cost Management &amp; SLAs</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="05-Azure-Fundamentals/Module-06-Tools-Features/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-cyan-100 text-cyan-700 text-xs font-bold flex items-center justify-center shrink-0">6</span>Tools &amp; Features</span><span class="text-slate-400">→</span></a></li>
-          <li class="bg-slate-50"><a href="05-Azure-Fundamentals/Practice-Exams/Practice-Exam-1/" class="flex items-center justify-between p-3.5 hover:bg-slate-100 transition font-semibold"><span class="flex items-center gap-3"><span class="text-lg">🧪</span>3 Practice Exams + Final Mock</span><span class="text-slate-400">→</span></a></li>
-        </ol>
-      </div>
+      <!-- Azure Fundamentals card -->
+      <a href="05-Azure-Fundamentals/" class="cert-card group block rounded-2xl border border-slate-200 bg-gradient-to-br from-cyan-500 to-cyan-800 text-white p-8 md:p-10 text-center">
+        <span class="shine-overlay"></span>
+        <span class="cert-card-icon block text-7xl md:text-8xl mb-5 drop-shadow-2xl">🌥️</span>
+        <h3 class="display text-3xl md:text-4xl font-extrabold mb-2">Azure Fundamentals</h3>
+        <p class="text-cyan-50 text-base md:text-lg mb-6">6 modules · ~15 hours · AZ-900</p>
+        <span class="cert-card-cta inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/15 ring-1 ring-white/30 backdrop-blur-sm text-sm md:text-base font-semibold">
+          Open course <span aria-hidden="true">→</span>
+        </span>
+      </a>
 
-      <!-- Azure Administrator modules list -->
-      <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden">
-        <div class="p-6 bg-gradient-to-br from-sky-500 to-blue-800 text-white">
-          <div class="flex items-center justify-between">
-            <div>
-              <h3 class="display text-2xl font-extrabold">Azure Administrator</h3>
-              <p class="text-sky-50 text-sm mt-1">10 modules · ~50 hours · AZ-104</p>
-            </div>
-            <span class="text-3xl">🛠️</span>
-          </div>
-        </div>
-        <ol class="divide-y divide-slate-100 text-sm">
-          <li><a href="06-Azure-Administrator/Module-01-Subscriptions-Resource-Hierarchy/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-sky-100 text-sky-700 text-xs font-bold flex items-center justify-center shrink-0">1</span>Subscriptions &amp; Hierarchy</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="06-Azure-Administrator/Module-02-Entra-ID-RBAC/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-sky-100 text-sky-700 text-xs font-bold flex items-center justify-center shrink-0">2</span>Entra ID &amp; RBAC</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="06-Azure-Administrator/Module-03-Storage-Accounts-Blobs/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-sky-100 text-sky-700 text-xs font-bold flex items-center justify-center shrink-0">3</span>Storage Accounts &amp; Blobs</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="06-Azure-Administrator/Module-04-Azure-Files-File-Sync/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-sky-100 text-sky-700 text-xs font-bold flex items-center justify-center shrink-0">4</span>Azure Files &amp; File Sync</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="06-Azure-Administrator/Module-05-Virtual-Machines/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-sky-100 text-sky-700 text-xs font-bold flex items-center justify-center shrink-0">5</span>Virtual Machines</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="06-Azure-Administrator/Module-06-App-Services-Containers/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-sky-100 text-sky-700 text-xs font-bold flex items-center justify-center shrink-0">6</span>App Services &amp; Containers</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="06-Azure-Administrator/Module-07-Virtual-Networks/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-sky-100 text-sky-700 text-xs font-bold flex items-center justify-center shrink-0">7</span>Virtual Networks</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="06-Azure-Administrator/Module-08-Network-Security/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-sky-100 text-sky-700 text-xs font-bold flex items-center justify-center shrink-0">8</span>Network Security</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="06-Azure-Administrator/Module-09-Backup-Recovery-Migration/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-sky-100 text-sky-700 text-xs font-bold flex items-center justify-center shrink-0">9</span>Backup, Recovery &amp; Migration</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="06-Azure-Administrator/Module-10-Monitor-Governance/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-sky-100 text-sky-700 text-xs font-bold flex items-center justify-center shrink-0">10</span>Monitor &amp; Governance</span><span class="text-slate-400">→</span></a></li>
-          <li class="bg-slate-50"><a href="06-Azure-Administrator/Practice-Exams/Practice-Exam-1/" class="flex items-center justify-between p-3.5 hover:bg-slate-100 transition font-semibold"><span class="flex items-center gap-3"><span class="text-lg">🧪</span>3 Practice Exams + Final Mock</span><span class="text-slate-400">→</span></a></li>
-        </ol>
-      </div>
+      <!-- Azure Administrator card -->
+      <a href="06-Azure-Administrator/" class="cert-card group block rounded-2xl border border-slate-200 bg-gradient-to-br from-sky-500 to-blue-800 text-white p-8 md:p-10 text-center">
+        <span class="shine-overlay"></span>
+        <span class="cert-card-icon block text-7xl md:text-8xl mb-5 drop-shadow-2xl">🛠️</span>
+        <h3 class="display text-3xl md:text-4xl font-extrabold mb-2">Azure Administrator</h3>
+        <p class="text-sky-50 text-base md:text-lg mb-6">10 modules · ~50 hours · AZ-104</p>
+        <span class="cert-card-cta inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/15 ring-1 ring-white/30 backdrop-blur-sm text-sm md:text-base font-semibold">
+          Open course <span aria-hidden="true">→</span>
+        </span>
+      </a>
 
-      <!-- Azure AI Engineer modules list -->
-      <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden">
-        <div class="p-6 bg-gradient-to-br from-pink-500 to-pink-800 text-white">
-          <div class="flex items-center justify-between">
-            <div>
-              <h3 class="display text-2xl font-extrabold">Azure AI Engineer</h3>
-              <p class="text-pink-50 text-sm mt-1">8 modules · ~40 hours · AI-102</p>
-            </div>
-            <span class="text-3xl">🧠</span>
-          </div>
-        </div>
-        <ol class="divide-y divide-slate-100 text-sm">
-          <li><a href="08-Azure-AI-Engineer/Module-01-AI-Services-Overview/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-pink-100 text-pink-700 text-xs font-bold flex items-center justify-center shrink-0">1</span>AI Services Overview</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="08-Azure-AI-Engineer/Module-02-Responsible-AI-Content-Safety/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-pink-100 text-pink-700 text-xs font-bold flex items-center justify-center shrink-0">2</span>Responsible AI &amp; Safety</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="08-Azure-AI-Engineer/Module-03-Computer-Vision/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-pink-100 text-pink-700 text-xs font-bold flex items-center justify-center shrink-0">3</span>Computer Vision</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="08-Azure-AI-Engineer/Module-04-Natural-Language-Processing/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-pink-100 text-pink-700 text-xs font-bold flex items-center justify-center shrink-0">4</span>Natural Language Processing</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="08-Azure-AI-Engineer/Module-05-Document-Intelligence-Knowledge-Mining/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-pink-100 text-pink-700 text-xs font-bold flex items-center justify-center shrink-0">5</span>Document Intelligence</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="08-Azure-AI-Engineer/Module-06-Conversational-AI/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-pink-100 text-pink-700 text-xs font-bold flex items-center justify-center shrink-0">6</span>Conversational AI</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="08-Azure-AI-Engineer/Module-07-Azure-OpenAI-Service/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-pink-100 text-pink-700 text-xs font-bold flex items-center justify-center shrink-0">7</span>Azure OpenAI Service</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="08-Azure-AI-Engineer/Module-08-Build-GenAI-Apps/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-pink-100 text-pink-700 text-xs font-bold flex items-center justify-center shrink-0">8</span>Build GenAI Apps</span><span class="text-slate-400">→</span></a></li>
-          <li class="bg-slate-50"><a href="08-Azure-AI-Engineer/Practice-Exams/Practice-Exam-1/" class="flex items-center justify-between p-3.5 hover:bg-slate-100 transition font-semibold"><span class="flex items-center gap-3"><span class="text-lg">🧪</span>3 Practice Exams + Final Mock</span><span class="text-slate-400">→</span></a></li>
-        </ol>
-      </div>
+      <!-- Azure AI Engineer card -->
+      <a href="08-Azure-AI-Engineer/" class="cert-card group block rounded-2xl border border-slate-200 bg-gradient-to-br from-pink-500 to-pink-800 text-white p-8 md:p-10 text-center">
+        <span class="shine-overlay"></span>
+        <span class="cert-card-icon block text-7xl md:text-8xl mb-5 drop-shadow-2xl">🧠</span>
+        <h3 class="display text-3xl md:text-4xl font-extrabold mb-2">Azure AI Engineer</h3>
+        <p class="text-pink-50 text-base md:text-lg mb-6">8 modules · ~40 hours · AI-102</p>
+        <span class="cert-card-cta inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/15 ring-1 ring-white/30 backdrop-blur-sm text-sm md:text-base font-semibold">
+          Open course <span aria-hidden="true">→</span>
+        </span>
+      </a>
 
-      <!-- CompTIA Security+ modules list -->
-      <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden">
-        <div class="p-6 bg-gradient-to-br from-red-600 to-red-900 text-white">
-          <div class="flex items-center justify-between">
-            <div>
-              <h3 class="display text-2xl font-extrabold">CompTIA Security+</h3>
-              <p class="text-red-50 text-sm mt-1">10 modules · ~60 hours · SY0-701</p>
-            </div>
-            <span class="text-3xl">🛡️</span>
-          </div>
-        </div>
-        <ol class="divide-y divide-slate-100 text-sm">
-          <li><a href="09-CompTIA-Security-Plus/Module-01-Security-Fundamentals/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-red-100 text-red-700 text-xs font-bold flex items-center justify-center shrink-0">1</span>Security Fundamentals</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="09-CompTIA-Security-Plus/Module-02-Cryptography-PKI/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-red-100 text-red-700 text-xs font-bold flex items-center justify-center shrink-0">2</span>Cryptography &amp; PKI</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="09-CompTIA-Security-Plus/Module-03-Identity-Access-Management/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-red-100 text-red-700 text-xs font-bold flex items-center justify-center shrink-0">3</span>Identity &amp; Access Mgmt</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="09-CompTIA-Security-Plus/Module-04-Threats-Threat-Actors/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-red-100 text-red-700 text-xs font-bold flex items-center justify-center shrink-0">4</span>Threats &amp; Threat Actors</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="09-CompTIA-Security-Plus/Module-05-Vulnerabilities-Attacks/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-red-100 text-red-700 text-xs font-bold flex items-center justify-center shrink-0">5</span>Vulnerabilities &amp; Attacks</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="09-CompTIA-Security-Plus/Module-06-Network-Security/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-red-100 text-red-700 text-xs font-bold flex items-center justify-center shrink-0">6</span>Network Security</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="09-CompTIA-Security-Plus/Module-07-Endpoint-Mobile-Cloud-Security/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-red-100 text-red-700 text-xs font-bold flex items-center justify-center shrink-0">7</span>Endpoint &amp; Cloud Security</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="09-CompTIA-Security-Plus/Module-08-Security-Operations/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-red-100 text-red-700 text-xs font-bold flex items-center justify-center shrink-0">8</span>Security Operations</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="09-CompTIA-Security-Plus/Module-09-GRC-Risk-Compliance/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-red-100 text-red-700 text-xs font-bold flex items-center justify-center shrink-0">9</span>GRC, Risk &amp; Compliance</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="09-CompTIA-Security-Plus/Module-10-Application-Data-Security/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-red-100 text-red-700 text-xs font-bold flex items-center justify-center shrink-0">10</span>Application &amp; Data Security</span><span class="text-slate-400">→</span></a></li>
-          <li class="bg-slate-50"><a href="09-CompTIA-Security-Plus/Practice-Exams/Practice-Exam-1/" class="flex items-center justify-between p-3.5 hover:bg-slate-100 transition font-semibold"><span class="flex items-center gap-3"><span class="text-lg">🧪</span>3 Practice Exams + Final Mock</span><span class="text-slate-400">→</span></a></li>
-        </ol>
-      </div>
+      <!-- CompTIA Security+ card -->
+      <a href="09-CompTIA-Security-Plus/" class="cert-card group block rounded-2xl border border-slate-200 bg-gradient-to-br from-red-600 to-red-900 text-white p-8 md:p-10 text-center">
+        <span class="shine-overlay"></span>
+        <span class="cert-card-icon block text-7xl md:text-8xl mb-5 drop-shadow-2xl">🛡️</span>
+        <h3 class="display text-3xl md:text-4xl font-extrabold mb-2">CompTIA Security+</h3>
+        <p class="text-red-50 text-base md:text-lg mb-6">10 modules · ~60 hours · SY0-701</p>
+        <span class="cert-card-cta inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/15 ring-1 ring-white/30 backdrop-blur-sm text-sm md:text-base font-semibold">
+          Open course <span aria-hidden="true">→</span>
+        </span>
+      </a>
 
         </div>
       </div>
 
       <!-- ===== category: Supply Chain & Operations (4 cards, centered 2x2) ===== -->
-      <div>
+      <div class="reveal">
         <div class="text-center mb-10 pt-10 border-t border-slate-200">
-          <div class="inline-flex items-center justify-center w-20 h-20 md:w-24 md:h-24 rounded-2xl bg-gradient-to-br from-teal-500 via-emerald-500 to-indigo-600 text-4xl md:text-5xl mb-5 shadow-xl shadow-emerald-500/40 ring-4 ring-white">
+          <div class="cat-badge inline-flex items-center justify-center w-20 h-20 md:w-24 md:h-24 rounded-2xl bg-gradient-to-br from-teal-500 via-emerald-500 to-indigo-600 text-4xl md:text-5xl mb-5 shadow-xl shadow-emerald-500/40 ring-4 ring-white">
             <span class="drop-shadow-lg">🔗</span>
           </div>
-          <h3 class="display text-3xl md:text-4xl font-extrabold mb-2">Supply Chain &amp; Operations</h3>
-          <p class="text-slate-600 text-sm md:text-base">4 international certifications · production, logistics, sourcing</p>
+          <h3 class="display text-4xl md:text-5xl font-extrabold mb-2">Supply Chain &amp; Operations</h3>
+          <p class="text-slate-600 text-base md:text-lg">4 international certifications · production, logistics, sourcing</p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-[1300px] mx-auto">
 
-      <!-- ASCM CPIM modules list -->
-      <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden">
-        <div class="p-6 bg-gradient-to-br from-indigo-500 to-indigo-900 text-white">
-          <div class="flex items-center justify-between">
-            <div>
-              <h3 class="display text-2xl font-extrabold">ASCM CPIM</h3>
-              <p class="text-indigo-50 text-sm mt-1">8 modules · ~45 hours · Planning &amp; Inventory</p>
-            </div>
-            <span class="text-3xl">🏭</span>
-          </div>
+      <!-- ASCM CPIM card -->
+      <a href="11-ASCM-CPIM/" class="cert-card group block rounded-2xl border border-slate-200 bg-gradient-to-br from-indigo-500 to-indigo-900 text-white p-8 md:p-10 text-center">
+        <span class="shine-overlay"></span>
+        <span class="cert-card-icon block text-7xl md:text-8xl mb-5 drop-shadow-2xl">🏭</span>
+        <h3 class="display text-3xl md:text-4xl font-extrabold mb-2">ASCM CPIM</h3>
+        <p class="text-indigo-50 text-base md:text-lg mb-6">8 modules · ~45 hours · Planning &amp; Inventory</p>
+        <span class="cert-card-cta inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/15 ring-1 ring-white/30 backdrop-blur-sm text-sm md:text-base font-semibold">
+          Open course <span aria-hidden="true">→</span>
+        </span>
+      </a>
+
+      <!-- ASCM CSCP card -->
+      <a href="10-ASCM-CSCP/" class="cert-card group block rounded-2xl border border-slate-200 bg-gradient-to-br from-teal-600 to-teal-900 text-white p-8 md:p-10 text-center">
+        <span class="shine-overlay"></span>
+        <span class="cert-card-icon block text-7xl md:text-8xl mb-5 drop-shadow-2xl">🔗</span>
+        <h3 class="display text-3xl md:text-4xl font-extrabold mb-2">ASCM CSCP</h3>
+        <p class="text-teal-50 text-base md:text-lg mb-6">10 modules · ~65 hours · Supply Chain Pro</p>
+        <span class="cert-card-cta inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/15 ring-1 ring-white/30 backdrop-blur-sm text-sm md:text-base font-semibold">
+          Open course <span aria-hidden="true">→</span>
+        </span>
+      </a>
+
+      <!-- ASCM CLTD card -->
+      <a href="12-ASCM-CLTD/" class="cert-card group block rounded-2xl border border-slate-200 bg-gradient-to-br from-emerald-500 to-emerald-800 text-white p-8 md:p-10 text-center">
+        <span class="shine-overlay"></span>
+        <span class="cert-card-icon block text-7xl md:text-8xl mb-5 drop-shadow-2xl">🚛</span>
+        <h3 class="display text-3xl md:text-4xl font-extrabold mb-2">ASCM CLTD</h3>
+        <p class="text-emerald-50 text-base md:text-lg mb-6">8 modules · ~45 hours · Logistics &amp; Distribution</p>
+        <span class="cert-card-cta inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/15 ring-1 ring-white/30 backdrop-blur-sm text-sm md:text-base font-semibold">
+          Open course <span aria-hidden="true">→</span>
+        </span>
+      </a>
+
+      <!-- ISM CPSM card -->
+      <a href="13-ISM-CPSM/" class="cert-card group block rounded-2xl border border-slate-200 bg-gradient-to-br from-violet-600 to-violet-900 text-white p-8 md:p-10 text-center">
+        <span class="shine-overlay"></span>
+        <span class="cert-card-icon block text-7xl md:text-8xl mb-5 drop-shadow-2xl">🤝</span>
+        <h3 class="display text-3xl md:text-4xl font-extrabold mb-2">ISM CPSM</h3>
+        <p class="text-violet-50 text-base md:text-lg mb-6">8 modules · ~50 hours · Supply Management</p>
+        <span class="cert-card-cta inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/15 ring-1 ring-white/30 backdrop-blur-sm text-sm md:text-base font-semibold">
+          Open course <span aria-hidden="true">→</span>
+        </span>
+      </a>
+
         </div>
-        <ol class="divide-y divide-slate-100 text-sm">
-          <li><a href="11-ASCM-CPIM/Module-01-Manufacturing-Strategy/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-indigo-100 text-indigo-700 text-xs font-bold flex items-center justify-center shrink-0">1</span>Manufacturing Strategy</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="11-ASCM-CPIM/Module-02-Demand-Planning-Forecasting/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-indigo-100 text-indigo-700 text-xs font-bold flex items-center justify-center shrink-0">2</span>Demand Planning &amp; Forecasting</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="11-ASCM-CPIM/Module-03-SOP-Sales-Operations-Planning/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-indigo-100 text-indigo-700 text-xs font-bold flex items-center justify-center shrink-0">3</span>S&amp;OP</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="11-ASCM-CPIM/Module-04-Master-Production-Scheduling-MRP/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-indigo-100 text-indigo-700 text-xs font-bold flex items-center justify-center shrink-0">4</span>MPS &amp; MRP</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="11-ASCM-CPIM/Module-05-Capacity-Planning/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-indigo-100 text-indigo-700 text-xs font-bold flex items-center justify-center shrink-0">5</span>Capacity Planning</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="11-ASCM-CPIM/Module-06-Inventory-Management/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-indigo-100 text-indigo-700 text-xs font-bold flex items-center justify-center shrink-0">6</span>Inventory Management</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="11-ASCM-CPIM/Module-07-Production-Activity-Control/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-indigo-100 text-indigo-700 text-xs font-bold flex items-center justify-center shrink-0">7</span>Production Activity Control</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="11-ASCM-CPIM/Module-08-Quality-Lean-CI/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-indigo-100 text-indigo-700 text-xs font-bold flex items-center justify-center shrink-0">8</span>Quality, Lean &amp; CI</span><span class="text-slate-400">→</span></a></li>
-          <li class="bg-slate-50"><a href="11-ASCM-CPIM/Practice-Exams/Practice-Exam-1/" class="flex items-center justify-between p-3.5 hover:bg-slate-100 transition font-semibold"><span class="flex items-center gap-3"><span class="text-lg">🧪</span>3 Practice Exams + Final Mock</span><span class="text-slate-400">→</span></a></li>
-        </ol>
       </div>
 
-      <!-- ASCM CSCP modules list -->
-      <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden">
-        <div class="p-6 bg-gradient-to-br from-teal-600 to-teal-900 text-white">
-          <div class="flex items-center justify-between">
-            <div>
-              <h3 class="display text-2xl font-extrabold">ASCM CSCP</h3>
-              <p class="text-teal-50 text-sm mt-1">10 modules · ~65 hours · Supply Chain Pro</p>
-            </div>
-            <span class="text-3xl">🔗</span>
+      <!-- ===== category: AI Marketing (5-course ladder, 3-col grid) ===== -->
+      <div class="reveal">
+        <div class="text-center mb-10 pt-10 border-t border-slate-200">
+          <div class="cat-badge inline-flex items-center justify-center w-20 h-20 md:w-24 md:h-24 rounded-2xl bg-gradient-to-br from-rose-500 via-fuchsia-500 to-amber-500 text-4xl md:text-5xl mb-5 shadow-xl shadow-fuchsia-500/40 ring-4 ring-white">
+            <span class="drop-shadow-lg">🚀</span>
           </div>
+          <h3 class="display text-4xl md:text-5xl font-extrabold mb-2">AI-Based Digital Marketing</h3>
+          <p class="text-slate-600 text-base md:text-lg">5-course ladder · foundations &rarr; practitioner &rarr; strategist &rarr; entrepreneur &rarr; portfolio capstone</p>
         </div>
-        <ol class="divide-y divide-slate-100 text-sm">
-          <li><a href="10-ASCM-CSCP/Module-01-SCM-Foundations-Strategy/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-teal-100 text-teal-700 text-xs font-bold flex items-center justify-center shrink-0">1</span>SCM Foundations &amp; Strategy</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="10-ASCM-CSCP/Module-02-Supply-Chain-Design/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-teal-100 text-teal-700 text-xs font-bold flex items-center justify-center shrink-0">2</span>Supply Chain Design</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="10-ASCM-CSCP/Module-03-Demand-Forecasting/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-teal-100 text-teal-700 text-xs font-bold flex items-center justify-center shrink-0">3</span>Demand &amp; Forecasting</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="10-ASCM-CSCP/Module-04-Supply-Planning-SOP/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-teal-100 text-teal-700 text-xs font-bold flex items-center justify-center shrink-0">4</span>Supply Planning &amp; S&amp;OP</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="10-ASCM-CSCP/Module-05-Inventory-Capacity/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-teal-100 text-teal-700 text-xs font-bold flex items-center justify-center shrink-0">5</span>Inventory &amp; Capacity</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="10-ASCM-CSCP/Module-06-Sourcing-Supplier-Management/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-teal-100 text-teal-700 text-xs font-bold flex items-center justify-center shrink-0">6</span>Sourcing &amp; Supplier Mgmt</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="10-ASCM-CSCP/Module-07-Logistics-Distribution-Warehousing/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-teal-100 text-teal-700 text-xs font-bold flex items-center justify-center shrink-0">7</span>Logistics &amp; Distribution</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="10-ASCM-CSCP/Module-08-International-Trade-Customs/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-teal-100 text-teal-700 text-xs font-bold flex items-center justify-center shrink-0">8</span>International Trade</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="10-ASCM-CSCP/Module-09-Sustainability-Risk-CSR/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-teal-100 text-teal-700 text-xs font-bold flex items-center justify-center shrink-0">9</span>Sustainability &amp; Risk</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="10-ASCM-CSCP/Module-10-Continuous-Improvement/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-teal-100 text-teal-700 text-xs font-bold flex items-center justify-center shrink-0">10</span>Continuous Improvement</span><span class="text-slate-400">→</span></a></li>
-          <li class="bg-slate-50"><a href="10-ASCM-CSCP/Practice-Exams/Practice-Exam-1/" class="flex items-center justify-between p-3.5 hover:bg-slate-100 transition font-semibold"><span class="flex items-center gap-3"><span class="text-lg">🧪</span>3 Practice Exams + Final Mock</span><span class="text-slate-400">→</span></a></li>
-        </ol>
-      </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-      <!-- ASCM CLTD modules list -->
-      <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden">
-        <div class="p-6 bg-gradient-to-br from-emerald-500 to-emerald-800 text-white">
-          <div class="flex items-center justify-between">
-            <div>
-              <h3 class="display text-2xl font-extrabold">ASCM CLTD</h3>
-              <p class="text-emerald-50 text-sm mt-1">8 modules · ~45 hours · Logistics &amp; Distribution</p>
-            </div>
-            <span class="text-3xl">🚛</span>
-          </div>
-        </div>
-        <ol class="divide-y divide-slate-100 text-sm">
-          <li><a href="12-ASCM-CLTD/Module-01-Logistics-Strategy-Network/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-700 text-xs font-bold flex items-center justify-center shrink-0">1</span>Logistics Strategy &amp; Network</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="12-ASCM-CLTD/Module-02-Capacity-Demand-Logistics/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-700 text-xs font-bold flex items-center justify-center shrink-0">2</span>Capacity &amp; Demand</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="12-ASCM-CLTD/Module-03-Order-Management-Fulfillment/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-700 text-xs font-bold flex items-center justify-center shrink-0">3</span>Order Management &amp; Fulfillment</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="12-ASCM-CLTD/Module-04-Inventory-Distribution/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-700 text-xs font-bold flex items-center justify-center shrink-0">4</span>Inventory in Distribution</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="12-ASCM-CLTD/Module-05-Warehouse-Operations/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-700 text-xs font-bold flex items-center justify-center shrink-0">5</span>Warehouse Operations</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="12-ASCM-CLTD/Module-06-Transportation-Modes/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-700 text-xs font-bold flex items-center justify-center shrink-0">6</span>Transportation Modes</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="12-ASCM-CLTD/Module-07-Global-Logistics-Customs/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-700 text-xs font-bold flex items-center justify-center shrink-0">7</span>Global Logistics &amp; Customs</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="12-ASCM-CLTD/Module-08-Reverse-Logistics-Sustainability/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-700 text-xs font-bold flex items-center justify-center shrink-0">8</span>Reverse Logistics &amp; Sustainability</span><span class="text-slate-400">→</span></a></li>
-          <li class="bg-slate-50"><a href="12-ASCM-CLTD/Practice-Exams/Practice-Exam-1/" class="flex items-center justify-between p-3.5 hover:bg-slate-100 transition font-semibold"><span class="flex items-center gap-3"><span class="text-lg">🧪</span>3 Practice Exams + Final Mock</span><span class="text-slate-400">→</span></a></li>
-        </ol>
-      </div>
+      <!-- AI Marketing Foundations card -->
+      <a href="14-AI-Marketing-Foundations/" class="cert-card group block rounded-2xl border border-slate-200 bg-gradient-to-br from-rose-500 to-rose-800 text-white p-8 md:p-10 text-center">
+        <span class="shine-overlay"></span>
+        <span class="cert-card-icon block text-7xl md:text-8xl mb-5 drop-shadow-2xl">🚀</span>
+        <h3 class="display text-3xl md:text-4xl font-extrabold mb-2">Foundations</h3>
+        <p class="text-rose-50 text-base md:text-lg mb-6">10 modules · ~50 hours · Beginner</p>
+        <span class="cert-card-cta inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/15 ring-1 ring-white/30 backdrop-blur-sm text-sm md:text-base font-semibold">
+          Open course <span aria-hidden="true">→</span>
+        </span>
+      </a>
 
-      <!-- ISM CPSM modules list -->
-      <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden">
-        <div class="p-6 bg-gradient-to-br from-violet-600 to-violet-900 text-white">
-          <div class="flex items-center justify-between">
-            <div>
-              <h3 class="display text-2xl font-extrabold">ISM CPSM</h3>
-              <p class="text-violet-50 text-sm mt-1">8 modules · ~50 hours · Supply Management</p>
-            </div>
-            <span class="text-3xl">🤝</span>
-          </div>
-        </div>
-        <ol class="divide-y divide-slate-100 text-sm">
-          <li><a href="13-ISM-CPSM/Module-01-Supply-Management-Foundations/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-violet-100 text-violet-700 text-xs font-bold flex items-center justify-center shrink-0">1</span>Supply Mgmt Foundations</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="13-ISM-CPSM/Module-02-Category-Management-Sourcing/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-violet-100 text-violet-700 text-xs font-bold flex items-center justify-center shrink-0">2</span>Category Mgmt &amp; Sourcing</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="13-ISM-CPSM/Module-03-Negotiation-Contracts/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-violet-100 text-violet-700 text-xs font-bold flex items-center justify-center shrink-0">3</span>Negotiation &amp; Contracts</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="13-ISM-CPSM/Module-04-Supplier-Relationship-Management/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-violet-100 text-violet-700 text-xs font-bold flex items-center justify-center shrink-0">4</span>Supplier Relationship Mgmt</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="13-ISM-CPSM/Module-05-Cost-Management-TCO/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-violet-100 text-violet-700 text-xs font-bold flex items-center justify-center shrink-0">5</span>Cost Management &amp; TCO</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="13-ISM-CPSM/Module-06-International-Supply/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-violet-100 text-violet-700 text-xs font-bold flex items-center justify-center shrink-0">6</span>International Supply</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="13-ISM-CPSM/Module-07-Risk-Compliance-Ethics/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-violet-100 text-violet-700 text-xs font-bold flex items-center justify-center shrink-0">7</span>Risk, Compliance &amp; Ethics</span><span class="text-slate-400">→</span></a></li>
-          <li><a href="13-ISM-CPSM/Module-08-Leadership-Project-Management/Reading/" class="flex items-center justify-between p-3.5 hover:bg-slate-50 transition"><span class="flex items-center gap-3"><span class="w-7 h-7 rounded-full bg-violet-100 text-violet-700 text-xs font-bold flex items-center justify-center shrink-0">8</span>Leadership &amp; PM</span><span class="text-slate-400">→</span></a></li>
-          <li class="bg-slate-50"><a href="13-ISM-CPSM/Practice-Exams/Practice-Exam-1/" class="flex items-center justify-between p-3.5 hover:bg-slate-100 transition font-semibold"><span class="flex items-center gap-3"><span class="text-lg">🧪</span>3 Practice Exams + Final Mock</span><span class="text-slate-400">→</span></a></li>
-        </ol>
-      </div>
+      <!-- AI Marketing Practitioner card -->
+      <a href="15-AI-Marketing-Practitioner/" class="cert-card group block rounded-2xl border border-slate-200 bg-gradient-to-br from-fuchsia-500 to-fuchsia-800 text-white p-8 md:p-10 text-center">
+        <span class="shine-overlay"></span>
+        <span class="cert-card-icon block text-7xl md:text-8xl mb-5 drop-shadow-2xl">🎯</span>
+        <h3 class="display text-3xl md:text-4xl font-extrabold mb-2">Practitioner</h3>
+        <p class="text-fuchsia-50 text-base md:text-lg mb-6">10 modules · ~70 hours · Intermediate</p>
+        <span class="cert-card-cta inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/15 ring-1 ring-white/30 backdrop-blur-sm text-sm md:text-base font-semibold">
+          Open course <span aria-hidden="true">→</span>
+        </span>
+      </a>
+
+      <!-- AI Marketing Strategist card -->
+      <a href="16-AI-Marketing-Strategist/" class="cert-card group block rounded-2xl border border-slate-200 bg-gradient-to-br from-purple-500 to-purple-900 text-white p-8 md:p-10 text-center">
+        <span class="shine-overlay"></span>
+        <span class="cert-card-icon block text-7xl md:text-8xl mb-5 drop-shadow-2xl">📈</span>
+        <h3 class="display text-3xl md:text-4xl font-extrabold mb-2">Strategist</h3>
+        <p class="text-purple-50 text-base md:text-lg mb-6">10 modules · ~80 hours · Advanced</p>
+        <span class="cert-card-cta inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/15 ring-1 ring-white/30 backdrop-blur-sm text-sm md:text-base font-semibold">
+          Open course <span aria-hidden="true">→</span>
+        </span>
+      </a>
+
+      <!-- AI Marketing Entrepreneur card -->
+      <a href="17-AI-Marketing-Entrepreneur/" class="cert-card group block rounded-2xl border border-slate-200 bg-gradient-to-br from-amber-500 to-amber-800 text-white p-8 md:p-10 text-center">
+        <span class="shine-overlay"></span>
+        <span class="cert-card-icon block text-7xl md:text-8xl mb-5 drop-shadow-2xl">💼</span>
+        <h3 class="display text-3xl md:text-4xl font-extrabold mb-2">Entrepreneur</h3>
+        <p class="text-amber-50 text-base md:text-lg mb-6">8 modules · ~40 hours · Expert</p>
+        <span class="cert-card-cta inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/15 ring-1 ring-white/30 backdrop-blur-sm text-sm md:text-base font-semibold">
+          Open course <span aria-hidden="true">→</span>
+        </span>
+      </a>
+
+      <!-- AI Marketing Capstone Portfolio card -->
+      <a href="18-AI-Marketing-Capstone-Portfolio/" class="cert-card group block rounded-2xl border border-slate-200 bg-gradient-to-br from-yellow-500 to-yellow-800 text-white p-8 md:p-10 text-center">
+        <span class="shine-overlay"></span>
+        <span class="cert-card-icon block text-7xl md:text-8xl mb-5 drop-shadow-2xl">🏆</span>
+        <h3 class="display text-3xl md:text-4xl font-extrabold mb-2">Capstone Portfolio</h3>
+        <p class="text-yellow-50 text-base md:text-lg mb-6">8 modules · ~50 hours · Portfolio</p>
+        <span class="cert-card-cta inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/15 ring-1 ring-white/30 backdrop-blur-sm text-sm md:text-base font-semibold">
+          Open course <span aria-hidden="true">→</span>
+        </span>
+      </a>
 
         </div>
       </div>
 
     </div>
+    </div>
   </section>
 
   <!-- ============== HOW IT WORKS ============== -->
   <section id="how" class="bg-slate-50 border-y border-slate-200">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
-      <div class="text-center mb-14">
+    <div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
+      <div class="reveal text-center mb-14">
         <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Built Like a Course.<br />Not Like a Textbook.</h2>
-        <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+        <p class="text-xl md:text-2xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
           Three ingredients that make this stick — backed by learning science, not wishful thinking.
         </p>
       </div>
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="bg-white rounded-2xl p-7 border border-slate-200">
-          <div class="w-12 h-12 rounded-xl bg-amber-100 text-2xl flex items-center justify-center mb-4">🍿</div>
-          <h3 class="font-bold text-lg mb-2">Stories &amp; Analogies</h3>
-          <p class="text-slate-600 text-sm leading-relaxed">
+      <div class="reveal grid md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-2xl p-7 border border-slate-200 card-hover">
+          <div class="w-14 h-14 rounded-xl bg-amber-100 text-3xl flex items-center justify-center mb-4">🍿</div>
+          <h3 class="font-bold text-xl mb-2">Stories &amp; Analogies</h3>
+          <p class="text-slate-600 text-base leading-relaxed">
             Pizza shops, movie sets, cooking shows. Your brain remembers stories
             <strong>22× better</strong> than dry facts.
           </p>
         </div>
-        <div class="bg-white rounded-2xl p-7 border border-slate-200">
-          <div class="w-12 h-12 rounded-xl bg-blue-100 text-2xl flex items-center justify-center mb-4">🎯</div>
-          <h3 class="font-bold text-lg mb-2">Exam-Focused</h3>
-          <p class="text-slate-600 text-sm leading-relaxed">
+        <div class="bg-white rounded-2xl p-7 border border-slate-200 card-hover">
+          <div class="w-14 h-14 rounded-xl bg-blue-100 text-3xl flex items-center justify-center mb-4">🎯</div>
+          <h3 class="font-bold text-xl mb-2">Exam-Focused</h3>
+          <p class="text-slate-600 text-base leading-relaxed">
             Every concept tagged with <em>"What the exam tests"</em> — including the trap-answer patterns
             most students fall for.
           </p>
         </div>
-        <div class="bg-white rounded-2xl p-7 border border-slate-200">
-          <div class="w-12 h-12 rounded-xl bg-emerald-100 text-2xl flex items-center justify-center mb-4">🔁</div>
-          <h3 class="font-bold text-lg mb-2">Spaced Repetition</h3>
-          <p class="text-slate-600 text-sm leading-relaxed">
+        <div class="bg-white rounded-2xl p-7 border border-slate-200 card-hover">
+          <div class="w-14 h-14 rounded-xl bg-emerald-100 text-3xl flex items-center justify-center mb-4">🔁</div>
+          <h3 class="font-bold text-xl mb-2">Spaced Repetition</h3>
+          <p class="text-slate-600 text-base leading-relaxed">
             Quizzes → flashcards → mock exams → real exam. The science says this beats
             re-reading by <strong>50%+</strong>.
           </p>
@@ -735,116 +745,71 @@ sitemap: false
       </div>
 
       <!-- module structure -->
-      <div class="mt-14 bg-white rounded-2xl border border-slate-200 p-8">
-        <h3 class="font-bold text-lg mb-5 text-center">Every Module Follows the Same Flow</h3>
-        <div class="grid md:grid-cols-4 gap-4 text-center">
-          <div class="p-4">
-            <div class="text-3xl mb-2">📖</div>
-            <div class="font-semibold mb-1">Reading</div>
-            <p class="text-xs text-slate-500">Story-driven lesson, ~25 min</p>
+      <div class="reveal mt-14 bg-white rounded-3xl border border-slate-200 p-10 md:p-12 shadow-lg">
+        <h3 class="font-extrabold text-2xl md:text-3xl mb-10 text-center display">Every Module Follows the Same Flow</h3>
+        <div class="grid md:grid-cols-4 gap-6 text-center">
+          <div class="p-4 transition-transform hover:-translate-y-1">
+            <div class="w-24 h-24 md:w-28 md:h-28 mx-auto rounded-3xl bg-gradient-to-br from-amber-100 to-amber-200 text-6xl md:text-7xl flex items-center justify-center mb-5 shadow-lg ring-1 ring-amber-200/60">📖</div>
+            <div class="font-extrabold text-xl md:text-2xl mb-2">Reading</div>
+            <p class="text-base text-slate-600 leading-relaxed">Story-driven lesson, ~25 min</p>
           </div>
-          <div class="p-4">
-            <div class="text-3xl mb-2">🎥</div>
-            <div class="font-semibold mb-1">Videos</div>
-            <p class="text-xs text-slate-500">Curated YouTube links</p>
+          <div class="p-4 transition-transform hover:-translate-y-1">
+            <div class="w-24 h-24 md:w-28 md:h-28 mx-auto rounded-3xl bg-gradient-to-br from-rose-100 to-pink-200 text-6xl md:text-7xl flex items-center justify-center mb-5 shadow-lg ring-1 ring-pink-200/60">🎥</div>
+            <div class="font-extrabold text-xl md:text-2xl mb-2">Videos</div>
+            <p class="text-base text-slate-600 leading-relaxed">Curated YouTube — inline modal playback</p>
           </div>
-          <div class="p-4">
-            <div class="text-3xl mb-2">✏️</div>
-            <div class="font-semibold mb-1">Quiz</div>
-            <p class="text-xs text-slate-500">10–15 questions w/ explanations</p>
+          <div class="p-4 transition-transform hover:-translate-y-1">
+            <div class="w-24 h-24 md:w-28 md:h-28 mx-auto rounded-3xl bg-gradient-to-br from-blue-100 to-indigo-200 text-6xl md:text-7xl flex items-center justify-center mb-5 shadow-lg ring-1 ring-blue-200/60">✏️</div>
+            <div class="font-extrabold text-xl md:text-2xl mb-2">Quiz</div>
+            <p class="text-base text-slate-600 leading-relaxed">Bloom's-tagged questions with rationales</p>
           </div>
-          <div class="p-4">
-            <div class="text-3xl mb-2">📋</div>
-            <div class="font-semibold mb-1">Cheat Sheet</div>
-            <p class="text-xs text-slate-500">One-page review reference</p>
+          <div class="p-4 transition-transform hover:-translate-y-1">
+            <div class="w-24 h-24 md:w-28 md:h-28 mx-auto rounded-3xl bg-gradient-to-br from-emerald-100 to-teal-200 text-6xl md:text-7xl flex items-center justify-center mb-5 shadow-lg ring-1 ring-emerald-200/60">📋</div>
+            <div class="font-extrabold text-xl md:text-2xl mb-2">Cheat Sheet</div>
+            <p class="text-base text-slate-600 leading-relaxed">One-page review reference</p>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============== START CTA ============== -->
-  <section id="start" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 text-center">
-    <h2 class="text-4xl md:text-5xl font-extrabold mb-5">Your Prep Starts in the Next 60 Seconds.</h2>
-    <p class="text-lg text-slate-600 mb-8 max-w-2xl mx-auto">
-      Pick the certification you want to crush, open Module 1, and you're in. Every track has its own modules, mock exams, flashcards, and cheat sheets — built to take you from zero to exam-ready.
-    </p>
-    <div class="flex flex-col sm:flex-row gap-3 justify-center mb-12">
-      <a href="#curriculum" class="inline-flex items-center justify-center gap-2 bg-slate-900 hover:bg-slate-800 text-white font-semibold px-7 py-3.5 rounded-xl transition shadow-lg">
-        Browse All 13 Tracks →
-      </a>
-      <a href="#how" class="inline-flex items-center justify-center gap-2 bg-white text-slate-900 ring-1 ring-slate-300 font-semibold px-7 py-3.5 rounded-xl hover:bg-slate-50 transition">
-        See How It Works
-      </a>
-    </div>
-
-    <!-- per-track quick links -->
-    <div class="mt-2 mb-14">
-      <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-4">Jump Straight Into a Track</p>
-      <div class="flex flex-wrap gap-2 justify-center">
-        <a href="01-Scrum-Master/" class="inline-flex items-center gap-1.5 bg-white ring-1 ring-slate-200 hover:ring-blue-400 hover:text-blue-700 text-slate-700 text-sm font-medium px-3 py-1.5 rounded-lg transition">🏃 Scrum Master</a>
-        <a href="02-PMP/" class="inline-flex items-center gap-1.5 bg-white ring-1 ring-slate-200 hover:ring-orange-400 hover:text-orange-700 text-slate-700 text-sm font-medium px-3 py-1.5 rounded-lg transition">📊 PMP</a>
-        <a href="03-AWS-Cloud-Practitioner/" class="inline-flex items-center gap-1.5 bg-white ring-1 ring-slate-200 hover:ring-amber-400 hover:text-amber-700 text-slate-700 text-sm font-medium px-3 py-1.5 rounded-lg transition">☁️ AWS CLF-C02</a>
-        <a href="04-AWS-Solutions-Architect-Associate/" class="inline-flex items-center gap-1.5 bg-white ring-1 ring-slate-200 hover:ring-orange-500 hover:text-orange-800 text-slate-700 text-sm font-medium px-3 py-1.5 rounded-lg transition">🏗️ AWS SAA-C03</a>
-        <a href="07-AWS-AI-Practitioner/" class="inline-flex items-center gap-1.5 bg-white ring-1 ring-slate-200 hover:ring-purple-400 hover:text-purple-700 text-slate-700 text-sm font-medium px-3 py-1.5 rounded-lg transition">🤖 AIF-C01</a>
-        <a href="05-Azure-Fundamentals/" class="inline-flex items-center gap-1.5 bg-white ring-1 ring-slate-200 hover:ring-cyan-400 hover:text-cyan-700 text-slate-700 text-sm font-medium px-3 py-1.5 rounded-lg transition">🌥️ AZ-900</a>
-        <a href="06-Azure-Administrator/" class="inline-flex items-center gap-1.5 bg-white ring-1 ring-slate-200 hover:ring-sky-400 hover:text-sky-700 text-slate-700 text-sm font-medium px-3 py-1.5 rounded-lg transition">🛠️ AZ-104</a>
-        <a href="08-Azure-AI-Engineer/" class="inline-flex items-center gap-1.5 bg-white ring-1 ring-slate-200 hover:ring-pink-400 hover:text-pink-700 text-slate-700 text-sm font-medium px-3 py-1.5 rounded-lg transition">🧠 AI-102</a>
-        <a href="09-CompTIA-Security-Plus/" class="inline-flex items-center gap-1.5 bg-white ring-1 ring-slate-200 hover:ring-red-400 hover:text-red-700 text-slate-700 text-sm font-medium px-3 py-1.5 rounded-lg transition">🛡️ Security+ SY0-701</a>
-        <a href="11-ASCM-CPIM/" class="inline-flex items-center gap-1.5 bg-white ring-1 ring-slate-200 hover:ring-indigo-400 hover:text-indigo-700 text-slate-700 text-sm font-medium px-3 py-1.5 rounded-lg transition">🏭 ASCM CPIM</a>
-        <a href="10-ASCM-CSCP/" class="inline-flex items-center gap-1.5 bg-white ring-1 ring-slate-200 hover:ring-teal-400 hover:text-teal-700 text-slate-700 text-sm font-medium px-3 py-1.5 rounded-lg transition">🔗 ASCM CSCP</a>
-        <a href="12-ASCM-CLTD/" class="inline-flex items-center gap-1.5 bg-white ring-1 ring-slate-200 hover:ring-emerald-400 hover:text-emerald-700 text-slate-700 text-sm font-medium px-3 py-1.5 rounded-lg transition">🚛 ASCM CLTD</a>
-        <a href="13-ISM-CPSM/" class="inline-flex items-center gap-1.5 bg-white ring-1 ring-slate-200 hover:ring-violet-400 hover:text-violet-700 text-slate-700 text-sm font-medium px-3 py-1.5 rounded-lg transition">🤝 ISM CPSM</a>
-      </div>
-    </div>
-
-    <!-- share -->
-    <div class="mt-10 bg-gradient-to-br from-indigo-50 to-pink-50 border border-indigo-100 rounded-2xl p-6 md:p-8">
-      <p class="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-2">Know Someone Studying?</p>
-      <p class="text-lg font-medium text-slate-800 mb-4">Share the Hub with Them.</p>
-      <div class="flex flex-wrap gap-2 justify-center">
-        <a href="https://wa.me/?text=Cert%20prep%20hub%20for%2013%20industry%20certifications%20%E2%80%94%20PM%2C%20Cloud%2C%20AI%2C%20Cybersecurity%20%26%20Supply%20Chain%20%E2%80%94%20by%20Syed%20HZ%20Rizvi%3A%20https%3A%2F%2Fsyedhzrizvi.github.io%2FCertification-Prep%2F" class="bg-white px-4 py-2 rounded-lg ring-1 ring-slate-200 text-sm font-medium hover:bg-slate-50">📱 WhatsApp</a>
-        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsyedhzrizvi.github.io%2FCertification-Prep%2F" class="bg-white px-4 py-2 rounded-lg ring-1 ring-slate-200 text-sm font-medium hover:bg-slate-50">💼 LinkedIn</a>
-        <a href="mailto:?subject=Cert%20Prep%20Hub%20by%20Syed%20HZ%20Rizvi%20%E2%80%94%20PM%2C%20Cloud%2C%20AI%2C%20Cybersecurity%20%26%20Supply%20Chain&body=Story-driven%20study%20materials%20for%2013%20industry%20certifications%20%E2%80%94%20Scrum%20Master%2C%20PMP%2C%20AWS%2C%20Azure%2C%20GenAI%2C%20CompTIA%20Security%2B%2C%20and%20ASCM%2FISM%20supply%20chain.%0A%0Ahttps%3A%2F%2Fsyedhzrizvi.github.io%2FCertification-Prep%2F" class="bg-white px-4 py-2 rounded-lg ring-1 ring-slate-200 text-sm font-medium hover:bg-slate-50">📧 Email</a>
-        <a href="https://twitter.com/intent/tweet?text=Cert%20prep%20hub%20%E2%80%94%2013%20certifications%20across%20PM%2C%20Cloud%2C%20AI%2C%20Cybersecurity%20%26%20Supply%20Chain%20%E2%80%94%20by%20%40SyedHZRizvi%3A%20https%3A%2F%2Fsyedhzrizvi.github.io%2FCertification-Prep%2F" class="bg-white px-4 py-2 rounded-lg ring-1 ring-slate-200 text-sm font-medium hover:bg-slate-50">🐦 Twitter/X</a>
       </div>
     </div>
   </section>
 
   <!-- ============== ABOUT THE CREATOR (moved to bottom — was at position 04) ============== -->
   <section id="author" class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
-    <div class="bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 rounded-3xl p-8 md:p-14 text-white relative overflow-hidden">
+    <div class="reveal bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 rounded-3xl p-8 md:p-14 text-white relative overflow-hidden">
       <div class="absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_top_right,_rgba(167,139,250,0.4),_transparent_60%)]"></div>
       <div class="relative grid md:grid-cols-3 gap-8 items-center">
         <div class="md:col-span-1 text-center">
           <div class="w-32 h-32 rounded-full bg-gradient-to-br from-indigo-400 to-pink-400 mx-auto flex items-center justify-center text-5xl font-extrabold text-white shadow-2xl">
             SR
           </div>
-          <p class="mt-4 text-indigo-200 text-sm font-medium">Designer · Author · Curator</p>
-          <p class="mt-2 text-slate-400 text-xs font-medium">📍 Toronto, Canada</p>
+          <p class="mt-4 text-indigo-200 text-base font-medium">Designer · Author · Curator</p>
+          <p class="mt-2 text-slate-400 text-sm font-medium">📍 Toronto, Canada</p>
         </div>
         <div class="md:col-span-2">
           <h2 class="display text-3xl md:text-4xl font-extrabold mb-4">
             Designed &amp; Authored By<br /><span class="gradient-text-blue">Syed Humayun Zafar Rizvi</span>
           </h2>
-          <p class="text-indigo-200 text-sm font-medium mb-4">📍 Toronto, Canada</p>
-          <p class="text-slate-300 leading-relaxed mb-4">
+          <p class="text-indigo-200 text-base font-medium mb-4">📍 Toronto, Canada</p>
+          <p class="text-lg text-slate-300 leading-relaxed mb-4">
             Every module, story, quiz, practice exam, flashcard, and cheat sheet on this site
             was <strong class="text-white">designed and written by Syed Humayun Zafar Rizvi</strong> — built from the ground
             up to be the kind of study experience he wished existed when prepping for these exams himself.
           </p>
-          <p class="text-slate-300 leading-relaxed mb-6">
-            The goal: make passing world-class certifications across project management, cloud, AI, cybersecurity, and supply chain accessible to anyone with the discipline to follow the plan — without a $1,000+ bootcamp.
+          <p class="text-lg text-slate-300 leading-relaxed mb-4">
+            The goal: make passing world-class certifications across <strong class="text-white">Project Management</strong>, <strong class="text-white">Cloud</strong>, <strong class="text-white">AI &amp; GenAI</strong>, <strong class="text-white">Cybersecurity</strong>, <strong class="text-white">International Supply Chain</strong>, and <strong class="text-white">AI-Based Digital Marketing</strong> accessible to anyone with the discipline to follow the plan — without a $1,000+ bootcamp.
+          </p>
+          <p class="text-lg text-slate-300 leading-relaxed mb-6">
+            Every course is engineered to the <strong class="text-amber-200">teaching &amp; learning gold standard of Cornell, Harvard, and Stanford universities</strong> — Harvard-style named case studies, Stanford rigor, Cornell depth, Bloom's-taxonomy-tagged assessments, capstone projects, and curated readings from canonical academic and industry sources.
           </p>
           <div class="flex flex-wrap gap-3">
-            <a href="#start" class="inline-flex items-center gap-2 bg-white text-slate-900 font-semibold px-6 py-3 rounded-lg hover:bg-slate-100 transition text-sm shadow-lg">
+            <a href="#curriculum" class="inline-flex items-center gap-2 bg-white text-slate-900 font-semibold px-6 py-3 rounded-lg hover:bg-slate-100 transition text-base shadow-lg">
               🚀 Begin the course →
             </a>
-            <a href="#curriculum" class="inline-flex items-center gap-2 bg-white/10 ring-1 ring-white/20 hover:bg-white/15 text-white font-semibold px-6 py-3 rounded-lg transition text-sm">
+            <a href="#curriculum" class="inline-flex items-center gap-2 bg-white/10 ring-1 ring-white/20 hover:bg-white/15 text-white font-semibold px-6 py-3 rounded-lg transition text-base">
               View course tracks
             </a>
           </div>
-          <p class="text-xs text-slate-400 mt-6 leading-relaxed">
+          <p class="text-sm text-slate-400 mt-6 leading-relaxed">
             All content © 2026 Syed Humayun Zafar Rizvi (Toronto, Canada). All Rights Reserved.
             This material is provided for personal study only — copying, reproduction,
             or redistribution is not permitted without prior written consent.
@@ -856,14 +821,14 @@ sitemap: false
 
   <!-- ============== FOOTER (Liquid-driven from _data/navigation.yml + _data/site_stats.yml) ============== -->
   <footer class="border-t border-slate-200 bg-white">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 grid md:grid-cols-4 gap-6 items-start">
+    <div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-10 grid md:grid-cols-4 gap-6 items-start">
       <div class="md:col-span-2">
         <div class="flex items-center gap-2 font-extrabold mb-2"><span class="text-xl">🎓</span> The Cert Hub</div>
-        <p class="text-sm text-slate-500 leading-relaxed">
+        <p class="text-base text-slate-500 leading-relaxed">
           Designed &amp; authored by <strong class="text-slate-900">Syed Humayun Zafar Rizvi</strong>
           <span class="text-slate-400">· 📍 Toronto, Canada</span>.<br />
           A complete self-study hub for <strong class="text-slate-700">{{ cert_count }} industry certifications</strong>
-          across project management, cloud, AI, cybersecurity, and supply chain — <strong class="text-slate-700">{{ total_modules }} modules</strong>
+          across <strong class="text-slate-700">Project Management</strong>, <strong class="text-slate-700">Cloud</strong>, <strong class="text-slate-700">AI &amp; GenAI</strong>, <strong class="text-slate-700">Cybersecurity</strong>, <strong class="text-slate-700">International Supply Chain</strong>, and <strong class="text-slate-700">AI-Based Digital Marketing</strong> — <strong class="text-slate-700">{{ total_modules }} modules</strong>
           and <strong class="text-slate-700">{{ mock_exam_count }} full-length mock exams</strong>, story-driven and exam-focused.
         </p>
       </div>
@@ -888,7 +853,7 @@ sitemap: false
       </div>
     </div>
     <div class="border-t border-slate-100 bg-slate-50">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row gap-2 items-center justify-between text-xs text-slate-500">
+      <div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row gap-2 items-center justify-between text-xs text-slate-500">
         <p>
           © {{ site.time | date: "%Y" }} <strong class="text-slate-700">Syed Humayun Zafar Rizvi</strong> · Toronto, Canada · All Rights Reserved.
           Personal study use only — copying &amp; reproduction prohibited.
@@ -934,6 +899,34 @@ sitemap: false
         clearTimeout(warningTimeout);
         warningTimeout = setTimeout(function () { if (t.parentNode) t.remove(); }, 2500);
       }
+    })();
+  </script>
+
+  <!-- ============== SCROLL-REVEAL OBSERVER ============== -->
+  <script>
+    (function () {
+      var prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var revealEls = document.querySelectorAll('.reveal');
+      if (!revealEls.length) return;
+      if (prefersReduced || !('IntersectionObserver' in window)) {
+        revealEls.forEach(function (el) { el.classList.add('in-view'); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+      revealEls.forEach(function (el, i) {
+        // Light, capped stagger so deep grids do not lag
+        if (!el.style.transitionDelay) {
+          el.style.transitionDelay = Math.min(i * 60, 240) + 'ms';
+        }
+        io.observe(el);
+      });
     })();
   </script>
 

@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~45 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Bot+Service+overview+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Bot+Service+overview+tutorial" target="_blank" rel="noopener" data-video-id="dAl9FsWOnlI">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 14 min · Channels + hosting</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Bot+Framework+SDK+Python+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Bot+Framework+SDK+Python+tutorial" target="_blank" rel="noopener" data-video-id="ynG6Muox81o">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 16 min · Dialogs + state</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=CLU+conversational+language+understanding+demo" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=CLU+conversational+language+understanding+demo" target="_blank" rel="noopener" data-video-id="TNL2qiBv1sg">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 10 min · Language Studio walkthrough</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Orchestration+workflow+Azure+AI+Language" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Orchestration+workflow+Azure+AI+Language" target="_blank" rel="noopener" data-video-id="UCA7GUWweVE">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~30 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Adaptive+Cards+bot+framework+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Adaptive+Cards+bot+framework+tutorial" target="_blank" rel="noopener" data-video-id="t6_x8Bpzxss">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 10 min · Card JSON</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Direct+Line+Speech+voice+bot+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Direct+Line+Speech+voice+bot+tutorial" target="_blank" rel="noopener" data-video-id="gCwAqpWFY6U">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 12 min · STT/TTS pipeline</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Question+Answering+Azure+AI+Language+knowledge+base" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Question+Answering+Azure+AI+Language+knowledge+base" target="_blank" rel="noopener" data-video-id="1CBY6gXdpV0">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Copilot+Studio+vs+Bot+Framework" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Copilot+Studio+vs+Bot+Framework" target="_blank" rel="noopener" data-video-id="sIUNK809qlc">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 20 min · Where Microsoft is heading</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=bot+framework+composer+walkthrough" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=bot+framework+composer+walkthrough" target="_blank" rel="noopener" data-video-id="lnTGFQH-dXQ">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

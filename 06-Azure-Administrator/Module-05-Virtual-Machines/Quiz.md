@@ -6,7 +6,7 @@
 
 ## Questions
 
-### Q1. Which VM family prefix is optimized for high memory-to-CPU ratio?
+### Q1. Which VM family prefix is optimized for high memory-to-CPU ratio? *(Remember)*
 A. F
 B. D
 C. E
@@ -14,7 +14,7 @@ D. B
 
 ---
 
-### Q2. The `s` suffix on a VM size (e.g. D2s_v5) means:
+### Q2. The `s` suffix on a VM size (e.g. D2s_v5) means: *(Remember)*
 A. Spot VM
 B. Premium SSD support
 C. Local SSD temp disk
@@ -22,7 +22,7 @@ D. Secure boot
 
 ---
 
-### Q3. SLAs in Azure (memorize): Single VM with Premium SSD / Availability Set / Availability Zones
+### Q3. SLAs in Azure (memorize): Single VM with Premium SSD / Availability Set / Availability Zones *(Remember)*
 A. 99.5% / 99.95% / 99.99%
 B. 99.9% / 99.95% / 99.99%
 C. 99.99% / 99.9% / 99.95%
@@ -30,7 +30,7 @@ D. 99.95% / 99.99% / 99.999%
 
 ---
 
-### Q4. An Availability Set's purpose is to:
+### Q4. An Availability Set's purpose is to: *(Understand)*
 A. Distribute VMs across regions
 B. Distribute VMs across fault & update domains within one datacenter
 C. Replace VMSS
@@ -38,7 +38,7 @@ D. Provide cross-tenant access
 
 ---
 
-### Q5. Can you add an existing VM to an Availability Set after it's created?
+### Q5. Can you add an existing VM to an Availability Set after it's created? *(Understand)*
 A. Yes, anytime
 B. Only by stopping the VM
 C. No — AS must be specified at VM creation
@@ -46,7 +46,7 @@ D. Only with Azure Site Recovery
 
 ---
 
-### Q6. Which storage option supports **independent** IOPS, throughput, and size configuration?
+### Q6. Which storage option supports **independent** IOPS, throughput, and size configuration? *(Remember)*
 A. Standard SSD
 B. Premium SSD
 C. Premium SSD v2
@@ -54,7 +54,7 @@ D. Standard HDD
 
 ---
 
-### Q7. Ultra Disk and Premium SSD v2 can be used as:
+### Q7. Ultra Disk and Premium SSD v2 can be used as: *(Remember)*
 A. Both OS and data disks
 B. Data disks only (not OS)
 C. OS disk only
@@ -62,7 +62,7 @@ D. Backup-only
 
 ---
 
-### Q8. VMSS Flexible orchestration mode is recommended because it:
+### Q8. VMSS Flexible orchestration mode is recommended because it: *(Understand)*
 A. Costs less
 B. Supports mixed sizes + AZ integration + max 1000 instances by default
 C. Replaces Premium SSD v2
@@ -70,7 +70,7 @@ D. Auto-applies CMK
 
 ---
 
-### Q9. **Order these steps** to deploy a zone-redundant web tier behind a Standard Load Balancer.
+### Q9. **Order these steps** to deploy a zone-redundant web tier behind a Standard Load Balancer. *(Create)*
 
 1. Create VNet with subnets
 2. Create Standard Public IP + Standard LB (zonal frontend)
@@ -85,7 +85,7 @@ D. 1 → 2 → 4 → 3 → 5
 
 ---
 
-### Q10. Yes/No — Availability options.
+### Q10. Yes/No — Availability options. *(Evaluate)*
 
 **S1:** An Availability Set and an Availability Zone can be combined for one VM.
 **S2:** Availability Zones provide physically separate datacenters in the same region.
@@ -98,7 +98,7 @@ D. Yes / No / Yes
 
 ---
 
-### Q11. Which VM extension lets you run an ad-hoc shell command from the Azure portal without RDP/SSH?
+### Q11. Which VM extension lets you run an ad-hoc shell command from the Azure portal without RDP/SSH? *(Apply)*
 A. Custom Script Extension
 B. Run Command
 C. DSC
@@ -106,7 +106,7 @@ D. Azure Disk Encryption
 
 ---
 
-### Q12. Azure Disk Encryption (ADE) operates at the:
+### Q12. Azure Disk Encryption (ADE) operates at the: *(Understand)*
 A. Storage account level
 B. Physical host level
 C. OS level (BitLocker / dm-crypt)
@@ -114,7 +114,7 @@ D. Network level
 
 ---
 
-### Q13. Encryption at host is enabled at:
+### Q13. Encryption at host is enabled at: *(Apply)*
 A. Per-disk
 B. Per-resource group
 C. Subscription level (feature flag) + per-VM setting at creation
@@ -122,7 +122,7 @@ D. Tenant level
 
 ---
 
-### Q14. To create a reproducible "golden image" with version 1.0.0 and 1.1.0 replicated to East US + West US 2, you should use:
+### Q14. To create a reproducible "golden image" with version 1.0.0 and 1.1.0 replicated to East US + West US 2, you should use: *(Apply)*
 A. A single managed image
 B. Azure Compute Gallery
 C. A VHD blob
@@ -130,7 +130,7 @@ D. VMSS image extension
 
 ---
 
-### Q15. To **generalize** a Linux VM before capturing it as an image, you run:
+### Q15. To **generalize** a Linux VM before capturing it as an image, you run: *(Remember)*
 A. `sysprep /generalize`
 B. `waagent -deprovision +user`
 C. `cloud-init clean`
@@ -138,7 +138,7 @@ D. `tdnf clean`
 
 ---
 
-### Q16. Autoscale: scale OUT means:
+### Q16. Autoscale: scale OUT means: *(Understand)*
 A. Increase VM size (vertical)
 B. Increase VM count (horizontal)
 C. Move to a higher region
@@ -146,7 +146,7 @@ D. Reduce VM count
 
 ---
 
-### Q17. The cooldown setting on an autoscale rule:
+### Q17. The cooldown setting on an autoscale rule: *(Understand)*
 A. Waits before evaluating the next scale event to prevent flapping
 B. Sets the max number of VMs
 C. Triggers a graceful shutdown
@@ -154,7 +154,7 @@ D. Equates to AS update domains
 
 ---
 
-### Q18. Yes/No — Spot VMs.
+### Q18. Yes/No — Spot VMs. *(Evaluate)*
 
 **S1:** Spot VMs can be evicted with 30 seconds' notice.
 **S2:** Spot VMs come with a 99.99% SLA.
@@ -167,7 +167,7 @@ D. Yes / No / No
 
 ---
 
-### Q19. A workload bursts CPU above baseline only occasionally and never for long. The most cost-effective family is likely:
+### Q19. A workload bursts CPU above baseline only occasionally and never for long. The most cost-effective family is likely: *(Apply)*
 A. B-series (burstable)
 B. F-series (compute optimized)
 C. M-series (memory monster)
@@ -175,7 +175,7 @@ D. NC-series (GPU)
 
 ---
 
-### Q20. Premium SSD v2 disks support:
+### Q20. Premium SSD v2 disks support: *(Remember)*
 A. Only LRS
 B. LRS and ZRS
 C. GRS only
@@ -183,7 +183,7 @@ D. GZRS only
 
 ---
 
-### Q21. Live migration is performed by Microsoft when:
+### Q21. Live migration is performed by Microsoft when: *(Understand)*
 A. You deallocate the VM manually
 B. Hardware maintenance requires moving the VM to another host transparently
 C. You change the VM region
@@ -191,7 +191,7 @@ D. You apply ADE
 
 ---
 
-### Q22. To patch 30 VMs across two subscriptions on a schedule with reporting and reboot windows, use:
+### Q22. To patch 30 VMs across two subscriptions on a schedule with reporting and reboot windows, use: *(Apply)*
 A. Custom script extension
 B. Azure Update Manager + Maintenance Configuration
 C. Azure Bastion
@@ -199,7 +199,7 @@ D. PIM
 
 ---
 
-### Q23. Azure Bastion provides:
+### Q23. Azure Bastion provides: *(Remember)*
 A. CDN edge caching
 B. Browser-based RDP/SSH to VMs without exposing public IPs
 C. Layer-7 WAF for VMs
@@ -207,7 +207,7 @@ D. VM backup
 
 ---
 
-### Q24. Yes/No — Disks & encryption.
+### Q24. Yes/No — Disks & encryption. *(Evaluate)*
 
 **S1:** SSE at-rest with Microsoft-managed keys is always on by default for managed disks.
 **S2:** Encryption at host encrypts temp and cache disks at the physical host level.
@@ -220,7 +220,7 @@ D. Yes / No / No
 
 ---
 
-### Q25. The maximum number of disks attachable to a VM is determined by:
+### Q25. The maximum number of disks attachable to a VM is determined by: *(Remember)*
 A. The OS
 B. The VM size (each size has a documented max data-disk count)
 C. The subscription
@@ -228,7 +228,7 @@ D. The region
 
 ---
 
-### Q26. Custom Script Extension's primary use is:
+### Q26. Custom Script Extension's primary use is: *(Understand)*
 A. To run a one-time provisioning script during VM creation or update
 B. To provide an interactive SSH session
 C. To enable disk encryption
@@ -236,7 +236,7 @@ D. To configure DNS
 
 ---
 
-### Q27. A scale set autoscale rule "scale OUT 1 when avg CPU > 70% for 10 minutes" did not trigger when CPU spiked for 5 minutes. The likely reason:
+### Q27. A scale set autoscale rule "scale OUT 1 when avg CPU > 70% for 10 minutes" did not trigger when CPU spiked for 5 minutes. The likely reason: *(Analyze)*
 A. The aggregation window was 10 minutes
 B. CPU metric is unavailable on VMSS
 C. The rule needs explicit cool-down disabled
@@ -244,7 +244,7 @@ D. The rule needs to be at the subscription level
 
 ---
 
-### Q28. Which combination provides the BEST cost / availability balance for a stateless web tier?
+### Q28. Which combination provides the BEST cost / availability balance for a stateless web tier? *(Analyze)*
 A. Single VM, Premium SSD, Spot pricing
 B. VMSS Flexible across 3 AZs, Standard SSD, autoscale 2–10
 C. Availability Set with 5 VMs, Ultra Disk

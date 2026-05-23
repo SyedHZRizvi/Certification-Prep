@@ -1051,6 +1051,342 @@ For EACH wrong answer:
 
 ---
 
+## 📚 Detailed Answer Rationales
+
+Because the Final Mock Exam revisits concepts tested in Practice Exams 1 and 2, the rationales below focus on the most common scenarios and the specific judgment patterns CPSM rewards. For every miss, also re-read the cited Reading.md section.
+
+**Q1. C.** Supply management = strategic value-creating function. (Module 1) Other options confuse purchasing, operations, or single-axis pricing.
+
+**Q2. B.** Multi-year category strategy is the only strategic option. Others are tactical day-to-day work. Senior leaders own strategy. (Module 1)
+
+**Q3. D.** Decentralized or hybrid with local autonomy for diverse, unrelated BUs. Centralized destroys responsiveness when BUs differ. (Module 1)
+
+**Q4. D.** Capital structure is finance, not Porter's framework. Porter's 5: new entrants, supplier power, buyer power, substitutes, rivalry. (Module 1)
+
+**Q5. C.** Procurement = support activity in Porter's value chain. (Module 1)
+
+**Q6. B.** CoE provides methodology/tools/analytics. It enables; doesn't own all spend. (Module 1)
+
+**Q7. A.** Stage-5 = supply-enabled innovation drives revenue + board visibility. (Module 1)
+
+**Q8. D.** "Right relationship" is a modern addition, not in classic Five Rights (quality, quantity, time, place, price). (Module 1)
+
+**Q9. B.** Personal preference has no place in objective make-or-buy analysis. Cost, capacity, IP, strategic importance are legitimate factors. (Module 1)
+
+**Q10. A.** Spend analysis provides visibility into historical spend. Diagnostic before strategy. (Module 2)
+
+**Q11. A.** Direct spend = raw materials/components into the product. (Module 2)
+
+**Q12. A.** Indirect = IT, MRO, facilities, travel — supports operations, not in the product. (Module 2)
+
+**Q13. D.** Leverage quadrant = competitive bidding / e-auctions exploit buying power. (Module 2 Kraljic)
+
+**Q14. C.** Strategic quadrant = multi-year partnership, joint development. Don't reverse-auction strategic suppliers. (Module 2)
+
+**Q15. D.** Bottleneck = ensure supply via alternates, buffers, long-term contracts. Not cost reduction. (Module 2)
+
+**Q16. C.** Single = chose one of many; Sole = only one exists. Memorize the distinction. (Module 2)
+
+**Q17. A.** Dual sourcing = two suppliers, primary/backup or 70/30 / 80/20. (Module 2)
+
+**Q18. B.** RFI = learn about the market and capable suppliers. (Module 2)
+
+**Q19. A.** RFP = creative solution + best-value proposal. (Module 2)
+
+**Q20. C.** RFQ = spec is defined; price comparison needed. (Module 2)
+
+**Q21. D.** Reverse auctions for Leverage commodities with multiple qualified suppliers — not strategic/innovation/bottleneck. (Module 2)
+
+**Q22. C.** Maverick spend = off-contract / unauthorized buying. (Module 2)
+
+**Q23. C.** Set weighted-scoring criteria BEFORE issuing the solicitation. Post-hoc setting = bias and audit risk. (Module 2)
+
+**Q24. C.** Standardization reduces variety of items. (Module 2; not suppliers — that's rationalization)
+
+**Q25. B.** Rationalization reduces the number of suppliers. (Module 2; not items — that's standardization)
+
+**Q26. A.** Bullwhip = demand distortion amplifying upstream (Hau Lee 1997). (Module 2)
+
+**Q27. C.** Sharing POS data with suppliers is the canonical bullwhip mitigation. Forward-buying and hidden forecasts amplify it. (Module 2)
+
+**Q28. A.** Performance specs = WHAT, leaving HOW to the supplier — invites innovation. (Module 2)
+
+**Q29. A.** BATNA = Best Alternative To a Negotiated Agreement (Fisher & Ury 1981). (Module 3)
+
+**Q30. A.** ZOPA = overlap of buyer max and seller min. (Module 3)
+
+**Q31. C.** Distributive = win-lose fixed pie; integrative = win-win expanded. (Module 3)
+
+**Q32. D.** Integrative for strategic long-term partnerships. (Module 3)
+
+**Q33. A.** Fixed-price = supplier bears cost-overrun risk. (Module 3)
+
+**Q34. B.** Cost-plus = buyer bears cost-overrun risk (buyer reimburses costs). (Module 3)
+
+**Q35. A.** Cost-plus or T&M for uncertain R&D scope. Forcing fixed-price = dispute. (Module 3)
+
+**Q36. B.** UCC governs US sale of goods. Services → common law; international → CISG; federal → FAR. (Module 3)
+
+**Q37. D.** CISG applies by default between signatory countries unless opted out. (Module 3)
+
+**Q38. B.** FAR governs US federal government contracts. (Module 3)
+
+**Q39. B.** Force majeure excuses performance during unforeseeable, unavoidable events — when specifically enumerated + supplier mitigated. (Module 3)
+
+**Q40. B.** Termination for convenience = payment for work done + reasonable wind-down costs. (Module 3)
+
+**Q41. D.** Termination for default requires actual material breach by supplier. (Module 3)
+
+**Q42. B.** UCC Statute of Frauds threshold = $500. Above this, writing required. (Module 3)
+
+**Q43. D.** Express warranty = specifically stated by seller (verbal, written, brochure). (Module 3)
+
+**Q44. D.** Implied warranty of merchantability = fit for ordinary purpose under UCC. (Module 3)
+
+**Q45. A.** Dispute resolution ladder: direct negotiation → mediation → arbitration → litigation. (Module 3)
+
+**Q46. A.** Mediation non-binding; arbitration binding. (Module 3)
+
+**Q47. B.** SLA without consequences = a wish, not enforceable. Credits/penalties make it real. (Module 3)
+
+**Q48. A.** Nibble = small concessions sought at the end. Counter by trading. (Module 3)
+
+**Q49. B.** SRM = systematic management of supplier interactions across lifecycle for value + risk. (Module 4)
+
+**Q50. C.** Tier-1 strategic = 1-5% of suppliers, 30-50% of spend. (Module 4)
+
+**Q51. B.** Balanced scorecard = Quality, Cost, Delivery, Service (+ Innovation, ESG, Risk). (Module 4)
+
+**Q52. A.** Strategic supplier + fixable gap = initiate supplier development. (Module 4)
+
+**Q53. C.** QBR = Quarterly Business Review. (Module 4)
+
+**Q54. D.** MBE, WBE, SDVOSB are all US-recognized diversity categories. (Module 4)
+
+**Q55. B.** Tier-2 diversity = tracking diverse spend by your primary suppliers' subs. (Module 4)
+
+**Q56. A.** Escalate one level: category manager ↔ supplier sales director. Don't skip levels. (Module 4)
+
+**Q57. A.** Spend analysis + segment + deep SRM on Tier-1. Pareto applies. (Module 4)
+
+**Q58. D.** Engage remediation per ISM Principles + escalate + document + prepare contractual action up to termination. (Module 4 / 7)
+
+**Q59. C.** PPM = parts per million defects. (Module 4)
+
+**Q60. B.** Vested sourcing = outcome-based, win-win, shared incentives (Vitasek). (Module 4)
+
+**Q61. B.** Structured transition with dual-sourcing + knowledge transfer for strategic supplier exits. (Module 4)
+
+**Q62. D.** Executive sponsorship + structured QBRs + clear escalation = Tier-1 governance. (Module 4)
+
+**Q63. D.** Treating every supplier as strategic dilutes resources and confuses suppliers. (Module 4)
+
+**Q64. C.** TCO = acquisition + operating + disposal over the asset's life. (Module 5)
+
+**Q65. B.** Should-cost = bottom-up estimate of what an item should cost. (Module 5)
+
+**Q66. B.** Target costing = market price minus required margin. (Module 5)
+
+**Q67. B.** VE = design of new products. (Module 5)
+
+**Q68. C.** VA = production of existing products. (Module 5)
+
+**Q69. A.** 80% learning curve = 80% of prior cost per doubling of volume. (Module 5)
+
+**Q70. B.** Learning curves apply MOST strongly to labor-intensive repetitive work. (Module 5)
+
+**Q71. B.** Forward contract = custom OTC agreement for future delivery/price. (Module 5)
+
+**Q72. C.** Option = right but not obligation, for a premium. (Module 5)
+
+**Q73. C.** Hedging reduces risk on known exposures (not speculation). (Module 5)
+
+**Q74. D.** 2/10 Net 30 = 2% off if paid in 10 days, else net 30. (Module 5)
+
+**Q75. D.** ~36.5% annualized (2% × 365/20). (Module 5)
+
+**Q76. A.** Strategic complex category = should-cost / VA-VE / supplier innovation. (Module 5)
+
+**Q77. D.** Savings = real reduction; Avoidance = avoided increase vs forecast. Report separately. (Module 5)
+
+**Q78. D.** 100% fixed-price on volatile commodity = supplier may default or buyer overpay; indexed pricing balances. (Module 5)
+
+**Q79. D.** Positive NPV = discounted cash flows exceed investment. (Module 5)
+
+**Q80. A.** Non-critical low-value spend = e-catalogs / P-cards / automation. Match lever to quadrant. (Module 5)
+
+**Q81. D.** Vendor A is cheaper on 5-year TCO: A = $35K + $11K = $46K; B = $30K + $19K = $49K. Acquisition price alone misleads. (Module 5)
+
+**Q82. B.** 11 Incoterms in 2020 set (7 any-mode + 4 sea-only). (Module 6)
+
+**Q83. C.** EXW: buyer bears responsibility from seller's door. (Module 6)
+
+**Q84. C.** DDP: seller does the most, including import customs and duties. (Module 6)
+
+**Q85. B.** DPU replaced DAT in 2020. (Module 6)
+
+**Q86. D.** FOB applies to sea and inland waterway only. (Module 6)
+
+**Q87. C.** CIP: seller buys all-risk insurance for buyer's benefit (changed in 2020). (Module 6)
+
+**Q88. D.** CIF: seller buys minimum insurance (unchanged in 2020). (Module 6)
+
+**Q89. C.** FCPA prohibits bribery of foreign government officials. (Module 6)
+
+**Q90. A.** UK Bribery Act includes private-sector bribery + "failure to prevent" corporate offense — broader than FCPA. (Module 6)
+
+**Q91. B.** OFAC = US economic and trade sanctions. (Module 6)
+
+**Q92. C.** ITAR controls defense articles and services. (Module 6)
+
+**Q93. A.** USMCA replaced NAFTA (2020). (Module 6)
+
+**Q94. B.** RCEP = 15 Asia-Pacific countries (ASEAN + China, Japan, Korea, Australia, NZ). (Module 6)
+
+**Q95. D.** Certificate of Origin needed to claim FTA preferential tariff rates. (Module 6)
+
+**Q96. C.** Transaction FX = specific contract movement between contract and payment. (Module 6)
+
+**Q97. D.** Forward/option matched to payment date, Treasury-executed. (Module 6)
+
+**Q98. C.** Refuse + document + escalate. UK Bribery Act prohibits facilitation payments; FCPA exception narrow. (Module 6)
+
+**Q99. A.** L/C = bank-guaranteed payment instrument. (Module 6)
+
+**Q100. D.** Open account / consignment = highest seller risk, lowest buyer risk. (Module 6)
+
+**Q101. A.** Hofstede's power distance = acceptance of unequal power. (Module 6)
+
+**Q102. D.** Japan: high-context, collectivist, moderately high-power-distance. (Module 6)
+
+**Q103. D.** FOB Shenzhen: risk transfers when goods loaded on vessel at Shenzhen port. (Module 6)
+
+**Q104. A.** Layered mitigation in high-corruption countries: anti-corruption flow-downs + 3rd-party DD + audits + training + payment controls. (Module 6 / 7)
+
+**Q105. B.** Invoicing in your currency shifts FX risk to supplier (priced in) — doesn't eliminate. (Module 6)
+
+**Q106. B.** Tariff response: alternates + HTS check + tariff engineering + reassess TCO. (Module 6)
+
+**Q107. B.** Risk treatments: Avoid, Transfer, Mitigate, Accept. (Module 7)
+
+**Q108. C.** Accept if expected loss ($50K) < treatment cost ($200K). (Module 7)
+
+**Q109. C.** Conflict minerals = 3TG: Tin, Tungsten, Tantalum, Gold. (Module 7)
+
+**Q110. B.** Dodd-Frank §1502 requires RCOI + annual Form SD filing. (Module 7)
+
+**Q111. C.** RTO = Recovery Time Objective. (Module 7)
+
+**Q112. D.** RPO = Recovery Point Objective (acceptable data-loss window). (Module 7)
+
+**Q113. B.** MTD must be greater than RTO. (Module 7)
+
+**Q114. B.** Auditor finds child labor at Tier-1: engage remediation + escalate + document + prepare contractual action up to termination. (Module 7)
+
+**Q115. D.** UK Modern Slavery Act 2015 threshold = £36M turnover. (Module 7)
+
+**Q116. D.** UFLPA = US Uyghur Forced Labor Prevention Act (2022). (Module 7)
+
+**Q117. C.** Scope 3 = all other indirect including supply chain (70-90% of corporate total). (Module 7)
+
+**Q118. C.** $5K tickets during active negotiation: decline + disclose + document. (Module 7)
+
+**Q119. B.** ISO 31000 = risk management. (Module 7)
+
+**Q120. C.** SA 8000 = social accountability (labor practices). (Module 7)
+
+**Q121. A.** Refuse facilitation payment + document + escalate. UK Bribery Act prohibits; FCPA exception is narrow. (Module 7)
+
+**Q122. B.** Supplier BCP = contractual requirement for critical suppliers + periodic review. (Module 7)
+
+**Q123. B.** Low-probability/high-impact: transfer (insurance) + mitigate (dual-source, safety stock). Layered treatment. (Module 7)
+
+**Q124. A.** ISM's 10 Principles do NOT include "aggressive cost reduction." They cover ethics, sustainability, human rights, diversity, anti-corruption, etc. (Module 7)
+
+**Q125. A.** Triple Bottom Line = People, Planet, Profit (Elkington 1994). (Module 7)
+
+**Q126. C.** Risk register Owner column = accountable person managing that risk. (Module 7)
+
+**Q127. A.** Decline + explain policy + escalate + document. Pressure to pick a friend is a textbook ethics scenario. (Module 7)
+
+**Q128. A.** Inadvertent visibility into competitor pricing: disclose + document + consider recusal. Preserve fairness. (Module 7)
+
+**Q129. A.** Map beyond Tier-1 — critical disruptions originate deeper (Suez, pandemic, geopolitics). (Module 7)
+
+**Q130. D.** Accept + document + monitor when expected loss < treatment cost. (Module 7)
+
+**Q131. A.** AS9100 = aerospace quality standard. (Module 7)
+
+**Q132. D.** IATF 16949 = automotive quality standard. (Module 7)
+
+**Q133. A.** Refuse + return/destroy + document + remind of confidentiality when supplier provides competitor info. (Module 7)
+
+**Q134. B.** Decline backdating + cite policy + escalate per internal controls. Backdating = fraud. (Module 7)
+
+**Q135. B.** Kotter Step 1 = Create urgency. (Module 8)
+
+**Q136. C.** ADKAR = Awareness, Desire, Knowledge, Ability, Reinforcement (Prosci). (Module 8)
+
+**Q137. C.** Tuckman stages: Forming, Storming, Norming, Performing, Adjourning. (Module 8)
+
+**Q138. C.** Mature self-directed team = servant / situational delegating. (Module 8)
+
+**Q139. A.** RACI: A = Accountable (only one per task). (Module 8)
+
+**Q140. A.** High-power + high-interest = manage closely. (Module 8)
+
+**Q141. A.** PERT formula = (O + 4M + P) / 6. (Module 8)
+
+**Q142. C.** Most common transformation failure cause = poor stakeholder + change management. (Module 8)
+
+**Q143. D.** Cialdini social proof = show data others adopted. (Module 8)
+
+**Q144. A.** Spend Under Management = % of addressable spend actively managed. (Module 8)
+
+**Q145. A.** World-class SUM = 80%+. (Module 8)
+
+**Q146. C.** Servant leadership = serving the team + removing obstacles. (Module 8)
+
+**Q147. C.** Engineering resistance: build data case + social proof + individual conversations + cross-functional engagement. (Module 8)
+
+**Q148. D.** KPIs should be SMART. (Module 8)
+
+**Q149. D.** 5 Whys = root-cause analysis technique. (Module 8)
+
+**Q150. C.** Adoption stall → diagnose ADKAR gap and intervene specifically. (Module 8)
+
+**Q151. A.** Major supplier failure: communicate first with executive leadership and affected internal customers. (Module 8)
+
+**Q152. C.** Critical path = longest dependent sequence determining min project duration. (Module 8)
+
+**Q153. C.** Mentoring = long-term, career-focused (coaching = short-term skill). (Module 8)
+
+**Q154. A.** Strategic sourcing Step 1 = Profile category + internal demand. (Module 2)
+
+**Q155. B.** Sole-source extortion: develop alternate + design around + multi-year contract + explore make-or-buy. (Module 2)
+
+**Q156. D.** Audit-finding "smooth over" request: decline + report accurately + escalate per governance. (Module 7 / 8)
+
+**Q157. D.** Pressure to bypass qualification for a friend: decline + explain risk + escalate + document. (Module 7)
+
+**Q158. B.** Paid weekend retreat during evaluation: decline + disclose + document. (Module 7)
+
+**Q159. C.** Post-shipment defect: disclose to buyer + propose remediation + document per contract. (Module 7)
+
+**Q160. D.** Tier-2 bankruptcy of strategic Tier-1's sub-supplier: engage Tier-1 on impact + accelerate alternate via Tier-1 + monitor + update risk register. (Module 4 / 7)
+
+**Q161. A.** Influence without authority: data + social proof + reciprocity + relationship + expertise. (Module 8)
+
+**Q162. B.** CFO wants $3M FY savings on a $5M 18-month strategy: sequence quick wins (rationalization, contract compliance) for FY impact + build multi-year strategy in parallel. (Module 5 / 8)
+
+**Q163. B.** Strategic-maturity KPI for CFO: SUM + balanced scorecard. (Module 8)
+
+**Q164. D.** Scope 3 reduction: engage strategic suppliers on emissions + require Scope 1/2 data + design out high-emission materials. (Module 7)
+
+**Q165. D.** CPSM maintenance: 60 continuing education hours every 3 years. (Module 0 README / Module 8)
+
+---
+
 ## ✅ Your CPSM Journey From Here
 
 - 📖 **Re-read** the ISM Mastery Model / official study guide for any weak module

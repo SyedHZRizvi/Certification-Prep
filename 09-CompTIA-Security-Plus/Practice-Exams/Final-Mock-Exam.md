@@ -622,6 +622,192 @@ D. All five = MSAs
 
 ---
 
+## Detailed answer rationales
+
+> Every question explained: why correct, why each distractor is wrong, one-line exam takeaway.
+
+**Q1. Answer: B — Confidentiality, Integrity, Availability.** The canonical Saltzer & Schroeder (1975) triad. **Wrong:** A/C/D invent expansions. **Takeaway.** CIA = C/I/A; never anything else.
+
+**Q2. Answer: C — Integrity, authentication, and non-repudiation.** Signature = hash + sender's private key. **Wrong:** A (Conf only) is encryption. B (Availability) unrelated. D (Bulk encryption) is symmetric. **Takeaway.** Signature provides 3 properties; confidentiality not among them (unless paired with encryption).
+
+**Q3. Answer: A — Symmetric block.** AES (FIPS 197). **Wrong:** B (Asym), C (Hash), D (Stream) all wrong. **Takeaway.** AES = symmetric block, 128-bit blocks.
+
+**Q4. Answer: D — Asymmetric encryption + signatures + key exchange.** RSA's three uses. **Wrong:** A (Hashing), B (Passwords), C (Bulk) are wrong roles. **Takeaway.** RSA = asymmetric all-purpose; AES = symmetric bulk.
+
+**Q5. Answer: B — AES-GCM.** Authenticated encryption (Galois/Counter Mode). **Wrong:** A (ECB) leaks patterns. C (CBC) is conf-only. D (RC4) is broken. **Takeaway.** Authenticated encryption → GCM.
+
+**Q6. Answer: B — Perfect Forward Secrecy via ephemeral ECDH.** **Wrong:** A (AES gen) wrong. C (Code signing) is signature. D (Password hashing) wrong. **Takeaway.** ECDHE = PFS.
+
+**Q7. Answer: C — Collisions demonstrated.** SHA-1 SHAttered (Google, 2017). **Wrong:** A (Slow) unrelated. B (Open source) wrong. D (HSM) unrelated. **Takeaway.** SHA-1 = deprecated due to collisions.
+
+**Q8. Answer: B — Too fast; need salt + key stretching.** Same logic as PE-1 Q11. **Wrong:** A (Reversible) — SHA-256 is one-way but too fast. C (128-bit) wrong (it's 256). D (Not a hash) wrong. **Takeaway.** Passwords need bcrypt/Argon2/PBKDF2 with salt.
+
+**Q9. Answer: C — PKCS#12 (.pfx).** Bundles cert + key + chain. **Wrong:** A (PEM) typical cert only. B (DER) binary cert. D (PKCS#7) chain without key. **Takeaway.** Cert+key+chain → PKCS#12.
+
+**Q10. Answer: A — Server pre-fetches and attaches OCSP response.** Eliminates client roundtrip. **Wrong:** B (Encrypts response) wrong. C (Replaces CRL) — both can coexist. D (Mutual TLS) unrelated. **Takeaway.** Stapling = server attaches OCSP to TLS handshake.
+
+**Q11. Answer: C — Any single-label subdomain.** `*.example.com` covers www/api/mail but NOT `a.b.example.com`. **Wrong:** A too narrow, B claims multi-level (wrong), D claims all TLDs (wrong). **Takeaway.** Wildcards cover one label only.
+
+**Q12. Answer: C — Sender's private key.** Signing direction. **Wrong:** A/B/D scramble keys. **Takeaway.** Signing: sender's private. Verifying: sender's public.
+
+**Q13. Answer: D — Recipient's public key.** Confidentiality direction. **Wrong:** A/B/C scramble. **Takeaway.** Confidentiality: recipient's public to encrypt, recipient's private to decrypt.
+
+**Q14. Answer: A — Authentication, Authorization, Accounting.** **Wrong:** B/C/D invent. **Takeaway.** AAA = AuthN, AuthZ, Accounting.
+
+**Q15. Answer: D — Policy Engine.** Brain of Zero Trust control plane. **Wrong:** A (PEP) enforces. B (Implicit zone) is data plane. C (PA) translates. **Takeaway.** PE evaluates; PA translates; PEP enforces.
+
+**Q16. Answer: B — Policy Enforcement Point.** Data plane gate. **Wrong:** A (PE) is control. C (PA) is control. D (Threat Scope Reduction) is a concept. **Takeaway.** PEP = data plane gate.
+
+**Q17. Answer: B — Auth strength scales with risk signals.** Adaptive Identity. **Wrong:** A (Identity changes at runtime) wrong. C (IdP rotates keys) wrong. D (Identity merging) wrong. **Takeaway.** Adaptive Identity = step-up MFA based on signals.
+
+**Q18. Answer: D — Acceptable Use Policy.** Policy = managerial. **Wrong:** A (Firewall rule), B (AV quarantine), C (Door lock) are technical/physical. **Takeaway.** Policy = managerial. Tech = technical.
+
+**Q19. Answer: A — Alternative when primary not feasible.** Same as PE-1 Q42. **Takeaway.** Compensating = substitute.
+
+**Q20. Answer: D — Deterrent (and detective if recorded).** **Wrong:** A (Preventive only) misses the discouragement. B (Compensating) wrong context. C (Corrective) wrong. **Takeaway.** Visible camera = deterrent; recording reviewed = detective.
+
+**Q21. Answer: C — Gap analysis.** Current vs target framework. **Wrong:** A (Pen test) finds vulns. B (Risk acceptance) is treatment. D (Tabletop) is exercise. **Takeaway.** Vs target framework → gap analysis.
+
+**Q22. Answer: D — Impact analysis + CAB approval.** Same as PE-1 Q41. **Takeaway.** First step = impact + approval.
+
+**Q23. Answer: C — Where you are.** Sec+ recognizes know/have/are/do/where. **Wrong:** A (See) invented. B (Remember) overlaps know. D (Approve) wrong. **Takeaway.** 5th factor = location.
+
+**Q24. Answer: C — ≥2 factors from DIFFERENT categories.** MFA definition. **Wrong:** A (3+ min) wrong. B (Password+PIN) is same factor. D (2 passwords) is single factor. **Takeaway.** MFA = different categories.
+
+**Q25. Answer: C — FIDO2 / passkey hardware.** Same as PE-1 Q18. **Takeaway.** Phishing-resistant = FIDO2.
+
+**Q26. Answer: C — XML assertions.** SAML uses XML. **Wrong:** A (JSON), B (Binary), D (JWT) describe OIDC. **Takeaway.** SAML = XML.
+
+**Q27. Answer: C — Authorization (delegated access).** OAuth. **Wrong:** A (Authentication) is OIDC. B (DNS) wrong. D (Key exchange) wrong. **Takeaway.** OAuth = authZ.
+
+**Q28. Answer: C — Authentication via id_token (JWT).** OIDC adds authN. **Wrong:** A (Authorization) is OAuth's role. B (CRL) wrong. D (ARP) wrong. **Takeaway.** OIDC = OAuth + authN.
+
+**Q29. Answer: D — Time synchronization (~5 min skew).** Kerberos tickets are time-bounded. **Wrong:** A (Single domain) — works across realms. B (Direct internet) wrong. C (IPv6) unrelated. **Takeaway.** Kerberos needs clock sync.
+
+**Q30. Answer: A — UDP 1812/1813.** RADIUS. **Wrong:** B (TCP 49) is TACACS+. C (TCP 443) is HTTPS. D (UDP 514) is syslog. **Takeaway.** RADIUS = UDP 1812 (auth) / 1813 (acct).
+
+**Q31. Answer: D — TCP 49.** TACACS+. **Wrong:** A (UDP 514) is syslog. B (UDP 1812) is RADIUS. C (TCP 443) is HTTPS. **Takeaway.** TACACS+ = TCP 49.
+
+**Q32. Answer: D — MAC.** Same as PE-1 Q20. **Takeaway.** Military clearance → MAC.
+
+**Q33. Answer: C — Permissions per role; users get roles.** RBAC. **Wrong:** A (Owner) is DAC. B (Attributes) is ABAC. D (Time) is rule-based. **Takeaway.** RBAC = role-based.
+
+**Q34. Answer: D — Limits time window of standing privilege.** JIT. **Wrong:** A (Encrypting pw) is vaulting. B (Biometrics) is auth. C (More logs) is detection. **Takeaway.** JIT = time-boxed elevation.
+
+**Q35. Answer: A — Do NOT force rotation absent compromise.** NIST 800-63B 2017+ guidance. **Wrong:** B/C/D are pre-2017 calendar-based. **Takeaway.** Modern guidance = no calendar rotation.
+
+**Q36. Answer: A — Bombards with push prompts hoping for misclick.** MFA fatigue / push bombing. **Wrong:** B (Brute force offline) is hash crack. C (TOTP seeds) is seed theft. D (Forged signed certs) is PKI attack. **Takeaway.** Push fatigue → number-matching push or FIDO2.
+
+**Q37. Answer: D — Long-term, low-noise persistence.** APT defining trait. **Wrong:** A (Loud/fast) describes ransomware. B (Sales) is unrelated. C (Random teen) is script kiddie. **Takeaway.** APT = patient + well-resourced + targeted.
+
+**Q38. Answer: D — Financial gain.** Ransomware crews. **Wrong:** A (Espionage), B (Revenge), C (Political) are wrong motivations. **Takeaway.** Ransomware = financial.
+
+**Q39. Answer: D — Philosophical / political beliefs.** Hacktivists. **Wrong:** A (Financial) = crime. B (Espionage) = APT. C (Curiosity only) wrong. **Takeaway.** Hacktivist = ideology.
+
+**Q40. Answer: A — Supply-chain attack.** SolarWinds. **Wrong:** B (DDoS), C (Phishing), D (Pretexting) are wrong categories. **Takeaway.** Trojanized vendor update = supply chain.
+
+**Q41. Answer: D — AIS (CISA).** Free US government. **Wrong:** A/B/C are commercial. **Takeaway.** Free + US govt → AIS.
+
+**Q42. Answer: A — Information Sharing and Analysis Center.** **Wrong:** B/C/D invent. **Takeaway.** ISAC by sector.
+
+**Q43. Answer: C — Adversary TTPs.** MITRE ATT&CK. **Wrong:** A (Compliance), B (Encryption), D (Contracts) wrong. **Takeaway.** ATT&CK = adversary TTPs.
+
+**Q44. Answer: A — Worm self-replicates over networks without user action.** **Wrong:** B (Faster), C (Always exfil), D (Fileless) are wrong distinctions. **Takeaway.** Worm = self-spread no user.
+
+**Q45. Answer: C — Encrypt AND exfiltrate, threaten leak.** Double extortion. **Wrong:** A (Charge twice), B (Two orgs), D (Two algorithms) misread. **Takeaway.** Double extortion = encrypt + exfil + leak threat.
+
+**Q46. Answer: B — Parameterized queries.** Same as PE-1 Q27. **Takeaway.** Parameterized queries.
+
+**Q47. Answer: B — Persisted server-side script that runs for every viewer.** Stored XSS. **Wrong:** A (URL reflected) is reflected. C (SSRF) is server-side. D (Buffer overflow) is memory. **Takeaway.** Stored XSS = persistent.
+
+**Q48. Answer: A — Cross-Site Request Forgery.** **Wrong:** B/C/D invent expansions. **Takeaway.** CSRF = victim browser tricked into request.
+
+**Q49. Answer: D — Server-Side Request Forgery.** **Wrong:** A (Client-side), B (SQL UNION), C (Routing) wrong. **Takeaway.** SSRF = server fetches attacker URLs.
+
+**Q50. Answer: A — `../../etc/passwd`.** Directory traversal. **Wrong:** B (Script tags) is XSS. C (SQL) is injection. D (Shell metacharacters) is command injection. **Takeaway.** `../` = traversal.
+
+**Q51. Answer: D — Race condition.** TOCTOU. **Wrong:** A (Social eng), B (Hash weakness), C (Compliance) wrong. **Takeaway.** TOCTOU = race.
+
+**Q52. Answer: B — TCP half-open connection table.** SYN flood. **Wrong:** A (RAM) is generic. C (DNS) wrong. D (Disk) wrong. **Takeaway.** SYN flood exhausts TCP backlog.
+
+**Q53. Answer: B — Spoofed source IPs + DNS responses larger than queries.** Amplification + reflection. **Wrong:** A (Compromised resolver) wrong. C (Encrypted DNS) wrong. D (Slow timeouts) wrong. **Takeaway.** Amplification = small request → big response with spoofed src.
+
+**Q54. Answer: A — On-path attack.** **Wrong:** B (Replay), C (Side-channel), D (Pivot) wrong terms. **Takeaway.** MITM → on-path.
+
+**Q55. Answer: C — Impersonates a legit SSID with stronger signal.** Evil twin. **Wrong:** A/B/D wrong categories. **Takeaway.** Evil twin = SSID impersonation.
+
+**Q56. Answer: A — One password against many users.** Spraying. **Wrong:** B (Reverse — many pw vs one user) is brute. C (Rainbow tables) is offline hash. D (HMAC) unrelated. **Takeaway.** Spraying = 1 pw, many users.
+
+**Q57. Answer: B — Username/password pairs from breach.** Credential stuffing. **Wrong:** A (Rainbow tables) is offline. C (Single pw) is spraying. D (PtH) is hash reuse. **Takeaway.** Stuffing = paired credentials from breach.
+
+**Q58. Answer: B — Executives specifically.** Whaling. **Wrong:** A (Anyone), C (IT staff), D (Vendors) misframe. **Takeaway.** Whaling = executives.
+
+**Q59. Answer: C — Misspelled versions of legitimate domains.** Typosquatting. **Wrong:** A (Random), B (IDN only), D (Subdomain takeover) wrong. **Takeaway.** Typosquatting = misspellings.
+
+**Q60. Answer: B — SSH / 22.** SFTP. **Wrong:** A (TLS/990) is FTPS. C (FTP/21). D (SCP/873 — SCP is over SSH/22). **Takeaway.** SFTP = SSH/22.
+
+**Q61. Answer: B — 636.** LDAPS. **Wrong:** A (389) plain. C (443) HTTPS. D (1812) RADIUS. **Takeaway.** LDAPS = 636.
+
+**Q62. Answer: A — Email domain spoofing.** SPF/DKIM/DMARC. **Wrong:** B (SQLi), C (DDoS), D (Buffer) wrong. **Takeaway.** Email trio.
+
+**Q63. Answer: A — Layer 7 (HTTP/S).** WAF. **Wrong:** B/C/D wrong layers. **Takeaway.** WAF = L7.
+
+**Q64. Answer: A — IDS detect/alert; IPS detect/block (inline).** **Wrong:** B (host vs network) is HIDS/NIDS distinction. C (Cloud) wrong. D (Same) wrong. **Takeaway.** IDS passive; IPS inline.
+
+**Q65. Answer: A — Entire original IP packet.** Tunnel mode. **Wrong:** B (Payload only) is Transport. C (Just header) wrong. D (TCP handshake) wrong. **Takeaway.** Tunnel = whole packet.
+
+**Q66. Answer: D — Replace it.** PPTP is broken. **Wrong:** A/B/C suggest using it. **Takeaway.** PPTP = never.
+
+**Q67. Answer: D — Behavioral telemetry, hunting, rollback, response.** EDR. **Wrong:** A/B/C describe incremental AV. **Takeaway.** EDR = behavior + response.
+
+**Q68. Answer: C — Endpoint + network + cloud + email correlation.** XDR. **Wrong:** A (More endpoints), B (Replaces firewall), D (Encryption) misframe. **Takeaway.** XDR = cross-source correlation.
+
+**Q69. Answer: A — Guest OS + app + data + network configs in VM.** IaaS customer responsibility. **Wrong:** B/C/D are provider's. **Takeaway.** IaaS: inside-VM = customer.
+
+**Q70. Answer: B — Customer misconfig.** S3 bucket policy is customer's. **Wrong:** A (AWS fault) wrong. C (IPv6) wrong. D (KMS bug) wrong. **Takeaway.** Bucket config = customer.
+
+**Q71. Answer: B — Between users and cloud apps; enforce policy; find shadow IT.** CASB. **Wrong:** A (Web hosting), C (Replace SIEM), D (EDR) wrong. **Takeaway.** CASB = SaaS broker.
+
+**Q72. Answer: B — Traditional VPN for user app access.** ZTNA. **Wrong:** A (SAML), C (EDR), D (CSPM) wrong. **Takeaway.** ZTNA replaces VPN.
+
+**Q73. Answer: C — Long lifecycle, limited patching, proprietary protocols.** SCADA. **Wrong:** A (Monthly patches), B (Public cloud), D (Kerberos) wrong. **Takeaway.** SCADA = legacy.
+
+**Q74. Answer: D — Log aggregation + correlation + alerting.** SIEM. **Wrong:** A (Patching), B (Encryption), C (Firewall) wrong. **Takeaway.** SIEM = LACA.
+
+**Q75. Answer: C — Orchestrates and automates response via playbooks.** SOAR. **Wrong:** A (Storage), B (Replaces SIEM), D (Replaces EDR) wrong. **Takeaway.** SOAR = automated response.
+
+**Q76. Answer: B — Prep → Detect → Contain → Eradicate → Recover → Lessons.** NIST 800-61. **Wrong:** Other orderings scramble. **Takeaway.** PDCERL.
+
+**Q77. Answer: B — RAM (volatile memory).** Order of volatility. **Wrong:** A (Disk), C (Email logs), D (Tapes) are less volatile. **Takeaway.** Capture RAM first.
+
+**Q78. Answer: A — Degaussing.** Degaussing doesn't work on SSDs (flash, not magnetic). **Wrong:** B/C/D all work on SSDs. **Takeaway.** SSDs: crypto-erase / vendor-erase / shred. NEVER degauss.
+
+**Q79. Answer: A — ALE.** SLE × ARO. **Wrong:** B (EF), C (AV), D (ROI) wrong. **Takeaway.** ALE = SLE × ARO.
+
+**Q80. Answer: B — Maximum acceptable downtime.** RTO. **Wrong:** A (Data loss) is RPO. C (MTTR) is engineering. D (Retention) is policy. **Takeaway.** RTO = downtime.
+
+**Q81. Answer: B — 3 copies, 2 different media, 1 off-site.** **Wrong:** Other variants invented. **Takeaway.** 3-2-1.
+
+**Q82. Answer: A — BAA.** HIPAA. **Wrong:** B (SLA), C (MOU), D (DPA = GDPR) wrong. **Takeaway.** HIPAA → BAA.
+
+**Q83. Answer: D — Known-vulnerable third-party dependencies.** SCA. **Wrong:** A (Custom-code injection) is SAST. B (IDS) wrong. C (Phishing) wrong. **Takeaway.** SCA = dependencies.
+
+**Q84. Answer: B — In use.** Confidential computing (TEEs). **Wrong:** A (At rest), C (Transit), D (Archived) are other states. **Takeaway.** Confidential computing = in use.
+
+**Q85. Answer: C — Pseudonymization reversible with mapping; anonymization irreversible.** GDPR. **Wrong:** A (Identical) wrong. B (Pseud stronger) backwards. D (bcrypt) unrelated. **Takeaway.** Pseud + mapping = GDPR-applicable; Anon = out of scope.
+
+**Q86. Answer: A — SQLi, Stored XSS, SSRF, Directory traversal, Open redirect.** Each indicator → its attack name. **Wrong:** B/C/D misidentify the cloud-metadata IP (SSRF), persisted scripts (Stored XSS), and `../` (traversal). **Takeaway.** PBQ lookup: UNION → SQLi; persistent `<script>` → Stored XSS; `169.254.169.254` → SSRF; `../` → traversal; `?next=` → open redirect.
+
+**Q87. Answer: A — C → B → D → E → F → G → A.** NIST IR phases: D&A (scope + memory) → Containment (isolate) → Eradication (wipe) → Recovery (restore) → Lessons (meeting + playbook). **Wrong:** B starts with Eradication (skips Detection). C starts with Lessons. D mis-orders Containment. **Takeaway.** Always: scope+evidence → contain → eradicate → recover → lessons.
+
+**Q88. Answer: A — DMZ/Secure/Internal/Management correct assignments.** Standard layered architecture. **Wrong:** B/C scramble. D oversimplifies. **Takeaway.** Public-facing → DMZ; data tier → Secure; users → Internal; admin → Management; WAF in front of DMZ; NIDS at chokepoint SPAN.
+
+**Q89. Answer: A — HR $100k / Website $50k; mitigate both.** HR: SLE = $2M × 0.25 = $500k; ALE = $500k × 0.20 = $100k. Website: SLE = $100k × 0.50 = $50k; ALE = $50k × 1.0 = $50k. Both warrant mitigation (controls). **Wrong:** B/C/D produce wrong calculations or extreme treatments. **Takeaway.** Math the ALE; choose mitigate when controls cost < ALE; avoid only if no business case for the asset; accept only with executive sign-off below appetite.
+
+**Q90. Answer: A — SOW under MSA + SLA / DPA / BAA / MOU / ISA.** Each contract type matches its scenario precisely. **Wrong:** B substitutes NDA/BPA. C substitutes ISA/BAA/DPA/MSA incorrectly. D treats all as MSAs. **Takeaway.** Each contract has a specific purpose. SOW=project; SLA=performance; DPA=GDPR; BAA=HIPAA; MOU=non-binding; ISA=system interconnection; MSA=umbrella.
+
+---
+
 ## 📊 Scoring
 
 | Score | Verdict |

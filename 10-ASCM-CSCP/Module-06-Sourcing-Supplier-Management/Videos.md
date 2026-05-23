@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~50 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Strategic+sourcing+process+7+steps" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="oYxxp7yh8Ls" href="https://www.youtube.com/results?search_query=Strategic+sourcing+process+7+steps" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 13 min · ASCM-aligned</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Kraljic+matrix+supplier+segmentation" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="67gQEUtbjSE" href="https://www.youtube.com/results?search_query=Kraljic+matrix+supplier+segmentation" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 14 min · All 4 quadrants explained</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=RFI+RFP+RFQ+difference+procurement" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="RYE45B9ZNuc" href="https://www.youtube.com/results?search_query=RFI+RFP+RFQ+difference+procurement" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 10 min · Side-by-side comparison</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Total+cost+of+ownership+procurement+TCO" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="y29obIibaHU" href="https://www.youtube.com/results?search_query=Total+cost+of+ownership+procurement+TCO" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~30 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Supplier+relationship+management+SRM+maturity" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="rc54XYaN_Po" href="https://www.youtube.com/results?search_query=Supplier+relationship+management+SRM+maturity" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 12 min · Adversarial to strategic</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Supplier+scorecard+KPIs+procurement" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="TdEiJawCIL8" href="https://www.youtube.com/results?search_query=Supplier+scorecard+KPIs+procurement" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 10 min · KPI weighting</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=BATNA+negotiation+procurement" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="BIf_AK5yNeQ" href="https://www.youtube.com/results?search_query=BATNA+negotiation+procurement" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Reverse+auction+e+procurement+example" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="XCGOFL0-8l4" href="https://www.youtube.com/results?search_query=Reverse+auction+e+procurement+example" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 11 min · Live demo</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Procurement+contract+types+fixed+price+cost+plus" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="8Q0Ccw3LsKE" href="https://www.youtube.com/results?search_query=Procurement+contract+types+fixed+price+cost+plus" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 15 min · Risk shift explained</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Global+sourcing+risk+management" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="h7cQjQJHbUs" href="https://www.youtube.com/results?search_query=Global+sourcing+risk+management" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

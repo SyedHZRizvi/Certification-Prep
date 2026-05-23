@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~55 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AI+vs+Machine+Learning+vs+Deep+Learning+IBM" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=AI+vs+Machine+Learning+vs+Deep+Learning+IBM" target="_blank" rel="noopener" data-video-id="qYNweeDHiyU">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 8 min · The Russian-doll hierarchy explained</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Supervised+vs+Unsupervised+vs+Reinforcement+Learning+freeCodeCamp" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Supervised+vs+Unsupervised+vs+Reinforcement+Learning+freeCodeCamp" target="_blank" rel="noopener" data-video-id="z-W5uR8mzsU">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 15 min · The 3 paradigms with concrete examples</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+AI+Practitioner+AIF-C01+AI+ML+fundamentals" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+AI+Practitioner+AIF-C01+AI+ML+fundamentals" target="_blank" rel="noopener" data-video-id="X82dC7s6HZQ">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 20 min · Exam-aligned coverage</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=overfitting+underfitting+bias+variance+explained" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=overfitting+underfitting+bias+variance+explained" target="_blank" rel="noopener" data-video-id="EuBBz3bI-aA">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~30 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=3blue1brown+but+what+is+a+neural+network" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=3blue1brown+but+what+is+a+neural+network" target="_blank" rel="noopener" data-video-id="aircAruvnKk">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 19 min · Visual masterpiece — neurons, weights, learning</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=machine+learning+evaluation+metrics+precision+recall+f1" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=machine+learning+evaluation+metrics+precision+recall+f1" target="_blank" rel="noopener" data-video-id="4jRBRDbJemM">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 13 min · Why accuracy lies on imbalanced data</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Skill+Builder+AI+Practitioner+intro" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Skill+Builder+AI+Practitioner+intro" target="_blank" rel="noopener" data-video-id="Oifa20rSqfA">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=reinforcement+learning+explained+DeepMind+AlphaGo" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=reinforcement+learning+explained+DeepMind+AlphaGo" target="_blank" rel="noopener" data-video-id="MgowR4pq3e8">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 22 min · The "trial and error" paradigm in depth</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=XGBoost+explained+sentdex" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=XGBoost+explained+sentdex" target="_blank" rel="noopener" data-video-id="J4Wdy0Wc_xQ">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 18 min · Understand why XGBoost is the SageMaker default</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+DeepRacer+reinforcement+learning+demo" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+DeepRacer+reinforcement+learning+demo" target="_blank" rel="noopener" data-video-id="43zqI0n4D7A">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

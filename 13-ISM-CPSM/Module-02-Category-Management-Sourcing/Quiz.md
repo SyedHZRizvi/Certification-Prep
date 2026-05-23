@@ -6,7 +6,7 @@
 
 ## Questions
 
-### Q1. The PRIMARY purpose of spend analysis is to:
+### Q1. The PRIMARY purpose of spend analysis is to: *(Understand)*
 A. Identify which suppliers to terminate
 B. Provide visibility into historical spend to inform sourcing strategy
 C. Calculate working capital
@@ -14,7 +14,7 @@ D. Audit accounts payable
 
 ---
 
-### Q2. A category falls into the LEVERAGE quadrant of Kraljic. The BEST sourcing tactic is:
+### Q2. A category falls into the LEVERAGE quadrant of Kraljic. The BEST sourcing tactic is: *(Apply)*
 A. Long-term strategic partnership
 B. Competitive bidding and e-auctions to exploit buying power
 C. Single-source agreement
@@ -22,7 +22,7 @@ D. Hold safety inventory
 
 ---
 
-### Q3. "Single source" differs from "sole source" because:
+### Q3. "Single source" differs from "sole source" because: *(Remember)*
 A. They are synonyms
 B. Single source = we chose one of many; sole source = only one supplier exists in the market
 C. Sole source = a contract, single source = a PO
@@ -30,7 +30,7 @@ D. Sole source = best price; single source = best value
 
 ---
 
-### Q4. Which Kraljic quadrant fits a custom-engineered component used in a flagship product, with one capable supplier?
+### Q4. Which Kraljic quadrant fits a custom-engineered component used in a flagship product, with one capable supplier? *(Apply)*
 A. Non-critical
 B. Leverage
 C. Bottleneck
@@ -38,7 +38,7 @@ D. Strategic
 
 ---
 
-### Q5. RFQ is BEST used when:
+### Q5. RFQ is BEST used when: *(Understand)*
 A. Requirements are vague and you want supplier creativity
 B. You're entering a market you don't know
 C. The spec is clear and you need firm pricing
@@ -46,7 +46,7 @@ D. You need investor disclosure
 
 ---
 
-### Q6. Reverse auctions are MOST appropriate for:
+### Q6. Reverse auctions are MOST appropriate for: *(Apply)*
 A. Innovation-critical R&D services
 B. Leverage-quadrant commoditized items with multiple qualified suppliers
 C. Strategic supplier partnerships
@@ -54,7 +54,7 @@ D. Sole-source bottleneck items
 
 ---
 
-### Q7. Maverick spend refers to:
+### Q7. Maverick spend refers to: *(Remember)*
 A. Spend with diverse suppliers
 B. Off-contract / unauthorized buying
 C. Spend with the largest supplier
@@ -62,7 +62,7 @@ D. Spend on innovation
 
 ---
 
-### Q8. Which is an INDIRECT spend category?
+### Q8. Which is an INDIRECT spend category? *(Apply)*
 A. Steel sheet bought to stamp into car body panels
 B. Office cleaning services
 C. Microchips bought for assembly
@@ -70,7 +70,7 @@ D. Packaging materials for finished goods
 
 ---
 
-### Q9. A weighted-scoring evaluation should set criteria and weights:
+### Q9. A weighted-scoring evaluation should set criteria and weights: *(Understand)*
 A. After receiving the proposals so you can match them
 B. Before issuing the RFP/RFQ
 C. After the lowest bidder is identified
@@ -78,7 +78,7 @@ D. Whenever the team decides
 
 ---
 
-### Q10. Standardization PRIMARILY:
+### Q10. Standardization PRIMARILY: *(Remember)*
 A. Reduces the variety of items procured
 B. Reduces the supplier count
 C. Increases the number of POs
@@ -86,7 +86,7 @@ D. Increases inventory turns
 
 ---
 
-### Q11. Which is the BEST first step when a sourcing analyst inherits a category with no documentation?
+### Q11. Which is the BEST first step when a sourcing analyst inherits a category with no documentation? *(Apply)*
 A. Issue an RFQ immediately
 B. Run a spend analysis to understand the current state
 C. Award to incumbent
@@ -94,7 +94,7 @@ D. Terminate all contracts
 
 ---
 
-### Q12. Bullwhip effect mitigations include all EXCEPT:
+### Q12. Bullwhip effect mitigations include all EXCEPT: *(Understand)*
 A. Sharing point-of-sale data with suppliers
 B. Smaller, more frequent orders
 C. Stable pricing
@@ -102,7 +102,7 @@ D. Forward-buying on every promotion
 
 ---
 
-### Q13. An office-supplies category, low-value across many suppliers, fits:
+### Q13. An office-supplies category, low-value across many suppliers, fits: *(Apply)*
 A. Strategic
 B. Bottleneck
 C. Leverage
@@ -110,7 +110,7 @@ D. Non-critical
 
 ---
 
-### Q14. Performance specifications are BEST when:
+### Q14. Performance specifications are BEST when: *(Understand)*
 A. You want supplier innovation on how to meet the outcome
 B. The item must mate exactly with a current assembly
 C. A brand name is required
@@ -118,7 +118,7 @@ D. The buyer wants to micromanage design
 
 ---
 
-### Q15. Which document do you issue FIRST when entering an unknown supply market?
+### Q15. Which document do you issue FIRST when entering an unknown supply market? *(Apply)*
 A. RFP
 B. RFQ
 C. RFI
@@ -126,7 +126,7 @@ D. Purchase order
 
 ---
 
-### Q16. A scenario: your category is bottleneck (low profit impact, high supply risk). The MOST appropriate strategy is:
+### Q16. A scenario: your category is bottleneck (low profit impact, high supply risk). The MOST appropriate strategy is: *(Apply)*
 A. Run a reverse auction
 B. Aggressive cost reduction via competitive bid
 C. Ensure supply with inventory buffers, alternate sources, and long-term contracts
@@ -134,7 +134,7 @@ D. Treat as commodity
 
 ---
 
-### Q17. A buyer drafts an RFP and shares the weighting model with one favored supplier in advance. This is:
+### Q17. A buyer drafts an RFP and shares the weighting model with one favored supplier in advance. This is: *(Evaluate)*
 A. Acceptable if the supplier is incumbent
 B. An ethics violation that compromises fairness
 C. Required for collaboration
@@ -142,7 +142,7 @@ D. Recommended for transparency
 
 ---
 
-### Q18. The PRIMARY axes of the Kraljic matrix are:
+### Q18. The PRIMARY axes of the Kraljic matrix are: *(Remember)*
 A. Volume and price
 B. Profit impact and supply risk
 C. Quality and delivery
@@ -150,7 +150,7 @@ D. Direct and indirect
 
 ---
 
-### Q19. Consortium sourcing means:
+### Q19. Consortium sourcing means: *(Understand)*
 A. Single buyer, single supplier
 B. Pooling demand across multiple buyers for collective leverage
 C. Outsourcing all sourcing to a 3rd party
@@ -158,7 +158,7 @@ D. Vertical integration
 
 ---
 
-### Q20. Direct spend is typically 60–80% of cost of goods sold in:
+### Q20. Direct spend is typically 60–80% of cost of goods sold in: *(Remember)*
 A. Service firms
 B. Manufacturers
 C. Software companies
@@ -166,7 +166,7 @@ D. Consulting practices
 
 ---
 
-### Q21. Dual sourcing typically refers to:
+### Q21. Dual sourcing typically refers to: *(Remember)*
 A. Two contracts for the same supplier
 B. Two suppliers, often with primary/backup or 70/30 / 80/20 split
 C. Two product lines from one supplier
@@ -174,7 +174,7 @@ D. Two purchase orders per quarter
 
 ---
 
-### Q22. When a sourcing team selects suppliers using a weighted score that includes ESG and supplier diversity criteria, this BEST reflects:
+### Q22. When a sourcing team selects suppliers using a weighted score that includes ESG and supplier diversity criteria, this BEST reflects: *(Evaluate)*
 A. Lowest-price-wins thinking
 B. A balanced, modern category strategy aligned with broader corporate goals
 C. Audit non-compliance
@@ -182,7 +182,7 @@ D. A bottleneck-quadrant tactic
 
 ---
 
-### Q23. A scenario: a sole-source supplier raises prices 25% knowing you have no alternative. The BEST long-term response is:
+### Q23. A scenario: a sole-source supplier raises prices 25% knowing you have no alternative. The BEST long-term response is: *(Create)*
 A. Pay it and move on
 B. Develop an alternate source, design around the part if possible, and negotiate a multi-year contract while exploring make-or-buy
 C. Litigate immediately
@@ -190,7 +190,7 @@ D. Stop production
 
 ---
 
-### Q24. Rationalization PRIMARILY:
+### Q24. Rationalization PRIMARILY: *(Remember)*
 A. Reduces variety of items
 B. Reduces the number of suppliers
 C. Increases the number of suppliers
@@ -198,7 +198,7 @@ D. Outsources the function
 
 ---
 
-### Q25. Which statement is MOST accurate about indirect spend?
+### Q25. Which statement is MOST accurate about indirect spend? *(Analyze)*
 A. It's too small to matter
 B. It's often underdeveloped and represents large untapped savings
 C. It cannot be category-managed
@@ -206,7 +206,7 @@ D. Only e-procurement applies to it
 
 ---
 
-### Q26. A sourcing manager runs an RFP for janitorial services. The lowest-priced bidder has poor quality history and is financially fragile. The BEST action is:
+### Q26. A sourcing manager runs an RFP for janitorial services. The lowest-priced bidder has poor quality history and is financially fragile. The BEST action is: *(Evaluate)*
 A. Award to lowest price; price is most important
 B. Apply the pre-set weighted scoring model honestly; award the highest-weighted bidder even if not the lowest price
 C. Award to the incumbent without bidding

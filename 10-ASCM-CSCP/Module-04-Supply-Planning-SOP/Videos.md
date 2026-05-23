@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~55 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Sales+and+operations+planning+S%26OP+process+overview" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="3gJRBdaqBMA" href="https://www.youtube.com/results?search_query=Sales+and+operations+planning+S%26OP+process+overview" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 14 min · Wallace / Stahl model</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Master+Production+Schedule+MPS+example" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="J5f-bCkKC5U" href="https://www.youtube.com/results?search_query=Master+Production+Schedule+MPS+example" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 13 min · DTF, PTF, ATP example</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=MRP+material+requirements+planning+example" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="IEKpg0aqv_Q" href="https://www.youtube.com/results?search_query=MRP+material+requirements+planning+example" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 16 min · Bicycle BOM example</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=RCCP+CRP+capacity+planning+comparison" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="W-363ymOxT4" href="https://www.youtube.com/results?search_query=RCCP+CRP+capacity+planning+comparison" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~28 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Integrated+Business+Planning+Oliver+Wight" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="F2-N8R7KQkE" href="https://www.youtube.com/results?search_query=Integrated+Business+Planning+Oliver+Wight" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 11 min · S&OP vs IBP</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Aggregate+planning+chase+level+strategy" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="hBuhuWoG8uQ" href="https://www.youtube.com/results?search_query=Aggregate+planning+chase+level+strategy" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 9 min · Trade-offs explained</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Available+to+promise+ATP+example" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="M5Qa7AiaVeM" href="https://www.youtube.com/results?search_query=Available+to+promise+ATP+example" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Theory+of+constraints+drum+buffer+rope" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="WGhwLG1t8pc" href="https://www.youtube.com/results?search_query=Theory+of+constraints+drum+buffer+rope" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 22 min · Goldratt method</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Lot+sizing+rules+MRP" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="7k6GwE3aHfI" href="https://www.youtube.com/results?search_query=Lot+sizing+rules+MRP" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 14 min · Comparison + math</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=APICS+S%26OP+maturity+stages" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="M1cdKXdj_jc" href="https://www.youtube.com/results?search_query=APICS+S%26OP+maturity+stages" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

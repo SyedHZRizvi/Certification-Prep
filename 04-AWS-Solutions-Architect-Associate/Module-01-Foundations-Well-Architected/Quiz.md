@@ -3,11 +3,13 @@
 > **Instructions:** Answer all 25 questions WITHOUT looking at the reading.
 > Aim for 20/25 minimum. Time limit: 30 minutes.
 
+> **Bloom's distribution.** Remember 5 (20%) · Understand 6 (24%) · Apply 7 (28%) · Analyze/Evaluate 6 (24%) · Create 1 (4%). This mirrors the SAA-C03's scenario-heavy style — only ~20% of questions test pure recall.
+
 ---
 
 ## Questions
 
-### Q1. Which of the following BEST describes an AWS Availability Zone?
+### Q1. Which of the following BEST describes an AWS Availability Zone? *(Remember)*
 A. A single data center owned by AWS
 B. A geographic region with multiple data centers
 C. One or more discrete data centers within a region, with independent power and networking
@@ -15,7 +17,7 @@ D. A network point of presence used by CloudFront
 
 ---
 
-### Q2. A company's compliance requirements mandate that customer data must never leave Germany. Which AWS concept is MOST relevant?
+### Q2. A company's compliance requirements mandate that customer data must never leave Germany. Which AWS concept is MOST relevant? *(Apply)*
 A. Edge locations
 B. Region selection
 C. Availability Zones
@@ -23,7 +25,7 @@ D. CloudFront origins
 
 ---
 
-### Q3. Which is NOT one of the 6 pillars of the AWS Well-Architected Framework?
+### Q3. Which is NOT one of the 6 pillars of the AWS Well-Architected Framework? *(Remember)*
 A. Reliability
 B. Performance Efficiency
 C. Innovation
@@ -31,7 +33,7 @@ D. Sustainability
 
 ---
 
-### Q4. A company runs EC2 instances. Whose responsibility is it to patch the operating system?
+### Q4. A company runs EC2 instances. Whose responsibility is it to patch the operating system? *(Understand)*
 A. AWS
 B. The customer
 C. Shared equally between AWS and customer
@@ -39,7 +41,7 @@ D. AWS, but only for Amazon Linux
 
 ---
 
-### Q5. Under the shared responsibility model, which task is AWS responsible for on Amazon RDS?
+### Q5. Under the shared responsibility model, which task is AWS responsible for on Amazon RDS? *(Understand)*
 A. Configuring database user accounts and grants
 B. Patching the underlying operating system and database engine
 C. Encrypting application data before it is written
@@ -47,7 +49,7 @@ D. Defining security group rules
 
 ---
 
-### Q6. A solutions architect wants the system to keep running if a single data center fails. What is the MINIMUM design needed?
+### Q6. A solutions architect wants the system to keep running if a single data center fails. What is the MINIMUM design needed? *(Apply)*
 A. Single EC2 instance in one AZ
 B. EC2 instances spread across at least 2 AZs in one region
 C. EC2 instances in multiple regions
@@ -55,7 +57,7 @@ D. EC2 instances across at least 2 edge locations
 
 ---
 
-### Q7. A startup has unpredictable, spiky traffic. Which Well-Architected design principle BEST applies?
+### Q7. A startup has unpredictable, spiky traffic. Which Well-Architected design principle BEST applies? *(Apply)*
 A. Perform operations as code
 B. Stop guessing capacity — adopt elasticity
 C. Apply defense in depth
@@ -63,7 +65,7 @@ D. Test recovery procedures
 
 ---
 
-### Q8. Which is the BEST example of "Operational Excellence" in practice?
+### Q8. Which is the BEST example of "Operational Excellence" in practice? *(Apply)*
 A. Encrypting data at rest with KMS
 B. Defining infrastructure with CloudFormation and deploying via CI/CD
 C. Choosing the cheapest EC2 family
@@ -71,7 +73,7 @@ D. Running workloads on Graviton
 
 ---
 
-### Q9. A company wants to reduce its workloads' environmental impact. Which combination BEST supports the Sustainability pillar?
+### Q9. A company wants to reduce its workloads' environmental impact. Which combination BEST supports the Sustainability pillar? *(Analyze)*
 A. Larger EC2 instances, always-on
 B. Graviton-based instances, auto scaling, and managed services
 C. Multi-region active-active for everything
@@ -79,7 +81,7 @@ D. Bare-metal EC2 in one AZ
 
 ---
 
-### Q10. Data transferred IN to AWS from the public internet typically costs:
+### Q10. Data transferred IN to AWS from the public internet typically costs: *(Remember)*
 A. The same as data transferred OUT
 B. Half as much as data OUT
 C. Free
@@ -87,7 +89,7 @@ D. Charged per minute
 
 ---
 
-### Q11. A company runs a global video streaming service on EC2. Their AWS bill is dominated by data transfer OUT to the internet. What is the BEST way to reduce cost?
+### Q11. A company runs a global video streaming service on EC2. Their AWS bill is dominated by data transfer OUT to the internet. What is the BEST way to reduce cost? *(Apply)*
 A. Move the EC2 instances to a cheaper region
 B. Put CloudFront in front of the origin
 C. Switch to NAT Gateway egress
@@ -95,7 +97,7 @@ D. Use larger EC2 instance types
 
 ---
 
-### Q12. Which interface uses the SAME underlying APIs as the AWS Management Console?
+### Q12. Which interface uses the SAME underlying APIs as the AWS Management Console? *(Understand)*
 A. Only the AWS CLI
 B. Only the AWS SDKs
 C. Both the AWS CLI and AWS SDKs
@@ -103,7 +105,7 @@ D. Neither — the console is a separate API
 
 ---
 
-### Q13. An "edge location" is primarily used for:
+### Q13. An "edge location" is primarily used for: *(Remember)*
 A. Running EC2 instances
 B. Caching content close to users and accelerating DNS
 C. Storing application backups
@@ -111,7 +113,7 @@ D. Hosting AWS managed databases
 
 ---
 
-### Q14. RPO stands for:
+### Q14. RPO stands for: *(Remember)*
 A. Recovery Point Objective — maximum acceptable data loss
 B. Recovery Process Order — sequence of restore steps
 C. Resource Provisioning Output — number of resources provisioned
@@ -119,7 +121,7 @@ D. Replication Performance Object — measure of replica lag
 
 ---
 
-### Q15. Which AWS service deploys a rack of AWS hardware in the customer's OWN data center?
+### Q15. Which AWS service deploys a rack of AWS hardware in the customer's OWN data center? *(Understand)*
 A. Local Zone
 B. Wavelength Zone
 C. Outpost
@@ -127,7 +129,7 @@ D. Edge Location
 
 ---
 
-### Q16. Multi-AZ protects against:
+### Q16. Multi-AZ protects against: *(Understand)*
 A. A regional outage
 B. A single Availability Zone outage
 C. An internet provider outage globally
@@ -135,7 +137,7 @@ D. A misconfigured IAM policy
 
 ---
 
-### Q17. A workload requires 99.99% availability AND must survive a regional outage. Which design is MOST appropriate?
+### Q17. A workload requires 99.99% availability AND must survive a regional outage. Which design is MOST appropriate? *(Analyze)*
 A. Single EC2 instance
 B. Multi-AZ in one region
 C. Multi-region with cross-region replication and DNS failover
@@ -143,7 +145,7 @@ D. Single AZ with EBS snapshots
 
 ---
 
-### Q18. Which AWS service is BEST described as "infrastructure as code"?
+### Q18. Which AWS service is BEST described as "infrastructure as code"? *(Understand)*
 A. CloudTrail
 B. CloudFormation
 C. CloudWatch
@@ -151,7 +153,7 @@ D. CloudHSM
 
 ---
 
-### Q19. The Well-Architected pillar MOST directly improved by enabling Multi-AZ on RDS is:
+### Q19. The Well-Architected pillar MOST directly improved by enabling Multi-AZ on RDS is: *(Apply)*
 A. Cost Optimization
 B. Performance Efficiency
 C. Reliability
@@ -159,7 +161,7 @@ D. Sustainability
 
 ---
 
-### Q20. A company wants minimum operational overhead for a new microservice. Which is the BEST starting point?
+### Q20. A company wants minimum operational overhead for a new microservice. Which is the BEST starting point? *(Apply)*
 A. EC2 with custom AMI
 B. Lambda or Fargate
 C. Self-managed Kubernetes on EC2
@@ -167,7 +169,7 @@ D. On-prem VM
 
 ---
 
-### Q21. Which set of services would you enable on day one to gain audit, compliance monitoring, and threat detection?
+### Q21. Which set of services would you enable on day one to gain audit, compliance monitoring, and threat detection? *(Apply)*
 A. CloudTrail, AWS Config, GuardDuty
 B. CloudFront, ELB, Route 53
 C. S3, EBS, EFS
@@ -175,7 +177,7 @@ D. EC2, RDS, DynamoDB
 
 ---
 
-### Q22. Which statement about regions is TRUE?
+### Q22. Which statement about regions is TRUE? *(Analyze)*
 A. All AWS services are available in every region on launch day
 B. Pricing is identical across all regions
 C. Most resources are region-scoped — they don't appear in other regions
@@ -183,7 +185,7 @@ D. You can move an EC2 instance to a different region with a single click
 
 ---
 
-### Q23. An architect is told to design "the most cost-effective" solution that still meets the SLA of 99.95%. What does "most cost-effective" mean on the SAA exam?
+### Q23. An architect is told to design "the most cost-effective" solution that still meets the SLA of 99.95%. What does "most cost-effective" mean on the SAA exam? *(Evaluate)*
 A. Always the cheapest possible option, ignoring requirements
 B. The cheapest option that still meets the stated requirements
 C. The option that uses Spot instances
@@ -191,7 +193,7 @@ D. The option that uses Savings Plans
 
 ---
 
-### Q24. Which of the following is an example of "defense in depth" (Security pillar)?
+### Q24. Which of the following is an example of "defense in depth" (Security pillar)? *(Analyze)*
 A. Only relying on a perimeter firewall
 B. Combining IAM, Security Groups, NACLs, KMS encryption, and CloudTrail logging
 C. Allowing all egress from a VPC
@@ -199,7 +201,7 @@ D. Storing access keys in source code
 
 ---
 
-### Q25. Which Well-Architected design principle aligns BEST with "use managed services so you don't have to be an expert in everything"?
+### Q25. Which Well-Architected design principle aligns BEST with "use managed services so you don't have to be an expert in everything"? *(Analyze)*
 A. Test recovery procedures
 B. Democratize advanced technologies
 C. Anticipate failure

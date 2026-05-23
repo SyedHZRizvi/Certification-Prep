@@ -7,7 +7,7 @@
 
 ## Questions
 
-### Q1. Which cloud benefit BEST describes the ability to add resources only when needed and remove them automatically when demand drops?
+### Q1. Which cloud benefit BEST describes the ability to add resources only when needed and remove them automatically when demand drops? *(Remember)*
 A. Reliability
 B. High availability
 C. Elasticity
@@ -15,7 +15,7 @@ D. Manageability
 
 ---
 
-### Q2. Which service model gives the customer the MOST control over the operating system and runtime?
+### Q2. Which service model gives the customer the MOST control over the operating system and runtime? *(Understand)*
 A. SaaS
 B. PaaS
 C. IaaS
@@ -23,7 +23,7 @@ D. FaaS
 
 ---
 
-### Q3. A company runs Microsoft 365 for email and collaboration. Which cloud service model is this?
+### Q3. A company runs Microsoft 365 for email and collaboration. Which cloud service model is this? *(Apply)*
 A. IaaS
 B. PaaS
 C. SaaS
@@ -31,7 +31,7 @@ D. Hybrid
 
 ---
 
-### Q4. Converting CapEx to OpEx in the cloud means:
+### Q4. Converting CapEx to OpEx in the cloud means: *(Understand)*
 A. Buying physical servers up front and depreciating them
 B. Paying for compute and storage as you consume them, rather than buying assets up front
 C. Negotiating a 5-year hardware contract
@@ -39,7 +39,7 @@ D. Treating cloud spend as a capital investment on the balance sheet
 
 ---
 
-### Q5. A team needs to deploy a web application without managing the OS or runtime, but still wants control over the application code. Which model fits BEST?
+### Q5. A team needs to deploy a web application without managing the OS or runtime, but still wants control over the application code. Which model fits BEST? *(Apply)*
 A. IaaS
 B. PaaS
 C. SaaS
@@ -47,7 +47,7 @@ D. On-premises
 
 ---
 
-### Q6. Which is an example of **horizontal scaling** in Azure?
+### Q6. Which is an example of **horizontal scaling** in Azure? *(Understand)*
 A. Resizing a VM from B2s to D8s
 B. Adding more VM instances to a VM Scale Set
 C. Upgrading to a larger storage account tier
@@ -55,7 +55,7 @@ D. Switching from HDD to SSD
 
 ---
 
-### Q7. Which item is the customer's responsibility regardless of whether they use IaaS, PaaS, or SaaS?
+### Q7. Which item is the customer's responsibility regardless of whether they use IaaS, PaaS, or SaaS? *(Remember)*
 A. Patching the OS
 B. Managing the physical datacenter
 C. Their data and identities
@@ -63,7 +63,7 @@ D. Patching the hypervisor
 
 ---
 
-### Q8. A bank requires that data NEVER leave its on-premises datacenter due to regulatory rules. Which deployment model fits BEST?
+### Q8. A bank requires that data NEVER leave its on-premises datacenter due to regulatory rules. Which deployment model fits BEST? *(Apply)*
 A. Public cloud
 B. Private cloud
 C. Multi-cloud
@@ -71,7 +71,7 @@ D. Hybrid cloud (with primary in public Azure)
 
 ---
 
-### Q9. Which is the BEST description of high availability?
+### Q9. Which is the BEST description of high availability? *(Understand)*
 A. Recovering from a region-wide outage within 24 hours
 B. Keeping a service running and accessible despite individual component failures
 C. Encrypting all data at rest
@@ -79,7 +79,7 @@ D. Automatically scaling to meet demand
 
 ---
 
-### Q10. Reservations in Azure (1- or 3-year commitments) are an example of:
+### Q10. Reservations in Azure (1- or 3-year commitments) are an example of: *(Analyze)*
 A. CapEx — because you commit upfront
 B. OpEx — they are still a paid-over-time consumption commitment, not an asset purchase
 C. A hybrid expense
@@ -87,7 +87,7 @@ D. None of the above
 
 ---
 
-### Q11. A company wants to extend its on-premises Active Directory to Azure so users have one identity for both. This is an example of:
+### Q11. A company wants to extend its on-premises Active Directory to Azure so users have one identity for both. This is an example of: *(Apply)*
 A. Public cloud
 B. Hybrid cloud
 C. Private cloud
@@ -95,7 +95,7 @@ D. SaaS
 
 ---
 
-### Q12. Which scenario BEST fits **disaster recovery** (DR), not high availability (HA)?
+### Q12. Which scenario BEST fits **disaster recovery** (DR), not high availability (HA)? *(Analyze)*
 A. Load balancer routes around a failed VM in the same region
 B. Site Recovery fails the workload over to a secondary region after the primary region goes down
 C. Auto-scale adds VMs when CPU exceeds 70%
@@ -103,7 +103,7 @@ D. A managed disk has 3 synchronous replicas in the same datacenter
 
 ---
 
-### Q13. Which two are ALWAYS the customer's responsibility under shared responsibility? (Choose two)
+### Q13. Which two are ALWAYS the customer's responsibility under shared responsibility? (Choose two) *(Remember)*
 A. Physical security of the datacenter
 B. Data
 C. Identity and access management
@@ -111,7 +111,7 @@ D. Patching the hypervisor
 
 ---
 
-### Q14. Which service is BEST described as **SaaS**?
+### Q14. Which service is BEST described as **SaaS**? *(Apply)*
 A. Azure Virtual Machine running Windows Server
 B. Azure App Service hosting a custom .NET app
 C. Microsoft 365 Outlook
@@ -119,7 +119,7 @@ D. Azure Kubernetes Service
 
 ---
 
-### Q15. Spot Virtual Machines are BEST for:
+### Q15. Spot Virtual Machines are BEST for: *(Apply)*
 A. Production databases that need 24/7 uptime
 B. Interruptible, fault-tolerant workloads where Azure can reclaim capacity any time
 C. Workloads that need a 99.99% SLA
@@ -127,7 +127,7 @@ D. Single-instance critical web servers
 
 ---
 
-### Q16. "Consumption-based pricing" means:
+### Q16. "Consumption-based pricing" means: *(Remember)*
 A. You pay a flat monthly fee for unlimited use
 B. You pay only for the resources you actually use
 C. You buy capacity in 5-year blocks
@@ -135,7 +135,7 @@ D. You pay only at year-end
 
 ---
 
-### Q17. Which is TRUE about the cloud and security?
+### Q17. Which is TRUE about the cloud and security? *(Analyze)*
 A. Microsoft is responsible for ALL security in Azure
 B. Customers are responsible for ALL security in Azure
 C. Security is shared — Microsoft secures the platform; customers secure their data, identities, and configurations
@@ -143,7 +143,7 @@ D. Cloud is inherently less secure than on-premises
 
 ---
 
-### Q18. Which BEST describes **fault tolerance**?
+### Q18. Which BEST describes **fault tolerance**? *(Understand)*
 A. A system continues to operate with NO downtime even when components fail
 B. A system recovers after an outage within 1 hour
 C. A system is patched monthly
@@ -151,7 +151,7 @@ D. A system can scale to handle more users
 
 ---
 
-### Q19. A startup wants to launch a global app quickly without buying servers. Which cloud benefit is MOST relevant?
+### Q19. A startup wants to launch a global app quickly without buying servers. Which cloud benefit is MOST relevant? *(Apply)*
 A. Predictability
 B. Agility
 C. Governance
@@ -159,7 +159,7 @@ D. Manageability
 
 ---
 
-### Q20. Which is an example of **vertical scaling**?
+### Q20. Which is an example of **vertical scaling**? *(Understand)*
 A. Adding 5 more web server instances behind a load balancer
 B. Resizing a VM from D2s_v3 to D8s_v3
 C. Moving from one region to two regions
@@ -167,7 +167,7 @@ D. Adding read replicas to a database
 
 ---
 
-### Q21. The "Azure AD" service was renamed in 2023 to:
+### Q21. The "Azure AD" service was renamed in 2023 to: *(Remember)*
 A. Azure Identity
 B. Microsoft Entra ID
 C. Azure Directory Service
@@ -175,7 +175,7 @@ D. Microsoft Identity Manager
 
 ---
 
-### Q22. Which of the following is NOT one of the standard cloud deployment models?
+### Q22. Which of the following is NOT one of the standard cloud deployment models? *(Remember)*
 A. Public cloud
 B. Private cloud
 C. Hybrid cloud
@@ -183,7 +183,7 @@ D. Reserved cloud
 
 ---
 
-### Q23. Azure Hybrid Benefit allows you to:
+### Q23. Azure Hybrid Benefit allows you to: *(Understand)*
 A. Get a discount by reusing existing Windows Server / SQL Server licenses on Azure VMs
 B. Bridge on-prem AD to Microsoft Entra ID
 C. Use Azure services without an internet connection
@@ -191,7 +191,7 @@ D. Migrate VMs for free
 
 ---
 
-### Q24. A company needs the same workload to run normally on-premises but to "burst" extra capacity into Azure during peak holiday traffic. This is BEST described as:
+### Q24. A company needs the same workload to run normally on-premises but to "burst" extra capacity into Azure during peak holiday traffic. This is BEST described as: *(Apply)*
 A. Public cloud
 B. Private cloud
 C. Hybrid cloud
@@ -199,7 +199,7 @@ D. SaaS
 
 ---
 
-### Q25. The MOST accurate statement about cloud cost is:
+### Q25. The MOST accurate statement about cloud cost is: *(Evaluate)*
 A. Cloud is always cheaper than on-premises
 B. Cloud is always more expensive than on-premises
 C. Cloud generally wins on variable, unpredictable workloads and agility; steady predictable workloads can sometimes be cheaper on owned hardware
@@ -207,7 +207,7 @@ D. Cloud cost is a one-time fixed fee
 
 ---
 
-### Q26. Which set BEST represents the "always customer responsibility" items in Azure's shared responsibility model?
+### Q26. Which set BEST represents the "always customer responsibility" items in Azure's shared responsibility model? *(Analyze)*
 A. Datacenter, hypervisor, network controls
 B. Data, endpoints, accounts, access management
 C. OS patches for App Service, datacenter, hypervisor

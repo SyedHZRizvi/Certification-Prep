@@ -298,3 +298,104 @@ Always: Sprint Review → Sprint Retrospective → next Sprint Planning. Review 
 - Daily Scrum format = team choice (since 2020)
 
 ➡️ [Cheat Sheet](./Cheat-Sheet.md) → [Module 5: Artifacts](../Module-05-Artifacts/Reading.md)
+
+---
+
+## 🧠 Bloom's-taxonomy mapping (existing Q1–Q27)
+
+| Q# | Bloom level |
+|---|---|
+| Q1, Q2, Q4, Q5, Q12, Q15, Q16, Q20, Q26 | Remember (timebox recall, attendee recall) |
+| Q3, Q6, Q7, Q8, Q11, Q13, Q14, Q22, Q23, Q24, Q27 | Understand (relations, definitions, sequence) |
+| Q9, Q17, Q18, Q21 | Understand (event purpose) |
+| Q10, Q25 | Apply (scenario response) |
+| Q19 | Analyze (distinguish event from activity) |
+
+**Current distribution:** Remember 9 (33%), Understand 15 (56%), Apply 2 (7%), Analyze 1 (4%), Evaluate 0, Create 0. Heavily Understand-tilted (events are intrinsically recall-heavy). New questions below add Analyze/Evaluate/Apply depth.
+
+---
+
+## 🚀 Additional higher-Bloom questions (Q28–Q33, advanced)
+
+### Q28. John Deere's ISG ran Sprint Reviews on actual tractors with farmer-stakeholders in test fields (Module 4 case study). Features that survived this cycle had ~3× higher in-market adoption than features without it. Analyzing this through the empiricism + Sprint Review lens, what's the strongest causal explanation? *(Analyze)*
+A. Farmers like tractors more than office workers
+B. Live stakeholder participation tightens the Inspection step — the Product Backlog gets adapted based on real-context feedback rather than imagined customer reactions; better adaptation produces better products
+C. Tractors are simpler than software
+D. Three-times-higher adoption is meaningless without statistical significance
+
+---
+
+### Q29. A team's Sprint Retrospective consistently produces action items but they never get done. The Scrum Master asks: "Should we just stop doing retros — they're not working?" Evaluate. *(Evaluate)*
+A. Yes — stop wasting time
+B. No — the problem isn't the Retro, it's the Adaptation step. The team is inspecting (the Retro happens) but failing to adapt (actions stay on paper). Fix: pull 1 action item into the *next* Sprint Backlog as a real PBI with a Developer owner, then measure if it shipped at the next Retro
+C. Yes — the team should hold a quarterly retro instead
+D. No — but the SM should make the decisions instead of the team
+
+---
+
+### Q30. Design the BEST Sprint Review for a team that has *no stakeholders* (e.g., a startup with only the two co-founders, who are also the team). Apply the Review's stated purpose to defend your design. *(Apply / Create)*
+A. Skip the Review — no stakeholders means no purpose
+B. Hold a 1-hour Review where the team plays multiple stakeholder roles (end-user, finance, ops) and inspects the Increment from each angle. The Review's purpose — adapt the Backlog based on inspection — is preserved
+C. Combine the Review with the Daily Scrum
+D. Replace the Review with a screenshare for the founders' parents
+
+---
+
+### Q31. The Scrum Guide says only the PO can cancel a Sprint. Construct three scenarios where cancellation is CORRECT and three where the PO is being asked to cancel but SHOULDN'T. What's the decision rule? *(Create / Apply)*
+A. Cancel anytime the team feels behind
+B. Decision rule: cancel only when the Sprint Goal has become *obsolete* (market shift, strategic pivot, regulatory change makes the goal irrelevant). Do NOT cancel for: team behind on scope, individual conflict, "we want a do-over," or stakeholder unhappiness with mid-Sprint progress
+C. Cancel quarterly to refresh
+D. Never cancel — always finish
+
+---
+
+### Q32. A Scrum Master combines the Sprint Review and Retrospective into a single 2-hour session "to save time." Analyze the consequences. *(Analyze)*
+A. Acceptable — saves 1 hour
+B. The combination violates the Scrum Guide's explicit two-event structure AND mixes audiences (Review includes stakeholders; Retro is Scrum Team only). Stakeholders will witness internal team dynamics; team members will self-censor in front of stakeholders. The "saved hour" is a false economy
+C. The team should combine them every Sprint
+D. The Scrum Guide allows this
+
+---
+
+### Q33. Bosch (Module 8 case study) flies ~500 people to Stuttgart twice a quarter for in-person PI Planning at the program level (a SAFe event, not a Scrum Guide event). Evaluating against the Scrum Guide's stance on remote vs in-person events, is this defensible? *(Evaluate)*
+A. The Scrum Guide forbids in-person events
+B. The Scrum Guide is silent on remote/in-person — Bosch is making a contextual choice that the *value* of co-located alignment exceeds the cost. Their rationale (cross-team dependency resolution requires high-bandwidth communication) is consistent with the lean principle of optimizing for value over cost
+C. Bosch is wasting money
+D. In-person is always better than remote
+
+---
+
+## 🎯 Answer key — Q28–Q33
+
+### Q28: **B. Empiricism + real-context feedback**
+The Sprint Review's *purpose* is to inspect the Increment and *adapt the Product Backlog* — the stronger the Inspection signal (real users, real context), the better the Adaptation. John Deere's tractor-field reviews maximized Inspection fidelity, which improved Backlog adaptation, which produced higher-fit features. (A is irrelevant; C is wrong — software isn't simpler; D is a methodological nitpick, but Deere's data was published, not anecdotal.)
+
+### Q29: **B. Fix the Adaptation gap**
+This is the classic "Inspection without Adaptation" anti-pattern. The fix is *not* to stop inspecting — it's to close the Adaptation loop. The proven technique: pull a Retro action item into the next Sprint Backlog as a real PBI with an owner. The next Retro then measures whether it shipped. This converts vague "we should…" into actual change.
+
+### Q30: **B. Team plays stakeholder roles**
+The Sprint Review's *purpose* (inspect and adapt) doesn't require external stakeholders — it requires *inspection with intent to adapt*. A team without external stakeholders can perform the Review by playing the roles of the eventual customers (Founder-as-end-user, Founder-as-buyer, dev-as-ops, etc.). The Review must still happen — Scrum prescribes the event. Skipping (A) violates the framework; (C) and (D) are absurd.
+
+### Q31: **B. Cancel only when Sprint Goal is obsolete**
+The Scrum Guide is explicit: "A Sprint could be cancelled if the Sprint Goal becomes obsolete." That's the decision rule. Correct cancellation scenarios: market direction shift mid-Sprint; regulatory change invalidates the goal; pivot to entirely different product. WRONG reasons to cancel: behind on scope (negotiate scope, don't cancel), team conflict (coach, don't cancel), do-over (Scrum is about empirical learning, not perfection), stakeholder unhappiness with progress (use Review for that).
+
+### Q32: **B. Multiple violations + audience mixing harm**
+The Scrum Guide explicitly defines two separate events with different audiences and purposes. Combining them breaks: (1) the Scrum Guide's prescribed structure, (2) audience boundaries (stakeholders attend Review; Scrum Team only attends Retro), (3) psychological safety (team members will not raise interpersonal issues in front of stakeholders). The 1-hour "saving" creates downstream waste in eroded trust and missed feedback.
+
+### Q33: **B. Defensible contextual choice**
+The Scrum Guide says nothing about remote vs in-person; this is a contextual decision. Bosch has *high* cross-team dependency (24 ARTs producing one connected IoT platform). The cost of mis-alignment at PI Planning would exceed the cost of co-located meetings. This is lean reasoning — optimize for value, not for cost. The decision is *also* a SAFe-level choice (PI Planning isn't a Scrum Guide event), so the Scrum Guide doesn't constrain it.
+
+---
+
+## 📊 Updated distribution after Q28–Q33
+
+| Bloom level | Count | % | Target |
+|---|---|---|---|
+| Remember | 9 | 27% | ≤ 25% |
+| Understand | 15 | 45% | ~ 25% |
+| Apply | 4 | 12% | ~ 25% |
+| Analyze | 3 | 9% | ~ 20% |
+| Evaluate | 3 | 9% | within 20% |
+| Create | 2 | 6% | ~ 5% |
+
+Events questions are intrinsically Remember/Understand-heavy (timeboxes, attendees). Q28–Q33 add Apply/Analyze/Evaluate depth without removing recall coverage students need for the exam.

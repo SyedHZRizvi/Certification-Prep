@@ -533,4 +533,387 @@ The CPSM real exam tests **judgment**. If you missed scenario questions, slow do
 
 ---
 
+## 📚 Detailed Answer Rationales
+
+These rationales explain why the correct answer wins AND why each distractor fails. Use them to build the judgment patterns CPSM tests.
+
+**Q1. D.** Supply management is strategic and value-creating.
+- Why D: Matches the ISM definition (Module 1) — acquiring goods/services AND managing the supply base.
+- A wrong: Issuing POs is *purchasing*, the transactional subset.
+- B wrong: Receiving and inspecting is *operations*, not supply mgmt.
+- C wrong: Lowest unit price is the Stage-1 maturity behavior CPSM explicitly tests against.
+- Exam-takeaway: If the choice limits supply mgmt to a single transaction or a single metric, it's wrong.
+
+**Q2. D.** Multi-year category strategy is the only strategic option listed.
+- Why D: Strategic = multi-year horizon, owned by senior supply leaders.
+- A, B, C wrong: All three are tactical day-to-day work — appropriate for buyers, not senior supply leaders.
+- Exam-takeaway: When asked "most strategic," look for the option with the longest horizon and highest cross-functional impact.
+
+**Q3. A.** A CoE enables; it doesn't own all spend.
+- Why A: Module 1 definition — methodology, tools, analytics across the org.
+- B wrong: Owning all spend is the *centralized* model, not a CoE.
+- C wrong: A CoE doesn't replace operating teams — it enables them.
+- D wrong: CoEs are domain-agnostic; "IT only" is a category team, not a CoE.
+- Exam-takeaway: CoE = influence without authority; centralized = authority with centralization.
+
+**Q4. D.** Cost of capital is finance, not Porter's framework.
+- Why D: Porter's Five Forces = new entrants, supplier power, buyer power, substitutes, rivalry.
+- A, B, C: All real Porter forces.
+- Exam-takeaway: Memorize the five forces precisely; distractors will substitute finance vocabulary.
+
+**Q5. C.** Support activity.
+- Why C: Porter's value chain places procurement under support (alongside HR, infrastructure, technology).
+- A, B, D wrong: Primary activities are inbound logistics, ops, outbound logistics, marketing/sales, service.
+- Exam-takeaway: Procurement's *influence* spans primary activities, but Porter's *classification* is support.
+
+**Q6. A.** Decentralized or hybrid with local autonomy.
+- Why A: Highly diverse BUs gain little from centralized leverage and lose responsiveness.
+- B wrong: Centralized destroys responsiveness when BUs are unrelated.
+- C wrong: One category manager cannot serve unrelated industries.
+- D wrong: Outsourcing all sourcing is rarely the right answer on the exam.
+- Exam-takeaway: Org-model questions hinge on BU diversity and spend characteristics.
+
+**Q7. D.** Stage 5 (world-class).
+- Why D: Module 1 maturity model — Stage 5 = supply-enabled innovation drives revenue, board visibility.
+- A, B wrong: Lower stages don't include innovation-driving revenue.
+- C wrong: It IS in the model — Stage 5.
+- Exam-takeaway: Memorize what each maturity stage *looks* like, not just the name.
+
+**Q8. A.** "Right relationship" is a modern addition, not part of the classic five.
+- Why A: Classic Five Rights = quality, quantity, time, place, price.
+- B, C, D: Are all classic Five Rights.
+- Exam-takeaway: When asked about classics, accept only the canonical version.
+
+**Q9. A.** Personal preference has no place in objective analysis.
+- Why A: Make-or-buy is data-driven (cost, capacity, IP, strategic importance).
+- B, C, D: All legitimate make-or-buy factors.
+- Exam-takeaway: Any option that elevates personal preference over data is wrong.
+
+**Q10. D.** Visibility into historical spend.
+- Why D: Spend analysis is diagnostic — informs every downstream decision.
+- A wrong: Identifying suppliers to terminate may follow, but isn't the primary purpose.
+- B wrong: AP audits are about controls, not category strategy.
+- C wrong: Working capital is treasury, not spend analysis.
+- Exam-takeaway: Spend analysis = visibility first. Strategy comes after.
+
+**Q11. C.** Raw materials/components going into the product = direct spend.
+- A, B, D wrong: Office supplies, marketing, travel are all *indirect*.
+- Exam-takeaway: Direct = goes INTO the product sold. Indirect = supports operations.
+
+**Q12. A.** IT, MRO, facilities = classic indirect categories.
+- B, C, D wrong: All "into the product" → direct.
+- Exam-takeaway: Same direct/indirect rule applied the other way.
+
+**Q13. D.** Leverage quadrant = competitive bidding / e-auctions exploit buying power.
+- A wrong: Strategic partnership is for Strategic quadrant.
+- B wrong: Inventory buffers are for Bottleneck.
+- C wrong: Single source isn't a Leverage strategy.
+- Exam-takeaway: Memorize the Kraljic quadrant → strategy mapping cold.
+
+**Q14. C.** Strategic = multi-year partnership, joint development.
+- A wrong: Catalog buying = Non-critical.
+- B wrong: Reverse auctions destroy strategic relationships.
+- D wrong: Spot buying is the opposite of strategic.
+- Exam-takeaway: Strategic quadrant = invest in the relationship.
+
+**Q15. B.** Bottleneck = ensure supply.
+- A, C wrong: Cost reduction and reverse auctions don't work when supply is scarce.
+- D wrong: Brand-name spec narrows options, worsens bottleneck.
+- Exam-takeaway: Bottleneck is about availability, not price.
+
+**Q16. D.** Single = chose one of many; sole = only one exists.
+- A, B, C: Common misconceptions; memorize the precise distinction.
+- Exam-takeaway: This appears on every CPSM practice exam in some form.
+
+**Q17. C.** Two suppliers, primary/backup or 70/30 / 80/20.
+- A, B, D wrong: Misunderstandings of dual sourcing.
+- Exam-takeaway: Dual sourcing is the textbook risk-mitigation structure.
+
+**Q18. D.** RFI = learn about the market and capable suppliers.
+- A wrong: RFP/RFQ awards contracts, not RFI.
+- B wrong: NDA is a separate document.
+- C wrong: RFQ compares firm prices.
+- Exam-takeaway: RFI = explore; RFP = evaluate solution; RFQ = compare price.
+
+**Q19. D.** RFP = creative solution / best-value proposal.
+- A wrong: That's RFQ.
+- B, C: Wrong purposes.
+- Exam-takeaway: RFP when the solution isn't standardized.
+
+**Q20. B.** RFQ = spec is defined, you need price.
+- A wrong: Vague spec → RFP.
+- C, D wrong: Wrong purposes.
+- Exam-takeaway: RFQ is the cheapest evaluation when you know exactly what you want.
+
+**Q21. B.** Reverse auctions work in the Leverage quadrant with multiple qualified suppliers.
+- A, C, D wrong: Strategic, sole-source, and innovation-critical destroy supplier relationships.
+- Exam-takeaway: Don't reverse-auction anything you can't easily replace.
+
+**Q22. A.** Maverick spend = off-contract / unauthorized buying.
+- B, C, D wrong: Misunderstandings; maverick = bypass procurement.
+- Exam-takeaway: Maverick spend is a leakage problem to address with policy + tooling + training.
+
+**Q23. A.** Set weighted-scoring criteria BEFORE issuing.
+- B wrong: Setting after = bias and audit risk.
+- C wrong: "Whenever convenient" = no governance.
+- D wrong: Suppliers don't set buyer criteria.
+- Exam-takeaway: Pre-defined criteria are the integrity test of an RFP/RFQ.
+
+**Q24. C.** Standardization reduces variety of *items*.
+- B wrong: That's *rationalization* (suppliers).
+- A, D wrong: Increase/eliminate are wrong directions.
+- Exam-takeaway: Memorize: standardization = items; rationalization = suppliers.
+
+**Q25. A.** Rationalization reduces the number of *suppliers*.
+- B wrong: That's standardization.
+- C, D wrong: Wrong outcomes.
+- Exam-takeaway: Same memorization rule.
+
+**Q26. A.** Bullwhip = demand distortion amplifying upstream.
+- B wrong: Literal whips not a thing here.
+- C wrong: Bullwhip is about volatility, not stability.
+- D wrong: Pricing waterfall is a different concept.
+- Exam-takeaway: Hau Lee 1997 (Module 2) is the canonical reference.
+
+**Q27. D.** Sharing POS data with suppliers is the canonical mitigation.
+- A wrong: Forward-buying AMPLIFIES the bullwhip.
+- B wrong: Erratic ordering amplifies it.
+- C wrong: Hiding forecasts amplifies it.
+- Exam-takeaway: Transparency reduces bullwhip; opacity worsens it.
+
+**Q28. D.** Performance specs invite supplier innovation.
+- A, B, C wrong: Brand names lock in; design specs lock the "how."
+- Exam-takeaway: Performance = what; design = how.
+
+**Q29. C.** BATNA = Best Alternative To a Negotiated Agreement.
+- A, B, D wrong: Common misreadings.
+- Exam-takeaway: Fisher & Ury, *Getting to Yes* (1981).
+
+**Q30. C.** ZOPA = overlap between buyer max and seller min.
+- A, B, D wrong: Misunderstandings.
+- Exam-takeaway: Where a deal is possible.
+
+**Q31. B.** Distributive = win-lose fixed pie.
+- A wrong: That's integrative.
+- C, D wrong: Wrong concepts.
+- Exam-takeaway: Distributive = position-based; integrative = interest-based.
+
+**Q32. B.** Integrative for strategic, long-term relationships.
+- A, C, D wrong: Commodity, bottleneck, tail-spend don't justify integrative effort.
+- Exam-takeaway: Match negotiation style to relationship horizon.
+
+**Q33. A.** Fixed-price puts cost-overrun risk on supplier.
+- B, C, D wrong: Fixed-price by definition is supplier risk.
+- Exam-takeaway: Fixed = supplier risk; cost-plus = buyer risk.
+
+**Q34. C.** Cost-plus puts cost-overrun risk on buyer (buyer reimburses costs).
+- A, B, D wrong: Cost-plus shifts cost reimbursement TO the buyer.
+- Exam-takeaway: Memorize the risk-allocation table.
+
+**Q35. A.** Cost-plus or T&M for uncertain scope.
+- B, C, D wrong: Forcing fixed-price on undefined scope = dispute guaranteed.
+- Exam-takeaway: Match contract type to scope clarity.
+
+**Q36. B.** UCC = US sale of goods.
+- A, C, D wrong: Wrong scope.
+- Exam-takeaway: Goods → UCC; services → common law; international goods → CISG; federal → FAR.
+
+**Q37. A.** CISG applies by default between signatory countries unless opted out.
+- B, C, D wrong: Misunderstandings.
+- Exam-takeaway: Default-on regime — must explicitly opt out.
+
+**Q38. D.** FAR governs US federal government contracts.
+- A, B, C wrong: Wrong scopes.
+- Exam-takeaway: FAR is prescriptive; flow-downs apply to all subs.
+
+**Q39. C.** Force majeure excuses performance during unforeseeable, unavoidable events.
+- A, B, D wrong: Routine disruptions, cost increases, and convenience don't qualify.
+- Exam-takeaway: Specifically enumerated events + reasonable mitigation required.
+
+**Q40. B.** Termination for convenience = work done + reasonable wind-down.
+- A wrong: That's termination for default.
+- C, D wrong: Punitive/full-value not the convenience standard.
+- Exam-takeaway: Convenience = orderly exit with fair compensation.
+
+**Q41. B.** Termination for default requires actual material breach.
+- A, C, D wrong: Misunderstandings of default.
+- Exam-takeaway: No real material breach → wrongful termination risk.
+
+**Q42. D.** Statute of Frauds threshold under UCC = $500.
+- A, B, C wrong: Wrong numbers.
+- Exam-takeaway: $500+ goods need writing.
+
+**Q43. A.** Express warranty = specifically stated by seller.
+- B, C, D wrong: Implied warranties are different; express can be disclaimed.
+- Exam-takeaway: Express = explicit; implied = default under UCC.
+
+**Q44. A.** Implied warranty of merchantability = fit for ordinary purpose.
+- B, C, D wrong: Stronger than UCC standard.
+- Exam-takeaway: Ordinary-purpose fit is the baseline.
+
+**Q45. B.** Negotiation → mediation → arbitration → litigation.
+- A wrong: Litigation last, not first.
+- C, D wrong: Force majeure and termination are different topics.
+- Exam-takeaway: Escalate up the dispute ladder.
+
+**Q46. B.** Mediation non-binding; arbitration binding.
+- A, C, D wrong: Definitions reversed or wrong.
+- Exam-takeaway: Mediation suggests; arbitration decides.
+
+**Q47. B.** SLA without consequences = a wish.
+- A, C, D wrong: Unenforceable wishes aren't SLAs.
+- Exam-takeaway: Credits/penalties are what convert metrics into contractual obligations.
+
+**Q48. B.** Nibble = small concessions at the end.
+- A, C, D wrong: Different tactics.
+- Exam-takeaway: Counter nibbles by trading, not conceding.
+
+**Q49. A.** Decline + disclose + document per policy.
+- B, C, D wrong: Accepting any form of significant-value gift during active negotiation violates ISM ethics.
+- Exam-takeaway: When gifts appear, the answer is almost always decline + document.
+
+**Q50. D.** SRM = lifecycle management for value + risk.
+- A, B, C wrong: Subsets, not the full definition.
+- Exam-takeaway: SRM is post-award, end-to-end, balanced.
+
+**Q51. C.** Tier-1 strategic = 1-5% of suppliers, 30-50% of spend.
+- A, B, D wrong: Wrong proportions.
+- Exam-takeaway: Pareto applies — concentrate effort where impact lives.
+
+**Q52. B.** Balanced scorecard = Q + C + D + S + Innovation + ESG + Risk.
+- A, C, D wrong: Single-axis metrics aren't balanced.
+- Exam-takeaway: Modern scorecards span multiple dimensions.
+
+**Q53. B.** Initiate supplier development for fixable strategic-supplier gaps.
+- A wrong: Termination is the last resort.
+- C wrong: Cutting volumes punishes without fixing.
+- D wrong: Silence is unprofessional.
+- Exam-takeaway: Strategic + fixable → invest.
+
+**Q54. D.** QBR = Quarterly Business Review.
+- A, B, C wrong: Wrong terms.
+- Exam-takeaway: Tier-1 governance event.
+
+**Q55. D.** All recognized (MBE, WBE, SDVOSB).
+- A, B, C are each correct individually; D captures all.
+- Exam-takeaway: US diversity categories are well-defined.
+
+**Q56. C.** Tier-2 = diverse spend by your primary suppliers.
+- A, B, D wrong: Different concepts.
+- Exam-takeaway: Tier-2 reporting traces diversity through your supply chain.
+
+**Q57. C.** Don't develop a Tier-3 with fundamental gap and many alternatives.
+- A, B, D wrong: All conditions where development IS appropriate.
+- Exam-takeaway: Development is for strategic, fixable, willing partners.
+
+**Q58. A.** Escalate one level: category manager ↔ supplier sales director.
+- B wrong: Skipping levels to CEO damages the relationship.
+- C wrong: Immediate termination is disproportionate.
+- D wrong: Ignoring fails the business.
+- Exam-takeaway: Use the escalation ladder rung by rung.
+
+**Q59. C.** Spend analysis → segment → deep SRM only on Tier 1.
+- A, B, D wrong: Boil-the-ocean approaches that fail with limited resources.
+- Exam-takeaway: Pareto + tier = focus.
+
+**Q60. C.** First-article + quality + financial audits.
+- A wrong: No checks = malpractice.
+- B wrong: Strategic tier comes with track record.
+- D wrong: Daily POs aren't qualification.
+- Exam-takeaway: Qualify before scale-up.
+
+**Q61. B.** PPM = parts per million defects.
+- A, C, D wrong: Wrong meanings.
+- Exam-takeaway: Standard automotive/manufacturing quality unit.
+
+**Q62. C.** Engage remediation per ISM principles + escalate + document + prepare contractual action.
+- A, B, D wrong: Quiet switching, ignoring, or quiet cuts violate ISM ethics.
+- Exam-takeaway: Module 7 reinforces — there are no "minor" labor violations.
+
+**Q63. D.** RED = PIP + possible dual-source in parallel.
+- A wrong: Hoping isn't a plan.
+- B wrong: Unilateral pricing changes violate contract.
+- C wrong: Immediate switch with no plan creates supply risk.
+- Exam-takeaway: Address root cause AND protect supply.
+
+**Q64. B.** Risk-based audit frequency.
+- A wrong: Uniform audits waste effort.
+- C wrong: Full outsourcing loses control.
+- D wrong: Discontinuation = governance failure.
+- Exam-takeaway: Audit depth matches supplier risk.
+
+**Q65. B.** Standard corrective action; don't over-invest in Tier-3.
+- A wrong: Tier-3 doesn't warrant deep development.
+- C wrong: Don't promote without evidence.
+- D wrong: Don't ignore.
+- Exam-takeaway: Match SRM investment to tier.
+
+**Q66. D.** US federal contracts + many large enterprise customers require tier-2 diversity reporting.
+- A, B, C wrong: Wrong scopes.
+- Exam-takeaway: This is regulatory + buyer-driven, not universal.
+
+**Q67. C.** Vested sourcing = outcome-based, win-win, shared incentives.
+- A, B, D wrong: Misunderstandings of Vitasek's model.
+- Exam-takeaway: Vested ≠ traditional fixed-price/cost-plus.
+
+**Q68. B.** Structured transition: dual-source 6-12 months + knowledge transfer.
+- A, C, D wrong: Damage relationships and supply.
+- Exam-takeaway: Even exits should be managed transitions.
+
+**Q69. B.** Exec sponsorship + QBRs + escalation = Tier-1 governance.
+- A, C, D wrong: Tactical, not governance.
+- Exam-takeaway: Strategic suppliers need strategic governance.
+
+**Q70. A.** Treating every supplier as strategic dilutes resources.
+- B, C, D wrong: Not best practice; doesn't increase leverage or reduce cost.
+- Exam-takeaway: Tiering exists for a reason.
+
+**Q71. A.** Develop alternate source + design around + multi-year contract + explore make-or-buy.
+- B wrong: Pay-and-move-on accepts vulnerability.
+- C wrong: Litigation rarely solves commercial disputes.
+- D wrong: Stopping production is self-harm.
+- Exam-takeaway: Strategic response to sole-source extortion is structural, not transactional.
+
+**Q72. B.** Profile category + internal demand is Step 1 of the 7-step process.
+- A, C, D wrong: Later steps.
+- Exam-takeaway: You can't sourcing-strategize blind.
+
+**Q73. A.** Decline + explain + escalate + document.
+- B, C, D wrong: Each compromises process integrity.
+- Exam-takeaway: Personal-friend pressure scenarios are textbook ethics tests.
+
+**Q74. D.** Recuse + disclose + transfer the decision.
+- A, B, C wrong: Continuing or resigning or awarding to the conflicted party all fail.
+- Exam-takeaway: Conflict of interest → recuse + disclose.
+
+**Q75. B.** Performance specs say WHAT, not HOW.
+- A, C, D wrong: Wrong characterizations.
+- Exam-takeaway: Performance leaves room for innovation.
+
+**Q76. C.** Spend analysis to understand current state.
+- A, B, D wrong: Action before diagnosis.
+- Exam-takeaway: Visibility first, always.
+
+**Q77. C.** Indemnification = third-party liability allocation.
+- A wrong: Limitation of liability caps damages.
+- B wrong: Warranty is performance promise.
+- D wrong: Force majeure excuses performance.
+- Exam-takeaway: Indemnification is *who pays the third party*.
+
+**Q78. A.** Refuse + return/destroy + document + remind of confidentiality.
+- B, C, D wrong: Each is some form of using stolen information.
+- Exam-takeaway: Misappropriated competitive info is poison.
+
+**Q79. D.** Explain dispute risk; phased T&M for discovery → fixed-price post-scope.
+- A wrong: Fixed-price on undefined scope = guaranteed dispute.
+- B wrong: Hiding contract types from the CFO is ethics failure.
+- C wrong: Refusing engagement abandons the business.
+- Exam-takeaway: Educate stakeholders; design phased contracts.
+
+**Q80. D.** Decline + cite finance/audit policy + escalate.
+- A, B, C wrong: Backdating is finance fraud, period.
+- Exam-takeaway: Date-shifting POs is never OK regardless of motive.
+
+---
+
 ➡️ When ready: **Continue to Modules 5–8**, then [Practice Exam 2](./Practice-Exam-2.md) (125 Q / 135 min).

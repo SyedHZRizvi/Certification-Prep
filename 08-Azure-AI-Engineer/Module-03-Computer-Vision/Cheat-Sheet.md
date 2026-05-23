@@ -136,4 +136,48 @@ If you can answer all 5 in 60 seconds, you own Module 3. ✅
 
 ---
 
+## 🧮 Metric Cheat — Classification vs Detection
+
+| Metric | Classification | Object Detection |
+|---|---|---|
+| Precision | ✅ TP ÷ (TP+FP) | ✅ Per-class |
+| Recall | ✅ TP ÷ (TP+FN) | ✅ Per-class |
+| F1 | ✅ Harmonic mean | (rarely cited) |
+| mAP | ❌ | ✅ Mean of per-class AP across IoU thresholds |
+| IoU | ❌ | ✅ Intersection-over-Union for box overlap |
+
+## 🛫 Compact Export Targets (memorize)
+
+| Target | Use case |
+|---|---|
+| **ONNX** | Cross-platform inference (Python, .NET, JS) |
+| **TensorFlow / SavedModel** | TF-based pipelines |
+| **CoreML** | iOS / iPadOS apps |
+| **Docker (Linux/Windows/ARM)** | Containerised edge devices, Raspberry Pi |
+
+(PowerPoint and PDF are *not* export targets.)
+
+## 🛡️ Regulatory Snapshot — Vision
+
+| Regulation | What it does for Vision |
+|---|---|
+| **EU AI Act Article 5** (2024) | Bans untargeted biometric scraping; restricts public-space biometric surveillance |
+| **EU AI Act Annex III** (2024) | "High-risk" tier: workplace biometric ID, emotion at work |
+| **Microsoft RAI Standard v2** (2022) | Drove Face emotion / age / gender retirement |
+| **GDPR Articles 9 + 22** | Biometric special-category data + automated-decision protection |
+| **Illinois BIPA** (2008) | US state biometric consent law (referenced in US deployments) |
+
+## 📐 Case-Study Pattern
+
+| Scenario | Service combo |
+|---|---|
+| Factory defect QC (edge, low latency) | Custom Vision Compact + ONNX export |
+| Retail shelf compliance | Custom Vision object detection |
+| ID document KYC | Document Intelligence prebuilt ID |
+| Dealer-bay service video | Video Indexer |
+| Workplace PPE compliance (EU) | Custom Vision object detection (no Face) |
+| Driver attention (cabin) | Speech + carefully scoped Vision (avoid biometrics) |
+
+---
+
 ➡️ [Module 4: NLP](../Module-04-Natural-Language-Processing/Reading.md)

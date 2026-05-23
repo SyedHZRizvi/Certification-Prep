@@ -6,7 +6,7 @@
 
 ## Questions
 
-### Q1. How many Incoterms are in the 2020 set?
+### Q1. How many Incoterms are in the 2020 set? *(Remember)*
 A. 7
 B. 9
 C. 11
@@ -14,7 +14,7 @@ D. 13
 
 ---
 
-### Q2. Under EXW, the buyer is responsible for:
+### Q2. Under EXW, the buyer is responsible for: *(Remember)*
 A. Nothing
 B. Everything from the seller's door
 C. Only ocean freight
@@ -22,7 +22,7 @@ D. Only insurance
 
 ---
 
-### Q3. Under DDP, the seller is responsible for:
+### Q3. Under DDP, the seller is responsible for: *(Remember)*
 A. Loading only
 B. Almost everything including import customs and duties
 C. Only export customs
@@ -30,7 +30,7 @@ D. Only the bill of lading
 
 ---
 
-### Q4. The Incoterm that replaced DAT in 2020 is:
+### Q4. The Incoterm that replaced DAT in 2020 is: *(Remember)*
 A. DAP
 B. DDP
 C. DPU
@@ -38,7 +38,7 @@ D. CIP
 
 ---
 
-### Q5. FOB applies to:
+### Q5. FOB applies to: *(Remember)*
 A. Any mode of transport
 B. Sea and inland waterway only
 C. Air only
@@ -46,7 +46,7 @@ D. Trucking only
 
 ---
 
-### Q6. Under CIP (Incoterms 2020), the seller must buy:
+### Q6. Under CIP (Incoterms 2020), the seller must buy: *(Remember)*
 A. Minimum insurance
 B. All-risk insurance for the buyer's benefit
 C. No insurance
@@ -54,7 +54,7 @@ D. Buyer's choice
 
 ---
 
-### Q7. Under CIF, the seller must buy:
+### Q7. Under CIF, the seller must buy: *(Remember)*
 A. All-risk insurance
 B. Minimum insurance
 C. No insurance
@@ -62,7 +62,7 @@ D. Cyber insurance
 
 ---
 
-### Q8. FCPA primarily prohibits:
+### Q8. FCPA primarily prohibits: *(Understand)*
 A. Domestic price-fixing
 B. Bribery of foreign government officials
 C. Private-sector bribery
@@ -70,7 +70,7 @@ D. Trade secret theft
 
 ---
 
-### Q9. UK Bribery Act 2010 differs from FCPA in that it:
+### Q9. UK Bribery Act 2010 differs from FCPA in that it: *(Understand)*
 A. Is narrower
 B. Includes private-sector bribery and a "failure to prevent" corporate offense
 C. Allows facilitation payments freely
@@ -78,7 +78,7 @@ D. Applies only inside the UK
 
 ---
 
-### Q10. OFAC is responsible for:
+### Q10. OFAC is responsible for: *(Remember)*
 A. Export controls of defense articles
 B. US economic and trade sanctions
 C. Tariff classifications
@@ -86,7 +86,7 @@ D. Letters of credit
 
 ---
 
-### Q11. ITAR regulates:
+### Q11. ITAR regulates: *(Remember)*
 A. Civilian commercial goods
 B. Defense articles and services
 C. Agricultural exports
@@ -94,7 +94,7 @@ D. Currency conversions
 
 ---
 
-### Q12. USMCA replaced:
+### Q12. USMCA replaced: *(Remember)*
 A. CPTPP
 B. NAFTA
 C. RCEP
@@ -102,7 +102,7 @@ D. ASEAN
 
 ---
 
-### Q13. RCEP includes:
+### Q13. RCEP includes: *(Remember)*
 A. EU members
 B. 15 Asia-Pacific countries (ASEAN + China, Japan, Korea, Australia, NZ)
 C. North America
@@ -110,7 +110,7 @@ D. South America
 
 ---
 
-### Q14. A Certificate of Origin is required to:
+### Q14. A Certificate of Origin is required to: *(Understand)*
 A. Cancel a contract
 B. Claim preferential tariff rates under an FTA
 C. Initiate a letter of credit
@@ -118,7 +118,7 @@ D. Trigger force majeure
 
 ---
 
-### Q15. Transaction FX exposure refers to:
+### Q15. Transaction FX exposure refers to: *(Understand)*
 A. Long-term competitiveness shifts
 B. The specific contract price moving between contracting and paying
 C. Translation of subsidiary financials
@@ -126,7 +126,7 @@ D. Bank fee variability
 
 ---
 
-### Q16. The MOST appropriate hedging stance for known foreign-currency contract exposure is to:
+### Q16. The MOST appropriate hedging stance for known foreign-currency contract exposure is to: *(Apply)*
 A. Speculate against the supplier's currency
 B. Hedge the known exposure using a forward or option matched to payment date, executed by Treasury
 C. Don't hedge — wait it out
@@ -134,7 +134,7 @@ D. Pay supplier in your home currency (it eliminates FX risk)
 
 ---
 
-### Q17. A scenario: a sales agent in Country Z requests "a small facilitation payment to officials to clear customs faster." The MOST appropriate response under US/UK anti-corruption laws is:
+### Q17. A scenario: a sales agent in Country Z requests "a small facilitation payment to officials to clear customs faster." The MOST appropriate response under US/UK anti-corruption laws is: *(Evaluate)*
 A. Pay it; it's standard there
 B. Refuse, document, escalate per company policy; understand UK Bribery Act prohibits this
 C. Pay it but don't record it
@@ -142,7 +142,7 @@ D. Pay it through a third party
 
 ---
 
-### Q18. A Letter of Credit is BEST described as:
+### Q18. A Letter of Credit is BEST described as: *(Remember)*
 A. A direct payment from buyer to seller
 B. A bank-guaranteed payment instrument
 C. A force majeure clause
@@ -150,7 +150,7 @@ D. A type of insurance
 
 ---
 
-### Q19. The HIGHEST seller risk and LOWEST buyer risk payment method is:
+### Q19. The HIGHEST seller risk and LOWEST buyer risk payment method is: *(Analyze)*
 A. Cash in advance
 B. Letter of Credit
 C. Open account / consignment
@@ -158,7 +158,7 @@ D. Documentary collection
 
 ---
 
-### Q20. Hofstede's "power distance" measures:
+### Q20. Hofstede's "power distance" measures: *(Understand)*
 A. How far apart parties sit during negotiation
 B. Acceptance of unequal power distribution within a society
 C. Geographic distance
@@ -166,7 +166,7 @@ D. Currency strength
 
 ---
 
-### Q21. Japan is generally considered a:
+### Q21. Japan is generally considered a: *(Apply)*
 A. Low-context, individualistic, low-power-distance culture
 B. High-context, collectivist, moderately high-power-distance culture
 C. Low-context, masculine, indulgent culture
@@ -174,7 +174,7 @@ D. High-context, indulgent, individualistic culture
 
 ---
 
-### Q22. A scenario: an Incoterm "FOB Shenzhen" means risk transfers to the buyer:
+### Q22. A scenario: an Incoterm "FOB Shenzhen" means risk transfers to the buyer: *(Apply)*
 A. At the buyer's warehouse in Chicago
 B. When goods are loaded on the vessel at Shenzhen port
 C. When the seller signs the contract
@@ -182,7 +182,7 @@ D. When import duties are paid
 
 ---
 
-### Q23. A scenario: a US company sources from a supplier in a country with a high corruption perception index. The BEST mitigation is:
+### Q23. A scenario: a US company sources from a supplier in a country with a high corruption perception index. The BEST mitigation is: *(Create)*
 A. Refuse to do business with the country
 B. Contractual anti-corruption flow-downs + third-party due diligence + audits + training + payment controls
 C. Pay through a Cayman Islands intermediary
@@ -190,7 +190,7 @@ D. Ignore the risk if savings are large
 
 ---
 
-### Q24. A scenario: a buyer wants to "eliminate FX risk" by demanding the supplier invoice in USD. The MOST accurate observation is:
+### Q24. A scenario: a buyer wants to "eliminate FX risk" by demanding the supplier invoice in USD. The MOST accurate observation is: *(Evaluate)*
 A. FX risk is eliminated
 B. The FX risk is shifted to the supplier, who will likely price it into the unit cost — risk is shifted, not eliminated
 C. The supplier will absorb the loss
@@ -198,7 +198,7 @@ D. CISG forbids this
 
 ---
 
-### Q25. A scenario: a tariff on imported Chinese steel raises COGS 8%. The MOST appropriate procurement response includes:
+### Q25. A scenario: a tariff on imported Chinese steel raises COGS 8%. The MOST appropriate procurement response includes: *(Create)*
 A. Stop importing immediately
 B. Evaluate alternate sources (other countries, nearshoring), examine HTS classification accuracy, explore tariff engineering, and reassess TCO
 C. Forward all costs to customers without analysis
@@ -206,7 +206,7 @@ D. Demand the supplier absorb the tariff
 
 ---
 
-### Q26. The MOST ETHICAL response when an international supplier insists on a personal commission to "smooth the deal" is:
+### Q26. The MOST ETHICAL response when an international supplier insists on a personal commission to "smooth the deal" is: *(Evaluate)*
 A. Accept; it's customary
 B. Decline, document, escalate, and follow the ISM Principles of Sustainability & Social Responsibility plus FCPA / UK Bribery Act guidance
 C. Take the commission to ensure the deal closes

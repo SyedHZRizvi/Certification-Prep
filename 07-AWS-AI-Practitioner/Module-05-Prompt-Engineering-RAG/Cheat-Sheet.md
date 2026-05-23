@@ -123,6 +123,14 @@ Usually wrong:
 
 ---
 
+## 📚 Reference case (high-signal recall)
+
+| Case | What it proves |
+|------|----------------|
+| **Klarna's AI customer-service assistant (2024)** | FM + RAG + Agent + Guardrails + HITL fallback = the canonical enterprise GenAI architecture; ~2.3M conversations/month; ~700-agent equivalent |
+
+---
+
 ## ✏️ Quick Self-Check
 
 1. 5 prompting techniques + when to use each? ___

@@ -2,6 +2,12 @@
 
 > **Why this module matters:** CPSM is global. Roughly 10% of the exam tests Incoterms, FX, trade compliance, and cross-cultural negotiation. Get Incoterms 2020 cold — they're free points if memorized and certain misses if not.
 
+> **Prerequisites for this module.** Before starting, you should be comfortable with:
+> - [Module 3 — contracts and CISG](../Module-03-Negotiation-Contracts/Reading.md): international supply layers on the contract baseline
+> - [Module 5 — hedging](../Module-05-Cost-Management-TCO/Reading.md): FX is just one more commodity to hedge
+> - Cross-course: [ASCM CLTD Module 5 — International Logistics](../../12-ASCM-CLTD/Module-05-International-Logistics/Reading.md) for the logistics-side view of Incoterms and customs
+> If Module 3 is shaky, pause and review before continuing.
+
 ---
 
 ## 🚢 A Story: The Containers That Never Arrived
@@ -197,6 +203,8 @@ Tools: **Coface country risk ratings**, **Economist Intelligence Unit (EIU)**, *
 Cultural differences profoundly affect negotiation. Key models:
 
 ### Hofstede's Cultural Dimensions
+
+Geert Hofstede's six dimensions are the most-cited cultural framework in global business. Origin: *Culture's Consequences* (Hofstede, 1980, Sage; updated 2nd ed. 2001) plus *Cultures and Organizations: Software of the Mind* (Hofstede, Hofstede & Minkov, 3rd ed., 2010, McGraw-Hill).
 | Dimension | Examples |
 |---|---|
 | Power distance | High: India, China · Low: Denmark, NZ |
@@ -207,6 +215,8 @@ Cultural differences profoundly affect negotiation. Key models:
 | Indulgence vs restraint | High: Mexico · Low: Russia |
 
 ### Hall's High-Context vs Low-Context
+
+Edward T. Hall (*Beyond Culture*, 1976, Anchor) and *The Silent Language* (1959, Doubleday) — foundational anthropological frame still cited heavily in cross-cultural negotiation training.
 - **High-context** (much meaning implicit, relationships matter): Japan, China, Arab cultures, much of Latin America
 - **Low-context** (meaning explicit, words dominate): US, Germany, Scandinavia
 
@@ -248,6 +258,38 @@ Cultural differences profoundly affect negotiation. Key models:
 | **Consignment** | Lowest | Highest |
 
 🎯 **Exam tip:** New international suppliers often start with L/C or cash in advance; mature relationships move to open account.
+
+---
+
+## 📊 Case Study — USMCA, Tariffs, and Stanley Black & Decker Nearshoring (2020-2025)
+
+**Situation.** The **United States-Mexico-Canada Agreement (USMCA)** took effect on July 1, 2020, replacing NAFTA. The new pact tightened rules of origin (particularly for autos — requiring 75% regional value content, up from 62.5% under NAFTA, plus a 70% steel/aluminum content rule for vehicles and a $16/hour labor requirement for a significant share of vehicle content). Through 2024-2025, US tariff policy on Chinese goods escalated under Section 301 (10-25% on a moving list of HTS codes) and broader threatened tariff regimes pushed many US-headquartered manufacturers to re-evaluate Asia-only sourcing strategies.
+
+Stanley Black & Decker — the $14B tool, fastener, and storage manufacturer — had moved much of its Craftsman/DeWalt/Stanley production to China and Southeast Asia in the 2000s-2010s. By 2022, ~50% of its product cost came from China, and Section 301 tariffs were dragging operating margin by ~250 basis points.
+
+**Decision.** Starting in late 2022, Stanley's supply leadership executed a multi-prong nearshoring + reshoring program:
+1. **Mexico ramp-up under USMCA.** Stanley invested in new facilities and qualified Mexican Tier-1 suppliers; finished goods produced in Mexico from USMCA-qualifying inputs enter the US **tariff-free** with a proper Certificate of Origin.
+2. **Reshoring of high-mix US production.** Stanley invested $90M in a Fort Worth, Texas, DeWalt facility (announced 2021, operational 2023).
+3. **Selective retention in China** for items where the labor-cost arbitrage still exceeded tariff + freight + risk premiums.
+4. **HTS classification optimization** — formally re-classifying products with US Customs and Border Protection (CBP) to legitimately apply lower-duty codes where the new product engineering justified it ("tariff engineering").
+5. **Working-capital deployment** — Stanley publicly cited $1.5B in 2023 cost actions, of which a meaningful share was procurement-driven.
+
+Hasbro (toys) ran a parallel playbook: shifting toy production from China to Vietnam, India, and Mexico over 2022-2025, partly under USMCA and partly under other FTAs. Hasbro CEO Chris Cocks publicly said in 2024 that less than 50% of US-bound toys would come from China by 2025, down from ~67% in 2022.
+
+**Outcome.** Stanley reduced China cost-of-goods exposure from ~50% to ~35% by 2024. Operating margin recovered. The reshoring wave was real: US **construction spending on manufacturing facilities** rose from ~$80B/year (2019) to ~$240B/year by mid-2024 (US Census data) — much of it driven by CHIPS Act subsidies but also by the broader nearshoring thesis. By 2025, Mexico had surpassed China as the **#1 source of US imports** (calendar 2023 first, sustained through 2024).
+
+**Lesson for the exam / for practitioners.** This is the textbook **FTA + tariff response**:
+- **Certificate of Origin work** under USMCA is non-negotiable — without it, the preferential tariff is lost.
+- **Tariff engineering** (legitimately reclassifying products to apply different HTS codes) is a legitimate supply lever and a 2024-2026 hot topic.
+- **Nearshoring is not always the right answer** — Stanley kept selected China production where the economics still worked.
+- **The risk-adjusted TCO** (Module 5) must include political risk: tariff regimes shift politically, and a 4-year payback assumption can be invalidated overnight.
+
+When a CPSM scenario asks "BEST response to a new tariff regime," the answer is almost never "absorb the cost" or "demand the supplier absorb." It's "reassess HTS classifications, evaluate FTA alternatives, run a fresh make-or-buy with full TCO, and stage geographic diversification."
+
+**Discussion (Socratic).**
+- Q1: Stanley's reshoring move added US labor at $30+/hour to replace Chinese labor at $7/hour. Defend the move on TCO grounds. Then attack it. What's the tariff-rate breakpoint that flips the math?
+- Q2: USMCA's $16/hour labor requirement for autos was designed to bring manufacturing back to the US, but it actually drove growth in Mexican border-region facilities (where $16/hour is competitive). What's the *unintended consequence* lesson for supply leaders?
+- Q3: Hasbro pivoted to Vietnam, India, and Mexico simultaneously. What's the trade-off of diversifying across *three* low-cost countries versus concentrating in *one*, and would you replicate the strategy for a $14B tool manufacturer?
 
 ---
 
@@ -303,6 +345,16 @@ Cultural differences profoundly affect negotiation. Key models:
 
 ---
 
+## 💬 Discussion — Socratic Prompts
+
+1. **Red Sea / Houthi disruption (2023-2024).** From November 2023 onward, Houthi missile attacks forced shipping companies to reroute around the Cape of Good Hope, adding 10-14 days and ~$1M/voyage in fuel. Defend the position that buyers should accept the delay (and renegotiate delivery terms) versus reroute aggressively (and pay the premium). What changes the answer?
+2. **Invoice in your own currency — really?** The textbook says invoicing in your home currency "doesn't eliminate FX risk; supplier prices it in." Build the case that for *some* categories and *some* suppliers, invoicing in your currency really does deliver meaningful net savings. Where does it work, where does it fail?
+3. **The 2026 FCPA reform debate.** As of 2026, the SEC and DOJ have signaled stricter FCPA enforcement on supply chains (particularly through Tier-2/Tier-3 visibility expectations under EU CSDDD). Argue whether the practical effect will be (a) more rigorous global compliance, or (b) selective exits from high-risk countries entirely.
+4. **Cross-cultural negotiation in remote-meeting era.** Hofstede's framework predates global video calls. Build the case that Zoom/Teams negotiation flattens cultural dimensions versus the case that it amplifies them. Which would you defend at an ISM World keynote?
+5. **The Mexico vs Vietnam vs India choice.** A US buyer evaluating a $50M annual electronics-assembly category has three plausible alternatives to China: Mexico (USMCA tariff-free), Vietnam (CPTPP, low labor cost, but ocean shipping), India (largest workforce, growing capability, but customs friction). Pick one as the BEST default and argue why; defend against the other two.
+
+---
+
 ## ✅ Module 6 Summary
 
 You now know:
@@ -322,13 +374,20 @@ You now know:
 3. 📋 [Cheat-Sheet](./Cheat-Sheet.md)
 4. ➡️ [Module 7: Risk, Compliance & Ethics](../Module-07-Risk-Compliance-Ethics/Reading.md)
 
+> **Where this leads.**
+> - Inside this course: Module 7 layers compliance, modern slavery, and the broader risk taxonomy on the international foundation here; Module 8 covers the leadership and cross-functional engagement required to land an international transformation.
+> - Cross-course: [ASCM CLTD Module 5 — International Logistics](../../12-ASCM-CLTD/Module-05-International-Logistics/Reading.md) covers Incoterms and customs from the logistics-operations side.
+> - Practice: Practice Exam 2 has ~17 questions drawn from this module (Incoterms, FTAs, FX, FCPA/UK Bribery, payment methods).
+
 ---
 
 ## 📚 Further Reading (Optional)
 
-- 📖 *Incoterms 2020* (full text from ICC) — buy from store.iccwbo.org
-- 📖 *International Logistics* by Pierre David
-- 📖 US Treasury OFAC website — current sanctions
-- 📖 *Culture's Consequences* by Geert Hofstede
-- 📖 Transparency International Corruption Perceptions Index (annual)
-- 📖 World Trade Organization website (FTA registry)
+- 📖 *Incoterms 2020* (full text from ICC) — buy from store.iccwbo.org; supersedes Incoterms 2010
+- 📖 *International Logistics* by Pierre David (4th ed., 2017, Cicero Books)
+- 📖 US Treasury OFAC website (home.treasury.gov/policy-issues/financial-sanctions) — current sanctions and SDN list
+- 📖 Hofstede, Hofstede & Minkov, *Cultures and Organizations: Software of the Mind*, 3rd ed. (McGraw-Hill, 2010)
+- 📖 Hall, *Beyond Culture* (1976, Anchor) — high/low context origin
+- 📖 Transparency International *Corruption Perceptions Index* (transparency.org/cpi) — annual
+- 📖 World Trade Organization website (wto.org) — FTA registry and dispute database
+- 📖 Christopher, *Logistics & Supply Chain Management*, 5th ed. (2016, FT Publishing) — global supply chain integration

@@ -120,6 +120,14 @@ Usually wrong:
 
 ---
 
+## 📚 Reference case (high-signal recall)
+
+| Case | What it proves |
+|------|----------------|
+| **Pinterest's MLOps on SageMaker (2020–2024)** | Managed-platform-beats-bespoke: Pipelines + Registry + Feature Store + Spot training → 50 models → 300+ models, time-to-prod 3 weeks → 3–5 days, 60% cost reduction |
+
+---
+
 ## ✏️ Quick Self-Check
 
 1. List the 7 lifecycle stages. ___

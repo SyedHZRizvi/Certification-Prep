@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~70 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+S3+complete+overview+Stephane+Maarek" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="6oYJTyggbfM" href="https://www.youtube.com/results?search_query=AWS+S3+complete+overview+Stephane+Maarek" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🪣</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 22 min · The foundation</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+S3+storage+classes+explained+Tutorials+Dojo" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="LP_KT6U73M0" href="https://www.youtube.com/results?search_query=AWS+S3+storage+classes+explained+Tutorials+Dojo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>📊</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 18 min · 7 classes, when to use</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=S3+encryption+SSE-KMS+SSE-S3+SSE-C" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="g2Wod2has2g" href="https://www.youtube.com/results?search_query=S3+encryption+SSE-KMS+SSE-S3+SSE-C" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🔐</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 15 min · Key management options</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=S3+replication+CRR+SRR+demo" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="trmicgGpmd4" href="https://www.youtube.com/results?search_query=S3+replication+CRR+SRR+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🌍</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~40 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=S3+presigned+URL+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="V2arOZ72d6M" href="https://www.youtube.com/results?search_query=S3+presigned+URL+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🔗</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 12 min · Temporary access</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=S3+object+lock+governance+compliance" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="TH2vngv-lC8" href="https://www.youtube.com/results?search_query=S3+object+lock+governance+compliance" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🔒</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 14 min · WORM made simple</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=S3+CloudFront+OAC+private+bucket" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="KtWFGnB_dOs" href="https://www.youtube.com/results?search_query=S3+CloudFront+OAC+private+bucket" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🚀</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=S3+Transfer+Acceleration+demo" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="J2CVnmUWSi4" href="https://www.youtube.com/results?search_query=S3+Transfer+Acceleration+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>⚡</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 12 min · Fast global uploads</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=S3+Select+SQL+demo" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="yqJwN8EBCw8" href="https://www.youtube.com/results?search_query=S3+Select+SQL+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🔎</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 15 min · Skip the full download</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=S3+Access+Points+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="O_N7ebzSe1g" href="https://www.youtube.com/results?search_query=S3+Access+Points+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎫</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

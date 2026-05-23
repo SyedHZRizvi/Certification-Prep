@@ -7,157 +7,157 @@
 
 ## Questions
 
-### Q1. Which is NOT one of the 6 functions of inventory?
+### Q1. Which is NOT one of the 6 functions of inventory? *(Remember)*
 A. Cycle (lot-size)
 B. Anticipation
 C. Transit (pipeline)
 D. Marketing display
 
-### Q2. WIP held between two work centers running at different speeds is BEST classified as:
+### Q2. WIP held between two work centers running at different speeds is BEST classified as: *(Apply)*
 A. Cycle inventory
 B. Decoupling inventory
 C. Anticipation inventory
 D. Hedge inventory
 
-### Q3. Building toys in summer for Christmas sales is:
+### Q3. Building toys in summer for Christmas sales is: *(Apply)*
 A. Cycle inventory
 B. Safety inventory
 C. Anticipation inventory
 D. Transit inventory
 
-### Q4. The EOQ formula is:
+### Q4. The EOQ formula is: *(Remember)*
 A. √(2DS/H)
 B. 2D/SH
 C. √(DH/2S)
 D. D × S / H
 
-### Q5. Given D = 8,000 units/yr, S = $25/order, H = $4/unit/yr, EOQ is:
+### Q5. Given D = 8,000 units/yr, S = $25/order, H = $4/unit/yr, EOQ is: *(Apply)*
 A. 200
 B. 283
 C. 316
 D. 400
 
-### Q6. Given D = 10,000, S = $50, H = $2, EOQ is approximately:
+### Q6. Given D = 10,000, S = $50, H = $2, EOQ is approximately: *(Apply)*
 A. 500
 B. 707
 C. 1,000
 D. 1,414
 
-### Q7. EPQ is larger than EOQ because:
+### Q7. EPQ is larger than EOQ because: *(Understand)*
 A. Setup cost is included twice
 B. While producing, demand is also drawing down inventory (so max stock is lower than the lot size)
 C. EPQ ignores holding cost
 D. EPQ is for raw materials only
 
-### Q8. Reorder Point formula:
+### Q8. Reorder Point formula: *(Remember)*
 A. ROP = d × LT + Safety Stock
 B. ROP = EOQ + SS
 C. ROP = Demand × Turnover
 D. ROP = Lead time only
 
-### Q9. Daily demand = 80, lead time = 7 days, safety stock = 200. ROP =
+### Q9. Daily demand = 80, lead time = 7 days, safety stock = 200. ROP = *(Apply)*
 A. 360
 B. 480
 C. 560
 D. 760
 
-### Q10. σ_LT (standard deviation of demand over the lead time) under independence is:
+### Q10. σ_LT (standard deviation of demand over the lead time) under independence is: *(Remember)*
 A. σ_daily × LT
 B. σ_daily × √LT
 C. σ_daily / √LT
 D. σ_daily × LT²
 
-### Q11. For 95% service level the z-value is:
+### Q11. For 95% service level the z-value is: *(Remember)*
 A. 1.00
 B. 1.28
 C. 1.65
 D. 1.96
 
-### Q12. σ_daily = 10, LT = 9 days, 95% service level. Safety Stock =
+### Q12. σ_daily = 10, LT = 9 days, 95% service level. Safety Stock = *(Apply)*
 A. 30
 B. 50
 C. 49.5
 D. 90
 
-### Q13. Inventory carrying cost typically includes:
+### Q13. Inventory carrying cost typically includes: *(Remember)*
 A. Capital cost, storage, insurance, obsolescence
 B. Sales commissions
 C. Marketing budget
 D. R&D spending
 
-### Q14. ABC analysis classifies items by:
+### Q14. ABC analysis classifies items by: *(Remember)*
 A. SKU number
 B. Dollar volume (annual cost × annual usage)
 C. Physical size
 D. Supplier name
 
-### Q15. A items in a typical ABC are about:
+### Q15. A items in a typical ABC are about: *(Remember)*
 A. 10–20% of SKUs and 70–80% of dollar volume
 B. 50% of SKUs and 50% of dollar volume
 C. 80% of SKUs and 80% of dollar volume
 D. 1% of SKUs and 1% of dollar volume
 
-### Q16. The recommended cycle-count frequency for A items is approximately:
+### Q16. The recommended cycle-count frequency for A items is approximately: *(Understand)*
 A. Annually
 B. Quarterly
 C. Monthly (or more frequently)
 D. Once every 5 years
 
-### Q17. Inventory Record Accuracy (IRA) for A items should target:
+### Q17. Inventory Record Accuracy (IRA) for A items should target: *(Understand)*
 A. 80%
 B. 90%
 C. 95%+
 D. 50%
 
-### Q18. Inventory turnover = COGS / Avg inventory. If COGS = $30M and avg inventory = $5M, turnover is:
+### Q18. Inventory turnover = COGS / Avg inventory. If COGS = $30M and avg inventory = $5M, turnover is: *(Apply)*
 A. 3
 B. 5
 C. 6
 D. 15
 
-### Q19. With a turnover of 8, days of supply is approximately:
+### Q19. With a turnover of 8, days of supply is approximately: *(Apply)*
 A. 8
 B. 36
 C. 46
 D. 365
 
-### Q20. Vendor-Managed Inventory (VMI) means:
+### Q20. Vendor-Managed Inventory (VMI) means: *(Remember)*
 A. The customer manages the supplier's inventory
 B. The supplier manages the customer's inventory level (customer usually still owns the inventory)
 C. A third party holds inventory
 D. The CFO manages all inventory
 
-### Q21. Consignment inventory means:
+### Q21. Consignment inventory means: *(Understand)*
 A. Supplier owns the inventory while it's at the customer's site, until consumed
 B. Customer owns the inventory immediately upon delivery
 C. Inventory in transit
 D. Bonded warehouse stock
 
-### Q22. EOQ assumes all of the following EXCEPT:
+### Q22. EOQ assumes all of the following EXCEPT: *(Analyze)*
 A. Constant demand
 B. Constant lead time
 C. Whole order arrives at once
 D. Quantity discounts
 
-### Q23. A perishable product is BEST issued using:
+### Q23. A perishable product is BEST issued using: *(Apply)*
 A. LIFO
 B. FIFO
 C. Weighted Average
 D. Standard Cost
 
-### Q24. JIT (Just-in-Time) impacts safety stock by:
+### Q24. JIT (Just-in-Time) impacts safety stock by: *(Understand)*
 A. Increasing it
 B. Reducing it through reliability + small batches
 C. Eliminating it entirely
 D. Making it irrelevant
 
-### Q25. A plant currently has 60 days of supply and wants to reduce to 30 days. What must change?
+### Q25. A plant currently has 60 days of supply and wants to reduce to 30 days. What must change? *(Evaluate)*
 A. Increase turnover (e.g., smaller batches, faster replenishment)
 B. Decrease turnover
 C. Increase carrying cost
 D. Increase safety stock
 
-### Q26. A supplier offers a 4% price break at 5,000 units. EOQ comes out to 2,800. The MOST APPROPRIATE next step:
+### Q26. A supplier offers a 4% price break at 5,000 units. EOQ comes out to 2,800. The MOST APPROPRIATE next step: *(Evaluate)*
 A. Order EOQ of 2,800
 B. Order 5,000 and compute total cost; compare to EOQ total cost
 C. Order 100,000

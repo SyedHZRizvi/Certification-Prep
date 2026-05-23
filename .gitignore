@@ -17,3 +17,14 @@ desktop.ini
 _site/
 .jekyll-cache/
 .sass-cache/
+
+# Local Jekyll preview tooling (created by start-preview.sh)
+.bundle/
+vendor/
+
+# Dev workspace artifacts — not for production
+_dev/backup-practice-exams/
+_dev/Gemfile.disabled
+
+# Sentinel marking this clone as preview-only
+.preview-marker

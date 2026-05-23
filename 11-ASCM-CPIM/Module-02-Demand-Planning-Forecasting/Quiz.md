@@ -7,7 +7,7 @@
 
 ## Questions
 
-### Q1. Which is NOT one of the four classical components of demand?
+### Q1. Which is NOT one of the four classical components of demand? *(Remember)*
 A. Trend
 B. Cyclical
 C. Seasonal
@@ -15,7 +15,7 @@ D. Inventory
 
 ---
 
-### Q2. A product's sales double every December and halve every February. This pattern is BEST described as:
+### Q2. A product's sales double every December and halve every February. This pattern is BEST described as: *(Apply)*
 A. Trend
 B. Cyclical
 C. Seasonal
@@ -23,7 +23,7 @@ D. Random
 
 ---
 
-### Q3. A 4-month simple moving average is being computed. Demand for Jan–Apr was 80, 90, 100, 110. The forecast for May is:
+### Q3. A 4-month simple moving average is being computed. Demand for Jan–Apr was 80, 90, 100, 110. The forecast for May is: *(Apply)*
 A. 90
 B. 95
 C. 100
@@ -31,7 +31,7 @@ D. 110
 
 ---
 
-### Q4. A weighted moving average forecast is computed for the next month using demand of 100, 120, 140 and weights 0.2, 0.3, 0.5 (oldest to newest). The forecast is:
+### Q4. A weighted moving average forecast is computed for the next month using demand of 100, 120, 140 and weights 0.2, 0.3, 0.5 (oldest to newest). The forecast is: *(Apply)*
 A. 118
 B. 122
 C. 126
@@ -39,7 +39,7 @@ D. 130
 
 ---
 
-### Q5. Exponential smoothing formula: F_(t+1) = α·D_t + (1−α)·F_t. If α = 0.3, F_t = 200, and D_t = 240, then F_(t+1) is:
+### Q5. Exponential smoothing formula: F_(t+1) = α·D_t + (1−α)·F_t. If α = 0.3, F_t = 200, and D_t = 240, then F_(t+1) is: *(Apply)*
 A. 208
 B. 212
 C. 216
@@ -47,7 +47,7 @@ D. 224
 
 ---
 
-### Q6. Increasing the smoothing constant α makes the forecast:
+### Q6. Increasing the smoothing constant α makes the forecast: *(Understand)*
 A. More smooth
 B. Slower to respond to actual demand
 C. More responsive to recent demand and noise
@@ -55,7 +55,7 @@ D. Less affected by recent demand
 
 ---
 
-### Q7. Which forecasting method is BEST when a brand-new product has zero sales history?
+### Q7. Which forecasting method is BEST when a brand-new product has zero sales history? *(Apply)*
 A. Simple moving average
 B. Exponential smoothing
 C. Delphi method
@@ -63,7 +63,7 @@ D. Linear regression on past sales
 
 ---
 
-### Q8. MAD stands for:
+### Q8. MAD stands for: *(Remember)*
 A. Mean Aggregate Deviation
 B. Mean Absolute Deviation
 C. Median Aggregate Difference
@@ -71,7 +71,7 @@ D. Maximum Allowable Deviation
 
 ---
 
-### Q9. Given the following errors: -10, +5, +10, -20, +5 — what is the MAD?
+### Q9. Given the following errors: -10, +5, +10, -20, +5 — what is the MAD? *(Apply)*
 A. -2
 B. 5
 C. 10
@@ -79,7 +79,7 @@ D. 50
 
 ---
 
-### Q10. Using the same errors (-10, +5, +10, -20, +5) — what is the cumulative bias (sum of errors)?
+### Q10. Using the same errors (-10, +5, +10, -20, +5) — what is the cumulative bias (sum of errors)? *(Apply)*
 A. 50
 B. 0
 C. -10
@@ -87,7 +87,7 @@ D. +10
 
 ---
 
-### Q11. MAPE expresses forecast error as:
+### Q11. MAPE expresses forecast error as: *(Remember)*
 A. A percentage of demand
 B. Absolute units
 C. Squared deviations
@@ -95,7 +95,7 @@ D. A ratio of supply to demand
 
 ---
 
-### Q12. Tracking signal is calculated as:
+### Q12. Tracking signal is calculated as: *(Remember)*
 A. MAD ÷ Bias
 B. Bias ÷ MAD
 C. MAPE × n
@@ -103,7 +103,7 @@ D. MSE ÷ MAD
 
 ---
 
-### Q13. A tracking signal of +5.2 over many periods typically means:
+### Q13. A tracking signal of +5.2 over many periods typically means: *(Analyze)*
 A. The forecast is unbiased and accurate
 B. The forecast is consistently *under*-forecasting (positive bias indicates demand > forecast) — model should be revised
 C. The forecast is consistently over-forecasting
@@ -111,7 +111,7 @@ D. Random variation only
 
 ---
 
-### Q14. Which forecast metric most strongly penalizes large individual errors?
+### Q14. Which forecast metric most strongly penalizes large individual errors? *(Understand)*
 A. MAD
 B. MAPE
 C. MSE
@@ -119,7 +119,7 @@ D. Bias
 
 ---
 
-### Q15. The forecasting aggregation principle states that forecasts are:
+### Q15. The forecasting aggregation principle states that forecasts are: *(Understand)*
 A. Equally accurate at all levels of aggregation
 B. More accurate at higher aggregation and longer time buckets
 C. Most accurate at the daily SKU level
@@ -127,7 +127,7 @@ D. Most accurate at the shift × workstation level
 
 ---
 
-### Q16. CPFR stands for:
+### Q16. CPFR stands for: *(Remember)*
 A. Collaborative Planning, Forecasting & Replenishment
 B. Continuous Production, Forecasting & Review
 C. Cooperative Procurement, Forecasting & Reorder
@@ -135,7 +135,7 @@ D. Centralized Planning, Fulfillment & Reporting
 
 ---
 
-### Q17. The "bullwhip effect" describes:
+### Q17. The "bullwhip effect" describes: *(Remember)*
 A. Demand variability *decreasing* upstream in a supply chain
 B. Demand variability *amplifying* upstream in a supply chain
 C. Inventory shrinkage caused by theft
@@ -143,7 +143,7 @@ D. Random shocks at the manufacturing level
 
 ---
 
-### Q18. Which is a primary cause of the bullwhip effect?
+### Q18. Which is a primary cause of the bullwhip effect? *(Understand)*
 A. Sharing point-of-sale data with suppliers
 B. Order batching, promotions, and rationing
 C. Daily replenishment at retail
@@ -151,7 +151,7 @@ D. Vendor-managed inventory
 
 ---
 
-### Q19. Cyclical demand patterns are BEST distinguished from seasonal patterns by:
+### Q19. Cyclical demand patterns are BEST distinguished from seasonal patterns by: *(Understand)*
 A. Cyclical repeats *within* a year; seasonal repeats *across* years
 B. Cyclical repeats *across multiple years*; seasonal repeats *within* a year
 C. They are the same
@@ -159,7 +159,7 @@ D. Cyclical is irregular; seasonal is monthly
 
 ---
 
-### Q20. Which is a *qualitative* forecasting method?
+### Q20. Which is a *qualitative* forecasting method? *(Remember)*
 A. Exponential smoothing
 B. Weighted moving average
 C. Sales force composite
@@ -167,7 +167,7 @@ D. Linear regression
 
 ---
 
-### Q21. A company uses linear regression Y = 50 + 0.8·X where X is advertising spend in $k. If next month's planned ad spend is $300k, the forecast is:
+### Q21. A company uses linear regression Y = 50 + 0.8·X where X is advertising spend in $k. If next month's planned ad spend is $300k, the forecast is: *(Apply)*
 A. 240
 B. 270
 C. 290
@@ -179,7 +179,7 @@ D. 350
 - Forecast A predicted 105 (error +5)
 - Forecast B predicted 80 (error -20)
 
-Which forecast is more accurate by absolute error?
+Which forecast is more accurate by absolute error? *(Analyze)*
 A. Forecast A
 B. Forecast B
 C. Both are equally accurate
@@ -187,7 +187,7 @@ D. Cannot be determined
 
 ---
 
-### Q23. A team uses α = 0.05 in exponential smoothing. They notice the forecast barely moves even after a 30% demand jump. What should they do?
+### Q23. A team uses α = 0.05 in exponential smoothing. They notice the forecast barely moves even after a 30% demand jump. What should they do? *(Evaluate)*
 A. Decrease α further
 B. Switch to a different product
 C. Increase α to make the forecast more responsive
@@ -195,7 +195,7 @@ D. Discard exponential smoothing entirely
 
 ---
 
-### Q24. Pyramid forecasting reconciles:
+### Q24. Pyramid forecasting reconciles: *(Understand)*
 A. Top-down and bottom-up forecasts at multiple aggregation levels
 B. Demand and supply
 C. Forecast and budget
@@ -203,7 +203,7 @@ D. Order qualifiers and winners
 
 ---
 
-### Q25. In a simple multiplicative decomposition model, a forecast is constructed by multiplying:
+### Q25. In a simple multiplicative decomposition model, a forecast is constructed by multiplying: *(Remember)*
 A. T × C × S × R
 B. T + C + S + R
 C. Demand × Lead time × Cost
@@ -211,7 +211,7 @@ D. EOQ × Frequency
 
 ---
 
-### Q26. The most common reason a forecasting team should *NOT* simply switch to a more complex model is:
+### Q26. The most common reason a forecasting team should *NOT* simply switch to a more complex model is: *(Evaluate)*
 A. Complex models always cost more
 B. Simple models (SMA, exp smoothing) often beat complex models on noisy real-world demand
 C. Complex models are illegal

@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~55 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Lean+manufacturing+7+wastes+TIMWOOD" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="GmVb-qx7uWA" href="https://www.youtube.com/results?search_query=Lean+manufacturing+7+wastes+TIMWOOD" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 13 min · Examples per waste</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=DMAIC+six+sigma+process+explained" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="QvspEbkTuAM" href="https://www.youtube.com/results?search_query=DMAIC+six+sigma+process+explained" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 14 min · Tools per phase</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Theory+of+constraints+5+focusing+steps+Goldratt" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="EqD5jZPwbeQ" href="https://www.youtube.com/results?search_query=Theory+of+constraints+5+focusing+steps+Goldratt" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 12 min · The Goal in 12 minutes</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Balanced+scorecard+Kaplan+Norton+4+perspectives" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="C0JZdyb6hZE" href="https://www.youtube.com/results?search_query=Balanced+scorecard+Kaplan+Norton+4+perspectives" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~30 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Value+stream+mapping+VSM+example" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="ARQwPaxWVSE" href="https://www.youtube.com/results?search_query=Value+stream+mapping+VSM+example" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 12 min · Current vs future state</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Kaizen+continuous+improvement+culture" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="ERYzufU1bQQ" href="https://www.youtube.com/results?search_query=Kaizen+continuous+improvement+culture" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 9 min · Small daily improvements</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=OEE+overall+equipment+effectiveness+formula" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="bEFyYfU455U" href="https://www.youtube.com/results?search_query=OEE+overall+equipment+effectiveness+formula" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Industry+4.0+digital+supply+chain" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="SCxq3-LbJZ0" href="https://www.youtube.com/results?search_query=Industry+4.0+digital+supply+chain" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 18 min · Trends in SCM</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Six+sigma+belts+roles+yellow+green+black" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="C_Z-IUG6fj4" href="https://www.youtube.com/results?search_query=Six+sigma+belts+roles+yellow+green+black" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 11 min · Roles + paths</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=5+whys+root+cause+analysis+example" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="sW3CuS_mYRQ" href="https://www.youtube.com/results?search_query=5+whys+root+cause+analysis+example" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

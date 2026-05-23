@@ -1,12 +1,16 @@
 # ✏️ Module 5 Quiz: Vulnerabilities & Attacks
 
 > **Instructions:** 28 questions, no notes. Aim for 23/28.
+>
+> Every question is tagged with its **Bloom's taxonomy level**.
+>
+> **Bloom distribution (this quiz):** Remember 7 (25%) · Understand 7 (25%) · Apply 7 (25%) · Analyze/Evaluate 6 (21%) · Create 1 (4%).
 
 ---
 
 ## Questions
 
-### Q1. Malware that self-replicates across a network without user interaction is a:
+### Q1. Malware that self-replicates across a network without user interaction is a: *(Remember)*
 A. Virus
 B. Worm
 C. Trojan
@@ -14,7 +18,7 @@ D. Rootkit
 
 ---
 
-### Q2. A user installs a "free PDF reader" that secretly opens a reverse shell. The malware family is:
+### Q2. A user installs a "free PDF reader" that secretly opens a reverse shell. The malware family is: *(Apply)*
 A. Worm
 B. Trojan / RAT
 C. Logic bomb
@@ -22,7 +26,7 @@ D. Cryptominer
 
 ---
 
-### Q3. Malware hiding in the boot sector / firmware that loads before the OS is a:
+### Q3. Malware hiding in the boot sector / firmware that loads before the OS is a: *(Remember)*
 A. Worm
 B. Rootkit
 C. Bootkit
@@ -30,7 +34,7 @@ D. Adware
 
 ---
 
-### Q4. Modern ransomware groups practice "double extortion" by:
+### Q4. Modern ransomware groups practice "double extortion" by: *(Understand)*
 A. Demanding two payments
 B. Encrypting AND exfiltrating data, threatening leak if unpaid
 C. Compromising two organizations simultaneously
@@ -38,7 +42,7 @@ D. Using two cryptographic algorithms
 
 ---
 
-### Q5. The PRIMARY fix for SQL injection is:
+### Q5. The PRIMARY fix for SQL injection is: *(Evaluate)*
 A. Input length restrictions
 B. Disabling SQL on the web server
 C. Parameterized queries / prepared statements
@@ -46,7 +50,7 @@ D. Encrypting the database at rest
 
 ---
 
-### Q6. A forum stores a comment containing `<script>steal()</script>` which then runs in every viewer's browser. This is:
+### Q6. A forum stores a comment containing `<script>steal()</script>` which then runs in every viewer's browser. This is: *(Apply)*
 A. SQL injection
 B. Reflected XSS
 C. Stored XSS
@@ -54,7 +58,7 @@ D. CSRF
 
 ---
 
-### Q7. An attacker tricks a logged-in admin's browser into making a fund-transfer request to the bank app. The attack is:
+### Q7. An attacker tricks a logged-in admin's browser into making a fund-transfer request to the bank app. The attack is: *(Apply)*
 A. CSRF
 B. XSS
 C. SSRF
@@ -62,7 +66,7 @@ D. SQLi
 
 ---
 
-### Q8. A vulnerable web app fetches a URL from a user-supplied parameter. The attacker uses this to make the server request `http://169.254.169.254/latest/meta-data/`. The attack is:
+### Q8. A vulnerable web app fetches a URL from a user-supplied parameter. The attacker uses this to make the server request `http://169.254.169.254/latest/meta-data/`. The attack is: *(Apply)*
 A. SSRF
 B. XSS
 C. Directory traversal
@@ -70,7 +74,7 @@ D. SQLi
 
 ---
 
-### Q9. Sending `../../../etc/passwd` in a URL parameter is:
+### Q9. Sending `../../../etc/passwd` in a URL parameter is: *(Apply)*
 A. SQLi
 B. Directory traversal
 C. SSRF
@@ -78,7 +82,7 @@ D. XSS
 
 ---
 
-### Q10. A buffer overflow exploits:
+### Q10. A buffer overflow exploits: *(Remember)*
 A. Network congestion
 B. Writing past the end of a fixed-size memory buffer
 C. Symmetric key reuse
@@ -86,7 +90,7 @@ D. DNS cache size
 
 ---
 
-### Q11. TOCTOU (Time-Of-Check vs Time-Of-Use) is a:
+### Q11. TOCTOU (Time-Of-Check vs Time-Of-Use) is a: *(Remember)*
 A. Phishing technique
 B. Race condition
 C. Cryptographic flaw
@@ -94,7 +98,7 @@ D. Compliance gap
 
 ---
 
-### Q12. A normal user exploits a kernel bug to become root. This is:
+### Q12. A normal user exploits a kernel bug to become root. This is: *(Understand)*
 A. Horizontal privilege escalation
 B. Vertical privilege escalation
 C. Lateral movement
@@ -102,7 +106,7 @@ D. Privilege containment
 
 ---
 
-### Q13. A SYN flood attempts to:
+### Q13. A SYN flood attempts to: *(Understand)*
 A. Crash the application code
 B. Exhaust the server's half-open connection table
 C. Spoof DNS records
@@ -110,7 +114,7 @@ D. Brute-force credentials
 
 ---
 
-### Q14. A DNS amplification attack relies on:
+### Q14. A DNS amplification attack relies on: *(Understand)*
 A. The attacker controlling root DNS
 B. Spoofed source IPs + DNS servers returning much larger responses than the query
 C. Compromising the recursive resolver
@@ -118,7 +122,7 @@ D. Encrypting DNS traffic
 
 ---
 
-### Q15. A switch is forced into hub-like behavior by overflowing its CAM table. This attack is:
+### Q15. A switch is forced into hub-like behavior by overflowing its CAM table. This attack is: *(Understand)*
 A. ARP poisoning
 B. VLAN hopping
 C. MAC flooding
@@ -126,7 +130,7 @@ D. STP root takeover
 
 ---
 
-### Q16. An attacker on the same LAN tells everyone that the gateway's IP belongs to the attacker's MAC, then captures all traffic. This is:
+### Q16. An attacker on the same LAN tells everyone that the gateway's IP belongs to the attacker's MAC, then captures all traffic. This is: *(Apply)*
 A. ARP poisoning (precursor to on-path)
 B. DNS hijacking
 C. VLAN hopping
@@ -134,7 +138,7 @@ D. Replay attack
 
 ---
 
-### Q17. CompTIA's current term for "man-in-the-middle" is:
+### Q17. CompTIA's current term for "man-in-the-middle" is: *(Remember)*
 A. Replay attack
 B. Bait-and-switch
 C. On-path attack
@@ -142,7 +146,7 @@ D. Side-channel attack
 
 ---
 
-### Q18. Sending forged deauth/disassoc frames over Wi-Fi to kick clients off is:
+### Q18. Sending forged deauth/disassoc frames over Wi-Fi to kick clients off is: *(Remember)*
 A. Evil twin
 B. Disassociation attack
 C. WPS attack
@@ -150,7 +154,7 @@ D. Bluejacking
 
 ---
 
-### Q19. An attacker sets up an AP with the same SSID as the corporate network, but stronger signal, hoping clients auto-connect. This is:
+### Q19. An attacker sets up an AP with the same SSID as the corporate network, but stronger signal, hoping clients auto-connect. This is: *(Analyze)*
 A. Rogue AP
 B. Evil twin
 C. Karma attack
@@ -158,7 +162,7 @@ D. Both A and B are reasonable; "evil twin" is the most specific
 
 ---
 
-### Q20. Trying ONE password (`Summer2024`) against 5,000 different usernames is:
+### Q20. Trying ONE password (`Summer2024`) against 5,000 different usernames is: *(Apply)*
 A. Brute force
 B. Dictionary attack
 C. Password spraying
@@ -166,7 +170,7 @@ D. Credential stuffing
 
 ---
 
-### Q21. Reusing username/password pairs from a Yahoo breach against your bank is:
+### Q21. Reusing username/password pairs from a Yahoo breach against your bank is: *(Analyze)*
 A. Brute force
 B. Credential stuffing
 C. Password spraying
@@ -174,7 +178,7 @@ D. Rainbow table
 
 ---
 
-### Q22. Pass-the-Hash works because:
+### Q22. Pass-the-Hash works because: *(Analyze)*
 A. Windows authentication accepts the NTLM hash directly without needing the plaintext password
 B. The hash is reversible
 C. The KDC issues a Golden Ticket
@@ -182,7 +186,7 @@ D. RADIUS forwards the hash
 
 ---
 
-### Q23. A spear-phishing email targeting the CFO specifically is:
+### Q23. A spear-phishing email targeting the CFO specifically is: *(Remember)*
 A. Smishing
 B. Whaling
 C. Watering hole
@@ -190,7 +194,7 @@ D. Pretexting
 
 ---
 
-### Q24. An attacker compromises a niche industry news site that most of the target company's employees visit. This is:
+### Q24. An attacker compromises a niche industry news site that most of the target company's employees visit. This is: *(Apply)*
 A. Typosquatting
 B. Watering hole attack
 C. Smishing
@@ -198,7 +202,7 @@ D. Pharming
 
 ---
 
-### Q25. Registering `goggle.com` to capture mistyped traffic to `google.com` is:
+### Q25. Registering `goggle.com` to capture mistyped traffic to `google.com` is: *(Understand)*
 A. Typosquatting
 B. SSRF
 C. DNS poisoning
@@ -206,7 +210,7 @@ D. Brand impersonation only
 
 ---
 
-### Q26 (Scenario). A SOC sees: 1) 100k login attempts at user `admin` from one IP in 60 seconds; 2) The account is not locked because the server has no lockout policy. The attack is:
+### Q26 (Scenario). A SOC sees: 1) 100k login attempts at user `admin` from one IP in 60 seconds; 2) The account is not locked because the server has no lockout policy. The attack is: *(Analyze)*
 A. Credential stuffing
 B. Brute force
 C. Password spraying
@@ -214,7 +218,7 @@ D. Pass-the-hash
 
 ---
 
-### Q27 (Scenario). Investigating a breach, you find every file encrypted with extension `.locked`, a ransom note, AND evidence of 80 GB of data transferred outbound to an unknown IP 3 days ago. This is:
+### Q27 (Scenario). Investigating a breach, you find every file encrypted with extension `.locked`, a ransom note, AND evidence of 80 GB of data transferred outbound to an unknown IP 3 days ago. This is: *(Analyze)*
 A. Single-extortion ransomware
 B. Double-extortion ransomware
 C. Wiper malware
@@ -222,7 +226,9 @@ D. Cryptojacker
 
 ---
 
-### Q28 (Scenario). Pen-tester reports your web app accepts `id=42 UNION SELECT username, password FROM users--` in a query parameter and returns data. The MOST specific finding is:
+### Q28 (Scenario). Pen-tester reports your web app accepts `id=42 UNION SELECT username, password FROM users--` in a query parameter and returns data. The MOST specific finding is: *(Create)*
+
+> *Create-level note:* this is best treated as a remediation-design exercise — identifying the bug *and* recommending the precise fix (Q5 covers fix; this question covers identification).
 A. Improper error handling
 B. SQL injection (UNION-based)
 C. Insecure direct object reference

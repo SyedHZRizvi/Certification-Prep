@@ -315,3 +315,73 @@ You now know:
 2. ✏️ [Quiz.md](./Quiz.md)
 3. 📋 [Cheat-Sheet.md](./Cheat-Sheet.md)
 4. ➡️ [Module 6: Earned Value Management (the math!)](../Module-06-Earned-Value/Reading.md)
+
+---
+
+## 🎓 Cornell/Harvard/Stanford Elevation Layer
+
+### Prerequisites for this module
+
+> **Prerequisites for this module.** Before starting, you should be comfortable with:
+> - **PMBOK 7 principles** — Tailoring, Adaptability, Complexity (covered in [Module 01: Foundations](../Module-01-Foundations/Reading.md)).
+> - **Predictive process basics** — WBS, Critical Path, baselines (covered in [Module 03: Process Domain](../Module-03-Process-Domain/Reading.md)).
+> - **Scrum vocabulary** — Sprint, Backlog, Definition of Done. If new, [01-Scrum-Master Module 02: Scrum Framework](../../01-Scrum-Master/Module-02-Scrum-Framework/Reading.md) and Module 04 (Artifacts) are recommended.
+>
+> If any of these are shaky, pause and review before continuing.
+
+### Where this leads
+
+> **Where this leads.**
+> - **Inside this course:** [Module 06 — Earned Value](../Module-06-Earned-Value/Reading.md) shows how to measure progress in hybrid contexts; [Module 09 — Procurement](../Module-09-Procurement/Reading.md) covers agile contract structures.
+> - **Cross-course:** The entire [01-Scrum-Master](../../01-Scrum-Master/README.md) track is the agile-native deep dive; [12-ASCM-CLTD Module 06](../../12-ASCM-CLTD/Module-06-Lean-Operations/Reading.md) extends Lean/TIM-WOODS thinking to logistics.
+> - **Practice:** [Practice Exam 1](../Practice-Exams/Practice-Exam-1.md), [Practice Exam 2](../Practice-Exams/Practice-Exam-2.md), and [Final Mock Exam](../Practice-Exams/Final-Mock-Exam.md) collectively draw ~25–30% of their questions from agile/hybrid content — the highest single source.
+
+---
+
+## 📊 Case Study — HealthCare.gov Launch and Rescue (2013)
+
+**Situation.** HealthCare.gov was the US federal insurance marketplace required by the Affordable Care Act (ACA, 2010). The launch deadline was October 1, 2013. The Centers for Medicare & Medicaid Services (CMS) acted as program sponsor, with primary contractor CGI Federal building the front-end and 55 separate contractors handling other components. The estimated project cost grew from an initial ~$93.7M to over **$1.7 billion** by 2014 (GAO-14-694, July 2014).
+
+**Decision.** The program was structured as a predictive (waterfall) build with formal milestones, written specifications, and contract deliverables — typical federal IT practice. Integration testing was scheduled in the final 2 weeks before launch. Stakeholder coordination across CMS, the White House, 55 contractors, and 50 state-exchange interfaces was managed through traditional status-report cadences. Late changes to insurance rules (driven by political compromise) forced specification rewrites in 2013, but the schedule was held fixed. The launch went ahead despite internal flags from contractors that the system was not load-ready.
+
+**Outcome.** On launch day (Oct 1, 2013), the site collapsed under load — only ~6 enrollees completed signup that day. Through October and November, error rates exceeded 60%. The political fallout was severe; White House Chief of Staff Denis McDonough commissioned a "tech surge" led by Jeff Zients (later Biden's National Economic Council director) and Mikey Dickerson (Google SRE veteran, later founder of US Digital Service). The rescue team **switched the operating model from waterfall to agile**: stand-up meetings twice daily, ruthless prioritization of the highest-traffic flows, war-room operations, and small cross-functional cells. Within ~8 weeks, the site was functional at scale (December 2013 enrollments exceeded the entire pre-rescue total). The rescue led directly to the creation of US Digital Service (USDS) and 18F — agile-first federal IT teams.
+
+**Lesson for the exam / for practitioners.** This is a perfect Tailoring case (PMBOK 7 §3.7). The original program failed because it applied predictive-waterfall governance to a project with **evolving requirements**, **massive stakeholder count**, **integration complexity**, and **political uncertainty** — exactly the conditions where the Stacey Matrix points toward agile. The rescue worked because the operating model was tailored to fit the actual complexity. On the exam, when you see a scenario asking *"What approach should the team use?"* the right answer is almost never "the one in the original plan" — it's the one that matches the **current** requirement stability + customer involvement + risk profile + regulatory needs. HealthCare.gov is the canonical example of mid-project methodology shift saving (rather than killing) the program.
+
+**Discussion (Socratic).**
+- Q1: Federal procurement law strongly prefers fixed-price predictive contracts for accountability reasons. How would you, as PM, push back on procurement officers who insist on waterfall structures for projects that obviously need agile flexibility?
+- Q2: The rescue team had executive air cover from the White House — a privilege not available to most PMs. What organizational structures, sponsor agreements, or "permission slips" would you negotiate at kickoff to be able to do a mid-project methodology shift without that level of cover?
+- Q3: USDS and 18F emerged as durable institutional changes from a single project failure. Is it ethical for a PM to deliberately let a project "fail visibly" if doing so produces broader organizational learning? Defend an answer with PMI's Code of Ethics.
+
+---
+
+## 💬 Discussion — Socratic prompts
+
+1. **Stacey Matrix in practice.** Take a project you've worked on; place it on the Stacey Matrix. Did the chosen methodology match the position? Where in the matrix is the boundary most contested in industry today?
+2. **Kanban WIP vs throughput.** A team's WIP limit is 4. Throughput is 12/week. A stakeholder argues raising the WIP limit to 6 will lift throughput. Is that defensible — and what would you measure to test it? Cite Little's Law (J. Little 1961).
+3. **TIM-WOODS in knowledge work.** Lean's 8 wastes were originally observed on Toyota factory floors. Apply each of the 8 to a 2024 software-engineering team and name a concrete example of each that you've seen.
+4. **Hybrid contract structure.** A regulated hardware-plus-software project needs predictive hardware delivery and agile software delivery. Design a contract structure (vendor-side) that pays appropriately for each. Cite PMBOK 7's Adaptability principle.
+5. **Velocity as a metric.** Velocity is famously easy to game and famously useful for forecasting. When is it the right metric, when is it a vanity metric, and what should replace it in 2024 (cite the Accelerate / DORA metrics framework, Forsgren/Humble/Kim 2018)?
+
+---
+
+## 📚 Named-source citations (this module)
+
+| Framework / claim | Originator | Year | Publication |
+|---|---|---|---|
+| Agile Manifesto (4 values + 12 principles) | Beck, Cockburn, Fowler, et al. (17 signatories) | 2001 | agilemanifesto.org |
+| Scrum framework | Schwaber, Ken & Sutherland, Jeff | 1995 (foundational); 2020 (current Guide) | *The Scrum Guide 2020* |
+| Kanban (knowledge-work adaptation) | Anderson, David J. | 2010 | *Kanban: Successful Evolutionary Change for Your Technology Business*, Blue Hole Press |
+| Toyota Production System / Lean origins | Ohno, Taiichi | 1978 (Japanese); 1988 (English) | *Toyota Production System: Beyond Large-Scale Production*, Productivity Press |
+| 8 wastes (TIM-WOODS extension) | Liker, Jeffrey | 2004 | *The Toyota Way*, McGraw-Hill |
+| Extreme Programming (XP) | Beck, Kent | 1999 | *Extreme Programming Explained: Embrace Change*, Addison-Wesley |
+| Test-Driven Development | Beck, Kent | 2002 | *Test-Driven Development: By Example*, Addison-Wesley |
+| Continuous Integration | Fowler, Martin | 2006 | *"Continuous Integration"* (martinfowler.com, 2006 revision) |
+| Stacey Matrix (complexity) | Stacey, Ralph D. | 1996 | *Strategic Management and Organisational Dynamics*, Pitman |
+| Cumulative Flow Diagram | Anderson, David J. | 2010 | *Kanban* (above) |
+| Little's Law (cycle time × WIP) | Little, John D.C. | 1961 | *"A Proof for the Queuing Formula L = λW,"* Operations Research, 9(3) |
+| DORA / Accelerate metrics | Forsgren, Humble, Kim | 2018 | *Accelerate: The Science of Lean Software and DevOps*, IT Revolution |
+| Disciplined Agile (PMI) | Ambler, Scott & Lines, Mark | 2012; PMI 2019 | *Disciplined Agile Delivery* (PMI 2019 acquisition) |
+| HealthCare.gov post-mortem | US Government Accountability Office | 2014 | GAO-14-694, *Healthcare.gov: Ineffective Planning and Oversight Practices Underscore the Need for Improved Contract Management* |
+| US Digital Service founding | Dickerson, Mikey & Zients, Jeff | 2014 | USDS launch, Executive Order |
+| PMBOK 7 Tailoring + Adaptability principles | Project Management Institute | 2021 | PMBOK 7 §3.7, §3.11 |

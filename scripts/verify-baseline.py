@@ -23,24 +23,29 @@ ROOT = Path(__file__).resolve().parent.parent
 # Expected structure — derived from CLAUDE.md §0, §2
 # ---------------------------------------------------------------------------
 EXPECTED_COURSES = {
-    "01-Scrum-Master":                      8,
-    "02-PMP":                               10,
-    "03-AWS-Cloud-Practitioner":            8,
-    "04-AWS-Solutions-Architect-Associate": 10,
-    "05-Azure-Fundamentals":                6,
-    "06-Azure-Administrator":               10,
-    "07-AWS-AI-Practitioner":               8,
-    "08-Azure-AI-Engineer":                 8,
-    "09-CompTIA-Security-Plus":             10,
-    "10-ASCM-CSCP":                         10,
-    "11-ASCM-CPIM":                         8,
-    "12-ASCM-CLTD":                         8,
-    "13-ISM-CPSM":                          8,
+    "01-Scrum-Master":                          8,
+    "02-PMP":                                   10,
+    "03-AWS-Cloud-Practitioner":                8,
+    "04-AWS-Solutions-Architect-Associate":     10,
+    "05-Azure-Fundamentals":                    6,
+    "06-Azure-Administrator":                   10,
+    "07-AWS-AI-Practitioner":                   8,
+    "08-Azure-AI-Engineer":                     8,
+    "09-CompTIA-Security-Plus":                 10,
+    "10-ASCM-CSCP":                             10,
+    "11-ASCM-CPIM":                             8,
+    "12-ASCM-CLTD":                             8,
+    "13-ISM-CPSM":                              8,
+    "14-AI-Marketing-Foundations":              10,
+    "15-AI-Marketing-Practitioner":             10,
+    "16-AI-Marketing-Strategist":               10,
+    "17-AI-Marketing-Entrepreneur":             8,
+    "18-AI-Marketing-Capstone-Portfolio":       8,
 }
-EXPECTED_TOTAL_MODULES = sum(EXPECTED_COURSES.values())  # 112
-EXPECTED_TOTAL_PRACTICE_EXAMS = len(EXPECTED_COURSES) * 3  # 39
-MIN_TOTAL_COURSE_MD_FILES = 500   # was 357 with 9 courses; ~143 added with the 4 SCM tracks
-MIN_YT_SEARCH_URLS = 1000         # was 700; ~300 added with the 4 SCM tracks
+EXPECTED_TOTAL_MODULES = sum(EXPECTED_COURSES.values())  # 158
+EXPECTED_TOTAL_PRACTICE_EXAMS = len(EXPECTED_COURSES) * 3  # 54
+MIN_TOTAL_COURSE_MD_FILES = 700   # was 500 with 13 courses; ~200 added with the 5 AI-Marketing tracks
+MIN_YT_SEARCH_URLS = 1300         # was 1000; ~400 added with the 5 AI-Marketing tracks
 
 PROTECTED_FILES = [
     "_layouts/default.html",

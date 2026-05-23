@@ -6,7 +6,7 @@
 
 ## Questions
 
-### Q1. A Security Group rule:
+### Q1. A Security Group rule: *(Understand)*
 A. Can include both ALLOW and DENY rules
 B. Is stateless
 C. Is stateful — return traffic is automatically allowed
@@ -14,7 +14,7 @@ D. Operates at the subnet boundary
 
 ---
 
-### Q2. To DENY a specific malicious IP from reaching ANY instance in a subnet, the correct tool is:
+### Q2. To DENY a specific malicious IP from reaching ANY instance in a subnet, the correct tool is: *(Apply)*
 A. Security Group
 B. NACL (Network ACL)
 C. Route 53
@@ -22,7 +22,7 @@ D. IAM Policy
 
 ---
 
-### Q3. An EC2 instance in a private subnet needs to download OS updates from the internet but should not be reachable from the internet. The MOST appropriate service is:
+### Q3. An EC2 instance in a private subnet needs to download OS updates from the internet but should not be reachable from the internet. The MOST appropriate service is: *(Apply)*
 A. Internet Gateway directly
 B. NAT Gateway (or NAT Instance)
 C. Direct Connect
@@ -30,7 +30,7 @@ D. VPC Peering
 
 ---
 
-### Q4. Which Route 53 routing policy is BEST to send EU users to the EU region for GDPR compliance?
+### Q4. Which Route 53 routing policy is BEST to send EU users to the EU region for GDPR compliance? *(Apply)*
 A. Latency-based
 B. Weighted
 C. Geolocation
@@ -38,7 +38,7 @@ D. Multivalue
 
 ---
 
-### Q5. Which AWS service provides a dedicated, private fiber link from your data center to AWS?
+### Q5. Which AWS service provides a dedicated, private fiber link from your data center to AWS? *(Remember)*
 A. AWS VPN
 B. AWS Direct Connect
 C. AWS Transit Gateway
@@ -46,7 +46,7 @@ D. CloudFront
 
 ---
 
-### Q6. CloudFront uses which AWS infrastructure layer to cache content close to users?
+### Q6. CloudFront uses which AWS infrastructure layer to cache content close to users? *(Remember)*
 A. Regions
 B. Availability Zones
 C. Edge Locations
@@ -54,7 +54,7 @@ D. Outposts
 
 ---
 
-### Q7. Which load balancer is BEST for routing HTTP traffic by URL path to multiple microservices?
+### Q7. Which load balancer is BEST for routing HTTP traffic by URL path to multiple microservices? *(Apply)*
 A. NLB
 B. ALB
 C. GWLB
@@ -62,7 +62,7 @@ D. CLB (Classic)
 
 ---
 
-### Q8. To privately access Amazon S3 from inside a VPC without routing over the internet, you should use:
+### Q8. To privately access Amazon S3 from inside a VPC without routing over the internet, you should use: *(Apply)*
 A. NAT Gateway
 B. VPC Gateway Endpoint for S3
 C. Direct Connect
@@ -70,7 +70,7 @@ D. Internet Gateway
 
 ---
 
-### Q9. Which is TRUE about VPC Peering?
+### Q9. Which is TRUE about VPC Peering? *(Understand)*
 A. It is transitive (A↔B↔C means A↔C)
 B. It is NON-transitive
 C. It only works across Regions
@@ -78,7 +78,7 @@ D. It requires Direct Connect
 
 ---
 
-### Q10. Which AWS service uses 2 static anycast IPs and the AWS global backbone to route TCP/UDP traffic to the nearest healthy endpoint?
+### Q10. Which AWS service uses 2 static anycast IPs and the AWS global backbone to route TCP/UDP traffic to the nearest healthy endpoint? *(Remember)*
 A. CloudFront
 B. Route 53
 C. AWS Global Accelerator
@@ -86,7 +86,7 @@ D. NLB
 
 ---
 
-### Q11. An online store wants to gradually shift 10% of traffic to a new version of the site. The right Route 53 routing policy is:
+### Q11. An online store wants to gradually shift 10% of traffic to a new version of the site. The right Route 53 routing policy is: *(Apply)*
 A. Failover
 B. Weighted
 C. Latency
@@ -94,7 +94,7 @@ D. Geoproximity
 
 ---
 
-### Q12. AWS Direct Connect provides encryption:
+### Q12. AWS Direct Connect provides encryption: *(Analyze)*
 A. Always by default
 B. Never
 C. Only if combined with a VPN
@@ -102,7 +102,7 @@ D. Only for Regions in the US
 
 ---
 
-### Q13. Which is the correct order from largest to smallest scope?
+### Q13. Which is the correct order from largest to smallest scope? *(Understand)*
 A. Subnet > AZ > Region > VPC
 B. Region > VPC > AZ > Subnet
 C. VPC > Region > Subnet > AZ
@@ -110,7 +110,7 @@ D. AZ > VPC > Region > Subnet
 
 ---
 
-### Q14. A startup is building a serverless REST API. The BEST AWS service to act as the front door (with auth, throttling, and integration with Lambda) is:
+### Q14. A startup is building a serverless REST API. The BEST AWS service to act as the front door (with auth, throttling, and integration with Lambda) is: *(Apply)*
 A. Route 53
 B. API Gateway
 C. CloudFront
@@ -118,7 +118,7 @@ D. ALB
 
 ---
 
-### Q15. Which is FALSE about Security Groups?
+### Q15. Which is FALSE about Security Groups? *(Analyze)*
 A. They are stateful
 B. They can have ALLOW rules
 C. They can have DENY rules
@@ -126,7 +126,7 @@ D. They apply to ENIs (effectively, to instances)
 
 ---
 
-### Q16. To connect 30 VPCs across multiple accounts and on-prem networks with a single hub, the BEST service is:
+### Q16. To connect 30 VPCs across multiple accounts and on-prem networks with a single hub, the BEST service is: *(Apply)*
 A. VPC Peering
 B. AWS Transit Gateway
 C. Internet Gateway
@@ -134,7 +134,7 @@ D. NACL
 
 ---
 
-### Q17. CloudFront's "Origin Access Control" (OAC) is used to:
+### Q17. CloudFront's "Origin Access Control" (OAC) is used to: *(Understand)*
 A. Allow public access to S3
 B. Lock down an S3 origin so only CloudFront can fetch from it
 C. Cache content at the edge
@@ -142,7 +142,7 @@ D. Sign API calls
 
 ---
 
-### Q18. Which is a Layer 4 load balancer designed for ultra-low latency and millions of requests per second?
+### Q18. Which is a Layer 4 load balancer designed for ultra-low latency and millions of requests per second? *(Remember)*
 A. ALB
 B. NLB
 C. CLB
@@ -150,7 +150,7 @@ D. GWLB
 
 ---
 
-### Q19. A company needs encrypted connectivity to AWS in days (not weeks), using their existing internet. The BEST option is:
+### Q19. A company needs encrypted connectivity to AWS in days (not weeks), using their existing internet. The BEST option is: *(Apply)*
 A. AWS Direct Connect
 B. AWS Site-to-Site VPN
 C. Transit Gateway only
@@ -158,7 +158,7 @@ D. CloudFront
 
 ---
 
-### Q20. Which Route 53 routing policy is used for active-passive disaster recovery?
+### Q20. Which Route 53 routing policy is used for active-passive disaster recovery? *(Remember)*
 A. Failover
 B. Weighted
 C. Geolocation
@@ -166,7 +166,7 @@ D. Multivalue
 
 ---
 
-### Q21. By default, when you create a new VPC subnet, instances launched in it:
+### Q21. By default, when you create a new VPC subnet, instances launched in it: *(Understand)*
 A. Always get a public IP
 B. Only get private IPs unless you enable public IP assignment OR attach via Internet Gateway
 C. Are always reachable from the internet
@@ -174,7 +174,7 @@ D. Are tied to all AZs
 
 ---
 
-### Q22. Which is TRUE about CloudFront?
+### Q22. Which is TRUE about CloudFront? *(Understand)*
 A. It only works with S3
 B. It can use S3, ALB, EC2, or any custom HTTP origin as its origin
 C. It cannot integrate with WAF
@@ -182,7 +182,7 @@ D. It does not support HTTPS
 
 ---
 
-### Q23. Which is the BEST description of API Gateway?
+### Q23. Which is the BEST description of API Gateway? *(Understand)*
 A. A managed Layer-4 TCP load balancer
 B. A managed REST / HTTP / WebSocket API service with auth, throttling, and caching
 C. A CDN
@@ -190,7 +190,7 @@ D. A DNS service
 
 ---
 
-### Q24. To insert a 3rd-party security appliance (firewall, IDS) into network traffic, the BEST AWS load balancer is:
+### Q24. To insert a 3rd-party security appliance (firewall, IDS) into network traffic, the BEST AWS load balancer is: *(Apply)*
 A. ALB
 B. NLB
 C. GWLB (Gateway Load Balancer)
@@ -198,7 +198,7 @@ D. CLB
 
 ---
 
-### Q25. NAT Gateway is:
+### Q25. NAT Gateway is: *(Evaluate)*
 A. Free
 B. AZ-scoped (one per AZ for HA)
 C. Inbound-only

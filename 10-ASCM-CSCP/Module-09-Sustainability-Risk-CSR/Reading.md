@@ -2,6 +2,12 @@
 
 > **Why this module matters:** Domain 1 (Environment & Strategy) is 25% of the exam, and modern editions of the CSCP Learning System lean heavily on sustainability, risk management, and CSR. Investors and regulators now require what the exam will test — ESG reporting, ISO frameworks, business continuity, scope-3 emissions.
 
+> **Prerequisites for this module.** Before starting, you should be comfortable with:
+> - [SCOR-Enable process](../Module-01-SCM-Foundations-Strategy/Reading.md) — Module 1 (governance + risk lives here)
+> - [Supplier base segmentation (Kraljic)](../Module-06-Sourcing-Supplier-Management/Reading.md) — Module 6
+> - [International trade compliance basics](../Module-08-International-Trade-Customs/Reading.md) — Module 8
+> - General awareness of climate change, ESG investing, and corporate sustainability reporting
+
 ---
 
 ## 🌍 A Story: The Apparel Brand That Found Its $7M Risk
@@ -18,7 +24,7 @@ Hassan launched a 6-month program: full multi-tier mapping, switch to Responsibl
 
 ## 🌿 The Triple Bottom Line (3 P's)
 
-John Elkington coined "Triple Bottom Line" in 1994. The idea: measure success on three axes, not just profit.
+**John Elkington, *"Towards the Sustainable Corporation: Win-Win-Win Business Strategies for Sustainable Development"*** (California Management Review 36(2), Winter 1994 — SustainAbility consultancy, London). Elkington later expanded this in *Cannibals with Forks: The Triple Bottom Line of 21st Century Business* (Capstone Publishing, 1997). The idea: measure success on three axes, not just profit. (Elkington publicly issued a "product recall" of TBL in 2018 because it had been reduced to accounting; the substance remains foundational.)
 
 | P | Dimension | Examples |
 |---|-----------|----------|
@@ -192,7 +198,9 @@ Quantifies the impact of disruption per function (financial, operational, reputa
 
 CSR is the discretionary commitment of a business to operate in an economically, socially, and environmentally responsible manner. Often framed around:
 
-### CSR pyramid (Carroll, 1991)
+### CSR pyramid (Archie B. Carroll, 1991)
+
+**Archie B. Carroll, *"The Pyramid of Corporate Social Responsibility: Toward the Moral Management of Organizational Stakeholders"*** (Business Horizons 34(4), July-August 1991 — University of Georgia Terry College of Business).
 
 ```
        ┌──────────────┐
@@ -277,6 +285,23 @@ A resilient supply chain absorbs shocks AND adapts. Levers:
 
 ---
 
+## 📊 Case Study — Unilever's Sustainable Living Plan (2010-2020) and 2024 Compass Update
+
+**Situation.** In 2009, Unilever (Anglo-Dutch consumer goods giant, ~$60B revenue, 400+ brands including Dove, Knorr, Lipton, Ben & Jerry's) faced an investor-relations problem. Climate, water, and social issues were rising in stakeholder importance; competitors (P&G, Nestlé) were issuing sustainability reports but with limited substance. Newly appointed CEO Paul Polman concluded that Unilever's supply chain — touching agriculture in 100+ countries, water systems globally, and ~2 billion daily consumers — could not be decoupled from sustainability without long-term margin erosion. Investors were skeptical of long-horizon thinking. Polman famously suspended quarterly EPS guidance in 2009.
+
+**Decision.** Unilever launched the **Sustainable Living Plan (USLP)** in November 2010 with three explicit decade-long targets: (1) **Halve the environmental footprint** of products (greenhouse gas, water, waste, sourcing); (2) **Help 1 billion people** improve health and well-being (hygiene, nutrition); (3) **Source 100% of agricultural raw materials sustainably** (palm oil, tea, soy, sugar, cocoa). Critical operationally: USLP was embedded in supply chain decisions — palm oil sourcing through RSPO-certified (Roundtable on Sustainable Palm Oil) suppliers, tea through Rainforest Alliance, smallholder farmer training. Scope 3 emissions (~95% of Unilever's footprint) were measured in line with GHG Protocol, audited via PwC. Each brand was given a "sustainable living brand" (SLB) classification — those that combined social purpose with brand growth.
+
+**Outcome.** By 2020 (USLP 10-year mark): ~67% of agricultural raw materials sustainably sourced (vs 100% target — partial success); 1.3 billion people reached on health/hygiene (target exceeded); environmental footprint per consumer use reduced ~28% (target was 50% — significant gap on Scope 3). USLP brands grew 69% faster than non-USLP brands during the 2014-2018 period (Unilever 2019 Annual Report). Polman's tenure (2009-2018) saw share price rise ~150%, but he faced criticism for "missing" Kraft-Heinz takeover bid in 2017 (Unilever rejected). In 2020, USLP was succeeded by the **Unilever Compass strategy**, then in 2024 updated to align with **EU CSRD** (Corporate Sustainability Reporting Directive, in force January 2024), **Science-Based Targets initiative validation** for 1.5°C alignment, and **CDP A-list** retention. Hindustan Unilever (India subsidiary) leads on water positive operations; Unilever PLC was the founding signatory to the UN Global Compact.
+
+**Lesson for the exam / for practitioners.** USLP is the canonical "sustainability embedded in supply chain strategy" case for the modern CSCP exam. It illustrates: (1) the **Triple Bottom Line** (Elkington) operationalized at scale; (2) **Scope 3** dominating total footprint and being the hardest to address; (3) the link between **SCOR-Enable** (governance) and supplier-base management (Kraljic strategic-quadrant relationships); (4) **EU CSRD** as the regulatory force making sustainability *mandatory* reporting (2024 onwards); (5) **CSR pyramid** (Carroll) in motion — Unilever's USLP went beyond legal compliance into ethical and philanthropic action with measured commercial return. On the exam, expect: "Which scope of emissions dominates a CPG firm's footprint?" Answer: Scope 3. "Which framework validates climate-aligned targets?" Answer: SBTi. "Which directive requires EU large-firm sustainability reporting?" Answer: CSRD.
+
+**Discussion (Socratic).**
+- Q1: Unilever missed the 50% footprint reduction target by ~22 percentage points. Construct the strongest "USLP was still a success" argument AND the strongest "USLP was greenwashing" argument. Which would you defend at a board level?
+- Q2: A skeptical CFO at a mid-cap firm says "we can't afford a 10-year USLP-style program — we have to focus on quarterly EBITDA." Build the rebuttal using EU CSRD enforcement reality (€10M fines or 5% revenue) and ESG-rating impact on cost of capital.
+- Q3: 2024-2026, generative AI is being used by sustainability teams to draft CDP responses and CSRD disclosures. What's the risk of AI-drafted ESG reports, and how would a CSCP-trained supply chain leader govern this?
+
+---
+
 ## ⚠️ Common Misconceptions
 
 | Misconception | Reality |
@@ -353,11 +378,34 @@ You now know:
 
 ---
 
+> **Where this leads.**
+> - Inside this course: Module 10 ties sustainability KPIs into the Balanced Scorecard's "Internal Process" and "Learning & Growth" perspectives; the Capstone integrates risk + sustainability + ESG into the CSCO transformation deliverable.
+> - Cross-course: `13-ISM-CPSM` Module 6 (Sustainability) goes deeper on supplier-side sustainability; `09-CompTIA-Security-Plus` covers the NIST CSF cybersecurity layer in technical depth.
+> - Practice: Practice Exam 2 has ~14 sustainability + risk questions; Final Mock has ~12.
+
+---
+
+## 💬 Discussion — Socratic prompts
+
+1. **The Scope 3 paradox.** Scope 3 is the biggest emissions bucket for most firms (~80%) but the hardest to measure or change directly. A pragmatist argues "focus on Scope 1+2 — they're under your control." A purist insists "ignoring Scope 3 is greenwashing." Defend a middle position with concrete prioritization rules.
+2. **BCP cost-benefit.** A firm's BCP requires $4M/year in standby infrastructure that's used ~3 days in a typical year. The CFO calls this waste. Construct the option-value defence using a 2020-2022 disruption (COVID, Suez, Russia/Ukraine, Houthi).
+3. **The UFLPA enforcement reality.** UFLPA (Uyghur Forced Labor Prevention Act, 2021) creates a *rebuttable presumption* against Xinjiang imports. Some textile firms quietly continue sourcing while claiming due diligence. As CSCO, defend a hard cutoff position AND explore the legal risk of the alternative.
+4. **CSRD vs SEC climate rules.** EU CSRD (in force 2024) is much more aggressive than the US SEC's climate rules (issued 2024, then partially stayed). A US multinational must choose: EU-standard global disclosure or US-standard regional? Pick a position and defend.
+5. **The B Corp question.** B Corp certification is voluntary, peer-respected, but adds compliance cost. A founder asks: B Corp or just publish a GRI report? Walk through the strategic + customer-segment factors that determine the right answer.
+
+---
+
 ## 📚 Further Reading (Optional)
 
-- 📖 Ellen MacArthur Foundation, *Circular Economy Concepts* — free
-- 📖 GHG Protocol, *Corporate Standard* (scope 1/2/3) — free
-- 📖 ISO 31000:2018 Risk Management
-- 📖 ISO 22301 Business Continuity Management
-- 📖 NIST Cybersecurity Framework
+- 📖 Ellen MacArthur Foundation, *Towards the Circular Economy* (Vol 1-3, 2012-2014; ongoing updates) — free at ellenmacarthurfoundation.org
+- 📖 GHG Protocol, *Corporate Accounting and Reporting Standard* (scope 1/2/3) — free at ghgprotocol.org (the global authority)
+- 📖 ISO 31000:2018 Risk Management — Guidelines (the global risk management standard)
+- 📖 ISO 22301:2019 Security and Resilience — Business Continuity Management Systems
+- 📖 NIST Cybersecurity Framework 2.0 (2024 update from 1.1) — for SC cyber risk
+- 📖 John Elkington, *Cannibals with Forks: The Triple Bottom Line of 21st Century Business* — Capstone Publishing, 1997
+- 📖 Archie B. Carroll, *Business and Society: Ethics, Sustainability, and Stakeholder Management* — Cengage, 11e 2024 (the CSR canon)
+- 📖 Paul Polman & Andrew Winston, *Net Positive: How Courageous Companies Thrive by Giving More Than They Take* — HBR Press, 2021 (the Unilever USLP case from the CEO's perspective)
+- 📖 EU CSRD official text — eur-lex.europa.eu (Directive 2022/2464)
 - 📖 ASCM CSCP Learning System Module 9
+- 📰 *Harvard Business Review* climate + sustainability articles (2024-2025 issues)
+- 📰 *MIT Sloan Management Review* — *Sustainability in the Boardroom* annual issue

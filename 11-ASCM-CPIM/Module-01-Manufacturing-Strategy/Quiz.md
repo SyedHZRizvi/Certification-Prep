@@ -7,7 +7,7 @@
 
 ## Questions
 
-### Q1. A plant produces standardized garden hoses, holds large finished-goods inventory, and ships within hours of receiving an order. Which manufacturing environment is this?
+### Q1. A plant produces standardized garden hoses, holds large finished-goods inventory, and ships within hours of receiving an order. Which manufacturing environment is this? *(Apply)*
 A. Engineer-to-Order
 B. Make-to-Order
 C. Assemble-to-Order
@@ -15,7 +15,7 @@ D. Make-to-Stock
 
 ---
 
-### Q2. Dell builds laptops by holding generic sub-assemblies (drives, memory modules, screens) on forecast and only triggering final assembly when a customer order arrives. This is best described as:
+### Q2. Dell builds laptops by holding generic sub-assemblies (drives, memory modules, screens) on forecast and only triggering final assembly when a customer order arrives. This is best described as: *(Apply)*
 A. Make-to-Stock
 B. Assemble-to-Order
 C. Make-to-Order
@@ -23,7 +23,7 @@ D. Engineer-to-Order
 
 ---
 
-### Q3. The "customer order decoupling point" is BEST defined as:
+### Q3. The "customer order decoupling point" is BEST defined as: *(Remember)*
 A. The point at which a contract is signed
 B. The point in the supply chain where the customer order penetrates production
 C. The handoff between Marketing and Operations
@@ -31,7 +31,7 @@ D. The shipping dock
 
 ---
 
-### Q4. An "order winner" is:
+### Q4. An "order winner" is: *(Remember)*
 A. The minimum criteria a product must meet to be considered
 B. The criterion that causes a customer to choose your product over a competitor's
 C. A discount applied at the end of the quarter
@@ -39,7 +39,7 @@ D. A regulatory approval
 
 ---
 
-### Q5. Anti-lock brakes used to be a differentiator on automobiles but are now standard on virtually every new car. They have transitioned from being:
+### Q5. Anti-lock brakes used to be a differentiator on automobiles but are now standard on virtually every new car. They have transitioned from being: *(Analyze)*
 A. A winner to a qualifier
 B. A qualifier to a winner
 C. A specification to a feature
@@ -47,7 +47,7 @@ D. A feature to a luxury
 
 ---
 
-### Q6. Postponement is BEST described as:
+### Q6. Postponement is BEST described as: *(Remember)*
 A. A delay caused by a supplier shortage
 B. Delaying final product differentiation until the customer order is received
 C. Refusing to ship until payment clears
@@ -55,7 +55,7 @@ D. Holding inventory longer to capture seasonal demand
 
 ---
 
-### Q7. The HP printer postponement case is famous because HP:
+### Q7. The HP printer postponement case is famous because HP: *(Understand)*
 A. Eliminated all regional warehouses
 B. Built generic printers centrally and added country-specific power kits at regional DCs
 C. Switched from MTS to ETO entirely
@@ -63,7 +63,7 @@ D. Outsourced final assembly to a contract manufacturer
 
 ---
 
-### Q8. On the Hayes-Wheelwright product-process matrix, which of these combinations sits ON the diagonal (i.e., is well-aligned)?
+### Q8. On the Hayes-Wheelwright product-process matrix, which of these combinations sits ON the diagonal (i.e., is well-aligned)? *(Apply)*
 A. Job shop process producing 1 million units of a single SKU
 B. Continuous flow producing 50 custom configurations per day
 C. Line/repetitive process producing high volume of low-variety product
@@ -71,7 +71,7 @@ D. Project layout producing 100,000 identical units per year
 
 ---
 
-### Q9. A plant has decided to compete on "lowest unit cost in the market." Per the standard manufacturing-strategy framework, this is which level of strategy?
+### Q9. A plant has decided to compete on "lowest unit cost in the market." Per the standard manufacturing-strategy framework, this is which level of strategy? *(Understand)*
 A. Corporate strategy
 B. Business strategy
 C. Functional (operations) strategy
@@ -79,7 +79,7 @@ D. Procurement strategy
 
 ---
 
-### Q10. Which of these is NOT one of the five competitive priorities?
+### Q10. Which of these is NOT one of the five competitive priorities? *(Remember)*
 A. Cost
 B. Quality
 C. Delivery
@@ -87,7 +87,7 @@ D. Headcount
 
 ---
 
-### Q11. "Mass customization" is BEST achieved through:
+### Q11. "Mass customization" is BEST achieved through: *(Understand)*
 A. Pure MTO with manual production
 B. ATO architecture combined with postponement
 C. Project-based production
@@ -95,7 +95,7 @@ D. Single-product continuous flow
 
 ---
 
-### Q12. A shipbuilder produces unique vessels designed only after the contract is signed. Which environment?
+### Q12. A shipbuilder produces unique vessels designed only after the contract is signed. Which environment? *(Apply)*
 A. Make-to-Stock
 B. Assemble-to-Order
 C. Make-to-Order
@@ -103,7 +103,7 @@ D. Engineer-to-Order
 
 ---
 
-### Q13. The Triple Bottom Line refers to:
+### Q13. The Triple Bottom Line refers to: *(Remember)*
 A. Cost, Quality, Delivery
 B. People, Planet, Profit
 C. Plan, Do, Check
@@ -111,7 +111,7 @@ D. Strategy, Tactics, Operations
 
 ---
 
-### Q14. A plant that produces 5,000 custom orders per month with no two identical typically uses which process choice?
+### Q14. A plant that produces 5,000 custom orders per month with no two identical typically uses which process choice? *(Apply)*
 A. Continuous flow
 B. Line / repetitive
 C. Job shop
@@ -119,7 +119,7 @@ D. Project
 
 ---
 
-### Q15. Which statement about MTO vs ATO is TRUE?
+### Q15. Which statement about MTO vs ATO is TRUE? *(Understand)*
 A. MTO and ATO are identical
 B. ATO holds forecast-built sub-assemblies; MTO starts at raw materials
 C. MTO is always faster than ATO
@@ -127,7 +127,7 @@ D. ATO has the longest customer lead time of all environments
 
 ---
 
-### Q16. A company's strategic plan says "We will be the lowest-cost producer of standard widgets." Which manufacturing environment is MOST consistent with this strategy?
+### Q16. A company's strategic plan says "We will be the lowest-cost producer of standard widgets." Which manufacturing environment is MOST consistent with this strategy? *(Apply)*
 A. ETO
 B. MTO
 C. ATO
@@ -135,7 +135,7 @@ D. MTS
 
 ---
 
-### Q17. The biggest practical danger of trying to win on all five competitive priorities simultaneously is:
+### Q17. The biggest practical danger of trying to win on all five competitive priorities simultaneously is: *(Evaluate)*
 A. Higher employee morale
 B. Trade-offs become impossible to manage and the operation excels at nothing
 C. Costs decrease too much
@@ -143,7 +143,7 @@ D. The plant becomes too efficient
 
 ---
 
-### Q18. Which of the following is an example of an ORDER QUALIFIER for a modern smartphone in 2026?
+### Q18. Which of the following is an example of an ORDER QUALIFIER for a modern smartphone in 2026? *(Apply)*
 A. Computational photography that beats every competitor
 B. A working camera and a one-day battery
 C. A brand-new foldable form factor
@@ -151,7 +151,7 @@ D. Sub-$200 pricing in the premium segment
 
 ---
 
-### Q19. "Reshoring" is a strategic decision to:
+### Q19. "Reshoring" is a strategic decision to: *(Remember)*
 A. Outsource to lower-cost countries
 B. Bring previously offshored production back to the domestic market
 C. Move production to a tax haven
@@ -159,7 +159,7 @@ D. Sell the plant entirely
 
 ---
 
-### Q20. Which environment typically holds the LEAST finished-goods inventory?
+### Q20. Which environment typically holds the LEAST finished-goods inventory? *(Understand)*
 A. MTS
 B. ATO
 C. MTO
@@ -167,7 +167,7 @@ D. ETO
 
 ---
 
-### Q21. A manufacturer of premium professional kitchen knives competes primarily on the perceived quality and craftsmanship of its blades. Cost is secondary. The competitive priority being emphasized is:
+### Q21. A manufacturer of premium professional kitchen knives competes primarily on the perceived quality and craftsmanship of its blades. Cost is secondary. The competitive priority being emphasized is: *(Apply)*
 A. Cost
 B. Quality
 C. Volume flexibility
@@ -175,7 +175,7 @@ D. Delivery speed
 
 ---
 
-### Q22. An off-diagonal position on the Hayes-Wheelwright matrix typically indicates:
+### Q22. An off-diagonal position on the Hayes-Wheelwright matrix typically indicates: *(Analyze)*
 A. Optimal alignment of product and process
 B. A structural mismatch between product variety/volume and process choice
 C. A new business venture
@@ -183,7 +183,7 @@ D. A regulated industry
 
 ---
 
-### Q23. The strategic levels cascade in this order:
+### Q23. The strategic levels cascade in this order: *(Understand)*
 A. Functional → Business → Corporate
 B. Corporate → Business → Functional
 C. Business → Corporate → Functional
@@ -191,7 +191,7 @@ D. Functional → Corporate → Business
 
 ---
 
-### Q24. A bakery that produces 1,200 plain bagels, 800 sesame, and 400 everything every morning on a forecast basis and ships them to twenty corner stores by 7 a.m. is operating as:
+### Q24. A bakery that produces 1,200 plain bagels, 800 sesame, and 400 everything every morning on a forecast basis and ships them to twenty corner stores by 7 a.m. is operating as: *(Apply)*
 A. MTS
 B. ATO
 C. MTO

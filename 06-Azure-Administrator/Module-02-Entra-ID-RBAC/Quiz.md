@@ -6,7 +6,7 @@
 
 ## Questions
 
-### Q1. Microsoft Entra ID primarily speaks which protocols?
+### Q1. Microsoft Entra ID primarily speaks which protocols? *(Remember)*
 A. LDAP and Kerberos
 B. OAuth 2.0, OIDC, and SAML
 C. NTLM and RADIUS
@@ -14,7 +14,7 @@ D. SMB and DCOM
 
 ---
 
-### Q2. Which Entra ID license is REQUIRED for Conditional Access?
+### Q2. Which Entra ID license is REQUIRED for Conditional Access? *(Remember)*
 A. Free
 B. Microsoft 365 Business Basic
 C. P1
@@ -22,7 +22,7 @@ D. P2
 
 ---
 
-### Q3. Which Entra ID license is REQUIRED for Identity Protection (risk-based policies)?
+### Q3. Which Entra ID license is REQUIRED for Identity Protection (risk-based policies)? *(Remember)*
 A. Free
 B. Office 365 E1
 C. P1
@@ -30,7 +30,7 @@ D. P2
 
 ---
 
-### Q4. A dynamic group rule like `(user.department -eq "Sales")` requires what license?
+### Q4. A dynamic group rule like `(user.department -eq "Sales")` requires what license? *(Remember)*
 A. Free
 B. P1
 C. P2
@@ -38,7 +38,7 @@ D. Microsoft 365 E5
 
 ---
 
-### Q5. You want to give a vendor 4 hours of `Contributor` on one resource group, with MFA + manager approval. Which feature?
+### Q5. You want to give a vendor 4 hours of `Contributor` on one resource group, with MFA + manager approval. Which feature? *(Apply)*
 A. RBAC custom role
 B. PIM for Azure resources
 C. Conditional Access
@@ -46,7 +46,7 @@ D. Administrative units
 
 ---
 
-### Q6. Which built-in role can assign other roles?
+### Q6. Which built-in role can assign other roles? *(Remember)*
 A. Contributor
 B. Reader
 C. Owner
@@ -54,7 +54,7 @@ D. Security Administrator
 
 ---
 
-### Q7. A Storage Account Contributor has full control plane access. Can they read blob contents?
+### Q7. A Storage Account Contributor has full control plane access. Can they read blob contents? *(Understand)*
 A. Yes automatically
 B. Only after assigning themselves a data role like `Storage Blob Data Reader`
 C. Yes, if MFA is satisfied
@@ -62,7 +62,7 @@ D. Never
 
 ---
 
-### Q8. What is the maximum activation duration for a PIM role (default cap)?
+### Q8. What is the maximum activation duration for a PIM role (default cap)? *(Remember)*
 A. 1 hour
 B. 4 hours
 C. 8 hours
@@ -70,7 +70,7 @@ D. 24 hours
 
 ---
 
-### Q9. For a workload running on an Azure VM that needs to read from a Key Vault, the BEST identity is:
+### Q9. For a workload running on an Azure VM that needs to read from a Key Vault, the BEST identity is: *(Apply)*
 A. Hard-coded connection string
 B. Service principal with a secret
 C. Managed identity (system or user-assigned)
@@ -78,7 +78,7 @@ D. The VM's local admin account
 
 ---
 
-### Q10. You need country IT admins to manage **only their country's users**. What feature?
+### Q10. You need country IT admins to manage **only their country's users**. What feature? *(Apply)*
 A. Conditional Access
 B. Administrative units (AUs)
 C. PIM
@@ -86,7 +86,7 @@ D. Custom RBAC role
 
 ---
 
-### Q11. Yes/No — Mark each statement.
+### Q11. Yes/No — Mark each statement. *(Evaluate)*
 
 **S1:** A Conditional Access policy can require both MFA and a compliant device in one policy.
 **S2:** Security defaults and Conditional Access can both be enabled simultaneously.
@@ -99,7 +99,7 @@ D. Yes / Yes / No
 
 ---
 
-### Q12. A B2B guest from Acme Corp signs in to your tenant. Their UPN in your tenant looks like:
+### Q12. A B2B guest from Acme Corp signs in to your tenant. Their UPN in your tenant looks like: *(Remember)*
 A. `alice@acme.com`
 B. `alice_acme.com#EXT#@contoso.onmicrosoft.com`
 C. `acme\alice`
@@ -107,7 +107,7 @@ D. `guest_alice@contoso.com`
 
 ---
 
-### Q13. You want customers (millions of them) to sign up for your retail app with Google and Facebook IdPs. The right Microsoft offering is:
+### Q13. You want customers (millions of them) to sign up for your retail app with Google and Facebook IdPs. The right Microsoft offering is: *(Apply)*
 A. Entra ID B2B
 B. Entra External ID (formerly Azure AD B2C)
 C. Microsoft 365 Defender
@@ -115,7 +115,7 @@ D. Microsoft Intune
 
 ---
 
-### Q14. Which authentication method is considered the STRONGEST (phishing-resistant)?
+### Q14. Which authentication method is considered the STRONGEST (phishing-resistant)? *(Understand)*
 A. SMS
 B. Voice call
 C. Microsoft Authenticator app push
@@ -123,7 +123,7 @@ D. FIDO2 security key
 
 ---
 
-### Q15. In RBAC, permissions are calculated by:
+### Q15. In RBAC, permissions are calculated by: *(Understand)*
 A. Most restrictive deny wins
 B. Union of all role assignments at and above the scope (additive)
 C. Only the last assignment counts
@@ -131,7 +131,7 @@ D. Permissions inherit only one level
 
 ---
 
-### Q16. Can a Contributor at a Resource Group level create role assignments at that RG?
+### Q16. Can a Contributor at a Resource Group level create role assignments at that RG? *(Understand)*
 A. Yes
 B. No — Contributor explicitly cannot assign roles
 C. Yes, but only for self
@@ -139,7 +139,7 @@ D. Only if MFA is satisfied
 
 ---
 
-### Q17. Which scope is the **highest** at which you can assign an Azure RBAC role?
+### Q17. Which scope is the **highest** at which you can assign an Azure RBAC role? *(Understand)*
 A. Resource
 B. Resource Group
 C. Subscription
@@ -147,7 +147,7 @@ D. Management Group
 
 ---
 
-### Q18. **Order these steps** to grant a new third-party data analyst read-only access to one storage account's blobs.
+### Q18. **Order these steps** to grant a new third-party data analyst read-only access to one storage account's blobs. *(Create)*
 
 1. Invite as B2B guest
 2. Add the guest to a security group
@@ -161,7 +161,7 @@ D. 1 → 3 → 2 → 4
 
 ---
 
-### Q19. The "Number matching" feature in Microsoft Authenticator is designed to defeat which attack?
+### Q19. The "Number matching" feature in Microsoft Authenticator is designed to defeat which attack? *(Understand)*
 A. SIM swap
 B. MFA fatigue / push bombing
 C. Replay attacks
@@ -169,7 +169,7 @@ D. Phishing of TOTP codes
 
 ---
 
-### Q20. You enable Security Defaults on a tenant. What is one effect?
+### Q20. You enable Security Defaults on a tenant. What is one effect? *(Understand)*
 A. All users get MFA prompts based on risk
 B. Legacy authentication is blocked, and MFA is required for everyone (especially admins)
 C. The tenant becomes hybrid
@@ -177,7 +177,7 @@ D. All P2 features are unlocked
 
 ---
 
-### Q21. A user has these role assignments:
+### Q21. A user has these role assignments: *(Analyze)*
 - `Reader` at the subscription
 - `Contributor` at `rg-app`
 - `Storage Blob Data Owner` at `rg-app/storage1`
@@ -190,7 +190,7 @@ D. Nothing — conflicting roles cancel
 
 ---
 
-### Q22. Which is TRUE about deny in Azure RBAC?
+### Q22. Which is TRUE about deny in Azure RBAC? *(Understand)*
 A. You can create user-defined deny assignments at will
 B. There is no user-creatable deny; managed services may create deny assignments, and Azure Policy `Deny` blocks actions
 C. Deny always wins over Allow at all scopes
@@ -198,7 +198,7 @@ D. Deny applies only at the management group level
 
 ---
 
-### Q23. A user-assigned managed identity differs from system-assigned in that:
+### Q23. A user-assigned managed identity differs from system-assigned in that: *(Understand)*
 A. It can be used by Azure AD B2C only
 B. It exists independently and can be attached to many resources, surviving their deletion
 C. It requires you to rotate a secret monthly
@@ -206,7 +206,7 @@ D. It works only with Azure Functions
 
 ---
 
-### Q24. Yes/No — A Conditional Access policy is created with these conditions: All users, All cloud apps, Locations = Block list = Russia, Grant = Block.
+### Q24. Yes/No — A Conditional Access policy is created with these conditions: All users, All cloud apps, Locations = Block list = Russia, Grant = Block. *(Analyze)*
 
 **S1:** A user in Russia attempting to sign in will be blocked.
 **S2:** A user in Spain will also be blocked.
@@ -219,7 +219,7 @@ D. Yes / Yes / No
 
 ---
 
-### Q25. Per-user MFA, security defaults, and Conditional Access — which is the modern, recommended way to enforce MFA?
+### Q25. Per-user MFA, security defaults, and Conditional Access — which is the modern, recommended way to enforce MFA? *(Evaluate)*
 A. Per-user MFA
 B. Security defaults (for basic baseline only)
 C. Conditional Access (granular, recommended)
@@ -227,7 +227,7 @@ D. All three at once
 
 ---
 
-### Q26. Access reviews are useful for:
+### Q26. Access reviews are useful for: *(Apply)*
 A. Replacing PIM
 B. Periodic re-justification of role assignments and group memberships
 C. Running compliance scans on storage

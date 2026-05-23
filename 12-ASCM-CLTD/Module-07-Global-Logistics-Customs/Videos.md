@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~60 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Incoterms+2020+all+11+rules+explained" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="GTUTLRXcVuA" href="https://www.youtube.com/results?search_query=Incoterms+2020+all+11+rules+explained" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 15 min · The big one</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=FOB+FCA+Incoterms+container+ocean+difference" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="qF_xIBd9Njk" href="https://www.youtube.com/results?search_query=FOB+FCA+Incoterms+container+ocean+difference" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 10 min · Critical distinction</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=HS+code+HTS+tariff+classification+customs" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="ASTsPu3tbkM" href="https://www.youtube.com/results?search_query=HS+code+HTS+tariff+classification+customs" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 11 min · Tariff classification</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=letter+of+credit+international+trade+flow" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="OLOvu_K7gYg" href="https://www.youtube.com/results?search_query=letter+of+credit+international+trade+flow" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -61,7 +61,7 @@
       <span class="vg-duration">⏱ 12 min · LC mechanics</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=USMCA+rules+of+origin+free+trade+agreement" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="OJ9iJ7KOoRA" href="https://www.youtube.com/results?search_query=USMCA+rules+of+origin+free+trade+agreement" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -75,7 +75,7 @@
 ## 📚 Recommended (~40 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=free+trade+zone+FTZ+bonded+warehouse+benefits" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="9oxcmn1eHY8" href="https://www.youtube.com/results?search_query=free+trade+zone+FTZ+bonded+warehouse+benefits" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 13 min · Duty deferral</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=customs+broker+freight+forwarder+difference" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="x9JrDA7-Ics" href="https://www.youtube.com/results?search_query=customs+broker+freight+forwarder+difference" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -93,7 +93,7 @@
       <span class="vg-duration">⏱ 11 min · Who does what</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=C-TPAT+AEO+supply+chain+security+program" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="JNquexdMPPI" href="https://www.youtube.com/results?search_query=C-TPAT+AEO+supply+chain+security+program" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -107,7 +107,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=anti+dumping+countervailing+duty+international+trade" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="3oTIh_A2-Mo" href="https://www.youtube.com/results?search_query=anti+dumping+countervailing+duty+international+trade" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 17 min · Trade defense</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=OFAC+sanctions+screening+export+control" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="t1r2KFFYEZ8" href="https://www.youtube.com/results?search_query=OFAC+sanctions+screening+export+control" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

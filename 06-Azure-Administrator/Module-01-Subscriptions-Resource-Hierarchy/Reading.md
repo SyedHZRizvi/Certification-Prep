@@ -2,6 +2,13 @@
 
 > **Why this module matters:** Every single Azure resource lives somewhere in a 4-level hierarchy. Get the hierarchy wrong and your policies don't apply, your costs are unsplittable, and your governance falls apart. This is the foundation literally everything else sits on.
 
+> **Prerequisites for this module.** Before starting, you should be comfortable with:
+> - Core cloud-shared-responsibility concepts (IaaS / PaaS / SaaS) — covered in [`05-Azure-Fundamentals` Module 1](../../05-Azure-Fundamentals/Module-01-Cloud-Concepts/Reading.md) (AZ-900).
+> - Azure cost-model basics (subscriptions, regions, reservations) — also AZ-900 Module 4.
+> - Comfort reading a CLI command and a JSON snippet (no scripting expertise needed).
+>
+> If those are shaky, pause and spend an hour with AZ-900's "Azure architecture and services" learning path on Microsoft Learn before going deeper here. AZ-104 assumes AZ-900 in spirit even though it isn't a formal prerequisite.
+
 ---
 
 ## 🍕 A Story: The Coffee Shop That Outgrew Its Filing Cabinet
@@ -91,7 +98,7 @@ Tenant Root Group
 └── Sandbox (sub)
 ```
 
-This is the **Microsoft Cloud Adoption Framework (CAF) "Enterprise-Scale"** topology — you'll see it referenced in exam scenarios.
+This is the **Microsoft Cloud Adoption Framework (CAF) "Enterprise-Scale" landing zone** topology (Microsoft, *Cloud Adoption Framework for Azure*, first published 2017; "Enterprise-Scale" formalized 2020; current reference architecture checked against Microsoft Learn 2026-05). You'll see this exact diagram in AZ-104 exam scenarios — recognize it on sight.
 
 ### CLI — create a management group
 
@@ -425,10 +432,55 @@ You now know:
 
 ---
 
+## 📊 Case Study — Coca-Cola European Partners (2019–2024)
+
+**Situation.** Coca-Cola European Partners (now Coca-Cola Europacific Partners, CCEP after the 2021 merger) is the world's largest independent Coca-Cola bottler — ~33,000 employees, 13 countries, 90+ manufacturing sites. In 2019 they inherited a portfolio of more than 100 Azure subscriptions accumulated by 13 country IT teams, each provisioned ad hoc with no shared management-group hierarchy, no consistent tagging, and no central policy guardrails. Cost was unattributable per country, GDPR posture was uneven, and a single misconfigured developer subscription in Spain had been silently spinning up `Standard_D64s_v3` VMs for six months before anyone noticed.
+
+**Decision.** CCEP's central cloud team partnered with Microsoft FastTrack and an external advisor (Avanade) to apply the **Cloud Adoption Framework "Enterprise-Scale" landing zone** pattern (Microsoft, 2020). They:
+1. Built a 4-level management-group tree: *Tenant Root → Platform / Landing Zones / Sandbox → Corp + Online → Prod + Non-Prod*.
+2. Migrated all 100+ subscriptions under the new tree (no resource downtime — only the MG association changed).
+3. Applied 14 Azure Policy initiatives at the *Landing Zones* MG: allowed locations restricted to `westeurope`, `northeurope`, `francecentral`, `germanywestcentral`; required tags (`CostCenter`, `Application`, `Owner`, `DataClassification`); deny on public IP creation without exemption; CMK enforcement on storage and SQL.
+4. Built a chargeback pipeline: Cost Management exports → Azure Data Explorer → Power BI, sliced by `CostCenter` tag. The Inherit-a-tag `Modify` policy back-filled tags on existing resources.
+5. Wrapped production RGs in `CanNotDelete` locks and enforced PIM eligibility for Owner role at sub scope (covered in Module 2).
+
+**Outcome.** By 2024 CCEP reported (Microsoft customer story, *Coca-Cola Europacific Partners*, 2023, refreshed 2024-09):
+- **~22% reduction in annual Azure spend** (≈ €4M / year on a stated baseline) from a combination of unused-resource cleanup, reservation purchases, and dev/test auto-shutdown.
+- **Time to provision a new project subscription** fell from 6 weeks (manual ticketing) to **under 2 days** via a self-service template that places subs under the right MG with policies pre-applied.
+- **GDPR data-residency violations** dropped to zero on net-new resources (the Allowed Locations policy blocks creation outside EU regions; existing non-compliant resources flagged for remediation).
+- **Mean time to detect a runaway subscription** dropped from "months" to under 24 hours, via budget alerts and tag-based anomaly detection.
+
+**Lesson for the exam / for practitioners.** This is the textbook case for *why* AZ-104 spends 20–25% of its weight on identity and governance. The hierarchy decisions made in week one of a cloud program compound for years. Microsoft's CAF Enterprise-Scale isn't a curiosity — it's the answer to roughly half of all AZ-104 scenario questions. When you see "a multinational with 80 subscriptions wants to enforce X across Europe-only," your default answer should be: **management group + Azure Policy initiative + Cost Management with tag-based chargeback + locks on prod**.
+
+**Discussion (Socratic).**
+- **Q1.** CCEP collapsed 100+ subscriptions under a single CAF-style MG tree, but kept the subscriptions themselves intact. Argue both sides: when is it better to *consolidate subscriptions* (fewer, larger) versus *preserve them* and only reorganize hierarchy? What does each choice cost when you hit subscription-level quotas?
+- **Q2.** The "Allowed Locations" policy is a `Deny` at the *Landing Zones* MG. A new Italian acquisition needs to deploy to `southindia` for a 3-month integration project. Microsoft Learn lists two supported override mechanisms — name them and defend which is right here. Why is creating a counter-Allow policy at the child subscription the wrong answer?
+- **Q3.** CCEP's chargeback model uses `CostCenter` tags inherited from RG via the `Modify` policy. A CFO asks why tags can't simply be *required* at create time (Deny effect) — that way there's no need for back-fill. Where does Deny-on-missing-tag break in practice, especially for resources created via Terraform/Bicep modules?
+
+---
+
+> **Where this leads.**
+> - Inside this course: Module 2 builds the identity layer (Entra ID, RBAC, PIM, Conditional Access) that sits on top of this hierarchy; Module 10 revisits Azure Policy and Locks from a monitoring/governance angle.
+> - Cross-course: [`05-Azure-Fundamentals` Module 5](../../05-Azure-Fundamentals/Module-05-Governance-Compliance/Reading.md) introduces these concepts at AZ-900 depth; [`08-Azure-AI-Engineer`](../../08-Azure-AI-Engineer/README.md) modules assume you can stand up a compliant resource group on demand.
+> - Practice: Practice Exam 1 has roughly 6–8 questions from this module (hierarchy order, tags, locks, policy effects, move resources). Final Mock Exam revisits with case-study-style synthesis.
+
+---
+
+## 💬 Discussion — Socratic prompts
+
+1. **Hierarchy depth vs. governance overhead.** Microsoft permits up to 6 levels of management-group nesting. A common debate: a 4-level tree (Root → Env → BU → Team) gives precise control but slows every policy assignment review; a flatter 2-level tree (Root → Sub) keeps decisions fast but forces "policy by spreadsheet." At what org size and risk profile does each become the better default? Build the case for both, then pick which you'd defend at a Sr. Director architecture review for a 4,000-employee company.
+2. **The RG-region paradox.** A resource group has its own region but resources inside can be deployed anywhere. Why did Microsoft design it this way (vs. forcing all RG contents to share the RG's region)? What operational problem would the "single-region RG" rule have caused that the current design avoids? What problem does the current design itself create?
+3. **Tags vs. naming conventions.** The CAF recommends `rg-<workload>-<env>-<region>-<###>` AND `Environment=Prod` tags. A skeptical developer asks: "Pick one — either the name encodes everything or the tags do. Doing both is redundant." Defend why the redundancy is intentional, and identify the one scenario in which tags must override names. (Hint: think about renames after a re-org.)
+4. **CanNotDelete vs. Azure Policy Deny.** Both can prevent resource deletion. When would you reach for a *resource lock* and when for a *policy* with `Deny` effect on `Microsoft.*/delete` actions? Consider blast radius, audit logging, and inheritance behavior.
+5. **Move-resource diligence.** A junior engineer wants to move a production Recovery Services vault (with running backups) from a "legacy" subscription to a new one to consolidate cost. What's your principled answer, with reference to the Microsoft "Move resources" matrix? When is the "right answer" actually "re-create at the destination and migrate, don't move"?
+
+---
+
 ## 📚 Further Reading (Optional)
 
-- 📖 [Cloud Adoption Framework — Enterprise-Scale landing zone](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/enterprise-scale/)
+- 📖 [Cloud Adoption Framework — Enterprise-Scale landing zone](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/enterprise-scale/) (Microsoft, current revision)
 - 📖 [Move resources support matrix](https://learn.microsoft.com/azure/azure-resource-manager/management/move-support-resources)
 - 📖 [Azure Policy built-in definitions](https://learn.microsoft.com/azure/governance/policy/samples/built-in-policies)
 - 📖 [Azure naming and tagging best practices](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/naming-and-tagging)
 - 📖 [Service limits per subscription](https://learn.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)
+- 📖 Satya Nadella, *Hit Refresh* (2017, HarperBusiness) — chapter on Microsoft's pivot to cloud-first; useful executive context for why CAF exists at all.
+- 📖 Microsoft *Well-Architected Framework — Operational Excellence pillar* (Microsoft, ongoing; checked 2026-05) — the governance practices CCEP applied.

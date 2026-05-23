@@ -2,6 +2,13 @@
 
 > **Why this module matters:** SAA loves "low latency for global users" and "reduce origin load" scenarios. CloudFront and Global Accelerator are the two main weapons. Add ElastiCache and DAX for application-tier caching. Get the decision tree right and 5–7 questions become trivial.
 
+> **Prerequisites for this module.**
+> - [Module 1](../Module-01-Foundations-Well-Architected/Reading.md) — Edge locations, Route 53 basics
+> - [Module 4](../Module-04-VPC-Deep-Dive/Reading.md) — VPC and ALB/NLB topology (origins for CloudFront)
+> - [Module 5](../Module-05-S3-Deep-Dive/Reading.md) — S3 is the most common CloudFront origin; Origin Access Control
+> - [Module 6](../Module-06-Databases/Reading.md) — DynamoDB is what DAX caches; RDS/Aurora is what ElastiCache caches
+> - Basic HTTP knowledge: TTL, Cache-Control headers, request/response cycle, signed URL concept
+
 ---
 
 ## 🎬 A Story: The Streaming Service That Cracked The Internet
@@ -269,9 +276,83 @@ You now know:
 
 ---
 
-## 📚 Further Reading
+## 📖 Case Study — AWS `us-east-1` Outages and the Multi-Region Resilience Lessons (Dec 7, 2021 and June 13, 2023)
 
-- 📖 **[CloudFront Developer Guide](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/)**
-- 📖 **[Global Accelerator Developer Guide](https://docs.aws.amazon.com/global-accelerator/latest/dg/)**
-- 📖 **[Route 53 Developer Guide](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/)**
-- 📖 **[AWS WAF Developer Guide](https://docs.aws.amazon.com/waf/latest/developerguide/)**
+**Situation.** Two of the most-discussed AWS production incidents both struck the largest AWS region, **us-east-1 (Northern Virginia)**:
+
+- **December 7, 2021 (~10:30 ET — 18:34 ET):** A network capacity issue in us-east-1 triggered cascading failures across many AWS services (EC2 control plane, ECS, Lambda, EventBridge, the AWS Console itself). Per AWS's official post-event summary (`aws.amazon.com/message/12721/`), the trigger was an automated scaling event that overwhelmed internal services. Effects rippled to Disney+, Netflix (partially), Robinhood, Coinbase, Tinder, McDonald's app, and the AWS Service Health Dashboard itself (irony noted in the post-mortem).
+- **June 13, 2023 (~12:11 ET — 16:30 ET):** A Lambda subsystem failure in us-east-1 cascaded to API Gateway, EventBridge, and dozens of customer applications. AWS's post-event summary detailed an internal database issue that affected Lambda's invocation path.
+
+Both incidents shared a pattern: **a single-region outage degraded global services that relied on us-east-1 for control plane operations** — even when their workloads were in other regions. The reason: many AWS *global* services (IAM, Route 53 control plane, CloudFront control plane, Organizations) have **their primary endpoints in us-east-1**.
+
+**Decision.** Companies that came out best had pre-existing multi-region architectures:
+- **Netflix** used **Route 53 latency routing** to fail over from us-east-1 to us-west-2 within ~3 minutes (per their tech blog, December 2021 retrospective). Their multi-region active-active stack absorbed the failure
+- **Capital One** used **Route 53 failover routing** with health checks on per-region endpoints
+- **Shopify** ran active-active across **us-east-1 + us-west-2 + eu-west-1** with DynamoDB Global Tables and Aurora Global Database; storefront traffic was unaffected
+- **Many smaller shops** that had picked us-east-1 as "default" because it was cheapest and oldest had **no DR plan** and were down for the full duration
+
+**Outcome.** The 2021 outage cost the broader economy an estimated **$3–5B in productivity and direct service-revenue losses** (per Parametrix Insurance public estimates). The 2023 outage was shorter but still drove a wave of "multi-region by default" mandates at large enterprises.
+
+The architecture-level lessons (and the SAA exam patterns):
+- **Route 53 failover routing with health checks** = the canonical active-passive DR pattern
+- **CloudFront's multi-origin failover** (Origin Groups) = automatic origin failover at the edge
+- **Aurora Global Database** = <1 second cross-region replication; database survives single-region outage
+- **DynamoDB Global Tables** = multi-active; writes anywhere replicate everywhere
+- **us-east-1 is NOT a safe default** for global services; AWS recommends spreading control-plane-dependent workloads across regions
+
+**Lesson for the exam / for practitioners.** Every "survive a regional outage" question on SAA-C03 is about exactly this scenario. The answer chain is:
+- **CloudFront** in front (multi-origin failover, geo distribution)
+- **Route 53 health-checked failover routing** for DNS
+- **Aurora Global Database** OR **DynamoDB Global Tables** for state
+- **Global Accelerator** for non-HTTP traffic with static-IP failover
+
+Note also: **CloudFront caching itself** insulates against origin outages for the duration of TTL. A long TTL on static content (e.g., 1 day) means an origin failure during that window is invisible to users. This is the **"static stability via Availability Zones"** principle from Becky Weiss's AWS Builders' Library article — the same idea applied to regions.
+
+**Discussion (Socratic).**
+- **Q1.** AWS's own *Service Health Dashboard* was unreachable during parts of the December 2021 outage because *it also ran in us-east-1*. Defend AWS's choice to centralize. What's the architectural reason AWS would put the SHD in one region, and what's the right pattern?
+- **Q2.** A startup CTO argues: "us-east-1 is cheapest and most-feature-complete; multi-region triples our cost. We'll accept the outage risk." For what kinds of business and what SLA does this argument actually hold up?
+- **Q3.** The June 2023 outage affected EventBridge and Lambda — which means many "event-driven" architectures stopped processing events. If you'd built a backup path through SQS (which uses a different subsystem), would you have survived? Argue for and against intentionally building redundant async paths.
+
+---
+
+## 💬 Discussion — Socratic Prompts
+
+1. **CloudFront caching vs origin shield.** Origin Shield is an additional regional cache between CloudFront edges and your origin. For what kind of workload and traffic pattern does Origin Shield pay for itself, and when is it a waste?
+2. **Lambda@Edge vs CloudFront Functions — modern decision rule.** CloudFront Functions is dramatically cheaper but capability-limited. Lambda@Edge is more flexible. Build a decision tree for picking between them.
+3. **Signed URLs vs Cognito-protected CloudFront distributions.** Both restrict access. Signed URLs are simpler but per-object/per-cookie. Cognito-protected is dynamic and identity-aware. When is each the right pattern?
+4. **AWS Global Accelerator's $18/month base cost.** GA charges a flat ~$18/month minimum even at zero traffic. At what request volume does that fixed cost become trivial vs prohibitive?
+5. **WAF managed rule groups vs custom rules.** Managed rules (AWS WAF Bot Control, OWASP Top 10, etc.) cost monthly per rule group. Custom rules require operational maintenance. What's the trade-off matrix at a 50-engineer startup vs a 5,000-engineer enterprise?
+
+---
+
+## ➡️ Where This Leads
+
+> **Where this leads.**
+> - **Inside this course:** Module 09 (Monitoring) covers CloudWatch Synthetics canary scripts that proactively test multi-region failover. Module 10 (DR) covers the active-active and active-passive patterns that survived these outages.
+> - **Cross-course:** `06-Azure-Administrator` Module 08 covers Azure Front Door — the Azure analog of CloudFront + Global Accelerator combined. `09-CompTIA-Security-Plus` Module 05 covers WAF and DDoS theory at the academic level.
+> - **Practice:** Practice Exam 1 has 4 edge/CDN questions; Practice Exam 2 has 5; Final Mock has 6.
+> - **Real world:** Set up a personal CloudFront distribution in front of an S3 bucket with OAC. Free tier covers a year of typical hobbyist usage.
+
+---
+
+## 📚 Further Sources (This Module)
+
+**AWS official**
+- 📖 **CloudFront Developer Guide** — `docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/`
+- 📖 **Global Accelerator Developer Guide** — `docs.aws.amazon.com/global-accelerator/latest/dg/`
+- 📖 **Route 53 Developer Guide** — `docs.aws.amazon.com/Route53/latest/DeveloperGuide/`
+- 📖 **AWS WAF Developer Guide** — `docs.aws.amazon.com/waf/latest/developerguide/`
+- 📖 **AWS Builders' Library — *"Static stability using Availability Zones"* (Becky Weiss)** — the canonical resilience essay; explicitly cited as the basis for multi-AZ design patterns.
+
+**re:Invent talks**
+- 🎤 **NET306 (2023): *Deep dive on Amazon CloudFront*** — exam-aligned 60-minute talk.
+- 🎤 **NET406 (2023): *AWS edge networking — Global Accelerator, CloudFront, and Route 53 together***
+- 🎤 **ARC301 (2023): *Resilience patterns and anti-patterns at AWS scale*** — references the 2021 outage.
+
+**Post-mortems (incident summaries — public)**
+- 📄 **AWS Service Event in N. Virginia Region, December 7, 2021** — `aws.amazon.com/message/12721/`
+- 📄 **AWS Service Event in Northern Virginia Region, June 13, 2023** — published in AWS message archive.
+- 📰 **Parametrix Insurance — *Cloud Outage Cost Report 2022*** — quantifies the 2021 outage's economic impact.
+
+**Academic foundations**
+- 📄 **Brewer, Eric (2017).** *Spanner, TrueTime and the CAP Theorem.* Google Research Technical Report. Updated take on global distributed systems trade-offs — directly relevant to Aurora Global vs DynamoDB Global Tables.

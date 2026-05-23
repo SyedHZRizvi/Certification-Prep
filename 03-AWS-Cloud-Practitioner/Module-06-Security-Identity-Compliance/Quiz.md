@@ -6,7 +6,7 @@
 
 ## Questions
 
-### Q1. Per the Shared Responsibility Model, who is responsible for patching the guest OS on an EC2 instance?
+### Q1. Per the Shared Responsibility Model, who is responsible for patching the guest OS on an EC2 instance? *(Remember)*
 A. AWS
 B. The customer
 C. Split 50/50
@@ -14,7 +14,7 @@ D. AWS during business hours
 
 ---
 
-### Q2. Per the Shared Responsibility Model, who is responsible for the physical security of AWS data centers?
+### Q2. Per the Shared Responsibility Model, who is responsible for the physical security of AWS data centers? *(Remember)*
 A. AWS
 B. The customer
 C. The country where the DC is located
@@ -22,7 +22,7 @@ D. AWS only for premium customers
 
 ---
 
-### Q3. Which IAM best practice is MOST important?
+### Q3. Which IAM best practice is MOST important? *(Evaluate)*
 A. Use the root user for daily admin tasks
 B. Share IAM credentials across the team
 C. Enable MFA and grant least privilege
@@ -30,7 +30,7 @@ D. Use a single shared IAM user for everyone
 
 ---
 
-### Q4. To allow an EC2 instance to read from an S3 bucket WITHOUT embedding credentials, you should:
+### Q4. To allow an EC2 instance to read from an S3 bucket WITHOUT embedding credentials, you should: *(Apply)*
 A. Create an IAM user, put the access keys on the instance
 B. Attach an IAM Role to the EC2 instance with the right S3 permissions
 C. Make the S3 bucket public
@@ -38,7 +38,7 @@ D. Use the root user's credentials
 
 ---
 
-### Q5. In an IAM policy, if a user has both an "Allow s3:GetObject" and a "Deny s3:GetObject":
+### Q5. In an IAM policy, if a user has both an "Allow s3:GetObject" and a "Deny s3:GetObject": *(Analyze)*
 A. Allow wins
 B. Deny wins (explicit deny always wins)
 C. Whichever was attached most recently
@@ -46,7 +46,7 @@ D. The user gets read-write
 
 ---
 
-### Q6. Which service discovers and classifies PII (e.g., credit card numbers, SSNs) inside Amazon S3 buckets?
+### Q6. Which service discovers and classifies PII (e.g., credit card numbers, SSNs) inside Amazon S3 buckets? *(Remember)*
 A. GuardDuty
 B. Macie
 C. Inspector
@@ -54,7 +54,7 @@ D. Trusted Advisor
 
 ---
 
-### Q7. Which service detects anomalous behavior in your AWS account (crypto-mining, port scans, unusual API calls) by analyzing logs?
+### Q7. Which service detects anomalous behavior in your AWS account (crypto-mining, port scans, unusual API calls) by analyzing logs? *(Apply)*
 A. GuardDuty
 B. Macie
 C. WAF
@@ -62,7 +62,7 @@ D. Shield
 
 ---
 
-### Q8. Which service scans EC2 instances, ECR container images, and Lambda functions for software vulnerabilities (CVEs)?
+### Q8. Which service scans EC2 instances, ECR container images, and Lambda functions for software vulnerabilities (CVEs)? *(Apply)*
 A. GuardDuty
 B. Inspector
 C. Macie
@@ -70,7 +70,7 @@ D. Config
 
 ---
 
-### Q9. To block SQL injection and XSS attacks at the HTTP layer in front of CloudFront or an ALB, use:
+### Q9. To block SQL injection and XSS attacks at the HTTP layer in front of CloudFront or an ALB, use: *(Apply)*
 A. AWS Shield Standard
 B. AWS WAF
 C. AWS GuardDuty
@@ -78,7 +78,7 @@ D. AWS Network Firewall
 
 ---
 
-### Q10. AWS Shield Standard is:
+### Q10. AWS Shield Standard is: *(Remember)*
 A. A premium subscription costing $3,000/month
 B. Free and automatically enabled for ELB, CloudFront, Route 53
 C. Only for Enterprise Support customers
@@ -86,7 +86,7 @@ D. A vulnerability scanner
 
 ---
 
-### Q11. AWS Shield Advanced provides which extra benefit over Shield Standard?
+### Q11. AWS Shield Advanced provides which extra benefit over Shield Standard? *(Analyze)*
 A. Free TLS certificates
 B. 24/7 access to the AWS DDoS Response Team + cost protection during attacks
 C. Multi-region replication
@@ -94,7 +94,7 @@ D. Free S3 storage
 
 ---
 
-### Q12. Which service stores secrets (DB passwords, API keys) with built-in automatic rotation?
+### Q12. Which service stores secrets (DB passwords, API keys) with built-in automatic rotation? *(Apply)*
 A. AWS Systems Manager Parameter Store
 B. AWS Secrets Manager
 C. S3 with KMS
@@ -102,7 +102,7 @@ D. IAM roles
 
 ---
 
-### Q13. AWS KMS is used to:
+### Q13. AWS KMS is used to: *(Remember)*
 A. Manage IAM users
 B. Create and manage encryption keys for AWS services and your applications
 C. Block DDoS attacks
@@ -110,7 +110,7 @@ D. Audit API calls
 
 ---
 
-### Q14. For workloads that require a dedicated FIPS 140-2 Level 3 hardware security module, use:
+### Q14. For workloads that require a dedicated FIPS 140-2 Level 3 hardware security module, use: *(Apply)*
 A. KMS Customer Managed Keys
 B. AWS CloudHSM
 C. Secrets Manager
@@ -118,7 +118,7 @@ D. AWS Certificate Manager
 
 ---
 
-### Q15. AWS Certificate Manager (ACM) provides:
+### Q15. AWS Certificate Manager (ACM) provides: *(Understand)*
 A. Paid SSL/TLS certificates only
 B. Free public TLS certificates for use with ELB, CloudFront, API Gateway
 C. Code-signing certificates only
@@ -126,7 +126,7 @@ D. Compliance audits
 
 ---
 
-### Q16. Which service tracks WHO made WHICH API call in your AWS account?
+### Q16. Which service tracks WHO made WHICH API call in your AWS account? *(Remember)*
 A. AWS Config
 B. AWS CloudTrail
 C. CloudWatch
@@ -134,7 +134,7 @@ D. Trusted Advisor
 
 ---
 
-### Q17. Which service tracks resource CONFIGURATIONS over time and evaluates them against compliance rules?
+### Q17. Which service tracks resource CONFIGURATIONS over time and evaluates them against compliance rules? *(Apply)*
 A. AWS CloudTrail
 B. AWS Config
 C. GuardDuty
@@ -142,7 +142,7 @@ D. CloudWatch
 
 ---
 
-### Q18. To centrally aggregate security findings from GuardDuty, Inspector, Macie, and partner tools in a single dashboard, use:
+### Q18. To centrally aggregate security findings from GuardDuty, Inspector, Macie, and partner tools in a single dashboard, use: *(Apply)*
 A. AWS Security Hub
 B. AWS Artifact
 C. CloudWatch Logs
@@ -150,7 +150,7 @@ D. AWS Detective
 
 ---
 
-### Q19. Where do you go to download SOC 2 / ISO 27001 / PCI DSS compliance reports about AWS?
+### Q19. Where do you go to download SOC 2 / ISO 27001 / PCI DSS compliance reports about AWS? *(Remember)*
 A. AWS Trusted Advisor
 B. AWS Artifact
 C. AWS Security Hub
@@ -158,7 +158,7 @@ D. AWS Config
 
 ---
 
-### Q20. AWS Organizations + Service Control Policies (SCPs) are used to:
+### Q20. AWS Organizations + Service Control Policies (SCPs) are used to: *(Understand)*
 A. Encrypt data at rest
 B. Apply guardrails across multiple AWS accounts (e.g., "no account can launch EC2 outside us-east-1")
 C. Manage IAM users in one account
@@ -166,7 +166,7 @@ D. Provide DDoS protection
 
 ---
 
-### Q21. The IAM root user should:
+### Q21. The IAM root user should: *(Understand)*
 A. Be used for all daily tasks
 B. Be locked down with MFA and used only for a small set of account-level tasks
 C. Be shared with developers
@@ -174,7 +174,7 @@ D. Not have MFA enabled
 
 ---
 
-### Q22. Which is the BEST approach for federated workforce login across multiple AWS accounts and 3rd-party SaaS apps?
+### Q22. Which is the BEST approach for federated workforce login across multiple AWS accounts and 3rd-party SaaS apps? *(Apply)*
 A. Create individual IAM users in every account
 B. Use AWS IAM Identity Center (formerly AWS SSO)
 C. Use the root user
@@ -182,7 +182,7 @@ D. Disable IAM
 
 ---
 
-### Q23. Which of the following is a CUSTOMER responsibility for an RDS database?
+### Q23. Which of the following is a CUSTOMER responsibility for an RDS database? *(Analyze)*
 A. Patching the underlying OS
 B. Managing the database engine binaries
 C. Granting permissions to database users + securing the data inside
@@ -190,7 +190,7 @@ D. Physical hardware maintenance
 
 ---
 
-### Q24. AWS Audit Manager is BEST described as:
+### Q24. AWS Audit Manager is BEST described as: *(Understand)*
 A. A web app firewall
 B. A service that helps continuously audit AWS usage for compliance with frameworks like PCI, HIPAA
 C. A DDoS protection layer
@@ -198,7 +198,7 @@ D. A migration tool
 
 ---
 
-### Q25. To centralize and investigate the root cause of a security event using ML and graph analysis, the BEST service is:
+### Q25. To centralize and investigate the root cause of a security event using ML and graph analysis, the BEST service is: *(Apply)*
 A. AWS Detective
 B. GuardDuty
 C. Macie
@@ -206,7 +206,7 @@ D. Inspector
 
 ---
 
-### Q26. Encryption "in transit" refers to:
+### Q26. Encryption "in transit" refers to: *(Remember)*
 A. Data encrypted while stored on disk
 B. Data encrypted as it moves over the network (TLS/SSL)
 C. Data encrypted only in memory

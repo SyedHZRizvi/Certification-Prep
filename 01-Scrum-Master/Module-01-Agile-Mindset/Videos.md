@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~45 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Agile+Project+Management+Brent+Aubin" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Agile+Project+Management+Brent+Aubin" target="_blank" rel="noopener" data-video-id="D5FoRXGa8ic">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 9 min · 🍕 Pizza analogy</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Mountain+Goat+Software+Agile+Manifesto" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Mountain+Goat+Software+Agile+Manifesto" target="_blank" rel="noopener" data-video-id="QaXxpJoJZTQ">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 8 min · Why each value matters</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=What+Is+Empiricism+in+Scrum+Scrum.org" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=What+Is+Empiricism+in+Scrum+Scrum.org" target="_blank" rel="noopener" data-video-id="q603WTOSYDk">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 6 min · The 3 pillars</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Agile+vs+Waterfall+Simplilearn" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Agile+vs+Waterfall+Simplilearn" target="_blank" rel="noopener" data-video-id="c3sGVZb-8Ns">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~30 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Agile+in+3+Minutes+Mark+Shead" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Agile+in+3+Minutes+Mark+Shead" target="_blank" rel="noopener" data-video-id="Yg1HpmmKcd4">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 3 min · Quick reinforcement</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Development+That+Pays+12+Principles+Agile+Manifesto" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Development+That+Pays+12+Principles+Agile+Manifesto" target="_blank" rel="noopener" data-video-id="qWNpvzsdn1c">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 14 min · Which principles really matter</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Henrik+Kniberg+Agile+Product+Ownership+in+a+Nutshell" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Henrik+Kniberg+Agile+Product+Ownership+in+a+Nutshell" target="_blank" rel="noopener" data-video-id="3qP27HEkHE8">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Atlassian+Agile+Transformation" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Atlassian+Agile+Transformation" target="_blank" rel="noopener" data-video-id="P8BXg88g0V8">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 25 min · Real failures &amp; wins</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Why+Agile+Works+Gartner" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Why+Agile+Works+Gartner" target="_blank" rel="noopener" data-video-id="2idGYIY13rQ">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 18 min · Critical perspective</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Agile+Manifesto+20+Years+Later" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Agile+Manifesto+20+Years+Later" target="_blank" rel="noopener" data-video-id="ZkivgUKqmX4">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

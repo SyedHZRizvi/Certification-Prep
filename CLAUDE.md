@@ -47,11 +47,20 @@ If you have a strong reason to change one of the above, ask the human first. Do 
 
 ### 1.2 Never commit any of the following
 
-- Direct YouTube video URLs (`youtube.com/watch?v=...` or `youtu.be/...`). The site uses **search URLs only** (`youtube.com/results?search_query=...`) so dead-link rot is impossible.
+- Direct YouTube video URLs **in `href` attributes** (`youtube.com/watch?v=...` or `youtu.be/...`). The `href` of every `.vg-card` link must remain a `youtube.com/results?search_query=...` URL so dead-link rot gracefully degrades to a live search.
 - Copyrighted exam-dump questions. All practice and quiz questions must be original, written in the spirit of the published exam objectives.
 - Secrets, API keys, `.env` files, or credentials. There are none in this repo. Keep it that way.
 - Generated build output: `_site/`, `.jekyll-cache/`, `.bundle/`, `_dev/backup-practice-exams/` should stay gitignored where appropriate.
-- Changes that disable, weaken, or work around `assets/protect.js`. Content protection is a product feature.
+- Changes that disable, weaken, or work around `assets/protect.js` or `assets/freshness.js`. Content protection and cache busting are product features.
+
+### 1.2.1 Video cards — policy update (2026-05-22)
+
+Effective 2026-05-22, every `.vg-card` link in `Videos.md` files SHOULD have a `data-video-id="<11-char-YouTube-ID>"` attribute so the in-page modal player (`assets/video-modal.js`) can render the video inline without leaving the site.
+
+- The `href` remains the YouTube search URL — it's the **fallback** if no `data-video-id` is set (and is also what's used by the verifier).
+- A `data-video-id` value is **not a URL** — it's an 11-character ID `[A-Za-z0-9_-]{11}`. It does NOT violate §1.2's direct-URL prohibition.
+- This trade-off was made deliberately: the user explicitly chose inline playback (better UX) over absolute dead-link immunity. Periodic re-curation will be needed.
+- Curation agents must NEVER change the `href` to a direct video URL — only ADD the `data-video-id` attribute. The href stays as the search-URL fallback.
 
 ### 1.3 Never bypass the verifier
 

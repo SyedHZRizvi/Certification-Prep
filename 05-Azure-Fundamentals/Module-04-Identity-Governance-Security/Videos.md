@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~50 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+Microsoft+Entra+ID+overview" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="bSIF_GjaCmo" href="https://www.youtube.com/results?search_query=John+Savill+Microsoft+Entra+ID+overview" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 20 min · The deep dive</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Adam+Marczak+Azure+RBAC+role+based+access+control" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="4v7ffXxOnwU" href="https://www.youtube.com/results?search_query=Adam+Marczak+Azure+RBAC+role+based+access+control" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 10 min · Owner/Contrib/Reader</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Adam+Marczak+Azure+Policy+vs+RBAC" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="9WO4EBgUJXk" href="https://www.youtube.com/results?search_query=Adam+Marczak+Azure+Policy+vs+RBAC" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 10 min · Stops the confusion</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Microsoft+Learn+conditional+access+MFA" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="9a7Oa6iZR5s" href="https://www.youtube.com/results?search_query=Microsoft+Learn+conditional+access+MFA" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~30 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+Microsoft+Defender+for+Cloud" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="eWcoMi_nQt4" href="https://www.youtube.com/results?search_query=John+Savill+Microsoft+Defender+for+Cloud" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 14 min · CSPM + CWPP</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Microsoft+Sentinel+SIEM+SOAR+overview" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="rnpQukfG1yo" href="https://www.youtube.com/results?search_query=Microsoft+Sentinel+SIEM+SOAR+overview" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 12 min · Big-picture</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Microsoft+Zero+Trust+model+explained" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="bZCH4nkNP34" href="https://www.youtube.com/results?search_query=Microsoft+Zero+Trust+model+explained" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Key+Vault+secrets+keys+certificates" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="AA3yYg9Zq9w" href="https://www.youtube.com/results?search_query=Azure+Key+Vault+secrets+keys+certificates" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 10 min · Secrets, keys, certs</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+resource+locks+CanNotDelete+ReadOnly" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="ljHBlkGwBH4" href="https://www.youtube.com/results?search_query=Azure+resource+locks+CanNotDelete+ReadOnly" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 8 min · CanNotDelete vs ReadOnly</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Microsoft+Entra+External+ID+B2B+B2C" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="EfVs5qurGBU" href="https://www.youtube.com/results?search_query=Microsoft+Entra+External+ID+B2B+B2C" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

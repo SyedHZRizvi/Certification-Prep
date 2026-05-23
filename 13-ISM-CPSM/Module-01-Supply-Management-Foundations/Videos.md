@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~55 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=ISM+CPSM+overview+supply+management+definition" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="Mi1QBxVjZAw" href="https://www.youtube.com/results?search_query=ISM+CPSM+overview+supply+management+definition" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 10 min · Purchasing vs supply mgmt</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Porter+Five+Forces+explained+supply+management" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="SF9IBotMau0" href="https://www.youtube.com/results?search_query=Porter+Five+Forces+explained+supply+management" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 12 min · Supplier power deep dive</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Porter+value+chain+explained+animated" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="tT60_TofYf4" href="https://www.youtube.com/results?search_query=Porter+value+chain+explained+animated" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 8 min · Primary vs support activities</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=centralized+vs+decentralized+procurement+organization" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="o0qSTx10mr8" href="https://www.youtube.com/results?search_query=centralized+vs+decentralized+procurement+organization" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -61,7 +61,7 @@
       <span class="vg-duration">⏱ 15 min · Pros, cons, hybrid model</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=procurement+maturity+model+explained" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="P38alqwPQc4" href="https://www.youtube.com/results?search_query=procurement+maturity+model+explained" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -75,7 +75,7 @@
 ## 📚 Recommended (~35 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=make+or+buy+analysis+decision+framework" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="vQLPr75V5Dg" href="https://www.youtube.com/results?search_query=make+or+buy+analysis+decision+framework" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 12 min · Factors and worked example</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=strategic+sourcing+process+seven+steps" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="ompFLoFgDzY" href="https://www.youtube.com/results?search_query=strategic+sourcing+process+seven+steps" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -93,7 +93,7 @@
       <span class="vg-duration">⏱ 14 min · From need to award</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=CPSM+exam+prep+strategy+foundation" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="sFdfHuuNDv0" href="https://www.youtube.com/results?search_query=CPSM+exam+prep+strategy+foundation" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -107,7 +107,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=supply+chain+strategy+alignment+corporate" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="8f88e3yVrbQ" href="https://www.youtube.com/results?search_query=supply+chain+strategy+alignment+corporate" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 22 min · Hau Lee framework</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=center+of+excellence+procurement+best+practice" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="DDCFx9uz6dE" href="https://www.youtube.com/results?search_query=center+of+excellence+procurement+best+practice" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

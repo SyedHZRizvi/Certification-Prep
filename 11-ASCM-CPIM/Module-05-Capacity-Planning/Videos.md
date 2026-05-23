@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~58 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Capacity+Planning+Hierarchy+RRP+RCCP+CRP" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="X-JeePiJHU4" href="https://www.youtube.com/results?search_query=Capacity+Planning+Hierarchy+RRP+RCCP+CRP" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 16 min · The 4-layer model</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Theory+of+Constraints+Goldratt+5+focusing+steps" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="EqD5jZPwbeQ" href="https://www.youtube.com/results?search_query=Theory+of+Constraints+Goldratt+5+focusing+steps" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 14 min · Identify-Exploit-Subordinate-Elevate-Repeat</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Drum+Buffer+Rope+DBR+TOC+scheduling" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="WGhwLG1t8pc" href="https://www.youtube.com/results?search_query=Drum+Buffer+Rope+DBR+TOC+scheduling" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 12 min · Scheduling around the constraint</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Rated+capacity+utilization+efficiency+example" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="eSE8AMAnSMU" href="https://www.youtube.com/results?search_query=Rated+capacity+utilization+efficiency+example" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~30 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Bill+of+resources+RCCP+example" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="mDEgxn-Fnjs" href="https://www.youtube.com/results?search_query=Bill+of+resources+RCCP+example" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 10 min · Simplified BOM for capacity</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Lead+lag+match+capacity+strategy" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="k0Jbs3_3gRE" href="https://www.youtube.com/results?search_query=Lead+lag+match+capacity+strategy" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 10 min · Trade-offs explained</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Input+Output+control+shop+floor+capacity" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="lnlRKypRBbU" href="https://www.youtube.com/results?search_query=Input+Output+control+shop+floor+capacity" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=The+Goal+Goldratt+audiobook+summary" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="M8IzE2IEvfE" href="https://www.youtube.com/results?search_query=The+Goal+Goldratt+audiobook+summary" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 28 min · The TOC novel</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Finite+capacity+scheduling+APS+software" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="doTtPmRAi6Q" href="https://www.youtube.com/results?search_query=Finite+capacity+scheduling+APS+software" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 22 min · Beyond standard MRP</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Throughput+accounting+TOC+performance" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="9ZnNhLJtTrM" href="https://www.youtube.com/results?search_query=Throughput+accounting+TOC+performance" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

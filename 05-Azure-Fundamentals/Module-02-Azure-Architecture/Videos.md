@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~45 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+Azure+regions+availability+zones" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="4nDRvZR2EjU" href="https://www.youtube.com/results?search_query=John+Savill+Azure+regions+availability+zones" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 15 min · Physical hierarchy</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Adam+Marczak+Azure+resource+groups+management+groups" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="Ih2x3epVSxo" href="https://www.youtube.com/results?search_query=Adam+Marczak+Azure+resource+groups+management+groups" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 12 min · Logical hierarchy</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Microsoft+Learn+Azure+global+infrastructure" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="iaAr0Ic1-Vo" href="https://www.youtube.com/results?search_query=Microsoft+Learn+Azure+global+infrastructure" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 10 min · Map view</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Tim+Warner+AZ-900+resource+hierarchy" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="OrCEF3okWLM" href="https://www.youtube.com/results?search_query=Tim+Warner+AZ-900+resource+hierarchy" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~25 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+Azure+management+groups+deep+dive" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="0wuaXqPA53U" href="https://www.youtube.com/results?search_query=John+Savill+Azure+management+groups+deep+dive" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 14 min · Inheritance + scale</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+sovereign+regions+government+cloud" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="PdAEPAnT2uI" href="https://www.youtube.com/results?search_query=Azure+sovereign+regions+government+cloud" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 8 min · Compliance regions</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Adam+Marczak+Azure+availability+zones+vs+availability+sets" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="C-nNw1mGwzE" href="https://www.youtube.com/results?search_query=Adam+Marczak+Azure+availability+zones+vs+availability+sets" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+region+pairs+GRS+geo+redundant" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="yBkZYhL1wj4" href="https://www.youtube.com/results?search_query=Azure+region+pairs+GRS+geo+redundant" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 12 min · Cross-region replication</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Cloud+Adoption+Framework+Azure+landing+zones" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="w7Unnvd7U-s" href="https://www.youtube.com/results?search_query=Cloud+Adoption+Framework+Azure+landing+zones" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 20 min · Beyond AZ-900 but useful</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+resource+manager+ARM+architecture" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="EDdygbBbEiM" href="https://www.youtube.com/results?search_query=Azure+resource+manager+ARM+architecture" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

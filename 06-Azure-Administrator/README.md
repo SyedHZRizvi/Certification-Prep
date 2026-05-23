@@ -56,6 +56,15 @@ By the end of this track, you'll be able to:
 
 ---
 
+## 🎓 Capstone & Recommended Readings
+
+Two new course-root resources extend this AZ-104 program beyond exam prep into Cornell/Harvard/Stanford-grade case-method learning:
+
+- **[Capstone Project](./Capstone-Project.md)** — a 14-week, 7-deliverable scenario where you stand up a HIPAA + HITRUST production Azure landing zone for a 4,200-person regional health system on a $1.6M budget. Integrates every module via a 100-point rubric. Built for the elevation spec's "Cornell/Harvard/Stanford" bar.
+- **[Recommended Readings](./Recommended-Readings.md)** — the canonical textbooks (Exam Ref AZ-104 / CAF / Nadella's *Hit Refresh*), seminal papers (Saltzer & Schroeder 1975 on least privilege; Brewer 2000 on CAP), industry channels (John Savill, Adam Marczak, Microsoft Mechanics, Tim Warner), and free academic courses (MIT 6.824, Stanford CS-144) that reinforce the underlying CS.
+
+---
+
 ## 📖 The Single Most Important Resource
 
 🔗 **[Microsoft Learn AZ-104 study guide](https://learn.microsoft.com/credentials/certifications/resources/study-guides/az-104)** — the exact, current list of "skills measured." Print it. Tick off every bullet as you study. Microsoft updates this every 3–6 months — always trust the latest version over any third-party course.

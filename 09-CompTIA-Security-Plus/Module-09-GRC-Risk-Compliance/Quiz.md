@@ -1,12 +1,16 @@
 # ✏️ Module 9 Quiz: GRC, Risk & Compliance
 
 > **Instructions:** 26 questions. Aim for 22/26. Heavy on definitions and formulas.
+>
+> Every question is tagged with its **Bloom's taxonomy level**.
+>
+> **Bloom distribution (this quiz):** Remember 6 (23%) · Understand 7 (27%) · Apply 7 (27%) · Analyze/Evaluate 5 (19%) · Create 1 (4%).
 
 ---
 
 ## Questions
 
-### Q1. Which document is the HIGHEST level of governance authority?
+### Q1. Which document is the HIGHEST level of governance authority? *(Remember)*
 A. Procedure
 B. Standard
 C. Policy
@@ -14,7 +18,7 @@ D. Guideline
 
 ---
 
-### Q2. SLE × ARO equals:
+### Q2. SLE × ARO equals: *(Remember)*
 A. EF
 B. AV
 C. ALE
@@ -22,7 +26,7 @@ D. ROI
 
 ---
 
-### Q3. An asset is valued at $400,000. Each successful ransomware event destroys 25% of its value, and you expect 0.5 events/year. The ALE is:
+### Q3. An asset is valued at $400,000. Each successful ransomware event destroys 25% of its value, and you expect 0.5 events/year. The ALE is: *(Apply)*
 A. $25,000
 B. $50,000
 C. $100,000
@@ -30,7 +34,7 @@ D. $200,000
 
 ---
 
-### Q4. Buying cyber insurance is a form of:
+### Q4. Buying cyber insurance is a form of: *(Understand)*
 A. Risk avoidance
 B. Risk mitigation
 C. Risk transfer
@@ -38,7 +42,7 @@ D. Risk acceptance
 
 ---
 
-### Q5. After implementing controls, the risk that REMAINS is called:
+### Q5. After implementing controls, the risk that REMAINS is called: *(Remember)*
 A. Inherent risk
 B. Residual risk
 C. Risk appetite
@@ -46,7 +50,7 @@ D. Risk register
 
 ---
 
-### Q6. Risk appetite refers to:
+### Q6. Risk appetite refers to: *(Understand)*
 A. The number of risks
 B. The amount of risk the org is willing to pursue to meet objectives
 C. The cost of one incident
@@ -54,7 +58,7 @@ D. The likelihood × impact
 
 ---
 
-### Q7. A central list of risks with owners, treatments, and statuses is a:
+### Q7. A central list of risks with owners, treatments, and statuses is a: *(Remember)*
 A. SLA
 B. Risk register
 C. RACI matrix
@@ -62,7 +66,7 @@ D. CMDB
 
 ---
 
-### Q8. Which document is an umbrella contract covering an ongoing vendor relationship?
+### Q8. Which document is an umbrella contract covering an ongoing vendor relationship? *(Understand)*
 A. SOW
 B. SLA
 C. MSA
@@ -70,7 +74,7 @@ D. MOU
 
 ---
 
-### Q9. A document detailing project-specific scope and deliverables (often under an MSA) is:
+### Q9. A document detailing project-specific scope and deliverables (often under an MSA) is: *(Understand)*
 A. NDA
 B. SOW
 C. SLA
@@ -78,7 +82,7 @@ D. BPA
 
 ---
 
-### Q10. An SLA primarily defines:
+### Q10. An SLA primarily defines: *(Understand)*
 A. Confidentiality terms
 B. Scope of project
 C. Service performance metrics and remedies (uptime, response times)
@@ -86,7 +90,7 @@ D. Risk appetite
 
 ---
 
-### Q11. A non-binding statement of intent to cooperate between two parties is a:
+### Q11. A non-binding statement of intent to cooperate between two parties is a: *(Understand)*
 A. MOU
 B. MSA
 C. NDA
@@ -94,7 +98,7 @@ D. SOW
 
 ---
 
-### Q12. Two interconnecting systems sign an agreement that specifies the security requirements for the connection. This is:
+### Q12. Two interconnecting systems sign an agreement that specifies the security requirements for the connection. This is: *(Apply)*
 A. SLA
 B. ISA (Interconnection Security Agreement)
 C. SOW
@@ -102,7 +106,7 @@ D. MOA
 
 ---
 
-### Q13. Which is REQUIRED by GDPR when a third-party "processor" handles personal data on your behalf?
+### Q13. Which is REQUIRED by GDPR when a third-party "processor" handles personal data on your behalf? *(Apply)*
 A. SLA
 B. DPA (Data Processing Agreement)
 C. MOU
@@ -110,7 +114,7 @@ D. ISA
 
 ---
 
-### Q14. The HIPAA-required contract with a vendor that handles Protected Health Information is the:
+### Q14. The HIPAA-required contract with a vendor that handles Protected Health Information is the: *(Apply)*
 A. BAA (Business Associate Agreement)
 B. SLA
 C. MOU
@@ -118,7 +122,7 @@ D. DPA
 
 ---
 
-### Q15. NIST CSF's five functions (v1) are:
+### Q15. NIST CSF's five functions (v1) are: *(Remember)*
 A. Plan, Build, Run, Operate, Improve
 B. Identify, Protect, Detect, Respond, Recover
 C. Detect, Defend, Deter, Deny, Destroy
@@ -126,7 +130,7 @@ D. Prevent, Protect, Patch, Punish, Praise
 
 ---
 
-### Q16. Which framework provides a prioritized list of 18 controls?
+### Q16. Which framework provides a prioritized list of 18 controls? *(Apply)*
 A. NIST 800-53
 B. ISO 27001
 C. CIS Controls v8
@@ -134,7 +138,7 @@ D. COBIT
 
 ---
 
-### Q17. ISO 27001 certification primarily attests to:
+### Q17. ISO 27001 certification primarily attests to: *(Apply)*
 A. The existence of an Information Security Management System
 B. The strength of the company's firewall
 C. PCI compliance
@@ -142,7 +146,7 @@ D. Employee security clearance
 
 ---
 
-### Q18. PCI-DSS applies to:
+### Q18. PCI-DSS applies to: *(Analyze)*
 A. Healthcare records
 B. Anyone storing, processing, or transmitting cardholder data
 C. EU residents only
@@ -150,7 +154,7 @@ D. US federal agencies
 
 ---
 
-### Q19. RTO refers to:
+### Q19. RTO refers to: *(Remember)*
 A. Maximum acceptable data loss
 B. Maximum acceptable downtime
 C. Mean time between failures
@@ -158,7 +162,7 @@ D. Backup retention period
 
 ---
 
-### Q20. RPO refers to:
+### Q20. RPO refers to: *(Remember)*
 A. Maximum acceptable downtime
 B. Maximum acceptable data loss (expressed in time)
 C. Mean time to repair
@@ -166,7 +170,7 @@ D. Network throughput
 
 ---
 
-### Q21. A fully equipped DR site with real-time data replication ready to take over immediately is a:
+### Q21. A fully equipped DR site with real-time data replication ready to take over immediately is a: *(Apply)*
 A. Cold site
 B. Warm site
 C. Hot site
@@ -174,7 +178,7 @@ D. Mobile site
 
 ---
 
-### Q22. The 3-2-1 backup rule says you should have:
+### Q22. The 3-2-1 backup rule says you should have: *(Remember)*
 A. 3 copies, 2 different media, 1 off-site
 B. 3 backups per day, 2 admins, 1 vault
 C. 3 firewalls, 2 IDSes, 1 SOAR
@@ -182,7 +186,7 @@ D. 3 sites, 2 generators, 1 SLA
 
 ---
 
-### Q23. Which backup type is BEST against ransomware that targets backup files?
+### Q23. Which backup type is BEST against ransomware that targets backup files? *(Evaluate)*
 A. Local NAS backup
 B. Immutable / air-gapped backup
 C. Differential backup
@@ -190,7 +194,7 @@ D. Snapshot only
 
 ---
 
-### Q24. A formal statement signed by an independent auditor (e.g., SOC 2 Type II) is a:
+### Q24. A formal statement signed by an independent auditor (e.g., SOC 2 Type II) is a: *(Analyze)*
 A. Self-assessment
 B. Attestation
 C. Vulnerability report
@@ -198,7 +202,7 @@ D. Penetration test
 
 ---
 
-### Q25 (Scenario). Your org processes EU personal data and US health records via a SaaS vendor. Which two CONTRACTS are essential?
+### Q25 (Scenario). Your org processes EU personal data and US health records via a SaaS vendor. Which two CONTRACTS are essential? *(Analyze)*
 A. NDA + SLA
 B. DPA (GDPR) + BAA (HIPAA)
 C. MSA + SOW only
@@ -206,7 +210,7 @@ D. ISA + BPA
 
 ---
 
-### Q26 (Scenario). After analyzing risk, exec leadership signs a formal document acknowledging the risk and choosing not to spend resources to mitigate. This is:
+### Q26 (Scenario). After analyzing risk, exec leadership signs a formal document acknowledging the risk and choosing not to spend resources to mitigate. This is: *(Create)*
 A. Avoidance
 B. Mitigation
 C. Documented acceptance

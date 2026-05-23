@@ -114,6 +114,39 @@ Usually wrong:
 
 ---
 
+## 🗺️ Service ↔ Concern Quick Map
+
+| If the scenario says… | Reach for |
+|------------------------|-----------|
+| "bias" / "fairness" / "disparate impact" / "SHAP" | **SageMaker Clarify** |
+| "PII" / "denied topic" / "content filter" at runtime | **Bedrock Guardrails** |
+| "hallucination in RAG outputs" / "grounding check" | **Bedrock Guardrails — Contextual grounding** |
+| "PII discovery in S3 buckets" | **AWS Macie** |
+| "doctor / lawyer / human must review every output" | **Amazon A2I (HITL)** |
+| "customer-authored model documentation" | **SageMaker Model Cards** |
+| "AWS-published documentation for AWS AI services" | **AWS AI Service Cards** |
+| "fairness drift in production" | **SageMaker Model Monitor (Clarify under hood)** |
+| "compare 3 FMs on our data" | **Bedrock Model Evaluation** |
+| "compliance report (SOC, ISO, HIPAA, FedRAMP)" | **AWS Artifact** |
+| "audit-evidence aggregation by framework" | **AWS Audit Manager** |
+| "NIST AI RMF" | US federal voluntary risk framework (Jan 2023) |
+| "EU AI Act" | EU regulation, risk tiers, in force Aug 2024 |
+| "ISO/IEC 42001" | International AI management system standard (Dec 2023) |
+| "NYC Local Law 144" | NYC bias audit requirement for hiring AI (Jul 2023) |
+
+---
+
+## 📚 Reference cases (high-signal recall)
+
+| Case | What it proves | Module |
+|------|----------------|--------|
+| **Air Canada chatbot tribunal (Feb 2024)** | Company is legally responsible for chatbot output; hallucinations bite | 7 |
+| **Amazon Rekognition gender-bias study (ACLU, 2018) + police moratorium (2020)** | Disparate error rates by demographic; bias-audit before deployment | 7 |
+| **NYC Local Law 144 (Jul 2023)** | Hiring AI must publish bias audits; regulatory exposure is now real | 7 |
+| **EU AI Act (Aug 2024)** | Risk-tiered AI regulation; fines up to €35M / 7% global revenue | 7, 8 |
+
+---
+
 ## ✏️ Quick Self-Check
 
 1. Clarify vs Guardrails — one line each? ___

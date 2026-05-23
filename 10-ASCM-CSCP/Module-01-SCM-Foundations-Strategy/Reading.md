@@ -2,6 +2,13 @@
 
 > **Why this module matters:** Roughly a quarter of the CSCP exam (Domain 1) tests strategy, scope, and the SCOR vocabulary. If you can't draw a supply chain on a napkin and label it with SCOR terms, every later module sits on sand.
 
+> **Prerequisites for this module.** Before starting, you should be comfortable with:
+> - Basic business literacy (revenue, margin, working capital, inventory turns)
+> - General operations vocabulary (factory, warehouse, distribution, retail)
+> - Reading a simple process diagram
+>
+> No prior supply-chain certification is required — this is the foundation the rest of the CSCP track builds on. If you've completed an MBA operations course, CPIM Module 1, or an undergrad OM elective, skim quickly and use this as a refresher on SCOR 13.0 vocabulary.
+
 ---
 
 ## ☕ A Story: Maria's Coffee Empire
@@ -107,7 +114,7 @@ The Supply Chain Operations Reference (SCOR) model is maintained by ASCM. It's t
 
 ## 🎯 Supply Chain Strategy: Aligning With Corporate Strategy
 
-Hau Lee's classic 2002 framework (Stanford) is gospel on the exam. He says supply chains differ on two axes:
+**Hau Lee's "Triple-A" Supply Chain framework** (Hau L. Lee, *California Management Review* 44(3), Spring 2002, "Aligning Supply Chains with Uncertainty"; expanded in his 2004 HBR article *"The Triple-A Supply Chain"*, Stanford GSB) is gospel on the exam. Lee maps supply chains across two axes — demand uncertainty and supply uncertainty:
 
 |                 | **Low demand uncertainty** | **High demand uncertainty** |
 |-----------------|---------------------------|------------------------------|
@@ -121,9 +128,9 @@ Hau Lee's classic 2002 framework (Stanford) is gospel on the exam. He says suppl
 | **Risk-hedging** | Pool resources to absorb supply shocks | Oil refining, copper | Strategic reserves |
 | **Agile** | Both responsive AND risk-hedged | Aerospace, GPUs in 2023 | Flexible + buffered |
 
-### Fisher's framework (Marshall Fisher, 1997) — even more famous
+### Fisher's framework — even more famous
 
-Match supply chain to **product type**:
+**Marshall L. Fisher, "What Is the Right Supply Chain for Your Product?"** (Harvard Business Review, March-April 1997 — Wharton). Match supply chain to **product type**:
 
 | Product Type | Demand Profile | Right Supply Chain |
 |--------------|---------------|--------------------|
@@ -144,7 +151,7 @@ If corporate strategy is "differentiate on speed," your SC strategy can't be "lo
 
 ## 🏆 Competitive Priorities (Order Winners & Order Qualifiers)
 
-Terry Hill's framework. The exam loves these two terms.
+**Terry Hill, *Manufacturing Strategy*** (Macmillan, 1985; 4th edition Palgrave 2017 — London Business School / OU School of Management). The exam loves these two terms.
 
 | Term | Definition | Example |
 |------|------------|---------|
@@ -236,6 +243,23 @@ Forces shaping today's supply chains (the exam will frame questions around these
 
 ---
 
+## 📊 Case Study — Maersk and the Ever Given Suez Blockage (March 2021)
+
+**Situation.** On 23 March 2021, the 400-metre container ship *Ever Given* wedged itself diagonally across the Suez Canal, halting roughly 12% of global trade for six days. A.P. Møller-Maersk — the world's largest container line by volume, headquartered in Copenhagen — had 30+ vessels in the immediate queue and dozens more headed for the canal. With 12,000+ TEU-class container ships unable to pass, every option (wait, divert around the Cape of Good Hope adding 9–14 days, redistribute cargo via European feeder networks) carried tens of millions of dollars in cost and cascading SLA penalties for cargo owners — from IKEA flat-packs to Caterpillar parts to Adidas footwear.
+
+**Decision.** Maersk made three near-simultaneous calls, broadcast publicly through hourly customer advisories: (1) **multi-modal contingency** — re-routed 28 vessels around the Cape of Good Hope on the same day the salvage operation began, accepting the longer transit rather than gamble on Suez reopening; (2) **information transparency** — published vessel-by-vessel ETAs and proactively notified BCO (beneficial cargo owner) customers, rather than wait for inquiries; (3) **capacity reallocation** — flexed inland European rail capacity (their dual-brand Maersk + Hamburg Süd network plus DSV partnerships) to absorb diverted Mediterranean volumes.
+
+**Outcome.** The canal reopened 29 March 2021, faster than Maersk's worst case. Industry-wide, Lloyd's List estimated the blockage cost **$9.6 billion in held-up trade per day**. Maersk's 2021 EBITDA hit a record **$24 billion** — partially driven by spot freight rate explosions the disruption triggered. Critically, customer surveys post-event ranked Maersk first among carriers for "crisis communication," driving a ~9% gain in long-term contract share in the following 12 months. The Cape diversion cost Maersk an estimated $80–100M in extra bunker and crew expense — but versus the option value of stuck vessels with perishable cargo, the math worked.
+
+**Lesson for the exam / for practitioners.** This is the canonical 2020s case for **Hau Lee's "Agile" supply chain** — high demand uncertainty (which lane will customers actually want?) plus high supply uncertainty (when will the canal reopen?) demanded BOTH responsive moves AND risk-hedging diversification. It's also a textbook example of SCOR **Enable** plus **Deliver** processes under stress: governance, communication, and risk management are not soft "extras" — they are competitive weapons when efficient-mode chains collapse. Pure-cost optimization (single lane via Suez, minimal slack) maximized profit in the 2010s and lost catastrophically in March 2021.
+
+**Discussion (Socratic).**
+- Q1: If you were the CEO of a CPG firm with 40 containers stuck on the Ever Given itself, and Maersk offered you (a) wait + a 50% rebate, or (b) air-freight transshipment at 8× the cost, how would you decide — and what data would you demand first?
+- Q2: Maersk's choice to divert around the Cape *before* the canal status was known looks brilliant in hindsight. What's the analogous decision in your industry where the "expensive insurance" move pays off only in tail-risk events, and how would you defend that spend to a CFO in a normal year?
+- Q3: Lloyd's List has called Suez "the single most fragile chokepoint in global trade." Yet 95% of pre-2021 supply-chain strategies routed through it because it's cheapest. What's the principled framework (cite Hau Lee or Fisher) for when concentration risk is acceptable vs unacceptable?
+
+---
+
 ## ⚠️ Common Misconceptions
 
 | Misconception | Reality |
@@ -301,10 +325,34 @@ You now know:
 
 ---
 
+> **Where this leads.**
+> - Inside this course: Module 2 takes the SCOR vocabulary into network-design and make-or-buy decisions; Module 4 turns the planning hierarchy into the S&OP / MPS / MRP cascade; Module 9 returns to Hau Lee's framework through a sustainability + resilience lens.
+> - Cross-course: `11-ASCM-CPIM` deepens the Plan/Make detail one tier below SCOR; `12-ASCM-CLTD` takes Deliver and Return into logistics depth; `13-ISM-CPSM` extends Source into the procurement strategy depth.
+> - Practice: Practice Exam 1 contains roughly 12–14 questions drawn from this module's frameworks (SCOR, Hau Lee, Fisher, bullwhip, CODP). The Final Mock has cross-module synthesis questions tying SCOR-Enable to risk + sustainability.
+
+---
+
+## 💬 Discussion — Socratic prompts
+
+Use these as journal prompts, study-group questions, or interview-prep drills. Each is open-ended; the best answers cite Fisher, Hau Lee, Porter, or APICS dictionary definitions explicitly.
+
+1. **The "efficient or responsive" inheritance.** You're hired as Chief Supply Chain Officer at a 40-year-old grocery wholesaler that has historically run an *efficient* SC (Fisher) — lowest cost, predictable volumes, low SKU churn. The new CEO wants to launch a fresh-prepared-meals line (innovative product per Fisher). Defend BOTH "run two parallel supply chains, one efficient + one responsive" AND "extend the existing efficient SC because cost discipline is the firm's culture and you can't switch culture in 18 months." Which would you defend at the board?
+2. **SCOR Enable: real or paper?** A skeptical operations VP says SCOR's Enable process is "just IT overhead — Plan/Source/Make/Deliver/Return is where the real work is." Build the strongest counter-argument that Enable belongs as a top-level process, using the Maersk/Ever Given case from this module and at least one APICS dictionary attribute as evidence.
+3. **The CODP move you can't undo.** A consumer electronics firm is debating moving its CODP from "finished goods at the regional DC" (push to FG, current) to "sub-assemblies at the central plant" (ATO). Customer wait goes from 1 day to 5 days; inventory drops 60%. Walk through who wins and who loses in each function (sales, ops, finance, customer service). Which functional leader would torpedo the project, and what concession would you give them?
+4. **Hau Lee's framework under tariff shock.** Donald Trump's 2025 tariff regime made many "efficient" supply chains suddenly "high supply uncertainty." Using Hau Lee's 4-quadrant matrix, what's the migration path: efficient → ??? Defend whether you'd move to risk-hedging (multi-source) or to agile (responsive + risk-hedged), and what the carrying-cost penalty looks like for each.
+5. **Why the bullwhip survives every fix.** Forrester documented the bullwhip effect in 1958. We've had EDI since the 1980s, VMI since the 1990s, CPFR since 2002, and ML demand sensing since 2017. Yet bullwhip during COVID-19 (2020-2022) was as bad as ever. Construct an honest argument for *why* — what root cause does every solution miss, and is there a structural fix or just better mitigation?
+
+---
+
 ## 📚 Further Reading (Optional)
 
-- 📖 Hau L. Lee, *"Aligning Supply Chains with Uncertainty"* — California Management Review, 2002
-- 📖 Marshall L. Fisher, *"What Is the Right Supply Chain for Your Product?"* — HBR, March 1997
+- 📖 Hau L. Lee, *"Aligning Supply Chains with Uncertainty"* — California Management Review, 44(3), 2002 (Stanford GSB)
+- 📖 Hau L. Lee, *"The Triple-A Supply Chain"* — Harvard Business Review, October 2004 (the popular expansion)
+- 📖 Marshall L. Fisher, *"What Is the Right Supply Chain for Your Product?"* — HBR, March-April 1997 (Wharton)
+- 📖 Michael E. Porter, *Competitive Strategy* — Free Press / Harvard Business School Press, 1980 (the value chain reference)
+- 📖 Terry Hill, *Manufacturing Strategy* — Palgrave Macmillan, 4e 2017 (order winner / qualifier original)
 - 📖 SCOR Digital Standard reference: <https://scor.ascm.org/>
-- 📖 *Designing and Managing the Supply Chain* (Simchi-Levi, Kaminsky, Simchi-Levi) — chapters 1–3 mirror this module
-- 📖 The classic MIT Sloan "Beer Game" simulation — best way to internalize bullwhip
+- 📖 *Designing and Managing the Supply Chain* (Simchi-Levi, Kaminsky, Simchi-Levi) — McGraw-Hill, 4e 2021, chapters 1–3 mirror this module
+- 📖 The classic MIT Sloan "Beer Game" simulation (Sterman, Sloan School) — best way to internalize bullwhip
+- 📰 Lloyd's List, *"Ever Given and the $9.6B day"* — March 2021 (the canonical Suez chokepoint reporting)
+- 📰 ASCM, *SCM Now* magazine — 2024-2026 issues for current SCOR and Hau Lee applications

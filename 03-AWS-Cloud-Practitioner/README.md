@@ -60,6 +60,16 @@ Pair it with **[AWS Cloud Practitioner Essentials](https://explore.skillbuilder.
 
 ---
 
+## 🏛️ Capstone & Recommended Readings
+
+This track includes a **[Capstone Project](./Capstone-Project.md)** — a 6-month cloud-foundation plan for a fictional Series-A startup. It integrates every module of the course and forces you to produce the artifacts a real cloud lead would carry into an interview: a multi-Region architecture diagram, a Pricing-Calculator-backed cost forecast, runbooks, a security baseline mapped to the Capital One breach lessons, and an exam-style scenario write-up. Pass mark: 80/100.
+
+It also includes a **[Recommended Readings](./Recommended-Readings.md)** appendix — the canonical books (Carr's *The Big Switch*, the Sybex Official Study Guide), seminal papers (NIST SP 800-145, the Dynamo paper, the Capital One DOJ indictment), industry resources (Werner Vogels' *All Things Distributed*, Stephane Maarek, ExamPro), and free academic courses (MIT 6.824 *Distributed Systems*, Stanford CS245 *Database Systems*, AWS Skill Builder, AWS Cloud Quest) that complement each module.
+
+Use the Capstone to *prove* mastery; use the Recommended Readings to *deepen* it.
+
+---
+
 ## 🎓 What Is The AWS Cloud Practitioner Exam?
 
 | Detail | Specification |

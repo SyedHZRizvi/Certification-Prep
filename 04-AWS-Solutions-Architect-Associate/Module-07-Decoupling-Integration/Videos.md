@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~65 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+SQS+vs+SNS+vs+EventBridge" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="RoKAEzdcr7k" href="https://www.youtube.com/results?search_query=AWS+SQS+vs+SNS+vs+EventBridge" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>📨</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 18 min · The decoupling trio</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+SQS+standard+vs+FIFO+queue" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="QRlsN2vGlG8" href="https://www.youtube.com/results?search_query=AWS+SQS+standard+vs+FIFO+queue" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>📥</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 14 min · Order + dedup</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Step+Functions+tutorial+demo" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="DFSko_sLyMM" href="https://www.youtube.com/results?search_query=AWS+Step+Functions+tutorial+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🔁</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 18 min · States, retries, parallel</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Kinesis+Data+Streams+vs+Firehose" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="Jw5Pqwn1doE" href="https://www.youtube.com/results?search_query=Kinesis+Data+Streams+vs+Firehose" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🌊</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~35 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SNS+fan+out+SQS+pattern" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="CEj0yyubNgQ" href="https://www.youtube.com/results?search_query=SNS+fan+out+SQS+pattern" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>📡</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 11 min · The classic broadcast</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+EventBridge+rules+demo" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="F9Oben6rhs0" href="https://www.youtube.com/results?search_query=AWS+EventBridge+rules+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🚌</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 13 min · Event-driven done right</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SQS+visibility+timeout+DLQ" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="V8WoV94GhzY" href="https://www.youtube.com/results?search_query=SQS+visibility+timeout+DLQ" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>⏱️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Step+Functions+Express+vs+Standard" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="RrdvSoQNABg" href="https://www.youtube.com/results?search_query=Step+Functions+Express+vs+Standard" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>⚡</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 14 min · Pricing model differences</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Amazon+MQ+vs+SQS+RabbitMQ" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="iDT1zFpy1kE" href="https://www.youtube.com/results?search_query=Amazon+MQ+vs+SQS+RabbitMQ" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🐰</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 10 min · When to use MQ</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=API+Gateway+architecture+demo" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="_U_PiSpbWug" href="https://www.youtube.com/results?search_query=API+Gateway+architecture+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🛡️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

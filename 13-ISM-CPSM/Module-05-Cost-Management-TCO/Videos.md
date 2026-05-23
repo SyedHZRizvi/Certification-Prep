@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~55 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=total+cost+of+ownership+TCO+procurement+example" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="VtEYwdOSTpY" href="https://www.youtube.com/results?search_query=total+cost+of+ownership+TCO+procurement+example" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 12 min · Worked TCO example</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=should+cost+analysis+procurement+how+to" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="98m5XPJDLzQ" href="https://www.youtube.com/results?search_query=should+cost+analysis+procurement+how+to" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 14 min · Build-up methodology</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=value+engineering+procurement+examples" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="kuLWQAcqUQE" href="https://www.youtube.com/results?search_query=value+engineering+procurement+examples" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 11 min · VA vs VE</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=hedging+commodities+procurement+forwards+futures" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="qzNDV-0Bb44" href="https://www.youtube.com/results?search_query=hedging+commodities+procurement+forwards+futures" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -61,7 +61,7 @@
       <span class="vg-duration">⏱ 12 min · Forwards, futures, swaps</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=learning+curve+procurement+labor+cost" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="aXlLVb-X-_Y" href="https://www.youtube.com/results?search_query=learning+curve+procurement+labor+cost" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -75,7 +75,7 @@
 ## 📚 Recommended (~30 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=target+costing+method+example" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="HStm4f0sqpc" href="https://www.youtube.com/results?search_query=target+costing+method+example" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 10 min · Toyota & Apple examples</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=NPV+IRR+payback+procurement+decision" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="y3m8FAGt7Qo" href="https://www.youtube.com/results?search_query=NPV+IRR+payback+procurement+decision" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -93,7 +93,7 @@
       <span class="vg-duration">⏱ 11 min · Investment math</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=cost+savings+vs+cost+avoidance+procurement" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="_TcEF350z8Q" href="https://www.youtube.com/results?search_query=cost+savings+vs+cost+avoidance+procurement" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -107,7 +107,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=supply+chain+finance+payment+terms" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="TS9mbDswthY" href="https://www.youtube.com/results?search_query=supply+chain+finance+payment+terms" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 16 min · Reverse factoring</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=price+index+escalation+clause+commodity+contract" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="IKdS5OxVqvw" href="https://www.youtube.com/results?search_query=price+index+escalation+clause+commodity+contract" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

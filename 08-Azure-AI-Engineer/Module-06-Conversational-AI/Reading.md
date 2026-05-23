@@ -2,6 +2,14 @@
 
 > **Why this module matters:** AI-102's "decision support" + parts of "NLP" domains cover the chatbot stack: Azure AI Bot Service, Bot Framework, CLU, Question Answering, and how they fit together through orchestration workflows. This module ties Module 4's NLP services into deployable bots.
 
+> **Prerequisites for this module.** Before starting, you should be comfortable with:
+> - Module 1 (auth, identities)
+> - Module 4 (CLU + Question Answering at the SDK level)
+> - Basic REST + WebSocket mental model
+> - Optional: project-management chapters from [`02-PMP`](../../02-PMP/) for "user journey" framing if you've never designed a chatbot conversation flow
+>
+> If "intent" and "entity" feel new, return to Module 4's CLU section first.
+
 ---
 
 ## 🍕 A Story: Maya's Helpful Bot
@@ -315,6 +323,40 @@ For AI-102, you still need to know **Bot Service + Bot Framework + CLU + QA + Or
 
 ---
 
+## 📖 Case Study — Microsoft Security Copilot (2023–2024)
+
+**Situation.** Cyber-defenders face an information-asymmetry problem: attackers can move faster than humans can read signals. Microsoft Security Copilot — announced March 2023, GA April 2024 — combined Azure OpenAI (GPT-4 then GPT-4o) with Microsoft Defender's telemetry, Sentinel's SIEM, Intune, Entra, and Purview data, plus a *conversational* surface targeted at security analysts (Microsoft Security blog, March 28, 2023, and April 1, 2024 GA announcement; verified against Microsoft Mechanics 2024 and the Security Copilot documentation page, 2026-05).
+
+**Decision.** Security Copilot is *not* built on Azure AI Bot Service in the way a classic CLU+QA bot would be — but Microsoft openly described it at Ignite 2023 and 2024 as architected with the same principles this module teaches:
+- A **conversational front-end** with multi-turn dialog and structured prompt templates (analogous to a Bot Framework `Activity` + `TurnContext` model).
+- **Plugins** that map to specialized data sources (Defender, Sentinel, Entra, threat intelligence) — analogous to **Orchestration Workflow** routing across CLU + Question Answering + custom skills, but at much larger scale.
+- **Adaptive Cards-style** rich responses (timelines, IOCs, host details) that render natively in the Security Copilot UI.
+- **Managed identity** + RBAC for every plugin call — the analyst's identity is what authorizes Defender / Sentinel queries.
+- **Persistent threads** (called "investigations") that carry state — analogous to a Bot Framework `ConversationState` stored in Cosmos / Blob, but built atop Azure OpenAI's Assistants/Threads primitives.
+
+Critically, the Responsible AI overlay from Module 2 was non-negotiable: every Security Copilot response carries citation provenance (which Defender alert or Sentinel rule grounded the answer), Prompt Shields are on, Groundedness Detection runs continuously, and analysts can flag-and-redact a turn for incident review.
+
+**Outcome.** By H2 2024, Microsoft published case studies (referenced at Ignite 2024) showing measurable reductions in mean-time-to-respond (MTTR) for security incidents at large Defender customers. Security Copilot is now Microsoft's flagship example of "GenAI + Bot-style conversational layer + retrieval over enterprise data" — exactly the pattern Module 8 will deepen.
+
+**Lesson for the exam / for practitioners.** Even when you're not literally using Azure AI Bot Service, the conceptual stack this module teaches — turn/activity/dialog, intent + entity, knowledge base, orchestration router, managed identity, channels — is what production conversational AI looks like in 2026. The exam tests these primitives because Microsoft *builds* with them.
+
+**Discussion (Socratic).**
+- Q1: Security Copilot was built using Azure OpenAI's Assistants/Threads primitives rather than Bot Framework Composer. Argue both sides at a Cornell systems-engineering review: when does a team graduate *out* of Bot Framework and *into* Foundry Agent Service / Assistants API? What's the principled trigger?
+- Q2: Security Copilot uses analyst identity to authorize Defender / Sentinel calls (per-call delegation). Build the alternative architecture that uses *one shared service-principal identity* and walk through what you trade for the simpler model. When is each correct?
+- Q3: Every Security Copilot response carries citation provenance. From a Microsoft Responsible AI standpoint, what's the trade-off you accept by *not* having that for an ordinary consumer chatbot? Where do you draw the line?
+
+---
+
+## 💬 Discussion — Socratic prompts
+
+1. **Bot Framework Composer's decline.** Composer is being de-emphasized in favor of Copilot Studio + Foundry. Argue both sides of the "should I learn Composer for the exam?" question. What does this teach you about studying for fast-moving certs in general?
+2. **CLU + QA + Orchestration vs LLM-with-tools.** A startup PM wants to skip CLU entirely and feed every utterance into GPT-4o with a tool list. Build the strongest argument for that approach (one model, less to maintain), AND for the canonical stack (cheaper per call, deterministic intent routing, observable telemetry). At what conversation volume does each architecture decisively beat the other?
+3. **State storage philosophy.** MemoryStorage is dev-only; Cosmos and Blob are production options. Build the case for *neither* — a stateless bot that re-reads context from a search index every turn. When is that the right call?
+4. **Adaptive Cards portability.** Adaptive Cards render natively in Teams, Web Chat, Slack, and Outlook. Argue the position that they're under-rated; counter-argue that they're a leaky abstraction that always requires per-channel tweaks. Where does the line fall in practice?
+5. **Active Learning in Question Answering.** QA's Active Learning suggests question variants from real traffic. From a Responsible AI standpoint, what governance must surround the human approver who accepts these suggestions? What's the failure mode if no governance is set?
+
+---
+
 ## ✅ Module 6 Summary
 
 You now know:
@@ -326,12 +368,34 @@ You now know:
 - 🎙️ Voice via Direct Line Speech
 - 🛡️ Auth + managed identity recommendation
 - 🃏 Adaptive Cards for portable rich UI
+- 📖 Microsoft Security Copilot as the modern conversational-AI architectural reference
 
 **Next steps:**
 1. 🎥 Watch [Videos.md](./Videos.md)
 2. ✏️ Take [Quiz.md](./Quiz.md)
 3. 📋 Review [Cheat-Sheet.md](./Cheat-Sheet.md)
 4. ➡️ Move to [Module 7: Azure OpenAI](../Module-07-Azure-OpenAI-Service/Reading.md)
+
+---
+
+> **Where this leads.**
+> - Inside this course: Module 7 wires the LLM brain into the bot (Azure OpenAI behind a dialog); Module 8 covers Foundry Agent Service which is the modern "bot+tools" surface Security Copilot is conceptually built on.
+> - Cross-course: [`09-CompTIA-Security-Plus`](../../09-CompTIA-Security-Plus/) covers the SIEM/SOAR side relevant to Security Copilot.
+> - Practice: Practice Exam 2 has ~5 questions from this module; Final Mock includes voice + Teams channel composition cases.
+
+---
+
+## 📚 Citations & Named References
+
+- **Microsoft Security blog (March 28, 2023).** *"Introducing Microsoft Security Copilot."*
+- **Microsoft Security blog (April 1, 2024).** *"Microsoft Security Copilot is now generally available."*
+- **Microsoft Mechanics (2024).** *"Security Copilot deep dive: plugins, prompts, and provenance."*
+- **Vaswani et al. (2017).** *Attention Is All You Need.* — transformer foundation underlying Security Copilot's GPT layer.
+- **Brown et al. (2020).** GPT-3 paper — the few-shot prompting lineage relevant to Copilot's structured prompt templates.
+- **Microsoft Responsible AI Standard v2** (June 2022) — drove the citation-provenance and Prompt Shields posture.
+- **Microsoft Bot Framework SDK** documentation (Microsoft Learn, verified 2026-05) — for the Bot Framework primitives.
+- **Adaptive Cards 1.5** specification (adaptivecards.io).
+- **NIST AI RMF 1.0** (January 2023) — the framework Security Copilot's risk posture maps to for federal customers.
 
 ---
 

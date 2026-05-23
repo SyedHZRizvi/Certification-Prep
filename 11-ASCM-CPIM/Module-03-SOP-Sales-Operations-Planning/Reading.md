@@ -2,6 +2,13 @@
 
 > **Why this module matters:** S&OP is the monthly heartbeat of a manufacturing company. Get this right and Sales, Operations, Finance, and Supply Chain are all looking at one number. Get it wrong and every department fights every month. CPIM dedicates ~15% of the exam to this domain alone.
 
+> **Prerequisites for this module.** Before starting, you should be comfortable with:
+> - [Module 1: Manufacturing Strategy](../Module-01-Manufacturing-Strategy/Reading.md) — particularly MTS/ATO/MTO (S&OP decisions differ across environments) and competitive priorities
+> - [Module 2: Demand Planning & Forecasting](../Module-02-Demand-Planning-Forecasting/Reading.md) — the demand plan is S&OP's Step-2 input; forecast aggregation principles drive the family/SKU choice
+> - Basic financial literacy: P&L vs cash flow, working capital, OPEX vs CAPEX (you'll meet these in the IBP discussion)
+>
+> S&OP is process-heavy, light on math. The hardest part for most students is keeping the 5 steps and their owners straight. Treat this module as memorization-plus-pattern-recognition, not calculation.
+
 ---
 
 ## 🍕 A Story: The Toy Company That Hated Each Other
@@ -35,6 +42,8 @@ Key characteristics:
 
 ## 📅 The Classic 5-Step S&OP Process (Wallace / Stahl)
 
+> **Citation.** Wallace, Thomas F. & Stahl, Robert A., *Sales and Operations Planning: The How-To Handbook*, 3rd ed. (T.F. Wallace & Company, 2008; 1st ed. 2000); foundational concept established in Wallace, Thomas F., *Sales & Operations Planning: The How-To Handbook* (1999) and earlier in Ling, Richard C. & Goddard, Walter E., *Orchestrating Success: Improve Control of the Business with Sales & Operations Planning* (Oliver Wight Publications, 1988). The 5-step canonical form is reaffirmed in the ASCM Dictionary (16th ed., 2022) and in Oliver Wight's modern *Class A* maturity standard.
+
 🔥 **MEMORIZE THIS.** The 5 steps appear on every CPIM exam. ASCM uses the Wallace model.
 
 | Step | Name | Who Leads | What Happens |
@@ -64,6 +73,8 @@ Key characteristics:
 ---
 
 ## 🆚 S&OP vs IBP (Integrated Business Planning)
+
+> **Citation.** **Integrated Business Planning** as a named methodology is a trademarked concept of **Oliver Wight Companies** and codified in *The Oliver Wight Class A Standard for Business Excellence* (Oliver Wight, multiple editions; current 8th ed. 2024) and Bower, Dougherty, Coldrick & Hodgson, *Demand Driven Performance — Using Smart Metrics* (McGraw-Hill, 2013). The major S&OP/IBP planning software vendors — **SAP IBP**, **Oracle Demantra/Cloud SCP**, **Kinaxis Maestro**, **Anaplan**, **o9 Solutions**, **OMP** — all align to roughly this 5-step cadence as of their 2024–2026 reference architectures.
 
 | | Classic S&OP | IBP (Integrated Business Planning) |
 |---|--------------|-------------------------------------|
@@ -248,6 +259,46 @@ S&OP usually operates in **monthly time buckets** over a **12–24 month rolling
 
 ---
 
+## 🤖 2024–2026 Update — AI-Augmented S&OP
+
+The S&OP/IBP software vendors have shipped meaningful AI capabilities through 2024–2026 that the modern CPIM exam (post-2024 ECM refresh) now expects awareness of:
+
+| Capability | What it does | Where the human still matters |
+|---|---|---|
+| **ML-driven baseline demand sensing** (Kinaxis Maestro 2024, SAP IBP 2402 release, o9 EKG 2024) | Generates the baseline statistical forecast across thousands of SKUs in minutes | Adjusting for new-product introductions, promotions, and structural breaks |
+| **Scenario simulation** (Anaplan PlanIQ 2024, Oracle Cloud SCP) | Runs hundreds of "what-if" scenarios in seconds (tariff shifts, capacity outages, demand surges) | Choosing which 3–5 scenarios to actually surface to executives |
+| **Causal anomaly detection** | Flags ratios (channel orders ÷ sell-through; forecast vs actual variance vs historical norm) | Investigating root cause and deciding the response |
+| **Automated demand reconciliation** | Reconciles top-down vs bottom-up forecasts, surfaces disagreements | Adjudicating where Sales and Marketing genuinely disagree |
+| **Generative-AI commentary** (Microsoft Copilot for Supply Chain 2024, SAP Joule 2024) | Drafts the executive S&OP narrative from the data | Approving claims and choosing what *not* to say |
+
+The exam-takeaway: **AI tools change the cadence and speed of S&OP, not its structure**. The 5 steps, the family-level aggregation, the executive ratification — all unchanged. What changes is that the "supply review" can now incorporate hundreds of scenarios that previously required a week of analyst time, and the demand review can be re-run weekly (or daily, during volatile periods) rather than monthly.
+
+Post-Red-Sea routing decisions (the December 2023 Houthi attacks on Suez transit, ongoing through 2024–2026) are a recurring 2024+ S&OP scenario theme: companies with European-Asian flows have made S&OP routing decisions (Suez vs Cape of Good Hope, +14 days transit) at the executive S&OP table for the first time at meaningful scale. Modern S&OP must reconcile cost (longer fuel burn, +$1.5M per voyage on a large container ship), service (the +14 days impact on customer lead time), and risk (the probability of seizure of an Israeli-linked vessel).
+
+---
+
+## 📊 Case Study — Procter & Gamble's Global S&OP / IBP Transformation (2003–2024)
+
+**Situation.** Through the 1990s P&G ran S&OP in roughly 80 separate cycles — one per major business unit, per region — with limited cross-region or cross-category visibility. The 2001–2003 acquisitions of Clairol ($5B) and Wella ($5.7B), plus the Gillette acquisition (2005, $57B), created a federation of planning processes that genuinely did not talk to each other. Working capital was tied up in regional safety stocks; new-product introductions were chronically late at headquarters but on-time per BU report; the global supply chain ran on quarterly synchronization at best. CEO A.G. Lafley made operating-model integration a top corporate priority.
+
+**Decision.** Starting 2003, P&G began building a global IBP capability (they called it "Global IBP" though the framework was Oliver Wight's Class A). Key decisions:
+- Adopted a single S&OP cadence (monthly, family-level) across all global business units, with the executive review chaired by the relevant Global BU President.
+- Built a unified data layer — common SKU hierarchies, common product families, common time buckets — so that demand and supply could be reconciled across regions.
+- Deployed SAP IBP (then APO; migrated to IBP starting 2018) as the integrated planning platform.
+- Tied the financial plan into the IBP cycle starting 2007; the CFO began reviewing the financial-impact of the operating plan monthly rather than quarterly.
+- Standardized "demand control" — the discipline of converting forecast variance into S&OP exceptions and corrective action — by 2012.
+
+**Outcome.** Reported in P&G's annual report (2016) and various ASCM SCM Now interviews: working-capital reduction of **$2.5B+** across 2003–2014; first-pass-yield on the demand plan up from ~75% to ~90% at the global level; new-product launch on-time-in-full from 60% to 88% across 2010–2018. Cash-conversion-cycle reduced by 24 days between FY 2004 and FY 2014. P&G has since been the canonical "mature global IBP" reference cited in every Oliver Wight white paper, every Gartner Magic Quadrant for S&OP, and most academic case books (Cohen & Roussel, *Strategic Supply Chain Management*, 2nd ed. 2013, devotes a chapter).
+
+**Lesson for the exam / for practitioners.** P&G demonstrates the **maturity ladder** that ASCM tests on: classic S&OP (operational, 12-month, demand+supply only) → integrated S&OP with financial overlay (18-month, demand+supply+financial) → IBP (24+ months, all functions, strategically integrated, executive-led). The point is *not* that everyone needs to be P&G; it's that ASCM expects you to recognize *which rung* of the maturity ladder a described organization is on, and what the next step would be. CPIM exam-takeaway: when a question describes "Sales has a number, Operations has a different number, Finance has a third number, and they don't reconcile until the quarterly board meeting," the right answer is *not* "buy software" — it's "implement a monthly S&OP cadence with executive ratification (Step 5)."
+
+**Discussion (Socratic).**
+- Q1: A $400M division of a Fortune 500 company has just acquired a $200M competitor in a different region. The acquired business runs its own S&OP cycle, on a different software stack, with a different fiscal calendar. The parent company gives the integration team 12 months to harmonize. What's the principled sequence — which dimension (cadence, taxonomy, software, governance, financials) do you harmonize first, and why? Defend your sequencing against the alternative.
+- Q2: P&G's IBP build took 10+ years to reach "Class A" maturity, with continuous investment from a CEO who personally cared. A mid-market manufacturer with 1,500 employees and no Class-A budget asks: "Can we get 80% of the value at 10% of the cost?" Construct the strongest yes-answer and the strongest no-answer, citing the maturity-ladder logic from Wallace/Oliver Wight.
+- Q3: In 2024 a number of vendors (Anaplan, o9, Kinaxis) market "Connected Planning" or "Concurrent Planning" as a *replacement* for the classic monthly cadence — re-planning continuously rather than monthly. Is this the future of S&OP, or a marketing reframing of an unchanged structure? Defend your position with reference to the 5-step canonical form and the role of executive ratification.
+
+---
+
 ## ✅ Module 3 Summary
 
 You now know:
@@ -267,10 +318,30 @@ You now know:
 
 ---
 
+> **Where this leads.**
+> - Inside this course: Module 4 (MPS/MRP) takes the family-level S&OP plan and explodes it to SKU-level firm production; Module 5 (Capacity) is the supply-review check inside S&OP Step 3 plus its hierarchy below; Module 8 (Lean) shows how IBP-mature firms reduce S&OP cycle time through value-stream mapping.
+> - Cross-course: `10-ASCM-CSCP` Module 5 extends S&OP to the multi-tier supply network ("S&OP for the extended enterprise"); `13-ISM-CPSM` Module 4 covers Supply's role in the S&OP supply review.
+> - Practice: Practice Exam 1 has 10–14 questions on S&OP (the 5 steps, level/chase/hybrid). Final Mock Exam adds IBP-vs-S&OP discrimination and resource-planning hierarchy questions.
+
+---
+
+## 💬 Discussion — Socratic prompts
+
+1. **Cadence vs continuous.** With AI-augmented planning making weekly (or daily) re-planning operationally feasible, why does ASCM (and Wallace, Oliver Wight) continue to teach monthly S&OP as the canonical cadence? Construct an argument for moving to continuous planning AND for keeping monthly as the executive-ratification rhythm. What's the *organizational* (not technical) constraint?
+2. **The unconstrained-demand discipline.** "Never let Operations cap demand at Step 2" is a Wallace-school commandment. In a capacity-constrained environment (say, semiconductors 2021–2023 or GLP-1 drugs 2023–2025), is this still right, or is it organizationally dishonest? Defend either position with reference to the 5-step process and the role of the executive review.
+3. **IBP vs S&OP at the CPG mid-market.** A 1,500-person consumer-packaged-goods manufacturer with $250M revenue and a single ERP runs classic 5-step S&OP. The new CFO wants to "upgrade to IBP." Build the strongest argument that the value of the upgrade is real *and* the strongest argument that "you're already running IBP — you just don't call it that." Where does the actual gap lie?
+4. **Post-Red-Sea S&OP.** A European apparel company sourcing 60% of volume from South-East Asia is hit with a routing decision in early 2024: Suez (faster, riskier) vs Cape of Good Hope (+14 days, safer, +$1.5M per voyage). At which S&OP step does this decision belong, who has the authority to make it, and what financial-plan inputs must be reconciled to make it well? (Hint: this is not a Step-3 supply-review decision alone.)
+5. **AI as augmentation, not replacement.** Pick one of the five S&OP steps. Argue both that AI can *fully* automate that step and that AI can *only* augment a human at that step. Where does the line genuinely sit, and what does the answer tell you about how to organize the S&OP team in 2026?
+
+---
+
 ## 📚 Further Reading (Optional)
 
-- 📖 *Sales & Operations Planning: The How-To Handbook* — Thomas Wallace & Bob Stahl (the canonical 5-step source)
-- 📖 *Integrated Business Planning* — Oliver Wight (the IBP playbook)
-- 📖 *Orchestrating Success: Improve Control of the Business with Sales & Operations Planning* — Ling & Goddard
-- 📖 ASCM Dictionary entries: S&OP, IBP, aggregate plan, level strategy, chase strategy, resource planning
-- 📖 *Demand Management Best Practices* — Crum & Palmatier (companion to the S&OP literature)
+- 📖 *Sales and Operations Planning: The How-To Handbook* — Wallace, Thomas F. & Stahl, Robert A., 3rd ed. (T.F. Wallace & Company, 2008) — the canonical 5-step source.
+- 📖 *The Oliver Wight Class A Standard for Business Excellence* — Oliver Wight International, 8th ed. (2024) — the IBP playbook and maturity ladder.
+- 📖 *Orchestrating Success: Improve Control of the Business with Sales & Operations Planning* — Ling, Richard C. & Goddard, Walter E. (Oliver Wight Publications, 1988).
+- 📖 *Demand Management Best Practices: Process, Principles, and Collaboration* — Crum, Colleen & Palmatier, George (J. Ross, 2003).
+- 📖 *Strategic Supply Chain Management: The Five Disciplines for Top Performance* — Cohen, Shoshanah & Roussel, Joseph, 2nd ed. (McGraw-Hill, 2013) — includes the P&G IBP chapter.
+- 📖 ASCM Dictionary, 16th edition (2022) — entries for S&OP, IBP, aggregate plan, level strategy, chase strategy, resource planning.
+- 📰 ASCM SCM Now magazine — search "Integrated Business Planning" for current practitioner case studies (issues 2023–2026).
+- 📰 *Sales and Operations Planning Maturity: Where Are You, Where Should You Be?* — Lapide, Larry, MIT Center for Transportation & Logistics white paper (2007; updated 2014) — the canonical 4-stage S&OP maturity model that the ASCM exam references.

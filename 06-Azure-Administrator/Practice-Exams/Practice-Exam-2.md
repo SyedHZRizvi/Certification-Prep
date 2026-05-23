@@ -387,3 +387,99 @@ For each wrong answer: identify module → re-read → flashcard → re-quiz in 
 ---
 
 ➡️ When ready: take the [Final Mock Exam](./Final-Mock-Exam.md) under real-exam conditions (55 Q · 100 min).
+
+---
+
+## Detailed answer rationales
+
+> Per the elevation spec, every wrong option is annotated. Use these to retire concepts you missed.
+
+**Q1. Answer: C.** *Why C is correct.* Slots are a Standard-tier-or-higher feature (per Microsoft Learn AZ-104 App Service tier matrix). *Why others are wrong.* **A**: Free has no slots. **B**: Basic also has no slots. **D**: Premium v3 supports slots but isn't the minimum tier. *Exam-takeaway.* Slots start at Standard.
+
+**Q2. Answer: C.** *Why C is correct.* Private endpoint (inbound) requires Premium v3 (or Isolated v2). *Why others are wrong.* **A/B**: No private endpoint support. **D**: Standard does VNet integration (outbound) only. *Exam-takeaway.* Outbound VNet integration = Standard+; inbound PE = Premium v3+.
+
+**Q3. Answer: A.** *Why A is correct.* "Slot setting" means the value STAYS with the slot during swap. *Why others are wrong.* **B**: That's the *default* behavior for non-slot settings. **C**: Encryption is unrelated. **D**: Slot settings remain editable. *Exam-takeaway.* Slot setting = sticky.
+
+**Q4. Answer: D.** *Why D is correct.* ACI is designed for short-lived, event-driven, no-orchestration workloads — queue-triggered container is the canonical fit. *Why others are wrong.* **A**: 24/7 microservice = AKS. **B**: WordPress = App Service. **C**: Stateful PostgreSQL = VM or Azure DB. *Exam-takeaway.* ACI = short-lived, queue/event-driven.
+
+**Q5. Answer: A.** *Why A is correct.* AKS standard tier control plane is free; you pay for nodes + add-ons. Uptime SLA tier adds a small hourly fee for 99.95% guarantee. *Why others are wrong.* **B**: Standard control plane is free. **C**: Standard tier is free. **D**: Subscription tier is unrelated. *Exam-takeaway.* AKS control plane: free; nodes: paid.
+
+**Q6. Answer: D.** *Why D is correct.* HPA scales pod replicas based on metrics (CPU, memory, custom). *Why others are wrong.* **A**: Cluster autoscaler scales nodes. **B**: Ingress isn't autoscaled by HPA. **C**: Disks aren't HPA's domain. *Exam-takeaway.* HPA = pods; Cluster autoscaler = nodes.
+
+**Q7. Answer: B.** *Why B is correct.* S1 yes (Azure CNI = pods get VNet IPs). S2 yes (Overlay = pod IPs from overlay CIDR). S3 no (Kubenet is legacy; not recommended). *Why others are wrong.* **A**: S3 wrong (Kubenet is not modern default). **C**: S1 wrong. **D**: S3 wrong. *Exam-takeaway.* Modern AKS networking = Azure CNI or CNI Overlay.
+
+**Q8. Answer: C.** *Why C is correct.* Azure reserves 5 IPs per subnet (.0/.1/.2/.3/.255). *Why others are wrong.* **A**: 2 is too few (only network + broadcast). **B**: 3 misses the DNS reservations. **D**: 7 is too many. *Exam-takeaway.* 5 reserved IPs per subnet — memorize.
+
+**Q9. Answer: C.** *Why C is correct.* Peering is non-transitive — fundamental property. *Why others are wrong.* **A**: Wrong direction. **B**: Peering uses Microsoft backbone, not public internet. **D**: Peering supports many peers per VNet. *Exam-takeaway.* Non-transitive = need hub firewall + UDRs to transit.
+
+**Q10. Answer: D.** *Why D is correct.* Private endpoint = NIC with private IP fronting a PaaS service. *Why others are wrong.* **A**: It has *major* DNS implications (Private DNS Zone). **B**: RBAC continues to apply. **C**: PE doesn't replace VPN gateways. *Exam-takeaway.* PE = real NIC + private IP for PaaS.
+
+**Q11. Answer: D.** *Why D is correct.* DNS first (zone + VNet link), then PE NIC, then DNS zone group for auto-registration. *Why others are wrong.* **A**: NIC before DNS leaves a window of public-IP resolution. **B**: Out-of-order DNS link. **C**: Out of order. *Exam-takeaway.* DNS zone → VNet link → PE → zone group.
+
+**Q12. Answer: B.** *Why B is correct.* ExpressRoute Premium with Global Reach connects two ER circuits via Microsoft backbone. *Why others are wrong.* **A**: Local restricts to one metro. **C**: S2S VPN goes over internet, not "through Microsoft backbone." **D**: VNet peering doesn't connect on-prem to on-prem. *Exam-takeaway.* ER Global Reach = on-prem-to-on-prem through Microsoft.
+
+**Q13. Answer: A.** *Why A is correct.* Route-based supports BGP + IKEv2 + multi-tunnel. *Why others are wrong.* **B**: Pricing is similar across SKUs. **C**: SLAs depend on SKU, not route-vs-policy. **D**: Password-only doesn't apply. *Exam-takeaway.* Route-based = modern default.
+
+**Q14. Answer: A.** *Why A is correct.* GatewaySubnet minimum is /29; /27 recommended. *Why others are wrong.* **B**: /24 is too large. **C**: /26 is reserved-subnet minimum for Firewall/Bastion. **D**: /22 way too large. *Exam-takeaway.* GatewaySubnet = /29 min, /27 recommended.
+
+**Q15. Answer: A.** *Why A is correct.* Lower priority number = evaluated first (priorities 100–4096 are user, 65000–65500 are defaults). *Why others are wrong.* **B/C/D**: Reversed/random misconceptions. *Exam-takeaway.* Lower number = higher priority.
+
+**Q16. Answer: D.** *Why D is correct.* DenyAllInBound sits at priority 65500 as the catch-all bottom default. *Why others are wrong.* **A**: AllowVnetInBound is 65000. **B**: AllowAzureLoadBalancerInBound is 65001. **C**: "AllowInternetInBound" is not a default inbound rule. *Exam-takeaway.* 65000/65001 allow defaults, 65500 deny.
+
+**Q17. Answer: D.** *Why D is correct.* All three are correct (stateful, both layers apply, service tags work as source/dest). *Why others are wrong.* A/B/C each miss at least one. *Exam-takeaway.* NSG basics: stateful, dual-layer, service-tag aware.
+
+**Q18. Answer: D.** *Why D is correct.* Azure Firewall rule order: DNAT → Network → Application. *Why others are wrong.* **A**: Reversed. **B**: Random — fail. **C**: Network before DNAT is wrong. *Exam-takeaway.* DNAT first (port-forward), then Network L3/4, then Application L7.
+
+**Q19. Answer: B.** *Why B is correct.* Premium SKU adds TLS inspection + IDPS + URL filtering. *Why others are wrong.* **A**: Basic is L3/L4 only. **C**: Standard adds threat intel + DNAT but not TLS inspection. **D**: Not all SKUs. *Exam-takeaway.* TLS inspection = Premium.
+
+**Q20. Answer: B.** *Why B is correct.* App Gateway WAF v2 is regional L7 with WAF. *Why others are wrong.* **A**: SLB is L4. **C**: Front Door is global, not regional. **D**: Azure Firewall is broader L3-L7 but not the L7-with-WAF product for HTTPS apps. *Exam-takeaway.* Regional L7 + WAF = App Gateway WAF v2.
+
+**Q21. Answer: B.** *Why B is correct.* Azure Front Door = global L7 + CDN + WAF. *Why others are wrong.* **A**: SLB is regional L4. **C**: App Gateway is regional L7. **D**: Traffic Manager is DNS-only. *Exam-takeaway.* Global L7 + CDN + WAF = Front Door.
+
+**Q22. Answer: C.** *Why C is correct.* Traffic Manager is a DNS-based router — returns IPs, doesn't proxy. *Why others are wrong.* **A**: Not a firewall. **B**: Not a proxy (DNS layer only). **D**: Not a CDN. *Exam-takeaway.* TM = DNS-only steering.
+
+**Q23. Answer: C.** *Why C is correct.* ASGs are single-VNet scoped (Microsoft Learn). *Why others are wrong.* **A**: ASGs don't cross regions. **B**: Don't cross subs either. **D**: Don't cross tenants. *Exam-takeaway.* ASG = single VNet.
+
+**Q24. Answer: D.** *Why D is correct.* Standard WAF rollout: create policy → attach in Detection → observe → tune → switch to Prevention. *Why others are wrong.* **A**: Prevention before tuning is dangerous. **B**: Policy must exist before attaching. **C**: Prevention before observation is reckless. *Exam-takeaway.* Always Detection → tune → Prevention.
+
+**Q25. Answer: B.** *Why B is correct.* Bastion = secure browser-based RDP/SSH without public IPs. *Why others are wrong.* **A**: Not L7 caching. **C**: Not a VPN replacement. **D**: Not a CDN. *Exam-takeaway.* Bastion = managed jump host.
+
+**Q26. Answer: C.** *Why C is correct.* ASR = continuous replication for region failover; Backup = scheduled snapshots for data recovery. *Why others are wrong.* **A**: Backup is scheduled. **B**: They serve different purposes. **D**: Snapshots alone aren't full DR. *Exam-takeaway.* ASR = region DR; Backup = data recovery.
+
+**Q27. Answer: B.** *Why B is correct.* CRR requires GRS vault + the CRR feature toggled on. *Why others are wrong.* **A**: LRS doesn't replicate cross-region. **C**: ZRS is within-region only. **D**: RA-GZRS is a storage redundancy, not the vault setting. *Exam-takeaway.* CRR = GRS + toggle.
+
+**Q28. Answer: A.** *Why A is correct.* MARS = Windows files/folders + System State to Azure. *Why others are wrong.* **B**: No Linux support. **C**: SQL uses workload extension. **D**: Whole VMs use snapshot-based Azure Backup. *Exam-takeaway.* MARS = lightweight Windows files agent.
+
+**Q29. Answer: C.** *Why C is correct.* S1 yes (soft delete default on, 14 days min). S2 yes (immutable vault blocks disabling soft delete). S3 yes (GFS = grandfather/father/son). *Why others are wrong.* **A**: S1 wrong. **B**: S2 wrong. **D**: S3 wrong. *Exam-takeaway.* All three are textbook backup facts.
+
+**Q30. Answer: A.** *Why A is correct.* Test failover runs in an isolated network with no production impact. *Why others are wrong.* **B**: Not production-impacting. **C**: Test failover incurs compute cost. **D**: Test failover is recommended, not mandatory. *Exam-takeaway.* Test failover = isolated network.
+
+**Q31. Answer: D.** *Why D is correct.* Azure Migrate phases: Discover → Assess → Migrate. *Why others are wrong.* **A**: Generic project terminology. **B**: Different vendor's. **C**: Lifecycle steps but not Azure Migrate's named phases. *Exam-takeaway.* DAM: Discover, Assess, Migrate.
+
+**Q32. Answer: D.** *Why D is correct.* Project → appliance → discovery → assessment → replicate → cutover. *Why others are wrong.* **A**: Assessment before discovery is impossible. **B**: Project must exist before appliance registers. **C**: Discovery before appliance is impossible. *Exam-takeaway.* Project comes first; appliance enables discovery.
+
+**Q33. Answer: C.** *Why C is correct.* Activity Log default retention is 90 days; longer via diagnostic setting. *Why others are wrong.* **A**: 30 days is too short. **B**: 60 not the official default. **D**: Not retained forever. *Exam-takeaway.* 90 days default; export to keep longer.
+
+**Q34. Answer: A.** *Why A is correct.* AMA + DCRs is the modern, GA agent (MMA retired 2024). *Why others are wrong.* **B**: Diagnostics Extension is older Windows-specific. **C**: OMS is legacy. **D**: Network Watcher Agent does packet capture only. *Exam-takeaway.* AMA + DCR = modern Azure Monitor.
+
+**Q35. Answer: C.** *Why C is correct.* `summarize` aggregates rows in KQL. *Why others are wrong.* **A**: `where` filters. **B**: `top` returns top N. **D**: `project` selects columns. *Exam-takeaway.* Aggregation = `summarize`.
+
+**Q36. Answer: A.** *Why A is correct.* DINE runs an embedded ARM deployment to remediate. *Why others are wrong.* **B**: Deny blocks, doesn't remediate. **C**: Audit logs but doesn't fix. **D**: Append adds a property at create only. *Exam-takeaway.* DINE = auto-remediate.
+
+**Q37. Answer: A.** *Why A is correct.* S1 yes (initiative = policy set). S2 no (no counter-Allow can override Deny). S3 yes (remediation tasks bring existing into compliance). *Why others are wrong.* **B**: S2 wrong (Deny wins). **C**: S1 wrong. **D**: S3 wrong. *Exam-takeaway.* Deny is final at the scope it's applied; use exemptions to override.
+
+**Q38. Answer: B.** *Why B is correct.* IP Flow Verify + Connection Troubleshoot are the diag tools for "why is traffic dropped?" *Why others are wrong.* **A**: App Insights is application telemetry, not network diag. **C**: Backup is unrelated. **D**: NSG quotas aren't a diag tool. *Exam-takeaway.* Network Watcher = network diag toolkit.
+
+**Q39. Answer: A.** *Why A is correct.* `AzureBastionSubnet` is case-sensitive exact name. *Why others are wrong.* **B**: Wrong name. **C**: Specific name required. **D**: Wrong name. *Exam-takeaway.* Memorize reserved subnet names exactly.
+
+**Q40. Answer: B.** *Why B is correct.* S1 yes (PIM JIT). S2 no (Contributor cannot assign roles). S3 yes (MIs don't require secret rotation). *Why others are wrong.* **A**: S2 wrong. **C**: S1 wrong. **D**: S3 wrong. *Exam-takeaway.* Only Owner/UAA assign roles; MIs are credential-free.
+
+**Q41. Answer: B.** *Why B is correct.* Lifecycle = tier transitions + delete by age. *Why others are wrong.* **A**: Encryption is separate. **C**: Lifecycle doesn't replicate. **D**: DDoS is a different service. *Exam-takeaway.* Lifecycle = blob age → tier/delete rules.
+
+**Q42. Answer: A.** *Why A is correct.* ReadOnly lock breaks key listing (technically a write op). *Why others are wrong.* **B**: CanNotDelete still allows modify. **C**: NoAccess isn't a real lock type. **D**: Audit isn't a lock. *Exam-takeaway.* Default to CanNotDelete; ReadOnly is fragile.
+
+**Q43. Answer: C.** *Why C is correct.* `AzureFrontDoor.Backend` service tag + custom header check, OR Private Link origin. *Why others are wrong.* **A**: Disabling HTTPS breaks the use case. **B**: Vague and not the documented pattern. **D**: NSG with Internet allow defeats the requirement. *Exam-takeaway.* Microsoft-documented patterns only.
+
+**Q44. Answer: B.** *Why B is correct.* S1 yes (spoke-to-spoke through hub via firewall + UDRs). S2 yes (gateway transit toggle). S3 no (CIDRs must NOT overlap). *Why others are wrong.* **A**: S2 wrong. **C**: S1 wrong. **D**: S3 wrong (it IS no). *Exam-takeaway.* Non-overlapping CIDRs are mandatory for peering.
+
+**Q45. Answer: D.** *Why D is correct.* Build order: network → LB → image → VMSS → backend. *Why others are wrong.* **A**: Image step misplaced. **B**: Image before network is fine technically but bad sequencing. **C**: Image before LB is fine but adds dependencies. *Exam-takeaway.* Always build the dependency stack bottom-up.

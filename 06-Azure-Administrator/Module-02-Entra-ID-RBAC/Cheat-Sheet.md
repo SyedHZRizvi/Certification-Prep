@@ -132,6 +132,22 @@ Usually **wrong**:
 
 ---
 
+## 📐 One-Line Decision Matrix
+
+| Need | Feature | Tier |
+|------|---------|------|
+| MFA + sign-in policies | Conditional Access | P1 |
+| Risk-based "if leaked credentials → block" | Identity Protection | P2 |
+| JIT role activation with approval | PIM | P2 |
+| "Auto-add HR-imported finance hires to Finance group" | Dynamic groups | P1 |
+| "Country admin manages only that country's users" | Administrative Units | P1+ |
+| Periodic re-justification of access | Access Reviews | P2 |
+| "Guest reviewer can read 1 RG for 2 weeks" | B2B + PIM eligible + access review | P2 |
+| "App with no secret hits Key Vault" | Managed Identity + Key Vault role | Any |
+| "Customers sign up for retail app with Google ID" | Entra External ID (B2C) | External tenant kind |
+
+---
+
 ## ✏️ Quick Self-Check
 
 1. P1 vs P2 — what feature each unlocks? ___

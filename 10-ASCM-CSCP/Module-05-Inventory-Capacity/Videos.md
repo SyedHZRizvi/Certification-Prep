@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~50 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=EOQ+economic+order+quantity+example" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="ru-r5kMGwko" href="https://www.youtube.com/results?search_query=EOQ+economic+order+quantity+example" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 12 min · Step-by-step</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Safety+stock+reorder+point+formula+example" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="KfXGnVNewGA" href="https://www.youtube.com/results?search_query=Safety+stock+reorder+point+formula+example" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 14 min · Variable demand example</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=ABC+analysis+pareto+inventory" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="GWOzIdnnzbc" href="https://www.youtube.com/results?search_query=ABC+analysis+pareto+inventory" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 10 min · Real example with table</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Inventory+turns+cash+to+cash+cycle" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="Ooq0PnAEf5s" href="https://www.youtube.com/results?search_query=Inventory+turns+cash+to+cash+cycle" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~28 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=JIT+just+in+time+Toyota+kanban" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="sI5F-v1IGfo" href="https://www.youtube.com/results?search_query=JIT+just+in+time+Toyota+kanban" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 10 min · Pull vs push inventory</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Cycle+counting+vs+physical+inventory" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="qujRAXgKUrM" href="https://www.youtube.com/results?search_query=Cycle+counting+vs+physical+inventory" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 9 min · Best-practice approach</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Capacity+utilization+vs+efficiency" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="ZNSY24NgcT4" href="https://www.youtube.com/results?search_query=Capacity+utilization+vs+efficiency" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Newsvendor+model+critical+ratio" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="8o_7K0vOdUg" href="https://www.youtube.com/results?search_query=Newsvendor+model+critical+ratio" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 18 min · Critical ratio derivation</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=MIT+OpenCourseware+inventory+management" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="BiIeViq61jE" href="https://www.youtube.com/results?search_query=MIT+OpenCourseware+inventory+management" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 50 min · Academic depth</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Lean+inventory+7+wastes" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="f2aXncAl87I" href="https://www.youtube.com/results?search_query=Lean+inventory+7+wastes" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

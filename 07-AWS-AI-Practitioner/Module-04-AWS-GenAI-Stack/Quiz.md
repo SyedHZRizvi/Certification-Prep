@@ -7,7 +7,7 @@
 
 ## Questions
 
-### Q1. Amazon Bedrock is BEST described as:
+### Q1. Amazon Bedrock is BEST described as: *(Remember)*
 A. A managed Kubernetes service
 B. A fully managed service for accessing multiple foundation models through one API
 C. A relational database for ML metadata
@@ -15,7 +15,7 @@ D. A no-code app builder
 
 ---
 
-### Q2. Which foundation model provider is NOT available natively on Amazon Bedrock?
+### Q2. Which foundation model provider is NOT available natively on Amazon Bedrock? *(Analyze)*
 A. Anthropic
 B. Meta
 C. Mistral AI
@@ -23,7 +23,7 @@ D. OpenAI
 
 ---
 
-### Q3. A developer wants AI code suggestions inside their VS Code IDE. The right AWS service is:
+### Q3. A developer wants AI code suggestions inside their VS Code IDE. The right AWS service is: *(Apply)*
 A. Amazon Q Business
 B. Amazon Q Developer
 C. PartyRock
@@ -31,7 +31,7 @@ D. Amazon Comprehend
 
 ---
 
-### Q4. A non-technical HR analyst wants to ask plain-English questions of internal SharePoint and Salesforce content. The right AWS service is:
+### Q4. A non-technical HR analyst wants to ask plain-English questions of internal SharePoint and Salesforce content. The right AWS service is: *(Apply)*
 A. Amazon Q Developer
 B. Amazon Q Business
 C. SageMaker Canvas
@@ -39,7 +39,7 @@ D. Amazon Polly
 
 ---
 
-### Q5. Which is Amazon's 2024 frontier foundation model family announced at re:Invent?
+### Q5. Which is Amazon's 2024 frontier foundation model family announced at re:Invent? *(Remember)*
 A. Amazon Titan G1
 B. Amazon Nova (Micro, Lite, Pro, Premier, Canvas, Reel)
 C. Amazon SageMaker FM
@@ -47,7 +47,7 @@ D. Amazon Athena Models
 
 ---
 
-### Q6. The Bedrock pricing mode best suited for offline bulk processing at lower cost is:
+### Q6. The Bedrock pricing mode best suited for offline bulk processing at lower cost is: *(Apply)*
 A. On-Demand
 B. Batch
 C. Provisioned Throughput
@@ -55,7 +55,7 @@ D. Free tier
 
 ---
 
-### Q7. PartyRock is BEST described as:
+### Q7. PartyRock is BEST described as: *(Understand)*
 A. A production-grade Bedrock alternative
 B. A no-code playground for building generative-AI apps on top of Bedrock
 C. A managed Kubernetes cluster
@@ -63,7 +63,7 @@ D. A foundation model
 
 ---
 
-### Q8. The 3 layers of the AWS GenAI stack are:
+### Q8. The 3 layers of the AWS GenAI stack are: *(Remember)*
 A. Database / Compute / Network
 B. Applications / Tools / Infrastructure
 C. Frontend / Backend / DB
@@ -71,7 +71,7 @@ D. Reasoning / Memory / Tools
 
 ---
 
-### Q9. A company wants to self-host an open-weights Llama model on its own SageMaker endpoint inside a VPC. The right service is:
+### Q9. A company wants to self-host an open-weights Llama model on its own SageMaker endpoint inside a VPC. The right service is: *(Apply)*
 A. Amazon Bedrock
 B. SageMaker JumpStart
 C. PartyRock
@@ -79,7 +79,7 @@ D. Amazon Q Business
 
 ---
 
-### Q10. Which Bedrock model family is optimized for TEXT EMBEDDINGS often used in RAG?
+### Q10. Which Bedrock model family is optimized for TEXT EMBEDDINGS often used in RAG? *(Remember)*
 A. Amazon Titan Text Embeddings (or Cohere Embed)
 B. Stable Diffusion
 C. Amazon Nova Reel
@@ -87,7 +87,7 @@ D. Amazon Polly
 
 ---
 
-### Q11. Amazon Q Developer was formerly known as:
+### Q11. Amazon Q Developer was formerly known as: *(Remember)*
 A. AWS DeepRacer
 B. Amazon CodeWhisperer
 C. Amazon Lex
@@ -95,7 +95,7 @@ D. AWS Cloud9
 
 ---
 
-### Q12. A team wants steady, predictable throughput on a Bedrock model for a high-traffic production app. The right pricing mode is:
+### Q12. A team wants steady, predictable throughput on a Bedrock model for a high-traffic production app. The right pricing mode is: *(Apply)*
 A. Provisioned Throughput
 B. Batch
 C. Free tier
@@ -103,7 +103,7 @@ D. SageMaker Serverless Inference
 
 ---
 
-### Q13. Which AWS chip is purpose-built for ML TRAINING at lower cost than GPUs?
+### Q13. Which AWS chip is purpose-built for ML TRAINING at lower cost than GPUs? *(Remember)*
 A. AWS Inferentia
 B. AWS Trainium
 C. AWS Graviton
@@ -111,7 +111,7 @@ D. AWS Nitro
 
 ---
 
-### Q14. Which AWS chip is purpose-built for ML INFERENCE at lower cost than GPUs?
+### Q14. Which AWS chip is purpose-built for ML INFERENCE at lower cost than GPUs? *(Understand)*
 A. AWS Trainium
 B. AWS Inferentia
 C. AWS Graviton
@@ -119,7 +119,7 @@ D. AWS Nitro
 
 ---
 
-### Q15. A bank uses Bedrock and is worried about training data leakage. Which is TRUE?
+### Q15. A bank uses Bedrock and is worried about training data leakage. Which is TRUE? *(Evaluate)*
 A. AWS automatically trains base models using customer prompts
 B. By default, AWS does not use customer Bedrock inputs/outputs to train base models; data stays in the customer's account/Region
 C. Customers must publicly share their prompts
@@ -127,7 +127,7 @@ D. Bedrock requires data to be uploaded to a public S3 bucket
 
 ---
 
-### Q16. Which is a Bedrock-native feature for managed RAG?
+### Q16. Which is a Bedrock-native feature for managed RAG? *(Remember)*
 A. SageMaker Pipelines
 B. Knowledge Bases for Amazon Bedrock
 C. Amazon Personalize
@@ -135,7 +135,7 @@ D. AWS Glue
 
 ---
 
-### Q17. Stable Diffusion (from Stability AI) on Bedrock generates:
+### Q17. Stable Diffusion (from Stability AI) on Bedrock generates: *(Remember)*
 A. Text translations
 B. Images from text prompts
 C. Time-series forecasts
@@ -143,7 +143,7 @@ D. Speech audio
 
 ---
 
-### Q18. Which Bedrock provider offers Command R and Embed models often used for RAG and rerank?
+### Q18. Which Bedrock provider offers Command R and Embed models often used for RAG and rerank? *(Understand)*
 A. Anthropic
 B. Mistral
 C. Cohere
@@ -151,7 +151,7 @@ D. AI21 Labs
 
 ---
 
-### Q19. A marketing manager wants to build a quiz-generator demo with no code in a couple of hours. The BEST tool is:
+### Q19. A marketing manager wants to build a quiz-generator demo with no code in a couple of hours. The BEST tool is: *(Apply)*
 A. SageMaker Studio
 B. PartyRock
 C. AWS Glue
@@ -159,7 +159,7 @@ D. Amazon Athena
 
 ---
 
-### Q20. Amazon Q in QuickSight provides:
+### Q20. Amazon Q in QuickSight provides: *(Understand)*
 A. Natural-language generative BI for dashboards
 B. Code completion in IDEs
 C. Image generation
@@ -167,7 +167,7 @@ D. Speech transcription
 
 ---
 
-### Q21. Which Bedrock model family is built by Amazon and known for cost-efficient text and embeddings?
+### Q21. Which Bedrock model family is built by Amazon and known for cost-efficient text and embeddings? *(Understand)*
 A. Claude
 B. Titan
 C. Llama
@@ -175,7 +175,7 @@ D. Stable Diffusion
 
 ---
 
-### Q22. A retail enterprise wants the FASTEST and EASIEST path to invoke Claude in production without managing infrastructure. The right choice is:
+### Q22. A retail enterprise wants the FASTEST and EASIEST path to invoke Claude in production without managing infrastructure. The right choice is: *(Apply)*
 A. SageMaker JumpStart endpoint with manual instance management
 B. Amazon Bedrock (Claude model invocation)
 C. EC2 with custom Docker
@@ -183,7 +183,7 @@ D. PartyRock
 
 ---
 
-### Q23. Which is NOT a Bedrock-native capability?
+### Q23. Which is NOT a Bedrock-native capability? *(Analyze)*
 A. Knowledge Bases
 B. Guardrails
 C. Agents
@@ -191,7 +191,7 @@ D. Real-time speech transcription
 
 ---
 
-### Q24. A team needs to compare 3 foundation models on their own dataset using AWS-native tooling. The right feature is:
+### Q24. A team needs to compare 3 foundation models on their own dataset using AWS-native tooling. The right feature is: *(Create)*
 A. Bedrock Model Evaluation
 B. Amazon Q Developer
 C. SageMaker Edge Manager

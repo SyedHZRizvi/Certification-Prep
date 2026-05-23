@@ -2,11 +2,13 @@
 
 > **Instructions:** 25 questions, ~30 min. Target 20/25.
 
+> **Bloom's distribution.** Remember 5 (20%) · Understand 6 (24%) · Apply 8 (32%) · Analyze/Evaluate 5 (20%) · Create 1 (4%).
+
 ---
 
 ## Questions
 
-### Q1. A workload requires strict ordering of messages and exactly-once processing. The BEST service is:
+### Q1. A workload requires strict ordering of messages and exactly-once processing. The BEST service is: *(Apply)*
 A. SQS Standard
 B. SQS FIFO
 C. SNS Standard
@@ -14,7 +16,7 @@ D. Kinesis Firehose
 
 ---
 
-### Q2. To send the same event to multiple SQS queues, the recommended pattern is:
+### Q2. To send the same event to multiple SQS queues, the recommended pattern is: *(Apply)*
 A. Loop in the producer and send N times
 B. SNS topic → multiple SQS subscriptions (fan-out)
 C. Kinesis Streams → multiple consumers
@@ -22,7 +24,7 @@ D. Step Functions
 
 ---
 
-### Q3. An app must trigger different downstream actions based on event content (e.g., orders > $100 go to fraud service). The BEST tool is:
+### Q3. An app must trigger different downstream actions based on event content (e.g., orders > $100 go to fraud service). The BEST tool is: *(Apply)*
 A. SQS Standard
 B. SNS without filters
 C. EventBridge with rules
@@ -30,7 +32,7 @@ D. Kinesis Firehose
 
 ---
 
-### Q4. SQS visibility timeout is:
+### Q4. SQS visibility timeout is: *(Remember)*
 A. The period a message is hidden from other consumers after being received
 B. The time before a message is deleted automatically
 C. The maximum age of a message
@@ -38,7 +40,7 @@ D. Encryption duration
 
 ---
 
-### Q5. A message in SQS keeps failing processing. After N attempts you want to inspect it. Use a:
+### Q5. A message in SQS keeps failing processing. After N attempts you want to inspect it. Use a: *(Apply)*
 A. Visibility timeout
 B. Dead Letter Queue
 C. Filter policy
@@ -46,7 +48,7 @@ D. Replay buffer
 
 ---
 
-### Q6. Long polling with SQS:
+### Q6. Long polling with SQS: *(Understand)*
 A. Reduces empty receive responses and cost
 B. Increases cost
 C. Eliminates need for visibility timeout
@@ -54,7 +56,7 @@ D. Forces FIFO ordering
 
 ---
 
-### Q7. To stream clickstream data straight to S3 and Redshift without managing shards:
+### Q7. To stream clickstream data straight to S3 and Redshift without managing shards: *(Apply)*
 A. Kinesis Data Streams
 B. Kinesis Data Firehose
 C. SQS
@@ -62,7 +64,7 @@ D. SNS
 
 ---
 
-### Q8. To enable multiple independent consumers to replay the SAME event data within the last 24 hours:
+### Q8. To enable multiple independent consumers to replay the SAME event data within the last 24 hours: *(Apply)*
 A. SQS Standard
 B. SNS topic
 C. Kinesis Data Streams
@@ -70,7 +72,7 @@ D. SQS FIFO
 
 ---
 
-### Q9. A workflow has 6 steps with retries, branching, and a 24-hour wait for human approval. Use:
+### Q9. A workflow has 6 steps with retries, branching, and a 24-hour wait for human approval. Use: *(Create)*
 A. SQS
 B. EventBridge
 C. Step Functions Standard
@@ -78,7 +80,7 @@ D. Kinesis
 
 ---
 
-### Q10. Step Functions Express workflows are BEST for:
+### Q10. Step Functions Express workflows are BEST for: *(Understand)*
 A. Long-running workflows (>5 minutes)
 B. Short, high-volume event-driven workflows (<5 minutes)
 C. Human approval workflows
@@ -86,7 +88,7 @@ D. Audit-heavy compliance workflows
 
 ---
 
-### Q11. A legacy enterprise app uses AMQP protocol. The BEST migration target is:
+### Q11. A legacy enterprise app uses AMQP protocol. The BEST migration target is: *(Apply)*
 A. Refactor to SQS
 B. Amazon MQ (RabbitMQ engine)
 C. Kinesis
@@ -94,7 +96,7 @@ D. EventBridge
 
 ---
 
-### Q12. Lambda is invoked by SQS. To prevent overwhelming a downstream RDS database, you should:
+### Q12. Lambda is invoked by SQS. To prevent overwhelming a downstream RDS database, you should: *(Analyze)*
 A. Increase Lambda concurrency
 B. Limit Lambda reserved concurrency
 C. Disable RDS Multi-AZ
@@ -102,7 +104,7 @@ D. Switch to SNS
 
 ---
 
-### Q13. To run a Lambda every 5 minutes, the BEST mechanism is:
+### Q13. To run a Lambda every 5 minutes, the BEST mechanism is: *(Apply)*
 A. EventBridge Scheduler / scheduled rule
 B. SQS delay queue loop
 C. CloudFront
@@ -110,7 +112,7 @@ D. Step Functions wait state in infinite loop
 
 ---
 
-### Q14. SNS supports which subscriber types? (pick all that apply)
+### Q14. SNS supports which subscriber types? (pick all that apply) *(Remember)*
 A. Email/SMS
 B. HTTP/S
 C. SQS
@@ -119,7 +121,7 @@ E. All of the above
 
 ---
 
-### Q15. To buffer a sudden traffic spike to a slow downstream service:
+### Q15. To buffer a sudden traffic spike to a slow downstream service: *(Apply)*
 A. Put SQS in front; have workers process at their own pace
 B. Add an ALB
 C. Switch to DynamoDB
@@ -127,7 +129,7 @@ D. Add a NAT Gateway
 
 ---
 
-### Q16. An IoT pipeline ingests 50,000 events/sec and needs to retain them 7 days for replay. Choose:
+### Q16. An IoT pipeline ingests 50,000 events/sec and needs to retain them 7 days for replay. Choose: *(Apply)*
 A. SQS Standard
 B. SQS FIFO
 C. Kinesis Data Streams with 7-day retention
@@ -135,7 +137,7 @@ D. Step Functions
 
 ---
 
-### Q17. SNS filter policies allow:
+### Q17. SNS filter policies allow: *(Understand)*
 A. Subscribers to receive only messages matching JSON criteria
 B. Encryption at rest
 C. Replay of past messages
@@ -143,7 +145,7 @@ D. Cross-region replication
 
 ---
 
-### Q18. To scale SQS consumer EC2 instances when the backlog grows:
+### Q18. To scale SQS consumer EC2 instances when the backlog grows: *(Analyze)*
 A. CloudWatch alarm on `ApproximateNumberOfMessagesVisible` → ASG scale-out
 B. Use Spot only
 C. Switch to FIFO
@@ -151,7 +153,7 @@ D. Disable visibility timeout
 
 ---
 
-### Q19. EventBridge advantages over SNS include:
+### Q19. EventBridge advantages over SNS include: *(Evaluate)*
 A. Schema registry, archive/replay, native SaaS partner events
 B. Higher throughput at lower cost
 C. Better at SMS/Email
@@ -159,7 +161,7 @@ D. Lower latency than SNS
 
 ---
 
-### Q20. SQS messages are retained by default for:
+### Q20. SQS messages are retained by default for: *(Remember)*
 A. 1 minute
 B. 4 days (default; configurable 1 min – 14 days)
 C. 30 days
@@ -167,7 +169,7 @@ D. Forever
 
 ---
 
-### Q21. To prevent duplicate processing in SQS FIFO from a producer that may retry, use:
+### Q21. To prevent duplicate processing in SQS FIFO from a producer that may retry, use: *(Analyze)*
 A. Message Deduplication ID (within 5-minute window)
 B. Visibility timeout
 C. DLQ
@@ -175,7 +177,7 @@ D. Encryption
 
 ---
 
-### Q22. A microservice publishes events. Many other services (and Datadog) want to consume them with content-based routing. The BEST pattern is:
+### Q22. A microservice publishes events. Many other services (and Datadog) want to consume them with content-based routing. The BEST pattern is: *(Apply)*
 A. EventBridge custom bus with rules to multiple targets including a Datadog partner integration
 B. SQS Standard
 C. Kinesis Data Streams
@@ -183,7 +185,7 @@ D. SNS to all
 
 ---
 
-### Q23. SQS message maximum size is:
+### Q23. SQS message maximum size is: *(Remember)*
 A. 256 KB (use S3 + pointer for larger payloads)
 B. 1 MB
 C. 5 MB
@@ -191,7 +193,7 @@ D. 16 KB
 
 ---
 
-### Q24. Lambda + EventBridge Pipes lets you:
+### Q24. Lambda + EventBridge Pipes lets you: *(Understand)*
 A. Wire a source (e.g. DynamoDB Streams) → optional filter/transform → target (e.g. SQS or HTTP) with no Lambda glue
 B. Replace API Gateway
 C. Run scheduled jobs only
@@ -199,7 +201,7 @@ D. Encrypt streams
 
 ---
 
-### Q25. To synchronously process incoming HTTP requests with rate limiting, throttling, and auth:
+### Q25. To synchronously process incoming HTTP requests with rate limiting, throttling, and auth: *(Understand)*
 A. API Gateway → Lambda
 B. SQS only
 C. EventBridge only

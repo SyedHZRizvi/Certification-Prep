@@ -1,12 +1,13 @@
 # ✏️ Module 5 Quiz: Warehouse Operations
 
 > **Instructions:** 25 questions. Aim for 20/25.
+> Each question tagged with its **Bloom's level**.
 
 ---
 
 ## Questions
 
-### Q1. A "U-shape" warehouse layout has:
+### Q1. A "U-shape" warehouse layout has: *(Remember)*
 A. Receiving and shipping docks on the same side
 B. Receiving on one side, shipping on the opposite
 C. No formal flow direction
@@ -14,7 +15,7 @@ D. Two stacked floors
 
 ---
 
-### Q2. An I-shape (straight-through) layout is BEST for:
+### Q2. An I-shape (straight-through) layout is BEST for: *(Apply)*
 A. Low-volume manual operations
 B. High-volume automated DCs
 C. Cross-dock-only facilities
@@ -22,7 +23,7 @@ D. Bonded warehouses
 
 ---
 
-### Q3. The 7-step warehouse workflow begins with:
+### Q3. The 7-step warehouse workflow begins with: *(Remember)*
 A. Picking
 B. Receiving
 C. Packing
@@ -30,7 +31,7 @@ D. Shipping
 
 ---
 
-### Q4. Walmart's cross-dock model where suppliers pre-label cartons by destination store is:
+### Q4. Walmart's cross-dock model where suppliers pre-label cartons by destination store is: *(Apply)*
 A. Post-distribution cross-dock
 B. Pre-distribution cross-dock
 C. Break-bulk cross-dock
@@ -38,7 +39,7 @@ D. Direct transfer
 
 ---
 
-### Q5. Random putaway means:
+### Q5. Random putaway means: *(Understand)*
 A. Throw pallets anywhere unsupervised
 B. Use any available slot, tracked by WMS
 C. No tracking at all
@@ -46,7 +47,7 @@ D. Fixed slots reassigned daily
 
 ---
 
-### Q6. Drive-in racking is BEST for:
+### Q6. Drive-in racking is BEST for: *(Apply)*
 A. Many SKUs, broad assortment with FIFO
 B. Few SKUs, deep storage, LIFO acceptable
 C. E-com single-unit picks
@@ -54,7 +55,7 @@ D. Cold storage with strict FIFO
 
 ---
 
-### Q7. An AS/RS is:
+### Q7. An AS/RS is: *(Remember)*
 A. Floor-running automated guided vehicle
 B. Crane-based automated storage & retrieval in racking
 C. Person-driven forklift
@@ -62,7 +63,7 @@ D. Belt conveyor
 
 ---
 
-### Q8. AGV vs AMR — the key difference is:
+### Q8. AGV vs AMR — the key difference is: *(Analyze)*
 A. AGVs are powered by batteries; AMRs by diesel
 B. AGVs follow fixed paths (wire/laser); AMRs map and re-route dynamically (LiDAR/SLAM)
 C. AGVs are cheaper than AMRs
@@ -70,7 +71,7 @@ D. AMRs can only carry letters
 
 ---
 
-### Q9. The "golden zone" for slotting refers to:
+### Q9. The "golden zone" for slotting refers to: *(Remember)*
 A. The aisle closest to receiving
 B. The waist-to-shoulder height range for ergonomic pick
 C. Top shelf for visibility
@@ -78,7 +79,7 @@ D. The mezzanine
 
 ---
 
-### Q10. Cube utilization is generally targeted at:
+### Q10. Cube utilization is generally targeted at: *(Understand)*
 A. 99%+
 B. 90%+
 C. 65–85% (above 85% impedes flow)
@@ -86,7 +87,7 @@ D. Below 50%
 
 ---
 
-### Q11. Pick accuracy world-class benchmark:
+### Q11. Pick accuracy world-class benchmark: *(Remember)*
 A. 95%
 B. 99.5%+
 C. 80%
@@ -94,7 +95,7 @@ D. 70%
 
 ---
 
-### Q12. The WMS module that runs engineered labor standards is:
+### Q12. The WMS module that runs engineered labor standards is: *(Remember)*
 A. YMS (Yard Management)
 B. LMS (Labor Management)
 C. TMS (Transportation Management)
@@ -102,7 +103,7 @@ D. OMS (Order Management)
 
 ---
 
-### Q13. C-TPAT is:
+### Q13. C-TPAT is: *(Remember)*
 A. A pallet standard
 B. US Customs supply-chain security program
 C. A warehouse layout
@@ -110,7 +111,7 @@ D. An EDI message
 
 ---
 
-### Q14. Cold-chain refrigerated range is typically:
+### Q14. Cold-chain refrigerated range is typically: *(Remember)*
 A. -40 to -18°C
 B. 0–8°C
 C. 15–25°C
@@ -118,7 +119,7 @@ D. >35°C
 
 ---
 
-### Q15. Pre-distribution cross-docking REQUIRES:
+### Q15. Pre-distribution cross-docking REQUIRES: *(Understand)*
 A. The DC to allocate at the dock
 B. The supplier to label cartons by destination before shipping
 C. Manual rework of every pallet
@@ -126,7 +127,7 @@ D. Government approval
 
 ---
 
-### Q16. A vertical lift module (VLM):
+### Q16. A vertical lift module (VLM): *(Apply)*
 A. Is a conveyor type
 B. Is a vertical-axis storage tower with shuttles for slow-mover small parts
 C. Is a robotic arm
@@ -134,7 +135,7 @@ D. Is a forklift attachment
 
 ---
 
-### Q17. Automation is LEAST appropriate when:
+### Q17. Automation is LEAST appropriate when: *(Analyze)*
 A. High volume + stable SKUs
 B. 24/7 operations
 C. Frequent SKU churn and lumpy demand
@@ -142,7 +143,7 @@ D. Tight accuracy required
 
 ---
 
-### Q18. Engineered labor standards typically use:
+### Q18. Engineered labor standards typically use: *(Remember)*
 A. Random sampling
 B. Time studies / MOST analysis
 C. Manager opinion
@@ -150,7 +151,7 @@ D. Self-reported logs
 
 ---
 
-### Q19. ABC class-based putaway means:
+### Q19. ABC class-based putaway means: *(Apply)*
 A. Random for all items
 B. Fast movers in pick zone, slow movers in reserve, items random within zone
 C. Fixed slot per SKU
@@ -158,7 +159,7 @@ D. By alphabetical name
 
 ---
 
-### Q20. Forklift operator certification under OSHA is governed by:
+### Q20. Forklift operator certification under OSHA is governed by: *(Remember)*
 A. 21 CFR Part 11
 B. 29 CFR 1910.178
 C. ISO 14001
@@ -166,7 +167,7 @@ D. HACCP
 
 ---
 
-### Q21. Voice picking is generally:
+### Q21. Voice picking is generally: *(Understand)*
 A. The slowest method
 B. Hands-free, lower CapEx than pick-to-light, very accurate
 C. Required for cold-chain
@@ -174,7 +175,7 @@ D. Only for receiving
 
 ---
 
-### Q22. A WMS dispatching a forklift driver to a specific slot is:
+### Q22. A WMS dispatching a forklift driver to a specific slot is: *(Apply)*
 A. Push allocation
 B. Directed work
 C. Manual assignment
@@ -182,7 +183,7 @@ D. Self-organized
 
 ---
 
-### Q23. Dock-to-stock time measures:
+### Q23. Dock-to-stock time measures: *(Remember)*
 A. Time from order entry to ship
 B. Time from receipt to putaway-complete
 C. Time from manufacturing to receipt
@@ -190,7 +191,7 @@ D. Cycle count interval
 
 ---
 
-### Q24. Pallet flow / gravity flow racking enforces:
+### Q24. Pallet flow / gravity flow racking enforces: *(Remember)*
 A. LIFO
 B. FIFO
 C. Random rotation
@@ -198,7 +199,7 @@ D. No rotation
 
 ---
 
-### Q25. A startup DC processes 200 orders/day with rapidly-changing SKUs. The MOST appropriate setup is:
+### Q25. A startup DC processes 200 orders/day with rapidly-changing SKUs. The MOST appropriate setup is: *(Evaluate)*
 A. Full AS/RS system
 B. Goods-to-person robots
 C. Manual cart-based picking with WMS

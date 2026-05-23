@@ -171,4 +171,50 @@ If you can answer all 5 in 60 seconds, you own Module 7. ✅
 
 ---
 
+## 🧮 Prompt Pattern → Parameter Recipe
+
+| Pattern | Temperature | top_p | Other |
+|---|---|---|---|
+| Grounded RAG | 0.0–0.3 | 1.0 | `response_format` if schema-bound |
+| Creative copy | 0.7–1.2 | 1.0 | `frequency_penalty: 0.5` |
+| Code generation | 0.0–0.4 | 1.0 | Stop sequences for fence closure |
+| Few-shot tuning | 0.0–0.3 | 1.0 | Examples in `assistant` messages |
+| Reasoning (o1) | n/a | n/a | Model controls its own internal cot |
+
+## 🛡️ Per-Deployment Filter Recipe (Foundry)
+
+```
+Per deployment, you can set:
+  - Per-category threshold (Hate / Sexual / Violence / Self-Harm)
+  - Per-direction (prompt | completion) toggle
+  - Prompt Shields (User Attack | Document Attack)
+  - Protected Material — Text | Code
+  - Groundedness Detection (where supported)
+Cannot fully disable filtering without approved exemption.
+```
+
+## 📚 Regulatory Pattern (2024–2026)
+
+| Constraint | Lever |
+|---|---|
+| GDPR data residency (EU) | EU Data Zone / region-pinned deployment |
+| HIPAA-defensible | Abuse-monitoring opt-out (approved) + Private Endpoints + CMK |
+| EU AI Act foundation model | Disclose synthetic content; document fine-tuning provenance |
+| Brand safety (consumer) | Tightened custom content filter + Protected Material |
+| Audit | Diagnostic settings → Log Analytics + per-call MI identity |
+
+## 📖 Citations
+
+| Concept | Source |
+|---|---|
+| Transformer | Vaswani et al. (2017), NeurIPS |
+| Few-shot / in-context learning | Brown et al. (2020), NeurIPS (GPT-3) |
+| Constitutional AI alignment (background) | Bai et al. (2022), Anthropic |
+| Azure OpenAI GA | Microsoft blog (January 2023) |
+| Microsoft RAI Standard v2 | Microsoft (June 2022) |
+| EU AI Act | Reg (EU) 2024/1689 (June 2024) |
+| Coca-Cola "Create Real Magic" | Coca-Cola Co. press release (March 2023) |
+
+---
+
 ➡️ [Module 8: Build GenAI Apps](../Module-08-Build-GenAI-Apps/Reading.md)

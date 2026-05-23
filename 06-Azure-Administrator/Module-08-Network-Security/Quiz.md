@@ -6,7 +6,7 @@
 
 ## Questions
 
-### Q1. NSG rule priorities are processed:
+### Q1. NSG rule priorities are processed: *(Remember)*
 A. Highest number first
 B. Lowest number first (lower = higher priority)
 C. Alphabetically
@@ -14,7 +14,7 @@ D. Randomly
 
 ---
 
-### Q2. The default inbound rule with priority 65500 in every NSG is:
+### Q2. The default inbound rule with priority 65500 in every NSG is: *(Remember)*
 A. AllowVnetInBound
 B. AllowAzureLoadBalancerInBound
 C. DenyAllInBound
@@ -22,7 +22,7 @@ D. AllowInternetInBound
 
 ---
 
-### Q3. NSGs operate at:
+### Q3. NSGs operate at: *(Understand)*
 A. Layer 2 (MAC)
 B. Layer 3/4 (IP/port/protocol)
 C. Layer 7 (application)
@@ -30,7 +30,7 @@ D. Layer 5 (session)
 
 ---
 
-### Q4. Yes/No — NSGs.
+### Q4. Yes/No — NSGs. *(Evaluate)*
 
 **S1:** NSGs are stateful (return traffic is auto-allowed).
 **S2:** Both subnet-level and NIC-level NSGs apply, and a Deny in either drops the packet.
@@ -43,7 +43,7 @@ D. Yes / Yes / No
 
 ---
 
-### Q5. An NSG rule with priority 200 allows traffic, and another rule with priority 100 denies the same traffic. The result is:
+### Q5. An NSG rule with priority 200 allows traffic, and another rule with priority 100 denies the same traffic. The result is: *(Analyze)*
 A. Allow
 B. Deny
 C. Random
@@ -51,7 +51,7 @@ D. Both rules conflict; an error is thrown
 
 ---
 
-### Q6. Application Security Groups (ASGs):
+### Q6. Application Security Groups (ASGs): *(Understand)*
 A. Replace NSGs
 B. Are logical tags on NICs, used as source/destination in NSG rules within the same VNet
 C. Work across peered VNets
@@ -59,7 +59,7 @@ D. Are layer-7 firewalls
 
 ---
 
-### Q7. The Azure Firewall lives in a subnet named:
+### Q7. The Azure Firewall lives in a subnet named: *(Remember)*
 A. FirewallSubnet
 B. AzureFirewallSubnet (exact, case-sensitive)
 C. SecuritySubnet
@@ -67,7 +67,7 @@ D. Any subnet name
 
 ---
 
-### Q8. Azure Firewall rule processing order is:
+### Q8. Azure Firewall rule processing order is: *(Remember)*
 A. Application → Network → DNAT
 B. DNAT → Network → Application
 C. Network → DNAT → Application
@@ -75,7 +75,7 @@ D. Alphabetical
 
 ---
 
-### Q9. Which Azure Firewall SKU supports TLS inspection and IDPS?
+### Q9. Which Azure Firewall SKU supports TLS inspection and IDPS? *(Remember)*
 A. Basic
 B. Standard
 C. Premium
@@ -83,7 +83,7 @@ D. All SKUs
 
 ---
 
-### Q10. A Standard SKU public LB:
+### Q10. A Standard SKU public LB: *(Understand)*
 A. Has no SLA
 B. Supports availability zones and 99.99% SLA (with ≥ 2 backend instances)
 C. Cannot route public traffic
@@ -91,7 +91,7 @@ D. Requires a Basic public IP
 
 ---
 
-### Q11. To publish HTTP/HTTPS with URL path-based routing and WAF inside one region, use:
+### Q11. To publish HTTP/HTTPS with URL path-based routing and WAF inside one region, use: *(Apply)*
 A. Standard Load Balancer
 B. Application Gateway WAF v2
 C. Azure Firewall
@@ -99,7 +99,7 @@ D. Front Door
 
 ---
 
-### Q12. To provide a global, edge-routed L7 entry point with CDN + WAF, use:
+### Q12. To provide a global, edge-routed L7 entry point with CDN + WAF, use: *(Apply)*
 A. Standard Load Balancer
 B. Application Gateway WAF v2
 C. Azure Front Door
@@ -107,7 +107,7 @@ D. Traffic Manager
 
 ---
 
-### Q13. Traffic Manager is:
+### Q13. Traffic Manager is: *(Understand)*
 A. A DNS-based traffic router (no proxy)
 B. An L7 proxy
 C. A regional firewall
@@ -115,7 +115,7 @@ D. A CDN
 
 ---
 
-### Q14. **Order these steps** to publish an internal web app via Front Door Premium with Private Link.
+### Q14. **Order these steps** to publish an internal web app via Front Door Premium with Private Link. *(Create)*
 
 1. Deploy the App Service in a VNet with a private endpoint
 2. Create Front Door Premium
@@ -130,7 +130,7 @@ D. 1 → 2 → 4 → 3 → 5
 
 ---
 
-### Q15. Yes/No — Service tags.
+### Q15. Yes/No — Service tags. *(Understand)*
 
 **S1:** `VirtualNetwork` includes the VNet's space + peered VNets + on-prem reachable space.
 **S2:** `Internet` covers all public IPs outside the VNet.
@@ -143,7 +143,7 @@ D. Yes / Yes / No
 
 ---
 
-### Q16. To allow only Azure Load Balancer health probes inbound, your NSG should allow source:
+### Q16. To allow only Azure Load Balancer health probes inbound, your NSG should allow source: *(Apply)*
 A. Internet
 B. AzureLoadBalancer service tag
 C. VirtualNetwork
@@ -151,7 +151,7 @@ D. 169.254.169.254 only
 
 ---
 
-### Q17. DDoS Network Protection is enabled at the:
+### Q17. DDoS Network Protection is enabled at the: *(Remember)*
 A. NIC level
 B. VNet level (whole VNet protected)
 C. Resource group level
@@ -159,7 +159,7 @@ D. Subscription level only
 
 ---
 
-### Q18. Yes/No — Application Gateway.
+### Q18. Yes/No — Application Gateway. *(Understand)*
 
 **S1:** Application Gateway is L7 (HTTP/HTTPS).
 **S2:** Application Gateway supports URL path-based routing.
@@ -172,7 +172,7 @@ D. Yes / Yes / No
 
 ---
 
-### Q19. You see strange traffic from a server tagged with the ASG `asg-web` trying to reach internal API on TCP 8080. The cleanest fix:
+### Q19. You see strange traffic from a server tagged with the ASG `asg-web` trying to reach internal API on TCP 8080. The cleanest fix: *(Analyze)*
 A. Block 8080 outbound on the web subnet NSG
 B. Replace ASGs with hardcoded IPs
 C. Adjust the NSG rule for asg-app's NSG to deny the source ASG `asg-web` on 8080
@@ -180,7 +180,7 @@ D. Move the API to public IP
 
 ---
 
-### Q20. You want to ensure only traffic originating from Front Door reaches the App Service. The supported way is:
+### Q20. You want to ensure only traffic originating from Front Door reaches the App Service. The supported way is: *(Apply)*
 A. NSG rule on the App Service
 B. Restrict inbound to the `AzureFrontDoor.Backend` service tag plus header check, OR use Private Link origin
 C. Disable HTTPS
@@ -188,7 +188,7 @@ D. There is no way to restrict
 
 ---
 
-### Q21. A WAF policy on App Gateway or Front Door supports:
+### Q21. A WAF policy on App Gateway or Front Door supports: *(Understand)*
 A. Custom rules + OWASP Core Rule Set + bot protection
 B. Custom rules only
 C. OWASP only
@@ -196,7 +196,7 @@ D. No customization
 
 ---
 
-### Q22. Azure Bastion is used to:
+### Q22. Azure Bastion is used to: *(Remember)*
 A. Replace a load balancer
 B. Allow secure RDP/SSH to VMs without giving them public IPs
 C. Act as a layer-7 firewall
@@ -204,7 +204,7 @@ D. Provide L7 caching
 
 ---
 
-### Q23. **Order these steps** to apply WAF safely.
+### Q23. **Order these steps** to apply WAF safely. *(Create)*
 
 1. Create the WAF policy (custom + managed rules)
 2. Attach the WAF policy to Front Door / App Gateway in **Detection** mode
@@ -219,7 +219,7 @@ D. 1 → 2 → 5 → 3 → 4
 
 ---
 
-### Q24. Yes/No — Load Balancers.
+### Q24. Yes/No — Load Balancers. *(Evaluate)*
 
 **S1:** Standard LB is secure by default (closed inbound; you allow with NSG explicitly).
 **S2:** Standard LB supports both zonal and zone-redundant frontends.
@@ -232,7 +232,7 @@ D. Yes / Yes / Yes
 
 ---
 
-### Q25. Which scenario fits Cross-Region Load Balancer?
+### Q25. Which scenario fits Cross-Region Load Balancer? *(Apply)*
 A. L7 global routing with WAF
 B. L4 (TCP/UDP) global load balancing across multiple regional standard LBs
 C. Single-region L4
@@ -240,7 +240,7 @@ D. DNS-based steering
 
 ---
 
-### Q26. An NSG is associated with a subnet AND a NIC in that subnet. Inbound traffic to a VM is evaluated:
+### Q26. An NSG is associated with a subnet AND a NIC in that subnet. Inbound traffic to a VM is evaluated: *(Analyze)*
 A. Only by the NIC NSG
 B. Only by the subnet NSG
 C. Subnet NSG first, then NIC NSG — both must allow

@@ -2,6 +2,12 @@
 
 > **Why this module matters:** The exam doesn't just ask "what does S3 do?" — it asks "which design is the *best* fit?" To answer that, you need a mental model of AWS's global infrastructure, who's responsible for what, and the six pillars architects use to judge a design. This module gives you the lens you'll look through for the next 9 modules.
 
+> **Prerequisites for this module.** This is the on-ramp module — no AWS prerequisites assumed. Helpful background:
+> - Basic IP networking (an IP address, a subnet, a route, a port) — Wikipedia "Subnet" article is enough
+> - Familiarity with virtualization concepts (VM, hypervisor) — see *Computer Organization and Design* (Patterson & Hennessy, 6th ed., 2020) chapter on virtualization
+> - One semester of any programming language so the JSON / YAML examples don't surprise you
+> - If you've done the **CLF-C02 (AWS Cloud Practitioner)** course in this hub already, you're ahead — most of this module is a deeper re-derivation of those concepts
+
 ---
 
 ## 🍕 A Story: The Coffee Roaster That Outgrew Its Garage
@@ -60,6 +66,11 @@ AWS's physical infrastructure is laid out in a strict hierarchy. **Memorize it c
 ## 🏛️ The Well-Architected Framework — The 6 Pillars
 
 This is the single most quoted document on the exam. AWS literally writes questions like *"Which pillar of the Well-Architected Framework is most directly improved by enabling Multi-AZ on RDS?"*
+
+The framework's intellectual lineage matters because the exam quotes it almost verbatim:
+- **AWS Well-Architected Framework** (AWS, published 2015 as the original 5-pillar whitepaper by Philip Fitzsimons and team; **Sustainability pillar added at re:Invent 2021**; framework reaffirmed and last broadly revised in 2023). Free PDF on the AWS docs site.
+- The framework draws on **classical reliability engineering** — Patterson, Gibson & Katz's *RAID* paper (*ACM SIGMOD 1988*) for the redundancy idea; Brewer's **CAP theorem** (Brewer, ACM PODC keynote, 2000; formal proof by Gilbert & Lynch, *ACM SIGACT News* 2002) for the consistency/availability/partition trade-off baked into the Reliability pillar.
+- It is also the spine of the **AWS Builders' Library** (a free curated set of essays by AWS principal engineers — see the `aws.amazon.com/builders-library` URL set), which exam questions occasionally quote.
 
 🧠 **Memory hook:** **"OS COPR S"** — **O**perational Excellence, **S**ecurity, **C**ost Optimization, **O**bservability... no wait. Use this:
 
@@ -277,6 +288,65 @@ aws ec2 run-instances \
 
 ---
 
+## 📖 Case Study — Netflix's All-In AWS Migration (2009–2016)
+
+**Situation.** In August 2008, Netflix suffered a 3-day database corruption outage in its own data center. DVD shipments halted; engineering scrambled. The post-mortem (recounted by VP Yury Izrailevsky in the AWS Blog post *Completing the Netflix Cloud Migration*, February 2016) concluded that Netflix's monolithic Oracle database on co-located hardware had become an existential single point of failure. With streaming growing 1000× in projected demand, building more data centers was untenable.
+
+**Decision.** Netflix made a public commitment to migrate everything to AWS — *while* streaming traffic doubled every year. The principles set by then-Cloud-Architect Adrian Cockcroft (later AWS VP, retired 2022) defined the playbook:
+- **Multi-AZ by default**, **multi-region for resilience** — every service deployed across at least 3 AZs in `us-east-1`, with `eu-west-1` and `us-west-2` for regional failover
+- **No shared state** between regions; each region is independently survivable
+- **Cattle, not pets** — instances are disposable, rebuilt by Auto Scaling, never patched in place
+- **Chaos engineering** — *Chaos Monkey* (open-sourced 2010) randomly terminated production instances during business hours, forcing every service to be resilient by design. This is now codified as the Reliability pillar's "Test recovery procedures" principle and the AWS-native Fault Injection Service (FIS)
+- **Six-week migration cadence per service** — each microservice (Netflix has 700+) was moved independently rather than a big-bang cutover
+
+**Outcome.** Migration completed January 2016 — seven years and four months after starting. By 2016 Netflix served 75M subscribers in 190 countries entirely on AWS with **zero owned data centers** for streaming. During the 2015–2016 ramp, Netflix consumed roughly 1/3 of all peak internet bandwidth in North America. Cockcroft's 2014 re:Invent talk *Beyond the Goat Rodeo* (ARC203) is one of the most-watched AWS conference talks of all time and is required viewing for any aspiring solutions architect.
+
+**Lesson for the exam / for practitioners.** Netflix's migration *is* the Well-Architected Framework expressed at planet scale. Every pillar shows up:
+- **Reliability** — Multi-AZ + multi-region + chaos engineering
+- **Performance Efficiency** — Open Connect (Netflix's CDN) keeps origin servers cool
+- **Cost Optimization** — Reserved Instances for steady streaming, Spot for encoding, eventual move to Graviton ARM for ~20% efficiency gain
+- **Security** — IAM roles everywhere; no long-term keys
+- **Operational Excellence** — Spinnaker (Netflix's open-source CI/CD, now CNCF) deploys 4,000+ times per day
+- **Sustainability** — Graviton, right-sizing, ARM-based encoding farm
+
+When the SAA exam asks "which is the BEST design for a global streaming service with 99.99% SLA?" — the answer is some variation of *what Netflix actually built*.
+
+**Discussion (Socratic).**
+- **Q1.** Netflix took **7+ years** to migrate. A modern SaaS company doing a similar migration in 2026 with AWS Application Migration Service, Aurora Global Database, and DynamoDB Global Tables — could they do it in 2 years? What technical and *organizational* factors compress (or extend) the timeline?
+- **Q2.** Cockcroft's principle was *"no shared state between regions."* Yet Netflix obviously syncs *some* state (user preferences, watch history) cross-region. How do you reconcile the strict principle with the practical need? Where would CAP theorem say you're forced to choose, and which choice did Netflix make?
+- **Q3.** Netflix open-sourced Chaos Monkey, Eureka, Hystrix, Spinnaker, Atlas, and dozens more tools. Was open-sourcing their internal infrastructure a *strategic moat* or a *strategic liability*? Argue both sides.
+
+---
+
+## ⚠️ Currency & Deprecation Notes (as of 2026-05)
+
+- **Aurora Serverless v1** is in long-term deprecation — new workloads use **Aurora Serverless v2** (generally available since April 2022). Practice exams written before 2022 will reference "v1" as a viable answer; that's now incorrect.
+- **EC2 Classic** networking was retired in August 2022. All new VPCs are EC2-VPC.
+- **AWS Snowball Edge (legacy device)** has been refreshed; Snowmobile (the 45-foot truck) was retired in 2024 in favor of Snowball Edge clusters for exabyte transfers.
+- The Well-Architected Framework's **Sustainability pillar** (added at re:Invent 2021) is now a 6th column on every domain blueprint — pre-2022 study guides only mention 5 pillars; that's stale.
+
+---
+
+## 💬 Discussion — Socratic Prompts (15 min reflection)
+
+1. **The "AWS is always cheaper" myth.** A finance VP at a Series-C SaaS company tells you "the cloud is the most expensive thing we do — let's repatriate to colo and save 60%." Build the strongest argument for AND against repatriation. Under what specific cost model does repatriation actually win? (Hint: David Heinemeier Hansson / 37signals' 2023 *"Why we're leaving the cloud"* blog post is your reading.)
+2. **The Region/AZ blast radius debate.** A platform team argues that **3 AZs in one region** is "diverse enough" — the marginal cost of multi-region is enormous (data transfer, replication lag, operational complexity). The risk team argues that the Dec 7, 2021 AWS us-east-1 outage and June 13, 2023 us-east-1 Lambda outage prove this is naive. At a fintech with 99.99% SLA contractual obligations, which side wins, and what's the financial threshold above which multi-region pays off?
+3. **The Sustainability pillar paradox.** Moving from on-prem to AWS often *increases* a company's total compute (because elasticity removes the capex friction that historically kept teams disciplined). Yet AWS reports sustainability wins. Reconcile this. Is the Sustainability pillar a meaningful engineering constraint, or a marketing gloss on what would happen anyway?
+4. **The Well-Architected Review at startup vs enterprise.** AWS recommends running a Well-Architected Review (WAR) before launch and quarterly thereafter. At a 20-person startup with one engineer, what gets prioritized vs deferred? At a 5,000-engineer enterprise, what often *fails* about the WAR ritual despite earnest intent?
+5. **The "lift and shift" trap.** Re-host (lift and shift) is the fastest path to "in the cloud" — but Netflix explicitly rejected lift-and-shift and rewrote into microservices over 7 years. When is lift-and-shift the *right* answer, and when is it organizational debt with a 5-year compounding cost?
+
+---
+
+## ➡️ Where This Leads
+
+> **Where this leads.**
+> - **Inside this course:** Module 02 (IAM) operationalizes the Security pillar; Module 03 (EC2) operationalizes Performance + Cost; Module 04 (VPC) operationalizes the network side of Reliability; Module 10 (DR) operationalizes the cross-region resilience patterns Netflix pioneered.
+> - **Cross-course:** `03-AWS-Cloud-Practitioner` Module 01 is a gentler version of this content if you want a refresher. `07-AWS-AI-Practitioner` Module 01 references the same 6 pillars when picking generative AI services. `09-CompTIA-Security-Plus` Module 01 covers the CIA Triad — the academic foundation under AWS's Security pillar.
+> - **Practice:** Practice Exam 1 has 4 questions, Practice Exam 2 has 3 questions, and the Final Mock Exam has 5 questions directly drawn from this module's material.
+> - **Real world:** A Well-Architected Review (WAR) at your employer or a personal AWS account — the AWS Well-Architected Tool in the console runs the official questionnaire for free.
+
+---
+
 ## ✅ Module 1 Summary
 
 You now know:
@@ -286,19 +356,37 @@ You now know:
 - 💵 The three cost drivers (compute, storage, data egress)
 - 🧰 The Day-1 account setup every architect does
 - 🚨 The most common exam traps for foundational questions
+- 📖 **The Netflix migration case** — the canonical Well-Architected-at-scale story
 
 **Next steps:**
 1. 🎥 Watch the videos in [`Videos.md`](./Videos.md)
-2. ✏️ Take the [`Quiz.md`](./Quiz.md) (target: 20/24)
+2. ✏️ Take the [`Quiz.md`](./Quiz.md) (target: 20/25)
 3. 📋 Review [`Cheat-Sheet.md`](./Cheat-Sheet.md)
 4. ➡️ Move on to [Module 2: IAM & Organizations](../Module-02-IAM-Organizations/Reading.md)
 
 ---
 
-## 📚 Further Reading (Optional)
+## 📚 Further Sources (This Module)
 
-- 📖 **[AWS Well-Architected Framework (full docs)](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html)** — read at least the intro chapter for each pillar
-- 📖 **[Global Infrastructure Map](https://aws.amazon.com/about-aws/global-infrastructure/)** — visual of every region & AZ
-- 📖 **[Shared Responsibility Model (official)](https://aws.amazon.com/compliance/shared-responsibility-model/)**
-- 📖 **AWS Whitepapers** — *"Overview of Amazon Web Services"* and *"AWS Well-Architected Framework"* are both free PDFs and gold for the exam
-- 📖 **[SAA-C03 Exam Guide PDF](https://d1.awsstatic.com/training-and-certification/docs-sa-assoc/AWS-Certified-Solutions-Architect-Associate_Exam-Guide.pdf)**
+**AWS official**
+- 📖 **AWS Well-Architected Framework (full docs)** — `docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html` — read at least the intro chapter for each pillar.
+- 📖 **AWS Well-Architected Whitepaper PDF** — full 90-page foundational document; cited verbatim on the exam.
+- 📖 **AWS Builders' Library** — `aws.amazon.com/builders-library` — essays by AWS principal engineers. Required: *"Avoiding fallback in distributed systems"* (Marc Brooker), *"Timeouts, retries, and backoff with jitter"* (Brooker), *"Static stability using Availability Zones"* (Becky Weiss).
+- 📖 **Global Infrastructure Map** — `aws.amazon.com/about-aws/global-infrastructure/`
+- 📖 **Shared Responsibility Model (official)** — `aws.amazon.com/compliance/shared-responsibility-model/`
+- 📖 **SAA-C03 Exam Guide PDF** — 17 pages; the canonical blueprint.
+
+**re:Invent talks**
+- 🎤 **ARC203 (2014): Adrian Cockcroft — *Beyond the Goat Rodeo: Netflix on AWS*** — the foundational microservices-at-scale talk.
+- 🎤 **ARC301 (2023): *Resilience patterns at AWS scale*** — current best practices for multi-AZ and multi-region designs.
+- 🎤 **Werner Vogels re:Invent keynotes 2020–2024** — pattern catalog updates every year.
+
+**Academic foundations**
+- 📄 **Brewer, Eric (2000).** *Towards Robust Distributed Systems.* ACM PODC 2000 keynote — the CAP theorem origin.
+- 📄 **Gilbert, Seth & Lynch, Nancy (2002).** *Brewer's Conjecture and the Feasibility of Consistent, Available, Partition-Tolerant Web Services.* ACM SIGACT News 33(2) — the formal proof.
+- 📄 **Lamport, Leslie (1998).** *The Part-Time Parliament.* ACM Transactions on Computer Systems 16(2) — the Paxos consensus protocol underneath every multi-AZ database AWS sells.
+- 📖 **Kleppmann, Martin (2017).** *Designing Data-Intensive Applications.* O'Reilly — chapters 5, 7, 8, and 9 are the academic spine of the Reliability pillar.
+
+**Industry**
+- 📰 **Adrian Cockcroft's blog** — `adrianco.medium.com` — first-person account of the Netflix migration with the original principle list.
+- 📰 **The Pragmatic Engineer newsletter (Gergely Orosz)** — multiple deep-dives on Netflix architecture decisions.

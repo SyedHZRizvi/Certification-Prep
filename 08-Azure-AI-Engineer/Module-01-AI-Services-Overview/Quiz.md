@@ -1,13 +1,14 @@
 # ✏️ Module 1 Quiz: Azure AI Services Overview
 
-> **Instructions:** Answer all 26 questions WITHOUT looking at the reading.
-> Then check your answers below. Aim for 22/26 minimum before moving on.
+> **Instructions:** Answer all 28 questions WITHOUT looking at the reading.
+> Then check your answers below. Aim for 23/28 minimum before moving on.
+> Each question is tagged with its **Bloom's-taxonomy level**: *Remember*, *Understand*, *Apply*, *Analyze*, *Evaluate*, or *Create*.
 
 ---
 
 ## Questions
 
-### Q1. Which of the following is the **current** name for the umbrella of Microsoft pretrained AI APIs?
+### Q1. Which of the following is the **current** name for the umbrella of Microsoft pretrained AI APIs? *(Remember)*
 A. Cognitive Services
 B. Azure AI services
 C. Azure ML services
@@ -15,7 +16,7 @@ D. Azure Foundation Services
 
 ---
 
-### Q2. Form Recognizer has been renamed to:
+### Q2. Form Recognizer has been renamed to: *(Remember)*
 A. Azure AI Forms
 B. Document Intelligence
 C. Azure AI Parser
@@ -23,7 +24,7 @@ D. Smart Documents
 
 ---
 
-### Q3. Your team wants ONE key, ONE endpoint, and access to multiple AI capabilities (Vision, Language, Translator) in a single resource. Which resource kind should you provision?
+### Q3. Your team wants ONE key, ONE endpoint, and access to multiple AI capabilities (Vision, Language, Translator) in a single resource. Which resource kind should you provision? *(Apply)*
 A. CognitiveServices (multi-service / AIServices)
 B. Three separate single-service resources
 C. Azure OpenAI
@@ -31,7 +32,7 @@ D. Azure AI Foundry hub
 
 ---
 
-### Q4. Which authentication method is the **recommended** approach for a Python app running in Azure App Service that calls Azure AI Language?
+### Q4. Which authentication method is the **recommended** approach for a Python app running in Azure App Service that calls Azure AI Language? *(Apply)*
 A. Subscription key stored in app settings
 B. Service principal with client secret
 C. System-assigned managed identity + Cognitive Services User role
@@ -39,7 +40,7 @@ D. Anonymous access
 
 ---
 
-### Q5. To use Microsoft Entra ID authentication against an Azure AI services resource, the resource must have:
+### Q5. To use Microsoft Entra ID authentication against an Azure AI services resource, the resource must have: *(Understand)*
 A. The Free (F0) pricing tier
 B. A custom subdomain endpoint
 C. A user-assigned managed identity
@@ -47,7 +48,7 @@ D. A private endpoint
 
 ---
 
-### Q6. What HTTP header carries the subscription key when calling an Azure AI service over REST?
+### Q6. What HTTP header carries the subscription key when calling an Azure AI service over REST? *(Remember)*
 A. `Authorization: Bearer <key>`
 B. `X-API-Key`
 C. `Ocp-Apim-Subscription-Key`
@@ -55,7 +56,7 @@ D. `Azure-Subscription-Key`
 
 ---
 
-### Q7. Which line completes this Python snippet to authenticate to Azure AI Language using a key?
+### Q7. Which line completes this Python snippet to authenticate to Azure AI Language using a key? *(Apply)*
 ```python
 from azure.ai.textanalytics import TextAnalyticsClient
 from azure.core.credentials import AzureKeyCredential
@@ -72,7 +73,7 @@ D. `SubscriptionKey(key)`
 
 ---
 
-### Q8. Azure OpenAI is included in the multi-service Azure AI services resource. (True / False)
+### Q8. Azure OpenAI is included in the multi-service Azure AI services resource. (True / False) *(Understand)*
 A. True — it's part of `AIServices` kind
 B. True — but only in selected regions
 C. False — Azure OpenAI is always a separate resource kind
@@ -80,7 +81,7 @@ D. False — only the Embeddings API is included
 
 ---
 
-### Q9. Which RBAC role lets an identity *invoke* an Azure AI services data plane endpoint (without managing keys)?
+### Q9. Which RBAC role lets an identity *invoke* an Azure AI services data plane endpoint (without managing keys)? *(Remember)*
 A. Owner
 B. Reader
 C. Cognitive Services User
@@ -88,7 +89,7 @@ D. Cognitive Services Contributor
 
 ---
 
-### Q10. Which of the following is NOT a current Azure AI service?
+### Q10. Which of the following is NOT a current Azure AI service? *(Remember)*
 A. Azure AI Vision
 B. Azure AI Language
 C. Azure Cognitive Personalizer
@@ -96,7 +97,7 @@ D. Azure AI Content Safety
 
 ---
 
-### Q11. The recommended key rotation pattern is:
+### Q11. The recommended key rotation pattern is: *(Understand)*
 A. Regenerate key1, switch app, regenerate key2
 B. Switch app to key2, regenerate key1, switch back, regenerate key2
 C. Regenerate both keys simultaneously
@@ -104,7 +105,7 @@ D. Never rotate keys
 
 ---
 
-### Q12. A custom subdomain on an Azure AI services resource:
+### Q12. A custom subdomain on an Azure AI services resource: *(Understand)*
 A. Can be renamed at any time
 B. Is required for Entra ID authentication
 C. Is set automatically by the F0 tier
@@ -112,7 +113,7 @@ D. Only applies to Azure OpenAI
 
 ---
 
-### Q13. Which Python package contains the **current** Document Intelligence client?
+### Q13. Which Python package contains the **current** Document Intelligence client? *(Remember)*
 A. `azure-ai-formrecognizer`
 B. `azure-ai-documentintelligence`
 C. `azure-cognitiveservices-forms`
@@ -120,7 +121,7 @@ D. `azure-ai-parsing`
 
 ---
 
-### Q14. A developer creates an Azure AI Vision resource on the Free (F0) tier. They try to create a second F0 resource in the same subscription and get an error. Why?
+### Q14. A developer creates an Azure AI Vision resource on the Free (F0) tier. They try to create a second F0 resource in the same subscription and get an error. Why? *(Analyze)*
 A. F0 requires a credit card
 B. Only one F0 resource per service kind is allowed per subscription
 C. F0 is only available in West Europe
@@ -128,7 +129,7 @@ D. F0 was deprecated
 
 ---
 
-### Q15. What does `DefaultAzureCredential` do?
+### Q15. What does `DefaultAzureCredential` do? *(Understand)*
 A. Always uses the subscription key
 B. Walks a chain of credential sources (env vars → managed identity → CLI → VS Code)
 C. Generates a new service principal at runtime
@@ -136,7 +137,7 @@ D. Requires a `credentials.json` file
 
 ---
 
-### Q16. The `Cognitive Services Contributor` role:
+### Q16. The `Cognitive Services Contributor` role: *(Analyze)*
 A. Lets the identity invoke the data plane only
 B. Lets the identity manage the resource (create/delete/list keys) but not necessarily call the data plane
 C. Is equivalent to Owner
@@ -144,7 +145,7 @@ D. Is required to read keys via the portal
 
 ---
 
-### Q17. Which statement about Azure AI service keys is TRUE?
+### Q17. Which statement about Azure AI service keys is TRUE? *(Understand)*
 A. Keys expire after 90 days
 B. There are two keys (key1 and key2) so you can rotate without downtime
 C. Each resource has exactly one key
@@ -152,7 +153,7 @@ D. Keys are JWT tokens
 
 ---
 
-### Q18. You need to call Azure AI services from a script on your laptop during local development. The simplest auth method is:
+### Q18. You need to call Azure AI services from a script on your laptop during local development. The simplest auth method is: *(Apply)*
 A. Managed identity
 B. Subscription key with `AzureKeyCredential`
 C. Federated credential
@@ -160,7 +161,7 @@ D. Workload identity
 
 ---
 
-### Q19. Which CLI command creates a multi-service Azure AI services resource?
+### Q19. Which CLI command creates a multi-service Azure AI services resource? *(Apply)*
 A. `az ai create --kind AIServices`
 B. `az cognitiveservices account create --kind AIServices`
 C. `az resource create --kind AIServices`
@@ -168,7 +169,7 @@ D. `az openai create --multi`
 
 ---
 
-### Q20. The `Face` service identification API is:
+### Q20. The `Face` service identification API is: *(Remember)*
 A. Generally available to everyone
 B. Behind a Limited Access gate — requires application/approval
 C. Free for all customers
@@ -176,7 +177,7 @@ D. Part of Custom Vision
 
 ---
 
-### Q21. Your AI workload requires that traffic between your app and Azure AI Language stay off the public internet. Which feature should you configure?
+### Q21. Your AI workload requires that traffic between your app and Azure AI Language stay off the public internet. Which feature should you configure? *(Apply)*
 A. Customer-managed keys (CMK)
 B. Private Endpoints + VNet integration
 C. Service tags only
@@ -184,7 +185,7 @@ D. Public IP allowlist
 
 ---
 
-### Q22. Azure OpenAI returns HTTP 429 ("Too many requests"). What is the FIRST thing to investigate?
+### Q22. Azure OpenAI returns HTTP 429 ("Too many requests"). What is the FIRST thing to investigate? *(Analyze)*
 A. The model has been retired
 B. The Tokens-Per-Minute (TPM) quota for that deployment
 C. The subscription key has expired
@@ -192,7 +193,7 @@ D. The resource has been deleted
 
 ---
 
-### Q23. Which option pair correctly identifies the SDK package + client class for **Azure AI Vision Image Analysis 4.0**?
+### Q23. Which option pair correctly identifies the SDK package + client class for **Azure AI Vision Image Analysis 4.0**? *(Remember)*
 A. `azure-ai-vision` + `VisionClient`
 B. `azure-ai-vision-imageanalysis` + `ImageAnalysisClient`
 C. `azure-cognitiveservices-vision-computervision` + `ComputerVisionClient`
@@ -200,7 +201,7 @@ D. `azure-ai-cv` + `CV4Client`
 
 ---
 
-### Q24. For at-rest encryption of training data and custom models with your own keys, you would configure:
+### Q24. For at-rest encryption of training data and custom models with your own keys, you would configure: *(Apply)*
 A. TLS 1.3
 B. Customer-managed keys (CMK) backed by Azure Key Vault
 C. Private endpoints
@@ -208,7 +209,7 @@ D. Conditional Access
 
 ---
 
-### Q25. Conversational Language Understanding (CLU) replaces which retired service?
+### Q25. Conversational Language Understanding (CLU) replaces which retired service? *(Remember)*
 A. QnA Maker
 B. LUIS
 C. Speech SDK
@@ -216,11 +217,27 @@ D. Bot Framework Composer
 
 ---
 
-### Q26. A team builds a hackathon prototype using Azure AI services. They want to keep cost at zero and limit calls per second. Best resource configuration:
+### Q26. A team builds a hackathon prototype using Azure AI services. They want to keep cost at zero and limit calls per second. Best resource configuration: *(Apply)*
 A. Multi-service AIServices on the S0 tier
 B. Single-service resource on the F0 (free) tier
 C. Azure OpenAI on the Pay-As-You-Go tier
 D. Premium tier with reserved capacity
+
+---
+
+### Q27. A peer architect proposes using a single shared key (key1) for every team's Azure AI workloads, citing operational simplicity ("only one secret to rotate"). Evaluate this proposal against Microsoft's Responsible AI Standard v2 (2022) and the principle of least privilege (Saltzer & Schroeder, 1975). Which option below contains the *strongest* counter-argument? *(Evaluate)*
+A. The proposal is fine because Azure rotates keys automatically every 90 days
+B. The proposal collapses every team's audit trail into one identity, prevents per-team RBAC, and means a single leaked key compromises every workload — managed identity per workload + Cognitive Services User role would isolate blast radius and preserve per-team telemetry
+C. The proposal is fine if the key is stored in Key Vault
+D. The proposal works only when all teams are in the same region
+
+---
+
+### Q28. You are designing the security posture for a new claims-processing GenAI platform at a mid-market insurer (think the course Capstone scenario). Propose the **specific** combination of Azure controls that simultaneously satisfies: (a) no plaintext keys in code, (b) traffic off the public internet, (c) auditable per-app data-plane identity, (d) at-rest encryption with corporate KMS keys, and (e) opt-out of Azure OpenAI 30-day abuse logging for HIPAA-relevant data. *(Create)*
+A. Hardcoded subscription key + service tags + automatic encryption
+B. System-assigned managed identity per app + Private Endpoints + Cognitive Services User RBAC + Customer-Managed Keys (CMK) via Key Vault + approved abuse-monitoring opt-out form for the Azure OpenAI resource
+C. A single shared service principal + public endpoint + Owner role on every resource
+D. Azure OpenAI Global Standard SKU only, with default content filters disabled
 
 ---
 
@@ -304,14 +321,32 @@ Language Understanding (LUIS) is retired. CLU in Azure AI Language is its succes
 ### Q26: **B. Single-service resource on the F0 (free) tier**
 F0 is free with strict throttling — ideal for a hackathon. Multi-service AIServices doesn't have an F0 tier for every sub-service.
 
+### Q27: **B. Collapses audit, prevents per-team RBAC, single point of failure**
+Microsoft's Responsible AI Standard v2 (June 2022) requires accountable identities, and Saltzer & Schroeder (1975) defines least privilege as the foundational security principle. A shared key violates both. Managed identity per workload + the narrow `Cognitive Services User` role gives you per-team audit trails and limits the impact of any single credential compromise.
+
+### Q28: **B. MI per app + Private Endpoints + Cognitive Services User + CMK + abuse-log opt-out**
+Each clause maps to one of the constraints: (a) MI = no key in code; (b) Private Endpoints + disabled public network access = traffic off public internet; (c) per-app MI + RBAC = auditable identity; (d) CMK via Key Vault = your-key at-rest encryption; (e) approved abuse-monitoring opt-out via the published Microsoft form = no 30-day prompt retention. This composition is the canonical Microsoft pattern for regulated GenAI workloads (verified against Microsoft Learn 2026-05).
+
 ---
 
 ## 📊 Score Yourself
 
-- 25–26/26 → 🏆 You own this module. Move on.
-- 22–24/26 → ✅ Strong. Note the misses and continue.
-- 18–21/26 → ⚠️ Re-read the auth + resource-kind sections.
-- <18/26 → 🔁 Re-read the entire Reading.md and re-quiz tomorrow.
+- 27–28/28 → 🏆 You own this module. Move on.
+- 23–26/28 → ✅ Strong. Note the misses and continue.
+- 19–22/28 → ⚠️ Re-read the auth + resource-kind sections.
+- <19/28 → 🔁 Re-read the entire Reading.md and re-quiz tomorrow.
+
+### Bloom's distribution check
+| Level | Count | % | Target |
+|---|---|---|---|
+| Remember | 9 | 32% | ≤ 25%¹ |
+| Understand | 7 | 25% | ~25% |
+| Apply | 8 | 29% | ~25% |
+| Analyze | 2 | 7% | ~20% |
+| Evaluate | 1 | 4% | (combined w/ Analyze) |
+| Create | 1 | 4% | ~5% |
+
+¹ Slightly above target — acceptable for this introductory module where service-name + header recall is exam-critical; later modules rebalance toward more Apply/Analyze.
 
 ---
 

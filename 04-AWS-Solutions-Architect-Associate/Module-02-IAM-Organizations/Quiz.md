@@ -3,11 +3,13 @@
 > **Instructions:** Answer all 26 questions WITHOUT looking at the reading.
 > Aim for 21/26 minimum. Time limit: 35 minutes.
 
+> **Bloom's distribution.** Remember 5 (19%) · Understand 6 (23%) · Apply 8 (31%) · Analyze/Evaluate 6 (23%) · Create 1 (4%). Heavy scenario weighting — IAM is the most scenario-tested SAA topic.
+
 ---
 
 ## Questions
 
-### Q1. An EC2 application needs to read objects from an S3 bucket. What is the BEST practice?
+### Q1. An EC2 application needs to read objects from an S3 bucket. What is the BEST practice? *(Apply)*
 A. Store an IAM user's access key on the instance disk
 B. Bake the credentials into the AMI
 C. Attach an IAM Role to the instance via an instance profile
@@ -15,7 +17,7 @@ D. Pass credentials in user-data at launch
 
 ---
 
-### Q2. In IAM policy evaluation, when an explicit Deny and an explicit Allow apply to the same request:
+### Q2. In IAM policy evaluation, when an explicit Deny and an explicit Allow apply to the same request: *(Understand)*
 A. The Allow wins
 B. The Deny wins
 C. The newer policy wins
@@ -23,7 +25,7 @@ D. Both cancel out and the request is processed
 
 ---
 
-### Q3. A vendor SaaS needs read-only access to a customer's AWS account. What is the BEST approach?
+### Q3. A vendor SaaS needs read-only access to a customer's AWS account. What is the BEST approach? *(Apply)*
 A. The customer creates an IAM user for the vendor and shares the access key
 B. The customer creates an IAM Role with the vendor's AWS account as principal and an ExternalId condition
 C. The customer makes the bucket public
@@ -31,7 +33,7 @@ D. The customer shares root credentials over a secure channel
 
 ---
 
-### Q4. A Service Control Policy (SCP) in AWS Organizations:
+### Q4. A Service Control Policy (SCP) in AWS Organizations: *(Understand)*
 A. Grants permissions to all member accounts
 B. Limits the maximum permissions of identities in member accounts
 C. Replaces the need for IAM policies
@@ -39,7 +41,7 @@ D. Only applies to the management account
 
 ---
 
-### Q5. A company runs 30 AWS accounts. Developers need single sign-on access with role-based permission sets across many accounts. What is the BEST solution?
+### Q5. A company runs 30 AWS accounts. Developers need single sign-on access with role-based permission sets across many accounts. What is the BEST solution? *(Apply)*
 A. Create IAM users in each account and rotate keys monthly
 B. Use IAM Identity Center federated to the corporate IdP
 C. Share one root user between developers
@@ -47,7 +49,7 @@ D. Use a single account with many IAM users
 
 ---
 
-### Q6. Which statement about IAM Roles is CORRECT?
+### Q6. Which statement about IAM Roles is CORRECT? *(Understand)*
 A. Roles have long-term passwords and access keys
 B. Roles are assumed via STS and return short-lived credentials
 C. Roles can be attached to IAM users but not to EC2 instances
@@ -55,7 +57,7 @@ D. Only the root user can assume a role
 
 ---
 
-### Q7. A bucket in Account B has no resource policy. A user in Account A has an identity policy allowing `s3:GetObject` on Account B's bucket. The user's request will be:
+### Q7. A bucket in Account B has no resource policy. A user in Account A has an identity policy allowing `s3:GetObject` on Account B's bucket. The user's request will be: *(Analyze)*
 A. Allowed — identity policy is sufficient
 B. Denied — cross-account access requires the destination's resource policy or role to also allow
 C. Allowed only with MFA
@@ -63,7 +65,7 @@ D. Allowed only if the bucket is public
 
 ---
 
-### Q8. Which condition would enforce that an API call originates from a specific corporate IP range?
+### Q8. Which condition would enforce that an API call originates from a specific corporate IP range? *(Remember)*
 A. `aws:SourceIp`
 B. `aws:Region`
 C. `aws:Tag`
@@ -71,7 +73,7 @@ D. `aws:Principal`
 
 ---
 
-### Q9. A permissions boundary:
+### Q9. A permissions boundary: *(Understand)*
 A. Grants additional permissions
 B. Caps the maximum permissions a user/role can have, regardless of identity policies
 C. Applies only to S3 buckets
@@ -79,7 +81,7 @@ D. Is the same as an SCP
 
 ---
 
-### Q10. To prevent any IAM user in an Organization OU from disabling CloudTrail, you should:
+### Q10. To prevent any IAM user in an Organization OU from disabling CloudTrail, you should: *(Apply)*
 A. Attach a permissions boundary to every user
 B. Apply an SCP denying `cloudtrail:StopLogging` and `cloudtrail:DeleteTrail` to the OU
 C. Disable IAM in those accounts
@@ -87,7 +89,7 @@ D. Use a bucket policy on the S3 bucket storing logs
 
 ---
 
-### Q11. Which AWS service issues temporary credentials?
+### Q11. Which AWS service issues temporary credentials? *(Remember)*
 A. IAM
 B. KMS
 C. STS
@@ -95,7 +97,7 @@ D. Cognito User Pools
 
 ---
 
-### Q12. A mobile app needs each end-user to get temporary AWS credentials to upload to S3. The BEST service is:
+### Q12. A mobile app needs each end-user to get temporary AWS credentials to upload to S3. The BEST service is: *(Apply)*
 A. IAM Identity Center
 B. AWS Cognito Identity Pools
 C. AWS Organizations
@@ -103,7 +105,7 @@ D. IAM users created in real-time
 
 ---
 
-### Q13. The `ExternalId` parameter in a role's trust policy primarily protects against:
+### Q13. The `ExternalId` parameter in a role's trust policy primarily protects against: *(Remember)*
 A. Token replay
 B. The "confused deputy" problem
 C. SQL injection
@@ -111,7 +113,7 @@ D. Phishing of the root user
 
 ---
 
-### Q14. Which of the following is TRUE about resource-based policies?
+### Q14. Which of the following is TRUE about resource-based policies? *(Understand)*
 A. They are attached to IAM users
 B. They are attached directly to resources like S3 buckets, SQS queues, or KMS keys
 C. They override SCPs
@@ -119,7 +121,7 @@ D. They are deprecated
 
 ---
 
-### Q15. To require MFA before performing privileged actions, you would add to a policy:
+### Q15. To require MFA before performing privileged actions, you would add to a policy: *(Remember)*
 A. `"Condition": {"Bool": {"aws:MultiFactorAuthPresent": "true"}}`
 B. `"Action": "iam:RequireMFA"`
 C. `"Effect": "Strong"`
@@ -127,7 +129,7 @@ D. `"Resource": "MFA"`
 
 ---
 
-### Q16. Within the same account, when both an identity policy and a resource policy apply:
+### Q16. Within the same account, when both an identity policy and a resource policy apply: *(Analyze)*
 A. They are intersected — both must allow
 B. They are unioned — either allows
 C. Resource policy always wins
@@ -135,7 +137,7 @@ D. Identity policy always wins
 
 ---
 
-### Q17. Cross-account access requires:
+### Q17. Cross-account access requires: *(Analyze)*
 A. Only the source account's identity policy to allow
 B. Only the destination resource policy to allow
 C. BOTH the source identity policy AND the destination policy/role to allow
@@ -143,7 +145,7 @@ D. Root credentials shared across both
 
 ---
 
-### Q18. Which is NOT a benefit of using AWS Organizations?
+### Q18. Which is NOT a benefit of using AWS Organizations? *(Understand)*
 A. Consolidated billing across accounts
 B. SCPs as guardrails on member accounts
 C. Sharing of Reserved Instance / Savings Plan discounts
@@ -151,7 +153,7 @@ D. Automatic deletion of unused accounts
 
 ---
 
-### Q19. A company wants to enforce that resources can only be created in `us-east-1` and `us-west-2`. The BEST mechanism is:
+### Q19. A company wants to enforce that resources can only be created in `us-east-1` and `us-west-2`. The BEST mechanism is: *(Apply)*
 A. Permissions boundary on each user
 B. SCP using `aws:RequestedRegion` condition with `StringNotEquals`
 C. A daily Lambda that deletes resources in other regions
@@ -159,7 +161,7 @@ D. A budget alert
 
 ---
 
-### Q20. A trust policy is attached to:
+### Q20. A trust policy is attached to: *(Remember)*
 A. An S3 bucket
 B. An IAM Role — it defines who can assume the role
 C. A VPC
@@ -167,7 +169,7 @@ D. An EC2 instance
 
 ---
 
-### Q21. Which is the BEST way to grant a Lambda function permission to write to DynamoDB?
+### Q21. Which is the BEST way to grant a Lambda function permission to write to DynamoDB? *(Apply)*
 A. Attach an IAM user's access keys via environment variables
 B. Hard-code credentials into the function
 C. Give the function an execution role with DynamoDB write permissions
@@ -175,7 +177,7 @@ D. Disable IAM entirely for the function
 
 ---
 
-### Q22. CloudTrail's primary role in a security architecture is to:
+### Q22. CloudTrail's primary role in a security architecture is to: *(Understand)*
 A. Encrypt data at rest
 B. Block traffic at the VPC edge
 C. Provide an immutable audit log of API calls
@@ -183,7 +185,7 @@ D. Replace IAM policies
 
 ---
 
-### Q23. A team must rotate access keys regularly. Which tool can detect unused access keys?
+### Q23. A team must rotate access keys regularly. Which tool can detect unused access keys? *(Apply)*
 A. AWS Shield
 B. IAM Credential Report and IAM Access Analyzer
 C. CloudFormation
@@ -191,7 +193,7 @@ D. SQS
 
 ---
 
-### Q24. A company uses one AWS account per environment (dev, stage, prod) and wants to consolidate billing and apply guardrails. They should adopt:
+### Q24. A company uses one AWS account per environment (dev, stage, prod) and wants to consolidate billing and apply guardrails. They should adopt: *(Evaluate)*
 A. AWS Control Tower / Organizations
 B. Multiple root users
 C. EC2 Reserved Instances
@@ -199,7 +201,7 @@ D. AWS Budgets only
 
 ---
 
-### Q25. Which action requires the root user (cannot be delegated to an IAM user)?
+### Q25. Which action requires the root user (cannot be delegated to an IAM user)? *(Remember)*
 A. Creating S3 buckets
 B. Changing the AWS account's email or closing the account
 C. Launching EC2 instances
@@ -207,7 +209,7 @@ D. Calling AWS APIs
 
 ---
 
-### Q26. A developer in Account A needs read-only S3 access in Account B for 1 hour. The MOST secure design is:
+### Q26. A developer in Account A needs read-only S3 access in Account B for 1 hour. The MOST secure design is: *(Create)*
 A. Create a permanent IAM user in Account B and share keys
 B. Create a role in Account B that Account A can assume via STS for a 1-hour session
 C. Make the S3 bucket public for an hour
