@@ -1,6 +1,6 @@
 # 🚀 Quick Start Guide
 
-> **Goal of this page:** Get you *doing* something within 10 minutes — no matter which of the 13 certifications you're chasing.
+> **Goal of this page:** Get you *doing* something within 10 minutes — no matter which of the 18 certifications you're chasing.
 
 ---
 
@@ -32,6 +32,15 @@ Pick ONE. The detailed week-by-week plan in [12-Week Study Plan](./12-Week-Study
 - **Path M — "Logistics & distribution focus"** → [ASCM CLTD](../12-ASCM-CLTD/README.md) · Plan: ~10-14 weeks.
 - **Path N — "Procurement & sourcing"** → [ISM CPSM](../13-ISM-CPSM/README.md) · Plan: ~12-16 weeks (3 modules).
 
+### AI-Based Digital Marketing
+A 5-course ladder built to the Cornell/Harvard/Stanford bar — fundamentals → execution → strategy → entrepreneurship → portfolio. Each course aligns with at least one real industry credential (HubSpot Inbound, Google Ads, Meta Blueprint, etc.).
+- **Path O — "I'm new to AI marketing"** → [AI Marketing Foundations](../14-AI-Marketing-Foundations/README.md) · Plan: ~6-8 weeks. Best starting point for non-marketers.
+- **Path P — "I run campaigns — make me dangerous with AI"** → [AI Marketing Practitioner](../15-AI-Marketing-Practitioner/README.md) · Plan: ~8-10 weeks. Google Ads, Meta Ads, AI-augmented creative & copy.
+- **Path Q — "Strategy, analytics & attribution"** → [AI Marketing Strategist](../16-AI-Marketing-Strategist/README.md) · Plan: ~10-12 weeks. GA4, CDP, MMM, predictive analytics, privacy-first measurement.
+- **Path R — "I want to start an AI marketing agency / consultancy"** → [AI Marketing Entrepreneur](../17-AI-Marketing-Entrepreneur/README.md) · Plan: ~6-8 weeks. Productize services, pricing, client acquisition, tech stack, hiring.
+- **Path S — "I want a portfolio + first paying client"** → [AI Marketing Capstone Portfolio](../18-AI-Marketing-Capstone-Portfolio/README.md) · Plan: ~8-10 weeks. Build the actual deliverables that win contracts.
+- **Path T — "The full AI marketing ladder, in order"** → 14 → 15 → 16 → 17 → 18. Plan: ~9-12 months part-time. Comes out the other side market-ready as an AI-driven digital marketing professional.
+
 ### "I'm already certified — which makes sense next?"
 - **Have CSM/PSM I?** → PMP is the natural next step.
 - **Have CAPM?** → Go for PMP, it's an upgrade.
@@ -41,7 +50,9 @@ Pick ONE. The detailed week-by-week plan in [12-Week Study Plan](./12-Week-Study
 - **Have AIF-C01 or AI-900?** → AI-102 (Azure) or move toward ML specialty.
 - **Have Network+?** → Security+ is the obvious next step.
 - **Have CPIM or CLTD?** → CSCP for breadth, CPSM for procurement angle.
-- **Have nothing and unsure?** → Scrum Master, AZ-900, or CLF-C02 are the three fastest-cheapest first wins.
+- **Have HubSpot Inbound or Google Ads cert?** → AI Marketing Practitioner (15) or Strategist (16) — they assume the basics and push you into AI-augmented workflows.
+- **Have AI Marketing Foundations (14)?** → Practitioner (15) for execution, or Strategist (16) for analytics/attribution depth — both are natural next steps.
+- **Have nothing and unsure?** → Scrum Master, AZ-900, CLF-C02, or AI Marketing Foundations are the four fastest-cheapest first wins.
 
 ---
 
@@ -98,6 +109,17 @@ You need **three free things** to study effectively:
 1. **ISM CPSM Certification overview** — <https://www.ismworld.org/certification-and-training/certification/cpsm-certification/>
 2. **ISM Diagnostic Practice Exam** (paid sampler — closest free-ish practice)
 
+### For AI-Based Digital Marketing (14-18):
+1. **HubSpot Academy** (free certifications: Inbound, Content Marketing, Email Marketing) — <https://academy.hubspot.com/>
+2. **Google Skillshop** (free official Google Ads + Analytics + GA4 certifications) — <https://skillshop.exceedlms.com/>
+3. **Meta Blueprint** (free Meta/Facebook/Instagram ads training and certifications) — <https://www.facebookblueprint.com/>
+4. **Semrush Academy** (free SEO + content marketing courses) — <https://www.semrush.com/academy/>
+5. **CXL Institute Free Resources** (analytics, conversion optimization, growth marketing) — <https://cxl.com/blog/>
+6. **OpenAI Cookbook + Prompt Library** (free, official prompt-engineering examples) — <https://cookbook.openai.com/>
+7. **Anthropic Prompt Library + Cookbook** (free, current Claude prompting patterns) — <https://docs.claude.com/en/resources/prompt-library>
+8. **Andrew Ng — "Generative AI for Everyone"** (free on Coursera, foundational) — <https://www.deeplearning.ai/courses/generative-ai-for-everyone/>
+9. **Karpathy — Neural Networks: Zero to Hero** (free YouTube series, if you want the engineering depth behind the AI you're using) — <https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ>
+
 ---
 
 ## 🧠 The 3 Habits That Determine Success
@@ -142,6 +164,10 @@ After studying thousands of pass/fail patterns, these stand out:
 - **Security+ (SY0-701):** Professor Messer's video course + Jason Dion's $15-20 Udemy practice exams is the most-recommended cheap stack.
 - **ASCM CSCP / CPIM / CLTD:** The official ASCM Learning System is the practical requirement; community consensus is that going without it is hard.
 - **ISM CPSM:** Heavily benefits from ISM's official materials. Possible without, harder.
+- **AI-Based Digital Marketing (14–18):** Yes — these courses are designed to be self-contained. HubSpot Academy, Google Skillshop, and Meta Blueprint are all genuinely free and pair perfectly. The only thing you'll likely pay for is the AI tools you're learning to use (ChatGPT Plus or Claude Pro ~$20/mo, a Midjourney/Adobe subscription if you're doing creative work) — but those are working tools, not study materials.
+
+**Q: Is "AI-Based Digital Marketing" itself a certification?**
+**A:** Not a single one — it's a *5-course ladder* mapped to multiple real industry credentials. After Course 14 you're ready for HubSpot Inbound; after 15 you're ready for Google Ads Search + Meta Blueprint; after 16 you're ready for Google Analytics Individual Qualification (GA4) and CXL's Measurement & Analytics; after 17 you're ready to actually start an agency; after 18 you have a portfolio that gets you hired or your first paying clients. Each course's `README.md` lists the specific industry certifications it maps to.
 
 **Q: How many hours total to pass?**
 - Scrum Master: 30–50 hours
@@ -157,6 +183,11 @@ After studying thousands of pass/fail patterns, these stand out:
 - ASCM CPIM: 200–300 hours (Part 1 + Part 2)
 - ASCM CLTD: 150–250 hours
 - ISM CPSM: 200–300 hours (3 modules)
+- AI Marketing Foundations: 60–100 hours
+- AI Marketing Practitioner: 100–140 hours
+- AI Marketing Strategist: 120–160 hours
+- AI Marketing Entrepreneur: 60–100 hours
+- AI Marketing Capstone Portfolio: 100–140 hours (project-driven, varies by ambition)
 
 **Q: Should I memorize ITTOs (Inputs/Tools/Outputs) for PMP?**
 **A:** No. The new PMP (since 2021) is mostly situational. Understand *concepts*, not lists.
