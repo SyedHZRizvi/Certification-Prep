@@ -15,32 +15,32 @@ title: International Certifications Catalog
 
 ## 📑 Quick Map — Course → Recommended Certifications
 
-| # | Our Course | Recommended Cert (After Completion) | Fee (USD) |
-|---|------------|--------------------------------------|-----------|
-| 01 | Scrum Master | **PSM I** (Scrum.org) · CSM (Scrum Alliance) | $200 · $995+ |
-| 02 | PMP | **PMP** (PMI) · CAPM (entry-level alternative) | $555 · $300 |
-| 03 | AWS Cloud Practitioner | **CLF-C02** (AWS) | $100 |
-| 04 | AWS Solutions Architect Associate | **SAA-C03** (AWS) | $150 |
-| 05 | Azure Fundamentals | **AZ-900** (Microsoft) | $99 |
-| 06 | Azure Administrator | **AZ-104** (Microsoft) | $165 |
-| 07 | AWS AI Practitioner | **AIF-C01** (AWS) | $100 |
-| 08 | Azure AI Engineer | **AI-102** (Microsoft) | $165 |
-| 09 | CompTIA Security+ | **SY0-701** (CompTIA) | $404 |
-| 10 | ASCM CSCP | **CSCP** (ASCM) | $1,295+ |
-| 11 | ASCM CPIM | **CPIM Part 1 + Part 2** (ASCM) | $1,495+ |
-| 12 | ASCM CLTD | **CLTD** (ASCM) | $1,295+ |
-| 13 | ISM CPSM | **CPSM 1 + 2 + 3** (ISM) | $199 ea. |
-| 14 | AI Marketing Foundations | HubSpot Inbound · Content Marketing | FREE |
-| 15 | AI Marketing Practitioner | Google Ads · Meta Blueprint Commerce | FREE / $99+ |
-| 16 | AI Marketing Strategist | GA4 IQ · Wharton Online Specialization | FREE / $500 |
-| 17 | AI Marketing Entrepreneur | (No single cert — readiness portfolio) | — |
-| 18 | AI Marketing Capstone Portfolio | DMI Professional Diploma · OMCP | $1,800+ / $199+ |
-| 19 | Bitcoin & Cryptocurrency | **CBP** (C4) · CBSA (BTA) · CCAS (ACAMS) | $150 · $300 · $1,395 |
-| 20 | E-Commerce | **Google D-M & E-C Certificate** · **Adobe Commerce BP** | $300 · $225 |
+| Our Course | Recommended Cert (After Completion) | Fee (USD) |
+|------------|--------------------------------------|-----------|
+| Scrum Master | **PSM I** (Scrum.org) · CSM (Scrum Alliance) | $200 · $995+ |
+| PMP | **PMP** (PMI) · CAPM (entry-level alternative) | $555 · $300 |
+| AWS Cloud Practitioner | **CLF-C02** (AWS) | $100 |
+| AWS Solutions Architect Associate | **SAA-C03** (AWS) | $150 |
+| AWS AI Practitioner | **AIF-C01** (AWS) | $100 |
+| Azure Fundamentals | **AZ-900** (Microsoft) | $99 |
+| Azure Administrator | **AZ-104** (Microsoft) | $165 |
+| Azure AI Engineer | **AI-102** (Microsoft) | $165 |
+| CompTIA Security+ | **SY0-701** (CompTIA) | $404 |
+| ASCM CPIM | **CPIM Part 1 + Part 2** (ASCM) | $1,495+ |
+| ASCM CSCP | **CSCP** (ASCM) | $1,295+ |
+| ASCM CLTD | **CLTD** (ASCM) | $1,295+ |
+| ISM CPSM | **CPSM 1 + 2 + 3** (ISM) | $199 ea. |
+| AI Marketing Foundations | HubSpot Inbound · Content Marketing | FREE |
+| AI Marketing Practitioner | Google Ads · Meta Blueprint Commerce | FREE / $99+ |
+| AI Marketing Strategist | GA4 IQ · Wharton Online Specialization | FREE / $500 |
+| AI Marketing Entrepreneur | (No single cert — readiness portfolio) | — |
+| AI Marketing Capstone Portfolio | DMI Professional Diploma · OMCP | $1,800+ / $199+ |
+| Bitcoin & Cryptocurrency | **CBP** (C4) · CBSA (BTA) · CCAS (ACAMS) | $150 · $300 · $1,395 |
+| E-Commerce | **Google D-M & E-C Certificate** · **Adobe Commerce BP** | $300 · $225 |
 
 ---
 
-## 📘 Course 01 — Scrum Master
+## 📘 Scrum Master
 
 [Open the course →](../01-Scrum-Master/README.md)
 
@@ -85,7 +85,7 @@ After completing this course, you are ready to sit for these international certi
 
 ---
 
-## 📘 Course 02 — PMP
+## 📘 PMP
 
 [Open the course →](../02-PMP/README.md)
 
@@ -129,7 +129,7 @@ After completing this course, you are ready to sit for:
 
 ---
 
-## 📘 Course 03 — AWS Cloud Practitioner
+## 📘 AWS Cloud Practitioner
 
 [Open the course →](../03-AWS-Cloud-Practitioner/README.md)
 
@@ -156,7 +156,7 @@ After completing this course, you are ready to sit for:
 
 ---
 
-## 📘 Course 04 — AWS Solutions Architect Associate
+## 📘 AWS Solutions Architect Associate
 
 [Open the course →](../04-AWS-Solutions-Architect-Associate/README.md)
 
@@ -177,7 +177,28 @@ After completing this course, you are ready to sit for:
 
 ---
 
-## 📘 Course 05 — Azure Fundamentals
+## 📘 AWS AI Practitioner
+
+[Open the course →](../07-AWS-AI-Practitioner/README.md)
+
+After completing this course, you are ready to sit for:
+
+### ➡️ AWS Certified AI Practitioner (AIF-C01)
+
+**Designation earned after passing:** *AWS Certified AI Practitioner* (Credly badge; 3-year validity)
+
+- **Issuing body:** AWS. Released 2024 — AWS's first GenAI credential.
+- **Market standing:** Tier-1 AI foundational. Validates GenAI literacy for non-engineers and early-career engineers. Rapidly growing in HR screens for any AI-adjacent role.
+- **Benefits of passing:** Gateway to AWS Machine Learning Specialty (MLS-C01). Useful for product managers, business analysts, AI strategists, and anyone working with Amazon Bedrock or AWS-hosted LLM workflows.
+- **Exam format:** 65 questions · 90 minutes · 700/1000 passing.
+- **Fee:** **$100 USD.**
+- **Eligibility:** None (6+ months general IT background recommended).
+- **How to register:** Same flow as CLF-C02.
+- **Renewal:** Every 3 years.
+
+---
+
+## 📘 Azure Fundamentals
 
 [Open the course →](../05-Azure-Fundamentals/README.md)
 
@@ -204,7 +225,7 @@ After completing this course, you are ready to sit for:
 
 ---
 
-## 📘 Course 06 — Azure Administrator
+## 📘 Azure Administrator
 
 [Open the course →](../06-Azure-Administrator/README.md)
 
@@ -225,28 +246,7 @@ After completing this course, you are ready to sit for:
 
 ---
 
-## 📘 Course 07 — AWS AI Practitioner
-
-[Open the course →](../07-AWS-AI-Practitioner/README.md)
-
-After completing this course, you are ready to sit for:
-
-### ➡️ AWS Certified AI Practitioner (AIF-C01)
-
-**Designation earned after passing:** *AWS Certified AI Practitioner* (Credly badge; 3-year validity)
-
-- **Issuing body:** AWS. Released 2024 — AWS's first GenAI credential.
-- **Market standing:** Tier-1 AI foundational. Validates GenAI literacy for non-engineers and early-career engineers. Rapidly growing in HR screens for any AI-adjacent role.
-- **Benefits of passing:** Gateway to AWS Machine Learning Specialty (MLS-C01). Useful for product managers, business analysts, AI strategists, and anyone working with Amazon Bedrock or AWS-hosted LLM workflows.
-- **Exam format:** 65 questions · 90 minutes · 700/1000 passing.
-- **Fee:** **$100 USD.**
-- **Eligibility:** None (6+ months general IT background recommended).
-- **How to register:** Same flow as CLF-C02.
-- **Renewal:** Every 3 years.
-
----
-
-## 📘 Course 08 — Azure AI Engineer
+## 📘 Azure AI Engineer
 
 [Open the course →](../08-Azure-AI-Engineer/README.md)
 
@@ -267,7 +267,7 @@ After completing this course, you are ready to sit for:
 
 ---
 
-## 📘 Course 09 — CompTIA Security+
+## 📘 CompTIA Security+
 
 [Open the course →](../09-CompTIA-Security-Plus/README.md)
 
@@ -293,7 +293,28 @@ After completing this course, you are ready to sit for:
 
 ---
 
-## 📘 Course 10 — ASCM CSCP (Supply Chain Professional)
+## 📘 ASCM CPIM
+
+[Open the course →](../11-ASCM-CPIM/README.md)
+
+After completing this course, you are ready to sit for:
+
+### ➡️ ASCM Certified in Planning & Inventory Management (CPIM)
+
+**Designation earned after passing:** *Certified in Planning & Inventory Management (CPIM)*
+
+- **Issuing body:** ASCM.
+- **Market standing:** Tier-1 production/inventory focus — the deepest planning credential.
+- **Benefits of passing:** Required or preferred for Demand Planner, Master Scheduler, Inventory Manager, and S&OP roles. Average CPIM-holder salary $85K-$110K.
+- **Exam format:** **TWO parts.** Part 1: 95 Q · 3.5 hours. Part 2: 150 Q · 3.5 hours. Must pass both.
+- **Fee:** **$1,495 (member) / $1,995 (non-member)** exam-only for both parts. Bundle with Learning System: **$2,895 / $3,895**.
+- **Eligibility:** None for the exam itself (anyone can take it).
+- **How to register:** Same as CSCP via ascm.org.
+- **Renewal:** Every 5 years.
+
+---
+
+## 📘 ASCM CSCP (Supply Chain Professional)
 
 [Open the course →](../10-ASCM-CSCP/README.md)
 
@@ -319,28 +340,7 @@ After completing this course, you are ready to sit for:
 
 ---
 
-## 📘 Course 11 — ASCM CPIM
-
-[Open the course →](../11-ASCM-CPIM/README.md)
-
-After completing this course, you are ready to sit for:
-
-### ➡️ ASCM Certified in Planning & Inventory Management (CPIM)
-
-**Designation earned after passing:** *Certified in Planning & Inventory Management (CPIM)*
-
-- **Issuing body:** ASCM.
-- **Market standing:** Tier-1 production/inventory focus — the deepest planning credential.
-- **Benefits of passing:** Required or preferred for Demand Planner, Master Scheduler, Inventory Manager, and S&OP roles. Average CPIM-holder salary $85K-$110K.
-- **Exam format:** **TWO parts.** Part 1: 95 Q · 3.5 hours. Part 2: 150 Q · 3.5 hours. Must pass both.
-- **Fee:** **$1,495 (member) / $1,995 (non-member)** exam-only for both parts. Bundle with Learning System: **$2,895 / $3,895**.
-- **Eligibility:** None for the exam itself (anyone can take it).
-- **How to register:** Same as CSCP via ascm.org.
-- **Renewal:** Every 5 years.
-
----
-
-## 📘 Course 12 — ASCM CLTD
+## 📘 ASCM CLTD
 
 [Open the course →](../12-ASCM-CLTD/README.md)
 
@@ -361,7 +361,7 @@ After completing this course, you are ready to sit for:
 
 ---
 
-## 📘 Course 13 — ISM CPSM (Procurement & Sourcing)
+## 📘 ISM CPSM (Procurement & Sourcing)
 
 [Open the course →](../13-ISM-CPSM/README.md)
 
@@ -387,7 +387,7 @@ After completing this course, you are ready to sit for:
 
 ---
 
-## 📘 Course 14 — AI Marketing Foundations
+## 📘 AI Marketing Foundations
 
 [Open the course →](../14-AI-Marketing-Foundations/README.md)
 
@@ -416,7 +416,7 @@ Same flow, complementary certification on content strategy + production.
 
 ---
 
-## 📘 Course 15 — AI Marketing Practitioner
+## 📘 AI Marketing Practitioner
 
 [Open the course →](../15-AI-Marketing-Practitioner/README.md)
 
@@ -443,7 +443,7 @@ After completing this course, you are ready to sit for:
 
 ---
 
-## 📘 Course 16 — AI Marketing Strategist
+## 📘 AI Marketing Strategist
 
 [Open the course →](../16-AI-Marketing-Strategist/README.md)
 
@@ -473,7 +473,7 @@ After completing this course, you are ready to sit for:
 
 ---
 
-## 📘 Course 17 — AI Marketing Entrepreneur
+## 📘 AI Marketing Entrepreneur
 
 [Open the course →](../17-AI-Marketing-Entrepreneur/README.md)
 
@@ -486,7 +486,7 @@ The relevant industry credentials (if you want a formal cert to display):
 
 ---
 
-## 📘 Course 18 — AI Marketing Capstone Portfolio
+## 📘 AI Marketing Capstone Portfolio
 
 [Open the course →](../18-AI-Marketing-Capstone-Portfolio/README.md)
 
@@ -505,7 +505,7 @@ This course produces a **portfolio** that wins clients and jobs. Pair it with:
 
 ---
 
-## 📘 Course 19 — Bitcoin & Cryptocurrency
+## 📘 Bitcoin & Cryptocurrency
 
 [Open the course →](../19-Bitcoin-Cryptocurrency/README.md)
 
@@ -559,7 +559,7 @@ After completing this course, you are ready to sit for:
 
 ---
 
-## 📘 Course 20 — E-Commerce
+## 📘 E-Commerce
 
 [Open the course →](../20-E-Commerce/README.md)
 
@@ -602,6 +602,7 @@ After completing this course, you are ready to sit for:
 (See Course 16's entry — same specialization applies to E-Commerce strategy roles.)
 
 ---
+
 
 ## 🗺️ "Which Cert Next?" — Career Path Matrix
 
