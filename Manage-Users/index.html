@@ -1,0 +1,341 @@
+---
+permalink: /Manage-Users/
+sitemap: false
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manage Users — The Cert Hub (Super-User)</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; }
+  </style>
+</head>
+<body class="bg-slate-50 min-h-screen">
+
+  <header class="bg-gradient-to-r from-indigo-600 via-violet-600 to-purple-700 text-white shadow-lg">
+    <div class="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <span class="text-3xl">🛡️</span>
+        <div>
+          <h1 class="text-xl md:text-2xl font-extrabold tracking-tight">Manage Users</h1>
+          <p class="text-indigo-100 text-xs md:text-sm">Super-user admin panel · The Cert Hub</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <span id="current-user" class="hidden md:inline text-sm text-indigo-100"></span>
+        <a href="/" class="bg-white/15 hover:bg-white/25 ring-1 ring-white/30 text-sm font-bold px-4 py-2 rounded-lg transition">← Site</a>
+        <a href="/api/auth/logout" class="bg-white/15 hover:bg-white/25 ring-1 ring-white/30 text-sm font-bold px-4 py-2 rounded-lg transition">Sign out</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6 py-10">
+
+    <!-- Add / Edit user form -->
+    <section class="bg-white rounded-2xl shadow border border-slate-200 p-6 md:p-8 mb-10">
+      <h2 id="form-heading" class="text-xl md:text-2xl font-extrabold text-slate-900 mb-1">Add a new user</h2>
+      <p class="text-slate-500 text-sm mb-6">Enter the user's email and tick the courses they should be able to access.</p>
+
+      <form id="user-form" class="space-y-5">
+        <input type="hidden" id="form-mode" value="create" />
+
+        <div class="grid md:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm font-bold text-slate-700 mb-1.5">Email *</label>
+            <input id="email" type="email" required
+                   class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 transition"
+                   placeholder="user@example.com" />
+          </div>
+          <div>
+            <label class="block text-sm font-bold text-slate-700 mb-1.5">Role</label>
+            <select id="role" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 transition">
+              <option value="student">Student (per-course access)</option>
+              <option value="admin">Admin (manage other users)</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <div class="flex items-center justify-between mb-2">
+            <label class="block text-sm font-bold text-slate-700">Courses (tick all that this user can access)</label>
+            <div class="text-xs space-x-3">
+              <button type="button" id="select-all" class="text-indigo-600 hover:underline font-semibold">Select all (full access)</button>
+              <button type="button" id="select-none" class="text-rose-600 hover:underline font-semibold">Clear</button>
+            </div>
+          </div>
+          <div id="course-checkboxes" class="grid sm:grid-cols-2 md:grid-cols-3 gap-2 p-4 bg-slate-50 rounded-lg border border-slate-200 max-h-72 overflow-y-auto">
+            <div class="text-sm text-slate-400 col-span-full">Loading courses…</div>
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm font-bold text-slate-700 mb-1.5">Expires (optional)</label>
+            <input id="expires_at" type="date"
+                   class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 transition" />
+            <p class="text-xs text-slate-500 mt-1">Leave blank for no expiry (lifetime access).</p>
+          </div>
+          <div>
+            <label class="block text-sm font-bold text-slate-700 mb-1.5">Notes (private)</label>
+            <input id="notes" type="text"
+                   class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 transition"
+                   placeholder="e.g. paid annual, renews 2027-05-23" />
+          </div>
+        </div>
+
+        <div class="flex gap-3 pt-2">
+          <button type="submit" id="save-btn"
+                  class="bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-700 hover:to-violet-700 text-white font-bold px-6 py-2.5 rounded-lg shadow-lg shadow-indigo-500/30 transition-all">
+            Save user
+          </button>
+          <button type="button" id="cancel-edit"
+                  class="hidden bg-slate-200 hover:bg-slate-300 text-slate-700 font-bold px-6 py-2.5 rounded-lg transition">
+            Cancel edit
+          </button>
+        </div>
+
+        <div id="form-message" class="hidden p-3 rounded-lg text-sm"></div>
+      </form>
+    </section>
+
+    <!-- Existing users -->
+    <section class="bg-white rounded-2xl shadow border border-slate-200 p-6 md:p-8">
+      <div class="flex items-center justify-between mb-5">
+        <h2 class="text-xl md:text-2xl font-extrabold text-slate-900">Existing users</h2>
+        <button id="refresh-btn"
+                class="text-sm font-semibold text-indigo-600 hover:text-indigo-800 transition">↻ Refresh</button>
+      </div>
+      <div id="users-table" class="overflow-x-auto">
+        <p class="text-sm text-slate-400 italic">Loading…</p>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+  (function() {
+    const form = document.getElementById('user-form');
+    const courseCheckboxes = document.getElementById('course-checkboxes');
+    const usersTable = document.getElementById('users-table');
+    const formMessage = document.getElementById('form-message');
+    const formHeading = document.getElementById('form-heading');
+    const formMode = document.getElementById('form-mode');
+    const cancelEdit = document.getElementById('cancel-edit');
+    let allCourses = [];
+
+    function showMessage(text, type = 'success') {
+      formMessage.textContent = text;
+      formMessage.className = 'p-3 rounded-lg text-sm ' + (
+        type === 'error'   ? 'bg-rose-50 ring-1 ring-rose-200 text-rose-800' :
+        type === 'warning' ? 'bg-amber-50 ring-1 ring-amber-200 text-amber-800' :
+                              'bg-emerald-50 ring-1 ring-emerald-200 text-emerald-800'
+      );
+      formMessage.classList.remove('hidden');
+      setTimeout(() => formMessage.classList.add('hidden'), 6000);
+    }
+
+    async function loadMe() {
+      try {
+        const res = await fetch('/api/auth/me');
+        const data = await res.json();
+        if (data.authenticated) {
+          document.getElementById('current-user').textContent = '👤 ' + data.email;
+        }
+      } catch {}
+    }
+
+    async function loadCourses() {
+      try {
+        const res = await fetch('/api/admin/courses');
+        if (!res.ok) throw new Error('forbidden');
+        const data = await res.json();
+        allCourses = data.courses || [];
+        renderCheckboxes([]);
+      } catch (e) {
+        courseCheckboxes.innerHTML =
+          '<p class="text-sm text-rose-700 col-span-full">⚠️ Could not load courses. Are you signed in as super-user?</p>';
+      }
+    }
+
+    function renderCheckboxes(selected) {
+      const isAll = selected === '*';
+      const sel = isAll ? new Set(allCourses.map(c => c.id)) : new Set(selected || []);
+      // Group by category for cleaner display
+      const byCat = {};
+      for (const c of allCourses) {
+        (byCat[c.category] ||= []).push(c);
+      }
+      let html = '';
+      for (const cat of Object.keys(byCat)) {
+        html += `<div class="col-span-full mt-1 mb-1 text-xs font-bold uppercase tracking-wider text-slate-500">${cat}</div>`;
+        for (const c of byCat[cat]) {
+          const checked = sel.has(c.id) ? 'checked' : '';
+          html += `
+            <label class="flex items-center gap-2 px-3 py-2 rounded-lg bg-white border border-slate-200 hover:bg-indigo-50 hover:border-indigo-300 transition cursor-pointer">
+              <input type="checkbox" name="course" value="${c.id}" ${checked} class="rounded text-indigo-600 focus:ring-indigo-500" />
+              <span class="text-xl">${c.icon || '📘'}</span>
+              <span class="text-sm font-medium text-slate-700">${c.slug}</span>
+            </label>
+          `;
+        }
+      }
+      courseCheckboxes.innerHTML = html;
+    }
+
+    function getSelectedCourses() {
+      const ids = Array.from(courseCheckboxes.querySelectorAll('input[name="course"]:checked')).map(i => i.value);
+      // If all are checked, return "*" for efficient super-set
+      if (ids.length === allCourses.length && allCourses.length > 0) return '*';
+      return ids;
+    }
+
+    async function loadUsers() {
+      try {
+        const res = await fetch('/api/admin/users');
+        if (!res.ok) {
+          usersTable.innerHTML = '<p class="text-sm text-rose-700">Forbidden. Are you signed in as super-user?</p>';
+          return;
+        }
+        const data = await res.json();
+        renderUsers(data.users || []);
+      } catch (e) {
+        usersTable.innerHTML = '<p class="text-sm text-rose-700">Network error.</p>';
+      }
+    }
+
+    function renderUsers(users) {
+      if (!users.length) {
+        usersTable.innerHTML = '<p class="text-sm text-slate-400 italic">No users yet. Add one above.</p>';
+        return;
+      }
+      let html = `<table class="w-full text-sm">
+        <thead>
+          <tr class="text-left text-xs font-bold uppercase tracking-wider text-slate-500 border-b border-slate-200">
+            <th class="py-3 pr-4">Email</th>
+            <th class="py-3 pr-4">Role</th>
+            <th class="py-3 pr-4">Courses</th>
+            <th class="py-3 pr-4">Expires</th>
+            <th class="py-3 pr-4">Notes</th>
+            <th class="py-3 text-right">Actions</th>
+          </tr>
+        </thead>
+        <tbody>`;
+      for (const u of users) {
+        const isSuper = u.role === 'superuser';
+        const courseLabel = u.courses === '*'
+          ? '<span class="font-bold text-violet-700">All courses (*)</span>'
+          : (Array.isArray(u.courses) ? `${u.courses.length} course(s)` : '—');
+        const expires = u.expires_at ? new Date(u.expires_at).toLocaleDateString() : '—';
+        const roleBadge = isSuper
+          ? '<span class="px-2 py-0.5 rounded-full bg-violet-100 text-violet-700 font-bold text-xs">SUPER-USER</span>'
+          : (u.role === 'admin'
+            ? '<span class="px-2 py-0.5 rounded-full bg-amber-100 text-amber-700 font-bold text-xs">ADMIN</span>'
+            : '<span class="px-2 py-0.5 rounded-full bg-slate-100 text-slate-700 font-bold text-xs">STUDENT</span>');
+        const actions = isSuper
+          ? '<span class="text-slate-400 text-xs italic">hardcoded</span>'
+          : `<button data-email="${u.email}" class="edit-btn text-indigo-600 hover:text-indigo-800 font-semibold mr-3">Edit</button>
+             <button data-email="${u.email}" class="delete-btn text-rose-600 hover:text-rose-800 font-semibold">Delete</button>`;
+        html += `<tr class="border-b border-slate-100">
+          <td class="py-3 pr-4 font-mono text-xs md:text-sm text-slate-700">${u.email}</td>
+          <td class="py-3 pr-4">${roleBadge}</td>
+          <td class="py-3 pr-4 text-slate-600">${courseLabel}</td>
+          <td class="py-3 pr-4 text-slate-500 text-xs">${expires}</td>
+          <td class="py-3 pr-4 text-slate-500 text-xs italic max-w-xs truncate" title="${u.notes || ''}">${u.notes || ''}</td>
+          <td class="py-3 text-right">${actions}</td>
+        </tr>`;
+      }
+      html += '</tbody></table>';
+      usersTable.innerHTML = html;
+
+      // Wire up edit / delete buttons
+      usersTable.querySelectorAll('.edit-btn').forEach(b => b.addEventListener('click', () => editUser(b.dataset.email, users)));
+      usersTable.querySelectorAll('.delete-btn').forEach(b => b.addEventListener('click', () => deleteUser(b.dataset.email)));
+    }
+
+    function editUser(email, users) {
+      const u = users.find(x => x.email === email);
+      if (!u) return;
+      formMode.value = 'edit';
+      formHeading.textContent = `Edit ${u.email}`;
+      document.getElementById('email').value = u.email;
+      document.getElementById('email').readOnly = true;
+      document.getElementById('role').value = u.role === 'superuser' ? 'student' : u.role;
+      document.getElementById('expires_at').value = u.expires_at ? u.expires_at.slice(0, 10) : '';
+      document.getElementById('notes').value = u.notes || '';
+      renderCheckboxes(u.courses);
+      cancelEdit.classList.remove('hidden');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function resetForm() {
+      formMode.value = 'create';
+      formHeading.textContent = 'Add a new user';
+      form.reset();
+      document.getElementById('email').readOnly = false;
+      renderCheckboxes([]);
+      cancelEdit.classList.add('hidden');
+    }
+
+    cancelEdit.addEventListener('click', resetForm);
+
+    async function deleteUser(email) {
+      if (!confirm(`Delete user ${email}? This revokes all their access immediately.`)) return;
+      const res = await fetch('/api/admin/users?email=' + encodeURIComponent(email), { method: 'DELETE' });
+      if (res.ok) {
+        showMessage(`Deleted ${email}.`);
+        loadUsers();
+      } else {
+        const d = await res.json().catch(() => ({}));
+        showMessage(d.error || 'Delete failed.', 'error');
+      }
+    }
+
+    document.getElementById('select-all').addEventListener('click', () =>
+      courseCheckboxes.querySelectorAll('input[name="course"]').forEach(i => i.checked = true));
+    document.getElementById('select-none').addEventListener('click', () =>
+      courseCheckboxes.querySelectorAll('input[name="course"]').forEach(i => i.checked = false));
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const email = document.getElementById('email').value.trim().toLowerCase();
+      const role = document.getElementById('role').value;
+      const courses = getSelectedCourses();
+      const expires_at = document.getElementById('expires_at').value || null;
+      const notes = document.getElementById('notes').value || '';
+
+      const isEdit = formMode.value === 'edit';
+      const method = isEdit ? 'PATCH' : 'POST';
+      const body = isEdit
+        ? { email, role, courses, expires_at, notes }
+        : { email, role, courses, expires_at, notes };
+
+      const res = await fetch('/api/admin/users', {
+        method,
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify(body),
+      });
+      const data = await res.json();
+      if (res.ok) {
+        showMessage(isEdit ? `Updated ${email}.` : `Created ${email}.`);
+        resetForm();
+        loadUsers();
+      } else {
+        showMessage(data.error || 'Save failed.', 'error');
+      }
+    });
+
+    document.getElementById('refresh-btn').addEventListener('click', loadUsers);
+
+    // Boot
+    loadMe();
+    loadCourses().then(loadUsers);
+  })();
+  </script>
+</body>
+</html>

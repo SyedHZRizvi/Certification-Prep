@@ -7,9 +7,9 @@
 
 ## 0. Project identity
 
-This is **The Cert Hub** — a Jekyll site authored by Humayun Zafar. It hosts story-driven self-study courses for **13 industry certifications**:
+This is **The Cert Hub** — a Jekyll site authored by Humayun Zafar. It hosts story-driven self-study courses for **20 industry certifications and professional tracks**:
 
-| # | Folder | Cert | Modules |
+| # | Folder | Cert / Track | Modules |
 |---|---|---|---|
 | 1 | `01-Scrum-Master` | PSM I | 8 |
 | 2 | `02-PMP` | PMP | 10 |
@@ -24,8 +24,15 @@ This is **The Cert Hub** — a Jekyll site authored by Humayun Zafar. It hosts s
 | 11 | `11-ASCM-CPIM` | CPIM (Planning & Inventory) | 8 |
 | 12 | `12-ASCM-CLTD` | CLTD (Logistics & Distribution) | 8 |
 | 13 | `13-ISM-CPSM` | CPSM (Supply Management) | 8 |
+| 14 | `14-AI-Marketing-Foundations` | AI Marketing — Foundations | 10 |
+| 15 | `15-AI-Marketing-Practitioner` | AI Marketing — Practitioner | 10 |
+| 16 | `16-AI-Marketing-Strategist` | AI Marketing — Strategist | 10 |
+| 17 | `17-AI-Marketing-Entrepreneur` | AI Marketing — Entrepreneur | 8 |
+| 18 | `18-AI-Marketing-Capstone-Portfolio` | AI Marketing — Capstone | 8 |
+| 19 | `19-Bitcoin-Cryptocurrency` | Bitcoin & Crypto (Princeton → CBP → CBSA → UNic MSc) | 10 |
+| 20 | `20-E-Commerce` | E-Commerce (Google → Adobe Commerce → Wharton) | 10 |
 
-Total: **112 modules · 39 practice exams · 13 flashcard decks · 13 READMEs**.
+Total: **178 modules · 60 practice exams · 20 flashcard decks · 20 READMEs**.
 
 The frozen baseline tagged `stable-2026-05-20` is the canonical reference for "what this repo should look like." Any deviation must either (a) maintain or improve every assertion in `verify-baseline.py`, or (b) update both the assertions and `CLAUDE.md` in the same commit.
 
@@ -41,6 +48,8 @@ The frozen baseline tagged `stable-2026-05-20` is the canonical reference for "w
 - `_config.yml` — Jekyll config; one wrong line breaks the build.
 - `assets/quiz.js` — the interactive quiz engine; format is locked.
 - `assets/protect.js` — content protection; tampering with this weakens copy-prevention.
+- `functions/lib/superusers.js` — hardcoded super-user list (`syed@transcrypts.com`). This is the deliberate failsafe so the owner cannot be locked out by a KV wipe or compromise. Never move this to env vars or KV. Never delete the list. Only edit if the owner's email itself changes.
+- Anything under `functions/` — Cloudflare Pages Functions enforce the auth gate. Subtle changes here can silently disable entitlement checking. See §9 before touching.
 - The contents of `_dev/backup-practice-exams/` — these are immutable backups for rollback.
 
 If you have a strong reason to change one of the above, ask the human first. Do not "improve" the layout, "modernize" the navigation, or "tidy up" the existing courses without explicit go-ahead.
@@ -67,6 +76,16 @@ Effective 2026-05-22, every `.vg-card` link in `Videos.md` files SHOULD have a `
 - `scripts/verify-baseline.py` must exit `0` before any commit lands. Do not `--no-verify` your way past it.
 - If the verifier rejects your work, fix the underlying problem, not the verifier.
 - If the rules in the verifier are genuinely outdated, update **both** `CLAUDE.md` (this file) and `scripts/verify-baseline.py` in the same commit, with a human-readable note in the commit message explaining what changed and why.
+
+### 1.4 Never weaken or bypass the auth gate
+
+When the site runs on Cloudflare Pages (see §9), `functions/_middleware.js` enforces sign-in + per-course entitlements on every request. Anything that lets unauthenticated or unentitled traffic reach gated content is a critical bug. Specifically:
+
+- Never widen the public allowlist in `_middleware.js` to cover course content paths.
+- Never add a "preview", "demo", "test", or `?bypass=...` query-string exception. There are no exceptions.
+- Never read user identity or role from any source other than the verified JWT in the `ch_session` cookie. Never trust headers, query params, or `localStorage` for authorization decisions.
+- Never expose an API route that promotes a user to `superuser`. The hardcoded list in `functions/lib/superusers.js` is the only path. The admin POST/PATCH endpoints explicitly reject `role: "superuser"` payloads.
+- Never log or echo `JWT_SECRET`, magic-link tokens, or session cookies. Never commit them to the repo.
 
 ---
 
@@ -224,3 +243,135 @@ Never push directly from this preview workspace to the production repo. The flow
 ## 8. If you're unsure
 
 Stop and ask the human. The cost of one extra clarification round is small; the cost of breaking student-facing content is large.
+
+---
+
+## 9. Auth & entitlements (Cloudflare Pages)
+
+The site has a two-tier access model enforced by Cloudflare Pages Functions:
+
+| Role | Who | Can access |
+|---|---|---|
+| `superuser` | Hardcoded `syed@transcrypts.com` in `functions/lib/superusers.js` | **Everything**, including `/Manage-Users/` and `/api/admin/*`. Always bypasses KV (so a wiped/compromised KV cannot lock the owner out). |
+| `student` | Anyone the super-user adds via `/Manage-Users/` (stored in KV) | Only the courses listed in their `courses` array. `"courses": "*"` grants all 20. |
+| (unauthenticated) | No session cookie or invalid JWT | Homepage, `/login/`, `/api/auth/*`, public assets, course **landing** pages (`NN-Course-Slug/`). Module content (`NN-Course-Slug/Module-*`) and the admin UI are gated. |
+
+### 9.1 Stack
+
+- **Cloudflare Pages** serves the Jekyll-built static site (no infrastructure change for content authors).
+- **Pages Functions** (`functions/` directory, auto-detected) run on Cloudflare's edge for every request.
+- **KV namespace** `CERT_HUB_USERS` (bound as `USERS_KV`) stores users, magic-link tokens, and sessions.
+- **Resend.com** sends magic-link emails (free tier, no other identity provider).
+- **HS256 JWT** session, signed with `JWT_SECRET` env var. No external JWT library — `functions/lib/jwt.js` uses Workers `crypto.subtle` directly.
+- **Cookie** `ch_session` — `HttpOnly`, `Secure`, `SameSite=Lax`, 30-day expiry.
+
+### 9.2 Files (all under `functions/`)
+
+```
+functions/
+  _middleware.js          # Runs on every request — the gate
+  lib/
+    superusers.js         # Hardcoded super-user list — DO NOT modify casually
+    courses.js            # 20-course IDs + path → courseId mapping
+    jwt.js                # HS256 sign/verify + randomToken (Workers crypto)
+    kv.js                 # Typed helpers: getUser, putUser, storeMagicLink, ...
+    email.js              # Resend API integration (magic-link template)
+    response.js           # json/error/redirect/sessionCookie/parseCookies
+  api/
+    auth/
+      request-link.js     # POST → email magic link (always returns ok=true; no enumeration)
+      verify.js           # GET ?token= → consume token, mint JWT, set cookie
+      logout.js           # Clears ch_session cookie
+      me.js               # Returns {authenticated, email, role, courses}
+    admin/
+      users.js            # GET/POST/PATCH/DELETE — super-user only
+      courses.js          # GET list of course IDs for the admin UI
+```
+
+Plus the **non-`functions/` user-facing pages**:
+- `login/index.html` — sign-in page
+- `Manage-Users/index.html` — super-user admin UI
+- `Privacy-Setup/CLOUDFLARE-DEPLOY-RUNBOOK.md` — one-time activation runbook for the owner
+- `_dev/AUTH-ARCHITECTURE.md` — engineering reference (request flows, security model, KV schema)
+- `wrangler.toml` — Cloudflare Pages config
+
+### 9.3 Required env vars / secrets (set in Cloudflare dashboard, NOT in repo)
+
+| Variable | Purpose | Set as |
+|---|---|---|
+| `JWT_SECRET` | HMAC key for session JWTs. Rotate to invalidate all sessions. | Encrypted secret |
+| `RESEND_API_KEY` | Resend API token for magic-link delivery | Encrypted secret |
+| `EMAIL_FROM` | Sender address, default `onboarding@resend.dev` | Plain var |
+| `SITE_URL` | Origin used for magic-link URLs (e.g. `https://cert-hub.pages.dev`) | Plain var |
+| `MAGIC_LINK_TTL_SECONDS` | Default `900` (15 min) | Plain var |
+| `SESSION_TTL_SECONDS` | Default `2592000` (30 days) | Plain var |
+
+The KV binding `USERS_KV` is configured in Pages → Settings → Functions → KV namespace bindings.
+
+### 9.4 KV schema
+
+| Key pattern | Value (JSON) | Purpose |
+|---|---|---|
+| `user:<email>` | `{ role: "student"\|"admin", courses: ["01-Scrum-Master", ...]\|"*", created_at, notes }` | One record per allowed user |
+| `magic:<token>` | `{ email, next, created_at }` (15-min TTL) | One-shot sign-in token |
+
+Super-users are NOT stored in KV — they live exclusively in `functions/lib/superusers.js`. This is intentional; do not "consolidate" the super-user list into KV.
+
+### 9.5 Request flow (gated module)
+
+1. Browser requests e.g. `/05-Azure-Fundamentals/Module-03-Compute/Reading/`.
+2. `_middleware.js` reads `ch_session` cookie.
+3. **No cookie** → 302 redirect to `/login/?next=/05-Azure-Fundamentals/Module-03-Compute/Reading/`.
+4. **Invalid/expired JWT** → same redirect (cookie also cleared).
+5. **Valid JWT, super-user** → serve.
+6. **Valid JWT, KV lookup**:
+   - User missing → cookie cleared, redirect to login.
+   - `courses === "*"` → serve.
+   - Course ID in `courses` array → serve.
+   - Otherwise → render `🔒 Subscription Required` 403 page.
+
+### 9.6 Hardening invariants (all enforced in code)
+
+- **No identity from headers/query/cookies other than `ch_session`.**
+- **JWT verified before any KV read** (no email-based bypass).
+- **Magic-link tokens are single-use** (deleted from KV on consume; replay returns "expired").
+- **Magic-link TTL = 15 min** (KV `expirationTtl` + value-side `created_at` check).
+- **No email enumeration** (request-link always returns `{ ok: true }`).
+- **No API-driven super-user promotion** (admin endpoints reject `role: "superuser"`).
+- **Course IDs validated** against the canonical list in `functions/lib/courses.js`; arbitrary strings rejected.
+- **Cookie flags**: `HttpOnly` (no JS access), `Secure` (HTTPS only), `SameSite=Lax` (CSRF baseline).
+- **Logout** clears the cookie with `Max-Age=0`.
+- **Instant kill switch**: rotating `JWT_SECRET` in the dashboard invalidates every outstanding session.
+
+### 9.7 Activation (one-time, owner only)
+
+The whole auth layer is **dormant code in this repo**. It activates the moment the owner completes `Privacy-Setup/CLOUDFLARE-DEPLOY-RUNBOOK.md` — ~15 minutes of dashboard clicks. Until then:
+
+- GitHub Pages at `syedhzrizvi.github.io/Certification-Prep/` keeps serving the public site exactly as before.
+- The `functions/` directory is ignored by GitHub Pages (it only runs Jekyll, no Workers).
+- `_config.yml` excludes `functions`, `wrangler.toml`, `node_modules` so Jekyll never tries to render server-side JS.
+
+After Cloudflare activation, both URLs coexist: GitHub Pages = public preview, Cloudflare Pages URL (`cert-hub.pages.dev` or custom domain) = gated paid experience.
+
+### 9.8 Day-2 operations
+
+| Task | How |
+|---|---|
+| Add a student | `https://<cf-url>/Manage-Users/` → fill form → save |
+| Revoke access | Same page → Delete → user locked out (next request fails KV lookup) |
+| Change which courses a user can see | Same page → Edit → re-tick boxes → save |
+| Rotate JWT signing key (logout everyone) | Cloudflare dashboard → env vars → regenerate `JWT_SECRET` |
+| Rotate Resend API key | Resend dashboard → new key → paste into Cloudflare env var |
+| Change super-user email | Edit `functions/lib/superusers.js`, commit, push (auto-deploys) |
+| Bulk-import students | Cloudflare dashboard → KV → `CERT_HUB_USERS` → Add entry per student (see runbook §6) |
+
+### 9.9 When the auth code changes
+
+Any PR that touches `functions/` MUST:
+
+1. Preserve the §1.4 invariants (no new bypass paths).
+2. Re-state any new env var or KV key in this section AND in `_dev/AUTH-ARCHITECTURE.md`.
+3. Note the change in `Privacy-Setup/CLOUDFLARE-DEPLOY-RUNBOOK.md` if it affects owner-facing setup.
+4. Be tested end-to-end with `wrangler pages dev` locally before deploying to production.
+
+---
