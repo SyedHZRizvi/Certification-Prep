@@ -24,7 +24,7 @@ sitemap: false
     h2 { font-weight: 700; }
     h3, h4 { font-weight: 700; }
     .gradient-text {
-      background: linear-gradient(135deg, #818cf8 0%, #c084fc 50%, #f0abfc 100%);
+      background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #db2777 100%);
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -52,31 +52,55 @@ sitemap: false
       from { opacity: 0; transform: translateY(-12px) scale(0.96); }
       to   { opacity: 1; transform: translateY(0) scale(1); }
     }
+    /* Accent stripe at top of each card */
+    .accent-stripe {
+      height: 4px;
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem;
+    }
+    .stripe-amber  { background: linear-gradient(90deg, #fbbf24 0%, #f97316 100%); }
+    .stripe-indigo { background: linear-gradient(90deg, #6366f1 0%, #9333ea 100%); }
+    .stripe-emerald{ background: linear-gradient(90deg, #10b981 0%, #14b8a6 100%); }
+    .stripe-rose   { background: linear-gradient(90deg, #f43f5e 0%, #ec4899 100%); }
+    .stripe-header { background: linear-gradient(90deg, #6366f1 0%, #9333ea 50%, #ec4899 100%); }
+    /* Card lift on hover for major CTAs */
+    .btn-primary {
+      background: linear-gradient(90deg, #4f46e5 0%, #7c3aed 100%);
+      color: #fff;
+      box-shadow: 0 4px 14px -2px rgba(79, 70, 229, 0.35);
+      transition: all 0.2s ease;
+    }
+    .btn-primary:hover {
+      background: linear-gradient(90deg, #4338ca 0%, #6d28d9 100%);
+      box-shadow: 0 8px 22px -2px rgba(79, 70, 229, 0.5);
+      transform: translateY(-1px);
+    }
   </style>
 </head>
-<body class="bg-slate-950 text-slate-200 min-h-screen">
+<body class="bg-slate-50 text-slate-900 min-h-screen">
 
   <!-- ============================================================ -->
   <!-- HEADER                                                       -->
   <!-- ============================================================ -->
-  <header class="bg-slate-900/80 backdrop-blur border-b border-slate-800 sticky top-0 z-30">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between gap-4 flex-wrap">
+  <header class="bg-white/95 backdrop-blur border-b border-slate-200 sticky top-0 z-30 shadow-sm">
+    <div class="stripe-header h-1 w-full"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-5 flex items-center justify-between gap-4 flex-wrap">
       <div class="flex items-center gap-3">
         <span class="text-3xl">🔑</span>
         <div>
           <h1 class="text-xl md:text-2xl font-extrabold tracking-tight gradient-text">Manage Users</h1>
-          <p class="text-slate-400 text-xs md:text-sm">Super-user admin panel · The Cert Hub</p>
+          <p class="text-slate-600 text-xs md:text-sm">Super-user admin panel · The Cert Hub</p>
         </div>
       </div>
       <div class="flex items-center gap-2 sm:gap-3 flex-wrap">
-        <div id="current-user" class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-800/80 ring-1 ring-slate-700 text-xs">
-          <span class="text-slate-400">Signed in as</span>
-          <span id="current-user-name" class="font-bold text-slate-100"></span>
+        <div id="current-user" class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-full bg-indigo-50 border border-indigo-200 text-indigo-900 text-xs">
+          <span class="text-indigo-700">Signed in as</span>
+          <span id="current-user-name" class="font-bold text-slate-900"></span>
           <span id="current-user-role-badge" class="px-2 py-0.5 rounded-full text-[10px] font-bold tracking-wide"></span>
           <span id="current-user-meta" class="text-[10px] text-slate-500 font-mono"></span>
         </div>
-        <a href="/" class="text-sm font-semibold text-slate-300 hover:text-white px-3 py-2 rounded-lg ring-1 ring-slate-700 hover:ring-slate-500 transition">← Back to homepage</a>
-        <a href="/api/auth/logout" id="signout-btn" class="text-sm font-bold text-white px-3 py-2 rounded-lg bg-rose-600/90 hover:bg-rose-500 transition">Sign out</a>
+        <a href="/" class="text-sm font-semibold text-slate-700 hover:text-slate-900 px-3 py-2 rounded-lg border border-slate-300 bg-white hover:bg-slate-100 transition">← Back to homepage</a>
+        <a href="/api/auth/logout" id="signout-btn" class="text-sm font-bold text-white px-4 py-2 rounded-lg bg-rose-600 hover:bg-rose-700 shadow-md hover:shadow-lg transition">Sign out</a>
       </div>
     </div>
   </header>
@@ -86,59 +110,63 @@ sitemap: false
   <!-- ============================================================ -->
   <div id="toast-stack" class="fixed top-20 right-4 z-50 flex flex-col gap-2 max-w-sm pointer-events-none"></div>
 
-  <main class="max-w-7xl mx-auto px-4 sm:px-6 py-8 space-y-10">
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 py-10 space-y-12">
 
     <!-- ============================================================ -->
     <!-- BOOT / LOADING STATE                                         -->
     <!-- ============================================================ -->
-    <div id="boot-state" class="rounded-2xl bg-slate-900/60 ring-1 ring-slate-800 p-10 text-center">
-      <div class="text-3xl mb-3">⏳</div>
-      <p class="text-slate-400 text-sm">Loading admin panel…</p>
+    <div id="boot-state" class="rounded-2xl bg-white border border-slate-200 shadow-sm p-12 text-center">
+      <div class="text-4xl mb-3">⏳</div>
+      <p class="text-slate-600 text-sm">Loading admin panel…</p>
     </div>
 
     <!-- ============================================================ -->
     <!-- CHANGE MY PASSWORD (collapsible, collapsed by default)       -->
     <!-- ============================================================ -->
-    <section id="change-pw-section" class="hidden rounded-2xl bg-slate-900/60 ring-1 ring-slate-800 shadow-2xl shadow-indigo-900/10">
+    <section id="change-pw-section" class="hidden rounded-2xl bg-white border border-slate-200 shadow-md overflow-hidden">
+      <div class="accent-stripe stripe-amber"></div>
       <button id="change-pw-toggle" type="button"
-              class="w-full flex items-center justify-between gap-3 px-6 md:px-8 py-4 text-left hover:bg-slate-800/30 transition rounded-2xl">
-        <div>
-          <h2 class="text-lg md:text-xl font-extrabold text-white">🔄 Change my password</h2>
-          <p id="change-pw-subtitle" class="text-slate-400 text-xs md:text-sm mt-0.5">Change the password for your own account.</p>
+              class="w-full flex items-center justify-between gap-3 px-6 md:px-8 py-5 text-left hover:bg-amber-50/40 transition">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center text-2xl flex-shrink-0">🔄</div>
+          <div>
+            <h2 class="text-xl md:text-2xl font-extrabold text-slate-900">Change my password</h2>
+            <p id="change-pw-subtitle" class="text-slate-600 text-xs md:text-sm mt-0.5">Change the password for your own account.</p>
+          </div>
         </div>
-        <span id="change-pw-chevron" class="text-slate-400 text-xl transition-transform">▾</span>
+        <span id="change-pw-chevron" class="text-slate-500 text-xl transition-transform">▾</span>
       </button>
 
-      <div id="change-pw-body" class="hidden px-6 md:px-8 pb-6 md:pb-8 border-t border-slate-800">
-        <form id="change-pw-form" class="space-y-4 pt-5">
+      <div id="change-pw-body" class="hidden px-6 md:px-10 pb-8 md:pb-10 border-t border-slate-200">
+        <form id="change-pw-form" class="space-y-5 pt-6">
           <div>
-            <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-1.5">Current password *</label>
+            <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">Current password *</label>
             <input id="change-pw-current" type="password" required autocomplete="current-password"
-                   class="w-full px-4 py-2.5 rounded-lg bg-slate-800 ring-1 ring-slate-700 focus:ring-2 focus:ring-indigo-500 focus:outline-none text-slate-100 placeholder-slate-500 transition"
+                   class="w-full px-4 py-3 rounded-lg bg-white border-2 border-slate-300 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 focus:outline-none text-slate-900 placeholder-slate-400 transition"
                    placeholder="Enter your current password" />
           </div>
-          <div class="grid md:grid-cols-2 gap-4">
+          <div class="grid md:grid-cols-2 gap-5">
             <div>
-              <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-1.5">New password *</label>
+              <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">New password *</label>
               <input id="change-pw-new" type="password" required autocomplete="new-password" minlength="8"
-                     class="w-full px-4 py-2.5 rounded-lg bg-slate-800 ring-1 ring-slate-700 focus:ring-2 focus:ring-indigo-500 focus:outline-none text-slate-100 placeholder-slate-500 transition"
+                     class="w-full px-4 py-3 rounded-lg bg-white border-2 border-slate-300 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 focus:outline-none text-slate-900 placeholder-slate-400 transition"
                      placeholder="Min 8 chars, letter + number" />
             </div>
             <div>
-              <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-1.5">Confirm new password *</label>
+              <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">Confirm new password *</label>
               <input id="change-pw-confirm" type="password" required autocomplete="new-password" minlength="8"
-                     class="w-full px-4 py-2.5 rounded-lg bg-slate-800 ring-1 ring-slate-700 focus:ring-2 focus:ring-indigo-500 focus:outline-none text-slate-100 placeholder-slate-500 transition"
+                     class="w-full px-4 py-3 rounded-lg bg-white border-2 border-slate-300 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 focus:outline-none text-slate-900 placeholder-slate-400 transition"
                      placeholder="Re-enter new password" />
             </div>
           </div>
-          <p class="text-[11px] text-slate-500">Must be at least 8 characters, contain a letter and a number, and cannot be the temporary password <code class="px-1 py-0.5 rounded bg-slate-800 font-mono">87654321</code>.</p>
-          <div class="flex items-center gap-3 pt-1">
+          <p class="text-[11px] text-slate-600">Must be at least 8 characters, contain a letter and a number, and cannot be the temporary password <code class="px-1.5 py-0.5 rounded bg-slate-100 border border-slate-200 font-mono text-slate-800">87654321</code>.</p>
+          <div class="flex items-center gap-3 pt-2">
             <button type="submit" id="change-pw-submit"
-                    class="bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-bold px-5 py-2.5 rounded-lg shadow-lg shadow-indigo-900/30 transition">
+                    class="btn-primary font-bold px-6 py-3 rounded-full">
               Change password
             </button>
             <button type="reset" id="change-pw-reset"
-                    class="text-sm font-semibold text-slate-400 hover:text-slate-200 px-4 py-2.5 transition">
+                    class="text-sm font-semibold text-slate-600 hover:text-slate-900 px-4 py-2.5 transition">
               Reset form
             </button>
           </div>
@@ -149,134 +177,152 @@ sitemap: false
     <!-- ============================================================ -->
     <!-- ADD USER FORM                                                -->
     <!-- ============================================================ -->
-    <section id="add-user-section" class="hidden rounded-2xl bg-slate-900/60 ring-1 ring-slate-800 p-6 md:p-8 shadow-2xl shadow-indigo-900/10">
-      <div class="flex items-start justify-between mb-6 gap-4 flex-wrap">
-        <div>
-          <h2 class="text-2xl font-extrabold text-white">➕ Add a new user</h2>
-          <p class="text-slate-400 text-sm mt-1">Create a student or administrator account and assign course access.</p>
-        </div>
-      </div>
-
-      <div class="rounded-lg bg-amber-500/10 ring-1 ring-amber-400/30 px-4 py-3 mb-6 text-amber-200 text-sm flex items-start gap-2">
-        <span class="text-lg leading-none mt-0.5">🔑</span>
-        <span>New users get temporary password <code class="px-1.5 py-0.5 rounded bg-amber-400/20 font-mono font-bold text-amber-100">87654321</code>. They will be forced to change it on first sign-in.</span>
-      </div>
-
-      <form id="add-form" class="space-y-5">
-        <div class="grid md:grid-cols-3 gap-4">
-          <div class="md:col-span-2">
-            <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-1.5">Email *</label>
-            <input id="add-email" type="email" required
-                   class="w-full px-4 py-2.5 rounded-lg bg-slate-800 ring-1 ring-slate-700 focus:ring-2 focus:ring-indigo-500 focus:outline-none text-slate-100 placeholder-slate-500 transition"
-                   placeholder="user@example.com" />
+    <section id="add-user-section" class="hidden rounded-2xl bg-white border border-slate-200 shadow-md overflow-hidden">
+      <div class="accent-stripe stripe-indigo"></div>
+      <div class="p-8 md:p-10">
+        <div class="flex items-start justify-between mb-7 gap-4 flex-wrap">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-2xl bg-indigo-100 text-indigo-700 flex items-center justify-center text-2xl flex-shrink-0">➕</div>
+            <div>
+              <h2 class="text-2xl font-extrabold text-slate-900">Add a new user</h2>
+              <p class="text-slate-600 text-sm mt-1">Create a student or administrator account and assign course access.</p>
+            </div>
           </div>
+        </div>
+
+        <div class="rounded-lg bg-amber-50 border border-amber-300 px-4 py-3 mb-7 text-amber-900 text-sm flex items-start gap-2">
+          <span class="text-lg leading-none mt-0.5">🔑</span>
+          <span>New users get temporary password <code class="px-1.5 py-0.5 rounded bg-amber-100 border border-amber-300 font-mono font-bold text-amber-900">87654321</code>. They will be forced to change it on first sign-in.</span>
+        </div>
+
+        <form id="add-form" class="space-y-5">
+          <div class="grid md:grid-cols-3 gap-5">
+            <div class="md:col-span-2">
+              <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">Email *</label>
+              <input id="add-email" type="email" required
+                     class="w-full px-4 py-3 rounded-lg bg-white border-2 border-slate-300 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 focus:outline-none text-slate-900 placeholder-slate-400 transition"
+                     placeholder="user@example.com" />
+            </div>
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">Role</label>
+              <select id="add-role" class="w-full px-4 py-3 rounded-lg bg-white border-2 border-slate-300 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 focus:outline-none text-slate-900 transition">
+                <option value="student">Student (per-course access)</option>
+                <option value="administrator" data-superonly>Administrator (can manage students)</option>
+              </select>
+              <p id="add-role-hint" class="hidden text-xs text-slate-600 mt-1.5">Only super-users can create administrators.</p>
+            </div>
+          </div>
+
           <div>
-            <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-1.5">Role</label>
-            <select id="add-role" class="w-full px-4 py-2.5 rounded-lg bg-slate-800 ring-1 ring-slate-700 focus:ring-2 focus:ring-indigo-500 focus:outline-none text-slate-100 transition">
-              <option value="student">Student (per-course access)</option>
-              <option value="administrator" data-superonly>Administrator (can manage students)</option>
-            </select>
-            <p id="add-role-hint" class="hidden text-xs text-slate-500 mt-1.5">Only super-users can create administrators.</p>
+            <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">Display name (optional)</label>
+            <input id="add-name" type="text"
+                   class="w-full px-4 py-3 rounded-lg bg-white border-2 border-slate-300 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 focus:outline-none text-slate-900 placeholder-slate-400 transition"
+                   placeholder="e.g. Jane Doe — defaults to email's first part if blank" />
           </div>
-        </div>
 
-        <div>
-          <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-1.5">Display name (optional)</label>
-          <input id="add-name" type="text"
-                 class="w-full px-4 py-2.5 rounded-lg bg-slate-800 ring-1 ring-slate-700 focus:ring-2 focus:ring-indigo-500 focus:outline-none text-slate-100 placeholder-slate-500 transition"
-                 placeholder="e.g. Jane Doe — defaults to email's first part if blank" />
-        </div>
-
-        <div>
-          <div class="flex items-center justify-between mb-2 flex-wrap gap-2">
-            <label class="block text-xs font-bold uppercase tracking-wider text-slate-400">Course access</label>
-            <label class="flex items-center gap-2 text-sm cursor-pointer select-none">
-              <input id="add-select-all" type="checkbox" class="rounded text-indigo-500 bg-slate-800 ring-1 ring-slate-600 focus:ring-indigo-400" />
-              <span class="font-semibold text-indigo-300">Select all 20 courses (full access)</span>
-            </label>
+          <div>
+            <div class="flex items-center justify-between mb-2 flex-wrap gap-2">
+              <label class="block text-xs font-bold uppercase tracking-wider text-slate-700">Course access</label>
+              <label class="flex items-center gap-2 text-sm cursor-pointer select-none">
+                <input id="add-select-all" type="checkbox" class="rounded text-indigo-600 bg-white border-slate-400 focus:ring-indigo-400" />
+                <span class="font-semibold text-indigo-700">Select all 20 courses (full access)</span>
+              </label>
+            </div>
+            <div id="add-courses" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-2 p-4 rounded-lg bg-slate-50 border-2 border-slate-200 max-h-80 overflow-y-auto">
+              <div class="text-sm text-slate-500 col-span-full">Loading courses…</div>
+            </div>
           </div>
-          <div id="add-courses" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-2 p-4 rounded-lg bg-slate-950/40 ring-1 ring-slate-800 max-h-80 overflow-y-auto">
-            <div class="text-sm text-slate-500 col-span-full">Loading courses…</div>
+
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">Notes (optional)</label>
+            <input id="add-notes" type="text"
+                   class="w-full px-4 py-3 rounded-lg bg-white border-2 border-slate-300 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 focus:outline-none text-slate-900 placeholder-slate-400 transition"
+                   placeholder="e.g. paid annual, renews 2027-05-23" />
           </div>
-        </div>
 
-        <div>
-          <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-1.5">Notes (optional)</label>
-          <input id="add-notes" type="text"
-                 class="w-full px-4 py-2.5 rounded-lg bg-slate-800 ring-1 ring-slate-700 focus:ring-2 focus:ring-indigo-500 focus:outline-none text-slate-100 placeholder-slate-500 transition"
-                 placeholder="e.g. paid annual, renews 2027-05-23" />
-        </div>
-
-        <div class="flex items-center gap-3 pt-2">
-          <button type="submit" id="add-submit"
-                  class="bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-bold px-6 py-2.5 rounded-lg shadow-lg shadow-indigo-900/30 transition">
-            Create user
-          </button>
-          <button type="reset" id="add-reset"
-                  class="text-sm font-semibold text-slate-400 hover:text-slate-200 px-4 py-2.5 transition">
-            Reset form
-          </button>
-        </div>
-      </form>
+          <div class="flex items-center gap-3 pt-3">
+            <button type="submit" id="add-submit"
+                    class="btn-primary font-bold px-7 py-3 rounded-full">
+              Create user
+            </button>
+            <button type="reset" id="add-reset"
+                    class="text-sm font-semibold text-slate-600 hover:text-slate-900 px-4 py-2.5 transition">
+              Reset form
+            </button>
+          </div>
+        </form>
+      </div>
     </section>
 
     <!-- ============================================================ -->
     <!-- USERS TABLE                                                  -->
     <!-- ============================================================ -->
-    <section id="users-section" class="hidden rounded-2xl bg-slate-900/60 ring-1 ring-slate-800 p-6 md:p-8">
-      <div class="flex items-center justify-between mb-6 gap-4 flex-wrap">
-        <div>
-          <h2 class="text-2xl font-extrabold text-white">👥 All users</h2>
-          <p class="text-slate-400 text-sm mt-1"><span id="users-count">0</span> users in the system.</p>
+    <section id="users-section" class="hidden rounded-2xl bg-white border border-slate-200 shadow-md overflow-hidden">
+      <div class="accent-stripe stripe-emerald"></div>
+      <div class="p-8 md:p-10">
+        <div class="flex items-center justify-between mb-7 gap-4 flex-wrap">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-2xl flex-shrink-0">👥</div>
+            <div>
+              <h2 class="text-2xl font-extrabold text-slate-900">All users</h2>
+              <p class="text-slate-600 text-sm mt-1"><span id="users-count" class="font-bold text-slate-900">0</span> users in the system.</p>
+            </div>
+          </div>
+          <button id="refresh-btn" class="text-sm font-semibold text-slate-700 hover:text-slate-900 px-4 py-2 rounded-lg bg-white border border-slate-300 hover:bg-slate-100 shadow-sm transition">↻ Refresh</button>
         </div>
-        <button id="refresh-btn" class="text-sm font-semibold text-slate-300 hover:text-white px-3 py-2 rounded-lg ring-1 ring-slate-700 hover:ring-slate-500 transition">↻ Refresh</button>
+
+        <!-- Desktop table -->
+        <div class="hidden md:block overflow-x-auto rounded-lg border border-slate-200">
+          <table class="w-full text-sm">
+            <thead>
+              <tr class="text-left text-xs font-bold uppercase tracking-wider text-slate-900 bg-slate-100 border-b border-slate-200">
+                <th class="px-4 py-3">Email</th>
+                <th class="px-4 py-3">Name</th>
+                <th class="px-4 py-3">Role</th>
+                <th class="px-4 py-3">Status</th>
+                <th class="px-4 py-3">Courses</th>
+                <th class="px-4 py-3">Last login</th>
+                <th class="px-4 py-3">Created</th>
+                <th class="px-4 py-3 text-right">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="users-tbody"></tbody>
+          </table>
+        </div>
+
+        <!-- Mobile card list -->
+        <div id="users-cards" class="md:hidden space-y-3"></div>
+
+        <p id="users-empty" class="hidden text-sm text-slate-500 italic text-center py-8">No users yet. Add one above.</p>
       </div>
-
-      <!-- Desktop table -->
-      <div class="hidden md:block overflow-x-auto">
-        <table class="w-full text-sm">
-          <thead>
-            <tr class="text-left text-xs font-bold uppercase tracking-wider text-slate-500 border-b border-slate-800">
-              <th class="py-3 pr-4">Email</th>
-              <th class="py-3 pr-4">Name</th>
-              <th class="py-3 pr-4">Role</th>
-              <th class="py-3 pr-4">Status</th>
-              <th class="py-3 pr-4">Courses</th>
-              <th class="py-3 pr-4">Last login</th>
-              <th class="py-3 pr-4">Created</th>
-              <th class="py-3 text-right">Actions</th>
-            </tr>
-          </thead>
-          <tbody id="users-tbody"></tbody>
-        </table>
-      </div>
-
-      <!-- Mobile card list -->
-      <div id="users-cards" class="md:hidden space-y-3"></div>
-
-      <p id="users-empty" class="hidden text-sm text-slate-500 italic text-center py-8">No users yet. Add one above.</p>
     </section>
 
     <!-- ============================================================ -->
     <!-- PRIVILEGE MATRIX                                             -->
     <!-- ============================================================ -->
-    <section id="matrix-section" class="hidden rounded-2xl bg-slate-900/60 ring-1 ring-slate-800 p-6 md:p-8">
-      <div class="mb-6">
-        <h2 class="text-2xl font-extrabold text-white">📋 Role privilege matrix</h2>
-        <p class="text-slate-400 text-sm mt-1">What each role can do. Authoritative source: <code class="font-mono text-xs bg-slate-800 px-1.5 py-0.5 rounded">functions/lib/roles.js</code></p>
-      </div>
-      <div class="overflow-x-auto">
-        <table class="w-full text-sm">
-          <thead>
-            <tr class="text-left text-xs font-bold uppercase tracking-wider text-slate-500 border-b border-slate-800">
-              <th class="py-3 pr-4">Capability</th>
-              <th class="py-3 pr-4 text-center">Super-user</th>
-              <th class="py-3 pr-4 text-center">Administrator</th>
-              <th class="py-3 pr-4 text-center">Student</th>
-            </tr>
-          </thead>
-          <tbody id="matrix-tbody"></tbody>
-        </table>
+    <section id="matrix-section" class="hidden rounded-2xl bg-white border border-slate-200 shadow-md overflow-hidden">
+      <div class="accent-stripe stripe-rose"></div>
+      <div class="p-8 md:p-10">
+        <div class="mb-7 flex items-center gap-4">
+          <div class="w-12 h-12 rounded-2xl bg-rose-100 text-rose-700 flex items-center justify-center text-2xl flex-shrink-0">📋</div>
+          <div>
+            <h2 class="text-2xl font-extrabold text-slate-900">Role privilege matrix</h2>
+            <p class="text-slate-600 text-sm mt-1">What each role can do. Authoritative source: <code class="font-mono text-xs bg-slate-100 border border-slate-200 text-slate-800 px-1.5 py-0.5 rounded">functions/lib/roles.js</code></p>
+          </div>
+        </div>
+        <div class="overflow-x-auto rounded-lg border border-slate-200">
+          <table class="w-full text-sm">
+            <thead>
+              <tr class="text-left text-xs font-bold uppercase tracking-wider text-slate-900 bg-indigo-50 border-b border-slate-200">
+                <th class="px-4 py-3">Capability</th>
+                <th class="px-4 py-3 text-center">Super-user</th>
+                <th class="px-4 py-3 text-center">Administrator</th>
+                <th class="px-4 py-3 text-center">Student</th>
+              </tr>
+            </thead>
+            <tbody id="matrix-tbody"></tbody>
+          </table>
+        </div>
       </div>
     </section>
   </main>
@@ -284,62 +330,63 @@ sitemap: false
   <!-- ============================================================ -->
   <!-- EDIT SLIDE-OVER PANEL                                        -->
   <!-- ============================================================ -->
-  <div id="edit-overlay" class="hidden fixed inset-0 z-40 bg-slate-950/70 backdrop-blur-sm"></div>
-  <aside id="edit-panel" class="slide-panel closed fixed top-0 right-0 z-50 h-full w-full sm:max-w-xl bg-slate-900 ring-1 ring-slate-800 shadow-2xl overflow-y-auto">
-    <div class="sticky top-0 bg-slate-900/95 backdrop-blur border-b border-slate-800 px-6 py-4 flex items-center justify-between z-10">
+  <div id="edit-overlay" class="hidden fixed inset-0 z-40 bg-slate-900/50 backdrop-blur-sm"></div>
+  <aside id="edit-panel" class="slide-panel closed fixed top-0 right-0 z-50 h-full w-full sm:max-w-xl bg-white border-l border-slate-200 shadow-2xl overflow-y-auto">
+    <div class="sticky top-0 bg-white/95 backdrop-blur border-b border-slate-200 px-6 py-4 flex items-center justify-between z-10">
+      <div class="stripe-header h-1 w-full absolute top-0 left-0"></div>
       <div>
-        <h3 class="text-lg font-extrabold text-white">Edit user</h3>
-        <p id="edit-panel-email" class="text-xs text-slate-400 font-mono mt-0.5"></p>
+        <h3 class="text-lg font-extrabold text-slate-900">Edit user</h3>
+        <p id="edit-panel-email" class="text-xs text-slate-600 font-mono mt-0.5"></p>
       </div>
-      <button id="edit-close" class="text-slate-400 hover:text-white p-1.5 rounded-lg ring-1 ring-slate-700 hover:ring-slate-500 transition" aria-label="Close">✕</button>
+      <button id="edit-close" class="text-slate-600 hover:text-slate-900 p-1.5 rounded-lg border border-slate-300 hover:bg-slate-100 transition" aria-label="Close">✕</button>
     </div>
 
     <form id="edit-form" class="p-6 space-y-5">
       <div>
-        <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-1.5">Email</label>
+        <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">Email</label>
         <input id="edit-email" type="email" readonly
-               class="w-full px-4 py-2.5 rounded-lg bg-slate-800/50 ring-1 ring-slate-700 text-slate-400 font-mono text-sm" />
+               class="w-full px-4 py-3 rounded-lg bg-slate-100 border-2 border-slate-200 text-slate-500 font-mono text-sm" />
       </div>
 
       <div>
-        <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-1.5">Display name</label>
+        <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">Display name</label>
         <input id="edit-name" type="text"
-               class="w-full px-4 py-2.5 rounded-lg bg-slate-800 ring-1 ring-slate-700 focus:ring-2 focus:ring-indigo-500 focus:outline-none text-slate-100 placeholder-slate-500 transition"
+               class="w-full px-4 py-3 rounded-lg bg-white border-2 border-slate-300 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 focus:outline-none text-slate-900 placeholder-slate-400 transition"
                placeholder="e.g. Jane Doe — defaults to email's first part if blank" />
       </div>
 
       <div>
-        <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-1.5">Role</label>
-        <select id="edit-role" class="w-full px-4 py-2.5 rounded-lg bg-slate-800 ring-1 ring-slate-700 focus:ring-2 focus:ring-indigo-500 focus:outline-none text-slate-100 transition">
+        <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">Role</label>
+        <select id="edit-role" class="w-full px-4 py-3 rounded-lg bg-white border-2 border-slate-300 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 focus:outline-none text-slate-900 transition">
           <option value="student">Student</option>
           <option value="administrator" data-superonly>Administrator</option>
         </select>
-        <p id="edit-role-hint" class="hidden text-xs text-slate-500 mt-1.5">Only super-users can change role to administrator.</p>
+        <p id="edit-role-hint" class="hidden text-xs text-slate-600 mt-1.5">Only super-users can change role to administrator.</p>
       </div>
 
       <div>
         <div class="flex items-center justify-between mb-2 flex-wrap gap-2">
-          <label class="block text-xs font-bold uppercase tracking-wider text-slate-400">Course access</label>
+          <label class="block text-xs font-bold uppercase tracking-wider text-slate-700">Course access</label>
           <label class="flex items-center gap-2 text-sm cursor-pointer select-none">
-            <input id="edit-select-all" type="checkbox" class="rounded text-indigo-500 bg-slate-800 ring-1 ring-slate-600 focus:ring-indigo-400" />
-            <span class="font-semibold text-indigo-300">Select all 20</span>
+            <input id="edit-select-all" type="checkbox" class="rounded text-indigo-600 bg-white border-slate-400 focus:ring-indigo-400" />
+            <span class="font-semibold text-indigo-700">Select all 20</span>
           </label>
         </div>
-        <div id="edit-courses" class="grid sm:grid-cols-2 gap-2 p-3 rounded-lg bg-slate-950/40 ring-1 ring-slate-800 max-h-72 overflow-y-auto"></div>
+        <div id="edit-courses" class="grid sm:grid-cols-2 gap-2 p-3 rounded-lg bg-slate-50 border-2 border-slate-200 max-h-72 overflow-y-auto"></div>
       </div>
 
       <div>
-        <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-1.5">Notes</label>
+        <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">Notes</label>
         <input id="edit-notes" type="text"
-               class="w-full px-4 py-2.5 rounded-lg bg-slate-800 ring-1 ring-slate-700 focus:ring-2 focus:ring-indigo-500 focus:outline-none text-slate-100 placeholder-slate-500 transition"
+               class="w-full px-4 py-3 rounded-lg bg-white border-2 border-slate-300 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 focus:outline-none text-slate-900 placeholder-slate-400 transition"
                placeholder="(optional)" />
       </div>
 
-      <div class="flex items-center gap-3 pt-3 border-t border-slate-800">
-        <button type="submit" class="bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-bold px-5 py-2.5 rounded-lg shadow-lg shadow-indigo-900/30 transition">
+      <div class="flex items-center gap-3 pt-3 border-t border-slate-200">
+        <button type="submit" class="btn-primary font-bold px-6 py-3 rounded-full">
           Save changes
         </button>
-        <button type="button" id="edit-cancel" class="text-sm font-semibold text-slate-400 hover:text-slate-200 px-4 py-2.5 transition">
+        <button type="button" id="edit-cancel" class="text-sm font-semibold text-slate-600 hover:text-slate-900 px-4 py-2.5 transition">
           Cancel
         </button>
       </div>
@@ -349,13 +396,13 @@ sitemap: false
   <!-- ============================================================ -->
   <!-- CONFIRM MODAL                                                -->
   <!-- ============================================================ -->
-  <div id="confirm-modal" class="hidden fixed inset-0 z-50 bg-slate-950/70 backdrop-blur-sm flex items-center justify-center p-4 fade-in">
-    <div class="bg-slate-900 ring-1 ring-slate-700 rounded-2xl p-6 max-w-md w-full shadow-2xl">
-      <h3 id="confirm-title" class="text-lg font-extrabold text-white mb-2"></h3>
-      <p id="confirm-message" class="text-sm text-slate-300 mb-6"></p>
+  <div id="confirm-modal" class="hidden fixed inset-0 z-50 bg-slate-900/50 backdrop-blur-sm flex items-center justify-center p-4 fade-in">
+    <div class="bg-white border border-slate-200 rounded-2xl p-7 max-w-md w-full shadow-2xl">
+      <h3 id="confirm-title" class="text-xl font-extrabold text-slate-900 mb-2"></h3>
+      <p id="confirm-message" class="text-sm text-slate-700 mb-6"></p>
       <div class="flex items-center justify-end gap-2">
-        <button id="confirm-cancel" class="text-sm font-semibold text-slate-300 hover:text-white px-4 py-2 rounded-lg ring-1 ring-slate-700 hover:ring-slate-500 transition">Cancel</button>
-        <button id="confirm-ok" class="text-sm font-bold text-white px-4 py-2 rounded-lg transition"></button>
+        <button id="confirm-cancel" class="text-sm font-semibold text-slate-700 hover:text-slate-900 px-4 py-2 rounded-lg bg-white border border-slate-300 hover:bg-slate-100 transition">Cancel</button>
+        <button id="confirm-ok" class="text-sm font-bold text-white px-5 py-2 rounded-lg shadow-md transition"></button>
       </div>
     </div>
   </div>
@@ -409,14 +456,14 @@ sitemap: false
     const toastStack = $('toast-stack');
     function toast(message, type = 'success', title = null, timeout = 6000) {
       const colors = {
-        success: 'bg-emerald-500/10 ring-emerald-400/40 text-emerald-100',
-        error:   'bg-rose-500/15 ring-rose-400/40 text-rose-100',
-        warning: 'bg-amber-500/10 ring-amber-400/40 text-amber-100',
-        info:    'bg-indigo-500/10 ring-indigo-400/40 text-indigo-100',
+        success: 'bg-emerald-50 border-emerald-300 text-emerald-900',
+        error:   'bg-rose-50 border-rose-300 text-rose-900',
+        warning: 'bg-amber-50 border-amber-300 text-amber-900',
+        info:    'bg-sky-50 border-sky-300 text-sky-900',
       };
       const icons = { success: '✅', error: '⚠️', warning: '⚠️', info: 'ℹ️' };
       const el = document.createElement('div');
-      el.className = `pointer-events-auto toast-in rounded-xl ring-1 px-4 py-3 shadow-xl backdrop-blur ${colors[type] || colors.info}`;
+      el.className = `pointer-events-auto toast-in rounded-xl border-2 px-4 py-3 shadow-lg ${colors[type] || colors.info}`;
       el.innerHTML = `
         <div class="flex items-start gap-2.5">
           <span class="text-lg leading-none mt-0.5">${icons[type] || ''}</span>
@@ -439,8 +486,8 @@ sitemap: false
         $('confirm-message').textContent = message;
         const okBtn = $('confirm-ok');
         okBtn.textContent = confirmLabel;
-        okBtn.className = `text-sm font-bold text-white px-4 py-2 rounded-lg transition ${
-          danger ? 'bg-rose-600 hover:bg-rose-500' : 'bg-indigo-600 hover:bg-indigo-500'
+        okBtn.className = `text-sm font-bold text-white px-5 py-2 rounded-lg shadow-md hover:shadow-lg transition ${
+          danger ? 'bg-rose-600 hover:bg-rose-700' : 'bg-indigo-600 hover:bg-indigo-700'
         }`;
         const modal = $('confirm-modal');
         modal.classList.remove('hidden');
@@ -499,9 +546,9 @@ sitemap: false
         $('matrix-section').classList.remove('hidden');
       } catch (e) {
         $('boot-state').innerHTML = `
-          <div class="text-3xl mb-3">⚠️</div>
-          <p class="text-rose-300 text-sm font-semibold">Failed to load admin panel: ${escapeHtml(e.message)}</p>
-          <a href="/login/" class="inline-block mt-4 text-indigo-400 hover:text-indigo-200 text-sm font-bold underline">Go to sign-in</a>
+          <div class="text-4xl mb-3">⚠️</div>
+          <p class="text-rose-700 text-sm font-semibold">Failed to load admin panel: ${escapeHtml(e.message)}</p>
+          <a href="/login/" class="inline-block mt-4 text-indigo-600 hover:text-indigo-800 text-sm font-bold underline">Go to sign-in</a>
         `;
       }
     }
@@ -512,9 +559,9 @@ sitemap: false
       $('current-user-name').textContent = name;
       const badge = $('current-user-role-badge');
       const labels = {
-        superuser: { text: 'SUPER-USER', cls: 'bg-purple-500/25 text-purple-200 ring-1 ring-purple-400/40' },
-        administrator: { text: 'ADMINISTRATOR', cls: 'bg-amber-500/25 text-amber-200 ring-1 ring-amber-400/40' },
-        student: { text: 'STUDENT', cls: 'bg-sky-500/25 text-sky-200 ring-1 ring-sky-400/40' },
+        superuser: { text: 'SUPER-USER', cls: 'bg-purple-100 text-purple-800 border border-purple-300' },
+        administrator: { text: 'ADMINISTRATOR', cls: 'bg-amber-100 text-amber-800 border border-amber-300' },
+        student: { text: 'STUDENT', cls: 'bg-sky-100 text-sky-800 border border-sky-300' },
       };
       const meta = labels[role] || labels.student;
       badge.textContent = meta.text;
@@ -544,7 +591,7 @@ sitemap: false
         state.coursesById = Object.fromEntries(state.courses.map(c => [c.id, c]));
         renderCourseGrid('add-courses', new Set(), 'add');
       } catch (e) {
-        $('add-courses').innerHTML = `<p class="text-sm text-rose-300 col-span-full">Could not load courses: ${escapeHtml(e.message)}</p>`;
+        $('add-courses').innerHTML = `<p class="text-sm text-rose-700 col-span-full">Could not load courses: ${escapeHtml(e.message)}</p>`;
       }
     }
 
@@ -560,14 +607,14 @@ sitemap: false
       }
       let html = '';
       for (const cat of Object.keys(byCat)) {
-        html += `<div class="col-span-full mt-1 mb-1 text-[10px] font-bold uppercase tracking-widest text-slate-500">${escapeHtml(cat)}</div>`;
+        html += `<div class="col-span-full mt-1 mb-1 text-[10px] font-bold uppercase tracking-widest text-indigo-700">${escapeHtml(cat)}</div>`;
         for (const c of byCat[cat]) {
           const checked = selectedSet.has(c.id) ? 'checked' : '';
           html += `
-            <label class="flex items-center gap-2 px-2.5 py-2 rounded-lg bg-slate-900 ring-1 ring-slate-800 hover:ring-indigo-500/60 hover:bg-slate-800/60 cursor-pointer transition">
-              <input type="checkbox" name="${prefix}-course" value="${escapeHtml(c.id)}" ${checked} class="rounded text-indigo-500 bg-slate-800 ring-1 ring-slate-600 focus:ring-indigo-400" />
+            <label class="flex items-center gap-2 px-2.5 py-2 rounded-lg bg-white border border-slate-200 hover:border-indigo-400 hover:bg-indigo-50 cursor-pointer transition">
+              <input type="checkbox" name="${prefix}-course" value="${escapeHtml(c.id)}" ${checked} class="rounded text-indigo-600 bg-white border-slate-400 focus:ring-indigo-400" />
               <span class="text-lg leading-none">${escapeHtml(c.icon || '📘')}</span>
-              <span class="text-xs font-medium text-slate-300 truncate">${escapeHtml(c.slug)}</span>
+              <span class="text-xs font-medium text-slate-700 truncate">${escapeHtml(c.slug)}</span>
             </label>
           `;
         }
@@ -596,8 +643,8 @@ sitemap: false
         state.users = data.users || [];
         renderUsers();
       } catch (e) {
-        $('users-tbody').innerHTML = `<tr><td colspan="8" class="py-6 text-center text-rose-300">${escapeHtml(e.message)}</td></tr>`;
-        $('users-cards').innerHTML = `<p class="text-sm text-rose-300 text-center py-4">${escapeHtml(e.message)}</p>`;
+        $('users-tbody').innerHTML = `<tr><td colspan="8" class="py-6 text-center text-rose-700">${escapeHtml(e.message)}</td></tr>`;
+        $('users-cards').innerHTML = `<p class="text-sm text-rose-700 text-center py-4">${escapeHtml(e.message)}</p>`;
       }
     }
 
@@ -614,33 +661,33 @@ sitemap: false
 
     function roleBadge(role) {
       const map = {
-        superuser:     ['SUPER-USER',     'bg-purple-500/20 text-purple-200 ring-purple-400/40'],
-        administrator: ['ADMINISTRATOR',  'bg-amber-500/20 text-amber-200 ring-amber-400/40'],
-        student:       ['STUDENT',        'bg-sky-500/20 text-sky-200 ring-sky-400/40'],
+        superuser:     ['SUPER-USER',     'bg-purple-100 text-purple-800 border-purple-300'],
+        administrator: ['ADMINISTRATOR',  'bg-amber-100 text-amber-800 border-amber-300'],
+        student:       ['STUDENT',        'bg-sky-100 text-sky-800 border-sky-300'],
       };
       const [text, cls] = map[role] || map.student;
-      return `<span class="px-2 py-0.5 rounded-full text-[10px] font-bold tracking-wide ring-1 ${cls}">${text}</span>`;
+      return `<span class="px-2 py-0.5 rounded-full text-[10px] font-bold tracking-wide border ${cls}">${text}</span>`;
     }
 
     function statusPill(user) {
       if (user.disabled) {
-        return '<span class="px-2 py-0.5 rounded-full text-[10px] font-bold ring-1 bg-rose-500/20 text-rose-200 ring-rose-400/40">DISABLED</span>';
+        return '<span class="px-2 py-0.5 rounded-full text-[10px] font-bold border bg-rose-100 text-rose-700 border-rose-300">DISABLED</span>';
       }
       if (user.must_change_password) {
-        return '<span class="px-2 py-0.5 rounded-full text-[10px] font-bold ring-1 bg-amber-500/20 text-amber-200 ring-amber-400/40">MUST CHANGE PW</span>';
+        return '<span class="px-2 py-0.5 rounded-full text-[10px] font-bold border bg-amber-100 text-amber-700 border-amber-300">MUST CHANGE PW</span>';
       }
-      return '<span class="px-2 py-0.5 rounded-full text-[10px] font-bold ring-1 bg-emerald-500/20 text-emerald-200 ring-emerald-400/40">ACTIVE</span>';
+      return '<span class="px-2 py-0.5 rounded-full text-[10px] font-bold border bg-emerald-100 text-emerald-700 border-emerald-300">ACTIVE</span>';
     }
 
     function coursesLabel(courses) {
-      if (courses === '*') return '<span class="font-bold text-purple-300">All 20 courses</span>';
+      if (courses === '*') return '<span class="font-bold text-purple-700">All 20 courses</span>';
       if (!Array.isArray(courses) || courses.length === 0) return '<span class="text-slate-500 italic">none</span>';
       if (courses.length === 1) {
         const c = state.coursesById[courses[0]];
-        return `<span class="text-slate-300">${escapeHtml(c ? c.icon + ' ' + c.slug : courses[0])}</span>`;
+        return `<span class="text-slate-700">${escapeHtml(c ? c.icon + ' ' + c.slug : courses[0])}</span>`;
       }
       const icons = courses.slice(0, 6).map(id => state.coursesById[id]?.icon || '·').join(' ');
-      return `<span class="text-slate-300" title="${escapeHtml(courses.join(', '))}">${icons}${courses.length > 6 ? ' …' : ''} <span class="text-xs text-slate-500">(${courses.length})</span></span>`;
+      return `<span class="text-slate-700" title="${escapeHtml(courses.join(', '))}">${icons}${courses.length > 6 ? ' …' : ''} <span class="text-xs text-slate-500">(${courses.length})</span></span>`;
     }
 
     function actionButtons(user) {
@@ -653,14 +700,14 @@ sitemap: false
       }
       const disableLabel = user.disabled ? 'Enable' : 'Disable';
       const disableCls = user.disabled
-        ? 'text-emerald-300 hover:text-emerald-200'
-        : 'text-amber-300 hover:text-amber-200';
+        ? 'bg-emerald-600 hover:bg-emerald-700 text-white'
+        : 'bg-amber-500 hover:bg-amber-600 text-white';
       return `
-        <div class="flex items-center justify-end gap-3 flex-wrap">
-          <button data-act="edit"   data-email="${escapeHtml(user.email)}" class="text-indigo-300 hover:text-indigo-100 font-semibold text-xs">Edit</button>
-          <button data-act="reset"  data-email="${escapeHtml(user.email)}" class="text-sky-300 hover:text-sky-100 font-semibold text-xs">Reset pw</button>
-          <button data-act="toggle" data-email="${escapeHtml(user.email)}" class="font-semibold text-xs ${disableCls}">${disableLabel}</button>
-          <button data-act="delete" data-email="${escapeHtml(user.email)}" class="text-rose-300 hover:text-rose-100 font-semibold text-xs">Delete</button>
+        <div class="flex items-center justify-end gap-1.5 flex-wrap">
+          <button data-act="edit"   data-email="${escapeHtml(user.email)}" class="bg-slate-100 hover:bg-slate-200 text-slate-900 border border-slate-300 font-semibold text-xs px-2.5 py-1 rounded-md transition">Edit</button>
+          <button data-act="reset"  data-email="${escapeHtml(user.email)}" class="bg-sky-600 hover:bg-sky-700 text-white font-semibold text-xs px-2.5 py-1 rounded-md transition">Reset pw</button>
+          <button data-act="toggle" data-email="${escapeHtml(user.email)}" class="font-semibold text-xs px-2.5 py-1 rounded-md transition ${disableCls}">${disableLabel}</button>
+          <button data-act="delete" data-email="${escapeHtml(user.email)}" class="bg-rose-600 hover:bg-rose-700 text-white font-semibold text-xs px-2.5 py-1 rounded-md transition">Delete</button>
         </div>
       `;
     }
@@ -689,19 +736,19 @@ sitemap: false
       // --- Desktop rows ---
       tbody.innerHTML = sorted.map(u => {
         const hardcoded = u.role === 'superuser'
-          ? '<span class="ml-1.5 px-1.5 py-0.5 rounded text-[9px] font-bold bg-purple-500/20 text-purple-200">(hardcoded)</span>'
+          ? '<span class="ml-1.5 px-1.5 py-0.5 rounded text-[9px] font-bold bg-purple-100 text-purple-800 border border-purple-300">(hardcoded)</span>'
           : '';
         const name = userDisplayName(u);
         return `
-          <tr class="border-b border-slate-800/60 hover:bg-slate-800/30 transition">
-            <td class="py-3 pr-4 font-mono text-xs md:text-sm text-slate-200 break-all">${escapeHtml(u.email)}${hardcoded}</td>
-            <td class="py-3 pr-4 text-sm text-slate-200">${escapeHtml(name)}</td>
-            <td class="py-3 pr-4">${roleBadge(u.role)}</td>
-            <td class="py-3 pr-4">${statusPill(u)}</td>
-            <td class="py-3 pr-4">${coursesLabel(u.courses)}</td>
-            <td class="py-3 pr-4 text-xs text-slate-400">${formatDate(u.last_login)}</td>
-            <td class="py-3 pr-4 text-xs text-slate-400">${formatDate(u.created_at)}</td>
-            <td class="py-3 text-right">${actionButtons(u)}</td>
+          <tr class="border-b border-slate-200 hover:bg-indigo-50 transition bg-white">
+            <td class="px-4 py-3 font-mono text-xs md:text-sm text-slate-900 break-all">${escapeHtml(u.email)}${hardcoded}</td>
+            <td class="px-4 py-3 text-sm text-slate-900 font-semibold">${escapeHtml(name)}</td>
+            <td class="px-4 py-3">${roleBadge(u.role)}</td>
+            <td class="px-4 py-3">${statusPill(u)}</td>
+            <td class="px-4 py-3">${coursesLabel(u.courses)}</td>
+            <td class="px-4 py-3 text-xs text-slate-600">${formatDate(u.last_login)}</td>
+            <td class="px-4 py-3 text-xs text-slate-600">${formatDate(u.created_at)}</td>
+            <td class="px-4 py-3 text-right">${actionButtons(u)}</td>
           </tr>
         `;
       }).join('');
@@ -709,24 +756,24 @@ sitemap: false
       // --- Mobile cards ---
       cards.innerHTML = sorted.map(u => {
         const hardcoded = u.role === 'superuser'
-          ? '<span class="ml-1.5 px-1.5 py-0.5 rounded text-[9px] font-bold bg-purple-500/20 text-purple-200">(hardcoded)</span>'
+          ? '<span class="ml-1.5 px-1.5 py-0.5 rounded text-[9px] font-bold bg-purple-100 text-purple-800 border border-purple-300">(hardcoded)</span>'
           : '';
         const name = userDisplayName(u);
         return `
-          <div class="rounded-xl bg-slate-950/40 ring-1 ring-slate-800 p-4 space-y-2">
+          <div class="rounded-xl bg-white border border-slate-200 shadow-sm p-4 space-y-2">
             <div class="flex items-start justify-between gap-2 flex-wrap">
               <div>
-                <div class="text-sm font-bold text-slate-100">${escapeHtml(name)}</div>
-                <div class="font-mono text-xs text-slate-400 break-all">${escapeHtml(u.email)}${hardcoded}</div>
+                <div class="text-sm font-bold text-slate-900">${escapeHtml(name)}</div>
+                <div class="font-mono text-xs text-slate-600 break-all">${escapeHtml(u.email)}${hardcoded}</div>
               </div>
               <div class="flex items-center gap-1.5">${roleBadge(u.role)}${statusPill(u)}</div>
             </div>
-            <div class="text-xs text-slate-400">Courses: ${coursesLabel(u.courses)}</div>
-            <div class="grid grid-cols-2 gap-2 text-[11px] text-slate-500">
-              <div><span class="font-bold uppercase tracking-wider">Last login:</span> ${formatDate(u.last_login)}</div>
-              <div><span class="font-bold uppercase tracking-wider">Created:</span> ${formatDate(u.created_at)}</div>
+            <div class="text-xs text-slate-700">Courses: ${coursesLabel(u.courses)}</div>
+            <div class="grid grid-cols-2 gap-2 text-[11px] text-slate-600">
+              <div><span class="font-bold uppercase tracking-wider text-slate-700">Last login:</span> ${formatDate(u.last_login)}</div>
+              <div><span class="font-bold uppercase tracking-wider text-slate-700">Created:</span> ${formatDate(u.created_at)}</div>
             </div>
-            <div class="pt-2 border-t border-slate-800">${actionButtons(u)}</div>
+            <div class="pt-3 border-t border-slate-200">${actionButtons(u)}</div>
           </div>
         `;
       }).join('');
@@ -906,17 +953,17 @@ sitemap: false
 
     function renderMatrix() {
       const cell = (v) => {
-        if (v === '✅') return '<span class="text-emerald-400 text-lg font-bold">✅</span>';
-        if (v === '❌') return '<span class="text-rose-400 text-lg font-bold">❌</span>';
-        if (v.startsWith('❌')) return `<span class="text-rose-300 text-xs">${escapeHtml(v)}</span>`;
-        return `<span class="text-slate-400 text-xs">${escapeHtml(v)}</span>`;
+        if (v === '✅') return '<span class="text-emerald-600 text-lg font-bold">✅</span>';
+        if (v === '❌') return '<span class="text-rose-600 text-lg font-bold">❌</span>';
+        if (v.startsWith('❌')) return `<span class="text-rose-700 text-xs">${escapeHtml(v)}</span>`;
+        return `<span class="text-slate-700 text-xs">${escapeHtml(v)}</span>`;
       };
       $('matrix-tbody').innerHTML = PRIVILEGE_MATRIX.map((row, idx) => `
-        <tr class="border-b border-slate-800/60 ${idx % 2 === 0 ? 'bg-slate-900/30' : ''}">
-          <td class="py-3 pr-4 text-slate-200">${escapeHtml(row.capability)}</td>
-          <td class="py-3 pr-4 text-center">${cell(row.superuser)}</td>
-          <td class="py-3 pr-4 text-center">${cell(row.administrator)}</td>
-          <td class="py-3 pr-4 text-center">${cell(row.student)}</td>
+        <tr class="border-b border-slate-200 ${idx % 2 === 0 ? 'bg-white' : 'bg-slate-50'} hover:bg-indigo-50 transition">
+          <td class="px-4 py-3 text-slate-900 font-medium">${escapeHtml(row.capability)}</td>
+          <td class="px-4 py-3 text-center">${cell(row.superuser)}</td>
+          <td class="px-4 py-3 text-center">${cell(row.administrator)}</td>
+          <td class="px-4 py-3 text-center">${cell(row.student)}</td>
         </tr>
       `).join('');
     }
