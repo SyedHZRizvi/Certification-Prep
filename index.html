@@ -7,6 +7,23 @@ sitemap: false
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Baseurl rewriter: on Cloudflare we serve at root; on GitHub Pages
+       we're at /Certification-Prep/. Jekyll bakes /Certification-Prep into
+       relative_url links — strip the prefix when not running under it so
+       navigation works on both deployments. -->
+  <script>
+    (function () {
+      if (location.pathname.indexOf('/Certification-Prep/') === 0) return; // GitHub Pages — leave alone
+      function rewrite() {
+        document.querySelectorAll('a[href^="/Certification-Prep/"], a[href="/Certification-Prep"]').forEach(function (a) {
+          var h = a.getAttribute('href');
+          a.setAttribute('href', h.replace(/^\/Certification-Prep/, '') || '/');
+        });
+      }
+      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', rewrite);
+      else rewrite();
+    })();
+  </script>
   <title>The Cert Hub — PM · Cloud · AI · Cybersecurity · Supply Chain Certifications by Humayun Zafar</title>
   <meta name="description" content="A comprehensive, story-driven self-study hub for 20 industry-recognized certifications built to the teaching &amp; learning gold standard of Cornell, Harvard, Princeton, and Stanford — spanning Project Management (Scrum Master, PMP), Cloud (AWS CLF-C02, AWS SAA-C03, AZ-900, AZ-104), AI &amp; GenAI (AIF-C01, AI-102), Cybersecurity (CompTIA Security+ SY0-701), International Supply Chain (ASCM CSCP, CPIM, CLTD, ISM CPSM), AI-Based Digital Marketing (5-course ladder), Bitcoin &amp; Cryptocurrency (CBP / CBSA / UNic-aligned), and E-Commerce (Google / Adobe Commerce / Wharton-aligned). 178 modules, 60 full-length mock exams, 8,000+ practice questions. Designed and authored by Humayun Zafar, Toronto, Canada." />
   <meta name="author" content="Humayun Zafar" />
