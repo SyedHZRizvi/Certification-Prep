@@ -27,7 +27,9 @@ const SESSION_COOKIE = "ch_session";
 const PUBLIC_PREFIXES = [
   "/login",                  // login page
   "/change-password",        // forced password change page (must be reachable when must_change_password=true)
+  "/enroll",                 // public enrollment form (anyone can apply)
   "/api/auth/",              // login, change-password, logout, me, request-link, verify
+  "/api/enrollment/",        // public enrollment submission
   "/assets/",                // CSS, JS, fonts, images
   "/Resources/",             // resources hub (free preview material)
   "/00-Study-Plan/",         // study plan (free preview)

@@ -1,0 +1,871 @@
+---
+permalink: /enroll/
+sitemap: false
+layout: none
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enroll — The Cert Hub by Humayun Zafar</title>
+  <meta name="description" content="Apply to enroll in The Cert Hub. World-class certification preparation across Project Management, Cloud, AI, Cybersecurity, Supply Chain, AI Marketing, Bitcoin, and E-Commerce — engineered to the Cornell · Harvard · Princeton · Stanford gold standard." />
+  <meta name="author" content="Humayun Zafar" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🎓%3C/text%3E%3C/svg%3E" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: linear-gradient(180deg, #eef2ff 0%, #faf5ff 30%, #f8fafc 100%);
+      color: #0f172a;
+      margin: 0;
+      font-size: 17px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    .display { font-family: 'Plus Jakarta Sans', 'Inter', sans-serif; letter-spacing: -0.02em; }
+    .hero-grad {
+      background: linear-gradient(135deg, #4338ca 0%, #6366f1 20%, #8b5cf6 40%, #a855f7 55%, #d946ef 75%, #ec4899 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid rgba(226, 232, 240, 0.9);
+      border-radius: 18px;
+      box-shadow: 0 4px 14px -4px rgba(0,0,0,0.06), 0 1px 3px rgba(0,0,0,0.04);
+      transition: box-shadow .15s ease;
+      overflow: hidden;
+    }
+    .card-stripe {
+      height: 6px;
+      width: 100%;
+    }
+    .stripe-indigo  { background: linear-gradient(90deg, #4f46e5, #8b5cf6, #a855f7); }
+    .stripe-amber   { background: linear-gradient(90deg, #d97706, #f59e0b, #fbbf24); }
+    .stripe-emerald { background: linear-gradient(90deg, #047857, #10b981, #34d399); }
+    .stripe-rose    { background: linear-gradient(90deg, #be123c, #e11d48, #fb7185); }
+    .stripe-sky     { background: linear-gradient(90deg, #0369a1, #0ea5e9, #38bdf8); }
+    .card-body { padding: 28px 32px 32px; }
+    @media (max-width: 640px) { .card-body { padding: 22px 22px 26px; } }
+
+    .section-icon {
+      width: 48px; height: 48px;
+      display: inline-flex; align-items: center; justify-content: center;
+      border-radius: 14px; font-size: 22px; flex-shrink: 0;
+    }
+    .ic-indigo  { background: #eef2ff; color: #4338ca; }
+    .ic-amber   { background: #fef3c7; color: #b45309; }
+    .ic-emerald { background: #d1fae5; color: #047857; }
+    .ic-rose    { background: #ffe4e6; color: #be123c; }
+    .ic-sky     { background: #e0f2fe; color: #0369a1; }
+
+    h2.section-title { font-family: 'Plus Jakarta Sans', Inter, sans-serif; font-size: 22px; font-weight: 800; color: #0f172a; line-height: 1.25; letter-spacing: -0.015em; margin: 0; }
+    .section-sub { color: #64748b; font-size: 14.5px; margin-top: 4px; line-height: 1.55; }
+
+    label.field-label {
+      display: block;
+      color: #334155;
+      font-weight: 700;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin: 14px 0 6px;
+    }
+    label.field-label .req { color: #e11d48; margin-left: 4px; }
+    .input, .select, .textarea {
+      width: 100%;
+      background: #fff;
+      border: 2px solid #cbd5e1;
+      color: #0f172a;
+      font-size: 16px;
+      padding: 11px 14px;
+      border-radius: 10px;
+      transition: border-color .15s, box-shadow .15s, background .15s;
+      font-family: inherit;
+      line-height: 1.5;
+    }
+    .input::placeholder, .textarea::placeholder { color: #94a3b8; }
+    .input:focus, .select:focus, .textarea:focus {
+      outline: none;
+      border-color: #6366f1;
+      box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.14);
+      background: #fafbff;
+    }
+    .input:disabled, .select:disabled, .textarea:disabled {
+      background: #f1f5f9;
+      color: #94a3b8;
+      cursor: not-allowed;
+    }
+    .textarea { min-height: 110px; resize: vertical; }
+
+    .row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .row-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 18px; }
+    @media (max-width: 640px) { .row, .row-3 { grid-template-columns: 1fr; } }
+
+    .course-cat {
+      margin: 18px 0 8px;
+      font-weight: 800;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #4338ca;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .course-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 10px;
+    }
+    .course-chip {
+      display: flex; align-items: center; gap: 11px;
+      padding: 12px 14px;
+      border: 2px solid #e2e8f0;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all .14s;
+      background: #fff;
+      font-size: 14.5px;
+      color: #0f172a;
+      user-select: none;
+    }
+    .course-chip:hover { border-color: #c7d2fe; background: #f5f3ff; }
+    .course-chip input[type="checkbox"] {
+      width: 18px; height: 18px; accent-color: #6366f1; flex-shrink: 0; cursor: pointer;
+    }
+    .course-chip input:checked + .course-chip-body { font-weight: 700; }
+    .course-chip.is-checked { border-color: #6366f1; background: linear-gradient(135deg, #eef2ff, #f5f3ff); box-shadow: 0 4px 12px -4px rgba(99,102,241,0.25); }
+    .course-chip .ico { font-size: 18px; flex-shrink: 0; }
+
+    .toolbar-row {
+      display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
+      margin-bottom: 10px; padding: 12px 16px;
+      background: #f1f5f9; border-radius: 12px; font-size: 13.5px; color: #475569;
+    }
+    .tool-btn {
+      background: #fff;
+      border: 1px solid #cbd5e1;
+      padding: 6px 12px; border-radius: 8px;
+      font-size: 12.5px; font-weight: 700; color: #334155;
+      cursor: pointer; transition: all .14s;
+    }
+    .tool-btn:hover { background: #eef2ff; border-color: #6366f1; color: #4338ca; }
+    .selected-counter {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: #4338ca; color: #fff;
+      padding: 4px 10px; border-radius: 999px;
+      font-size: 12.5px; font-weight: 700;
+    }
+
+    /* Payment portal DRAFT */
+    .draft-banner {
+      display: flex; align-items: center; gap: 10px;
+      padding: 12px 16px;
+      background: linear-gradient(135deg, #fef3c7, #fef9c3);
+      border: 1px solid #fcd34d;
+      border-radius: 12px;
+      color: #78350f;
+      font-size: 13.5px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    .draft-banner .pulse {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: #d97706; animation: pulse 2s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(217,119,6,0.5); }
+      50%      { opacity: 0.7; box-shadow: 0 0 0 8px rgba(217,119,6,0); }
+    }
+    .draft-overlay {
+      position: relative;
+    }
+    .draft-overlay::after {
+      content: 'PAYMENT PORTAL — ACTIVATION PENDING';
+      position: absolute; top: 50%; left: 50%;
+      transform: translate(-50%, -50%) rotate(-8deg);
+      background: rgba(217, 119, 6, 0.92);
+      color: #fff;
+      font-weight: 800;
+      font-size: 14px;
+      letter-spacing: 0.12em;
+      padding: 10px 18px;
+      border-radius: 8px;
+      box-shadow: 0 8px 24px -6px rgba(0,0,0,0.25);
+      pointer-events: none;
+      z-index: 2;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .draft-overlay .draft-inner { opacity: 0.45; pointer-events: none; filter: grayscale(0.3); }
+
+    /* Acceptance checkboxes */
+    .accept-row {
+      display: flex; gap: 12px;
+      padding: 14px 16px;
+      background: #f8fafc;
+      border: 2px solid #e2e8f0;
+      border-radius: 12px;
+      margin: 10px 0;
+      font-size: 14.5px;
+      line-height: 1.6;
+      color: #1e293b;
+      transition: border-color .14s, background .14s;
+    }
+    .accept-row.is-checked { border-color: #10b981; background: #ecfdf5; }
+    .accept-row input[type="checkbox"] {
+      width: 20px; height: 20px; flex-shrink: 0; accent-color: #10b981; cursor: pointer;
+      margin-top: 2px;
+    }
+
+    /* Disclaimer block */
+    .disclaimer {
+      padding: 18px 22px;
+      background: #fef2f2;
+      border-left: 4px solid #ef4444;
+      border-radius: 10px;
+      font-size: 14px;
+      line-height: 1.7;
+      color: #7f1d1d;
+    }
+    .disclaimer h3 {
+      margin: 0 0 8px;
+      font-size: 15px;
+      font-weight: 800;
+      color: #991b1b;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .disclaimer p { margin: 8px 0; }
+    .disclaimer strong { color: #7f1d1d; }
+
+    /* CTA button */
+    .btn-submit {
+      width: 100%;
+      display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+      background: linear-gradient(135deg, #4f46e5, #7c3aed, #a855f7);
+      color: #fff;
+      font-weight: 800;
+      padding: 16px 24px;
+      border: 0;
+      border-radius: 14px;
+      font-size: 17px;
+      cursor: pointer;
+      box-shadow: 0 12px 28px -8px rgba(124,58,237,0.55);
+      transition: transform .12s, box-shadow .12s, filter .12s;
+      letter-spacing: 0.01em;
+    }
+    .btn-submit:hover:not(:disabled) {
+      transform: translateY(-2px);
+      box-shadow: 0 18px 36px -10px rgba(124,58,237,0.6);
+      filter: brightness(1.05);
+    }
+    .btn-submit:disabled { opacity: .55; cursor: wait; }
+
+    /* Success state */
+    .success-card {
+      text-align: center;
+      padding: 60px 40px;
+    }
+    .success-emoji { font-size: 80px; line-height: 1; animation: float 3s ease-in-out infinite; }
+    @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+
+    /* Top bar */
+    .topbar {
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: saturate(150%) blur(10px);
+      border-bottom: 1px solid #e2e8f0;
+      padding: 14px 20px;
+      position: sticky; top: 0; z-index: 50;
+    }
+    .topbar-inner { max-width: 1400px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
+    .top-brand { font-weight: 800; font-size: 17px; color: #0f172a; text-decoration: none; display: flex; align-items: center; gap: 8px; }
+    .top-back {
+      background: #fff; border: 1px solid #cbd5e1; color: #334155;
+      padding: 8px 14px; border-radius: 10px; font-weight: 700; font-size: 13.5px;
+      text-decoration: none; transition: all .14s; display: inline-flex; align-items: center; gap: 6px;
+    }
+    .top-back:hover { background: #eef2ff; border-color: #6366f1; color: #4338ca; }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      padding: 56px 20px 28px;
+      max-width: 920px;
+      margin: 0 auto;
+    }
+    .hero .eyebrow { display: inline-block; padding: 6px 14px; background: #eef2ff; color: #4338ca; border-radius: 999px; font-size: 12.5px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 18px; border: 1px solid #c7d2fe; }
+    .hero h1 { font-size: clamp(36px, 5vw, 56px); font-weight: 900; line-height: 1.08; margin: 0 0 14px; letter-spacing: -0.025em; }
+    .hero .lead { font-size: 18px; color: #475569; max-width: 660px; margin: 0 auto; line-height: 1.65; }
+
+    .grid-2 { display: grid; grid-template-columns: 2fr 1fr; gap: 28px; align-items: start; }
+    @media (max-width: 1024px) { .grid-2 { grid-template-columns: 1fr; } }
+
+    /* Summary sidebar */
+    .summary { position: sticky; top: 100px; }
+    @media (max-width: 1024px) { .summary { position: static; } }
+    .summary-list { margin: 12px 0; padding: 0; list-style: none; max-height: 280px; overflow-y: auto; }
+    .summary-list li { padding: 8px 0; border-bottom: 1px solid #e2e8f0; font-size: 14px; color: #1e293b; display: flex; gap: 8px; align-items: center; }
+    .summary-list li:last-child { border-bottom: 0; }
+    .summary-list .ico { font-size: 16px; }
+    .summary-empty { text-align: center; color: #94a3b8; font-size: 13.5px; padding: 18px 0; font-style: italic; }
+    .summary-total {
+      padding: 14px 16px;
+      background: linear-gradient(135deg, #4f46e5, #7c3aed);
+      color: #fff;
+      border-radius: 12px;
+      text-align: center;
+      margin-top: 12px;
+    }
+    .summary-total .small { font-size: 12px; opacity: 0.85; letter-spacing: 0.06em; text-transform: uppercase; }
+    .summary-total .big { font-size: 30px; font-weight: 900; line-height: 1.1; margin: 4px 0; }
+    .summary-total .note { font-size: 12px; opacity: 0.85; line-height: 1.45; }
+
+    .err-banner {
+      background: #fef2f2; border: 2px solid #fecaca; color: #991b1b;
+      padding: 12px 16px; border-radius: 10px; font-size: 14px; margin: 10px 0;
+      display: none;
+    }
+    .err-banner.show { display: block; }
+  </style>
+</head>
+<body>
+
+  <!-- ============== TOP BAR ============== -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="/" class="top-brand">
+        <span style="font-size: 22px;">🎓</span>
+        <span>The Cert Hub</span>
+      </a>
+      <a href="/" class="top-back">← Back to homepage</a>
+    </div>
+  </header>
+
+  <!-- ============== HERO ============== -->
+  <section class="hero">
+    <div class="eyebrow">— Enrollment Application —</div>
+    <h1 class="display"><span class="hero-grad">Begin your journey.</span></h1>
+    <p class="lead">Complete this application to enroll in any of our 20 industry-recognized certification tracks — engineered to the teaching &amp; learning gold standard of <strong>Cornell · Harvard · Princeton · Stanford</strong>. The site owner reviews every application personally and responds within 24–48 hours with pricing and next steps.</p>
+  </section>
+
+  <!-- ============== MAIN FORM + SUMMARY ============== -->
+  <main style="max-width: 1400px; margin: 0 auto; padding: 12px 20px 80px;">
+    <div class="grid-2">
+
+      <!-- =========== FORM (left column) =========== -->
+      <form id="enroll-form" novalidate>
+
+        <!-- Personal info -->
+        <div class="card" style="margin-bottom: 24px;">
+          <div class="card-stripe stripe-indigo"></div>
+          <div class="card-body">
+            <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 14px;">
+              <span class="section-icon ic-indigo">👤</span>
+              <div>
+                <h2 class="section-title">Personal information</h2>
+                <p class="section-sub">Tell us about yourself. All fields marked with <span style="color: #e11d48;">*</span> are required.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div>
+                <label class="field-label" for="fullName">Full name <span class="req">*</span></label>
+                <input class="input" type="text" id="fullName" name="fullName" required autocomplete="name" placeholder="Jane Doe" />
+              </div>
+              <div>
+                <label class="field-label" for="email">Email address <span class="req">*</span></label>
+                <input class="input" type="email" id="email" name="email" required autocomplete="email" placeholder="you@example.com" />
+              </div>
+            </div>
+            <div class="row">
+              <div>
+                <label class="field-label" for="phone">Phone (with country code) <span class="req">*</span></label>
+                <input class="input" type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="+1 416 555 0188" />
+              </div>
+              <div>
+                <label class="field-label" for="dateOfBirth">Date of birth</label>
+                <input class="input" type="date" id="dateOfBirth" name="dateOfBirth" autocomplete="bday" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Address -->
+        <div class="card" style="margin-bottom: 24px;">
+          <div class="card-stripe stripe-sky"></div>
+          <div class="card-body">
+            <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 14px;">
+              <span class="section-icon ic-sky">📍</span>
+              <div>
+                <h2 class="section-title">Address</h2>
+                <p class="section-sub">Country is required so we can route your application correctly. Other address fields are optional.</p>
+              </div>
+            </div>
+            <label class="field-label" for="address">Street address</label>
+            <input class="input" type="text" id="address" name="address" autocomplete="street-address" placeholder="Apartment, suite, street" />
+            <div class="row-3">
+              <div>
+                <label class="field-label" for="city">City</label>
+                <input class="input" type="text" id="city" name="city" autocomplete="address-level2" placeholder="Toronto" />
+              </div>
+              <div>
+                <label class="field-label" for="postalCode">Postal / ZIP code</label>
+                <input class="input" type="text" id="postalCode" name="postalCode" autocomplete="postal-code" placeholder="M5V 2T6" />
+              </div>
+              <div>
+                <label class="field-label" for="country">Country <span class="req">*</span></label>
+                <input class="input" type="text" id="country" name="country" required autocomplete="country-name" placeholder="Canada" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education & Professional -->
+        <div class="card" style="margin-bottom: 24px;">
+          <div class="card-stripe stripe-emerald"></div>
+          <div class="card-body">
+            <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 14px;">
+              <span class="section-icon ic-emerald">🎓</span>
+              <div>
+                <h2 class="section-title">Education &amp; professional background</h2>
+                <p class="section-sub">Optional but recommended — helps us tailor study guidance to your starting point.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div>
+                <label class="field-label" for="highestQualification">Highest qualification</label>
+                <select class="select" id="highestQualification" name="highestQualification">
+                  <option value="">Select…</option>
+                  <option>High school</option>
+                  <option>Diploma</option>
+                  <option>Bachelor's degree</option>
+                  <option>Master's degree</option>
+                  <option>Doctoral degree</option>
+                  <option>Professional certification</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div>
+                <label class="field-label" for="fieldOfStudy">Field of study</label>
+                <input class="input" type="text" id="fieldOfStudy" name="fieldOfStudy" placeholder="e.g. Computer Science, Business, Engineering" />
+              </div>
+            </div>
+            <div class="row">
+              <div>
+                <label class="field-label" for="currentEmployer">Current employer</label>
+                <input class="input" type="text" id="currentEmployer" name="currentEmployer" autocomplete="organization" placeholder="e.g. Acme Corp" />
+              </div>
+              <div>
+                <label class="field-label" for="currentRole">Current role / job title</label>
+                <input class="input" type="text" id="currentRole" name="currentRole" autocomplete="organization-title" placeholder="e.g. Project Manager, Cloud Engineer" />
+              </div>
+            </div>
+            <div class="row">
+              <div>
+                <label class="field-label" for="yearsExperience">Years of professional experience</label>
+                <select class="select" id="yearsExperience" name="yearsExperience">
+                  <option value="">Select…</option>
+                  <option>Less than 1 year</option>
+                  <option>1–3 years</option>
+                  <option>3–5 years</option>
+                  <option>5–10 years</option>
+                  <option>10+ years</option>
+                </select>
+              </div>
+              <div>
+                <label class="field-label" for="referralSource">How did you hear about us?</label>
+                <select class="select" id="referralSource" name="referralSource">
+                  <option value="">Select…</option>
+                  <option>Search engine</option>
+                  <option>LinkedIn / social media</option>
+                  <option>Friend or colleague referral</option>
+                  <option>Online community (Reddit, Discord, etc.)</option>
+                  <option>Conference or event</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course selection -->
+        <div class="card" style="margin-bottom: 24px;">
+          <div class="card-stripe stripe-amber"></div>
+          <div class="card-body">
+            <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 14px;">
+              <span class="section-icon ic-amber">📚</span>
+              <div>
+                <h2 class="section-title">Choose your courses</h2>
+                <p class="section-sub">Select one or more tracks. Enrolling in <strong>three or more courses</strong> unlocks progressive bundle discounts.</p>
+              </div>
+            </div>
+
+            <div class="toolbar-row">
+              <button type="button" class="tool-btn" id="selectAllBtn">✓ Select all 20</button>
+              <button type="button" class="tool-btn" id="clearAllBtn">✕ Clear selection</button>
+              <span style="flex: 1;"></span>
+              <span class="selected-counter" id="selectedCounter">0 selected</span>
+            </div>
+
+            <!-- Course groups populated by JS below -->
+            <div id="course-groups"></div>
+
+            <div class="row" style="margin-top: 18px;">
+              <div>
+                <label class="field-label" for="targetExamDate">Target exam date (optional)</label>
+                <input class="input" type="date" id="targetExamDate" name="targetExamDate" />
+              </div>
+              <div>
+                <label class="field-label" for="motivation">Why are you taking these certifications?</label>
+                <textarea class="textarea" id="motivation" name="motivation" placeholder="A few sentences about your goals: career change, promotion, employer requirement, personal interest, etc."></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Payment Portal (DRAFT — disabled) -->
+        <div class="card" style="margin-bottom: 24px;">
+          <div class="card-stripe stripe-rose"></div>
+          <div class="card-body">
+            <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 14px;">
+              <span class="section-icon ic-rose">💳</span>
+              <div>
+                <h2 class="section-title">Payment</h2>
+                <p class="section-sub">After we review your application, we'll send pricing details and an activated payment link. <strong>You do not need to enter payment details now.</strong></p>
+              </div>
+            </div>
+
+            <div class="draft-banner">
+              <span class="pulse"></span>
+              <span><strong>Draft mode.</strong> The payment portal is not yet active. No card information is collected, stored, or transmitted from this page.</span>
+            </div>
+
+            <div class="draft-overlay">
+              <div class="draft-inner">
+                <label class="field-label" for="ccName">Cardholder name</label>
+                <input class="input" type="text" id="ccName" name="ccName" placeholder="As shown on card" disabled />
+                <div class="row">
+                  <div>
+                    <label class="field-label" for="ccNumber">Card number</label>
+                    <input class="input" type="text" id="ccNumber" name="ccNumber" placeholder="•••• •••• •••• ••••" disabled />
+                  </div>
+                  <div>
+                    <label class="field-label" for="ccExp">Expiry</label>
+                    <input class="input" type="text" id="ccExp" name="ccExp" placeholder="MM / YY" disabled />
+                  </div>
+                </div>
+                <div class="row">
+                  <div>
+                    <label class="field-label" for="ccCvc">CVC</label>
+                    <input class="input" type="text" id="ccCvc" name="ccCvc" placeholder="•••" disabled />
+                  </div>
+                  <div>
+                    <label class="field-label" for="ccZip">Billing postal code</label>
+                    <input class="input" type="text" id="ccZip" name="ccZip" placeholder="Billing postal / ZIP" disabled />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <p style="margin: 16px 0 0; font-size: 13.5px; color: #64748b; line-height: 1.6;">
+              <strong>Note:</strong> The actual examination fee charged by the issuing certification body (Scrum.org, PMI, AWS, Microsoft, CompTIA, ASCM, ISM, HubSpot, Google, Meta, DMI, OMCP, CXL, C4, BTA, UNic, Adobe, Wharton, Salesforce, etc.) is <strong>separate</strong> from your enrollment fee with The Cert Hub. You will register for the real exam directly with the issuing body and pay their fee on their portal.
+            </p>
+          </div>
+        </div>
+
+        <!-- Disclaimer -->
+        <div class="card" style="margin-bottom: 24px;">
+          <div class="card-stripe stripe-rose"></div>
+          <div class="card-body">
+            <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 14px;">
+              <span class="section-icon ic-rose">⚖️</span>
+              <div>
+                <h2 class="section-title">Important: please read before submitting</h2>
+                <p class="section-sub">By submitting this application you confirm that you have read and accepted the following.</p>
+              </div>
+            </div>
+
+            <div class="disclaimer">
+              <h3>No pass guarantee · Liability disclaimer</h3>
+              <p>Enrolling in any course offered by <strong>The Cert Hub</strong> does <strong>not</strong> guarantee that you will pass any certification examination.</p>
+              <p>What we <em>do</em> stand behind is the quality and completeness of the materials. Every course is engineered to the same teaching-and-learning gold standard as <strong>Cornell, Harvard, Princeton, and Stanford</strong> graduate programs. Students who follow the study plan in full — completing every module, scoring <strong>85% or higher consistently</strong> on all practice and final mock exams before booking the real sitting, and faithfully reviewing every missed question — historically have an <strong>overwhelmingly high probability of passing on the first attempt, and a near-certain probability by the second attempt</strong>.</p>
+              <p>However, we have no way of knowing how diligently you actually studied, how carefully you managed your time on exam day, how you selected your answers under pressure, or what physical, mental, or emotional state you brought into the testing room. The real exam outcome depends on the test-taker's preparation, focus, judgment, and decisions in the moment — variables that are <strong>entirely outside our control</strong>.</p>
+              <p>Accordingly, <strong>The Cert Hub, its author Humayun Zafar, and any affiliated entities make no warranty or guarantee, express or implied</strong>, that any enrolled student will pass any certification examination, on any attempt. Enrollment fees cover access to study materials only. We offer no refund, money-back guarantee, retake reimbursement, or compensation in the event of exam failure, and accept <strong>no liability — direct, indirect, incidental, or consequential</strong> — for exam outcomes, retake fees, registration fees paid to certification bodies, lost wages, missed deadlines, career outcomes, or any other consequence arising from preparing for or sitting any certification examination. By enrolling, you acknowledge that the certification result rests solely with you and the issuing certification body.</p>
+            </div>
+
+            <label class="accept-row" id="row-disclaimer">
+              <input type="checkbox" id="agreeDisclaimer" required />
+              <span><strong>I understand and accept the no-pass-guarantee &amp; liability disclaimer above.</strong> I acknowledge that my certification outcome rests with me and the issuing certification body, and that The Cert Hub accepts no liability for the exam result.</span>
+            </label>
+
+            <label class="accept-row" id="row-terms">
+              <input type="checkbox" id="agreeTerms" required />
+              <span>I confirm that the information I have provided is accurate and complete, and I agree to the <strong>Terms of Use</strong> and <strong>Privacy Policy</strong> of The Cert Hub. I understand that submitting this application does not by itself create an account or grant access; the site owner will review my application and contact me within 24–48 hours.</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Submit -->
+        <div id="err-banner" class="err-banner"></div>
+        <button type="submit" class="btn-submit" id="submitBtn">
+          <span id="submitLabel">🚀 Submit my enrollment application</span>
+        </button>
+        <p style="text-align: center; font-size: 12.5px; color: #64748b; margin-top: 14px; line-height: 1.5;">
+          By submitting, you accept the disclaimers above. We respond to every application personally within 24–48 hours.
+        </p>
+      </form>
+
+      <!-- =========== ORDER SUMMARY (right column) =========== -->
+      <aside class="summary">
+        <div class="card">
+          <div class="card-stripe stripe-indigo"></div>
+          <div class="card-body">
+            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 4px;">
+              <span class="section-icon ic-indigo" style="width: 38px; height: 38px; font-size: 18px;">📋</span>
+              <h2 class="section-title" style="font-size: 18px;">Your selection</h2>
+            </div>
+            <p class="section-sub" style="font-size: 13px;">Updates as you choose courses.</p>
+
+            <div id="summary-courses">
+              <p class="summary-empty">No courses selected yet.</p>
+            </div>
+
+            <div class="summary-total">
+              <div class="small">Selected</div>
+              <div class="big" id="summary-count">0</div>
+              <div class="note">Pricing &amp; bundle discounts will be shared with you by the site owner within 24–48 hours.</div>
+            </div>
+
+            <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 18px 0;" />
+
+            <div style="font-size: 13px; color: #475569; line-height: 1.65;">
+              <strong style="color: #1e293b;">What happens next:</strong>
+              <ol style="margin: 8px 0 0; padding-left: 22px;">
+                <li>You submit this application.</li>
+                <li>The owner reviews it personally.</li>
+                <li>You receive an email with pricing &amp; an activated payment link.</li>
+                <li>Once payment clears, your account is created and you can sign in.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top: 18px;">
+          <div class="card-stripe stripe-emerald"></div>
+          <div class="card-body" style="text-align: center;">
+            <span class="section-icon ic-emerald" style="margin: 0 auto 10px;">🏛️</span>
+            <h3 style="font-family: 'Plus Jakarta Sans', Inter, sans-serif; font-size: 16px; font-weight: 800; margin: 0 0 6px; color: #064e3b;">Gold-standard pedagogy</h3>
+            <p style="font-size: 13.5px; color: #475569; margin: 0; line-height: 1.6;">Every course engineered to the same teaching &amp; learning standard as Cornell, Harvard, Princeton, and Stanford.</p>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- ============== SUCCESS STATE (hidden initially) ============== -->
+  <div id="success-state" style="display: none; max-width: 720px; margin: 60px auto; padding: 0 20px;">
+    <div class="card">
+      <div class="card-stripe stripe-emerald"></div>
+      <div class="card-body success-card">
+        <div class="success-emoji">🎉</div>
+        <h2 class="display" style="font-size: 36px; font-weight: 900; margin: 18px 0 8px; color: #064e3b;">Application received!</h2>
+        <p style="font-size: 18px; color: #047857; font-weight: 600; margin: 0 0 18px;">Thank you for your interest in The Cert Hub.</p>
+        <p style="font-size: 15.5px; color: #475569; line-height: 1.7; max-width: 540px; margin: 0 auto 24px;">
+          Your application has been received and an email notification has been sent to the site owner. You'll hear back personally within <strong>24–48 hours</strong> with pricing details and next steps. Please also check your spam folder in case the reply lands there.
+        </p>
+        <p style="font-size: 13.5px; color: #94a3b8; margin: 0 0 24px;">Submission reference: <code id="submission-id" style="background: #f1f5f9; padding: 2px 10px; border-radius: 6px; color: #4338ca; font-weight: 700;"></code></p>
+        <a href="/" class="btn-submit" style="text-decoration: none; max-width: 320px;">🏠 Back to homepage</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // ===== COURSES DATA (mirror of functions/lib/courses.js) =====
+    const COURSES = [
+      // Project Management
+      { id: "01-Scrum-Master",                          slug: "Scrum Master (PSM I)",                 icon: "🏃", category: "Project Management" },
+      { id: "02-PMP",                                   slug: "PMP",                                  icon: "🧭", category: "Project Management" },
+      // Cloud · AI · Cybersecurity
+      { id: "03-AWS-Cloud-Practitioner",                slug: "AWS Cloud Practitioner (CLF-C02)",     icon: "☁️", category: "Cloud · AI · Cybersecurity" },
+      { id: "04-AWS-Solutions-Architect-Associate",     slug: "AWS Solutions Architect Assoc (SAA-C03)", icon: "🏗️", category: "Cloud · AI · Cybersecurity" },
+      { id: "07-AWS-AI-Practitioner",                   slug: "AWS AI Practitioner (AIF-C01)",        icon: "🤖", category: "Cloud · AI · Cybersecurity" },
+      { id: "05-Azure-Fundamentals",                    slug: "Azure Fundamentals (AZ-900)",          icon: "🌥️", category: "Cloud · AI · Cybersecurity" },
+      { id: "06-Azure-Administrator",                   slug: "Azure Administrator (AZ-104)",         icon: "🛠️", category: "Cloud · AI · Cybersecurity" },
+      { id: "08-Azure-AI-Engineer",                     slug: "Azure AI Engineer (AI-102)",           icon: "🧠", category: "Cloud · AI · Cybersecurity" },
+      { id: "09-CompTIA-Security-Plus",                 slug: "CompTIA Security+ (SY0-701)",          icon: "🛡️", category: "Cloud · AI · Cybersecurity" },
+      // Supply Chain
+      { id: "10-ASCM-CSCP",                             slug: "ASCM CSCP",                            icon: "📦", category: "Supply Chain & Operations" },
+      { id: "11-ASCM-CPIM",                             slug: "ASCM CPIM",                            icon: "🏭", category: "Supply Chain & Operations" },
+      { id: "12-ASCM-CLTD",                             slug: "ASCM CLTD",                            icon: "🚛", category: "Supply Chain & Operations" },
+      { id: "13-ISM-CPSM",                              slug: "ISM CPSM",                             icon: "🛍️", category: "Supply Chain & Operations" },
+      // AI Marketing
+      { id: "14-AI-Marketing-Foundations",              slug: "AI Marketing — Foundations",           icon: "📣", category: "AI-Based Digital Marketing" },
+      { id: "15-AI-Marketing-Practitioner",             slug: "AI Marketing — Practitioner",          icon: "🎯", category: "AI-Based Digital Marketing" },
+      { id: "16-AI-Marketing-Strategist",               slug: "AI Marketing — Strategist",            icon: "📈", category: "AI-Based Digital Marketing" },
+      { id: "17-AI-Marketing-Entrepreneur",             slug: "AI Marketing — Entrepreneur",          icon: "💼", category: "AI-Based Digital Marketing" },
+      { id: "18-AI-Marketing-Capstone-Portfolio",       slug: "AI Marketing — Capstone Portfolio",    icon: "🏆", category: "AI-Based Digital Marketing" },
+      // Bitcoin · E-Commerce
+      { id: "19-Bitcoin-Cryptocurrency",                slug: "Bitcoin & Cryptocurrency",             icon: "₿",  category: "Bitcoin & E-Commerce" },
+      { id: "20-E-Commerce",                            slug: "E-Commerce",                           icon: "🛒", category: "Bitcoin & E-Commerce" },
+    ];
+
+    // ===== RENDER COURSE GROUPS =====
+    const groupsEl = document.getElementById('course-groups');
+    const groups = {};
+    COURSES.forEach(c => { (groups[c.category] = groups[c.category] || []).push(c); });
+    let html = '';
+    for (const cat in groups) {
+      html += `<div class="course-cat"><span>${escapeHtml(cat)}</span><span style="color:#94a3b8;font-weight:600;">· ${groups[cat].length} course${groups[cat].length===1?'':'s'}</span></div>`;
+      html += `<div class="course-grid">`;
+      groups[cat].forEach(c => {
+        html += `<label class="course-chip" data-course-id="${c.id}">
+          <input type="checkbox" name="courses" value="${c.id}" />
+          <span class="ico">${c.icon}</span>
+          <span class="course-chip-body">${escapeHtml(c.slug)}</span>
+        </label>`;
+      });
+      html += `</div>`;
+    }
+    groupsEl.innerHTML = html;
+
+    // ===== STATE =====
+    const counter = document.getElementById('selectedCounter');
+    const summaryCourses = document.getElementById('summary-courses');
+    const summaryCount = document.getElementById('summary-count');
+    const checkboxes = document.querySelectorAll('input[name="courses"]');
+
+    function refreshSelection() {
+      const selected = Array.from(checkboxes).filter(c => c.checked);
+      const n = selected.length;
+      counter.textContent = `${n} selected`;
+      summaryCount.textContent = String(n);
+      // Highlight chips
+      document.querySelectorAll('.course-chip').forEach(ch => {
+        const cb = ch.querySelector('input');
+        ch.classList.toggle('is-checked', cb.checked);
+      });
+      // Update summary list
+      if (n === 0) {
+        summaryCourses.innerHTML = `<p class="summary-empty">No courses selected yet.</p>`;
+      } else {
+        summaryCourses.innerHTML = `<ul class="summary-list">${
+          selected.map(cb => {
+            const course = COURSES.find(c => c.id === cb.value);
+            return `<li><span class="ico">${course.icon}</span><span>${escapeHtml(course.slug)}</span></li>`;
+          }).join('')
+        }</ul>`;
+      }
+    }
+    checkboxes.forEach(cb => cb.addEventListener('change', refreshSelection));
+
+    // ===== TOOLBAR =====
+    document.getElementById('selectAllBtn').addEventListener('click', () => {
+      checkboxes.forEach(cb => cb.checked = true);
+      refreshSelection();
+    });
+    document.getElementById('clearAllBtn').addEventListener('click', () => {
+      checkboxes.forEach(cb => cb.checked = false);
+      refreshSelection();
+    });
+
+    // ===== ACCEPT ROW VISUAL FEEDBACK =====
+    ['agreeTerms', 'agreeDisclaimer'].forEach(id => {
+      const cb = document.getElementById(id);
+      const row = cb.closest('.accept-row');
+      cb.addEventListener('change', () => row.classList.toggle('is-checked', cb.checked));
+    });
+
+    // ===== SUBMIT =====
+    const form = document.getElementById('enroll-form');
+    const submitBtn = document.getElementById('submitBtn');
+    const submitLabel = document.getElementById('submitLabel');
+    const errBanner = document.getElementById('err-banner');
+
+    function showError(msg) {
+      errBanner.textContent = msg;
+      errBanner.classList.add('show');
+      errBanner.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+    function clearError() { errBanner.classList.remove('show'); errBanner.textContent = ''; }
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      clearError();
+
+      const data = {
+        fullName: document.getElementById('fullName').value.trim(),
+        email: document.getElementById('email').value.trim(),
+        phone: document.getElementById('phone').value.trim(),
+        dateOfBirth: document.getElementById('dateOfBirth').value.trim(),
+        address: document.getElementById('address').value.trim(),
+        city: document.getElementById('city').value.trim(),
+        postalCode: document.getElementById('postalCode').value.trim(),
+        country: document.getElementById('country').value.trim(),
+        highestQualification: document.getElementById('highestQualification').value.trim(),
+        fieldOfStudy: document.getElementById('fieldOfStudy').value.trim(),
+        currentEmployer: document.getElementById('currentEmployer').value.trim(),
+        currentRole: document.getElementById('currentRole').value.trim(),
+        yearsExperience: document.getElementById('yearsExperience').value.trim(),
+        referralSource: document.getElementById('referralSource').value.trim(),
+        targetExamDate: document.getElementById('targetExamDate').value.trim(),
+        motivation: document.getElementById('motivation').value.trim(),
+        courses: Array.from(checkboxes).filter(c => c.checked).map(c => c.value),
+        agreeTerms: document.getElementById('agreeTerms').checked,
+        agreeDisclaimer: document.getElementById('agreeDisclaimer').checked,
+      };
+
+      // Client-side validation
+      if (!data.fullName) return showError("Please enter your full name.");
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) return showError("Please enter a valid email address.");
+      if (!data.phone) return showError("Please enter your phone number.");
+      if (!data.country) return showError("Please enter your country.");
+      if (data.courses.length === 0) return showError("Please select at least one course.");
+      if (!data.agreeDisclaimer) return showError("Please accept the liability disclaimer to proceed.");
+      if (!data.agreeTerms) return showError("Please accept the terms to proceed.");
+
+      submitBtn.disabled = true;
+      submitLabel.textContent = '⏳ Submitting…';
+
+      try {
+        const res = await fetch('/api/enrollment/submit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data),
+        });
+        const result = await res.json().catch(() => ({}));
+
+        if (res.ok && result.ok) {
+          // Success
+          document.querySelector('main').style.display = 'none';
+          document.getElementById('success-state').style.display = 'block';
+          document.getElementById('submission-id').textContent = result.submission_id || '—';
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        } else {
+          showError(result.error || `Submission failed (HTTP ${res.status}). Please try again.`);
+        }
+      } catch (err) {
+        showError("Network error. Please check your connection and try again.");
+      } finally {
+        submitBtn.disabled = false;
+        submitLabel.textContent = '🚀 Submit my enrollment application';
+      }
+    });
+
+    function escapeHtml(s) {
+      return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;').replace(/'/g, '&#039;');
+    }
+
+    refreshSelection();
+  </script>
+</body>
+</html>
