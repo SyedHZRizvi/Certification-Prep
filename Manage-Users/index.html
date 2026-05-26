@@ -1,6 +1,7 @@
 ---
 permalink: /Manage-Users/
 sitemap: false
+layout: none
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -229,6 +230,49 @@ sitemap: false
     </div>
 
     <!-- ============================================================ -->
+    <!-- ALL USERS TABLE (top — primary admin view)                   -->
+    <!-- ============================================================ -->
+    <section id="users-section" class="hidden rounded-2xl bg-white border border-slate-200 shadow-md overflow-hidden">
+      <div class="accent-stripe stripe-emerald"></div>
+      <div class="p-8 md:p-10">
+        <div class="flex items-center justify-between mb-7 gap-4 flex-wrap">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-2xl flex-shrink-0">👥</div>
+            <div>
+              <h2 class="text-2xl font-extrabold text-slate-900">All users</h2>
+              <p class="text-slate-600 text-sm mt-1"><span id="users-count" class="font-bold text-slate-900">0</span> users in the system. Use the action buttons on the right of each row to edit, reset password, disable, or delete.</p>
+            </div>
+          </div>
+          <button id="refresh-btn" class="text-sm font-semibold text-slate-700 hover:text-slate-900 px-4 py-2 rounded-lg bg-white border border-slate-300 hover:bg-slate-100 shadow-sm transition">↻ Refresh</button>
+        </div>
+
+        <!-- Desktop table -->
+        <div class="hidden md:block overflow-x-auto rounded-lg border border-slate-200">
+          <table class="w-full text-sm">
+            <thead>
+              <tr class="text-left text-xs font-bold uppercase tracking-wider text-slate-900 bg-slate-100 border-b border-slate-200">
+                <th class="px-4 py-3">Email</th>
+                <th class="px-4 py-3">Name</th>
+                <th class="px-4 py-3">Role</th>
+                <th class="px-4 py-3">Status</th>
+                <th class="px-4 py-3">Courses</th>
+                <th class="px-4 py-3">Last login</th>
+                <th class="px-4 py-3">Created</th>
+                <th class="px-4 py-3 text-right">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="users-tbody"></tbody>
+          </table>
+        </div>
+
+        <!-- Mobile card list -->
+        <div id="users-cards" class="md:hidden space-y-3"></div>
+
+        <p id="users-empty" class="hidden text-sm text-slate-500 italic text-center py-8">No users yet. Use the "Add a new user" form below ↓ to create one.</p>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
     <!-- CHANGE MY PASSWORD (collapsible, collapsed by default)       -->
     <!-- ============================================================ -->
     <section id="change-pw-section" class="hidden rounded-2xl bg-white border border-slate-200 shadow-md overflow-hidden">
@@ -360,49 +404,6 @@ sitemap: false
             </button>
           </div>
         </form>
-      </div>
-    </section>
-
-    <!-- ============================================================ -->
-    <!-- USERS TABLE                                                  -->
-    <!-- ============================================================ -->
-    <section id="users-section" class="hidden rounded-2xl bg-white border border-slate-200 shadow-md overflow-hidden">
-      <div class="accent-stripe stripe-emerald"></div>
-      <div class="p-8 md:p-10">
-        <div class="flex items-center justify-between mb-7 gap-4 flex-wrap">
-          <div class="flex items-center gap-4">
-            <div class="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-2xl flex-shrink-0">👥</div>
-            <div>
-              <h2 class="text-2xl font-extrabold text-slate-900">All users</h2>
-              <p class="text-slate-600 text-sm mt-1"><span id="users-count" class="font-bold text-slate-900">0</span> users in the system.</p>
-            </div>
-          </div>
-          <button id="refresh-btn" class="text-sm font-semibold text-slate-700 hover:text-slate-900 px-4 py-2 rounded-lg bg-white border border-slate-300 hover:bg-slate-100 shadow-sm transition">↻ Refresh</button>
-        </div>
-
-        <!-- Desktop table -->
-        <div class="hidden md:block overflow-x-auto rounded-lg border border-slate-200">
-          <table class="w-full text-sm">
-            <thead>
-              <tr class="text-left text-xs font-bold uppercase tracking-wider text-slate-900 bg-slate-100 border-b border-slate-200">
-                <th class="px-4 py-3">Email</th>
-                <th class="px-4 py-3">Name</th>
-                <th class="px-4 py-3">Role</th>
-                <th class="px-4 py-3">Status</th>
-                <th class="px-4 py-3">Courses</th>
-                <th class="px-4 py-3">Last login</th>
-                <th class="px-4 py-3">Created</th>
-                <th class="px-4 py-3 text-right">Actions</th>
-              </tr>
-            </thead>
-            <tbody id="users-tbody"></tbody>
-          </table>
-        </div>
-
-        <!-- Mobile card list -->
-        <div id="users-cards" class="md:hidden space-y-3"></div>
-
-        <p id="users-empty" class="hidden text-sm text-slate-500 italic text-center py-8">No users yet. Add one above.</p>
       </div>
     </section>
 
