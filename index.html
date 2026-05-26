@@ -191,6 +191,32 @@ sitemap: false
     .nav-pill-cta:hover {
       background-image: linear-gradient(135deg, #4338ca 0%, #6366f1 50%, #8b5cf6 100%);
     }
+    /* Admin-only pill (super-user) — gold gradient to signal privileged access */
+    .nav-pill-manage {
+      background-image: linear-gradient(135deg, #b45309 0%, #d97706 50%, #f59e0b 100%);
+      box-shadow:
+        0 8px 22px -6px rgba(217,119,6,0.6),
+        inset 0 1px 0 rgba(255,255,255,0.28),
+        inset 0 -1px 0 rgba(0,0,0,0.10);
+    }
+    /* Sign-out pill — neutral slate so it doesn't shout */
+    .nav-pill-signout {
+      background-image: linear-gradient(135deg, #475569 0%, #334155 50%, #1e293b 100%);
+      box-shadow:
+        0 8px 22px -6px rgba(51,65,85,0.55),
+        inset 0 1px 0 rgba(255,255,255,0.22),
+        inset 0 -1px 0 rgba(0,0,0,0.10);
+    }
+    /* Sign-in pill — indigo, for when user isn't authenticated */
+    .nav-pill-signin {
+      background-image: linear-gradient(135deg, #4f46e5 0%, #6366f1 50%, #818cf8 100%);
+      box-shadow:
+        0 8px 22px -6px rgba(99,102,241,0.55),
+        inset 0 1px 0 rgba(255,255,255,0.28),
+        inset 0 -1px 0 rgba(0,0,0,0.10);
+    }
+    /* Auth-controlled pills start hidden; JS reveals based on /api/auth/me */
+    .nav-pill[data-auth-state] { display: none; }
 
     /* Mobile-friendly: hide the 4-tab middle row on small screens; keep cert-hub + CTA */
     @media (prefers-reduced-motion: reduce) {
@@ -440,12 +466,41 @@ sitemap: false
         <a href="#author" class="nav-pill nav-pill-about">
           <span class="nav-pill-icon">👤</span> ABOUT THE CREATOR
         </a>
+        <!-- Admin-only: revealed by JS when /api/auth/me reports role=superuser -->
+        <a href="Manage-Users/" class="nav-pill nav-pill-manage" data-auth-state="superuser">
+          <span class="nav-pill-icon">🔑</span> MANAGE USERS
+        </a>
       </div>
+      <!-- Right side: shows SIGN IN when logged out, SIGN OUT when logged in. JS toggles. -->
+      <a href="login/" class="nav-pill nav-pill-signin" data-auth-state="anonymous">
+        <span class="nav-pill-icon">🔐</span> SIGN IN
+      </a>
+      <a href="api/auth/logout" class="nav-pill nav-pill-signout" data-auth-state="authenticated">
+        <span class="nav-pill-icon">🚪</span> SIGN OUT
+      </a>
       <a href="#curriculum" class="nav-pill nav-pill-cta">
         <span class="nav-pill-icon">🚀</span> START LEARNING <span class="ml-0.5">→</span>
       </a>
     </div>
   </nav>
+
+  <!-- Auth-state nav toggle: shows MANAGE USERS for super-users + swaps SIGN IN ↔ SIGN OUT -->
+  <script>
+    (function () {
+      // Only run on Cloudflare (where /api/auth/me exists). On GitHub Pages this fetch 404s and we silently keep all auth pills hidden — appropriate fallback since GitHub Pages has no auth gate.
+      fetch('/api/auth/me', { credentials: 'same-origin' })
+        .then(function (r) { return r.ok ? r.json() : { authenticated: false }; })
+        .then(function (data) {
+          var state = data && data.authenticated ? 'authenticated' : 'anonymous';
+          document.querySelectorAll('[data-auth-state]').forEach(function (el) {
+            var want = el.getAttribute('data-auth-state');
+            var show = (want === state) || (want === 'superuser' && data.role === 'superuser');
+            if (show) el.style.display = 'inline-flex';
+          });
+        })
+        .catch(function () { /* GitHub Pages or offline — leave hidden */ });
+    })();
+  </script>
 
   <!-- ============== HERO ============== -->
   <section class="relative overflow-hidden bg-slate-950 text-white">

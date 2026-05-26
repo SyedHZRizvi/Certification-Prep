@@ -302,10 +302,38 @@
       </button>
       <div class="hidden md:flex items-center gap-4 text-sm">
         <span class="text-slate-500 text-xs">by <strong class="text-slate-900">Humayun Zafar</strong></span>
+        <!-- Admin-only: revealed by JS when /api/auth/me reports role=superuser -->
+        <a href="{{ '/Manage-Users/' | relative_url }}"
+           class="bg-amber-600 hover:bg-amber-700 text-white font-semibold px-4 py-2 rounded-lg transition text-xs"
+           data-auth-state="superuser" style="display:none;">🔑 Manage Users</a>
+        <!-- Auth toggles: SIGN IN when anonymous, SIGN OUT when authenticated -->
+        <a href="{{ '/login/' | relative_url }}"
+           class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-4 py-2 rounded-lg transition text-xs"
+           data-auth-state="anonymous" style="display:none;">🔐 Sign in</a>
+        <a href="{{ '/api/auth/logout' | relative_url }}"
+           class="bg-slate-600 hover:bg-slate-700 text-white font-semibold px-4 py-2 rounded-lg transition text-xs"
+           data-auth-state="authenticated" style="display:none;">🚪 Sign out</a>
         <a href="{{ '/' | relative_url }}" class="bg-slate-900 hover:bg-slate-800 text-white font-semibold px-4 py-2 rounded-lg transition text-xs">← Course Home</a>
       </div>
     </div>
   </header>
+  <!-- Auth-state toggle: reveals Manage Users (super-user) + swaps Sign in/Sign out as appropriate.
+       Runs on every course page so the admin can navigate to Manage-Users from anywhere. -->
+  <script>
+    (function () {
+      fetch('/api/auth/me', { credentials: 'same-origin' })
+        .then(function (r) { return r.ok ? r.json() : { authenticated: false }; })
+        .then(function (data) {
+          var state = data && data.authenticated ? 'authenticated' : 'anonymous';
+          document.querySelectorAll('[data-auth-state]').forEach(function (el) {
+            var want = el.getAttribute('data-auth-state');
+            var show = (want === state) || (want === 'superuser' && data.role === 'superuser');
+            if (show) el.style.display = 'inline-block';
+          });
+        })
+        .catch(function () { /* GitHub Pages or offline — leave hidden */ });
+    })();
+  </script>
 
   <!-- ========== SHELL ========== -->
   <div class="shell">
