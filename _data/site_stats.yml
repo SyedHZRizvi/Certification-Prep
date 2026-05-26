@@ -6,8 +6,8 @@
 # trademark holders we acknowledge in the footer.
 
 # Update these whenever a new cert is added.
-practice_question_estimate: "8,000+"
-total_hours_estimate: 600
+practice_question_estimate: "11,000+"
+total_hours_estimate: 850
 
 # Trademark holders / cert issuing bodies represented on the site.
 # Used in the footer trademark notice.
@@ -19,9 +19,9 @@ trademark_holders:
   - name: "Amazon Web Services"
     marks: "AWS, Cloud Practitioner, Solutions Architect, AI Practitioner"
   - name: "Microsoft"
-    marks: "Azure, AZ-900, AZ-104, AI-102"
+    marks: "Azure, AZ-900, AZ-104, AI-102, AZ-800/801, MD-102, SC-300, Entra ID, Intune"
   - name: "CompTIA"
-    marks: "Security+, SY0-701"
+    marks: "A+, Network+, Linux+, Server+, Security+ (220-1101/1102, N10-009, XK0-005, SK0-005, SY0-701)"
   - name: "ASCM / APICS"
     marks: "CSCP, CPIM, CLTD"
   - name: "Institute for Supply Management"

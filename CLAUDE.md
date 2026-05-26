@@ -7,7 +7,7 @@
 
 ## 0. Project identity
 
-This is **The Cert Hub** — a Jekyll site authored by Humayun Zafar. It hosts story-driven self-study courses for **20 industry certifications and professional tracks**:
+This is **The Cert Hub** — a Jekyll site authored by Humayun Zafar. It hosts story-driven self-study courses for **27 industry certifications and professional tracks**:
 
 | # | Folder | Cert / Track | Modules |
 |---|---|---|---|
@@ -31,8 +31,17 @@ This is **The Cert Hub** — a Jekyll site authored by Humayun Zafar. It hosts s
 | 18 | `18-AI-Marketing-Capstone-Portfolio` | AI Marketing — Capstone | 8 |
 | 19 | `19-Bitcoin-Cryptocurrency` | Bitcoin & Crypto (Princeton → CBP → CBSA → UNic MSc) | 10 |
 | 20 | `20-E-Commerce` | E-Commerce (Google → Adobe Commerce → Wharton) | 10 |
+| 21 | `21-CompTIA-A-Plus` | CompTIA A+ (Core 1 220-1101 + Core 2 220-1102) | 12 |
+| 22 | `22-CompTIA-Network-Plus` | CompTIA Network+ (N10-009) | 8 |
+| 23 | `23-CompTIA-Linux-Plus` | CompTIA Linux+ (XK0-005) | 8 |
+| 24 | `24-CompTIA-Server-Plus` | CompTIA Server+ (SK0-005) | 8 |
+| 25 | `25-Windows-Server-Hybrid-Admin` | Microsoft Windows Server Hybrid Admin (AZ-800 + AZ-801) | 10 |
+| 26 | `26-Microsoft-Endpoint-Admin` | Microsoft Endpoint Administrator (MD-102) | 8 |
+| 27 | `27-Microsoft-Identity-Access-Admin` | Microsoft Identity & Access Admin (SC-300) | 8 |
 
-Total: **178 modules · 60 practice exams · 20 flashcard decks · 20 READMEs**.
+Total: **240 modules · 81 practice exams · 27 flashcard decks · 27 READMEs**.
+
+The new IT Systems Administration track (courses 21–27) is engineered to the same Cornell · Harvard · Princeton · Stanford pedagogical standard as the rest of the site. AZ-900 (course 05) and AZ-104 (course 06) are cross-referenced into this track on the homepage since they form part of any modern sysadmin's training path.
 
 The frozen baseline tagged `stable-2026-05-20` is the canonical reference for "what this repo should look like." Any deviation must either (a) maintain or improve every assertion in `verify-baseline.py`, or (b) update both the assertions and `CLAUDE.md` in the same commit.
 

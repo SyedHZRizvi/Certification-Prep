@@ -43,11 +43,19 @@ EXPECTED_COURSES = {
     "18-AI-Marketing-Capstone-Portfolio":       8,
     "19-Bitcoin-Cryptocurrency":                10,
     "20-E-Commerce":                            10,
+    # IT Systems Administration track
+    "21-CompTIA-A-Plus":                        12,
+    "22-CompTIA-Network-Plus":                  8,
+    "23-CompTIA-Linux-Plus":                    8,
+    "24-CompTIA-Server-Plus":                   8,
+    "25-Windows-Server-Hybrid-Admin":           10,
+    "26-Microsoft-Endpoint-Admin":              8,
+    "27-Microsoft-Identity-Access-Admin":       8,
 }
-EXPECTED_TOTAL_MODULES = sum(EXPECTED_COURSES.values())  # 178
-EXPECTED_TOTAL_PRACTICE_EXAMS = len(EXPECTED_COURSES) * 3  # 60
-MIN_TOTAL_COURSE_MD_FILES = 850   # was 700 with 18 courses; ~150 added with Bitcoin + E-Commerce tracks
-MIN_YT_SEARCH_URLS = 1700         # was 1300; ~400 added with Bitcoin + E-Commerce (20 modules × ~10 cards each)
+EXPECTED_TOTAL_MODULES = sum(EXPECTED_COURSES.values())  # 178 + 62 = 240
+EXPECTED_TOTAL_PRACTICE_EXAMS = len(EXPECTED_COURSES) * 3  # 27 × 3 = 81
+MIN_TOTAL_COURSE_MD_FILES = 1100  # was 850 with 20 courses; ~250 added with 7-course IT Sysadmin track
+MIN_YT_SEARCH_URLS = 2200         # was 1700; ~500 added with 62 new modules × ~8-10 cards each
 
 PROTECTED_FILES = [
     "_layouts/default.html",
