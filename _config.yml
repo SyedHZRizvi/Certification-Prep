@@ -48,7 +48,6 @@ exclude:
   - vendor
   - Privacy-Setup    # internal admin notes — not for public site
   - functions        # Cloudflare Pages Functions — Jekyll must not process server-side JS
-  - wrangler.toml    # Cloudflare CLI config
   - node_modules
 
 # Make sure Jekyll picks up all the markdown
