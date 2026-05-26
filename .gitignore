@@ -21,6 +21,7 @@ _site/
 # Local Jekyll preview tooling (created by start-preview.sh)
 .bundle/
 vendor/
+Gemfile.lock
 
 # Dev workspace artifacts — not for production
 _dev/backup-practice-exams/
