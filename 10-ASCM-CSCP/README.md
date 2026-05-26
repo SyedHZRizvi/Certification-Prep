@@ -5,9 +5,12 @@ title: ASCM CSCP Track (Certified Supply Chain Professional)
 
 # 🚚 ASCM CSCP Track (Certified Supply Chain Professional)
 
+**🚚 Supply Chain · ASCM** › CSCP — Certified Supply Chain Professional
+
 > **Goal:** Pass the ASCM CSCP exam with a scaled score of 300+ (≈ 70% raw)
 > **Duration:** 12–16 weeks part-time
 > **Cost:** $695 (ASCM member) / $1,095 (non-member) — exam fee only
+> **Difficulty:** Professional · bachelor's degree or 3 yrs SC experience required
 
 ---
 

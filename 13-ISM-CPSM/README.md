@@ -3,11 +3,14 @@ permalink: /13-ISM-CPSM/
 title: ISM CPSM Track (Certified Professional in Supply Management)
 ---
 
-# 🛒 ISM CPSM Track (Certified Professional in Supply Management)
+# 🛍️ ISM CPSM Track (Certified Professional in Supply Management)
+
+**🚚 Supply Chain · ISM** › CPSM — Certified Professional in Supply Management
 
 > **Goal:** Pass all **three** ISM CPSM exams with confidence and earn the global standard for supply management professionals.
 > **Duration:** 10–14 weeks part-time (longer than most certs — there are 3 exams)
 > **Cost:** $589 (ISM member) or $1,179 (non-member) **per exam × 3 exams** = $1,767–$3,537 total
+> **Difficulty:** Professional · bachelor's + 3 yrs (or 5 yrs experience without degree)
 
 ---
 

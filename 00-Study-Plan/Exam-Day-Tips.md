@@ -2,7 +2,10 @@
 
 > **Read this the morning of your exam. Then re-read it. Then close it and trust yourself.**
 
-> 🌍 **Scope:** The night-before routine, morning routine, time management, and mental tactics in this guide work for **every certification in this course** — Scrum, PMP, AWS, Azure, AI, Security+, ASCM, ISM. The two cert-specific tables (PSM I, PMP) cover those exams in detail; for AWS, Azure, Security+, and supply-chain exams, see the `Cheat-Sheet.md` inside each track folder for cert-specific exam-day notes (question count, time limit, scaled-score passing line, break policy).
+**Study Plan** · Exam Day Tips
+*Last updated: 2026-05*
+
+> 🌍 **Scope:** The night-before routine, morning routine, time management, and mental tactics in this guide work for **every certification on this site** — Scrum, PMP, AWS, Azure, AI, Security+, ASCM, ISM, AI Marketing, Bitcoin/Crypto, and E-Commerce. The two cert-specific tables (PSM I, PMP) cover those exams in detail; the [Cert-Specific Format Notes](#-cert-specific-format-notes) section below covers the variety of formats (Pearson VUE in-person, online proctored, Prometric, vendor portal honor-system); and each track's `Cheat-Sheet.md` carries the cert-specific question count, time limit, and scaled-score line.
 
 ---
 
@@ -90,6 +93,62 @@
 
 ---
 
+## 🌐 Cert-Specific Format Notes
+
+Different certs run on different delivery channels. Know yours **before exam day** — the logistics will burn 30 minutes of your morning if you don't:
+
+### Pearson VUE — In-Person Test Center
+**Used by:** PMP, PMI-ACP, CAPM · AWS (CLF-C02, SAA-C03, AIF-C01) · Azure (AZ-900, AZ-104, AI-102) · CompTIA Security+ · Adobe Commerce · Meta Blueprint
+
+- Arrive 30 minutes early. Bring **two forms of ID** (one with photo, both with current name + signature).
+- Lockers are provided — phone, watch, wallet, snacks all go in.
+- No food/drink at the desk. Plan bathroom + hydration around break policy.
+- Pen + dry-erase board (or paper) provided. **PMP only:** 2 scheduled 10-min breaks; AWS / Azure / CompTIA: no scheduled break (you can leave but the timer runs).
+- Score appears on screen at end (PMP, AWS, Azure, CompTIA). Official email + Credly / digital badge within ~5 business days.
+
+### Pearson VUE — Online Proctored (OnVUE)
+**Used by:** Same cert list as in-person, plus PSM I (Scrum.org runs its own portal — see below) · AI-102 · most ASCM exams
+
+- Run the **system check 24 hours before AND right before** the exam. Reboot. Disable VPN. Close everything.
+- Quiet room, plain walls, no second monitor, no phone within reach, no clutter on desk.
+- Show your ID via webcam. Do a 360° room scan. Proctor watches via webcam + screen-share.
+- **No bathroom breaks** for most online-proctored exams (PMP is an exception with 2 scheduled). Use the bathroom right before launch.
+- If you lose internet mid-exam: don't panic. Reconnect; the timer pauses, and you resume where you stopped.
+
+### Scrum.org Portal (PSM I, PSM II, PSPO I)
+**Used by:** PSM I, PSM II, PSPO I, PSD, SPS
+
+- **No proctor**, **no webcam.** Honor system. Open-book friendly (keep the Scrum Guide PDF in another tab).
+- Take it any time within 365 days of purchase.
+- 60 minutes, 80 questions, 85% pass mark (PSM I). Score appears instantly.
+- If you fail: you can re-buy a new attempt for $150.
+
+### Prometric (Used by ISM CPSM and a few others)
+**Used by:** ISM CPSM (all 3 exams) · some Adobe exams
+
+- Similar to Pearson VUE — in-person test centers + online-proctored option.
+- Schedule via `prometric.com`; some ISM exams have limited testing windows (not always year-round).
+- **CPSM specific:** Each of the 3 exams must be passed within 3 years of the first. Plan retake timing carefully.
+
+### Vendor Portals — Free Online (Marketing & E-Commerce)
+**Used by:** HubSpot Academy (Inbound, Content Marketing) · Google Skillshop (Google Ads, GA4 IQ) · Meta Blueprint (some are paid via Pearson VUE; foundational ones are vendor-portal) · Adobe Commerce some · Shopify Academy
+
+- **No proctor.** Honor system, open-book.
+- Take it from your laptop, anywhere with internet. Most allow unlimited free retakes.
+- Results instant. Badge / shareable URL via Credly or vendor portal.
+
+### AWS PSI (Alternative AWS Delivery)
+**Used by:** Some AWS exams give you PSI as an alternative to Pearson VUE
+
+- Functionally similar to Pearson VUE online-proctored. Same prep: quiet room, plain walls, ID, system check.
+
+### Credly Badge — Issued After Most Passes
+**Used by:** AWS, Microsoft, CompTIA, Adobe, IBM, Cisco, many others
+
+- After you pass, you get a digital badge (Credly / Acclaim). Add it to your LinkedIn profile — recruiters search for it.
+
+---
+
 ## ⏱️ Time Management Strategy
 
 ### PSM I (60 min, 80 q):
@@ -146,14 +205,23 @@ Breathe. Trust. Execute. 🎯
 - 🎉 Celebrate. You earned it.
 - 📝 Update LinkedIn within 24 hours (recruiter searches spike).
 - 🎓 **Maintenance varies by cert:**
-  - **PSM I:** Lifetime cert. No renewal.
-  - **PMP:** 60 PDUs every 3 years.
+  - **PSM I (Scrum.org):** Lifetime cert. No renewal.
+  - **CSM (Scrum Alliance):** Every 2 years · 20 SEUs + $100.
+  - **PMP / PMI-ACP:** 60 PDUs every 3 years.
+  - **CAPM:** 15 PDUs every 3 years.
   - **AWS (CLF-C02 / SAA-C03 / AIF-C01):** Valid 3 years; recertify by retaking the exam or earning a higher cert in the same path.
-  - **Azure AZ-900:** Lifetime (fundamentals don't expire).
-  - **Azure AZ-104 / AI-102:** Annual free online renewal assessment on Microsoft Learn.
-  - **CompTIA Security+ (SY0-701):** Valid 3 years; renew via 50 CEUs, a higher cert, or retaking.
+  - **Azure AZ-900 (and other Fundamentals):** Lifetime (fundamentals don't expire).
+  - **Azure AZ-104 / AI-102 (and other Associate+):** Annual free online renewal assessment on Microsoft Learn.
+  - **CompTIA Security+ (SY0-701):** Valid 3 years; renew via 50 CEUs, a higher CompTIA cert, or retaking.
   - **ASCM CSCP / CPIM / CLTD:** Valid 5 years; renew via 75 maintenance points.
-  - **ISM CPSM:** Valid 4 years; renew via 60 continuing-education hours.
+  - **ISM CPSM:** Valid 4 years; renew via 60 CEHs.
+  - **HubSpot, Google Ads, GA4 IQ, Meta Blueprint:** Valid 1 year; free retake.
+  - **Wharton / Google D-M & E-C / Coursera-hosted programs:** Lifetime credential.
+  - **C4 Certified Bitcoin Professional (CBP):** Lifetime credential.
+  - **BTA Certified Blockchain Solution Architect (CBSA):** 3 years; re-exam.
+  - **ACAMS Cryptoasset Anti-Financial Crime Specialist (CCAS):** Maintained via ACAMS member CE.
+  - **Adobe Commerce Business Practitioner:** ~2 years (Adobe product cycle).
+  - **Salesforce B2C Commerce certs:** Each Salesforce release (3x/year) requires release-exam maintenance.
 - 📅 **Set a calendar reminder** for renewal a year before expiry.
 
 ### If You Don't Pass:
@@ -164,3 +232,12 @@ Breathe. Trust. Execute. 🎯
 - 💡 Failing once is data, not destiny.
 
 You got this. 🫡
+
+---
+
+## 🚀 Next Steps
+
+- 📝 **Just passed?** Update LinkedIn + your resume. Then come back in a year for renewal.
+- 🔁 **Didn't pass?** Re-open the [12-Week Study Plan](./12-Week-Study-Plan/) and rebuild a 3-4 week targeted sprint on your weak domains. Most retakers pass.
+- 🎯 **Already certified — what's next?** Check the [Certifications Catalog](../Resources/International-Certifications/) "Which Cert Next?" matrix to pick the natural follow-on.
+- 🏠 [**Back to Course Home**](../) — start the next track from the 20 available

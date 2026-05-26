@@ -5,9 +5,12 @@ title: ASCM CLTD Track (Certified in Logistics, Transportation and Distribution)
 
 # 🚛 ASCM CLTD Track (Certified in Logistics, Transportation and Distribution)
 
+**🚚 Supply Chain · ASCM** › CLTD — Logistics, Transportation & Distribution
+
 > **Goal:** Pass the ASCM CLTD exam with a scaled score of 300+ (≈ 70% raw)
 > **Duration:** 12–16 weeks part-time
 > **Cost:** $695 (ASCM member) / $1,095 (non-member) — exam fee only
+> **Difficulty:** Professional · 3+ yrs logistics experience recommended
 
 ---
 

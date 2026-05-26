@@ -1,0 +1,191 @@
+---
+permalink: /404.html
+sitemap: false
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page not found — The Cert Hub by Humayun Zafar</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="description" content="The page you're looking for doesn't exist or has moved." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@700;800;900&display=swap" rel="stylesheet" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🎓%3C/text%3E%3C/svg%3E" />
+  <style>
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: radial-gradient(ellipse at top, #1e1b4b 0%, #0f172a 60%, #020617 100%);
+      color: #e2e8f0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      margin: 0;
+      font-size: 17px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .card {
+      max-width: 620px;
+      width: 100%;
+      text-align: center;
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(148, 163, 184, 0.18);
+      border-radius: 24px;
+      padding: 56px 40px;
+      box-shadow: 0 30px 80px -15px rgba(0,0,0,0.7);
+    }
+    .emoji {
+      font-size: 84px;
+      line-height: 1;
+      margin-bottom: 8px;
+      animation: float 3.5s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    h1 {
+      font-family: 'Plus Jakarta Sans', Inter, sans-serif;
+      font-size: clamp(56px, 10vw, 96px);
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      line-height: 0.95;
+      margin: 12px 0 6px;
+      background: linear-gradient(135deg, #f43f5e 0%, #fb923c 25%, #fbbf24 50%, #34d399 75%, #818cf8 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    h2 {
+      font-family: 'Plus Jakarta Sans', Inter, sans-serif;
+      font-size: clamp(22px, 3vw, 28px);
+      font-weight: 800;
+      color: #f1f5f9;
+      margin: 0 0 16px;
+      letter-spacing: -0.015em;
+    }
+    p {
+      color: #94a3b8;
+      font-size: 17px;
+      max-width: 460px;
+      margin: 0 auto 28px;
+      line-height: 1.65;
+    }
+    .ctas {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin: 30px 0 18px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 13px 22px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 15px;
+      text-decoration: none;
+      transition: transform .15s, box-shadow .15s, filter .15s;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #4f46e5, #7c3aed, #a855f7);
+      color: #fff;
+      box-shadow: 0 8px 24px -6px rgba(124, 58, 237, 0.55);
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px -6px rgba(124, 58, 237, 0.7);
+      filter: brightness(1.08);
+    }
+    .btn-secondary {
+      background: rgba(148, 163, 184, 0.12);
+      color: #e2e8f0;
+      border: 1px solid rgba(148, 163, 184, 0.25);
+    }
+    .btn-secondary:hover { background: rgba(148, 163, 184, 0.22); }
+    .helpful {
+      margin-top: 36px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(148, 163, 184, 0.18);
+      text-align: left;
+    }
+    .helpful h3 {
+      color: #cbd5e1;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      margin: 0 0 14px;
+      text-align: center;
+    }
+    .links {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+    }
+    @media (max-width: 540px) {
+      .links { grid-template-columns: 1fr; }
+      .card { padding: 40px 28px; }
+    }
+    .links a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      border-radius: 10px;
+      color: #cbd5e1;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      background: rgba(148, 163, 184, 0.06);
+      transition: background .15s, color .15s, transform .15s;
+    }
+    .links a:hover {
+      background: rgba(148, 163, 184, 0.16);
+      color: #fff;
+      transform: translateX(3px);
+    }
+    .links a .icon { font-size: 18px; }
+    .brand {
+      margin-bottom: 8px;
+      color: #94a3b8;
+      font-size: 12px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="brand">🎓 The Cert Hub</div>
+    <div class="emoji">🧭</div>
+    <h1>404</h1>
+    <h2>You've wandered off the syllabus.</h2>
+    <p>The page you're looking for doesn't exist, was moved, or the link is mistyped. Let's get you back on track.</p>
+
+    <div class="ctas">
+      <a href="/" class="btn btn-primary">🏠 Back to homepage</a>
+      <a href="/login/" class="btn btn-secondary">🔐 Sign in</a>
+    </div>
+
+    <div class="helpful">
+      <h3>Or try one of these</h3>
+      <div class="links">
+        <a href="/#curriculum"><span class="icon">📚</span> Browse all 20 courses</a>
+        <a href="/Resources/International-Certifications/"><span class="icon">📜</span> Certification catalog</a>
+        <a href="/00-Study-Plan/"><span class="icon">🗓️</span> Study plan &amp; tips</a>
+        <a href="/Resources/"><span class="icon">📖</span> Books, links &amp; communities</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

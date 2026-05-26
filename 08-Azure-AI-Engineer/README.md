@@ -5,9 +5,12 @@ title: Azure AI Engineer Track (AI-102)
 
 # 🤖 Azure AI Engineer Track (AI-102)
 
+**🤖 AI & ML · Azure** › AI Engineer Associate (AI-102)
+
 > **Goal:** Pass the Microsoft Certified: Azure AI Engineer Associate (AI-102) exam at 700/1000 or higher
 > **Duration:** 6 weeks part-time
 > **Cost:** $165 USD (renewable annually with a free online assessment)
+> **Difficulty:** Associate · AZ-900 + Python comfort recommended
 
 ---
 

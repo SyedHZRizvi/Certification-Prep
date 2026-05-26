@@ -5,9 +5,12 @@ title: AWS AI Practitioner Track (AIF-C01)
 
 # 🤖 AWS AI Practitioner Track (AIF-C01)
 
+**🤖 AI & ML · AWS** › AI Practitioner (AIF-C01)
+
 > **Goal:** Pass the AWS Certified AI Practitioner (AIF-C01) exam on the first try with a score of 750+
 > **Duration:** 4–6 weeks part-time (~40 hours total)
 > **Cost:** $100 USD (associate-level exam, but priced as foundational)
+> **Difficulty:** Foundational/associate · cloud basics + curiosity about GenAI
 
 ---
 

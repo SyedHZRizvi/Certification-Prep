@@ -5,9 +5,12 @@ title: AI Marketing Foundations Track
 
 # 🤖 AI Marketing Foundations Track
 
+**📣 AI Marketing** › Course 1 of 5 — Foundations
+
 > **Goal:** Build a Cornell/Harvard-quality grounding in digital marketing AND in how generative AI is rewriting every channel — then pass three real industry exams.
 > **Duration:** 6–8 weeks part-time (≈3–5 hrs/week)
 > **Cost:** Free (this credential) + $0–$99 for the three real industry exams below
+> **Difficulty:** Entry-level · no marketing experience required
 
 ---
 

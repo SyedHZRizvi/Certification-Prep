@@ -1,6 +1,11 @@
 # 🧪 External Practice Tests
 
-> **Goal varies by cert** — but more practice questions = more pattern recognition. Suggested minimums:
+> Where to find more practice questions beyond what's included in each course — for **all 20 tracks** on this site. More practice = more pattern recognition.
+
+**Resources** · Free Practice Tests
+*Last updated: 2026-05*
+
+> **Suggested minimums per cert:**
 > - **PSM I:** 200+ practice questions
 > - **PMP:** 1,000+ practice questions
 > - **AWS Cloud Practitioner (CLF-C02):** 300+
@@ -11,6 +16,9 @@
 > - **CompTIA Security+ (SY0-701):** 800–1,000+
 > - **ASCM CSCP / CPIM / CLTD:** 500+ per exam (mostly via ASCM Learning System practice pools)
 > - **ISM CPSM:** 300+ (mostly via the ISM Diagnostic Practice Exam pool)
+> - **AI Marketing certs (HubSpot, Google, Meta, GA4):** Each cert: 100+ via vendor portal (most are honor-system, retake-friendly)
+> - **Bitcoin CBP:** 200+ practice questions (C4 sample bank + community pools)
+> - **E-Commerce certs (Google D-M & E-C, Adobe Commerce):** 300+ for Google; 200+ for Adobe Commerce
 
 ---
 
@@ -156,6 +164,85 @@
 
 ---
 
+## 🚀 AI-BASED DIGITAL MARKETING (COURSES 14-18)
+
+### TOP RECOMMENDED (Free)
+
+#### 1. HubSpot Academy Practice + Real Exam ⭐⭐⭐⭐⭐
+- **URL:** <https://academy.hubspot.com/>
+- **Why:** HubSpot's Inbound and Content Marketing certifications include built-in practice — and the real exam is **free** and **unlimited retakes**. Closest you'll get to "practice = real exam."
+
+#### 2. Google Skillshop Practice ⭐⭐⭐⭐⭐
+- **URL:** <https://skillshop.exceedlms.com/>
+- **Why:** Each Google Ads specialization (Search, Shopping, Display, Video, Apps) has a free practice path + real exam (also free). GA4 IQ is included.
+
+#### 3. Meta Blueprint Practice
+- **URL:** <https://www.facebookblueprint.com/>
+- **Why:** Foundational courses are free; the certification exams themselves moved to paid (~$99-150 each) via Pearson VUE.
+
+#### 4. CXL Institute Free Resources
+- **URL:** <https://cxl.com/blog/>
+- **Why:** Free benchmark articles, case studies, and the occasional sample lesson from their paid minidegrees (Measurement & Analytics, Conversion Optimization, Growth Marketing).
+
+#### 5. Free YouTube Drill Channels (search-based)
+- Search: "HubSpot Inbound certification practice" — <https://www.youtube.com/results?search_query=HubSpot+Inbound+certification+practice>
+- Search: "Google Ads certification practice questions" — <https://www.youtube.com/results?search_query=Google+Ads+certification+practice+questions>
+- Search: "Meta Blueprint certification practice" — <https://www.youtube.com/results?search_query=Meta+Blueprint+certification+practice>
+
+---
+
+## ₿ BITCOIN & CRYPTOCURRENCY (COURSE 19)
+
+### TOP RECOMMENDED (Free or Free-Sample)
+
+#### 1. C4 Sample Questions (CBP) ⭐⭐⭐⭐
+- **URL:** <https://cryptoconsortium.org/exams/cbp/>
+- **Why:** C4 publishes a sample question set on the official CBP page. Small but exam-aligned.
+
+#### 2. Princeton MOOC End-of-Module Quizzes
+- **URL:** <https://www.coursera.org/learn/cryptocurrency>
+- **Why:** The Narayanan course (free to audit) has end-of-module quizzes that map cleanly to CBP-style conceptual questions. Solid free coverage of cryptography + consensus + script.
+
+#### 3. "Mastering Bitcoin" Chapter Review Questions
+- **URL:** <https://github.com/bitcoinbook/bitcoinbook>
+- **Why:** Antonopoulos's book has chapter-end review questions; the book is free online.
+
+#### 4. Bitcoin StackExchange (untimed, but exam-style)
+- **URL:** <https://bitcoin.stackexchange.com/>
+- **Why:** Browse the highly-voted Q&A — each is a self-contained learning unit; reading 50 of these solidifies CBP-level fluency.
+
+#### 5. Free YouTube Walkthroughs (search-based)
+- Search: "Certified Bitcoin Professional CBP exam" — <https://www.youtube.com/results?search_query=Certified+Bitcoin+Professional+CBP+exam>
+- Search: "Bitcoin technical interview questions" — <https://www.youtube.com/results?search_query=Bitcoin+technical+interview+questions>
+
+---
+
+## 🛒 E-COMMERCE (COURSE 20)
+
+### TOP RECOMMENDED (Free or Free-Sample)
+
+#### 1. Google Digital Marketing & E-Commerce Coursera Quizzes ⭐⭐⭐⭐⭐
+- **URL:** <https://www.coursera.org/professional-certificates/google-digital-marketing-ecommerce>
+- **Why:** Auditable free; each course in the 7-course specialization has end-of-module quizzes that prepare you for the Google D-M & E-C final assessments.
+
+#### 2. Adobe Experience League Sample Questions
+- **URL:** <https://experienceleague.adobe.com/docs/commerce.html>
+- **Why:** Adobe publishes sample questions for the Adobe Commerce Business Practitioner exam on the official certification page.
+
+#### 3. Shopify Partner Academy Tests
+- **URL:** <https://www.shopify.com/partners/learn>
+- **Why:** Free, official, exam-aligned for Shopify-specific certifications.
+
+#### 4. Baymard Institute Research-Based Quizzes
+- **URL:** <https://baymard.com/research>
+- **Why:** Their UX/CRO research articles include benchmark questions ("what % of e-commerce sites fail X?"). Excellent for sharpening Module 6 (CRO) thinking. Premium ($200/mo) for the full library; free articles are still gold.
+
+#### 5. Free YouTube Walkthroughs (search-based)
+- Search: "Google Digital Marketing E-Commerce certificate" — <https://www.youtube.com/results?search_query=Google+Digital+Marketing+E-Commerce+certificate>
+- Search: "Adobe Commerce Business Practitioner practice" — <https://www.youtube.com/results?search_query=Adobe+Commerce+Business+Practitioner+practice>
+
+---
+
 ## 💵 PAID — If You Can Invest $20-100
 
 ### For PMP (CRITICAL)
@@ -226,6 +313,36 @@
 #### ISM CPSM Bridge of Knowledge / Online Review Course
 - **Cost:** ~$300-600 depending on member status
 - **Why:** Official ISM exam prep — large practice question set + study guide.
+
+### For AI Marketing (DMI / OMCP / CXL)
+
+#### CXL Institute Practice Pools
+- **Cost:** Included with CXL minidegree (~$300-1,500 depending on path)
+- **Why:** CXL's "Measurement & Analytics" minidegree has the deepest practice problem set on the market — the closest thing to GA4 IQ + attribution-modeling drills.
+
+#### DMI Practice Exams
+- **Cost:** Included with DMI Diploma (~$1,800-2,400)
+- **Why:** Official DMI practice exams included with their flagship Professional Diploma.
+
+### For Bitcoin & Cryptocurrency
+
+#### BTA Practice Exams (CBSA)
+- **Cost:** Bundled with the $300 CBSA voucher
+- **Why:** Blockchain Training Alliance offers official practice tests with their courses.
+
+#### C4 CBP Bundle
+- **Cost:** $150 voucher + recommended C4 study guide (free PDF online)
+- **Why:** The official path; the exam itself is the practice for most candidates.
+
+### For E-Commerce
+
+#### Adobe Experience League Practice (Bundled with Course)
+- **Cost:** Adobe Commerce Business Practitioner exam $225; practice content included in Adobe Learning Manager
+- **Why:** Adobe's official practice content is exam-aligned.
+
+#### Salesforce Trailhead Practice (B2C Commerce)
+- **Cost:** Trailhead is free; the exam is $200 (Developer) / $400 (Architect)
+- **Why:** Trailhead trail-modules include practice questions for each Salesforce B2C Commerce certification.
 
 ---
 
@@ -309,6 +426,27 @@
 | 70-79% | Drill weak modules |
 | <70% | Don't book yet |
 
+### AI Marketing certs (HubSpot Inbound 75% · Google Ads 80% · GA4 IQ 80% · Meta Blueprint varies)
+| HubSpot / Skillshop Practice Avg | Real Exam Probability |
+|---------------------|------------------------|
+| 90%+ | 95%+ pass first try |
+| 80-89% | 85%+ pass |
+| <80% | Re-take is free — drill weak areas |
+
+### CBP (Bitcoin) — real exam pass = 70%
+| Sample Bank + Princeton Quizzes Avg | Real Exam Probability |
+|--------------------|------------------------|
+| 85%+ | 95%+ pass |
+| 75-84% | 80%+ pass |
+| <75% | Drill Module 2 (Cryptography) and Module 3 (Consensus) |
+
+### Google D-M & E-C (Coursera-graded, 80% per module) and Adobe Commerce BP (60% scaled)
+| Practice / Module-Quiz Avg | Real Exam Probability |
+|---------------------|------------------------|
+| 85%+ | 90%+ pass |
+| 75-84% | 70%+ pass |
+| <75% | Drill weak modules |
+
 > 💡 Treat these as rough heuristics, not guarantees. Real exams vary in difficulty week to week.
 
 ---
@@ -336,3 +474,15 @@
 🎯 **Practice questions are NOT a substitute for understanding.** They're a way to reinforce + diagnose. Always review wrong answers like detectives.
 
 You got this! 💪
+
+---
+
+## 🚀 Next Steps
+
+- 🚀 [**Quick Start Guide**](../00-Study-Plan/Quick-Start-Guide/) — pick your starting course
+- 📅 [**12-Week Study Plan**](../00-Study-Plan/12-Week-Study-Plan/) — the day-by-day cadence
+- 🏆 [**Certifications Catalog**](./International-Certifications/) — fees, formats, registration procedure for every cert
+- 📚 [**Books & Links**](./Books-and-Links/) — the canonical resource list per track
+- 🤝 [**Communities**](./Communities/) — find a study buddy
+- 🎯 [**Exam Day Tips**](../00-Study-Plan/Exam-Day-Tips/) — read the morning of your exam
+- 🏠 [**Course Home**](../) — all 20 tracks at a glance

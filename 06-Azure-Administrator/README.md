@@ -5,9 +5,12 @@ title: Azure Administrator Track (AZ-104)
 
 # ☁️ Azure Administrator Track (AZ-104)
 
+**☁️ Cloud · Azure** › Administrator (AZ-104)
+
 > **Goal:** Pass the Microsoft Certified: Azure Administrator Associate (AZ-104) exam at 700/1000 or higher on your first attempt.
 > **Duration:** 6–8 weeks part-time (10–12 hrs/week)
 > **Cost:** $165 USD (exam fee) · cert is valid 1 year, renewable free online
+> **Difficulty:** Associate · AZ-900 strongly recommended first
 
 ---
 

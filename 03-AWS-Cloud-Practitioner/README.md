@@ -5,9 +5,12 @@ title: AWS Cloud Practitioner Track (CLF-C02)
 
 # ☁️ AWS Cloud Practitioner Track (CLF-C02)
 
+**☁️ Cloud · AWS** › Cloud Practitioner
+
 > **Goal:** Pass the AWS Certified Cloud Practitioner exam with 800+/1000
 > **Duration:** 4 weeks part-time (~30 hours total)
 > **Cost:** $100 USD (cert is valid 3 years)
+> **Difficulty:** Entry-level · no AWS work experience required
 
 ---
 

@@ -3,11 +3,26 @@ permalink: /Resources/International-Certifications/
 title: International Certifications Catalog
 ---
 
-# 🏆 International Industry-Approved Certifications — What to Sit For After Each Course
+# 🏆 International Certifications Catalog
 
-> **How this page is organized.** Every section starts with one of our 20 courses. After you complete that course, you're ready to sit for the certifications listed under it — with the issuing body, exam format, fee in USD, full registration procedure, the benefits the credential unlocks, the designation you carry after passing, and the renewal rules.
->
-> Pick the course. Finish it. Pay for the exam. Walk in confident.
+> Every international cert that the 20 courses on this site map to — with issuing body, exam format, fee in USD, full registration procedure, designation earned, market standing, and renewal rules.
+
+**Resources** · Certifications Catalog
+*Last updated: 2026-05*
+
+---
+
+## 📌 About Industry Certifications
+
+An "industry certification" is a credential issued by a recognized standards body — not by a school or a vendor's marketing department. Three things separate real certifications from paper mills:
+
+1. **Issuing body has a track record.** PMI was founded in 1969. ASCM (formerly APICS) in 1957. Scrum.org by the co-creator of Scrum himself. ISM in 1915. CompTIA, AWS, Microsoft — these are organizations whose certifications are required language in real job postings.
+2. **Real proctoring or honor-system with a recognized brand.** Pearson VUE, Prometric, OnVUE, vendor portals (HubSpot, Google Skillshop, Meta Blueprint). The exam isn't just a marketing quiz.
+3. **Documented market standing.** You can find recent salary surveys (Robert Half, PMI Earning Power, Global Knowledge) listing the cert. You can find recruiters in your city searching for it on LinkedIn.
+
+**How to use this page:** Every section starts with one of our 20 courses. After you complete that course, you're ready to sit for the certifications listed under it — with the issuing body, exam format, fee in USD, full registration procedure, the benefits the credential unlocks, the designation you carry after passing, and the renewal rules.
+
+Pick the course. Finish it. Pay for the exam. Walk in confident.
 
 ⚠️ **Fees, formats, and rules below are accurate as of 2026-05.** Issuing bodies update these regularly. Confirm at the official link before paying.
 
@@ -15,28 +30,57 @@ title: International Certifications Catalog
 
 ## 📑 Quick Map — Course → Recommended Certifications
 
-| Our Course | Recommended Cert (After Completion) | Fee (USD) |
-|------------|--------------------------------------|-----------|
-| Scrum Master | **PSM I** (Scrum.org) · CSM (Scrum Alliance) | $200 · $995+ |
-| PMP | **PMP** (PMI) · CAPM (entry-level alternative) | $555 · $300 |
-| AWS Cloud Practitioner | **CLF-C02** (AWS) | $100 |
-| AWS Solutions Architect Associate | **SAA-C03** (AWS) | $150 |
-| AWS AI Practitioner | **AIF-C01** (AWS) | $100 |
-| Azure Fundamentals | **AZ-900** (Microsoft) | $99 |
-| Azure Administrator | **AZ-104** (Microsoft) | $165 |
-| Azure AI Engineer | **AI-102** (Microsoft) | $165 |
-| CompTIA Security+ | **SY0-701** (CompTIA) | $404 |
-| ASCM CPIM | **CPIM Part 1 + Part 2** (ASCM) | $1,495+ |
-| ASCM CSCP | **CSCP** (ASCM) | $1,295+ |
-| ASCM CLTD | **CLTD** (ASCM) | $1,295+ |
-| ISM CPSM | **CPSM 1 + 2 + 3** (ISM) | $199 ea. |
-| AI Marketing Foundations | HubSpot Inbound · Content Marketing | FREE |
-| AI Marketing Practitioner | Google Ads · Meta Blueprint Commerce | FREE / $99+ |
-| AI Marketing Strategist | GA4 IQ · Wharton Online Specialization | FREE / $500 |
-| AI Marketing Entrepreneur | (No single cert — readiness portfolio) | — |
-| AI Marketing Capstone Portfolio | DMI Professional Diploma · OMCP | $1,800+ / $199+ |
-| Bitcoin & Cryptocurrency | **CBP** (C4) · CBSA (BTA) · CCAS (ACAMS) | $150 · $300 · $1,395 |
-| E-Commerce | **Google D-M & E-C Certificate** · **Adobe Commerce BP** | $300 · $225 |
+### Project & Agile
+| Our Course | Recommended Cert (After Completion) | Fee (USD) | Start Prep |
+|------------|--------------------------------------|-----------|------------|
+| Scrum Master | **PSM I** (Scrum.org) · CSM (Scrum Alliance) | $200 · $995+ | [Start prep →](../01-Scrum-Master/) |
+| PMP | **PMP** (PMI) · CAPM (entry-level alternative) | $555 · $300 | [Start prep →](../02-PMP/) |
+
+### Cloud — AWS
+| Our Course | Recommended Cert (After Completion) | Fee (USD) | Start Prep |
+|------------|--------------------------------------|-----------|------------|
+| AWS Cloud Practitioner | **CLF-C02** (AWS) | $100 | [Start prep →](../03-AWS-Cloud-Practitioner/) |
+| AWS Solutions Architect Associate | **SAA-C03** (AWS) | $150 | [Start prep →](../04-AWS-Solutions-Architect-Associate/) |
+| AWS AI Practitioner | **AIF-C01** (AWS) | $100 | [Start prep →](../07-AWS-AI-Practitioner/) |
+
+### Cloud — Azure
+| Our Course | Recommended Cert (After Completion) | Fee (USD) | Start Prep |
+|------------|--------------------------------------|-----------|------------|
+| Azure Fundamentals | **AZ-900** (Microsoft) | $99 | [Start prep →](../05-Azure-Fundamentals/) |
+| Azure Administrator | **AZ-104** (Microsoft) | $165 | [Start prep →](../06-Azure-Administrator/) |
+| Azure AI Engineer | **AI-102** (Microsoft) | $165 | [Start prep →](../08-Azure-AI-Engineer/) |
+
+### Cybersecurity
+| Our Course | Recommended Cert (After Completion) | Fee (USD) | Start Prep |
+|------------|--------------------------------------|-----------|------------|
+| CompTIA Security+ | **SY0-701** (CompTIA) | $404 | [Start prep →](../09-CompTIA-Security-Plus/) |
+
+### Supply Chain
+| Our Course | Recommended Cert (After Completion) | Fee (USD) | Start Prep |
+|------------|--------------------------------------|-----------|------------|
+| ASCM CSCP | **CSCP** (ASCM) | $1,295+ | [Start prep →](../10-ASCM-CSCP/) |
+| ASCM CPIM | **CPIM Part 1 + Part 2** (ASCM) | $1,495+ | [Start prep →](../11-ASCM-CPIM/) |
+| ASCM CLTD | **CLTD** (ASCM) | $1,295+ | [Start prep →](../12-ASCM-CLTD/) |
+| ISM CPSM | **CPSM 1 + 2 + 3** (ISM) | $199 ea. | [Start prep →](../13-ISM-CPSM/) |
+
+### AI-Based Digital Marketing (5-course ladder)
+| Our Course | Recommended Cert (After Completion) | Fee (USD) | Start Prep |
+|------------|--------------------------------------|-----------|------------|
+| AI Marketing Foundations | HubSpot Inbound · Content Marketing | FREE | [Start prep →](../14-AI-Marketing-Foundations/) |
+| AI Marketing Practitioner | Google Ads · Meta Blueprint Commerce | FREE / $99+ | [Start prep →](../15-AI-Marketing-Practitioner/) |
+| AI Marketing Strategist | GA4 IQ · Wharton Online Specialization | FREE / $500 | [Start prep →](../16-AI-Marketing-Strategist/) |
+| AI Marketing Entrepreneur | (No single cert — readiness portfolio) | — | [Start prep →](../17-AI-Marketing-Entrepreneur/) |
+| AI Marketing Capstone Portfolio | DMI Professional Diploma · OMCP | $1,800+ / $199+ | [Start prep →](../18-AI-Marketing-Capstone-Portfolio/) |
+
+### Bitcoin & Cryptocurrency
+| Our Course | Recommended Cert (After Completion) | Fee (USD) | Start Prep |
+|------------|--------------------------------------|-----------|------------|
+| Bitcoin & Cryptocurrency | **CBP** (C4) · CBSA (BTA) · CCAS (ACAMS) | $150 · $300 · $1,395 | [Start prep →](../19-Bitcoin-Cryptocurrency/) |
+
+### E-Commerce
+| Our Course | Recommended Cert (After Completion) | Fee (USD) | Start Prep |
+|------------|--------------------------------------|-----------|------------|
+| E-Commerce | **Google D-M & E-C Certificate** · **Adobe Commerce BP** · Salesforce B2C | $300 · $225 · $200+ | [Start prep →](../20-E-Commerce/) |
 
 ---
 
@@ -293,27 +337,6 @@ After completing this course, you are ready to sit for:
 
 ---
 
-## 📘 ASCM CPIM
-
-[Open the course →](../11-ASCM-CPIM/README.md)
-
-After completing this course, you are ready to sit for:
-
-### ➡️ ASCM Certified in Planning & Inventory Management (CPIM)
-
-**Designation earned after passing:** *Certified in Planning & Inventory Management (CPIM)*
-
-- **Issuing body:** ASCM.
-- **Market standing:** Tier-1 production/inventory focus — the deepest planning credential.
-- **Benefits of passing:** Required or preferred for Demand Planner, Master Scheduler, Inventory Manager, and S&OP roles. Average CPIM-holder salary $85K-$110K.
-- **Exam format:** **TWO parts.** Part 1: 95 Q · 3.5 hours. Part 2: 150 Q · 3.5 hours. Must pass both.
-- **Fee:** **$1,495 (member) / $1,995 (non-member)** exam-only for both parts. Bundle with Learning System: **$2,895 / $3,895**.
-- **Eligibility:** None for the exam itself (anyone can take it).
-- **How to register:** Same as CSCP via ascm.org.
-- **Renewal:** Every 5 years.
-
----
-
 ## 📘 ASCM CSCP (Supply Chain Professional)
 
 [Open the course →](../10-ASCM-CSCP/README.md)
@@ -337,6 +360,27 @@ After completing this course, you are ready to sit for:
   4. Schedule via Pearson VUE
   5. Take the 3.5-hour exam
 - **Renewal:** Every 5 years · 75 maintenance points (CEUs).
+
+---
+
+## 📘 ASCM CPIM
+
+[Open the course →](../11-ASCM-CPIM/README.md)
+
+After completing this course, you are ready to sit for:
+
+### ➡️ ASCM Certified in Planning & Inventory Management (CPIM)
+
+**Designation earned after passing:** *Certified in Planning & Inventory Management (CPIM)*
+
+- **Issuing body:** ASCM.
+- **Market standing:** Tier-1 production/inventory focus — the deepest planning credential.
+- **Benefits of passing:** Required or preferred for Demand Planner, Master Scheduler, Inventory Manager, and S&OP roles. Average CPIM-holder salary $85K-$110K.
+- **Exam format:** **TWO parts.** Part 1: 95 Q · 3.5 hours. Part 2: 150 Q · 3.5 hours. Must pass both.
+- **Fee:** **$1,495 (member) / $1,995 (non-member)** exam-only for both parts. Bundle with Learning System: **$2,895 / $3,895**.
+- **Eligibility:** None for the exam itself (anyone can take it).
+- **How to register:** Same as CSCP via ascm.org.
+- **Renewal:** Every 5 years.
 
 ---
 
@@ -677,5 +721,19 @@ The international certification market is fragmented, but the credible bodies ar
 - **Wharton + Princeton + MIT + Stanford** (academic-prestige via Coursera/edX)
 
 Stay away from any cert sold by an organization without credible alumni on LinkedIn. Anyone selling "Certified Master XYZ Expert" for $99 with no proctoring is a paper mill.
+
+---
+
+## 🚀 Next Steps
+
+You've chosen your cert. Now go earn it:
+
+1. ☑️ **Open the matching course README** — pick from the [20 tracks](../) on the homepage
+2. ☑️ **Read the [Quick Start Guide](../00-Study-Plan/Quick-Start-Guide/)** if you haven't already
+3. ☑️ **Follow the [12-Week Study Plan](../00-Study-Plan/12-Week-Study-Plan/)** — adaptable to any cert
+4. ☑️ **Bookmark [Exam Day Tips](../00-Study-Plan/Exam-Day-Tips/)** — read it the morning of your exam
+5. ☑️ **Find [Communities](./Communities/)** of others studying the same cert
+6. ☑️ **Drill [practice questions](./Free-Practice-Tests/)** until your scores plateau
+7. ☑️ **Pay for the exam.** Walk in. Pass. Update LinkedIn within 24 hours.
 
 🚀 **Ready to begin?** Pick a course from the [homepage](../) and start with Module 01.

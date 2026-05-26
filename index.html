@@ -36,8 +36,14 @@ sitemap: false
     body {
       font-family: 'Inter', system-ui, sans-serif;
       -webkit-font-smoothing: antialiased;
+      /* Typography bump: base 16 → 18px, line-height 1.55 → 1.7 (body paragraphs) */
+      font-size: 18px;
+      line-height: 1.7;
     }
-    h1, h2, h3, .display { font-family: 'Plus Jakarta Sans', 'Inter', sans-serif; letter-spacing: -0.02em; }
+    h1, h2, h3, .display { font-family: 'Plus Jakarta Sans', 'Inter', sans-serif; letter-spacing: -0.02em; line-height: 1.15; }
+    p { line-height: 1.7; }
+    /* Cap line length for readability on very wide screens (Stripe/Linear pattern) */
+    .prose-cap { max-width: 70ch; }
     img, video { -webkit-user-drag: none; user-drag: none; }
 
     /* ===== CONTENT PROTECTION (CSS layer — works even with JS disabled) ===== */
@@ -573,6 +579,277 @@ sitemap: false
       .author-badge .ab-location { width: 100%; justify-content: center; padding-top: 6px; border-top: 1px solid rgba(255,255,255,0.15); margin-top: 4px; }
     }
 
+    /* ============== NAV SCROLL STATE (Apple/Stripe pattern) ============== */
+    nav.is-scrolled {
+      background: rgba(255,255,255,0.97);
+      box-shadow: 0 4px 24px -8px rgba(15,23,42,0.12), 0 1px 0 rgba(15,23,42,0.04);
+    }
+    nav .nav-pill-cert-hub {
+      transition: transform .25s cubic-bezier(0.34, 1.56, 0.64, 1),
+                  box-shadow .25s ease,
+                  filter .25s ease;
+    }
+    nav.is-scrolled .nav-pill-cert-hub {
+      transform: scale(0.93);
+    }
+
+    /* ============== STATS BAR (Social Proof) ============== */
+    .stats-bar {
+      background:
+        radial-gradient(ellipse at top left, rgba(99,102,241,0.10), transparent 55%),
+        radial-gradient(ellipse at bottom right, rgba(236,72,153,0.09), transparent 55%),
+        linear-gradient(180deg, #fafbff 0%, #f3f4ff 100%);
+      border-top: 1px solid rgba(99,102,241,0.10);
+      border-bottom: 1px solid rgba(99,102,241,0.10);
+    }
+    .stat-num {
+      font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      background: linear-gradient(135deg, #4f46e5 0%, #8b5cf6 50%, #ec4899 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      line-height: 1.05;
+    }
+    .stat-card {
+      transition: transform .25s ease;
+    }
+    .stat-card:hover .stat-num {
+      transform: scale(1.06);
+      transition: transform .25s cubic-bezier(0.34, 1.56, 0.64, 1);
+      display: inline-block;
+    }
+
+    /* ============== VALUE PROP CARDS ============== */
+    .value-card {
+      transition: transform .35s cubic-bezier(0.34, 1.56, 0.64, 1),
+                  box-shadow .35s ease,
+                  border-color .35s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .value-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 30px 60px -15px rgba(99,102,241,0.25);
+      border-color: rgba(99,102,241,0.30);
+    }
+    .value-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 96px; height: 96px;
+      border-radius: 28px;
+      font-size: 56px;
+      line-height: 1;
+      transition: transform .4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    .value-card:hover .value-icon { transform: scale(1.10) rotate(-4deg); }
+
+    /* ============== INSTRUCTOR SPOTLIGHT ============== */
+    .instructor-card {
+      background:
+        radial-gradient(circle at 12% 18%, rgba(99,102,241,0.25), transparent 50%),
+        radial-gradient(circle at 88% 80%, rgba(236,72,153,0.18), transparent 50%),
+        linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+    }
+    .instructor-avatar {
+      width: 180px; height: 180px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+      display: grid;
+      place-items: center;
+      font-weight: 900;
+      font-size: 72px;
+      color: #fff;
+      letter-spacing: -0.04em;
+      box-shadow:
+        0 25px 50px -12px rgba(99,102,241,0.55),
+        inset 0 2px 0 rgba(255,255,255,0.20);
+      position: relative;
+    }
+    .instructor-avatar::after {
+      content: '';
+      position: absolute;
+      inset: -4px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #6366f1, #ec4899);
+      filter: blur(20px);
+      opacity: 0.45;
+      z-index: -1;
+    }
+    @media (max-width: 768px) {
+      .instructor-avatar { width: 140px; height: 140px; font-size: 56px; }
+    }
+    .trust-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 18px;
+      background: rgba(251,191,36,0.15);
+      border: 1px solid rgba(251,191,36,0.45);
+      border-radius: 9999px;
+      font-size: 14px;
+      font-weight: 700;
+      color: #fde68a;
+      letter-spacing: .02em;
+    }
+
+    /* ============== FAQ ACCORDION ============== */
+    .faq-item {
+      border: 1px solid rgba(15,23,42,0.09);
+      border-radius: 16px;
+      background: #ffffff;
+      overflow: hidden;
+      transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease;
+    }
+    .faq-item:hover {
+      border-color: rgba(99,102,241,0.30);
+      box-shadow: 0 8px 24px -8px rgba(15,23,42,0.08);
+    }
+    .faq-item.open {
+      border-color: rgba(99,102,241,0.45);
+      box-shadow: 0 14px 40px -10px rgba(99,102,241,0.18);
+    }
+    .faq-q {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 22px 26px;
+      background: transparent;
+      border: 0;
+      width: 100%;
+      cursor: pointer;
+      text-align: left;
+      font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+      font-weight: 700;
+      font-size: 19px;
+      color: #0f172a;
+      letter-spacing: -0.01em;
+      line-height: 1.4;
+    }
+    .faq-q:focus-visible {
+      outline: 2px solid #6366f1;
+      outline-offset: -2px;
+      border-radius: 16px;
+    }
+    .faq-toggle {
+      flex-shrink: 0;
+      width: 36px; height: 36px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #eef2ff 0%, #f5f3ff 100%);
+      display: grid;
+      place-items: center;
+      color: #4f46e5;
+      font-size: 22px;
+      font-weight: 800;
+      line-height: 1;
+      transition: transform .35s cubic-bezier(0.34, 1.56, 0.64, 1),
+                  background .25s ease;
+    }
+    .faq-item.open .faq-toggle {
+      transform: rotate(45deg);
+      background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+      color: #fff;
+    }
+    .faq-a {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .faq-a-inner {
+      padding: 0 26px 22px;
+      color: #475569;
+      font-size: 17px;
+      line-height: 1.7;
+    }
+    .faq-a-inner strong { color: #0f172a; }
+
+    /* ============== HERO REFINEMENT — CTA cluster ============== */
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: #ffffff;
+      color: #0f172a;
+      font-weight: 700;
+      font-size: 18px;
+      padding: 18px 32px;
+      border-radius: 14px;
+      box-shadow: 0 12px 28px -8px rgba(99,102,241,0.35), 0 0 0 1px rgba(15,23,42,0.04);
+      transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+    }
+    .btn-primary:hover {
+      background: #f8fafc;
+      transform: translateY(-2px);
+      box-shadow: 0 18px 38px -8px rgba(99,102,241,0.45), 0 0 0 1px rgba(15,23,42,0.06);
+    }
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: rgba(255,255,255,0.08);
+      color: #fff;
+      font-weight: 700;
+      font-size: 18px;
+      padding: 18px 32px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,0.22);
+      backdrop-filter: blur(8px);
+      transition: transform .2s ease, background .2s ease, border-color .2s ease;
+    }
+    .btn-secondary:hover {
+      background: rgba(255,255,255,0.14);
+      border-color: rgba(255,255,255,0.35);
+      transform: translateY(-2px);
+    }
+
+    /* ============== MINI-CTA CARDS ============== */
+    .mini-cta {
+      background: linear-gradient(135deg, #f5f3ff 0%, #ede9fe 50%, #fce7f3 100%);
+      border: 1px solid rgba(167,139,250,0.30);
+      border-radius: 24px;
+      padding: 32px 28px;
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+    .mini-cta:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 22px 48px -14px rgba(99,102,241,0.30);
+    }
+    .final-cta {
+      background:
+        radial-gradient(circle at 20% 30%, rgba(99,102,241,0.30), transparent 55%),
+        radial-gradient(circle at 80% 70%, rgba(236,72,153,0.25), transparent 55%),
+        linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+      border-radius: 32px;
+      color: #fff;
+      padding: 48px 32px;
+      text-align: center;
+    }
+    @media (min-width: 768px) {
+      .final-cta { padding: 64px 48px; }
+    }
+
+    /* ============== CARD 3D TILT (subtle perspective) ============== */
+    .cert-card {
+      perspective: 1200px;
+    }
+    .cert-card:hover {
+      /* Combine with existing translateY/scale: add a tiny rotateX */
+      transform: translateY(-10px) scale(1.025) rotateX(2deg);
+    }
+
+    /* ============== REDUCED MOTION (NEW SECTIONS) ============== */
+    @media (prefers-reduced-motion: reduce) {
+      .stat-card, .value-card, .faq-item, .faq-toggle, .faq-a, .mini-cta, .btn-primary, .btn-secondary {
+        transition: none !important;
+      }
+      .cert-card:hover { transform: none !important; }
+    }
+
     /* Watermark — subtle, repeating, behind content */
     .watermark-overlay {
       position: fixed; inset: 0; pointer-events: none; z-index: 1;
@@ -785,7 +1062,7 @@ sitemap: false
       </h1>
       {%- comment -%} cert_count is set later in the file (stats block); but Liquid is one-pass, so we recompute it here. {%- endcomment -%}
       {%- assign hero_cert_count = site.data.navigation.tracks | size -%}
-      <p class="text-xl sm:text-2xl text-slate-300 max-w-3xl mx-auto mb-5 leading-relaxed">
+      <p class="text-2xl sm:text-3xl text-slate-300 max-w-4xl mx-auto mb-6 leading-relaxed">
         {{ hero_cert_count }} industry-recognized credentials across
         <strong class="text-white">Project Management</strong>,
         <strong class="text-white">Cloud</strong>,
@@ -819,36 +1096,130 @@ sitemap: false
         <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20">₿ Bitcoin &amp; Cryptocurrency</span>
         <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20">🛒 E-Commerce</span>
       </div>
-      <div class="flex flex-col sm:flex-row gap-3 justify-center">
-        <a href="#curriculum" class="inline-flex items-center justify-center gap-2 bg-white text-slate-900 font-semibold px-7 py-3.5 rounded-xl hover:bg-slate-100 transition shadow-lg shadow-indigo-500/20">
-          Choose Your Path →
+      <div class="flex flex-col sm:flex-row gap-3 justify-center items-center">
+        <a href="#curriculum" class="btn-primary">
+          🚀 Start Learning <span aria-hidden="true">→</span>
         </a>
-        <a href="00-Study-Plan/Quick-Start-Guide/" class="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/15 ring-1 ring-white/20 text-white font-semibold px-7 py-3.5 rounded-xl transition">
-          Quick Start Guide
+        <a href="#curriculum" class="btn-secondary">
+          📚 Browse Courses
+        </a>
+        <a href="00-Study-Plan/Quick-Start-Guide/" class="btn-secondary">
+          ⚡ Quick Start Guide
         </a>
       </div>
+      <p class="text-base sm:text-lg text-slate-400 mt-5">
+        Already a member? <a href="login/" class="text-indigo-300 hover:text-white font-semibold underline-offset-4 hover:underline transition">Sign in <span aria-hidden="true">→</span></a>
+      </p>
 
-      <!-- stats — auto-computed from _data/navigation.yml + _data/site_stats.yml -->
+      <!-- inline hero stats — auto-computed from _data/navigation.yml + _data/site_stats.yml -->
       {% assign cert_count = site.data.navigation.tracks | size %}
       {% assign mock_exam_count = cert_count | times: 3 %}
       {% assign total_modules = 0 %}
       {% for t in site.data.navigation.tracks %}{% assign m = t.modules | size %}{% assign total_modules = total_modules | plus: m %}{% endfor %}
       <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto mt-16 pt-12 border-t border-white/10">
         <div>
-          <div class="text-3xl md:text-4xl font-extrabold gradient-text-blue">{{ cert_count }}</div>
-          <div class="text-sm text-slate-400 mt-1">Industry certifications</div>
+          <div class="text-4xl md:text-5xl font-extrabold gradient-text-blue">{{ cert_count }}</div>
+          <div class="text-base text-slate-400 mt-2">Industry certifications</div>
         </div>
         <div>
-          <div class="text-3xl md:text-4xl font-extrabold gradient-text-blue">{{ total_modules }}</div>
-          <div class="text-sm text-slate-400 mt-1">In-depth modules</div>
+          <div class="text-4xl md:text-5xl font-extrabold gradient-text-blue">{{ total_modules }}</div>
+          <div class="text-base text-slate-400 mt-2">In-depth modules</div>
         </div>
         <div>
-          <div class="text-3xl md:text-4xl font-extrabold gradient-text-blue">{{ mock_exam_count }}</div>
-          <div class="text-sm text-slate-400 mt-1">Full-length mock exams</div>
+          <div class="text-4xl md:text-5xl font-extrabold gradient-text-blue">{{ mock_exam_count }}</div>
+          <div class="text-base text-slate-400 mt-2">Full-length mock exams</div>
         </div>
         <div>
-          <div class="text-3xl md:text-4xl font-extrabold gradient-text-blue">{{ site.data.site_stats.practice_question_estimate }}</div>
-          <div class="text-sm text-slate-400 mt-1">Practice questions</div>
+          <div class="text-4xl md:text-5xl font-extrabold gradient-text-blue">{{ site.data.site_stats.practice_question_estimate }}</div>
+          <div class="text-base text-slate-400 mt-2">Practice questions</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== SOCIAL PROOF STATS BAR (animated counters on scroll) ============== -->
+  <section class="stats-bar">
+    <div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
+      <div class="reveal text-center mb-10">
+        <p class="text-xs md:text-sm font-bold tracking-[0.22em] uppercase text-indigo-600 mb-3">— By The Numbers —</p>
+        <h2 class="display text-4xl md:text-5xl font-extrabold text-slate-900">A serious study hub.</h2>
+      </div>
+      <div class="reveal grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10 max-w-6xl mx-auto" id="stats-counters">
+        <div class="stat-card text-center">
+          <div class="stat-num text-5xl md:text-6xl lg:text-7xl" data-count-to="{{ cert_count }}">0</div>
+          <div class="mt-4 text-lg md:text-xl font-bold text-slate-900">Industry Certifications</div>
+          <p class="mt-1.5 text-base text-slate-500">PM · Cloud · AI · Security · Supply Chain · Marketing · Crypto · E-Comm</p>
+        </div>
+        <div class="stat-card text-center">
+          <div class="stat-num text-5xl md:text-6xl lg:text-7xl" data-count-to="{{ total_modules }}">0</div>
+          <div class="mt-4 text-lg md:text-xl font-bold text-slate-900">Story-Driven Modules</div>
+          <p class="mt-1.5 text-base text-slate-500">Reading · Videos · Quizzes · Cheat-Sheets per module</p>
+        </div>
+        <div class="stat-card text-center">
+          <div class="stat-num text-5xl md:text-6xl lg:text-7xl" data-count-to="{{ mock_exam_count }}">0</div>
+          <div class="mt-4 text-lg md:text-xl font-bold text-slate-900">Full-Length Mock Exams</div>
+          <p class="mt-1.5 text-base text-slate-500">3 per cert — half · three-quarter · final mock</p>
+        </div>
+        <div class="stat-card text-center">
+          <div class="stat-num text-5xl md:text-6xl lg:text-7xl" data-count-to="{{ site.data.site_stats.practice_question_estimate | default: 8000 }}" data-count-suffix="+">0</div>
+          <div class="mt-4 text-lg md:text-xl font-bold text-slate-900">Practice Questions</div>
+          <p class="mt-1.5 text-base text-slate-500">Bloom's-taxonomy-tagged with rationales</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== WHY STUDENTS CHOOSE THE CERT HUB (Value Props) ============== -->
+  <section class="bg-white">
+    <div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
+      <div class="reveal text-center mb-14">
+        <p class="text-xs md:text-sm font-bold tracking-[0.22em] uppercase text-indigo-600 mb-3">— Why students choose us —</p>
+        <h2 class="display text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 mb-5">Three things you won't find anywhere else.</h2>
+        <p class="text-xl md:text-2xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+          We didn't copy a textbook. We built a learning experience.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-7 md:gap-8 max-w-6xl mx-auto">
+        <div class="reveal value-card bg-white rounded-3xl p-9 md:p-10 border border-slate-200">
+          <div class="value-icon bg-gradient-to-br from-amber-100 to-amber-200 ring-1 ring-amber-200/60 mb-7">🎓</div>
+          <h3 class="display text-2xl md:text-3xl font-extrabold text-slate-900 mb-3">Built to Ivy League standard.</h3>
+          <p class="text-base md:text-lg text-slate-600 leading-relaxed">
+            Every course engineered to the teaching &amp; learning gold standard of
+            <strong class="text-slate-900">Cornell, Harvard, Princeton, and Stanford</strong> —
+            Harvard case-method, Stanford applied innovation, Cornell cross-disciplinary depth,
+            Princeton first-principles foundations.
+          </p>
+        </div>
+        <div class="reveal value-card bg-white rounded-3xl p-9 md:p-10 border border-slate-200">
+          <div class="value-icon bg-gradient-to-br from-rose-100 to-pink-200 ring-1 ring-pink-200/60 mb-7">📚</div>
+          <h3 class="display text-2xl md:text-3xl font-extrabold text-slate-900 mb-3">Story-driven, not memorization.</h3>
+          <p class="text-base md:text-lg text-slate-600 leading-relaxed">
+            Tony's pizza shop teaches Scrum. A movie set teaches PMP. A power-grid analogy teaches
+            cloud regions. Your brain remembers <strong class="text-slate-900">stories 22× better</strong>
+            than dry facts — and the science is on our side.
+          </p>
+        </div>
+        <div class="reveal value-card bg-white rounded-3xl p-9 md:p-10 border border-slate-200">
+          <div class="value-icon bg-gradient-to-br from-emerald-100 to-teal-200 ring-1 ring-emerald-200/60 mb-7">🎯</div>
+          <h3 class="display text-2xl md:text-3xl font-extrabold text-slate-900 mb-3">Real exam-day patterns.</h3>
+          <p class="text-base md:text-lg text-slate-600 leading-relaxed">
+            Every concept tagged with <em class="text-slate-900">"what the exam tests"</em> —
+            including the trap-answer patterns most students fall for. Mock exams mirror the real
+            cert exam exactly: question count, time limit, weighting.
+          </p>
+        </div>
+      </div>
+
+      <!-- Mid-page CTA after value props -->
+      <div class="reveal mt-16 max-w-3xl mx-auto">
+        <div class="mini-cta flex flex-col md:flex-row items-center justify-between gap-5 text-center md:text-left">
+          <div>
+            <h3 class="display text-2xl md:text-3xl font-extrabold text-slate-900 mb-1">Ready to dive in?</h3>
+            <p class="text-base md:text-lg text-slate-600">All 20 courses are below — pick the one that matters to you.</p>
+          </div>
+          <a href="#curriculum" class="inline-flex items-center justify-center gap-2 bg-slate-900 hover:bg-indigo-700 text-white font-bold text-base md:text-lg px-7 py-4 rounded-xl transition shadow-lg shadow-indigo-500/25 whitespace-nowrap">
+            Browse all {{ cert_count }} courses <span aria-hidden="true">→</span>
+          </a>
         </div>
       </div>
     </div>
@@ -1170,26 +1541,26 @@ sitemap: false
         </p>
       </div>
       <div class="reveal grid md:grid-cols-3 gap-6">
-        <div class="bg-white rounded-2xl p-7 border border-slate-200 card-hover">
-          <div class="w-14 h-14 rounded-xl bg-amber-100 text-3xl flex items-center justify-center mb-4">🍿</div>
-          <h3 class="font-bold text-xl mb-2">Stories &amp; Analogies</h3>
-          <p class="text-slate-600 text-base leading-relaxed">
+        <div class="bg-white rounded-2xl p-8 border border-slate-200 card-hover">
+          <div class="w-16 h-16 rounded-2xl bg-amber-100 text-4xl flex items-center justify-center mb-5">🍿</div>
+          <h3 class="font-bold text-2xl mb-3">Stories &amp; Analogies</h3>
+          <p class="text-slate-600 text-lg leading-relaxed">
             Pizza shops, movie sets, cooking shows. Your brain remembers stories
             <strong>22× better</strong> than dry facts.
           </p>
         </div>
-        <div class="bg-white rounded-2xl p-7 border border-slate-200 card-hover">
-          <div class="w-14 h-14 rounded-xl bg-blue-100 text-3xl flex items-center justify-center mb-4">🎯</div>
-          <h3 class="font-bold text-xl mb-2">Exam-Focused</h3>
-          <p class="text-slate-600 text-base leading-relaxed">
+        <div class="bg-white rounded-2xl p-8 border border-slate-200 card-hover">
+          <div class="w-16 h-16 rounded-2xl bg-blue-100 text-4xl flex items-center justify-center mb-5">🎯</div>
+          <h3 class="font-bold text-2xl mb-3">Exam-Focused</h3>
+          <p class="text-slate-600 text-lg leading-relaxed">
             Every concept tagged with <em>"What the exam tests"</em> — including the trap-answer patterns
             most students fall for.
           </p>
         </div>
-        <div class="bg-white rounded-2xl p-7 border border-slate-200 card-hover">
-          <div class="w-14 h-14 rounded-xl bg-emerald-100 text-3xl flex items-center justify-center mb-4">🔁</div>
-          <h3 class="font-bold text-xl mb-2">Spaced Repetition</h3>
-          <p class="text-slate-600 text-base leading-relaxed">
+        <div class="bg-white rounded-2xl p-8 border border-slate-200 card-hover">
+          <div class="w-16 h-16 rounded-2xl bg-emerald-100 text-4xl flex items-center justify-center mb-5">🔁</div>
+          <h3 class="font-bold text-2xl mb-3">Spaced Repetition</h3>
+          <p class="text-slate-600 text-lg leading-relaxed">
             Quizzes → flashcards → mock exams → real exam. The science says this beats
             re-reading by <strong>50%+</strong>.
           </p>
@@ -1219,6 +1590,62 @@ sitemap: false
             <div class="w-24 h-24 md:w-28 md:h-28 mx-auto rounded-3xl bg-gradient-to-br from-emerald-100 to-teal-200 text-6xl md:text-7xl flex items-center justify-center mb-5 shadow-lg ring-1 ring-emerald-200/60">📋</div>
             <div class="font-extrabold text-xl md:text-2xl mb-2">Cheat Sheet</div>
             <p class="text-base text-slate-600 leading-relaxed">One-page review reference</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== INSTRUCTOR SPOTLIGHT (big-hero variant of the creator profile) ============== -->
+  <section class="bg-white">
+    <div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
+      <div class="reveal text-center mb-12">
+        <p class="text-xs md:text-sm font-bold tracking-[0.22em] uppercase text-indigo-600 mb-3">— Meet your instructor —</p>
+        <h2 class="display text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900">One author. One voice. One mission.</h2>
+      </div>
+      <div class="reveal instructor-card rounded-3xl p-8 md:p-14 lg:p-16 max-w-6xl mx-auto text-white relative overflow-hidden">
+        <div class="relative grid md:grid-cols-12 gap-10 md:gap-14 items-center">
+          <div class="md:col-span-4 flex flex-col items-center text-center">
+            <div class="instructor-avatar" aria-hidden="true">HZ</div>
+            <div class="mt-7 trust-badge">
+              <span aria-hidden="true">✓</span> 20+ years of experience
+            </div>
+            <p class="mt-4 text-indigo-200 text-base font-medium">📍 Toronto, Canada</p>
+          </div>
+          <div class="md:col-span-8">
+            <h3 class="display text-4xl md:text-5xl lg:text-6xl font-extrabold mb-3 leading-tight">Humayun Zafar</h3>
+            <p class="text-xl md:text-2xl text-indigo-200 font-semibold mb-7">Course Creator · Designer · Toronto, Canada</p>
+            <p class="text-lg md:text-xl text-slate-300 leading-relaxed mb-5">
+              Two decades across <strong class="text-white">project delivery, cloud architecture, AI engineering, and supply-chain operations</strong> — and a long-standing belief that exam prep should not feel like flashcard punishment. The Cert Hub is the study experience I wish existed when I sat my own credentials.
+            </p>
+            <p class="text-lg md:text-xl text-slate-300 leading-relaxed mb-8">
+              Every story, every analogy, every quiz, every cheat-sheet — <strong class="text-white">written by one person, with one voice</strong>. No content farms, no copy-paste from exam dumps, no $1,000 bootcamps. Just a coherent learning journey across 20 credentials and 178 modules — engineered to the same teaching &amp; learning standard as <strong class="text-amber-200">Cornell, Harvard, Princeton, and Stanford</strong>.
+            </p>
+            <div class="flex flex-wrap gap-3 mb-7">
+              <a href="#curriculum" class="inline-flex items-center gap-2 bg-white text-slate-900 font-bold text-base md:text-lg px-7 py-3.5 rounded-xl hover:bg-slate-100 transition shadow-lg">
+                🚀 Start a course
+              </a>
+              <a href="#author" class="inline-flex items-center gap-2 bg-white/10 ring-1 ring-white/25 hover:bg-white/20 text-white font-bold text-base md:text-lg px-7 py-3.5 rounded-xl transition">
+                Read full bio ↓
+              </a>
+              <a href="mailto:syed@transcrypts.com" class="inline-flex items-center gap-2 bg-white/10 ring-1 ring-white/25 hover:bg-white/20 text-white font-bold text-base md:text-lg px-7 py-3.5 rounded-xl transition">
+                ✉️ Contact
+              </a>
+            </div>
+            <div class="grid grid-cols-3 gap-3 md:gap-6 pt-6 border-t border-white/10">
+              <div>
+                <div class="display text-3xl md:text-4xl font-extrabold gradient-text-blue">20</div>
+                <div class="text-sm md:text-base text-slate-400 mt-1">Courses authored</div>
+              </div>
+              <div>
+                <div class="display text-3xl md:text-4xl font-extrabold gradient-text-blue">178</div>
+                <div class="text-sm md:text-base text-slate-400 mt-1">Modules written</div>
+              </div>
+              <div>
+                <div class="display text-3xl md:text-4xl font-extrabold gradient-text-blue">8K+</div>
+                <div class="text-sm md:text-base text-slate-400 mt-1">Practice questions</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -1271,46 +1698,196 @@ sitemap: false
     </div>
   </section>
 
+  <!-- ============== FAQ ACCORDION ============== -->
+  <section id="faq" class="bg-slate-50 border-t border-slate-200">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
+      <div class="reveal text-center mb-14">
+        <p class="text-xs md:text-sm font-bold tracking-[0.22em] uppercase text-indigo-600 mb-3">— Frequently asked —</p>
+        <h2 class="display text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 mb-5">Questions, answered.</h2>
+        <p class="text-xl md:text-2xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+          Eight quick reads. Click any question to expand.
+        </p>
+      </div>
+      <div class="reveal space-y-4" id="faq-list">
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            <span>How is The Cert Hub different from other prep platforms?</span>
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-a">
+            <div class="faq-a-inner">
+              <p>Three things. First, <strong>every word is written by one person</strong> — no content farms, no copy-paste from exam dumps. You get a single coherent voice across 20 courses. Second, every module is <strong>story-driven</strong> (Tony's pizza shop for Scrum, movie sets for PMP, power grids for cloud regions) so concepts actually stick. Third, every course is engineered to the <strong>Ivy-League teaching standard</strong> — Bloom's-tagged questions, case-method discernment, capstone projects, and curated readings from canonical sources.</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            <span>Do I need to pay for each course separately?</span>
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-a">
+            <div class="faq-a-inner">
+              <p>No. A single membership unlocks <strong>all 20 courses, all 178 modules, and all 60 mock exams</strong> — Project Management, Cloud, AI, Cybersecurity, Supply Chain, AI Marketing, Bitcoin, and E-Commerce. Compared to ~$1,000 per cert in commercial bootcamps, this is structured as one all-access experience.</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            <span>How long does it take to pass a certification?</span>
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-a">
+            <div class="faq-a-inner">
+              <p>It depends on the credential and your starting point, but our <strong>12-Week Study Plan</strong> is calibrated to the typical full-time-employee learner: ~6-8 hours/week. Foundational certs (AZ-900, CLF-C02, AIF-C01) typically take <strong>3-6 weeks</strong>; mid-tier (PMP, SAA-C03, AZ-104, Security+) take <strong>8-12 weeks</strong>; deep credentials (CSCP, AI-Marketing Strategist) can run <strong>12-16 weeks</strong>. The full 12-Week plan is in the Quick Start Guide.</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            <span>What if I fail my real exam?</span>
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-a">
+            <div class="faq-a-inner">
+              <p>You keep access. Re-take our Final Mock Exam, revisit the modules where you missed concepts, and study the <strong>Exam Trap / Common Misconceptions</strong> sections (every module has one) — these are the patterns most students get wrong on the real exam. The vast majority of students who follow the plan pass on first sitting, but if you don't, the material is yours to use as long as your membership is active.</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            <span>Can I download materials for offline study?</span>
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-a">
+            <div class="faq-a-inner">
+              <p>The content is <strong>view-only inside the platform</strong> to protect the author's copyright (per our content-protection policy). However, every module has a <strong>printable cheat-sheet</strong> designed for 1-2 pages — you can capture all the high-yield exam content via cheat-sheets without copying full Reading.md files. For offline review of stories and analogies, take handwritten notes — it's also better for retention.</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            <span>Is mobile supported?</span>
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-a">
+            <div class="faq-a-inner">
+              <p>Yes. Every page is fully responsive — Reading.md modules, video curation, quizzes, flashcards, and mock exams all work on phones and tablets. The flashcard widget specifically is optimized for thumb-flipping on mobile. For mock exams we recommend a tablet or laptop to mirror real exam conditions.</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            <span>How do I get help if I'm stuck on a concept?</span>
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-a">
+            <div class="faq-a-inner">
+              <p>Each Reading.md has multiple layers: the story-driven explanation, comparison tables, an <em>"Exam Trap / Common Misconceptions"</em> section, a Summary, and a Further Reading list pointing to canonical sources. If you're still stuck, email <strong>syed@transcrypts.com</strong> — the author reads every message personally. We also link to active study communities (Reddit, Discord) in <strong>Resources → Communities</strong>.</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            <span>What if I want a refund?</span>
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-a">
+            <div class="faq-a-inner">
+              <p>Contact <strong>syed@transcrypts.com</strong> within the refund window and we'll handle it directly. Because this is a single-author hub (not a faceless platform), every member message goes to the creator, not a ticketing queue.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Final CTA -->
+      <div class="reveal mt-16">
+        <div class="final-cta">
+          <p class="text-sm md:text-base font-bold tracking-[0.22em] uppercase text-indigo-300 mb-4">— Get started today —</p>
+          <h3 class="display text-4xl md:text-5xl lg:text-6xl font-extrabold mb-5 leading-tight">
+            Your next big certification<br />is closer than you think.
+          </h3>
+          <p class="text-xl md:text-2xl text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed">
+            20 courses · 178 modules · 60 mock exams · 8,000+ practice questions. Sign in to begin, or reach out for access.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a href="login/" class="btn-primary">
+              🔐 Sign in to start <span aria-hidden="true">→</span>
+            </a>
+            <a href="mailto:syed@transcrypts.com" class="btn-secondary">
+              ✉️ Contact for access
+            </a>
+          </div>
+          <p class="text-base text-slate-400 mt-7">
+            Or <a href="#curriculum" class="text-indigo-300 hover:text-white font-semibold underline-offset-4 hover:underline transition">browse all {{ cert_count }} courses ↑</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ============== FOOTER (Liquid-driven from _data/navigation.yml + _data/site_stats.yml) ============== -->
   <footer class="border-t border-slate-200 bg-white">
-    <div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-10 grid md:grid-cols-4 gap-6 items-start">
-      <div class="md:col-span-2">
-        <div class="flex items-center gap-2 font-extrabold mb-2"><span class="text-xl">🎓</span> The Cert Hub</div>
-        <p class="text-base text-slate-500 leading-relaxed">
-          Designed &amp; authored by <strong class="text-slate-900">Humayun Zafar</strong>
-          <span class="text-slate-400">· 📍 Toronto, Canada</span>.<br />
-          A complete self-study hub for <strong class="text-slate-700">{{ cert_count }} industry certifications</strong>
-          across <strong class="text-slate-700">Project Management</strong>, <strong class="text-slate-700">Cloud</strong>, <strong class="text-slate-700">AI &amp; GenAI</strong>, <strong class="text-slate-700">Cybersecurity</strong>, <strong class="text-slate-700">International Supply Chain</strong>, <strong class="text-slate-700">AI-Based Digital Marketing</strong>, <strong class="text-slate-700">Bitcoin &amp; Cryptocurrency</strong>, and <strong class="text-slate-700">E-Commerce</strong> — <strong class="text-slate-700">{{ total_modules }} modules</strong>
-          and <strong class="text-slate-700">{{ mock_exam_count }} full-length mock exams</strong>, story-driven and exam-focused.
+    <div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-14 grid md:grid-cols-3 gap-10 md:gap-12 items-start">
+      <div>
+        <div class="flex items-center gap-3 font-extrabold mb-4 text-xl">
+          <span class="text-3xl">🎓</span>
+          <span class="display text-2xl">The Cert Hub</span>
+        </div>
+        <p class="text-base md:text-lg text-slate-600 leading-relaxed mb-5">
+          Designed &amp; authored by <strong class="text-slate-900">Humayun Zafar</strong> — a single-author self-study hub for
+          <strong class="text-slate-900">{{ cert_count }} industry certifications</strong>,
+          <strong class="text-slate-900">{{ total_modules }} story-driven modules</strong>,
+          and <strong class="text-slate-900">{{ mock_exam_count }} full-length mock exams</strong>.
+        </p>
+        <p class="text-sm md:text-base text-slate-500 leading-relaxed">
+          <span class="inline-flex items-center gap-1.5">
+            <span aria-hidden="true">🍁</span> Made in <strong class="text-slate-700">Toronto, Canada</strong>
+          </span>
         </p>
       </div>
       <div>
-        <p class="text-sm font-bold mb-2">All Tracks</p>
-        <ul class="text-sm space-y-1 text-slate-600">
+        <p class="text-base font-extrabold text-slate-900 mb-4 tracking-wide">Courses &amp; Tracks</p>
+        <ul class="text-base space-y-2 text-slate-600">
           {% for t in site.data.navigation.tracks %}
-          <li><a href="{{ t.base | remove_first: '/' }}" class="hover:text-slate-900">{{ t.icon }} {{ t.title }}</a></li>
+          <li><a href="{{ t.base | remove_first: '/' }}" class="hover:text-indigo-600 transition">{{ t.icon }} {{ t.title }}</a></li>
           {% endfor %}
         </ul>
       </div>
       <div>
-        <p class="text-sm font-bold mb-2">Resources</p>
-        <ul class="text-sm space-y-1.5 text-slate-600">
-          <li><a href="Resources/Books-and-Links/" class="hover:text-slate-900">Books &amp; Links</a></li>
-          <li><a href="Resources/Free-Practice-Tests/" class="hover:text-slate-900">Practice Tests</a></li>
-          <li><a href="Resources/Communities/" class="hover:text-slate-900">Communities</a></li>
-          <li><a href="00-Study-Plan/Quick-Start-Guide/" class="hover:text-slate-900">Quick Start Guide</a></li>
-          <li><a href="00-Study-Plan/12-Week-Study-Plan/" class="hover:text-slate-900">Study Plan</a></li>
-          <li><a href="00-Study-Plan/Exam-Day-Tips/" class="hover:text-slate-900">Exam-Day Tips</a></li>
+        <p class="text-base font-extrabold text-slate-900 mb-4 tracking-wide">Resources &amp; Contact</p>
+        <ul class="text-base space-y-2.5 text-slate-600 mb-6">
+          <li><a href="Resources/Books-and-Links/" class="hover:text-indigo-600 transition">📚 Books &amp; Links</a></li>
+          <li><a href="Resources/Free-Practice-Tests/" class="hover:text-indigo-600 transition">📝 Practice Tests</a></li>
+          <li><a href="Resources/Communities/" class="hover:text-indigo-600 transition">💬 Communities</a></li>
+          <li><a href="00-Study-Plan/Quick-Start-Guide/" class="hover:text-indigo-600 transition">⚡ Quick Start Guide</a></li>
+          <li><a href="00-Study-Plan/12-Week-Study-Plan/" class="hover:text-indigo-600 transition">📅 12-Week Study Plan</a></li>
+          <li><a href="00-Study-Plan/Exam-Day-Tips/" class="hover:text-indigo-600 transition">🎯 Exam-Day Tips</a></li>
+          <li><a href="#faq" class="hover:text-indigo-600 transition">❓ FAQ</a></li>
         </ul>
+        <p class="text-base font-bold text-slate-900 mb-2">Get in touch</p>
+        <p class="text-base text-slate-600">
+          <a href="mailto:syed@transcrypts.com" class="hover:text-indigo-600 transition">✉️ syed@transcrypts.com</a>
+        </p>
       </div>
     </div>
     <div class="border-t border-slate-100 bg-slate-50">
-      <div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row gap-2 items-center justify-between text-xs text-slate-500">
+      <div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row gap-3 items-center justify-between text-sm text-slate-500">
         <p>
           © {{ site.time | date: "%Y" }} <strong class="text-slate-700">Humayun Zafar</strong> · Toronto, Canada · All Rights Reserved.
           Personal study use only — copying &amp; reproduction prohibited.
         </p>
-        <p class="max-w-xl md:text-right">
+        <p class="flex flex-wrap gap-x-4 gap-y-1 justify-center md:justify-end">
+          <a href="#" class="hover:text-indigo-600 transition">Privacy</a>
+          <span class="text-slate-300" aria-hidden="true">·</span>
+          <a href="#" class="hover:text-indigo-600 transition">Terms</a>
+          <span class="text-slate-300" aria-hidden="true">·</span>
+          <a href="#faq" class="hover:text-indigo-600 transition">FAQ</a>
+          <span class="text-slate-300" aria-hidden="true">·</span>
+          <a href="mailto:syed@transcrypts.com" class="hover:text-indigo-600 transition">Contact</a>
+        </p>
+      </div>
+      <div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 pb-6 text-xs text-slate-400">
+        <p class="text-center sm:text-left">
           Not affiliated with any certification body. All trademarks (PMP, PSM, AWS, Azure, AIF-C01, AI-102, Security+, SY0-701, CSCP, CPIM, CLTD, CPSM) belong to their respective owners ({% for h in site.data.site_stats.trademark_holders %}{{ h.name }}{% unless forloop.last %}, {% endunless %}{% endfor %}).
         </p>
       </div>
@@ -1378,6 +1955,136 @@ sitemap: false
           el.style.transitionDelay = Math.min(i * 60, 240) + 'ms';
         }
         io.observe(el);
+      });
+    })();
+  </script>
+
+  <!-- ============== FAQ ACCORDION ============== -->
+  <script>
+    (function () {
+      var items = document.querySelectorAll('.faq-item');
+      if (!items.length) return;
+      items.forEach(function (item) {
+        var btn = item.querySelector('.faq-q');
+        var answer = item.querySelector('.faq-a');
+        if (!btn || !answer) return;
+        btn.addEventListener('click', function () {
+          var isOpen = item.classList.contains('open');
+          if (isOpen) {
+            answer.style.maxHeight = '0px';
+            item.classList.remove('open');
+            btn.setAttribute('aria-expanded', 'false');
+          } else {
+            answer.style.maxHeight = answer.scrollHeight + 'px';
+            item.classList.add('open');
+            btn.setAttribute('aria-expanded', 'true');
+          }
+        });
+      });
+      // Re-measure open items on resize so the answer height stays accurate
+      window.addEventListener('resize', function () {
+        document.querySelectorAll('.faq-item.open .faq-a').forEach(function (a) {
+          a.style.maxHeight = a.scrollHeight + 'px';
+        });
+      });
+    })();
+  </script>
+
+  <!-- ============== ANIMATED STAT COUNTERS ============== -->
+  <script>
+    (function () {
+      var nodes = document.querySelectorAll('[data-count-to]');
+      if (!nodes.length) return;
+      var prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      function formatInt(n) {
+        // Add commas for >999 (e.g., 8,000+); strip commas otherwise
+        if (n >= 1000) return n.toLocaleString('en-US');
+        return String(n);
+      }
+
+      function animate(el) {
+        var target = parseInt(el.getAttribute('data-count-to'), 10);
+        var suffix = el.getAttribute('data-count-suffix') || '';
+        if (isNaN(target)) return;
+        if (prefersReduced || !('requestAnimationFrame' in window)) {
+          el.textContent = formatInt(target) + suffix;
+          return;
+        }
+        var duration = 1400 + Math.min(target, 8000) / 10; // longer for bigger numbers
+        var start = null;
+        function step(t) {
+          if (start === null) start = t;
+          var elapsed = t - start;
+          var progress = Math.min(elapsed / duration, 1);
+          // easeOutCubic
+          var eased = 1 - Math.pow(1 - progress, 3);
+          var val = Math.floor(eased * target);
+          el.textContent = formatInt(val) + suffix;
+          if (progress < 1) requestAnimationFrame(step);
+          else el.textContent = formatInt(target) + suffix;
+        }
+        requestAnimationFrame(step);
+      }
+
+      if (!('IntersectionObserver' in window)) {
+        nodes.forEach(animate);
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            animate(entry.target);
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.4 });
+      nodes.forEach(function (el) { io.observe(el); });
+    })();
+  </script>
+
+  <!-- ============== NAV SCROLL STATE (Stripe/Apple) ============== -->
+  <script>
+    (function () {
+      var nav = document.querySelector('nav.sticky');
+      if (!nav) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 200) nav.classList.add('is-scrolled');
+        else nav.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function () {
+        if (!ticking) {
+          requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+      update();
+    })();
+  </script>
+
+  <!-- ============== SMOOTH-SCROLL ANCHOR LINKS (graceful fallback for older browsers) ============== -->
+  <script>
+    (function () {
+      // CSS already provides html { scroll-behavior: smooth }, but this handles
+      // sticky-nav offset on browsers that don't honor scroll-padding cleanly.
+      document.addEventListener('click', function (e) {
+        var link = e.target.closest && e.target.closest('a[href^="#"]');
+        if (!link) return;
+        var href = link.getAttribute('href');
+        if (!href || href === '#' || href.length < 2) return;
+        var target = document.querySelector(href);
+        if (!target) return;
+        e.preventDefault();
+        var navH = (document.querySelector('nav.sticky') || {}).offsetHeight || 0;
+        var top = target.getBoundingClientRect().top + window.pageYOffset - navH - 8;
+        try {
+          window.scrollTo({ top: top, behavior: 'smooth' });
+        } catch (err) {
+          window.scrollTo(0, top);
+        }
+        history.pushState && history.pushState(null, '', href);
       });
     })();
   </script>

@@ -5,9 +5,12 @@ title: AI Marketing Strategist Track
 
 # 🧠 AI Marketing Strategist Track (Advanced — Course 3 of 5)
 
+**📣 AI Marketing** › Course 3 of 5 — Strategist (Advanced)
+
 > **Goal:** Become the marketer who designs measurement architecture, builds attribution and Marketing Mix Models, ships predictive scoring, and leads privacy-first measurement strategy. The person the CMO calls when the CFO asks, "What did marketing actually do this quarter?"
 > **Duration:** 6 months part-time (~120 hours of study)
 > **Cost:** Free curriculum. Real exam vouchers stack to ~$150–$450 depending on combination you pursue.
+> **Difficulty:** Advanced · 3+ yrs marketing ops/paid/analytics experience
 
 This is the **third course in the AI Digital Marketing ladder**. It assumes you have either:
 - Completed `14-AI-Marketing-Foundations` (the introduction) and `15-AI-Marketing-Practitioner` (the channel-execution course), **or**

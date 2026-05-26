@@ -5,10 +5,13 @@ title: E-Commerce Track
 
 # 🛒 E-Commerce Track (Course 20)
 
+**🛒 E-Commerce** › Google → Adobe Commerce → Wharton ladder
+
 > **Goal:** Become the person who can run a $50M-$500M digital storefront end-to-end — platform, catalog, payments, fulfillment, paid + organic acquisition, lifecycle, analytics, marketplaces, and international expansion.
 > **Duration:** 12-16 weeks part-time (10-14 hrs/week)
 > **Prerequisite:** Comfort with web tech basics + a real or hypothetical product. The AI Marketing tracks (14-18) help but are not required.
 > **Cost to study:** Free (this course) + optional $200-500 for hands-on platform sandboxes (Shopify Dev Store is free; Adobe Commerce trial 30 days)
+> **Difficulty:** Intermediate-to-advanced · designed for operators / managers
 
 ---
 

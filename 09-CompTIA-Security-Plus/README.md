@@ -5,9 +5,12 @@ title: CompTIA Security+ Track (SY0-701)
 
 # 🛡️ CompTIA Security+ Track (SY0-701)
 
+**🛡️ Cybersecurity** › CompTIA Security+ (SY0-701)
+
 > **Goal:** Pass CompTIA Security+ (SY0-701) on the first attempt with a comfortable margin above 750/900.
 > **Duration:** 6–8 weeks part-time (10–12 hrs/week)
 > **Cost:** $392 USD (single voucher); cert is valid 3 years and renews with CEUs or higher cert
+> **Difficulty:** Foundational-to-intermediate · CompTIA recommends ~2 yrs IT/Network+ first
 
 ---
 

@@ -1,5 +1,10 @@
 # 📚 Books, Links & Resources
 
+> The single most-recommended free and paid resources for every cert track on this site — organized by cert family, with what's official, what's community-favored, and what to skip.
+
+**Resources** · Books & Links
+*Last updated: 2026-05*
+
 ---
 
 ## 🎯 SCRUM MASTER (PSM I)
@@ -190,6 +195,112 @@
 
 ---
 
+## 🚀 AI-BASED DIGITAL MARKETING (COURSES 14–18)
+
+### 📖 ESSENTIAL (Free, Official)
+- **HubSpot Academy** — Inbound, Content Marketing, Email Marketing certifications (all free + exam) — <https://academy.hubspot.com/>
+- **Google Skillshop** — Google Ads (Search, Shopping, Display, Video, Apps), Google Analytics (GA4) IQ — <https://skillshop.exceedlms.com/>
+- **Meta Blueprint** — Facebook + Instagram Ads (foundational courses free; certification exams ~$99-150 each) — <https://www.facebookblueprint.com/>
+- **Semrush Academy** — SEO + content marketing courses (free) — <https://www.semrush.com/academy/>
+- **OpenAI Cookbook + Prompt Library** — official prompt-engineering examples — <https://cookbook.openai.com/>
+- **Anthropic Prompt Library + Cookbook** — current Claude prompting patterns — <https://docs.claude.com/en/resources/prompt-library>
+
+### 📚 RECOMMENDED BOOKS
+- **"Building a StoryBrand 2.0"** by Donald Miller — the most-cited brand-message framework
+- **"They Ask, You Answer"** by Marcus Sheridan — inbound + content marketing playbook
+- **"Hooked"** by Nir Eyal — habit-forming products + retention
+- **"Influence"** by Robert Cialdini — the six principles of persuasion (still relevant)
+- **"Contagious"** by Jonah Berger — how content goes viral (research-backed)
+- **"Lean Analytics"** by Alistair Croll — the right metric for the right stage
+- **"Predictably Irrational"** by Dan Ariely — behavioral econ for CRO + pricing
+- **"Generative AI for Marketing"** (varies — multiple recent titles; the field moves fast — prefer the latest)
+
+### 🎥 BEST YOUTUBE CHANNELS (search-based)
+- Search: "Neil Patel SEO" — <https://www.youtube.com/results?search_query=Neil+Patel+SEO>
+- Search: "Ahrefs Sam Oh" — <https://www.youtube.com/results?search_query=Ahrefs+Sam+Oh>
+- Search: "Income School Project 24" — <https://www.youtube.com/results?search_query=Income+School+Project+24>
+- Search: "Marketing Examples Harry Dry" — <https://www.youtube.com/results?search_query=Marketing+Examples+Harry+Dry>
+- Search: "Andrew Ng Generative AI for Everyone" — <https://www.youtube.com/results?search_query=Andrew+Ng+Generative+AI+for+Everyone>
+- Search: "Karpathy Neural Networks Zero to Hero" — <https://www.youtube.com/results?search_query=Karpathy+Neural+Networks+Zero+to+Hero>
+
+### 💵 PAID COURSES (optional)
+- **CXL Institute** — analytics, conversion optimization, growth marketing (the deepest practitioner curriculum; ~$1,000-2,000/yr) — <https://cxl.com/>
+- **Coursera — Wharton "Digital Marketing & E-Commerce" Specialization** — Ivy League brand, ~$500 total
+- **DMI Professional Diploma in eCommerce Marketing** — ~$1,800-2,400 (strong in EU/UK)
+- **OMCP (Online Marketing Certified Professional)** — $199 per specialization
+- **Andrew Ng — "AI for Everyone" / "Generative AI for Everyone"** (Coursera; auditable free, certificate ~$49)
+
+---
+
+## ₿ BITCOIN & CRYPTOCURRENCY (COURSE 19)
+
+### 📖 ESSENTIAL (Free, Official)
+- **The Bitcoin White Paper** by Satoshi Nakamoto (8 pages — read it 3 times) — <https://bitcoin.org/bitcoin.pdf>
+- **Bitcoin.org** — official starting point — <https://bitcoin.org/en/getting-started>
+- **Princeton "Bitcoin and Cryptocurrency Technologies"** — free MOOC + textbook by Arvind Narayanan et al. — <https://bitcoinbook.cs.princeton.edu/>
+- **bitcoin.dev / Bitcoin Core docs** — developer documentation — <https://developer.bitcoin.org/>
+- **Lightning Network paper** by Joseph Poon & Thaddeus Dryja — <https://lightning.network/lightning-network-paper.pdf>
+
+### 📚 RECOMMENDED BOOKS
+1. **"Mastering Bitcoin" (3rd Edition)** by Andreas Antonopoulos — the technical canon (free online) — <https://github.com/bitcoinbook/bitcoinbook>
+2. **"Bitcoin and Cryptocurrency Technologies"** by Narayanan, Bonneau, Felten, Miller, Goldfeder (Princeton; free PDF) — the academic foundation
+3. **"The Bitcoin Standard"** by Saifedean Ammous — monetary theory framing
+4. **"Programming Bitcoin"** by Jimmy Song — code-along introduction to building from scratch
+5. **"The Blocksize War"** by Jonathan Bier — political/economic history of Bitcoin's biggest fork debate
+
+### 🎥 BEST YOUTUBE CHANNELS (search-based)
+- Search: "Andreas Antonopoulos Mastering Bitcoin" — <https://www.youtube.com/results?search_query=Andreas+Antonopoulos+Mastering+Bitcoin>
+- Search: "Jameson Lopp Bitcoin" — <https://www.youtube.com/results?search_query=Jameson+Lopp+Bitcoin>
+- Search: "BTC Sessions Bitcoin tutorials" — <https://www.youtube.com/results?search_query=BTC+Sessions+Bitcoin+tutorials>
+- Search: "What Bitcoin Did podcast" — <https://www.youtube.com/results?search_query=What+Bitcoin+Did+podcast>
+- Search: "Plan B stock-to-flow" — <https://www.youtube.com/results?search_query=Plan+B+stock-to-flow>
+
+### 💵 PAID COURSES & EXAMS
+- **C4 — Certified Bitcoin Professional (CBP)** — $150 USD, lifetime credential — <https://cryptoconsortium.org/exams/cbp/>
+- **BTA — Certified Blockchain Solution Architect (CBSA)** — $300 USD — <https://blockchaintrainingalliance.com/>
+- **ACAMS — Cryptoasset Anti-Financial Crime Specialist (CCAS)** — ~$1,395, compliance-track — <https://www.acams.org/>
+- **University of Nicosia — MSc in Blockchain & Digital Currency** — ~€11,400, longest-running blockchain degree (since 2014) — <https://www.unic.ac.cy/blockchain/msc-digital-currency/>
+
+> ⚠️ **Avoid:** "Blockchain Council" and "Certified Cryptocurrency Expert" are paper mills with no real industry recognition. Stick to C4, BTA, ACAMS, or UNIC.
+
+---
+
+## 🛒 E-COMMERCE (COURSE 20)
+
+### 📖 ESSENTIAL (Free or Cheap, Official)
+- **Google Digital Marketing & E-Commerce Professional Certificate** (Coursera; ~$49/mo, ~6 months, ~$300 total) — <https://www.coursera.org/professional-certificates/google-digital-marketing-ecommerce>
+- **Shopify Academy** — free Shopify-platform courses + certifications — <https://www.shopify.com/learn>
+- **Adobe Commerce Documentation** — free, the source of truth for Magento/Adobe Commerce — <https://experienceleague.adobe.com/docs/commerce.html>
+- **BigCommerce University** — free platform-specific courses — <https://www.bigcommerce.com/university/>
+- **Google Ads Shopping certification** (Google Skillshop) — free
+- **Baymard Institute** — research-backed CRO + UX studies (~$200/mo membership; free articles are gold) — <https://baymard.com/research>
+
+### 📚 RECOMMENDED BOOKS
+1. **"E-Commerce 2024"** by Kenneth Laudon & Carol Traver — the standard university textbook (updated annually)
+2. **"Don't Make Me Think"** by Steve Krug — UX classic, still relevant for storefront design
+3. **"Pre-Suasion"** by Robert Cialdini — frame-setting before the buy decision
+4. **"Hacking Growth"** by Sean Ellis & Morgan Brown — the growth-team playbook
+5. **"This is Marketing"** by Seth Godin — modern, story-driven marketing thinking
+6. **"The Lean Startup"** by Eric Ries — validate before you build
+
+### 🎥 BEST YOUTUBE CHANNELS (search-based)
+- Search: "Shopify tutorials e-commerce" — <https://www.youtube.com/results?search_query=Shopify+tutorials+e-commerce>
+- Search: "Adobe Commerce Magento tutorial" — <https://www.youtube.com/results?search_query=Adobe+Commerce+Magento+tutorial>
+- Search: "Ecom Empires" — <https://www.youtube.com/results?search_query=Ecom+Empires>
+- Search: "Davie Fogarty e-commerce" — <https://www.youtube.com/results?search_query=Davie+Fogarty+e-commerce>
+- Search: "Baymard Institute UX research" — <https://www.youtube.com/results?search_query=Baymard+Institute+UX+research>
+
+### 💵 PAID COURSES & EXAMS
+- **Google Digital Marketing & E-Commerce Professional Certificate** (~$300) — Tier-1 entry credential
+- **Adobe Certified Expert — Adobe Commerce Business Practitioner** — $225 (Adobe Commerce / Magento focus)
+- **Salesforce B2C Commerce Cloud Developer** — $200 (enterprise retail; ~$165K avg US salary)
+- **Salesforce B2C Commerce Cloud Architect** — $400 (deep enterprise architecture)
+- **Shopify Theme Developer certifications** — free for partners
+- **Wharton Online — Digital Marketing & E-Commerce Specialization** — ~$500 (Coursera; lifetime credential)
+- **CXL Institute** — paid + advanced; the e-commerce CRO + analytics curriculum is industry-leading
+
+---
+
 ## 🌍 GENERAL AGILE / PM
 
 ### 📚 BOOKS WORTH READING
@@ -258,6 +369,26 @@
 - **ISM CPSM** — <https://www.ismworld.org/certification-and-training/certification/cpsm-certification/>
 - Pricing typically requires membership and Learning System purchase; check official pages.
 
+### AI Marketing (HubSpot, Google, Meta, DMI, OMCP)
+- **HubSpot Academy** — <https://academy.hubspot.com/> (Inbound, Content Marketing, Email — all free)
+- **Google Skillshop** — <https://skillshop.exceedlms.com/> (Google Ads, GA4 IQ — all free)
+- **Meta Blueprint** — <https://www.facebookblueprint.com/> (foundational free; certification exams ~$99-150)
+- **DMI Professional Diploma in eCommerce Marketing** — <https://digitalmarketinginstitute.com/> (~$1,800-2,400)
+- **OMCP** — <https://www.omcp.com/> ($199 per specialization)
+- **Wharton Online via Coursera** — <https://www.coursera.org/specializations/wharton-business-foundations> (~$500)
+
+### Bitcoin & Cryptocurrency
+- **C4 — Certified Bitcoin Professional (CBP)** — <https://cryptoconsortium.org/exams/cbp/> ($150, lifetime)
+- **BTA — Certified Blockchain Solution Architect (CBSA)** — <https://blockchaintrainingalliance.com/> ($300)
+- **ACAMS — CCAS** — <https://www.acams.org/> (~$1,395, compliance track)
+- **University of Nicosia — MSc Blockchain & Digital Currency** — <https://www.unic.ac.cy/blockchain/msc-digital-currency/> (~€11,400, full degree)
+
+### E-Commerce
+- **Google Digital Marketing & E-Commerce Professional Certificate** — <https://www.coursera.org/professional-certificates/google-digital-marketing-ecommerce> (~$300)
+- **Adobe Certified Expert — Adobe Commerce Business Practitioner** — <https://helpx.adobe.com/certification.html> ($225)
+- **Salesforce B2C Commerce Cloud Developer / Architect** — <https://trailhead.salesforce.com/> ($200 / $400)
+- **Shopify Partner certifications** — <https://www.shopify.com/partners/learn> (free)
+
 ---
 
 ## 🤝 COMMUNITIES
@@ -321,6 +452,23 @@
 - Valid **4 years**
 - Renew via **60 continuing education hours**
 
+### Vendor marketing certs (HubSpot, Google Ads, GA4 IQ, Meta Blueprint)
+- Each is valid **1 year**
+- **Free retake** to renew (vendor-portal, no proctor)
+
+### Coursera-hosted programs (Wharton, Google D-M & E-C)
+- **Lifetime credential** — never expire
+
+### C4 (CBP)
+- **Lifetime credential** — never expires
+
+### BTA (CBSA / CBSE / CBSD)
+- Valid **3 years**
+- Renew via re-exam
+
+### Adobe Commerce / Salesforce B2C
+- Roughly tied to vendor product release cycle (typically 2 years for Adobe; per-release maintenance exam for Salesforce — 3x/year)
+
 ---
 
 ## 🏆 NEXT-LEVEL CERTS (After You Pass)
@@ -380,6 +528,37 @@
 - **PMP** for project leadership
 - **Sustainable Procurement certifications** (CIPS, etc.)
 
+### Beyond HubSpot Inbound / Google Ads / Meta Blueprint:
+- **Google Analytics Individual Qualification (GA4 IQ)** — measurement
+- **CXL Institute** — Measurement, Conversion Optimization, Growth Marketing minidegrees
+- **Wharton Digital Marketing & E-Commerce Specialization** — strategy depth
+- **DMI Professional Diploma** — EU/UK weight
+- **OMCP** — specialist marketing tracks
+
+### Beyond Certified Bitcoin Professional (CBP):
+- **BTA CBSA** — Blockchain Solution Architect
+- **ACAMS CCAS** — Cryptoasset Anti-Financial Crime Specialist (compliance track)
+- **University of Nicosia MSc** — academic depth
+- Adjacent: **CFA Level I**, **AWS Solutions Architect Associate** (many crypto firms run on AWS)
+
+### Beyond Google Digital Marketing & E-Commerce Professional Certificate:
+- **Adobe Commerce Business Practitioner / Developer** — Adobe-shop depth
+- **Salesforce B2C Commerce Developer / Architect** — enterprise retail (~$165K avg US salary at Architect tier)
+- **Wharton Online Specialization** — strategy + brand
+- **Google Ads Shopping certification** — for paid acquisition specialization
+
 ---
 
+## 🚀 Next Steps
+
 🎯 **Bookmark this page. You'll come back to it often.**
+
+When you're ready:
+
+- 🚀 [**Quick Start Guide**](../00-Study-Plan/Quick-Start-Guide/) — pick your starting course
+- 📅 [**12-Week Study Plan**](../00-Study-Plan/12-Week-Study-Plan/) — the day-by-day cadence
+- 🏆 [**Certifications Catalog**](./International-Certifications/) — fees, formats, registration procedure for every cert
+- 🧪 [**Free Practice Tests**](./Free-Practice-Tests/) — where to find more questions
+- 🤝 [**Communities**](./Communities/) — find a study buddy
+- 🎯 [**Exam Day Tips**](../00-Study-Plan/Exam-Day-Tips/) — read the morning of your exam
+- 🏠 [**Course Home**](../) — all 20 tracks at a glance

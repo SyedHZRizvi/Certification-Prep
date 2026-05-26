@@ -1,8 +1,13 @@
-# 📅 The 12-Week Study Plan (Scrum Master → PMP)
+# 📅 The 12-Week Study Plan
 
-> ⚠️ **Scope of this plan:** The week-by-week schedule below is written for the **Scrum Master → PMP** path. If you're preparing for AWS, Azure, AI, Security+, or one of the supply-chain certs, see [Adapting This Plan To Other Certs](#-adapting-this-plan-to-other-certs) at the bottom — the same principles, pacing logic, and mock-exam cadence transfer cleanly.
+> A day-by-day schedule that takes you from zero to certified in 12 weeks at ~10 hours/week. The detailed timetable below is written for one specific path (Scrum Master → PMP); the same structure adapts cleanly to every cert on this site.
 
-> **Reality check:** This plan assumes ~10 hours/week. Less time? Stretch it to 16 weeks. More time? Compress to 8.
+**Study Plan** · 12-Week Study Plan
+*Last updated: 2026-05*
+
+> ⚠️ **Scope of this plan:** The week-by-week schedule below is written for the **Scrum Master → PMP** path as a worked example. If you're preparing for AWS, Azure, AI, Security+, one of the supply-chain certs, AI Marketing, Bitcoin, or E-Commerce, see [Adapting This Plan To Other Certs](#-adapting-this-plan-to-other-certs) at the bottom — the same principles, pacing logic, and mock-exam cadence transfer cleanly across all 20 tracks.
+
+> **Reality check:** This plan assumes ~10 hours/week. Less time? Stretch it to 16 weeks. More time? Compress to 8. **12 weeks is for ONE cert at a time** — not all 20 at once. Pick one, finish it, then start the next.
 
 ---
 
@@ -185,27 +190,57 @@ You got this. 💪
 
 ## 🔧 Adapting This Plan To Other Certs
 
-The 12 weeks above were written for **Scrum Master (Weeks 1-4) → PMP (Weeks 5-12)**. If you're studying for another cert in this course, use the same *structure* but swap the *content*. Rough templates:
+The 12 weeks above were written for **Scrum Master (Weeks 1-4) → PMP (Weeks 5-12)**. If you're studying for another cert in this course, use the same *structure* but swap the *content*. Rough templates for every other track:
 
-### Cloud Practitioner / Fundamentals tier (CLF-C02, AZ-900, AIF-C01)
+### Fundamentals tier (CLF-C02, AZ-900, AIF-C01)
 - **Length:** 4-6 weeks at ~10 hours/week.
 - **Cadence:** Module 1-2 per week (read + video + quiz), full review week, two mocks + Final Mock Exam in the last week.
-- **Modules:** See each track's `README.md` for the module list (6-8 modules per track).
+- **Modules per track:** AWS CLF-C02 = 8, Azure AZ-900 = 6, AWS AIF-C01 = 8.
 
 ### Associate / Administrator tier (SAA-C03, AZ-104, AI-102, Security+ SY0-701)
 - **Length:** 10-12 weeks at ~10 hours/week.
 - **Cadence:** Mirrors the PMP cadence above — domain-by-domain reading and quizzing, two practice exams in Week 11, full mock in Week 12.
 - **Hands-on labs:** Add 1-2 hours/week for hands-on (AWS Free Tier, Azure Free Account, or labs in the track).
+- **Modules per track:** SAA-C03 = 10, AZ-104 = 10, AI-102 = 8, Security+ = 10.
 
 ### AI tier (AIF-C01, AI-102)
-- **Length:** AIF-C01 ~5 weeks; AI-102 ~10 weeks (assumes some Azure or AI background).
-- **Cadence:** Same structure as cloud certs. Front-load reading for vocabulary, back-load hands-on.
+- **Length:** AIF-C01 ~5 weeks (Fundamentals); AI-102 ~10 weeks (Associate; assumes some Azure or AI background).
+- **Cadence:** Same structure as cloud certs. Front-load reading for vocabulary, back-load hands-on with Azure OpenAI / Bedrock.
 
 ### Supply Chain (ASCM CSCP, CPIM, CLTD, ISM CPSM)
 - **Length:** 12-16 weeks per cert at ~10 hours/week.
 - **Cadence:** Heavier vocabulary loading in the first 2 weeks (APICS Dictionary for ASCM; ISM Bridge of Knowledge for CPSM). Mocks weighted toward the final 3 weeks.
+- **Modules per track:** CSCP = 10, CPIM = 8 (Part 1 + Part 2 stacked), CLTD = 8, CPSM = 8 (across 3 separate exams).
+
+### AI-Based Digital Marketing (Courses 14-18, a 5-course ladder)
+- **Length per course:** Foundations (14) = 6-8 weeks; Practitioner (15) = 8-10 weeks; Strategist (16) = 10-12 weeks; Entrepreneur (17) = 6-8 weeks; Capstone Portfolio (18) = 8-10 weeks (project-driven).
+- **Cadence:** Practitioner-onward, replace half the "video" allocation with hands-on (run a real Google Ads or Meta campaign for $50; build a GA4 property; ship one piece of AI-generated content per week). The ladder is project-heavy, not exam-heavy.
+- **Modules per track:** Foundations = 10, Practitioner = 10, Strategist = 10, Entrepreneur = 8, Capstone = 8.
+- **Optional industry certs along the way:** HubSpot Inbound (after 14), Google Ads + Meta Blueprint (after 15), GA4 IQ (after 16), DMI / OMCP (after 18).
+
+### Bitcoin & Cryptocurrency (Course 19)
+- **Length:** 10-14 weeks at ~10 hours/week (CBP-aligned).
+- **Cadence:** Modules 1-2 (white paper + cryptography) are conceptual — read-and-quiz heavy. Modules 3-7 reward hands-on (set up a wallet, run a node in regtest, test a Lightning channel). Modules 8-10 (regulation, custody, broader ecosystem) lean back toward reading + current-events drills.
+- **Modules:** 10. Maps to Princeton MOOC + C4 CBP exam. Stretch goal: CBSA (Architect) ~3 months after CBP.
+
+### E-Commerce (Course 20)
+- **Length:** 12-16 weeks at ~10 hours/week.
+- **Cadence:** Modules 1-3 (business models, platforms, PIM) are foundational. Modules 4-7 (payments, fulfillment, CRO, paid acquisition) reward hands-on with a real store. Modules 8-10 (SEO + lifecycle, analytics + marketplaces, cross-border + B2B + composable) lean strategic.
+- **Modules:** 10. Maps to Google Digital Marketing & E-Commerce → Google Ads Shopping → Adobe Commerce Business Practitioner → Wharton Digital Marketing & E-Commerce specialization.
 
 ### How to Adapt the Daily Tables
 For any track, replace `Module N` references in the tables above with the equivalent module from your chosen track. The activity types (Read → Watch → Quiz → Flashcards → Mock) stay the same. The science (spaced repetition, interleaving, active recall) stays the same.
 
 For per-cert pacing, see the `README.md` and `Cheat-Sheet.md` inside each track folder.
+
+---
+
+## 🚀 Next Steps
+
+You've got the plan. Now:
+
+1. ☑️ Open the [Quick Start Guide](./Quick-Start-Guide/) if you haven't picked a cert yet
+2. ☑️ Open the `README.md` of your chosen track (any of the [20 courses](../))
+3. ☑️ Open [Exam Day Tips](./Exam-Day-Tips/) — bookmark it for the morning of
+4. ☑️ Open the [Certifications Catalog](../Resources/International-Certifications/) to confirm fees + registration steps
+5. ☑️ Start Module 01 today. Not tomorrow. Today.

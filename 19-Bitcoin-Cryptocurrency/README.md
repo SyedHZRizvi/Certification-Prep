@@ -5,9 +5,12 @@ title: Bitcoin & Cryptocurrency Track
 
 # ₿ Bitcoin & Cryptocurrency Track
 
+**₿ Bitcoin & Crypto** › Princeton → C4 CBP → CBSA → UNic MSc ladder
+
 > **Goal:** Build a Princeton/MIT-grade understanding of Bitcoin — the cryptography, the consensus mechanism, the network, the wallets, the economics, the layer-2s, the regulatory landscape, and the institutional rails — then pass the real-world certification ladder that begins with Princeton's free course and ends with the C4 Certified Bitcoin Professional (CBP) exam.
 > **Duration:** 10–14 weeks part-time (≈8–10 hrs/week)
 > **Cost:** Free (this credential) + $100–$400 for the real industry exams below
+> **Difficulty:** Intermediate-to-advanced · comfort with cryptography basics + finance literacy
 
 ---
 
@@ -192,3 +195,7 @@ You've got this. 🚀
 - 09-CompTIA-Security-Plus Module-02 (Cryptography & PKI) is the easiest warm-up to Module 2 here.
 - 14-AI-Marketing-Foundations Module-09 (Compliance) reinforces the regulatory chapter posture of Module 8.
 - 11-ASCM-CPIM and 12-ASCM-CLTD modules on inventory and logistics give context for Module 10's CBDC and stablecoin sections.
+
+---
+
+**Next:** [Course 20 — E-Commerce](../20-E-Commerce/README.md)

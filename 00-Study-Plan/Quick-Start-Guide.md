@@ -1,14 +1,17 @@
 # 🚀 Quick Start Guide
 
-> **Goal of this page:** Get you *doing* something within 10 minutes — no matter which of the 20 certifications you're chasing.
+> **Goal of this page:** Get you *doing* something within 10 minutes — no matter which of the 20 certifications and tracks you're chasing.
 >
 > 🏆 **Looking for the certification you want to chase?** See the [**International Certifications Catalog**](../Resources/International-Certifications/) for every certification this site maps to — with issuing body, fee, exam format, registration procedure, and renewal rules.
 
+**Study Plan** · Quick Start Guide
+*Last updated: 2026-05*
+
 ---
 
-## 🎯 Decide Your Path (2 minutes)
+## 🎯 Pick Your Starting Course (2 minutes)
 
-Pick ONE. The detailed week-by-week plan in [12-Week Study Plan](./12-Week-Study-Plan.md) is written for the Scrum→PMP path, but the *principles* (spaced repetition, interleaving, mocks) work for every track.
+Pick ONE. The detailed week-by-week plan in [12-Week Study Plan](./12-Week-Study-Plan.md) is written for the Scrum→PMP path, but the *principles* (spaced repetition, interleaving, mocks) work for every track. All 20 options are listed below — grouped by category, with realistic time-to-cert estimates.
 
 ### Project & Agile
 - **Path A — "I want Scrum Master ASAP"** → [Scrum Master Track](../01-Scrum-Master/README.md) · Plan: ~4 weeks.
@@ -179,7 +182,7 @@ After studying thousands of pass/fail patterns, these stand out:
 - **AI-Based Digital Marketing (14–18):** Yes — these courses are designed to be self-contained. HubSpot Academy, Google Skillshop, and Meta Blueprint are all genuinely free and pair perfectly. The only thing you'll likely pay for is the AI tools you're learning to use (ChatGPT Plus or Claude Pro ~$20/mo, a Midjourney/Adobe subscription if you're doing creative work) — but those are working tools, not study materials.
 
 **Q: Is "AI-Based Digital Marketing" itself a certification?**
-**A:** Not a single one — it's a *5-course ladder* mapped to multiple real industry credentials. After Course 14 you're ready for HubSpot Inbound; after 15 you're ready for Google Ads Search + Meta Blueprint; after 16 you're ready for Google Analytics Individual Qualification (GA4) and CXL's Measurement & Analytics; after 17 you're ready to actually start an agency; after 18 you have a portfolio that gets you hired or your first paying clients. Each course's `README.md` lists the specific industry certifications it maps to.
+**A:** Not a single one — it's a *5-course ladder* mapped to multiple real industry credentials. After Course 14 you're ready for HubSpot Inbound + Content Marketing; after 15 you're ready for Google Ads Search/Shopping + Meta Blueprint; after 16 you're ready for Google Analytics Individual Qualification (GA4) and CXL's Measurement & Analytics; after 17 you're ready to actually start an agency (no single cert — operational readiness); after 18 you have a portfolio + can sit DMI Professional Diploma in eCommerce Marketing or OMCP. Each course's `README.md` lists the specific industry certifications it maps to, and the [Certifications Catalog](../Resources/International-Certifications/) groups them all in one place.
 
 **Q: How many hours total to pass?**
 - Scrum Master: 30–50 hours
@@ -218,6 +221,26 @@ After studying thousands of pass/fail patterns, these stand out:
 **Q: Do I need the ASCM Learning System to pass CSCP/CPIM/CLTD?**
 **A:** Realistically — yes for most candidates. It's expensive, but the ASCM exams are written from those materials and the question pool inside the Learning System is the closest practice you'll get.
 
+**Q: How do the AI Marketing courses (14-18) sequence — and can I skip ahead?**
+**A:** The five courses are a ladder: Foundations (14) → Practitioner (15) → Strategist (16) → Entrepreneur (17) → Capstone (18). If you're brand-new to marketing, start at 14. If you've already run campaigns and you want AI-augmentation, start at 15. If you have analytics chops and want attribution / MMM / predictive depth, start at 16. 17 and 18 assume you've already done at least one of 14-16. Total ladder: ~9-12 months part-time.
+
+**Q: Is the Bitcoin course (19) heavy on math or programming?**
+**A:** Math: light (hash functions, public-key crypto at a conceptual level). Programming: optional but rewarded — Module 6 (Bitcoin Script) and Module 7 (Lightning) reward hands-on. The course maps to the CBP (Certified Bitcoin Professional) exam, which is conceptual; CBSA (Certified Blockchain Solution Architect) is more architectural.
+
+**Q: Is the E-Commerce course (20) platform-specific (Shopify-only, Magento-only)?**
+**A:** No — it's platform-agnostic. The 10 modules cover business models, PIM, payments, fulfillment, CRO, paid + organic acquisition, attribution, marketplaces, cross-border, and composable commerce. Adobe Commerce, Shopify, Salesforce B2C, and BigCommerce are all referenced in their appropriate modules. Use the certification that fits your stack: Google Digital Marketing & E-Commerce (generalist), Adobe Commerce BP (Adobe-shop), or Salesforce B2C (enterprise retail).
+
 ---
 
+## 🚀 Next Steps
+
 Ready? 🚀 Open the `README.md` of whichever track you picked above and start with **Module 01**.
+
+Then, when you need them:
+
+- 📅 [**12-Week Study Plan**](./12-Week-Study-Plan/) — the day-by-day cadence (template; adapt to your cert)
+- 🎯 [**Exam Day Tips**](./Exam-Day-Tips/) — read the morning of your exam
+- 🏆 [**Certifications Catalog**](../Resources/International-Certifications/) — fees, formats, registration procedure for every cert
+- 📚 [**Books & Links**](../Resources/Books-and-Links/) — the canonical resource list per track
+- 🧪 [**Free Practice Tests**](../Resources/Free-Practice-Tests/) — where to find more questions
+- 🤝 [**Communities**](../Resources/Communities/) — don't study alone

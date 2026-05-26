@@ -5,9 +5,12 @@ title: AI Marketing Capstone Portfolio
 
 # 🏗️ AI Marketing Capstone Portfolio (Course 5 of 5)
 
+**📣 AI Marketing** › Course 5 of 5 — Capstone Portfolio
+
 > **Goal:** Ship 5 real, recruiter-grade portfolio pieces + a personal-brand presence + a first-client pitch you can send Monday morning.
 > **Duration:** 6–8 weeks part-time (most students take ~50 hours of focused work)
 > **Cost:** ~$200–$400 in tools (Ahrefs trial, $200 paid-ads budget, Make.com Core plan, Claude API credits). Most line items are skippable with free tiers.
+> **Difficulty:** Expert · capstone — completion of courses 14–17 (or equivalent) assumed
 
 ---
 

@@ -5,9 +5,12 @@ title: ASCM CPIM Track
 
 # 🏭 ASCM CPIM Track (Certified in Planning and Inventory Management)
 
+**🚚 Supply Chain · ASCM** › CPIM — Planning & Inventory Management
+
 > **Goal:** Pass the consolidated single-exam ASCM CPIM with a scaled score of 300+
 > **Duration:** 10–14 weeks part-time
 > **Cost:** $560 USD (ASCM member) / $895 USD (non-member) — single exam, includes one retake bundle in many ASCM packages
+> **Difficulty:** Professional · manufacturing/operations background helpful
 
 ---
 

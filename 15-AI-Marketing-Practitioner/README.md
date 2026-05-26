@@ -5,10 +5,13 @@ title: AI Marketing Practitioner Track
 
 # 🎯 AI Marketing Practitioner Track (Course 2 of 5)
 
+**📣 AI Marketing** › Course 2 of 5 — Practitioner
+
 > **Goal:** Launch and optimize REAL paid + organic campaigns on Google, Meta, TikTok, LinkedIn — using AI tooling end-to-end.
 > **Duration:** 6 weeks part-time (8–12 hrs/week)
 > **Prerequisite:** AI Marketing Foundations (Course 1) or equivalent hands-on experience
 > **Cost to study:** Free (this course) + ~$200 ad spend for capstone (Modules 2, 4, 10)
+> **Difficulty:** Intermediate · hands-on with ad accounts
 
 ---
 

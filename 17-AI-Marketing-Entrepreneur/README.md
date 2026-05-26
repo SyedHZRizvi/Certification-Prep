@@ -5,9 +5,12 @@ title: AI Marketing Entrepreneur Track
 
 # 🚀 AI Marketing Entrepreneur Track (Cert Hub Original)
 
+**📣 AI Marketing** › Course 4 of 5 — Entrepreneur (Cert Hub original)
+
 > **Goal:** Launch your own AI-powered marketing agency or freelance practice — from positioning to first client to $100K–$500K ARR.
 > **Duration:** 6 weeks part-time (or compressed to 3 if you're already a Strategist-level operator)
 > **Cost:** Free (this curriculum) + ~$200–$500/mo operating stack — verify on each vendor's site.
+> **Difficulty:** Expert · Strategist-level experience assumed
 
 ---
 

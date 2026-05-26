@@ -5,9 +5,12 @@ title: Azure Fundamentals Track (AZ-900)
 
 # ☁️ Azure Fundamentals Track (AZ-900)
 
+**☁️ Cloud · Azure** › Fundamentals (AZ-900)
+
 > **Goal:** Pass the Microsoft Certified: Azure Fundamentals (AZ-900) exam on your first try with 800+/1000.
 > **Duration:** 3–4 weeks part-time (about 30 hours)
 > **Cost:** $99 USD (lifetime cert — no renewal required)
+> **Difficulty:** Entry-level · no Azure experience required
 
 ---
 

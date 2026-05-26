@@ -34,16 +34,19 @@
   <link rel="stylesheet" href="{{ '/assets/quiz.css' | relative_url }}" />
   <style>
     *, *::before, *::after { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
+    html { scroll-behavior: smooth; font-size: 17px; }
     body {
       font-family: 'Inter', system-ui, sans-serif;
       -webkit-font-smoothing: antialiased;
       background: #f8fafc;
       color: #0f172a;
       margin: 0; padding: 0;
+      font-size: clamp(16px, 1.0625rem, 18px);
+      line-height: 1.65;
+      font-weight: 400;
     }
     img, video { -webkit-user-drag: none; user-drag: none; max-width: 100%; }
-    h1, h2, h3, h4, .display { font-family: 'Plus Jakarta Sans', 'Inter', sans-serif; letter-spacing: -0.02em; line-height: 1.25; }
+    h1, h2, h3, h4, .display { font-family: 'Plus Jakarta Sans', 'Inter', sans-serif; letter-spacing: -0.015em; line-height: 1.25; font-weight: 700; }
 
     /* ===== CONTENT PROTECTION (CSS layer — works even with JS disabled) ===== */
     html, body, p, h1, h2, h3, h4, h5, h6, li, td, th, span, div, a,
@@ -81,7 +84,7 @@
       max-width: 1800px; margin: 0 auto; padding: 0 20px; height: 100%;
       display: flex; align-items: center; justify-content: space-between;
     }
-    .brand { display: flex; align-items: center; gap: 8px; text-decoration: none; color: #0f172a; font-weight: 800; }
+    .brand { display: flex; align-items: center; gap: 8px; text-decoration: none; color: #0f172a; font-weight: 800; font-size: 16px; letter-spacing: -0.01em; }
     .brand-grad {
       background: linear-gradient(135deg, #6366f1, #ec4899);
       -webkit-background-clip: text; background-clip: text; color: transparent;
@@ -105,13 +108,13 @@
     .progress-summary {
       padding: 12px 14px; border-radius: 10px;
       background: linear-gradient(135deg, #eef2ff, #fce7f3);
-      margin-bottom: 16px; font-size: 12px; color: #475569;
+      margin-bottom: 16px; font-size: 13px; color: #475569; line-height: 1.5;
     }
-    .progress-summary strong { color: #0f172a; }
+    .progress-summary strong { color: #0f172a; font-weight: 700; }
     .progress-bar { height: 6px; background: #e2e8f0; border-radius: 3px; overflow: hidden; margin-top: 6px; }
     .progress-fill { height: 100%; background: linear-gradient(90deg, #6366f1, #ec4899); width: 0; transition: width .4s ease; }
     .progress-summary button {
-      background: none; border: none; color: #6366f1; font-size: 11px;
+      background: none; border: none; color: #6366f1; font-size: 13px;
       cursor: pointer; padding: 0; margin-top: 6px; font-weight: 600;
     }
     .progress-summary button:hover { color: #4338ca; text-decoration: underline; }
@@ -119,17 +122,17 @@
     .track-header {
       display: flex; align-items: center; gap: 10px;
       padding: 12px 14px; border-radius: 10px;
-      color: #fff; font-weight: 700; font-size: 14px;
-      margin-bottom: 8px;
+      color: #fff; font-weight: 700; font-size: 15px; line-height: 1.35;
+      margin-bottom: 8px; letter-spacing: -0.01em;
     }
     .track-header .icon { font-size: 22px; }
-    .track-header .meta { font-size: 11px; opacity: .85; font-weight: 500; }
+    .track-header .meta { font-size: 13px; opacity: .85; font-weight: 500; letter-spacing: 0; }
     .module-list { list-style: none; padding: 0; margin: 0 0 20px; }
     .module-list a {
       display: flex; align-items: center; gap: 10px;
       padding: 8px 14px; border-radius: 8px;
       text-decoration: none; color: #475569;
-      font-size: 13.5px; font-weight: 500;
+      font-size: 14.5px; font-weight: 500; line-height: 1.45;
       transition: background .15s, color .15s;
     }
     .module-list a:hover { background: #f1f5f9; color: #0f172a; }
@@ -137,7 +140,7 @@
     .module-list .num {
       width: 24px; height: 24px; border-radius: 50%;
       display: grid; place-items: center;
-      font-size: 11px; font-weight: 700;
+      font-size: 13px; font-weight: 700;
       background: #e2e8f0; color: #475569;
       flex-shrink: 0;
       transition: background .2s, color .2s;
@@ -148,14 +151,14 @@
     .module-list a.completed .num span { display: none; }
     .sidebar-divider { border: 0; border-top: 1px solid #e2e8f0; margin: 18px 0; }
     .sidebar-section-title {
-      font-size: 11px; font-weight: 700; text-transform: uppercase;
+      font-size: 13px; font-weight: 700; text-transform: uppercase;
       letter-spacing: .08em; color: #64748b;
       padding: 0 14px; margin-bottom: 8px;
     }
     .extra-links a {
       display: flex; align-items: center; gap: 10px;
       padding: 7px 14px; border-radius: 8px;
-      text-decoration: none; color: #64748b; font-size: 13px;
+      text-decoration: none; color: #64748b; font-size: 14px; line-height: 1.45;
     }
     .extra-links a:hover { background: #f1f5f9; color: #0f172a; }
     .extra-links a.active { background: #eef2ff; color: #4338ca; font-weight: 600; }
@@ -164,67 +167,71 @@
     .main { padding: 28px 56px 80px; max-width: 1200px; }
     @media (max-width: 768px) { .main { padding: 20px 18px 60px; } }
 
-    .breadcrumb { font-size: 13px; color: #64748b; margin-bottom: 18px; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+    .breadcrumb { font-size: 14px; color: #64748b; margin-bottom: 18px; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; line-height: 1.5; }
     .breadcrumb a { color: #64748b; text-decoration: none; }
     .breadcrumb a:hover { color: #0f172a; }
     .breadcrumb .sep { color: #cbd5e1; }
     .breadcrumb .current { color: #0f172a; font-weight: 600; }
 
-    .module-meta { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-bottom: 24px; font-size: 13px; color: #64748b; }
-    .module-meta .badge { background: #eef2ff; color: #4338ca; padding: 4px 10px; border-radius: 6px; font-weight: 600; }
+    .module-meta { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-bottom: 24px; font-size: 14px; color: #64748b; line-height: 1.5; }
+    .module-meta .badge { background: #eef2ff; color: #4338ca; padding: 4px 10px; border-radius: 6px; font-weight: 600; font-size: 13px; letter-spacing: .02em; }
     .module-meta .read-time { display: flex; align-items: center; gap: 5px; }
 
     .subpage-tabs { display: flex; gap: 4px; border-bottom: 1px solid #e2e8f0; margin-bottom: 28px; padding-bottom: 0; flex-wrap: wrap; }
     .subpage-tabs a {
       padding: 10px 18px; border-radius: 8px 8px 0 0;
-      font-size: 14px; font-weight: 600; color: #64748b;
+      font-size: 15px; font-weight: 600; color: #64748b;
       text-decoration: none;
       border-bottom: 2px solid transparent;
       margin-bottom: -1px;
       transition: color .15s, border .15s;
+      letter-spacing: -0.005em;
     }
     .subpage-tabs a:hover { color: #0f172a; }
     .subpage-tabs a.active { color: #4338ca; border-bottom-color: #4338ca; }
 
     /* ============ MARKDOWN CONTENT ============ */
-    .content { background: #fff; border: 1px solid #e2e8f0; border-radius: 14px; padding: 40px 48px; line-height: 1.75; font-size: 16px; }
+    .content { background: #fff; border: 1px solid #e2e8f0; border-radius: 14px; padding: 40px 48px; line-height: 1.7; font-size: clamp(17px, 1.125rem, 19px); }
     @media (max-width: 768px) { .content { padding: 24px 22px; } }
     .content > *:first-child { margin-top: 0; }
-    .content h1 { font-size: 2.25rem; font-weight: 800; margin: 0 0 22px; line-height: 1.15; }
-    .content h2 { font-size: 1.625rem; font-weight: 800; margin: 40px 0 18px; padding-top: 12px; border-top: 1px solid #f1f5f9; }
+    .content h1 { font-size: clamp(32px, 2.25rem, 40px); font-weight: 800; margin: 0 0 22px; line-height: 1.15; letter-spacing: -0.02em; }
+    .content h2 { font-size: clamp(26px, 1.75rem, 30px); font-weight: 700; margin: 40px 0 18px; padding-top: 12px; border-top: 1px solid #f1f5f9; line-height: 1.25; letter-spacing: -0.015em; }
     .content h2:first-of-type { padding-top: 0; border-top: 0; margin-top: 28px; }
-    .content h3 { font-size: 1.25rem; font-weight: 700; margin: 30px 0 12px; }
-    .content h4 { font-size: 1.05rem; font-weight: 700; margin: 22px 0 10px; }
+    .content h3 { font-size: clamp(22px, 1.4rem, 24px); font-weight: 700; margin: 30px 0 12px; line-height: 1.3; letter-spacing: -0.01em; }
+    .content h4 { font-size: clamp(19px, 1.2rem, 20px); font-weight: 700; margin: 22px 0 10px; line-height: 1.35; letter-spacing: -0.005em; }
     .content p { margin: 0 0 18px; }
     .content a { color: #4f46e5; text-decoration: none; border-bottom: 1px solid rgba(79,70,229,0.3); transition: color .15s, border .15s; }
     .content a:hover { color: #4338ca; border-bottom-color: #4338ca; }
     .content ul, .content ol { margin: 0 0 18px; padding-left: 28px; }
-    .content li { margin-bottom: 8px; }
+    .content li { margin-bottom: 8px; line-height: 1.7; }
     .content blockquote {
       border-left: 4px solid #818cf8;
       background: linear-gradient(90deg, #eef2ff, #faf5ff);
       padding: 16px 22px; margin: 22px 0;
       border-radius: 0 10px 10px 0;
       color: #3730a3;
+      font-size: 1em; line-height: 1.65;
     }
     .content blockquote p:last-child { margin-bottom: 0; }
     .content code {
       background: #f1f5f9; padding: 2px 7px; border-radius: 5px;
-      font-family: 'Menlo', 'Consolas', monospace; font-size: 0.9em; color: #1e293b;
+      font-family: 'Menlo', 'Consolas', monospace; font-size: 0.88em; color: #1e293b;
     }
     .content pre {
       background: #0f172a; color: #e2e8f0;
       padding: 20px 24px; border-radius: 10px;
       overflow-x: auto; margin: 22px 0;
-      font-size: 0.875rem; line-height: 1.6;
+      font-size: 14px; line-height: 1.6;
+      font-family: 'Menlo', 'Consolas', monospace;
     }
-    .content pre code { background: transparent; color: inherit; padding: 0; }
+    .content pre code { background: transparent; color: inherit; padding: 0; font-size: 14px; }
     .content table {
       width: 100%; border-collapse: collapse; margin: 22px 0;
-      font-size: 0.94rem; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden;
+      font-size: clamp(15px, 0.95rem, 16px); border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden;
+      line-height: 1.55;
     }
-    .content th, .content td { padding: 11px 16px; text-align: left; border-bottom: 1px solid #e2e8f0; }
-    .content th { background: #f8fafc; font-weight: 700; color: #0f172a; }
+    .content th, .content td { padding: 14px 18px; text-align: left; border-bottom: 1px solid #e2e8f0; }
+    .content th { background: #f8fafc; font-weight: 700; color: #0f172a; font-size: 14px; letter-spacing: .01em; }
     .content tr:last-child td { border-bottom: 0; }
     .content tr:hover td { background: #fafafa; }
     .content hr { border: 0; border-top: 1px solid #e2e8f0; margin: 36px 0; }
@@ -237,7 +244,7 @@
       display: inline-flex; align-items: center; gap: 8px;
       padding: 12px 24px; border-radius: 10px;
       background: linear-gradient(135deg, #10b981, #059669);
-      color: #fff; font-weight: 700; font-size: 14px;
+      color: #fff; font-weight: 700; font-size: 15px; letter-spacing: .005em;
       border: 0; cursor: pointer; transition: transform .15s, box-shadow .15s;
       box-shadow: 0 4px 14px -2px rgba(16, 185, 129, 0.4);
     }
@@ -256,12 +263,12 @@
       border-radius: 12px; transition: border .15s, transform .15s;
     }
     .pager a:hover { border-color: #818cf8; transform: translateY(-2px); }
-    .pager .label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: #64748b; margin-bottom: 4px; }
-    .pager .title { font-size: 15px; font-weight: 700; color: #0f172a; }
+    .pager .label { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: #64748b; margin-bottom: 4px; }
+    .pager .title { font-size: 16px; font-weight: 700; color: #0f172a; line-height: 1.4; letter-spacing: -0.005em; }
     .pager .next { text-align: right; }
 
     /* ============ FOOTER ============ */
-    .pagefoot { max-width: 920px; margin: 32px 0 0; padding: 22px 0 12px; border-top: 1px solid #e2e8f0; text-align: center; color: #64748b; font-size: 12px; }
+    .pagefoot { max-width: 920px; margin: 32px 0 0; padding: 22px 0 12px; border-top: 1px solid #e2e8f0; text-align: center; color: #64748b; font-size: 13px; line-height: 1.55; }
     .pagefoot strong { color: #0f172a; }
     .pagefoot a { color: #4f46e5; text-decoration: none; }
 
@@ -280,7 +287,7 @@
     /* ============ MOBILE HAMBURGER ============ */
     .hamburger { display: none; }
     @media (max-width: 1024px) {
-      .hamburger { display: flex; align-items: center; gap: 8px; background: #f1f5f9; border: 1px solid #e2e8f0; padding: 6px 12px; border-radius: 8px; font-size: 13px; font-weight: 600; color: #475569; cursor: pointer; }
+      .hamburger { display: flex; align-items: center; gap: 8px; background: #f1f5f9; border: 1px solid #e2e8f0; padding: 6px 12px; border-radius: 8px; font-size: 14px; font-weight: 600; color: #475569; cursor: pointer; }
       .sidebar.mobile-open { display: block; position: fixed; top: 63px; left: 0; right: 0; bottom: 0; z-index: 40; padding: 24px; overflow-y: auto; }
     }
   </style>
@@ -497,10 +504,10 @@
         {%- comment -%} Back to all courses + collapsed list of OTHER tracks (just the clickable headers) {%- endcomment -%}
         <hr class="sidebar-divider" />
         <p class="sidebar-section-title">Other tracks</p>
-        <a href="{{ site.baseurl }}/" class="text-xs text-slate-600 hover:text-slate-900 block mb-3 underline" style="font-size:11px; text-decoration:none;">← Back to all {{ site.data.navigation.tracks | size }} courses</a>
+        <a href="{{ site.baseurl }}/" class="text-xs text-slate-600 hover:text-slate-900 block mb-3 underline" style="font-size:13px; text-decoration:none;">← Back to all {{ site.data.navigation.tracks | size }} courses</a>
         {%- for tr in site.data.navigation.tracks -%}
           {%- if tr.id != current_track.id -%}
-            <a href="{{ tr.base | prepend: site.baseurl }}" class="track-header-mini" style="display:flex; gap:10px; padding:8px 12px; margin-bottom:6px; border-radius:8px; background:linear-gradient(135deg, {{ tr.color_from }}, {{ tr.color_to }}); color:#fff; text-decoration:none; font-size:12px; align-items:center; line-height:1.2;">
+            <a href="{{ tr.base | prepend: site.baseurl }}" class="track-header-mini" style="display:flex; gap:10px; padding:8px 12px; margin-bottom:6px; border-radius:8px; background:linear-gradient(135deg, {{ tr.color_from }}, {{ tr.color_to }}); color:#fff; text-decoration:none; font-size:13.5px; align-items:center; line-height:1.3;">
               <span style="font-size:18px;">{{ tr.icon }}</span>
               <span style="font-weight:600;">{{ tr.title }}</span>
             </a>
@@ -510,11 +517,11 @@
       {%- else -%}
         {%- comment -%} === No current track (e.g. study plan / resources): show all tracks as collapsed clickable headers === {%- endcomment -%}
         {%- for tr in site.data.navigation.tracks -%}
-          <a href="{{ tr.base | prepend: site.baseurl }}" class="track-header" style="display:flex; gap:10px; align-items:center; padding:12px 14px; margin-bottom:8px; border-radius:10px; background:linear-gradient(135deg, {{ tr.color_from }}, {{ tr.color_to }}); color:#fff; text-decoration:none; font-weight:600; font-size:14px;">
+          <a href="{{ tr.base | prepend: site.baseurl }}" class="track-header" style="display:flex; gap:10px; align-items:center; padding:12px 14px; margin-bottom:8px; border-radius:10px; background:linear-gradient(135deg, {{ tr.color_from }}, {{ tr.color_to }}); color:#fff; text-decoration:none; font-weight:600; font-size:15px;">
             <span class="icon" style="font-size:22px;">{{ tr.icon }}</span>
             <div>
               <div>{{ tr.title }}</div>
-              <div class="meta" style="font-size:11px; opacity:.85; font-weight:500;">{{ tr.subtitle }}</div>
+              <div class="meta" style="font-size:13px; opacity:.85; font-weight:500;">{{ tr.subtitle }}</div>
             </div>
           </a>
         {%- endfor -%}
@@ -531,7 +538,7 @@
       </ul>
 
       <hr class="sidebar-divider" />
-      <div style="padding:0 14px;font-size:11px;color:#94a3b8;line-height:1.6;">
+      <div style="padding:0 14px;font-size:13px;color:#94a3b8;line-height:1.65;">
         © 2026 <strong style="color:#475569;">Humayun Zafar</strong><br/>
         📍 Toronto, Canada<br/>
         All Rights Reserved · Personal study only.
