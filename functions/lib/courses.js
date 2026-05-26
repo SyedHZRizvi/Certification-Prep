@@ -28,6 +28,14 @@ export const COURSES = [
   { id: "18-AI-Marketing-Capstone-Portfolio",       slug: "AI Marketing Capstone Portfolio", icon: "🏆", category: "AI-Based Digital Marketing" },
   { id: "19-Bitcoin-Cryptocurrency",                slug: "Bitcoin & Cryptocurrency",       icon: "₿",  category: "Bitcoin & E-Commerce" },
   { id: "20-E-Commerce",                            slug: "E-Commerce",                     icon: "🛒", category: "Bitcoin & E-Commerce" },
+  // IT Systems Administration track
+  { id: "21-CompTIA-A-Plus",                        slug: "CompTIA A+ (Core 1 + Core 2)",   icon: "🛠️", category: "IT Systems Administration" },
+  { id: "22-CompTIA-Network-Plus",                  slug: "CompTIA Network+",               icon: "🌐", category: "IT Systems Administration" },
+  { id: "23-CompTIA-Linux-Plus",                    slug: "CompTIA Linux+",                 icon: "🐧", category: "IT Systems Administration" },
+  { id: "24-CompTIA-Server-Plus",                   slug: "CompTIA Server+",                icon: "🗄️", category: "IT Systems Administration" },
+  { id: "25-Windows-Server-Hybrid-Admin",           slug: "Windows Server Hybrid Admin",    icon: "🪟", category: "IT Systems Administration" },
+  { id: "26-Microsoft-Endpoint-Admin",              slug: "Microsoft Endpoint Administrator", icon: "💻", category: "IT Systems Administration" },
+  { id: "27-Microsoft-Identity-Access-Admin",       slug: "Microsoft Identity & Access Admin", icon: "🪪", category: "IT Systems Administration" },
 ];
 
 export const COURSE_IDS = COURSES.map(c => c.id);
