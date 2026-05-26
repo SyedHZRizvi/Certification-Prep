@@ -958,12 +958,17 @@ sitemap: false
 
       <!-- Right cluster: account chip + CTA -->
       <div class="flex items-center gap-2.5 lg:gap-3.5">
-        <!-- Anonymous: SIGN IN pill -->
+        <!-- ENROLL NOW first (primary CTA, next to Manage Users) -->
+        <a href="enroll/" class="nav-pill nav-pill-enroll">
+          <span class="nav-pill-icon">✍️</span> ENROLL NOW <span class="ml-0.5">→</span>
+        </a>
+
+        <!-- Anonymous: SIGN IN pill (last, at the far right) -->
         <a href="login/" class="nav-pill nav-pill-signin" data-auth-state="anonymous">
           <span class="nav-pill-icon">🔐</span> SIGN IN
         </a>
 
-        <!-- Authenticated: user chip showing NAME (not email) + minimal dropdown -->
+        <!-- Authenticated: user chip (last, at the far right) -->
         <div class="account-chip" data-auth-state="authenticated">
           <button class="account-chip-btn" id="account-chip-btn" aria-haspopup="true" aria-expanded="false">
             <span class="account-avatar" id="account-avatar">U</span>
@@ -981,10 +986,6 @@ sitemap: false
             </a>
           </div>
         </div>
-
-        <a href="enroll/" class="nav-pill nav-pill-enroll">
-          <span class="nav-pill-icon">✍️</span> ENROLL NOW <span class="ml-0.5">→</span>
-        </a>
       </div>
     </div>
   </nav>

@@ -80,19 +80,28 @@ export function canActOn(actorRole, targetRole) {
  * Privilege matrix for display in the UI. Each row describes a capability.
  * Used by Manage-Users/index.html to render an at-a-glance reference table.
  */
+// Sorted top→bottom by descending green-tick count so the matrix
+// reads as a clean triangle in the UI:
+//   • top:    all three roles ✅
+//   • middle: super-user + administrator ✅, student ❌
+//   • bottom: super-user only ✅, ending with the all-❌ system-level row
 export const PRIVILEGE_MATRIX = [
-  { capability: "Access ANY course content",       superuser: "✅", administrator: "✅", student: "Only entitled courses" },
-  { capability: "Open the Manage Users admin panel", superuser: "✅", administrator: "✅", student: "❌" },
-  { capability: "Create student accounts",          superuser: "✅", administrator: "✅", student: "❌" },
-  { capability: "Create administrator accounts",    superuser: "✅", administrator: "❌", student: "❌" },
-  { capability: "Delete student accounts",          superuser: "✅", administrator: "✅", student: "❌" },
-  { capability: "Delete administrator accounts",    superuser: "✅", administrator: "❌", student: "❌" },
-  { capability: "Reset a student's password",       superuser: "✅", administrator: "✅", student: "❌" },
-  { capability: "Reset an administrator's password", superuser: "✅", administrator: "❌", student: "❌" },
-  { capability: "Disable / re-enable a student account", superuser: "✅", administrator: "✅", student: "❌" },
-  { capability: "Disable / re-enable an administrator account", superuser: "✅", administrator: "❌", student: "❌" },
-  { capability: "Add or remove courses from a student", superuser: "✅", administrator: "✅", student: "❌" },
-  { capability: "Add or remove courses from an administrator", superuser: "✅", administrator: "❌", student: "❌" },
-  { capability: "Change own password",              superuser: "✅", administrator: "✅", student: "✅" },
-  { capability: "Promote anyone to super-user",     superuser: "❌ (hardcoded in superusers.js — requires code deploy)", administrator: "❌", student: "❌" },
+  // ----- All three ✅ -----
+  { capability: "Change own password",                              superuser: "✅", administrator: "✅", student: "✅" },
+  { capability: "Access course content",                            superuser: "✅", administrator: "✅", student: "Only entitled courses" },
+  // ----- Super-user + Administrator ✅ -----
+  { capability: "Open the Manage Users admin panel",                superuser: "✅", administrator: "✅", student: "❌" },
+  { capability: "Create student accounts",                          superuser: "✅", administrator: "✅", student: "❌" },
+  { capability: "Delete student accounts",                          superuser: "✅", administrator: "✅", student: "❌" },
+  { capability: "Reset a student's password",                       superuser: "✅", administrator: "✅", student: "❌" },
+  { capability: "Disable / re-enable a student account",            superuser: "✅", administrator: "✅", student: "❌" },
+  { capability: "Add or remove courses from a student",             superuser: "✅", administrator: "✅", student: "❌" },
+  // ----- Super-user only ✅ -----
+  { capability: "Create administrator accounts",                    superuser: "✅", administrator: "❌", student: "❌" },
+  { capability: "Delete administrator accounts",                    superuser: "✅", administrator: "❌", student: "❌" },
+  { capability: "Reset an administrator's password",                superuser: "✅", administrator: "❌", student: "❌" },
+  { capability: "Disable / re-enable an administrator account",     superuser: "✅", administrator: "❌", student: "❌" },
+  { capability: "Add or remove courses from an administrator",      superuser: "✅", administrator: "❌", student: "❌" },
+  // ----- Nobody (system-level) -----
+  { capability: "Promote anyone to super-user",                     superuser: "❌ (hardcoded in superusers.js — requires code deploy)", administrator: "❌", student: "❌" },
 ];

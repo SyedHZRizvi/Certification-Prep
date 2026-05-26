@@ -306,7 +306,7 @@ sitemap: false
         <div class="mb-7 flex items-center gap-4">
           <div class="w-12 h-12 rounded-2xl bg-rose-100 text-rose-700 flex items-center justify-center text-2xl flex-shrink-0">📋</div>
           <div>
-            <h2 class="text-2xl font-extrabold text-slate-900">Role privilege matrix</h2>
+            <h2 class="text-2xl font-extrabold text-slate-900">Role Privilege Matrix</h2>
             <p class="text-slate-600 text-sm mt-1">What each role can do. Authoritative source: <code class="font-mono text-xs bg-slate-100 border border-slate-200 text-slate-800 px-1.5 py-0.5 rounded">functions/lib/roles.js</code></p>
           </div>
         </div>
@@ -934,20 +934,28 @@ sitemap: false
     $('refresh-btn').addEventListener('click', loadUsers);
 
     // ---------- Privilege matrix (mirrors functions/lib/roles.js PRIVILEGE_MATRIX) ----------
+    // Rows sorted by descending "green count" so the table reads visually:
+    //   top: rows everyone can do (all-green)
+    //   middle: super-user + administrator only (two-green)
+    //   bottom: super-user only (one-green), ending with all-red
     const PRIVILEGE_MATRIX = [
-      { capability: "Access ANY course content",                              superuser: "✅", administrator: "✅", student: "Only entitled courses" },
+      // ----- All three roles ✅ -----
+      { capability: "Change own password",                                    superuser: "✅", administrator: "✅", student: "✅" },
+      { capability: "Access course content",                                  superuser: "✅", administrator: "✅", student: "Only entitled courses" },
+      // ----- Super-user + Administrator ✅, Student ❌ -----
       { capability: "Open the Manage Users admin panel",                      superuser: "✅", administrator: "✅", student: "❌" },
       { capability: "Create student accounts",                                superuser: "✅", administrator: "✅", student: "❌" },
-      { capability: "Create administrator accounts",                          superuser: "✅", administrator: "❌", student: "❌" },
       { capability: "Delete student accounts",                                superuser: "✅", administrator: "✅", student: "❌" },
-      { capability: "Delete administrator accounts",                          superuser: "✅", administrator: "❌", student: "❌" },
       { capability: "Reset a student's password",                             superuser: "✅", administrator: "✅", student: "❌" },
-      { capability: "Reset an administrator's password",                      superuser: "✅", administrator: "❌", student: "❌" },
       { capability: "Disable / re-enable a student account",                  superuser: "✅", administrator: "✅", student: "❌" },
-      { capability: "Disable / re-enable an administrator account",           superuser: "✅", administrator: "❌", student: "❌" },
       { capability: "Add or remove courses from a student",                   superuser: "✅", administrator: "✅", student: "❌" },
+      // ----- Super-user ✅, others ❌ -----
+      { capability: "Create administrator accounts",                          superuser: "✅", administrator: "❌", student: "❌" },
+      { capability: "Delete administrator accounts",                          superuser: "✅", administrator: "❌", student: "❌" },
+      { capability: "Reset an administrator's password",                      superuser: "✅", administrator: "❌", student: "❌" },
+      { capability: "Disable / re-enable an administrator account",           superuser: "✅", administrator: "❌", student: "❌" },
       { capability: "Add or remove courses from an administrator",            superuser: "✅", administrator: "❌", student: "❌" },
-      { capability: "Change own password",                                    superuser: "✅", administrator: "✅", student: "✅" },
+      // ----- Nobody (system-level) -----
       { capability: "Promote anyone to super-user",                           superuser: "❌ (hardcoded in superusers.js — requires code deploy)", administrator: "❌", student: "❌" },
     ];
 
