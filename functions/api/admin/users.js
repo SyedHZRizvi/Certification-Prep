@@ -117,6 +117,7 @@ export async function onRequestPost({ request, env }) {
   const pw = await buildPasswordRecord(TEMP_PASSWORD);
   const record = {
     email,
+    name: (body.name || "").toString().trim(),
     role,
     courses: v.value,
     password_hash: pw.password_hash,
@@ -212,6 +213,7 @@ export async function onRequestPatch({ request, env }) {
 
   // ----- Default: partial field update -----
   const updated = { ...existing };
+  if (body.name !== undefined) updated.name = body.name.toString().trim();
   if (body.courses !== undefined) {
     const v = validateCourses(body.courses);
     if (!v.ok) return error(v.error, 400);

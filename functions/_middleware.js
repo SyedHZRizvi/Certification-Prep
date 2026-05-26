@@ -99,7 +99,12 @@ export async function onRequest(context) {
   // If user is signed in but must_change_password is true, force them to
   // /change-password/ (except for endpoints they need to reach to actually
   // change it: the page itself, the API, logout, assets).
+  //
+  // Exception: hardcoded super-users are NEVER force-redirected. They're the
+  // owner of the site — they can pick when to change their password. The UI
+  // surfaces a banner ("change password recommended") but never blocks them.
   if (session && session.must_change_password &&
+      !isSuperUser(session.email) &&
       !isReachableWhenMustChangePassword(pathname)) {
     return Response.redirect(`${url.origin}/change-password/`, 302);
   }

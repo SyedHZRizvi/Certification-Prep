@@ -314,25 +314,24 @@
         <a href="{{ '/login/' | relative_url }}"
            class="bg-gradient-to-r from-indigo-500 to-violet-600 hover:from-indigo-600 hover:to-violet-700 text-white font-bold px-4 py-2 rounded-lg transition text-xs shadow-md flex items-center gap-1.5"
            data-auth-state="anonymous" style="display:none;">🔐 <span>Sign in</span></a>
-        <!-- Authenticated: account chip with dropdown -->
+        <!-- Authenticated: account chip showing NAME + minimal dropdown -->
         <div class="relative" data-auth-state="authenticated" style="display:none;">
-          <button class="flex items-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-900 font-semibold px-3 py-1.5 rounded-full transition text-xs border border-slate-300"
+          <button class="flex items-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-900 font-bold px-3 py-1.5 rounded-full transition text-xs border border-slate-300"
                   id="topbar-account-btn" aria-haspopup="true" aria-expanded="false">
             <span class="w-6 h-6 inline-flex items-center justify-center rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 text-white font-bold text-xs" id="topbar-avatar">U</span>
-            <span class="max-w-[140px] truncate" id="topbar-email">…</span>
+            <span class="max-w-[120px] truncate" id="topbar-name">…</span>
             <span class="text-[10px] opacity-60">▾</span>
           </button>
           <div class="absolute right-0 top-full mt-2 min-w-[240px] bg-white border border-slate-200 rounded-xl shadow-xl opacity-0 invisible transition-all duration-150 origin-top-right scale-95 z-50"
                id="topbar-menu">
             <div class="px-4 py-3 bg-slate-50 rounded-t-xl border-b border-slate-200">
-              <div class="text-xs font-bold text-slate-900 break-all" id="topbar-menu-email">…</div>
-              <div class="text-[11px] font-semibold text-indigo-600 mt-0.5" id="topbar-menu-role">…</div>
+              <div class="text-sm font-extrabold text-slate-900" id="topbar-menu-name">…</div>
+              <div class="text-[11px] text-slate-500 break-all mt-0.5" id="topbar-menu-email">…</div>
+              <div class="text-[11px] font-semibold text-indigo-600 mt-1" id="topbar-menu-role">…</div>
             </div>
             <a href="{{ '/Manage-Users/' | relative_url }}"
                class="flex items-center gap-2 px-4 py-2.5 text-sm text-amber-700 hover:bg-amber-50 font-semibold"
-               data-auth-state="admin" style="display:none;">🔑 Manage Users</a>
-            <a href="{{ '/change-password/' | relative_url }}"
-               class="flex items-center gap-2 px-4 py-2.5 text-sm text-slate-700 hover:bg-slate-50 font-semibold">🔄 Change password</a>
+               data-auth-state="admin" style="display:none;">🔑 Manage Users <span class="text-[10px] text-slate-500 ml-1">(change pw inside)</span></a>
             <a href="{{ '/api/auth/logout' | relative_url }}"
                class="flex items-center gap-2 px-4 py-2.5 text-sm text-red-600 hover:bg-red-50 font-semibold border-t border-slate-200 rounded-b-xl">🚪 Sign out</a>
           </div>
@@ -357,9 +356,12 @@
           });
           if (data.authenticated) {
             var email = data.email || '';
+            var name = data.name || email.split('@')[0] || 'User';
             var role = data.role || 'student';
-            document.getElementById('topbar-email').textContent = email;
-            document.getElementById('topbar-avatar').textContent = (email[0] || '?').toUpperCase();
+            var displayName = name.length > 16 ? name.substring(0, 14) + '…' : name;
+            document.getElementById('topbar-name').textContent = displayName;
+            document.getElementById('topbar-avatar').textContent = (name[0] || '?').toUpperCase();
+            document.getElementById('topbar-menu-name').textContent = name;
             document.getElementById('topbar-menu-email').textContent = email;
             var roleLabel = role === 'superuser' ? '👑 Super-user' : role === 'administrator' ? '🛡️ Administrator' : '🎓 Student';
             document.getElementById('topbar-menu-role').textContent = roleLabel;

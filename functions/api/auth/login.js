@@ -89,6 +89,7 @@ export async function onRequestPost({ request, env }) {
   const jwt = await signJWT(
     {
       email: user.email,
+      name: user.name || "",
       role: user.role,
       courses: user.courses,
       must_change_password: Boolean(user.must_change_password),

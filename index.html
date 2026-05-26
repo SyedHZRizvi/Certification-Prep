@@ -94,55 +94,110 @@ sitemap: false
     }
     .nav-blur { backdrop-filter: saturate(150%) blur(12px); }
 
-    /* ============== TRENDY NAV PILLS ============== */
+    /* ============== MODERN NAV PILLS (v2 — more engaging) ============== */
     .nav-pill {
       display: inline-flex; align-items: center; gap: 0.55rem;
-      padding: 0.6rem 1.05rem;
-      border-radius: 0.875rem;
-      font-size: 0.9375rem;
-      font-weight: 800;
-      letter-spacing: 0.045em;
+      padding: 0.6rem 1.15rem 0.6rem 0.5rem;
+      border-radius: 999px;                /* fully rounded — less "rectangular" */
+      font-size: 0.875rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
       color: #ffffff;
-      text-shadow: 0 1px 0 rgba(0,0,0,0.15);
-      box-shadow:
-        0 6px 16px -6px rgba(0,0,0,0.25),
-        inset 0 1px 0 rgba(255,255,255,0.28),
-        inset 0 -1px 0 rgba(0,0,0,0.10);
-      transition: transform .22s cubic-bezier(0.34, 1.56, 0.64, 1),
-                  box-shadow .22s ease,
-                  filter .22s ease;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.22);
+      transition: transform .25s cubic-bezier(0.34, 1.56, 0.64, 1),
+                  box-shadow .25s ease,
+                  filter .25s ease;
       will-change: transform;
       position: relative;
       overflow: hidden;
+      /* Animated background = lively without being noisy */
+      background-size: 220% 220%;
+      animation: navpill-bg-flow 6s ease-in-out infinite;
+      /* Soft outer glow + crisp inner highlight = depth */
+      box-shadow:
+        0 8px 20px -6px rgba(0,0,0,0.28),
+        0 0 0 1px rgba(255,255,255,0.10) inset,
+        inset 0 1px 0 rgba(255,255,255,0.35),
+        inset 0 -2px 4px rgba(0,0,0,0.15);
     }
     .nav-pill:hover {
-      transform: translateY(-2px) scale(1.04);
-      filter: brightness(1.08) saturate(1.1);
+      transform: translateY(-3px) scale(1.06);
+      filter: brightness(1.12) saturate(1.15);
+      box-shadow:
+        0 14px 28px -8px rgba(0,0,0,0.35),
+        0 0 0 1px rgba(255,255,255,0.18) inset,
+        inset 0 1px 0 rgba(255,255,255,0.45),
+        inset 0 -2px 4px rgba(0,0,0,0.18);
     }
-    .nav-pill:active { transform: translateY(0) scale(0.98); }
+    .nav-pill:active { transform: translateY(-1px) scale(1.01); transition-duration: 0.1s; }
+
+    /* Icon = circular badge with own background, scales + bounces continuously */
     .nav-pill-icon {
-      font-size: 1.15rem; line-height: 1;
-      display: inline-block;
-      filter: drop-shadow(0 1px 2px rgba(0,0,0,0.25));
-      transition: transform .35s cubic-bezier(0.34, 1.56, 0.64, 1);
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 28px; height: 28px;
+      background: rgba(255,255,255,0.20);
+      border: 1px solid rgba(255,255,255,0.30);
+      border-radius: 50%;
+      font-size: 0.95rem;
+      flex-shrink: 0;
+      backdrop-filter: blur(4px);
+      transition: transform .35s cubic-bezier(0.34, 1.56, 0.64, 1),
+                  background .25s ease;
+      filter: drop-shadow(0 1px 3px rgba(0,0,0,0.25));
     }
     .nav-pill:hover .nav-pill-icon {
-      transform: scale(1.25) rotate(-8deg);
+      transform: scale(1.18) rotate(-10deg);
+      background: rgba(255,255,255,0.32);
     }
-    /* Shine sweep on hover */
+
+    /* Continuous gentle pulse on icon (subtle "alive" feel) */
+    @keyframes nav-icon-pulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(255,255,255,0.25); }
+      50%      { box-shadow: 0 0 0 5px rgba(255,255,255,0.00); }
+    }
+    .nav-pill .nav-pill-icon { animation: nav-icon-pulse 3.5s ease-in-out infinite; }
+
+    /* Animated gradient background shift (continuous, slow) */
+    @keyframes navpill-bg-flow {
+      0%   { background-position: 0% 50%; }
+      50%  { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Shine sweep on hover (kept from v1) */
     .nav-pill::after {
       content: '';
       position: absolute; inset: 0;
-      background: linear-gradient(110deg, transparent 35%, rgba(255,255,255,0.32) 50%, transparent 65%);
-      transform: translateX(-110%);
-      transition: transform .65s cubic-bezier(0.4, 0, 0.2, 1);
+      background: linear-gradient(110deg, transparent 30%, rgba(255,255,255,0.42) 50%, transparent 70%);
+      transform: translateX(-120%);
+      transition: transform .8s cubic-bezier(0.4, 0, 0.2, 1);
+      pointer-events: none;
+      border-radius: inherit;
+    }
+    .nav-pill:hover::after { transform: translateX(120%); }
+
+    /* Floating colored glow halo (NEW) — gives each pill a subtle aura */
+    .nav-pill::before {
+      content: '';
+      position: absolute;
+      inset: -6px;
+      border-radius: inherit;
+      background: inherit;
+      background-image: inherit;
+      filter: blur(14px);
+      opacity: 0;
+      z-index: -1;
+      transition: opacity .3s ease;
       pointer-events: none;
     }
-    .nav-pill:hover::after { transform: translateX(110%); }
+    .nav-pill:hover::before { opacity: 0.55; }
 
     @media (min-width: 1024px) {
-      .nav-pill { font-size: 1rem; padding: 0.65rem 1.2rem; }
-      .nav-pill-icon { font-size: 1.25rem; }
+      .nav-pill { font-size: 0.9375rem; padding: 0.65rem 1.25rem 0.65rem 0.55rem; }
+      .nav-pill-icon { width: 30px; height: 30px; font-size: 1.05rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .nav-pill, .nav-pill .nav-pill-icon { animation: none; }
     }
 
     /* Per-pill gradient + matching shadow */
@@ -251,7 +306,10 @@ sitemap: false
       box-shadow: 0 2px 8px -2px rgba(168,85,247,0.45);
     }
     .account-email { max-width: 180px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .account-name { max-width: 160px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-weight: 700; letter-spacing: .01em; }
     .account-caret { font-size: 11px; opacity: 0.7; }
+    .account-menu-name { font-size: 15px; font-weight: 800; color: #0f172a; margin-bottom: 2px; }
+    .hint { font-size: 11px; color: #94a3b8; font-weight: 500; margin-left: 4px; }
 
     .account-menu {
       position: absolute; right: 0; top: calc(100% + 8px);
@@ -300,12 +358,33 @@ sitemap: false
       animation: rb-shimmer 8s linear infinite;
       filter: drop-shadow(0 4px 16px rgba(0,0,0,0.25));
     }
-    .hero-rainbow .rb1 { background-image: linear-gradient(135deg,#f43f5e 0%,#fb7185 50%,#fda4af 100%); animation-delay: 0s; }   /* rose-red */
-    .hero-rainbow .rb2 { background-image: linear-gradient(135deg,#f59e0b 0%,#fbbf24 50%,#fde68a 100%); animation-delay: .4s; } /* amber */
-    .hero-rainbow .rb3 { background-image: linear-gradient(135deg,#10b981 0%,#34d399 50%,#a7f3d0 100%); animation-delay: .8s; } /* emerald */
-    .hero-rainbow .rb4 { background-image: linear-gradient(135deg,#06b6d4 0%,#22d3ee 50%,#a5f3fc 100%); animation-delay: 1.2s; } /* cyan */
-    .hero-rainbow .rb5 { background-image: linear-gradient(135deg,#8b5cf6 0%,#a78bfa 25%,#ec4899 75%,#f9a8d4 100%); animation-delay: 1.6s; } /* purple→pink */
-    .hero-rainbow .rb6 { background-image: linear-gradient(135deg,#f472b6 0%,#fb7185 100%); animation-delay: 2s; } /* pink dot */
+    /* Each word: dramatic DARK→MID→LIGHT→MID→DARK rainbow flow with
+       multiple stops for shimmering depth (matching the original
+       "Certification" multi-color blue gradient design language). */
+    .hero-rainbow .rb1 { /* Pass — fire: deep crimson → bright orange → light yellow → orange → crimson */
+      background-image: linear-gradient(135deg, #7f1d1d 0%, #dc2626 20%, #f97316 40%, #fbbf24 55%, #fb923c 75%, #ea580c 100%);
+      animation-delay: 0s;
+    }
+    .hero-rainbow .rb2 { /* Your — sunset: deep orange → gold → cream → gold → deep orange */
+      background-image: linear-gradient(135deg, #c2410c 0%, #ea580c 20%, #f59e0b 40%, #fde047 55%, #facc15 75%, #d97706 100%);
+      animation-delay: .35s;
+    }
+    .hero-rainbow .rb3 { /* Next — forest: deep teal → emerald → mint → emerald → teal */
+      background-image: linear-gradient(135deg, #064e3b 0%, #047857 20%, #10b981 40%, #6ee7b7 55%, #34d399 75%, #059669 100%);
+      animation-delay: .7s;
+    }
+    .hero-rainbow .rb4 { /* Big — ocean: deep navy → cobalt → sky → aqua → cobalt → navy */
+      background-image: linear-gradient(135deg, #1e3a8a 0%, #2563eb 20%, #38bdf8 40%, #bae6fd 55%, #0ea5e9 75%, #1d4ed8 100%);
+      animation-delay: 1.05s;
+    }
+    .hero-rainbow .rb5 { /* Certification — galaxy: deep indigo → violet → magenta → pink → violet → indigo */
+      background-image: linear-gradient(135deg, #312e81 0%, #6d28d9 18%, #a855f7 35%, #ec4899 52%, #f0abfc 65%, #c026d3 82%, #5b21b6 100%);
+      animation-delay: 1.4s;
+    }
+    .hero-rainbow .rb6 { /* "." — pink flourish */
+      background-image: linear-gradient(135deg, #be185d 0%, #ec4899 50%, #f472b6 100%);
+      animation-delay: 1.75s;
+    }
 
     @keyframes rb-shimmer {
       0%   { background-position: 0% 50%; }
@@ -577,25 +656,23 @@ sitemap: false
           <span class="nav-pill-icon">🔐</span> SIGN IN
         </a>
 
-        <!-- Authenticated: user chip with email + dropdown menu -->
+        <!-- Authenticated: user chip showing NAME (not email) + minimal dropdown -->
         <div class="account-chip" data-auth-state="authenticated">
           <button class="account-chip-btn" id="account-chip-btn" aria-haspopup="true" aria-expanded="false">
             <span class="account-avatar" id="account-avatar">U</span>
-            <span class="account-email" id="account-email">…</span>
+            <span class="account-name" id="account-name">…</span>
             <span class="account-caret">▾</span>
           </button>
           <div class="account-menu" id="account-menu" role="menu">
             <div class="account-menu-header">
+              <div class="account-menu-name" id="account-menu-name">…</div>
               <div class="account-menu-email" id="account-menu-email">…</div>
               <div class="account-menu-role" id="account-menu-role">…</div>
             </div>
-            <a href="Manage-Users/" class="account-menu-item account-menu-admin" data-auth-state="admin">
-              <span>🔑</span> Manage Users
+            <a href="/Manage-Users/" class="account-menu-item account-menu-admin" data-auth-state="admin">
+              <span>🔑</span> Manage Users <span class="hint">(includes change password)</span>
             </a>
-            <a href="change-password/" class="account-menu-item">
-              <span>🔄</span> Change password
-            </a>
-            <a href="api/auth/logout" class="account-menu-item account-menu-danger">
+            <a href="/api/auth/logout" class="account-menu-item account-menu-danger">
               <span>🚪</span> Sign out
             </a>
           </div>
@@ -633,11 +710,15 @@ sitemap: false
 
           if (data.authenticated) {
             var email = data.email || '';
+            var name = data.name || email.split('@')[0] || 'User';
             var role = data.role || 'student';
-            // Display: truncate email if too long (show first part + last 6 chars of domain)
-            var displayEmail = email.length > 22 ? email.substring(0, 14) + '…' : email;
-            document.getElementById('account-email').textContent = displayEmail;
-            document.getElementById('account-avatar').textContent = (email[0] || '?').toUpperCase();
+            // Truncate name if too long for the chip
+            var displayName = name.length > 18 ? name.substring(0, 16) + '…' : name;
+            document.getElementById('account-name').textContent = displayName;
+            // Avatar: first letter of name (uppercase)
+            document.getElementById('account-avatar').textContent = (name[0] || '?').toUpperCase();
+            // Dropdown header shows both name (big) and email (small)
+            document.getElementById('account-menu-name').textContent = name;
             document.getElementById('account-menu-email').textContent = email;
             var roleLabel = role === 'superuser' ? '👑 Super-user' : role === 'administrator' ? '🛡️ Administrator' : '🎓 Student';
             document.getElementById('account-menu-role').textContent = roleLabel;

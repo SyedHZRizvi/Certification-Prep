@@ -48,8 +48,9 @@ sitemap: false
       <div class="flex items-center gap-2 sm:gap-3 flex-wrap">
         <div id="current-user" class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-800/80 ring-1 ring-slate-700 text-xs">
           <span class="text-slate-400">Signed in as</span>
-          <span id="current-user-email" class="font-bold text-slate-100"></span>
+          <span id="current-user-name" class="font-bold text-slate-100"></span>
           <span id="current-user-role-badge" class="px-2 py-0.5 rounded-full text-[10px] font-bold tracking-wide"></span>
+          <span id="current-user-meta" class="text-[10px] text-slate-500 font-mono"></span>
         </div>
         <a href="/" class="text-sm font-semibold text-slate-300 hover:text-white px-3 py-2 rounded-lg ring-1 ring-slate-700 hover:ring-slate-500 transition">← Back to homepage</a>
         <a href="/api/auth/logout" id="signout-btn" class="text-sm font-bold text-white px-3 py-2 rounded-lg bg-rose-600/90 hover:bg-rose-500 transition">Sign out</a>
@@ -71,6 +72,56 @@ sitemap: false
       <div class="text-3xl mb-3">⏳</div>
       <p class="text-slate-400 text-sm">Loading admin panel…</p>
     </div>
+
+    <!-- ============================================================ -->
+    <!-- CHANGE MY PASSWORD (collapsible, collapsed by default)       -->
+    <!-- ============================================================ -->
+    <section id="change-pw-section" class="hidden rounded-2xl bg-slate-900/60 ring-1 ring-slate-800 shadow-2xl shadow-indigo-900/10">
+      <button id="change-pw-toggle" type="button"
+              class="w-full flex items-center justify-between gap-3 px-6 md:px-8 py-4 text-left hover:bg-slate-800/30 transition rounded-2xl">
+        <div>
+          <h2 class="text-lg md:text-xl font-extrabold text-white">🔄 Change my password</h2>
+          <p id="change-pw-subtitle" class="text-slate-400 text-xs md:text-sm mt-0.5">Change the password for your own account.</p>
+        </div>
+        <span id="change-pw-chevron" class="text-slate-400 text-xl transition-transform">▾</span>
+      </button>
+
+      <div id="change-pw-body" class="hidden px-6 md:px-8 pb-6 md:pb-8 border-t border-slate-800">
+        <form id="change-pw-form" class="space-y-4 pt-5">
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-1.5">Current password *</label>
+            <input id="change-pw-current" type="password" required autocomplete="current-password"
+                   class="w-full px-4 py-2.5 rounded-lg bg-slate-800 ring-1 ring-slate-700 focus:ring-2 focus:ring-indigo-500 focus:outline-none text-slate-100 placeholder-slate-500 transition"
+                   placeholder="Enter your current password" />
+          </div>
+          <div class="grid md:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-1.5">New password *</label>
+              <input id="change-pw-new" type="password" required autocomplete="new-password" minlength="8"
+                     class="w-full px-4 py-2.5 rounded-lg bg-slate-800 ring-1 ring-slate-700 focus:ring-2 focus:ring-indigo-500 focus:outline-none text-slate-100 placeholder-slate-500 transition"
+                     placeholder="Min 8 chars, letter + number" />
+            </div>
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-1.5">Confirm new password *</label>
+              <input id="change-pw-confirm" type="password" required autocomplete="new-password" minlength="8"
+                     class="w-full px-4 py-2.5 rounded-lg bg-slate-800 ring-1 ring-slate-700 focus:ring-2 focus:ring-indigo-500 focus:outline-none text-slate-100 placeholder-slate-500 transition"
+                     placeholder="Re-enter new password" />
+            </div>
+          </div>
+          <p class="text-[11px] text-slate-500">Must be at least 8 characters, contain a letter and a number, and cannot be the temporary password <code class="px-1 py-0.5 rounded bg-slate-800 font-mono">87654321</code>.</p>
+          <div class="flex items-center gap-3 pt-1">
+            <button type="submit" id="change-pw-submit"
+                    class="bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-bold px-5 py-2.5 rounded-lg shadow-lg shadow-indigo-900/30 transition">
+              Change password
+            </button>
+            <button type="reset" id="change-pw-reset"
+                    class="text-sm font-semibold text-slate-400 hover:text-slate-200 px-4 py-2.5 transition">
+              Reset form
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
 
     <!-- ============================================================ -->
     <!-- ADD USER FORM                                                -->
@@ -104,6 +155,13 @@ sitemap: false
             </select>
             <p id="add-role-hint" class="hidden text-xs text-slate-500 mt-1.5">Only super-users can create administrators.</p>
           </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-1.5">Display name (optional)</label>
+          <input id="add-name" type="text"
+                 class="w-full px-4 py-2.5 rounded-lg bg-slate-800 ring-1 ring-slate-700 focus:ring-2 focus:ring-indigo-500 focus:outline-none text-slate-100 placeholder-slate-500 transition"
+                 placeholder="e.g. Jane Doe — defaults to email's first part if blank" />
         </div>
 
         <div>
@@ -157,6 +215,7 @@ sitemap: false
           <thead>
             <tr class="text-left text-xs font-bold uppercase tracking-wider text-slate-500 border-b border-slate-800">
               <th class="py-3 pr-4">Email</th>
+              <th class="py-3 pr-4">Name</th>
               <th class="py-3 pr-4">Role</th>
               <th class="py-3 pr-4">Status</th>
               <th class="py-3 pr-4">Courses</th>
@@ -217,6 +276,13 @@ sitemap: false
         <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-1.5">Email</label>
         <input id="edit-email" type="email" readonly
                class="w-full px-4 py-2.5 rounded-lg bg-slate-800/50 ring-1 ring-slate-700 text-slate-400 font-mono text-sm" />
+      </div>
+
+      <div>
+        <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-1.5">Display name</label>
+        <input id="edit-name" type="text"
+               class="w-full px-4 py-2.5 rounded-lg bg-slate-800 ring-1 ring-slate-700 focus:ring-2 focus:ring-indigo-500 focus:outline-none text-slate-100 placeholder-slate-500 transition"
+               placeholder="e.g. Jane Doe — defaults to email's first part if blank" />
       </div>
 
       <div>
@@ -299,6 +365,22 @@ sitemap: false
         return d.toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' });
       } catch { return '—'; }
     };
+
+    // Derive a friendly display name from an email when `name` is blank.
+    // "syed@x.com" → "Syed";  "jane.doe@x.com" → "Jane Doe";  "a_b-c@x.com" → "A B C"
+    function displayNameFromEmail(email) {
+      if (!email) return '';
+      const local = String(email).split('@')[0] || '';
+      return local
+        .split(/[._-]+/)
+        .filter(Boolean)
+        .map(w => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase())
+        .join(' ');
+    }
+    function userDisplayName(user) {
+      if (user && user.name && String(user.name).trim()) return String(user.name).trim();
+      return displayNameFromEmail(user && user.email);
+    }
 
     // ---------- Toasts ----------
     const toastStack = $('toast-stack');
@@ -388,6 +470,7 @@ sitemap: false
         await loadUsers();
         renderMatrix();
         $('boot-state').classList.add('hidden');
+        $('change-pw-section').classList.remove('hidden');
         $('add-user-section').classList.remove('hidden');
         $('users-section').classList.remove('hidden');
         $('matrix-section').classList.remove('hidden');
@@ -402,7 +485,8 @@ sitemap: false
 
     function renderActor() {
       const { email, role } = state.me;
-      $('current-user-email').textContent = email;
+      const name = userDisplayName(state.me);
+      $('current-user-name').textContent = name;
       const badge = $('current-user-role-badge');
       const labels = {
         superuser: { text: 'SUPER-USER', cls: 'bg-purple-500/25 text-purple-200 ring-1 ring-purple-400/40' },
@@ -412,8 +496,12 @@ sitemap: false
       const meta = labels[role] || labels.student;
       badge.textContent = meta.text;
       badge.className = `px-2 py-0.5 rounded-full text-[10px] font-bold tracking-wide ${meta.cls}`;
+      $('current-user-meta').textContent = `· ${email}`;
       $('current-user').classList.remove('hidden');
       $('current-user').classList.add('flex');
+      // Personalize the Change-Password subtitle with the signed-in user's name.
+      const sub = $('change-pw-subtitle');
+      if (sub) sub.textContent = `Change the password for your own account (${name}).`;
     }
 
     function applyRoleVisibility() {
@@ -485,7 +573,7 @@ sitemap: false
         state.users = data.users || [];
         renderUsers();
       } catch (e) {
-        $('users-tbody').innerHTML = `<tr><td colspan="7" class="py-6 text-center text-rose-300">${escapeHtml(e.message)}</td></tr>`;
+        $('users-tbody').innerHTML = `<tr><td colspan="8" class="py-6 text-center text-rose-300">${escapeHtml(e.message)}</td></tr>`;
         $('users-cards').innerHTML = `<p class="text-sm text-rose-300 text-center py-4">${escapeHtml(e.message)}</p>`;
       }
     }
@@ -580,9 +668,11 @@ sitemap: false
         const hardcoded = u.role === 'superuser'
           ? '<span class="ml-1.5 px-1.5 py-0.5 rounded text-[9px] font-bold bg-purple-500/20 text-purple-200">(hardcoded)</span>'
           : '';
+        const name = userDisplayName(u);
         return `
           <tr class="border-b border-slate-800/60 hover:bg-slate-800/30 transition">
             <td class="py-3 pr-4 font-mono text-xs md:text-sm text-slate-200 break-all">${escapeHtml(u.email)}${hardcoded}</td>
+            <td class="py-3 pr-4 text-sm text-slate-200">${escapeHtml(name)}</td>
             <td class="py-3 pr-4">${roleBadge(u.role)}</td>
             <td class="py-3 pr-4">${statusPill(u)}</td>
             <td class="py-3 pr-4">${coursesLabel(u.courses)}</td>
@@ -598,10 +688,14 @@ sitemap: false
         const hardcoded = u.role === 'superuser'
           ? '<span class="ml-1.5 px-1.5 py-0.5 rounded text-[9px] font-bold bg-purple-500/20 text-purple-200">(hardcoded)</span>'
           : '';
+        const name = userDisplayName(u);
         return `
           <div class="rounded-xl bg-slate-950/40 ring-1 ring-slate-800 p-4 space-y-2">
             <div class="flex items-start justify-between gap-2 flex-wrap">
-              <div class="font-mono text-xs text-slate-200 break-all">${escapeHtml(u.email)}${hardcoded}</div>
+              <div>
+                <div class="text-sm font-bold text-slate-100">${escapeHtml(name)}</div>
+                <div class="font-mono text-xs text-slate-400 break-all">${escapeHtml(u.email)}${hardcoded}</div>
+              </div>
               <div class="flex items-center gap-1.5">${roleBadge(u.role)}${statusPill(u)}</div>
             </div>
             <div class="text-xs text-slate-400">Courses: ${coursesLabel(u.courses)}</div>
@@ -694,6 +788,7 @@ sitemap: false
       state.editingEmail = user.email;
       $('edit-panel-email').textContent = user.email;
       $('edit-email').value = user.email;
+      $('edit-name').value = user.name || '';
       $('edit-role').value = user.role === 'superuser' ? 'student' : user.role;
       $('edit-notes').value = user.notes || '';
       const selected = user.courses === '*'
@@ -714,13 +809,14 @@ sitemap: false
     $('add-form').addEventListener('submit', async (e) => {
       e.preventDefault();
       const email = $('add-email').value.trim().toLowerCase();
+      const name = $('add-name').value.trim();
       const role = $('add-role').value;
       const courses = getSelectedCourses('add');
       const notes = $('add-notes').value.trim();
       try {
         const res = await api('/api/admin/users', {
           method: 'POST',
-          body: JSON.stringify({ email, role, courses, notes }),
+          body: JSON.stringify({ email, name, role, courses, notes }),
         });
         toast(res.message || `User ${email} created. Tell them their password is 87654321.`,
               'success', 'User created', 12000);
@@ -743,6 +839,7 @@ sitemap: false
       if (!state.editingEmail) return;
       const body = {
         email: state.editingEmail,
+        name: $('edit-name').value.trim(),
         role: $('edit-role').value,
         courses: getSelectedCourses('edit'),
         notes: $('edit-notes').value.trim(),
@@ -810,6 +907,66 @@ sitemap: false
       if (e.key !== 'Escape') return;
       if (!$('edit-panel').classList.contains('closed')) closeEditPanel();
       if (!$('confirm-modal').classList.contains('hidden')) $('confirm-cancel').click();
+    });
+
+    // ---------- Change My Password (collapsible) ----------
+    $('change-pw-toggle').addEventListener('click', () => {
+      const body = $('change-pw-body');
+      const chev = $('change-pw-chevron');
+      const isOpen = !body.classList.contains('hidden');
+      if (isOpen) {
+        body.classList.add('hidden');
+        chev.style.transform = '';
+      } else {
+        body.classList.remove('hidden');
+        chev.style.transform = 'rotate(180deg)';
+      }
+    });
+
+    function validateNewPassword(pw) {
+      if (!pw || pw.length < 8) return 'New password must be at least 8 characters.';
+      if (pw === '87654321') return 'You cannot reuse the temporary password 87654321.';
+      const hasLetter = /[A-Za-z]/.test(pw);
+      const hasNumber = /[0-9]/.test(pw);
+      if (!hasLetter || !hasNumber) return 'New password must contain at least one letter and one number.';
+      return null;
+    }
+
+    $('change-pw-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const currentPassword = $('change-pw-current').value;
+      const newPassword = $('change-pw-new').value;
+      const confirmPassword = $('change-pw-confirm').value;
+      if (!currentPassword) {
+        toast('Please enter your current password.', 'error', 'Missing field');
+        return;
+      }
+      const err = validateNewPassword(newPassword);
+      if (err) {
+        toast(err, 'error', 'Invalid password');
+        return;
+      }
+      if (newPassword !== confirmPassword) {
+        toast('New password and confirmation do not match.', 'error', 'Mismatch');
+        return;
+      }
+      const btn = $('change-pw-submit');
+      btn.disabled = true;
+      const originalLabel = btn.textContent;
+      btn.textContent = 'Changing…';
+      try {
+        await api('/api/auth/change-password', {
+          method: 'POST',
+          body: JSON.stringify({ currentPassword, newPassword }),
+        });
+        toast('Your password has been changed.', 'success', 'Password updated');
+        $('change-pw-form').reset();
+      } catch (err2) {
+        toast(err2.message, 'error', 'Change failed');
+      } finally {
+        btn.disabled = false;
+        btn.textContent = originalLabel;
+      }
     });
 
     // ---------- Go ----------

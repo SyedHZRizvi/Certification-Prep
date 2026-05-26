@@ -14,6 +14,20 @@ import { ROLES } from "../../lib/roles.js";
 
 const SESSION_COOKIE = "ch_session";
 
+/**
+ * Fallback display name when the user record has no explicit `name` field.
+ * "syed@transcrypts.com" → "Syed"
+ * "humayun.zafar@example.com" → "Humayun Zafar"
+ * "first_last@x.com" → "First Last"
+ */
+function displayNameFromEmail(email) {
+  if (!email) return "User";
+  const local = email.split("@")[0] || email;
+  return local
+    .replace(/[._-]+/g, " ")
+    .replace(/\b\w/g, (c) => c.toUpperCase());
+}
+
 export async function onRequestGet({ request, env }) {
   const cookies = parseCookies(request);
   const token = cookies[SESSION_COOKIE];
@@ -27,6 +41,7 @@ export async function onRequestGet({ request, env }) {
     return json({
       authenticated: true,
       email: claims.email,
+      name: claims.name || displayNameFromEmail(claims.email),
       role,
       courses: claims.courses,
       must_change_password: Boolean(claims.must_change_password),
