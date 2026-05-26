@@ -14,6 +14,40 @@ title: ASCM CPIM Track
 
 ---
 
+## ✨ Why This Certification Matters
+
+### 🎯 The promise
+
+The ASCM Certified in Planning and Inventory Management (CPIM) is the deepest, most numerically rigorous certification in supply chain — the one that tests whether you can actually run S&OP, MRP, MPS, capacity planning, and inventory math at a real manufacturing or distribution operation. It is the credential most-cited by hiring managers at Boeing, Lockheed, Caterpillar, Pfizer, Procter & Gamble, and any company that turns raw materials into finished goods. Pass CPIM and you are recognized as the planner who can defend a master schedule under cross-examination.
+
+### 💼 Career outcomes after passing
+
+- **Production Planner / Master Scheduler** ($75K–$110K) — running MPS and MRP for a plant or product line
+- **Demand Planner** ($80K–$115K) — forecasting and S&OP demand consensus
+- **Materials Manager** ($90K–$130K) — inventory strategy, supplier scheduling, plant materials policy
+- **Operations Manager** ($110K–$155K) — plant-floor leadership; CPIM is increasingly preferred
+- **Supply / Inventory Planning Manager** ($105K–$145K) — owning safety stock, EOQ, ABC, replenishment policy
+- **S&OP Manager** ($115K–$155K) — running the integrated planning cycle (often laddering into CSCP for the end-to-end role)
+
+ASCM's own member salary data shows CPIM holders earning **a 15–22% premium** over non-certified planners in equivalent roles. CPIM pairs powerfully with **CSCP (course 10)** for the end-to-end supply-chain executive path and with **CLTD (course 12)** for distribution-side leadership.
+
+### 🏛️ Why The Cert Hub's version is different
+
+- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — every planning algorithm derived from first principles (Wagner-Whitin 1958, Wilson 1934 EOQ, Orlicky 1975 MRP, Goldratt 1984 TOC)
+- **Story-driven lessons (not flashcard punishment)** — concepts grounded in real factories (Toyota TPS, Boeing 787, Tesla Gigafactory) before introducing terminology
+- **Original questions only** — every quiz, calculation question, and practice exam written from the published ASCM Exam Content Manual; no copyrighted dumps
+- **Real-world case studies** — Toyota's heijunka and kanban, the 787 Dreamliner outsourcing lessons, Boeing's MRO planning, Caterpillar's lean rollout, COVID-era ventilator production
+- **One author, one voice** — coherent APICS/ASCM vocabulary across all 8 modules
+- **Updated for the 2026 consolidated CPIM exam** — single-exam format with integrated coverage of strategy, planning, execution, and inventory
+
+### 🚀 Ready to start?
+
+Ten to fourteen weeks. Get comfortable with the math — CPIM is a calculation-heavy exam. The official ASCM Learning System pairs cleanly with this conceptual scaffolding.
+
+Begin with [Module 1: Manufacturing Strategy →](./Module-01-Manufacturing-Strategy/Reading.md)
+
+---
+
 ## 🎯 What You'll Learn
 
 By the end of this track, you'll be able to:

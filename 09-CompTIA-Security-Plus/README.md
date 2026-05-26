@@ -14,6 +14,40 @@ title: CompTIA Security+ Track (SY0-701)
 
 ---
 
+## ✨ Why This Certification Matters
+
+### 🎯 The promise
+
+CompTIA Security+ (SY0-701) is the most-required cybersecurity certification on Earth. It is **the** baseline credential — the one mandated by the US Department of Defense (DoD 8140 / formerly 8570) for nearly every cleared security role, listed as required or preferred on the majority of US cybersecurity job postings, and recognized globally as the proof that you understand defensive security at a working professional level. Pass Sec+ and you stop being someone who *talks* about security on a forum and become someone *qualified* to do it for a paycheck.
+
+### 💼 Career outcomes after passing
+
+- **SOC Analyst (Tier 1 / Tier 2)** ($65K–$95K) — the most common first cybersecurity role; Sec+ is the explicit baseline
+- **Security Analyst** ($75K–$110K) — running vulnerability scans, IR playbooks, controls evaluation
+- **Cybersecurity Specialist (DoD / federal contractor)** ($85K–$120K) — Sec+ satisfies the 8140 baseline; clearance is the multiplier
+- **GRC Analyst (Governance, Risk, Compliance)** ($80K–$115K) — for the framework-fluent path (NIST CSF, ISO 27001, PCI-DSS, HIPAA)
+- **Penetration Tester (Junior)** ($85K–$120K) — Sec+ as floor, PenTest+ / OSCP layered on top
+- **Information Security Engineer** ($105K–$145K) — typical 2–3 years after Sec+
+
+Sec+ is the foundation of the most diverse cybersecurity ladder in the industry: into **CySA+** (analyst), **PenTest+** / **OSCP** (offensive), **CASP+** / **CISSP** (architect/manager), **CCSP** (cloud security), or laterally into **AWS Security Specialty** / **Azure SC-300 (course 27)**. CompTIA's 2024 salary report puts the average Sec+ holder's compensation at $84K — and 70%+ of US cyber job postings cite Sec+ as preferred or required.
+
+### 🏛️ Why The Cert Hub's version is different
+
+- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — security taught from CS first principles (Saltzer & Schroeder 1975, Diffie-Hellman 1976, RSA 1978, Kerberos 1988), with named-source citations throughout
+- **Story-driven lessons (not flashcard punishment)** — attacks introduced through real breach narratives (Equifax, SolarWinds, Colonial Pipeline, MOVEit), not bullet definitions
+- **Original questions only** — every quiz, practice exam, and PBQ written in the spirit of the published exam objectives; no copyrighted dumps
+- **A real Capstone** — the CMCU Credit Union scenario, a 6-week integrative project where you stand up a security program from scratch after a peer-institution breach, with 7 deliverables including a NIST CSF 2.0 gap assessment and a board-level metrics dashboard
+- **One author, one voice** — coherent vocabulary across all 10 modules, three practice exams, and the capstone
+- **Updated for the SY0-701 (Nov 2023 → current) blueprint** — including Zero Trust depth, cloud shared responsibility, IoT/OT/ICS, and supply-chain risk
+
+### 🚀 Ready to start?
+
+Six to eight weeks. Pair this course with Professor Messer's free SY0-701 video series. Take all three practice exams. Drill the acronym flashcards daily. That is the playbook.
+
+Begin with [Module 1: Security Fundamentals →](./Module-01-Security-Fundamentals/Reading.md)
+
+---
+
 ## 🎯 What You'll Learn
 
 By the end of this track, you'll be able to:

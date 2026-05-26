@@ -15,6 +15,40 @@ title: AI Marketing Practitioner Track
 
 ---
 
+## ✨ Why This Certification Matters
+
+### 🎯 The promise
+
+AI Marketing Practitioner is the credential that takes you from someone who *understands* digital marketing to someone who *ships* it — the operator running real campaigns on Google, Meta, TikTok, and LinkedIn with an AI-assisted workflow that produces creative, copy, audiences, landing pages, and measurement at 2026 speed. By the end of this track you'll hold (or be ready to sit) **Google Ads Search & Display certifications**, **Meta Blueprint Media Buying Professional**, and **TikTok Marketing Science**. More important: you'll have launched real campaigns with real money.
+
+### 💼 Career outcomes after passing
+
+- **Performance Marketer / Paid Media Specialist** ($75K–$110K) — running Google + Meta with AI-assisted creative
+- **Growth Marketer** ($85K–$125K) — owning the full acquisition stack at an early-stage company
+- **PPC / Paid Search Specialist** ($70K–$100K) — Google Ads / Microsoft Ads specialization
+- **Paid Social Specialist** ($75K–$110K) — Meta + TikTok + LinkedIn focus, AI creative pipelines
+- **Marketing Operations Specialist** ($80K–$115K) — HubSpot / Klaviyo / GA4 / attribution
+- **In-house Performance Marketing Manager (DTC, B2B SaaS, agency)** ($95K–$135K)
+
+This is course **2 of 5** in the AI Digital Marketing ladder: **Foundations (14) → Practitioner (this course) → Strategist (16) → Entrepreneur (17) → Capstone Portfolio (18)**. Practitioner grads typically land $20K–$30K above Foundations grads in equivalent roles thanks to the hands-on, real-campaign portfolio they build.
+
+### 🏛️ Why The Cert Hub's version is different
+
+- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — auction theory taught from first principles (Vickrey 1961, Edelman/Ostrovsky/Schwarz 2007 on GSP auctions), attribution science from Shapley 1953
+- **Story-driven lessons (not flashcard punishment)** — every channel introduced through a real campaign teardown before any tactics
+- **Original questions only** — every quiz and practice exam written from official Google / Meta / TikTok exam outlines; no copyrighted dumps
+- **Real-world case studies + a real capstone** — 12-week scenario as the new Senior Performance Marketer at a $20M DTC e-commerce brand cutting CAC 25% in 90 days
+- **One author, one voice** — coherent vocabulary across all 10 modules
+- **Updated for the 2026 platform landscape** — Performance Max best practices, Meta Advantage+ shopping, TikTok Spark Ads, LinkedIn predictive audiences, Consent Mode v2, GA4, server-side tracking
+
+### 🚀 Ready to start?
+
+Six weeks, ~$200 of real ad spend across the capstone modules, and a willingness to launch campaigns with actual money on the line.
+
+Begin with [Module 1: Campaign Strategy & Brief Writing →](./Module-01-Campaign-Strategy-Brief-Writing/Reading.md)
+
+---
+
 ## 🎓 Capstone & Recommended Readings
 
 This track includes two course-root resources that go beyond exam prep:

@@ -14,6 +14,41 @@ title: Windows Server Hybrid Administrator Associate (AZ-800 + AZ-801)
 
 ---
 
+## ✨ Why This Certification Matters
+
+### 🎯 The promise
+
+The Microsoft Certified: Windows Server Hybrid Administrator Associate (AZ-800 + AZ-801) is the credential for the systems engineer who *runs* the real enterprise — the one with on-prem Active Directory, Hyper-V clusters, file servers, DFS, DHCP, IPAM, IIS, plus the Azure Arc / Entra Connect / Azure Monitor / Azure Backup integration every Fortune 500 actually uses in 2026. It is one of the most demanding credentials Microsoft awards at the associate tier — passing **two** exams — and one of the most respected in the hybrid-infrastructure career market.
+
+### 💼 Career outcomes after passing
+
+- **Windows Systems Administrator** ($85K–$125K) — running on-prem AD, file servers, Hyper-V
+- **Hybrid Infrastructure Engineer** ($110K–$155K) — Windows Server + Azure Arc + Entra Connect at scale
+- **Senior Systems Engineer** ($120K–$170K) — design and ops across hybrid environments
+- **Active Directory Engineer / Identity Engineer** ($115K–$165K) — AD DS forests, FSMO design, Entra ID integration
+- **Infrastructure Architect (Microsoft track)** ($140K–$195K) — typical 3–5 years post-AZ-800/801
+- **DevOps Engineer (Microsoft stack)** ($120K–$160K) — Windows Server + Azure + DSC / PowerShell
+- **Senior Cloud Consultant (Microsoft Partner)** ($130K–$185K + bonus) — Avanade, Insight, Cognizant
+
+This is the senior credential in the most coherent Microsoft sysadmin ladder: **AZ-900 (course 05) → AZ-104 (course 06) → AZ-800/801 (this course) → AZ-305 (Solutions Architect Expert)**. AZ-800/801 holders typically command a 20–30% premium over AZ-104-only peers thanks to the breadth and depth required to pass both exams.
+
+### 🏛️ Why The Cert Hub's version is different
+
+- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — AD design taught from named sources (Lamport on distributed time, the Kerberos 1988 paper, Microsoft's design papers on FSMO and replication topology, Saltzer & Schroeder on least privilege)
+- **Story-driven lessons (not flashcard punishment)** — every module begins with a real enterprise scenario (an AD forest recovery after ransomware, a Hyper-V cluster split-brain, a file-server migration of 4,200 user mailboxes)
+- **Original questions only** — every quiz and practice exam written from Microsoft's published skills-measured outlines for both AZ-800 and AZ-801; no copyrighted dumps
+- **Real-world case studies** — Maersk's NotPetya AD recovery, SolarWinds 2020 (AD as the target), a real hospital's Storage Spaces Direct migration, a regional bank's Azure Arc rollout
+- **One author, one voice** — coherent vocabulary across all 10 modules and both exam blueprints
+- **Updated for the 2026 AZ-800 / AZ-801 blueprint** — Windows Server 2022/2025, Storage Replica/Spaces Direct, Azure Arc-enabled servers, Azure Stack HCI, the current Defender for Servers posture
+
+### 🚀 Ready to start?
+
+Ten to fourteen weeks. Set up a real AD lab (Hyper-V on Windows 11 Pro or VMware Workstation). Build an Entra Connect lab against a free Microsoft 365 developer tenant. Plan to sit AZ-800 around week 9 and AZ-801 around week 13.
+
+Begin with [Module 1: Active Directory →](./Module-01-Active-Directory/Reading.md)
+
+---
+
 ## 🎯 What You'll Learn
 
 By the end of this track, you'll be able to:

@@ -14,6 +14,41 @@ title: Microsoft Endpoint Administrator Track (MD-102)
 
 ---
 
+## ✨ Why This Certification Matters
+
+### 🎯 The promise
+
+The Microsoft Certified: Endpoint Administrator Associate (MD-102) is the credential for the engineer who *owns* the modern workplace endpoint — Windows 11, iOS, Android, macOS, and Linux — through Microsoft Intune, Autopilot, Configuration Manager, Defender for Endpoint, and the Conditional Access policies that decide who gets in and from where. It is the post-pandemic credential for hybrid-work infrastructure, the credential most heavily weighted in Modern Workplace consulting engagements at Microsoft Partners, and the credential that proves you can land Windows 11 (and replace Windows 10) at enterprise scale.
+
+### 💼 Career outcomes after passing
+
+- **Endpoint Administrator / Intune Administrator** ($85K–$120K) — owning the Intune tenant and policy set
+- **Modern Workplace Engineer** ($95K–$135K) — Windows 11 + Intune + Entra at enterprise scale
+- **Senior Desktop Engineer** ($90K–$130K) — typically promoted from Tier-2 with MD-102 in hand
+- **Mobile Device Manager** ($85K–$120K) — iOS / Android / Windows MDM specialization
+- **Modern Workplace Consultant (Microsoft Partner)** ($110K–$155K + bonus) — Avanade, Insight, Cognizant, Slalom
+- **Cloud Endpoint Engineer (Microsoft 365 + Azure)** ($105K–$145K) — paired with MS-900 / SC-300
+- **Senior Systems Engineer (endpoint specialization)** ($115K–$155K) — typical 2–3 years post-MD-102
+
+MD-102 pairs cleanly with **SC-300 (course 27, Identity & Access Admin)**, **AZ-104 (course 06)**, and **MS-900 / SC-900** for the complete Modern Workplace engineer profile. Modern Workplace engineers are in chronic short supply in 2026 — practitioners typically see **15–25% compensation lift** in the 12 months after passing.
+
+### 🏛️ Why The Cert Hub's version is different
+
+- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — endpoint security taught from first principles (Saltzer & Schroeder 1975 on least privilege, the Zero Trust architecture papers, the NIST SP 800-46 telework guidance)
+- **Story-driven lessons (not flashcard punishment)** — every Intune feature introduced through a real enterprise scenario (a global Windows 11 Autopilot rollout, a BYOD MAM design, a Conditional-Access wedge for a contractor population)
+- **Original questions only** — every quiz and practice exam written from Microsoft's published MD-102 skills-measured outline; no copyrighted dumps
+- **Real-world case studies** — Maersk's NotPetya endpoint disaster, the 2020 SolarWinds endpoint forensics, a K-12 district's 1:1 Chromebook-to-Windows-11 transition, a regional law firm's Intune + Defender rollout
+- **One author, one voice** — coherent vocabulary across all 8 modules
+- **Updated for the 2026 MD-102 blueprint** — Windows 11 24H2/25H2, Microsoft Intune Suite (Endpoint Privilege Management, Remote Help, Advanced Analytics), Defender for Endpoint Plan 2, Microsoft Copilot for Security context for endpoint triage
+
+### 🚀 Ready to start?
+
+Six to eight weeks. A free Microsoft 365 E5 developer tenant gives you everything (Intune, Defender, Entra P2) at zero cost. Build a real-world set of Intune policies you would actually deploy. Test Autopilot end-to-end against a spare device.
+
+Begin with [Module 1: Modern Workplace →](./Module-01-Modern-Workplace/Reading.md)
+
+---
+
 ## 🎯 What You'll Learn
 
 By the end of this track, you'll be able to:

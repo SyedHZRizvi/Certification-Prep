@@ -14,6 +14,41 @@ title: CompTIA Linux+ Track (XK0-005)
 
 ---
 
+## ✨ Why This Certification Matters
+
+### 🎯 The promise
+
+CompTIA Linux+ (XK0-005) is the credential that takes you from someone who *runs commands* to someone who *administers* Linux systems in production. Linux runs **90%+ of the public cloud**, the majority of enterprise servers, every container in Kubernetes, every Android phone, every embedded device, and the supercomputers on the TOP500 list. It is the operating system the modern world actually runs on. Pass Linux+ and you are recognized as a credentialed Linux sysadmin — qualified for any role where "Linux experience" appears in the job description.
+
+### 💼 Career outcomes after passing
+
+- **Linux Systems Administrator** ($80K–$115K) — operating Linux fleets in production
+- **DevOps Engineer** ($105K–$145K) — Linux fluency is the foundational requirement; layer on cloud + CI/CD
+- **Site Reliability Engineer (SRE)** ($120K–$170K) — Linux deeply, plus observability + automation
+- **Cloud Engineer (Linux focus)** ($110K–$155K) — AWS / Azure / GCP plus production Linux skill
+- **Cybersecurity Engineer (Linux specialization)** ($110K–$155K) — incident response, forensics, threat hunting on Linux fleets
+- **Kubernetes / Container Engineer** ($125K–$175K) — Linux+ floor, layered with CKA / CKAD certs
+- **Open-Source Software Engineer** ($120K–$180K) — at Red Hat, SUSE, Canonical, the Linux Foundation member companies
+
+Linux+ pairs cleanly with **Network+ (course 22)** and **Security+ (course 09)** for the infrastructure / security path, and with cloud certs (courses 03–08) for the cloud-engineer path. CompTIA's salary data places Linux+ holders at roughly **$95K average**, with a 15–25% premium over non-certified Linux operators in equivalent roles.
+
+### 🏛️ Why The Cert Hub's version is different
+
+- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — Unix design philosophy taught from named sources (Thompson & Ritchie 1974 on Unix, Stevens 1992 on advanced programming, Kerrisk's *The Linux Programming Interface*, Nemeth et al. on system administration)
+- **Story-driven lessons (not flashcard punishment)** — every command introduced through a real ops scenario (a load-balancer fix at 3am, a kernel-panic forensic walkthrough, a systemd unit-file rescue)
+- **Original questions only** — every quiz and practice exam written from CompTIA's published XK0-005 exam objectives; no copyrighted dumps
+- **Real-world case studies** — the Heartbleed disclosure timeline, the Dirty COW kernel exploit lifecycle, a real outage post-mortem from a SaaS company, systemd vs sysvinit migration battle stories
+- **One author, one voice** — coherent vocabulary across all 8 modules
+- **Updated for the XK0-005 blueprint** — including systemd-everything, modern containers (Docker, Podman), nftables (not iptables), modern Bash, and the current security-control set (SELinux / AppArmor)
+
+### 🚀 Ready to start?
+
+Six to eight weeks. Spin up an Ubuntu and a RHEL-derivative VM (Rocky or Alma) on day one. Live in the terminal. Pair this with the official LFCS or LPIC-1 practice questions for additional repetitions.
+
+Begin with [Module 1: Boot & systemd →](./Module-01-Boot-Systemd/Reading.md)
+
+---
+
 ## 🎯 What You'll Learn
 
 By the end of this track, you'll be able to:

@@ -14,6 +14,40 @@ title: CompTIA A+ Track (220-1101 + 220-1102)
 
 ---
 
+## ✨ Why This Certification Matters
+
+### 🎯 The promise
+
+CompTIA A+ is the most universally recognized starting line into IT in the world. It is the credential listed on **80%+** of US IT-support job postings (preferred or required), the explicit baseline at Dell, HP, Lenovo, IBM, Best Buy Geek Squad, and thousands of MSPs and corporate help desks. It is also the credential that proves you can troubleshoot anything — hardware, software, mobile, network, security — under pressure. Pass both A+ exams (220-1101 + 220-1102) and you have an industry-recognized ticket into any IT career path.
+
+### 💼 Career outcomes after passing
+
+- **IT Help Desk Technician / Service Desk Analyst** ($45K–$60K) — Tier-1 support; the most common entry role
+- **Desktop Support Specialist** ($50K–$65K) — Tier-2 in-person / on-site support
+- **Field Service Technician** ($48K–$62K) — on-site break / fix; common at MSPs and OEMs
+- **PC Repair Technician** ($42K–$58K) — Best Buy Geek Squad, independent shops, refurbishers
+- **Junior Systems Administrator** ($55K–$75K) — with 12–18 months of help-desk experience after A+
+- **IT Support Specialist (corporate)** ($55K–$70K) — Fortune 500 internal IT teams
+
+A+ is the universal gateway. It ladders directly into **Network+ (course 22)**, **Security+ (course 09)**, **Linux+ (course 23)**, **Server+ (course 24)**, and on into the Microsoft (courses 25–27) or cloud (courses 03–08) tracks. CompTIA's own salary data puts the average A+ holder at roughly $55K starting, with a 25–40% premium to those who also hold Network+ within 24 months.
+
+### 🏛️ Why The Cert Hub's version is different
+
+- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — hardware taught from first principles (von Neumann architecture, OSI model, RAID math), not memorize-the-port-pinout
+- **Story-driven lessons (not flashcard punishment)** — every troubleshooting scenario introduced through a real ticket-room narrative
+- **Original questions only** — every quiz and practice exam written from CompTIA's published 220-1101 and 220-1102 exam objectives; no copyrighted dumps
+- **Real-world case studies** — POST beep diagnostics on legacy fleet, Windows 11 deployment lessons from a regional school district, an MSP's BYOD security retrofit, a ransomware-incident first-responder timeline
+- **One author, one voice** — coherent vocabulary across all 12 modules (covering both Core 1 and Core 2)
+- **Updated for the 2026 220-1101 / 220-1102 blueprint** — including current Windows 11, USB-C / Thunderbolt 4, Wi-Fi 6E / 7, DDR5, NVMe, and the latest Microsoft Intune / mobile management material
+
+### 🚀 Ready to start?
+
+Eight to twelve weeks. The cheapest possible hardware lab (one decommissioned PC, one Raspberry Pi, one cheap router) does wonders. Plan to sit Core 1 around week 6 and Core 2 around week 10.
+
+Begin with [Module 1: Mobile Devices →](./Module-01-Mobile-Devices/Reading.md)
+
+---
+
 ## 🎯 What You'll Master
 
 By the end of this track, you'll be able to:

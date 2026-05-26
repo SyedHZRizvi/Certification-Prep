@@ -14,6 +14,40 @@ title: AI Marketing Capstone Portfolio
 
 ---
 
+## ✨ Why This Capstone Matters
+
+### 🎯 The promise
+
+The AI Marketing Capstone Portfolio is the final, proof-of-work course in the AI Digital Marketing ladder — the one where everything you've learned across Foundations, Practitioner, Strategist, and Entrepreneur converts into 5 recruiter-grade portfolio pieces, a real personal-brand presence, and a first-client pitch you can send Monday morning. Hiring managers spend ~8 seconds per LinkedIn profile and prospects spend ~3 seconds per cold DM. This course makes you the candidate (or the consultant) whose link earns the 30-minute meeting.
+
+### 💼 Career outcomes after completing
+
+- **Senior In-House Marketing Hire (B2B SaaS, DTC, healthtech, fintech)** ($110K–$170K) — portfolio is the closing argument
+- **Performance / Growth Marketing Manager** ($120K–$165K) — typical bracket for candidates entering with a real measurement portfolio
+- **Marketing Operations / Analytics Manager** ($115K–$155K) — the GA4 / attribution / CDP work in this capstone is hireable on its own
+- **AI Marketing Consultant (first 3 clients at $5K–$15K MRR each)** ($120K–$240K Year-1 realized income) — direct conversion of the portfolio into agency revenue
+- **Fractional Head of Growth at seed/Series A startups** ($150K–$250K)
+- **Specialized Productized Service Operator** ($100K–$300K profit Year 1)
+
+This is course **5 of 5** — the bow on the ladder: **Foundations (14) → Practitioner (15) → Strategist (16) → Entrepreneur (17) → Capstone (this course)**. Whether you go in-house or independent, this is the course that turns *credentials* into *job offers and signed contracts*.
+
+### 🏛️ Why The Cert Hub's version is different
+
+- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — portfolio standards modeled on the case competitions and capstone studios of top-tier MBA programs (Wharton, MIT Sloan, HBS, Stanford GSB)
+- **Story-driven lessons (not flashcard punishment)** — every portfolio piece begins with a real client problem narrative
+- **Original frameworks only** — rubrics, scorecards, deliverable templates are all original to The Cert Hub
+- **5 real artifacts at the end** — a full-funnel audit, a campaign post-mortem, an automation walkthrough video, an attribution dashboard, a working AI agent — each portfolio-grade on its own
+- **One author, one voice** — coherent vocabulary across all 8 modules
+- **Updated for the 2026 AI-marketing hiring market** — what hiring managers actually look at on a LinkedIn profile, what prospects respond to in a cold DM, what reviewers grade in a portfolio review
+
+### 🚀 Ready to start?
+
+Six to eight weeks. ~$200–$400 in tools (most line items have free alternatives). Pick one ICP (your own business or a hypothetical brand) and ship the artifacts.
+
+Begin with [Module 1: Portfolio Strategy — What to Build →](./Module-01-Portfolio-Strategy-What-To-Build/Reading.md)
+
+---
+
 ## 🎯 What This Course Is
 
 This is the **capstone** of the AI Digital Marketing ladder. You already know the theory (Foundations), the tools (Practitioner), the strategy (Strategist), and the business mechanics (Entrepreneur). What you don't have yet is **proof of work**.

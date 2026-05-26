@@ -14,6 +14,40 @@ title: Azure AI Engineer Track (AI-102)
 
 ---
 
+## ✨ Why This Certification Matters
+
+### 🎯 The promise
+
+The Microsoft Certified: Azure AI Engineer Associate (AI-102) is the credential that proves you can ship production AI on the cloud platform powering OpenAI, GitHub Copilot, and most of the enterprise AI rollouts of 2025–2026. Azure AI Foundry, Azure OpenAI, Azure AI Search, Document Intelligence, Speech, Vision, and the Language service — AI-102 holders are the engineers building real systems on top of all of them. Pass AI-102 and your résumé moves from "interested in AI" to "deploys AI in production."
+
+### 💼 Career outcomes after passing
+
+- **Azure AI Engineer** ($115K–$160K) — building Azure OpenAI / AI Foundry solutions for enterprises
+- **GenAI / LLM Application Engineer** ($120K–$175K) — implementing RAG, agent workflows, copilots
+- **AI Solutions Architect (Microsoft track)** ($135K–$190K) — premium over generalist architects
+- **Machine Learning Engineer (Azure ML focus)** ($125K–$170K) — training and deploying custom models on Azure ML
+- **Data Scientist (Azure ecosystem)** ($120K–$165K) — AI-102 plus DP-100 is a recurring premium combination
+- **Cloud Consultant — AI practice (Microsoft Partner)** ($130K–$185K) — billable consulting at Avanade, Insight, Slalom, Cognizant
+
+AI-102 is the central rung of Microsoft's AI ladder: **AZ-900 (course 05) / AI-900 → AI-102 (this course) → AI-specific specialty certs and the AZ-305 Solutions Architect Expert track**. It also pairs cleanly with course 06 (AZ-104) and course 27 (SC-300) for the increasingly common "AI engineer who can also manage the platform and identity" role.
+
+### 🏛️ Why The Cert Hub's version is different
+
+- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — transformer architecture, embedding geometry, RAG pipeline design taught from first principles
+- **Story-driven lessons (not flashcard punishment)** — every module solves a real production scenario (a customer-support copilot, a document-extraction pipeline) before introducing services
+- **Original questions only** — quizzes and practice exams written from Microsoft's published skills-measured outline; no copyrighted dumps
+- **Real-world case studies** — Microsoft's internal Copilot rollout, ASOS's product search, KPMG's audit assistant, MAS's policy-document analysis
+- **One author, one voice** — coherent vocabulary across all 8 modules
+- **Updated for the 2026 AI-102 blueprint** — Azure AI Foundry (the rebrand of AI Studio), the current Azure OpenAI deployment types (Standard, Provisioned, Batch, Global), and the latest Responsible AI tooling
+
+### 🚀 Ready to start?
+
+Six weeks of evening study, a $25–$50/month pay-as-you-go Azure subscription so every snippet runs against real services, and three practice exams calibrated to the live exam's difficulty curve.
+
+Begin with [Module 1: AI Services Overview →](./Module-01-AI-Services-Overview/Reading.md)
+
+---
+
 ## 🎯 What You'll Learn
 
 By the end of this track, you'll be able to:

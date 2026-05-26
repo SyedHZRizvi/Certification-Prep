@@ -14,6 +14,41 @@ title: CompTIA Network+ Track (N10-009)
 
 ---
 
+## ✨ Why This Certification Matters
+
+### 🎯 The promise
+
+CompTIA Network+ (N10-009) is the credential that takes you from a help-desk technician who *uses* the network to an engineer who *understands* it — every OSI layer, every routing protocol, every subnet, every wireless standard, every troubleshooting tool. It is the most-cited networking credential in entry-level network and sysadmin job postings, the explicit prerequisite for the next layer of cybersecurity certifications, and the cleanest way to prove networking fluency without spending two years and $300 on the Cisco CCNA. Pass Network+ and you have an industry-recognized credential that opens the door to network administration, cybersecurity, and cloud-infrastructure roles.
+
+### 💼 Career outcomes after passing
+
+- **Junior Network Administrator** ($65K–$90K) — owning a single site's LAN / WAN / Wi-Fi
+- **Network Technician / NOC Analyst** ($60K–$85K) — Tier-1 / Tier-2 monitoring and triage
+- **Systems Administrator (network-leaning)** ($70K–$100K) — bridge between sysadmin and net-admin
+- **Network Engineer (2–3 years experience)** ($85K–$120K) — design and operate enterprise networks
+- **Cybersecurity Analyst** ($75K–$110K) — Network+ is widely listed as the floor; Security+ (course 09) is the natural next step
+- **Wireless / Mobility Specialist** ($80K–$115K) — 802.11ax/be design, site surveys, Wi-Fi 6E rollouts
+- **Cloud Network Engineer** ($110K–$150K) — Network+ plus AWS / Azure credentials
+
+Network+ sits on the second rung of CompTIA's "Infrastructure" and "Cybersecurity" pathways: **A+ (course 21) → Network+ (this course) → Security+ (course 09) → Linux+ / Server+ / CySA+ / PenTest+ → CASP+**. CompTIA's salary data shows Network+ holders earning roughly **20–30% more** than A+-only peers.
+
+### 🏛️ Why The Cert Hub's version is different
+
+- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — networking taught from first principles (Kleinrock 1961 on queueing, Cerf & Kahn 1974 on TCP, the OSI model, Perlman 1985 on spanning tree, Mockapetris 1983 on DNS)
+- **Story-driven lessons (not flashcard punishment)** — every protocol introduced through a real network-failure narrative
+- **Original questions only** — every quiz and practice exam written from CompTIA's published N10-009 exam objectives; no copyrighted dumps
+- **Real-world case studies** — the AT&T 1990 long-distance outage (SS7 cascading failure), Cloudflare's 2019 BGP route-leak, the 2021 Fastly CDN configuration outage, a regional hospital's Wi-Fi-roaming disaster and fix
+- **One author, one voice** — coherent vocabulary across all 8 modules
+- **Updated for the N10-009 (June 2024 → current) blueprint** — including SDN / SD-WAN, Wi-Fi 6E / 7, Zero Trust networking, cloud-connectivity options (VPC peering, Direct Connect / ExpressRoute), and the latest IPv6 deployment patterns
+
+### 🚀 Ready to start?
+
+Six to eight weeks. Subnet on paper every day until it is automatic. Pair this with a virtual lab (GNS3 + free Cisco Packet Tracer, or the EVE-NG community edition).
+
+Begin with [Module 1: Networking Concepts →](./Module-01-Networking-Concepts/Reading.md)
+
+---
+
 ## 🎯 What You'll Learn
 
 By the end of this track, you'll be able to:

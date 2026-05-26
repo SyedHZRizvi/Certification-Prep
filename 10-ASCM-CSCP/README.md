@@ -14,6 +14,40 @@ title: ASCM CSCP Track (Certified Supply Chain Professional)
 
 ---
 
+## ✨ Why This Certification Matters
+
+### 🎯 The promise
+
+The ASCM Certified Supply Chain Professional (CSCP) is the most globally recognized end-to-end supply-chain credential — the credential that distinguishes a *manager of a function* from a *designer of a global supply chain*. It is the certification listed first on every senior supply-chain résumé from Apple to Unilever to the US Department of Defense's logistics commands. Pass CSCP and you are recognized as someone who can speak fluently with procurement, planning, manufacturing, logistics, finance, and the board — using the same vocabulary.
+
+### 💼 Career outcomes after passing
+
+- **Senior Supply Chain Analyst** ($85K–$120K) — typical first post-CSCP role
+- **Supply Chain Manager** ($100K–$140K) — running planning, sourcing, or fulfillment for a product line or region
+- **S&OP / IBP Manager** ($110K–$150K) — owns the integrated planning cycle and the cross-functional consensus
+- **Procurement / Sourcing Manager** ($105K–$145K) — supplier strategy, contracts, category leadership
+- **Director, Supply Chain Operations** ($140K–$185K) — typical 3–5 years post-CSCP with strong delivery record
+- **Supply Chain Consultant (Big-4 / Gartner / Kearney)** ($130K–$180K + bonus) — CSCP is a common signal for the consulting "advanced practitioner" tier
+
+ASCM publishes salary data showing CSCP holders earn an average **20–30% more** than non-certified peers in equivalent roles. CSCP is one node in a coherent ladder: pair it with **CPIM (course 11)** for the planning depth, **CLTD (course 12)** for logistics depth, or **CPSM (course 13)** for the procurement specialization.
+
+### 🏛️ Why The Cert Hub's version is different
+
+- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — frameworks taught from named sources (Forrester 1961 on bullwhip, Lee/Padmanabhan/Whang 1997, Christopher 2016, Goldratt 1984 on TOC)
+- **Story-driven lessons (not flashcard punishment)** — every module solves a real supply-chain problem (Toyota's keiretsu, Zara's fast-fashion network, Apple's component-level mastery) before introducing terminology
+- **Original questions only** — every quiz and practice exam written from the published ASCM Exam Content Manual; no copyrighted dumps
+- **Real-world case studies** — Toyota Production System, Walmart's cross-docking revolution, Unilever's sustainability sourcing, Apple's supply-chain design, the COVID-era semiconductor crisis
+- **One author, one voice** — coherent SCOR/APICS vocabulary across all 10 modules
+- **Updated for the 2026 CSCP ECM** — including circular-economy, ESG reporting (CSRD/SEC climate disclosure), digital twins, and AI-enabled planning
+
+### 🚀 Ready to start?
+
+Twelve to sixteen weeks of disciplined study. ASCM's Learning System as the official content, this curriculum as the conceptual scaffolding, and three practice exams calibrated to the live exam's pacing.
+
+Begin with [Module 1: SCM Foundations & Strategy →](./Module-01-SCM-Foundations-Strategy/Reading.md)
+
+---
+
 ## 🎯 What You'll Learn
 
 By the end of this track, you'll be able to:

@@ -14,6 +14,40 @@ title: AWS AI Practitioner Track (AIF-C01)
 
 ---
 
+## ✨ Why This Certification Matters
+
+### 🎯 The promise
+
+The AWS Certified AI Practitioner (AIF-C01) is the credential that says you can speak the language of modern AI on the dominant cloud platform — Bedrock, SageMaker, Amazon Q, foundation models, RAG, fine-tuning, prompt engineering, guardrails, and the responsible-AI controls that compliance teams now demand. It is the first AWS certification explicitly designed for the generative-AI era, and the cleanest path for any cloud or non-cloud professional to prove AI literacy in 2026 without writing PyTorch from scratch.
+
+### 💼 Career outcomes after passing
+
+- **AI Solutions Engineer / GenAI Engineer** ($110K–$160K) — implementing Bedrock, RAG pipelines, agent workflows for product teams
+- **ML Platform Engineer** ($120K–$170K) — building and operating SageMaker stacks at scale
+- **AI Product Manager** ($120K–$175K) — PMs with credentialed AI literacy are increasingly preferred over generalists
+- **AI Sales Specialist / Solutions Architect (AI focus)** ($130K–$190K + commission) — pre-sales role at AWS, AWS partners, and any SaaS vendor selling AI features
+- **Data Scientist / Applied Scientist** ($125K–$175K) — AIF-C01 is the floor; MLA (ML Associate) and MLS (ML Specialty) layer on top
+- **Cloud Architect with AI specialization** ($140K–$200K) — premium over generalist Cloud Architect
+
+AIF-C01 is the bottom rung of AWS's new AI ladder: **AIF-C01 (this course) → MLA-C01 (Machine Learning Engineer Associate) → MLS-C01 (Machine Learning Specialty)**. It also pairs cleanly with **SAA-C03 (course 04)** for cloud-architect-plus-AI roles, which carry a 10–20% premium over single-discipline architects.
+
+### 🏛️ Why The Cert Hub's version is different
+
+- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — transformer math, embedding geometry, and RAG architecture taught from first principles, not as buzzword soup
+- **Story-driven lessons (not flashcard punishment)** — every module solves a real GenAI problem (customer-support copilot, document search, agent workflow) before introducing services
+- **Original questions only** — quizzes and practice exams written from the AWS Exam Guide; no copyrighted dumps
+- **Real-world case studies** — Anthropic Claude on Bedrock at enterprises, Amazon Q Business deployments, Stripe's internal RAG, Bloomberg GPT lessons
+- **One author, one voice** — coherent vocabulary across all 8 modules
+- **Updated for the 2026 AIF-C01 blueprint** — including the latest Bedrock model card additions (Claude Sonnet 4.5, Amazon Nova family) and Guardrails feature set
+
+### 🚀 Ready to start?
+
+Four to six weeks. An AWS Free Tier account. Genuine curiosity about how foundation models work under the hood. That's the recipe.
+
+Begin with [Module 1: AI / ML Fundamentals →](./Module-01-AI-ML-Fundamentals/Reading.md)
+
+---
+
 ## 🎯 What You'll Learn
 
 By the end of this track, you'll be able to:

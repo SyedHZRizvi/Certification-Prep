@@ -14,6 +14,40 @@ title: Azure Administrator Track (AZ-104)
 
 ---
 
+## ✨ Why This Certification Matters
+
+### 🎯 The promise
+
+The Microsoft Certified: Azure Administrator Associate (AZ-104) is the credential that takes you from someone who *understands* Azure to someone trusted to *operate* it in production. It is the most-listed Azure certification in mid-level cloud job postings, the entry credential for almost every Microsoft partner consulting role, and the proof-of-skill that opens the door to the Solutions Architect Expert, DevOps Engineer Expert, and Security Engineer Associate tiers. Pass AZ-104 and you are no longer a "cloud-curious" IT pro — you are a credentialed Azure operator.
+
+### 💼 Career outcomes after passing
+
+- **Azure Cloud Administrator** ($95K–$130K) — the headline role; runs Azure subscriptions, identities, storage, compute, and networking day-to-day
+- **Cloud Engineer (Microsoft stack)** ($105K–$140K) — IC-track at most Microsoft-leaning enterprises
+- **Hybrid Infrastructure Engineer** ($110K–$145K) — AZ-104 plus Windows Server experience commands a premium (laddering into course 25, AZ-800/801)
+- **Cloud Consultant (Microsoft Partner)** ($115K–$160K) — billable consulting at gold/solutions partners (Avanade, Insight, Sogeti, Cognizant)
+- **DevOps Engineer (Azure DevOps + AKS)** ($120K–$160K) — AZ-104 is the foundation; AZ-400 layers on top
+- **Solutions Architect (Microsoft track)** ($135K–$185K) — AZ-104 is the floor; AZ-305 is the next rung
+
+Average compensation uplift after passing: **15–25%** in the 6–12 months following certification, per Microsoft Learn's 2024 Learner Outcomes Report and Robert Half. AZ-104 sits in the middle of the most coherent ladder in the Microsoft ecosystem: **AZ-900 (course 05) → AZ-104 (this course) → AZ-305 (Solutions Architect Expert) / AZ-400 (DevOps Expert) / AZ-500 (Security Engineer)**.
+
+### 🏛️ Why The Cert Hub's version is different
+
+- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — networking, storage, identity, and governance taught from CS first principles (CAP, Saltzer & Schroeder, Brewer)
+- **Story-driven lessons (not flashcard punishment)** — concepts grounded in real customer scenarios before any service is named
+- **Original questions only** — every quiz and practice exam written from Microsoft's published skills-measured outline; no copyrighted dumps
+- **Real Harvard-case-method capstone** — a 14-week scenario standing up a HIPAA + HITRUST production Azure landing zone for a 4,200-person regional health system on a $1.6M budget
+- **One author, one voice** — coherent vocabulary across all 10 modules, three practice exams, and the capstone
+- **Updated for the 2026 AZ-104 blueprint** — including Microsoft Entra terminology, current VPN Gateway/ExpressRoute pricing tiers, and the latest Azure Monitor + Policy posture
+
+### 🚀 Ready to start?
+
+Six to eight weeks of evening study, a $10–$25/month pay-as-you-go Azure subscription so every CLI and PowerShell snippet sticks as finger memory, and three practice exams that match the live exam's difficulty curve.
+
+Begin with [Module 1: Subscriptions & Resource Hierarchy →](./Module-01-Subscriptions-Resource-Hierarchy/Reading.md)
+
+---
+
 ## 🎯 What You'll Learn
 
 By the end of this track, you'll be able to:

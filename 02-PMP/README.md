@@ -12,6 +12,41 @@ title: PMP Track
 
 ---
 
+## ✨ Why This Certification Matters
+
+### 🎯 The promise
+
+The Project Management Professional (PMP) from PMI is, by every honest measure, the most recognized project-management credential on Earth. It is the letters that move resumes from the "maybe" stack to the "interview" stack at Fortune 500s, federal contractors, consulting firms, and increasingly at tech companies running large cross-functional initiatives. Pass the PMP and you are no longer a project manager — you are *certified* to lead any project, in any methodology (predictive, agile, hybrid), at almost any scale.
+
+### 💼 Career outcomes after passing
+
+- **Project Manager** ($95K–$135K) — the baseline role; most postings list PMP as preferred or required
+- **Senior Project Manager** ($120K–$160K) — typical 2–4 years after PMP, with portfolio of delivered programs
+- **Program Manager** ($130K–$175K) — coordinating multiple related projects, often at director-equivalent level
+- **Portfolio Manager / PMO Lead** ($140K–$190K) — running the project economics for an entire business unit
+- **Management Consultant (Big-4 or boutique)** ($110K–$180K plus bonus) — PMP is table stakes for delivery-side hires at Deloitte, Accenture, EY, KPMG, McKinsey Implementation
+- **Technical Program Manager (TPM)** at FAANG-adjacent tech ($150K–$240K total comp) — PMP increasingly listed alongside MBA-equivalent rigor
+
+PMI's own salary study (Earning Power, 11th edition) puts the median PMP salary in the US at roughly $123K — a 16–32% premium over non-certified PMs in the same roles. The credential is also the gateway into PgMP, PfMP, and the PMI Disciplined Agile suite.
+
+### 🏛️ Why The Cert Hub's version is different
+
+- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — every module includes named-source citations (PMBOK 7, Kotter 1996, Flyvbjerg 2003/2023, Tuckman 1965, Maslow 1943, Kahneman) and Bloom's-taxonomy-tagged questions
+- **Story-driven lessons (not flashcard punishment)** — concepts taught through narrative, not bullet lists
+- **Original questions only** — quizzes and practice exams written from the published Exam Content Outline; no copyrighted dumps
+- **Real Harvard-case-method studies** — Boeing 737 MAX, Knight Capital, Channel Tunnel, HealthCare.gov, NASA Mars Climate Orbiter, Denver Airport baggage system, Hubble, Big Dig, Sydney Opera House, Spotify
+- **A real Capstone** — a $14M digital-transformation rollout at a regional bank acquiring a fintech, producing 6 portfolio-grade PM artifacts (Charter, Stakeholder Register, Risk Register, Comms Plan, EVM Dashboard, Lessons-Learned design)
+- **One author, one voice** — coherent across all 10 modules, three practice exams, and the Capstone
+- **Updated for the current PMP-2021 mindset** — agile and hybrid content built in, not bolted on
+
+### 🚀 Ready to start?
+
+Set aside a real 8-week block. The PMP rewards consistent, deliberate study; it punishes cramming. The reward at the end is the most globally respected three letters in project management.
+
+Begin with [Module 1: PMP Foundations →](./Module-01-Foundations/Reading.md)
+
+---
+
 ## 🎯 What You'll Learn
 
 By the end of this track, you'll be able to:

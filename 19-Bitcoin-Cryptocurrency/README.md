@@ -14,6 +14,41 @@ title: Bitcoin & Cryptocurrency Track
 
 ---
 
+## ✨ Why This Certification Matters
+
+### 🎯 The promise
+
+Bitcoin & Cryptocurrency is the credential ladder that takes you from someone who *speculates* on crypto to someone who *understands* it — well enough to build, audit, regulate, or invest in the asset class that the BlackRock IBIT, Fidelity FBTC, ARK ARKB spot ETFs and the post-MiCA European licensing regime have made institutional. By the end of this track you'll be ready to sit the **C4 Certified Bitcoin Professional (CBP)** exam, the **CryptoCurrency Security Standard Auditor (CCSS-A)** track, and have completed the **Princeton Bitcoin and Cryptocurrency Technologies** course — three of the most-respected credentials in the space. This curriculum is also the conceptual stepping stone into the University of Nicosia's MSc in Digital Currency.
+
+### 💼 Career outcomes after passing
+
+- **Blockchain Developer (Bitcoin / Lightning / Stacks)** ($120K–$180K) — building wallets, custody, payment rails, BRC-20 tooling
+- **Crypto Compliance Analyst** ($85K–$125K) — Travel Rule, KYC/AML, OFAC sanctions screening at exchanges and banks
+- **Crypto Risk Manager** ($110K–$160K) — at banks, hedge funds, and asset managers entering the space
+- **Digital Asset Custody Engineer** ($130K–$190K) — MPC, multi-sig, HSM-based custody design
+- **Blockchain Solutions Architect** ($140K–$200K) — at consulting firms and digital-asset platforms
+- **Crypto Product Manager / BD** ($120K–$180K + token grants) — at exchanges, custodians, infrastructure providers
+- **Regulatory / Policy Specialist** ($110K–$170K) — at trade associations (Chamber of Digital Commerce), law firms, and regulators
+
+The Bitcoin career ladder pairs with course 09 (Security+) for the security-engineering track and course 20 (E-Commerce) for the merchant-side payments work. Compensation in Bitcoin-native employers typically includes BTC or stock options on top of base salary.
+
+### 🏛️ Why The Cert Hub's version is different
+
+- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — cryptography taught from primary sources (Nakamoto 2008 whitepaper, Diffie-Hellman 1976, Schnorr 1991, Lamport 1981 on hash chains, Castro & Liskov 1999 on PBFT)
+- **Story-driven lessons (not flashcard punishment)** — every module opens with a story (Pizza Day 2010, Mt. Gox, the Bitcoin Cash fork, the Taproot activation, the BlackRock ETF approval)
+- **Original questions only** — every quiz and practice exam written from public exam outlines; no copyrighted dumps
+- **Real-world case studies** — Mt. Gox custody failure, Silk Road forensics, the Colonial Pipeline ransom recovery, MicroStrategy's treasury thesis, El Salvador's legal-tender adoption, the FTX collapse
+- **One author, one voice** — coherent vocabulary across all 10 modules
+- **Updated for the 2026 institutional landscape** — spot ETFs, MiCA/CASP rules, BRC-20 / Ordinals / Runes, Lightning at scale, Taproot in production, MPC custody norms
+
+### 🚀 Ready to start?
+
+Ten to fourteen weeks. Set up a testnet wallet (Bitcoin Core or Sparrow) on day one. Pair this curriculum with the free Princeton course (Coursera) and budget $100–$400 across CBP + CCSS exams.
+
+Begin with [Module 1: Bitcoin White Paper & Origins →](./Module-01-Bitcoin-White-Paper-Origins/Reading.md)
+
+---
+
 ## 🎯 Who This Is For
 
 This track has three perfect audiences:

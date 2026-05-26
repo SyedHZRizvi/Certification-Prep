@@ -14,6 +14,39 @@ title: AWS Cloud Practitioner Track (CLF-C02)
 
 ---
 
+## ✨ Why This Certification Matters
+
+### 🎯 The promise
+
+The AWS Certified Cloud Practitioner (CLF-C02) is the credential that says you understand the dominant cloud platform on the planet — well enough to talk shop with engineers, evaluate vendors, scope projects, and contribute in any room where AWS spend is decided. It is the foundation of the AWS certification ladder, the most-listed cloud cert in entry-level job postings, and the cleanest way for anyone — engineer or not — to prove cloud literacy in 2026.
+
+### 💼 Career outcomes after passing
+
+- **Cloud Support Associate** ($65K–$95K) — front-line AWS support; CLF-C02 is the explicit baseline
+- **Junior Cloud Engineer / DevOps** ($75K–$110K) — first technical cloud role, especially with hands-on lab work
+- **Cloud Sales Engineer / Solutions Consultant** ($90K–$140K + commission) — pre-sales role at AWS, AWS partners, or any SaaS vendor selling cloud-resident products
+- **Technical Account Manager / Customer Success Engineer** ($85K–$130K) — managing cloud customer accounts; CLF-C02 is the entry credential
+- **Project / Program Manager (cloud projects)** ($95K–$135K) — non-engineering PM with cloud literacy commands a premium
+
+CLF-C02 is the bottom rung of a ladder that pays compound returns: it ladders directly into the **Solutions Architect Associate (SAA-C03)** (course 04), then into Developer Associate, SysOps Associate, and the Professional/Specialty tiers. Each rung up adds roughly 15–30% to typical compensation.
+
+### 🏛️ Why The Cert Hub's version is different
+
+- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — concept-first lessons that explain *why* AWS works the way it does, not just what to click
+- **Story-driven lessons (not flashcard punishment)** — every module opens with a real-world scenario you actually care about
+- **Original questions only** — every quiz and practice exam written from the AWS Exam Guide; no recycled dumps
+- **Real-world case studies** — Netflix migration, Capital One re-platforming, Pinterest growth architecture, Airbnb seasonal scaling
+- **One author, one voice** — coherent vocabulary and analogies across all 8 modules
+- **Updated for the 2026 CLF-C02 blueprint** — the four-domain reorganization (Cloud Concepts, Security, Tech, Billing) reflected in module weights
+
+### 🚀 Ready to start?
+
+Block a Saturday, sign up for the AWS Free Tier, and begin Module 1. By the end of four weekends you'll be ready to sit the exam.
+
+Begin with [Module 1: Cloud Fundamentals →](./Module-01-Cloud-Fundamentals/Reading.md)
+
+---
+
 ## 🎯 What You'll Learn
 
 By the end of this track, you'll be able to:

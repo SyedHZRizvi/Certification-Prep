@@ -14,6 +14,39 @@ title: AI Marketing Entrepreneur Track
 
 ---
 
+## ✨ Why This Certification Matters
+
+### 🎯 The promise
+
+AI Marketing Entrepreneur is the credential for the marketer who has decided to stop trading time for a paycheck — the one who is ready to package the skills built across Foundations, Practitioner, and Strategist into a real business with real clients and real margins. This is **not** an exam-prep course; it is a business-launch curriculum that takes you from positioning memo to first signed client to $100K–$500K in annual recurring revenue within 12 months. It is the entrepreneurial counterpart to the corporate Strategist ladder.
+
+### 💼 Career outcomes after completing
+
+- **Solo AI Marketing Consultant** ($100K–$200K profit Year 1) — fractional engagements with 3–6 clients
+- **Boutique AI Marketing Agency Owner** ($200K–$500K profit Year 1–2) — 1–3 contractors, productized services
+- **Fractional CMO / Head of Growth** ($150K–$300K Year 1) — typical positioning for ex-VP marketers
+- **Specialized Productized Service Operator** ($100K–$400K profit) — single offer, ICP-tight, AI-leveraged delivery
+- **Acquired Agency Owner (exit path)** — agencies in the $1M–$3M EBITDA range exit at 3–6x; Year 5+ scenarios
+
+This is course **4 of 5** in the ladder: **Foundations (14) → Practitioner (15) → Strategist (16) → Entrepreneur (this course) → Capstone Portfolio (18)**. While the corporate ladder caps at roughly $250K–$300K total comp for senior in-house marketing leaders, the entrepreneurial path can compound past that within 24–36 months for the right operator.
+
+### 🏛️ Why The Cert Hub's version is different
+
+- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — agency economics from named sources (Hormozi's *$100M Offers*, Bogusky's *Win Without Pitching*, Warrillow's *Built to Sell*, Christensen on disruption, Christensen/Allworth/Dillon on jobs-to-be-done)
+- **Story-driven lessons (not flashcard punishment)** — every module includes the launch story of a real boutique AI marketing operator
+- **Original frameworks only** — every template, contract clause, pricing model, and one-page proposal is original
+- **A real Capstone** — 12-week scenario launching your own AI marketing agency with 7 deliverables (positioning memo, productized service spec, client-acquisition pipeline, contracts, tech-stack architecture, first contractor JD, 12-month P&L projection)
+- **One author, one voice** — coherent vocabulary across all 8 modules
+- **Updated for the 2026 AI-leveraged services economy** — Claude / GPT / Veo / Sora in delivery workflows, productization at AI-economics margins, fractional + retainer pricing patterns
+
+### 🚀 Ready to start?
+
+Six weeks part-time (or compressed to three if you're already a Strategist-level operator). One $200–$500/mo operating stack. The willingness to launch with imperfect positioning, learn from the first three clients, and iterate.
+
+Begin with [Module 1: Niche & Service Offering →](./Module-01-Niche-Service-Offering/Reading.md)
+
+---
+
 ## 🎓 Capstone & Recommended Readings
 
 This track includes two course-root resources that go beyond the per-module work:

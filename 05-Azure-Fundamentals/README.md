@@ -14,6 +14,39 @@ title: Azure Fundamentals Track (AZ-900)
 
 ---
 
+## ✨ Why This Certification Matters
+
+### 🎯 The promise
+
+The Microsoft Certified: Azure Fundamentals (AZ-900) is the credential that says you understand the world's #2 cloud platform — the one that runs most of the Fortune 500's email, identity, productivity, and increasingly its AI workloads. It is a *lifetime* certification (no renewal fees, ever) and the recognized starting point for every Azure career path Microsoft offers, from administration to security to AI engineering. Pass AZ-900 and you stop being someone who hears "Azure" and changes the subject.
+
+### 💼 Career outcomes after passing
+
+- **IT Support Analyst (Microsoft 365 / Azure environments)** ($55K–$75K) — AZ-900 is widely listed as preferred at MSPs and enterprise IT desks
+- **Cloud Sales / Pre-Sales Specialist** ($70K–$110K + commission) — AZ-900 is the baseline for Microsoft partner sales roles
+- **Project Manager (cloud projects)** ($90K–$130K) — non-engineering PM with Azure literacy is a recurring posting
+- **Junior Cloud Administrator** ($70K–$95K) — the stepping stone into AZ-104 territory
+- **Business Analyst / Operations Analyst** ($75K–$105K) — Azure literacy makes you valuable on any IT-procurement or cloud-cost team
+
+AZ-900 is the *first rung* on the most coherent ladder in cloud: **AZ-900 → AZ-104 Azure Administrator (course 06) → AZ-305 Solutions Architect Expert** (engineer path), or **AZ-900 → AI-900 → AI-102 Azure AI Engineer (course 08)** (AI path), or **AZ-900 → SC-900 → SC-300 Identity & Access Admin (course 27)** (security path). Each step up adds typically 20–35% to compensation.
+
+### 🏛️ Why The Cert Hub's version is different
+
+- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — concepts taught from CS-fundamentals upward, not bullet-list memorization
+- **Story-driven lessons (not flashcard punishment)** — every module opens with a scenario that makes the abstraction concrete
+- **Original questions only** — every quiz and practice exam written from Microsoft's published skills-measured outline; no copyrighted dumps
+- **Real-world case studies** — Walmart's hybrid cloud, Heineken's Azure-native data platform, BMW's manufacturing IoT
+- **One author, one voice** — same vocabulary, same analogies, end-to-end across all 6 modules
+- **Updated for the 2026 AZ-900 blueprint** — including current Microsoft Entra terminology and the latest Azure OpenAI references
+
+### 🚀 Ready to start?
+
+Three to four weekends. A free Microsoft Learn account. A no-cost Azure trial subscription. That's the whole stack to pass.
+
+Begin with [Module 1: Cloud Concepts →](./Module-01-Cloud-Concepts/Reading.md)
+
+---
+
 ## 🎯 What You'll Learn
 
 By the end of this track, you'll be able to:

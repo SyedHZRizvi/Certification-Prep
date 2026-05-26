@@ -14,6 +14,40 @@ title: AI Marketing Foundations Track
 
 ---
 
+## ✨ Why This Certification Matters
+
+### 🎯 The promise
+
+AI Marketing Foundations is the credential that takes you from someone who *consumes* marketing to someone who *builds* it — in the cloud, with the AI tools, and in the language used by every marketing team that matters in 2026. By the end of this track you'll hold (or be ready to sit) three real industry credentials: **Google Digital Marketing & E-commerce Certificate**, the **HubSpot Inbound Marketing Certification**, and the **Meta Certified Digital Marketing Associate** — three of the most-recognized entry-level marketing credentials in the world.
+
+### 💼 Career outcomes after passing
+
+- **Marketing Coordinator** ($50K–$70K) — first salaried marketing role at most companies
+- **Digital Marketing Specialist** ($60K–$85K) — owning channels (paid social, email, SEO basics)
+- **SEO Analyst** ($55K–$80K) — increasingly AI-Overview-aware; AI literacy is now a differentiator
+- **Marketing Automation Specialist** ($65K–$90K) — HubSpot / Marketo / Klaviyo orchestration
+- **Junior Performance Marketer** ($60K–$85K) — running Google Ads, Meta Ads, TikTok Ads under supervision
+- **Content Marketer (AI-assisted)** ($55K–$80K) — owning content production with Claude / GPT / generative tools
+
+This is course **1 of 5** in The Cert Hub's AI Digital Marketing ladder: **Foundations (course 14) → Practitioner (15) → Strategist (16) → Entrepreneur (17) → Capstone Portfolio (18)**. Each step roughly doubles the job seniority you can credibly target — Foundations grads land junior roles in the $55K–$85K range; Strategist grads land senior IC / manager roles in the $110K–$160K range.
+
+### 🏛️ Why The Cert Hub's version is different
+
+- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — every framework grounded in named sources (McCarthy 1960 on the 4 Ps, Kotler, Godin 1999 on permission marketing, Christensen on jobs-to-be-done)
+- **Story-driven lessons (not flashcard punishment)** — concepts taught through real campaign teardowns
+- **Original questions only** — quizzes and practice exams written from the three official industry exam outlines; no copyrighted dumps
+- **Real-world case studies** — Liquid Death's positioning, Patagonia's storytelling, Duolingo's TikTok, Glossier's community, and the early Klaviyo flows that built Allbirds
+- **One author, one voice** — coherent vocabulary across all 10 modules
+- **Updated for the 2026 AI-marketing landscape** — Google AI Overviews, Performance Max, Meta's Advantage+ shopping campaigns, Consent Mode v2, GA4 enhanced measurement, the post-cookie measurement stack
+
+### 🚀 Ready to start?
+
+Six to eight weeks. A free Google Marketing Platform account, a free HubSpot Academy account, and a willingness to spend Saturday mornings reading. By week 8 you'll be ready to sit three real industry credentials.
+
+Begin with [Module 1: Digital Marketing Landscape 2026 →](./Module-01-Digital-Marketing-Landscape-2026/Reading.md)
+
+---
+
 ## 🎯 Who This Is For
 
 This track has two perfect audiences:

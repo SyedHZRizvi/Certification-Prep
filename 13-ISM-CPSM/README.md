@@ -14,6 +14,40 @@ title: ISM CPSM Track (Certified Professional in Supply Management)
 
 ---
 
+## ✨ Why This Certification Matters
+
+### 🎯 The promise
+
+The ISM Certified Professional in Supply Management (CPSM) is the highest credential the Institute for Supply Management awards — the global standard for procurement, sourcing, supplier management, and category leadership. While CSCP and CPIM cover the *operational* supply chain, CPSM is the *commercial* supply chain: contracts, negotiation, supplier relationships, sustainability, risk, and the strategic spend that often equals 60–70% of a company's revenue. Pass CPSM and you are recognized as the procurement leader the CFO trusts to defend a billion dollars of category spend.
+
+### 💼 Career outcomes after passing
+
+- **Senior Procurement Specialist / Buyer** ($85K–$120K) — managing direct or indirect categories
+- **Category Manager** ($100K–$140K) — owning the strategy for a specific spend category (IT, logistics, MRO, marketing)
+- **Procurement Manager** ($105K–$145K) — leading a buying team; CPSM is increasingly preferred
+- **Sourcing Director** ($130K–$180K) — owning a function's sourcing strategy and supplier portfolio
+- **Chief Procurement Officer track** ($180K–$280K + bonus) — CPSM is one of two credentials (with CIPS MCIPS) recognized for CPO-track hiring
+- **Supply Chain / Procurement Consultant (Big-4)** ($120K–$170K + bonus) — Deloitte, KPMG, EY procurement transformation practice
+
+ISM's own Salary Survey (annual) shows CPSM holders earn an average **~$30K more** than non-certified peers in equivalent procurement roles — a roughly 25–30% premium. CPSM is the procurement complement to the supply-chain ladder formed by **CSCP (course 10)**, **CPIM (course 11)**, and **CLTD (course 12)**.
+
+### 🏛️ Why The Cert Hub's version is different
+
+- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — negotiation taught from first principles (Fisher & Ury 1981 *Getting to Yes*, Lax & Sebenius 1986, Raiffa 1982), with named-source citations throughout
+- **Story-driven lessons (not flashcard punishment)** — concepts grounded in real procurement (Apple's component sourcing, Toyota's keiretsu, P&G's supplier development, Walmart's "Made in USA" pledge)
+- **Original questions only** — every quiz and practice exam written from ISM's published exam content; no copyrighted dumps
+- **Real-world case studies** — semiconductor supply crisis 2020–2023, Boeing's outsourcing lessons, Nike's Pakistan supplier transparency, Patagonia's regenerative sourcing
+- **One author, one voice** — coherent vocabulary across all 8 modules and all three CPSM exam blueprints
+- **Updated for the 2026 CPSM blueprint** — including ESG/CSRD reporting, AI-enabled spend analytics, geopolitical risk, and the post-COVID supplier-diversification playbook
+
+### 🚀 Ready to start?
+
+Ten to fourteen weeks. Plan to study a single integrated curriculum, then sit Exams 1 → 2 → 3 (most candidates) over a 2–4 month testing window. The ISM Learning System is the official content; this course is the conceptual scaffolding.
+
+Begin with [Module 1: Supply Management Foundations →](./Module-01-Supply-Management-Foundations/Reading.md)
+
+---
+
 ## ⚠️ Read This First — The CPSM Is Three Exams, Not One
 
 Unlike most certifications, CPSM is awarded only after you pass **three separate proctored exams**:

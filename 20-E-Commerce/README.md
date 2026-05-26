@@ -15,6 +15,41 @@ title: E-Commerce Track
 
 ---
 
+## ✨ Why This Certification Matters
+
+### 🎯 The promise
+
+This E-Commerce track is the credential that takes you from someone who *shops* online to someone trusted to *run* a $50M–$500M digital storefront end-to-end — platform, catalog, payments, fulfillment, paid + organic acquisition, lifecycle, marketplaces, and international expansion. The curriculum is engineered around the **Google → Adobe Commerce → Wharton** ladder, and by the end of it you'll be ready to sit a stack of recognized industry credentials including the **Google Digital Marketing & E-commerce Certificate**, **Shopify Foundations**, **Adobe Commerce (Magento) Business Practitioner**, **Klaviyo Product Certification**, and select Wharton Online specializations.
+
+### 💼 Career outcomes after passing
+
+- **E-Commerce Manager** ($90K–$130K) — running a single brand or category online
+- **Director of E-Commerce** ($130K–$185K) — owning the digital P&L for a brand or business unit
+- **Head of DTC / Direct-to-Consumer** ($150K–$220K) — full DTC P&L, lifecycle, retention, marketplaces
+- **Marketplace Manager (Amazon, Walmart, TikTok Shop)** ($95K–$145K) — channel specialist
+- **E-Commerce Operations Manager** ($95K–$135K) — fulfillment, OMS, returns, customer ops
+- **VP E-Commerce** ($180K–$260K + bonus) — typical 3–5 years post-Director with strong delivery record
+- **E-Commerce Consultant (Big-4, boutique commerce firms)** ($130K–$190K + bonus)
+
+This track pairs cleanly with the AI Marketing ladder (courses 14–18) for the acquisition side and with course 10 (CSCP) / 12 (CLTD) for the supply-chain side of running a real online business. E-commerce talent at the Director+ level is in chronic short supply in 2026, especially for operators who can credibly speak both growth and operations.
+
+### 🏛️ Why The Cert Hub's version is different
+
+- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — unit economics from named sources (Fader 2012 *Customer Centricity*, Bell 2014 on omnichannel, the Bezos 1997 shareholder letter, Bryar & Carr 2021 *Working Backwards*, Anderson 2006 *The Long Tail*, Kohavi/Tang/Xu 2020 on experimentation)
+- **Story-driven lessons (not flashcard punishment)** — every module begins with a real brand teardown (Allbirds, Warby Parker, Glossier, Patagonia, Bombas, Liquid Death)
+- **Original questions only** — every quiz and practice exam written from public exam outlines; no copyrighted dumps
+- **A real Capstone** — 18-week scenario as Director of E-Commerce at a $90M Series-B home-goods DTC brand chartered with growing GMV from $90M to $160M while protecting 38% contribution margin
+- **One author, one voice** — coherent vocabulary across all 10 modules
+- **Updated for the 2026 commerce landscape** — TikTok Shop, Shopify's Hydrogen + Oxygen, Adobe Commerce on Cloud, AI search and recommendations, post-cookie attribution, MMM-informed budget allocation
+
+### 🚀 Ready to start?
+
+Twelve to sixteen weeks. A Shopify Dev Store (free) and an Adobe Commerce 30-day trial. A real or hypothetical product. Time blocked for the 18-week capstone.
+
+Begin with [Module 1: E-Commerce Fundamentals & Business Models →](./Module-01-E-Commerce-Fundamentals-Business-Models/Reading.md)
+
+---
+
 ## 🎓 Capstone & Recommended Readings
 
 This track includes two course-root resources that go beyond exam prep:

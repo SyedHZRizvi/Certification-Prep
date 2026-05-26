@@ -14,6 +14,41 @@ title: CompTIA Server+ Track (SK0-005)
 
 ---
 
+## ✨ Why This Certification Matters
+
+### 🎯 The promise
+
+CompTIA Server+ (SK0-005) is the credential that proves you can specify, deploy, secure, and recover real server infrastructure — physical and virtual, Windows and Linux, on-prem and hybrid. It is the only vendor-neutral server-admin certification recognized by the US Department of Defense (DoD 8140), and it is a **lifetime** credential (no renewal fees, ever). Pass Server+ and you stop being an end-user PC tech; you are recognized as someone trusted with the iron — and the data — that runs the business.
+
+### 💼 Career outcomes after passing
+
+- **Server Administrator / Systems Administrator** ($75K–$105K) — running Windows / Linux server fleets day-to-day
+- **Data Center Technician** ($55K–$80K) — rack, stack, cable, troubleshoot at colos and hyperscaler edge
+- **Virtualization Engineer (VMware / Hyper-V / KVM)** ($95K–$135K) — vSphere / Hyper-V at enterprise scale
+- **Storage Administrator** ($90K–$130K) — SAN / NAS / iSCSI / FC, backup, replication
+- **DevOps / Infrastructure Engineer** ($110K–$150K) — bridge from server admin to cloud / automation
+- **Site Reliability Engineer (infra-leaning)** ($120K–$165K) — Server+ plus Linux+ plus a cloud credential
+- **IT Operations Manager** ($100K–$140K) — typical 3–5 years post-Server+ with strong delivery record
+
+Server+ pairs naturally with **Linux+ (course 23)**, **Network+ (course 22)**, and the Microsoft Windows Server Hybrid Admin track (course 25, AZ-800 + AZ-801). It is one of the highest-leverage credentials for the data-center-to-hybrid-cloud career path.
+
+### 🏛️ Why The Cert Hub's version is different
+
+- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — server architecture taught from CS first principles (Patterson 1988 on RAID, the CAP theorem, Lamport on distributed time, Saltzer & Schroeder's design principles)
+- **Story-driven lessons (not flashcard punishment)** — every concept introduced through a real data-center scenario (a failed RAID rebuild, a SAN multi-path outage, a hypervisor host failure during patching)
+- **Original questions only** — every quiz and practice exam written from CompTIA's published SK0-005 exam objectives; no copyrighted dumps
+- **Real-world case studies** — Knight Capital's 2012 server-deploy disaster, the AWS S3 2017 typo outage, a real hospital's disaster-recovery failover drill, Fukushima Daiichi's data-center power lessons
+- **One author, one voice** — coherent vocabulary across all 8 modules
+- **Updated for the SK0-005 blueprint** — including current iDRAC / iLO / BMC out-of-band management, NVMe-oF, modern hypervisor licensing realities (post-Broadcom VMware), and current backup-architecture norms (3-2-1-1-0)
+
+### 🚀 Ready to start?
+
+Five to seven weeks. Spin up a free ESXi (or Proxmox or XCP-ng) host or two on home hardware to make every concept tactile. Run an iSCSI target. Build a small AD lab. Take a backup, restore it.
+
+Begin with [Module 1: Server Hardware →](./Module-01-Server-Hardware/Reading.md)
+
+---
+
 ## 🎯 What You'll Learn
 
 By the end of this track, you'll be able to:

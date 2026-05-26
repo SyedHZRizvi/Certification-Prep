@@ -14,6 +14,40 @@ title: ASCM CLTD Track (Certified in Logistics, Transportation and Distribution)
 
 ---
 
+## ✨ Why This Certification Matters
+
+### 🎯 The promise
+
+The ASCM Certified in Logistics, Transportation and Distribution (CLTD) is the only globally recognized credential dedicated exclusively to logistics, transportation, distribution, and warehousing leadership. While CSCP covers the end-to-end chain and CPIM covers planning and inventory, CLTD is the depth credential for the physical movement of goods — networks, modes, warehouses, fleets, customs, last-mile, and reverse logistics. Pass CLTD and you are the operator any DTC brand, 3PL, or retailer needs to design and run their distribution footprint.
+
+### 💼 Career outcomes after passing
+
+- **Logistics Manager** ($85K–$120K) — running a single DC or transportation lane
+- **Warehouse / DC Manager** ($85K–$125K) — facility-level leadership across receiving, putaway, picking, shipping
+- **Transportation Manager** ($90K–$130K) — owning carrier strategy, TMS, lane optimization
+- **Director of Logistics** ($120K–$170K) — multi-site leadership; CLTD is increasingly preferred
+- **Distribution / Fulfillment Operations Manager** ($95K–$135K) — common at DTC and e-commerce employers
+- **Supply Chain Consultant — Logistics practice** ($110K–$160K + bonus) — Big-4 and boutique consulting
+
+ASCM data shows CLTD holders earn approximately **15–25% more** than non-certified peers in equivalent roles. CLTD is one node in a coherent ladder: pair it with **CSCP (course 10)** for the executive end-to-end role or **CPIM (course 11)** for the planning depth that complements distribution operations.
+
+### 🏛️ Why The Cert Hub's version is different
+
+- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — network design taught from first principles (center-of-gravity, Weber 1909 location theory, Hau Lee 2004 on the Triple-A supply chain)
+- **Story-driven lessons (not flashcard punishment)** — concepts grounded in real distribution networks (Amazon's fulfillment topology, UPS ORION routing, Walmart's cross-docking) before introducing terminology
+- **Original questions only** — every quiz and practice exam written from the published ASCM Exam Content Manual; no copyrighted dumps
+- **Real-world case studies** — Amazon's two-day Prime promise, FedEx's hub-and-spoke origin story, Suez Canal blockage of 2021, the COVID port crisis, last-mile drone pilots
+- **One author, one voice** — coherent APICS/ASCM vocabulary across all 8 modules
+- **Updated for the 2026 CLTD ECM** — including current Incoterms 2020 nuances, electric-vehicle fleet conversion, omnichannel fulfillment, and reverse-logistics economics
+
+### 🚀 Ready to start?
+
+Twelve to sixteen weeks. The ASCM Learning System as the official content, this curriculum as the conceptual scaffolding, three practice exams calibrated to the live exam's pacing.
+
+Begin with [Module 1: Logistics Strategy & Network →](./Module-01-Logistics-Strategy-Network/Reading.md)
+
+---
+
 ## 🎯 What You'll Learn
 
 By the end of this track, you'll be able to:
