@@ -217,6 +217,104 @@ sitemap: false
     }
     /* Auth-controlled pills start hidden; JS reveals based on /api/auth/me */
     .nav-pill[data-auth-state] { display: none; }
+    .account-chip[data-auth-state] { display: none; }
+    .account-menu-item[data-auth-state] { display: none; }
+
+    /* ====== Account chip + dropdown menu ====== */
+    .account-chip { position: relative; }
+    .account-chip-btn {
+      display: inline-flex; align-items: center; gap: 9px;
+      padding: 7px 13px 7px 7px;
+      background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+      color: #f1f5f9;
+      border: 1px solid rgba(148,163,184,0.25);
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 13px;
+      cursor: pointer;
+      transition: background .15s, transform .12s, box-shadow .15s;
+      box-shadow: 0 4px 12px -3px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.06);
+    }
+    .account-chip-btn:hover {
+      background: linear-gradient(135deg, #334155 0%, #475569 100%);
+      transform: translateY(-1px);
+      box-shadow: 0 8px 18px -4px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.08);
+    }
+    .account-avatar {
+      width: 28px; height: 28px;
+      display: inline-flex; align-items: center; justify-content: center;
+      background: linear-gradient(135deg, #6366f1, #a855f7);
+      color: #fff;
+      font-weight: 800;
+      border-radius: 50%;
+      font-size: 13px;
+      box-shadow: 0 2px 8px -2px rgba(168,85,247,0.45);
+    }
+    .account-email { max-width: 180px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .account-caret { font-size: 11px; opacity: 0.7; }
+
+    .account-menu {
+      position: absolute; right: 0; top: calc(100% + 8px);
+      min-width: 260px;
+      background: #ffffff;
+      border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 14px;
+      box-shadow: 0 18px 48px -12px rgba(0,0,0,0.28), 0 4px 12px -4px rgba(0,0,0,0.12);
+      opacity: 0; transform: translateY(-6px) scale(0.97);
+      pointer-events: none;
+      transition: opacity .15s, transform .15s;
+      z-index: 60;
+      overflow: hidden;
+    }
+    .account-menu.open { opacity: 1; transform: translateY(0) scale(1); pointer-events: auto; }
+    .account-menu-header {
+      padding: 14px 16px;
+      background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+    }
+    .account-menu-email { font-size: 13px; font-weight: 700; color: #0f172a; word-break: break-all; }
+    .account-menu-role { font-size: 11.5px; color: #6366f1; font-weight: 600; margin-top: 3px; letter-spacing: .03em; }
+    .account-menu-item {
+      display: flex; align-items: center; gap: 10px;
+      padding: 11px 16px;
+      color: #1e293b;
+      text-decoration: none;
+      font-size: 13.5px;
+      font-weight: 600;
+      transition: background .12s;
+    }
+    .account-menu-item:hover { background: #f1f5f9; }
+    .account-menu-admin { color: #b45309; }
+    .account-menu-admin:hover { background: #fef3c7; }
+    .account-menu-danger { color: #dc2626; border-top: 1px solid rgba(0,0,0,0.06); }
+    .account-menu-danger:hover { background: #fee2e2; }
+
+    /* ====== Rainbow hero headline: every word gets its own vivid gradient ====== */
+    .hero-rainbow .rb {
+      display: inline-block;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+      background-size: 200% auto;
+      animation: rb-shimmer 8s linear infinite;
+      filter: drop-shadow(0 4px 16px rgba(0,0,0,0.25));
+    }
+    .hero-rainbow .rb1 { background-image: linear-gradient(135deg,#f43f5e 0%,#fb7185 50%,#fda4af 100%); animation-delay: 0s; }   /* rose-red */
+    .hero-rainbow .rb2 { background-image: linear-gradient(135deg,#f59e0b 0%,#fbbf24 50%,#fde68a 100%); animation-delay: .4s; } /* amber */
+    .hero-rainbow .rb3 { background-image: linear-gradient(135deg,#10b981 0%,#34d399 50%,#a7f3d0 100%); animation-delay: .8s; } /* emerald */
+    .hero-rainbow .rb4 { background-image: linear-gradient(135deg,#06b6d4 0%,#22d3ee 50%,#a5f3fc 100%); animation-delay: 1.2s; } /* cyan */
+    .hero-rainbow .rb5 { background-image: linear-gradient(135deg,#8b5cf6 0%,#a78bfa 25%,#ec4899 75%,#f9a8d4 100%); animation-delay: 1.6s; } /* purple→pink */
+    .hero-rainbow .rb6 { background-image: linear-gradient(135deg,#f472b6 0%,#fb7185 100%); animation-delay: 2s; } /* pink dot */
+
+    @keyframes rb-shimmer {
+      0%   { background-position: 0% 50%; }
+      50%  { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .hero-rainbow .rb { animation: none; }
+    }
 
     /* Mobile-friendly: hide the 4-tab middle row on small screens; keep cert-hub + CTA */
     @media (prefers-reduced-motion: reduce) {
@@ -466,39 +564,103 @@ sitemap: false
         <a href="#author" class="nav-pill nav-pill-about">
           <span class="nav-pill-icon">👤</span> ABOUT THE CREATOR
         </a>
-        <!-- Admin-only: revealed by JS when /api/auth/me reports role=superuser -->
-        <a href="Manage-Users/" class="nav-pill nav-pill-manage" data-auth-state="superuser">
+        <!-- Admin-only: revealed by JS when /api/auth/me reports superuser/administrator -->
+        <a href="Manage-Users/" class="nav-pill nav-pill-manage" data-auth-state="admin">
           <span class="nav-pill-icon">🔑</span> MANAGE USERS
         </a>
       </div>
-      <!-- Right side: shows SIGN IN when logged out, SIGN OUT when logged in. JS toggles. -->
-      <a href="login/" class="nav-pill nav-pill-signin" data-auth-state="anonymous">
-        <span class="nav-pill-icon">🔐</span> SIGN IN
-      </a>
-      <a href="api/auth/logout" class="nav-pill nav-pill-signout" data-auth-state="authenticated">
-        <span class="nav-pill-icon">🚪</span> SIGN OUT
-      </a>
-      <a href="#curriculum" class="nav-pill nav-pill-cta">
-        <span class="nav-pill-icon">🚀</span> START LEARNING <span class="ml-0.5">→</span>
-      </a>
+
+      <!-- Right cluster: account chip + CTA -->
+      <div class="flex items-center gap-2.5 lg:gap-3.5">
+        <!-- Anonymous: SIGN IN pill -->
+        <a href="login/" class="nav-pill nav-pill-signin" data-auth-state="anonymous">
+          <span class="nav-pill-icon">🔐</span> SIGN IN
+        </a>
+
+        <!-- Authenticated: user chip with email + dropdown menu -->
+        <div class="account-chip" data-auth-state="authenticated">
+          <button class="account-chip-btn" id="account-chip-btn" aria-haspopup="true" aria-expanded="false">
+            <span class="account-avatar" id="account-avatar">U</span>
+            <span class="account-email" id="account-email">…</span>
+            <span class="account-caret">▾</span>
+          </button>
+          <div class="account-menu" id="account-menu" role="menu">
+            <div class="account-menu-header">
+              <div class="account-menu-email" id="account-menu-email">…</div>
+              <div class="account-menu-role" id="account-menu-role">…</div>
+            </div>
+            <a href="Manage-Users/" class="account-menu-item account-menu-admin" data-auth-state="admin">
+              <span>🔑</span> Manage Users
+            </a>
+            <a href="change-password/" class="account-menu-item">
+              <span>🔄</span> Change password
+            </a>
+            <a href="api/auth/logout" class="account-menu-item account-menu-danger">
+              <span>🚪</span> Sign out
+            </a>
+          </div>
+        </div>
+
+        <a href="#curriculum" class="nav-pill nav-pill-cta">
+          <span class="nav-pill-icon">🚀</span> START LEARNING <span class="ml-0.5">→</span>
+        </a>
+      </div>
     </div>
   </nav>
 
-  <!-- Auth-state nav toggle: shows MANAGE USERS for super-users + swaps SIGN IN ↔ SIGN OUT -->
+  <!-- Auth-state toggle: reveals admin chip + populates user email/avatar -->
   <script>
     (function () {
-      // Only run on Cloudflare (where /api/auth/me exists). On GitHub Pages this fetch 404s and we silently keep all auth pills hidden — appropriate fallback since GitHub Pages has no auth gate.
       fetch('/api/auth/me', { credentials: 'same-origin' })
         .then(function (r) { return r.ok ? r.json() : { authenticated: false }; })
         .then(function (data) {
           var state = data && data.authenticated ? 'authenticated' : 'anonymous';
+          var isAdmin = data && (data.role === 'superuser' || data.role === 'administrator');
+
           document.querySelectorAll('[data-auth-state]').forEach(function (el) {
             var want = el.getAttribute('data-auth-state');
-            var show = (want === state) || (want === 'superuser' && data.role === 'superuser');
-            if (show) el.style.display = 'inline-flex';
+            var show = (want === state) || (want === 'admin' && isAdmin);
+            if (show) {
+              if (el.classList.contains('account-chip')) {
+                el.style.display = 'inline-flex';
+              } else if (el.classList.contains('account-menu-item')) {
+                el.style.display = 'flex';
+              } else {
+                el.style.display = 'inline-flex';
+              }
+            }
           });
+
+          if (data.authenticated) {
+            var email = data.email || '';
+            var role = data.role || 'student';
+            // Display: truncate email if too long (show first part + last 6 chars of domain)
+            var displayEmail = email.length > 22 ? email.substring(0, 14) + '…' : email;
+            document.getElementById('account-email').textContent = displayEmail;
+            document.getElementById('account-avatar').textContent = (email[0] || '?').toUpperCase();
+            document.getElementById('account-menu-email').textContent = email;
+            var roleLabel = role === 'superuser' ? '👑 Super-user' : role === 'administrator' ? '🛡️ Administrator' : '🎓 Student';
+            document.getElementById('account-menu-role').textContent = roleLabel;
+          }
         })
-        .catch(function () { /* GitHub Pages or offline — leave hidden */ });
+        .catch(function () { /* GitHub Pages: no auth — keep all auth pills hidden */ });
+
+      // Toggle account dropdown
+      var chipBtn = document.getElementById('account-chip-btn');
+      var chipMenu = document.getElementById('account-menu');
+      if (chipBtn) {
+        chipBtn.addEventListener('click', function (e) {
+          e.stopPropagation();
+          var open = chipMenu.classList.toggle('open');
+          chipBtn.setAttribute('aria-expanded', String(open));
+        });
+        document.addEventListener('click', function (e) {
+          if (!chipMenu.contains(e.target) && !chipBtn.contains(e.target)) {
+            chipMenu.classList.remove('open');
+            chipBtn.setAttribute('aria-expanded', 'false');
+          }
+        });
+      }
     })();
   </script>
 
@@ -533,9 +695,12 @@ sitemap: false
         </p>
       </div>
 
-      <h1 class="display text-5xl sm:text-6xl md:text-7xl font-extrabold leading-[1.05] mb-6">
-        Pass Your Next<br class="hidden sm:block" />
-        Big <span class="gradient-text-blue">Certification</span>.
+      <h1 class="display text-5xl sm:text-6xl md:text-7xl font-extrabold leading-[1.05] mb-6 hero-rainbow">
+        <span class="rb rb1">Pass</span>
+        <span class="rb rb2">Your</span>
+        <span class="rb rb3">Next</span><br class="hidden sm:block" />
+        <span class="rb rb4">Big</span>
+        <span class="rb rb5">Certification</span><span class="rb rb6">.</span>
       </h1>
       {%- comment -%} cert_count is set later in the file (stats block); but Liquid is one-pass, so we recompute it here. {%- endcomment -%}
       {%- assign hero_cert_count = site.data.navigation.tracks | size -%}

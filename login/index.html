@@ -13,123 +13,156 @@ sitemap: false
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <style>
-    body { font-family: 'Inter', system-ui, sans-serif; }
-    .grad { background: radial-gradient(ellipse at top, rgba(99,102,241,0.18), transparent 60%), #0f172a; }
-    .gold-grad {
-      background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%);
-    }
+    body{font-family:'Inter',-apple-system,sans-serif;background:radial-gradient(ellipse at top,#1e1b4b 0%,#0f172a 60%,#020617 100%);color:#e2e8f0;min-height:100vh;display:grid;place-items:center;padding:24px;}
+    .card{max-width:440px;width:100%;background:rgba(15,23,42,0.85);backdrop-filter:blur(12px);border:1px solid rgba(148,163,184,0.18);border-radius:20px;padding:40px 36px;box-shadow:0 25px 80px -15px rgba(0,0,0,0.7);}
+    h1{font-size:28px;font-weight:800;background:linear-gradient(135deg,#a5b4fc,#f0abfc,#fbcfe8);-webkit-background-clip:text;background-clip:text;color:transparent;margin:0 0 4px;}
+    .sub{color:#94a3b8;font-size:14px;margin-bottom:28px;}
+    label{display:block;color:#cbd5e1;font-weight:600;font-size:13px;margin:14px 0 6px;letter-spacing:.02em;}
+    input[type="email"],input[type="password"]{width:100%;background:#0f172a;border:1px solid rgba(148,163,184,0.25);color:#f1f5f9;padding:12px 14px;border-radius:10px;font-size:15px;transition:border-color .15s, box-shadow .15s;}
+    input:focus{outline:none;border-color:#818cf8;box-shadow:0 0 0 3px rgba(129,140,248,0.18);}
+    .btn{width:100%;display:inline-flex;align-items:center;justify-content:center;gap:8px;background:linear-gradient(135deg,#4f46e5,#7c3aed,#a855f7);color:#fff;font-weight:700;padding:13px 16px;border:0;border-radius:12px;font-size:15px;cursor:pointer;margin-top:20px;box-shadow:0 8px 24px -6px rgba(124,58,237,0.5);transition:transform .12s, box-shadow .12s;}
+    .btn:hover:not(:disabled){transform:translateY(-1px);box-shadow:0 12px 30px -6px rgba(124,58,237,0.6);}
+    .btn:disabled{opacity:.55;cursor:wait;}
+    .alt{color:#94a3b8;font-size:13px;text-align:center;margin-top:14px;}
+    .alt a, .link{color:#a5b4fc;text-decoration:none;font-weight:600;cursor:pointer;}
+    .alt a:hover, .link:hover{color:#c7d2fe;text-decoration:underline;}
+    .alert{padding:12px 14px;border-radius:10px;font-size:13.5px;margin-top:14px;line-height:1.55;}
+    .alert-error{background:rgba(239,68,68,0.12);border:1px solid rgba(239,68,68,0.35);color:#fecaca;}
+    .alert-success{background:rgba(16,185,129,0.12);border:1px solid rgba(16,185,129,0.35);color:#bbf7d0;}
+    .alert-info{background:rgba(59,130,246,0.12);border:1px solid rgba(59,130,246,0.35);color:#bfdbfe;}
+    .brand{text-align:center;margin-bottom:18px;color:#cbd5e1;font-size:13px;letter-spacing:.18em;text-transform:uppercase;}
+    .home-link{display:inline-flex;align-items:center;gap:6px;color:#94a3b8;font-size:13px;text-decoration:none;margin-top:22px;}
+    .home-link:hover{color:#cbd5e1;}
   </style>
 </head>
-<body class="grad min-h-screen flex items-center justify-center px-4">
-  <div class="max-w-md w-full bg-white rounded-3xl shadow-2xl p-8 md:p-12">
+<body>
+  <div class="card">
+    <div class="brand">🎓 The Cert Hub</div>
+    <h1>Welcome back</h1>
+    <p class="sub">Sign in with your email and password.</p>
 
-    <div class="text-center mb-8">
-      <div class="text-5xl mb-3">🎓</div>
-      <h1 class="text-2xl md:text-3xl font-extrabold text-slate-900 mb-2">Sign in to The Cert Hub</h1>
-      <p class="text-slate-500 text-sm md:text-base leading-relaxed">
-        Enter your email and we'll send you a one-time sign-in link. No password needed.
-      </p>
-    </div>
+    <form id="login-form" autocomplete="on">
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required autocomplete="username" placeholder="you@example.com" />
 
-    <form id="login-form" class="space-y-4">
-      <div>
-        <label for="email" class="block text-sm font-bold text-slate-700 mb-2">Email address</label>
-        <input id="email" name="email" type="email" required autocomplete="email"
-               class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 transition text-base"
-               placeholder="you@example.com" />
-      </div>
-      <button id="submit-btn" type="submit"
-              class="gold-grad w-full text-white font-bold py-3.5 rounded-xl shadow-lg shadow-indigo-500/30 hover:shadow-xl hover:shadow-indigo-500/50 hover:scale-[1.02] active:scale-[0.99] transition-all text-base">
-        Send sign-in link →
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" required autocomplete="current-password" placeholder="Your password" />
+
+      <button type="submit" class="btn" id="submit-btn">
+        <span id="btn-label">🔐 Sign in</span>
       </button>
+
+      <div id="msg"></div>
     </form>
 
-    <div id="message" class="hidden mt-6 p-4 rounded-xl text-sm leading-relaxed"></div>
+    <p class="alt">
+      <a class="link" id="forgot-link">Forgot password?</a>
+      &nbsp;·&nbsp;
+      First time? Your initial password is <code style="background:#1e293b;padding:1px 6px;border-radius:4px;color:#fbbf24;">87654321</code>
+    </p>
 
-    <div id="dev-link" class="hidden mt-6 p-4 rounded-xl bg-amber-50 ring-1 ring-amber-200 text-sm">
-      <p class="font-bold text-amber-900 mb-2">⚠️ Dev mode — email not actually sent</p>
-      <a id="dev-link-anchor" href="" class="text-amber-700 underline break-all"></a>
-    </div>
-
-    <div class="mt-10 pt-6 border-t border-slate-200 text-center">
-      <p class="text-xs text-slate-500 leading-relaxed">
-        Don't have an account? Email
-        <a href="mailto:syed@transcrypts.com" class="text-indigo-600 font-semibold hover:underline">syed@transcrypts.com</a>
-        to request access.
-      </p>
-      <p class="text-xs text-slate-400 mt-4">
-        <a href="/" class="hover:text-slate-700">← Back to homepage</a>
-      </p>
+    <div style="text-align:center;">
+      <a href="/" class="home-link">← Back to homepage</a>
     </div>
   </div>
 
   <script>
-  (function() {
-    const form = document.getElementById('login-form');
-    const message = document.getElementById('message');
-    const btn = document.getElementById('submit-btn');
-    const devLink = document.getElementById('dev-link');
-    const devLinkAnchor = document.getElementById('dev-link-anchor');
-
-    // Read ?next= from URL to pass through to the API
-    const params = new URLSearchParams(window.location.search);
-    const nextPath = params.get('next') || '/';
-
-    // Show error message if redirected here with ?error=
-    const errParam = params.get('error');
-    if (errParam) {
-      const errors = {
-        expired: 'Your sign-in link has expired. Please request a new one.',
-        missing_token: 'That sign-in link is missing a token.',
-        unknown_user: 'That email is not registered. Contact the site owner for access.',
+    // Parse URL params for errors / next
+    const params = new URLSearchParams(location.search);
+    const next = params.get('next') || '/';
+    const err = params.get('error');
+    const msg = document.getElementById('msg');
+    if (err) {
+      const labels = {
+        expired: "That sign-in link expired. Please sign in with your password, or request a new link.",
+        missing_token: "Invalid sign-in link.",
+        unknown_user: "That email isn't on the access list. Contact the site owner.",
+        account_disabled: "This account has been disabled. Contact the site owner.",
+        persist_failed: "Something went wrong setting your password. Please try again.",
       };
-      message.textContent = errors[errParam] || 'Sign-in failed. Try again.';
-      message.className = 'mt-6 p-4 rounded-xl bg-rose-50 ring-1 ring-rose-200 text-rose-800 text-sm leading-relaxed';
-      message.classList.remove('hidden');
+      msg.innerHTML = `<div class="alert alert-error">${labels[err] || 'Sign-in error.'}</div>`;
     }
+
+    // Login form submission
+    const form = document.getElementById('login-form');
+    const btn = document.getElementById('submit-btn');
+    const btnLabel = document.getElementById('btn-label');
 
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
-      const email = document.getElementById('email').value.trim();
-      if (!email) return;
-
+      msg.innerHTML = '';
       btn.disabled = true;
-      btn.textContent = 'Sending...';
-      message.classList.add('hidden');
-      devLink.classList.add('hidden');
+      btnLabel.textContent = '⏳ Signing in…';
 
+      const email = document.getElementById('email').value.trim();
+      const password = document.getElementById('password').value;
+
+      try {
+        const res = await fetch('/api/auth/login', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          credentials: 'same-origin',
+          body: JSON.stringify({ email, password }),
+        });
+        const data = await res.json().catch(() => ({}));
+
+        if (res.ok && data.ok) {
+          // Redirect: change-password if forced, otherwise to ?next= or homepage
+          const target = data.mustChangePassword ? '/change-password/' : next;
+          msg.innerHTML = `<div class="alert alert-success">Signed in! Redirecting…</div>`;
+          setTimeout(() => { location.href = target; }, 400);
+          return;
+        }
+
+        // Special: needs a magic-link reset
+        if (data.needs_magic_link) {
+          msg.innerHTML = `
+            <div class="alert alert-info">
+              ${data.error}
+              <button class="link" style="background:none;border:0;padding:0;margin-top:6px;display:block;" id="send-magic">→ Send me a sign-in link</button>
+            </div>`;
+          document.getElementById('send-magic').addEventListener('click', () => sendMagicLink(email));
+        } else {
+          msg.innerHTML = `<div class="alert alert-error">${data.error || 'Sign-in failed.'}</div>`;
+        }
+      } catch (err) {
+        msg.innerHTML = `<div class="alert alert-error">Network error. Please try again.</div>`;
+      } finally {
+        btn.disabled = false;
+        btnLabel.textContent = '🔐 Sign in';
+      }
+    });
+
+    // Forgot password → send magic link
+    document.getElementById('forgot-link').addEventListener('click', () => {
+      const email = document.getElementById('email').value.trim();
+      if (!email) {
+        msg.innerHTML = `<div class="alert alert-info">Enter your email above first, then click "Forgot password?" again.</div>`;
+        document.getElementById('email').focus();
+        return;
+      }
+      sendMagicLink(email);
+    });
+
+    async function sendMagicLink(email) {
+      msg.innerHTML = `<div class="alert alert-info">⏳ Sending sign-in link to ${email}…</div>`;
       try {
         const res = await fetch('/api/auth/request-link', {
           method: 'POST',
-          headers: { 'content-type': 'application/json' },
-          body: JSON.stringify({ email, next: nextPath }),
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email, next }),
         });
-        const data = await res.json();
-        if (res.ok) {
-          message.textContent = '✓ ' + (data.message || 'Check your inbox.');
-          message.className = 'mt-6 p-4 rounded-xl bg-emerald-50 ring-1 ring-emerald-200 text-emerald-800 text-sm leading-relaxed';
-          message.classList.remove('hidden');
-          form.style.display = 'none';
-          if (data.dev_link) {
-            devLinkAnchor.href = data.dev_link;
-            devLinkAnchor.textContent = data.dev_link;
-            devLink.classList.remove('hidden');
-          }
-        } else {
-          message.textContent = data.error || 'Something went wrong. Try again.';
-          message.className = 'mt-6 p-4 rounded-xl bg-rose-50 ring-1 ring-rose-200 text-rose-800 text-sm leading-relaxed';
-          message.classList.remove('hidden');
-        }
-      } catch (err) {
-        message.textContent = 'Network error. Check your connection and try again.';
-        message.className = 'mt-6 p-4 rounded-xl bg-rose-50 ring-1 ring-rose-200 text-rose-800 text-sm leading-relaxed';
-        message.classList.remove('hidden');
-      } finally {
-        btn.disabled = false;
-        btn.textContent = 'Send sign-in link →';
+        const data = await res.json().catch(() => ({}));
+        msg.innerHTML = `
+          <div class="alert alert-success">
+            📧 If that email is on the access list, a sign-in link has been sent.
+            <br><br>
+            <strong>Note:</strong> Clicking the link will reset your password back to <code>87654321</code> — you'll be asked to choose a new one. Check your inbox (and spam folder) within ~60 seconds.
+          </div>`;
+      } catch {
+        msg.innerHTML = `<div class="alert alert-error">Network error. Please try again.</div>`;
       }
-    });
-  })();
+    }
   </script>
 </body>
 </html>

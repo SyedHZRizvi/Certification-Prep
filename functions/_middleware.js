@@ -1,73 +1,89 @@
 /**
  * Auth gate middleware — runs on EVERY request hitting Cloudflare Pages.
  *
- * Reads the session JWT from cookies, decides:
- *   - Public route → serve content (homepage, login, marketing).
- *   - Course content → check entitlement.
- *   - Admin route → require super-user role.
+ * Order of checks (high to low priority):
+ *   1. Disabled account?       → 403
+ *   2. Must change password?   → redirect to /change-password/
+ *   3. Public route?           → serve
+ *   4. Super-user / admin route? (Manage-Users, /api/admin/) → require admin role
+ *   5. Course content?         → require entitlement
+ *   6. Anything else?          → serve (or require auth if not public)
  *
- * If unauthenticated and the route requires auth → redirect to /login?next=<url>.
- * If authenticated but lacks entitlement → 403 with a "Subscription required" page.
- *
- * Super-users always pass.
+ * The hardcoded super-user (lib/superusers.js) always passes the role checks
+ * regardless of JWT contents — failsafe so the owner cannot lock themselves out.
  */
 
 import { verifyJWT } from "./lib/jwt.js";
-import { parseCookies } from "./lib/response.js";
+import { parseCookies, clearCookie } from "./lib/response.js";
 import { courseIdFromPath } from "./lib/courses.js";
 import { isSuperUser } from "./lib/superusers.js";
+import { ROLES } from "./lib/roles.js";
 
 const SESSION_COOKIE = "ch_session";
 
-// Routes that are always public (no auth required, no entitlement check).
-// NOTE: the homepage "/" is NOT listed here — it's handled by the exact-match
-// check in isPublic() below. Including "/" in this list would be catastrophic
-// because pathname.startsWith("/") is true for EVERY path (the auth gate would
-// pass everything through as "public").
+// Routes that are always public (no auth check, no entitlement check).
+// NOTE: "/" is handled by the exact-match check in isPublic() below — do NOT
+// add it here, otherwise every path would match via startsWith.
 const PUBLIC_PREFIXES = [
-  "/login",             // login page
-  "/api/auth/",         // request-link, verify, logout, me
-  "/assets/",           // CSS, JS, fonts, images
-  "/Resources/",        // resources hub (free preview material)
-  "/00-Study-Plan/",    // study plan (free preview)
-  "/Privacy-Setup/",    // privacy / deindex docs
-  "/version.txt",       // cache-bust check (must stay public)
+  "/login",                  // login page
+  "/change-password",        // forced password change page (must be reachable when must_change_password=true)
+  "/api/auth/",              // login, change-password, logout, me, request-link, verify
+  "/assets/",                // CSS, JS, fonts, images
+  "/Resources/",             // resources hub (free preview material)
+  "/00-Study-Plan/",         // study plan (free preview)
+  "/Privacy-Setup/",         // privacy / deindex docs
+  "/version.txt",            // cache-bust check
   "/favicon",
   "/sitemap",
   "/robots.txt",
 ];
 
-// Routes that REQUIRE super-user role (returns 403 otherwise).
-const SUPERUSER_PREFIXES = [
-  "/Manage-Users/",
+// Routes that REQUIRE super-user OR administrator role.
+const ADMIN_PREFIXES = [
+  "/Manage-Users",
   "/api/admin/",
 ];
 
+// Routes the user must be able to reach even when must_change_password=true
+// (otherwise they'd be in an infinite redirect loop).
+const ALWAYS_REACHABLE_WHEN_MUST_CHANGE_PASSWORD = [
+  "/change-password",
+  "/api/auth/",   // logout, change-password, me
+  "/assets/",
+  "/favicon",
+];
+
+function startsWithAny(pathname, prefixes) {
+  return prefixes.some(p => pathname === p || pathname.startsWith(p));
+}
 function isPublic(pathname) {
-  // Exact homepage
   if (pathname === "/" || pathname === "") return true;
-  return PUBLIC_PREFIXES.some(p => pathname === p || pathname.startsWith(p));
+  return startsWithAny(pathname, PUBLIC_PREFIXES);
+}
+function isAdminRoute(pathname) {
+  return startsWithAny(pathname, ADMIN_PREFIXES);
+}
+function isReachableWhenMustChangePassword(pathname) {
+  if (pathname === "/" || pathname === "") return false;
+  return startsWithAny(pathname, ALWAYS_REACHABLE_WHEN_MUST_CHANGE_PASSWORD);
 }
 
-function isSuperUserRoute(pathname) {
-  return SUPERUSER_PREFIXES.some(p => pathname.startsWith(p));
+function effectiveRole(session) {
+  if (!session) return null;
+  if (isSuperUser(session.email)) return ROLES.SUPERUSER;
+  return session.role || null;
 }
 
-/**
- * The Pages Functions middleware contract: export onRequest.
- * `context.next()` calls the next handler or serves the underlying static asset.
- */
+function isAdminOrSuper(role) {
+  return role === ROLES.SUPERUSER || role === ROLES.ADMINISTRATOR;
+}
+
 export async function onRequest(context) {
   const { request, env, next } = context;
   const url = new URL(request.url);
   const pathname = url.pathname;
 
-  // Course READMEs (e.g. /01-Scrum-Master/) are public landing pages.
-  // Only Module-* and Practice-Exams subpaths require entitlement.
-  const courseId = courseIdFromPath(pathname);
-  const isCourseLandingOnly = courseId && /^\/\d{2}-[A-Za-z0-9-]+\/?$/.test(pathname);
-
-  // Try to read & verify the session cookie
+  // Verify session cookie (if present)
   let session = null;
   const cookies = parseCookies(request);
   const token = cookies[SESSION_COOKIE];
@@ -75,28 +91,32 @@ export async function onRequest(context) {
     try {
       session = await verifyJWT(token, env.JWT_SECRET);
     } catch {
-      session = null;  // invalid / expired / tampered
+      session = null;
     }
   }
+
+  // === Forced password change ===
+  // If user is signed in but must_change_password is true, force them to
+  // /change-password/ (except for endpoints they need to reach to actually
+  // change it: the page itself, the API, logout, assets).
+  if (session && session.must_change_password &&
+      !isReachableWhenMustChangePassword(pathname)) {
+    return Response.redirect(`${url.origin}/change-password/`, 302);
+  }
+
+  // Course landing pages (e.g. /01-Scrum-Master/) are public; only
+  // Module-* / Practice-Exams etc. inside require entitlement.
+  const courseId = courseIdFromPath(pathname);
+  const isCourseLandingOnly = courseId && /^\/\d{2}-[A-Za-z0-9-]+\/?$/.test(pathname);
 
   // === Public routes ===
   if (isPublic(pathname) || isCourseLandingOnly) {
-    // Even on public routes, attach session info as a header so the page can
-    // render "Welcome, Humayun" or hide the login link if applicable.
-    const res = await next();
-    if (session) {
-      const newRes = new Response(res.body, res);
-      newRes.headers.set("x-ch-user", session.email || "");
-      newRes.headers.set("x-ch-role", session.role || "");
-      return newRes;
-    }
-    return res;
+    return next();
   }
 
-  // === Super-user only routes ===
-  if (isSuperUserRoute(pathname)) {
+  // === Admin routes ===
+  if (isAdminRoute(pathname)) {
     if (!session) {
-      // For API calls, return 401 JSON; for page requests, redirect to login
       if (pathname.startsWith("/api/")) {
         return new Response(JSON.stringify({ error: "not authenticated" }), {
           status: 401,
@@ -105,40 +125,43 @@ export async function onRequest(context) {
       }
       return Response.redirect(`${url.origin}/login/?next=${encodeURIComponent(pathname)}`, 302);
     }
-    if (session.role !== "superuser" && !isSuperUser(session.email)) {
+    const role = effectiveRole(session);
+    if (!isAdminOrSuper(role)) {
       if (pathname.startsWith("/api/")) {
-        return new Response(JSON.stringify({ error: "forbidden — super-user only" }), {
+        return new Response(JSON.stringify({ error: "forbidden — admin only" }), {
           status: 403,
           headers: { "content-type": "application/json" },
         });
       }
-      return forbiddenPage("This admin area is restricted to the site owner.");
+      return forbiddenPage("This admin area is restricted to the site owner and administrators.");
     }
     return next();
   }
 
-  // === Course content routes ===
+  // === Course content (Module-*, Practice-Exams, etc.) ===
   if (courseId && !isCourseLandingOnly) {
     if (!session) {
       return Response.redirect(`${url.origin}/login/?next=${encodeURIComponent(pathname)}`, 302);
     }
-    // Super-user: always allow
-    if (session.role === "superuser" || isSuperUser(session.email)) {
+    const role = effectiveRole(session);
+    // Super-user and administrator can access any course
+    if (role === ROLES.SUPERUSER || role === ROLES.ADMINISTRATOR) {
       return next();
     }
-    // Check entitlement
+    // Students: check entitlement
     const courses = session.courses;
-    const hasAccess = courses === "*" ||
-      (Array.isArray(courses) && courses.includes(courseId));
+    const hasAccess = courses === "*" || (Array.isArray(courses) && courses.includes(courseId));
     if (!hasAccess) {
       return subscriptionRequiredPage(courseId, session.email);
     }
     return next();
   }
 
-  // Default: serve the page
+  // === Default: serve ===
   return next();
 }
+
+// ---------- inline error pages ----------
 
 function forbiddenPage(message) {
   return new Response(`<!DOCTYPE html>

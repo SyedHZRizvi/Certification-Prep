@@ -9,6 +9,8 @@
 
 import { json, parseCookies } from "../../lib/response.js";
 import { verifyJWT } from "../../lib/jwt.js";
+import { isSuperUser } from "../../lib/superusers.js";
+import { ROLES } from "../../lib/roles.js";
 
 const SESSION_COOKIE = "ch_session";
 
@@ -20,11 +22,14 @@ export async function onRequestGet({ request, env }) {
   }
   try {
     const claims = await verifyJWT(token, env.JWT_SECRET);
+    // Hardcoded super-users always report as superuser regardless of JWT
+    const role = isSuperUser(claims.email) ? ROLES.SUPERUSER : claims.role;
     return json({
       authenticated: true,
       email: claims.email,
-      role: claims.role,
+      role,
       courses: claims.courses,
+      must_change_password: Boolean(claims.must_change_password),
     });
   } catch {
     return json({ authenticated: false });

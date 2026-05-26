@@ -13,8 +13,8 @@ export function json(data, init = {}) {
   });
 }
 
-export function error(message, status = 400) {
-  return json({ error: message }, { status });
+export function error(message, status = 400, extra = {}) {
+  return json({ error: message, ...extra }, { status });
 }
 
 export function redirect(url, status = 302) {

@@ -1,0 +1,136 @@
+---
+permalink: /change-password/
+sitemap: false
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Change password — The Cert Hub</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    body{font-family:'Inter',-apple-system,sans-serif;background:radial-gradient(ellipse at top,#1e1b4b 0%,#0f172a 60%,#020617 100%);color:#e2e8f0;min-height:100vh;display:grid;place-items:center;padding:24px;}
+    .card{max-width:480px;width:100%;background:rgba(15,23,42,0.85);backdrop-filter:blur(12px);border:1px solid rgba(148,163,184,0.18);border-radius:20px;padding:40px 36px;box-shadow:0 25px 80px -15px rgba(0,0,0,0.7);}
+    h1{font-size:26px;font-weight:800;background:linear-gradient(135deg,#f59e0b,#f97316,#ec4899);-webkit-background-clip:text;background-clip:text;color:transparent;margin:0 0 4px;}
+    .sub{color:#94a3b8;font-size:14px;margin-bottom:24px;line-height:1.55;}
+    .who{color:#a5b4fc;font-weight:600;}
+    label{display:block;color:#cbd5e1;font-weight:600;font-size:13px;margin:14px 0 6px;letter-spacing:.02em;}
+    input[type="password"]{width:100%;background:#0f172a;border:1px solid rgba(148,163,184,0.25);color:#f1f5f9;padding:12px 14px;border-radius:10px;font-size:15px;transition:border-color .15s, box-shadow .15s;}
+    input:focus{outline:none;border-color:#fbbf24;box-shadow:0 0 0 3px rgba(251,191,36,0.18);}
+    .btn{width:100%;display:inline-flex;align-items:center;justify-content:center;gap:8px;background:linear-gradient(135deg,#d97706,#ea580c,#dc2626);color:#fff;font-weight:700;padding:13px 16px;border:0;border-radius:12px;font-size:15px;cursor:pointer;margin-top:22px;box-shadow:0 8px 24px -6px rgba(234,88,12,0.55);transition:transform .12s, box-shadow .12s;}
+    .btn:hover:not(:disabled){transform:translateY(-1px);box-shadow:0 12px 30px -6px rgba(234,88,12,0.65);}
+    .btn:disabled{opacity:.55;cursor:wait;}
+    .alert{padding:12px 14px;border-radius:10px;font-size:13.5px;margin-top:14px;line-height:1.55;}
+    .alert-error{background:rgba(239,68,68,0.12);border:1px solid rgba(239,68,68,0.35);color:#fecaca;}
+    .alert-success{background:rgba(16,185,129,0.12);border:1px solid rgba(16,185,129,0.35);color:#bbf7d0;}
+    .alert-info{background:rgba(59,130,246,0.12);border:1px solid rgba(59,130,246,0.35);color:#bfdbfe;}
+    .rules{background:#0f172a;border:1px solid rgba(148,163,184,0.2);border-radius:8px;padding:10px 14px;font-size:12px;color:#94a3b8;margin-top:6px;}
+    .rules li{margin:3px 0;}
+    .brand{text-align:center;margin-bottom:18px;color:#cbd5e1;font-size:13px;letter-spacing:.18em;text-transform:uppercase;}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="brand">🎓 The Cert Hub</div>
+    <h1>🔑 Change your password</h1>
+    <p class="sub" id="sub-text">Signed in as <span class="who" id="who-email">…</span>. Choose a new password.</p>
+
+    <div id="reason-banner"></div>
+
+    <form id="change-form" autocomplete="on">
+      <label for="current">Current password</label>
+      <input id="current" type="password" required autocomplete="current-password" placeholder="Enter your current password (or 87654321 if temporary)" />
+
+      <label for="new">New password</label>
+      <input id="new" type="password" required autocomplete="new-password" placeholder="At least 8 characters, with a letter and a number" />
+
+      <label for="confirm">Confirm new password</label>
+      <input id="confirm" type="password" required autocomplete="new-password" placeholder="Re-type your new password" />
+
+      <ul class="rules">
+        <li>• Minimum 8 characters</li>
+        <li>• Must contain at least one letter and one number</li>
+        <li>• Cannot be the temporary password (87654321)</li>
+      </ul>
+
+      <button type="submit" class="btn" id="submit-btn">
+        <span id="btn-label">🔐 Update password</span>
+      </button>
+
+      <div id="msg"></div>
+    </form>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(location.search);
+    const reason = params.get('reason');
+    const reasonBanner = document.getElementById('reason-banner');
+
+    if (reason === 'magic_link') {
+      reasonBanner.innerHTML = `<div class="alert alert-info">
+        You signed in via a sign-in link. Your password has been reset to <code style="background:#1e293b;padding:1px 6px;border-radius:4px;color:#fbbf24;">87654321</code> — enter it as the "current password" and choose a new one below.
+      </div>`;
+    }
+
+    // Load current user's email
+    fetch('/api/auth/me', { credentials: 'same-origin' })
+      .then(r => r.ok ? r.json() : { authenticated: false })
+      .then(data => {
+        if (!data.authenticated) {
+          location.href = '/login/';
+          return;
+        }
+        document.getElementById('who-email').textContent = data.email;
+      });
+
+    // Submit
+    const form = document.getElementById('change-form');
+    const btn = document.getElementById('submit-btn');
+    const btnLabel = document.getElementById('btn-label');
+    const msg = document.getElementById('msg');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      msg.innerHTML = '';
+
+      const current = document.getElementById('current').value;
+      const next = document.getElementById('new').value;
+      const confirm = document.getElementById('confirm').value;
+
+      if (next !== confirm) {
+        msg.innerHTML = `<div class="alert alert-error">New password and confirmation don't match.</div>`;
+        return;
+      }
+
+      btn.disabled = true;
+      btnLabel.textContent = '⏳ Updating…';
+
+      try {
+        const res = await fetch('/api/auth/change-password', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          credentials: 'same-origin',
+          body: JSON.stringify({ currentPassword: current, newPassword: next }),
+        });
+        const data = await res.json().catch(() => ({}));
+
+        if (res.ok && data.ok) {
+          msg.innerHTML = `<div class="alert alert-success">✅ Password updated! Redirecting to homepage…</div>`;
+          setTimeout(() => { location.href = '/'; }, 800);
+        } else {
+          msg.innerHTML = `<div class="alert alert-error">${data.error || 'Update failed.'}</div>`;
+        }
+      } catch {
+        msg.innerHTML = `<div class="alert alert-error">Network error. Please try again.</div>`;
+      } finally {
+        btn.disabled = false;
+        btnLabel.textContent = '🔐 Update password';
+      }
+    });
+  </script>
+</body>
+</html>
