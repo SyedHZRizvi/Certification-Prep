@@ -381,33 +381,33 @@ sitemap: false
       animation: rb-shimmer 8s linear infinite;
       filter: drop-shadow(0 4px 16px rgba(0,0,0,0.25));
     }
-    /* Each word: dramatic DARK→MID→LIGHT→MID→DARK rainbow flow with
-       multiple stops for shimmering depth (matching the original
-       "Certification" multi-color blue gradient design language). */
-    .hero-rainbow .rb1 { /* Pass — fire: deep crimson → bright orange → light yellow → orange → crimson */
-      background-image: linear-gradient(135deg, #7f1d1d 0%, #dc2626 20%, #f97316 40%, #fbbf24 55%, #fb923c 75%, #ea580c 100%);
-      animation-delay: 0s;
+    /* Premium unified gradient — every word shares the SAME indigo →
+       violet → fuchsia → rose flow with depth stops (light/mid/dark
+       within the same hue family). Symmetric, professional, modern —
+       the kind of headline gradient used by Stripe, Linear, Apple,
+       Vercel for hero typography. No rainbow chaos. */
+    .hero-rainbow .rb1, .hero-rainbow .rb2, .hero-rainbow .rb3,
+    .hero-rainbow .rb4, .hero-rainbow .rb5, .hero-rainbow .rb6 {
+      background-image: linear-gradient(
+        135deg,
+        #4338ca   0%,   /* deep indigo */
+        #6366f1  15%,   /* indigo */
+        #8b5cf6  30%,   /* violet */
+        #a855f7  45%,   /* purple */
+        #d946ef  60%,   /* fuchsia */
+        #ec4899  75%,   /* pink */
+        #f43f5e  90%,   /* rose */
+        #fb7185 100%    /* light rose accent */
+      );
     }
-    .hero-rainbow .rb2 { /* Your — sunset: deep orange → gold → cream → gold → deep orange */
-      background-image: linear-gradient(135deg, #c2410c 0%, #ea580c 20%, #f59e0b 40%, #fde047 55%, #facc15 75%, #d97706 100%);
-      animation-delay: .35s;
-    }
-    .hero-rainbow .rb3 { /* Next — forest: deep teal → emerald → mint → emerald → teal */
-      background-image: linear-gradient(135deg, #064e3b 0%, #047857 20%, #10b981 40%, #6ee7b7 55%, #34d399 75%, #059669 100%);
-      animation-delay: .7s;
-    }
-    .hero-rainbow .rb4 { /* Big — ocean: deep navy → cobalt → sky → aqua → cobalt → navy */
-      background-image: linear-gradient(135deg, #1e3a8a 0%, #2563eb 20%, #38bdf8 40%, #bae6fd 55%, #0ea5e9 75%, #1d4ed8 100%);
-      animation-delay: 1.05s;
-    }
-    .hero-rainbow .rb5 { /* Certification — galaxy: deep indigo → violet → magenta → pink → violet → indigo */
-      background-image: linear-gradient(135deg, #312e81 0%, #6d28d9 18%, #a855f7 35%, #ec4899 52%, #f0abfc 65%, #c026d3 82%, #5b21b6 100%);
-      animation-delay: 1.4s;
-    }
-    .hero-rainbow .rb6 { /* "." — pink flourish */
-      background-image: linear-gradient(135deg, #be185d 0%, #ec4899 50%, #f472b6 100%);
-      animation-delay: 1.75s;
-    }
+    /* Stagger the shimmer so each word feels alive without breaking
+       the unified palette. */
+    .hero-rainbow .rb1 { animation-delay: 0s;    }
+    .hero-rainbow .rb2 { animation-delay: .3s;   }
+    .hero-rainbow .rb3 { animation-delay: .6s;   }
+    .hero-rainbow .rb4 { animation-delay: .9s;   }
+    .hero-rainbow .rb5 { animation-delay: 1.2s;  }
+    .hero-rainbow .rb6 { animation-delay: 1.5s;  }
 
     @keyframes rb-shimmer {
       0%   { background-position: 0% 50%; }
@@ -1670,7 +1670,7 @@ sitemap: false
         <p class="text-xs md:text-sm font-bold tracking-[0.22em] uppercase text-indigo-600 mb-3">— Frequently asked —</p>
         <h2 class="display text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 mb-5">Questions, answered.</h2>
         <p class="text-xl md:text-2xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-          Eight quick reads. Click any question to expand.
+          Ten quick reads. Click any question to expand.
         </p>
       </div>
       <div class="reveal space-y-4" id="faq-list">
@@ -1699,6 +1699,19 @@ sitemap: false
         </div>
         <div class="faq-item">
           <button class="faq-q" aria-expanded="false">
+            <span>Does my fee include the actual certification exam fee?</span>
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-a">
+            <div class="faq-a-inner">
+              <p><strong>No.</strong> Your enrollment fee with The Cert Hub covers <strong>only the study materials and exam-preparation content</strong> — the lessons, videos, quizzes, flashcards, cheat-sheets, and practice + mock exams that get you ready.</p>
+              <p>The actual certification examination is <strong>administered by the issuing certification body</strong> — for example, Scrum.org for PSM I, PMI for PMP, AWS for the AWS certifications, Microsoft for Azure, CompTIA for Security+, ASCM for CSCP/CPIM/CLTD, ISM for CPSM, HubSpot / Google / Meta / DMI / OMCP / CXL for the AI-Marketing credentials, C4 / BTA / UNic for Bitcoin, and Google / Adobe / Wharton / Salesforce for E-Commerce.</p>
+              <p>You must <strong>register directly with the issuing body and pay their published exam fee separately</strong>. Each organization sets its own fee, registration process, scheduling system, eligibility requirements, ID rules, and renewal policy. We list current fees and direct registration links in the <strong>Certification Catalog</strong>, but those fees and processes are entirely the responsibility of the issuing organization and may change at any time without notice. The Cert Hub neither collects nor remits any portion of the certification body's exam fee.</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
             <span>How long does it take to pass a certification?</span>
             <span class="faq-toggle" aria-hidden="true">+</span>
           </button>
@@ -1719,6 +1732,22 @@ sitemap: false
           <div class="faq-a">
             <div class="faq-a-inner">
               <p>You keep access. Re-take our Final Mock Exam, revisit the modules where you missed concepts, and study the <strong>Exam Trap / Common Misconceptions</strong> sections (every module has one) — these are the patterns most students get wrong on the real exam. The vast majority of students who follow the plan pass on first sitting, but if you don't, the material is yours to use as long as your membership is active.</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            <span>Do you guarantee I will pass the certification exam?</span>
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-a">
+            <div class="faq-a-inner">
+              <p><strong>No — and we believe any prep program that promises a pass guarantee should be approached with skepticism.</strong></p>
+              <p>What we <em>do</em> stand behind is the quality and completeness of the materials. Every course is engineered to the same teaching-and-learning gold standard as <strong>Cornell, Harvard, Princeton, and Stanford</strong> graduate programs. Students who follow the study plan in full — completing every module, scoring <strong>85% or higher consistently</strong> on all practice and final mock exams before booking the real sitting, and faithfully reviewing every missed question — historically have an <strong>overwhelmingly high probability of passing on the first attempt, and a near-certain probability by the second attempt</strong>.</p>
+              <p>However, we have no way of knowing how diligently you actually studied, how carefully you managed your time on exam day, how you selected your answers under pressure, or what physical, mental, or emotional state you brought into the testing room. The real exam outcome depends on the test-taker's preparation, focus, judgment, and decisions in the moment — variables that are <strong>entirely outside our control</strong>.</p>
+              <p class="text-sm md:text-base text-slate-500 mt-4 pt-4 border-t border-slate-200" style="line-height:1.65;">
+                <strong>Disclaimer of liability.</strong> The Cert Hub, its author Humayun Zafar, and any affiliated entities make <strong>no warranty or guarantee, express or implied</strong>, that any enrolled student will pass any certification examination, on any attempt. Enrollment fees cover access to study materials only. We offer no refund, money-back guarantee, retake reimbursement, or compensation in the event of exam failure, and accept <strong>no liability — direct, indirect, incidental, or consequential</strong> — for exam outcomes, retake fees, registration fees paid to certification bodies, lost wages, missed deadlines, career outcomes, or any other consequence arising from preparing for or sitting any certification examination. By enrolling, you acknowledge that the certification result rests solely with you and the issuing certification body.
+              </p>
             </div>
           </div>
         </div>
