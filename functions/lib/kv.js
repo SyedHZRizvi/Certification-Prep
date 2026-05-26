@@ -69,16 +69,20 @@ export async function getUser(env, email) {
 /**
  * Upsert a user record.
  *
- * Refuses to write role:"superuser" unless the email is in the hardcoded
- * super-user list (defense in depth — admin/users.js also rejects this).
+ * The role can be "superuser" | "administrator" | "student". The
+ * AUTHORIZATION check (only super-user actors can write role=superuser)
+ * happens in admin/users.js — this is the data layer and just persists.
+ *
+ * The hardcoded super-user list (lib/superusers.js) is a SEPARATE
+ * failsafe — those super-users are always recognized regardless of
+ * KV state and cannot be removed from the codebase except via deploy.
+ * KV-stored super-users are revocable: an existing super-user can
+ * delete them via the admin UI.
  */
 export async function putUser(env, user) {
   const e = user.email.toLowerCase().trim();
   if (!user.role || !user.courses) {
     throw new Error("user record requires role and courses");
-  }
-  if (user.role === "superuser" && !isSuperUser(e)) {
-    throw new Error("Cannot create superuser via API. Edit lib/superusers.js and redeploy.");
   }
   await env.USERS_KV.put(USER_KEY(e), JSON.stringify(user));
 }

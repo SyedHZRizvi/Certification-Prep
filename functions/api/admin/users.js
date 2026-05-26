@@ -96,8 +96,8 @@ export async function onRequestPost({ request, env }) {
   if (!v.ok) return error(v.error, 400);
 
   const role = (body.role || ROLES.STUDENT).toString();
-  if (![ROLES.STUDENT, ROLES.ADMINISTRATOR].includes(role)) {
-    return error("role must be 'student' or 'administrator' (super-user is hardcoded)", 400);
+  if (![ROLES.STUDENT, ROLES.ADMINISTRATOR, ROLES.SUPERUSER].includes(role)) {
+    return error("role must be 'student', 'administrator', or 'superuser'", 400);
   }
   if (isSuperUser(email)) {
     return error("cannot modify hardcoded super-user via API", 400);
@@ -106,6 +106,10 @@ export async function onRequestPost({ request, env }) {
   // Authorization: administrator cannot CREATE administrators
   if (role === ROLES.ADMINISTRATOR && !can(actor.role, "create_administrator")) {
     return error("only super-user can create administrators", 403);
+  }
+  // Authorization: only super-user can CREATE another super-user
+  if (role === ROLES.SUPERUSER && !can(actor.role, "create_superuser")) {
+    return error("only super-user can create or promote another super-user", 403);
   }
 
   // Block over-write of existing user (use PATCH for that)
@@ -220,11 +224,14 @@ export async function onRequestPatch({ request, env }) {
     updated.courses = v.value;
   }
   if (body.role !== undefined) {
-    if (![ROLES.STUDENT, ROLES.ADMINISTRATOR].includes(body.role)) {
-      return error("role must be 'student' or 'administrator'", 400);
+    if (![ROLES.STUDENT, ROLES.ADMINISTRATOR, ROLES.SUPERUSER].includes(body.role)) {
+      return error("role must be 'student', 'administrator', or 'superuser'", 400);
     }
     if (body.role === ROLES.ADMINISTRATOR && !can(actor.role, "create_administrator")) {
       return error("only super-user can promote a user to administrator", 403);
+    }
+    if (body.role === ROLES.SUPERUSER && !can(actor.role, "create_superuser")) {
+      return error("only super-user can promote a user to super-user", 403);
     }
     updated.role = body.role;
   }

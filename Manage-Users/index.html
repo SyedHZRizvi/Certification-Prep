@@ -61,8 +61,116 @@ sitemap: false
     .stripe-amber  { background: linear-gradient(90deg, #fbbf24 0%, #f97316 100%); }
     .stripe-indigo { background: linear-gradient(90deg, #6366f1 0%, #9333ea 100%); }
     .stripe-emerald{ background: linear-gradient(90deg, #10b981 0%, #14b8a6 100%); }
+    .stripe-sky    { background: linear-gradient(90deg, #0ea5e9 0%, #06b6d4 100%); }
     .stripe-rose   { background: linear-gradient(90deg, #f43f5e 0%, #ec4899 100%); }
     .stripe-header { background: linear-gradient(90deg, #6366f1 0%, #9333ea 50%, #ec4899 100%); }
+    /* ---- Access Matrix scoped styles ---- */
+    .access-matrix-wrap {
+      max-height: 70vh;
+      overflow: auto;
+      border-radius: 0.5rem;
+      border: 1px solid rgb(226, 232, 240); /* slate-200 */
+    }
+    .access-matrix {
+      border-collapse: separate;
+      border-spacing: 0;
+      width: max-content;
+      min-width: 100%;
+    }
+    .access-matrix th,
+    .access-matrix td {
+      border-bottom: 1px solid rgb(226, 232, 240);
+      padding: 10px 8px;
+      box-sizing: border-box;
+    }
+    .access-matrix thead th {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      background: rgb(241, 245, 249); /* slate-100 */
+      vertical-align: bottom;
+    }
+    .access-matrix th.am-user-col,
+    .access-matrix td.am-user-col {
+      position: sticky;
+      left: 0;
+      z-index: 1;
+      background: #fff;
+      min-width: 240px;
+      max-width: 280px;
+      border-right: 2px solid rgb(226, 232, 240);
+      text-align: left;
+    }
+    .access-matrix thead th.am-user-col {
+      z-index: 3;
+      background: rgb(241, 245, 249);
+    }
+    .access-matrix tbody tr:nth-child(even) td {
+      background: rgba(248, 250, 252, 0.6); /* slate-50/60 */
+    }
+    .access-matrix tbody tr:nth-child(even) td.am-user-col {
+      background: rgba(248, 250, 252, 0.95);
+    }
+    .access-matrix tbody tr:hover td {
+      background: rgb(241, 245, 249); /* slate-100 */
+    }
+    .access-matrix tbody tr:hover td.am-user-col {
+      background: rgb(241, 245, 249);
+    }
+    .access-matrix .am-course-col {
+      width: 44px;
+      min-width: 44px;
+      max-width: 44px;
+      text-align: center;
+    }
+    .access-matrix .am-total-col {
+      min-width: 76px;
+      text-align: center;
+      border-left: 2px solid rgb(226, 232, 240);
+      font-weight: 700;
+    }
+    .access-matrix .am-cell-yes {
+      background: rgb(236, 253, 245); /* emerald-50 */
+      color: rgb(5, 150, 105); /* emerald-600 */
+      font-weight: 700;
+      font-size: 18px;
+      text-align: center;
+    }
+    .access-matrix .am-cell-no {
+      color: rgb(203, 213, 225); /* slate-300 */
+      text-align: center;
+      font-size: 14px;
+    }
+    .access-matrix .am-course-head {
+      font-size: 12px;
+      color: rgb(51, 65, 85); /* slate-700 */
+    }
+    .access-matrix .am-course-head .am-emoji {
+      display: block;
+      font-size: 18px;
+      line-height: 1;
+      margin-bottom: 2px;
+    }
+    .access-matrix .am-course-head .am-id {
+      display: block;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 11px;
+      color: rgb(100, 116, 139); /* slate-500 */
+      font-weight: 600;
+    }
+    .am-avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 9999px;
+      background: linear-gradient(135deg, #6366f1, #9333ea);
+      color: #fff;
+      font-weight: 800;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+      flex-shrink: 0;
+    }
     /* Card lift on hover for major CTAs */
     .btn-primary {
       background: linear-gradient(90deg, #4f46e5 0%, #7c3aed 100%);
@@ -208,8 +316,9 @@ sitemap: false
               <select id="add-role" class="w-full px-4 py-3 rounded-lg bg-white border-2 border-slate-300 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 focus:outline-none text-slate-900 transition">
                 <option value="student">Student (per-course access)</option>
                 <option value="administrator" data-superonly>Administrator (can manage students)</option>
+                <option value="superuser" data-superonly>Super-user (full access &amp; can create more super-users)</option>
               </select>
-              <p id="add-role-hint" class="hidden text-xs text-slate-600 mt-1.5">Only super-users can create administrators.</p>
+              <p id="add-role-hint" class="hidden text-xs text-slate-600 mt-1.5">Only super-users can create administrators or super-users.</p>
             </div>
           </div>
 
@@ -298,6 +407,31 @@ sitemap: false
     </section>
 
     <!-- ============================================================ -->
+    <!-- USER ACCESS MATRIX (user × course grid)                      -->
+    <!-- ============================================================ -->
+    <section id="access-matrix-section" class="hidden rounded-2xl bg-white border border-slate-200 shadow-sm overflow-hidden">
+      <div class="accent-stripe stripe-sky"></div>
+      <div class="p-8 md:p-10">
+        <div class="mb-7 flex items-center gap-4">
+          <div class="w-12 h-12 rounded-2xl bg-sky-100 text-sky-700 flex items-center justify-center text-2xl flex-shrink-0">📊</div>
+          <div>
+            <h2 class="text-2xl font-extrabold text-slate-900">📊 User Access Matrix</h2>
+            <p class="text-slate-600 text-sm mt-1">Who can see what — a quick visual cross-reference of every user and which courses they're entitled to.</p>
+          </div>
+        </div>
+        <div id="access-matrix-empty" class="hidden text-sm text-slate-500 italic text-center py-8">
+          No users yet — add your first user above ↑
+        </div>
+        <div id="access-matrix-wrap" class="access-matrix-wrap">
+          <table class="access-matrix" id="access-matrix-table">
+            <thead id="access-matrix-thead"></thead>
+            <tbody id="access-matrix-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
     <!-- PRIVILEGE MATRIX                                             -->
     <!-- ============================================================ -->
     <section id="matrix-section" class="hidden rounded-2xl bg-white border border-slate-200 shadow-md overflow-hidden">
@@ -360,8 +494,9 @@ sitemap: false
         <select id="edit-role" class="w-full px-4 py-3 rounded-lg bg-white border-2 border-slate-300 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 focus:outline-none text-slate-900 transition">
           <option value="student">Student</option>
           <option value="administrator" data-superonly>Administrator</option>
+          <option value="superuser" data-superonly>Super-user</option>
         </select>
-        <p id="edit-role-hint" class="hidden text-xs text-slate-600 mt-1.5">Only super-users can change role to administrator.</p>
+        <p id="edit-role-hint" class="hidden text-xs text-slate-600 mt-1.5">Only super-users can promote to administrator or super-user.</p>
       </div>
 
       <div>
@@ -543,6 +678,7 @@ sitemap: false
         $('change-pw-section').classList.remove('hidden');
         $('add-user-section').classList.remove('hidden');
         $('users-section').classList.remove('hidden');
+        $('access-matrix-section').classList.remove('hidden');
         $('matrix-section').classList.remove('hidden');
       } catch (e) {
         $('boot-state').innerHTML = `
@@ -782,6 +918,104 @@ sitemap: false
       document.querySelectorAll('[data-act]').forEach(btn => {
         btn.addEventListener('click', () => handleAction(btn.dataset.act, btn.dataset.email));
       });
+
+      // Keep the user×course Access Matrix in sync with this render.
+      renderAccessMatrix();
+    }
+
+    // ---------- User Access Matrix (user × course grid) ----------
+    function renderAccessMatrix() {
+      const wrap  = $('access-matrix-wrap');
+      const empty = $('access-matrix-empty');
+      const thead = $('access-matrix-thead');
+      const tbody = $('access-matrix-tbody');
+      if (!wrap || !empty || !thead || !tbody) return;
+
+      // Empty-state branch
+      if (!state.users.length) {
+        thead.innerHTML = '';
+        tbody.innerHTML = '';
+        wrap.classList.add('hidden');
+        empty.classList.remove('hidden');
+        return;
+      }
+      wrap.classList.remove('hidden');
+      empty.classList.add('hidden');
+
+      // Sorting matches renderUsers(): super-users → admins → students; alphabetical within.
+      const sorted = [...state.users].sort((a, b) => {
+        const ra = ROLE_ORDER[a.role] || 0, rb = ROLE_ORDER[b.role] || 0;
+        if (ra !== rb) return rb - ra;
+        return a.email.localeCompare(b.email);
+      });
+
+      // Courses are loaded from /api/admin/courses (state.courses). If empty, bail gracefully.
+      const courses = state.courses || [];
+      const totalCourses = courses.length;
+
+      // ----- Header row (sticky-top) -----
+      let headHtml = '<tr>';
+      headHtml += '<th class="am-user-col text-xs font-bold uppercase tracking-wider text-slate-900">User</th>';
+      for (const c of courses) {
+        const idShort = String(c.id || '').slice(0, 2); // e.g. "01"
+        const titleStr = (c.slug || c.id || '') + ' (' + (c.id || '') + ')';
+        headHtml += '<th class="am-course-col am-course-head" title="' + escapeHtml(titleStr) + '">'
+          + '<span class="am-emoji">' + escapeHtml(c.icon || '📘') + '</span>'
+          + '<span class="am-id">' + escapeHtml(idShort) + '</span>'
+          + '</th>';
+      }
+      headHtml += '<th class="am-total-col text-xs font-bold uppercase tracking-wider text-slate-900">Total</th>';
+      headHtml += '</tr>';
+      thead.innerHTML = headHtml;
+
+      // ----- Body rows -----
+      const yesCell = '<td class="am-cell-yes" title="Has access">✅</td>';
+      const noCell  = '<td class="am-cell-no" title="No access">·</td>';
+
+      const rows = new Array(sorted.length);
+      for (let i = 0; i < sorted.length; i++) {
+        const u = sorted[i];
+        const role = u.role || 'student';
+        const hasAll = (role === 'superuser' || role === 'administrator' || u.courses === '*');
+        const accessSet = hasAll
+          ? null
+          : new Set(Array.isArray(u.courses) ? u.courses : []);
+        const accessCount = hasAll ? totalCourses : accessSet.size;
+        const totalLabel = (hasAll && totalCourses > 0)
+          ? ('All ' + totalCourses)
+          : String(accessCount);
+
+        const initial = (userDisplayName(u) || u.email || '?').trim().charAt(0).toUpperCase();
+        const name = userDisplayName(u);
+
+        // First column: identity card
+        let row = '<tr>';
+        row += '<td class="am-user-col">'
+          +   '<div class="flex items-center gap-3">'
+          +     '<span class="am-avatar" aria-hidden="true">' + escapeHtml(initial || '?') + '</span>'
+          +     '<div class="min-w-0">'
+          +       '<div class="text-sm font-bold text-slate-900 truncate">' + escapeHtml(name) + '</div>'
+          +       '<div class="text-xs font-mono text-slate-500 truncate">' + escapeHtml(u.email || '') + '</div>'
+          +       '<div class="mt-1">' + roleBadge(role) + '</div>'
+          +     '</div>'
+          +   '</div>'
+          + '</td>';
+
+        // Course cells
+        if (hasAll) {
+          for (let j = 0; j < totalCourses; j++) row += yesCell;
+        } else {
+          for (let j = 0; j < totalCourses; j++) {
+            row += accessSet.has(courses[j].id) ? yesCell : noCell;
+          }
+        }
+
+        // Total column
+        row += '<td class="am-total-col text-sm text-slate-900">' + escapeHtml(totalLabel) + '</td>';
+        row += '</tr>';
+        rows[i] = row;
+      }
+      tbody.innerHTML = rows.join('');
     }
 
     // ---------- Actions ----------
@@ -951,12 +1185,10 @@ sitemap: false
       { capability: "Add or remove courses from a student",                   superuser: "✅", administrator: "✅", student: "❌" },
       // ----- Super-user ✅, others ❌ -----
       { capability: "Create administrator accounts",                          superuser: "✅", administrator: "❌", student: "❌" },
+      { capability: "Create / promote to super-user",                         superuser: "✅", administrator: "❌", student: "❌" },
       { capability: "Delete administrator accounts",                          superuser: "✅", administrator: "❌", student: "❌" },
       { capability: "Reset an administrator's password",                      superuser: "✅", administrator: "❌", student: "❌" },
       { capability: "Disable / re-enable an administrator account",           superuser: "✅", administrator: "❌", student: "❌" },
-      { capability: "Add or remove courses from an administrator",            superuser: "✅", administrator: "❌", student: "❌" },
-      // ----- Nobody (system-level) -----
-      { capability: "Promote anyone to super-user",                           superuser: "❌ (hardcoded in superusers.js — requires code deploy)", administrator: "❌", student: "❌" },
     ];
 
     function renderMatrix() {

@@ -39,6 +39,7 @@ export const PERMISSIONS = {
   // User management — what actions a role can perform on OTHER users
   create_student:              [ROLES.SUPERUSER, ROLES.ADMINISTRATOR],
   create_administrator:        [ROLES.SUPERUSER],
+  create_superuser:            [ROLES.SUPERUSER],   // NEW: super-user can promote/create another super-user
   delete_student:              [ROLES.SUPERUSER, ROLES.ADMINISTRATOR],
   delete_administrator:        [ROLES.SUPERUSER],
   reset_student_password:      [ROLES.SUPERUSER, ROLES.ADMINISTRATOR],
@@ -98,10 +99,8 @@ export const PRIVILEGE_MATRIX = [
   { capability: "Add or remove courses from a student",             superuser: "✅", administrator: "✅", student: "❌" },
   // ----- Super-user only ✅ -----
   { capability: "Create administrator accounts",                    superuser: "✅", administrator: "❌", student: "❌" },
+  { capability: "Create / promote to super-user",                   superuser: "✅", administrator: "❌", student: "❌" },
   { capability: "Delete administrator accounts",                    superuser: "✅", administrator: "❌", student: "❌" },
   { capability: "Reset an administrator's password",                superuser: "✅", administrator: "❌", student: "❌" },
   { capability: "Disable / re-enable an administrator account",     superuser: "✅", administrator: "❌", student: "❌" },
-  { capability: "Add or remove courses from an administrator",      superuser: "✅", administrator: "❌", student: "❌" },
-  // ----- Nobody (system-level) -----
-  { capability: "Promote anyone to super-user",                     superuser: "❌ (hardcoded in superusers.js — requires code deploy)", administrator: "❌", student: "❌" },
 ];
