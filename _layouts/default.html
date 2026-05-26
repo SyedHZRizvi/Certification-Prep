@@ -334,6 +334,13 @@
            class="bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-bold px-4 py-2 rounded-lg transition text-xs shadow-md hover:shadow-lg flex items-center gap-1.5">
           🏠 <span>HOME</span>
         </a>
+        <!-- ENROLL — prominent for anonymous visitors landing on a course page via SEO/search.
+             Visible to logged-in users too (they may want to add more courses). Distinct
+             emerald→teal→cyan gradient so it stands out as THE primary action. -->
+        <a href="{{ '/enroll/' | relative_url }}"
+           class="bg-gradient-to-r from-emerald-600 via-teal-500 to-cyan-600 hover:from-emerald-700 hover:via-teal-600 hover:to-cyan-700 text-white font-bold px-4 py-2 rounded-lg transition text-xs shadow-md hover:shadow-lg flex items-center gap-1.5">
+          ✍️ <span>ENROLL</span>
+        </a>
         <!-- Admin-only Manage Users button — revealed by JS for super-user / administrator -->
         <a href="{{ '/Manage-Users/' | relative_url }}"
            class="bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-700 hover:to-orange-700 text-white font-bold px-4 py-2 rounded-lg transition text-xs shadow-md flex items-center gap-1.5"
