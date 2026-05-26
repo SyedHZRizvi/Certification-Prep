@@ -20,8 +20,11 @@ import { isSuperUser } from "./lib/superusers.js";
 const SESSION_COOKIE = "ch_session";
 
 // Routes that are always public (no auth required, no entitlement check).
+// NOTE: the homepage "/" is NOT listed here — it's handled by the exact-match
+// check in isPublic() below. Including "/" in this list would be catastrophic
+// because pathname.startsWith("/") is true for EVERY path (the auth gate would
+// pass everything through as "public").
 const PUBLIC_PREFIXES = [
-  "/",                  // homepage
   "/login",             // login page
   "/api/auth/",         // request-link, verify, logout, me
   "/assets/",           // CSS, JS, fonts, images
