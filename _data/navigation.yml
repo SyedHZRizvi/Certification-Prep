@@ -110,6 +110,159 @@ tracks:
         slug: Flashcards
         single_file: true
 
+  - id: comptia-a-plus
+    title: CompTIA A+
+    subtitle: Core 1 + Core 2 (220-1101 / 220-1102)
+    color: blue
+    color_from: "#2563eb"
+    color_to: "#0891b2"
+    icon: "🛠️"
+    base: "/21-CompTIA-A-Plus/"
+    modules:
+      - { num: 1,  title: "Mobile Devices & BYOD",                slug: Module-01-Mobile-Devices }
+      - { num: 2,  title: "Networking Fundamentals",              slug: Module-02-Networking }
+      - { num: 3,  title: "Hardware: CPU, RAM, Storage, Power",   slug: Module-03-Hardware }
+      - { num: 4,  title: "Virtualization & Cloud Basics",        slug: Module-04-Virtualization-Cloud }
+      - { num: 5,  title: "Hardware & Network Troubleshooting",   slug: Module-05-Troubleshooting }
+      - { num: 6,  title: "Printers & Peripherals",               slug: Module-06-Printers }
+      - { num: 7,  title: "Operating Systems (Windows / macOS / Linux)", slug: Module-07-Operating-Systems }
+      - { num: 8,  title: "Security Fundamentals",                slug: Module-08-Security }
+      - { num: 9,  title: "Software Troubleshooting",             slug: Module-09-Software-Troubleshooting }
+      - { num: 10, title: "Operational Procedures",               slug: Module-10-Operational-Procedures }
+      - { num: 11, title: "Mobile / Application Troubleshooting", slug: Module-11-Mobile-Troubleshooting }
+      - { num: 12, title: "Documentation, Change & Disaster Recovery", slug: Module-12-Documentation-DR }
+    extras:
+      - { num: 13, title: "Practice Exam 1 (Core 1)",  slug: Practice-Exams/Practice-Exam-1, single_file: true }
+      - { num: 14, title: "Practice Exam 2 (Core 2)",  slug: Practice-Exams/Practice-Exam-2, single_file: true }
+      - { num: 15, title: "Final Mock Exam (90q / 90min)", slug: Practice-Exams/Final-Mock-Exam, single_file: true }
+      - { num: 16, title: "Master Flashcards", slug: Flashcards, single_file: true }
+
+  - id: comptia-network-plus
+    title: CompTIA Network+
+    subtitle: N10-009 Certification
+    color: blue
+    color_from: "#1d4ed8"
+    color_to: "#0ea5e9"
+    icon: "🌐"
+    base: "/22-CompTIA-Network-Plus/"
+    modules:
+      - { num: 1, title: "Networking Concepts & OSI Model",       slug: Module-01-Networking-Concepts }
+      - { num: 2, title: "TCP/IP & Subnetting",                   slug: Module-02-TCP-IP-Subnetting }
+      - { num: 3, title: "Routing & Switching",                   slug: Module-03-Routing-Switching }
+      - { num: 4, title: "Wireless & SOHO Networks",              slug: Module-04-Wireless }
+      - { num: 5, title: "Network Services & Cloud Connectivity", slug: Module-05-Services-Cloud }
+      - { num: 6, title: "Network Security Fundamentals",         slug: Module-06-Security }
+      - { num: 7, title: "Monitoring, Performance & Tools",       slug: Module-07-Monitoring-Tools }
+      - { num: 8, title: "Network Troubleshooting Methodology",   slug: Module-08-Troubleshooting }
+    extras:
+      - { num: 9,  title: "Practice Exam 1", slug: Practice-Exams/Practice-Exam-1, single_file: true }
+      - { num: 10, title: "Practice Exam 2", slug: Practice-Exams/Practice-Exam-2, single_file: true }
+      - { num: 11, title: "Final Mock Exam (90q / 90min)", slug: Practice-Exams/Final-Mock-Exam, single_file: true }
+      - { num: 12, title: "Master Flashcards", slug: Flashcards, single_file: true }
+
+  - id: comptia-linux-plus
+    title: CompTIA Linux+
+    subtitle: XK0-005 Certification
+    color: yellow
+    color_from: "#ca8a04"
+    color_to: "#f59e0b"
+    icon: "🐧"
+    base: "/23-CompTIA-Linux-Plus/"
+    modules:
+      - { num: 1, title: "Linux Boot, Init Systems & systemd",       slug: Module-01-Boot-Systemd }
+      - { num: 2, title: "Filesystem Layout & Permissions",          slug: Module-02-Filesystem-Permissions }
+      - { num: 3, title: "Package Management (apt / dnf / rpm)",     slug: Module-03-Package-Management }
+      - { num: 4, title: "Bash Scripting & Automation",              slug: Module-04-Bash-Scripting }
+      - { num: 5, title: "User & Group Management, sudo",            slug: Module-05-Users-Groups }
+      - { num: 6, title: "Networking, SSH & Firewalls",              slug: Module-06-Networking-SSH }
+      - { num: 7, title: "Kernel Modules, Devices & Hardware",       slug: Module-07-Kernel-Modules }
+      - { num: 8, title: "Linux Security & Hardening",               slug: Module-08-Security }
+    extras:
+      - { num: 9,  title: "Practice Exam 1", slug: Practice-Exams/Practice-Exam-1, single_file: true }
+      - { num: 10, title: "Practice Exam 2", slug: Practice-Exams/Practice-Exam-2, single_file: true }
+      - { num: 11, title: "Final Mock Exam (90q / 90min)", slug: Practice-Exams/Final-Mock-Exam, single_file: true }
+      - { num: 12, title: "Master Flashcards", slug: Flashcards, single_file: true }
+
+  - id: comptia-server-plus
+    title: CompTIA Server+
+    subtitle: SK0-005 Certification
+    color: slate
+    color_from: "#475569"
+    color_to: "#1e293b"
+    icon: "🗄️"
+    base: "/24-CompTIA-Server-Plus/"
+    modules:
+      - { num: 1, title: "Server Hardware & Components",           slug: Module-01-Server-Hardware }
+      - { num: 2, title: "Server Administration (Windows/Linux)",  slug: Module-02-Server-Administration }
+      - { num: 3, title: "Storage: RAID, SAN, NAS",                slug: Module-03-Storage }
+      - { num: 4, title: "Virtualization & Containers",            slug: Module-04-Virtualization }
+      - { num: 5, title: "Disaster Recovery & Backup",             slug: Module-05-Disaster-Recovery }
+      - { num: 6, title: "Server Security & Hardening",            slug: Module-06-Security }
+      - { num: 7, title: "Networking for Servers",                 slug: Module-07-Networking }
+      - { num: 8, title: "Troubleshooting & Documentation",        slug: Module-08-Troubleshooting }
+    extras:
+      - { num: 9,  title: "Practice Exam 1", slug: Practice-Exams/Practice-Exam-1, single_file: true }
+      - { num: 10, title: "Practice Exam 2", slug: Practice-Exams/Practice-Exam-2, single_file: true }
+      - { num: 11, title: "Final Mock Exam (90q / 90min)", slug: Practice-Exams/Final-Mock-Exam, single_file: true }
+      - { num: 12, title: "Master Flashcards", slug: Flashcards, single_file: true }
+
+  - id: secplus
+    title: CompTIA Security+
+    subtitle: SY0-701 Cybersecurity Certification
+    color: red
+    color_from: "#dc2626"
+    color_to: "#7f1d1d"
+    icon: "🛡️"
+    base: "/09-CompTIA-Security-Plus/"
+    modules:
+      - num: 1
+        title: Security Fundamentals
+        slug: Module-01-Security-Fundamentals
+      - num: 2
+        title: Cryptography & PKI
+        slug: Module-02-Cryptography-PKI
+      - num: 3
+        title: Identity & Access Management
+        slug: Module-03-Identity-Access-Management
+      - num: 4
+        title: Threats & Threat Actors
+        slug: Module-04-Threats-Threat-Actors
+      - num: 5
+        title: Vulnerabilities & Attacks
+        slug: Module-05-Vulnerabilities-Attacks
+      - num: 6
+        title: Network Security
+        slug: Module-06-Network-Security
+      - num: 7
+        title: Endpoint, Mobile & Cloud Security
+        slug: Module-07-Endpoint-Mobile-Cloud-Security
+      - num: 8
+        title: Security Operations
+        slug: Module-08-Security-Operations
+      - num: 9
+        title: GRC, Risk & Compliance
+        slug: Module-09-GRC-Risk-Compliance
+      - num: 10
+        title: Application & Data Security
+        slug: Module-10-Application-Data-Security
+    extras:
+      - num: 11
+        title: Practice Exam 1
+        slug: Practice-Exams/Practice-Exam-1
+        single_file: true
+      - num: 12
+        title: Practice Exam 2
+        slug: Practice-Exams/Practice-Exam-2
+        single_file: true
+      - num: 13
+        title: Final Mock Exam (90q / 90min + PBQs)
+        slug: Practice-Exams/Final-Mock-Exam
+        single_file: true
+      - num: 14
+        title: Master Flashcards
+        slug: Flashcards
+        single_file: true
+
   - id: aws-clp
     title: AWS Cloud Practitioner
     subtitle: CLF-C02 Foundation Certification
@@ -422,113 +575,76 @@ tracks:
         slug: Flashcards
         single_file: true
 
-  - id: secplus
-    title: CompTIA Security+
-    subtitle: SY0-701 Cybersecurity Certification
-    color: red
-    color_from: "#dc2626"
-    color_to: "#7f1d1d"
-    icon: "🛡️"
-    base: "/09-CompTIA-Security-Plus/"
+  - id: windows-server-hybrid
+    title: Windows Server Hybrid Admin
+    subtitle: AZ-800 + AZ-801 (Microsoft Associate)
+    color: blue
+    color_from: "#1e40af"
+    color_to: "#06b6d4"
+    icon: "🪟"
+    base: "/25-Windows-Server-Hybrid-Admin/"
     modules:
-      - num: 1
-        title: Security Fundamentals
-        slug: Module-01-Security-Fundamentals
-      - num: 2
-        title: Cryptography & PKI
-        slug: Module-02-Cryptography-PKI
-      - num: 3
-        title: Identity & Access Management
-        slug: Module-03-Identity-Access-Management
-      - num: 4
-        title: Threats & Threat Actors
-        slug: Module-04-Threats-Threat-Actors
-      - num: 5
-        title: Vulnerabilities & Attacks
-        slug: Module-05-Vulnerabilities-Attacks
-      - num: 6
-        title: Network Security
-        slug: Module-06-Network-Security
-      - num: 7
-        title: Endpoint, Mobile & Cloud Security
-        slug: Module-07-Endpoint-Mobile-Cloud-Security
-      - num: 8
-        title: Security Operations
-        slug: Module-08-Security-Operations
-      - num: 9
-        title: GRC, Risk & Compliance
-        slug: Module-09-GRC-Risk-Compliance
-      - num: 10
-        title: Application & Data Security
-        slug: Module-10-Application-Data-Security
+      - { num: 1,  title: "Active Directory Domain Services",      slug: Module-01-Active-Directory }
+      - { num: 2,  title: "Identity & Entra ID Hybrid Integration", slug: Module-02-Identity-Entra }
+      - { num: 3,  title: "Networking, DNS & DHCP",                slug: Module-03-Networking-DNS }
+      - { num: 4,  title: "File Servers, Storage & Storage Spaces", slug: Module-04-File-Storage }
+      - { num: 5,  title: "Hyper-V & Virtualization",              slug: Module-05-HyperV }
+      - { num: 6,  title: "Hybrid Cloud with Azure Arc",           slug: Module-06-Azure-Arc }
+      - { num: 7,  title: "Azure Monitor & Hybrid Monitoring",     slug: Module-07-Azure-Monitor }
+      - { num: 8,  title: "Server Security & Defender",            slug: Module-08-Security-Defender }
+      - { num: 9,  title: "Backup, ASR & Migration",               slug: Module-09-Backup-Migration }
+      - { num: 10, title: "PowerShell, DSC & Automation",          slug: Module-10-PowerShell-Automation }
     extras:
-      - num: 11
-        title: Practice Exam 1
-        slug: Practice-Exams/Practice-Exam-1
-        single_file: true
-      - num: 12
-        title: Practice Exam 2
-        slug: Practice-Exams/Practice-Exam-2
-        single_file: true
-      - num: 13
-        title: Final Mock Exam (90q / 90min + PBQs)
-        slug: Practice-Exams/Final-Mock-Exam
-        single_file: true
-      - num: 14
-        title: Master Flashcards
-        slug: Flashcards
-        single_file: true
+      - { num: 11, title: "Practice Exam 1 (AZ-800)", slug: Practice-Exams/Practice-Exam-1, single_file: true }
+      - { num: 12, title: "Practice Exam 2 (AZ-801)", slug: Practice-Exams/Practice-Exam-2, single_file: true }
+      - { num: 13, title: "Final Mock Exam (combined)", slug: Practice-Exams/Final-Mock-Exam, single_file: true }
+      - { num: 14, title: "Master Flashcards", slug: Flashcards, single_file: true }
 
-  - id: cpim
-    title: ASCM CPIM
-    subtitle: Planning & Inventory Management
+  - id: ms-endpoint-admin
+    title: Microsoft Endpoint Administrator
+    subtitle: MD-102 Certification
     color: indigo
-    color_from: "#4f46e5"
-    color_to: "#3730a3"
-    icon: "🏭"
-    base: "/11-ASCM-CPIM/"
+    color_from: "#4338ca"
+    color_to: "#7c3aed"
+    icon: "💻"
+    base: "/26-Microsoft-Endpoint-Admin/"
     modules:
-      - num: 1
-        title: Manufacturing Strategy
-        slug: Module-01-Manufacturing-Strategy
-      - num: 2
-        title: Demand Planning & Forecasting
-        slug: Module-02-Demand-Planning-Forecasting
-      - num: 3
-        title: S&OP
-        slug: Module-03-SOP-Sales-Operations-Planning
-      - num: 4
-        title: MPS & MRP
-        slug: Module-04-Master-Production-Scheduling-MRP
-      - num: 5
-        title: Capacity Planning
-        slug: Module-05-Capacity-Planning
-      - num: 6
-        title: Inventory Management
-        slug: Module-06-Inventory-Management
-      - num: 7
-        title: Production Activity Control
-        slug: Module-07-Production-Activity-Control
-      - num: 8
-        title: Quality, Lean & CI
-        slug: Module-08-Quality-Lean-CI
+      - { num: 1, title: "Modern Workplace & Endpoint Strategy",    slug: Module-01-Modern-Workplace }
+      - { num: 2, title: "Windows 11 Deployment & Imaging",         slug: Module-02-Windows-11-Deployment }
+      - { num: 3, title: "Microsoft Intune Fundamentals",           slug: Module-03-Intune }
+      - { num: 4, title: "Device Enrollment & Compliance",          slug: Module-04-Enrollment-Compliance }
+      - { num: 5, title: "Application Deployment & Configuration",  slug: Module-05-App-Deployment }
+      - { num: 6, title: "Endpoint Security & Defender for Endpoint", slug: Module-06-Endpoint-Security }
+      - { num: 7, title: "Windows Update for Business & Servicing", slug: Module-07-Windows-Update }
+      - { num: 8, title: "Monitoring, Reporting & Troubleshooting", slug: Module-08-Monitoring }
     extras:
-      - num: 9
-        title: Practice Exam 1
-        slug: Practice-Exams/Practice-Exam-1
-        single_file: true
-      - num: 10
-        title: Practice Exam 2
-        slug: Practice-Exams/Practice-Exam-2
-        single_file: true
-      - num: 11
-        title: Final Mock Exam (150q / 210min)
-        slug: Practice-Exams/Final-Mock-Exam
-        single_file: true
-      - num: 12
-        title: Master Flashcards
-        slug: Flashcards
-        single_file: true
+      - { num: 9,  title: "Practice Exam 1", slug: Practice-Exams/Practice-Exam-1, single_file: true }
+      - { num: 10, title: "Practice Exam 2", slug: Practice-Exams/Practice-Exam-2, single_file: true }
+      - { num: 11, title: "Final Mock Exam (50q / 100min)", slug: Practice-Exams/Final-Mock-Exam, single_file: true }
+      - { num: 12, title: "Master Flashcards", slug: Flashcards, single_file: true }
+
+  - id: ms-identity-access
+    title: Microsoft Identity & Access Admin
+    subtitle: SC-300 Certification
+    color: purple
+    color_from: "#7e22ce"
+    color_to: "#ec4899"
+    icon: "🪪"
+    base: "/27-Microsoft-Identity-Access-Admin/"
+    modules:
+      - { num: 1, title: "Entra ID Fundamentals (formerly Azure AD)",    slug: Module-01-Entra-ID-Fundamentals }
+      - { num: 2, title: "Users, Groups & External Identities",         slug: Module-02-Users-Groups }
+      - { num: 3, title: "Authentication: MFA & Passwordless",          slug: Module-03-Authentication }
+      - { num: 4, title: "Conditional Access & Identity Protection",    slug: Module-04-Conditional-Access }
+      - { num: 5, title: "Application Registration & SSO",              slug: Module-05-Apps-SSO }
+      - { num: 6, title: "Identity Governance & PIM",                   slug: Module-06-Governance-PIM }
+      - { num: 7, title: "Hybrid Identity with AD Connect / Cloud Sync", slug: Module-07-Hybrid-Identity }
+      - { num: 8, title: "Monitoring, Reporting & Threat Response",     slug: Module-08-Monitoring-Threats }
+    extras:
+      - { num: 9,  title: "Practice Exam 1", slug: Practice-Exams/Practice-Exam-1, single_file: true }
+      - { num: 10, title: "Practice Exam 2", slug: Practice-Exams/Practice-Exam-2, single_file: true }
+      - { num: 11, title: "Final Mock Exam (50q / 100min)", slug: Practice-Exams/Final-Mock-Exam, single_file: true }
+      - { num: 12, title: "Master Flashcards", slug: Flashcards, single_file: true }
 
   - id: cscp
     title: ASCM CSCP
@@ -583,6 +699,57 @@ tracks:
         slug: Practice-Exams/Final-Mock-Exam
         single_file: true
       - num: 14
+        title: Master Flashcards
+        slug: Flashcards
+        single_file: true
+
+  - id: cpim
+    title: ASCM CPIM
+    subtitle: Planning & Inventory Management
+    color: indigo
+    color_from: "#4f46e5"
+    color_to: "#3730a3"
+    icon: "🏭"
+    base: "/11-ASCM-CPIM/"
+    modules:
+      - num: 1
+        title: Manufacturing Strategy
+        slug: Module-01-Manufacturing-Strategy
+      - num: 2
+        title: Demand Planning & Forecasting
+        slug: Module-02-Demand-Planning-Forecasting
+      - num: 3
+        title: S&OP
+        slug: Module-03-SOP-Sales-Operations-Planning
+      - num: 4
+        title: MPS & MRP
+        slug: Module-04-Master-Production-Scheduling-MRP
+      - num: 5
+        title: Capacity Planning
+        slug: Module-05-Capacity-Planning
+      - num: 6
+        title: Inventory Management
+        slug: Module-06-Inventory-Management
+      - num: 7
+        title: Production Activity Control
+        slug: Module-07-Production-Activity-Control
+      - num: 8
+        title: Quality, Lean & CI
+        slug: Module-08-Quality-Lean-CI
+    extras:
+      - num: 9
+        title: Practice Exam 1
+        slug: Practice-Exams/Practice-Exam-1
+        single_file: true
+      - num: 10
+        title: Practice Exam 2
+        slug: Practice-Exams/Practice-Exam-2
+        single_file: true
+      - num: 11
+        title: Final Mock Exam (150q / 210min)
+        slug: Practice-Exams/Final-Mock-Exam
+        single_file: true
+      - num: 12
         title: Master Flashcards
         slug: Flashcards
         single_file: true
@@ -1075,174 +1242,6 @@ tracks:
         title: Master Flashcards
         slug: Flashcards
         single_file: true
-
-  # ============== IT SYSTEMS ADMINISTRATION TRACK (courses 21–27) ==============
-  - id: comptia-a-plus
-    title: CompTIA A+
-    subtitle: Core 1 + Core 2 (220-1101 / 220-1102)
-    color: blue
-    color_from: "#2563eb"
-    color_to: "#0891b2"
-    icon: "🛠️"
-    base: "/21-CompTIA-A-Plus/"
-    modules:
-      - { num: 1,  title: "Mobile Devices & BYOD",                slug: Module-01-Mobile-Devices }
-      - { num: 2,  title: "Networking Fundamentals",              slug: Module-02-Networking }
-      - { num: 3,  title: "Hardware: CPU, RAM, Storage, Power",   slug: Module-03-Hardware }
-      - { num: 4,  title: "Virtualization & Cloud Basics",        slug: Module-04-Virtualization-Cloud }
-      - { num: 5,  title: "Hardware & Network Troubleshooting",   slug: Module-05-Troubleshooting }
-      - { num: 6,  title: "Printers & Peripherals",               slug: Module-06-Printers }
-      - { num: 7,  title: "Operating Systems (Windows / macOS / Linux)", slug: Module-07-Operating-Systems }
-      - { num: 8,  title: "Security Fundamentals",                slug: Module-08-Security }
-      - { num: 9,  title: "Software Troubleshooting",             slug: Module-09-Software-Troubleshooting }
-      - { num: 10, title: "Operational Procedures",               slug: Module-10-Operational-Procedures }
-      - { num: 11, title: "Mobile / Application Troubleshooting", slug: Module-11-Mobile-Troubleshooting }
-      - { num: 12, title: "Documentation, Change & Disaster Recovery", slug: Module-12-Documentation-DR }
-    extras:
-      - { num: 13, title: "Practice Exam 1 (Core 1)",  slug: Practice-Exams/Practice-Exam-1, single_file: true }
-      - { num: 14, title: "Practice Exam 2 (Core 2)",  slug: Practice-Exams/Practice-Exam-2, single_file: true }
-      - { num: 15, title: "Final Mock Exam (90q / 90min)", slug: Practice-Exams/Final-Mock-Exam, single_file: true }
-      - { num: 16, title: "Master Flashcards", slug: Flashcards, single_file: true }
-
-  - id: comptia-network-plus
-    title: CompTIA Network+
-    subtitle: N10-009 Certification
-    color: blue
-    color_from: "#1d4ed8"
-    color_to: "#0ea5e9"
-    icon: "🌐"
-    base: "/22-CompTIA-Network-Plus/"
-    modules:
-      - { num: 1, title: "Networking Concepts & OSI Model",       slug: Module-01-Networking-Concepts }
-      - { num: 2, title: "TCP/IP & Subnetting",                   slug: Module-02-TCP-IP-Subnetting }
-      - { num: 3, title: "Routing & Switching",                   slug: Module-03-Routing-Switching }
-      - { num: 4, title: "Wireless & SOHO Networks",              slug: Module-04-Wireless }
-      - { num: 5, title: "Network Services & Cloud Connectivity", slug: Module-05-Services-Cloud }
-      - { num: 6, title: "Network Security Fundamentals",         slug: Module-06-Security }
-      - { num: 7, title: "Monitoring, Performance & Tools",       slug: Module-07-Monitoring-Tools }
-      - { num: 8, title: "Network Troubleshooting Methodology",   slug: Module-08-Troubleshooting }
-    extras:
-      - { num: 9,  title: "Practice Exam 1", slug: Practice-Exams/Practice-Exam-1, single_file: true }
-      - { num: 10, title: "Practice Exam 2", slug: Practice-Exams/Practice-Exam-2, single_file: true }
-      - { num: 11, title: "Final Mock Exam (90q / 90min)", slug: Practice-Exams/Final-Mock-Exam, single_file: true }
-      - { num: 12, title: "Master Flashcards", slug: Flashcards, single_file: true }
-
-  - id: comptia-linux-plus
-    title: CompTIA Linux+
-    subtitle: XK0-005 Certification
-    color: yellow
-    color_from: "#ca8a04"
-    color_to: "#f59e0b"
-    icon: "🐧"
-    base: "/23-CompTIA-Linux-Plus/"
-    modules:
-      - { num: 1, title: "Linux Boot, Init Systems & systemd",       slug: Module-01-Boot-Systemd }
-      - { num: 2, title: "Filesystem Layout & Permissions",          slug: Module-02-Filesystem-Permissions }
-      - { num: 3, title: "Package Management (apt / dnf / rpm)",     slug: Module-03-Package-Management }
-      - { num: 4, title: "Bash Scripting & Automation",              slug: Module-04-Bash-Scripting }
-      - { num: 5, title: "User & Group Management, sudo",            slug: Module-05-Users-Groups }
-      - { num: 6, title: "Networking, SSH & Firewalls",              slug: Module-06-Networking-SSH }
-      - { num: 7, title: "Kernel Modules, Devices & Hardware",       slug: Module-07-Kernel-Modules }
-      - { num: 8, title: "Linux Security & Hardening",               slug: Module-08-Security }
-    extras:
-      - { num: 9,  title: "Practice Exam 1", slug: Practice-Exams/Practice-Exam-1, single_file: true }
-      - { num: 10, title: "Practice Exam 2", slug: Practice-Exams/Practice-Exam-2, single_file: true }
-      - { num: 11, title: "Final Mock Exam (90q / 90min)", slug: Practice-Exams/Final-Mock-Exam, single_file: true }
-      - { num: 12, title: "Master Flashcards", slug: Flashcards, single_file: true }
-
-  - id: comptia-server-plus
-    title: CompTIA Server+
-    subtitle: SK0-005 Certification
-    color: slate
-    color_from: "#475569"
-    color_to: "#1e293b"
-    icon: "🗄️"
-    base: "/24-CompTIA-Server-Plus/"
-    modules:
-      - { num: 1, title: "Server Hardware & Components",           slug: Module-01-Server-Hardware }
-      - { num: 2, title: "Server Administration (Windows/Linux)",  slug: Module-02-Server-Administration }
-      - { num: 3, title: "Storage: RAID, SAN, NAS",                slug: Module-03-Storage }
-      - { num: 4, title: "Virtualization & Containers",            slug: Module-04-Virtualization }
-      - { num: 5, title: "Disaster Recovery & Backup",             slug: Module-05-Disaster-Recovery }
-      - { num: 6, title: "Server Security & Hardening",            slug: Module-06-Security }
-      - { num: 7, title: "Networking for Servers",                 slug: Module-07-Networking }
-      - { num: 8, title: "Troubleshooting & Documentation",        slug: Module-08-Troubleshooting }
-    extras:
-      - { num: 9,  title: "Practice Exam 1", slug: Practice-Exams/Practice-Exam-1, single_file: true }
-      - { num: 10, title: "Practice Exam 2", slug: Practice-Exams/Practice-Exam-2, single_file: true }
-      - { num: 11, title: "Final Mock Exam (90q / 90min)", slug: Practice-Exams/Final-Mock-Exam, single_file: true }
-      - { num: 12, title: "Master Flashcards", slug: Flashcards, single_file: true }
-
-  - id: windows-server-hybrid
-    title: Windows Server Hybrid Admin
-    subtitle: AZ-800 + AZ-801 (Microsoft Associate)
-    color: blue
-    color_from: "#1e40af"
-    color_to: "#06b6d4"
-    icon: "🪟"
-    base: "/25-Windows-Server-Hybrid-Admin/"
-    modules:
-      - { num: 1,  title: "Active Directory Domain Services",      slug: Module-01-Active-Directory }
-      - { num: 2,  title: "Identity & Entra ID Hybrid Integration", slug: Module-02-Identity-Entra }
-      - { num: 3,  title: "Networking, DNS & DHCP",                slug: Module-03-Networking-DNS }
-      - { num: 4,  title: "File Servers, Storage & Storage Spaces", slug: Module-04-File-Storage }
-      - { num: 5,  title: "Hyper-V & Virtualization",              slug: Module-05-HyperV }
-      - { num: 6,  title: "Hybrid Cloud with Azure Arc",           slug: Module-06-Azure-Arc }
-      - { num: 7,  title: "Azure Monitor & Hybrid Monitoring",     slug: Module-07-Azure-Monitor }
-      - { num: 8,  title: "Server Security & Defender",            slug: Module-08-Security-Defender }
-      - { num: 9,  title: "Backup, ASR & Migration",               slug: Module-09-Backup-Migration }
-      - { num: 10, title: "PowerShell, DSC & Automation",          slug: Module-10-PowerShell-Automation }
-    extras:
-      - { num: 11, title: "Practice Exam 1 (AZ-800)", slug: Practice-Exams/Practice-Exam-1, single_file: true }
-      - { num: 12, title: "Practice Exam 2 (AZ-801)", slug: Practice-Exams/Practice-Exam-2, single_file: true }
-      - { num: 13, title: "Final Mock Exam (combined)", slug: Practice-Exams/Final-Mock-Exam, single_file: true }
-      - { num: 14, title: "Master Flashcards", slug: Flashcards, single_file: true }
-
-  - id: ms-endpoint-admin
-    title: Microsoft Endpoint Administrator
-    subtitle: MD-102 Certification
-    color: indigo
-    color_from: "#4338ca"
-    color_to: "#7c3aed"
-    icon: "💻"
-    base: "/26-Microsoft-Endpoint-Admin/"
-    modules:
-      - { num: 1, title: "Modern Workplace & Endpoint Strategy",    slug: Module-01-Modern-Workplace }
-      - { num: 2, title: "Windows 11 Deployment & Imaging",         slug: Module-02-Windows-11-Deployment }
-      - { num: 3, title: "Microsoft Intune Fundamentals",           slug: Module-03-Intune }
-      - { num: 4, title: "Device Enrollment & Compliance",          slug: Module-04-Enrollment-Compliance }
-      - { num: 5, title: "Application Deployment & Configuration",  slug: Module-05-App-Deployment }
-      - { num: 6, title: "Endpoint Security & Defender for Endpoint", slug: Module-06-Endpoint-Security }
-      - { num: 7, title: "Windows Update for Business & Servicing", slug: Module-07-Windows-Update }
-      - { num: 8, title: "Monitoring, Reporting & Troubleshooting", slug: Module-08-Monitoring }
-    extras:
-      - { num: 9,  title: "Practice Exam 1", slug: Practice-Exams/Practice-Exam-1, single_file: true }
-      - { num: 10, title: "Practice Exam 2", slug: Practice-Exams/Practice-Exam-2, single_file: true }
-      - { num: 11, title: "Final Mock Exam (50q / 100min)", slug: Practice-Exams/Final-Mock-Exam, single_file: true }
-      - { num: 12, title: "Master Flashcards", slug: Flashcards, single_file: true }
-
-  - id: ms-identity-access
-    title: Microsoft Identity & Access Admin
-    subtitle: SC-300 Certification
-    color: purple
-    color_from: "#7e22ce"
-    color_to: "#ec4899"
-    icon: "🪪"
-    base: "/27-Microsoft-Identity-Access-Admin/"
-    modules:
-      - { num: 1, title: "Entra ID Fundamentals (formerly Azure AD)",    slug: Module-01-Entra-ID-Fundamentals }
-      - { num: 2, title: "Users, Groups & External Identities",         slug: Module-02-Users-Groups }
-      - { num: 3, title: "Authentication: MFA & Passwordless",          slug: Module-03-Authentication }
-      - { num: 4, title: "Conditional Access & Identity Protection",    slug: Module-04-Conditional-Access }
-      - { num: 5, title: "Application Registration & SSO",              slug: Module-05-Apps-SSO }
-      - { num: 6, title: "Identity Governance & PIM",                   slug: Module-06-Governance-PIM }
-      - { num: 7, title: "Hybrid Identity with AD Connect / Cloud Sync", slug: Module-07-Hybrid-Identity }
-      - { num: 8, title: "Monitoring, Reporting & Threat Response",     slug: Module-08-Monitoring-Threats }
-    extras:
-      - { num: 9,  title: "Practice Exam 1", slug: Practice-Exams/Practice-Exam-1, single_file: true }
-      - { num: 10, title: "Practice Exam 2", slug: Practice-Exams/Practice-Exam-2, single_file: true }
-      - { num: 11, title: "Final Mock Exam (50q / 100min)", slug: Practice-Exams/Final-Mock-Exam, single_file: true }
-      - { num: 12, title: "Master Flashcards", slug: Flashcards, single_file: true }
 
 # Sub-pages within each module
 module_pages:
