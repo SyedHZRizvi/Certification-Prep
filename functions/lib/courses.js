@@ -1,5 +1,5 @@
 /**
- * Canonical list of all 20 courses on The Cert Hub.
+ * Canonical list of all 27 courses on The Cert Hub.
  *
  * Must stay in sync with EXPECTED_COURSES in scripts/verify-baseline.py.
  *

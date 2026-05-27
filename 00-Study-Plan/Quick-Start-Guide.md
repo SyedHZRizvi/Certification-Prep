@@ -1,6 +1,6 @@
 # 🚀 Quick Start Guide
 
-> **Goal of this page:** Get you *doing* something within 10 minutes — no matter which of the 20 certifications and tracks you're chasing.
+> **Goal of this page:** Get you *doing* something within 10 minutes — no matter which of the 27 certifications and tracks you're chasing.
 >
 > 🏆 **Looking for the certification you want to chase?** See the [**International Certifications Catalog**](../Resources/International-Certifications/) for every certification this site maps to — with issuing body, fee, exam format, registration procedure, and renewal rules.
 
@@ -11,7 +11,7 @@
 
 ## 🎯 Pick Your Starting Course (2 minutes)
 
-Pick ONE. The detailed week-by-week plan in [12-Week Study Plan](./12-Week-Study-Plan.md) is written for the Scrum→PMP path, but the *principles* (spaced repetition, interleaving, mocks) work for every track. All 20 options are listed below — grouped by category, with realistic time-to-cert estimates.
+Pick ONE. The detailed week-by-week plan in [12-Week Study Plan](./12-Week-Study-Plan.md) is written for the Scrum→PMP path, but the *principles* (spaced repetition, interleaving, mocks) work for every track. All 27 options are listed below — grouped by category, with realistic time-to-cert estimates.
 
 ### Project & Agile
 - **Path A — "I want Scrum Master ASAP"** → [Scrum Master Track](../01-Scrum-Master/README.md) · Plan: ~4 weeks.
@@ -30,6 +30,15 @@ Pick ONE. The detailed week-by-week plan in [12-Week Study Plan](./12-Week-Study
 
 ### Security
 - **Path J — "Cyber career launch"** → [CompTIA Security+ (SY0-701)](../09-CompTIA-Security-Plus/README.md) · Plan: ~10-12 weeks.
+
+### IT Systems Administration
+- **Path J1 — "Help-desk / desktop technician on-ramp"** → [CompTIA A+ Core 1 + Core 2 (220-1101/1102)](../21-CompTIA-A-Plus/README.md) · Plan: ~10-14 weeks. The single most-required first cert for IT support roles.
+- **Path J2 — "Network technician / NOC engineer"** → [CompTIA Network+ (N10-009)](../22-CompTIA-Network-Plus/README.md) · Plan: ~8-12 weeks. Best done after A+ if you're new; standalone if you already work in IT.
+- **Path J3 — "Linux administrator / DevOps support"** → [CompTIA Linux+ (XK0-005)](../23-CompTIA-Linux-Plus/README.md) · Plan: ~10-12 weeks. Vendor-neutral Linux fundamentals that map to RHEL, Ubuntu, Debian, SUSE.
+- **Path J4 — "Server administrator (Windows + Linux)"** → [CompTIA Server+ (SK0-005)](../24-CompTIA-Server-Plus/README.md) · Plan: ~10-12 weeks. Vendor-neutral server hardware, virtualization, storage, DR.
+- **Path J5 — "Enterprise Windows admin (hybrid AD + Azure)"** → [Windows Server Hybrid Admin (AZ-800/801)](../25-Windows-Server-Hybrid-Admin/README.md) · Plan: ~12-14 weeks. AD DS, hybrid identity, Azure Arc, failover clustering. Two exams.
+- **Path J6 — "Microsoft Intune / endpoint manager"** → [Microsoft Endpoint Administrator (MD-102)](../26-Microsoft-Endpoint-Admin/README.md) · Plan: ~8-10 weeks. Modern endpoint management — Intune, Autopilot, compliance, Defender for Endpoint.
+- **Path J7 — "Microsoft Identity & Access engineer"** → [Microsoft Identity & Access Admin (SC-300)](../27-Microsoft-Identity-Access-Admin/README.md) · Plan: ~10-12 weeks. Entra ID, conditional access, identity governance, privileged identity management.
 
 ### Supply Chain & Procurement
 - **Path K — "Broad supply chain credential"** → [ASCM CSCP](../10-ASCM-CSCP/README.md) · Plan: ~12-16 weeks.

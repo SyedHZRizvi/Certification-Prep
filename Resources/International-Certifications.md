@@ -5,7 +5,7 @@ title: International Certifications Catalog
 
 # 🏆 International Certifications Catalog
 
-> Every international cert that the 20 courses on this site map to — with issuing body, exam format, fee in USD, full registration procedure, designation earned, market standing, and renewal rules.
+> Every international cert that the 27 courses on this site map to — with issuing body, exam format, fee in USD, full registration procedure, designation earned, market standing, and renewal rules.
 
 **Resources** · Certifications Catalog
 *Last updated: 2026-05*
@@ -20,7 +20,7 @@ An "industry certification" is a credential issued by a recognized standards bod
 2. **Real proctoring or honor-system with a recognized brand.** Pearson VUE, Prometric, OnVUE, vendor portals (HubSpot, Google Skillshop, Meta Blueprint). The exam isn't just a marketing quiz.
 3. **Documented market standing.** You can find recent salary surveys (Robert Half, PMI Earning Power, Global Knowledge) listing the cert. You can find recruiters in your city searching for it on LinkedIn.
 
-**How to use this page:** Every section starts with one of our 20 courses. After you complete that course, you're ready to sit for the certifications listed under it — with the issuing body, exam format, fee in USD, full registration procedure, the benefits the credential unlocks, the designation you carry after passing, and the renewal rules.
+**How to use this page:** Every section starts with one of our 27 courses. After you complete that course, you're ready to sit for the certifications listed under it — with the issuing body, exam format, fee in USD, full registration procedure, the benefits the credential unlocks, the designation you carry after passing, and the renewal rules.
 
 Pick the course. Finish it. Pay for the exam. Walk in confident.
 
@@ -728,7 +728,7 @@ Stay away from any cert sold by an organization without credible alumni on Linke
 
 You've chosen your cert. Now go earn it:
 
-1. ☑️ **Open the matching course README** — pick from the [20 tracks](../) on the homepage
+1. ☑️ **Open the matching course README** — pick from the [27 tracks](../) on the homepage
 2. ☑️ **Read the [Quick Start Guide](../00-Study-Plan/Quick-Start-Guide/)** if you haven't already
 3. ☑️ **Follow the [12-Week Study Plan](../00-Study-Plan/12-Week-Study-Plan/)** — adaptable to any cert
 4. ☑️ **Bookmark [Exam Day Tips](../00-Study-Plan/Exam-Day-Tips/)** — read it the morning of your exam

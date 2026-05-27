@@ -1,13 +1,13 @@
-# 🎓 The Cert Hub — 13 Certification Study Courses
+# 🎓 The Cert Hub — 27 Certification Study Courses
 
-![Certifications: 13](https://img.shields.io/badge/Certifications-13-blueviolet.svg)
-![Modules: 112](https://img.shields.io/badge/Modules-112-blue.svg)
-![Mock Exams: 39](https://img.shields.io/badge/Mock_Exams-39-orange.svg)
-![Questions: 8000+](https://img.shields.io/badge/Practice_Questions-8%2C000%2B-green.svg)
+![Certifications: 27](https://img.shields.io/badge/Certifications-27-blueviolet.svg)
+![Modules: 240](https://img.shields.io/badge/Modules-240-blue.svg)
+![Mock Exams: 81](https://img.shields.io/badge/Mock_Exams-81-orange.svg)
+![Questions: 11000+](https://img.shields.io/badge/Practice_Questions-11%2C000%2B-green.svg)
 
-## 🌐 [Visit the live course site →](https://syedhzrizvi.github.io/Certification-Prep/)
+## 🌐 [Visit the live course site →](https://cert-hub.pages.dev/)
 
-This repository contains the raw markdown for **13 story-driven self-study courses** across project management, cloud, AI/GenAI, cybersecurity, and supply chain. The polished site is at **[syedhzrizvi.github.io/Certification-Prep](https://syedhzrizvi.github.io/Certification-Prep/)** — same content, prettier UI.
+This repository contains the raw markdown for **27 story-driven self-study courses** across project management, IT systems administration, cloud, AI/GenAI, cybersecurity, supply chain, AI-based digital marketing, and Bitcoin/e-commerce. The polished site is at **[cert-hub.pages.dev](https://cert-hub.pages.dev/)** — same content, prettier UI, auth-gated.
 
 ---
 
@@ -29,37 +29,61 @@ Each track is a **guided journey** built on three pillars:
 
 ---
 
-## 🗺️ All 13 Tracks
+## 🗺️ All 27 Tracks
 
-### 📊 Project Management — flagship tracks (the foundation)
+### 🧭 Project Management
 
 | # | Folder | Cert | Modules | Mock-Exam Length |
 |---|--------|------|---------|------------------|
 | 1 | [`01-Scrum-Master/`](./01-Scrum-Master/README.md) | Professional Scrum Master I (PSM I) | 8 | 40 Q / 30 min |
 | 2 | [`02-PMP/`](./02-PMP/README.md) | Project Management Professional (PMP) | 10 | 150 Q / 230 min |
 
-### 🌐 Cloud, AI & Cybersecurity
+### 🖥️ IT, Cloud & Systems Administration
 
 | # | Folder | Cert | Modules | Mock-Exam Length |
 |---|--------|------|---------|------------------|
-| 3 | [`03-AWS-Cloud-Practitioner/`](./03-AWS-Cloud-Practitioner/README.md) | AWS Cloud Practitioner (CLF-C02) | 8 | 65 Q / 90 min |
-| 4 | [`04-AWS-Solutions-Architect-Associate/`](./04-AWS-Solutions-Architect-Associate/README.md) | AWS Solutions Architect Associate (SAA-C03) | 10 | 65 Q / 130 min |
-| 5 | [`05-Azure-Fundamentals/`](./05-Azure-Fundamentals/README.md) | Microsoft Azure Fundamentals (AZ-900) | 6 | 50 Q / 45 min |
-| 6 | [`06-Azure-Administrator/`](./06-Azure-Administrator/README.md) | Microsoft Azure Administrator (AZ-104) | 10 | 55 Q / 100 min |
-| 7 | [`07-AWS-AI-Practitioner/`](./07-AWS-AI-Practitioner/README.md) | AWS AI Practitioner (AIF-C01) | 8 | 65 Q / 120 min |
-| 8 | [`08-Azure-AI-Engineer/`](./08-Azure-AI-Engineer/README.md) | Microsoft Azure AI Engineer (AI-102) | 8 | 55 Q / 100 min |
-| 9 | [`09-CompTIA-Security-Plus/`](./09-CompTIA-Security-Plus/README.md) | CompTIA Security+ (SY0-701) | 10 | 90 Q / 90 min + PBQs |
+| 3 | [`21-CompTIA-A-Plus/`](./21-CompTIA-A-Plus/README.md) | CompTIA A+ Core 1 + Core 2 (220-1101/1102) | 10 | 90 Q / 90 min |
+| 4 | [`22-CompTIA-Network-Plus/`](./22-CompTIA-Network-Plus/README.md) | CompTIA Network+ (N10-009) | 10 | 90 Q / 90 min |
+| 5 | [`23-CompTIA-Linux-Plus/`](./23-CompTIA-Linux-Plus/README.md) | CompTIA Linux+ (XK0-005) | 10 | 90 Q / 90 min |
+| 6 | [`24-CompTIA-Server-Plus/`](./24-CompTIA-Server-Plus/README.md) | CompTIA Server+ (SK0-005) | 10 | 90 Q / 90 min |
+| 7 | [`09-CompTIA-Security-Plus/`](./09-CompTIA-Security-Plus/README.md) | CompTIA Security+ (SY0-701) | 10 | 90 Q / 90 min + PBQs |
+| 8 | [`03-AWS-Cloud-Practitioner/`](./03-AWS-Cloud-Practitioner/README.md) | AWS Cloud Practitioner (CLF-C02) | 8 | 65 Q / 90 min |
+| 9 | [`04-AWS-Solutions-Architect-Associate/`](./04-AWS-Solutions-Architect-Associate/README.md) | AWS Solutions Architect Associate (SAA-C03) | 10 | 65 Q / 130 min |
+| 10 | [`07-AWS-AI-Practitioner/`](./07-AWS-AI-Practitioner/README.md) | AWS AI Practitioner (AIF-C01) | 8 | 65 Q / 120 min |
+| 11 | [`05-Azure-Fundamentals/`](./05-Azure-Fundamentals/README.md) | Microsoft Azure Fundamentals (AZ-900) | 6 | 50 Q / 45 min |
+| 12 | [`06-Azure-Administrator/`](./06-Azure-Administrator/README.md) | Microsoft Azure Administrator (AZ-104) | 10 | 55 Q / 100 min |
+| 13 | [`08-Azure-AI-Engineer/`](./08-Azure-AI-Engineer/README.md) | Microsoft Azure AI Engineer (AI-102) | 8 | 55 Q / 100 min |
+| 14 | [`25-Windows-Server-Hybrid-Admin/`](./25-Windows-Server-Hybrid-Admin/README.md) | Windows Server Hybrid Admin (AZ-800/801) | 10 | 60 Q / 100 min |
+| 15 | [`26-Microsoft-Endpoint-Admin/`](./26-Microsoft-Endpoint-Admin/README.md) | Microsoft Endpoint Administrator (MD-102) | 10 | 60 Q / 100 min |
+| 16 | [`27-Microsoft-Identity-Access-Admin/`](./27-Microsoft-Identity-Access-Admin/README.md) | Microsoft Identity & Access Admin (SC-300) | 10 | 60 Q / 100 min |
 
 ### 🔗 Supply Chain & Operations — international standards
 
 | # | Folder | Cert | Modules | Mock-Exam Length |
 |---|--------|------|---------|------------------|
-| 10 | [`10-ASCM-CSCP/`](./10-ASCM-CSCP/README.md) | ASCM Certified Supply Chain Professional (CSCP) | 10 | 150 Q / 210 min |
-| 11 | [`11-ASCM-CPIM/`](./11-ASCM-CPIM/README.md) | ASCM Certified in Planning & Inventory Management (CPIM) | 8 | 150 Q / 210 min |
-| 12 | [`12-ASCM-CLTD/`](./12-ASCM-CLTD/README.md) | ASCM Certified in Logistics, Transportation & Distribution (CLTD) | 8 | 150 Q / 210 min |
-| 13 | [`13-ISM-CPSM/`](./13-ISM-CPSM/README.md) | ISM Certified Professional in Supply Management (CPSM) | 8 | 165 Q / 180 min |
+| 17 | [`11-ASCM-CPIM/`](./11-ASCM-CPIM/README.md) | ASCM Certified in Planning & Inventory Management (CPIM) | 8 | 150 Q / 210 min |
+| 18 | [`10-ASCM-CSCP/`](./10-ASCM-CSCP/README.md) | ASCM Certified Supply Chain Professional (CSCP) | 10 | 150 Q / 210 min |
+| 19 | [`12-ASCM-CLTD/`](./12-ASCM-CLTD/README.md) | ASCM Certified in Logistics, Transportation & Distribution (CLTD) | 8 | 150 Q / 210 min |
+| 20 | [`13-ISM-CPSM/`](./13-ISM-CPSM/README.md) | ISM Certified Professional in Supply Management (CPSM) | 8 | 165 Q / 180 min |
 
-**Totals:** 13 certifications · 112 modules · 39 full-length mock exams · 8,000+ practice questions · ~600 hours of focused content.
+### 📣 AI-Based Digital Marketing (5-course ladder)
+
+| # | Folder | Cert | Modules | Mock-Exam Length |
+|---|--------|------|---------|------------------|
+| 21 | [`14-AI-Marketing-Foundations/`](./14-AI-Marketing-Foundations/README.md) | AI Marketing Foundations | 8 | 60 Q / 75 min |
+| 22 | [`15-AI-Marketing-Practitioner/`](./15-AI-Marketing-Practitioner/README.md) | AI Marketing Practitioner | 8 | 60 Q / 75 min |
+| 23 | [`16-AI-Marketing-Strategist/`](./16-AI-Marketing-Strategist/README.md) | AI Marketing Strategist | 8 | 60 Q / 75 min |
+| 24 | [`17-AI-Marketing-Entrepreneur/`](./17-AI-Marketing-Entrepreneur/README.md) | AI Marketing Entrepreneur | 8 | 60 Q / 75 min |
+| 25 | [`18-AI-Marketing-Capstone-Portfolio/`](./18-AI-Marketing-Capstone-Portfolio/README.md) | AI Marketing Capstone Portfolio | 8 | Portfolio rubric |
+
+### ₿ Bitcoin & E-Commerce
+
+| # | Folder | Cert | Modules | Mock-Exam Length |
+|---|--------|------|---------|------------------|
+| 26 | [`19-Bitcoin-Cryptocurrency/`](./19-Bitcoin-Cryptocurrency/README.md) | Bitcoin & Cryptocurrency (CBP, CBSA, CCAS, UNIC MSc) | 10 | 80 Q / 90 min |
+| 27 | [`20-E-Commerce/`](./20-E-Commerce/README.md) | E-Commerce (Google D-M, Adobe Commerce, Shopify) | 10 | 80 Q / 90 min |
+
+**Totals:** 27 certifications · 240 modules · 81 full-length mock exams · 11,000+ practice questions · ~850 hours of focused content.
 
 ---
 
@@ -140,4 +164,4 @@ Good luck. Let's go.
 
 ## 🔒 License & Use
 
-© 2026 Humayun Zafar. All Rights Reserved. This material is provided for enrolled-student personal study use only — copying, reproduction, or redistribution of the rendered site content is prohibited without prior written consent. All trademarks (PSM, PMP, AWS, Azure, CompTIA Security+, CSCP, CPIM, CLTD, CPSM) belong to their respective owners (Scrum.org, PMI, Amazon Web Services, Microsoft, CompTIA, ASCM, Institute for Supply Management). Not affiliated with any certification body.
+© 2026 Humayun Zafar. All Rights Reserved. This material is provided for enrolled-student personal study use only — copying, reproduction, or redistribution of the rendered site content is prohibited without prior written consent. All trademarks (PSM, PMP, AWS, Azure, CompTIA A+/Network+/Linux+/Server+/Security+, AZ-800/801, MD-102, SC-300, CSCP, CPIM, CLTD, CPSM) belong to their respective owners (Scrum.org, PMI, Amazon Web Services, Microsoft, CompTIA, ASCM, Institute for Supply Management). Not affiliated with any certification body.

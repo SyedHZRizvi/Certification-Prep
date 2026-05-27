@@ -1,6 +1,6 @@
 # 🤝 Communities & Support
 
-> **Studying alone? Don't.** Communities accelerate learning and keep you motivated — across all 20 tracks on this site.
+> **Studying alone? Don't.** Communities accelerate learning and keep you motivated — across all 27 tracks on this site.
 
 **Resources** · Communities
 *Last updated: 2026-05*
@@ -546,4 +546,4 @@ You're not alone in this. **Hundreds of thousands of people pass these exams eve
 - 🏆 [**Certifications Catalog**](./International-Certifications/) — fees, formats, registration procedure for every cert
 - 📚 [**Books & Links**](./Books-and-Links/) — canonical resource list per track
 - 🧪 [**Free Practice Tests**](./Free-Practice-Tests/) — where to find more questions
-- 🏠 [**Course Home**](../) — all 20 tracks at a glance
+- 🏠 [**Course Home**](../) — all 27 tracks at a glance
