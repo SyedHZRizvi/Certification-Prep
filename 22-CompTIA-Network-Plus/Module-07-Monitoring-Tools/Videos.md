@@ -59,7 +59,7 @@
       <span class="vg-duration">⏱ 15 min · Filters + analysis</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+N10-009+baselines+SLA" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+N10-009+baselines+SLA" data-video-id="OKI4CIItKK8" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -73,7 +73,7 @@
 ## 📚 Recommended (~30 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Network+Chuck+dig+nslookup+DNS+lookups" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Network+Chuck+dig+nslookup+DNS+lookups" data-video-id="OwieIla5NLE" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -82,7 +82,7 @@
       <span class="vg-duration">⏱ 10 min · DNS deep query</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Chris+Greer+Wireshark+TCP+retransmissions+troubleshooting" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Chris+Greer+Wireshark+TCP+retransmissions+troubleshooting" data-video-id="NdvWI6RH1eo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -91,7 +91,7 @@
       <span class="vg-duration">⏱ 14 min · Diagnose packet loss</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=LibreNMS+demo+install+SNMP+monitoring" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=LibreNMS+demo+install+SNMP+monitoring" data-video-id="9R_AxJXj0AA" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -105,7 +105,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Cloudflare+1.1.1.1+outage+post+mortem+talk" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Cloudflare+1.1.1.1+outage+post+mortem+talk" data-video-id="59r3MyD2324" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -114,7 +114,7 @@
       <span class="vg-duration">⏱ 22 min · Telemetry done right</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=iperf3+bandwidth+test+tutorial+demo" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=iperf3+bandwidth+test+tutorial+demo" data-video-id="V0EhVCCxTuc" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -123,7 +123,7 @@
       <span class="vg-duration">⏱ 12 min · LAN throughput check</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=nmap+full+tutorial+port+scanning" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=nmap+full+tutorial+port+scanning" data-video-id="4H5YskpYe10" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

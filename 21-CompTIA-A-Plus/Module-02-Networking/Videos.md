@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 11 min · Wi-Fi 5/6/6E/7</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+220-1101+SOHO+Network+Setup" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+220-1101+SOHO+Network+Setup" data-video-id="_gq4g7KjU4o" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 18 min · CIDR magic</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Dion+Training+A+Plus+OSI+model" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Dion+Training+A+Plus+OSI+model" data-video-id="SbKRkDWkLtM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 10 min · 7 layers, memorable</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Practical+Networking+DHCP+process" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Practical+Networking+DHCP+process" data-video-id="ywkJepIQNIU" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=David+Bombal+ping+traceroute+nslookup+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=David+Bombal+ping+traceroute+nslookup+tutorial" data-video-id="A-SKno3ShC0" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 22 min · Real-world examples</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Linus+Tech+Tips+fiber+optic+explained" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Linus+Tech+Tips+fiber+optic+explained" data-video-id="EdR2cujwke4" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

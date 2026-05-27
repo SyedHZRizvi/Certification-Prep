@@ -32,7 +32,7 @@
       <span class="vg-duration">⏱ 10 min · Memorize this</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+N10-009+common+network+issues" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+N10-009+common+network+issues" data-video-id="XfvBsCcJ500" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -59,7 +59,7 @@
       <span class="vg-duration">⏱ 8 min · Signal, roam, channel</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+N10-009+duplex+mismatch" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+N10-009+duplex+mismatch" data-video-id="AMjNCtI78W4" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -73,7 +73,7 @@
 ## 📚 Recommended (~30 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Network+Chuck+troubleshooting+commands+network+plus" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Network+Chuck+troubleshooting+commands+network+plus" data-video-id="Og3A4WCzD8Y" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -82,7 +82,7 @@
       <span class="vg-duration">⏱ 14 min · CLI walkthrough</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Chris+Greer+wireshark+troubleshooting+slow+web+app" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Chris+Greer+wireshark+troubleshooting+slow+web+app" data-video-id="uzhIAMtZpM8" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -91,7 +91,7 @@
       <span class="vg-duration">⏱ 15 min · Real trace analysis</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Dion+Training+OSI+layer+troubleshooting+approach" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Dion+Training+OSI+layer+troubleshooting+approach" data-video-id="kdFOCleUkVE" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -105,7 +105,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Facebook+Meta+October+2021+outage+post+mortem" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Facebook+Meta+October+2021+outage+post+mortem" data-video-id="Bie32IZlMtY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -114,7 +114,7 @@
       <span class="vg-duration">⏱ 25 min · BGP self-inflict + recovery</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Cisco+console+cable+rollover+config+from+scratch" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Cisco+console+cable+rollover+config+from+scratch" data-video-id="TCTaycIYCRo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -123,7 +123,7 @@
       <span class="vg-duration">⏱ 18 min · How to console in</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=MTU+MSS+fragmentation+troubleshooting+VPN+wireshark" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=MTU+MSS+fragmentation+troubleshooting+VPN+wireshark" data-video-id="z-4kF9ApPjo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

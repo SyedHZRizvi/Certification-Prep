@@ -41,7 +41,7 @@
       <span class="vg-duration">⏱ 9 min · Scope, reservation, relay</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+N10-009+NTP+stratum" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+N10-009+NTP+stratum" data-video-id="iBHRIu9MQr4" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -82,7 +82,7 @@
 ## 📚 Recommended (~30 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Network+Chuck+DNS+explained+nslookup+dig" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Network+Chuck+DNS+explained+nslookup+dig" data-video-id="OwieIla5NLE" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -91,7 +91,7 @@
       <span class="vg-duration">⏱ 14 min · Hands-on lookups</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SPF+DKIM+DMARC+email+authentication+explained" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=SPF+DKIM+DMARC+email+authentication+explained" data-video-id="e3s9ExfEtPs" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -100,7 +100,7 @@
       <span class="vg-duration">⏱ 10 min · Anti-spoofing trifecta</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Direct+Connect+vs+VPN+comparison" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Direct+Connect+vs+VPN+comparison" data-video-id="eNxPhHTN8gY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -114,7 +114,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Dyn+attack+2016+DNS+post+mortem+talk" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Dyn+attack+2016+DNS+post+mortem+talk" data-video-id="2oDZ_nCdY2M" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -123,7 +123,7 @@
       <span class="vg-duration">⏱ 30 min · DNS resilience lessons</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Gartner+SASE+explained+secure+access+service+edge" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Gartner+SASE+explained+secure+access+service+edge" data-video-id="WAswx0uODDY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -132,7 +132,7 @@
       <span class="vg-duration">⏱ 12 min · The convergence vision</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=OpenFlow+SDN+demo+lab+walkthrough" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=OpenFlow+SDN+demo+lab+walkthrough" data-video-id="f2qenNic7R4" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

@@ -59,7 +59,7 @@
       <span class="vg-duration">⏱ 11 min · Pick the right one</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Dion+Training+A+Plus+Windows+11+TPM+Secure+Boot" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Dion+Training+A+Plus+Windows+11+TPM+Secure+Boot" data-video-id="W16Xm1QWZIY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -82,7 +82,7 @@
       <span class="vg-duration">⏱ 22 min · Fun, actionable</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Andy+Malone+PowerShell+for+IT+admins" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Andy+Malone+PowerShell+for+IT+admins" data-video-id="GyvEMcMh3rc" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -105,7 +105,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Britec09+repair+Windows+boot+bootrec" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Britec09+repair+Windows+boot+bootrec" data-video-id="fMwfWP2ahyw" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -114,7 +114,7 @@
       <span class="vg-duration">⏱ 18 min · Real-world repair</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=DistroTube+Linux+distro+comparison+2026" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=DistroTube+Linux+distro+comparison+2026" data-video-id="6eGNgQjrpdI" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -123,7 +123,7 @@
       <span class="vg-duration">⏱ 25 min · Pick your distro</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Microsoft+Mechanics+Windows+11+enterprise+deployment" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Microsoft+Mechanics+Windows+11+enterprise+deployment" data-video-id="zqwkaWTzsRo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

@@ -32,7 +32,7 @@
       <span class="vg-duration">⏱ 9 min · a/b/g/n/ac/ax/be</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+N10-009+wireless+frequencies+channels" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+N10-009+wireless+frequencies+channels" data-video-id="0fbzRa7bwC0" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -50,7 +50,7 @@
       <span class="vg-duration">⏱ 11 min · Personal vs Enterprise</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+N10-009+wireless+site+survey" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+N10-009+wireless+site+survey" data-video-id="XRyGtKGpsrs" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -73,7 +73,7 @@
 ## 📚 Recommended (~30 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Network+Chuck+Wi-Fi+6+vs+Wi-Fi+5+OFDMA" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Network+Chuck+Wi-Fi+6+vs+Wi-Fi+5+OFDMA" data-video-id="jgrGbKJEb0U" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -82,7 +82,7 @@
       <span class="vg-duration">⏱ 13 min · Why Wi-Fi 6 wins density</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Ekahau+heat+map+wireless+site+survey+walkthrough" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Ekahau+heat+map+wireless+site+survey+walkthrough" data-video-id="WB57CVw-oZg" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -91,7 +91,7 @@
       <span class="vg-duration">⏱ 12 min · Real site-survey tool</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Dion+Training+EAP+authentication+types" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Dion+Training+EAP+authentication+types" data-video-id="uB8CvDC8ZvQ" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -114,7 +114,7 @@
       <span class="vg-duration">⏱ 14 min · The WPA2 vulnerability</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Wi-Fi+7+MLO+multi+link+operation+demo" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Wi-Fi+7+MLO+multi+link+operation+demo" data-video-id="RzYiZmhMaCg" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -123,7 +123,7 @@
       <span class="vg-duration">⏱ 18 min · Multi-Link Operation</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=DFS+channels+5GHz+wireless+radar" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=DFS+channels+5GHz+wireless+radar" data-video-id="eJlKbiuc0Fw" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

@@ -50,7 +50,7 @@
       <span class="vg-duration">⏱ 11 min · Jailbreak, lost/stolen</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Dion+Training+iPhone+Android+battery+drain+fix" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Dion+Training+iPhone+Android+battery+drain+fix" data-video-id="y5ewEJtT134" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -64,7 +64,7 @@
 ## 📚 Recommended (~30 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Andy+Malone+Intune+compliance+troubleshooting" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Andy+Malone+Intune+compliance+troubleshooting" data-video-id="kBUiyiUQm5o" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -73,7 +73,7 @@
       <span class="vg-duration">⏱ 14 min · Real dashboards</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=iFixIt+iPhone+battery+replacement" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=iFixIt+iPhone+battery+replacement" data-video-id="mKemEjg5VNM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -82,7 +82,7 @@
       <span class="vg-duration">⏱ 10 min · Hands-on</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=NetworkChuck+SIM+swap+attack+explained" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=NetworkChuck+SIM+swap+attack+explained" data-video-id="aRfi66WK2U0" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -96,7 +96,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Jamf+Apple+Business+Manager+enrollment+demo" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Jamf+Apple+Business+Manager+enrollment+demo" data-video-id="kVTvM4bXHJ8" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -105,7 +105,7 @@
       <span class="vg-duration">⏱ 20 min · Enterprise iOS</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Android+Enterprise+Recommended+demo" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Android+Enterprise+Recommended+demo" data-video-id="uwtVdB8RM0w" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -114,7 +114,7 @@
       <span class="vg-duration">⏱ 18 min · Zero-touch</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=FBI+SIM+swap+PSA+advisory" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=FBI+SIM+swap+PSA+advisory" data-video-id="jJWr6iCU8hU" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

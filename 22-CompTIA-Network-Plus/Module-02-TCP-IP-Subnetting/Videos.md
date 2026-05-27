@@ -41,7 +41,7 @@
       <span class="vg-duration">⏱ 12 min · The core skill</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Sunny+Classroom+subnetting+in+7+seconds" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Sunny+Classroom+subnetting+in+7+seconds" data-video-id="ecCuyq-Wprc" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -50,7 +50,7 @@
       <span class="vg-duration">⏱ 11 min · The fastest method</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+N10-009+VLSM+variable+length" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+N10-009+VLSM+variable+length" data-video-id="8Y_bkkEC5cw" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -100,7 +100,7 @@
       <span class="vg-duration">⏱ 8 min · How IPv6 self-configures</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Network+Chuck+IPv4+vs+IPv6+CGNAT" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Network+Chuck+IPv4+vs+IPv6+CGNAT" data-video-id="aAzdn9cqYRY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -114,7 +114,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=APNIC+IPv6+adoption+statistics+talk" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=APNIC+IPv6+adoption+statistics+talk" data-video-id="LvOUEjdhHI4" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -123,7 +123,7 @@
       <span class="vg-duration">⏱ 25 min · Conference talk</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=binary+to+decimal+IP+subnetting+practice" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=binary+to+decimal+IP+subnetting+practice" data-video-id="BoP1fkRBv_c" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -132,7 +132,7 @@
       <span class="vg-duration">⏱ 12 min · Convert binary fast</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=NAT64+DNS64+demo+lab" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=NAT64+DNS64+demo+lab" data-video-id="c7QEmEUa4Bs" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

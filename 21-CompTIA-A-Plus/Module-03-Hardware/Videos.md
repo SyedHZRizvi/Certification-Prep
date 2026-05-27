@@ -73,7 +73,7 @@
 ## 📚 Recommended (~30 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Linus+Tech+Tips+how+to+build+a+PC+beginner" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Linus+Tech+Tips+how+to+build+a+PC+beginner" data-video-id="s1fxZ-VWs2U" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -82,7 +82,7 @@
       <span class="vg-duration">⏱ 25 min · See it assembled</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Gamers+Nexus+RAID+explained" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Gamers+Nexus+RAID+explained" data-video-id="FHbikgD8_4A" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -91,7 +91,7 @@
       <span class="vg-duration">⏱ 16 min · Performance + redundancy</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=ExplainingComputers+NVMe+SSD+explained" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=ExplainingComputers+NVMe+SSD+explained" data-video-id="ylb26loADms" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -105,7 +105,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=JayzTwoCents+thermal+paste+how+to+apply" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=JayzTwoCents+thermal+paste+how+to+apply" data-video-id="2NlVgd6zRPA" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -114,7 +114,7 @@
       <span class="vg-duration">⏱ 15 min · Hands-on technique</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Hardware+Canucks+80+plus+psu+ratings+explained" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Hardware+Canucks+80+plus+psu+ratings+explained" data-video-id="NCUFZ3zUO-I" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -123,7 +123,7 @@
       <span class="vg-duration">⏱ 18 min · Gold vs Platinum vs Titanium</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Wendell+Level1Techs+ECC+RAM+explained" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Wendell+Level1Techs+ECC+RAM+explained" data-video-id="5u6DY8On1XA" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

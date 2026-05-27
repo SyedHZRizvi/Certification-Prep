@@ -64,7 +64,7 @@
 ## 📚 Recommended (~30 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Eli+the+Computer+Guy+laser+printer+how+it+works" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Eli+the+Computer+Guy+laser+printer+how+it+works" data-video-id="YT7pzHrJgcs" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -73,7 +73,7 @@
       <span class="vg-duration">⏱ 16 min · Open it up</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=ExplainingComputers+Thunderbolt+3+4+5+explained" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=ExplainingComputers+Thunderbolt+3+4+5+explained" data-video-id="DiHU2ta7L4Y" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -82,7 +82,7 @@
       <span class="vg-duration">⏱ 12 min · The protocol stack</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=ITProTV+printer+troubleshooting+CompTIA+A+Plus" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=ITProTV+printer+troubleshooting+CompTIA+A+Plus" data-video-id="hlTxHJbH8GA" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -96,7 +96,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=LTT+how+a+laser+printer+works" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=LTT+how+a+laser+printer+works" data-video-id="6A5dc7etdNo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -105,7 +105,7 @@
       <span class="vg-duration">⏱ 18 min · Animated deep-dive</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=PrintNightmare+CVE+explanation" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=PrintNightmare+CVE+explanation" data-video-id="zL2BXW0giBc" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -114,7 +114,7 @@
       <span class="vg-duration">⏱ 20 min · The 2021 CVE</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Hardware+Canucks+Display+Port+vs+HDMI+vs+USB-C+2026" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Hardware+Canucks+Display+Port+vs+HDMI+vs+USB-C+2026" data-video-id="BLqAd181uOk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

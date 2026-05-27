@@ -59,7 +59,7 @@
       <span class="vg-duration">⏱ 12 min · Root election, port roles</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+N10-009+link+aggregation+LACP" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+N10-009+link+aggregation+LACP" data-video-id="KJy3cFiR2aw" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -68,7 +68,7 @@
       <span class="vg-duration">⏱ 7 min · Bonding multiple links</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+N10-009+switch+port+security" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+N10-009+switch+port+security" data-video-id="Wyd0HTfkmgo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -82,7 +82,7 @@
 ## 📚 Recommended (~30 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Practical+Networking+OSPF+deep+dive" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Practical+Networking+OSPF+deep+dive" data-video-id="BPf6_9oAbXM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -91,7 +91,7 @@
       <span class="vg-duration">⏱ 12 min · ABRs, ASBRs, area 0</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Network+Chuck+BGP+explained" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Network+Chuck+BGP+explained" data-video-id="4e3E5sjItWM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -100,7 +100,7 @@
       <span class="vg-duration">⏱ 14 min · Inter-AS routing</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Dion+Training+inter+VLAN+routing+SVI" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Dion+Training+inter+VLAN+routing+SVI" data-video-id="Z7WM7wFTWrs" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -114,7 +114,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Pakistan+YouTube+BGP+hijack+2008+post+mortem" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Pakistan+YouTube+BGP+hijack+2008+post+mortem" data-video-id="C8f9KCGOBAs" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -123,7 +123,7 @@
       <span class="vg-duration">⏱ 22 min · Case study</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=David+Bombal+STP+lab+packet+tracer" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=David+Bombal+STP+lab+packet+tracer" data-video-id="itesC6sumV8" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -132,7 +132,7 @@
       <span class="vg-duration">⏱ 25 min · Watch loops form &amp; break</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=VLAN+hopping+attack+demonstration+lab" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=VLAN+hopping+attack+demonstration+lab" data-video-id="XSX47v8vzUY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
