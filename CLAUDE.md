@@ -216,7 +216,7 @@ The commit message should start with **`baseline change:`** so it's discoverable
 
 ## 6. The frozen baseline — `stable-2026-05-20`
 
-This tag is the canonical snapshot of the site as of 2026-05-20. It contains:
+This tag is the canonical *historical* snapshot of the site as of 2026-05-20. It contains:
 
 - 13 course directories
 - 112 modules
@@ -227,6 +227,20 @@ This tag is the canonical snapshot of the site as of 2026-05-20. It contains:
 - Content protection enabled in both `index.html` and `_layouts/default.html`
 - Freshness mechanism (`/version.txt` + `assets/freshness.js`) wired so future deploys auto-bust stale browser caches
 - The `scripts/verify-baseline.py` script passing (15 invariants)
+
+### Current state (post-IT-Sysadmin expansion, 2026-05-27)
+
+The live site has now grown to:
+
+- **27** course directories
+- **240** modules
+- **81** practice exams (60 partials + 21 full-length mocks)
+- **1,135** markdown files inside the course directories
+- **2,359** YouTube search URLs (still 0 direct YouTube URLs anywhere)
+- **11,000+** practice questions across all quizzes + flashcards + mock exams
+- **850** total study hours
+
+`scripts/verify-baseline.py` enforces the current totals (all 15 invariants still passing).
 
 If you need to roll back: `git checkout stable-2026-05-20`.
 

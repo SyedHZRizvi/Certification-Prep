@@ -1,6 +1,6 @@
 # Jekyll config for GitHub Pages
-title: "The Cert Hub — 13 Certification Study Courses"
-description: "Story-driven self-study courses for 13 industry certifications — Scrum (PSM I), PMP, AWS (CLF-C02, SAA-C03, AIF-C01), Azure (AZ-900, AZ-104, AI-102), CompTIA Security+ (SY0-701), and ASCM/ISM supply chain (CSCP, CPIM, CLTD, CPSM). Designed and authored by Humayun Zafar."
+title: "The Cert Hub — 27 Certification Study Courses"
+description: "Story-driven self-study courses for 27 industry certifications spanning Project Management (Scrum PSM I, PMP), IT Systems Administration (CompTIA A+, Network+, Linux+, Server+, Security+ SY0-701), Cloud (AWS CLF-C02, SAA-C03, AIF-C01; Azure AZ-900, AZ-104, AI-102), Microsoft enterprise (Windows Server AZ-800/801, Endpoint MD-102, Identity SC-300), Supply Chain (ASCM CSCP, CPIM, CLTD; ISM CPSM), AI-Based Digital Marketing (5-course ladder), Bitcoin & Cryptocurrency, and E-Commerce. Designed and authored by Humayun Zafar — engineered to the teaching & learning gold standard of Cornell, Harvard, Princeton, and Stanford."
 author: "Humayun Zafar"
 url: "https://syedhzrizvi.github.io"
 baseurl: "/Certification-Prep"
