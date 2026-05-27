@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~95 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Microsoft+Defender+for+Endpoint+Plan+1+vs+Plan+2+features" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Microsoft+Defender+for+Endpoint+Plan+1+vs+Plan+2+features" data-video-id="aNL1gNBJfrg" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 28 min · The full plan matrix</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Attack+Surface+Reduction+ASR+rules+Microsoft+Defender" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Attack+Surface+Reduction+ASR+rules+Microsoft+Defender" data-video-id="BFr0RJuA0vk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 25 min · Audit → Block in practice</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=BitLocker+Intune+silent+enablement+Entra+recovery+key" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=BitLocker+Intune+silent+enablement+Entra+recovery+key" data-video-id="g0KTi3No3jQ" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 20 min · The canonical Intune pattern</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Defender+for+Endpoint+EDR+investigation+process+tree" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Defender+for+Endpoint+EDR+investigation+process+tree" data-video-id="itTVaQemfFM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~55 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Intune+security+baselines+Windows+11+Defender" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Intune+security+baselines+Windows+11+Defender" data-video-id="ljddkRq9dCc" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 17 min · Baselines as a starting point</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Defender+for+Cloud+Apps+MCAS+CASB+shadow+IT" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Defender+for+Cloud+Apps+MCAS+CASB+shadow+IT" data-video-id="MsHkTOoqSQo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 22 min · Discover + control SaaS</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Windows+LAPS+local+admin+password+rotation+Entra" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Windows+LAPS+local+admin+password+rotation+Entra" data-video-id="f68uXjROgG4" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Defender+for+Endpoint+EDR+block+mode+third+party+AV" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Defender+for+Endpoint+EDR+block+mode+third+party+AV" data-video-id="cDqixPxamLM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 18 min · When passive Defender helps</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Smart+App+Control+Windows+11+code+integrity" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Smart+App+Control+Windows+11+code+integrity" data-video-id="_1CaKKrd-jA" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 15 min · The AppLocker successor</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Norsk+Hydro+LockerGoga+ransomware+recovery+lessons" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Norsk+Hydro+LockerGoga+ransomware+recovery+lessons" data-video-id="C6MDz-AgQuE" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

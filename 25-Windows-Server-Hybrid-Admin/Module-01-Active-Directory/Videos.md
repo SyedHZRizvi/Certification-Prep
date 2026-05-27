@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~2 hours)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+Active+Directory+complete+overview" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+Active+Directory+complete+overview" data-video-id="4qC7H-y7oKI" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 45 min · Forest, domain, sites, GPOs</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=ITProTV+FSMO+roles+explained+Windows+Server" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=ITProTV+FSMO+roles+explained+Windows+Server" data-video-id="tUoSwjTwXpc" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 25 min · Memorize cold</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Andy+Malone+Group+Policy+precedence+LSDOU+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Andy+Malone+Group+Policy+precedence+LSDOU+tutorial" data-video-id="cWraXsgOJ7U" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 30 min · LSDOU mastered</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Server+Academy+AD+sites+and+services+replication" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Server+Academy+AD+sites+and+services+replication" data-video-id="sRyPgUekXdE" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~75 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Microsoft+Mechanics+gMSA+group+managed+service+accounts" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Microsoft+Mechanics+gMSA+group+managed+service+accounts" data-video-id="Q46SDMstaDo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 12 min · Replace standard SAs</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Read+Only+Domain+Controller+RODC+walkthrough+deployment" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Read+Only+Domain+Controller+RODC+walkthrough+deployment" data-video-id="Bur7XxUYq4A" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 18 min · Branch deployments</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AD+Recycle+Bin+restore+deleted+objects+Windows+Server" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=AD+Recycle+Bin+restore+deleted+objects+Windows+Server" data-video-id="lBB6JSvkVl8" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -93,7 +93,7 @@
       <span class="vg-duration">⏱ 15 min · Lifesaver tutorial</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Fine+Grained+Password+Policy+PSO+Windows+Server" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Fine+Grained+Password+Policy+PSO+Windows+Server" data-video-id="MuVMqPn_MqY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -107,7 +107,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Sean+Metcalf+Active+Directory+security+attack+paths" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Sean+Metcalf+Active+Directory+security+attack+paths" data-video-id="Lz6haohGAMc" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 50 min · Defender perspective</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Windows+Server+forest+trust+netdom+transitivity+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Windows+Server+forest+trust+netdom+transitivity+tutorial" data-video-id="F7DgXAXNnC8" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -125,7 +125,7 @@
       <span class="vg-duration">⏱ 22 min · Merger scenarios</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=krbtgt+password+reset+procedure+golden+ticket+mitigation" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=krbtgt+password+reset+procedure+golden+ticket+mitigation" data-video-id="DQV74D4tKCQ" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

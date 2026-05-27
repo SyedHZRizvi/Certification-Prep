@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~100 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Andy+Malone+Windows+Server+DNS+complete+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Andy+Malone+Windows+Server+DNS+complete+tutorial" data-video-id="trxOiK3XzpA" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 35 min · Zones, records, replication</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+DNSSEC+Windows+Server+deep+dive" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+DNSSEC+Windows+Server+deep+dive" data-video-id="WvKKFwcIegM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 25 min · KSK, ZSK, DS, NSEC3</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=DHCP+failover+load+balance+hot+standby+Windows+Server" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=DHCP+failover+load+balance+hot+standby+Windows+Server" data-video-id="IZOMMbOUpDs" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 22 min · Load balance + Hot standby</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Windows+Firewall+with+Advanced+Security+rules+profiles+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Windows+Firewall+with+Advanced+Security+rules+profiles+tutorial" data-video-id="Llpd6zOtva8" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~55 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=IPAM+IP+address+management+Windows+Server+walkthrough" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=IPAM+IP+address+management+Windows+Server+walkthrough" data-video-id="lZn88pypxrA" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 18 min · GPO provisioning</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=DNS+policies+split+horizon+geographic+Windows+Server+2016" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=DNS+policies+split+horizon+geographic+Windows+Server+2016" data-video-id="raYUq21VX74" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 14 min · Zone scopes</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=NLB+Network+Load+Balancing+Windows+Server+cluster" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=NLB+Network+Load+Balancing+Windows+Server+cluster" data-video-id="QyN7fcpmIpg" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=DNS+conditional+forwarder+vs+stub+zone+explained" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=DNS+conditional+forwarder+vs+stub+zone+explained" data-video-id="01sNVv-tgSs" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 12 min · When to pick which</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=DNS+scavenging+aging+Windows+Server+stale+records" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=DNS+scavenging+aging+Windows+Server+stale+records" data-video-id="khqFIFYutO0" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 10 min · 7/7/7 explained</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=IPsec+connection+security+rule+domain+isolation+Windows" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=IPsec+connection+security+rule+domain+isolation+Windows" data-video-id="dNcntWPvucU" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

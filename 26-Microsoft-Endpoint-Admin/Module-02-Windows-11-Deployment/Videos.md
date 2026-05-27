@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~90 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Windows+Autopilot+deep+dive+all+modes+explained" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Windows+Autopilot+deep+dive+all+modes+explained" data-video-id="FJzdwiAjmG4" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 30 min · The definitive Autopilot walkthrough</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Autopilot+self+deploying+pre+provisioned+white+glove" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Autopilot+self+deploying+pre+provisioned+white+glove" data-video-id="hTviS9amB7I" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 18 min · The decision matrix</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Enrollment+Status+Page+ESP+Intune+configuration" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Enrollment+Status+Page+ESP+Intune+configuration" data-video-id="KVLS_zExBV0" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 22 min · When the ESP screen breaks</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Get-WindowsAutopilotInfo+hardware+hash+CSV+upload" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Get-WindowsAutopilotInfo+hardware+hash+CSV+upload" data-video-id="7d62B5wobGo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~50 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=provisioning+packages+Windows+Configuration+Designer" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=provisioning+packages+Windows+Configuration+Designer" data-video-id="L3N0Qb_89Fw" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 16 min · When .ppkg still beats Autopilot</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Configuration+Manager+OSD+task+sequence+Windows+11" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Configuration+Manager+OSD+task+sequence+Windows+11" data-video-id="Yw7g_-IiwzQ" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 18 min · The on-prem deployment story</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Windows+10+to+Windows+11+in+place+upgrade+Intune" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Windows+10+to+Windows+11+in+place+upgrade+Intune" data-video-id="RIS95CrSKTo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Autopilot+for+existing+devices+ConfigMgr+task+sequence" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Autopilot+for+existing+devices+ConfigMgr+task+sequence" data-video-id="mJwS-A5EQiw" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 22 min · Rebuild old fleet into Autopilot</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=hybrid+Azure+AD+Autopilot+Intune+Connector+for+AD" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=hybrid+Azure+AD+Autopilot+Intune+Connector+for+AD" data-video-id="846qK4c2AyY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 25 min · Domain join over the internet</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=MDT+Microsoft+Deployment+Toolkit+task+sequence+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=MDT+Microsoft+Deployment+Toolkit+task+sequence+tutorial" data-video-id="eUIfM5RiXnQ" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

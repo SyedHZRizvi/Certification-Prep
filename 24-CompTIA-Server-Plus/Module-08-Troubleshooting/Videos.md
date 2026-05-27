@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~55 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=CompTIA+6+step+troubleshooting+methodology" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=CompTIA+6+step+troubleshooting+methodology" data-video-id="_MhEZbyHbyk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 9 min · Memorize the order</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=POST+beep+codes+server+troubleshooting" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=POST+beep+codes+server+troubleshooting" data-video-id="qBs8Zq_5Mjc" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 12 min · Reading the hardware</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Linux+performance+tools+top+iostat+vmstat+sar" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Linux+performance+tools+top+iostat+vmstat+sar" data-video-id="DPICFeYn5es" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 15 min · CPU/RAM/disk triage</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Windows+performance+monitor+counters+server" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Windows+performance+monitor+counters+server" data-video-id="wpSif29l778" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~35 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=ping+traceroute+mtr+tcpdump+troubleshoot+network" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=ping+traceroute+mtr+tcpdump+troubleshoot+network" data-video-id="L3T5Wl8s3hw" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 14 min · ping → tcpdump</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=postmortem+blameless+SRE+google" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=postmortem+blameless+SRE+google" data-video-id="qgHWzQ2zcqQ" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 12 min · Culture > tools</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=CMDB+runbook+documentation+best+practices" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=CMDB+runbook+documentation+best+practices" data-video-id="bZoB3EV4tuw" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=smartctl+drive+health+SMART+attributes" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=smartctl+drive+health+SMART+attributes" data-video-id="eUKezorl9Lk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 16 min · smartctl walk-through</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+EBS+2012+outage+post+mortem+lessons" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+EBS+2012+outage+post+mortem+lessons" data-video-id="Lrdh1xdkpgw" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 22 min · Cascading failures</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Brendan+Gregg+USE+method+performance" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Brendan+Gregg+USE+method+performance" data-video-id="K9w2cipqfvc" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~55 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=NIC+teaming+LACP+explained+server" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=NIC+teaming+LACP+explained+server" data-video-id="w_lmGkEtmAw" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 14 min · Modes + switch config</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=VLAN+802.1Q+trunk+access+port+explained" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=VLAN+802.1Q+trunk+access+port+explained" data-video-id="933KsYiuugg" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 11 min · Trunks + access</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=jumbo+frames+MTU+9000+storage+network" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=jumbo+frames+MTU+9000+storage+network" data-video-id="vRiPqoybVhI" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 12 min · End-to-end matters</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=layer+4+vs+layer+7+load+balancer+difference" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=layer+4+vs+layer+7+load+balancer+difference" data-video-id="hdT2tXrbA0Q" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~35 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=IPv6+dual+stack+server+walkthrough" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=IPv6+dual+stack+server+walkthrough" data-video-id="dH6g7jHBCxI" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 14 min · A + AAAA + firewalls</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=HAProxy+vs+nginx+load+balancing" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=HAProxy+vs+nginx+load+balancing" data-video-id="pvR_dfybJQM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 13 min · Real LB config</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=spanning+tree+portfast+server+facing+port" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=spanning+tree+portfast+server+facing+port" data-video-id="2IIYRHCD_e4" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=GSLB+global+server+load+balancing+explained" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=GSLB+global+server+load+balancing+explained" data-video-id="F9j2tTqWUn8" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 18 min · DNS-level routing</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=QoS+DSCP+server+network+explained" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=QoS+DSCP+server+network+explained" data-video-id="DJSgZ2-BpeM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 16 min · When storage shares the fabric</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=microsegmentation+NSX+ACI+overview" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=microsegmentation+NSX+ACI+overview" data-video-id="ezwA4Bdw7_o" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

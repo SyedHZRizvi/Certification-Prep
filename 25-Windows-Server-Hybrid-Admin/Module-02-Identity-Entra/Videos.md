@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~90 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+Entra+Connect+vs+Cloud+Sync+comparison" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+Entra+Connect+vs+Cloud+Sync+comparison" data-video-id="9XBcc2b62Ys" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 28 min · The definitive comparison</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Microsoft+Mechanics+Password+Hash+Sync+PHS+PTA+Federation" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Microsoft+Mechanics+Password+Hash+Sync+PHS+PTA+Federation" data-video-id="DpqpGSI02M0" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 20 min · Sign-in methods deep dive</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Andy+Malone+Hybrid+Azure+AD+Join+device+walkthrough" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Andy+Malone+Hybrid+Azure+AD+Join+device+walkthrough" data-video-id="2O3IFoU7tHw" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 25 min · Device join states</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Seamless+SSO+Azure+AD+SSSO+tutorial+walkthrough" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Seamless+SSO+Azure+AD+SSSO+tutorial+walkthrough" data-video-id="fyU_IhaZBjU" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~55 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Entra+Domain+Services+managed+domain+Azure+walkthrough" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Entra+Domain+Services+managed+domain+Azure+walkthrough" data-video-id="fiYWwiy8glg" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 15 min · Legacy app lift-and-shift</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Microsoft+passwordless+FIDO2+Authenticator+passkey+rollout" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Microsoft+passwordless+FIDO2+Authenticator+passkey+rollout" data-video-id="61PuyaIvk54" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 18 min · 2024+ recommended</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Continuous+Access+Evaluation+CAE+Entra+ID+how+it+works" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Continuous+Access+Evaluation+CAE+Entra+ID+how+it+works" data-video-id="m3309aUKET8" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AD+FS+migration+to+cloud+authentication+staged+rollout" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=AD+FS+migration+to+cloud+authentication+staged+rollout" data-video-id="Mr6bp-fFahE" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 22 min · Staged migration</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Storm-0558+Microsoft+token+signing+key+post+mortem" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Storm-0558+Microsoft+token+signing+key+post+mortem" data-video-id="Xm5ST8QWqNk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 30 min · CSRB review walk-through</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Cross-Tenant+Access+Settings+B2B+B2C+tenant+restrictions" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Cross-Tenant+Access+Settings+B2B+B2C+tenant+restrictions" data-video-id="Ku64fo7iZ4Y" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

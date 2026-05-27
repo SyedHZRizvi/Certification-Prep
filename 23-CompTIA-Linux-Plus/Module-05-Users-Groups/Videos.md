@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~50 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=linux+useradd+usermod+userdel+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=linux+useradd+usermod+userdel+tutorial" data-video-id="ZgH1sdCnBKo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 14 min · The full add/modify/delete cycle</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=linux+sudoers+visudo+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=linux+sudoers+visudo+tutorial" data-video-id="jwnvKOjmtEA" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 12 min · Syntax, NOPASSWD, drop-ins</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=linux+passwd+shadow+group+files+explained" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=linux+passwd+shadow+group+files+explained" data-video-id="ADvfAK68xoU" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 11 min · Field-by-field walk-through</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Linux+PAM+pluggable+authentication+modules+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Linux+PAM+pluggable+authentication+modules+tutorial" data-video-id="CagsZdJ3ZhA" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~30 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=linux+chage+password+aging+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=linux+chage+password+aging+tutorial" data-video-id="rNuGmPQQ2_s" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 9 min · -M, -W, -E, -d 0</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=linux+sudo+drop-in+sudoers.d+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=linux+sudo+drop-in+sudoers.d+tutorial" data-video-id="c5sQDB979c0" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 10 min · Per-feature sudoers files</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=linux+groups+primary+secondary+newgrp+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=linux+groups+primary+secondary+newgrp+tutorial" data-video-id="E-yz-P-f2Sw" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Linux+pam_faillock+lockout+failed+login+attempts" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Linux+pam_faillock+lockout+failed+login+attempts" data-video-id="wYArWsHDeiQ" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 12 min · Deny after N failed</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SSSD+LDAP+linux+integration+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=SSSD+LDAP+linux+integration+tutorial" data-video-id="CGt6oHZPToY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 18 min · Beyond local accounts</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=linux+pwquality+password+complexity+policy" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=linux+pwquality+password+complexity+policy" data-video-id="RKnoBgvaCDY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

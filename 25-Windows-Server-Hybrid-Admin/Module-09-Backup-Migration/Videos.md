@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~110 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+Azure+Backup+complete+overview" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+Azure+Backup+complete+overview" data-video-id="iX87AomIqTw" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 35 min · Vault, MARS, MABS, VM</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Site+Recovery+ASR+walkthrough+Hyper-V" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Site+Recovery+ASR+walkthrough+Hyper-V" data-video-id="Ys0aZ3GNy3I" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 28 min · 30-sec RPO DR</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Storage+Migration+Service+Windows+Server+walkthrough" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Storage+Migration+Service+Windows+Server+walkthrough" data-video-id="AbBrTe-YLdI" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 25 min · Modernize 2008→2022</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Migrate+server+assessment+migration+complete" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Migrate+server+assessment+migration+complete" data-video-id="pl6jHyizeos" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~55 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=MARS+agent+Azure+Backup+install+configure" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=MARS+agent+Azure+Backup+install+configure" data-video-id="KlDOi5Etu1I" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 14 min · 3-per-day file backup</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=MABS+Microsoft+Azure+Backup+Server+walkthrough" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=MABS+Microsoft+Azure+Backup+Server+walkthrough" data-video-id="5om2h08fwiE" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 18 min · SQL/SP/Exchange VSS</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Recovery+Services+Vault+immutable+soft+delete+ransomware" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Recovery+Services+Vault+immutable+soft+delete+ransomware" data-video-id="TYvlCTY94ms" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=ASR+recovery+plan+orchestration+failover" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=ASR+recovery+plan+orchestration+failover" data-video-id="a4fM7Jma8KU" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 22 min · Scripts + groups</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=ADMT+Active+Directory+Migration+Tool+SID+history" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=ADMT+Active+Directory+Migration+Tool+SID+history" data-video-id="wXsLjzpb9ZA" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 24 min · SID History migration</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+VM+backup+restore+managed+disk+walkthrough" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+VM+backup+restore+managed+disk+walkthrough" data-video-id="wrUwKGAnOms" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

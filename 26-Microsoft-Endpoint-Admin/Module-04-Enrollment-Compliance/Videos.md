@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~90 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Apple+Business+Manager+ABM+Intune+iOS+enrollment+ADE" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Apple+Business+Manager+ABM+Intune+iOS+enrollment+ADE" data-video-id="GrSaEcbyGh8" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 24 min · The zero-touch iOS flow</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Android+Enterprise+four+enrollment+scenarios+Intune" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Android+Enterprise+four+enrollment+scenarios+Intune" data-video-id="Es8iMdSKL9M" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 22 min · All 4 scenarios demoed</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Intune+compliance+policy+Conditional+Access+device+state" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Intune+compliance+policy+Conditional+Access+device+state" data-video-id="jBjiy5niRlw" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 26 min · The full enforcement chain</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Conditional+Access+report+only+mode+testing+policy" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Conditional+Access+report+only+mode+testing+policy" data-video-id="NZbPYfhb5Kc" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~55 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Intune+enrollment+restrictions+block+jailbroken+rooted" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Intune+enrollment+restrictions+block+jailbroken+rooted" data-video-id="KPwJjSxCi3U" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 16 min · Jailbreak, OS version, manufacturer</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=CA+filter+for+devices+device+attribute+targeting" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=CA+filter+for+devices+device+attribute+targeting" data-video-id="HU9_JWUIAhs" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 20 min · When to use vs dynamic group</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Windows+11+device+health+attestation+TPM+compliance" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Windows+11+device+health+attestation+TPM+compliance" data-video-id="EDBRoRh9EX4" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Knox+Mobile+Enrollment+Samsung+Intune+integration" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Knox+Mobile+Enrollment+Samsung+Intune+integration" data-video-id="M1yuzK-Q57g" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 18 min · Bulk Android corporate</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Apple+VPP+volume+purchase+program+Intune+iOS+apps" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Apple+VPP+volume+purchase+program+Intune+iOS+apps" data-video-id="RkYNCj1foHg" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 20 min · Device vs user token</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Conditional+Access+break+glass+account+best+practices" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Conditional+Access+break+glass+account+best+practices" data-video-id="8kVcginLQiE" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

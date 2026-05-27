@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~70 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SELinux+tutorial+beginner+enforcing+permissive" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=SELinux+tutorial+beginner+enforcing+permissive" data-video-id="SikmlArWkFY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 18 min · Modes, contexts, semanage</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SELinux+troubleshooting+ausearch+AVC+denials" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=SELinux+troubleshooting+ausearch+AVC+denials" data-video-id="D6GURCroYog" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 14 min · The right way to fix denials</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=LUKS+cryptsetup+linux+encrypted+disk+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=LUKS+cryptsetup+linux+encrypted+disk+tutorial" data-video-id="OYE0OsWjd6M" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 12 min · luksFormat, luksOpen, crypttab</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=fail2ban+linux+ssh+tutorial+configuration" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=fail2ban+linux+ssh+tutorial+configuration" data-video-id="Z0cDqF6HAxs" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -61,7 +61,7 @@
       <span class="vg-duration">⏱ 10 min · jail.local + bantime</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Linux+auditd+rules+tutorial+ausearch+aureport" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Linux+auditd+rules+tutorial+ausearch+aureport" data-video-id="usCzu3w7H94" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -75,7 +75,7 @@
 ## 📚 Recommended (~35 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AppArmor+ubuntu+profiles+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=AppArmor+ubuntu+profiles+tutorial" data-video-id="NacZftDDVLA" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 11 min · aa-status, profiles, modes</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=GPG+encrypt+sign+linux+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=GPG+encrypt+sign+linux+tutorial" data-video-id="T4lUyJjg6oU" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -93,7 +93,7 @@
       <span class="vg-duration">⏱ 12 min · The full workflow</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=sysctl+linux+hardening+sysctl.d+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=sysctl+linux+hardening+sysctl.d+tutorial" data-video-id="p9QT-vHvD0I" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -107,7 +107,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=CIS+Linux+benchmark+hardening+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=CIS+Linux+benchmark+hardening+tutorial" data-video-id="TVTQcEWMQa0" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 25 min · Industry-standard checklist</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Lynis+linux+security+audit+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Lynis+linux+security+audit+tutorial" data-video-id="xMQz9xH--EY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -125,7 +125,7 @@
       <span class="vg-duration">⏱ 14 min · Scan your own server</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SELinux+booleans+httpd_can_network_connect" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=SELinux+booleans+httpd_can_network_connect" data-video-id="YLqY1ppZiuc" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

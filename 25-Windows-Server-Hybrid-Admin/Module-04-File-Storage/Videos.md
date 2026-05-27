@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~115 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+Storage+Spaces+Direct+S2D+deep+dive" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+Storage+Spaces+Direct+S2D+deep+dive" data-video-id="oa-JSXvcyhI" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 40 min · Architecture + prerequisites</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Microsoft+Mechanics+Storage+Replica+Windows+Server+sync+async" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Microsoft+Mechanics+Storage+Replica+Windows+Server+sync+async" data-video-id="W_t7G7-5ufs" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 25 min · Cross-site DR</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=DFS+Namespaces+DFS+Replication+walkthrough+Windows+Server" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=DFS+Namespaces+DFS+Replication+walkthrough+Windows+Server" data-video-id="7Md7689n1Us" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 30 min · The classic combination</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=ReFS+vs+NTFS+comparison+Windows+Server" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=ReFS+vs+NTFS+comparison+Windows+Server" data-video-id="wvwuf0liD_8" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~60 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=FSRM+File+Server+Resource+Manager+quotas+file+screens" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=FSRM+File+Server+Resource+Manager+quotas+file+screens" data-video-id="WwWMCZST3oo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 20 min · Block ransomware extensions</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=iSCSI+target+server+Windows+Server+walkthrough" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=iSCSI+target+server+Windows+Server+walkthrough" data-video-id="LTkPpdDcdGk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 18 min · CHAP authentication</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Work+Folders+Windows+Server+setup+sync+share" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Work+Folders+Windows+Server+setup+sync+share" data-video-id="ulCFx_A_gtU" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=BranchCache+hosted+distributed+cache+Windows+Server+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=BranchCache+hosted+distributed+cache+Windows+Server+tutorial" data-video-id="nTL6iHSuHlI" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 16 min · WAN optimization</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Scale+Out+File+Server+SOFS+CSV+walkthrough" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Scale+Out+File+Server+SOFS+CSV+walkthrough" data-video-id="aig32E_0VQY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 22 min · Active-active shares</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Storage+Spaces+Direct+resiliency+modes+mirror+parity" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Storage+Spaces+Direct+resiliency+modes+mirror+parity" data-video-id="i8znxUZHItw" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

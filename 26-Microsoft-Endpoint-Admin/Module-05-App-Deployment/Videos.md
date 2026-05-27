@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~85 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Intune+Win32+app+packaging+IntuneWinAppUtil+detection+rule" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Intune+Win32+app+packaging+IntuneWinAppUtil+detection+rule" data-video-id="yILrSTjYQQs" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 28 min · The full packaging walkthrough</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Intune+detection+rule+PowerShell+script+Win32" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Intune+detection+rule+PowerShell+script+Win32" data-video-id="RxjTYNd8gEk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 22 min · The most failure-prone step</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Intune+Win32+app+dependencies+supersedence" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Intune+Win32+app+dependencies+supersedence" data-video-id="uImOeXoa_Dw" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 18 min · Upgrade chains demystified</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=MSIX+modern+app+packaging+Microsoft+Windows" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=MSIX+modern+app+packaging+Microsoft+Windows" data-video-id="BfEsChXXht4" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~50 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Intune+app+configuration+policy+ACP+Outlook+mobile" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Intune+app+configuration+policy+ACP+Outlook+mobile" data-video-id="6-RLhj2DlGU" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 16 min · Per-app config without users</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Managed+Google+Play+Android+Enterprise+Intune+apps" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Managed+Google+Play+Android+Enterprise+Intune+apps" data-video-id="ziJGn2mH0rg" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 18 min · The Android app channel</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Apple+VPP+volume+purchase+program+iOS+apps+Intune" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Apple+VPP+volume+purchase+program+iOS+apps+Intune" data-video-id="RkYNCj1foHg" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Intune+Microsoft+365+Apps+template+deployment+Outlook+Office" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Intune+Microsoft+365+Apps+template+deployment+Outlook+Office" data-video-id="HuNyvP8Rmg8" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 18 min · The Office Click-to-Run shortcut</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Intune+app+stuck+installing+troubleshooting+detection" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Intune+app+stuck+installing+troubleshooting+detection" data-video-id="M--0Qdk9oWQ" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 16 min · The helpdesk's #1 ticket</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Intune+macOS+app+deployment+PKG+DMG+shell+script" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Intune+macOS+app+deployment+PKG+DMG+shell+script" data-video-id="E3uLAQacE5s" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~55 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Type+1+vs+Type+2+hypervisor+explained" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Type+1+vs+Type+2+hypervisor+explained" data-video-id="wPB_C7hOY-8" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 9 min · The core split</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=vSphere+ESXi+vCenter+basics+overview" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=vSphere+ESXi+vCenter+basics+overview" data-video-id="bCDVEfuf7Kg" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 14 min · Enterprise vocabulary</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=vMotion+live+migration+how+it+works" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=vMotion+live+migration+how+it+works" data-video-id="0Q_MPVeuWgc" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 12 min · Memory ship + cutover</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=docker+vs+vm+difference+containers+explained" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=docker+vs+vm+difference+containers+explained" data-video-id="RAaU-Q5LN9s" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~40 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Hyper-V+Generation+1+vs+Generation+2+VM" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Hyper-V+Generation+1+vs+Generation+2+VM" data-video-id="umxi6AHPtW8" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 11 min · BIOS vs UEFI VM</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Proxmox+VE+install+walkthrough+beginner" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Proxmox+VE+install+walkthrough+beginner" data-video-id="jMlo1m7Op7E" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 15 min · KVM HCI for home lab</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+pods+services+deployments+101" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+pods+services+deployments+101" data-video-id="X48VuDVv0do" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=VMware+DRS+HA+anti-affinity+rules" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=VMware+DRS+HA+anti-affinity+rules" data-video-id="i4pR8SsqS3g" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 18 min · Cluster mechanics</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=container+namespaces+cgroups+how+docker+works" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=container+namespaces+cgroups+how+docker+works" data-video-id="8fi7uSYlOdc" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 25 min · Containers from scratch</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Broadcom+VMware+licensing+change+impact+2024" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Broadcom+VMware+licensing+change+impact+2024" data-video-id="1d-hZOJCRrU" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

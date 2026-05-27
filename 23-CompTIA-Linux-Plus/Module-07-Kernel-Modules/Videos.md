@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~60 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=LVM+linux+tutorial+complete+pvcreate+vgcreate+lvcreate" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=LVM+linux+tutorial+complete+pvcreate+vgcreate+lvcreate" data-video-id="AyeLjD9Wa9I" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 20 min · End-to-end stack build</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Linux+kernel+modules+modprobe+lsmod+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Linux+kernel+modules+modprobe+lsmod+tutorial" data-video-id="5YJia3BPuV0" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 12 min · Load, unload, blacklist</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=dmesg+lspci+lsblk+lsusb+hardware+discovery+linux" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=dmesg+lspci+lsblk+lsusb+hardware+discovery+linux" data-video-id="XfqsAkAkTf8" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 13 min · The discovery toolkit</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=LVM+extend+resize+snapshot+linux+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=LVM+extend+resize+snapshot+linux+tutorial" data-video-id="-1NArkjES9s" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~30 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=udev+rules+tutorial+linux+writing" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=udev+rules+tutorial+linux+writing" data-video-id="BOxWrMNXKpU" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 11 min · SYMLINK, MODE, GROUP</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=proc+sysfs+filesystem+linux+explained" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=proc+sysfs+filesystem+linux+explained" data-video-id="NbgIubl3aB4" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 9 min · What's in there + why</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=parted+gdisk+linux+gpt+partition+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=parted+gdisk+linux+gpt+partition+tutorial" data-video-id="B8EatMRp0AA" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=initramfs+dracut+linux+rebuild+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=initramfs+dracut+linux+rebuild+tutorial" data-video-id="S1WsIbxbd_k" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 18 min · When and why to rebuild</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=mdadm+software+RAID+linux+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=mdadm+software+RAID+linux+tutorial" data-video-id="dXAK_73qguw" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 20 min · RAID 0/1/5/10 on Linux</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=dmidecode+linux+tutorial+system+info" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=dmidecode+linux+tutorial+system+info" data-video-id="JxuM3nB4nq0" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

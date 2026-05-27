@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~65 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=ip+command+iproute2+tutorial+linux" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=ip+command+iproute2+tutorial+linux" data-video-id="wWyL6DdHYBc" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 15 min · addr / link / route / neigh</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=OpenSSH+server+sshd+configuration+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=OpenSSH+server+sshd+configuration+tutorial" data-video-id="3FKsdbjzBcc" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 14 min · PermitRootLogin, keys, Match</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=ssh+key+based+authentication+tutorial+ssh-copy-id" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=ssh+key+based+authentication+tutorial+ssh-copy-id" data-video-id="hHs98hLtZJo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 12 min · ed25519, authorized_keys, modes</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=firewalld+zones+tutorial+RHEL+CentOS" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=firewalld+zones+tutorial+RHEL+CentOS" data-video-id="9xR4KsGUGRk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -61,7 +61,7 @@
       <span class="vg-duration">⏱ 13 min · Zones, --permanent, rich rules</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=nftables+tutorial+replace+iptables" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=nftables+tutorial+replace+iptables" data-video-id="EGKhIljDPCw" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -75,7 +75,7 @@
 ## 📚 Recommended (~35 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=ss+command+linux+tutorial+netstat+replacement" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=ss+command+linux+tutorial+netstat+replacement" data-video-id="ewMsdN2GFcc" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 9 min · -tulpn and beyond</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=ssh+port+forwarding+local+remote+dynamic+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=ssh+port+forwarding+local+remote+dynamic+tutorial" data-video-id="ngbSsMAYYsE" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -93,7 +93,7 @@
       <span class="vg-duration">⏱ 12 min · The three forwarding flavors</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=nmcli+tutorial+networkmanager+command+line" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=nmcli+tutorial+networkmanager+command+line" data-video-id="v-soSvSsw18" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -107,7 +107,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=tcpdump+wireshark+linux+packet+capture+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=tcpdump+wireshark+linux+packet+capture+tutorial" data-video-id="5pDepRoEXNs" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 18 min · Filters, -w for Wireshark</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=netplan+ubuntu+server+static+ip+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=netplan+ubuntu+server+static+ip+tutorial" data-video-id="ShiPYcw6qXw" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -125,7 +125,7 @@
       <span class="vg-duration">⏱ 10 min · YAML config + apply</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=ufw+ubuntu+firewall+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=ufw+ubuntu+firewall+tutorial" data-video-id="s1SjNTNnUPk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

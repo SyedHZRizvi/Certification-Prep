@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~60 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+SK0-005+Windows+Server+roles+features" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+SK0-005+Windows+Server+roles+features" data-video-id="3e3EytWUPV8" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 12 min · The catalog</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=systemd+systemctl+tutorial+sysadmin" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=systemd+systemctl+tutorial+sysadmin" data-video-id="5JVBpXiYMKo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 15 min · CLI muscle memory</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Active+Directory+Domain+Services+overview+beginner" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Active+Directory+Domain+Services+overview+beginner" data-video-id="5MBo8vXY1rk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 14 min · Forest / Domain / OU / GPO</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SSH+vs+RDP+vs+WinRM+remote+management" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=SSH+vs+RDP+vs+WinRM+remote+management" data-video-id="ghGw7AWElj0" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~40 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Windows+Server+2022+Server+Core+install+walkthrough" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Windows+Server+2022+Server+Core+install+walkthrough" data-video-id="m_rAgusirbw" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 14 min · GUI-less Windows</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=PowerShell+remoting+enable+pssession+invoke-command" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=PowerShell+remoting+enable+pssession+invoke-command" data-video-id="1vUs_EO1AN4" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 12 min · Enter-PSSession + Invoke-Command</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Linux+permissions+chmod+chown+SUID+sticky+bit" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Linux+permissions+chmod+chown+SUID+sticky+bit" data-video-id="Z3_4RmYTO7s" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=DHCP+DORA+wireshark+walkthrough" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=DHCP+DORA+wireshark+walkthrough" data-video-id="OFa3NYadCmU" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 16 min · See the packets</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Kerberos+authentication+explained+ticket+granting" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Kerberos+authentication+explained+ticket+granting" data-video-id="qW361k3-BtU" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 18 min · Tickets, TGT, skew</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Ansible+basics+playbook+windows+linux" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Ansible+basics+playbook+windows+linux" data-video-id="N7tgLVCXup4" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

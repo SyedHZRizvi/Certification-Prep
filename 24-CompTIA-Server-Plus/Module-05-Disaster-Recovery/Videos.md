@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~55 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+SK0-005+RTO+RPO+disaster+recovery" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+SK0-005+RTO+RPO+disaster+recovery" data-video-id="YIZfARjB4Eo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 9 min · The two numbers</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=full+incremental+differential+backup+explained" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=full+incremental+differential+backup+explained" data-video-id="k6dosJ9phWY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 14 min · Timeline + restore</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=3-2-1+backup+rule+explained" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=3-2-1+backup+rule+explained" data-video-id="97vxkZ-xX2g" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 8 min · Universal principle</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=hot+warm+cold+disaster+recovery+site" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=hot+warm+cold+disaster+recovery+site" data-video-id="NiHBz5jOs4o" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~40 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=synthetic+full+backup+explained+Veeam" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=synthetic+full+backup+explained+Veeam" data-video-id="bvSWYwhMeAY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 12 min · Build-on-server full</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=GFS+grandfather+father+son+tape+rotation" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=GFS+grandfather+father+son+tape+rotation" data-video-id="wAvj90bYnPc" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 10 min · Classic retention design</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=immutable+backups+ransomware+protection" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=immutable+backups+ransomware+protection" data-video-id="p9pgDwrtp_A" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=business+continuity+plan+BCP+overview" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=business+continuity+plan+BCP+overview" data-video-id="7VhDqXLFhSI" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 18 min · BCP = business, DR = IT</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SQL+Server+AlwaysOn+availability+group+walkthrough" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=SQL+Server+AlwaysOn+availability+group+walkthrough" data-video-id="76EQ0jNW3cM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 20 min · App-level replication</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Code+Spaces+AWS+disaster+2014+post+mortem" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Code+Spaces+AWS+disaster+2014+post+mortem" data-video-id="4fPVPBJvmzQ" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

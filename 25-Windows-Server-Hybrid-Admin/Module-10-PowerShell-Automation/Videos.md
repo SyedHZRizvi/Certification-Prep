@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~95 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=PowerShell+7+vs+5.1+differences+migration" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=PowerShell+7+vs+5.1+differences+migration" data-video-id="kWCqv0GKfaM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 20 min · powershell.exe vs pwsh.exe</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=PowerShell+remoting+WinRM+Invoke-Command+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=PowerShell+remoting+WinRM+Invoke-Command+tutorial" data-video-id="1vUs_EO1AN4" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 22 min · 5985/5986, sessions</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Just+Enough+Administration+JEA+walkthrough+PowerShell" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Just+Enough+Administration+JEA+walkthrough+PowerShell" data-video-id="MKzDUkshF0g" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 25 min · psrc / pssc / virtual accounts</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Desired+State+Configuration+DSC+walkthrough+Windows" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Desired+State+Configuration+DSC+walkthrough+Windows" data-video-id="RPywQaSMtUo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~55 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Machine+Configuration+guest+config+walkthrough" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Machine+Configuration+guest+config+walkthrough" data-video-id="75MTIftSEfk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 22 min · Replaces Automation DSC</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Automation+runbook+tutorial+managed+identity" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Automation+runbook+tutorial+managed+identity" data-video-id="kQFEFZyG-k8" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 18 min · Schedule + MI auth</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Automanage+VM+best+practices+walkthrough" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Automanage+VM+best+practices+walkthrough" data-video-id="ciDCeX6i4_A" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Hybrid+Runbook+Worker+Azure+Automation+install" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Hybrid+Runbook+Worker+Azure+Automation+install" data-video-id="nlwoQBo8JTI" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 16 min · Arc-based modern path</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=PowerShell+SSH+remoting+Linux+cross+platform" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=PowerShell+SSH+remoting+Linux+cross+platform" data-video-id="DGRgTAAQe-k" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 14 min · PS 7 to Linux</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=infrastructure+as+code+terraform+DSC+windows+server" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=infrastructure+as+code+terraform+DSC+windows+server" data-video-id="wU530ndka0c" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

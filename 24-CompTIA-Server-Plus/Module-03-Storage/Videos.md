@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~55 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+SK0-005+RAID+levels+explained" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+SK0-005+RAID+levels+explained" data-video-id="A_UXW9lUCxY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 14 min · The core 5 visually</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SAN+vs+NAS+explained+block+vs+file" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=SAN+vs+NAS+explained+block+vs+file" data-video-id="3r9RGJ0_Bls" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 14 min · The categorical split</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=iSCSI+setup+initiator+target+walkthrough" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=iSCSI+setup+initiator+target+walkthrough" data-video-id="nhUy_owTw0o" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 13 min · Hands-on demo</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=multipath+IO+MPIO+storage+demo" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=multipath+IO+MPIO+storage+demo" data-video-id="GrX_6Y9deD0" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~35 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=thin+vs+thick+provisioning+VMware+explained" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=thin+vs+thick+provisioning+VMware+explained" data-video-id="Ks6XgT69ZLc" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 11 min · Capacity tradeoffs</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=NFS+vs+SMB+protocols+server" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=NFS+vs+SMB+protocols+server" data-video-id="bZUP5YGeowM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 12 min · Pick the right one</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=storage+deduplication+how+it+works" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=storage+deduplication+how+it+works" data-video-id="ytP89DVumYY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=fibre+channel+SAN+zoning+demo" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=fibre+channel+SAN+zoning+demo" data-video-id="QFx2CFgNnuE" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 18 min · WWPN + zoning</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=ZFS+filesystem+overview+sysadmin" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=ZFS+filesystem+overview+sysadmin" data-video-id="Hj4lCqQckZM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 25 min · CoW + snapshots + zpool</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=NVMe+over+Fabrics+RoCE+TCP+overview" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=NVMe+over+Fabrics+RoCE+TCP+overview" data-video-id="9KGBtTFyI9A" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~50 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=apt+package+manager+tutorial+ubuntu+debian" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=apt+package+manager+tutorial+ubuntu+debian" data-video-id="i7OnnalqwQo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 14 min · install, search, upgrade, hold</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=dnf+rpm+tutorial+RHEL+Fedora+package+management" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=dnf+rpm+tutorial+RHEL+Fedora+package+management" data-video-id="a4zF74x4q9g" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 13 min · history, provides, signatures</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=dpkg+commands+tutorial+linux" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=dpkg+commands+tutorial+linux" data-video-id="BOHf2gYTzz4" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 11 min · -i, -L, -S in depth</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=snap+vs+flatpak+vs+appimage+comparison" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=snap+vs+flatpak+vs+appimage+comparison" data-video-id="3YHIa3le_1k" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~30 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=configure+make+install+linux+source+compilation" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=configure+make+install+linux+source+compilation" data-video-id="8PPsRowfJKA" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 10 min · Building from source</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=apt+repository+add+gpg+signed+by+keyring" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=apt+repository+add+gpg+signed+by+keyring" data-video-id="gUqRptoG_AY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 11 min · signed-by, keyrings dir</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=EPEL+repository+RHEL+CentOS+enable" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=EPEL+repository+RHEL+CentOS+enable" data-video-id="7-L6jktoZKg" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=apt+pinning+preferences+priority+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=apt+pinning+preferences+priority+tutorial" data-video-id="Hm0d-jvxPF4" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 12 min · The under-tested superpower</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=dnf+history+undo+rollback+RHEL" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=dnf+history+undo+rollback+RHEL" data-video-id="oQe__LVXS8U" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 9 min · One-command rollback</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=build+RPM+package+from+scratch+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=build+RPM+package+from+scratch+tutorial" data-video-id="sNDs6AoNmA8" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

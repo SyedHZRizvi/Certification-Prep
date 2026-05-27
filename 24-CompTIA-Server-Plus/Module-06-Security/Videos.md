@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~55 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+SY0-701+RBAC+DAC+MAC+ABAC" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+SY0-701+RBAC+DAC+MAC+ABAC" data-video-id="qddF3O1wcTU" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 10 min · Access models</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Secure+Boot+UEFI+TPM+explained" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Secure+Boot+UEFI+TPM+explained" data-video-id="WRFnOh_pqX8" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 12 min · Firmware trust chain</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=CIS+benchmark+hardening+walkthrough" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=CIS+benchmark+hardening+walkthrough" data-video-id="kN6ATyzjNGA" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 14 min · Apply L1 / L2</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=patch+management+best+practices+server" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=patch+management+best+practices+server" data-video-id="nyg5aXbX2Hk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~40 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=privileged+access+management+PAM+overview" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=privileged+access+management+PAM+overview" data-video-id="Lv09C4JYtnM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 12 min · Why standing access kills</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=EDR+vs+antivirus+vs+HIDS+HIPS+comparison" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=EDR+vs+antivirus+vs+HIDS+HIPS+comparison" data-video-id="tUDbdaM4HwM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 12 min · Modern endpoint defense</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=BitLocker+TPM+pre+boot+authentication" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=BitLocker+TPM+pre+boot+authentication" data-video-id="N5QSVvDm9io" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Tiered+administration+Active+Directory+Tier+0+1+2" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Tiered+administration+Active+Directory+Tier+0+1+2" data-video-id="K4EOaJOxDdI" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 18 min · Reduce lateral movement</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Target+2013+breach+HVAC+vendor+lessons" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Target+2013+breach+HVAC+vendor+lessons" data-video-id="_5TetBQrAlY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 22 min · Vendor access + segmentation</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SELinux+vs+AppArmor+linux+security+modules" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=SELinux+vs+AppArmor+linux+security+modules" data-video-id="8lGK80UYeSY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

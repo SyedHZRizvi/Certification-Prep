@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~55 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Linux+boot+process+explained+BIOS+UEFI+GRUB+kernel+initramfs" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Linux+boot+process+explained+BIOS+UEFI+GRUB+kernel+initramfs" data-video-id="Masm_ec0JiQ" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 14 min · The 6-stage boot chain</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=GRUB2+configuration+tutorial+Linux" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=GRUB2+configuration+tutorial+Linux" data-video-id="LhhqiDjJNDo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 12 min · /etc/default/grub + mkconfig</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=systemd+tutorial+systemctl+unit+files+for+beginners" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=systemd+tutorial+systemctl+unit+files+for+beginners" data-video-id="5JVBpXiYMKo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 18 min · Units, targets, status</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=journalctl+tutorial+systemd+logs" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=journalctl+tutorial+systemd+logs" data-video-id="1xX6D5goY0c" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~30 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=writing+systemd+unit+files+from+scratch+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=writing+systemd+unit+files+from+scratch+tutorial" data-video-id="N1vgvhiyq0E" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 13 min · simple, oneshot, notify types</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=initramfs+initrd+dracut+linux+explained" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=initramfs+initrd+dracut+linux+explained" data-video-id="UBzkja634eo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 9 min · Why it exists, when to rebuild</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Linux+rescue+single+user+mode+grub+systemd" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Linux+rescue+single+user+mode+grub+systemd" data-video-id="7zfd904U1oo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Lennart+Poettering+systemd+talk+rethinking+pid+1" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Lennart+Poettering+systemd+talk+rethinking+pid+1" data-video-id="orL57i-3Hpc" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 45 min · The history-of-systemd talk</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=UEFI+vs+BIOS+secure+boot+explained" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=UEFI+vs+BIOS+secure+boot+explained" data-video-id="R1EOEEbE_dQ" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 16 min · Modern firmware in depth</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=systemd+timers+vs+cron+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=systemd+timers+vs+cron+tutorial" data-video-id="n6BuUgkZ5T0" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

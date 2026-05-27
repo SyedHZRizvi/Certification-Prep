@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~60 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=bash+scripting+tutorial+beginners+full+course" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=bash+scripting+tutorial+beginners+full+course" data-video-id="2733cRPudvI" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 25 min · Variables, loops, conditionals</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=bash+set+euo+pipefail+defensive+scripting" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=bash+set+euo+pipefail+defensive+scripting" data-video-id="tPAwrK3rg_s" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 10 min · The defensive header</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=sed+awk+grep+tutorial+linux+command+line" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=sed+awk+grep+tutorial+linux+command+line" data-video-id="yCTnihfbPCo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 15 min · The text-processing trio</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=cron+tutorial+crontab+linux" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=cron+tutorial+crontab+linux" data-video-id="BhxAMi9QYjk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~35 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=systemd+timers+vs+cron+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=systemd+timers+vs+cron+tutorial" data-video-id="DixhIrgMy3M" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 12 min · OnCalendar, Persistent=true</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=shellcheck+tutorial+bash+linting" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=shellcheck+tutorial+bash+linting" data-video-id="X3BIc9EHBuk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 9 min · Catches 90% of bugs before runtime</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=bash+functions+tutorial+local+return" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=bash+functions+tutorial+local+return" data-video-id="Ze6NbMyTr_U" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=awk+programming+language+tutorial+gawk" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=awk+programming+language+tutorial+gawk" data-video-id="zmYhR8cUX90" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 18 min · BEGIN/END, associative arrays</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=bash+parameter+expansion+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=bash+parameter+expansion+tutorial" data-video-id="S4D9KaW3ERw" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 11 min · The cryptic # / % / / forms</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=regex+tutorial+grep+sed+linux" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=regex+tutorial+grep+sed+linux" data-video-id="VNVjPuLdb64" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

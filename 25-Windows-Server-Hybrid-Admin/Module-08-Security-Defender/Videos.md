@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~110 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+Defender+for+Servers+P1+P2+walkthrough" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+Defender+for+Servers+P1+P2+walkthrough" data-video-id="Wvl8CrUjc_8" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 30 min · Pick the right SKU</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Microsoft+Defender+for+Endpoint+overview+EDR+walkthrough" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Microsoft+Defender+for+Endpoint+overview+EDR+walkthrough" data-video-id="EoMJ81-pclY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 25 min · EDR + ASR + MDVM</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=WDAC+Windows+Defender+Application+Control+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=WDAC+Windows+Defender+Application+Control+tutorial" data-video-id="Nj5vBloAWy0" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 22 min · Audit + Enforce</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Credential+Guard+VBS+HVCI+Windows+Server+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Credential+Guard+VBS+HVCI+Windows+Server+tutorial" data-video-id="xnhW6fjwa8c" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~50 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Just+In+Time+VM+access+Defender+for+Cloud" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Just+In+Time+VM+access+Defender+for+Cloud" data-video-id="vsaABCFGx3A" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 14 min · Time-bound port opening</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Secured+Core+Server+Windows+Server+2022+walkthrough" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Secured+Core+Server+Windows+Server+2022+walkthrough" data-video-id="0lwwM-qhXMQ" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 18 min · Hardware-rooted trust</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Attack+Surface+Reduction+ASR+rules+Microsoft+Defender" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Attack+Surface+Reduction+ASR+rules+Microsoft+Defender" data-video-id="BFr0RJuA0vk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Microsoft+Tier+0+1+2+administrative+model+PAW" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Microsoft+Tier+0+1+2+administrative+model+PAW" data-video-id="K4EOaJOxDdI" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 28 min · Admin segregation</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Protected+Users+group+Active+Directory+Kerberos+NTLM" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Protected+Users+group+Active+Directory+Kerberos+NTLM" data-video-id="eenW8ZPVAGw" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 20 min · Tier-0 admin hardening</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Defender+for+Cloud+regulatory+compliance+secure+score" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Defender+for+Cloud+regulatory+compliance+secure+score" data-video-id="Y8iz9invZHo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
