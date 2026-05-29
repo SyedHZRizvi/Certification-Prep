@@ -51,11 +51,16 @@ EXPECTED_COURSES = {
     "25-Windows-Server-Hybrid-Admin":           10,
     "26-Microsoft-Endpoint-Admin":              8,
     "27-Microsoft-Identity-Access-Admin":       8,
+    # AI & Generative AI track (Cert Hub originals + AWS ML Specialty)
+    "28-Claude-Architect":                      8,
+    "29-Prompt-Engineering-Specialist":         8,
+    "30-Generative-AI-Engineer":                10,
+    "31-AWS-ML-Specialty":                      10,
 }
-EXPECTED_TOTAL_MODULES = sum(EXPECTED_COURSES.values())  # 178 + 62 = 240
-EXPECTED_TOTAL_PRACTICE_EXAMS = len(EXPECTED_COURSES) * 3  # 27 × 3 = 81
-MIN_TOTAL_COURSE_MD_FILES = 1100  # was 850 with 20 courses; ~250 added with 7-course IT Sysadmin track
-MIN_YT_SEARCH_URLS = 2200         # was 1700; ~500 added with 62 new modules × ~8-10 cards each
+EXPECTED_TOTAL_MODULES = sum(EXPECTED_COURSES.values())  # 240 + 36 = 276
+EXPECTED_TOTAL_PRACTICE_EXAMS = len(EXPECTED_COURSES) * 3  # 31 × 3 = 93
+MIN_TOTAL_COURSE_MD_FILES = 1280  # was 1100 with 27 courses; ~180 added with 4-course AI track
+MIN_YT_SEARCH_URLS = 2500         # was 2200; ~300 added with 36 new modules × ~8-10 cards each
 
 PROTECTED_FILES = [
     "_layouts/default.html",

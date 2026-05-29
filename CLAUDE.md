@@ -228,17 +228,19 @@ This tag is the canonical *historical* snapshot of the site as of 2026-05-20. It
 - Freshness mechanism (`/version.txt` + `assets/freshness.js`) wired so future deploys auto-bust stale browser caches
 - The `scripts/verify-baseline.py` script passing (15 invariants)
 
-### Current state (post-IT-Sysadmin expansion, 2026-05-27)
+### Current state (post-AI-track expansion, 2026-05-27)
 
 The live site has now grown to:
 
-- **27** course directories
-- **240** modules
-- **81** practice exams (60 partials + 21 full-length mocks)
-- **1,135** markdown files inside the course directories
-- **2,359** YouTube search URLs (still 0 direct YouTube URLs anywhere)
-- **11,000+** practice questions across all quizzes + flashcards + mock exams
-- **850** total study hours
+- **31** course directories (added AI & Generative AI track: Claude Architect, Prompt Engineering Specialist, Generative AI Engineer, AWS ML Specialty)
+- **276** modules
+- **93** practice exams (62 partials + 31 full-length mocks)
+- **1,280+** markdown files inside the course directories
+- **2,500+** YouTube search URLs (still 0 direct YouTube URLs anywhere)
+- **12,500+** practice questions across all quizzes + flashcards + mock exams
+- **1,000+** total study hours
+
+The **AI & Generative AI** category is its own homepage section containing 6 courses: AIF-C01 + AI-102 (moved from "IT, Cloud & Systems Administration") + 4 Cert-Hub-originals (Claude Architect, Prompt Engineering Specialist, Generative AI Engineer, AWS ML Specialty).
 
 `scripts/verify-baseline.py` enforces the current totals (all 15 invariants still passing).
 
