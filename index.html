@@ -105,16 +105,58 @@ sitemap: false
       transform: translateY(-4px);
       box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
     }
+    /* ============== HERO PILLS — 31 clickable course pills ==============
+       Every pill on the hero row is now an anchor (clickable), uniformly
+       sized, with a category-coded gradient background. Text format is
+       consistent across all 31: <icon> <Course Name> · <Cert Code or
+       Designation>. Hover lifts the pill and brightens the gradient. */
     .pill {
-      display: inline-flex; align-items: center; gap: .5rem;
-      padding: .55rem 1.15rem; border-radius: 9999px;
-      font-size: 1rem; font-weight: 600; letter-spacing: .02em;
+      display: inline-flex; align-items: center; gap: .45rem;
+      padding: .5rem 1rem; border-radius: 9999px;
+      font-size: 0.875rem; font-weight: 600; letter-spacing: .015em;
+      color: #ffffff;
+      text-decoration: none;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.25);
+      box-shadow:
+        0 4px 12px -3px rgba(0,0,0,0.35),
+        inset 0 1px 0 rgba(255,255,255,0.22),
+        inset 0 -1px 0 rgba(0,0,0,0.08),
+        0 0 0 1px rgba(255,255,255,0.10);
+      transition: transform .2s cubic-bezier(0.34, 1.56, 0.64, 1),
+                  filter .15s ease,
+                  box-shadow .2s ease;
+      white-space: nowrap;
     }
-    .pill .pill-emoji { font-size: 1.25rem; line-height: 1; }
+    a.pill:hover {
+      transform: translateY(-2px) scale(1.04);
+      filter: brightness(1.12) saturate(1.1);
+      box-shadow:
+        0 8px 20px -4px rgba(0,0,0,0.45),
+        inset 0 1px 0 rgba(255,255,255,0.30),
+        inset 0 -1px 0 rgba(0,0,0,0.10),
+        0 0 0 1px rgba(255,255,255,0.20);
+    }
+    .pill .pill-emoji { font-size: 1.05rem; line-height: 1; filter: drop-shadow(0 1px 2px rgba(0,0,0,0.30)); }
+    .pill .pill-code  { opacity: 0.78; font-weight: 500; letter-spacing: 0.02em; }
     @media (min-width: 640px) {
-      .pill { padding: .65rem 1.35rem; font-size: 1.0625rem; }
-      .pill .pill-emoji { font-size: 1.375rem; }
+      .pill { padding: .55rem 1.15rem; font-size: 0.9375rem; }
+      .pill .pill-emoji { font-size: 1.15rem; }
     }
+
+    /* Per-category gradient backgrounds — 6 color families, distinct enough
+       that the eye can group courses visually while scanning the row. */
+    .pill-pm        { background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%); }   /* Project Mgmt: blue→violet */
+    .pill-comptia   { background: linear-gradient(135deg, #dc2626 0%, #ea580c 100%); }   /* CompTIA: red→orange */
+    .pill-aws       { background: linear-gradient(135deg, #f59e0b 0%, #ea580c 100%); }   /* AWS: amber→orange */
+    .pill-azure     { background: linear-gradient(135deg, #0891b2 0%, #1d4ed8 100%); }   /* Azure: cyan→blue */
+    .pill-ms        { background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%); }   /* MS Enterprise: indigo→violet */
+    .pill-ai        { background: linear-gradient(135deg, #d946ef 0%, #ec4899 100%); }   /* AI & GenAI: fuchsia→pink (highlighted) */
+    .pill-ai-aws    { background: linear-gradient(135deg, #ef4444 0%, #f97316 100%); }   /* AWS ML Specialty: red→orange */
+    .pill-ai-vendor { background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%); }   /* AIF + AI-102: purple→pink */
+    .pill-scm       { background: linear-gradient(135deg, #059669 0%, #14b8a6 100%); }   /* Supply Chain: emerald→teal */
+    .pill-mkt       { background: linear-gradient(135deg, #f43f5e 0%, #d946ef 100%); }   /* AI Marketing: rose→fuchsia */
+    .pill-btc       { background: linear-gradient(135deg, #f59e0b 0%, #ca8a04 100%); }   /* Bitcoin: amber→yellow */
+    .pill-ecom      { background: linear-gradient(135deg, #db2777 0%, #9333ea 100%); }   /* E-Commerce: pink→purple */
     .nav-blur { backdrop-filter: saturate(150%) blur(12px); }
 
     /* ============== SLEEK MINIMAL NAV (v3) ==============
@@ -1218,46 +1260,46 @@ sitemap: false
            visitors see one consistent sequence everywhere:
               Project Management → IT, Cloud & Systems Administration → AI & Generative AI
               → Supply Chain → AI Marketing → Bitcoin & E-Commerce. -->
-      <div class="flex flex-wrap justify-center gap-1.5 mb-10 max-w-5xl mx-auto px-4">
+      <div class="flex flex-wrap justify-center gap-2 mb-10 max-w-6xl mx-auto px-4">
         <!-- Project Management (2) -->
-        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20">🏃 Scrum Master</span>
-        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20">🧭 PMP</span>
+        <a href="01-Scrum-Master/" class="pill pill-pm"><span class="pill-emoji">🏃</span> Scrum Master <span class="pill-code">· PSM I</span></a>
+        <a href="02-PMP/" class="pill pill-pm"><span class="pill-emoji">🧭</span> PMP <span class="pill-code">· PMP</span></a>
         <!-- CompTIA foundation (5) -->
-        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20">🛠️ CompTIA A+</span>
-        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20">🌐 Network+ N10-009</span>
-        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20">🐧 Linux+ XK0-005</span>
-        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20">🗄️ Server+ SK0-005</span>
-        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20">🛡️ Security+ SY0-701</span>
+        <a href="21-CompTIA-A-Plus/" class="pill pill-comptia"><span class="pill-emoji">🛠️</span> CompTIA A+ <span class="pill-code">· 220-1101/1102</span></a>
+        <a href="22-CompTIA-Network-Plus/" class="pill pill-comptia"><span class="pill-emoji">🌐</span> CompTIA Network+ <span class="pill-code">· N10-009</span></a>
+        <a href="23-CompTIA-Linux-Plus/" class="pill pill-comptia"><span class="pill-emoji">🐧</span> CompTIA Linux+ <span class="pill-code">· XK0-005</span></a>
+        <a href="24-CompTIA-Server-Plus/" class="pill pill-comptia"><span class="pill-emoji">🗄️</span> CompTIA Server+ <span class="pill-code">· SK0-005</span></a>
+        <a href="09-CompTIA-Security-Plus/" class="pill pill-comptia"><span class="pill-emoji">🛡️</span> CompTIA Security+ <span class="pill-code">· SY0-701</span></a>
         <!-- Cloud platforms (AWS · Azure) (4) -->
-        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20">☁️ AWS CLF-C02</span>
-        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20">🏗️ AWS SAA-C03</span>
-        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20">🌥️ AZ-900</span>
-        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20">🛠️ AZ-104</span>
+        <a href="03-AWS-Cloud-Practitioner/" class="pill pill-aws"><span class="pill-emoji">☁️</span> AWS Cloud Practitioner <span class="pill-code">· CLF-C02</span></a>
+        <a href="04-AWS-Solutions-Architect-Associate/" class="pill pill-aws"><span class="pill-emoji">🏗️</span> AWS Solutions Architect <span class="pill-code">· SAA-C03</span></a>
+        <a href="05-Azure-Fundamentals/" class="pill pill-azure"><span class="pill-emoji">🌥️</span> Azure Fundamentals <span class="pill-code">· AZ-900</span></a>
+        <a href="06-Azure-Administrator/" class="pill pill-azure"><span class="pill-emoji">🛠️</span> Azure Administrator <span class="pill-code">· AZ-104</span></a>
         <!-- Microsoft enterprise admin (3) -->
-        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20">🪟 Windows Server AZ-800/801</span>
-        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20">💻 Endpoint MD-102</span>
-        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20">🪪 Identity SC-300</span>
+        <a href="25-Windows-Server-Hybrid-Admin/" class="pill pill-ms"><span class="pill-emoji">🪟</span> Windows Server Hybrid <span class="pill-code">· AZ-800/801</span></a>
+        <a href="26-Microsoft-Endpoint-Admin/" class="pill pill-ms"><span class="pill-emoji">💻</span> Endpoint Administrator <span class="pill-code">· MD-102</span></a>
+        <a href="27-Microsoft-Identity-Access-Admin/" class="pill pill-ms"><span class="pill-emoji">🪪</span> Identity &amp; Access Admin <span class="pill-code">· SC-300</span></a>
         <!-- AI & Generative AI (6) -->
-        <span class="pill bg-gradient-to-r from-indigo-600/30 to-violet-600/30 text-white ring-1 ring-violet-300/40 font-semibold">🧬 Claude Architect</span>
-        <span class="pill bg-gradient-to-r from-fuchsia-600/30 to-pink-600/30 text-white ring-1 ring-pink-300/40 font-semibold">✍️ Prompt Engineering</span>
-        <span class="pill bg-gradient-to-r from-yellow-500/30 to-orange-600/30 text-white ring-1 ring-amber-300/40 font-semibold">⚡ Generative AI Engineer</span>
-        <span class="pill bg-gradient-to-r from-red-500/30 to-orange-800/30 text-white ring-1 ring-orange-300/40 font-semibold">🔬 AWS ML Specialty</span>
-        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20">🤖 AIF-C01</span>
-        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20">🧠 AI-102</span>
+        <a href="28-Claude-Architect/" class="pill pill-ai"><span class="pill-emoji">🧬</span> Claude Architect <span class="pill-code">· Cert Hub Original</span></a>
+        <a href="29-Prompt-Engineering-Specialist/" class="pill pill-ai"><span class="pill-emoji">✍️</span> Prompt Engineering <span class="pill-code">· Cert Hub Original</span></a>
+        <a href="30-Generative-AI-Engineer/" class="pill pill-ai"><span class="pill-emoji">⚡</span> Generative AI Engineer <span class="pill-code">· Cert Hub Original</span></a>
+        <a href="31-AWS-ML-Specialty/" class="pill pill-ai-aws"><span class="pill-emoji">🔬</span> AWS ML Specialty <span class="pill-code">· MLS-C01</span></a>
+        <a href="07-AWS-AI-Practitioner/" class="pill pill-ai-vendor"><span class="pill-emoji">🤖</span> AWS AI Practitioner <span class="pill-code">· AIF-C01</span></a>
+        <a href="08-Azure-AI-Engineer/" class="pill pill-ai-vendor"><span class="pill-emoji">🧠</span> Azure AI Engineer <span class="pill-code">· AI-102</span></a>
         <!-- Supply Chain & Operations (4) -->
-        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20">🏭 ASCM CPIM</span>
-        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20">📦 ASCM CSCP</span>
-        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20">🚛 ASCM CLTD</span>
-        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20">🤝 ISM CPSM</span>
+        <a href="11-ASCM-CPIM/" class="pill pill-scm"><span class="pill-emoji">🏭</span> ASCM CPIM <span class="pill-code">· CPIM</span></a>
+        <a href="10-ASCM-CSCP/" class="pill pill-scm"><span class="pill-emoji">📦</span> ASCM CSCP <span class="pill-code">· CSCP</span></a>
+        <a href="12-ASCM-CLTD/" class="pill pill-scm"><span class="pill-emoji">🚛</span> ASCM CLTD <span class="pill-code">· CLTD</span></a>
+        <a href="13-ISM-CPSM/" class="pill pill-scm"><span class="pill-emoji">🤝</span> ISM CPSM <span class="pill-code">· CPSM</span></a>
         <!-- AI-Based Digital Marketing (5) -->
-        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20">📣 Digital Marketing — Foundations</span>
-        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20">🎯 Digital Marketing — Practitioner</span>
-        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20">📈 Digital Marketing — Strategist</span>
-        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20">💼 Digital Marketing — Entrepreneur</span>
-        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20">🏆 Capstone Portfolio</span>
+        <a href="14-AI-Marketing-Foundations/" class="pill pill-mkt"><span class="pill-emoji">📣</span> AI Marketing — Foundations <span class="pill-code">· HubSpot Inbound</span></a>
+        <a href="15-AI-Marketing-Practitioner/" class="pill pill-mkt"><span class="pill-emoji">🎯</span> AI Marketing — Practitioner <span class="pill-code">· Google Ads</span></a>
+        <a href="16-AI-Marketing-Strategist/" class="pill pill-mkt"><span class="pill-emoji">📈</span> AI Marketing — Strategist <span class="pill-code">· GA4 IQ</span></a>
+        <a href="17-AI-Marketing-Entrepreneur/" class="pill pill-mkt"><span class="pill-emoji">💼</span> AI Marketing — Entrepreneur <span class="pill-code">· OMCP</span></a>
+        <a href="18-AI-Marketing-Capstone-Portfolio/" class="pill pill-mkt"><span class="pill-emoji">🏆</span> AI Marketing — Capstone <span class="pill-code">· DMI Diploma</span></a>
         <!-- Bitcoin & E-Commerce (2) -->
-        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20">₿ Bitcoin &amp; Cryptocurrency</span>
-        <span class="pill bg-white/10 text-slate-200 ring-1 ring-white/20">🛒 E-Commerce</span>
+        <a href="19-Bitcoin-Cryptocurrency/" class="pill pill-btc"><span class="pill-emoji">₿</span> Bitcoin &amp; Cryptocurrency <span class="pill-code">· CBP</span></a>
+        <a href="20-E-Commerce/" class="pill pill-ecom"><span class="pill-emoji">🛒</span> E-Commerce <span class="pill-code">· Google D-M &amp; E-C</span></a>
       </div>
       <div class="flex flex-col sm:flex-row gap-3 justify-center items-center flex-wrap">
         <a href="enroll/" class="btn-primary">
