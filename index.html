@@ -105,58 +105,55 @@ sitemap: false
       transform: translateY(-4px);
       box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
     }
-    /* ============== HERO PILLS — 31 clickable course pills ==============
-       Every pill on the hero row is now an anchor (clickable), uniformly
-       sized, with a category-coded gradient background. Text format is
-       consistent across all 31: <icon> <Course Name> · <Cert Code or
-       Designation>. Hover lifts the pill and brightens the gradient. */
+    /* ============== HERO PILLS — sleek minimal style ==============
+       Uniform subtle treatment matching the top nav design: dark
+       semi-transparent background, light text, no per-category
+       gradients. Visual differentiation comes from hover (text
+       brightens + bg lifts) rather than colored backgrounds.
+       Still clickable links. Category classes kept in HTML for
+       potential future targeted styling but currently inert. */
     .pill {
       display: inline-flex; align-items: center; gap: .45rem;
-      padding: .5rem 1rem; border-radius: 9999px;
-      font-size: 0.875rem; font-weight: 600; letter-spacing: .015em;
-      color: #ffffff;
+      padding: .4rem .9rem;
+      border-radius: 9999px;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      letter-spacing: .02em;
+      color: rgba(226, 232, 240, 0.88);        /* slate-200 @ 88% */
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.12);
       text-decoration: none;
-      text-shadow: 0 1px 2px rgba(0,0,0,0.25);
-      box-shadow:
-        0 4px 12px -3px rgba(0,0,0,0.35),
-        inset 0 1px 0 rgba(255,255,255,0.22),
-        inset 0 -1px 0 rgba(0,0,0,0.08),
-        0 0 0 1px rgba(255,255,255,0.10);
-      transition: transform .2s cubic-bezier(0.34, 1.56, 0.64, 1),
-                  filter .15s ease,
-                  box-shadow .2s ease;
+      transition: color .15s ease, background .15s ease,
+                  border-color .15s ease, transform .15s ease;
       white-space: nowrap;
     }
     a.pill:hover {
-      transform: translateY(-2px) scale(1.04);
-      filter: brightness(1.12) saturate(1.1);
-      box-shadow:
-        0 8px 20px -4px rgba(0,0,0,0.45),
-        inset 0 1px 0 rgba(255,255,255,0.30),
-        inset 0 -1px 0 rgba(0,0,0,0.10),
-        0 0 0 1px rgba(255,255,255,0.20);
+      color: #ffffff;
+      background: rgba(255, 255, 255, 0.10);
+      border-color: rgba(255, 255, 255, 0.22);
+      transform: translateY(-1px);
     }
-    .pill .pill-emoji { font-size: 1.05rem; line-height: 1; filter: drop-shadow(0 1px 2px rgba(0,0,0,0.30)); }
-    .pill .pill-code  { opacity: 0.78; font-weight: 500; letter-spacing: 0.02em; }
+    .pill .pill-emoji {
+      font-size: 0.95rem;
+      line-height: 1;
+      opacity: 0.95;
+    }
+    .pill .pill-code {
+      color: rgba(148, 163, 184, 0.85);        /* slate-400 — clearly secondary */
+      font-weight: 500;
+      letter-spacing: 0.02em;
+    }
     @media (min-width: 640px) {
-      .pill { padding: .55rem 1.15rem; font-size: 0.9375rem; }
-      .pill .pill-emoji { font-size: 1.15rem; }
+      .pill { padding: .45rem 1rem; font-size: 0.875rem; }
+      .pill .pill-emoji { font-size: 1rem; }
     }
 
-    /* Per-category gradient backgrounds — 6 color families, distinct enough
-       that the eye can group courses visually while scanning the row. */
-    .pill-pm        { background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%); }   /* Project Mgmt: blue→violet */
-    .pill-comptia   { background: linear-gradient(135deg, #dc2626 0%, #ea580c 100%); }   /* CompTIA: red→orange */
-    .pill-aws       { background: linear-gradient(135deg, #f59e0b 0%, #ea580c 100%); }   /* AWS: amber→orange */
-    .pill-azure     { background: linear-gradient(135deg, #0891b2 0%, #1d4ed8 100%); }   /* Azure: cyan→blue */
-    .pill-ms        { background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%); }   /* MS Enterprise: indigo→violet */
-    .pill-ai        { background: linear-gradient(135deg, #d946ef 0%, #ec4899 100%); }   /* AI & GenAI: fuchsia→pink (highlighted) */
-    .pill-ai-aws    { background: linear-gradient(135deg, #ef4444 0%, #f97316 100%); }   /* AWS ML Specialty: red→orange */
-    .pill-ai-vendor { background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%); }   /* AIF + AI-102: purple→pink */
-    .pill-scm       { background: linear-gradient(135deg, #059669 0%, #14b8a6 100%); }   /* Supply Chain: emerald→teal */
-    .pill-mkt       { background: linear-gradient(135deg, #f43f5e 0%, #d946ef 100%); }   /* AI Marketing: rose→fuchsia */
-    .pill-btc       { background: linear-gradient(135deg, #f59e0b 0%, #ca8a04 100%); }   /* Bitcoin: amber→yellow */
-    .pill-ecom      { background: linear-gradient(135deg, #db2777 0%, #9333ea 100%); }   /* E-Commerce: pink→purple */
+    /* Category classes intentionally inert — kept so HTML can reference
+       them if we ever want subtle per-category accents (e.g., a thin
+       left-edge color stripe) without rewriting markup. */
+    .pill-pm, .pill-comptia, .pill-aws, .pill-azure, .pill-ms,
+    .pill-ai, .pill-ai-aws, .pill-ai-vendor, .pill-scm, .pill-mkt,
+    .pill-btc, .pill-ecom { /* no per-category color — uniform .pill base */ }
     .nav-blur { backdrop-filter: saturate(150%) blur(12px); }
 
     /* ============== SLEEK MINIMAL NAV (v3) ==============
