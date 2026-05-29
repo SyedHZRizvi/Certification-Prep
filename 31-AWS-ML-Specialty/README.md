@@ -185,27 +185,68 @@ Week 5: Flashcards + Final Mock + REAL EXAM
 
 ---
 
+## 🏗️ Capstone Project
+
+🔗 **[Capstone Project — Atlas Health Pre-Authorization Triage Platform](./Capstone-Project.md)** — Once you've finished all 10 modules, the capstone is the Cornell/Harvard/Princeton/Stanford-grade synthesis exercise: a 7-deliverable production-ML design for a Series-C health-tech company (~$1.8M Year 1 budget, 9-month timeline, HIPAA + SOC 2 + bias controls + 2-second p95 latency). Rubric scored out of 100. This is the difference between "I passed MLS-C01" and "I could lead this at a real company on Monday."
+
+---
+
 ## 📚 Recommended Readings
 
-Curated bibliography (read alongside the modules — none required, all elevate your understanding):
+🔗 **[Recommended Readings — full bibliography](./Recommended-Readings.md)** — 65+ curated sources: canonical textbooks (Goodfellow's *Deep Learning*, Géron's *Hands-On ML*, Bishop's PRML, Kleppmann's *DDIA*, Huyen's *Designing ML Systems*, Burkov's *MLE*), seminal academic papers (Rosenblatt 1958, Backprop, LeNet, ResNet, Transformer, BERT, GPT-3, Diffusion, XGBoost, SHAP, RAG), the AWS Builders' Library essays (Brooker, Weiss, Cockcroft), re:Invent talks 2018–2024, industry blogs (Netflix, Pinterest, Stripe, Capital One, JPMorgan), and 10 free academic courses (Andrew Ng, Stanford CS229/CS231n/CS224n, MIT 6.S191, fast.ai, Hugging Face). Sequenced by where in the course to engage with each.
 
-- 📖 **Goodfellow, Bengio, Courville (2016).** *Deep Learning.* MIT Press — the canonical DL textbook; Chapters 5 (ML basics), 6 (DNNs), 9 (CNNs), 10 (RNNs), 12 (applications) underpin Modules 1, 5, 6
-- 📖 **Géron, Aurélien (2022).** *Hands-On Machine Learning with Scikit-Learn, Keras & TensorFlow* (3rd ed.). O'Reilly — best practical companion to Modules 3–5
-- 📖 **Bishop, Christopher M. (2006).** *Pattern Recognition and Machine Learning.* Springer — academic spine of probabilistic ML; Chapters 1, 3, 8 for Modules 1, 4, 8
-- 📖 **Burkov, Andriy (2019).** *The Hundred-Page Machine Learning Book.* — concise reference; entire book pairs with Modules 1–8
-- 📖 **Sculley et al. (2015).** *Hidden Technical Debt in Machine Learning Systems.* NIPS — the foundational MLOps paper; required reading for Module 9
-- 📖 **Vaswani et al. (2017).** *Attention Is All You Need.* NeurIPS — the transformer paper; foundational for Modules 6 and 7
-- 📖 **Lundberg & Lee (2017).** *A Unified Approach to Interpreting Model Predictions.* NIPS — SHAP origin; pairs with Module 8
-- 📖 **Amazon (2022).** *Machine Learning Lens — AWS Well-Architected Framework.* — AWS's own ML best-practice document; covers every Module 9/10 topic
-- 📖 **Mitchell et al. (2019).** *Model Cards for Model Reporting.* FAT* — bias and governance; pairs with Module 8
-- 📖 **Sun, Bedrax-Weiss, Pereira (2019).** *On the Limits of Learning to Actively Learn Semantic Representations.* — for anyone doing Active Learning with A2I in Module 8
+Short top-5 if you want to read only five things:
+- 📖 AWS MLS-C01 Exam Guide (PDF, 17 pages) — the blueprint
+- 📖 **Géron, Aurélien (2022).** *Hands-On Machine Learning with Scikit-Learn, Keras & TensorFlow* (3rd ed.). O'Reilly
+- 📖 **Goodfellow, Bengio, Courville (2016).** *Deep Learning.* MIT Press — Chapters 5, 6, 9, 10, 12
+- 📖 **Sculley et al. (2015).** *Hidden Technical Debt in Machine Learning Systems.* NIPS — foundational MLOps
+- 📖 **AWS Well-Architected Machine Learning Lens** — AWS's own ML best-practice document
 
 **re:Invent talks** (always free on YouTube — search via the Videos.md cards in each module):
 - 🎤 AIM303 — *How to choose the right SageMaker built-in algorithm* (Module 4)
 - 🎤 AIM402 — *Distributed training at scale on SageMaker* (Module 5)
-- 🎤 AIM319 — *Building real-time fraud detection with SageMaker* (Capital One case study)
+- 🎤 AIM319 — *Capital One Real-Time Fraud Detection on SageMaker* (Modules 4, 9)
 - 🎤 AIM403 — *MLOps at Amazon Music* (Module 9)
 - 🎤 AIM404 — *Bedrock Knowledge Bases and Agents* (Module 7)
+
+---
+
+## 🧪 Sample Exam Questions From AWS
+
+🔗 **[AWS Official MLS-C01 Sample Questions](https://d1.awsstatic.com/training-and-certification/docs-ml/AWS-Certified-Machine-Learning-Specialty_Sample-Questions.pdf)** — 10 questions, free, official. Take these *after* Practice Exam 1 and *before* the Final Mock. Aim for 9/10. If you hit 6/10 or below, do NOT book the real exam yet — review weakest modules and retry the Final Mock first.
+
+---
+
+## 📊 What Sets MLS-C01 Apart From Other AWS Certifications
+
+The Machine Learning Specialty is unusually demanding among AWS certifications for three structural reasons:
+
+1. **Scenario length.** Each question averages 6-10 lines of business context — a healthcare scenario, a financial-services scenario, a retail-recommendations scenario. You must train yourself to read for **keywords** ("imbalanced", "near-real-time", "explainability required", "minimum operational overhead", "must reside in eu-central-1") and ignore filler. Standard reading speed will not finish the exam.
+
+2. **Cross-domain integration.** Unlike SAA-C03 where most questions are siloed (one VPC question, one S3 question), MLS-C01 questions routinely braid data engineering + modelling + MLOps + security into a single 6-line question. You cannot pass by mastering modules in isolation.
+
+3. **Math + service knowledge + judgement.** The exam requires (a) recall of math concepts (precision vs recall on imbalanced data, PR-AUC vs ROC-AUC, bias-variance, gradient descent stability), (b) recall of ~40 AWS services across all 7 stack layers, and (c) the *judgement* to pick the BEST option when 2-3 options look defensible. Pure memorisation is insufficient.
+
+The MLS-C01 pass rate is publicly reported around 50% — lower than SAA-C03 (~65%) or AIF-C01 (~75%). This course is designed to put you in the ~25% who pass on the first attempt with a comfortable margin.
+
+---
+
+## 🎯 Final Pre-Exam Checklist
+
+Before you book:
+
+- [ ] All 10 module Quizzes scored ≥20/24 or equivalent
+- [ ] Practice Exam 1: ≥22/30
+- [ ] Practice Exam 2: ≥23/30
+- [ ] Final Mock Exam: ≥49/65 (real exam pass mark equivalent), ideally ≥55/65
+- [ ] AWS Official Sample Questions: 9/10
+- [ ] Flashcards: ≥80% marked "Got it" on at least one full pass
+- [ ] All 10 Cheat-Sheets re-read in the past week
+- [ ] (Optional but recommended) Capstone Project: self-graded ≥75/100
+- [ ] You can sketch the **Capital One reference architecture** and the **standard 2026 RAG architecture** from memory in under 90 seconds each
+- [ ] You can name and place all **17 SageMaker built-in algorithms** in under 5 minutes
+
+If you hit all checkboxes, you are ready. Book the exam, sleep 8 hours, hydrate, trust your prep.
 
 ---
 

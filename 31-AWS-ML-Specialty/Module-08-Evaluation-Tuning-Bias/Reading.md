@@ -438,3 +438,245 @@ You now know:
 **Industry**
 - 📰 **Christoph Molnar's *Interpretable Machine Learning* (free online book)** — best ML interpretability text
 - 📰 **Fairlearn / IBM AIF360 documentation** — open-source fairness toolkits
+
+---
+
+## 🛠️ Appendix A — Worked Example: SageMaker Automatic Model Tuning
+
+```python
+from sagemaker.tuner import (
+    HyperparameterTuner,
+    ContinuousParameter,
+    IntegerParameter,
+    CategoricalParameter,
+)
+from sagemaker.xgboost import XGBoost
+
+# 1. Base estimator
+xgb = XGBoost(
+    entry_point="train.py",
+    framework_version="1.7-1",
+    role=role,
+    instance_count=1,
+    instance_type="ml.m5.xlarge",
+    use_spot_instances=True,
+    max_wait=86400,
+    hyperparameters={"objective": "binary:logistic", "eval_metric": "auc"},
+)
+
+# 2. Search space
+ranges = {
+    "eta": ContinuousParameter(0.01, 0.3, scaling_type="Logarithmic"),
+    "max_depth": IntegerParameter(3, 10),
+    "min_child_weight": IntegerParameter(1, 10),
+    "subsample": ContinuousParameter(0.5, 1.0),
+    "colsample_bytree": ContinuousParameter(0.5, 1.0),
+    "lambda": ContinuousParameter(0.1, 10.0, scaling_type="Logarithmic"),
+    "alpha": ContinuousParameter(0.0, 5.0),
+    "num_round": IntegerParameter(100, 1000),
+}
+
+# 3. Tuning configuration
+tuner = HyperparameterTuner(
+    estimator=xgb,
+    objective_metric_name="validation:auc",
+    objective_type="Maximize",
+    hyperparameter_ranges=ranges,
+    metric_definitions=[
+        {"Name": "validation:auc", "Regex": r"validation-auc:(\S+)"}
+    ],
+    max_jobs=50,
+    max_parallel_jobs=5,
+    strategy="Bayesian",        # or "Random", "Grid", "Hyperband"
+    early_stopping_type="Auto", # SageMaker decides when to early-stop a trial
+)
+
+# 4. Fit
+tuner.fit({"train": train_input, "validation": val_input})
+
+# 5. Inspect best trial
+best_job = tuner.best_training_job()
+best_estimator = tuner.best_estimator()
+```
+
+🎯 **Exam pattern.** Recognise:
+- `objective_metric_name` + `objective_type` = what you're optimising
+- `metric_definitions` regex = how SageMaker parses metrics from container logs
+- `strategy="Bayesian"` (default) vs `"Hyperband"` (DL) vs `"Random"` (parallel) vs `"Grid"` (discrete)
+- `max_parallel_jobs` controls concurrency (higher = faster wall clock but less learning-from-trials for Bayesian)
+- `early_stopping_type="Auto"` kills losing trials early
+
+---
+
+## 🛠️ Appendix B — Worked Example: SageMaker Clarify Bias & SHAP
+
+```python
+from sagemaker.clarify import (
+    SageMakerClarifyProcessor,
+    BiasConfig,
+    DataConfig,
+    ModelConfig,
+    ModelPredictedLabelConfig,
+    SHAPConfig,
+)
+
+clarify = SageMakerClarifyProcessor(
+    role=role,
+    instance_count=1,
+    instance_type="ml.m5.xlarge",
+    sagemaker_session=sess,
+)
+
+# 1. Data and bias config
+data_config = DataConfig(
+    s3_data_input_path="s3://my-bucket/test.csv",
+    s3_output_path="s3://my-bucket/clarify-output/",
+    label="approved",
+    headers=["age", "income", "credit_score", "gender", "race", "approved"],
+    dataset_type="text/csv",
+)
+bias_config = BiasConfig(
+    label_values_or_threshold=[1],
+    facet_name=["gender", "race"],
+    facet_values_or_threshold=[["F"], ["minority_group"]],
+    group_name="age",
+)
+
+# 2. Model + predictions config
+model_config = ModelConfig(
+    model_name=model.name,
+    instance_type="ml.m5.xlarge",
+    instance_count=1,
+    accept_type="text/csv",
+    content_type="text/csv",
+)
+preds_config = ModelPredictedLabelConfig(
+    probability=0,
+    label_headers=["approved"],
+)
+
+# 3. Run pre-training bias job (dataset bias)
+clarify.run_pre_training_bias(
+    data_config=data_config,
+    data_bias_config=bias_config,
+)
+
+# 4. Run post-training bias job (model bias)
+clarify.run_post_training_bias(
+    data_config=data_config,
+    data_bias_config=bias_config,
+    model_config=model_config,
+    model_predicted_label_config=preds_config,
+)
+
+# 5. Run SHAP explainability
+shap_config = SHAPConfig(
+    baseline=[[35, 60000, 700, "M", "majority_group"]],
+    num_samples=100,
+    agg_method="mean_abs",
+)
+clarify.run_explainability(
+    data_config=data_config,
+    model_config=model_config,
+    explainability_config=shap_config,
+)
+```
+
+🎯 **Exam pattern.** Recognise the **three methods** on `SageMakerClarifyProcessor`:
+- `run_pre_training_bias` — Module 3 territory (data-level)
+- `run_post_training_bias` — this module (model-level: DI, DPPL, DAR, ...)
+- `run_explainability` — SHAP, both global and local
+
+The outputs land as JSON / HTML reports in S3; can be attached to a Model Card or referenced by Model Monitor's bias-drift schedule.
+
+---
+
+## 🛠️ Appendix C — Bedrock Model Evaluation Example
+
+```python
+import boto3
+bedrock = boto3.client("bedrock", region_name="us-east-1")
+
+# Create an automatic evaluation job
+bedrock.create_evaluation_job(
+    jobName="claude-vs-titan-summarization",
+    roleArn=role_arn,
+    evaluationConfig={
+        "automated": {
+            "datasetMetricConfigs": [
+                {
+                    "taskType": "Summarization",
+                    "dataset": {
+                        "name": "BuiltInDataset/CNNDailyMail",
+                    },
+                    "metricNames": ["Toxicity", "Accuracy", "Robustness"],
+                }
+            ]
+        }
+    },
+    inferenceConfig={
+        "models": [
+            {"bedrockModel": {"modelIdentifier": "anthropic.claude-3-5-sonnet-..."}},
+            {"bedrockModel": {"modelIdentifier": "amazon.titan-text-express-v1"}},
+        ]
+    },
+    outputDataConfig={"s3Uri": "s3://my-bucket/bedrock-eval/"},
+)
+```
+
+For **human evaluation**, the same API supports a `human` config with a workforce ARN and rubric.
+
+🎯 **Exam pattern.** Bedrock Model Evaluation = the canonical answer for "compare two Bedrock models on a task with reference labels". Pair with **ROUGE / BLEU** for summarisation / translation, or with **human / LLM-as-judge** for subjective tasks.
+
+---
+
+## 🛠️ Appendix D — Choosing The Right Metric — Decision Tree
+
+```
+What is the task?
+├─ CLASSIFICATION
+│   ├─ Balanced classes
+│   │   ├─ Need single number → Accuracy
+│   │   └─ Need threshold-free → ROC AUC
+│   └─ Imbalanced classes
+│       ├─ FN costly → Recall / F-beta (β>1) / lower threshold
+│       ├─ FP costly → Precision
+│       ├─ Want one number → F1
+│       └─ Threshold-free → PR AUC (NOT ROC AUC)
+│
+├─ REGRESSION
+│   ├─ Outliers manageable → RMSE
+│   ├─ Outlier-robust needed → MAE OR Huber
+│   ├─ % error wanted → MAPE (beware near-zero targets)
+│   ├─ Variance-explained needed → R² (or Adjusted R²)
+│   └─ Probabilistic forecast → Quantile / pinball loss
+│
+├─ MULTI-CLASS
+│   ├─ Single label per record → Categorical cross-entropy + macro F1
+│   └─ Multi-label → Hamming loss / per-class F1 averaged
+│
+├─ RANKING / RECOMMENDATION
+│   ├─ Top-k matters → Precision@k, Recall@k, MAP, NDCG
+│   └─ Pairwise rank quality → Kendall's tau, Spearman
+│
+├─ FORECASTING
+│   ├─ Point forecast → RMSE / MAE / MAPE
+│   └─ Probabilistic → Quantile loss / CRPS
+│
+├─ LLM (CLASSICAL NLP)
+│   ├─ Summarisation → ROUGE-1 / ROUGE-2 / ROUGE-L + BERTScore
+│   ├─ Translation → BLEU + METEOR + BERTScore
+│   ├─ Q&A → Exact match + F1 (token-level) + faithfulness
+│   └─ Code → HumanEval pass@k
+│
+├─ LLM (MODERN)
+│   ├─ Reasoning → MMLU, ARC, HellaSwag, GSM8K
+│   ├─ Subjective quality → LLM-as-judge OR human eval
+│   └─ RAG → Faithfulness + Answer relevance + Context precision/recall
+│
+└─ FAIRNESS
+    ├─ Pre-training → CI, DPL, KL, JS, Lp, TVD, CDDL
+    └─ Post-training → DI, DPPL, DAR, DRR, AD, RD, SD, FT, TE
+```
+
+🎯 **Memorise this decision tree.** Many MLS-C01 scenario questions resolve to "which metric?" — the wrong choice trips many candidates.

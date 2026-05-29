@@ -432,3 +432,90 @@ You now know:
 - 📰 **Distill.pub** — visual explanations of core ML concepts (now archived but still gold)
 - 📰 **The Gradient** — long-form ML essays
 - 📰 **Sebastian Raschka's blog** — practical ML from a textbook author
+
+---
+
+## 🛠️ Appendix A — A 30-Minute "Hello SageMaker" Lab
+
+If you have not yet touched SageMaker, do this lab end-to-end before Module 2. ~$2 in compute.
+
+### Step 1 — Open Studio
+
+1. Sign into the AWS Console as a user with `AmazonSageMakerFullAccess` (we'll fix least-privilege later).
+2. Navigate to SageMaker → Studio.
+3. Click "Create domain" → "Quick setup" with defaults.
+4. Wait ~5 minutes; click "Open Studio".
+
+### Step 2 — Train an XGBoost classifier on the public Census Income dataset
+
+Open a new Python 3 notebook and paste:
+
+```python
+import sagemaker
+from sagemaker.xgboost import XGBoost
+from sagemaker.inputs import TrainingInput
+import pandas as pd
+from sklearn.datasets import fetch_openml
+from sklearn.model_selection import train_test_split
+
+# 1. Load + prepare data
+df = fetch_openml("adult", version=2, as_frame=True).frame
+df["income_high"] = (df["class"] == ">50K").astype(int)
+df = df.drop(columns=["class"]).fillna("MISSING")
+for col in df.select_dtypes("object").columns:
+    df[col] = pd.factorize(df[col])[0]
+y = df.pop("income_high")
+df.insert(0, "label", y)   # XGBoost CSV: target = first column
+
+train_df, val_df = train_test_split(df, test_size=0.2, random_state=42, stratify=df["label"])
+
+# 2. Upload to S3
+sess = sagemaker.Session()
+bucket = sess.default_bucket()
+train_df.to_csv("train.csv", index=False, header=False)
+val_df.to_csv("validation.csv", index=False, header=False)
+sess.upload_data("train.csv", bucket=bucket, key_prefix="hello-sagemaker/train")
+sess.upload_data("validation.csv", bucket=bucket, key_prefix="hello-sagemaker/validation")
+
+# 3. Train
+role = sagemaker.get_execution_role()
+xgb = XGBoost(
+    entry_point="dummy.py",           # required but unused for built-in algo container
+    role=role,
+    instance_type="ml.m5.xlarge",
+    instance_count=1,
+    framework_version="1.7-1",
+    output_path=f"s3://{bucket}/hello-sagemaker/output/",
+    hyperparameters={
+        "objective": "binary:logistic",
+        "num_round": 100,
+        "max_depth": 5,
+        "eta": 0.2,
+    },
+)
+xgb.fit({
+    "train": TrainingInput(f"s3://{bucket}/hello-sagemaker/train/train.csv", content_type="text/csv"),
+    "validation": TrainingInput(f"s3://{bucket}/hello-sagemaker/validation/validation.csv", content_type="text/csv"),
+})
+
+# 4. Deploy
+predictor = xgb.deploy(initial_instance_count=1, instance_type="ml.m5.large")
+
+# 5. Predict
+sample = val_df.iloc[0:5, 1:].values
+print(predictor.predict(sample))
+
+# 6. CRITICAL: Clean up to avoid charges
+predictor.delete_endpoint()
+predictor.delete_model()
+```
+
+### Step 3 — Verify cleanup
+
+- SageMaker → Endpoints → ensure list is empty
+- SageMaker → Notebook instances → stop or delete Studio
+- S3 → review the bucket; delete unneeded artifacts
+
+Total cost for this lab: ~$1-3 USD if you delete the endpoint within an hour.
+
+🎯 **What you should now appreciate.** Five lines of meaningful SDK code went from raw data to a trained, deployed binary classifier. This is the leverage SageMaker provides. The next 9 modules add depth, but the *shape* of every training and deployment workflow follows this 5-step pattern.

@@ -401,3 +401,188 @@ You now know:
 **Industry**
 - 📰 **Corey Quinn's *Last Week in AWS*** — cost-engineering essays
 - 📰 **AWS Builder Library — Cost Section** — patterns for cost engineering
+
+---
+
+## 🛠️ Appendix A — Least-Privilege SageMaker IAM Role Template
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "SageMakerCoreActions",
+      "Effect": "Allow",
+      "Action": [
+        "sagemaker:CreateTrainingJob",
+        "sagemaker:DescribeTrainingJob",
+        "sagemaker:StopTrainingJob",
+        "sagemaker:CreateProcessingJob",
+        "sagemaker:DescribeProcessingJob",
+        "sagemaker:CreateModel",
+        "sagemaker:CreateEndpoint",
+        "sagemaker:CreateEndpointConfig",
+        "sagemaker:InvokeEndpoint"
+      ],
+      "Resource": [
+        "arn:aws:sagemaker:us-east-1:123456789012:training-job/churn-*",
+        "arn:aws:sagemaker:us-east-1:123456789012:processing-job/churn-*",
+        "arn:aws:sagemaker:us-east-1:123456789012:model/churn-*",
+        "arn:aws:sagemaker:us-east-1:123456789012:endpoint/churn-*",
+        "arn:aws:sagemaker:us-east-1:123456789012:endpoint-config/churn-*"
+      ]
+    },
+    {
+      "Sid": "ScopedS3DataAccess",
+      "Effect": "Allow",
+      "Action": ["s3:GetObject", "s3:PutObject"],
+      "Resource": [
+        "arn:aws:s3:::my-ml-bucket/churn/raw/*",
+        "arn:aws:s3:::my-ml-bucket/churn/curated/*",
+        "arn:aws:s3:::my-ml-bucket/churn/models/*"
+      ]
+    },
+    {
+      "Sid": "ScopedKMS",
+      "Effect": "Allow",
+      "Action": [
+        "kms:Decrypt",
+        "kms:GenerateDataKey",
+        "kms:DescribeKey"
+      ],
+      "Resource": "arn:aws:kms:us-east-1:123456789012:key/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
+    },
+    {
+      "Sid": "ScopedECR",
+      "Effect": "Allow",
+      "Action": [
+        "ecr:GetAuthorizationToken",
+        "ecr:BatchGetImage",
+        "ecr:GetDownloadUrlForLayer"
+      ],
+      "Resource": "arn:aws:ecr:us-east-1:123456789012:repository/my-training-image"
+    },
+    {
+      "Sid": "CloudWatchLogs",
+      "Effect": "Allow",
+      "Action": [
+        "logs:CreateLogStream",
+        "logs:PutLogEvents",
+        "logs:CreateLogGroup"
+      ],
+      "Resource": "arn:aws:logs:us-east-1:123456789012:log-group:/aws/sagemaker/*"
+    },
+    {
+      "Sid": "PassRoleToSubResources",
+      "Effect": "Allow",
+      "Action": "iam:PassRole",
+      "Resource": "arn:aws:iam::123456789012:role/SageMakerTrainingRole",
+      "Condition": {
+        "StringEquals": {"iam:PassedToService": "sagemaker.amazonaws.com"}
+      }
+    }
+  ]
+}
+```
+
+🎯 **Exam pattern.** Every `Action` scoped; every `Resource` ARN-scoped; `iam:PassRole` restricted via `iam:PassedToService` condition.
+
+---
+
+## 🛠️ Appendix B — No-Internet Training Stack (Full Example)
+
+```python
+from sagemaker.pytorch import PyTorch
+
+estimator = PyTorch(
+    entry_point="train.py",
+    role=role,
+    framework_version="2.1.0",
+    py_version="py310",
+    instance_count=2,
+    instance_type="ml.g5.2xlarge",
+
+    # === Security hardening for HIPAA-class workloads ===
+
+    # VPC isolation: training job runs in private subnets
+    subnets=["subnet-0a1b2c3d", "subnet-0a1b2c3e"],   # private subnets
+    security_group_ids=["sg-0123456789abcdef0"],
+
+    # Block ALL outbound from training container
+    # (Requires VPC endpoints for S3, ECR, KMS, STS, CloudWatch — see below)
+    enable_network_isolation=True,
+
+    # Encrypt inter-node training traffic
+    enable_inter_container_traffic_encryption=True,
+
+    # KMS for EBS volumes used by the training job
+    volume_kms_key="arn:aws:kms:us-east-1:123456789012:key/aaaa-bbbb",
+    output_kms_key="arn:aws:kms:us-east-1:123456789012:key/aaaa-bbbb",
+
+    # Spot training + checkpointing
+    use_spot_instances=True,
+    max_wait=129600,
+    checkpoint_s3_uri="s3://my-secure-bucket/checkpoints/",
+
+    hyperparameters={"epochs": 10, "lr": 1e-4},
+)
+
+estimator.fit({"train": "s3://my-secure-bucket/train/"})
+```
+
+### Required VPC endpoints
+
+For the above to work with `enable_network_isolation=True`, the VPC must have:
+
+| Endpoint | Type | Purpose |
+|----------|------|---------|
+| `com.amazonaws.<region>.s3` | Gateway | Read training data, write artifact |
+| `com.amazonaws.<region>.ecr.api` | Interface | ECR API |
+| `com.amazonaws.<region>.ecr.dkr` | Interface | ECR Docker image pulls |
+| `com.amazonaws.<region>.sts` | Interface | STS for role assumption |
+| `com.amazonaws.<region>.kms` | Interface | KMS encryption |
+| `com.amazonaws.<region>.logs` | Interface | CloudWatch Logs |
+| `com.amazonaws.<region>.sagemaker.api` | Interface | SageMaker control plane |
+| `com.amazonaws.<region>.sagemaker.runtime` | Interface | Endpoint inference |
+| `com.amazonaws.<region>.bedrock-runtime` | Interface | Bedrock invocations (optional) |
+
+🎯 **Cost note.** Interface endpoints cost ~$0.01/hour per ENI per AZ + ~$0.01/GB. For a multi-AZ deployment with 8 interface endpoints, that's ~$200/month in endpoint fixed cost — usually worth it for the security posture.
+
+---
+
+## 🛠️ Appendix C — Cost-Optimisation Worked Example (Before & After)
+
+A real-style workload at a Series-B fintech, costs in USD/month.
+
+| Line | Before | After | Move |
+|------|--------|-------|------|
+| Studio notebooks (10 users, 24/7) | $2,800 | $480 | Idle auto-shutdown lifecycle config |
+| Training jobs (XGBoost, on-demand) | $4,200 | $620 | **Spot + checkpointing** (85% saving) |
+| Inference endpoints (g5.xlarge, 4 always-on per model × 12 models) | $9,600 | $3,100 | Consolidate to MME + Compute Savings Plan |
+| Inference (LLM, g5.12xlarge × 2) | $7,400 | $2,800 | Migrate to inf2.xlarge × 4 (Neuron-compiled) |
+| S3 training data (5 TB Standard) | $115 | $42 | Intelligent-Tiering + lifecycle to IA after 60 days |
+| Athena scans (mostly raw JSON) | $1,800 | $180 | Convert to Parquet + partition + projection |
+| NAT Gateway egress (training data) | $1,400 | $0 | Replace with Gateway VPC Endpoint for S3 |
+| Bedrock (Claude Sonnet, common 4K system prompt) | $5,200 | $1,900 | Prompt caching + smaller-model for routine traffic |
+| **Total** | **$32,515 / mo** | **$9,122 / mo** | **72% reduction** |
+
+🎯 **Each line is independently testable on the exam.** Pattern-match each cost-spike scenario to the corresponding lever.
+
+---
+
+## 🛠️ Appendix D — Runbook: NaN Losses Midway Through Training
+
+When a transformer training job suddenly produces NaN losses (a common interview / exam-scenario question), the standard runbook:
+
+1. **Reproduce on a single GPU first** — eliminate distributed-training factors.
+2. **Check input data** — any all-zero batches? infinite values?
+3. **Reduce learning rate** by 5-10× and restart from latest checkpoint.
+4. **Add (or verify) gradient clipping** — `torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)`.
+5. **Switch FP16 → BF16** if using mixed precision (BF16 has the same dynamic range as FP32).
+6. **Add layer normalisation** before activations (transformers usually use LayerNorm; verify it's pre-norm not post-norm).
+7. **Add learning-rate warmup** — start at 1e-7 and ramp up over 1000-10,000 steps.
+8. **Inspect Debugger tensors** — `tensor_inf_or_nan` rule pinpoints which layer first sees NaN.
+9. **Skip the bad batch** if isolated.
+10. **If all else fails**, lower model capacity (fewer layers, smaller hidden dim) — sometimes the model is too capable for the data and the loss surface is pathological.
+
+🎯 **Exam pattern.** The expected single-best fix on the exam: **lower LR + add gradient clipping + use BF16 instead of FP16** (combined).

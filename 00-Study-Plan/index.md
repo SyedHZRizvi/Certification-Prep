@@ -5,7 +5,7 @@ title: Study Plan
 
 # 📅 Study Plan
 
-> Three guides that structure your prep from kickoff to exam day — applicable to any of the 27 certifications and tracks on this site. Read them in order, or jump to whatever you need most right now.
+> Three guides that structure your prep from kickoff to exam day — applicable to any of the 31 certifications and tracks on this site. Read them in order, or jump to whatever you need most right now.
 
 **Study Plan** · Hub
 *Last updated: 2026-05*
@@ -16,7 +16,7 @@ title: Study Plan
 
 ### 🚀 [Quick Start Guide](./Quick-Start-Guide/)
 
-**Read first.** A 10-minute intro that helps you decide which of the 27 paths to take, sets up your tools (Anki, timer, notebook), and gets you doing your first module in under an hour.
+**Read first.** A 10-minute intro that helps you decide which of the 31 paths to take, sets up your tools (Anki, timer, notebook), and gets you doing your first module in under an hour.
 
 **Best for:** anyone just starting, or anyone who's been stuck in "research mode" for too long.
 
@@ -61,7 +61,7 @@ What's covered:
 
 ## 🎓 Pick Your Track
 
-Below are the 27 courses, grouped by category. Pick the one you're preparing for and open its README — that's where the cert-specific schedule, modules, and resources live.
+Below are the 31 courses, grouped by category. Pick the one you're preparing for and open its README — that's where the cert-specific schedule, modules, and resources live.
 
 ### Project Management
 - 🏃 [**Scrum Master (PSM I)**](../01-Scrum-Master/)
@@ -75,13 +75,19 @@ Below are the 27 courses, grouped by category. Pick the one you're preparing for
 - 🛡️ [**CompTIA Security+ (SY0-701)**](../09-CompTIA-Security-Plus/)
 - ☁️ [**AWS Cloud Practitioner (CLF-C02)**](../03-AWS-Cloud-Practitioner/)
 - 🏗️ [**AWS Solutions Architect Associate (SAA-C03)**](../04-AWS-Solutions-Architect-Associate/)
-- 🤖 [**AWS AI Practitioner (AIF-C01)**](../07-AWS-AI-Practitioner/)
 - 🌥️ [**Azure Fundamentals (AZ-900)**](../05-Azure-Fundamentals/)
 - 🛠️ [**Azure Administrator (AZ-104)**](../06-Azure-Administrator/)
-- 🧠 [**Azure AI Engineer (AI-102)**](../08-Azure-AI-Engineer/)
 - 🪟 [**Windows Server Hybrid Admin (AZ-800/801)**](../25-Windows-Server-Hybrid-Admin/)
 - 💻 [**Microsoft Endpoint Administrator (MD-102)**](../26-Microsoft-Endpoint-Admin/)
 - 🪪 [**Microsoft Identity & Access Admin (SC-300)**](../27-Microsoft-Identity-Access-Admin/)
+
+### AI & Generative AI
+- 🧬 [**Claude Architect** (Cert Hub original)](../28-Claude-Architect/)
+- ✍️ [**Prompt Engineering Specialist** (Cert Hub original)](../29-Prompt-Engineering-Specialist/)
+- ⚡ [**Generative AI Engineer** (Cert Hub original)](../30-Generative-AI-Engineer/)
+- 🔬 [**AWS ML Specialty (MLS-C01)**](../31-AWS-ML-Specialty/)
+- 🤖 [**AWS AI Practitioner (AIF-C01)**](../07-AWS-AI-Practitioner/)
+- 🧠 [**Azure AI Engineer (AI-102)**](../08-Azure-AI-Engineer/)
 
 ### Supply Chain & Operations
 - 🏭 [**ASCM CPIM**](../11-ASCM-CPIM/)
@@ -107,4 +113,4 @@ Below are the 27 courses, grouped by category. Pick the one you're preparing for
 - 🚀 **Read the [Quick Start Guide](./Quick-Start-Guide/)** if you haven't picked a track yet
 - 📚 **Browse the [Certifications Catalog](../Resources/International-Certifications/)** to compare fees, formats, and renewal rules
 - 📖 **Open the [Books & Links](../Resources/Books-and-Links/)** page for free + paid resources per track
-- 🏠 [**Course Home**](../) — all 27 tracks at a glance
+- 🏠 [**Course Home**](../) — all 31 tracks at a glance

@@ -449,3 +449,176 @@ You now know:
 **Industry**
 - 📰 **JPMorgan COiN case studies** — Bloomberg / Wired write-ups (2017-2019)
 - 📰 **Stripe / Capital One / Amazon Personalize case studies** — AWS ML Blog
+
+---
+
+## 🛠️ Appendix A — Comprehend Custom Classifier Quick Start
+
+```python
+import boto3
+
+comprehend = boto3.client("comprehend", region_name="us-east-1")
+
+# 1. Train a multi-class classifier
+response = comprehend.create_document_classifier(
+    DocumentClassifierName="support-ticket-classifier",
+    DataAccessRoleArn=role_arn,
+    InputDataConfig={
+        "S3Uri": "s3://my-bucket/training.csv",   # CSV: label,text
+        "DataFormat": "COMPREHEND_CSV",
+        "LabelDelimiter": "|",                    # for multi-label
+    },
+    LanguageCode="en",
+    Mode="MULTI_CLASS",                           # or "MULTI_LABEL"
+    VolumeKmsKeyId=kms_key_arn,
+)
+
+# 2. Deploy as a real-time endpoint
+endpoint_arn = comprehend.create_endpoint(
+    EndpointName="support-ticket-endpoint",
+    ModelArn=response["DocumentClassifierArn"],
+    DesiredInferenceUnits=1,
+)["EndpointArn"]
+
+# 3. Classify a new ticket
+result = comprehend.classify_document(
+    EndpointArn=endpoint_arn,
+    Text="My payment was double-charged this morning, please refund.",
+)
+print(result["Classes"])
+# [{'Name': 'billing', 'Score': 0.91}, {'Name': 'shipping', 'Score': 0.05}, ...]
+```
+
+🎯 **Exam patterns.**
+- `Mode="MULTI_CLASS"` (one label) vs `Mode="MULTI_LABEL"` (multiple labels)
+- Minimum recommended training samples: ~10-50 per class
+- Endpoints bill per **inference unit per hour**; scale by adjusting `DesiredInferenceUnits`
+
+---
+
+## 🛠️ Appendix B — Rekognition Custom Labels: Train From 10 Images
+
+```python
+import boto3
+rekog = boto3.client("rekognition")
+
+# 1. Create a project
+project_arn = rekog.create_project(ProjectName="defect-detection")["ProjectArn"]
+
+# 2. Create a project version with training and test data
+version_arn = rekog.create_project_version(
+    ProjectArn=project_arn,
+    VersionName="v1",
+    OutputConfig={"S3Bucket": "my-bucket", "S3KeyPrefix": "rekognition-output/"},
+    TrainingData={"Assets": [{"GroundTruthManifest": {"S3Object": {
+        "Bucket": "my-bucket", "Name": "training/manifest.json"}}}]},
+    TestingData={"Assets": [{"GroundTruthManifest": {"S3Object": {
+        "Bucket": "my-bucket", "Name": "testing/manifest.json"}}}],
+        "AutoCreate": False},
+)["ProjectVersionArn"]
+
+# 3. Wait for training, then start the model
+rekog.start_project_version(ProjectVersionArn=version_arn, MinInferenceUnits=1)
+
+# 4. Detect on a new image
+result = rekog.detect_custom_labels(
+    Image={"S3Object": {"Bucket": "my-bucket", "Name": "new-photo.jpg"}},
+    ProjectVersionArn=version_arn,
+    MinConfidence=70,
+)
+print(result["CustomLabels"])
+```
+
+🎯 **Exam patterns.**
+- ~10-50 labelled images per class are typically enough
+- `MinInferenceUnits` controls hosting capacity (pay per unit-hour)
+- Stop the project version when not in use to save cost
+
+---
+
+## 🛠️ Appendix C — Textract `AnalyzeDocument` for Forms + Tables
+
+```python
+import boto3
+textract = boto3.client("textract")
+
+# Synchronous (≤5 MB, ≤1 page; otherwise use the async StartDocumentAnalysis)
+resp = textract.analyze_document(
+    Document={"S3Object": {"Bucket": "my-bucket", "Name": "w2-form.pdf"}},
+    FeatureTypes=["FORMS", "TABLES", "QUERIES"],
+    QueriesConfig={
+        "Queries": [
+            {"Text": "What is the total wages?", "Alias": "wages"},
+            {"Text": "What is the federal income tax withheld?", "Alias": "fed_tax"},
+        ]
+    },
+)
+
+# Extract key-value pairs
+kv_blocks = [b for b in resp["Blocks"] if b["BlockType"] == "KEY_VALUE_SET"]
+table_blocks = [b for b in resp["Blocks"] if b["BlockType"] == "TABLE"]
+query_results = [b for b in resp["Blocks"] if b["BlockType"] == "QUERY_RESULT"]
+```
+
+🎯 **Exam patterns.**
+- `FORMS` = key-value pairs
+- `TABLES` = grid extraction
+- `QUERIES` = natural-language Q&A on the doc (2023+ feature)
+- For >5 MB docs or multi-page PDFs: use `StartDocumentAnalysis` (async, S3 callback)
+
+---
+
+## 🛠️ Appendix D — Choosing The Right Decision Tree (Cheat Card)
+
+A simple sequential decision tree for picking among Module 6's services on the exam:
+
+```
+1) Is the input audio/speech?
+   YES → Transcribe (STT) → maybe Comprehend on the transcript → maybe Polly back to audio
+   NO → continue
+
+2) Is the input an image?
+   YES → Rekognition (labels/faces/moderation/PPE)
+        + Custom Labels for company-specific objects
+        + Textract for OCR + structure
+   NO → continue
+
+3) Is the input a document (PDF / scanned form)?
+   YES → Textract (DetectText/AnalyzeDocument/AnalyzeExpense/AnalyzeID/AnalyzeLending/Queries)
+   NO → continue
+
+4) Is the input text needing translation?
+   YES → Translate (+ Custom Terminology / ACT)
+   NO → continue
+
+5) Is the text in a vertical (medical/legal)?
+   YES → Comprehend Medical (drugs, conditions, anatomy)
+   NO → continue
+
+6) Generic NLP on text?
+   → Comprehend pre-trained APIs (sentiment, entities, key phrases, language, PII, toxicity, syntax)
+   → Comprehend Custom Classifier / Custom Entity for domain tasks
+   → Generative summarisation / Q&A → Bedrock (Module 7)
+
+7) Conversational interface needed?
+   - Predetermined intents → Lex
+   - Generative open-ended chat → Bedrock Agent (Module 7)
+
+8) Enterprise search needed?
+   - Top-k passages → Kendra
+   - LLM-synthesised answer → Bedrock Knowledge Base (Module 7)
+
+9) Recommendation system?
+   → Amazon Personalize
+
+10) Forecasting?
+    → Amazon Forecast (managed) OR SageMaker DeepAR (custom, Module 4)
+
+11) Fraud detection?
+    → Amazon Fraud Detector
+
+12) Need human review of low-confidence model outputs?
+    → Augmented AI (A2I) — Comprehend / Rekognition / Textract / custom workflows
+```
+
+🎯 **Use this on every Module-6 scenario question** — walk top-to-bottom; the first match is usually the right answer.

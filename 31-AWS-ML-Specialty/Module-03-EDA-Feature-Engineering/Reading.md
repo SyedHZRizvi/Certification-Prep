@@ -496,3 +496,151 @@ You now know:
 **Industry**
 - 📰 **Sebastian Raschka's blog** — feature-engineering essays
 - 📰 **Kaggle "Grandmaster" interviews** — Hacker News-style transcripts of winning approaches; FE dominates
+
+---
+
+## 🛠️ Appendix A — Feature Store: Online + Offline Walkthrough
+
+```python
+import sagemaker
+from sagemaker.feature_store.feature_group import FeatureGroup
+from sagemaker.feature_store.feature_definition import (
+    FeatureDefinition, FeatureTypeEnum,
+)
+import pandas as pd
+import time
+
+sess = sagemaker.Session()
+role = sagemaker.get_execution_role()
+
+# 1. Define a feature group
+feature_group = FeatureGroup(
+    name="customer-features",
+    sagemaker_session=sess,
+    feature_definitions=[
+        FeatureDefinition(feature_name="customer_id", feature_type=FeatureTypeEnum.STRING),
+        FeatureDefinition(feature_name="event_time", feature_type=FeatureTypeEnum.FRACTIONAL),
+        FeatureDefinition(feature_name="age", feature_type=FeatureTypeEnum.INTEGRAL),
+        FeatureDefinition(feature_name="total_orders", feature_type=FeatureTypeEnum.INTEGRAL),
+        FeatureDefinition(feature_name="avg_order_value", feature_type=FeatureTypeEnum.FRACTIONAL),
+        FeatureDefinition(feature_name="days_since_last_order", feature_type=FeatureTypeEnum.INTEGRAL),
+    ],
+)
+
+# 2. Create both online + offline stores
+feature_group.create(
+    s3_uri=f"s3://{sess.default_bucket()}/feature-store/",
+    record_identifier_name="customer_id",
+    event_time_feature_name="event_time",
+    role_arn=role,
+    enable_online_store=True,           # online: in-memory key-value (DynamoDB-backed)
+                                        # offline: S3 + Glue Catalogue
+)
+
+# 3. Ingest a batch
+df = pd.DataFrame([
+    {"customer_id": "C001", "event_time": time.time(), "age": 35,
+     "total_orders": 12, "avg_order_value": 45.20, "days_since_last_order": 4},
+    {"customer_id": "C002", "event_time": time.time(), "age": 28,
+     "total_orders": 3, "avg_order_value": 78.50, "days_since_last_order": 22},
+])
+feature_group.ingest(data_frame=df, max_workers=4)
+
+# 4. Online lookup (low-latency at inference)
+record = sess.boto_session.client("sagemaker-featurestore-runtime").get_record(
+    FeatureGroupName="customer-features",
+    RecordIdentifierValueAsString="C001",
+)
+print(record["Record"])
+
+# 5. Offline read (Athena query)
+query = feature_group.athena_query()
+query.run(
+    query_string="SELECT * FROM \"customer-features\" WHERE age > 30 LIMIT 100",
+    output_location=f"s3://{sess.default_bucket()}/athena-results/",
+)
+results = query.as_dataframe()
+```
+
+🎯 **Exam patterns.**
+- **Record identifier** is the primary key (`customer_id` here)
+- **Event time feature** is mandatory — supports time-travel queries
+- **Online store** uses `get_record` for low-latency inference reads
+- **Offline store** is queried via Athena against the Glue Catalogue
+- Both stores share the same feature definitions — same features available at train and inference time
+
+---
+
+## 🛠️ Appendix B — Data Wrangler Export Patterns
+
+A Data Wrangler `.flow` file can export to four targets:
+
+| Export target | Use |
+|---------------|-----|
+| **SageMaker Pipelines step** | Repeatable transform inside a training Pipeline |
+| **SageMaker Feature Store ingestion** | One-shot or scheduled ingest |
+| **Python notebook** | Generate code for further customisation |
+| **Direct to a SageMaker training job** | One-shot training-data prep |
+
+🎯 **Exam pattern.** *"Data scientist designs a transform in Data Wrangler and wants it to run automatically in production training pipelines."* → **Export as a SageMaker Pipelines step**.
+
+---
+
+## 🛠️ Appendix C — Stratified, Group, And Time-Series Splits
+
+```python
+from sklearn.model_selection import (
+    train_test_split, StratifiedKFold,
+    GroupKFold, TimeSeriesSplit,
+)
+
+# Stratified — preserves class proportions
+X_tr, X_te, y_tr, y_te = train_test_split(
+    X, y, test_size=0.2, stratify=y, random_state=42,
+)
+
+# Stratified K-fold for imbalanced classification
+skf = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
+for train_idx, val_idx in skf.split(X, y):
+    ...
+
+# Group K-fold for grouped records (e.g. patient_id)
+gkf = GroupKFold(n_splits=5)
+for train_idx, val_idx in gkf.split(X, y, groups=patient_ids):
+    ...
+
+# Walk-forward / expanding-window for time series
+tscv = TimeSeriesSplit(n_splits=5)
+for train_idx, val_idx in tscv.split(X):
+    ...
+
+# CRITICAL: SMOTE goes INSIDE the fold loop, after split, training-side only
+from imblearn.over_sampling import SMOTE
+sm = SMOTE(random_state=42)
+X_tr_resampled, y_tr_resampled = sm.fit_resample(X_tr, y_tr)
+# Do NOT resample X_val / y_val
+```
+
+🎯 **Exam patterns.** Many evaluation-related MLS-C01 questions hinge on recognising the *right* CV strategy for the data shape. Group K-fold and walk-forward CV are the two most-missed.
+
+---
+
+## 🛠️ Appendix D — A Pre-Modelling QA Checklist
+
+Before kicking off training, verify:
+
+- [ ] No missing values left without a deliberate strategy (drop / impute / indicator)
+- [ ] No duplicates straddling train and validation
+- [ ] No data leakage in target encoding (computed inside CV folds)
+- [ ] Numeric features scaled appropriately for the algorithm (skip for trees)
+- [ ] Categorical features encoded appropriately (one-hot for low card, embedding / hashing for high card)
+- [ ] Time-series respects temporal order in splits
+- [ ] Class imbalance addressed (weights / SMOTE on train only / threshold tuning planned)
+- [ ] Stratified split for imbalanced classification
+- [ ] Group K-fold if records are grouped
+- [ ] PII scrubbed or KMS-encrypted on the training-data bucket
+- [ ] Clarify pre-training bias report run and reviewed
+- [ ] Feature Store populated if features will also be needed at inference time
+- [ ] Data Wrangler `.flow` saved for repeatable transforms in production
+
+If any box is unchecked, you are not ready to train.

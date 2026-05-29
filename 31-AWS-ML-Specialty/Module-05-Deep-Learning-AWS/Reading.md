@@ -430,3 +430,215 @@ You now know:
 - 📄 **Vaswani et al. (2017).** *Attention Is All You Need.* NeurIPS — Transformer
 - 📄 **Ho, Jain, Abbeel (2020).** *Denoising Diffusion Probabilistic Models.* NeurIPS — diffusion
 - 📄 **Brown et al. (2020).** *Language Models are Few-Shot Learners.* — GPT-3
+
+---
+
+## 🛠️ Appendix A — Worked Example: Distributed PyTorch Training With SMDDP + Spot
+
+A worked example showing the full SDK pattern you would use in production.
+
+```python
+import sagemaker
+from sagemaker.pytorch import PyTorch
+from sagemaker.inputs import TrainingInput
+
+sess = sagemaker.Session()
+role = sagemaker.get_execution_role()
+
+# 1. Configure distributed PyTorch training with SMDDP
+estimator = PyTorch(
+    entry_point="train.py",
+    source_dir="src",
+    role=role,
+    framework_version="2.1.0",
+    py_version="py310",
+
+    # Multi-node distributed training
+    instance_count=4,
+    instance_type="ml.p4d.24xlarge",   # 8x A100 per node = 32 GPUs total
+
+    # SMDDP data-parallel
+    distribution={
+        "smdistributed": {"dataparallel": {"enabled": True}}
+    },
+
+    # Cost optimisation: Spot + checkpointing
+    use_spot_instances=True,
+    max_run=86400,                     # 24 h max runtime
+    max_wait=129600,                   # 36 h max wait incl. interruptions
+    checkpoint_s3_uri="s3://my-bucket/checkpoints/",
+    checkpoint_local_path="/opt/ml/checkpoints",
+
+    # Mixed precision
+    hyperparameters={
+        "epochs": 30,
+        "batch_size": 256,
+        "lr": 1e-4,
+        "weight_decay": 0.01,
+        "warmup_steps": 1000,
+        "gradient_clip_norm": 1.0,
+        "use_amp": True,               # enables FP16/BF16 mixed precision
+        "amp_dtype": "bf16",
+    },
+
+    # Faster data access via FSx Lustre
+    # (Or use FastFile / Pipe mode if dataset is huge)
+
+    # Security
+    enable_network_isolation=False,    # set True for max isolation
+    enable_inter_container_traffic_encryption=False,  # set True for HIPAA-class
+    subnets=["subnet-...", "subnet-..."],
+    security_group_ids=["sg-..."],
+)
+
+train_input = TrainingInput(
+    "s3://my-bucket/train/",
+    input_mode="FastFile",             # S3 streaming mount
+)
+val_input = TrainingInput(
+    "s3://my-bucket/val/",
+    input_mode="FastFile",
+)
+
+estimator.fit({"train": train_input, "val": val_input})
+```
+
+### Inside `train.py` — the key bits
+
+```python
+import torch
+import torch.nn as nn
+from torch.utils.data import DataLoader, DistributedSampler
+import smdistributed.dataparallel.torch.torch_smddp  # registers SMDDP backend
+
+# SMDDP-aware setup
+torch.distributed.init_process_group(backend="smddp")
+local_rank = int(os.environ["LOCAL_RANK"])
+torch.cuda.set_device(local_rank)
+
+# Model + DDP wrapping
+model = MyModel().cuda(local_rank)
+model = torch.nn.parallel.DistributedDataParallel(model, device_ids=[local_rank])
+
+# Data loader with DistributedSampler
+sampler = DistributedSampler(train_dataset)
+loader = DataLoader(train_dataset, batch_size=BATCH_SIZE, sampler=sampler,
+                    num_workers=8, pin_memory=True, prefetch_factor=4)
+
+# Mixed precision
+scaler = torch.cuda.amp.GradScaler()
+amp_dtype = torch.bfloat16  # or torch.float16
+
+# Training loop (sketch)
+for epoch in range(EPOCHS):
+    sampler.set_epoch(epoch)
+    for batch in loader:
+        with torch.cuda.amp.autocast(dtype=amp_dtype):
+            loss = model(batch).loss
+        scaler.scale(loss).backward()
+        scaler.unscale_(optimizer)
+        torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
+        scaler.step(optimizer)
+        scaler.update()
+        scheduler.step()
+        optimizer.zero_grad()
+
+    # Checkpoint to /opt/ml/checkpoints (synced to S3 on Spot interruption)
+    if torch.distributed.get_rank() == 0:
+        torch.save({
+            "epoch": epoch,
+            "model": model.state_dict(),
+            "optimizer": optimizer.state_dict(),
+        }, f"/opt/ml/checkpoints/checkpoint_{epoch}.pt")
+```
+
+🎯 **Exam pattern.** Recognise:
+- `distribution={"smdistributed":{"dataparallel":{"enabled":True}}}` = SMDDP enabled
+- `use_spot_instances=True` + `checkpoint_s3_uri` = Spot training
+- `enable_network_isolation=True` = no outbound network
+- `enable_inter_container_traffic_encryption=True` = TLS between nodes
+
+---
+
+## 🛠️ Appendix B — Worked Example: Inferentia2 Inference Container
+
+```python
+# In your training/serving container
+import torch_neuronx
+import torch
+
+# Load your PyTorch model
+model = MyModel()
+model.load_state_dict(torch.load("model.pt"))
+model.eval()
+
+# Trace/compile for Inferentia2
+example_input = torch.zeros(1, 3, 224, 224)
+neuron_model = torch_neuronx.trace(
+    model,
+    example_input,
+    compiler_workdir="/tmp/neuron-compile",
+    compiler_args=[
+        "--target=trn1",   # or trn2 / inf2
+        "--auto-cast=all", # mixed precision
+    ],
+)
+neuron_model.save("model.neuron")
+
+# Deploy via SageMaker endpoint with the Neuron container
+from sagemaker.pytorch import PyTorchModel
+model = PyTorchModel(
+    model_data="s3://my-bucket/neuron-model.tar.gz",
+    role=role,
+    image_uri="763104351884.dkr.ecr.us-east-1.amazonaws.com/pytorch-inference-neuronx:2.1.0-neuronx-py310",
+    framework_version="2.1.0",
+)
+predictor = model.deploy(
+    initial_instance_count=2,
+    instance_type="ml.inf2.xlarge",
+)
+```
+
+🎯 **Cost-comparison rule of thumb (2025-26):** for the same throughput, **inf2.xlarge** typically runs 30-60% cheaper than **g5.xlarge** for transformer inference (BERT, T5, smaller Llama variants).
+
+---
+
+## 🛠️ Appendix C — Common DL Hyperparameter Search Spaces
+
+| Hyperparameter | Range for HPO |
+|----------------|---------------|
+| **Learning rate** | `ContinuousParameter(1e-5, 1e-2)` log-uniform |
+| **Batch size** | `CategoricalParameter([16, 32, 64, 128, 256, 512])` |
+| **Warmup steps** | `IntegerParameter(0, 5000)` |
+| **Weight decay** | `ContinuousParameter(1e-5, 1e-1)` log-uniform |
+| **Dropout (FC layers)** | `ContinuousParameter(0.0, 0.5)` |
+| **Number of attention heads** | `CategoricalParameter([4, 8, 12, 16])` |
+| **Number of layers** | `IntegerParameter(2, 24)` |
+| **Hidden dim** | `CategoricalParameter([256, 512, 768, 1024])` |
+
+🎯 **Exam pattern.** Match the HPO strategy:
+- **Bayesian** when budget is moderate (~30-50 trials) and you want learning-from-trials
+- **Hyperband** when individual trials are expensive (many epochs) and you want aggressive pruning
+- **Random** when budget is tiny (<10 trials) and embarrassingly parallel is OK
+- **Grid** rare — small discrete spaces only
+
+---
+
+## 🛠️ Appendix D — The 6 Most Common DL Training Issues And Their Fixes
+
+| Issue | Symptom | Fix |
+|-------|---------|-----|
+| Vanishing gradients | Loss plateaus at high value early | Use ReLU/GELU; better init (Xavier/Kaiming); residual connections; layer norm; Debugger built-in rule |
+| Exploding gradients | NaN losses; sudden divergence | Gradient clipping (norm 1.0); lower LR; check init |
+| Overfitting | Train loss ↓, val loss ↑ after epoch N | Early stop; dropout; weight decay; data augmentation; more data |
+| Underfitting | Both train and val high | Deeper/wider model; more features; less regularisation; longer training |
+| GPU under-utilisation | Profiler shows <80% util | More data-loader workers; pin_memory=True; prefetch_factor>2; FSx Lustre; Pipe mode |
+| Out of memory | CUDA OOM error | Smaller batch; gradient accumulation; mixed precision; SMMP (model parallel); gradient checkpointing |
+
+🎯 **Pre-flight checklist** before launching a big distributed training job:
+1. Verified model + batch fits on a single GPU at FP32?
+2. Verified mixed precision works (BF16 first, then FP16) on a single GPU?
+3. Verified data loader keeps GPU >80% utilised on a single GPU?
+4. Verified distributed run scales to 2 nodes before scaling to 32?
+5. Verified checkpointing path works on Spot interruption simulation?
+6. Verified VPC + KMS + IAM passes a security review?

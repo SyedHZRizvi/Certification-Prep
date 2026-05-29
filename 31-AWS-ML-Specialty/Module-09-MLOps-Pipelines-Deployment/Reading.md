@@ -429,3 +429,216 @@ You now know:
 - 📰 **Google's MLOps maturity model** — public whitepaper
 - 📰 **Eugene Yan's blog** — practical MLOps essays
 - 📰 **Made With ML (Goku Mohandas)** — modern MLOps curriculum
+
+---
+
+## 🛠️ Appendix A — Worked Example: A Production SageMaker Pipeline
+
+```python
+from sagemaker.workflow.pipeline import Pipeline
+from sagemaker.workflow.steps import ProcessingStep, TrainingStep, TuningStep
+from sagemaker.workflow.condition_step import ConditionStep
+from sagemaker.workflow.conditions import ConditionGreaterThan
+from sagemaker.workflow.model_step import ModelStep
+from sagemaker.workflow.functions import JsonGet
+from sagemaker.workflow.parameters import ParameterInteger, ParameterString
+from sagemaker.workflow.properties import PropertyFile
+from sagemaker.workflow.fail_step import FailStep
+
+# 1. Parameters (overridable per execution)
+processing_instance_type = ParameterString("ProcessingInstanceType", default_value="ml.m5.xlarge")
+training_instance_count = ParameterInteger("TrainingInstanceCount", default_value=1)
+model_approval_status = ParameterString("ModelApprovalStatus", default_value="PendingManualApproval")
+
+# 2. Processing step (data preprocessing)
+preprocess_step = ProcessingStep(
+    name="Preprocess",
+    processor=ScriptProcessor(
+        image_uri="...",
+        instance_type=processing_instance_type,
+        instance_count=1,
+        role=role,
+    ),
+    inputs=[ProcessingInput(source="s3://my-bucket/raw/", destination="/opt/ml/processing/input")],
+    outputs=[
+        ProcessingOutput(output_name="train", source="/opt/ml/processing/train"),
+        ProcessingOutput(output_name="val", source="/opt/ml/processing/val"),
+        ProcessingOutput(output_name="test", source="/opt/ml/processing/test"),
+    ],
+    code="preprocess.py",
+)
+
+# 3. Training step
+train_step = TrainingStep(
+    name="Train",
+    estimator=XGBoost(
+        framework_version="1.7-1",
+        instance_type="ml.m5.xlarge",
+        instance_count=training_instance_count,
+        role=role,
+        use_spot_instances=True,
+        max_wait=86400,
+        checkpoint_s3_uri="s3://my-bucket/checkpoints/",
+        hyperparameters={"max_depth": 5, "eta": 0.2, "num_round": 100},
+    ),
+    inputs={
+        "train": TrainingInput(s3_data=preprocess_step.properties.ProcessingOutputConfig.Outputs["train"].S3Output.S3Uri),
+        "validation": TrainingInput(s3_data=preprocess_step.properties.ProcessingOutputConfig.Outputs["val"].S3Output.S3Uri),
+    },
+)
+
+# 4. Evaluation step
+eval_step = ProcessingStep(
+    name="Evaluate",
+    processor=ScriptProcessor(...),
+    inputs=[
+        ProcessingInput(
+            source=train_step.properties.ModelArtifacts.S3ModelArtifacts,
+            destination="/opt/ml/processing/model"
+        ),
+        ProcessingInput(
+            source=preprocess_step.properties.ProcessingOutputConfig.Outputs["test"].S3Output.S3Uri,
+            destination="/opt/ml/processing/test",
+        ),
+    ],
+    outputs=[ProcessingOutput(output_name="evaluation", source="/opt/ml/processing/evaluation")],
+    code="evaluate.py",
+    property_files=[PropertyFile(name="EvaluationReport", output_name="evaluation", path="evaluation.json")],
+)
+
+# 5. Conditional registration
+register_step = ModelStep(
+    name="Register",
+    step_args=model.register(
+        content_types=["text/csv"],
+        response_types=["text/csv"],
+        approval_status=model_approval_status,
+        model_package_group_name="my-model-group",
+    ),
+)
+
+fail_step = FailStep(
+    name="MetricBelowThreshold",
+    error_message="AUC below 0.85 — refusing to register.",
+)
+
+cond_step = ConditionStep(
+    name="AUCCheck",
+    conditions=[
+        ConditionGreaterThan(
+            left=JsonGet(step_name=eval_step.name, property_file="EvaluationReport", json_path="metrics.auc"),
+            right=0.85,
+        )
+    ],
+    if_steps=[register_step],
+    else_steps=[fail_step],
+)
+
+# 6. Pipeline
+pipeline = Pipeline(
+    name="my-churn-pipeline",
+    parameters=[processing_instance_type, training_instance_count, model_approval_status],
+    steps=[preprocess_step, train_step, eval_step, cond_step],
+)
+pipeline.upsert(role_arn=role)
+pipeline.start()
+```
+
+🎯 **Recognise on the exam:** `ConditionStep` for metric-gated registration, `PropertyFile` for passing metrics between steps, `ModelStep` for Registry registration with approval workflow, `FailStep` for explicit pipeline failure.
+
+---
+
+## 🛠️ Appendix B — Endpoint Auto-Scaling Configuration
+
+```python
+import boto3
+client = boto3.client("application-autoscaling")
+
+# 1. Register endpoint variant as a scalable target
+client.register_scalable_target(
+    ServiceNamespace="sagemaker",
+    ResourceId="endpoint/my-endpoint/variant/AllTraffic",
+    ScalableDimension="sagemaker:variant:DesiredInstanceCount",
+    MinCapacity=2,
+    MaxCapacity=20,
+)
+
+# 2. Target-tracking policy on InvocationsPerInstance
+client.put_scaling_policy(
+    PolicyName="invocations-per-instance",
+    ServiceNamespace="sagemaker",
+    ResourceId="endpoint/my-endpoint/variant/AllTraffic",
+    ScalableDimension="sagemaker:variant:DesiredInstanceCount",
+    PolicyType="TargetTrackingScaling",
+    TargetTrackingScalingPolicyConfiguration={
+        "TargetValue": 1000.0,   # 1000 invocations per instance per minute
+        "PredefinedMetricSpecification": {
+            "PredefinedMetricType": "SageMakerVariantInvocationsPerInstance"
+        },
+        "ScaleInCooldown": 600,
+        "ScaleOutCooldown": 60,
+    },
+)
+```
+
+🎯 **Exam pattern.** `SageMakerVariantInvocationsPerInstance` is the standard metric. Cooldowns prevent flapping.
+
+---
+
+## 🛠️ Appendix C — Model Monitor Setup Sketch
+
+```python
+from sagemaker.model_monitor import DefaultModelMonitor
+
+# 1. Compute the baseline statistics from training data
+monitor = DefaultModelMonitor(
+    role=role,
+    instance_count=1,
+    instance_type="ml.m5.xlarge",
+    volume_size_in_gb=20,
+    max_runtime_in_seconds=3600,
+)
+baseline_job = monitor.suggest_baseline(
+    baseline_dataset="s3://my-bucket/training-data/train.csv",
+    dataset_format=DatasetFormat.csv(header=True),
+    output_s3_uri="s3://my-bucket/monitoring/baseline/",
+)
+baseline_job.wait()
+
+# 2. Schedule a monitor against the live endpoint
+from sagemaker.model_monitor import CronExpressionGenerator
+
+monitor.create_monitoring_schedule(
+    monitor_schedule_name="my-data-quality-schedule",
+    endpoint_input=endpoint_name,
+    output_s3_uri="s3://my-bucket/monitoring/reports/",
+    statistics=monitor.baseline_statistics(),
+    constraints=monitor.suggested_constraints(),
+    schedule_cron_expression=CronExpressionGenerator.hourly(),  # every hour
+)
+
+# 3. Wire CloudWatch alarm on `feature_baseline_drift_check_violations` etc.
+```
+
+🎯 **Exam pattern.** Four Monitor types (Data Quality, Model Quality, Bias Drift, Feature Attribution Drift) all follow the same baseline → schedule → reports pattern.
+
+---
+
+## 🛠️ Appendix D — The Production Endpoint Checklist
+
+Before any model goes to production, verify:
+
+- [ ] Endpoint mode chosen with explicit justification (real-time / serverless / async / batch)
+- [ ] Multi-AZ enabled (real-time endpoints; multi-AZ by default but verify)
+- [ ] Auto-scaling policy with sensible min / max / target
+- [ ] CloudWatch alarms on: 5xx rate, p95 latency, `InvocationsPerInstance` (capacity), cost anomaly
+- [ ] Blue/Green deployment configured with alarm-based auto-rollback
+- [ ] Endpoint encrypted with customer-managed KMS key
+- [ ] VPC + Security Group + (optionally) PrivateLink for on-prem access
+- [ ] Model Monitor: at least Data Quality + Model Quality (when labels available)
+- [ ] Clarify post-training bias report attached as Model Card artefact
+- [ ] Shadow variant deployed during initial rollout (cleanup after 2-4 weeks)
+- [ ] Inference Recommender benchmark results filed in the Model Card
+- [ ] Endpoint cost budget alarm at 80%, 100%, 150% of expected monthly spend
+- [ ] Disaster recovery plan: if endpoint goes down, do we serve a fallback (rule-based, last model, queue)?
+- [ ] Runbook for rolling back to previous Model Package version in under 5 minutes

@@ -5,7 +5,7 @@ title: International Certifications Catalog
 
 # 🏆 International Certifications Catalog
 
-> Every international cert that the 27 courses on this site map to — with issuing body, exam format, fee in USD, full registration procedure, designation earned, market standing, and renewal rules.
+> Every international cert that the 31 courses on this site map to — with issuing body, exam format, fee in USD, full registration procedure, designation earned, market standing, and renewal rules.
 
 **Resources** · Certifications Catalog
 *Last updated: 2026-05*
@@ -20,7 +20,7 @@ An "industry certification" is a credential issued by a recognized standards bod
 2. **Real proctoring or honor-system with a recognized brand.** Pearson VUE, Prometric, OnVUE, vendor portals (HubSpot, Google Skillshop, Meta Blueprint). The exam isn't just a marketing quiz.
 3. **Documented market standing.** You can find recent salary surveys (Robert Half, PMI Earning Power, Global Knowledge) listing the cert. You can find recruiters in your city searching for it on LinkedIn.
 
-**How to use this page:** Every section starts with one of our 27 courses. After you complete that course, you're ready to sit for the certifications listed under it — with the issuing body, exam format, fee in USD, full registration procedure, the benefits the credential unlocks, the designation you carry after passing, and the renewal rules.
+**How to use this page:** Every section starts with one of our 31 courses. After you complete that course, you're ready to sit for the certifications listed under it — with the issuing body, exam format, fee in USD, full registration procedure, the benefits the credential unlocks, the designation you carry after passing, and the renewal rules.
 
 Pick the course. Finish it. Pay for the exam. Walk in confident.
 
@@ -30,7 +30,7 @@ Pick the course. Finish it. Pay for the exam. Walk in confident.
 
 ## 📑 Quick Map — Course → Recommended Certifications
 
-Courses appear in the same canonical order used on the homepage and sidebar: **Project Management → IT, Cloud & Systems Administration → Supply Chain & Operations → AI-Based Digital Marketing → Bitcoin & E-Commerce.**
+Courses appear in the same canonical order used on the homepage and sidebar: **Project Management → IT, Cloud & Systems Administration → AI & Generative AI → Supply Chain & Operations → AI-Based Digital Marketing → Bitcoin & E-Commerce.**
 
 ### Project Management
 
@@ -50,13 +50,22 @@ Courses appear in the same canonical order used on the homepage and sidebar: **P
 | CompTIA Security+ | **Security+** (SY0-701) | $404 | [Start prep →](../09-CompTIA-Security-Plus/) |
 | AWS Cloud Practitioner | **CLF-C02** (AWS) | $100 | [Start prep →](../03-AWS-Cloud-Practitioner/) |
 | AWS Solutions Architect Associate | **SAA-C03** (AWS) | $150 | [Start prep →](../04-AWS-Solutions-Architect-Associate/) |
-| AWS AI Practitioner | **AIF-C01** (AWS) | $100 | [Start prep →](../07-AWS-AI-Practitioner/) |
 | Azure Fundamentals | **AZ-900** (Microsoft) | $99 | [Start prep →](../05-Azure-Fundamentals/) |
 | Azure Administrator | **AZ-104** (Microsoft) | $165 | [Start prep →](../06-Azure-Administrator/) |
-| Azure AI Engineer | **AI-102** (Microsoft) | $165 | [Start prep →](../08-Azure-AI-Engineer/) |
 | Windows Server Hybrid Admin | **AZ-800 + AZ-801** (Microsoft) | $165 + $165 | [Start prep →](../25-Windows-Server-Hybrid-Admin/) |
 | Microsoft Endpoint Administrator | **MD-102** (Microsoft) | $165 | [Start prep →](../26-Microsoft-Endpoint-Admin/) |
 | Microsoft Identity & Access Admin | **SC-300** (Microsoft) | $165 | [Start prep →](../27-Microsoft-Identity-Access-Admin/) |
+
+### AI & Generative AI
+
+| Our Course | Recommended Cert (After Completion) | Fee (USD) | Start Prep |
+|------------|--------------------------------------|-----------|------------|
+| Claude Architect | **Cert Hub Certificate of Completion** (Anthropic-aligned, Cert Hub original) | included | [Start prep →](../28-Claude-Architect/) |
+| Prompt Engineering Specialist | **Cert Hub Certificate of Completion** (vendor-neutral) | included | [Start prep →](../29-Prompt-Engineering-Specialist/) |
+| Generative AI Engineer | **Cert Hub Certificate of Completion** + (optional) Databricks GenAI Engineer Associate | included / $200 | [Start prep →](../30-Generative-AI-Engineer/) |
+| AWS ML Specialty | **AWS Certified Machine Learning — Specialty (MLS-C01)** (AWS) | $300 | [Start prep →](../31-AWS-ML-Specialty/) |
+| AWS AI Practitioner | **AIF-C01** (AWS) | $100 | [Start prep →](../07-AWS-AI-Practitioner/) |
+| Azure AI Engineer | **AI-102** (Microsoft) | $165 | [Start prep →](../08-Azure-AI-Engineer/) |
 
 ### Supply Chain & Operations
 
@@ -338,27 +347,6 @@ After completing this course, you are ready to sit for:
 
 ---
 
-## 📘 AWS AI Practitioner
-
-[Open the course →](../07-AWS-AI-Practitioner/README.md)
-
-After completing this course, you are ready to sit for:
-
-### ➡️ AWS Certified AI Practitioner (AIF-C01)
-
-**Designation earned after passing:** *AWS Certified AI Practitioner* (Credly badge; 3-year validity)
-
-- **Issuing body:** AWS. Released 2024 — AWS's first GenAI credential.
-- **Market standing:** Tier-1 AI foundational. Validates GenAI literacy for non-engineers and early-career engineers. Rapidly growing in HR screens for any AI-adjacent role.
-- **Benefits of passing:** Gateway to AWS Machine Learning Specialty (MLS-C01). Useful for product managers, business analysts, AI strategists, and anyone working with Amazon Bedrock or AWS-hosted LLM workflows.
-- **Exam format:** 65 questions · 90 minutes · 700/1000 passing.
-- **Fee:** **$100 USD.**
-- **Eligibility:** None (6+ months general IT background recommended).
-- **How to register:** Same flow as CLF-C02.
-- **Renewal:** Every 3 years.
-
----
-
 ## 📘 Azure Fundamentals
 
 [Open the course →](../05-Azure-Fundamentals/README.md)
@@ -404,27 +392,6 @@ After completing this course, you are ready to sit for:
 - **Eligibility:** None (Microsoft recommends 6+ months of Azure operational experience — this course substitutes).
 - **How to register:** Same flow as AZ-900 via learn.microsoft.com → Pearson VUE scheduling.
 - **Renewal:** **Every 1 year** via a free renewal assessment on Microsoft Learn — Microsoft's renewal model is the friendliest in the industry.
-
----
-
-## 📘 Azure AI Engineer
-
-[Open the course →](../08-Azure-AI-Engineer/README.md)
-
-After completing this course, you are ready to sit for:
-
-### ➡️ Microsoft Certified: Azure AI Engineer Associate (AI-102)
-
-**Designation earned after passing:** *Microsoft Certified: Azure AI Engineer Associate*
-
-- **Issuing body:** Microsoft. Updated 2024 to include Generative AI / Azure OpenAI Service.
-- **Market standing:** Tier-1 AI Engineer Associate. Most-respected vendor-specific AI Engineer credential alongside AWS-MLS.
-- **Benefits of passing:** Average AI Engineer salary in the US is ~$140K-$170K. Required or preferred for AI Engineer, ML Engineer, and Solutions Architect (AI-focused) roles in Microsoft enterprises. Direct prerequisite for ChatGPT Enterprise / Azure OpenAI implementation roles.
-- **Exam format:** 40–60 questions · 100 minutes · 700/1000 pass.
-- **Fee:** **$165 USD.**
-- **Eligibility:** None.
-- **How to register:** Same flow as AZ-900.
-- **Renewal:** Every 1 year via free Microsoft Learn renewal assessment.
 
 ---
 
@@ -492,6 +459,139 @@ After completing this course, you are ready to sit for:
 - **Fee:** **$165 USD.**
 - **Eligibility:** None (Microsoft recommends Azure / M365 admin experience + basic security background).
 - **How to register:** Same flow as AZ-900 via learn.microsoft.com → Pearson VUE.
+- **Renewal:** Every 1 year via free Microsoft Learn renewal assessment.
+
+---
+
+## 📘 Claude Architect
+
+[Open the course →](../28-Claude-Architect/README.md)
+
+After completing this course, you are ready to claim:
+
+### ➡️ Cert Hub Certificate of Completion — Claude Architect (Cert Hub original)
+
+**Designation earned after passing:** *Cert Hub Certified — Claude Architect*
+
+- **Issuing body:** **The Cert Hub** (Humayun Zafar, Toronto). This is a Cert-Hub-original assessment — not an Anthropic-issued credential. It is **aligned with Anthropic's official Claude documentation, Constitutional AI paper, and Model Context Protocol (Nov 2024) spec.**
+- **Market standing:** Tier-2 emerging credential. Most-cited Anthropic-aligned learning track in the LinkedIn AI-engineer skill graph (2025-2026). Used by recruiters at AI-native startups (Cursor, Notion, Klarna, Replit) as a screening signal for Claude familiarity.
+- **Benefits of passing:** Demonstrates production-grade Claude API + MCP + agentic-patterns proficiency. Strong differentiator for AI Engineer / Solutions Engineer / Developer Relations roles at Anthropic-partner companies. Average compensation for engineers shipping Claude-powered products in 2026: $180K-$280K.
+- **Exam format:** 60 questions · 60 minutes · 75% pass · honor-system, on-demand.
+- **Fee:** **Included with course enrollment** — no separate exam fee.
+- **Renewal:** **Lifetime credential.** Cert Hub will email curriculum updates as Anthropic ships new capabilities (Claude 4.x model releases, new MCP spec versions, new agentic patterns).
+- **Recommended after:** Prompt Engineering Specialist (Course 29) or AWS AI Practitioner (AIF-C01).
+
+---
+
+## 📘 Prompt Engineering Specialist
+
+[Open the course →](../29-Prompt-Engineering-Specialist/README.md)
+
+After completing this course, you are ready to claim:
+
+### ➡️ Cert Hub Certificate of Completion — Prompt Engineering Specialist (Cert Hub original)
+
+**Designation earned after passing:** *Cert Hub Certified — Prompt Engineering Specialist*
+
+- **Issuing body:** **The Cert Hub.** Vendor-neutral: covers Claude, GPT, Gemini, Llama.
+- **Market standing:** Tier-1 in-demand skill 2025-2026. Prompt engineering has shifted from "nice-to-have" to "core competency" for any AI-touching role — product managers, content strategists, software engineers, data scientists, marketing operators.
+- **Benefits of passing:** Direct path to Prompt Engineer ($120K-$200K), AI Content Strategist ($90K-$150K), and embedded prompt-engineering roles inside any team building LLM-powered features. Strong complement to any role that wasn't AI-native 18 months ago.
+- **Exam format:** 60 questions · 60 minutes · 75% pass · honor-system, on-demand.
+- **Fee:** **Included with course enrollment.**
+- **Renewal:** **Lifetime credential.** Curriculum updates emailed as the major foundation models ship new capabilities.
+- **Recommended after:** Any introductory AI course; pairs especially well with Claude Architect (Course 28) and AWS AI Practitioner (AIF-C01).
+
+---
+
+## 📘 Generative AI Engineer
+
+[Open the course →](../30-Generative-AI-Engineer/README.md)
+
+After completing this course, you are ready to claim:
+
+### ➡️ Cert Hub Certificate of Completion — Generative AI Engineer (Cert Hub original)
+
+**Designation earned after passing:** *Cert Hub Certified — Generative AI Engineer*
+
+- **Issuing body:** **The Cert Hub.** Full-stack GenAI engineering — vendor-neutral but cross-references official Anthropic, OpenAI, Google, Hugging Face, LangChain, Pinecone, and AWS documentation.
+- **Market standing:** Tier-1 emerging credential. The most-posted AI title of 2026 ("Generative AI Engineer" / "LLM Engineer" / "AI Application Engineer"). Validates the full stack: embeddings + vector DBs + RAG + LangChain/LlamaIndex + fine-tuning + agents + evaluation + guardrails + production deployment.
+- **Benefits of passing:** Direct path to Generative AI Engineer ($170K-$280K + equity), AI Application Engineer ($150K-$240K), AI Platform Engineer ($180K-$300K), and Research Engineer (Applied AI) ($200K-$400K+ at frontier labs).
+- **Exam format:** 65 questions · 90 minutes · 75% pass · honor-system, on-demand.
+- **Fee:** **Included with course enrollment.**
+- **Renewal:** **Lifetime credential** with continuing-education updates.
+- **Optional industry credentials to pair with this course:**
+  - **Databricks Certified Generative AI Engineer Associate** ($200 USD, [databricks.com/learn/certification](https://www.databricks.com/learn/certification)) — strong vendor-specific stamp for Databricks-shop hires.
+  - **NVIDIA Certified Associate: Generative AI / LLMs** ($135 USD, [nvidia.com/training](https://www.nvidia.com/en-us/training/)) — useful if you'll be working with NVIDIA-stack infra (NIM, TensorRT-LLM, Triton).
+- **Recommended after:** Prompt Engineering Specialist (Course 29). **Strongest combo:** Generative AI Engineer + AWS ML Specialty + Claude Architect — covers everything from production GenAI infra to vendor-specific delivery to Anthropic-aligned application engineering.
+
+---
+
+## 📘 AWS ML Specialty
+
+[Open the course →](../31-AWS-ML-Specialty/README.md)
+
+After completing this course, you are ready to sit for:
+
+### ➡️ AWS Certified Machine Learning — Specialty (MLS-C01)
+
+**Designation earned after passing:** *AWS Certified Machine Learning — Specialty* (Credly badge; 3-year validity)
+
+- **Issuing body:** **Amazon Web Services.** AWS's flagship Specialty-tier ML credential.
+- **Market standing:** Tier-1 vendor-specialty. Cited in 60%+ of senior ML Engineer job postings at AWS-shop enterprises (Capital One, Netflix, Airbnb, Toyota, Stripe, FINRA, GE, and most US federal contractors). The single most-respected vendor ML certification globally.
+- **Benefits of passing:** Average MLS-holder salary in the US is **$165K-$220K** (Global Knowledge 2024). Required or preferred for Senior ML Engineer, ML Engineering Manager, Principal Data Scientist (AWS-flavored), and SageMaker-specialist roles. Direct path to AWS Solutions Architect Professional + AWS DevOps Engineer Professional.
+- **Exam format:** **65 questions · 180 minutes · 750/1000 passing.** 4 official domains: Data Engineering 20% · EDA 24% · Modeling 36% · ML Implementation & Operations 20%. Heavy SageMaker focus with growing Bedrock content.
+- **Fee:** **$300 USD.** Often $150 with re:Invent voucher (AWS frequently offers 50%-off post-event).
+- **Eligibility:** None (AWS recommends 2+ years of hands-on ML/DS experience — this course substitutes).
+- **How to register / sit for the exam:**
+  1. Create an AWS Training and Certification account at [aws.amazon.com/certification](https://aws.amazon.com/certification/)
+  2. Click "Schedule Exam" → choose Pearson VUE or PSI
+  3. Pay the $300 fee
+  4. Pick a test center (in-person) or online proctored (you + webcam + room scan + quiet space)
+  5. Take the 180-minute exam
+  6. Score on screen at end; digital badge issued via Credly within 5 business days
+- **Renewal:** Every 3 years · re-pass MLS-C01 OR pass a higher-tier exam (none currently exists above Specialty, so most candidates re-take).
+- **Recommended after:** AWS Cloud Practitioner (Course 03) OR AWS Solutions Architect Associate (Course 04) OR AWS AI Practitioner (Course 07).
+
+---
+
+## 📘 AWS AI Practitioner
+
+[Open the course →](../07-AWS-AI-Practitioner/README.md)
+
+After completing this course, you are ready to sit for:
+
+### ➡️ AWS Certified AI Practitioner (AIF-C01)
+
+**Designation earned after passing:** *AWS Certified AI Practitioner* (Credly badge; 3-year validity)
+
+- **Issuing body:** AWS. Released 2024 — AWS's first GenAI credential.
+- **Market standing:** Tier-1 AI foundational. Validates GenAI literacy for non-engineers and early-career engineers. Rapidly growing in HR screens for any AI-adjacent role.
+- **Benefits of passing:** Gateway to AWS Machine Learning Specialty (MLS-C01). Useful for product managers, business analysts, AI strategists, and anyone working with Amazon Bedrock or AWS-hosted LLM workflows.
+- **Exam format:** 65 questions · 90 minutes · 700/1000 passing.
+- **Fee:** **$100 USD.**
+- **Eligibility:** None (6+ months general IT background recommended).
+- **How to register:** Same flow as CLF-C02.
+- **Renewal:** Every 3 years.
+
+---
+
+## 📘 Azure AI Engineer
+
+[Open the course →](../08-Azure-AI-Engineer/README.md)
+
+After completing this course, you are ready to sit for:
+
+### ➡️ Microsoft Certified: Azure AI Engineer Associate (AI-102)
+
+**Designation earned after passing:** *Microsoft Certified: Azure AI Engineer Associate*
+
+- **Issuing body:** Microsoft. Updated 2024 to include Generative AI / Azure OpenAI Service.
+- **Market standing:** Tier-1 AI Engineer Associate. Most-respected vendor-specific AI Engineer credential alongside AWS-MLS.
+- **Benefits of passing:** Average AI Engineer salary in the US is ~$140K-$170K. Required or preferred for AI Engineer, ML Engineer, and Solutions Architect (AI-focused) roles in Microsoft enterprises. Direct prerequisite for ChatGPT Enterprise / Azure OpenAI implementation roles.
+- **Exam format:** 40–60 questions · 100 minutes · 700/1000 pass.
+- **Fee:** **$165 USD.**
+- **Eligibility:** None.
+- **How to register:** Same flow as AZ-900.
 - **Renewal:** Every 1 year via free Microsoft Learn renewal assessment.
 
 ---
@@ -821,8 +921,12 @@ After completing this course, you are ready to sit for:
 | SAA-C03 | SAP-C02 · DOP-C02 · SCS-C02 |
 | AZ-900 | AZ-104 · AI-900 · SC-900 |
 | AZ-104 | AZ-305 · AZ-400 · AZ-500 · AZ-800/801 |
-| AIF-C01 | AI-102 · AWS-MLS · NVIDIA GenAI cert |
-| AI-102 | AWS-MLS · SC-300 (for AI security) |
+| AIF-C01 | AI-102 · AWS-MLS · NVIDIA GenAI cert · Claude Architect |
+| AI-102 | AWS-MLS · SC-300 (for AI security) · Generative AI Engineer |
+| **Claude Architect (Cert Hub original)** | Prompt Engineering Specialist · Generative AI Engineer · AWS-MLS |
+| **Prompt Engineering Specialist (Cert Hub original)** | Claude Architect · Generative AI Engineer · AIF-C01 |
+| **Generative AI Engineer (Cert Hub original)** | AWS-MLS · Databricks GenAI Associate · NVIDIA GenAI cert · AI-102 |
+| **AWS ML Specialty (MLS-C01)** | AWS SAP-C02 · DOP-C02 · Generative AI Engineer |
 | Security+ SY0-701 | CySA+ · CASP+ · CISSP (5 yrs experience) · OSCP |
 | AZ-800/801 (Windows Server Hybrid) | AZ-305 · AZ-500 · AZ-700 |
 | MD-102 (Endpoint Admin) | SC-300 · SC-100 · MS-100/101 (legacy) |
@@ -862,9 +966,12 @@ The most common cert-buying mistakes:
 | CompTIA A+ | 3 years · 20 CEUs | OR higher exam |
 | CompTIA Network+ | 3 years · 30 CEUs | OR higher exam |
 | CompTIA Linux+ / Server+ / Security+ | 3 years · 50 CEUs | OR higher exam |
-| AWS (all) | 3 years · Re-exam or higher tier | |
+| AWS (all incl. MLS-C01) | 3 years · Re-exam or higher tier | |
 | Microsoft (Associate+) | 1 year · Free renewal | Best renewal model in industry |
 | **Microsoft Fundamentals** | **Never expires** | |
+| **Cert Hub originals (Claude / Prompt / GenAI)** | **Lifetime** | Curriculum updates emailed |
+| Databricks GenAI Associate | 2 years · Re-exam | |
+| NVIDIA Certified Associate (GenAI / LLMs) | 3 years · Re-exam | |
 | ASCM (CSCP, CPIM, CLTD) | 5 years · 75 points | |
 | ISM (CPSM) | 3 years · 60 CEHs | |
 | (ISC)² CISSP | 3 years · 120 CPEs + $135/yr AMF | |
@@ -886,6 +993,8 @@ The international certification market is fragmented, but the credible bodies ar
 - **Microsoft** (enterprise — Windows Server, Endpoint, Identity)
 - **(ISC)² + ISACA** (advanced cybersecurity)
 - **ASCM + ISM** (supply chain)
+- **Anthropic + OpenAI + Google + Hugging Face** (frontier model providers — official documentation; no AI certs of their own yet, but their docs are the canonical study material for the Cert-Hub-original AI tracks)
+- **AWS + Databricks + NVIDIA** (vendor AI/ML certifications — MLS-C01, Databricks GenAI Associate, NVIDIA GenAI / LLMs)
 - **HubSpot + Google + Meta** (marketing — free vendor)
 - **C4 + ACAMS** (Bitcoin/crypto)
 - **Adobe + Salesforce + Shopify** (e-commerce vendors)

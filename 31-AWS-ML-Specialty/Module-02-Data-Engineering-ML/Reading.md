@@ -511,3 +511,139 @@ You now know:
 - 📰 **Netflix Tech Blog** — *Maestro*, *Iceberg*, *Genie* posts
 - 📰 **Airbnb Engineering Blog** — *Building Airflow*, *Minerva* metrics platform
 - 📰 **Maxime Beauchemin's blog** — Airflow creator's essays on data engineering
+
+---
+
+## 🛠️ Appendix A — A Working Athena + Parquet Setup For ML
+
+```sql
+-- 1. Create a Parquet, partitioned, projected table over your curated zone
+CREATE EXTERNAL TABLE IF NOT EXISTS ml_curated.orders (
+    order_id      string,
+    customer_id   string,
+    order_total   double,
+    item_count    int,
+    order_country string
+)
+PARTITIONED BY (year int, month int, day int)
+STORED AS PARQUET
+LOCATION 's3://ml-curated/orders/'
+TBLPROPERTIES (
+    -- Skip the crawler with partition projection
+    'projection.enabled'='true',
+    'projection.year.type'='integer',
+    'projection.year.range'='2023,2030',
+    'projection.month.type'='integer',
+    'projection.month.range'='1,12',
+    'projection.month.digits'='2',
+    'projection.day.type'='integer',
+    'projection.day.range'='1,31',
+    'projection.day.digits'='2',
+    'storage.location.template'='s3://ml-curated/orders/year=${year}/month=${month}/day=${day}/',
+    'parquet.compression'='SNAPPY'
+);
+
+-- 2. Athena query - cost-efficient: column selection + partition filter
+SELECT
+    customer_id,
+    SUM(order_total) AS lifetime_value
+FROM ml_curated.orders
+WHERE year = 2026 AND month BETWEEN 1 AND 5
+GROUP BY customer_id
+ORDER BY lifetime_value DESC
+LIMIT 100;
+```
+
+🎯 **Exam patterns.** Recognise the four cost levers in one query:
+- `STORED AS PARQUET` + `parquet.compression='SNAPPY'` (column store + compression)
+- `PARTITIONED BY` (partition pruning)
+- `projection.enabled='true'` (no crawler latency)
+- `WHERE year = ... AND month BETWEEN ...` (only relevant partitions scanned)
+- `SELECT customer_id, SUM(...)` (column projection — only the needed columns read)
+
+---
+
+## 🛠️ Appendix B — Glue Job Bookmarks Sketch
+
+```python
+# Inside a Glue ETL job — process only new files since last run
+import sys
+from awsglue.utils import getResolvedOptions
+from awsglue.context import GlueContext
+from pyspark.context import SparkContext
+from awsglue.job import Job
+
+args = getResolvedOptions(sys.argv, ["JOB_NAME"])
+glueContext = GlueContext(SparkContext.getOrCreate())
+job = Job(glueContext)
+job.init(args["JOB_NAME"], args)
+
+# Reads ONLY new files since last successful run
+df = glueContext.create_dynamic_frame.from_catalog(
+    database="ml_lake",
+    table_name="raw_orders",
+    transformation_ctx="raw_orders_source",   # MUST be unique per source
+)
+
+# Transform...
+df = df.drop_fields(["pii_email"])
+
+# Write back to S3
+glueContext.write_dynamic_frame.from_options(
+    frame=df,
+    connection_type="s3",
+    connection_options={
+        "path": "s3://ml-curated/orders/",
+        "partitionKeys": ["year", "month", "day"],
+    },
+    format="parquet",
+    transformation_ctx="orders_sink",
+)
+
+job.commit()   # advances the bookmark
+```
+
+🎯 **Exam pattern.** `transformation_ctx` + `job.commit()` is the bookmark mechanism. Enable bookmarks in the Glue job properties to activate.
+
+---
+
+## 🛠️ Appendix C — Kinesis Firehose To Parquet — IaC Snippet
+
+```yaml
+# CloudFormation (excerpt)
+ClickstreamFirehose:
+  Type: AWS::KinesisFirehose::DeliveryStream
+  Properties:
+    DeliveryStreamName: clickstream-to-parquet
+    DeliveryStreamType: DirectPut
+    ExtendedS3DestinationConfiguration:
+      BucketARN: !Sub arn:aws:s3:::${LakeBucket}
+      Prefix: "raw/clickstream/year=!{timestamp:yyyy}/month=!{timestamp:MM}/day=!{timestamp:dd}/"
+      ErrorOutputPrefix: "error/clickstream/!{firehose:error-output-type}/"
+      BufferingHints: { SizeInMBs: 64, IntervalInSeconds: 60 }
+      CompressionFormat: UNCOMPRESSED   # required when format conversion is enabled
+      DataFormatConversionConfiguration:
+        Enabled: true
+        InputFormatConfiguration:
+          Deserializer:
+            OpenXJsonSerDe: {}
+        OutputFormatConfiguration:
+          Serializer:
+            ParquetSerDe:
+              Compression: SNAPPY
+        SchemaConfiguration:
+          DatabaseName: ml_lake
+          TableName: clickstream
+          RoleARN: !GetAtt FirehoseRole.Arn
+          Region: !Ref AWS::Region
+      RoleARN: !GetAtt FirehoseRole.Arn
+      EncryptionConfiguration:
+        KMSEncryptionConfig:
+          AWSKMSKeyARN: !GetAtt CMK.Arn
+```
+
+🎯 **Exam patterns.**
+- `DataFormatConversionConfiguration` is the JSON→Parquet feature
+- `SchemaConfiguration` points at a Glue table — that's how Firehose knows the Parquet schema
+- `BufferingHints` minimum is 60 seconds — Firehose is *near* real-time, never sub-second
+- `KMSEncryptionConfig` keeps the landed Parquet KMS-encrypted automatically

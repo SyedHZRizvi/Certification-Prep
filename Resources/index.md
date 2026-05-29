@@ -5,7 +5,7 @@ title: Resources
 
 # 📚 Resources
 
-> Curated links to certifications, books, external practice tests, communities, and tools that complement the 27 courses on this site. Use these alongside the modules — don't try to read everything before starting.
+> Curated links to certifications, books, external practice tests, communities, and tools that complement the 31 courses on this site. Use these alongside the modules — don't try to read everything before starting.
 
 **Resources** · Hub
 *Last updated: 2026-05*
@@ -18,7 +18,7 @@ Pick the one that matches what you need right now. Each is a deep-dive on its to
 
 ### 🏆 [International Certifications Catalog](./International-Certifications/)
 
-**Every international cert that the 27 courses on this site map to** — with issuing body, exam format, fee in USD, full registration procedure, designation earned, market standing, and renewal rules. The single most-referenced page once you're ready to actually take an exam.
+**Every international cert that the 31 courses on this site map to** — with issuing body, exam format, fee in USD, full registration procedure, designation earned, market standing, and renewal rules. The single most-referenced page once you're ready to actually take an exam.
 
 - **Project & Agile** — PSM I, PMP, CAPM, CSM, PMI-ACP
 - **Cloud — AWS** — CLF-C02, SAA-C03, AIF-C01 + Pro/Specialty next steps
@@ -34,7 +34,7 @@ Pick the one that matches what you need right now. Each is a deep-dive on its to
 
 ### 📖 [Books & Links](./Books-and-Links/)
 
-The single most-recommended resources (both free vendor materials and paid books/courses), organized by cert family — for **all 27 tracks**.
+The single most-recommended resources (both free vendor materials and paid books/courses), organized by cert family — for **all 31 tracks**.
 
 - **Project & Agile** — The Scrum Guide, PMBOK 7, Andrew Ramdayal's PMP Udemy course
 - **AWS** — AWS Skill Builder (official training portal), AWS docs, exam guides
@@ -82,16 +82,20 @@ Plus: how to find a study buddy, where to ask questions, and which "too good to 
 
 ## 🎓 Tracks You Can Prepare For Here
 
-The 27 courses on this site, grouped by category. Click any course to open its README.
+The 31 courses on this site, grouped by category. Click any course to open its README.
 
 ### Project Management
 - 🏃 [Scrum Master (PSM I)](../01-Scrum-Master/) · 🧭 [PMP](../02-PMP/)
 
 ### IT, Cloud & Systems Administration
 - 🛠️ [CompTIA A+](../21-CompTIA-A-Plus/) · 🌐 [CompTIA Network+](../22-CompTIA-Network-Plus/) · 🐧 [CompTIA Linux+](../23-CompTIA-Linux-Plus/) · 🗄️ [CompTIA Server+](../24-CompTIA-Server-Plus/) · 🛡️ [CompTIA Security+](../09-CompTIA-Security-Plus/)
-- ☁️ [AWS Cloud Practitioner](../03-AWS-Cloud-Practitioner/) · 🏗️ [AWS Solutions Architect](../04-AWS-Solutions-Architect-Associate/) · 🤖 [AWS AI Practitioner](../07-AWS-AI-Practitioner/)
-- 🌥️ [Azure Fundamentals](../05-Azure-Fundamentals/) · 🛠️ [Azure Administrator](../06-Azure-Administrator/) · 🧠 [Azure AI Engineer](../08-Azure-AI-Engineer/)
+- ☁️ [AWS Cloud Practitioner](../03-AWS-Cloud-Practitioner/) · 🏗️ [AWS Solutions Architect](../04-AWS-Solutions-Architect-Associate/)
+- 🌥️ [Azure Fundamentals](../05-Azure-Fundamentals/) · 🛠️ [Azure Administrator](../06-Azure-Administrator/)
 - 🪟 [Windows Server Hybrid Admin](../25-Windows-Server-Hybrid-Admin/) · 💻 [Microsoft Endpoint Administrator](../26-Microsoft-Endpoint-Admin/) · 🪪 [Microsoft Identity & Access Admin](../27-Microsoft-Identity-Access-Admin/)
+
+### AI & Generative AI
+- 🧬 [Claude Architect](../28-Claude-Architect/) · ✍️ [Prompt Engineering Specialist](../29-Prompt-Engineering-Specialist/) · ⚡ [Generative AI Engineer](../30-Generative-AI-Engineer/)
+- 🔬 [AWS ML Specialty](../31-AWS-ML-Specialty/) · 🤖 [AWS AI Practitioner](../07-AWS-AI-Practitioner/) · 🧠 [Azure AI Engineer](../08-Azure-AI-Engineer/)
 
 ### Supply Chain & Operations
 - 🏭 [ASCM CPIM](../11-ASCM-CPIM/) · 📦 [ASCM CSCP](../10-ASCM-CSCP/) · 🚛 [ASCM CLTD](../12-ASCM-CLTD/) · 🤝 [ISM CPSM](../13-ISM-CPSM/)
@@ -111,4 +115,4 @@ If you haven't picked a track yet, start with the **Quick Start Guide** — it a
 - 🚀 [**Quick Start Guide**](../00-Study-Plan/Quick-Start-Guide/) — pick your path in under 10 minutes
 - 📅 [**12-Week Study Plan**](../00-Study-Plan/12-Week-Study-Plan/) — day-by-day schedule, adaptable to any cert
 - 🎯 [**Exam Day Tips**](../00-Study-Plan/Exam-Day-Tips/) — read the morning of your exam
-- 🏠 [**Course Home**](../) — all 27 tracks at a glance
+- 🏠 [**Course Home**](../) — all 31 tracks at a glance

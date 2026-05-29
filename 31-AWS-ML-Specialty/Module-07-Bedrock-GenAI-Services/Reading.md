@@ -409,3 +409,203 @@ You now know:
 - 📰 **Anthropic's Claude documentation** — prompt engineering best practices
 - 📰 **Stripe's RAG engineering posts** — production patterns
 - 📰 **Latent Space podcast** — applied GenAI engineering
+
+---
+
+## 🛠️ Appendix A — Worked Example: Bedrock Knowledge Base + RetrieveAndGenerate via Python
+
+```python
+import boto3
+
+# 1. Bedrock Agent Runtime client (Knowledge Bases live here)
+bedrock_agent_runtime = boto3.client("bedrock-agent-runtime", region_name="us-east-1")
+
+# 2. Ask a question grounded in the knowledge base
+response = bedrock_agent_runtime.retrieve_and_generate(
+    input={"text": "What is our refund policy for international orders?"},
+    retrieveAndGenerateConfiguration={
+        "type": "KNOWLEDGE_BASE",
+        "knowledgeBaseConfiguration": {
+            "knowledgeBaseId": "ABC123XYZ",
+            "modelArn": "arn:aws:bedrock:us-east-1::foundation-model/anthropic.claude-3-5-sonnet-20241022-v2:0",
+            "retrievalConfiguration": {
+                "vectorSearchConfiguration": {
+                    "numberOfResults": 5,
+                    "overrideSearchType": "HYBRID",  # SEMANTIC, KEYWORD, or HYBRID
+                }
+            },
+            "generationConfiguration": {
+                "promptTemplate": {
+                    "textPromptTemplate": (
+                        "You are a customer-service assistant.\n"
+                        "$search_results$\n\n"
+                        "Question: $query$\n\n"
+                        "Answer briefly using ONLY the search results."
+                    )
+                }
+            },
+        },
+    },
+    sessionId="user-session-12345",
+)
+
+# 3. Inspect output + citations
+print("Answer:", response["output"]["text"])
+for cit in response["citations"]:
+    for ref in cit["retrievedReferences"]:
+        print(" → cited:", ref["location"]["s3Location"]["uri"])
+```
+
+🎯 **Exam pattern.** Recognise:
+- `bedrock-agent-runtime` client → KB / Agent operations
+- `retrieve_and_generate` → managed RAG end-to-end (includes citations)
+- `retrieve` (separate API) → just the top-k chunks; you wire up the LLM call yourself
+- `numberOfResults` → top-k chunks to retrieve
+
+---
+
+## 🛠️ Appendix B — Worked Example: Bedrock Agent Action Group (Lambda)
+
+```python
+# Lambda function backing an Agent action group
+def lambda_handler(event, context):
+    """
+    The agent calls this Lambda with a structured payload:
+    {
+      "agent": {...},
+      "actionGroup": "OrderActions",
+      "function": "get_order",
+      "parameters": [{"name": "order_id", "value": "ORD-12345"}],
+      "sessionAttributes": {},
+      ...
+    }
+    """
+    function_name = event["function"]
+    params = {p["name"]: p["value"] for p in event["parameters"]}
+
+    if function_name == "get_order":
+        order_id = params["order_id"]
+        # Query DynamoDB / RDS / internal API
+        order = lookup_order(order_id)
+        return {
+            "messageVersion": "1.0",
+            "response": {
+                "actionGroup": event["actionGroup"],
+                "function": function_name,
+                "functionResponse": {
+                    "responseBody": {"TEXT": {"body": json.dumps(order)}}
+                },
+            },
+        }
+    elif function_name == "issue_refund":
+        order_id = params["order_id"]
+        amount = float(params["amount"])
+        refund_id = issue_refund(order_id, amount)
+        return success_response(refund_id)
+    else:
+        return error_response(f"Unknown function {function_name}")
+```
+
+🎯 The Agent's *OpenAPI schema* (or function-schema declaration) tells the LLM what functions are available and what parameters they accept. The Agent reasons step-by-step about which function(s) to call.
+
+---
+
+## 🛠️ Appendix C — Bedrock Prompt Caching Pattern
+
+```python
+import boto3
+bedrock_runtime = boto3.client("bedrock-runtime")
+
+# Mark the long system prompt as cacheable. Bedrock caches the prefix
+# and bills cached tokens at a steep discount on subsequent calls.
+response = bedrock_runtime.converse(
+    modelId="anthropic.claude-3-5-sonnet-20241022-v2:0",
+    system=[
+        {
+            "text": LONG_SYSTEM_PROMPT,  # e.g. 4000-token policy + style guide
+            "cachePoint": {"type": "default"}  # opt-in caching
+        }
+    ],
+    messages=[{"role": "user", "content": [{"text": user_question}]}],
+    inferenceConfig={"temperature": 0.0, "maxTokens": 800},
+)
+```
+
+🎯 **Cost effect.** On Claude Sonnet, cached input tokens bill at ~10% of normal — so a 4K cached system prompt repeated across 10K daily queries saves ~90% of system-prompt input cost.
+
+---
+
+## 🛠️ Appendix D — Choosing The Right Bedrock Model (Decision Table)
+
+| Task | Recommended (2026) | Notes |
+|------|---------------------|-------|
+| General chat (highest quality) | Claude 3.5 Sonnet or Claude 3 Opus | Best reasoning + coding |
+| General chat (cost-sensitive) | Claude 3.5 Haiku or Titan Text Express | 1/10 the cost; great for high-volume routine |
+| Coding (agentic) | Claude 3.5 Sonnet | Best in agent loops |
+| Multi-modal (image input) | Claude 3.5 Sonnet OR Nova Pro | Both support vision |
+| Open-source, fine-tunable | Llama 3.1 70B / 8B | Open weights; Bedrock fine-tuning available |
+| Embeddings | Titan Embeddings v2 OR Cohere Embed v3 | Titan: 256/512/1024 dims; Cohere: 1024 multilingual |
+| Image generation | Stability SDXL OR Titan Image / Nova Canvas | Stability for art; Titan for product |
+| Long context (>200K tokens) | Claude 3.5 Sonnet (200K) OR AI21 Jamba (256K) | For RAG over very long documents |
+| Multilingual | Cohere Command R+, Mistral Large, Claude 3.5 | All strong; pick by language family |
+| Cheapest available | Titan Text Lite OR Claude Haiku | Cents per 1K tokens |
+
+🎯 **Right-sizing rule:** start with the **smaller model**; only graduate to the larger one if evaluation metrics or user-quality complaints justify the cost.
+
+---
+
+## 🛠️ Appendix E — Guardrails Configuration Example
+
+```python
+import boto3
+bedrock = boto3.client("bedrock", region_name="us-east-1")
+
+bedrock.create_guardrail(
+    name="customer-service-guardrail",
+    description="Limits topics, PII, and verifies grounding",
+
+    # Block hate / violence / sexual / insults content
+    contentPolicyConfig={
+        "filtersConfig": [
+            {"type": "HATE", "inputStrength": "HIGH", "outputStrength": "HIGH"},
+            {"type": "VIOLENCE", "inputStrength": "HIGH", "outputStrength": "HIGH"},
+            {"type": "SEXUAL", "inputStrength": "HIGH", "outputStrength": "HIGH"},
+            {"type": "INSULTS", "inputStrength": "MEDIUM", "outputStrength": "MEDIUM"},
+            {"type": "PROMPT_ATTACK", "inputStrength": "HIGH", "outputStrength": "NONE"},
+        ]
+    },
+
+    # Block discussion of off-topic / restricted areas
+    topicPolicyConfig={
+        "topicsConfig": [
+            {"name": "Medical advice", "type": "DENY",
+             "definition": "Diagnoses, treatment recommendations, or medication advice."},
+            {"name": "Legal advice", "type": "DENY",
+             "definition": "Specific legal recommendations on user situations."},
+        ]
+    },
+
+    # Redact PII before sending to LLM
+    sensitiveInformationPolicyConfig={
+        "piiEntitiesConfig": [
+            {"type": "EMAIL", "action": "ANONYMIZE"},
+            {"type": "PHONE", "action": "ANONYMIZE"},
+            {"type": "US_SOCIAL_SECURITY_NUMBER", "action": "BLOCK"},
+            {"type": "CREDIT_DEBIT_CARD_NUMBER", "action": "BLOCK"},
+        ]
+    },
+
+    # Contextual grounding — verify response is supported by retrieved docs
+    contextualGroundingPolicyConfig={
+        "filtersConfig": [
+            {"type": "GROUNDING", "threshold": 0.75},
+            {"type": "RELEVANCE", "threshold": 0.75},
+        ]
+    },
+
+    blockedInputMessaging="I cannot help with that request.",
+    blockedOutputsMessaging="I cannot answer that as it falls outside my guidance.",
+)
+```
+
+🎯 **Exam pattern.** Guardrails are policy layers applied *around* any Bedrock model — they do not change the model. Same guardrail can attach to multiple models / Agents.
