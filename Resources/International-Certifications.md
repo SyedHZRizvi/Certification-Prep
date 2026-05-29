@@ -30,40 +30,45 @@ Pick the course. Finish it. Pay for the exam. Walk in confident.
 
 ## 📑 Quick Map — Course → Recommended Certifications
 
-### Project & Agile
+Courses appear in the same canonical order used on the homepage and sidebar: **Project Management → IT, Cloud & Systems Administration → Supply Chain & Operations → AI-Based Digital Marketing → Bitcoin & E-Commerce.**
+
+### Project Management
+
 | Our Course | Recommended Cert (After Completion) | Fee (USD) | Start Prep |
 |------------|--------------------------------------|-----------|------------|
 | Scrum Master | **PSM I** (Scrum.org) · CSM (Scrum Alliance) | $200 · $995+ | [Start prep →](../01-Scrum-Master/) |
 | PMP | **PMP** (PMI) · CAPM (entry-level alternative) | $555 · $300 | [Start prep →](../02-PMP/) |
 
-### Cloud — AWS
+### IT, Cloud & Systems Administration
+
 | Our Course | Recommended Cert (After Completion) | Fee (USD) | Start Prep |
 |------------|--------------------------------------|-----------|------------|
+| CompTIA A+ | **A+ Core 1 + Core 2** (220-1101/1102) | $253 + $253 | [Start prep →](../21-CompTIA-A-Plus/) |
+| CompTIA Network+ | **Network+** (N10-009) | $369 | [Start prep →](../22-CompTIA-Network-Plus/) |
+| CompTIA Linux+ | **Linux+** (XK0-005) | $369 | [Start prep →](../23-CompTIA-Linux-Plus/) |
+| CompTIA Server+ | **Server+** (SK0-005) | $369 | [Start prep →](../24-CompTIA-Server-Plus/) |
+| CompTIA Security+ | **Security+** (SY0-701) | $404 | [Start prep →](../09-CompTIA-Security-Plus/) |
 | AWS Cloud Practitioner | **CLF-C02** (AWS) | $100 | [Start prep →](../03-AWS-Cloud-Practitioner/) |
 | AWS Solutions Architect Associate | **SAA-C03** (AWS) | $150 | [Start prep →](../04-AWS-Solutions-Architect-Associate/) |
 | AWS AI Practitioner | **AIF-C01** (AWS) | $100 | [Start prep →](../07-AWS-AI-Practitioner/) |
-
-### Cloud — Azure
-| Our Course | Recommended Cert (After Completion) | Fee (USD) | Start Prep |
-|------------|--------------------------------------|-----------|------------|
 | Azure Fundamentals | **AZ-900** (Microsoft) | $99 | [Start prep →](../05-Azure-Fundamentals/) |
 | Azure Administrator | **AZ-104** (Microsoft) | $165 | [Start prep →](../06-Azure-Administrator/) |
 | Azure AI Engineer | **AI-102** (Microsoft) | $165 | [Start prep →](../08-Azure-AI-Engineer/) |
+| Windows Server Hybrid Admin | **AZ-800 + AZ-801** (Microsoft) | $165 + $165 | [Start prep →](../25-Windows-Server-Hybrid-Admin/) |
+| Microsoft Endpoint Administrator | **MD-102** (Microsoft) | $165 | [Start prep →](../26-Microsoft-Endpoint-Admin/) |
+| Microsoft Identity & Access Admin | **SC-300** (Microsoft) | $165 | [Start prep →](../27-Microsoft-Identity-Access-Admin/) |
 
-### Cybersecurity
+### Supply Chain & Operations
+
 | Our Course | Recommended Cert (After Completion) | Fee (USD) | Start Prep |
 |------------|--------------------------------------|-----------|------------|
-| CompTIA Security+ | **SY0-701** (CompTIA) | $404 | [Start prep →](../09-CompTIA-Security-Plus/) |
-
-### Supply Chain
-| Our Course | Recommended Cert (After Completion) | Fee (USD) | Start Prep |
-|------------|--------------------------------------|-----------|------------|
-| ASCM CSCP | **CSCP** (ASCM) | $1,295+ | [Start prep →](../10-ASCM-CSCP/) |
 | ASCM CPIM | **CPIM Part 1 + Part 2** (ASCM) | $1,495+ | [Start prep →](../11-ASCM-CPIM/) |
+| ASCM CSCP | **CSCP** (ASCM) | $1,295+ | [Start prep →](../10-ASCM-CSCP/) |
 | ASCM CLTD | **CLTD** (ASCM) | $1,295+ | [Start prep →](../12-ASCM-CLTD/) |
 | ISM CPSM | **CPSM 1 + 2 + 3** (ISM) | $199 ea. | [Start prep →](../13-ISM-CPSM/) |
 
 ### AI-Based Digital Marketing (5-course ladder)
+
 | Our Course | Recommended Cert (After Completion) | Fee (USD) | Start Prep |
 |------------|--------------------------------------|-----------|------------|
 | AI Marketing Foundations | HubSpot Inbound · Content Marketing | FREE | [Start prep →](../14-AI-Marketing-Foundations/) |
@@ -72,14 +77,11 @@ Pick the course. Finish it. Pay for the exam. Walk in confident.
 | AI Marketing Entrepreneur | (No single cert — readiness portfolio) | — | [Start prep →](../17-AI-Marketing-Entrepreneur/) |
 | AI Marketing Capstone Portfolio | DMI Professional Diploma · OMCP | $1,800+ / $199+ | [Start prep →](../18-AI-Marketing-Capstone-Portfolio/) |
 
-### Bitcoin & Cryptocurrency
+### Bitcoin & E-Commerce
+
 | Our Course | Recommended Cert (After Completion) | Fee (USD) | Start Prep |
 |------------|--------------------------------------|-----------|------------|
 | Bitcoin & Cryptocurrency | **CBP** (C4) · CBSA (BTA) · CCAS (ACAMS) | $150 · $300 · $1,395 | [Start prep →](../19-Bitcoin-Cryptocurrency/) |
-
-### E-Commerce
-| Our Course | Recommended Cert (After Completion) | Fee (USD) | Start Prep |
-|------------|--------------------------------------|-----------|------------|
 | E-Commerce | **Google D-M & E-C Certificate** · **Adobe Commerce BP** · Salesforce B2C | $300 · $225 · $200+ | [Start prep →](../20-E-Commerce/) |
 
 ---
@@ -170,6 +172,121 @@ After completing this course, you are ready to sit for:
 - **Eligibility:** **23 hours of project management education** only (no experience required).
 - **How to register:** Same flow as PMP via pmi.org → submit application documenting your 23 hours of education → pay → schedule via Pearson VUE.
 - **Renewal:** Every 3 years · 15 PDUs.
+
+---
+
+## 📘 CompTIA A+ (Core 1 + Core 2)
+
+[Open the course →](../21-CompTIA-A-Plus/README.md)
+
+After completing this course, you are ready to sit for:
+
+### ➡️ CompTIA A+ (220-1101 + 220-1102)
+
+**Designation earned after passing:** *CompTIA A+ Certified* (you can append "CompTIA A+" after your name)
+
+- **Issuing body:** **CompTIA** — vendor-neutral. The single most-required first cert for IT support / help-desk roles globally.
+- **Market standing:** Tier-1 foundational IT credential. Cited in ~70% of US help-desk / desktop technician job postings. Accepted by the US DoD 8140 for entry-level IT support.
+- **Benefits of passing:** Direct path to Help Desk Technician, Desktop Support, Field Service, and Junior Sysadmin roles ($45K-$65K). Gateway to Network+, Security+, and vendor-specific certs (Cisco CCNA, Microsoft MD-102).
+- **Exam format:** TWO exams (Core 1 + Core 2). Each: 90 questions · 90 minutes · 675/900 (Core 1) and 700/900 (Core 2) passing · MCQ + drag-and-drop + Performance-Based Questions (PBQs).
+- **Fee:** **$253 USD per exam ($506 total).** Discounts available via CompTIA Academy partners (often $150-180 each).
+- **Eligibility:** None (CompTIA recommends 9-12 months of hands-on IT experience — this course supplies the equivalent).
+- **How to register / sit for the exam:**
+  1. Create a CompTIA account at [comptia.org](https://www.comptia.org/)
+  2. Buy the 220-1101 voucher ($253), then later the 220-1102 voucher ($253)
+  3. Schedule each via [Pearson VUE](https://home.pearsonvue.com/comptia) — test center or online proctored
+  4. Take each 90-minute exam (no requirement to do them back-to-back; you have 9 months between)
+  5. Score on screen at end; certificate via email within 7 business days after passing the second exam
+- **Renewal:** **Every 3 years** · 20 CEUs (Continuing Education Units) OR pass any higher CompTIA exam (Network+, Security+).
+
+---
+
+## 📘 CompTIA Network+
+
+[Open the course →](../22-CompTIA-Network-Plus/README.md)
+
+After completing this course, you are ready to sit for:
+
+### ➡️ CompTIA Network+ (N10-009)
+
+**Designation earned after passing:** *CompTIA Network+ Certified*
+
+- **Issuing body:** CompTIA. Accepted by DoD 8140 for entry/mid-level network roles.
+- **Market standing:** Tier-1 vendor-neutral networking credential. Cited in ~50% of network technician / NOC engineer job postings. Strong stepping stone to Cisco CCNA and CompTIA Security+.
+- **Benefits of passing:** Direct path to Network Technician, Junior Network Admin, NOC Engineer, and Field Network Engineer roles ($55K-$80K). Vendor-neutral so it complements (rather than locks you into) Cisco/Juniper/Aruba ladders.
+- **Exam format:** Max 90 questions · 90 minutes · 720/900 passing · MCQ + drag-and-drop + PBQs.
+- **Fee:** **$369 USD.** Bundles with practice tests / CertMaster also available.
+- **Eligibility:** None (CompTIA recommends A+ first + 9-12 months of networking experience).
+- **How to register:** Same flow as A+ via comptia.org → Pearson VUE scheduling.
+- **Renewal:** Every 3 years · 30 CEUs OR pass any higher CompTIA exam (Security+, CySA+).
+
+---
+
+## 📘 CompTIA Linux+
+
+[Open the course →](../23-CompTIA-Linux-Plus/README.md)
+
+After completing this course, you are ready to sit for:
+
+### ➡️ CompTIA Linux+ (XK0-005)
+
+**Designation earned after passing:** *CompTIA Linux+ Certified*
+
+- **Issuing body:** CompTIA. Vendor-neutral Linux administration credential.
+- **Market standing:** Tier-1 vendor-neutral Linux cert. Distro-agnostic — knowledge maps cleanly to RHEL, Ubuntu, Debian, SUSE, and other enterprise Linux distros. Strong complement to RHCSA (Red Hat–specific) and LFCS (Linux Foundation).
+- **Benefits of passing:** Direct path to Linux Administrator, DevOps Support, Site Reliability Engineer (junior), and Cloud Engineer (Linux-side) roles ($75K-$110K).
+- **Exam format:** Max 90 questions · 90 minutes · 720/900 passing · MCQ + PBQs (heavy emphasis on command-line scenarios).
+- **Fee:** **$369 USD.**
+- **Eligibility:** None (CompTIA recommends 12 months of hands-on Linux experience).
+- **How to register:** Same flow as A+ via comptia.org → Pearson VUE scheduling.
+- **Renewal:** Every 3 years · 50 CEUs OR pass any higher CompTIA exam.
+
+---
+
+## 📘 CompTIA Server+
+
+[Open the course →](../24-CompTIA-Server-Plus/README.md)
+
+After completing this course, you are ready to sit for:
+
+### ➡️ CompTIA Server+ (SK0-005)
+
+**Designation earned after passing:** *CompTIA Server+ Certified*
+
+- **Issuing body:** CompTIA. The only major vendor-neutral server credential — covers hardware, virtualization, storage, and disaster recovery across Windows + Linux + ESXi/Hyper-V.
+- **Market standing:** Tier-1 in mid-sized enterprises and MSPs running mixed environments. Required or preferred for Server Administrator, Junior Datacenter Engineer, and Hybrid-Infrastructure roles. Less common than Microsoft Windows Server certs in pure-Windows shops, but uniquely useful in heterogeneous datacenters.
+- **Benefits of passing:** Direct path to Server Administrator, Datacenter Technician, and Hybrid Infrastructure Engineer roles ($70K-$100K).
+- **Exam format:** Max 90 questions · 90 minutes · 750/900 passing · MCQ + drag-and-drop + PBQs.
+- **Fee:** **$369 USD.**
+- **Eligibility:** None (CompTIA recommends A+ + 18-24 months of server-administration experience).
+- **How to register:** Same flow as A+ via comptia.org.
+- **Renewal:** Every 3 years · 50 CEUs OR pass any higher CompTIA exam.
+
+---
+
+## 📘 CompTIA Security+
+
+[Open the course →](../09-CompTIA-Security-Plus/README.md)
+
+After completing this course, you are ready to sit for:
+
+### ➡️ CompTIA Security+ (SY0-701)
+
+**Designation earned after passing:** *CompTIA Security+ Certified* (you can append "Security+" after your name)
+
+- **Issuing body:** **CompTIA** — vendor-neutral. Widely accepted by the **US Department of Defense (DoD 8570/8140 baseline)** as a foundational cybersecurity credential.
+- **Market standing:** Tier-1 entry cert. The most-pursued cybersecurity credential globally — ~70% of US cyber job postings list it. Required for many DoD and federal contractor roles.
+- **Benefits of passing:** Average entry-level cybersecurity salary $70K-$95K. Direct path to SOC Analyst, Junior Pen-Tester, Security Engineer, and Compliance Analyst roles. Prerequisite-equivalent for CySA+, CASP+, and a stepping stone to CISSP.
+- **Exam format:** 90 questions · 90 minutes · 750/900 passing · multiple-choice + Performance-Based Questions (PBQs — simulated tasks in a sandbox).
+- **Fee:** **$404 USD** for the voucher. Discounts available via CompTIA Academy partners (often $250-300).
+- **Eligibility:** None (CompTIA recommends 2 years of IT experience — this course supplies the equivalent).
+- **How to register / sit for the exam:**
+  1. Create a CompTIA account at [comptia.org](https://www.comptia.org/)
+  2. Buy the SY0-701 voucher ($404) — bundles with practice tests + CertMaster are available
+  3. Schedule via [Pearson VUE](https://home.pearsonvue.com/comptia)
+  4. Take the 90-minute exam at a test center (online proctoring also available)
+  5. Score on screen at end; certificate via email within 7 business days
+- **Renewal:** **Every 3 years** · 50 CEUs (Continuing Education Units) OR pass any higher CompTIA exam (CySA+, CASP+, PenTest+).
 
 ---
 
@@ -311,29 +428,92 @@ After completing this course, you are ready to sit for:
 
 ---
 
-## 📘 CompTIA Security+
+## 📘 Windows Server Hybrid Admin
 
-[Open the course →](../09-CompTIA-Security-Plus/README.md)
+[Open the course →](../25-Windows-Server-Hybrid-Admin/README.md)
 
 After completing this course, you are ready to sit for:
 
-### ➡️ CompTIA Security+ (SY0-701)
+### ➡️ Microsoft Certified: Windows Server Hybrid Administrator Associate (AZ-800 + AZ-801)
 
-**Designation earned after passing:** *CompTIA Security+ Certified* (you can append "Security+" after your name)
+**Designation earned after passing:** *Microsoft Certified: Windows Server Hybrid Administrator Associate*
 
-- **Issuing body:** **CompTIA** — vendor-neutral. Widely accepted by the **US Department of Defense (DoD 8570/8140 baseline)** as a foundational cybersecurity credential.
-- **Market standing:** Tier-1 entry cert. The most-pursued cybersecurity credential globally — ~70% of US cyber job postings list it. Required for many DoD and federal contractor roles.
-- **Benefits of passing:** Average entry-level cybersecurity salary $70K-$95K. Direct path to SOC Analyst, Junior Pen-Tester, Security Engineer, and Compliance Analyst roles. Prerequisite-equivalent for CySA+, CASP+, and a stepping stone to CISSP.
-- **Exam format:** 90 questions · 90 minutes · 750/900 passing · multiple-choice + Performance-Based Questions (PBQs — simulated tasks in a sandbox).
-- **Fee:** **$404 USD** for the voucher. Discounts available via CompTIA Academy partners (often $250-300).
-- **Eligibility:** None (CompTIA recommends 2 years of IT experience — this course supplies the equivalent).
+- **Issuing body:** **Microsoft.** Released 2022; replaced the long-lived MCSA: Windows Server track. Covers Active Directory Domain Services (AD DS), hybrid identity with Azure AD / Entra ID, Azure Arc, hyper-converged infrastructure, failover clustering, Storage Spaces Direct, and PowerShell DSC.
+- **Market standing:** Tier-1 Microsoft enterprise credential. Required or preferred for Senior Windows Administrator, AD Architect, Hybrid Infrastructure Engineer, and Site Reliability Engineer (Windows-side) roles in M365 / hybrid-cloud shops.
+- **Benefits of passing:** Average Windows Server Hybrid Admin salary in the US is **$110K-$155K**. Direct path to AZ-305 (Azure Solutions Architect Expert) and AZ-700 (Network Engineer). The most enduring administrative skill in the Microsoft ecosystem — Active Directory forests planted today still run enterprises 20 years from now.
+- **Exam format:** TWO exams. AZ-800 (Administering Windows Server Hybrid Core Infrastructure) and AZ-801 (Configuring Windows Server Hybrid Advanced Services). Each: 40–60 questions · 100 minutes · 700/1000 passing · MCQ + drag-and-drop + case studies.
+- **Fee:** **$165 USD per exam ($330 total).** Microsoft Virtual Training Days vouchers occasionally apply.
+- **Eligibility:** None (Microsoft recommends 2+ years of Windows Server administration + 1+ year of Azure familiarity).
 - **How to register / sit for the exam:**
-  1. Create a CompTIA account at [comptia.org](https://www.comptia.org/)
-  2. Buy the SY0-701 voucher ($404) — bundles with practice tests + CertMaster are available
-  3. Schedule via [Pearson VUE](https://home.pearsonvue.com/comptia)
-  4. Take the 90-minute exam at a test center (online proctoring also available)
-  5. Score on screen at end; certificate via email within 7 business days
-- **Renewal:** **Every 3 years** · 50 CEUs (Continuing Education Units) OR pass any higher CompTIA exam (CySA+, CASP+, PenTest+).
+  1. Create a Microsoft Learn account at [learn.microsoft.com](https://learn.microsoft.com/)
+  2. Navigate to AZ-800 certification page → "Schedule exam"
+  3. Pay $165 → schedule via Pearson VUE
+  4. Pass AZ-800, then repeat for AZ-801
+  5. Both exams required for the Associate badge
+- **Renewal:** Every 1 year per Microsoft's free Learn renewal assessment.
+
+---
+
+## 📘 Microsoft Endpoint Administrator
+
+[Open the course →](../26-Microsoft-Endpoint-Admin/README.md)
+
+After completing this course, you are ready to sit for:
+
+### ➡️ Microsoft Certified: Endpoint Administrator Associate (MD-102)
+
+**Designation earned after passing:** *Microsoft Certified: Endpoint Administrator Associate*
+
+- **Issuing body:** **Microsoft.** Covers modern endpoint management with Microsoft Intune, Windows Autopilot, app deployment, compliance policies, Defender for Endpoint integration, and device lifecycle automation.
+- **Market standing:** Tier-1 Microsoft credential. Required or preferred for Modern Workplace Engineer, Endpoint Manager, Intune Administrator, and IT Operations roles at M365-shop enterprises. The MD-102 replaced the older MD-100 + MD-101 pair in 2023.
+- **Benefits of passing:** Average MD-102-holder salary **$95K-$130K**. Direct path to Microsoft Identity & Access Administrator (SC-300) and Cybersecurity Architect Expert (SC-100). Highly portable across any Fortune-500 that's standardized on M365 + Intune (~80% of US enterprises now).
+- **Exam format:** 40–60 questions · 100 minutes · 700/1000 passing · MCQ + case studies + lab-based questions.
+- **Fee:** **$165 USD.**
+- **Eligibility:** None (Microsoft recommends Windows desktop admin experience + basic Azure familiarity).
+- **How to register:** Same flow as AZ-900 via learn.microsoft.com → Pearson VUE.
+- **Renewal:** Every 1 year via free Microsoft Learn renewal assessment.
+
+---
+
+## 📘 Microsoft Identity & Access Administrator
+
+[Open the course →](../27-Microsoft-Identity-Access-Admin/README.md)
+
+After completing this course, you are ready to sit for:
+
+### ➡️ Microsoft Certified: Identity and Access Administrator Associate (SC-300)
+
+**Designation earned after passing:** *Microsoft Certified: Identity and Access Administrator Associate*
+
+- **Issuing body:** **Microsoft.** Covers Entra ID (formerly Azure AD), conditional access, identity governance, Privileged Identity Management (PIM), Identity Protection, B2B/B2C collaboration, and hybrid identity (AD Connect, federation).
+- **Market standing:** Tier-1 Microsoft security credential. Required or preferred for IAM Engineer, Identity Architect, Zero Trust Architect, and security-adjacent Engineer roles. The fastest-growing Microsoft cert in 2024-2026 as enterprises consolidate on Entra ID.
+- **Benefits of passing:** Average SC-300-holder salary **$120K-$165K**. Direct prerequisite for SC-100 (Cybersecurity Architect Expert) and a strong complement to AZ-500 (Azure Security Engineer). Identity is the new perimeter — IAM engineers are among the most in-demand security specialists.
+- **Exam format:** 40–60 questions · 100 minutes · 700/1000 passing · MCQ + case studies + scenario-based questions.
+- **Fee:** **$165 USD.**
+- **Eligibility:** None (Microsoft recommends Azure / M365 admin experience + basic security background).
+- **How to register:** Same flow as AZ-900 via learn.microsoft.com → Pearson VUE.
+- **Renewal:** Every 1 year via free Microsoft Learn renewal assessment.
+
+---
+
+## 📘 ASCM CPIM
+
+[Open the course →](../11-ASCM-CPIM/README.md)
+
+After completing this course, you are ready to sit for:
+
+### ➡️ ASCM Certified in Planning & Inventory Management (CPIM)
+
+**Designation earned after passing:** *Certified in Planning & Inventory Management (CPIM)*
+
+- **Issuing body:** ASCM (formerly APICS).
+- **Market standing:** Tier-1 production/inventory focus — the deepest planning credential.
+- **Benefits of passing:** Required or preferred for Demand Planner, Master Scheduler, Inventory Manager, and S&OP roles. Average CPIM-holder salary $85K-$110K.
+- **Exam format:** **TWO parts.** Part 1: 95 Q · 3.5 hours. Part 2: 150 Q · 3.5 hours. Must pass both.
+- **Fee:** **$1,495 (member) / $1,995 (non-member)** exam-only for both parts. Bundle with Learning System: **$2,895 / $3,895**.
+- **Eligibility:** None for the exam itself (anyone can take it).
+- **How to register:** Same as CSCP via ascm.org.
+- **Renewal:** Every 5 years.
 
 ---
 
@@ -360,27 +540,6 @@ After completing this course, you are ready to sit for:
   4. Schedule via Pearson VUE
   5. Take the 3.5-hour exam
 - **Renewal:** Every 5 years · 75 maintenance points (CEUs).
-
----
-
-## 📘 ASCM CPIM
-
-[Open the course →](../11-ASCM-CPIM/README.md)
-
-After completing this course, you are ready to sit for:
-
-### ➡️ ASCM Certified in Planning & Inventory Management (CPIM)
-
-**Designation earned after passing:** *Certified in Planning & Inventory Management (CPIM)*
-
-- **Issuing body:** ASCM.
-- **Market standing:** Tier-1 production/inventory focus — the deepest planning credential.
-- **Benefits of passing:** Required or preferred for Demand Planner, Master Scheduler, Inventory Manager, and S&OP roles. Average CPIM-holder salary $85K-$110K.
-- **Exam format:** **TWO parts.** Part 1: 95 Q · 3.5 hours. Part 2: 150 Q · 3.5 hours. Must pass both.
-- **Fee:** **$1,495 (member) / $1,995 (non-member)** exam-only for both parts. Bundle with Learning System: **$2,895 / $3,895**.
-- **Eligibility:** None for the exam itself (anyone can take it).
-- **How to register:** Same as CSCP via ascm.org.
-- **Renewal:** Every 5 years.
 
 ---
 
@@ -654,13 +813,20 @@ After completing this course, you are ready to sit for:
 |---------------|------------------------------------------|
 | PSM I | PMP (with experience) · PMI-ACP · SAFe SM |
 | CAPM | PMP (with 3+ yrs experience) |
+| CompTIA A+ | Network+ · Security+ · Microsoft MD-102 |
+| CompTIA Network+ | Security+ · Cisco CCNA · CompTIA Server+ |
+| CompTIA Linux+ | RHCSA · Linux Foundation LFCS · AWS SysOps |
+| CompTIA Server+ | Microsoft AZ-800/801 · Linux+ · VMware VCP |
 | CLF-C02 | SAA-C03 · AIF-C01 |
 | SAA-C03 | SAP-C02 · DOP-C02 · SCS-C02 |
 | AZ-900 | AZ-104 · AI-900 · SC-900 |
-| AZ-104 | AZ-305 · AZ-400 · AZ-500 |
+| AZ-104 | AZ-305 · AZ-400 · AZ-500 · AZ-800/801 |
 | AIF-C01 | AI-102 · AWS-MLS · NVIDIA GenAI cert |
-| AI-102 | AWS-MLS |
+| AI-102 | AWS-MLS · SC-300 (for AI security) |
 | Security+ SY0-701 | CySA+ · CASP+ · CISSP (5 yrs experience) · OSCP |
+| AZ-800/801 (Windows Server Hybrid) | AZ-305 · AZ-500 · AZ-700 |
+| MD-102 (Endpoint Admin) | SC-300 · SC-100 · MS-100/101 (legacy) |
+| SC-300 (Identity & Access) | SC-100 · AZ-500 · CISSP · CISM |
 | CPIM | CSCP · CLTD · CPSM |
 | CSCP | CPIM · CLTD · MIT CTL MicroMasters |
 | CPSM | CIPS · MCIPS |
@@ -676,11 +842,12 @@ After completing this course, you are ready to sit for:
 
 The most common cert-buying mistakes:
 
-1. **Paying full price when a discount voucher exists.** Microsoft Virtual Training Days (free AZ-900 / AI-900 / SC-900 vouchers monthly), AWS re:Invent attendees (50% off), ASCM membership month-of-event sales — always check official channels before paying.
+1. **Paying full price when a discount voucher exists.** Microsoft Virtual Training Days (free AZ-900 / AI-900 / SC-900 vouchers monthly), AWS re:Invent attendees (50% off), ASCM membership month-of-event sales, CompTIA Academy partner discounts (~30%-50% off) — always check official channels before paying.
 2. **Buying third-party study materials before deciding which exam.** Use this site (it's free). Official issuing-body content is also generally cheaper than third-party Udemy/Pluralsight courses.
 3. **Failing the exam and not learning the retake policy.** Most certs require a 14-day wait + paid retake. Budget accordingly.
 4. **Letting a cert lapse.** Once you let a PMP, CISSP, or AWS cert expire, the re-earn cost equals the original.
 5. **Stacking redundant certs.** PSM I + CSM is duplicative. PMP + PMI-ACP is fine. PMP + CSM is fine. Pick a path; don't pay for parallel ones.
+6. **Skipping CompTIA A+ "because you already know computers."** The A+ exam structure (PBQs + scenario items) trips up people who learned hands-on but never the standardized vocabulary. The vocabulary is what employers screen for.
 
 ---
 
@@ -692,10 +859,12 @@ The most common cert-buying mistakes:
 | PMI CAPM | 3 years · 15 PDUs | |
 | **Scrum.org (PSM I, II, III)** | **Never expires** | Lifetime |
 | Scrum Alliance (CSM) | 2 years · 20 SEUs | $100 |
+| CompTIA A+ | 3 years · 20 CEUs | OR higher exam |
+| CompTIA Network+ | 3 years · 30 CEUs | OR higher exam |
+| CompTIA Linux+ / Server+ / Security+ | 3 years · 50 CEUs | OR higher exam |
 | AWS (all) | 3 years · Re-exam or higher tier | |
 | Microsoft (Associate+) | 1 year · Free renewal | Best renewal model in industry |
 | **Microsoft Fundamentals** | **Never expires** | |
-| CompTIA (all) | 3 years · 50 CEUs or higher exam | |
 | ASCM (CSCP, CPIM, CLTD) | 5 years · 75 points | |
 | ISM (CPSM) | 3 years · 60 CEHs | |
 | (ISC)² CISSP | 3 years · 120 CPEs + $135/yr AMF | |
@@ -712,8 +881,10 @@ The most common cert-buying mistakes:
 The international certification market is fragmented, but the credible bodies are:
 - **PMI** (project management)
 - **Scrum.org + Scrum Alliance** (agile)
+- **CompTIA** (vendor-neutral IT — A+, Network+, Linux+, Server+, Security+)
 - **AWS + Microsoft** (cloud vendors)
-- **CompTIA + (ISC)² + ISACA** (cybersecurity)
+- **Microsoft** (enterprise — Windows Server, Endpoint, Identity)
+- **(ISC)² + ISACA** (advanced cybersecurity)
 - **ASCM + ISM** (supply chain)
 - **HubSpot + Google + Meta** (marketing — free vendor)
 - **C4 + ACAMS** (Bitcoin/crypto)
