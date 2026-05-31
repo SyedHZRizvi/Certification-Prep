@@ -5,7 +5,7 @@ title: Prompt Engineering Specialist (Cert Hub Original)
 
 # 🧠 Prompt Engineering Specialist (Cert Hub Original)
 
-**🤖 AI & Generative AI** › Prompt Engineering Specialist (Vendor-Neutral · Claude · GPT · Gemini · Llama)
+**🤖 Generative & Agentic AI** › Prompt Engineering Specialist (Vendor-Neutral · Claude · GPT · Gemini · Llama)
 
 > **Goal:** Become the person on the team who can ship a production-grade prompt the first time — across Claude, GPT, Gemini, and Llama — and defend it with evals, jailbreak resistance, structured outputs, multi-modal inputs, and a real cost/latency budget.
 > **Duration:** 6–8 weeks part-time (8–12 hrs/week)
@@ -257,7 +257,7 @@ The portfolio IS the credential. Recruiters and hiring managers will respect a s
 
 ## 🌐 Where This Course Fits in the Cert-Hub AI Track
 
-This is course **#29 — Prompt Engineering Specialist (Cert Hub Original)** in the AI & Generative AI track. The full sequence:
+This is course **#29 — Prompt Engineering Specialist (Cert Hub Original)** in the Generative & Agentic AI track. The full sequence:
 
 | # | Course | Best timing |
 |---|--------|-------------|

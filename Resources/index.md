@@ -14,7 +14,7 @@ title: Resources
 
 ## 🗂️ The Four Sub-Pages
 
-Pick the one that matches what you need right now. Each is a deep-dive on its topic, kept current with the 27 course tracks.
+Pick the one that matches what you need right now. Each is a deep-dive on its topic, kept current with the 32 course tracks.
 
 ### 🏆 [International Certifications Catalog](./International-Certifications/)
 
@@ -93,7 +93,7 @@ The 32 courses on this site, grouped by category. Click any course to open its R
 - 🌥️ [Azure Fundamentals](../05-Azure-Fundamentals/) · 🛠️ [Azure Administrator](../06-Azure-Administrator/)
 - 🪟 [Windows Server Hybrid Admin](../25-Windows-Server-Hybrid-Admin/) · 💻 [Microsoft Endpoint Administrator](../26-Microsoft-Endpoint-Admin/) · 🪪 [Microsoft Identity & Access Admin](../27-Microsoft-Identity-Access-Admin/)
 
-### AI & Generative AI
+### Generative & Agentic AI
 - 🧬 [Claude Architect](../28-Claude-Architect/) · ✍️ [Prompt Engineering Specialist](../29-Prompt-Engineering-Specialist/) · ⚡ [Generative AI Engineer](../30-Generative-AI-Engineer/)
 - 💎 [Google AI Pro](../32-Google-AI-Pro/) · 🔬 [AWS ML Specialty](../31-AWS-ML-Specialty/) · 🤖 [AWS AI Practitioner](../07-AWS-AI-Practitioner/) · 🧠 [Azure AI Engineer](../08-Azure-AI-Engineer/)
 
@@ -110,7 +110,7 @@ The 32 courses on this site, grouped by category. Click any course to open its R
 
 ## 🚀 Next Steps
 
-If you haven't picked a track yet, start with the **Quick Start Guide** — it asks the right questions to narrow down the 27 options to the one you should chase first.
+If you haven't picked a track yet, start with the **Quick Start Guide** — it asks the right questions to narrow down the 32 options to the one you should chase first.
 
 - 🚀 [**Quick Start Guide**](../00-Study-Plan/Quick-Start-Guide/) — pick your path in under 10 minutes
 - 📅 [**12-Week Study Plan**](../00-Study-Plan/12-Week-Study-Plan/) — day-by-day schedule, adaptable to any cert

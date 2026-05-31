@@ -24,7 +24,7 @@ Pick ONE. The detailed week-by-week plan in [12-Week Study Plan](./12-Week-Study
 - **Path F — "I'm new to Azure"** → [Azure Fundamentals (AZ-900)](../05-Azure-Fundamentals/README.md) · Plan: ~3-5 weeks.
 - **Path G — "I'm an Azure admin"** → [Azure Administrator (AZ-104)](../06-Azure-Administrator/README.md) · Plan: ~10-12 weeks.
 
-### AI & Generative AI
+### Generative & Agentic AI
 - **Path H — "AI on AWS (vendor foundation)"** → [AWS AI Practitioner (AIF-C01)](../07-AWS-AI-Practitioner/README.md) · Plan: ~4-6 weeks.
 - **Path I — "AI on Azure (vendor specialist)"** → [Azure AI Engineer (AI-102)](../08-Azure-AI-Engineer/README.md) · Plan: ~8-10 weeks.
 - **Path I1 — "Master Claude end-to-end (Anthropic's API, MCP, agents)"** → [Claude Architect](../28-Claude-Architect/README.md) · Plan: ~8-10 weeks. Cert Hub original. Best for engineers shipping Claude-powered products at Cursor / Notion / Replit-style AI-native companies.

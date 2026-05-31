@@ -5,7 +5,7 @@ title: Generative AI Engineer (Cert Hub Original)
 
 # 🧠 Generative AI Engineer — Full-Stack GenAI Engineering
 
-**🤖 AI & Generative AI** › Generative AI Engineer (Cert Hub original)
+**🤖 Generative & Agentic AI** › Generative AI Engineer (Cert Hub original)
 
 > **Goal:** Become the engineer your company calls when "we want to ship something with an LLM and we don't know where to start" — from architecting the right RAG pipeline, to fine-tuning when prompting isn't enough, to running the whole thing in production with observability, guardrails, and a cost model that doesn't bankrupt the team.
 > **Duration:** 10–14 weeks part-time (8–12 hrs/week)

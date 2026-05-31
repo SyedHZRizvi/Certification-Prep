@@ -5,7 +5,7 @@ title: Google AI Pro (Cert Hub Original — Vertex AI + Gemini Aligned)
 
 # 🟦 Google AI Pro Track (Cert Hub Original)
 
-**🤖 AI & Generative AI** › Google AI Pro (Google Cloud-aligned, Cert Hub Original)
+**🤖 Generative & Agentic AI** › Google AI Pro (Google Cloud-aligned, Cert Hub Original)
 
 > **Goal:** Become the engineer in your org who can architect, deploy, and operate production AI systems on **Google Cloud** — Gemini, Vertex AI, Google AI Studio, Agent Builder — with the same rigor a cloud architect brings to AWS or Azure. Pass **Google Cloud Generative AI Leader** and ladder into **Google Cloud Professional Machine Learning Engineer (PMLE)**, the two flagship credentials Google ships for the Gemini era.
 >

@@ -12,10 +12,10 @@ export const COURSES = [
   { id: "02-PMP",                                   slug: "PMP",                            icon: "🧭", category: "Project Management" },
   { id: "03-AWS-Cloud-Practitioner",                slug: "AWS Cloud Practitioner",         icon: "☁️", category: "Cloud, AI & Cybersecurity" },
   { id: "04-AWS-Solutions-Architect-Associate",     slug: "AWS Solutions Architect Assoc",  icon: "🏗️", category: "Cloud, AI & Cybersecurity" },
-  { id: "07-AWS-AI-Practitioner",                   slug: "AWS AI Practitioner",            icon: "🤖", category: "AI & Generative AI" },
+  { id: "07-AWS-AI-Practitioner",                   slug: "AWS AI Practitioner",            icon: "🤖", category: "Generative & Agentic AI" },
   { id: "05-Azure-Fundamentals",                    slug: "Azure Fundamentals",             icon: "🌥️", category: "Cloud, AI & Cybersecurity" },
   { id: "06-Azure-Administrator",                   slug: "Azure Administrator",            icon: "🛠️", category: "Cloud, AI & Cybersecurity" },
-  { id: "08-Azure-AI-Engineer",                     slug: "Azure AI Engineer",              icon: "🧠", category: "AI & Generative AI" },
+  { id: "08-Azure-AI-Engineer",                     slug: "Azure AI Engineer",              icon: "🧠", category: "Generative & Agentic AI" },
   { id: "09-CompTIA-Security-Plus",                 slug: "CompTIA Security+",              icon: "🛡️", category: "Cloud, AI & Cybersecurity" },
   { id: "11-ASCM-CPIM",                             slug: "ASCM CPIM",                      icon: "🏭", category: "Supply Chain & Operations" },
   { id: "10-ASCM-CSCP",                             slug: "ASCM CSCP",                      icon: "📦", category: "Supply Chain & Operations" },
@@ -36,12 +36,12 @@ export const COURSES = [
   { id: "25-Windows-Server-Hybrid-Admin",           slug: "Windows Server Hybrid Admin",    icon: "🪟", category: "IT Systems Administration" },
   { id: "26-Microsoft-Endpoint-Admin",              slug: "Microsoft Endpoint Administrator", icon: "💻", category: "IT Systems Administration" },
   { id: "27-Microsoft-Identity-Access-Admin",       slug: "Microsoft Identity & Access Admin", icon: "🪪", category: "IT Systems Administration" },
-  // AI & Generative AI track
-  { id: "28-Claude-Architect",                      slug: "Claude Architect",               icon: "🧬", category: "AI & Generative AI" },
-  { id: "29-Prompt-Engineering-Specialist",         slug: "Prompt Engineering Specialist",  icon: "✍️", category: "AI & Generative AI" },
-  { id: "30-Generative-AI-Engineer",                slug: "Generative AI Engineer",         icon: "⚡", category: "AI & Generative AI" },
-  { id: "31-AWS-ML-Specialty",                      slug: "AWS ML Specialty (MLS-C01)",     icon: "🔬", category: "AI & Generative AI" },
-  { id: "32-Google-AI-Pro",                         slug: "Google AI Pro",                  icon: "💎", category: "AI & Generative AI" },
+  // Generative & Agentic AI track
+  { id: "28-Claude-Architect",                      slug: "Claude Architect",               icon: "🧬", category: "Generative & Agentic AI" },
+  { id: "29-Prompt-Engineering-Specialist",         slug: "Prompt Engineering Specialist",  icon: "✍️", category: "Generative & Agentic AI" },
+  { id: "30-Generative-AI-Engineer",                slug: "Generative AI Engineer",         icon: "⚡", category: "Generative & Agentic AI" },
+  { id: "31-AWS-ML-Specialty",                      slug: "AWS ML Specialty (MLS-C01)",     icon: "🔬", category: "Generative & Agentic AI" },
+  { id: "32-Google-AI-Pro",                         slug: "Google AI Pro",                  icon: "💎", category: "Generative & Agentic AI" },
 ];
 
 export const COURSE_IDS = COURSES.map(c => c.id);

@@ -1243,7 +1243,7 @@ tracks:
         slug: Flashcards
         single_file: true
 
-  # ============= AI & Generative AI Track =============
+  # ============= Generative & Agentic AI Track =============
   - id: claude-architect
     title: Claude Architect
     subtitle: Cert Hub Original — Anthropic-aligned

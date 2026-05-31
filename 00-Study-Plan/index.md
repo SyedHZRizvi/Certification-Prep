@@ -81,7 +81,7 @@ Below are the 32 courses, grouped by category. Pick the one you're preparing for
 - 💻 [**Microsoft Endpoint Administrator (MD-102)**](../26-Microsoft-Endpoint-Admin/)
 - 🪪 [**Microsoft Identity & Access Admin (SC-300)**](../27-Microsoft-Identity-Access-Admin/)
 
-### AI & Generative AI
+### Generative & Agentic AI
 - 🧬 [**Claude Architect** (Cert Hub original)](../28-Claude-Architect/)
 - ✍️ [**Prompt Engineering Specialist** (Cert Hub original)](../29-Prompt-Engineering-Specialist/)
 - ⚡ [**Generative AI Engineer** (Cert Hub original)](../30-Generative-AI-Engineer/)

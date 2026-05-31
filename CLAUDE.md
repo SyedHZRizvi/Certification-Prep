@@ -232,7 +232,7 @@ This tag is the canonical *historical* snapshot of the site as of 2026-05-20. It
 
 The live site has now grown to:
 
-- **32** course directories (added Google AI Pro to the AI & Generative AI track)
+- **32** course directories (added Google AI Pro to the Generative & Agentic AI track)
 - **286** modules
 - **96** practice exams (64 partials + 32 full-length mocks)
 - **1,330+** markdown files inside the course directories
@@ -240,7 +240,7 @@ The live site has now grown to:
 - **13,000+** practice questions across all quizzes + flashcards + mock exams
 - **1,050+** total study hours
 
-The **AI & Generative AI** category is its own homepage section containing 7 courses: AIF-C01 + AI-102 (moved from "IT, Cloud & Systems Administration") + 5 specialty courses (Claude Architect, Prompt Engineering Specialist, Generative AI Engineer, AWS ML Specialty MLS-C01, **Google AI Pro** — aligned with Google Cloud Generative AI Leader + Professional ML Engineer credentials).
+The **Generative & Agentic AI** category is its own homepage section containing 7 courses: AIF-C01 + AI-102 (moved from "IT, Cloud & Systems Administration") + 5 specialty courses (Claude Architect, Prompt Engineering Specialist, Generative AI Engineer, AWS ML Specialty MLS-C01, **Google AI Pro** — aligned with Google Cloud Generative AI Leader + Professional ML Engineer credentials).
 
 `scripts/verify-baseline.py` enforces the current totals (all 15 invariants still passing).
 

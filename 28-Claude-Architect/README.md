@@ -5,7 +5,7 @@ title: Claude Architect (Cert Hub Original — Anthropic-Aligned)
 
 # 🧬 Claude Architect Track (Cert Hub Original)
 
-**🤖 AI & Generative AI** › Claude Architect (Anthropic-aligned, Cert Hub Original)
+**🤖 Generative & Agentic AI** › Claude Architect (Anthropic-aligned, Cert Hub Original)
 
 > **Goal:** Become the engineer in your org who can architect, deploy, and operate production systems on **Claude** — Anthropic's frontier model family — with the same rigor a cloud architect brings to AWS or Azure. Pass the Cert Hub Claude Architect assessment (60Q / 60min) with 85%+ and walk into any AI engineering team able to ship Claude-powered products end-to-end.
 >

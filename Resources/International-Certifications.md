@@ -30,7 +30,7 @@ Pick the course. Finish it. Pay for the exam. Walk in confident.
 
 ## 📑 Quick Map — Course → Recommended Certifications
 
-Courses appear in the same canonical order used on the homepage and sidebar: **Project Management → IT, Cloud & Systems Administration → AI & Generative AI → Supply Chain & Operations → AI-Based Digital Marketing → Bitcoin & E-Commerce.**
+Courses appear in the same canonical order used on the homepage and sidebar: **Project Management → IT, Cloud & Systems Administration → Generative & Agentic AI → Supply Chain & Operations → AI-Based Digital Marketing → Bitcoin & E-Commerce.**
 
 ### Project Management
 
@@ -56,7 +56,7 @@ Courses appear in the same canonical order used on the homepage and sidebar: **P
 | Microsoft Endpoint Administrator | **MD-102** (Microsoft) | $165 | [Start prep →](../26-Microsoft-Endpoint-Admin/) |
 | Microsoft Identity & Access Admin | **SC-300** (Microsoft) | $165 | [Start prep →](../27-Microsoft-Identity-Access-Admin/) |
 
-### AI & Generative AI
+### Generative & Agentic AI
 
 | Our Course | Recommended Cert (After Completion) | Fee (USD) | Start Prep |
 |------------|--------------------------------------|-----------|------------|
