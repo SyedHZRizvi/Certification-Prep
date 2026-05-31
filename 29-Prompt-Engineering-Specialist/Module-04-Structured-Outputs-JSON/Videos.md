@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 20 min · The 2024 launch</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+tool+use+claude+function+calling+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="2HsmNeT8TCg" href="https://www.youtube.com/results?search_query=Anthropic+tool+use+claude+function+calling+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~40 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Gemini+structured+output+response+schema+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="bnq03G79nyA" href="https://www.youtube.com/results?search_query=Gemini+structured+output+response+schema+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 14 min · response_schema</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=outlines+library+constrained+generation+open+source" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="b-fgGuRwjOk" href="https://www.youtube.com/results?search_query=outlines+library+constrained+generation+open+source" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 16 min · Local-model structured output</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=function+calling+parallel+tool+calls+llm+agent" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="HpVnExE5cgI" href="https://www.youtube.com/results?search_query=function+calling+parallel+tool+calls+llm+agent" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>

@@ -7,7 +7,7 @@
 
 ## 0. Project identity
 
-This is **The Cert Hub** — a Jekyll site authored by Humayun Zafar. It hosts story-driven self-study courses for **27 industry certifications and professional tracks**:
+This is **The Cert Hub** — a Jekyll site authored by Humayun Zafar. It hosts story-driven self-study courses for **32 industry certifications and professional tracks**:
 
 | # | Folder | Cert / Track | Modules |
 |---|---|---|---|
@@ -133,7 +133,7 @@ NN-Course-Slug/
 
 - `index.html` contains exactly 27 curriculum cards (one per course), all linked correctly. Counts and the "Tracks" list in the footer are **Liquid-driven** from `_data/navigation.yml` and `_data/site_stats.yml` — do not hardcode them.
 - `_data/navigation.yml` has exactly 27 `tracks:` entries in the canonical course order (Project Management → IT, Cloud & Systems Administration → Supply Chain & Operations → AI-Based Digital Marketing → Bitcoin & E-Commerce) with module slugs matching the folder structure.
-- The homepage hero references all 27 certifications by their official IDs as pills.
+- The homepage hero references all 32 certifications by their official IDs as pills.
 - The homepage uses `{% assign cert_count = site.data.navigation.tracks | size %}` and similar Liquid to compute counts dynamically.
 
 ---
@@ -278,7 +278,7 @@ The site has a two-tier access model enforced by Cloudflare Pages Functions:
 | Role | Who | Can access |
 |---|---|---|
 | `superuser` | Hardcoded `syed@transcrypts.com` in `functions/lib/superusers.js` | **Everything**, including `/Manage-Users/` and `/api/admin/*`. Always bypasses KV (so a wiped/compromised KV cannot lock the owner out). |
-| `student` | Anyone the super-user adds via `/Manage-Users/` (stored in KV) | Only the courses listed in their `courses` array. `"courses": "*"` grants all 27. |
+| `student` | Anyone the super-user adds via `/Manage-Users/` (stored in KV) | Only the courses listed in their `courses` array. `"courses": "*"` grants all 32. |
 | (unauthenticated) | No session cookie or invalid JWT | Homepage, `/login/`, `/api/auth/*`, public assets, course **landing** pages (`NN-Course-Slug/`). Module content (`NN-Course-Slug/Module-*`) and the admin UI are gated. |
 
 ### 9.1 Stack

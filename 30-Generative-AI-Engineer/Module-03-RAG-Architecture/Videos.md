@@ -23,7 +23,7 @@
 ## ⭐ Essential watching
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=lance+martin+rag+from+scratch+langchain" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="wd7TZ4w1mSw" href="https://www.youtube.com/results?search_query=lance+martin+rag+from+scratch+langchain" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -32,7 +32,7 @@
       <span class="vg-duration">⏱ ~5h total · The canonical free RAG course</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=llama+index+advanced+rag+pipelines" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="ZoVHBpLfRGs" href="https://www.youtube.com/results?search_query=llama+index+advanced+rag+pipelines" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -41,7 +41,7 @@
       <span class="vg-duration">⏱ 1h 20m · Production patterns</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=hyde+hypothetical+document+embeddings+retrieval" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="SaDzIVkYqyY" href="https://www.youtube.com/results?search_query=hyde+hypothetical+document+embeddings+retrieval" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -50,7 +50,7 @@
       <span class="vg-duration">⏱ 25m · Counterintuitive query rewriting</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=anthropic+contextual+retrieval+cookbook" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="0nA5QG3087g" href="https://www.youtube.com/results?search_query=anthropic+contextual+retrieval+cookbook" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -64,7 +64,7 @@
 ## 📚 Recommended
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=greg+kamradt+5+levels+of+RAG" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="bmduzd1oY7U" href="https://www.youtube.com/results?search_query=greg+kamradt+5+levels+of+RAG" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -73,7 +73,7 @@
       <span class="vg-duration">⏱ 1h · Practical progression</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=microsoft+graph+rag+global+summarization" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="vX3A96_F3FU" href="https://www.youtube.com/results?search_query=microsoft+graph+rag+global+summarization" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -82,7 +82,7 @@
       <span class="vg-duration">⏱ 45m · Subgraph retrieval</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=corrective+rag+CRAG+paper+explained" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="E2shqsYwxck" href="https://www.youtube.com/results?search_query=corrective+rag+CRAG+paper+explained" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -91,7 +91,7 @@
       <span class="vg-duration">⏱ 25m · Fallback design</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=adaptive+RAG+query+routing+complexity+classifier" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="04ighIjMcAI" href="https://www.youtube.com/results?search_query=adaptive+RAG+query+routing+complexity+classifier" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -105,7 +105,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=self-rag+adaptive+retrieval+critique" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="pNcQ5XXMgH4" href="https://www.youtube.com/results?search_query=self-rag+adaptive+retrieval+critique" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -114,7 +114,7 @@
       <span class="vg-duration">⏱ 35m · Retrieval tokens learned</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=lost+in+the+middle+long+context+attention" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="z6lwT8eXqkc" href="https://www.youtube.com/results?search_query=lost+in+the+middle+long+context+attention" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -123,7 +123,7 @@
       <span class="vg-duration">⏱ 20m · Why long context isn't a panacea</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=ragatouille+colbert+local+production" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="kEgeegk9iqo" href="https://www.youtube.com/results?search_query=ragatouille+colbert+local+production" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -132,7 +132,7 @@
       <span class="vg-duration">⏱ 40m · Late-interaction in practice</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=perplexity+ai+architecture+RAG+search" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="-mQPOrRhRws" href="https://www.youtube.com/results?search_query=perplexity+ai+architecture+RAG+search" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

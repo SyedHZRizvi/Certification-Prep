@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~60 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+contextual+retrieval+tutorial+RAG" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="6efwN_US-zk" href="https://www.youtube.com/results?search_query=Anthropic+contextual+retrieval+tutorial+RAG" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~55 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=hybrid+retrieval+BM25+vector+reciprocal+rank+fusion" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="emKkoeFjH_M" href="https://www.youtube.com/results?search_query=hybrid+retrieval+BM25+vector+reciprocal+rank+fusion" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 15 min · Beyond pure semantic</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=chunking+strategy+RAG+document+structure+aware" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="8OJC21T2SL4" href="https://www.youtube.com/results?search_query=chunking+strategy+RAG+document+structure+aware" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 12 min · Recursive, semantic, structure</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=reranker+Cohere+Voyage+LLM+RAG+pipeline" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="Uh9bYiVrW_s" href="https://www.youtube.com/results?search_query=reranker+Cohere+Voyage+LLM+RAG+pipeline" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 18 min · Long-context evals</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=pgvector+postgres+RAG+vector+search" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="ibzlEQmgPPY" href="https://www.youtube.com/results?search_query=pgvector+postgres+RAG+vector+search" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -125,7 +125,7 @@
       <span class="vg-duration">⏱ 20 min · Simplest viable stack</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=LlamaIndex+RAG+Claude+production+pipeline" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="ZoVHBpLfRGs" href="https://www.youtube.com/results?search_query=LlamaIndex+RAG+Claude+production+pipeline" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

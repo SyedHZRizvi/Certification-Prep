@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 20 min · The founder's pitch</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+Claude+Constitutional+AI+explained" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="Tjsox6vfsos" href="https://www.youtube.com/results?search_query=Anthropic+Claude+Constitutional+AI+explained" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~50 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Claude+vs+GPT+vs+Gemini+comparison+2026" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="18mkropUvl0" href="https://www.youtube.com/results?search_query=Claude+vs+GPT+vs+Gemini+comparison+2026" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 25 min · The origin story</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Karpathy+RLHF+explained+LLM+training" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="zjkBMFhNj_g" href="https://www.youtube.com/results?search_query=Karpathy+RLHF+explained+LLM+training" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -134,7 +134,7 @@
       <span class="vg-duration">⏱ 25 min · Real deployments</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Cursor+AI+editor+Claude+model+choice+interview" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="oFfVt3S51T4" href="https://www.youtube.com/results?search_query=Cursor+AI+editor+Claude+model+choice+interview" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~70 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Hamel+Husain+your+AI+product+needs+evals+talk" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="eLXF0VojuSs" href="https://www.youtube.com/results?search_query=Hamel+Husain+your+AI+product+needs+evals+talk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 35 min · The case for eval discipline</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=LLM+as+judge+G-Eval+chain+of+thought+paper" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="4beZUMADQro" href="https://www.youtube.com/results?search_query=LLM+as+judge+G-Eval+chain+of+thought+paper" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 22 min · Why CoT in evals matters</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+building+evals+for+claude+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="LXKaiZsuJsk" href="https://www.youtube.com/results?search_query=Anthropic+building+evals+for+claude+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 18 min · The official harness</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=RAGAS+evaluation+framework+RAG+faithfulness" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="fWC4VxolWAk" href="https://www.youtube.com/results?search_query=RAGAS+evaluation+framework+RAG+faithfulness" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~45 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Promptfoo+tutorial+prompt+A+B+testing" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="lARYS0c4Itk" href="https://www.youtube.com/results?search_query=Promptfoo+tutorial+prompt+A+B+testing" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 14 min · YAML-driven evals</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=OpenAI+Evals+framework+walkthrough" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="9YDfb2lyHcs" href="https://www.youtube.com/results?search_query=OpenAI+Evals+framework+walkthrough" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 18 min · The open-source framework</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=judging+LLM+as+judge+MT+bench+chatbot+arena+paper" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="OedaaAa-Sjg" href="https://www.youtube.com/results?search_query=judging+LLM+as+judge+MT+bench+chatbot+arena+paper" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 22 min · Academic benchmarking</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=multi+armed+bandit+thompson+sampling+production+ML" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="Zgwfw3bzSmQ" href="https://www.youtube.com/results?search_query=multi+armed+bandit+thompson+sampling+production+ML" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

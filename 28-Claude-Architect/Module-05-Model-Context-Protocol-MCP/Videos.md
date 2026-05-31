@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~60 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+Model+Context+Protocol+announcement+introduction" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="7j_NE6Pjv-E" href="https://www.youtube.com/results?search_query=Anthropic+Model+Context+Protocol+announcement+introduction" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>

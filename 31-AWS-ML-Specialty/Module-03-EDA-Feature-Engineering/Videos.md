@@ -23,7 +23,7 @@
 ## ⭐ Essential (~70 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Exploratory+Data+Analysis+pandas+tutorial+complete" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="xi0vhXFPegw" href="https://www.youtube.com/results?search_query=Exploratory+Data+Analysis+pandas+tutorial+complete" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>📈</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -32,7 +32,7 @@
       <span class="vg-duration">⏱ 20 min · The standard 5-step playbook</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=missing+data+imputation+strategies+machine+learning" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="YpqUbirqFxQ" href="https://www.youtube.com/results?search_query=missing+data+imputation+strategies+machine+learning" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🧹</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -41,7 +41,7 @@
       <span class="vg-duration">⏱ 15 min · MCAR / MAR / MNAR explained</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SageMaker+Data+Wrangler+tutorial+visual+data+prep" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="b5ElDVPOmO4" href="https://www.youtube.com/results?search_query=SageMaker+Data+Wrangler+tutorial+visual+data+prep" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🤖</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -50,7 +50,7 @@
       <span class="vg-duration">⏱ 18 min · Visual prep + Feature Store export</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=PCA+principal+component+analysis+visual+explanation+StatQuest" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="FgakZw6K1QQ" href="https://www.youtube.com/results?search_query=PCA+principal+component+analysis+visual+explanation+StatQuest" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>📉</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -64,7 +64,7 @@
 ## 📚 Recommended (~55 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=feature+engineering+categorical+encoding+target+vs+onehot" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="589nCGeWG1w" href="https://www.youtube.com/results?search_query=feature+engineering+categorical+encoding+target+vs+onehot" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🔤</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -73,7 +73,7 @@
       <span class="vg-duration">⏱ 18 min · Avoid the leakage trap</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=class+imbalance+SMOTE+stratified+kfold+sklearn" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="dkXB8HH_4-k" href="https://www.youtube.com/results?search_query=class+imbalance+SMOTE+stratified+kfold+sklearn" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>⚖️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -82,7 +82,7 @@
       <span class="vg-duration">⏱ 22 min · The whole toolbox</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SageMaker+Feature+Store+walkthrough+online+offline" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="pgWj0nrhKHo" href="https://www.youtube.com/results?search_query=SageMaker+Feature+Store+walkthrough+online+offline" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🏪</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -96,7 +96,7 @@
 ## 🍿 Optional
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=t-SNE+UMAP+comparison+dimensionality+reduction" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="NEaUSP4YerM" href="https://www.youtube.com/results?search_query=t-SNE+UMAP+comparison+dimensionality+reduction" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🌌</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -105,7 +105,7 @@
       <span class="vg-duration">⏱ 17 min · Non-linear viz</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Amazon+QuickSight+ML+Insights+anomaly+forecast" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="uBG7lFXV6II" href="https://www.youtube.com/results?search_query=Amazon+QuickSight+ML+Insights+anomaly+forecast" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>📊</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -114,7 +114,7 @@
       <span class="vg-duration">⏱ 20 min · NL Q&A on BI data</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Stripe+Radar+fraud+machine+learning+features" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="3p7G6X2YzfQ" href="https://www.youtube.com/results?search_query=Stripe+Radar+fraud+machine+learning+features" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>💳</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -123,7 +123,7 @@
       <span class="vg-duration">⏱ 35 min · Velocity, embeddings, network features</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SageMaker+Clarify+pre+training+bias+report" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="jvcPZmnXaxo" href="https://www.youtube.com/results?search_query=SageMaker+Clarify+pre+training+bias+report" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎯</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

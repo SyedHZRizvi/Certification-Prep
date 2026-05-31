@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~70 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=simon+willison+prompt+injection+talk+explained" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="jrHRe9lSqqA" href="https://www.youtube.com/results?search_query=simon+willison+prompt+injection+talk+explained" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 22 min · January 2025 incident</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=indirect+prompt+injection+greshake+paper+walkthrough" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="MppNtk31jNY" href="https://www.youtube.com/results?search_query=indirect+prompt+injection+greshake+paper+walkthrough" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 18 min · The foundational paper</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=constitutional+AI+anthropic+bai+2022+walkthrough" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="Tjsox6vfsos" href="https://www.youtube.com/results?search_query=constitutional+AI+anthropic+bai+2022+walkthrough" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 18 min · The 2023 case study</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=many-shot+jailbreaking+anthropic+long+context" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="EUjcZsAI4d8" href="https://www.youtube.com/results?search_query=many-shot+jailbreaking+anthropic+long+context" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=garak+LLM+vulnerability+scanner+red+team" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="npAcymuDmeA" href="https://www.youtube.com/results?search_query=garak+LLM+vulnerability+scanner+red+team" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 18 min · Open-source red-team tool</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=OWASP+LLM+top+10+security+risks" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="mDiglllKPwg" href="https://www.youtube.com/results?search_query=OWASP+LLM+top+10+security+risks" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 22 min · The security framework</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=LlamaGuard+3+meta+input+output+safety" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="RoLUO6mZsfM" href="https://www.youtube.com/results?search_query=LlamaGuard+3+meta+input+output+safety" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

@@ -66,7 +66,7 @@
 ## 📚 Recommended (~2–3 hrs)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=stanford+cs25+transformers+united" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="P127jhj-8-Y" href="https://www.youtube.com/results?search_query=stanford+cs25+transformers+united" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 20m · Companion to the blog</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=umar+jamil+attention+is+all+you+need+coded" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="ISNdQcPhsts" href="https://www.youtube.com/results?search_query=umar+jamil+attention+is+all+you+need+coded" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -93,7 +93,7 @@
       <span class="vg-duration">⏱ 2h · Paper-walkthrough style</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=yannic+kilcher+mixture+of+experts+sparse" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="0U_65fLoTq0" href="https://www.youtube.com/results?search_query=yannic+kilcher+mixture+of+experts+sparse" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -107,7 +107,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=tri+dao+flashattention+talk" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="gMOAud7hZg4" href="https://www.youtube.com/results?search_query=tri+dao+flashattention+talk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 40m · The kernel that made long context cheap</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=albert+gu+mamba+state+space+models" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="9dSkvxS2EB0" href="https://www.youtube.com/results?search_query=albert+gu+mamba+state+space+models" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -125,7 +125,7 @@
       <span class="vg-duration">⏱ 50m · The Mamba author</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=rope+rotary+positional+embedding+explained" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="o29P0Kpobz0" href="https://www.youtube.com/results?search_query=rope+rotary+positional+embedding+explained" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -134,7 +134,7 @@
       <span class="vg-duration">⏱ 20m · The position scheme</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=anthropic+prompt+caching+explained" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="5G7Op0PnHpY" href="https://www.youtube.com/results?search_query=anthropic+prompt+caching+explained" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

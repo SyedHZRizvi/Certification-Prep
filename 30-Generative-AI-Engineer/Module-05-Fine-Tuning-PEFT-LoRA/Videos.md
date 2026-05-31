@@ -21,7 +21,7 @@
 ## ⭐ Essential watching
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=sebastian+raschka+lora+from+scratch" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="DhRoTONcyZE" href="https://www.youtube.com/results?search_query=sebastian+raschka+lora+from+scratch" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -30,7 +30,7 @@
       <span class="vg-duration">⏱ 1h · The math + the code</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=tim+dettmers+qlora+talk" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="y9PHWGOa8HA" href="https://www.youtube.com/results?search_query=tim+dettmers+qlora+talk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -39,7 +39,7 @@
       <span class="vg-duration">⏱ 50m · NF4, double quant, paged optimizers</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=hugging+face+trl+sft+fine+tuning+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="aQmoog_s8HE" href="https://www.youtube.com/results?search_query=hugging+face+trl+sft+fine+tuning+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -48,7 +48,7 @@
       <span class="vg-duration">⏱ 45m · End-to-end SFT</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=should+you+fine+tune+RAG+vs+fine+tuning" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="00Q0G84kq3M" href="https://www.youtube.com/results?search_query=should+you+fine+tune+RAG+vs+fine+tuning" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -62,7 +62,7 @@
 ## 📚 Recommended
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=DPO+direct+preference+optimization+explained" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="k2pD3k1485A" href="https://www.youtube.com/results?search_query=DPO+direct+preference+optimization+explained" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -71,7 +71,7 @@
       <span class="vg-duration">⏱ 35m · Skip the reward model</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=unsloth+qlora+fast+fine+tuning" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="MQwryfkydc0" href="https://www.youtube.com/results?search_query=unsloth+qlora+fast+fine+tuning" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -80,7 +80,7 @@
       <span class="vg-duration">⏱ 25m · The faster way</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=openai+fine+tuning+api+walkthrough+2024" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="W7c8tFKEMgQ" href="https://www.youtube.com/results?search_query=openai+fine+tuning+api+walkthrough+2024" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -89,7 +89,7 @@
       <span class="vg-duration">⏱ 30m · Managed FT, end-to-end</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=peft+library+huggingface+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="t509sv5MT0w" href="https://www.youtube.com/results?search_query=peft+library+huggingface+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -103,7 +103,7 @@
 ## 🍿 Optional
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=dora+weight+decomposed+lora+paper" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="m7KQdGSr0Dg" href="https://www.youtube.com/results?search_query=dora+weight+decomposed+lora+paper" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -112,7 +112,7 @@
       <span class="vg-duration">⏱ 25m · LoRA successor</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=knowledge+distillation+llm+small+model" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="QQs23-Eb_T0" href="https://www.youtube.com/results?search_query=knowledge+distillation+llm+small+model" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -121,7 +121,7 @@
       <span class="vg-duration">⏱ 35m · Cost-saving via distillation</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=axolotl+fine+tuning+llama+config" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="ae2lbmtTY5A" href="https://www.youtube.com/results?search_query=axolotl+fine+tuning+llama+config" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -130,7 +130,7 @@
       <span class="vg-duration">⏱ 40m · The YAML-config alternative</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=llama+factory+fine+tuning+gui" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="iMD7ba1hHgw" href="https://www.youtube.com/results?search_query=llama+factory+fine+tuning+gui" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

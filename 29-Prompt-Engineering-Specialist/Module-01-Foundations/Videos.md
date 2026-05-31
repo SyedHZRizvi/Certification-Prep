@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~55 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Andrej+Karpathy+intro+to+large+language+models" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="zjkBMFhNj_g" href="https://www.youtube.com/results?search_query=Andrej+Karpathy+intro+to+large+language+models" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 60 min · Mental model for the whole field</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=3Blue1Brown+but+what+is+a+transformer+chapter+5" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="wjZofJX0v4M" href="https://www.youtube.com/results?search_query=3Blue1Brown+but+what+is+a+transformer+chapter+5" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 27 min · Why temperature/sampling exists at all</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+prompt+engineering+overview+claude" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="T9aRN5JkmL8" href="https://www.youtube.com/results?search_query=Anthropic+prompt+engineering+overview+claude" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 18 min · The Claude team's official guide</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=OpenAI+prompt+engineering+best+practices+isa+fulford" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="tRvcAdqsJWo" href="https://www.youtube.com/results?search_query=OpenAI+prompt+engineering+best+practices+isa+fulford" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~40 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=temperature+top+p+top+k+explained+llm" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="YMIQrH9BQK0" href="https://www.youtube.com/results?search_query=temperature+top+p+top+k+explained+llm" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 12 min · Sampling parameters demystified</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=BPE+tokenization+andrej+karpathy" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="zduSFxRajkE" href="https://www.youtube.com/results?search_query=BPE+tokenization+andrej+karpathy" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=lost+in+the+middle+paper+long+context+llm" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="z6lwT8eXqkc" href="https://www.youtube.com/results?search_query=lost+in+the+middle+paper+long+context+llm" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 14 min · Case study from the reading</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=claude+vs+gpt+vs+gemini+vs+llama+2026+comparison" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="18mkropUvl0" href="https://www.youtube.com/results?search_query=claude+vs+gpt+vs+gemini+vs+llama+2026+comparison" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 16 min · September 2023 demo</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=claude+3+vision+anthropic+tutorial+image+prompting" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="KEzL6VywPBQ" href="https://www.youtube.com/results?search_query=claude+3+vision+anthropic+tutorial+image+prompting" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 18 min · Base64, multi-image, schemas</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Gemini+2.5+pro+video+understanding+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="Mot-JEU26GQ" href="https://www.youtube.com/results?search_query=Gemini+2.5+pro+video+understanding+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 16 min · Voice apps in 2026</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=multimodal+RAG+image+pdf+long+context" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="ZoVHBpLfRGs" href="https://www.youtube.com/results?search_query=multimodal+RAG+image+pdf+long+context" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 12 min · Confabulation rates</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Llama+3.2+vision+local+ollama+walkthrough" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="UtSSMs6ObqY" href="https://www.youtube.com/results?search_query=Llama+3.2+vision+local+ollama+walkthrough" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

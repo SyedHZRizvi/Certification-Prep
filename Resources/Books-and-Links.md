@@ -561,4 +561,4 @@ When you're ready:
 - 🧪 [**Free Practice Tests**](./Free-Practice-Tests/) — where to find more questions
 - 🤝 [**Communities**](./Communities/) — find a study buddy
 - 🎯 [**Exam Day Tips**](../00-Study-Plan/Exam-Day-Tips/) — read the morning of your exam
-- 🏠 [**Course Home**](../) — all 27 tracks at a glance
+- 🏠 [**Course Home**](../) — all 32 tracks at a glance

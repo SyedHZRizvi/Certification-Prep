@@ -21,7 +21,7 @@
 ## ⭐ Essential (~90 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SageMaker+Studio+walkthrough+2024+complete+tour" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="iSiAm9MdULg" href="https://www.youtube.com/results?search_query=SageMaker+Studio+walkthrough+2024+complete+tour" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🖥️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -30,7 +30,7 @@
       <span class="vg-duration">⏱ 22 min · Domains, profiles, apps</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SageMaker+built+in+algorithms+choosing+the+right+one" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="6tBNYNUOXjk" href="https://www.youtube.com/results?search_query=SageMaker+built+in+algorithms+choosing+the+right+one" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🧠</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -39,7 +39,7 @@
       <span class="vg-duration">⏱ 55 min · Algorithm decision tree</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=XGBoost+explained+visually+gradient+boosting+intuition" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="OtD8wVaFm6E" href="https://www.youtube.com/results?search_query=XGBoost+explained+visually+gradient+boosting+intuition" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🌳</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -48,7 +48,7 @@
       <span class="vg-duration">⏱ 16 min · Gradient boosting from scratch</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SageMaker+XGBoost+hyperparameter+tuning+demo" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="g2nVfGNlpIA" href="https://www.youtube.com/results?search_query=SageMaker+XGBoost+hyperparameter+tuning+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎛️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -62,7 +62,7 @@
 ## 📚 Recommended (~80 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SageMaker+Random+Cut+Forest+anomaly+detection+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="yx1vf3uapX8" href="https://www.youtube.com/results?search_query=SageMaker+Random+Cut+Forest+anomaly+detection+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🌲</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -71,7 +71,7 @@
       <span class="vg-duration">⏱ 18 min · Anomaly detection</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SageMaker+DeepAR+time+series+forecasting+demo" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="dskbWB1mqvI" href="https://www.youtube.com/results?search_query=SageMaker+DeepAR+time+series+forecasting+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>⏰</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -80,7 +80,7 @@
       <span class="vg-duration">⏱ 22 min · Multi-series forecasting</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SageMaker+Autopilot+demo+autoML+tabular" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="qMEtqJPhqpA" href="https://www.youtube.com/results?search_query=SageMaker+Autopilot+demo+autoML+tabular" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🚁</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -89,7 +89,7 @@
       <span class="vg-duration">⏱ 20 min · Tabular AutoML</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SageMaker+Spot+training+checkpointing+cost+saving" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="tny8N-hkCqs" href="https://www.youtube.com/results?search_query=SageMaker+Spot+training+checkpointing+cost+saving" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>💰</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -103,7 +103,7 @@
 ## 🍿 Optional
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=BlazingText+SageMaker+word2vec+text+classification" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="ISPId9Lhc1g" href="https://www.youtube.com/results?search_query=BlazingText+SageMaker+word2vec+text+classification" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>💬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -112,7 +112,7 @@
       <span class="vg-duration">⏱ 14 min</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SageMaker+Object2Vec+embedding+recommender" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="EpmIIDC2Xgg" href="https://www.youtube.com/results?search_query=SageMaker+Object2Vec+embedding+recommender" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🔗</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -121,7 +121,7 @@
       <span class="vg-duration">⏱ 16 min</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SageMaker+pipe+mode+vs+file+mode+vs+fast+file" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="FRbcb7CtIOw" href="https://www.youtube.com/results?search_query=SageMaker+pipe+mode+vs+file+mode+vs+fast+file" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🚰</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -130,7 +130,7 @@
       <span class="vg-duration">⏱ 12 min</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SageMaker+Canvas+no+code+business+analyst" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="JkTIj-_r3Yc" href="https://www.youtube.com/results?search_query=SageMaker+Canvas+no+code+business+analyst" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎨</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

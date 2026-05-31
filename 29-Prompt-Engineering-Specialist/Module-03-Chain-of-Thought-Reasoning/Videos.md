@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~75 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=chain+of+thought+prompting+Wei+2022+paper+walkthrough" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="AFE6x81AP4k" href="https://www.youtube.com/results?search_query=chain+of+thought+prompting+Wei+2022+paper+walkthrough" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 22 min · Majority-vote reasoning</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=ReAct+reason+act+agent+pattern+yao+2022" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="EcB0PiNmbFo" href="https://www.youtube.com/results?search_query=ReAct+reason+act+agent+pattern+yao+2022" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>

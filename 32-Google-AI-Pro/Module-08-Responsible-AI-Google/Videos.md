@@ -20,31 +20,31 @@
 ## ⭐ Essential (~70 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Google+AI+Principles+responsible+AI+2018+seven+principles" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="9ZW3pAxv9TQ" href="https://www.youtube.com/results?search_query=Google+AI+Principles+responsible+AI+2018+seven+principles" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag essential">Essential</span>
       <p class="vg-title">Google AI Principles Explained</p><p class="vg-creator">Google AI</p>
       <span class="vg-duration">⏱ 15 min · 7 + 4 framework</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Gemini+safety+settings+harm+categories+thresholds+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="CTSnt_qj7tk" href="https://www.youtube.com/results?search_query=Gemini+safety+settings+harm+categories+thresholds+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag essential">Essential</span>
       <p class="vg-title">safety_settings — Full Reference</p><p class="vg-creator">Google Cloud Tech</p>
       <span class="vg-duration">⏱ 12 min · 4×4 matrix</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SynthID+google+deepmind+watermark+ai+generated" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="L0qLZWfeT5o" href="https://www.youtube.com/results?search_query=SynthID+google+deepmind+watermark+ai+generated" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag essential">Essential</span>
       <p class="vg-title">SynthID — Watermarking AI Content</p><p class="vg-creator">Google DeepMind</p>
       <span class="vg-duration">⏱ 14 min · Image + audio + text</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SAIF+google+secure+ai+framework+six+elements" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="C0E7VegjxJg" href="https://www.youtube.com/results?search_query=SAIF+google+secure+ai+framework+six+elements" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag essential">Essential</span>
       <p class="vg-title">SAIF — Secure AI Framework</p><p class="vg-creator">Google Cloud Security</p>
       <span class="vg-duration">⏱ 13 min · 6-element framework</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=prompt+injection+OWASP+LLM+attack+defense+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="MppNtk31jNY" href="https://www.youtube.com/results?search_query=prompt+injection+OWASP+LLM+attack+defense+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag essential">Essential</span>
       <p class="vg-title">Prompt Injection Defenses</p><p class="vg-creator">Google Cloud Security</p>
@@ -55,25 +55,25 @@
 ## 📚 Recommended (~50 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Vertex+AI+evaluation+responsible+AI+bias+fairness+metrics" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="1Au1z9CtLq4" href="https://www.youtube.com/results?search_query=Vertex+AI+evaluation+responsible+AI+bias+fairness+metrics" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Bias + Fairness Evaluation</p><p class="vg-creator">Google Cloud Tech</p>
       <span class="vg-duration">⏱ 14 min · Demographic parity</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Verily+Med-PaLM+2+responsible+AI+clinical+deployment" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="ZcVjMjuO9Sk" href="https://www.youtube.com/results?search_query=Verily+Med-PaLM+2+responsible+AI+clinical+deployment" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Verily Med-PaLM 2 Responsible Deployment</p><p class="vg-creator">Google Health</p>
       <span class="vg-duration">⏱ 18 min · The 13-item checklist</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Vertex+AI+training+data+opt+out+enterprise+privacy" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="P6BSEgaQ7iE" href="https://www.youtube.com/results?search_query=Vertex+AI+training+data+opt+out+enterprise+privacy" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Training Data Opt-Out on Vertex AI</p><p class="vg-creator">Google Cloud Tech</p>
       <span class="vg-duration">⏱ 10 min · Your data is yours</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=recitation+checker+LLM+training+data+verbatim+google" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="cfqtFvWOfg0" href="https://www.youtube.com/results?search_query=recitation+checker+LLM+training+data+verbatim+google" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Recitation Checker</p><p class="vg-creator">Google Cloud Tech</p>
@@ -84,25 +84,25 @@
 ## 🍿 Optional
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Google+Project+Maven+pentagon+AI+principles+backlash" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="qF6_yZxWmJU" href="https://www.youtube.com/results?search_query=Google+Project+Maven+pentagon+AI+principles+backlash" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag optional">Optional</span>
       <p class="vg-title">Project Maven and the AI Principles Origin</p><p class="vg-creator">Various / Lex Fridman</p>
       <span class="vg-duration">⏱ 25 min · The 2018 inflection point</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=EU+AI+Act+GDPR+watermarking+disclosure+AI+generated" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="VBC_oABS9_o" href="https://www.youtube.com/results?search_query=EU+AI+Act+GDPR+watermarking+disclosure+AI+generated" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag optional">Optional</span>
       <p class="vg-title">EU AI Act + Disclosure Requirements</p><p class="vg-creator">Various policy talks</p>
       <span class="vg-duration">⏱ 22 min · Regulatory context</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=indirect+prompt+injection+attack+RAG+document+poisoning" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="hkn8wKlhMzc" href="https://www.youtube.com/results?search_query=indirect+prompt+injection+attack+RAG+document+poisoning" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag optional">Optional</span>
       <p class="vg-title">Indirect Prompt Injection Attack Demos</p><p class="vg-creator">Simon Willison / Various</p>
       <span class="vg-duration">⏱ 30 min · How attackers do it</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Google+responsible+AI+toolkit+Gemma+open+model" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="ay95Y4gJ_ZE" href="https://www.youtube.com/results?search_query=Google+responsible+AI+toolkit+Gemma+open+model" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag optional">Optional</span>
       <p class="vg-title">Responsible Generative AI Toolkit</p><p class="vg-creator">Google AI</p>

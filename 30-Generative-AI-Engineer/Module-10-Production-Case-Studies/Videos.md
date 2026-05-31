@@ -21,7 +21,7 @@
 ## ⭐ Essential
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=cursor+team+building+ai+ide+talk" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="oFfVt3S51T4" href="https://www.youtube.com/results?search_query=cursor+team+building+ai+ide+talk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -30,7 +30,7 @@
       <span class="vg-duration">⏱ 1h 20m · The latency moat</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=github+copilot+architecture+evolution" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="HYV3-DfwYwQ" href="https://www.youtube.com/results?search_query=github+copilot+architecture+evolution" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -39,7 +39,7 @@
       <span class="vg-duration">⏱ 50m · Codex → Workspace</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=notion+ai+qa+architecture" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="C6dyq1qK6Mc" href="https://www.youtube.com/results?search_query=notion+ai+qa+architecture" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -48,7 +48,7 @@
       <span class="vg-duration">⏱ 45m · v1 → v2 → v3</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=klarna+ai+assistant+customer+support" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="qIFCMnEdOII" href="https://www.youtube.com/results?search_query=klarna+ai+assistant+customer+support" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -62,7 +62,7 @@
 ## 📚 Recommended
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=khan+academy+khanmigo+sal+khan" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="hJP5GqnTrNo" href="https://www.youtube.com/results?search_query=khan+academy+khanmigo+sal+khan" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -71,7 +71,7 @@
       <span class="vg-duration">⏱ 35m · Designed-for-minors AI</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=stripe+radar+ml+fraud+llm" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="OUVRsZkLfmM" href="https://www.youtube.com/results?search_query=stripe+radar+ml+fraud+llm" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -80,7 +80,7 @@
       <span class="vg-duration">⏱ 40m · LLM as adjudicator</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=perplexity+ai+architecture+deep+dive" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="-mQPOrRhRws" href="https://www.youtube.com/results?search_query=perplexity+ai+architecture+deep+dive" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -89,7 +89,7 @@
       <span class="vg-duration">⏱ 40m · Search + LLM hybrid</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=glean+enterprise+search+rag" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="d_axOXAQrgg" href="https://www.youtube.com/results?search_query=glean+enterprise+search+rag" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -103,7 +103,7 @@
 ## 🍿 Optional
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=anthropic+claude+ai+product+design" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="ugvHCXCOmm4" href="https://www.youtube.com/results?search_query=anthropic+claude+ai+product+design" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -112,7 +112,7 @@
       <span class="vg-duration">⏱ 50m · The reference product</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=replit+agent+ai+software+engineer" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="ViykMqljjxU" href="https://www.youtube.com/results?search_query=replit+agent+ai+software+engineer" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -121,7 +121,7 @@
       <span class="vg-duration">⏱ 40m · LangGraph in production</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=devin+cognition+ai+autonomous+coder" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="fjHtjT7GO1c" href="https://www.youtube.com/results?search_query=devin+cognition+ai+autonomous+coder" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -130,7 +130,7 @@
       <span class="vg-duration">⏱ 35m · Multi-agent SWE</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=ai+engineer+summit+2025+production+talks" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="pRoFV5pyOlc" href="https://www.youtube.com/results?search_query=ai+engineer+summit+2025+production+talks" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

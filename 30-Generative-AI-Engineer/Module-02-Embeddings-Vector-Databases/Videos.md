@@ -23,7 +23,7 @@
 ## ⭐ Essential watching
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=jay+alammar+illustrated+word2vec" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="ISPId9Lhc1g" href="https://www.youtube.com/results?search_query=jay+alammar+illustrated+word2vec" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -32,7 +32,7 @@
       <span class="vg-duration">⏱ 20m · The geometric intuition</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=greg+kamradt+chunking+strategies+RAG" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="8OJC21T2SL4" href="https://www.youtube.com/results?search_query=greg+kamradt+chunking+strategies+RAG" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -41,7 +41,7 @@
       <span class="vg-duration">⏱ 1h 5m · The chunking masterclass</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=james+briggs+pinecone+vector+database+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="kPL-6-9MVyA" href="https://www.youtube.com/results?search_query=james+briggs+pinecone+vector+database+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -50,7 +50,7 @@
       <span class="vg-duration">⏱ 1h · End-to-end Pinecone</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=anthropic+contextual+retrieval+explained" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="6efwN_US-zk" href="https://www.youtube.com/results?search_query=anthropic+contextual+retrieval+explained" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -64,7 +64,7 @@
 ## 📚 Recommended
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=cohere+embed+v3+rerank+walkthrough" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="Uh9bYiVrW_s" href="https://www.youtube.com/results?search_query=cohere+embed+v3+rerank+walkthrough" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -73,7 +73,7 @@
       <span class="vg-duration">⏱ 30m · The asymmetric pattern</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=qdrant+vector+search+tutorial+rust" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="LRcZ9pbGnno" href="https://www.youtube.com/results?search_query=qdrant+vector+search+tutorial+rust" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -82,7 +82,7 @@
       <span class="vg-duration">⏱ 45m · Filter pushdown deep-dive</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=pgvector+postgres+vector+search+supabase" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="ibzlEQmgPPY" href="https://www.youtube.com/results?search_query=pgvector+postgres+vector+search+supabase" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -91,7 +91,7 @@
       <span class="vg-duration">⏱ 40m · Postgres-native vectors</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=hnsw+graph+visualization+vector+search" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="QvKMwLjdK-s" href="https://www.youtube.com/results?search_query=hnsw+graph+visualization+vector+search" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -105,7 +105,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=colbert+late+interaction+retrieval+omar+khattab" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="cN6S0Ehm7_8" href="https://www.youtube.com/results?search_query=colbert+late+interaction+retrieval+omar+khattab" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -114,7 +114,7 @@
       <span class="vg-duration">⏱ 50m · The PhD-level take</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=matryoshka+representation+learning+openai" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="yWMa3r6Mq0w" href="https://www.youtube.com/results?search_query=matryoshka+representation+learning+openai" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -123,7 +123,7 @@
       <span class="vg-duration">⏱ 30m · 3072 → 256 dim trick</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=milvus+vector+database+billion+scale" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="ZABs7DRGLFE" href="https://www.youtube.com/results?search_query=milvus+vector+database+billion+scale" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -132,7 +132,7 @@
       <span class="vg-duration">⏱ 40m · DiskANN, IVF-PQ in production</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=splade+sparse+vector+search+naver" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="44ApgMzcSjA" href="https://www.youtube.com/results?search_query=splade+sparse+vector+search+naver" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

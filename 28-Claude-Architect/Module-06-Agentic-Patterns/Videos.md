@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 25 min · The canonical reference</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=ReAct+agent+pattern+Claude+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="EcB0PiNmbFo" href="https://www.youtube.com/results?search_query=ReAct+agent+pattern+Claude+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 18 min · Reason + Act loop</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Hamel+Husain+evals+for+AI+products+talk" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="eLXF0VojuSs" href="https://www.youtube.com/results?search_query=Hamel+Husain+evals+for+AI+products+talk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~60 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Cursor+Composer+agent+architecture+orchestrator+workers" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="oFfVt3S51T4" href="https://www.youtube.com/results?search_query=Cursor+Composer+agent+architecture+orchestrator+workers" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 25 min · Orchestrator-workers in production</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Replit+Agent+architecture+walkthrough" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="fo16YPmuX9M" href="https://www.youtube.com/results?search_query=Replit+Agent+architecture+walkthrough" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 20 min · Confirmation gates story</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=LLM+as+judge+evaluation+rubric+Anthropic" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="OedaaAa-Sjg" href="https://www.youtube.com/results?search_query=LLM+as+judge+evaluation+rubric+Anthropic" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -107,7 +107,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Langfuse+tracing+LLM+agent+observability" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="2E_On-TfOAU" href="https://www.youtube.com/results?search_query=Langfuse+tracing+LLM+agent+observability" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

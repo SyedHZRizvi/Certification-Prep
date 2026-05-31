@@ -20,31 +20,31 @@
 ## ⭐ Essential Case Studies (~80 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Wendys+FreshAI+google+cloud+drive+thru+architecture" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="-9z3VfRG1IM" href="https://www.youtube.com/results?search_query=Wendys+FreshAI+google+cloud+drive+thru+architecture" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag essential">Essential</span>
       <p class="vg-title">Wendy's FreshAI Architecture Deep Dive</p><p class="vg-creator">Google Cloud Next</p>
       <span class="vg-duration">⏱ 18 min · Drive-thru voice AI</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Mercedes+Benz+MBUX+Gemini+CES+voice+demo" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="kBA7QvBg_K8" href="https://www.youtube.com/results?search_query=Mercedes+Benz+MBUX+Gemini+CES+voice+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag essential">Essential</span>
       <p class="vg-title">Mercedes MBUX with Gemini</p><p class="vg-creator">Mercedes-Benz / CES</p>
       <span class="vg-duration">⏱ 14 min · In-car voice assistant</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Shopify+sidekick+merchant+AI+vertex+architecture" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="qJBYj3sNK4Y" href="https://www.youtube.com/results?search_query=Shopify+sidekick+merchant+AI+vertex+architecture" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag essential">Essential</span>
       <p class="vg-title">Shopify Sidekick Architecture</p><p class="vg-creator">Shopify Engineering</p>
       <span class="vg-duration">⏱ 20 min · Multi-tenant ADK</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Google+Photos+gemini+search+upgrade+keynote" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="XEzRZ35urlk" href="https://www.youtube.com/results?search_query=Google+Photos+gemini+search+upgrade+keynote" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag essential">Essential</span>
       <p class="vg-title">Google Photos with Gemini</p><p class="vg-creator">Google I/O</p>
       <span class="vg-duration">⏱ 12 min · Batch-index + ANN query</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Verily+Med+PaLM+2+clinical+decision+support+deployment" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="ZcVjMjuO9Sk" href="https://www.youtube.com/results?search_query=Verily+Med+PaLM+2+clinical+decision+support+deployment" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag essential">Essential</span>
       <p class="vg-title">Verily Med-PaLM 2 Clinical Architecture</p><p class="vg-creator">Google Health</p>
@@ -55,25 +55,25 @@
 ## 📚 Recommended — Exam Prep (~55 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Google+cloud+generative+AI+leader+exam+study+guide" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="kJZ8oOpHIxs" href="https://www.youtube.com/results?search_query=Google+cloud+generative+AI+leader+exam+study+guide" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Generative AI Leader Exam Walkthrough</p><p class="vg-creator">Google Cloud Skills Boost</p>
       <span class="vg-duration">⏱ 18 min · Domain weights + sample questions</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=PMLE+google+professional+machine+learning+engineer+exam+study" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="W4j3X2vXJ6E" href="https://www.youtube.com/results?search_query=PMLE+google+professional+machine+learning+engineer+exam+study" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">PMLE Exam Walkthrough</p><p class="vg-creator">Google Cloud Skills Boost</p>
       <span class="vg-duration">⏱ 22 min · Scenario-question strategy</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Vertex+AI+cost+optimization+gemini+pricing+playbook" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="bHGtLR9JJk0" href="https://www.youtube.com/results?search_query=Vertex+AI+cost+optimization+gemini+pricing+playbook" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Cost Optimization on Vertex AI</p><p class="vg-creator">Google Cloud Tech</p>
       <span class="vg-duration">⏱ 15 min · The 8-lever playbook</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Bedrock+vs+Vertex+AI+vs+Azure+OpenAI+comparison" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="rJzKWB0PJrk" href="https://www.youtube.com/results?search_query=AWS+Bedrock+vs+Vertex+AI+vs+Azure+OpenAI+comparison" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Vertex AI vs Bedrock vs Azure OpenAI</p><p class="vg-creator">Cloud Comparison</p>
@@ -84,25 +84,25 @@
 ## 🍿 Optional
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=McDonalds+IBM+drive+thru+AI+cancelled+lessons" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="A3aroV3DQYU" href="https://www.youtube.com/results?search_query=McDonalds+IBM+drive+thru+AI+cancelled+lessons" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag optional">Optional</span>
       <p class="vg-title">McDonald's IBM Drive-Thru Pivot</p><p class="vg-creator">Various</p>
       <span class="vg-duration">⏱ 12 min · Architecture lessons from a cancellation</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Carrefour+Best+Buy+Discover+vertex+AI+case+study" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="V6DJYGn2SFk" href="https://www.youtube.com/results?search_query=Carrefour+Best+Buy+Discover+vertex+AI+case+study" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag optional">Optional</span>
       <p class="vg-title">Enterprise Vertex AI Customer Stories</p><p class="vg-creator">Google Cloud Next</p>
       <span class="vg-duration">⏱ 25 min · Carrefour, Best Buy, Discover, DBS</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Google+cloud+AI+enterprise+reference+architecture" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="A8ESu3sCMpc" href="https://www.youtube.com/results?search_query=Google+cloud+AI+enterprise+reference+architecture" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag optional">Optional</span>
       <p class="vg-title">Enterprise AI Reference Architectures</p><p class="vg-creator">Google Cloud Architecture</p>
       <span class="vg-duration">⏱ 18 min · Patterns library</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Sundar+Pichai+Demis+Hassabis+gemini+future+interview" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="-HJ8e2g6_K0" href="https://www.youtube.com/results?search_query=Sundar+Pichai+Demis+Hassabis+gemini+future+interview" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag optional">Optional</span>
       <p class="vg-title">Pichai + Hassabis on Gemini's Future</p><p class="vg-creator">Lex Fridman</p>

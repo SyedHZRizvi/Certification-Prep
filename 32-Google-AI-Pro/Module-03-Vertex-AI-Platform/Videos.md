@@ -20,31 +20,31 @@
 ## ⭐ Essential (~75 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Vertex+AI+overview+platform+walkthrough+google+cloud" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="gT4ZsRRJjEY" href="https://www.youtube.com/results?search_query=Vertex+AI+overview+platform+walkthrough+google+cloud" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag essential">Essential</span>
       <p class="vg-title">Vertex AI Platform Overview</p><p class="vg-creator">Google Cloud Tech</p>
       <span class="vg-duration">⏱ 18 min · The umbrella tour</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Vertex+AI+Model+Garden+claude+llama+gemini+models" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="UC9XPCnsRDM" href="https://www.youtube.com/results?search_query=Vertex+AI+Model+Garden+claude+llama+gemini+models" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag essential">Essential</span>
       <p class="vg-title">Model Garden — 200 Models, One Platform</p><p class="vg-creator">Google Cloud Tech</p>
       <span class="vg-duration">⏱ 15 min · Gemini + Claude + Llama on Vertex</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Vertex+AI+Search+vs+Vector+Search+difference+RAG" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="JsXl_iqVHcQ" href="https://www.youtube.com/results?search_query=Vertex+AI+Search+vs+Vector+Search+difference+RAG" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag essential">Essential</span>
       <p class="vg-title">Vertex AI Search vs Vector Search</p><p class="vg-creator">Google Cloud Tech</p>
       <span class="vg-duration">⏱ 14 min · The critical distinction</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Vertex+AI+Pipelines+kubeflow+ML+orchestration+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="gtVHw5YCRhE" href="https://www.youtube.com/results?search_query=Vertex+AI+Pipelines+kubeflow+ML+orchestration+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag essential">Essential</span>
       <p class="vg-title">Vertex AI Pipelines (Kubeflow) Walkthrough</p><p class="vg-creator">Google Cloud Tech</p>
       <span class="vg-duration">⏱ 16 min · DAG orchestration on Vertex</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Vertex+AI+provisioned+throughput+vs+payg+gemini+pricing" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="0jR3y9PNgxw" href="https://www.youtube.com/results?search_query=Vertex+AI+provisioned+throughput+vs+payg+gemini+pricing" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag essential">Essential</span>
       <p class="vg-title">Provisioned Throughput vs PAYG Breakeven</p><p class="vg-creator">Google Cloud Tech</p>
@@ -55,25 +55,25 @@
 ## 📚 Recommended (~55 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Vertex+AI+Workbench+notebook+managed+jupyter+gcp" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="zzpRZehTeJI" href="https://www.youtube.com/results?search_query=Vertex+AI+Workbench+notebook+managed+jupyter+gcp" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Vertex AI Workbench Tutorial</p><p class="vg-creator">Google Cloud Tech</p>
       <span class="vg-duration">⏱ 14 min · Managed notebooks</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Vertex+AI+Feature+Store+online+offline+features" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="oCUmcv7tsfM" href="https://www.youtube.com/results?search_query=Vertex+AI+Feature+Store+online+offline+features" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Vertex AI Feature Store</p><p class="vg-creator">Google Cloud Tech</p>
       <span class="vg-duration">⏱ 12 min · One source of truth for features</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=VPC+Service+Controls+CMEK+Vertex+AI+enterprise+security" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="NHV0KNF7Yc4" href="https://www.youtube.com/results?search_query=VPC+Service+Controls+CMEK+Vertex+AI+enterprise+security" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">VPC-SC + CMEK on Vertex AI</p><p class="vg-creator">Google Cloud Tech</p>
       <span class="vg-duration">⏱ 15 min · Enterprise security primitives</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Vertex+AI+Model+Monitoring+drift+detection+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="QDzx4kp8R4Y" href="https://www.youtube.com/results?search_query=Vertex+AI+Model+Monitoring+drift+detection+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Model Monitoring — Drift & Skew Detection</p><p class="vg-creator">Google Cloud Tech</p>
@@ -84,19 +84,19 @@
 ## 🍿 Optional
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Spotify+Vertex+AI+migration+ML+platform+case+study" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="hBMHohkRgAA" href="https://www.youtube.com/results?search_query=Spotify+Vertex+AI+migration+ML+platform+case+study" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag optional">Optional</span>
       <p class="vg-title">Spotify on Vertex AI — Case Study</p><p class="vg-creator">Google Cloud Next</p>
       <span class="vg-duration">⏱ 25 min · 3,000 models consolidated</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Wayfair+vertex+ai+vector+search+generative+shopping" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="3xfsoSlGZNs" href="https://www.youtube.com/results?search_query=Wayfair+vertex+ai+vector+search+generative+shopping" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag optional">Optional</span>
       <p class="vg-title">Wayfair Generative Shopping</p><p class="vg-creator">Google Cloud Next</p>
       <span class="vg-duration">⏱ 22 min · 30M-SKU Vector Search</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Vertex+AI+endpoints+canary+deployment+traffic+split" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="cmKvALCDfo4" href="https://www.youtube.com/results?search_query=Vertex+AI+endpoints+canary+deployment+traffic+split" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag optional">Optional</span>
       <p class="vg-title">Endpoints, Canary, Traffic Split</p><p class="vg-creator">Google Cloud Tech</p>

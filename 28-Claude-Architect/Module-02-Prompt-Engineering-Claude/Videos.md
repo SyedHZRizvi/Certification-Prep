@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~70 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+prompt+engineering+tutorial+Claude" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="T9aRN5JkmL8" href="https://www.youtube.com/results?search_query=Anthropic+prompt+engineering+tutorial+Claude" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~60 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Claude+chain+of+thought+thinking+tags+prompt" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="AFE6x81AP4k" href="https://www.youtube.com/results?search_query=Claude+chain+of+thought+thinking+tags+prompt" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 25 min · Schema-first prompting</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=prompt+caching+Anthropic+Claude+how+it+works" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="5G7Op0PnHpY" href="https://www.youtube.com/results?search_query=prompt+caching+Anthropic+Claude+how+it+works" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -125,7 +125,7 @@
       <span class="vg-duration">⏱ 20 min · 90% cost cut</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Hamel+Husain+evals+for+prompts+LLM" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="eLXF0VojuSs" href="https://www.youtube.com/results?search_query=Hamel+Husain+evals+for+prompts+LLM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

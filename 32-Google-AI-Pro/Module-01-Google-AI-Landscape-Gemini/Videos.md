@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~75 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Attention+Is+All+You+Need+Transformer+Vaswani+2017+explained" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="iDulhoQ2pro" href="https://www.youtube.com/results?search_query=Attention+Is+All+You+Need+Transformer+Vaswani+2017+explained" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 20 min · The foundational paper walkthrough</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Google+DeepMind+Gemini+launch+Demis+Hassabis" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="UIZAiXYceBI" href="https://www.youtube.com/results?search_query=Google+DeepMind+Gemini+launch+Demis+Hassabis" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 18 min · The Dec 2023 unveiling</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Gemini+1.5+Pro+1+million+token+context+window+demo" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="LHKL_210CcU" href="https://www.youtube.com/results?search_query=Gemini+1.5+Pro+1+million+token+context+window+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 12 min · Why 1M context changes things</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Gemini+model+family+Nano+Flash+Pro+Ultra+comparison" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="o8iyrtQyrZM" href="https://www.youtube.com/results?search_query=Gemini+model+family+Nano+Flash+Pro+Ultra+comparison" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -61,7 +61,7 @@
       <span class="vg-duration">⏱ 10 min · Picking the right tier</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Google+AI+Principles+responsible+AI+overview" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="9ZW3pAxv9TQ" href="https://www.youtube.com/results?search_query=Google+AI+Principles+responsible+AI+overview" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -75,7 +75,7 @@
 ## 📚 Recommended (~60 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Gemini+vs+GPT+vs+Claude+comparison+2026" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="18mkropUvl0" href="https://www.youtube.com/results?search_query=Gemini+vs+GPT+vs+Claude+comparison+2026" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 15 min · Model bake-off</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Google+DeepMind+merger+April+2023+Demis+Hassabis+story" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="-HJ8e2g6_K0" href="https://www.youtube.com/results?search_query=Google+DeepMind+merger+April+2023+Demis+Hassabis+story" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -93,7 +93,7 @@
       <span class="vg-duration">⏱ 25 min · The reorg that produced Gemini</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Karpathy+intro+large+language+models+LLM+1+hour" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="zjkBMFhNj_g" href="https://www.youtube.com/results?search_query=Karpathy+intro+large+language+models+LLM+1+hour" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -102,7 +102,7 @@
       <span class="vg-duration">⏱ 60 min · Background fundamentals</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Gemini+2.5+Pro+thinking+mode+reasoning+benchmarks" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="sXjU8tCb_x4" href="https://www.youtube.com/results?search_query=Gemini+2.5+Pro+thinking+mode+reasoning+benchmarks" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -116,7 +116,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AlphaGo+documentary+Lee+Sedol+match+2016" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="WXuK6gekU1Y" href="https://www.youtube.com/results?search_query=AlphaGo+documentary+Lee+Sedol+match+2016" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -125,7 +125,7 @@
       <span class="vg-duration">⏱ 90 min · DeepMind's defining moment</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AlphaFold+2+protein+folding+Demis+Hassabis+Nobel" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="gg7WjuFs8F4" href="https://www.youtube.com/results?search_query=AlphaFold+2+protein+folding+Demis+Hassabis+Nobel" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -134,7 +134,7 @@
       <span class="vg-duration">⏱ 25 min · Science from the same lab</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Mercado+Libre+Vertex+AI+Search+seller+assistant+case+study" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="lpW-FOgmHvk" href="https://www.youtube.com/results?search_query=Mercado+Libre+Vertex+AI+Search+seller+assistant+case+study" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -143,7 +143,7 @@
       <span class="vg-duration">⏱ 18 min · Real-world Vertex deployment</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Project+Astra+Google+I/O+real+time+multimodal+agent" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="JcDBFAm9PPI" href="https://www.youtube.com/results?search_query=Project+Astra+Google+I/O+real+time+multimodal+agent" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

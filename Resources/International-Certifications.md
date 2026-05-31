@@ -1052,7 +1052,7 @@ Stay away from any cert sold by an organization without credible alumni on Linke
 
 You've chosen your cert. Now go earn it:
 
-1. ☑️ **Open the matching course README** — pick from the [27 tracks](../) on the homepage
+1. ☑️ **Open the matching course README** — pick from the [32 tracks](../) on the homepage
 2. ☑️ **Read the [Quick Start Guide](../00-Study-Plan/Quick-Start-Guide/)** if you haven't already
 3. ☑️ **Follow the [12-Week Study Plan](../00-Study-Plan/12-Week-Study-Plan/)** — adaptable to any cert
 4. ☑️ **Bookmark [Exam Day Tips](../00-Study-Plan/Exam-Day-Tips/)** — read it the morning of your exam

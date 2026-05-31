@@ -21,7 +21,7 @@
 ## ⭐ Essential (~70 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SageMaker+security+VPC+KMS+IAM+best+practices" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="0jx2unJBnIQ" href="https://www.youtube.com/results?search_query=SageMaker+security+VPC+KMS+IAM+best+practices" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🔐</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -30,7 +30,7 @@
       <span class="vg-duration">⏱ 22 min · IAM, VPC, KMS, network isolation</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SageMaker+cost+optimization+spot+savings+plans" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="GFakkHD9aQY" href="https://www.youtube.com/results?search_query=SageMaker+cost+optimization+spot+savings+plans" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>💰</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -39,7 +39,7 @@
       <span class="vg-duration">⏱ 24 min · Spot, MME, Inferentia, Savings Plans</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SageMaker+VPC+endpoint+network+isolation+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="fAkr-4cZrSY" href="https://www.youtube.com/results?search_query=SageMaker+VPC+endpoint+network+isolation+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🌐</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -53,7 +53,7 @@
 ## 📚 Recommended (~50 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Macie+PII+discovery+S3+demo" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="PVnFYotwqyo" href="https://www.youtube.com/results?search_query=AWS+Macie+PII+discovery+S3+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🕵️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -62,7 +62,7 @@
       <span class="vg-duration">⏱ 18 min</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SageMaker+Inferentia2+cost+inference+demo" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="Bteba8KLeGc" href="https://www.youtube.com/results?search_query=SageMaker+Inferentia2+cost+inference+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🚀</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -71,7 +71,7 @@
       <span class="vg-duration">⏱ 17 min</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Compute+Savings+Plans+vs+Reserved+Instances+ML" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="-t148tYgnJU" href="https://www.youtube.com/results?search_query=Compute+Savings+Plans+vs+Reserved+Instances+ML" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>💸</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -85,7 +85,7 @@
 ## 🍿 Optional
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Pinterest+ML+infrastructure+reinvent+talk" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="zP5Y8jrK4J0" href="https://www.youtube.com/results?search_query=Pinterest+ML+infrastructure+reinvent+talk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>📌</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -94,7 +94,7 @@
       <span class="vg-duration">⏱ 45 min · Real cost + security war stories</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SageMaker+Studio+lifecycle+config+idle+auto+shutdown" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="A1IpEcd-AHk" href="https://www.youtube.com/results?search_query=SageMaker+Studio+lifecycle+config+idle+auto+shutdown" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>⏰</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -103,7 +103,7 @@
       <span class="vg-duration">⏱ 14 min</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Config+rule+SageMaker+endpoint+encryption" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="2Bdxh9WXDX8" href="https://www.youtube.com/results?search_query=AWS+Config+rule+SageMaker+endpoint+encryption" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🛡️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

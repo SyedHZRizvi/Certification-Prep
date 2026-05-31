@@ -21,7 +21,7 @@
 ## ⭐ Essential watching
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=langchain+lcel+expression+language+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="9M8x485j_lU" href="https://www.youtube.com/results?search_query=langchain+lcel+expression+language+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -30,7 +30,7 @@
       <span class="vg-duration">⏱ 45m · The modern composition primitive</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=langgraph+harrison+chase+stateful+agents" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="5h-JBkySK34" href="https://www.youtube.com/results?search_query=langgraph+harrison+chase+stateful+agents" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -39,7 +39,7 @@
       <span class="vg-duration">⏱ 1h · From the LangChain CEO</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=llama+index+jerry+liu+building+RAG+apps" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="WL7V9JUy2sE" href="https://www.youtube.com/results?search_query=llama+index+jerry+liu+building+RAG+apps" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -48,7 +48,7 @@
       <span class="vg-duration">⏱ 50m · From the source</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=anthropic+mcp+model+context+protocol+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="7j_NE6Pjv-E" href="https://www.youtube.com/results?search_query=anthropic+mcp+model+context+protocol+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -62,7 +62,7 @@
 ## 📚 Recommended
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=langchain+vs+llamaindex+which+to+choose" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="zg3-VfvP4Aw" href="https://www.youtube.com/results?search_query=langchain+vs+llamaindex+which+to+choose" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -71,7 +71,7 @@
       <span class="vg-duration">⏱ 30m · Honest pros and cons</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=llama+index+workflows+event+driven" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="hyVQ7nW0iCk" href="https://www.youtube.com/results?search_query=llama+index+workflows+event+driven" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -80,7 +80,7 @@
       <span class="vg-duration">⏱ 35m · The LangGraph competitor</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=langsmith+tracing+evaluation+walkthrough" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="3wAON0Lqviw" href="https://www.youtube.com/results?search_query=langsmith+tracing+evaluation+walkthrough" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -89,7 +89,7 @@
       <span class="vg-duration">⏱ 40m · The observability story</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=tool+calling+function+calling+anthropic+openai" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="HpVnExE5cgI" href="https://www.youtube.com/results?search_query=tool+calling+function+calling+anthropic+openai" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -103,7 +103,7 @@
 ## 🍿 Optional
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=replit+langgraph+agent+production" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="ViykMqljjxU" href="https://www.youtube.com/results?search_query=replit+langgraph+agent+production" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -112,7 +112,7 @@
       <span class="vg-duration">⏱ 40m · Real-world architecture</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=langchain+langserve+production+deployment" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="EiNWQyo9DCk" href="https://www.youtube.com/results?search_query=langchain+langserve+production+deployment" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -121,7 +121,7 @@
       <span class="vg-duration">⏱ 30m · FastAPI for Runnables</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=langgraph+human+in+the+loop+interrupt" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="9BPCV5TYPmg" href="https://www.youtube.com/results?search_query=langgraph+human+in+the+loop+interrupt" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -130,7 +130,7 @@
       <span class="vg-duration">⏱ 35m · Interrupt + resume</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=llama+index+knowledge+graph+rag" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="bPoNCkjDmco" href="https://www.youtube.com/results?search_query=llama+index+knowledge+graph+rag" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

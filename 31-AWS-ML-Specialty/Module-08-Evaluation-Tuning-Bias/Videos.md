@@ -21,7 +21,7 @@
 ## ⭐ Essential (~75 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=ROC+AUC+precision+recall+F1+complete+intuition+StatQuest" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="Kdsp6soqA7o" href="https://www.youtube.com/results?search_query=ROC+AUC+precision+recall+F1+complete+intuition+StatQuest" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>📊</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -30,7 +30,7 @@
       <span class="vg-duration">⏱ 24 min · Read any metric in 30 s</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SageMaker+Automatic+Model+Tuning+Bayesian+Hyperband" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="P3F4sJGmJqo" href="https://www.youtube.com/results?search_query=SageMaker+Automatic+Model+Tuning+Bayesian+Hyperband" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎛️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -39,7 +39,7 @@
       <span class="vg-duration">⏱ 20 min · Strategy decision</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SageMaker+Clarify+SHAP+bias+demo" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="jvcPZmnXaxo" href="https://www.youtube.com/results?search_query=SageMaker+Clarify+SHAP+bias+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🔬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -48,7 +48,7 @@
       <span class="vg-duration">⏱ 18 min · Pre + post training</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=cross+validation+strategies+time+series+group+kfold" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="fSytzGwwBVw" href="https://www.youtube.com/results?search_query=cross+validation+strategies+time+series+group+kfold" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🔁</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -62,7 +62,7 @@
 ## 📚 Recommended (~50 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SHAP+values+explained+visual+intuition" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="d4PPMpdUCz8" href="https://www.youtube.com/results?search_query=SHAP+values+explained+visual+intuition" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>💡</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -71,7 +71,7 @@
       <span class="vg-duration">⏱ 18 min · Per-prediction attribution</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Bedrock+model+evaluation+job+demo" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="WYdcTChKeig" href="https://www.youtube.com/results?search_query=Bedrock+model+evaluation+job+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🤖</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -80,7 +80,7 @@
       <span class="vg-duration">⏱ 16 min · Automatic + human eval</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SageMaker+Model+Cards+responsible+ML+governance" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="lwCBXYZhJyc" href="https://www.youtube.com/results?search_query=SageMaker+Model+Cards+responsible+ML+governance" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🃏</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -94,7 +94,7 @@
 ## 🍿 Optional
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=fairness+ML+definitions+impossibility+result" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="qeMtVeRb1CY" href="https://www.youtube.com/results?search_query=fairness+ML+definitions+impossibility+result" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>⚖️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -103,7 +103,7 @@
       <span class="vg-duration">⏱ 24 min · Demographic parity vs equal opportunity</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=quantile+regression+prediction+intervals+forecasting" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="s203ScTy4xQ" href="https://www.youtube.com/results?search_query=quantile+regression+prediction+intervals+forecasting" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>📈</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -112,7 +112,7 @@
       <span class="vg-duration">⏱ 15 min · p10/p50/p90</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=LLM+evaluation+benchmarks+MMLU+HellaSwag+HumanEval" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="RTaZqGflrJ8" href="https://www.youtube.com/results?search_query=LLM+evaluation+benchmarks+MMLU+HellaSwag+HumanEval" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🧪</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

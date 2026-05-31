@@ -21,7 +21,7 @@
 ## ⭐ Essential
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=andrew+ng+agentic+workflows+deeplearning" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="sal78ACtGTc" href="https://www.youtube.com/results?search_query=andrew+ng+agentic+workflows+deeplearning" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -30,7 +30,7 @@
       <span class="vg-duration">⏱ 30m · The Andrew Ng framing</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=langgraph+multi+agent+supervisor+harrison" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="hvAPnpSfSGo" href="https://www.youtube.com/results?search_query=langgraph+multi+agent+supervisor+harrison" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -39,7 +39,7 @@
       <span class="vg-duration">⏱ 1h · From the LangChain CEO</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=crewai+full+tutorial+joao+moura" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="kBXYFaZ0EN0" href="https://www.youtube.com/results?search_query=crewai+full+tutorial+joao+moura" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -48,7 +48,7 @@
       <span class="vg-duration">⏱ 1h · Role + task + crew</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=autogen+chi+wang+microsoft+research" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="V2qZ_lgxTzg" href="https://www.youtube.com/results?search_query=autogen+chi+wang+microsoft+research" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -62,7 +62,7 @@
 ## 📚 Recommended
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=anthropic+computer+use+claude+demo" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="ODaHJzOyVCQ" href="https://www.youtube.com/results?search_query=anthropic+computer+use+claude+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -71,7 +71,7 @@
       <span class="vg-duration">⏱ 25m · GUI automation</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=openai+swarm+agents+sdk+walkthrough" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="3qhx5pT--bA" href="https://www.youtube.com/results?search_query=openai+swarm+agents+sdk+walkthrough" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -80,7 +80,7 @@
       <span class="vg-duration">⏱ 30m · Handoff-based pattern</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=react+agent+yao+reasoning+acting" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="Eug2clsLtFs" href="https://www.youtube.com/results?search_query=react+agent+yao+reasoning+acting" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -89,7 +89,7 @@
       <span class="vg-duration">⏱ 30m · Foundational</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=swe-bench+verified+anthropic+claude" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="zDmW5hJPsvQ" href="https://www.youtube.com/results?search_query=swe-bench+verified+anthropic+claude" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -103,7 +103,7 @@
 ## 🍿 Optional
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=autogpt+failure+post+mortem" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="X-AWdfSFCHQ" href="https://www.youtube.com/results?search_query=autogpt+failure+post+mortem" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -112,7 +112,7 @@
       <span class="vg-duration">⏱ 20m · The post-AutoGPT consensus</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=metagpt+software+team+agents" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="rly_kotIBFw" href="https://www.youtube.com/results?search_query=metagpt+software+team+agents" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -121,7 +121,7 @@
       <span class="vg-duration">⏱ 30m · Opinionated FT structure</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=reflexion+self+reflection+agent+paper" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="oYjkD4n4xUg" href="https://www.youtube.com/results?search_query=reflexion+self+reflection+agent+paper" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -130,7 +130,7 @@
       <span class="vg-duration">⏱ 25m · The reflection pattern</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=opendevin+swe+agent+ai+software+engineer" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="LtSWB8xYO0M" href="https://www.youtube.com/results?search_query=opendevin+swe+agent+ai+software+engineer" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

@@ -21,7 +21,7 @@
 ## ⭐ Essential (~80 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SageMaker+Pipelines+demo+end+to+end" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="Hvz2GGU3Z8g" href="https://www.youtube.com/results?search_query=SageMaker+Pipelines+demo+end+to+end" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🔁</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -30,7 +30,7 @@
       <span class="vg-duration">⏱ 28 min · Processing → Train → Eval → Conditional Deploy</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SageMaker+real+time+serverless+async+batch+inference+comparison" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="FRbcb7CtIOw" href="https://www.youtube.com/results?search_query=SageMaker+real+time+serverless+async+batch+inference+comparison" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🚀</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -39,7 +39,7 @@
       <span class="vg-duration">⏱ 18 min · Pick the right endpoint</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SageMaker+Model+Monitor+drift+detection+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="J9T0X9Jxl_w" href="https://www.youtube.com/results?search_query=SageMaker+Model+Monitor+drift+detection+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🔬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -48,7 +48,7 @@
       <span class="vg-duration">⏱ 20 min · Data / Model / Bias / Attribution</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SageMaker+Model+Registry+approval+workflow" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="dNAd2k_TKuQ" href="https://www.youtube.com/results?search_query=SageMaker+Model+Registry+approval+workflow" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>📦</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -62,7 +62,7 @@
 ## 📚 Recommended (~55 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SageMaker+Projects+templated+MLOps+CI+CD" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="EpYpDjW7d8w" href="https://www.youtube.com/results?search_query=SageMaker+Projects+templated+MLOps+CI+CD" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🏗️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -71,7 +71,7 @@
       <span class="vg-duration">⏱ 22 min</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Multi+Model+Endpoint+SageMaker+demo" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="2BfYIDH0qzg" href="https://www.youtube.com/results?search_query=Multi+Model+Endpoint+SageMaker+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>📚</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -80,7 +80,7 @@
       <span class="vg-duration">⏱ 17 min · Capital One pattern</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SageMaker+blue+green+canary+shadow+deployment" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="dr0E3JIqs_o" href="https://www.youtube.com/results?search_query=SageMaker+blue+green+canary+shadow+deployment" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎨</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -94,7 +94,7 @@
 ## 🍿 Optional
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Amazon+Music+MLOps+reinvent" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="LjE0qbiVk_Q" href="https://www.youtube.com/results?search_query=Amazon+Music+MLOps+reinvent" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎵</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -103,7 +103,7 @@
       <span class="vg-duration">⏱ 50 min</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SageMaker+Inference+Recommender+demo" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="9MtwOPcQXm0" href="https://www.youtube.com/results?search_query=SageMaker+Inference+Recommender+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎁</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -112,7 +112,7 @@
       <span class="vg-duration">⏱ 13 min</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+EventBridge+SageMaker+pipeline+retrain+automation" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="oBmIa9LhKn4" href="https://www.youtube.com/results?search_query=AWS+EventBridge+SageMaker+pipeline+retrain+automation" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>♻️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

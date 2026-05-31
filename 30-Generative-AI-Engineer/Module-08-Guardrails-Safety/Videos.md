@@ -21,7 +21,7 @@
 ## ⭐ Essential
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=simon+willison+prompt+injection+talk" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="0xfgcg-OAfc" href="https://www.youtube.com/results?search_query=simon+willison+prompt+injection+talk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -30,7 +30,7 @@
       <span class="vg-duration">⏱ 40m · The clearest explanation in existence</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=nemo+guardrails+nvidia+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="DZNyKsk7Lrk" href="https://www.youtube.com/results?search_query=nemo+guardrails+nvidia+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -39,7 +39,7 @@
       <span class="vg-duration">⏱ 1h · Colang flows + integrations</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=guardrails+ai+open+source+validators" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="bRdwLqXBzPo" href="https://www.youtube.com/results?search_query=guardrails+ai+open+source+validators" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -48,7 +48,7 @@
       <span class="vg-duration">⏱ 35m · Hub + custom validators</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=owasp+llm+top+10+walkthrough" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="r9wIH0Vyo48" href="https://www.youtube.com/results?search_query=owasp+llm+top+10+walkthrough" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -62,7 +62,7 @@
 ## 📚 Recommended
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=microsoft+presidio+pii+detection+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="YcWvO_zZHTM" href="https://www.youtube.com/results?search_query=microsoft+presidio+pii+detection+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -71,7 +71,7 @@
       <span class="vg-duration">⏱ 30m · Recognizers + anonymizers</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=llama+guard+meta+safety+classifier" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="RoLUO6mZsfM" href="https://www.youtube.com/results?search_query=llama+guard+meta+safety+classifier" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -80,7 +80,7 @@
       <span class="vg-duration">⏱ 25m · Open-weight guard model</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=anthropic+constitutional+ai+harmlessness" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="DwUlsB3-OmM" href="https://www.youtube.com/results?search_query=anthropic+constitutional+ai+harmlessness" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -89,7 +89,7 @@
       <span class="vg-duration">⏱ 35m · The training-time guardrail</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=many+shot+jailbreak+anthropic+paper" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="EUjcZsAI4d8" href="https://www.youtube.com/results?search_query=many+shot+jailbreak+anthropic+paper" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -103,7 +103,7 @@
 ## 🍿 Optional
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=air+canada+chatbot+lawsuit+lessons" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="J7gv7NLi-vU" href="https://www.youtube.com/results?search_query=air+canada+chatbot+lawsuit+lessons" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -112,7 +112,7 @@
       <span class="vg-duration">⏱ 15m · The case in detail</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=detoxify+open+source+toxic+content" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="hCmFE1XCk2g" href="https://www.youtube.com/results?search_query=detoxify+open+source+toxic+content" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -121,7 +121,7 @@
       <span class="vg-duration">⏱ 20m · Quick integration</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=universal+adversarial+suffix+llm+attack" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="QFLqLstYcsk" href="https://www.youtube.com/results?search_query=universal+adversarial+suffix+llm+attack" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -130,7 +130,7 @@
       <span class="vg-duration">⏱ 25m · Adversarial ML for LLMs</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=outlines+structured+output+llm+grammar" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="b-fgGuRwjOk" href="https://www.youtube.com/results?search_query=outlines+structured+output+llm+grammar" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

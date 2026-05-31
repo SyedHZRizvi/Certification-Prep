@@ -21,7 +21,7 @@
 ## ⭐ Essential (~85 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Amazon+Bedrock+overview+walkthrough+2024" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="_vdK5PgcNvc" href="https://www.youtube.com/results?search_query=Amazon+Bedrock+overview+walkthrough+2024" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🌟</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -30,7 +30,7 @@
       <span class="vg-duration">⏱ 22 min · Models, APIs, throughput modes</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Bedrock+Knowledge+Bases+RAG+walkthrough+demo" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="NU3RGTPUMyI" href="https://www.youtube.com/results?search_query=Bedrock+Knowledge+Bases+RAG+walkthrough+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>📚</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -39,7 +39,7 @@
       <span class="vg-duration">⏱ 28 min · End-to-end RAG pipeline</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Bedrock+Agents+tool+use+action+groups+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="UcehCSSOMQA" href="https://www.youtube.com/results?search_query=Bedrock+Agents+tool+use+action+groups+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🛠️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -48,7 +48,7 @@
       <span class="vg-duration">⏱ 18 min · Action groups + KB integration</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Bedrock+Guardrails+content+filter+PII+demo" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="6_jRXLRKPHA" href="https://www.youtube.com/results?search_query=Bedrock+Guardrails+content+filter+PII+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🛡️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -62,7 +62,7 @@
 ## 📚 Recommended (~55 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Amazon+Q+Business+walkthrough+enterprise+chat" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="op62mHU_CTk" href="https://www.youtube.com/results?search_query=Amazon+Q+Business+walkthrough+enterprise+chat" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>💼</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -71,7 +71,7 @@
       <span class="vg-duration">⏱ 20 min · Connector ecosystem</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Amazon+Q+Developer+IDE+demo+code+assist" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="QpcAYxsViwY" href="https://www.youtube.com/results?search_query=Amazon+Q+Developer+IDE+demo+code+assist" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>👨‍💻</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -80,7 +80,7 @@
       <span class="vg-duration">⏱ 16 min · Code gen + transformation</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SageMaker+JumpStart+foundation+models+demo" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="dyhKBax4Bxw" href="https://www.youtube.com/results?search_query=SageMaker+JumpStart+foundation+models+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🚀</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -94,7 +94,7 @@
 ## 🍿 Optional
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+Claude+prompt+engineering+best+practices" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="T9aRN5JkmL8" href="https://www.youtube.com/results?search_query=Anthropic+Claude+prompt+engineering+best+practices" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🧠</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -103,7 +103,7 @@
       <span class="vg-duration">⏱ 28 min · XML tags, role prompts</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Bedrock+fine+tuning+vs+RAG+when+to+use+each" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="00Q0G84kq3M" href="https://www.youtube.com/results?search_query=Bedrock+fine+tuning+vs+RAG+when+to+use+each" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>⚖️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -112,7 +112,7 @@
       <span class="vg-duration">⏱ 22 min</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Bedrock+batch+inference+provisioned+throughput+cost" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="P2fpid5AeNc" href="https://www.youtube.com/results?search_query=Bedrock+batch+inference+provisioned+throughput+cost" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>💸</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

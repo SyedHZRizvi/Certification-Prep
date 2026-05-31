@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~65 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+tool+use+tutorial+Claude" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="2HsmNeT8TCg" href="https://www.youtube.com/results?search_query=Anthropic+tool+use+tutorial+Claude" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 12 min · Concurrency semantics</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Claude+computer+use+demo+screenshot+click" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="ODaHJzOyVCQ" href="https://www.youtube.com/results?search_query=Claude+computer+use+demo+screenshot+click" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -93,7 +93,7 @@
       <span class="vg-duration">⏱ 20 min · Enterprise tool design</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+tool+use+vs+OpenAI+function+calling" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="HpVnExE5cgI" href="https://www.youtube.com/results?search_query=Anthropic+tool+use+vs+OpenAI+function+calling" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -125,7 +125,7 @@
       <span class="vg-duration">⏱ 15 min · enum, pattern, format</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Replit+Agent+architecture+claude+tools" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="fo16YPmuX9M" href="https://www.youtube.com/results?search_query=Replit+Agent+architecture+claude+tools" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -134,7 +134,7 @@
       <span class="vg-duration">⏱ 30 min · Production agent</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+tool+use+prompt+injection+defense+tools" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="jrHRe9lSqqA" href="https://www.youtube.com/results?search_query=Anthropic+tool+use+prompt+injection+defense+tools" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
