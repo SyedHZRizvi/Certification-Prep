@@ -5,7 +5,7 @@ title: Study Plan
 
 # 📅 Study Plan
 
-> Three guides that structure your prep from kickoff to exam day — applicable to any of the 31 certifications and tracks on this site. Read them in order, or jump to whatever you need most right now.
+> Three guides that structure your prep from kickoff to exam day — applicable to any of the 32 certifications and tracks on this site. Read them in order, or jump to whatever you need most right now.
 
 **Study Plan** · Hub
 *Last updated: 2026-05*
@@ -16,7 +16,7 @@ title: Study Plan
 
 ### 🚀 [Quick Start Guide](./Quick-Start-Guide/)
 
-**Read first.** A 10-minute intro that helps you decide which of the 31 paths to take, sets up your tools (Anki, timer, notebook), and gets you doing your first module in under an hour.
+**Read first.** A 10-minute intro that helps you decide which of the 32 paths to take, sets up your tools (Anki, timer, notebook), and gets you doing your first module in under an hour.
 
 **Best for:** anyone just starting, or anyone who's been stuck in "research mode" for too long.
 
@@ -61,7 +61,7 @@ What's covered:
 
 ## 🎓 Pick Your Track
 
-Below are the 31 courses, grouped by category. Pick the one you're preparing for and open its README — that's where the cert-specific schedule, modules, and resources live.
+Below are the 32 courses, grouped by category. Pick the one you're preparing for and open its README — that's where the cert-specific schedule, modules, and resources live.
 
 ### Project Management
 - 🏃 [**Scrum Master (PSM I)**](../01-Scrum-Master/)
@@ -85,6 +85,7 @@ Below are the 31 courses, grouped by category. Pick the one you're preparing for
 - 🧬 [**Claude Architect** (Cert Hub original)](../28-Claude-Architect/)
 - ✍️ [**Prompt Engineering Specialist** (Cert Hub original)](../29-Prompt-Engineering-Specialist/)
 - ⚡ [**Generative AI Engineer** (Cert Hub original)](../30-Generative-AI-Engineer/)
+- 💎 [**Google AI Pro** (Generative AI Leader + PMLE)](../32-Google-AI-Pro/)
 - 🔬 [**AWS ML Specialty (MLS-C01)**](../31-AWS-ML-Specialty/)
 - 🤖 [**AWS AI Practitioner (AIF-C01)**](../07-AWS-AI-Practitioner/)
 - 🧠 [**Azure AI Engineer (AI-102)**](../08-Azure-AI-Engineer/)
@@ -113,4 +114,4 @@ Below are the 31 courses, grouped by category. Pick the one you're preparing for
 - 🚀 **Read the [Quick Start Guide](./Quick-Start-Guide/)** if you haven't picked a track yet
 - 📚 **Browse the [Certifications Catalog](../Resources/International-Certifications/)** to compare fees, formats, and renewal rules
 - 📖 **Open the [Books & Links](../Resources/Books-and-Links/)** page for free + paid resources per track
-- 🏠 [**Course Home**](../) — all 31 tracks at a glance
+- 🏠 [**Course Home**](../) — all 32 tracks at a glance

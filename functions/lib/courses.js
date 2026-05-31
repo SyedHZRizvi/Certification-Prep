@@ -1,5 +1,5 @@
 /**
- * Canonical list of all 31 courses on The Cert Hub.
+ * Canonical list of all 32 courses on The Cert Hub.
  *
  * Must stay in sync with EXPECTED_COURSES in scripts/verify-baseline.py.
  *
@@ -41,6 +41,7 @@ export const COURSES = [
   { id: "29-Prompt-Engineering-Specialist",         slug: "Prompt Engineering Specialist",  icon: "✍️", category: "AI & Generative AI" },
   { id: "30-Generative-AI-Engineer",                slug: "Generative AI Engineer",         icon: "⚡", category: "AI & Generative AI" },
   { id: "31-AWS-ML-Specialty",                      slug: "AWS ML Specialty (MLS-C01)",     icon: "🔬", category: "AI & Generative AI" },
+  { id: "32-Google-AI-Pro",                         slug: "Google AI Pro",                  icon: "💎", category: "AI & Generative AI" },
 ];
 
 export const COURSE_IDS = COURSES.map(c => c.id);

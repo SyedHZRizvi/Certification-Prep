@@ -228,19 +228,19 @@ This tag is the canonical *historical* snapshot of the site as of 2026-05-20. It
 - Freshness mechanism (`/version.txt` + `assets/freshness.js`) wired so future deploys auto-bust stale browser caches
 - The `scripts/verify-baseline.py` script passing (15 invariants)
 
-### Current state (post-AI-track expansion, 2026-05-27)
+### Current state (post-Google-AI-Pro addition, 2026-05-27)
 
 The live site has now grown to:
 
-- **31** course directories (added AI & Generative AI track: Claude Architect, Prompt Engineering Specialist, Generative AI Engineer, AWS ML Specialty)
-- **276** modules
-- **93** practice exams (62 partials + 31 full-length mocks)
-- **1,280+** markdown files inside the course directories
-- **2,500+** YouTube search URLs (still 0 direct YouTube URLs anywhere)
-- **12,500+** practice questions across all quizzes + flashcards + mock exams
-- **1,000+** total study hours
+- **32** course directories (added Google AI Pro to the AI & Generative AI track)
+- **286** modules
+- **96** practice exams (64 partials + 32 full-length mocks)
+- **1,330+** markdown files inside the course directories
+- **2,580+** YouTube search URLs (still 0 direct YouTube URLs anywhere)
+- **13,000+** practice questions across all quizzes + flashcards + mock exams
+- **1,050+** total study hours
 
-The **AI & Generative AI** category is its own homepage section containing 6 courses: AIF-C01 + AI-102 (moved from "IT, Cloud & Systems Administration") + 4 Cert-Hub-originals (Claude Architect, Prompt Engineering Specialist, Generative AI Engineer, AWS ML Specialty).
+The **AI & Generative AI** category is its own homepage section containing 7 courses: AIF-C01 + AI-102 (moved from "IT, Cloud & Systems Administration") + 5 specialty courses (Claude Architect, Prompt Engineering Specialist, Generative AI Engineer, AWS ML Specialty MLS-C01, **Google AI Pro** — aligned with Google Cloud Generative AI Leader + Professional ML Engineer credentials).
 
 `scripts/verify-baseline.py` enforces the current totals (all 15 invariants still passing).
 

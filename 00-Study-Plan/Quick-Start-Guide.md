@@ -1,6 +1,6 @@
 # 🚀 Quick Start Guide
 
-> **Goal of this page:** Get you *doing* something within 10 minutes — no matter which of the 31 certifications and tracks you're chasing.
+> **Goal of this page:** Get you *doing* something within 10 minutes — no matter which of the 32 certifications and tracks you're chasing.
 >
 > 🏆 **Looking for the certification you want to chase?** See the [**International Certifications Catalog**](../Resources/International-Certifications/) for every certification this site maps to — with issuing body, fee, exam format, registration procedure, and renewal rules.
 
@@ -11,7 +11,7 @@
 
 ## 🎯 Pick Your Starting Course (2 minutes)
 
-Pick ONE. The detailed week-by-week plan in [12-Week Study Plan](./12-Week-Study-Plan.md) is written for the Scrum→PMP path, but the *principles* (spaced repetition, interleaving, mocks) work for every track. All 31 options are listed below — grouped by category, with realistic time-to-cert estimates.
+Pick ONE. The detailed week-by-week plan in [12-Week Study Plan](./12-Week-Study-Plan.md) is written for the Scrum→PMP path, but the *principles* (spaced repetition, interleaving, mocks) work for every track. All 32 options are listed below — grouped by category, with realistic time-to-cert estimates.
 
 ### Project & Agile
 - **Path A — "I want Scrum Master ASAP"** → [Scrum Master Track](../01-Scrum-Master/README.md) · Plan: ~4 weeks.
@@ -31,6 +31,7 @@ Pick ONE. The detailed week-by-week plan in [12-Week Study Plan](./12-Week-Study
 - **Path I2 — "Vendor-neutral prompt engineering across Claude/GPT/Gemini/Llama"** → [Prompt Engineering Specialist](../29-Prompt-Engineering-Specialist/README.md) · Plan: ~6-8 weeks. Cert Hub original. The most universally-applicable AI skill of 2026.
 - **Path I3 — "Full-stack GenAI Engineer (RAG, agents, fine-tuning, MLOps)"** → [Generative AI Engineer](../30-Generative-AI-Engineer/README.md) · Plan: ~10-14 weeks. Cert Hub original. Highest-paying AI role of 2026 ($170K-$300K). Pairs with optional Databricks GenAI Associate ($200) or NVIDIA Certified Associate ($135).
 - **Path I4 — "AWS ML Specialty (the official MLS-C01)"** → [AWS ML Specialty](../31-AWS-ML-Specialty/README.md) · Plan: ~12-16 weeks. Heavy SageMaker + Bedrock + MLOps. Required-equivalent for Senior ML Engineer at AWS-shop enterprises ($165K-$220K).
+- **Path I5 — "Google AI Pro (Gemini, Vertex AI, Generative AI Leader + PMLE)"** → [Google AI Pro](../32-Google-AI-Pro/README.md) · Plan: ~12-16 weeks. Covers Google Cloud Generative AI Leader (entry, $99) + Professional Machine Learning Engineer (flagship, $200). Required-equivalent for Senior ML Engineer at Google-Cloud-shop enterprises ($170K-$240K).
 
 ### Security
 - **Path J — "Cyber career launch"** → [CompTIA Security+ (SY0-701)](../09-CompTIA-Security-Plus/README.md) · Plan: ~10-12 weeks.

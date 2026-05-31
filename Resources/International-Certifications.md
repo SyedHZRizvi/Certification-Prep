@@ -5,7 +5,7 @@ title: International Certifications Catalog
 
 # 🏆 International Certifications Catalog
 
-> Every international cert that the 31 courses on this site map to — with issuing body, exam format, fee in USD, full registration procedure, designation earned, market standing, and renewal rules.
+> Every international cert that the 32 courses on this site map to — with issuing body, exam format, fee in USD, full registration procedure, designation earned, market standing, and renewal rules.
 
 **Resources** · Certifications Catalog
 *Last updated: 2026-05*
@@ -20,7 +20,7 @@ An "industry certification" is a credential issued by a recognized standards bod
 2. **Real proctoring or honor-system with a recognized brand.** Pearson VUE, Prometric, OnVUE, vendor portals (HubSpot, Google Skillshop, Meta Blueprint). The exam isn't just a marketing quiz.
 3. **Documented market standing.** You can find recent salary surveys (Robert Half, PMI Earning Power, Global Knowledge) listing the cert. You can find recruiters in your city searching for it on LinkedIn.
 
-**How to use this page:** Every section starts with one of our 31 courses. After you complete that course, you're ready to sit for the certifications listed under it — with the issuing body, exam format, fee in USD, full registration procedure, the benefits the credential unlocks, the designation you carry after passing, and the renewal rules.
+**How to use this page:** Every section starts with one of our 32 courses. After you complete that course, you're ready to sit for the certifications listed under it — with the issuing body, exam format, fee in USD, full registration procedure, the benefits the credential unlocks, the designation you carry after passing, and the renewal rules.
 
 Pick the course. Finish it. Pay for the exam. Walk in confident.
 
@@ -64,6 +64,7 @@ Courses appear in the same canonical order used on the homepage and sidebar: **P
 | Prompt Engineering Specialist | **Cert Hub Certificate of Completion** (vendor-neutral) | included | [Start prep →](../29-Prompt-Engineering-Specialist/) |
 | Generative AI Engineer | **Cert Hub Certificate of Completion** + (optional) Databricks GenAI Engineer Associate | included / $200 | [Start prep →](../30-Generative-AI-Engineer/) |
 | AWS ML Specialty | **AWS Certified Machine Learning — Specialty (MLS-C01)** (AWS) | $300 | [Start prep →](../31-AWS-ML-Specialty/) |
+| Google AI Pro | **Google Cloud Generative AI Leader** + **Professional Machine Learning Engineer (PMLE)** (Google Cloud) | $99 + $200 | [Start prep →](../32-Google-AI-Pro/) |
 | AWS AI Practitioner | **AIF-C01** (AWS) | $100 | [Start prep →](../07-AWS-AI-Practitioner/) |
 | Azure AI Engineer | **AI-102** (Microsoft) | $165 | [Start prep →](../08-Azure-AI-Engineer/) |
 
@@ -554,6 +555,46 @@ After completing this course, you are ready to sit for:
 
 ---
 
+## 📘 Google AI Pro
+
+[Open the course →](../32-Google-AI-Pro/README.md)
+
+After completing this course, you are ready to sit for **two** Google Cloud credentials — the entry-tier *Generative AI Leader* and the flagship *Professional Machine Learning Engineer (PMLE)*. The Google AI Pro curriculum is the only Cert Hub course mapped to a real Google certification ladder.
+
+### ➡️ Google Cloud Generative AI Leader
+
+**Designation earned after passing:** *Google Cloud Certified — Generative AI Leader*
+
+- **Issuing body:** **Google Cloud** — released 2024 as Google's first vendor-neutral-friendly GenAI credential, aimed at business + technical leaders.
+- **Market standing:** Tier-1 emerging credential. Required or preferred for Solutions Consultant, AI Product Manager, and Cloud Account Executive roles at Google-Cloud-partner enterprises. The fastest-growing AI cert in 2025-2026 outside of AWS.
+- **Benefits of passing:** Average compensation for engineers shipping Gemini-powered products in 2026: $150K-$230K. Direct path to PMLE. Strong differentiator for any role that touches Vertex AI, Gemini API, or Google Cloud AI infrastructure.
+- **Exam format:** 50–60 multiple-choice + multiple-response questions · 90 minutes · scaled pass · proctored.
+- **Fee:** **$99 USD.**
+- **Eligibility:** None.
+- **How to register / sit for the exam:**
+  1. Create a Google Cloud Skills Boost account at [cloud.google.com/learn/certification](https://cloud.google.com/learn/certification)
+  2. Schedule via Kryterion Webassessor — choose test center or online proctored
+  3. Pay the $99 fee
+  4. Take the 90-minute exam
+  5. Digital badge issued via Credly within 5 business days
+- **Renewal:** Every 2 years.
+
+### ➡️ Google Cloud Professional Machine Learning Engineer (PMLE)
+
+**Designation earned after passing:** *Google Cloud Certified — Professional Machine Learning Engineer*
+
+- **Issuing body:** Google Cloud. The flagship Professional-tier ML credential — same prestige tier as Google's Professional Cloud Architect and Professional Cloud Security Engineer.
+- **Market standing:** Tier-1 vendor specialty. Cited in 60%+ of Senior ML Engineer postings at Google-Cloud-shop enterprises (Spotify, Snap, Mercedes-Benz, Wayfair, Mercado Libre, Verily). Considered alongside AWS-MLS as the two most-respected vendor ML credentials globally.
+- **Benefits of passing:** Average PMLE-holder salary in the US is **$170K-$240K** (Global Knowledge 2024). Required or preferred for Senior ML Engineer (Google Cloud), Vertex AI Specialist, AI Architect at Google Premier Partner consultancies. Direct path to Google Cloud Fellow / Distinguished Engineer career tracks.
+- **Exam format:** 50–60 multiple-choice + multiple-response questions · 2 hours · scaled pass · proctored. Heavy Vertex AI focus with growing Gemini + Bedrock-comparison content.
+- **Fee:** **$200 USD.**
+- **Eligibility:** None (Google recommends 3+ years of industry ML experience, 1+ year designing & managing solutions using Google Cloud — this course substitutes).
+- **How to register:** Same flow as Generative AI Leader via cloud.google.com/learn/certification → Kryterion Webassessor scheduling.
+- **Renewal:** Every 2 years · pass the exam again OR pass a higher-tier (Google has no current Distinguished tier above Professional).
+- **Recommended after:** Generative AI Leader (Google Cloud) OR AWS AI Practitioner (Course 07) OR Generative AI Engineer (Course 30).
+
+---
+
 ## 📘 AWS AI Practitioner
 
 [Open the course →](../07-AWS-AI-Practitioner/README.md)
@@ -927,6 +968,8 @@ After completing this course, you are ready to sit for:
 | **Prompt Engineering Specialist (Cert Hub original)** | Claude Architect · Generative AI Engineer · AIF-C01 |
 | **Generative AI Engineer (Cert Hub original)** | AWS-MLS · Databricks GenAI Associate · NVIDIA GenAI cert · AI-102 |
 | **AWS ML Specialty (MLS-C01)** | AWS SAP-C02 · DOP-C02 · Generative AI Engineer |
+| **Google Cloud Generative AI Leader** | Google Cloud PMLE · AWS-MLS · Generative AI Engineer |
+| **Google Cloud PMLE** | Google Cloud Architect Professional · TensorFlow Developer · Generative AI Engineer |
 | Security+ SY0-701 | CySA+ · CASP+ · CISSP (5 yrs experience) · OSCP |
 | AZ-800/801 (Windows Server Hybrid) | AZ-305 · AZ-500 · AZ-700 |
 | MD-102 (Endpoint Admin) | SC-300 · SC-100 · MS-100/101 (legacy) |
@@ -967,6 +1010,7 @@ The most common cert-buying mistakes:
 | CompTIA Network+ | 3 years · 30 CEUs | OR higher exam |
 | CompTIA Linux+ / Server+ / Security+ | 3 years · 50 CEUs | OR higher exam |
 | AWS (all incl. MLS-C01) | 3 years · Re-exam or higher tier | |
+| Google Cloud (Generative AI Leader, PMLE, Pro Architect) | 2 years · Re-exam | |
 | Microsoft (Associate+) | 1 year · Free renewal | Best renewal model in industry |
 | **Microsoft Fundamentals** | **Never expires** | |
 | **Cert Hub originals (Claude / Prompt / GenAI)** | **Lifetime** | Curriculum updates emailed |

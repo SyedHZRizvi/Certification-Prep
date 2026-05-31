@@ -1,13 +1,13 @@
-# 🎓 The Cert Hub — 31 Certification Study Courses
+# 🎓 The Cert Hub — 32 Certification Study Courses
 
-![Certifications: 31](https://img.shields.io/badge/Certifications-31-blueviolet.svg)
-![Modules: 276](https://img.shields.io/badge/Modules-276-blue.svg)
-![Mock Exams: 93](https://img.shields.io/badge/Mock_Exams-93-orange.svg)
-![Questions: 12500+](https://img.shields.io/badge/Practice_Questions-12%2C500%2B-green.svg)
+![Certifications: 32](https://img.shields.io/badge/Certifications-32-blueviolet.svg)
+![Modules: 286](https://img.shields.io/badge/Modules-286-blue.svg)
+![Mock Exams: 96](https://img.shields.io/badge/Mock_Exams-96-orange.svg)
+![Questions: 13000+](https://img.shields.io/badge/Practice_Questions-13%2C000%2B-green.svg)
 
 ## 🌐 [Visit the live course site →](https://cert-hub.pages.dev/)
 
-This repository contains the raw markdown for **31 story-driven self-study courses** across project management, IT systems administration, cloud, AI/GenAI, cybersecurity, supply chain, AI-based digital marketing, and Bitcoin/e-commerce. The polished site is at **[cert-hub.pages.dev](https://cert-hub.pages.dev/)** — same content, prettier UI, auth-gated.
+This repository contains the raw markdown for **32 story-driven self-study courses** across project management, IT systems administration, cloud, AI/GenAI, cybersecurity, supply chain, AI-based digital marketing, and Bitcoin/e-commerce. The polished site is at **[cert-hub.pages.dev](https://cert-hub.pages.dev/)** — same content, prettier UI, auth-gated.
 
 ---
 
@@ -29,7 +29,7 @@ Each track is a **guided journey** built on three pillars:
 
 ---
 
-## 🗺️ All 31 Tracks
+## 🗺️ All 32 Tracks
 
 ### 🧭 Project Management
 
@@ -83,7 +83,7 @@ Each track is a **guided journey** built on three pillars:
 | 26 | [`19-Bitcoin-Cryptocurrency/`](./19-Bitcoin-Cryptocurrency/README.md) | Bitcoin & Cryptocurrency (CBP, CBSA, CCAS, UNIC MSc) | 10 | 80 Q / 90 min |
 | 27 | [`20-E-Commerce/`](./20-E-Commerce/README.md) | E-Commerce (Google D-M, Adobe Commerce, Shopify) | 10 | 80 Q / 90 min |
 
-**Totals:** 31 certifications · 276 modules · 93 full-length mock exams · 12,500+ practice questions · ~1,000 hours of focused content.
+**Totals:** 32 certifications · 286 modules · 96 full-length mock exams · 13,000+ practice questions · ~1,050 hours of focused content.
 
 ---
 
