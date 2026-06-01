@@ -24,14 +24,18 @@ Pick ONE. The detailed week-by-week plan in [12-Week Study Plan](./12-Week-Study
 - **Path F — "I'm new to Azure"** → [Azure Fundamentals (AZ-900)](../05-Azure-Fundamentals/README.md) · Plan: ~3-5 weeks.
 - **Path G — "I'm an Azure admin"** → [Azure Administrator (AZ-104)](../06-Azure-Administrator/README.md) · Plan: ~10-12 weeks.
 
-### Generative & Agentic AI
-- **Path H — "AI on AWS (vendor foundation)"** → [AWS AI Practitioner (AIF-C01)](../07-AWS-AI-Practitioner/README.md) · Plan: ~4-6 weeks.
-- **Path I — "AI on Azure (vendor specialist)"** → [Azure AI Engineer (AI-102)](../08-Azure-AI-Engineer/README.md) · Plan: ~8-10 weeks.
-- **Path I1 — "Master Claude end-to-end (Anthropic's API, MCP, agents)"** → [Claude Architect](../28-Claude-Architect/README.md) · Plan: ~8-10 weeks. Cert Hub original. Best for engineers shipping Claude-powered products at Cursor / Notion / Replit-style AI-native companies.
-- **Path I2 — "Vendor-neutral prompt engineering across Claude/GPT/Gemini/Llama"** → [Prompt Engineering Specialist](../29-Prompt-Engineering-Specialist/README.md) · Plan: ~6-8 weeks. Cert Hub original. The most universally-applicable AI skill of 2026.
-- **Path I3 — "Full-stack GenAI Engineer (RAG, agents, fine-tuning, MLOps)"** → [Generative AI Engineer](../30-Generative-AI-Engineer/README.md) · Plan: ~10-14 weeks. Cert Hub original. Highest-paying AI role of 2026 ($170K-$300K). Pairs with optional Databricks GenAI Associate ($200) or NVIDIA Certified Associate ($135).
-- **Path I4 — "AWS ML Specialty (the official MLS-C01)"** → [AWS ML Specialty](../31-AWS-ML-Specialty/README.md) · Plan: ~12-16 weeks. Heavy SageMaker + Bedrock + MLOps. Required-equivalent for Senior ML Engineer at AWS-shop enterprises ($165K-$220K).
-- **Path I5 — "Google AI Pro (Gemini, Vertex AI, Generative AI Leader + PMLE)"** → [Google AI Pro](../32-Google-AI-Pro/README.md) · Plan: ~12-16 weeks. Covers Google Cloud Generative AI Leader (entry, $99) + Professional Machine Learning Engineer (flagship, $200). Required-equivalent for Senior ML Engineer at Google-Cloud-shop enterprises ($170K-$240K).
+### Generative & Agentic AI (foundation → advanced)
+
+**Foundation tier — start here if you're new to AI:**
+- **Path H — "AI on AWS, entry-level"** → [AWS AI Practitioner (AIF-C01)](../07-AWS-AI-Practitioner/README.md) · Plan: ~4-6 weeks · $100. AWS's first GenAI credential, no prereqs.
+- **Path I — "AI on Azure, associate-level"** → [Azure AI Engineer (AI-102)](../08-Azure-AI-Engineer/README.md) · Plan: ~8-10 weeks · $165. Azure OpenAI + Cognitive Services. No eligibility requirement.
+- **Path I1 — "Vendor-neutral prompt engineering across Claude/GPT/Gemini/Llama"** → [Prompt Engineering Specialist](../29-Prompt-Engineering-Specialist/README.md) · Plan: ~6-8 weeks. Cert Hub original. The most universally-applicable AI skill of 2026, no prereqs.
+- **Path I2 — "Google AI Pro (Gemini, Vertex AI, Generative AI Leader + PMLE)"** → [Google AI Pro](../32-Google-AI-Pro/README.md) · Plan: ~12-16 weeks. Covers Google Cloud Generative AI Leader (entry, $99) → Professional Machine Learning Engineer (flagship, $200). Required-equivalent for Senior ML Engineer at Google-Cloud-shop enterprises ($170K-$240K).
+
+**Intermediate → advanced tier — start here once you've shipped at least one LLM-powered feature:**
+- **Path I3 — "Master Claude end-to-end (Anthropic's API, MCP, agents)"** → [Claude Architect](../28-Claude-Architect/README.md) · Plan: ~8-10 weeks. Cert Hub original. Best for engineers shipping Claude-powered products at Cursor / Notion / Replit-style AI-native companies.
+- **Path I4 — "Full-stack GenAI Engineer (RAG, agents, fine-tuning, MLOps)"** → [Generative AI Engineer](../30-Generative-AI-Engineer/README.md) · Plan: ~10-14 weeks. Cert Hub original. Highest-paying AI role of 2026 ($170K-$300K). Pairs with optional Databricks GenAI Associate ($200) or NVIDIA Certified Associate ($135).
+- **Path I5 — "AWS ML Specialty (the official MLS-C01)"** → [AWS ML Specialty](../31-AWS-ML-Specialty/README.md) · Plan: ~12-16 weeks · $300. Heavy SageMaker + Bedrock + MLOps. Specialty tier — requires 2+ years ML experience. Required-equivalent for Senior ML Engineer at AWS-shop enterprises ($165K-$220K).
 
 ### Security
 - **Path J — "Cyber career launch"** → [CompTIA Security+ (SY0-701)](../09-CompTIA-Security-Plus/README.md) · Plan: ~10-12 weeks.
@@ -45,11 +49,15 @@ Pick ONE. The detailed week-by-week plan in [12-Week Study Plan](./12-Week-Study
 - **Path J6 — "Microsoft Intune / endpoint manager"** → [Microsoft Endpoint Administrator (MD-102)](../26-Microsoft-Endpoint-Admin/README.md) · Plan: ~8-10 weeks. Modern endpoint management — Intune, Autopilot, compliance, Defender for Endpoint.
 - **Path J7 — "Microsoft Identity & Access engineer"** → [Microsoft Identity & Access Admin (SC-300)](../27-Microsoft-Identity-Access-Admin/README.md) · Plan: ~10-12 weeks. Entra ID, conditional access, identity governance, privileged identity management.
 
-### Supply Chain & Procurement
-- **Path K — "Broad supply chain credential"** → [ASCM CSCP](../10-ASCM-CSCP/README.md) · Plan: ~12-16 weeks.
-- **Path L — "Planning & inventory deep dive"** → [ASCM CPIM](../11-ASCM-CPIM/README.md) · Plan: ~12-16 weeks (Part 1 + Part 2).
-- **Path M — "Logistics & distribution focus"** → [ASCM CLTD](../12-ASCM-CLTD/README.md) · Plan: ~10-14 weeks.
-- **Path N — "Procurement & sourcing"** → [ISM CPSM](../13-ISM-CPSM/README.md) · Plan: ~12-16 weeks (3 modules).
+### Supply Chain & Procurement (foundation → advanced)
+
+**Foundation tier — no eligibility requirements:**
+- **Path K — "Planning & inventory deep dive"** → [ASCM CPIM](../11-ASCM-CPIM/README.md) · Plan: ~12-16 weeks (Part 1 + Part 2). Open to anyone.
+- **Path L — "Logistics & distribution focus"** → [ASCM CLTD](../12-ASCM-CLTD/README.md) · Plan: ~10-14 weeks. Open to anyone.
+
+**Senior tier — degree + experience required:**
+- **Path M — "Broad supply chain credential"** → [ASCM CSCP](../10-ASCM-CSCP/README.md) · Plan: ~12-16 weeks. Eligibility: Bachelor's + 2 years SCM experience OR 5 years SCM experience.
+- **Path N — "Procurement & sourcing"** → [ISM CPSM](../13-ISM-CPSM/README.md) · Plan: ~12-16 weeks (3 modules). Eligibility: Bachelor's + 3 years SCM experience OR 5 years experience.
 
 ### AI-Based Digital Marketing
 A 5-course ladder built to the Cornell/Harvard/Stanford bar — fundamentals → execution → strategy → entrepreneurship → portfolio. Each course aligns with at least one real industry credential (HubSpot Inbound, Google Ads, Meta Blueprint, etc.).

@@ -646,63 +646,6 @@ tracks:
       - { num: 11, title: "Final Mock Exam (50q / 100min)", slug: Practice-Exams/Final-Mock-Exam, single_file: true }
       - { num: 12, title: "Master Flashcards", slug: Flashcards, single_file: true }
 
-  - id: cscp
-    title: ASCM CSCP
-    subtitle: Certified Supply Chain Professional
-    color: teal
-    color_from: "#0d9488"
-    color_to: "#115e59"
-    icon: "🔗"
-    base: "/10-ASCM-CSCP/"
-    modules:
-      - num: 1
-        title: SCM Foundations & Strategy
-        slug: Module-01-SCM-Foundations-Strategy
-      - num: 2
-        title: Supply Chain Design
-        slug: Module-02-Supply-Chain-Design
-      - num: 3
-        title: Demand & Forecasting
-        slug: Module-03-Demand-Forecasting
-      - num: 4
-        title: Supply Planning & S&OP
-        slug: Module-04-Supply-Planning-SOP
-      - num: 5
-        title: Inventory & Capacity
-        slug: Module-05-Inventory-Capacity
-      - num: 6
-        title: Sourcing & Supplier Management
-        slug: Module-06-Sourcing-Supplier-Management
-      - num: 7
-        title: Logistics, Distribution & Warehousing
-        slug: Module-07-Logistics-Distribution-Warehousing
-      - num: 8
-        title: International Trade & Customs
-        slug: Module-08-International-Trade-Customs
-      - num: 9
-        title: Sustainability, Risk & CSR
-        slug: Module-09-Sustainability-Risk-CSR
-      - num: 10
-        title: Continuous Improvement
-        slug: Module-10-Continuous-Improvement
-    extras:
-      - num: 11
-        title: Practice Exam 1
-        slug: Practice-Exams/Practice-Exam-1
-        single_file: true
-      - num: 12
-        title: Practice Exam 2
-        slug: Practice-Exams/Practice-Exam-2
-        single_file: true
-      - num: 13
-        title: Final Mock Exam (150q / 210min)
-        slug: Practice-Exams/Final-Mock-Exam
-        single_file: true
-      - num: 14
-        title: Master Flashcards
-        slug: Flashcards
-        single_file: true
-
   - id: cpim
     title: ASCM CPIM
     subtitle: Planning & Inventory Management
@@ -801,6 +744,63 @@ tracks:
         slug: Practice-Exams/Final-Mock-Exam
         single_file: true
       - num: 12
+        title: Master Flashcards
+        slug: Flashcards
+        single_file: true
+
+  - id: cscp
+    title: ASCM CSCP
+    subtitle: Certified Supply Chain Professional
+    color: teal
+    color_from: "#0d9488"
+    color_to: "#115e59"
+    icon: "🔗"
+    base: "/10-ASCM-CSCP/"
+    modules:
+      - num: 1
+        title: SCM Foundations & Strategy
+        slug: Module-01-SCM-Foundations-Strategy
+      - num: 2
+        title: Supply Chain Design
+        slug: Module-02-Supply-Chain-Design
+      - num: 3
+        title: Demand & Forecasting
+        slug: Module-03-Demand-Forecasting
+      - num: 4
+        title: Supply Planning & S&OP
+        slug: Module-04-Supply-Planning-SOP
+      - num: 5
+        title: Inventory & Capacity
+        slug: Module-05-Inventory-Capacity
+      - num: 6
+        title: Sourcing & Supplier Management
+        slug: Module-06-Sourcing-Supplier-Management
+      - num: 7
+        title: Logistics, Distribution & Warehousing
+        slug: Module-07-Logistics-Distribution-Warehousing
+      - num: 8
+        title: International Trade & Customs
+        slug: Module-08-International-Trade-Customs
+      - num: 9
+        title: Sustainability, Risk & CSR
+        slug: Module-09-Sustainability-Risk-CSR
+      - num: 10
+        title: Continuous Improvement
+        slug: Module-10-Continuous-Improvement
+    extras:
+      - num: 11
+        title: Practice Exam 1
+        slug: Practice-Exams/Practice-Exam-1
+        single_file: true
+      - num: 12
+        title: Practice Exam 2
+        slug: Practice-Exams/Practice-Exam-2
+        single_file: true
+      - num: 13
+        title: Final Mock Exam (150q / 210min)
+        slug: Practice-Exams/Final-Mock-Exam
+        single_file: true
+      - num: 14
         title: Master Flashcards
         slug: Flashcards
         single_file: true
@@ -1244,57 +1244,6 @@ tracks:
         single_file: true
 
   # ============= Generative & Agentic AI Track =============
-  - id: claude-architect
-    title: Claude Architect
-    subtitle: Cert Hub Original — Anthropic-aligned
-    color: indigo
-    color_from: "#4f46e5"
-    color_to: "#7c3aed"
-    icon: "🧬"
-    base: "/28-Claude-Architect/"
-    modules:
-      - num: 1
-        title: Claude Foundations & Constitutional AI
-        slug: Module-01-Claude-Foundations-Constitutional-AI
-      - num: 2
-        title: Prompt Engineering with Claude
-        slug: Module-02-Prompt-Engineering-Claude
-      - num: 3
-        title: Claude API & SDK Deep Dive
-        slug: Module-03-Claude-API-SDK-Deep-Dive
-      - num: 4
-        title: Tool Use & Function Calling
-        slug: Module-04-Tool-Use-Function-Calling
-      - num: 5
-        title: Model Context Protocol (MCP)
-        slug: Module-05-Model-Context-Protocol-MCP
-      - num: 6
-        title: Agentic Patterns with Claude
-        slug: Module-06-Agentic-Patterns
-      - num: 7
-        title: RAG & Long-Context with Claude
-        slug: Module-07-RAG-Long-Context
-      - num: 8
-        title: Production Patterns & Safety
-        slug: Module-08-Production-Patterns-Safety
-    extras:
-      - num: 9
-        title: Practice Exam 1
-        slug: Practice-Exams/Practice-Exam-1
-        single_file: true
-      - num: 10
-        title: Practice Exam 2
-        slug: Practice-Exams/Practice-Exam-2
-        single_file: true
-      - num: 11
-        title: Final Mock Exam (60q / 60min)
-        slug: Practice-Exams/Final-Mock-Exam
-        single_file: true
-      - num: 12
-        title: Master Flashcards
-        slug: Flashcards
-        single_file: true
-
   - id: prompt-engineering
     title: Prompt Engineering Specialist
     subtitle: Cert Hub Original — Vendor-Neutral
@@ -1328,6 +1277,115 @@ tracks:
       - num: 8
         title: Production Prompt Engineering at Scale
         slug: Module-08-Production-Scale
+    extras:
+      - num: 9
+        title: Practice Exam 1
+        slug: Practice-Exams/Practice-Exam-1
+        single_file: true
+      - num: 10
+        title: Practice Exam 2
+        slug: Practice-Exams/Practice-Exam-2
+        single_file: true
+      - num: 11
+        title: Final Mock Exam (60q / 60min)
+        slug: Practice-Exams/Final-Mock-Exam
+        single_file: true
+      - num: 12
+        title: Master Flashcards
+        slug: Flashcards
+        single_file: true
+
+  - id: google-ai-pro
+    title: Google AI Pro
+    subtitle: Gemini · Vertex AI · GenAI Leader · PMLE
+    color: blue
+    color_from: "#4285f4"
+    color_to: "#34a853"
+    icon: "💎"
+    base: "/32-Google-AI-Pro/"
+    modules:
+      - num: 1
+        title: Google AI Landscape & Gemini Model Family
+        slug: Module-01-Google-AI-Landscape-Gemini
+      - num: 2
+        title: Google AI Studio & Gemini API
+        slug: Module-02-AI-Studio-Gemini-API
+      - num: 3
+        title: Vertex AI Platform Deep Dive
+        slug: Module-03-Vertex-AI-Platform
+      - num: 4
+        title: Multi-Modal AI with Gemini (Vision, Audio, Video)
+        slug: Module-04-Multi-Modal-Gemini
+      - num: 5
+        title: RAG on Google Cloud (Vertex AI Search, AlloyDB)
+        slug: Module-05-RAG-Google-Cloud
+      - num: 6
+        title: Fine-Tuning & Model Customization on Vertex AI
+        slug: Module-06-Fine-Tuning-Vertex-AI
+      - num: 7
+        title: Agent Builder & Conversational AI
+        slug: Module-07-Agent-Builder-Conversational
+      - num: 8
+        title: Responsible AI on Google Cloud
+        slug: Module-08-Responsible-AI-Google
+      - num: 9
+        title: MLOps on Google Cloud (Vertex AI Pipelines)
+        slug: Module-09-MLOps-Vertex-AI
+      - num: 10
+        title: Production Patterns & Capstone Case Studies
+        slug: Module-10-Production-Capstone
+    extras:
+      - num: 11
+        title: Practice Exam 1
+        slug: Practice-Exams/Practice-Exam-1
+        single_file: true
+      - num: 12
+        title: Practice Exam 2
+        slug: Practice-Exams/Practice-Exam-2
+        single_file: true
+      - num: 13
+        title: Final Mock Exam (60q / 90min)
+        slug: Practice-Exams/Final-Mock-Exam
+        single_file: true
+      - num: 14
+        title: Master Flashcards
+        slug: Flashcards
+        single_file: true
+
+# Sub-pages within each module
+  - id: claude-architect
+    title: Claude Architect
+    subtitle: Cert Hub Original — Anthropic-aligned
+    color: indigo
+    color_from: "#4f46e5"
+    color_to: "#7c3aed"
+    icon: "🧬"
+    base: "/28-Claude-Architect/"
+    modules:
+      - num: 1
+        title: Claude Foundations & Constitutional AI
+        slug: Module-01-Claude-Foundations-Constitutional-AI
+      - num: 2
+        title: Prompt Engineering with Claude
+        slug: Module-02-Prompt-Engineering-Claude
+      - num: 3
+        title: Claude API & SDK Deep Dive
+        slug: Module-03-Claude-API-SDK-Deep-Dive
+      - num: 4
+        title: Tool Use & Function Calling
+        slug: Module-04-Tool-Use-Function-Calling
+      - num: 5
+        title: Model Context Protocol (MCP)
+        slug: Module-05-Model-Context-Protocol-MCP
+      - num: 6
+        title: Agentic Patterns with Claude
+        slug: Module-06-Agentic-Patterns
+      - num: 7
+        title: RAG & Long-Context with Claude
+        slug: Module-07-RAG-Long-Context
+      - num: 8
+        title: Production Patterns & Safety
+        slug: Module-08-Production-Patterns-Safety
     extras:
       - num: 9
         title: Practice Exam 1
@@ -1460,64 +1518,6 @@ tracks:
         slug: Flashcards
         single_file: true
 
-  - id: google-ai-pro
-    title: Google AI Pro
-    subtitle: Gemini · Vertex AI · GenAI Leader · PMLE
-    color: blue
-    color_from: "#4285f4"
-    color_to: "#34a853"
-    icon: "💎"
-    base: "/32-Google-AI-Pro/"
-    modules:
-      - num: 1
-        title: Google AI Landscape & Gemini Model Family
-        slug: Module-01-Google-AI-Landscape-Gemini
-      - num: 2
-        title: Google AI Studio & Gemini API
-        slug: Module-02-AI-Studio-Gemini-API
-      - num: 3
-        title: Vertex AI Platform Deep Dive
-        slug: Module-03-Vertex-AI-Platform
-      - num: 4
-        title: Multi-Modal AI with Gemini (Vision, Audio, Video)
-        slug: Module-04-Multi-Modal-Gemini
-      - num: 5
-        title: RAG on Google Cloud (Vertex AI Search, AlloyDB)
-        slug: Module-05-RAG-Google-Cloud
-      - num: 6
-        title: Fine-Tuning & Model Customization on Vertex AI
-        slug: Module-06-Fine-Tuning-Vertex-AI
-      - num: 7
-        title: Agent Builder & Conversational AI
-        slug: Module-07-Agent-Builder-Conversational
-      - num: 8
-        title: Responsible AI on Google Cloud
-        slug: Module-08-Responsible-AI-Google
-      - num: 9
-        title: MLOps on Google Cloud (Vertex AI Pipelines)
-        slug: Module-09-MLOps-Vertex-AI
-      - num: 10
-        title: Production Patterns & Capstone Case Studies
-        slug: Module-10-Production-Capstone
-    extras:
-      - num: 11
-        title: Practice Exam 1
-        slug: Practice-Exams/Practice-Exam-1
-        single_file: true
-      - num: 12
-        title: Practice Exam 2
-        slug: Practice-Exams/Practice-Exam-2
-        single_file: true
-      - num: 13
-        title: Final Mock Exam (60q / 90min)
-        slug: Practice-Exams/Final-Mock-Exam
-        single_file: true
-      - num: 14
-        title: Master Flashcards
-        slug: Flashcards
-        single_file: true
-
-# Sub-pages within each module
 module_pages:
   - id: Reading
     label: 📖 Lesson

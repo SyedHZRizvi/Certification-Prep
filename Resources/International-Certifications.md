@@ -56,26 +56,40 @@ Courses appear in the same canonical order used on the homepage and sidebar: **P
 | Microsoft Endpoint Administrator | **MD-102** (Microsoft) | $165 | [Start prep →](../26-Microsoft-Endpoint-Admin/) |
 | Microsoft Identity & Access Admin | **SC-300** (Microsoft) | $165 | [Start prep →](../27-Microsoft-Identity-Access-Admin/) |
 
-### Generative & Agentic AI
+### Generative & Agentic AI (foundation → advanced)
+
+**Foundation tier — entry-level, no/minimal prereqs:**
+
+| Our Course | Recommended Cert (After Completion) | Fee (USD) | Start Prep |
+|------------|--------------------------------------|-----------|------------|
+| AWS AI Practitioner | **AIF-C01** (AWS) | $100 | [Start prep →](../07-AWS-AI-Practitioner/) |
+| Azure AI Engineer | **AI-102** (Microsoft) | $165 | [Start prep →](../08-Azure-AI-Engineer/) |
+| Prompt Engineering Specialist | **Cert Hub Certificate of Completion** (vendor-neutral) | included | [Start prep →](../29-Prompt-Engineering-Specialist/) |
+| Google AI Pro | **Google Cloud Generative AI Leader** + **Professional Machine Learning Engineer (PMLE)** (Google Cloud) | $99 + $200 | [Start prep →](../32-Google-AI-Pro/) |
+
+**Intermediate → advanced specialty tier:**
 
 | Our Course | Recommended Cert (After Completion) | Fee (USD) | Start Prep |
 |------------|--------------------------------------|-----------|------------|
 | Claude Architect | **Cert Hub Certificate of Completion** (Anthropic-aligned, Cert Hub original) | included | [Start prep →](../28-Claude-Architect/) |
-| Prompt Engineering Specialist | **Cert Hub Certificate of Completion** (vendor-neutral) | included | [Start prep →](../29-Prompt-Engineering-Specialist/) |
 | Generative AI Engineer | **Cert Hub Certificate of Completion** + (optional) Databricks GenAI Engineer Associate | included / $200 | [Start prep →](../30-Generative-AI-Engineer/) |
 | AWS ML Specialty | **AWS Certified Machine Learning — Specialty (MLS-C01)** (AWS) | $300 | [Start prep →](../31-AWS-ML-Specialty/) |
-| Google AI Pro | **Google Cloud Generative AI Leader** + **Professional Machine Learning Engineer (PMLE)** (Google Cloud) | $99 + $200 | [Start prep →](../32-Google-AI-Pro/) |
-| AWS AI Practitioner | **AIF-C01** (AWS) | $100 | [Start prep →](../07-AWS-AI-Practitioner/) |
-| Azure AI Engineer | **AI-102** (Microsoft) | $165 | [Start prep →](../08-Azure-AI-Engineer/) |
 
-### Supply Chain & Operations
+### Supply Chain & Operations (foundation → advanced)
+
+**Foundation tier — no eligibility requirements:**
 
 | Our Course | Recommended Cert (After Completion) | Fee (USD) | Start Prep |
 |------------|--------------------------------------|-----------|------------|
 | ASCM CPIM | **CPIM Part 1 + Part 2** (ASCM) | $1,495+ | [Start prep →](../11-ASCM-CPIM/) |
-| ASCM CSCP | **CSCP** (ASCM) | $1,295+ | [Start prep →](../10-ASCM-CSCP/) |
 | ASCM CLTD | **CLTD** (ASCM) | $1,295+ | [Start prep →](../12-ASCM-CLTD/) |
-| ISM CPSM | **CPSM 1 + 2 + 3** (ISM) | $199 ea. | [Start prep →](../13-ISM-CPSM/) |
+
+**Senior tier — degree + experience required:**
+
+| Our Course | Recommended Cert (After Completion) | Fee (USD) | Start Prep |
+|------------|--------------------------------------|-----------|------------|
+| ASCM CSCP | **CSCP** (ASCM) — Bachelor's + 2 yrs OR 5 yrs experience | $1,295+ | [Start prep →](../10-ASCM-CSCP/) |
+| ISM CPSM | **CPSM 1 + 2 + 3** (ISM) — Bachelor's + 3 yrs OR 5 yrs experience | $199 ea. | [Start prep →](../13-ISM-CPSM/) |
 
 ### AI-Based Digital Marketing (5-course ladder)
 

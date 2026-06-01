@@ -93,12 +93,13 @@ The 32 courses on this site, grouped by category. Click any course to open its R
 - 🌥️ [Azure Fundamentals](../05-Azure-Fundamentals/) · 🛠️ [Azure Administrator](../06-Azure-Administrator/)
 - 🪟 [Windows Server Hybrid Admin](../25-Windows-Server-Hybrid-Admin/) · 💻 [Microsoft Endpoint Administrator](../26-Microsoft-Endpoint-Admin/) · 🪪 [Microsoft Identity & Access Admin](../27-Microsoft-Identity-Access-Admin/)
 
-### Generative & Agentic AI
-- 🧬 [Claude Architect](../28-Claude-Architect/) · ✍️ [Prompt Engineering Specialist](../29-Prompt-Engineering-Specialist/) · ⚡ [Generative AI Engineer](../30-Generative-AI-Engineer/)
-- 💎 [Google AI Pro](../32-Google-AI-Pro/) · 🔬 [AWS ML Specialty](../31-AWS-ML-Specialty/) · 🤖 [AWS AI Practitioner](../07-AWS-AI-Practitioner/) · 🧠 [Azure AI Engineer](../08-Azure-AI-Engineer/)
+### Generative & Agentic AI (foundation → advanced)
+- **Foundation tier:** 🤖 [AWS AI Practitioner](../07-AWS-AI-Practitioner/) · 🧠 [Azure AI Engineer](../08-Azure-AI-Engineer/) · ✍️ [Prompt Engineering Specialist](../29-Prompt-Engineering-Specialist/) · 💎 [Google AI Pro](../32-Google-AI-Pro/)
+- **Intermediate → advanced:** 🧬 [Claude Architect](../28-Claude-Architect/) · ⚡ [Generative AI Engineer](../30-Generative-AI-Engineer/) · 🔬 [AWS ML Specialty](../31-AWS-ML-Specialty/)
 
-### Supply Chain & Operations
-- 🏭 [ASCM CPIM](../11-ASCM-CPIM/) · 📦 [ASCM CSCP](../10-ASCM-CSCP/) · 🚛 [ASCM CLTD](../12-ASCM-CLTD/) · 🤝 [ISM CPSM](../13-ISM-CPSM/)
+### Supply Chain & Operations (foundation → advanced)
+- **Foundation (no eligibility required):** 🏭 [ASCM CPIM](../11-ASCM-CPIM/) · 🚛 [ASCM CLTD](../12-ASCM-CLTD/)
+- **Senior (degree + experience):** 📦 [ASCM CSCP](../10-ASCM-CSCP/) · 🤝 [ISM CPSM](../13-ISM-CPSM/)
 
 ### AI-Based Digital Marketing (5-course ladder)
 - 📣 [Foundations](../14-AI-Marketing-Foundations/) · 🎯 [Practitioner](../15-AI-Marketing-Practitioner/) · 📈 [Strategist](../16-AI-Marketing-Strategist/) · 💼 [Entrepreneur](../17-AI-Marketing-Entrepreneur/) · 🏆 [Capstone Portfolio](../18-AI-Marketing-Capstone-Portfolio/)

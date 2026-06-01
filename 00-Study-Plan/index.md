@@ -81,20 +81,28 @@ Below are the 32 courses, grouped by category. Pick the one you're preparing for
 - 💻 [**Microsoft Endpoint Administrator (MD-102)**](../26-Microsoft-Endpoint-Admin/)
 - 🪪 [**Microsoft Identity & Access Admin (SC-300)**](../27-Microsoft-Identity-Access-Admin/)
 
-### Generative & Agentic AI
-- 🧬 [**Claude Architect** (Cert Hub original)](../28-Claude-Architect/)
-- ✍️ [**Prompt Engineering Specialist** (Cert Hub original)](../29-Prompt-Engineering-Specialist/)
-- ⚡ [**Generative AI Engineer** (Cert Hub original)](../30-Generative-AI-Engineer/)
-- 💎 [**Google AI Pro** (Generative AI Leader + PMLE)](../32-Google-AI-Pro/)
-- 🔬 [**AWS ML Specialty (MLS-C01)**](../31-AWS-ML-Specialty/)
+### Generative & Agentic AI (foundation → advanced)
+
+**Foundation tier — entry-level, no/minimal prereqs:**
 - 🤖 [**AWS AI Practitioner (AIF-C01)**](../07-AWS-AI-Practitioner/)
 - 🧠 [**Azure AI Engineer (AI-102)**](../08-Azure-AI-Engineer/)
+- ✍️ [**Prompt Engineering Specialist** (Cert Hub original)](../29-Prompt-Engineering-Specialist/)
+- 💎 [**Google AI Pro** (Generative AI Leader + PMLE)](../32-Google-AI-Pro/)
 
-### Supply Chain & Operations
+**Intermediate → advanced:**
+- 🧬 [**Claude Architect** (Cert Hub original)](../28-Claude-Architect/)
+- ⚡ [**Generative AI Engineer** (Cert Hub original)](../30-Generative-AI-Engineer/)
+- 🔬 [**AWS ML Specialty (MLS-C01)** — Specialty tier, requires 2+ years experience](../31-AWS-ML-Specialty/)
+
+### Supply Chain & Operations (foundation → advanced)
+
+**Foundation tier — no eligibility requirements:**
 - 🏭 [**ASCM CPIM**](../11-ASCM-CPIM/)
-- 📦 [**ASCM CSCP**](../10-ASCM-CSCP/)
 - 🚛 [**ASCM CLTD**](../12-ASCM-CLTD/)
-- 🤝 [**ISM CPSM**](../13-ISM-CPSM/)
+
+**Senior tier — degree + experience required:**
+- 📦 [**ASCM CSCP**](../10-ASCM-CSCP/) (Bachelor's + 2 yrs OR 5 yrs experience)
+- 🤝 [**ISM CPSM**](../13-ISM-CPSM/) (Bachelor's + 3 yrs OR 5 yrs experience)
 
 ### AI-Based Digital Marketing (5-course ladder)
 - 📣 [**AI Marketing Foundations**](../14-AI-Marketing-Foundations/)
