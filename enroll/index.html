@@ -165,6 +165,174 @@ layout: none
       font-size: 12.5px; font-weight: 700;
     }
 
+    /* ============== PRICING & BUNDLE DISCOUNT CARD ============== */
+    .pricing-card .card-body { padding-bottom: 24px; }
+    .pricing-header {
+      display: flex; align-items: flex-start; gap: 14px;
+      margin-bottom: 20px; flex-wrap: wrap;
+    }
+    .pricing-header-text { flex: 1; min-width: 220px; }
+    .currency-picker { min-width: 200px; }
+    .currency-picker .select { padding: 8px 12px; font-size: 14px; }
+    .currency-picker .field-label { font-size: 11px; margin-bottom: 4px; }
+
+    /* Per-tier reference cards */
+    .pricing-tiers {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 12px;
+      margin: 20px 0;
+    }
+    .tier-card {
+      padding: 14px 16px;
+      border-radius: 12px;
+      border: 2px solid;
+      background: #fff;
+      transition: transform .15s, box-shadow .15s;
+    }
+    .tier-card:hover { transform: translateY(-2px); box-shadow: 0 8px 18px -6px rgba(0,0,0,0.10); }
+    .tier-foundation { border-color: #93c5fd; background: linear-gradient(135deg, #eff6ff, #f0f9ff); }
+    .tier-associate  { border-color: #c4b5fd; background: linear-gradient(135deg, #f5f3ff, #faf5ff); }
+    .tier-specialty  { border-color: #fca5a5; background: linear-gradient(135deg, #fef2f2, #fff1f2); }
+    .tier-tag {
+      display: inline-block;
+      font-size: 11px; font-weight: 800;
+      letter-spacing: 0.10em; text-transform: uppercase;
+      padding: 3px 9px; border-radius: 999px;
+      margin-bottom: 8px;
+    }
+    .tier-foundation .tier-tag { background: #1d4ed8; color: #fff; }
+    .tier-associate  .tier-tag { background: #6d28d9; color: #fff; }
+    .tier-specialty  .tier-tag { background: #b91c1c; color: #fff; }
+    .tier-price {
+      font-family: 'Plus Jakarta Sans', Inter, sans-serif;
+      font-size: 22px; font-weight: 900;
+      color: #0f172a; letter-spacing: -0.015em;
+      margin-bottom: 4px;
+    }
+    .tier-desc { font-size: 12.5px; color: #475569; line-height: 1.5; }
+
+    /* Bundle ladder */
+    .bundle-ladder {
+      background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 16px 18px;
+      margin: 18px 0;
+    }
+    .ladder-title {
+      font-weight: 800; font-size: 13.5px;
+      color: #0f172a; margin-bottom: 12px;
+      letter-spacing: 0.02em;
+    }
+    .ladder-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 8px;
+    }
+    .rung {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 8px 12px;
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      font-size: 13.5px;
+      transition: all .15s;
+    }
+    .rung .save { color: #047857; font-weight: 700; }
+    .rung-best {
+      background: linear-gradient(135deg, #fef3c7, #fde68a);
+      border-color: #fbbf24;
+    }
+    .rung-best .save { color: #b45309; font-size: 14.5px; }
+    .rung.rung-active {
+      background: linear-gradient(135deg, #d1fae5, #ecfdf5);
+      border-color: #10b981;
+      transform: scale(1.02);
+      box-shadow: 0 4px 12px -3px rgba(16, 185, 129, 0.30);
+    }
+    .rung.rung-active::before {
+      content: '✓ ';
+      color: #047857;
+      font-weight: 900;
+    }
+
+    /* Live price summary */
+    .price-summary {
+      background: #ffffff;
+      border: 2px solid #6366f1;
+      border-radius: 14px;
+      padding: 20px 24px;
+      box-shadow: 0 10px 24px -8px rgba(99, 102, 241, 0.20);
+    }
+    .ps-row {
+      display: flex; justify-content: space-between; align-items: baseline;
+      padding: 8px 0;
+      font-size: 15.5px;
+      border-bottom: 1px dashed #e2e8f0;
+    }
+    .ps-row:last-of-type { border-bottom: 0; }
+    .ps-label { color: #475569; font-weight: 600; }
+    .ps-value { color: #0f172a; font-weight: 700; font-variant-numeric: tabular-nums; }
+    .ps-discount .ps-label { color: #047857; }
+    .ps-discount .discount-amt { color: #047857; font-weight: 800; }
+    .ps-total {
+      margin-top: 8px; padding-top: 14px;
+      border-top: 2px solid #6366f1;
+      border-bottom: 0 !important;
+      font-size: 22px;
+    }
+    .ps-total .ps-label {
+      color: #0f172a; font-weight: 800;
+      font-family: 'Plus Jakarta Sans', Inter, sans-serif;
+    }
+    .ps-total .ps-label small {
+      display: block; font-size: 11.5px;
+      color: #64748b; font-weight: 500;
+      margin-top: 2px; letter-spacing: 0.01em;
+    }
+    .ps-total .ps-value {
+      color: #4338ca; font-weight: 900;
+      font-family: 'Plus Jakarta Sans', Inter, sans-serif;
+      letter-spacing: -0.02em;
+    }
+    .ps-cta { text-align: center; margin-top: 16px; }
+    .ps-cta-btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 12px 28px;
+      background: linear-gradient(135deg, #4f46e5, #7c3aed);
+      color: #fff;
+      border-radius: 999px;
+      font-weight: 700; font-size: 15px;
+      text-decoration: none;
+      box-shadow: 0 8px 18px -4px rgba(124, 58, 237, 0.45);
+      transition: transform .15s, box-shadow .15s, filter .15s;
+    }
+    .ps-cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 24px -6px rgba(124, 58, 237, 0.55);
+      filter: brightness(1.06);
+    }
+    .ps-cta-btn[aria-disabled="true"] {
+      background: #cbd5e1; cursor: not-allowed; box-shadow: none;
+      pointer-events: none;
+    }
+    .ps-note {
+      margin-top: 14px;
+      font-size: 12.5px; color: #64748b;
+      line-height: 1.55; padding-top: 12px;
+      border-top: 1px solid #e2e8f0;
+    }
+    .ps-note strong { color: #334155; }
+
+    @media (max-width: 640px) {
+      .pricing-header { gap: 10px; }
+      .currency-picker { width: 100%; }
+      .pricing-tiers { grid-template-columns: 1fr; }
+      .ladder-grid { grid-template-columns: 1fr; }
+      .ps-total { font-size: 19px; }
+    }
+
     /* Payment portal DRAFT */
     .draft-banner {
       display: flex; align-items: center; gap: 10px;
@@ -531,8 +699,77 @@ layout: none
           </div>
         </div>
 
+        <!-- ============== PRICING & BUNDLE DISCOUNT ============== -->
+        <div class="card pricing-card" id="pricing-card" style="margin-bottom: 24px;">
+          <div class="card-stripe stripe-sky"></div>
+          <div class="card-body">
+            <div class="pricing-header">
+              <span class="section-icon ic-sky">💰</span>
+              <div class="pricing-header-text">
+                <h2 class="section-title">Pricing &amp; Bundle Discount</h2>
+                <p class="section-sub">Per-course pricing with progressive bundle discounts. Updates live as you select courses above.</p>
+              </div>
+              <div class="currency-picker">
+                <label class="field-label" for="currencySelect" style="margin-top:0;">Display in</label>
+                <select id="currencySelect" class="select">
+                  <option value="USD">$ USD · US Dollar</option>
+                  <option value="CAD">$ CAD · Canadian Dollar</option>
+                  <option value="GBP">£ GBP · British Pound</option>
+                  <option value="EUR">€ EUR · Euro</option>
+                  <option value="AUD">$ AUD · Australian Dollar</option>
+                  <option value="PKR">₨ PKR · Pakistani Rupee</option>
+                  <option value="INR">₹ INR · Indian Rupee</option>
+                  <option value="AED">د.إ AED · UAE Dirham</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Per-course tier reference -->
+            <div class="pricing-tiers">
+              <div class="tier-card tier-foundation">
+                <div class="tier-tag">Foundation</div>
+                <div class="tier-price" data-tier-usd="99">$99/course</div>
+                <div class="tier-desc">Entry-level certs, no prereqs · CompTIA A+/Network+/Linux+/Server+ · AWS CLF-C02 · AZ-900 · AIF-C01 · AI Marketing Foundations · Prompt Engineering · Scrum Master</div>
+              </div>
+              <div class="tier-card tier-associate">
+                <div class="tier-tag">Associate</div>
+                <div class="tier-price" data-tier-usd="149">$149/course</div>
+                <div class="tier-desc">Mid-tier specialty · PMP · SAA-C03 · AZ-104 · AI-102 · Security+ · CPIM · CLTD · 3× MS Enterprise · Claude Architect · GenAI Engineer · Google AI Pro · 3× AI Mkt · Bitcoin · E-Commerce</div>
+              </div>
+              <div class="tier-card tier-specialty">
+                <div class="tier-tag">Specialty</div>
+                <div class="tier-price" data-tier-usd="199">$199/course</div>
+                <div class="tier-desc">Senior tier, experience-required · AWS ML Specialty (MLS-C01) · ASCM CSCP · ISM CPSM · AI Marketing Capstone Portfolio</div>
+              </div>
+            </div>
+
+            <!-- Bundle discount ladder reference -->
+            <div class="bundle-ladder">
+              <div class="ladder-title">📊 Progressive bundle discount</div>
+              <div class="ladder-grid">
+                <div class="rung" data-tier-rung="1"><span>1 course</span><span>Full price</span></div>
+                <div class="rung" data-tier-rung="2-3"><span>2–3 courses</span><span class="save">−10%</span></div>
+                <div class="rung" data-tier-rung="4-7"><span>4–7 courses</span><span class="save">−15%</span></div>
+                <div class="rung" data-tier-rung="8-15"><span>8–15 courses</span><span class="save">−20%</span></div>
+                <div class="rung" data-tier-rung="16-31"><span>16–31 courses</span><span class="save">−25%</span></div>
+                <div class="rung rung-best" data-tier-rung="32"><span>All 32 · <strong>All-Access Pass</strong></span><span class="save">−35%</span></div>
+              </div>
+            </div>
+
+            <!-- Live calculation -->
+            <div class="price-summary" id="price-summary">
+              <div class="ps-row"><span class="ps-label">Selected courses</span><span class="ps-value"><span id="ps-count">0</span> course<span id="ps-count-s">s</span></span></div>
+              <div class="ps-row"><span class="ps-label">Subtotal</span><span class="ps-value" id="ps-subtotal">$0</span></div>
+              <div class="ps-row ps-discount"><span class="ps-label">Bundle discount (<span id="ps-discount-pct">0%</span>)</span><span class="ps-value discount-amt" id="ps-discount-amt">−$0</span></div>
+              <div class="ps-row ps-total"><span class="ps-label">Total<small id="ps-currency-note"></small></span><span class="ps-value" id="ps-total">$0</span></div>
+              <div class="ps-cta"><a href="#payment-section" class="ps-cta-btn">Continue to payment <span aria-hidden="true">→</span></a></div>
+              <div class="ps-note">All payments are processed in <strong>USD</strong> by the issuing bank. Non-USD amounts above are approximate converted figures (rates updated quarterly, last refresh 2026-06). Actual charge on your card may vary slightly with your bank's day-of-payment rate. Prices are exclusive of any local taxes.</div>
+            </div>
+          </div>
+        </div>
+
         <!-- Payment Portal (DRAFT — disabled) -->
-        <div class="card" style="margin-bottom: 24px;">
+        <div class="card" id="payment-section" style="margin-bottom: 24px;">
           <div class="card-stripe stripe-rose"></div>
           <div class="card-body">
             <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 14px;">
@@ -690,33 +927,98 @@ layout: none
 
   <script>
     // ===== COURSES DATA (mirror of functions/lib/courses.js) =====
+    // Per-course pricing tier (USD base, before bundle discount). Tier
+    // assignment based on cert difficulty + eligibility requirements:
+    //   foundation $99  — entry-level, no prereqs
+    //   associate  $149 — mid-tier specialty / associate-level
+    //   specialty  $199 — senior tier, often requires experience
     const COURSES = [
       // Project Management
-      { id: "01-Scrum-Master",                          slug: "Scrum Master (PSM I)",                 icon: "🏃", category: "Project Management" },
-      { id: "02-PMP",                                   slug: "PMP",                                  icon: "🧭", category: "Project Management" },
-      // Cloud · AI · Cybersecurity
-      { id: "03-AWS-Cloud-Practitioner",                slug: "AWS Cloud Practitioner (CLF-C02)",     icon: "☁️", category: "Cloud · AI · Cybersecurity" },
-      { id: "04-AWS-Solutions-Architect-Associate",     slug: "AWS Solutions Architect Assoc (SAA-C03)", icon: "🏗️", category: "Cloud · AI · Cybersecurity" },
-      { id: "07-AWS-AI-Practitioner",                   slug: "AWS AI Practitioner (AIF-C01)",        icon: "🤖", category: "Cloud · AI · Cybersecurity" },
-      { id: "05-Azure-Fundamentals",                    slug: "Azure Fundamentals (AZ-900)",          icon: "🌥️", category: "Cloud · AI · Cybersecurity" },
-      { id: "06-Azure-Administrator",                   slug: "Azure Administrator (AZ-104)",         icon: "🛠️", category: "Cloud · AI · Cybersecurity" },
-      { id: "08-Azure-AI-Engineer",                     slug: "Azure AI Engineer (AI-102)",           icon: "🧠", category: "Cloud · AI · Cybersecurity" },
-      { id: "09-CompTIA-Security-Plus",                 slug: "CompTIA Security+ (SY0-701)",          icon: "🛡️", category: "Cloud · AI · Cybersecurity" },
-      // Supply Chain
-      { id: "10-ASCM-CSCP",                             slug: "ASCM CSCP",                            icon: "📦", category: "Supply Chain & Operations" },
-      { id: "11-ASCM-CPIM",                             slug: "ASCM CPIM",                            icon: "🏭", category: "Supply Chain & Operations" },
-      { id: "12-ASCM-CLTD",                             slug: "ASCM CLTD",                            icon: "🚛", category: "Supply Chain & Operations" },
-      { id: "13-ISM-CPSM",                              slug: "ISM CPSM",                             icon: "🛍️", category: "Supply Chain & Operations" },
-      // AI Marketing
-      { id: "14-AI-Marketing-Foundations",              slug: "AI Digital Marketing — Foundations",           icon: "📣", category: "AI Digital Marketing" },
-      { id: "15-AI-Marketing-Practitioner",             slug: "AI Digital Marketing — Practitioner",          icon: "🎯", category: "AI Digital Marketing" },
-      { id: "16-AI-Marketing-Strategist",               slug: "AI Digital Marketing — Strategist",            icon: "📈", category: "AI Digital Marketing" },
-      { id: "17-AI-Marketing-Entrepreneur",             slug: "AI Digital Marketing — Entrepreneur",          icon: "💼", category: "AI Digital Marketing" },
-      { id: "18-AI-Marketing-Capstone-Portfolio",       slug: "AI Digital Marketing — Capstone Portfolio",    icon: "🏆", category: "AI Digital Marketing" },
-      // Bitcoin · E-Commerce
-      { id: "19-Bitcoin-Cryptocurrency",                slug: "Bitcoin & Cryptocurrency",             icon: "₿",  category: "Bitcoin & E-Commerce" },
-      { id: "20-E-Commerce",                            slug: "E-Commerce",                           icon: "🛒", category: "Bitcoin & E-Commerce" },
+      { id: "01-Scrum-Master",                          slug: "Scrum Master · PSM I",                 icon: "🏃", category: "Project Management", tier: "foundation" },
+      { id: "02-PMP",                                   slug: "PMP",                                  icon: "🧭", category: "Project Management", tier: "associate" },
+      // IT, Cloud & Systems Administration (foundation→advanced)
+      { id: "21-CompTIA-A-Plus",                        slug: "CompTIA A+ · 220-1101/1102",           icon: "🛠️", category: "IT, Cloud & Systems Administration", tier: "foundation" },
+      { id: "22-CompTIA-Network-Plus",                  slug: "CompTIA Network+ · N10-009",           icon: "🌐", category: "IT, Cloud & Systems Administration", tier: "foundation" },
+      { id: "23-CompTIA-Linux-Plus",                    slug: "CompTIA Linux+ · XK0-005",             icon: "🐧", category: "IT, Cloud & Systems Administration", tier: "foundation" },
+      { id: "24-CompTIA-Server-Plus",                   slug: "CompTIA Server+ · SK0-005",            icon: "🗄️", category: "IT, Cloud & Systems Administration", tier: "foundation" },
+      { id: "09-CompTIA-Security-Plus",                 slug: "CompTIA Security+ · SY0-701",          icon: "🛡️", category: "IT, Cloud & Systems Administration", tier: "associate" },
+      { id: "03-AWS-Cloud-Practitioner",                slug: "AWS Cloud Practitioner · CLF-C02",     icon: "☁️", category: "IT, Cloud & Systems Administration", tier: "foundation" },
+      { id: "04-AWS-Solutions-Architect-Associate",     slug: "AWS Solutions Architect · SAA-C03",    icon: "🏗️", category: "IT, Cloud & Systems Administration", tier: "associate" },
+      { id: "05-Azure-Fundamentals",                    slug: "Azure Fundamentals · AZ-900",          icon: "🌥️", category: "IT, Cloud & Systems Administration", tier: "foundation" },
+      { id: "06-Azure-Administrator",                   slug: "Azure Administrator · AZ-104",         icon: "🛠️", category: "IT, Cloud & Systems Administration", tier: "associate" },
+      { id: "25-Windows-Server-Hybrid-Admin",           slug: "Windows Server Hybrid · AZ-800/801",   icon: "🪟", category: "IT, Cloud & Systems Administration", tier: "associate" },
+      { id: "26-Microsoft-Endpoint-Admin",              slug: "Microsoft Endpoint Admin · MD-102",    icon: "💻", category: "IT, Cloud & Systems Administration", tier: "associate" },
+      { id: "27-Microsoft-Identity-Access-Admin",       slug: "Microsoft Identity & Access · SC-300", icon: "🪪", category: "IT, Cloud & Systems Administration", tier: "associate" },
+      // Generative & Agentic AI (foundation→advanced)
+      { id: "07-AWS-AI-Practitioner",                   slug: "AWS AI Practitioner · AIF-C01",        icon: "🤖", category: "Generative & Agentic AI", tier: "foundation" },
+      { id: "08-Azure-AI-Engineer",                     slug: "Azure AI Engineer · AI-102",           icon: "🧠", category: "Generative & Agentic AI", tier: "associate" },
+      { id: "29-Prompt-Engineering-Specialist",         slug: "Prompt Engineering · Cert Hub Original", icon: "✍️", category: "Generative & Agentic AI", tier: "foundation" },
+      { id: "32-Google-AI-Pro",                         slug: "Google AI Pro · GenAI Leader + PMLE",  icon: "💎", category: "Generative & Agentic AI", tier: "associate" },
+      { id: "28-Claude-Architect",                      slug: "Claude Architect · Cert Hub Original", icon: "🧬", category: "Generative & Agentic AI", tier: "associate" },
+      { id: "30-Generative-AI-Engineer",                slug: "Generative AI Engineer · Cert Hub Original", icon: "⚡", category: "Generative & Agentic AI", tier: "associate" },
+      { id: "31-AWS-ML-Specialty",                      slug: "AWS ML Specialty · MLS-C01",           icon: "🔬", category: "Generative & Agentic AI", tier: "specialty" },
+      // Supply Chain & Operations (foundation→advanced)
+      { id: "11-ASCM-CPIM",                             slug: "ASCM CPIM",                            icon: "🏭", category: "Supply Chain & Operations", tier: "associate" },
+      { id: "12-ASCM-CLTD",                             slug: "ASCM CLTD",                            icon: "🚛", category: "Supply Chain & Operations", tier: "associate" },
+      { id: "10-ASCM-CSCP",                             slug: "ASCM CSCP",                            icon: "📦", category: "Supply Chain & Operations", tier: "specialty" },
+      { id: "13-ISM-CPSM",                              slug: "ISM CPSM",                             icon: "🤝", category: "Supply Chain & Operations", tier: "specialty" },
+      // AI Digital Marketing (5-course ladder)
+      { id: "14-AI-Marketing-Foundations",              slug: "AI Digital Marketing — Foundations",   icon: "📣", category: "AI Digital Marketing", tier: "foundation" },
+      { id: "15-AI-Marketing-Practitioner",             slug: "AI Digital Marketing — Practitioner",  icon: "🎯", category: "AI Digital Marketing", tier: "associate" },
+      { id: "16-AI-Marketing-Strategist",               slug: "AI Digital Marketing — Strategist",    icon: "📈", category: "AI Digital Marketing", tier: "associate" },
+      { id: "17-AI-Marketing-Entrepreneur",             slug: "AI Digital Marketing — Entrepreneur",  icon: "💼", category: "AI Digital Marketing", tier: "associate" },
+      { id: "18-AI-Marketing-Capstone-Portfolio",       slug: "AI Digital Marketing — Capstone Portfolio", icon: "🏆", category: "AI Digital Marketing", tier: "specialty" },
+      // Bitcoin & E-Commerce
+      { id: "19-Bitcoin-Cryptocurrency",                slug: "Bitcoin & Cryptocurrency",             icon: "₿",  category: "Bitcoin & E-Commerce", tier: "associate" },
+      { id: "20-E-Commerce",                            slug: "E-Commerce",                           icon: "🛒", category: "Bitcoin & E-Commerce", tier: "associate" },
     ];
+
+    // Per-tier USD price (before bundle discount). Single source of truth.
+    const TIER_PRICE = { foundation: 99, associate: 149, specialty: 199 };
+
+    // Bundle-discount ladder — industry-gold-standard. Applies to subtotal.
+    // Higher tier of count == bigger % off, capped at "All-Access" 35% for 32.
+    const BUNDLE_LADDER = [
+      { min: 1,  max: 1,  pct: 0,    label: "1 course",            note: "Full price" },
+      { min: 2,  max: 3,  pct: 0.10, label: "2–3 courses",          note: "−10%" },
+      { min: 4,  max: 7,  pct: 0.15, label: "4–7 courses",          note: "−15%" },
+      { min: 8,  max: 15, pct: 0.20, label: "8–15 courses",         note: "−20%" },
+      { min: 16, max: 31, pct: 0.25, label: "16–31 courses",        note: "−25%" },
+      { min: 32, max: 32, pct: 0.35, label: "32 courses · All-Access", note: "−35%" },
+    ];
+
+    // Approximate 2026-06 exchange rates (live API integration would be ideal
+    // long-term — for now these are quarterly-updated approximations; the
+    // disclaimer in the UI tells users payments are processed in USD).
+    const CURRENCIES = {
+      USD: { symbol: "$",   rate: 1.00,   name: "US Dollar"        },
+      CAD: { symbol: "$",   rate: 1.36,   name: "Canadian Dollar"  },
+      GBP: { symbol: "£",   rate: 0.78,   name: "British Pound"    },
+      EUR: { symbol: "€",   rate: 0.92,   name: "Euro"             },
+      AUD: { symbol: "$",   rate: 1.50,   name: "Australian Dollar"},
+      PKR: { symbol: "₨",   rate: 280,    name: "Pakistani Rupee"  },
+      INR: { symbol: "₹",   rate: 84,     name: "Indian Rupee"     },
+      AED: { symbol: "د.إ ", rate: 3.67,   name: "UAE Dirham"       },
+    };
+    let activeCurrency = "USD";
+
+    function formatPrice(usd, currency) {
+      currency = currency || activeCurrency;
+      const c = CURRENCIES[currency];
+      const converted = usd * c.rate;
+      // Use thousands separators; PKR + INR are usually whole numbers, others
+      // get cents-precision for small amounts (under 1000) and whole-units otherwise.
+      const decimals = (currency === "PKR" || currency === "INR") ? 0 : (converted < 1000 ? 2 : 0);
+      const formatted = converted.toLocaleString("en-US", {
+        minimumFractionDigits: decimals,
+        maximumFractionDigits: decimals,
+      });
+      return c.symbol + formatted;
+    }
+
+    function bundleTier(n) {
+      return BUNDLE_LADDER.find(t => n >= t.min && n <= t.max) || BUNDLE_LADDER[0];
+    }
 
     // ===== RENDER COURSE GROUPS =====
     const groupsEl = document.getElementById('course-groups');
@@ -764,8 +1066,84 @@ layout: none
           }).join('')
         }</ul>`;
       }
+      refreshPricing(selected);
     }
     checkboxes.forEach(cb => cb.addEventListener('change', refreshSelection));
+
+    // ===== PRICING ENGINE =====
+    // Recompute subtotal, bundle discount, and total whenever selection changes
+    // or the user picks a different currency.
+    const psCount       = document.getElementById('ps-count');
+    const psCountS      = document.getElementById('ps-count-s');
+    const psSubtotal    = document.getElementById('ps-subtotal');
+    const psDiscountPct = document.getElementById('ps-discount-pct');
+    const psDiscountAmt = document.getElementById('ps-discount-amt');
+    const psTotal       = document.getElementById('ps-total');
+    const psCurrencyNote= document.getElementById('ps-currency-note');
+    const psCta         = document.querySelector('.ps-cta-btn');
+    const currencySel   = document.getElementById('currencySelect');
+
+    function refreshPricing(selectedArg) {
+      const selected = selectedArg || Array.from(checkboxes).filter(c => c.checked);
+      const n = selected.length;
+      // Sum subtotal by looking up each selected course's tier
+      let subtotalUsd = 0;
+      selected.forEach(cb => {
+        const course = COURSES.find(c => c.id === cb.value);
+        if (course) subtotalUsd += TIER_PRICE[course.tier] || TIER_PRICE.associate;
+      });
+      const tier = bundleTier(n);
+      const discountUsd = subtotalUsd * tier.pct;
+      const totalUsd    = subtotalUsd - discountUsd;
+
+      psCount.textContent      = String(n);
+      psCountS.textContent     = (n === 1 ? '' : 's');
+      psSubtotal.textContent   = formatPrice(subtotalUsd);
+      psDiscountPct.textContent= n === 0 ? '0%' : Math.round(tier.pct * 100) + '%';
+      psDiscountAmt.textContent= '−' + formatPrice(discountUsd);
+      psTotal.textContent      = formatPrice(totalUsd);
+      psCurrencyNote.textContent = activeCurrency === 'USD' ? ''
+                                   : ' (' + activeCurrency + ' approx.)';
+
+      // Highlight active rung in the bundle-ladder reference table
+      document.querySelectorAll('.bundle-ladder .rung').forEach(r => {
+        const range = r.dataset.tierRung;
+        let match = false;
+        if (range === '1')      match = n === 1;
+        else if (range === '32') match = n === 32;
+        else {
+          const [lo, hi] = range.split('-').map(Number);
+          match = n >= lo && n <= hi;
+        }
+        r.classList.toggle('rung-active', match);
+      });
+
+      // CTA state
+      if (n === 0) {
+        psCta.setAttribute('aria-disabled', 'true');
+        psCta.firstChild.nodeValue = 'Select at least one course ';
+      } else {
+        psCta.removeAttribute('aria-disabled');
+        psCta.firstChild.nodeValue = 'Continue to payment ';
+      }
+    }
+
+    // Currency switch — update the live total + the static tier reference prices
+    function refreshCurrencyDisplay() {
+      // Update the three "tier" cards' displayed price
+      document.querySelectorAll('.tier-card .tier-price').forEach(el => {
+        const usd = parseFloat(el.dataset.tierUsd);
+        el.textContent = formatPrice(usd) + '/course';
+      });
+      refreshPricing();
+    }
+    currencySel.addEventListener('change', () => {
+      activeCurrency = currencySel.value;
+      refreshCurrencyDisplay();
+    });
+
+    // Initialize on load
+    refreshCurrencyDisplay();
 
     // ===== TOOLBAR =====
     document.getElementById('selectAllBtn').addEventListener('click', () => {
