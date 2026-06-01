@@ -1006,17 +1006,19 @@ layout: none
       currency = currency || activeCurrency;
       const c = CURRENCIES[currency];
       let converted = usd * c.rate;
-      // USD: full cents precision (the base / actual processed currency).
-      // All other currencies: round to the nearest 100 in their native unit
-      // for clean, marketable display (e.g., $134.64 CAD → $100 CAD,
-      // ₨27,720 PKR → ₨27,700 PKR). The disclaimer below the total tells
-      // users the actual charge is in USD; non-USD figures are approximate.
-      let decimals;
+      // Per-currency rounding granularity for clean, marketable display
+      // that preserves the three-tier price hierarchy in every currency:
+      //   USD               — full cents (it's the actual processed currency)
+      //   CAD/GBP/EUR/AUD   — nearest 25 in native unit (keeps tiers distinct)
+      //   PKR/INR/AED       — nearest 100 (large numbers don't need finer)
+      let decimals = 0;
       if (currency === "USD") {
         decimals = converted < 1000 ? 2 : 0;
-      } else {
+      } else if (currency === "PKR" || currency === "INR" || currency === "AED") {
         converted = Math.round(converted / 100) * 100;
-        decimals = 0;
+      } else {
+        // CAD, GBP, EUR, AUD — round to nearest 25
+        converted = Math.round(converted / 25) * 25;
       }
       const formatted = converted.toLocaleString("en-US", {
         minimumFractionDigits: decimals,
