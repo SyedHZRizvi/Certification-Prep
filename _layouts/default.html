@@ -53,6 +53,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="{{ '/assets/quiz.css' | relative_url }}" />
+  <link rel="stylesheet" href="{{ '/assets/practice-exam.css' | relative_url }}" />
   <style>
     *, *::before, *::after { box-sizing: border-box; }
     html { scroll-behavior: smooth; font-size: 17px; }
@@ -816,5 +817,7 @@
   <script src="{{ '/assets/protect.js' | relative_url }}"></script>
   <script src="{{ '/assets/freshness.js' | relative_url }}"></script>
   <script src="{{ '/assets/video-modal.js' | relative_url }}"></script>
+  <!-- Interactive Practice Exam Engine — auto-activates on any /Practice-Exams/ URL -->
+  <script src="{{ '/assets/practice-exam.js' | relative_url }}" defer></script>
 </body>
 </html>

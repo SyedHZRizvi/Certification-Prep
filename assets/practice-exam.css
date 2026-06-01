@@ -1,0 +1,303 @@
+/* ============================================================
+   PRACTICE EXAM ENGINE — Styles
+   ------------------------------------------------------------
+   Loaded on every page; the engine activates only on
+   /Practice-Exams/ URLs, so these rules only render visually
+   when the JS engine has built the form DOM. The .pe-*
+   classnames will not appear on non-exam pages.
+   ============================================================ */
+
+/* Sticky status bar at the top of the exam */
+.pe-bar {
+  position: relative;
+  margin: 24px 0 36px;
+  padding: 0;
+  background: linear-gradient(135deg, #4338ca 0%, #6366f1 100%);
+  color: #fff;
+  border-radius: 14px;
+  box-shadow: 0 10px 32px -10px rgba(67, 56, 202, 0.55),
+              inset 0 1px 0 rgba(255, 255, 255, 0.18);
+  z-index: 10;
+}
+.pe-bar-sticky { position: sticky; top: 8px; }
+.pe-bar-inner {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 20px;
+  flex-wrap: wrap;
+}
+.pe-bar-title {
+  font-weight: 800;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.pe-bar-progress {
+  flex: 1;
+  font-weight: 600;
+  font-size: 14px;
+  opacity: 0.92;
+  text-align: center;
+  min-width: 0;
+}
+.pe-btn {
+  padding: 9px 18px;
+  border-radius: 999px;
+  border: 0;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: filter .15s, transform .15s, box-shadow .15s, background .15s;
+  font-family: inherit;
+}
+.pe-btn-primary {
+  background: #fff;
+  color: #4338ca;
+  box-shadow: 0 4px 12px -3px rgba(0, 0, 0, 0.25);
+}
+.pe-btn-primary:hover:not(:disabled) {
+  filter: brightness(1.05);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px -4px rgba(0, 0, 0, 0.32);
+}
+.pe-btn-primary:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+.pe-btn-ghost {
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.30);
+}
+.pe-btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+/* Score block (shown after submit) */
+.pe-score {
+  padding: 18px 24px 22px;
+  background: rgba(255, 255, 255, 0.10);
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 0 0 14px 14px;
+  text-align: center;
+}
+.pe-score-headline {
+  font-size: 26px;
+  font-weight: 900;
+  letter-spacing: -0.01em;
+  margin-bottom: 6px;
+}
+.pe-score-pass { color: #d1fae5; }
+.pe-score-fail { color: #fef3c7; }
+.pe-score-sub {
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0.92;
+}
+.pe-score-sub a {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: 700;
+}
+.pe-score-sub a:hover { text-decoration: none; }
+
+/* Question fieldset */
+.pe-q {
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 22px 24px 18px;
+  margin: 24px 0;
+  background: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  transition: border-color .2s, box-shadow .2s;
+}
+.pe-q:hover { border-color: #c7d2fe; }
+.pe-q-num {
+  display: inline-block;
+  padding: 4px 11px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #eef2ff, #e0e7ff);
+  color: #4338ca;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+/* Radio option label */
+.pe-opt {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 14px;
+  margin: 8px 0;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  background: #fff;
+  cursor: pointer;
+  transition: border-color .15s, background .15s, transform .12s;
+  user-select: none;
+  line-height: 1.5;
+}
+.pe-opt:hover:not(.pe-opt-correct):not(.pe-opt-incorrect) {
+  border-color: #c7d2fe;
+  background: #f5f3ff;
+  transform: translateX(2px);
+}
+.pe-opt input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+  accent-color: #4f46e5;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+.pe-opt input[type="radio"]:disabled { cursor: not-allowed; }
+.pe-opt-letter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px; height: 28px;
+  background: #f1f5f9;
+  color: #475569;
+  border-radius: 8px;
+  font-weight: 800;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+.pe-opt input:checked ~ .pe-opt-letter,
+.pe-opt:has(input:checked) .pe-opt-letter {
+  background: #4f46e5;
+  color: #fff;
+}
+.pe-opt:has(input:checked) {
+  border-color: #4f46e5;
+  background: #eef2ff;
+}
+.pe-opt-text {
+  flex: 1;
+  color: #0f172a;
+  font-size: 15.5px;
+  line-height: 1.55;
+}
+
+/* Post-grading states */
+.pe-opt-correct {
+  border-color: #10b981 !important;
+  background: linear-gradient(135deg, #d1fae5, #ecfdf5) !important;
+}
+.pe-opt-correct .pe-opt-letter {
+  background: #10b981 !important;
+  color: #fff !important;
+}
+.pe-opt-correct::after {
+  content: '✓ Correct';
+  display: inline-block;
+  margin-left: auto;
+  padding: 4px 10px;
+  background: #10b981;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 800;
+  border-radius: 999px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  align-self: center;
+}
+.pe-opt-incorrect {
+  border-color: #ef4444 !important;
+  background: linear-gradient(135deg, #fee2e2, #fef2f2) !important;
+}
+.pe-opt-incorrect .pe-opt-letter {
+  background: #ef4444 !important;
+  color: #fff !important;
+}
+.pe-opt-incorrect::after {
+  content: '✗ Your pick';
+  display: inline-block;
+  margin-left: auto;
+  padding: 4px 10px;
+  background: #ef4444;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 800;
+  border-radius: 999px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  align-self: center;
+}
+
+/* Feedback block (per question) */
+.pe-feedback { display: none; margin-top: 14px; }
+.pe-feedback-shown {
+  display: block;
+  padding: 14px 16px;
+  border-radius: 10px;
+  font-size: 14.5px;
+  line-height: 1.6;
+  animation: pe-fade-in 0.25s ease-out;
+}
+@keyframes pe-fade-in {
+  from { opacity: 0; transform: translateY(-4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.pe-fb-right,
+.pe-fb-wrong,
+.pe-fb-skipped {
+  padding: 12px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.pe-fb-right    { background: #d1fae5; color: #065f46; border-left: 4px solid #10b981; }
+.pe-fb-wrong    { background: #fee2e2; color: #991b1b; border-left: 4px solid #ef4444; }
+.pe-fb-skipped  { background: #fef3c7; color: #92400e; border-left: 4px solid #f59e0b; }
+
+.pe-fb-explanation {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 14px 18px;
+  margin-top: 8px;
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: #1e293b;
+}
+.pe-fb-exp-title {
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 8px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.pe-fb-explanation ul { padding-left: 22px; }
+.pe-fb-explanation li { margin: 4px 0; }
+.pe-fb-explanation p:last-child { margin-bottom: 0; }
+.pe-fb-explanation strong { color: #0f172a; }
+
+/* Mobile breakpoints */
+@media (max-width: 640px) {
+  .pe-bar-inner { padding: 12px 14px; gap: 10px; }
+  .pe-bar-title { font-size: 13px; }
+  .pe-bar-progress { font-size: 12.5px; min-width: 100%; order: 3; text-align: left; }
+  .pe-btn { padding: 8px 14px; font-size: 13px; }
+  .pe-q { padding: 18px 16px 14px; }
+  .pe-opt { padding: 10px 12px; gap: 9px; }
+  .pe-opt-letter { width: 26px; height: 26px; font-size: 13px; }
+  .pe-opt-text { font-size: 14.5px; }
+  .pe-opt-correct::after,
+  .pe-opt-incorrect::after { display: block; margin: 6px 0 0 36px; align-self: flex-start; }
+  .pe-score-headline { font-size: 20px; }
+}
+
+/* Print: revert to a clean static form */
+@media print {
+  .pe-bar { background: #f1f5f9; color: #0f172a; box-shadow: none; }
+  .pe-btn { display: none; }
+}
