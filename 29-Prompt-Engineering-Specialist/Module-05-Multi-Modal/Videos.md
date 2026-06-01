@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 16 min · Voice apps in 2026</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="ZoVHBpLfRGs" href="https://www.youtube.com/results?search_query=multimodal+RAG+image+pdf+long+context" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=multimodal+RAG+image+pdf+long+context" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>

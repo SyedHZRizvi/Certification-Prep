@@ -80,7 +80,7 @@
       <span class="vg-duration">⏱ 25m · The faster way</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="W7c8tFKEMgQ" href="https://www.youtube.com/results?search_query=openai+fine+tuning+api+walkthrough+2024" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=openai+fine+tuning+api+walkthrough+2024" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -112,7 +112,7 @@
       <span class="vg-duration">⏱ 25m · LoRA successor</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="QQs23-Eb_T0" href="https://www.youtube.com/results?search_query=knowledge+distillation+llm+small+model" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=knowledge+distillation+llm+small+model" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

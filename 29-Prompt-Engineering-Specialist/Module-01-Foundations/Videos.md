@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" data-video-id="z6lwT8eXqkc" href="https://www.youtube.com/results?search_query=lost+in+the+middle+paper+long+context+llm" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=lost+in+the+middle+paper+long+context+llm" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

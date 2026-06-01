@@ -30,7 +30,7 @@
       <span class="vg-duration">⏱ 50m · The serving standard</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="35sKAaT8XZc" href="https://www.youtube.com/results?search_query=litellm+gateway+model+routing+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=litellm+gateway+model+routing+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -39,7 +39,7 @@
       <span class="vg-duration">⏱ 40m · One API, all providers</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="2E_On-TfOAU" href="https://www.youtube.com/results?search_query=langfuse+open+source+observability+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=langfuse+open+source+observability+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -48,7 +48,7 @@
       <span class="vg-duration">⏱ 45m · Traces + costs + evals</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="dwUjJ7uTAGw" href="https://www.youtube.com/results?search_query=prompt+caching+anthropic+openai+cost" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=prompt+caching+anthropic+openai+cost" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -62,7 +62,7 @@
 ## 📚 Recommended
 
 <div class="vg-grid">
-  <a class="vg-card" data-video-id="LTHvtNTeAYQ" href="https://www.youtube.com/results?search_query=modal+labs+gpu+serverless+inference" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=modal+labs+gpu+serverless+inference" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -71,7 +71,7 @@
       <span class="vg-duration">⏱ 35m · "Lambda for GPUs"</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="3oCJ2C_xV34" href="https://www.youtube.com/results?search_query=helicone+llm+observability+proxy" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=helicone+llm+observability+proxy" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -89,7 +89,7 @@
       <span class="vg-duration">⏱ 30m · Draft + verify</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="JJocnI3y5VM" href="https://www.youtube.com/results?search_query=gptcache+semantic+cache+llm" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=gptcache+semantic+cache+llm" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -103,7 +103,7 @@
 ## 🍿 Optional
 
 <div class="vg-grid">
-  <a class="vg-card" data-video-id="bvLmW_oJpvk" href="https://www.youtube.com/results?search_query=tensorrt+llm+nvidia+inference+optimization" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=tensorrt+llm+nvidia+inference+optimization" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -121,7 +121,7 @@
       <span class="vg-duration">⏱ 20m · Consumer-grade serving</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="WGuOSpw_NS8" href="https://www.youtube.com/results?search_query=groq+lpu+inference+fast+latency" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=groq+lpu+inference+fast+latency" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

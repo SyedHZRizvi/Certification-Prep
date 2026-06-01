@@ -400,3 +400,53 @@ Any PR that touches `functions/` MUST:
 4. Be tested end-to-end with `wrangler pages dev` locally before deploying to production.
 
 ---
+
+## 10. Video compliance (legal posture for third-party content)
+
+The site references ~2,500 YouTube videos across the 32 courses (in
+`Videos.md` files). **No video content is ever downloaded, cached,
+or rehosted.** All inline playback uses YouTube's sanctioned Embed
+Player API (iframe in `assets/video-modal.js`). All cards have a
+fallback `href` to a `youtube.com/results?search_query=...` URL that
+remains clickable even if the inline modal fails.
+
+Full policy + monitoring playbook lives in **`docs/VIDEO-COMPLIANCE.md`**.
+
+### 10.1 Hard rules
+
+- Never download YouTube video content via yt-dlp, youtube-dl, or any
+  similar tool. Not on dev, not on CI, not on prod. Hard policy line.
+- Never put a direct `youtube.com/watch?v=...` or `youtu.be/...` URL
+  in any `href` attribute. The pre-commit verifier rejects these.
+- Real 11-char YouTube IDs only belong in `data-video-id=""` — which
+  is auditable + removable by the twice-weekly job.
+
+### 10.2 Automated monitoring
+
+`.github/workflows/audit-videos.yml` runs **every Monday and Thursday
+at 09:00 UTC**:
+
+1. Executes `scripts/audit-video-ids.py` against all Videos.md
+2. Calls YouTube's public oEmbed API for each unique `data-video-id`
+3. Identifies HTTP 404 (removed/private) and 401 (embedding disabled)
+4. Opens a GitHub Issue with the full report (labels: `video-audit`,
+   `compliance`)
+5. Auto-creates a PR that strips the broken IDs (cards keep their
+   search-URL fallback — graceful degradation)
+
+A human reviewer (currently Humayun) can replace high-traffic broken
+IDs with equivalent canonical videos before merging the auto-PR.
+
+### 10.3 Litigation risk model
+
+| Risk | Likelihood | Mitigation |
+|---|---|---|
+| Copyright takedown from a creator | Very low | We embed, never host. Removable in one config change. |
+| YouTube ToS violation claim | Very low | Embed Player API + search URLs only. No scraping. |
+| Student sees broken inline video | Medium | Twice-weekly audit + graceful degradation to search URL. |
+| Mass embedding-disabled by creators | Low | Audit catches HTTP 401 same as 404. Auto-fix strips both. |
+
+See `docs/VIDEO-COMPLIANCE.md` §4 for the full risk matrix + the
+quarterly-review checklist.
+
+---

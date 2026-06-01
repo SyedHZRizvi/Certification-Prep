@@ -134,7 +134,7 @@
       <span class="vg-duration">⏱ 20m · The position scheme</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="5G7Op0PnHpY" href="https://www.youtube.com/results?search_query=anthropic+prompt+caching+explained" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=anthropic+prompt+caching+explained" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

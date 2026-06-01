@@ -1,0 +1,166 @@
+name: Audit video links (twice weekly)
+
+# Runs the scripts/audit-video-ids.py compliance audit on a schedule.
+# When broken/removed YouTube videos are detected, opens a GitHub Issue
+# with the full report and (optionally) auto-creates a PR that strips
+# the broken data-video-id attributes — the cards then degrade to their
+# existing search-URL href fallback.
+#
+# Schedule: 09:00 UTC every Monday and Thursday (per Humayun's "twice
+# weekly" compliance cadence). Also runnable manually from the Actions
+# tab via workflow_dispatch.
+#
+# Legal posture: see docs/VIDEO-COMPLIANCE.md. No video content is
+# downloaded by this workflow. It only verifies that public YouTube
+# IDs still resolve via the YouTube-sanctioned oEmbed API.
+
+on:
+  schedule:
+    - cron: '0 9 * * 1,4'   # Mon + Thu, 09:00 UTC
+  workflow_dispatch:        # manual trigger button in Actions UI
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write       # so we can auto-PR the cleanup
+      issues:   write       # so we can open the report issue
+      pull-requests: write
+    steps:
+      - name: Check out
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run audit (report-only first)
+        id: audit
+        run: |
+          python3 scripts/audit-video-ids.py --check
+          # Exit code: 0 = all clear; 1 = some broken; 2 = unrecoverable
+          # We capture the report regardless so the next steps can read it.
+        continue-on-error: true   # don't fail the job; let the report drive
+                                  # the rest of the workflow
+
+      - name: Read report
+        id: report
+        run: |
+          if [ -f /tmp/video-audit-report.json ]; then
+            BROKEN=$(jq '.summary.broken'   /tmp/video-audit-report.json)
+            NOEMBED=$(jq '.summary.no_embed' /tmp/video-audit-report.json)
+            LIVE=$(jq '.summary.live'        /tmp/video-audit-report.json)
+            TOTAL=$(jq '.total_unique_ids'   /tmp/video-audit-report.json)
+            echo "broken=$BROKEN"   >> $GITHUB_OUTPUT
+            echo "noembed=$NOEMBED" >> $GITHUB_OUTPUT
+            echo "live=$LIVE"       >> $GITHUB_OUTPUT
+            echo "total=$TOTAL"     >> $GITHUB_OUTPUT
+            echo "::notice::Video audit — $LIVE/$TOTAL live, $BROKEN broken, $NOEMBED no-embed"
+          else
+            echo "::error::audit script did not produce /tmp/video-audit-report.json"
+            exit 2
+          fi
+
+      - name: Upload audit report artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: video-audit-report-${{ github.run_number }}
+          path: /tmp/video-audit-report.json
+          retention-days: 90
+
+      # If there are broken IDs: open a GitHub Issue + auto-PR the cleanup
+      - name: Open issue for broken IDs
+        if: ${{ steps.report.outputs.broken != '0' }}
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const report = JSON.parse(fs.readFileSync('/tmp/video-audit-report.json', 'utf-8'));
+            const lines = [];
+            lines.push(`### 📺 Video link audit — ${report.summary.broken} broken IDs detected`);
+            lines.push('');
+            lines.push(`**Scanned at:** ${report.scanned_at}`);
+            lines.push(`**Total unique IDs checked:** ${report.total_unique_ids}`);
+            lines.push(`**Total card occurrences:** ${report.total_card_occurrences}`);
+            lines.push('');
+            lines.push('| Status | Count |');
+            lines.push('|---|---|');
+            lines.push(`| ✅ Live | ${report.summary.live} |`);
+            lines.push(`| ⚠️ Embedding disabled (401) | ${report.summary.no_embed} |`);
+            lines.push(`| ❌ Broken / removed (404) | ${report.summary.broken} |`);
+            lines.push(`| ⚪ Transient errors | ${report.summary.errors} |`);
+            lines.push('');
+            lines.push('### Broken video IDs');
+            lines.push('');
+            for (const item of report.broken_ids.slice(0, 50)) {
+              lines.push(`- \`${item.id}\` (${item.card_count} card${item.card_count === 1 ? '' : 's'})`);
+              for (const loc of item.locations.slice(0, 5)) {
+                lines.push(`    - \`${loc.file}:${loc.line}\``);
+              }
+              if (item.locations.length > 5) {
+                lines.push(`    - … and ${item.locations.length - 5} more locations`);
+              }
+            }
+            if (report.broken_ids.length > 50) {
+              lines.push(`- … and ${report.broken_ids.length - 50} more — see attached artifact.`);
+            }
+            lines.push('');
+            lines.push('### What happens next');
+            lines.push('');
+            lines.push('A follow-up PR will be auto-opened that strips these broken');
+            lines.push('`data-video-id` attributes. Cards retain their existing');
+            lines.push('`href="https://www.youtube.com/results?search_query=..."` so');
+            lines.push('clicking them takes the student to a live YouTube search for');
+            lines.push('the topic instead of an inline modal — graceful degradation.');
+            lines.push('');
+            lines.push('A human reviewer can replace any high-traffic broken IDs');
+            lines.push('with equivalent canonical videos before merging the PR.');
+            lines.push('');
+            lines.push('See `docs/VIDEO-COMPLIANCE.md` for the full legal + ops policy.');
+
+            await github.rest.issues.create({
+              owner:  context.repo.owner,
+              repo:   context.repo.repo,
+              title:  `📺 Video audit ${report.scanned_at.split('T')[0]} — ${report.summary.broken} broken IDs`,
+              body:   lines.join('\n'),
+              labels: ['video-audit', 'compliance'],
+            });
+
+      - name: Run auto-fix (strip broken IDs)
+        if: ${{ steps.report.outputs.broken != '0' }}
+        run: |
+          python3 scripts/audit-video-ids.py --auto-fix
+
+      - name: Create cleanup PR
+        if: ${{ steps.report.outputs.broken != '0' }}
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: |
+            Video audit: strip ${{ steps.report.outputs.broken }} broken data-video-id values
+
+            Auto-generated by .github/workflows/audit-videos.yml.
+
+            These video IDs no longer resolve via YouTube's oEmbed API
+            (HTTP 404 — removed, set to private, or never existed).
+            Cards keep their existing youtube.com/results?search_query=
+            href, so end-user behavior degrades gracefully to a topical
+            YouTube search instead of an inline-modal failure.
+
+            See docs/VIDEO-COMPLIANCE.md for the full policy.
+          title:  "🤖 Video audit: strip ${{ steps.report.outputs.broken }} broken data-video-id values"
+          body: |
+            Twice-weekly automated cleanup. The companion Issue lists
+            the specific broken IDs. Merge this PR to remove them; the
+            cards keep their YouTube-search href fallback and remain
+            clickable / educational.
+
+            **Legal posture reminder:** no video content is downloaded,
+            copied, or rehosted. We rely on YouTube's Embed Player API
+            (iframe) for inline play and on YouTube search-URL fallback
+            for redundancy. See `docs/VIDEO-COMPLIANCE.md`.
+          branch: bot/video-audit-cleanup-${{ github.run_number }}
+          delete-branch: true
+          labels: |
+            video-audit
+            automated

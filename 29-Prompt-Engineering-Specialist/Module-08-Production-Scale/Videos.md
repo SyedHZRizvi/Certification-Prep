@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~65 min)
 
 <div class="vg-grid">
-  <a class="vg-card" data-video-id="5G7Op0PnHpY" href="https://www.youtube.com/results?search_query=anthropic+prompt+caching+walkthrough+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=anthropic+prompt+caching+walkthrough+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 16 min · The biggest cost lever</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="35sKAaT8XZc" href="https://www.youtube.com/results?search_query=LiteLLM+multi+provider+abstraction+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=LiteLLM+multi+provider+abstraction+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 18 min · Fallbacks, router, cost</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="2E_On-TfOAU" href="https://www.youtube.com/results?search_query=Langfuse+observability+LLM+open+source+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Langfuse+observability+LLM+open+source+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 14 min · Traces + prompts + costs</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="V49aFGiqzfo" href="https://www.youtube.com/results?search_query=Eugene+Yan+patterns+for+building+LLM+systems+talk" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Eugene+Yan+patterns+for+building+LLM+systems+talk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~45 min)
 
 <div class="vg-grid">
-  <a class="vg-card" data-video-id="JJocnI3y5VM" href="https://www.youtube.com/results?search_query=GPTCache+semantic+cache+tutorial+LLM" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=GPTCache+semantic+cache+tutorial+LLM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>

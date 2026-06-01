@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~75 min)
 
 <div class="vg-grid">
-  <a class="vg-card" data-video-id="L7dunGFucao" href="https://www.youtube.com/results?search_query=AWS+Machine+Learning+Specialty+exam+overview+Stephane+Maarek" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Machine+Learning+Specialty+exam+overview+Stephane+Maarek" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>📝</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -75,7 +75,7 @@
 ## 📚 Recommended (~40 min)
 
 <div class="vg-grid">
-  <a class="vg-card" data-video-id="VTRYYZjEkMo" href="https://www.youtube.com/results?search_query=Capital+One+SageMaker+fraud+detection+reinvent" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Capital+One+SageMaker+fraud+detection+reinvent" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🏦</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -107,7 +107,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" data-video-id="hr-mljNFLPM" href="https://www.youtube.com/results?search_query=AWS+Well-Architected+Machine+Learning+Lens" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Well-Architected+Machine+Learning+Lens" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🧭</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 38 min · Production ML best practice</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="PPLop4L2eGk" href="https://www.youtube.com/results?search_query=Andrew+Ng+machine+learning+basics+intuition" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Andrew+Ng+machine+learning+basics+intuition" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎓</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -125,7 +125,7 @@
       <span class="vg-duration">⏱ 60 min · The canonical intro lecture</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="lYQt4dmRQ5s" href="https://www.youtube.com/results?search_query=Netflix+recommendation+system+ML+architecture" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Netflix+recommendation+system+ML+architecture" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -134,7 +134,7 @@
       <span class="vg-duration">⏱ 45 min · Real production ML at planet scale</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="aim3iGjbGZ4" href="https://www.youtube.com/results?search_query=Werner+Vogels+reinvent+keynote+2024+AI+ML" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Werner+Vogels+reinvent+keynote+2024+AI+ML" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎤</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

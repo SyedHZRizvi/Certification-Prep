@@ -105,7 +105,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=KRACK+attack+Mathy+Vanhoef+demonstration" data-video-id="sg-t7w8hAi0" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=KRACK+attack+Mathy+Vanhoef+demonstration" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

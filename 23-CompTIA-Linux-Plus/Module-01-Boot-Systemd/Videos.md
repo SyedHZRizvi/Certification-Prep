@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 14 min · The 6-stage boot chain</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=GRUB2+configuration+tutorial+Linux" data-video-id="LhhqiDjJNDo" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=GRUB2+configuration+tutorial+Linux" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>

@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 22 min · Why even random labels help</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="5G7Op0PnHpY" href="https://www.youtube.com/results?search_query=anthropic+prompt+caching+walkthrough" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=anthropic+prompt+caching+walkthrough" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 14 min · Slash cost on long few-shot</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="9YDfb2lyHcs" href="https://www.youtube.com/results?search_query=OpenAI+Evals+few+shot+prompt+benchmark" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=OpenAI+Evals+few+shot+prompt+benchmark" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

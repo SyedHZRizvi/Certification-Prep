@@ -114,7 +114,7 @@
       <span class="vg-duration">⏱ 15 min · Hands-on technique</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Hardware+Canucks+80+plus+psu+ratings+explained" data-video-id="NCUFZ3zUO-I" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Hardware+Canucks+80+plus+psu+ratings+explained" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

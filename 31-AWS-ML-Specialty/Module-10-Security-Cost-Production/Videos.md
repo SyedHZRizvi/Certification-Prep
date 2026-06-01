@@ -21,7 +21,7 @@
 ## ⭐ Essential (~70 min)
 
 <div class="vg-grid">
-  <a class="vg-card" data-video-id="0jx2unJBnIQ" href="https://www.youtube.com/results?search_query=SageMaker+security+VPC+KMS+IAM+best+practices" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=SageMaker+security+VPC+KMS+IAM+best+practices" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🔐</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -85,7 +85,7 @@
 ## 🍿 Optional
 
 <div class="vg-grid">
-  <a class="vg-card" data-video-id="zP5Y8jrK4J0" href="https://www.youtube.com/results?search_query=Pinterest+ML+infrastructure+reinvent+talk" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Pinterest+ML+infrastructure+reinvent+talk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>📌</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -94,7 +94,7 @@
       <span class="vg-duration">⏱ 45 min · Real cost + security war stories</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="A1IpEcd-AHk" href="https://www.youtube.com/results?search_query=SageMaker+Studio+lifecycle+config+idle+auto+shutdown" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=SageMaker+Studio+lifecycle+config+idle+auto+shutdown" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>⏰</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 18 min · The remote action decision tree</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Intune+IME+log+troubleshooting+app+install" data-video-id="dSFk1tboMwo" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Intune+IME+log+troubleshooting+app+install" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>

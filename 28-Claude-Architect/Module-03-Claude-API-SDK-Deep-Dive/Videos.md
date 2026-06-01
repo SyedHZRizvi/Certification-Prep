@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 15 min · End-to-end first call</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="5G7Op0PnHpY" href="https://www.youtube.com/results?search_query=Anthropic+prompt+caching+tutorial+90+percent+cost+cut" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+prompt+caching+tutorial+90+percent+cost+cut" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -107,7 +107,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" data-video-id="2E_On-TfOAU" href="https://www.youtube.com/results?search_query=Claude+API+observability+Langfuse+Helicone" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Claude+API+observability+Langfuse+Helicone" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -134,7 +134,7 @@
       <span class="vg-duration">⏱ 30 min · Production patterns</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="qIFCMnEdOII" href="https://www.youtube.com/results?search_query=Klarna+AI+assistant+Claude+production+scale" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Klarna+AI+assistant+Claude+production+scale" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

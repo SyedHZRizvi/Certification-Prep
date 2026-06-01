@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 18 min · The 2023 case study</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="EUjcZsAI4d8" href="https://www.youtube.com/results?search_query=many-shot+jailbreaking+anthropic+long+context" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=many-shot+jailbreaking+anthropic+long+context" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 22 min · The security framework</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="RoLUO6mZsfM" href="https://www.youtube.com/results?search_query=LlamaGuard+3+meta+input+output+safety" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=LlamaGuard+3+meta+input+output+safety" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
