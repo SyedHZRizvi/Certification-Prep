@@ -990,11 +990,17 @@ layout: none
     // Approximate 2026-06 exchange rates (live API integration would be ideal
     // long-term — for now these are quarterly-updated approximations; the
     // disclaimer in the UI tells users payments are processed in USD).
+    // Display rates: a blend of approximate interbank rates and marketing-
+    // friendly round-number targets. GBP + EUR share the same display rate
+    // (0.85) so both currencies land on the same three clean tier prices
+    // (£/€ 75 · 125 · 175) — per Humayun's pricing preference for the
+    // European market. The disclaimer below the total tells users the actual
+    // charge is in USD and non-USD figures are approximate.
     const CURRENCIES = {
       USD: { symbol: "$",   rate: 1.00,   name: "US Dollar"        },
       CAD: { symbol: "$",   rate: 1.36,   name: "Canadian Dollar"  },
-      GBP: { symbol: "£",   rate: 0.78,   name: "British Pound"    },
-      EUR: { symbol: "€",   rate: 0.92,   name: "Euro"             },
+      GBP: { symbol: "£",   rate: 0.85,   name: "British Pound"    },
+      EUR: { symbol: "€",   rate: 0.85,   name: "Euro"             },
       AUD: { symbol: "$",   rate: 1.50,   name: "Australian Dollar"},
       PKR: { symbol: "₨",   rate: 280,    name: "Pakistani Rupee"  },
       INR: { symbol: "₹",   rate: 84,     name: "Indian Rupee"     },
