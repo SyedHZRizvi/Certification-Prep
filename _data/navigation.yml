@@ -371,57 +371,6 @@ tracks:
         slug: Flashcards
         single_file: true
 
-  - id: aws-aif
-    title: AWS AI Practitioner
-    subtitle: AIF-C01 GenAI Certification
-    color: purple
-    color_from: "#a855f7"
-    color_to: "#7e22ce"
-    icon: "🤖"
-    base: "/07-AWS-AI-Practitioner/"
-    modules:
-      - num: 1
-        title: AI/ML Fundamentals
-        slug: Module-01-AI-ML-Fundamentals
-      - num: 2
-        title: ML Workflow & SageMaker
-        slug: Module-02-ML-Workflow-SageMaker
-      - num: 3
-        title: Generative AI Fundamentals
-        slug: Module-03-Generative-AI-Fundamentals
-      - num: 4
-        title: AWS GenAI Stack (Bedrock, Q)
-        slug: Module-04-AWS-GenAI-Stack
-      - num: 5
-        title: Prompt Engineering & RAG
-        slug: Module-05-Prompt-Engineering-RAG
-      - num: 6
-        title: Fine-Tuning & Customization
-        slug: Module-06-Fine-Tuning-Customization
-      - num: 7
-        title: Responsible AI
-        slug: Module-07-Responsible-AI
-      - num: 8
-        title: AI Security & Governance
-        slug: Module-08-AI-Security-Governance
-    extras:
-      - num: 9
-        title: Practice Exam 1
-        slug: Practice-Exams/Practice-Exam-1
-        single_file: true
-      - num: 10
-        title: Practice Exam 2
-        slug: Practice-Exams/Practice-Exam-2
-        single_file: true
-      - num: 11
-        title: Final Mock Exam (65q / 120min)
-        slug: Practice-Exams/Final-Mock-Exam
-        single_file: true
-      - num: 12
-        title: Master Flashcards
-        slug: Flashcards
-        single_file: true
-
   - id: az-900
     title: Azure Fundamentals
     subtitle: AZ-900 Foundation Certification
@@ -524,57 +473,6 @@ tracks:
         slug: Flashcards
         single_file: true
 
-  - id: az-ai102
-    title: Azure AI Engineer
-    subtitle: AI-102 Associate Certification
-    color: pink
-    color_from: "#ec4899"
-    color_to: "#be185d"
-    icon: "🧠"
-    base: "/08-Azure-AI-Engineer/"
-    modules:
-      - num: 1
-        title: AI Services Overview
-        slug: Module-01-AI-Services-Overview
-      - num: 2
-        title: Responsible AI & Content Safety
-        slug: Module-02-Responsible-AI-Content-Safety
-      - num: 3
-        title: Computer Vision
-        slug: Module-03-Computer-Vision
-      - num: 4
-        title: Natural Language Processing
-        slug: Module-04-Natural-Language-Processing
-      - num: 5
-        title: Document Intelligence & Knowledge Mining
-        slug: Module-05-Document-Intelligence-Knowledge-Mining
-      - num: 6
-        title: Conversational AI
-        slug: Module-06-Conversational-AI
-      - num: 7
-        title: Azure OpenAI Service
-        slug: Module-07-Azure-OpenAI-Service
-      - num: 8
-        title: Build GenAI Apps (AI Foundry)
-        slug: Module-08-Build-GenAI-Apps
-    extras:
-      - num: 9
-        title: Practice Exam 1
-        slug: Practice-Exams/Practice-Exam-1
-        single_file: true
-      - num: 10
-        title: Practice Exam 2
-        slug: Practice-Exams/Practice-Exam-2
-        single_file: true
-      - num: 11
-        title: Final Mock Exam (55q / 100min)
-        slug: Practice-Exams/Final-Mock-Exam
-        single_file: true
-      - num: 12
-        title: Master Flashcards
-        slug: Flashcards
-        single_file: true
-
   - id: windows-server-hybrid
     title: Windows Server Hybrid Admin
     subtitle: AZ-800 + AZ-801 (Microsoft Associate)
@@ -645,6 +543,382 @@ tracks:
       - { num: 10, title: "Practice Exam 2", slug: Practice-Exams/Practice-Exam-2, single_file: true }
       - { num: 11, title: "Final Mock Exam (50q / 100min)", slug: Practice-Exams/Final-Mock-Exam, single_file: true }
       - { num: 12, title: "Master Flashcards", slug: Flashcards, single_file: true }
+
+  - id: aws-aif
+    title: AWS AI Practitioner
+    subtitle: AIF-C01 GenAI Certification
+    color: purple
+    color_from: "#a855f7"
+    color_to: "#7e22ce"
+    icon: "🤖"
+    base: "/07-AWS-AI-Practitioner/"
+    modules:
+      - num: 1
+        title: AI/ML Fundamentals
+        slug: Module-01-AI-ML-Fundamentals
+      - num: 2
+        title: ML Workflow & SageMaker
+        slug: Module-02-ML-Workflow-SageMaker
+      - num: 3
+        title: Generative AI Fundamentals
+        slug: Module-03-Generative-AI-Fundamentals
+      - num: 4
+        title: AWS GenAI Stack (Bedrock, Q)
+        slug: Module-04-AWS-GenAI-Stack
+      - num: 5
+        title: Prompt Engineering & RAG
+        slug: Module-05-Prompt-Engineering-RAG
+      - num: 6
+        title: Fine-Tuning & Customization
+        slug: Module-06-Fine-Tuning-Customization
+      - num: 7
+        title: Responsible AI
+        slug: Module-07-Responsible-AI
+      - num: 8
+        title: AI Security & Governance
+        slug: Module-08-AI-Security-Governance
+    extras:
+      - num: 9
+        title: Practice Exam 1
+        slug: Practice-Exams/Practice-Exam-1
+        single_file: true
+      - num: 10
+        title: Practice Exam 2
+        slug: Practice-Exams/Practice-Exam-2
+        single_file: true
+      - num: 11
+        title: Final Mock Exam (65q / 120min)
+        slug: Practice-Exams/Final-Mock-Exam
+        single_file: true
+      - num: 12
+        title: Master Flashcards
+        slug: Flashcards
+        single_file: true
+
+  - id: az-ai102
+    title: Azure AI Engineer
+    subtitle: AI-102 Associate Certification
+    color: pink
+    color_from: "#ec4899"
+    color_to: "#be185d"
+    icon: "🧠"
+    base: "/08-Azure-AI-Engineer/"
+    modules:
+      - num: 1
+        title: AI Services Overview
+        slug: Module-01-AI-Services-Overview
+      - num: 2
+        title: Responsible AI & Content Safety
+        slug: Module-02-Responsible-AI-Content-Safety
+      - num: 3
+        title: Computer Vision
+        slug: Module-03-Computer-Vision
+      - num: 4
+        title: Natural Language Processing
+        slug: Module-04-Natural-Language-Processing
+      - num: 5
+        title: Document Intelligence & Knowledge Mining
+        slug: Module-05-Document-Intelligence-Knowledge-Mining
+      - num: 6
+        title: Conversational AI
+        slug: Module-06-Conversational-AI
+      - num: 7
+        title: Azure OpenAI Service
+        slug: Module-07-Azure-OpenAI-Service
+      - num: 8
+        title: Build GenAI Apps (AI Foundry)
+        slug: Module-08-Build-GenAI-Apps
+    extras:
+      - num: 9
+        title: Practice Exam 1
+        slug: Practice-Exams/Practice-Exam-1
+        single_file: true
+      - num: 10
+        title: Practice Exam 2
+        slug: Practice-Exams/Practice-Exam-2
+        single_file: true
+      - num: 11
+        title: Final Mock Exam (55q / 100min)
+        slug: Practice-Exams/Final-Mock-Exam
+        single_file: true
+      - num: 12
+        title: Master Flashcards
+        slug: Flashcards
+        single_file: true
+
+  - id: prompt-engineering
+    title: Prompt Engineering Specialist
+    subtitle: Cert Hub Original — Vendor-Neutral
+    color: pink
+    color_from: "#db2777"
+    color_to: "#9333ea"
+    icon: "✍️"
+    base: "/29-Prompt-Engineering-Specialist/"
+    modules:
+      - num: 1
+        title: Foundations of Prompt Engineering
+        slug: Module-01-Foundations
+      - num: 2
+        title: Zero-Shot, Few-Shot & In-Context Learning
+        slug: Module-02-Few-Shot-In-Context
+      - num: 3
+        title: Chain-of-Thought & Reasoning Techniques
+        slug: Module-03-Chain-of-Thought-Reasoning
+      - num: 4
+        title: Structured Outputs & JSON Mode
+        slug: Module-04-Structured-Outputs-JSON
+      - num: 5
+        title: Multi-Modal Prompting (Vision, Audio)
+        slug: Module-05-Multi-Modal
+      - num: 6
+        title: Prompt Evaluation & A/B Testing
+        slug: Module-06-Evaluation-AB-Testing
+      - num: 7
+        title: Adversarial Prompts & Jailbreak Defense
+        slug: Module-07-Adversarial-Defense
+      - num: 8
+        title: Production Prompt Engineering at Scale
+        slug: Module-08-Production-Scale
+    extras:
+      - num: 9
+        title: Practice Exam 1
+        slug: Practice-Exams/Practice-Exam-1
+        single_file: true
+      - num: 10
+        title: Practice Exam 2
+        slug: Practice-Exams/Practice-Exam-2
+        single_file: true
+      - num: 11
+        title: Final Mock Exam (60q / 60min)
+        slug: Practice-Exams/Final-Mock-Exam
+        single_file: true
+      - num: 12
+        title: Master Flashcards
+        slug: Flashcards
+        single_file: true
+
+  - id: google-ai-pro
+    title: Google AI Pro
+    subtitle: Gemini · Vertex AI · GenAI Leader · PMLE
+    color: blue
+    color_from: "#4285f4"
+    color_to: "#34a853"
+    icon: "💎"
+    base: "/32-Google-AI-Pro/"
+    modules:
+      - num: 1
+        title: Google AI Landscape & Gemini Model Family
+        slug: Module-01-Google-AI-Landscape-Gemini
+      - num: 2
+        title: Google AI Studio & Gemini API
+        slug: Module-02-AI-Studio-Gemini-API
+      - num: 3
+        title: Vertex AI Platform Deep Dive
+        slug: Module-03-Vertex-AI-Platform
+      - num: 4
+        title: Multi-Modal AI with Gemini (Vision, Audio, Video)
+        slug: Module-04-Multi-Modal-Gemini
+      - num: 5
+        title: RAG on Google Cloud (Vertex AI Search, AlloyDB)
+        slug: Module-05-RAG-Google-Cloud
+      - num: 6
+        title: Fine-Tuning & Model Customization on Vertex AI
+        slug: Module-06-Fine-Tuning-Vertex-AI
+      - num: 7
+        title: Agent Builder & Conversational AI
+        slug: Module-07-Agent-Builder-Conversational
+      - num: 8
+        title: Responsible AI on Google Cloud
+        slug: Module-08-Responsible-AI-Google
+      - num: 9
+        title: MLOps on Google Cloud (Vertex AI Pipelines)
+        slug: Module-09-MLOps-Vertex-AI
+      - num: 10
+        title: Production Patterns & Capstone Case Studies
+        slug: Module-10-Production-Capstone
+    extras:
+      - num: 11
+        title: Practice Exam 1
+        slug: Practice-Exams/Practice-Exam-1
+        single_file: true
+      - num: 12
+        title: Practice Exam 2
+        slug: Practice-Exams/Practice-Exam-2
+        single_file: true
+      - num: 13
+        title: Final Mock Exam (60q / 90min)
+        slug: Practice-Exams/Final-Mock-Exam
+        single_file: true
+      - num: 14
+        title: Master Flashcards
+        slug: Flashcards
+        single_file: true
+
+# Sub-pages within each module
+  - id: claude-architect
+    title: Claude Architect
+    subtitle: Cert Hub Original — Anthropic-aligned
+    color: indigo
+    color_from: "#4f46e5"
+    color_to: "#7c3aed"
+    icon: "🧬"
+    base: "/28-Claude-Architect/"
+    modules:
+      - num: 1
+        title: Claude Foundations & Constitutional AI
+        slug: Module-01-Claude-Foundations-Constitutional-AI
+      - num: 2
+        title: Prompt Engineering with Claude
+        slug: Module-02-Prompt-Engineering-Claude
+      - num: 3
+        title: Claude API & SDK Deep Dive
+        slug: Module-03-Claude-API-SDK-Deep-Dive
+      - num: 4
+        title: Tool Use & Function Calling
+        slug: Module-04-Tool-Use-Function-Calling
+      - num: 5
+        title: Model Context Protocol (MCP)
+        slug: Module-05-Model-Context-Protocol-MCP
+      - num: 6
+        title: Agentic Patterns with Claude
+        slug: Module-06-Agentic-Patterns
+      - num: 7
+        title: RAG & Long-Context with Claude
+        slug: Module-07-RAG-Long-Context
+      - num: 8
+        title: Production Patterns & Safety
+        slug: Module-08-Production-Patterns-Safety
+    extras:
+      - num: 9
+        title: Practice Exam 1
+        slug: Practice-Exams/Practice-Exam-1
+        single_file: true
+      - num: 10
+        title: Practice Exam 2
+        slug: Practice-Exams/Practice-Exam-2
+        single_file: true
+      - num: 11
+        title: Final Mock Exam (60q / 60min)
+        slug: Practice-Exams/Final-Mock-Exam
+        single_file: true
+      - num: 12
+        title: Master Flashcards
+        slug: Flashcards
+        single_file: true
+
+  - id: genai-engineer
+    title: Generative AI Engineer
+    subtitle: Cert Hub Original — Full-Stack GenAI
+    color: yellow
+    color_from: "#eab308"
+    color_to: "#f97316"
+    icon: "⚡"
+    base: "/30-Generative-AI-Engineer/"
+    modules:
+      - num: 1
+        title: LLM Architecture & Tokenization
+        slug: Module-01-LLM-Architecture-Tokenization
+      - num: 2
+        title: Embeddings & Vector Databases
+        slug: Module-02-Embeddings-Vector-Databases
+      - num: 3
+        title: RAG Architecture End-to-End
+        slug: Module-03-RAG-Architecture
+      - num: 4
+        title: LangChain & LlamaIndex Frameworks
+        slug: Module-04-LangChain-LlamaIndex
+      - num: 5
+        title: Fine-Tuning, PEFT & LoRA
+        slug: Module-05-Fine-Tuning-PEFT-LoRA
+      - num: 6
+        title: Multi-Agent Systems (CrewAI, AutoGen)
+        slug: Module-06-Multi-Agent-Systems
+      - num: 7
+        title: Evaluation (RAGAS, LLM-as-Judge)
+        slug: Module-07-Evaluation-RAGAS
+      - num: 8
+        title: Guardrails & Safety
+        slug: Module-08-Guardrails-Safety
+      - num: 9
+        title: Deployment, Observability & Cost
+        slug: Module-09-Deployment-Observability
+      - num: 10
+        title: GenAI Production Case Studies
+        slug: Module-10-Production-Case-Studies
+    extras:
+      - num: 11
+        title: Practice Exam 1
+        slug: Practice-Exams/Practice-Exam-1
+        single_file: true
+      - num: 12
+        title: Practice Exam 2
+        slug: Practice-Exams/Practice-Exam-2
+        single_file: true
+      - num: 13
+        title: Final Mock Exam (65q / 90min)
+        slug: Practice-Exams/Final-Mock-Exam
+        single_file: true
+      - num: 14
+        title: Master Flashcards
+        slug: Flashcards
+        single_file: true
+
+  - id: aws-ml-specialty
+    title: AWS ML Specialty
+    subtitle: MLS-C01
+    color: orange
+    color_from: "#f97316"
+    color_to: "#dc2626"
+    icon: "🔬"
+    base: "/31-AWS-ML-Specialty/"
+    modules:
+      - num: 1
+        title: ML Foundations & AWS Landscape
+        slug: Module-01-ML-Foundations-AWS-Landscape
+      - num: 2
+        title: Data Engineering for ML (S3, Glue, Kinesis)
+        slug: Module-02-Data-Engineering-ML
+      - num: 3
+        title: Exploratory Data Analysis & Feature Engineering
+        slug: Module-03-EDA-Feature-Engineering
+      - num: 4
+        title: SageMaker Studio & Built-In Algorithms
+        slug: Module-04-SageMaker-Studio-Algorithms
+      - num: 5
+        title: Deep Learning on AWS (Neuron, EC2 GPU)
+        slug: Module-05-Deep-Learning-AWS
+      - num: 6
+        title: NLP & Computer Vision Workflows
+        slug: Module-06-NLP-Computer-Vision
+      - num: 7
+        title: Amazon Bedrock & GenAI Services
+        slug: Module-07-Bedrock-GenAI-Services
+      - num: 8
+        title: Model Evaluation, Tuning & Bias
+        slug: Module-08-Evaluation-Tuning-Bias
+      - num: 9
+        title: MLOps — Pipelines, Deployment, Monitoring
+        slug: Module-09-MLOps-Pipelines-Deployment
+      - num: 10
+        title: Security, Cost & Production Best Practices
+        slug: Module-10-Security-Cost-Production
+    extras:
+      - num: 11
+        title: Practice Exam 1
+        slug: Practice-Exams/Practice-Exam-1
+        single_file: true
+      - num: 12
+        title: Practice Exam 2
+        slug: Practice-Exams/Practice-Exam-2
+        single_file: true
+      - num: 13
+        title: Final Mock Exam (65q / 180min)
+        slug: Practice-Exams/Final-Mock-Exam
+        single_file: true
+      - num: 14
+        title: Master Flashcards
+        slug: Flashcards
+        single_file: true
 
   - id: cpim
     title: ASCM CPIM
@@ -1244,280 +1518,6 @@ tracks:
         single_file: true
 
   # ============= Generative & Agentic AI Track =============
-  - id: prompt-engineering
-    title: Prompt Engineering Specialist
-    subtitle: Cert Hub Original — Vendor-Neutral
-    color: pink
-    color_from: "#db2777"
-    color_to: "#9333ea"
-    icon: "✍️"
-    base: "/29-Prompt-Engineering-Specialist/"
-    modules:
-      - num: 1
-        title: Foundations of Prompt Engineering
-        slug: Module-01-Foundations
-      - num: 2
-        title: Zero-Shot, Few-Shot & In-Context Learning
-        slug: Module-02-Few-Shot-In-Context
-      - num: 3
-        title: Chain-of-Thought & Reasoning Techniques
-        slug: Module-03-Chain-of-Thought-Reasoning
-      - num: 4
-        title: Structured Outputs & JSON Mode
-        slug: Module-04-Structured-Outputs-JSON
-      - num: 5
-        title: Multi-Modal Prompting (Vision, Audio)
-        slug: Module-05-Multi-Modal
-      - num: 6
-        title: Prompt Evaluation & A/B Testing
-        slug: Module-06-Evaluation-AB-Testing
-      - num: 7
-        title: Adversarial Prompts & Jailbreak Defense
-        slug: Module-07-Adversarial-Defense
-      - num: 8
-        title: Production Prompt Engineering at Scale
-        slug: Module-08-Production-Scale
-    extras:
-      - num: 9
-        title: Practice Exam 1
-        slug: Practice-Exams/Practice-Exam-1
-        single_file: true
-      - num: 10
-        title: Practice Exam 2
-        slug: Practice-Exams/Practice-Exam-2
-        single_file: true
-      - num: 11
-        title: Final Mock Exam (60q / 60min)
-        slug: Practice-Exams/Final-Mock-Exam
-        single_file: true
-      - num: 12
-        title: Master Flashcards
-        slug: Flashcards
-        single_file: true
-
-  - id: google-ai-pro
-    title: Google AI Pro
-    subtitle: Gemini · Vertex AI · GenAI Leader · PMLE
-    color: blue
-    color_from: "#4285f4"
-    color_to: "#34a853"
-    icon: "💎"
-    base: "/32-Google-AI-Pro/"
-    modules:
-      - num: 1
-        title: Google AI Landscape & Gemini Model Family
-        slug: Module-01-Google-AI-Landscape-Gemini
-      - num: 2
-        title: Google AI Studio & Gemini API
-        slug: Module-02-AI-Studio-Gemini-API
-      - num: 3
-        title: Vertex AI Platform Deep Dive
-        slug: Module-03-Vertex-AI-Platform
-      - num: 4
-        title: Multi-Modal AI with Gemini (Vision, Audio, Video)
-        slug: Module-04-Multi-Modal-Gemini
-      - num: 5
-        title: RAG on Google Cloud (Vertex AI Search, AlloyDB)
-        slug: Module-05-RAG-Google-Cloud
-      - num: 6
-        title: Fine-Tuning & Model Customization on Vertex AI
-        slug: Module-06-Fine-Tuning-Vertex-AI
-      - num: 7
-        title: Agent Builder & Conversational AI
-        slug: Module-07-Agent-Builder-Conversational
-      - num: 8
-        title: Responsible AI on Google Cloud
-        slug: Module-08-Responsible-AI-Google
-      - num: 9
-        title: MLOps on Google Cloud (Vertex AI Pipelines)
-        slug: Module-09-MLOps-Vertex-AI
-      - num: 10
-        title: Production Patterns & Capstone Case Studies
-        slug: Module-10-Production-Capstone
-    extras:
-      - num: 11
-        title: Practice Exam 1
-        slug: Practice-Exams/Practice-Exam-1
-        single_file: true
-      - num: 12
-        title: Practice Exam 2
-        slug: Practice-Exams/Practice-Exam-2
-        single_file: true
-      - num: 13
-        title: Final Mock Exam (60q / 90min)
-        slug: Practice-Exams/Final-Mock-Exam
-        single_file: true
-      - num: 14
-        title: Master Flashcards
-        slug: Flashcards
-        single_file: true
-
-# Sub-pages within each module
-  - id: claude-architect
-    title: Claude Architect
-    subtitle: Cert Hub Original — Anthropic-aligned
-    color: indigo
-    color_from: "#4f46e5"
-    color_to: "#7c3aed"
-    icon: "🧬"
-    base: "/28-Claude-Architect/"
-    modules:
-      - num: 1
-        title: Claude Foundations & Constitutional AI
-        slug: Module-01-Claude-Foundations-Constitutional-AI
-      - num: 2
-        title: Prompt Engineering with Claude
-        slug: Module-02-Prompt-Engineering-Claude
-      - num: 3
-        title: Claude API & SDK Deep Dive
-        slug: Module-03-Claude-API-SDK-Deep-Dive
-      - num: 4
-        title: Tool Use & Function Calling
-        slug: Module-04-Tool-Use-Function-Calling
-      - num: 5
-        title: Model Context Protocol (MCP)
-        slug: Module-05-Model-Context-Protocol-MCP
-      - num: 6
-        title: Agentic Patterns with Claude
-        slug: Module-06-Agentic-Patterns
-      - num: 7
-        title: RAG & Long-Context with Claude
-        slug: Module-07-RAG-Long-Context
-      - num: 8
-        title: Production Patterns & Safety
-        slug: Module-08-Production-Patterns-Safety
-    extras:
-      - num: 9
-        title: Practice Exam 1
-        slug: Practice-Exams/Practice-Exam-1
-        single_file: true
-      - num: 10
-        title: Practice Exam 2
-        slug: Practice-Exams/Practice-Exam-2
-        single_file: true
-      - num: 11
-        title: Final Mock Exam (60q / 60min)
-        slug: Practice-Exams/Final-Mock-Exam
-        single_file: true
-      - num: 12
-        title: Master Flashcards
-        slug: Flashcards
-        single_file: true
-
-  - id: genai-engineer
-    title: Generative AI Engineer
-    subtitle: Cert Hub Original — Full-Stack GenAI
-    color: yellow
-    color_from: "#eab308"
-    color_to: "#f97316"
-    icon: "⚡"
-    base: "/30-Generative-AI-Engineer/"
-    modules:
-      - num: 1
-        title: LLM Architecture & Tokenization
-        slug: Module-01-LLM-Architecture-Tokenization
-      - num: 2
-        title: Embeddings & Vector Databases
-        slug: Module-02-Embeddings-Vector-Databases
-      - num: 3
-        title: RAG Architecture End-to-End
-        slug: Module-03-RAG-Architecture
-      - num: 4
-        title: LangChain & LlamaIndex Frameworks
-        slug: Module-04-LangChain-LlamaIndex
-      - num: 5
-        title: Fine-Tuning, PEFT & LoRA
-        slug: Module-05-Fine-Tuning-PEFT-LoRA
-      - num: 6
-        title: Multi-Agent Systems (CrewAI, AutoGen)
-        slug: Module-06-Multi-Agent-Systems
-      - num: 7
-        title: Evaluation (RAGAS, LLM-as-Judge)
-        slug: Module-07-Evaluation-RAGAS
-      - num: 8
-        title: Guardrails & Safety
-        slug: Module-08-Guardrails-Safety
-      - num: 9
-        title: Deployment, Observability & Cost
-        slug: Module-09-Deployment-Observability
-      - num: 10
-        title: GenAI Production Case Studies
-        slug: Module-10-Production-Case-Studies
-    extras:
-      - num: 11
-        title: Practice Exam 1
-        slug: Practice-Exams/Practice-Exam-1
-        single_file: true
-      - num: 12
-        title: Practice Exam 2
-        slug: Practice-Exams/Practice-Exam-2
-        single_file: true
-      - num: 13
-        title: Final Mock Exam (65q / 90min)
-        slug: Practice-Exams/Final-Mock-Exam
-        single_file: true
-      - num: 14
-        title: Master Flashcards
-        slug: Flashcards
-        single_file: true
-
-  - id: aws-ml-specialty
-    title: AWS ML Specialty
-    subtitle: MLS-C01
-    color: orange
-    color_from: "#f97316"
-    color_to: "#dc2626"
-    icon: "🔬"
-    base: "/31-AWS-ML-Specialty/"
-    modules:
-      - num: 1
-        title: ML Foundations & AWS Landscape
-        slug: Module-01-ML-Foundations-AWS-Landscape
-      - num: 2
-        title: Data Engineering for ML (S3, Glue, Kinesis)
-        slug: Module-02-Data-Engineering-ML
-      - num: 3
-        title: Exploratory Data Analysis & Feature Engineering
-        slug: Module-03-EDA-Feature-Engineering
-      - num: 4
-        title: SageMaker Studio & Built-In Algorithms
-        slug: Module-04-SageMaker-Studio-Algorithms
-      - num: 5
-        title: Deep Learning on AWS (Neuron, EC2 GPU)
-        slug: Module-05-Deep-Learning-AWS
-      - num: 6
-        title: NLP & Computer Vision Workflows
-        slug: Module-06-NLP-Computer-Vision
-      - num: 7
-        title: Amazon Bedrock & GenAI Services
-        slug: Module-07-Bedrock-GenAI-Services
-      - num: 8
-        title: Model Evaluation, Tuning & Bias
-        slug: Module-08-Evaluation-Tuning-Bias
-      - num: 9
-        title: MLOps — Pipelines, Deployment, Monitoring
-        slug: Module-09-MLOps-Pipelines-Deployment
-      - num: 10
-        title: Security, Cost & Production Best Practices
-        slug: Module-10-Security-Cost-Production
-    extras:
-      - num: 11
-        title: Practice Exam 1
-        slug: Practice-Exams/Practice-Exam-1
-        single_file: true
-      - num: 12
-        title: Practice Exam 2
-        slug: Practice-Exams/Practice-Exam-2
-        single_file: true
-      - num: 13
-        title: Final Mock Exam (65q / 180min)
-        slug: Practice-Exams/Final-Mock-Exam
-        single_file: true
-      - num: 14
-        title: Master Flashcards
-        slug: Flashcards
-        single_file: true
-
 module_pages:
   - id: Reading
     label: 📖 Lesson
