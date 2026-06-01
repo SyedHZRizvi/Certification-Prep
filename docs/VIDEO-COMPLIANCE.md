@@ -1,3 +1,9 @@
+---
+permalink: /video-compliance/
+title: Video Compliance & Legal Policy
+description: The Cert Hub's legal posture on third-party video content, monitoring controls, and litigation risk model.
+---
+
 # 📺 Video Compliance & Legal Posture
 
 > **Document owner:** Humayun Zafar
