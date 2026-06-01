@@ -1,4 +1,4 @@
-# Recommended Readings — AI Marketing Capstone Portfolio
+# Recommended Readings — AI Digital Marketing Capstone Portfolio
 
 > **Purpose:** This curated list extends the per-module "Further Reading" sections with the canonical bibliography for the portfolio-shipping, personal-brand-building, first-client-winning operator. Use it during preparation and during the first 6 months after graduation as your sustained reading diet.
 

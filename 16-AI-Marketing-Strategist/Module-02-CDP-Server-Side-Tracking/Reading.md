@@ -452,7 +452,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: [Module 3](../Module-03-GA4-Mastery-Custom-Events/Reading.md) is where the CDP's events meet your primary analytics tool (GA4); [Module 9](../Module-09-Privacy-First-Measurement/Reading.md) hardens this stack against Consent Mode v2, CAPI, and Privacy Sandbox; [Module 10](../Module-10-Marketing-Org-Tech-Stack-Design/Reading.md) covers the cost and build-vs-buy decisions for the full stack.
-> - Cross-course: [Course 18: AI Marketing Capstone Portfolio](../../18-AI-Marketing-Capstone-Portfolio/README.md) requires you to wire one of these architectures end-to-end as a portfolio artifact.
+> - Cross-course: [Course 18: AI Digital Marketing Capstone Portfolio](../../18-AI-Marketing-Capstone-Portfolio/README.md) requires you to wire one of these architectures end-to-end as a portfolio artifact.
 > - Practice: [Practice Exam 1](../Practice-Exams/Practice-Exam-1.md) (questions 10–15) and the [Final Mock Exam](../Practice-Exams/Final-Mock-Exam.md) test CDP architecture patterns, sGTM/Stape, and identity resolution.
 
 ---

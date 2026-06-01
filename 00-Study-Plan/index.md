@@ -104,12 +104,12 @@ Below are the 32 courses, grouped by category. Pick the one you're preparing for
 - 📦 [**ASCM CSCP**](../10-ASCM-CSCP/) (Bachelor's + 2 yrs OR 5 yrs experience)
 - 🤝 [**ISM CPSM**](../13-ISM-CPSM/) (Bachelor's + 3 yrs OR 5 yrs experience)
 
-### AI-Based Digital Marketing (5-course ladder)
-- 📣 [**AI Marketing Foundations**](../14-AI-Marketing-Foundations/)
-- 🎯 [**AI Marketing Practitioner**](../15-AI-Marketing-Practitioner/)
-- 📈 [**AI Marketing Strategist**](../16-AI-Marketing-Strategist/)
-- 💼 [**AI Marketing Entrepreneur**](../17-AI-Marketing-Entrepreneur/)
-- 🏆 [**AI Marketing Capstone Portfolio**](../18-AI-Marketing-Capstone-Portfolio/)
+### AI Digital Marketing (5-course ladder)
+- 📣 [**AI Digital Marketing Foundations**](../14-AI-Marketing-Foundations/)
+- 🎯 [**AI Digital Marketing Practitioner**](../15-AI-Marketing-Practitioner/)
+- 📈 [**AI Digital Marketing Strategist**](../16-AI-Marketing-Strategist/)
+- 💼 [**AI Digital Marketing Entrepreneur**](../17-AI-Marketing-Entrepreneur/)
+- 🏆 [**AI Digital Marketing Capstone Portfolio**](../18-AI-Marketing-Capstone-Portfolio/)
 
 ### Bitcoin & E-Commerce
 - ₿ [**Bitcoin & Cryptocurrency**](../19-Bitcoin-Cryptocurrency/)

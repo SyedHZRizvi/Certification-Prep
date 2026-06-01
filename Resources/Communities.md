@@ -96,7 +96,7 @@
 - **Activity:** Active
 - **Why:** CPSM-relevant career, sourcing, contract management
 
-### AI-Based Digital Marketing
+### AI Digital Marketing
 
 #### r/marketing
 - **URL:** <https://reddit.com/r/marketing>
@@ -201,7 +201,7 @@
 - **"ISM — Institute for Supply Management"** — CPSM-focused
 - **"Supply Chain Professionals"** — general
 
-### AI-Based Digital Marketing
+### AI Digital Marketing
 - **"AI Marketing Group"** — generative AI + marketing intersection
 - **"Digital Marketing Professionals"** — broad practitioner community
 - **"HubSpot User Groups"** — official HubSpot community presence
@@ -245,7 +245,7 @@
 ### Supply Chain
 - Smaller and harder to find — start with r/supplychain stickies and LinkedIn ASCM groups. Local ASCM chapter Slack/Discord servers exist regionally.
 
-### AI-Based Digital Marketing
+### AI Digital Marketing
 - **"Superpath"** — content marketing Slack (5,000+ members, highly active)
 - **"MarketerHire" / "MarketerCrew"** — freelance + agency operators
 - **"Demand Curve"** — paid acquisition + growth community
@@ -299,7 +299,7 @@
 - Search: "ASCM CSCP exam prep" — <https://www.youtube.com/results?search_query=ASCM+CSCP+exam+prep>
 - Search: "Supply Chain Secrets CPIM" — <https://www.youtube.com/results?search_query=Supply+Chain+Secrets+CPIM>
 
-### AI-Based Digital Marketing
+### AI Digital Marketing
 - Search: "Neil Patel digital marketing" — <https://www.youtube.com/results?search_query=Neil+Patel+digital+marketing>
 - Search: "HubSpot Academy" — <https://www.youtube.com/results?search_query=HubSpot+Academy>
 - Search: "Ahrefs SEO Sam Oh" — <https://www.youtube.com/results?search_query=Ahrefs+SEO+Sam+Oh>
@@ -351,7 +351,7 @@
 2. **The Supply Chain Show**
 3. **Let's Talk Supply Chain**
 
-### AI-Based Digital Marketing
+### AI Digital Marketing
 1. **Marketing Over Coffee** (John Wall + Chris Penn — weekly, tactical)
 2. **The Marketing School** (Neil Patel + Eric Siu — short daily episodes)
 3. **DTC Pod** (direct-to-consumer operator stories)
@@ -501,7 +501,7 @@
 - ✅ ASCM (official) · ✅ ISM (official)
 - ✅ Official ASCM Learning Systems and ISM Bridge of Knowledge (the materials communities actually recommend)
 
-**AI-Based Digital Marketing**
+**AI Digital Marketing**
 - ✅ HubSpot Academy, Google Skillshop, Meta Blueprint (all free, official)
 - ✅ CXL Institute (the deepest practitioner curriculum)
 - ✅ Andrew Ng (Coursera) and Andrej Karpathy (free YouTube) for AI foundations

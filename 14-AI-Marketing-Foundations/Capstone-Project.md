@@ -1,4 +1,4 @@
-# Capstone Project — AI Marketing Foundations
+# Capstone Project — AI Digital Marketing Foundations
 
 > **Format:** Self-directed; 4-8 weeks; ~25-40 hours of work
 > **Deliverables:** 7 artifacts + a board-ready 1-pager

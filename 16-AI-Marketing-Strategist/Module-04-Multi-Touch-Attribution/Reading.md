@@ -399,7 +399,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: [Module 5](../Module-05-Marketing-Mix-Modeling/Reading.md) is the MMM half of the triangle — the only method that can attribute upper-funnel and offline channels; [Module 9](../Module-09-Privacy-First-Measurement/Reading.md) covers Consent Mode v2 and CAPI, which determine how much signal survives to feed your MTA.
-> - Cross-course: [Course 18: AI Marketing Capstone Portfolio](../../18-AI-Marketing-Capstone-Portfolio/README.md) asks you to defend an attribution methodology in writing for a portfolio scenario.
+> - Cross-course: [Course 18: AI Digital Marketing Capstone Portfolio](../../18-AI-Marketing-Capstone-Portfolio/README.md) asks you to defend an attribution methodology in writing for a portfolio scenario.
 > - Practice: [Practice Exam 1](../Practice-Exams/Practice-Exam-1.md) (questions 16–21, 37–38) heavily tests attribution methods and Shapley/Markov math; the [Final Mock Exam](../Practice-Exams/Final-Mock-Exam.md) revisits the measurement triangle.
 
 ---

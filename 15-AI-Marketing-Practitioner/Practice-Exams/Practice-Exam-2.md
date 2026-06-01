@@ -1,4 +1,4 @@
-# 🧪 Practice Exam 2 — AI Marketing Practitioner (Style)
+# 🧪 Practice Exam 2 — AI Digital Marketing Practitioner (Style)
 
 > **Conditions:** Set a 90-minute timer. 65 questions. Treat it like the real thing.
 > **Pass mark:** 52/65 (80%)

@@ -1,4 +1,4 @@
-# 🧪 Practice Exam 1 — AI Marketing Strategist (Half-Course)
+# 🧪 Practice Exam 1 — AI Digital Marketing Strategist (Half-Course)
 
 > **Conditions:** Set a 50-minute timer. 38 questions. Treat it like the real thing.
 > **Pass mark:** 30/38 (79%) — this is the advanced course, so the bar is high.

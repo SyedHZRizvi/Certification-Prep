@@ -1,9 +1,9 @@
 ---
 permalink: /18-AI-Marketing-Capstone-Portfolio/
-title: AI Marketing Capstone Portfolio
+title: AI Digital Marketing Capstone Portfolio
 ---
 
-# 🏗️ AI Marketing Capstone Portfolio (Course 5 of 5)
+# 🏗️ AI Digital Marketing Capstone Portfolio (Course 5 of 5)
 
 **📣 AI Marketing** › Course 5 of 5 — Capstone Portfolio
 
@@ -18,7 +18,7 @@ title: AI Marketing Capstone Portfolio
 
 ### 🎯 The promise
 
-The AI Marketing Capstone Portfolio is the final, proof-of-work course in the AI Digital Marketing ladder — the one where everything you've learned across Foundations, Practitioner, Strategist, and Entrepreneur converts into 5 recruiter-grade portfolio pieces, a real personal-brand presence, and a first-client pitch you can send Monday morning. Hiring managers spend ~8 seconds per LinkedIn profile and prospects spend ~3 seconds per cold DM. This course makes you the candidate (or the consultant) whose link earns the 30-minute meeting.
+The AI Digital Marketing Capstone Portfolio is the final, proof-of-work course in the AI Digital Marketing ladder — the one where everything you've learned across Foundations, Practitioner, Strategist, and Entrepreneur converts into 5 recruiter-grade portfolio pieces, a real personal-brand presence, and a first-client pitch you can send Monday morning. Hiring managers spend ~8 seconds per LinkedIn profile and prospects spend ~3 seconds per cold DM. This course makes you the candidate (or the consultant) whose link earns the 30-minute meeting.
 
 ### 💼 Career outcomes after completing
 
@@ -189,4 +189,4 @@ The next 6 weeks turn 4 courses of theory into a body of work. Let's build.
 
 ---
 
-**Previous:** [Course 4 — AI Marketing Entrepreneur](../17-AI-Marketing-Entrepreneur/README.md) · This is the final course in the ladder.
+**Previous:** [Course 4 — AI Digital Marketing Entrepreneur](../17-AI-Marketing-Entrepreneur/README.md) · This is the final course in the ladder.

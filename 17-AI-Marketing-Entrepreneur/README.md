@@ -1,9 +1,9 @@
 ---
 permalink: /17-AI-Marketing-Entrepreneur/
-title: AI Marketing Entrepreneur Track
+title: AI Digital Marketing Entrepreneur Track
 ---
 
-# 🚀 AI Marketing Entrepreneur Track (Cert Hub Original)
+# 🚀 AI Digital Marketing Entrepreneur Track (Cert Hub Original)
 
 **📣 AI Marketing** › Course 4 of 5 — Entrepreneur (Cert Hub original)
 
@@ -18,7 +18,7 @@ title: AI Marketing Entrepreneur Track
 
 ### 🎯 The promise
 
-AI Marketing Entrepreneur is the credential for the marketer who has decided to stop trading time for a paycheck — the one who is ready to package the skills built across Foundations, Practitioner, and Strategist into a real business with real clients and real margins. This is **not** an exam-prep course; it is a business-launch curriculum that takes you from positioning memo to first signed client to $100K–$500K in annual recurring revenue within 12 months. It is the entrepreneurial counterpart to the corporate Strategist ladder.
+AI Digital Marketing Entrepreneur is the credential for the marketer who has decided to stop trading time for a paycheck — the one who is ready to package the skills built across Foundations, Practitioner, and Strategist into a real business with real clients and real margins. This is **not** an exam-prep course; it is a business-launch curriculum that takes you from positioning memo to first signed client to $100K–$500K in annual recurring revenue within 12 months. It is the entrepreneurial counterpart to the corporate Strategist ladder.
 
 ### 💼 Career outcomes after completing
 
@@ -68,7 +68,7 @@ By the end of this track, you'll have:
 - A financial system — banking, taxes, retirement
 - A 90-day plan to land your first 3 clients
 
-This is the **expert / business** level of the AI Digital Marketing ladder — designed for marketers ready to launch their own practice. Assumes you've completed (or have equivalent experience to) the **AI Marketing Foundations + Practitioner + Strategist** courses.
+This is the **expert / business** level of the AI Digital Marketing ladder — designed for marketers ready to launch their own practice. Assumes you've completed (or have equivalent experience to) the **AI Digital Marketing Foundations + Practitioner + Strategist** courses.
 
 ---
 
@@ -229,4 +229,4 @@ You're not learning *about* an agency. You're building one.
 
 ---
 
-**Previous:** [Course 3 — AI Marketing Strategist](../16-AI-Marketing-Strategist/README.md) · **Next:** [Course 5 — AI Marketing Capstone Portfolio](../18-AI-Marketing-Capstone-Portfolio/README.md)
+**Previous:** [Course 3 — AI Digital Marketing Strategist](../16-AI-Marketing-Strategist/README.md) · **Next:** [Course 5 — AI Digital Marketing Capstone Portfolio](../18-AI-Marketing-Capstone-Portfolio/README.md)

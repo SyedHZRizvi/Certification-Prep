@@ -1,4 +1,4 @@
-# 🧪 Practice Exam 2 — AI Marketing Entrepreneur (All-Modules)
+# 🧪 Practice Exam 2 — AI Digital Marketing Entrepreneur (All-Modules)
 
 > **Conditions:** Set a 55-minute timer. 40 questions. Treat it like the real thing.
 > **Pass mark:** 30/40 (75%)

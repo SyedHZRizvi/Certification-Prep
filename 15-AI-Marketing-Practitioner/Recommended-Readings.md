@@ -1,4 +1,4 @@
-# Recommended Readings — AI Marketing Practitioner Track
+# Recommended Readings — AI Digital Marketing Practitioner Track
 
 > **Purpose:** This curated list extends the per-module "Further Reading" sections with the canonical bibliography for a paid-media + lifecycle + CRO practitioner. Use it during preparation, after passing the Google Ads / Meta MBP / TikTok credentials, and as the foundation of a personal reference library.
 
@@ -158,4 +158,4 @@ Performance marketing certifications expire faster than any other field. Plan to
 
 ---
 
-Good luck. AI Marketing Practitioner is the credential that proves you can move blended CAC. Stay paranoid, stay testing, stay numerate. 💪
+Good luck. AI Digital Marketing Practitioner is the credential that proves you can move blended CAC. Stay paranoid, stay testing, stay numerate. 💪

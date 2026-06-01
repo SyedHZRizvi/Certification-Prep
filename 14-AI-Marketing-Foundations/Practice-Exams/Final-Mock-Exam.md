@@ -1,4 +1,4 @@
-# 🧪 Final Mock Exam — AI Marketing Foundations
+# 🧪 Final Mock Exam — AI Digital Marketing Foundations
 
 > **Conditions:** Set a 90-minute timer. 60 questions. Treat it like the real industry exam.
 > **Pass mark:** 45/60 (75%)

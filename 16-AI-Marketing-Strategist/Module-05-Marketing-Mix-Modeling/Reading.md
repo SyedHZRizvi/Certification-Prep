@@ -461,7 +461,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: [Module 6](../Module-06-Predictive-Analytics-LTV-Churn/Reading.md) takes the marketing-decision lens from MMM and extends it to *per-customer* prediction (CLV, churn); [Module 10](../Module-10-Marketing-Org-Tech-Stack-Design/Reading.md) covers how an MMM function is staffed, budgeted, and governed inside a CMO org.
-> - Cross-course: [Course 18: AI Marketing Capstone Portfolio](../../18-AI-Marketing-Capstone-Portfolio/README.md) expects a worked MMM artifact (Robyn or Meridian on a real or synthetic dataset).
+> - Cross-course: [Course 18: AI Digital Marketing Capstone Portfolio](../../18-AI-Marketing-Capstone-Portfolio/README.md) expects a worked MMM artifact (Robyn or Meridian on a real or synthetic dataset).
 > - Practice: [Practice Exam 1](../Practice-Exams/Practice-Exam-1.md) (questions 22–29) and the [Final Mock Exam](../Practice-Exams/Final-Mock-Exam.md) test ad-stock, Hill saturation, and the MTA-vs-MMM decision tree.
 
 ---

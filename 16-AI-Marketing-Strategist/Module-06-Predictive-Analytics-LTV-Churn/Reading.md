@@ -478,7 +478,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: [Module 7](../Module-07-AI-Personalization-Scale/Reading.md) takes the per-customer predictions you built here and serves them at request time through a recommendation system; [Module 8](../Module-08-Audience-Intelligence-Cohorts/Reading.md) overlays cohort analysis so you can see the predictions hold over time.
-> - Cross-course: [Course 17: AI Marketing Entrepreneur](../../17-AI-Marketing-Entrepreneur/README.md) discusses how to *use* CLV in fundraising and unit-economics narratives; [Course 18: AI Marketing Capstone Portfolio](../../18-AI-Marketing-Capstone-Portfolio/README.md) expects a CLV/churn artifact.
+> - Cross-course: [Course 17: AI Digital Marketing Entrepreneur](../../17-AI-Marketing-Entrepreneur/README.md) discusses how to *use* CLV in fundraising and unit-economics narratives; [Course 18: AI Digital Marketing Capstone Portfolio](../../18-AI-Marketing-Capstone-Portfolio/README.md) expects a CLV/churn artifact.
 > - Practice: [Practice Exam 2](../Practice-Exams/Practice-Exam-2.md) tests CLV, BG/NBD, churn, and uplift modeling; the [Final Mock Exam](../Practice-Exams/Final-Mock-Exam.md) integrates predictive analytics with activation.
 
 ---

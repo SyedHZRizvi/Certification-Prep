@@ -440,7 +440,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: [Module 4](../Module-04-Multi-Touch-Attribution/Reading.md) builds DDA on top of the GA4 events you defined here; [Module 8](../Module-08-Audience-Intelligence-Cohorts/Reading.md) uses GA4's raw export to construct cohort triangles; [Module 9](../Module-09-Privacy-First-Measurement/Reading.md) layers Consent Mode v2 and Enhanced Conversions over your GA4 implementation.
-> - Cross-course: [Course 18: AI Marketing Capstone Portfolio](../../18-AI-Marketing-Capstone-Portfolio/README.md) expects a working GA4 + BigQuery sandbox as a portfolio artifact.
+> - Cross-course: [Course 18: AI Digital Marketing Capstone Portfolio](../../18-AI-Marketing-Capstone-Portfolio/README.md) expects a working GA4 + BigQuery sandbox as a portfolio artifact.
 > - Practice: [Practice Exam 1](../Practice-Exams/Practice-Exam-1.md) (questions 5–9 and 35–36) directly tests GA4 model knowledge; the [Final Mock Exam](../Practice-Exams/Final-Mock-Exam.md) tests SQL against the GA4 event schema.
 
 ---

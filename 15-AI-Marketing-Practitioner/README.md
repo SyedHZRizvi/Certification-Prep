@@ -1,15 +1,15 @@
 ---
 permalink: /15-AI-Marketing-Practitioner/
-title: AI Marketing Practitioner Track
+title: AI Digital Marketing Practitioner Track
 ---
 
-# 🎯 AI Marketing Practitioner Track (Course 2 of 5)
+# 🎯 AI Digital Marketing Practitioner Track (Course 2 of 5)
 
 **📣 AI Marketing** › Course 2 of 5 — Practitioner
 
 > **Goal:** Launch and optimize REAL paid + organic campaigns on Google, Meta, TikTok, LinkedIn — using AI tooling end-to-end.
 > **Duration:** 6 weeks part-time (8–12 hrs/week)
-> **Prerequisite:** AI Marketing Foundations (Course 1) or equivalent hands-on experience
+> **Prerequisite:** AI Digital Marketing Foundations (Course 1) or equivalent hands-on experience
 > **Cost to study:** Free (this course) + ~$200 ad spend for capstone (Modules 2, 4, 10)
 > **Difficulty:** Intermediate · hands-on with ad accounts
 
@@ -19,7 +19,7 @@ title: AI Marketing Practitioner Track
 
 ### 🎯 The promise
 
-AI Marketing Practitioner is the credential that takes you from someone who *understands* digital marketing to someone who *ships* it — the operator running real campaigns on Google, Meta, TikTok, and LinkedIn with an AI-assisted workflow that produces creative, copy, audiences, landing pages, and measurement at 2026 speed. By the end of this track you'll hold (or be ready to sit) **Google Ads Search & Display certifications**, **Meta Blueprint Media Buying Professional**, and **TikTok Marketing Science**. More important: you'll have launched real campaigns with real money.
+AI Digital Marketing Practitioner is the credential that takes you from someone who *understands* digital marketing to someone who *ships* it — the operator running real campaigns on Google, Meta, TikTok, and LinkedIn with an AI-assisted workflow that produces creative, copy, audiences, landing pages, and measurement at 2026 speed. By the end of this track you'll hold (or be ready to sit) **Google Ads Search & Display certifications**, **Meta Blueprint Media Buying Professional**, and **TikTok Marketing Science**. More important: you'll have launched real campaigns with real money.
 
 ### 💼 Career outcomes after passing
 
@@ -197,4 +197,4 @@ Real budgets. Real campaigns. Real results. Let's launch something. 🚀
 
 ---
 
-**Previous:** [Course 1 — AI Marketing Foundations](../14-AI-Marketing-Foundations/README.md) · **Next:** [Course 3 — AI Marketing Strategist](../16-AI-Marketing-Strategist/README.md)
+**Previous:** [Course 1 — AI Digital Marketing Foundations](../14-AI-Marketing-Foundations/README.md) · **Next:** [Course 3 — AI Digital Marketing Strategist](../16-AI-Marketing-Strategist/README.md)

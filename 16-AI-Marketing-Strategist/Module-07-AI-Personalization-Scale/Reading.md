@@ -310,7 +310,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: [Module 8](../Module-08-Audience-Intelligence-Cohorts/Reading.md) covers the audience-cohort structures personalization needs as input; [Module 9](../Module-09-Privacy-First-Measurement/Reading.md) covers the consent and privacy guardrails any personalization system must operate within.
-> - Cross-course: [Course 18: AI Marketing Capstone Portfolio](../../18-AI-Marketing-Capstone-Portfolio/README.md) expects a personalization artifact (bandit or recsys) in the final portfolio.
+> - Cross-course: [Course 18: AI Digital Marketing Capstone Portfolio](../../18-AI-Marketing-Capstone-Portfolio/README.md) expects a personalization artifact (bandit or recsys) in the final portfolio.
 > - Practice: [Practice Exam 2](../Practice-Exams/Practice-Exam-2.md) tests bandit algorithms, recsys families, and metric selection; the [Final Mock Exam](../Practice-Exams/Final-Mock-Exam.md) integrates personalization with measurement.
 
 ---

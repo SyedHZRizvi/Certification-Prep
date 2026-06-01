@@ -30,7 +30,7 @@ Pick the course. Finish it. Pay for the exam. Walk in confident.
 
 ## 📑 Quick Map — Course → Recommended Certifications
 
-Courses appear in the same canonical order used on the homepage and sidebar: **Project Management → IT, Cloud & Systems Administration → Generative & Agentic AI → Supply Chain & Operations → AI-Based Digital Marketing → Bitcoin & E-Commerce.**
+Courses appear in the same canonical order used on the homepage and sidebar: **Project Management → IT, Cloud & Systems Administration → Generative & Agentic AI → Supply Chain & Operations → AI Digital Marketing → Bitcoin & E-Commerce.**
 
 ### Project Management
 
@@ -91,15 +91,15 @@ Courses appear in the same canonical order used on the homepage and sidebar: **P
 | ASCM CSCP | **CSCP** (ASCM) — Bachelor's + 2 yrs OR 5 yrs experience | $1,295+ | [Start prep →](../10-ASCM-CSCP/) |
 | ISM CPSM | **CPSM 1 + 2 + 3** (ISM) — Bachelor's + 3 yrs OR 5 yrs experience | $199 ea. | [Start prep →](../13-ISM-CPSM/) |
 
-### AI-Based Digital Marketing (5-course ladder)
+### AI Digital Marketing (5-course ladder)
 
 | Our Course | Recommended Cert (After Completion) | Fee (USD) | Start Prep |
 |------------|--------------------------------------|-----------|------------|
-| AI Marketing Foundations | HubSpot Inbound · Content Marketing | FREE | [Start prep →](../14-AI-Marketing-Foundations/) |
-| AI Marketing Practitioner | Google Ads · Meta Blueprint Commerce | FREE / $99+ | [Start prep →](../15-AI-Marketing-Practitioner/) |
-| AI Marketing Strategist | GA4 IQ · Wharton Online Specialization | FREE / $500 | [Start prep →](../16-AI-Marketing-Strategist/) |
-| AI Marketing Entrepreneur | (No single cert — readiness portfolio) | — | [Start prep →](../17-AI-Marketing-Entrepreneur/) |
-| AI Marketing Capstone Portfolio | DMI Professional Diploma · OMCP | $1,800+ / $199+ | [Start prep →](../18-AI-Marketing-Capstone-Portfolio/) |
+| AI Digital Marketing Foundations | HubSpot Inbound · Content Marketing | FREE | [Start prep →](../14-AI-Marketing-Foundations/) |
+| AI Digital Marketing Practitioner | Google Ads · Meta Blueprint Commerce | FREE / $99+ | [Start prep →](../15-AI-Marketing-Practitioner/) |
+| AI Digital Marketing Strategist | GA4 IQ · Wharton Online Specialization | FREE / $500 | [Start prep →](../16-AI-Marketing-Strategist/) |
+| AI Digital Marketing Entrepreneur | (No single cert — readiness portfolio) | — | [Start prep →](../17-AI-Marketing-Entrepreneur/) |
+| AI Digital Marketing Capstone Portfolio | DMI Professional Diploma · OMCP | $1,800+ / $199+ | [Start prep →](../18-AI-Marketing-Capstone-Portfolio/) |
 
 ### Bitcoin & E-Commerce
 
@@ -745,7 +745,7 @@ After completing this course, you are ready to sit for:
 
 ---
 
-## 📘 AI Marketing Foundations
+## 📘 AI Digital Marketing Foundations
 
 [Open the course →](../14-AI-Marketing-Foundations/README.md)
 
@@ -774,7 +774,7 @@ Same flow, complementary certification on content strategy + production.
 
 ---
 
-## 📘 AI Marketing Practitioner
+## 📘 AI Digital Marketing Practitioner
 
 [Open the course →](../15-AI-Marketing-Practitioner/README.md)
 
@@ -801,7 +801,7 @@ After completing this course, you are ready to sit for:
 
 ---
 
-## 📘 AI Marketing Strategist
+## 📘 AI Digital Marketing Strategist
 
 [Open the course →](../16-AI-Marketing-Strategist/README.md)
 
@@ -831,7 +831,7 @@ After completing this course, you are ready to sit for:
 
 ---
 
-## 📘 AI Marketing Entrepreneur
+## 📘 AI Digital Marketing Entrepreneur
 
 [Open the course →](../17-AI-Marketing-Entrepreneur/README.md)
 
@@ -844,7 +844,7 @@ The relevant industry credentials (if you want a formal cert to display):
 
 ---
 
-## 📘 AI Marketing Capstone Portfolio
+## 📘 AI Digital Marketing Capstone Portfolio
 
 [Open the course →](../18-AI-Marketing-Capstone-Portfolio/README.md)
 

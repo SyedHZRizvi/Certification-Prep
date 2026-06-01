@@ -266,7 +266,7 @@
 })();
 </script>
 
-# 🃏 AI Marketing Capstone Portfolio Flashcards (Master Set)
+# 🃏 AI Digital Marketing Capstone Portfolio Flashcards (Master Set)
 
 > **How to use:** Each card has a Q on one line and A on the next. Cards focus on terminology, portfolio principles, and interview talking points you'll use 30+ times in real conversations.
 

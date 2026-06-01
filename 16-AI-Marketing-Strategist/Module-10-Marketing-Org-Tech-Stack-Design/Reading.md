@@ -368,7 +368,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: the [Practice Exams](../Practice-Exams/) integrate Modules 1–10 against the strategist-grade pass bar.
-> - Cross-course: [Course 17: AI Marketing Entrepreneur](../../17-AI-Marketing-Entrepreneur/README.md) covers the founder / GTM-design counterpart of the org choices here; [Course 18: AI Marketing Capstone Portfolio](../../18-AI-Marketing-Capstone-Portfolio/README.md) integrates the org-design, scorecard, and budget memo into a portfolio artifact.
+> - Cross-course: [Course 17: AI Digital Marketing Entrepreneur](../../17-AI-Marketing-Entrepreneur/README.md) covers the founder / GTM-design counterpart of the org choices here; [Course 18: AI Digital Marketing Capstone Portfolio](../../18-AI-Marketing-Capstone-Portfolio/README.md) integrates the org-design, scorecard, and budget memo into a portfolio artifact.
 > - Practice: [Practice Exam 2](../Practice-Exams/Practice-Exam-2.md) (final third) and the [Final Mock Exam](../Practice-Exams/Final-Mock-Exam.md) integrate the cross-module questions where Module 10's org/finance lens is decisive.
 
 ---

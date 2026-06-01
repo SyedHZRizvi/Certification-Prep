@@ -1,4 +1,4 @@
-# Recommended Readings — AI Marketing Entrepreneur Track
+# Recommended Readings — AI Digital Marketing Entrepreneur Track
 
 > **Purpose:** This curated list extends the per-module "Further Reading" sections with the canonical bibliography for an AI marketing agency owner or freelancer. Use it during preparation, during the first 12 months of operating, and as the reference library every founder eventually rebuilds.
 

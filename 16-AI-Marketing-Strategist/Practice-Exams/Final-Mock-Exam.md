@@ -1,4 +1,4 @@
-# 🧪 Final Mock Exam — AI Marketing Strategist (Full Length)
+# 🧪 Final Mock Exam — AI Digital Marketing Strategist (Full Length)
 
 > **Conditions:** Set a 100-minute timer. 75 questions. Treat it like the real thing — no notes, no Google, no breaks.
 > **Pass mark:** 60/75 (80%). This is the advanced course's final exam — the bar is higher than Foundations or Practitioner.

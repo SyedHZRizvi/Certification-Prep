@@ -266,7 +266,7 @@
 })();
 </script>
 
-# 🃏 AI Marketing Strategist Master Flashcards
+# 🃏 AI Digital Marketing Strategist Master Flashcards
 
 > **How to use:** Each card has a Q on one line and A on the next. Use the widget above for spaced repetition; copy any card into Anki for long-term retention. Aim for daily review until you can answer every card from memory.
 

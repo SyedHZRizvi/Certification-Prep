@@ -1,4 +1,4 @@
-# Capstone Project — AI Marketing Entrepreneur
+# Capstone Project — AI Digital Marketing Entrepreneur
 
 > **Format:** Self-directed; 12 weeks; ~60-90 hours of work (~5-8 hrs/week)
 > **Deliverables:** 7 artifacts + a post-mortem after the first 3 client engagements

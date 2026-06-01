@@ -333,7 +333,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: [Module 9](../Module-09-Privacy-First-Measurement/Reading.md) covers how cohort seed-audiences and look-alikes interact with Consent Mode v2, CAPI, and data clean rooms; [Module 10](../Module-10-Marketing-Org-Tech-Stack-Design/Reading.md) covers the CFO-grade scorecard that NRR and LTV cohorts feed into.
-> - Cross-course: [Course 17: AI Marketing Entrepreneur](../../17-AI-Marketing-Entrepreneur/README.md) shows cohorts as the language fundraisers expect; [Course 18: AI Marketing Capstone Portfolio](../../18-AI-Marketing-Capstone-Portfolio/README.md) expects at least one cohort artifact.
+> - Cross-course: [Course 17: AI Digital Marketing Entrepreneur](../../17-AI-Marketing-Entrepreneur/README.md) shows cohorts as the language fundraisers expect; [Course 18: AI Digital Marketing Capstone Portfolio](../../18-AI-Marketing-Capstone-Portfolio/README.md) expects at least one cohort artifact.
 > - Practice: [Practice Exam 2](../Practice-Exams/Practice-Exam-2.md) tests cohort math, NRR, and look-alike vs Advantage+; the [Final Mock Exam](../Practice-Exams/Final-Mock-Exam.md) integrates cohorts with strategy.
 
 ---

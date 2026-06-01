@@ -1,4 +1,4 @@
-# Capstone Project — AI Marketing Practitioner
+# Capstone Project — AI Digital Marketing Practitioner
 
 > **Format:** Self-directed; 6-12 weeks; ~50-70 hours of work
 > **Deliverables:** 6 artifacts + a blended scorecard

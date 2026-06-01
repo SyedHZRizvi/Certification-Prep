@@ -266,7 +266,7 @@
 })();
 </script>
 
-# 🃏 AI Marketing Foundations Master Flashcards
+# 🃏 AI Digital Marketing Foundations Master Flashcards
 
 > **How to use:** Each card has a Q on one line and A on the next. Use the widget above to study; or copy into Anki, Quizlet, or paper. Aim for daily review until the real exam.
 

@@ -66,15 +66,15 @@ Each track is a **guided journey** built on three pillars:
 | 19 | [`12-ASCM-CLTD/`](./12-ASCM-CLTD/README.md) | ASCM Certified in Logistics, Transportation & Distribution (CLTD) | 8 | 150 Q / 210 min |
 | 20 | [`13-ISM-CPSM/`](./13-ISM-CPSM/README.md) | ISM Certified Professional in Supply Management (CPSM) | 8 | 165 Q / 180 min |
 
-### 📣 AI-Based Digital Marketing (5-course ladder)
+### 📣 AI Digital Marketing (5-course ladder)
 
 | # | Folder | Cert | Modules | Mock-Exam Length |
 |---|--------|------|---------|------------------|
-| 21 | [`14-AI-Marketing-Foundations/`](./14-AI-Marketing-Foundations/README.md) | AI Marketing Foundations | 8 | 60 Q / 75 min |
-| 22 | [`15-AI-Marketing-Practitioner/`](./15-AI-Marketing-Practitioner/README.md) | AI Marketing Practitioner | 8 | 60 Q / 75 min |
-| 23 | [`16-AI-Marketing-Strategist/`](./16-AI-Marketing-Strategist/README.md) | AI Marketing Strategist | 8 | 60 Q / 75 min |
-| 24 | [`17-AI-Marketing-Entrepreneur/`](./17-AI-Marketing-Entrepreneur/README.md) | AI Marketing Entrepreneur | 8 | 60 Q / 75 min |
-| 25 | [`18-AI-Marketing-Capstone-Portfolio/`](./18-AI-Marketing-Capstone-Portfolio/README.md) | AI Marketing Capstone Portfolio | 8 | Portfolio rubric |
+| 21 | [`14-AI-Marketing-Foundations/`](./14-AI-Marketing-Foundations/README.md) | AI Digital Marketing Foundations | 8 | 60 Q / 75 min |
+| 22 | [`15-AI-Marketing-Practitioner/`](./15-AI-Marketing-Practitioner/README.md) | AI Digital Marketing Practitioner | 8 | 60 Q / 75 min |
+| 23 | [`16-AI-Marketing-Strategist/`](./16-AI-Marketing-Strategist/README.md) | AI Digital Marketing Strategist | 8 | 60 Q / 75 min |
+| 24 | [`17-AI-Marketing-Entrepreneur/`](./17-AI-Marketing-Entrepreneur/README.md) | AI Digital Marketing Entrepreneur | 8 | 60 Q / 75 min |
+| 25 | [`18-AI-Marketing-Capstone-Portfolio/`](./18-AI-Marketing-Capstone-Portfolio/README.md) | AI Digital Marketing Capstone Portfolio | 8 | Portfolio rubric |
 
 ### ₿ Bitcoin & E-Commerce
 

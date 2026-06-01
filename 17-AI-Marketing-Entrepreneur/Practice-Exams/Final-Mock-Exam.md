@@ -1,4 +1,4 @@
-# 🧪 Final Mock Exam — AI Marketing Entrepreneur
+# 🧪 Final Mock Exam — AI Digital Marketing Entrepreneur
 
 > **Conditions:** Set a 70-minute timer. 50 questions. Treat it like the real thing.
 > **Pass mark:** 38/50 (75%)
@@ -756,7 +756,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 ## 🎓 Course Completion
 
-If you scored 38+/50, you have completed the AI Marketing Entrepreneur curriculum. Your next action: execute Module 8's Capstone (Option A or B). Welcome to the agency.
+If you scored 38+/50, you have completed the AI Digital Marketing Entrepreneur curriculum. Your next action: execute Module 8's Capstone (Option A or B). Welcome to the agency.
 
 If you scored below 38, identify your two weakest modules, re-read them, and retake this exam in 7 days. There is no rush.
 

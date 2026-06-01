@@ -1,9 +1,9 @@
 ---
 permalink: /16-AI-Marketing-Strategist/
-title: AI Marketing Strategist Track
+title: AI Digital Marketing Strategist Track
 ---
 
-# 🧠 AI Marketing Strategist Track (Advanced — Course 3 of 5)
+# 🧠 AI Digital Marketing Strategist Track (Advanced — Course 3 of 5)
 
 **📣 AI Marketing** › Course 3 of 5 — Strategist (Advanced)
 
@@ -24,7 +24,7 @@ This is where you stop being the person who *runs* campaigns and start being the
 
 ### 🎯 The promise
 
-AI Marketing Strategist is the credential for the marketer who graduates from execution to strategy — the person who designs measurement architecture, builds Marketing Mix Models, ships predictive LTV and churn scoring, and owns the privacy-first stack that survives Apple's ATT, Chrome's cookie deprecation, and the EU's Digital Markets Act. It is the level at which marketing stops being a cost center and starts being a quantifiable growth engine. By the end of this track you'll be ready to sit a stack of senior credentials including **Google Analytics Certification**, **Tableau Specialist / Desktop Associate**, **CXL Institute's Digital Analytics Minidegree**, and select **dbt and AWS Data Analytics** credentials that the modern Strategist increasingly needs.
+AI Digital Marketing Strategist is the credential for the marketer who graduates from execution to strategy — the person who designs measurement architecture, builds Marketing Mix Models, ships predictive LTV and churn scoring, and owns the privacy-first stack that survives Apple's ATT, Chrome's cookie deprecation, and the EU's Digital Markets Act. It is the level at which marketing stops being a cost center and starts being a quantifiable growth engine. By the end of this track you'll be ready to sit a stack of senior credentials including **Google Analytics Certification**, **Tableau Specialist / Desktop Associate**, **CXL Institute's Digital Analytics Minidegree**, and select **dbt and AWS Data Analytics** credentials that the modern Strategist increasingly needs.
 
 ### 💼 Career outcomes after passing
 
@@ -213,4 +213,4 @@ You're about to learn the toolkit that separates marketing operators from market
 
 ---
 
-**Previous:** [Course 2 — AI Marketing Practitioner](../15-AI-Marketing-Practitioner/README.md) · **Next:** [Course 4 — AI Marketing Entrepreneur](../17-AI-Marketing-Entrepreneur/README.md)
+**Previous:** [Course 2 — AI Digital Marketing Practitioner](../15-AI-Marketing-Practitioner/README.md) · **Next:** [Course 4 — AI Digital Marketing Entrepreneur](../17-AI-Marketing-Entrepreneur/README.md)

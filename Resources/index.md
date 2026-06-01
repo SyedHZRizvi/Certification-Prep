@@ -101,7 +101,7 @@ The 32 courses on this site, grouped by category. Click any course to open its R
 - **Foundation (no eligibility required):** 🏭 [ASCM CPIM](../11-ASCM-CPIM/) · 🚛 [ASCM CLTD](../12-ASCM-CLTD/)
 - **Senior (degree + experience):** 📦 [ASCM CSCP](../10-ASCM-CSCP/) · 🤝 [ISM CPSM](../13-ISM-CPSM/)
 
-### AI-Based Digital Marketing (5-course ladder)
+### AI Digital Marketing (5-course ladder)
 - 📣 [Foundations](../14-AI-Marketing-Foundations/) · 🎯 [Practitioner](../15-AI-Marketing-Practitioner/) · 📈 [Strategist](../16-AI-Marketing-Strategist/) · 💼 [Entrepreneur](../17-AI-Marketing-Entrepreneur/) · 🏆 [Capstone Portfolio](../18-AI-Marketing-Capstone-Portfolio/)
 
 ### Bitcoin & E-Commerce

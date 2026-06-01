@@ -517,7 +517,7 @@ You now know:
 - 🧩 Two capstone options (simulated OR real)
 - 📊 The 90-day founder's dashboard
 
-**You have now completed the entire AI Marketing Entrepreneur curriculum.** From wedge selection (M1) → productizing (M2) → acquisition (M3) → pricing/contracts (M4) → tech stack (M5) → hiring (M6) → finances (M7) → first engagement (M8). You have everything you need.
+**You have now completed the entire AI Digital Marketing Entrepreneur curriculum.** From wedge selection (M1) → productizing (M2) → acquisition (M3) → pricing/contracts (M4) → tech stack (M5) → hiring (M6) → finances (M7) → first engagement (M8). You have everything you need.
 
 **Final next steps:**
 1. 🎥 Watch the videos in `Videos.md`

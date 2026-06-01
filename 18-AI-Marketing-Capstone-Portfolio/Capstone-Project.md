@@ -1,4 +1,4 @@
-# Capstone Project — AI Marketing Capstone Portfolio
+# Capstone Project — AI Digital Marketing Capstone Portfolio
 
 > **This entire course IS the capstone for the AI Marketing track.**
 > The 8 modules in this course are not "lessons that lead to a capstone" — they ARE the capstone deliverables. Each module produces a real, recruiter-grade artifact that you ship publicly.

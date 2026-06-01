@@ -1,4 +1,4 @@
-# 🧪 Practice Exam 1 — AI Marketing Foundations (Modules 1–5)
+# 🧪 Practice Exam 1 — AI Digital Marketing Foundations (Modules 1–5)
 
 > **Conditions:** Set a 45-minute timer. 30 questions. Treat it like the real thing.
 > **Pass mark:** 23/30 (75%)

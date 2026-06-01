@@ -430,7 +430,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: [Module 10](../Module-10-Marketing-Org-Tech-Stack-Design/Reading.md) operationalizes everything here as a budget, vendor, and org-design choice; the privacy stack is one of the four most-expensive line items in the modern marketing P&L.
-> - Cross-course: [Course 17: AI Marketing Entrepreneur](../../17-AI-Marketing-Entrepreneur/README.md) covers privacy as a brand differentiator and trust narrative; [Course 18: AI Marketing Capstone Portfolio](../../18-AI-Marketing-Capstone-Portfolio/README.md) expects a privacy-architecture artifact.
+> - Cross-course: [Course 17: AI Digital Marketing Entrepreneur](../../17-AI-Marketing-Entrepreneur/README.md) covers privacy as a brand differentiator and trust narrative; [Course 18: AI Digital Marketing Capstone Portfolio](../../18-AI-Marketing-Capstone-Portfolio/README.md) expects a privacy-architecture artifact.
 > - Practice: [Practice Exam 2](../Practice-Exams/Practice-Exam-2.md) tests Consent Mode v2, CAPI, SKAN, Privacy Sandbox, and clean rooms; the [Final Mock Exam](../Practice-Exams/Final-Mock-Exam.md) integrates privacy with measurement choices.
 
 ---

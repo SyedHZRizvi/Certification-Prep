@@ -1,4 +1,4 @@
-# 🧪 Practice Exam 1 — AI Marketing Entrepreneur (Business Judgment)
+# 🧪 Practice Exam 1 — AI Digital Marketing Entrepreneur (Business Judgment)
 
 > **Conditions:** Set a 35-minute timer. 25 questions. Treat it like the real thing.
 > **Pass mark:** 19/25 (75%)

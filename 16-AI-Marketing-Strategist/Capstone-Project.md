@@ -1,4 +1,4 @@
-# Capstone Project — AI Marketing Strategist
+# Capstone Project — AI Digital Marketing Strategist
 
 > **Format:** Self-directed; 6 months part-time; ~80-120 hours of work
 > **Deliverables:** 7 artifacts + an executive readout deck

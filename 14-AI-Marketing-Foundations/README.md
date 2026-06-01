@@ -1,9 +1,9 @@
 ---
 permalink: /14-AI-Marketing-Foundations/
-title: AI Marketing Foundations Track
+title: AI Digital Marketing Foundations Track
 ---
 
-# 🤖 AI Marketing Foundations Track
+# 🤖 AI Digital Marketing Foundations Track
 
 **📣 AI Marketing** › Course 1 of 5 — Foundations
 
@@ -18,7 +18,7 @@ title: AI Marketing Foundations Track
 
 ### 🎯 The promise
 
-AI Marketing Foundations is the credential that takes you from someone who *consumes* marketing to someone who *builds* it — in the cloud, with the AI tools, and in the language used by every marketing team that matters in 2026. By the end of this track you'll hold (or be ready to sit) three real industry credentials: **Google Digital Marketing & E-commerce Certificate**, the **HubSpot Inbound Marketing Certification**, and the **Meta Certified Digital Marketing Associate** — three of the most-recognized entry-level marketing credentials in the world.
+AI Digital Marketing Foundations is the credential that takes you from someone who *consumes* marketing to someone who *builds* it — in the cloud, with the AI tools, and in the language used by every marketing team that matters in 2026. By the end of this track you'll hold (or be ready to sit) three real industry credentials: **Google Digital Marketing & E-commerce Certificate**, the **HubSpot Inbound Marketing Certification**, and the **Meta Certified Digital Marketing Associate** — three of the most-recognized entry-level marketing credentials in the world.
 
 ### 💼 Career outcomes after passing
 
@@ -209,4 +209,4 @@ You've got this. 🚀
 
 ---
 
-**Next in the ladder:** [Course 2 — AI Marketing Practitioner](../15-AI-Marketing-Practitioner/README.md)
+**Next in the ladder:** [Course 2 — AI Digital Marketing Practitioner](../15-AI-Marketing-Practitioner/README.md)

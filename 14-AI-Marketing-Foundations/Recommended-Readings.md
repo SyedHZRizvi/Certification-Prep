@@ -1,4 +1,4 @@
-# Recommended Readings — AI Marketing Foundations Track
+# Recommended Readings — AI Digital Marketing Foundations Track
 
 > **Purpose:** This curated list extends the per-module "Further Reading" sections with the canonical bibliography for an AI-augmented marketing practitioner. Use it during preparation, after passing the three industry credentials (HubSpot / Google / Meta Blueprint), and as the foundation of a personal reference library.
 
@@ -152,4 +152,4 @@ Marketing certifications expire faster than most. Plan to:
 
 ---
 
-Good luck. AI Marketing Foundations is the entry credential to a field that is rewriting itself every 90 days. The compounding effect of consistent reading and tool experimentation, over the years that follow this certificate, is what builds a career. 🚀
+Good luck. AI Digital Marketing Foundations is the entry credential to a field that is rewriting itself every 90 days. The compounding effect of consistent reading and tool experimentation, over the years that follow this certificate, is what builds a career. 🚀

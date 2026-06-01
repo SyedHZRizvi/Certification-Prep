@@ -1,4 +1,4 @@
-# 🧪 Final Mock Exam — AI Marketing Practitioner
+# 🧪 Final Mock Exam — AI Digital Marketing Practitioner
 
 > **Conditions:** Set a 110-minute timer. 80 questions. Treat it like the real thing.
 > **Pass mark:** 60/80 (75%)
@@ -711,6 +711,6 @@ If you scored 60+:
 
 2. **Run your capstone if you haven't yet** — even if you passed this exam, theoretical knowledge ≠ practitioner experience.
 
-3. **Move to Course 3 in the ladder** — AI Marketing Strategist (when available).
+3. **Move to Course 3 in the ladder** — AI Digital Marketing Strategist (when available).
 
 You've earned this. Now go run real campaigns. 🚀

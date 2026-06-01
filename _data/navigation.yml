@@ -1131,7 +1131,7 @@ tracks:
         single_file: true
 
   - id: aimkt-found
-    title: AI Marketing — Foundations
+    title: AI Digital Marketing — Foundations
     subtitle: Digital marketing + AI essentials (beginner)
     color: rose
     color_from: "#f43f5e"
@@ -1188,7 +1188,7 @@ tracks:
         single_file: true
 
   - id: aimkt-pract
-    title: AI Marketing — Practitioner
+    title: AI Digital Marketing — Practitioner
     subtitle: Hands-on campaign execution (intermediate)
     color: fuchsia
     color_from: "#d946ef"
@@ -1245,7 +1245,7 @@ tracks:
         single_file: true
 
   - id: aimkt-strat
-    title: AI Marketing — Strategist
+    title: AI Digital Marketing — Strategist
     subtitle: Analytics, attribution, MMM, predictive (advanced)
     color: purple
     color_from: "#8b5cf6"
@@ -1302,7 +1302,7 @@ tracks:
         single_file: true
 
   - id: aimkt-entre
-    title: AI Marketing — Entrepreneur
+    title: AI Digital Marketing — Entrepreneur
     subtitle: Agency / freelance launch playbook (expert)
     color: amber
     color_from: "#f59e0b"
@@ -1353,7 +1353,7 @@ tracks:
         single_file: true
 
   - id: aimkt-capstone
-    title: AI Marketing — Capstone Portfolio
+    title: AI Digital Marketing — Capstone Portfolio
     subtitle: Build 5 portfolio pieces + first-client pitch
     color: yellow
     color_from: "#eab308"

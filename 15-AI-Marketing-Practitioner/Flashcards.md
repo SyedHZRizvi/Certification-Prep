@@ -266,7 +266,7 @@
 })();
 </script>
 
-# 🃏 AI Marketing Practitioner Master Flashcards
+# 🃏 AI Digital Marketing Practitioner Master Flashcards
 
 > **How to use:** Each card has a Q on the front and A on the back. Filter by section or shuffle all. Aim for daily review during the 6-week course and before any real cert exam.
 

@@ -1,4 +1,4 @@
-# Recommended Readings — AI Marketing Strategist Track
+# Recommended Readings — AI Digital Marketing Strategist Track
 
 > **Purpose:** This curated list extends the per-module "Further Reading" sections with the canonical bibliography for a marketing analytics, attribution, MMM, and predictive-modeling strategist. Use it during preparation, after passing the GA4 + Meta Marketing Science Professional credentials, and as the foundation of a personal reference library.
 
@@ -202,4 +202,4 @@ The strategist credentials open the door at Year 5+. The peer-reviewed-paper rea
 
 ---
 
-Good luck. AI Marketing Strategist is the credential that proves you can stand in front of a CFO and defend a $50M budget with numbers, not anecdotes. Stay rigorous, stay numerate, stay readable. 🧠
+Good luck. AI Digital Marketing Strategist is the credential that proves you can stand in front of a CFO and defend a $50M budget with numbers, not anecdotes. Stay rigorous, stay numerate, stay readable. 🧠

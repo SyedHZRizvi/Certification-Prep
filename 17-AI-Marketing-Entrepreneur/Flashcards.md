@@ -266,7 +266,7 @@
 })();
 </script>
 
-# 🃏 AI Marketing Entrepreneur Master Flashcards
+# 🃏 AI Digital Marketing Entrepreneur Master Flashcards
 
 > **How to use:** Use the dropdown to filter by section. Click any card to flip. Use "Got it" to mark a card known (persists in your browser). Shuffle when you've gone through the deck once. Pair with the modules and practice exams for spaced repetition.
 

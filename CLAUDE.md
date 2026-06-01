@@ -24,11 +24,11 @@ This is **The Cert Hub** — a Jekyll site authored by Humayun Zafar. It hosts s
 | 11 | `11-ASCM-CPIM` | CPIM (Planning & Inventory) | 8 |
 | 12 | `12-ASCM-CLTD` | CLTD (Logistics & Distribution) | 8 |
 | 13 | `13-ISM-CPSM` | CPSM (Supply Management) | 8 |
-| 14 | `14-AI-Marketing-Foundations` | AI Marketing — Foundations | 10 |
-| 15 | `15-AI-Marketing-Practitioner` | AI Marketing — Practitioner | 10 |
-| 16 | `16-AI-Marketing-Strategist` | AI Marketing — Strategist | 10 |
-| 17 | `17-AI-Marketing-Entrepreneur` | AI Marketing — Entrepreneur | 8 |
-| 18 | `18-AI-Marketing-Capstone-Portfolio` | AI Marketing — Capstone | 8 |
+| 14 | `14-AI-Marketing-Foundations` | AI Digital Marketing — Foundations | 10 |
+| 15 | `15-AI-Marketing-Practitioner` | AI Digital Marketing — Practitioner | 10 |
+| 16 | `16-AI-Marketing-Strategist` | AI Digital Marketing — Strategist | 10 |
+| 17 | `17-AI-Marketing-Entrepreneur` | AI Digital Marketing — Entrepreneur | 8 |
+| 18 | `18-AI-Marketing-Capstone-Portfolio` | AI Digital Marketing — Capstone | 8 |
 | 19 | `19-Bitcoin-Cryptocurrency` | Bitcoin & Crypto (Princeton → CBP → CBSA → UNic MSc) | 10 |
 | 20 | `20-E-Commerce` | E-Commerce (Google → Adobe Commerce → Wharton) | 10 |
 | 21 | `21-CompTIA-A-Plus` | CompTIA A+ (Core 1 220-1101 + Core 2 220-1102) | 12 |
@@ -132,7 +132,7 @@ NN-Course-Slug/
 ### 2.3 Index page and navigation
 
 - `index.html` contains exactly 27 curriculum cards (one per course), all linked correctly. Counts and the "Tracks" list in the footer are **Liquid-driven** from `_data/navigation.yml` and `_data/site_stats.yml` — do not hardcode them.
-- `_data/navigation.yml` has exactly 27 `tracks:` entries in the canonical course order (Project Management → IT, Cloud & Systems Administration → Supply Chain & Operations → AI-Based Digital Marketing → Bitcoin & E-Commerce) with module slugs matching the folder structure.
+- `_data/navigation.yml` has exactly 27 `tracks:` entries in the canonical course order (Project Management → IT, Cloud & Systems Administration → Supply Chain & Operations → AI Digital Marketing → Bitcoin & E-Commerce) with module slugs matching the folder structure.
 - The homepage hero references all 32 certifications by their official IDs as pills.
 - The homepage uses `{% assign cert_count = site.data.navigation.tracks | size %}` and similar Liquid to compute counts dynamically.
 

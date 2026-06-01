@@ -5,7 +5,7 @@
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Basic marketing vocabulary (segment, channel, funnel, conversion) — covered in [Course 14 Module 1: Digital Marketing Landscape 2026](../../14-AI-Marketing-Foundations/Module-01-Digital-Marketing-Landscape-2026/Reading.md).
 > - Analytics & measurement basics (CTR, CVR, ROAS, CAC, LTV) — covered in [Course 14 Module 8: Analytics & Measurement Basics](../../14-AI-Marketing-Foundations/Module-08-Analytics-Measurement-Basics/Reading.md).
-> - Hands-on campaign exposure (running at least one Google or Meta Ads campaign) — covered across [Course 15: AI Marketing Practitioner](../../15-AI-Marketing-Practitioner/README.md).
+> - Hands-on campaign exposure (running at least one Google or Meta Ads campaign) — covered across [Course 15: AI Digital Marketing Practitioner](../../15-AI-Marketing-Practitioner/README.md).
 > - Numeracy: be able to read a quarterly P&L line and a basic A/B-test table without translation.
 > If any of these are shaky, pause and review before continuing — this module assumes them.
 
@@ -476,7 +476,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: [Module 2](../Module-02-CDP-Server-Side-Tracking/Reading.md) turns the strategic frameworks into the *data infrastructure* (CDP + server-side tracking) needed to actually measure them; [Module 10](../Module-10-Marketing-Org-Tech-Stack-Design/Reading.md) revisits OKRs and KPI trees at the org-design level.
-> - Cross-course: [Course 17: AI Marketing Entrepreneur](../../17-AI-Marketing-Entrepreneur/README.md) takes the strategic frameworks here and applies them at the founder / GTM-design level, including positioning, market entry, and growth-portfolio decisions.
+> - Cross-course: [Course 17: AI Digital Marketing Entrepreneur](../../17-AI-Marketing-Entrepreneur/README.md) takes the strategic frameworks here and applies them at the founder / GTM-design level, including positioning, market entry, and growth-portfolio decisions.
 > - Practice: [Practice Exam 1](../Practice-Exams/Practice-Exam-1.md) covers Modules 1–5 (questions 1–4 and 30–34 draw from this module); the [Final Mock Exam](../Practice-Exams/Final-Mock-Exam.md) tests STP/Porter/Ansoff/OKR design.
 
 ---

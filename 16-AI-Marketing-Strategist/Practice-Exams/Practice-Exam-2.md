@@ -1,4 +1,4 @@
-# 🧪 Practice Exam 2 — AI Marketing Strategist (Three-Quarter)
+# 🧪 Practice Exam 2 — AI Digital Marketing Strategist (Three-Quarter)
 
 > **Conditions:** Set an 80-minute timer. 60 questions. Treat it like the real thing.
 > **Pass mark:** 48/60 (80%). This is the advanced course — bar is high.

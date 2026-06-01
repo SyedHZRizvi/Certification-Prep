@@ -212,7 +212,7 @@ The 12 weeks above were written for **Scrum Master (Weeks 1-4) → PMP (Weeks 5-
 - **Cadence:** Heavier vocabulary loading in the first 2 weeks (APICS Dictionary for ASCM; ISM Bridge of Knowledge for CPSM). Mocks weighted toward the final 3 weeks.
 - **Modules per track:** CSCP = 10, CPIM = 8 (Part 1 + Part 2 stacked), CLTD = 8, CPSM = 8 (across 3 separate exams).
 
-### AI-Based Digital Marketing (Courses 14-18, a 5-course ladder)
+### AI Digital Marketing (Courses 14-18, a 5-course ladder)
 - **Length per course:** Foundations (14) = 6-8 weeks; Practitioner (15) = 8-10 weeks; Strategist (16) = 10-12 weeks; Entrepreneur (17) = 6-8 weeks; Capstone Portfolio (18) = 8-10 weeks (project-driven).
 - **Cadence:** Practitioner-onward, replace half the "video" allocation with hands-on (run a real Google Ads or Meta campaign for $50; build a GA4 property; ship one piece of AI-generated content per week). The ladder is project-heavy, not exam-heavy.
 - **Modules per track:** Foundations = 10, Practitioner = 10, Strategist = 10, Entrepreneur = 8, Capstone = 8.

@@ -1,4 +1,4 @@
-# 🧪 Practice Exam 1 — AI Marketing Practitioner (Style)
+# 🧪 Practice Exam 1 — AI Digital Marketing Practitioner (Style)
 
 > **Conditions:** Set a 60-minute timer. 40 questions. Treat it like the real thing.
 > **Pass mark:** 32/40 (80%)

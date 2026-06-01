@@ -1,4 +1,4 @@
-# 🧪 Practice Exam 2 — AI Marketing Foundations (All 10 Modules)
+# 🧪 Practice Exam 2 — AI Digital Marketing Foundations (All 10 Modules)
 
 > **Conditions:** Set a 70-minute timer. 50 questions. Treat it like the real thing.
 > **Pass mark:** 38/50 (75%)

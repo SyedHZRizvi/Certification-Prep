@@ -375,7 +375,7 @@ Once you've completed the capstone, you're ready for:
 1. **Take a real certification exam**: pick from the list (Google Ads Search is the easiest first win — free, 80% pass mark)
 2. **Take on a freelance client**: even $500 for a "first campaign" project is achievable post-capstone
 3. **Apply for a paid media role**: your capstone + cert is a strong portfolio
-4. **Move to Course 3 in the ladder**: AI Marketing Strategist (when available)
+4. **Move to Course 3 in the ladder**: AI Digital Marketing Strategist (when available)
 5. **Specialize**: pick one channel (Meta or Google or LinkedIn) and go deeper for 6 months
 
 ---
