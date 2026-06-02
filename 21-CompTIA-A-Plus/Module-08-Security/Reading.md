@@ -14,6 +14,7 @@
 Meet Sven. He's the IT manager for a 90-person commercial real-estate firm. On a Thursday afternoon, the CFO calls — flustered, embarrassed. "I got an email from what looked like our bank. It said a wire transfer needed re-authorization. I clicked the link and… entered my password and the code from my authenticator. Then it didn't do anything. I'm worried."
 
 Sven's clock starts. Within 4 minutes he:
+
 1. Pulls up the **conditional-access dashboard** in Microsoft Entra ID — sees a sign-in from Lagos, Nigeria. The CFO is in Chicago.
 2. **Revokes all CFO sessions** and forces a sign-in reset.
 3. **Resets the CFO's password** to a temporary value and forces MFA re-enrollment with a *new* authenticator (the previous one is presumed compromised).
@@ -303,6 +304,7 @@ Colonial paid the ransom: **75 BTC (≈$4.4M)** within 24 hours. The decryptor p
 ## ✅ Module 8 Summary
 
 You now know:
+
 - 🛡️ Physical controls — mantrap, badge readers, cable lock, privacy screen
 - 🔐 Authentication factors and the definition of true MFA
 - 🔒 Encryption stack — BitLocker, FileVault, LUKS, EFS

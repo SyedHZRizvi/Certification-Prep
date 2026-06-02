@@ -146,6 +146,7 @@ Special care for personal data:
 ### Right to be forgotten (GDPR)
 
 If a customer requests deletion under GDPR:
+
 - Remove their docs from your KB (re-index)
 - Delete logged inferences containing their data
 - If they were in fine-tuning data, you may need to retrain to remove their influence — this is a known LLM compliance pain point
@@ -168,6 +169,7 @@ If a customer requests deletion under GDPR:
 | **EU AI Act** | AI in EU | Risk tiers, transparency, conformity assessment |
 
 AWS provides:
+
 - A **list of HIPAA-eligible services** (most AI services including Bedrock, SageMaker, Comprehend Medical, Textract, HealthLake/HealthScribe)
 - **Compliance reports** for nearly all major frameworks via **AWS Artifact**
 - A **shared responsibility model** that explicitly clarifies AWS's vs customer's scope
@@ -278,6 +280,7 @@ This single architecture answers about 60% of Domain 5 scenario questions.
 ## 📊 Case Study — Samsung's ChatGPT Source-Code Leak Ban (Apr 2023)
 
 **Situation.** In early 2023, Samsung Electronics' semiconductor division — one of the world's most strategically sensitive engineering operations — quietly began allowing engineers to use public ChatGPT to help with their work. Within three weeks (March 2023), three separate incidents were documented internally:
+
 1. An engineer pasted proprietary source code from a *new* semiconductor manufacturing program into ChatGPT to ask the model to debug it.
 2. Another engineer pasted internal *test sequences for chip yield optimization* into ChatGPT to ask it to make the code more efficient.
 3. A third engineer pasted *meeting recording transcripts* from an internal product meeting and asked ChatGPT to summarize them.
@@ -285,6 +288,7 @@ This single architecture answers about 60% of Domain 5 scenario questions.
 In each case, the data went to OpenAI's servers, where (under OpenAI's then-default terms) it could be retained, reviewed, and potentially used to improve the model. The data left Samsung's security perimeter. Once data is in a third-party LLM's training pipeline, *deleting* it is non-trivial — modern LLMs don't have a clean "forget this customer" button.
 
 **Decision.** Samsung's response, announced internally in late March / publicly via Bloomberg and *The Economist Korea* in May 2023:
+
 - **Immediate ban on public-generative-AI use** (ChatGPT, Google Bard at the time, similar tools) on Samsung-owned devices and corporate networks
 - Strict policy: any engineer found uploading proprietary information to a third-party AI tool would face *disciplinary action up to and including termination*
 - Per-prompt size limit of 1024 bytes for *any* sanctioned external AI use (to prevent code-paste leaks)
@@ -292,6 +296,7 @@ In each case, the data went to OpenAI's servers, where (under OpenAI's then-defa
 - Procurement direction: prefer enterprise contracts (Microsoft Azure OpenAI, Amazon Bedrock, Anthropic enterprise terms) for *any* business use of LLMs, because they offer contractual no-train-on-customer-data guarantees
 
 **Outcome.** Within 12 months:
+
 - Nearly every Fortune 500 enterprise had a documented "internal AI use policy" — many borrowed Samsung's language verbatim
 - Public-LLM adoption velocity slowed in regulated industries while enterprise contracts (Bedrock, Azure OpenAI, Anthropic Workspaces) accelerated
 - Microsoft and OpenAI rolled out **ChatGPT Enterprise** (Aug 2023) with explicit no-train-on-customer-data terms and SOC 2 Type 2 compliance, directly in response to incidents like Samsung's
@@ -299,6 +304,7 @@ In each case, the data went to OpenAI's servers, where (under OpenAI's then-defa
 - Cybersecurity vendors built a new product category — *AI data loss prevention* — to detect and block proprietary data being pasted into public LLM interfaces
 
 **Lesson for the exam / for practitioners.** Five AIF-C01 talking points anchor here:
+
 1. **The biggest GenAI security risk is *not* prompt injection or model extraction — it's the well-meaning employee.** The vast majority of incidents are insider-mistake exfiltration via public LLM interfaces. The mitigation isn't algorithmic; it's *policy + enterprise-contracted alternative + DLP at the egress*. The exam tests this through "which architecture prevents data leakage?" scenarios — answer: enterprise Bedrock + IAM + PrivateLink + invocation logging + Guardrails PII filter.
 2. **Bedrock's *default* contractual posture is the answer to Samsung's class of incident.** AWS publishes that customer prompts and outputs are not used to train base models, data stays in the customer's Region/account, and customer-managed KMS keys are recommended for custom models. The exam tests this verbatim — Q15 of Module 4's quiz, Q9 of Module 8's quiz, plus PE questions.
 3. **PrivateLink for Bedrock is the network-layer companion.** TLS-encrypted public-internet traffic was good enough for *most* SaaS — but for sensitive workloads, customers want the additional assurance that traffic *never leaves the AWS backbone*. The exam loves this pattern: "How do you keep Bedrock traffic off the public internet?" → **PrivateLink VPC Interface Endpoint**.
@@ -317,6 +323,7 @@ In each case, the data went to OpenAI's servers, where (under OpenAI's then-defa
 ## ✅ Module 8 Summary
 
 You now know:
+
 - 🤝 How the Shared Responsibility Model applies to AI
 - 🪪 IAM patterns for Bedrock (resource-level model ARNs) and SageMaker (execution roles, VPC mode)
 - 🌐 How to make Bedrock traffic private with VPC interface endpoints (PrivateLink)

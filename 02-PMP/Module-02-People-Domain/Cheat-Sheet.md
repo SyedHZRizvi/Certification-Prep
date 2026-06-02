@@ -96,6 +96,7 @@ PMs spend **~90%** time communicating.
 ## 🎯 Power Phrases for People Questions
 
 ✅ Right answers often contain:
+
 - "Have a 1-on-1..."
 - "Coach the team..."
 - "Facilitate a discussion..."
@@ -103,6 +104,7 @@ PMs spend **~90%** time communicating.
 - "Empower them to..."
 
 ❌ Wrong answers:
+
 - "Replace the underperformer"
 - "Escalate to HR"
 - "Tell them to follow the plan"

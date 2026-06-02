@@ -111,6 +111,7 @@ Windows Update for Business + Endpoint analytics
 ## 🏆 Exam Power Phrases
 
 When you see these, they're often **correct**:
+
 - ✅ "Entra joined + Intune + Conditional Access"
 - ✅ "MAM without enrollment for BYOD"
 - ✅ "Settings Catalog for GPO equivalent"
@@ -118,6 +119,7 @@ When you see these, they're often **correct**:
 - ✅ "Defender for Endpoint risk signal → Intune"
 
 When you see these, often **wrong**:
+
 - ❌ "Trust the corporate network"
 - ❌ "Domain join the BYOD device"
 - ❌ "Require GPO on Entra-joined Windows"

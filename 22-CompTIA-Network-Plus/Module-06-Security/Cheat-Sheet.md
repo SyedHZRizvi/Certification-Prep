@@ -111,6 +111,7 @@ Agent (deeper) vs Agentless (BYOD/IoT — DHCP fingerprint, port profile).
 ## 🏆 Exam Power Phrases
 
 Often **right**:
+
 - ✅ "Microsegmentation reduces blast radius"
 - ✅ "WAF for OWASP-class web attacks"
 - ✅ "ZTNA per-application access"
@@ -120,6 +121,7 @@ Often **right**:
 - ✅ "Backup, then segment, then monitor"
 
 Often **wrong**:
+
 - ❌ "Disable IPS to fix false positives"
 - ❌ "Open all inbound — users complain"
 - ❌ "Telnet for remote management"
@@ -145,6 +147,7 @@ Often **wrong**:
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. IDS vs IPS in one sentence? ___
 2. Three ports needed for IPsec through a NAT? ___
 3. 802.1X three roles? ___

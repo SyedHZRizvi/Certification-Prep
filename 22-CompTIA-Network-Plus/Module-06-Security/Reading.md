@@ -36,12 +36,14 @@ A **firewall** evaluates packets against a rule set and decides allow/deny. The 
 ### Stateful firewall — how it actually works
 
 A connection state table tracks:
+
 - **Source/dest IP** + **source/dest port**
 - **Protocol** (TCP/UDP/ICMP)
 - **Connection state** (SYN sent, established, time-wait, etc.)
 - **Counters** (bytes/packets, timestamps)
 
 When a packet arrives:
+
 1. Match against state table — if a known connection, allow per state
 2. If new, evaluate against rule base (top-down, first-match wins)
 3. If allowed, create state-table entry; future packets in this flow are fast-path
@@ -347,6 +349,7 @@ This is a high-value scenario question — many candidates miss the *DNS resolut
 From the vendor portal, the attackers pivoted into Target's internal corporate network. Because the network was **flat** — not microsegmented — they could traverse from the corporate environment to the **payment processing network**, where they installed **BlackPOS** memory-scraping malware on point-of-sale terminals at 1,797 US Target stores.
 
 **Outcome.** Target's losses:
+
 - **$292 million** in direct breach costs (Target 10-K filings 2014–2017)
 - **$18.5 million** multistate settlement (2017)
 - **$10 million** consumer class action settlement (2015)
@@ -355,6 +358,7 @@ From the vendor portal, the attackers pivoted into Target's internal corporate n
 - An **inline FireEye IPS** that Target had purchased and deployed *did* detect the exfiltration but **alerts were ignored** — a SOC operational failure on top of the architectural failure
 
 **Lesson for the exam / for practitioners.** Map every Network+ Module 6 concept onto Target:
+
 - **Network segmentation** (VLANs, ACLs, firewalls between vendor / corporate / PCI zones) was insufficient — the vendor zone could reach the corporate zone could reach the PCI zone
 - **NAC** would have helped — the vendor's compromised credentials may have authenticated, but device posture checks could have failed for the foreign-origin connection
 - **Zero Trust** would have required per-application authorization, not network-wide trust
@@ -374,6 +378,7 @@ This case is exactly what Network+ tests when asking about segmentation, ACL des
 ## ✅ Module 6 Summary
 
 You now know:
+
 - 🛡️ **Firewall generations** — packet filter → stateful → NGFW → WAF → FWaaS — and ACL evaluation
 - 👀 **IDS vs IPS** — out-of-band detect vs inline block; signature vs anomaly methodologies
 - 🚪 **NAC** — posture-check devices, dynamic VLAN assignment, agent vs agentless

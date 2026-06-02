@@ -13,6 +13,7 @@ You report to the CEO. The Board has set an explicit mandate at your offer lette
 > **"In 14 months, deliver a logistics transformation that recaptures the $9M of annual freight overspend identified in the 2025 internal audit, while modernizing our network for the next 5–7 years."**
 
 The audit's $9M overspend identification breaks down (approximately) as:
+
 - $3.6M — premium parcel/LTL freight ("we ship truckload-LTL when LTL would do, and LTL-parcel when LTL works")
 - $2.0M — fleet under-utilization (~28% empty miles, 14% under industry benchmarks)
 - $1.7M — accessorial charges from carriers (detention, layover, lumper)
@@ -20,6 +21,7 @@ The audit's $9M overspend identification breaks down (approximately) as:
 - $0.7M — Incoterms-error duties on European architectural glass shipments
 
 Additional constraints:
+
 - The CEO wants the network preserved at 14 DCs (politically — each was a recent acquisition); your final state may consolidate down to 8–10 DCs but must justify each closure.
 - Sustainability commitments: Holloway joined the Science-Based Targets initiative (SBTi) in 2024 with a 30% Scope 1+2 emissions reduction commitment by 2030.
 - IT budget: $4M total for TMS / WMS / control-tower software.
@@ -66,6 +68,7 @@ Additional constraints:
 
 ### 7. Sustainability Scorecard & Board-Level Metrics Dashboard (Module 8)
 - A Board-presentation dashboard with the 12 metrics you'd present quarterly:
+
   - Freight cost per cwt
   - Cost per shipment
   - On-time delivery (OTD) %
@@ -145,6 +148,7 @@ For a 4-week intensive: combine Weeks 1+2, 3+4, 5+6, 7+8 — but you will lose d
 ## What "submission" looks like
 
 The complete submission is:
+
 - **`Holloway-Logistics-Transformation-Plan.pdf` (or .docx)** — 25–35 pages, with sections for each of the 7 deliverables.
 - **`Executive-Summary.pdf`** — 4 pages, Board-ready.
 - **`Financial-Model.xlsx`** — your $9M savings reconciliation by category.

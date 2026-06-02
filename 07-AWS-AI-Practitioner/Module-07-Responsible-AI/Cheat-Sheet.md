@@ -86,6 +86,7 @@ AWS service: **Amazon A2I (Augmented AI)**.
 ## 🏆 Exam Power Phrases
 
 Usually right:
+
 - ✅ "Bias → **SageMaker Clarify**"
 - ✅ "PII / safety / denied topics → **Bedrock Guardrails**"
 - ✅ "Human review of AI predictions → **Amazon A2I**"
@@ -96,6 +97,7 @@ Usually right:
 - ✅ "Bias drift in production → **Model Monitor with Clarify**"
 
 Usually wrong:
+
 - ❌ "Use Clarify for PII"
 - ❌ "Use Guardrails for bias detection"
 - ❌ "Model Cards are public AWS docs" (those are AI Service Cards)

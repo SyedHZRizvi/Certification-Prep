@@ -101,12 +101,14 @@ Custom models: **Language · Brands · Person · Logo**
 ## 🏆 Exam Power Phrases
 
 **Usually right**:
+
 - ✅ "Use Image Analysis 4.0 with `VisualFeatures.READ`"
 - ✅ "Train a person group first, then identify"
 - ✅ "Compact domain to export"
 - ✅ "Document Intelligence for structured invoices"
 
 **Usually wrong**:
+
 - ❌ "Use Face to detect emotion"
 - ❌ "Image Analysis = invoice extraction"
 - ❌ "One API call per visual feature"

@@ -15,6 +15,7 @@
 Meet Diego. He's a regional sales VP at a mid-sized pharma company. On a Tuesday morning in São Paulo, he opens his laptop, tries to sync his calendar, and gets the spinning beachball. His phone — issued by the company — won't pick up email either. He texts IT: "My stuff is broken. Big presentation in 4 hours."
 
 The help-desk tech, Priya, opens the ticket. Three things she has to figure out, fast:
+
 1. **Is the device the problem, or the account?** (Test her own login from a clean device.)
 2. **Has anything *changed*?** (Diego mentions he flew in last night. International roaming. Different cellular network.)
 3. **Is this device under MDM control, and can she pull diagnostics remotely?**
@@ -136,6 +137,7 @@ You can have **5+ eSIMs stored on an iPhone**, two active at once (one for work,
 | **RFID** | Passive: cm; Active: meters | Slow | Inventory, badges, contactless cards (vs NFC: NFC is two-way; basic RFID is one-way readable) |
 
 Bluetooth pairing process:
+
 1. Put accessory into pairing mode (button hold)
 2. Phone scans → sees accessory
 3. Tap to pair → exchange numeric/PIN if required
@@ -310,6 +312,7 @@ This is what an MDM-mediated mobile-support workflow looks like end-to-end.
 ## ✅ Module 1 Summary
 
 You now know:
+
 - 📱 The display, touch, sensor, and connector technologies inside every modern mobile device
 - 📶 Cellular generations (2G–5G), the differences between sub-6 GHz and mmWave 5G, and SIM/eSIM provisioning
 - 📡 The short-range wireless cousins: Bluetooth, NFC, IR, RFID

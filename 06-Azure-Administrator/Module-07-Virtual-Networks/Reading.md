@@ -29,11 +29,13 @@ Let's build it.
 ## 🧱 Virtual Network (VNet) Fundamentals
 
 A **VNet** is a region-scoped slice of private IP space. You define:
+
 - An **address space** (one or more CIDR blocks, e.g. `10.0.0.0/16`)
 - A list of **subnets** inside that address space
 - Optional DDoS protection, IPv6, DNS settings
 
 Rules to memorize:
+
 - A VNet lives in exactly **one region**.
 - A subnet is a portion of the VNet address space (e.g. `10.0.1.0/24`).
 - **Azure reserves 5 IPs per subnet** — `.0` (network), `.1` (default gateway), `.2`, `.3` (DNS), `.255` (broadcast).
@@ -413,6 +415,7 @@ az network private-dns link vnet create -g rg-net \
 ## ✅ Module 7 Summary
 
 You now know:
+
 - 🧱 VNet + subnet CIDR rules and the 5 reserved IPs
 - 🔁 Peering mechanics + non-transitivity
 - 🏛️ The hub-spoke topology and why it's THE pattern
@@ -438,6 +441,7 @@ You now know:
 In 2020, COVID forced the issue. Vaccination scheduling, contact tracing, and ICU capacity dashboards all demanded *cross-trust* data in near-real time. NHS England partnered with Microsoft (Palantir provided the Foundry analytics platform on top) for what was eventually announced in 2023 as the **NHS Federated Data Platform (FDP)** — a £330 million, 7-year contract built on Azure.
 
 **Decision.** The FDP's network architecture is the canonical *hub-spoke at national scale* exemplar. The published architecture (NHS England, *Federated Data Platform Privacy Impact Assessment*, 2023; *Building Better Healthcare*, *NHS national cloud architecture*, 2024) deploys:
+
 1. **A central "national hub" VNet** in UK South region containing the Azure Firewall Premium, an ExpressRoute Direct gateway (100 Gbps to NHS HSCN — Health and Social Care Network), Azure Bastion for admin access, and Private DNS Zones.
 2. **Per-region "spoke" VNets** for the seven NHS England regional networks (North East and Yorkshire, North West, Midlands, etc.), each peered to the hub with `--allow-gateway-transit` on the hub and `--use-remote-gateways` on the spokes.
 3. **Per-trust "leaf" VNets** that peer into their regional spoke (not directly to the hub — peering is **not transitive**, so spoke-to-trust traffic forces through the regional Azure Firewall, where audit logs capture every cross-trust query).
@@ -447,11 +451,13 @@ In 2020, COVID forced the issue. Vaccination scheduling, contact tracing, and IC
 Address space planning followed CAF guidance: each region got a `/16`, each trust a `/22` from within its region's `/16`. The hub used `10.0.0.0/16`; spoke and trust VNets were guaranteed non-overlapping at the design stage.
 
 **Outcome.** Public reporting (NHS England, FDP one-year update, 2024-04; *Health Service Journal*, 2024-09) cites:
+
 - **Cross-trust data requests** that previously took 6–12 weeks moved to ~6 hours for pre-approved query patterns.
 - **First cross-NHS-trust ICU capacity dashboard** went from concept to production in 11 weeks during COVID's Alpha wave.
 - **No documented network-level data exfiltration incident** since GA. (Application-level access disputes remain a political/ethical question, especially around Palantir's role — but that is independent of the Azure network topology, which is the AZ-104-relevant part.)
 
 **Lesson for the exam / for practitioners.** The FDP is hub-spoke as the public-sector textbook — every AZ-104 case-study question that hints at "multinational" or "multi-trust" or "shared services" maps to this design. Three exam-critical mechanics:
+
 1. **Peering is non-transitive.** Spoke-to-spoke flows must transit the hub firewall, with **User-Defined Routes** on each spoke forcing `0.0.0.0/0` (and inter-spoke prefixes) to the hub firewall's private IP.
 2. **Gateway transit** lets every spoke share the hub's ExpressRoute / VPN gateway. Toggle pair: hub side `--allow-gateway-transit`, spoke side `--use-remote-gateways`.
 3. **Private DNS Zones** must be linked to the *resolver VNet* (usually the hub), and spokes must use the hub for DNS. Without this, `privatelink.*` FQDNs resolve to public IPs and bypass the private endpoint entirely. This is the #1 silent-failure mode the exam tests.

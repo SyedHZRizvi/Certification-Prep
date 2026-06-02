@@ -145,6 +145,7 @@ Less prestigious than MIT but well-structured for the working professional. Free
 ## 5. Adjacent ASCM Credentials (for context, not exam material)
 
 If you're considering follow-on certifications after CPIM:
+
 - **ASCM CSCP** (Certified Supply Chain Professional) — the supply-chain-strategy credential, broader scope; this course's sibling at `10-ASCM-CSCP/`.
 - **ASCM CLTD** (Certified in Logistics, Transportation, and Distribution) — deeper on logistics and warehousing; `12-ASCM-CLTD/`.
 - **ASCM CDDP / CDDL** (Certified Demand Driven Planner / Leader) — the DDMRP-specific credential by ASCM in partnership with the Demand Driven Institute. Build on the DDMRP discussion in Module 4 of this course.

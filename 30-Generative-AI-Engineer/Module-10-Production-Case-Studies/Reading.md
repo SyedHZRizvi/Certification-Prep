@@ -66,6 +66,7 @@ This module is seven such case studies, each read as an engineering document. Pi
 5. **Inline edit + chat unified UI** — the user doesn't pick "this is a question" vs "this is an edit"; the system decides.
 
 **The retrieval architecture** (as disclosed in their public engineering content):
+
 - Custom embedder fine-tuned on code (not vanilla OpenAI embedding-3)
 - Indexing every file on every commit, with edit-history awareness
 - Per-call retrieval is "low-confidence-when-RAG-is-best, high-confidence-when-current-file-is-enough"
@@ -85,6 +86,7 @@ This module is seven such case studies, each read as an engineering document. Pi
 **v1 (2023).** Straightforward RAG. Embed pages, retrieve, generate. Quality was uneven; the "missing memo" story from Module 2 came from this era.
 
 **v2 (2024).** Major rebuild:
+
 - Header-aware chunking
 - Hybrid retrieval (dense + BM25)
 - Cohere Rerank
@@ -93,6 +95,7 @@ This module is seven such case studies, each read as an engineering document. Pi
 - Per-workspace ACL filter at retrieval (multi-tenant)
 
 **v3 (2025-26).** Modular RAG:
+
 - Router decides between QA, web search, "draft for me," and "edit current page"
 - Long-context for small workspaces; RAG for large
 - Anthropic contextual retrieval at index time
@@ -153,6 +156,7 @@ This module is seven such case studies, each read as an engineering document. Pi
 - Strong system prompt with explicit "do not give the answer" framing
 
 **The infrastructure** (per Khan engineering posts + press):
+
 - GPT-4 (then GPT-4o, then GPT-5) backbone, via OpenAI API
 - Custom retrieval over Khan Academy's structured curriculum (skill trees, prerequisite graphs)
 - Multi-modal in 2024+ (math notation via vision)
@@ -176,6 +180,7 @@ This module is seven such case studies, each read as an engineering document. Pi
 **The product.** Stripe Radar is Stripe's fraud-detection system. Historically driven by gradient-boosted-trees over thousands of features. Starting in 2023, Stripe added LLM-driven *explanations* and *adjudication* on borderline cases.
 
 **Why LLMs in fraud?** Not for classification — the ML models are far better. For:
+
 - *Explaining* the model's decision in human-readable language for the merchant
 - *Adjudicating* edge cases that human review queues sit on
 - *Generating* new heuristic rules from textual transaction context
@@ -214,6 +219,7 @@ This module is seven such case studies, each read as an engineering document. Pi
 - *Calibration* — confidence expressed in language; not "I'm 78% sure"
 
 **The retrieval-augmentation pattern** (web search):
+
 - A query-rewriter Claude generates search queries
 - Independent search-tool runs
 - Source extraction + chunking + reranking
@@ -221,6 +227,7 @@ This module is seven such case studies, each read as an engineering document. Pi
 - Output linkified for transparency
 
 **Cost discipline** (per Anthropic's published business notes):
+
 - Prompt caching default for system prompts
 - Speculative decoding internal to the serving stack
 - Multi-region inference; sub-second TTFT in most markets
@@ -284,6 +291,7 @@ After reading all seven case studies, the patterns:
 ## 🏗️ Lab: Pick a Real Production AI Product. Architect It Yourself.
 
 This is the capstone lab. Pick one of:
+
 - Perplexity Pro
 - Glean Enterprise Search
 - Replit Agent
@@ -294,6 +302,7 @@ This is the capstone lab. Pick one of:
 - Microsoft Copilot for Microsoft 365
 
 For your pick, write a 3-5 page architectural document:
+
 1. **What does the product do?** (1 paragraph)
 2. **What model(s) do you think they use, and why?**
 3. **What is the retrieval architecture?** (data sources, embedder, vector DB, chunking, reranker, contextual retrieval?)
@@ -311,6 +320,7 @@ This document is your portfolio piece. Senior+ interviewers in AI shops will ask
 ## ✅ Module 10 Summary
 
 You now know:
+
 - 🏢 Seven production GenAI systems' architectures end-to-end
 - 🎯 The patterns that repeat across them
 - 🚨 The anti-patterns to flag in your own designs

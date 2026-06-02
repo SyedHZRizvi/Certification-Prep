@@ -39,6 +39,7 @@ A **DNS zone** is a portion of the DNS namespace for which a server is **authori
 ### AD-integrated zones (preferred for AD DNS)
 
 Storing a zone as **AD-integrated** means:
+
 - Zone data lives in the `MicrosoftDNS` container in AD (CN partition of choice)
 - Multi-master writes — any DC can accept a record update
 - Secure dynamic updates — only authorized clients (computers / DHCP servers in `DnsUpdateProxy`) can register
@@ -317,6 +318,7 @@ New-NetFirewallRule -DisplayName "Allow RDP from HQ admin subnet" `
 ### Connection Security Rules (IPsec)
 
 Beyond simple allow/block, WFAS can enforce **IPsec** between hosts:
+
 - **Isolation** — only domain-joined computers can connect
 - **Server-to-server** — specific server pairs use IPsec
 - **Tunnel** — site-to-site VPN-style tunneling
@@ -402,6 +404,7 @@ Hyper-V networking is covered deeper in [Module 5](../Module-05-HyperV/Reading.m
 **Situation.** On October 21, 2016, the Mirai botnet — comprising ~150,000 compromised IoT devices (DVRs, IP cameras, baby monitors) — launched a 1.2 Tbps DDoS attack against **Dyn DNS**, the managed-DNS provider for Twitter, Spotify, Reddit, GitHub, PayPal, Netflix, and dozens of other major web properties (Dyn Statement on October 21, 2016 DDoS Attack, October 26, 2016; Bruce Schneier, "Lessons from the Dyn DDoS Attack," CRYPTO-GRAM newsletter, November 2016). For ~7 hours, much of the East Coast of the United States could not reach these services — because their DNS resolution path failed. The websites themselves were online; nobody could *find* them.
 
 **Decision.** The post-mortem highlighted three architectural choices that turned a botnet into a national-scale outage:
+
 1. **Single-DNS-provider lock-in.** Hundreds of major sites used Dyn as their *only* authoritative DNS — no secondary provider. A single failure plane.
 2. **No anycast diversification.** Dyn's anycast network was overwhelmed because all the attack traffic could converge on the same DNS infrastructure.
 3. **Recursive resolver caching couldn't save them.** TTLs on the affected domains were measured in seconds to minutes — too short for caches to bridge the outage.
@@ -409,6 +412,7 @@ Hyper-V networking is covered deeper in [Module 5](../Module-05-HyperV/Reading.m
 **Outcome.** Within 6 months, Cloudflare DNS, AWS Route 53, and Google Cloud DNS all reported a surge in customers adopting **multi-provider authoritative DNS** with redundant DNSSEC signing. CloudFlare published its own incident-response guidance recommending *minimum two unrelated DNS providers* for any internet-facing service. Internally, large enterprises like Microsoft tightened their own internal DNS resiliency: a typical 50,000-seat Windows enterprise now runs DNS on **every** domain controller (active-active-active...), with **conditional forwarders** to internet resolvers, **scavenging enabled**, **DNSSEC for internal trust anchors**, and **DNS policies** to handle geographic / split-horizon needs.
 
 **Lesson for the exam / for practitioners.** AZ-800 won't test you on Dyn by name — but it tests every concept that the Dyn outage taught us:
+
 - *Resilient DNS topology* → multiple DC-DNS servers per site, AD-integrated zones (multi-master), conditional forwarders to internet resolvers
 - *DNSSEC* → defeats cache poisoning even in the chaos of a DDoS-driven cache miss
 - *Scavenging* → prevents the stale-record buildup that masks actual outages
@@ -467,6 +471,7 @@ The exam will phrase scenarios like: *"After a partial network outage, the secon
 ## ✅ Module 3 Summary
 
 You now know:
+
 - 🌐 DNS zone types (primary, secondary, stub, conditional forwarder) and AD-integrated benefits
 - 🔒 DNSSEC components (KSK/ZSK/DS/RRSIG/NSEC) and how the trust chain works
 - 🪞 DNS policies for split-horizon, geo-LB, and block lists

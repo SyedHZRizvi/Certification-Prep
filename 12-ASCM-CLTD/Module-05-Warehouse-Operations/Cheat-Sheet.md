@@ -100,12 +100,14 @@ Picking → Packing → Shipping → [Returns]
 ## 🏆 Exam Power Phrases
 
 Usually CORRECT:
+
 - ✅ "U-shape for general DC, I-shape for high-volume automated"
 - ✅ "Random putaway is systematic (WMS-tracked)"
 - ✅ "Cube utilization 65–85% sweet spot"
 - ✅ "Slot A-movers in golden zone"
 
 Usually WRONG:
+
 - ❌ "Drive-in = selective" (drive-in is LIFO)
 - ❌ "100% cube utilization is best"
 - ❌ "AGV = AMR" (path vs dynamic)

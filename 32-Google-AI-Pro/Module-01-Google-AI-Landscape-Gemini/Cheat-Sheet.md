@@ -163,6 +163,7 @@ Gemini 2.5 Ultra (Oct 2025: top tier)
 ## 🏆 Exam Power Phrases
 
 ✅ Often **right**:
+
 - "Gemini is natively multi-modal — trained on text + image + audio + video jointly"
 - "Pro is the default workhorse; Flash for volume, Ultra for hardest"
 - "Vertex AI with VPC-SC + CMEK + signed BAA for regulated workloads"
@@ -173,6 +174,7 @@ Gemini 2.5 Ultra (Oct 2025: top tier)
 - "Gemini Nano runs on-device on Pixel/Android"
 
 ❌ Often **wrong**:
+
 - "Gemini's vision is bolted on" (it's native)
 - "AI Studio and Vertex AI are the same thing" (they're not)
 - "Google AI Search and Vertex AI Vector Search are interchangeable" (different products)
@@ -201,6 +203,7 @@ Gemini 2.5 Ultra (Oct 2025: top tier)
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. The Transformer paper title + year + lab? ___
 2. Gemini tiers smallest to largest? ___
 3. Studio vs Vertex AI — one-line difference? ___

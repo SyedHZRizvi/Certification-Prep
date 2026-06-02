@@ -68,6 +68,7 @@ OUTPOST        →  AWS hardware in YOUR data center
 ## 🏆 Exam Power Phrases
 
 ✅ Usually right:
+
 - "Multi-AZ for HA"
 - "Use a managed service to reduce operational overhead"
 - "Encrypt at rest with KMS"
@@ -77,6 +78,7 @@ OUTPOST        →  AWS hardware in YOUR data center
 - "Use Reserved Instances / Savings Plans for predictable workloads"
 
 ❌ Usually wrong:
+
 - "Use the root account daily"
 - "Hard-code credentials in source"
 - "Run a single EC2 instance in one AZ for production"
@@ -112,6 +114,7 @@ OUTPOST        →  AWS hardware in YOUR data center
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. What's the difference between AZ and region? ___
 2. List the 6 pillars from memory ___
 3. On EC2, who patches the OS? ___

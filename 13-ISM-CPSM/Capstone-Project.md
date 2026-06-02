@@ -29,6 +29,7 @@ Build a **3-level spend taxonomy** (Family → Category → Sub-category) coveri
 ### 2. Top-20 Supplier Scorecard + SRM Plan (Module 4)
 
 Identify your top 20 suppliers by spend (assume 30-50% of total spend). For each, propose:
+
 - **Tier classification** (Strategic / Preferred / Approved / Tail) with rationale
 - **Scorecard dimensions and weights** (QCDS+Innovation+ESG+Risk)
 - **Governance cadence** (QBR / MBR / nothing)
@@ -39,6 +40,7 @@ Then design a **SRM playbook** of ~3 pages defining the supplier-development cri
 ### 3. End-to-End Supply Chain Risk Register (Modules 6, 7)
 
 Build a 30-50 row risk register covering: operational, financial, strategic, geopolitical, climate/natural, cyber, compliance/reputational, and brand risks. For each:
+
 - Description, category, probability (1-5), impact (1-5), score
 - Owner, treatment strategy (Avoid / Transfer / Mitigate / Accept), specific mitigation actions, status, review date
 
@@ -49,6 +51,7 @@ At minimum the register MUST include: the Listeria recall root cause, single-sou
 ### 4. Sustainability Scorecard Aligned to EU CSRD (Module 7)
 
 Northrop ships into the EU. **EU CSRD** (effective January 2024 for large companies, phased through 2028) requires disclosure of supply-chain ESG performance. Design:
+
 - A **supplier sustainability scorecard** Northrop will use across the top 50 suppliers
 - A **data-collection plan** (what data, how often, from whom)
 - **Scope 3 emissions baseline methodology** (GHG Protocol Corporate Standard)
@@ -60,6 +63,7 @@ Northrop ships into the EU. **EU CSRD** (effective January 2024 for large compan
 ### 5. Capability Roadmap for Category Teams (Module 8)
 
 Northrop's current team is mostly buyers. To execute Deliverables 1-4, you need 8-12 category managers with strategic-sourcing capability. Design:
+
 - **Org design** (which categories get dedicated managers, which are shared, which stay tactical)
 - **Capability framework** (skills, behaviors, certifications required by tier)
 - **Development plan** for the existing team (training, rotations, CPSM certification subsidization)
@@ -71,6 +75,7 @@ Northrop's current team is mostly buyers. To execute Deliverables 1-4, you need 
 ### 6. Board-Readable Metrics Dashboard (Module 8)
 
 Design a **1-page executive dashboard** Northrop's board will see quarterly. It must include:
+
 - Spend Under Management (current vs target)
 - Top-tier supplier scorecard summary (% green/yellow/orange/red)
 - Risk register currency and top open risks
@@ -138,6 +143,7 @@ Self-grading: complete the rubric above honestly. If you're below 75, identify t
 ## Optional Stretch Goals
 
 If you want to push beyond pass:
+
 1. **Tier-3 visibility methodology.** Beyond the risk register, design a multi-tier mapping process. Document the data feeds you'd subscribe to (Resilinc, Everstream Analytics, Sphera, Interos) and the cost-benefit.
 2. **AI-in-procurement pilot.** Define one specific pilot of an AI-driven sourcing tool (Coupa Navi, SAP Ariba AI, Jaggaer AI) with hypotheses, success metrics, and the 12-month rollout plan.
 3. **Make-or-buy of a strategic category.** Pick one Strategic-quadrant category and do a full make-or-buy analysis with 10-year TCO including capability-erosion risk.

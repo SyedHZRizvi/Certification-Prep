@@ -126,6 +126,7 @@ When you call an LLM, you usually set a few **inference parameters**. The AIF-C0
 | **Max tokens** | Maximum length of the response | Longer answer (more $) | Shorter answer |
 
 Rules of thumb:
+
 - **Factual / extraction / code** → low temperature (0.0–0.3)
 - **Brainstorming / marketing copy / creative** → higher temperature (0.7–1.0)
 - Usually tune **either** temperature **or** top-p, not both aggressively
@@ -263,6 +264,7 @@ A short timeline for context (not heavily tested but useful color):
 **Situation.** Through 2022, foundation models were essentially a research curiosity. OpenAI's GPT-3 had been quietly available via API since 2020, but the API was technical, the outputs were rough, and most enterprises had no idea what to do with it. Anthropic, founded in 2021 by former OpenAI staff (Dario and Daniela Amodei and colleagues), had Claude in private beta. Then on **30 November 2022**, OpenAI shipped a chat wrapper around GPT-3.5 called **ChatGPT**, free, no signup gate beyond email.
 
 **Decision.** OpenAI made three product calls that changed the industry:
+
 1. **Conversational interface over raw API.** The same model power had been available for two years; the chat UI made it usable. Within five days, ChatGPT had **1 million users**. Within two months, **100 million** — fastest consumer app to that mark, ever (Reuters, Feb 2023; UBS analysis).
 2. **Free tier with rate limits.** Free distribution at the speed of curiosity beat the per-token API economics of every competitor for adoption velocity.
 3. **RLHF alignment on instructions, not just completions.** Building on the InstructGPT work (Ouyang et al., NeurIPS 2022), they shipped a model that *followed instructions* rather than autocompleting text — a UX leap that made the demo "work" for non-technical users.
@@ -276,6 +278,7 @@ In parallel, **Anthropic took a different bet**: smaller initial reach, deeper e
 - Public-policy reaction was swift: the EU AI Act passed in Mar 2024 (in force Aug 2024); the NIST AI Risk Management Framework had been released in Jan 2023 in part as a reaction to GPT-3.5; the Italian DPA temporarily banned ChatGPT under GDPR in Mar 2023; Samsung internally banned ChatGPT use in Apr 2023 after engineers pasted proprietary source code into the model.
 
 **Lesson for the exam / for practitioners.** Two AIF-C01 talking points anchor here:
+
 1. **The product moat is the API + alignment + safety stack, not the base model alone.** GPT-3 had existed since 2020; what shifted in 2022 was the *productized*, RLHF-aligned chat interface. On Bedrock, the same pattern: AWS's value is not the model — it's the IAM, VPC endpoints, Guardrails, Knowledge Bases, Model Evaluation, and *single API across providers*. The exam will sometimes phrase this as "what does Bedrock add over calling Claude's API directly?" — the answer is the AWS-native security, governance, and managed-RAG layer.
 2. **2022–2024 is the inflection point your enterprise scenarios will assume.** Almost every exam scenario about "a company wants to deploy a generative AI assistant" implicitly dates to this 2-year window. The right reflex is: *managed FM behind an API + RAG over private data + Guardrails on top + invocation logging for audit.* Not: train a foundation model from scratch.
 
@@ -290,6 +293,7 @@ In parallel, **Anthropic took a different bet**: smaller initial reach, deeper e
 ## ✅ Module 3 Summary
 
 You now know:
+
 - 🧱 What a foundation model is and what makes it different from classical ML
 - 🗣️ That LLMs are FMs specialized for text, built on the Transformer architecture
 - 🧩 The role of tokens, the context window, and why they drive cost

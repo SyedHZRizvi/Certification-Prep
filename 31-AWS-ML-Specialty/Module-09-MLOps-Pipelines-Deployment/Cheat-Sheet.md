@@ -14,6 +14,7 @@
 | **Batch transform** | Job-time | Offline / one-time | Per job |
 
 Plus:
+
 - **Multi-Model Endpoint (MME)** — many models, one endpoint
 - **Multi-Container Endpoint (MCE)** — multiple containers, one endpoint
 - **Inference Components** — fine-grained scaling units
@@ -74,6 +75,7 @@ Pipeline: baseline job → schedule → reports in S3 → CloudWatch alarms.
 ## 🏗️ SageMaker Projects
 
 = templated MLOps repo:
+
 - CodeCommit / CodeBuild / CodePipeline (CI/CD)
 - SageMaker Pipelines (training workflow)
 - Model Registry

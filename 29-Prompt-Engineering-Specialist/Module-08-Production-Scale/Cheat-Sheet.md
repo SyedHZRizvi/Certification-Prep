@@ -57,6 +57,7 @@ response = completion(
 | RPD | Free-tier limits |
 
 Defenses:
+
 - Token-bucket limiter
 - Exponential backoff + jitter
 - Spillover routing (Anthropic ↔ OpenAI ↔ Gemini)
@@ -167,6 +168,7 @@ Done
 ## 🏆 Exam Power Phrases
 
 ✅ Often **right**:
+
 - "Anthropic prompt caching is the single biggest cost lever"
 - "Use LiteLLM for cross-provider fallbacks"
 - "Wire observability on day 1"
@@ -174,6 +176,7 @@ Done
 - "Per-customer spend caps prevent runaway bills"
 
 ❌ Often **wrong**:
+
 - "Hardcode a vendor SDK and ship"
 - "Caching is automatic on every provider"
 - "Semantic cache is always safe"
@@ -199,6 +202,7 @@ Done
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. Two cache types and when each? ___
 2. LiteLLM's three killer features? ___
 3. SLO targets — uptime, latency, quality? ___

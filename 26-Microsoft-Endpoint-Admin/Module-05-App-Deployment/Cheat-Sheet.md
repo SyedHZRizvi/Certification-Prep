@@ -116,6 +116,7 @@ Install context: **System** (default) or **User**
 | **Managed apps** (MAM) | APP-protected app |
 
 Pushes:
+
 - Server URL (Outlook Mobile, custom apps)
 - Default identity
 - Branding
@@ -132,6 +133,7 @@ UX labels (Productivity, Engineering, HR, etc.) for Company Portal catalog tabs.
 ## 🏆 Exam Power Phrases
 
 When you see these, they're often **correct**:
+
 - ✅ "Win32 with detection rule + dependencies + supersedence"
 - ✅ "App stuck installing = check detection rule"
 - ✅ "Supersedence with uninstall previous for in-place upgrade"
@@ -139,6 +141,7 @@ When you see these, they're often **correct**:
 - ✅ "Required for auto-install, Available for Company Portal"
 
 When you see these, often **wrong**:
+
 - ❌ "Direct APK upload to Intune"
 - ❌ "Supersedence chains of 3+ levels"
 - ❌ "Embed dependencies in source folder"

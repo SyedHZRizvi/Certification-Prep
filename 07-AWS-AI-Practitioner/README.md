@@ -51,6 +51,7 @@ Begin with [Module 1: AI / ML Fundamentals →](./Module-01-AI-ML-Fundamentals/R
 ## 🎯 What You'll Learn
 
 By the end of this track, you'll be able to:
+
 - Explain the difference between **AI, ML, and Deep Learning** — and where Generative AI sits inside that
 - Walk through the **end-to-end ML lifecycle** on Amazon SageMaker (Studio, Data Wrangler, Feature Store, Training Jobs, Endpoints, Model Monitor, JumpStart)
 - Recognize every **Amazon Bedrock** foundation model family by sight (Anthropic Claude, Amazon Titan & Nova, Meta Llama, Mistral, Cohere, Stability AI)

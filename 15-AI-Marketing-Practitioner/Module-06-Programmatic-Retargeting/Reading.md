@@ -11,6 +11,7 @@ Casper Mattress launched in 2014. By 2017 they were doing $250M in revenue, but 
 Their growth team built what became the textbook DTC retargeting playbook (publicly discussed by their VP of Marketing at Shopify Reunite 2018 and reanalyzed by [Common Thread Collective in 2022](https://commonthreadco.com/)):
 
 1. **3-stage retargeting funnel**:
+
    - Stage 1 (day 1–3 after cart abandon): Display banner on AdRoll showing the EXACT product abandoned, with a $50 discount code
    - Stage 2 (day 4–7): Meta Reels ad with a customer testimonial
    - Stage 3 (day 8–14): Email with the same $50 code, expiring tonight
@@ -130,10 +131,12 @@ A **Customer Data Platform (CDP)** is a database that unifies customer data from
 ### The Lag Problem
 
 Without a CDP:
+
 - Customer purchases → 24 hours later → audience syncs to Meta
 - In the 24-hour gap, you spend $30 retargeting a converted customer
 
 With a CDP:
+
 - Customer purchases → 30 seconds later → customer is excluded from all retargeting audiences across Meta, Google, TikTok, AdRoll
 - Zero waste
 
@@ -221,6 +224,7 @@ Programmatic's dirty secret: a lot of impressions go to fraud, bots, or sketchy 
 | **MOAT (Oracle)** | Attention metrics + viewability |
 
 For SMB / DTC: you probably won't pay for these. But:
+
 - Always use **block lists** in your DSPs (exclude known MFA sites)
 - Use **inclusion lists** for premium sites (CNN, Wikipedia, NYT, etc.)
 - Monitor **viewability** (% of ads visible for 1+ second per IAB standard)
@@ -369,6 +373,7 @@ The lesson: in retargeting, **specificity wins**. A generic "Come back to our st
 ## ✅ Module 6 Summary
 
 You now know:
+
 - 🌐 What programmatic means (DSP → Exchange → SSP)
 - 🛠️ The 4 main DSPs (DV360, TTD, AdRoll, Criteo) and when to use each
 - 🔄 Retargeting audience taxonomy (visitors → ATC → cart abandoners → buyers)

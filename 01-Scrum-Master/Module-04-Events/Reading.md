@@ -32,6 +32,7 @@ Sarah's team starts again. Better than last sprint. Forever improving.
 The Sprint is itself an event! It's the **container** that holds all the others.
 
 ### The Rules:
+
 - ⏱️ **Timebox:** 1 month or less (typically 2 weeks)
 - 🔁 **Same length** consistently (don't switch between 1 and 4 weeks)
 - 🚫 **No changes that endanger the Sprint Goal**
@@ -40,6 +41,7 @@ The Sprint is itself an event! It's the **container** that holds all the others.
 - 🛑 **Only PO can cancel** (rare)
 
 ### Why Sprints Are Short:
+
 - Less risk
 - Faster feedback
 - Frequent value delivery
@@ -67,6 +69,7 @@ Sprint Planning → [Work + Daily Scrums × N days] → Sprint Review → Retros
 - 4-week Sprint → 8 hr
 
 ### Attendees:
+
 - ✅ Whole Scrum Team
 - ✅ Possibly invited subject experts (if needed)
 
@@ -88,6 +91,7 @@ Sprint Planning → [Work + Daily Scrums × N days] → Sprint Review → Retros
 
 ### Output: Sprint Backlog
 Contains:
+
 - Sprint Goal (the **why**)
 - Selected PBIs (the **what**)
 - Plan to deliver them (the **how**)
@@ -95,6 +99,7 @@ Contains:
 🎯 **Exam pattern:** "What 3 topics does Sprint Planning address?" → **Why, What, How**
 
 ### Common Mistakes:
+
 - ❌ Planning runs over (poor PO prep, no DoD, unclear PBIs)
 - ❌ Stakeholders try to add scope mid-meeting
 - ❌ Skipping the "Why" — diving straight into tasks
@@ -112,6 +117,7 @@ Contains:
 ### Same time, same place
 
 ### Attendees:
+
 - ✅ Developers (mandatory)
 - ✅ PO can attend if they're a developer too
 - ✅ SM can attend (especially early in team formation)
@@ -121,11 +127,13 @@ Contains:
 **The 3 questions are NO LONGER PRESCRIBED.**
 
 Old guide had:
+
 1. What did I do yesterday?
 2. What will I do today?
 3. Any impediments?
 
 The 2020 guide says: format is up to the team. As long as it focuses on:
+
 - Progress toward Sprint Goal
 - Adapt the Sprint Backlog
 - Plan next 24 hours
@@ -133,6 +141,7 @@ The 2020 guide says: format is up to the team. As long as it focuses on:
 Many teams still use the 3 questions because they work — but they're not *required*.
 
 ### Common Mistakes:
+
 - ❌ Running over 15 minutes
 - ❌ Becoming a status meeting for the manager
 - ❌ Going around the room reciting (instead of *real* coordination)
@@ -155,21 +164,25 @@ Many teams still use the 3 questions because they work — but they're not *requ
 - 4-week Sprint → 4 hr
 
 ### Attendees:
+
 - ✅ Scrum Team
 - ✅ Stakeholders (THE ONE EVENT they actively join)
 - ✅ Customers, when valuable
 
 ### Purpose:
+
 - 🎁 **Demo** the Increment
 - 💬 **Discuss** what was done & what's next
 - 🔄 **Adapt** the Product Backlog based on feedback
 
 ### What It's NOT:
+
 - ❌ Not a "sign-off" or formal acceptance gate
 - ❌ Not a status report meeting
 - ❌ Not just a demo — it's a **collaborative working session**
 
 ### Common Mistakes:
+
 - ❌ Treating it as a one-way demo
 - ❌ Showing only completed items (incomplete are also valuable to inspect)
 - ❌ No real stakeholders attending
@@ -189,21 +202,25 @@ Many teams still use the 3 questions because they work — but they're not *requ
 ### Timebox: **3 hours** for a 4-week Sprint (proportionally less)
 
 ### Attendees:
+
 - ✅ Scrum Team only (PO, SM, Developers)
 - ❌ NO stakeholders (this is the one event stakeholders don't attend)
 
 ### Purpose:
+
 - 🪞 **Inspect** how the last Sprint went (people, interactions, processes, tools, DoD)
 - 💡 **Identify** improvements
 - 🎯 **Plan** at least one improvement to act on next Sprint
 
 ### Common Formats:
+
 - "What went well / What didn't / What to try"
 - "Start, Stop, Continue"
 - "Sailboat" (winds, anchors, icebergs, island)
 - "4Ls: Liked, Learned, Lacked, Longed for"
 
 ### Common Mistakes:
+
 - ❌ Skipping it ("we don't have time")
 - ❌ Action items that never happen
 - ❌ Blame-fest instead of process focus
@@ -230,6 +247,7 @@ For a **4-WEEK Sprint** (the maximum):
 **For shorter sprints, scale proportionally.**
 
 For a 2-week Sprint:
+
 - Planning: 4 hours
 - Review: 2 hours
 - Retro: 1.5 hours
@@ -337,6 +355,7 @@ The Scrum Guide mentions **Product Backlog Refinement** but it's NOT a formal ev
 ## ✅ Module 4 Summary
 
 You now know:
+
 - 🎯 5 events: Sprint, Planning, Daily, Review, Retro
 - ⏱️ Timeboxes: **8-15min-4-3** for a 4-wk Sprint
 - 🎯 3 Planning topics: Why, What, How

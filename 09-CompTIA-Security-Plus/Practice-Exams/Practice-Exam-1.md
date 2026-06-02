@@ -267,6 +267,7 @@ C. Containment
 D. Recovery
 
 ### 44 (Scenario PBQ). Match each attack indicator to its name:
+
 - (a) Web log line `' UNION SELECT username,password FROM users--`
 - (b) Server makes a request to `169.254.169.254`
 - (c) Login attempts: one password against 4,000 usernames in 60 sec
@@ -278,6 +279,7 @@ C. (a) SQLi, (b) Replay, (c) Brute force, (d) Evil twin
 D. (a) CSRF, (b) SSRF, (c) Stuffing, (d) Jamming
 
 ### 45 (Scenario PBQ). A pen tester finds:
+
 - Passwords stored as unsalted SHA-256
 - Web app vulnerable to stored XSS in profile bio
 - Admin panel uses HTTP only on a public IP
@@ -424,6 +426,7 @@ The events already constitute detection. The NEXT phase is containment (isolate 
 ## 🔍 Review Process
 
 For EACH wrong answer:
+
 1. Identify which module covered it
 2. Re-read that module's Reading.md section
 3. Add an Anki/flashcard for the concept

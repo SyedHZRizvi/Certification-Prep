@@ -503,6 +503,7 @@ Banner /etc/ssh/banner.txt                 # legal warning
 ```
 
 Pair with:
+
 - `firewall-cmd --add-service=ssh --permanent` (only the right zone)
 - `fail2ban` watching `/var/log/secure` (RHEL) / `/var/log/auth.log` (Debian)
 - Key-based auth + `~/.ssh/` permissions correct (Module 6)
@@ -653,6 +654,7 @@ This is exactly the shape of a multi-part PBQ. Walk through systematically; veri
 1. SELinux denied something.
 2. The wrong fix is `setenforce 0` (the "I give up" answer).
 3. The right fix is one of:
+
    - `setsebool -P <bool> on` (policy already has a toggle)
    - `semanage fcontext -a -t <type> 'path'` + `restorecon -R` (label correction)
    - `semanage port -a -t <type> -p tcp <port>` (non-standard port)
@@ -670,6 +672,7 @@ Recognize this pattern and you'll answer almost every SELinux question on the ex
 ## ✅ Module 8 Summary
 
 You now know:
+
 - 🧱 The **three-layer access model**: DAC + ACL + MAC, all enforced simultaneously
 - 🛡️ **SELinux** — modes, contexts, `chcon` vs `semanage fcontext`, booleans, AVC denials, `ausearch -m AVC`
 - 🛡️ **AppArmor** — path-based MAC, `aa-status`, profile structure

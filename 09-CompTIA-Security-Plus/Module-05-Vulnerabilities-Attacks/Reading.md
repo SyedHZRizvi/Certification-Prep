@@ -264,6 +264,7 @@ A PBQ might show 4 log snippets — drag each to its attack name.
 **Outcome.** Within **72 hours** of public disclosure, Microsoft's threat-intel team observed **state actors from China, Iran, North Korea, and Turkey** weaponizing Log4Shell. By 17 December, the **Belgian Ministry of Defense** disclosed it had been breached via Log4Shell. **CISA Director Jen Easterly** called it "one of the most serious vulnerabilities I've seen in my entire career" (Senate testimony, 4 February 2022). CISA added Log4Shell to the **KEV catalog** the same day as disclosure and issued **Emergency Directive 22-02** ordering all federal civilian agencies to inventory and patch within days. Over the following weeks, CISA tracked exploitation against the **US Department of Defense**, **Belgian Ministry**, **Iran-linked attacks on a US federal civilian agency** (later confirmed February 2022), and tens of thousands of commercial systems. The cleanup tail was *years* — as late as 2024 Log4Shell still ranked in the top exploited CVEs because of the long tail of embedded systems, vendor appliances, and air-gapped industrial systems with no upgrade path. The US **Cyber Safety Review Board** published its first-ever report on Log4Shell (July 2022) and recommended sweeping changes to open-source funding, SBOM mandates (codified in Executive Order 14028), and mandatory vendor coordinated-disclosure programs.
 
 **Lesson for the exam / for practitioners.** Log4Shell is the canonical 2020s example of nearly every Module 5 concept:
+
 - **CVE / CVSS / KEV / EPSS** all crystallized around this incident. CVSS 10.0; KEV listing within hours; EPSS top-10 for years. The exam tests these scoring systems — practice by ranking patches with Log4Shell-style "10 CVSS, 95% EPSS, on KEV" against an internal SQLi (8.0, 5% EPSS, not on KEV but on your customer-facing app) — Log4Shell wins prioritization every time.
 - **Insecure design + Vulnerable & outdated components** (OWASP A04 + A06). Log4j's JNDI-lookup feature was a 2013 design that became a 2021 RCE. A06 "Vulnerable & Outdated Components" exists *because* of this exact pattern. Software Composition Analysis (SCA — Module 10) flags this kind of risk.
 - **Defense-in-depth as the only practical mitigation** during the patch lag. WAF rules to block `${jndi:` strings, egress filtering to block outbound LDAP/RMI from servers, removal of the `JndiLookup.class` from running JARs as a hot-patch — none was a complete fix, but layered, they bought time until proper patches were deployed.
@@ -343,6 +344,7 @@ A PBQ might show 4 log snippets — drag each to its attack name.
 ## ✅ Module 5 Summary
 
 You now know:
+
 - 🦠 The full **malware taxonomy** + the virus/worm/Trojan distinguisher
 - 🕷️ **OWASP Top 10** at a glance + deep on SQLi, XSS, CSRF, SSRF, traversal
 - 🧬 **Memory/app** vulnerabilities — buffer overflow, race conditions, privilege escalation

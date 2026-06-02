@@ -5,6 +5,7 @@
 > **When to take:** One week before your real exam. Treat it as the dress rehearsal.
 
 This exam mirrors the real CSCP in length, time, and weight distribution:
+
 - Domain 1 (Strategy & Environment) — 25% → questions 1-37
 - Domain 2 (Design) — 20% → questions 38-67
 - Domain 3 (Planning & Execution) — 40% → questions 68-127

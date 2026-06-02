@@ -61,6 +61,7 @@ disaster
 | **1** | Off-site |
 
 Modern **3-2-1-1-0**:
+
 - + **1** immutable / air-gapped
 - + **0** verified errors
 
@@ -135,6 +136,7 @@ Modern **3-2-1-1-0**:
 ## 🏆 Exam Power Phrases
 
 ✅ Often **right**:
+
 - "Match site tier to RTO"
 - "Synchronous for metro / async for continental"
 - "Test the restore"
@@ -143,6 +145,7 @@ Modern **3-2-1-1-0**:
 - "Log shipping every N min for RPO = N min"
 
 ❌ Often **wrong**:
+
 - "Snapshot = backup"
 - "Sync replication across continents"
 - "Backups in the same AWS account as production"
@@ -167,6 +170,7 @@ Modern **3-2-1-1-0**:
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. RTO vs RPO — one-liner each? ___
 2. Which restore is faster — incremental or differential? ___
 3. State the 3-2-1 rule. ___

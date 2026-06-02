@@ -125,6 +125,7 @@ client.messages.create(
 ```
 
 Rules:
+
 - Cache attaches to the **PREFIX** ending at `cache_control`
 - Min cacheable size: ~**1024 tokens**
 - TTL: **~5 min** ephemeral (renews on hit)
@@ -221,6 +222,7 @@ Multiply by ~0.33 for Haiku, ~5× for Opus.
 ## 🏆 Exam Power Phrases
 
 ✅ Often **right**:
+
 - "Streaming reduces TTFT, not total tokens"
 - "Cache attaches to the prefix"
 - "Batch is 50% off; hours SLA; async only"
@@ -229,6 +231,7 @@ Multiply by ~0.33 for Haiku, ~5× for Opus.
 - "Use `count_tokens` to estimate cost without inference"
 
 ❌ Often **wrong**:
+
 - "Cache reduces output cost" (input only)
 - "Batch is for real-time" (async only)
 - "Streaming reduces total tokens" (TTFT only)

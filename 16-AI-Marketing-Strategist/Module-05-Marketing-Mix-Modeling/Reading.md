@@ -16,6 +16,7 @@
 December 2022. Walmart's media-mix model — a Bayesian MMM built in-house by a team of 12 economists and data scientists — predicts that a planned $50M Q4 holiday TV campaign will deliver a return on ad spend (ROAS) of 1.8×. This is *below* the threshold Walmart's CFO sets for incremental media investment (2.4×). The Marketing VP wants to run the campaign anyway — "we always run holiday TV." The CFO blocks it.
 
 The team reallocates $50M as follows:
+
 - $18M to **Connected TV** (Roku, Disney+, Hulu), which the MMM scored at 3.1× ROAS.
 - $14M to **paid social with brand creative**, scored at 2.9× ROAS.
 - $10M to **retail-media networks** (Walmart Connect, Target Roundel, Amazon Sponsored Display), scored at 4.5× ROAS.
@@ -40,6 +41,7 @@ Sales_t  =  Baseline_t  +  Σ_c β_c × AdStock(Spend_{c,t})  +  Σ_x γ_x × Co
 ```
 
 Where:
+
 - `Sales_t` = revenue or units in week `t`
 - `Baseline_t` = the "would have happened anyway" sales (seasonality, brand equity, price, distribution)
 - `c` indexes each marketing **channel** (TV, paid search, social, etc.)
@@ -49,6 +51,7 @@ Where:
 - `ε_t` = noise
 
 The model is fit using historical data — typically **2–3 years of weekly** observations. Once fit, it can:
+
 - Decompose past sales into baseline + each channel's incremental contribution.
 - Compute the *marginal* ROAS of each channel (what one more dollar would deliver).
 - Simulate the impact of different budget allocations on future sales.
@@ -111,6 +114,7 @@ Hill(x) = x^α / (x^α + K^α)
 ```
 
 Where:
+
 - `α` = shape parameter (typically 0.5–3)
 - `K` = half-saturation point (the spend level at which 50% of the maximum impact is achieved)
 
@@ -125,6 +129,7 @@ Visually, both look like an S-curve or a concave-down curve depending on paramet
 **Worked example:**
 
 Suppose paid search has the parameters `α = 2.0`, `K = $500K/week` for a specific brand. Then:
+
 - $100K/week → Hill = (100²) / (100² + 500²) = 10,000 / 260,000 = **0.038** of max effect.
 - $500K/week → Hill = (500²) / (500² + 500²) = 0.5 (the half-saturation point).
 - $1M/week → Hill = (1000²) / (1000² + 500²) = 1,000,000 / 1,250,000 = **0.80** of max.
@@ -194,6 +199,7 @@ robyn_allocator(InputCollect = InputCollect,
 ```
 
 The output charts:
+
 - **Waterfall of effect**: decomposition of total sales into baseline + each channel's incremental contribution.
 - **Response curves**: per-channel saturation curve with current spend point marked.
 - **Optimized allocation**: bar chart of "current vs optimized" spend per channel.
@@ -443,6 +449,7 @@ The MMM's recommendation. Shown as a bar chart, current spend versus optimized s
 ## ✅ Module 5 Summary
 
 You now know:
+
 - 📚 The canonical MMM equation and what each term represents.
 - 🌊 Ad-stock — the carryover/decay model with typical half-lives per channel.
 - 🪞 Saturation — Hill function, half-saturation point, and how diminishing returns drive reallocation decisions.

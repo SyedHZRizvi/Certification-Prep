@@ -300,6 +300,7 @@ The correct order:
 ## ✅ Module 5 Summary
 
 You now know:
+
 - 🏗️ App Registration (recipe) vs Enterprise App (dish) — the canonical distinction
 - 🌐 Three SSO protocols: OIDC (modern), SAML (legacy enterprise SaaS), WS-Fed (legacy MS)
 - 🏛️ App Gallery vs custom non-gallery apps
@@ -321,6 +322,7 @@ You now know:
 ## 📊 Case Study — The 2022 OAuth Illicit Consent Wave
 
 **Situation.** Beginning in late 2021 and peaking in mid-2022, Microsoft's Defender for Cloud Apps + Microsoft Threat Intelligence Center (MSTIC) tracked a surge in OAuth-based phishing attacks against Microsoft 365 tenants. The attack pattern was consistent:
+
 1. Attacker registers a multi-tenant app in their own throwaway Entra tenant with a benign-sounding name like "Quarterly Reports Approval" or "Document Signing Service."
 2. Attacker sends targeted email with a sign-in link that uses Microsoft's real OAuth consent URL — so the URL bar shows `login.microsoftonline.com`, indistinguishable from a legitimate Microsoft sign-in.
 3. Victim signs in (real Microsoft creds, real MFA passes — the attacker isn't asking for the password).
@@ -333,17 +335,20 @@ Microsoft tracked thousands of incidents tied to this pattern in 2022 (DART team
 **Decision.** Microsoft hardened the default consent settings: tenants created in 2022 or later default to **"Allow user consent for apps from verified publishers, for selected permissions"** instead of the older "Allow user consent for apps." Microsoft also rolled out the **publisher verification** program — apps must be cryptographically verified by their publisher's MPN (Microsoft Partner Network) account before they're considered "verified."
 
 Microsoft simultaneously published a customer playbook ("[Mitigate illicit consent grants](https://learn.microsoft.com/security/operations/incident-response-playbook-app-consent)") recommending all customers:
+
 1. Set **User consent settings = Do not allow user consent**.
 2. Enable **Admin consent workflow**.
 3. Use **Microsoft Defender for Cloud Apps** to flag risky OAuth apps.
 4. Run **KQL queries** weekly on `AuditLogs` for `Consent to application` events from unverified publishers.
 
 **Outcome.** Per Microsoft Defender XDR telemetry (2024 retrospective):
+
 - Tenants that adopted the "Do not allow user consent" + admin consent workflow setting saw **>99% reduction in successful illicit consent grants**.
 - Median time to detect a consent grant for an unverified-publisher app dropped from "weeks to never" to under 2 days (via Defender for Cloud Apps OAuth alerts).
 - Microsoft's own internal tenant adopted the strictest setting in 2022 and has not been successfully phished via OAuth consent since.
 
 **Lesson for the exam / for practitioners.** Microsoft's identity defenses are not "off by default." Consent settings are a tenant-level decision; the security-conscious default ("admin consent only") trades user convenience for safety. SC-300 will absolutely test whether you know that:
+
 - The phishable surface is **consent**, not authentication.
 - The fix is **two settings**: user consent + admin consent workflow.
 - The investigation tool is **Defender for Cloud Apps** OAuth alerts (which surfaces apps with unusual permission requests).

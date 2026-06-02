@@ -124,6 +124,7 @@
 ## 🏆 Exam Power Phrases
 
 ✅ Often **right**:
+
 - "Use Type 1 hypervisor for production"
 - "vMotion / Live Migration requires shared storage + L2 + CPU compat"
 - "Snapshots are not backups"
@@ -132,6 +133,7 @@
 - "K8s orchestrates many containers across many hosts"
 
 ❌ Often **wrong**:
+
 - "Type 2 for production"
 - "Snapshots = backups"
 - "Two DCs on the same host"
@@ -157,6 +159,7 @@
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. Type 1 vs Type 2 — production = which? ___
 2. 4 things needed for vMotion? ___
 3. Snapshot vs backup — why snapshot is NOT enough? ___

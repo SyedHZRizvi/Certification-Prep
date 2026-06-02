@@ -19,6 +19,7 @@
 ## 🍎 Apple Business Manager (ABM)
 
 ABM = Apple's enterprise portal. Used for:
+
 - Assign devices to your MDM (Intune)
 - Bulk purchase apps (VPP)
 - Managed Apple IDs
@@ -106,6 +107,7 @@ Target/exclude by attribute (not group):
 ## 🏆 Exam Power Phrases
 
 When you see these, they're often **correct**:
+
 - ✅ "Apple Business Manager + ADE for corporate iOS"
 - ✅ "Android Enterprise Work Profile for BYOD"
 - ✅ "Compliance + CA require compliant device"
@@ -114,6 +116,7 @@ When you see these, they're often **correct**:
 - ✅ "Selective wipe via APP for BYOD"
 
 When you see these, often **wrong**:
+
 - ❌ "Supervision without ABM"
 - ❌ "Enrollment restrictions on device groups"
 - ❌ "Compliance policy blocks sign-in directly"

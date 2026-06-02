@@ -20,6 +20,7 @@ The CFO opens with: *"All your tracking says 'last-click attribution.' That mean
 The marketing team panics. They have GA4 reports, HubSpot reports, Mixpanel funnels — but every report defaults to last-click. They can't actually prove paid social drives anything beyond the conversion moment.
 
 One marketer on the team — let's call them Aisha — disappears for 4 days. She comes back with a Google Sheet. It has:
+
 - Anonymized customer journey data from the last 12 months
 - A Markov-chain attribution model built in Sheets
 - A Shapley-value attribution calculation
@@ -219,6 +220,7 @@ This gives you total conversions credited to each channel under last-click.
 Tab 3: `linear`
 
 For each converted user:
+
 1. Count their total touches.
 2. Each touch gets `1 / total_touches` credit.
 
@@ -442,6 +444,7 @@ Shapley is computationally expensive (factorial), so for >10 channels you'd need
 This single chart is what hiring managers will linger on. Build it carefully.
 
 A clustered bar chart with:
+
 - X-axis: channel names
 - Y-axis: conversions credited
 - Grouped bars: Last-Click / Linear / Markov (or +Shapley)
@@ -575,6 +578,7 @@ When in doubt, use a public sample dataset or generate synthetic data. The portf
 ## ✅ Module 5 Summary
 
 You now know:
+
 - 📊 Why attribution matters (and why last-click is often wrong)
 - 🧮 The 7 attribution models + their trade-offs
 - 🛠️ How to build Last-Click, Linear, and Markov in Sheets or Python

@@ -50,6 +50,7 @@ The MPS is the *anchor* of execution. It states:
 > "Build N units of finished good X in week Y."
 
 The MPS reconciles three inputs:
+
 1. **Customer orders** (already booked)
 2. **Forecast** (what we think we'll sell)
 3. **S&OP family plan** (the agreed total)
@@ -166,6 +167,7 @@ Parent demand (from Bike A MPS): 1,200 bikes per week × 2 pedals per bike = 2,4
 | Planned order releases (LT=1) | 2,300 | 2,400 | 2,400 | — |
 
 Reading this:
+
 - Week 1: 500 on-hand + 2,000 receipt = 2,500. Net 2,400 demand. End on-hand = 100.
 - Week 2: 100 on-hand, need 2,400. Net = 2,300. Plan an order to *arrive* in week 2; release it in week 1 (LT = 1).
 - Week 3: Net 2,400, plan receipt week 3, release week 2.
@@ -201,6 +203,7 @@ Reading this:
 | Safety stock |  |
 
 **Action messages** are MRP's nudges to humans:
+
 - **Release** — "Release this planned order now."
 - **Reschedule in** — "Pull this scheduled receipt earlier."
 - **Reschedule out** — "Push this scheduled receipt later."
@@ -296,6 +299,7 @@ The ASCM Dictionary (16th ed., 2022) now includes DDMRP entries. The modern CPIM
 **Outcome.** The 787 program suffered **seven delivery-date slips** between 2008 and 2011. First customer delivery slipped from May 2008 to September 2011 — a **40-month delay** vs original schedule. Boeing took **$32B+ in deferred production cost** on its books through 2014. The production-ramp recovery (2011–2013) required Boeing to vertically reintegrate critical content (Boeing bought Vought's Charleston facility in 2009 for $1B; built a second-line 787 final-assembly capability in Charleston in 2010) — fundamentally rewriting the make/buy strategy of the program. In January 2013 the global 787 fleet was grounded for 3 months following lithium-ion battery thermal events; a separate but related quality-cascade issue. By 2024, with the 787 now in steady-state production, the program is widely treated as a master case in MPS / MRP / supply-network design.
 
 **Lesson for the exam / for practitioners.** The 787 demonstrates several connected MPS/MRP failures:
+
 1. **MPS firm horizon mismatch.** Boeing's MPS treated tier-1 delivery commitments as firm orders. In reality, supplier lead time was both longer and far more variable than the MPS lead-time table reflected. The DTF was effectively shorter than the cumulative lead time.
 2. **BOM integrity at the tier-1 boundary.** The MRP explosion downstream of Boeing was only as good as the BOMs the tier-1s maintained. When tier-1 BOMs were incomplete or inconsistent, the planning system "looked correct" but downstream demand was systematically under-planned.
 3. **Variable lead times treated as fixed.** Classic MRP assumes fixed lead times. The 787 program had genuine LT variance of months on critical items; APS / finite-capacity scheduling would have at least surfaced the risk.
@@ -313,6 +317,7 @@ CPIM exam-takeaway: **MRP/MPS is a tool, not a guarantee.** Its outputs are only
 ## ✅ Module 4 Summary
 
 You now know:
+
 - 🗓️ MPS plans finished goods; MRP plans components
 - 🟢 How to compute ATP and what it means to "promise" a customer
 - 🚧 Time fences: DTF (frozen) vs PTF (slushy) — and what each rule means

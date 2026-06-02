@@ -173,12 +173,14 @@ Customize weights to your subject. Document them in the case study.
 ## 🏆 Power Phrases For Writeup & Pitch
 
 When describing the scenario:
+
 - ✅ "Replaces ~6 manual hours/week..."
 - ✅ "Router branches by score; each branch fires in <30 sec..."
 - ✅ "Enrichment uses [tool] — added data we couldn't get from the form..."
 - ✅ "Error handler routes failed enrichments to a manual review queue..."
 
 Avoid:
+
 - ❌ "It's basically a Zapier workflow..."
 - ❌ "Pretty straightforward setup..."
 - ❌ "Used some integrations..."

@@ -157,6 +157,7 @@
 ## ✅ After watching
 
 Answer in your notebook:
+
 1. Name the two Python SDK package names — Gemini API vs Vertex AI.
 2. What's the difference between API-key auth and ADC?
 3. The two fields that together force JSON-Schema-conformant output?

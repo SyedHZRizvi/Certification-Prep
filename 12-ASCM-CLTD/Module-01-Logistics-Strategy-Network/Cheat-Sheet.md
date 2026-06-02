@@ -88,6 +88,7 @@ Weights = demand volume Vi. Ignores roads, labor, taxes. Use as *starting point*
 ## 🏆 Exam Power Phrases
 
 Usually CORRECT:
+
 - ✅ "Align logistics with business strategy"
 - ✅ "Trade off transport vs inventory + facility"
 - ✅ "Use center-of-gravity as a starting point"
@@ -95,6 +96,7 @@ Usually CORRECT:
 - ✅ "Hub-and-spoke for consolidation"
 
 Usually WRONG:
+
 - ❌ "Adding DCs always reduces total cost"
 - ❌ "3PL is always cheaper"
 - ❌ "Center-of-gravity gives the final answer"
@@ -115,6 +117,7 @@ Usually WRONG:
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. What is the square-root rule? ___
 2. Greenfield vs Brownfield? ___
 3. 3PL vs 4PL? ___

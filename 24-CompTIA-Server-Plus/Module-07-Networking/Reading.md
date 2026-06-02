@@ -18,6 +18,7 @@ Meet Owen. He runs IT for a midsize logistics company. The accounting database (
 Owen's first instinct is to buy more disk. Then a network admin asks: *"What's the MTU on the storage VLAN?"* It's 1500 (default). She measures throughput on the dedicated 10 GbE backup NIC: **2.1 Gb/s**, not 10. Owen has been moving 45 TB per night through a bottleneck that's *fully on the server*.
 
 Two changes — one weekend, no new hardware:
+
 1. **Enable jumbo frames (MTU 9000)** end-to-end on the backup VLAN (server NIC + switch + NAS).
 2. **Configure NIC teaming with LACP** across the server's two 10 GbE backup NICs, with the switch ports in the same LAG.
 
@@ -201,6 +202,7 @@ A **load balancer (LB)** distributes incoming connections across multiple backen
 ### Health checks
 
 LBs continuously probe backends:
+
 - **L4 health check** — TCP socket connect to port
 - **L7 health check** — HTTP GET `/healthz` and check for 200 OK or specific body
 - Unhealthy backends are removed from rotation until they pass again
@@ -230,6 +232,7 @@ Used for multi-region active-active deployments (AWS Route 53, Akamai GTM, NS1).
 ### iSCSI Initiator/Target Network
 
 iSCSI typically runs on a **dedicated storage VLAN** with:
+
 - Jumbo frames (MTU 9000)
 - MPIO across two NIC paths (Module 3)
 - CHAP authentication
@@ -238,6 +241,7 @@ iSCSI typically runs on a **dedicated storage VLAN** with:
 ### Wake-on-LAN
 
 A magic packet (the destination MAC repeated 16 times after a sync stream) sent to the NIC powers the machine on. Requires:
+
 - WoL enabled in BIOS/UEFI
 - NIC supports WoL
 - NIC remains powered on standby (the chassis is plugged in)
@@ -255,6 +259,7 @@ A magic packet (the destination MAC repeated 16 times after a sync stream) sent 
 ### QoS (Quality of Service)
 
 On converged networks (storage + production on the same fabric), **QoS** tags traffic (DSCP, 802.1p) so storage doesn't starve production or vice versa. Common QoS classes for servers:
+
 - Voice / video — highest priority (latency-sensitive)
 - Storage / iSCSI — high, low latency
 - Production app — medium
@@ -372,6 +377,7 @@ This is the kind of integration question Server+ PBQs ask. Every choice maps to 
 **Situation.** DigiNotar, a Dutch Certificate Authority (CA), was compromised in June-July 2011. The attacker obtained fraudulent SSL certificates for *.google.com, *.microsoft.com, *.cia.gov, and ~530 other sites — then deployed those certificates via DNS hijacking and MITM in Iran to intercept Gmail, Skype, and Tor traffic of an estimated 300,000+ Iranian users (Fox-IT, "Operation Black Tulip," September 2011 forensic report).
 
 **What it has to do with server networking.** The attacker reached DigiNotar's CA infrastructure because:
+
 - The **management network was reachable from less-trusted segments** (the web servers' VLAN reached the CA's signing infrastructure VLAN through misconfigured firewall rules).
 - **No separation** between externally-facing web app VLANs and the internal CA root.
 - **Audit logging was disabled** on critical CA segments during routine maintenance windows and wasn't re-enabled.
@@ -399,6 +405,7 @@ This is the scenario Server+ tests when asking "design a server-room network tha
 ## ✅ Module 7 Summary
 
 You now know:
+
 - 🧵 **Server NIC topology** (LOM, PCIe, OOB), **teaming/bonding** modes, **LACP** requirements
 - 🏷️ **VLAN tagging (802.1Q)**, trunk vs access ports, and why management/storage VLANs are separated
 - 🎈 **Jumbo frames (MTU 9000)** — when to use, end-to-end requirement, mismatch behavior

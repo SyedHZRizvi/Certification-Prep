@@ -132,6 +132,7 @@ Analogous to **BSL (BioSafety Levels)** in biology.
 ## 🏆 Exam Power Phrases
 
 ✅ Often **right**:
+
 - "Constitutional AI shapes training, not runtime checks"
 - "Sonnet is the default workhorse; Haiku for volume, Opus for hardest"
 - "Bedrock keeps data in your AWS account"
@@ -140,6 +141,7 @@ Analogous to **BSL (BioSafety Levels)** in biology.
 - "Public Benefit Corporation, not nonprofit, not capped-profit"
 
 ❌ Often **wrong**:
+
 - "Anthropic uses only RLAIF / never uses humans" (uses both)
 - "Constitutional AI guarantees harmlessness" (probabilistic)
 - "Opus is always better than Sonnet" (often overkill)
@@ -167,6 +169,7 @@ Analogous to **BSL (BioSafety Levels)** in biology.
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. RLHF vs Constitutional AI — one-line difference? ___
 2. Three Claude tiers and one use case each? ___
 3. What does ASL-3 commit Anthropic to? ___

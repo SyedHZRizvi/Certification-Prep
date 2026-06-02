@@ -100,6 +100,7 @@ ALE  = SLE × ARO
 ```
 
 Where:
+
 - **AV** = Asset Value (e.g., $200,000 server)
 - **EF** = Exposure Factor (% of asset value lost per incident)
 - **SLE** = Single Loss Expectancy ($ per single occurrence)
@@ -166,6 +167,7 @@ Where:
 ### Frameworks (voluntary)
 
 Citation note for the framework table:
+
 - **NIST CSF** was first published as v1.0 in February 2014 (response to Executive Order 13636, *Improving Critical Infrastructure Cybersecurity*, Feb 2013). **v1.1** April 2018. **v2.0** finalized 26 February 2024 — added the new **Govern** function and broadened scope beyond critical infrastructure.
 - **ISO/IEC 27001** was originally published October 2005, revised October 2013, **most recent revision October 2022** (the version certification bodies now audit to). ISO/IEC 27002 (the implementation guidance) was revised February 2022.
 - **CIS Controls v8** (Center for Internet Security, May 2021) — formerly the SANS Top 20.
@@ -300,6 +302,7 @@ Citation note for the framework table:
 | Add'l overlay | **NIST CSF / ISO 27001** as voluntary frameworks |
 
 Contracts with the SaaS vendor:
+
 1. **MSA** (umbrella) + **SOW** (specific deliverables) + **SLA** (uptime targets)
 2. **DPA** (GDPR processor agreement) + **BAA** (HIPAA-required Business Associate Agreement) + **PCI Attestation of Compliance** + **NDA**
 
@@ -312,6 +315,7 @@ A PBQ might present this as drag-match.
 **Situation.** Boeing's **737 MAX** was developed (2011-2017) as a fuel-efficient successor to the 737 NG, designed to compete with the Airbus A320neo. To preserve commonality with previous 737 models — which let airlines avoid expensive pilot retraining — Boeing engineered the MAX so that pilots could fly it under their existing 737 type rating. The MAX's larger, repositioned engines changed the aircraft's pitch behavior at high angles of attack. To compensate (and avoid certification of a "new" aircraft type with new pilot training), Boeing added the **Maneuvering Characteristics Augmentation System (MCAS)** — a software system that automatically pushed the nose down based on a single Angle-of-Attack sensor reading.
 
 **Decision.** Boeing made several risk-management and governance choices documented later in the US House T&I Committee final report (September 2020, ~250 pp.) and the Office of Inspector General report (DOT-OIG-21-029, June 2021):
+
 - **Single sensor.** MCAS relied on **one** AoA sensor input (not dual-redundant), violating the textbook safety-critical design principle of redundancy. Boeing's internal hazard analysis classified MCAS-malfunction risk as "major" rather than "catastrophic" — which would have required dual-redundant sensors.
 - **Pilot-disclosure choice.** Boeing chose **not to document MCAS in the pilot's flight manual**, on the rationale that pilots would never need to know about it. Pilot training omitted MCAS entirely.
 - **FAA delegation.** The FAA had progressively delegated certification authority to Boeing via the **Organization Designation Authorization (ODA)** program. Boeing personnel acted as Authorized Representatives (ARs) on FAA's behalf — a structural conflict of interest the House report later characterized as "regulatory capture."
@@ -320,6 +324,7 @@ A PBQ might present this as drag-match.
 **Outcome.** Lion Air Flight 610 (29 October 2018, Indonesia, 189 deaths) and Ethiopian Airlines Flight 302 (10 March 2019, Ethiopia, 157 deaths) — both lost when faulty AoA sensors triggered repeated MCAS nose-down inputs the pilots could not override in time. The MAX was **globally grounded for 20 months** (March 2019 to November 2020 in the US; longer elsewhere). Boeing paid **$2.5B settlement** with the US DOJ (January 2021) including a $243.6M criminal fine, $1.77B in customer compensation, and $500M for victim-family compensation. The SEC also pursued action against Boeing executives. The FAA's certification authority was statutorily revised by the **Aircraft Certification, Safety, and Accountability Act** of 2020. Boeing's CEO Dennis Muilenburg was fired (December 2019). Direct losses crossed **$20B**.
 
 **Lesson for the exam / for practitioners.** The 737 MAX is taught in Cornell, Harvard, and Stanford engineering ethics and GRC courses as the canonical case of a **GRC-meets-regulatory-capture failure**. Every concept in Module 9 has a 737 MAX analog:
+
 - **Risk treatment vs risk acceptance.** Boeing classified MCAS malfunction as "major" rather than "catastrophic." Classification drives required mitigations. **Inappropriate risk acceptance with executive sign-off** *is* a Sec+ concept — and a 737 MAX-grade reminder that documentation does not absolve responsibility when the underlying classification is wrong.
 - **Governance hierarchy failure.** Policies (FAA certification standards) → standards (catastrophic vs major hazard definitions) → procedures (hazard analysis worksheets). The procedure was followed; the underlying classification was wrong. Sec+ tests this: governance documents are only as good as their underlying assumptions. Compare with the Equifax case (Module 1): patch policy existed; the *verifier* of compliance was broken.
 - **Third-party / regulatory risk.** The ODA program effectively made Boeing its own auditor. This is what Sec+ calls "self-attestation" and contrasts with "**independent attestation**" (SOC 2 by external auditor, ISO certification by accredited body). The exam tests this distinction directly.
@@ -402,6 +407,7 @@ A PBQ might present this as drag-match.
 ## ✅ Module 9 Summary
 
 You now know:
+
 - 🏛️ Governance hierarchy: Policies → Standards → Procedures → Guidelines → Baselines
 - ⚖️ Risk vocabulary + the SLE/ARO/ALE quantitative formula
 - 🛠️ The 4-5 risk treatment strategies

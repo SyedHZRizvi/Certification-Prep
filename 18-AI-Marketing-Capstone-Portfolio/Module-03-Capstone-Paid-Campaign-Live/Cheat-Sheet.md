@@ -153,6 +153,7 @@ Built in Canva. 1:1 ratio. Posted with text hook + DM ask.
 - ✅ "The data showed [audience + creative] would scale; the spend wasn't enough to prove it..."
 
 Avoid:
+
 - ❌ "I successfully managed..." 
 - ❌ "Best practice is..."
 - ❌ "Overall a good experience..."

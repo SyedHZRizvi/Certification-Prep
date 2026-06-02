@@ -99,6 +99,7 @@ model = GenerativeModel("gemini-2.5-flash", tools=[tool])
 ## 🎯 Power Phrases
 
 ✅ Often **right**:
+
 - "Vertex AI Search = managed RAG; Vector Search = ANN index"
 - "RAG for knowledge updates; fine-tune for behavior"
 - "multilingual-embedding-002 for multi-language workloads"
@@ -109,6 +110,7 @@ model = GenerativeModel("gemini-2.5-flash", tools=[tool])
 - "BigQuery vector for analytics-side semantic"
 
 ❌ Often **wrong**:
+
 - "Search and Vector Search are the same"
 - "Fine-tune for knowledge updates" (no — RAG)
 - "Embeddings are model-agnostic" (no)
@@ -120,6 +122,7 @@ model = GenerativeModel("gemini-2.5-flash", tools=[tool])
 ## 🍔 Wendy's FreshAI RAG Layer
 
 Vertex AI Search indexed over:
+
 - Menu items + customizations + prices
 - Upsell rules
 - Allergens

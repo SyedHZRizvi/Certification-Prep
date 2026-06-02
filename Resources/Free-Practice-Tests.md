@@ -362,6 +362,7 @@
 
 ### Phase 4: Review > Practice
 - For every wrong answer:
+
   1. Identify why you got it wrong (knowledge gap? Trick wording? Misread?)
   2. Add to flashcards
   3. Re-read relevant module section
@@ -454,16 +455,19 @@
 ## ⏰ FINAL WEEK PLAN
 
 ### Days 7-3 before exam:
+
 - Take 3 full-length mock exams
 - Review wrong answers thoroughly
 
 ### Days 2-1 before exam:
+
 - Light review only
 - Re-read cheat sheets
 - NO new material
 - Drill flashcards
 
 ### Day of exam:
+
 - Eat well
 - Review cheat sheet ONCE
 - Trust your prep

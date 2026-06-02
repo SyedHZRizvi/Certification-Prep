@@ -84,6 +84,7 @@ User → Shield (DDoS, free Standard) →
 ## 🏆 Exam Power Phrases
 
 ✅ Usually right:
+
 - "Use CloudFront + OAC + Block Public Access"
 - "Use Global Accelerator for static IPs and multi-region L4"
 - "Use Route 53 failover routing + health checks for DR"
@@ -93,6 +94,7 @@ User → Shield (DDoS, free Standard) →
 - "Use DAX for sub-ms DynamoDB caching"
 
 ❌ Usually wrong:
+
 - "Global Accelerator caches content"
 - "Lambda@Edge is faster and cheaper than CloudFront Functions"
 - "Shield Standard costs $3K/month"

@@ -31,6 +31,7 @@ title: Study Plan
 **Best for:** anyone who wants a clear, opinionated path with no decision fatigue.
 
 What's inside:
+
 - Weeks 1–4: Scrum Master prep (template phase)
 - Weeks 5–12: PMP prep (template phase)
 - Daily breakdowns with reading, video, quiz allocations
@@ -47,6 +48,7 @@ What's inside:
 **Best for:** the day before and the day of your exam — keep this open in another tab.
 
 What's covered:
+
 - The night before (what to do, what NOT to do)
 - Morning routine that's research-backed
 - Universal time-management strategy (works for any timed cert exam)

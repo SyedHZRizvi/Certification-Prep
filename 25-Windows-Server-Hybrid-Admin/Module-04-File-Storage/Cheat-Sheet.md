@@ -118,6 +118,7 @@ DFS-N max targets per folder: **32**
 ## 🏆 Exam Power Phrases
 
 When you see these, they're often **correct**:
+
 - ✅ "Use S2D Datacenter with 4 nodes for production HA"
 - ✅ "Synchronous Storage Replica for metro RPO zero"
 - ✅ "Asynchronous Storage Replica for cross-region DR"
@@ -127,6 +128,7 @@ When you see these, they're often **correct**:
 - ✅ "FSRM file screen Active mode to block ransomware extensions"
 
 Usually **wrong**:
+
 - ❌ "S2D on Windows Server Standard"
 - ❌ "Sync Storage Replica from Tokyo to New York"
 - ❌ "Boot from ReFS"

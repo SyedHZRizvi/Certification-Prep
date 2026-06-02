@@ -132,6 +132,7 @@ Physical → Identity → Perimeter → Network → Compute → App → Data
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. New name for Azure AD? ___
 2. RBAC vs Policy vs Lock — one-liner each? ___
 3. 4 fundamental RBAC roles + key difference? ___

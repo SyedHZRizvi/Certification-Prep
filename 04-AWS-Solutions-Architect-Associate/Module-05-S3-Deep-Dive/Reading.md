@@ -158,6 +158,7 @@ A single bucket might serve 10 different applications. Instead of one mega-bucke
 | **Same-Region Replication** | SRR | Log aggregation, dev/test refreshing, splitting access controls |
 
 Requirements:
+
 - Versioning ON on both source and destination
 - IAM role for replication
 - Optionally filter by prefix/tags
@@ -225,6 +226,7 @@ aws s3 presign s3://my-bucket/report.pdf --expires-in 600
 ## 🚀 S3 + CloudFront
 
 Putting CloudFront in front of S3 gives you:
+
 - Edge caching (faster, cheaper egress)
 - Signed URLs / signed cookies for private content
 - HTTPS endpoint
@@ -240,6 +242,7 @@ Use an **Origin Access Control (OAC)** to keep the bucket private — only Cloud
 ## 🧰 S3 Notifications & Event-Driven Patterns
 
 S3 can send events (object created, deleted, restored) to:
+
 - **SNS** (fan-out)
 - **SQS** (queue for workers)
 - **Lambda** (run a function)
@@ -304,6 +307,7 @@ S3 can send events (object created, deleted, restored) to:
 ## ✅ Module 5 Summary
 
 You now know:
+
 - 🪣 Bucket and object basics + 11 nines durability + strong consistency
 - 📊 The 7 storage classes and when to use each
 - 🔄 Lifecycle policies and transition rules
@@ -331,6 +335,7 @@ You now know:
 
 1. **The business decision (controversial).** Robinhood restricted buys of GME and ~10 other names. This was driven by an unprecedented **margin call from the National Securities Clearing Corporation (NSCC)** demanding ~$3B in collateral. The decision was a *financial* one, not a technical one. (This is *not* the SAA lesson.)
 2. **The architecture response (the SAA lesson).** Robinhood's CTO Andy Hu in his March 2021 Congressional testimony and subsequent *AWS Builders' Library* contribution detailed the emergency scaling actions:
+
    - **Pre-warmed Auto Scaling Groups** were increased from 200 to 2,000+ instances across the order matching path within hours
    - **S3 throughput** was the unsung hero — Robinhood stored order books and historical trade data in **S3 with Intelligent-Tiering** with thousands of read requests per second per prefix. **They had to redistribute prefixes** (S3 partitions by prefix) to avoid hot-prefix throttling
    - **DynamoDB Adaptive Capacity** auto-scaled write capacity 50× within minutes
@@ -341,6 +346,7 @@ You now know:
 **Outcome.** Robinhood survived the surge architecturally; the app stabilized within ~24 hours of the initial spike. They sustained 38M trades on January 27 alone — by far the largest day in U.S. retail brokerage history. The infrastructure passed the test. (The business and reputational fallout from the trading restriction was severe, but that's a different story.)
 
 **Lesson for the exam / for practitioners.** This case puts the SAA exam's "elasticity" tropes in real terms:
+
 - **S3 prefix design** — high-throughput S3 workloads can hit the per-prefix limit (5,500 GET/s, 3,500 PUT/s as of 2024). The fix is **prefix sharding** — distributing keys across many prefixes. The exam asks: "S3 is throttling reads; what should you do?" Answer: **distribute keys** across prefixes (or add CloudFront in front, or use S3 Transfer Acceleration for uploads)
 - **S3 Intelligent-Tiering with unknown access patterns** — Robinhood didn't know which historical trades would suddenly be queried; Intelligent-Tiering let AWS auto-move objects between Frequent and Infrequent tiers without retrieval fees
 - **DynamoDB On-Demand or Adaptive Capacity** — eliminates the "provisioned throughput exceeded" failure mode

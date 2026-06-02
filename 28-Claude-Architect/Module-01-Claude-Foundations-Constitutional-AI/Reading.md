@@ -237,6 +237,7 @@ A CFO does not care about constitutional AI. A CFO cares about $/conversation an
 ### Unit-cost example: a customer-support assistant
 
 Assume:
+
 - 30K daily conversations
 - Median conversation: 4K input tokens (history + system prompt) + 600 output tokens
 - System prompt: 3K tokens, identical across all conversations
@@ -364,6 +365,7 @@ This is the kind of end-to-end answer the architect role expects from you.
 ## ✅ Module 1 Summary
 
 You now know:
+
 - 📖 **Why Anthropic exists** — the 2021 OpenAI walk-out, the founding as a Public Benefit Corporation, the Constitutional AI thesis
 - 🧠 **What Constitutional AI is** — and why it differs from pure RLHF
 - 🎴 **The Claude model family** — Haiku / Sonnet / Opus, when to pick each, pricing tiers

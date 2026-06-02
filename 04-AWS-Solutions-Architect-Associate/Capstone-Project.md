@@ -33,6 +33,7 @@ You will produce **seven artifacts**. Each artifact must integrate concepts from
 ### Deliverable 1 — Target Architecture Diagram (single page)
 
 A high-resolution architecture diagram on one page (legal-size print). Must include:
+
 - All three target regions (us-east-1, us-west-2, eu-central-1) with their primary roles
 - Every AWS service in use, drawn with the official AWS icon set
 - Network topology: VPC layout, subnets, NAT/IGW, VPC endpoints, Transit Gateway, Direct Connect to remaining on-prem
@@ -46,6 +47,7 @@ Cite **Modules 1, 4, 8, 10**.
 ### Deliverable 2 — Migration Runbook (12–20 pages)
 
 A step-by-step migration plan that a new engineer can read and execute. Must include:
+
 - Wave-by-wave migration schedule (typically 3–5 waves across 9 months)
 - Specific use of **AWS Application Migration Service (MGN)** for VMs and **Database Migration Service (DMS) + Schema Conversion Tool (SCT)** for PostgreSQL → Aurora PostgreSQL
 - Cut-over procedures for each wave (including blue-green deploys at the LB layer)
@@ -59,11 +61,13 @@ Cite **Modules 2, 6, 10**.
 ### Deliverable 3 — Cost Model & TCO Comparison (spreadsheet + 3-page memo)
 
 A 3-year TCO model comparing:
+
 - **Option A:** Stay on-prem, refresh hardware in year 2 ($1.8M capex + $700K/yr opex)
 - **Option B:** Lift-and-shift to AWS (all EC2, EBS, RDS — no refactoring)
 - **Option C:** Modernize to AWS-native (Aurora Serverless v2, Lambda for async, ECS Fargate for web tier, DynamoDB for hot reads, CloudFront + S3 for static, Bedrock for ML inference)
 
 For each option, calculate:
+
 - Monthly run-rate at month 12, month 24, month 36
 - Migration / refactor cost
 - 3-year fully-loaded TCO
@@ -77,6 +81,7 @@ Cite **Modules 3, 5, 6, 9**.
 ### Deliverable 4 — Well-Architected Security Review (10–14 pages)
 
 A formal Well-Architected Review focused on the Security pillar, structured as a memo to the CISO. Must address:
+
 - How HIPAA compliance is achieved (BAA with AWS, encryption everywhere, audit logging via CloudTrail Organization Trail, AWS Config rules for ongoing compliance, AWS Audit Manager for SOC 2)
 - GDPR controls (data residency via SCP, right-to-erasure pipeline, consent record storage)
 - IAM design: Identity Center for humans, federated to corporate Okta; permission sets per role; SCPs locking root in member accounts and denying region usage outside the approved list
@@ -90,6 +95,7 @@ Cite **Modules 1, 2, 5, 9**. Reference **Capital One's 2019 breach** (Module 2 c
 ### Deliverable 5 — DR / BCP Plan (8–12 pages)
 
 A complete Disaster Recovery and Business Continuity Plan. Must include:
+
 - Quantified RPO and RTO for each tier (e.g., Tier 1: customer-facing traffic, RPO 30s / RTO 5min; Tier 2: analytics, RPO 4hr / RTO 24hr)
 - Justification for choosing **Warm Standby** in us-west-2 against the **Multi-Site Active-Active** alternative — show the cost delta and decide whether the customer's SLA contractually requires the more expensive tier
 - **Aurora Global Database** for the primary OLTP store; **DynamoDB Global Tables** for session state; **S3 Cross-Region Replication** with versioning + **Object Lock in Compliance mode** for compliance-critical buckets
@@ -103,6 +109,7 @@ Cite **Modules 1, 6, 8, 10**. Reference the **AWS us-east-1 outages of Dec 2021 
 ### Deliverable 6 — Post-Migration Optimization Roadmap (6-page memo)
 
 A 12-month optimization roadmap that the CFO and CTO will review jointly. Must include:
+
 - A specific commitment plan: when to convert On-Demand spend to **Compute Savings Plans** and **Reserved Instances** (modeled after Pinterest's $4M optimization — Module 3 case study)
 - A FinOps tagging policy enforced via SCPs ("untagged resources cannot be created in prod accounts")
 - A Spot Fleet strategy for stateless web tier and batch (e.g., 60% Spot + 40% On-Demand mixed-instances policy)
@@ -115,6 +122,7 @@ Cite **Modules 3, 7, 9**.
 ### Deliverable 7 — Executive Summary Memo (2 pages)
 
 A 2-page executive summary addressed to the CEO and Board. Must include:
+
 - Recommended option (from Deliverable 3)
 - Why this option vs alternatives (1 paragraph)
 - The 9-month timeline (Gantt-style summary)
@@ -184,6 +192,7 @@ After completing all 7 deliverables, **wait 1 week**, then re-read your own work
 ### Peer-review protocol (optional but strongly recommended)
 
 Find one peer in your study group and exchange capstones. Spend 90 minutes critiquing each other's work using the rubric. Ground rules:
+
 - No "this is good" praise — give a number per criterion
 - For any score under 90%, write a one-paragraph justification with specifics
 - Identify the single decision in their architecture you would have made differently, and why

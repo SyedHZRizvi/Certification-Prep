@@ -18,6 +18,7 @@ Meet Jamie, the new logistics director at a mid-size toy retailer. In her first 
 Six months later, it's October. The receiving dock backs up because trailers can't unload fast enough. Pickers run double shifts. Trucks sit waiting for dock doors. Jamie's CFO asks why outbound shipments are late.
 
 Jamie learned the **logistics capacity paradox** the hard way:
+
 - **Off-peak:** You look over-resourced. You're not — you're providing flex.
 - **Peak:** Your "right-sized" capacity becomes the bottleneck.
 
@@ -150,6 +151,7 @@ Capacity decisions vary by SKU velocity.
 | **C (slow)** | Tail SKUs, sporadic orders | Reserve storage, batch picking, drop ship |
 
 Two storage zones often emerge:
+
 - **Forward pick area** — fast movers, ergonomic, dense
 - **Reserve area** — bulk pallets, replenishes forward area
 
@@ -218,6 +220,7 @@ This is **CRP for logistics** — Capacity Requirements Planning. It must integr
 ## 🔄 Postponement as a Capacity Strategy
 
 Postponement (covered in Module 4) is also a *capacity* lever. By delaying differentiation:
+
 - You forecast at the *aggregate* level (more accurate)
 - You hold less safety stock (less storage capacity needed)
 - You need flex assembly/labeling capacity at the postponement point
@@ -330,6 +333,7 @@ If a single resource limits flow, that's the **bottleneck**. Eli Goldratt's Five
 ## ✅ Module 2 Summary
 
 You now know:
+
 - 🎯 The 7 layers of logistics capacity (receiving → transport)
 - 📐 Theoretical, effective, rated capacity — and the formula
 - 🎚️ Lead / Lag / Match strategies and when each fits

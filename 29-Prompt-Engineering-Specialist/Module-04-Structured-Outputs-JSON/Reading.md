@@ -78,6 +78,7 @@ A 1% parse failure rate is **10,000 broken orders per million** — Rashid's pag
 ### Defensive prompting helps but doesn't solve
 
 Things that *reduce* L0 failures:
+
 - `"Respond with ONLY valid JSON, no markdown, no commentary, no code blocks."`
 - One or two few-shot examples of the exact output shape
 - `temperature=0`
@@ -499,6 +500,7 @@ After 60 days in production: **0 parse failures, 99.4% extraction accuracy, $1.2
 **Situation.** Before August 2024, the industry standard for "force the LLM to output JSON" was a hodgepodge: JSON mode (OpenAI), tool calling abuse (Anthropic), Outlines/Guidance/instructor wrappers (open-source), or just prompt-and-pray. Across the ecosystem, **5–15% of production LLM JSON outputs failed validation** even with JSON mode. Every team that shipped LLM-to-database or LLM-to-API had a retry layer.
 
 **The announcement.** On August 6, 2024, OpenAI launched **Structured Outputs** — a `response_format` mode that constrained the model's token sampling to a user-supplied JSON Schema, with **100% schema adherence guaranteed**. The launch blog and an accompanying paper showed:
+
 - 100% schema adherence in tests (vs ~85.9% for prompt-only)
 - ~40% reduction in tokens spent on retries
 - Native support for Pydantic via the `.parse()` SDK helper
@@ -529,6 +531,7 @@ By early 2026, schema-enforced structured output is the **default** for any new 
 ## ✅ Module 4 Summary
 
 You now know:
+
 - 📦 The three levels of structure guarantee: L0 prompt-only / L1 JSON Mode / L2 schema-enforced
 - 🐍 The Pydantic + instructor pattern as the 2026 default
 - 🛠️ Tool use schemas as constrained generation in disguise

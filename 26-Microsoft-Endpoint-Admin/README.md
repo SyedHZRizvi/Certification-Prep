@@ -52,6 +52,7 @@ Begin with [Module 1: Modern Workplace →](./Module-01-Modern-Workplace/Reading
 ## 🎯 What You'll Learn
 
 By the end of this track, you'll be able to:
+
 - Plan a Windows 11 endpoint strategy that survives the shift from on-prem domain join to cloud-only management
 - Deploy Windows 11 at scale with Autopilot, provisioning packages, MDT, and Configuration Manager OSD
 - Operate Microsoft Intune for MDM and MAM across Windows, iOS, Android, macOS, and Linux
@@ -97,6 +98,7 @@ By the end of this track, you'll be able to:
 🔗 **[Microsoft Learn MD-102 study guide](https://learn.microsoft.com/credentials/certifications/resources/study-guides/md-102)** — the exact, current list of "skills measured." Print it. Tick off every bullet as you study. Microsoft updates this every 3–6 months — always trust the latest version over any third-party course.
 
 Also bookmark:
+
 - 🔗 [Microsoft Intune documentation](https://learn.microsoft.com/mem/intune/) — official docs
 - 🔗 [Microsoft Learn free MD-102 paths](https://learn.microsoft.com/training/courses/md-102t00) — hands-on practice
 - 🔗 [Windows Autopilot documentation](https://learn.microsoft.com/autopilot/) — flow diagrams + supported scenarios

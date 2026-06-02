@@ -64,12 +64,14 @@
 ## 🎯 Power Phrases For Exam
 
 ✅ Right answers often contain:
+
 - "Coach the team..."
 - "Facilitate a discussion..."
 - "Educate the manager..."
 - "Help the team self-organize..."
 
 ❌ Wrong answers often contain:
+
 - "Tell the team..."
 - "Assign the work..."
 - "Decide for the team..."

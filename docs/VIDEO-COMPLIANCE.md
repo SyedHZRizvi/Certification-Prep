@@ -59,6 +59,7 @@ Can we download those and rehost?"**
    compared to embed-only.
 
 The supported legal paths for downloading + rehosting a video are:
+
 - **Self-produced content:** the owner has full rights. (Humayun
   Zafar, in his capacity as the sole author of The Cert Hub course
   material, could produce his own walk-throughs and host those

@@ -17,6 +17,7 @@ In 2024, a 2-person DTC skincare brand called Bloom Hydration (the founder publi
 Total content: ~570 assets in 12 months. By a 2-person team. Total annual creative budget: **$28,000**.
 
 Their stack:
+
 - **Claude + ChatGPT** for all copywriting
 - **Midjourney v6 (now v7)** for images
 - **Runway Gen-2 (now Gen-4)** for AI video
@@ -348,6 +349,7 @@ TOTAL: $179/mo
 ```
 
 For that ~$2,150/year, you can produce:
+
 - 200+ ad creatives
 - 100+ blog posts
 - 60+ video ads
@@ -397,6 +399,7 @@ Compare to: hiring one freelance designer at $4K/mo. The math is obvious.
 Klarna's CEO Sebastian Siemiatkowski publicly shared at the [Klarna Q3 2024 earnings call](https://www.klarna.com/) that AI tools reduced their marketing production costs by **$10M+ annually** — and headcount in marketing operations dropped by ~20%.
 
 What they automated:
+
 - Image generation: 80% of campaign images via Midjourney + DALL-E (cited specifically)
 - Copy: 40% of email + ad copy drafted by AI (always human-reviewed)
 - Translation: 100% of regional copy via AI (then native review)
@@ -432,6 +435,7 @@ Sebastian's framing: "AI isn't replacing marketers. It's replacing the bottlenec
 ## ✅ Module 8 Summary
 
 You now know:
+
 - 🏭 The 4-stage content pipeline (Strategy → Generation → Refinement → Distribution)
 - ✍️ Which AI writing model to use when (Claude vs ChatGPT vs Gemini)
 - 🎨 How to build a Brand Voice Project + Prompt Library

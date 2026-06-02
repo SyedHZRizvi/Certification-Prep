@@ -86,6 +86,7 @@ FIDO2 / Windows Hello / Passkeys  >  Authenticator push + number match  >  CBA  
 ## 🏆 Exam Power Phrases
 
 When you see these, they're often **correct**:
+
 - ✅ "Use Entra Cloud Sync for the disconnected forest M&A scenario"
 - ✅ "PHS + Seamless SSO is Microsoft's recommended default"
 - ✅ "Use Hybrid Entra Join for on-prem-investments orgs"
@@ -94,6 +95,7 @@ When you see these, they're often **correct**:
 - ✅ "Migrate off AD FS"
 
 Usually **wrong**:
+
 - ❌ "Use Cloud Sync for Hybrid Entra Join"
 - ❌ "PHS sends the plaintext password"
 - ❌ "Federation is the best UX"

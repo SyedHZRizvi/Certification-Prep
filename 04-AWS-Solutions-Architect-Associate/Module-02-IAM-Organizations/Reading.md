@@ -21,6 +21,7 @@ Picture the Grand Cascade Hotel. The General Manager (Maya) is responsible for *
 - A **camera log** records who used which door, when. If money goes missing, Maya pulls the tape.
 
 Now translate:
+
 - **Room key → IAM policy** (says what you can open)
 - **Housekeeper's key → IAM group** (shared keys for a job function)
 - **Plumber's temp credential → STS AssumeRole** (short-lived, expires)
@@ -34,6 +35,7 @@ Master that hotel and you've mastered AWS IAM. Now let's get specific.
 ## 📜 Theoretical Foundations of IAM
 
 Before the AWS-specific jargon, know that IAM stands on shoulders:
+
 - **The principle of least privilege** comes from Saltzer & Schroeder's seminal paper *"The Protection of Information in Computer Systems"* (Saltzer & Schroeder, **Communications of the ACM, 1975**). Their eight design principles are still cited verbatim in the AWS Security pillar. Least privilege is principle #4: *"Every program and every user of the system should operate using the least set of privileges necessary to complete the job."*
 - **The CIA Triad** (Confidentiality, Integrity, Availability) was systematized in the same Saltzer & Schroeder paper and codified in the U.S. NIST Special Publication 800-12 (1995). When the SAA exam asks "which pillar is improved by enabling encryption?" it's asking about Confidentiality.
 - **The "confused deputy" problem**, which AWS solves with `ExternalId`, was first described by Norman Hardy in *"The Confused Deputy"* (Hardy, **ACM Operating Systems Review, 1988**). The hotel-valet analogy AWS uses in its docs comes directly from Hardy's paper.
@@ -48,6 +50,7 @@ These citations are not academic flourish: the exam questions are deliberately w
 ### Principal, Action, Resource, Condition (PARC)
 
 Every AWS API call answers four questions:
+
 1. **Principal** — Who's making the request? (a user, role, federated identity, service)
 2. **Action** — What are they trying to do? (`s3:GetObject`, `ec2:RunInstances`)
 3. **Resource** — Which resource? (`arn:aws:s3:::my-bucket/*`)
@@ -92,6 +95,7 @@ An **IAM policy** is a JSON document combining these:
 ### Roles vs Users — the distinction the exam loves
 
 A **Role**:
+
 - Has no permanent password or access key.
 - Is *assumed* via `sts:AssumeRole` returning temporary credentials (typically 15 min – 12 hours).
 - Has a **trust policy** that says *who* can assume it.
@@ -224,6 +228,7 @@ The modern way to give *humans* access to multiple AWS accounts.
 ### Cross-account read pattern
 
 1. **Account B** creates a role `S3ReaderRole` with:
+
    - **Permission policy** allowing `s3:GetObject` on its bucket
    - **Trust policy** allowing Account A to assume it
 2. **Account A's user/role** calls `sts:AssumeRole` against `arn:aws:iam::222:role/S3ReaderRole`
@@ -369,6 +374,7 @@ These four services are part of nearly every "secure architecture" answer:
 **Situation.** Capital One Financial Corporation — a top-10 U.S. bank with ~$370B in assets — announced in 2015 that it would close its last on-premises data center by 2018 and run *everything* on AWS. This was unprecedented for a regulated bank. Then-CIO Rob Alexander spoke at re:Invent 2015 and again in 2016 (keynote, viewable on AWS's YouTube channel) declaring AWS the "safer choice" — counter-intuitive in 2015 — because of the operational discipline AWS enforces.
 
 **Decision.** Capital One went **serverless-first**:
+
 - New workloads on **Lambda, API Gateway, DynamoDB, Step Functions** — not EC2
 - **IAM roles** everywhere, with permissions boundaries to cap blast radius
 - **Service Control Policies** to enforce region restrictions, encryption-at-rest, and CloudTrail-must-stay-on
@@ -380,6 +386,7 @@ These four services are part of nearly every "secure architecture" answer:
 **Outcome — the painful part.** In **July 2019**, a former AWS engineer, Paige Thompson (online handle "erratic"), exploited a **misconfigured WAF on an EC2 instance** to perform a **server-side request forgery (SSRF)** attack against the EC2 instance metadata service (IMDSv1). She obtained the IAM role credentials attached to the instance — credentials that had been granted overly broad S3 permissions — and exfiltrated **106 million customer records** (US and Canadian credit-card applicants, including 140,000 SSNs and 80,000 linked bank account numbers).
 
 **The breach was a *configuration* failure, not an AWS failure.** Specifically:
+
 1. The WAF was misconfigured to allow the proxied request
 2. The IAM role attached to the EC2 instance had `s3:ListBucket` and `s3:GetObject` on **all** buckets in the account — not just the one the application needed
 3. **IMDSv1** (the unauthenticated metadata service) was the default at the time — IMDSv2 (which requires session tokens and largely prevents SSRF attacks) was released by AWS in **November 2019**, four months *after* the breach
@@ -388,6 +395,7 @@ These four services are part of nearly every "secure architecture" answer:
 Capital One was fined **$80 million** by the OCC and paid **$190 million** in a class-action settlement. Thompson was convicted in 2022.
 
 **Lesson for the exam / for practitioners.** Every concept in this module would have prevented or contained the breach:
+
 - **IAM roles scoped to specific buckets** (not `*`) — least privilege
 - **Permissions boundary** on the EC2 role — caps what credentials can do even if stolen
 - **SCP** denying `s3:*` outside the application's expected resource pattern
@@ -426,6 +434,7 @@ When the SAA exam asks "which combination provides defense in depth for an EC2 a
 ## ✅ Module 2 Summary
 
 You now know:
+
 - 📜 The 1975 Saltzer & Schroeder origins of least privilege (and the "confused deputy" of 1988)
 - 🔑 IAM principal/action/resource/condition (PARC) model
 - 👥 Users vs Groups vs Roles and when each fits

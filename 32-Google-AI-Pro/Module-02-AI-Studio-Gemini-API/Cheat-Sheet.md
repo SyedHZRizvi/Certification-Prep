@@ -154,6 +154,7 @@ r.usage_metadata.total_token_count
 ## 🎯 Power Phrases
 
 ✅ Often **right**:
+
 - "Gemini API uses API keys; Vertex AI uses ADC/IAM"
 - "`response_mime_type`=application/json + `response_schema`"
 - "`count_tokens()` is a free endpoint"
@@ -163,6 +164,7 @@ r.usage_metadata.total_token_count
 - "Loosen only the safety category with a documented need; never blanket-disable"
 
 ❌ Often **wrong**:
+
 - "Lower temperature guarantees JSON" (it helps; doesn't guarantee)
 - "Streaming saves money" (it doesn't)
 - "Batch API is real-time" (it's async)

@@ -130,6 +130,7 @@ This is **CRAG-shaped** — retrieve, grade, regenerate if weak, generate if goo
 ### LangChain Agents
 
 Three lineages:
+
 - **Legacy AgentExecutor** (the original; widely deprecated for new work)
 - **LangGraph agents** — `create_react_agent`, `create_tool_calling_agent`, custom graphs
 - **Pre-built LangGraph templates** — `langgraph.prebuilt` includes ReAct, SQL-agent, etc.
@@ -228,6 +229,7 @@ LlamaIndex's *killer feature* is **index variety**. Beyond the standard vector i
 ### LlamaIndex Agents
 
 Two lineages:
+
 - **FunctionCallingAgentWorker** + `AgentRunner` — modern, async, tool-calling, often the right pick
 - **ReActAgent** — older ReAct-pattern; still maintained
 - **WorkflowAgent / Workflows** — the LlamaIndex equivalent of LangGraph (event-driven, async, multi-step)
@@ -362,6 +364,7 @@ Goal: ingest the same 500-document corpus (use the BEIR `nfcorpus` set), build t
 Then add a stateful agent loop in **LangGraph** that grades each answer (CRAG-style) and re-retrieves on low confidence.
 
 Deliverables:
+
 - Two complete RAG pipelines, ~150 lines each
 - One LangGraph agent loop
 - A 1-page reflection: *what was easier in each framework, what was harder, what I'd pick for my next project and why*
@@ -371,6 +374,7 @@ Deliverables:
 ## 📊 Case Study — Why Replit Built On LangGraph for "Agent" (2024)
 
 **Situation.** Replit's "Agent" — their AI tool that scaffolds entire applications from a natural-language spec — launched in 2024 to viral acclaim. Internally, the team had built v0 directly on raw API SDKs (Claude + GPT-4 fallback) and quickly hit complexity walls:
+
 - Multi-step workflows (read file → plan → write file → run code → debug) needed *state*
 - Long-running tasks needed *persistence*, *resume*, and *human-in-the-loop* approval
 - Iteration on the pipeline (which model? which prompt? which tool?) needed *tracing*
@@ -390,6 +394,7 @@ Deliverables:
 ## ✅ Module 4 Summary
 
 You now know:
+
 - 🦜 LangChain's three layers: Core / LCEL / LangGraph
 - 🦙 LlamaIndex's data-first design: Documents / Nodes / Indices / QueryEngines / Agents
 - 🆚 When to pick which (and when to use both)

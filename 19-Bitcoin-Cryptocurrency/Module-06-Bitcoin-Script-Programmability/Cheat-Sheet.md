@@ -29,6 +29,7 @@
 - Block weight cap: **4,000,000 WU**
 - Weight formula: **`(non-witness × 4) + (witness × 1)`**
 - 3 problems solved:
+
   1. **Malleability** (TxID independent of sigs)
   2. **Block-space efficiency** (witness discount)
   3. **Versioned witness program** (enables Taproot)
@@ -39,10 +40,12 @@
 
 - Block 709,632 activation
 - 3 BIPs:
+
   - **BIP-340**: Schnorr signatures
   - **BIP-341**: Taproot (key-path + script-path)
   - **BIP-342**: Tapscript
 - Two spend paths:
+
   - **Key-path** (most common): single Schnorr sig, indistinguishable from single-sig
   - **Script-path**: reveal one MAST leaf + Merkle proof
 - **MuSig2** = aggregate multi-sig into key-path

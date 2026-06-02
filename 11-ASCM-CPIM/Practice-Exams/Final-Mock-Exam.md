@@ -975,6 +975,7 @@ D. Plan at each level (S&OP → MPS → MRP → PAC), align capacity (RRP → RC
 ## 🔁 What To Review In The Final Week
 
 Top 10 highest-yield re-review items:
+
 1. The 5-step S&OP process + who leads each step
 2. MPS time fences (DTF vs PTF) + the "forecast is ignored inside DTF" rule
 3. ATP formula and how to compute

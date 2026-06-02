@@ -15,9 +15,11 @@
 Meet Aanya. She's the on-call sysadmin for an e-commerce platform. At 3:07 a.m. her phone vibrates: monitoring says the checkout API is returning 504 errors at a 12% rate. CFO emails the on-call lead by 3:15 a.m.
 
 Aanya's bad version of this story:
+
 - She opens 8 dashboards at once, randomly restarts services, reboots a load balancer "just in case," googles error messages while half-asleep, accidentally promotes a stale DB replica, then has to call her boss at 4:40 a.m. with a worse outage than she started with.
 
 Aanya's good version of this story:
+
 - She follows the **6-step methodology**.
 - Steps 1-3 narrow the problem to "DB write latency spiked at 2:58 a.m."
 - Step 4 maps to "a SAN path failed and MPIO is in degraded fallback."
@@ -285,6 +287,7 @@ Diagnosing "the server is slow" means *finding the saturated resource*.
 ### Asset documentation specifics
 
 Per server:
+
 - Hostname + FQDN
 - Serial / service tag
 - Vendor + model
@@ -446,6 +449,7 @@ This is the scenario Server+ tests when asking "what is the NEXT troubleshooting
 ## ✅ Module 8 Summary
 
 You now know:
+
 - 🎯 The **CompTIA 6-step troubleshooting methodology** — memorized cold
 - ⚡ **POST**, **beep codes**, **boot symptom → root cause** patterns
 - 💡 **LED meanings** including the locator/identify blue LED

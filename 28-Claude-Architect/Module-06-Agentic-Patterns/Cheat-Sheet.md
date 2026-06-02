@@ -165,6 +165,7 @@ Anthropic's guidance: **start with raw SDK; reach for a framework only with a sp
 ## 🏆 Exam Power Phrases
 
 ✅ Often **right**:
+
 - "Bias for the simplest pattern that works"
 - "Long trajectories are usually thrashing"
 - "Hierarchical agents fix too-many-tools problems"
@@ -173,6 +174,7 @@ Anthropic's guidance: **start with raw SDK; reach for a framework only with a sp
 - "LLM-as-judge with a clear rubric"
 
 ❌ Often **wrong**:
+
 - "More agentic = better"
 - "Frameworks are required"
 - "Long trajectories = deep reasoning"

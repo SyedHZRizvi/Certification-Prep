@@ -391,6 +391,7 @@ Customer speaks at drive-thru speaker
 ## ✅ Module 4 Summary
 
 You now know:
+
 - 📸 **Native multi-modal** — what it means and why it differs from bolted-on vision
 - 📦 **Input modalities** — text, image, audio, video, PDF; limits + tokenization
 - 📤 **How to pass each modality** — Python SDK examples for all five

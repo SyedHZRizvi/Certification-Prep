@@ -119,6 +119,7 @@ Group them by user intent. Format as a markdown table.
 
 #### Step 3: Pull search volume + difficulty
 Take your AI-expanded list into Ahrefs / SEMrush / Moz and pull search volume + difficulty (KD/DA) for each. You're looking for queries with:
+
 - **Volume ≥ 100/month** (lower is fine for niche B2B)
 - **Difficulty ≤ 30** (for newer sites; established sites can go higher)
 - **High commercial intent** if BOFU is the goal
@@ -128,6 +129,7 @@ Group your keywords into **pillars** (broad parent topics) and **clusters** (spe
 
 #### Step 5: Prioritize
 Score each keyword on:
+
 - Search volume (higher better)
 - Difficulty (lower better)
 - Business value (your relevance + intent)
@@ -160,12 +162,14 @@ You type "best CRM for small business." Google looks for pages containing the li
 
 ### New model: semantic + entity
 You type "best CRM for small business." Google now:
+
 1. Identifies the **entities** in your query: "CRM" (a software category), "small business" (a customer segment).
 2. Identifies related entities the page should cover: "lead management," "pipeline," "free tier," "HubSpot," "Pipedrive," "Salesforce Essentials," etc.
 3. Compares your query's *meaning* to each page's *meaning* using embeddings.
 4. Surfaces pages that semantically and entity-comprehensively cover the topic — not pages that just stuff the phrase.
 
 ### What this means practically:
+
 - **Cover entities and adjacent concepts comprehensively**, not just the target keyword.
 - **Use synonyms and related phrases naturally** — Google understands them.
 - **Build topic clusters** (pillar page + supporting articles) so your *whole site* is recognized as an authority on the topic.
@@ -229,6 +233,7 @@ You add it via **JSON-LD** (JavaScript Object Notation for Linked Data) in your 
 ## 🤖 Optimizing for AI Overviews (a.k.a. GEO / AEO)
 
 "AI Overview Optimization" goes by several names:
+
 - **GEO** — Generative Engine Optimization
 - **AEO** — Answer Engine Optimization
 - **AIO** — AI Overview Optimization
@@ -288,6 +293,7 @@ Long-tail search traffic at scale
 Generative AI lowered the cost of producing unique, useful content per template instance. Instead of just slot-filling ("In {city}, you can find..."), you can now generate genuinely *useful* unique sections per page.
 
 **Caveat — Google's spam policies (March 2024 update):** Google's *"Scaled Content Abuse"* policy explicitly targets sites that publish AI-generated content "primarily to manipulate search rankings." The line is:
+
 - ✅ AI-assisted, unique-per-page, genuinely useful → fine
 - ❌ AI-generated boilerplate at scale with no human editing → spam, will be deindexed
 
@@ -310,6 +316,7 @@ Google's **Core Web Vitals** are the official user-experience-as-a-ranking-facto
 🚨 **Trap on the exam:** FID (First Input Delay) was Google's old responsiveness metric. **It was officially replaced by INP in March 2024.** Older study guides still say FID.
 
 You measure Core Web Vitals using:
+
 - **PageSpeed Insights** (Google, free)
 - **Chrome DevTools Lighthouse** (free, in any Chrome browser)
 - **Search Console Core Web Vitals report** (free, shows real user data — CrUX)
@@ -340,6 +347,7 @@ Three SEO sub-specialties worth recognizing on exams:
 
 ### Local SEO
 For brick-and-mortar businesses. Driven primarily by:
+
 - **Google Business Profile** (formerly Google My Business) — must be set up, verified, and active.
 - **NAP consistency** (Name, Address, Phone — same across the web).
 - **Local citations** (mentions on Yelp, TripAdvisor, Yellow Pages, BBB, industry directories).
@@ -348,6 +356,7 @@ For brick-and-mortar businesses. Driven primarily by:
 
 ### International SEO
 For multi-country / multi-language sites:
+
 - **hreflang tags** (telling Google which language version of a page to show to which audience)
 - **Country-targeted ccTLDs** (.de, .fr) or subdirectories (/de/, /fr/)
 - **Localized content** (not just translation — proper localization)
@@ -413,6 +422,7 @@ Voice queries are longer, more conversational, and more question-shaped. Optimiz
 ## ✅ Module 3 Summary
 
 You now know:
+
 - 🧱 The three SEO pillars (on-page, technical, off-page) and what lives in each
 - 🎖️ E-E-A-T and why it matters more in the AI era
 - 🔑 A modern AI-assisted keyword research workflow

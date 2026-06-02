@@ -34,6 +34,7 @@ In 2026, the FTC, EU regulators, and state attorneys-general are increasingly *e
 ### 1. GDPR — General Data Protection Regulation (EU, May 25, 2018)
 
 The flagship privacy regulation of the 21st century. Applies to:
+
 - Any organization processing personal data of EU residents (regardless of company location — the famous "extraterritorial" scope)
 - Both data controllers (companies deciding what to collect) and processors (vendors processing on their behalf)
 
@@ -56,6 +57,7 @@ The flagship privacy regulation of the 21st century. Applies to:
 California's law, modeled on but distinct from GDPR.
 
 **Applies to** companies that meet at least one of:
+
 - Annual revenue > $25M
 - Buy/sell/share personal data of 100K+ Californians (CPRA threshold; was 50K under CCPA)
 - Derive ≥50% of revenue from selling/sharing personal data
@@ -105,6 +107,7 @@ Singapore's Personal Data Protection Act. Penalties up to **SGD 10% of revenue o
 ### 9. US State Laws (2023–2026 wave)
 
 By 2026, most US states have passed or are considering CCPA-style laws. Key ones to know:
+
 - **Virginia CDPA** (Jan 2023)
 - **Colorado CPA** (July 2023)
 - **Connecticut CTDPA** (July 2023)
@@ -183,6 +186,7 @@ A separate but related story.
 ### The Privacy Sandbox (Google)
 
 Google's set of replacement APIs:
+
 - **Topics API** — browser assigns user-interest topics; ads use those instead of cookies
 - **Protected Audience API** (formerly FLEDGE) — on-device remarketing
 - **Attribution Reporting API** — privacy-preserving conversion measurement
@@ -331,6 +335,7 @@ The most-quoted is GDPR's: "adequate, relevant, and limited to what is necessary
 ## ✅ Module 9 Summary
 
 You now know:
+
 - 🌍 The 9 major privacy regulations (GDPR, CCPA/CPRA, COPPA, CAN-SPAM, CASL, LGPD, PIPL, PDPA, US state wave)
 - 🤖 The EU AI Act (passed March 2024) and its 4 risk tiers
 - 🇺🇸 The FTC's AI enforcement posture and Colorado AI Act

@@ -176,6 +176,7 @@ extra_headers={"anthropic-beta":"long-context-1M-2025-01-01"}  # name varies
 ```
 
 Cost: **~$3/call** Sonnet at full 1M. Use when:
+
 - One coherent task needs >200K
 - Engineering+ops cost of a RAG alternative would exceed the premium
 - Caching can amortize the cost across many queries
@@ -196,6 +197,7 @@ Cost: **~$3/call** Sonnet at full 1M. Use when:
 ## 🏆 Exam Power Phrases
 
 ✅ Often **right**:
+
 - "Stuff if it fits; RAG when the corpus is too big"
 - "Contextual prefixes reduce retrieval failure ~35%"
 - "Hybrid (semantic + BM25) beats pure semantic on exact-match terms"
@@ -204,6 +206,7 @@ Cost: **~$3/call** Sonnet at full 1M. Use when:
 - "Voyage is the recommended embedding partner"
 
 ❌ Often **wrong**:
+
 - "RAG is always better than long-context"
 - "Bigger context = always better"
 - "Citations API replaces RAG"

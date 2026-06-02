@@ -176,6 +176,7 @@ D. 350
 ---
 
 ### Q22. Compare these two forecasts for the same actual demand of 100:
+
 - Forecast A predicted 105 (error +5)
 - Forecast B predicted 80 (error -20)
 

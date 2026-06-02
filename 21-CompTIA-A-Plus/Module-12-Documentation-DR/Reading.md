@@ -16,6 +16,7 @@ Meet Aleksandra. She's the head of IT at a 53-year-old machine-tools manufacture
 On a Friday evening in February, the production VLAN catches a ransomware infection — Lockbit 3.0. The variant encrypts files on attached drives, including the on-prem Veeam backups (Veeam's "Insider Protection" wasn't enabled). The company's production CAD/CAM data, plus 50 years of designs, are encrypted.
 
 Saturday morning. Aleksandra activates her DR plan. She:
+
 1. **Verifies the S3 backup is intact** — versioning enabled, MFA-delete required for deletion. The attacker couldn't reach it. Last full backup: Friday at 4:00 a.m., before infection.
 2. **Spins up replacement infrastructure** — fresh Windows Server 2022 VMs on AWS EC2 (per her runbook). Restores SQL backups + file shares from S3.
 3. **Validates** — runs the documented "smoke test" procedure: open 5 representative CAD files, query 10 representative SQL records, confirm checksums match.
@@ -362,6 +363,7 @@ Maersk's saving grace: **a single domain controller in Lagos, Nigeria** had been
 ## ✅ Module 12 Summary
 
 You now know:
+
 - 🎫 Ticket lifecycle, severity matrix, SLAs
 - 📖 KB / Runbook / SOP best practices
 - 🗂️ Asset lifecycle + secure disposal

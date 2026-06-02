@@ -79,6 +79,7 @@ Example:
 ### Structure 4 (emerging 2024+): The AI-Augmented Hybrid
 
 The same hub-and-spoke, but with a dedicated **AI Operations** team in the hub running:
+
 - LLM prompt libraries shared across spokes.
 - GenAI creative production pipelines.
 - Automated experimentation infrastructure.
@@ -178,6 +179,7 @@ Total annual                ≈ $360K (1.8% of revenue)
 ### The "30-30-30-10" rule of thumb for stack spend
 
 A common heuristic for healthy marketing-tech spend distribution:
+
 - **30%** infrastructure (CDP, warehouse, server-side, BI).
 - **30%** activation (email/SMS/lifecycle, ad platforms ex-media).
 - **30%** measurement (MTA, MMM, product analytics, A/B).
@@ -352,6 +354,7 @@ The arc that this entire course prepares you for:
 ## ✅ Module 10 Summary
 
 You now know:
+
 - 🏗️ The four canonical marketing org structures and when each fits.
 - 🧩 RACI across the five functions that touch marketing data.
 - 🛒 The 2026 martech stack landscape with realistic cost ranges.

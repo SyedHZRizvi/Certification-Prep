@@ -104,12 +104,14 @@ Planned Order Release Date = Receipt Date − Lead Time
 ## 🏆 Exam Power Phrases
 
 When you see these, often **correct**:
+
 - ✅ "Calculate dependent demand from BOM"
 - ✅ "Inside DTF, only firm orders drive PAB"
 - ✅ "Plan order release = receipt − LT"
 - ✅ "ATP = MPS minus orders before next MPS"
 
 When you see these, often **wrong**:
+
 - ❌ "Forecast dependent demand directly"
 - ❌ "DTF is further out than PTF"
 - ❌ "Inside DTF, weighted forecast + orders"

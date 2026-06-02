@@ -51,6 +51,7 @@ Collect logs from EC2 (CW Agent), Lambda (automatic), ECS, on-prem, API Gateway,
 ### 3. CloudWatch Alarms
 
 Threshold-based alerts:
+
 - Compare metric value to threshold over a period
 - States: OK, ALARM, INSUFFICIENT_DATA
 - Actions: SNS notify, ASG scale, EC2 recover
@@ -72,6 +73,7 @@ fields @timestamp, @message
 Custom dashboards combining metrics, alarms, log queries. Can be shared cross-account.
 
 ### Also:
+
 - **CloudWatch Synthetics** — canary scripts to monitor endpoints (uptime tests).
 - **CloudWatch RUM** (Real User Monitoring) — JS in the browser reports actual user perf.
 - **CloudWatch Application Insights** — AI-assisted analysis.
@@ -267,6 +269,7 @@ Memorize these — they're the easy points on cost questions:
 ## ✅ Module 9 Summary
 
 You now know:
+
 - 📊 CloudWatch's 5 capabilities (Metrics, Logs, Alarms, Insights, Dashboards)
 - 📝 CloudTrail vs CloudWatch Logs vs Config — the audit triangle
 - 🔬 X-Ray for distributed tracing
@@ -288,6 +291,7 @@ You now know:
 **Situation.** Twitter (rebranded as X in 2023) had run its core feed-generation pipeline on Google Cloud Platform (GCP) and AWS for years, complemented by its own data centers. Following Elon Musk's October 2022 acquisition, cost-cutting became existential — Musk publicly stated infrastructure costs were "roughly $1B/year" and that the cloud bill was excessive. Engineering leadership (much of it new) was directed to **repatriate** workloads from cloud to owned data centers.
 
 **Decision.** Per Musk's December 2022 thread and subsequent SREcon 2024 talks by former and current Twitter/X engineers, the program:
+
 1. **Audited every cloud-hosted service** and tagged each as "must repatriate," "stays on cloud," or "evaluate." Roughly 60% of workloads were tagged for repatriation
 2. **Built out two new data centers** (Sacramento and Portland) totaling ~100,000 servers added in 2023
 3. **Migrated batch and feed-generation pipelines** (the largest cost line) back to on-premises Hadoop / Kubernetes clusters
@@ -295,6 +299,7 @@ You now know:
 5. **Cut Google Cloud spend by ~60%** and AWS spend by similar; net infrastructure savings reported as **$1B+ annually** by mid-2024 (Musk's posts; corroborated by analyst notes)
 
 **The architecture-level audit drivers** (what every team had to defend):
+
 - **Data egress cost** ("Slack-style cross-AZ tax") — Twitter's feed generation made *enormous* lateral data movement; in the cloud this was the dominant cost line
 - **Compute utilization** — Twitter's workload was steady 24/7, the worst possible match for cloud's "pay for what you use" pricing model. On-prem with depreciated hardware was ~70% cheaper at 95%+ utilization
 - **Predictable scale** — Twitter's traffic peaks (US Sports finals, election nights) are predictable; elasticity premium wasn't worth $200M/year
@@ -303,6 +308,7 @@ You now know:
 **Outcome.** Twitter/X's repatriation became the high-water mark for the **"come down from the cloud"** movement that emerged in 2022–2024. David Heinemeier Hansson's *37signals* blog post *"Why we're leaving the cloud"* (October 2022, `world.hey.com/dhh`) had set the tone; Twitter validated it at extreme scale. The HBR article *"How Companies Are Trying to Bring the Cloud Down to Earth"* (HBR, 2024) cited Twitter, 37signals, and Dropbox (which had famously partially repatriated in 2017) as the trio defining the pattern.
 
 **Lesson for the exam / for practitioners.** The SAA exam does **not** test you on when *NOT* to use AWS — but the FinOps / cost-optimization frame matters for every "most cost-effective" question. The Twitter case sharpens the framing:
+
 - **Compute Optimizer + Trusted Advisor** are the AWS-native version of the audit Twitter did manually
 - **Reserved Instances / Savings Plans (3-year all-upfront)** capture ~60% of the on-prem efficiency without the operational cost
 - **Outposts** give you the AWS API on your own hardware — splits the difference between full cloud and full repatriation

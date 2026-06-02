@@ -570,6 +570,7 @@ D. AWS Config rule + SSM auto-remediation
 1. Take the exam under realistic conditions: 130 minutes timer, no notes, no breaks.
 2. After finishing — score yourself.
 3. For each wrong answer:
+
    - Note the module
    - Re-read the relevant Reading + Cheat-Sheet
    - Add a flashcard

@@ -162,6 +162,7 @@ Tool pricing and feature names verified as of 2026-05. **Always verify current p
 ## Maintaining Your Skills (and Your Sanity)
 
 Solo and small-team operators burn out faster than employees. Plan to:
+
 - Block 6-10 hours/week for "marketing the business" work even when you're slammed delivering. Module 8 of this course is the operating cadence; don't skip it once you've graduated.
 - Take Friday afternoons off after the first 90 days.
 - Hire your first VA/contractor when the Module 6 math forces you, not when you "feel ready."

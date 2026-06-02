@@ -320,6 +320,7 @@ C. Speed only
 D. Cost only
 
 ### 51. **Case Study A (4 parts).** Contoso Health is migrating 50,000 insurance forms into a self-service portal. They want:
+
 - (a) extract patient name, DOB, policy # from each form
 - (b) index docs for natural-language search with citations
 - (c) translate user queries from Spanish to English
@@ -554,6 +555,7 @@ D. Identify → Measure → Mitigate → Operate
 ## 🔍 Review Process
 
 For EACH wrong answer:
+
 1. Identify the module (see Question → Module map below)
 2. Re-read that module's Reading.md AND its Cheat-Sheet.md
 3. Add an Anki flashcard for the concept

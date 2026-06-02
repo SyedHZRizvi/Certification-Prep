@@ -502,6 +502,7 @@ C. Disable SELinux for port range
 D. `setenforce 0` permanently
 
 ### 82 (Scenario PBQ). Match each symptom → root cause:
+
 - (a) df -h shows 60% free; writes fail "No space left"
 - (b) New disk visible in dmesg; no /dev/sdb
 - (c) After kernel upgrade, LUKS root fails to mount
@@ -618,6 +619,7 @@ SELinux + firewalld + sshd 3-layer port change. The exam's favorite multi-layer 
 Refer to the relevant module's Quiz for full discussion. The key patterns to internalize:
 
 ### The 7 "exam pattern" wrong answers to recognize on sight:
+
 1. **"`setenforce 0`"** as the SELinux fix — almost always wrong
 2. **"`chmod 777`"** as the permission fix — almost always wrong
 3. **"`for line in $(cat file)`"** for reading lines — wrong
@@ -627,6 +629,7 @@ Refer to the relevant module's Quiz for full discussion. The key patterns to int
 7. **"`gpgcheck=0`"** to bypass GPG errors — wrong
 
 ### The 7 "exam pattern" right answers:
+
 1. **`set -euo pipefail`** at the top of any bash script
 2. **`semanage fcontext` + `restorecon`** for SELinux label problems
 3. **`--permanent` + `--reload`** for firewalld changes
@@ -652,6 +655,7 @@ Refer to the relevant module's Quiz for full discussion. The key patterns to int
 ## 🔍 Final Review Process
 
 For EACH wrong answer:
+
 1. Identify the module
 2. Re-read the relevant section of that Reading.md
 3. Add a flashcard

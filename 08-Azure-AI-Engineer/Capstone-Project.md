@@ -89,6 +89,7 @@ You have just been hired as the **Azure AI Engineer** at **Harbor Mutual Insuran
 ## What "submission" looks like
 
 You should produce, in `~/capstone-azure-ai-engineer/`:
+
 - `architecture.md` + `architecture-diagram.pdf`
 - `eval-harness/` — golden dataset (CSV/JSONL), the eval-config YAML/JSON for Foundry, sample run output
 - `rai-control-plan.md`

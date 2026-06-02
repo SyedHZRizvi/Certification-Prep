@@ -63,6 +63,7 @@ Before you sell, create proof. Build a sample of what you'll deliver — using a
 ### Step 3 — Build Your One-Page Site
 
 Carrd ($19/yr), Framer ($15/mo free tier), or Notion. **One** page. Includes:
+
 - One-sentence positioning
 - One specific productized service with price
 - 3 bullet points: what's included
@@ -74,6 +75,7 @@ Carrd ($19/yr), Framer ($15/mo free tier), or Notion. **One** page. Includes:
 ### Step 4 — Build Your Outbound Stack
 
 Per Module 3:
+
 - Apollo ($79/mo) for B2B data
 - Smartlead ($39/mo) for sending
 - 3 Workspace inboxes ($18/mo)
@@ -90,6 +92,7 @@ Per Module 3:
 ### Step 6 — Write Your PVCC Email Sequence
 
 From Module 3:
+
 - Subject + body (<110 words)
 - 4 follow-up touches over 14 days
 - Loaded into Smartlead
@@ -241,6 +244,7 @@ After contract + deposit, schedule the kickoff within 48 hours.
 ### Send a kickoff Loom (15 min) BEFORE the call
 
 Record a Loom walking the client through:
+
 - What happens this week
 - What you need from them (intake form, logins, brand assets)
 - What they should expect to see by [date]
@@ -368,6 +372,7 @@ Vera's upsell from $11,500 (project) to $4,500/mo (retainer × 6 mo = $27,000) i
 ### Retainer conversion rates
 
 Per Workshop Digital + Hampton community data, audit-to-retainer or build-to-retainer conversion rates typically run:
+
 - 25–45% for one-off productized clients
 - 60–80% if you've delivered measurable outcomes
 
@@ -506,6 +511,7 @@ Multiple anonymized Hampton members have described their first 5 agency clients 
 ## ✅ Module 8 Summary (And Course Summary)
 
 You now know:
+
 - 🎬 The 47-day arc from cold email to retainer
 - 📋 The 12-step first-client playbook
 - 📞 The PACT-O discovery call framework + 17 questions

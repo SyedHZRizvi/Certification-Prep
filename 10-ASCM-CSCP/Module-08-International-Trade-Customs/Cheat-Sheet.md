@@ -167,6 +167,7 @@ Correct HS code · proper transaction value · country of origin + FTA proof · 
 ## ✏️ Quick Self-Check
 
 Cover and recite:
+
 1. The 11 Incoterms 2020 ___
 2. Cost vs risk transfer for CFR ___
 3. HS code length ___

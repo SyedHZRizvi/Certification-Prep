@@ -64,6 +64,7 @@ Some modern lists add an **8th waste**: **Unused Talent / Underutilized Human Po
 ## 🌊 Value Stream Mapping (VSM)
 
 A VSM is a visual diagram of every step (value-add and non-value-add) from raw material to customer. Tracks:
+
 - Process time
 - Lead time
 - WIP between steps
@@ -85,6 +86,7 @@ N = (D × LT × (1 + SS)) / C
 ```
 
 Where:
+
 - **N** = number of kanban cards
 - **D** = average demand per period (units)
 - **LT** = lead time per kanban (periods)
@@ -129,6 +131,7 @@ The line should complete one unit every 2 minutes. If the actual cycle time is 1
 ## 🪪 Standard Work
 
 Documented best-known method for performing a task. Has 3 components:
+
 1. **Takt time** — the pace
 2. **Work sequence** — the steps in order
 3. **Standard WIP** — the inventory inside the cell needed to run
@@ -140,6 +143,7 @@ Without standard work, kaizen (improvement) has no baseline.
 ## ⚡ SMED — Setup Reduction
 
 Covered briefly in Module 7. Phases:
+
 1. Separate internal vs external setup
 2. Convert internal to external
 3. Streamline both
@@ -166,6 +170,7 @@ Example of poka-yoke: USB-C plug is symmetrical so you can't insert it backward.
 Small, incremental, daily improvements driven by the workers who do the work. Often facilitated by a **kaizen event** — a 3–5 day focused improvement workshop.
 
 The Kaizen mindset:
+
 - Small steps over big leaps
 - All workers participate, not just engineers
 - Stop, observe, ask "why?" five times
@@ -258,6 +263,7 @@ Cpk = min[ (USL − μ) / (3σ),  (μ − LSL) / (3σ) ]
 > ASCM Dictionary (16th ed., 2022) treats TQM, the 7 basic tools, and PDCA/PDSA as core entries.
 
 Pre-Six-Sigma quality movement (Deming, Juran, Crosby, Ishikawa) emphasizing:
+
 - Customer focus
 - Continuous improvement
 - Employee involvement
@@ -265,6 +271,7 @@ Pre-Six-Sigma quality movement (Deming, Juran, Crosby, Ishikawa) emphasizing:
 - Quality at the source
 
 **The 7 Basic Quality Tools** (Ishikawa):
+
 1. Cause-and-effect (fishbone) diagram
 2. Check sheet
 3. Control chart
@@ -323,6 +330,7 @@ Goldratt's TOC (Module 5) fits within lean's "perfection" principle — but TOC 
 **Situation.** In the post-war reconstruction era (1948 onward), Toyota Motor Corporation faced existential constraints: chronic capital scarcity, fragmented domestic demand across many small vehicle classes, no access to Detroit-scale economies. Mass production as practiced by Ford and GM — long runs of identical vehicles, large WIP buffers, large finished-goods inventory — was not financially survivable for Toyota. The company needed to produce small batches of varied vehicles at competitive unit cost, with capital efficiency far higher than the American competition.
 
 **Decision.** Over roughly three decades (1948 through the late 1970s) **Taiichi Ohno**, an engineer at Toyota, built what came to be called the **Toyota Production System (TPS)**. The journey:
+
 - **1949–1953**: Inspired by American supermarkets observed by Toyoda Eiji on a visit to Detroit (customer pulls product from shelves, supplier replenishes only what's sold), Ohno developed the **kanban** signal as a manual pull-replenishment mechanism.
 - **1950s**: Implemented **jidoka** (autonomation — machines stop on defect) and **andon** (visual signal). Inspired by the auto-stop mechanism on Toyoda Loom Works' 1924 automatic looms (Toyota's founding company).
 - **1960s**: **Shigeo Shingo**, a Toyota consultant, formalized **SMED** (Single Minute Exchange of Die) — reducing press setups from hours to single-digit minutes, enabling smaller economical batch sizes.
@@ -330,6 +338,7 @@ Goldratt's TOC (Module 5) fits within lean's "perfection" principle — but TOC 
 - **1973 oil shock**: While American manufacturers struggled with the recessionary period, Toyota's flexible TPS allowed rapid adaptation. Public attention to Toyota's performance accelerated. Honda followed similar principles independently.
 
 **Outcome and global influence.** The 1990 MIT-IMVP study (Womack, Jones & Roos, *The Machine That Changed the World*, 1990) made the global automotive industry's TPS-vs-mass-production gap unmistakable. Japanese assembly plants required **half the hours per vehicle** of American plants with **half the inventory** and **a third of the defect rate**. The MIT study coined "Lean Production" as the Western label for the principles. From that point forward:
+
 - Toyota's global market share grew from ~5% (1980) to ~12% (2000) to ~17% (2024) — overtaking GM in 2008 as the world's largest automaker by volume. As of 2024, Toyota is again #1 (10.8M vehicles vs Volkswagen's ~9.0M, GM's ~6.0M).
 - TPS was adopted (with varying fidelity) across global manufacturing: GE's lean transformation under Welch (1995+), Boeing's "Lean Manufacturing" program (1995+), Ford's revival of Henry Ford-era flow concepts (2000s), and across non-manufacturing sectors (lean healthcare at Virginia Mason, lean software at IMVU/Toyota Connected, lean government at the Veterans Health Administration).
 - Toyota maintained the discipline through the 2009–2011 unintended-acceleration recall crisis and the 2020–2022 chip shortage, with notably better outcomes than competitors in both cases.
@@ -407,6 +416,7 @@ The CPIM exam-takeaway: when an exam question describes a company that "implemen
 ## ✅ Module 8 Summary
 
 You now know:
+
 - 🗑️ The 7 wastes (TIMWOOD) and why overproduction is the worst
 - 🌊 The 5 lean principles (Value → Value Stream → Flow → Pull → Perfection)
 - 🃏 Kanban sizing and how to compute the number of cards

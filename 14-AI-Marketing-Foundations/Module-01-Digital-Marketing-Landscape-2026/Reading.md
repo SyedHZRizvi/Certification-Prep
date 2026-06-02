@@ -120,6 +120,7 @@ Every digital marketing exam tests the **funnel**. There are dozens of named fun
 **S**ituation → **O**bjectives → **S**trategy → **T**actics → **A**ction → **C**ontrol. Not a funnel — it's a *planning* framework. Used to structure marketing plans end-to-end. Worth recognizing for exam purposes.
 
 🎯 **Exam tip:** If a question asks "where in the funnel does X channel sit best?", remember the rough mapping:
+
 - **TOFU favorites:** SEO, YouTube, organic social, PR, podcasts
 - **MOFU favorites:** Email, retargeting ads, webinars, case studies
 - **BOFU favorites:** Paid search (branded), sales-assisted, free trials
@@ -307,6 +308,7 @@ You will see Coca-Cola's "Real Magic" cited in HBR, MIT Sloan Management Review,
 ## ✅ Module 1 Summary
 
 You now know:
+
 - 🧭 The four channel buckets (POESM) and how AI is disrupting each
 - 🎯 The four most-tested funnel frameworks (TOFU/MOFU/BOFU, AIDA, AARRR, RACE)
 - 💸 The eight load-bearing marketing-math acronyms (CAC, LTV, ROAS, ROI, AOV, CPA, CPC, CPM)

@@ -87,6 +87,7 @@ Groundedness post-check (Content Safety)
 ## 🤖 Azure AI Agent Service
 
 Tools:
+
 - **File Search** — RAG over uploaded files
 - **Code Interpreter** — sandboxed Python
 - **Function Calling** — your functions
@@ -138,6 +139,7 @@ k.add_service(AzureChatCompletion(deployment_name="gpt-4o", endpoint=ep, api_key
 ## 🏆 Exam Power Phrases
 
 **Usually right**:
+
 - ✅ "Project under a Foundry Hub"
 - ✅ "Hybrid + semantic + AOAI On Your Data"
 - ✅ "Prompt flow variants for A/B testing"
@@ -145,6 +147,7 @@ k.add_service(AzureChatCompletion(deployment_name="gpt-4o", endpoint=ep, api_key
 - ✅ "Managed identity for service auth"
 
 **Usually wrong**:
+
 - ❌ "AI Studio" (use Foundry)
 - ❌ "Fine-tune to add knowledge"
 - ❌ "Hardcode keys"

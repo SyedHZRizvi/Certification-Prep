@@ -117,12 +117,14 @@ Days of Supply = 365 / Turnover
 ## 🏆 Exam Power Phrases
 
 When you see these, often **correct**:
+
 - ✅ "Compute EOQ as starting point, then adjust for discounts"
 - ✅ "Increase safety stock to raise service level"
 - ✅ "Cycle count A items monthly"
 - ✅ "ROP = d × LT + SS"
 
 When you see these, often **wrong**:
+
 - ❌ "EOQ ignores quantity discounts" (true, but you must adjust)
 - ❌ "Higher safety stock is always better"
 - ❌ "Annual physical inventory replaces cycle counting"

@@ -316,6 +316,7 @@ The correct sequence:
 ## ✅ Module 6 Summary
 
 You now know:
+
 - 🛡️ MDE Plan 1 vs Plan 2 — what features each unlocks (memorize this)
 - 🦠 Defender Antivirus capabilities (NGAV, BAFS, CFA, tamper protection)
 - 🛑 The most-tested ASR rules and the Audit → Block rollout pattern

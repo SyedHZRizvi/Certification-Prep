@@ -28,6 +28,7 @@ You have **6 deliverables** due in 16 weeks. Total budget envelope for Phase 1: 
 ### 1. Foundation-Model Selection Memo (5–7 pages)
 
 Compare **three candidate foundation models** for the FNOL summarizer (e.g., Anthropic Claude on Bedrock, Amazon Nova on Bedrock, Meta Llama on SageMaker JumpStart). For each:
+
 - Cost per 1,000 input + output tokens at expected volume (estimate: ~12,000 FNOLs/month, ~3,500 tokens avg input, ~600 tokens avg output)
 - Latency profile (P50, P95) under load
 - Context window vs. expected document size
@@ -40,6 +41,7 @@ Conclude with a **scored trade-off matrix** (0–5 per dimension, weighted) and 
 ### 2. RAG Architecture Diagram + Provenance Specification (5–8 pages)
 
 Architecture for the FNOL summarizer's retrieval layer, addressing:
+
 - **Sources to index:** policy admin (Aurora PG), claims history (RDS), state-by-state coverage rules (S3 PDFs), fraud-indicator playbook (Confluence)
 - **Chunking strategy** and rationale (size, overlap, hierarchical?)
 - **Embedding model choice** (Titan Embeddings v2 vs Cohere Embed) and dimension
@@ -53,6 +55,7 @@ Include a labeled architecture diagram (Mermaid, ASCII, or hand-drawn-and-photog
 ### 3. Evaluation Harness with Human-in-the-Loop (4–6 pages)
 
 Define how Northwind will *know* the FNOL summarizer is working. Include:
+
 - **Automated metrics:** ROUGE for summary faithfulness, BERTScore for semantic quality, custom "PII leakage rate" check
 - **Bedrock Model Evaluation** configuration: which mode (automatic, KB eval, LLM-as-judge, human worker), on what dataset, at what cadence
 - **Human review panel:** who reviews (claim adjusters, claims supervisors, compliance reviewers), how many summaries per week, the scoring rubric (helpfulness, faithfulness, safety, tone)
@@ -63,6 +66,7 @@ Define how Northwind will *know* the FNOL summarizer is working. Include:
 ### 4. Responsible-AI Risk Assessment + Mitigations (5–8 pages, NIST AI RMF aligned)
 
 Walk through the **four NIST AI RMF functions** (*Govern, Map, Measure, Manage*) for the FNOL summarizer. For each function, identify Northwind-specific risks and the mitigation. At minimum address:
+
 - **Bias / fairness:** demographic disparities in summary quality or fraud-flag rates by geography, age, or other protected characteristics. How will you measure? (SageMaker Clarify on a curated test set.) What's the threshold for action?
 - **Hallucination:** an LLM-invented "prior claim" surfacing in a summary would be a regulatory disaster. How does the contextual grounding check + citation provenance + human review combine to mitigate?
 - **PII / privacy:** medical records in some claims; SSN and account numbers throughout. Map to Bedrock Guardrails (Sensitive Information filter), AWS Macie scan of source S3, KMS-customer-managed encryption
@@ -74,6 +78,7 @@ Walk through the **four NIST AI RMF functions** (*Govern, Map, Measure, Manage*)
 ### 5. Security Review for Prompt Injection / Data Leakage (4–6 pages)
 
 The security posture review the CISO will sign before launch. Cover:
+
 - **IAM design:** Bedrock role with resource-level restriction to specific Claude (or chosen FM) model ARNs; SageMaker execution role design if you need fine-tuning; least-privilege Lambda role(s) for any agentic action groups
 - **Network:** PrivateLink VPC interface endpoint for Bedrock Runtime + Agent/KB Runtime; S3 Gateway endpoint for KB sources; no public internet egress for inference traffic
 - **Encryption:** customer-managed KMS (CMK) for S3 sources, custom-model artifacts, OpenSearch index; TLS 1.2+ in transit; consider Nitro Enclaves for the most-sensitive subset
@@ -87,6 +92,7 @@ Produce a labeled threat model (STRIDE or similar) and a control-coverage matrix
 ### 6. Board-Readable ROI Model (Excel/Google Sheets equivalent + 2-page narrative)
 
 The CFO will not sign without numbers. Build:
+
 - **Investment:** AWS spend (Bedrock token volume, OpenSearch, S3, KMS, PrivateLink endpoints), people cost (ML lead, 2 ML engineers, security review FTE-months, change-management), vendor + legal review
 - **Returns:** adjuster productivity recovery (50% prep-time reduction × 12,000 FNOLs/month × adjuster fully-loaded cost), customer-satisfaction lift (translate to retention dollars), claims-cycle compression (NPS + premium retention)
 - **Sensitivity analysis:** what happens at 20% reduction (worse than target) and at 70% reduction (better)? At Bedrock pricing 30% higher or lower?
@@ -130,6 +136,7 @@ The CFO will not sign without numbers. Build:
 ## ✉️ What "submission" looks like
 
 Submit a single zipped folder named `northwind-fnol-capstone.zip` containing:
+
 - `01-fm-selection-memo.pdf`
 - `02-rag-architecture.pdf` (with embedded diagram)
 - `03-evaluation-harness.pdf`

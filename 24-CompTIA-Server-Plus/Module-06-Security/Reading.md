@@ -192,6 +192,7 @@ A **security baseline** is a documented, agreed-upon configuration that meets a 
 ### CIS Benchmark structure
 
 Each benchmark covers an OS/app, organized as:
+
 - **Level 1** — basic hardening; most enterprises can apply
 - **Level 2** — defense-in-depth; may break some functionality (acceptable in higher-security envs)
 - **Scored items** (auditable) and **not-scored items** (advisory)
@@ -397,6 +398,7 @@ This is the scenario Server+ tests when asking "how do you limit blast radius of
 ## ✅ Module 6 Summary
 
 You now know:
+
 - 🏛️ **Physical controls** — perimeter, building, server room, component — and the specific terms (mantrap, bollard, HSM, CCTV roles)
 - 🚪 **Firmware security** — UEFI password, Secure Boot, Measured Boot, TPM 2.0, SED, BitLocker/LUKS
 - 🗝️ **Identity & access** — least privilege, RBAC vs DAC/MAC/ABAC, service accounts, gMSAs, PAM, JIT, MFA

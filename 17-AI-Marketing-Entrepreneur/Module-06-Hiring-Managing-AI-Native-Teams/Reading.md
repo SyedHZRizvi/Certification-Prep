@@ -21,12 +21,14 @@ She knows she needs to hire. But she's nervous: every founder she knows who hire
 She decides to test the simplest, cheapest hire first: **a part-time Filipino contractor for asset prep + reporting** at $14/hr, 25 hr/wk = $1,400/mo. She finds Diana through OnlineJobs.ph (a $69 one-time fee), interviews 7 candidates, runs a paid 3-hour work-sample test ($42), and signs Diana for a 30-day trial.
 
 By month 2:
+
 - Diana handles weekly ad performance reports (was 6 hrs of Maya's time/wk = freed 24 hrs/mo)
 - Diana preps creative assets in Figma + ChatGPT (was 4 hrs/wk = freed 16 hrs/mo)
 - Diana handles client onboarding doc prep (was 3 hrs per new client)
 - **Diana frees ~50 hours of Maya's time per month**
 
 Maya uses those 50 freed hours to:
+
 - Sign 4 more clients ($5,500/mo each = $22K/mo new ARR)
 - Build a more polished website (drives more inbound)
 - Take Friday afternoons off
@@ -145,6 +147,7 @@ Where you look matters enormously. Some platforms are saturated with low-fit can
 ### The "build-in-public hire" play
 
 Some of the best AI-native hires are people who:
+
 - Post their work publicly on LinkedIn/Twitter
 - Have a small newsletter or YouTube
 - Have shipped a side project or two
@@ -199,6 +202,7 @@ Score 1–10 in each. Hire on 7.5+ aggregate.
 ### Reference checks
 
 Two reference calls, 15 min each. Ask:
+
 1. "What was [Candidate] specifically responsible for?"
 2. "What would [Candidate] need help with to be great?"
 3. "Would you re-hire them tomorrow?" (Listen for hesitation.)
@@ -445,6 +449,7 @@ Discussed in the opening story: a $14/hr Filipino contractor → 50+ hours of fo
 ## ✅ Module 6 Summary
 
 You now know:
+
 - ⏰ The 3 triggers for hiring (and the 1.5x rule)
 - 🧬 The AI-native employee profile (5 traits, 3 anti-traits)
 - 🌍 Where to source: Lunchclub, OnDeck, LinkedIn DMs, WeWorkRemotely, OnlineJobs.ph

@@ -284,6 +284,7 @@ Workbooks are interactive dashboards combining text, queries, charts, and parame
 ### Quick workbook structure
 
 A workbook is a JSON document containing:
+
 - **Text** (markdown)
 - **Query** (KQL → table or chart)
 - **Parameters** (dropdowns / time pickers)
@@ -346,6 +347,7 @@ Action groups define what *happens* when an alert fires:
 ## 📡 Distributed Tracing & Application Insights
 
 Application Insights is the **app-level** telemetry (covered more in dev-focused certs). For AZ-801, know:
+
 - Application Insights instruments .NET, Java, Node, Python apps
 - Sends to a Log Analytics workspace (since 2023 — they merged)
 - Provides Application Map (dependencies), failure trees, live metrics
@@ -384,6 +386,7 @@ Application Insights is the **app-level** telemetry (covered more in dev-focused
 **Situation.** In July 2019, a former AWS engineer exploited a misconfigured Web Application Firewall on Capital One's customer-facing servers to extract data on ~106 million credit card applicants in the US and Canada (Capital One Disclosure, July 29 2019; US v. Thompson, criminal complaint No. 19-MJ-344, July 29 2019). The attacker used a Server-Side Request Forgery (SSRF) attack to extract temporary AWS IAM credentials from the EC2 Instance Metadata Service, then used those credentials to list and download S3 buckets containing the customer data — including SSNs, bank account numbers, and applicant addresses. The attacker bragged about it on Slack and GitHub before being arrested, but Capital One's investigation later confirmed that **the entire attack lifecycle was visible in AWS CloudTrail and VPC Flow Logs** — Capital One simply hadn't ingested those logs into a correlation engine.
 
 **Decision.** Capital One's published incident response (testimony before the US Senate Banking Committee, October 17 2019) committed to:
+
 1. **Centralize all cloud audit logs into a single SIEM workspace** (in their case, Splunk Cloud) with 365+ day retention.
 2. **Use Azure Sentinel / Splunk / Chronicle to correlate logs** across compute, storage, identity, network — looking for cross-source patterns the human eye misses.
 3. **KQL-style real-time hunting queries** for known TTPs (in their case, Splunk SPL; the Azure equivalent is KQL hunting queries).
@@ -393,6 +396,7 @@ Application Insights is the **app-level** telemetry (covered more in dev-focused
 **Outcome.** Capital One paid an **$80M** fine to the Office of the Comptroller of the Currency in August 2020 and a **$190M settlement** in class-action lawsuits in December 2021. The reputational damage and direct loss-recovery costs were estimated at $300M+. Most importantly, the breach reshaped how the financial-services industry approaches cloud telemetry — moving from "log what's cheap to keep" to "log everything that touches PII, with 365-day retention minimum."
 
 **Lesson for the exam / for practitioners.** AZ-801 will not name Capital One, but it will test:
+
 - *AMA + DCR design* — collect the right Windows Security events (4624 logon, 4625 failed logon, 4720 user creation, 4732 group membership change)
 - *Log Analytics workspace retention* — choose Analytics (full KQL) vs Basic (cheaper) vs Auxiliary (eDiscovery) tier intentionally
 - *KQL hunting queries* — write KQL to detect "credential dumping" or "lateral movement" patterns
@@ -450,6 +454,7 @@ The exam will phrase this as: *"A SOC wants to detect when a non-admin user is a
 ## ✅ Module 7 Summary
 
 You now know:
+
 - 🎯 The Azure Monitor architecture (Metrics + Log Analytics + AMA)
 - 🤖 AMA + DCRs — the modern unified pattern (MMA is retired)
 - 🏢 Log Analytics workspace design choices (single / regional / per-BU / hub-spoke)

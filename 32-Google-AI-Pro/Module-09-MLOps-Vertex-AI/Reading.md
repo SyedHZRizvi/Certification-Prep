@@ -177,6 +177,7 @@ PipelineJobSchedule(
 ## 📦 Model Registry Deep Dive
 
 **Vertex AI Model Registry** is the central catalog. Each model has:
+
 - **Display name** (`"customer-churn"`)
 - **Versions** (`1`, `2`, `3` — semantic or sequential)
 - **Artifacts** (the weights, in GCS or container)
@@ -316,6 +317,7 @@ mm.ModelDeploymentMonitoringJob.create(
 ### For generative models
 
 GenAI-specific monitoring includes:
+
 - **Response quality** sampled with LLM-as-judge
 - **Safety triggers** rate (how often safety_settings or recitation fires)
 - **Citation rate** (% of responses with grounding citations)
@@ -524,6 +526,7 @@ The improvement is not magical — it is consistent application of: **pipeline o
 ## ✅ Module 9 Summary
 
 You now know:
+
 - ⚙️ **The Vertex AI MLOps loop** — 8 stages
 - 🛤️ **Pipelines** with KFP v2 + scheduling + caching
 - 📦 **Model Registry** with versions + lineage

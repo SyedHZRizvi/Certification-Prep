@@ -112,6 +112,7 @@ ScriptSig:     <push-data of redeem_script>
 ```
 
 Use cases:
+
 - **Multi-sig (2-of-3, 3-of-5)** before Taproot
 - **Wrapped SegWit** (P2SH-P2WPKH, the legacy-compatible SegWit)
 - Custom timelock contracts
@@ -121,6 +122,7 @@ Use cases:
 ### 4. P2WPKH / P2WSH (Native SegWit) — BIP-141, August 2017, addresses start with "bc1q..."
 
 SegWit (Segregated Witness) moves signatures into a separate witness field, fixing three problems:
+
 - **Transaction malleability** — TxID no longer depends on signature shape
 - **Block-space efficiency** — witness data is discounted in weight calculation
 - **Scripting extensibility** — versioned witness program enables future upgrades like Taproot
@@ -134,6 +136,7 @@ Witness:       <signature> <pubkey>      (P2WPKH)
 ```
 
 🎯 **MEMORIZE THIS.** SegWit's two effective block-size improvements:
+
 1. **Weight units instead of bytes.** Max block weight = 4,000,000 WU. Non-witness data counts as 4 WU/byte; witness data counts as 1 WU/byte. So a witness-heavy block can be larger than 1 MB in bytes.
 2. **Fixes malleability.** TxID is now independent of signature shape, enabling Lightning to use unconfirmed transactions as channel commitments (Module 7).
 
@@ -150,6 +153,7 @@ ScriptPubKey:  <0x01> <33-byte taproot output key>
 ```
 
 The output key is a tweaked public key derived from:
+
 - An **internal public key** (Schnorr-valid pubkey, possibly a MuSig aggregation of multiple)
 - A **Merkle root** of alternative script paths (which may be empty — pure key-path)
 
@@ -171,6 +175,7 @@ The output key is a tweaked public key derived from:
 MAST = a Merkle tree of alternative scripts. Each "leaf" is a script; the root commits to all of them. At spend time, only the leaf used is revealed (with its Merkle proof). Unused leaves stay hidden.
 
 **Example use case:** an inheritance contract that allows:
+
 - Path 1: Owner signs (most common)
 - Path 2: Owner + spouse sign jointly (also common)
 - Path 3: Spouse + attorney sign after 1-year timelock (rare, for inheritance)
@@ -197,6 +202,7 @@ Two soft forks added time-based spending conditions:
 ```
 
 Spendable only after block height (or Unix timestamp) `timelock_value`. Used for:
+
 - Inheritance contracts ("after 2030-01-01, my children can claim")
 - Vested grants ("vest 25% in year 2, 50% in year 3...")
 
@@ -207,6 +213,7 @@ Spendable only after block height (or Unix timestamp) `timelock_value`. Used for
 ```
 
 Spendable only `relative_delay` blocks after the *containing transaction* was confirmed. Used for:
+
 - **Lightning Network channel timeouts** (Module 7) — the cornerstone of HTLCs
 - "Wait 24 hours after issuance before withdrawal" patterns
 
@@ -253,11 +260,13 @@ Signaling reached the 90% threshold by **June 12, 2021** (the second signaling p
 **Outcome.** Taproot was the smoothest major soft-fork activation in Bitcoin's history. Adoption has been gradual: as of 2025, ~30-40% of new transactions use P2TR addresses; the rest are P2WPKH (SegWit) and legacy. The privacy benefits accumulate over time — the more Taproot adoption, the more single-sig and multi-sig spends are indistinguishable.
 
 Three downstream consequences:
+
 1. **Ordinals / Inscriptions** (Casey Rodarmor, January 2023) used a Taproot script-path quirk to inscribe arbitrary data into Bitcoin transactions. This was *unintended* by the Taproot authors but legal under the new rules.
 2. **MuSig2** (Nick, Ruffing, Seurin, 2020) became practical, enabling efficient multi-sig that looks like single-sig.
 3. **Lightning Network** began transitioning to Taproot-based channels for privacy and efficiency.
 
 **Lesson for the exam / for practitioners.** Three principles every exam tests:
+
 1. **Soft-fork activation can be smooth when the community trusts the proposal and process.** Speedy Trial worked because the proposal had been technically vetted; the political wars of 2017 were avoided.
 2. **Protocol changes have emergent consequences.** The Ordinals wave was unforeseen by Taproot's authors; it created an entire new fee market three years later. Module 5 returned to this.
 3. **Bitcoin's "do less, do it right" culture means most upgrades take years.** Taproot activation in 2021 was the culmination of work that started in 2017. CBP candidates should appreciate this conservatism, not lament it.

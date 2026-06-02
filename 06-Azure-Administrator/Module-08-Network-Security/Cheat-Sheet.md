@@ -69,6 +69,7 @@ Subnet name (case-sensitive): `AzureFirewallSubnet`, min `/26`
 ## 🏆 Exam Power Phrases
 
 Often **correct**:
+
 - ✅ "Use ASGs to avoid hardcoded IPs"
 - ✅ "Lower priority number wins"
 - ✅ "WAF in Detection mode first, then Prevention"
@@ -76,6 +77,7 @@ Often **correct**:
 - ✅ "Azure Firewall Premium for TLS inspection"
 
 Often **wrong**:
+
 - ❌ "NSG is stateless"
 - ❌ "Higher priority number = first"
 - ❌ "ASG works across peered VNets"

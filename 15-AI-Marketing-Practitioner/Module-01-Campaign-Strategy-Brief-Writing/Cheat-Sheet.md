@@ -85,6 +85,7 @@ LAYER 4: VALIDATION — "List 3 assumptions I should verify"
 ## 🏆 Exam Power Phrases
 
 When you see these in answers, they're often correct:
+
 - ✅ "One specific behavior change..."
 - ✅ "Measurable KPIs with numeric thresholds..."
 - ✅ "Validate the ICP before spending..."
@@ -92,6 +93,7 @@ When you see these in answers, they're often correct:
 - ✅ "Insight, not feature..."
 
 When you see these, they're often **wrong**:
+
 - ❌ "Target millennials"
 - ❌ "Drive awareness"
 - ❌ "Run all available channels"
@@ -123,6 +125,7 @@ When you see these, they're often **wrong**:
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. The 5 W's? ___
 2. Creative vs media brief? ___
 3. The 3 ICP tests? ___

@@ -389,6 +389,7 @@ You are the architect at a mid-sized US insurance company. The CEO asks: *"I wan
 ### Your design (work through before reading the model answer)
 
 Sketch on paper or in your head:
+
 1. Which Gemini tier(s)?
 2. Which Vertex AI sub-products?
 3. What region?
@@ -517,6 +518,7 @@ This is the kind of full-system answer the PMLE exam wants from you in scenario 
 ## ✅ Module 10 + Course Summary
 
 You now know:
+
 - 🍔 **Wendy's FreshAI** — deterministic flow + grounded Gemini for drive-thru
 - 🚗 **Mercedes MBUX** — hybrid on-device + cloud for in-car
 - 🛒 **Shopify Sidekick** — multi-tenant ADK + Conversational Agents for SaaS AI

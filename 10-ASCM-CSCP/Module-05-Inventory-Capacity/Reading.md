@@ -32,6 +32,7 @@ The lesson: more inventory ≠ better service. **Smart inventory** = better serv
 | **Decoupling / hedge** | Buffers between processes or against risk | Pre-strike steel inventory |
 
 Also sometimes called out:
+
 - **Maintenance, Repair, Operating (MRO)** — supplies not in the BOM but needed for ops
 - **Promotional inventory** — built specifically for a marketing campaign
 
@@ -128,6 +129,7 @@ Apply the 80-20 principle to inventory.
 | **C** | 50–60% | 5–10% | Looser control, infrequent counts, batched orders |
 
 Variations:
+
 - **ABC-XYZ** — adds demand variability classification (X = stable, Y = variable, Z = lumpy)
 - **VED** (Vital / Essential / Desirable) — criticality classification
 - **HML** (High / Medium / Low) — price-based
@@ -299,6 +301,7 @@ A holiday sweater sells for $80 with $30 cost. Leftover salvage = $20.
 ## ✅ Module 5 Summary
 
 You now know:
+
 - 📦 The 5 inventory types and 4 cost categories
 - 📐 EOQ formula, assumptions, and sensitivity
 - 🛡️ Safety stock & reorder point math (with variable demand AND lead time)

@@ -496,6 +496,7 @@ D. "What's the CEO's favorite metric?"
 ## 🔍 Final Review Process
 
 After your final mock attempt:
+
 1. **Review every wrong answer.** Identify the module and the *concept* that tripped you up.
 2. **Re-read** that module's Reading.md *and* Cheat-Sheet.md.
 3. **Add** an Anki flashcard for the concept.

@@ -116,6 +116,7 @@
 ## 🏆 Exam Power Phrases
 
 When you see these, they're often **correct**:
+
 - ✅ "Use PowerShell 7 for cross-platform scripts"
 - ✅ "Use JEA to delegate admin without granting Domain Admin"
 - ✅ "Use Azure Machine Configuration for Arc-enabled servers"
@@ -125,6 +126,7 @@ When you see these, they're often **correct**:
 - ✅ "Use Automanage for one-click best-practice service enablement"
 
 Usually **wrong**:
+
 - ❌ "Run PS 5.1 cmdlet `Connect-MgGraph` on a Linux Arc box" (use PS 7)
 - ❌ "Store SP secret in plaintext in a runbook"
 - ❌ "Give DNS Operators Domain Admin to manage zones" (use JEA)

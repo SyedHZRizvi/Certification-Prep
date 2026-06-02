@@ -566,6 +566,7 @@
 ## 🎯 BEFORE THE EXAM
 
 You should be able to instantly answer:
+
 - The 4 form factors (tower, rack 1U–4U, blade) and where each is used
 - All 5 RAID levels (0, 1, 5, 6, 10) — min disks, capacity formula, fault tolerance
 - Default ports: SSH 22, RDP 3389, SMB 445, NFS 2049, iSCSI 3260, WinRM 5985/5986, IPMI 623

@@ -55,6 +55,7 @@ REVERSE LOGISTICS (back to warehouse → inspect → restock/scrap)
 ## 🏭 OMS vs WMS — The Distinction
 
 **OMS — Order Management System.** Upstream brain. Sees all inbound orders across channels (Shopify, Amazon, Walmart, eBay, B2B). Decides:
+
 - Which warehouse fulfills which order (routing logic).
 - Whether to split an order across nodes (split-shipment risk).
 - When to allocate inventory (real-time vs batched).
@@ -62,6 +63,7 @@ REVERSE LOGISTICS (back to warehouse → inspect → restock/scrap)
 - When to release to fulfillment (immediately vs hold for batch).
 
 **WMS — Warehouse Management System.** Inside-the-warehouse operations. Controls:
+
 - Receiving (inbound from suppliers).
 - Putaway (where to physically store).
 - Picking (the path the worker walks).
@@ -96,6 +98,7 @@ REVERSE LOGISTICS (back to warehouse → inspect → restock/scrap)
 ### 1. In-House / Self-Fulfillment
 
 You operate your own warehouse(s). Best for:
+
 - Founders launching < 200 orders/month.
 - Hand-assembled or customized products.
 - Brands with strong unboxing experience as competitive moat (Glossier early days, Casper original mattress).
@@ -124,6 +127,7 @@ Outsourced operator handles receiving, storage, pick/pack, shipping, returns.
 ### 3. Marketplace-Fulfilled
 
 The marketplace fulfills on your behalf. The two big options:
+
 - **Amazon FBA** — Fulfilled by Amazon. Inventory sits in Amazon's network; Amazon picks/packs/ships and handles returns. Required for Prime badge on Amazon. Fees: ~15% of selling price + storage fees.
 - **WFS (Walmart Fulfillment Services)** — Walmart's equivalent. Required for Walmart 2-day shipping. Fees: similar structure to FBA, sometimes cheaper.
 
@@ -265,6 +269,7 @@ Customer → Drop-off / Pickup → Sortation Center → Brand's warehouse
 ```
 
 A 30-40% return rate at a $50 AOV apparel brand means about $15-20 per order is in reverse logistics. The brands that win are the ones that:
+
 - Inspect quickly (within 48 hours of receipt).
 - Restock A-grade fast (recovering AOV).
 - Liquidate B-grade in bulk (Optoro takes pallets at ~30-50% of retail).
@@ -281,6 +286,7 @@ A 30-40% return rate at a $50 AOV apparel brand means about $15-20 per order is 
 **Decision.** In April 2023, Amazon launched **Buy with Prime** publicly (it had been in invite-only beta since 2022). The integration allowed any Shopify, BigCommerce, or custom DTC site to surface a Prime badge using FBA inventory. In parallel, Amazon expanded **Multi-Channel Fulfillment (MCF)** APIs to support Walmart Marketplace, eBay, Etsy, TikTok Shop. By Q4 2023, Buy with Prime was integrated with Shopify Plus as an official channel. In 2024, Shopify and Amazon announced direct one-click installation of the Buy with Prime app from Shopify's app store.
 
 The pricing:
+
 - Fulfillment fee: similar to FBA Standard ($3-$15/unit).
 - Storage: standard FBA rates.
 - Payment processing: 3% (on top of Stripe/Shopify Payments processing).
@@ -304,6 +310,7 @@ The pricing:
 ## 🌐 Cross-Border Fulfillment
 
 For brands shipping internationally, fulfillment splits into:
+
 1. **Origin-country shipping (DDP)** — Ship from US warehouse via DHL or FedEx, with duties paid; customer sees an all-in price.
 2. **Regional fulfillment (3PL in target country)** — Ship in-country inventory; faster delivery, better margin, more complexity.
 3. **Cross-border specialists** — Global-e, Zonos, Reach, ESW handle DDP shipping, multi-currency, IOSS, returns.
@@ -352,6 +359,7 @@ For brands shipping internationally, fulfillment splits into:
 ## ✅ Module 5 Summary
 
 You now know:
+
 - 🏗️ The fulfillment stack (OMS, WMS, TMS, carrier, last-mile, returns)
 - 🏬 Three fulfillment models (in-house, 3PL, marketplace-fulfilled)
 - 🏭 The 3PL landscape (ShipBob, Shipmonk, Quiet Logistics, etc.)

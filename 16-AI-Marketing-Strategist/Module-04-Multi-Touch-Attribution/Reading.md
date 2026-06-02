@@ -18,6 +18,7 @@ January 2019. Stitch Fix has been growing 25% YoY using last-click attribution. 
 The new VP of Marketing Science runs a holdout test: turn off paid search in three test geos. In two of three, organic + direct traffic absorbs ~85% of the lost paid-search clicks within 14 days. *Paid search was cannibalizing organic.* Last-click had been crediting paid search with conversions that would have happened anyway. The team had been over-investing in a channel that was largely *incremental zero*.
 
 The fix:
+
 1. Replace last-click with a **data-driven attribution (DDA) model** built on Shapley values + Markov chains. New view of paid search incremental contribution: 18% (not 47%).
 2. Reallocate ~$80M annually to upper-funnel (paid social, podcast, brand TV).
 3. Build a quarterly **geo-holdout incrementality test** to validate the MTA output.
@@ -77,6 +78,7 @@ Translated to marketing: each channel is a player. The "winnings" = the conversi
 ```
 
 where:
+
 - `N` = set of all channels
 - `S` = a subset of channels not including `i`
 - `v(S)` = the conversion probability given channels in `S` were touched
@@ -100,6 +102,7 @@ This computes how *essential* each channel is to the overall conversion machiner
 **Worked example:**
 
 Suppose we observe 1,000 user journeys. The Markov model estimates:
+
 - Total conversion probability: 0.10 (100 conversions / 1,000 journeys).
 - Conversion probability if "Display" is removed from the graph: 0.085.
 - Removal effect of Display: (0.10 − 0.085) / 0.10 = 15%.
@@ -245,6 +248,7 @@ In production, you'd run this against millions of paths and use libraries like *
 ### What "Mobile MMP" (Branch / AppsFlyer / Adjust) does
 
 Mobile measurement partners (MMPs) handle **postback** attribution for mobile apps:
+
 - When a user installs your app from an ad, the ad network sends a "postback" to the MMP.
 - The MMP de-duplicates across networks (so Meta and TikTok don't both claim the same install).
 - On iOS, the MMP uses **SKAdNetwork** (Apple's privacy-preserving install attribution) — covered in Module 9.
@@ -382,6 +386,7 @@ INCREMENTALITY  ←──┼──→  MMM (Marketing Mix Modeling)
 ## ✅ Module 4 Summary
 
 You now know:
+
 - 🎯 Six attribution models + when each is appropriate.
 - 🧮 Three mathematical approaches to DDA — Shapley, Markov, ML/SHAP.
 - 🤖 GA4's DDA implementation + its 400-conversion threshold.

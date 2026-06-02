@@ -127,6 +127,7 @@ Unit files: `/etc/systemd/system/` (admin) · `/usr/lib/systemd/system/` (packag
 ## 🏆 Exam Power Phrases
 
 ✅ Often **right**:
+
 - "Check time sync first" (Kerberos)
 - "Use Server Core for production"
 - "Use RD Gateway + MFA instead of exposing 3389"
@@ -135,6 +136,7 @@ Unit files: `/etc/systemd/system/` (admin) · `/usr/lib/systemd/system/` (packag
 - "Tiered administration (Tier 0/1/2)"
 
 ❌ Often **wrong**:
+
 - "Telnet"
 - "Expose 3389 to internet"
 - "Share Domain Admin"
@@ -158,6 +160,7 @@ Unit files: `/etc/systemd/system/` (admin) · `/usr/lib/systemd/system/` (packag
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. systemctl one-liner to enable nginx + start it now? ___
 2. The two AD-critical infrastructure dependencies? ___
 3. WinRM HTTPS port? ___

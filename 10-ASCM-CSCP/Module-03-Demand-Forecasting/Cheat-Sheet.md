@@ -132,6 +132,7 @@ Forecast 100, Actual 120, α = 0.3
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. ES formula ___
 2. Three error metrics formulas ___
 3. CPFR's 4 activities ___

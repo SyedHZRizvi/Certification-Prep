@@ -712,6 +712,7 @@
 ## 🎯 BEFORE THE EXAM
 
 You should be able to instantly answer:
+
 - The 4 channel buckets (POESM) + funnel frameworks
 - The 8 marketing-math acronyms (CAC, LTV, ROAS, ROI, AOV, CPA, CPC, CPM)
 - The 5 foundation-model families

@@ -88,6 +88,7 @@ A **load profile** is a bar chart of required capacity vs available capacity, by
 A simplified BOM that lists only the *critical* work centers and how many standard hours each unit of finished good consumes.
 
 **Example.** Bike A has a Bill of Resources:
+
 - Welding: 0.5 hr/bike
 - Painting: 0.3 hr/bike
 - Assembly: 0.8 hr/bike
@@ -127,6 +128,7 @@ Uses the *full* routing for every component, including setup time, run time per 
 ### TOC Performance Measures
 
 Goldratt redefined performance metrics for the constraint world:
+
 - **Throughput (T)** = sales revenue − raw material cost (NOT volume — it's $)
 - **Inventory (I)** = all money invested in things the system intends to sell
 - **Operating expense (OE)** = money spent to turn inventory into throughput
@@ -149,6 +151,7 @@ Goldratt redefined performance metrics for the constraint world:
 ## 🌊 Input/Output Control
 
 Used at the PAC layer to verify that:
+
 - **Inputs** (work released to a work center) match planned input
 - **Outputs** (completed work) match planned output
 
@@ -200,6 +203,7 @@ If MPS demand requires 220 standard hours that week, we have a **gap of 21 hours
 ## 🎛️ Capacity vs Demand — Resolving Mismatches
 
 When required capacity exceeds available:
+
 - Overtime
 - Second shift
 - Outsource / subcontract
@@ -209,6 +213,7 @@ When required capacity exceeds available:
 - Adjust the MPS (push out)
 
 When available exceeds required:
+
 - Reduce overtime
 - Inventory build (level strategy)
 - New product introduction / training
@@ -275,6 +280,7 @@ When available exceeds required:
 **Decision.** Tesla committed to extreme automation upfront — the "alien dreadnought" Musk described — including robotic battery-module assembly and a fully automated final-assembly line. The capacity hierarchy was, per ASCM canonical form: Resource Planning had built capacity assuming a smooth ramp; RCCP-equivalent rough-cut analysis treated automation throughput as design-capacity from day one rather than demonstrated capacity. The bottleneck identification process was *intended* to follow TOC discipline but in practice was overridden by program timing.
 
 **Outcome.** Tesla missed the Q4 2017 target by an order of magnitude (~2,400/quarter vs the 5,000/week target). Musk publicly named the period **"production hell."** Through 2018, Tesla:
+
 1. **Re-baselined to demonstrated capacity.** The Sparks battery-module line was found to be the true bottleneck. Initial automation was failing at unacceptable rates. Tesla *removed* several automation steps and re-introduced manual operations — explicitly the **Exploit** step (Step 2) of TOC: get the most out of what the bottleneck can actually do, even if it's "less elegant."
 2. **Built a *literal* second-line in a tent.** Tesla erected General Assembly Line #3 ("GA3") under a tent in the Fremont parking lot in summer 2018 — adding manual final-assembly capacity to **Elevate** (TOC Step 4) the bottleneck. By end-June 2018 Tesla had hit 5,000 Model 3s in a single week (announced July 1, 2018).
 3. **Migrated the next constraint identification cycle.** Once final assembly was elevated, the constraint shifted upstream to battery pack assembly, then to component supply, then to logistics — the classic TOC Step-5 "repeat from the beginning" cycle.
@@ -293,6 +299,7 @@ By 2024, Tesla was producing ~1.8M vehicles per year globally (Fremont, Shanghai
 ## ✅ Module 5 Summary
 
 You now know:
+
 - 🏗️ The four-layer capacity hierarchy (RRP → RCCP → CRP → I/O) and which planning layer each supports
 - 📏 Capacity definitions: design, effective, demonstrated, rated — and the utilization/efficiency formulas
 - ⚙️ The three capacity strategies (Lead, Lag, Match) and when each fits

@@ -127,6 +127,7 @@
 ## 🏆 Exam Power Phrases
 
 Often **right**:
+
 - ✅ "Baseline first, then troubleshoot"
 - ✅ "SNMPv3 for security"
 - ✅ "NetFlow for bandwidth top-talkers"
@@ -134,6 +135,7 @@ Often **right**:
 - ✅ "QoS to fix jitter for VoIP"
 
 Often **wrong**:
+
 - ❌ "ping is the definitive reachability test" (ICMP often blocked)
 - ❌ "SNMPv1 is fine internally"
 - ❌ "NetFlow gives full packet payload"
@@ -159,6 +161,7 @@ Often **wrong**:
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. SNMP port(s) and which version is secure? ___
 2. Syslog severity 0 vs 7? ___
 3. What does NetFlow record? ___

@@ -14,6 +14,7 @@
 
 ### 🛡️ Scrum Master — "How It's Working"
 Serves THREE groups:
+
 1. **Scrum Team** — coaches, removes impediments
 2. **Product Owner** — backlog techniques
 3. **Organization** — Scrum adoption
@@ -73,12 +74,14 @@ Serves THREE groups:
 ## 🎯 Exam Power Phrases
 
 ✅ Right answers often contain:
+
 - "The Product Owner decides..."
 - "The Developers self-organize..."
 - "The Scrum Master coaches..."
 - "Refer the request to the Product Owner..."
 
 ❌ Wrong answers often contain:
+
 - "The PM assigns..."
 - "The team lead decides..."
 - "Stakeholders prioritize..."

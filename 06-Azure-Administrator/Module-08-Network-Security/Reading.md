@@ -60,6 +60,7 @@ A **stateful** layer-4 firewall that filters traffic based on **5-tuple** (sourc
 ### Effective security rules
 
 When a NIC's subnet has an NSG **AND** the NIC itself has an NSG, both apply:
+
 - **Inbound** evaluation order: subnet-level NSG → NIC-level NSG (both must allow)
 - **Outbound** evaluation order: NIC-level NSG → subnet-level NSG (both must allow)
 
@@ -231,6 +232,7 @@ A **layer-7** (HTTP/HTTPS) load balancer with WAF, URL-based routing, SSL termin
 | **WAF v2** | Standard v2 + Web Application Firewall (OWASP rule sets) |
 
 Features that aren't in plain Load Balancer:
+
 - **URL path-based routing** (`/api/*` → backend pool A, `/images/*` → backend pool B)
 - **Multi-site routing** (one AGW serving multiple host headers)
 - **End-to-end TLS** or TLS termination at the gateway
@@ -295,6 +297,7 @@ az network application-gateway create \
 ## 🌐 Public DNS Zones (already covered in M7 — bonus security angle)
 
 DNSSEC and Azure Public DNS now in preview/GA depending on region. For most AZ-104 questions, just remember:
+
 - Public DNS zone = `contoso.com` records resolvable from the internet
 - Private DNS zone = `*.privatelink.blob.core.windows.net` etc. internal-only
 
@@ -382,6 +385,7 @@ DNSSEC and Azure Public DNS now in preview/GA depending on region. For most AZ-1
 ## ✅ Module 8 Summary
 
 You now know:
+
 - 🛡️ NSG mechanics: stateful, priority order, default rules, subnet vs NIC
 - 🏷️ ASGs for IP-free segmentation within a VNet
 - 🔥 Azure Firewall SKUs + the DNAT/Network/Application rule order
@@ -403,10 +407,12 @@ You now know:
 **Situation.** MOVEit Transfer is a managed file-transfer (MFT) product made by Progress Software, deployed by thousands of enterprises for B2B file exchange (healthcare records, payroll, government data). On May 27, 2023, a previously-unknown SQL injection vulnerability (**CVE-2023-34362**) was actively exploited by the **Cl0p ransomware group**. By the time Progress shipped a patch on May 31, hundreds of organizations had been compromised. Final tally (per *Emsisoft, MOVEit Hack Victim Tracker*, December 2023): **~2,773 confirmed organizations breached**, including the U.S. Department of Energy, Shell, BBC, British Airways, the State of Maine, the Government of Nova Scotia, IBM, and PwC. **~95 million individuals' data** was exfiltrated. Direct losses, settlements, and remediation costs are estimated north of **$15 billion** industry-wide (*IT Governance Limited*, breach impact analysis, 2024).
 
 **Decision.** The MOVEit Transfer software itself was the vulnerability, but the *blast radius* was determined by how victim organizations had networked it. Two architecture patterns separated organizations that lost millions of records from those that did not:
+
 1. **Public exposure**: Organizations that deployed MOVEit with a *public IP*, no WAF, and no upstream proxy — typical "stand it up in the DMZ" architecture — had the vulnerability reachable from the open internet. The attacker scanned, exploited, and exfiltrated in hours.
 2. **No L7 anomaly detection on egress**: Even after the SQL injection succeeded, exfil required the MOVEit host to upload gigabytes of data outbound. Organizations without **NSG egress restrictions**, **Azure Firewall with FQDN-based allow-listing**, or **network anomaly detection** had no choke point. The data left through a default `0.0.0.0/0 → Internet` egress path.
 
 If MOVEit had been deployed on Azure with this module's recommended controls, the attack would have been substantially mitigated:
+
 - **Azure Front Door Premium with WAF policy in Prevention mode** would have blocked the SQL-injection POST against managed-rule "OWASP CRS 3.2: SQL Injection / SQLI" — even though the CVE was novel, the *attack pattern* (`'; DECLARE @s VARCHAR(8000) ...`) matched a CRS rule that's been in place since 2017.
 - **Private Link origin** from Front Door to the MOVEit App Service / VM would have eliminated the public IP exposure. Even if WAF was bypassed, the attacker would need to compromise something inside the VNet first.
 - **Azure Firewall Premium with IDPS** would have alerted on the post-exploit C2 traffic (Cl0p's beacons hit known-bad IPs catalogued in Microsoft Threat Intelligence). IDPS rules block-on-known-malicious automatically.
@@ -415,6 +421,7 @@ If MOVEit had been deployed on Azure with this module's recommended controls, th
 **Outcome.** As of 2024, multiple MOVEit victims (the BBC, Shell, BMO, Schneider Electric) publicly disclosed they were migrating to either Microsoft-managed Secure File Exchange or to architectures where MFT runs behind Azure Front Door + Private Link + WAF. The CISO of one Fortune 500 victim told *Wall Street Journal* (2023-09-15): "Our root cause wasn't that we ran MOVEit. It was that we ran MOVEit with a public IP."
 
 **Lesson for the exam / for practitioners.** AZ-104 won't name MOVEit. It will name the *pattern*. Every "publish a third-party app to the internet" question is testing whether you reflexively answer **Front Door Premium with WAF + Private Link origin + Azure Firewall egress + NSG defense-in-depth**. The "Big Comparison" table in this module is essentially the multiple-choice form of the MOVEit lesson:
+
 - *L4 distribution in a region* → Standard LB.
 - *L7 with WAF in a region* → App Gateway WAF v2.
 - *Global L7 + WAF + CDN* → Front Door.

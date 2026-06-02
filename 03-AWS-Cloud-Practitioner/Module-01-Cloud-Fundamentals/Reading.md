@@ -49,6 +49,7 @@ AWS officially defines cloud computing as:
 🔥 **MEMORIZE THIS.** That definition shows up on the exam almost verbatim.
 
 The three pieces:
+
 1. **On-demand** — get what you want, when you want it, in seconds
 2. **Over the internet** — no need to buy or rack hardware yourself
 3. **Pay-as-you-go** — no upfront cost; pay only for what you use
@@ -120,6 +121,7 @@ This is the single most-tested topic in Module 1. AWS organizes its physical wor
 ### 1️⃣ Regions
 
 A **Region** is a geographic area (city-ish) with multiple datacenters. Examples:
+
 - `us-east-1` (N. Virginia) — the OLDEST and CHEAPEST region; most new services launch here first
 - `us-west-2` (Oregon)
 - `eu-west-1` (Ireland)
@@ -127,6 +129,7 @@ A **Region** is a geographic area (city-ish) with multiple datacenters. Examples
 - `sa-east-1` (São Paulo)
 
 As of 2026, AWS has **30+ Regions** worldwide. You pick a region based on:
+
 1. **Latency** — closer to users = faster
 2. **Compliance / data sovereignty** — EU data must stay in EU regions (GDPR)
 3. **Service availability** — not every service is in every region (e.g. new GenAI services often launch in `us-east-1` first)
@@ -149,6 +152,7 @@ An **AZ** is one or more discrete datacenters within a Region, each with indepen
 **Edge Locations** are smaller AWS sites in **400+ cities** worldwide. They cache content close to end-users for low latency.
 
 Used primarily by:
+
 - **CloudFront** (CDN)
 - **Route 53** (DNS resolution)
 - **AWS Global Accelerator**
@@ -279,6 +283,7 @@ AWS gives newcomers a free tier — and the exam tests that you know the **three
 ## ✅ Module 1 Summary
 
 You now know:
+
 - ☁️ The official AWS definition of cloud computing (per AWS, derived from NIST SP 800-145)
 - 💰 The 6 benefits of cloud (Variable, Scale, Capacity, Speed, Datacenters, Global)
 - 🏗️ IaaS vs PaaS vs SaaS — and who manages what (NIST taxonomy)

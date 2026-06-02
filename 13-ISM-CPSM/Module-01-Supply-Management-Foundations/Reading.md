@@ -270,6 +270,7 @@ A classic strategic decision: produce in-house or source externally?
 **Situation.** On 23 March 2021, the 400-metre container ship *Ever Given* (Evergreen Marine) wedged itself across the Suez Canal, blocking roughly 12% of global trade for six days. A.P. Moller-Maersk — the world's largest container shipping line at the time and a Tier-1 logistics partner to thousands of multinationals — had hundreds of vessels routing through Suez. Lloyd's List estimated **$9.6 billion of trade per day** was held up, and analysts later quantified the global ripple at over **$400 million per day** in lost productivity for downstream supply chains.
 
 **Decision.** Maersk's supply management leadership made a chain of strategic calls in real time:
+
 1. On day 2, it began re-routing 30+ container ships around the **Cape of Good Hope** (adding 7–10 days and ~$300K extra fuel per vessel) rather than wait.
 2. It published live customer dashboards showing every container's ETA delta — turning a black-box disruption into a transparent one.
 3. It accelerated its long-stated strategy to **diversify away from a single-canal-dependency**: by 2024, Maersk had committed €4B+ to inland rail through Türkiye, expanded air-freight capacity, and integrated logistics (acquisitions of Pilot Freight Services 2022, LF Logistics 2022) to create true ocean-air-rail-truck modal redundancy.
@@ -336,6 +337,7 @@ Spend 10–15 minutes on each. There are no single correct answers; defending yo
 ## ✅ Module 1 Summary
 
 You now know:
+
 - 🎯 Why supply management is strategic, not transactional
 - 🏛️ Four organizational models (centralized / decentralized / hybrid / CoE) and when to use each
 - 📈 The 5-stage maturity model

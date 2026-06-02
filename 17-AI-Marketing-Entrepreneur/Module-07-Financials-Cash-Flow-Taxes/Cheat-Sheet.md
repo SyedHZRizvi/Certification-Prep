@@ -137,6 +137,7 @@ W1   |     $X     |   $X    |    $X    |   $X
 ## 🏆 Exam Power Phrases
 
 When you see these in answers, they're often correct:
+
 - ✅ "Separate personal + business banking..."
 - ✅ "Transfer the tax bucket immediately..."
 - ✅ "Quarterly estimates required..."
@@ -144,6 +145,7 @@ When you see these in answers, they're often correct:
 - ✅ "Track gross + operating margin..."
 
 When you see these, they're often **wrong**:
+
 - ❌ "Skip quarterly taxes..."
 - ❌ "S-corp with $0 salary..."
 - ❌ "Aggressive personal deductions..."
@@ -166,6 +168,7 @@ When you see these, they're often **wrong**:
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. The 4-account separation? ___
 2. The 30-30-40 rule? ___
 3. US quarterly deadlines? ___

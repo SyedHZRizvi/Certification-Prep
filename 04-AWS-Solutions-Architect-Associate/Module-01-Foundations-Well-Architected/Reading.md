@@ -68,6 +68,7 @@ AWS's physical infrastructure is laid out in a strict hierarchy. **Memorize it c
 This is the single most quoted document on the exam. AWS literally writes questions like *"Which pillar of the Well-Architected Framework is most directly improved by enabling Multi-AZ on RDS?"*
 
 The framework's intellectual lineage matters because the exam quotes it almost verbatim:
+
 - **AWS Well-Architected Framework** (AWS, published 2015 as the original 5-pillar whitepaper by Philip Fitzsimons and team; **Sustainability pillar added at re:Invent 2021**; framework reaffirmed and last broadly revised in 2023). Free PDF on the AWS docs site.
 - The framework draws on **classical reliability engineering** — Patterson, Gibson & Katz's *RAID* paper (*ACM SIGMOD 1988*) for the redundancy idea; Brewer's **CAP theorem** (Brewer, ACM PODC keynote, 2000; formal proof by Gilbert & Lynch, *ACM SIGACT News* 2002) for the consistency/availability/partition trade-off baked into the Reliability pillar.
 - It is also the spine of the **AWS Builders' Library** (a free curated set of essays by AWS principal engineers — see the `aws.amazon.com/builders-library` URL set), which exam questions occasionally quote.
@@ -293,6 +294,7 @@ aws ec2 run-instances \
 **Situation.** In August 2008, Netflix suffered a 3-day database corruption outage in its own data center. DVD shipments halted; engineering scrambled. The post-mortem (recounted by VP Yury Izrailevsky in the AWS Blog post *Completing the Netflix Cloud Migration*, February 2016) concluded that Netflix's monolithic Oracle database on co-located hardware had become an existential single point of failure. With streaming growing 1000× in projected demand, building more data centers was untenable.
 
 **Decision.** Netflix made a public commitment to migrate everything to AWS — *while* streaming traffic doubled every year. The principles set by then-Cloud-Architect Adrian Cockcroft (later AWS VP, retired 2022) defined the playbook:
+
 - **Multi-AZ by default**, **multi-region for resilience** — every service deployed across at least 3 AZs in `us-east-1`, with `eu-west-1` and `us-west-2` for regional failover
 - **No shared state** between regions; each region is independently survivable
 - **Cattle, not pets** — instances are disposable, rebuilt by Auto Scaling, never patched in place
@@ -302,6 +304,7 @@ aws ec2 run-instances \
 **Outcome.** Migration completed January 2016 — seven years and four months after starting. By 2016 Netflix served 75M subscribers in 190 countries entirely on AWS with **zero owned data centers** for streaming. During the 2015–2016 ramp, Netflix consumed roughly 1/3 of all peak internet bandwidth in North America. Cockcroft's 2014 re:Invent talk *Beyond the Goat Rodeo* (ARC203) is one of the most-watched AWS conference talks of all time and is required viewing for any aspiring solutions architect.
 
 **Lesson for the exam / for practitioners.** Netflix's migration *is* the Well-Architected Framework expressed at planet scale. Every pillar shows up:
+
 - **Reliability** — Multi-AZ + multi-region + chaos engineering
 - **Performance Efficiency** — Open Connect (Netflix's CDN) keeps origin servers cool
 - **Cost Optimization** — Reserved Instances for steady streaming, Spot for encoding, eventual move to Graviton ARM for ~20% efficiency gain
@@ -350,6 +353,7 @@ When the SAA exam asks "which is the BEST design for a global streaming service 
 ## ✅ Module 1 Summary
 
 You now know:
+
 - 🌍 The AWS global infrastructure hierarchy (Region → AZ → Data Center → Edge)
 - 🏛️ The 6 pillars of the Well-Architected Framework and the keywords each one signals
 - 🤝 Where the Shared Responsibility line is for IaaS vs PaaS vs serverless

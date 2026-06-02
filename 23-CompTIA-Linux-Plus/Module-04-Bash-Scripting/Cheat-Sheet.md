@@ -231,6 +231,7 @@ m h dom mon dow  command
 ```
 
 Locations:
+
 - `crontab -e` per-user
 - `/etc/crontab` system (extra USER field)
 - `/etc/cron.d/*` package drop-ins
@@ -269,6 +270,7 @@ systemctl list-timers
 ## 🏆 Exam Power Phrases
 
 When you see these in answers, they're often **right**:
+
 - ✅ "Add `set -euo pipefail`"
 - ✅ "Quote variables: `\"$var\"`"
 - ✅ "Use `while IFS= read -r line`"
@@ -276,6 +278,7 @@ When you see these in answers, they're often **right**:
 - ✅ "Use systemd timer with `Persistent=true`"
 
 When you see these, they're often **wrong**:
+
 - ❌ "`for x in $(cat file)`"
 - ❌ "`[ ]` and `[[ ]]` are identical"
 - ❌ "`2>&1 > file`"
@@ -301,6 +304,7 @@ When you see these, they're often **wrong**:
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. The 3-flag defensive `set` header? ___
 2. Difference between `"$@"` and `"$*"`? ___
 3. Correct way to read a file line-by-line in bash? ___

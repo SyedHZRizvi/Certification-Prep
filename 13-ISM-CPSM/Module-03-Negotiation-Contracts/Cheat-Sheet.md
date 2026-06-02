@@ -94,6 +94,7 @@ SOW · Pricing/Payment · Delivery/Incoterms · Quality/Acceptance · Warranties
 ## 🌪️ Force Majeure
 
 Excuses performance during **unforeseeable, unavoidable** events (war, disaster, pandemic). Must be:
+
 - Listed in clause
 - Genuinely unforeseen
 - Reasonable mitigation attempted

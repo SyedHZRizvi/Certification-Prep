@@ -309,6 +309,7 @@ Forces shaping today's supply chains (the exam will frame questions around these
 ## ✅ Module 1 Summary
 
 You now know:
+
 - 🎯 The three flows of any supply chain (material, information, cash)
 - 🧩 SCOR 13.0's six top-level processes and its four levels of detail
 - 🏆 Hau Lee's strategy matrix and Fisher's product-SC matching

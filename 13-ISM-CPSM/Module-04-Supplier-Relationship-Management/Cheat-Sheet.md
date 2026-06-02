@@ -73,6 +73,7 @@
 ## 🛠️ Supplier Development Triggers
 
 INVEST when:
+
 - Strategic tier
 - High switching cost
 - Capability gap is fixable
@@ -80,6 +81,7 @@ INVEST when:
 - Positive ROI
 
 DON'T invest when:
+
 - Tier-3/4
 - Fundamental tech mismatch
 - Supplier financially fragile

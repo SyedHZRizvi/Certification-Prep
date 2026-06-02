@@ -132,6 +132,7 @@ Modern preferred: LangGraph's `MemorySaver` / `PostgresSaver`.
 ## 🏆 Exam Power Phrases
 
 ✅ Often **right**:
+
 - "LCEL for linear, LangGraph for loops"
 - "LlamaIndex for index variety / data ingestion"
 - "Tool calling is the universal pattern across providers"
@@ -139,6 +140,7 @@ Modern preferred: LangGraph's `MemorySaver` / `PostgresSaver`.
 - "Use both frameworks where each is strongest"
 
 ❌ Often **wrong**:
+
 - "LangChain is deprecated"
 - "LlamaIndex doesn't support agents"
 - "LangGraph is just LCEL with cycles" (it's also state + persistence + HITL)

@@ -415,6 +415,7 @@ D. Wouldn't yet
 ## 🔍 Review Process
 
 For each C or D answer:
+
 1. Identify the module that owns this skill
 2. Re-read that module's Cheat-Sheet
 3. Schedule the fix in your calendar
@@ -539,12 +540,14 @@ For each C or D answer:
 **Generalization for unscored questions.**
 
 The full 60-question exam is a comprehensive completeness check. The grading rubric stays the same throughout:
+
 - **A** = shipped at the bar
 - **B** = shipped with a corner cut
 - **C** = drafted or partially done
 - **D** = nothing exists
 
 The most common gap patterns are:
+
 - **"Built it but didn't publish"** (Q3, Q9, Q11, Q13, Q17, Q42) — fix hosting + public URLs
 - **"Wrote it but didn't share"** (Q5, Q10, Q24, Q30, Q42) — fix LinkedIn distribution
 - **"Sent some messages but didn't follow up"** (Q7, Q8, Q19, Q50) — set follow-up cadence in calendar

@@ -138,12 +138,14 @@ TLC = Product + Freight + Duties/Taxes + Insurance +
 ## 🏆 Exam Power Phrases
 
 Usually CORRECT:
+
 - ✅ "Choose mode on total landed cost, not freight alone"
 - ✅ "Intermodal for long-haul cost-savings (>700 mi)"
 - ✅ "Air for high-value/urgent/perishable"
 - ✅ "Pipeline most reliable; ocean cheapest per ton-mile"
 
 Usually WRONG:
+
 - ❌ "FTL = LTL"
 - ❌ "Intermodal = multimodal"
 - ❌ "Air is always uneconomic"

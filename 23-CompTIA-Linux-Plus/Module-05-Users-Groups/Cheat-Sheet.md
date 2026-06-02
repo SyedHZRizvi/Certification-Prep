@@ -194,6 +194,7 @@ journalctl _COMM=sudo                      # all sudo invocations
 ## 🏆 Exam Power Phrases
 
 When you see these in answers, they're often **right**:
+
 - ✅ "Use `visudo` to edit /etc/sudoers"
 - ✅ "Add `-a` when modifying group membership"
 - ✅ "Set shell to `/sbin/nologin` for service accounts"
@@ -201,6 +202,7 @@ When you see these in answers, they're often **right**:
 - ✅ "Use `/etc/sudoers.d/` for modular rules"
 
 When you see these, they're often **wrong**:
+
 - ❌ "Edit /etc/sudoers with vim"
 - ❌ "`usermod -G` adds to a group" (without `-a`)
 - ❌ "/etc/passwd contains the password hash"
@@ -226,6 +228,7 @@ When you see these, they're often **wrong**:
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. Why `visudo` and not `vim /etc/sudoers`? ___
 2. Difference between `usermod -G` and `usermod -aG`? ___
 3. Where do password hashes actually live, and who can read that file? ___

@@ -57,6 +57,7 @@ IntuneWinAppUtil.exe -c "C:\Source\NorthwindCAD" -s "setup.exe" -o "C:\Output"
 ```
 
 This wraps everything in the source folder into a single `setup.intunewin` file in the output folder. The tool:
+
 - Bundles all files in the source folder
 - Encrypts the package
 - Generates metadata (size, source path, version)
@@ -80,6 +81,7 @@ In Intune admin center → **Apps → Add → Windows app (Win32)** → upload `
 ## 🔍 Detection Rules — The Single Most Common Failure
 
 Detection rules tell Intune **whether the app is already installed**. Without a working detection rule, Intune will:
+
 - Re-install on every cycle (annoying)
 - Report "Failed" even though the install succeeded
 - Get stuck in "Installing" status forever
@@ -258,6 +260,7 @@ ACPs push per-app settings to managed apps. Two flavors:
 | **Managed apps** (MAM channel) | App is APP-protected — settings push via APP |
 
 Common settings pushed via ACP:
+
 - Default mailbox server URL (Outlook Mobile)
 - Default identity / sign-in hint
 - Branding (logos, support URLs)
@@ -272,6 +275,7 @@ Common settings pushed via ACP:
 ## 📚 App Categories
 
 App categories are labels you create to organize the Company Portal app catalog. Examples:
+
 - "Productivity"
 - "Engineering Tools"
 - "HR"
@@ -344,6 +348,7 @@ The correct sequence:
 ## ✅ Module 5 Summary
 
 You now know:
+
 - 📦 The 5 Windows app types and when each fits
 - 🔧 How to wrap an installer with IntuneWinAppUtil and the `.intunewin` flow
 - 🔍 The 4 detection rule types and the script pattern

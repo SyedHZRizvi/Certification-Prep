@@ -637,6 +637,7 @@ D. Bedrock Provisioned Throughput
 ## 🔍 Review Process
 
 For EACH wrong answer:
+
 1. Find which module covered it (the question stem hints).
 2. Re-read that module's Reading.md *and* Cheat-Sheet.md.
 3. Add an Anki card for the concept.

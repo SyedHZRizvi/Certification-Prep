@@ -336,6 +336,7 @@ az monitor autoscale rule create \
 ## ✅ Module 5 Summary
 
 You now know:
+
 - 🧮 The 8 VM family prefixes and what each is optimized for
 - 🏗️ AS vs AZ — what they protect against, when to use which
 - 💾 The 5 managed-disk SKUs and where Premium SSD v2 shines
@@ -360,6 +361,7 @@ You now know:
 **Situation.** Boeing's commercial aviation business runs one of the most sensitive engineering compute workloads on Earth: CATIA, NX, ANSYS, finite-element analysis, and 787/777X CFD simulations involving designs subject to U.S. **ITAR** (International Traffic in Arms Regulations) and **EAR** (Export Administration Regulations) export controls. In addition, Boeing Defense, Space & Security runs workloads classified up to *Secret* in U.S. and partner-nation networks. Boeing announced a strategic partnership with Microsoft Azure at Microsoft Inspire 2018; the partnership was extended in 2021 to cover production engineering workloads and refreshed again in 2024 for generative-AI engineering copilot pilots (Boeing-Microsoft *Building the Connected Aerospace Enterprise* press releases, 2018-07; 2021-04; 2024-04).
 
 **Decision.** Boeing's Azure footprint reflects a textbook regulated-workload architecture. Three decisions are directly testable on AZ-104:
+
 1. **Sovereignty via region selection + Azure Policy.** Production engineering workloads run in **Azure Government** (`usgovvirginia`, `usgovtexas`) for ITAR-controlled data; commercial workloads run in `eastus`, `eastus2`, `westus3` per the Microsoft Cloud Adoption Framework "Sovereign Landing Zone" pattern (Microsoft, 2023; refreshed 2025). An **Allowed Locations** policy at the management-group root prevents accidental deployment outside the allowed region list.
 2. **Compute sizing for engineering simulation.** Boeing uses **H-series VMs (HBv4, HC, HX)** for CFD — InfiniBand-fabric-attached HPC SKUs that publish 200 Gbps low-latency interconnect. For workstation interactive use, **NV-series GPU VMs** (NVv4 with AMD MI-series, NCa-series with NVIDIA A100/H100) running Citrix or Azure Virtual Desktop replace physical workstations for engineers who travel. The exam tests these by family letter — *H = HPC, N = GPU, M = memory monster, D = general* — not by exact SKU.
 3. **Image management at scale.** Boeing publishes a hardened "golden image" weekly via **Azure Compute Gallery** with replication to 4 regions × 3 cached copies. Every engineering VM (~tens of thousands of them) is rebuilt from this image; Custom Script Extension + the DSC extension apply per-team licensing and configuration. No engineer ever logs into a VM with admin rights — RBAC is `Virtual Machine User Login` for SSH/RDP only.
@@ -369,6 +371,7 @@ Combined with **Azure Disk Encryption (BitLocker)** + **encryption at host** + C
 **Outcome.** Boeing has not published cost numbers, but Microsoft's Inspire 2021 keynote stated Boeing reduced engineering-simulation queue times by **40%** versus on-prem HPC clusters, primarily because Azure HBv3/v4 capacity is elastic — peak design-review weeks can burst to 4× steady-state without waiting on a procurement cycle. As of the 2024 partnership refresh, Boeing is piloting Microsoft Copilot for Engineering on the same Azure footprint, with Azure OpenAI Service in the *Azure Government Top Secret* environment.
 
 **Lesson for the exam / for practitioners.** This case wraps the entire AZ-104 compute domain into one scenario:
+
 - *Right VM family for the workload?* H for CFD, N for GPU rendering, D for the build agents. Memorize the prefixes.
 - *Right disk for the workload?* Premium SSD v2 for general data disks; Ultra Disk for the SAP HANA database that Boeing also runs on Azure; Premium SSD for OS disks; **NOT** Premium SSD v2 or Ultra as OS disks.
 - *Right availability model?* AS for legacy single-DC apps; AZ for zone redundancy; **VMSS Flexible** with zone spread for stateless workloads.

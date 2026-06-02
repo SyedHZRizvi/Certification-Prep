@@ -136,6 +136,7 @@ Below is a comprehensive map of every category you'll likely need. Pick one tool
 ### Small Team (5–25 ppl; target spend: $500–$2,000/month)
 
 Add to the Solo stack:
+
 - **HubSpot Marketing Hub** (or Klaviyo if e-comm)
 - **Hootsuite** or **Sprout Social**
 - **Make.com** for more complex automation
@@ -146,6 +147,7 @@ Add to the Solo stack:
 ### Mid-Market (25–250 ppl; target spend: $5K–$20K/month)
 
 Add:
+
 - **Klaviyo / HubSpot Pro / Iterable** (depending on vertical)
 - **Sprinklr** or **Brandwatch** for listening
 - **CreatorIQ** for influencer
@@ -181,6 +183,7 @@ After 6 months, you'll have 50–200 battle-tested prompts. This is your unfair 
 ### Part 2: The Asset Library
 
 A parallel library of:
+
 - **Brand voice docs** (tone, vocabulary, what-to-avoid)
 - **Customer personas + JTBD**
 - **Customer interview notes**
@@ -352,6 +355,7 @@ Stripe is widely studied as a paragon of modern marketing operations. Their team
 - Custom-built tooling on top of all of the above
 
 What it teaches:
+
 1. **The stack scales with the company.** Don't try to start at Stripe's level.
 2. **Notion is the connective tissue** even at enterprise scale.
 3. **A real CDP (Segment) is the difference** between siloed channels and unified intelligence.
@@ -414,6 +418,7 @@ The lesson scales down: **your stack is only as good as your documentation.** Sp
 ## ✅ Module 10 Summary
 
 You now know:
+
 - 🧰 The 6-tier 2026 AI marketer stack map
 - 🛒 Sample stacks by company stage (solo → enterprise)
 - 🧠 How to build a prompt library + asset library (the "second brain")

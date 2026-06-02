@@ -146,6 +146,7 @@
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. Six Azure compute services + one pick rule each? ___
 2. VPN vs ExpressRoute? ___
 3. L4 vs L7 LB Azure names? ___

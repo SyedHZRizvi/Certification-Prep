@@ -264,6 +264,7 @@ A practical rule the exam hints at: **start small and cheap, escalate to larger 
 **Situation.** Goldman Sachs employs ~46,000 staff and runs ~$30B/year in technology spend. Through 2023, the firm — like most Wall Street banks — had imposed broad restrictions on public ChatGPT use, citing client-data confidentiality, regulatory exposure (SEC, FINRA, MAS, FCA), and the risk of accidental disclosure. But internal demand was overwhelming: per Goldman's CIO Marco Argenti (speaking at AWS re:Invent 2024 and in subsequent interviews), the firm's engineers and bankers were running shadow experiments, and the *real* risk was not "AI" — it was AI used *outside* of the firm's controls.
 
 **Decision.** Goldman Sachs publicly committed to **Amazon Bedrock as its primary enterprise generative-AI platform** at re:Invent 2024 (Andy Jassy keynote + Goldman session). The architecture, per Goldman engineering and the joint AWS case-study materials:
+
 - **Anthropic Claude on Bedrock** as the workhorse model — chosen for reasoning quality on financial-document tasks and for the 200K-token context window
 - **VPC Interface Endpoints (PrivateLink)** for Bedrock so all traffic stayed on the AWS backbone, never the public internet
 - **Resource-level IAM** restricting which model ARNs each business unit could invoke (investment banking gets different access from consumer banking)
@@ -273,12 +274,14 @@ A practical rule the exam hints at: **start small and cheap, escalate to larger 
 - A "GS AI Platform" internal abstraction so individual teams build domain apps (research summarization, legal-document QA, code assistance) without re-implementing the security plumbing each time
 
 **Outcome.** Public statements (2024–2025) cite:
+
 - **Goldman has on the order of 10,000+ employees using internal Bedrock-powered tools daily** by late 2024
 - A pilot of an "Engineer Assistant" (analogous to Amazon Q Developer) was credited with productivity gains and a meaningful reduction in PR cycle time, with the firm planning broader rollout in 2025
 - Time to ship a *new internal AI use case* compressed from "quarters" to "weeks" because the security, IAM, encryption, and logging building blocks already existed
 - Regulators were briefed in advance; no enforcement action followed the rollout
 
 **Lesson for the exam / for practitioners.** Three AIF-C01 talking points anchor here:
+
 1. **Bedrock is the on-ramp for "regulated industry + frontier model."** When a scenario describes a bank, insurer, hospital, or government agency wanting to use Claude/Llama/Mistral *with* compliance controls, the answer is almost always **Bedrock + PrivateLink + Guardrails + invocation logging + customer-managed KMS**. Goldman is the canonical reference for "we need Claude inside our security perimeter."
 2. **The model is one of many choices — the *platform* is the durable bet.** Goldman explicitly chose Bedrock partly because they expected to swap model providers (Claude today, perhaps Llama or Nova tomorrow) without rewriting their security perimeter. The exam tests this pattern as "switching foundation models requires changing one API parameter" — that's Bedrock's structural advantage over multi-vendor direct API integrations.
 3. **IAM resource-level restrictions are how you constrain spending and exposure across business units.** "Investment banking can call Claude Opus; consumer banking can only call Haiku" is a one-line IAM policy on the Bedrock model ARN. The exam loves this pattern — it's Q23 of Module 4 in concept form.
@@ -293,6 +296,7 @@ A practical rule the exam hints at: **start small and cheap, escalate to larger 
 ## ✅ Module 4 Summary
 
 You now know:
+
 - 🏰 What Amazon Bedrock is and which providers / model families live on it
 - 🧠 The difference between Amazon Q Developer and Amazon Q Business
 - 🎈 What PartyRock is for (and what it's *not* for)

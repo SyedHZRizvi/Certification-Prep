@@ -116,6 +116,7 @@ VPC ─→ App ─→ PrivateLink Bedrock endpoint
 ## 🏆 Exam Power Phrases
 
 Usually right:
+
 - ✅ "PrivateLink / VPC endpoint" for private Bedrock traffic
 - ✅ "Resource-level IAM" to restrict model invocation
 - ✅ "Customer-managed KMS key" for sensitive custom models
@@ -125,6 +126,7 @@ Usually right:
 - ✅ "Model Registry + approval workflow" for governance
 
 Usually wrong:
+
 - ❌ "CloudTrail captures full prompts"
 - ❌ "Bedrock auto-encrypts everything to satisfy HIPAA — no extra steps"
 - ❌ "Guardrails replace IAM"

@@ -230,6 +230,7 @@ A CFO does not care about Transformers. A CFO cares about $/conversation and the
 ### Unit-cost example: a customer-support assistant
 
 Assume:
+
 - 30K daily conversations
 - Median conversation: 4K input tokens (history + system prompt) + 600 output tokens
 - System prompt: 3K tokens, identical across all conversations
@@ -394,6 +395,7 @@ This is the kind of end-to-end answer the Generative AI Leader and PMLE exams ex
 ## ✅ Module 1 Summary
 
 You now know:
+
 - 📖 **Why Google had the Transformer first** — the 2017 Vaswani et al. paper, the BERT/T5/LaMDA/PaLM lineage, the DeepMind merger of 2023
 - 🧠 **What makes Gemini architecturally different** — natively multi-modal, 2M context, built-in grounding
 - 🎴 **The Gemini model family** — Nano/Flash/Flash-Lite/Pro/Ultra, when to pick each, pricing tiers

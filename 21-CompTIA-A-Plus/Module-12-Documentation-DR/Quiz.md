@@ -306,6 +306,7 @@ The complete modern architecture. Each layer addresses one of the three requirem
 ➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md)
 
 Then take the practice exams:
+
 - [Practice Exam 1 — Core 1](../Practice-Exams/Practice-Exam-1.md)
 - [Practice Exam 2 — Core 2](../Practice-Exams/Practice-Exam-2.md)
 - [Final Mock Exam — 90 Q / 90 min](../Practice-Exams/Final-Mock-Exam.md)

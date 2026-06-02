@@ -420,6 +420,7 @@ Pilot graduates to production. The prompt now lives in version control with an e
 **Situation.** OpenAI released **GPT-4V** (Vision) to ChatGPT Plus subscribers on September 25, 2023, then to the API in November 2023. It was the first widely-available frontier multi-modal model — Google's earlier Gemini announcement was still demo-only, and Anthropic's Claude 3 vision wouldn't ship until March 2024.
 
 **The capability shift.** Within weeks, builders demonstrated:
+
 - Web design from a napkin sketch
 - Whiteboard math problem-solving
 - Receipt extraction outperforming Tesseract by 20+ percentage points on real-world receipts
@@ -450,6 +451,7 @@ Pilot graduates to production. The prompt now lives in version control with an e
 ## ✅ Module 5 Summary
 
 You now know:
+
 - 🖼️ The 2026 vision-capable model landscape — Claude / GPT / Gemini / Llama
 - 📷 The three patterns for sending images — base64, URL, data URL
 - 🎯 Image best practices (resolution, orientation, cropping, labeling multiple images)

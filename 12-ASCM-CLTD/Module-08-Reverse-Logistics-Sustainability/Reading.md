@@ -17,6 +17,7 @@
 Maya orders a $90 pair of sneakers online. They don't fit. She prints a free return label and ships them back.
 
 What she doesn't see:
+
 - The return label costs the retailer $9 in parcel freight (paid by the retailer).
 - The DC opens the box, inspects, photographs, and grades the sneakers (15 minutes of labor: $7).
 - The sneakers go to a returns processing center for restocking — but they've been worn briefly, so they can't be sold as new. They're routed to a liquidator (3 weeks later, sold for $25).
@@ -33,6 +34,7 @@ This module covers reverse logistics, returns management, and the sustainability
 ## 🔄 What is Reverse Logistics?
 
 Reverse logistics is everything that flows **backward** through the supply chain:
+
 - Customer returns
 - Recalls
 - Repair / refurbishment
@@ -62,6 +64,7 @@ Best-in-class returns follow a 5-step pattern:
 ### Step 1: Authorization (RMA)
 
 The first cost-control checkpoint. Customer requests return; system issues a **Return Merchandise Authorization (RMA)** number. This:
+
 - Validates eligibility (within return window, not consumable)
 - Triggers shipping label
 - Pre-categorizes reason for return
@@ -107,10 +110,12 @@ Cleaning, function-testing, replacing damaged components, repackaging in "refurb
 ### Recalls
 
 Mandatory or voluntary. Triggers:
+
 - Safety defects (NHTSA for cars, CPSC for consumer goods, FDA for food/drugs)
 - Compliance issues (sub-standard ingredients, etc.)
 
 Process:
+
 1. Identification (FDA notice, internal QA finding)
 2. Public notification
 3. Recovery from supply chain
@@ -343,6 +348,7 @@ Drives both cost and emissions.
 - **2024:** Everstream Analytics partnered with several major TMS providers (project44, FourKites) for embedded risk visibility. Platform was tracking ~4M+ active shipments daily.
 
 **Outcome.** Resilience360/Everstream demonstrated several Module 8 + cross-module concepts:
+
 - During the 2024 Red Sea Houthi attacks (see Module 6 case), Everstream-subscribing shippers received automated routing recommendations within hours, while non-subscribing shippers needed days of manual analysis.
 - During the 2024 Baltimore Francis Scott Key Bridge collapse (March 2024 cargo ship strike → bridge collapse → Port of Baltimore closure for ~3 months), Everstream subscribers had pre-modeled scenarios for Port of Baltimore disruptions and could shift to NY/NJ or Norfolk within hours.
 - Adoption: by Q4 2024, ~600+ major shippers globally subscribed to Everstream-class platforms (also from competitors Riskmethods/Sphera, Interos, Sayari).
@@ -420,6 +426,7 @@ The CLTD exam tests this in scenarios about "the logistics function's role in en
 ## ✅ Module 8 Summary
 
 You now know:
+
 - 🔄 The 5-step returns process and the centrality of gatekeeping
 - 📦 Disposition options (restock, refurbish, remanufacture, liquidate, donate, recycle)
 - ♻️ Refurbish vs remanufacture vs recycle distinctions

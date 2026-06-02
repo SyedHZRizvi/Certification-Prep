@@ -115,6 +115,7 @@
 ## 🏆 Exam Power Phrases
 
 ✅ Often **right**:
+
 - "Reseat the RAM"
 - "Match the dual-channel slots per the manual"
 - "Apply fresh thermal paste"
@@ -122,6 +123,7 @@
 - "Use NVMe for boot drive"
 
 ❌ Often **wrong**:
+
 - "Replace the motherboard first"
 - "DDR4 works in a DDR5 slot"
 - "RAID is a backup"

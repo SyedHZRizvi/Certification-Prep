@@ -85,6 +85,7 @@ PAC             Order    Hour    1 day
 ## 🏆 Exam Power Phrases
 
 When you see these, often **correct**:
+
 - ✅ "Reconcile demand, supply, and financial plans"
 - ✅ "Plan at the family level"
 - ✅ "Monthly rolling horizon"
@@ -92,6 +93,7 @@ When you see these, often **correct**:
 - ✅ "Executive ratification"
 
 When you see these, often **wrong**:
+
 - ❌ "S&OP plans at the SKU level"
 - ❌ "Operations leads the demand review"
 - ❌ "Freeze the plan after Step 5"

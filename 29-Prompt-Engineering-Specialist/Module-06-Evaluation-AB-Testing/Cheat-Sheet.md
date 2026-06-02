@@ -135,6 +135,7 @@ if new.safety_violations > baseline.safety_violations:
 ## 🏆 Exam Power Phrases
 
 ✅ Often **right**:
+
 - "Pre-register the metric before looking at data"
 - "Use a different model family as judge"
 - "Combine programmatic + LLM-judge + human spot-check"
@@ -142,6 +143,7 @@ if new.safety_violations > baseline.safety_violations:
 - "Block deploys on regression"
 
 ❌ Often **wrong**:
+
 - "BLEU/ROUGE captures semantic quality"
 - "Same model can judge itself fairly"
 - "10 examples is enough to ship"
@@ -166,6 +168,7 @@ if new.safety_violations > baseline.safety_violations:
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. 3 pillars of eval? ___
 2. 4 LLM-judge biases? ___
 3. Golden set MVP size? ___

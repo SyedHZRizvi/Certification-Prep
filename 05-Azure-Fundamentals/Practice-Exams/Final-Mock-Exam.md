@@ -5,6 +5,7 @@
 > Take this ONE DAY BEFORE the real exam.
 
 This is intentionally a mix of:
+
 - Standard multiple choice (most questions)
 - **Yes/No three-part scenario sets** (Microsoft's signature style — #41–43 and #47–49)
 - Single Yes/No items sprinkled throughout

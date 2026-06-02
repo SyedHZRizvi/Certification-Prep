@@ -15,6 +15,7 @@
 Meet Yara. She runs a small artisan bakery. One Monday morning she finds her cash register cleaned out. The thieves came in through an unlocked back door, took everything, and left.
 
 She makes three changes:
+
 1. **A new deadbolt** on the back door — they can't get in the same way again.
 2. **A camera and sign** out front saying "24/7 Surveillance" — would-be thieves see it and walk away.
 3. **A weekly cash audit** — if anything *does* go missing, she'll know within 7 days instead of waiting weeks.
@@ -66,6 +67,7 @@ AAA was standardized for network access by the IETF in the RADIUS specs (Rigney 
 🧠 **Memory hook:** "Who are you? → What can you do? → What did you do?"
 
 Sec+ also sometimes lists **AAA + Identification** as the full sequence:
+
 1. **Identification** — claim ("I'm maria@corp.com")
 2. **Authentication** — prove ("here's my password + token")
 3. **Authorization** — granted access scope
@@ -162,6 +164,7 @@ Sec+ loves to ask: *"This is what type / what category of control?"* You must cl
 A **gap analysis** compares the *current* security posture against a *target* (a framework, a regulation, a maturity model).
 
 Process:
+
 1. Pick a target — e.g., NIST CSF, ISO 27001, PCI-DSS
 2. Inventory current controls
 3. Map current state to the target's requirements
@@ -278,6 +281,7 @@ This is what a PBQ might show as a diagram — drag the labels (PEP, PE, PA, Ada
 **Outcome.** **147.9 million** US consumers (45% of the US adult population), 15 million UK residents, and 19,000 Canadian records were exposed — SSNs, dates of birth, addresses, driver's-license numbers, and ~209,000 credit-card numbers. Equifax's CEO, CIO, and CSO retired within weeks. Equifax paid **$575–700 million** in a 2019 settlement with the FTC, CFPB, and 50 US states/territories — the largest data-breach settlement to that point (FTC press release, 22 July 2019). The US House Oversight Committee published a 96-page post-mortem ("The Equifax Data Breach," December 2018) that became required reading in corporate-governance and risk classes at Harvard Business School and Wharton.
 
 **Lesson for the exam / for practitioners.** Equifax violated **all three** CIA pillars simultaneously and failed at the basic control-management discipline this module teaches:
+
 - **Confidentiality** — 148M SSNs and DOBs exfiltrated to the open internet.
 - **Integrity** — attackers had write access; data integrity could not be assured.
 - **Availability** — the consumer portal was taken offline during incident response.
@@ -295,6 +299,7 @@ This case is exactly the scenario Security+ tests when asking, "Which control wo
 ## ✅ Module 1 Summary
 
 You now know:
+
 - 🎯 The **CIA triad** + non-repudiation as the 4 security properties to protect
 - 🔐 The **AAA** access lifecycle and where Identification fits
 - 🚪 **Zero Trust** with its **Control Plane / Data Plane** + the roles of PEP, PE, PA, and Adaptive Identity

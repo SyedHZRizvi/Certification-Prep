@@ -9,6 +9,7 @@
 In 2023, Mejuri (the DTC jewelry brand publicly profiled by [Modern Retail](https://www.modernretail.co/) and [Marketing Brew](https://www.marketingbrew.com/)) was running 12 separate Google Ads campaigns: 4 Shopping, 3 Display, 2 YouTube, 3 Search. CAC was $52 and growing. Their growth team made a controversial decision: collapse 8 of the 12 campaigns into a single Performance Max campaign with carefully-structured asset groups.
 
 The results, shared at Shopify's Reunite Conference in 2024:
+
 - CAC fell from $52 → $34 in 90 days
 - Conversion volume up 41% on the same budget
 - Time spent managing campaigns: down ~60%
@@ -302,6 +303,7 @@ AUDIENCE SIGNAL:
 ### Step 4 — Asset Groups 2, 3, 4
 
 Same template, different themes:
+
 - AG 2: "Womens Pilates Bottoms"
 - AG 3: "Pilates Accessories" (mats, towels)
 - AG 4: "Mens Pilates Apparel"
@@ -379,6 +381,7 @@ Video B — Demo Hook:
 ### Step 4 — Measurement
 
 Don't measure YouTube Ads on direct conversion in the first 30 days. Measure:
+
 - View-through rate (target: >30%)
 - View-through conversions in GA4 (Multi-touch attribution)
 - Branded search lift (compare brand search volume month-over-month)
@@ -422,6 +425,7 @@ The lesson: in 2026, **production value < authenticity**. A $500 phone-shot UGC 
 ## ✅ Module 3 Summary
 
 You now know:
+
 - 🏗️ PMax architecture and asset group rules
 - 🚨 Brand exclusions (THE single most important setting)
 - 🎯 Audience signals vs. audience targeting (the critical difference)

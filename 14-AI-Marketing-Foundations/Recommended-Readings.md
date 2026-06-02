@@ -145,6 +145,7 @@ Tool pricing and feature names verified as of 2026-05. **Always verify current p
 ## Maintaining Your Skills
 
 Marketing certifications expire faster than most. Plan to:
+
 - Retake HubSpot Marketing Software Certification (free) every 1-2 years.
 - Retake Google Ads, GA4, and Meta Blueprint certifications as they're updated (1-2 year cycles).
 - Subscribe to at least 2 of the industry resources above and consume one per workday.

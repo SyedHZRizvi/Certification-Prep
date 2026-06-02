@@ -41,6 +41,7 @@ This certification is for the engineer who wants to be on the right side of that
 US total compensation (base + equity + bonus, levels.fyi data through Q1 2026) skews **higher** for Google-Cloud-AI specialist roles than for generic LLM-engineer roles at the same level, especially at the L5/Staff+ tier. A Staff AI Engineer working on Vertex-AI-deployed Gemini agentic products at a top-quartile SF/NYC company commonly clears **$430K–$680K TC**, with Google's own ML L5/L6 ICs at the high end of that range.
 
 This track ladders directly into:
+
 - **AWS AI Practitioner (course 07)** — for the AWS-Bedrock comparison story
 - **Azure AI Engineer (course 08)** — for Azure-OpenAI comparison and M365 Copilot context
 - **Claude Architect (course 28)** — the Anthropic-aligned sibling track (Claude on Vertex is part of Module 3)
@@ -69,6 +70,7 @@ Begin with [Module 1: Google AI Landscape & Gemini Model Family →](./Module-01
 ## 🎯 What You'll Master
 
 By the end of this track, you'll be able to:
+
 - Explain *why Google had the Transformer first* — the Vaswani et al. (2017) paper, the BERT/T5/LaMDA/PaLM lineage, the Google-Brain × DeepMind merger of April 2023, and how Gemini's native-multi-modal architecture differs from GPT/Claude
 - Pick the right Gemini variant (Nano / Flash / Pro / Ultra, by version) for any task, balancing cost, latency, modality, and capability — and justify the choice to a CFO
 - Build, prototype, and ship in **Google AI Studio** (the free interactive playground) and the **Gemini API** in Python, Node, and REST
@@ -119,6 +121,7 @@ Score 80%+ on the Final Mock before scheduling Generative AI Leader. Score 85%+ 
 🔗 **[Google AI for Developers](https://ai.google.dev/)** + **[Vertex AI documentation](https://cloud.google.com/vertex-ai/docs)** — the prompt engineering guide, Gemini API reference, model cards, fine-tuning recipes, Agent Builder docs, and Responsible AI playbook. These are the *primary sources*. Read them once cover-to-cover; come back for reference.
 
 Honorable mentions:
+
 - 📘 *[Google Cloud Generative AI Sample Repository](https://github.com/GoogleCloudPlatform/generative-ai)* — 1,000+ runnable notebooks
 - 📘 *[Gemini Cookbook](https://github.com/google-gemini/cookbook)* — battle-tested recipes for multi-modal, RAG, agents, fine-tuning
 - 📄 *[Attention Is All You Need](https://arxiv.org/abs/1706.03762)* — Vaswani et al. 2017, the Transformer paper; Google's original foundational contribution

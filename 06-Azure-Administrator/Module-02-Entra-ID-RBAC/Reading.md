@@ -220,6 +220,7 @@ Detects and responds to identity risk in real time.
 | **User risk** | Leaked credentials, suspicious patterns across sessions |
 
 Risk-based **CA policies** can require MFA, force password change, or block. Common policies:
+
 - "Sign-in risk = High → Block"
 - "User risk = Medium → Require password change"
 
@@ -265,11 +266,13 @@ A Contributor on a storage account can give themselves a data role, but doesn't 
 ### How effective permissions are calculated
 
 **Permissions are ADDITIVE.** You get the union of:
+
 - Roles inherited from parent scopes (MG, sub, RG)
 - Roles assigned directly at this scope
 - Roles via group membership
 
 There is **no traditional `Deny`** in Azure RBAC. Two exceptions:
+
 1. **Deny assignments** — used only by Azure managed services (Blueprints, managed apps) — you can't create them yourself.
 2. **Azure Policy** — `Deny` effect blocks the *action*, even if RBAC would allow it.
 
@@ -329,6 +332,7 @@ When **code** (not a human) needs to authenticate, you use a **service principal
 | Use case | External CI/CD, third-party app | Azure-hosted workloads (VM, Function, App Service) |
 
 🔥 **Always prefer managed identity** over service principal when the workload runs on Azure. Two flavors:
+
 - **System-assigned** — tied to the resource lifecycle (deleted when VM is deleted)
 - **User-assigned** — independent lifecycle, can be shared across resources
 
@@ -352,6 +356,7 @@ az role assignment create \
 Without PIM: Alice is a permanent Global Admin. If her account is phished, the attacker is Global Admin too.
 
 With PIM: Alice is **eligible** for Global Admin. To activate, she:
+
 1. Goes to PIM, clicks "Activate"
 2. Provides MFA
 3. (Optionally) supplies a ticket number + justification
@@ -359,6 +364,7 @@ With PIM: Alice is **eligible** for Global Admin. To activate, she:
 5. The activation is logged with reason + duration
 
 Roles you usually PIM-ify:
+
 - Global Administrator
 - Privileged Role Administrator
 - Security Administrator
@@ -444,6 +450,7 @@ Sub-divisions of an Entra ID tenant. Like an OU in on-prem AD.
 ## ✅ Module 2 Summary
 
 You now know:
+
 - 🏢 What Entra ID is (and what it isn't — it's not on-prem AD)
 - 👤 The 3 user types and 4 group flavors
 - 🤝 B2B vs B2C distinction
@@ -468,6 +475,7 @@ You now know:
 **Situation.** Okta — Microsoft's biggest IDaaS competitor and a household name in workforce identity — was breached in October 2023 when an attacker stole an HAR file (HTTP Archive) containing a session token belonging to an Okta *customer support engineer*. Okta originally said ~134 customer org records were touched. Three months later, after evidence forced a revision, Okta disclosed (Okta security advisory, *October 2023 Security Incident*, updated 2023-11-29) that **all ~18,400 customer support customers** had had their names and contact data exfiltrated, plus session tokens from Cloudflare, 1Password, and BeyondTrust. The initial root cause: a personal Google account on an Okta-managed laptop synced cached service-account credentials.
 
 **Decision.** Three things mattered, all of them analogous to controls Azure admins implement via Entra ID:
+
 1. **The compromised account was a support engineer with broad customer-tenant impersonation capability** — a "Global-Admin-in-spirit" role inside Okta's own tenant. There was no *just-in-time elevation* equivalent to Microsoft's **Privileged Identity Management (PIM)**. Standing access was the default.
 2. **The session token had no Conditional Access-style anomaly check.** The attacker replayed the cookie from an entirely different geo and device with no step-up MFA.
 3. **The personal Google sync was permitted on a corporate machine.** Conditional Access policies that *require a compliant / Hybrid-Entra-joined device* (Microsoft's recommended default for admin portals as of 2024) would have blocked the exfil path.
@@ -475,6 +483,7 @@ You now know:
 **Outcome.** Okta's stock dropped ~12% the week of the disclosure (Reuters, 2023-10-23). Cloudflare's CTO blog (John Graham-Cumming, 2023-10-20) became required reading in security circles — Cloudflare detected the breach in *34 minutes* via their own session-binding telemetry. Okta has since rolled out: mandatory session binding for admin sessions, MFA on support tools, and a "Customer Identity Cloud privacy posture" review. Multiple Okta enterprise customers — including 1Password — publicly stated they were re-evaluating moving to Microsoft Entra ID, in part for **PIM + Conditional Access + Identity Protection** being natively bundled at P2 versus bolted on.
 
 **Lesson for the exam / for practitioners.** Every defense Okta retroactively added is a feature you configure inside Entra ID:
+
 - *Standing Global-Admin access* → eliminate with PIM eligible-only assignments + 1–8 hr activation + approval.
 - *Session-token replay from new geo* → block with Conditional Access "Sign-in risk = High → Block" (P2 Identity Protection) and **continuous access evaluation (CAE)**.
 - *Compromised endpoint* → require Hybrid Entra Join + compliant device for the Azure portal app via Conditional Access.

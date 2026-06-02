@@ -367,6 +367,7 @@ Q10: A   Q20: A    Q30: A    Q40: A
 ## 🔍 Review Process
 
 For each C or D answer:
+
 1. Identify which module / capstone it relates to
 2. Re-read that module's Cheat-Sheet rubric
 3. Spend 2–4 focused hours fixing the gap
@@ -489,6 +490,7 @@ The portfolio is only as strong as its weakest piece. If 1 capstone is at "Faili
 For every other question in this exam, the "A" answer represents the discipline of *shipping at the calibrated bar* — real subject, public link, P-C-A-R-L format, specific data, honest framing. "B" means you mostly shipped but cut a corner. "C" means you started but didn't finish. "D" means the capstone doesn't exist yet.
 
 The most common patterns:
+
 - A "B" answer on Q4 (audit length) usually means time pressure — fix by re-allocating Module 2 sprint days.
 - A "B" answer on Q19 (LinkedIn post) usually means anxiety — fix by treating posting as part of the deliverable, not optional.
 - A "B" or worse on Q21 (3-min readability) means a peer-test caught issues — fix by adding more screenshots and tighter exec summary.

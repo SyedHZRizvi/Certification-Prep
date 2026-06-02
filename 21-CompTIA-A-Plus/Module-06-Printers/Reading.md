@@ -111,6 +111,7 @@ Two flavors:
 ## 🖋️ Impact (Dot Matrix) Printers — Still on the Exam!
 
 Largely obsolete but kept alive in:
+
 - Carbon-copy / multi-part forms (only impact can press through carbon)
 - Industrial / harsh environments (banks, auto repair shops)
 
@@ -320,6 +321,7 @@ This is the classic "repeating defect" troubleshooting move: measure the *period
 ## ✅ Module 6 Summary
 
 You now know:
+
 - 🔥 The **7-step laser printing process** — memorize the order
 - 💧 Inkjet head-clean troubleshooting and the difference from laser
 - 🧾 Direct thermal vs thermal transfer; impact for carbon-copy

@@ -137,6 +137,7 @@ All 13 items from the story; the exam tests each individually.
 ## 🎯 Power Phrases
 
 ✅ Often **right**:
+
 - "Vertex AI default = training-opt-out"
 - "Recitation checker = built-in; cannot be disabled"
 - "Grounding is the first anti-hallucination lever"
@@ -147,6 +148,7 @@ All 13 items from the story; the exam tests each individually.
 - "SAIF = Google's Secure AI Framework"
 
 ❌ Often **wrong**:
+
 - "Constitutional AI is Google's safety methodology" (Anthropic)
 - "Recitation checker is opt-in"
 - "BLOCK_NONE is fine for any workload"

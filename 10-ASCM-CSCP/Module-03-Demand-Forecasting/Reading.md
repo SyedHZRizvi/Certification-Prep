@@ -318,6 +318,7 @@ You can shape demand to match supply:
 ## ✅ Module 3 Summary
 
 You now know:
+
 - 🎯 What demand management covers and how forecasting fits in
 - 📊 The seven demand patterns and which method matches each
 - 🧠 Qualitative methods: sales force composite, Delphi, jury, market research, analogy

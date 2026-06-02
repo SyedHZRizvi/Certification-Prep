@@ -21,6 +21,7 @@
 | **Web content filtering** | ❌ | ✅ |
 
 Bundles:
+
 - M365 E3 → MDE Plan 1
 - M365 E5 → MDE Plan 2
 
@@ -122,6 +123,7 @@ Bundles:
 ## 🏆 Exam Power Phrases
 
 When you see these, they're often **correct**:
+
 - ✅ "Defender for Endpoint Plan 2 for EDR + AIR + Hunting"
 - ✅ "Audit then Block for ASR rules"
 - ✅ "BitLocker silent enablement + Entra key escrow"
@@ -131,6 +133,7 @@ When you see these, they're often **correct**:
 - ✅ "Security baselines as the starting point"
 
 When you see these, often **wrong**:
+
 - ❌ "Plan 1 includes EDR"
 - ❌ "ASR Block mode on day 1"
 - ❌ "BitLocker keys stored per user"

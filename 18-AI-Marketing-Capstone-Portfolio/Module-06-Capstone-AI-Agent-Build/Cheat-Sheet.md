@@ -213,6 +213,7 @@ ai-marketing-agent/
 - ✅ "Built with Cursor as pair-programmer; ~70% AI-generated, all reviewed..."
 
 Avoid:
+
 - ❌ "I made a ChatGPT thing..."
 - ❌ "It uses AI..."
 - ❌ "Pretty straightforward setup..."

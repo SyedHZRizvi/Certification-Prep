@@ -126,6 +126,7 @@ GA4 audiences are *dynamic* — recomputed continuously based on user behavior. 
 ### Audience-builder dimensions
 
 You can build audiences from:
+
 - Event-based conditions (e.g., "completed `add_to_cart` ≥ 3 times in 30 days").
 - User-property conditions (e.g., `loyalty_tier = 'gold'`).
 - Demographic and device conditions.
@@ -423,6 +424,7 @@ GROUP BY 1, 2, 3;
 ## ✅ Module 3 Summary
 
 You now know:
+
 - 🌅 Why GA4 is different from UA (event-only model).
 - 🧱 The full data model: events × parameters × user properties × custom dimensions.
 - 🎯 Key Events (formerly Conversions) and how to design 3–8 of them well.

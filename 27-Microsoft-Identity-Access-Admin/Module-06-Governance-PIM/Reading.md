@@ -13,6 +13,7 @@
 ## 🪪 A Story: The Standing Owner Who Was Acquired Out Of Existence
 
 It's late 2024. A 1,800-person company is closing its Series E. As part of due diligence, the lead investor's security team runs a Microsoft Entra audit script across the target tenant. They expect to find some hygiene issues. What they find:
+
 - **23 accounts with Global Administrator role permanently assigned.**
 - **4 of those accounts** belong to people who left the company between 6 months and 2 years ago. The accounts were "disabled" but the role assignments were never removed.
 - **7 of those accounts** belong to **vendors and contractors** with active sign-in activity from IP addresses in countries the company has zero business in.
@@ -308,6 +309,7 @@ The correct order:
 ## ✅ Module 6 Summary
 
 You now know:
+
 - 🛂 The PIM mental model: Eligible vs Active, JIT activation, MFA + approval + justification + audit
 - 🛡️ Three PIM products: Entra Roles, Azure Resources, Groups (all P2)
 - 🔍 Access reviews on any privilege source — groups, roles, apps, packages, RBAC
@@ -328,11 +330,13 @@ You now know:
 **Situation.** Microsoft IT (managing 150,000+ employee identities + ~7,000 admin identities across MSIT, MSFT corp, and product teams) historically operated with hundreds of standing Global Administrator assignments. Post-NotPetya and post-SolarWinds, Microsoft's own security leadership concluded that "standing privilege" was the single largest residual identity risk that MFA + Conditional Access could not fix. Microsoft Digital published a multi-year case study of the conversion.
 
 **Decision.** Microsoft converted the tier-0 admin model in three phases:
+
 1. **PIM Eligible-Only (2018–2020).** All standing GA assignments converted to PIM eligible. Activation required MFA + ticket + senior security approval. Within 18 months: ~98% of GAs were eligible-only; ~6 permanent active GAs remained as break-glass.
 2. **Quarterly Access Reviews (2020–2022).** Every GA eligible assignment is reviewed quarterly by the user's manager. Microsoft's own data: ~12% of eligible assignments don't get re-approved each quarter (the user no longer needs the role). Automated removal saves manual cleanup.
 3. **Privileged Access Workstations (PAW) for activation (2022–2024).** A Conditional Access policy requires that GA activation happens from a Privileged Access Workstation (a locked-down Windows device with no internet, no email, no productivity apps). This combines PIM (time-bound) + CA (device-bound) into a single hardened path.
 
 **Outcome.** Per Microsoft Digital (2024-09):
+
 - **Mean standing GA count** dropped from ~280 in 2018 to **6** in 2024 (a 98% reduction).
 - **Average duration of an active GA session** dropped from 24×7×365 to **47 minutes**.
 - **Time from "admin no longer needs role" to "role removed"** dropped from ~9 months (audit-driven) to ~1 week (access-review-driven).

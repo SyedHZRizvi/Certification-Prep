@@ -522,6 +522,7 @@ This is a real organizational architecture as of 2026. Many Fortune 500s are run
 ## ✅ Module 5 Summary
 
 You now know:
+
 - 🧬 **What MCP is** — JSON-RPC 2.0-based interop protocol for AI tool integration; announced Nov 25, 2024
 - 🏛️ **Architecture** — clients (Claude Desktop, Cursor, claude-code) ↔ MCP client lib ↔ servers (local or remote)
 - 🧱 **Three primitives** — tools, resources, prompts

@@ -42,6 +42,7 @@ This is why **two ads with the same bid can have wildly different costs and plac
 ### Quality Score (Google Ads)
 
 Google Ads' **Quality Score** is a 1–10 number per keyword, computed from:
+
 - **Expected click-through rate** (predicted CTR vs. similar ads)
 - **Ad relevance** (does the ad match the search intent?)
 - **Landing page experience** (relevant, fast, mobile-friendly)
@@ -233,6 +234,7 @@ If you sell physical goods in the US, **understanding RMNs is now part of basic 
 ## 🔄 Retargeting (a.k.a. Remarketing)
 
 **Retargeting** = showing ads to users who already visited your site / app / interacted with your content. Typically:
+
 - 5–20× higher conversion rate than cold prospecting
 - 50–90% lower cost per acquisition
 - Capped frequency to avoid creep (3–8 impressions/week is a common cap)
@@ -256,6 +258,7 @@ Wayfair, the home-furnishings retailer, was an early enterprise adopter of Perfo
 - Major reduction in manual campaign management overhead
 
 What made Wayfair's PMax adoption work:
+
 1. **Clean product feed.** PMax depends heavily on Google Merchant Center data quality.
 2. **Custom audience signals.** They told PMax who their best customers were as a hint.
 3. **Aggressive creative variation.** 50+ creative assets per asset group, refreshed monthly.
@@ -320,6 +323,7 @@ The Wayfair case is the most-cited PMax-success enterprise example. It also pair
 ## ✅ Module 7 Summary
 
 You now know:
+
 - 🔨 How the modern ad auction works (bid × quality × signals)
 - 🎯 Bidding strategies (Manual CPC → Target ROAS spectrum)
 - 🤖 The 2026 AI campaign types (PMax, Advantage+, Smart Performance Campaign)

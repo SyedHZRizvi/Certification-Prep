@@ -184,6 +184,7 @@ def production_retrieve(query, filters, k=50):
 ```
 
 Key filter dimensions to support:
+
 - **Tenant / user / workspace** — for multi-tenant data
 - **Time** — most docs go stale; `valid_from` and `valid_until`
 - **Type** — distinguish API docs from blog posts from KB articles
@@ -241,6 +242,7 @@ last quarter, where the customer changed plans mid-cycle?
 ```
 
 The instruction-tuning patterns that matter:
+
 - **Anchoring** the model in the context ("only the provided")
 - **Citation requirement** (forces grounded reasoning)
 - **Refusal license** ("say I don't know" — the model needs *explicit permission*)
@@ -371,6 +373,7 @@ Goal: take the BEIR `fiqa` (financial Q&A) dataset and build three RAG systems o
 3. **Modular** — add a query router (LLM decides "simple" vs "complex"), multi-query expansion for complex, web-search fallback when retrieval is weak.
 
 Report:
+
 - RAGAS faithfulness, answer relevancy, context precision/recall at each step
 - p50/p95/p99 latency
 - $ per query at each step
@@ -384,6 +387,7 @@ You'll see the quality climb from ~60% to ~85%+ on faithfulness, and you'll see 
 **Situation.** Klarna, the Swedish "buy-now-pay-later" company, deployed an OpenAI-powered chatbot for customer support in February 2024. In their Q2 2024 earnings, they reported the system was handling the equivalent of **700 full-time customer-support agents'** workload, with average handle time down from 11 minutes to 2 minutes, and customer satisfaction *matching* human-only support.
 
 **The architecture (as disclosed in their tech-blog post and follow-up interviews).** A RAG system over Klarna's internal policy documents, FAQ, and historical-ticket-resolution corpus. Specifics:
+
 - ~95 languages supported (Cohere multilingual embeddings as the primary embedder)
 - Multi-query expansion at the pre-retrieval step for ambiguous customer messages
 - Strict guardrails: regulated topics (lending laws, dispute escalation) route to humans
@@ -404,6 +408,7 @@ You'll see the quality climb from ~60% to ~85%+ on faithfulness, and you'll see 
 ## ✅ Module 3 Summary
 
 You now know:
+
 - 🗺️ The naive → advanced → modular RAG progression
 - 🪄 Pre-retrieval: multi-query, HyDE, decomposition, step-back, query routing
 - 🎯 Retrieval: hybrid + metadata filter + source trust

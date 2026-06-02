@@ -15,6 +15,7 @@ At 09:47 GMT a user on Reddit posts a screenshot. They have typed "Ignore all pr
 The screenshot goes viral. By 11:00 GMT there are 47 variants on the front page of /r/programming. By 14:00, NovaBank's CISO has pulled the integration. By 18:00, the assistant is offline. By Friday, the security team has spent a hundred engineering-hours on the postmortem.
 
 The damage:
+
 - Public embarrassment + brand hit
 - Six-figure incident-response cost
 - Regulator inquiry (financial-services prompt-injection is a *thing*)
@@ -278,6 +279,7 @@ Recap from Module 3 plus production discipline:
 ### Multi-region strategy
 
 For 24/7 critical workloads:
+
 - **Active-passive** — primary region, failover to secondary on 5xx/529. Simplest.
 - **Active-active round robin** — load-balance across two regions; complicates per-user state.
 - **Geographic affinity** — EU users → EU region; US users → US region; useful for latency + data residency.
@@ -566,6 +568,7 @@ Every box can be skipped at MVP. At production scale, every box appears.
 ## ✅ Module 8 Summary
 
 You now know:
+
 - 🚦 **Rate limits & capacity** — RPM/TPM, tier upgrades, throttling, queue + load-shed, multi-region failover
 - 🔍 **Observability** — what to log, the standard tools (Langfuse / Helicone / OpenLLMetry), alerts that matter
 - 🛡️ **Prompt injection defense** — direct/indirect, defense in depth, authority hierarchy, output moderation

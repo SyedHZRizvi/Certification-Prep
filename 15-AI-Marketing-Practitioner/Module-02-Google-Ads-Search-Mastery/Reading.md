@@ -231,6 +231,7 @@ This is the worked example. Print this. Build it for a real client.
 ### Step 1 — Conversion Tracking First (Day 0)
 
 Before you build the campaign:
+
 1. Set up GA4 if not already
 2. Mark "free_trial_signup" as a conversion event in GA4
 3. Link GA4 to Google Ads (via Linked Accounts in GA4 Admin)
@@ -434,6 +435,7 @@ What made it work wasn't sophistication — it was **discipline**: clear naming,
 ## ✅ Module 2 Summary
 
 You now know:
+
 - 🏗️ Google Ads account structure (Account → Campaign → Ad Group → Keyword + Ad)
 - 🎯 Match types in 2026 (and that BMM is dead)
 - 💰 Every bidding strategy and when to use each

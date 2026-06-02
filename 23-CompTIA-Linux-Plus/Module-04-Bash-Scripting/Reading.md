@@ -478,6 +478,7 @@ Each user has a crontab (`crontab -e` to edit). The format:
 ```
 
 Five time fields:
+
 1. **minute** (0-59)
 2. **hour** (0-23)
 3. **day of month** (1-31)
@@ -487,6 +488,7 @@ Five time fields:
 Special strings: `@reboot`, `@hourly`, `@daily`, `@weekly`, `@monthly`, `@yearly`.
 
 System-wide cron locations:
+
 - `/etc/crontab` — system-wide (has an extra USER field after the time fields)
 - `/etc/cron.d/` — drop-in dir for packages
 - `/etc/cron.hourly/`, `/etc/cron.daily/`, `/etc/cron.weekly/`, `/etc/cron.monthly/` — scripts run at those intervals
@@ -541,6 +543,7 @@ systemctl list-timers                    # see all timers
 ```
 
 Advantages over cron:
+
 - Dependency-aware (`After=`, `Wants=`)
 - Logs go through journald (`journalctl -u backup.service`)
 - `Persistent=true` runs missed jobs on next boot
@@ -690,6 +693,7 @@ The exam tests these via "what would have prevented the bug" questions and via r
 ## ✅ Module 4 Summary
 
 You now know:
+
 - 💻 The **shebang** and **executable bit** that turn a text file into a runnable script
 - 📦 **Variables**, **quoting**, **substitution** — the most-tested set of bash facts
 - 🧮 The **special variables** (`$0`, `$@`, `$#`, `$?`, `$$`, `$!`)

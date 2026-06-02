@@ -136,6 +136,7 @@ Linux on Windows: **WSL 2** or **LCOW**.
 ## 🏆 Exam Power Phrases
 
 When you see these, they're often **correct**:
+
 - ✅ "Use a Gen 2 VM for vTPM and Secure Boot"
 - ✅ "Use Kerberos with constrained delegation for Live Migration"
 - ✅ "Use Shared-Nothing Live Migration over SMB 3.0"
@@ -145,6 +146,7 @@ When you see these, they're often **correct**:
 - ✅ "SET teaming for S2D + modern Hyper-V"
 
 Usually **wrong**:
+
 - ❌ "Convert Gen 1 to Gen 2 in place"
 - ❌ "Hyper-V Replica is synchronous"
 - ❌ "Live Migration always requires shared storage"

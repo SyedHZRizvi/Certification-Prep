@@ -105,6 +105,7 @@ perfmon /rel
 ## 🏆 Exam Power Phrases
 
 ✅ Often **right**:
+
 - "Check Event Viewer for clues"
 - "Run sfc /scannow, then dism if needed"
 - "Boot to WinRE and try Startup Repair"
@@ -113,6 +114,7 @@ perfmon /rel
 - "Verify the user has data backup before reinstall"
 
 ❌ Often **wrong**:
+
 - "Reinstall Windows as the first step"
 - "Defragment the SSD"
 - "Disable Windows Update for performance"

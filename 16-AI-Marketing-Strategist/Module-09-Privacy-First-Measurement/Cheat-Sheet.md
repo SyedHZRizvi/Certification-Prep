@@ -129,6 +129,7 @@ Used in: SKAN, Attribution Reporting API, clean-room outputs.
 ## 🏆 Exam Power Phrases
 
 ✅ Often correct:
+
 - "Hashed PII is still personal data under GDPR..."
 - "Advanced Consent Mode + modeling for EU..."
 - "Server-side CAPI recovers 15-30%..."
@@ -136,6 +137,7 @@ Used in: SKAN, Attribution Reporting API, clean-room outputs.
 - "Clean room: query, not raw data, leaves the silo..."
 
 ❌ Often wrong:
+
 - "Hashing removes GDPR obligations..."
 - "Server-side bypasses GDPR..."
 - "SKAN gives you user-level data..."

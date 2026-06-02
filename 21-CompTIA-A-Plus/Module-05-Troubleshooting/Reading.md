@@ -317,6 +317,7 @@ Walk down the OSI stack:
 **The cascade.** Rebuilding 750 GB across 15 surviving disks meant reading **every block** of every disk in the array. The disks were in their 4th year — well into the bathtub curve's right side. At hour 11 of the projected 14-hour rebuild, drive 4 threw an uncorrectable read error. Then drive 7. The array marked *failed* — both new failures during rebuild meant RAID 5 (which tolerates only 1 disk loss) was beyond recovery.
 
 **Decision and outcome.** The firm restored from the previous night's backup. They lost **5.5 hours** of intraday tick data — the most valuable hours of any trading day. Internal estimates put direct trading-strategy losses at **$28–32M**. The firm's CIO was replaced within 60 days. The new CIO mandated:
+
 - All arrays with >5 disks moved to **RAID 6** (dual parity).
 - A hot spare on every array.
 - Replacement of all disks at the 36-month mark, regardless of SMART status.
@@ -337,6 +338,7 @@ Walk down the OSI stack:
 ## ✅ Module 5 Summary
 
 You now know:
+
 - 🎯 The **CompTIA 6-step methodology** cold, with awareness of the "what's the next step" exam pattern
 - 🔬 The **layered diagnostic mindset** — always start at L1 unless ruled out
 - 💀 Hardware symptom catalog: power, POST, display, random reboot, storage

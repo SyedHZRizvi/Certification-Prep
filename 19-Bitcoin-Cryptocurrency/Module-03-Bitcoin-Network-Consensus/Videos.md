@@ -130,6 +130,7 @@
 ## ✅ After watching
 
 Answer in your notebook:
+
 1. State the 5 consensus rules a full node enforces.
 2. What's the difference between a soft fork and a hard fork? Name one of each.
 3. How many confirmations should an institutional treasury wait before considering a $1M Bitcoin payment "final"?

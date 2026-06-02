@@ -537,6 +537,7 @@ This case directly maps to CLTD exam scenarios about *risk visibility* (Module 6
 ## ✅ Module 6 Summary
 
 You now know:
+
 - 🚛 Six modes + parcel with cost/speed/reliability/flexibility trade-offs
 - 🚛 FTL vs LTL ranges and DOT classes
 - 🚂 Rail intermodal (COFC, TOFC, doublestack, drayage) and rail-vs-truck economics

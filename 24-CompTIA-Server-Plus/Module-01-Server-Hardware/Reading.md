@@ -43,6 +43,7 @@ Every server is shaped like one of four things. Pick the wrong shape and you'll 
 | **Converged / HCI** | Pre-integrated compute + storage + network | High; pretested | Hyperconverged virtualization | Expensive, less component flexibility |
 
 🎯 **Exam tip:** Sec+/Server+ both love to ask "which form factor for X scenario." Match keywords:
+
 - *"Branch office, three servers, no rack" → tower*
 - *"Data center, max density per rack" → blade*
 - *"Standard data-center deployment" → rack (1U/2U most common)*
@@ -84,6 +85,7 @@ This is where Sec+ candidates often skip. Server CPUs and server RAM differ from
 **ECC** = Error-Correcting Code memory. Adds an extra chip per DIMM that stores parity-derived check bits. Catches and silently corrects single-bit errors (SECDED — single-error-correct, double-error-detect).
 
 Why it matters:
+
 - Cosmic rays and natural radiation flip RAM bits in the wild. At server scale (TBs of RAM, 24×7×365 runtime) the rate is *not* negligible — Google's 2009 DRAM study (Schroeder, Pinheiro, Weber, "DRAM Errors in the Wild: A Large-Scale Field Study," ACM SIGMETRICS 2009) found mean errors of ~25,000–75,000 FIT (Failures In Time) per Mbit-year.
 - Without ECC, a flipped bit silently corrupts a database row, an in-memory cache, a kernel pointer.
 - With ECC, single-bit errors are corrected on the fly; double-bit errors are at least *detected* (machine check exception → kernel panic → known failure, not silent corruption).
@@ -167,6 +169,7 @@ Module 3 covers RAID and SAN/NAS in depth. Here we cover only what's mounted *in
 ### Hot-swap bays
 
 A server's drive bays sit behind a **backplane** (PCB) wired to the RAID controller / HBA. Hot-swap means:
+
 1. Pull a failed drive — caddy releases without tools.
 2. Slide in a replacement of equal or larger capacity.
 3. The controller automatically rebuilds the array onto the new drive.
@@ -213,12 +216,14 @@ This is the single most important Server+ concept that beginners often skip. **M
 ### What is "out-of-band"?
 
 The **BMC** (Baseboard Management Controller) is a tiny computer on the server's motherboard with:
+
 - Its own CPU and RAM (independent of the host CPU/RAM)
 - Its own NIC (dedicated management port)
 - Its own power (runs on standby power — works even when the server is "off")
 - Its own web UI + IPMI interface
 
 This means you can:
+
 - Power the server on/off remotely
 - View live sensor data (temps, fan speeds, voltages)
 - Open a **virtual console** — see and interact with the screen as if you were standing at the server, even during POST/BIOS, before any OS loads
@@ -228,6 +233,7 @@ This means you can:
 ### IPMI — the vendor-neutral standard
 
 **IPMI** (Intelligent Platform Management Interface) is the industry-standard management protocol (Intel/Dell/HP/NEC, 1998). It defines:
+
 - IPMI 1.5, 2.0 (current)
 - LAN port: **UDP 623**
 - Commands: power control, sensor query, SEL access, virtual media
@@ -404,6 +410,7 @@ This is the kind of integration question Server+ PBQs ask. Notice how every comp
 **Situation.** On 14 August 2003 the eastern North-American power grid suffered a cascading blackout: ~50 million customers across Ohio, Michigan, Pennsylvania, New York, New Jersey, Vermont, Connecticut, Massachusetts, and Ontario lost power for two days. Root cause: a software race condition in FirstEnergy's XA/21 alarm system masked the trip of a single 345 kV transmission line in northern Ohio. By the time human operators noticed, the cascade was unstoppable (US-Canada Power System Outage Task Force, *Final Report on the August 14, 2003 Blackout in the United States and Canada*, April 2004).
 
 **What it did to data centers.** Hundreds of east-coast colocation facilities were thrown onto generator power for 24–48 hours. Many failed within 4–8 hours due to:
+
 - **Single-fed PDUs** in racks — when generator transfer briefly hiccupped, every rack went dark.
 - **UPS batteries** that bridged the *generator transfer* window but ran out during the long outage, taking servers down before generators stabilized.
 - **Cooling collapses** when generators powered compute but not enough chiller capacity — racks hit thermal shutdown within an hour.
@@ -430,6 +437,7 @@ This is exactly the scenario Server+ tests when asking "design a server for a 99
 ## ✅ Module 1 Summary
 
 You now know:
+
 - 🧱 The 4 **server form factors** — tower, rack 1U–4U, blade, converged — and when each is appropriate
 - 🧠 What makes **server CPU and ECC RAM** different from desktop parts
 - ⚡ **PSU redundancy** (N+1, 2N, 2N+1), 80 PLUS efficiency, and PDU types

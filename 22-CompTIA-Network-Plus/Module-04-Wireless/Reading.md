@@ -252,6 +252,7 @@ The Small Office / Home Office router is a one-box combo. Key features tested:
 1. Both APs on same SSID + same WPA2 settings → an **ESS** (Extended Service Set) — clients should roam transparently.
 2. Roaming is triggered by the *client*, not the AP. The client picks when to associate with a different BSSID based on signal degradation thresholds.
 3. Possible issues:
+
    - **Sticky client**: client doesn't release the old AP even when signal weakens; keeps using a marginal connection. Fix: enable **802.11k/v/r** (assisted roaming, BSS transition, fast transition) on the controller.
    - **AP placement gap**: dead zone in the hallway between lobby and conference room — signal dips below -75 dBm during the walk, killing the call. Fix: add an AP or boost coverage.
    - **Channel overlap**: both APs on channel 6, interfering. Fix: assign one to channel 1, other to channel 11.
@@ -332,6 +333,7 @@ This is a high-value PBQ template — wireless troubleshooting questions on Netw
 **Outcome.** The Wi-Fi Alliance accelerated work on **WPA3**, announced in January 2018 and finalized June 2018. WPA3 replaced the PSK 4-way handshake with **SAE** (Simultaneous Authentication of Equals, based on the Dragonfly key-exchange), providing **forward secrecy** — even if a password is later cracked, captured traffic cannot be retroactively decrypted. WPA3 also added Enhanced Open for guest networks and 192-bit Enterprise.
 
 Adoption was slow:
+
 - Wi-Fi 6 (2019) and Wi-Fi 6E (2021) shipped with WPA3 support
 - Most enterprise APs supported WPA3 by 2020 but defaulted to mixed WPA2/WPA3 mode for client compatibility
 - The IoT long tail remained — many devices stayed on WPA2 forever
@@ -340,6 +342,7 @@ Adoption was slow:
 By 2026 most enterprise Wi-Fi deployments are WPA3-Enterprise (with EAP-TLS or PEAP); home networks default to WPA3-Personal with WPA2 fallback for old devices.
 
 **Lesson for the exam / for practitioners.** This case touches every wireless concept in this module:
+
 - **Why WPA3** is now the correct answer when "most secure Wi-Fi standard" is asked
 - **Why WPA2 is acceptable but not preferred** — operational reality, especially for legacy IoT
 - **Why open + Enhanced Open** matters for guest networks — opportunistic encryption without passwords
@@ -358,6 +361,7 @@ This case is exactly what Network+ tests when asking, "Which is the most secure 
 ## ✅ Module 4 Summary
 
 You now know:
+
 - 📡 The 802.11 standards a→be, marketing names Wi-Fi 5/6/6E/7, and what bands each operates on
 - 🔢 Channels — 1/6/11 in 2.4 GHz US; 5 GHz channel widths and DFS; 6 GHz pristine spectrum
 - 📶 Topology modes — IBSS, BSS, ESS, mesh; SSID/BSSID/ESSID terminology

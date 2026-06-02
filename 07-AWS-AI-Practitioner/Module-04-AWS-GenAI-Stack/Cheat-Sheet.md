@@ -79,6 +79,7 @@
 ## 🏆 Exam Power Phrases
 
 Usually right:
+
 - ✅ "Bedrock + Knowledge Bases" for managed RAG
 - ✅ "Amazon Q Business" for enterprise chatbot over docs
 - ✅ "Amazon Q Developer" for coding assistant
@@ -87,6 +88,7 @@ Usually right:
 - ✅ "Data stays in customer's account/Region; Bedrock does not train base models on it"
 
 Usually wrong:
+
 - ❌ "GPT-4 on Bedrock"
 - ❌ "PartyRock for production"
 - ❌ "Bedrock requires you to provision GPU instances"

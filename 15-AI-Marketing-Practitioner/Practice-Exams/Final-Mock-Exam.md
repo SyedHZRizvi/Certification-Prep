@@ -691,6 +691,7 @@ D. Can't truly learn marketing without running real campaigns with real money
 ## 🔍 Review Process
 
 For EACH wrong answer:
+
 1. Identify which Module covered it (1-10)
 2. Re-read that module's Reading.md
 3. Add a flashcard
@@ -703,6 +704,7 @@ For EACH wrong answer:
 If you scored 60+:
 
 1. **Take a real cert (start with the free ones)**:
+
    - Google Ads Search Cert: free, ~80% pass, 50 Q / 75 min
    - Google Ads Display Cert: free
    - Google Ads Video Cert: free

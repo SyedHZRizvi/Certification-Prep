@@ -314,6 +314,7 @@ functions/
 ```
 
 Plus the **non-`functions/` user-facing pages**:
+
 - `login/index.html` — sign-in page
 - `Manage-Users/index.html` — super-user admin UI
 - `Privacy-Setup/CLOUDFLARE-DEPLOY-RUNBOOK.md` — one-time activation runbook for the owner
@@ -350,6 +351,7 @@ Super-users are NOT stored in KV — they live exclusively in `functions/lib/sup
 4. **Invalid/expired JWT** → same redirect (cookie also cleared).
 5. **Valid JWT, super-user** → serve.
 6. **Valid JWT, KV lookup**:
+
    - User missing → cookie cleared, redirect to login.
    - `courses === "*"` → serve.
    - Course ID in `courses` array → serve.

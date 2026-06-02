@@ -94,6 +94,7 @@ The escalation path when a critical zero-day requires immediate deployment **out
 | **Notification** | User notified before deadline |
 
 When you publish an expedited update:
+
 1. WUfB cloud service pushes the update outside the deferral rules
 2. Devices download via Delivery Optimization (peer + cloud)
 3. Install within the deadline (default 24 hr)
@@ -135,6 +136,7 @@ Microsoft's peer-to-peer content delivery for Windows updates, Intune apps, and 
 ## 📊 Windows Update for Business Reports
 
 A free Azure-hosted report that shows update deployment status across your fleet. Requires:
+
 - Update rings configured in Intune
 - A Log Analytics workspace
 - The "Update Compliance" or "Windows Update for Business reports" solution attached
@@ -206,6 +208,7 @@ Windows 11 ships annually with a new feature update (e.g., 24H2 = October 2024, 
 | **Windows 11 Enterprise / Education** | 36 months from release |
 
 So Windows 11 24H2 (October 2024):
+
 - Home/Pro: end of servicing October 2026
 - Enterprise/Education: end of servicing October 2027
 
@@ -289,6 +292,7 @@ The correct sequence:
 ## ✅ Module 7 Summary
 
 You now know:
+
 - 🔄 WUfB as the modern Windows update management service
 - 📊 The three separate update categories (quality / feature / driver) and their cadences
 - 📊 Update ring topology (Pilot → Broad → Deferred) and blast-radius reasoning
@@ -315,6 +319,7 @@ You now know:
 **Situation.** In late June 2021, Microsoft published CVE-2021-1675 / CVE-2021-34527 — the **PrintNightmare** Print Spooler RCE vulnerability. Within days, working exploits were publicly available. Every Windows endpoint with the Print Spooler service running (effectively every Windows machine) was vulnerable. Microsoft's first patches in June and July were incomplete and required additional out-of-band updates.
 
 For organizations that had not adopted update rings + expedited updates, the response cycle was painful (multiple post-mortem analyses, e.g., SANS Internet Storm Center, July 2021):
+
 - Manual patch testing in lab
 - Per-device deployment via WSUS or ConfigMgr software updates
 - Many enterprises took 4–8 weeks to reach 90% patched
@@ -330,6 +335,7 @@ For organizations that had not adopted update rings + expedited updates, the res
 6. WUfB reports verified deployment status; remaining gaps escalated to helpdesk.
 
 **Outcome.** Public post-mortems and Microsoft customer stories indicate:
+
 - Organizations on cloud-managed WUfB averaged **24–72 hours to 95% deployment**.
 - Organizations on legacy WSUS / ConfigMgr software updates averaged **2–6 weeks** for the same milestone.
 - Breach attribution data (CISA + various private SOCs) suggests organizations with longer patch windows were ~10× more likely to experience PrintNightmare-attributed compromise.

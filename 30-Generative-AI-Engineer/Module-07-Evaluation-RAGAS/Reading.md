@@ -16,6 +16,7 @@ In 2023, an Anthropic blog post quietly mentioned that for every product release
 Most teams reading that blog had two reactions: "wow" and "we'll do that later." Two years later, the teams that did "do it later" are the ones that ship inconsistent quality, can't roll back regressions, and have CTOs who can't sleep before a model upgrade.
 
 The teams that built the eval harness early can:
+
 - Catch regressions in CI before shipping
 - Compare model versions objectively
 - Tune RAG retrieval pipelines empirically
@@ -33,6 +34,7 @@ The full evaluation stack has three layers, each answering a different question.
 ### Layer 1: Capability evaluation
 
 *Does this model know how to do X?* Public benchmarks:
+
 - **MMLU** — broad knowledge multiple-choice
 - **HumanEval / MBPP / SWE-bench** — coding capability
 - **GSM8K / MATH** — mathematical reasoning
@@ -176,6 +178,7 @@ The single most important asset in any GenAI eval is your **golden dataset** —
 ### The "synthetic golden" — RAGAS test set generation
 
 RAGAS can *generate* a synthetic test set from your corpus:
+
 - Sample chunks from the corpus
 - Generate plausible questions that would be answered by those chunks (using an LLM)
 - Classify each question by type (simple, reasoning, multi-context, conditional)
@@ -242,6 +245,7 @@ The thresholds matter. They're either set from baseline (current main branch) or
 ## 🧪 Eval-Driven Development
 
 The discipline:
+
 1. Define the metrics that matter *before* writing the system
 2. Build the eval harness *with* the system, not after
 3. Every prompt change, model change, retriever change → re-run eval
@@ -271,6 +275,7 @@ This is the eval analog of test-driven development. Same emotional difficulty (e
 Goal: take the RAG system you built in Module 3 and add a full eval harness.
 
 Steps:
+
 1. Build a golden dataset of 50 (question, ground_truth_answer, ground_truth_chunks) tuples — half synthetic via RAGAS test-set generation, half hand-labeled from your test queries.
 2. Run RAGAS' four core metrics + answer_correctness using GPT-4o-mini as the judge.
 3. Add a Promptfoo config that A/B-tests two prompt templates.
@@ -312,6 +317,7 @@ Deliverable: a CI run that completes in <5 minutes and gates PRs on real metric 
 ## ✅ Module 7 Summary
 
 You now know:
+
 - 🎯 The three layers: capability / system / production eval
 - 📐 RAGAS' four core metrics: faithfulness, answer relevancy, context precision, context recall
 - 🧑‍⚖️ LLM-as-judge — the power tool and its biases (position, length, self-enhancement, format, confidence)

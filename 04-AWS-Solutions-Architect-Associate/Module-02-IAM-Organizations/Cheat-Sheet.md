@@ -98,6 +98,7 @@ Cross-account: identity ∩ resource/role (both must allow)
 ## 🏆 Exam Power Phrases
 
 ✅ Usually right:
+
 - "Use an IAM Role attached via instance profile"
 - "Use STS AssumeRole for cross-account access"
 - "Use IAM Identity Center for human SSO"
@@ -106,6 +107,7 @@ Cross-account: identity ∩ resource/role (both must allow)
 - "Encrypt with KMS; audit with CloudTrail"
 
 ❌ Usually wrong:
+
 - "Store access keys in source code"
 - "Use root user daily"
 - "Share IAM user credentials with the vendor"

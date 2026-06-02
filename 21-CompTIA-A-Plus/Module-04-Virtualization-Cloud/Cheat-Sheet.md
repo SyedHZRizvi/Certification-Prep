@@ -86,6 +86,7 @@
 ## 🏆 Exam Power Phrases
 
 ✅ Often **right**:
+
 - "Use a template + automated clone"
 - "Apply the Shared Responsibility Model"
 - "Tag every resource for cost tracking"
@@ -93,6 +94,7 @@
 - "Snapshots are not backups"
 
 ❌ Often **wrong**:
+
 - "Cloud is always cheaper"
 - "PaaS requires no maintenance"
 - "Snapshot = backup"

@@ -16,12 +16,14 @@
 Meet Sam. She runs IT for a chain of 22 saltwater-fish stores. Each store has a desktop with a copy of their POS application, but the master inventory database lives on Sam's central server. Five years ago Sam bought a 1U server with **two 4 TB SATA disks in RAID 1** — mirrored, predictable, and "good enough for now."
 
 Five years later, "now" is a lot bigger:
+
 - The database is 1.6 TB and growing at 8 GB/week
 - Backups, photos, and shipping manifests have spilled onto a USB drive bolted to the back of the server
 - Last quarter a drive failed; rebuild took 11 hours and nobody could check inventory
 - The CFO wants overnight reports — currently impossible because the disks max out at 200 IOPS
 
 Sam needs to do *all* of the following in one project:
+
 1. Add capacity without buying a whole new server
 2. Get more IOPS (random reads/writes)
 3. Tolerate **two** simultaneous drive failures (recent stats spooked her)
@@ -438,6 +440,7 @@ This is the scenario Server+ tests when asking "design a storage strategy that s
 ## ✅ Module 3 Summary
 
 You now know:
+
 - 🎚️ All six **RAID levels** — min disks, capacity formula, fault tolerance, write penalty — and can compute usable capacity in your head
 - 🌐 The categorical difference between **SAN (block)** and **NAS (file)** + protocols (FC, iSCSI, FCoE, NVMe-oF, NFS, SMB)
 - 🛡️ How **zoning** (FC) and **LUN masking** (array) work — and why you need both

@@ -173,6 +173,7 @@ This is a hands-on exercise. Open ChatGPT or Claude + your favorite scheduler.
 
 ### Step 1: Audience and platform fit (15 min)
 Answer in a notebook:
+
 - Who is your primary audience (demographics + interests)?
 - Where do they actually spend time? (Stop posting on platforms they don't use.)
 - What "job" are they on each platform? (LinkedIn = career; TikTok = entertainment; Pinterest = inspiration; etc.)
@@ -181,6 +182,7 @@ Pick 2–3 platforms. Not 7. Not 1. **Two or three.**
 
 ### Step 2: Content pillars (15 min)
 Define 3–5 **content pillars** — recurring topic buckets that map to audience interest. For a project management SaaS, pillars might be:
+
 - Team collaboration tips
 - Tool comparisons + reviews
 - Founder + agency stories
@@ -191,6 +193,7 @@ Every post you make is tagged to one pillar.
 
 ### Step 3: Format mapping (20 min)
 For each platform, pick 2–3 *native* formats:
+
 - IG: Reels + Carousels
 - TikTok: Short vertical video, native audio
 - LinkedIn: Text-with-hook + document carousels
@@ -238,12 +241,14 @@ Industry data (HypeAuditor, IZEA, and Influencer Marketing Hub all publish annua
 The most-cited example is **Lil Miquela** — a CGI/virtual influencer created by Brud (acquired by Dapper Labs in 2021). With millions of followers, brand deals with Calvin Klein, Prada, BMW, and Samsung, and entirely synthetic persona, Lil Miquela is the canonical case study for what the trade press calls "virtual influencers."
 
 Why brands experiment with them:
+
 - Full creative control over storyline + content
 - No scandal risk (the persona doesn't have a real personal life)
 - 24/7 availability for content
 - Multilingual + multi-market scaling
 
 The downsides:
+
 - Trust gap with audiences (younger audiences often see through it)
 - FTC disclosure rules apply to AI-generated endorsements (covered in Module 9)
 - Cultural / ethical pushback (creator economy debates around displacement)
@@ -278,6 +283,7 @@ For small teams, **Google Alerts + a manual weekly review + a small Mention or B
 Wendy's social-media team in the mid-2010s (and the playbook continues) became famous for sarcastic, brand-voiced Twitter (now X) responses. Specific tweets ("Where's the beef?", roasting McDonald's frozen patties) went viral and were widely covered by Ad Age and the *Harvard Business Review's* "Wendy's Twitter War" case study (Quelch, 2018).
 
 What it teaches:
+
 1. **Voice can be a competitive advantage** when it's distinct + consistent.
 2. **Engagement-driven posts beat polished broadcast** on most social platforms.
 3. **It only works with leadership air cover** — Wendy's CMO publicly stood behind the team.
@@ -341,6 +347,7 @@ Wendy's stays load-bearing on social-marketing exams because it's the cleanest d
 ## ✅ Module 5 Summary
 
 You now know:
+
 - 🌐 The 10 major 2026 social platforms, their audiences, and algorithmic levers
 - 🧮 The 2026 algorithm cheat sheet, platform by platform
 - 🤖 The 2026 AI social tool landscape — schedulers, LI/X creator tools, listening, influencer discovery

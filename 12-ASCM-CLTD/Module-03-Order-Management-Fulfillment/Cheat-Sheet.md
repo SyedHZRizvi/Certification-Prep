@@ -101,12 +101,14 @@ OTIF = On-Time + In-Full   (retailer-imposed, chargebacks common)
 ## 🏆 Exam Power Phrases
 
 Usually CORRECT:
+
 - ✅ "Use CTP when promising on future receipts"
 - ✅ "Batch pick for many small orders with overlap"
 - ✅ "Perfect order is multiplicative"
 - ✅ "OTIF is retailer-imposed"
 
 Usually WRONG:
+
 - ❌ "ATP and CTP are interchangeable"
 - ❌ "Perfect order = average of components"
 - ❌ "Last-mile is the cheapest leg"

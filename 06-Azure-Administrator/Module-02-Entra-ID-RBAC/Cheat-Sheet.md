@@ -107,6 +107,7 @@ SMS / Voice / Email OTP   <   Authenticator push (with number matching)   <   FI
 ## 🏆 Exam Power Phrases
 
 When you see these, they're often **correct**:
+
 - ✅ "Use a managed identity"
 - ✅ "Assign at the smallest scope that satisfies the requirement"
 - ✅ "Enable Conditional Access with report-only mode first"
@@ -114,6 +115,7 @@ When you see these, they're often **correct**:
 - ✅ "Assign the data-plane role explicitly"
 
 Usually **wrong**:
+
 - ❌ "Give them Global Admin"
 - ❌ "Hard-code the service principal secret"
 - ❌ "Use per-user MFA"

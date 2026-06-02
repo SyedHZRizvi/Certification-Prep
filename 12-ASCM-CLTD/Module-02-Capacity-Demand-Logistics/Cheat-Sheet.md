@@ -93,12 +93,14 @@ RMSE           = √(Σ(A−F)²/N)       (penalizes big misses)
 ## 🏆 Exam Power Phrases
 
 Usually CORRECT:
+
 - ✅ "Pre-build for seasonality, safety stock for variability"
 - ✅ "Aggregate forecasts are more accurate"
 - ✅ "Identify the bottleneck first"
 - ✅ "Lead capacity for growing markets"
 
 Usually WRONG:
+
 - ❌ "100% utilization is the goal"
 - ❌ "Detailed forecasts are always better"
 - ❌ "Match strategy is always cheapest"

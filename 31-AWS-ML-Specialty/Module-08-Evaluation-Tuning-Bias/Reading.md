@@ -400,6 +400,7 @@ Already covered in Module 6 — applies here as a fairness/quality tool: route l
 ## ✅ Module 8 Summary
 
 You now know:
+
 - 📐 The **train / validation / test** split discipline and CV variants (K-fold, stratified, group, walk-forward)
 - 📊 **Classification metrics** — accuracy, precision, recall, F1, F-beta, ROC AUC, PR AUC — and when each is the right one
 - 📈 **Regression metrics** — RMSE, MAE, MAPE, R², quantile loss
@@ -500,6 +501,7 @@ best_estimator = tuner.best_estimator()
 ```
 
 🎯 **Exam pattern.** Recognise:
+
 - `objective_metric_name` + `objective_type` = what you're optimising
 - `metric_definitions` regex = how SageMaker parses metrics from container logs
 - `strategy="Bayesian"` (default) vs `"Hyperband"` (DL) vs `"Random"` (parallel) vs `"Grid"` (discrete)
@@ -583,6 +585,7 @@ clarify.run_explainability(
 ```
 
 🎯 **Exam pattern.** Recognise the **three methods** on `SageMakerClarifyProcessor`:
+
 - `run_pre_training_bias` — Module 3 territory (data-level)
 - `run_post_training_bias` — this module (model-level: DI, DPPL, DAR, ...)
 - `run_explainability` — SHAP, both global and local

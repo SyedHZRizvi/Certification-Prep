@@ -63,6 +63,7 @@ The Make.com scenario itself? A JSON file you could import in 4 minutes. But the
 ### Default Recommendation
 
 **Pick Make.com unless you have a reason not to.** Reasons to pick something else:
+
 - You're targeting dev-tools / AI-engineering marketing jobs → pick n8n (self-hosted)
 - You're targeting B2B SaaS where HubSpot is the dominant CRM → also build a HubSpot Workflow version as a 2nd portfolio piece
 - You already pay for Zapier → just use Zapier
@@ -229,6 +230,7 @@ Screenshot the canvas. Export the workflow as JSON (n8n's "Download" button give
 ### Why n8n's JSON Export Is Special
 
 When you publish your `.json` workflow file publicly on GitHub, a recruiter can:
+
 1. Spin up their own n8n.
 2. Import your workflow.
 3. See exactly what you built.
@@ -240,6 +242,7 @@ This is the "GitHub repo" equivalent for marketing automation. It's the highest-
 ## 🛠️ Tool Walkthrough 3: Zapier (Simpler Alternative)
 
 Zapier is the most user-friendly but has constraints:
+
 - Linear flows by default (no easy branching unless you pay for the Paths feature)
 - Free tier: 100 tasks/mo, 5 zaps active
 
@@ -507,6 +510,7 @@ Pick the variation that matches your subject best. The reference scenario (lead 
 ## ✅ Module 4 Summary
 
 You now know:
+
 - ⚙️ Why marketing automation is a 2026 hiring filter
 - 🛠️ How to build in Make.com (default), n8n (dev signal), Zapier (simplest)
 - 🧭 The reference 7-step lead-routing scenario

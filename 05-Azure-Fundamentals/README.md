@@ -50,6 +50,7 @@ Begin with [Module 1: Cloud Concepts →](./Module-01-Cloud-Concepts/Reading.md)
 ## 🎯 What You'll Learn
 
 By the end of this track, you'll be able to:
+
 - Explain the cloud business model in plain English (CapEx vs OpEx, consumption pricing)
 - Tell the difference between IaaS, PaaS, and SaaS in 10 seconds
 - Pick the right Azure compute / storage / database service for a given scenario

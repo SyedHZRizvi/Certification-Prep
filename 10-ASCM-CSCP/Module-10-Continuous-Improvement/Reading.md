@@ -365,6 +365,7 @@ Japanese for "change for the better." Philosophy of continuous small improvement
 ## ✅ Module 10 Summary
 
 You now know:
+
 - 🚛 Lean's 5 principles, 7 (or 8) wastes, and tool kit
 - 🎯 Six Sigma DMAIC/DMADV, belt structure, and the 3.4 DPMO target
 - 🪜 Classic 7 quality tools and modern 7 planning tools

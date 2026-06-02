@@ -269,12 +269,14 @@ D. "It depends — DDA for trackable click channels, MMM for untrackable + brand
 ## 🔍 Review Process
 
 For EACH wrong answer:
+
 1. Identify which module (1–5) covered it.
 2. Re-read that module's Reading.md.
 3. Add an Anki flashcard for the concept.
 4. Try the question again 3 days later.
 
 The most common failure modes on this exam:
+
 - Confusing **Key Result vs Initiative** (Q4)
 - Forgetting the GA4 DDA volume threshold (Q8)
 - Confusing **deterministic** vs **probabilistic** ID resolution (Q14)

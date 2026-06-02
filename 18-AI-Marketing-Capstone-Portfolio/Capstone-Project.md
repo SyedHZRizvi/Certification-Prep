@@ -218,6 +218,7 @@ Every module in this course has 4 files. To do the actual capstone work, read ea
 - **Module 8:** [Reading](./Module-08-First-Client-Pitch-Real-Conversation/Reading.md) · [Cheat Sheet](./Module-08-First-Client-Pitch-Real-Conversation/Cheat-Sheet.md) · [Quiz](./Module-08-First-Client-Pitch-Real-Conversation/Quiz.md) · [Videos](./Module-08-First-Client-Pitch-Real-Conversation/Videos.md)
 
 **Self-evaluation exams** (replace "practice exams" for this project-based course):
+
 - [Mid-Program Portfolio Review](./Practice-Exams/Practice-Exam-1.md) — after Modules 1-5
 - [Full Portfolio Review](./Practice-Exams/Practice-Exam-2.md) — after Modules 1-8
 - [Recruiter / Client Readiness Assessment](./Practice-Exams/Final-Mock-Exam.md) — before sending the first cold pitch

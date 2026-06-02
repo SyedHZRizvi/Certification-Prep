@@ -526,6 +526,7 @@
 ## 🎯 BEFORE THE EXAM
 
 You should be able to instantly answer:
+
 - The 5 Scrum events with timeboxes
 - The 3 artifacts → 3 commitments mapping
 - The 5 Scrum values

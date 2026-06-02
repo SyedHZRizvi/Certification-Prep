@@ -121,6 +121,7 @@ Per-query pricing + index storage. Roughly $4 per 1,000 search queries on the st
 ## 🥈 Vertex AI Vector Search — The ANN Primitive
 
 When you need:
+
 - A *custom* embedding model (e.g., a CLIP fine-tuned on your product images)
 - Extreme scale (>100M vectors, low-latency)
 - Custom retrieval orchestration (you want to combine multiple indexes, route queries)
@@ -219,11 +220,13 @@ CREATE INDEX ON products USING ivfflat (embedding vector_cosine_ops);
 ```
 
 When to pick over AlloyDB:
+
 - You're already on Cloud SQL Postgres and don't want to migrate
 - Scale is small (<10M vectors)
 - Lower cost
 
 When NOT to pick:
+
 - You need ScaNN-level performance
 - You need in-DB Gemini calls (AlloyDB AI exclusive)
 - You're at high QPS
@@ -264,6 +267,7 @@ FROM VECTOR_SEARCH(
 ```
 
 When to pick BigQuery:
+
 - Your data is *already* in BigQuery (data warehouse)
 - You need to combine analytic SQL with semantic search ("top 5 products semantically similar to X, sold in last 30 days, by region")
 - Batch / nightly analytical workloads
@@ -460,6 +464,7 @@ result = task.evaluate(model=grounded_model)
 ## ✅ Module 5 Summary
 
 You now know:
+
 - 🧠 **RAG fundamentals** — ingest → chunk → embed → index → retrieve → generate
 - 🗺️ **Five Google Cloud RAG stacks** and how to pick
 - 🥇 **Vertex AI Search** as the managed default

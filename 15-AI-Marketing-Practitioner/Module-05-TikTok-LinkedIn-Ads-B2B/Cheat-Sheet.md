@@ -33,6 +33,7 @@ Business Center → Ad Account → Campaign → Ad Group → Ad
 ```
 
 5 hooks that work:
+
 - Direct address ("If you own a [X]...")
 - Question
 - Pattern interrupt

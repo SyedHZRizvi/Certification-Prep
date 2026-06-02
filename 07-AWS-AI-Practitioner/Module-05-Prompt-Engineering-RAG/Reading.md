@@ -26,6 +26,7 @@ You can't retrain her — she's already employed. So you do two things:
 The consultant + the librarian = **RAG**. The librarian is the retrieval system. The consultant is the LLM. The memos are your private data. The combined system gives correct, source-grounded answers without ever retraining the consultant.
 
 The two halves of this module are:
+
 - **Prompt engineering** = giving the consultant clearer assignments
 - **RAG** = giving her the right reference material *just in time*
 
@@ -64,6 +65,7 @@ A well-structured prompt has up to five parts:
 | **ReAct (Reason + Act)** | Interleave reasoning with tool/API calls | Agentic workflows (Bedrock Agents) | "Thought → Action → Observation → ... → Final Answer" |
 
 Bonus techniques you should recognize:
+
 - **Self-consistency** — sample multiple CoT answers and take the majority vote (improves math/reasoning).
 - **Tree-of-Thought** — branch through alternative reasoning paths.
 - **Prompt chaining** — break a big task into a pipeline of smaller LLM calls.
@@ -310,6 +312,7 @@ The Agent decides whether to *look something up* (call Knowledge Base) or *do so
 **Situation.** Klarna is a Swedish "buy-now-pay-later" fintech with ~150 million users and ~25 million transactions per month. Customer service had grown to ~700 contracted agents handling ~2.3 million inquiries/month — refunds, returns, payment-plan adjustments, dispute escalations. The volume was rising faster than headcount could be added; quality and consistency varied across agents; the cost per ticket was constraining margin. Through 2023, Klarna's CEO Sebastian Siemiatkowski publicly framed Klarna as an "AI-first company" and explicitly bet that LLM-based customer service could change the unit economics.
 
 **Decision.** In **early 2024**, Klarna launched an OpenAI-powered customer service assistant in the Klarna app, integrated across 23 markets and 35 languages. The architecture (per Klarna's Feb 2024 announcement and OpenAI joint case study):
+
 - **GPT-4-class foundation model** as the reasoning engine (Klarna's deployment was via OpenAI directly, not Bedrock — but the architectural lessons map cleanly to a Bedrock + Claude or Bedrock + Nova equivalent)
 - **RAG over Klarna's internal knowledge base** — policies, refund rules, market-specific regulations, order data — so the assistant could answer correctly without hallucination
 - **Tool / API integration (the "agent" pattern)** — the assistant could call Klarna's internal APIs to look up an order, issue a refund within policy limits, escalate to a human, or adjust a payment plan
@@ -319,6 +322,7 @@ The Agent decides whether to *look something up* (call Knowledge Base) or *do so
 - Continuous evaluation — both automated (response-quality scoring) and human spot-check
 
 **Outcome.** Per Klarna's published Feb 2024 announcement:
+
 - The assistant handled **2.3 million conversations in its first month** — roughly **two-thirds of Klarna's total customer-service chats**
 - Klarna estimated the assistant was doing the work of **~700 full-time agents**
 - **Customer satisfaction parity** with human-handled chats
@@ -329,6 +333,7 @@ The Agent decides whether to *look something up* (call Knowledge Base) or *do so
 By mid-2025, Klarna publicly tempered some claims (Bloomberg, May 2024 follow-ups) — acknowledging that *some* deflection-rate gains were partially offset by hiring slowdowns and noted that for complex emotional escalations, AI was clearly worse than experienced humans. The headline 700-agent equivalent stuck as an industry benchmark and was widely cited at AWS re:Invent 2024 and in AI strategy talks across the industry.
 
 **Lesson for the exam / for practitioners.** Three AIF-C01 talking points anchor here:
+
 1. **The architecture pattern is canonical: FM + RAG + Agent + Guardrails + HITL fallback.** On AWS this is **Bedrock + Knowledge Bases + Bedrock Agents + Bedrock Guardrails + Amazon A2I (or escalation to a Connect contact center)** — the exact services Modules 4, 5, 7 cover. Whenever a scenario describes a customer-service AI replacing/augmenting human agents, this five-piece stack is the right answer.
 2. **The *real* engineering work isn't the model — it's the retrieval, the tools, and the guardrails.** Klarna's announcement reads like a model story; the implementation was 90% RAG quality + 10% prompt design. The exam pattern: "the bot keeps citing made-up policies" → fix is RAG + grounding check in Guardrails, not "swap to a bigger model."
 3. **Human-in-the-loop is not a fallback you sneak in; it's an architectural commitment.** Klarna's complex-escalation handoff (and later Bloomberg pushback) shows that the *right* AI customer-service architecture front-loads when to bail out. The exam tests this as Amazon A2I patterns — see Module 7.
@@ -344,6 +349,7 @@ By mid-2025, Klarna publicly tempered some claims (Bloomberg, May 2024 follow-up
 ## ✅ Module 5 Summary
 
 You now know:
+
 - 🎯 The 5 parts of a well-structured prompt and the 5 main prompting techniques
 - 🛡️ What prompt injection is (direct, indirect, jailbreak, leaking) and how Bedrock Guardrails defend against it
 - 🔍 The two-phase RAG architecture (index then query) and where each Bedrock primitive fits

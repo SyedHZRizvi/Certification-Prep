@@ -658,6 +658,7 @@ D. Daily Scrum
 ## 🎯 Exam-day takeaways
 
 After reviewing these rationales:
+
 - The patterns repeat. Most wrong answers test the *same* misconceptions over and over: PO/SM/Dev role confusion, DoD vs Acceptance Criteria, what *is* in the Scrum Guide vs what *isn't*, the 2020 update changes.
 - Watch for "always" / "never" / "must" wording — Scrum is rarely absolute, but a handful of things ARE absolute (one PO per product, Sprint ≤ 1 month, Review/Retro mandatory).
 - When in doubt, the *coach the team* answer is usually correct for SM-scenario questions.

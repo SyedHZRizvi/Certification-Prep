@@ -90,6 +90,7 @@ Out to internet      →  $$$$
 | **Enterprise** | $15,000+/mo | **< 15 min** business-critical | Dedicated | ✅ + IEM + Concierge |
 
 🔥 Memory hooks:
+
 - < 1 hr = **Business**
 - < 30 min = **Enterprise On-Ramp**
 - < 15 min = **Enterprise**

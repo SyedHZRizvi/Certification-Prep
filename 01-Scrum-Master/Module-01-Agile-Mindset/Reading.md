@@ -206,6 +206,7 @@ That's **ScrumBut**. And the Scrum Guide is brutal: **if you skip parts of Scrum
 ## ✅ Module 1 Summary
 
 You now know:
+
 - 🎯 Why Agile exists (Tony vs. Maria)
 - 📜 The 4 values + key principles
 - 🔬 The 3 pillars of empiricism (Transparency, Inspection, Adaptation)

@@ -838,6 +838,7 @@ After completing this course, you are ready to sit for:
 This course's deliverable is **operational readiness**, not a single certification. After completing it you should be able to launch your AI marketing agency / consultancy.
 
 The relevant industry credentials (if you want a formal cert to display):
+
 - **OMCP — Online Marketing Certified Professional** ($199 USD per specialization, [omcp.com](https://www.omcp.com/))
 - **HubSpot Solutions Partner certification** (free, for agencies)
 - **Adobe Solution Partner Program** (varies; for agencies serving enterprise clients)
@@ -1044,6 +1045,7 @@ The most common cert-buying mistakes:
 ## 📌 Bottom Line
 
 The international certification market is fragmented, but the credible bodies are:
+
 - **PMI** (project management)
 - **Scrum.org + Scrum Alliance** (agile)
 - **CompTIA** (vendor-neutral IT — A+, Network+, Linux+, Server+, Security+)

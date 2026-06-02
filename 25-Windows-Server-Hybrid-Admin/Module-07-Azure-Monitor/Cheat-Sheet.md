@@ -118,6 +118,7 @@ Plus `let`, `take`, `count()`, `percentile()`, `parse`.
 ## 🏆 Exam Power Phrases
 
 When you see these, they're often **correct**:
+
 - ✅ "Use AMA + DCR (MMA is retired)"
 - ✅ "Create one DCR per workload archetype"
 - ✅ "Apply DCR via Azure Policy DINE + remediation"
@@ -126,6 +127,7 @@ When you see these, they're often **correct**:
 - ✅ "Cross-workspace query bills against the queried workspace"
 
 Usually **wrong**:
+
 - ❌ "Install MMA on new servers"
 - ❌ "One DCR per individual machine"
 - ❌ "Log alert for real-time CPU breach (5 min latency)"

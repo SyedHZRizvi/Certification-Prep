@@ -15,6 +15,7 @@
 ## 🍕 A Story: Maya Reads Receipts
 
 Maya's startup pivots. They now build an expense-tracking app that lets users photograph receipts. She needs three things from each image:
+
 1. **OCR** all the text (vendor name, line items, total)
 2. **Classify** the photo (receipt vs not-a-receipt vs blurry-mess)
 3. **Detect faces** in expense photos so she can blur them before storage (privacy compliance)
@@ -129,6 +130,7 @@ Custom Vision lets you train your own image **classification** or **object detec
 ### Two resources
 
 Custom Vision uses **two** separate resources:
+
 - **Training** resource (`CustomVision.Training`) — manage projects, upload images, train iterations
 - **Prediction** resource (`CustomVision.Prediction`) — call the published model from your app
 
@@ -148,6 +150,7 @@ You can also provision **both in one** with the `CognitiveServices` kind, but se
 ### Domains
 
 When you create a project, you pick a **domain**:
+
 - **General** — broad, good default
 - **General [Compact]** — exportable to ONNX / TensorFlow / CoreML for edge/offline use
 - **Food**, **Landmarks**, **Retail** — domain-tuned base models
@@ -213,6 +216,7 @@ PersonGroup (legacy) or DynamicPersonGroup (new)
 ```
 
 Workflow:
+
 1. Create a person group
 2. Add persons + their face images
 3. **Train** the group
@@ -341,6 +345,7 @@ Video Indexer offers embeddable HTML widgets — **Player widget**, **Insights w
 **Situation.** Mercedes-Benz, headquartered in Stuttgart, has been a multi-year strategic Azure customer (Mercedes-Benz / Microsoft strategic partnership announced 2020, expanded 2023 at CES with the integration of ChatGPT in the MBUX infotainment system; verified against Microsoft Customer Stories and Mercedes-Benz Group press releases, checked 2026-05). Beyond the headline LLM integration, Mercedes-Benz uses Azure AI Vision + Azure AI Video Indexer + Azure AI Speech across its connected-vehicle and manufacturing-quality pipelines: e.g., visual quality-control on assembly lines (paint defect detection), driver-facing telematics, and dealer-side service-bay documentation.
 
 **Decision.** For the production-quality use case, Mercedes-Benz combined:
+
 - **Azure AI Vision** Image Analysis 4.0 for general factory-floor anomaly detection (tags + dense captions on every line photo).
 - **Custom Vision** trained on labeled defect images (paint runs, dent shapes, decal misalignment) — using the **General [Compact]** domain so models could be exported to ONNX and run on edge devices alongside the assembly line, gated by network latency.
 - **Azure AI Video Indexer** on dealer-side service-bay video to produce searchable transcripts + OCR (for VIN plate recognition).
@@ -372,6 +377,7 @@ Critically, Mercedes did *not* deploy Face identification — the **Limited Acce
 ## ✅ Module 3 Summary
 
 You now know:
+
 - 👁️ Four vision services and when to pick each
 - 🖼️ Image Analysis 4.0 visual features + the one-call pattern
 - 📄 Read OCR vs Document Intelligence boundaries

@@ -85,12 +85,14 @@ audience  deliverable  proof point
 ## 🏆 Exam Power Phrases
 
 When you see these in answers, they're often correct:
+
 - ✅ "Niche by industry + size + deliverable..."
 - ✅ "Productize the deliverable..."
 - ✅ "Validate with the 100/10/1 test..."
 - ✅ "Same scope, same price, same process..."
 
 When you see these, they're often **wrong**:
+
 - ❌ "Be a full-service marketing partner..."
 - ❌ "Bill hourly to be safe..."
 - ❌ "Take any client who pays..."
@@ -111,6 +113,7 @@ When you see these, they're often **wrong**:
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. The 100/10/1 test? ___
 2. Three wedge axes? ___
 3. Why hourly + AI is bad? ___

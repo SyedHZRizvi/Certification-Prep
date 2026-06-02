@@ -306,6 +306,7 @@ This is the actual exercise you should complete before Module 2. Block 5 morning
 ### Day 1 — List your unfair advantages
 
 Write down:
+
 - Industries you've worked in for 3+ years
 - Channels you have shipped real results in
 - Communities/networks you have actual reputation in
@@ -315,11 +316,13 @@ Write down:
 ### Day 2 — Brainstorm 12 potential wedges
 
 For each, write the 100/10/1 in one sentence:
+
 - "AI-powered ___ for ___ (industry/size/geo) — solving ___"
 
 ### Day 3 — Stress-test the top 5
 
 For each of your top 5, answer:
+
 - Can you list 100 named companies?
 - Can you find 10 watering holes?
 - Can you state the one painful, undersolved problem they all share?
@@ -377,6 +380,7 @@ Pick one wedge. Write your positioning sentence. Set a 6-month metric ("I will h
 ## ✅ Module 1 Summary
 
 You now know:
+
 - 🎯 Why niching is non-negotiable for new agency founders (and worth 3–8x more per hour)
 - 🧪 The 100/10/1 niche test
 - 🔪 The three wedge axes (vertical, channel, deliverable) and stacked wedges

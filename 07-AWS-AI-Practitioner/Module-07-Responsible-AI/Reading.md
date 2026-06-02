@@ -79,6 +79,7 @@ Two terms the exam uses almost interchangeably — but with a subtle difference:
 | **Explainability** | The model is too complex to interpret directly, so you build *post-hoc explanations* (e.g., feature importance, counterfactuals) — common for deep learning and LLMs |
 
 Common explainability techniques (recognize the names):
+
 - **SHAP (SHapley Additive exPlanations)** — per-prediction feature attribution
 - **LIME (Local Interpretable Model-Agnostic Explanations)** — local linear approximation around a prediction
 - **Partial Dependence Plots (PDP)** — how one feature affects predictions on average
@@ -120,6 +121,7 @@ Bedrock Guardrails are the single most-tested AWS feature in Domain 4. Know each
 | **Image content filters** | (Newer) Filter image inputs/outputs in multimodal models |
 
 Where Guardrails apply:
+
 - **Input** — block / redact what the user sends
 - **Output** — block / redact what the model returns
 - Reusable across **any FM in Bedrock**, **Agents**, and **Knowledge Bases**
@@ -171,6 +173,7 @@ A model is **robust** if it performs well under varied, noisy, or adversarial in
 - **Model theft** — extracting a copy of the model via many queries
 
 Defenses:
+
 - **Red-teaming** — proactively testing your AI for failure modes (Bedrock supports red-team testing in Model Evaluation)
 - **Guardrails + content filters** at runtime
 - **Robust training** — adversarial training, data augmentation
@@ -194,6 +197,7 @@ Responsible AI isn't just a model engineer's job. The exam touches on **AI gover
 | **Compliance mapping** | Map to frameworks: NIST AI RMF, ISO/IEC 42001, EU AI Act |
 
 External references the exam may name:
+
 - **NIST AI Risk Management Framework (AI RMF)** — US federal framework for AI risk
 - **ISO/IEC 42001** — international AI management system standard
 - **EU AI Act** — EU regulation classifying AI systems by risk (limited use, high risk, prohibited)
@@ -266,10 +270,12 @@ You don't need to memorize numbers — just recognize that this is part of "Resp
 The ruling was tiny in dollars and enormous in precedent. By March 2024, it was being cited in legal trade press around the world. By mid-2024, in-house counsel and Chief Risk Officers across regulated industries explicitly used the case to justify investment in Bedrock Guardrails, RAG over verified policy sources, human-in-the-loop fallback for high-stakes customer interactions, and **model cards** documenting the chatbot's intended use and limitations.
 
 In parallel, two other 2023–2024 cases reinforced the trend:
+
 - The **NYC AI Bias Hiring Law (Local Law 144)**, in force July 5, 2023, requires bias audits and candidate notification for any "automated employment decision tool" used on NYC jobs. Penalties: $500–$1,500 per violation per day.
 - The **EU AI Act** (Regulation (EU) 2024/1689) classifies AI systems by risk tier (unacceptable, high, limited, minimal), in force from 1 Aug 2024 with phased obligations through 2026. "High-risk" tier (employment, credit, education, law enforcement) triggers mandatory risk management, data governance, transparency, human oversight, and conformity assessment.
 
 **Lesson for the exam / for practitioners.** Four AIF-C01 talking points anchor here:
+
 1. **The company is responsible for the AI's output. Period.** Air Canada's "the chatbot did it" defense failed because legally, deploying an AI is equivalent to publishing the content yourself. The exam tests this through scenarios where the right answer involves **Bedrock Guardrails (contextual grounding check + denied topics + PII filter)**, **invocation logging for audit**, and **human-in-the-loop via Amazon A2I** for high-stakes outputs.
 2. **Hallucination is now a legally enforceable risk, not a research curiosity.** "The model made it up" is not a defense. The standard response pattern: **RAG over a *verified* source of truth + grounding check + citations + human review for high-stakes cases.** Module 5's RAG architecture is your concrete answer.
 3. **Documentation matters.** SageMaker **Model Cards** and AWS **AI Service Cards** are not paperwork bureaucracy — they're the artifacts that show "we knew what this system could and couldn't do; we configured it accordingly; we documented intended use." Post-Air Canada, they're effectively pre-litigation insurance.
@@ -287,6 +293,7 @@ In parallel, two other 2023–2024 cases reinforced the trend:
 ## ✅ Module 7 Summary
 
 You now know:
+
 - 🧭 The AWS Responsible AI pillars (Fairness, Explainability, Robustness, Privacy & Security, Transparency, Governance, Safety, Controllability, Veracity, Inclusivity)
 - ⚖️ Where bias enters AI systems and how to measure fairness
 - 🔍 Explainability vs interpretability and the SHAP / LIME family of techniques

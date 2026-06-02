@@ -100,6 +100,7 @@
 ## 🏆 Exam Power Phrases
 
 ✅ Often **right**:
+
 - "Check MDM compliance first when corporate email fails"
 - "Selective wipe — only corporate data"
 - "Lock before wipe for lost phones"
@@ -107,6 +108,7 @@
 - "Stop using a swollen battery"
 
 ❌ Often **wrong**:
+
 - "Reset to factory as first step"
 - "Use SMS MFA for high-value accounts"
 - "Charge from any public USB port"

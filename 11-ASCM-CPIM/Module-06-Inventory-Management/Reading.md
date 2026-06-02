@@ -16,6 +16,7 @@
 **Saito Books** in Tokyo had 14,000 SKUs and was bleeding cash. Stockouts on the bestsellers, dusty stacks of obscure poetry, $4M in inventory carrying cost.
 
 The new manager, Aki, ran an **ABC analysis**. She found:
+
 - **A items** (the top 12% of SKUs) = 70% of revenue → 380 bestsellers
 - **B items** (next 25%) = 22% of revenue → 1,750 mid-runners
 - **C items** (bottom 63%) = 8% of revenue → 11,870 long-tail titles
@@ -69,6 +70,7 @@ EOQ = √(2 × D × S / H)
 ```
 
 Where:
+
 - **D** = annual demand (units/year)
 - **S** = ordering / setup cost per order ($)
 - **H** = holding cost per unit per year ($/unit/year)
@@ -136,6 +138,7 @@ SS = z × σ_LT
 ```
 
 Where:
+
 - **z** = service-level factor (from normal table)
 - **σ_LT** = standard deviation of demand during lead time
 
@@ -329,6 +332,7 @@ The CPIM exam-takeaway: **inventory KPIs are leading indicators of strategy mism
 ## ✅ Module 6 Summary
 
 You now know:
+
 - 🎯 The 6 functions of inventory (cycle, safety, anticipation, transit, hedge, decoupling)
 - 💰 The 4 inventory costs (ordering, carrying, stockout, item)
 - 📐 EOQ formula + how to compute it

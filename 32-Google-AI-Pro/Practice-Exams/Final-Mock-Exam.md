@@ -5,6 +5,7 @@
 > Take this 2–3 days before booking the real exam. Score 48+ before declaring yourself ready.
 
 This exam mirrors the Google Cloud Generative AI Leader format (50–60 questions / 90 minutes) and weights across all 10 modules:
+
 - Module 1 (Google AI Landscape + Gemini Family): ~10% → 6 questions
 - Module 2 (AI Studio + Gemini API): ~10% → 6 questions
 - Module 3 (Vertex AI Platform): ~12% → 7 questions

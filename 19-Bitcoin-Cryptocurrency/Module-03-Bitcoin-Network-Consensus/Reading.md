@@ -94,6 +94,7 @@ The **double-SHA-256 of the 80 bytes** is the block hash, which must be ≤ the 
 ### The first transaction: coinbase
 
 Every block's transaction[0] is the **coinbase transaction**:
+
 - Has no inputs (or rather: one "input" that's a placeholder with arbitrary data — the "coinbase field")
 - Outputs the **block subsidy + total fees** to addresses chosen by the miner
 - The coinbase field can contain arbitrary data — historically used for messages (Genesis block's *Times* headline), version signaling (BIP-9 bits), AsicBoost reservation, and pool branding
@@ -269,12 +270,14 @@ A **hard fork** changes the rules in a way that *invalidates* previously-valid b
 **Decision.** After two years of acrimonious debate ("Block Size Wars"), the small-block / SegWit faction activated **SegWit via BIP-141** in **August 2017** as a soft fork. The big-block faction — led by Bitmain's Jihan Wu, Roger Ver, and Amaury Séchet — broke off and **forked the chain at block 478,558 on August 1, 2017**, creating **Bitcoin Cash (BCH)**.
 
 **Outcome.** Two chains exist post-fork. Anyone with BTC before block 478,558 received an equal amount of BCH automatically. Over the following years:
+
 - Bitcoin (BTC) market cap grew ~30× from August 2017 to peak (Nov 2021).
 - Bitcoin Cash (BCH) market cap declined as a fraction of BTC's, ultimately settling around 1–3%.
 - A further BCH faction split off in November 2018, forming **Bitcoin SV (BSV)** under Craig Wright.
 - A second BCH split (BCH-ABC vs eCash / XEC) followed in November 2020.
 
 **Lesson for the exam / for practitioners.** Three principles every exam tests:
+
 1. **Hard forks create permanent chain splits.** Unlike soft forks, where non-upgrading nodes still see the chain, hard-fork dissenters get their own chain *and* their own coin (and the market decides which has value).
 2. **The market — not the hashrate — decides the "real" chain.** BCH had significant hashpower at fork time (Bitmain pointed mining capacity at it). The market priced BTC at ~10× BCH within months.
 3. **Soft-fork governance has lower coordination cost than hard-fork governance.** Every Bitcoin Core upgrade since SegWit has been a soft fork (Taproot in 2021, etc.). The BCH faction's experience — repeated re-splitting, market irrelevance — is the cautionary tale Bitcoin Core developers cite when justifying soft-fork-only governance.

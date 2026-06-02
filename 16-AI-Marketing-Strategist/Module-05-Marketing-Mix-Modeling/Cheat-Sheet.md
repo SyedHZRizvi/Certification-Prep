@@ -109,6 +109,7 @@ Within channel →  MTA / DDA / platform optimizer
 ## 🏆 Exam Power Phrases
 
 ✅ Often correct:
+
 - "MMM is immune to ATT / ITP because it's aggregate..."
 - "Calibrate MMM with incrementality test results..."
 - "Marginal ROAS < blended ROAS due to saturation..."
@@ -116,6 +117,7 @@ Within channel →  MTA / DDA / platform optimizer
 - "Baseline accounts for 50–80% of revenue..."
 
 ❌ Often wrong:
+
 - "MMM is dead because we have MTA..."
 - "MMM needs 5+ years of data..."
 - "One MMM ROAS number is absolute truth..."

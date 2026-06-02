@@ -357,6 +357,7 @@ C. Reformat
 D. Replace SSD
 
 ### 59 (Scenario PBQ). Match the symptom to the cause:
+
 - (a) Files renamed with `.locked` extension
 - (b) Browser redirects to ads
 - (c) BSOD MEMORY_MANAGEMENT

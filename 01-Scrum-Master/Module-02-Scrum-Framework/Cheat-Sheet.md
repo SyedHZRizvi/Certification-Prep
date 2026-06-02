@@ -84,6 +84,7 @@
 ## 🎯 Exam Power Phrases
 
 ✅ Often correct:
+
 - "The team self-organizes"
 - "Scope is negotiated with the Product Owner"
 - "Inspect and adapt"
@@ -91,6 +92,7 @@
 - "Only the PO can cancel"
 
 ❌ Often wrong:
+
 - "Extend the Sprint"
 - "Skip the [event]"
 - "Lower quality to meet deadline"

@@ -112,6 +112,7 @@ Day 6–7 — Sign + invoice + kickoff
 ## 🏆 Exam Power Phrases
 
 When you see these in answers, they're often correct:
+
 - ✅ "Price the outcome, not the hours..."
 - ✅ "Anchor with a higher reference price..."
 - ✅ "Send a proposal with 3 options..."
@@ -119,6 +120,7 @@ When you see these in answers, they're often correct:
 - ✅ "Include the ROI projection section..."
 
 When you see these, they're often **wrong**:
+
 - ❌ "Quote on the call..."
 - ❌ "Match competitor pricing..."
 - ❌ "Skip the contract for small jobs..."
@@ -141,6 +143,7 @@ When you see these, they're often **wrong**:
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. The 5 pricing mindsets? ___
 2. The good-better-best % each option gets? ___
 3. The 7 proposal sections? ___

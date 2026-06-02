@@ -883,6 +883,7 @@ D. Composable commerce backend (commercetools or Adobe Commerce) + headless fron
 ## 🔍 Review Process
 
 For EACH wrong answer:
+
 1. Identify which Module covered it (1-10)
 2. Re-read that module's Reading.md AND Cheat-Sheet.md
 3. Add to your flashcard deck

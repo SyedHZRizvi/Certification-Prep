@@ -497,6 +497,7 @@ B. No
 ## 🔍 Review Process
 
 For EACH wrong answer:
+
 1. Identify which module covered it (1, 2, or 3)
 2. Re-read the relevant Reading.md section
 3. Add an Anki flashcard or use [Flashcards.md](../Flashcards.md)

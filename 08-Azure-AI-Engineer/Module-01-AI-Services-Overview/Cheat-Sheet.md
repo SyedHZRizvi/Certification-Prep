@@ -86,6 +86,7 @@ Running in Azure?
 ## 🏆 Exam Power Phrases
 
 **Usually right** when you see:
+
 - ✅ "Use a system-assigned managed identity"
 - ✅ "Assign the Cognitive Services User role"
 - ✅ "Multi-service Azure AI services resource"
@@ -94,6 +95,7 @@ Running in Azure?
 - ✅ "Request quota increase, add exponential backoff"
 
 **Usually wrong**:
+
 - ❌ "Store the subscription key in source code"
 - ❌ "Use the Owner role for data-plane calls"
 - ❌ "F0 tier for production"
@@ -126,6 +128,7 @@ Running in Azure?
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. Old name → new name for Form Recognizer? ___
 2. The 3 auth methods, in increasing security order? ___
 3. Header for key-based REST calls? ___

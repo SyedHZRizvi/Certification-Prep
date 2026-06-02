@@ -61,6 +61,7 @@ Alarms watch a metric and trigger when a threshold is crossed.
 **CloudTrail = every AWS API call your account makes, recorded.** Enabled by default for 90 days of "Event history." Create a **Trail** to store events in S3 long-term and integrate with CloudWatch Logs.
 
 🔑 Difference:
+
 - **CloudWatch** = what's the metric / log saying?
 - **CloudTrail** = who called this API and when?
 - **Config** = what is the configuration state of resources?
@@ -72,6 +73,7 @@ Alarms watch a metric and trigger when a threshold is crossed.
 **Config tracks resource configurations over time + evaluates against rules.**
 
 Examples of Config Rules:
+
 - "EBS volumes must be encrypted"
 - "S3 buckets must NOT be public"
 - "IAM users must have MFA enabled"
@@ -134,6 +136,7 @@ SSM is a Swiss Army knife of operations tools:
 ## 💵 AWS Pricing Models — The Big Picture
 
 AWS pricing follows 3 fundamental laws:
+
 1. **Pay for what you use** (no upfront — except RIs / Savings Plans by choice)
 2. **Pay less when you reserve** (commit for 1- or 3-year)
 3. **Pay even less with volume tiering** (S3, data transfer)
@@ -306,6 +309,7 @@ There are **4 paid support tiers** (plus "Basic" which is free):
 **Situation.** Pinterest had been all-in on AWS since 2011, scaling to ~450 million monthly active users by 2019. Their AWS bill — reported publicly in their 2018 S-1 IPO filing as "a substantial portion of cost of revenue" — was roughly $100M/year in 2018 and climbing fast as ad spend grew. The CFO and CTO both saw the same problem from different sides: "Are we spending efficiently, or are we paying AWS to host idle EC2?"
 
 **Decision.** Pinterest's infrastructure team (under VP of Engineering Yashwanth Nelapati) launched a sustained cost-optimization program with five named workstreams (documented in Pinterest Engineering blog posts 2019–2022 and Pinterest's 2020 + 2021 10-K filings):
+
 1. **Reserved Instance + Savings Plan portfolio management.** They moved baseline workloads (~60% of fleet) from On-Demand to 3-year Compute Savings Plans, locking in 50–60% discounts.
 2. **Right-sizing via Compute Optimizer.** Identified ~$8M/year of EC2 instances running below 20% utilization; downsized or terminated.
 3. **Spot Instance expansion.** Moved ~40% of non-latency-critical batch (ML training, log processing, image transcoding) to Spot, saving ~70% on those workloads.
@@ -326,6 +330,7 @@ There are **4 paid support tiers** (plus "Basic" which is free):
 ## ✅ Module 7 Summary
 
 You now know:
+
 - 👁️ CloudWatch (metrics + logs + alarms), EventBridge for state-change routing
 - 📜 CloudTrail (API audit) vs Config (resource config drift)
 - ⚙️ Systems Manager (Session Manager, Patch Manager, Parameter Store)

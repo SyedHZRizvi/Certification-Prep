@@ -51,6 +51,7 @@ Begin with [Module 1: SCM Foundations & Strategy →](./Module-01-SCM-Foundation
 ## 🎯 What You'll Learn
 
 By the end of this track, you'll be able to:
+
 - Map an end-to-end supply chain with SCOR 13.0 vocabulary (Plan, Source, Make, Deliver, Return, Enable)
 - Design supply chain networks — facility location, make-or-buy, segmentation, outsourcing
 - Forecast demand using both qualitative methods and quantitative techniques (MA, ES, regression, MAD/MAPE)
@@ -98,6 +99,7 @@ By the end of this track, you'll be able to:
 🔗 **ASCM CSCP Learning System** (the official prep) — chapters mirror the exam blueprint. Read each module at least twice. The exam pulls vocabulary and frameworks directly from this body of knowledge, so know APICS dictionary definitions cold.
 
 Free supplements:
+
 - 🔗 [ASCM CSCP Exam Content Manual (ECM)](https://www.ascm.org/learning-development/certifications/cscp/) — the official blueprint
 - 🔗 [APICS Operations Management Body of Knowledge (OMBOK)](https://www.ascm.org/) — the underpinning glossary
 - 🔗 [APICS Dictionary (16th edition)](https://www.ascm.org/) — definitions are tested verbatim

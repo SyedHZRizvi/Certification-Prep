@@ -52,6 +52,7 @@ Begin with [Module 1: LLM Architecture & Tokenization →](./Module-01-LLM-Archi
 ## 🎯 What You'll Master
 
 By the end of this course, you'll be able to:
+
 - Explain the transformer architecture — attention, residual connections, positional encodings, decoder-only vs encoder-decoder — well enough to *debug* a misbehaving generation
 - Tokenize text with BPE, SentencePiece, and tiktoken; estimate token counts; build a context-budget calculator
 - Choose the right embedding model (OpenAI text-embedding-3, Cohere embed-v3, Voyage AI, BGE, E5) for the right task, and explain why
@@ -108,6 +109,7 @@ By the end of this course, you'll be able to:
 - 🟦 **[DeepLearning.AI Short Courses](https://learn.deeplearning.ai/)** — 1-hour focused courses on RAG, agents, evals, fine-tuning
 
 Honorable mentions:
+
 - 📘 *Hands-On Large Language Models* (Jay Alammar & Maarten Grootendorst, O'Reilly 2024) — best book on the topic in 2026
 - 📘 *Building LLM Powered Applications* (Valentina Alto, Packt 2024) — solid LangChain reference
 - 📘 *Generative Deep Learning, 2nd Ed.* (David Foster, O'Reilly 2023) — broader scope, includes diffusion

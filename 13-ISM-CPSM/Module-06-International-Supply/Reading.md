@@ -25,6 +25,7 @@ The buyer's category manager didn't know that. He thought "FOB" meant "Free On B
 ## 🗺️ Why International Supply Is Different
 
 Buying domestically:
+
 - One currency
 - One legal system
 - One language and culture
@@ -32,6 +33,7 @@ Buying domestically:
 - Mostly familiar tax / customs
 
 Buying internationally adds:
+
 - Currency conversion + volatility
 - Multiple legal systems (CISG, local laws)
 - Cultural and language gaps
@@ -48,6 +50,7 @@ The CPSM-trained leader anticipates every one of these.
 ## 📦 Incoterms 2020 — MEMORIZE THESE
 
 Incoterms (International Commercial Terms) are an **ICC** (International Chamber of Commerce) standardized set of 11 terms that specify:
+
 - Who arranges and pays for shipping
 - Who insures
 - Where **risk** transfers from seller to buyer
@@ -268,6 +271,7 @@ Edward T. Hall (*Beyond Culture*, 1976, Anchor) and *The Silent Language* (1959,
 Stanley Black & Decker — the $14B tool, fastener, and storage manufacturer — had moved much of its Craftsman/DeWalt/Stanley production to China and Southeast Asia in the 2000s-2010s. By 2022, ~50% of its product cost came from China, and Section 301 tariffs were dragging operating margin by ~250 basis points.
 
 **Decision.** Starting in late 2022, Stanley's supply leadership executed a multi-prong nearshoring + reshoring program:
+
 1. **Mexico ramp-up under USMCA.** Stanley invested in new facilities and qualified Mexican Tier-1 suppliers; finished goods produced in Mexico from USMCA-qualifying inputs enter the US **tariff-free** with a proper Certificate of Origin.
 2. **Reshoring of high-mix US production.** Stanley invested $90M in a Fort Worth, Texas, DeWalt facility (announced 2021, operational 2023).
 3. **Selective retention in China** for items where the labor-cost arbitrage still exceeded tariff + freight + risk premiums.
@@ -279,6 +283,7 @@ Hasbro (toys) ran a parallel playbook: shifting toy production from China to Vie
 **Outcome.** Stanley reduced China cost-of-goods exposure from ~50% to ~35% by 2024. Operating margin recovered. The reshoring wave was real: US **construction spending on manufacturing facilities** rose from ~$80B/year (2019) to ~$240B/year by mid-2024 (US Census data) — much of it driven by CHIPS Act subsidies but also by the broader nearshoring thesis. By 2025, Mexico had surpassed China as the **#1 source of US imports** (calendar 2023 first, sustained through 2024).
 
 **Lesson for the exam / for practitioners.** This is the textbook **FTA + tariff response**:
+
 - **Certificate of Origin work** under USMCA is non-negotiable — without it, the preferential tariff is lost.
 - **Tariff engineering** (legitimately reclassifying products to apply different HTS codes) is a legitimate supply lever and a 2024-2026 hot topic.
 - **Nearshoring is not always the right answer** — Stanley kept selected China production where the economics still worked.
@@ -358,6 +363,7 @@ When a CPSM scenario asks "BEST response to a new tariff regime," the answer is 
 ## ✅ Module 6 Summary
 
 You now know:
+
 - 🌍 Why international supply is fundamentally different
 - 📦 All 11 Incoterms 2020 and the responsibility matrix
 - 💱 FX exposure types and hedging tools

@@ -28,6 +28,7 @@ Defined in **RFC 1034** and **RFC 1035** (Paul Mockapetris, 1987). DNS translate
 1. Browser asks the OS's **stub resolver** for `www.example.com`
 2. Stub resolver asks its configured **recursive resolver** (often the ISP's, or 1.1.1.1, 8.8.8.8)
 3. If recursive resolver doesn't have it cached, it queries:
+
    - A **root server** (.) — "Who handles .com?"
    - A **TLD server** (.com) — "Who handles example.com?"
    - An **authoritative server** for example.com — "What's the A record for www?"
@@ -338,6 +339,7 @@ This is a high-impact PBQ scenario — N10-009 increasingly tests email anti-spa
 **Decision.** When the attack started at 11:10 UTC, Dyn's authoritative DNS servers in the eastern US were unable to respond to queries. Customer applications (Twitter, GitHub, Reddit, Spotify, NYT, Airbnb, …) were operating perfectly; their IP addresses were unchanged. But because browsers couldn't *resolve* the hostnames, no traffic flowed.
 
 **Outcome.** ~11 hours of intermittent outages, three attack waves, ~1.2 Tbps peak. Recovery required:
+
 1. Aggressive filtering at upstream networks (Akamai, Verizon, Level 3 / CenturyLink)
 2. Geographic spreading of attack as Dyn's anycast absorbed traffic
 3. Eventually, attackers stopped (no evidence of them being defeated; they likely just moved on)
@@ -345,6 +347,7 @@ This is a high-impact PBQ scenario — N10-009 increasingly tests email anti-spa
 In the post-mortem, the industry adopted the **secondary DNS provider** pattern: large companies now publish their authoritative DNS at **two unrelated providers** (e.g., Cloudflare + AWS Route 53) so a single-provider outage doesn't break name resolution. Cloudflare's "DNS as a Service" market share grew rapidly in 2017-2020.
 
 **Lesson for the exam / for practitioners.** Pull together every service in this module:
+
 - **DNS is the single most critical network service** — when it fails, *nothing* else matters
 - **NS records** point to authoritative servers; you can list multiple (even at different providers)
 - **TTLs** determine how long resolvers cache results — short TTLs let you fail over quickly, long TTLs reduce query load
@@ -364,6 +367,7 @@ This case is exactly what Network+ tests when asking about DNS resilience, NS re
 ## ✅ Module 5 Summary
 
 You now know:
+
 - 🌐 **DNS** — records (A, AAAA, CNAME, MX, PTR, TXT, NS, SOA, SRV), resolution flow, UDP 53 vs TCP 53, anti-spam TXT records (SPF/DKIM/DMARC)
 - 📥 **DHCP** — DORA process, scopes, reservations, relays, ports 67/68
 - ⏰ **NTP** — UDP 123, stratum hierarchy, critical for auth systems

@@ -39,6 +39,7 @@
 
 ## 🌟 Hybrid
 Mix predictive + agile. Good when:
+
 - Mixed certainty levels
 - Regulated + innovative parts
 - Hard deadlines + evolving requirements

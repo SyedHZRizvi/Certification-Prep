@@ -190,6 +190,7 @@ Two services almost always appear together:
 ```
 
 ASG benefits:
+
 - **Elasticity** — capacity matches demand
 - **Cost savings** — scale in when traffic dies
 - **Self-healing** — replace unhealthy instances automatically
@@ -270,6 +271,7 @@ ASG benefits:
 **Situation.** Lyft (founded 2012 as a Zimride pivot) faced an impossible compute problem: ride demand spikes 5× to 8× on Friday and Saturday nights versus Tuesday afternoons, on top of regional events (Super Bowl, ComicCon, New Year's Eve). The dispatch engine — which matches drivers to riders in < 200 ms anywhere in the US — must never go down. Building a fixed-capacity data center for the peak meant 60–70% of servers sat idle during weekdays.
 
 **Decision.** Lyft went all-in on AWS in 2012, with EC2 as the primary compute substrate. Engineering decisions, per Lyft engineering blog posts (2017–2023) and a 2019 AWS re:Invent case talk:
+
 - **General-purpose `m5` instances** for the dispatch service, behind ALB, in Auto Scaling Groups that scaled aggressively on CloudWatch CPU + custom queue-depth metrics.
 - **Spot Instances (up to ~50% of the fleet at off-peak)** for fault-tolerant batch — fare-calculation backfills, pricing-model retraining, log aggregation.
 - **GPU `g4dn` / `p3` instances** for the ML pipelines that compute surge pricing and ETA predictions, mostly via SageMaker (Lyft is a SageMaker reference customer).
@@ -292,6 +294,7 @@ By 2019 Lyft disclosed in its S-1 (IPO filing) that it had a "minimum AWS commit
 ## ✅ Module 2 Summary
 
 You now know:
+
 - 🖥️ EC2 = rent a VM; 5 instance families (general, compute, memory, storage, accelerated)
 - 💰 6 pricing models (On-Demand, Reserved, Savings Plan, Spot, Dedicated Host, Dedicated Instance)
 - 🐳 ECS/EKS = orchestrate containers; Fargate = serverless launch type

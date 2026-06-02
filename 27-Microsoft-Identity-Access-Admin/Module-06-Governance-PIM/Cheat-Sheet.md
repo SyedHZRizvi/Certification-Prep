@@ -126,6 +126,7 @@ Schedule: daily by default; on-demand for testing.
 ## 🏆 Exam Power Phrases
 
 When you see these, they're often **correct**:
+
 - ✅ "PIM Eligible + JIT activation"
 - ✅ "Require MFA + justification + approval on activation"
 - ✅ "Quarterly access review with auto-Remove on no response"
@@ -134,6 +135,7 @@ When you see these, they're often **correct**:
 - ✅ "Connected organization for cross-tenant access packages"
 
 When you see these, often **wrong**:
+
 - ❌ "PIM in P1"
 - ❌ "User self-approves activation"
 - ❌ "Lifecycle Workflows are part of P2"

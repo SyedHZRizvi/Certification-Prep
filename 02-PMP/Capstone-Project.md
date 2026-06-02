@@ -29,6 +29,7 @@ You will produce **six discrete artifacts**, each in a format a real PM would de
 ### 1. Project Charter (≈ 4–6 pages)
 
 A formal Charter that:
+
 - States the project's purpose and links it to MidLand's strategic objectives + the merger's investment thesis ($8M synergies, regulator obligations, public Board commitment).
 - Specifies measurable objectives (timing, budget, value).
 - Names the Sponsor(s), the PM, the Steering Committee, and the assignment of authority.
@@ -51,6 +52,7 @@ Reference: PMBOK 7 §3.3; Mendelow 1981 (Power-Interest); Mitchell-Agle-Wood 199
 ### 3. Risk Register (≈ 25–35 risks)
 
 A working Risk Register with:
+
 - At least **25 distinct risks** — mix of threats and opportunities, covering technical, schedule, regulatory, financial, people, and reputational categories.
 - Per risk: ID, description, category, probability (qualitative + numeric estimate), impact ($ where possible), risk score, response strategy (one of the 5 threat or 5 opportunity strategies), owner, status.
 - Three of the top 5 risks have detailed *response plans* (e.g., for "PaySnap engineers leave" — a specific retention package + knowledge-transfer plan).

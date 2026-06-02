@@ -129,6 +129,7 @@ Output JSON:
 ### G-Eval (Liu et al. 2023) refinements
 
 The G-Eval paper added two key ideas:
+
 1. **Chain-of-thought scoring** — judge explains BEFORE rating (CoT principle from Module 3)
 2. **Probability-weighted scores** — average the scores across N judge samples for stability (self-consistency from Module 3)
 
@@ -259,6 +260,7 @@ You have a candidate prompt that beats the current one on the golden set. Should
 ### Statistical significance — the basics
 
 For a binary success metric (correct vs not):
+
 - **Proportion z-test** or **chi-square test** — what you'll use
 - **p-value < 0.05** is the textbook bar (but pre-register your test to avoid p-hacking)
 - **Sample size needed** grows quadratically as the effect shrinks
@@ -266,12 +268,14 @@ For a binary success metric (correct vs not):
   - Detecting 1pt difference at 80% power needs ~40,000 per arm
 
 For continuous metrics (latency, cost):
+
 - **Welch's t-test** or **Mann-Whitney U** (non-parametric)
 - Report **mean ± 95% CI** and **median** — distributions are usually skewed
 
 ### Multi-armed bandits
 
 If you have several candidates and want to allocate traffic dynamically:
+
 - **Thompson sampling** — Bayesian, traffic flows to currently-best arm
 - **UCB1 (Upper Confidence Bound)** — frequentist counterpart
 - Good when continuous learning matters more than clean p-values
@@ -424,6 +428,7 @@ This is what Bea's harness does on every PR. It is the most boring and most valu
 ## ✅ Module 6 Summary
 
 You now know:
+
 - 🧱 The three pillars of LLM eval — programmatic, LLM-as-judge, human
 - 📦 How to assemble a 70-150 example golden set, what goes in it
 - ✅ The programmatic evaluators worth running

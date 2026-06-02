@@ -14,6 +14,7 @@
 October 2024. A 6,500-employee insurance carrier rolls out MFA to "everyone, by Friday." On Monday morning, the IT team turns on Security Defaults. By 10 AM the CFO can't sign in to Excel on her iPad because Authenticator on her phone is in its app-store update loop. By 11 AM she's en route to a board meeting where she presents quarterly earnings — *from a personal laptop she signs in to with her saved Chrome password*, because the bypass route was never closed. By noon, an attacker who'd been quietly trying her credentials for months is now inside, downloading the financial model. By 2 PM the IT team is in war-room mode. The CFO's phone has Authenticator installed by 3 PM. The breach forensics will take six weeks. The press release will say "human error."
 
 What went wrong was not MFA. What went wrong was the *rollout*. They:
+
 - Didn't pilot with combined registration first.
 - Didn't provide a Temporary Access Pass for users whose primary device wasn't ready.
 - Didn't disable legacy auth before enabling MFA, so the attacker's IMAP path stayed open.
@@ -44,6 +45,7 @@ This module is the right rollout. By the end you'll know which methods to enable
 ## ⚙️ The Authentication Methods Policy (THE place to manage methods in 2026)
 
 For years Microsoft had **three** competing places to configure auth methods:
+
 1. **Per-user MFA settings** (legacy, MFA portal — being deprecated)
 2. **SSPR registration policy** (legacy)
 3. **Authentication methods policy** (the modern one)
@@ -70,6 +72,7 @@ Microsoft announced in 2023 that the legacy MFA + SSPR policies would be retired
 ### Targeting methods to groups
 
 In the modern policy, you choose:
+
 - **Method** (e.g. FIDO2)
 - **Enable**: On / Off
 - **Target**: All users, OR specific groups
@@ -112,6 +115,7 @@ FIDO2 → Enable: Yes
 **Combined registration** = a single experience where users register **both** MFA *and* SSPR methods in one flow. This has been the default for all new tenants since 2020 and is mandatory for new rollouts in 2026.
 
 The user signs in for the first time, gets prompted to set up:
+
 1. Microsoft Authenticator (recommended)
 2. Phone (optional fallback)
 3. Email (for SSPR only)
@@ -214,6 +218,7 @@ Windows Hello for Business is biometric (face / fingerprint) or PIN-based sign-i
 | **Cloud-only** | No on-prem AD; pure Entra-joined devices |
 
 Configuration is done via:
+
 - **Intune device configuration** (Identity Protection policy)
 - **Group Policy** (for AD-joined / Hybrid-joined devices)
 - **Provisioning packages** (for OEM imaging)
@@ -233,6 +238,7 @@ Entra-native certificate-based authentication lets users present an X.509 certif
 | Replacing AD FS for CBA | Move CBA from AD FS to Entra directly (no federation needed) |
 
 Configuration:
+
 1. Upload trusted root + intermediate CAs to Entra (CertificateBased AuthN configuration).
 2. Define **certificate-to-user mapping** (subject DN, SAN, etc.).
 3. Configure **authentication binding rules** (e.g. "policy OID X.X.X.X → counts as MFA").
@@ -304,6 +310,7 @@ The correct order:
 ## ✅ Module 3 Summary
 
 You now know:
+
 - 🔐 The hierarchy: Password → MFA → Passwordless → Phishing-resistant
 - ⚙️ The unified Authentication methods policy (legacy per-user MFA is deprecated)
 - 🛡️ Security Defaults vs Conditional Access — pick one, not both
@@ -331,6 +338,7 @@ You now know:
 3. **Phishing-resistant passwordless for all** (2022–2024). Mandated FIDO2 or Windows Hello for Business for all employees with admin role access. Created internal training and shipped Yubikeys to ~150,000 employees. By end of 2024, Microsoft reported ~98% of employee sign-ins occurred passwordless; ~70% of employees had completely removed passwords from their accounts (no password to recover; only FIDO2 + Hello).
 
 **Outcome.** Per Microsoft Digital's published metrics (2024-09):
+
 - **Credential-based attacks against Microsoft IT** fell 95% from 2018 peak.
 - **Password-related help desk calls** dropped 87% (those left were edge cases like new hires waiting for keys).
 - **Sign-in time** fell ~30% (face / Hello / FIDO2 is faster than typing a 24-character password + an Authenticator code).

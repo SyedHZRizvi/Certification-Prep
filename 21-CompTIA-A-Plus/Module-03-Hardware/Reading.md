@@ -395,6 +395,7 @@ Higher tier = less waste heat, less electricity, quieter (smaller fans).
 ## ✅ Module 3 Summary
 
 You now know:
+
 - 🧠 Modern Intel + AMD sockets (LGA 1700, LGA 1851, AM4, AM5)
 - 🧮 DDR4 vs DDR5, DIMM vs SODIMM, ECC vs non-ECC, dual-channel population
 - 🖥️ Motherboard form factors (ATX/mATX/ITX) and what's on a typical board

@@ -137,12 +137,14 @@ CAC typically $800–$2,500 per booked call.
 ## 🏆 Exam Power Phrases
 
 When you see these in answers, they're often correct:
+
 - ✅ "Pick two channels and go deep..."
 - ✅ "Outbound for cashflow, inbound for compounding..."
 - ✅ "Cold email under 110 words..."
 - ✅ "Build a documented referral program..."
 
 When you see these, they're often **wrong**:
+
 - ❌ "Run all 7 channels at once..."
 - ❌ "Wait for referrals to come..."
 - ❌ "Paid ads for any offer..."
@@ -164,6 +166,7 @@ When you see these, they're often **wrong**:
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. 7 channels + Year-1 default pair? ___
 2. PVCC structure? ___
 3. Outbound math (1,000 sends → ?)? ___

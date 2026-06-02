@@ -15,6 +15,7 @@
 | **10** | 4 (even) | N/2 × D | 1 per pair | 2 |
 
 🧠 **DRILL.** 6 × 4 TB:
+
 - RAID 5 = 20 TB · RAID 6 = 16 TB · RAID 10 = 12 TB
 
 🧠 **RAID 10 ≠ RAID 0+1**. Pick 1+0 unless told otherwise.
@@ -133,6 +134,7 @@ NTFS = Windows ACL+journal · ReFS = Win integrity streams · ext4 = Linux defau
 ## 🏆 Exam Power Phrases
 
 ✅ Often **right**:
+
 - "Add a hot spare to shrink the rebuild window"
 - "RAID 10 for databases (write penalty = 2)"
 - "RAID 6 for large bulk arrays (survives 2 fails)"
@@ -141,6 +143,7 @@ NTFS = Windows ACL+journal · ReFS = Win integrity streams · ext4 = Linux defau
 - "Synchronous = metro; async = continental"
 
 ❌ Often **wrong**:
+
 - "RAID 0+1 is the same as RAID 10"
 - "Replication is backup"
 - "Thin provisioning has no risk"
@@ -164,6 +167,7 @@ NTFS = Windows ACL+journal · ReFS = Win integrity streams · ext4 = Linux defau
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. 8 × 4 TB RAID 6 usable? ___
 2. SAN vs NAS — block or file? ___
 3. iSCSI port? ___

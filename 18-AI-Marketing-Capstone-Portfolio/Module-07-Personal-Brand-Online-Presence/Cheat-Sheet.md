@@ -166,16 +166,19 @@ Memorize. Use 30+ times.
 ## 🏆 Power Phrases In Posts
 
 When opening:
+
 - ✅ "Last [time period], I [specific action]..."
 - ✅ "3 hours into [project], I hit [problem]..."
 - ✅ "I used to think [X]. Now I think [Y]. Here's why:"
 
 When CTA'ing:
+
 - ✅ "Full write-up + screenshots: [link]"
 - ✅ "If you're working on [similar problem], DM me"
 - ✅ "Repo + Loom in Featured ↓"
 
 Avoid:
+
 - ❌ "Comment YES if you agree!"
 - ❌ "Tag a friend who needs this!"
 - ❌ "Like and follow for more!"

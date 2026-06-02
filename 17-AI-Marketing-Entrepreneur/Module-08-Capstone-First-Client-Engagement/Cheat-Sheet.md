@@ -151,6 +151,7 @@ RETAINER: $X/mo, 6-mo minimum
 ## 🏆 Exam Power Phrases
 
 When you see these in answers, they're often correct:
+
 - ✅ "Listen 70% of the call..."
 - ✅ "Send proposal within 48 hours..."
 - ✅ "Recap email within 30 min..."
@@ -158,6 +159,7 @@ When you see these in answers, they're often correct:
 - ✅ "Friday weekly status email..."
 
 When you see these, they're often **wrong**:
+
 - ❌ "Pitch on the discovery call..."
 - ❌ "Quote a price during the call..."
 - ❌ "Wait for the client to reach out..."
@@ -181,6 +183,7 @@ When you see these, they're often **wrong**:
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. The 12-step playbook? ___
 2. The PACT-O framework? ___
 3. Friday status email components? ___

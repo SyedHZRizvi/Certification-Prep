@@ -132,6 +132,7 @@ else:
 ## 🏆 Exam Power Phrases
 
 ✅ Often **right**:
+
 - "Hybrid retrieval (dense + BM25) with metadata pre-filter"
 - "Reranker between retrieval and generation"
 - "Citation-required prompt with refusal license"
@@ -139,6 +140,7 @@ else:
 - "Source-trust tier + pre-filter"
 
 ❌ Often **wrong**:
+
 - "Long context replaces RAG"
 - "Top-k=3 of pure dense retrieval"
 - "Skip pre-retrieval rewriting"

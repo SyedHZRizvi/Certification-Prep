@@ -138,6 +138,7 @@ WantedBy=multi-user.target           # what `enable` hooks into
 ## 🏆 Exam Power Phrases
 
 When you see these in answers, they're often **right**:
+
 - ✅ "Run `systemctl daemon-reload` after editing unit files"
 - ✅ "Use `systemctl edit <unit>` to create a drop-in"
 - ✅ "Add `nofail` to fstab for optional mounts"
@@ -145,6 +146,7 @@ When you see these in answers, they're often **right**:
 - ✅ "`Wants=` for weak dependency, `Requires=` for strong"
 
 When you see these, they're often **wrong**:
+
 - ❌ "Edit `/boot/grub2/grub.cfg` directly"
 - ❌ "Edit `/lib/systemd/system/<unit>.service`"
 - ❌ "`After=` means depends-on"
@@ -167,6 +169,7 @@ When you see these, they're often **wrong**:
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. Order the 6 boot stages from power-on to login prompt. ___
 2. Where do you persistently edit GRUB on Ubuntu, and what command rebuilds it? ___
 3. Difference between `After=` and `Requires=`? ___

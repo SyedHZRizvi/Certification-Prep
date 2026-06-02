@@ -149,6 +149,7 @@ Apply higher maturity to **strategic** items only.
 ## ✏️ Quick Self-Check
 
 Cover and recite:
+
 1. RFI vs RFP vs RFQ ___
 2. Kraljic strategies for each quadrant ___
 3. TCO buckets ___

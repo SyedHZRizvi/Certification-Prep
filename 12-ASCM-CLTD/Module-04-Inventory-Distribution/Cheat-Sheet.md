@@ -103,12 +103,14 @@ ABC-XYZ matrix: A-X → JIT, C-Z → drop or kit.
 ## 🏆 Exam Power Phrases
 
 Usually CORRECT:
+
 - ✅ "Reorder on Inventory Position, not on-hand"
 - ✅ "Centralizing inventory reduces total SS via √N"
 - ✅ "Bullwhip cure = share POS, smaller batches"
 - ✅ "Postponement reduces forecast error"
 
 Usually WRONG:
+
 - ❌ "DRP and MRP are the same"
 - ❌ "Higher service is always better"
 - ❌ "Push is always best"

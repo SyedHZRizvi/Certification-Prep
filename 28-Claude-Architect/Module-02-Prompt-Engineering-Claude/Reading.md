@@ -490,6 +490,7 @@ ASSISTANT (prefill):
 ## ✅ Module 2 Summary
 
 You now know:
+
 - 🧱 **The anatomy of a Claude prompt** — system, user, prefill, stop sequences
 - 🏷️ **XML tags** as Claude's native structural language
 - 📚 **Few-shot patterns** wrapped in `<examples>` / `<example>` with edge cases

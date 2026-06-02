@@ -9,6 +9,7 @@
 - Admin portal: **intune.microsoft.com**
 - Cloud SaaS — no on-prem servers
 - Uses each platform's native MDM channel:
+
   - Windows MDM stack
   - Apple MDM protocol (requires APNs cert)
   - Android Enterprise APIs (requires Managed Google Play)
@@ -38,6 +39,7 @@
 | Suite | Plan 1 + Plan 2 + EPM + Cloud PKI + Tunnel for MAM + Enterprise App Mgmt |
 
 Bundled in:
+
 - **M365 E3** → Plan 1
 - **M365 E5** → Plan 1 (Plan 2 features sold separately)
 - **EMS E5** → Plan 1 + Entra P2 + AIP P2 + Defender for Cloud Apps
@@ -70,6 +72,7 @@ Bundled in:
 ## 🏢 RBAC + Scope Tags
 
 Built-in roles:
+
 - Intune Administrator (full)
 - Help Desk Operator (read + remote actions)
 - Policy and Profile Manager
@@ -115,6 +118,7 @@ The MAM workhorse. Key settings:
 ## 📲 Company Portal
 
 User-facing front door for:
+
 - Self-service enrollment
 - App catalog (install available apps)
 - Compliance status
@@ -128,6 +132,7 @@ User-facing front door for:
 ## 🏆 Exam Power Phrases
 
 When you see these, they're often **correct**:
+
 - ✅ "App Protection Policy for BYOD without enrollment"
 - ✅ "Settings Catalog for the configuration"
 - ✅ "Scope tags + custom RBAC role for regional admin"
@@ -135,6 +140,7 @@ When you see these, they're often **correct**:
 - ✅ "Exclude beats Include"
 
 When you see these, often **wrong**:
+
 - ❌ "MAM means managing app installations"
 - ❌ "Linux has full Intune feature parity"
 - ❌ "Assign policy directly to a user"

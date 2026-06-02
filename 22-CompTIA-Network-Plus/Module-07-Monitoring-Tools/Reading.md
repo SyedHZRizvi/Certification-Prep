@@ -94,6 +94,7 @@ PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
 ```
 
 What you learn from ping:
+
 - **Reachability** — can I reach this IP at all?
 - **RTT (latency)** — average ms round-trip
 - **Packet loss** — % of pings that didn't reply
@@ -182,6 +183,7 @@ Starting Nmap 7.95 ( https://nmap.org )
 ```
 
 Common scan types:
+
 - `-sS` (SYN scan, "half-open") — most common, requires root
 - `-sT` (TCP connect) — works without root
 - `-sU` (UDP scan) — slower
@@ -382,6 +384,7 @@ Tied into the same SNMP / syslog infrastructure.
 
 **Walkthrough:**
 1. **Measure**, don't guess. From an affected user's PC:
+
    - `ping intranet.corp.local` — RTT 1 ms ✅ (no latency issue at L3)
    - `ping <web server IP>` — same 1 ms
 2. **Application layer** — open Wireshark on the user's PC. Capture for one page load.
@@ -463,6 +466,7 @@ This is a textbook performance investigation — the answer wasn't "the network"
 **Decision.** Cloudflare instrumented the service with extreme telemetry from day one — every layer of the stack producing flow records, structured logs, application metrics, distributed traces. Public-facing metrics: https://radar.cloudflare.com/ (their open Internet observability portal).
 
 A few of the technical practices:
+
 - **Anycast** — `1.1.1.1` advertised from 250+ cities globally; users hit the nearest PoP
 - **Per-PoP latency tracking** — every query's RTT recorded, P50/P90/P99 graphed continuously
 - **NetFlow / IPFIX** at edge routers — bandwidth visibility per region, per AS, per query type
@@ -474,6 +478,7 @@ A few of the technical practices:
 The 1.1.1.1 service is now the **textbook example** of how the monitoring stack — NetFlow + SNMP + syslog + tracing + synthetic monitoring + public dashboards — turns "a network you operate" into "a service you can actually reason about."
 
 **Lesson for the exam / for practitioners.** This case touches every Module 7 concept:
+
 - **Baselines** — Cloudflare's regional latency baselines are what made the 27-second BGP cascade visible
 - **NetFlow / IPFIX** — bandwidth analysis at scale; tracked AS-level traffic shifts
 - **Syslog** — every config change emitted a structured log event, queryable in seconds during the incident
@@ -492,6 +497,7 @@ This case is exactly what Network+ tests when asking, "Why use a baseline?" or "
 ## ✅ Module 7 Summary
 
 You now know:
+
 - 📈 **Performance vocabulary** — latency, jitter, throughput, packet loss, baselines
 - ⏱️ **SLA terms** — MTBF, MTTR, RTO, RPO
 - 🔧 **CLI tools** — ping, traceroute/tracert, nslookup, dig, ipconfig/ifconfig/ip, netstat, arp, nmap, hping, tcpdump, iperf

@@ -95,6 +95,7 @@ Discover (appliance)  →  Assess (right-sizing)  →  Migrate (via ASR / DMS / 
 ## 🏆 Exam Power Phrases
 
 When you see these, they're often **correct**:
+
 - ✅ "Use MARS for branch file backup"
 - ✅ "Use MABS for app-aware SQL/SP/Exchange backup"
 - ✅ "Enable soft delete + immutable vault for ransomware defense"
@@ -105,6 +106,7 @@ When you see these, they're often **correct**:
 - ✅ "ADMT preserves SID History"
 
 Usually **wrong**:
+
 - ❌ "MARS supports SQL VSS backup"
 - ❌ "Change vault redundancy after first backup"
 - ❌ "ASR test failover disrupts production replication"

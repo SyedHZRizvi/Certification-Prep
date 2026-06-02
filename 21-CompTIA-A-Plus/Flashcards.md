@@ -661,6 +661,7 @@
 ## 🎯 BEFORE THE EXAMS
 
 You should be able to instantly answer:
+
 - 6-step troubleshooting methodology AND 7-step malware removal procedure
 - Top 30 ports and protocols (HTTP/HTTPS/SSH/SMB/RDP/DNS/DHCP/SMTP/IMAP/POP3/FTP/SFTP/LDAP/LDAPS)
 - RAID 0/1/5/6/10 minimums + use cases

@@ -22,6 +22,7 @@ Meet Anna. Anna runs a pizza delivery app called *SliceRight* out of her garage 
 **Day 31.** Anna's cousin Raj — a cloud engineer — visits. He says: *"You're paying for capacity you don't usually need, you can't grow fast enough when you DO need it, and you're a 1-person ops team. Move it all to Azure. You'll pay for what you use. They handle the AC."*
 
 Anna moves *SliceRight* to Azure. By Day 60:
+
 - Capital costs dropped to zero (no more $8K servers)
 - A traffic spike auto-scales from 2 VMs to 40 in 90 seconds
 - Anna patches NOTHING — Microsoft does it
@@ -98,6 +99,7 @@ SaaS:       Azure  Azure    Azure        Azure    "Dine at the restaurant"
 
 ### Hybrid is the most exam-tested
 Real companies almost always start hybrid. Patterns to recognize:
+
 - **Lift & shift** — move VMs as-is to Azure (often the first step)
 - **Burst to cloud** — extra capacity goes to Azure during spikes
 - **Backup to cloud** — local primary, Azure secondary (Azure Backup, Azure Site Recovery)
@@ -120,6 +122,7 @@ Microsoft loves grouping things. These six come up *constantly* in scenario ques
 | **Manageability** | Easy to operate at scale (Manageability **of** and **in** the cloud) | "monitor everything", "automate deployment" |
 
 ⚠️ **Reliability vs Availability** is a classic trap:
+
 - **Availability** = "Is it up RIGHT NOW?" (uptime %)
 - **Reliability** = "Can it recover from failure and keep working over time?"
 
@@ -174,6 +177,7 @@ Horizontal scaling (scale OUT):
 Pay only for what you actually use. The opposite of paying $8K for a server that runs at 12% utilization.
 
 Examples:
+
 - **Compute:** per second of VM running time
 - **Storage:** per GB stored per month + per read/write transaction
 - **Bandwidth:** per GB egress (data leaving Azure — INGRESS is free)
@@ -278,6 +282,7 @@ Physical DC    Microsoft  Microsoft  Microsoft
 **Outcome.** ChatGPT Enterprise hit 600,000 paid users by August 2024 — roughly 12 months after launch. OpenAI's revenue run-rate crossed $3.4B annually by mid-2024 (The Information, 2024-06) with consumer ChatGPT Plus subscribers added on top. Azure OpenAI Service, the parallel Microsoft-branded offering for direct enterprise customers, was used by more than 65% of the Fortune 500 by Microsoft's FY24 Q4 earnings call (2024-07-30). Microsoft's *intelligent cloud* segment grew to $28.5B that quarter, with Satya Nadella publicly attributing much of the acceleration to Azure OpenAI. Critically, neither side could have shipped this product as fast on owned infrastructure — the H100 supply chain was over-subscribed for the entire 2023–2024 window.
 
 **Lesson for the exam / for practitioners.** This is the textbook case for the AZ-900's three foundational concepts, all in one deal:
+
 1. **CapEx → OpEx** at the most extreme scale modern computing has ever seen. The cloud isn't just convenient — at frontier-AI workloads it was the *only* path that worked.
 2. **The shared responsibility model in action.** OpenAI owns the model weights, the training data, the inference prompts, and customer compliance posture. Microsoft owns the physical datacenter, the GPU procurement, the cooling, and the network. Each layer matches §1.5 of the Microsoft Cloud Adoption Framework whitepaper precisely.
 3. **Elasticity over predictability.** ChatGPT's traffic profile is *bursty* — a viral tweet can 10× inference load in an hour. Owned hardware can't absorb that without enormous over-provisioning. Azure's auto-scaling consumption model was the design decision that made the product economically viable.
@@ -294,6 +299,7 @@ Satya Nadella explicitly framed this as the realization of the strategy he outli
 ## ✅ Module 1 Summary
 
 You now know:
+
 - ☁️ Why the cloud exists (Anna's pizza shop + Carr's *Big Switch*)
 - 💰 CapEx vs OpEx — and which one the cloud is
 - 🍱 IaaS vs PaaS vs SaaS — who manages what

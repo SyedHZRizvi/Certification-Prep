@@ -74,6 +74,7 @@ Filipino VA: $1,400–$2,400/mo full-time via OnlineJobs.ph.
 ```
 
 Rubric (1–10 each):
+
 - Output quality (35%)
 - AI usage (20%)
 - Speed (15%)
@@ -141,6 +142,7 @@ If less than 3x → broken SOPs, prompt library, or hire.
 ## 🏆 Exam Power Phrases
 
 When you see these in answers, they're often correct:
+
 - ✅ "Hire only when math forces you..."
 - ✅ "Paid work-sample test..."
 - ✅ "AI-native operator..."
@@ -148,6 +150,7 @@ When you see these in answers, they're often correct:
 - ✅ "EOR for international hires..."
 
 When you see these, they're often **wrong**:
+
 - ❌ "Hire to look established..."
 - ❌ "Behavioral interviews suffice..."
 - ❌ "Unpaid 40-hour project..."
@@ -170,6 +173,7 @@ When you see these, they're often **wrong**:
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. The 3 hiring triggers + 1.5x rule? ___
 2. The 5 AI-native traits? ___
 3. The 4-stage interview funnel? ___

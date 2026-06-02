@@ -196,6 +196,7 @@ Two policy types:
 | **Legal hold** | Locked indefinitely until the tag is cleared |
 
 Applied at the **container** level (and inherited by all blobs in it). Policies can be:
+
 - **Unlocked** — admin can edit/remove (testing/dev)
 - **Locked** — even an Owner cannot remove (compliance)
 
@@ -404,6 +405,7 @@ Skipping step 3 (KV without purge protection) blocks CMK entirely. Skipping step
 ## ✅ Module 3 Summary
 
 You now know:
+
 - 🏗️ The 7 storage account kinds and when to pick which
 - 🔁 The 6 redundancy SKUs and what each survives
 - 🌡️ The 4 access tiers and their minimum-duration penalties
@@ -427,6 +429,7 @@ You now know:
 **Situation.** On May 12, 2023, Toyota Motor Corporation disclosed that vehicle location, customer ID, in-car device IDs, and chassis numbers for approximately **2.15 million customers** in Japan had been continuously exposed in the cloud since **November 2013 — more than 9.5 years**. The root cause: a misconfigured cloud storage environment supporting the *T-Connect, G-Link, G-Link Lite, and G-BOOK* connected-vehicle services, where a setting governing the storage container had been set to public-read instead of authenticated-read. Toyota Connected Corporation, the subsidiary running the platform, said the data had been "accessible to anyone with the URL" without account credentials (Toyota press release, *Possibility of Customer Information Leak Due to Misconfiguration of Cloud Environment*, 2023-05-12; *Reuters*, *Toyota says vehicle data of 2 million customers was publicly accessible for a decade*, 2023-05-12).
 
 **Decision.** Toyota's post-incident response and subsequent disclosures (October 2023 expanded the affected count to **roughly 260,000 additional customers** outside Japan and added that vehicle event data — including video — had been exposed since February 2015) hinged on three controls every Azure admin recognizes:
+
 1. **Public network access was enabled at the container/account level**. The default in Microsoft Entra-integrated Azure storage accounts created after 2021 is `--allow-blob-public-access false`, but the *legacy* default was the opposite. Toyota's account predated the safer default by years and had never been migrated.
 2. **No alerting on long-lived public exposure.** Azure Storage emits a `BlobAccessLevel` setting in the resource log; a `Microsoft.Storage/storageAccounts/blobServices/containers/write` event with a public flag should fire a Defender for Cloud or Azure Policy `Audit` finding. Toyota lacked the diagnostic-setting + alert wire-up.
 3. **No periodic posture review.** Microsoft Defender for Storage (GA 2022) detects anonymous access patterns. The control existed; it just was not deployed to that workload.

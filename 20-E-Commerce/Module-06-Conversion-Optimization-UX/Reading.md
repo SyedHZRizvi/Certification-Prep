@@ -147,6 +147,7 @@ Most CRO programs focus on PDP and ignore cart. That's a mistake. Cart-to-checko
 ## 🚪 Checkout — Where Conversion Lives or Dies
 
 Baymard's 2024 checkout research:
+
 - 17% of US online shoppers abandoned an order in the last quarter due to a checkout flow that was "too long/complicated."
 - 49% cite shipping cost (#1 reason).
 - 24% cite "required to create an account" — **always offer guest checkout**.
@@ -241,6 +242,7 @@ Personalization platforms typically lift conversion 3-8% on B2C sites (less than
 **Situation.** By 2010, Booking.com had grown to dominate European hotel reservations. The challenge: how to maintain conversion-rate advantages against a growing field of OTAs (Online Travel Agencies) — Expedia, Trivago, Hotels.com, Airbnb. Marketing spend kept rising; conversion improvements would have to compensate. Founder Geert-Jan Bruinsma had committed to a data-driven engineering culture but the company needed to scale that discipline.
 
 **Decision.** From 2013-2020, Booking.com built (and continuously rebuilt) what would become one of the largest controlled-experimentation platforms in industry. By 2020:
+
 - 1,000+ tests/year running across product, marketing, customer service.
 - Internal "ExP" experimentation platform — handles randomization, variance estimation, sample-ratio mismatch detection, sequential analysis.
 - Decision automation: tests that hit pre-defined criteria (sample size, effect size, p-value, guardrail metrics) auto-promote to 100% rollout.
@@ -252,6 +254,7 @@ Ron Kohavi (LinkedIn / Airbnb / Microsoft) cited Booking.com extensively in *Tru
 **Outcome.** Booking.com became the largest OTA globally in 2018; revenue 2023 was $21.4B. The experimentation platform itself was estimated to contribute 3-8% of annual revenue lift (compounded year over year). The discipline became the moat: it's hard to replicate a 7-year-old experimentation engine in 12 months. The company's quarterly investor calls in 2020-2024 repeatedly cited experimentation as the operating advantage.
 
 **Lesson for the exam / for practitioners.** A/B testing isn't a checkbox; it's a long-term capability. Brands that "run a few tests" without statistical rigor ship false-positive winners and degrade their conversion-rate over time. The discipline that distinguishes high-CVR operators from low-CVR ones is:
+
 1. Pre-register the hypothesis + MDE + sample size.
 2. Run sample-ratio mismatch + guardrail checks before reading.
 3. Accept that 70% of tests show no effect.
@@ -290,6 +293,7 @@ When traffic is too low for A/B testing, qualitative methods carry the load:
 ## 🛍️ Reviews and UGC — The Conversion Compounder
 
 Reviews lift PDP CVR materially. Yotpo's 2024 benchmark:
+
 - Products with 0-9 reviews: 1.5x baseline CVR
 - Products with 10-99 reviews: 2.0x baseline CVR
 - Products with 100+ reviews: 2.8x baseline CVR
@@ -351,6 +355,7 @@ Reviews lift PDP CVR materially. Yotpo's 2024 benchmark:
 ## ✅ Module 6 Summary
 
 You now know:
+
 - 📊 DTC CVR benchmarks by category
 - 🧪 The Kohavi/Tang/Xu trustworthy A/B framework
 - 📐 Sample-size calculation + the 16 × σ² / δ² formula

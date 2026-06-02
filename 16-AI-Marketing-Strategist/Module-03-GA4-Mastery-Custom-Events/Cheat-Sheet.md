@@ -133,6 +133,7 @@ ecommerce.*, items (ARRAY<STRUCT>)
 ## 🏆 Exam Power Phrases
 
 ✅ Often correct:
+
 - "Engaged session = >10s OR conversion OR 2+ views..."
 - "Predictive audiences need 1,000+1,000 in 28 days..."
 - "Free GA4 includes free BigQuery export..."
@@ -140,6 +141,7 @@ ecommerce.*, items (ARRAY<STRUCT>)
 - "Standard reports are unsampled in free GA4..."
 
 ❌ Often wrong:
+
 - "BigQuery export requires 360..."
 - "Bounce rate is GA4's headline engagement metric..."
 - "Custom and recommended events are interchangeable..."

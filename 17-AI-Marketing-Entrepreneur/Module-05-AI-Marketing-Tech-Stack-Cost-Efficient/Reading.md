@@ -67,6 +67,7 @@ It's August 2024. Marcus has just left his corporate marketing job to start his 
 Six weeks in, he has zero clients. His personal savings are dropping by $4K/mo against zero revenue. He starts doomscrolling Indie Hackers.
 
 The audit he eventually does:
+
 - 80% of these tools have overlapping capabilities
 - 60% of them he uses less than once a week
 - 40% of them he never opened after signup
@@ -132,6 +133,7 @@ This is the single most important tool in your stack. Pick ONE primary plus a fr
 ### When to upgrade to Team
 
 Upgrade only when:
+
 - You have 2+ teammates needing shared chats/projects
 - You need admin controls (data not used for training)
 - You have $5K+/mo recurring revenue
@@ -425,6 +427,7 @@ Some real ways to extend free tiers:
 ### Case 1 — Brett Williams / Designjoy ($1.5M ARR solo)
 
 Publicly disclosed components (per podcasts):
+
 - Framer (~$30/mo) for website
 - Trello (~$0–$10/mo) for client requests
 - Notion (~$0) for documentation
@@ -438,6 +441,7 @@ Total publicly suggested stack: **under $100/mo for the core operating layer.** 
 ### Case 2 — Justin Welsh's $5M+ solo operation
 
 Publicly stated stack (newsletter + multiple interviews):
+
 - Notion for content + ops
 - ConvertKit / Beehiiv for newsletter
 - Kit (formerly ConvertKit) Commerce for product sales
@@ -450,6 +454,7 @@ Total publicly suggested core stack: **under $150/mo.**
 ### Case 3 — Anthony Pierri / FletchPMM
 
 Publicly cited tools (LinkedIn posts):
+
 - Figma for positioning slides
 - Notion for client wikis
 - Claude / ChatGPT for ideation
@@ -530,6 +535,7 @@ If you can't answer all four crisply, don't subscribe. Use a free trial. Decide 
 ## ✅ Module 5 Summary
 
 You now know:
+
 - 💸 The 4-question subscription test
 - 🛠️ The 9 stack categories
 - 🤖 LLM decisions (ChatGPT vs Claude vs Gemini)

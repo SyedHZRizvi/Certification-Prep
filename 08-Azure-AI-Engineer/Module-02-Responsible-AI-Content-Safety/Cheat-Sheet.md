@@ -96,6 +96,7 @@ r = client.analyze_text(AnalyzeTextOptions(text="..."))
 ## 🏆 Exam Power Phrases
 
 **Usually right**:
+
 - ✅ "Custom content filter configuration"
 - ✅ "Prompt Shields document attack" (for indirect injection)
 - ✅ "Detect groundedness against grounding sources"
@@ -103,6 +104,7 @@ r = client.analyze_text(AnalyzeTextOptions(text="..."))
 - ✅ "Measure harm rates before mitigating"
 
 **Usually wrong**:
+
 - ❌ "Disable Content Safety entirely"
 - ❌ "Sustainability principle"
 - ❌ "Severity 3" (no odd severities)

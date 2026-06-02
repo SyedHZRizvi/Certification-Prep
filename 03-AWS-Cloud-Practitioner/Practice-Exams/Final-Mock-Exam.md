@@ -575,6 +575,7 @@ D. 6
 ## 🔍 Final Review Process
 
 For EACH wrong answer:
+
 1. Identify which domain it covered: Cloud Concepts / Security / Cloud Tech / Billing-Pricing-Support
 2. Re-read that module's Cheat-Sheet (faster than full Reading)
 3. If you got 3+ wrong in the same domain → re-read that module's Reading.md

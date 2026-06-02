@@ -530,6 +530,7 @@ C. WPA3 cracking
 D. SMTP misconfiguration
 
 ### 86 (Scenario PBQ). A new branch office is being deployed. The MSP says:
+
 - 80 wired hosts + 50 wireless clients
 - Need separate guest Wi-Fi
 - Connect to HQ via Internet with encryption
@@ -542,6 +543,7 @@ C. One hub, one Wi-Fi 5 AP, no segmentation
 D. One mesh of WAPs only (no wired LAN)
 
 ### 87 (Scenario PBQ). A user reports their PC can't reach the Internet. You check:
+
 - `ipconfig /all` → IP `169.254.10.5/16`
 - `ping <default gateway>` → fails (no gateway listed)
 - Other users on the same wall port work fine when their laptops are plugged in
@@ -554,6 +556,7 @@ C. STP loop
 D. DNS misconfigured
 
 ### 88 (Scenario PBQ). Match each tool to its BEST use:
+
 - (a) Locate a copper cable break at distance
 - (b) Identify top bandwidth consumers per AS
 - (c) Decode a strange TCP handshake from a workstation
@@ -565,6 +568,7 @@ C. (a) iperf, (b) Wireshark, (c) TDR, (d) ping
 D. (a) NetFlow, (b) TDR, (c) iperf, (d) Wireshark
 
 ### 89 (Scenario PBQ). A network engineer is given this address plan for a new branch:
+
 - Available block: `10.40.0.0/22`
 - Subnets needed (with hosts): LAN A 800, LAN B 120, LAN C 25, WAN P2P 2
 

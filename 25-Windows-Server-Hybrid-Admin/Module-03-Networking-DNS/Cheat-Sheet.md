@@ -127,6 +127,7 @@
 ## 🏆 Exam Power Phrases
 
 When you see these, they're often **correct**:
+
 - ✅ "Use an AD-integrated zone for multi-master writes"
 - ✅ "Use a stub zone when the remote NS list changes"
 - ✅ "Use a conditional forwarder for stable partner DNS"
@@ -136,6 +137,7 @@ When you see these, they're often **correct**:
 - ✅ "Use a Connection Security Rule with GPO for domain isolation"
 
 Usually **wrong**:
+
 - ❌ "Scavenging is on by default"
 - ❌ "DNSSEC encrypts responses"
 - ❌ "Conditional forwarders auto-refresh NS lists"

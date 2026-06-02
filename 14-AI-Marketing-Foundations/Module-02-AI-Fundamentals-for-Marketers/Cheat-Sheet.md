@@ -104,12 +104,14 @@ OUTPUT:       [Format — markdown, table, etc.]
 ## 🏆 Exam Power Phrases
 
 When you see these, often correct:
+
 - ✅ "Use RAG to ground..."
 - ✅ "Lower temperature for factual..."
 - ✅ "Human-in-the-loop review..."
 - ✅ "First-party data input only..."
 
 When you see these, often wrong:
+
 - ❌ "Fine-tune for every use case..."
 - ❌ "Trust the first model output..."
 - ❌ "Increase temperature for accuracy..."
@@ -120,6 +122,7 @@ When you see these, often wrong:
 ## ✏️ Quick Self-Check
 
 Cover answers, recite:
+
 1. AI > ML > Deep Learning > GenAI > LLM in order? ___
 2. Define token, context window, embedding ___
 3. RAG vs fine-tuning use cases? ___

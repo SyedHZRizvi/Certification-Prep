@@ -27,6 +27,7 @@ Per the **Scrum Guide 2020** (the bible — read it 3+ times):
 > *"Scrum is a lightweight framework that helps people, teams, and organizations generate value through adaptive solutions for complex problems."*
 
 Three keywords to memorize:
+
 - **Lightweight** — minimal rules
 - **Framework** — NOT a methodology, NOT a process, NOT a recipe
 - **Complex problems** — Scrum is for the unknown, not the routine
@@ -115,6 +116,7 @@ This is the *entire framework*. That's it. ~13 pages of guide.
 3. **Definition of Done (DoD)** → attached to Increment
 
 🎯 **Exam pattern:** Match artifact to commitment:
+
 - Product Backlog → Product Goal
 - Sprint Backlog → Sprint Goal
 - Increment → Definition of Done
@@ -159,6 +161,7 @@ A Sprint is a **container event** — all other events happen inside it.
 5. **Only the Product Owner can cancel a Sprint** — but it's *very rare*. Only when the Sprint Goal becomes obsolete.
 
 ### Why Sprints Are Short:
+
 - Less risk (you can pivot quickly)
 - Faster feedback
 - More frequent value delivery
@@ -312,6 +315,7 @@ A: No. Sprints must produce a usable Increment.
 ## ✅ Module 2 Summary
 
 You now know:
+
 - 🏗️ The whole Scrum framework on one page
 - 🎭 1 team, 5 events, 3 artifacts, 3 commitments
 - 💎 The 5 Scrum values (FCCRO)

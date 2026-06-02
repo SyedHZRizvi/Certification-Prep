@@ -18,6 +18,7 @@ It's 6:42am on a Tuesday in 2026. Maria Chen is the lead endpoint admin at North
 > *"Maria — the laptop order landed at Newark customs overnight. 1,000 ThinkPad X1 Carbons. Procurement says they go straight to FedEx for direct ship to home addresses. Sales kickoff is Friday at 9am Eastern. Everyone needs to be productive by 9:01."*
 
 In 2015, this conversation would have ended Maria's week. She'd have needed:
+
 - Shipping the laptops back to Princeton for IT to image them
 - A bench of 6 imaging engineers working three 12-hour shifts
 - Pre-staged Active Directory accounts, OU placement, GPO assignment
@@ -269,6 +270,7 @@ The correct sequence:
 ## ✅ Module 1 Summary
 
 You now know:
+
 - 🌐 The four endpoint eras (traditional → hybrid → modern → cloud-native) and which the exam considers "right"
 - 🪪 The three Entra device join states (registered, joined, hybrid joined) and when each fits
 - 📱 BYOD patterns — MDM, MAM-WE, MAM without enrollment
@@ -291,6 +293,7 @@ You now know:
 **Situation.** On June 27, 2017, the NotPetya wiper-malware attack hit A.P. Moller-Maersk, the world's largest container shipping company. NotPetya spread through a poisoned Ukrainian accounting-software update and detonated globally in under 7 minutes. Maersk lost virtually its entire **Active Directory** infrastructure — 49,000+ endpoints and approximately 4,000 servers across 600 sites worldwide were rendered unbootable. The company famously survived only because a single domain controller in Ghana had been offline (power outage) at the moment of detonation and held the last clean copy of AD. Recovery took ten days of round-the-clock work and cost Maersk an estimated $300M.
 
 **Decision.** In the years after NotPetya, Maersk publicly committed to a cloud-first endpoint posture (multiple Microsoft customer stories, BlackHat 2019 talk by Andy Powell, Maersk CISO):
+
 1. Move all corporate identity to Microsoft Entra ID, with on-prem AD relegated to legacy server-side workloads only.
 2. Move all endpoints to **Entra-joined (cloud-only)** management via Microsoft Intune. Phase out hybrid join where the only justification was "we've always done it."
 3. Adopt Conditional Access + Identity Protection (Entra P2) as the access-control plane, replacing network-based trust.
@@ -298,6 +301,7 @@ You now know:
 5. Adopt the Microsoft "Zero Trust" reference architecture published in 2020 as the explicit strategic framework.
 
 **Outcome.** By 2024 Maersk reported (multiple public talks and Microsoft case studies, e.g., Microsoft Customer Stories, *A.P. Moller — Maersk*, 2022 and 2024 updates):
+
 - **Mean time to provision a new device** dropped from "days" (ship to regional IT, image, ship to user) to "under 30 minutes" (Autopilot direct-ship).
 - **Endpoint recovery RTO** for a hypothetical NotPetya-equivalent dropped from "weeks" to "hours" — devices can be wiped and re-Autopiloted at scale without an AD dependency.
 - **Active Directory blast radius** materially reduced — the systems that AD failure used to take down are now mostly Entra-joined.

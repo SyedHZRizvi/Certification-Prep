@@ -46,6 +46,7 @@ Each controlled separately by ring.
 ## 🚀 Expedited Updates
 
 When a critical zero-day requires fast deployment:
+
 - **Overrides** ring deferrals
 - Target specific KB
 - Default deadline 24 hours
@@ -73,6 +74,7 @@ Bandwidth caps: max foreground %, max background %, monthly upload GB.
 ## 🚗 Driver Updates
 
 Separate policy with three states:
+
 - **Manual** — admin reviews each
 - **Automatic** — new drivers auto-approved
 - **Frozen** — block specific version
@@ -93,6 +95,7 @@ Separate policy with three states:
 ## 🎯 Microsoft Autopatch
 
 Microsoft-managed update orchestration:
+
 - Test / First / Fast / Broad rings (Microsoft-defined)
 - Auto-rollback on failure detection
 - Covers Windows quality + Office + Edge + Teams + (some) drivers
@@ -115,6 +118,7 @@ Right answer for "managed update service."
 ## 📊 WUfB Reports
 
 Free Azure-hosted reporting:
+
 - Per-device update status
 - Driver deployment
 - Feature update rollout
@@ -139,6 +143,7 @@ Requires: Log Analytics workspace + WUfB reports solution.
 ## 🏆 Exam Power Phrases
 
 When you see these, they're often **correct**:
+
 - ✅ "Pilot → Broad → Deferred rings"
 - ✅ "Expedited update for active zero-day"
 - ✅ "Pause ring while investigating"
@@ -146,6 +151,7 @@ When you see these, they're often **correct**:
 - ✅ "Driver updates as separate policy"
 
 When you see these, often **wrong**:
+
 - ❌ "All users in one ring"
 - ❌ "Expedited respects ring deferrals"
 - ❌ "Pause unlimited"

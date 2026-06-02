@@ -50,6 +50,7 @@ Each artifact has a **commitment** — a "what does success look like" attached 
 > *"The Product Backlog is an emergent, ordered list of what is needed to improve the product. It is the single source of work undertaken by the Scrum Team."*
 
 ### Properties:
+
 - 📜 **Emergent** — never "complete," constantly evolving
 - 📊 **Ordered** — top items most refined and ready
 - 🎯 **Single source of truth** — no parallel lists
@@ -64,11 +65,13 @@ Each artifact has a **commitment** — a "what does success look like" attached 
 - 📝 Anything else needed to improve the product
 
 ### How Items Get In:
+
 - PO writes them
 - Team suggests them (especially technical work)
 - Stakeholders propose them (PO decides if/where they go)
 
 ### How Items Get Ordered:
+
 - Value, risk, dependencies, learning, cost — all weighed
 - PO has final say
 - Top of backlog = "ready" (refined, small enough to do)
@@ -89,6 +92,7 @@ Each artifact has a **commitment** — a "what does success look like" attached 
 > *"The Product Goal describes a future state of the product. It serves as a target for the Scrum Team to plan against."*
 
 ### Properties:
+
 - 🎯 ONE Product Goal at a time per product
 - 🏁 The team works toward it across multiple Sprints
 - 🔄 New Product Goal can be defined when current is met
@@ -96,11 +100,13 @@ Each artifact has a **commitment** — a "what does success look like" attached 
 - 👤 PO is accountable for developing & communicating it
 
 ### Examples:
+
 - "Become the most-trusted email provider for small businesses"
 - "Reduce app crash rate from 5% to 0.1%"
 - "Launch in Asian markets by Q3"
 
 ### What It's NOT:
+
 - ❌ A vision (longer-term)
 - ❌ A list of features
 - ❌ A delivery date
@@ -115,17 +121,20 @@ Each artifact has a **commitment** — a "what does success look like" attached 
 > *"The Sprint Backlog is composed of the Sprint Goal (why), the set of Product Backlog items selected for the Sprint (what), as well as an actionable plan for delivering the Increment (how)."*
 
 ### The Sprint Backlog has THREE parts (NEW in 2020):
+
 1. 🎯 **Sprint Goal** (the why)
 2. 📋 **Selected PBIs** (the what)
 3. 📝 **Plan to deliver** (the how)
 
 ### Properties:
+
 - 🛠️ **Owned by the Developers** (yes, NOT the PO!)
 - 📈 **Updated daily** as work progresses
 - 👀 **Highly visible** — burndown chart, task board, etc.
 - 🔄 **Negotiable mid-Sprint** with the PO (scope can be refined)
 
 ### What It's NOT:
+
 - ❌ A static list locked at Sprint start
 - ❌ Owned/managed by the PO
 - ❌ A separate document from the Sprint Goal
@@ -140,17 +149,20 @@ Each artifact has a **commitment** — a "what does success look like" attached 
 > *"The Sprint Goal is the single objective for the Sprint."*
 
 ### Properties:
+
 - 🎯 ONE goal per Sprint
 - 🌟 Created collaboratively in Sprint Planning
 - 🛡️ Provides flexibility — team can negotiate scope, but the **goal stays**
 - 🔥 Drives team focus and commitment
 
 ### Good Sprint Goal Examples:
+
 - ✅ "Enable users to reset passwords via email"
 - ✅ "Reduce checkout time by 30%"
 - ✅ "Validate the new pricing model with real users"
 
 ### Bad Sprint Goal Examples:
+
 - ❌ "Complete 23 user stories" (just a count)
 - ❌ "Various features" (too vague)
 - ❌ "Whatever the PO wants" (not goal-driven)
@@ -173,6 +185,7 @@ Each artifact has a **commitment** — a "what does success look like" attached 
 > *"An Increment is a concrete stepping stone toward the Product Goal. Each Increment is additive to all prior Increments and thoroughly verified, ensuring that all Increments work together."*
 
 ### Properties:
+
 - 🛠️ A **usable, working** piece of product
 - 📈 **Adds to** previous Increments
 - ✅ Must meet the **Definition of Done**
@@ -180,10 +193,12 @@ Each artifact has a **commitment** — a "what does success look like" attached 
 - 📅 **Multiple** Increments may be created in a Sprint
 
 ### Big 2020 Change:
+
 - Old: "Increment = single deliverable per Sprint"
 - **New: "Multiple Increments may be created within a Sprint."** (As soon as a PBI meets DoD, it's an Increment.)
 
 ### What It's NOT:
+
 - ❌ A "release" — Increments may or may not be released
 - ❌ Only the *last* version of the product
 - ❌ Documentation about the product
@@ -196,6 +211,7 @@ Each artifact has a **commitment** — a "what does success look like" attached 
 > *"The Definition of Done is a formal description of the state of the Increment when it meets the quality measures required for the product."*
 
 ### Properties:
+
 - 📋 A **checklist** of quality criteria
 - 👥 Created by the **Developers** (or organization, if standardized)
 - 🔄 Can evolve over time (especially as quality goals raise)
@@ -203,6 +219,7 @@ Each artifact has a **commitment** — a "what does success look like" attached 
 - 📤 If multiple Scrum Teams work on same product → shared DoD
 
 ### Example DoD:
+
 - [ ] Code reviewed by ≥1 peer
 - [ ] All unit tests pass (>90% coverage)
 - [ ] Acceptance criteria verified
@@ -231,6 +248,7 @@ Each artifact has a **commitment** — a "what does success look like" attached 
 ## 🎁 Putting It Together
 
 ### Each Sprint:
+
 1. PO orders **Product Backlog**
 2. Team picks items, sets **Sprint Goal** (= **Sprint Backlog**)
 3. Devs build, daily-scrum, refine plan
@@ -239,6 +257,7 @@ Each artifact has a **commitment** — a "what does success look like" attached 
 6. Retro the process
 
 ### Across Sprints:
+
 - All Increments → progressing toward **Product Goal**
 - Product Backlog evolves continuously
 - Definition of Done may evolve (toward higher bar)
@@ -248,17 +267,20 @@ Each artifact has a **commitment** — a "what does success look like" attached 
 ## ⚠️ Anti-Patterns
 
 ### Product Backlog Anti-Patterns:
+
 - 😱 **Multiple backlogs** (e.g., one per stakeholder)
 - 😱 **Static backlog** that never gets refined
 - 😱 **PO not accessible** to clarify items
 - 😱 **Items > 1 sprint** at top of backlog (need refinement)
 
 ### Sprint Backlog Anti-Patterns:
+
 - 😱 **PO modifying it** unilaterally (Devs own it)
 - 😱 **Untracked side work** during Sprint
 - 😱 **No visible plan** — black box
 
 ### Increment Anti-Patterns:
+
 - 😱 **"Done" but not really done** (skipping DoD)
 - 😱 **Increments built but never inspected**
 - 😱 **DoD differs per developer** (must be team-shared)
@@ -284,6 +306,7 @@ Each artifact has a **commitment** — a "what does success look like" attached 
 ## ✅ Module 5 Summary
 
 You now know:
+
 - 📦 3 artifacts + 3 commitments mapping (memorize!)
 - 📋 Product Backlog: emergent, ordered, PO-owned
 - 📋 Sprint Backlog: 3 parts (goal/PBIs/plan), Developer-owned

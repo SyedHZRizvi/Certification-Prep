@@ -137,6 +137,7 @@ CATALOG
 ## 🏆 Exam Power Phrases
 
 When you see these, they're often **correct**:
+
 - ✅ "Set `UsageLocation` before assigning licenses"
 - ✅ "Use Administrative Unit to scope Helpdesk Admin to a region"
 - ✅ "Entitlement management with sponsor approval + time-bound + access review"
@@ -144,6 +145,7 @@ When you see these, they're often **correct**:
 - ✅ "B2B direct connect for Teams shared channels without guest objects"
 
 When you see these, often **wrong**:
+
 - ❌ "Dynamic groups work in Free tier"
 - ❌ "Lifecycle Workflows ship with P2"
 - ❌ "B2B and B2B direct connect are the same"

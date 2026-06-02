@@ -52,6 +52,7 @@ Begin with [Module 1: Networking Concepts →](./Module-01-Networking-Concepts/R
 ## 🎯 What You'll Learn
 
 By the end of this track, you'll be able to:
+
 - Read any network diagram and recite which OSI layer every protocol/device lives at
 - Subnet IPv4 on paper in under 60 seconds, including VLSM with hand-calculated host counts
 - Pick the right routing protocol (RIP/OSPF/EIGRP/BGP) for any scenario and justify the choice
@@ -97,6 +98,7 @@ By the end of this track, you'll be able to:
 🔗 **[Professor Messer's free N10-009 video course](https://www.professormesser.com/network-plus/n10-009/n10-009-video-training-course/)** — The de facto Network+ teacher. Hundreds of bite-sized videos that cover every objective. Free. Pair them with [Messer's Notes (paid PDF)](https://www.professormesser.com/) for the perfect lecture+notes combo.
 
 Honorable mentions:
+
 - 📘 *CompTIA Network+ N10-009 Cert Guide* (Anthony Sequeira / Pearson) — the most rigorous book
 - 📘 *Mike Meyers' All-in-One Network+ Guide (McGraw-Hill)* — clear writing, lots of analogies; the classroom standard
 - 📘 *Todd Lammle's CompTIA Network+ Study Guide (Sybex)* — battle-tested for 20+ years; outstanding subnetting drills

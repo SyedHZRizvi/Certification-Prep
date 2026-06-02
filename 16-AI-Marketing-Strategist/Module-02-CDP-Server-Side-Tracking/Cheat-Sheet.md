@@ -90,6 +90,7 @@ Browser → YOUR collection domain → sGTM container →
 ## 🏆 Exam Power Phrases
 
 ✅ Often correct:
+
 - "Warehouse stays the system of record..."
 - "Server-side recovers some but not all losses..."
 - "Hashing does not replace consent..."
@@ -97,6 +98,7 @@ Browser → YOUR collection domain → sGTM container →
 - "CDPs activate; warehouses query..."
 
 ❌ Often wrong:
+
 - "Server-side recovers 100% of losses..."
 - "Hashing means we don't need consent..."
 - "Probabilistic ID is fine everywhere..."

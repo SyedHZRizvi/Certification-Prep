@@ -122,6 +122,7 @@ NEW → ASSIGNED → IN PROGRESS → PENDING → RESOLVED → CLOSED
 ## 🏆 Exam Power Phrases
 
 ✅ Often **right**:
+
 - "Test backups quarterly"
 - "3-2-1 minimum, 3-2-1-1-0 modern"
 - "Document the change BEFORE implementing"
@@ -131,6 +132,7 @@ NEW → ASSIGNED → IN PROGRESS → PENDING → RESOLVED → CLOSED
 - "Immutable + air-gapped for ransomware defense"
 
 ❌ Often **wrong**:
+
 - "RAID = backup"
 - "Untested backups are reliable"
 - "Snapshot = backup"
@@ -165,6 +167,7 @@ NEW → ASSIGNED → IN PROGRESS → PENDING → RESOLVED → CLOSED
 ## 🏁 Course Complete!
 
 Take the Practice Exams:
+
 - [Practice Exam 1 — Core 1](../Practice-Exams/Practice-Exam-1.md)
 - [Practice Exam 2 — Core 2](../Practice-Exams/Practice-Exam-2.md)
 - [Final Mock Exam — 90 Q / 90 min](../Practice-Exams/Final-Mock-Exam.md)

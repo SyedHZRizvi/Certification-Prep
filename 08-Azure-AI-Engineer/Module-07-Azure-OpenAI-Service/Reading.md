@@ -16,6 +16,7 @@
 ## 🍕 A Story: Maya Plugs In GPT-4o
 
 Maya's app needs a help system that answers in natural language. She decides to use Azure OpenAI. Five things she has to get right:
+
 1. **Provision** an Azure OpenAI resource and **deploy** a model (different from regular Azure AI services)
 2. **Pick the right model** — GPT-4o for chat, ada/text-embedding-3-* for search, DALL-E for images, Whisper for transcription
 3. **Author prompts** with a system message + few-shot examples
@@ -218,6 +219,7 @@ This is the foundation of **agents** (Module 8).
 Built-in filters apply to every deployment by default at **Medium** thresholds for Hate / Sexual / Violence / Self-Harm in both **prompt** and **completion**.
 
 You can:
+
 - Create **custom content filter configurations** in Azure AI Foundry
 - Adjust per-category, per-direction thresholds
 - Enable **Prompt Shields** (jailbreak + indirect attack detection)
@@ -264,6 +266,7 @@ When `in_scope: true`, the model will refuse to answer from outside the retrieve
 ## 🎓 Fine-Tuning on Azure OpenAI
 
 Fine-tuning customizes a base model with your own examples. Use it when:
+
 - You need a specific output style/format
 - You have lots of high-quality input → output pairs
 - RAG isn't enough (e.g. you're teaching domain-specific tone)
@@ -300,6 +303,7 @@ Eligible base models: `gpt-4o-mini`, `gpt-35-turbo`, others (regional).
 | **PTU** | Provisioned Throughput Unit — reserves capacity |
 
 When a request exceeds quota you get **HTTP 429**. Mitigate with:
+
 1. Client-side retries with exponential backoff
 2. Request a quota increase via Azure portal
 3. Move to PTU
@@ -392,6 +396,7 @@ This overlaps with Azure AI Vision but is more "describe what you see" / "reason
 **Situation.** In March 2023, Coca-Cola launched **Create Real Magic**, one of the first global brand campaigns that put consumer-facing generative AI front and center. Coca-Cola partnered with OpenAI and Bain & Company; the underlying compute ran on **Azure OpenAI** (consistent with Microsoft / OpenAI's exclusive cloud partnership). Selected user-generated images appeared on **Times Square** and **London Piccadilly Circus** billboards — verified against Coca-Cola Company press releases (March 2023) and Microsoft customer-story coverage, checked 2026-05.
 
 **Decision.** Coca-Cola made several decisions that map directly onto this module:
+
 - **Model choice:** GPT-4 + DALL-E (then DALL-E 3 as it became available) deployed inside Coca-Cola's Azure OpenAI resources, with regional pinning for data-residency and quota dedicated for the campaign's expected spike.
 - **Content filtering:** Custom content filter configurations in Azure AI Foundry, tightened on Hate / Sexual / Self-Harm with explicit per-deployment overrides for brand-safety reasons (e.g., the brand mascots — polar bears, Santa Claus — must not appear in violent or sexual contexts even under permissive defaults). Protected Material Detection enabled to prevent inadvertent reproduction of third-party copyrighted imagery.
 - **Prompt-engineering scaffolding:** A locked system prompt enforced brand-asset usage rules ("the bottle must be the classic contour; the Spencerian script must be unaltered"). Few-shot examples of approved imagery in the prompt. `temperature` tuned low for consistency of brand-asset rendering.
@@ -422,6 +427,7 @@ This overlaps with Azure AI Vision but is more "describe what you see" / "reason
 ## ✅ Module 7 Summary
 
 You now know:
+
 - 🚪 Azure OpenAI access (separate resource, separate approval)
 - 🏗️ Resource / deployment / model relationship
 - 🤖 The model catalog (GPT-4o, embeddings, DALL-E, Whisper, TTS, reasoning models)

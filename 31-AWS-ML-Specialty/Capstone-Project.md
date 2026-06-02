@@ -44,6 +44,7 @@ You will submit a single Google Doc / Markdown document with these 7 sections. E
 ### 1. Architecture diagram + 1-page system narrative
 
 Draw the full end-to-end architecture. Include:
+
 - Data ingestion plane (Module 2)
 - Feature engineering plane (Module 3) + Feature Store (online + offline)
 - Training plane (Modules 4-8)

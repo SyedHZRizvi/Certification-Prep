@@ -260,6 +260,7 @@ Putting it together for a global app:
 ## ✅ Module 8 Summary
 
 You now know:
+
 - ☁️ CloudFront origins, behaviors, caching, OAC, signed URLs/cookies
 - ⚡ Lambda@Edge vs CloudFront Functions
 - 🚀 Global Accelerator's static-IP, L4 routing pattern
@@ -286,6 +287,7 @@ You now know:
 Both incidents shared a pattern: **a single-region outage degraded global services that relied on us-east-1 for control plane operations** — even when their workloads were in other regions. The reason: many AWS *global* services (IAM, Route 53 control plane, CloudFront control plane, Organizations) have **their primary endpoints in us-east-1**.
 
 **Decision.** Companies that came out best had pre-existing multi-region architectures:
+
 - **Netflix** used **Route 53 latency routing** to fail over from us-east-1 to us-west-2 within ~3 minutes (per their tech blog, December 2021 retrospective). Their multi-region active-active stack absorbed the failure
 - **Capital One** used **Route 53 failover routing** with health checks on per-region endpoints
 - **Shopify** ran active-active across **us-east-1 + us-west-2 + eu-west-1** with DynamoDB Global Tables and Aurora Global Database; storefront traffic was unaffected
@@ -294,6 +296,7 @@ Both incidents shared a pattern: **a single-region outage degraded global servic
 **Outcome.** The 2021 outage cost the broader economy an estimated **$3–5B in productivity and direct service-revenue losses** (per Parametrix Insurance public estimates). The 2023 outage was shorter but still drove a wave of "multi-region by default" mandates at large enterprises.
 
 The architecture-level lessons (and the SAA exam patterns):
+
 - **Route 53 failover routing with health checks** = the canonical active-passive DR pattern
 - **CloudFront's multi-origin failover** (Origin Groups) = automatic origin failover at the edge
 - **Aurora Global Database** = <1 second cross-region replication; database survives single-region outage
@@ -301,6 +304,7 @@ The architecture-level lessons (and the SAA exam patterns):
 - **us-east-1 is NOT a safe default** for global services; AWS recommends spreading control-plane-dependent workloads across regions
 
 **Lesson for the exam / for practitioners.** Every "survive a regional outage" question on SAA-C03 is about exactly this scenario. The answer chain is:
+
 - **CloudFront** in front (multi-origin failover, geo distribution)
 - **Route 53 health-checked failover routing** for DNS
 - **Aurora Global Database** OR **DynamoDB Global Tables** for state

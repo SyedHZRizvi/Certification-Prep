@@ -221,6 +221,7 @@ The 3 anti-patterns (Tools List, Internal Work, Polished But Empty) catch ~80% o
 
 ### Q6: Excellent looks like: **A**
 Examples of one-sentence capstone descriptions:
+
 - *"A 17-page SEO + content audit for an indie SaaS founder's product, with a 90-day content roadmap."*
 - *"A $200 paid campaign across Google + Meta for a friend's coaching practice, post-mortemed publicly."*
 - *"A 7-step Make.com workflow that takes a lead from form to qualified Slack ping."*
@@ -256,6 +257,7 @@ If your strongest capstone is still hypothetical, you're not ready to apply / pi
 
 ### Q16: Excellent looks like: **A**
 The 5 capstones map to 5 different hiring signals:
+
 - SEO Audit → analytical writing + strategic thinking
 - Paid Campaign → money-at-stake decision making
 - Automation → systems thinking

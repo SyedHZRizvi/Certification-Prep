@@ -32,6 +32,7 @@ The relevant context:
 | Workforce | ~600 production workers, 110 planners/buyers/schedulers, 22 industrial engineers | Same — no layoffs in plan; expect natural attrition |
 
 Constraints you must honor:
+
 - **No layoffs.** Any productivity gains must come from process improvement, not headcount reduction.
 - **Budget for change.** $4.5M total non-recurring spend authorized for software, consultants, training, and one-time inventory write-downs.
 - **Customer continuity.** Cannot afford a 6-week stockout window during transition. Phased migration only.
@@ -46,6 +47,7 @@ Each deliverable is a self-contained document. Total package length: ~25–40 pa
 ### Deliverable 1: Diagnostic and Baseline Report (3–5 pages)
 
 A clear-eyed assessment of the current state across every module of this course. Must include:
+
 - Current manufacturing environment classification *per product family* (MTS / ATO / MTO) with rationale (Module 1)
 - Hayes-Wheelwright matrix placement of each plant, with off-diagonal flags (Module 1)
 - Order-winner vs order-qualifier analysis per major customer segment (Module 1)
@@ -59,6 +61,7 @@ A clear-eyed assessment of the current state across every module of this course.
 ### Deliverable 2: Revised S&OP / IBP Cadence Design (4–6 pages)
 
 Define the new monthly S&OP cycle for Polaris with explicit inputs from Sales, Operations, Finance, and Supply:
+
 - Detailed 5-step S&OP calendar (Days 1–5 Product, Days 6–10 Demand, Days 11–15 Supply, Days 16–20 Pre-S&OP, Days 21–25 Executive) — adapt to a working-day calendar
 - Who owns each step and what artifacts are produced
 - Decision rights: what the executive S&OP can ratify vs what requires board-level escalation
@@ -70,12 +73,14 @@ Define the new monthly S&OP cycle for Polaris with explicit inputs from Sales, O
 ### Deliverable 3: MRP → DDMRP Transition Assessment (3–5 pages)
 
 A reasoned assessment of whether Polaris should:
+
 - (a) Keep classical MRP and improve discipline (cleaner BOMs, accurate LT, time-fence policy)
 - (b) Adopt DDMRP at decoupling points (Ptak & Smith, 2019) for the highest-variability items
 - (c) Add APS / finite-capacity scheduling for the Pittsburgh assembly cell
 - (d) Some combination
 
 Include:
+
 - Decision criteria (product variability, lead-time uncertainty, supplier reliability)
 - Pilot scope and success metrics
 - Capital, time, and people cost estimates
@@ -85,6 +90,7 @@ Include:
 ### Deliverable 4: Capacity Re-baselining Plan (3–5 pages)
 
 A re-baseline of the capacity hierarchy:
+
 - Long-range Resource Planning: which plants get capital, which get divestment-or-hold (no closures, but no growth investment either)
 - RCCP design for the Pittsburgh, Monterrey, and Łódź plants — explicit Bill of Resources for each
 - CRP integration into the new MRP discipline
@@ -95,6 +101,7 @@ A re-baseline of the capacity hierarchy:
 ### Deliverable 5: Inventory Re-architecture and Top-50 SKU Kanban Pilot (4–6 pages)
 
 The most numerically dense deliverable:
+
 - New ABC × XYZ classification cadence (quarterly), with specific differentiated treatment per cell
 - Safety-stock formula with explicit z-values per service-level target per ABC class (e.g., A items at 97.5%, B at 95%, C at 90%)
 - EOQ / EPQ / FOQ / L4L policy per ABC × XYZ cell, with justification
@@ -105,6 +112,7 @@ The most numerically dense deliverable:
 ### Deliverable 6: S&OE / Control-Tower Design (2–3 pages)
 
 The weekly tactical layer between monthly S&OP and daily PAC:
+
 - S&OE cadence (weekly) and scope (3-month rolling horizon at SKU level)
 - Control-tower design: what data flows in, who acts on what alerts, escalation paths to S&OP
 - KPI dashboard: OTIF, days-of-supply, IRA, forecast accuracy, capacity utilization, throughput, on-time supplier deliveries
@@ -113,6 +121,7 @@ The weekly tactical layer between monthly S&OP and daily PAC:
 ### Deliverable 7: 12-Month Change-Management Roadmap and Scorecard (3–4 pages)
 
 The execution plan that ties everything together:
+
 - Month-by-month milestone calendar (12 months) showing what's launched when
 - Stakeholder map: who you need to win over (sales VP, plant managers, planners, suppliers, board)
 - Communication plan: town halls, training, manager-1:1s, change-champion network

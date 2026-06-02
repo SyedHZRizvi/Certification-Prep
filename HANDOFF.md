@@ -21,6 +21,7 @@
 | | **Total** | | **60 modules** | **275** | **~69,500** | **21 exams** |
 
 Each module has the same 4-file pattern as your existing courses:
+
 - `Reading.md` — story-driven lesson (250–550 lines)
 - `Videos.md` — curated YouTube **search-URL** cards (8–10 per module)
 - `Quiz.md` — ≥24 questions in the engine's `### Qn.` format with answers + explanations
@@ -76,6 +77,7 @@ cd ~/Projects/Certification-Prep-Preview
 Opens at **http://127.0.0.1:4000/Certification-Prep/**
 
 Test plan:
+
 1. Visit the homepage — confirm the 7 new course cards appear under the existing Scrum/PMP.
 2. Click into each course → walk through a module's Reading/Videos/Quiz/Cheat-Sheet.
 3. Take Module 1 Quiz on each course (confirm engine picks it up, options randomize on Try Again).

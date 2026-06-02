@@ -5,6 +5,7 @@
 > Take this 2–3 days before booking the real assessment. Score 51+ before declaring yourself ready.
 
 This exam covers ALL 8 modules with realistic weighting:
+
 - Module 1 (Foundations & CAI): ~10% → 6 questions
 - Module 2 (Prompt Engineering): ~15% → 9 questions
 - Module 3 (API & SDK): ~15% → 9 questions

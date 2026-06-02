@@ -144,6 +144,7 @@ cosine_sim(a, b) = (a · b) / (||a|| · ||b||)
 ## 🏆 Exam Power Phrases
 
 ✅ Often **right**:
+
 - "Hybrid retrieval (dense + BM25) plus a reranker"
 - "Pre-filter on tenant metadata at the index level"
 - "Header-aware chunking with overlap and contextualization"
@@ -151,6 +152,7 @@ cosine_sim(a, b) = (a · b) / (||a|| · ||b||)
 - "Tag embeddings with model version for migrations"
 
 ❌ Often **wrong**:
+
 - "Pure vector search is always best"
 - "Top-K=3 of raw dense retrieval is enough"
 - "Re-embed when upgrading a model" (without versioning)

@@ -883,6 +883,7 @@ D. Master a small stack, build a prompt + asset library (second brain), automate
 ## 🔍 Review Process
 
 For EACH wrong answer:
+
 1. Identify which module covered it (1–10)
 2. Re-read that module's Reading.md
 3. Add a flashcard for the concept
@@ -893,6 +894,7 @@ For EACH wrong answer:
 ## 🎓 What's Next
 
 Once you pass this Final Mock at 75%+:
+
 - 🆓 Take the **HubSpot Marketing Software Certification** (free, ~1–2 hours, free retakes) inside HubSpot Academy.
 - 🆓 Audit the **Google Digital Marketing & E-commerce Professional Certificate** on Coursera (free with audit; ~6 months self-paced).
 - 💰 Schedule the **Meta Certified Digital Marketing Associate** exam (400-101) at $99 USD when you're confident. Schedule via Meta Blueprint.

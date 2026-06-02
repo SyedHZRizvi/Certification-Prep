@@ -180,6 +180,7 @@ Tool pricing and feature names verified as of 2026-05. **Always verify current p
 ## Maintaining Your Skills
 
 Strategist-level skill atrophy is slower than practitioner-level, but the math gets rusty fast. Plan to:
+
 - Retake GA4 Certification annually (it's free; the exam updates).
 - Build one new model (MMM, CLV, churn) per year on a synthetic dataset to keep the math alive.
 - Attend one MeasureCamp regional unconference per year (free; measurecamp.org).

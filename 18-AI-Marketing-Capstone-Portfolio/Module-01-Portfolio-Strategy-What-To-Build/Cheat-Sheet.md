@@ -129,6 +129,7 @@ Right after you say a project name, follow with one of these:
 - ✅ "The first version had a bug — here's the fixed version..."
 
 What signals desperation (avoid):
+
 - ❌ "I just made this last week..."
 - ❌ "It's not really finished but..."
 - ❌ "Sorry, I don't have much to show yet..."

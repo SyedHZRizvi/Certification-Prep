@@ -23,6 +23,7 @@ You have 6 months. The board reviews at end of Month 3 and end of Month 6.
 ### 1. CDP Architecture Diagram + Vendor Selection Memo (Module 2)
 
 Design Solway's **target-state Customer Data Platform architecture**. It must include:
+
 - **Architecture diagram** — every data source (Solway marketing site, Solway app, Snowflake product events, Salesforce CRM, Marketo, Outreach, Drift, Zendesk, the SOC2 audit log), the ingestion mechanism (event SDK, CDC, batch ETL), the identity-resolution layer, the activation destinations (Google Ads, Meta CAPI, LinkedIn CAPI, Klaviyo, HubSpot if applicable)
 - **Vendor selection memo** — a 4-page narrative comparing **Segment Twilio, mParticle, Hightouch (composable CDP), Census (composable CDP), and RudderStack**. End with a Build vs Buy vs Composable recommendation. Justify with TCO over 3 years, switching costs, identity-resolution quality, regulatory posture (GDPR + EU AI Act readiness)
 - **Identity-resolution strategy** — deterministic + probabilistic layering; the rules for resolving anonymous → known → cross-device → cross-account identity
@@ -35,6 +36,7 @@ Design Solway's **target-state Customer Data Platform architecture**. It must in
 ### 2. GA4 Implementation Audit + Custom-Event Plan (Module 3)
 
 Solway's GA4 is "set up but inconsistent." Design:
+
 - **Current-state audit** — for each property (marketing site, app, blog, help center), the events currently collected, the events missing, the parameter consistency score (custom rubric you'll define)
 - **Target-state event taxonomy** — 30-50 custom events with parameter schemas, naming conventions, ownership (which team triggers each event)
 - **Conversion event flagging** — which events are Key Events feeding Google Ads + LinkedIn + the MMM model
@@ -47,6 +49,7 @@ Solway's GA4 is "set up but inconsistent." Design:
 ### 3. Marketing Mix Model Brief + Scenarios (Module 5)
 
 Build (or specify) Solway's first Marketing Mix Model. It must include:
+
 - **Model framing** — the question MMM answers ("How would Q3 revenue change if we cut paid search by 20% and shifted to brand?") vs the question it doesn't answer (causal incrementality of any single click)
 - **Vendor / build decision** — Robyn (Meta open-source), Meridian (Google open-source), Bayesian custom with PyMC, or a vendor (MMM Hub, Recast, Mass, Nielsen). Justify
 - **Data inputs spec** — 2 years of weekly data: media spend by channel + impressions by channel + revenue + price + promotion calendar + seasonality + macro controls (unemployment rate, S&P 500, weather if relevant)
@@ -60,6 +63,7 @@ Build (or specify) Solway's first Marketing Mix Model. It must include:
 ### 4. Attribution Mode Comparison (Module 4)
 
 Solway has three sources of attribution truth. Resolve them:
+
 - **Side-by-side comparison** — for the last 90 days, the per-channel revenue allocation in (a) Salesforce last-touch, (b) GA4 data-driven attribution, (c) Meta Advantage+ "incremental", (d) the MMM contribution from Deliverable 3
 - **Reconciliation framework** — for each material disagreement (channel-level revenue delta > 15%), the hypothesis explaining the gap (cannibalization, view-through, undercount, walled-garden self-attribution bias)
 - **The "official" attribution view for executive reporting** — which model is the source of truth for which decision (paid optimization vs budget allocation vs board reporting)
@@ -72,6 +76,7 @@ Solway has three sources of attribution truth. Resolve them:
 ### 5. Privacy Compliance Matrix (Module 9)
 
 Design Solway's **privacy-first measurement compliance matrix**. It must cover:
+
 - **GDPR** (EU customers) — consent capture, data-subject access requests, data-processing agreement coverage with each vendor in Deliverable 1's CDP architecture
 - **CCPA + CPRA** (California) — opt-out cookies, "Do Not Sell or Share My Personal Information" link, the verifiable-consumer-request workflow
 - **EU AI Act** (effective phases 2025-2027) — risk classification of every marketing-AI use case (predictive scoring = limited risk; biometric inference = prohibited); the model-documentation requirements for each
@@ -86,6 +91,7 @@ Design Solway's **privacy-first measurement compliance matrix**. It must cover:
 ### 6. Predictive Model Design — LTV + Churn (Module 6)
 
 Specify (don't build, unless you want to) Solway's first two production predictive models:
+
 - **CLV model** — BG/NBD + Gamma-Gamma using the `lifetimes` Python library for self-serve PLG customers; the modeling cohort, the input features, the model-evaluation metric (RMSE on hold-out), the activation use case (bidding signal to Google Ads + Meta + LinkedIn)
 - **Churn model** — XGBoost binary classifier on enterprise accounts; the feature set (product-usage frequency, support-ticket volume, CSAT, NPS, executive-sponsor turnover, account-team turnover), the model-evaluation metric (AUC, recall at top-5%-risk), the activation use case (account-team intervention prioritization)
 - **Uplift modeling extension** — for the top-decile-churn-risk cohort, which intervention works (CSM call, free quarterly review, executive sponsor, price discount); the uplift modeling experimental design
@@ -98,6 +104,7 @@ Specify (don't build, unless you want to) Solway's first two production predicti
 ### 7. Executive Readout Deck (Synthesis)
 
 Compile Deliverables 1-6 into a **15-slide executive readout** for the board. The deck must include:
+
 - Mandate (1 slide) + 6-month goal
 - Current-state diagnosis (1 slide per workstream, 6 slides)
 - Target-state architecture (1 slide diagram synthesizing CDP + GA4 + MMM + predictive)
@@ -162,6 +169,7 @@ Self-grading: complete the rubric above honestly. If you're below 75, identify t
 ## Optional Stretch Goals
 
 If you want to push beyond pass:
+
 1. **Build a working Robyn MMM in Python.** Use Solway's synthetic 2-year dataset (you generate it). Document the model fit, the contribution decomposition, and one defensible scenario simulation.
 2. **Build a working BG/NBD CLV model.** Use the `lifetimes` library on a synthetic Solway PLG cohort. Document the assumptions, the model fit, and the activation use case.
 3. **Server-side GTM pilot.** Document a working server-side GTM deployment (Stape or GCP Cloud Run) for at least one Solway property. Include the cost model and the data-quality lift measured.

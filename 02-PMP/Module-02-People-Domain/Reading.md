@@ -15,11 +15,13 @@ A project manager named Carlos took over a 30-person team mid-project. The previ
 - 🏃 A star performer about to leave
 
 Carlos did NOT:
+
 - Tell people what to do
 - Escalate everything to the sponsor
 - Build a Gantt chart for week 1
 
 He DID:
+
 - Have 1-on-1s with all 30 people in week 1
 - Mediate the architecture conflict (with both engineers, together)
 - Implement a daily 15-min standup (transparency)
@@ -58,6 +60,7 @@ The PMI ECO (Exam Content Outline) lists these. **You don't need to memorize the
 The new PMP expects you to be a **servant leader**, not a "command-and-control" manager.
 
 ### What That Looks Like:
+
 - 🛡️ **Remove impediments** for the team
 - 👂 **Listen actively**
 - 🌱 **Develop people**, not just deliverables
@@ -65,6 +68,7 @@ The new PMP expects you to be a **servant leader**, not a "command-and-control" 
 - 🎯 **Focus on team outcomes**, not individual performance
 
 ### The 7 Servant Leader Behaviors (per Larry Spears):
+
 1. Listening
 2. Empathy
 3. Healing
@@ -101,11 +105,13 @@ The new PMP expects you to be a **servant leader**, not a "command-and-control" 
 ## 🎓 Coaching & Mentoring
 
 The PM as **coach**:
+
 - Asks questions, doesn't dictate
 - Helps team members find their own answers
 - Builds capability over time
 
 The PM as **mentor**:
+
 - Shares experience
 - Provides career guidance
 - Models behaviors
@@ -121,6 +127,7 @@ The PM as **mentor**:
 Conflict in projects is **inevitable and often healthy**. The exam tests your conflict-handling techniques.
 
 ### Sources of Conflict:
+
 - 🎯 Schedule
 - 🎯 Project priorities
 - 🎯 Resources
@@ -168,6 +175,7 @@ PMs spend ~90% of time communicating. Master this.
 - Horizontal: peer-to-peer
 
 ### Communication Methods:
+
 - **Push** — emails, status reports (sender controls)
 - **Pull** — wikis, intranet (receiver controls)
 - **Interactive** — meetings, calls (real-time)
@@ -196,6 +204,7 @@ Add 1 person → 6(5)/2 = **15 channels** (50% more!)
 The exam loves EQ. Per Goleman's framework:
 
 ### 5 Components:
+
 1. 🪞 **Self-awareness** — know your emotions
 2. 🛑 **Self-regulation** — manage your emotions
 3. 🚀 **Motivation** — drive yourself
@@ -250,6 +259,7 @@ Different team members are motivated differently — adapt your style.
 ## 🚀 Empowerment
 
 The PM should empower the team:
+
 - Delegate decisions to lowest competent level
 - Trust people's judgment
 - Provide support, not micro-management
@@ -263,6 +273,7 @@ The PM should empower the team:
 ## 🌍 Virtual Teams
 
 Special considerations:
+
 - 🕐 Time zones
 - 🎥 Video by default
 - 📋 Written communication clarity
@@ -270,6 +281,7 @@ Special considerations:
 - 🏖️ Cultural awareness
 
 Best practices:
+
 - Schedule overlapping work hours
 - Use shared tools
 - More frequent check-ins
@@ -280,6 +292,7 @@ Best practices:
 ## 📜 Team Charter & Ground Rules
 
 A **Team Charter** is a document the team creates together:
+
 - Team values
 - Communication guidelines
 - Decision-making process
@@ -295,6 +308,7 @@ A **Team Charter** is a document the team creates together:
 (More in Module 10, but at the People Domain level:)
 
 ### Stakeholder Engagement Levels (per PMBOK):
+
 1. **Unaware** — doesn't know about project
 2. **Resistant** — knows but resists
 3. **Neutral** — knows, neither supports nor opposes
@@ -356,6 +370,7 @@ For exam scenarios, default to these:
 ## ✅ Module 2 Summary
 
 You now know:
+
 - 👥 People Domain = **42% of exam** — the biggest piece
 - 🛡️ Servant leadership is the default mindset
 - 🎭 Tuckman's 5 stages

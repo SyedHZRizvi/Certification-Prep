@@ -122,6 +122,7 @@ Meta **Advantage+ Creative** and Google **Demand Gen** automate this for paid so
 ## 🏆 Exam Power Phrases
 
 ✅ Often correct:
+
 - "Thompson Sampling is the production default..."
 - "Contextual bandits add user features to MAB..."
 - "Two-tower for retrieval at scale..."
@@ -129,6 +130,7 @@ Meta **Advantage+ Creative** and Google **Demand Gen** automate this for paid so
 - "Measurement before personalization..."
 
 ❌ Often wrong:
+
 - "Bandits replace all A/B tests..."
 - "Deep learning always beats MF..."
 - "More recommendations = better..."

@@ -163,6 +163,7 @@ Clustered bar chart. 3 bars per channel. Different colors per model. The story i
 - ✅ "Validated implementation against a hand-computed 3-journey example..."
 
 Avoid:
+
 - ❌ "Used a library to do it..."
 - ❌ "I think paid social is undercredited..."
 - ❌ "Markov is just better..."

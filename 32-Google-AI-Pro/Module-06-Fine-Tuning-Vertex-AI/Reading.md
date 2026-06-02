@@ -66,6 +66,7 @@ Fine-tuning is **gradient descent on the model's weights using new training data
 ### Supported models for SFT
 
 As of 2026-05, Vertex AI supports SFT on:
+
 - **Gemini 2.5 Flash** (most common; cost-effective)
 - **Gemini 2.0 Flash / Pro** (legacy; still supported)
 - **Some Gemini 1.5 variants** (deprecating)
@@ -128,6 +129,7 @@ print(tuning_job.tuned_model_endpoint_name)
 ### Cost & duration
 
 A Gemini Flash SFT on ~1,000 examples typically:
+
 - Runs in 2–4 hours
 - Costs ~$10–50 per run (you pay for the training compute + the resulting tuned-model endpoint serving rate)
 - Produces a tuned-model endpoint that costs slightly more per token than base Flash
@@ -149,6 +151,7 @@ Full-parameter fine-tuning of a Gemini Flash-sized model would be cost-prohibiti
 - Smaller storage footprint per fine-tune
 
 **The `adapter_size` hyperparameter** controls the rank of the LoRA matrices:
+
 - `adapter_size=1` — very small adapter; minimal change
 - `adapter_size=4` — typical default
 - `adapter_size=8` or `16` — more capacity, more risk of overfit
@@ -234,6 +237,7 @@ result = task.evaluate(model=tuned_model)
 ```
 
 Compare:
+
 1. Tuned model on the holdout
 2. Base model on the holdout
 3. Tuned vs base on **out-of-distribution** examples (catastrophic forgetting check)
@@ -315,6 +319,7 @@ Mayo Clinic uses MedLM (Med-PaLM 2 successor in Vertex AI Model Garden) — alre
 ## ✅ Module 6 Summary
 
 You now know:
+
 - 🪜 **Customization ladder** — prompt → few-shot → RAG → SFT → RLHF
 - 🎓 **What SFT actually does** — behavior, not knowledge
 - ⚡ **LoRA** as Vertex AI's tuning mechanism

@@ -13,6 +13,7 @@ Imagine you're 6 months into a 12-month project. You've spent 60% of your budget
 EVM answers: **"How is the project actually performing in terms of cost AND schedule?"**
 
 It compares:
+
 - 📅 What you **planned** to do (PV)
 - ✅ What you've **earned** for completing (EV)
 - 💰 What you've **actually spent** (AC)
@@ -218,6 +219,7 @@ If you got 5/5, you're EVM-ready.
 ## ✅ Module 6 Summary
 
 You now know:
+
 - 🧱 PV, EV, AC (the foundation)
 - 📋 8 formulas (drill them!)
 - 🎯 Positive variance/>1 index = good

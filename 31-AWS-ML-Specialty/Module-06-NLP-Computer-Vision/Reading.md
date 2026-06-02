@@ -16,6 +16,7 @@ Meet Marcus. He runs ML at a mid-size US auto-insurance company. In 2022 the com
 Marcus is given an 18-month budget to build ML to reduce this cost. He starts by thinking SageMaker: train a damage-detection model on car photos, an NER model on police reports, an audio model on the recorded statements. A 12-person team with $4.5M annual budget.
 
 Then a senior architect rebuilds the plan around AWS's *managed* services:
+
 - **Rekognition Custom Labels** — train damage-class CNN with 200 labelled images (no SageMaker code)
 - **Textract** — extract forms, key-value pairs, tables from scanned PDFs
 - **Comprehend** — sentiment + entities from policy notes
@@ -75,6 +76,7 @@ Comprehend has both **pre-trained APIs** and **custom models**.
 ### Amazon Comprehend Medical
 
 A specialised vertical of Comprehend with built-in vocabularies for healthcare:
+
 - **NER** for medications (RxNorm codes), conditions (ICD-10-CM), anatomy, test procedures
 - **Relationship extraction** between entities (e.g. "drug X treats condition Y")
 - **HIPAA-eligible** — can process PHI
@@ -417,6 +419,7 @@ Pre-built fraud-detection workflows:
 ## ✅ Module 6 Summary
 
 You now know:
+
 - 🗣️ **Comprehend** (sentiment, entities, key phrases, custom classifier/NER), **Comprehend Medical**
 - 🌐 **Translate** (real-time + batch + Custom Terminology + ACT)
 - 🎙️ **Transcribe** (batch + streaming + Call Analytics + Custom Vocabulary / Language Model)

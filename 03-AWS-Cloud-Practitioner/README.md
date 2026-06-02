@@ -50,6 +50,7 @@ Begin with [Module 1: Cloud Fundamentals →](./Module-01-Cloud-Fundamentals/Rea
 ## 🎯 What You'll Learn
 
 By the end of this track, you'll be able to:
+
 - Explain core cloud concepts (regions, AZs, edge locations, IaaS/PaaS/SaaS)
 - Pick the right AWS service for a given workload (EC2 vs Lambda, S3 vs EBS vs EFS, RDS vs DynamoDB, etc.)
 - Apply the AWS Shared Responsibility Model and basic IAM hygiene

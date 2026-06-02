@@ -303,6 +303,7 @@ We saw this in Module 2 from a network angle. Sourcing lens emphasizes:
 ## ✅ Module 6 Summary
 
 You now know:
+
 - 🎯 The 7-step strategic sourcing process
 - 📥 RFI / RFP / RFQ distinctions and when each fits
 - 🎯 Kraljic matrix with the right strategy per quadrant

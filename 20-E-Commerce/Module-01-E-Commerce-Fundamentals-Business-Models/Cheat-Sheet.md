@@ -118,6 +118,7 @@ Aggregate(tail) > Aggregate(head) when:
 ## 🏆 Exam Power Phrases
 
 When you see these in answers, they're often correct:
+
 - ✅ "Allocate by CLV segment, not aggregate..." (Fader)
 - ✅ "Long-term cash flow over quarterly GAAP..." (Bezos)
 - ✅ "Job-organized, not feature-organized..." (Christensen)
@@ -125,6 +126,7 @@ When you see these in answers, they're often correct:
 - ✅ "Geography + Environment + Mobility predict adoption..." (Bell)
 
 When you see these, they're often **wrong**:
+
 - ❌ "Treat all customers equally"
 - ❌ "Optimize for quarterly earnings"
 - ❌ "Marketplace-first for DTC brand-building"
@@ -159,6 +161,7 @@ When you see these, they're often **wrong**:
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. The seven business models? ___
 2. The five unit-economics formulas? ___
 3. CLV:CAC healthy ratio? ___

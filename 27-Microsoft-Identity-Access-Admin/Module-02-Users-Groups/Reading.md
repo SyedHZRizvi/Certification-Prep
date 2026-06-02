@@ -382,6 +382,7 @@ The correct order:
 ## ✅ Module 2 Summary
 
 You now know:
+
 - 👤 The three user types and the `#EXT#` guest UPN format
 - 👥 Two group types × three membership types, and that dynamic + group-based licensing need P1
 - 🤝 B2B collaboration vs B2B direct connect, and where each lives
@@ -405,12 +406,14 @@ You now know:
 **Situation.** Walmart's enterprise Entra tenant supports ~2.3 million associates plus tens of thousands of supplier, agency, and contractor identities. By 2021 the supplier-collaboration estate had grown organically: 400,000+ B2B guest objects, many unused for >2 years, several with elevated SharePoint or Teams roles. A security audit identified 1,800 guests with privileged group memberships from acquisitions Walmart had divested — three with effective Owner access via inherited group nesting.
 
 **Decision.** Walmart's IAM team (publicly described at Microsoft Ignite 2023) implemented a four-step governance program:
+
 1. **Catalog all B2B**. Used `Get-MgUser -Filter "userType eq 'Guest'" -All` + Microsoft Graph data exports to Power BI for inventory by sponsor, last sign-in, role memberships.
 2. **Migrate ad-hoc access to access packages**. New supplier engagements onboarded via entitlement management with sponsor approval, time-bound assignments (default 90 days), and mandatory access reviews.
 3. **Bulk inactive disablement**. Guests with zero sign-ins for 180 days disabled (account status, not deletion — to preserve audit history); 365-day inactive guests deleted after sponsor outreach.
 4. **Lifecycle Workflows for joiner/leaver**. Once Entra ID Governance launched (GA mid-2023), Walmart wired employeeLeaveDateTime to a leaver workflow that disables, revokes sessions, removes group memberships, and notifies the sponsor.
 
 **Outcome.** Per Walmart's Ignite session and a follow-up TechCommunity post (2023):
+
 - Guest population dropped from ~400K to ~120K (active) within 12 months.
 - Average days from "supplier engagement ended" to "account disabled" fell from 187 days to under 2.
 - Number of unsponsored guest accounts (no manager / no project owner) dropped from 28,000 to <300.

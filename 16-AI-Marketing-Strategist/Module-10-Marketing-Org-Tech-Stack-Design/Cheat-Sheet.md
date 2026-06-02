@@ -122,6 +122,7 @@ Red flag: >50% activation + <10% measurement.
 ## 🏆 Exam Power Phrases
 
 ✅ Often correct:
+
 - "Hub-and-spoke is the 2026 default..."
 - "Marketing is Accountable for tool selection..."
 - "Build only when strategic differentiator + eng capacity..."
@@ -129,6 +130,7 @@ Red flag: >50% activation + <10% measurement.
 - "30-30-30-10 spend rule..."
 
 ❌ Often wrong:
+
 - "Data engineering owns vendor selection..."
 - "Build is always cheaper long-term..."
 - "More tools = better stack..."

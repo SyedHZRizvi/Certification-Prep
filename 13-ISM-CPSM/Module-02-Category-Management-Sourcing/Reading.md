@@ -64,6 +64,7 @@ Spend analysis = systematically gathering, classifying, and analyzing **historic
 A **category** is a set of related goods or services bought from a similar supply market.
 
 Examples:
+
 - IT hardware (laptops, servers, monitors)
 - Professional services (consulting, legal)
 - Logistics (freight, warehousing, parcel)
@@ -118,6 +119,7 @@ LOW       │ (office stuff, │ (commodities,  │
 | **Strategic** | High | High | Partnership | Long-term collaboration, joint development |
 
 🎯 **MEMORIZE THIS.** You will see Kraljic on every practice exam. Be able to:
+
 - Place a category in the right quadrant from a scenario
 - Recommend the right sourcing approach
 - Recognize when a category should MOVE quadrants (e.g., a bottleneck item that you've now dual-sourced becomes leverage)
@@ -262,6 +264,7 @@ Documented by Hau L. Lee in "Information Distortion in a Supply Chain: The Bullw
 ## 🧠 Specification Standardization & Rationalization
 
 A favourite CPSM theme:
+
 - **Standardization** = reduce variety (one fastener spec instead of 12)
 - **Rationalization** = reduce the supplier list (50 widget suppliers → 5)
 
@@ -274,6 +277,7 @@ Both lift leverage, reduce admin, simplify quality. Both require cross-functiona
 **Situation.** In 2022, Apple manufactured roughly **95% of all iPhones in China**, primarily at Foxconn's Zhengzhou facility ("iPhone City") which alone produced over half. Zero-COVID lockdowns disrupted Zhengzhou for 6+ weeks in Q4 2022, contributing to a $1B+ revenue miss in the December quarter. Combined with rising US-China tariff risk (Section 301 tariffs from 2018-2020 + 2024 increases on certain Chinese goods), Apple's category-management leadership concluded that single-country concentration on its largest and highest-margin category violated every Kraljic principle for a *strategic* item.
 
 **Decision.** Tim Cook and supply chief Sabih Khan executed a multi-year category re-design:
+
 1. **India ramp-up.** Foxconn, Pegatron, and Wistron (later Tata after Wistron's 2023 exit) built or expanded iPhone assembly lines in Tamil Nadu and Karnataka. Apple set a target of **25% of iPhone production from India by 2025** (later updated to all US-bound iPhones by end of 2026, per Cook's May 2025 earnings call).
 2. **Vietnam for AirPods, iPad, Mac, Watch.** By 2024, Vietnam produced essentially all AirPods Max, the bulk of iPads, and a growing share of Watch units.
 3. **Multi-source contracts** with parts of the supplier base — e.g., adding Luxshare to compete with Foxconn on final assembly.
@@ -352,6 +356,7 @@ Both lift leverage, reduce admin, simplify quality. Both require cross-functiona
 ## ✅ Module 2 Summary
 
 You now know:
+
 - 💸 Spend analysis basics and direct vs. indirect distinction
 - 🗺️ Category management as a discipline
 - 🎲 Kraljic matrix and its four quadrant strategies

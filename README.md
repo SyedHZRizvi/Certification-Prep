@@ -119,6 +119,7 @@ Module-XX-Topic/
 ```
 
 Each course folder ALSO has:
+
 - `README.md` — overview, exam facts, recommended path
 - `Flashcards.md` — interactive widget with 60–150 Q/A cards
 - `Practice-Exams/` — 2 partial practice exams + 1 full-length mock matching the real cert format

@@ -22,6 +22,7 @@ The cause turns out to be a single config drift: a Linux NTP server (Jordan's) h
 The fix took 4 minutes once they understood it (point both worlds back to `time.cloudflare.com`). The *understanding* took 90 minutes — because Priya had never `systemctl status chrony`'d a Linux box, and Jordan had never run `w32tm /query /status` on Windows.
 
 This module is the antidote. You'll learn:
+
 - The Windows Server **roles** and **features** vocabulary
 - The Linux **systemd**, **package manager**, and **daemon** vocabulary
 - How to **remote-administer** both worlds: RDP, SSH, WinRM, PowerShell remoting
@@ -434,6 +435,7 @@ This is the scenario Server+ tests when asking "design a resilient AD deployment
 ## ✅ Module 2 Summary
 
 You now know:
+
 - 🪟 Windows Server **roles** vs **features** + the role catalog (AD DS, DNS, DHCP, IIS, Hyper-V, RDS, WSUS, WDS)
 - 🪟 **Server Core** as the production-preferred variant
 - 🐧 **systemd** basics: `systemctl`, `journalctl`, unit-file locations

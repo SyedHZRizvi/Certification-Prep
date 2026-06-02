@@ -88,6 +88,7 @@ Channel-portable JSON UI. Render natively in Teams, Web Chat, and other supporti
 ## 🏆 Exam Power Phrases
 
 **Usually right**:
+
 - ✅ "Orchestration workflow to route between CLU and QA"
 - ✅ "Connect a Teams channel" (don't rewrite the bot)
 - ✅ "Direct Line Speech for voice"
@@ -95,6 +96,7 @@ Channel-portable JSON UI. Render natively in Teams, Web Chat, and other supporti
 - ✅ "Adaptive Cards for portable rich UI"
 
 **Usually wrong**:
+
 - ❌ "Use LUIS for new bots"
 - ❌ "Use QnA Maker"
 - ❌ "MemoryStorage in production"

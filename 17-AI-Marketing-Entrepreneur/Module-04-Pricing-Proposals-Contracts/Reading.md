@@ -23,6 +23,7 @@ New Lena (who has just read Blair Enns's *Pricing Creativity* and watched 3 Chri
 > "Happy to scope this. Before I quote, may I ask 6 questions in a 30-minute discovery call? It'll let me give you three options at three price points so you can pick the right fit."
 
 On the call, she asks:
+
 1. What does success look like in 6 months? *("3x our blog traffic, double our MQLs.")*
 2. What does that level of growth typically generate in revenue? *("Roughly €400K in new ARR over 18 months.")*
 3. Who is doing this today and how? *("Two interns + a freelancer; mediocre quality, slow.")*
@@ -536,6 +537,7 @@ Questions? Reply to this email or schedule a 30-minute review at [Calendly link]
 ## ✅ Module 4 Summary
 
 You now know:
+
 - 💡 The 5 pricing mindsets (outcome > time, buyer's wallet, never quote on call, anchor, comfortable with no)
 - 🧠 Pricing psychology tools (anchoring, decoy good-better-best, value-based, price endings)
 - 📝 The 7-section proposal anatomy + the ROI projection that closes deals

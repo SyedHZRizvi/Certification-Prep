@@ -34,6 +34,7 @@ CPSM expects you to categorize risk into actionable buckets. A common four-categ
 | **Compliance / Reputational** | Anti-corruption violations, modern slavery, environmental fines, sanctions exposure, child labor |
 
 Some frameworks add:
+
 - **Geopolitical** (war, sanctions, trade conflict)
 - **Natural / climate** (hurricane, wildfire, pandemic, drought)
 - **Cyber** (ransomware on supplier, data breach)
@@ -259,6 +260,7 @@ Every CPSM professional is bound by ISM's ethical standards. Core obligations:
 **Situation.** In 2010, Foxconn's Longhua "iPhone City" facility in Shenzhen made global headlines after a cluster of worker suicides — 14 confirmed deaths by mid-2010 against a workforce of ~400,000. Foxconn was Apple's largest assembler; Apple was Foxconn's largest customer. The crisis exposed Apple's then-light supply-chain labor visibility (Apple's first Supplier Code of Conduct dated only to 2005, audits to 2006). What followed over the next 14 years became the most-watched supply-chain labor case in modern business, threading through multiple regulatory regimes.
 
 **Decision.** Apple, with Tim Cook taking over supply chain leadership (and later CEO in 2011), executed a multi-decade response:
+
 1. **Supplier Responsibility Reports** — annual, public, with growing detail. By 2024, Apple was publishing audit findings on hundreds of suppliers including remediation plans.
 2. **Independent monitoring** — Fair Labor Association (FLA) brought in for Foxconn 2012 audit; findings included excessive working hours, underage workers in some facilities, unsafe conditions.
 3. **Wage and hour reforms** at Foxconn — Apple pressured Foxconn (alongside FLA findings) to reduce work hours from 60+/week to a target of 49, raise base wages, and end illegal use of student "interns" as full-time workers.
@@ -270,6 +272,7 @@ Foxconn itself moved significant assembly to India and Vietnam (see Module 2 App
 **Outcome.** By 2024, Apple's Supplier Responsibility program audited ~1,000 supplier facilities annually with thousands of corrective-action items. Foxconn's working conditions improved materially (though NGOs continued to flag specific cases). The 2010 suicide cluster did not repeat at the same scale. UFLPA enforcement has led to hundreds of US Customs and Border Protection (CBP) detentions of imported electronics with suspected Xinjiang content, with cumulative value over $3.5B in detained shipments by mid-2024 (CBP UFLPA statistics). Apple itself avoided major CBP detentions through aggressive supply-chain mapping that competitors did not match early enough.
 
 **Lesson for the exam / for practitioners.** This is the textbook **supplier conduct audit lifecycle**:
+
 - **Audit → Findings → Remediation → Re-audit → Disclosure** is the core loop.
 - **Tier-1 visibility is insufficient.** UFLPA enforcement requires Tier-3+ mapping for cotton, polysilicon, and certain minerals — and other regulations are catching up.
 - **The ISM Principles (sustainability, human rights, labor rights) are now codified into law** in jurisdictions Apple and its peers ship into. What was once "ESG nice-to-have" is now legal compliance.
@@ -361,6 +364,7 @@ Note four exam-relevant patterns: (1) when an audit finds a labor violation, the
 ## ✅ Module 7 Summary
 
 You now know:
+
 - 🗺️ Supply chain risk taxonomy (4-7 categories)
 - 📋 The risk register and probability/impact heatmap
 - 🛠️ Four risk treatments (Avoid, Transfer, Mitigate, Accept)

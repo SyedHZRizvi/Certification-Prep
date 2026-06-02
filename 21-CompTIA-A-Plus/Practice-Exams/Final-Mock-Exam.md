@@ -507,6 +507,7 @@ C. Reformat OS, reinstall drivers, update BIOS
 D. Replace PSU, then RAM, then GPU
 
 ### 83 (Scenario PBQ). Match the symptom to the cause:
+
 - (a) `ipconfig /all` shows 169.254.42.10
 - (b) Continuous beeps at boot
 - (c) Files renamed with `.locked`
@@ -524,6 +525,7 @@ C. Reformat
 D. Replace SSD
 
 ### 85 (Scenario PBQ). A small editing studio needs a 4-disk array that:
+
 - Survives 2 simultaneous disk failures
 - Maintains decent throughput
 - Tolerates long rebuilds
@@ -535,6 +537,7 @@ C. **RAID 6 (4 disks, dual parity)**
 D. JBOD
 
 ### 86 (Scenario PBQ). A 60-person law firm wants to ensure:
+
 - Lost laptops don't expose data
 - Selective wipe of corporate data on departure
 - Backups survive ransomware

@@ -51,6 +51,7 @@ Begin with [Module 1: Mobile Devices →](./Module-01-Mobile-Devices/Reading.md)
 ## 🎯 What You'll Master
 
 By the end of this track, you'll be able to:
+
 - Identify, install, and troubleshoot every component in a modern PC, laptop, mobile device, and SOHO network — by sight, by sound (POST beep codes), and by symptom
 - Speak fluent connector, port, protocol, and cable: USB-C/Thunderbolt, RJ-45/RJ-11, SATA/M.2/U.2, HDMI/DisplayPort, DDR4/DDR5, NVMe/PCIe, 802.11ax/be
 - Install, configure, and repair Windows 10/11, macOS, Linux, iOS, Android, ChromeOS — from the command line as comfortably as from the GUI
@@ -101,6 +102,7 @@ By the end of this track, you'll be able to:
 🔗 **[Professor Messer's free 220-1101 / 220-1102 video courses](https://www.professormesser.com/free-a-plus-training/220-1101/220-1101-video-training-course/)** — Hundreds of bite-sized videos covering every objective. Free. The de facto A+ teacher. Pair with his paid Notes PDF for the perfect lecture + outline combo.
 
 Honorable mentions:
+
 - 📘 *CompTIA A+ Complete Study Guide* (Quentin Docter, Jon Buhagiar, Sybex) — the most rigorous book
 - 📘 *Mike Meyers' All-in-One CompTIA A+ Certification Exam Guide* — friendly tone, deep coverage, great labs in the back
 - 📘 *CompTIA A+ Cert Guide* (Pearson, Soper/Prowse) — terse, well-indexed, perfect for cross-reference

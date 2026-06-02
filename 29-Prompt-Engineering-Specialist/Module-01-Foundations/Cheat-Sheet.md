@@ -131,6 +131,7 @@ client.chat.completions.create(model="llama-3.3-70b-versatile",
 ## 🏆 Exam Power Phrases
 
 ✅ Often **right**:
+
 - "Place critical instructions at the start of the system prompt or end of the user message"
 - "Use temperature=0 for extractive/transactional tasks"
 - "System role > user role > assistant > tool"
@@ -138,6 +139,7 @@ client.chat.completions.create(model="llama-3.3-70b-versatile",
 - "Output tokens cost 3–5× input tokens"
 
 ❌ Often **wrong**:
+
 - "Temperature 0 guarantees identical output"
 - "All models use the same tokenizer"
 - "1M context = 1M perfect recall"
@@ -162,6 +164,7 @@ client.chat.completions.create(model="llama-3.3-70b-versatile",
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. What does each role do (system, user, assistant)? ___
 2. Temperature 0 vs 0.7 — when each? ___
 3. Why is `"antidisestablishmentarianism"` not 1 token? ___

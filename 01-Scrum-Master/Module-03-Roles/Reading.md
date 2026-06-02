@@ -214,6 +214,7 @@ This is THE most-tested distinction:
 ## 🎓 Stakeholders: Important But NOT Team Members
 
 Stakeholders are NOT part of the Scrum Team. They:
+
 - Provide input on the Product (especially at Sprint Review)
 - Don't attend Daily Scrums (typically)
 - Don't decide on backlog priorities (PO does)
@@ -272,6 +273,7 @@ Stakeholders are NOT part of the Scrum Team. They:
 ## ✅ Module 3 Summary
 
 You now know:
+
 - 🎭 Three accountabilities: PO (value), SM (process), Developers (delivery)
 - 🛡️ Scrum Masters serve THREE groups (team, PO, organization)
 - 🛠️ "Developers" = anyone doing the work, not just coders

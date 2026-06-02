@@ -23,6 +23,7 @@ You have 90 days. The board reviews on Day 91.
 ### 1. Full-Funnel Attribution Audit (Modules 4, 7, 9)
 
 Write a **3-5 page attribution audit** of Tidewater's current setup. It must include:
+
 - **Current state** — what data is being captured where (GA4, Meta Pixel + CAPI status, TikTok Pixel, Klaviyo, Triple Whale if installed); identify every gap
 - **Last-click vs data-driven attribution comparison** — pull the last 90 days from GA4 in both models, quantify the per-channel revenue delta
 - **Incrementality hypothesis list** — for the top 5 channels, write a 1-paragraph hypothesis on incremental vs cannibalized revenue (e.g., "We believe branded Search is 70% cannibalized by organic; testable via a geo-holdout in Week 4")
@@ -34,6 +35,7 @@ Write a **3-5 page attribution audit** of Tidewater's current setup. It must inc
 ### 2. Google Ads Restructure — PMax + Search Hybrid (Modules 2, 3)
 
 The current $180K/month Google Ads program is structurally broken. Design the new architecture:
+
 - **Campaign architecture** — which campaigns split out of the single PMax (Brand Search, Non-Brand Search, Shopping with manual feed control, PMax for new-customer acquisition only, YouTube)
 - **For each new campaign**: budget allocation (must sum to $180K), bidding strategy with justification, target ROAS or target CPA, asset-group structure (for PMax), keyword themes
 - **New-customer-acquisition exclusion logic** — how you'll use Customer Acquisition goals + audience exclusions to push PMax toward prospecting only
@@ -46,6 +48,7 @@ The current $180K/month Google Ads program is structurally broken. Design the ne
 ### 3. Meta Ads Creative-Rotation Strategy with AI Variants (Modules 4, 8)
 
 The Meta program's biggest single failure is creative fatigue. Design:
+
 - **Creative testing matrix** — 5 hook archetypes × 3 visual styles × 2 offer angles = 30 variants per testing cycle
 - **AI-generated variant pipeline** — exact stack: Claude + Midjourney v7 + Runway Gen-4 + ElevenLabs + Captions.ai (or similar) with a Make.com orchestration. Document the prompt templates.
 - **DCT (Dynamic Creative Testing) discipline** — testing budget ($30K of the $200K Meta budget reserved for testing), promotion-to-evergreen criteria (3-day CTR > 1.8% AND 7-day ROAS > 1.5x at $5K spend)
@@ -58,6 +61,7 @@ The Meta program's biggest single failure is creative fatigue. Design:
 ### 4. Conversion-Rate Optimization Roadmap (Module 7)
 
 The Shopify product pages are theme-default. Design a 90-day CRO program:
+
 - **Top 5 pages by traffic** with current CVR baseline (assume PDP: 2.1%, Cart: 38%, Checkout: 71%, Collection: 1.2%, Homepage: 0.9%)
 - **For each page**: the 3 highest-leverage A/B tests, the hypothesis, the expected lift band, the required sample size (use Optimizely's or VWO's sample-size calculator), the design freelancer-hours budget
 - **Heatmap + session-recording program** — Hotjar or Microsoft Clarity (free) setup, the 5 specific user-flow questions you'll answer
@@ -69,6 +73,7 @@ The Shopify product pages are theme-default. Design a 90-day CRO program:
 ### 5. Email Retention Strategy (Module 9)
 
 Tidewater's Klaviyo flows are 9 months stale. Design:
+
 - **Welcome flow redesign** — 7-email sequence with AI-generated subject-line variants (3 per email), predictive send time enabled, dynamic content blocks
 - **Abandoned cart and browse abandonment redesign** — multi-channel (email + SMS via Klaviyo SMS or Postscript) with the 4 timing tests
 - **Win-back flow** (new) — for customers who haven't purchased in 90+ days; targeting the ~12K customers in this cohort
@@ -81,6 +86,7 @@ Tidewater's Klaviyo flows are 9 months stale. Design:
 ### 6. Blended Scorecard + Weekly Experiment Cadence (Modules 1, 9, 10)
 
 Design the **operational rhythm** that runs the 90 days:
+
 - **Daily metrics dashboard** (Looker Studio mockup): blended CAC, blended ROAS, day-over-day delta, anomalies. 5 metrics maximum.
 - **Weekly experiment scorecard** — for every active test (Google + Meta + TikTok + CRO + Email), a row showing hypothesis, budget, current vs target, decision (continue / kill / scale)
 - **The "weekly war room" agenda** — 60-minute meeting, Monday 10am, agenda with timeboxes. Who attends, who decides what.
@@ -143,6 +149,7 @@ Self-grading: complete the rubric above honestly. If you're below 75, identify t
 ## Optional Stretch Goals
 
 If you want to push beyond pass:
+
 1. **Geo-holdout incrementality test.** Design a proper geo-holdout (5-10% of US market held out from Meta for 4 weeks) and document the regression-discontinuity methodology you'd use to measure incremental revenue. Reference Kohavi, Tang & Xu — *Trustworthy Online Controlled Experiments* (Cambridge, 2020).
 2. **AI-generated creative at scale.** Ship 50 actual ad creatives (text + image + 15-second video) through the AI pipeline and document the cost-per-creative comparison vs human production.
 3. **CLV-based ad-bidding integration.** Wire Klaviyo predictive CLV into the Google + Meta bidding signals via the value-rules feature. Document the lift hypothesis.

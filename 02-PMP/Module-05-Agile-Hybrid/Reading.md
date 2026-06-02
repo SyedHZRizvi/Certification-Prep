@@ -7,6 +7,7 @@
 ## 🎯 What's Different About Agile in PMP?
 
 The PMP has its own flavor of agile content. It draws from:
+
 - The **Agile Manifesto** (Module 1 of Scrum track has the foundations!)
 - **Scrum** (covered extensively in Track 1!)
 - **Kanban**
@@ -22,6 +23,7 @@ If you've completed the Scrum Master track, you know **80%** of what PMP tests o
 > 4 values + 12 principles. Already covered in Scrum Module 1.
 
 If rusty, re-read:
+
 - [Scrum Module 1: Agile Mindset](../../01-Scrum-Master/Module-01-Agile-Mindset/Reading.md)
 
 ---
@@ -31,6 +33,7 @@ If rusty, re-read:
 Where Scrum is iteration-based, **Kanban** is **flow-based**.
 
 ### Core Kanban Practices:
+
 1. 👀 **Visualize the workflow** (the Kanban board)
 2. 🚦 **Limit Work In Progress (WIP)** — don't take on more than you can finish
 3. 📊 **Manage flow** — measure cycle time, throughput
@@ -64,7 +67,9 @@ Where Scrum is iteration-based, **Kanban** is **flow-based**.
 ## 📊 Lean & Lean-Agile
 
 **Lean** (from Toyota Production System) emphasizes:
+
 - Eliminating waste (the 8 wastes — TIM-WOODS):
+
   - **T**ransport
   - **I**nventory
   - **M**otion
@@ -87,6 +92,7 @@ Where Scrum is iteration-based, **Kanban** is **flow-based**.
 XP focuses on technical excellence:
 
 ### Key Practices:
+
 - 👯 **Pair Programming** — two devs, one keyboard
 - ✅ **TDD (Test-Driven Development)** — write tests first
 - 🔄 **Continuous Integration** — merge code often
@@ -103,12 +109,14 @@ XP focuses on technical excellence:
 **Hybrid = mix of predictive + agile.**
 
 ### When To Go Hybrid:
+
 - 📐 Some parts of project are clear, others uncertain
 - 📊 Different stakeholders want different approaches
 - 🏛️ Regulated environment requires predictive elements
 - 🎁 Customer wants frequent demos but also hard deadlines
 
 ### Common Hybrid Patterns:
+
 - **Predictive shell + Agile inside** — broad timeline, sprint-based work
 - **Stage-Gate + Agile** — go/no-go gates, agile within stages
 - **Agile development + Predictive deployment** — build agile, ship predictive
@@ -174,6 +182,7 @@ COMPLEX        │           DISORDER
 (Building on Scrum Module 6.)
 
 ### Common Techniques:
+
 - **Story Points** — relative complexity
 - **Planning Poker** — group consensus
 - **T-shirt sizing** — XS, S, M, L, XL
@@ -192,6 +201,7 @@ COMPLEX        │           DISORDER
 ## 📈 Agile Metrics
 
 ### Useful agile metrics (test-relevant):
+
 - 📈 **Velocity** — story points completed/sprint
 - ⏱️ **Cycle Time** — time from start to done (Kanban)
 - 📊 **Throughput** — items completed per period
@@ -302,6 +312,7 @@ Same as Product Backlog.
 ## ✅ Module 5 Summary
 
 You now know:
+
 - 🎨 Kanban: flow-based, WIP limits, cycle time
 - 📊 Lean & 8 wastes (TIM-WOODS)
 - 🎨 XP engineering practices

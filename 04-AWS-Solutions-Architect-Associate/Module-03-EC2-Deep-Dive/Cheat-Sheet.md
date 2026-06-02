@@ -94,6 +94,7 @@ Insert 3rd-party firewall appliances?       → GWLB
 ## 🏆 Exam Power Phrases
 
 ✅ Usually right:
+
 - "Spread across multiple AZs in an Auto Scaling Group"
 - "Use Spot for fault-tolerant batch"
 - "Use RI / Savings Plan for steady-state"
@@ -103,6 +104,7 @@ Insert 3rd-party firewall appliances?       → GWLB
 - "Mixed-instances policy with Spot + On-Demand"
 
 ❌ Usually wrong:
+
 - "Run a single EC2 in one AZ for production"
 - "Hard-code access keys on the instance"
 - "Use ALB for TCP/UDP"

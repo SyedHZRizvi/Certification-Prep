@@ -137,6 +137,7 @@ Any "no" → cancel.
 ## 🏆 Exam Power Phrases
 
 When you see these in answers, they're often correct:
+
 - ✅ "Apply the 4-question test..."
 - ✅ "Pick ONE SEO tool..."
 - ✅ "Skip enterprise tools Year 1..."
@@ -144,6 +145,7 @@ When you see these in answers, they're often correct:
 - ✅ "Tool spend should be 1–2% of revenue..."
 
 When you see these, they're often **wrong**:
+
 - ❌ "Subscribe to everything the influencer recommends..."
 - ❌ "Both Ahrefs and SEMrush..."
 - ❌ "HubSpot Marketing Hub Pro Year 1..."
@@ -165,6 +167,7 @@ When you see these, they're often **wrong**:
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. The 4 subscription-test questions? ___
 2. Tier-1 solo stack $/mo? ___
 3. Outbound stack $/mo? ___

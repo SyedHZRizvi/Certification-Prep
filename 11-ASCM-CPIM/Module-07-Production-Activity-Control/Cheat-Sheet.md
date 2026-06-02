@@ -100,12 +100,14 @@ GOAL: < 10-minute setup
 ## 🏆 Exam Power Phrases
 
 When you see these, often **correct**:
+
 - ✅ "Reduce queue time to cut LT"
 - ✅ "Use EDD when due-date performance matters"
 - ✅ "Protect bottleneck with a buffer"
 - ✅ "Convert internal to external setup"
 
 When you see these, often **wrong**:
+
 - ❌ "Reduce run time to cut LT" (queue is dominant)
 - ❌ "FCFS minimizes flow time"
 - ❌ "Cells require identical machines"

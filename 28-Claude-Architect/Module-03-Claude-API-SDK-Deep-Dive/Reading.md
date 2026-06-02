@@ -630,6 +630,7 @@ This is the layered answer expected of an architect.
 ## ✅ Module 3 Summary
 
 You now know:
+
 - 🛣️ **The Messages API** — single endpoint, well-defined parameters, predictable response shape
 - 🐍🟦 **Python and TypeScript SDKs** — install, init, streaming, async
 - ⚡ **Streaming** — when to use, gotchas, TTFT improvement

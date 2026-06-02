@@ -68,6 +68,7 @@ Use cases: Server migration · DB migration (via DMS) · Web app migration · St
 ## 🏆 Exam Power Phrases
 
 Often **correct**:
+
 - ✅ "GRS vault with Cross-Region Restore enabled"
 - ✅ "MUA via Resource Guard for backup ops"
 - ✅ "ASR test failover in isolated network"
@@ -75,6 +76,7 @@ Often **correct**:
 - ✅ "Azure Migrate appliance for discovery"
 
 Often **wrong**:
+
 - ❌ "ASR replaces backup"
 - ❌ "Soft delete disable instantly"
 - ❌ "MARS for Linux"

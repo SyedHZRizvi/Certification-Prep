@@ -651,6 +651,7 @@ D. AWS Compute Optimizer (free, ML-based)
 ## 🔍 Review Process
 
 For EACH wrong answer:
+
 1. Identify which module covered the topic
 2. Re-read that module's Reading.md section
 3. Add the concept to your Flashcards

@@ -264,6 +264,7 @@ Use separate AWS accounts (Organizations) per environment, peer or TGW for selec
 **Outcome.** Knight Capital was effectively eliminated as an independent firm. The SEC fined them $12M (in addition to the $440M loss). The incident became Harvard Business School case study #9-114-049 (*"Knight Capital's August 1, 2012 Algorithmic Trading Disaster"*) and is mandatory reading at MIT 6.005 and CMU 17-313.
 
 **Lesson for the exam / for practitioners.** Knight Capital is a network architecture lesson dressed as a trading disaster:
+
 - **Separate environments by VPC or by account** — production trading systems should live behind their own VPC with their own Security Groups
 - **Blue/green or canary deploys** — route 5% of traffic to the new version via ALB weighted target groups OR Route 53 weighted routing
 - **Outbound Security Groups CAN be tightened** — to allow only specific destinations and ports (Knight allowed open egress to the exchange)
@@ -326,6 +327,7 @@ When the SAA exam asks "which combination of AWS services would have detected an
 ## ✅ Module 4 Summary
 
 You now know:
+
 - 🏗️ VPC anatomy (CIDR, subnets, route tables, IGW, NAT)
 - 🚪 NAT Gateway vs NAT Instance and how to make it HA
 - 🚦 Gateway vs Interface VPC endpoints (and PrivateLink)

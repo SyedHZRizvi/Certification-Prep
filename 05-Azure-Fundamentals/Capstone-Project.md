@@ -26,6 +26,7 @@ You've been retained as a freelance cloud advisor by **Cantwell, Boyd & Reyes LL
 **The mandate — and the constraints:**
 
 Margaret Cantwell has handed you a one-page mandate:
+
 1. **GDPR-defensible** — partners regularly serve EU citizens; the firm has been told twice by client procurement teams that GDPR posture is now a buying criterion.
 2. **State-bar e-discovery + 5-year retention** — every matter file, every email, every billing record retained for 5 years (or per matter-specific orders) with chain-of-custody intact.
 3. **Disaster recovery from a regional event** — Chicago is in a flood plain. New York and Los Angeles offices are on opposite coasts. A Chicago outage cannot stop matters from progressing on the coasts.

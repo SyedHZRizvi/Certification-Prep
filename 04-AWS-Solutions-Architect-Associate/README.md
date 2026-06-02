@@ -51,6 +51,7 @@ Begin with [Module 1: Foundations & Well-Architected →](./Module-01-Foundation
 ## 🎯 What You'll Learn
 
 By the end of this track, you'll be able to:
+
 - Design **resilient** multi-AZ and multi-region architectures
 - Pick the **right compute** (EC2 family, ASG, Lambda, ECS, Fargate) for the workload
 - Design **secure** systems with IAM, KMS, Security Groups, NACLs, and least privilege
@@ -98,6 +99,7 @@ By the end of this track, you'll be able to:
 🔗 **[AWS SAA-C03 Exam Guide (official PDF)](https://d1.awsstatic.com/training-and-certification/docs-sa-assoc/AWS-Certified-Solutions-Architect-Associate_Exam-Guide.pdf)** — 17 pages. Read it twice. The blueprint lists every service in scope and the proportion of questions per domain. If our content contradicts the official guide, the official guide wins.
 
 Also pin these:
+
 - 🔗 **[AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html)** — six pillars; quoted directly in exam questions
 - 🔗 **[AWS Architecture Center](https://aws.amazon.com/architecture/)** — reference architectures
 - 🔗 **[AWS Pricing Calculator](https://calculator.aws/)** — practice picking the cost-optimized option

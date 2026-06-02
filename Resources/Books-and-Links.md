@@ -415,6 +415,7 @@
 - 📜 [Exam-Day-Tips.md](../00-Study-Plan/Exam-Day-Tips.md)
 - 🎯 Final Mock Exam — in each track's `Practice-Exams/` folder
 - 🃏 Flashcards — each track has its own `Flashcards.md`:
+
   - [Scrum](../01-Scrum-Master/Flashcards.md) · [PMP](../02-PMP/Flashcards.md) · [AWS CLF-C02](../03-AWS-Cloud-Practitioner/Flashcards.md) · [AWS SAA-C03](../04-AWS-Solutions-Architect-Associate/Flashcards.md)
   - [AZ-900](../05-Azure-Fundamentals/Flashcards.md) · [AZ-104](../06-Azure-Administrator/Flashcards.md) · [AIF-C01](../07-AWS-AI-Practitioner/Flashcards.md) · [AI-102](../08-Azure-AI-Engineer/Flashcards.md)
   - [Security+](../09-CompTIA-Security-Plus/Flashcards.md) · [CSCP](../10-ASCM-CSCP/Flashcards.md) · [CPIM](../11-ASCM-CPIM/Flashcards.md) · [CLTD](../12-ASCM-CLTD/Flashcards.md) · [CPSM](../13-ISM-CPSM/Flashcards.md)
@@ -474,12 +475,14 @@
 ## 🏆 NEXT-LEVEL CERTS (After You Pass)
 
 ### Beyond PSM I:
+
 - **PSM II** (advanced practitioner)
 - **PSPO I** (Product Owner)
 - **PSD** (Scrum Developer)
 - **SPS** (Scaled Professional Scrum)
 
 ### Beyond PMP:
+
 - **PMI-ACP** (Agile Certified Practitioner)
 - **PgMP** (Program Management)
 - **PfMP** (Portfolio Management)
@@ -487,48 +490,58 @@
 - **SAFe certifications** (scaling), **ICAgile certs**, **PMI-RMP** (Risk Management)
 
 ### Beyond AWS Cloud Practitioner (CLF-C02):
+
 - **Solutions Architect Associate (SAA-C03)** — natural next step
 - **Developer Associate (DVA-C02)** or **SysOps Administrator Associate (SOA-C02)**
 - **Specialty / Pro certs** later (Security Specialty, Solutions Architect Professional, etc.)
 
 ### Beyond AWS Solutions Architect Associate (SAA-C03):
+
 - **Solutions Architect Professional (SAP-C02)**
 - **Security Specialty**, **Networking Specialty**, **Data Engineer Associate**
 
 ### Beyond AWS AI Practitioner (AIF-C01):
+
 - **Machine Learning Engineer – Associate (MLA-C01)**
 - **Machine Learning – Specialty (MLS-C01)**
 
 ### Beyond Azure Fundamentals (AZ-900):
+
 - **Azure Administrator (AZ-104)**, **Azure Developer (AZ-204)**, **Security Engineer (AZ-500)**
 - Or pivot into data/AI: **DP-900 → DP-203**, **AI-900 → AI-102**
 
 ### Beyond Azure Administrator (AZ-104):
+
 - **AZ-305 Designing Microsoft Azure Infrastructure Solutions** (Solutions Architect Expert)
 - **AZ-500 Security Engineer**
 
 ### Beyond Azure AI Engineer (AI-102):
+
 - **DP-100 Designing and Implementing a Data Science Solution on Azure**
 - AWS or GCP AI/ML certs for cross-cloud breadth
 
 ### Beyond CompTIA Security+ (SY0-701):
+
 - **CompTIA CySA+** (analyst), **PenTest+**, **CASP+**
 - **(ISC)² SSCP → CISSP**, **ISACA CISA / CISM**, **Microsoft SC-200**
 - Hands-on: **TCM PNPT**, **OffSec OSCP**
 
 ### Beyond ASCM CSCP / CPIM / CLTD:
+
 - Stack the other two ASCM certs (CSCP + CPIM + CLTD together signals broad expertise)
 - **ISM CPSM** (procurement specialty)
 - **Six Sigma Green/Black Belt** (process improvement)
 - **PMP** for project-side credibility
 
 ### Beyond ISM CPSM:
+
 - **ISM CPSD** (Diversity), **ISM Mastery Model**
 - **ASCM CSCP** for broader supply chain coverage
 - **PMP** for project leadership
 - **Sustainable Procurement certifications** (CIPS, etc.)
 
 ### Beyond HubSpot Inbound / Google Ads / Meta Blueprint:
+
 - **Google Analytics Individual Qualification (GA4 IQ)** — measurement
 - **CXL Institute** — Measurement, Conversion Optimization, Growth Marketing minidegrees
 - **Wharton Digital Marketing & E-Commerce Specialization** — strategy depth
@@ -536,12 +549,14 @@
 - **OMCP** — specialist marketing tracks
 
 ### Beyond Certified Bitcoin Professional (CBP):
+
 - **BTA CBSA** — Blockchain Solution Architect
 - **ACAMS CCAS** — Cryptoasset Anti-Financial Crime Specialist (compliance track)
 - **University of Nicosia MSc** — academic depth
 - Adjacent: **CFA Level I**, **AWS Solutions Architect Associate** (many crypto firms run on AWS)
 
 ### Beyond Google Digital Marketing & E-Commerce Professional Certificate:
+
 - **Adobe Commerce Business Practitioner / Developer** — Adobe-shop depth
 - **Salesforce B2C Commerce Developer / Architect** — enterprise retail (~$165K avg US salary at Architect tier)
 - **Wharton Online Specialization** — strategy + brand

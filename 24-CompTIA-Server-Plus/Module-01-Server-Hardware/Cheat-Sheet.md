@@ -130,6 +130,7 @@ Form factors: 3.5" LFF · 2.5" SFF · M.2 · U.2/U.3 · EDSFF.
 ## 🏆 Exam Power Phrases
 
 ✅ Often **right**:
+
 - "Plug PSUs into separate PDUs / feeds"
 - "Connect to iDRAC / iLO to power-cycle remotely"
 - "ECC RDIMM"
@@ -137,6 +138,7 @@ Form factors: 3.5" LFF · 2.5" SFF · M.2 · U.2/U.3 · EDSFF.
 - "Segment the OOB management network"
 
 ❌ Often **wrong**:
+
 - "Both PSUs into the same PDU"
 - "Non-ECC RAM in production"
 - "Expose IPMI to the internet"
@@ -160,6 +162,7 @@ Form factors: 3.5" LFF · 2.5" SFF · M.2 · U.2/U.3 · EDSFF.
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. Three server form factors + a use case for each? ___
 2. What does ECC RAM correct vs detect? ___
 3. Why 2 PSUs on the same PDU is fake redundancy? ___

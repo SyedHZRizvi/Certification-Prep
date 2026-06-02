@@ -140,6 +140,7 @@ Pick the split BEFORE you start. Don't change it mid-campaign.
 ### The Daily Optimization Routine (10 min/day)
 
 Each day, check:
+
 - Spend vs daily budget (anything off?)
 - Click-through rate (CTR) per ad — if any are <1%, consider pausing
 - Conversion rate per ad group — if any are 0% after $30 spent, pause and rewrite
@@ -229,6 +230,7 @@ Even simpler. Just describe what you want. ChatGPT will generate. Best for: simp
 ### Canva Workflow For Text Overlays
 
 After generating the image in Midjourney/DALL·E:
+
 1. Upload to Canva.
 2. Apply your brand colors and a clear headline.
 3. Export as PNG for static ads or MP4 if you animated it.
@@ -400,6 +402,7 @@ Here's the truth: at a $200 budget, getting positive ROAS is hard. Realistic out
 **All three outcomes make a great portfolio piece.** What kills the piece is not running the campaign at all, or hiding the result.
 
 The hiring manager isn't grading you on ROAS. They're grading on:
+
 1. Did you actually run the campaign? (proof: live screenshots)
 2. Did you make decisions during it? (proof: optimization log)
 3. Can you talk about what worked and didn't? (proof: post-mortem)
@@ -479,6 +482,7 @@ The hiring manager isn't grading you on ROAS. They're grading on:
 ## ✅ Module 3 Summary
 
 You now know:
+
 - 💰 How to plan a $200 split-channel campaign
 - 🛠️ How to set up Google Ads (Search) + Meta Ads (Lookalike/Interest)
 - 🎨 How to produce creatives with Midjourney + Canva

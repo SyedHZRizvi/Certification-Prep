@@ -39,6 +39,7 @@ Single factor (password)
 **Entra portal → Protection → Authentication methods → Policies**
 
 Per method:
+
 - Enable: On/Off
 - Target: All users OR specific groups
 - Configure: number matching, AAGUID restrictions, etc.
@@ -127,6 +128,7 @@ Per method:
 ## 🏆 Exam Power Phrases
 
 When you see these, they're often **correct**:
+
 - ✅ "FIDO2 / Windows Hello / CBA = phishing-resistant"
 - ✅ "Generate a Temporary Access Pass" (for passwordless bootstrap)
 - ✅ "Number matching" (counter to push-bombing)
@@ -135,6 +137,7 @@ When you see these, they're often **correct**:
 - ✅ "Authentication strength = Phishing-resistant MFA" (in CA)
 
 When you see these, often **wrong**:
+
 - ❌ "SMS-based MFA is acceptable for admins"
 - ❌ "Authenticator push is passwordless"
 - ❌ "Security Defaults and CA both active"

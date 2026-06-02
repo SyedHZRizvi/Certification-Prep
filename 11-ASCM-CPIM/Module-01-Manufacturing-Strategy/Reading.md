@@ -53,11 +53,13 @@ These four show up in roughly 8–12 questions on the exam. You must know them c
 ### Worked Example: Where's the Decoupling Point?
 
 Dell laptops:
+
 - Memory, drives, screens, motherboards are forecast-built and held as **modules** (sub-assemblies).
 - When you click "Buy" the company picks your specific config, assembles it from modules, ships in 2 days.
 - ➡️ **ATO**. The customer order penetrates only to the assembly step.
 
 A nuclear reactor pressure vessel for a new plant in Finland:
+
 - Design begins *after* contract signing. Materials sourced once design is approved.
 - ➡️ **ETO**. The customer penetrates all the way to engineering.
 
@@ -213,6 +215,7 @@ Sustainability isn't a "nice to have" on the modern exam. ASCM treats it as a st
 **Situation.** Through the 1990s the global apparel industry ran on a **two-season-per-year MTS model**: design in spring for fall, manufacture in low-cost Asian factories on 6–9-month lead times, ship by sea, mark down the unsold 30–50% at season end. Working-capital intensive, fashion-risk heavy, structurally allergic to fast feedback. Spain's **Inditex** (the holding company that owns **Zara**, founded by Amancio Ortega in 1975 in A Coruña) decided early on to compete differently — and by the late 1990s had a manufacturing model the Harvard Business School case (Ferdows, Lewis, Machuca, *Rapid-Fire Fulfillment*, HBR Nov 2004) called "the most studied case in fast fashion."
 
 **Decision.** Inditex built a vertically integrated, **two-week design-to-store cycle** that combined elements of MTS, ATO, and what Hayes & Wheelwright would call a deliberately "off-diagonal" process choice:
+
 - ~50% of Zara's production runs in **company-owned factories in Spain, Portugal, Morocco, and Turkey** — geographically close to A Coruña, on much higher labor cost than Bangladesh or Vietnam. The remaining ~50% (basics, denim) ships from Asia on traditional long lead times.
 - The European-cluster factories cut, dye, and assemble in small batches (**500–2,000 units per SKU** vs the industry-typical 20,000+). Hayes & Wheelwright would predict structural unit-cost penalty — and there is one, ~15–20% per garment. Inditex accepts it deliberately because the **system-level economics** (markdown reduction, working-capital turn, fashion-hit rate) more than compensate.
 - Store managers send **daily handheld-device data** on what's selling and what's not. Designers in A Coruña have authority to send a revised pattern to the cutting room within 48 hours. Goods reach a new-collection European Zara store **15 days from sketch**; a 3-week refresh cycle across the chain.
@@ -232,6 +235,7 @@ Sustainability isn't a "nice to have" on the modern exam. ASCM treats it as a st
 ## ✅ Module 1 Summary
 
 You now know:
+
 - 🏛️ The three levels of strategy (corporate → business → functional) and why **alignment** matters
 - 🧭 The four manufacturing environments — MTS, ATO, MTO, ETO — and where the customer order penetrates
 - 🏆 Order qualifiers vs order winners (Hill, 1985), and the rule that *yesterday's winner is tomorrow's qualifier*

@@ -53,6 +53,7 @@ CLASSIFY   REGRESS  CLUSTER  REDUCE    POLICY   VALUE
 | **Reinforcement Learning (RL)** | A simulator + reward signal | A policy / action | SageMaker RL (Ray, Coach, Stable Baselines), DeepRacer | AlphaGo, autonomous-vehicle path planning |
 
 🎯 **Exam pattern.** Phrases that signal each family:
+
 - *"predict the probability of churn"* → **Binary classification** (probability output, threshold to decide)
 - *"forecast next 30 days of demand"* → **Regression / time series** (DeepAR, Forecast)
 - *"group similar customers"* → **Clustering** (K-Means)
@@ -168,6 +169,7 @@ AWS organises its ML services in a deliberate seven-layer stack. The exam tests 
 ```
 
 🎯 **Exam pattern.** Many questions are "managed vs. custom". The answer is usually:
+
 - **If a managed AI service (L5) exists for the task → use it.** Less code, less ops, faster.
 - **Use SageMaker (L4)** when the task is custom, the data is proprietary, or you need a model architecture not in L5.
 - **Use Bedrock (L6)** when you need a generative model (text, image, embedding) and **do not** want to train one from scratch.
@@ -198,6 +200,7 @@ AWS organises its ML services in a deliberate seven-layer stack. The exam tests 
 **Situation.** Capital One processes ~600 million card transactions per day. Pre-2018, their fraud-detection stack ran on a 200-rack on-prem Hadoop cluster running custom Python and R. False-positive rates were high enough that legitimate cardholders frequently had transactions declined at the till; false negatives cost the company ~$200M per year in confirmed fraud losses.
 
 **Decision (2018–2022).** Capital One went **all-in on AWS** (one of the most public enterprise migrations in history; CIO Rob Alexander spoke at re:Invent 2018 keynote and again 2022). The fraud-detection migration to **Amazon SageMaker** specifically used:
+
 - **Data ingestion (L1):** Streaming card-swipe events into **Kinesis Data Streams**, batched into **S3** (Parquet), catalogued with **AWS Glue**, joined with cardholder profiles in **Redshift**
 - **Feature engineering (L4):** **SageMaker Feature Store** for ~2,800 cardholder + transaction features, refreshed every few seconds
 - **Modeling (L4):** Ensemble of **XGBoost** classifiers (one per merchant category) trained on 18 months of labelled fraud data
@@ -239,6 +242,7 @@ Weights at step t+1  =  Weights at step t  −  learning_rate × ∇Loss(Weights
 ```
 
 Variants (you will see all on the exam):
+
 - **SGD** — stochastic; one or a few samples per update; noisy but cheap
 - **Mini-batch GD** — typical (batch size 32 / 64 / 128 / 256)
 - **Adam** — adaptive learning rate per parameter; default for most DL training
@@ -385,6 +389,7 @@ The **AWS Well-Architected Framework** has 6 pillars (Operational Excellence, Se
 ## ✅ Module 1 Summary
 
 You now know:
+
 - 🧠 The **three families** of ML (supervised / unsupervised / RL) and the sub-families
 - 🎲 The **bias-variance trade-off** vocabulary and how to recognise over- and underfitting
 - 🏋️ The **7-step ML lifecycle** that structures the rest of this course

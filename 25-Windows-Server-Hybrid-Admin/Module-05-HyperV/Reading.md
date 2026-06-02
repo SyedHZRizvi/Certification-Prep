@@ -346,6 +346,7 @@ docker run -d --isolation=hyperv mcr.microsoft.com/windows/nanoserver:ltsc2022
 **Situation.** On the night of March 9–10, 2021, a fire broke out in OVHcloud's SBG2 data center in Strasbourg, France — one of Europe's largest cloud providers. The fire spread from a UPS in SBG2 to neighboring SBG1, destroying SBG2 entirely and damaging SBG1 (OVHcloud Post-Incident Report, March 22 2021; Le Monde, *Incendie chez OVH : Octave Klaba s'explique sur les conséquences*, March 10 2021). The cause: a faulty UPS battery (subsequently confirmed by French fire investigators in their final report) overheated in an unsuppressed enclosure. ~3.6 million websites went offline. Among them: French national broadcaster France 24, parts of the European Space Agency website, and ~12,000 small business customers whose only data copy was in SBG2 because they had not enabled OVHcloud's optional cross-zone backup.
 
 **Decision.** OVHcloud's published post-incident actions and the broader cloud-industry response converged on five principles that map directly onto Hyper-V DR best practices:
+
 1. **Replicate at a different fire compartment**, ideally a different building. SBG2's failure spreading to SBG1 was a fire-compartment failure.
 2. **Asynchronous replication is cheap insurance.** Many of the lost SMB customers had paid €5/month for "backup" they thought was cross-zone but was actually local to SBG2.
 3. **Test failovers, not just back-up.** Backups untested for failover are theater.
@@ -355,6 +356,7 @@ docker run -d --isolation=hyperv mcr.microsoft.com/windows/nanoserver:ltsc2022
 **Outcome.** OVHcloud later acquired Smart Network Solutions and refactored its product line to include explicit "Datacenter Resilience" tiers with cross-region default replication. Insurance payouts were estimated at €105M (Insurance Insider, June 2021). The breach became a Stanford GSB case study (no public reference yet) on the cost of customers misunderstanding shared-responsibility models in IaaS.
 
 **Lesson for the exam / for practitioners.** AZ-800 / AZ-801 won't test you on OVHcloud — but it tests the building blocks:
+
 - *Hyper-V Replica* → 30 sec / 5 min / 15 min async replication is the on-prem equivalent of OVHcloud's cross-zone replication
 - *Cross-site stretch cluster + Storage Replica* → for true RPO 0 metro pairs (covered in Module 4)
 - *Test failover* → Hyper-V Replica's `Start-VMFailover -AsTest` is non-disruptive — use it monthly, not "someday"
@@ -412,6 +414,7 @@ The exam will phrase this as: *"A business-critical Hyper-V VM must survive comp
 ## ✅ Module 5 Summary
 
 You now know:
+
 - 🎭 Gen 1 (legacy BIOS, IDE boot) vs Gen 2 (UEFI, Secure Boot, vTPM)
 - 📦 Nested virtualization — labs, WDAG, WSL 2, prerequisites (static memory, MAC spoofing)
 - 🌐 The three vSwitch types and when each applies

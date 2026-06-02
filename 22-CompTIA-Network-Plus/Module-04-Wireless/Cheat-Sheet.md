@@ -125,6 +125,7 @@
 ## 🏆 Exam Power Phrases
 
 Often **right**:
+
 - ✅ "WPA3 + SAE"
 - ✅ "EAP-TLS for enterprise"
 - ✅ "Channels 1, 6, 11 in 2.4 GHz"
@@ -132,6 +133,7 @@ Often **right**:
 - ✅ "Site survey before AP deployment"
 
 Often **wrong**:
+
 - ❌ "WEP is sufficient"
 - ❌ "Channels 1, 4, 7, 11 are non-overlapping"
 - ❌ "More AP power = better Wi-Fi"
@@ -154,6 +156,7 @@ Often **wrong**:
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. The 3 non-overlapping 2.4 GHz channels? ___
 2. Which generations add 6 GHz support? ___
 3. WPA3's replacement for the 4-way handshake? ___

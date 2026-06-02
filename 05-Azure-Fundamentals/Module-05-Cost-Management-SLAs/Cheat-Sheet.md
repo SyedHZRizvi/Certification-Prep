@@ -140,6 +140,7 @@ Free tiers / Free account → **no SLA**.
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. Three cost tools and their purpose? ___
 2. Composite SLA formula? ___
 3. Three VM SLA tiers and how to achieve them? ___

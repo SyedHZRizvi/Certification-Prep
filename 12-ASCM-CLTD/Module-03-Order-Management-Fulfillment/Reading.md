@@ -16,6 +16,7 @@
 A small e-commerce site sells specialty espresso machines. A customer in Phoenix orders one Monday morning. Easy, right?
 
 Behind the scenes, here's what *actually* happens:
+
 1. **Order entry** — customer hits "Buy." Order is created in the OMS.
 2. **Validation** — credit card check, fraud screen, address verification.
 3. **ATP check** — "Available-to-promise" lookup: do we have it? In which DC?
@@ -180,6 +181,7 @@ This is one of the *highest-yield* sections in the entire CLTD body of knowledge
 | **Automated AS/RS** | Fully automated retrieval (covered in Module 5) |
 
 Accuracy rates (memorize these — exam questions ask):
+
 - Paper: 95–98%
 - RF: 99–99.5%
 - Voice/Light: 99.7–99.9%
@@ -222,11 +224,13 @@ Example: 95% × 95% × 95% × 95% = **81.5%** perfect order.
 ## 🛒 OTIF — The Walmart Cudgel
 
 Walmart, Target, and other major retailers enforce OTIF (On-Time In-Full) with chargebacks:
+
 - Below 98% OTIF → financial penalties (often 1–3% of invoice)
 - The clock starts at the *Must Arrive By Date* (MABD)
 - "In-full" means the unit count requested
 
 This drives suppliers to:
+
 - Pre-position inventory closer
 - Use premium freight to recover delays
 - Build OTIF dashboards
@@ -273,6 +277,7 @@ Modern retailers fulfill from many nodes. Vocabulary:
 Order entry is where fraud, errors, and credit risk are caught.
 
 Checks:
+
 - **AVS** (Address Verification System)
 - **CVV** (card verification)
 - **Fraud score** (risk engine — Riskified, Signifyd, Stripe Radar)
@@ -300,6 +305,7 @@ Checks:
 **Outcome.** Amazon Logistics revenue (mostly internal transfer pricing + a small external "Buy with Prime" business) was estimated at ~$80B in 2024 — making Amazon Logistics, if a standalone company, the largest US logistics provider by revenue. Per-package cost dropped from ~$5+ (UPS/FedEx era) to an estimated ~$3.50 internal cost by 2024. The Rivian fleet hit ~20,000 vans deployed by 2024 with a stated goal of 100,000 by 2030. Critically, Amazon's network density (more drops per route) and proximity (more stations closer to suburban demand) enabled *same-day* delivery for ~50% of US Prime members by 2024 — a service product UPS and FedEx structurally cannot match without a similar build-out.
 
 **Lesson for the exam / for practitioners.** The Amazon case operationalizes three module concepts at once:
+
 1. **Last-mile cost dominance** — last mile is 28–53% of parcel cost; Amazon's vertical integration captures that economics internally.
 2. **Order sourcing and DOM** — Amazon's distributed order management system orchestrates across 600+ delivery stations and routes by *closest-to-customer + capacity-aware*, exactly the framework taught in this module.
 3. **Make-or-buy reversal** — Module 1's framework predicts that when logistics becomes the *differentiating* part of your value chain, you in-source. Amazon validated the prediction.
@@ -363,6 +369,7 @@ The CLTD exam tests this pattern: in a scenario where logistics is the competiti
 ## ✅ Module 3 Summary
 
 You now know:
+
 - 🔄 The 10-step Order-to-Cash cycle
 - 🛒 Order capture channels and EDI document codes
 - ✅ ATP, CTP, allocation, and backorder mechanics

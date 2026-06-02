@@ -15,6 +15,7 @@ Through 2017, Glossier spent roughly zero on paid acquisition. Revenue hit $40M 
 Then the model broke. Through 2019-2021, growth slowed. Competitors (Drunk Elephant, The Ordinary, Rare Beauty by Selena Gomez) caught up. In 2022, Glossier shifted to paid acquisition at scale — Meta, TikTok, Sephora wholesale (which Weiss had famously avoided). The brand opened retail stores. Layoffs in 2022. By 2024, Glossier was profitable on a much larger paid mix, but the "content-first organic moat" of 2014-2018 had given way to a mature DTC operating model.
 
 The lesson is two-fold:
+
 1. **Organic content is a moat — until the business demands scale, at which point paid becomes structural.** There is a "content-to-paid crossover" point every brand hits, usually around $50-100M revenue.
 2. **The brands that earn the most paid leverage are the ones that *built* the organic foundation first.** Glossier's content brand made Meta ads convert at 2-3x the rate of an unknown brand's. The organic SEO compounders gave the paid program something to lean against.
 
@@ -140,6 +141,7 @@ A sitemap is a list of URLs you *want* indexed. For e-commerce:
 In December 2022, Google added an extra "E" to its E-A-T quality framework: **Experience** (alongside Expertise, Authoritativeness, Trustworthiness). The 2024 Quality Rater Guidelines (the document Google's 16,000 human raters use) emphasize *first-hand experience* with the topic.
 
 The Helpful Content Update (HCU) timeline:
+
 - **August 2022 — HCU launch.** Sitewide signal targeting "content written for search engines, not humans."
 - **September 2023 — HCU expansion.** Tighter — many AI-content sites lost 50-90% organic traffic.
 - **March 2024 — Core update + HCU integration.** HCU merged into core ranking; manual recovery became harder.
@@ -194,6 +196,7 @@ Pioneered by REI's *Expert Advice*, Rei.com became the #1 organic search result 
 Google's official position (March 2024 spam policies update): "AI-generated content is not against our policies. Content created primarily to manipulate search rankings, regardless of how it's produced, is."
 
 The practical line for e-commerce in 2026:
+
 - ✅ AI-assisted PDP descriptions, polished by a human, with genuine product knowledge layered in
 - ✅ AI-drafted buying guides, fact-checked by a category expert, with original photography / videos
 - ✅ AI-generated metadata, alt text, schema markup
@@ -234,6 +237,7 @@ Email 4 (day 10):    Last-chance discount reminder
 ### Abandoned Cart — The 2024 Klaviyo Benchmark
 
 Per Klaviyo's 2024 Email Benchmarks report:
+
 - Average abandoned-cart open rate: 41-47%
 - Average abandoned-cart click rate: 6-8%
 - Average abandoned-cart conversion rate: 2.4-3.1% of recipients
@@ -261,6 +265,7 @@ SMS has 90%+ open rates (vs 30-45% for email). The 2024 Postscript SMS Benchmark
 | Opt-in barrier | Low | TCPA-regulated (US) — needs double opt-in |
 
 **TCPA compliance** (Telephone Consumer Protection Act, 1991, amended) is non-negotiable in the US. Required:
+
 - Express written consent (checkbox at sign-up; not pre-checked)
 - Clear opt-out instructions in every message ("Reply STOP to unsubscribe")
 - 10DLC registration for US business SMS (since 2023)
@@ -285,6 +290,7 @@ Loyalty programs are the most underrated lever in DTC. Reichheld's classic findi
 ### Sephora Beauty Insider — The Gold Standard
 
 Launched 2007, Sephora Beauty Insider has ~34M members in North America (2024 disclosure). The structure:
+
 - **Insider (free):** 1 point per $1; birthday gift; samples
 - **VIB ($350 annual spend):** 1.25 points per $1; private events
 - **Rouge ($1,000 annual spend):** 1.5 points per $1; free shipping; first access to products
@@ -316,6 +322,7 @@ Starbucks Rewards has 34.3M active members in the US (Q4 2024 disclosure). The m
 **Decision.** Weiss chose content + community as the foundation. *Into The Gloss* continued publishing daily — "Top Shelf" interviews, ingredient explainers, comment-section AMAs. Glossier launched with four products (Milky Jelly Cleanser, Balm Dotcom, Soothing Face Mist, Priming Moisturizer) and Weiss explicitly told *Vogue* in 2015 that paid acquisition was off the table for the foreseeable future. The brand built an aggressive community presence on Instagram (1M followers by 2016), engaged with every comment, and shipped pink-packaged products with hand-written notes.
 
 The technical underpinnings:
+
 - *Into The Gloss* held ~70K monthly organic backlinks by 2017 (Ahrefs estimate); the editorial brand transferred SEO authority to glossier.com.
 - Every product page had a content-rich PDP — long-form description, customer reviews surfaced front-and-center, "real girl" photos (UGC) instead of stock product shots.
 - Email lifecycle was built on Mailchimp initially, then Klaviyo (post-2016 migration) — welcome flow + abandoned cart + post-purchase were the only three flows for ~2 years; the brand resisted over-automation.

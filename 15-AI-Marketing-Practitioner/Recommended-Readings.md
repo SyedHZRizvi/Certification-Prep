@@ -151,6 +151,7 @@ Tool pricing and feature names verified as of 2026-05. **Always verify current p
 ## Maintaining Your Skills
 
 Performance marketing certifications expire faster than any other field. Plan to:
+
 - Retake Google Ads certifications every year (they expire annually).
 - Retake Meta MBP every 1-2 years as it updates.
 - Spend 4 hours/week consuming new platform updates from at least 2 of the industry resources above.

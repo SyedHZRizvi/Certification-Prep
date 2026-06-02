@@ -117,6 +117,7 @@ Most frameworks (Lewicki et al., *Negotiation*, 8th ed., 2020, McGraw-Hill; Camp
 ## 🌍 Cross-Cultural Negotiation (Module 6 expands)
 
 CPSM tests heavily on global negotiation differences. Cultures vary in:
+
 - **High-context vs. low-context communication** (Japan, China = high-context; US, Germany = low-context)
 - **Time orientation** (monochronic vs. polychronic)
 - **Relationship vs. transaction emphasis** (LATAM, Middle East = relationship; US = transaction)
@@ -210,6 +211,7 @@ The contract type determines **who bears cost risk** — buyer or seller.
 A **force majeure** clause excuses performance when an *unforeseeable, unavoidable* event prevents it (war, earthquake, pandemic, government act).
 
 Post-COVID, force majeure clauses are scrutinized harder:
+
 - Was the pandemic foreseeable in a contract signed in 2022?
 - Does the clause specifically list pandemics?
 - Did the supplier exercise reasonable mitigation?
@@ -242,6 +244,7 @@ SLAs convert performance into measurable, contractual obligations. Each SLA shou
 - **Mutually agreed escalation** path
 
 Common SLA examples:
+
 - IT services: uptime, response time, mean time to repair (MTTR)
 - Logistics: on-time delivery %, damage rate
 - BPO: handle time, first-call resolution, accuracy
@@ -281,6 +284,7 @@ Most contracts mandate steps before litigation:
 **Situation.** ASML Holding N.V. (Veldhoven, Netherlands) is the **sole producer worldwide** of Extreme Ultraviolet (EUV) lithography machines — the only equipment capable of patterning chips at 7nm and below. Each machine sells for **€150-220M** and weighs ~180 tonnes. ASML's order book at the start of 2024 stood at over €38B, and the company shipped just 53 EUV machines in 2023. The three buyers that matter — TSMC, Samsung, and Intel — are negotiating against a supplier with **no realistic BATNA on the buy side**: no other company on Earth makes a competing product.
 
 **Decision.** Each buyer ran a different negotiation playbook with the same supplier:
+
 1. **TSMC** (largest buyer): negotiated *priority allocation slots* in exchange for prepayments, long-term volume commitments (10+ year roadmap visibility), and joint R&D investment. TSMC accepted that they could not negotiate unit price down meaningfully — instead they negotiated for *time-to-receive*, getting first delivery of the next-generation High-NA EUV in 2024.
 2. **Intel** (rebuilding fab capacity): paid a reported €350M+ for the **first** High-NA EUV machine in early 2024 — a publicity-driven move signaling its return to leading-edge manufacturing. Intel traded headline price for first-mover positioning.
 3. **Samsung**: negotiated multi-year capacity reservations and pursued process improvements (Korean officials publicly pressed ASML on access during 2022-2024 export-control discussions).
@@ -290,6 +294,7 @@ The US, Dutch, and Japanese governments simultaneously imposed export controls (
 **Outcome.** ASML's gross margin held above 51% throughout 2024. The company was able to set delivery slots years in advance. Buyers competed for time-of-arrival rather than price. TSMC's strategy paid off most cleanly: first-mover on High-NA gave them an 18-month process lead. Intel's bet was riskier — the company has since slowed its fab buildout amid demand softness, but secured strategic positioning.
 
 **Lesson for the exam / for practitioners.** This is the textbook **no-BATNA negotiation**. When the supplier holds the only product, conventional negotiation theory (BATNA, ZOPA, walk-away pricing) requires translation:
+
 - **You can't negotiate unit price meaningfully.** Don't waste leverage trying.
 - **You can negotiate everything else.** Slot priority, payment terms, joint R&D, capability transfer, future-product first-look rights, support terms — these are the real ZOPA.
 - **Long-term integrative posture is forced.** Distributive tactics (Module 3) burn the relationship, and the supplier has zero incentive to absorb the burn.
@@ -368,6 +373,7 @@ Implied warranties can be disclaimed ("AS IS"), but with specific language. Don'
 ## ✅ Module 3 Summary
 
 You now know:
+
 - 🎯 Distributive vs integrative negotiation
 - 🧭 BATNA, ZOPA, reservation, target, anchor
 - 🪜 The 5-phase negotiation process

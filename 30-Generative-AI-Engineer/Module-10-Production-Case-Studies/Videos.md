@@ -158,6 +158,7 @@
 ## ✅ After watching
 
 For each case study, sketch the architecture on paper:
+
 1. GitHub Copilot
 2. Cursor
 3. Notion AI Q&A

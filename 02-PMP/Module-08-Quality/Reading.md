@@ -121,10 +121,12 @@ These are EXAM-IMPORTANT. Know them:
 Total cost of all quality-related activities.
 
 #### Cost of Conformance:
+
 - 🛠️ **Prevention** — training, processes (cheaper)
 - 🔍 **Appraisal** — testing, inspection
 
 #### Cost of Non-Conformance:
+
 - 🛠️ **Internal Failure** — rework, scrap
 - 🔥 **External Failure** — recalls, warranty, lawsuits, lost reputation
 
@@ -163,6 +165,7 @@ Total cost of all quality-related activities.
 ## 🎯 Quality in Agile
 
 In agile, quality is built in via:
+
 - ✅ **TDD (Test-Driven Development)**
 - ✅ **Continuous Integration**
 - ✅ **Definition of Done** (Module 5 of Scrum track!)
@@ -219,6 +222,7 @@ In agile, quality is built in via:
 ## ✅ Module 8 Summary
 
 You now know:
+
 - ✅ Quality vs Grade
 - 🏛️ Quality gurus (Deming, Juran, Crosby, Ishikawa, Taguchi, Shewhart)
 - 🔄 3 quality processes (Plan, Manage, Control)

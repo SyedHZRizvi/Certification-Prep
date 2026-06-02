@@ -72,6 +72,7 @@
 ## 🏆 Exam Power Phrases
 
 ✅ Usually right:
+
 - "Use CloudTrail for API audit"
 - "Use Config for compliance rules"
 - "Use X-Ray for distributed tracing"
@@ -82,6 +83,7 @@
 - "Tagging is the basis of cost allocation"
 
 ❌ Usually wrong:
+
 - "CloudWatch tracks EC2 memory by default"
 - "CloudTrail is for application logs"
 - "GuardDuty requires agents"

@@ -79,6 +79,7 @@ This single table is worth 5–7 exam questions. Tape it to your monitor.
 A **tenant** is a dedicated, isolated instance of the Entra ID directory representing your organization. **One organization usually has one tenant.** (Some have more for testing, M&A, or regulatory reasons.)
 
 When you create a tenant, you pick:
+
 1. A **default DNS name**: `<yourname>.onmicrosoft.com` — permanent, can never be deleted or renamed.
 2. A **country/region** — affects which Microsoft datacenters store directory data (and which sovereign cloud you're in: Public, US Gov, China — separate from public commercial Azure).
 3. An **organization name** — the friendly name you can change later.
@@ -220,6 +221,7 @@ This is the single most-confused topic in SC-300.
 ### A note on naming
 
 Microsoft has unified the branding:
+
 - **Microsoft Entra External ID for customers** = formerly **Azure AD B2C**.
 - **Microsoft Entra External ID for partners** = part of B2B collaboration, just renamed.
 
@@ -327,6 +329,7 @@ The correct order:
 ## ✅ Module 1 Summary
 
 You now know:
+
 - 🪪 What Entra ID is (and isn't — not on-prem AD!)
 - 🌐 The four editions and what each unlocks (Free / P1 / P2 / External ID)
 - 🏢 What a tenant is and how default + custom domains work
@@ -349,6 +352,7 @@ You now know:
 **Situation.** In June 2017, the global shipping giant A.P. Moller-Maersk was hit by NotPetya, the most destructive cyberattack on a single company in history at the time (≈$300M in damages, 17 of 76 terminals offline). The attack used a poisoned Ukrainian tax-software update, then spread via stolen domain admin credentials cached on on-prem AD-joined workstations. Maersk had a single on-prem Active Directory forest spanning 130+ countries with one central admin team — a perfect blast radius. Within 7 minutes, **every** domain controller in the global forest was encrypted. Microsoft engineers later found that recovery was only possible because one DC in Ghana had been offline during the attack (a local power outage).
 
 **Decision.** Post-NotPetya, Maersk rebuilt identity on three principles:
+
 1. **Cloud-first identity.** Microsoft Entra ID became the *primary* identity store for cloud apps. On-prem AD was kept (for legacy domain-joined Windows workloads) but no longer the gravity well for credentials.
 2. **Tiered admin model.** Tier 0 (forest admins / Global Admins) live in a privileged-access workstation environment, do not browse the internet, and use PIM-eligible roles activated just-in-time with hardware MFA and approval. Tier 1/2 follow the same model with scoped Entra roles.
 3. **Zero-trust assumptions on the network.** Network location stops being a security signal; Entra Conditional Access (P1/P2) becomes the perimeter. Compliant device + MFA + sign-in risk are the controls.
@@ -356,6 +360,7 @@ You now know:
 The transformation took ~3 years and re-architected ~80,000 employee identities. Maersk moved from one giant AD forest to a Cloud-Sync-fed Entra ID tenant with break-glass accounts, ~6 Global Admins (down from ~150 unmanaged domain admins), PIM-eligible role activation, and tenant-level branding so phishing attempts were obvious to staff.
 
 **Outcome.** Public statements at RSA 2022 (Maersk CISO Adam Banks) and the Microsoft Ignite 2023 customer track described:
+
 - **Time to suspend a compromised credential globally** went from "hours of paging admins" to **<60 seconds** via Entra ID + Conditional Access + automated playbooks in Sentinel.
 - **Number of standing Global Admin assignments** dropped from ~150 in 2017 to ~6 in 2024, with all activations time-bound, approved, audited, and recorded in PIM.
 - **Cost** of the rebuild: ~$50M+ (compared to the $300M NotPetya bill, this was a bargain).

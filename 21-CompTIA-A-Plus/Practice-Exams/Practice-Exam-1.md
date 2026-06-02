@@ -273,6 +273,7 @@ C. Replace the phone
 D. Disable MFA
 
 ### 44 (Scenario PBQ). Match the diagnostic to the scenario:
+
 - (a) `ipconfig` shows 169.254.x.x
 - (b) `ping 8.8.8.8` succeeds; `ping google.com` fails
 - (c) `ping gateway` succeeds; `ping 8.8.8.8` fails

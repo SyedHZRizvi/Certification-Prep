@@ -94,6 +94,7 @@ HTTP/HTTPS data            ← L7 Application
 ## 🏆 Exam Power Phrases
 
 When you see these in answers, often **right**:
+
 - ✅ "Layer 2 / Layer 3 / etc." in the exact context of the device
 - ✅ "Frame" for L2, "Packet" for L3, "Segment" for TCP at L4
 - ✅ "Spine-and-leaf for predictable east-west latency"
@@ -101,6 +102,7 @@ When you see these in answers, often **right**:
 - ✅ "Star topology with managed switches"
 
 Often **wrong**:
+
 - ❌ "Hub" (extinct), "Bus" (extinct)
 - ❌ "Broadcast in IPv6"
 - ❌ "Routers operate at Layer 2"
@@ -134,6 +136,7 @@ Often **wrong**:
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. List all 7 OSI layers (top down)? ___
 2. PDU at L2? L3? L4 (TCP)? ___
 3. How many links in a 7-node full mesh? ___

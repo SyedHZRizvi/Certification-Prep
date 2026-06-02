@@ -726,6 +726,7 @@
 ## 🎯 BEFORE THE EXAM
 
 You should be able to instantly answer:
+
 - The 4 manufacturing environments + decoupling point of each
 - The 5 S&OP steps + who leads each
 - MPS vs MRP scope

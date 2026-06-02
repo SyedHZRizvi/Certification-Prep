@@ -117,12 +117,14 @@ CloudFront launched in November 2008. The general "CDN" architecture pattern —
 **CloudFront = AWS's CDN.** Caches your content at **400+ Edge Locations** worldwide for low-latency delivery.
 
 Key concepts:
+
 - **Origin** — where the original content lives (S3 bucket, ELB, EC2, custom HTTP)
 - **Distribution** — your CloudFront configuration
 - **Edge Location** — global PoP that caches the content
 - **OAC (Origin Access Control)** — locks S3 origin so only CloudFront can fetch from it (replaces old OAI)
 
 CloudFront also offers:
+
 - **Field-level encryption** for sensitive fields
 - **Signed URLs / Cookies** for paid / private content
 - **Lambda@Edge** and **CloudFront Functions** — run code at the edge
@@ -155,6 +157,7 @@ CloudFront also offers:
 **Global Accelerator = uses the AWS global backbone to give your users 2 static anycast IPs and route them to the fastest healthy endpoint.**
 
 Difference from CloudFront:
+
 - **CloudFront** = caches CONTENT at the edge (HTTP-heavy)
 - **Global Accelerator** = routes TRAFFIC over the AWS backbone (any TCP/UDP)
 
@@ -264,6 +267,7 @@ By default, EC2 → S3 traffic goes out the IGW (over the public internet). **VP
 **Situation.** In August 2008 — five years before Netflix's "all-in" AWS announcement — a corrupted database in Netflix's own Los Gatos data center caused three days of DVD-shipping downtime. CEO Reed Hastings concluded that running their own physical infrastructure was a strategic liability. By 2008, streaming was growing fast and Netflix did not want to be in the data-center business while also reinventing how the world watches TV.
 
 **Decision.** Netflix made two layered architectural bets between 2008 and 2016:
+
 1. **Migrate everything except video delivery to AWS** (2008–2015). The control plane, recommendation engine, encoding pipeline, billing, A/B testing — all on AWS. By January 2016, Netflix announced the on-prem data center was closed. Yury Izrailevsky (then VP Cloud) blogged the milestone (*"Completing the Netflix Cloud Migration,"* Netflix Tech Blog, Feb 2016).
 2. **Build their own CDN — Open Connect (OCAs) — for the actual video bits** (2011 onwards). Rather than pay AWS CloudFront margin on petabytes/hour of streaming, Netflix shipped purpose-built cache appliances to ISPs around the world for free. Comcast, Verizon, Telstra, Liberty Global, KPN — all install Open Connect Appliances in their PoPs. By 2024, Open Connect delivers ~95% of Netflix traffic; CloudFront / AWS is used only for sub-second control-plane responses, fallback, and ramp-up.
 
@@ -281,6 +285,7 @@ By default, EC2 → S3 traffic goes out the IGW (over the public internet). **VP
 ## ✅ Module 4 Summary
 
 You now know:
+
 - 🏘️ VPC anatomy: subnets, IGW, NAT, route tables, SGs, NACLs
 - 🔥 SG vs NACL (stateful vs stateless, allow-only vs allow+deny)
 - 🌐 VPN vs Direct Connect; VPC Peering vs Transit Gateway; VPC Endpoints

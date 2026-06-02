@@ -17,6 +17,7 @@ Picture a tech company HQ.
 The building has **three lobbies**: a public lobby where visitors check in (the **DMZ / screened subnet**), an employee-only lobby that requires a badge (the **internal network**), and a vault lobby that requires a badge AND a biometric scan AND a manager escort (the **secure zone / management network**).
 
 Now the building has multiple **guards**:
+
 - A guard at the front entrance who checks badges and lets people through (**stateful firewall**)
 - A guard who watches the lobby on cameras but doesn't physically stop anyone — they radio for help (**IDS** — detection only)
 - A guard who watches AND can lock doors automatically (**IPS** — prevention)
@@ -184,6 +185,7 @@ INTERNET
 **802.1X** — port-based network access control. A device connecting to a switch port or Wi-Fi AP must authenticate before getting access.
 
 Players:
+
 - **Supplicant** — the connecting client
 - **Authenticator** — the switch/AP (relays only)
 - **Authentication Server** — RADIUS server that decides
@@ -302,6 +304,7 @@ A real PBQ might pre-place some boxes and let you drag the rest, scoring placeme
 **Outcome.** The pipeline was offline for **6 days** (7-13 May 2021). Gasoline supplies cratered along the US East Coast; states from Florida to Virginia saw 70%+ of gas stations run dry. Average US pump prices crossed **$3/gallon** for the first time since 2014. Colonial paid the attackers **~75 BTC ($4.4M at the time)** for the decryptor — though it was so slow that Colonial mostly restored from its own backups. The decryptor key transaction was tracked on-chain; the FBI's **Cyber Action Team** recovered **63.7 BTC** (~$2.3M of the $4.4M) by following the on-chain trail and seizing the wallet (US DOJ press release, 7 June 2021 — the first major public bitcoin clawback). DarkSide's infrastructure was taken down by an unspecified law-enforcement action days later. The incident triggered: TSA Security Directive **TSA-Pipeline 2021-01** (27 May 2021) requiring pipeline operators to report cyber incidents within 12 hours and designate a 24/7 cybersecurity coordinator; the **Cyber Incident Reporting for Critical Infrastructure Act (CIRCIA)** of 2022 making such reporting *statutory* across all critical-infrastructure sectors; CISA's *Shields Up* campaign; and, ultimately, **Executive Order 14028** (May 2021), the EO that drove the SBOM mandate and Zero Trust adoption across federal agencies.
 
 **Lesson for the exam / for practitioners.** Colonial illustrates almost every Module 6 concept and several from other modules:
+
 - **VPN as single point of failure.** A legacy remote-access VPN with no MFA and no continuous identity verification is the *exact* model Zero Trust Network Access (**ZTNA**) is designed to replace. Sec+ tests this: "modern replacement for traditional VPN" → ZTNA.
 - **Segmentation worked — partially.** The OT/SCADA network was *not* directly compromised. The IT/OT segmentation prevented the worst outcome: a remote-controlled pipeline malfunction. The exam tests this exact pattern: industrial systems should be segmented from corporate IT (Module 7 — Purdue Model).
 - **MFA was the single missing control.** Phishing-resistant or even basic MFA on the VPN would have blocked the attack. The exam asks: "what single control would have prevented?" — MFA tops the answer list for VPN-credential-based attacks.
@@ -384,6 +387,7 @@ A real PBQ might pre-place some boxes and let you drag the rest, scoring placeme
 ## ✅ Module 6 Summary
 
 You now know:
+
 - 🔥 The **firewall taxonomy** (stateful, NGFW, WAF, UTM, host-based) and rule evaluation
 - 🛡️ **IDS vs IPS**, signature vs anomaly detection, where each is placed
 - 🏗️ **Network zones** (DMZ, internal, secure, management, extranet), segmentation, microsegmentation, SDN

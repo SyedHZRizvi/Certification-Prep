@@ -105,6 +105,7 @@ smartctl -a /dev/sda             SMART data
 ## 🏆 Exam Power Phrases
 
 ✅ Often **right**:
+
 - "Check the cable / link light first"
 - "Reseat the RAM"
 - "Run MemTest86"
@@ -114,6 +115,7 @@ smartctl -a /dev/sda             SMART data
 - "Verify functionality after the fix"
 
 ❌ Often **wrong**:
+
 - "Replace the motherboard first"
 - "Reformat the OS as the first step"
 - "Skip documentation if you already fixed it"

@@ -177,6 +177,7 @@ Six fields per line:
 2. **Mountpoint** — must exist
 3. **Filesystem type** — ext4, xfs, btrfs, nfs, swap, tmpfs, etc.
 4. **Options** — comma-separated:
+
    - `defaults` = `rw,suid,dev,exec,auto,nouser,async`
    - `noexec` (cannot run binaries from this mount)
    - `nosuid` (ignore SUID bits — common for /home, /tmp)
@@ -261,10 +262,12 @@ chown -R alice:devs /srv/app              # recursive
 ### umask — default permission mask
 
 When a file is created, the kernel applies `mode & ~umask`. With `umask 022`:
+
 - Files: `0666 & ~022 = 0644` (rw-r--r--) — files never get execute by default
 - Dirs: `0777 & ~022 = 0755` (rwxr-xr-x)
 
 Common umasks:
+
 - `022` — system default; everyone can read
 - `002` — group-collaborative (Debian per-user-group convention)
 - `077` — paranoid (only owner)
@@ -490,6 +493,7 @@ The backup script ran as root via cron at 02:00, dumped Postgres into a date-sta
 ## ✅ Module 2 Summary
 
 You now know:
+
 - 🗺️ Every top-level directory in the **FHS** and what it's for
 - 🗃️ What an **inode** is, the difference between hard and symbolic links, and the inode-exhaustion failure mode
 - 💽 The strengths and trade-offs of **ext4, XFS, Btrfs, ZFS**

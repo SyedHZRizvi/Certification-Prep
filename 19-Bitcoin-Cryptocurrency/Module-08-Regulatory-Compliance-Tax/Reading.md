@@ -19,6 +19,7 @@
 It is **late 2020**. **Maria Velasco**, a former JP Morgan FX trader, raises a $4M seed round to launch **PesoBit** — a Mexico-focused USD/MXN/BTC exchange targeting the Mexican-American remittance corridor. The protocol layer is straightforward: a hot-wallet Bitcoin node, a custody multi-sig, a Strike-style Lightning integration, KYC at the door. The technology is the easy part.
 
 The legal-and-compliance stack is **harder than the codebase**. To operate in the US, PesoBit needs:
+
 - **FinCEN registration as a Money Services Business (MSB)** — a 2013 guidance requirement.
 - **State money-transmitter licenses** — 49 of them, each with its own bond, capital, and audit requirements. (New York's BitLicense alone takes 18+ months and ~$100K of legal fees.)
 - **Bank Secrecy Act (BSA)** AML program — written policies, designated compliance officer, customer-identification program, transaction monitoring, SAR (Suspicious Activity Report) filing.
@@ -80,6 +81,7 @@ The **Financial Crimes Enforcement Network** (FinCEN, part of the US Treasury) p
 ### The 2019 FinCEN Guidance Update (FIN-2019-G001, May 9 2019)
 
 A 30-page update clarifying that:
+
 - **Wallet providers** holding customer keys ARE MSBs.
 - **Hosted wallet** = MSB; **unhosted (self-custody) wallet software developers** are NOT MSBs.
 - **Decentralized exchanges (DEXs)** — facts-and-circumstances; if the operator can intervene, they're an exchanger.
@@ -121,6 +123,7 @@ The Travel Rule requires that for any qualifying transfer:
 | FATF default recommendation | **USD/EUR 1,000** |
 
 🎯 **MEMORIZE THIS.** The Travel Rule is the **single biggest operational compliance lift** for a Bitcoin exchange. It requires:
+
 1. **Identifying the counterparty VASP** for every withdrawal (the "VASP discovery" problem).
 2. **Securely transmitting customer PII** between VASPs (TRP, TRUST, OpenVASP, Sumsub — the messaging protocols).
 3. **Handling self-hosted (unhosted) wallet withdrawals** — typically with name + address attestation from the customer.
@@ -156,6 +159,7 @@ MiCA is the **first comprehensive crypto regulation** by a major economic bloc. 
 ### Crypto-Asset Service Providers (CASPs)
 
 Any entity providing crypto services in the EU needs **CASP authorization**:
+
 - Custody and administration
 - Operation of a trading platform
 - Exchange (crypto-to-fiat or crypto-to-crypto)
@@ -246,6 +250,7 @@ Before 2018, some taxpayers tried to use **IRC §1031 like-kind exchange** to de
 ### IRS Rev. Rul. 2019-24 (October 9, 2019) — Hard Forks and Airdrops
 
 Clarifies that:
+
 - **Hard forks** that produce a new cryptocurrency credited to a taxpayer's account = **ordinary income** at FMV on receipt.
 - **Airdrops** of a new token = ordinary income at FMV on receipt.
 - A hard fork *without* a credited airdrop (e.g., the chain splits but the taxpayer doesn't claim the new coin) = no immediate income.
@@ -289,6 +294,7 @@ This creates a tax-loss-harvesting opportunity: sell BTC at a loss, immediately 
 **Situation.** **Binance Holdings Ltd**, founded by **Changpeng "CZ" Zhao** in 2017, became the world's largest cryptocurrency exchange by 2018, processing >50% of global spot crypto volume at its peak. Binance's growth strategy emphasized **regulatory arbitrage**: nominally headquartered in jurisdictions with light crypto rules (Malta, then "no headquarters"), operating Binance.com globally while spinning off a US subsidiary (Binance.US) ostensibly to ring-fence US compliance. Internal communications later revealed CZ's stated strategy was to **avoid registering as a US MSB** while continuing to serve US customers.
 
 By 2019, the **CFTC**, **FinCEN**, **DOJ**, and **OFAC** had opened parallel investigations. The investigations focused on:
+
 - **Operating an unlicensed money transmitter** in violation of 18 USC §1960.
 - **Failing to register as an MSB** in violation of 31 USC §5330.
 - **Inadequate AML program** in violation of the BSA — Binance's KYC processes through 2021 were widely undermined by allowing customers to lie about jurisdictions.

@@ -52,6 +52,7 @@ Begin with [Module 1: Boot & systemd →](./Module-01-Boot-Systemd/Reading.md)
 ## 🎯 What You'll Learn
 
 By the end of this track, you'll be able to:
+
 - Boot, recover, and troubleshoot any Linux system from GRUB to systemd targets, across BIOS and UEFI
 - Navigate the Filesystem Hierarchy Standard (FHS) and reason about every special directory under `/`
 - Manage packages confidently with `apt`, `dnf`, `rpm`, `dpkg`, `snap`, `flatpak`, and from-source compilation
@@ -97,6 +98,7 @@ By the end of this track, you'll be able to:
 🔗 **[Sander van Vugt's CompTIA Linux+ Complete Video Course (Pearson)](https://www.pearson.com/en-us/search.html/?q=Linux%2B+XK0-005)** — the most rigorous video set aligned to XK0-005 objectives. Pair with his book *CompTIA Linux+ XK0-005 Cert Guide*.
 
 Honorable mentions:
+
 - 📘 *CompTIA Linux+ XK0-005 Cert Guide* (Ross Brunson & Sander van Vugt, Pearson) — gold-standard text
 - 📘 *Linux Bible* (Christopher Negus, Wiley, 11th ed.) — the most readable comprehensive Linux book
 - 📘 *How Linux Works* (Brian Ward, No Starch, 3rd ed.) — the under-the-hood book MIT recommends to its sysadmin TAs

@@ -137,6 +137,7 @@ Gateway gives you: routing / retries / fallback / cache / observability / rate l
 ## 🏆 Exam Power Phrases
 
 ✅ Often **right**:
+
 - "vLLM + PagedAttention for self-hosting"
 - "LiteLLM gateway with fallback chains"
 - "Prompt caching on long static prefixes"
@@ -145,6 +146,7 @@ Gateway gives you: routing / retries / fallback / cache / observability / rate l
 - "Cost dashboard with per-tenant alerting"
 
 ❌ Often **wrong**:
+
 - "Single provider is fine"
 - "Average latency is enough"
 - "Cost will be cheap"

@@ -159,6 +159,7 @@ A **stablecoin** is a crypto asset designed to track an external reference price
 By early 2022, **UST had $18 billion in circulation** and **LUNA's market cap was ~$30 billion**. The growth engine was the **Anchor Protocol**, a Terra-native lending platform paying **~20% APY** on UST deposits. By April 2022, Anchor held ~$14B of UST. Economists and Bitcoiners (notably **Lyn Alden**, **Jim Bianco**, and the *Crypto Critics' Corner* podcast) warned for two years that the Anchor yield was being subsidized from reserves, not generated organically.
 
 **Decision.** Do Kwon doubled down repeatedly:
+
 - Mocked critics on Twitter (the "Master of Stables" persona)
 - Bought $3.5B of Bitcoin in early 2022 via the **Luna Foundation Guard (LFG)** as a defensive reserve
 - Issued LUNA aggressively to keep Anchor's yields subsidized
@@ -166,6 +167,7 @@ By early 2022, **UST had $18 billion in circulation** and **LUNA's market cap wa
 The vulnerability: in a stress event, mass UST redemptions would mint massive LUNA, crashing LUNA's price, which made each subsequent UST redemption mint exponentially more LUNA. Classic death spiral.
 
 **Outcome.** The trigger remains debated (a large coordinated selling on Curve and Binance starting May 7, 2022; theories include a soft-attack by a hedge fund). The collapse mechanics:
+
 - **May 9, 2022:** UST depegs to $0.985
 - **May 10:** UST at $0.60; LUNA falling fast
 - **May 11:** UST at $0.30; LUNA below $1

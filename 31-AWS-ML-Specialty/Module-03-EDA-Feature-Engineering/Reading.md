@@ -17,6 +17,7 @@ Meet Mei. She joined Airbnb's pricing team in 2017 and was tasked with building 
 Her first model — gradient boosting on raw features — predicted prices with **R² = 0.38** on holdout. Disappointing. She iterated for 3 weeks: more trees, deeper trees, tuned learning rate. The needle barely moved.
 
 Then a senior engineer reviewed her data. He found:
+
 - 47% of listings had `bathrooms = 0` (data entry default; truly missing)
 - Photo count was log-skewed: 5 photos median, but power-law tail to 200 (some hosts dumped every shot)
 - `host_response_rate` was a string ("87%" with NaN for new hosts)
@@ -81,6 +82,7 @@ Before any transformation, answer:
 | **PR / ROC curve** | Model scores + labels | Classifier ranking quality |
 
 🎯 **AWS-specific tooling** for EDA:
+
 - **SageMaker Data Wrangler** — UI-based EDA + transforms; produces a reproducible flow file
 - **Amazon QuickSight** — BI / dashboard tool; can produce histograms, scatter, heatmaps without a notebook
 - **Amazon Q in QuickSight** — natural-language EDA ("show me sales by region for last 30 days")
@@ -106,6 +108,7 @@ Before any transformation, answer:
 ### When missingness IS the signal
 
 Missing data is rarely random:
+
 - **MCAR (missing completely at random)** — true random; drop or impute is fine
 - **MAR (missing at random)** — depends on observed columns; impute conditional on those columns
 - **MNAR (missing not at random)** — depends on the unobserved value itself (people who didn't share salary often have higher/lower salaries); imputation biases the model
@@ -128,6 +131,7 @@ Missing data is rarely random:
 🎯 **Exam pattern.** *"Detect anomalies in a stream of tabular sensor readings."* → **SageMaker Random Cut Forest** (built-in algo, streaming-friendly, no labels needed).
 
 🚨 **Trap.** *"Always remove outliers."* → **WRONG**. Outliers can be the *signal* (fraud, equipment failure, viral content). Decide based on domain:
+
 - Sensor glitches → remove
 - Fraud transactions → keep, label, train on them
 - Data-entry errors → remove or correct
@@ -184,6 +188,7 @@ Feature engineering = creating new columns from existing ones. This is where dom
 ### Time / date features (almost always derived)
 
 From a raw timestamp, you can derive 10+ features:
+
 - `year`, `quarter`, `month`, `week_of_year`, `day_of_month`, `day_of_week`
 - `is_weekend`, `is_holiday`, `hours_since_last_event`, `time_of_day_bucket`
 - `cyclical` encoding: `sin(2π·month/12), cos(2π·month/12)` for tree-models that miss the wrap-around
@@ -210,6 +215,7 @@ From a raw timestamp, you can derive 10+ features:
 ### Domain-derived features (the real money)
 
 In Airbnb's case:
+
 - `distance_to_nearest_subway` from raw lat/lon
 - `photos_per_bedroom`
 - `host_tenure_days` from `host_since`
@@ -458,6 +464,7 @@ Before training, check for **data bias** that could lead to unfair outcomes. Sag
 ## ✅ Module 3 Summary
 
 You now know:
+
 - 📈 The **5-step EDA workflow** and which tools to use at each step on AWS
 - 🧹 The **4 strategies for missing values** plus when missingness is informative
 - 🛑 The **outlier-detection methods** (IQR, Z-score, Isolation Forest, RCF) and when to remove vs keep

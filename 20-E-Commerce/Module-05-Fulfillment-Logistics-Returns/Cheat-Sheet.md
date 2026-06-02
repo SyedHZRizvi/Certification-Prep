@@ -52,6 +52,7 @@ MCF            → FBA inventory fulfills any marketplace (Walmart, eBay, Etsy, 
 ```
 
 Buy with Prime fees:
+
 - Fulfillment: FBA-equivalent ($3-$15/unit)
 - Storage: standard FBA
 - Payment processing: +3%
@@ -113,6 +114,7 @@ $9 / 0.50 × 1.4 = $25 minimum
 🧠 **Easy returns lift LTV 20-50%** (Loop 2024).
 
 Return rates by category:
+
 - Apparel: **30-40%** (highest)
 - General DTC: 18-25%
 - Furniture: 5-10% (but expensive when they happen)

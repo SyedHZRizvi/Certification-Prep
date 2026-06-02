@@ -193,20 +193,24 @@ Most clients pick the middle. Don't undersell.
 ## 🏆 Power Phrases For Outreach + Pitch
 
 In cold messages:
+
 - ✅ "I noticed you shipped [specific]..."
 - ✅ "Curious — is [thing] on your roadmap?"
 - ✅ "If not, no worries. Either way I'd love to follow your build."
 
 In discovery calls:
+
 - ✅ "Tell me about your business in 2 minutes."
 - ✅ "Where are you stuck on [area]?"
 - ✅ "What have you tried?"
 - ✅ "If we worked together, here's what week 1 looks like..."
 
 In proposals:
+
 - ✅ "Reply 'Approved' and we'll start [date]"
 
 Avoid:
+
 - ❌ "I'd love to hop on a call to discuss synergies..."
 - ❌ "I'm passionate about helping companies..."
 - ❌ "Please let me know if interested..."

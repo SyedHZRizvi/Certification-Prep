@@ -103,6 +103,7 @@
 ## 🏆 Exam Power Phrases
 
 ✅ Often **right**:
+
 - "Enable MFA"
 - "Apply least privilege"
 - "Use full-disk encryption (BitLocker/FileVault/LUKS)"
@@ -112,6 +113,7 @@
 - "Use WPA3 (or WPA2-AES minimum)"
 
 ❌ Often **wrong**:
+
 - "Password + PIN = MFA"
 - "Pay the ransom — they're honest"
 - "Disable UAC"

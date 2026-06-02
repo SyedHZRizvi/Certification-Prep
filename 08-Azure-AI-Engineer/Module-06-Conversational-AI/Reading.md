@@ -15,6 +15,7 @@
 ## 🍕 A Story: Maya's Helpful Bot
 
 Maya needs a customer-support bot. Users will ask three kinds of things:
+
 1. **FAQ** — "How do I reset my password?" → answer from a knowledge base
 2. **Commands** — "Schedule a meeting for tomorrow at 3pm" → parse intent + entities
 3. **Small talk** — "Hello", "Thanks" → polite chitchat
@@ -28,6 +29,7 @@ That's the whole module in one paragraph. Now let's go deeper.
 ## 🤖 Azure AI Bot Service — The Hosting Layer
 
 Bot Service is Azure's managed hosting for bots built with the **Bot Framework SDK**. It handles:
+
 - **Compute** — runs your bot on Azure App Service / Functions
 - **Identity** — provisions the bot's Azure AD app registration
 - **Channels** — Web Chat, Teams, Slack, Telegram, Direct Line, etc.
@@ -35,6 +37,7 @@ Bot Service is Azure's managed hosting for bots built with the **Bot Framework S
 - **State** — turn state, conversation state, user state (in storage of your choice)
 
 You author bots with one of:
+
 - **Bot Framework SDK** (C#, JavaScript/TypeScript, Python, Java) — code-first
 - **Power Virtual Agents / Copilot Studio** — low-code (less common on AI-102)
 - **Bot Framework Composer** — visual editor on top of the SDK (deprecated for new work — Microsoft now points to Copilot Studio + Foundry)
@@ -130,6 +133,7 @@ CLU output:
 - **Utterances** — example sentences per intent (≥15 per intent is the rule of thumb)
 - **Entities** — labeled spans within utterances
 - **Entity types**:
+
   - **Learned** — model figures it out from labels
   - **List** — closed set ("small", "medium", "large")
   - **Prebuilt** — Microsoft entity (datetime, money, percentage, etc.)
@@ -155,6 +159,7 @@ POST /language/:analyze-conversations?api-version=2023-04-01
 (Also from Module 4 — here's the deployment view.)
 
 You build a **knowledge base (KB)** from sources:
+
 - URLs (Microsoft will crawl support pages)
 - Files (PDF, DOCX, TSV, XLSX)
 - Manually authored Q/A pairs
@@ -185,6 +190,7 @@ for a in result.answers:
 ## 🔀 Orchestration Workflow
 
 When your bot can handle multiple kinds of input (FAQ + commands + small talk), you need to route each utterance to the right brain. **Orchestration workflow** is a project type in Azure AI Language that picks between:
+
 - One or more **CLU** projects (intent recognition)
 - One or more **Question Answering** projects (KB lookup)
 - Other orchestration projects (for hierarchical routing)
@@ -214,6 +220,7 @@ User mic → Speech SDK (STT) → Bot (text) → response text → Speech SDK (T
 ## 🚦 Telemetry & Application Insights
 
 Bot Framework has built-in telemetry middleware that sends events to **Application Insights**:
+
 - BotMessageReceived / Sent
 - Dialog enter / leave
 - LU intent + score
@@ -221,6 +228,7 @@ Bot Framework has built-in telemetry middleware that sends events to **Applicati
 - Custom events you log
 
 Use this to:
+
 - Track top intents and unmatched utterances
 - Identify dialogs where users drop off
 - Tune confidence thresholds
@@ -266,6 +274,7 @@ For rich responses (buttons, forms, images), use **Adaptive Cards** — JSON-def
 ## 🆕 Bot + GenAI (Where Things Are Heading)
 
 Microsoft now positions **Azure AI Foundry / Copilot Studio** as the modern path for new chatbots, with first-class support for:
+
 - Calling Azure OpenAI directly inside a bot dialog
 - Connecting "Knowledge" sources (Azure AI Search, SharePoint, websites)
 - Building **agents** with **Tool calling** + **plugins**
@@ -328,6 +337,7 @@ For AI-102, you still need to know **Bot Service + Bot Framework + CLU + QA + Or
 **Situation.** Cyber-defenders face an information-asymmetry problem: attackers can move faster than humans can read signals. Microsoft Security Copilot — announced March 2023, GA April 2024 — combined Azure OpenAI (GPT-4 then GPT-4o) with Microsoft Defender's telemetry, Sentinel's SIEM, Intune, Entra, and Purview data, plus a *conversational* surface targeted at security analysts (Microsoft Security blog, March 28, 2023, and April 1, 2024 GA announcement; verified against Microsoft Mechanics 2024 and the Security Copilot documentation page, 2026-05).
 
 **Decision.** Security Copilot is *not* built on Azure AI Bot Service in the way a classic CLU+QA bot would be — but Microsoft openly described it at Ignite 2023 and 2024 as architected with the same principles this module teaches:
+
 - A **conversational front-end** with multi-turn dialog and structured prompt templates (analogous to a Bot Framework `Activity` + `TurnContext` model).
 - **Plugins** that map to specialized data sources (Defender, Sentinel, Entra, threat intelligence) — analogous to **Orchestration Workflow** routing across CLU + Question Answering + custom skills, but at much larger scale.
 - **Adaptive Cards-style** rich responses (timelines, IOCs, host details) that render natively in the Security Copilot UI.
@@ -360,6 +370,7 @@ Critically, the Responsible AI overlay from Module 2 was non-negotiable: every S
 ## ✅ Module 6 Summary
 
 You now know:
+
 - 🤖 Bot Service vs Bot Framework SDK vs your bot code
 - 📡 Channels (Teams, Direct Line, Direct Line Speech, etc.)
 - 🎯 CLU for intent + entities; Question Answering for KBs

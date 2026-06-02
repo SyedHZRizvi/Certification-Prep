@@ -255,6 +255,7 @@ C. 172.16.150.0 / 172.16.151.255 / 510
 D. 172.16.0.0 / 172.16.255.255 / 65,534
 
 ### 42 (Scenario PBQ). An engineer needs to design VLSM subnets from `10.0.0.0/24` for:
+
 - LAN A: 100 hosts
 - LAN B: 50 hosts
 - Two P2P WAN links: 2 hosts each
@@ -266,6 +267,7 @@ C. /26 for A, /27 for B, /28 for each WAN
 D. /23 for A, /24 for B, /30 for each WAN
 
 ### 43 (Scenario PBQ). Match each issue to the BEST tool:
+
 - (a) Locate a copper cable break at exactly 47 ft on a 100 ft run
 - (b) Identify the top WAN bandwidth consumers per hour
 - (c) Capture and decode the full TCP handshake to a suspected slow server
@@ -417,6 +419,7 @@ D. "Wi-Fi 5 cannot do WPA2"
 ## 🔍 Review Process
 
 For EACH wrong answer:
+
 1. Identify which module covered it
 2. Re-read that module's Reading.md section
 3. Add an Anki/flashcard for the concept

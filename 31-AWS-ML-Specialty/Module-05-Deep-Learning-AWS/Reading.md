@@ -393,6 +393,7 @@ JumpStart hosts **300+ pre-trained models** (foundation and task-specific) plus 
 ## ✅ Module 5 Summary
 
 You now know:
+
 - 🏗️ The **5 DL families** (MLP, CNN, RNN, Transformer, GNN, Diffusion/GAN) and where each wins
 - 🐍 **SageMaker framework containers** (PyTorch, TF, MXNet, HF) in script mode
 - 💻 **AWS DL silicon** — P/G families (NVIDIA), Inferentia2, Trainium2, when each is cost-optimal
@@ -553,6 +554,7 @@ for epoch in range(EPOCHS):
 ```
 
 🎯 **Exam pattern.** Recognise:
+
 - `distribution={"smdistributed":{"dataparallel":{"enabled":True}}}` = SMDDP enabled
 - `use_spot_instances=True` + `checkpoint_s3_uri` = Spot training
 - `enable_network_isolation=True` = no outbound network
@@ -617,6 +619,7 @@ predictor = model.deploy(
 | **Hidden dim** | `CategoricalParameter([256, 512, 768, 1024])` |
 
 🎯 **Exam pattern.** Match the HPO strategy:
+
 - **Bayesian** when budget is moderate (~30-50 trials) and you want learning-from-trials
 - **Hyperband** when individual trials are expensive (many epochs) and you want aggressive pruning
 - **Random** when budget is tiny (<10 trials) and embarrassingly parallel is OK
@@ -636,6 +639,7 @@ predictor = model.deploy(
 | Out of memory | CUDA OOM error | Smaller batch; gradient accumulation; mixed precision; SMMP (model parallel); gradient checkpointing |
 
 🎯 **Pre-flight checklist** before launching a big distributed training job:
+
 1. Verified model + batch fits on a single GPU at FP32?
 2. Verified mixed precision works (BF16 first, then FP16) on a single GPU?
 3. Verified data loader keeps GPU >80% utilised on a single GPU?

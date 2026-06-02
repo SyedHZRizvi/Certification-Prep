@@ -85,6 +85,7 @@ AI  ⊃  ML  ⊃  Deep Learning  ⊃  Generative AI
 ## 🏆 Exam Power Phrases
 
 Look for these — they're usually right:
+
 - ✅ "Use **unsupervised** learning when there are no labels"
 - ✅ "**Overfitting**" when training acc >> test acc
 - ✅ "**XGBoost** on tabular data"
@@ -93,6 +94,7 @@ Look for these — they're usually right:
 - ✅ "**Inference** = using a trained model on new data"
 
 Usually wrong:
+
 - ❌ "Use deep learning for everything"
 - ❌ "Accuracy is always the best metric"
 - ❌ "ML is the right tool for deterministic math"
@@ -121,6 +123,7 @@ Usually wrong:
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. Define overfitting in one sentence. ___
 2. Difference between parameter and hyperparameter? ___
 3. Best metric for a fraud detector on 99% non-fraud data? ___

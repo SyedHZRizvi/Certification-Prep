@@ -146,6 +146,7 @@ Three services often confused on the exam:
 ### Azure Monitor — Your Full-Stack Observability
 
 Azure Monitor collects:
+
 - **Metrics** — numeric data over time (CPU, latency, requests/sec)
 - **Logs** — text events, traces, query-able in **Log Analytics** (Kusto/KQL)
 - **Application Insights** — APM for web apps (deep .NET, Java, Node, Python, Go support)
@@ -157,6 +158,7 @@ Azure Monitor collects:
 
 ### Azure Service Health
 Personalized view of Azure platform issues affecting *your resources*. Covers:
+
 - **Service issues** (active outages)
 - **Planned maintenance**
 - **Health advisories**
@@ -296,6 +298,7 @@ Personalized recommendations across five pillars:
 **Situation.** Mercedes-Benz produces roughly **2 million premium vehicles per year** across the globe, and each car shipped since 2020 ships with always-connected telematics — **MBUX** (Mercedes-Benz User Experience) infotainment, over-the-air (OTA) software updates, fleet data telemetry, EV charging integration, the *MB.OS* operating system rolling out from 2024, and (in the EU/US) Drive Pilot Level-3 autonomous driving. By 2023 Mercedes had roughly **30+ million connected vehicles** in its global fleet, each generating gigabytes of telemetry per day (vehicle health, driving patterns, OTA-update receipts, EV-battery state). The pre-cloud architecture — a mix of on-prem Stuttgart data centers and SaaS — could not absorb the data growth or ship features fast enough versus Tesla, BYD, and other electric-first competitors.
 
 **Decision.** Mercedes-Benz announced in 2020 a strategic partnership with **Microsoft and Azure** as the primary cloud, anchored by a multi-year MOU (Mercedes-Benz Group press release, 2020-06-15; renewed 2023). Key technology choices:
+
 - **Azure IoT Hub** as the device-side endpoint — every connected car opens a persistent MQTT-over-Azure connection, sending periodic state and receiving OTA payload manifests
 - **Event Hubs** for the high-throughput telemetry ingestion (millions of events per second at peak — Module 3 §"Integration & messaging" cited service used at scale)
 - **Azure Kubernetes Service (AKS)** for the back-end microservices that process vehicle data, expose APIs to the MB.OS apps, and drive the Mercedes me Connect customer app
@@ -308,6 +311,7 @@ Personalized recommendations across five pillars:
 - **Azure DevOps + GitHub Enterprise** as the development platform (the same GitHub-on-Azure stack from Module 5's case)
 
 **Outcome.** By 2024:
+
 - Mercedes-Benz uses **all 4 Azure global geographies** (US East/West, EU North/West/Central, China, Asia Pacific) — with strict per-region data residency for EU GDPR + China cybersecurity-law isolation. Pre-Azure, this same configuration would have required ~12+ owned data centers globally.
 - The **MBUX Voice Assistant powered by Azure OpenAI** rolled out across 2024 model-year vehicles in Q1 2024; uptake exceeded 40% of new sales by year-end (Mercedes-Benz CES 2024 press release, 2024-01-09; MWC Barcelona 2024 followup).
 - **OTA update success rate** improved from low-80s percent (pre-Azure) to mid-90s percent (post-Azure) due to better retry orchestration via Event Grid + Logic Apps.
@@ -315,6 +319,7 @@ Personalized recommendations across five pillars:
 - Mercedes-Benz publicly cites this platform in nearly every quarterly earnings call as a "competitive moat" against Tesla. CTO Markus Schäfer has framed the Azure partnership as the technological underpinning of MB.OS in multiple Mercedes investor days (Mercedes-Benz Capital Markets Day, 2023-10).
 
 **Lesson for the exam / for practitioners.** This case touches *every* Module 6 tool category at production scale:
+
 1. **The full tool catalog as a *team*, not isolated answers.** Mercedes uses Portal for ops, CLI for scripted patching, Bicep for IaC, Monitor for in-app metrics, Service Health for Azure-platform alerts, Advisor for cost recs, Arc for non-Azure resources, Migrate for the legacy datacenter mothballing, Sentinel + Defender for security. The exam tests each tool in isolation — reality uses them together.
 2. **Bicep over Terraform when you're Azure-only.** Mercedes' Azure-only choice for Bicep is the canonical AZ-900 answer to "which IaC for Azure?" — Terraform is correct only when multi-cloud is in scope, which Mercedes deliberately ruled out.
 3. **Azure Arc is the answer for "extend Azure to non-Azure."** Mercedes's manufacturing plants are still on-prem (no plans to move physical assembly-line control systems to public cloud). Arc lets them apply the same Policy + Sentinel + Defender governance across cloud and on-prem — exactly what the Module 6 exam pattern tests.
@@ -331,6 +336,7 @@ Microsoft has used Mercedes as a flagship case study in Microsoft Build 2023 + 2
 ## ✅ Module 6 Summary
 
 You now know:
+
 - 🖱️ The 5 Azure management interfaces (Portal, CLI, PowerShell, Cloud Shell, Mobile App)
 - 📜 ARM vs Bicep vs Terraform
 - 👀 Azure Monitor vs Service Health vs Status page

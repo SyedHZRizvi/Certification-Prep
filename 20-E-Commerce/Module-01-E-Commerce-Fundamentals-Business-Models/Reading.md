@@ -76,6 +76,7 @@ CAC = Total Customer Acquisition Spend / Number of New Customers Acquired
 ```
 
 Two flavors:
+
 - **Marketing CAC**: paid-media spend only divided by new customers. Easy to calculate from ad-platform exports.
 - **Blended CAC** (or "Fully Loaded CAC"): all customer-acquisition costs — media, agency fees, salaries of the acquisition team, tooling — divided by new customers. The CFO version. The one Series B+ boards use.
 
@@ -144,6 +145,7 @@ CLV:CAC = Customer Lifetime Value / Customer Acquisition Cost
 ```
 
 Industry conventions:
+
 - **3:1** — Healthy DTC. The Wharton/Fader benchmark for sustainable growth.
 - **5:1+** — Under-investing in growth. You should be spending more on acquisition.
 - **1:1 to 2:1** — Surviving, not thriving. Risk of running out of cash.
@@ -209,6 +211,7 @@ Chris Anderson's 2004 *Wired* article "The Long Tail" (expanded into the 2006 bo
 The academic predecessor: Brynjolfsson, Hu & Smith's 2003 *Management Science* paper "Consumer Surplus in the Digital Economy" quantified the long tail at Amazon's books business — the long tail (titles ranked > 100,000) generated $731M-$1.03B of consumer surplus in 2000, an amount larger than the surplus from the top hits.
 
 The exam-relevant takeaways:
+
 1. **Aggregate demand for niche SKUs can exceed demand from top SKUs** when shelf space cost is zero (digital).
 2. **Discovery is the bottleneck**, not inventory. Whoever has the best search, recommendation, and SEO wins.
 3. **Long-tail strategies require PIM discipline.** You can't merchandise 50,000 SKUs without clean attribute data.
@@ -311,6 +314,7 @@ The teachable observation: Liquid Death didn't try to be a marketplace seller fi
 ## ✅ Module 1 Summary
 
 You now know:
+
 - 🛒 The seven e-commerce business models
 - 💰 The five unit-economics metrics (AOV, CAC, CLV, contribution margin, payback period)
 - 📐 The CLV:CAC ratio benchmark (3:1 healthy, 5:1+ under-investing)

@@ -25,6 +25,7 @@
 | **Trunk** | Multiple VLANs, 802.1Q tagged (one native untagged) |
 
 Typical server VLANs:
+
 - 10 mgmt · 20 prod · 30 storage · 40 backup · 99 OOB
 
 🚨 Don't use default VLAN 1.
@@ -114,6 +115,7 @@ Typical server VLANs:
 ## 🏆 Exam Power Phrases
 
 ✅ Often **right**:
+
 - "Enable LACP on switch ports in same LAG"
 - "Jumbo frames end-to-end"
 - "Dedicated VLAN for storage / mgmt / vMotion"
@@ -123,6 +125,7 @@ Typical server VLANs:
 - "PortFast on server-facing ports"
 
 ❌ Often **wrong**:
+
 - "Two NICs are automatically a team"
 - "Jumbo frames on just the server"
 - "Storage on the production VLAN"
@@ -147,6 +150,7 @@ Typical server VLANs:
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. LACP — what must the switch do? ___
 2. MTU default + jumbo + end-to-end rule? ___
 3. L4 vs L7 — one-liner difference? ___

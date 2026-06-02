@@ -121,6 +121,7 @@ PAW (Privileged Access Workstation)
 ## 🏆 Exam Power Phrases
 
 When you see these, they're often **correct**:
+
 - ✅ "Defender for Servers P2 for FIM, JIT, VA, compliance"
 - ✅ "WDAC in Audit then Enforce"
 - ✅ "Credential Guard + Protected Users for Tier-0 admins"
@@ -130,6 +131,7 @@ When you see these, they're often **correct**:
 - ✅ "PAW for Tier-0 admin tasks only"
 
 Usually **wrong**:
+
 - ❌ "Defender for Servers P1 has JIT"
 - ❌ "AppLocker is the modern default"
 - ❌ "Credential Guard works without VBS"

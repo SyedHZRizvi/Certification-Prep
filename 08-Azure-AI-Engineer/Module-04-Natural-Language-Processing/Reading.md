@@ -14,6 +14,7 @@
 ## 🍕 A Story: Maya Goes Global
 
 Maya's app is now in 14 countries. Users:
+
 - Write reviews in 30 languages → she wants **sentiment** + **translation** to English
 - Submit support tickets with personal info → she needs to **redact PII**
 - Talk to her chatbot by voice → she needs **speech-to-text** in any language
@@ -101,6 +102,7 @@ Ocp-Apim-Subscription-Key: <KEY>
 ### Custom features workflow (Custom Text Classification, Custom NER, CLU)
 
 Same pattern as Custom Vision:
+
 1. **Create project** in [Language Studio](https://language.cognitive.azure.com/)
 2. **Tag** training data (labels for classification, entity spans for NER, intents+entities for CLU)
 3. **Train** a model
@@ -165,6 +167,7 @@ print(result[0].translations[0].text)  # "Hola, mundo"
 ### Custom Translator
 
 For domain-specific translations (legal, medical, gaming, etc.):
+
 1. Collect **parallel data** (source + target sentence pairs, 10K+ recommended)
 2. Upload as a **document**, **tuning set**, and **test set**
 3. Train a custom model
@@ -331,6 +334,7 @@ print(result.translations["es"])
 **Situation.** Walmart, the world's largest retailer by revenue, faced the post-2023 reality that its 250M+ weekly customers expected conversational, multilingual, multimodal shopping help — including voice. In April 2024, Walmart publicly announced **Sparky**, its generative-AI-powered shopping assistant, with Microsoft and OpenAI as part of the technology stack (Walmart corporate communications, April 2024; corroborated at Microsoft Build 2024 and Walmart's 2024 *Investor Community Meeting*; verified 2026-05).
 
 **Decision.** Sparky composes the entire NLP triad covered in this module:
+
 - **Azure AI Language** for input understanding — Sentiment Analysis on review prompts ("show me a kid-friendly version"), PII Detection so customer-uploaded photos / questions don't carry SSNs into the prompt context, and CLU for command intents ("track my order").
 - **Azure AI Translator** for multilingual flows — Walmart serves customers in dozens of languages across its global stores; Translator handles real-time text in/out plus Document Translation for international compliance documents (e.g., supplier contracts).
 - **Azure AI Speech** for voice in/out — STT (real-time + batch), TTS using Neural Voices for accessibility, and Speech Translation in pilot markets.
@@ -362,6 +366,7 @@ Critically, the team applied **Responsible AI** controls from Module 2: PII Dete
 ## ✅ Module 4 Summary
 
 You now know:
+
 - 🗣️ Azure AI Language's full feature set — sentiment, PII, NER, summarization, CLU, QA, custom
 - 🌐 Translator's three modes — text, document, custom — and the region-header gotcha
 - 🎤 Speech's STT/TTS/Translation + customization (Custom Speech, CNV)

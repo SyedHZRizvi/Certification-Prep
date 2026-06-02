@@ -14,6 +14,7 @@
 ## 🍕 A Story: The Pizza Shop's Master Key
 
 Back to Anna and *PizzaTracker.io*. Now Anna has 25 employees:
+
 - 4 developers (need to deploy code)
 - 2 finance people (need to see the bill, NOT change settings)
 - 1 ops lead (full control over the production environment)
@@ -87,6 +88,7 @@ One login → access to many apps. Implemented via SAML, OAuth, or OpenID Connec
 
 ### Multi-Factor Authentication (MFA)
 Require ≥ 2 of:
+
 - **Something you know** (password)
 - **Something you have** (phone, hardware key, FIDO2 key)
 - **Something you are** (biometric — fingerprint, face)
@@ -95,6 +97,7 @@ Methods in Azure: Microsoft Authenticator app, SMS, voice call, hardware OATH to
 
 ### Passwordless
 Skip the password entirely:
+
 - **Microsoft Authenticator app** (number match)
 - **FIDO2 security keys**
 - **Windows Hello for Business** (biometrics + TPM)
@@ -110,6 +113,7 @@ Conditional Access (CA) is Entra ID's policy engine: **if** these conditions are
 Example policy: *"If a user is signing in from outside the US AND from an unmanaged device AND accessing Microsoft 365, require MFA AND block download."*
 
 Signals it can use:
+
 - User / group
 - Application being accessed
 - Device state (managed? compliant?)
@@ -117,6 +121,7 @@ Signals it can use:
 - Risk (Identity Protection signals)
 
 Controls it can enforce:
+
 - Grant access (with MFA, terms, compliant device, etc.)
 - Block access
 - Session controls (limit downloads, force re-auth)
@@ -185,6 +190,7 @@ Assignment at MG → applies to all subs/RGs/resources beneath.
 Where RBAC asks "**who** can do something?", Azure Policy asks "**what** is allowed to exist?".
 
 Examples of policies:
+
 - "All resources must have a `costCenter` tag"
 - "VMs can only be created in `East US` and `West Europe`"
 - "Storage accounts must use HTTPS only"
@@ -234,6 +240,7 @@ Locks apply to **everyone** including Owners (until they remove the lock). Locks
 Tags = key:value labels on resources.
 
 Common uses:
+
 - `Environment: prod`
 - `Owner: pizzatracker-team`
 - `CostCenter: 1234`
@@ -250,6 +257,7 @@ Common uses:
 Formerly **Azure Security Center**. Now part of the **Defender** family.
 
 What it does:
+
 1. **CSPM (Cloud Security Posture Management)** — assesses your security posture against best practices, gives a **Secure Score**
 2. **CWPP (Cloud Workload Protection)** — protects servers, databases, containers, storage, etc., from threats (powered by Defender for Servers, Defender for SQL, etc.)
 3. Provides regulatory compliance dashboards (PCI-DSS, ISO 27001, NIST CSF, etc.)
@@ -267,6 +275,7 @@ What it does:
 **Microsoft Sentinel** is Azure's **SIEM** (Security Information & Event Management) **+ SOAR** (Security Orchestration, Automation & Response).
 
 It ingests logs from anywhere (Azure, AWS, on-prem, M365, third-party) and:
+
 - Correlates events across sources
 - Detects threats with built-in and ML analytics
 - Runs **playbooks** (automated responses) via Logic Apps
@@ -320,6 +329,7 @@ The exam loves "which layer would this control fit?" questions.
 ## 🔐 Azure Key Vault — Secret Storage
 
 Stores and manages:
+
 - **Secrets** (passwords, connection strings)
 - **Keys** (encryption keys, signing keys)
 - **Certificates** (TLS/SSL)
@@ -389,6 +399,7 @@ Backed by HSMs (Hardware Security Modules). Integrates with Managed Identities f
 ## 📊 Case Study — Boeing's Azure Stack Hub for ITAR-regulated aerospace (2018–2024)
 
 **Situation.** Boeing is the world's second-largest aerospace company (~$78B revenue 2023; ~170,000 employees), and is one of the most heavily regulated IT customers on Earth. Its workloads span (a) commercial-aviation engineering (787, 777X), (b) U.S. Department of Defense programs (F-15EX, KC-46, Air Force One replacements), and (c) NASA / classified space programs. Three regimes constrain *every* IT decision:
+
 - **ITAR** (International Traffic in Arms Regulations) — restricts who, by citizenship, can touch defense-related technical data; in practice this means cleared U.S. citizens only, on infrastructure inside U.S. borders, with audit trails sufficient to satisfy the U.S. State Department.
 - **CMMC** (Cybersecurity Maturity Model Certification) — DoD's tiered cybersecurity certification for the defense industrial base; CMMC Level 4/5 is required for prime contractors handling controlled unclassified information (CUI).
 - **DFARS 252.204-7012** — DoD acquisition rule requiring specific NIST 800-171 controls for CUI handling.
@@ -396,11 +407,13 @@ Backed by HSMs (Hardware Security Modules). Integrates with Managed Identities f
 For Boeing's most sensitive workloads, public-cloud regions weren't always an option — even Azure Government — because of program-specific clauses about *physical custody* of the hardware (e.g., classified workloads where the hardware itself never leaves a Boeing-controlled facility).
 
 **Decision.** Boeing standardized on a **three-tier Microsoft architecture**:
+
 1. **Public Azure (commercial regions)** — for non-regulated commercial-aviation workloads: customer-facing apps, supply-chain optimization for the 737/787 lines, engineering simulation that doesn't carry CUI. This is the standard tenant + management-group + subscription pattern Module 2 teaches.
 2. **Azure Government (Gov Virginia / Gov Texas / Gov Arizona)** — for CMMC-Level-4 / DFARS workloads where U.S.-citizen ops and physical isolation from commercial Azure are required but public-cloud delivery is acceptable. Boeing was an early-adopter customer of Azure Gov dating to ~2018.
 3. **Azure Stack Hub** (on-prem, in Boeing's own ITAR-cleared datacenters) — for the most sensitive workloads where the *hardware* must stay inside a Boeing facility. Azure Stack Hub gives Boeing a *consistent Azure experience* (same ARM API, same Bicep templates, same RBAC roles) running on Microsoft-validated hardware that Boeing physically owns. (Microsoft and Boeing public references; Microsoft Federal blog 2019; Boeing Defense Cloud One reference, 2022.)
 
 The governance pattern across all three:
+
 - **A single Microsoft Entra ID tenant per environment** (separate for Gov vs Commercial — sovereign clouds are separate environments per Module 2 §6)
 - **Management-group-level Azure Policy** enforcing "no resource deployment outside U.S. regions" and tag-based ITAR classification
 - **Conditional Access** requiring CAC (Common Access Card) hardware tokens for cleared engineers — not just MFA, but specifically FIDO2-backed credentials issued by the U.S. government
@@ -412,6 +425,7 @@ The governance pattern across all three:
 The case is in active use by Microsoft as a reference architecture for aerospace and defense customers (Microsoft Federal Cloud Sovereignty whitepaper, current edition checked 2026-05).
 
 **Lesson for the exam / for practitioners.** Three AZ-900 concepts are stress-tested at the limit:
+
 1. **Sovereign cloud isn't optional for regulated industries — it's structural.** The Module 2 table of "sovereign regions" (Azure Government, Azure China) becomes a *first-tier design decision*, not a footnote. The exam tests recognition; reality tests architecture.
 2. **RBAC + Policy + Locks together — at three scopes simultaneously.** Boeing's pattern uses Policy at the management-group level (region restriction), RBAC at the subscription level (per-program isolation), and Locks at the resource level (production lockdown). The three-tool combo from Module 4 isn't a study trick; it's how an actual enterprise's compliance program is implemented.
 3. **Defender for Cloud + Sentinel + Purview as the regulated-cloud triad.** Posture management + SIEM/SOAR + data-classification — when the regulator asks "show me you knew that file was ITAR-classified and that only cleared U.S. citizens accessed it," these are the three tools that produce the answer. Each one is on the AZ-900 by name; together they're the operational answer to the §1.5 shared-responsibility "customer always owns identity" rule.
@@ -426,6 +440,7 @@ The case is in active use by Microsoft as a reference architecture for aerospace
 ## ✅ Module 4 Summary
 
 You now know:
+
 - 🪪 Microsoft Entra ID (former Azure AD) and its capabilities
 - 🔐 SSO, MFA, passwordless, Conditional Access
 - 🌐 External ID for B2B/B2C

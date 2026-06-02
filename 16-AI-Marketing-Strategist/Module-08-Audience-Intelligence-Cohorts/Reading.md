@@ -58,11 +58,13 @@ A **cohort** is a group of users who share an attribute over a period of time �
 | 2026-05 | 100% | 86% | 73% | — | — | — | — |
 
 Reading this matrix:
+
 - **Each row** = one cohort (acquired in that month).
 - **Each column** = months since acquisition (M0 = month of acquisition, M1 = next month, etc.).
 - **The diagonal** = the most recent observation for each cohort.
 
 What you're looking for:
+
 - **Improving rows** (newer cohorts retaining better than older ones) = the product is improving.
 - **Declining rows** = product is decaying or growth is bringing in worse users.
 - **A plateau in M3+** = the "core" of the cohort has stuck. The opposite is bleeding.
@@ -116,6 +118,7 @@ Same cohort matrix shape, but with revenue (per-customer cumulative or quarterly
 | 2025-Q1 | $145 | $230 | — | — |
 
 Reading this:
+
 - LTV climbing across cohorts (newer cohorts reach higher LTV at the same tenure) = improving product.
 - LTV declining = either acquisition quality dropping or product getting worse.
 - The 24-month LTV is what you compare to CAC for the LTV:CAC ratio.
@@ -316,6 +319,7 @@ Pivot this in Looker Studio or paste the resulting table into Sheets / Excel —
 ## ✅ Module 8 Summary
 
 You now know:
+
 - 📅 The cohort matrix and how to read retention triangles.
 - 🎯 Cohort-of-one and dimensional cohorting beyond acquisition month.
 - 💰 LTV cohort curves and what they reveal about acquisition quality.

@@ -15,6 +15,7 @@
 ## 🍕 A Story: Maya's PDF Avalanche
 
 Maya wins a contract with a hospital. Day 1, she gets 80,000 PDFs: insurance forms, lab reports, medical histories. The hospital needs:
+
 1. **Extract structured fields** from each PDF — patient name, DOB, insurer, diagnosis codes
 2. **Search across all of them** with natural-language queries — *"all patients diagnosed with Type 2 diabetes in Q2"*
 3. **Power a chatbot** that answers questions citing the source PDF
@@ -97,6 +98,7 @@ model = poller.result()
 ### Document Intelligence Studio
 
 Web portal at <https://documentintelligence.ai.azure.com/> (formerly formrecognizer.appliedai.azure.com). Use it to:
+
 - Try prebuilt models on sample documents
 - Label custom training data
 - Train + test custom models
@@ -162,6 +164,7 @@ PUT /indexes/products?api-version=2024-07-01
 ### Indexers — pull from data sources
 
 Supported data sources:
+
 - **Azure Blob Storage** (most common)
 - **Azure Cosmos DB** (NoSQL, Mongo, Gremlin)
 - **Azure SQL Database / SQL on VMs**
@@ -204,6 +207,7 @@ A skillset can also write enriched data to a **Knowledge Store** — tables, obj
 ### Semantic ranking explained
 
 You enable it on an index with a **semantic configuration** that names the title field, content fields, and keyword fields. Then queries can pass `queryType=semantic` and get:
+
 - `@search.rerankerScore` — semantic relevance
 - `@search.captions` — short excerpt highlighting why the doc matched
 - `@search.answers` — extractive answer pulled from the top docs
@@ -217,6 +221,7 @@ Pricing tier: requires **Standard** SKU (S1+); Free/Basic tiers don't support se
 3. Search by passing a query vector or by **vector query with text** (server embeds for you when you wire the Embedding skill)
 
 Algorithms:
+
 - **HNSW** (Hierarchical Navigable Small World) — fast, default
 - **Exact KNN** — slower, more accurate
 
@@ -340,6 +345,7 @@ The canonical RAG pipeline looks like:
 **Situation.** The UK National Health Service (NHS) faces a chronic radiologist-capacity crunch: by 2023 the Royal College of Radiologists reported a 29% shortfall vs need, with reporting backlogs of weeks for non-urgent imaging. The NHS's "Lighthill" programme — named after the 1973 Lighthill report on AI to UK government — was an umbrella set of pilots through 2023–2024 to evaluate AI for triage, clinical-report generation, and structured-data extraction from radiology reports and referrals (referenced in NHS England *AI in Imaging* technical reports and several published peer-reviewed evaluations; verified against NHS England digital materials and journal abstracts 2026-05).
 
 **Decision.** Several NHS trusts used Azure as part of these pilots, with one shared pattern relevant to *this* module:
+
 - **Document Intelligence Custom Neural** to extract structured fields (referral indication, patient demographics, prior-imaging codes) from inbound GP referral letters — letters that vary in layout but share a fixed schema, which is exactly the Custom Neural sweet spot.
 - **Azure AI Search** with hybrid + semantic ranking over a corpus of de-identified historical reports and clinical guidelines, with vectors produced by `text-embedding-3-large` (3072 dims) — used by clinical teams to retrieve precedent cases and protocol guidance.
 - **Azure AI Language Text Analytics for Health** layered on top to surface UMLS-linked medical entities (and confidence) for the radiologist.
@@ -371,6 +377,7 @@ Crucially, the architecture made the AI an *assistive* layer — the radiologist
 ## ✅ Module 5 Summary
 
 You now know:
+
 - 📄 Document Intelligence model catalog (Read, Layout, prebuilt, Custom Template/Neural/Composed/Classifier)
 - 🧠 The DISKS mental model for Azure AI Search
 - 🔎 Query types (simple, full Lucene, semantic, vector, hybrid)

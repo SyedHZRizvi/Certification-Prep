@@ -323,6 +323,7 @@ Reverse logistics handles flows of returns, recalls, repairs, recycling, and end
 ## ✅ Module 7 Summary
 
 You now know:
+
 - 🚛 The 5 transportation modes and their trade-offs
 - 🏭 Warehouse types, operations, picking + storage strategies
 - 🌐 3PL vs 4PL vs LLP

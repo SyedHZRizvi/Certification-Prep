@@ -122,6 +122,7 @@ Sovereign clouds are SEPARATE Azure environments — different portal, different
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. The 4-level resource hierarchy? ___
 2. AZ vs Region in one sentence each? ___
 3. What does GRS do? ___

@@ -229,6 +229,7 @@ Sign-In Risk Policy
 ## 🔄 Self-Remediation Flow
 
 When a user hits a risky sign-in policy:
+
 1. **Challenge:** MFA prompt (or password reset for user-risk).
 2. **Pass:** Risk is dismissed by Microsoft (it learns the user is the real owner).
 3. **Fail:** Risk persists; admin can investigate in the Risky users + Risky sign-ins reports.
@@ -341,6 +342,7 @@ The correct order:
 ## ✅ Module 4 Summary
 
 You now know:
+
 - 🛡️ The CA decision flow: Assignments → Conditions → Grant → Session
 - 🚫 Why blocking legacy auth is the highest-leverage policy
 - 🧪 Report-only mode + What If tool as the safe-rollout pair
@@ -361,18 +363,21 @@ You now know:
 ## 📊 Case Study — The Capital One Conditional Access Refactor (2023)
 
 **Situation.** Capital One, ~50,000 employees, operates one of the largest Entra tenants in financial services. By early 2023 their CA estate had drifted: **312 active policies**, accumulated over 7 years by 12 different security teams. A 2023 internal audit found:
+
 - 47 policies were duplicates or near-duplicates (e.g. three different "require MFA for admins" policies with slightly different exclusion groups).
 - 23 policies were in report-only mode for >12 months ("we'll turn it on next quarter").
 - 18 policies had stale exclusion groups pointing to deprovisioned users.
 - 4 policies had no Grant control at all (defaulting to "allow without controls").
 
 **Decision.** Capital One's IAM team (publicly discussed at Microsoft Ignite 2023 and the Gartner IAM Summit 2024) ran a multi-quarter consolidation:
+
 1. **Inventory + classify.** Used `Get-MgIdentityConditionalAccessPolicy` + Graph Explorer to export every policy to a spreadsheet, classified by purpose (MFA, geo, device, risk, app-specific).
 2. **Consolidation map.** For each purpose category, picked one canonical policy and deprecated duplicates after testing with What If + report-only.
 3. **Mandatory peer review.** Every new CA policy requires a documented business justification + named owner + planned access review date (annual minimum). PR-style review in an internal ticketing system before going live.
 4. **Quarterly health check.** A KQL dashboard counts: report-only-policy count, policies with stale exclusion groups, policies with no Grant control, policies modified in last 30 days. Anomalies are auto-ticketed.
 
 **Outcome.** Per Capital One's published metrics (2024-09):
+
 - Active CA policy count dropped from 312 to **96** (69% reduction).
 - Average time to roll out a new policy: from "ad hoc, hours to days" to a 5-day controlled flow (request → peer review → report-only 5 day → enforce).
 - Number of credential-related incidents that escalated past tier-1 SOC: **down 41%** year-over-year (attributed partly to cleaner policies, partly to enforcing report-only policies that had been parked).

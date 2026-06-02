@@ -135,6 +135,7 @@ PEOPLE   ←→   PROFIT
 ## 🏆 Exam Power Phrases
 
 Usually CORRECT:
+
 - ✅ "Mode shift is the highest-leverage emissions lever"
 - ✅ "Gatekeeping is the most critical returns step"
 - ✅ "Closed-loop = your products cycle back to you"
@@ -142,6 +143,7 @@ Usually CORRECT:
 - ✅ "Purchased transport is Scope 3"
 
 Usually WRONG:
+
 - ❌ "Offsets fix emissions"
 - ❌ "Recycling = reuse"
 - ❌ "Refurbished = remanufactured"

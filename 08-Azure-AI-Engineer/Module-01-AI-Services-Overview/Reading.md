@@ -111,6 +111,7 @@ az cognitiveservices account create \
 ## 🔑 Keys, Endpoints, and Regions
 
 Every Azure AI resource has:
+
 - **Endpoint** — a URL like `https://maya-ai.cognitiveservices.azure.com/` (or `https://eastus.api.cognitive.microsoft.com/` for older single-service resources)
 - **Key1 + Key2** — two keys so you can rotate without downtime
 - **Region** — billing + data residency. **A key only works against its own region's endpoint.**
@@ -180,6 +181,7 @@ credential = ManagedIdentityCredential()  # or DefaultAzureCredential() which pi
 ```
 
 Two flavors:
+
 - **System-assigned** — tied to the resource lifecycle (deleted when the resource is)
 - **User-assigned** — standalone identity that can be attached to many resources
 
@@ -343,6 +345,7 @@ Use these as journal prompts, study-group questions, or interview-prep drills. E
 ## ✅ Module 1 Summary
 
 You now know:
+
 - 🏷️ The current names of every major Azure AI service (and the old ones to recognize)
 - 🛠️ When to use a multi-service resource vs a single-service resource
 - 🔑 How keys, endpoints, regions, and custom subdomains relate

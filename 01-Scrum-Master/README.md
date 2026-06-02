@@ -47,6 +47,7 @@ Begin with [Module 1: The Agile Mindset →](./Module-01-Agile-Mindset/Reading.m
 ## 🎯 What You'll Learn
 
 By the end of this track, you'll be able to:
+
 - Explain why Agile/Scrum exists and why it works
 - Recite the Scrum framework cold (3 roles, 5 events, 3 artifacts)
 - Coach a team through real Scrum scenarios

@@ -161,6 +161,7 @@ The **CryptoCurrency Security Standard (CCSS)**, published by the **CryptoCurren
 Three things were different in 2023. First, the August 2023 D.C. Circuit ruling in *Grayscale v. SEC* found the SEC's denial reasoning "arbitrary and capricious." Second, BlackRock had a 575-1 record on prior ETF approvals (Bloomberg, 2023) and named Coinbase Custody as custodian — a regulated NYDFS trust company. Third, Fidelity, ARK/21Shares, Bitwise, Invesco, Valkyrie, VanEck, WisdomTree, Hashdex, Franklin Templeton, and Grayscale all filed competing S-1s, presenting the SEC with a fait accompli.
 
 **Decision.** BlackRock filed with these features:
+
 - **Custodian:** Coinbase Custody Trust (qualified custodian, NYDFS-regulated, CCSS L3)
 - **Authorized Participants (APs):** Jane Street and JPMorgan Securities (later Virtu, ABN AMRO, Macquarie added)
 - **Cash creation model:** APs deliver USD (not BTC) to the trust; the trust acquires BTC via OTC desks. (The SEC rejected in-kind creation in the final rounds — concerned about AP self-dealing.)

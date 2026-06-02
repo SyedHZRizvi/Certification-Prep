@@ -533,6 +533,7 @@ After 60 questions worth of practice across this course, recognize these pattern
 
 ### Cheap eliminations
 For multi-choice on this exam:
+
 - Any option that says "always" or "never" without nuance → usually wrong
 - Any option that says "the model is broken" → almost always wrong
 - Any option recommending temperature > 1.5 → almost always wrong

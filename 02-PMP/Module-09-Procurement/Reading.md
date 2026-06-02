@@ -9,6 +9,7 @@
 Procurement = buying or contracting **outside** your organization for goods or services.
 
 In project terms:
+
 - 🛠️ Hiring vendors
 - 🤝 Sub-contracting work
 - 🏗️ Renting equipment
@@ -100,12 +101,14 @@ HIGH BUYER RISK ←————————————————→ HIGH SELL
 ## 📜 SOW (Statement of Work)
 
 Describes the work to be procured:
+
 - Scope
 - Deliverables
 - Acceptance criteria
 - Schedule
 
 3 types:
+
 - **Performance SOW** — describe end results (vendor figures out how)
 - **Functional SOW** — performance + features
 - **Design SOW** — describe exactly how (rare in agile)
@@ -117,6 +120,7 @@ Describes the work to be procured:
 Decision: build internally or buy externally?
 
 Considerations:
+
 - Cost
 - Skills available
 - Strategic value (don't outsource core competence)
@@ -146,6 +150,7 @@ Close out (formal acceptance, lessons learned)
 ## 🏁 Contract Closure
 
 When the work is done:
+
 1. ✅ Verify all deliverables met
 2. 📜 Formal acceptance
 3. 💵 Final payments
@@ -164,6 +169,7 @@ When the work is done:
 ## 📊 Procurement in Agile
 
 Agile contracts are tricky because scope evolves:
+
 - 💼 **T&M for development**
 - 💼 **Capped T&M** (cap on hours/dollars)
 - 💼 **Iterative fixed-price** (each sprint = new fixed-price contract)
@@ -202,6 +208,7 @@ Agile contracts are tricky because scope evolves:
 ## ✅ Module 9 Summary
 
 You now know:
+
 - 🔄 3 procurement processes (Plan, Conduct, Control)
 - 📜 RFx types (RFI, RFP, RFQ)
 - 📋 Contract families: FP (vendor risk), CR (buyer risk), T&M

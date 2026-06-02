@@ -381,6 +381,7 @@ C. `useradd webapp`; `chmod 700 /srv/web/static/`; deployer in sudoers
 D. `useradd -s /bin/false webapp`; `setfacl -m u:webapp:rw /srv/web/static/`; deployer keys ignored
 
 ### 63 (Scenario PBQ). Match each symptom to its root cause:
+
 - (a) `df -h` shows 60% free, but writes fail with "No space left on device"
 - (b) New disk visible in `dmesg` but no `/dev/sdb` exists
 - (c) After upgrading the kernel, system fails to mount LUKS root at boot
@@ -505,6 +506,7 @@ Concise rationales — refer to the appropriate module's Quiz or Reading for ful
 ## 🔍 Review Process
 
 For EACH wrong answer:
+
 1. Identify which module covered it
 2. Re-read that module's Reading.md section
 3. Add a flashcard

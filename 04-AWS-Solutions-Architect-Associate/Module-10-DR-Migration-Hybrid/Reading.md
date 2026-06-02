@@ -234,6 +234,7 @@ RPO: seconds, RTO: ~5 minutes
 ## ✅ Module 10 Summary
 
 You now know:
+
 - 🛡️ The 4 DR strategies (Backup&Restore → Pilot Light → Warm Standby → Multi-Site)
 - 🔁 AWS Backup for centralized policy
 - 🚚 Snow family + DataSync + Storage Gateway for migrations
@@ -266,6 +267,7 @@ You now know:
 7. **No multi-region active-active** — the network was effectively single-site
 
 **Outcome.** PSN's 23-day outage became the canonical "your DR plan must include security" case in enterprise architecture circles. Sony rebuilt with:
+
 - Multi-region active-active topology
 - Hardware-isolated backup vaults (AWS would later commercialize this with Backup vault lock and cross-account vault copy)
 - WAF, intrusion detection, and behavioral anomaly monitoring (equivalents of WAF + GuardDuty + Inspector + Macie)
@@ -273,6 +275,7 @@ You now know:
 - Mandatory quarterly DR Game Days
 
 **Lesson for the exam / for practitioners.** Sony PSN is *why* the SAA-C03 exam includes questions like:
+
 - "Records must be **immutable** for 7 years, no one (including root) can delete" → **S3 Object Lock in Compliance mode**
 - "Backups must survive a compromise of the source account" → **AWS Backup with cross-account vault copy**
 - "Detect unusual API activity automatically" → **GuardDuty**
@@ -280,6 +283,7 @@ You now know:
 - "Continuous compliance check that backups exist" → **AWS Config rules**
 
 The 4-tier DR ladder (Backup&Restore → Pilot Light → Warm Standby → Multi-Site Active-Active) only protects against **infrastructure failure**. Sony's lesson is that you must layer on:
+
 - **Immutable backups** (Object Lock, vault lock) — survives ransomware / insider attacks
 - **Cross-account isolation** for backups — survives account compromise
 - **GuardDuty / Macie / Inspector** — detects the threat before you need DR

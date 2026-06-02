@@ -101,6 +101,7 @@
 ## 🏆 Exam Power Phrases
 
 When you see these, they're often **correct**:
+
 - ✅ "Outbound HTTPS only — no inbound ports"
 - ✅ "Use Azure Connected Machine Onboarding role for SP"
 - ✅ "Apply policy at the management group scope"
@@ -110,6 +111,7 @@ When you see these, they're often **correct**:
 - ✅ "Arc Private Link for air-gapped networks"
 
 Usually **wrong**:
+
 - ❌ "Arc requires inbound RDP/SSH"
 - ❌ "Owner role to onboard (least privilege violation)"
 - ❌ "Arc K8s only works with AKS"

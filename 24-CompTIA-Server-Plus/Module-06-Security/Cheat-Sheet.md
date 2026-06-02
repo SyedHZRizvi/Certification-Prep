@@ -117,6 +117,7 @@
 ## 🏆 Exam Power Phrases
 
 ✅ Often **right**:
+
 - "Apply CIS Benchmark"
 - "Change default vendor credentials"
 - "Segment OOB management network"
@@ -127,6 +128,7 @@
 - "Self-Encrypting Drives + BitLocker (TPM)"
 
 ❌ Often **wrong**:
+
 - "Default credentials are fine"
 - "Antivirus is enough"
 - "Shared admin password"
@@ -153,6 +155,7 @@
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. Mantrap purpose? ___
 2. Why pair UEFI pw with Secure Boot? ___
 3. RBAC vs DAC — one-liner each? ___

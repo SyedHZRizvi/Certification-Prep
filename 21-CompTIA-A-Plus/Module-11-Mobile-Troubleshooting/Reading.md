@@ -16,6 +16,7 @@ Meet Felipe. He's the mobile / collaboration tech at a 220-person consumer-goods
 Felipe pulls up the **Microsoft Intune** dashboard. All 7 phones are showing the same compliance failure: **"OS version below minimum (iOS 17.7)"**. They're all on iOS 17.5. Yesterday afternoon, the compliance policy was tightened by another admin (without coordination) to require iOS 17.7 as the new minimum. The compliance engine kicked in overnight, disabled the Exchange ActiveSync profile, and the phones lost mail access — but kept showing as "No Service" because the conditional-access engine also blocks cellular (via carrier integration) when out of compliance.
 
 Felipe's playbook:
+
 1. **Temporarily reverts** the compliance policy from iOS 17.7 → iOS 17.5 to restore the reps' phones immediately.
 2. Pushes a **forced-update profile** via MDM that requires iOS 17.7 within 7 days.
 3. Sends an apology + instructions email to all 7 reps with a one-tap "Update Now" link to Settings.
@@ -298,6 +299,7 @@ This is mobile support in 2026. The phones themselves rarely fail — it's the *
 ## ✅ Module 11 Summary
 
 You now know:
+
 - 🔋 Battery diagnosis: cycle count, capacity %, background apps, signal hunting
 - 📶 Wi-Fi / cellular / Bluetooth triage trees
 - 🔄 Sync failures: account, MFA, compliance, quota

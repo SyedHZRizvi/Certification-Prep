@@ -96,6 +96,7 @@
 ## 🏆 Exam Power Phrases
 
 ✅ Usually right:
+
 - "RDS Multi-AZ for HA, Read Replicas for read scaling"
 - "Aurora Global Database for cross-region <1s"
 - "Aurora Serverless v2 for spiky relational"
@@ -106,6 +107,7 @@
 - "PITR within 35 days for accidental deletes"
 
 ❌ Usually wrong:
+
 - "Multi-AZ provides read replicas"
 - "Memcached supports failover"
 - "Redshift is for OLTP"

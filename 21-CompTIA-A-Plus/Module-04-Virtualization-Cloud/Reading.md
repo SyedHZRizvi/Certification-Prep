@@ -55,6 +55,7 @@ A **hypervisor** is software that creates and runs **virtual machines (VMs)** �
 ### Sizing a VM
 
 When you create a VM, you allocate:
+
 - **vCPUs** — usually map 1:1 to host cores. Overcommit (more vCPUs than cores) is common but causes context-switch overhead.
 - **vRAM** — strict allocation in most hypervisors. Overcommit possible with ballooning/swap.
 - **vDisk** — virtual hard disk file on host storage. Can be **thick** (full size pre-allocated) or **thin** (grows as data is written).
@@ -249,6 +250,7 @@ In cloud, **security is shared** between provider and customer. The split depend
 ## ✅ Module 4 Summary
 
 You now know:
+
 - 🏗️ Type 1 vs Type 2 hypervisors and when to use each
 - 📦 Containers vs VMs — what they share, what they don't
 - ☁️ NIST cloud: 5 characteristics, 3 service models (IaaS/PaaS/SaaS), 4 deployment models

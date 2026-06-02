@@ -171,6 +171,7 @@ ls -i file                     # inode number
 ## 🏆 Exam Power Phrases
 
 When you see these in answers, they're often **right**:
+
 - ✅ "Check `df -i` for inode exhaustion"
 - ✅ "`getfacl` reveals the extended ACL"
 - ✅ "Add `nofail` to optional fstab entries"
@@ -178,6 +179,7 @@ When you see these in answers, they're often **right**:
 - ✅ "Find -type f and -type d separately for chmod"
 
 When you see these, they're often **wrong**:
+
 - ❌ "`chmod -R 777` fixes any permission issue"
 - ❌ "Edit `/boot/grub.cfg` directly to add a mount"
 - ❌ "`fsck` a mounted filesystem"
@@ -202,6 +204,7 @@ When you see these, they're often **wrong**:
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. Convert `rwxr-x---` to octal. ___
 2. Which directory does FHS say a third-party Oracle install goes? ___
 3. SGID on a directory does what? ___

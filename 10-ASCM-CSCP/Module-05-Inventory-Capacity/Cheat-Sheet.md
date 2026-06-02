@@ -148,6 +148,7 @@ EOQ: D=12,000 · S=$40 · H=$6
 ## ✏️ Quick Self-Check
 
 Cover and recite:
+
 1. EOQ formula + assumptions ___
 2. SS formula + Z for 95% ___
 3. Cash-to-cash ___

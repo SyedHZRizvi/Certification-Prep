@@ -56,6 +56,7 @@
 | **Open book? Sort of.** | Keep the Scrum Guide PDF open in another tab. But don't waste time looking up basics — you should know them. |
 
 ### PSM I Trap Words to Watch For:
+
 - ❌ "Project Manager" → Scrum has no PM. Trick answer.
 - ❌ "Tech lead", "Scrum Master assigns work" → Scrum Master never assigns.
 - ❌ "Sprint extended" → Sprints are NEVER extended. Ever.
@@ -76,6 +77,7 @@
 | **Read the LAST line first sometimes** | The actual question is in the last sentence. The rest is fluff. |
 
 ### PMP Mindset Cheat Sheet:
+
 - 🤝 **Collaboration > Authority**
 - 💬 **Communication is always part of the answer**
 - 👥 **The team should be empowered, not managed**
@@ -85,6 +87,7 @@
 - 🎯 **Customer/stakeholder value first**
 
 ### PMP Trap Words:
+
 - ❌ "Tell the team to..." → Coaching > telling. Trick answer.
 - ❌ "Submit a change request first" → Only after you've done the analysis.
 - ❌ "Assign work to..." → In agile contexts, the team self-assigns.
@@ -152,11 +155,13 @@ Different certs run on different delivery channels. Know yours **before exam day
 ## ⏱️ Time Management Strategy
 
 ### PSM I (60 min, 80 q):
+
 - **First pass (40 min):** Answer everything you know. Flag the rest.
 - **Second pass (15 min):** Tackle flagged questions.
 - **Final 5 min:** Review flagged ones. Trust your first instinct unless you have *evidence* to change.
 
 ### PMP (230 min, 180 q):
+
 - **Phase 1 (60 q in 70 min):** Don't agonize. Flag if >2 min.
 - **BREAK (10 min):** Walk. Stretch. Don't replay questions in your head.
 - **Phase 2 (60 q in 70 min):** Same pace.
@@ -169,6 +174,7 @@ Different certs run on different delivery channels. Know yours **before exam day
 ## 🧠 Mental Tactics
 
 ### When You Hit a Question You Don't Know:
+
 1. **Don't panic.** Maybe 1 in 10 questions is genuinely hard.
 2. **Eliminate** what you know is wrong.
 3. **Default to the principle:** What would a servant leader do? What does the Scrum Guide say?
@@ -176,11 +182,13 @@ Different certs run on different delivery channels. Know yours **before exam day
 5. **Forget it.** Don't carry baggage to the next question.
 
 ### When You Hit a Stretch of Hard Questions:
+
 - It's likely your **brain is fatigued**, not that you don't know the material.
 - Take a 30-second mental break (eyes closed, deep breaths).
 - Remember: PMP exam is *adaptive-ish*. Hard questions can mean you're doing well.
 
 ### When You Want to Change an Answer:
+
 - Research shows: **changing usually hurts**.
 - Only change if you've genuinely realized something new (e.g., spotted a key word you missed).
 - **Don't** change because of self-doubt. Trust your prep.
@@ -202,6 +210,7 @@ Breathe. Trust. Execute. 🎯
 ## 📞 Right After The Exam
 
 ### If You Pass:
+
 - 🎉 Celebrate. You earned it.
 - 📝 Update LinkedIn within 24 hours (recruiter searches spike).
 - 🎓 **Maintenance varies by cert:**
@@ -225,6 +234,7 @@ Breathe. Trust. Execute. 🎯
 - 📅 **Set a calendar reminder** for renewal a year before expiry.
 
 ### If You Don't Pass:
+
 - 💭 Take 24 hours OFF. Don't think about it.
 - 📊 Then: read your score report carefully. It tells you exactly which domains to focus on.
 - 🔁 Plan a 3-4 week targeted study sprint on weak areas.

@@ -335,6 +335,7 @@ Estimated global economic impact: **$5.4 billion** (Parametrix Insurance estimat
 ## ✅ Module 9 Summary
 
 You now know:
+
 - 💥 Windows boot failure symptoms and the **bootrec → sfc → dism → chkdsk** repair cascade
 - 💙 BSOD stop codes and how to read the faulting module
 - 🐌 Performance triage with Task Manager, Resource Monitor, Reliability Monitor

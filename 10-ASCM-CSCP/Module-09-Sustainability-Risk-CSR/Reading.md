@@ -160,6 +160,7 @@ A table of identified risks with: description, likelihood, impact, owner, treatm
 
 ### FMEA (Failure Mode & Effects Analysis)
 Systematic process where each potential failure mode is scored on:
+
 - **Severity (S)** 1–10
 - **Occurrence (O)** 1–10
 - **Detection (D)** 1–10 (1 = easy to detect, 10 = hard)
@@ -229,6 +230,7 @@ ESG ratings come from MSCI, Sustainalytics, ISS, S&P Global. Bad ESG ratings inc
 ## 🏛️ UN Sustainable Development Goals (SDGs)
 
 17 global goals adopted by UN in 2015 with 2030 targets. Supply chain especially relevant:
+
 - SDG 8: Decent work and economic growth
 - SDG 9: Industry, innovation, infrastructure
 - SDG 12: Responsible consumption and production
@@ -358,6 +360,7 @@ A resilient supply chain absorbs shocks AND adapts. Levers:
 ## ✅ Module 9 Summary
 
 You now know:
+
 - 🌿 Triple bottom line and the 3 P's
 - ♻️ Circular economy and the 9 R hierarchy
 - 📐 Sustainability standards (ISO 14001, GRI, SASB, TCFD, CDP, SBTi)

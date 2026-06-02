@@ -22,6 +22,7 @@ That's why Scrum has a **Definition of Done**.
 ### Why It Exists
 
 Imagine three developers on a team. Without a shared DoD:
+
 - Dev A says "Done = code compiles"
 - Dev B says "Done = unit tests pass"
 - Dev C says "Done = deployed to staging"
@@ -33,6 +34,7 @@ The DoD makes it explicit. Everyone knows what "Done" means. **Period.**
 ### What's In a Good DoD?
 
 A DoD is just a **checklist**. Could include:
+
 - 📝 Code reviewed
 - ✅ Unit tests pass (e.g., >85% coverage)
 - 🧪 Acceptance tests pass
@@ -55,6 +57,7 @@ The Scrum Guide doesn't prescribe what's in your DoD. **The team (or org) decide
 ### Can It Evolve?
 
 **Yes.** A team often *adds* to the DoD over time as they get better:
+
 - Sprint 1: Code reviewed + tests pass
 - Sprint 5: + Performance tested
 - Sprint 10: + Security scanned
@@ -67,6 +70,7 @@ The Scrum Guide doesn't prescribe what's in your DoD. **The team (or org) decide
 ## 🎯 Definition of Ready (DoR): NOT in Scrum Guide!
 
 You'll hear about "Definition of Ready" — a list of criteria a PBI must meet *before* a Sprint pulls it in. Things like:
+
 - Has acceptance criteria
 - Estimated
 - Small enough to fit in a Sprint
@@ -82,6 +86,7 @@ You'll hear about "Definition of Ready" — a list of criteria a PBI must meet *
 ## 🔢 Estimation: The Scrum Guide Is SILENT
 
 The Scrum Guide says nothing about HOW to estimate. Just that:
+
 - Developers are responsible for estimates
 - Items at the top of the backlog should be small enough to "fit" in a Sprint
 
@@ -97,16 +102,19 @@ Why relative?
 - Different developers work at different paces — story points avoid that
 
 #### Common Scales:
+
 - **Fibonacci-like:** 1, 2, 3, 5, 8, 13, 20, 40, 100
 - Why this scale? Because **uncertainty grows non-linearly**. The bigger the item, the less certain.
 
 #### How To Estimate:
+
 - Compare to a known reference item: "If updating the login page = 3 points, this new feature feels like... 8."
 - Discuss until team agrees (more on Planning Poker below)
 
 ### Technique 2: Planning Poker
 
 A team activity:
+
 1. PO reads a PBI
 2. Each developer privately picks a card with their estimate
 3. All flip cards simultaneously
@@ -114,6 +122,7 @@ A team activity:
 5. Re-vote until consensus
 
 Why it works:
+
 - Avoids anchoring on first speaker
 - Surfaces hidden assumptions
 - Builds shared understanding
@@ -127,6 +136,7 @@ Casual estimates: XS, S, M, L, XL, XXL.
 ### Technique 4: Affinity Estimation
 
 For LARGE backlogs:
+
 1. Put all PBIs on a wall
 2. Team groups them by "feels similar in size"
 3. Apply story points to each group
@@ -146,16 +156,19 @@ Counter-cultural: just count completed PBIs.
 **Velocity** = average story points completed per Sprint.
 
 Example:
+
 - Sprint 1: 23 points
 - Sprint 2: 19 points
 - Sprint 3: 25 points
 - Velocity ≈ 22
 
 ### Uses:
+
 - 📅 **Forecasting:** "If our velocity is 22, and we have 110 points left, ~5 sprints to go."
 - 🔄 **Adjusting load:** "We averaged 22, but we planned 35 — maybe too ambitious."
 
 ### Misuses (DANGER!):
+
 - ❌ **Comparing teams** ("Team A has higher velocity, so they're better")
    → Bad. Story points are relative *to that team*.
 - ❌ **Targeting velocity** ("We need 30 points per sprint!")
@@ -199,6 +212,7 @@ Shows work completed + total scope.
 - Gap = remaining
 
 ### Important:
+
 - Both are **NOT required by Scrum**
 - They're transparency tools
 - The team chooses which to use (or neither)
@@ -224,6 +238,7 @@ Example: *"As a returning customer, I want to save my shipping address so that c
 
 ### Acceptance Criteria
 Specific conditions for a story to be acceptable:
+
 - "Given... When... Then..." (Gherkin format)
 - Or just bullet checklist
 
@@ -298,6 +313,7 @@ A PBI is **Done** when it meets the DoD. The Increment is **releasable** anytime
 ## ✅ Module 6 Summary
 
 You now know:
+
 - ✅ DoD: created by Devs/org, can evolve, lowers = bad
 - ❌ DoR: NOT in Scrum Guide
 - 📊 Story points: relative, not time

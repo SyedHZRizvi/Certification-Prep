@@ -27,6 +27,7 @@ Each of these is a real document a working Scrum Master would produce. You will 
 ### 1. Team-Health Assessment (one document, ~3 pages)
 
 A diagnosis of where each of the 7 teams stands. For each team, score:
+
 - **Adherence to Scrum framework** (0–5 scale): Are they holding all 5 events at proper timeboxes? Do they have a clear Product Goal + Sprint Goals + DoD? Are they self-managing?
 - **Empiricism in practice** (0–5): Are Transparency, Inspection, Adaptation visible? Or is it ceremony Scrum?
 - **The 5 Values** (0–5 for each of F-CCRO): Where does each team show or lack the Focus, Commitment, Courage, Respect, Openness pattern?
@@ -52,6 +53,7 @@ The "Type" column maps to Module 7's three levels: within team / between team an
 ### 3. Retrospective-Format Experimentation Plan (5 Sprints)
 
 The retros are stale. Design a 5-Sprint experiment that tests different formats and measures whether action items convert into behavior change. For each Sprint:
+
 - Format: ("4Ls" / "Sailboat" / "Start-Stop-Continue" / "5 Whys deep-dive" / "Liberating Structures 1-2-4-All" / etc.)
 - Hypothesis: What you expect each format to reveal that others won't
 - Metric: How you'll know if it worked (action-item completion rate? team energy? specific impediment resolved?)
@@ -64,6 +66,7 @@ This is the empirical method applied to your own practice. Don't pick formats ra
 ### 4. Definition-of-Done Workshop Plan (one workshop, ~90 minutes, for all 7 teams aligned)
 
 Currently, each team has its own DoD, and they're inconsistent. You suspect this is a major source of integration friction (teams ship "Done" work that others can't build on). Design a 90-minute workshop that:
+
 - Brings representatives from all 7 teams together
 - Surfaces the current per-team DoDs
 - Negotiates a shared MINIMUM DoD that *every* team agrees applies to *every* PBI
@@ -77,6 +80,7 @@ Include: agenda, facilitation patterns you'll use, what success looks like, how 
 ### 5. Scaled-Scrum Recommendation Memo (~2 pages, to the Engineering VP)
 
 After 60 days, you have a view: should Helix's 7 teams stay as independent teams, adopt Nexus, adopt LeSS, adopt SAFe, or — possibly — de-scale (combine some teams back into one)? Write a 2-page memo to the Engineering VP that:
+
 - Names the recommendation up front (one sentence, in bold, on page 1).
 - Justifies it with *evidence from your assessment* (which impediments would scaling address? which would it not?).
 - Acknowledges the alternative (the most-likely counter-proposal — usually SAFe, because it's the loudest) and explains why your recommendation wins for *this* org.
@@ -90,11 +94,13 @@ The Bosch case (Module 8) is your reference for scaling *and* de-scaling: scalin
 ### 6. Board-Readable Metrics Report (one page, for the CTO's board meeting)
 
 The CTO has lost confidence in Agile. Your final deliverable is a one-page metrics report she can hand to the board. Choose metrics that:
+
 - Are *team-level*, not individual (per Module 6's velocity warnings)
 - Connect to *value delivered*, not activity volume
 - Are honest — if things have not improved, say so
 
 Suggested metrics:
+
 - **Cycle time** (idea → live) per team, with trend
 - **Throughput** (items delivered per Sprint), with trend
 - **Sprint Goal achievement rate** (% of Sprints where the goal was met)
@@ -182,6 +188,7 @@ The Recommended-Readings appendix ([Recommended-Readings.md](./Recommended-Readi
 ## 🏆 What completing this capstone tells you
 
 If you can produce all 6 deliverables at "Acceptable" or above:
+
 - You can *diagnose* a struggling Scrum implementation.
 - You can *intervene* with appropriate scope-aware actions.
 - You can *measure* whether your interventions worked.

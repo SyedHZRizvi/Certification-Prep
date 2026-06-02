@@ -254,6 +254,7 @@ A PBQ might present an event log and ask you to drag controls into the order the
 **Outcome.** The attacker exfiltrated **HAR files** (HTTP Archive recordings) that customers had uploaded to Okta's support portal for troubleshooting. HAR files routinely contain live session tokens. Okta's *customers* — including **1Password (20 Sept), BeyondTrust (2 Oct), Cloudflare (18 Oct)** — detected unusual access using those tokens and reported it back to Okta. Okta initially under-counted the impact, telling investors only ~1% of customers were affected. On **3 November 2023** Okta disclosed that the attacker had downloaded a customer-support report containing **all 18,400 active Okta customers' names and email addresses**. Okta's stock fell 11% on disclosure day; by year-end the breach had cost Okta an estimated **$1.4B in market cap**. The CEO later called this the company's most significant security incident.
 
 **Lesson for the exam / for practitioners.** Every Sec+ IAM concept appears here:
+
 - **Service-account hygiene.** The compromised credential was a non-human service account. Best practice (Module 3 PAM section): service accounts should be *non-interactive*, vaulted, with rotation and behavioral monitoring. Okta's policy required it; the technical enforcement did not match the policy. Sec+ tests this exact gap.
 - **Session token theft = MFA bypass.** The HAR files contained valid session tokens. Once the attacker had the token, the customer's MFA was already complete; the attacker simply *replayed* the session. This is why **passkey / FIDO2 with token-binding** matters: a stolen token from another origin cannot be replayed. SMS- and TOTP-based MFA do not protect the session token after issuance.
 - **Conditional Access / Adaptive Identity.** The support engineer signed in from their normal device, normal location, normal time. Adaptive-Identity signals (geo, device posture, behavioral) would not have flagged this. The *attacker's* login from a residential VPN range — *would have* flagged. Conditional Access policies for service accounts (allow only from specified IPs / managed devices) would have blocked the attacker entirely.
@@ -336,6 +337,7 @@ A PBQ might present an event log and ask you to drag controls into the order the
 ## ✅ Module 3 Summary
 
 You now know:
+
 - 🔐 The **5 authentication factors** and what makes MFA truly MFA
 - 📱 Modern MFA implementations — TOTP, push, FIDO2, passkeys — and which are phishing-resistant
 - 🤝 The federation protocol soup: **SAML, OAuth, OIDC, LDAP, Kerberos, RADIUS, TACACS+** and when each is used

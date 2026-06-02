@@ -91,6 +91,7 @@ Tags: `<voice>`, `<prosody>` (rate/pitch/volume), `<break>`, `<say-as>` (date/ti
 ## 🏆 Exam Power Phrases
 
 **Usually right**:
+
 - ✅ "Use Conversational Language Understanding (CLU)"
 - ✅ "Use Question Answering, not QnA Maker"
 - ✅ "Use Custom Translator with a category ID"
@@ -98,6 +99,7 @@ Tags: `<voice>`, `<prosody>` (rate/pitch/volume), `<break>`, `<say-as>` (date/ti
 - ✅ "Orchestration workflow combines CLU + QA"
 
 **Usually wrong**:
+
 - ❌ "Use LUIS" / "Use QnA Maker"
 - ❌ "Real-time STT for 5-hour audio"
 - ❌ "Translator without the region header"

@@ -465,6 +465,7 @@ D. The 21M supply cap
 ## 🔍 Review Process
 
 For EACH wrong answer:
+
 1. Identify which module covered it (white-paper origins = M1; crypto = M2; network = M3; wallets = M4).
 2. Re-read that module's Reading.md section.
 3. Add a flashcard for the concept.

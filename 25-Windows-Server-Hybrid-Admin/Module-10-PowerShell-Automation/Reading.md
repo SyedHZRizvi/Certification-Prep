@@ -17,6 +17,7 @@
 It's Monday morning at Globex. The IT director has a problem: every new server provisioning takes **30 manual clicks** in the portal + ~12 minutes of admin time. Globex provisions ~40 servers per week. That's 8 hours/week of click-work — half an FTE.
 
 The fix is a 50-line PowerShell script that:
+
 1. Reads tickets from the ITSM system (Azure Function trigger)
 2. Provisions the Azure VM via `New-AzVM`
 3. Onboards to Arc via the connect script
@@ -254,6 +255,7 @@ foreach ($vm in $vms) {
 ### Hybrid Runbook Worker
 
 Lets you run a runbook *on* an on-prem or Arc machine instead of in Azure's sandbox. Useful when:
+
 - Touching on-prem AD without VPN
 - Accessing on-prem SQL or file shares
 - Bypassing Azure egress fees
@@ -358,6 +360,7 @@ New-AzVM -ResourceGroupName "rg-test" -Name "TestVM01" -Image "Win2022Datacenter
 **Situation.** GitHub, owned by Microsoft since 2018, runs its global infrastructure on ~50,000 servers across multiple data centers and clouds. Every day, GitHub deploys ~100 production changes to that infrastructure. By 2022, GitHub had moved entirely to an **infrastructure-as-code** model: every server's config, every firewall rule, every CDN setting, every DNS record is defined in version-controlled Terraform / DSC / Ansible files, peer-reviewed via PRs, and applied via automated runners.
 
 **Decision.** GitHub's IaC philosophy (publicly documented in *GitHub's Engineering Blog: Production-quality infrastructure with Terraform*, July 2022):
+
 1. **Everything is code.** A server config that's not in git isn't a config — it's a manual artifact and will drift.
 2. **Drift detection runs every 10 minutes.** Any DSC / Terraform `plan` mismatch creates a Slack alert and an automatic PR.
 3. **Approval gates for sensitive changes.** Production AD/Tier-0 changes require 2-of-3 senior approvers + business-hours-only window.
@@ -365,12 +368,14 @@ New-AzVM -ResourceGroupName "rg-test" -Name "TestVM01" -Image "Win2022Datacenter
 5. **JEA-style scope at the platform level.** Engineers have RBAC roles that grant only the resource types they manage; no global admin.
 
 **Outcome.** GitHub's published metrics (Operations Blog, 2023):
+
 - Mean time to deploy infrastructure change: **6 minutes** (PR merge → applied)
 - Mean time to detect drift: **8 minutes** (10-min cycle ± jitter)
 - Outage caused by "I made an emergency manual change": **zero in 18 months** (each emergency goes through the same PR-and-apply pipeline; the runner is the only path to change)
 - Audit-prep time for SOC 2 / ISO 27001: **dropped from ~4 weeks to ~2 days**
 
 **Lesson for the exam / for practitioners.** AZ-801 won't ask about GitHub's internals but tests:
+
 - *DSC at scale* — Azure Machine Configuration / DSC v3 / guest configuration is GitHub's pattern made small
 - *JEA / RBAC for least privilege* — same philosophy as GitHub's resource-type RBAC
 - *Automation runbooks for routine ops* — startup / shutdown scripts, rotating certs, etc.
@@ -429,6 +434,7 @@ The exam will phrase: *"How do you ensure all 200 production Windows Servers hav
 ## ✅ Module 10 Summary
 
 You now know:
+
 - 🐚 PowerShell 5.1 vs 7 — coexist; pick 7 for cross-platform / new development
 - 🌐 PowerShell Remoting via WSMan 5985/5986 (or SSH on PS 7)
 - 🚧 JEA — role-capability-based constrained endpoints with virtual accounts

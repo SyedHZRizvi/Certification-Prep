@@ -150,6 +150,7 @@ Clarify (SHAP) + Model Monitor (drift) + Pipelines (nightly retrain)
 ## 🏆 Exam Power Phrases
 
 ✅ Usually right:
+
 - "Use a managed service to reduce operational overhead"
 - "Use Multi-Model Endpoints for many sparse-traffic models"
 - "Use Spot for fault-tolerant training jobs"
@@ -158,6 +159,7 @@ Clarify (SHAP) + Model Monitor (drift) + Pipelines (nightly retrain)
 - "Use SageMaker Pipelines for repeatable ML workflows"
 
 ❌ Usually wrong:
+
 - "Train a model from scratch when a managed service exists"
 - "Use accuracy on imbalanced data"
 - "Always use Real-Time endpoints"
@@ -183,6 +185,7 @@ Clarify (SHAP) + Model Monitor (drift) + Pipelines (nightly retrain)
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. Sketch the 7-layer AWS ML stack from L1 to L7. ___
 2. List the 7 steps of the ML lifecycle. ___
 3. Symptoms of overfitting vs underfitting? ___

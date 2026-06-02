@@ -276,6 +276,7 @@ Backup-GPO -All -Path \\fileshare\GPOBackup\$(Get-Date -Format yyyy-MM-dd)
 ## 🏛️ Organizational Units (OUs) & Delegation
 
 OUs do two things:
+
 1. **GPO targeting** — link policies to a specific OU
 2. **Delegation** — give a team admin rights over *just* their OU without making them Domain Admins
 
@@ -309,6 +310,7 @@ Enable-ADOptionalFeature -Identity "Recycle Bin Feature" `
 ```
 
 Requirements:
+
 - Forest functional level **Windows Server 2008 R2 or higher**
 - Membership in **Enterprise Admins** to enable
 
@@ -462,6 +464,7 @@ Add-ADFineGrainedPasswordPolicySubject -Identity "Admin-PSO" `
 **Outcome.** Of the ~9 federal agencies confirmed compromised, three did the krbtgt double-rotation only (option 1) and re-detected adversary activity within months. Two did the full Tier-0 rebuild and recovered cleanly. CISA and the NSA later published joint guidance recommending **option 2 minimum** for any confirmed Sunburst victim, and adding mandatory deployment of: (a) **Microsoft LAPS** for local admin password rotation, (b) **Protected Users group** for human admins, (c) **AdminSDHolder ACL hardening**, and (d) **PAW** (Privileged Access Workstations) on a separate physical or virtual network.
 
 **Lesson for the exam / for practitioners.** AZ-800 won't test you on Sunburst by name, but it will test the building blocks of the response:
+
 - *krbtgt rotation cadence* → **180 days max** is Microsoft's published recommendation (twice-rotated annually).
 - *Protected Users group* → prevents NTLM, DES, RC4 Kerberos, and unconstrained delegation for members; cannot be cached on RODCs.
 - *AdminSDHolder* → the container whose ACL is hourly applied to all "protected groups" (Domain Admins, Schema Admins, etc.) by the **SDProp** task; an unexpected ACE here is one of the highest-value persistence techniques.
@@ -521,6 +524,7 @@ The exam will phrase this as scenario: "A security team detects unusual Kerberos
 ## ✅ Module 1 Summary
 
 You now know:
+
 - 🌳 The forest → tree → domain → OU → object hierarchy and what each boundary means
 - 🤝 Trust types (parent–child, tree-root, external, forest, realm, shortcut), directions, and transitivity
 - 🏢 All 5 FSMO roles, their scope, their default placement, and seize-vs-transfer

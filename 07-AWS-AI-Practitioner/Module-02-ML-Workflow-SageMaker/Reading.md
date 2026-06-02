@@ -262,6 +262,7 @@ This is a *very* common trap on the AIF-C01.
 **Situation.** Pinterest's entire business is recommendation: serving the right pin to the right user out of a catalog of ~5 billion pins, ~500 million monthly active users (2024 IR filings), and ~5 billion impressions per day. Pre-2020, Pinterest's ML platform was a sprawl of bespoke Python and Spark pipelines. Each team trained its own models on its own infrastructure; reproducibility was poor, drift detection ad-hoc, and onboarding new ML engineers took weeks. Around 50+ production models powered Home Feed, related-pin, search, shopping, and ads — and the team forecasted the next two years would need that to triple. The CTO's mandate (per the 2021 Pinterest Engineering blog series): "consolidate to one ML platform; reduce time-to-production from weeks to days."
 
 **Decision.** Starting in 2020 and accelerating through 2022, Pinterest standardized on **Amazon SageMaker** as the unified ML platform, while continuing to run inference at the edge on its own Kubernetes infrastructure. The architecture, as described in AWS and Pinterest joint blog posts (2021–2023) and Pinterest's engineering channel:
+
 - **SageMaker Training Jobs** for distributed training across hundreds of GPU instances, using Spot pricing for ~70% cost reduction on non-time-sensitive jobs
 - **SageMaker Processing Jobs** for feature engineering at petabyte scale
 - **SageMaker Feature Store** (rolled out in 2022) as the central feature catalog — solving the train/serve skew that had bitten the team multiple times
@@ -270,12 +271,14 @@ This is a *very* common trap on the AIF-C01.
 - Custom inference *outside* SageMaker (Pinterest's own systems) for latency reasons — a deliberate hybrid choice
 
 **Outcome.** Per Pinterest engineering blog (2022) and the AWS re:Invent 2022 talk "How Pinterest scaled ML on SageMaker":
+
 - Time-to-production for a new model dropped from **3+ weeks to 3–5 days** for typical recommendation experiments
 - The number of production ML models grew from ~50 (2020) to **300+** (2023) without proportionally increasing platform headcount
 - Training-compute costs fell **~60%** through Spot-instance adoption and right-sized instance recommendations
 - A 2023 outage post-mortem credited SageMaker Model Registry's approval workflow with catching a regression that would have shipped if the team's older "git-push-and-pray" pipeline had still been in use
 
 **Lesson for the exam / for practitioners.** Pinterest is the canonical "managed-platform-beats-bespoke" reference for SageMaker. Three AIF-C01 talking points:
+
 1. **The right answer is rarely "build it yourself."** Pinterest is famously engineering-rich. Even *they* chose to use the managed platform for the undifferentiated heavy lifting (training infra, experiment tracking, model registry) and only customized where they had real edge cases (inference latency). The exam pattern: when a scenario describes "we want full control of every detail," that's often wrong — managed services usually win on TCO. When a scenario describes "we need millisecond inference at extreme scale," that's the rare case where roll-your-own may be justified.
 2. **The Feature Store is the most-underused SageMaker feature.** Pinterest's train/serve skew bugs (where a feature computed offline at training time differed subtly from the same feature computed online at inference time) were among the most-painful production incidents. Feature Store's online + offline architecture (single feature definition, two access patterns) is the cure. The exam often asks "what prevents train/serve skew?" — the answer is **Feature Store**.
 3. **MLOps maturity = Model Registry + Pipelines + Model Monitor.** The "MLOps" buzzword on the exam means *these three together*: versioned models with approval workflow (Registry), repeatable CI/CD-style execution (Pipelines), and drift detection in production (Model Monitor). Pinterest's outcome — 300 models, 5-day time-to-production, 60% cost reduction — is the kind of payoff the exam expects you to associate with this combo.
@@ -290,6 +293,7 @@ This is a *very* common trap on the AIF-C01.
 ## ✅ Module 2 Summary
 
 You now know:
+
 - 🔁 The 7-stage ML lifecycle and which SageMaker tool fits each stage
 - 🏛️ The full SageMaker menu — Studio, Data Wrangler, Feature Store, Ground Truth, Training Jobs, Autopilot, Canvas, JumpStart, Pipelines, Model Registry, Endpoints, Model Monitor, Clarify
 - 🚪 The four inference endpoint modes (real-time / serverless / async / batch)

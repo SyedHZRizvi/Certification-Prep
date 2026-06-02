@@ -154,6 +154,7 @@ A *model gateway* is a layer between your application code and any LLM provider,
 - Auth / API key rotation
 
 Tools:
+
 - **LiteLLM** — open-source; supports 100+ providers; drop-in OpenAI API
 - **Portkey** — gateway + observability; hosted + OSS
 - **Helicone** — observability-first; lighter gateway features
@@ -184,6 +185,7 @@ You cannot debug what you cannot trace. Production LLM apps require:
 A *trace* records: the user request, the prompt template, the rendered prompt, retrieved chunks, model name + version, parameters (temperature, max_tokens), generated output, tool calls + results, latency per step, token counts, cost, errors. Each *step* of an LCEL chain or LangGraph node becomes a *span*.
 
 Tools:
+
 - **LangSmith** — LangChain's first-party. Best LangChain/LangGraph integration. Free hobbyist; paid for teams.
 - **Langfuse** — Open source; self-hostable; growing fast.
 - **Phoenix (Arize)** — Open source; tight RAG integration.
@@ -194,6 +196,7 @@ Tools:
 ### Metrics
 
 Production dashboards should track:
+
 - **Latency** — p50, p95, p99, time-to-first-token, time-to-last-token, total
 - **Throughput** — RPS, tokens/sec
 - **Cost** — $/request, $/user/day, by model, by tenant
@@ -269,6 +272,7 @@ Latency = (time to first token) + (token generation time × tokens generated) + 
 ### First-token latency
 
 Dominated by: model load + KV cache build for the prompt. Reduce by:
+
 - Smaller model
 - Prompt caching (reuse KV cache)
 - Lower batch contention (priority lanes for latency-sensitive traffic)
@@ -278,6 +282,7 @@ Dominated by: model load + KV cache build for the prompt. Reduce by:
 ### Token generation rate
 
 Dominated by: model size, decode-step compute, batch fill. Reduce by:
+
 - Smaller model
 - Speculative decoding
 - Quantization (W4A16, INT8, FP8)
@@ -290,6 +295,7 @@ ALWAYS stream the output to the user. Even when total latency is 3 seconds, stre
 ### Tail latency
 
 p99 is what your power users feel. Tail spikes come from:
+
 - Cold starts (especially in serverless)
 - Cache misses
 - Long inputs that didn't fit in the optimal batch
@@ -302,6 +308,7 @@ Track p50, p95, p99 separately. The average lies.
 ## 🌍 Geographic + Multi-Region
 
 For global users:
+
 - **Regional inference endpoints** (Anthropic and OpenAI both have multi-region; Azure / Bedrock especially)
 - **Cache replication** to all regions
 - **Provider failover** when one region degrades
@@ -332,8 +339,10 @@ The biggest hidden cost: cross-region data transfer between your vector DB and t
 Goal: take the RAG from Modules 3+5+7+8 and deploy it as a production service.
 
 Steps:
+
 1. **Self-host Llama-3.1-8B-Instruct with vLLM** on a RunPod / Modal / local GPU
 2. **FastAPI gateway** that:
+
    - Auth (API key)
    - Rate limit (per-tenant via Redis)
    - Route to vLLM (cheap path) or Anthropic Claude (premium path)
@@ -380,6 +389,7 @@ Deliverable: a real production-shaped service. You will have hit OOMs, observed 
 ## ✅ Module 9 Summary
 
 You now know:
+
 - 🚦 Hosted vs self-hosted decision (and why hybrid wins)
 - ⚡ vLLM, TGI, TensorRT-LLM, NIM, llama.cpp/Ollama
 - 🚪 Model gateway pattern (LiteLLM, Portkey, custom)

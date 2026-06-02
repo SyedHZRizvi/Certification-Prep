@@ -70,6 +70,7 @@ You report to the **CEO** (not the CIO — an explicit governance decision the b
 ## What "submission" looks like
 
 A folder (or single Google-Doc-style file) containing the seven artifacts in the order listed above. Total expected length: **40-60 pages**. Format guidelines:
+
 - The gap assessment can be a spreadsheet exported to markdown (table per function).
 - The roadmap can be a markdown timeline + a budget table.
 - The IR playbook is markdown narrative + tables.

@@ -101,12 +101,14 @@ GOAL: ↑ T   ↓ I   ↓ OE
 ## 🏆 Exam Power Phrases
 
 When you see these, often **correct**:
+
 - ✅ "Identify the bottleneck first"
 - ✅ "Protect the constraint with a buffer"
 - ✅ "Throughput = sales − raw material cost"
 - ✅ "RCCP supports MPS; CRP supports MRP"
 
 When you see these, often **wrong**:
+
 - ❌ "100% utilization on every work center"
 - ❌ "Throughput = units produced"
 - ❌ "Saving time at non-bottleneck increases throughput"

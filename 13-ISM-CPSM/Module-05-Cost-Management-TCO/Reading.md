@@ -136,6 +136,7 @@ When labor is repetitive, **unit cost falls** as cumulative volume grows. Classi
 🎯 **Exam application:** When you place a large new order on a labor-intensive part, your unit cost should drop with cumulative volume. Build that into your negotiation.
 
 Learning curves DON'T apply well to:
+
 - Highly automated production
 - Materials-dominated products
 - One-off custom work
@@ -250,6 +251,7 @@ You'll see these in CPSM cost questions.
 By 2013-2014, Boeing began *insourcing* significant portions of the 787 work — buying Vought's fuselage operations in Charleston SC, taking back wing-design authority, and famously restructuring its relationship with Spirit AeroSystems. The 737 MAX program (developed 2011-2017) used a much less aggressive outsourcing model. Boeing's 2024 acquisition of Spirit AeroSystems (announced June 2024) — the company spun out from Boeing in 2005 — is the symbolic close of that outsourcing cycle.
 
 **Lesson for the exam / for practitioners.** This is the textbook **TCO failure**:
+
 - **Acquisition price was lower** — outsourced parts looked cheap on a per-unit basis.
 - **Operating costs exploded** — coordination, rework, certification delays, warranty.
 - **Disposal cost (long-term)** — Boeing's loss of in-house engineering capability took a decade to rebuild.
@@ -325,6 +327,7 @@ CPSM distinguishes these.
 ## ✅ Module 5 Summary
 
 You now know:
+
 - 💰 TCO and the 3 phases (acquisition / operating / disposal)
 - 🧮 Should-cost analysis structure
 - 🎯 Target costing approach

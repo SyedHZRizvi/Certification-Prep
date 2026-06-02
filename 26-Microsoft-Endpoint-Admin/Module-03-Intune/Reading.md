@@ -160,6 +160,7 @@ Intune assigns policies and apps to **Microsoft Entra ID groups** — never to i
 | **Microsoft 365 group** | Tied to a Team or SharePoint — can be assignment target |
 
 Special groups:
+
 - **All users** — pseudo-group covering every licensed user
 - **All devices** — pseudo-group covering every enrolled device
 
@@ -196,6 +197,7 @@ App protection policies are the way you protect corporate data inside apps witho
 | **Conditional launch** | Block sign-in if: offline grace period exceeded, jailbroken, OS too old |
 
 APP can target by:
+
 - App (Outlook, Teams, Word, etc.) — typically the standard Microsoft 365 set
 - Public apps (defined by Microsoft) vs custom apps (wrapped with SDK or App Wrapping Tool)
 
@@ -276,6 +278,7 @@ Configuration profiles are how Intune applies device settings. There are several
 ## ✅ Module 3 Summary
 
 You now know:
+
 - ☁️ The Intune architecture and its dependency on native MDM channels
 - 📱 MDM vs MAM — the core distinction underlying every Intune scenario
 - 🖥️ The 6 platforms Intune manages and the quirks of each (especially Linux)

@@ -50,6 +50,7 @@ Begin with [Module 1: PMP Foundations →](./Module-01-Foundations/Reading.md)
 ## 🎯 What You'll Learn
 
 By the end of this track, you'll be able to:
+
 - Lead and develop project teams (servant leadership)
 - Plan and execute hybrid/agile/predictive projects
 - Calculate Earned Value (CPI, SPI, EAC, etc.)

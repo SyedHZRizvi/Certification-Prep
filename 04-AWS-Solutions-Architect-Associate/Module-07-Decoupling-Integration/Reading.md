@@ -139,6 +139,7 @@ Two workflow types:
 | **Express** | Up to 5 minutes | $/invocation + duration | High-volume short workflows (event processing, IoT) |
 
 Patterns supported:
+
 - Sequence, branching, parallel, map (parallel iterate), wait, fail, succeed
 - Retries with exponential backoff
 - Human approval (Wait for Task Token / callback)
@@ -196,6 +197,7 @@ Managed **ActiveMQ** or **RabbitMQ**. For lift-and-shift of existing JMS/AMQP/MQ
 ## 🤖 API Gateway (touched but useful here)
 
 While not strictly "integration," API Gateway often pairs with these patterns. It can:
+
 - Front Lambda functions
 - Buffer requests with usage plans + throttling
 - Authenticate via IAM, Cognito, Lambda authorizers
@@ -287,6 +289,7 @@ IoT devices → Kinesis Data Streams → Lambda/Flink → DynamoDB + S3 via Fire
 ## ✅ Module 7 Summary
 
 You now know:
+
 - 📨 SQS Standard vs FIFO; visibility timeout, DLQ, long polling
 - 📡 SNS pub/sub with SQS fan-out pattern
 - 🚌 EventBridge for rules-based routing and SaaS integration
@@ -308,6 +311,7 @@ You now know:
 **Situation.** In May 2019 Slack — then ~10M daily active users on a heavily AWS-hosted stack — published a now-famous engineering retrospective on their blog (`slack.engineering`, post by Joshua Wills and team) titled *"Reducing Slack's Memory Footprint."* Buried in the post was an admission that during a 2018 architecture refactor, Slack had introduced a pattern where two microservices in *different AZs* exchanged messages over an internal SNS topic + SQS queue. Traffic worked perfectly. Latency was fine. Then the AWS bill arrived.
 
 **Decision.** The pattern looked like this:
+
 - Service A in `us-east-1a` published every user message event to an SNS topic (`message-events`)
 - Service B in `us-east-1b` had an SQS subscription, polled it, and processed each message
 - The SQS messages averaged ~3 KB; volume averaged ~100K msgs/sec sustained
@@ -317,6 +321,7 @@ You now know:
 The monthly bill for **just that one queue's data transfer** was approximately **$1.2M/year** (roughly $100K/month). Compute and storage costs combined were a fraction of that. The team had unknowingly created a "cross-AZ tax" by deploying producers and consumers in different AZs without considering data-transfer pricing.
 
 **Outcome.** Slack restructured the topology:
+
 1. **Co-located producers and consumers in the same AZ** where possible — using ASG instance distribution preferences
 2. **Switched the heavy-volume queue from SQS to in-process message passing** (where the same EC2 host had both producer and consumer)
 3. **Added VPC endpoints (PrivateLink)** for SNS and SQS — eliminated NAT data-processing charges on traffic that wasn't actually leaving the VPC
@@ -325,6 +330,7 @@ The monthly bill for **just that one queue's data transfer** was approximately *
 Estimated annual savings: ~$1.1M, with no functional change to the application.
 
 **Lesson for the exam / for practitioners.** Slack's lesson is the SAA's hidden curriculum: **decoupling has data-transfer cost**. Exam questions that emphasize "lowest cost" with "decoupled architecture" want you to think about:
+
 - **VPC endpoints (PrivateLink) for SNS / SQS / EventBridge** — eliminates the NAT data-processing cost (~$0.045/GB) for in-VPC traffic
 - **Same-AZ producer/consumer placement** when the queue's volume is high
 - **SQS batch operations** (`SendMessageBatch`, `ReceiveMessage` with `MaxNumberOfMessages=10`) — fewer API calls

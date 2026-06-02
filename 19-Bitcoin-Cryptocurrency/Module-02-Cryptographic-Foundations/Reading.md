@@ -160,6 +160,7 @@ A digital signature proves: *"the holder of private key `sk` saw and approved me
 Specified in **NIST FIPS 186-5** (latest 2023; original 186-1 from 1998). Bitcoin uses ECDSA over secp256k1.
 
 The signing procedure (simplified):
+
 1. Compute `z = HASH(m)`
 2. Generate a random nonce `k` ∈ [1, n−1]
 3. Compute the point `(x, y) = k × G` on the curve
@@ -280,6 +281,7 @@ Inside each block:
 **Outcome.** Heartbleed was not a flaw in TLS itself, in RSA, in AES, or in SHA-256. It was a flaw in **a specific implementation** of one TLS feature. Every cryptographic primitive remained sound. The lesson for Bitcoin was profound and indirect: *Bitcoin runs almost no TLS in its consensus path.* The Bitcoin Core node-to-node protocol is a plaintext binary protocol on port 8333; the wallet-to-node communication is HTTP/JSON or the more modern PSBT files. Bitcoin's cryptographic surface area is dramatically smaller than a typical TLS-using web service.
 
 **Lesson for the exam / for practitioners.** Two principles:
+
 1. **Cryptography is a defense-in-depth game.** Bitcoin's choice to use SHA-256 *and* RIPEMD-160 *and* secp256k1 (not a NIST curve) is the same logic that Heartbleed validated: don't put all your trust in one library, one curve, one algorithm.
 2. **The implementation matters as much as the algorithm.** Heartbleed was an OpenSSL bug; the algorithms were fine. The 2010 Sony PS3 ECDSA breach was an ECDSA-with-reused-nonce bug; the algorithm was fine. Modern Bitcoin wallets use deterministic-ECDSA (RFC 6979), hardware-isolated key storage (Coldcard, Trezor, Ledger), and audited libraries (libsecp256k1) because *the math being right isn't sufficient*. This is exactly the discipline tested by the CCSS standard (Module 9).
 

@@ -82,6 +82,7 @@ Direct integration with 200+ AWS APIs — no Lambda glue needed.
 ## 🏆 Exam Power Phrases
 
 ✅ Usually right:
+
 - "Use SQS to absorb load and decouple"
 - "Use SQS FIFO for ordered exactly-once"
 - "Use SNS to fan-out to many SQS queues"
@@ -92,6 +93,7 @@ Direct integration with 200+ AWS APIs — no Lambda glue needed.
 - "Use DLQ for failed messages"
 
 ❌ Usually wrong:
+
 - "SQS Standard guarantees order"
 - "Use SNS as a queue"
 - "Firehose can replay events"

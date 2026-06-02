@@ -22,6 +22,7 @@ The settlement reshaped marketing data sharing across the industry overnight. Th
 3. **Pixels are now legally risky.** Any time a third-party pixel fires on your site without prior consent, you're potentially in violation.
 
 Within 18 months of the Sephora settlement, every major US e-commerce brand had moved to:
+
 - **Server-side conversion APIs** (CAPI for Meta, Enhanced Conversions for Google).
 - **Consent Mode v2** signal-passing alongside every server-side event.
 - **First-party cookie-only architectures** with no third-party pixels firing client-side.
@@ -129,6 +130,7 @@ POST https://graph.facebook.com/v18.0/{pixel_id}/events
 ```
 
 Key fields:
+
 - **`em`, `ph`** = SHA-256 hashed email / phone. These are the "Enhanced Matching" parameters that let Meta find the user even when cookies are gone.
 - **`fbc`, `fbp`** = Meta's first-party cookies — sent so Meta can dedupe with Pixel events.
 - **`action_source`** = `website` / `app` / `physical_store` / `system_generated` — tells Meta the channel context.
@@ -136,6 +138,7 @@ Key fields:
 ### Deduplication
 
 When you run Pixel + CAPI in parallel (recommended), Meta dedupes by combining:
+
 - `event_id` (you provide a unique ID per event from both sides)
 - `event_name` + `event_time` + `external_id`/`em`
 
@@ -202,6 +205,7 @@ Designing this mapping correctly is critical — it's the *only* signal you'll g
 ### Apple's AdAttributionKit (2024+)
 
 Apple's newer framework, introduced at WWDC 2024, expands SKAdNetwork with:
+
 - Per-app campaign-source mapping (more granular).
 - Cross-app attribution for re-engagement campaigns.
 - Slightly higher fidelity in some scenarios.
@@ -285,6 +289,7 @@ HAVING COUNT(DISTINCT b.hashed_email) >= 50;
 ```
 
 The clean room enforces:
+
 - **Aggregation thresholds** (no result if fewer than N rows match).
 - **Allowed-query restrictions** (only pre-approved SQL is allowed).
 - **Differential privacy** (noise added to small-cell counts).
@@ -298,10 +303,12 @@ Neither Brand A nor Publisher B sees the other's raw user list — they only see
 The mathematical framework underpinning many privacy-first measurement guarantees. The intuition: add **noise** to query results so that no individual's presence or absence in the dataset can be detected.
 
 The **ε (epsilon)** parameter controls the privacy/utility trade-off:
+
 - Low ε (0.1–1) = strong privacy, lots of noise, less useful for marketing.
 - High ε (5–10) = weaker privacy, less noise, more useful.
 
 Used in:
+
 - Apple's SKAN postback timing randomization.
 - Google's Attribution Reporting API.
 - Most cross-publisher clean-room reporting.
@@ -332,6 +339,7 @@ You don't need to be a lawyer, but you must know which laws govern which behavio
 | **PDPA** | Singapore | GDPR-style |
 
 For marketing strategy, the four that drive 90% of decisions in 2026:
+
 1. **GDPR** — Europe.
 2. **CCPA / CPRA** — California (and de facto US national standard).
 3. **MHMDA** — health-adjacent businesses; brutal penalties.
@@ -412,6 +420,7 @@ For marketing strategy, the four that drive 90% of decisions in 2026:
 ## ✅ Module 9 Summary
 
 You now know:
+
 - ⚖️ The legal context: GDPR, CCPA/CPRA, MHMDA, COPPA, and the Sephora settlement that reshaped pixel use.
 - 🍪 Consent Mode v2 (Basic + Advanced) and how it modeled-recovers conversions.
 - 📞 Meta's CAPI server-side conversion endpoint, deduplication, and Enhanced Matching.

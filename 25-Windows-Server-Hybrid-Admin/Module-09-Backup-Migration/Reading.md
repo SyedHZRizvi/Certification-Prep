@@ -19,6 +19,7 @@ It's Saturday at 11:14 p.m. at Riverstone Health, a 290-bed regional hospital ne
 By 11:53 p.m., the IT team has confirmed: **every backup target has been encrypted too**. The attacker found and encrypted the on-prem Veeam repository. The decision: invoke the Azure DR runbook.
 
 At 11:55 p.m., they trigger:
+
 - **Azure Site Recovery** failover of the SQL VMs from on-prem Hyper-V to Azure (RPO ~30 sec)
 - **Azure Backup** restore of the Cerner file shares from the **immutable Recovery Services Vault** (the attacker couldn't touch the Azure-side backups because they didn't have Azure credentials)
 - Conditional Access policy locks out all on-prem accounts; new short-lived passwords issued via TAP
@@ -245,6 +246,7 @@ Recovery Plan: "Tier-1-DC-Failover"
 ## ☁️ Azure Migrate
 
 **Azure Migrate** is the centralized hub for assessment + migration of:
+
 - Servers (VMware, Hyper-V, physical) → Azure VMs
 - SQL Server → Azure SQL family
 - Web apps → App Service
@@ -317,6 +319,7 @@ Recovery Plan: "Tier-1-DC-Failover"
 **Situation.** On June 27, 2017, the **NotPetya** worm (initially disguised as ransomware but actually a wiper masquerading as ransomware, attributed by US/UK governments to Russia's GRU) spread through Ukrainian accounting software (M.E.Doc) and globally via SMB1 lateral movement (EternalBlue exploit) into 65+ countries. **Maersk** — the world's largest container shipping company, then handling ~20% of global container trade — was among the hardest hit (Maersk Annual Report 2017; Andy Greenberg, *Sandworm*, Doubleday 2019). At its peak, NotPetya encrypted **49,000 Maersk laptops, 4,000 servers, and 2,500 applications across 600 locations** within 7 hours. Operations stopped at all 76 of Maersk's port terminals. Bookings could not be made. Container ships at sea had no destination instructions. The estimated revenue loss: **$200–$300M**, with total recovery and lost-business cost reaching $300M+.
 
 **Decision.** Maersk's recovery was orchestrated by Andy Powell (then CISO) and the IT response team. Their published playbook (NotPetya: A Wake-Up Call for Globally Distributed Manufacturing and Logistics, Maersk public statement August 2017; updated CISO interviews 2018–2019):
+
 1. **A single surviving DC.** Of Maersk's ~150 domain controllers, exactly *one* — in Ghana, offline at the time due to a power outage — survived. That DC was physically flown to the IT war room in Maidenhead, UK, and became the seed of the entire AD rebuild.
 2. **No usable backups.** Maersk's backup strategy at the time was tape-based + on-network. The on-network backup repositories were also wiped. The tape backups had not been restoration-tested in months.
 3. **10 days to rebuild.** From June 27 to July 7, Maersk replaced 4,000 servers and 45,000 PCs from scratch — partly by airlifting equipment from Maersk facilities worldwide.
@@ -326,6 +329,7 @@ Recovery Plan: "Tier-1-DC-Failover"
 **Outcome.** Maersk recovered fully within 6 weeks but absorbed the $300M cost. Their CISO became a public-speaking advocate for **cloud-immutable backup** + **regular test failover** as non-negotiable controls. The case became a Harvard Business School case study (Class 9-619-058, *Maersk: Surviving NotPetya*, 2019) and is required reading at most major business schools' cybersecurity courses.
 
 **Lesson for the exam / for practitioners.** AZ-801 won't name Maersk but tests:
+
 - *Cloud-side immutable backup* → Recovery Services Vault with **soft delete** (default) + **immutable vault** (compliance-grade) → ransomware can't reach Azure-side data without Azure credentials
 - *GRS / cross-region restore* → survives a regional Azure outage *or* a primary on-prem disaster
 - *ASR with test failover* → quarterly minimum cadence; non-disruptive
@@ -383,6 +387,7 @@ The exam will phrase scenarios like: *"After a ransomware attack on the on-prem 
 ## ✅ Module 9 Summary
 
 You now know:
+
 - 🛡️ Azure Backup family — MARS, MABS, Azure VM, Azure Files, SQL, SAP HANA, Blobs
 - 🏛️ Recovery Services Vault — redundancy locked at first backup, soft delete + immutable vault
 - 🪪 MARS — 3 backups/day max, files/folders/system state only

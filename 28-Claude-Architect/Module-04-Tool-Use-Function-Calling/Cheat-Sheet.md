@@ -191,6 +191,7 @@ Mirror this pattern. Cursor, Cody, Aider all converged here.
 ## 🏆 Exam Power Phrases
 
 ✅ Often **right**:
+
 - "Claude requests tool calls; your code executes"
 - "Tool results in `user` role with `tool_result` content blocks"
 - "Parallel tool use is the default"
@@ -199,6 +200,7 @@ Mirror this pattern. Cursor, Cody, Aider all converged here.
 - "Tool outputs are untrusted text"
 
 ❌ Often **wrong**:
+
 - "Claude executes tools itself"
 - "Tool results go in `assistant` role"
 - "Parallel is opt-in"

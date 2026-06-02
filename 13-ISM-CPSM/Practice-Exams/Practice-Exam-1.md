@@ -521,12 +521,14 @@ D. Decline; explain finance/audit policy; escalate
 ## 🔍 Review Process
 
 For EACH wrong answer:
+
 1. Identify which module covered it (1–4)
 2. Re-read that module's Reading.md section
 3. Add a flashcard for the concept
 4. Re-attempt similar quiz questions
 
 The CPSM real exam tests **judgment**. If you missed scenario questions, slow down and rehearse the "right answer pattern":
+
 - Strategic suppliers → partnership + investment
 - Ethics → decline + disclose + escalate + document
 - Conflict of scope/cost → think TCO and risk allocation

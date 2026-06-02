@@ -61,6 +61,7 @@ This track includes two course-root resources that go beyond exam prep:
 ## 🎯 What You'll Learn
 
 By the end of this track, you'll be able to:
+
 - Write a campaign brief that earns approval on the first pass (creative + media + measurement)
 - Build a Google Ads Search campaign from scratch — keywords, RSAs, bidding, negatives
 - Architect a Performance Max campaign with proper asset groups and audience signals

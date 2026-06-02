@@ -132,6 +132,7 @@ result = task.evaluate(model=tuned_model)
 ## 🚦 Power Phrases
 
 ✅ Often **right**:
+
 - "Fine-tune shapes behavior, not knowledge"
 - "Knowledge updates → RAG; style/voice → SFT"
 - "LoRA = parameter-efficient; base weights frozen"
@@ -141,6 +142,7 @@ result = task.evaluate(model=tuned_model)
 - "RLHF for subjective quality; DPO is the simpler modern path"
 
 ❌ Often **wrong**:
+
 - "Fine-tune to add knowledge" (no — RAG)
 - "More epochs = better" (overfit)
 - "100 examples works for any task"

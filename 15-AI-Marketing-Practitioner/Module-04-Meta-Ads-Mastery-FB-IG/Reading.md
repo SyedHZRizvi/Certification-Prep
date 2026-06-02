@@ -436,6 +436,7 @@ The team admitted the biggest mindset shift was "stop falling in love with your 
 ## ✅ Module 4 Summary
 
 You now know:
+
 - 🏛️ Meta Business Manager hierarchy + the rule about NEVER using personal accounts
 - 📊 Why Pixel + CAPI are both required, and how to set up CAPI in 2026
 - 👥 Custom Audiences, Lookalikes, and Advantage+ Audience (and when to use each)

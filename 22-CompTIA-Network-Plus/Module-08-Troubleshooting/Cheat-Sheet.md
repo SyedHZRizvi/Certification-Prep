@@ -108,6 +108,7 @@
 ## 🏆 Exam Power Phrases
 
 Often **right**:
+
 - ✅ "Identify the problem first"
 - ✅ "Verify full system functionality before closing"
 - ✅ "Document findings + outcomes"
@@ -115,6 +116,7 @@ Often **right**:
 - ✅ "Console / out-of-band access"
 
 Often **wrong**:
+
 - ❌ "Implement first, then identify"
 - ❌ "Skip documentation"
 - ❌ "Reboot first"
@@ -150,6 +152,7 @@ Often **wrong**:
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. 7 methodology steps in order? ___
 2. What does 169.254.x.x mean? ___
 3. Tool to locate copper cable fault by distance? ___

@@ -570,6 +570,7 @@ D. CloudWatch Metrics
 1. Take the exam under realistic conditions: 180-minute timer, no notes, no breaks.
 2. Score yourself.
 3. For each wrong answer:
+
    - Note the module
    - Re-read the Reading + Cheat-Sheet
    - Add a flashcard

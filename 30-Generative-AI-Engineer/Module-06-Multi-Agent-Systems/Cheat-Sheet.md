@@ -120,6 +120,7 @@ app = g.compile(checkpointer=MemorySaver())
 ## 🏆 Exam Power Phrases
 
 ✅ Often **right**:
+
 - "Build single-agent first; add agents with intent"
 - "Always set max_iterations + budget cap"
 - "Per-agent tracing in LangSmith / Arize"
@@ -127,6 +128,7 @@ app = g.compile(checkpointer=MemorySaver())
 - "Multi-agent reduces variance on hard tasks"
 
 ❌ Often **wrong**:
+
 - "More agents are always better"
 - "AutoGPT is the gold standard"
 - "Agents figure out coordination on their own"

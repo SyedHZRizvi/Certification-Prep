@@ -16,6 +16,7 @@ Meet Carla. She runs ML at a top-10 US retail bank. The customer-service org has
 In 2023 the team built a chatbot using **Amazon Lex** to handle policy questions. It went 9 months in development with 1,200 intents and *still* covered only 38% of real-world questions. The bank wrote that off and started over.
 
 In 2024 they rebuilt it using **Amazon Bedrock**:
+
 - **Claude 3.5 Sonnet** as the conversational model
 - **Bedrock Knowledge Bases** over the 3,000 articles, using **OpenSearch Serverless** as the vector store
 - **Bedrock Agent** to call internal APIs for customer-account lookups
@@ -372,6 +373,7 @@ For RAG, you need an **embedding model** and a **vector store**.
 ## ✅ Module 7 Summary
 
 You now know:
+
 - 🌟 **Bedrock** as the managed FM gateway with multiple providers (Claude, Llama, Mistral, Titan, Nova, Cohere)
 - 📚 **Knowledge Bases** — managed RAG with default OpenSearch Serverless vector store
 - 🛠️ **Agents** — multi-step tool-using assistants with action groups
@@ -457,6 +459,7 @@ for cit in response["citations"]:
 ```
 
 🎯 **Exam pattern.** Recognise:
+
 - `bedrock-agent-runtime` client → KB / Agent operations
 - `retrieve_and_generate` → managed RAG end-to-end (includes citations)
 - `retrieve` (separate API) → just the top-k chunks; you wire up the LLM call yourself

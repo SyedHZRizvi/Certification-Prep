@@ -157,6 +157,7 @@ A **VLAN** is a logical grouping of switch ports that act as if they're on the s
 ### The 802.1Q tag (4 bytes)
 
 Inserted into the Ethernet frame between source MAC and EtherType. Contains:
+
 - **TPID** (Tag Protocol ID, 16 bits) = 0x8100
 - **PCP** (Priority Code Point, 3 bits) = CoS / QoS priority
 - **DEI** (Drop Eligible Indicator, 1 bit)
@@ -175,6 +176,7 @@ Modern switches let one access port carry a single user data VLAN PLUS a separat
 ### Inter-VLAN routing
 
 VLANs are L2 — traffic between VLANs requires L3. Three implementations:
+
 - **Router on a stick** — single router interface trunked, with sub-interfaces per VLAN
 - **L3 switch with SVIs** (Switched Virtual Interfaces) — most common today
 - **Separate physical router interfaces per VLAN** — wasteful, rarely seen
@@ -377,6 +379,7 @@ This is a classic PBQ — you'll see screen captures of switch config and have t
 In response, the **RPKI** (Resource Public Key Infrastructure, RFC 6480 onward) was developed: cryptographically signed Route Origin Authorizations (ROAs) let networks publish "AS X is authorized to originate prefix Y." Adoption was slow — only ~50% of routes had ROAs by 2024. Major incidents continued: the 2018 Amazon Route 53 hijack (eNet/AS10297), the 2021 Facebook BGP outage (self-inflicted withdrawal), the 2022 KlaySwap MetaMask hijack ($1.9M stolen).
 
 **Lesson for the exam / for practitioners.** This case touches every Network+ routing concept:
+
 - **BGP path selection** prefers longer prefixes — design implication: announce only what you mean to announce, validate at every peer
 - **Convergence speed** — BGP propagated the bad route globally in seconds, but the *deliberate* slow convergence design meant recovery also took minutes
 - **Administrative distance** — irrelevant here; this was an inter-AS leak (BGP is the only protocol)
@@ -395,6 +398,7 @@ This case is exactly what Network+ tests when asking, "Why would an enterprise u
 ## ✅ Module 3 Summary
 
 You now know:
+
 - 🚦 **Static vs dynamic routing** and the AD pecking order (0 < 1 < 90 < 110 < 120)
 - 🛰️ The major **IGPs** (RIP, OSPF, EIGRP, IS-IS) and **BGP** as the only EGP
 - 🔄 Routing **loop prevention** (split horizon, route poisoning, TTL)

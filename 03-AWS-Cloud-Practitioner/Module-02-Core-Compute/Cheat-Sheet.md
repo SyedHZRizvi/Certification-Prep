@@ -124,6 +124,7 @@ Pay = (requests) × (memory × ms compute). No idle cost.
 ## 🏆 Exam Power Phrases
 
 Usually right:
+
 - ✅ "Use Lambda for event-driven, short-lived code"
 - ✅ "Use Spot for fault-tolerant batch workloads"
 - ✅ "Use Savings Plans for predictable usage"
@@ -131,6 +132,7 @@ Usually right:
 - ✅ "Use ASG + ELB across multiple AZs for HA"
 
 Usually wrong:
+
 - ❌ "Lambda for a 1-hour job"
 - ❌ "Spot for a production database"
 - ❌ "Single AZ is highly available"

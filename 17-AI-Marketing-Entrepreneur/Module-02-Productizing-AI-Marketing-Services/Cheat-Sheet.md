@@ -103,6 +103,7 @@ Target margin: 60–80%
 ## 🏆 Exam Power Phrases
 
 When you see these in answers, they're often correct:
+
 - ✅ "Fixed scope, fixed price, fixed process..."
 - ✅ "Productize the audit, then sell the retainer..."
 - ✅ "Templatize the deliverable..."
@@ -110,6 +111,7 @@ When you see these in answers, they're often correct:
 - ✅ "One revision round, flat fee for overflow..."
 
 When you see these, they're often **wrong**:
+
 - ❌ "Quote each client a custom price..."
 - ❌ "Unlimited revisions..."
 - ❌ "Open kickoff call..."
@@ -132,6 +134,7 @@ When you see these, they're often **wrong**:
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. The 5 Fixed Anchors? ___
 2. The pricing formula? ___
 3. Highest AI-leverage work type? ___

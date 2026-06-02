@@ -219,6 +219,7 @@ Mining pools communicate with miners via the **Stratum protocol** (Stratum V1, S
 **Outcome.** The halving block (840,000) earned the miner approximately **40 BTC in fees** alone (a Runes-protocol launch caused an enormous fee spike), making it potentially the highest-revenue block in Bitcoin history (~$2.7M). The next several days saw fees stay elevated; then they normalized. By July 2024, fees were back to ~10% of revenue. Several marginal miners exited (Core Scientific had already exited 2022); the survivors were dramatically more efficient by Q4 2024. Hashrate hit new all-time highs by Q1 2025. Public miner equities (MARA, RIOT, CLSK) had mixed performance.
 
 **Lesson for the exam / for practitioners.** Three principles every exam tests:
+
 1. **Fees, not just subsidy, will sustain Bitcoin security past 2140.** The 2024 halving was the first where fees were a meaningful fraction of revenue. The trajectory matters more than any single day.
 2. **Mining is a commodity business with brutal efficiency dynamics.** Each halving forces a 50% efficiency improvement (or 50% energy-cost reduction, or 50% price increase) just to maintain the same per-joule profitability. Capital allocation in this industry punishes complacency.
 3. **L1 protocol decisions affect mining economics.** The Ordinals / Inscriptions wave was enabled by Taproot (which made inscriptions practical) — a soft-fork from 2021 produced an emergent fee market three years later that materially changed halving math.
@@ -271,6 +272,7 @@ A 2024-onward institutional reframing: Bitcoin miners are increasingly viewed as
 - Subsidize **renewables build-out** by guaranteeing demand for early-stage projects
 
 The most-cited examples (2024-2026):
+
 - **ERCOT (Texas)** demand-response: ~2 GW of Bitcoin mining can be curtailed within seconds; provides grid stability.
 - **Methane flare-to-mining** in the Permian Basin, North Dakota, and (until 2022) Siberia: monetizes otherwise-wasted natural gas, reduces flaring emissions.
 - **Marathon Digital's Texas wind-PPA** locked in 100% renewable for a portion of its fleet.

@@ -225,6 +225,7 @@ The CLTD body of knowledge tests automation broadly. Know each.
 **Slotting** = deciding which SKU goes in which slot. Done right, it saves 30–50% of picker travel.
 
 Slotting rules:
+
 1. **Velocity** — A-movers close to pack
 2. **Golden zone** (waist-to-shoulder) for fast pickers
 3. **Cube** — match slot size to pallet/carton size
@@ -288,6 +289,7 @@ Memorize this table. Multiple exam questions every year.
 ## 👷 Labor Management
 
 Labor is 40–60% of DC operating cost. CLTD tests:
+
 - **Engineered labor standards** (time studies, MOST analysis)
 - **Performance dashboards** — real-time productivity by worker/team
 - **Incentive plans** — performance-based pay
@@ -351,6 +353,7 @@ Labor is 40–60% of DC operating cost. CLTD tests:
 **Outcome.** Megapack production cycle time dropped from ~5 days (2021) to ~2 days (2024). Throughput at Lathrop reached ~1 Megapack every ~12 minutes by Q4 2024. Yard utilization at Lathrop runs at ~80% of theoretical capacity — high but managed via dynamic re-marshaling. Outbound shipping (truck for North America; rail for cross-country and ports for export) on-time rate ~97%. The Shanghai facility started production March 2024 and ramped to ~10 GWh annual run-rate by year-end. Notably, Tesla declined to use any third-party WMS or TMS — preferring a build-it-yourself stack tightly integrated with manufacturing execution.
 
 **Lesson for the exam / for practitioners.** Tesla Megapack illustrates the *modern automated DC* archetype that the CLTD exam tests in the warehouse-operations domain:
+
 1. **Layout-as-destiny** at scale — the Lathrop yard is an I-shape (straight-through) flow that enables the 1-Megapack-every-12-minutes throughput.
 2. **Hybrid automation strategy** — Tesla uses AS/RS (for cells), AGV/AMR (for sub-assembly movement), GTP-style (for kits), and manual (for final QC). The CLTD answer is rarely "automate everything" — it's "automate the right subprocess."
 3. **Vertical integration of WMS/TMS** — when logistics is your differentiator, you in-source the software (link back to Module 1's make-or-buy framework).
@@ -414,6 +417,7 @@ The CLTD exam tests these patterns: "A high-throughput automated DC with predict
 ## ✅ Module 5 Summary
 
 You now know:
+
 - 🏢 Nine warehouse types and what each does
 - 📐 U-shape vs I-shape vs L-shape layouts
 - 🔄 The 7-step warehouse workflow + returns

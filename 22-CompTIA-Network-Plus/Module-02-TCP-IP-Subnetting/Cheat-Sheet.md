@@ -125,6 +125,7 @@ Mask octet pattern (each = previous + power of 2):
 ## 🏆 Exam Power Phrases
 
 Often **right**:
+
 - ✅ "169.254.x.x = DHCP failure"
 - ✅ "PAT for many internal hosts sharing one public IP"
 - ✅ "/30 for point-to-point links"
@@ -132,6 +133,7 @@ Often **right**:
 - ✅ "Allocate largest VLSM subnet first"
 
 Often **wrong**:
+
 - ❌ "Assign the broadcast address to a host"
 - ❌ "Use `::` twice in IPv6"
 - ❌ "172.32.x.x is private" (it's public; private ends at 172.31)
@@ -156,6 +158,7 @@ Often **wrong**:
 ## ✏️ Quick Self-Check (Time Yourself — 90 sec)
 
 Solve in your head:
+
 1. Network ID of `172.16.150.20/22`? ___
 2. Usable hosts in /27? ___
 3. Broadcast of `10.20.30.0/28`? ___

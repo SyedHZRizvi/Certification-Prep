@@ -324,6 +324,7 @@ Cost
 ## ✅ Module 2 Summary
 
 You now know:
+
 - 🏭 How configurations (centralized, decentralized, hub-spoke, crossdock) trade off cost and service
 - 🌎 Facility-location methods (factor-rating, center-of-gravity, break-even, LP)
 - 🔨 The make-or-buy decision and total cost of ownership logic

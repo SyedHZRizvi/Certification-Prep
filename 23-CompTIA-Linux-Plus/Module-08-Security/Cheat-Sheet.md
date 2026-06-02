@@ -247,6 +247,7 @@ Pair with: firewalld zone, fail2ban, key-based auth, `~/.ssh/` mode 700.
 ## 🏆 Exam Power Phrases
 
 When you see these in answers, they're often **right**:
+
 - ✅ "Use `ausearch -m AVC` to debug SELinux denials"
 - ✅ "Use `semanage fcontext` for persistent labels"
 - ✅ "Use `setsebool -P` for persistent boolean changes"
@@ -254,6 +255,7 @@ When you see these in answers, they're often **right**:
 - ✅ "Combine SELinux + firewalld + sshd_config for port change"
 
 When you see these, they're often **wrong**:
+
 - ❌ "`setenforce 0` is the production fix"
 - ❌ "`chmod 777` resolves SELinux denials"
 - ❌ "`chcon` is persistent"
@@ -280,6 +282,7 @@ When you see these, they're often **wrong**:
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. SELinux denial → which 3 things to try (in order)? ___
 2. 3 commands to create + unlock + format a LUKS volume? ___
 3. Verify a signed tarball with gpg? ___

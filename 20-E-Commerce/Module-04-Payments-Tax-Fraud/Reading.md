@@ -11,6 +11,7 @@ In March 2020, e-commerce volume globally jumped 30-40% in two weeks. Stripe —
 The interesting part isn't the volume. It's that Stripe scaled without breaking. They didn't replatform. Their core APIs (`/v1/payment_intents`, `/v1/charges`, `/v1/customers`) remained backward-compatible. Their fraud system (Stripe Radar) continuously improved through machine learning across the network — by 2024, Radar was preventing >$8B/year of fraud across Stripe's customer base.
 
 Three operating principles emerged:
+
 1. **API stability is a moat.** Stripe's commitment to not breaking the API has compounded over 14 years. Developers built businesses on top because Stripe wouldn't pull the rug.
 2. **The hard work is in fraud and dispute mechanics, not payment processing.** Charging a card is solved. Knowing whether to charge the card, and what to do when the customer disputes the charge, is where the engineering is.
 3. **Compliance scales with volume.** PCI-DSS, SCA in EU, state-by-state sales tax in US (post-Wayfair 2018), GDPR — each of these became a feature for Stripe's customers. Stripe Atlas (incorporation + business banking), Stripe Tax (sales tax compliance), Stripe Issuing (card issuing) all emerged from "we already had to solve this for ourselves."
@@ -96,6 +97,7 @@ Powered by Stripe under the hood (Shopify Plus customers see Stripe's pricing mi
 The Payment Card Industry Data Security Standard, version 4.0, replaces v3.2.1. Maintained by the PCI Security Standards Council (a consortium of Visa, Mastercard, Amex, Discover, JCB).
 
 **Twelve core requirements** (memorize the categories):
+
 1. Install and maintain a firewall configuration.
 2. Do not use vendor-supplied defaults for passwords.
 3. Protect stored cardholder data.
@@ -131,11 +133,13 @@ The Payment Card Industry Data Security Standard, version 4.0, replaces v3.2.1. 
 The PSD2 regulation (Payment Services Directive 2, EU, effective September 2019 with enforcement phased through 2021) requires **Strong Customer Authentication** on most card-not-present transactions in the EU/UK. SCA is delivered via the **3-D Secure 2** (3DS2) protocol.
 
 **Two-factor requirement:** SCA requires two of three factors:
+
 - **Knowledge** (something you know — password)
 - **Possession** (something you have — phone for OTP)
 - **Inherence** (something you are — biometrics)
 
 **Exemptions** (defined in PSD2):
+
 - Low-value transactions (< €30)
 - Recurring transactions of fixed amount (subscriptions after first)
 - Merchant-initiated transactions (e.g., post-purchase top-up)
@@ -157,6 +161,7 @@ In June 2018, the US Supreme Court decided *South Dakota v. Wayfair, Inc.*, 138 
 - 200 transactions per year (some states; many states dropped this in 2023-2024)
 
 By 2024, all 45 states with sales tax had adopted economic nexus. Each state has its own:
+
 - Threshold dollar amount and/or transaction count
 - Rate (state + local; ~10,000 distinct rates in the US)
 - Filing frequency (monthly / quarterly / annually)
@@ -178,6 +183,7 @@ By 2024, all 45 states with sales tax had adopted economic nexus. Each state has
 ## 🇪🇺 EU VAT — OSS, IOSS, and Cross-Border Sales
 
 EU VAT (Value-Added Tax) rules changed dramatically on July 1, 2021:
+
 - **OSS** (One Stop Shop) — sellers established in the EU register once and remit VAT across all 27 EU states. Replaced the old MOSS (Mini One Stop Shop) for B2C digital services.
 - **IOSS** (Import One Stop Shop) — non-EU sellers shipping low-value goods (≤€150) to EU consumers can register once and remit EU VAT at checkout. Without IOSS, EU customs collects VAT + fees on import, often surprising the customer with delivery charges.
 - **The €22 low-value exemption was eliminated.** Pre-2021, imports under €22 were VAT-free; this caused massive AliExpress/Wish abuse. Now every import owes VAT.
@@ -244,6 +250,7 @@ BNPL exploded 2020-2022 (cheap money), then contracted in 2023-2024 (regulatory 
 **Situation.** Klarna, founded in Stockholm 2005, became the largest BNPL provider globally by 2022 — $670B+ cumulative GMV, 150M+ active consumers, 500K+ merchants. The company was valued at $45.6B in June 2021 (SoftBank Series H), the highest valuation for a European fintech. But 2022-2023 saw a 85% valuation crash (down to $6.7B in July 2022's down round) as interest rates rose, credit losses spiked, and regulators turned attention to consumer-credit risks. By 2024, Klarna was in active dialogue with the UK Financial Conduct Authority (FCA) about consumer-credit regulation.
 
 **Decision.** In June 2024, the UK FCA confirmed that BNPL providers would be brought under UK consumer-credit regulation, requiring:
+
 - Affordability checks on consumers before lending
 - Disclosure of credit terms (even for 0% interest products)
 - Section 75 protections (consumers can dispute via the lender on goods that don't arrive or aren't as described)
@@ -265,6 +272,7 @@ Klarna's response: pre-positioned for the regulation, working with the FCA on di
 ## 🛡️ Fraud — Chargebacks, Friendly Fraud, and the Tooling
 
 **Chargeback** — When a cardholder disputes a transaction with their issuer, the issuer reverses funds. The merchant loses:
+
 - The sale (the funds reverse).
 - The goods (often already shipped).
 - A chargeback fee ($15-$25 per dispute).
@@ -367,6 +375,7 @@ Wallets dramatically improve checkout conversion. Baymard 2024 benchmarks show w
 ## ✅ Module 4 Summary
 
 You now know:
+
 - 💳 The payment stack (issuer, network, acquirer, processor, PSP, wallet)
 - 🏪 Major PSPs (Stripe, Adyen, PayPal Braintree, Bolt)
 - 🛡️ PCI-DSS v4.0 (mandatory March 2025; new script-management requirements)

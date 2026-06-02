@@ -113,18 +113,21 @@ When the corpus is too big to stuff, RAG retrieves the relevant subset for each 
 ### Each piece
 
 **Chunking.** Split long documents into ~500-1000 token chunks with ~10-15% overlap. Strategy matters:
+
 - Naive: split every N tokens
 - Recursive: split on `\n\n`, then `\n`, then `.`, then N tokens
 - Semantic: use embeddings to find topic boundaries
 - Document-structure-aware: respect headings, tables, sections
 
 **Embeddings.** Map text → fixed-size vector (typically 384–3072 dims). For Claude, **Voyage AI** is the recommended partner — Anthropic explicitly invested in / partnered with Voyage:
+
 - `voyage-3-large` / `voyage-3.5` — top general-purpose
 - `voyage-code-3` — code-specialized
 - `voyage-finance-2` / `voyage-law-2` — domain-tuned
 - (OpenAI's `text-embedding-3-small` / `-large` work fine; Cohere `embed-v3` works fine; the *choice* matters less than the *evals*)
 
 **Vector DB.** Stores embeddings + metadata; queries by cosine similarity / dot product. Popular options:
+
 - **Pinecone** — managed, simple
 - **Weaviate** — open-source, hybrid search built-in
 - **Qdrant** — open-source, fast, Rust core
@@ -173,6 +176,7 @@ Claude answers: "Per our refund policy [c1], refunds are only available within 3
 ## 🧠 Contextual Retrieval — The September 2024 Anthropic Technique
 
 In September 2024, Anthropic published a blog post titled **"Introducing Contextual Retrieval"** describing a technique that dramatically improves RAG accuracy. The headline numbers:
+
 - **~49% reduction** in retrieval failure rate by adding contextual prefixes
 - Adding a reranker on top: **~67% reduction** in retrieval failure rate
 
@@ -212,6 +216,7 @@ You pay extra Claude calls during ingestion (one per chunk). Prompt caching help
 ### Add a reranker
 
 For the extra accuracy boost, Anthropic recommends a **reranker** (Voyage rerank-2 or Cohere Rerank 3) as a final stage:
+
 1. Hybrid retrieval (BM25 + vector) → top-150 chunks
 2. Rerank → top-20
 3. Pass top-20 to Claude
@@ -334,6 +339,7 @@ Run an **eval** on your domain. Voyage's `voyage-3.5` is often the best general-
 ## 🪟 Long-Context Beta and 1M Tokens
 
 Anthropic has shipped (and may have GA'd by the time you read this) a **1M-token context window** for Sonnet/Opus, gated behind a beta header. It enables:
+
 - An entire mid-sized codebase in one prompt
 - A 1000-page legal case file
 - Many hours of meeting transcripts
@@ -367,6 +373,7 @@ response = client.messages.create(
 | Freshness | Latest doc on every call | Re-index needed |
 
 A common decision rule:
+
 - **<300K total tokens in corpus** → stuff (with caching)
 - **300K – 5M tokens, slowly changing** → RAG with simple pipeline
 - **>5M tokens or rapidly changing** → full RAG with re-indexing + reranking
@@ -460,6 +467,7 @@ This is exactly the PalmettoLegal architecture from the opening story.
 ## ✅ Module 7 Summary
 
 You now know:
+
 - 🧭 **RAG vs long-context** — when each is right, the decision tree
 - 🧊 **Stuffed context** — how to do it well with Claude, citations, caching
 - 🔍 **Classic RAG** — chunking, embeddings, vector DBs, retrieval, generation

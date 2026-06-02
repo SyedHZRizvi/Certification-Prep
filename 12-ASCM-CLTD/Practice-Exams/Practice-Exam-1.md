@@ -497,6 +497,7 @@ D. Add an Eastern DC so most outbound is ground
 ## 🔍 Review Process
 
 For EACH wrong answer:
+
 1. Identify which module covered it
 2. Re-read that module's Reading.md section
 3. Add an Anki flashcard

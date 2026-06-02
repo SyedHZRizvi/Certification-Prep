@@ -12,6 +12,7 @@ Per PMI:
 Translation: **anyone who cares about, is impacted by, or has influence over the project.**
 
 ### Examples of Stakeholders:
+
 - 👔 Sponsor
 - 👥 Team
 - 🏢 Functional managers
@@ -49,6 +50,7 @@ Translation: **anyone who cares about, is impacted by, or has influence over the
 ## 📋 Stakeholder Register
 
 The central document. Includes:
+
 - 🆔 Identification (name, role, contact)
 - 📊 Assessment (requirements, expectations, influence, interest)
 - 📂 Classification (internal/external, friend/foe, etc.)
@@ -81,6 +83,7 @@ Similar but uses Power × Influence (active engagement) instead of interest.
 
 ### Salience Model
 3 dimensions:
+
 - **Power** — ability to enforce
 - **Legitimacy** — appropriate involvement
 - **Urgency** — time-pressure to act
@@ -103,6 +106,7 @@ Per PMBOK, stakeholders fall into 5 levels:
 
 ### Stakeholder Engagement Assessment Matrix
 For each stakeholder:
+
 - C = Current level
 - D = Desired level
 
@@ -113,6 +117,7 @@ For each stakeholder:
 ## 🎯 Stakeholder Strategies
 
 ### For Resistant Stakeholders:
+
 - Listen to concerns
 - Address misunderstandings
 - Show how project benefits them
@@ -120,12 +125,14 @@ For each stakeholder:
 - Be patient
 
 ### For Supportive Stakeholders:
+
 - Keep informed
 - Leverage their influence
 - Show appreciation
 - Don't take for granted
 
 ### For Neutral Stakeholders:
+
 - Provide regular updates
 - Identify what would move them to "supportive"
 
@@ -141,6 +148,7 @@ For each stakeholder:
 (Covered in Module 2's communication section.)
 
 Tailor communication to each stakeholder:
+
 - 👔 Executives: high-level, value-focused, brief
 - 🛠️ Team: detailed, operational
 - 🤝 Customers: feature-focused, frequent
@@ -151,6 +159,7 @@ Tailor communication to each stakeholder:
 ## 🎯 The Stakeholder Cube
 
 3D version of Power-Interest:
+
 - Power (high/low)
 - Interest (high/low)
 - Attitude (positive/negative)
@@ -164,12 +173,14 @@ Tailor communication to each stakeholder:
 ## 🏢 Internal vs External Stakeholders
 
 ### Internal:
+
 - Sponsor
 - Team
 - Functional managers
 - Other employees
 
 ### External:
+
 - Customers
 - Vendors
 - Regulators
@@ -183,6 +194,7 @@ Tailor communication to each stakeholder:
 ## 🎯 Sponsor's Role (Important!)
 
 The **Sponsor** is a special stakeholder:
+
 - 💰 Provides funding
 - 📜 Approves Project Charter
 - 🛡️ Champions the project
@@ -199,6 +211,7 @@ The PM should NOT escalate trivial things to the sponsor — only major impedime
 ## 🤝 Stakeholder Engagement in Agile
 
 In agile, stakeholder engagement is **continuous**:
+
 - 🎁 **Sprint Reviews** = stakeholder demos
 - 💬 **Continuous feedback** loop
 - 🔄 **Backlog refinement** with key stakeholders
@@ -234,6 +247,7 @@ In agile, stakeholder engagement is **continuous**:
 ## ✅ Module 10 Summary
 
 You now know:
+
 - 👥 Stakeholder = anyone affecting/affected by the project
 - 🔄 4 processes: Identify, Plan, Manage, Monitor
 - 📊 Power-Interest Grid (most common analysis)

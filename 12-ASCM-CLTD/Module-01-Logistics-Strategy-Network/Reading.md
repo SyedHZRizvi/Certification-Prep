@@ -68,6 +68,7 @@ Every CLTD textbook drills this cascade. Memorize it.
 ## 🏢 Network Design: The Core Decisions
 
 Network design answers three questions:
+
 1. **How many** facilities?
 2. **Where** to put them?
 3. **What role** does each play?
@@ -75,6 +76,7 @@ Network design answers three questions:
 ### Trade-off curve (THIS WILL BE TESTED)
 
 As you add more DCs:
+
 - **Inbound transport cost** rises (more nodes to feed)
 - **Outbound transport cost** falls (each DC closer to its customers)
 - **Inventory carrying cost** rises (safety stock multiplies across nodes — the "square-root rule")
@@ -222,6 +224,7 @@ Outsourcing decision in logistics has its own vocabulary.
 A single service level for every customer wastes money. Modern logistics strategy **segments** customers and tailors service.
 
 Common segmentation lenses:
+
 - **Velocity-based** (A/B/C movers) — fast SKUs get more DCs, more safety stock, premium freight
 - **Customer-tier-based** — Platinum customers get next-day; Bronze get standard 5-day
 - **Geography-based** — urban same-day vs rural 2-day
@@ -236,6 +239,7 @@ Common segmentation lenses:
 **Situation.** A.P. Møller-Maersk, the world's largest container shipping line by capacity (Alphaliner data, ~17% global market share as of 2024), had spent a century optimizing one node of the supply chain: ocean. By 2016 it was caught in the classic container-shipping value squeeze — rate volatility, capex-heavy ships, and the realization that the *real* margin in supply chain sat downstream, in warehousing, customs brokerage, and integrated 3PL services that competitors like DSV, Kuehne+Nagel, and DHL Supply Chain were aggregating profitably. Customers (Nike, Unilever, Walmart) increasingly wanted *one* end-to-end logistics contract, not separate ocean, customs, and warehouse providers.
 
 **Decision.** In September 2016 CEO Søren Skou announced a strategy to transform Maersk from a "conglomerate" into a "global integrator of container logistics." Over the following 8 years Maersk:
+
 - **Divested non-core energy assets** (Maersk Oil sold to Total in 2017 for $7.45B; Maersk Drilling spun off 2019).
 - **Acquired LF Logistics** (December 2021, $3.6B) — Hong Kong-based contract logistics with strong Asia DC footprint.
 - **Acquired Pilot Freight Services** (April 2022, $1.7B) — US last-mile big-and-bulky.
@@ -302,6 +306,7 @@ Common segmentation lenses:
 ## ✅ Module 1 Summary
 
 You now know:
+
 - 🎯 The five strategic logistics decisions and their time horizons
 - 🏢 How adding DCs trades off transport vs inventory vs facility cost
 - 🗺️ Greenfield, brownfield, center-of-gravity, factor-rating, MILP

@@ -129,12 +129,14 @@ az monitor autoscale rule create \
 **One container (or a small group) run for as long as needed, with no orchestration.** Pay per second of CPU + RAM consumed.
 
 Best for:
+
 - Build agents that run for 20 minutes a day
 - Event-driven processing (a queue trigger spins up a container)
 - "Cheap" cron-style batch jobs
 - Sidecar / one-off init tasks before deploying to AKS
 
 NOT for:
+
 - Long-running web apps (use App Service or AKS)
 - Stateful workloads needing persistent storage (ACI supports Azure Files mount, but it's clunky)
 
@@ -324,6 +326,7 @@ az aks get-credentials \
 ## ✅ Module 6 Summary
 
 You now know:
+
 - 🌐 App Service tiers + which features unlock at Standard / Premium v3 / Isolated v2
 - 🔁 How deployment slots + slot settings + swap work
 - 📈 Scale up vs scale out vs autoscale on App Service
@@ -344,6 +347,7 @@ You now know:
 **Situation.** Heineken N.V., the world's second-largest brewer (165+ breweries across 70 countries, ~85,000 employees), undertook the **"Brewing a Better Connected Company"** digital transformation in 2022. The challenge: hundreds of plant-floor applications (MES, OEE dashboards, beer-line PLC integration), a legacy monolithic e-commerce platform for B2B partners, plus a global SAP estate. The architecture was a patchwork of VMs in three data centers across the Netherlands and Mexico, with each acquisition (Cruzcampo, Tiger Beer, Lagunitas, Beavertown) layering its own application stack. Time-to-deploy a new market pilot was 6–9 months; cloud was minimal.
 
 **Decision.** Heineken partnered with Microsoft (announced at Microsoft Ignite 2022; refreshed publicly in 2024) on a tri-modal Azure compute strategy that lines up exactly with this module's three managed-compute options:
+
 1. **Azure Kubernetes Service (AKS)** for the new microservice-based e-commerce platform replacing the monolith. Node pools spanned three AZs in `westeurope`; Azure CNI Overlay was the networking mode (chosen to conserve VNet IPs given the org's 165-site network topology). **Cluster autoscaler** scaled nodes between 6 and 60 based on pending-pod pressure; **Horizontal Pod Autoscaler (HPA)** scaled per-service pods on RPS metrics fed from App Insights.
 2. **Azure App Service Premium v3** for the customer-facing partner portals (B2B "MyHeineken" and consumer apps), with **deployment slots** for blue-green releases, **Easy Auth** for Entra ID and social IdP sign-in, and **VNet integration** to talk to the AKS APIs over private endpoints.
 3. **Azure Container Instances (ACI)** for bursty integration jobs — a single ACI spins up to ingest a partner EDI feed, processes it, and exits. ACI was chosen over AKS for these because the *concurrency model* is "one job, one container, sub-30-sec startup, no orchestration overhead."
@@ -351,11 +355,13 @@ You now know:
 The architecture mapped to public Microsoft customer references (*Heineken — Building a more connected, sustainable, agile business with Microsoft*, Microsoft customer stories, 2022; refreshed 2024) and to industry coverage (*Computing UK*, *Heineken modernises with Microsoft Azure*, 2023-06).
 
 **Outcome.** Heineken reported (Microsoft Ignite 2024 keynote; *Computing UK*, 2024-04):
+
 - **Time-to-deploy a new market pilot** fell from 6–9 months to ~6 weeks, primarily by replacing per-environment VM provisioning with AKS deployments parameterized by Helm charts.
 - **E-commerce platform peak burst capacity** went from "max-provisioned VMs at all times" to a 6-to-60-node AKS autoscaler that idled at 6 nodes overnight and burst on demand. Year-over-year compute cost dropped despite a 4× growth in transaction volume.
 - **Developer experience** improved: a new microservice goes from local Docker image to deployed in a staging slot in 90 minutes via Azure DevOps + ACR + AKS pipeline.
 
 **Lesson for the exam / for practitioners.** Heineken's architecture is the canonical "which managed compute?" decision tree:
+
 - *Long-running, stateful, microservice-architected platform with K8s ecosystem dependencies* → **AKS**.
 - *Stateless web app, slots-based blue/green, custom-domain + cert management* → **App Service Premium v3**.
 - *Bursty container jobs that run for 1–10 minutes and exit* → **ACI**.

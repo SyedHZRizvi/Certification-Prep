@@ -71,6 +71,7 @@ Adaptive Identity = risk-based auth (signals: device, location, time, behavior).
 ## 🏆 Exam Power Phrases
 
 When you see these in answers, they're often **right**:
+
 - ✅ "Apply the principle of least privilege"
 - ✅ "Layer multiple controls (defense in depth)"
 - ✅ "Re-evaluate continuously" (Zero Trust)
@@ -79,6 +80,7 @@ When you see these in answers, they're often **right**:
 - ✅ "Backout plan / impact analysis"
 
 When you see these, they're often **wrong**:
+
 - ❌ "Trust traffic from inside the network"
 - ❌ "Disable logging to reduce noise"
 - ❌ "Skip the change advisory step for speed"
@@ -111,6 +113,7 @@ When you see these, they're often **wrong**:
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. The 3 letters of CIA + what each protects? ___
 2. The 3 Zero Trust control-plane components? ___
 3. Two-axis classification of a "visible 24/7 camera"? ___

@@ -67,6 +67,7 @@ You want a salaried role. Marketing Manager, Growth Marketer, Performance Market
 Your audience's question is: *"Can this person do the job from day one without me hand-holding?"*
 
 What they need to see:
+
 - ✅ Proof you can run a campaign end-to-end (Capstone 2)
 - ✅ Proof you can think in systems, not just tactics (Capstones 3 & 4)
 - ✅ Proof you can analyze data, not just produce it (Capstone 4)
@@ -80,6 +81,7 @@ You want a paid project, retainer, or first client. Could be $500/mo, could be $
 Your audience's question is: *"Will this person make me more money than they cost?"*
 
 What they need to see:
+
 - ✅ Specific niche / industry signal (your audit / campaign was for THEIR type of business)
 - ✅ Process you'll follow (Capstones map 1:1 to "what I'd do for you")
 - ✅ Track record of shipping (Capstones exist, with dates)
@@ -92,6 +94,7 @@ You want followers, an audience, possibly your own micro-product launched.
 Your audience's question is: *"Should I follow this person and read their stuff?"*
 
 What they need to see:
+
 - ✅ Consistent voice across pieces
 - ✅ Lessons-learned framing (vulnerability + honesty)
 - ✅ Numbers and screenshots (proof, not platitudes)
@@ -216,6 +219,7 @@ Most students who try to "do it right" with Webflow lose 2 weeks to design tweak
 ## 🗣️ The "Show Don't Tell" Rule
 
 When a recruiter or prospect reads your portfolio, every sentence is either:
+
 1. **Showing** — a screenshot, a number, a link, a Loom, a working demo
 2. **Telling** — a claim about what you can do
 
@@ -320,6 +324,7 @@ Don't start Capstone 2 (Module 2) until these 5 items are done.
 ## ✅ Module 1 Summary
 
 You now know:
+
 - 🎯 Why portfolios matter more in marketing than in most other fields
 - 🛣️ The 3 audience paths (Job / Client / Indie) and how to pick yours
 - 📐 The P-C-A-R-L case study format — used for every capstone

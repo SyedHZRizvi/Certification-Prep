@@ -51,6 +51,7 @@ Begin with [Module 1: AI Services Overview →](./Module-01-AI-Services-Overview
 ## 🎯 What You'll Learn
 
 By the end of this track, you'll be able to:
+
 - Provision and authenticate against Azure AI services using keys, Entra ID, and managed identity
 - Build computer-vision pipelines with Azure AI Vision, Custom Vision, and the Face service
 - Wire up NLP solutions with the Azure AI Language service, Translator, and Speech
@@ -105,6 +106,7 @@ Two course-root deliverables built to Cornell / Harvard / Stanford pedagogical s
 ## 📖 The Single Most Important Resource
 
 🔗 **[Official AI-102 Study Guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-102)** — Microsoft updates the skills outline every few months. Print the latest one. If the study guide lists a service, make sure you can:
+
 1. Provision it from the portal AND with the Azure CLI
 2. Authenticate against it with both key and Entra ID
 3. Call its top endpoint with the Python SDK

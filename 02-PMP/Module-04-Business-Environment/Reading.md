@@ -13,6 +13,7 @@ Then the CEO asks: *"How does this app increase our market share by 15% next yea
 The team... freezes.
 
 They were so focused on the *project* they lost sight of the *purpose*. They didn't know:
+
 - What business outcome the project supports
 - Whether the company strategy still required this
 - What success metrics tied to dollars
@@ -37,11 +38,13 @@ Per the PMI ECO:
 
 ### What Is Business Value?
 The net quantifiable benefit derived from a project. Can be:
+
 - 💵 Tangible (revenue, cost savings, market share)
 - 🌟 Intangible (brand, customer loyalty, employee morale)
 
 ### Business Case
 A document justifying the project. Typically includes:
+
 - Strategic alignment
 - Cost-benefit analysis
 - Expected ROI
@@ -64,6 +67,7 @@ A document justifying the project. Typically includes:
 ## 🎯 Strategic Alignment
 
 Projects should support organizational strategy. The PM:
+
 - Understands business objectives
 - Connects project deliverables to value
 - Communicates strategic context to the team
@@ -76,6 +80,7 @@ Projects should support organizational strategy. The PM:
 ## ⚖️ Compliance Management
 
 ### Types of Compliance:
+
 - 🏛️ **Regulatory** — laws (HIPAA, GDPR, OSHA)
 - 🏢 **Organizational** — internal policies
 - 🌍 **Standards** — industry standards (ISO, IEEE)
@@ -88,6 +93,7 @@ Projects should support organizational strategy. The PM:
 - Audit & verify
 
 ### Penalties For Non-Compliance:
+
 - Fines
 - License revocation
 - Project shutdown
@@ -105,6 +111,7 @@ Projects should support organizational strategy. The PM:
 The PM monitors the external environment for changes that affect the project:
 
 ### Common External Factors:
+
 - 📊 Market conditions
 - 🏛️ Regulations (new laws)
 - 💰 Economic shifts (inflation, recession)
@@ -113,6 +120,7 @@ The PM monitors the external environment for changes that affect the project:
 - 🌐 Technology shifts
 
 ### Response To Environmental Changes:
+
 1. 🔍 **Monitor** — keep aware
 2. 📊 **Assess impact** — what changes?
 3. 💬 **Communicate** — to stakeholders/sponsor
@@ -162,6 +170,7 @@ Unfreeze → Change → Refreeze
 How orgs choose which projects to fund:
 
 ### Benefit Measurement Methods:
+
 - **NPV (Net Present Value)** — discounted future cash flows; **higher = better**
   - Positive NPV = good investment
 - **IRR (Internal Rate of Return)** — % return on investment; **higher = better**
@@ -170,6 +179,7 @@ How orgs choose which projects to fund:
 - **ROI (Return on Investment)** — % return; **higher = better**
 
 ### Constrained Optimization:
+
 - Math models (linear programming, decision trees) for complex tradeoffs.
 
 🎯 **Exam pattern:** "Choose between 2 projects with NPV $500K and $750K." → **Pick higher NPV ($750K).**
@@ -195,6 +205,7 @@ How orgs choose which projects to fund:
 Project ends → Operations begins.
 
 ### Transition Activities:
+
 - Train operations team
 - Document procedures
 - Hand off support contracts
@@ -215,6 +226,7 @@ Project ends → Operations begins.
 - Approval mechanisms
 
 ### Sources of Governance:
+
 - Sponsor
 - Steering committee
 - PMO
@@ -245,6 +257,7 @@ Project ends → Operations begins.
 ## ✅ Module 4 Summary
 
 You now know:
+
 - 💰 Business value & benefits realization (often after project)
 - ⚖️ Compliance is non-negotiable
 - 🌍 External environment must be monitored

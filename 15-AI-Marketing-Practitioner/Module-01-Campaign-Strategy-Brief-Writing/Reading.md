@@ -240,6 +240,7 @@ Not "soon." A specific 90-minute block with no Slack. Solo briefing requires wri
 
 ### Step 2 — Do a "wall conversation"
 Tape three pieces of paper to your wall. Write at the top of each:
+
 - Page 1: **WHO** is the one person?
 - Page 2: **WHAT** is the one behavior change?
 - Page 3: **WHY** would they actually do it?
@@ -279,6 +280,7 @@ Notion's growth team became famous in 2023 for their internal brief-writing disc
 > *"Convince teams of 5–15 already using Notion for docs to add the Projects template, so they start tracking work in Notion instead of Asana — measured by Projects-template-installs per workspace within 30 days of campaign exposure."*
 
 Notice what's in that one sentence:
+
 - **Who:** teams of 5–15 already on Notion (not "all Notion users")
 - **What:** install the Projects template (not "use more Notion")
 - **Why:** so they switch from Asana (the competitive insight)
@@ -363,6 +365,7 @@ You'll see this exact brief reused in Module 2 (we'll build the Google Search ca
 ## ✅ Module 1 Summary
 
 You now know:
+
 - 📋 What a campaign brief is (and isn't)
 - 🆚 The difference between creative and media briefs
 - ✍️ How to write each, with templates

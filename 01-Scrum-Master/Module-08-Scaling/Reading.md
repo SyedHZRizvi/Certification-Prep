@@ -9,6 +9,7 @@
 Sofia's bakery from Module 5 was great. One team, one product. But now? Customers love her so much that she's opening **5 locations** across the city.
 
 Suddenly:
+
 - 5 teams, 1 brand
 - Different chefs experimenting with different recipes
 - Conflicting promotions
@@ -30,11 +31,13 @@ The Scrum Guide is clear:
 🎯 **Exam tip:** The Scrum Guide ONLY mentions: same Product Goal + same PB + same PO across teams. The exam loves this.
 
 ### Why Scale (Sometimes Necessary):
+
 - 🌍 Product is too large for one team
 - ⏱️ Need parallel delivery
 - 🌐 Geographic distribution
 
 ### Why Most Teams DON'T Scale:
+
 - 🚫 They have only 1 team — Scrum natively supports them
 - 🚫 They confuse "scaling" with "complexity"
 - 🚫 Their org has lots of people but the *work* doesn't need scaling
@@ -63,6 +66,7 @@ The Scrum Guide is clear:
 ```
 
 #### What's Added in Nexus:
+
 - 🆕 **Nexus Integration Team** — coordinates dependencies
 - 🆕 **Nexus Sprint Goal** — shared goal across all teams
 - 🆕 **Nexus Sprint Backlog** — combines all team backlogs
@@ -76,6 +80,7 @@ The Scrum Guide is clear:
 **Sweet spot:** Large enterprise (50+ teams). VERY popular but heavy.
 
 Key concepts (high level):
+
 - **Agile Release Train (ART)** — group of teams working on a "value stream" (e.g., 5–12 teams)
 - **PI (Program Increment)** — typically 8–12 weeks, multiple sprints aligned
 - **PI Planning** — big event where all teams plan together (legendary 2-day meeting)
@@ -163,6 +168,7 @@ If you take ONE thing from this module:
 When teams are geographically split:
 
 ### Best Practices:
+
 - 🕒 Plan time-overlap windows
 - 📹 Default to video for events
 - 🔧 Use shared tools (Jira, Confluence, Miro)
@@ -170,6 +176,7 @@ When teams are geographically split:
 - 🤝 Build trust early (in-person if possible)
 
 ### What Stays The Same:
+
 - All Scrum events still happen
 - Same accountabilities
 - Same artifacts
@@ -194,6 +201,7 @@ When teams are geographically split:
 ## 🤔 What The Exam Will Test
 
 For PSM I, you mostly need:
+
 - ✅ Understanding "Scrum scales by adding more Scrum Teams to same product"
 - ✅ Knowing 1 PO / 1 Product Backlog / 1 Product Goal across teams
 - ✅ Awareness that Nexus exists (not deep)
@@ -201,6 +209,7 @@ For PSM I, you mostly need:
 - ✅ Why "team of 30" is wrong
 
 You DON'T need:
+
 - ❌ Deep SAFe terminology
 - ❌ LeSS specifics
 - ❌ PI Planning details
@@ -226,6 +235,7 @@ You DON'T need:
 ## ✅ Module 8 Summary
 
 You now know:
+
 - 🤝 Most teams don't need scaling — single Scrum Team is powerful
 - 🏗️ When scaling: 1 PO, 1 Product Backlog, 1 Product Goal
 - 🎯 Three frameworks: Nexus (Scrum.org), SAFe (heavy), LeSS (minimal)

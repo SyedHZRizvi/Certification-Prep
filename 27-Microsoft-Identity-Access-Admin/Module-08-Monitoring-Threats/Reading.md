@@ -89,6 +89,7 @@ Entra portal → Identity Secure Score: a 0–100% score Microsoft calculates ba
 ## 🔍 Kusto Query Language (KQL) — The Essentials
 
 KQL is the pipe-style query language used in:
+
 - **Log Analytics** (Azure Monitor)
 - **Microsoft Sentinel** (built on Log Analytics)
 - **Microsoft Defender XDR** (advanced hunting)
@@ -294,6 +295,7 @@ The correct order:
 4. ✅ **Install the Microsoft Entra ID data connector** in Sentinel (auto-detects logs).
 5. ✅ **Import the Microsoft Entra workbook** for a dashboard view.
 6. ✅ **Create analytics rules**:
+
    - Break-glass sign-in (any time)
    - High-risk user sign-in
    - Privileged role activation outside business hours
@@ -336,6 +338,7 @@ The correct order:
 ## ✅ Module 8 Summary
 
 You now know:
+
 - 📂 The four log sources (Sign-in, Audit, Provisioning, Risk) + default retention
 - ⚙️ Diagnostic Settings → LA / Event Hub / storage for long retention
 - 📈 Identity Secure Score as the prioritized backlog
@@ -357,6 +360,7 @@ You now know:
 ## 📊 Case Study — Microsoft's Own SOC's KQL-Driven Identity Detections (2020–2024)
 
 **Situation.** Microsoft's Cyber Defense Operations Center (CDOC) — the SOC behind microsoft.com — was an early Sentinel customer (Sentinel itself was developed partly to serve internal Microsoft needs). The CDOC team has published parts of their KQL detection library at conferences (Black Hat 2022, Defender Day 2023, RSA 2024). Their published "Top 50 identity hunting queries" library covers:
+
 - Break-glass abuse
 - Token theft signals (same token from multiple IPs)
 - Suspicious OAuth consent patterns
@@ -364,6 +368,7 @@ You now know:
 - Lateral movement from compromised identities
 
 **Decision.** Microsoft's published guidance (and what the CDOC does internally) prescribes a tiered approach:
+
 1. **Tier 1: Critical alerts** (every event). Break-glass sign-in. Privileged role activation outside business hours. New federated domain created. Authentication methods policy changed.
 2. **Tier 2: Anomaly alerts** (suspicious patterns). Impossible travel. Token replay. OAuth consent to unverified publisher. Anomalous mass sign-ins.
 3. **Tier 3: Hunting queries** (proactive). Inactive admin recently activated. Multiple failed PIM activations. CA policy in report-only for >60 days.
@@ -371,6 +376,7 @@ You now know:
 The KQL library is in the open-source Microsoft Sentinel content GitHub repo (`Azure/Azure-Sentinel`). New SC-300 candidates can adopt these queries directly.
 
 **Outcome.** Per Microsoft Security Blog (2024-09):
+
 - **Mean Time to Detect (MTTD)** for identity incidents inside Microsoft IT: dropped from 4.3 hours (2020) to 17 minutes (2024).
 - **Number of customer incidents prevented** by detection rules contributed to the open-source Sentinel content: tens of thousands per quarter.
 - **MITRE ATT&CK identity-related coverage** in Sentinel detection rules: ~85% of identity tactics covered in pre-built rules by 2024.

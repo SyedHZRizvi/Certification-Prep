@@ -157,6 +157,7 @@ Use cases: session store, leaderboards, page caching, real-time analytics counte
 **DocumentDB = managed JSON document database, API-compatible with MongoDB.**
 
 Use when:
+
 - You have a MongoDB workload and want to escape self-management
 - You need flexible JSON document schemas
 - Scale per cluster, not serverless
@@ -279,6 +280,7 @@ Supports **Gremlin**, **SPARQL**, **openCypher** query languages.
 **Situation.** Airbnb grew from "two air mattresses in 2008" to ~7 million listings and ~150 million users by 2018. The booking-engine database (`bookings`) had been a single MySQL on EC2 instance for years; by 2017 it was a manually-sharded MySQL fleet maintained by a small SRE team. The DBAs were oncall every weekend for failover incidents. The peak Friday-night booking surge pushed the primaries to 90%+ utilization. Schema migrations took weeks of careful coordination.
 
 **Decision.** Between 2017 and 2020, Airbnb's data infrastructure team migrated the largest OLTP workloads to **Amazon Aurora MySQL** in phases:
+
 1. **Phase 1 (2017):** Move analytics replicas to Aurora to validate operational parity.
 2. **Phase 2 (2018):** Promote Aurora to handle read traffic for several services. Aurora's cross-AZ replication gave them 6 copies across 3 AZs by default.
 3. **Phase 3 (2019–2020):** Cut over OLTP primaries to Aurora, decommissioning the legacy MySQL on EC2 hosts. Aurora's storage auto-scaling (up to 128 TB at the time, since extended) eliminated the schema-change-window problem.
@@ -299,6 +301,7 @@ Public references: Airbnb engineering blog (*"Migrating Booking Service Tables F
 ## ✅ Module 5 Summary
 
 You now know:
+
 - 🗄️ 4 database categories: Relational, NoSQL, In-memory, Analytical
 - 🐘 RDS = managed SQL; Multi-AZ for HA; Read Replicas for read scaling
 - 🌟 Aurora = MySQL/PG-compatible, 5x faster, auto-scaling storage, Serverless option, Global Database

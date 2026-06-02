@@ -120,6 +120,7 @@
 ## 🏆 Exam Power Phrases
 
 ✅ Often **right**:
+
 - "Document the findings (Step 6)"
 - "Follow company policy"
 - "Get CAB approval before high-risk change"
@@ -129,6 +130,7 @@
 - "Verify with the user before closing the ticket"
 
 ❌ Often **wrong**:
+
 - "Skip documentation"
 - "Argue with the customer"
 - "Browse user files for fun"

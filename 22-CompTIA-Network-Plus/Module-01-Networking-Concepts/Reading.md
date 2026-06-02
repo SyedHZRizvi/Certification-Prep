@@ -60,6 +60,7 @@ The wire, the radio wave, the photon. Everything analog — voltage levels, freq
 Hop-to-hop delivery on a single network segment. Layer 2 frames carry data between *directly attached* devices using **MAC addresses** (48-bit hardware addresses burned into NICs). When traffic needs to cross a router, the L2 frame is stripped and a *new* L2 frame is built for the next hop.
 
 **Sublayers:** IEEE 802 split L2 into two sublayers:
+
 - **LLC (Logical Link Control)** — defined in IEEE 802.2; provides multiplexing/flow control above MAC
 - **MAC (Media Access Control)** — defined per medium: 802.3 (Ethernet), 802.11 (Wi-Fi), 802.15 (Bluetooth/Zigbee)
 
@@ -229,6 +230,7 @@ How many recipients does a single transmission target?
 **Two-tier "collapsed core"** — Distribution and Core combined; common for small/mid enterprises.
 
 **Spine-and-leaf** — modern data-center design that replaces three-tier:
+
 - **Spine** switches form the backbone; **leaf** switches connect servers
 - Every leaf connects to every spine (full mesh between layers)
 - Predictable latency (always 2 hops within the fabric); horizontal scale by adding leaves
@@ -329,6 +331,7 @@ This is a *perfect* PBQ-style scenario: CompTIA loves to ask "at which OSI layer
 **Outcome.** On **21 October 2016**, Mirai was unleashed against **Dyn**, a major DNS provider. The attack — peaking at ~1.2 Tbps — overwhelmed Dyn's authoritative DNS servers. Because vast portions of the eastern US Internet (Twitter, Reddit, GitHub, Spotify, Netflix, The New York Times, Airbnb) used Dyn for DNS resolution, *those services became unreachable even though their own infrastructure was fine* — browsers couldn't resolve their hostnames. Outages lasted ~11 hours and cascaded across the country. The Mirai source code was leaked on Hack Forums by "Anna-Senpai" (Jha) the same month, spawning dozens of variants still active in 2026. The three authors pleaded guilty in December 2017.
 
 **Lesson for the exam / for practitioners.** Mirai is the canonical case study for *every* major Network+ concept in this module:
+
 - **OSI Layer 1** — IoT vendors shipped insecure firmware on physical devices with no plan to ever patch them
 - **OSI Layer 2** — at scale, switches in front of victim infrastructure flooded their MAC tables and CAM lookups
 - **OSI Layer 3/4** — the attack was a flood of L3 packets (UDP datagrams, ICMP echoes, fragmented IP packets) and L4 TCP SYN floods at line rate
@@ -348,6 +351,7 @@ This case is exactly what Network+ tests when asking, "Which OSI layer was attac
 ## ✅ Module 1 Summary
 
 You now know:
+
 - 🌐 The **7 OSI layers** in order, what each does, and the PDU at each
 - 📦 **Encapsulation** — how data is wrapped layer by layer
 - 🕸️ Major **topologies** (bus, star, ring, mesh, hybrid) and the full-mesh formula

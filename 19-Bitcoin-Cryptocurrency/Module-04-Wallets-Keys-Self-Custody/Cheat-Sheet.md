@@ -150,6 +150,7 @@
 - ✅ "PSBT for multi-step signing"
 
 Often wrong:
+
 - ❌ "Custodial is always safer"
 - ❌ "Reuse the same address"
 - ❌ "Store seed in iCloud"

@@ -131,6 +131,7 @@ Reinforce in prompts with delimiters + explicit "data not instructions" labels.
 ## 🏆 Exam Power Phrases
 
 ✅ Often **right**:
+
 - "Treat tool outputs as untrusted input ALWAYS"
 - "Defense in depth — no single layer is enough"
 - "Use a different model family as the safety judge"
@@ -138,6 +139,7 @@ Reinforce in prompts with delimiters + explicit "data not instructions" labels.
 - "Continuous adversarial regression suite catches incidents"
 
 ❌ Often **wrong**:
+
 - "A strong system prompt is sufficient"
 - "Model refusals catch all jailbreaks"
 - "Indirect injection is theoretical"
@@ -161,6 +163,7 @@ Reinforce in prompts with delimiters + explicit "data not instructions" labels.
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. 3 injection categories? ___
 2. 5 jailbreak families? ___
 3. 7 defense patterns? ___

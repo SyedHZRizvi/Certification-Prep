@@ -52,6 +52,7 @@ Begin with [Module 1: Entra ID Fundamentals →](./Module-01-Entra-ID-Fundamenta
 ## 🎯 What You'll Learn
 
 By the end of this track, you'll be able to:
+
 - Stand up and brand a Microsoft Entra ID tenant, add custom domains, and pick the right license SKU (Free, P1, P2, External ID)
 - Create, manage, and bulk-provision users, security groups, M365 groups, and dynamic groups using attribute-based rules
 - Invite, audit, and govern external guests via B2B collaboration and Entra External ID
@@ -100,6 +101,7 @@ By the end of this track, you'll be able to:
 🔗 **[Microsoft Learn SC-300 study guide](https://learn.microsoft.com/credentials/certifications/resources/study-guides/sc-300)** — the exact, current list of "skills measured." Print it. Tick off every bullet as you study. Microsoft refreshes it every 3–6 months — always trust the latest version over any third-party course.
 
 Also bookmark:
+
 - 🔗 [Microsoft Entra documentation](https://learn.microsoft.com/entra/) — official docs (split into Identity, External ID, Identity Governance, ID Protection)
 - 🔗 [Microsoft Graph PowerShell reference](https://learn.microsoft.com/powershell/microsoftgraph/) — every Graph cmdlet you'll need
 - 🔗 [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program) — free E5 tenant for hands-on

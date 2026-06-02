@@ -160,6 +160,7 @@ A subset of Azure Monitor specifically for application-level telemetry (requests
 | Classic | Legacy standalone |
 
 Auto-instrument options:
+
 - **.NET / Java / Node / Python**: SDK or auto-instrumentation in App Service "Application monitoring"
 - **AKS**: enable via the Azure Monitor add-on
 - **Browser JS**: small script for client-side telemetry
@@ -321,6 +322,7 @@ A typical end-to-end Azure Monitor scenario:
 ## ✅ Module 10 Summary
 
 You now know:
+
 - 📡 Azure Monitor architecture: metrics + logs + diagnostic settings + alerts
 - 📊 Log Analytics workspace mechanics + KQL basics
 - 🚨 Alert rules + action groups + automation
@@ -345,6 +347,7 @@ You now know:
 **Situation.** At 04:09 UTC on July 19, 2024, CrowdStrike pushed a routine configuration update to its **Falcon Sensor** endpoint-protection product. The update — a "Channel File 291" supporting the Inter-Process Communication (IPC) detection engine — contained a logic-defect parser that caused the Falcon kernel-mode driver to dereference an invalid memory address on Windows hosts. The Windows kernel responded with a `PAGE_FAULT_IN_NONPAGED_AREA` blue-screen-of-death. Within ~90 minutes, **~8.5 million Windows hosts globally** were stuck in a BSOD-and-reboot loop. Microsoft Azure-hosted Windows VMs that ran Falcon were among the affected, but the impact was substantially broader than Azure — every airline that used Falcon (Delta, United, Frontier), most major hospitals, banks, and government systems went dark for hours-to-days (CrowdStrike post-incident review, *Channel File 291 Incident Root Cause Analysis*, 2024-07-24; *Wall Street Journal*, *CrowdStrike's $5.4 billion outage*, 2024-07-25).
 
 For Azure admins specifically, the relevant facts:
+
 - **Microsoft Defender for Cloud / Sentinel** dashboards lit up red within minutes of the cascade.
 - **Azure Monitor metric alerts** on VM uptime fired across affected subscriptions.
 - **Azure Service Health** dashboard *did not* show an outage — because Microsoft's infrastructure was fine; the third-party EDR agent was failing.
@@ -353,6 +356,7 @@ For Azure admins specifically, the relevant facts:
 **Decision.** The remediation required physical or near-physical access to each affected machine: boot to Safe Mode, delete the bad Channel File 291 from `C:\Windows\System32\drivers\CrowdStrike\`, reboot. Cloud VMs were *easier* than physical machines because Azure Serial Console, Run Command, and (eventually) a Microsoft Recovery Tool published on July 21 could automate the fix at scale.
 
 What this module's tooling does to detect and respond to incidents like this:
+
 1. **Azure Monitor metric alert** on `VMAvailability` < 100% with a 5-minute window: page on-call within minutes of fleet-wide degradation.
 2. **Log Analytics KQL** queries against `Heartbeat` table aggregating by `Computer` and `OperatingSystemName`: identify which VMs are silent in the last 10 minutes, sliceable by tag (`Environment=Prod`, `BusinessUnit=Trading`).
 3. **Diagnostic settings** on every VM sending logs to a central workspace so post-incident root-cause is feasible (the BSOD loop prevented agent-based log shipping during the outage, but pre-outage logs still help).
@@ -362,6 +366,7 @@ What this module's tooling does to detect and respond to incidents like this:
 **Outcome.** The outage's direct global cost is estimated at **>$5.4 billion** (insurance broker Parametrix, 2024-08). Delta Air Lines alone reported $550M+ in losses and sued CrowdStrike. CrowdStrike's share price dropped ~30% over the following two weeks. The incident triggered industry-wide reviews of (a) the kernel-mode driver privilege model on Windows — Microsoft announced reduced kernel-mode dependencies for security vendors in 2024-09, and (b) the maturity of *organization-wide observability* — many affected organizations discovered they did not have a single dashboard showing fleet health, and could not query "how many of my Windows VMs are reachable?" in under an hour.
 
 **Lesson for the exam / for practitioners.** Three AZ-104-tested controls would have shortened your particular response:
+
 1. **A metric alert on VM availability** wired to an action group with both a page (PagerDuty/Teams) and an Azure Automation runbook — the on-call gets called *and* an auto-remediation script starts.
 2. **A workbook-based operational dashboard** that doesn't require KQL fluency in the moment — your TOC fills in pre-built parameters and gets answers in seconds.
 3. **An updated incident-response runbook** (in the *Govern* layer of NIST CSF 2.0) that names the action group, the workbook, the Run Command playbook, and the Defender for Cloud investigation flow. CrowdStrike's victims who recovered fastest were those whose IR runbooks already contemplated "third-party agent caused all our VMs to BSOD" as a generic incident class.

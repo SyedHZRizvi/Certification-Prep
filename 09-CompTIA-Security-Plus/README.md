@@ -51,6 +51,7 @@ Begin with [Module 1: Security Fundamentals →](./Module-01-Security-Fundamenta
 ## 🎯 What You'll Learn
 
 By the end of this track, you'll be able to:
+
 - Recognize every major threat type, threat actor, and attack vector on sight (Sec+ is acronym-heavy — you'll know them cold)
 - Pick the right control (technical/managerial/operational/physical × preventive/detective/corrective/etc.) for any scenario
 - Reason about cryptography: symmetric vs asymmetric, hashing, digital signatures, PKI/certificates
@@ -106,6 +107,7 @@ Once you've completed the 10 modules and three practice exams, you have **two mo
 🔗 **[Professor Messer's free SY0-701 video course](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video-training-course/)** — Hundreds of bite-sized videos that cover every objective. Free. The de facto Sec+ teacher. Pair them with [Messer's Notes (paid PDF)](https://www.professormesser.com/) for the perfect lecture+notes combo.
 
 Honorable mentions:
+
 - 📘 *CompTIA Security+ SY0-701 Cert Guide* (Omar Santos) — the most rigorous book
 - 📘 *Mike Chapple's Sec+ Study Guide (Sybex)* — clear writing, great practice questions
 - 📘 *Darril Gibson's Get Certified Get Ahead (GCGA)* — battle-tested classic; the "100 Question Pre-Test" alone is gold

@@ -140,6 +140,7 @@ Entra Connect Configuration Wizard → Domain and OU filtering →
 ### Attribute filtering
 
 Limit which AD attributes sync to Entra. Default = a Microsoft-published set (UPN, displayName, mail, etc.). You can:
+
 - Exclude attributes you don't want in the cloud (e.g. `extensionAttribute7` containing salary).
 - Add custom attributes via **directory extensions**.
 
@@ -260,6 +261,7 @@ The correct order:
 ## ✅ Module 7 Summary
 
 You now know:
+
 - 🌉 The hybrid landscape: on-prem AD + Connect/Cloud Sync + Entra
 - ⚖️ Entra Connect (full, legacy) vs Cloud Sync (modern, lighter) — and which features each supports
 - 🔐 Three auth topologies: PHS (recommended), PTA (no hash in cloud), Federation (deprecated)
@@ -282,12 +284,14 @@ You now know:
 **Situation.** Lufthansa Group (~100,000 employees across multiple airlines + maintenance + cargo) ran Microsoft AD FS for nearly a decade as the primary authentication topology for Entra ID. By 2022, AD FS had become a strategic liability: (1) Microsoft was funneling all new Entra capabilities (Conditional Access richness, Identity Protection signals, FIDO2 sign-in) through cloud-auth paths that AD FS bypassed; (2) Lufthansa's AD FS farm required ~12 servers globally + 3 SOC engineers to patch and monitor; (3) the 2022 Log4j vulnerability scare highlighted that on-prem federation servers are high-value targets and create blast-radius across all cloud sign-ins.
 
 **Decision.** Lufthansa publicly described their 18-month migration to PHS + Seamless SSO at Microsoft Ignite 2023 and the IDM 2024 conference:
+
 1. **Enable PHS in parallel** (2022 Q3). PHS as a backup auth method while AD FS remained primary. Tested cloud-auth sign-in on a 500-user pilot.
 2. **Migrate domains in waves** (2022 Q4 – 2023 Q3). Per-domain conversion from Federated → Managed (PHS). Used Microsoft's `Set-MgDomainFederationConfiguration` Graph cmdlet (and the equivalent MSOnline cmdlet for older PowerShell). Each wave ran with a 2-week pilot + monitoring + rollback plan.
 3. **Decommission AD FS** (2023 Q4 – 2024 Q1). After all domains migrated, retired the AD FS farm.
 4. **Adopt CBA for smart-card scenarios** (2024 Q2). The 2,000 employees with smart-card sign-in (pilots, maintenance) migrated from AD FS-based CBA to Entra-native CBA (Module 3 coverage). No federation needed.
 
 **Outcome.** Per Lufthansa's case study (Microsoft customer story, 2024-09):
+
 - **AD FS servers reduced** from 12 to 0 (decommissioned by 2024-Q2).
 - **Mean time to detect a sign-in anomaly** dropped from ~hours to ~15 minutes (Identity Protection now has full signal).
 - **CA policy effectiveness** improved measurably — pre-migration, CA only saw federated sign-in events for ~20% of attempted controls; post-migration, 100%.

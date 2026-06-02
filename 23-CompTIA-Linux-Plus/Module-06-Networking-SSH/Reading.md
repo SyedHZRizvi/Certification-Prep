@@ -318,6 +318,7 @@ Host *.corp.com
 ```
 
 Now `ssh internal.corp.com` automatically:
+
 1. Connects to `bastion.corp.com:22` as `diego`
 2. From there, connects to `internal.corp.com` as `diego` with the corp key
 
@@ -505,13 +506,16 @@ wget https://example.com/file.tar.gz      # download
 
 1. **DNS resolution worked** (we got an IP). Confirm: `getent hosts api.internal.corp` → returns `10.0.5.20`. ✅
 2. **L3 reachability:** `ping -c2 10.0.5.20`. If this fails:
+
    - Routing issue → `ip route get 10.0.5.20` shows the route. Wrong gateway? `ip neigh` shows ARP. Missing route → `ip route add ...`.
    - Network segmentation → talk to network team.
 3. **L4 reachability:** `nc -vz 10.0.5.20 8443`. If this fails but ping works:
+
    - **Server-side firewall** (firewalld/iptables on the API host) blocking 8443.
    - **Network firewall** between you and the API blocking 8443.
    - **Server-side service not listening on the expected port** — verify on the API host: `ss -lnp sport :8443`.
 4. **TLS handshake:** `openssl s_client -connect 10.0.5.20:8443 -servername api.internal.corp`. If it errors:
+
    - Cert mismatch / expired / untrusted CA.
    - SNI mismatch (server returns wrong cert).
 5. **Application response:** `curl -v https://10.0.5.20:8443 --resolve api.internal.corp:8443:10.0.5.20`. If TLS works but the app returns 500/404, talk to the app team.
@@ -607,6 +611,7 @@ These all surface in PBQs as "you locked yourself out — what's the right way?"
 ## ✅ Module 6 Summary
 
 You now know:
+
 - 🌐 The **layer model** for systematic troubleshooting
 - 🧱 **iproute2** (`ip`, `ss`) and how it replaces ifconfig/netstat/route/arp
 - 🗺️ **DNS resolution** chain (hosts → resolv.conf → nsswitch) and tools (dig, host, getent)

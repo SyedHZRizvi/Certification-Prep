@@ -52,6 +52,7 @@ This is the gap MD-102 expects you to close. The answer is the four enrollment p
 ## 🍎 Apple Business Manager (ABM) & Automated Device Enrollment (ADE)
 
 Apple Business Manager (ABM) — formerly DEP, Device Enrollment Program — is Apple's portal where you:
+
 - **Add devices** you purchased from Apple or authorized resellers (linked to your Apple Customer Number)
 - **Assign devices to your MDM** (in our case, Microsoft Intune)
 - **Purchase apps via Apple Volume Purchase Program (VPP)** and assign device or user tokens
@@ -73,6 +74,7 @@ Apple Business Manager (ABM) — formerly DEP, Device Enrollment Program — is 
 ### Supervision
 
 Supervised iOS / iPadOS devices unlock additional MDM capabilities:
+
 - Single-app mode (kiosk)
 - App allow/block lists
 - Restrictions on app installs from outside MDM
@@ -329,6 +331,7 @@ The correct sequence:
 ## ✅ Module 4 Summary
 
 You now know:
+
 - 📲 The 4 enrollment paths and platform-specific quirks
 - 🍎 Apple Business Manager + ADE flow and why supervision needs it
 - 🤖 Android Enterprise's 4 scenarios (BYOD, COPE, fully managed, COSU)

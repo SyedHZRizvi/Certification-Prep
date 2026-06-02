@@ -143,6 +143,7 @@ Abstract     · The one-paragraph thesis
 ## 🏆 Power Phrases
 
 When you see these, they're often correct on exam:
+
 - ✅ "Pseudonymous, not anonymous"
 - ✅ "Longest *cumulative-work* chain (not most blocks)"
 - ✅ "Trust-minimized, permissionless"
@@ -150,6 +151,7 @@ When you see these, they're often correct on exam:
 - ✅ "21M asymptotic cap"
 
 When you see these, they're often wrong:
+
 - ❌ "Anonymous"
 - ❌ "Instant final settlement"
 - ❌ "Free transactions"
@@ -161,6 +163,7 @@ When you see these, they're often wrong:
 ## ✏️ Quick Self-Check
 
 Cover answers and recite:
+
 1. White-paper date and venue? ___
 2. Pre-Bitcoin systems Satoshi cited (two)? ___
 3. April 2024 subsidy? ___

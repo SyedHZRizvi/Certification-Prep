@@ -37,6 +37,7 @@ You will produce all seven. Each is graded against the rubric below. The total i
 ### Deliverable 1: Management Group Hierarchy + Subscription Plan (15 points)
 
 A diagram + Markdown specification of:
+
 - Tenant root structure (Platform / Landing Zones / Sandbox per CAF Enterprise-Scale, 2020)
 - Subscription strategy for **Pilot Prod**, **Pilot NonProd**, **Shared Services**, **Connectivity**, **Identity** — what goes in which sub and why
 - Migration plan for the 11 existing dev-team subs into the new tree without disrupting their work
@@ -85,6 +86,7 @@ A diagram + Markdown specification of:
 ### Deliverable 6: Governance + Cost Management (10 points)
 
 - 6-initiative Azure Policy plan at the Landing Zones MG:
+
   1. Microsoft Cloud Security Benchmark (MCSB) baseline
   2. HIPAA HITRUST initiative (built-in)
   3. Allowed Locations (US West regions only)
@@ -147,6 +149,7 @@ A diagram + Markdown specification of:
 ## What "submission" looks like
 
 A single folder/repo containing:
+
 - `00-Executive-Summary.md` (1 page)
 - `01-MG-Subscriptions.md` + diagram (PNG or draw.io)
 - `02-Identity.md` + PIM tree diagram + 8-policy CA matrix (table)

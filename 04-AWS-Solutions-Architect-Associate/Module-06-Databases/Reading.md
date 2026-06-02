@@ -14,6 +14,7 @@
 ## 🍔 A Story: The Restaurant That Outgrew Its Notebook
 
 Maya opens a deli with one notebook for orders. As she grows:
+
 - She makes copies of the notebook so cashiers can write in parallel — that's **read replicas**.
 - She copies one notebook into a safety-deposit box across town — that's **Multi-AZ standby**.
 - She switches from paper to a Rolodex when orders explode — that's **DynamoDB** (key-value lookup, scales to anything).
@@ -311,6 +312,7 @@ Columnar storage, MPP (massively parallel processing). For **OLAP / analytics**,
 ## ✅ Module 6 Summary
 
 You now know:
+
 - 🗂️ The 10+ AWS database services and their use cases
 - 🛢️ RDS Multi-AZ vs Read Replicas
 - 🌿 Aurora (including Global, Serverless v2, Backtrack)
@@ -345,6 +347,7 @@ You now know:
 **Outcome.** Zoom served 300M daily participants with <1s p99 latency on meeting join — a number that would have been unthinkable in late 2019. Revenue grew from $623M (FY2020) to $4.1B (FY2022) — a 6.5× revenue increase in 2 years, mostly enabled by the architectural elasticity. The architecture choices became Yuan's most-cited case study in subsequent SaaS investor presentations.
 
 **Lesson for the exam / for practitioners.** Every "database scaling under unpredictable load" trope on the SAA exam came from this period:
+
 - **DynamoDB On-Demand vs Provisioned** — On-Demand is the exam's reflexive answer for "unpredictable spiky workload"; provisioned (with Auto Scaling) wins on cost at *predictable* scale
 - **Aurora Serverless v2** (released GA April 2022, after Zoom's surge) — would be the modern answer to "spiky relational workload"
 - **Read Replicas vs Multi-AZ** — Zoom used *both* simultaneously. Multi-AZ for HA, replicas for read scaling. The exam tests whether you know they solve different problems

@@ -114,39 +114,47 @@ You need **three free things** to study effectively:
 ## 📚 Free Resources To Bookmark RIGHT NOW
 
 ### For Scrum Master:
+
 1. **The Scrum Guide** (the *only* official source) — <https://scrumguides.org/scrum-guide.html>
    - It's 13 pages. **Read it 3+ times before the exam.**
 2. **Scrum.org Open Assessments** (free practice questions) — <https://www.scrum.org/open-assessments>
 
 ### For PMP:
+
 1. **PMI Exam Content Outline** — <https://www.pmi.org/-/media/pmi/documents/public/pdf/certifications/pmp-examination-content-outline.pdf>
 2. **Process Groups: A Practice Guide** (PMI publication, library access often free)
 3. **Andrew Ramdayal's free PMP videos** — search "Andrew Ramdayal PMP" on YouTube
 
 ### For AWS (CLF-C02 / SAA-C03 / AIF-C01):
+
 1. **AWS Skill Builder** (free official training) — <https://skillbuilder.aws/>
 2. **AWS Certification overview** + exam guides — <https://aws.amazon.com/certification/>
 3. **AWS Well-Architected Framework** (required reading for SAA-C03) — <https://aws.amazon.com/architecture/well-architected/>
 
 ### For Azure (AZ-900 / AZ-104 / AI-102):
+
 1. **Microsoft Learn** (official training portal, exam-aligned learning paths) — <https://learn.microsoft.com/training/>
 2. **Microsoft Learn Practice Assessments** (official, exam-style) — linked from each certification page on <https://learn.microsoft.com/credentials/certifications/>
 3. **Microsoft Reactor / Virtual Training Days** (community events, sometimes include exam vouchers) — <https://developer.microsoft.com/reactor/>
 
 ### For CompTIA Security+ (SY0-701):
+
 1. **Professor Messer's SY0-701 video course** — <https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/sy0-701-comptia-security-plus-course/>
 2. **CompTIA SY0-701 exam objectives PDF** (the source of truth) — <https://www.comptia.org/certifications/security>
 
 ### For ASCM CSCP / CPIM / CLTD:
+
 1. **ASCM Certification pages** (free exam content outlines + sample questions) — <https://www.ascm.org/learning-development/certifications-credentials/>
 2. **ASCM Learning System** (official; widely considered required for serious candidates)
 3. **APICS Dictionary** (vocabulary is heavily tested)
 
 ### For ISM CPSM:
+
 1. **ISM CPSM Certification overview** — <https://www.ismworld.org/certification-and-training/certification/cpsm-certification/>
 2. **ISM Diagnostic Practice Exam** (paid sampler — closest free-ish practice)
 
 ### For AI Digital Marketing (14-18):
+
 1. **HubSpot Academy** (free certifications: Inbound, Content Marketing, Email Marketing) — <https://academy.hubspot.com/>
 2. **Google Skillshop** (free official Google Ads + Analytics + GA4 certifications) — <https://skillshop.exceedlms.com/>
 3. **Meta Blueprint** (free Meta/Facebook/Instagram ads training and certifications) — <https://www.facebookblueprint.com/>

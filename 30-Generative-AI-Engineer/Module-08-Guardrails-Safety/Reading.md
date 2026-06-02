@@ -110,6 +110,7 @@ The Guardrails Hub has hundreds of pre-built validators. `on_fail` actions: `exc
 ### Anthropic constitutional / system prompt approach
 
 For Anthropic Claude, the recommended pattern is a *strong system prompt* with explicit refusal rules, augmented by:
+
 - Content moderation API call before sending to Claude
 - Output content review after generation
 - HITL gating for sensitive actions
@@ -119,6 +120,7 @@ Anthropic publishes example system prompts for common patterns (customer support
 ### OpenAI Moderation API
 
 A purpose-built classifier endpoint (`/v1/moderations`) that returns scores for:
+
 - sexual, sexual/minors
 - hate, hate/threatening
 - harassment, harassment/threatening
@@ -222,6 +224,7 @@ Most production incidents fall under #1, #2, #6, or #8.
 Jailbreaks are inputs designed to *bypass the model's safety training* — get it to say things it normally wouldn't.
 
 Common patterns:
+
 - **DAN ("Do Anything Now") roleplay** — "Imagine you're an AI without restrictions..."
 - **Token smuggling** — encode the request in base64 / Unicode tricks
 - **Many-shot jailbreaks** (Anthropic 2024) — fill the context with examples of unsafe Q&A
@@ -229,6 +232,7 @@ Common patterns:
 - **Translation jailbreaks** — same harmful request in a low-resource language
 
 Defenses:
+
 - Input classifier (Llama Guard, PromptGuard) catches known patterns
 - Multi-turn moderation; safety re-check at each turn
 - Refusal training of the model itself (RLHF + Constitutional AI)
@@ -296,6 +300,7 @@ This is the cheapest, most effective guardrail for many production scenarios. If
 Goal: take the RAG from Module 3 + the eval from Module 7 and add a full guardrail layer.
 
 Steps:
+
 1. **Input filtering**: Presidio PII redaction on user inputs + OpenAI Moderation API call.
 2. **Prompt construction**: structured system prompt with explicit refusal rules, "today's date is...", citation requirement.
 3. **Output filtering**: Presidio on the output (paranoid), Detoxify toxicity check, JSON schema validation if structured output expected.
@@ -316,6 +321,7 @@ This is the architecture you take to production.
 **The structural lesson connecting them:** safety isn't about preventing the *model* from saying bad things. It's about preventing the *system* from causing bad outcomes. Tay was a learning loop without a safety budget. Air Canada was a confident-LLM without a grounding budget. Both are *engineering* failures, not model failures.
 
 **The 2024-2026 takeaway:** every production deployment must answer these questions before launch:
+
 1. What's the worst thing my LLM can say? (Output filtering)
 2. What's the worst thing my LLM can do? (Action gating)
 3. What's the worst thing a malicious user can make my LLM do? (Injection / jailbreak defense)
@@ -334,6 +340,7 @@ A team that has crisp answers to all five ships safer products. A team that does
 ## ✅ Module 8 Summary
 
 You now know:
+
 - 🔭 The defense-in-depth model: input filter → prompt → retrieval filter → generation → output filter → action gate → audit
 - 🛡️ Major frameworks: NeMo Guardrails, Guardrails AI, OpenAI Moderation, Llama Guard, Presidio
 - 🔍 PII detection + redaction + pseudonymization

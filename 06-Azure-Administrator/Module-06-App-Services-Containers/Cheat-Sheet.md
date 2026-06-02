@@ -83,6 +83,7 @@ Storage CSI: **AzureDisk (RWO)** · **AzureFile (RWX)** · Blob CSI
 ## 🏆 Exam Power Phrases
 
 Often **correct**:
+
 - ✅ "Use deployment slots with Standard or higher"
 - ✅ "Premium v3 plan for private endpoint + zone redundancy"
 - ✅ "AGIC / AGFC for L7 ingress with WAF"
@@ -90,6 +91,7 @@ Often **correct**:
 - ✅ "Mark connection strings as Slot setting"
 
 Often **wrong**:
+
 - ❌ "Slots on Basic tier"
 - ❌ "ACI for long-running stateful workload"
 - ❌ "Kubenet for new clusters"

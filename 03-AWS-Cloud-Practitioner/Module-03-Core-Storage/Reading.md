@@ -275,6 +275,7 @@ You order via the AWS console → AWS ships the device → you copy data → shi
 ## ✅ Module 3 Summary
 
 You now know:
+
 - 📦 Block (EBS), File (EFS/FSx), Object (S3) — the 3 storage paradigms
 - ☁️ S3 storage classes (Standard, IA, One Zone-IA, Intelligent-Tiering, 3 Glacier tiers)
 - 💽 EBS volume types (gp3, gp2, io2, st1, sc1) and the AZ-scoping rule

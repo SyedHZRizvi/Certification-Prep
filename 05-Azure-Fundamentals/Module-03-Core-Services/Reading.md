@@ -169,6 +169,7 @@ Storage Accounts in Azure are containers that can hold **four data services**:
 ### Cosmos DB — The exam darling
 
 Cosmos DB is the answer when the question mentions ANY of:
+
 - *Globally distributed*
 - *Multi-region writes*
 - *Single-digit millisecond latency at planet scale*
@@ -310,6 +311,7 @@ It supports multiple APIs: **NoSQL (native), MongoDB, Cassandra, Gremlin (graph)
 **Situation.** Walgreens Boots Alliance (WBA) is the world's largest pharmacy retailer — more than 9,000 stores in the U.S. (Walgreens) plus the UK Boots chain, ~10,000+ stores worldwide, and roughly **380,000 employee endpoints** as of 2023. Before 2018, WBA's IT estate was a sprawl of acquired-company datacenters from decades of M&A (Walgreens + Alliance Boots merged in 2014; Rite Aid stores were added in 2017–2018). The retailer was running point-of-sale, e-commerce, prescription-management, and customer-facing apps on owned hardware in roughly a dozen U.S. and EU datacenters. None of the pieces talked easily to each other. CEO Stefano Pessina announced a multi-year cloud strategy in 2018 with Microsoft as the partner of record (Walgreens / Microsoft joint announcement, 2019-01-15).
 
 **Decision.** WBA committed to a **7-year strategic partnership with Microsoft** worth a "multi-billion-dollar" book of business. The headline moves:
+
 - Migrate Walgreens.com, the **myWalgreens** loyalty platform, the pharmacy management system, and the corporate productivity stack to Azure + Microsoft 365 — about **380,000 endpoints** to M365 and the core retail/e-commerce stack to Azure (Microsoft press release, 2019-01-15)
 - Use **Azure Virtual Machines + VM Scale Sets** for the lifted-and-shifted Windows Server applications (legacy ERP, pharmacy back-office, Rite Aid systems)
 - Use **Azure App Service + Azure SQL Database** for the rebuilt e-commerce front-end
@@ -318,6 +320,7 @@ It supports multiple APIs: **NoSQL (native), MongoDB, Cassandra, Gremlin (graph)
 - Build a *retail-as-a-service* platform on top — Azure became the substrate WBA later used to offer in-store healthcare clinics, prescription home-delivery integration, and (post-2020) COVID vaccination scheduling at U.S. scale
 
 **Outcome.** By 2023:
+
 - WBA shut down or repurposed roughly **two-thirds of its owned datacenter footprint** (WBA infrastructure reporting, FY2023 annual report)
 - During the U.S. COVID vaccine rollout (Dec 2020 onward), Walgreens administered **70+ million doses** through Azure-hosted scheduling and inventory-management systems — a peak load that would have been impossible on the pre-2018 infrastructure
 - The myWalgreens loyalty program crossed **100 million members** in 2022, running on Azure-native data services + Azure Cosmos DB for the customer-360 profile
@@ -325,6 +328,7 @@ It supports multiple APIs: **NoSQL (native), MongoDB, Cassandra, Gremlin (graph)
 - The migration also surfaced WBA's significant *cost-pressure* problem (executive turnover 2022–2024, retail margin compression) — but the cloud platform itself is consistently cited as enabling the company to *respond faster* to those pressures than they could have on owned hardware
 
 **Lesson for the exam / for practitioners.** Three AZ-900 concepts are visible end-to-end:
+
 1. **Compute service-picker discipline.** WBA didn't move *everything* to one Azure compute service. Legacy ERP → VMs (lift-and-shift IaaS). New e-commerce → App Service (PaaS). Vaccine-scheduling APIs → Azure Functions + Cosmos DB. Bulk batch jobs → ACI / Spot. The exam's "which service?" questions reflect exactly this discipline — different workloads → different services.
 2. **Hybrid + sovereignty in one company.** UK Boots data sits in UK South (GDPR). U.S. Walgreens data sits in US East/West (HIPAA, state pharmacy boards). One global identity (Microsoft Entra ID, formerly Azure AD) ties them together. This is the canonical multi-region, multi-regulatory pattern the exam tests.
 3. **Cloud economics under pressure.** Even at 380K-endpoint scale, the math worked out — but WBA's later cost issues are a reminder that the cloud isn't a magic profitability switch. It's an *agility* lever; whether the business converts agility into profit is up to leadership. (See the §6 discussion in Module 1.)
@@ -341,6 +345,7 @@ Microsoft has used the WBA case in multiple Microsoft Mechanics and Ignite sessi
 ## ✅ Module 3 Summary
 
 You now know:
+
 - 💻 The 6 compute services and when to pick each
 - 🌐 VNet basics + VPN vs ExpressRoute + L4 vs L7 load balancing
 - 💾 Storage types + access tiers + redundancy options

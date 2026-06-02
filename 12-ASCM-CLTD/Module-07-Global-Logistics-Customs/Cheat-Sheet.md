@@ -131,6 +131,7 @@ All grant expedited customs treatment.
 ## 🏆 Exam Power Phrases
 
 Usually CORRECT:
+
 - ✅ "FCA for containers (not FOB)"
 - ✅ "Risk transfers at origin under C-terms"
 - ✅ "DDP includes import duty"
@@ -138,6 +139,7 @@ Usually CORRECT:
 - ✅ "FTA preference requires rules of origin + cert of origin"
 
 Usually WRONG:
+
 - ❌ "FOB for any ocean shipment" (only bulk-on-vessel)
 - ❌ "Risk transfers when seller pays freight"
 - ❌ "DAT" (renamed to DPU)

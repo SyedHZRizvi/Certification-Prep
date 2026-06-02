@@ -714,6 +714,7 @@ D. Gatekeeping / disposition
 ## 🔍 Review Process
 
 For EACH wrong answer:
+
 1. Identify the module
 2. Re-read that module's Reading.md
 3. Add an Anki flashcard

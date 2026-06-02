@@ -64,6 +64,7 @@ The model did not actually *execute* anything. It only *requested* tool calls. W
 ```
 
 The three actors:
+
 1. **Claude** — decides *which* tool, *with what arguments*. Does NOT execute.
 2. **Your code** — receives the `tool_use` request, executes the actual API call, returns the result as a `tool_result`.
 3. **The user** — never sees the tool dance unless your UI surfaces it.
@@ -410,6 +411,7 @@ Anthropic's official **claude-code** (the CLI you may be using right now) is a p
 | `TodoWrite` | Update the agent's persistent todo list |
 
 Notice:
+
 - Verbs as names
 - Each does ONE thing
 - Read/Edit/Write split rather than a single overloaded "FileOp"
@@ -479,6 +481,7 @@ tools = [
 ```
 
 Notice the deliberate design choices:
+
 - **`charge_customer` requires `confirm=True`** — the model cannot accidentally trigger it
 - **Side-effect status is in the description** — Claude can reason about reversibility
 - **`hold_seats` exists** so the model can pause before charging — this is a *reasoning aid*, not a UX nicety
@@ -545,6 +548,7 @@ This is what production tool design looks like.
 ## ✅ Module 4 Summary
 
 You now know:
+
 - 🧩 **The three-step dance** — user → Claude → your code → Claude
 - 📐 **Tool definitions** — `name`, `description`, `input_schema` (JSON Schema)
 - 🔁 **The multi-turn loop** — `tool_use` → execute → `tool_result` → repeat until `end_turn`

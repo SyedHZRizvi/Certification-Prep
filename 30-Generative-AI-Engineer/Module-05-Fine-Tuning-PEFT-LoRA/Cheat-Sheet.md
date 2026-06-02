@@ -133,6 +133,7 @@ y = W · x + (B · A) · x · (alpha / r)
 ## 🏆 Exam Power Phrases
 
 ✅ Often **right**:
+
 - "Prompt → RAG → Fine-tune, in that order"
 - "QLoRA: NF4 + double quant + paged optimizers"
 - "LoRA: low-rank approximation of ΔW"
@@ -141,6 +142,7 @@ y = W · x + (B · A) · x · (alpha / r)
 - "Hold out an eval set; never train on it"
 
 ❌ Often **wrong**:
+
 - "Always fine-tune"
 - "Train from scratch for a domain LLM"
 - "More data is always better"

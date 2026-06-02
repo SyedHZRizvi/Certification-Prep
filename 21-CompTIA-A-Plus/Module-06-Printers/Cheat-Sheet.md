@@ -103,6 +103,7 @@
 ## 🏆 Exam Power Phrases
 
 ✅ Often **right**:
+
 - "Recite the 7 steps in order"
 - "Ping the printer IP first"
 - "Run the cleaning utility (inkjet)"
@@ -110,6 +111,7 @@
 - "Restart Print Spooler"
 
 ❌ Often **wrong**:
+
 - "Replace the printer first"
 - "Inkjet head clean works on lasers"
 - "Direct thermal uses ink"

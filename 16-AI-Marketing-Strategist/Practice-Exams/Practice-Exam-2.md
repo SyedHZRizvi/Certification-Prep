@@ -403,6 +403,7 @@ D. $180K–$280K
 For each wrong answer, identify which module covered it (1–10), re-read that module, add an Anki card, and retest in 3 days.
 
 The most common failure modes on this exam:
+
 - Confusing the **3 canonical retention curve shapes** (Q42)
 - Forgetting **MMM ad-stock half-life math** (Q22)
 - Misremembering **GA4 DDA volume threshold** (Q15)

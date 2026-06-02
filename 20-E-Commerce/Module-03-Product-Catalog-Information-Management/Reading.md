@@ -11,6 +11,7 @@ In 2018, Home Depot had 700,000 SKUs in its e-commerce catalog. Attribute covera
 The CMO and CIO commissioned a six-year transformation. By 2024, Home Depot had **2.5 million SKUs** in catalog (a 3.6x increase driven by marketplace expansion to Home Depot's seller program), and the catalog ran on a unified PIM (built in-house on a Salsify-like architecture). Attribute coverage rose from 64% complete to 96% complete across the top 100 priority attributes by category. Site search relevance — measured by Search-to-PDP click rate — improved by 41%.
 
 What did they do? Three things:
+
 1. **Defined the master attribute schema** — every product family got 50-200 required attributes, governed by a central data team.
 2. **Built a supplier portal** — 11,000+ suppliers self-served attribute updates through a structured form (matched to the schema).
 3. **Automated quality scoring** — every product had a "Catalog Health Score" visible to the merchant team; low-score products got flagged for remediation.
@@ -47,6 +48,7 @@ DESTINATION CHANNELS:
 ```
 
 PIM is NOT the same as:
+
 - **ERP** (Enterprise Resource Planning — financial transactions, inventory accounting)
 - **PLM** (Product Lifecycle Management — design, manufacturing, retirement)
 - **DAM** (Digital Asset Management — images, videos, files)
@@ -78,6 +80,7 @@ PIM is NOT the same as:
 Akeneo is open-source (since 2013), French-founded, raised $135M from Summit Partners in 2022. Architecture: Symfony PHP framework, Elasticsearch indexing, MySQL backend, REST + GraphQL APIs.
 
 Core concepts:
+
 - **Family** — a product type with a shared attribute set (e.g., "Bed sheet" has attributes: material, thread count, size, color, certifications).
 - **Attribute** — a single data point (e.g., "thread count" with type integer, min 200, max 1200).
 - **Channel** — a destination (e.g., "Shopify", "Amazon US", "Amazon UK", "Print catalog FR"). Each channel has its own locale and currency.
@@ -117,6 +120,7 @@ Every product data model has three levels:
 | GTIN-14 | 14 digits | The unified umbrella standard |
 
 GTIN matters because:
+
 - **Google Merchant Center** requires GTIN for branded products. Missing GTIN = feed disapproval = no Shopping Ads.
 - **Amazon** requires GTIN for the Amazon Catalog (ASINs are derived from GTINs).
 - **Walmart Marketplace** requires GTIN.
@@ -176,6 +180,7 @@ Product images, videos, swatches, lifestyle photography. Live alongside PIM (oft
 ## 🌐 Localization and Translation
 
 Multi-locale catalogs require:
+
 - **Translation** — product titles, descriptions, attribute names, attribute values.
 - **Currency** — price per locale (not just a single exchange rate).
 - **Units** — metric vs imperial (cm vs inches, kg vs lbs).
@@ -197,6 +202,7 @@ Multi-locale catalogs require:
 **Situation.** In 2018, Home Depot's e-commerce catalog had 700,000 SKUs sourced from 8,000+ suppliers. Attribute coverage was inconsistent: many products had a length but no width; many had a brand but no model number; many had unimaginative product titles like "Light Bulb." The site search team measured a 38% search-result drop-off (searcher clicks → bounces) on long-tail queries. Google Shopping feed disapproval was 18% — meaning ~125K SKUs couldn't run paid Shopping ads on Google.
 
 **Decision.** In 2019, Home Depot's CIO Stephen Holmes and SVP of Digital Hector Padilla commissioned a multi-year PIM transformation:
+
 1. **Defined master attribute schema** — every product family got 50-200 required attributes. Created 22 product-family templates.
 2. **Built a supplier portal** — 11,000+ suppliers self-served updates through a structured form matched to the schema.
 3. **Automated quality scoring** — every product had a "Catalog Health Score" (0-100). Below 70 triggered remediation.
@@ -206,6 +212,7 @@ Multi-locale catalogs require:
 The team grew from 12 catalog FTEs in 2018 to 86 in 2024 (PIM ops, attribute governance, supplier enablement, image QC, translation).
 
 **Outcome.** By 2024:
+
 - Catalog size: 700K → 2.5M SKUs (3.6x).
 - Attribute coverage (top-100 priority attributes): 64% → 96%.
 - Google Shopping feed disapproval rate: 18% → < 3%.
@@ -332,6 +339,7 @@ Lily AI (founded 2017, raised $25M Series B in 2022) is a category leader: its m
 ## ✅ Module 3 Summary
 
 You now know:
+
 - 📚 What PIM is and what it's NOT (ERP, PLM, DAM, CMS)
 - 🏗️ The vendor landscape (Akeneo, Salsify, Pimcore, Plytix, inRiver)
 - 📊 The three-level attribute hierarchy (universal, family, channel-specific)

@@ -120,6 +120,7 @@ Vertex AI Search (menu/upsell grounding) + POS
 ## 🎯 Power Phrases
 
 ✅ Often **right**:
+
 - "Native multi-modal — joint training, one model, all modalities"
 - "Image ≈ 258 tokens; audio ≈ 32 tokens/sec; video ≈ 290/sec at 1 fps"
 - "Files API for >20MB or reused files"
@@ -129,6 +130,7 @@ Vertex AI Search (menu/upsell grounding) + POS
 - "PDFs: rendered to images + text extracted"
 
 ❌ Often **wrong**:
+
 - "Multi-modal tokens are free"
 - "Video processed at 30 fps default"
 - "Gemini vision is bolted on like GPT-4-Vision"

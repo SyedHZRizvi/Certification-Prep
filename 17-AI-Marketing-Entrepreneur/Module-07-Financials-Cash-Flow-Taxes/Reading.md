@@ -34,6 +34,7 @@ What went wrong?
 5. She didn't track deductible expenses → missed ~$11K in legitimate deductions
 
 Two years later, with the same revenue but a proper financial system, Tara would have:
+
 - Set aside ~$96K in a tax savings account (the "30%" rule)
 - Saved ~$8,800 by electing S-corp status (estimated; depends on facts)
 - Captured ~$11K more in deductions
@@ -311,6 +312,7 @@ You "pay yourself" via owner draws — transferring from business → personal c
 ### S-corp election
 
 You must:
+
 1. Set up payroll (Gusto, ADP, Justworks, OnPay) — typically $40–$80/mo
 2. Pay yourself a "reasonable salary" via W-2 (with all the withholding, etc.)
 3. Take any additional profits as "distributions" (no SE tax)
@@ -534,6 +536,7 @@ Sahil Bloom has publicly written about building a "family CFO" practice for his 
 ## ✅ Module 7 Summary
 
 You now know:
+
 - 🏦 Separate personal + business banking from day 1
 - 🏗️ The 4 main US entity structures + international equivalents
 - 📊 Bookkeeping tools + 15-min/week discipline

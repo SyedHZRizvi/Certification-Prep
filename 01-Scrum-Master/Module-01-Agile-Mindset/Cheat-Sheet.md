@@ -70,6 +70,7 @@
 ## 🏆 Exam Power Phrases
 
 When you see these in answers, they're often correct:
+
 - ✅ "Coach the team..."
 - ✅ "Facilitate a discussion..."
 - ✅ "Inspect and adapt..."
@@ -77,6 +78,7 @@ When you see these in answers, they're often correct:
 - ✅ "Empower the team..."
 
 When you see these, they're often **wrong**:
+
 - ❌ "The Scrum Master assigns..."
 - ❌ "Stick to the original plan..."
 - ❌ "Skip the [event] this time..."
@@ -97,6 +99,7 @@ When you see these, they're often **wrong**:
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. The 4 values? ___
 2. The 3 pillars? ___
 3. What is ScrumBut? ___

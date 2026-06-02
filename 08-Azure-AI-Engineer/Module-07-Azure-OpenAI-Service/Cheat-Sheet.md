@@ -134,6 +134,7 @@ Fine-tune file = JSONL, one `{"messages":[...]}` per line.
 ## 🏆 Exam Power Phrases
 
 **Usually right**:
+
 - ✅ "Deployment name, not model name"
 - ✅ "Use On Your Data with Azure AI Search for citations"
 - ✅ "Managed identity + Cognitive Services User"
@@ -142,6 +143,7 @@ Fine-tune file = JSONL, one `{"messages":[...]}` per line.
 - ✅ "Global Batch for cheapest async"
 
 **Usually wrong**:
+
 - ❌ "Use the multi-service resource for Azure OpenAI"
 - ❌ "Fine-tune to add facts"
 - ❌ "Disable content filters by API parameter"

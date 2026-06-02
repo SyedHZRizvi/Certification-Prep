@@ -67,6 +67,7 @@ You can take the three exams in any order, but most candidates go 1 → 2 → 3 
 ## 🎯 What You'll Learn
 
 By the end of this track you'll be able to:
+
 - Define supply management as a strategic, value-creating function (not just "purchasing")
 - Run a full category-management cycle: spend analysis → Kraljic → sourcing → award
 - Negotiate using BATNA, ZOPA, and integrative tactics — and write a contract that survives a dispute
@@ -123,6 +124,7 @@ This track also includes two course-root resources that go beyond exam preparati
 🔗 **The ISM CPSM Study Guide & Body of Knowledge** — buy the latest edition from the ISM bookstore (`ismworld.org`). The three exam blueprints (one per exam) describe every testable topic. If a question in this course contradicts the official ISM blueprint, the ISM blueprint wins.
 
 Secondary musts:
+
 - **ISM Principles of Sustainability & Social Responsibility** (free PDF on ismworld.org)
 - **Incoterms 2020** rules (International Chamber of Commerce)
 - See [Recommended-Readings.md](./Recommended-Readings.md) for the full reference library.

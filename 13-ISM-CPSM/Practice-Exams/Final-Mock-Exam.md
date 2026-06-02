@@ -1041,6 +1041,7 @@ D. 60 continuing education hours every 3 years
 ## 🔍 Review Process
 
 For EACH wrong answer:
+
 1. Identify the originating module (1–8)
 2. Re-read that module's Reading.md section
 3. Add a flashcard for the concept

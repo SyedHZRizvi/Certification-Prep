@@ -590,6 +590,7 @@ When all four infrastructure axes (CPU, RAM, disk, network) are well below satur
 ## 📊 Why #90 = B
 
 Map each requirement to the design choice:
+
 - (a) MLAG switches + cross-switch LACP team → NIC and switch redundancy
 - (b) Dedicated storage NICs + jumbo frames + MPIO → line-rate storage
 - (c) Dedicated mgmt VLAN 99 + separate iDRAC port → separation

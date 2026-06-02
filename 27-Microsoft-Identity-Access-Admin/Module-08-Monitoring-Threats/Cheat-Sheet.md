@@ -143,6 +143,7 @@ Wire as Sentinel analytics rule → page on-call immediately.
 ## 🏆 Exam Power Phrases
 
 When you see these, they're often **correct**:
+
 - ✅ "Forward to Log Analytics for >30-day retention"
 - ✅ "Sentinel analytics rule with KQL"
 - ✅ "Defender for Identity for on-prem AD attacks"
@@ -152,6 +153,7 @@ When you see these, they're often **correct**:
 - ✅ "Identity Secure Score for hygiene backlog"
 
 When you see these, often **wrong**:
+
 - ❌ "Sign-in logs retained 1 year by default"
 - ❌ "Identity Protection = Defender for Identity"
 - ❌ "MFA stops token theft"

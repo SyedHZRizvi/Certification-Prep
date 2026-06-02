@@ -197,6 +197,7 @@ PBQ might present 4 incidents + 4 actor names and ask you to drag-match.
 **Outcome.** Disclosure came not from SolarWinds or the US government but from **FireEye (now Mandiant)**, which on **8 December 2020** publicly disclosed that its own red-team tools had been stolen. FireEye's investigation traced the breach to SolarWinds Orion. Microsoft, the US Treasury, Commerce, State, DHS, and Energy departments all confirmed breaches by 14 December. The Microsoft CEO Satya Nadella publicly stated SolarWinds was "the largest and most sophisticated attack the world has ever seen." Remediation cost the US federal government an estimated **$100+ billion** (Brookings Institution estimate, 2021). SolarWinds' stock fell 40% in one week. The CEO retired. In October 2023 the **SEC charged SolarWinds and its CISO with securities fraud** for misleading investors about cybersecurity practices — the first time a public-company CISO faced personal SEC charges. The charges against the CISO personally were dismissed by a federal judge in July 2024, but the case against the company continued.
 
 **Lesson for the exam / for practitioners.** This case touches almost every concept in Module 4:
+
 - **Actor classification.** SVR is the textbook **APT / nation-state** — patient (8-9 months pre-detection), well-resourced (custom malware that evaded every commercial AV/EDR), motivated by **espionage** (intelligence collection), not financial. Sec+ tests this distinction: a campaign with no monetization but extensive persistence is APT, not organized crime.
 - **Supply-chain vector.** SUNBURST exploited *trust* in vendor software updates. The compromised code was *signed* with a legitimate certificate. The exam asks: which threat vector is illustrated? — answer is **supply chain**, specifically **vendor / software supply chain**. Compare with Kaseya (2021, RMM-as-vector) and CCleaner (2017, same pattern).
 - **Threat intel sources.** The detection came from a *private commercial* source (FireEye), not government feeds. **CISA's Emergency Directive 21-01** (13 December 2020) ordered all federal civilian agencies to disconnect Orion immediately. This is exactly the kind of cross-sector sharing that **ISACs / AIS / STIX-TAXII** are designed to enable; SolarWinds also drove faster updates to those programs.
@@ -270,6 +271,7 @@ PBQ might present 4 incidents + 4 actor names and ask you to drag-match.
 ## ✅ Module 4 Summary
 
 You now know:
+
 - 👥 The 6 actor categories — actor matrix of skill × resource × motivation
 - 💰 The 10+ motivations Sec+ lists and which actor each maps to
 - 🚪 Threat vectors — message, file, removable, vulnerable sw, network, ports, default creds, supply chain

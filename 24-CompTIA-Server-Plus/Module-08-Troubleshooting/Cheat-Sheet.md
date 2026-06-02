@@ -119,6 +119,7 @@ Plus: impact analysis, backout plan, maintenance window, test results, stakehold
 ## 🏆 Exam Power Phrases
 
 ✅ Often **right**:
+
 - "Follow the 6-step methodology"
 - "Identify scope before acting"
 - "Execute the backout plan"
@@ -128,6 +129,7 @@ Plus: impact analysis, backout plan, maintenance window, test results, stakehold
 - "Read the vendor beep-code chart"
 
 ❌ Often **wrong**:
+
 - "Restart everything"
 - "Skip documentation — we're busy"
 - "Pull the drive immediately"
@@ -153,6 +155,7 @@ Plus: impact analysis, backout plan, maintenance window, test results, stakehold
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. The 6 steps? ___
 2. First thing to check on 3-beep POST? ___
 3. Blue drive LED — what does it indicate? ___

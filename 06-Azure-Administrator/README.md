@@ -51,6 +51,7 @@ Begin with [Module 1: Subscriptions & Resource Hierarchy →](./Module-01-Subscr
 ## 🎯 What You'll Learn
 
 By the end of this track, you'll be able to:
+
 - Design and manage Azure subscriptions, management groups, and resource hierarchy
 - Configure Microsoft Entra ID, RBAC, Conditional Access, and PIM
 - Stand up storage accounts, blobs, file shares, and File Sync — and pick the right redundancy
@@ -107,6 +108,7 @@ Two new course-root resources extend this AZ-104 program beyond exam prep into C
 🔗 **[Microsoft Learn AZ-104 study guide](https://learn.microsoft.com/credentials/certifications/resources/study-guides/az-104)** — the exact, current list of "skills measured." Print it. Tick off every bullet as you study. Microsoft updates this every 3–6 months — always trust the latest version over any third-party course.
 
 Also bookmark:
+
 - 🔗 [Azure documentation](https://learn.microsoft.com/azure/) — official docs
 - 🔗 [Microsoft Learn free sandbox modules](https://learn.microsoft.com/training/courses/az-104t00) — hands-on practice without your own subscription
 - 🔗 [Azure Architecture Center](https://learn.microsoft.com/azure/architecture/) — reference architectures

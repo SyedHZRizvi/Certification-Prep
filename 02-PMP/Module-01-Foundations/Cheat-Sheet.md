@@ -83,6 +83,7 @@ Stewardship • Team • Stakeholders • Value • Systems Thinking • Leaders
 ## 🎯 PMP MINDSET (CRITICAL)
 
 ✅ Default actions:
+
 - Talk to team / stakeholder first
 - Coach, don't manage
 - Empower team
@@ -91,6 +92,7 @@ Stewardship • Team • Stakeholders • Value • Systems Thinking • Leaders
 - Iterate / adapt
 
 ❌ Almost never:
+
 - Escalate first
 - Reject changes outright
 - Tell people what to do

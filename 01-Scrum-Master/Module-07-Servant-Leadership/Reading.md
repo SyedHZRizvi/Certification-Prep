@@ -152,6 +152,7 @@ When should an SM just **tell** the team something?
 This is the part many Scrum Masters skip — but it's *required* by the Scrum Guide.
 
 ### Examples:
+
 - 📚 Teaching managers what Scrum is (and isn't)
 - 🏗️ Helping HR understand new role definitions
 - 🔄 Working with finance on different funding models (per-sprint vs annual)
@@ -251,6 +252,7 @@ True servant leadership requires **courage** to challenge.
 ## ✅ Module 7 Summary
 
 You now know:
+
 - 🛡️ SM = "true leader who serves"
 - 🎓 5 Stances: servant leader, coach, facilitator, teacher, change agent
 - ❓ Coaching = questions, Teaching = instruction

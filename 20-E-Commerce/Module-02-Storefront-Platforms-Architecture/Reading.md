@@ -86,6 +86,7 @@ Shopify Plus (the enterprise tier) costs $2,300-$25,000/month based on GMV. Incl
 ### Adobe Commerce (formerly Magento)
 
 Adobe acquired Magento for $1.68B in 2018. Today there are two flavors:
+
 - **Magento Open Source** (free, self-hosted, GPL-3 license) — the descendant of the original Magento.
 - **Adobe Commerce** (commercial, includes managed hosting, B2B module, advanced features) — typical license $40K-$200K/year + hosting.
 
@@ -161,6 +162,7 @@ The MACH Alliance vendors. commercetools (Munich-based, founded 2006) is the mos
 **Situation.** Allbirds IPO'd in November 2021 at $15/share, $4B valuation. By mid-2022 the stock had dropped to ~$2, market cap < $300M. The board mandated a turnaround. The DTC tech stack — built on Shopify Plus with a heavily customized theme — was identified as a 12-month bottleneck: PDP performance was poor (LCP > 4 seconds on mobile), the international expansion required engineering work the team didn't have, and the B2B wholesale arm was outgrowing what the Shopify B2B module supported in 2022.
 
 **Decision.** Allbirds did NOT replatform off Shopify. Instead, in 2023-2024 they ran a parallel-track migration:
+
 - Refactored the customized theme onto Shopify's "Online Store 2.0" (sections-everywhere model) — got upgradeability back.
 - Migrated PDP and Collection pages to Hydrogen (React/Remix on Shopify's commerce engine).
 - Adopted Shopify Markets for multi-region pricing and tax.
@@ -232,6 +234,7 @@ Hydrogen is the path of least resistance for Shopify merchants going headless �
 Founded 2020 by commercetools, Contentstack, EPAM, Valtech. Now 100+ members. The MACH Alliance certifies vendors who meet Microservices-API-Cloud-Headless principles. The 2024 MACH Alliance research report estimates 50%+ of new enterprise commerce projects in 2024-2026 are MACH-aligned.
 
 Key vendors:
+
 - **Commerce engine:** commercetools, Elastic Path, Spryker, Vue Storefront
 - **CMS:** Contentful, Sanity, Storyblok, Contentstack
 - **Search:** Algolia, Bloomreach, Constructor, Searchspring
@@ -249,6 +252,7 @@ Key vendors:
 Polaris (polaris.shopify.com) is Shopify's design system covering component library, content guidelines, accessibility, and merchant-facing UX patterns. Required for Shopify App Store apps. Used by Shopify itself.
 
 Key principles:
+
 - Be opinionated (Shopify is famously opinionated)
 - Build for craft (high-quality components, not many components)
 - Make the merchant successful (every component decision is justified by merchant value)
@@ -312,6 +316,7 @@ Every platform decision has security implications. The PCI-DSS v4.0 standard (ma
 ## ✅ Module 2 Summary
 
 You now know:
+
 - 🏛️ The three architecture patterns (monolithic, headless, composable)
 - 🏪 The five major platform families (Shopify, Adobe Commerce, BigCommerce, Salesforce, composable)
 - 🎯 The 6-question platform decision framework

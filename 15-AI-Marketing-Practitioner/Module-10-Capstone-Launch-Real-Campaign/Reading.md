@@ -308,6 +308,7 @@ What you did, what happened, the headline number.
 
 ### 4. `03-Lessons-Learned-Blog-Post.md`
 A 1,500-2,000 word blog post you could publish on LinkedIn or your own site. Title pattern:
+
 - "What I Learned Spending $200 on Ads for [Brand]"
 - "My First Real Campaign: $200, 14 Days, [X Conversions]"
 - "I Ran My Own Marketing Campaign. Here's the Data."
@@ -399,6 +400,7 @@ Workflows/Flows (M9) · Tool use (M9) · Speed-to-lead (M9)
 ## ✅ Module 10 Summary
 
 You now:
+
 - 📋 Have a complete capstone brief template
 - 📅 Have a 21-day execution schedule
 - 🎯 Know the self-grading rubric (8 dimensions, 100 points)

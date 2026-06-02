@@ -167,6 +167,7 @@ GQA with G=8 is the modern sweet spot.
 ## 🏆 Exam Power Phrases
 
 ✅ Often **right**:
+
 - "Use the model's own tokenizer for accurate token counts"
 - "GQA balances cache size and quality"
 - "RoPE + YaRN extends context without retraining"
@@ -174,6 +175,7 @@ GQA with G=8 is the modern sweet spot.
 - "FlashAttention is mathematically identical but vastly more memory-efficient"
 
 ❌ Often **wrong**:
+
 - "1 token = 1 word"
 - "Bigger context always means better answers"
 - "MoE models use less VRAM"

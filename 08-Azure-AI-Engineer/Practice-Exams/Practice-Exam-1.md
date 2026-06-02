@@ -582,6 +582,7 @@ D. It exposes most AI services (Vision, Language, Translator, Speech, Document I
 ## 🔍 Review Process
 
 For EACH wrong answer:
+
 1. Identify which module covered it (Q1–7 = Modules 1–2; Q8–15 = Module 3; Q16–25, 27 = Module 4; case study spans modules; Q28 = Module 1)
 2. Re-read that module's Reading.md
 3. Add an Anki flashcard for the concept

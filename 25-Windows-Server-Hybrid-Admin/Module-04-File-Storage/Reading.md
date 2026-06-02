@@ -399,6 +399,7 @@ Set-IscsiServerTarget -TargetName "TARGET01" `
 **Outcome.** Equifax paid a $700M settlement (CFPB, FTC, 50 state AGs, July 2019) and committed to $1B+ in security spending over five years. The breach became a Harvard Business School case study (Class 9-118-031, *Equifax's Battle Against Cyber Risk*, 2018) on the cost of operational debt — including the file-server permission sprawl that Equifax CIO David Webb described as "an undocumented inheritance from a decade of acquisitions."
 
 **Lesson for the exam / for practitioners.** AZ-800 won't test you on Equifax — but it will test the building blocks:
+
 - *Effective NTFS + share permissions* → understand the *most restrictive wins* combination of NTFS and Share permissions
 - *DFS Namespaces with site-aware referrals* → keep users on the right replica
 - *FSRM file screens + classification* → catch obvious exfiltration patterns + label sensitive content
@@ -455,6 +456,7 @@ The exam will phrase this as: *"After consolidating five legacy file servers via
 ## ✅ Module 4 Summary
 
 You now know:
+
 - 🧱 S2D — 2–16 nodes, 4 PB max, Datacenter edition, 10 GbE min, identical hardware
 - 🔁 Storage Replica — sync (zero RPO, metro) vs async (any distance); destination unmountable during normal replication
 - 🌳 DFS-N — virtual namespace with site-aware referrals

@@ -435,6 +435,7 @@ Use a pre-built framework container (PyTorch, TF, MXNet, HF, scikit, XGBoost) an
 ### Full BYO container
 
 Build a Docker image with:
+
 - `train` executable at root
 - `serve` executable for inference
 - conform to SageMaker's directory layout: `/opt/ml/input/data/<channel>/`, `/opt/ml/model`, `/opt/ml/output`
@@ -612,6 +613,7 @@ Runs the same training script on a local Docker daemon — no spin-up time, no A
 ## ✅ Module 4 Summary
 
 You now know:
+
 - 🖥️ **Studio** architecture (domains, profiles, spaces, apps) and when to use it vs Notebook instances
 - 🐍 The **SageMaker Python SDK 5-step pattern** (role → estimator → inputs → fit → deploy)
 - 🧠 The **17 built-in algorithms** and which task each solves

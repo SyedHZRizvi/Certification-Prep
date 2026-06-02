@@ -16,6 +16,7 @@ Meet Sara. She runs MLE at a 200-engineer SaaS company. In 2022 they had **one**
 By mid-2023 they had **9** production models. Each one had a different deployment process. When the upstream Snowflake schema changed, **5 of the 9 models silently broke** for two weeks before anyone noticed. The CEO wrote a memo: "We are *operating* this thing like 1995 PHP."
 
 In 2024 Sara rebuilt the ML platform on AWS:
+
 - **SageMaker Pipelines** for every retraining workflow
 - **Model Registry** with mandatory approval before deployment
 - **SageMaker Projects** for templated CI/CD per model
@@ -103,6 +104,7 @@ A central catalogue of trained models with versioning and approval workflow.
 ## 🏗️ SageMaker Projects
 
 A **Project** is a templated end-to-end MLOps setup using:
+
 - An AWS Service Catalog product
 - **CodeCommit/CodeBuild/CodePipeline** for CI/CD of the model code
 - **SageMaker Pipelines** for the training workflow
@@ -388,6 +390,7 @@ SageMaker **Inference Recommender** automatically benchmarks your model on diffe
 ## ✅ Module 9 Summary
 
 You now know:
+
 - 🔁 **SageMaker Pipelines** step types and the `ConditionStep` deployment gate pattern
 - 📦 **Model Registry** with approval workflow
 - 🏗️ **SageMaker Projects** as the templated MLOps bootstrapper

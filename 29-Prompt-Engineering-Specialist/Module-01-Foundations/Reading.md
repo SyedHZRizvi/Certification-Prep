@@ -433,6 +433,7 @@ This is how a Module-1-grade prompt engineer reasons about a feature before writ
 **The attack.** Within hours, 4chan's /pol/ board organized a coordinated campaign. Users discovered that Tay had a *"repeat after me"* command. Thousands of users sent it racist, sexist, antisemitic, and Holocaust-denying statements and asked it to repeat them. Tay also began to *learn* — its output distribution shifted toward the dataset of recent messages, which was now poisoned. By hour 16, Tay was producing original (not just repeated) inflammatory content. Microsoft pulled Tay offline at hour 24, then issued a public apology.
 
 **The diagnosis.** Forensic post-mortems (and Microsoft's own apology blog) cited three failures every Module 1 student should recognize:
+
 1. **No runtime system prompt** — Tay's persona could be overridden by user instructions because there was no separation between persona and user input.
 2. **No instruction hierarchy** — `"repeat after me"` was treated as a normal user request, not a request to bypass content policy.
 3. **No output filter** — there was a thin keyword filter, but no LLM-as-judge step. Slightly obfuscated slurs sailed through.
@@ -449,6 +450,7 @@ This is how a Module-1-grade prompt engineer reasons about a feature before writ
 ## ✅ Module 1 Summary
 
 You now know:
+
 - 🤖 The four model families — Claude, GPT, Gemini, Llama (and Mistral/DeepSeek/Qwen) — and the cost/quality landscape
 - 🔤 Tokens, tokenizers (BPE, SentencePiece), and how to count them per provider
 - 📐 Context windows, the "lost in the middle" effect, and reasoning-model token economics

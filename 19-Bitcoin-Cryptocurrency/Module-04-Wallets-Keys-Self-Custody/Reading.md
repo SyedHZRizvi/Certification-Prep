@@ -54,6 +54,7 @@ A Bitcoin **wallet** has three components, often (but not always) bundled:
 | **Deep cold** | No, no, no — geographic-separation | Decade-scale storage | Multi-sig with off-site backup keys, encased in a vault |
 
 Institutional custody ratios (typical, 2026):
+
 - **95% cold** (deep-storage, multi-sig)
 - **4% warm** (semi-automated, MPC or multi-sig)
 - **1% hot** (operational liquidity for next-day withdrawals)
@@ -71,6 +72,7 @@ Three Bitcoin Improvement Proposals define every modern wallet's behavior. Memor
 | **BIP-44** | Multi-account Hierarchy for Deterministic Wallets | 2014 | Marek Palatinus, Pavol Rusnák | Standard derivation paths: `m/purpose'/coin'/account'/change/address` |
 
 Related BIPs you should recognize:
+
 - **BIP-43** — purpose field generalization
 - **BIP-49** — derivation paths for P2SH-wrapped SegWit
 - **BIP-84** — derivation paths for native SegWit (Bech32)
@@ -215,6 +217,7 @@ m / purpose' / coin_type' / account' / change / address_index
 ### Hardware wallet trust model
 
 A hardware wallet:
+
 1. Generates the seed on the device (using its own RNG, ideally a hardware RNG).
 2. Displays the seed to you once for backup.
 3. **Never** transmits the seed off the device.
@@ -302,6 +305,7 @@ A common (and exam-tested) failure mode: Bitcoiner dies, surviving family cannot
 **Outcome.** On February 7, 2014, all withdrawals were suspended. On February 28, the company filed for bankruptcy. Approximately **850,000 BTC** were declared lost (200,000 of those were later "found" in an old format wallet). Total customer losses: ~650,000 BTC unrecovered. A decade of bankruptcy proceedings followed; the trustee distributed recovered BTC to creditors in 2024.
 
 The cascade effects:
+
 - BTC price crashed from ~$830 to ~$420 within weeks.
 - Crypto exchanges globally accelerated cold-storage segregation, audit, and PoR (Proof-of-Reserves) practices.
 - The CryptoCurrency Security Standard (CCSS) emerged in 2014 directly in response.
@@ -309,6 +313,7 @@ The cascade effects:
 - A near-identical pattern repeated 8 years later: **QuadrigaCX (Jan 2019)** — CEO Gerald Cotten died with sole knowledge of cold-storage keys; ~$190M CAD in customer funds lost. **FTX (Nov 2022)** — customer funds commingled with proprietary trading; $8B+ lost.
 
 **Lesson for the exam / for practitioners.** Three principles every exam tests:
+
 1. **Single-point-of-failure in custody is the failure mode.** Multi-sig + multi-jurisdiction key holding + independent audit + proof-of-reserves are the minimum hygiene for any custodian, period.
 2. **"Hot wallet" amounts must be operationally minimal.** Cold:warm:hot ratios of 95:4:1 are not paranoia; they are the industry standard precisely because Mt. Gox demonstrated the alternative.
 3. **Customer funds must be segregated.** Mt. Gox and FTX both commingled. Coinbase, BitGo, Anchorage, Fidelity Digital Assets explicitly segregate via NYDFS or OCC charters that legally require segregation.

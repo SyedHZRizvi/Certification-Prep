@@ -43,6 +43,7 @@ A **pillar page** is a long, comprehensive "ultimate guide" to a broad topic. **
 ```
 
 Why it works (per HubSpot's own internal data, shared in their *State of Marketing* reports):
+
 - Search engines treat the pillar as the authoritative page on the topic.
 - Each cluster strengthens the pillar via internal links.
 - Topic-cluster sites get crawled more, recover faster from algorithm updates, and earn more long-tail traffic than ad-hoc blogs.
@@ -131,6 +132,7 @@ Act as a content strategist. Generate a brief for a blog post on
 **Step 2: Generate the draft** (10 min)
 
 Use the brief as input. Add to the prompt:
+
 - Brand voice description (or paste 2–3 sample paragraphs from your existing best content)
 - Specific phrases to use / avoid
 - Output format (markdown, with H2 / H3 hierarchy)
@@ -347,6 +349,7 @@ The takeaway: **AI lowers the floor of content cost; the editorial bar rose simu
 ## ✅ Module 4 Summary
 
 You now know:
+
 - 📚 The three content-strategy frameworks: pillar/cluster, JTBD, content matrix
 - 🎯 The 8-step AI-assisted content workflow
 - 🖊️ The 2026 AI long-form tools landscape (ChatGPT, Claude, Gemini, Jasper, Copy.ai)

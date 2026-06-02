@@ -43,6 +43,7 @@ The top two principles (Fairness + Reliability/Safety) are *foundations*. The bo
 ## 📑 Transparency Notes & Documentation
 
 For every Azure AI service that uses ML, Microsoft publishes a **Transparency Note**. It documents:
+
 - What the system does and doesn't do
 - Limitations & known risks
 - Recommended evaluation & deployment practices
@@ -51,6 +52,7 @@ For every Azure AI service that uses ML, Microsoft publishes a **Transparency No
 🎯 **Exam pattern:** *"Where do you find the documented limitations and recommended uses of Azure AI Vision?"* → **Transparency Note** on Microsoft Learn.
 
 Related artifacts to know:
+
 - **Impact Assessment template** — internal RAI checklist Microsoft makes for big systems; you may be asked to do one for your own deployment.
 - **Code of Conduct (for Azure OpenAI)** — terms that customers agree to when they get OpenAI access (no generating CSAM, no impersonating real people without consent, etc.).
 - **Limited Access services** — Face identification, Custom Neural Voice, Speaker Recognition all require an approved use case.
@@ -69,6 +71,7 @@ Content Safety classifies content into four harm **categories**:
 | **Self-Harm** | Suicide, self-injury content |
 
 Each category gets a **severity** score:
+
 - **0 (safe)** — no detection
 - **2 (low)** — mild
 - **4 (medium)** — clear but not extreme
@@ -110,6 +113,7 @@ response = client.analyze_image(request)
 ### 3. Prompt Shields (jailbreak + indirect prompt injection)
 
 Replaces the older "Jailbreak risk detection" API. Two kinds of attacks:
+
 - **User Prompt Attack** — the user types something like *"Ignore previous instructions and…"*
 - **Document Attack (Indirect)** — malicious content embedded in a document the model is summarizing
 
@@ -157,6 +161,7 @@ You can define your own categories (e.g. "competitor mentions") and the service 
 Azure OpenAI has **built-in content filters** that run automatically on every prompt + completion. They run the same harm categories (Hate/Sexual/Violence/Self-Harm) at four severity levels and **block or annotate** based on your filter configuration.
 
 You can:
+
 - Create **custom content filter configurations** in Azure AI Foundry
 - Apply a configuration to a specific **deployment**
 - Adjust thresholds (Low / Medium / High) per category, per direction (prompt vs completion)
@@ -178,6 +183,7 @@ You can:
 ## 🩺 The RAI Dashboard & Evaluation Tools
 
 Azure Machine Learning (and Azure AI Foundry) ship a **Responsible AI dashboard** that combines:
+
 - **Error analysis** — where the model fails
 - **Model interpretability** — feature importance (SHAP)
 - **Counterfactuals** — "what change to input would flip the prediction"
@@ -185,6 +191,7 @@ Azure Machine Learning (and Azure AI Foundry) ship a **Responsible AI dashboard*
 - **Data analysis** — slice the data, compare groups
 
 For GenAI specifically, Azure AI Foundry has an **evaluation** workflow that scores responses on:
+
 - **Groundedness** — does it stick to the source?
 - **Relevance** — does it answer the question?
 - **Coherence** — does it make sense?
@@ -203,6 +210,7 @@ Microsoft's standard RAI workflow has 4 stages. Memorize the order:
 1. **Identify** — what harms could this system cause? (Use harm taxonomies + brainstorming with diverse stakeholders)
 2. **Measure** — quantify the harm. Build test sets, run evaluations, score severity & frequency.
 3. **Mitigate** — apply layered defenses. Four layers:
+
    - **Model layer** — choose safer base model, fine-tune
    - **Safety system layer** — content filters, Prompt Shields, groundedness
    - **Metaprompt + grounding layer** — system prompts that constrain behavior, RAG grounding
@@ -287,6 +295,7 @@ Microsoft's standard RAI workflow has 4 stages. Memorize the order:
 **Situation.** H&R Block — a 70+ year old US tax preparation company filing ~20 million returns annually — needed to embed a generative AI assistant into its online filing flow for the 2024 tax season (Jan–Apr 2024). The bar was severe: tax answers must be accurate, must not invent IRS rules, must not leak PII (W-2 wages, SSNs, dependents), and must not give legal advice. The company chose Azure OpenAI as the backbone (publicly announced at Microsoft Build 2024 and verified against the Microsoft Customer Stories page, checked 2026-05).
 
 **Decision.** H&R Block's engineering team layered the same RAI control surface this module describes:
+
 1. **Mitigation Layer 1 — Model.** Used GPT-4 Turbo (then GPT-4o late in the season) deployed in `kind=OpenAI` Azure resources, with abuse-monitoring opt-out approved for tax-form content.
 2. **Mitigation Layer 2 — Safety system.** Azure AI Content Safety with custom severity thresholds — Violence allowed at higher threshold (tax docs reference inheritance/probate); Sexual blocked at lowest; Prompt Shields ON for both user and document attacks; Protected Material ON to prevent regurgitating IRS publication text verbatim where licensing wasn't clear.
 3. **Mitigation Layer 3 — Metaprompt + grounding.** A locked system message instructed the model to *only* answer from H&R Block's curated tax knowledge base, retrieved via Azure AI Search hybrid + semantic ranking. Groundedness Detection ran on every answer; ungrounded responses were rewritten or routed to a human tax pro.
@@ -318,6 +327,7 @@ The whole thing was governed by an internal Impact Assessment matching Microsoft
 ## ✅ Module 2 Summary
 
 You now know:
+
 - 🧭 The six Microsoft Responsible AI principles — by name
 - 📑 Transparency Notes and where to find them
 - 🚨 The four harm categories and the 0/2/4/6 severity scale

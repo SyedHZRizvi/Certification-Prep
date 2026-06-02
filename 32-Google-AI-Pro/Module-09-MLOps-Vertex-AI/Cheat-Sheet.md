@@ -159,6 +159,7 @@ Model Monitoring (rollback on regression)
 ## 🎯 Power Phrases
 
 ✅ Often **right**:
+
 - "Pipelines have ML Metadata + lineage; Cloud Build is generic CI"
 - "Model Registry = versioned models + lineage to pipeline run"
 - "traffic_split = canary deploy"
@@ -170,6 +171,7 @@ Model Monitoring (rollback on regression)
 - "Cloud Trace for multi-step agent latency"
 
 ❌ Often **wrong**:
+
 - "Pipelines = Cloud Build" (different)
 - "Model Registry stores predictions" (stores models)
 - "AutoML is for beginners only" (strong production option)

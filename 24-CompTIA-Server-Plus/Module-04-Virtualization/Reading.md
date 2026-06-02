@@ -270,6 +270,7 @@ Once you have many containers across many hosts, you need an orchestrator. Kuber
 ### Memory
 
 - **Memory overcommit** — assigning more RAM to VMs than the host has. Hypervisor uses techniques to make it work:
+
   - **Ballooning** — host-OS-cooperative driver in the guest "balloons" to reclaim unused RAM
   - **Transparent Page Sharing (TPS)** — dedup identical memory pages across VMs
   - **Compression** — compress idle pages
@@ -381,6 +382,7 @@ This is the kind of integration question Server+ PBQs ask. Each choice maps to a
 **Situation.** In November 2023 Broadcom completed its $69B acquisition of VMware. By early 2024 Broadcom restructured VMware's licensing: ending perpetual licenses, bundling everything into subscription packages (vSphere Foundation, Cloud Foundation), discontinuing several individual product SKUs, and ending the long-running **VMware vSphere Free Hypervisor** (ESXi Free) edition that many home labs and small businesses used.
 
 **Impact.** Sticker shock for many customers — cost increases ranging from 2× to 10× for organizations with mid-sized vSphere footprints. Many SMBs and home-lab users began evaluating alternatives:
+
 - **Proxmox VE** (KVM + LXC) — open-source HCI-style alternative
 - **Microsoft Hyper-V + Azure Stack HCI** — for shops already deeply on Microsoft
 - **Nutanix AHV** — for HCI workloads
@@ -406,6 +408,7 @@ This is a non-exam-tested situational context, but Server+ candidates moving int
 ## ✅ Module 4 Summary
 
 You now know:
+
 - 🖥️ **Type 1 vs Type 2 hypervisors** and major examples (ESXi/vSphere, Hyper-V, KVM)
 - 🧰 The **VM lifecycle**: templates, full clones, linked clones, snapshots — and why snapshots are NOT backups
 - 🚚 **vMotion / Live Migration** and its prerequisites (shared storage, L2, CPU compat, bandwidth)

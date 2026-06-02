@@ -255,6 +255,7 @@ C. `ausearch -m AVC -ts recent`
 D. `systemctl restart nginx`
 
 ### 42 (Scenario PBQ). Match each command to the file it would edit (or read) to make a CHANGE PERSISTENT:
+
 - (a) Set DNS server to 1.1.1.1
 - (b) Change default systemd target to multi-user.target
 - (c) Add a permanent firewalld port
@@ -419,6 +420,7 @@ SELinux is the most-likely culprit when permissions are fine but access fails on
 ## 🔍 Review Process
 
 For EACH wrong answer:
+
 1. Identify which module covered it
 2. Re-read that module's Reading.md section
 3. Add an Anki/flashcard for the concept

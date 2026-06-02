@@ -167,6 +167,7 @@ Update-AzureADSSOForest -OnPremCredentials (Get-Credential)
 ### Hybrid Entra Join automation prerequisites
 
 For Windows 10/11 domain-joined devices to auto-Hybrid-Join Entra ID:
+
 1. Configure **device options** in Entra Connect Sync (one-time wizard)
 2. Make sure devices can reach `enterpriseregistration.windows.net` (port 443)
 3. (Pre-2018 devices) Use a GPO to deploy a scheduled task that runs `dsregcmd /join`
@@ -220,6 +221,7 @@ Different beast. Entra DS = a **managed domain** in Azure that speaks **LDAP, NT
 ## 🌐 Cross-Tenant Access Settings (B2B/B2C — the 2024+ replacements)
 
 If you collaborate with a partner who also has an Entra ID tenant, modern cross-tenant access settings let you:
+
 - **Inbound** — what their users can do in your tenant
 - **Outbound** — what your users can do in their tenant
 - **Tenant restrictions** — block your users from signing into *other* tenants from corporate devices (defeats data exfil via personal Gmail-like Entra accounts)
@@ -253,6 +255,7 @@ This replaced/extended the older "B2B collaboration" model. AZ-801 tests modern 
 **Situation.** In July 2023, Microsoft disclosed that **Storm-0558** (a China-state-sponsored adversary tracked as APT15 / Salt Typhoon family) had forged Entra ID auth tokens for ~25 organizations including the US State Department, the US Department of Commerce, and at least one EU foreign ministry (Microsoft Security Response Center, *Mitigation for China-Based Threat Actor Storm-0558*, July 11 2023; CISA Cybersecurity Advisory AA23-193A). The root cause: Storm-0558 had stolen a **Microsoft Account (MSA) consumer signing key** in 2021, then exploited a validation flaw to use that *consumer* key to sign *enterprise* Entra ID tokens — a cross-trust-boundary bug Microsoft had not detected for almost two years. Affected tenants' Outlook Web Access and OWA-for-Business mail was accessible to the adversary; in some cases the adversary maintained access for weeks before the State Department's SOC noticed anomalous mail-API patterns in their **Microsoft Purview audit logs**.
 
 **Decision.** The US Cyber Safety Review Board (CSRB) published its formal review (March 2024) and concluded that the breach was **preventable**, naming five remediation areas Microsoft committed to:
+
 1. **Eliminate the dual-trust-zone signing flaw** — Entra ID enterprise tokens can no longer be validated against consumer MSA keys.
 2. **Rotate all token-signing keys on a fixed cadence** and audit every signing operation.
 3. **Force audit log access into the lowest licensing tier** — previously Purview audit logs that revealed the breach were behind an E5 paywall, so most victims couldn't *detect* the compromise.
@@ -262,6 +265,7 @@ This replaced/extended the older "B2B collaboration" model. AZ-801 tests modern 
 **Outcome.** Microsoft published the *Secure Future Initiative* (November 2023) and announced that all Purview standard audit logs would become free across all tiers (April 2024). State Department incident-response cost was estimated at $2.1M (House Oversight Committee testimony, October 2023). The biggest hybrid-identity-practitioner takeaway: even with cloud-only identity perfectly configured, *Microsoft itself can be compromised at the IdP layer* — meaning defense-in-depth at the **Conditional Access**, **device compliance**, and **continuous access evaluation (CAE)** layers is non-negotiable. Federation (AD FS) advocates argued — controversially — that on-prem token issuance would have prevented this *specific* attack class.
 
 **Lesson for the exam / for practitioners.** AZ-801 will not ask about Storm-0558 by name, but it will test the building blocks of the response:
+
 - *Why* Microsoft recommends **PHS + Seamless SSO** over federation in 2026 (operational simplicity + Microsoft's commitment to harden its own IdP > the marginal benefit of on-prem token issuance, which Storm-0558 ironically vindicated).
 - *Why* **Conditional Access** with device-compliance enforcement matters even on cloud-only deployments (any layer can be compromised; never depend on a single control).
 - *Why* **CAE** is now default-on (revokes tokens within minutes of admin disable / risk detection, rather than waiting for the 1-hour access-token TTL).
@@ -316,6 +320,7 @@ This replaced/extended the older "B2B collaboration" model. AZ-801 tests modern 
 ## ✅ Module 2 Summary
 
 You now know:
+
 - 🌉 The difference between Entra Connect Sync and Entra Cloud Sync, and when each is the right answer
 - 🔐 PHS, PTA, and Federation — pros, cons, and Microsoft's 2026 recommendation
 - 🚪 Seamless SSO (SSSO) — Kerberos-based silent sign-in for AD-joined devices

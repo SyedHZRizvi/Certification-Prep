@@ -26,6 +26,7 @@ Why did Wrapped work? Not because Spotify had a marketing budget Apple didn't ha
 Every other streamer copied the *feature*. None copied the *strategic thinking*. That is the difference this module teaches.
 
 By the time you finish Module 1, you will have:
+
 - A working command of seven canonical strategic frameworks (STP, 4Ps + 4Cs + 7Ps, Porter's Five Forces, Ansoff Matrix, BCG Growth-Share, JTBD theory, Customer Journey Maps).
 - A working command of OKR design at the depth John Doerr describes in *Measure What Matters* — including the difference between objectives, key results, initiatives, and the trap of "set-it-and-forget-it OKRs" that plague 70% of orgs.
 - A KPI tree you can construct top-down from a single North Star metric, decomposing it into the operational levers each team can move.
@@ -57,6 +58,7 @@ Before any framework, understand the **levels** at which strategy operates. A co
 ### Step 1: Segmentation
 
 Divide the total addressable market into groups that are:
+
 - **Identifiable** (you can describe who is in them)
 - **Substantial** (large enough to be worth pursuing)
 - **Accessible** (you can reach them through media)
@@ -242,11 +244,13 @@ The canonical job statement:
 > When [situation], I want to [motivation], so I can [expected outcome].
 
 Example — Christensen's famous milkshake study (McDonald's, 2003):
+
 - 40% of milkshake sales happened before 8:30 AM
 - The job: *When I have a 30-minute commute and want something filling, with one hand, that lasts the full drive — I want a thick milkshake so I can stop feeling bored and hungry by 10 AM.*
 - Implication: don't make the milkshake fruitier (the marketing assumption). Make it *thicker* (it lasts the commute) and *easier to grab* (the actual purchase context).
 
 Three layers of jobs:
+
 1. **Functional job** — the practical task (drink while driving).
 2. **Emotional job** — how the customer wants to feel (productive, in control).
 3. **Social job** — how the customer wants to be seen (a busy professional, not a kid).
@@ -254,6 +258,7 @@ Three layers of jobs:
 🎯 **Memorize this.** Most marketing strategy assumes a functional job. The most-loved brands win on emotional + social jobs. Apple sells laptops on functional (specs) → emotional (creative-confidence) → social (creative-class identity).
 
 JTBD interviews (the methodology):
+
 - Find recent buyers (within the last 60 days).
 - Reconstruct the *moment* of purchase decision — not the product features they liked.
 - Map four forces: **Push** (frustration with status quo), **Pull** (attraction to new), **Anxiety** (fear of switching), **Habit** (inertia of current).
@@ -367,6 +372,7 @@ Examples of well-chosen North Star metrics (publicly disclosed):
 ### Building a KPI tree
 
 Once you have a North Star, decompose it into a **tree** of operational drivers. Each branch should be:
+
 - Mathematically connected to the parent (multiplicative or additive).
 - Owned by a specific team.
 - Movable in the current quarter.
@@ -462,6 +468,7 @@ Sit with these for ten minutes each. There is no single right answer; defending 
 ## ✅ Module 1 Summary
 
 You now know:
+
 - 🎯 The five strategy levels and how to identify which level a question or framework operates at.
 - 📐 Seven strategic frameworks (STP, 4Ps/4Cs/7Ps, Porter, Ansoff, BCG, JTBD, Journey Mapping) with worked examples.
 - 🎯 OKR design at the depth Doerr describes — including the trap of confusing key results with initiatives.

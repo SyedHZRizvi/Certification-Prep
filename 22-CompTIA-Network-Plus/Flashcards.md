@@ -727,6 +727,7 @@
 ## 🎯 BEFORE THE EXAM
 
 You should be able to instantly answer:
+
 - The 7 OSI layers + a protocol/device for each
 - All RFC 1918 private ranges
 - Class A/B/C default masks

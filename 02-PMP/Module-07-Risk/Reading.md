@@ -10,6 +10,7 @@ Per PMI:
 > *"An uncertain event or condition that, if it occurs, has a positive or negative effect on one or more project objectives."*
 
 Two key insights:
+
 1. **Risk = uncertainty** (not a sure thing)
 2. **Risks can be POSITIVE** (called "opportunities") or **NEGATIVE** (called "threats")
 
@@ -60,6 +61,7 @@ Two key insights:
 ## 📊 Probability-Impact Matrix
 
 A 5×5 grid:
+
 - 5 levels of probability (Very Low → Very High)
 - 5 levels of impact (Very Low → Very High)
 - Multiply to get a "risk score"
@@ -113,6 +115,7 @@ A 5×5 grid:
 ## 🎯 Risk Categories (RBS - Risk Breakdown Structure)
 
 Common categories:
+
 - **Technical** — technology, complexity, performance
 - **External** — regulations, market, weather
 - **Organizational** — resources, funding, dependencies
@@ -129,12 +132,14 @@ The RBS helps systematically identify risks.
 Used in decision trees to choose between options.
 
 ### Example:
+
 - Risk A: 30% chance of $100K loss → EMV = -$30K
 - Risk B: 50% chance of $40K loss → EMV = -$20K
 
 🎯 **Lower EMV (less negative) = better choice for threats.**
 
 For opportunities:
+
 - Opportunity X: 40% chance of $100K gain → EMV = +$40K
 - Opportunity Y: 80% chance of $30K gain → EMV = +$24K
 
@@ -160,6 +165,7 @@ For opportunities:
 ## 📋 Risk Register
 
 The central document for all things risk:
+
 - Risk ID
 - Description
 - Category
@@ -176,6 +182,7 @@ The central document for all things risk:
 ## 🎯 Risk Tolerances & Thresholds
 
 ### Key Concepts:
+
 - **Risk Appetite** — overall willingness to take risk (org-wide)
 - **Risk Tolerance** — acceptable variation around objectives
 - **Risk Threshold** — specific limit (e.g., "don't accept >$10K risk per item")
@@ -225,6 +232,7 @@ If they were "thinking of quitting" → **risk**.
 ## 🔄 Risk in Agile
 
 Agile handles risk DIFFERENTLY:
+
 - 🔁 **Frequent iterations** = continuous risk reduction
 - 🎁 **Working software each sprint** = early proof
 - 👥 **Customer involvement** = catches risks early
@@ -257,6 +265,7 @@ Agile handles risk DIFFERENTLY:
 ## ✅ Module 7 Summary
 
 You now know:
+
 - ⚠️ Risk = uncertain (positive or negative)
 - 🛡️ 5 strategies for threats: Avoid, Transfer, Mitigate, Accept, Escalate
 - 🎁 5 strategies for opportunities: Exploit, Enhance, Share, Accept, Escalate

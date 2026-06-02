@@ -49,6 +49,7 @@ The framework draws conceptually from earlier work: NIST SP 800-53 (security con
 ### Pillar 1: Operational Excellence
 
 Design principles:
+
 - Perform operations as code (IaC, automate)
 - Make frequent, small, reversible changes
 - Refine operations procedures frequently
@@ -60,6 +61,7 @@ Services: CloudFormation, Systems Manager, CloudWatch, CodePipeline
 ### Pillar 2: Security
 
 Design principles:
+
 - Implement a strong identity foundation (least privilege, MFA)
 - Enable traceability (CloudTrail, Config)
 - Apply security at all layers (defense in depth)
@@ -73,6 +75,7 @@ Services: IAM, KMS, GuardDuty, Macie, WAF, Shield
 ### Pillar 3: Reliability
 
 Design principles:
+
 - Test recovery procedures
 - Automatically recover from failure (Auto Scaling, Multi-AZ)
 - Scale horizontally to increase aggregate availability
@@ -84,6 +87,7 @@ Services: Auto Scaling, Multi-AZ RDS, S3 CRR, Route 53 failover, Backup
 ### Pillar 4: Performance Efficiency
 
 Design principles:
+
 - Democratize advanced tech (use managed services)
 - Go global in minutes (multi-Region with low effort)
 - Use serverless architectures (no servers to manage)
@@ -95,6 +99,7 @@ Services: Lambda, Fargate, DynamoDB DAX, CloudFront, ElastiCache
 ### Pillar 5: Cost Optimization
 
 Design principles:
+
 - Adopt a consumption model (pay only for what you use)
 - Measure overall efficiency
 - Stop spending on undifferentiated heavy lifting (use managed services)
@@ -106,6 +111,7 @@ Services: Cost Explorer, Budgets, Compute Optimizer, Savings Plans, RIs, Spot
 ### Pillar 6: Sustainability (added 2021)
 
 Design principles:
+
 - Understand your impact
 - Establish sustainability goals
 - Maximize utilization (don't waste compute)
@@ -192,6 +198,7 @@ The migration-strategies taxonomy comes from Gartner's 5 Rs (Stephen Orban then 
 **APN = AWS's ecosystem of consulting and software partners.**
 
 Two main types:
+
 - **Consulting Partners** — professional services firms (Accenture, Deloitte, etc.) that help you deploy AWS
 - **Technology / ISV Partners** — software vendors with AWS-integrated products (Snowflake, Datadog, etc.)
 
@@ -296,6 +303,7 @@ Customers affected included Netflix (partial), Disney+, Robinhood, Coinbase, Sla
 **Decision (how AWS responded and what well-architected customers had pre-decided).** AWS engineers identified the issue within ~30 minutes and worked through the cascade until services were largely restored by ~2:30 PM PT. The deeper question, though, is what *customers* should have done — and what well-architected customers *had* done — to weather this.
 
 The customers who fared best in the outage had three things in common (documented in their own post-mortems and in subsequent Well-Architected reviews):
+
 1. **Multi-Region active-active deployment** — primary in US-EAST-1, but with real production traffic also flowing in US-WEST-2 or EU-WEST-1. Route 53 health checks failed over.
 2. **Decoupled from the AWS US-EAST-1 control plane for steady-state operation** — services that only needed the data plane (already-running EC2, already-replicated S3) kept serving. Services that needed to launch new EC2 or query the IAM control plane in us-east-1 broke.
 3. **Tested failover regularly** — chaos engineering. Netflix's Chaos Monkey + the broader Chaos Engineering practice (which Netflix popularized; Casey Rosenthal & Nora Jones, *Chaos Engineering*, O'Reilly 2020) means failover paths are exercised continuously, not theoretically.
@@ -303,6 +311,7 @@ The customers who fared best in the outage had three things in common (documente
 **Outcome.** Less than two weeks later, on December 15 and 22, 2021, US-EAST-1 had two more (smaller) outages. The "US-EAST-1 question" — "should we *ever* host critical workloads in us-east-1 given how often it has incidents?" — became a board-level conversation at multiple enterprises in early 2022. AWS published a deeper Reliability Pillar reaffirmation in early 2022 explicitly addressing multi-Region patterns.
 
 **Lesson for the exam / for practitioners.** US-East-1's December 2021 outage is the canonical illustration of the **Reliability pillar** (Well-Architected). For the exam, the takeaways:
+
 1. **Multi-AZ inside one Region protects against AZ failure — but NOT against Region failure.**
 2. **Multi-Region protects against Region failure** — but requires deliberate architecture (Route 53 failover, S3 CRR, RDS cross-Region read replicas / Aurora Global Database, DynamoDB Global Tables).
 3. **The IAM control plane lives in US-EAST-1** (historically) — meaning even multi-Region customers had partial IAM dependencies on US-EAST-1 until AWS made IAM more regional in 2023–2024.
@@ -318,6 +327,7 @@ The customers who fared best in the outage had three things in common (documente
 ## ✅ Module 8 Summary
 
 You now know:
+
 - 🏛️ The 6 pillars of the Well-Architected Framework + the free Well-Architected Tool
 - 🚛 The 6 Rs of migration (Rehost, Replatform, Repurchase, Refactor, Retire, Retain)
 - 🛠️ Migration services: MGN (servers), DMS (DBs), DataSync (files), Snow Family (petabytes)

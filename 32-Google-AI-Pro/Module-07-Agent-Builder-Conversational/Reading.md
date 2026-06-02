@@ -189,6 +189,7 @@ print(result.tool_calls)   # Trace of every step
 ```
 
 ADK supports:
+
 - **Sequential** agents (do A, then B, then C)
 - **Hierarchical** agents (a planner agent delegates to specialist sub-agents)
 - **Parallel** agents (run multiple sub-agents concurrently)
@@ -353,6 +354,7 @@ The exam likes a comparison question.
 ## ✅ Module 7 Summary
 
 You now know:
+
 - 🏛️ **Agent Builder** as an umbrella over multiple products
 - 💬 **Conversational Agents** — structured flows + slots + state machine
 - 🔧 **Function calling** — Gemini's native tool use

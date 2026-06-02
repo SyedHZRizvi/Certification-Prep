@@ -28,6 +28,7 @@ A single diagram showing your AWS Organizations hierarchy: management account + 
 
 ### 2. Target architecture diagram (production)
 Show the production application stack across **two Regions** (`us-east-1` and `eu-west-1`):
+
 - VPC layout (CIDRs, public + private subnets across 3 AZs each)
 - Compute (EC2 ASG behind ALB, OR Fargate behind ALB — defend your choice)
 - Data layer (Aurora PostgreSQL Multi-AZ + optional Read Replica)
@@ -39,6 +40,7 @@ Show the production application stack across **two Regions** (`us-east-1` and `e
 
 ### 3. Cost forecast spreadsheet
 Use **AWS Pricing Calculator** ([calculator.aws](https://calculator.aws/)) to build a 6-month forecast. Columns at minimum:
+
 - Service
 - Quantity / configuration
 - Month 1 cost / Month 6 cost
@@ -49,6 +51,7 @@ Total month-6 spend must come in at **~$8K/month ± $1K**. Include a clear note 
 
 ### 4. Runbook for the first 3 services
 Pick the 3 most-load-bearing services from your architecture (likely: **EC2/Fargate, Aurora, S3**). For each, write a 1-page runbook covering:
+
 - How to launch / configure (CLI snippet or CloudFormation reference)
 - IAM permissions required (least-privilege policy stub)
 - Monitoring (CloudWatch metrics + alarms to set)
@@ -58,6 +61,7 @@ Pick the 3 most-load-bearing services from your architecture (likely: **EC2/Farg
 
 ### 5. Security baseline checklist
 Write a one-page baseline that maps directly to the **CIS AWS Benchmark v3** and the **Capital One breach** lessons (Module 6). At minimum:
+
 - IAM: MFA on root, no root access keys, IAM Identity Center for users, Roles for services
 - Network: SGs + NACLs with principle of least open ports, no `0.0.0.0/0` on SSH
 - Data: KMS encryption at rest, TLS in transit, Block Public Access on all S3 buckets
@@ -66,6 +70,7 @@ Write a one-page baseline that maps directly to the **CIS AWS Benchmark v3** and
 
 ### 6. Exam-style scenario write-up
 A 1500–2000 word document that walks the founders through:
+
 - **5 CLF-C02 exam question patterns your design solves** — each pattern stated, your design choice that satisfies it, and which Well-Architected pillar it touches.
 - 1 specific scenario where your design *deliberately* trades one pillar for another (e.g., you accepted higher Cost in exchange for better Security or Reliability). Defend the trade.
 - 1 "things we'll revisit at $20M ARR" section — what changes when PrairieRoot has 10x today's customers.

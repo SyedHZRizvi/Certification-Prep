@@ -51,6 +51,7 @@ Begin with [Module 1: Manufacturing Strategy →](./Module-01-Manufacturing-Stra
 ## 🎯 What You'll Learn
 
 By the end of this track, you'll be able to:
+
 - Translate business strategy into a manufacturing operations strategy (MTS/MTO/ATO/ETO)
 - Forecast demand and measure error (MAD, MSE, MAPE, tracking signal)
 - Run a real Sales & Operations Planning (S&OP) cycle and evolve it toward Integrated Business Planning (IBP)
@@ -97,6 +98,7 @@ The Final Mock matches real-exam length and pacing — **84 seconds per question
 🔗 **ASCM CPIM Learning System (official ECM digital + workbooks).** It is the syllabus the exam is built from. Read every Process node, work every example, and do every practice quiz inside it.
 
 Supplement with:
+
 - *APICS Dictionary, 16th Edition* — the exam is vocabulary-heavy
 - *Manufacturing Planning and Control for Supply Chain Management* (Jacobs, Chase, Berry) — the classic MPC textbook
 - *The Goal* by Eliyahu Goldratt — the TOC novel; one weekend read

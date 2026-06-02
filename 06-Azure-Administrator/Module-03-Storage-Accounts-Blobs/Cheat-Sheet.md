@@ -51,6 +51,7 @@ Need region-loss survival?
 🔥 **Prefer User Delegation SAS** — auditable per user, no account-key exposure.
 
 SAS query params to remember:
+
 - `sv` = service version · `sp` = permissions · `se` = expiry
 - `sip` = allowed IP range · `spr` = protocol (https) · `sig` = signature
 
@@ -96,6 +97,7 @@ SAS query params to remember:
 ## 🏆 Exam Power Phrases
 
 Often **correct**:
+
 - ✅ "Use User Delegation SAS"
 - ✅ "GZRS for AZ + region resilience"
 - ✅ "Lifecycle rule transitions to Archive after 180 days"
@@ -103,6 +105,7 @@ Often **correct**:
 - ✅ "Customer-initiated failover from GRS"
 
 Often **wrong**:
+
 - ❌ "ZRS survives a region failure"
 - ❌ "Read Archive blob directly"
 - ❌ "RA-GRS allows writes to secondary"

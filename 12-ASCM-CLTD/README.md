@@ -51,6 +51,7 @@ Begin with [Module 1: Logistics Strategy & Network →](./Module-01-Logistics-St
 ## 🎯 What You'll Learn
 
 By the end of this track, you'll be able to:
+
 - Design a logistics network — greenfield/brownfield, hub-and-spoke vs point-to-point, center-of-gravity siting
 - Plan capacity for warehouses, fleets, and DCs across seasonal and slow/fast-moving SKUs
 - Run an order-to-cash cycle with ATP/CTP, allocation, wave/zone/batch picking, and perfect-order metrics
@@ -103,6 +104,7 @@ By the end of this track, you'll be able to:
 🔗 **ASCM CLTD Learning System** (the official prep) — chapters mirror the exam blueprint. Read each module twice. The exam pulls vocabulary and frameworks directly from this body of knowledge, so know APICS dictionary definitions cold.
 
 Free supplements:
+
 - 🔗 [ASCM CLTD Exam Content Manual (ECM)](https://www.ascm.org/learning-development/certifications/cltd/) — the official blueprint
 - 🔗 [ICC Incoterms 2020 official summary](https://iccwbo.org/business-solutions/incoterms-rules/) — exam quotes Incoterms verbatim
 - 🔗 [APICS Dictionary (16th edition)](https://www.ascm.org/) — definitions are tested verbatim

@@ -124,6 +124,7 @@
 ## 🏆 Exam Power Phrases
 
 Often **right**:
+
 - ✅ "SFTP for secure file transfer"
 - ✅ "MX record has a priority + hostname"
 - ✅ "DHCP relay / IP helper on the router"
@@ -131,6 +132,7 @@ Often **right**:
 - ✅ "Direct Connect / ExpressRoute for predictable cloud bandwidth"
 
 Often **wrong**:
+
 - ❌ "Use Telnet for remote management"
 - ❌ "CNAME points to an IP"
 - ❌ "DHCP server on a different subnet — no helper needed"
@@ -157,6 +159,7 @@ Often **wrong**:
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. DNS record type for mail server lookup? ___
 2. Port for IMAPS? ___
 3. Server/client ports for DHCP? ___

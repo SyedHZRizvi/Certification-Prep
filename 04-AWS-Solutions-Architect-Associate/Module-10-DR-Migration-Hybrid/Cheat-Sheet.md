@@ -65,6 +65,7 @@
 ## 🏆 Exam Power Phrases
 
 ✅ Usually right:
+
 - "Aurora Global Database for cross-region RPO<1s"
 - "DynamoDB Global Tables for multi-active NoSQL"
 - "Route 53 failover for active-passive DR"
@@ -74,6 +75,7 @@
 - "AWS Backup for centralized policy across services"
 
 ❌ Usually wrong:
+
 - "Multi-AZ alone is regional DR"
 - "Active-active is always best"
 - "Just use FTP" (use Transfer Family)

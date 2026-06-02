@@ -173,6 +173,7 @@ CoT reasoning paths can branch — sometimes the model takes the right path, som
 ### The cost reality
 
 Self-consistency multiplies your inference cost by **N**. At N=40 on a reasoning model, you're paying 40× per query. Use when:
+
 - The query is high-stakes (financial, medical, legal)
 - Latency budget allows parallelism
 - Eval shows the lift is worth it on YOUR task
@@ -411,6 +412,7 @@ Reasoning models can spend 25K tokens on a trivial question. **Defense:** Set `b
 ## ✅ Module 3 Summary
 
 You now know:
+
 - 🚂 What chain-of-thought is and why Wei et al. 2022 was a watershed
 - 0️⃣ Zero-shot CoT (`"Let's think step by step"`) — the cheapest, most powerful trick
 - 1️⃣ Few-shot CoT — control + ceiling for reasoning tasks

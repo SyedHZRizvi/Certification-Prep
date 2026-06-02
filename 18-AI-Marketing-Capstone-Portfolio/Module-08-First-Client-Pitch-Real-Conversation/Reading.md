@@ -159,6 +159,7 @@ If you're job-track: replace this slide with "What I'm looking for in a role" (3
 ```
 
 Examples of differentiators:
+
 - *"I work AI-native — I build with the API, not just chat with ChatGPT"*
 - *"I always publish a post-mortem — you see what worked AND what didn't"*
 - *"I work on small budgets — my biggest case study used $200, not $20k"*
@@ -347,6 +348,7 @@ This is the section most students avoid. **Send the 5 messages.** Not next week.
 ### Picking The 5 Prospects
 
 The 5 should be:
+
 - Real businesses (not "I'll find some")
 - People you can verify exist (Twitter / LinkedIn / company sites)
 - Specific (you can point to something they did)
@@ -472,6 +474,7 @@ You've practiced this throughout the course. Here's the final version that incor
 ## ✅ Module 8 Summary
 
 You now know:
+
 - 🎤 The 7-slide pitch deck structure
 - 📝 The 1-page proposal template
 - ✉️ The cold outreach script kit (DM + email)

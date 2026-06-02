@@ -111,6 +111,7 @@ on: pull_request
 ## 🏆 Exam Power Phrases
 
 ✅ Often **right**:
+
 - "Eval-in-CI with hard regression gates"
 - "RAGAS faithfulness + answer relevancy + context precision + context recall"
 - "Stronger judge model than evaluatee, with position swap"
@@ -118,6 +119,7 @@ on: pull_request
 - "Capability + system + production = three eval layers"
 
 ❌ Often **wrong**:
+
 - "We'll add evals later"
 - "Single metric is enough"
 - "Public benchmarks tell us if our app works"

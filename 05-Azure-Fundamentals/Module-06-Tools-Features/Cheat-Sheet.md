@@ -60,6 +60,7 @@
 ## 🌐 Azure Arc
 
 Extends Azure management (Policy, Monitor, Defender, RBAC) to:
+
 - On-prem servers
 - AWS / GCP resources
 - Kubernetes anywhere
@@ -145,6 +146,7 @@ NOT a migration tool — it MANAGES things where they live.
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. 5 Azure management interfaces? ___
 2. ARM vs Bicep — same engine? ___
 3. Monitor vs Service Health vs Status — one-line each? ___

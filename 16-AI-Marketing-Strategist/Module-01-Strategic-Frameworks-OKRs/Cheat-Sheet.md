@@ -80,6 +80,7 @@ Marketing job: **amplify Push and Pull**, **reduce Anxiety and Habit**.
 3. *Bounded* — resistant to gaming.
 
 Real examples:
+
 - Spotify → Time spent listening per active user
 - Airbnb → Nights booked
 - Facebook (2007) → Friend-7-days
@@ -91,6 +92,7 @@ Real examples:
 ## 🏆 Exam Power Phrases
 
 When you see these in answers, they're **often correct**:
+
 - ✅ "Behavioral / needs-based segmentation outperforms demographic..."
 - ✅ "Key Result is an outcome, not an activity..."
 - ✅ "Strategy is choosing what NOT to do..."
@@ -98,6 +100,7 @@ When you see these in answers, they're **often correct**:
 - ✅ "Map the journey per job persona, not for an average user..."
 
 When you see these, they're **often wrong**:
+
 - ❌ "100% OKR attainment is the goal..."
 - ❌ "Revenue is the North Star..."
 - ❌ "The 4Cs replaces the 4Ps..."
@@ -133,6 +136,7 @@ When you see these, they're **often wrong**:
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. Five ISADA criteria? ___
 2. JTBD four forces? ___
 3. KR vs Initiative — which is the outcome? ___

@@ -69,6 +69,7 @@ The exam will not ask you to write an apt preferences file from memory, but it W
 | `dpkg --configure -a` | Finish configuring half-installed packages |
 
 State codes in `dpkg -l` output (the first two chars of each line):
+
 - `ii` = installed, configured (normal)
 - `rc` = removed but config remains
 - `iU` = installed but unpacked, not configured (broken)
@@ -158,6 +159,7 @@ Like `dpkg`, `rpm` operates on individual `.rpm` files with NO dependency resolu
 | `rpm --checksig file.rpm` | Verify signature on a .rpm file |
 
 Common flag mnemonics:
+
 - `-v` verbose, `-h` hash progress bar → `-Uvh` for "Upgrade Verbose Hash"
 - `-q` query mode toggle for ALL query subcommands
 
@@ -201,6 +203,7 @@ gpgkey=https://download.docker.com/linux/centos/gpg
 ```
 
 Each field:
+
 - `[repo-id]` — short identifier
 - `name=` — human-readable
 - `baseurl=` OR `mirrorlist=` — where to fetch from
@@ -463,6 +466,7 @@ These all flow from the same underlying engineering choice: package management i
 ## ✅ Module 3 Summary
 
 You now know:
+
 - 📦 The **two package worlds** (Debian vs Red Hat) and which distros live in each
 - 🔵 **dpkg / apt** commands for install, query, repo configuration on Debian/Ubuntu
 - 🔴 **rpm / dnf** commands for install, query, repo configuration on RHEL/Fedora

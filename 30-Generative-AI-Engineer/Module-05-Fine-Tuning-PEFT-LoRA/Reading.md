@@ -54,6 +54,7 @@ If you skip steps 1 and 2, you'll fine-tune a problem that didn't need fine-tuni
 ## 🧠 The Full-Fine-Tune Reality Check
 
 Full fine-tuning means updating *every parameter* of the model. For a 70B model:
+
 - ~140 GB of weights (fp16)
 - ~140 GB of gradients (fp16)
 - ~280 GB of optimizer state (Adam: 2× weights in fp32)
@@ -179,6 +180,7 @@ For instruction tuning:
 ### Quantity
 
 Modern guidance, much-evolved:
+
 - **Behavioral / style adjustment:** 100–1,000 examples often enough
 - **Domain adaptation:** 1,000–10,000 examples
 - **New capability:** 10,000+ examples, often 100K+
@@ -304,6 +306,7 @@ OpenAI / Bedrock / Vertex hold the fine-tuned weights; you hit a regular API end
 Goal: fine-tune Llama-3.1-8B (or Mistral-7B-v0.3) on the [tatsu-lab/alpaca](https://huggingface.co/datasets/tatsu-lab/alpaca) instruction-following dataset, using QLoRA on a single A10G / RTX 4090 / similar consumer GPU.
 
 Steps:
+
 1. Load the base in 4-bit (NF4 + double quant)
 2. Inject LoRA (r=16, alpha=32, target=`all-linear`)
 3. Use `trl.SFTTrainer` for 1 epoch (~1.5h on a 4090)
@@ -323,6 +326,7 @@ You'll learn the practical realities — out-of-memory errors, learning-rate sen
 **The 2024 retrospective.** A year later, multiple teams reported that **GPT-4 with a well-engineered RAG + light fine-tuning** matched or exceeded BloombergGPT on the same Bloomberg-published benchmarks. Anthropic published a Claude 3.5 Sonnet result that exceeded BloombergGPT *zero-shot*. The cost: BloombergGPT was estimated at $5–10M to train; the RAG-plus-FT alternatives cost <$50K.
 
 **The lesson** isn't "BloombergGPT was a mistake" — it had real privacy and ops benefits. The lesson is: in 2026, **base model strength + retrieval + selective fine-tuning beats domain-specific from-scratch training** for almost everyone. The exceptions are:
+
 - Hard data-residency requirements that forbid third-party APIs
 - Truly proprietary patterns (proprietary trading signals) that you can't expose to a third party even via RAG
 - Frontier labs themselves
@@ -339,6 +343,7 @@ You'll learn the practical realities — out-of-memory errors, learning-rate sen
 ## ✅ Module 5 Summary
 
 You now know:
+
 - ⚖️ The prompt → RAG → fine-tune ordering and how to *actually* decide
 - 🧠 Why full fine-tuning is rarely the right answer
 - 🎯 PEFT family: LoRA, QLoRA, DoRA, prefix tuning, prompt tuning, IA3, adapters

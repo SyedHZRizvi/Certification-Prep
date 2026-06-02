@@ -98,6 +98,7 @@ Heuristic: **RAG when you need facts, fine-tuning when you need behaviors.**
 ## 🏆 Exam Power Phrases
 
 Usually right:
+
 - ✅ "Use **RAG** to ground answers in private/fresh data"
 - ✅ "Use **Knowledge Bases for Amazon Bedrock**" for managed RAG
 - ✅ "Use a **Bedrock Agent** for multi-step API orchestration"
@@ -106,6 +107,7 @@ Usually right:
 - ✅ "Use **hybrid search** when exact IDs matter"
 
 Usually wrong:
+
 - ❌ "Fine-tune to add new product catalog data" (use RAG)
 - ❌ "Increase temperature to stop hallucinations"
 - ❌ "Bigger context window replaces RAG entirely"

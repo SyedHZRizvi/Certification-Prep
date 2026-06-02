@@ -166,6 +166,7 @@ Engine of kaizen.
 ## 🏆 Exam Power Phrases
 
 When you see these, often **correct**:
+
 - ✅ "Eliminate the 7 wastes"
 - ✅ "Make problems visible (andon)"
 - ✅ "Stop the line on a defect (jidoka)"
@@ -173,6 +174,7 @@ When you see these, often **correct**:
 - ✅ "Standard work before kaizen"
 
 When you see these, often **wrong**:
+
 - ❌ "Lean means fewer workers"
 - ❌ "Kanban replaces MRP"
 - ❌ "Six Sigma is just statistics"

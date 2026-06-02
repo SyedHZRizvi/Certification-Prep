@@ -325,6 +325,7 @@ This is the kind of judgment A+ tests — there's no technical fix, but there is
 ## ✅ Module 10 Summary
 
 You now know:
+
 - 📋 What to document and the difference between KB / Runbook / SOP / ticket
 - 🔄 Change types (Standard / Normal / Emergency), CAB workflow, backout plans
 - 🌱 ESD mitigation (wrist strap, mat, anti-static bag)

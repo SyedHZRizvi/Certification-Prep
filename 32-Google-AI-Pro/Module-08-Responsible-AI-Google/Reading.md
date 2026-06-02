@@ -108,6 +108,7 @@ Gemini ships with a **recitation checker** — a system that detects when the mo
 - **Provenance** — knowing whether output is fresh-generated vs recited matters for evaluations
 
 The recitation checker cannot be disabled. If it triggers, your options are:
+
 1. Re-prompt with different phrasing
 2. Lower temperature (sometimes paradoxically helps)
 3. Add a system_instruction asking for original synthesis
@@ -165,6 +166,7 @@ Module 5 covered grounding mechanically. From a *responsible AI* viewpoint:
 By default on **Vertex AI**, the prompts and responses you send to Gemini are **NOT** used to train Google's models. This is enterprise-grade default — your data is yours.
 
 On the **consumer Gemini app** (gemini.google.com) and **Google AI Studio** free tier, the default differs:
+
 - Consumer Gemini app: data MAY be used for improvement; user can opt out in settings
 - Google AI Studio free tier: data MAY be used for abuse-monitoring + improvement
 - Paid Gemini API: same as Vertex AI — data is NOT used for training by default
@@ -327,6 +329,7 @@ The exam will test these items individually as "which of the following is REQUIR
 ## ✅ Module 8 Summary
 
 You now know:
+
 - 🏛️ **Google AI Principles** — 7 + 4 — and their teeth
 - 🛡️ **safety_settings** — 4 categories × 4 thresholds; the deviation pattern
 - 📚 **Recitation checker** — what it does, can't disable, how to recover

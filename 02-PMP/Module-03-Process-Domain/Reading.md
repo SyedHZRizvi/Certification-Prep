@@ -9,6 +9,7 @@
 Maria is opening a restaurant. Phase 1: lock the location. Phase 2: design. Phase 3: build. Phase 4: hire. Phase 5: open.
 
 She has:
+
 - A **scope** (what she's building)
 - A **schedule** (when each phase happens)
 - A **budget** (how much each costs)
@@ -57,6 +58,7 @@ PMBOK 7 replaced these with principles, but knowing them helps:
 The Charter is the document that **formally authorizes** the project.
 
 ### Contents:
+
 - Project purpose
 - Measurable objectives
 - High-level requirements
@@ -69,6 +71,7 @@ The Charter is the document that **formally authorizes** the project.
 - Sponsor name + authority
 
 ### Who Signs:
+
 - Project Sponsor (NOT the PM)
 - The PM assists in creating it.
 
@@ -79,16 +82,19 @@ The Charter is the document that **formally authorizes** the project.
 ## 📋 Scope Management
 
 ### Define Scope:
+
 - 📋 **Project scope** = work to be done
 - 🎁 **Product scope** = features & functions of the deliverable
 
 ### Key Documents:
+
 - **Project Scope Statement** — detailed scope, deliverables, exclusions
 - **WBS (Work Breakdown Structure)** — hierarchical decomposition
 - **WBS Dictionary** — details for each WBS item
 - **Scope Baseline** = Scope Statement + WBS + WBS Dictionary
 
 ### WBS Rules:
+
 - Each level breaks down to smaller pieces
 - "Work packages" = lowest level (typically <80 hrs of work)
 - Captures **100% of project scope** (100% rule)
@@ -108,6 +114,7 @@ The Charter is the document that **formally authorizes** the project.
 ## 📅 Schedule Management
 
 ### Key Steps (in order):
+
 1. **Define activities** — what work needs doing
 2. **Sequence activities** — dependencies
 3. **Estimate durations** — how long
@@ -115,6 +122,7 @@ The Charter is the document that **formally authorizes** the project.
 5. **Control schedule** — monitor & adjust
 
 ### Estimation Techniques:
+
 - **Analogous (Top-down)** — based on similar past projects (fast, less accurate)
 - **Parametric** — based on math relationships (e.g., $/sq ft)
 - **Three-point (PERT)** — Optimistic, Most likely, Pessimistic
@@ -148,6 +156,7 @@ When you need to shorten the schedule:
 ## 💰 Cost Management
 
 ### Steps:
+
 1. **Plan cost management** — how to estimate/budget/control
 2. **Estimate costs** — for each activity
 3. **Determine budget** — aggregate into baseline
@@ -182,6 +191,7 @@ When you need to shorten the schedule:
 - **Quality vs Grade** — quality = doing it right; grade = features/level
 
 Three processes:
+
 - **Plan Quality** — what "quality" means
 - **Manage Quality** — translate into testable activities
 - **Control Quality** — verify deliverables
@@ -196,6 +206,7 @@ Three processes:
 - **Control Procurements** — manage vendor performance
 
 Contract types:
+
 - **Fixed Price (FP)** — vendor risk
 - **Cost-Reimbursable (CR)** — buyer risk
 - **Time & Materials (T&M)** — mixed
@@ -248,12 +259,14 @@ Show when resources are available.
 The PM's primary responsibility. Coordinates ALL 10 knowledge areas.
 
 ### Key Documents:
+
 - **Project Charter** — authorization
 - **Project Management Plan** — the master plan (combines all subsidiary plans)
 - **Project Document Updates** — keep things current
 - **Approved Change Requests** — what's been approved to do
 
 ### Change Control Process:
+
 1. ✅ Receive change request
 2. 🔍 Evaluate impact (scope, schedule, cost, etc.)
 3. 🤝 Submit to **Change Control Board (CCB)**
@@ -285,6 +298,7 @@ Together = **Performance Measurement Baseline (PMB)**.
 ## 🏁 Project Closure
 
 ### Steps:
+
 1. ✅ Confirm work is done per scope
 2. ✅ Get formal acceptance
 3. 📚 Document lessons learned
@@ -306,6 +320,7 @@ Together = **Performance Measurement Baseline (PMB)**.
 ## 🎯 Predictive Process Highlights
 
 ### When To Use Predictive:
+
 - Stable requirements
 - Clear scope
 - Regulated industries
@@ -313,6 +328,7 @@ Together = **Performance Measurement Baseline (PMB)**.
 - Fixed deadlines/budget critical
 
 ### Key Tools:
+
 - Detailed WBS
 - Gantt charts
 - CPM
@@ -343,6 +359,7 @@ Together = **Performance Measurement Baseline (PMB)**.
 ## ✅ Module 3 Summary
 
 You now know:
+
 - 🧭 5 Process Groups (Initiating → Planning → Executing → M&C → Closing)
 - 📋 10 Knowledge Areas (Integration, Scope, Schedule, Cost, Quality, Resource, Comm, Risk, Procurement, Stakeholder)
 - 📋 Scope baseline = Scope Statement + WBS + WBS Dict

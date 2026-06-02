@@ -90,6 +90,7 @@ Inherits down. Only Owner / UAA can create.
 ## 🏆 Exam Power Phrases
 
 Often **correct**:
+
 - ✅ "Send Activity Log to Log Analytics via Diagnostic Setting"
 - ✅ "Use AMA + DCR (not MMA)"
 - ✅ "Workspace-based Application Insights"
@@ -97,6 +98,7 @@ Often **correct**:
 - ✅ "Action Group with Logic App for automation"
 
 Often **wrong**:
+
 - ❌ "Activity Log retains forever"
 - ❌ "Resource lock blocks reads"
 - ❌ "DINE remediates existing resources automatically"

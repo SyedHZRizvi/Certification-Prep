@@ -63,6 +63,7 @@ The agent is a lightweight Windows/Linux binary that maintains the server's iden
 ### Required endpoints (outbound 443)
 
 The agent connects to a handful of Azure endpoints. Microsoft documents these in detail; the most important categories:
+
 - `*.guestconfiguration.azure.com` — Azure Policy guest configuration
 - `*.his.arc.azure.com` — Hybrid Identity Service
 - `*.management.azure.com` — ARM
@@ -305,6 +306,7 @@ Tenant (Entra)
 **Situation.** Microsoft IT (now part of the Digital Security & Resilience team) is responsible for the infrastructure that runs Microsoft Corp itself — including Xbox Live, Office 365 telemetry, Azure DevOps for the Office product team, and the SAP that runs Microsoft's HR. By 2022, this estate had grown to ~250,000 servers across 8 mega-data-centers, dozens of regional hubs, and several thousand small remote-office servers (Microsoft Inside Track, *Modernizing infrastructure with Microsoft Azure Arc*, January 2023). The challenge: how does a single SOC team monitor, patch, and govern 250,000 endpoints when only ~30% of them are Azure-native, and the rest are a mix of on-prem Windows, on-prem Linux, AWS-hosted (legacy acquisitions), and edge appliances at Microsoft Stores?
 
 **Decision.** Microsoft published its own Arc rollout playbook (which is essentially the AZ-801 study guide rewritten):
+
 1. **Tag everything consistently.** Every server gets `env`, `owner`, `costcenter`, `dataclassification` tags applied as Azure Policy → Append effect. Without tags, governance at 250K scale is impossible.
 2. **Onboard via Group Policy** for the AD-joined Windows fleet (~180,000 servers) using a startup script triggered by an AD security group membership. Within 90 days, 95% of the AD fleet was Arc-connected.
 3. **Onboard Linux via Ansible** (~50,000 servers) with a custom playbook delivered by the standard Microsoft IT Ansible Tower.
@@ -312,6 +314,7 @@ Tenant (Entra)
 5. **Update Management central schedules** replaced 14 different per-team WSUS / SCCM / yum-cron setups with one Azure-orchestrated patch wave plus regional maintenance windows.
 
 **Outcome.** Microsoft reported (Inside Track, 2023):
+
 - Average time-to-detect critical vulnerability fleet-wide: **dropped from 11 days to 1 day**
 - Compliance with Microsoft's own SDLC patch-mandate: **rose from 73% to 96%**
 - Number of "shadow IT" servers discovered: **+11,400** (servers nobody had centrally tracked)
@@ -320,6 +323,7 @@ Tenant (Entra)
 For a 250K-server fleet that's ~$6.9M/year — versus an internally-estimated $24M/year for the legacy distributed tooling. The compliance gain (audit-readiness for ISO 27001, SOC 2, FedRAMP, HIPAA, GDPR) was valued separately at ~$8–12M/year in audit prep avoided.
 
 **Lesson for the exam / for practitioners.** AZ-801 won't test you on Microsoft's internal numbers, but it will test the architecture they exemplify:
+
 - *Onboard at scale via GPO or Ansible* — not the portal one-by-one
 - *Azure Policy at management group scope* — apply once, govern many
 - *Tag-driven cost-mgmt + automation* — the single most-undersold Arc feature
@@ -374,6 +378,7 @@ The exam will phrase scenarios like: *"A 4,000-server organization with mixed Wi
 ## ✅ Module 6 Summary
 
 You now know:
+
 - 🌐 What Azure Arc is and the three resource families it projects
 - 🪪 The Connected Machine agent and outbound-only networking model
 - 🐳 Arc-enabled Kubernetes for any K8s distribution + GitOps via Flux v2

@@ -63,6 +63,7 @@
 ## 📦 Provisioning Packages (.ppkg)
 
 Built in **Windows Configuration Designer**. Use for:
+
 - Bulk enrollment with no internet at OOBE
 - Wi-Fi pre-config before Autopilot can reach internet
 - Air-gapped / embedded scenarios
@@ -126,6 +127,7 @@ Built in **Windows Configuration Designer**. Use for:
 ## 🏆 Exam Power Phrases
 
 When you see these, they're often **correct**:
+
 - ✅ "Autopilot user-driven for direct-ship"
 - ✅ "Self-deploying for kiosk/shared device"
 - ✅ "Pre-provisioned for executive white-glove"
@@ -133,6 +135,7 @@ When you see these, they're often **correct**:
 - ✅ "Autopilot reset for repurposing"
 
 When you see these, often **wrong**:
+
 - ❌ "Autopilot works without internet"
 - ❌ "Self-deploying on TPM 1.2"
 - ❌ "MDT enrolls into Intune automatically"

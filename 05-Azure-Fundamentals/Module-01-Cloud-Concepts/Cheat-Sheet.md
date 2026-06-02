@@ -136,6 +136,7 @@ ALWAYS Microsoft: physical hardware, physical datacenter, physical network.
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. CapEx vs OpEx in one sentence? ___
 2. Three things customers ALWAYS manage (shared responsibility)? ___
 3. Difference between scale up and scale out? ___

@@ -11,6 +11,7 @@
 - 🚫 Lowering it = anti-pattern
 
 ### Common DoD items:
+
 - Code reviewed
 - Tests pass
 - AC verified
@@ -45,9 +46,11 @@ If used: criteria a PBI must meet *before* entering a Sprint.
 ## 📈 Velocity
 
 ✅ Use for:
+
 - Forecasting same-team future sprints
 
 ❌ DON'T use for:
+
 - Comparing teams (different reference items)
 - Performance targets
 - Performance reviews

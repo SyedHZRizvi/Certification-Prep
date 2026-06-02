@@ -29,6 +29,7 @@ That's the SRM mindset.
 SRM = the systematic management of supplier interactions across the entire lifecycle, aimed at maximizing the **value** the relationship delivers and minimizing the **risk** it introduces.
 
 Key SRM activities:
+
 - Segmenting (tiering) suppliers by strategic importance
 - Setting performance expectations (scorecards / KPIs)
 - Regular performance reviews
@@ -147,6 +148,7 @@ Supplier diversity = intentionally including diverse-owned businesses in the sup
 | **8(a)** | SBA-certified socially/economically disadvantaged firms |
 
 Diversity programs require:
+
 - Certification verification (NMSDC, WBENC, etc.)
 - Spend tracking
 - Tier-2 reporting (diverse spend by your primary suppliers)
@@ -247,6 +249,7 @@ Strategic suppliers can be a *source of innovation*. Programs include:
 Toyota Motor Corporation, by contrast, made roughly 766,000 fewer vehicles in calendar 2021 than originally planned — a significant cut, but materially smaller than competitors as a percentage of plan. Toyota's chip inventory and supplier visibility ran on a **fundamentally different SRM model** that paid back its 30-year investment in a single quarter.
 
 **Decision.** After the 2011 Tōhoku earthquake exposed automotive supply-chain fragility, Toyota's purchasing organization spent a decade building what came to be called **"Rescue"** — a database tracking ~50,000 parts to Tier-4 (and in some cases Tier-5) with mandated inventory buffers for high-risk components, including semiconductors. Key elements:
+
 1. **Mandated chip stockpiles** of 2-6 months at strategic Tier-1 suppliers (Denso, Aisin) — explicitly contrary to "lean" JIT orthodoxy for components Toyota classified as long-lead-time-risk.
 2. **Multi-tier mapping** so Toyota knew which fab made which wafer for which Tier-1 assembly.
 3. **Cross-investment** in supplier-of-supplier relationships: Toyota stakes in Denso, Denso stakes in fabs.
@@ -258,6 +261,7 @@ When the 2021 shortage hit, Toyota's buffer absorbed the first 3-4 months of dis
 **Outcome.** Toyota reported a **record operating profit of ¥2.99 trillion (~$26B)** for fiscal year 2022 — the highest in its history at the time. Vehicle production was still down vs plan, but margin per vehicle was up materially because Toyota could keep building high-margin models (Lexus, Land Cruiser, Sienna) while competitors shifted to whatever they could ship. By 2023 the shortage had eased and Toyota's relative advantage closed — but its market-cap premium versus US Big 3 had widened. The investment in SRM became a Harvard Business School case (Reeves, Whitaker & Fink, *Harvard Business Review*, March 2022, "How Resilient Businesses Created Advantage in Adversity").
 
 **Lesson for the exam / for practitioners.** This is Liker's "Two Pillars" applied to procurement at industrial scale:
+
 - **Continuous improvement (Kaizen)**: 30 years of incremental supplier capability building.
 - **Respect for people**: never switching strategic suppliers in a downturn; co-investing in their capability.
 
@@ -334,6 +338,7 @@ Sometimes you must exit a supplier. Manage it:
 ## ✅ Module 4 Summary
 
 You now know:
+
 - 🎯 SRM as a lifecycle discipline
 - 🏷️ Supplier tiering (strategic / preferred / approved / tail)
 - 📊 QCDS+ scorecards and their action matrix

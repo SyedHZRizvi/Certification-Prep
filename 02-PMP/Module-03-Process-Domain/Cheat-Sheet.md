@@ -25,6 +25,7 @@
 **Scope Statement + WBS + WBS Dictionary**
 
 WBS Rules:
+
 - 100% of project scope
 - Work packages = lowest level (<80 hrs)
 - Hierarchical decomposition

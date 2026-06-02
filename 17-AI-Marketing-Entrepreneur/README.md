@@ -59,6 +59,7 @@ This track includes two course-root resources that go beyond the per-module work
 ## 🎯 What You'll Master
 
 By the end of this track, you'll have:
+
 - A locked, validated niche / wedge with a one-sentence positioning
 - One productized service ready to sell with a website + sample deliverable
 - An outbound + inbound acquisition stack live
@@ -139,6 +140,7 @@ Yes — many founders launch on the side first. Plan for ~10–15 hours/week and
 ### Q: What if I don't get a client in the first 90 days?
 
 Re-audit your wedge using the 100/10/1 test from Module 1. The two most common causes:
+
 1. Your wedge is too narrow OR too generic (can't list 100 companies)
 2. Your outbound is too small a volume (need 200+ sends/week)
 
@@ -173,11 +175,13 @@ The ranges are drawn from public sources: Hampton + Latka + Tropical MBA surveys
 ## 🎓 No Direct Industry Certification — Why?
 
 Unlike PMP or AWS, there is no industry-recognized "AI marketing entrepreneur" certification. That's because:
+
 1. The field is too new (most "AI agency" patterns emerged 2023–2025)
 2. Real proof is revenue, not credentials
 3. The skill set spans marketing + sales + finance + operations
 
 Instead, the closest credentials you should consider:
+
 - **Indie Hackers** (free community + showcase)
 - **Hampton** ($9K/yr founder community — for $1M+ founders)
 - **Pavilion** ($1.8K–$5K/yr — for B2B operators)

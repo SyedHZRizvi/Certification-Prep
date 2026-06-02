@@ -33,6 +33,7 @@ Eighteen months later, WonderToys' inventory was down 22%, service was at 96%, a
 **S&OP (Sales & Operations Planning)** is the cross-functional, executive-level process that reconciles demand, supply, and financial plans into a single agreed plan. It runs on a **monthly cadence**, at a **product-family level**, over a **12–24 month rolling horizon**.
 
 Key characteristics:
+
 - **Aggregate** — works at product family level, not SKU
 - **Monthly** — repeats every 30 days, decisions ratified by execs
 - **Cross-functional** — Sales, Operations, Finance, Supply Chain, sometimes Marketing/HR
@@ -282,6 +283,7 @@ Post-Red-Sea routing decisions (the December 2023 Houthi attacks on Suez transit
 **Situation.** Through the 1990s P&G ran S&OP in roughly 80 separate cycles — one per major business unit, per region — with limited cross-region or cross-category visibility. The 2001–2003 acquisitions of Clairol ($5B) and Wella ($5.7B), plus the Gillette acquisition (2005, $57B), created a federation of planning processes that genuinely did not talk to each other. Working capital was tied up in regional safety stocks; new-product introductions were chronically late at headquarters but on-time per BU report; the global supply chain ran on quarterly synchronization at best. CEO A.G. Lafley made operating-model integration a top corporate priority.
 
 **Decision.** Starting 2003, P&G began building a global IBP capability (they called it "Global IBP" though the framework was Oliver Wight's Class A). Key decisions:
+
 - Adopted a single S&OP cadence (monthly, family-level) across all global business units, with the executive review chaired by the relevant Global BU President.
 - Built a unified data layer — common SKU hierarchies, common product families, common time buckets — so that demand and supply could be reconciled across regions.
 - Deployed SAP IBP (then APO; migrated to IBP starting 2018) as the integrated planning platform.
@@ -302,6 +304,7 @@ Post-Red-Sea routing decisions (the December 2023 Houthi attacks on Suez transit
 ## ✅ Module 3 Summary
 
 You now know:
+
 - 📅 The 5-step Wallace S&OP process (Product → Demand → Supply → Pre-S&OP → Exec S&OP)
 - 🆚 The difference between S&OP and IBP (IBP = mature, financially integrated, longer horizon)
 - 🧱 The three aggregate planning strategies — Level, Chase, Hybrid — with worked numbers

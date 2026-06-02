@@ -17,6 +17,7 @@ In 2018, Stitch Fix had a tracking problem that none of its competitors had — 
 The problem: events lived in 14 different SaaS tools. The web SDK fired into Google Analytics. The app SDK fired into Amplitude. Email opens were in Iterable. SMS was in Twilio. Stylist actions were in an internal admin tool. Returns were in a warehouse system. To answer the question "did this paid Instagram dollar drive a 3rd Fix?", a data engineer had to cobble together six exports, normalize three user-ID formats, and hand the result to an analyst three days later.
 
 Stitch Fix's solution was a **Customer Data Platform** — a single piece of infrastructure that:
+
 1. Collected all 34 event types from all 14 tools into one unified stream.
 2. Resolved every device, cookie, email, and customer-ID to a single canonical user.
 3. Stored the unified stream in a warehouse where analysts could query it.
@@ -39,6 +40,7 @@ You will be asked this on every interview for a senior marketing role for the ne
 - **GDPR (2018)**, **CCPA (2020)**, **CPRA (2023)** and a wave of US state laws (Virginia, Colorado, Connecticut, Utah, Texas, etc.) introduced strict consent + data-deletion requirements.
 
 By 2026 the practical state is:
+
 - Third-party cookies are functionally dead in Safari and Firefox, and unreliable in Chrome under Privacy Sandbox.
 - Mobile IDFA is missing for 65–75% of iOS users.
 - Client-side conversion tracking has accuracy losses of **15–40%** depending on browser mix and ad-blocker prevalence.
@@ -437,6 +439,7 @@ For a Fortune-500 enterprise the same stack costs **$50K–$200K/month** because
 ## ✅ Module 2 Summary
 
 You now know:
+
 - 🍪 Why the third-party cookie collapsed and what replaces it (first-party + server-side).
 - 🧬 What a CDP actually is — and what it isn't (DMP, DXP, warehouse).
 - 🛠️ The four CDP architectural patterns and how to choose between them.

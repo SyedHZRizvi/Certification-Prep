@@ -146,6 +146,7 @@ Set-MpPreference -AttackSurfaceReductionRules_Ids "D4F940AB-401B-4EFC-AADC-AD5F3
 ```
 
 ASR rules are best deployed via GPO, Intune, or Defender for Endpoint Security Configuration Management — not one-server-at-a-time. The list has ~17 named rules; common ones:
+
 - Block all Office apps from creating child processes
 - Block credential stealing from LSASS
 - Block JavaScript/VBScript from launching downloaded executable
@@ -215,6 +216,7 @@ Credential Guard uses **Virtualization-Based Security (VBS)** + Hyper-V isolatio
 ### Protected Users group (complementary)
 
 Add admin users to the **Protected Users** AD group:
+
 - Forces Kerberos AES (no DES, no RC4)
 - Disables NTLM auth (cannot use Pass-the-Hash even on legacy SMB)
 - Disables unconstrained delegation
@@ -278,6 +280,7 @@ Add-MpPreference -ControlledFolderAccessAllowedApplications "C:\Program Files\Ac
 ## 🛂 Privileged Access Workstation (PAW)
 
 A **PAW** is a hardened admin workstation that is itself a Tier-0 asset:
+
 - No internet browsing
 - No email
 - No third-party software (Office only)
@@ -315,6 +318,7 @@ A **PAW** is a hardened admin workstation that is itself a Tier-0 asset:
 **Situation.** On July 19, 2024, **CrowdStrike** — one of two leading EDR vendors competing with Microsoft Defender — pushed a faulty content update (channel file 291) to its Falcon sensor on Windows. The faulty file caused the sensor's kernel-mode driver to dereference an out-of-bounds pointer during boot, triggering a kernel panic (BSOD with `PAGE_FAULT_IN_NONPAGED_AREA`) on every Windows machine that received the update over a ~78-minute window before CrowdStrike could pull it. ~8.5 million Windows endpoints worldwide were affected (Microsoft Security Blog, *Helping our customers through the CrowdStrike outage*, July 20 2024). Delta Air Lines lost an estimated $500M, ~5,000 flights canceled (Delta SEC 8-K filing, July 24 2024); the UK NHS reported widespread GP-clinic outages; Indianapolis 911 dispatch was on manual paper-and-radio for 8 hours. Recovery required physical-console access to *each* affected machine to delete the bad file from Safe Mode — no remote-management path worked because the machines wouldn't boot.
 
 **Decision.** The post-mortems converged on architectural lessons:
+
 1. **Kernel-mode EDRs have a brittleness profile** that user-mode + hypervisor-isolated controls do not share. (Microsoft has been moving to push EDR sensors *out* of kernel mode where possible.)
 2. **Staged rollouts of agent updates** are non-negotiable. CrowdStrike pushed channel files (content updates) to all customers simultaneously; they had a feature for staged rollout for binary updates but not for content.
 3. **Recovery automation matters more than detection.** Most organizations needed a runbook for "EDR sensor breaks Windows boot" — and almost none of them had one. Microsoft published [Recovery instructions](https://learn.microsoft.com/) within 4 hours; CrowdStrike updated their guidance the following day.
@@ -324,6 +328,7 @@ A **PAW** is a hardened admin workstation that is itself a Tier-0 asset:
 **Outcome.** CrowdStrike's stock dropped ~30% in two weeks. The US Department of Homeland Security launched a formal review. The European Commission opened an inquiry into resilience standards for security software. Microsoft published its [Windows resiliency initiative](https://learn.microsoft.com/) committing to user-mode EDR APIs that would let third parties run sensors without kernel-mode privileges. By late 2024, Defender's reported deployment share among Fortune 500 had increased measurably as customers reconsidered EDR vendor diversification.
 
 **Lesson for the exam / for practitioners.** AZ-801 won't test you on CrowdStrike by name, but it will test:
+
 - *MDE as the primary EDR* in the Defender for Servers bundle — and the operational comfort of staying within Microsoft's update gating
 - *ASR rules + Controlled Folder Access* — protections that don't depend on a third-party kernel driver
 - *Credential Guard + Protected Users* — defense in depth that survives any single agent failure
@@ -382,6 +387,7 @@ The exam will phrase this as: *"A SOC manager wants EDR coverage on 1,200 Window
 ## ✅ Module 8 Summary
 
 You now know:
+
 - 🛡️ Defender for Servers P1 vs P2 — features and the $5 vs $15/server pricing
 - 🔓 JIT VM access — time-bound port opening (P2 only)
 - 🤖 MDE as the EDR core + ASR rules

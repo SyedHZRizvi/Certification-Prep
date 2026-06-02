@@ -128,6 +128,7 @@
 ## 🏆 Exam Power Phrases
 
 When you see these, they're often **correct**:
+
 - ✅ "App Registration in home tenant; Enterprise App per consuming tenant"
 - ✅ "Use Auth Code + PKCE for SPA"
 - ✅ "Application permission requires admin consent"
@@ -137,6 +138,7 @@ When you see these, they're often **correct**:
 - ✅ "App Proxy connector is outbound-only"
 
 When you see these, often **wrong**:
+
 - ❌ "OAuth 2.0 is the sign-in protocol"
 - ❌ "Implicit grant is recommended"
 - ❌ "Application permission can be user-consented"

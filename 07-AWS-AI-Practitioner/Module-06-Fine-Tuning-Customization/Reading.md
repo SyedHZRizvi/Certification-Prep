@@ -106,6 +106,7 @@ You provide a body of *unlabeled* domain text. Bedrock continues the model's pre
 ### Which Bedrock models support customization?
 
 This list changes — but at AIF-C01 depth, just know:
+
 - **Amazon Titan Text Lite/Express** — fine-tuning + continued pre-training
 - **Meta Llama 3 family** — fine-tuning
 - **Cohere Command (Light/R-class)** — fine-tuning
@@ -124,6 +125,7 @@ Real fine-tuning a 70B-parameter model from scratch costs millions. To get aroun
 - **Prefix tuning / Prompt tuning** — train a small prefix vector
 
 The AIF-C01 doesn't test the math. But you should recognize that:
+
 - Fine-tuning today is *usually* a PEFT method (cheap, fast, no catastrophic forgetting)
 - SageMaker JumpStart and Bedrock both expose PEFT-style customization
 
@@ -264,11 +266,13 @@ Match each scenario to the best customization approach. (Try first, then peek.)
 ## 📊 Case Study — BloombergGPT, the 50B-Parameter Finance LLM (2023)
 
 **Situation.** Bloomberg L.P. — the financial data and terminal company — holds a 40+ year corpus of financial news, regulatory filings, earnings transcripts, press releases, and analyst content: ~363 billion tokens of finance-specific text. Their terminal customers (banks, hedge funds, central banks) were experimenting with off-the-shelf LLMs (GPT-3 / GPT-3.5) but found:
+
 - Generic models were weak on Bloomberg-specific tickers, abbreviations, and finance jargon
 - Hallucination rates on numerical reasoning tasks were unacceptable for regulated finance use cases
 - Sending Bloomberg's proprietary data to a third-party API raised confidentiality concerns
 
 **Decision.** Bloomberg published **BloombergGPT: A Large Language Model for Finance** (Wu et al., 2023; arXiv:2303.17564) — a 50-billion-parameter Transformer trained from scratch on a mixed corpus of:
+
 - ~363 billion tokens of Bloomberg's *finance-specific* archive (FinPile)
 - ~345 billion tokens of *general* public text (The Pile, C4, Wikipedia)
 
@@ -281,6 +285,7 @@ This was a deliberate choice for **continued pre-training / domain-specific from
 - The paper became *the* canonical reference cited whenever an executive asks "should we train our own LLM from scratch?" — and the answer the AIF-C01 expects is usually "no, unless you're Bloomberg-scale."
 
 **Lesson for the exam / for practitioners.** Four AIF-C01 talking points anchor here:
+
 1. **From-scratch / continued pre-training is the *rarest* customization choice — and the exam tests when it's justified.** BloombergGPT used continued-pre-training-style work because they had (a) 363B tokens of domain-specific unlabeled text, (b) >$10M training budget, (c) a *moat* rationale beyond pure accuracy. Without all three, the answer is fine-tuning or RAG. The exam frequently uses Bloomberg's profile as a foil — "a small startup wants to train its own LLM" is virtually always the *wrong* answer; the right one is RAG or fine-tuning an existing FM.
 2. **The customization cost ladder is real and predictable.** Prompting (¢) → RAG ($) → Fine-tuning ($$) → Continued pre-training ($$$$). The order of magnitude on Bloomberg's training run (~$10M+ all-in) maps to the **$$$$** tier; the exam wants you to recognize this scale.
 3. **Behavior vs facts is the discriminator.** Bloomberg's bet was that finance *behaviors* (vocabulary, formulaic reasoning, awareness of finance-specific entity types) needed to be *baked in*. For pure factual lookup (yesterday's earnings number), RAG over their data would have been cheaper and fresher. The exam pattern: when the scenario describes *deep domain vocabulary needing to live in the weights*, continued pre-training is the right framing; when it describes *recent data needing to be reflected*, RAG is.
@@ -297,6 +302,7 @@ This was a deliberate choice for **continued pre-training / domain-specific from
 ## ✅ Module 6 Summary
 
 You now know:
+
 - 🪜 The four customization approaches (Prompt → RAG → Fine-tuning → Continued pre-training) and the decision tree to pick between them
 - 🎯 RAG vs Fine-tuning side-by-side — *RAG for facts, fine-tuning for behaviors*
 - 🏋️ How Bedrock model customization works (JSONL data, S3, Provisioned Throughput required)

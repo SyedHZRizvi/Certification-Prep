@@ -470,6 +470,7 @@ This is the architecture you should be able to sketch in 60 seconds.
 ## ✅ Module 2 Summary
 
 You now know:
+
 - 📦 **S3 storage classes**, **lifecycle**, **encryption**, and **performance levers** for ML data
 - 🌊 **Glue Crawler / Catalogue / ETL / DataBrew / Schema Registry / Data Quality** roles
 - ⚡ **Kinesis Data Streams / Firehose / Managed Flink / Video Streams** decision criteria
@@ -555,6 +556,7 @@ LIMIT 100;
 ```
 
 🎯 **Exam patterns.** Recognise the four cost levers in one query:
+
 - `STORED AS PARQUET` + `parquet.compression='SNAPPY'` (column store + compression)
 - `PARTITIONED BY` (partition pruning)
 - `projection.enabled='true'` (no crawler latency)

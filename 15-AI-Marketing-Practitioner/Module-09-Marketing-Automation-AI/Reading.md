@@ -17,6 +17,7 @@ The fix: a 9-step automation workflow built inside their own HubSpot product. In
 - After 8 weeks → re-scored; if cold, suppressed from outbound for 90 days
 
 Results, publicly shared:
+
 - Speed-to-lead under 2 minutes (from 4 hours)
 - MQL-to-SQL conversion up 22%
 - Lead acquisition cost down 38%
@@ -35,6 +36,7 @@ The lesson: a campaign that ends at "thanks, we'll be in touch" is wasting your 
 ## 🏗️ Marketing Automation 101 — The Conceptual Model
 
 Marketing automation is software that:
+
 1. **Listens** for events (form submitted, email opened, page visited, purchase made)
 2. **Decides** what to do based on rules or AI (send email, add to list, ping sales)
 3. **Acts** across channels (email, SMS, in-app, ads, CRM, Slack)
@@ -220,11 +222,13 @@ The current frontier: LLMs that don't just generate content but TAKE ACTIONS via
 ### What "Tool Use" Means
 
 LLMs (Claude, GPT-5) can now CALL functions/APIs. You give them:
+
 1. A task ("Reply to support emails about shipping delays")
 2. A set of tools (Gmail API, Shopify API, internal knowledge base)
 3. Permission boundaries
 
 The LLM then orchestrates:
+
 - Read incoming email
 - Check Shopify for the order status
 - Look up shipping carrier API
@@ -278,6 +282,7 @@ This is what "AI agent" means in practice in 2026: an LLM with permission to cal
 ### OpenAI Assistants
 
 OpenAI's Assistants API (Assistants v2 as of 2026) provides similar tool-use capabilities, with built-in tools like Code Interpreter and File Search. Differences vs Claude API:
+
 - Assistants store conversation state on OpenAI's servers (vs Claude where you manage state)
 - Code Interpreter built-in (Claude requires external tool)
 - Pricing differs; benchmark for your use case
@@ -398,6 +403,7 @@ Klaviyo, HubSpot, and ActiveCampaign all have setup wizards for these. Skip the 
 ### Plus: Gmail / Yahoo's 2024 Bulk Sender Requirements
 
 In 2024, Gmail and Yahoo started requiring (for senders sending > 5,000 emails/day to their users):
+
 - SPF + DKIM + DMARC all configured
 - Easy one-click unsubscribe
 - Spam complaint rate < 0.3%
@@ -447,6 +453,7 @@ The lesson: speed-to-lead automation isn't optional in 2026. Leads convert at 3-
 ## ✅ Module 9 Summary
 
 You now know:
+
 - 🏗️ The TRIGGER → CONDITION → ACTION mental model of automation
 - 🛠️ When to pick HubSpot vs Klaviyo vs ActiveCampaign vs Salesforce vs Make.com
 - 📧 The 4 core B2B HubSpot workflows + Hot Lead example

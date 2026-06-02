@@ -76,6 +76,7 @@ Choose **Web**, **iOS**, or **Android**. For most marketers: Web.
 
 ### Step 3: Install the tracking code
 Two options:
+
 - **Direct gtag.js install** — paste a snippet into your `<head>`
 - **Google Tag Manager (GTM)** — preferred; lets you manage all marketing tags in one place
 
@@ -85,6 +86,7 @@ Two options:
 
 ### Step 5: Configure events
 GA4 auto-collects:
+
 - `page_view`
 - `session_start`
 - `first_visit`
@@ -92,6 +94,7 @@ GA4 auto-collects:
 - `scroll`, `click`, `file_download`, `video_*` (with Enhanced Measurement enabled)
 
 You configure custom events for:
+
 - `lead_submit`, `signup`, `purchase`, `add_to_cart`, etc.
 
 ### Step 6: Mark conversions
@@ -150,6 +153,7 @@ The 5 standard UTM parameters:
 2. Click **Create → Report**
 3. Add a **Google Analytics** data source → connect your GA4 property
 4. Add the following widgets:
+
    - **Scorecard**: Total sessions
    - **Scorecard**: Total conversions
    - **Time-series chart**: Sessions over time, by source
@@ -348,6 +352,7 @@ The takeaway: **the best 2026 measurement is multi-layered first-party + modeled
 ## ✅ Module 8 Summary
 
 You now know:
+
 - 🌐 GA4 setup end-to-end (property → stream → events → conversions → consent)
 - 🏷️ The 5 UTM parameters and how to use them without breaking your data
 - 📊 Looker Studio as the free dashboarding tool of choice

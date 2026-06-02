@@ -26,6 +26,7 @@
 - Non-overlapping CIDRs required
 
 Toggles to know:
+
 - **Allow gateway transit** (on hub) + **Use remote gateways** (on spoke) = spokes use hub's gateway
 - **Allow forwarded traffic** = let non-direct traffic in (NVA pattern)
 
@@ -91,6 +92,7 @@ VPN SKUs grade: Basic (avoid) → VpnGw1/2/3 → VpnGw1AZ/2AZ/3AZ (zone-redundan
 ## 🏆 Exam Power Phrases
 
 Often **correct**:
+
 - ✅ "Hub-spoke with Azure Firewall in the hub"
 - ✅ "Private endpoint + Private DNS Zone link"
 - ✅ "Route-based VPN with VpnGw2AZ for zone redundancy"
@@ -98,6 +100,7 @@ Often **correct**:
 - ✅ "ExpressRoute Premium for Global Reach"
 
 Often **wrong**:
+
 - ❌ "Peering is transitive"
 - ❌ "Service endpoint = private IP"
 - ❌ "Basic VPN supports BGP"

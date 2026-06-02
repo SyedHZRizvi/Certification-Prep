@@ -231,6 +231,7 @@ The 2024–2026 generation of LLMs (Claude, GPT-4, Gemini) is *useful* for Bitco
 2. **They often confuse "Bitcoin" with "crypto."** Be explicit in prompts. "What does BIP-340 specify in Bitcoin's Taproot soft fork?" works better than "Tell me about Schnorr."
 
 Useful agents for this material:
+
 - **Anthropic Claude** for protocol summarization and BIP traversal.
 - **Perplexity** for regulatory-citation lookup with sources.
 - **GitHub Copilot Chat** for reading the Bitcoin Core C++ codebase.

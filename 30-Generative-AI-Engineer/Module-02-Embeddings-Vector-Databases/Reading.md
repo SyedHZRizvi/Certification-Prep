@@ -32,6 +32,7 @@ In a survey of production GenAI postmortems Anthropic published in 2024, retriev
 An embedding is a **dense vector representation of text** (or any modality — image, audio, code) such that *semantically similar inputs produce nearby vectors* in some high-dimensional space.
 
 "Nearby" is measured by:
+
 - **Cosine similarity** — angle between vectors (1 = identical direction, 0 = orthogonal, -1 = opposite). Almost always the production default.
 - **Dot product** — magnitude-aware; many embedding models are L2-normalized so dot product ≡ cosine.
 - **Euclidean (L2) distance** — straight-line distance; rarely preferred for normalized embeddings.
@@ -43,6 +44,7 @@ Most production embeddings live in 384–3072 dimensions. The numbers themselves
 A modern embedding model is itself a transformer (usually encoder-only, BERT-style) trained on contrastive learning: given pairs of (anchor, positive) and (anchor, negative), pull the anchor and positive together while pushing the anchor and negative apart. After billions of such pairs, the model learns a space where "semantic similarity" is captured by geometric proximity.
 
 The most common contrastive frameworks:
+
 - **InfoNCE** (Oord et al. 2018) — minimize the temperature-scaled negative log-likelihood of picking the positive among a batch of negatives.
 - **Triplet loss** — minimize d(anchor, positive) − d(anchor, negative) + margin.
 - **MultipleNegativesRankingLoss** — same family; widely used in sentence-transformers.
@@ -334,6 +336,7 @@ You will not get a single "winner." You will get a *decision matrix* — which i
 ## ✅ Module 2 Summary
 
 You now know:
+
 - 📐 What an embedding is, how it's trained (contrastive), and how to measure similarity (cosine)
 - 🏆 The 2026 lineup: OpenAI text-embedding-3, Cohere embed-v3, Voyage, BGE, E5, Jina, Nomic
 - 🗄️ The vector-DB decision tree: Pinecone, Weaviate, Qdrant, Chroma, pgvector, Milvus, OpenSearch, Vespa, Redis, LanceDB, Turbopuffer

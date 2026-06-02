@@ -569,6 +569,7 @@ D. Computing exact payroll tax owed by formula
 ## 🔍 Review Process
 
 For EACH wrong answer:
+
 1. Identify which module covered it (the question stem hints).
 2. Re-read that module's **Cheat-Sheet first**; if still unclear, re-read the Reading section.
 3. Add a flashcard to your Anki / Flashcards.md.

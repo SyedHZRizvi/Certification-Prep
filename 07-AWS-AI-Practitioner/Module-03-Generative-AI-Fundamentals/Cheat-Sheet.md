@@ -56,6 +56,7 @@
 ## 💰 Cost Rule
 
 **You're billed per 1,000 input + output tokens.** To save money:
+
 - Shorter, tighter prompts
 - Summarize / cache repeated context
 - Choose a smaller model for simple tasks
@@ -80,6 +81,7 @@
 ## 🏆 Exam Power Phrases
 
 Usually right:
+
 - ✅ "Hallucination → use **RAG**"
 - ✅ "Same answer every time → lower **temperature**"
 - ✅ "Reduce cost → fewer **tokens**"
@@ -88,6 +90,7 @@ Usually right:
 - ✅ "Multimodal = text + image + ..."
 
 Usually wrong:
+
 - ❌ "GenAI for exact financial math"
 - ❌ "Bigger context window completely replaces RAG"
 - ❌ "Temperature 0 eliminates hallucinations"

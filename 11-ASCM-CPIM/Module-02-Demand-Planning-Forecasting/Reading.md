@@ -18,6 +18,7 @@ Carlos owns an ice cream stand on Coney Island. In May 2024 he sells 120 cones a
 In April 2025, Carlos's daughter Lila — fresh out of a business class — sits him down. "Dad, last year you ran out of pistachio in July and threw out 200 cones of mint chip in October. You're forecasting by *gut*."
 
 Lila pulls out the previous three summers of sales. She spots three things:
+
 1. A **trend** — sales are growing ~8% year over year.
 2. A **seasonal pattern** — July is *always* 3.4× a baseline month, October is 0.4× baseline.
 3. **Random noise** — Tuesday rains aren't predictable.
@@ -75,6 +76,7 @@ The simplest multiplicative forecast model: **Forecast = T × C × S × R**. (Or
 `Forecast = Σ (w_i × D_i)` where Σ w_i = 1, and recent periods carry larger weights.
 
 **Worked example.** Same data (100, 120, 110, 130), weights (0.1, 0.2, 0.3, 0.4) most recent → most weight:
+
 - WMA = 0.1·100 + 0.2·120 + 0.3·110 + 0.4·130 = 10 + 24 + 33 + 52 = **119 units**.
 
 WMA still lags but less than SMA because it emphasizes recent data.
@@ -84,6 +86,7 @@ WMA still lags but less than SMA because it emphasizes recent data.
 `F_(t+1) = α × D_t + (1 - α) × F_t`
 
 Where:
+
 - **α (alpha)** is the smoothing constant, 0 < α < 1
 - High α (e.g. 0.5) = responsive to recent demand, more noise
 - Low α (e.g. 0.1) = smooth, slow to react
@@ -110,6 +113,7 @@ You probably won't compute Holt-Winters by hand on the exam, but you must recogn
 `Y = a + bX`
 
 Where:
+
 - Y = forecasted demand
 - X = independent variable (advertising spend, housing starts, GDP)
 - a = intercept; b = slope
@@ -162,6 +166,7 @@ These show up on every CPIM exam. Three to five questions involve a calculation.
 CPFR is the formal framework for **sharing forecasts between trading partners** (typically a retailer like Walmart and a supplier like P&G).
 
 The 4 main activities:
+
 1. **Strategy & planning** — joint business plan, scope
 2. **Demand & supply management** — shared forecasts, joint resolution of exceptions
 3. **Execution** — order generation, fulfillment
@@ -289,6 +294,7 @@ This is *why* S&OP forecasts at the product-family level (Module 3) — they're 
 ## ✅ Module 2 Summary
 
 You now know:
+
 - 🔬 The 4 demand components — Trend, Cyclical, Seasonal, Random (TCSR)
 - 📊 SMA, WMA, exponential smoothing — formulas and when each lags
 - 🎚️ What α does (responsiveness vs smoothness)

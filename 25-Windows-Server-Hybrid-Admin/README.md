@@ -52,6 +52,7 @@ Begin with [Module 1: Active Directory →](./Module-01-Active-Directory/Reading
 ## 🎯 What You'll Learn
 
 By the end of this track, you'll be able to:
+
 - Deploy and manage **Active Directory Domain Services** at enterprise scale — forests, trusts, FSMO roles, sites, GPOs, and RODCs
 - Integrate on-prem AD with **Microsoft Entra ID** via Entra Connect, password hash sync, pass-through auth, and federation
 - Build resilient networking with **Windows DNS Server, DHCP, IPAM**, and IP Address Management for hybrid environments
@@ -103,6 +104,7 @@ Modules 1–5 are the AZ-800 backbone (core infrastructure). Modules 6–10 are 
 🔗 **[Microsoft Learn AZ-800 study guide](https://learn.microsoft.com/credentials/certifications/resources/study-guides/az-800)** and **[AZ-801 study guide](https://learn.microsoft.com/credentials/certifications/resources/study-guides/az-801)** — the exact, current list of "skills measured" for each exam. Print both. Tick off every bullet as you study. Microsoft updates these every 3–6 months — always trust the latest version.
 
 Also bookmark:
+
 - 🔗 [Windows Server documentation](https://learn.microsoft.com/windows-server/) — official docs
 - 🔗 [Azure Arc documentation](https://learn.microsoft.com/azure/azure-arc/) — the heart of AZ-801
 - 🔗 [Microsoft Learn free sandbox modules — AZ-800](https://learn.microsoft.com/training/courses/az-800t00) and [AZ-801](https://learn.microsoft.com/training/courses/az-801t00) — hands-on without your own infra

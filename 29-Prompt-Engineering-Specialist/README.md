@@ -54,6 +54,7 @@ Begin with [Module 1: Foundations →](./Module-01-Foundations/Reading.md)
 ## 🎯 What You'll Master
 
 By the end of this track, you'll be able to:
+
 - Pick the right model family (Claude vs GPT vs Gemini vs Llama vs open-source) for a given task, with a defensible cost/quality justification
 - Tune **temperature**, **top-p**, **top-k**, **frequency/presence penalties**, **max tokens**, and **stop sequences** without guesswork
 - Write zero-shot, one-shot, and few-shot prompts that beat baseline by a measurable margin on a held-out eval set
@@ -100,6 +101,7 @@ By the end of this track, you'll be able to:
 🔗 **[Anthropic's Prompt Engineering Guide](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview)** + **[OpenAI's Prompt Engineering Guide](https://platform.openai.com/docs/guides/prompt-engineering)** — Read both end-to-end before week 3. The vendors are the primary source on what their models respond to.
 
 Honorable mentions:
+
 - 📘 *Prompt Engineering Guide* by DAIR.AI (free, open-source, comprehensive) — https://www.promptingguide.ai
 - 📘 Lilian Weng's blog (*Prompt Engineering*, *LLM-Powered Autonomous Agents*) — the most rigorous engineering writeups on the internet
 - 📘 Simon Willison's [llm.datasette.io](https://llm.datasette.io) and his weekly newsletter — practitioner gold

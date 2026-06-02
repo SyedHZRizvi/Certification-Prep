@@ -31,6 +31,7 @@ Six months later: stockouts down 70%, inventory down 25%, and Phoenix → Boston
 > **Citation.** DRP was formalized in Martin, André J., *Distribution Resource Planning: The Gateway to True Quick Response and Continuous Replenishment* (Oliver Wight, 1990; 3rd ed. John Wiley & Sons, 1995) — André Martin is widely credited with extending Joe Orlicky's MRP framework (Orlicky, *Material Requirements Planning*, McGraw-Hill, 1975) into distribution networks. The Bullwhip Effect was first formalized in Lee, Hau L., Padmanabhan, V. & Whang, Seungjin, "Information Distortion in a Supply Chain: The Bullwhip Effect," *Management Science* 43 (April 1997) and Lee et al., "The Bullwhip Effect in Supply Chains," *Sloan Management Review* (Spring 1997). The original demand-amplification phenomenon was identified much earlier in Forrester, Jay W., "Industrial Dynamics — A Major Breakthrough for Decision Makers," *Harvard Business Review* (July–August 1958) — Forrester's seminal HBR article is still required reading at MIT Sloan.
 
 DRP is a *time-phased* planning method that explodes demand from end-customers up through the distribution network — DC by DC, week by week — using:
+
 - **Lead times** between echelons
 - **Order policies** (lot sizes, min/max)
 - **On-hand inventory** at each location
@@ -98,6 +99,7 @@ DRP plans each DC independently. **Multi-Echelon** thinks of the entire network 
 | **Multi-echelon (MEIO)** | Math model that considers cross-echelon coverage; upstream stock can substitute for downstream stock |
 
 MEIO benefits:
+
 - Lower total network inventory (often 10–30% reduction)
 - Better service consistency across DCs
 - Less "ghost" inter-DC transfers
@@ -141,6 +143,7 @@ In Module 5 of CSCP we covered single-location safety stock. CLTD layers in mult
 SS = Z × σ × √L
 ```
 where:
+
 - Z = service-level z-score (90% = 1.28, 95% = 1.65, 99% = 2.33)
 - σ = standard deviation of demand per period
 - L = lead time in periods
@@ -182,6 +185,7 @@ Going from 95% to 99.9% nearly doubles safety stock. 🚨 **Trap:** Don't promis
 ### Bullwhip Effect
 
 When demand signals are amplified up the chain, you get the **bullwhip effect**:
+
 - 5% demand variance at the retail level can become 30% at the manufacturer
 - Causes: batched orders, promotions, price shifts, hedging
 - Cure: shared POS data (CPFR), smaller batches, daily replenishment
@@ -208,11 +212,13 @@ A high-yield exam topic.
 | **Manufacturing postponement** | Final assembly held until the customer order |
 
 Benefits:
+
 - Forecast at the *aggregate* level (less error)
 - Lower total safety stock
 - Faster response to actual demand mix
 
 Costs:
+
 - Slower per-order fulfillment
 - Need flexible, quick assembly capability at the postponement point
 
@@ -305,6 +311,7 @@ ROP = (Demand during lead time) + Safety Stock
 **Outcome.** By Q4 2024, Walmart reported reverse-logistics cost per unit had dropped ~22% from 2022 baseline. Recovery value (% of original retail value captured through disposition) rose from ~38% in 2022 to ~46% in 2024. Critically, *inventory accuracy* (IRA) at the store level rose from ~93% (2022) to ~97% (2024) — Hi-Vis essentially eliminated the "where is this returned unit?" mystery. Walmart's overall inventory turn improved 0.4 turns/yr (huge at Walmart scale), and the company began *selling* its returns disposition platform to other retailers in late 2024 (a 4PL-style move).
 
 **Lesson for the exam / for practitioners.** This case ties together three Module 4 concepts:
+
 1. **Inventory position math fails without accurate data.** If a returned unit is mis-tracked, inventory position = OH + OO − BO is wrong, which means ROP fires at wrong times, which means safety stock multiplies. Hi-Vis is, technically, an *IRA project* feeding the inventory math.
 2. **Multi-echelon (MEIO) only works with visibility.** A multi-echelon optimizer needs accurate inventory at every node. Pre-Hi-Vis, MEIO would have over-provisioned because ~7% of units were mis-located.
 3. **Returns are a reverse-DRP problem.** The same time-phased planning logic applies in reverse, and many companies don't connect the dots.
@@ -363,6 +370,7 @@ The CLTD exam tests this in scenarios like: "A retailer with poor inventory accu
 ## ✅ Module 4 Summary
 
 You now know:
+
 - 📋 The DRP record and how to read/fill one
 - ⏱️ Inventory position vs on-hand
 - 🛡️ Safety stock math, square-root rule, service-level cost curve

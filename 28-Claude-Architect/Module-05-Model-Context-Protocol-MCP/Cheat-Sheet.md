@@ -198,6 +198,7 @@ MCP **composes with** tool_use; it does not replace it.
 ## 🏆 Exam Power Phrases
 
 ✅ Often **right**:
+
 - "MCP is JSON-RPC 2.0"
 - "Three primitives: tools, resources, prompts"
 - "stdio = local subprocess; HTTP+SSE = remote"
@@ -206,6 +207,7 @@ MCP **composes with** tool_use; it does not replace it.
 - "MCP composes with tool_use; does not replace it"
 
 ❌ Often **wrong**:
+
 - "Claude speaks MCP natively"
 - "MCP only works with Claude"
 - "MCP replaces function calling"

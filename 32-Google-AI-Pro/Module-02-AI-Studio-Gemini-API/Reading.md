@@ -425,6 +425,7 @@ result = model.generate_content("Question about the document...")
 ```
 
 Use when:
+
 - A 100K-token product catalog reused across thousands of queries
 - A long system prompt + tool definitions stable across users
 - A multi-megabyte PDF analyzed in dozens of question-answer sessions
@@ -584,6 +585,7 @@ This staged path is *the* canonical Google-recommended pattern. AI Studio gets y
 ## ✅ Module 2 Summary
 
 You now know:
+
 - 🛠️ **Google AI Studio** as a free prototyping surface and *how it differs* from Vertex AI
 - 🔑 **Two auth surfaces** — API keys (AI Studio / Gemini API) vs ADC/IAM (Vertex AI)
 - 📞 **Three call interfaces** — Python `google-generativeai`, Node `@google/generative-ai`, REST cURL

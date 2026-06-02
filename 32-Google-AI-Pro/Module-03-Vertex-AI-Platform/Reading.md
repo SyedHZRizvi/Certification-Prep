@@ -293,6 +293,7 @@ endpoint.deploy(model=v2_model, traffic_split={"0": 90, "1": 10})
 ### Generative endpoints (Gemini)
 
 For Gemini you don't manage replicas — Google does. You either:
+
 - **PAYG**: pay per token; rate-limited by quotas
 - **Provisioned Throughput**: reserved Gemini capacity for a fixed monthly fee
 
@@ -328,6 +329,7 @@ vertexai.init(project="my-project", location="europe-west1")
 ```
 
 Regional choices matter for:
+
 - **Data residency** (EU GDPR, German BDSG, Singapore PDPA, Brazil LGPD)
 - **Latency** (deploy near your users)
 - **Model availability** (not every model is in every region — exam favorite)
@@ -359,6 +361,7 @@ The three enterprise-security primitives the exam tests heaviest:
 ### IAM (Identity and Access Management)
 
 Standard GCP IAM. Predefined roles:
+
 - `roles/aiplatform.user` — call Vertex AI APIs
 - `roles/aiplatform.admin` — full admin
 - `roles/aiplatform.modelUser` — invoke specific models
@@ -369,6 +372,7 @@ Standard GCP IAM. Predefined roles:
 ### VPC Service Controls (VPC-SC)
 
 A *perimeter* around Vertex AI resources. Traffic in/out crosses the perimeter only via specifically-allowed services and identities. Blocks:
+
 - Service-account credential theft → exfiltration to public Gemini
 - A compromised laptop trying to push data to an external bucket
 - Insider-threat scenarios
@@ -451,6 +455,7 @@ Confusingly, Vertex AI has its *own* Studio: a web UI for prompting Gemini (and 
 ## 🤖 Vertex AI Agent Builder (Module 7 deep-dive)
 
 Vertex AI Agent Builder is the umbrella for:
+
 - **Conversational Agents** (formerly Dialogflow CX) — structured-flow conversational AI
 - **Search Agents** — Vertex AI Search wrapped as a conversational front
 - **Custom Agents** — code-defined agents (often via ADK)
@@ -574,6 +579,7 @@ This is the canonical end-to-end architecture answer the PMLE exam wants from yo
 ## ✅ Module 3 Summary
 
 You now know:
+
 - 🏢 **Vertex AI as an umbrella** over ~25 sub-products
 - 🛍️ **Model Garden** — Gemini, Claude, Llama, Mistral, Cohere, AI21 under one IAM
 - 🧑‍💻 **Workbench / Pipelines / Experiments / Feature Store** — the ML core

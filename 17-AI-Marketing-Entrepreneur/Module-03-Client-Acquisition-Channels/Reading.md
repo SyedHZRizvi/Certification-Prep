@@ -190,6 +190,7 @@ Inbound is slower (6–18 months to compound) but builds the most defensible bus
 ### The Justin Welsh inbound model (publicly documented)
 
 Justin Welsh's playbook (sold openly via his courses + free newsletter):
+
 - **5 LinkedIn posts/week**, written from a Notion content engine
 - **Weekly newsletter** (Saturday Solopreneur, ~250K subscribers as of 2025)
 - **Repurpose** each newsletter into 5 LinkedIn posts + 5 Twitter threads + 1 YouTube video
@@ -201,6 +202,7 @@ You don't need 250K subscribers. **Even 2,500 highly-qualified subscribers in yo
 ### The "Notion of operators" model (community-content hybrid)
 
 A pattern made famous by operators like Anthony Pierri, Pat Walls (Starter Story), and Greg Isenberg:
+
 1. Pick a niche topic you can write about weekly for 2 years.
 2. Publish on 2 platforms (LinkedIn + newsletter, or YouTube + Substack).
 3. Capture emails on every piece.
@@ -296,6 +298,7 @@ Networks are slower than outbound but generate exceptionally warm leads. The bes
 ### Real revenue from networks (founder-cited data)
 
 From public Hampton + Dynamite Circle community surveys and individual founder disclosures:
+
 - **Average Year-1 community contribution to revenue:** 8–15%
 - **Average Year-3 community contribution:** 30–50%
 - **Top 10% Year-3 community contribution:** 60–80% (some agencies are 100% network-driven)
@@ -319,6 +322,7 @@ A larger agency hires you as their "Google Ads team" or "AI content team" under 
 ### Co-marketing partnerships
 
 You partner with a complementary (non-competing) agency. Examples:
+
 - An SEO agency + a paid-ads agency cross-refer clients
 - A content agency + a website-build agency package deals
 - A CRO agency + an ads agency offer joint "$3K full-funnel audit"
@@ -486,6 +490,7 @@ Brett Williams publicly states (multiple podcasts) that 70%+ of Designjoy client
 ## ✅ Module 3 Summary
 
 You now know:
+
 - 📞 The 7 channels and which 2 to pick for Year 1 (default: Outbound + Inbound)
 - 📤 The outbound math (1,000 sends → 30 positives → 2 closes → ~$10K)
 - 📥 The inbound flywheel and the Justin Welsh content engine

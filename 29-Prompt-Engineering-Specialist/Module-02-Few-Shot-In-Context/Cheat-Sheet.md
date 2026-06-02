@@ -124,6 +124,7 @@
 ## 🏆 Exam Power Phrases
 
 ✅ Often **right**:
+
 - "Try zero-shot first to establish a baseline"
 - "Use similarity-based (kNN) retrieval for production few-shot"
 - "Balance label distribution and randomize example order"
@@ -131,6 +132,7 @@
 - "Add a one-sentence reasoning line per example"
 
 ❌ Often **wrong**:
+
 - "More examples always help" (diminishing returns + cost)
 - "Order doesn't matter" (it does — 30pt swings)
 - "Few-shot replaces fine-tuning in every case"
@@ -154,6 +156,7 @@
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. Define zero/one/few/many-shot? ___
 2. Five example-selection strategies? ___
 3. Why does ordering matter, and what's the size of the effect? ___
@@ -244,6 +247,7 @@ Tools: FAISS, pgvector, Pinecone, Weaviate, Chroma, Qdrant, Milvus.
 ## 💸 Cost Math For Few-Shot
 
 For a 12-shot prompt at ~150 tokens per example + 600-token system + 100-token user query:
+
 - Total input: ~150*12 + 600 + 100 = ~2,500 tokens per call
 - On Claude Sonnet ($3/MTok input): ~$0.0075 per call
 - 100K calls/month: **~$750/month** (input alone)

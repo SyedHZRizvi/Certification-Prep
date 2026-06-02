@@ -114,6 +114,7 @@
 ## 🏆 Exam Power Phrases
 
 When you see these, they're often **correct**:
+
 - ✅ "Requires Entra ID P1" (Conditional Access, dynamic groups, App Proxy, branding)
 - ✅ "Requires Entra ID P2" (Identity Protection, PIM, entitlement mgmt, access reviews)
 - ✅ "Configure Diagnostic Settings → Log Analytics" (for >30d log retention)
@@ -121,6 +122,7 @@ When you see these, they're often **correct**:
 - ✅ "Exclude break-glass accounts from CA"
 
 When you see these, often **wrong**:
+
 - ❌ "Conditional Access works in Free tier"
 - ❌ "Global Admin automatically owns Azure subscriptions"
 - ❌ "Default sign-in logs retained for 1 year"

@@ -363,6 +363,7 @@ This is layer-by-layer thinking: physical (cable plugged in?) → link (DHCP got
 ## ✅ Module 2 Summary
 
 You now know:
+
 - 📋 Cable categories (5e/6/6a) and pinouts (T568A/B, straight, crossover, rollover)
 - 📡 Wi-Fi standards 1–7 and the 2.4 vs 5 vs 6 GHz trade-offs
 - 🌐 IPv4 / IPv6 basics — private ranges, APIPA, subnet mask, default gateway, DNS

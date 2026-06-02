@@ -61,6 +61,7 @@ The core insight: **two parties can exchange many payments off-chain by signing 
 ```
 
 Three properties make this work:
+
 1. **The funding transaction's output requires both signatures to spend.**
 2. **The latest commitment transaction is signed by both parties.** Either can broadcast it unilaterally.
 3. **Older commitment transactions are revoked** via a clever penalty scheme: if Bob broadcasts an old (earlier-state) commitment to cheat, Alice can use a "revocation secret" to claim *all* of Bob's channel funds.
@@ -79,6 +80,7 @@ Three properties make this work:
 4. **A network of channels** that can route payments from anyone to anyone
 
 Production-quality implementations followed:
+
 - **lnd** (Lightning Labs, written in Go, ~2016)
 - **c-lightning / Core Lightning** (Blockstream, written in C, ~2017)
 - **Eclair** (ACINQ, written in Scala, ~2017)
@@ -91,6 +93,7 @@ Production-quality implementations followed:
 ## ⚡ HTLCs — Hash Time-Locked Contracts
 
 To route a payment from Alice through Bob to Carol, the protocol needs a way to:
+
 - Make Bob's payment to Carol *conditional* on Carol revealing a secret
 - Make Alice's payment to Bob *conditional* on Bob revealing the same secret to Alice
 - Provide a *timeout* in case Carol disappears mid-payment
@@ -264,12 +267,14 @@ Lightning is by far the dominant Bitcoin L2. But the ecosystem includes others �
 When El Salvador adopted Bitcoin as legal tender in September 2021, Strike was the chosen technology partner for the government-issued Chivo wallet's Bitcoin/Lightning rails. The plan: every Salvadoran gets $30 of BTC via Chivo, can spend it via Lightning at participating merchants.
 
 **Decision.** Strike + the Salvadoran government chose:
+
 - **Custodial Lightning** for citizens (operational simplicity > self-custody for initial rollout)
 - **A government-run node infrastructure** (state-operated channels)
 - **Onboarding via Chivo** with KYC handled by government partners (a controversial decision)
 - **USD-pegged display** to soften BTC-volatility user experience
 
 **Outcome.** Mixed-to-difficult initial reception:
+
 - ~40% of citizens cashed out the $30 BTC to USD immediately (Bank of El Salvador survey, 2022)
 - Chivo had documented identity-fraud incidents
 - Adoption among small merchants was lower than projected
@@ -278,6 +283,7 @@ When El Salvador adopted Bitcoin as legal tender in September 2021, Strike was t
 - The Bitcoin Beach community at El Zonte (where bottom-up adoption preceded the law) showed sustainable use
 
 **Lesson for the exam / for practitioners.** Three principles every exam tests:
+
 1. **Adoption is a function of bottom-up demand, not top-down mandate.** El Zonte's organic adoption (Mike Peterson's NGO work, 2019-2020) was successful where Chivo's mandate was difficult.
 2. **Custodial onboarding is the right initial UX for new users.** Self-custody for everyone is the long-term goal but requires education. The "Layer 0" of the stack is human, not cryptographic.
 3. **Cross-border remittance is Lightning's strongest commercial case.** USD→Lightning→Local-fiat corridors (Strike US-Philippines, US-Mexico) demonstrably beat Western Union on fee and speed.

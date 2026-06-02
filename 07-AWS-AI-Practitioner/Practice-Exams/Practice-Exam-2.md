@@ -445,6 +445,7 @@ D. VPC interface endpoint + least-privilege IAM (resource-level) + KMS encryptio
 ## 🔍 Review Process
 
 For EACH wrong answer:
+
 1. Identify the module (questions are grouped by domain — see below).
 2. Re-read that module's Cheat-Sheet first; then Reading if needed.
 3. Add an Anki flashcard or write the explanation in your own words.

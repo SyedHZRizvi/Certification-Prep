@@ -13,11 +13,13 @@ But the deeper consequence was structural. Multi-touch attribution as a category
 Walmart spotted the opening. Walmart's retail media network, Walmart Connect, had been growing aggressively since its 2021 rebrand (formerly Walmart Media Group). The pitch to advertisers: "We have first-party purchase data on 90% of US households. Our MMM models close the iOS 14.5 measurement gap that Meta and Google can't." In 2023, Walmart Connect launched MMM-as-a-service for its largest advertisers. By 2024, Walmart Connect had reached $4B+ in annual ad revenue (up ~30% YoY), and the MMM-blended attribution model became a competitive moat against Amazon Ads (which was still primarily click-attributed within the Amazon ecosystem).
 
 The 2024 industry trajectory:
+
 - **Retail media networks** (Walmart Connect, Amazon Ads, Target Roundel, Kroger Precision, Instacart) crossed $50B in US ad spend per eMarketer.
 - **Walmart Connect** was the #3 US digital ad platform after Google and Meta — and the fastest-growing.
 - **MMM-as-a-service** became standard at every major retail media network.
 
 The lesson is two-fold:
+
 1. **Privacy-first measurement isn't just defensive.** Walmart turned a measurement crisis into a $4B competitive offering. The brands that adopt MMM are not just covering for broken pixels — they're learning the *real* incrementality of each channel.
 2. **Marketplaces are no longer just sales channels — they're measurement infrastructures.** Selling on Walmart isn't just about GMV; it's about getting access to Walmart Connect's MMM-blended measurement layer.
 
@@ -131,6 +133,7 @@ Attribution is the discipline of assigning credit for a conversion across the to
 ### GA4's Data-Driven Attribution (DDA)
 
 GA4 made DDA the *default* attribution model in 2023, replacing last-click (which Google deprecated in 2023 for Google Ads). DDA uses machine learning to assign fractional credit based on:
+
 - Position in the path (first, middle, last)
 - Channel type (paid, organic, email, direct)
 - Conversion-path patterns observed across millions of users
@@ -142,6 +145,7 @@ GA4 made DDA the *default* attribution model in 2023, replacing last-click (whic
 MTA was the post-2010 industry standard: pixel-based, deterministic, cross-channel. Tools like Visual IQ, Convertro, Neustar MarketShare promised "credit assignment across Google + Meta + TikTok + email + organic."
 
 iOS 14.5 / ATT broke MTA's pixel-tracking foundation. By 2024:
+
 - Visual IQ (acquired by Nielsen) → effectively wound down
 - Convertro (acquired by AOL) → effectively defunct
 - Neustar MarketShare (acquired by TransUnion) → shifted toward MMM
@@ -198,6 +202,7 @@ Geo-holdout is the gold standard. Meta and Google offer first-party conversion l
 ## 🏬 Marketplace Strategy — Where to Sell
 
 A 2024 mid-sized DTC brand typically sells across 3-7 channels:
+
 - DTC site (Shopify, WooCommerce, BigCommerce)
 - Amazon (US + occasionally EU)
 - Walmart Marketplace (US)
@@ -230,6 +235,7 @@ Net Amazon take rate: **typically 30-45% of GMV** when all fees + advertising ar
 ### The "Race to Zero" on Amazon
 
 Amazon's marketplace structure incentivizes commodity competition. Three forces:
+
 1. **Buy Box algorithm** rewards lowest price (within a tight band) + fastest shipping (FBA bias).
 2. **Search ranking** ties to conversion velocity — discounting drives velocity drives ranking.
 3. **Private-label competition** — Amazon Basics, Solimo, Amazon Essentials launched 100+ brands that compete directly with marketplace sellers.
@@ -239,6 +245,7 @@ Result: in commoditized categories (USB cables, kitchen tools, supplements), mar
 ### Walmart Marketplace — The Strategic Alternative
 
 Walmart Marketplace launched 2009, opened to third-party sellers in 2016, and grew aggressively 2020-2024. By 2024:
+
 - ~180,000 active sellers
 - 5-15% referral fees (slightly lower than Amazon)
 - WFS (Walmart Fulfillment Services) — Walmart's FBA equivalent
@@ -281,6 +288,7 @@ The 2024 consensus for sub-$50M DTC brands: 60-70% DTC, 20-30% Amazon, 5-10% Wal
 ### Hau Lee's Triple-A Supply Chain (HBR, 2004) — Still Relevant for Marketplaces
 
 Hau Lee's framework (Lee, "The Triple-A Supply Chain," *Harvard Business Review*, October 2004) is the canonical marketplace-fulfillment reference: **Agility, Adaptability, Alignment**. For e-commerce in 2026:
+
 - **Agility** — Quickly responding to short-term demand changes (a TikTok product going viral, a competitor stockout)
 - **Adaptability** — Adjusting supply networks over time (shifting from China to Vietnam during the 2018-2024 tariff cycles)
 - **Alignment** — Aligning incentives between brand, marketplace, and 3PL (Walmart Connect's MMM data-sharing is a 2024 example of alignment innovation)
@@ -294,6 +302,7 @@ Hau Lee's framework (Lee, "The Triple-A Supply Chain," *Harvard Business Review*
 Meanwhile, Walmart's retail media network — Walmart Connect (rebranded from Walmart Media Group in January 2021) — was growing aggressively. Walmart had a unique asset: first-party purchase data on ~90% of US households via the combination of in-store transactions, Walmart.com orders, and Walmart Marketplace data. Amazon Ads had similar data inside Amazon, but Amazon's measurement was largely click-attributed and confined to the Amazon ecosystem. Walmart could potentially offer something Amazon couldn't: cross-channel, MMM-blended measurement across Walmart-store + Walmart.com + Walmart Marketplace + sponsored ads.
 
 **Decision.** In 2023, Walmart Connect made three strategic moves:
+
 1. **Built internal MMM capability at scale.** Walmart Connect's data science team built proprietary MMM models on top of the Walmart data lake. Initially deployed for internal use — measuring the incrementality of Walmart Connect's own ad spend.
 2. **Launched MMM-as-a-service for top advertisers.** In Q3 2023, Walmart Connect began offering MMM measurement to its top-tier advertisers (~200 brands). The pitch: "We model the incrementality of *all your ad spend* — not just on Walmart — using our first-party purchase data as the ground truth."
 3. **Integrated MMM with self-serve ad buying.** By early 2024, Walmart Connect's self-serve platform exposed MMM-derived optimization recommendations directly in the advertiser dashboard.
@@ -303,6 +312,7 @@ Concurrently, Walmart expanded the retail media inventory: in-store digital scre
 **Outcome.** Walmart Connect reached approximately $4B in annual ad revenue in 2024 (per Walmart Q4 2024 earnings; up ~30% YoY from ~$3B in 2023). It became the #3 US digital ad platform after Google and Meta (per eMarketer 2024 retail media estimates) and the fastest-growing ad business at scale.
 
 The downstream effects:
+
 - Amazon Ads ($50B+ in 2024) remained #1 in retail media by revenue, but Walmart was closing the rate-gap.
 - Other retail media networks copied the playbook: Target Roundel, Kroger Precision Marketing, Instacart Ads all expanded MMM offerings in 2024.
 - The category — US retail media networks — crossed $50B in ad spend per eMarketer 2024, up from ~$35B in 2022.

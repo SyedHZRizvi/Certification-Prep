@@ -100,6 +100,7 @@ poller = client.begin_analyze_document(
 ## 🏆 Exam Power Phrases
 
 **Usually right**:
+
 - ✅ "Custom Classifier to route docs"
 - ✅ "Custom Neural for varying layouts"
 - ✅ "Hybrid + semantic for RAG"
@@ -107,6 +108,7 @@ poller = client.begin_analyze_document(
 - ✅ "Change detection policy on data source"
 
 **Usually wrong**:
+
 - ❌ "Custom Template for variable layouts"
 - ❌ "Semantic ranker on Free tier"
 - ❌ "Read API for invoice field extraction"

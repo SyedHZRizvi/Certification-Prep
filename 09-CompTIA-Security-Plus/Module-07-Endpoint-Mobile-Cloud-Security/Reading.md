@@ -175,6 +175,7 @@ The **NIST definition of cloud computing** (SP 800-145, September 2011: Mell & G
 
 ### Serverless
 - Less to patch (provider handles runtime), but you still own:
+
   - Function IAM policies (often too broad)
   - Input validation (functions still process user input)
   - Dependency vulns
@@ -254,6 +255,7 @@ PBQ might ask you to drag containment, eradication, and recovery actions into th
 **Outcome.** Thompson posted bragging on GitHub Gist and on Slack. A Capital One security researcher (a friend of Thompson's contact) saw the posts and reported it to Capital One on **17 July 2019**. Capital One confirmed the breach within hours, notified the FBI within a day, and patched the SSRF the same week. Public disclosure: **29 July 2019**. **~106 million** Americans and Canadians were affected. Capital One paid **$80M in OCC penalty** (August 2020) and **$190M in a class-action settlement** (December 2021). Internal incident-response cost was estimated at $150M+. Thompson was convicted in 2022 of seven federal counts and sentenced to time served plus probation; the lighter-than-expected sentence triggered intense academic and industry debate about how to charge "researcher-curious" intrusion vs malicious attack. AWS responded by accelerating **IMDSv2** (released November 2019) which requires session-token-based PUT requests (defeating SSRF-style abuse), and in mid-2024 began *defaulting* new instances to IMDSv2-only.
 
 **Lesson for the exam / for practitioners.** This case touches every cloud topic Sec+ tests:
+
 - **Shared responsibility model.** AWS provided IMDSv1 (a service); Capital One **configured it, configured the IAM role with broad S3 access, and configured the WAF that allowed SSRF.** Sec+ tests this exact framing: "A public S3 bucket exposed customer data — who is responsible?" → the customer. "An EC2 instance with an over-permissive IAM role — who is responsible?" → the customer.
 - **SSRF (Module 5) + IMDS (Module 7) = cloud-credential theft.** This pattern recurs constantly. The countermeasure is IMDSv2 (network-layer enforcement) **plus** scoped IAM roles **plus** runtime SSRF-prevention (block egress to `169.254.169.254` from anything but the legitimate AWS SDK). Sec+ tests each layer.
 - **CSPM would have caught this.** Cloud Security Posture Management tools (Wiz, Orca, Lacework, Prisma Cloud) would have flagged: (a) the S3 buckets accessible to the EC2 instance role; (b) the IAM role's over-broad scope; (c) the WAF being on a public-internet path with outbound metadata-IP access. Sec+ asks: "what tool would have detected this?" → **CSPM** for config drift, **CIEM** for entitlement, **CWPP** for runtime.
@@ -328,6 +330,7 @@ PBQ might ask you to drag containment, eradication, and recovery actions into th
 ## ✅ Module 7 Summary
 
 You now know:
+
 - 💻 The **endpoint security stack** — AV → EPP → EDR → XDR → MDR — and hardening basics
 - 📱 Mobile **device ownership models** (BYOD/CYOD/COPE/COBO) and **MDM/MAM/UEM**
 - ☁️ Cloud **shared responsibility** across IaaS/PaaS/SaaS/FaaS and the deployment models

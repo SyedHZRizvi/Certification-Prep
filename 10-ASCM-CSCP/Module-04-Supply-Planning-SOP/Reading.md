@@ -306,6 +306,7 @@ Eliyahu Goldratt's TOC says throughput is set by the **constraint** (the bottlen
 ## ✅ Module 4 Summary
 
 You now know:
+
 - 🎯 The planning hierarchy: strategic → S&OP → MPS → MRP → PAC
 - 🗓️ The Wallace/Stahl 5-step S&OP monthly cycle
 - 🚀 How IBP extends S&OP with financial, strategic, NPI integration

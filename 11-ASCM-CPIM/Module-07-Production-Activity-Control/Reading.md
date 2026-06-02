@@ -28,6 +28,7 @@ Within a month average repair time dropped to 1.8 days. Lobby tantrums vanished.
 **Production Activity Control (PAC)** is the shop-floor execution layer. Inputs: the planned orders from MRP. Outputs: work in progress, completed parts, and feedback to MRP.
 
 PAC's job:
+
 1. **Release** work orders (or kanban cards) to the floor
 2. **Schedule** sequencing (which order goes first?)
 3. **Dispatch** — issue daily/shift instructions to operators
@@ -176,6 +177,7 @@ Machine 2: |B|---------|--D----------|
 A **manufacturing cell** groups dissimilar machines that together produce a *family* of similar parts. Group Technology (GT) classifies parts by shape/feature, then dedicates a cell to that family.
 
 Benefits:
+
 - Reduced material handling
 - Reduced setup time (similar parts, similar setups)
 - Reduced queue time
@@ -190,6 +192,7 @@ Cells are central to lean manufacturing (Module 8).
 **SMED (Single Minute Exchange of Die)** — Shigeo Shingo's setup-reduction methodology. Goal: setup time < 10 minutes.
 
 Two phases:
+
 1. **External setup** — work done while machine still runs the prior job (prep next tooling)
 2. **Internal setup** — work that requires the machine to stop
 
@@ -217,6 +220,7 @@ Many real plants are **hybrid**: MRP for materials planning, kanban for componen
 **Situation.** Stitch Fix launched in 2011 as a personal-styling subscription: customers complete a style profile, the company sends a curated box of clothing every month, customer keeps what fits and returns the rest. IPO'd 2017 at $1.6B market cap. From inception, Stitch Fix's competitive moat was *algorithmic merchandising*: combining customer-supplied data with implicit preferences (purchase history, return reasons, styling notes) to predict which SKUs would convert for which customers. By 2017 the company had ~80 data scientists and a vertically integrated inventory model that combined elements of MTS (basics, denim) with ATO-like assortment customization (the curated box). This created a PAC problem unlike a traditional retailer: instead of releasing work orders to a factory floor, Stitch Fix released *picking-and-packing orders* to its distribution centers (Indianapolis, Dallas, Phoenix, Pittsburgh, Atlanta), with each box containing 5 individually-selected items.
 
 **Decision.** Stitch Fix built a vertically integrated **AI-augmented merchandising and operations stack**:
+
 - **Demand forecasting** at the customer × style × size × color granularity (well below SKU), using ML models retrained nightly.
 - **Inventory positioning** that placed deep SKU coverage in the highest-volume DCs and tail SKUs centralized — a hybrid push-pull architecture.
 - **Box-construction algorithm** that selected the 5 items for each customer given (a) the customer's profile and history, (b) DC inventory positions, (c) per-customer styling-overlay by human stylist, (d) cost-to-serve constraints (return rate penalties).
@@ -226,6 +230,7 @@ Many real plants are **hybrid**: MRP for materials planning, kanban for componen
 **Outcome.** Stitch Fix peaked at $2.1B revenue (FY 2021, post-COVID DTC surge) with ~4M active customers. The model's return rate (industry secret, but reported as 35–45%) was the operational headwind — every "no" item is a reverse-logistics cost. From 2022 onward the company struggled as the subscription-DTC category cooled and competition from Amazon Personal Shopper plus the algorithmic-shopping features on Shein/Temu eroded the moat. FY 2024 revenue dropped to ~$1.0B (Stitch Fix Q4 FY 2024 earnings, Oct 2024) and the company has taken multiple restructuring charges. By 2024, Stitch Fix was canonical case material in MIT Sloan Management Review pieces on "AI-augmented retail operations" and the Stanford GSB / Wharton OMP curriculum on data-driven inventory management.
 
 **Lesson for the exam / for practitioners.** Stitch Fix demonstrates several PAC + inventory + scheduling extensions of the classical CPIM framework:
+
 1. **Dispatching at the order-construction layer**, not the work-center layer. The "work center" is a stylist + DC pick crew, and the "work order" is a customer box. The CPIM canonical rules (SPT, EDD, CR) still apply but at a different granularity.
 2. **Forecast aggregation below SKU** (customer × SKU) violates the classical "more accurate at higher aggregation" rule — Stitch Fix made it work by combining heavy ML with the human-stylist override layer.
 3. **Reverse logistics as a PAC consideration.** Return rate is a planning input, not a passive outcome.
@@ -294,6 +299,7 @@ The CPIM exam-takeaway: the **classical PAC framework** (release / schedule / di
 ## ✅ Module 7 Summary
 
 You now know:
+
 - 🏃 What PAC does — release, schedule, dispatch, monitor, report
 - 📅 The 5 elements of manufacturing lead time and that queue dominates
 - 🚦 The 6 dispatching rules (FCFS, SPT, EDD, LPT, CR, slack/op)

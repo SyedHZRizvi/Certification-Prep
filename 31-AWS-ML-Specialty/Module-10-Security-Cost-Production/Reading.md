@@ -13,6 +13,7 @@
 Meet Lena. She runs ML at a Series-B healthcare-AI startup. In 2023 her team built an EHR-NER model on SageMaker. The data — millions of clinical notes — sat in S3. Training jobs ran in the default VPC. The endpoint was public. The dev IAM role had `AmazonSageMakerFullAccess`.
 
 Three weeks before their HIPAA audit, the security team did a deep review. They found:
+
 - **Public endpoint** with no authentication beyond IAM SigV4 (anyone with internet access who had a leaked SigV4 key could call it)
 - **No VPC isolation** — training data exfiltrated nowhere (yet), but no protection if it had been
 - **No KMS customer-managed key** on the training data; encryption was AWS-managed SSE-S3 (insufficient for HIPAA audit logging)
@@ -22,6 +23,7 @@ Three weeks before their HIPAA audit, the security team did a deep review. They 
 - **Notebook instances running 24/7** — $2,400/month wasted
 
 The audit was a near miss. Lena and the security team did a hardening sprint:
+
 - **VPC-only training** — moved jobs into a VPC with a NAT gateway-less private subnet, S3 VPC Gateway Endpoint, and KMS VPC Endpoint
 - **Customer-managed KMS** keys with per-team key policies; KMS encrypts S3 data, EBS volumes, EFS, and model artifacts
 - **PrivateLink** on the SageMaker endpoint — no public DNS at all
@@ -53,6 +55,7 @@ SageMaker uses **execution roles** (IAM roles assumed by training jobs, endpoint
 ### Least-privilege patterns
 
 A SageMaker execution role typically needs:
+
 - `s3:GetObject` / `s3:PutObject` on **specific bucket prefixes only**
 - `kms:Decrypt` / `kms:GenerateDataKey` on **specific KMS keys**
 - `ecr:GetAuthorizationToken` + `ecr:BatchGetImage` on **specific repositories**
@@ -368,6 +371,7 @@ Bedrock can also be invoked via VPC endpoints (PrivateLink). Traffic never trave
 ## ✅ Module 10 Summary
 
 You now know:
+
 - 🔐 **IAM execution roles** for SageMaker — Studio, training, endpoint, pipeline — and least-privilege patterns
 - 🔑 **KMS encryption** across S3, EBS, EFS, FSx, model artifacts; inter-container training encryption
 - 🌐 **VPC isolation** with private subnets + Gateway / Interface VPC endpoints + `enable_network_isolation`

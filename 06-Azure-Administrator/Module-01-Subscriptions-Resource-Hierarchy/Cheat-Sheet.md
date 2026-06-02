@@ -53,6 +53,7 @@ TENANT (Entra ID)
 | Auto-inherit | ❌ NO |
 
 Built-in policies to know:
+
 - **Require a tag and its value on resources**
 - **Inherit a tag from the resource group** (Modify effect)
 - **Append a tag and its value** (Append effect)
@@ -111,6 +112,7 @@ Only **Owner** + **User Access Admin** can create/remove.
 ## 🏆 Exam Power Phrases
 
 When you see these, they're often **correct**:
+
 - ✅ "Apply at the management group level"
 - ✅ "Use an Azure Policy with the `Modify` effect"
 - ✅ "Tag resources with CostCenter for chargeback"
@@ -118,6 +120,7 @@ When you see these, they're often **correct**:
 - ✅ "Use exemption to override inherited policy"
 
 When you see these, often **wrong**:
+
 - ❌ "Tags automatically inherit"
 - ❌ "Apply a counter-policy at the child scope to override Deny"
 - ❌ "Move resources across tenants"

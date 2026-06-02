@@ -16,6 +16,7 @@
 Recall the Stitch Fix story from Module 2 — the activation threshold was the **3rd Fix**. Customers who reached three Fixes had 85% twelve-month retention; customers who churned after Fix #1 had 11% retention. The strategic question for the marketing-science team was: *for every customer in the first 30 days, what is the probability they will reach Fix #3?*
 
 The team built a stacked ensemble model:
+
 - **Feature input**: 142 features from the 60-question style-quiz, the first-Fix item selections, the keep/return decisions, browse behavior on the site, demographic data, geographic data, and stylist-note sentiment scores.
 - **Model**: Gradient-boosted trees (LightGBM) → output probability of reaching Fix #3.
 - **Calibration**: Platt scaling so the predicted probability matched the empirical rate.
@@ -51,6 +52,7 @@ CLV = (Average Order Value) × (Purchase Frequency) × (Customer Lifespan) × Gr
 ```
 
 This works for *steady-state, contractual* businesses (Netflix, Spotify) where you can directly observe lifespan. For *non-contractual* businesses (most e-commerce, most consumer apps) it's wrong, because:
+
 - You can't directly observe lifespan (no churn signal).
 - AOV and frequency vary heavily by customer.
 - The formula gives one number per business, not per customer.
@@ -66,12 +68,14 @@ In 2005, Peter Fader (Wharton) and Bruce Hardie (LBS) published a series of pape
 3. Customers' purchase rates and dropout probabilities are **independent**.
 
 The model takes four inputs **per customer**:
+
 - `x` = number of repeat transactions (i.e., total purchases minus the first)
 - `t_x` = time of the most recent transaction
 - `T` = time of observation (now)
 - `monetary_value` = average transaction value
 
 And outputs:
+
 - **Expected number of future transactions** in the next `t` time units.
 - **Probability the customer is still active**.
 - (With Gamma-Gamma) **Expected revenue per future transaction**.
@@ -462,6 +466,7 @@ This is the strategist's playbook. Memorize this six-step flow.
 ## ✅ Module 6 Summary
 
 You now know:
+
 - 💎 The Fader-Hardie BG/NBD + Gamma-Gamma CLV model and how to fit it in Python (`lifetimes`).
 - 🚪 Churn-prediction model selection, feature engineering, and calibration.
 - 🎯 Propensity scoring and why targeting the top decile is often *wrong*.

@@ -124,6 +124,7 @@ Or `outlines.from_pydantic(MySchema)` for open-source. Schema-constrained genera
 ## 📊 Production Safety Checklist
 
 Before launch:
+
 - [ ] What's the worst thing my LLM can SAY? (output filter)
 - [ ] What's the worst thing my LLM can DO? (action gate)
 - [ ] What's the worst a malicious user can MAKE it do? (injection/jailbreak defense)
@@ -135,6 +136,7 @@ Before launch:
 ## 🏆 Exam Power Phrases
 
 ✅ Often **right**:
+
 - "Defense-in-depth, layered guardrails"
 - "Provenance-tagged input + privilege separation"
 - "HITL for destructive actions"
@@ -143,6 +145,7 @@ Before launch:
 - "OWASP LLM Top 10 review pre-launch"
 
 ❌ Often **wrong**:
+
 - "We'll add safety later"
 - "Trust the LLM"
 - "Single guardrail is enough"

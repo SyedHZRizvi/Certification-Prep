@@ -176,15 +176,18 @@
 ## How to sequence this list
 
 If you have limited time (e.g., 12 weeks to the exam):
+
 1. ASCM CSCP Learning System (#1) — week 1-12.
 2. *The Goal* (#4) — one weekend, ideally week 4.
 3. Kraljic 1983 (#8) + Fisher 1997 (#9) + Hau Lee 2004 (#10) — three afternoons, week 6.
 4. ASCM *SCM Now* (#20) — one issue per week.
 
 If you have 6 months to the exam and CSCO ambition:
+
 - Add Christopher (#2), Liker (#5), Sheffi (#18), Polman-Winston (#19), and MIT CTL MicroMasters (#27).
 
 If you're building a career, not just passing the exam:
+
 - All 30 items, sequenced over 2 years. The list above is roughly the canon. Beyond it, follow the McKinsey + Gartner + ASCM annual reports for current developments.
 
 The CSCP exam tests a static body of knowledge from this canon. The post-CSCP world adds 2024-2026 events: tariff cycles, Red Sea / Houthi, CSRD enforcement, AI-augmented S&OP, Toyota's chip resilience playbook. The reading list above prepares you for both.

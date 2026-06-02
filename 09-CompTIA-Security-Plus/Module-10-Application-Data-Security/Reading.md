@@ -15,6 +15,7 @@
 Bakery A makes a new recipe and never tests it — they just sell it. First time a customer complains about a missing ingredient, they fix it. Six months later, they've quietly served 50 batches with stale eggs and only noticed when health inspectors showed up.
 
 Bakery B has a system. Before any new recipe goes to customers:
+
 - A baker reviews the recipe (peer review)
 - They test it in a sandbox kitchen with a small batch
 - They check the ingredients list against a known-allergens database (dependency scanning)
@@ -231,6 +232,7 @@ DLP monitors and blocks unauthorized exfiltration of sensitive data.
 ## 🧬 Identification of Data Sensitivity (in scans)
 
 Modern DLP/CSPM systems can fingerprint:
+
 - **Regex** — SSN `\d{3}-\d{2}-\d{4}`, credit cards (with Luhn validation), email
 - **Exact data match** — hash of customer records
 - **ML / NLP** — context-aware classification
@@ -284,6 +286,7 @@ A PBQ might ask you to drag activities into the right pipeline stages (Commit �
 **Outcome.** The first datasets surfaced on hacker forums in **July 2022** (~5.4M user records offered for sale). The full scope became clear when, in **January 2023**, another actor dumped a **~200M-record correlated dataset** (Twitter handle ↔ email) free on a public hacker forum. (Some reports said 235M; many records were duplicates.) Twitter's December 2022 official statement said the bug had been fixed and "there is no evidence that data was taken." The January 2023 dump made that statement obviously false; the company quietly amended it. The Irish Data Protection Commission (DPC) opened a GDPR investigation; the FTC opened an inquiry under Twitter's 2011/2022 consent decree. Twitter (under new ownership) was later fined €450,000 by the Irish DPC for the breach disclosure issues (December 2023). The downstream effects — using the email-to-handle map to deanonymize pseudonymous Twitter accounts of journalists, activists, and dissidents — continue into 2026. Some reports tied the data to subsequent targeted-phishing campaigns and to physical-safety incidents for activists in restrictive regimes.
 
 **Lesson for the exam / for practitioners.** Module 10 (and adjacent Modules 5/8/9) concepts are illustrated end-to-end:
+
 - **Authorization design failure (OWASP A01: Broken Access Control).** The API trusted the *requester* (any authenticated Twitter user) rather than checking whether the *target user* had made their info public. A textbook IDOR / broken access-control issue. Sec+ tests this in OWASP-Top-10 questions.
 - **Detection failure — API security telemetry.** Twitter's monitoring lacked **API-level anomaly detection** (rate limits per token, behavioral analytics on lookup volumes per principal). Modern **CASB**/**API gateways** with anomaly detection (Salt Security, Noname Security, etc.) plus **CSPM/CIEM** for cloud-API-policy posture would have caught the volumetric abuse. Sec+ tests this as "what control would have detected?"
 - **Data classification + privacy regulation.** Emails linked to pseudonymous handles are **personal data** under GDPR Article 4(1). The breach triggered GDPR breach-notification (Article 33: 72-hour notification) — which Twitter mishandled. Sec+ Module 9 concepts.
@@ -357,6 +360,7 @@ A PBQ might ask you to drag activities into the right pipeline stages (Commit �
 ## ✅ Module 10 Summary
 
 You now know:
+
 - 🔁 **SDLC** + **DevSecOps** activities per phase, plus threat modeling (STRIDE/PASTA/DREAD)
 - 🛠️ Secure coding principles + memory-safe vs unsafe languages
 - 🧪 **SAST / DAST / IAST / SCA / RASP / fuzzing** — when each is used
@@ -385,6 +389,7 @@ You now know:
 **You've covered every domain. Time to consolidate.**
 
 ### Next steps:
+
 1. 🎥 [Videos.md](./Videos.md)
 2. ✏️ [Quiz.md](./Quiz.md)
 3. 📋 [Cheat-Sheet.md](./Cheat-Sheet.md)

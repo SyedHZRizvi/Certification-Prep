@@ -78,12 +78,14 @@ If any of these are in your draft, delete + replace with specific findings.
 ## 🏆 Power Phrases In Your Writeup
 
 When writing recommendations:
+
 - ✅ "Costing approximately X visits/month based on..."
 - ✅ "Competitor [X] ranks #1 for this with a [length] article on [topic]..."
 - ✅ "Quick win: ranked #11 for [keyword] — moving to top 5 estimated to..."
 - ✅ "Top priority: closes the #1 content gap..."
 
 Avoid:
+
 - ❌ "Should consider improving..."
 - ❌ "Best practice is..."
 - ❌ "Generally speaking..."
@@ -127,6 +129,7 @@ After the audit is done, build a 1-page case study page on your portfolio:
 ## ✏️ Quick Self-Check Before Publishing
 
 Cover the answers; recite:
+
 1. The 7 sections of my audit ___
 2. The 5 trap findings I avoided ___
 3. My roadmap has ___ articles, prioritized as ___

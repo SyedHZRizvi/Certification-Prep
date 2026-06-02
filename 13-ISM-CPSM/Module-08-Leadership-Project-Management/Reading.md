@@ -318,6 +318,7 @@ Supply rarely acts alone. Common cross-functional partners:
 **Situation.** Jeffrey K. Liker's 2004 book *The Toyota Way: 14 Management Principles from the World's Greatest Manufacturer* (McGraw-Hill; 2nd ed. 2020) crystallized what made Toyota distinct: the **"Two Pillars" of continuous improvement (kaizen) and respect for people**, applied with discipline across decades. Liker's 14 principles influenced an entire generation of supply management leaders — not as a checklist but as a leadership philosophy. By 2024, the Toyota Way had become the implicit reference framework for "what good looks like" in procurement leadership at companies ranging from Boeing (post-787) to Caterpillar to UPS.
 
 **Decision.** Toyota's supply leadership applied the Two Pillars consistently:
+
 1. **Long supplier-engagement horizons.** Toyota signs 5- and 10-year roadmap agreements with strategic suppliers, even when shorter terms would optimize unit cost. The pillar of *respect for people* is operationalized as "we won't whipsaw our suppliers."
 2. **Embedded supplier-development engineers.** Toyota's Operations Management Consulting Division (OMCD) and the Toyota Supplier Support Center deploy Toyota engineers *into* supplier facilities for months at a time to help them improve — for free. This is *kaizen* extended into the supply base.
 3. **Hoshin Kanri (policy deployment).** Toyota cascades annual strategic objectives from C-suite down to factory floor and back up — a multi-month annual cycle. Supply leaders participate as full owners of category-level objectives.
@@ -331,6 +332,7 @@ The Module 4 case study (Toyota chip shortage) is the operational *outcome* of t
 The Lean Enterprise Institute (LEI), founded by James Womack of MIT's IMVP study (Womack, Jones & Roos, *The Machine That Changed the World*, 1990, Free Press), continues to formalize the Toyota Way for global practitioners. Liker's framework was extended in *The Toyota Way to Lean Leadership* (Liker & Convis, 2011, McGraw-Hill).
 
 **Lesson for the exam / for practitioners.** This is the textbook for procurement leadership at scale:
+
 - **Style: Transformational + Servant + Situational.** Toyota's purchasing executives don't dictate; they coach, cascade, and consult.
 - **Time horizon: Multi-year.** Quarterly metrics are tools, not goals.
 - **Influence: Genchi Genbutsu + Nemawashi.** Real visibility + broad pre-socialization beats top-down dictation every time.
@@ -417,6 +419,7 @@ Supply leaders often champion Lean tools (originating from the **Toyota Producti
 ## ✅ Module 8 Summary
 
 You now know:
+
 - 🌟 Major leadership styles and when to use each
 - 🪜 Kotter's 8 Steps and ADKAR for change
 - 👥 Tuckman's team development stages

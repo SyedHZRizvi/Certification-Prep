@@ -18,6 +18,7 @@ Meet Jamal. He opens "Brew Bean Coffee" in 2019 — one shop, one cash register,
 By 2022, Brew Bean has **12 locations** across 3 states. Each has its own staff, its own utility bills, its own equipment leases. Jamal still dumps everything in one giant shoebox. His accountant cries. The Massachusetts location's espresso machine got charged to the Vermont shop. Nobody can tell which location is actually profitable. When the health inspector asks for *just* the Vermont receipts, Jamal spends 6 hours digging through paper.
 
 In 2024, Jamal hires a CFO. The CFO sets up a hierarchy:
+
 - **Brew Bean Holdings LLC** (the parent — like Azure's *tenant*)
 - **Region books** — Northeast, Mid-Atlantic, Southeast (like *management groups*)
 - **Per-location accounts** — each shop has its own QuickBooks file (like *subscriptions*)
@@ -65,6 +66,7 @@ Now when the Vermont inspector calls, Jamal pulls one folder. When Jamal wants t
 ## 🪪 Level 1: The Microsoft Entra ID Tenant
 
 The tenant is your **identity boundary**. One organization = one Entra ID tenant in 99% of cases. It holds:
+
 - Users, groups, service principals
 - The default DNS name like `contoso.onmicrosoft.com`
 - Custom domains you've verified (like `contoso.com`)
@@ -416,6 +418,7 @@ The correct order:
 ## ✅ Module 1 Summary
 
 You now know:
+
 - 🏛️ The 4-level Azure hierarchy: Tenant → MG → Subscription → RG → Resource
 - 📜 How inheritance works (additive for RBAC, restrictive for Policy)
 - 🚚 How to move resources between RGs/subscriptions (and what breaks)
@@ -437,6 +440,7 @@ You now know:
 **Situation.** Coca-Cola European Partners (now Coca-Cola Europacific Partners, CCEP after the 2021 merger) is the world's largest independent Coca-Cola bottler — ~33,000 employees, 13 countries, 90+ manufacturing sites. In 2019 they inherited a portfolio of more than 100 Azure subscriptions accumulated by 13 country IT teams, each provisioned ad hoc with no shared management-group hierarchy, no consistent tagging, and no central policy guardrails. Cost was unattributable per country, GDPR posture was uneven, and a single misconfigured developer subscription in Spain had been silently spinning up `Standard_D64s_v3` VMs for six months before anyone noticed.
 
 **Decision.** CCEP's central cloud team partnered with Microsoft FastTrack and an external advisor (Avanade) to apply the **Cloud Adoption Framework "Enterprise-Scale" landing zone** pattern (Microsoft, 2020). They:
+
 1. Built a 4-level management-group tree: *Tenant Root → Platform / Landing Zones / Sandbox → Corp + Online → Prod + Non-Prod*.
 2. Migrated all 100+ subscriptions under the new tree (no resource downtime — only the MG association changed).
 3. Applied 14 Azure Policy initiatives at the *Landing Zones* MG: allowed locations restricted to `westeurope`, `northeurope`, `francecentral`, `germanywestcentral`; required tags (`CostCenter`, `Application`, `Owner`, `DataClassification`); deny on public IP creation without exemption; CMK enforcement on storage and SQL.
@@ -444,6 +448,7 @@ You now know:
 5. Wrapped production RGs in `CanNotDelete` locks and enforced PIM eligibility for Owner role at sub scope (covered in Module 2).
 
 **Outcome.** By 2024 CCEP reported (Microsoft customer story, *Coca-Cola Europacific Partners*, 2023, refreshed 2024-09):
+
 - **~22% reduction in annual Azure spend** (≈ €4M / year on a stated baseline) from a combination of unused-resource cleanup, reservation purchases, and dev/test auto-shutdown.
 - **Time to provision a new project subscription** fell from 6 weeks (manual ticketing) to **under 2 days** via a self-service template that places subs under the right MG with policies pre-applied.
 - **GDPR data-residency violations** dropped to zero on net-new resources (the Allowed Locations policy blocks creation outside EU regions; existing non-compliant resources flagged for remediation).

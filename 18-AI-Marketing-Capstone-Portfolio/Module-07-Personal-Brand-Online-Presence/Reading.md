@@ -88,6 +88,7 @@ Recommended starter formula:
 **`[Your role/identity] | [Most impressive capstone hook] — [where to find it]`**
 
 Examples:
+
 - *"Marketer | Built a $200 paid campaign + post-mortem — featured ↓"*
 - *"AI-native marketer | Lead-routing agent + content brief generator — repos pinned"*
 
@@ -175,6 +176,7 @@ The banner image is 1584 × 396 pixels. Most people leave it default (blue). Don
 ### What To Put There
 
 Options (pick one):
+
 1. **A clean wordmark** — your name + tagline ("AI-native marketer • builds in public")
 2. **A capstone screenshot** — the attribution chart, or the agent's output
 3. **A code-art aesthetic** — terminal screenshot, dashboard, abstract pattern
@@ -417,6 +419,7 @@ The students who do this course best are the ones who treat the build as the con
 - *"My Meta campaign on day 5: CTR up 3x after I rewrote the hook. The new hook is [thing]."*
 
 Why this works:
+
 1. You don't have to wait to "finish" before posting
 2. Each capstone becomes 5–8 posts naturally
 3. The audience watches you grow → builds trust faster
@@ -518,6 +521,7 @@ Your 60-second cold open:
 ## ✅ Module 7 Summary
 
 You now know:
+
 - 🌐 The LinkedIn rebuild (headline, About, Featured, banner)
 - 🏠 How to ship a portfolio site fast (Notion default; Webflow / Read.cv / Astro alternatives)
 - 📣 The content distribution playbook (LinkedIn / X / YouTube cadence)

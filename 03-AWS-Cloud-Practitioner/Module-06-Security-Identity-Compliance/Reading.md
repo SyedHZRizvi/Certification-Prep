@@ -316,11 +316,13 @@ You download reports from **AWS Artifact** (no fee, self-service).
 In March 2019, a former AWS engineer named Paige Thompson — who had left AWS in late 2016 — discovered a **Server-Side Request Forgery (SSRF)** vulnerability in Capital One's misconfigured WAF. SSRF lets an attacker trick a web server into making HTTP requests on the attacker's behalf. Thompson used SSRF to query the EC2 Instance Metadata Service (IMDS v1, which doesn't require session tokens) at `http://169.254.169.254/latest/meta-data/iam/security-credentials/[role-name]`, retrieving temporary credentials for the WAF's IAM role.
 
 **Decision (the breach steps).** Once Thompson had the IAM credentials:
+
 1. She used the AWS CLI from her own machine, authenticated as the WAF role, to list all S3 buckets in the Capital One account (`aws s3 ls`).
 2. She used `aws s3 sync` to download ~30 GB of S3 data including ~106 million applicant records from a credit-card-application bucket.
 3. She posted snippets on GitHub and a public Slack channel, where another security researcher noticed and reported it to Capital One on July 17, 2019.
 
 **Outcome.** Capital One disclosed the breach July 29, 2019. The damage:
+
 - ~106 million customers affected (US + Canada)
 - ~140,000 SSN exposures, ~80,000 bank account numbers, ~1M Canadian SIN numbers
 - **$80M civil penalty from the OCC** (Office of the Comptroller of the Currency) in 2020
@@ -331,12 +333,14 @@ In March 2019, a former AWS engineer named Paige Thompson — who had left AWS i
 **Root cause analysis (what AWS did vs what the customer did).**
 - AWS infrastructure was **not** breached. The hypervisor, the underlying EC2 hardware, the AWS network, the AWS IAM service all functioned correctly. They authenticated and authorized exactly what they were told to.
 - The customer was responsible for:
+
   1. The WAF misconfiguration (the SSRF vulnerability)
   2. The over-permissioned IAM role (violated least privilege — Saltzer & Schroeder, 1975)
   3. The choice to use IMDS v1 (which AWS had already announced was being deprecated in favor of IMDS v2's session-token model — released November 2019, three months after the breach)
   4. Insufficient detective controls (GuardDuty was apparently not configured to alert on anomalous S3 listing patterns; CloudTrail logs existed but weren't being monitored in near-real-time)
 
 **Lesson for the exam / for practitioners.** Capital One is *the* canonical illustration of the Shared Responsibility Model. On CLF-C02, expect 3–5 questions where the exam asks "who is responsible for X?" — and the answer is "the customer" because **the breach mechanism (misconfigured WAF + over-permissioned IAM + slow detection) is entirely on the customer side of the boundary**. Practitioners take three operational lessons:
+
 1. **Least privilege isn't a slogan — it's a control**. The WAF role should have been limited to one bucket, not all buckets.
 2. **IMDS v2 is now the default**. Force it on; block IMDS v1 at the org level via SCP.
 3. **GuardDuty + Macie + automated alerting** would have flagged the bulk-S3-download pattern in hours, not weeks.
@@ -351,6 +355,7 @@ In March 2019, a former AWS engineer named Paige Thompson — who had left AWS i
 ## ✅ Module 6 Summary
 
 You now know:
+
 - 🛡️ Shared Responsibility Model (security OF cloud = AWS; IN cloud = you)
 - 👤 IAM: Users, Groups, Roles, Policies — least privilege, MFA, no root for daily
 - 🏢 Organizations + SCPs for multi-account guardrails

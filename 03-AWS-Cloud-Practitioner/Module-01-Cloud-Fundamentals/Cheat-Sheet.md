@@ -103,6 +103,7 @@
 ## 🏆 Exam Power Phrases
 
 Usually right when you see:
+
 - ✅ "Choose a Region close to users / for compliance"
 - ✅ "Deploy across multiple Availability Zones"
 - ✅ "Use CloudFront for global low-latency delivery"
@@ -110,6 +111,7 @@ Usually right when you see:
 - ✅ "Pay-as-you-go / on-demand"
 
 Usually wrong:
+
 - ❌ "Buy more servers upfront"
 - ❌ "Use a single AZ for high availability"
 - ❌ "Edge Locations can run EC2"
@@ -140,6 +142,7 @@ Usually wrong:
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. AWS definition of cloud computing? ___
 2. 6 benefits of cloud? ___
 3. Region vs AZ vs Edge — one line each? ___

@@ -203,6 +203,7 @@ Customs value usually = transaction value (price + freight + insurance to port o
 ### Rules of Origin
 
 Goods qualify for FTA benefits only if they "originate" from a member country. Rules typically:
+
 - Wholly obtained (mined, grown, manufactured entirely within)
 - Substantial transformation (tariff shift to a new HS code)
 - Regional Value Content (RVC) threshold (e.g., 60% under USMCA)
@@ -218,6 +219,7 @@ Goods qualify for FTA benefits only if they "originate" from a member country. R
 A designated area where goods are not yet in commerce of the host country.
 
 Benefits:
+
 - **Duty deferral** — pay only when goods enter commerce
 - **Duty inversion** — pay lower duty on the *finished product* HS code rather than the *components* (if applicable)
 - **Re-export** without ever paying duty
@@ -389,6 +391,7 @@ The CLTD exam may test the customs-broker / freight-forwarder distinction — bo
 ## ✅ Module 7 Summary
 
 You now know:
+
 - 🌐 All 11 Incoterms 2020 with risk + cost split (especially FOB vs FCA trap)
 - 🛂 IOR vs broker vs forwarder vs NVOCC distinctions
 - 📋 Core customs documents (commercial invoice, BOL, AWB, certificate of origin, LC)

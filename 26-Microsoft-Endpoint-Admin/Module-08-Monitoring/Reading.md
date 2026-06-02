@@ -65,6 +65,7 @@ Each gives a 0–100 score. Microsoft's recommended baseline is **80+** across a
 ### Microsoft baseline scores
 
 Microsoft publishes baseline scores derived from the Endpoint Analytics public dataset. Your score is compared to:
+
 - Microsoft's recommended baseline
 - Your own historical trend
 - Optionally, a custom baseline for your org
@@ -81,6 +82,7 @@ Proactive remediations are pairs of PowerShell scripts — a **detection script*
 
 1. Detection script runs on the device on a schedule (e.g., daily)
 2. Detection returns exit code:
+
    - **Exit 0** with no output = compliant, no action
    - **Exit 1** = issue detected, run remediation
 3. Remediation script runs to fix the issue
@@ -89,6 +91,7 @@ Proactive remediations are pairs of PowerShell scripts — a **detection script*
 ### Microsoft-published remediations
 
 Microsoft ships pre-built remediations for common problems:
+
 - "Restart Office Click-to-Run service if hung"
 - "Re-apply Win11 update if servicing stack failed"
 - "Clear sign-in cache if PRT broken"
@@ -149,6 +152,7 @@ Settings → Accounts → Access work or school →
 ```
 
 The zip contains:
+
 - `MDMDiagReport.html` — the human-readable report
 - `MDMDiagReport.xml` — machine-readable version
 - Event Viewer logs for the Device Management Enterprise diagnostic provider
@@ -348,6 +352,7 @@ The correct sequence:
 ## ✅ Module 8 Summary
 
 You now know:
+
 - 📊 The Intune report surfaces and what each is for
 - 🎯 Endpoint Analytics — 5 categories + scoring + baselines
 - 🛠️ Proactive remediations (Plan 2) — detect + fix pattern

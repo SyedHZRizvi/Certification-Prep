@@ -153,6 +153,7 @@ class Result(BaseModel):
 ## 🏆 Exam Power Phrases
 
 ✅ Often **right**:
+
 - "Use the highest level of structure guarantee your provider supports"
 - "Anthropic structured outputs = forced tool use"
 - "Use Enum / Literal for fields with controlled vocabularies"
@@ -160,6 +161,7 @@ class Result(BaseModel):
 - "Tool descriptions are part of the prompt"
 
 ❌ Often **wrong**:
+
 - "JSON Mode and Structured Outputs are the same"
 - "L0 with careful prompting is enough for production"
 - "instructor bypasses rate limits"
@@ -183,6 +185,7 @@ class Result(BaseModel):
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. L0/L1/L2 in one line each? ___
 2. How does Anthropic do schema-enforced output? ___
 3. What does `Literal["a","b"]` guarantee? ___

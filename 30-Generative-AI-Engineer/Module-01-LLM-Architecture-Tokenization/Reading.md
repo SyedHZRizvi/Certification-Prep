@@ -172,6 +172,7 @@ The attention matrix is N × N where N = sequence length. At N = 10K tokens, tha
 When you generate token-by-token, each new token needs to attend to the keys and values of *every previous token*. Re-computing them every step is wasteful. The standard fix: cache the K and V matrices for previous positions. This is the **KV cache**.
 
 The KV cache is *the* dominant cost of long-context inference. For Llama-2-70B at 32K context:
+
 - 80 layers × 64 heads × 128 dim × 32K positions × 2 (K and V) × 2 bytes (fp16) ≈ **84 GB of KV cache per request**
 
 That doesn't fit on a single H100 (80 GB). It's why people obsess over KV cache compression.
@@ -304,6 +305,7 @@ You'll write this in <100 lines. Putting it in a `pre-deploy-check` step of your
 ## ✅ Module 1 Summary
 
 You now know:
+
 - 🧠 The mental model: LLM = tokenizer + embedding + N transformer blocks + LM head + sampler
 - 🔤 Tokenization is BPE/SentencePiece/WordPiece; tiktoken is the cost-estimation standard
 - ⚛️ The transformer block: norm → attention (Q/K/V) → residual → norm → FFN → residual

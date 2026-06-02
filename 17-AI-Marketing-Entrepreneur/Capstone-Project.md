@@ -23,6 +23,7 @@ You have 12 weeks until the rent-due date that turns this from a side project in
 ### 1. ICP + Value-Proposition Memo (Module 1)
 
 Write a **2-3 page ICP + positioning memo** that defines who your agency sells to and what you sell them. It must include:
+
 - **Wedge ICP** — using the 100/10/1 niche test from Module 1, lock the firmographic profile (industry, company size, revenue band, funding stage, geography). Pass the 100 test: name 100 specific companies that match (research, not guess)
 - **Buyer persona** — title, daily pain, the 3 jobs-to-be-done they hire your agency for, the alternatives they currently use (in-house team, other agency, freelancer, internal-build, do-nothing)
 - **Anti-ICP** — who you explicitly will not sell to (too small, too enterprise, wrong stage, wrong industry, hostile-to-AI cultures), and why
@@ -35,6 +36,7 @@ Write a **2-3 page ICP + positioning memo** that defines who your agency sells t
 ### 2. Productized Service Spec Sheet (Module 2)
 
 Design the **one productized service** you'll sell first. It must include:
+
 - **One-page sales artifact** — the spec sheet a prospect sees first (PDF or one-page Notion). Headline + the 5 Fixed Anchors (what's included, what's the deliverable cadence, what's the timeline, what's the price, what's the guarantee), the 10-component anatomy from Module 2
 - **The "what good looks like" artifact** — a sample deliverable. This is the single most important asset in your sales funnel. Build a real sample (audit a real public company's marketing if you have no clients yet — Welsh-style "spec work" that you publish on LinkedIn)
 - **Pricing tier** — single price (no good-better-best yet at this stage); justify with the cost stack + the target margin (target 70%+ gross margin)
@@ -47,6 +49,7 @@ Design the **one productized service** you'll sell first. It must include:
 ### 3. 12-Week Client-Acquisition Pipeline (Module 3)
 
 You need first 3 clients in 12 weeks. Build the acquisition pipeline:
+
 - **Channel mix** — your "Year-1 default pair" from Module 3 (typically cold outreach + content + referrals). For each channel: weekly volume target, conversion-rate assumptions, expected leads-to-meetings, meetings-to-proposals, proposals-to-close
 - **Cold outreach detail** — 200 sends/week via LinkedIn DMs + email; the 4-message sequence (initial + 3 follow-ups over 14 days); the 3 hook variations you'll A/B test in Week 1; the 5 personalization tokens (company, role, recent post, recent funding, mutual connection)
 - **Content detail** — 3 LinkedIn posts/week + 1 long-form article/week; the content pillar mix (60% authority, 25% case study, 15% personal); the AI-assist pipeline (Claude/ChatGPT for first draft, you for editing, the 30-minute / post target time budget)
@@ -58,6 +61,7 @@ You need first 3 clients in 12 weeks. Build the acquisition pipeline:
 ### 4. Pricing / Proposal / Contract Templates (Module 4)
 
 Build the **3 sales documents** you'll send to every prospect:
+
 - **Pricing one-pager** — the productized service tier from Deliverable 2 + 2 add-ons (e.g., "Quarterly Strategy Sprint" and "Executive Coaching Hours")
 - **Proposal template** — 5-7 page template using the Module 4 7-section structure: cover, situation, recommendation, scope, timeline, investment, next steps. Include the "good-better-best" pricing pages from Module 4 if you've upgraded past single-price
 - **Contract / Master Services Agreement** — start from the Module 4 template or a fixed-source like Bonsai / SignWell / Stripe Atlas. Critical clauses: scope, payment terms (50/50 or 100% upfront for first client), termination, IP ownership, confidentiality, indemnification cap. **Have a real attorney review before sending to a real client.**
@@ -70,6 +74,7 @@ Build the **3 sales documents** you'll send to every prospect:
 ### 5. Tech-Stack Architecture + Cost Forecast (Module 5)
 
 Build a complete operating tech stack under **$350/month for solo + $1,200/month for team-of-4**:
+
 - **CRM** — HubSpot Free / Pipedrive / Attio (pick one). Justify
 - **Project management** — ClickUp / Asana / Notion / Linear (pick one). Justify
 - **Comms** — Slack (free for first 90 days) + a phone number (Aircall / OpenPhone / Google Voice)
@@ -85,6 +90,7 @@ Build a complete operating tech stack under **$350/month for solo + $1,200/month
 ### 6. First-Contractor JD + Interview Rubric (Module 6)
 
 You will hire your first contractor in Month 3-4 once revenue covers it. Design:
+
 - **JD (job description)** — the role (most common first hire: a Filipino VA via OnlineJobs.ph for ops/admin/research + reporting, or a US/UK 1099 contractor for the second category — your call, justify); the 5-bullet list of weekly responsibilities; the success criteria at 30/60/90 days
 - **Compensation** — hourly rate or fixed monthly retainer; the band (e.g., $8-12/hr for OnlineJobs.ph VA, $40-65/hr for a US contractor); the payment cadence (weekly via Wise or Deel)
 - **Sourcing plan** — exact channels (OnlineJobs.ph, Workello, MarketerHire, Upwork, a referral from your network); the 50-100 applications you'll review
@@ -98,6 +104,7 @@ You will hire your first contractor in Month 3-4 once revenue covers it. Design:
 ### 7. 12-Month P&L Projection (Module 7)
 
 Build a **12-month rolling P&L projection** for the agency. It must include:
+
 - **Revenue line items** — monthly MRR build from 0 → 3 clients in Q1 → 5-7 clients in Q2-Q3; assumptions on churn (assume 1 client churn in Q2 at minimum); average client tenure (12 months optimistic, 6 months realistic); add-ons + Strategy Sprints
 - **Cost of Services Delivered (COGS)** — software + AI API costs + 1099 contractor costs allocated per client; target gross margin 70%+
 - **Operating Expenses** — your own salary (start at $5K/month for first 6 months, ramp to $10K/month by Month 9), tools (Deliverable 5), marketing-of-the-agency budget (~$500-1500/month — ads to amplify content, conferences, books, courses)
@@ -111,6 +118,7 @@ Build a **12-month rolling P&L projection** for the agency. It must include:
 ### 8. First 3 Engagements Retro (Post-Mortem)
 
 After you've closed and worked with **your first 3 clients** (typically end of Month 4-6 even with a strong start), write a **3-5 page retro**:
+
 - **For each client**: how they found you, the close rate (proposals sent vs closed), the sale-cycle length, the initial scope, what changed in scope, the average hours worked vs estimated, the realized margin
 - **The "what surprised me" list** — 5-7 things that didn't go as planned (good and bad)
 - **The "next-3-clients" changes** — what you'll change in the wedge, the pricing, the productized service, the contract, the operating cadence, based on the retro
@@ -181,6 +189,7 @@ Self-grading: complete the rubric above honestly. If you're below 75 on the firs
 ## Optional Stretch Goals
 
 If you want to push beyond pass:
+
 1. **Win a logo client in Year 1.** Defined as a name your prospects recognize without explanation. The PR + portfolio value is worth 3-5x the revenue.
 2. **Publish a 10-piece content series on LinkedIn or Substack** — the "10 mistakes I see Series A SaaS marketing teams make" type of authority series. Most agency founders never publish anything; the few who do compound on the asset for years.
 3. **Build an offer that scales.** Reference Alex Hormozi's *$100M Offers* (2021) and design a second tier offer that targets a 10x larger market (lower-touch, lower-price, productized further). Don't ship it in Year 1, but design it.

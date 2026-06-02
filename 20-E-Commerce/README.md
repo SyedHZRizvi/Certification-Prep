@@ -62,6 +62,7 @@ This track includes two course-root resources that go beyond exam prep:
 ## 🎯 What You'll Learn
 
 By the end of this track, you'll be able to:
+
 - Architect an e-commerce business model around the right unit economics (CAC, AOV, contribution margin, CLV, payback period)
 - Choose between Shopify, Adobe Commerce (Magento), BigCommerce, Salesforce Commerce Cloud, and headless/composable — and defend the choice in a CTO review
 - Run a PIM (Product Information Management) program that scales from 500 SKUs to 50,000 across 6 markets

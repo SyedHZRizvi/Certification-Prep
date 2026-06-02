@@ -52,6 +52,7 @@ Begin with [Module 1: Server Hardware →](./Module-01-Server-Hardware/Reading.m
 ## 🎯 What You'll Learn
 
 By the end of this track, you'll be able to:
+
 - Identify server hardware on sight — chassis form factors, redundant PSUs, ECC RAM modules, hot-swap bays, RAID controllers, and out-of-band management cards (iDRAC, iLO, IPMI, BMC)
 - Administer both Windows Server (AD DS, DNS, DHCP, IIS, Hyper-V) and Linux servers (systemd, common daemons, package managers)
 - Design storage systems: pick the right RAID level, decide SAN vs NAS, configure iSCSI/Fibre Channel, set up LUN masking and multipathing
@@ -97,6 +98,7 @@ Score 85%+ on the Final Mock before booking the real exam. The real Server+ scal
 🔗 **[Professor Messer's free SK0-005 video course](https://www.professormesser.com/server-plus/sk0-005/sk0-005-video-training-course/)** — Hundreds of bite-sized videos covering every objective. Pair them with the [Mike Meyers Server+ All-in-One Exam Guide](https://www.mheducation.com/highered/product/comptia-server-certification-all-in-one-exam-guide-fifth-edition-exam-sk0-005-rountree/M9781260469929.html) for breadth + depth.
 
 Honorable mentions:
+
 - 📘 *CompTIA Server+ Study Guide* (Troy McMillan, Sybex) — clear writing, scenario-heavy
 - 📘 *Mike Meyers Server+ All-in-One* — the most rigorous coverage; long but comprehensive
 - 📘 *CompTIA Server+ Cert Guide* (Pearson) — exam-aligned, lots of practice questions

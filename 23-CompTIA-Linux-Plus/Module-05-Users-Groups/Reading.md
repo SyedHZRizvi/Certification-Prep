@@ -145,6 +145,7 @@ echo "alice:NewPass!" | chpasswd         # batch (use openssl rand to generate)
 ```
 
 Defaults that `useradd` reads:
+
 - `/etc/default/useradd` — fallback shell, skeleton dir
 - `/etc/login.defs` — UID_MIN, UID_MAX, PASS_MAX_DAYS, etc.
 - `/etc/skel/` — files copied into every new home directory
@@ -247,6 +248,7 @@ uid=1001(alice) gid=1001(alice) groups=1001(alice),27(sudo),1500(devs),1600(audi
 ### How sudo works
 
 When you run `sudo cmd`, sudo:
+
 1. Checks `/etc/sudoers` (and `/etc/sudoers.d/*`) for a matching rule for your user/group
 2. Optionally prompts for YOUR password (not root's)
 3. If allowed, runs `cmd` as root (or as the target user specified)
@@ -283,6 +285,7 @@ dave     ALL=(root)     /usr/bin/systemctl restart nginx, /usr/bin/systemctl sta
 ```
 
 Each field:
+
 - **who** — user (`alice`), group (`%groupname`), or `ALL`
 - **where** — hostnames where rule applies (`ALL` = all hosts when sudoers is centralized via LDAP)
 - **(as-whom)** — `(ALL:ALL)` means "as any user, as any group"; default `(root)` means as root
@@ -457,11 +460,13 @@ juno  ALL=(root)  NOPASSWD: /usr/bin/systemctl restart nginx
 ```
 
 2. **View audit.log (b):** The file is typically `-rw-------  root root`. Two approaches:
+
    - **ACL** (clean, scoped): `setfacl -m u:juno:r /var/log/audit/audit.log` plus ensure traversal: `setfacl -m u:juno:rx /var/log /var/log/audit`.
    - **Group membership** if a `audit` group exists with read on the file: `usermod -aG audit juno`.
    The ACL is cleaner because it doesn't grant juno any other audit-related rights.
 
 3. **No SSH shell access (c):** Two equivalent paths:
+
    - **Shell-level:** `usermod -s /sbin/nologin juno`. Now SSH key auth still succeeds, but the session is immediately closed.
    - **sshd-level:** `Match User juno` block in `/etc/ssh/sshd_config`:
      ```
@@ -571,6 +576,7 @@ These all show up in PBQs as "what's wrong with this configuration" scenarios.
 ## ✅ Module 5 Summary
 
 You now know:
+
 - 🗂️ The **three files** (passwd, shadow, group) — their fields and permissions
 - 🔑 **UID conventions** — 0 = root, 1–999 system, 1000+ user
 - 🛠️ **User lifecycle commands** — `useradd -m`, `usermod -aG`, `userdel -r`, `passwd`, `chage`

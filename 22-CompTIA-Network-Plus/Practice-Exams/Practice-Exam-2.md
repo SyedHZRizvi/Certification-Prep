@@ -369,6 +369,7 @@ C. Add bandwidth
 D. Disable the firewall
 
 ### 61 (Scenario PBQ). A pen tester runs `nmap -sV 10.0.0.50` and finds:
+
 - Port 22/tcp open (OpenSSH 9.6)
 - Port 23/tcp open (Telnet)
 - Port 80/tcp open (HTTP)
@@ -381,6 +382,7 @@ C. Block port 22
 D. Add IPv6 only
 
 ### 62 (Scenario PBQ). Match each issue to the BEST tool:
+
 - (a) Identify the protocol of a strange flow from a workstation
 - (b) Find the distance to a fiber break in a 5-km run
 - (c) Verify a Wi-Fi signal map across a floor
@@ -392,6 +394,7 @@ C. (a) NetFlow only, (b) tone generator, (c) tcpdump, (d) nslookup -mtu
 D. (a) tracert, (b) cable certifier, (c) ping, (d) arp
 
 ### 63 (Scenario PBQ). A network outage timeline:
+
 - 09:00 — One ISP link goes down
 - 09:02 — BGP automatically fails over to backup ISP (~30s of routing flap)
 - 09:05 — Half the users report internal-app slowness
@@ -489,6 +492,7 @@ D. "WPA3-Enterprise doesn't need 802.1X"
 ## 🔍 Review Process
 
 For EACH wrong answer:
+
 1. Identify which module(s) covered it (often two or three for scenario questions)
 2. Re-read the relevant section(s)
 3. Add a flashcard to your daily review

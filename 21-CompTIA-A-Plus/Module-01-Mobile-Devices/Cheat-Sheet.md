@@ -118,6 +118,7 @@
 ## 🏆 Exam Power Phrases
 
 ✅ Often **right**:
+
 - "Verify the device is compliant with MDM policy"
 - "Use IMAP (or Exchange ActiveSync) for multi-device sync"
 - "Containerization separates corporate from personal data"
@@ -125,6 +126,7 @@
 - "Selective wipe — only corporate data"
 
 ❌ Often **wrong**:
+
 - "Use POP3 for multi-device access"
 - "Wipe the phone immediately on first report of lost"
 - "Jailbroken phones are fine for corporate access"
@@ -147,6 +149,7 @@
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. IMAP vs POP3 — when to use each? ___
 2. 4 mobile ownership models and one trade-off each? ___
 3. Three MDM actions you can take on a lost BYOD phone? ___

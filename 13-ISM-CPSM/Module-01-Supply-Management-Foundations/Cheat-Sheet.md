@@ -130,6 +130,7 @@ Evaluate → Negotiate/Contract → Manage performance → Pay/Close → Improve
 ## ✏️ Quick Self-Check
 
 Cover the answers:
+
 1. Three differences between purchasing and supply management? ___
 2. Four org models, ranked by leverage? ___
 3. What does HIGH supplier bargaining power mean for your strategy? ___

@@ -260,6 +260,7 @@ ls /sys/firmware/efi/efivars              # UEFI variables (UEFI systems only)
 ## ⚙️ udev — Dynamic Device Management
 
 When the kernel detects a device (boot or hot-plug), it emits a **uevent** to udev. udev reads rules in `/etc/udev/rules.d/` and `/lib/udev/rules.d/`, then:
+
 - Creates the device node in `/dev` (with the right name/permissions)
 - Triggers scripts (load modules, mount, set up firmware)
 - Updates `/dev/disk/by-uuid/`, `/dev/disk/by-id/`, `/dev/disk/by-path/` symlinks
@@ -291,6 +292,7 @@ When an FTDI USB-serial dongle is plugged in, udev creates `/dev/ftdi-serial` (i
 ## 💾 LVM — The Layered Storage Model
 
 LVM (Logical Volume Manager) sits between block devices and filesystems. It gives you:
+
 - **Dynamic resize** — grow/shrink filesystems online
 - **Pooling** — combine multiple disks into one logical pool
 - **Snapshots** — point-in-time copies for backup or testing
@@ -593,6 +595,7 @@ These all show up in PBQs as "after upgrading X, the system fails to boot — wh
 ## ✅ Module 7 Summary
 
 You now know:
+
 - ⚙️ The **kernel + module** model: monolithic core + loadable `.ko` files
 - 🛠️ **Module commands**: `lsmod`, `modinfo`, `modprobe`, `depmod`, blacklist via `/etc/modprobe.d/`
 - 🔌 **Hardware discovery**: `lspci -k`, `lsusb`, `lsblk -f`, `lshw`, `dmidecode`

@@ -277,6 +277,7 @@ Hibernate is great for "long-cached" instances (like dev VDIs) that you want to 
 **Outcome.** Pinterest publicly reported **$4M+ annual savings** by 2020 (re:Invent 2019 talk; corroborated in their 10-K), against an unchanged or growing workload. EC2 unit cost dropped ~37%. Engineering velocity *increased* because teams could see cost as a metric alongside latency. Pinterest IPO'd in April 2019 with infrastructure cost-control cited as a strength in analyst notes.
 
 **Lesson for the exam / for practitioners.** Every cost-optimization concept SAA-C03 tests is in this case:
+
 - **Reserved Instances** for steady-state baseline (Standard 3-year all-upfront wins on raw discount; Convertible wins on flexibility)
 - **Spot Fleet with mixed instances policy** for fault-tolerant tiers — this is the SAA's #1 answer to "lowest cost batch workload"
 - **Compute Optimizer** — free, ML-based; the exam often calls it out by name
@@ -316,6 +317,7 @@ When the exam says "company wants to reduce EC2 cost without sacrificing reliabi
 ## ✅ Module 3 Summary
 
 You now know:
+
 - 💻 The instance family letters (T/M/C/R/I/G/P) and what each is for
 - 💰 All 8 purchase options and when to pick which
 - 🗄️ EBS vs Instance Store vs EFS vs FSx

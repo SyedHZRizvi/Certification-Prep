@@ -97,6 +97,7 @@ Autoscale rules: CPU>70% out · CPU<30% in · Cooldown 5 min default · min/max 
 ## 🏆 Exam Power Phrases
 
 Often **correct**:
+
 - ✅ "Deploy VMSS Flexible across 3 zones"
 - ✅ "Use Premium SSD v2 with provisioned IOPS"
 - ✅ "Capture image in Azure Compute Gallery"
@@ -104,6 +105,7 @@ Often **correct**:
 - ✅ "Azure Bastion to remove public IP"
 
 Often **wrong**:
+
 - ❌ "Add VM to AS after creation"
 - ❌ "Ultra Disk as OS"
 - ❌ "B-series for production DB"

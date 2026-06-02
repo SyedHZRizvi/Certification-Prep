@@ -266,6 +266,7 @@ Recover an entire deleted share within retention (1–365 days). Separate from s
 ## ✅ Module 4 Summary
 
 You now know:
+
 - 📁 When to use Azure Files vs Blob
 - 🗄️ The 4 share tiers and the **provisioned-vs-used** billing trap
 - 🔐 The 3 main SMB auth options (Key / Entra Kerberos / AD DS / Entra DS)
@@ -286,6 +287,7 @@ You now know:
 **Situation.** Consider a multinational grocery retailer modeled on Hannaford-class chains (a Northeast US chain with ~180 supermarkets, ~50,000 employees, owned by Ahold Delhaize). Each store ran a local Windows file server hosting ~200 GB of operational data: shift schedules, vendor pricing PDFs, store-camera evidence captures, planograms, and corrupted-receipt scans pending corporate review. The pattern was textbook 2000s IT: each store IT closet had a Dell server with three 4-TB HDDs in RAID-5, an aging UPS, and a single sysadmin tour-truck visiting quarterly. When a store server failed (every ~14 months at fleet scale), the store ran without schedules for 6–18 hours and head office lost visibility into shift compliance.
 
 **Decision.** The retailer's IT modernization (planned 2022, executed in waves through 2024) used **Azure File Sync** with the topology Microsoft documents as canonical (Microsoft, *Azure File Sync deployment guide*, current revision; also presented at Microsoft Ignite 2023):
+
 1. A central **Azure Files Premium** share (ZRS) in `eastus` became the source of truth for all store data.
 2. Each store kept a *single* Windows Server 2022 (or Windows IoT) running the **Azure File Sync agent**, registered to a centrally-deployed Storage Sync Service. **Cloud tiering** kept the last 60 days of accessed files on local disk (~150 GB working set) and stubbed everything older.
 3. Per-store servers were sized at 256 GB SSD — about *1/15th* of the previous spinning-disk capacity — because the cloud was now the source of truth and the local disk was just a cache.
@@ -294,6 +296,7 @@ You now know:
 6. A **Recovery Services Vault** in the paired region (`westus3`) handled DR (Module 9).
 
 **Outcome.** Public Microsoft customer references on similar grocery and quick-serve restaurant deployments (*U-Haul Azure File Sync*, Microsoft case study 2020; *Wendy's* and *Marriott* analogues) document the impact pattern:
+
 - **~70% reduction in per-store storage hardware capex** by moving from 12 TB RAID arrays to 256 GB SSD caches.
 - **Mean time to restore a corrupted file** dropped from "next sysadmin truck-roll, 0–14 days" to **under 10 minutes** via Windows Explorer "Previous Versions" (snapshot-based).
 - **Mean time to recover a failed store server** dropped from a full sysadmin visit (4–8 hours plus parts) to **under 90 minutes** — install Windows Server, install the Sync agent, register to the same sync group, files re-populate on demand.

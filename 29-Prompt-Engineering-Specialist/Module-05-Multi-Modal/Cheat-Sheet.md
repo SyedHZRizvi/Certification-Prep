@@ -128,6 +128,7 @@ resp = client.models.generate_content(
 ## 🏆 Exam Power Phrases
 
 ✅ Often **right**:
+
 - "Pre-rotate images; EXIF is not always honored"
 - "Label each image in multi-image prompts"
 - "Use structured outputs to model unreadable/ambiguous cases"
@@ -135,6 +136,7 @@ resp = client.models.generate_content(
 - "Gemini for native video; others need frame-sampling"
 
 ❌ Often **wrong**:
+
 - "All vision models support video"
 - "EXIF rotation always works"
 - "Charts are easy for vision LLMs"
@@ -158,6 +160,7 @@ resp = client.models.generate_content(
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. Family with native video? ___
 2. Image cost ballpark for high-detail 1024² ? ___
 3. 3 defenses against chart confabulation? ___

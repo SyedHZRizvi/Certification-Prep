@@ -496,12 +496,14 @@ D. Reconcile demand and supply views before executive meeting
 ## 🔍 Review Process
 
 For EACH wrong answer:
+
 1. Identify which Module covered it
 2. Re-read that section
 3. Add an Anki flashcard for the concept
 4. Try the question again 3 days later
 
 Distribute review focus by domain weight:
+
 - Strategy / Environment (25%) → Module 1, 9
 - Design (20%) → Module 2, 6
 - Planning & Execution (40%) → Modules 3, 4, 5, 7, 8

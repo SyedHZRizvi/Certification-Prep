@@ -27,6 +27,7 @@ Skip one → you have a project, not a system.
 | On 429/529 | `retry-after` |
 
 Disciplines:
+
 - Throttle client-side at 80-90% of tier
 - Queue + load-shed (bounded)
 - Tier upgrade when peak > 60%
@@ -178,6 +179,7 @@ Treat prompts as **code**: versioned, evaluated, gated.
 ## 🏆 Exam Power Phrases
 
 ✅ Often **right**:
+
 - "Constitutional AI reduces but does not eliminate jailbreaks; layered defenses required"
 - "Treat tool outputs as untrusted data"
 - "529 ≠ 429: 529 = Anthropic overloaded, back off more"
@@ -187,6 +189,7 @@ Treat prompts as **code**: versioned, evaluated, gated.
 - "Cache attaches to byte-exact prefix"
 
 ❌ Often **wrong**:
+
 - "Anthropic logs my prompts forever" (configurable retention; zero-retention available)
 - "Bedrock = Anthropic direct, no difference" (slight feature lag)
 - "Output moderation is overkill" (Reddit will disagree)

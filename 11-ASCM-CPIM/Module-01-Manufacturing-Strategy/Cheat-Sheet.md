@@ -94,12 +94,14 @@ Functional strategy  (How does Operations support?)
 ## 🏆 Exam Power Phrases
 
 When you see these in answer choices, they're often **correct**:
+
 - ✅ "Align operations strategy with business strategy"
 - ✅ "Postpone differentiation until customer order"
 - ✅ "Trade-offs among competitive priorities"
 - ✅ "Order winners may become qualifiers over time"
 
 When you see these, they're often **wrong**:
+
 - ❌ "Excel on all 5 competitive priorities simultaneously"
 - ❌ "Convert job shop to continuous flow for growth"
 - ❌ "ATO and MTO are the same"
@@ -119,6 +121,7 @@ When you see these, they're often **wrong**:
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. The 4 manufacturing environments and where the decoupling point is in each? ___
 2. Order qualifier vs winner — definition + example? ___
 3. Postponement — define it + give the HP example? ___

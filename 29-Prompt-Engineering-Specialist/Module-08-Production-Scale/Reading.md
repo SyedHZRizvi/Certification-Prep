@@ -24,6 +24,7 @@ Forensic analysis found four root causes:
 4. **No cost dashboard** — The bill was visible only in OpenAI's billing console, weekly. The CFO found out by checking the credit card.
 
 The fix took 8 days:
+
 - Prompt caching → 60% reduction
 - Semantic cache → another 30% reduction on cached portion
 - Smart tier routing (Haiku 4.5 for "simple", GPT-5 for "complex", o3 for "hard refactor") → another 50% reduction
@@ -80,6 +81,7 @@ A long, repeated prefix (system prompt + few-shot examples + tool descriptions) 
 | **DeepSeek context caching** | Automatic; very aggressive discount |
 
 When prompt caching wins:
+
 - Long system prompts with examples
 - Few-shot prompts repeated across users
 - Long-context RAG where the doc set is stable
@@ -137,6 +139,7 @@ Every commercial API has limits:
 ### Tier elevation
 
 Vendor tier promotion is largely **automatic and traffic-based**:
+
 - OpenAI Tier 1 → Tier 5 as you spend
 - Anthropic Tier 1 → Tier 4 similarly
 - Google requires sales contact for high tiers in some products
@@ -191,6 +194,7 @@ response = completion(
 ```
 
 LiteLLM features that matter in production:
+
 - **Fallbacks** — `fallbacks=["gpt-5", "claude-sonnet-4-7", "gemini-2.5-pro"]`
 - **Router** — load-balance across keys/regions
 - **Cost tracking** — built-in cost logging
@@ -412,6 +416,7 @@ For chat UX, **streaming** is non-negotiable. Users perceive TTFT (time-to-first
 **Situation.** Anthropic launched **prompt caching** in beta on August 14, 2024 — the first major commercial implementation. The feature allowed developers to mark sections of a prompt with `cache_control` tags; subsequent calls re-using that prefix paid ~10% of the normal input price for the cached portion (with a small write-time premium on the first call).
 
 **The economics.** Anthropic published benchmarks:
+
 - Multi-document Q&A (100K-token context): up to **85% cost reduction**, **2× latency improvement**
 - Many-shot prompting (100+ examples): up to **90% cost reduction**
 - Coding assistants with large codebases in context: up to **80% cost reduction**
@@ -422,6 +427,7 @@ For chat UX, **streaming** is non-negotiable. Users perceive TTFT (time-to-first
 - DeepSeek launched aggressive automatic caching in early 2025.
 
 **The downstream effect.** Production patterns changed industry-wide:
+
 - **Long system prompts became economical** — teams that had pruned prompts for cost suddenly added detail back.
 - **Many-shot ICL (Module 2) became practical at scale** — Agarwal et al. 2024's many-shot results moved from research to production overnight.
 - **Long-context RAG patterns shifted** — instead of retrieving and inserting per-query, teams started caching large document sets and querying against them.
@@ -441,6 +447,7 @@ For chat UX, **streaming** is non-negotiable. Users perceive TTFT (time-to-first
 ## ✅ Module 8 Summary
 
 You now know:
+
 - 📂 Prompt versioning — treating prompts like code, with Git + dedicated platforms
 - 💾 Caching — prompt cache (provider-side) and semantic cache (yours)
 - ⏱️ Rate limiting — token/request limits, backoff, batch APIs, spillover routing

@@ -102,6 +102,7 @@ Memorize: **Material · Information · Cash**
 ## 🏆 Exam Power Phrases
 
 When you see these in answers, they're often correct:
+
 - ✅ "Align with corporate strategy..."
 - ✅ "Share information across tiers..."
 - ✅ "Move the decoupling point downstream..."
@@ -109,6 +110,7 @@ When you see these in answers, they're often correct:
 - ✅ "Tailor the SC to the product type..."
 
 When you see these, they're often **wrong**:
+
 - ❌ "Always minimize cost..."
 - ❌ "Stick with the original sourcing plan..."
 - ❌ "Increase safety stock at every tier..."
@@ -131,6 +133,7 @@ When you see these, they're often **wrong**:
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. Name the 6 SCOR processes in order. ___
 2. Which Hau Lee strategy fits high demand + high supply uncertainty? ___
 3. What 5 forces cause the bullwhip effect? ___

@@ -236,6 +236,7 @@ wget URL
 ## 🏆 Exam Power Phrases
 
 When you see these in answers, they're often **right**:
+
 - ✅ "Use `ip addr show` not `ifconfig`"
 - ✅ "Check `/var/log/auth.log` (Debian) or `/var/log/secure` (RHEL)"
 - ✅ "Set `~/.ssh` to 700 and `authorized_keys` to 600"
@@ -243,6 +244,7 @@ When you see these in answers, they're often **right**:
 - ✅ "Test sshd config with `sshd -t` before reload"
 
 When you see these, they're often **wrong**:
+
 - ❌ "Edit `/etc/resolv.conf` directly to persist DNS"
 - ❌ "`ssh -R` forwards a local port to a remote service"
 - ❌ "iptables saves automatically across reboots"
@@ -267,6 +269,7 @@ When you see these, they're often **wrong**:
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. Three `ip` subcommands and what they replace? ___
 2. What perms must `~/.ssh` and `~/.ssh/authorized_keys` have? ___
 3. SSH forwarding: `-L` vs `-R` direction in plain English? ___

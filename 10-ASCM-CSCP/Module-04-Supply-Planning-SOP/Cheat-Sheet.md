@@ -144,6 +144,7 @@ ATP formula: `On-hand + MPS receipts − committed orders` (per bucket).
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. 5 S&OP steps in order ___
 2. 3 MRP inputs ___
 3. RCCP vs CRP ___

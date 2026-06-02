@@ -18,6 +18,7 @@ A modern SOC works like a hospital ER.
 A patient (an alert) arrives. **Triage nurse** (Tier 1 SOC analyst) assesses severity using vital signs (log evidence). Easy cases (false positives, known benign) are sent home. Real issues escalate to **doctors** (Tier 2/3 analysts and IR responders) who diagnose with imaging (forensics) and start treatment (containment, eradication, recovery).
 
 The hospital has:
+
 - **Monitoring equipment** (SIEM) that aggregates patient vitals into one screen
 - **Automated drips and protocols** (SOAR playbooks) that handle routine responses
 - **Crash carts and code teams** (IR teams) for emergencies
@@ -176,6 +177,7 @@ When an incident may lead to litigation/discipline, forensic discipline matters.
 ### Order of Volatility (MEMORIZE — this is heavily tested)
 
 From MOST to LEAST volatile (collect in this order):
+
 1. **CPU registers / cache**
 2. **RAM (live memory)** + running processes / network connections
 3. **Temporary files / swap / pagefile**
@@ -295,6 +297,7 @@ DISCOVER → IDENTIFY → ANALYZE → PRIORITIZE → RESPOND (patch/mitigate/acc
 
 ### Change management within ops
 (See Module 1, but in ops context):
+
 - Emergency change vs standard change
 - Tracking via CMDB
 - Backout plans
@@ -351,6 +354,7 @@ A PBQ would let you drag the actions into ordered slots.
 The **same week**, the FTC and SEC opened investigations. CISA published an advisory on Scattered Spider TTPs (AA23-320A, November 2023). MGM's CFO later acknowledged the recovery cost was *less* than the demanded ransom — vindicating the no-pay decision financially even setting aside legal/ethical concerns.
 
 **Lesson for the exam / for practitioners.** MGM is the textbook 2020s SOC case:
+
 - **Vishing + help-desk social engineering** (Module 5) — 10 minutes of phone call defeated MFA. The attack vector wasn't a 0-day; it was a *process* gap. Sec+ tests: "what control would have prevented this?" → caller-callback verification, MFA reset only via in-person / video-verified protocol, **just-in-time admin elevation** with separate approval.
 - **Privilege escalation in cloud-and-on-prem hybrid** (Module 3, 7) — Okta → Azure → on-prem AD pivot. MGM's hybrid identity design meant compromising Okta cascaded to domain admin. PAM (Privileged Access Management) would have required just-in-time elevation for each tier.
 - **IR lifecycle execution** (this module) — MGM's NIST IR phases unfolded in real time: Detection (Sept 10), Containment (Sept 11, by shutting *everything* off — extreme containment), Eradication + Recovery (Sept 11-20), Lessons Learned (ongoing through 2024). The "shut everything down" choice is a textbook **extreme containment** — Sec+ tests when this is and isn't appropriate.
@@ -431,6 +435,7 @@ The **same week**, the FTC and SEC opened investigations. CISA published an advi
 ## ✅ Module 8 Summary
 
 You now know:
+
 - 📦 Asset lifecycle + data destruction methods (and why SSDs need different treatment)
 - 📊 **SIEM** (detect) and **SOAR** (respond) and how they fit together
 - 📜 Every log source Sec+ names — including NetFlow vs sFlow vs IPFIX vs PCAP

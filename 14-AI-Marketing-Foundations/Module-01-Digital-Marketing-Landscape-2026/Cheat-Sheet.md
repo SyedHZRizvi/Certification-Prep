@@ -100,6 +100,7 @@ Outside the walls: **Microsoft Advertising** (B2B via LinkedIn), **The Trade Des
 ## 🏆 Exam Power Phrases
 
 When you see these, they're often correct:
+
 - ✅ "First-party data..."
 - ✅ "Incrementality testing..."
 - ✅ "Diversify across walled gardens + open web..."
@@ -107,6 +108,7 @@ When you see these, they're often correct:
 - ✅ "MMM + platform-reported + first-party..."
 
 When you see these, they're often wrong:
+
 - ❌ "Rely on third-party cookies..."
 - ❌ "Use only last-click attribution..."
 - ❌ "Buy a list of prospects..."
@@ -127,6 +129,7 @@ When you see these, they're often wrong:
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. The four channel buckets (POESM)? ___
 2. The TOFU / MOFU / BOFU split? ___
 3. ROAS formula vs ROI formula? ___

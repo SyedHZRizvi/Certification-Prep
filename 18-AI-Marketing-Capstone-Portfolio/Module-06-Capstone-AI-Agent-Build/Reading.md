@@ -503,10 +503,12 @@ Claude API pricing (as of writing — verify at console.anthropic.com):
 - **Claude 3.5 Haiku:** ~$0.80 per 1M input, ~$4 per 1M output
 
 For a content brief agent:
+
 - Per run: ~2k input + 1k output tokens = ~$0.02
 - 100 runs = ~$2
 
 For a competitor research agent with scraping:
+
 - Per run: ~10k input + 3k output = ~$0.075
 - 100 runs = ~$7.50
 
@@ -562,6 +564,7 @@ Document this in your README. It's a senior-marketer signal.
 ## ✅ Module 6 Summary
 
 You now know:
+
 - 🤖 What makes an "agent" vs a "ChatGPT prompt"
 - 🛠️ How to build with Claude API (and OpenAI Assistants alt)
 - 🎯 6 agent use cases to choose from

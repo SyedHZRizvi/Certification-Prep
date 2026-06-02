@@ -23,6 +23,7 @@ You have one week to deliver an 8-week plan, then 7 weeks to execute it.
 ### 1. ICP Definition Memo (Modules 1, 2, 4)
 
 Write a **2-3 page ICP memo** that defines who Northwind sells to. It must include:
+
 - **Firmographic profile** (industry, company size, revenue band, geography, funding stage)
 - **Buyer persona** (job title, daily pain, the 3 jobs-to-be-done they hire your product for)
 - **Anti-ICP** (who you explicitly will not sell to, and why — pricing, churn, support cost)
@@ -34,6 +35,7 @@ Write a **2-3 page ICP memo** that defines who Northwind sells to. It must inclu
 ### 2. 8-Week Content Calendar (Modules 3, 4, 5, 6)
 
 Build a **week-by-week content calendar** across **three channels**: SEO blog (long-form), social (LinkedIn + X), and email (nurture + announce). At minimum:
+
 - **8 SEO articles** mapped to keywords with intent + difficulty + estimated TAM (use Ahrefs free or Google Keyword Planner)
 - **24 social posts** (3/week across LinkedIn + X), each with a hook + format (text, carousel, video)
 - **6 email campaigns** (2 nurture sequences for new MQLs + 4 broadcast emails — pricing change, customer story, product update, webinar)
@@ -44,6 +46,7 @@ Build a **week-by-week content calendar** across **three channels**: SEO blog (l
 ### 3. Paid Channel Test Plan (Modules 7, 8)
 
 You have **$22K/month of the $35K budget** allocated to paid. Design 3 paid-channel test plans:
+
 - **Google Ads** (Search + Performance Max) — restructure the existing $40K spend into a $12K/month structure. Include account architecture, 3 ad groups per campaign, negative-keyword seed list, bidding strategy with justification (Maximize Conversions vs Target CPA vs Target ROAS).
 - **LinkedIn Ads** — $6K/month, Sponsored Content + Conversation Ads. Include audience targeting (Matched Audiences from CRM + lookalikes + job-title-based).
 - **One contrarian test** — $4K/month on a channel you suspect is underutilized for B2B SaaS (Reddit Ads, X Ads, podcast pre-rolls, or a niche newsletter). Justify the hypothesis in 1 paragraph.
@@ -55,6 +58,7 @@ For each plan: target CAC, target conversion event in GA4 + ad platform, learnin
 ### 4. GA4 Measurement Plan (Module 8)
 
 Northwind's GA4 is "set up but broken." You inherit it. Design:
+
 - **A custom-event taxonomy** (10-15 events: `signup_started`, `trial_activated`, `pricing_viewed`, `demo_requested`, `webinar_registered`, etc.) with parameter schemas
 - **Conversion event flagging** — which 5-7 events count as Key Events (formerly Conversions) and feed Google Ads + LinkedIn CAPI
 - **Audience definitions** — 6 GA4 audiences (e.g., "Pricing Page Bouncers", "Trial Activated Not Converted", "Webinar Attendees")
@@ -66,6 +70,7 @@ Northwind's GA4 is "set up but broken." You inherit it. Design:
 ### 5. AI Tool Stack with Cost Forecast (Module 10)
 
 Northwind currently spends $0 on AI tools (the prior Head of Marketing didn't believe in them). Propose a **complete AI marketing stack** under $1,200/month. Categories must include:
+
 - **Generative writing** (Claude Pro / ChatGPT Team / Jasper / Copy.ai)
 - **Image generation** (Midjourney / DALL-E / Adobe Firefly)
 - **Video & avatars** (HeyGen / Synthesia / Runway)
@@ -81,6 +86,7 @@ For each tool: tier, monthly cost, who uses it, what tasks it replaces or augmen
 ### 6. Weekly OKR Scorecard (Module 1 + content from across)
 
 Design a **weekly OKR scorecard** the marketing team will fill out every Monday. It must include:
+
 - **3 marketing OKRs** for the 8-week period (one revenue, one funnel, one efficiency)
 - **For each OKR**: 3-5 weekly KRs with formula, owner, data source, current vs target
 - **Leading vs lagging indicator** designation on each KR
@@ -93,6 +99,7 @@ Reference Doerr's *Measure What Matters* (2018) framework explicitly.
 ### 7. Board-Ready 1-Pager (Synthesis)
 
 Compile the plan into a **single 1-page board document** the CEO will present to the board on Day 5. It must include:
+
 - Mandate (1 sentence) + 8-week goal ($115K → $200K MRR, CAC < $1,800)
 - Budget allocation pie chart ($35K total: $22K paid + $1.2K AI tools + $3K freelance creative + $4.8K events/sponsorships + $4K reserve)
 - The 8-week roadmap on a Gantt-style timeline
@@ -156,6 +163,7 @@ Self-grading: complete the rubric above honestly. If you're below 75, identify t
 ## Optional Stretch Goals
 
 If you want to push beyond pass:
+
 1. **AI Overviews optimization audit.** Take your 8 SEO articles and re-optimize them for Google's AI Overviews using semantic SEO + schema. Document the on-page changes.
 2. **Predictive send-time test.** Add an A/B test to Deliverable 6 that compares AI-predicted send time (Klaviyo or HubSpot Smart Send Time) vs a fixed Tuesday 10am send.
 3. **Webinar funnel.** Design a webinar funnel for one of the content pieces — landing page, registration confirmation email, reminder cadence, replay nurture, MQL handoff to sales.

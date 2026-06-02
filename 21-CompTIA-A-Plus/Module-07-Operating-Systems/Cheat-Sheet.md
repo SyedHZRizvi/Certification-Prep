@@ -120,6 +120,7 @@ chown user:grp file
 ## 🏆 Exam Power Phrases
 
 ✅ Often **right**:
+
 - "Run as administrator"
 - "Use BitLocker / FileVault / LUKS"
 - "Boot to WinRE for repair"
@@ -128,6 +129,7 @@ chown user:grp file
 - "Use exFAT for cross-platform USB > 4 GB"
 
 ❌ Often **wrong**:
+
 - "Disable UAC"
 - "Defragment the SSD"
 - "Reformat as first step"

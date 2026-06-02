@@ -28,6 +28,7 @@ She redid the next deal under **FCA (Free Carrier) — Port of Djibouti**. Same 
 Incoterms (International Commercial Terms) are published by the **International Chamber of Commerce (ICC)** (Paris, founded 1919) and updated roughly every decade. The current version is **Incoterms 2020** (ICC Publication 723E, effective 1 January 2020) — replaced Incoterms 2010 (ICC Publication 715E). The Incoterms 2020 drafting group was chaired by Charles Debattista (University of Southampton).
 
 ### Two key changes from 2010:
+
 1. **DAT → DPU** (Delivered at Terminal renamed Delivered at Place Unloaded — broader location flexibility)
 2. **FCA** can now accompany an onboard Bill of Lading endorsement
 
@@ -249,6 +250,7 @@ US FTZs alone process > $700B/yr of merchandise. Apple, GE, Caterpillar, Toyota 
 ## 📜 Trade Compliance
 
 Trade compliance covers:
+
 - **Classification** — correct HS code
 - **Valuation** — proper transaction value (per WTO rules)
 - **Origin** — country of origin and FTA qualification
@@ -256,6 +258,7 @@ Trade compliance covers:
 - **Export controls** — ITAR (defense), EAR (dual-use), dual-use end-use certifications
 - **Anti-bribery** — FCPA (US), UK Bribery Act
 - **Customs valuation methods** (WTO order):
+
   1. Transaction value (most common)
   2. Identical goods
   3. Similar goods
@@ -344,6 +347,7 @@ These programs grant faster clearance + reduced inspections in exchange for docu
 ## ✅ Module 8 Summary
 
 You now know:
+
 - 📜 All 11 Incoterms 2020 and their groupings
 - 🏛️ Tariffs, duties, HS codes
 - 🌍 FTAs and rules of origin

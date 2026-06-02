@@ -110,6 +110,7 @@ User → CloudFront edge → OAC → Private S3 bucket (BPA on)
 ## 🏆 Exam Power Phrases
 
 ✅ Usually right:
+
 - "Enable Versioning then Object Lock"
 - "Use Intelligent-Tiering for unknown patterns"
 - "Use CloudFront + OAC + BPA"
@@ -120,6 +121,7 @@ User → CloudFront edge → OAC → Private S3 bucket (BPA on)
 - "Use a presigned URL for temporary access"
 
 ❌ Usually wrong:
+
 - "Make the bucket public for global reads"
 - "Eventual consistency may delay reads"
 - "Use single PUT for 10 GB file"

@@ -122,6 +122,7 @@ M = Monetary  (5 = AOV > $200, 1 = < $25)
 ## 🏆 Exam Power Phrases
 
 ✅ Often correct:
+
 - "BG/NBD for non-contractual customer-base analysis..."
 - "Calibrate before using as a probability threshold..."
 - "Target middle deciles for marketing — top deciles are sure things..."
@@ -129,6 +130,7 @@ M = Monetary  (5 = AOV > $200, 1 = < $25)
 - "LTV:CAC ≥ 3:1 is the sustainability floor..."
 
 ❌ Often wrong:
+
 - "Target the top decile in paid ads..."
 - "AUC = 1.0 is great..."
 - "RFM is obsolete..."

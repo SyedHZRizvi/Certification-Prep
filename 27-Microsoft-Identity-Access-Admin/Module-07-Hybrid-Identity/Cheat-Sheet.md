@@ -116,6 +116,7 @@ NTLM hash → salted → HMAC-SHA256 (1,000 iterations) → sent over HTTPS to E
 ## 🏆 Exam Power Phrases
 
 When you see these, they're often **correct**:
+
 - ✅ "Cloud Sync for multi-forest without trust"
 - ✅ "PHS + Seamless SSO" (modern default)
 - ✅ "Enable PHS even if federated" (DR backup)
@@ -124,6 +125,7 @@ When you see these, they're often **correct**:
 - ✅ "Migrate federation to cloud auth"
 
 When you see these, often **wrong**:
+
 - ❌ "Cloud Sync supports federation"
 - ❌ "Cloud Sync supports PTA"
 - ❌ "Cloud Sync supports group write-back"

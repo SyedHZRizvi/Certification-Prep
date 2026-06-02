@@ -38,6 +38,7 @@ This certification is for the engineer who wants to be on the right side of that
 US total compensation (base + equity + bonus, levels.fyi data through Q1 2026) skews **higher** for Claude-specialist roles than generic LLM-engineer roles at the same level. The pattern is most pronounced at the Senior+ tier: a Staff AI Engineer working on Claude-based agentic products at a top-quartile SF/NYC company commonly clears **$450K–$700K TC**.
 
 This track ladders directly into:
+
 - **AWS AI Practitioner (course 07)** — for the cloud-side governance of an Anthropic-on-Bedrock deployment
 - **Azure AI Engineer (course 08)** — for Azure OpenAI comparison and Microsoft 365 Copilot integration
 - **Prompt Engineering Specialist (course 29)** — vendor-neutral prompt techniques (zero-shot, CoT, structured output, multi-modal, jailbreak defense)
@@ -65,6 +66,7 @@ Begin with [Module 1: Claude Foundations & Constitutional AI →](./Module-01-Cl
 ## 🎯 What You'll Master
 
 By the end of this track, you'll be able to:
+
 - Explain *why Anthropic exists* — the Constitutional AI paper (Bai et al. 2022), the safety-first split from OpenAI, the Responsible Scaling Policy, and how that shapes Claude's training and refusal behavior
 - Pick the right Claude model (Haiku / Sonnet / Opus, by version) for any task, balancing cost, latency, and capability — and justify the choice to a CFO
 - Write prompts in Anthropic's preferred conventions: XML-tag scaffolding, role/system separation, examples-first, prefill, stop sequences, and the explicit "thinking" pattern
@@ -111,6 +113,7 @@ Score 85%+ on the Final Mock before declaring yourself ready.
 🔗 **[Anthropic's official documentation](https://docs.anthropic.com/)** — the prompt engineering guide, Messages API reference, tool use cookbook, MCP spec, model cards, and Responsible Scaling Policy. This is the *primary source*. Read it once cover-to-cover; come back for reference.
 
 Honorable mentions:
+
 - 📘 *[Anthropic's Prompt Engineering Interactive Tutorial](https://github.com/anthropics/prompt-eng-interactive-tutorial)* — free Jupyter notebooks from Anthropic itself
 - 📘 *[Anthropic Cookbook](https://github.com/anthropics/anthropic-cookbook)* — battle-tested recipes for tool use, RAG, vision, prompt caching, classification
 - 📄 *[Constitutional AI: Harmlessness from AI Feedback](https://arxiv.org/abs/2212.08073)* — Bai et al. 2022, the founding paper

@@ -23,6 +23,7 @@ Two weeks later he sends Lina a 19-page PDF. It opens with a screenshot of her A
 Lina is floored. She posts about it. Tags Alex. *"Best $0 I've ever spent. Hiring her would be a steal at $5k/mo."*
 
 Within a week, Alex has:
+
 - 3 inbound DMs from indie founders asking for the same thing
 - 2 recruiters reaching out about senior roles
 - The audit as the top-pinned post on his LinkedIn
@@ -211,6 +212,7 @@ Here's the structure to write your audit document in. **Total: ~5,000–7,000 wo
 ### Section 1: Executive Summary (1 page, ~300 words)
 
 What it includes:
+
 - Site URL + audit date
 - Domain Rating, organic traffic, organic keyword count (the headline numbers)
 - 5 most important findings (bullet list)
@@ -221,6 +223,7 @@ Tone: Like a doctor's diagnosis — direct, specific, useful.
 ### Section 2: Keyword Opportunity Analysis (3–4 pages, ~1,200 words)
 
 What it includes:
+
 - Current keyword footprint (top 10 keywords, with positions and traffic)
 - Quick wins: keywords ranked positions 8–20 that could move to top 5
 - Content Gap report screenshot + top 20 missing keywords table
@@ -229,6 +232,7 @@ What it includes:
 ### Section 3: Technical SEO Scan (3–4 pages, ~1,000 words)
 
 What it includes:
+
 - Screaming Frog summary
 - Top 10 issues in order of severity
 - Screenshots of each issue
@@ -238,6 +242,7 @@ What it includes:
 ### Section 4: Content Gap Analysis (2–3 pages, ~800 words)
 
 What it includes:
+
 - Top 5 competitors and what they rank for
 - Topic clusters they're winning that your subject isn't
 - Specific article ideas that would close the gap
@@ -245,6 +250,7 @@ What it includes:
 ### Section 5: Top-Page Audit (2–3 pages, ~700 words)
 
 What it includes:
+
 - Top 5 highest-traffic existing pages
 - For each: what's working, what's missing, suggested optimizations
 - "If you could only fix 3 of these pages, fix these:"
@@ -252,6 +258,7 @@ What it includes:
 ### Section 6: 90-Day Content Roadmap (2–3 pages, ~700 words)
 
 What it includes:
+
 - 8–12 specific articles to publish
 - For each: target keyword, search volume, KD, suggested word count, priority (P0/P1/P2), suggested deadline
 - Calendar view: which month each article goes live
@@ -260,6 +267,7 @@ What it includes:
 ### Section 7: Recommendations Summary (1 page, ~400 words)
 
 What it includes:
+
 - 5–10 actions, in priority order
 - Each: action, expected impact, effort
 - A "if you do nothing else, do these 3" callout
@@ -390,6 +398,7 @@ The 90-second pitch:
 ## ✅ Module 2 Summary
 
 You now know:
+
 - 🔍 The 7-section structure of a portfolio-grade SEO audit
 - 🛠️ How to use Ahrefs, Screaming Frog, and Google Search Console for the data
 - 📊 How to build a 90-day content roadmap that's actually useful

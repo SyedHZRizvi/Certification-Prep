@@ -117,6 +117,7 @@ Prerequisite for gMSA: `Add-KdsRootKey -EffectiveImmediately` (forest-wide, one-
 ## 🏆 Exam Power Phrases
 
 When you see these, they're often **correct**:
+
 - ✅ "Delegate control to the OU" (least privilege)
 - ✅ "Forest functional level Windows Server 2008 R2 or later"
 - ✅ "Selective Authentication on the forest trust"
@@ -125,6 +126,7 @@ When you see these, they're often **correct**:
 - ✅ "Use a gMSA"
 
 Usually **wrong**:
+
 - ❌ "Add to Domain Admins to delegate"
 - ❌ "An OU is a security boundary"
 - ❌ "Bring the original FSMO holder back after a seize"

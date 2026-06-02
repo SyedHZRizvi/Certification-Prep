@@ -145,6 +145,7 @@ Cost  ▲    ╲          ╱  Total = Inventory + Facility + Transport
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. Two assumptions of center-of-gravity ___
 2. Define nearshoring vs reshoring ___
 3. Square-root law's effect on safety stock ___

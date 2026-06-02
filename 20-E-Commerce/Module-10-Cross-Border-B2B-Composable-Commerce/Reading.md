@@ -9,6 +9,7 @@
 In 2008, a former SEO consultant named Chris Xu (Xu Yangtian) founded a wedding-dress dropshipping site in Nanjing, China. He renamed it SheInside in 2012, then Shein in 2015. By 2022 — fourteen years later — Shein was the most-downloaded shopping app on the Apple App Store globally, larger by downloads than Amazon, AliExpress, or H&M.
 
 The numbers behind that ascent were unprecedented:
+
 - **$24B revenue in 2022**, up from $10B in 2020 — a 2.4x in two years.
 - **5,000-7,000 new SKUs added per day** by 2023. (For context: Zara, fast-fashion's previous king, added ~500/week.)
 - **5-7 day design-to-delivery cycles** in China's Pearl River Delta, vs. Zara's 3-6 weeks.
@@ -23,6 +24,7 @@ Then the wall.
 In 2023-2024, Shein's IPO repeatedly stalled. The SEC raised questions about its forced-labor risks in Xinjiang cotton. UK regulators paused its LSE listing in 2024 over similar concerns. The Biden administration in September 2024 proposed closing the **De Minimis loophole** for goods sourced from China — specifically targeting Shein/Temu — and the policy was finalized via executive order in 2025. The EU's Digital Services Act (Regulation 2022/2065, applied February 17, 2024) classified Shein as a "Very Large Online Platform" (VLOP) — requiring transparency reporting, illegal-content removal, and external auditing. France passed a "fast-fashion law" in 2024 imposing per-item environmental penalties (€5/item rising to €10/item in 2030) specifically aimed at ultra-fast-fashion imports.
 
 Shein's response told you everything about the future of cross-border D2C:
+
 - **Warehoused inventory in Mexico, Brazil, Turkey, Poland** by 2024 — moving from pure cross-border to hybrid local-fulfillment.
 - **Marketplace pivot** — opened Shein Marketplace to third-party sellers in 2023, distributing regulatory risk.
 - **Compliance hires** — Shein's compliance org grew from ~50 to 600+ people in 2022-2024.
@@ -131,6 +133,7 @@ The DSA applied from **February 17, 2024** for VLOPs (Very Large Online Platform
 ### GDPR — The Privacy Cost
 
 The General Data Protection Regulation (Regulation 2016/679, in force May 25, 2018) imposes:
+
 - **Lawful basis** for every data-processing activity (consent, contract, legitimate interest, etc.).
 - **Data subject rights** — access, rectification, erasure, portability.
 - **Data protection officer** required for systematic monitoring.
@@ -153,6 +156,7 @@ Following *South Dakota v. Wayfair* (2018) — the Supreme Court case that overt
 The **Section 321 de minimis** allowance — 19 USC 1321 — lets parcels valued ≤$800 enter the US duty-free with simplified customs (Type 86 entry, electronic-only). Set at $800 in 2016 (up from $200 in 1993), it became the architecture of Shein/Temu/AliExpress's cross-border model.
 
 The 2024-2025 policy debate culminated in:
+
 - **September 2024:** Biden administration proposed excluding Section 301 (Chinese tariffs) goods from De Minimis.
 - **January-March 2025:** Executive Order signed restricting De Minimis on Chinese-origin goods.
 - **Industry impact:** Shein/Temu pivoted to local fulfillment + US warehousing.
@@ -349,6 +353,7 @@ START
 **Situation.** In 2008, Chris Xu founded a wedding-dress dropshipping site in Nanjing, China. Renamed Shein in 2015. By 2022, Shein was the world's largest fashion retailer by app downloads with **$24B in revenue**. The 2023 private valuation hit **$66B** ahead of an expected IPO. The architecture was a tightly-integrated cross-border supply chain: 5,000-7,000 SKUs added daily, 5-7 day design-to-delivery cycles, 300-unit micro-batch initial runs, TikTok-feedback-driven SKU greenlighting, and direct-ship from Chinese factories via the US **De Minimis exemption** (Section 321, $800 threshold).
 
 **Decision.** Shein doubled down on three operational bets:
+
 1. **Vertical integration** — design + production + logistics + retail in one company, with software orchestrating all four.
 2. **Cross-border arbitrage** — exploit the US De Minimis exemption to land Chinese-origin apparel duty-free in the US (a ~16-32% structural cost advantage over US-warehoused competitors).
 3. **Social-commerce flywheel** — TikTok and Instagram creators drove demand discovery; data feedback compressed product-development cycles to 5-7 days.
@@ -362,6 +367,7 @@ START
 - **September 2024 → 2025:** US Biden/Trump-era executive orders restricting Section 321 De Minimis on Chinese-origin goods.
 
 Shein's response:
+
 - Built warehouses in Mexico, Brazil, Turkey, Poland (2023-2024).
 - Opened Shein Marketplace to third-party sellers (2023) — distributing regulatory risk.
 - Compliance org grew from ~50 to 600+ employees (2022-2024).
@@ -429,6 +435,7 @@ The architectural implication: storefronts that exist *only* as human-facing UIs
 ## ✅ Module 10 Summary
 
 You now know:
+
 - 🌍 Cross-border economics, duty calculation, IOSS/OSS, DDU/DDP/local-fulfillment
 - 🇪🇺 EU DSA, GDPR enforcement, VAT mechanics
 - 🇺🇸 US marketplace facilitator laws, post-*Wayfair* nexus, De Minimis under pressure

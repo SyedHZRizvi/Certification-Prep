@@ -137,6 +137,7 @@ Final Answer: <result>
 ## 🏆 Exam Power Phrases
 
 ✅ Often **right**:
+
 - "CoT helps multi-step reasoning, not trivial tasks"
 - "Self-consistency at N=5 often captures most of N=40's lift"
 - "Reasoning models bake in CoT — don't add the trigger phrase"
@@ -144,6 +145,7 @@ Final Answer: <result>
 - "Reasoning tokens are billed and metered"
 
 ❌ Often **wrong**:
+
 - "CoT always helps"
 - "Self-consistency is free"
 - "More steps = better reasoning"
@@ -166,6 +168,7 @@ Final Answer: <result>
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. When does CoT NOT help? ___
 2. Self-consistency in 4 lines? ___
 3. ReAct's three role tags? ___

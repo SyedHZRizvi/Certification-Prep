@@ -129,6 +129,7 @@ sudo make install                       # copy artifacts
 ```
 
 Toolchain meta-packages:
+
 - Debian/Ubuntu: `apt install build-essential autoconf automake`
 - RHEL/Fedora: `dnf groupinstall "Development Tools"`
 
@@ -139,6 +140,7 @@ Toolchain meta-packages:
 ## 🏆 Exam Power Phrases
 
 When you see these in answers, they're often **right**:
+
 - ✅ "Import the GPG key with `rpm --import`"
 - ✅ "Use `dnf history undo` to roll back"
 - ✅ "Run `apt update` after editing sources.list.d/"
@@ -146,6 +148,7 @@ When you see these in answers, they're often **right**:
 - ✅ "Pin packages with `apt-mark hold`"
 
 When you see these, they're often **wrong**:
+
 - ❌ "Set `gpgcheck=0` in the .repo file"
 - ❌ "Use `dpkg -i` to satisfy missing dependencies"
 - ❌ "Source installs appear in `rpm -qa`"
@@ -171,6 +174,7 @@ When you see these, they're often **wrong**:
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. apt and dnf equivalents for: install, remove, search, show, list installed, file ownership query. ___
 2. Where do `.repo` and `.list` files live? ___
 3. Right way to add a third-party repo with GPG signing on Ubuntu 22.04? ___

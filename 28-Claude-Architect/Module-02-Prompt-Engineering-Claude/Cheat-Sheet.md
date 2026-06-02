@@ -121,6 +121,7 @@ Cache TTL: **~5 minutes** (Anthropic-managed; renews on hit). For low-traffic pr
 ## 🏆 Exam Power Phrases
 
 ✅ Often **right**:
+
 - "Wrap inputs in XML tags"
 - "Prefill the assistant role to force structure"
 - "Put role + format + constraints in the system prompt"
@@ -129,6 +130,7 @@ Cache TTL: **~5 minutes** (Anthropic-managed; renews on hit). For low-traffic pr
 - "Cache attaches to the prompt prefix; stable content first"
 
 ❌ Often **wrong**:
+
 - "Use 'Human:/Assistant:' markers" (retired)
 - "Set `response_format={'type':'json_object'}`" (OpenAI parameter, not Claude)
 - "Markdown delimiters are as good as XML for Claude"
@@ -153,6 +155,7 @@ Cache TTL: **~5 minutes** (Anthropic-managed; renews on hit). For low-traffic pr
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. Three prompt parts and what each holds? ___
 2. Single most reliable technique for JSON-only output? ___
 3. Where does the question go in a long-context prompt? ___

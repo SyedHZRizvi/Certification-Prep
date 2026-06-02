@@ -115,6 +115,7 @@ W0:   churn
 ## 🏆 Exam Power Phrases
 
 ✅ Often correct:
+
 - "Disaggregate cohorts before averaging..."
 - "M0 = acquisition month..."
 - "Find the activation event that 5×'s retention..."
@@ -122,6 +123,7 @@ W0:   churn
 - "Best-in-class B2B NRR > 120%..."
 
 ❌ Often wrong:
+
 - "Average retention is enough..."
 - "Manual look-alikes are still the default..."
 - "Cohort is the same as segment..."

@@ -121,6 +121,7 @@ Mnemonic: **P**lease **D**o **N**ot **T**hrow **S**ausage **P**izza **A**way (bo
 ## 🏆 Exam Power Phrases
 
 ✅ Often **right**:
+
 - "Use SSH (port 22) instead of Telnet"
 - "Switch to WPA3 / WPA2-AES"
 - "Verify default gateway"
@@ -128,6 +129,7 @@ Mnemonic: **P**lease **D**o **N**ot **T**hrow **S**ausage **P**izza **A**way (bo
 - "Isolate the guest network on a separate SSID/VLAN"
 
 ❌ Often **wrong**:
+
 - "Use Telnet for production"
 - "Disable the firewall"
 - "Use POP3 for multi-device sync"

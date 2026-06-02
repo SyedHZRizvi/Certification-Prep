@@ -92,6 +92,7 @@ This is where email gets exciting. Modern ESPs combine traditional automation wi
 
 ### AI Capability 1: Subject Line Optimization
 Tools (Mailchimp, Klaviyo, Phrasee, ActiveCampaign) suggest subject lines based on:
+
 - Past performance of similar phrases in your account
 - Industry benchmarks
 - Predicted open rate
@@ -110,6 +111,7 @@ Most studies show 10–25% open-rate lift over fixed sending. The HubSpot 2024 *
 
 ### AI Capability 3: Dynamic Content + Personalization
 Beyond `{{ first_name }}`, modern personalization can swap entire blocks based on:
+
 - Past purchases / behavior
 - Predicted next-best-action
 - Location + weather + time
@@ -271,6 +273,7 @@ Klaviyo was founded in 2012 by Andrew Bialecki and Ed Hallen with one bet: that 
 By 2023, Klaviyo had become the dominant ESP for Shopify-powered brands and went public on the NYSE. Reported numbers from their S-1 and subsequent earnings: hundreds of millions in ARR, growing fast.
 
 Why Klaviyo won (per Bialecki's public interviews and Klaviyo's own benchmark reports):
+
 1. **Native Shopify (and BigCommerce, etc.) data sync.** Customers, products, orders, browsing — all auto-flowing.
 2. **Predictive analytics built on that data.** Predicted CLV, predicted next-order date, predicted churn — for each subscriber.
 3. **Segmentation language tuned for e-commerce.** "Bought 2+ orders, last 90 days, hasn't opened in 30 days" is a one-click filter.
@@ -339,6 +342,7 @@ The Klaviyo case demonstrates the broader thesis: **the next generation of ESPs 
 ## ✅ Module 6 Summary
 
 You now know:
+
 - 📊 Why email's ROI stays the highest ($36 per $1, DMA)
 - 🧱 The 5 foundations (list, segmentation, deliverability, cadence, design)
 - 🤖 The 6 AI email capabilities (subject lines, send time, dynamic content, drafting, churn prediction, A/B automation)

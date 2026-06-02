@@ -262,6 +262,7 @@ This walkthrough is the **exact pattern PBQs test**. Practice it on every scenar
 **Decision.** Engineers running a **routine maintenance command** to assess global backbone capacity issued a BGP update that **withdrew the routes advertising Facebook's authoritative DNS servers**. With no routes to Facebook's DNS, the DNS responses for `facebook.com`, `instagram.com`, etc. **disappeared from the Internet's DNS tables**. Users got DNS resolution failures.
 
 The cascade went deeper:
+
 - Facebook's *internal* tools also relied on `meta.com` DNS — so engineers couldn't log in remotely
 - The data centers' physical security badge systems relied on internal DNS — engineers were locked out of the buildings until manual override
 - Recovery required *physically dispatching* engineers to data centers, manually overriding security, and restoring BGP advertisements at the routers
@@ -269,6 +270,7 @@ The cascade went deeper:
 **Outcome.** ~6 hours of total outage. Estimated ~$60–90 million in direct lost ad revenue. Reputational damage in the billions. Meta's published post-mortem ("More Details about the October 4 Outage," Santosh Janardhan, 5 October 2021) became one of the most-read engineering blog posts ever, hitting ~10 million reads in 48 hours.
 
 The post-mortem reads exactly like a **CompTIA 7-step methodology gone wrong**:
+
 1. **Identify the problem** — The maintenance team identified routes were missing within minutes via internal monitoring (the parts that didn't depend on the broken DNS)
 2. **Establish theory** — Quickly correlated the route withdrawal to the maintenance command issued seconds earlier
 3. **Test the theory** — Out-of-band access showed the routers had received the withdraw and propagated it
@@ -278,6 +280,7 @@ The post-mortem reads exactly like a **CompTIA 7-step methodology gone wrong**:
 7. **Document** — Public post-mortem within 24 hours; internal RCA detailed and shared
 
 **Lesson for the exam / for practitioners.** This case touches *every* Module 8 concept:
+
 - **Out-of-band management** — the absence of an out-of-band auth path is what turned a 5-minute fix into a 6-hour outage
 - **Single-system dependencies** — internal tools, badge access, and DNS all sharing a single fate point amplified blast radius catastrophically
 - **Documentation** — the post-mortem itself became a teaching artifact for the industry; transparency in incident reporting raises the bar
@@ -296,6 +299,7 @@ This case is exactly what Network+ tests when asking about troubleshooting metho
 ## ✅ Module 8 Summary
 
 You now know:
+
 - 🎯 The **CompTIA 7-step troubleshooting methodology** in order — Identify → Establish theory → Test → Plan → Implement → Verify → Document
 - 🪜 Three approaches to forming a theory — **top-down**, **bottom-up**, **divide-and-conquer**
 - 🚨 **L1–L7 issue catalog** — duplex mismatch, broadcast storms, APIPA, routing loops, MTU issues, TLS errors, etc.

@@ -80,6 +80,7 @@ The famous formulation: *"One CPU one vote."* In 2008 this was approximately tru
 
 ### §5 Network — the protocol-of-rules summary
 The six steps that every Bitcoin node executes:
+
 1. New transactions are broadcast to all nodes.
 2. Each node collects new transactions into a block.
 3. Each node works on finding a difficult proof-of-work for its block.
@@ -185,6 +186,7 @@ Block subsidy halves every **210,000 blocks** (~4 years). Starting at 50 BTC.
 **Outcome.** No exchanges had loaded the bad coins. No merchants had accepted them. The patched chain became canonical. The incident is the only successful exploit of Bitcoin's monetary policy in history — and it lasted less than 10 hours.
 
 **Lesson for the exam / for practitioners.** Two principles every exam tests:
+
 1. **Consensus rules are enforced by every full node, not by miners.** The miners who built on block 74638 mined valid Proof-of-Work; their blocks were rejected because the *transaction* violated a (newly-added) consensus rule. Module 3 returns to this.
 2. **Bitcoin's value depends on the integrity of its supply schedule.** Inflation that bypasses the 21M cap is the one failure mode that the protocol explicitly cannot recover from in the market's eyes. The 2010 incident proves the recovery requires a coordinated soft fork inside hours.
 
@@ -259,6 +261,7 @@ If the white paper is the *manual*, the value proposition is the *pitch*. CBP ro
 | 6 | **Scarce** | Supply is hard-capped (21M asymptotic) and predictable (halving schedule) |
 
 🚨 **Trap on the exam.** Bitcoin does **NOT** claim to be:
+
 - Anonymous (it's pseudonymous; see Module 8 on chain analysis)
 - Free (transactions have fees, especially since SegWit/Taproot adoption)
 - Instant (1-confirmation safety is ~10 min, "settled" rule of thumb is 6 confs ≈ 1 hour)

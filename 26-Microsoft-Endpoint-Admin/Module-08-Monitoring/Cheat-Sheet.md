@@ -36,6 +36,7 @@ Baseline: 80+ across all (Microsoft recommended).
 ## 🛠️ Proactive Remediations (Plan 2)
 
 Pair of PowerShell scripts:
+
 - **Detect** — exit 0 (compliant) or exit 1 (issue)
 - **Remediate** — runs only on exit 1
 
@@ -54,6 +55,7 @@ Settings → Accounts → Access work or school →
 ```
 
 Contains:
+
 - MDMDiagReport.html (human readable)
 - MDMDiagReport.xml
 - Event Viewer logs (Device Management Enterprise)
@@ -101,6 +103,7 @@ Contains:
 ## 🔎 Advanced Hunting (Plan 2) — KQL
 
 Common tables:
+
 - `DeviceProcessEvents` — process creates
 - `DeviceFileEvents` — file ops
 - `DeviceLogonEvents` — logons
@@ -135,6 +138,7 @@ DeviceProcessEvents
 ## 🏆 Exam Power Phrases
 
 When you see these, they're often **correct**:
+
 - ✅ "Endpoint Analytics for fleet performance scoring"
 - ✅ "Proactive remediations for known recurring issues"
 - ✅ "MDM Diagnostics Report for policy troubleshooting"
@@ -143,6 +147,7 @@ When you see these, they're often **correct**:
 - ✅ "IME logs for app install troubleshooting"
 
 When you see these, often **wrong**:
+
 - ❌ "Wipe and Retire are the same"
 - ❌ "Endpoint Analytics is Plan 1 fully"
 - ❌ "Proactive remediations free in Plan 1"

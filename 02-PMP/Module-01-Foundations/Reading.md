@@ -20,6 +20,7 @@ Per PMI:
 > *"A temporary endeavor undertaken to create a unique product, service, or result."*
 
 3 keywords:
+
 - 🕒 **Temporary** — has a beginning and end
 - 🎁 **Unique** — produces something new
 - 📦 **Result** — product, service, or outcome
@@ -111,6 +112,7 @@ You don't need to memorize the order. Just recognize the principles.
 - 🏥 Examples: Hospital construction (predictive) + IT system (agile)
 
 🎯 **Exam pattern:** "What approach should the team use?" — depends on:
+
 - Requirement stability (stable = predictive)
 - Customer involvement (high = agile)
 - Risk profile (high uncertainty = agile)
@@ -155,6 +157,7 @@ You don't need to memorize the order. Just recognize the principles.
 ## 👤 The Project Manager's Role
 
 ### Core Responsibilities:
+
 - 🤝 Lead and support the team
 - 👥 Manage stakeholder expectations
 - 📋 Plan, execute, monitor, close projects
@@ -165,12 +168,14 @@ You don't need to memorize the order. Just recognize the principles.
 - 🔄 Adapt approaches as needed
 
 ### What PMs Do (Time Allocation):
+
 - 📞 Communication: ~90% of time
 - 🤔 Decision-making: small but critical %
 - 📅 Planning: continuous
 - 🛠️ Execution: by team, monitored by PM
 
 ### What PMs DON'T Do:
+
 - ❌ Do all the work themselves
 - ❌ Tell every team member what to do
 - ❌ Hide problems from stakeholders
@@ -195,6 +200,7 @@ Per PMI's PMP framework:
 You need ALL three. The exam tests all three.
 
 🎯 **Recent updates** — formerly "Technical, Leadership, Strategic" — now refreshed:
+
 - **Ways of Working** — predictive, agile, hybrid PM skills
 - **Power Skills** — leadership, communication, conflict resolution
 - **Business Acumen** — strategy, finance, industry awareness
@@ -205,6 +211,7 @@ You need ALL three. The exam tests all three.
 
 ### Enterprise Environmental Factors (EEFs)
 External or organizational factors that influence the project (mostly unchangeable):
+
 - Organizational culture
 - Government regulations
 - Market conditions
@@ -213,6 +220,7 @@ External or organizational factors that influence the project (mostly unchangeab
 
 ### Organizational Process Assets (OPAs)
 Internal artifacts the team uses:
+
 - Templates
 - Historical records / lessons learned
 - Policies and procedures
@@ -252,6 +260,7 @@ Affects how PMs operate:
 A central office that supports project management:
 
 ### 3 Types of PMO:
+
 1. **Supportive** — provides templates, training, mentoring (low control)
 2. **Controlling** — requires compliance with frameworks (medium control)
 3. **Directive** — directly manages projects (high control)
@@ -303,6 +312,7 @@ A central office that supports project management:
 ## ✅ Module 1 Summary
 
 You now know:
+
 - 🏛️ What a project is (temporary, unique, result)
 - 🎭 The 8 Performance Domains
 - 🌈 The 12 PMBOK 7 Principles

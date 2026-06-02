@@ -87,6 +87,7 @@ Your own service across VPCs? → PrivateLink (NLB-backed)
 ## 🏆 Exam Power Phrases
 
 ✅ Usually right:
+
 - "Use Gateway VPC Endpoint for S3 / DynamoDB"
 - "Use Transit Gateway for many VPCs and hybrid"
 - "Use PrivateLink to expose a single service"
@@ -96,6 +97,7 @@ Your own service across VPCs? → PrivateLink (NLB-backed)
 - "Use Site-to-Site VPN for quick on-prem connectivity"
 
 ❌ Usually wrong:
+
 - "Peering is transitive"
 - "DX is encrypted by default"
 - "Open SG inbound 0.0.0.0/0 on port 22"

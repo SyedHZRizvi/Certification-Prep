@@ -29,6 +29,7 @@ Need per-user audit?
 ```
 
 Layered enforcement:
+
 1. SMB connect (Kerberos / key)
 2. **Share-level RBAC** (`Storage File Data SMB Share Reader / Contributor / Elevated Contributor`)
 3. **NTFS ACLs** on files/folders
@@ -54,6 +55,7 @@ Storage Sync Service (Azure)
 ```
 
 Cloud tiering policies:
+
 - **Volume free space** — keep X% disk free
 - **Date** — tier files older than N days
 - Both = stricter wins
@@ -76,6 +78,7 @@ Excluded from tiering: system state, paging file, AV-quarantined.
 ## 🏆 Exam Power Phrases
 
 Often **correct**:
+
 - ✅ "Deploy Azure File Sync with cloud tiering"
 - ✅ "Use identity-based auth (Entra Kerberos)"
 - ✅ "Premium tier for sub-5ms latency"
@@ -83,6 +86,7 @@ Often **correct**:
 - ✅ "Private endpoint to lock down access"
 
 Often **wrong**:
+
 - ❌ "Sync = backup"
 - ❌ "NFS supports GRS"
 - ❌ "Storage key gives per-user audit"

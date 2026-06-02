@@ -106,6 +106,7 @@ INCREMENTALITY  ←  MMM
 ## 🏆 Exam Power Phrases
 
 ✅ Often correct:
+
 - "Attribution model is a story we choose to tell..."
 - "DDA requires enough data; default falls back to last-click..."
 - "Incrementality is the only causal measurement..."
@@ -113,6 +114,7 @@ INCREMENTALITY  ←  MMM
 - "Reserve 5–10% of spend for incrementality..."
 
 ❌ Often wrong:
+
 - "Last-click is the most accurate..."
 - "DDA proves causation..."
 - "All MTA vendors give the same numbers..."

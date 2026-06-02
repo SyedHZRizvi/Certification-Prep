@@ -136,6 +136,7 @@ Model Monitoring (skew / drift / drift detection + alert)
 ## 🎯 Power Phrases
 
 ✅ Often **right**:
+
 - "Vertex AI is the enterprise platform; AI Studio is the consumer playground"
 - "Claude is available on Vertex AI Model Garden alongside Gemini"
 - "Search = managed RAG; Vector Search = ANN index"
@@ -146,6 +147,7 @@ Model Monitoring (skew / drift / drift detection + alert)
 - "Traffic split on Endpoints for canary deploys"
 
 ❌ Often **wrong**:
+
 - "Vertex AI is one API" (it's an umbrella)
 - "Search and Vector Search are the same"
 - "API keys work on Vertex AI" (they don't — use IAM)

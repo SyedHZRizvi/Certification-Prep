@@ -131,6 +131,7 @@ CA Policy: Auth Context = C1 → Require MFA + compliant device
 ## 🏆 Exam Power Phrases
 
 When you see these, they're often **correct**:
+
 - ✅ "Start in Report-only"
 - ✅ "Validate with What If tool"
 - ✅ "Exclude break-glass accounts"
@@ -139,6 +140,7 @@ When you see these, they're often **correct**:
 - ✅ "Block legacy auth as prerequisite"
 
 When you see these, often **wrong**:
+
 - ❌ "Security Defaults + CA together"
 - ❌ "Federated break-glass account"
 - ❌ "Apply to All users + All apps immediately"

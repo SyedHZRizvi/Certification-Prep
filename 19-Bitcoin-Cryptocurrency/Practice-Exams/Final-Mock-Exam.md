@@ -1100,6 +1100,7 @@ D. The IR playbook alone
 ## 🔍 Review Process
 
 For EACH wrong answer:
+
 1. Identify which module covered it (M1-M10).
 2. Re-read the relevant Reading.md section and Cheat-Sheet.md.
 3. Add a flashcard for the concept (use Flashcards.md or your own Anki deck).

@@ -17,6 +17,7 @@ You are the newly hired **Chief Supply Chain Officer** at **Northwind Provisions
 The CEO and Board mandate: **lead an 18-month end-to-end supply chain transformation** to restore competitive position, prepare for the 2025-2027 macro environment (tariff regimes, climate volatility, AI-augmented operations), and pass an external "CSCO Readiness Audit" by ASCM-aligned consultants in month 18.
 
 You have:
+
 - A direct mandate from the CEO and a $52M transformation budget (≈ 2.2% of revenue)
 - 8 direct reports inherited (VPs of Planning, Sourcing, Manufacturing, Logistics, Quality, Sustainability, IT-SCM, Customer Service)
 - 18 months and a Board-level scorecard reviewed quarterly
@@ -127,6 +128,7 @@ For a 4-week intensive: combine weeks 2-3, 4-5, 6-7 into single weeks; accept lo
 ## What "submission" looks like
 
 A single **PDF deliverable, 25-40 pages**, structured as:
+
 1. Executive Summary (1 page) — the elevator-pitch version of your transformation.
 2. SCOR-mapped strategy (6-10 pages).
 3. Kraljic supplier segmentation (3-5 pages).

@@ -264,6 +264,7 @@ The exam likes to set up a scenario ("a hospital has 10 years of MRI scans and w
 **Outcome.** At CASP14, AlphaFold 2 achieved a median GDT score of 92.4 (out of 100), comparable to experimental methods. The 2022 database release was downloaded by ~1.8 million unique users in its first year. By 2024 the work was credited in 25,000+ academic papers. Demis Hassabis and John Jumper (DeepMind) and David Baker (University of Washington, for related computational protein design work) shared the **2024 Nobel Prize in Chemistry** — the first Nobel directly recognizing applied machine-learning work. Drug-discovery startups built entirely on AlphaFold outputs (Isomorphic Labs, spun out of DeepMind in 2021) attracted billions in capital.
 
 **Lesson for the exam / for practitioners.** AlphaFold is the canonical example for two AIF-C01 talking points:
+
 1. **Supervised deep learning unlocks problems classical ML can't reach.** AlphaFold uses *labeled* training data (sequence → known 3D structure) — textbook supervised learning. The "deep" part is a multi-layer Transformer-based neural network. Classical ML (random forests, SVMs) had been tried for decades on this problem and topped out. The exam loves the phrase "deep learning wins on unstructured data" — protein structures are about as unstructured as it gets.
 2. **The bottleneck shifted from algorithm to data + compute, exactly as the *Deep Learning* textbook (Goodfellow, Bengio, Courville, MIT Press, 2016) predicted.** AlphaFold's breakthrough wasn't a wild new theory; it was a Transformer architecture (Vaswani et al., "Attention Is All You Need," NeurIPS 2017) plus the public PDB database plus Google's TPU compute. This is the same pattern behind LLMs — and it's why "data quality" and "compute access" recur in every Domain 1 and Domain 2 question.
 
@@ -277,6 +278,7 @@ The exam likes to set up a scenario ("a hospital has 10 years of MRI scans and w
 ## ✅ Module 1 Summary
 
 You now know:
+
 - 🪆 The AI ⊃ ML ⊃ DL ⊃ Generative AI hierarchy
 - 🧪 The 3 ML paradigms (supervised, unsupervised, reinforcement) and what kind of problem each one solves
 - 🧰 The classical algorithms (XGBoost, K-Means, etc.) by name

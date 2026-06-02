@@ -393,6 +393,7 @@ C. Tabletop → Full-interruption → Simulation → Parallel
 D. Tabletop → Walkthrough → Simulation → Parallel → Full-interruption
 
 ### 65 (Scenario PBQ). Place these systems in their correct zones (DMZ / Internal / Secure / Management):
+
 - Public web servers
 - DB servers (only accessed by web tier)
 - Employee workstations
@@ -404,6 +405,7 @@ C. All in DMZ
 D. All in Internal
 
 ### 66 (Scenario PBQ). Match each attack to its indicator:
+
 - (a) `?next=https://evil.com` in URL parameter
 - (b) Process spawning `powershell -enc <base64>`
 - (c) Outbound to `bad-domain[.]tld` over DNS at periodic 5-min intervals
@@ -415,6 +417,7 @@ C. (a) XSS, (b) Phishing, (c) DNS amplification, (d) Stuffing
 D. (a) CSRF, (b) Worm, (c) Replay, (d) Vishing
 
 ### 67 (Scenario PBQ). Drag these actions into NIST IR phase order:
+
 - Wipe and rebuild infected hosts
 - Capture memory image
 - Update playbook with new IOCs
@@ -428,6 +431,7 @@ C. Update playbook → Isolate → Wipe → Memory → Restore → Scope
 D. Memory → Wipe → Restore → Isolate → Scope → Playbook
 
 ### 68 (Scenario PBQ). For each contract scenario, pick the right document:
+
 - (i) HR + new SaaS vendor about a 6-month POC
 - (ii) Vendor processes EU customer PII
 - (iii) Vendor handles cardholder data
@@ -439,6 +443,7 @@ C. (i) ISA, (ii) BAA, (iii) DPA, (iv) MSA
 D. All four = MSAs
 
 ### 69 (Scenario PBQ). A pen-tester finds three issues on the same web app:
+
 1. Login endpoint vulnerable to SQLi
 2. Old jQuery (v1.x) with multiple CVEs
 3. Admin panel reachable from the internet with no MFA
@@ -450,6 +455,7 @@ C. SQLi (full auth bypass) → Admin panel (privileged access exposed) → jQuer
 D. jQuery → SQLi → Admin panel
 
 ### 70 (Scenario PBQ). A SOC observes:
+
 - 4,800 outbound DNS queries from one host in 60 seconds
 - Each query is to `<random>.bad-domain.tld`
 - The host has no business-justified DNS load

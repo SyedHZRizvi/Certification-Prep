@@ -13,6 +13,7 @@ title: AI Digital Marketing Strategist Track
 > **Difficulty:** Advanced · 3+ yrs marketing ops/paid/analytics experience
 
 This is the **third course in the AI Digital Marketing ladder**. It assumes you have either:
+
 - Completed `14-AI-Marketing-Foundations` (the introduction) and `15-AI-Marketing-Practitioner` (the channel-execution course), **or**
 - 3+ years of operating-level marketing experience in paid media, lifecycle, or analytics.
 

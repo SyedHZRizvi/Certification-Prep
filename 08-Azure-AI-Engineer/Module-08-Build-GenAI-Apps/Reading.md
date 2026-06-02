@@ -14,6 +14,7 @@
 ## 🍕 A Story: Maya Ships v1.0
 
 Maya needs to launch a production-ready help chatbot. She has all the pieces from Modules 1–7. Now she needs to:
+
 1. **Stitch them together** into one app
 2. **Iterate fast** on prompts and flows
 3. **Evaluate** quality before each release
@@ -48,6 +49,7 @@ Hub                       ← Azure resource; shared infra, security, connection
 ### Connections
 
 Foundry **Connections** are reusable, RBAC-secured handles to external services:
+
 - Azure OpenAI
 - Azure AI Search
 - Azure AI services
@@ -62,12 +64,14 @@ Use connections instead of hardcoding endpoints + keys in code.
 ## 📚 The Model Catalog
 
 Foundry's **Model catalog** lists thousands of models:
+
 - **Azure OpenAI models** (GPT-4o, etc.) — first-class deployments
 - **Models as a Service (MaaS)** — pay-per-token serverless deployments of partner models (Llama, Mistral, Cohere, NVIDIA, etc.)
 - **Models as a Platform (MaaP)** — deploy to a managed compute (you control the VM/cluster)
 - **Open-source / Hugging Face** models
 
 You can:
+
 - **Try a model** in a playground without deploying
 - **Deploy** it to your project
 - **Compare** models side-by-side
@@ -137,6 +141,7 @@ Foundry's **Evaluation** runs your flow/model against a dataset and scores each 
 | **Custom metrics** | Your own Python-based scorer |
 
 Two evaluation modes:
+
 - **Built-in evaluators** — Foundry provides metric implementations (mostly LLM-as-judge)
 - **Custom evaluators** — Your code, integrated into the eval runs
 
@@ -149,6 +154,7 @@ You bring a **dataset** (question + golden answer + grounding sources) and the e
 ## 📈 Monitoring In Production
 
 Once deployed, Foundry can continuously monitor:
+
 - **Token usage** + cost
 - **Latency** (p50/p95/p99)
 - **Content filter triggers** (and which categories)
@@ -232,6 +238,7 @@ An **agent** is an LLM that can decide to invoke **tools** (functions, APIs, cod
 ### Azure AI Agent Service (in Foundry)
 
 Provides:
+
 - A persistent **assistant** with system instructions, tools, files, threads
 - Built-in tools: **Code Interpreter**, **File Search** (RAG over uploaded files), **Function Calling** (your functions), **Browser** (preview)
 - **Threads** = conversations with state
@@ -381,6 +388,7 @@ Use SK when you want **portable** orchestration code (run locally, multi-cloud, 
 **Situation.** GitHub Copilot — first announced as a technical preview in June 2021, then GA for individuals in June 2022 and GA for Business in December 2022 (per the GitHub blog) — runs on Azure OpenAI infrastructure as a flagship example of "build a real GenAI app at planetary scale." By 2024 (GitHub Universe 2024 keynote, October 2024), Copilot was used by tens of thousands of organizations and millions of individual developers; GitHub Copilot Workspace and Copilot Chat extended the surface from inline completions to multi-turn coding agents.
 
 **Decision.** Across the 2021–2024 evolution, the engineering decisions map onto every primitive in this module:
+
 - **Model choice** evolved from Codex → GPT-3.5 / GPT-4 → GPT-4o / o-series; each migration was de-risked with Foundry-style **evaluation** runs (large held-out coding datasets, multiple scorers).
 - **Prompt flow** patterns (system message + few-shot + retrieved context + temperature tuning + stop sequences) were locked early; variants are A/B-tested behind feature flags.
 - **Retrieval** for Copilot Chat layered repository file search, organization-level docs, and (in some product variants) web search — exactly the multi-source pattern Foundry's Agent Service codifies.
@@ -412,6 +420,7 @@ Use SK when you want **portable** orchestration code (run locally, multi-cloud, 
 ## ✅ Module 8 Summary
 
 You now know:
+
 - 🏢 Azure AI Foundry — hubs, projects, connections, model catalog
 - 🌊 Prompt flow — visual orchestration with variants
 - 🧪 Evaluation metrics + workflows

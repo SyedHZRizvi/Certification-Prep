@@ -98,12 +98,14 @@ S&OP forecasts at family level (accurate). MPS at SKU (less accurate → safety 
 ## 🏆 Exam Power Phrases
 
 When you see these, often **correct**:
+
 - ✅ "Increase α to make the forecast more responsive"
 - ✅ "Share POS data to reduce bullwhip"
 - ✅ "Forecast at higher aggregation level"
 - ✅ "Use Delphi for new product with no history"
 
 When you see these, often **wrong**:
+
 - ❌ "Set α = 1 for best accuracy"
 - ❌ "Cyclical and seasonal are the same"
 - ❌ "MAPE measures error in units"

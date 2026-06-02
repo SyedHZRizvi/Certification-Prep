@@ -18,6 +18,7 @@
 Anna deployed *PizzaTracker.io* to Azure in a hurry. Month 1 bill: $112. Month 2: $268. Month 3: $1,144. Anna panics.
 
 She digs in. Turns out:
+
 - A developer left a 16-core GPU VM running over the weekend ($340)
 - Logs ballooned to 2 TB in Cool storage that should have been Cold ($90)
 - Egress to a partner API hit $200 (each customer ping was 2 KB × 4M requests)
@@ -93,6 +94,7 @@ Resource has tag: CostCenter=1234 → Cost Management filters by tag → Finance
 ```
 
 Common cost tags:
+
 - `Environment` = prod / staging / dev
 - `CostCenter` = department code
 - `Project` = `pizzatracker-launch`
@@ -151,6 +153,7 @@ When a workload depends on multiple services, the *effective* SLA is the **produ
 
 ### Example
 You have:
+
 - App Service: 99.95% (0.9995)
 - Azure SQL Database: 99.99% (0.9999)
 
@@ -186,6 +189,7 @@ Azure services move through stages:
 🎯 **Exam pattern:** "We want to use a Preview feature in production — what are the implications?" → **No SLA**; not recommended for production.
 
 You can check service availability and roadmaps via:
+
 - **Azure updates page** (public roadmap)
 - **Azure portal → Preview features blade**
 
@@ -200,6 +204,7 @@ Free Azure services (Free Tier, Free Account) do **not** have an SLA. Always che
 ## 🎁 Free Account / Free Services (lightly tested)
 
 The Azure free account includes:
+
 - $200 USD credit for 30 days
 - **12 months free** of selected popular services (e.g., 750 hrs/mo of B1S Linux VM)
 - **Always-free services** (Cosmos DB free tier, Functions consumption plan free executions, App Service F1, etc.)
@@ -251,6 +256,7 @@ The Azure free account includes:
 **Situation.** Microsoft acquired **GitHub** for $7.5 billion in stock in October 2018 (Microsoft press release, 2018-10-26). At acquisition, GitHub was serving roughly **31 million developers**, hosting more than **100 million repositories**, and running its own hybrid infrastructure (some AWS, some bare-metal datacenters, custom MySQL clusters). By 2024, GitHub was at **>100 million developers** with billions of API calls per day — and had become the launch substrate for **GitHub Copilot**, Microsoft's most successful AI product line by paid-seat count. The migration from GitHub's pre-acquisition stack to "GitHub on Azure" plus the Copilot scale-up is the canonical Microsoft case for *cost stewardship at planet scale*.
 
 **Decision.** Microsoft did *not* do a forced lift-and-shift. Nat Friedman (then GitHub CEO) and the GitHub team retained operational autonomy — Microsoft's commitment was "GitHub stays GitHub." But over 2018–2023 the infrastructure quietly migrated to Azure for everything where it made economic sense. Key moves:
+
 - **Compute migration to Azure** — repositories, Actions, Codespaces, Pages, and the Copilot inference fleet moved to Azure (US East/West + EU North/West + Asia regions). Codespaces specifically was built Azure-native from the start (GitHub Blog, 2020-05-06, "Codespaces beta").
 - **Reservations + Savings Plans for the steady-state estate** — GitHub's repository hosting, search index, and Actions worker pool are 24/7 workloads with predictable baselines. 3-year reservations on the appropriate VM SKUs saved an estimated 50–60% on the steady portion of the bill versus pay-as-you-go (Microsoft customer testimony has cited "tens of millions" annualized).
 - **Spot capacity for the elastic portion** — Actions CI/CD runners absorb massive bursty load (commits at peak working hours, deep idle overnight). Where evictability is acceptable, GitHub uses Spot pricing for cost arbitrage.
@@ -259,12 +265,14 @@ The Azure free account includes:
 - **Hybrid Benefit for Windows server workloads** — GitHub's enterprise on-prem connectors and the Windows portion of Actions runners use Azure Hybrid Benefit on the inherited Microsoft licenses (Software Assurance).
 
 **Outcome.** By 2024:
+
 - **GitHub Copilot crossed 1.8 million paid subscribers** (Microsoft FY24 Q4 earnings, 2024-07-30) — the fastest-growing developer-tools product in Microsoft history. The product wouldn't have been economically viable without the Azure cost stack (Reservations + Spot + Hybrid Benefit) under it.
 - GitHub crossed **150 million developers globally** by Universe 2024 (GitHub Universe 2024 keynote, 2024-10-29).
 - Microsoft's own data centers run hundreds of thousands of *internal* developer accounts on GitHub Enterprise — Microsoft itself is GitHub's largest single customer, validating the cost-and-SLA design at the most demanding internal load.
 - Crucially, GitHub's pricing to developers (Free tier, $4/month Pro, $21/month Copilot Pro, enterprise tiers) is *competitive* — which is only possible because the cost engineering on the Azure side is disciplined.
 
 **Lesson for the exam / for practitioners.** Three AZ-900 cost-and-SLA concepts visible end-to-end:
+
 1. **Pricing-model mix is the cost lever, not "discounts."** GitHub uses Pay-As-You-Go (PAYG) for unpredictable spikes, Reservations for steady-state, Spot for evictable workloads, and Hybrid Benefit for license-eligible workloads — all simultaneously. The exam's "which option saves money?" questions assume you understand this is *not* an "either/or" — it's a portfolio.
 2. **Composite SLA discipline at planet scale.** When you stack four Azure services that each have a 99.9–99.99% SLA, the composite is always lower than the worst single component. GitHub publishes Copilot's SLA conservatively because the math doesn't lie. The exam tests this multiplicatively.
 3. **Tags + Cost Management = the *unit economics* answer.** Microsoft would not let GitHub make pricing commitments to developers if it couldn't attribute cost to product-line-and-region. Tags are the AZ-900's exam answer for "how do we chargeback?" — they're also the only way a billion-row, planet-scale product runs profitably.
@@ -281,6 +289,7 @@ GitHub-on-Azure has been used by Satya Nadella and CFO Amy Hood in multiple inve
 ## ✅ Module 5 Summary
 
 You now know:
+
 - 🛠️ Pricing Calculator vs TCO Calculator vs Cost Management
 - 💸 Cost factors (region, egress, SKU, tier, etc.)
 - 💰 Pricing models (PAYG, Reservations, Spot, Savings Plans, Hybrid Benefit, Dev/Test)

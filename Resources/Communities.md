@@ -424,12 +424,14 @@
 ## 🎯 STUDY BUDDIES & ACCOUNTABILITY
 
 ### How to Find a Study Partner:
+
 1. Post in the **cert-specific subreddit** (r/PMP, r/scrum, r/AWSCertifications, r/AZURE, r/CompTIA, r/supplychain, r/PPC, r/digital_marketing, r/Bitcoin, r/ecommerce): "Looking for [cert] study buddy, [your timezone], [your goal exam date]"
 2. LinkedIn: similar post in cert-family groups
 3. Coworker: anyone else aiming for the same cert?
 4. Discord: dedicated study channels
 
 ### Why Study Buddies Work:
+
 - 🎯 **Accountability** — you're less likely to skip study days
 - 💡 **Different perspectives** — they explain concepts you missed
 - 🔥 **Motivation** — when one passes, the other gets fired up
@@ -440,6 +442,7 @@
 ## 🆘 WHEN STUCK
 
 ### Where to ask questions:
+
 1. **Reddit** — quick, often helpful (specific questions). Use the most-specific subreddit (r/PMP, r/AWSCertifications, r/AZURE, r/CompTIA, r/supplychain, r/PPC, r/Bitcoin, r/ecommerce).
 2. **LinkedIn DMs** to creators (Andrew Ramdayal, Stephane Maarek, John Savill, Professor Messer, Neil Patel, Andreas Antonopoulos — some respond!)
 3. **Stack Exchange / Stack Overflow** — for technical / coding questions (AWS, Azure, AI, Security, Bitcoin via [bitcoin.stackexchange.com](https://bitcoin.stackexchange.com/))
@@ -452,6 +455,7 @@
 10. **Bitcoin StackExchange** — for protocol-level Bitcoin / Lightning questions
 
 ### How to ask great questions:
+
 - Provide context (what you've tried, what you understand)
 - Be specific (not "I don't get EVM" but "Why is EAC = BAC/CPI in this scenario?")
 - Show your work
@@ -462,6 +466,7 @@
 ## 🏆 AFTER YOU PASS
 
 ### Pay it forward:
+
 - 💬 Share your "I passed!" post in communities (motivates others!)
 - 🎓 Mentor study buddies
 - 📝 Write a short blog/LinkedIn post about your journey
@@ -472,6 +477,7 @@
 ## ⚠️ BEWARE OF SCAMS
 
 ### Don't fall for:
+
 - ❌ "Brain dumps" — actual exam questions sold illegally (PMI bans you for life)
 - ❌ "Guaranteed pass" services — they don't exist
 - ❌ Paid mentors charging $1000+ — Andrew Ramdayal's $20 course is fine for 99%

@@ -353,6 +353,7 @@ chmod 755 script.sh
 ## ✅ Module 7 Summary
 
 You now know:
+
 - 🪟 Windows editions, install types, and the UEFI/Secure Boot/TPM 2.0 stack required for Win 11
 - 📁 File systems by OS: NTFS, exFAT, FAT32, APFS, ext4
 - 🍎 macOS basics: APFS, FileVault, Recovery, brew, zsh

@@ -199,6 +199,7 @@ Not really "multi-agent" but worth mentioning: a single agent with a curated too
 Every agent system needs an answer to: *when do we stop?*
 
 Common stop conditions:
+
 - **Max iterations** (hard cap on agent loop count) — the most important defense against infinite loops
 - **Budget cap** ($1, $5, $20 per task) — defense against runaway cost
 - **Goal-completion signal** (agent emits a `DONE` token or empty tool list)
@@ -229,6 +230,7 @@ MCP (Module 4) handles agent-to-tool. Agent-to-agent is rougher — no universal
 ### Computer Use & Browser Automation
 
 Anthropic Computer Use, OpenAI's o1-with-browser, Microsoft's UFO project — all give an agent direct control of a screen. Best paired with:
+
 - Sandboxed VMs (never on production hosts)
 - Action-level rate limiting + human approval for "destructive" actions
 - Full screen-recording for audit
@@ -259,6 +261,7 @@ Goal: build two flavors of the same task — "given a topic, produce a 1,000-wor
 2. **LangGraph implementation:** supervisor agent + same four worker agents as graph nodes. Conditional edges: supervisor routes to the next agent or to END. Add a "needs more research" loop.
 
 Then:
+
 3. Measure cost, latency, quality on 10 topics.
 4. Add observability via LangSmith (both can be traced).
 5. Write a 1-page reflection: when is each architecture worth it?
@@ -291,6 +294,7 @@ Then:
 ## ✅ Module 6 Summary
 
 You now know:
+
 - 🚦 When multi-agent is actually right (and the much more common "use one agent" path)
 - 🧱 The major frameworks: LangGraph, CrewAI, AutoGen, OpenAI Agents SDK, Computer Use
 - 🤝 Communication patterns: supervisor, hierarchical, sequential, debate, voting, reflection

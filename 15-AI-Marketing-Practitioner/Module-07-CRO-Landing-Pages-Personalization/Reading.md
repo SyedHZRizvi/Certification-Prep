@@ -11,6 +11,7 @@ In 2019, Airbnb's experimentation team (publicly discussed at the [O'Reilly Stra
 The hypothesis: the listing photos were too small. Maybe users couldn't see enough to choose.
 
 The test (Bayesian A/B test, 50/50 traffic split, 21 days):
+
 - **Control**: existing search results with small thumbnails
 - **Treatment**: larger photos, more padding, taller cards
 
@@ -46,6 +47,7 @@ This cycle is the foundation. Skip a step and you're guessing.
 Most CRO programs fail because the marketer guesses at what's broken. "Our hero image looks bad. Let's test a new one." That's a hypothesis without observation.
 
 Right approach:
+
 1. Watch 10 Hotjar session replays of users who didn't convert
 2. Look at the heatmap — where do they click? Where do they stop scrolling?
 3. Check analytics — what's the bounce rate on each section?
@@ -223,6 +225,7 @@ Tools that show you what users actually do on your site.
 ### Hotjar (free tier; paid from $32/mo)
 
 The default for most SMB / DTC. Three core features:
+
 - **Heatmaps**: where users click, move, and scroll
 - **Session Replays**: watch real user sessions (anonymized) frame-by-frame
 - **Surveys**: pop-up surveys triggered on specific pages/actions
@@ -234,6 +237,7 @@ Launched by Microsoft in 2020. Same features as Hotjar's core, but free with unl
 ### Why You Need Them (Not Negotiable)
 
 Without watching real users:
+
 - You think your form has 5 fields. Users see it as 7 (you forgot the dropdowns).
 - You think the headline is clear. Users skip it entirely (they scroll past in 1 second).
 - You think the price page is straightforward. Users scroll up and down 3 times looking for one feature.
@@ -257,6 +261,7 @@ Day 6:   Synthesize observations. Write 3-5 specific hypotheses.
 ```
 
 Common findings from this exercise:
+
 - Hero CTA below the fold (scroll heatmap shows 40% never see it)
 - Mobile users zoom in repeatedly on testimonial photos (testimonials too small)
 - Form has 7 fields when 4 would suffice
@@ -310,6 +315,7 @@ Day 16+: Set up next test.
 Booking.com is famously the largest experimentation organization in tech — running 1,000+ A/B tests simultaneously at any given moment, across product, search, pricing, and email (publicly discussed by their head of experimentation Stuart Frisby on the [Reforge podcast 2023](https://www.reforge.com/) and in academic papers from their data science team).
 
 What they've publicly shared:
+
 - ~10% of tests show meaningful positive results
 - ~70% are neutral
 - ~20% are NEGATIVE (you'd have hurt the business without testing)
@@ -343,6 +349,7 @@ The lesson: most ideas don't work. The discipline of testing is what compounds �
 ## ✅ Module 7 Summary
 
 You now know:
+
 - 🔬 The 4-stage CRO cycle (Observe → Hypothesize → Test → Iterate)
 - 📊 Bayesian vs Frequentist testing (and when to use each)
 - 🧮 Sample size math + Evan Miller's calculator

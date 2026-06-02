@@ -183,6 +183,7 @@ Coined by photographer-turned-author Peter Krogh in *The DAM Book* (2005), the *
 | **Grandfather** | Monthly | One per month for the year |
 
 With one set per role, a 12-month GFS rotation needs ~22 tapes:
+
 - 4 daily Son tapes (Mon–Thu)
 - 5 weekly Father tapes (Fri end-of-week)
 - 12 monthly Grandfather tapes (last Friday of each month)
@@ -191,6 +192,7 @@ With one set per role, a 12-month GFS rotation needs ~22 tapes:
 Gives ~13 months of recoverable history without storing every single daily forever.
 
 Modern variants:
+
 - **GFS + cloud archive** — Sons/Fathers on disk for fast restore; Grandfathers to cloud cold storage (S3 Glacier, Azure Archive)
 - **Retention-policy-based** — backup software handles "retain dailies for 30 days, weeklies for 12 weeks, monthlies for 12 months" automatically
 
@@ -441,6 +443,7 @@ This is the scenario Server+ tests when asking "how do you protect backups from 
 ## ✅ Module 5 Summary
 
 You now know:
+
 - 🎯 **RTO and RPO** — definitions, how to read scenarios, how each drives architecture
 - 💼 **BIA** terms: MTD, WRT, MTBF, MTTR
 - 📼 The **four backup types**: full, incremental, differential, synthetic full — and the size/time/restore tradeoffs of each

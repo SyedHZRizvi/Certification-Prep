@@ -319,6 +319,7 @@ The correct sequence:
 ## ✅ Module 2 Summary
 
 You now know:
+
 - 💿 The six modern Windows deployment modes and when to pick each
 - 🪪 The full Autopilot flow — registration → profile → ESP → completion
 - 🏷️ Every Autopilot profile setting and the default for cloud-only deployment

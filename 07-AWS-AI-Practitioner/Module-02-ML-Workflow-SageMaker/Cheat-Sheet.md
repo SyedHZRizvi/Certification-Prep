@@ -95,6 +95,7 @@
 ## 🏆 Exam Power Phrases
 
 Usually right:
+
 - ✅ "Pre-built AI service" when the task matches one cleanly (Comprehend for sentiment, Textract for forms, Polly for TTS, etc.)
 - ✅ "Batch transform" for one-off bulk scoring
 - ✅ "Asynchronous" for big payloads
@@ -104,6 +105,7 @@ Usually right:
 - ✅ "Private workforce in Ground Truth" for confidential data
 
 Usually wrong:
+
 - ❌ "Build a custom model in SageMaker" when a managed AI service already does it
 - ❌ "Real-time endpoint" for overnight batch jobs
 - ❌ "Mechanical Turk" for sensitive data

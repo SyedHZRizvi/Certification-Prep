@@ -94,6 +94,7 @@ Need private data?  → YES → RAG
 ## 🏆 Exam Power Phrases
 
 Usually right:
+
 - ✅ "**RAG** for use-my-docs scenarios"
 - ✅ "**Fine-tuning** for specific tone / format"
 - ✅ "**Provisioned Throughput** to invoke custom Bedrock models"
@@ -102,6 +103,7 @@ Usually right:
 - ✅ "**Bedrock Batch** for offline cost savings"
 
 Usually wrong:
+
 - ❌ "Fine-tune to add the new pricing catalog" (use RAG)
 - ❌ "BLEU is for summarization"
 - ❌ "Higher perplexity is better"

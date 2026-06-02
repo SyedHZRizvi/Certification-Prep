@@ -113,6 +113,7 @@ A productized service is only profitable if AI gives you meaningful leverage. Th
 | **Total** | **26.5 hr** | **8.75 hr** | **~3x overall** |
 
 At $1,750 per audit, that's:
+
 - Before AI: $66/hr "effective" rate
 - With AI: $200/hr effective rate
 
@@ -156,6 +157,7 @@ This sentence goes on the sales page. It is your contract.
 ### Component 3 — The process (steps)
 
 Each step should specify:
+
 - Who does it (you, AI, contractor)
 - What tools are used
 - What the output is
@@ -164,6 +166,7 @@ Each step should specify:
 ### Component 4 — The intake form
 
 A 5–10 question form that collects everything you need *before* you start. Examples:
+
 - Google Ads account ID and admin access
 - Current monthly spend
 - Top 3 conversion actions
@@ -250,6 +253,7 @@ An SLA is the explicit contract about timing, quality, and remedies. For product
 ### Case study 1 — Designjoy ($1.5M ARR, 1 person)
 
 Brett Williams's now-famous productized design subscription:
+
 - **Promise:** "Unlimited design requests. One at a time. $4,995/month. Pause anytime."
 - **Scope:** Brand, web, ad creative, social. Same submission system (Trello). Same reply window (1–2 business days).
 - **AI leverage:** Williams uses Figma + Midjourney + AI tools to draft and iterate, then refines.
@@ -267,6 +271,7 @@ Lesson: **Audit-as-wedge is a proven pattern. Sell the cheap thing; the relation
 ### Case study 3 — Carry the Load (B2B content subscription)
 
 A small B2B content agency (public case study on Indie Hackers, ~$640K ARR, 3-person team) productized a content subscription at $4,800/month: 8 blog posts + 30 social posts + 4 newsletters per month, AI-drafted and human-edited. Their process:
+
 1. Quarterly content strategy intake.
 2. Monthly content calendar approved by client.
 3. Weekly batches drafted by AI, edited by team.
@@ -280,6 +285,7 @@ Lesson: **Subscription content is productizable IF the cadence is fixed, the for
 ### Case study 4 — Ghost Productions (LinkedIn ghostwriting, public)
 
 A solo ghostwriter (Justin Welsh wrote about a similar operator publicly) charging $4,000/month for a LinkedIn subscription: 4 posts/week + 1 monthly newsletter, ghostwritten end-to-end. Workflow:
+
 1. 60-min monthly "voice capture" call with client.
 2. AI drafts based on transcript + brand-voice memo.
 3. Weekly batch sent for approval Friday.
@@ -336,6 +342,7 @@ Once you have your "calculated" price, **try selling it at 3x.** Most productize
 Year 1: 1 SKU. Year 2: 2 SKUs. Year 3: 3 SKUs. Beyond that, you don't need more SKUs — you need to deliver them better.
 
 Hannah's catalog by Year 3:
+
 1. The Google Ads Tear-Down — £1,750
 2. The Performance Max Tear-Down — £2,250
 3. The Google Ads Management Subscription — £4,500/mo
@@ -381,6 +388,7 @@ That's it. Three SKUs. £490K → £820K → £1.1M revenue arc.
 ## ✅ Module 2 Summary
 
 You now know:
+
 - 📦 The 5 Fixed Anchors of a productized service
 - 📚 A catalog of real productized services with 2026 pricing
 - 🤖 How to find the AI-leverage zones in your delivery (target 5x+)

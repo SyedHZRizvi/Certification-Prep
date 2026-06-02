@@ -900,6 +900,7 @@ D. Azure adds RBAC, private networking, region pinning, content filters, residen
 ## 🔍 Review Process
 
 For EACH wrong answer:
+
 1. Map the question to a module (see Module table below)
 2. Re-read that module's Reading.md
 3. Add an Anki flashcard for the concept

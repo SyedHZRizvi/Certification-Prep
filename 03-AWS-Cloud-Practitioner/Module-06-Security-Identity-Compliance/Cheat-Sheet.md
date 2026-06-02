@@ -39,6 +39,7 @@
 | **Policy** | JSON Allow/Deny rules |
 
 Rules:
+
 - **Explicit Deny > Allow** (always)
 - **Implicit deny** by default
 - IAM is **global** (not regional)

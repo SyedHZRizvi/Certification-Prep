@@ -21,11 +21,13 @@ Imagine Microsoft as a giant property developer. They've built a global empire o
 - A **Datacenter** is a single floor within one building.
 
 Now imagine **you**, the customer. You don't rent floors or buildings. You rent **furnished apartments** (Azure resources). But you do choose:
+
 - *Which city* (region) you live in (latency, sovereignty)
 - *Which building* (AZ) you live in (resilience)
 - *How many apartments* you rent (HA — one per AZ = good)
 
 And to keep your apartments organized:
+
 - You bundle the bedroom, kitchen, and bathroom into a "1-bedroom apartment" → that's a **Resource Group**
 - You group your apartments under your name → that's a **Subscription**
 - Your company has many people, each with subscriptions → bundled under a **Management Group**
@@ -61,6 +63,7 @@ The whole hierarchy: **Management Group → Subscription → Resource Group → 
 Azure currently has **60+ regions** in **140+ countries** — by far the largest cloud footprint.
 
 ### Two kinds of zone deployment patterns:
+
 - **Zonal** — your VM is *pinned* to a specific AZ (e.g., AZ-1)
 - **Zone-redundant** — Azure spreads the service across all 3 AZs automatically (e.g., zone-redundant storage, zone-redundant SQL DB)
 
@@ -239,6 +242,7 @@ When choosing a region for deployment, consider:
 **Situation.** H&R Block has prepared U.S. tax returns since 1955 and files roughly **20+ million returns per year** in a brutally seasonal pattern — over half of annual volume hits in a four-week window between February and April. By 2023, the company was losing share to TurboTax (Intuit) in the DIY-software segment. CEO Jeff Jones bet that generative AI could differentiate the product: if a customer could literally *ask the software a tax question* and get a cited, accurate, audit-defensible answer, that would shift the value proposition from "form filler" to "AI tax expert in your pocket." H&R Block went public with this strategy at **Microsoft Build 2024** (Microsoft Build 2024 keynote, 2024-05-21; H&R Block press release, 2024-01-25, "AI Tax Assist").
 
 **Decision.** H&R Block partnered with Microsoft to ship **AI Tax Assist** for the 2023 tax year filing season (Jan–Apr 2024), built on:
+
 - **Azure OpenAI Service** for the LLM layer (GPT-4 + GPT-4 Turbo behind a private endpoint)
 - A **private Azure region** (US East + paired West) so no taxpayer PII ever left Microsoft's enterprise boundary — directly addressing the Cloud Adoption Framework's "regulated data" pattern
 - **Retrieval-Augmented Generation (RAG)** over H&R Block's proprietary corpus of IRS publications, state-by-state tax law, and 70 years of internal tax-prep playbooks — so the model's answers were grounded in the same source material a tax pro would cite
@@ -248,6 +252,7 @@ When choosing a region for deployment, consider:
 **Outcome.** AI Tax Assist was used by **millions** of H&R Block customers in its first season (H&R Block FY2024 Q4 earnings call, 2024-08-20). The company's online-channel revenue grew double-digit percent year-over-year — its strongest DIY season in a decade. H&R Block's stock (NYSE: HRB) gained roughly 35% across 2024. Internally, the company reported that without Azure's elastic capacity model the launch would have required either (a) building out a sized-for-peak GPU cluster that would sit 95% idle nine months a year, or (b) accepting visible degradation at peak filing weeks — both unacceptable.
 
 **Lesson for the exam / for practitioners.** This case is exam catnip across three Azure architecture concepts:
+
 1. **Regions + region pairs as a regulated-data unit.** H&R Block needed *both* high availability and U.S. data residency. Two paired regions in the same U.S. geography is the canonical AZ-900 answer for "GDPR/PII-residency + DR" and Cloud Adoption Framework §"Govern" calls this out explicitly.
 2. **Management groups as the compliance audit trail.** When the IRS audits an H&R Block AI session, the company can prove (via Policy + Activity Log inheritance from the management-group level) that no data ever touched a non-approved region. This is RBAC + Policy at the *management-group* scope — Module 4's payload.
 3. **The seasonality argument for cloud.** 400× peak-to-trough variance is the canonical "you cannot build this on-prem" math problem. Anna's pizza shop scaled 50× in Module 1; H&R Block scaled 400× at *Fortune 500* volumes. Same lesson, four orders of magnitude up.
@@ -264,6 +269,7 @@ H&R Block's CIO has cited the Microsoft Cloud Adoption Framework whitepaper's "A
 ## ✅ Module 2 Summary
 
 You now know:
+
 - 🌎 The 4-layer physical hierarchy: Geography → Region → AZ → Datacenter
 - 👯 What region pairs are and why GRS storage uses them
 - 🛡️ What sovereign clouds are (Gov, China)

@@ -103,6 +103,7 @@ By the end of this track, you'll be able to:
 🔗 **[AWS MLS-C01 Exam Guide (official PDF)](https://d1.awsstatic.com/training-and-certification/docs-ml/AWS-Certified-Machine-Learning-Specialty_Exam-Guide.pdf)** — 17 pages. Read it twice. The blueprint lists every domain, every objective, and every in-scope service. If our content contradicts the official guide, the official guide wins.
 
 Also pin these:
+
 - 🔗 **[Amazon SageMaker Developer Guide](https://docs.aws.amazon.com/sagemaker/)** — the definitive reference for every SageMaker feature
 - 🔗 **[Amazon Bedrock User Guide](https://docs.aws.amazon.com/bedrock/)** — Bedrock, Knowledge Bases, Agents, Guardrails
 - 🔗 **[AWS ML Lens (Well-Architected)](https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/machine-learning-lens.html)** — Well-Architected, applied to ML workloads
@@ -196,6 +197,7 @@ Week 5: Flashcards + Final Mock + REAL EXAM
 🔗 **[Recommended Readings — full bibliography](./Recommended-Readings.md)** — 65+ curated sources: canonical textbooks (Goodfellow's *Deep Learning*, Géron's *Hands-On ML*, Bishop's PRML, Kleppmann's *DDIA*, Huyen's *Designing ML Systems*, Burkov's *MLE*), seminal academic papers (Rosenblatt 1958, Backprop, LeNet, ResNet, Transformer, BERT, GPT-3, Diffusion, XGBoost, SHAP, RAG), the AWS Builders' Library essays (Brooker, Weiss, Cockcroft), re:Invent talks 2018–2024, industry blogs (Netflix, Pinterest, Stripe, Capital One, JPMorgan), and 10 free academic courses (Andrew Ng, Stanford CS229/CS231n/CS224n, MIT 6.S191, fast.ai, Hugging Face). Sequenced by where in the course to engage with each.
 
 Short top-5 if you want to read only five things:
+
 - 📖 AWS MLS-C01 Exam Guide (PDF, 17 pages) — the blueprint
 - 📖 **Géron, Aurélien (2022).** *Hands-On Machine Learning with Scikit-Learn, Keras & TensorFlow* (3rd ed.). O'Reilly
 - 📖 **Goodfellow, Bengio, Courville (2016).** *Deep Learning.* MIT Press — Chapters 5, 6, 9, 10, 12
@@ -203,6 +205,7 @@ Short top-5 if you want to read only five things:
 - 📖 **AWS Well-Architected Machine Learning Lens** — AWS's own ML best-practice document
 
 **re:Invent talks** (always free on YouTube — search via the Videos.md cards in each module):
+
 - 🎤 AIM303 — *How to choose the right SageMaker built-in algorithm* (Module 4)
 - 🎤 AIM402 — *Distributed training at scale on SageMaker* (Module 5)
 - 🎤 AIM319 — *Capital One Real-Time Fraud Detection on SageMaker* (Modules 4, 9)

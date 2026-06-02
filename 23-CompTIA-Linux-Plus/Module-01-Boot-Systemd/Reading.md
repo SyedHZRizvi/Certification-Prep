@@ -79,6 +79,7 @@ A modern Linux boot has six distinct stages. **MEMORIZE THIS.** Almost every boo
   - Debian family: `update-grub` (a wrapper around `grub-mkconfig -o /boot/grub/grub.cfg`)
 
 **The interactive menu** (press any key during boot to see it):
+
 - `e` to edit the kernel line — add boot parameters for one-shot recovery
 - `c` to drop to a GRUB shell
 - `Ctrl-X` (or `F10`) to boot the edited entry
@@ -114,6 +115,7 @@ systemd is now in charge. It reads unit files, builds a dependency graph, and st
 ### Stage 6 — default.target
 
 The "where do we end up" target. Almost always one of:
+
 - `multi-user.target` — text-mode multi-user system (servers, CLI workstations)
 - `graphical.target` — multi-user + GUI display manager (desktops, workstations)
 
@@ -356,6 +358,7 @@ This is the exact shape of a typical PBQ — a half-correct unit file with a sub
 ## ✅ Module 1 Summary
 
 You now know:
+
 - 🚀 The 6-stage **boot chain** end to end: firmware → bootloader → kernel + initramfs → root pivot → systemd → default target
 - 🎛️ **BIOS vs UEFI**, MBR vs GPT, and where the bootloader lives on each
 - 📜 How **GRUB2** is configured (`/etc/default/grub`) and rebuilt (`grub2-mkconfig` / `update-grub`)

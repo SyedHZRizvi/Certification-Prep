@@ -53,6 +53,7 @@
 - Integrates with **WAF, Shield, Lambda@Edge**
 
 CloudFront vs Global Accelerator:
+
 - **CloudFront** = caches HTTP content
 - **Global Accelerator** = anycast IPs + AWS backbone, any TCP/UDP
 

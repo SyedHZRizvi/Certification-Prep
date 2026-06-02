@@ -256,6 +256,7 @@ A distributed, append-only ledger of hashed blocks. Each block contains the hash
 2. The chain ends at "Example Internal CA," which is a **self-signed root** — not in any public trust store and not in the user's local trust store.
 3. The browser cannot walk the chain to a trusted root, so it refuses.
 4. **Fixes** (in order of cleanliness):
+
    - **Best:** Replace the server cert with one issued by a publicly trusted CA (Let's Encrypt, DigiCert, etc.). The chain now ends at a root already in the trust store.
    - **Acceptable for internal-only sites:** Push "Example Internal CA"'s public certificate into every endpoint's trust store via GPO/MDM. The chain now resolves.
    - **Wrong:** Tell users to "click through" the warning. That's a long-term security debt.
@@ -340,6 +341,7 @@ PBQ might show you 4 certs and ask "drag them in order Root → Intermediate →
 **Outcome.** Two-thirds of all HTTPS servers globally were vulnerable. Within 48 hours, attackers had scraped private keys from Yahoo, OkCupid, the Canada Revenue Agency (CRA tax filings during the 2014 tax season), Mumsnet, and thousands of Cisco and Juniper devices. The CRA breach exposed 900 social-insurance numbers; one teenager was charged in connection (RCMP, 16 April 2014). The estimated *global* remediation cost (cert revocations, key rotations, password resets, audits) ran into the **billions of dollars**. The Linux Foundation responded by launching the **Core Infrastructure Initiative** (CII) in late 2014 with Amazon, Cisco, Dell, Facebook, Fujitsu, Google, IBM, Intel, Microsoft, NetApp, Qualcomm, RackSpace, and VMware funding OpenSSL maintainers and other critical open-source projects — the seed of what later became the **OpenSSF** (Open Source Security Foundation, 2020).
 
 **Lesson for the exam / for practitioners.** Heartbleed maps onto multiple Sec+ concepts simultaneously:
+
 - **Trust in PKI is not just trust in the math.** RSA-2048 was mathematically sound. The *implementation* leaked the private key. The exam tests this distinction: when a question contrasts "algorithm strength" vs "implementation security," remember Heartbleed.
 - **Certificate revocation is load-bearing.** Every site running vulnerable OpenSSL had to **revoke** its TLS certificate and re-issue. The April-May 2014 spike in CRL/OCSP traffic was so large it briefly broke several CAs. This is why the exam asks about CRL, OCSP, and OCSP stapling.
 - **PFS is the mitigation.** Sites using **ephemeral key exchange** (DHE/ECDHE — true Perfect Forward Secrecy) had session-specific keys; the long-term RSA private key leaked, but past TLS sessions could not be retroactively decrypted. Sites using static RSA key transport were fully retro-compromised. After Heartbleed, ECDHE became the de-facto standard for TLS 1.2 and was *mandated* in TLS 1.3 (RFC 8446, August 2018) — directly because of this incident.
@@ -355,6 +357,7 @@ PBQ might show you 4 certs and ask "drag them in order Root → Intermediate →
 ## ✅ Module 2 Summary
 
 You now know:
+
 - 🔢 **Symmetric** (AES is the answer) vs **Asymmetric** (RSA/ECC) and why we combine them
 - 🔑 **Key exchange** (DHE/ECDHE) and what **Perfect Forward Secrecy** buys you
 - 🧬 **Hashing** for integrity + the password-hashing trio (salt, pepper, key stretching)

@@ -20,6 +20,7 @@ depmod -a                        # rebuild dep DB
 ```
 
 Module paths:
+
 - `/lib/modules/$(uname -r)/` — module files
 - `/etc/modprobe.d/*.conf` — admin config (blacklist, options)
 - `/etc/modules-load.d/*.conf` — auto-load at boot
@@ -32,6 +33,7 @@ options nouveau modeset=0
 ```
 
 🚨 After blacklisting a boot-path module, rebuild initramfs:
+
 - RHEL: `dracut -f`
 - Debian: `update-initramfs -u`
 
@@ -209,6 +211,7 @@ lsblk -f
 ## 🏆 Exam Power Phrases
 
 When you see these in answers, they're often **right**:
+
 - ✅ "Rebuild initramfs after changing boot-path modules"
 - ✅ "Use `udevadm trigger` to re-emit uevents"
 - ✅ "`lvextend -r` extends LV AND filesystem"
@@ -216,6 +219,7 @@ When you see these in answers, they're often **right**:
 - ✅ "`lspci -k` shows kernel driver bound"
 
 When you see these, they're often **wrong**:
+
 - ❌ "`insmod` resolves dependencies"
 - ❌ "Blacklist immediately unloads the module"
 - ❌ "XFS can shrink online"
@@ -241,6 +245,7 @@ When you see these, they're often **wrong**:
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. Where are modules for the running kernel? ___
 2. Three commands for: load module, list loaded, blacklist persistently? ___
 3. Order of LVM layers, bottom up? ___

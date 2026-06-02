@@ -136,6 +136,7 @@ Merchant query
 ## 🎯 Power Phrases
 
 ✅ Often **right**:
+
 - "Conversational Agents = formerly Dialogflow CX"
 - "Function calling = native Gemini tool use"
 - "ADK = open-source agent SDK; multi-step + multi-agent"
@@ -146,6 +147,7 @@ Merchant query
 - "60-tool surface → reduce or split via hierarchical agents"
 
 ❌ Often **wrong**:
+
 - "Conversational Agents = Dialogflow ES" (it's CX-derived)
 - "Function calling = JSON mode" (different)
 - "ADK is closed-source" (it's open)

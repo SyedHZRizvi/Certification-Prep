@@ -462,6 +462,7 @@ This is a real architecture — many companies have built variants.
 ## ✅ Module 6 Summary
 
 You now know:
+
 - 🪜 **The workflow-vs-agent spectrum** and when each fits
 - 🏗️ **The five canonical workflow patterns** (chaining, routing, parallelization, orchestrator-workers, evaluator-optimizer)
 - 🤖 **The ReAct agent loop** in 25 lines of pseudocode

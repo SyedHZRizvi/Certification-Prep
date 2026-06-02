@@ -13,6 +13,7 @@ By the end of 2023, Temu was the most-downloaded shopping app in the United Stat
 The economics: Temu was clearly losing money per order (negative contribution margin at the unit level). The bet: Chinese-supply-chain unit economics would, over 24-36 months, allow the brand to compress costs, retain customers, and eventually approach profitability. By Q4 2024, Temu's monthly active users in the US exceeded Amazon Mobile App in some demographics, but profitability remained elusive and regulatory pressure mounted (EU's classification of Shein/Temu as VLOPs under the Digital Services Act, France's "fast-fashion law" in 2024).
 
 The lesson is two-fold:
+
 1. **Paid acquisition is the largest line in most DTC P&Ls.** A $50M brand often spends $15-22M/year on paid media — bigger than salaries, bigger than fulfillment, bigger than COGS for some.
 2. **CAC is a strategic weapon.** Temu/Shein bid up the auction; non-Chinese-supply-chain brands had to defend. Every brand competing for the same customers had their CAC inflate 15-30% in 2023-2024 because Temu was willing to lose money on each customer.
 
@@ -34,6 +35,7 @@ Google Shopping ads are product-listing ads that surface in Google Search, YouTu
 ### Google Merchant Center (GMC)
 
 GMC is the product-feed home. Your catalog uploads here (manually, via API, or — for Shopify Plus — via the native Google channel). GMC then feeds:
+
 - **Google Shopping Ads** (paid CPC product listings)
 - **Surfaces Across Google** (free organic Shopping listings)
 - **Buy on Google** (deprecated 2023; ignore)
@@ -105,6 +107,7 @@ Meta launched Advantage+ Shopping Campaigns in late 2022. By 2024, ASC was the d
 On April 26, 2021, Apple launched App Tracking Transparency in iOS 14.5. Apps had to explicitly ask users for permission to track them across other apps and websites. The opt-in rate was ~25-30% globally; the opt-OUT rate was ~70-75%.
 
 Meta's revenue was disproportionately affected. Meta's CFO said in early 2022 that ATT would cost the company $10B in 2022 revenue. By 2024, Meta had largely adapted via:
+
 - **CAPI (Conversions API)** — server-side event sharing, complementing the deprecated Pixel.
 - **AEM (Aggregated Event Measurement)** — Meta's framework for measuring conversion events under iOS 14.5+. Max 8 events per verified domain, ranked by priority.
 - **SKAdNetwork 4** — Apple's framework for app install attribution; less relevant for web e-commerce.
@@ -114,6 +117,7 @@ Meta's revenue was disproportionately affected. Meta's CFO said in early 2022 th
 ### CAPI Implementation
 
 Conversions API sends events server-side from your store to Meta. Three implementation paths:
+
 - **Native integration** — Shopify CAPI (free, official, since 2022). BigCommerce CAPI similar.
 - **Tag-managed** — Google Tag Manager + Meta CAPI Gateway (medium complexity).
 - **Server-to-server custom** — Most flexible; needs engineering.
@@ -165,6 +169,7 @@ TikTok Shop launched US in September 2023 and grew rapidly through 2024. By end 
 - **Standard Bidding** — Manual ROAS or CPA targets.
 
 **Creator-led commerce** is the TikTok differentiator. The 2024 industry pattern:
+
 - Brand creates a product page on TikTok Shop.
 - Brand partners with 10-50 creators per product.
 - Creators make 15-60 second videos featuring the product.
@@ -186,12 +191,14 @@ Meta (Facebook) immediately recognized this as a fundamental threat to its adver
 **Decision.** Apple shipped iOS 14.5 with ATT on April 26, 2021. Global opt-in rates settled around 25-30% — meaning 70-75% of iOS users opted out of cross-app tracking. The Meta Pixel (a JavaScript snippet on advertiser websites that fires on conversion events) stopped receiving signal for these users.
 
 Meta's response unfolded over 2021-2024:
+
 1. **CAPI (Conversions API)** — server-side event sharing. Each Pixel event also gets sent server-side from the advertiser's backend. Bypassed the IDFA-block.
 2. **AEM (Aggregated Event Measurement)** — Meta's framework for measuring conversion events under iOS 14.5+. Advertisers verify domain ownership and rank top 8 conversion events. For opted-out users, only the priority event is tracked.
 3. **Privacy-Enhancing Technologies (PETs)** — differential privacy, on-device machine learning, federated learning.
 4. **Advantage+ Shopping Campaigns** — the AI-driven campaign type that compensated for lost individual targeting via stronger algorithmic learning.
 
 E-commerce advertisers had to:
+
 - Wire CAPI alongside Pixel by mid-2021 (Shopify and BigCommerce shipped native CAPI integrations in 2021-2022).
 - Verify their domain in Meta Business Manager and rank 8 priority events.
 - Accept ~30-40% reduction in observable Meta ROAS during 2021-2022.
@@ -200,6 +207,7 @@ E-commerce advertisers had to:
 **Outcome.** Meta's 2022 revenue was $116.6B (flat to slightly down from 2021's $117.9B — the first revenue decline in company history). The stock fell 65% from peak in 2021 to trough in late 2022. By 2024, Meta's revenue had recovered to $164.5B (up 21% YoY in Q1 2024), driven by Advantage+ Shopping Campaigns, Reels monetization, and AI-driven Reels ranking. E-commerce advertisers who survived 2021-2022 with CAPI + AEM + ASC saw competitive ROAS by 2024.
 
 The downstream impact:
+
 - Apple's revenue from Search Ads (its own ad business) reportedly tripled 2021-2024 from $4B to $12B annualized.
 - Google's ad business benefited from the migration of Meta-frustrated advertisers.
 - E-commerce CAC rose 18-25% industry-wide between 2020 and 2023.
@@ -250,6 +258,7 @@ In 2024-2026, AI-generated creative is the operating norm at well-run DTC brands
 | Workflow | Make.com / n8n |
 
 The 2024 DTC pattern:
+
 - Brand defines hooks (3-5 second openings) via Claude prompts.
 - Midjourney generates 50+ image variants per concept.
 - Runway / Pika converts winners to 15-second video.
@@ -317,6 +326,7 @@ $0.40 actual profit per $1 spent (before other costs)
 ## ✅ Module 7 Summary
 
 You now know:
+
 - 🛒 Google Shopping + GMC + Performance Max
 - 📱 Meta Advantage+ Shopping (ASC) + ECB cap
 - 🔄 Post-iOS 14.5 measurement (CAPI, AEM, Events API)

@@ -21,6 +21,7 @@ Lucia runs "Volumes & Vintage", a beautiful indie bookstore. One day a pipe burs
 - **Pre-move blueprint**: when she eventually buys a bigger store, she has a scanned floor plan and an inventory map of every shelf to help movers reproduce the layout exactly. **(Azure Migrate — discovery, assessment, dependency map, then replication.)**
 
 These three solve **different** problems:
+
 - **Backup** = oops, I deleted a file / ransomware. Restore from yesterday.
 - **Site Recovery** = whole region is down. Failover to another region.
 - **Migrate** = move from on-prem (or another cloud) to Azure.
@@ -69,6 +70,7 @@ az backup vault backup-properties set \
 | **Azure Blob Storage** | Operational + vaulted backups | Container/blob |
 
 Two "modes" of vault for blob:
+
 - **Operational** — short-term, lives in the source account
 - **Vaulted** — long-term, in the RSV; immutable
 
@@ -77,6 +79,7 @@ Two "modes" of vault for blob:
 ## ⏰ Backup Policies
 
 Per-workload, define:
+
 - **Frequency** (Daily / Weekly / Hourly for some workloads)
 - **Time** + **Time zone**
 - **Retention** — daily/weekly/monthly/yearly retention points (GFS — Grandfather/Father/Son)
@@ -165,6 +168,7 @@ az site-recovery replication-protected-item create \
 ## 🚚 Azure Migrate
 
 A migration command center. Used for:
+
 - **Discovery & assessment** (on-prem servers, dependencies, cost estimates)
 - **Server migration** (VMware / Hyper-V / Physical / AWS / GCP → Azure)
 - **Database migration** (SQL Server, MySQL, PostgreSQL → Azure SQL / Flexible Server)
@@ -274,6 +278,7 @@ A migration command center. Used for:
 ## ✅ Module 9 Summary
 
 You now know:
+
 - 🏦 RSV vs Backup Vault, redundancy choices, cross-region restore
 - 💾 What Azure Backup protects + the difference between MARS and MABS
 - ⏰ Policies, GFS retention, app-consistent snapshots
@@ -299,6 +304,7 @@ By the end of June 27, Maersk's *entire global IT* was offline. ~49,000 laptops,
 **Decision.** Maersk's recovery hinged on a single, almost-comedic fact: every Active Directory domain controller in Maersk's global estate had been wiped — *except one* in Ghana that happened to have been offline due to a local power outage at the moment NotPetya propagated. That single domain controller had a healthy `ntds.dit` (the AD database). Maersk physically flew the disk image from Accra to Maidenhead, UK (because the network was down and London Heathrow wasn't running), and used it as the seed to rebuild the entire forest.
 
 In parallel, the response team:
+
 1. Identified surviving backups for ~50% of mission-critical systems (the rest had to be rebuilt from scratch or restored from cold archives).
 2. Re-provisioned ~45,000 endpoints in 10 days — buying laptops in bulk and reimaging at Maersk offices around the clock.
 3. Wrote off ~$300M in revenue and direct costs.
@@ -306,6 +312,7 @@ In parallel, the response team:
 After NotPetya, Maersk publicly committed to (and over 2018–2024 executed) a cloud-first strategy with Azure (announced at Microsoft Inspire 2020). The "Ghana DC" lesson — that *one accidentally-offline-during-the-attack copy* of a critical asset saved the company — became the canonical example for why immutable, isolated, geo-redundant backups matter.
 
 What Maersk would have done differently with current Azure tooling, all of it covered in this module:
+
 - **Recovery Services Vault with GRS + Cross-Region Restore enabled** so critical workloads are recoverable in a paired region without manual disk-image trafficking.
 - **Immutable vaults + Multi-User Authentication (MUA / Resource Guard)** so an attacker who compromised AD couldn't *also* disable backups. NotPetya specifically targeted backup servers — the Maersk backup admin's credentials were among the first compromised.
 - **Azure Site Recovery** for the core SAP, container-management, and port-system workloads — RPO of seconds, RTO of an hour. Compare to NotPetya's actual RTO of *days* for the lucky workloads and *months* for the rest.
@@ -314,6 +321,7 @@ What Maersk would have done differently with current Azure tooling, all of it co
 **Outcome.** NotPetya's total global damage is now estimated at **>$10 billion** across all victims (Maersk, Merck, FedEx/TNT, Mondelez, Saint-Gobain, the U.K. National Health Service via the related WannaCry, and others). It is, dollar-for-dollar, the most expensive cyberattack in history. Insurance disputes over whether NotPetya was "an act of war" reshaped the cyber-insurance industry (*Merck v. ACE American*, 2022 NJ ruling; *Mondelez v. Zurich*, 2022 IL settlement).
 
 **Lesson for the exam / for practitioners.** Every Azure Backup feature exists because of a lesson from incidents like NotPetya:
+
 - *Soft delete defaults are 14 days*, but the AZ-104 exam will ask "what's the right setting for a regulated workload" — answer is **the maximum your retention window allows, locked**, because attackers who get vault access will try to *delete* backups first, and you want a guaranteed recovery window.
 - *MUA / Resource Guard requires a second admin's approval* — this is exactly the control NotPetya defeated at Maersk by compromising the lone backup admin.
 - *Cross-Region Restore is free with GRS* — turn it on. The alternative is shipping disks like Maersk did from Ghana.

@@ -48,11 +48,13 @@ This was the unlock that made LLMs commercially viable. Before ICL, every new ta
 ### When ICL works and when it doesn't
 
 ICL works astonishingly well when:
+
 - The task can be **demonstrated** through input-output pairs (classification, extraction, translation, formatting)
 - The pattern is **regular** — the relationship between input and output is stable across examples
 - The model is **large enough** — ICL improves dramatically with model scale (Brown 2020 showed it emerged around 6B parameters and grew strongly through 175B)
 
 ICL underperforms when:
+
 - The task requires **specialized knowledge** the model lacks (no amount of examples teaches it your internal API)
 - Examples **conflict** with each other (the model picks an incoherent middle)
 - The task is **trivial** and the examples just bloat the prompt (zero-shot beats few-shot for simple instructions)
@@ -146,6 +148,7 @@ The biggest performance gain in few-shot is **not** going from 4 → 8 shots; it
 ### Strategy 1: Diverse coverage
 
 Pick examples that span the **label space** (one per class) and the **input distribution** (short, long, easy, hard, common phrasings, edge cases). Use this when:
+
 - Labels are imbalanced
 - You want predictable behavior across many input types
 - You're starting from scratch
@@ -433,6 +436,7 @@ This is the *playbook*. You'll repeat this flow on every classification or extra
 ## ✅ Module 2 Summary
 
 You now know:
+
 - 📚 What in-context learning is and why it was the unlock for the LLM industry
 - 0️⃣ When to use zero-shot vs few-shot — and that zero-shot is often surprisingly strong with modern flagships
 - 🎯 The five example-selection strategies — diverse, similarity-retrieval, hardest, recency, anchor-elaborate

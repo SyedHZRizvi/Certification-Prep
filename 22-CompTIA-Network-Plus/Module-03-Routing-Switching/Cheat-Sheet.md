@@ -108,6 +108,7 @@
 ## 🏆 Exam Power Phrases
 
 Often **right**:
+
 - ✅ "Lowest Bridge ID wins root election"
 - ✅ "OSPF for fast convergence, open standard, link-state"
 - ✅ "BGP for inter-AS / multi-homing"
@@ -116,6 +117,7 @@ Often **right**:
 - ✅ "Change the native VLAN from VLAN 1"
 
 Often **wrong**:
+
 - ❌ "Disable STP to speed convergence"
 - ❌ "RIP for any non-trivial network"
 - ❌ "PortFast on a trunk"
@@ -139,6 +141,7 @@ Often **wrong**:
 ## ✏️ Quick Self-Check
 
 Cover the answers and recite:
+
 1. AD of static, OSPF, RIP? ___
 2. STP root bridge tiebreaker? ___
 3. Native VLAN handling on a trunk? ___

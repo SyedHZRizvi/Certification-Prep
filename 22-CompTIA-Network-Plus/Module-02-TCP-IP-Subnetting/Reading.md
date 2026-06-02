@@ -26,6 +26,7 @@ This module turns that intuition into the mechanical skill of finding the networ
 IPv4 was standardized in **RFC 791** (Jon Postel, 1981). An IPv4 address is **32 bits**, displayed as four octets in dotted-decimal: `192.168.1.5` = `11000000.10101000.00000001.00000101`.
 
 Each address has two conceptual parts:
+
 - **Network portion** — identifies the network/subnet
 - **Host portion** — identifies a unique device within that network
 
@@ -117,6 +118,7 @@ Octet values follow the pattern **128, 192, 224, 240, 248, 252, 254, 255** — e
 **Usable hosts = 2^(host bits) − 2**
 
 Subtract 2 because:
+
 1. First address = network ID (the "name" of the subnet, e.g., `192.168.1.0`)
 2. Last address = broadcast (all 1s in the host portion, e.g., `192.168.1.255`)
 
@@ -171,6 +173,7 @@ Given any IP/CIDR (e.g., `172.16.150.20/22`), find: network ID, broadcast, usabl
 Standardized in **RFC 1878** (Pummill & Manning, 1995). Lets you carve up an address block into subnets of *different sizes* to match each subnet's actual host requirement instead of wasting addresses with one-size-fits-all.
 
 ### Worked example — design subnets from `10.0.0.0/24` for:
+
 - Engineering: 60 hosts
 - Sales: 28 hosts
 - Operations: 12 hosts
@@ -254,6 +257,7 @@ So `2001:0db8:85a3:0000:0000:8a2e:0370:7334` compresses to:
 ### EUI-64 — Auto-generating the host portion
 
 **Extended Unique Identifier 64** — derives the 64-bit host portion of an IPv6 address from a 48-bit MAC by:
+
 1. Inserting `FF:FE` in the middle of the MAC
 2. Flipping the **7th bit** (Universal/Local bit) of the first octet
 
@@ -262,6 +266,7 @@ Example: MAC `00:1A:2B:3C:4D:5E` → modified to `02:1A:2B:FF:FE:3C:4D:5E` → h
 ### SLAAC — Stateless Address Auto-Configuration
 
 **Stateless Address Auto-Configuration** (RFC 4862, 2007). An IPv6 host:
+
 1. Generates a link-local address (FE80::/10 + EUI-64 or random)
 2. Sends a Router Solicitation
 3. Router replies with a Router Advertisement containing the prefix
@@ -369,12 +374,14 @@ This is the canonical "first-line help-desk Network+ scenario." On the exam, *se
 **Situation.** IPv4 provides ~4.3 billion addresses (2³²). By the early 2000s the address-allocation rate exceeded the supply. IANA (Internet Assigned Numbers Authority) allocated the **last unallocated /8 IPv4 blocks** to the five Regional Internet Registries (RIRs) on **3 February 2011**. APNIC (Asia-Pacific) ran out **15 April 2011**. RIPE (Europe) — **14 September 2012**. LACNIC (Latin America) — **10 June 2014**. ARIN (North America) — **24 September 2015**. AFRINIC (Africa) — **2019**.
 
 **Decision.** Two parallel responses emerged:
+
 1. **NAT and CGNAT** — extend IPv4 life by carrier-grade NAT (RFC 6598 reserved 100.64.0.0/10 for CGNAT) so ISPs could share a single public IP across thousands of subscribers
 2. **IPv6 adoption** — IPv6 had existed since 1998 (RFC 2460) but adoption was glacial; Google's IPv6 traffic was <1% as of 2010
 
 **Outcome.** Google's IPv6 measurement page (https://www.google.com/intl/en/ipv6/statistics.html) shows IPv6 traffic grew from ~1% in 2012 to ~46% by 2026. **Countries with leading IPv6 deployment** (per APNIC data, 2025): India (~73%), France (~75%), Germany (~70%), USA (~55%). China and parts of Asia lagged due to extensive CGNAT investment that delayed urgency. IPv4 addresses, once handed out for free, now trade on a secondary market at **$40–60 per address** as of 2025 (per IPv4.Global broker data). A /16 block (65,536 addresses) sells for ~$3M.
 
 **Lesson for the exam / for practitioners.** This is the canonical Network+ context for *every* IPv6 question:
+
 - **Why CGNAT matters** — your ISP's public IP isn't yours alone; thousands share it via PAT, which breaks port-forwarding and some applications (e.g., gaming, some VPN clients)
 - **Why IPv6 mandate** — the US government (NIST SP 800-119, 2010) and most major cloud providers (AWS, Azure, GCP) require dual-stack or IPv6-only for new builds
 - **Why /48 to enterprises, /64 to hosts** — IPv6 allocation policy assumes /64 per LAN for SLAAC to function; an enterprise /48 carves into 65,536 /64 subnets
@@ -392,6 +399,7 @@ This case is exactly what Network+ tests when asking, "Why would an organization
 ## ✅ Module 2 Summary
 
 You now know:
+
 - 🔢 **IPv4** structure, classful ranges, RFC 1918 private blocks, and special-purpose addresses
 - 🧮 The **subnetting workflow** — find the interesting octet, block size, network ID, broadcast, usable range
 - 🪜 **VLSM** — designing different-sized subnets within one block

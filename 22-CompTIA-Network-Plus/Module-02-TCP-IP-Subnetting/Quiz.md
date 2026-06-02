@@ -180,6 +180,7 @@ D. /25
 ---
 
 ### Q22. A network has been allocated `10.0.0.0/24`. The admin uses VLSM to assign:
+
 - LAN A: 100 hosts
 - LAN B: 50 hosts
 - WAN P2P: 2 hosts
