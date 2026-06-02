@@ -1,0 +1,84 @@
+---
+permalink: /about/
+layout: null
+title: About the Creator — The Cert Hub
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% include site-head.html %}
+</head>
+<body class="bg-white text-slate-900">
+
+  <!-- Watermarks -->
+  <div class="watermark-text" aria-hidden="true"></div>
+
+{% include site-nav.html %}
+
+  <!-- ============== PAGE HERO ============== -->
+  <section class="hero">
+    <div class="relative max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-10 md:pt-20 md:pb-14 text-center">
+      <p class="text-base md:text-lg font-bold tracking-[0.22em] uppercase text-indigo-300 mb-4">— Meet your instructor —</p>
+      <h1 class="display text-5xl md:text-6xl lg:text-7xl font-extrabold text-white mb-5 leading-tight">About the Creator</h1>
+      <p class="text-xl md:text-2xl text-slate-300 max-w-3xl mx-auto leading-relaxed">One author, one voice, one mission — Humayun Zafar, Toronto, Canada. Three decades across the domains this site teaches.</p>
+    </div>
+  </section>
+
+  <!-- ============== INSTRUCTOR SPOTLIGHT (single author profile) ============== -->
+  <section id="author" class="bg-white">
+    <div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
+      <div class="reveal text-center mb-12">
+        <p class="text-xs md:text-sm font-bold tracking-[0.22em] uppercase text-indigo-600 mb-3">— Meet your instructor —</p>
+        <h2 class="display text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900">One author. One voice. One mission.</h2>
+      </div>
+      <div class="reveal instructor-card rounded-3xl p-8 md:p-14 lg:p-16 max-w-6xl mx-auto text-white relative overflow-hidden">
+        <div class="relative grid md:grid-cols-12 gap-10 md:gap-14 items-center">
+          <div class="md:col-span-4 flex flex-col items-center text-center">
+            <div class="instructor-avatar" aria-hidden="true">HZ</div>
+            <div class="mt-7 trust-badge">
+              <span aria-hidden="true">✓</span> 30+ years of experience
+            </div>
+            <p class="mt-4 text-indigo-200 text-base font-medium">📍 Toronto, Canada</p>
+          </div>
+          <div class="md:col-span-8">
+            <h3 class="display text-4xl md:text-5xl lg:text-6xl font-extrabold mb-3 leading-tight">Humayun Zafar</h3>
+            <p class="text-xl md:text-2xl text-indigo-200 font-semibold mb-7">Course Creator · Designer · Toronto, Canada</p>
+            <p class="text-lg md:text-xl text-slate-300 leading-relaxed mb-5">
+              Three decades across <strong class="text-white">project delivery, IT systems &amp; server administration, networking, cybersecurity, cloud architecture (AWS &amp; Azure), AI &amp; GenAI engineering, supply-chain operations, AI-based digital marketing, Bitcoin &amp; cryptocurrency, and e-commerce</strong> — and a long-standing belief that exam prep should not feel like flashcard punishment. The Cert Hub is the study experience I wish existed when I sat my own credentials.
+            </p>
+            <p class="text-lg md:text-xl text-slate-300 leading-relaxed mb-8">
+              Every story, every analogy, every quiz, every cheat-sheet — <strong class="text-white">written by one person, with one voice</strong>. No content farms, no copy-paste from exam dumps, no $1,000 bootcamps. Just a coherent learning journey across 32 credentials and 286 modules — engineered to the same teaching &amp; learning standard as <strong class="text-amber-200">Cornell, Harvard, Princeton, and Stanford</strong>.
+            </p>
+            <div class="flex flex-wrap gap-3 mb-7">
+              <a href="#curriculum" class="inline-flex items-center gap-2 bg-white text-slate-900 font-bold text-base md:text-lg px-7 py-3.5 rounded-xl hover:bg-slate-100 transition shadow-lg">
+                🚀 Start a course
+              </a>
+              <a href="mailto:syed@transcrypts.com" class="inline-flex items-center gap-2 bg-white/10 ring-1 ring-white/25 hover:bg-white/20 text-white font-bold text-base md:text-lg px-7 py-3.5 rounded-xl transition">
+                ✉️ Contact
+              </a>
+            </div>
+            <div class="grid grid-cols-3 gap-3 md:gap-6 pt-6 border-t border-white/10">
+              <div>
+                <div class="display text-3xl md:text-4xl font-extrabold gradient-text-blue">{{ cert_count }}</div>
+                <div class="text-sm md:text-base text-slate-400 mt-1">Courses authored</div>
+              </div>
+              <div>
+                <div class="display text-3xl md:text-4xl font-extrabold gradient-text-blue">{{ total_modules }}</div>
+                <div class="text-sm md:text-base text-slate-400 mt-1">Modules written</div>
+              </div>
+              <div>
+                <div class="display text-3xl md:text-4xl font-extrabold gradient-text-blue">{{ site.data.site_stats.practice_question_estimate | default: "11,000+" }}</div>
+                <div class="text-sm md:text-base text-slate-400 mt-1">Practice questions</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% include site-footer.html %}
+
+{% include site-scripts.html %}
+</body>
+</html>

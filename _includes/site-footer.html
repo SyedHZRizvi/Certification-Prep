@@ -1,0 +1,73 @@
+  <!-- ============== FOOTER (Liquid-driven from _data/navigation.yml + _data/site_stats.yml) ============== -->
+  <footer class="border-t border-slate-200 bg-white">
+    <div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-14 grid md:grid-cols-3 gap-10 md:gap-12 items-start">
+      <div>
+        <div class="flex items-center gap-3 font-extrabold mb-4 text-xl">
+          <span class="text-3xl">🎓</span>
+          <span class="display text-2xl">The Cert Hub</span>
+        </div>
+        <p class="text-base md:text-lg text-slate-600 leading-relaxed mb-5">
+          Designed &amp; authored by <strong class="text-slate-900">Humayun Zafar</strong> — a single-author self-study hub for
+          <strong class="text-slate-900">{{ cert_count }} industry certifications</strong>,
+          <strong class="text-slate-900">{{ total_modules }} story-driven modules</strong>,
+          and <strong class="text-slate-900">{{ mock_exam_count }} full-length mock exams</strong>.
+        </p>
+        <p class="text-sm md:text-base text-slate-500 leading-relaxed">
+          <span class="inline-flex items-center gap-1.5">
+            <span aria-hidden="true">🍁</span> Made in <strong class="text-slate-700">Toronto, Canada</strong>
+          </span>
+        </p>
+      </div>
+      <div>
+        <p class="text-base font-extrabold text-slate-900 mb-4 tracking-wide">Courses &amp; Tracks</p>
+        <ul class="text-base space-y-2 text-slate-600">
+          {% for t in site.data.navigation.tracks %}
+          <li><a href="{{ t.base | remove_first: '/' }}" class="hover:text-indigo-600 transition">{{ t.icon }} {{ t.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div>
+        <p class="text-base font-extrabold text-slate-900 mb-4 tracking-wide">Resources &amp; Contact</p>
+        <ul class="text-base space-y-2.5 text-slate-600 mb-6">
+          <li><a href="enroll/" class="text-emerald-700 hover:text-emerald-900 transition font-bold">✍️ Enroll Now</a></li>
+          <li><a href="login/" class="hover:text-indigo-600 transition">🔐 Sign in</a></li>
+          <li><a href="Resources/Books-and-Links/" class="hover:text-indigo-600 transition">📚 Books &amp; Links</a></li>
+          <li><a href="Resources/Free-Practice-Tests/" class="hover:text-indigo-600 transition">📝 Practice Tests</a></li>
+          <li><a href="Resources/Communities/" class="hover:text-indigo-600 transition">💬 Communities</a></li>
+          <li><a href="00-Study-Plan/Quick-Start-Guide/" class="hover:text-indigo-600 transition">⚡ Quick Start Guide</a></li>
+          <li><a href="00-Study-Plan/12-Week-Study-Plan/" class="hover:text-indigo-600 transition">📅 12-Week Study Plan</a></li>
+          <li><a href="00-Study-Plan/Exam-Day-Tips/" class="hover:text-indigo-600 transition">🎯 Exam-Day Tips</a></li>
+          <li><a href="{{ '/faq/' | relative_url }}" class="hover:text-indigo-600 transition">❓ FAQ</a></li>
+          <li><a href="video-compliance/" class="hover:text-indigo-600 transition">📺 Video Compliance Policy</a></li>
+        </ul>
+        <p class="text-base font-bold text-slate-900 mb-2">Get in touch</p>
+        <p class="text-base text-slate-600">
+          <a href="mailto:syed@transcrypts.com" class="hover:text-indigo-600 transition">✉️ syed@transcrypts.com</a>
+        </p>
+      </div>
+    </div>
+    <div class="border-t border-slate-100 bg-slate-50">
+      <div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row gap-3 items-center justify-between text-sm text-slate-500">
+        <p>
+          © {{ site.time | date: "%Y" }} <strong class="text-slate-700">Humayun Zafar</strong> · Toronto, Canada · All Rights Reserved.
+          Personal study use only — copying &amp; reproduction prohibited.
+        </p>
+        <p class="flex flex-wrap gap-x-4 gap-y-1 justify-center md:justify-end">
+          <a href="#" class="hover:text-indigo-600 transition">Privacy</a>
+          <span class="text-slate-300" aria-hidden="true">·</span>
+          <a href="#" class="hover:text-indigo-600 transition">Terms</a>
+          <span class="text-slate-300" aria-hidden="true">·</span>
+          <a href="video-compliance/" class="hover:text-indigo-600 transition">Video Compliance</a>
+          <span class="text-slate-300" aria-hidden="true">·</span>
+          <a href="{{ '/faq/' | relative_url }}" class="hover:text-indigo-600 transition">FAQ</a>
+          <span class="text-slate-300" aria-hidden="true">·</span>
+          <a href="mailto:syed@transcrypts.com" class="hover:text-indigo-600 transition">Contact</a>
+        </p>
+      </div>
+      <div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 pb-6 text-xs text-slate-400">
+        <p class="text-center sm:text-left">
+          Not affiliated with any certification body. All trademarks (PMP, PSM, AWS, Azure, AIF-C01, AI-102, Security+, SY0-701, CSCP, CPIM, CLTD, CPSM) belong to their respective owners ({% for h in site.data.site_stats.trademark_holders %}{{ h.name }}{% unless forloop.last %}, {% endunless %}{% endfor %}).
+        </p>
+      </div>
+    </div>
+  </footer>

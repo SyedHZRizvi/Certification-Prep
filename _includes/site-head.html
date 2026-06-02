@@ -1,0 +1,1078 @@
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Baseurl rewriter: on Cloudflare we serve at root; on GitHub Pages
+       we're at /Certification-Prep/. Jekyll bakes /Certification-Prep into
+       relative_url links — strip the prefix when not running under it so
+       navigation works on both deployments. -->
+  <script>
+    (function () {
+      if (location.pathname.indexOf('/Certification-Prep/') === 0) return; // GitHub Pages — leave alone
+      function rewrite() {
+        document.querySelectorAll('a[href^="/Certification-Prep/"], a[href="/Certification-Prep"]').forEach(function (a) {
+          var h = a.getAttribute('href');
+          a.setAttribute('href', h.replace(/^\/Certification-Prep/, '') || '/');
+        });
+      }
+      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', rewrite);
+      else rewrite();
+    })();
+  </script>
+  <title>The Cert Hub — PM · Cloud · AI · Cybersecurity · Supply Chain Certifications by Humayun Zafar</title>
+  <meta name="description" content="A comprehensive, story-driven self-study hub for 32 industry-recognized certifications built to the teaching &amp; learning gold standard of Cornell, Harvard, Princeton, and Stanford — spanning Project Management (Scrum Master, PMP), Cloud (AWS CLF-C02, AWS SAA-C03, AZ-900, AZ-104), AI &amp; GenAI (AIF-C01, AI-102), Cybersecurity (CompTIA Security+ SY0-701), IT Systems Administration (CompTIA A+, Network+, Linux+, Server+ and Microsoft AZ-800/801, MD-102, SC-300), International Supply Chain (ASCM CSCP, CPIM, CLTD, ISM CPSM), AI Digital Marketing (5-course ladder), Bitcoin &amp; Cryptocurrency (CBP / CBSA / UNic-aligned), and E-Commerce (Google / Adobe Commerce / Wharton-aligned). 286 modules, 96 full-length mock exams, 13,000+ practice questions. Designed and authored by Humayun Zafar, Toronto, Canada." />
+  <meta name="author" content="Humayun Zafar" />
+  <meta name="copyright" content="© 2026 Humayun Zafar. All Rights Reserved." />
+  <meta name="robots" content="noindex, nofollow, noarchive, noimageindex, nosnippet" />
+  <meta name="googlebot" content="noindex, nofollow, noarchive, noimageindex, nosnippet" />
+  <meta name="bingbot" content="noindex, nofollow, noarchive" />
+
+  <!-- ====== CACHE-BUSTING (auto-reload stale pages after a new deploy) ====== -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <script>window.__CERTHUB_BUILD__ = '{{ site.time | date: "%s" }}';</script>
+  <!-- Search Console verification (paste codes when you have them) -->
+  <!-- <meta name="google-site-verification" content="YOUR_GOOGLE_CODE" /> -->
+  <!-- <meta name="msvalidate.01" content="YOUR_BING_CODE" /> -->
+  <meta property="og:title" content="The Cert Hub — PM · Cloud · AI · Cybersecurity · Supply Chain Certifications" />
+  <meta property="og:description" content="Pass Scrum Master, PMP, AWS, Azure, GenAI, CompTIA Security+/A+/Network+/Linux+/Server+, Microsoft Windows Server Hybrid/Endpoint/Identity, ASCM/ISM Supply Chain, AI Digital Marketing, Bitcoin &amp; Cryptocurrency, and E-Commerce — 32 industry certs built to the teaching &amp; learning gold standard of Cornell, Harvard, Princeton, and Stanford. By Humayun Zafar (Toronto, Canada)." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🎓%3C/text%3E%3C/svg%3E" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      /* Typography bump: base 16 → 18px, line-height 1.55 → 1.7 (body paragraphs) */
+      font-size: 18px;
+      line-height: 1.7;
+    }
+    h1, h2, h3, .display { font-family: 'Plus Jakarta Sans', 'Inter', sans-serif; letter-spacing: -0.02em; line-height: 1.15; }
+    p { line-height: 1.7; }
+    /* Cap line length for readability on very wide screens (Stripe/Linear pattern) */
+    .prose-cap { max-width: 70ch; }
+    img, video { -webkit-user-drag: none; user-drag: none; }
+
+    /* ===== CONTENT PROTECTION (CSS layer — works even with JS disabled) ===== */
+    html, body, p, h1, h2, h3, h4, h5, h6, li, td, th, span, div, a,
+    ol, ul, blockquote, code, pre, table, article, section, header,
+    footer, nav, main, aside, figure, figcaption, summary, details {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-touch-callout: none;
+    }
+    input, textarea, select, [contenteditable="true"] {
+      -webkit-user-select: text !important;
+      -moz-user-select: text !important;
+      user-select: text !important;
+      -webkit-touch-callout: default !important;
+    }
+    img, video, picture, source, canvas, svg {
+      -webkit-user-drag: none !important;
+      user-drag: none !important;
+    }
+    @media print {
+      html, body { display: none !important; visibility: hidden !important; }
+    }
+    .grain {
+      background-image:
+        radial-gradient(circle at 20% 30%, rgba(99, 102, 241, 0.15), transparent 40%),
+        radial-gradient(circle at 80% 20%, rgba(236, 72, 153, 0.12), transparent 35%),
+        radial-gradient(circle at 60% 80%, rgba(59, 130, 246, 0.18), transparent 40%);
+    }
+    .gradient-text-blue {
+      background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 50%, #f472b6 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .card-hover {
+      transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+    }
+    /* ============== HERO PILLS — sleek minimal style ==============
+       Uniform subtle treatment matching the top nav design: dark
+       semi-transparent background, light text, no per-category
+       gradients. Visual differentiation comes from hover (text
+       brightens + bg lifts) rather than colored backgrounds.
+       Still clickable links. Category classes kept in HTML for
+       potential future targeted styling but currently inert. */
+    .pill {
+      display: inline-flex; align-items: center; gap: .45rem;
+      padding: .4rem .9rem;
+      border-radius: 9999px;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      letter-spacing: .02em;
+      color: rgba(226, 232, 240, 0.88);        /* slate-200 @ 88% */
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      text-decoration: none;
+      transition: color .15s ease, background .15s ease,
+                  border-color .15s ease, transform .15s ease;
+      white-space: nowrap;
+    }
+    a.pill:hover {
+      color: #ffffff;
+      background: rgba(255, 255, 255, 0.10);
+      border-color: rgba(255, 255, 255, 0.22);
+      transform: translateY(-1px);
+    }
+    .pill .pill-emoji {
+      font-size: 0.95rem;
+      line-height: 1;
+      opacity: 0.95;
+    }
+    .pill .pill-code {
+      color: rgba(148, 163, 184, 0.85);        /* slate-400 — clearly secondary */
+      font-weight: 500;
+      letter-spacing: 0.02em;
+    }
+    @media (min-width: 640px) {
+      .pill { padding: .45rem 1rem; font-size: 0.875rem; }
+      .pill .pill-emoji { font-size: 1rem; }
+    }
+
+    /* Category classes intentionally inert — kept so HTML can reference
+       them if we ever want subtle per-category accents (e.g., a thin
+       left-edge color stripe) without rewriting markup. */
+    .pill-pm, .pill-comptia, .pill-aws, .pill-azure, .pill-ms,
+    .pill-ai, .pill-ai-aws, .pill-ai-vendor, .pill-scm, .pill-mkt,
+    .pill-btc, .pill-ecom { /* no per-category color — uniform .pill base */ }
+    .nav-blur { backdrop-filter: saturate(150%) blur(12px); }
+
+    /* ============== SLEEK MINIMAL NAV (v3) ==============
+       Dark-bar nav with uniform text-only links — the gold-standard
+       enterprise SaaS pattern (Vercel · Stripe · Anthropic Console).
+       Visual differentiation via hover (white text + bg tint) and
+       active state (gradient underline) rather than colored backgrounds. */
+    .nav-link {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      padding: 0.45rem 0.85rem;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      letter-spacing: 0.045em;
+      color: rgba(226, 232, 240, 0.78);
+      border-radius: 0.5rem;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: color .15s ease, background .15s ease;
+      position: relative;
+      white-space: nowrap;
+    }
+    .nav-link:hover { color: #ffffff; background: rgba(255,255,255,0.06); }
+    .nav-link.active, .nav-link[aria-current="page"] { color: #ffffff; }
+    .nav-link.active::after, .nav-link[aria-current="page"]::after {
+      content: '';
+      position: absolute;
+      left: 0.85rem; right: 0.85rem; bottom: -1px;
+      height: 2px;
+      background: linear-gradient(90deg, #818cf8 0%, #d946ef 50%, #f472b6 100%);
+      border-radius: 1px;
+    }
+
+    /* Brand wordmark on the left of the nav bar */
+    .nav-brand {
+      display: inline-flex; align-items: center; gap: 0.55rem;
+      padding: 0.35rem 0.6rem 0.35rem 0.35rem;
+      font-size: 0.9rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 0.5rem;
+      transition: background .15s ease;
+    }
+    .nav-brand:hover { background: rgba(255,255,255,0.06); }
+    .nav-brand-mark {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 28px; height: 28px;
+      background: linear-gradient(135deg, #6366f1, #a855f7);
+      border-radius: 8px;
+      font-size: 1rem;
+      box-shadow: 0 2px 8px -2px rgba(168,85,247,0.4), inset 0 1px 0 rgba(255,255,255,0.18);
+    }
+
+    /* ENROLL NOW CTA — the only colored element on the dark bar */
+    .nav-cta {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      padding: 0.5rem 1rem;
+      font-size: 0.8125rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #ffffff;
+      text-decoration: none;
+      background: linear-gradient(135deg, #10b981 0%, #06b6d4 100%);
+      border-radius: 999px;
+      box-shadow: 0 0 0 1px rgba(255,255,255,0.12) inset, 0 4px 12px -3px rgba(16,185,129,0.4);
+      transition: filter .15s ease, box-shadow .15s ease, transform .15s ease;
+    }
+    .nav-cta:hover {
+      filter: brightness(1.1);
+      transform: translateY(-1px);
+      box-shadow: 0 0 0 1px rgba(255,255,255,0.2) inset, 0 8px 18px -4px rgba(16,185,129,0.55);
+    }
+
+    /* Auth-state and admin variants — subtle accents only */
+    .nav-signin { color: rgba(199,210,254,0.85); }
+    .nav-signin:hover { color: #c7d2fe; background: rgba(99,102,241,0.12); }
+    .nav-admin { color: rgba(252,211,77,0.85); }
+    .nav-admin:hover { color: #fde047; background: rgba(245,158,11,0.10); }
+
+    .nav-link[data-auth-state], .nav-cta[data-auth-state] { display: none; }
+    .account-chip[data-auth-state] { display: none; }
+    .account-menu-item[data-auth-state] { display: none; }
+
+    @media (max-width: 767px) {
+      .nav-link { font-size: 0.75rem; padding: 0.4rem 0.55rem; letter-spacing: 0.03em; }
+    }
+
+    /* ============== LEGACY PILL CSS — kept so unrelated layout pieces that
+       still reference these classes (e.g., the hero pill row at the bottom
+       of the homepage) keep working. They're explicitly NOT used for the
+       top nav anymore. ============== */
+    .nav-pill {
+      display: inline-flex; align-items: center; gap: 0.55rem;
+      padding: 0.6rem 1.15rem 0.6rem 0.5rem;
+      border-radius: 999px;                /* fully rounded — less "rectangular" */
+      font-size: 0.875rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      color: #ffffff;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.22);
+      transition: transform .25s cubic-bezier(0.34, 1.56, 0.64, 1),
+                  box-shadow .25s ease,
+                  filter .25s ease;
+      will-change: transform;
+      position: relative;
+      overflow: hidden;
+      /* Animated background = lively without being noisy */
+      background-size: 220% 220%;
+      animation: navpill-bg-flow 6s ease-in-out infinite;
+      /* Soft outer glow + crisp inner highlight = depth */
+      box-shadow:
+        0 8px 20px -6px rgba(0,0,0,0.28),
+        0 0 0 1px rgba(255,255,255,0.10) inset,
+        inset 0 1px 0 rgba(255,255,255,0.35),
+        inset 0 -2px 4px rgba(0,0,0,0.15);
+    }
+    .nav-pill:hover {
+      transform: translateY(-3px) scale(1.06);
+      filter: brightness(1.12) saturate(1.15);
+      box-shadow:
+        0 14px 28px -8px rgba(0,0,0,0.35),
+        0 0 0 1px rgba(255,255,255,0.18) inset,
+        inset 0 1px 0 rgba(255,255,255,0.45),
+        inset 0 -2px 4px rgba(0,0,0,0.18);
+    }
+    .nav-pill:active { transform: translateY(-1px) scale(1.01); transition-duration: 0.1s; }
+
+    /* Icon = circular badge with own background, scales + bounces continuously */
+    .nav-pill-icon {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 28px; height: 28px;
+      background: rgba(255,255,255,0.20);
+      border: 1px solid rgba(255,255,255,0.30);
+      border-radius: 50%;
+      font-size: 0.95rem;
+      flex-shrink: 0;
+      backdrop-filter: blur(4px);
+      transition: transform .35s cubic-bezier(0.34, 1.56, 0.64, 1),
+                  background .25s ease;
+      filter: drop-shadow(0 1px 3px rgba(0,0,0,0.25));
+    }
+    .nav-pill:hover .nav-pill-icon {
+      transform: scale(1.18) rotate(-10deg);
+      background: rgba(255,255,255,0.32);
+    }
+
+    /* Continuous gentle pulse on icon (subtle "alive" feel) */
+    @keyframes nav-icon-pulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(255,255,255,0.25); }
+      50%      { box-shadow: 0 0 0 5px rgba(255,255,255,0.00); }
+    }
+    .nav-pill .nav-pill-icon { animation: nav-icon-pulse 3.5s ease-in-out infinite; }
+
+    /* Animated gradient background shift (continuous, slow) */
+    @keyframes navpill-bg-flow {
+      0%   { background-position: 0% 50%; }
+      50%  { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Shine sweep on hover (kept from v1) */
+    .nav-pill::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(110deg, transparent 30%, rgba(255,255,255,0.42) 50%, transparent 70%);
+      transform: translateX(-120%);
+      transition: transform .8s cubic-bezier(0.4, 0, 0.2, 1);
+      pointer-events: none;
+      border-radius: inherit;
+    }
+    .nav-pill:hover::after { transform: translateX(120%); }
+
+    /* Floating colored glow halo (NEW) — gives each pill a subtle aura */
+    .nav-pill::before {
+      content: '';
+      position: absolute;
+      inset: -6px;
+      border-radius: inherit;
+      background: inherit;
+      background-image: inherit;
+      filter: blur(14px);
+      opacity: 0;
+      z-index: -1;
+      transition: opacity .3s ease;
+      pointer-events: none;
+    }
+    .nav-pill:hover::before { opacity: 0.55; }
+
+    @media (min-width: 1024px) {
+      .nav-pill { font-size: 0.9375rem; padding: 0.65rem 1.25rem 0.65rem 0.55rem; }
+      .nav-pill-icon { width: 30px; height: 30px; font-size: 1.05rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .nav-pill, .nav-pill .nav-pill-icon { animation: none; }
+    }
+
+    /* Per-pill gradient + matching shadow */
+    .nav-pill-cert-hub {
+      background-image: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%);
+      box-shadow:
+        0 8px 22px -6px rgba(139,92,246,0.55),
+        inset 0 1px 0 rgba(255,255,255,0.28),
+        inset 0 -1px 0 rgba(0,0,0,0.10);
+    }
+    .nav-pill-courses {
+      background-image: linear-gradient(135deg, #3b82f6 0%, #2563eb 50%, #1e40af 100%);
+      box-shadow:
+        0 8px 22px -6px rgba(37,99,235,0.55),
+        inset 0 1px 0 rgba(255,255,255,0.28),
+        inset 0 -1px 0 rgba(0,0,0,0.10);
+    }
+    .nav-pill-certs {
+      background-image: linear-gradient(135deg, #f59e0b 0%, #f97316 50%, #ea580c 100%);
+      box-shadow:
+        0 8px 22px -6px rgba(249,115,22,0.55),
+        inset 0 1px 0 rgba(255,255,255,0.32),
+        inset 0 -1px 0 rgba(0,0,0,0.10);
+    }
+    .nav-pill-how {
+      background-image: linear-gradient(135deg, #10b981 0%, #059669 50%, #047857 100%);
+      box-shadow:
+        0 8px 22px -6px rgba(16,185,129,0.55),
+        inset 0 1px 0 rgba(255,255,255,0.28),
+        inset 0 -1px 0 rgba(0,0,0,0.10);
+    }
+    .nav-pill-about {
+      background-image: linear-gradient(135deg, #ec4899 0%, #db2777 50%, #be185d 100%);
+      box-shadow:
+        0 8px 22px -6px rgba(236,72,153,0.55),
+        inset 0 1px 0 rgba(255,255,255,0.28),
+        inset 0 -1px 0 rgba(0,0,0,0.10);
+    }
+    .nav-pill-cta {
+      background-image: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #312e81 100%);
+      box-shadow:
+        0 10px 26px -6px rgba(30,41,59,0.65),
+        inset 0 1px 0 rgba(255,255,255,0.20),
+        inset 0 -1px 0 rgba(0,0,0,0.10);
+    }
+    .nav-pill-cta:hover {
+      background-image: linear-gradient(135deg, #4338ca 0%, #6366f1 50%, #8b5cf6 100%);
+    }
+    /* Primary action pill: ENROLL NOW. Distinct emerald→teal→cyan gradient
+       so the most important call-to-action stands apart from the cool blue
+       informational pills and the gold admin pill. */
+    .nav-pill-enroll {
+      background-image: linear-gradient(135deg, #047857 0%, #10b981 35%, #14b8a6 65%, #06b6d4 100%);
+      box-shadow:
+        0 10px 28px -6px rgba(16,185,129,0.55),
+        inset 0 1px 0 rgba(255,255,255,0.32),
+        inset 0 -1px 0 rgba(0,0,0,0.10);
+    }
+    .nav-pill-enroll:hover {
+      background-image: linear-gradient(135deg, #065f46 0%, #059669 35%, #0d9488 65%, #0891b2 100%);
+    }
+    /* Admin-only pill (super-user) — gold gradient to signal privileged access */
+    .nav-pill-manage {
+      background-image: linear-gradient(135deg, #b45309 0%, #d97706 50%, #f59e0b 100%);
+      box-shadow:
+        0 8px 22px -6px rgba(217,119,6,0.6),
+        inset 0 1px 0 rgba(255,255,255,0.28),
+        inset 0 -1px 0 rgba(0,0,0,0.10);
+    }
+    /* Sign-out pill — neutral slate so it doesn't shout */
+    .nav-pill-signout {
+      background-image: linear-gradient(135deg, #475569 0%, #334155 50%, #1e293b 100%);
+      box-shadow:
+        0 8px 22px -6px rgba(51,65,85,0.55),
+        inset 0 1px 0 rgba(255,255,255,0.22),
+        inset 0 -1px 0 rgba(0,0,0,0.10);
+    }
+    /* Sign-in pill — indigo, for when user isn't authenticated */
+    .nav-pill-signin {
+      background-image: linear-gradient(135deg, #4f46e5 0%, #6366f1 50%, #818cf8 100%);
+      box-shadow:
+        0 8px 22px -6px rgba(99,102,241,0.55),
+        inset 0 1px 0 rgba(255,255,255,0.28),
+        inset 0 -1px 0 rgba(0,0,0,0.10);
+    }
+    /* Auth-controlled pills start hidden; JS reveals based on /api/auth/me */
+    .nav-pill[data-auth-state] { display: none; }
+    .account-chip[data-auth-state] { display: none; }
+    .account-menu-item[data-auth-state] { display: none; }
+
+    /* ====== Account chip + dropdown menu ====== */
+    .account-chip { position: relative; }
+    .account-chip-btn {
+      display: inline-flex; align-items: center; gap: 9px;
+      padding: 7px 13px 7px 7px;
+      background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+      color: #f1f5f9;
+      border: 1px solid rgba(148,163,184,0.25);
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 13px;
+      cursor: pointer;
+      transition: background .15s, transform .12s, box-shadow .15s;
+      box-shadow: 0 4px 12px -3px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.06);
+    }
+    .account-chip-btn:hover {
+      background: linear-gradient(135deg, #334155 0%, #475569 100%);
+      transform: translateY(-1px);
+      box-shadow: 0 8px 18px -4px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.08);
+    }
+    .account-avatar {
+      width: 28px; height: 28px;
+      display: inline-flex; align-items: center; justify-content: center;
+      background: linear-gradient(135deg, #6366f1, #a855f7);
+      color: #fff;
+      font-weight: 800;
+      border-radius: 50%;
+      font-size: 13px;
+      box-shadow: 0 2px 8px -2px rgba(168,85,247,0.45);
+    }
+    .account-email { max-width: 180px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .account-name { max-width: 160px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-weight: 700; letter-spacing: .01em; }
+    .account-caret { font-size: 11px; opacity: 0.7; }
+    .account-menu-name { font-size: 15px; font-weight: 800; color: #0f172a; margin-bottom: 2px; }
+    .hint { font-size: 11px; color: #94a3b8; font-weight: 500; margin-left: 4px; }
+
+    .account-menu {
+      position: absolute; right: 0; top: calc(100% + 8px);
+      min-width: 260px;
+      background: #ffffff;
+      border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 14px;
+      box-shadow: 0 18px 48px -12px rgba(0,0,0,0.28), 0 4px 12px -4px rgba(0,0,0,0.12);
+      opacity: 0; transform: translateY(-6px) scale(0.97);
+      pointer-events: none;
+      transition: opacity .15s, transform .15s;
+      z-index: 60;
+      overflow: hidden;
+    }
+    .account-menu.open { opacity: 1; transform: translateY(0) scale(1); pointer-events: auto; }
+    .account-menu-header {
+      padding: 14px 16px;
+      background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+    }
+    .account-menu-email { font-size: 13px; font-weight: 700; color: #0f172a; word-break: break-all; }
+    .account-menu-role { font-size: 11.5px; color: #6366f1; font-weight: 600; margin-top: 3px; letter-spacing: .03em; }
+    .account-menu-item {
+      display: flex; align-items: center; gap: 10px;
+      padding: 11px 16px;
+      color: #1e293b;
+      text-decoration: none;
+      font-size: 13.5px;
+      font-weight: 600;
+      transition: background .12s;
+    }
+    .account-menu-item:hover { background: #f1f5f9; }
+    .account-menu-admin { color: #b45309; }
+    .account-menu-admin:hover { background: #fef3c7; }
+    .account-menu-danger { color: #dc2626; border-top: 1px solid rgba(0,0,0,0.06); }
+    .account-menu-danger:hover { background: #fee2e2; }
+
+    /* ====== Rainbow hero headline: every word gets its own vivid gradient ====== */
+    .hero-rainbow .rb {
+      display: inline-block;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+      background-size: 200% auto;
+      animation: rb-shimmer 8s linear infinite;
+      filter: drop-shadow(0 4px 16px rgba(0,0,0,0.25));
+    }
+    /* Premium unified gradient — every word shares the SAME indigo →
+       violet → fuchsia → rose flow with depth stops (light/mid/dark
+       within the same hue family). Symmetric, professional, modern —
+       the kind of headline gradient used by Stripe, Linear, Apple,
+       Vercel for hero typography. No rainbow chaos. */
+    .hero-rainbow .rb1, .hero-rainbow .rb2, .hero-rainbow .rb3,
+    .hero-rainbow .rb4, .hero-rainbow .rb5, .hero-rainbow .rb6 {
+      background-image: linear-gradient(
+        135deg,
+        #4338ca   0%,   /* deep indigo */
+        #6366f1  15%,   /* indigo */
+        #8b5cf6  30%,   /* violet */
+        #a855f7  45%,   /* purple */
+        #d946ef  60%,   /* fuchsia */
+        #ec4899  75%,   /* pink */
+        #f43f5e  90%,   /* rose */
+        #fb7185 100%    /* light rose accent */
+      );
+    }
+    /* Stagger the shimmer so each word feels alive without breaking
+       the unified palette. */
+    .hero-rainbow .rb1 { animation-delay: 0s;    }
+    .hero-rainbow .rb2 { animation-delay: .3s;   }
+    .hero-rainbow .rb3 { animation-delay: .6s;   }
+    .hero-rainbow .rb4 { animation-delay: .9s;   }
+    .hero-rainbow .rb5 { animation-delay: 1.2s;  }
+    .hero-rainbow .rb6 { animation-delay: 1.5s;  }
+
+    @keyframes rb-shimmer {
+      0%   { background-position: 0% 50%; }
+      50%  { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .hero-rainbow .rb { animation: none; }
+    }
+
+    /* Mobile-friendly: hide the 4-tab middle row on small screens; keep cert-hub + CTA */
+    @media (prefers-reduced-motion: reduce) {
+      .nav-pill, .nav-pill-icon, .nav-pill::after { transition: none !important; animation: none !important; }
+    }
+
+    /* ============== CERT CARDS (homepage course tiles) ============== */
+    .cert-card {
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+      transition: transform .35s cubic-bezier(0.34, 1.56, 0.64, 1),
+                  box-shadow .35s ease,
+                  border-color .35s ease;
+    }
+    .cert-card:hover {
+      transform: translateY(-10px) scale(1.025);
+      box-shadow: 0 35px 70px -15px rgba(99,102,241,0.35),
+                  0 0 0 1px rgba(167,139,250,0.3);
+    }
+    .cert-card-icon {
+      transition: transform .4s cubic-bezier(0.34, 1.56, 0.64, 1);
+      display: inline-block;
+    }
+    .cert-card:hover .cert-card-icon {
+      transform: scale(1.15) rotate(-3deg);
+    }
+    .cert-card .shine-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(110deg, transparent 35%, rgba(255,255,255,0.18) 50%, transparent 65%);
+      transform: translateX(-110%);
+      transition: transform .8s cubic-bezier(0.4, 0, 0.2, 1);
+      pointer-events: none;
+      z-index: 1;
+    }
+    .cert-card:hover .shine-overlay { transform: translateX(110%); }
+    .cert-card-cta {
+      transition: background-color .25s ease, transform .25s ease;
+    }
+    .cert-card:hover .cert-card-cta {
+      background-color: rgba(255,255,255,0.28);
+      transform: translateX(4px);
+    }
+    /* Cert-code badge in the top-right corner of every course card.
+       Visitors immediately see the exam code (CLF-C02, AZ-900, MD-102, A+, etc.)
+       without needing to read the subtitle. */
+    .cert-code-badge {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      background: rgba(255, 255, 255, 0.18);
+      backdrop-filter: blur(6px);
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      padding: 5px 10px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      box-shadow: 0 4px 12px -3px rgba(0,0,0,0.18);
+      text-transform: uppercase;
+      font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+      line-height: 1;
+      z-index: 5;
+      transition: background .2s ease, transform .2s ease;
+    }
+    .cert-card:hover .cert-code-badge {
+      background: rgba(255, 255, 255, 0.30);
+      transform: translateY(-1px);
+    }
+    @media (min-width: 1024px) {
+      .cert-code-badge { top: 16px; right: 16px; font-size: 12px; padding: 6px 11px; }
+    }
+    /* Compact card variant (used in 5-col sub-track grids) */
+    .cert-card-mini .cert-code-badge { top: 10px; right: 10px; font-size: 10px; padding: 4px 8px; }
+
+    /* ============== SCROLL REVEAL ============== */
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity .8s cubic-bezier(0.16, 1, 0.3, 1),
+                  transform .8s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: opacity, transform;
+    }
+    .reveal.in-view {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ============== CATEGORY BADGE PULSE ============== */
+    @keyframes cat-pulse {
+      0%, 100% { transform: scale(1); box-shadow: 0 25px 50px -12px rgba(167,139,250,0.4); }
+      50%      { transform: scale(1.04); box-shadow: 0 30px 60px -12px rgba(167,139,250,0.55); }
+    }
+    .cat-badge {
+      animation: cat-pulse 4s ease-in-out infinite;
+    }
+
+    /* ============== GOLD-STANDARD ANIMATED GRADIENT ============== */
+    .gold-banner {
+      background-size: 200% 100% !important;
+      animation: gold-shift 8s ease-in-out infinite;
+    }
+    @keyframes gold-shift {
+      0%, 100% { background-position: 0% 50%; }
+      50%      { background-position: 100% 50%; }
+    }
+
+    /* ============== CURRICULUM SECTION DRAMA ============== */
+    .curriculum-bg {
+      background:
+        radial-gradient(circle at 12% 20%, rgba(99,102,241,0.07), transparent 45%),
+        radial-gradient(circle at 88% 15%, rgba(236,72,153,0.06), transparent 40%),
+        radial-gradient(circle at 50% 90%, rgba(59,130,246,0.07), transparent 45%);
+    }
+
+    /* ============== REDUCED MOTION ============== */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+      .reveal {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+    }
+
+    /* ============== AUTHOR BADGE (Hero) ============== */
+    .author-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      padding: 12px 26px;
+      background: linear-gradient(135deg, rgba(99,102,241,0.25) 0%, rgba(167,139,250,0.18) 50%, rgba(236,72,153,0.22) 100%);
+      border: 1px solid rgba(167,139,250,0.5);
+      border-radius: 9999px;
+      font-size: 15px;
+      color: #e0e7ff;
+      font-weight: 500;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 32px -8px rgba(99,102,241,0.4), inset 0 1px 0 rgba(255,255,255,0.1);
+      letter-spacing: .005em;
+    }
+    .author-badge .ab-avatar {
+      width: 38px; height: 38px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #6366f1, #ec4899);
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      font-size: 13px;
+      color: #fff;
+      flex-shrink: 0;
+      box-shadow: 0 4px 14px -2px rgba(99,102,241,0.6);
+      letter-spacing: 0;
+    }
+    .author-badge .ab-label {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: .14em;
+      color: #a5b4fc;
+      font-weight: 700;
+      display: block;
+      margin-bottom: 2px;
+    }
+    .author-badge .ab-name {
+      color: #fff;
+      font-weight: 800;
+      font-size: 16px;
+      display: block;
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+    }
+    .author-badge .ab-divider {
+      width: 1px;
+      height: 34px;
+      background: rgba(255,255,255,0.22);
+      margin: 0 4px;
+    }
+    .author-badge .ab-location {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      color: #c7d2fe;
+      font-weight: 600;
+      opacity: 0.95;
+    }
+    .author-badge .ab-pulse {
+      width: 9px; height: 9px;
+      border-radius: 50%;
+      background: #34d399;
+      animation: ab-pulse 2s infinite;
+      flex-shrink: 0;
+    }
+    @keyframes ab-pulse {
+      0% { box-shadow: 0 0 0 0 rgba(52,211,153,0.7); }
+      70% { box-shadow: 0 0 0 10px rgba(52,211,153,0); }
+      100% { box-shadow: 0 0 0 0 rgba(52,211,153,0); }
+    }
+    @media (max-width: 640px) {
+      .author-badge { padding: 10px 18px; gap: 10px; font-size: 13px; flex-wrap: wrap; justify-content: center; max-width: 95%; }
+      .author-badge .ab-avatar { width: 34px; height: 34px; font-size: 12px; }
+      .author-badge .ab-name { font-size: 14px; }
+      .author-badge .ab-divider { display: none; }
+      .author-badge .ab-location { width: 100%; justify-content: center; padding-top: 6px; border-top: 1px solid rgba(255,255,255,0.15); margin-top: 4px; }
+    }
+
+    /* ============== NAV SCROLL STATE (sleek dark bar) ============== */
+    nav.is-scrolled {
+      background: rgba(2, 6, 23, 0.96);
+      box-shadow: 0 4px 24px -8px rgba(0,0,0,0.45), 0 1px 0 rgba(255,255,255,0.04);
+    }
+    nav .nav-brand {
+      transition: transform .25s cubic-bezier(0.34, 1.56, 0.64, 1), background .15s ease;
+    }
+    nav.is-scrolled .nav-brand { transform: scale(0.97); }
+
+    /* ============== STATS BAR (Social Proof) ============== */
+    .stats-bar {
+      background:
+        radial-gradient(ellipse at top left, rgba(99,102,241,0.10), transparent 55%),
+        radial-gradient(ellipse at bottom right, rgba(236,72,153,0.09), transparent 55%),
+        linear-gradient(180deg, #fafbff 0%, #f3f4ff 100%);
+      border-top: 1px solid rgba(99,102,241,0.10);
+      border-bottom: 1px solid rgba(99,102,241,0.10);
+    }
+    .stat-num {
+      font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      background: linear-gradient(135deg, #4f46e5 0%, #8b5cf6 50%, #ec4899 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      line-height: 1.05;
+    }
+    .stat-card {
+      transition: transform .25s ease;
+    }
+    .stat-card:hover .stat-num {
+      transform: scale(1.06);
+      transition: transform .25s cubic-bezier(0.34, 1.56, 0.64, 1);
+      display: inline-block;
+    }
+
+    /* ============== VALUE PROP CARDS ============== */
+    .value-card {
+      transition: transform .35s cubic-bezier(0.34, 1.56, 0.64, 1),
+                  box-shadow .35s ease,
+                  border-color .35s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .value-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 30px 60px -15px rgba(99,102,241,0.25);
+      border-color: rgba(99,102,241,0.30);
+    }
+    .value-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 96px; height: 96px;
+      border-radius: 28px;
+      font-size: 56px;
+      line-height: 1;
+      transition: transform .4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    .value-card:hover .value-icon { transform: scale(1.10) rotate(-4deg); }
+
+    /* ============== INSTRUCTOR SPOTLIGHT ============== */
+    .instructor-card {
+      background:
+        radial-gradient(circle at 12% 18%, rgba(99,102,241,0.25), transparent 50%),
+        radial-gradient(circle at 88% 80%, rgba(236,72,153,0.18), transparent 50%),
+        linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+    }
+    .instructor-avatar {
+      width: 180px; height: 180px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+      display: grid;
+      place-items: center;
+      font-weight: 900;
+      font-size: 72px;
+      color: #fff;
+      letter-spacing: -0.04em;
+      box-shadow:
+        0 25px 50px -12px rgba(99,102,241,0.55),
+        inset 0 2px 0 rgba(255,255,255,0.20);
+      position: relative;
+    }
+    .instructor-avatar::after {
+      content: '';
+      position: absolute;
+      inset: -4px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #6366f1, #ec4899);
+      filter: blur(20px);
+      opacity: 0.45;
+      z-index: -1;
+    }
+    @media (max-width: 768px) {
+      .instructor-avatar { width: 140px; height: 140px; font-size: 56px; }
+    }
+    .trust-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 18px;
+      background: rgba(251,191,36,0.15);
+      border: 1px solid rgba(251,191,36,0.45);
+      border-radius: 9999px;
+      font-size: 14px;
+      font-weight: 700;
+      color: #fde68a;
+      letter-spacing: .02em;
+    }
+
+    /* ============== FAQ ACCORDION ============== */
+    .faq-item {
+      border: 1px solid rgba(15,23,42,0.09);
+      border-radius: 16px;
+      background: #ffffff;
+      overflow: hidden;
+      transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease;
+    }
+    .faq-item:hover {
+      border-color: rgba(99,102,241,0.30);
+      box-shadow: 0 8px 24px -8px rgba(15,23,42,0.08);
+    }
+    .faq-item.open {
+      border-color: rgba(99,102,241,0.45);
+      box-shadow: 0 14px 40px -10px rgba(99,102,241,0.18);
+    }
+    .faq-q {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 22px 26px;
+      background: transparent;
+      border: 0;
+      width: 100%;
+      cursor: pointer;
+      text-align: left;
+      font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+      font-weight: 700;
+      font-size: 19px;
+      color: #0f172a;
+      letter-spacing: -0.01em;
+      line-height: 1.4;
+    }
+    .faq-q:focus-visible {
+      outline: 2px solid #6366f1;
+      outline-offset: -2px;
+      border-radius: 16px;
+    }
+    .faq-toggle {
+      flex-shrink: 0;
+      width: 36px; height: 36px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #eef2ff 0%, #f5f3ff 100%);
+      display: grid;
+      place-items: center;
+      color: #4f46e5;
+      font-size: 22px;
+      font-weight: 800;
+      line-height: 1;
+      transition: transform .35s cubic-bezier(0.34, 1.56, 0.64, 1),
+                  background .25s ease;
+    }
+    .faq-item.open .faq-toggle {
+      transform: rotate(45deg);
+      background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+      color: #fff;
+    }
+    .faq-a {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .faq-a-inner {
+      padding: 0 26px 22px;
+      color: #475569;
+      font-size: 17px;
+      line-height: 1.7;
+    }
+    .faq-a-inner strong { color: #0f172a; }
+
+    /* ============== HERO REFINEMENT — CTA cluster ============== */
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: #ffffff;
+      color: #0f172a;
+      font-weight: 700;
+      font-size: 18px;
+      padding: 18px 32px;
+      border-radius: 14px;
+      box-shadow: 0 12px 28px -8px rgba(99,102,241,0.35), 0 0 0 1px rgba(15,23,42,0.04);
+      transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+    }
+    .btn-primary:hover {
+      background: #f8fafc;
+      transform: translateY(-2px);
+      box-shadow: 0 18px 38px -8px rgba(99,102,241,0.45), 0 0 0 1px rgba(15,23,42,0.06);
+    }
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: rgba(255,255,255,0.08);
+      color: #fff;
+      font-weight: 700;
+      font-size: 18px;
+      padding: 18px 32px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,0.22);
+      backdrop-filter: blur(8px);
+      transition: transform .2s ease, background .2s ease, border-color .2s ease;
+    }
+    .btn-secondary:hover {
+      background: rgba(255,255,255,0.14);
+      border-color: rgba(255,255,255,0.35);
+      transform: translateY(-2px);
+    }
+
+    /* ============== MINI-CTA CARDS ============== */
+    .mini-cta {
+      background: linear-gradient(135deg, #f5f3ff 0%, #ede9fe 50%, #fce7f3 100%);
+      border: 1px solid rgba(167,139,250,0.30);
+      border-radius: 24px;
+      padding: 32px 28px;
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+    .mini-cta:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 22px 48px -14px rgba(99,102,241,0.30);
+    }
+    .final-cta {
+      background:
+        radial-gradient(circle at 20% 30%, rgba(99,102,241,0.30), transparent 55%),
+        radial-gradient(circle at 80% 70%, rgba(236,72,153,0.25), transparent 55%),
+        linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+      border-radius: 32px;
+      color: #fff;
+      padding: 48px 32px;
+      text-align: center;
+    }
+    @media (min-width: 768px) {
+      .final-cta { padding: 64px 48px; }
+    }
+
+    /* ============== CARD 3D TILT (subtle perspective) ============== */
+    .cert-card {
+      perspective: 1200px;
+    }
+    .cert-card:hover {
+      /* Combine with existing translateY/scale: add a tiny rotateX */
+      transform: translateY(-10px) scale(1.025) rotateX(2deg);
+    }
+
+    /* ============== REDUCED MOTION (NEW SECTIONS) ============== */
+    @media (prefers-reduced-motion: reduce) {
+      .stat-card, .value-card, .faq-item, .faq-toggle, .faq-a, .mini-cta, .btn-primary, .btn-secondary {
+        transition: none !important;
+      }
+      .cert-card:hover { transform: none !important; }
+    }
+
+    /* Watermark — subtle, repeating, behind content */
+    .watermark-overlay {
+      position: fixed; inset: 0; pointer-events: none; z-index: 1;
+      background-image: repeating-linear-gradient(
+        -30deg,
+        transparent 0,
+        transparent 200px,
+        rgba(0,0,0,0.025) 200px,
+        rgba(0,0,0,0.025) 240px
+      );
+      mix-blend-mode: multiply;
+    }
+    .watermark-text {
+      position: fixed; inset: 0; pointer-events: none; z-index: 1;
+      display: grid; place-items: center;
+      overflow: hidden;
+    }
+    .watermark-text::before {
+      content: '© Humayun Zafar · Cert Hub · © Humayun Zafar · Cert Hub';
+      position: absolute;
+      width: 200%; height: 200%;
+      transform: rotate(-25deg);
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: 0.5em;
+      color: rgba(15, 23, 42, 0.035);
+      line-height: 6em;
+      text-align: center;
+      white-space: pre-wrap;
+      word-spacing: 4em;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    /* Make sure the actual content sits above watermark */
+    nav, section, footer { position: relative; z-index: 2; }
+    /* Print blocking */
+    @media print {
+      body * { visibility: hidden !important; }
+      body::after {
+        content: 'This content is © 2026 Humayun Zafar (Toronto, Canada). All Rights Reserved. Printing is not permitted. Visit https://syedhzrizvi.github.io/Certification-Prep/ to view online.';
+        visibility: visible !important;
+        display: block; position: fixed; inset: 0;
+        padding: 4em; font-size: 1.2em;
+      }
+    }
+  </style>

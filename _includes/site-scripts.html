@@ -1,0 +1,198 @@
+
+  <!-- ============== LIGHT PROTECTION (right-click + devtools shortcuts only) ============== -->
+  <script>
+    (function () {
+      // Block right-click (visible deterrent)
+      document.addEventListener('contextmenu', function (e) {
+        e.preventDefault();
+        showWarning('🔒 © 2026 Humayun Zafar · Right-click disabled. Content for personal study.');
+        return false;
+      });
+      // Block image drag specifically (allow text drag if user wants)
+      document.addEventListener('dragstart', function (e) {
+        if (e.target && e.target.tagName === 'IMG') { e.preventDefault(); return false; }
+      });
+      // Block ONLY devtools keyboard shortcuts. Allow Ctrl+C/A/P/S/F so students can study.
+      document.addEventListener('keydown', function (e) {
+        var key = e.keyCode || e.which;
+        var ctrl = e.ctrlKey || e.metaKey;
+        if (key === 123) { e.preventDefault(); showWarning('🔒 Dev tools shortcut disabled'); return false; }
+        if (ctrl && e.shiftKey && (key === 73 || key === 74 || key === 67)) { e.preventDefault(); return false; }
+        if (ctrl && key === 85) { e.preventDefault(); return false; }
+      });
+
+      var warningTimeout;
+      function showWarning(msg) {
+        var existing = document.getElementById('cph-warn');
+        if (existing) existing.remove();
+        var t = document.createElement('div');
+        t.id = 'cph-warn';
+        t.style.cssText = 'position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:#0f172a;color:#fff;padding:12px 20px;border-radius:10px;font-size:13px;font-weight:500;z-index:9999;box-shadow:0 12px 30px rgba(0,0,0,.3);font-family:Inter,sans-serif;max-width:90%;';
+        t.textContent = msg;
+        document.body.appendChild(t);
+        clearTimeout(warningTimeout);
+        warningTimeout = setTimeout(function () { if (t.parentNode) t.remove(); }, 2500);
+      }
+    })();
+  </script>
+
+  <!-- ============== SCROLL-REVEAL OBSERVER ============== -->
+  <script>
+    (function () {
+      var prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var revealEls = document.querySelectorAll('.reveal');
+      if (!revealEls.length) return;
+      if (prefersReduced || !('IntersectionObserver' in window)) {
+        revealEls.forEach(function (el) { el.classList.add('in-view'); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+      revealEls.forEach(function (el, i) {
+        // Light, capped stagger so deep grids do not lag
+        if (!el.style.transitionDelay) {
+          el.style.transitionDelay = Math.min(i * 60, 240) + 'ms';
+        }
+        io.observe(el);
+      });
+    })();
+  </script>
+
+  <!-- ============== FAQ ACCORDION ============== -->
+  <script>
+    (function () {
+      var items = document.querySelectorAll('.faq-item');
+      if (!items.length) return;
+      items.forEach(function (item) {
+        var btn = item.querySelector('.faq-q');
+        var answer = item.querySelector('.faq-a');
+        if (!btn || !answer) return;
+        btn.addEventListener('click', function () {
+          var isOpen = item.classList.contains('open');
+          if (isOpen) {
+            answer.style.maxHeight = '0px';
+            item.classList.remove('open');
+            btn.setAttribute('aria-expanded', 'false');
+          } else {
+            answer.style.maxHeight = answer.scrollHeight + 'px';
+            item.classList.add('open');
+            btn.setAttribute('aria-expanded', 'true');
+          }
+        });
+      });
+      // Re-measure open items on resize so the answer height stays accurate
+      window.addEventListener('resize', function () {
+        document.querySelectorAll('.faq-item.open .faq-a').forEach(function (a) {
+          a.style.maxHeight = a.scrollHeight + 'px';
+        });
+      });
+    })();
+  </script>
+
+  <!-- ============== ANIMATED STAT COUNTERS ============== -->
+  <script>
+    (function () {
+      var nodes = document.querySelectorAll('[data-count-to]');
+      if (!nodes.length) return;
+      var prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      function formatInt(n) {
+        // Add commas for >999 (e.g., 8,000+); strip commas otherwise
+        if (n >= 1000) return n.toLocaleString('en-US');
+        return String(n);
+      }
+
+      function animate(el) {
+        var target = parseInt(el.getAttribute('data-count-to'), 10);
+        var suffix = el.getAttribute('data-count-suffix') || '';
+        if (isNaN(target)) return;
+        if (prefersReduced || !('requestAnimationFrame' in window)) {
+          el.textContent = formatInt(target) + suffix;
+          return;
+        }
+        var duration = 1400 + Math.min(target, 8000) / 10; // longer for bigger numbers
+        var start = null;
+        function step(t) {
+          if (start === null) start = t;
+          var elapsed = t - start;
+          var progress = Math.min(elapsed / duration, 1);
+          // easeOutCubic
+          var eased = 1 - Math.pow(1 - progress, 3);
+          var val = Math.floor(eased * target);
+          el.textContent = formatInt(val) + suffix;
+          if (progress < 1) requestAnimationFrame(step);
+          else el.textContent = formatInt(target) + suffix;
+        }
+        requestAnimationFrame(step);
+      }
+
+      if (!('IntersectionObserver' in window)) {
+        nodes.forEach(animate);
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            animate(entry.target);
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.4 });
+      nodes.forEach(function (el) { io.observe(el); });
+    })();
+  </script>
+
+  <!-- ============== NAV SCROLL STATE (Stripe/Apple) ============== -->
+  <script>
+    (function () {
+      var nav = document.querySelector('nav.sticky');
+      if (!nav) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 200) nav.classList.add('is-scrolled');
+        else nav.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function () {
+        if (!ticking) {
+          requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+      update();
+    })();
+  </script>
+
+  <!-- ============== SMOOTH-SCROLL ANCHOR LINKS (graceful fallback for older browsers) ============== -->
+  <script>
+    (function () {
+      // CSS already provides html { scroll-behavior: smooth }, but this handles
+      // sticky-nav offset on browsers that don't honor scroll-padding cleanly.
+      document.addEventListener('click', function (e) {
+        var link = e.target.closest && e.target.closest('a[href^="#"]');
+        if (!link) return;
+        var href = link.getAttribute('href');
+        if (!href || href === '#' || href.length < 2) return;
+        var target = document.querySelector(href);
+        if (!target) return;
+        e.preventDefault();
+        var navH = (document.querySelector('nav.sticky') || {}).offsetHeight || 0;
+        var top = target.getBoundingClientRect().top + window.pageYOffset - navH - 8;
+        try {
+          window.scrollTo({ top: top, behavior: 'smooth' });
+        } catch (err) {
+          window.scrollTo(0, top);
+        }
+        history.pushState && history.pushState(null, '', href);
+      });
+    })();
+  </script>
+
+  <script src="assets/protect.js"></script>
+  <script src="assets/freshness.js"></script>

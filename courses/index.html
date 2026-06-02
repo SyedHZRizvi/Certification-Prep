@@ -1,0 +1,516 @@
+---
+permalink: /courses/
+layout: null
+title: Courses — The Cert Hub
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% include site-head.html %}
+</head>
+<body class="bg-white text-slate-900">
+
+  <!-- Watermarks -->
+  <div class="watermark-text" aria-hidden="true"></div>
+
+{% include site-nav.html %}
+
+  <!-- ============== PAGE HERO ============== -->
+  <section class="hero">
+    <div class="relative max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-10 md:pt-20 md:pb-14 text-center">
+      <p class="text-base md:text-lg font-bold tracking-[0.22em] uppercase text-indigo-300 mb-4">— Curriculum —</p>
+      <h1 class="display text-5xl md:text-6xl lg:text-7xl font-extrabold text-white mb-5 leading-tight">Browse All 32 Courses</h1>
+      <p class="text-xl md:text-2xl text-slate-300 max-w-3xl mx-auto leading-relaxed">Foundation tier to specialty — pick a single course or the full ladder. Cornell · Harvard · Princeton · Stanford pedagogical standard, one author, one voice.</p>
+    </div>
+  </section>
+
+  <!-- ============== CURRICULUM ============== -->
+  <section id="curriculum" class="curriculum-bg">
+    <div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
+    <div class="reveal text-center mb-14">
+      <h2 class="text-4xl md:text-5xl font-extrabold mb-4">What You'll Master</h2>
+      <p class="text-xl md:text-2xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+        {{ total_modules }} modules across {{ cert_count }} certifications · ~{{ site.data.site_stats.total_hours_estimate }} hours of focused content. Click any topic to start.
+      </p>
+    </div>
+
+    <div class="space-y-14">
+
+      <!-- ===== category: Project Management (2 cards, centered 2-col) ===== -->
+      <div class="reveal">
+        <div class="text-center mb-10">
+          <div class="cat-badge inline-flex items-center justify-center w-20 h-20 md:w-24 md:h-24 rounded-2xl bg-gradient-to-br from-blue-500 via-violet-500 to-pink-500 text-4xl md:text-5xl mb-5 shadow-xl shadow-violet-500/40 ring-4 ring-white">
+            <span class="drop-shadow-lg">📊</span>
+          </div>
+          <h3 class="display text-4xl md:text-5xl font-extrabold mb-2">Project Management</h3>
+          <p class="text-slate-600 text-base md:text-lg">2 flagship certifications · the foundation of professional delivery</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-[1100px] mx-auto">
+
+      <!-- Scrum Master card -->
+      <a href="01-Scrum-Master/" class="cert-card group block rounded-2xl border border-slate-200 bg-gradient-to-br from-blue-600 to-violet-700 text-white p-8 md:p-10 text-center">
+        <span class="shine-overlay"></span>
+        <span class="cert-card-icon block text-7xl md:text-8xl mb-5 drop-shadow-2xl">🏃</span>
+        <h3 class="display text-3xl md:text-4xl font-extrabold mb-2">Scrum Master</h3>
+        <p class="text-blue-100 text-base md:text-lg mb-6">8 modules · ~30 hours</p>
+        <span class="cert-card-cta inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/15 ring-1 ring-white/30 backdrop-blur-sm text-sm md:text-base font-semibold">
+          Open course <span aria-hidden="true">→</span>
+        </span>
+      </a>
+
+      <!-- PMP card -->
+      <a href="02-PMP/" class="cert-card group block rounded-2xl border border-slate-200 bg-gradient-to-br from-orange-500 to-red-600 text-white p-8 md:p-10 text-center">
+        <span class="shine-overlay"></span>
+        <span class="cert-card-icon block text-7xl md:text-8xl mb-5 drop-shadow-2xl">🧭</span>
+        <h3 class="display text-3xl md:text-4xl font-extrabold mb-2">PMP</h3>
+        <p class="text-orange-100 text-base md:text-lg mb-6">10 modules · ~115 hours · PMP</p>
+        <span class="cert-card-cta inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/15 ring-1 ring-white/30 backdrop-blur-sm text-sm md:text-base font-semibold">
+          Open course <span aria-hidden="true">→</span>
+        </span>
+      </a>
+
+        </div>
+      </div>
+
+      <!-- ===== category: IT, Cloud & Systems Administration (14 cards — unified IT track) =====
+           Organized as 3 sub-tracks: CompTIA foundation → Cloud platforms → Microsoft enterprise.
+           Each card has a prominent cert-code badge in the top-right corner so visitors
+           immediately see which exam the course preps for. -->
+      <div class="reveal">
+        <div class="text-center mb-10 pt-10 border-t border-slate-200">
+          <div class="cat-badge inline-flex items-center justify-center w-20 h-20 md:w-24 md:h-24 rounded-2xl bg-gradient-to-br from-slate-700 via-blue-700 to-cyan-600 text-4xl md:text-5xl mb-5 shadow-xl shadow-blue-500/40 ring-4 ring-white">
+            <span class="drop-shadow-lg">💻</span>
+          </div>
+          <h3 class="display text-4xl md:text-5xl font-extrabold mb-2">IT, Cloud &amp; Systems Administration</h3>
+          <p class="text-slate-600 text-base md:text-lg">12 industry certifications · CompTIA foundations → AWS / Azure cloud → Microsoft enterprise admin · the complete IT career ladder</p>
+        </div>
+
+        <!-- Sub-track 1: CompTIA foundation (vendor-neutral) -->
+        <p class="text-center text-sm font-extrabold tracking-[0.22em] uppercase text-slate-500 mb-5">— CompTIA foundation (vendor-neutral) —</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5 max-w-[1500px] mx-auto mb-14">
+
+          <a href="21-CompTIA-A-Plus/" class="cert-card cert-card-mini group relative block rounded-2xl border border-slate-200 bg-gradient-to-br from-blue-600 to-cyan-700 text-white p-7 text-center">
+            <span class="cert-code-badge">220-1101 / 1102</span>
+            <span class="shine-overlay"></span>
+            <span class="cert-card-icon block text-6xl mb-4 drop-shadow-2xl">🛠️</span>
+            <h3 class="display text-xl md:text-2xl font-extrabold mb-2">CompTIA A+</h3>
+            <p class="text-cyan-50 text-sm mb-5">Core 1 + Core 2 · 12 modules · entry-level IT support</p>
+            <span class="cert-card-cta inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 ring-1 ring-white/30 text-sm font-semibold">
+              Open course <span aria-hidden="true">→</span>
+            </span>
+          </a>
+
+          <a href="22-CompTIA-Network-Plus/" class="cert-card cert-card-mini group relative block rounded-2xl border border-slate-200 bg-gradient-to-br from-blue-700 to-sky-600 text-white p-7 text-center">
+            <span class="cert-code-badge">N10-009</span>
+            <span class="shine-overlay"></span>
+            <span class="cert-card-icon block text-6xl mb-4 drop-shadow-2xl">🌐</span>
+            <h3 class="display text-xl md:text-2xl font-extrabold mb-2">CompTIA Network+</h3>
+            <p class="text-sky-50 text-sm mb-5">8 modules · TCP/IP, routing, wireless, security</p>
+            <span class="cert-card-cta inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 ring-1 ring-white/30 text-sm font-semibold">
+              Open course <span aria-hidden="true">→</span>
+            </span>
+          </a>
+
+          <a href="23-CompTIA-Linux-Plus/" class="cert-card cert-card-mini group relative block rounded-2xl border border-slate-200 bg-gradient-to-br from-yellow-600 to-amber-700 text-white p-7 text-center">
+            <span class="cert-code-badge">XK0-005</span>
+            <span class="shine-overlay"></span>
+            <span class="cert-card-icon block text-6xl mb-4 drop-shadow-2xl">🐧</span>
+            <h3 class="display text-xl md:text-2xl font-extrabold mb-2">CompTIA Linux+</h3>
+            <p class="text-amber-50 text-sm mb-5">8 modules · distro-agnostic Linux mastery</p>
+            <span class="cert-card-cta inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 ring-1 ring-white/30 text-sm font-semibold">
+              Open course <span aria-hidden="true">→</span>
+            </span>
+          </a>
+
+          <a href="24-CompTIA-Server-Plus/" class="cert-card cert-card-mini group relative block rounded-2xl border border-slate-200 bg-gradient-to-br from-slate-600 to-slate-900 text-white p-7 text-center">
+            <span class="cert-code-badge">SK0-005</span>
+            <span class="shine-overlay"></span>
+            <span class="cert-card-icon block text-6xl mb-4 drop-shadow-2xl">🗄️</span>
+            <h3 class="display text-xl md:text-2xl font-extrabold mb-2">CompTIA Server+</h3>
+            <p class="text-slate-100 text-sm mb-5">8 modules · hardware, virtualization, storage, DR</p>
+            <span class="cert-card-cta inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 ring-1 ring-white/30 text-sm font-semibold">
+              Open course <span aria-hidden="true">→</span>
+            </span>
+          </a>
+
+          <a href="09-CompTIA-Security-Plus/" class="cert-card cert-card-mini group relative block rounded-2xl border border-slate-200 bg-gradient-to-br from-red-600 to-red-900 text-white p-7 text-center">
+            <span class="cert-code-badge">SY0-701</span>
+            <span class="shine-overlay"></span>
+            <span class="cert-card-icon block text-6xl mb-4 drop-shadow-2xl">🛡️</span>
+            <h3 class="display text-xl md:text-2xl font-extrabold mb-2">CompTIA Security+</h3>
+            <p class="text-red-50 text-sm mb-5">10 modules · ~60 hours · cybersecurity baseline</p>
+            <span class="cert-card-cta inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 ring-1 ring-white/30 text-sm font-semibold">
+              Open course <span aria-hidden="true">→</span>
+            </span>
+          </a>
+
+        </div>
+
+        <!-- Sub-track 2: Cloud platforms (AWS + Azure foundation through admin) -->
+        <p class="text-center text-sm font-extrabold tracking-[0.22em] uppercase text-slate-500 mb-5">— Cloud platforms (AWS · Azure) —</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-[1500px] mx-auto mb-14">
+
+          <a href="03-AWS-Cloud-Practitioner/" class="cert-card group relative block rounded-2xl border border-slate-200 bg-gradient-to-br from-amber-400 to-orange-600 text-white p-7 text-center">
+            <span class="cert-code-badge">CLF-C02</span>
+            <span class="shine-overlay"></span>
+            <span class="cert-card-icon block text-7xl mb-4 drop-shadow-2xl">☁️</span>
+            <h3 class="display text-2xl md:text-3xl font-extrabold mb-2">AWS Cloud Practitioner</h3>
+            <p class="text-amber-50 text-sm md:text-base mb-5">8 modules · ~25 hours · cloud foundations</p>
+            <span class="cert-card-cta inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 ring-1 ring-white/30 backdrop-blur-sm text-sm font-semibold">
+              Open course <span aria-hidden="true">→</span>
+            </span>
+          </a>
+
+          <a href="04-AWS-Solutions-Architect-Associate/" class="cert-card group relative block rounded-2xl border border-slate-200 bg-gradient-to-br from-orange-500 to-orange-800 text-white p-7 text-center">
+            <span class="cert-code-badge">SAA-C03</span>
+            <span class="shine-overlay"></span>
+            <span class="cert-card-icon block text-7xl mb-4 drop-shadow-2xl">🏗️</span>
+            <h3 class="display text-2xl md:text-3xl font-extrabold mb-2">AWS Solutions Architect</h3>
+            <p class="text-orange-50 text-sm md:text-base mb-5">10 modules · ~50 hours · architect associate</p>
+            <span class="cert-card-cta inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 ring-1 ring-white/30 backdrop-blur-sm text-sm font-semibold">
+              Open course <span aria-hidden="true">→</span>
+            </span>
+          </a>
+
+          <a href="05-Azure-Fundamentals/" class="cert-card group relative block rounded-2xl border border-slate-200 bg-gradient-to-br from-cyan-500 to-cyan-800 text-white p-7 text-center">
+            <span class="cert-code-badge">AZ-900</span>
+            <span class="shine-overlay"></span>
+            <span class="cert-card-icon block text-7xl mb-4 drop-shadow-2xl">🌥️</span>
+            <h3 class="display text-2xl md:text-3xl font-extrabold mb-2">Azure Fundamentals</h3>
+            <p class="text-cyan-50 text-sm md:text-base mb-5">6 modules · ~15 hours · Azure starter</p>
+            <span class="cert-card-cta inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 ring-1 ring-white/30 backdrop-blur-sm text-sm font-semibold">
+              Open course <span aria-hidden="true">→</span>
+            </span>
+          </a>
+
+          <a href="06-Azure-Administrator/" class="cert-card group relative block rounded-2xl border border-slate-200 bg-gradient-to-br from-sky-500 to-blue-800 text-white p-7 text-center">
+            <span class="cert-code-badge">AZ-104</span>
+            <span class="shine-overlay"></span>
+            <span class="cert-card-icon block text-7xl mb-4 drop-shadow-2xl">🛠️</span>
+            <h3 class="display text-2xl md:text-3xl font-extrabold mb-2">Azure Administrator</h3>
+            <p class="text-sky-50 text-sm md:text-base mb-5">10 modules · ~50 hours · cloud admin associate</p>
+            <span class="cert-card-cta inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 ring-1 ring-white/30 backdrop-blur-sm text-sm font-semibold">
+              Open course <span aria-hidden="true">→</span>
+            </span>
+          </a>
+
+        </div>
+
+        <!-- Sub-track 3: Microsoft enterprise admin -->
+        <p class="text-center text-sm font-extrabold tracking-[0.22em] uppercase text-slate-500 mb-5">— Microsoft enterprise admin (Windows Server · Endpoint · Identity) —</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[1500px] mx-auto">
+
+          <a href="25-Windows-Server-Hybrid-Admin/" class="cert-card group relative block rounded-2xl border border-slate-200 bg-gradient-to-br from-blue-700 to-cyan-700 text-white p-8 md:p-10 text-center">
+            <span class="cert-code-badge">AZ-800 / 801</span>
+            <span class="shine-overlay"></span>
+            <span class="cert-card-icon block text-7xl md:text-8xl mb-5 drop-shadow-2xl">🪟</span>
+            <h3 class="display text-3xl md:text-4xl font-extrabold mb-2">Windows Server Hybrid</h3>
+            <p class="text-cyan-50 text-base md:text-lg mb-6">10 modules · AD + Hyper-V + Azure Arc</p>
+            <span class="cert-card-cta inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/15 ring-1 ring-white/30 backdrop-blur-sm text-sm md:text-base font-semibold">
+              Open course <span aria-hidden="true">→</span>
+            </span>
+          </a>
+
+          <a href="26-Microsoft-Endpoint-Admin/" class="cert-card group relative block rounded-2xl border border-slate-200 bg-gradient-to-br from-indigo-600 to-violet-700 text-white p-8 md:p-10 text-center">
+            <span class="cert-code-badge">MD-102</span>
+            <span class="shine-overlay"></span>
+            <span class="cert-card-icon block text-7xl md:text-8xl mb-5 drop-shadow-2xl">💻</span>
+            <h3 class="display text-3xl md:text-4xl font-extrabold mb-2">Endpoint Administrator</h3>
+            <p class="text-indigo-50 text-base md:text-lg mb-6">8 modules · Windows 11 + Intune + Autopilot</p>
+            <span class="cert-card-cta inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/15 ring-1 ring-white/30 backdrop-blur-sm text-sm md:text-base font-semibold">
+              Open course <span aria-hidden="true">→</span>
+            </span>
+          </a>
+
+          <a href="27-Microsoft-Identity-Access-Admin/" class="cert-card group relative block rounded-2xl border border-slate-200 bg-gradient-to-br from-purple-700 to-pink-600 text-white p-8 md:p-10 text-center">
+            <span class="cert-code-badge">SC-300</span>
+            <span class="shine-overlay"></span>
+            <span class="cert-card-icon block text-7xl md:text-8xl mb-5 drop-shadow-2xl">🪪</span>
+            <h3 class="display text-3xl md:text-4xl font-extrabold mb-2">Identity &amp; Access Admin</h3>
+            <p class="text-pink-50 text-base md:text-lg mb-6">8 modules · Entra ID + Conditional Access + PIM</p>
+            <span class="cert-card-cta inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/15 ring-1 ring-white/30 backdrop-blur-sm text-sm md:text-base font-semibold">
+              Open course <span aria-hidden="true">→</span>
+            </span>
+          </a>
+
+        </div>
+      </div>
+
+      <!-- ===== category: Generative & Agentic AI (7 cards, foundation→advanced) =====
+           Reordered by difficulty tier per Humayun's "foundation first, advanced
+           last" arrangement principle. Row 1 (4 cards): foundation-tier entry
+           courses — no/minimal prereqs. Row 2 (3 cards): intermediate-to-advanced
+           specialty courses. -->
+      <div class="reveal">
+        <div class="text-center mb-10 pt-10 border-t border-slate-200">
+          <div class="cat-badge inline-flex items-center justify-center w-20 h-20 md:w-24 md:h-24 rounded-2xl bg-gradient-to-br from-indigo-600 via-violet-600 to-fuchsia-600 text-4xl md:text-5xl mb-5 shadow-xl shadow-violet-500/40 ring-4 ring-white">
+            <span class="drop-shadow-lg">🤖</span>
+          </div>
+          <h3 class="display text-4xl md:text-5xl font-extrabold mb-2">Generative &amp; Agentic AI</h3>
+          <p class="text-slate-600 text-base md:text-lg">7 certifications · foundation to advanced · the highest-demand AI specialist ladder of 2026</p>
+        </div>
+
+        <!-- Row 1: Foundation tier — entry-level, no/minimal prereqs (4 cards) -->
+        <p class="text-center text-sm font-extrabold tracking-[0.22em] uppercase text-slate-500 mb-5">— Foundation tier · entry-level —</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-[1500px] mx-auto mb-14">
+
+          <a href="07-AWS-AI-Practitioner/" class="cert-card cert-card-mini group relative block rounded-2xl border border-slate-200 bg-gradient-to-br from-purple-500 to-purple-900 text-white p-7 text-center">
+            <span class="cert-code-badge">AIF-C01</span>
+            <span class="shine-overlay"></span>
+            <span class="cert-card-icon block text-6xl mb-4 drop-shadow-2xl">🤖</span>
+            <h3 class="display text-2xl md:text-3xl font-extrabold mb-2">AWS AI Practitioner</h3>
+            <p class="text-purple-50 text-sm mb-5">8 modules · ~25 hours · entry-level AI on AWS · $100</p>
+            <span class="cert-card-cta inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 ring-1 ring-white/30 backdrop-blur-sm text-sm font-semibold">
+              Open course <span aria-hidden="true">→</span>
+            </span>
+          </a>
+
+          <a href="08-Azure-AI-Engineer/" class="cert-card cert-card-mini group relative block rounded-2xl border border-slate-200 bg-gradient-to-br from-pink-500 to-pink-800 text-white p-7 text-center">
+            <span class="cert-code-badge">AI-102</span>
+            <span class="shine-overlay"></span>
+            <span class="cert-card-icon block text-6xl mb-4 drop-shadow-2xl">🧠</span>
+            <h3 class="display text-2xl md:text-3xl font-extrabold mb-2">Azure AI Engineer</h3>
+            <p class="text-pink-50 text-sm mb-5">8 modules · ~40 hours · GenAI on Azure · $165</p>
+            <span class="cert-card-cta inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 ring-1 ring-white/30 backdrop-blur-sm text-sm font-semibold">
+              Open course <span aria-hidden="true">→</span>
+            </span>
+          </a>
+
+          <a href="29-Prompt-Engineering-Specialist/" class="cert-card cert-card-mini group relative block rounded-2xl border border-slate-200 bg-gradient-to-br from-fuchsia-600 to-pink-800 text-white p-7 text-center">
+            <span class="cert-code-badge">Cert Hub Original</span>
+            <span class="shine-overlay"></span>
+            <span class="cert-card-icon block text-6xl mb-4 drop-shadow-2xl">✍️</span>
+            <h3 class="display text-2xl md:text-3xl font-extrabold mb-2">Prompt Engineering Specialist</h3>
+            <p class="text-pink-50 text-sm mb-5">8 modules · vendor-neutral · Claude · GPT · Gemini · Llama</p>
+            <span class="cert-card-cta inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 ring-1 ring-white/30 backdrop-blur-sm text-sm font-semibold">
+              Open course <span aria-hidden="true">→</span>
+            </span>
+          </a>
+
+          <a href="32-Google-AI-Pro/" class="cert-card cert-card-mini group relative block rounded-2xl border border-slate-200 bg-gradient-to-br from-blue-500 via-green-500 to-yellow-500 text-white p-7 text-center">
+            <span class="cert-code-badge">GenAI Leader + PMLE</span>
+            <span class="shine-overlay"></span>
+            <span class="cert-card-icon block text-6xl mb-4 drop-shadow-2xl">💎</span>
+            <h3 class="display text-2xl md:text-3xl font-extrabold mb-2">Google AI Pro</h3>
+            <p class="text-blue-50 text-sm mb-5">10 modules · Gemini · Vertex AI · $99 entry → $200 flagship</p>
+            <span class="cert-card-cta inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 ring-1 ring-white/30 backdrop-blur-sm text-sm font-semibold">
+              Open course <span aria-hidden="true">→</span>
+            </span>
+          </a>
+
+        </div>
+
+        <!-- Row 2: Intermediate → advanced (3 cards) -->
+        <p class="text-center text-sm font-extrabold tracking-[0.22em] uppercase text-slate-500 mb-5">— Intermediate to advanced · specialty tier —</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[1500px] mx-auto">
+
+          <a href="28-Claude-Architect/" class="cert-card group relative block rounded-2xl border border-slate-200 bg-gradient-to-br from-indigo-600 to-violet-900 text-white p-8 md:p-10 text-center">
+            <span class="cert-code-badge">Cert Hub Original</span>
+            <span class="shine-overlay"></span>
+            <span class="cert-card-icon block text-7xl md:text-8xl mb-5 drop-shadow-2xl">🧬</span>
+            <h3 class="display text-3xl md:text-4xl font-extrabold mb-2">Claude Architect</h3>
+            <p class="text-indigo-50 text-base md:text-lg mb-6">8 modules · Constitutional AI · MCP · agents · RAG</p>
+            <span class="cert-card-cta inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/15 ring-1 ring-white/30 backdrop-blur-sm text-sm md:text-base font-semibold">
+              Open course <span aria-hidden="true">→</span>
+            </span>
+          </a>
+
+          <a href="30-Generative-AI-Engineer/" class="cert-card group relative block rounded-2xl border border-slate-200 bg-gradient-to-br from-yellow-500 to-orange-700 text-white p-8 md:p-10 text-center">
+            <span class="cert-code-badge">Cert Hub Original</span>
+            <span class="shine-overlay"></span>
+            <span class="cert-card-icon block text-7xl md:text-8xl mb-5 drop-shadow-2xl">⚡</span>
+            <h3 class="display text-3xl md:text-4xl font-extrabold mb-2">Generative AI Engineer</h3>
+            <p class="text-amber-50 text-base md:text-lg mb-6">10 modules · RAG · LangChain · agents · MLOps · full-stack</p>
+            <span class="cert-card-cta inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/15 ring-1 ring-white/30 backdrop-blur-sm text-sm md:text-base font-semibold">
+              Open course <span aria-hidden="true">→</span>
+            </span>
+          </a>
+
+          <a href="31-AWS-ML-Specialty/" class="cert-card group relative block rounded-2xl border border-slate-200 bg-gradient-to-br from-red-500 to-orange-900 text-white p-8 md:p-10 text-center">
+            <span class="cert-code-badge">MLS-C01</span>
+            <span class="shine-overlay"></span>
+            <span class="cert-card-icon block text-7xl md:text-8xl mb-5 drop-shadow-2xl">🔬</span>
+            <h3 class="display text-3xl md:text-4xl font-extrabold mb-2">AWS ML Specialty</h3>
+            <p class="text-orange-50 text-base md:text-lg mb-6">10 modules · SageMaker · Bedrock · MLOps · Specialty tier · $300</p>
+            <span class="cert-card-cta inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/15 ring-1 ring-white/30 backdrop-blur-sm text-sm md:text-base font-semibold">
+              Open course <span aria-hidden="true">→</span>
+            </span>
+          </a>
+
+        </div>
+      </div>
+
+      <!-- ===== category: Supply Chain & Operations (4 cards, centered 2x2) ===== -->
+      <div class="reveal">
+        <div class="text-center mb-10 pt-10 border-t border-slate-200">
+          <div class="cat-badge inline-flex items-center justify-center w-20 h-20 md:w-24 md:h-24 rounded-2xl bg-gradient-to-br from-teal-500 via-emerald-500 to-indigo-600 text-4xl md:text-5xl mb-5 shadow-xl shadow-emerald-500/40 ring-4 ring-white">
+            <span class="drop-shadow-lg">🔗</span>
+          </div>
+          <h3 class="display text-4xl md:text-5xl font-extrabold mb-2">Supply Chain &amp; Operations</h3>
+          <p class="text-slate-600 text-base md:text-lg">4 international certifications · production, logistics, sourcing</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-[1300px] mx-auto">
+
+      <!-- Foundation tier (no eligibility requirements) first, then degree+experience certs -->
+
+      <!-- ASCM CPIM card — foundation (no eligibility required) -->
+      <a href="11-ASCM-CPIM/" class="cert-card group block rounded-2xl border border-slate-200 bg-gradient-to-br from-indigo-500 to-indigo-900 text-white p-8 md:p-10 text-center">
+        <span class="shine-overlay"></span>
+        <span class="cert-card-icon block text-7xl md:text-8xl mb-5 drop-shadow-2xl">🏭</span>
+        <h3 class="display text-3xl md:text-4xl font-extrabold mb-2">ASCM CPIM</h3>
+        <p class="text-indigo-50 text-base md:text-lg mb-6">8 modules · ~45 hours · Planning &amp; Inventory</p>
+        <span class="cert-card-cta inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/15 ring-1 ring-white/30 backdrop-blur-sm text-sm md:text-base font-semibold">
+          Open course <span aria-hidden="true">→</span>
+        </span>
+      </a>
+
+      <!-- ASCM CLTD card — foundation (no eligibility required) -->
+      <a href="12-ASCM-CLTD/" class="cert-card group block rounded-2xl border border-slate-200 bg-gradient-to-br from-emerald-500 to-emerald-800 text-white p-8 md:p-10 text-center">
+        <span class="shine-overlay"></span>
+        <span class="cert-card-icon block text-7xl md:text-8xl mb-5 drop-shadow-2xl">🚛</span>
+        <h3 class="display text-3xl md:text-4xl font-extrabold mb-2">ASCM CLTD</h3>
+        <p class="text-emerald-50 text-base md:text-lg mb-6">8 modules · ~45 hours · Logistics &amp; Distribution</p>
+        <span class="cert-card-cta inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/15 ring-1 ring-white/30 backdrop-blur-sm text-sm md:text-base font-semibold">
+          Open course <span aria-hidden="true">→</span>
+        </span>
+      </a>
+
+      <!-- ASCM CSCP card — senior (requires degree + 2 yrs OR 5 yrs experience) -->
+      <a href="10-ASCM-CSCP/" class="cert-card group block rounded-2xl border border-slate-200 bg-gradient-to-br from-teal-600 to-teal-900 text-white p-8 md:p-10 text-center">
+        <span class="shine-overlay"></span>
+        <span class="cert-card-icon block text-7xl md:text-8xl mb-5 drop-shadow-2xl">📦</span>
+        <h3 class="display text-3xl md:text-4xl font-extrabold mb-2">ASCM CSCP</h3>
+        <p class="text-teal-50 text-base md:text-lg mb-6">10 modules · ~65 hours · Supply Chain Pro</p>
+        <span class="cert-card-cta inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/15 ring-1 ring-white/30 backdrop-blur-sm text-sm md:text-base font-semibold">
+          Open course <span aria-hidden="true">→</span>
+        </span>
+      </a>
+
+      <!-- ISM CPSM card — senior procurement (requires degree + 3 yrs OR 5 yrs experience) -->
+      <a href="13-ISM-CPSM/" class="cert-card group block rounded-2xl border border-slate-200 bg-gradient-to-br from-violet-600 to-violet-900 text-white p-8 md:p-10 text-center">
+        <span class="shine-overlay"></span>
+        <span class="cert-card-icon block text-7xl md:text-8xl mb-5 drop-shadow-2xl">🤝</span>
+        <h3 class="display text-3xl md:text-4xl font-extrabold mb-2">ISM CPSM</h3>
+        <p class="text-violet-50 text-base md:text-lg mb-6">8 modules · ~50 hours · Supply Management</p>
+        <span class="cert-card-cta inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/15 ring-1 ring-white/30 backdrop-blur-sm text-sm md:text-base font-semibold">
+          Open course <span aria-hidden="true">→</span>
+        </span>
+      </a>
+
+        </div>
+      </div>
+
+      <!-- ===== category: AI Marketing (5-course ladder, 3-col grid) ===== -->
+      <div class="reveal">
+        <div class="text-center mb-10 pt-10 border-t border-slate-200">
+          <div class="cat-badge inline-flex items-center justify-center w-20 h-20 md:w-24 md:h-24 rounded-2xl bg-gradient-to-br from-rose-500 via-fuchsia-500 to-amber-500 text-4xl md:text-5xl mb-5 shadow-xl shadow-fuchsia-500/40 ring-4 ring-white">
+            <span class="drop-shadow-lg">🚀</span>
+          </div>
+          <h3 class="display text-4xl md:text-5xl font-extrabold mb-2">AI Digital Marketing</h3>
+          <p class="text-slate-600 text-base md:text-lg">5-course ladder · foundations &rarr; practitioner &rarr; strategist &rarr; entrepreneur &rarr; portfolio capstone</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- AI Digital Marketing Foundations card -->
+      <a href="14-AI-Marketing-Foundations/" class="cert-card group block rounded-2xl border border-slate-200 bg-gradient-to-br from-rose-500 to-rose-800 text-white p-8 md:p-10 text-center">
+        <span class="shine-overlay"></span>
+        <span class="cert-card-icon block text-7xl md:text-8xl mb-5 drop-shadow-2xl">📣</span>
+        <h3 class="display text-3xl md:text-4xl font-extrabold mb-2">Foundations</h3>
+        <p class="text-rose-50 text-base md:text-lg mb-6">10 modules · ~50 hours · Beginner</p>
+        <span class="cert-card-cta inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/15 ring-1 ring-white/30 backdrop-blur-sm text-sm md:text-base font-semibold">
+          Open course <span aria-hidden="true">→</span>
+        </span>
+      </a>
+
+      <!-- AI Digital Marketing Practitioner card -->
+      <a href="15-AI-Marketing-Practitioner/" class="cert-card group block rounded-2xl border border-slate-200 bg-gradient-to-br from-fuchsia-500 to-fuchsia-800 text-white p-8 md:p-10 text-center">
+        <span class="shine-overlay"></span>
+        <span class="cert-card-icon block text-7xl md:text-8xl mb-5 drop-shadow-2xl">🎯</span>
+        <h3 class="display text-3xl md:text-4xl font-extrabold mb-2">Practitioner</h3>
+        <p class="text-fuchsia-50 text-base md:text-lg mb-6">10 modules · ~70 hours · Intermediate</p>
+        <span class="cert-card-cta inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/15 ring-1 ring-white/30 backdrop-blur-sm text-sm md:text-base font-semibold">
+          Open course <span aria-hidden="true">→</span>
+        </span>
+      </a>
+
+      <!-- AI Digital Marketing Strategist card -->
+      <a href="16-AI-Marketing-Strategist/" class="cert-card group block rounded-2xl border border-slate-200 bg-gradient-to-br from-purple-500 to-purple-900 text-white p-8 md:p-10 text-center">
+        <span class="shine-overlay"></span>
+        <span class="cert-card-icon block text-7xl md:text-8xl mb-5 drop-shadow-2xl">📈</span>
+        <h3 class="display text-3xl md:text-4xl font-extrabold mb-2">Strategist</h3>
+        <p class="text-purple-50 text-base md:text-lg mb-6">10 modules · ~80 hours · Advanced</p>
+        <span class="cert-card-cta inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/15 ring-1 ring-white/30 backdrop-blur-sm text-sm md:text-base font-semibold">
+          Open course <span aria-hidden="true">→</span>
+        </span>
+      </a>
+
+      <!-- AI Digital Marketing Entrepreneur card -->
+      <a href="17-AI-Marketing-Entrepreneur/" class="cert-card group block rounded-2xl border border-slate-200 bg-gradient-to-br from-amber-500 to-amber-800 text-white p-8 md:p-10 text-center">
+        <span class="shine-overlay"></span>
+        <span class="cert-card-icon block text-7xl md:text-8xl mb-5 drop-shadow-2xl">💼</span>
+        <h3 class="display text-3xl md:text-4xl font-extrabold mb-2">Entrepreneur</h3>
+        <p class="text-amber-50 text-base md:text-lg mb-6">8 modules · ~40 hours · Expert</p>
+        <span class="cert-card-cta inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/15 ring-1 ring-white/30 backdrop-blur-sm text-sm md:text-base font-semibold">
+          Open course <span aria-hidden="true">→</span>
+        </span>
+      </a>
+
+      <!-- AI Digital Marketing Capstone Portfolio card -->
+      <a href="18-AI-Marketing-Capstone-Portfolio/" class="cert-card group block rounded-2xl border border-slate-200 bg-gradient-to-br from-yellow-500 to-yellow-800 text-white p-8 md:p-10 text-center">
+        <span class="shine-overlay"></span>
+        <span class="cert-card-icon block text-7xl md:text-8xl mb-5 drop-shadow-2xl">🏆</span>
+        <h3 class="display text-3xl md:text-4xl font-extrabold mb-2">Capstone Portfolio</h3>
+        <p class="text-yellow-50 text-base md:text-lg mb-6">8 modules · ~50 hours · Portfolio</p>
+        <span class="cert-card-cta inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/15 ring-1 ring-white/30 backdrop-blur-sm text-sm md:text-base font-semibold">
+          Open course <span aria-hidden="true">→</span>
+        </span>
+      </a>
+
+        </div>
+      </div>
+
+      <!-- ===== category: Bitcoin & E-Commerce (2 cards, centered 2-col) ===== -->
+      <div class="reveal">
+        <div class="text-center mb-10 pt-10 border-t border-slate-200">
+          <div class="cat-badge inline-flex items-center justify-center w-20 h-20 md:w-24 md:h-24 rounded-2xl bg-gradient-to-br from-orange-500 via-pink-500 to-purple-600 text-4xl md:text-5xl mb-5 shadow-xl shadow-pink-500/40 ring-4 ring-white">
+            <span class="drop-shadow-lg">💰</span>
+          </div>
+          <h3 class="display text-4xl md:text-5xl font-extrabold mb-2">Bitcoin &amp; E-Commerce</h3>
+          <p class="text-slate-600 text-base md:text-lg">2 industry tracks · Princeton → CBP → UNic MSc ladder · Google → Adobe Commerce → Wharton ladder</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-[1100px] mx-auto">
+
+      <!-- Bitcoin & Cryptocurrency card -->
+      <a href="19-Bitcoin-Cryptocurrency/" class="cert-card group block rounded-2xl border border-slate-200 bg-gradient-to-br from-orange-500 to-orange-900 text-white p-8 md:p-10 text-center">
+        <span class="shine-overlay"></span>
+        <span class="cert-card-icon block text-7xl md:text-8xl mb-5 drop-shadow-2xl">₿</span>
+        <h3 class="display text-3xl md:text-4xl font-extrabold mb-2">Bitcoin &amp; Cryptocurrency</h3>
+        <p class="text-orange-50 text-base md:text-lg mb-6">10 modules · ~80 hours · CBP-aligned</p>
+        <span class="cert-card-cta inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/15 ring-1 ring-white/30 backdrop-blur-sm text-sm md:text-base font-semibold">
+          Open course <span aria-hidden="true">→</span>
+        </span>
+      </a>
+
+      <!-- E-Commerce card -->
+      <a href="20-E-Commerce/" class="cert-card group block rounded-2xl border border-slate-200 bg-gradient-to-br from-pink-500 to-purple-800 text-white p-8 md:p-10 text-center">
+        <span class="shine-overlay"></span>
+        <span class="cert-card-icon block text-7xl md:text-8xl mb-5 drop-shadow-2xl">🛒</span>
+        <h3 class="display text-3xl md:text-4xl font-extrabold mb-2">E-Commerce</h3>
+        <p class="text-pink-50 text-base md:text-lg mb-6">10 modules · ~120 hours · Adobe Commerce + Wharton aligned</p>
+        <span class="cert-card-cta inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/15 ring-1 ring-white/30 backdrop-blur-sm text-sm md:text-base font-semibold">
+          Open course <span aria-hidden="true">→</span>
+        </span>
+      </a>
+
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </section>
+
+{% include site-footer.html %}
+
+{% include site-scripts.html %}
+</body>
+</html>

@@ -1,0 +1,110 @@
+  <!-- ============== NAV (sleek dark bar — admin-tool inspired) ============== -->
+  <nav class="sticky top-0 z-50 bg-slate-950/92 nav-blur border-b border-slate-800/60">
+    <div class="max-w-[1700px] mx-auto px-4 sm:px-6 lg:px-8 h-14 flex items-center justify-between">
+      <!-- Left: brand wordmark -->
+      <a href="{{ '/' | relative_url }}" class="nav-brand">
+        <span class="nav-brand-mark">🎓</span>
+        <span>The Cert Hub</span>
+      </a>
+
+      <!-- Center: primary nav (text-only, uniform) -->
+      <div class="hidden md:flex items-center gap-0.5">
+        <a href="{{ '/courses/' | relative_url }}" class="nav-link">Courses</a>
+        <a href="Resources/International-Certifications/" class="nav-link">Certifications</a>
+        <a href="{{ '/how-it-works/' | relative_url }}" class="nav-link">How It Works</a>
+        <a href="{{ '/about/' | relative_url }}" class="nav-link">About the Creator</a>
+        <!-- Admin-only: revealed by JS when /api/auth/me reports superuser/administrator -->
+        <a href="Manage-Users/" class="nav-link nav-admin" data-auth-state="admin">Manage Users</a>
+      </div>
+
+      <!-- Right cluster: CTA + auth -->
+      <div class="flex items-center gap-2">
+        <!-- ENROLL NOW (the only colored element — primary CTA) -->
+        <a href="enroll/" class="nav-cta">
+          Enroll Now <span aria-hidden="true">→</span>
+        </a>
+
+        <!-- Anonymous: SIGN IN text link -->
+        <a href="login/" class="nav-link nav-signin" data-auth-state="anonymous">Sign In</a>
+
+        <!-- Authenticated: user chip (last, at the far right) -->
+        <div class="account-chip" data-auth-state="authenticated">
+          <button class="account-chip-btn" id="account-chip-btn" aria-haspopup="true" aria-expanded="false">
+            <span class="account-avatar" id="account-avatar">U</span>
+            <span class="account-name" id="account-name">…</span>
+            <span class="account-caret">▾</span>
+          </button>
+          <div class="account-menu" id="account-menu" role="menu">
+            <div class="account-menu-header">
+              <div class="account-menu-name" id="account-menu-name">…</div>
+              <div class="account-menu-email" id="account-menu-email">…</div>
+              <div class="account-menu-role" id="account-menu-role">…</div>
+            </div>
+            <a href="/api/auth/logout" class="account-menu-item account-menu-danger">
+              <span>🚪</span> Sign out
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Auth-state toggle: reveals admin chip + populates user email/avatar -->
+  <script>
+    (function () {
+      fetch('/api/auth/me', { credentials: 'same-origin' })
+        .then(function (r) { return r.ok ? r.json() : { authenticated: false }; })
+        .then(function (data) {
+          var state = data && data.authenticated ? 'authenticated' : 'anonymous';
+          var isAdmin = data && (data.role === 'superuser' || data.role === 'administrator');
+
+          document.querySelectorAll('[data-auth-state]').forEach(function (el) {
+            var want = el.getAttribute('data-auth-state');
+            var show = (want === state) || (want === 'admin' && isAdmin);
+            if (show) {
+              if (el.classList.contains('account-chip')) {
+                el.style.display = 'inline-flex';
+              } else if (el.classList.contains('account-menu-item')) {
+                el.style.display = 'flex';
+              } else {
+                el.style.display = 'inline-flex';
+              }
+            }
+          });
+
+          if (data.authenticated) {
+            var email = data.email || '';
+            var name = data.name || email.split('@')[0] || 'User';
+            var role = data.role || 'student';
+            // Truncate name if too long for the chip
+            var displayName = name.length > 18 ? name.substring(0, 16) + '…' : name;
+            document.getElementById('account-name').textContent = displayName;
+            // Avatar: first letter of name (uppercase)
+            document.getElementById('account-avatar').textContent = (name[0] || '?').toUpperCase();
+            // Dropdown header shows both name (big) and email (small)
+            document.getElementById('account-menu-name').textContent = name;
+            document.getElementById('account-menu-email').textContent = email;
+            var roleLabel = role === 'superuser' ? '👑 Super-user' : role === 'administrator' ? '🛡️ Administrator' : '🎓 Student';
+            document.getElementById('account-menu-role').textContent = roleLabel;
+          }
+        })
+        .catch(function () { /* GitHub Pages: no auth — keep all auth pills hidden */ });
+
+      // Toggle account dropdown
+      var chipBtn = document.getElementById('account-chip-btn');
+      var chipMenu = document.getElementById('account-menu');
+      if (chipBtn) {
+        chipBtn.addEventListener('click', function (e) {
+          e.stopPropagation();
+          var open = chipMenu.classList.toggle('open');
+          chipBtn.setAttribute('aria-expanded', String(open));
+        });
+        document.addEventListener('click', function (e) {
+          if (!chipMenu.contains(e.target) && !chipBtn.contains(e.target)) {
+            chipMenu.classList.remove('open');
+            chipBtn.setAttribute('aria-expanded', 'false');
+          }
+        });
+      }
+    })();
+  </script>

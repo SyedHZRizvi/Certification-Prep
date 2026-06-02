@@ -316,11 +316,19 @@ def check_content_protection_wired(r: Result) -> None:
     else:
         issues.append("_layouts/default.html not found")
     if index.is_file():
-        t = index.read_text(encoding="utf-8", errors="ignore")
-        if "user-select: none" not in t:
-            issues.append("index.html missing CSS user-select:none")
-        if "protect.js" not in t:
-            issues.append("index.html missing <script src=protect.js>")
+        # After the multi-page refactor, index.html uses Jekyll includes for
+        # head/scripts — so user-select CSS lives in _includes/site-head.html
+        # and protect.js reference lives in _includes/site-scripts.html.
+        # We grep across the union.
+        includes_dir = ROOT / "_includes"
+        combined = index.read_text(encoding="utf-8", errors="ignore")
+        if includes_dir.is_dir():
+            for inc in sorted(includes_dir.glob("*.html")):
+                combined += "\n" + inc.read_text(encoding="utf-8", errors="ignore")
+        if "user-select: none" not in combined:
+            issues.append("index.html (incl. _includes/) missing CSS user-select:none")
+        if "protect.js" not in combined:
+            issues.append("index.html (incl. _includes/) missing <script src=protect.js>")
     else:
         issues.append("index.html not found")
     if issues:
@@ -343,17 +351,34 @@ def check_freshness_wired(r: Result) -> None:
             issues.append("version.html missing 'permalink: /version.txt' front matter")
         if "site.time" not in t:
             issues.append("version.html missing {{ site.time | date }} template")
-    for label, p in [("_layouts/default.html", layout), ("index.html", index)]:
-        if not p.is_file():
-            issues.append(f"{label} not found")
-            continue
-        t = p.read_text(encoding="utf-8", errors="ignore")
+    # After the multi-page refactor, index.html uses Jekyll includes for
+    # head + scripts. The freshness machinery still lives in those includes
+    # — so we check the UNION of index.html + _includes/*.html (which
+    # together produce the rendered homepage). The shared layout is still
+    # checked on its own since it stands alone.
+    includes_dir = ROOT / "_includes"
+    includes_text = ""
+    if includes_dir.is_dir():
+        for inc in sorted(includes_dir.glob("*.html")):
+            includes_text += inc.read_text(encoding="utf-8", errors="ignore") + "\n"
+
+    def check_text(label, t):
         if "__CERTHUB_BUILD__" not in t:
             issues.append(f"{label} missing __CERTHUB_BUILD__ inline build-stamp")
         if "freshness.js" not in t:
             issues.append(f"{label} missing <script src=freshness.js>")
         if "no-cache" not in t.lower():
             issues.append(f"{label} missing Cache-Control no-cache meta tag")
+
+    if layout.is_file():
+        check_text("_layouts/default.html", layout.read_text(encoding="utf-8", errors="ignore"))
+    else:
+        issues.append("_layouts/default.html not found")
+
+    if index.is_file():
+        check_text("index.html + _includes/*", index.read_text(encoding="utf-8", errors="ignore") + "\n" + includes_text)
+    else:
+        issues.append("index.html not found")
     if issues:
         for it in issues:
             r.fail(it)
