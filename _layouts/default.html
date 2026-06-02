@@ -224,8 +224,20 @@
     .content p { margin: 0 0 18px; }
     .content a { color: #4f46e5; text-decoration: none; border-bottom: 1px solid rgba(79,70,229,0.3); transition: color .15s, border .15s; }
     .content a:hover { color: #4338ca; border-bottom-color: #4338ca; }
-    .content ul, .content ol { margin: 0 0 18px; padding-left: 28px; }
-    .content li { margin-bottom: 8px; line-height: 1.7; }
+    /* Tailwind CDN's preflight resets `list-style: none` on every <ul>/<ol>
+       site-wide. The rules below restore proper bullets (disc / circle /
+       square for nested ul; decimal / lower-alpha / lower-roman for nested
+       ol) — but only inside .content (the article body), not in the
+       sidebar, footer, or anywhere we intentionally style lists without
+       markers (e.g. .module-list, .extra-links). */
+    .content ul          { list-style: disc;        margin: 0 0 18px; padding-left: 28px; }
+    .content ol          { list-style: decimal;     margin: 0 0 18px; padding-left: 28px; }
+    .content ul ul       { list-style: circle;      margin-top: 6px; margin-bottom: 6px; }
+    .content ul ul ul    { list-style: square; }
+    .content ol ol       { list-style: lower-alpha;  margin-top: 6px; margin-bottom: 6px; }
+    .content ol ol ol    { list-style: lower-roman; }
+    .content li          { margin-bottom: 8px; line-height: 1.7; }
+    .content li::marker  { color: #6366f1; }      /* indigo bullet — branding accent */
     .content blockquote {
       border-left: 4px solid #818cf8;
       background: linear-gradient(90deg, #eef2ff, #faf5ff);
