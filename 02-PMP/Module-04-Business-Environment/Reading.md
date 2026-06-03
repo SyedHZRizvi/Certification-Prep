@@ -280,7 +280,7 @@ You now know:
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - **What a Project Charter is and the EEF/OPA distinction** — covered in [Module 01: Foundations](../Module-01-Foundations/Reading.md).
 > - **Basic finance vocabulary** — NPV, IRR, payback, ROI. If new, a 30-minute video on time-value-of-money is sufficient.
-> - **Optional cross-course preparation:** [13-ISM-CPSM Module 02: Strategic Alignment](../../13-ISM-CPSM/Module-02-Strategic-Alignment/Reading.md) covers the business-case framing for sourcing strategy, useful here too.
+> - **Optional cross-course preparation:** [13-ISM-CPSM Module 02: Strategic Alignment](../../13-ISM-CPSM/Module-02-Category-Management-Sourcing/Reading.md) covers the business-case framing for sourcing strategy, useful here too.
 >
 > If any of these are shaky, pause and review before continuing.
 
@@ -288,7 +288,7 @@ You now know:
 
 > **Where this leads.**
 > - **Inside this course:** [Module 09 — Procurement](../Module-09-Procurement/Reading.md) extends governance + make-or-buy thinking; [Module 10 — Stakeholders](../Module-10-Stakeholders/Reading.md) uses the OCM framework you learn here for stakeholder buy-in.
-> - **Cross-course:** [13-ISM-CPSM Module 07: Risk & Compliance](../../13-ISM-CPSM/Module-07-Risk-Compliance/Reading.md) deepens compliance management for supply-side risk; [10-ASCM-CSCP](../../10-ASCM-CSCP/Module-09-Strategic-Sourcing-Procurement/Reading.md) extends strategic-alignment thinking.
+> - **Cross-course:** [13-ISM-CPSM Module 07: Risk & Compliance](../../13-ISM-CPSM/Module-07-Risk-Compliance-Ethics/Reading.md) deepens compliance management for supply-side risk; [10-ASCM-CSCP](../../10-ASCM-CSCP/Module-09-Sustainability-Risk-CSR/Reading.md) extends strategic-alignment thinking.
 > - **Practice:** [Practice Exam 1](../Practice-Exams/Practice-Exam-1.md) draws ~4 questions from this module; [Final Mock Exam](../Practice-Exams/Final-Mock-Exam.md) adds ~6–7 more (Business Environment is 8% but tested across multiple Q's).
 
 ---

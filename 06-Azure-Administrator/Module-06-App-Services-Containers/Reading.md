@@ -377,7 +377,7 @@ When AZ-104 hands you a scenario, map it to one of those three. The exam *never*
 
 > **Where this leads.**
 > - Inside this course: Module 7 covers the VNet design AKS and App Service VNet integration sit on; Module 8 covers the Front Door + Private Link origin pattern Heineken's portals use; Module 10 covers Container Insights and Workspace-based App Insights.
-> - Cross-course: [`08-Azure-AI-Engineer`](../../08-Azure-AI-Engineer/) modules deploy AI workloads on AKS using the same patterns; AZ-204 (Developer) goes deeper on App Service deployment slot mechanics.
+> - Cross-course: [`08-Azure-AI-Engineer`](../../../08-Azure-AI-Engineer/) modules deploy AI workloads on AKS using the same patterns; AZ-204 (Developer) goes deeper on App Service deployment slot mechanics.
 > - Practice: PE-2 has 7 questions from this module; Final Mock revisits with case-study synthesis (App Service + private endpoint + WAF in one scenario).
 
 ---

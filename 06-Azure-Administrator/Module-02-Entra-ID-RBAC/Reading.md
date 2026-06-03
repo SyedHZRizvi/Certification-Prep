@@ -4,8 +4,8 @@
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - The Azure resource hierarchy and how inheritance works — [Module 1](../Module-01-Subscriptions-Resource-Hierarchy/Reading.md) of this course.
-> - Basic identity concepts (users, groups, MFA) — [`05-Azure-Fundamentals` Module 5](../../05-Azure-Fundamentals/Module-05-Governance-Compliance/Reading.md).
-> - The CIA triad (Confidentiality, Integrity, Availability) and the principle of *least privilege* — covered formally in [`09-CompTIA-Security-Plus` Module 1](../../09-CompTIA-Security-Plus/Module-01-General-Security-Concepts/Reading.md). Saltzer & Schroeder named least privilege in their seminal paper "The Protection of Information in Computer Systems" (*Proceedings of the IEEE*, 1975).
+> - Basic identity concepts (users, groups, MFA) — [`05-Azure-Fundamentals` Module 5](../../05-Azure-Fundamentals/Module-05-Cost-Management-SLAs/Reading.md).
+> - The CIA triad (Confidentiality, Integrity, Availability) and the principle of *least privilege* — covered formally in [`09-CompTIA-Security-Plus` Module 1](../../09-CompTIA-Security-Plus/Module-01-Security-Fundamentals/Reading.md). Saltzer & Schroeder named least privilege in their seminal paper "The Protection of Information in Computer Systems" (*Proceedings of the IEEE*, 1975).
 >
 > If "Conditional Access," "scoped role assignment," or the OAuth 2.0 flow names are new, read the linked AZ-900 module first — this module assumes you know what authentication and authorization *are* and gets straight into how Azure does them.
 
@@ -499,7 +499,7 @@ AZ-104 will test these by scenario: "An admin's password was phished but PIM is 
 
 > **Where this leads.**
 > - Inside this course: Module 8 covers the *network* layer of zero trust (NSG, Firewall, Front Door) that complements the identity layer here; Module 10 sends Entra sign-in logs to Log Analytics so the PIM activations you configured become *auditable*.
-> - Cross-course: [`09-CompTIA-Security-Plus` Modules 1, 3, 4](../../09-CompTIA-Security-Plus/) go deeper on the threat-modeling and IAM principles behind these features; [`08-Azure-AI-Engineer`](../../08-Azure-AI-Engineer/README.md) modules show how managed identities authenticate AI workloads without secrets.
+> - Cross-course: [`09-CompTIA-Security-Plus` Modules 1, 3, 4](../../../09-CompTIA-Security-Plus/) go deeper on the threat-modeling and IAM principles behind these features; [`08-Azure-AI-Engineer`](../../08-Azure-AI-Engineer/README.md) modules show how managed identities authenticate AI workloads without secrets.
 > - Practice: Practice Exam 1 has 6 questions on Entra ID licensing/PIM/RBAC; Final Mock revisits with case-study synthesis (B2B + PIM + Conditional Access in one scenario).
 
 ---

@@ -5,7 +5,7 @@
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - A drafted SKU + delivery process from [Module 2](../Module-02-Productizing-AI-Marketing-Services/Reading.md) — you cannot buy the right tools until you know what you're delivering
 > - The outbound + inbound channel choice from [Module 3](../Module-03-Client-Acquisition-Channels/Reading.md) — the $235/mo outbound tier is only worth subscribing to if outbound is one of your two channels
-> - General familiarity with the categories of tools in marketing operations (LLMs, CRMs, SEO tools, email platforms, automation) — [`14-AI-Marketing-Foundations` Modules 3–7](../../14-AI-Marketing-Foundations/) and [`15-AI-Marketing-Practitioner`](../../15-AI-Marketing-Practitioner/) cover most of these in product depth
+> - General familiarity with the categories of tools in marketing operations (LLMs, CRMs, SEO tools, email platforms, automation) — [`14-AI-Marketing-Foundations` Modules 3–7](../../../14-AI-Marketing-Foundations/) and [`15-AI-Marketing-Practitioner`](../../../15-AI-Marketing-Practitioner/) cover most of these in product depth
 > - Comfort with the idea that **tool spend should be 1–2% of revenue**, not 5–10% (the central principle of the module)
 >
 > If you have not yet finalized your SKU or channel choice, this module will feel like a shopping list rather than an audit framework. Pause to finish Modules 2–3 first.

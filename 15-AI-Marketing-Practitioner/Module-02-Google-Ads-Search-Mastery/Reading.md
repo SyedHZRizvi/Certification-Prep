@@ -19,7 +19,7 @@ This module teaches you to answer that, then build the campaign around it.
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Writing a campaign brief — covered in [Module 1](../Module-01-Campaign-Strategy-Brief-Writing/Reading.md) of this course
 > - KPI hierarchy by funnel stage (TOFU/MOFU/BOFU) — also Module 1
-> - Search-intent and keyword fundamentals — covered in [14-AI-Marketing-Foundations Module 5](../../14-AI-Marketing-Foundations/Module-05-Paid-Media-Channels/Reading.md)
+> - Search-intent and keyword fundamentals — covered in [14-AI-Marketing-Foundations Module 5](../../14-AI-Marketing-Foundations/Module-05-Social-Media-AI-Tools/Reading.md)
 > If any of these are shaky, pause and review before continuing.
 
 ---
@@ -467,7 +467,7 @@ Use these to pressure-test your understanding. Each is defensible from multiple 
 
 > **Where this leads.**
 > - Inside this course: Module 3 covers Performance Max (which absorbs Search demand if you're not careful) and YouTube; Module 10 (Capstone) uses Google Search for half of the $200 launch.
-> - Cross-course: [14-AI-Marketing-Foundations Module 5](../../14-AI-Marketing-Foundations/Module-05-Paid-Media-Channels/Reading.md) provides paid-channel context; [16-AI-SEO-Specialist](../../16-AI-SEO-Specialist/) deepens organic search alongside paid.
+> - Cross-course: [14-AI-Marketing-Foundations Module 5](../../14-AI-Marketing-Foundations/Module-05-Social-Media-AI-Tools/Reading.md) provides paid-channel context; [16-AI-Marketing-Strategist](../../../16-AI-Marketing-Strategist/) deepens organic search alongside paid.
 > - Practice: Practice Exam 1 has ~8 questions from this module (match types, RSA limits, Quality Score, Ad Rank, Smart Bidding thresholds).
 
 ---

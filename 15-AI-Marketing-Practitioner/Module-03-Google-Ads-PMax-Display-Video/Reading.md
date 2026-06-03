@@ -458,7 +458,7 @@ Use these to test your reasoning. Each prompt is open-ended — argue from the f
 
 > **Where this leads.**
 > - Inside this course: Module 6 covers the rest of the open-web programmatic landscape (DV360, The Trade Desk, AdRoll) that PMax does NOT cover; Module 8 covers AI video production for the YouTube ads you'll run here.
-> - Cross-course: [14-AI-Marketing-Foundations Module 5](../../14-AI-Marketing-Foundations/Module-05-Paid-Media-Channels/Reading.md) provides the paid-media baseline; [17-AI-Performance-Marketer](../../17-AI-Performance-Marketer/) goes deeper on multi-platform bid optimization.
+> - Cross-course: [14-AI-Marketing-Foundations Module 5](../../14-AI-Marketing-Foundations/Module-05-Social-Media-AI-Tools/Reading.md) provides the paid-media baseline; [17-AI-Marketing-Entrepreneur](../../../17-AI-Marketing-Entrepreneur/) goes deeper on multi-platform bid optimization.
 > - Practice: Practice Exam 1 has ~6 questions from this module (PMax brand exclusions, audience signals, YouTube ad formats, 3-second hook).
 
 ---

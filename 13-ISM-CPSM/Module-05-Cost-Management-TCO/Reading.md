@@ -6,7 +6,7 @@
 > - [Module 1 — make-or-buy](../Module-01-Supply-Management-Foundations/Reading.md): TCO is the math you needed there
 > - [Module 2 — Kraljic matrix](../Module-02-Category-Management-Sourcing/Reading.md): cost levers vary by quadrant
 > - Basic finance: NPV, IRR, payback, time-value-of-money
-> - Cross-course: [PMP Module 4 — Cost Management](../../02-PMP/Module-04-Cost-Management/Reading.md) for project-level cost concepts (earned value, contingency reserves)
+> - Cross-course: [PMP Module 4 — Cost Management](../../02-PMP/Module-04-Business-Environment/Reading.md) for project-level cost concepts (earned value, contingency reserves)
 > If Module 2 or basic NPV math is shaky, pause and review.
 
 ---
@@ -348,7 +348,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: Module 6 adds Incoterms, tariffs, and FX layers to TCO; Module 7 quantifies risk in financial terms; Module 8 covers the KPI framework that surfaces TCO to executives.
-> - Cross-course: [PMP Module 4](../../02-PMP/Module-04-Cost-Management/Reading.md) covers earned value management and contingency reserves at the project level.
+> - Cross-course: [PMP Module 4](../../02-PMP/Module-04-Business-Environment/Reading.md) covers earned value management and contingency reserves at the project level.
 > - Practice: Practice Exam 2 has ~22 questions drawn from this module (TCO, VA/VE, hedging, payment terms, learning curves).
 
 ---

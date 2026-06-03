@@ -405,7 +405,7 @@ You now know:
 
 > **Where this leads.**
 > - **Inside this course:** [Module 10 — Stakeholder Management](../Module-10-Stakeholders/Reading.md) extends the engagement-levels framework introduced here; [Module 05 — Agile & Hybrid](../Module-05-Agile-Hybrid/Reading.md) shows what servant leadership looks like in iterative delivery.
-> - **Cross-course:** [01-Scrum-Master Module 03: Scrum Roles](../../01-Scrum-Master/Module-03-Scrum-Roles/Reading.md) is the agile-native deep-dive on servant leadership; [13-ISM-CPSM Module 04](../../13-ISM-CPSM/Module-04-Supplier-Relationship-Management/Reading.md) translates conflict-management techniques to supplier-relationship contexts.
+> - **Cross-course:** [01-Scrum-Master Module 03: Scrum Roles](../../01-Scrum-Master/Module-03-Roles/Reading.md) is the agile-native deep-dive on servant leadership; [13-ISM-CPSM Module 04](../../13-ISM-CPSM/Module-04-Supplier-Relationship-Management/Reading.md) translates conflict-management techniques to supplier-relationship contexts.
 > - **Practice:** [Practice Exam 1](../Practice-Exams/Practice-Exam-1.md) and [Practice Exam 2](../Practice-Exams/Practice-Exam-2.md) draw ~12–18 questions each from this module (the largest single source on the People-domain 42%).
 
 ---

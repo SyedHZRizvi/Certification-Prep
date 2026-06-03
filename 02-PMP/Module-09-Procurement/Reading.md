@@ -230,7 +230,7 @@ You now know:
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - **Project Risk basics** — Module 07 introduces the risk-transfer concept that underlies contract families.
 > - **Business Case + Make-or-Buy fundamentals** — covered in [Module 04: Business Environment](../Module-04-Business-Environment/Reading.md).
-> - **Optional cross-course preparation:** [13-ISM-CPSM Module 05: Contract Management](../../13-ISM-CPSM/Module-05-Contract-Management/Reading.md) is the deep-dive on contract types and supplier management.
+> - **Optional cross-course preparation:** [13-ISM-CPSM Module 05: Contract Management](../../13-ISM-CPSM/Module-05-Cost-Management-TCO/Reading.md) is the deep-dive on contract types and supplier management.
 >
 > If any of these are shaky, pause and review before continuing.
 
@@ -238,7 +238,7 @@ You now know:
 
 > **Where this leads.**
 > - **Inside this course:** [Module 07 — Risk](../Module-07-Risk/Reading.md) discusses transfer-via-contract; [Module 10 — Stakeholders](../Module-10-Stakeholders/Reading.md) covers vendor-as-stakeholder.
-> - **Cross-course:** [13-ISM-CPSM Module 05](../../13-ISM-CPSM/Module-05-Contract-Management/Reading.md) is the supply-management deep dive; [10-ASCM-CSCP Module 09](../../10-ASCM-CSCP/Module-09-Strategic-Sourcing-Procurement/Reading.md) extends to strategic sourcing.
+> - **Cross-course:** [13-ISM-CPSM Module 05](../../13-ISM-CPSM/Module-05-Cost-Management-TCO/Reading.md) is the supply-management deep dive; [10-ASCM-CSCP Module 09](../../10-ASCM-CSCP/Module-09-Sustainability-Risk-CSR/Reading.md) extends to strategic sourcing.
 > - **Practice:** [Practice Exam 1](../Practice-Exams/Practice-Exam-1.md), [Practice Exam 2](../Practice-Exams/Practice-Exam-2.md), and [Final Mock Exam](../Practice-Exams/Final-Mock-Exam.md) each draw ~5–10 questions on procurement and contracts.
 
 ---

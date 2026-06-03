@@ -22,23 +22,23 @@
         <p class="text-base font-extrabold text-slate-900 mb-4 tracking-wide">Courses &amp; Tracks</p>
         <ul class="text-base space-y-2 text-slate-600">
           {% for t in site.data.navigation.tracks %}
-          <li><a href="{{ t.base | remove_first: '/' }}" class="hover:text-indigo-600 transition">{{ t.icon }} {{ t.title }}</a></li>
+          <li><a href="{{ t.base | relative_url }}" class="hover:text-indigo-600 transition">{{ t.icon }} {{ t.title }}</a></li>
           {% endfor %}
         </ul>
       </div>
       <div>
         <p class="text-base font-extrabold text-slate-900 mb-4 tracking-wide">Resources &amp; Contact</p>
         <ul class="text-base space-y-2.5 text-slate-600 mb-6">
-          <li><a href="enroll/" class="text-emerald-700 hover:text-emerald-900 transition font-bold">✍️ Enroll Now</a></li>
-          <li><a href="login/" class="hover:text-indigo-600 transition">🔐 Sign in</a></li>
-          <li><a href="Resources/Books-and-Links/" class="hover:text-indigo-600 transition">📚 Books &amp; Links</a></li>
-          <li><a href="Resources/Free-Practice-Tests/" class="hover:text-indigo-600 transition">📝 Practice Tests</a></li>
-          <li><a href="Resources/Communities/" class="hover:text-indigo-600 transition">💬 Communities</a></li>
-          <li><a href="00-Study-Plan/Quick-Start-Guide/" class="hover:text-indigo-600 transition">⚡ Quick Start Guide</a></li>
-          <li><a href="00-Study-Plan/12-Week-Study-Plan/" class="hover:text-indigo-600 transition">📅 12-Week Study Plan</a></li>
-          <li><a href="00-Study-Plan/Exam-Day-Tips/" class="hover:text-indigo-600 transition">🎯 Exam-Day Tips</a></li>
+          <li><a href="{{ '/enroll/' | relative_url }}" class="text-emerald-700 hover:text-emerald-900 transition font-bold">✍️ Enroll Now</a></li>
+          <li><a href="{{ '/login/' | relative_url }}" class="hover:text-indigo-600 transition">🔐 Sign in</a></li>
+          <li><a href="{{ '/Resources/Books-and-Links/' | relative_url }}" class="hover:text-indigo-600 transition">📚 Books &amp; Links</a></li>
+          <li><a href="{{ '/Resources/Free-Practice-Tests/' | relative_url }}" class="hover:text-indigo-600 transition">📝 Practice Tests</a></li>
+          <li><a href="{{ '/Resources/Communities/' | relative_url }}" class="hover:text-indigo-600 transition">💬 Communities</a></li>
+          <li><a href="{{ '/00-Study-Plan/Quick-Start-Guide/' | relative_url }}" class="hover:text-indigo-600 transition">⚡ Quick Start Guide</a></li>
+          <li><a href="{{ '/00-Study-Plan/12-Week-Study-Plan/' | relative_url }}" class="hover:text-indigo-600 transition">📅 12-Week Study Plan</a></li>
+          <li><a href="{{ '/00-Study-Plan/Exam-Day-Tips/' | relative_url }}" class="hover:text-indigo-600 transition">🎯 Exam-Day Tips</a></li>
           <li><a href="{{ '/faq/' | relative_url }}" class="hover:text-indigo-600 transition">❓ FAQ</a></li>
-          <li><a href="video-compliance/" class="hover:text-indigo-600 transition">📺 Video Compliance Policy</a></li>
+          <li><a href="{{ '/video-compliance/' | relative_url }}" class="hover:text-indigo-600 transition">📺 Video Compliance Policy</a></li>
         </ul>
         <p class="text-base font-bold text-slate-900 mb-2">Get in touch</p>
         <p class="text-base text-slate-600">
@@ -57,7 +57,7 @@
           <span class="text-slate-300" aria-hidden="true">·</span>
           <a href="#" class="hover:text-indigo-600 transition">Terms</a>
           <span class="text-slate-300" aria-hidden="true">·</span>
-          <a href="video-compliance/" class="hover:text-indigo-600 transition">Video Compliance</a>
+          <a href="{{ '/video-compliance/' | relative_url }}" class="hover:text-indigo-600 transition">Video Compliance</a>
           <span class="text-slate-300" aria-hidden="true">·</span>
           <a href="{{ '/faq/' | relative_url }}" class="hover:text-indigo-600 transition">FAQ</a>
           <span class="text-slate-300" aria-hidden="true">·</span>

@@ -170,4 +170,4 @@ Shopify Storefront MCP (2024) = canonical reference.
 
 ---
 
-➡️ [Capstone-Project.md](../Capstone-Project.md) · [Practice Exams](../Practice-Exams/)
+➡️ [Capstone-Project.md](../Capstone-Project.md) · [Practice Exams](../../../Practice-Exams/)

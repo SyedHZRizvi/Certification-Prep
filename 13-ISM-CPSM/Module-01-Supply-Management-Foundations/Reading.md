@@ -5,7 +5,7 @@
 > **Prerequisites for this module.** This is the opening module of the CPSM track. Before starting, you should be comfortable with:
 > - Basic business-school vocabulary: COGS, EBITDA, working capital, value chain
 > - Reading a one-page corporate-strategy document and identifying the dominant generic strategy (cost leadership / differentiation / focus)
-> - Cross-references in other tracks: [ASCM CSCP Module 1 — Supply Chain Strategy](../../10-ASCM-CSCP/Module-01-Supply-Chain-Strategy/Reading.md) for the broader supply-chain context, and [PMP Module 1](../../02-PMP/Module-01-Project-Foundations/Reading.md) for stakeholder vocabulary used in Module 8.
+> - Cross-references in other tracks: [ASCM CSCP Module 1 — Supply Chain Strategy](../../10-ASCM-CSCP/Module-01-SCM-Foundations-Strategy/Reading.md) for the broader supply-chain context, and [PMP Module 1](../../02-PMP/Module-01-Foundations/Reading.md) for stakeholder vocabulary used in Module 8.
 > If any of these are shaky, pause and review before continuing.
 
 ---
@@ -355,7 +355,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: Module 2 operationalizes the strategy concepts here into category strategies and the Kraljic matrix; Module 7 (Risk) and Module 8 (Leadership) build on the maturity model.
-> - Cross-course: [ASCM CSCP Module 1](../../10-ASCM-CSCP/Module-01-Supply-Chain-Strategy/Reading.md) covers supply-chain strategy at the broader chain-of-chains level; [PMP Module 1](../../02-PMP/Module-01-Project-Foundations/Reading.md) shares the stakeholder vocabulary used in CPSM Module 8.
+> - Cross-course: [ASCM CSCP Module 1](../../10-ASCM-CSCP/Module-01-SCM-Foundations-Strategy/Reading.md) covers supply-chain strategy at the broader chain-of-chains level; [PMP Module 1](../../02-PMP/Module-01-Foundations/Reading.md) shares the stakeholder vocabulary used in CPSM Module 8.
 > - Practice: Practice Exam 1 has ~16 questions drawn directly from this module's frameworks (Porter, value chain, org models, maturity, Five Rights, make-or-buy).
 
 ---

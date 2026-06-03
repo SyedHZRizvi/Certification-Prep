@@ -5,7 +5,7 @@
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Module 2 — Kraljic matrix](../Module-02-Category-Management-Sourcing/Reading.md): you need it to pick negotiation style
 > - Basic legal vocabulary (offer, acceptance, consideration)
-> - Cross-course: [PMP Module 9 — Procurement Management](../../02-PMP/Module-09-Procurement-Management/Reading.md) for contract-type taxonomy (PMP and CPSM share the fixed-price / cost-plus / T&M tree)
+> - Cross-course: [PMP Module 9 — Procurement Management](../../02-PMP/Module-09-Procurement/Reading.md) for contract-type taxonomy (PMP and CPSM share the fixed-price / cost-plus / T&M tree)
 > If Module 2 is shaky, pause and review before continuing.
 
 ---
@@ -393,7 +393,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: Module 4 manages the supplier post-signing; Module 5 quantifies TCO inside the should-cost conversation; Module 6 layers cross-cultural and Incoterms onto the contract.
-> - Cross-course: [PMP Module 9 — Procurement Management](../../02-PMP/Module-09-Procurement-Management/Reading.md) for the project-side contract-administration view.
+> - Cross-course: [PMP Module 9 — Procurement Management](../../02-PMP/Module-09-Procurement/Reading.md) for the project-side contract-administration view.
 > - Practice: Practice Exam 1 has ~22 questions drawn from this module (BATNA, ZOPA, contract types, force majeure, dispute resolution).
 
 ---

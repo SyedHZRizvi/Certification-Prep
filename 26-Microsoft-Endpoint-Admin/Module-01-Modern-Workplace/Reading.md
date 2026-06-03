@@ -319,7 +319,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: Module 2 builds the Windows 11 deployment mechanics that operationalize the cloud-first strategy from this module; Module 3 introduces Intune as the management plane; Modules 4–8 are the policy, app, security, update, and monitoring layers on top.
-> - Cross-course: [`06-Azure-Administrator` Module 2](../../06-Azure-Administrator/Module-02-Entra-ID-RBAC/Reading.md) goes deep on Entra ID identity primitives that we'll lean on; [`05-Azure-Fundamentals` Module 2](../../05-Azure-Fundamentals/Module-02-Identity-Access-Security/Reading.md) covers Conditional Access at AZ-900 depth.
+> - Cross-course: [`06-Azure-Administrator` Module 2](../../06-Azure-Administrator/Module-02-Entra-ID-RBAC/Reading.md) goes deep on Entra ID identity primitives that we'll lean on; [`05-Azure-Fundamentals` Module 2](../../05-Azure-Fundamentals/Module-02-Azure-Architecture/Reading.md) covers Conditional Access at AZ-900 depth.
 > - Practice: Practice Exam 1 has roughly 6–8 questions from this module (join states, BYOD patterns, Zero Trust principles, co-management). Final Mock Exam revisits with case-study synthesis.
 
 ---

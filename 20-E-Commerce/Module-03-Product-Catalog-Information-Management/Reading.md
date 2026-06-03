@@ -377,7 +377,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: Module 7 returns to catalog when discussing Google Shopping feed quality; Module 9 returns when discussing GA4 e-commerce event configuration that requires clean PIM data; Module 10 returns when expanding to cross-border (locale, currency, IOSS).
-> - Cross-course: [10-ASCM-CSCP Module 4](../../10-ASCM-CSCP/Module-04-Demand-Planning-Forecasting/Reading.md) covers supply-side master-data discipline that complements PIM.
+> - Cross-course: [10-ASCM-CSCP Module 4](../../10-ASCM-CSCP/Module-04-Supply-Planning-SOP/Reading.md) covers supply-side master-data discipline that complements PIM.
 > - Practice: Practice Exam 1 has ~6 questions drawn from this module (GTIN, Akeneo family vs category, image specs, catalog quality metrics).
 
 ---

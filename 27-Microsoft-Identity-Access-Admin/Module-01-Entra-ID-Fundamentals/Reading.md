@@ -3,7 +3,7 @@
 > **Why this module matters:** Identity is the new perimeter. Every CA policy, every PIM activation, every B2B invitation in the rest of this course starts from a tenant — and from picking the right license SKU. Get this layer wrong, and *every* feature in modules 2–8 is gated behind something you didn't buy. Get it right, and the whole governance story is a series of small, predictable clicks.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - Basic identity concepts (user, password, MFA, role) — covered in [`05-Azure-Fundamentals` Module 5](../../05-Azure-Fundamentals/Module-05-Governance-Compliance/Reading.md) (AZ-900) and [`09-CompTIA-Security-Plus` Module 1](../../09-CompTIA-Security-Plus/Module-01-General-Security-Concepts/Reading.md).
+> - Basic identity concepts (user, password, MFA, role) — covered in [`05-Azure-Fundamentals` Module 5](../../05-Azure-Fundamentals/Module-05-Cost-Management-SLAs/Reading.md) (AZ-900) and [`09-CompTIA-Security-Plus` Module 1](../../09-CompTIA-Security-Plus/Module-01-Security-Fundamentals/Reading.md).
 > - The Azure resource hierarchy and inheritance — [`06-Azure-Administrator` Module 1](../../06-Azure-Administrator/Module-01-Subscriptions-Resource-Hierarchy/Reading.md).
 > - The principle of least privilege from Saltzer & Schroeder's seminal paper "The Protection of Information in Computer Systems" (*Proceedings of the IEEE*, 1975).
 >

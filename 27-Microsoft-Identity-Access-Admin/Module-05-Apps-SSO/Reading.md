@@ -6,7 +6,7 @@
 > - The tenant + role taxonomy from [Module 1](../Module-01-Entra-ID-Fundamentals/Reading.md) (Application Admin, Cloud Application Admin).
 > - Group and user assignment patterns from [Module 2](../Module-02-Users-Groups/Reading.md).
 > - CA policies that target apps from [Module 4](../Module-04-Conditional-Access/Reading.md) — apps in CA come from this module.
-> - Basic understanding of OAuth 2.0 / OIDC / SAML — covered at intro depth in [`05-Azure-Fundamentals` Module 5](../../05-Azure-Fundamentals/Module-05-Governance-Compliance/Reading.md).
+> - Basic understanding of OAuth 2.0 / OIDC / SAML — covered at intro depth in [`05-Azure-Fundamentals` Module 5](../../05-Azure-Fundamentals/Module-05-Cost-Management-SLAs/Reading.md).
 
 ---
 
@@ -364,7 +364,7 @@ When you see a scenario about "user accepted an app permission and the attacker 
 
 > **Where this leads.**
 > - Inside this course: Module 4 CA policies target the apps you publish here; Module 6 access reviews can be run on app role assignments; Module 8 Sentinel detections find illicit consent.
-> - Cross-course: [`08-Azure-AI-Engineer` Module 1](../../08-Azure-AI-Engineer/Module-01-Plan-Manage-Azure-AI/Reading.md) covers app-permissions for the AI services; [`09-CompTIA-Security-Plus` Module 7](../../09-CompTIA-Security-Plus/Module-07-Security-Operations/Reading.md) covers OAuth as part of broader app security.
+> - Cross-course: [`08-Azure-AI-Engineer` Module 1](../../08-Azure-AI-Engineer/Module-01-AI-Services-Overview/Reading.md) covers app-permissions for the AI services; [`09-CompTIA-Security-Plus` Module 7](../../09-CompTIA-Security-Plus/Module-07-Endpoint-Mobile-Cloud-Security/Reading.md) covers OAuth as part of broader app security.
 
 ---
 

@@ -288,7 +288,7 @@ You now know:
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - **Reserve Analysis distinctions** — Contingency vs Management Reserve (covered in [Module 03: Process Domain](../Module-03-Process-Domain/Reading.md)).
 > - **Basic probability** — P × Impact = EMV. No formal stats background required.
-> - **Optional cross-course preparation:** [13-ISM-CPSM Module 07: Risk & Compliance](../../13-ISM-CPSM/Module-07-Risk-Compliance/Reading.md) covers strategic-sourcing risk frameworks that complement project risk.
+> - **Optional cross-course preparation:** [13-ISM-CPSM Module 07: Risk & Compliance](../../13-ISM-CPSM/Module-07-Risk-Compliance-Ethics/Reading.md) covers strategic-sourcing risk frameworks that complement project risk.
 >
 > If any of these are shaky, pause and review before continuing.
 
@@ -296,7 +296,7 @@ You now know:
 
 > **Where this leads.**
 > - **Inside this course:** [Module 09 — Procurement](../Module-09-Procurement/Reading.md) extends risk-transfer through contract types; [Module 04 — Business Environment](../Module-04-Business-Environment/Reading.md) covers external environmental risks.
-> - **Cross-course:** [13-ISM-CPSM Module 07](../../13-ISM-CPSM/Module-07-Risk-Compliance/Reading.md) extends risk thinking to strategic-sourcing decisions; [09-CompTIA-Security-Plus](../../09-CompTIA-Security-Plus/Module-02-Risk-Management/Reading.md) extends to security-risk frameworks (ISO 27005, NIST).
+> - **Cross-course:** [13-ISM-CPSM Module 07](../../13-ISM-CPSM/Module-07-Risk-Compliance-Ethics/Reading.md) extends risk thinking to strategic-sourcing decisions; [09-CompTIA-Security-Plus](../../09-CompTIA-Security-Plus/Module-02-Cryptography-PKI/Reading.md) extends to security-risk frameworks (ISO 27005, NIST).
 > - **Practice:** [Practice Exam 1](../Practice-Exams/Practice-Exam-1.md), [Practice Exam 2](../Practice-Exams/Practice-Exam-2.md), and [Final Mock Exam](../Practice-Exams/Final-Mock-Exam.md) each draw ~10–15 questions on Risk.
 
 ---

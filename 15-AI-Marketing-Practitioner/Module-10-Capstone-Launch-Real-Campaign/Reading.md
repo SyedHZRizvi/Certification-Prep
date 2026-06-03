@@ -431,7 +431,7 @@ Reflect honestly. There's no single right answer — what matters is the discipl
 
 > **Where this leads.**
 > - Inside this course: This is the final module. Your capstone artifacts become input to your portfolio.
-> - Cross-course: [18-AI-Marketing-Capstone-Portfolio](../../18-AI-Marketing-Capstone-Portfolio/) is the dedicated portfolio-building course where your capstone becomes one of multiple polished case studies; [17-AI-Performance-Marketer](../../17-AI-Performance-Marketer/) takes you from one-campaign launch to multi-channel orchestration at scale.
+> - Cross-course: [18-AI-Marketing-Capstone-Portfolio](../../../18-AI-Marketing-Capstone-Portfolio/) is the dedicated portfolio-building course where your capstone becomes one of multiple polished case studies; [17-AI-Marketing-Entrepreneur](../../../17-AI-Marketing-Entrepreneur/) takes you from one-campaign launch to multi-channel orchestration at scale.
 > - Practice: [Final Mock Exam](../Practice-Exams/Final-Mock-Exam.md) tests cross-module integration; questions 76-80 cover capstone-process discipline specifically.
 
 ---

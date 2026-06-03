@@ -547,9 +547,9 @@ You're not alone in this. **Hundreds of thousands of people pass these exams eve
 
 ## 🚀 Next Steps
 
-- 🚀 [**Quick Start Guide**](../00-Study-Plan/Quick-Start-Guide/) — pick your starting course
-- 📅 [**12-Week Study Plan**](../00-Study-Plan/12-Week-Study-Plan/) — the day-by-day cadence
-- 🏆 [**Certifications Catalog**](./International-Certifications/) — fees, formats, registration procedure for every cert
-- 📚 [**Books & Links**](./Books-and-Links/) — canonical resource list per track
-- 🧪 [**Free Practice Tests**](./Free-Practice-Tests/) — where to find more questions
-- 🏠 [**Course Home**](../) — all 32 tracks at a glance
+- 🚀 [**Quick Start Guide**](../../00-Study-Plan/Quick-Start-Guide/) — pick your starting course
+- 📅 [**12-Week Study Plan**](../../00-Study-Plan/12-Week-Study-Plan/) — the day-by-day cadence
+- 🏆 [**Certifications Catalog**](../International-Certifications/) — fees, formats, registration procedure for every cert
+- 📚 [**Books & Links**](../Books-and-Links/) — canonical resource list per track
+- 🧪 [**Free Practice Tests**](../Free-Practice-Tests/) — where to find more questions
+- 🏠 [**Course Home**](../../) — all 32 tracks at a glance

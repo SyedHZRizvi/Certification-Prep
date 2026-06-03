@@ -17,9 +17,9 @@ That's the bar. It isn't about the books-vs-everything-store pivot. It's about a
 This module gives you the language — DTC, marketplace, B2B, hybrid; AOV, CAC, CLV, contribution margin, payback period; long-tail vs head; the Fader customer-centricity frame; the Bezos Day-1 doctrine. By the end, you'll have written the first draft of your own business-model canvas.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - Basic financial vocabulary (revenue, cost, margin) — covered in [02-PMP Module 3](../../02-PMP/Module-03-Cost-Management/Reading.md)
-> - Basic marketing vocabulary (audience, channel, conversion) — covered in [14-AI-Marketing-Foundations Module 1](../../14-AI-Marketing-Foundations/Module-01-Marketing-Fundamentals/Reading.md)
-> - The customer journey concept (awareness / consideration / conversion / retention) — covered in [14-AI-Marketing-Foundations Module 2](../../14-AI-Marketing-Foundations/Module-02-Customer-Journey-Funnel/Reading.md)
+> - Basic financial vocabulary (revenue, cost, margin) — covered in [02-PMP Module 3](../../02-PMP/Module-03-Process-Domain/Reading.md)
+> - Basic marketing vocabulary (audience, channel, conversion) — covered in [14-AI-Marketing-Foundations Module 1](../../14-AI-Marketing-Foundations/Module-01-Digital-Marketing-Landscape-2026/Reading.md)
+> - The customer journey concept (awareness / consideration / conversion / retention) — covered in [14-AI-Marketing-Foundations Module 2](../../14-AI-Marketing-Foundations/Module-02-AI-Fundamentals-for-Marketers/Reading.md)
 > If any of these are shaky, pause and review before continuing.
 
 ---
@@ -352,7 +352,7 @@ Use these to test your own thinking. None has a single right answer — defend y
 
 > **Where this leads.**
 > - Inside this course: Module 2 makes you choose a platform (Shopify vs Adobe Commerce vs headless) using the unit economics you defined here. Module 7 reuses CAC + contribution margin as the paid-acquisition success criteria. Module 9 uses CLV as the attribution-truth-test.
-> - Cross-course: [15-AI-Marketing-Practitioner Module 1](../../15-AI-Marketing-Practitioner/Module-01-Campaign-Strategy-Brief-Writing/Reading.md) deepens campaign-brief writing for e-commerce; [16-AI-Marketing-Strategist Module 3](../../16-AI-Marketing-Strategist/Module-03-Customer-LTV-Retention/Reading.md) goes deeper on CLV modeling with Klaviyo predictive CLV.
+> - Cross-course: [15-AI-Marketing-Practitioner Module 1](../../15-AI-Marketing-Practitioner/Module-01-Campaign-Strategy-Brief-Writing/Reading.md) deepens campaign-brief writing for e-commerce; [16-AI-Marketing-Strategist Module 3](../../16-AI-Marketing-Strategist/Module-03-GA4-Mastery-Custom-Events/Reading.md) goes deeper on CLV modeling with Klaviyo predictive CLV.
 > - Practice: Practice Exam 1 has ~8 questions drawn from this module (business-model classification, the 5 unit-economics metrics, CLV:CAC benchmark, Bezos principles, Long Tail).
 
 ---

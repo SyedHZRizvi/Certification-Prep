@@ -395,7 +395,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: Module 7 returns to fulfillment when discussing Amazon Ads ACoS math; Module 9 returns when discussing GA4 fulfillment events; Module 10 returns deeply for cross-border DDP and IOSS integration.
-> - Cross-course: [10-ASCM-CSCP Module 7](../../10-ASCM-CSCP/Module-07-Transportation-Distribution/Reading.md) and [12-ASCM-CLTD Module 5](../../12-ASCM-CLTD/Module-05-Warehouse-Management/Reading.md) cover the underlying supply-chain disciplines.
+> - Cross-course: [10-ASCM-CSCP Module 7](../../10-ASCM-CSCP/Module-07-Logistics-Distribution-Warehousing/Reading.md) and [12-ASCM-CLTD Module 5](../../12-ASCM-CLTD/Module-05-Warehouse-Operations/Reading.md) cover the underlying supply-chain disciplines.
 > - Practice: Practice Exam 1 has ~6 questions drawn from this module (OMS vs WMS, FBA vs FBM, Buy with Prime, returns economics).
 
 ---

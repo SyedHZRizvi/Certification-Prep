@@ -6,7 +6,7 @@
 > - [Module 7](../Module-07-Virtual-Networks/Reading.md): VNets, subnets, reserved subnet names (`AzureFirewallSubnet`, `AzureBastionSubnet`), and the hub-spoke topology.
 > - [Module 2](../Module-02-Entra-ID-RBAC/Reading.md): Conditional Access (this module's controls operate at the *network* layer; CA operates at the *identity* layer — they're complementary).
 > - OSI model layers 3, 4, and 7 — you need to know what "L4 stateful" vs. "L7 inspection" actually means.
-> - The OWASP Top 10 (2021 revision; refresh expected late 2025) — App Gateway and Front Door WAF rules are based on it. Covered in [`09-CompTIA-Security-Plus` Module 5](../../09-CompTIA-Security-Plus/Module-05-Security-Operations/Reading.md).
+> - The OWASP Top 10 (2021 revision; refresh expected late 2025) — App Gateway and Front Door WAF rules are based on it. Covered in [`09-CompTIA-Security-Plus` Module 5](../../09-CompTIA-Security-Plus/Module-05-Vulnerabilities-Attacks/Reading.md).
 >
 > This module is dense. If NSG rule precedence has never clicked, do Microsoft Learn's *Network Security* sandbox before reading.
 
@@ -439,7 +439,7 @@ The exam-favorite trap is reaching for *one* of these when the right answer is *
 
 > **Where this leads.**
 > - Inside this course: Module 10 wires NSG Flow Logs, WAF logs, and Firewall logs into Azure Monitor — the *detection* half of the prevention-detect-respond loop this module covered.
-> - Cross-course: [`09-CompTIA-Security-Plus`](../../09-CompTIA-Security-Plus/) Modules 4, 5 cover the threat-actor side (Cl0p, ransomware-as-a-service models, MITRE ATT&CK techniques); [`04-AWS-Solutions-Architect-Associate` Module 8](../../04-AWS-Solutions-Architect-Associate/Module-08-Security-Identity/Reading.md) covers the AWS analogues (Security Groups, AWS WAF, Shield, GuardDuty).
+> - Cross-course: [`09-CompTIA-Security-Plus`](../../../09-CompTIA-Security-Plus/) Modules 4, 5 cover the threat-actor side (Cl0p, ransomware-as-a-service models, MITRE ATT&CK techniques); [`04-AWS-Solutions-Architect-Associate` Module 8](../../04-AWS-Solutions-Architect-Associate/Module-08-Caching-CDN-Edge/Reading.md) covers the AWS analogues (Security Groups, AWS WAF, Shield, GuardDuty).
 > - Practice: PE-2 has 12 questions from this module — it's the heaviest single-module test; Final Mock combines with VNet, identity, monitoring.
 
 ---

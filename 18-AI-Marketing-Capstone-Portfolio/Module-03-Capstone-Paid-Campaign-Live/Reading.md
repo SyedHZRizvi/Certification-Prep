@@ -5,8 +5,8 @@
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Portfolio strategy & P-C-A-R-L format](../Module-01-Portfolio-Strategy-What-To-Build/Reading.md) — covered earlier in this course
 > - [SEO + Content Audit](../Module-02-Capstone-SEO-Content-Audit/Reading.md) — covered in the previous module (or parallelize if you started both)
-> - Paid acquisition fundamentals (auction mechanics, CPC/CPM/ROAS, audience targeting) — covered in [16-AI-Marketing-Paid-Acquisition](../../16-AI-Marketing-Paid-Acquisition/README.md), especially Modules 2–6
-> - Google Tag Manager / Meta Pixel basics — covered in [17-AI-Marketing-Analytics-Automation Module 1](../../17-AI-Marketing-Analytics-Automation/Module-01-Tracking-Foundations/Reading.md)
+> - Paid acquisition fundamentals (auction mechanics, CPC/CPM/ROAS, audience targeting) — covered in [16-AI-Marketing-Paid-Acquisition](../../16-AI-Marketing-Strategist/README.md), especially Modules 2–6
+> - Google Tag Manager / Meta Pixel basics — covered in [17-AI-Marketing-Analytics-Automation Module 1](../../17-AI-Marketing-Entrepreneur/README.md)
 > If any of these are shaky, pause and review — this module assumes you can set up conversion tracking without hand-holding.
 
 ---
@@ -523,5 +523,5 @@ These prompts dig at the trade-offs hiding behind the "$200 budget, 14 days, 50/
 
 > **Where this leads.**
 > - Inside this course: Module 7 (Personal Brand) will return to this capstone when packaging it as the most-impressive Featured pin on LinkedIn — the carousel from Step 6 of this module IS the post that drives reach.
-> - Cross-course: [16-AI-Marketing-Paid-Acquisition Module 8](../../16-AI-Marketing-Paid-Acquisition/Module-08-AI-Paid-Acquisition-Workflow/Reading.md) covers the full AI-paid workflow this campaign exercises. The negative-ROAS conversation is depth-covered in 16's Module 7 (Budget & Bidding).
+> - Cross-course: [16-AI-Marketing-Paid-Acquisition Module 8](../../16-AI-Marketing-Strategist/README.md) covers the full AI-paid workflow this campaign exercises. The negative-ROAS conversation is depth-covered in 16's Module 7 (Budget & Bidding).
 > - Practice: Practice Exam 1 has 5 questions on this capstone (Q7–Q10, Q22). The Final Mock's Q2 (failure storytelling) and Q25 (negative ROAS honesty) come straight from this post-mortem.

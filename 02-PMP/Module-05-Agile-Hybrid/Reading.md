@@ -344,7 +344,7 @@ You now know:
 
 > **Where this leads.**
 > - **Inside this course:** [Module 06 — Earned Value](../Module-06-Earned-Value/Reading.md) shows how to measure progress in hybrid contexts; [Module 09 — Procurement](../Module-09-Procurement/Reading.md) covers agile contract structures.
-> - **Cross-course:** The entire [01-Scrum-Master](../../01-Scrum-Master/README.md) track is the agile-native deep dive; [12-ASCM-CLTD Module 06](../../12-ASCM-CLTD/Module-06-Lean-Operations/Reading.md) extends Lean/TIM-WOODS thinking to logistics.
+> - **Cross-course:** The entire [01-Scrum-Master](../../01-Scrum-Master/README.md) track is the agile-native deep dive; [12-ASCM-CLTD Module 06](../../12-ASCM-CLTD/Module-06-Transportation-Modes/Reading.md) extends Lean/TIM-WOODS thinking to logistics.
 > - **Practice:** [Practice Exam 1](../Practice-Exams/Practice-Exam-1.md), [Practice Exam 2](../Practice-Exams/Practice-Exam-2.md), and [Final Mock Exam](../Practice-Exams/Final-Mock-Exam.md) collectively draw ~25–30% of their questions from agile/hybrid content — the highest single source.
 
 ---

@@ -2,7 +2,7 @@
 
 > **Goal of this page:** Get you *doing* something within 10 minutes — no matter which of the 32 certifications and tracks you're chasing.
 >
-> 🏆 **Looking for the certification you want to chase?** See the [**International Certifications Catalog**](../Resources/International-Certifications/) for every certification this site maps to — with issuing body, fee, exam format, registration procedure, and renewal rules.
+> 🏆 **Looking for the certification you want to chase?** See the [**International Certifications Catalog**](../../Resources/International-Certifications/) for every certification this site maps to — with issuing body, fee, exam format, registration procedure, and renewal rules.
 
 **Study Plan** · Quick Start Guide
 *Last updated: 2026-05*
@@ -212,7 +212,7 @@ After studying thousands of pass/fail patterns, these stand out:
 - **AI Digital Marketing (14–18):** Yes — these courses are designed to be self-contained. HubSpot Academy, Google Skillshop, and Meta Blueprint are all genuinely free and pair perfectly. The only thing you'll likely pay for is the AI tools you're learning to use (ChatGPT Plus or Claude Pro ~$20/mo, a Midjourney/Adobe subscription if you're doing creative work) — but those are working tools, not study materials.
 
 **Q: Is "AI Digital Marketing" itself a certification?**
-**A:** Not a single one — it's a *5-course ladder* mapped to multiple real industry credentials. After Course 14 you're ready for HubSpot Inbound + Content Marketing; after 15 you're ready for Google Ads Search/Shopping + Meta Blueprint; after 16 you're ready for Google Analytics Individual Qualification (GA4) and CXL's Measurement & Analytics; after 17 you're ready to actually start an agency (no single cert — operational readiness); after 18 you have a portfolio + can sit DMI Professional Diploma in eCommerce Marketing or OMCP. Each course's `README.md` lists the specific industry certifications it maps to, and the [Certifications Catalog](../Resources/International-Certifications/) groups them all in one place.
+**A:** Not a single one — it's a *5-course ladder* mapped to multiple real industry credentials. After Course 14 you're ready for HubSpot Inbound + Content Marketing; after 15 you're ready for Google Ads Search/Shopping + Meta Blueprint; after 16 you're ready for Google Analytics Individual Qualification (GA4) and CXL's Measurement & Analytics; after 17 you're ready to actually start an agency (no single cert — operational readiness); after 18 you have a portfolio + can sit DMI Professional Diploma in eCommerce Marketing or OMCP. Each course's `README.md` lists the specific industry certifications it maps to, and the [Certifications Catalog](../../Resources/International-Certifications/) groups them all in one place.
 
 **Q: How many hours total to pass?**
 - Scrum Master: 30–50 hours
@@ -268,9 +268,9 @@ Ready? 🚀 Open the `README.md` of whichever track you picked above and start w
 
 Then, when you need them:
 
-- 📅 [**12-Week Study Plan**](./12-Week-Study-Plan/) — the day-by-day cadence (template; adapt to your cert)
-- 🎯 [**Exam Day Tips**](./Exam-Day-Tips/) — read the morning of your exam
-- 🏆 [**Certifications Catalog**](../Resources/International-Certifications/) — fees, formats, registration procedure for every cert
-- 📚 [**Books & Links**](../Resources/Books-and-Links/) — the canonical resource list per track
-- 🧪 [**Free Practice Tests**](../Resources/Free-Practice-Tests/) — where to find more questions
-- 🤝 [**Communities**](../Resources/Communities/) — don't study alone
+- 📅 [**12-Week Study Plan**](../12-Week-Study-Plan/) — the day-by-day cadence (template; adapt to your cert)
+- 🎯 [**Exam Day Tips**](../Exam-Day-Tips/) — read the morning of your exam
+- 🏆 [**Certifications Catalog**](../../Resources/International-Certifications/) — fees, formats, registration procedure for every cert
+- 📚 [**Books & Links**](../../Resources/Books-and-Links/) — the canonical resource list per track
+- 🧪 [**Free Practice Tests**](../../Resources/Free-Practice-Tests/) — where to find more questions
+- 🤝 [**Communities**](../../Resources/Communities/) — don't study alone

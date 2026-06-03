@@ -5,7 +5,7 @@
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Portfolio strategy & P-C-A-R-L format](../Module-01-Portfolio-Strategy-What-To-Build/Reading.md) — covered earlier in this course
 > - [Marketing automation mental model](../Module-04-Capstone-Marketing-Automation-Workflow/Reading.md) — covered in Module 4 (the agent is "automation with intelligence")
-> - LLM fundamentals (prompts, tokens, context windows, system vs user messages) — covered in [14-AI-Marketing-Foundations Modules 2–3](../../14-AI-Marketing-Foundations/Module-02-AI-Native-Marketing-Stack/Reading.md)
+> - LLM fundamentals (prompts, tokens, context windows, system vs user messages) — covered in [14-AI-Marketing-Foundations Modules 2–3](../../14-AI-Marketing-Foundations/Module-02-AI-Fundamentals-for-Marketers/Reading.md)
 > - Basic command-line + Python read-ability (you don't need to write code from scratch — Cursor will help — but you need to read what it writes)
 > - Git basics (clone, commit, push) — any 1-hour primer is fine
 > If any of these are shaky, pause and review — building an agent in 10 hours assumes the prereqs are solid.
@@ -608,5 +608,5 @@ These prompts probe the line between "useful agent" and "ChatGPT wrapper," and w
 
 > **Where this leads.**
 > - Inside this course: Module 7 (Personal Brand) — the GitHub repo + README + cost analysis from this capstone become a Featured pin on LinkedIn. Module 8 will use the agent demo as the "differentiator" slide in the pitch deck.
-> - Cross-course: [14-AI-Marketing-Foundations Module 3](../../14-AI-Marketing-Foundations/Module-03-Prompt-Engineering-Mastery/Reading.md) covers the prompt-engineering depth this agent needs. [17-AI-Marketing-Analytics-Automation Module 8](../../17-AI-Marketing-Analytics-Automation/Module-08-Real-AI-Marketing-Workflow/Reading.md) shows how agents like this fit into a full AI-marketing-ops workflow.
+> - Cross-course: [14-AI-Marketing-Foundations Module 3](../../14-AI-Marketing-Foundations/Module-03-SEO-in-the-AI-Era/Reading.md) covers the prompt-engineering depth this agent needs. [17-AI-Marketing-Analytics-Automation Module 8](../../17-AI-Marketing-Entrepreneur/README.md) shows how agents like this fit into a full AI-marketing-ops workflow.
 > - Practice: Practice Exam 2 has 4 questions on this capstone (Q13–Q15, Q35). The Final Mock's Q4 ("show me code"), Q10 ("AI in marketing"), and Q35 ("tell me about your AI agent") all grade against the GitHub repo + Loom quality.

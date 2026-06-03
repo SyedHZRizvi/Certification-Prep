@@ -382,7 +382,7 @@ Argue from the frameworks in this module. There's more than one defensible answe
 
 > **Where this leads.**
 > - Inside this course: Module 8 builds the AI creative pipeline that produces variant LP hero images and copy; Module 9 wires LP form submits into HubSpot/Klaviyo automation; Module 10 (Capstone) runs your live LP test.
-> - Cross-course: [14-AI-Marketing-Foundations Module 8](../../14-AI-Marketing-Foundations/Module-08-Email-CRM-Lifecycle/Reading.md) covers lifecycle email that picks up where the LP ends; [16-AI-SEO-Specialist](../../16-AI-SEO-Specialist/) covers LP design for organic traffic specifically.
+> - Cross-course: [14-AI-Marketing-Foundations Module 8](../../14-AI-Marketing-Foundations/Module-08-Analytics-Measurement-Basics/Reading.md) covers lifecycle email that picks up where the LP ends; [16-AI-Marketing-Strategist](../../../16-AI-Marketing-Strategist/) covers LP design for organic traffic specifically.
 > - Practice: Practice Exam 2 has ~13 questions from this module (Bayesian vs Frequentist, sample size, MDE, hero anatomy, heatmap tools).
 
 ---

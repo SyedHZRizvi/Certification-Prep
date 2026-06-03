@@ -36,25 +36,25 @@ Courses appear in the same canonical order used on the homepage and sidebar: **P
 
 | Our Course | Recommended Cert (After Completion) | Fee (USD) | Start Prep |
 |------------|--------------------------------------|-----------|------------|
-| Scrum Master | **PSM I** (Scrum.org) · CSM (Scrum Alliance) | $200 · $995+ | [Start prep →](../01-Scrum-Master/) |
-| PMP | **PMP** (PMI) · CAPM (entry-level alternative) | $555 · $300 | [Start prep →](../02-PMP/) |
+| Scrum Master | **PSM I** (Scrum.org) · CSM (Scrum Alliance) | $200 · $995+ | [Start prep →](../../01-Scrum-Master/) |
+| PMP | **PMP** (PMI) · CAPM (entry-level alternative) | $555 · $300 | [Start prep →](../../02-PMP/) |
 
 ### IT, Cloud & Systems Administration
 
 | Our Course | Recommended Cert (After Completion) | Fee (USD) | Start Prep |
 |------------|--------------------------------------|-----------|------------|
-| CompTIA A+ | **A+ Core 1 + Core 2** (220-1101/1102) | $253 + $253 | [Start prep →](../21-CompTIA-A-Plus/) |
-| CompTIA Network+ | **Network+** (N10-009) | $369 | [Start prep →](../22-CompTIA-Network-Plus/) |
-| CompTIA Linux+ | **Linux+** (XK0-005) | $369 | [Start prep →](../23-CompTIA-Linux-Plus/) |
-| CompTIA Server+ | **Server+** (SK0-005) | $369 | [Start prep →](../24-CompTIA-Server-Plus/) |
-| CompTIA Security+ | **Security+** (SY0-701) | $404 | [Start prep →](../09-CompTIA-Security-Plus/) |
-| AWS Cloud Practitioner | **CLF-C02** (AWS) | $100 | [Start prep →](../03-AWS-Cloud-Practitioner/) |
-| AWS Solutions Architect Associate | **SAA-C03** (AWS) | $150 | [Start prep →](../04-AWS-Solutions-Architect-Associate/) |
-| Azure Fundamentals | **AZ-900** (Microsoft) | $99 | [Start prep →](../05-Azure-Fundamentals/) |
-| Azure Administrator | **AZ-104** (Microsoft) | $165 | [Start prep →](../06-Azure-Administrator/) |
-| Windows Server Hybrid Admin | **AZ-800 + AZ-801** (Microsoft) | $165 + $165 | [Start prep →](../25-Windows-Server-Hybrid-Admin/) |
-| Microsoft Endpoint Administrator | **MD-102** (Microsoft) | $165 | [Start prep →](../26-Microsoft-Endpoint-Admin/) |
-| Microsoft Identity & Access Admin | **SC-300** (Microsoft) | $165 | [Start prep →](../27-Microsoft-Identity-Access-Admin/) |
+| CompTIA A+ | **A+ Core 1 + Core 2** (220-1101/1102) | $253 + $253 | [Start prep →](../../21-CompTIA-A-Plus/) |
+| CompTIA Network+ | **Network+** (N10-009) | $369 | [Start prep →](../../22-CompTIA-Network-Plus/) |
+| CompTIA Linux+ | **Linux+** (XK0-005) | $369 | [Start prep →](../../23-CompTIA-Linux-Plus/) |
+| CompTIA Server+ | **Server+** (SK0-005) | $369 | [Start prep →](../../24-CompTIA-Server-Plus/) |
+| CompTIA Security+ | **Security+** (SY0-701) | $404 | [Start prep →](../../09-CompTIA-Security-Plus/) |
+| AWS Cloud Practitioner | **CLF-C02** (AWS) | $100 | [Start prep →](../../03-AWS-Cloud-Practitioner/) |
+| AWS Solutions Architect Associate | **SAA-C03** (AWS) | $150 | [Start prep →](../../04-AWS-Solutions-Architect-Associate/) |
+| Azure Fundamentals | **AZ-900** (Microsoft) | $99 | [Start prep →](../../05-Azure-Fundamentals/) |
+| Azure Administrator | **AZ-104** (Microsoft) | $165 | [Start prep →](../../06-Azure-Administrator/) |
+| Windows Server Hybrid Admin | **AZ-800 + AZ-801** (Microsoft) | $165 + $165 | [Start prep →](../../25-Windows-Server-Hybrid-Admin/) |
+| Microsoft Endpoint Administrator | **MD-102** (Microsoft) | $165 | [Start prep →](../../26-Microsoft-Endpoint-Admin/) |
+| Microsoft Identity & Access Admin | **SC-300** (Microsoft) | $165 | [Start prep →](../../27-Microsoft-Identity-Access-Admin/) |
 
 ### Generative & Agentic AI (foundation → advanced)
 
@@ -62,18 +62,18 @@ Courses appear in the same canonical order used on the homepage and sidebar: **P
 
 | Our Course | Recommended Cert (After Completion) | Fee (USD) | Start Prep |
 |------------|--------------------------------------|-----------|------------|
-| AWS AI Practitioner | **AIF-C01** (AWS) | $100 | [Start prep →](../07-AWS-AI-Practitioner/) |
-| Azure AI Engineer | **AI-102** (Microsoft) | $165 | [Start prep →](../08-Azure-AI-Engineer/) |
-| Prompt Engineering Specialist | **Cert Hub Certificate of Completion** (vendor-neutral) | included | [Start prep →](../29-Prompt-Engineering-Specialist/) |
-| Google AI Pro | **Google Cloud Generative AI Leader** + **Professional Machine Learning Engineer (PMLE)** (Google Cloud) | $99 + $200 | [Start prep →](../32-Google-AI-Pro/) |
+| AWS AI Practitioner | **AIF-C01** (AWS) | $100 | [Start prep →](../../07-AWS-AI-Practitioner/) |
+| Azure AI Engineer | **AI-102** (Microsoft) | $165 | [Start prep →](../../08-Azure-AI-Engineer/) |
+| Prompt Engineering Specialist | **Cert Hub Certificate of Completion** (vendor-neutral) | included | [Start prep →](../../29-Prompt-Engineering-Specialist/) |
+| Google AI Pro | **Google Cloud Generative AI Leader** + **Professional Machine Learning Engineer (PMLE)** (Google Cloud) | $99 + $200 | [Start prep →](../../32-Google-AI-Pro/) |
 
 **Intermediate → advanced specialty tier:**
 
 | Our Course | Recommended Cert (After Completion) | Fee (USD) | Start Prep |
 |------------|--------------------------------------|-----------|------------|
-| Claude Architect | **Cert Hub Certificate of Completion** (Anthropic-aligned, Cert Hub original) | included | [Start prep →](../28-Claude-Architect/) |
-| Generative AI Engineer | **Cert Hub Certificate of Completion** + (optional) Databricks GenAI Engineer Associate | included / $200 | [Start prep →](../30-Generative-AI-Engineer/) |
-| AWS ML Specialty | **AWS Certified Machine Learning — Specialty (MLS-C01)** (AWS) | $300 | [Start prep →](../31-AWS-ML-Specialty/) |
+| Claude Architect | **Cert Hub Certificate of Completion** (Anthropic-aligned, Cert Hub original) | included | [Start prep →](../../28-Claude-Architect/) |
+| Generative AI Engineer | **Cert Hub Certificate of Completion** + (optional) Databricks GenAI Engineer Associate | included / $200 | [Start prep →](../../30-Generative-AI-Engineer/) |
+| AWS ML Specialty | **AWS Certified Machine Learning — Specialty (MLS-C01)** (AWS) | $300 | [Start prep →](../../31-AWS-ML-Specialty/) |
 
 ### Supply Chain & Operations (foundation → advanced)
 
@@ -81,32 +81,32 @@ Courses appear in the same canonical order used on the homepage and sidebar: **P
 
 | Our Course | Recommended Cert (After Completion) | Fee (USD) | Start Prep |
 |------------|--------------------------------------|-----------|------------|
-| ASCM CPIM | **CPIM Part 1 + Part 2** (ASCM) | $1,495+ | [Start prep →](../11-ASCM-CPIM/) |
-| ASCM CLTD | **CLTD** (ASCM) | $1,295+ | [Start prep →](../12-ASCM-CLTD/) |
+| ASCM CPIM | **CPIM Part 1 + Part 2** (ASCM) | $1,495+ | [Start prep →](../../11-ASCM-CPIM/) |
+| ASCM CLTD | **CLTD** (ASCM) | $1,295+ | [Start prep →](../../12-ASCM-CLTD/) |
 
 **Senior tier — degree + experience required:**
 
 | Our Course | Recommended Cert (After Completion) | Fee (USD) | Start Prep |
 |------------|--------------------------------------|-----------|------------|
-| ASCM CSCP | **CSCP** (ASCM) — Bachelor's + 2 yrs OR 5 yrs experience | $1,295+ | [Start prep →](../10-ASCM-CSCP/) |
-| ISM CPSM | **CPSM 1 + 2 + 3** (ISM) — Bachelor's + 3 yrs OR 5 yrs experience | $199 ea. | [Start prep →](../13-ISM-CPSM/) |
+| ASCM CSCP | **CSCP** (ASCM) — Bachelor's + 2 yrs OR 5 yrs experience | $1,295+ | [Start prep →](../../10-ASCM-CSCP/) |
+| ISM CPSM | **CPSM 1 + 2 + 3** (ISM) — Bachelor's + 3 yrs OR 5 yrs experience | $199 ea. | [Start prep →](../../13-ISM-CPSM/) |
 
 ### AI Digital Marketing (5-course ladder)
 
 | Our Course | Recommended Cert (After Completion) | Fee (USD) | Start Prep |
 |------------|--------------------------------------|-----------|------------|
-| AI Digital Marketing Foundations | HubSpot Inbound · Content Marketing | FREE | [Start prep →](../14-AI-Marketing-Foundations/) |
-| AI Digital Marketing Practitioner | Google Ads · Meta Blueprint Commerce | FREE / $99+ | [Start prep →](../15-AI-Marketing-Practitioner/) |
-| AI Digital Marketing Strategist | GA4 IQ · Wharton Online Specialization | FREE / $500 | [Start prep →](../16-AI-Marketing-Strategist/) |
-| AI Digital Marketing Entrepreneur | (No single cert — readiness portfolio) | — | [Start prep →](../17-AI-Marketing-Entrepreneur/) |
-| AI Digital Marketing Capstone Portfolio | DMI Professional Diploma · OMCP | $1,800+ / $199+ | [Start prep →](../18-AI-Marketing-Capstone-Portfolio/) |
+| AI Digital Marketing Foundations | HubSpot Inbound · Content Marketing | FREE | [Start prep →](../../14-AI-Marketing-Foundations/) |
+| AI Digital Marketing Practitioner | Google Ads · Meta Blueprint Commerce | FREE / $99+ | [Start prep →](../../15-AI-Marketing-Practitioner/) |
+| AI Digital Marketing Strategist | GA4 IQ · Wharton Online Specialization | FREE / $500 | [Start prep →](../../16-AI-Marketing-Strategist/) |
+| AI Digital Marketing Entrepreneur | (No single cert — readiness portfolio) | — | [Start prep →](../../17-AI-Marketing-Entrepreneur/) |
+| AI Digital Marketing Capstone Portfolio | DMI Professional Diploma · OMCP | $1,800+ / $199+ | [Start prep →](../../18-AI-Marketing-Capstone-Portfolio/) |
 
 ### Bitcoin & E-Commerce
 
 | Our Course | Recommended Cert (After Completion) | Fee (USD) | Start Prep |
 |------------|--------------------------------------|-----------|------------|
-| Bitcoin & Cryptocurrency | **CBP** (C4) · CBSA (BTA) · CCAS (ACAMS) | $150 · $300 · $1,395 | [Start prep →](../19-Bitcoin-Cryptocurrency/) |
-| E-Commerce | **Google D-M & E-C Certificate** · **Adobe Commerce BP** · Salesforce B2C | $300 · $225 · $200+ | [Start prep →](../20-E-Commerce/) |
+| Bitcoin & Cryptocurrency | **CBP** (C4) · CBSA (BTA) · CCAS (ACAMS) | $150 · $300 · $1,395 | [Start prep →](../../19-Bitcoin-Cryptocurrency/) |
+| E-Commerce | **Google D-M & E-C Certificate** · **Adobe Commerce BP** · Salesforce B2C | $300 · $225 · $200+ | [Start prep →](../../20-E-Commerce/) |
 
 ---
 
@@ -1068,12 +1068,12 @@ Stay away from any cert sold by an organization without credible alumni on Linke
 
 You've chosen your cert. Now go earn it:
 
-1. ☑️ **Open the matching course README** — pick from the [32 tracks](../) on the homepage
-2. ☑️ **Read the [Quick Start Guide](../00-Study-Plan/Quick-Start-Guide/)** if you haven't already
-3. ☑️ **Follow the [12-Week Study Plan](../00-Study-Plan/12-Week-Study-Plan/)** — adaptable to any cert
-4. ☑️ **Bookmark [Exam Day Tips](../00-Study-Plan/Exam-Day-Tips/)** — read it the morning of your exam
-5. ☑️ **Find [Communities](./Communities/)** of others studying the same cert
-6. ☑️ **Drill [practice questions](./Free-Practice-Tests/)** until your scores plateau
+1. ☑️ **Open the matching course README** — pick from the [32 tracks](../../) on the homepage
+2. ☑️ **Read the [Quick Start Guide](../../00-Study-Plan/Quick-Start-Guide/)** if you haven't already
+3. ☑️ **Follow the [12-Week Study Plan](../../00-Study-Plan/12-Week-Study-Plan/)** — adaptable to any cert
+4. ☑️ **Bookmark [Exam Day Tips](../../00-Study-Plan/Exam-Day-Tips/)** — read it the morning of your exam
+5. ☑️ **Find [Communities](../Communities/)** of others studying the same cert
+6. ☑️ **Drill [practice questions](../Free-Practice-Tests/)** until your scores plateau
 7. ☑️ **Pay for the exam.** Walk in. Pass. Update LinkedIn within 24 hours.
 
-🚀 **Ready to begin?** Pick a course from the [homepage](../) and start with Module 01.
+🚀 **Ready to begin?** Pick a course from the [homepage](../../) and start with Module 01.

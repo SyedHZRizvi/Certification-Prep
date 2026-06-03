@@ -412,7 +412,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: Module 5 connects payment-completion to fulfillment (cart abandonment + checkout-to-ship); Module 7 returns to fraud at the paid-acquisition fraud-rate level; Module 10 returns to cross-border tax (IOSS, multi-currency) for international expansion.
-> - Cross-course: [09-CompTIA-Security-Plus Module 7](../../09-CompTIA-Security-Plus/Module-07-Identity-Access-Management/Reading.md) covers IAM disciplines that complement PCI-DSS.
+> - Cross-course: [09-CompTIA-Security-Plus Module 7](../../09-CompTIA-Security-Plus/Module-07-Endpoint-Mobile-Cloud-Security/Reading.md) covers IAM disciplines that complement PCI-DSS.
 > - Practice: Practice Exam 1 has ~6 questions drawn from this module (PCI levels, SCA, Wayfair, EU VAT, chargeback ratios).
 
 ---

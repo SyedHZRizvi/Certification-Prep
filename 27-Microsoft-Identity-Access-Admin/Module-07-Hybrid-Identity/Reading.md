@@ -6,7 +6,7 @@
 > - Tenant + license tier basics — [Module 1](../Module-01-Entra-ID-Fundamentals/Reading.md).
 > - User-and-group taxonomy + the `synced` user attribute — [Module 2](../Module-02-Users-Groups/Reading.md).
 > - Authentication methods and the cloud auth signal model — [Module 3](../Module-03-Authentication/Reading.md).
-> - On-prem Active Directory at a conceptual level (forests, domains, OUs, GPOs). [`09-CompTIA-Security-Plus` Module 3](../../09-CompTIA-Security-Plus/Module-03-Security-Architecture/Reading.md) provides intro context.
+> - On-prem Active Directory at a conceptual level (forests, domains, OUs, GPOs). [`09-CompTIA-Security-Plus` Module 3](../../09-CompTIA-Security-Plus/Module-03-Identity-Access-Management/Reading.md) provides intro context.
 
 ---
 

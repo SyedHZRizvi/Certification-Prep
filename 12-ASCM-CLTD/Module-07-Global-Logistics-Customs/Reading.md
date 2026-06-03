@@ -7,7 +7,7 @@
 > - [Module 6](../Module-06-Transportation-Modes/Reading.md) ocean/air/intermodal vocabulary (containers, AWB, BOL)
 > - Basic finance: discount rate, NPV, working capital — for valuing duty deferral
 >
-> Cross-course: [CSCP Module 8 (International Trade & Customs)](../../10-ASCM-CSCP/Module-08-International-Trade-Customs/Reading.md) covers an introductory view of customs and Incoterms. [CPSM Module on Global Sourcing](../../13-ISM-CPSM/) (ISM CPSM track) covers the procurement side of global trade including supplier-side Incoterms negotiation.
+> Cross-course: [CSCP Module 8 (International Trade & Customs)](../../10-ASCM-CSCP/Module-08-International-Trade-Customs/Reading.md) covers an introductory view of customs and Incoterms. [CPSM Module on Global Sourcing](../../../13-ISM-CPSM/) (ISM CPSM track) covers the procurement side of global trade including supplier-side Incoterms negotiation.
 
 ---
 

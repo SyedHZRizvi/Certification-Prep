@@ -6,7 +6,7 @@
 > - The entire course so far — leadership is the integrating discipline
 > - [Module 1 — maturity model](../Module-01-Supply-Management-Foundations/Reading.md): you'll be the leader actually moving organizations up that ladder
 > - [Module 4 — SRM](../Module-04-Supplier-Relationship-Management/Reading.md): SRM doesn't happen without leadership
-> - Cross-course: [PMP Modules 5-8](../../02-PMP/Module-05-Quality-Management/Reading.md) for deeper project-management toolkit; [Scrum Master Module 4](../../01-Scrum-Master/Module-04-Scrum-Team/Reading.md) for the Tuckman-equivalent team dynamics
+> - Cross-course: [PMP Modules 5-8](../../02-PMP/Module-05-Agile-Hybrid/Reading.md) for deeper project-management toolkit; [Scrum Master Module 4](../../01-Scrum-Master/Module-04-Events/Reading.md) for the Tuckman-equivalent team dynamics
 > If any of the above are shaky, pause and review before continuing.
 
 ---
@@ -442,7 +442,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: practice exams + Final Mock + Capstone integrate everything.
-> - Cross-course: [PMP Modules 5-8](../../02-PMP/Module-05-Quality-Management/Reading.md) deepen project-management mechanics; [Scrum Master Module 4](../../01-Scrum-Master/Module-04-Scrum-Team/Reading.md) on team dynamics.
+> - Cross-course: [PMP Modules 5-8](../../02-PMP/Module-05-Agile-Hybrid/Reading.md) deepen project-management mechanics; [Scrum Master Module 4](../../01-Scrum-Master/Module-04-Events/Reading.md) on team dynamics.
 > - Practice: Practice Exam 2 has ~25 questions drawn from this module; Final Mock Exam revisits everything in this module under timed conditions.
 
 ---

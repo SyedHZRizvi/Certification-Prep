@@ -485,7 +485,7 @@ Each of these has more than one defensible answer. Argue from the frameworks in 
 
 > **Where this leads.**
 > - Inside this course: Module 6 layers retargeting on top of TikTok / LinkedIn prospecting; Module 8 covers the AI video pipeline you need to feed TikTok's volume; Module 9 wires LinkedIn Lead Gen forms into HubSpot CRM workflows.
-> - Cross-course: [14-AI-Marketing-Foundations Module 6](../../14-AI-Marketing-Foundations/Module-06-Social-Influencer-Marketing/Reading.md) covers the organic-creator landscape; [17-AI-Performance-Marketer](../../17-AI-Performance-Marketer/) goes deeper on cross-platform bidding.
+> - Cross-course: [14-AI-Marketing-Foundations Module 6](../../14-AI-Marketing-Foundations/Module-06-Email-Marketing-AI-Personalization/Reading.md) covers the organic-creator landscape; [17-AI-Marketing-Entrepreneur](../../../17-AI-Marketing-Entrepreneur/) goes deeper on cross-platform bidding.
 > - Practice: Practice Exam 1 has ~7 questions from this module (Spark Ads, TLA, Matched Audiences, hook window, LinkedIn CPC math).
 
 ---

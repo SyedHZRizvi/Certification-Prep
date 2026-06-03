@@ -239,8 +239,8 @@ For per-cert pacing, see the `README.md` and `Cheat-Sheet.md` inside each track 
 
 You've got the plan. Now:
 
-1. ☑️ Open the [Quick Start Guide](./Quick-Start-Guide/) if you haven't picked a cert yet
-2. ☑️ Open the `README.md` of your chosen track (any of the [32 courses](../))
-3. ☑️ Open [Exam Day Tips](./Exam-Day-Tips/) — bookmark it for the morning of
-4. ☑️ Open the [Certifications Catalog](../Resources/International-Certifications/) to confirm fees + registration steps
+1. ☑️ Open the [Quick Start Guide](../Quick-Start-Guide/) if you haven't picked a cert yet
+2. ☑️ Open the `README.md` of your chosen track (any of the [32 courses](../../))
+3. ☑️ Open [Exam Day Tips](../Exam-Day-Tips/) — bookmark it for the morning of
+4. ☑️ Open the [Certifications Catalog](../../Resources/International-Certifications/) to confirm fees + registration steps
 5. ☑️ Start Module 01 today. Not tomorrow. Today.

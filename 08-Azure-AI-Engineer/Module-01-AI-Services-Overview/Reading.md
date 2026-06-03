@@ -3,8 +3,8 @@
 > **Why this module matters:** Every other module in this course assumes you can spin up an Azure AI resource, find its key + endpoint, and call it from code. Nail this and the rest is downhill.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - Azure subscription / resource group / resource model — covered in [`05-Azure-Fundamentals` Module 2](../../05-Azure-Fundamentals/Module-02-Azure-Architecture-Services/Reading.md)
-> - Microsoft Entra ID basics (tenants, RBAC roles) — covered in [`06-Azure-Administrator` Module 1](../../06-Azure-Administrator/Module-01-Identity-Governance/Reading.md)
+> - Azure subscription / resource group / resource model — covered in [`05-Azure-Fundamentals` Module 2](../../05-Azure-Fundamentals/Module-02-Azure-Architecture/Reading.md)
+> - Microsoft Entra ID basics (tenants, RBAC roles) — covered in [`06-Azure-Administrator` Module 1](../../06-Azure-Administrator/Module-01-Subscriptions-Resource-Hierarchy/Reading.md)
 > - Python or C# fluency at the "I can read a REST snippet" level
 > - Azure CLI installed (`az login` working)
 >
@@ -365,7 +365,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: Module 2 turns the resource model you just learned into a *Responsible AI* control surface (content filters, prompt shields, groundedness). Module 7 deepens the auth + quota story specifically for Azure OpenAI. Module 8 wires it all into Azure AI Foundry projects.
-> - Cross-course: [`05-Azure-Fundamentals`](../../05-Azure-Fundamentals/) covers the ARM resource model; [`06-Azure-Administrator`](../../06-Azure-Administrator/) deepens RBAC + managed identity; [`07-AWS-AI-Practitioner`](../../07-AWS-AI-Practitioner/) gives the cross-cloud comparison if you've worked on Bedrock or SageMaker.
+> - Cross-course: [`05-Azure-Fundamentals`](../../../05-Azure-Fundamentals/) covers the ARM resource model; [`06-Azure-Administrator`](../../../06-Azure-Administrator/) deepens RBAC + managed identity; [`07-AWS-AI-Practitioner`](../../../07-AWS-AI-Practitioner/) gives the cross-cloud comparison if you've worked on Bedrock or SageMaker.
 > - Practice: Practice Exam 1 includes ~7 questions drawing from this module (provisioning, auth, SDK identity); Final Mock Exam revisits the same patterns inside multi-module case studies.
 
 ---

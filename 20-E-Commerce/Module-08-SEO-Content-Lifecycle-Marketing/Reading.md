@@ -25,7 +25,7 @@ This module teaches you how to build that foundation: e-commerce SEO (the techni
 > - Catalog hygiene + PDP structure — covered in [Module 3](../Module-03-Product-Catalog-Information-Management/Reading.md)
 > - Conversion rate optimization + Core Web Vitals — covered in [Module 6](../Module-06-Conversion-Optimization-UX/Reading.md)
 > - Paid acquisition fundamentals (CAC, ROAS) — covered in [Module 7](../Module-07-Paid-Acquisition-E-Commerce/Reading.md)
-> - Cross-course: [15-AI-Marketing-Practitioner Module 6 — SEO + Content Strategy](../../15-AI-Marketing-Practitioner/Module-06-SEO-Content-Strategy/Reading.md) covers organic search at depth.
+> - Cross-course: [15-AI-Marketing-Practitioner Module 6 — SEO + Content Strategy](../../15-AI-Marketing-Practitioner/Module-06-Programmatic-Retargeting/Reading.md) covers organic search at depth.
 > - Cross-course: [16-AI-Marketing-Strategist Module 7 — AI Personalization](../../16-AI-Marketing-Strategist/Module-07-AI-Personalization-Scale/Reading.md) deepens lifecycle personalization.
 > If any of these are shaky, pause and review before continuing.
 
@@ -116,7 +116,7 @@ Faceted navigation (filters for color, size, brand, price range) is e-commerce's
 
 ### Canonical Tags (the dedup mechanism)
 
-`<link rel="canonical" href="...">` tells Google "if you found this URL, treat THIS as the canonical version." Critical for:
+`<link rel="canonical" href="https://example.com/products/blue-widget/">` tells Google "if you found this URL, treat THIS as the canonical version." Critical for:
 
 - **Variant pages.** Color/size variants of one product → all canonical to the parent SKU PDP.
 - **Tracking parameters.** `?utm_source=email` → canonical to clean URL.
@@ -355,7 +355,7 @@ The technical underpinnings:
 
 > **Where this leads.**
 > - Inside this course: Module 9 covers GA4, attribution, MMM, and marketplaces (the measurement and channel-mix layer that sits over everything in Modules 7-8).
-> - Cross-course: [15-AI-Marketing-Practitioner Module 6 — SEO + Content Strategy](../../15-AI-Marketing-Practitioner/Module-06-SEO-Content-Strategy/Reading.md) goes deeper on keyword research, technical SEO audits, and content workflows; [16-AI-Marketing-Strategist Module 7 — AI Personalization at Scale](../../16-AI-Marketing-Strategist/Module-07-AI-Personalization-Scale/Reading.md) covers lifecycle personalization with AI.
+> - Cross-course: [15-AI-Marketing-Practitioner Module 6 — SEO + Content Strategy](../../15-AI-Marketing-Practitioner/Module-06-Programmatic-Retargeting/Reading.md) goes deeper on keyword research, technical SEO audits, and content workflows; [16-AI-Marketing-Strategist Module 7 — AI Personalization at Scale](../../16-AI-Marketing-Strategist/Module-07-AI-Personalization-Scale/Reading.md) covers lifecycle personalization with AI.
 > - Practice: Practice Exam 2 has ~8 questions drawn from this module (E-E-A-T, schema markup, Klaviyo flow architecture, Reichheld loyalty math).
 
 ---

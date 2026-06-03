@@ -465,7 +465,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: Module 2 builds the identity layer (Entra ID, RBAC, PIM, Conditional Access) that sits on top of this hierarchy; Module 10 revisits Azure Policy and Locks from a monitoring/governance angle.
-> - Cross-course: [`05-Azure-Fundamentals` Module 5](../../05-Azure-Fundamentals/Module-05-Governance-Compliance/Reading.md) introduces these concepts at AZ-900 depth; [`08-Azure-AI-Engineer`](../../08-Azure-AI-Engineer/README.md) modules assume you can stand up a compliant resource group on demand.
+> - Cross-course: [`05-Azure-Fundamentals` Module 5](../../05-Azure-Fundamentals/Module-05-Cost-Management-SLAs/Reading.md) introduces these concepts at AZ-900 depth; [`08-Azure-AI-Engineer`](../../08-Azure-AI-Engineer/README.md) modules assume you can stand up a compliant resource group on demand.
 > - Practice: Practice Exam 1 has roughly 6–8 questions from this module (hierarchy order, tags, locks, policy effects, move resources). Final Mock Exam revisits with case-study-style synthesis.
 
 ---

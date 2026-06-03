@@ -483,10 +483,10 @@ You got this! 💪
 
 ## 🚀 Next Steps
 
-- 🚀 [**Quick Start Guide**](../00-Study-Plan/Quick-Start-Guide/) — pick your starting course
-- 📅 [**12-Week Study Plan**](../00-Study-Plan/12-Week-Study-Plan/) — the day-by-day cadence
-- 🏆 [**Certifications Catalog**](./International-Certifications/) — fees, formats, registration procedure for every cert
-- 📚 [**Books & Links**](./Books-and-Links/) — the canonical resource list per track
-- 🤝 [**Communities**](./Communities/) — find a study buddy
-- 🎯 [**Exam Day Tips**](../00-Study-Plan/Exam-Day-Tips/) — read the morning of your exam
-- 🏠 [**Course Home**](../) — all 32 tracks at a glance
+- 🚀 [**Quick Start Guide**](../../00-Study-Plan/Quick-Start-Guide/) — pick your starting course
+- 📅 [**12-Week Study Plan**](../../00-Study-Plan/12-Week-Study-Plan/) — the day-by-day cadence
+- 🏆 [**Certifications Catalog**](../International-Certifications/) — fees, formats, registration procedure for every cert
+- 📚 [**Books & Links**](../Books-and-Links/) — the canonical resource list per track
+- 🤝 [**Communities**](../Communities/) — find a study buddy
+- 🎯 [**Exam Day Tips**](../../00-Study-Plan/Exam-Day-Tips/) — read the morning of your exam
+- 🏠 [**Course Home**](../../) — all 32 tracks at a glance

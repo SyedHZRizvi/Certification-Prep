@@ -471,7 +471,7 @@ Address space planning followed CAF guidance: each region got a `/16`, each trus
 
 > **Where this leads.**
 > - Inside this course: Module 8 covers the firewall, NSG, App Gateway, and Front Door layers that sit on top of this VNet design; Module 9 covers cross-region DR which depends on inter-region peering or ExpressRoute Global Reach; Module 10 wires NSG Flow Logs and Connection Monitor into Azure Monitor.
-> - Cross-course: [`04-AWS-Solutions-Architect-Associate` Module 5](../../04-AWS-Solutions-Architect-Associate/Module-05-Networking/Reading.md) covers AWS Transit Gateway (the AWS analogue to hub-spoke); [`09-CompTIA-Security-Plus`](../../09-CompTIA-Security-Plus/) Module 3 covers segmentation as a security control.
+> - Cross-course: [`04-AWS-Solutions-Architect-Associate` Module 5](../../04-AWS-Solutions-Architect-Associate/Module-05-S3-Deep-Dive/Reading.md) covers AWS Transit Gateway (the AWS analogue to hub-spoke); [`09-CompTIA-Security-Plus`](../../../09-CompTIA-Security-Plus/) Module 3 covers segmentation as a security control.
 > - Practice: PE-2 has 9 questions from this module; Final Mock revisits with private-endpoint + DNS scenarios in case-study form.
 
 ---

@@ -149,4 +149,4 @@ Answer these in your notebook (without re-watching):
 4. What's the right defense for token theft, and why isn't more MFA the answer?
 5. Sketch the 5 Tier-1 analytics rules you'd build first.
 
-If you can answer all 5, you're ready for the [Quiz](./Quiz.md) and then the [Practice Exams](../Practice-Exams/).
+If you can answer all 5, you're ready for the [Quiz](./Quiz.md) and then the [Practice Exams](../../../Practice-Exams/).

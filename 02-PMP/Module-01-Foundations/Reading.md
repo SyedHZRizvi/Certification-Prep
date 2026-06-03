@@ -346,7 +346,7 @@ You now know:
 
 > **Where this leads.**
 > - **Inside this course:** [Module 02 — People Domain](../Module-02-People-Domain/Reading.md) deepens the servant-leadership mindset previewed here, and [Module 04 — Business Environment](../Module-04-Business-Environment/Reading.md) builds on the EEF/OPA + governance framing.
-> - **Cross-course:** [01-Scrum-Master Module 01](../../01-Scrum-Master/Module-01-Agile-Mindset/Reading.md) is the agile-mindset twin of this foundations module; [13-ISM-CPSM Module 01](../../13-ISM-CPSM/Module-01-Strategic-Sourcing-Foundations/Reading.md) connects PM governance to strategic-sourcing governance.
+> - **Cross-course:** [01-Scrum-Master Module 01](../../01-Scrum-Master/Module-01-Agile-Mindset/Reading.md) is the agile-mindset twin of this foundations module; [13-ISM-CPSM Module 01](../../13-ISM-CPSM/Module-01-Supply-Management-Foundations/Reading.md) connects PM governance to strategic-sourcing governance.
 > - **Practice:** [Practice Exam 1](../Practice-Exams/Practice-Exam-1.md) draws ~6–8 of its 50 questions from this module's content (definitions, ethics, org structures, talent triangle).
 
 ---

@@ -167,7 +167,7 @@ If all 5 in <90s, you own this course. 🎓
 
 ## 🎓 Course Complete
 
-Take the [Practice Exams](../Practice-Exams/) → drill the [Flashcards](../Flashcards.md) → schedule the **Google Cloud Generative AI Leader** exam.
+Take the [Practice Exams](../../../Practice-Exams/) → drill the [Flashcards](../Flashcards.md) → schedule the **Google Cloud Generative AI Leader** exam.
 
 🟦 **You got this.**
 

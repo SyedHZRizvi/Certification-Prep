@@ -10,22 +10,22 @@
       <!-- Center: primary nav (text-only, uniform) -->
       <div class="hidden md:flex items-center gap-0.5">
         <a href="{{ '/courses/' | relative_url }}" class="nav-link">Courses</a>
-        <a href="Resources/International-Certifications/" class="nav-link">Certifications</a>
+        <a href="{{ '/Resources/International-Certifications/' | relative_url }}" class="nav-link">Certifications</a>
         <a href="{{ '/how-it-works/' | relative_url }}" class="nav-link">How It Works</a>
         <a href="{{ '/about/' | relative_url }}" class="nav-link">About the Creator</a>
         <!-- Admin-only: revealed by JS when /api/auth/me reports superuser/administrator -->
-        <a href="Manage-Users/" class="nav-link nav-admin" data-auth-state="admin">Manage Users</a>
+        <a href="{{ '/Manage-Users/' | relative_url }}" class="nav-link nav-admin" data-auth-state="admin">Manage Users</a>
       </div>
 
       <!-- Right cluster: CTA + auth -->
       <div class="flex items-center gap-2">
         <!-- ENROLL NOW (the only colored element — primary CTA) -->
-        <a href="enroll/" class="nav-cta">
+        <a href="{{ '/enroll/' | relative_url }}" class="nav-cta">
           Enroll Now <span aria-hidden="true">→</span>
         </a>
 
         <!-- Anonymous: SIGN IN text link -->
-        <a href="login/" class="nav-link nav-signin" data-auth-state="anonymous">Sign In</a>
+        <a href="{{ '/login/' | relative_url }}" class="nav-link nav-signin" data-auth-state="anonymous">Sign In</a>
 
         <!-- Authenticated: user chip (last, at the far right) -->
         <div class="account-chip" data-auth-state="authenticated">

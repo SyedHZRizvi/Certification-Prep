@@ -7,7 +7,7 @@
 > - Conditional Access logging fields — [Module 4](../Module-04-Conditional-Access/Reading.md).
 > - PIM activation auditing — [Module 6](../Module-06-Governance-PIM/Reading.md).
 > - Hybrid identity sync errors — [Module 7](../Module-07-Hybrid-Identity/Reading.md).
-> - Basic SIEM concepts — [`09-CompTIA-Security-Plus` Module 7](../../09-CompTIA-Security-Plus/Module-07-Security-Operations/Reading.md).
+> - Basic SIEM concepts — [`09-CompTIA-Security-Plus` Module 7](../../09-CompTIA-Security-Plus/Module-07-Endpoint-Mobile-Cloud-Security/Reading.md).
 
 ---
 
@@ -392,7 +392,7 @@ The KQL library is in the open-source Microsoft Sentinel content GitHub repo (`A
 
 > **Where this leads.**
 > - Inside this course: this is the last module. The Practice Exams follow.
-> - Cross-course: [`09-CompTIA-Security-Plus` Module 7](../../09-CompTIA-Security-Plus/Module-07-Security-Operations/Reading.md) covers SIEM/SOAR at a broader level; [`08-Azure-AI-Engineer`](../../08-Azure-AI-Engineer/README.md) integrates with these same logs for AI service monitoring.
+> - Cross-course: [`09-CompTIA-Security-Plus` Module 7](../../09-CompTIA-Security-Plus/Module-07-Endpoint-Mobile-Cloud-Security/Reading.md) covers SIEM/SOAR at a broader level; [`08-Azure-AI-Engineer`](../../08-Azure-AI-Engineer/README.md) integrates with these same logs for AI service monitoring.
 > - Practice: Practice Exam 2 + Final Mock have 7–9 questions from this module.
 
 ---

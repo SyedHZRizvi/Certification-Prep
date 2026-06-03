@@ -376,7 +376,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: Module 3 picks up *after* the supplier has been selected and negotiates the deal; Module 4 manages the supplier post-award; Module 5 deepens the TCO lens applied during evaluation.
-> - Cross-course: [ASCM CPIM Module 4](../../11-ASCM-CPIM/Module-04-Inventory-Management/Reading.md) addresses the inventory-buffer side of bottleneck-quadrant strategies; [PMP Module 9](../../02-PMP/Module-09-Procurement-Management/Reading.md) covers contract-administration overlap.
+> - Cross-course: [ASCM CPIM Module 4](../../11-ASCM-CPIM/Module-04-Master-Production-Scheduling-MRP/Reading.md) addresses the inventory-buffer side of bottleneck-quadrant strategies; [PMP Module 9](../../02-PMP/Module-09-Procurement/Reading.md) covers contract-administration overlap.
 > - Practice: Practice Exam 1 has ~20 questions drawn from this module (Kraljic, RFI/RFP/RFQ, single vs sole vs dual, spend analysis, bullwhip).
 
 ---

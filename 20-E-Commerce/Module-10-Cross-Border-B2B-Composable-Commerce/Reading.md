@@ -40,7 +40,7 @@ This module gives you the operating knowledge to architect for that world — an
 > - Payments, tax, and fraud at the domestic level — covered in [Module 4](../Module-04-Payments-Tax-Fraud/Reading.md)
 > - Fulfillment, 3PL, and returns economics — covered in [Module 5](../Module-05-Fulfillment-Logistics-Returns/Reading.md)
 > - Analytics and attribution baseline — covered in [Module 9](../Module-09-Analytics-Attribution-Marketplaces/Reading.md)
-> - Cross-course: [10-ASCM-CSCP Module 7](../../10-ASCM-CSCP/Reading.md) covers cross-border supply-chain mechanics from the supply-chain-professional angle.
+> - Cross-course: [10-ASCM-CSCP Module 7](../../10-ASCM-CSCP/README.md) covers cross-border supply-chain mechanics from the supply-chain-professional angle.
 > If any of these are shaky, pause and review before continuing.
 
 ---
@@ -470,7 +470,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: This module closes the curriculum. Next: [Capstone-Project.md](../Capstone-Project.md) integrates Modules 1-10 in an applied brief; [Flashcards.md](../Flashcards.md) compresses everything for spaced repetition; the three Practice Exams (PE1 25Q, PE2 45Q, Final Mock 60Q) calibrate exam readiness.
-> - Cross-course: [10-ASCM-CSCP](../../10-ASCM-CSCP/README.md) deepens cross-border supply-chain; [13-ISM-CPSM](../../13-ISM-CPSM/README.md) covers B2B procurement from the buyer side; [15-AI-Marketing-Practitioner Module 8](../../15-AI-Marketing-Practitioner/Module-08-Lifecycle-Email-SMS/Reading.md) covers lifecycle for B2B.
+> - Cross-course: [10-ASCM-CSCP](../../10-ASCM-CSCP/README.md) deepens cross-border supply-chain; [13-ISM-CPSM](../../13-ISM-CPSM/README.md) covers B2B procurement from the buyer side; [15-AI-Marketing-Practitioner Module 8](../../15-AI-Marketing-Practitioner/Module-08-AI-Content-Production-Scale/Reading.md) covers lifecycle for B2B.
 > - Practice: Final Mock Exam has 4-6 questions drawn from this module (cross-border tax, MACH, B2B platforms, DSA, De Minimis).
 
 ---

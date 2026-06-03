@@ -5,7 +5,7 @@
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - The tenant + license tiers from [Module 1](../Module-01-Entra-ID-Fundamentals/Reading.md) (because Authentication methods policy + per-user MFA + CA all interact).
 > - User-and-group taxonomy from [Module 2](../Module-02-Users-Groups/Reading.md) (because methods policy is targeted at groups).
-> - General cryptography vocabulary (public key, FIDO, X.509) — [`09-CompTIA-Security-Plus` Module 4](../../09-CompTIA-Security-Plus/Module-04-Cryptography-PKI/Reading.md).
+> - General cryptography vocabulary (public key, FIDO, X.509) — [`09-CompTIA-Security-Plus` Module 4](../../09-CompTIA-Security-Plus/Module-04-Threats-Threat-Actors/Reading.md).
 
 ---
 
@@ -355,7 +355,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: Module 4 builds Conditional Access policies that *target* these auth methods; Module 6 layers PIM activation MFA on top.
-> - Cross-course: [`09-CompTIA-Security-Plus` Module 4](../../09-CompTIA-Security-Plus/Module-04-Cryptography-PKI/Reading.md) covers the underlying PKI / FIDO crypto; [`06-Azure-Administrator` Module 2](../../06-Azure-Administrator/Module-02-Entra-ID-RBAC/Reading.md) covers RBAC scenarios that interact with these policies.
+> - Cross-course: [`09-CompTIA-Security-Plus` Module 4](../../09-CompTIA-Security-Plus/Module-04-Threats-Threat-Actors/Reading.md) covers the underlying PKI / FIDO crypto; [`06-Azure-Administrator` Module 2](../../06-Azure-Administrator/Module-02-Entra-ID-RBAC/Reading.md) covers RBAC scenarios that interact with these policies.
 
 ---
 

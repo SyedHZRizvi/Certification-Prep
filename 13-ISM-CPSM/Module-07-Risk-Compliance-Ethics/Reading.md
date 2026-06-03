@@ -5,7 +5,7 @@
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Module 4 — SRM and tiering](../Module-04-Supplier-Relationship-Management/Reading.md): risk register builds on tier classification
 > - [Module 6 — FCPA, sanctions, FTAs](../Module-06-International-Supply/Reading.md): compliance hooks back here
-> - Cross-course: [Security+ Module 5 — Risk Management](../../09-CompTIA-Security-Plus/Module-05-Risk-Management/Reading.md) for ISO 31000 risk taxonomy that's identical to the supply-chain application
+> - Cross-course: [Security+ Module 5 — Risk Management](../../09-CompTIA-Security-Plus/Module-05-Vulnerabilities-Attacks/Reading.md) for ISO 31000 risk taxonomy that's identical to the supply-chain application
 > If Module 4 is shaky, pause and review before continuing.
 
 ---
@@ -384,7 +384,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: Module 8 covers the leadership and stakeholder work required to actually implement risk and ESG programs.
-> - Cross-course: [Security+ Module 5](../../09-CompTIA-Security-Plus/Module-05-Risk-Management/Reading.md) for ISO 31000 risk taxonomy; [ASCM CSCP Module 9](../../10-ASCM-CSCP/Module-09-Risk-Management/Reading.md) for the broader chain-of-chains risk lens.
+> - Cross-course: [Security+ Module 5](../../09-CompTIA-Security-Plus/Module-05-Vulnerabilities-Attacks/Reading.md) for ISO 31000 risk taxonomy; [ASCM CSCP Module 9](../../10-ASCM-CSCP/Module-09-Sustainability-Risk-CSR/Reading.md) for the broader chain-of-chains risk lens.
 > - Practice: Practice Exam 2 has ~20 questions drawn from this module (risk treatments, BCP, conflict minerals, modern slavery, ISM Principles).
 
 ---

@@ -351,7 +351,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: Module 3 builds on the platform choice with PIM strategy; Module 9 returns to platform choice when discussing analytics integrations; Module 10 returns when discussing composable commerce for B2B and cross-border.
-> - Cross-course: [04-AWS-Solutions-Architect-Associate Module 9](../../04-AWS-Solutions-Architect-Associate/Module-09-Cost-Optimization-Well-Architected/Reading.md) covers cloud architecture cost discipline that maps to platform TCO.
+> - Cross-course: [04-AWS-Solutions-Architect-Associate Module 9](../../04-AWS-Solutions-Architect-Associate/Module-09-Monitoring-Cost-Optimization/Reading.md) covers cloud architecture cost discipline that maps to platform TCO.
 > - Practice: Practice Exam 1 has ~6 questions drawn from this module (architecture patterns, platform sweet spots, MACH definition).
 
 ---

@@ -5,7 +5,7 @@
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Module 3 — contracts and CISG](../Module-03-Negotiation-Contracts/Reading.md): international supply layers on the contract baseline
 > - [Module 5 — hedging](../Module-05-Cost-Management-TCO/Reading.md): FX is just one more commodity to hedge
-> - Cross-course: [ASCM CLTD Module 5 — International Logistics](../../12-ASCM-CLTD/Module-05-International-Logistics/Reading.md) for the logistics-side view of Incoterms and customs
+> - Cross-course: [ASCM CLTD Module 5 — International Logistics](../../12-ASCM-CLTD/Module-05-Warehouse-Operations/Reading.md) for the logistics-side view of Incoterms and customs
 > If Module 3 is shaky, pause and review before continuing.
 
 ---
@@ -382,7 +382,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: Module 7 layers compliance, modern slavery, and the broader risk taxonomy on the international foundation here; Module 8 covers the leadership and cross-functional engagement required to land an international transformation.
-> - Cross-course: [ASCM CLTD Module 5 — International Logistics](../../12-ASCM-CLTD/Module-05-International-Logistics/Reading.md) covers Incoterms and customs from the logistics-operations side.
+> - Cross-course: [ASCM CLTD Module 5 — International Logistics](../../12-ASCM-CLTD/Module-05-Warehouse-Operations/Reading.md) covers Incoterms and customs from the logistics-operations side.
 > - Practice: Practice Exam 2 has ~17 questions drawn from this module (Incoterms, FTAs, FX, FCPA/UK Bribery, payment methods).
 
 ---

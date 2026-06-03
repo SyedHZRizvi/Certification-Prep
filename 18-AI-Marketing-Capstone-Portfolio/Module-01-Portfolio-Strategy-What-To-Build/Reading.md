@@ -4,7 +4,7 @@
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Basic familiarity with the marketing function (channels: SEO, paid, email, automation) — covered in [14-AI-Marketing-Foundations](../../14-AI-Marketing-Foundations/README.md)
-> - The vocabulary of AI-native marketing (prompts, agents, structured output) — covered in [14-AI-Marketing-Foundations Module 2](../../14-AI-Marketing-Foundations/Module-02-AI-Native-Marketing-Stack/Reading.md)
+> - The vocabulary of AI-native marketing (prompts, agents, structured output) — covered in [14-AI-Marketing-Foundations Module 2](../../14-AI-Marketing-Foundations/Module-02-AI-Fundamentals-for-Marketers/Reading.md)
 > - Practical SEO, paid acquisition, and analytics fundamentals — covered in 15-AI-Marketing-SEO-Content, 16-AI-Marketing-Paid-Acquisition, and 17-AI-Marketing-Analytics-Automation respectively
 > If any of these are shaky, pause and review before continuing — this capstone assumes the four track courses are already done.
 

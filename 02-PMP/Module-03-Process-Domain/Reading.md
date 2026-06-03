@@ -385,7 +385,7 @@ You now know:
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - **PMBOK 7's 8 Performance Domains** — covered in [Module 01: Foundations](../Module-01-Foundations/Reading.md), especially Project Work, Planning, Delivery, and Measurement.
 > - **Basic vocabulary on plans and baselines** — Project Charter, scope, schedule, cost. If new, the PMBOK 7 glossary (free at pmi.org) is sufficient.
-> - **Optional cross-course preparation:** [01-Scrum-Master Module 04: Scrum Artifacts](../../01-Scrum-Master/Module-04-Scrum-Artifacts/Reading.md) gives the agile-native view of baselines/backlogs and helps you compare predictive vs adaptive process choices.
+> - **Optional cross-course preparation:** [01-Scrum-Master Module 04: Scrum Artifacts](../../01-Scrum-Master/Module-04-Events/Reading.md) gives the agile-native view of baselines/backlogs and helps you compare predictive vs adaptive process choices.
 >
 > If any of these are shaky, pause and review before continuing.
 
@@ -393,7 +393,7 @@ You now know:
 
 > **Where this leads.**
 > - **Inside this course:** [Module 05 — Agile & Hybrid](../Module-05-Agile-Hybrid/Reading.md) shows when to flex these processes; [Module 06 — Earned Value](../Module-06-Earned-Value/Reading.md) operationalizes the cost-baseline you learn here; [Module 07 — Risk](../Module-07-Risk/Reading.md) connects to the Reserves discussion.
-> - **Cross-course:** [13-ISM-CPSM Module 03: Sourcing Process](../../13-ISM-CPSM/Module-03-Sourcing-Process/Reading.md) translates predictive process discipline to strategic sourcing; [10-ASCM-CSCP Module 06](../../10-ASCM-CSCP/Module-06-Supply-Chain-Performance-Management/Reading.md) extends measurement concepts to supply-chain performance.
+> - **Cross-course:** [13-ISM-CPSM Module 03: Sourcing Process](../../13-ISM-CPSM/Module-03-Negotiation-Contracts/Reading.md) translates predictive process discipline to strategic sourcing; [10-ASCM-CSCP Module 06](../../10-ASCM-CSCP/Module-06-Sourcing-Supplier-Management/Reading.md) extends measurement concepts to supply-chain performance.
 > - **Practice:** [Practice Exam 1](../Practice-Exams/Practice-Exam-1.md) draws ~16–22 questions from this module (Process is 50% of the PMP).
 
 ---

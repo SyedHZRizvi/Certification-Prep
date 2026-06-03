@@ -5,7 +5,7 @@
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - The license tiers + user/group taxonomy from [Modules 1–2](../Module-01-Entra-ID-Fundamentals/Reading.md).
 > - Authentication methods + MFA mechanics from [Module 3](../Module-03-Authentication/Reading.md) (CA is what *targets* and *requires* those methods).
-> - Risk-based decisions and zero-trust framing — [`09-CompTIA-Security-Plus` Module 7](../../09-CompTIA-Security-Plus/Module-07-Security-Operations/Reading.md).
+> - Risk-based decisions and zero-trust framing — [`09-CompTIA-Security-Plus` Module 7](../../09-CompTIA-Security-Plus/Module-07-Endpoint-Mobile-Cloud-Security/Reading.md).
 
 ---
 
@@ -394,7 +394,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: Module 5 builds the app side of what these CA policies target; Module 6 layers PIM activation MFA (which is a CA-style flow); Module 8 wires sign-in logs to Sentinel.
-> - Cross-course: [`09-CompTIA-Security-Plus` Module 7](../../09-CompTIA-Security-Plus/Module-07-Security-Operations/Reading.md) covers SOC integration with CA.
+> - Cross-course: [`09-CompTIA-Security-Plus` Module 7](../../09-CompTIA-Security-Plus/Module-07-Endpoint-Mobile-Cloud-Security/Reading.md) covers SOC integration with CA.
 > - Practice: Practice Exam 1 has 8–10 questions from this module — the highest single-module weight.
 
 ---

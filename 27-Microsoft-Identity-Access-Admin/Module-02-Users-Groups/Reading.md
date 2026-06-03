@@ -4,7 +4,7 @@
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - The tenant, license tiers, and role systems from [Module 1](../Module-01-Entra-ID-Fundamentals/Reading.md).
-> - The principle of least privilege and "joiner / mover / leaver" lifecycle thinking — covered in [`09-CompTIA-Security-Plus` Module 3](../../09-CompTIA-Security-Plus/Module-03-Security-Architecture/Reading.md).
+> - The principle of least privilege and "joiner / mover / leaver" lifecycle thinking — covered in [`09-CompTIA-Security-Plus` Module 3](../../09-CompTIA-Security-Plus/Module-03-Identity-Access-Management/Reading.md).
 > - The Azure RBAC inheritance model — [`06-Azure-Administrator` Module 2](../../06-Azure-Administrator/Module-02-Entra-ID-RBAC/Reading.md).
 
 ---

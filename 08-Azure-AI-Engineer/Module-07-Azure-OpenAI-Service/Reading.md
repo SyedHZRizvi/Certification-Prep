@@ -450,7 +450,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: Module 8 wraps every Azure OpenAI primitive in Azure AI Foundry's project / prompt flow / agent / evaluation surface; the Capstone project then composes Modules 1–8 into a real production deployment.
-> - Cross-course: [`07-AWS-AI-Practitioner`](../../07-AWS-AI-Practitioner/) Module 6 covers Bedrock + Claude on AWS for cross-cloud comparison; [`09-CompTIA-Security-Plus`](../../09-CompTIA-Security-Plus/) deepens prompt-injection + GenAI threat modeling.
+> - Cross-course: [`07-AWS-AI-Practitioner`](../../../07-AWS-AI-Practitioner/) Module 6 covers Bedrock + Claude on AWS for cross-cloud comparison; [`09-CompTIA-Security-Plus`](../../../09-CompTIA-Security-Plus/) deepens prompt-injection + GenAI threat modeling.
 > - Practice: Practice Exam 2 has ~10 questions from this module; Final Mock has full Azure OpenAI case studies.
 
 ---

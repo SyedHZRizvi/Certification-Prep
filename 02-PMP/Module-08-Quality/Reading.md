@@ -246,7 +246,7 @@ You now know:
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - **Cost of Quality concepts** and the Risk module (Module 07) — quality and risk overlap heavily.
 > - **Basic statistics** — mean, standard deviation, distributions. No advanced math required.
-> - **Optional cross-course preparation:** [11-ASCM-CPIM Module 04: Quality Management](../../11-ASCM-CPIM/Module-04-Quality-Management/Reading.md) covers manufacturing-quality frameworks complementary to PM quality.
+> - **Optional cross-course preparation:** [11-ASCM-CPIM Module 04: Quality Management](../../11-ASCM-CPIM/Module-04-Master-Production-Scheduling-MRP/Reading.md) covers manufacturing-quality frameworks complementary to PM quality.
 >
 > If any of these are shaky, pause and review before continuing.
 
@@ -254,7 +254,7 @@ You now know:
 
 > **Where this leads.**
 > - **Inside this course:** [Module 09 — Procurement](../Module-09-Procurement/Reading.md) connects to vendor-quality clauses; [Module 07 — Risk](../Module-07-Risk/Reading.md) addresses the threat side of quality failures.
-> - **Cross-course:** [11-ASCM-CPIM Module 04](../../11-ASCM-CPIM/Module-04-Quality-Management/Reading.md) extends quality thinking to manufacturing operations.
+> - **Cross-course:** [11-ASCM-CPIM Module 04](../../11-ASCM-CPIM/Module-04-Master-Production-Scheduling-MRP/Reading.md) extends quality thinking to manufacturing operations.
 > - **Practice:** [Practice Exam 1](../Practice-Exams/Practice-Exam-1.md), [Practice Exam 2](../Practice-Exams/Practice-Exam-2.md), and [Final Mock Exam](../Practice-Exams/Final-Mock-Exam.md) each draw ~5–10 questions on Quality.
 
 ---

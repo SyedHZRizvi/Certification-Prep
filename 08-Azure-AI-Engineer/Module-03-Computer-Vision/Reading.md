@@ -5,7 +5,7 @@
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Module 1 (resource model, SDK packages, auth) — [Module 1 Reading](../Module-01-AI-Services-Overview/Reading.md)
 > - Module 2 (Responsible AI principles — Face emotion was retired *because* of RAI) — [Module 2 Reading](../Module-02-Responsible-AI-Content-Safety/Reading.md)
-> - Basic concept of supervised learning / labels (covered in [`07-AWS-AI-Practitioner` Module 3](../../07-AWS-AI-Practitioner/Module-03-ML-Fundamentals/Reading.md) if you need a refresher)
+> - Basic concept of supervised learning / labels (covered in [`07-AWS-AI-Practitioner` Module 3](../../07-AWS-AI-Practitioner/Module-03-Generative-AI-Fundamentals/Reading.md) if you need a refresher)
 > - Familiarity with neural-network primitives at the conceptual level — the canonical reference is Vaswani et al. (2017), *"Attention Is All You Need"*, NeurIPS — vision transformers (ViT) descend from that line of work
 >
 > No prior computer-vision certification is required. If the term "bounding box" is fully new, skim a 5-min YouTube primer before continuing.
@@ -398,7 +398,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: Module 5 covers the Document Intelligence → AI Search side of structured extraction; Module 8 wires Vision into Foundry agents (e.g., GPT-4o vision + custom file-search).
-> - Cross-course: [`07-AWS-AI-Practitioner`](../../07-AWS-AI-Practitioner/) Module 4 covers Rekognition + Textract for cross-cloud comparison.
+> - Cross-course: [`07-AWS-AI-Practitioner`](../../../07-AWS-AI-Practitioner/) Module 4 covers Rekognition + Textract for cross-cloud comparison.
 > - Practice: Practice Exam 1 has ~5 questions from this module (visual features, Custom Vision domains, Face retirement); Final Mock Exam includes Vision-vs-Doc-Intelligence service-selection cases.
 
 ---

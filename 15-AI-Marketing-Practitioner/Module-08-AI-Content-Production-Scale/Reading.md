@@ -468,7 +468,7 @@ Each prompt has more than one defensible answer. Argue from the frameworks in th
 
 > **Where this leads.**
 > - Inside this course: Module 9 wires the creative output into marketing-automation flows (email, push, retargeting); Module 10 (Capstone) runs your AI-produced creative in a live $200 campaign.
-> - Cross-course: [16-AI-SEO-Specialist](../../16-AI-SEO-Specialist/) covers AI content for organic SEO (different optimization function); [18-AI-Marketing-Capstone-Portfolio](../../18-AI-Marketing-Capstone-Portfolio/) collects polished creative into a public portfolio.
+> - Cross-course: [16-AI-Marketing-Strategist](../../../16-AI-Marketing-Strategist/) covers AI content for organic SEO (different optimization function); [18-AI-Marketing-Capstone-Portfolio](../../../18-AI-Marketing-Capstone-Portfolio/) collects polished creative into a public portfolio.
 > - Practice: Practice Exam 2 has ~7 questions from this module (4-stage pipeline, Brand Voice Project, Midjourney --cref, Runway, HeyGen, voice-clone ethics).
 
 ---

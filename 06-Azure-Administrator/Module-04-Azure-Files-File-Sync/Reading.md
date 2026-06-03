@@ -4,7 +4,7 @@
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Module 3](../Module-03-Storage-Accounts-Blobs/Reading.md): storage account kinds, redundancy SKUs, and the encryption layers — file shares live inside the same storage accounts and inherit those choices.
-> - On-prem AD basics (Kerberos, AD DS service accounts, NTFS ACLs) — covered for AZ-104 depth in [`09-CompTIA-Security-Plus` Module 3](../../09-CompTIA-Security-Plus/Module-03-Security-Architecture/Reading.md).
+> - On-prem AD basics (Kerberos, AD DS service accounts, NTFS ACLs) — covered for AZ-104 depth in [`09-CompTIA-Security-Plus` Module 3](../../09-CompTIA-Security-Plus/Module-03-Identity-Access-Management/Reading.md).
 > - SMB protocol basics: ports (445), version differences (2.1 vs. 3.x with encryption), and why corporate firewalls often block SMB egress.
 >
 > If "Entra Kerberos" sounds new, that's expected — it's a feature most admins encounter for the first time in this module. The reading defines it from scratch.
@@ -313,7 +313,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: Module 5 covers the VM sizing decisions for those per-store cache servers; Module 9 deepens the backup/DR design; Module 10 wires the Sync diagnostic logs into Azure Monitor.
-> - Cross-course: [`04-AWS-Solutions-Architect-Associate` Module 3](../../04-AWS-Solutions-Architect-Associate/Module-03-Storage-Solutions/Reading.md) covers AWS Storage Gateway (the analogue to Azure File Sync); [`09-CompTIA-Security-Plus` Module 3](../../09-CompTIA-Security-Plus/Module-03-Security-Architecture/Reading.md) covers the AD auth and SMB security model in depth.
+> - Cross-course: [`04-AWS-Solutions-Architect-Associate` Module 3](../../04-AWS-Solutions-Architect-Associate/Module-03-EC2-Deep-Dive/Reading.md) covers AWS Storage Gateway (the analogue to Azure File Sync); [`09-CompTIA-Security-Plus` Module 3](../../09-CompTIA-Security-Plus/Module-03-Identity-Access-Management/Reading.md) covers the AD auth and SMB security model in depth.
 > - Practice: PE-1 has 2 questions from this module; Final Mock revisits via cross-domain scenarios (file share + private endpoint + backup).
 
 ---

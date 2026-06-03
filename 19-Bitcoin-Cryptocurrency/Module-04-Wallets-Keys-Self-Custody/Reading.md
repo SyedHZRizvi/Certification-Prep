@@ -5,7 +5,7 @@
 > **Prerequisites for this module.** Before starting:
 > - [Module 2 (Cryptographic Foundations)](../Module-02-Cryptographic-Foundations/Reading.md) — you must know what a private key, public key, and HASH160 are
 > - [Module 3 (Network & Consensus)](../Module-03-Bitcoin-Network-Consensus/Reading.md) — you must know how a transaction works
-> - Cross-course: [09-CompTIA-Security-Plus Module-04 (Identity & Access Management)](../../09-CompTIA-Security-Plus/Module-04-IAM-Authentication/Reading.md) covers the same multi-factor + hardware-token concepts in a corporate-IT frame.
+> - Cross-course: [09-CompTIA-Security-Plus Module-04 (Identity & Access Management)](../../09-CompTIA-Security-Plus/Module-04-Threats-Threat-Actors/Reading.md) covers the same multi-factor + hardware-token concepts in a corporate-IT frame.
 
 ---
 

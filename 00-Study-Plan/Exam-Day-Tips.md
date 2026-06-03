@@ -248,6 +248,6 @@ You got this. 🫡
 ## 🚀 Next Steps
 
 - 📝 **Just passed?** Update LinkedIn + your resume. Then come back in a year for renewal.
-- 🔁 **Didn't pass?** Re-open the [12-Week Study Plan](./12-Week-Study-Plan/) and rebuild a 3-4 week targeted sprint on your weak domains. Most retakers pass.
-- 🎯 **Already certified — what's next?** Check the [Certifications Catalog](../Resources/International-Certifications/) "Which Cert Next?" matrix to pick the natural follow-on.
-- 🏠 [**Back to Course Home**](../) — start the next track from the 27 available
+- 🔁 **Didn't pass?** Re-open the [12-Week Study Plan](../12-Week-Study-Plan/) and rebuild a 3-4 week targeted sprint on your weak domains. Most retakers pass.
+- 🎯 **Already certified — what's next?** Check the [Certifications Catalog](../../Resources/International-Certifications/) "Which Cert Next?" matrix to pick the natural follow-on.
+- 🏠 [**Back to Course Home**](../../) — start the next track from the 27 available

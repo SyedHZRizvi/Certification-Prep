@@ -7,7 +7,7 @@
 > - [Module 7: Responsible AI](../Module-07-Responsible-AI/Reading.md) — Guardrails, Model Cards, NIST AI RMF, EU AI Act
 > - Basic AWS security vocabulary: IAM roles, KMS keys, S3 encryption, VPC, security groups
 >
-> If [`04-AWS-Solutions-Architect-Associate`](../../04-AWS-Solutions-Architect-Associate/) Module 5 (IAM) and Module 7 (VPC + PrivateLink) are fresh, you're ready. If not, this module will move quickly through patterns those courses unpack at depth.
+> If [`04-AWS-Solutions-Architect-Associate`](../../../04-AWS-Solutions-Architect-Associate/) Module 5 (IAM) and Module 7 (VPC + PrivateLink) are fresh, you're ready. If not, this module will move quickly through patterns those courses unpack at depth.
 
 ---
 

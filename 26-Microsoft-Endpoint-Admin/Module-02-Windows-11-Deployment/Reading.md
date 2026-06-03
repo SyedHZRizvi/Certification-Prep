@@ -372,7 +372,7 @@ In 2019, **Lenovo became the first major OEM** to support Autopilot hash registr
 
 > **Where this leads.**
 > - Inside this course: Module 3 introduces Intune as the policy engine that takes over once Autopilot finishes; Module 4 covers enrollment beyond Autopilot (iOS/Android/macOS/Linux); Module 5 covers app deployment, which is what fills the ESP screen during Autopilot.
-> - Cross-course: AZ-104 doesn't cover deployment because it's Azure not endpoint, but [`05-Azure-Fundamentals` Module 3](../../05-Azure-Fundamentals/Module-03-Compute/Reading.md) covers VM provisioning, the cloud analogue.
+> - Cross-course: AZ-104 doesn't cover deployment because it's Azure not endpoint, but [`05-Azure-Fundamentals` Module 3](../../05-Azure-Fundamentals/Module-03-Core-Services/Reading.md) covers VM provisioning, the cloud analogue.
 > - Practice: Practice Exam 1 has roughly 7–9 questions from this module (Autopilot modes, ESP, provisioning packages, deployment-mode-picker scenarios). Final Mock Exam revisits with multi-part scenarios.
 
 ---

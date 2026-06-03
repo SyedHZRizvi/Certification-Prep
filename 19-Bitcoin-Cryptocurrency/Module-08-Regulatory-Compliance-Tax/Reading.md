@@ -3,12 +3,12 @@
 > **Why this module matters:** Bitcoin is a permissionless protocol; the businesses that touch it are not. Between 2013 and 2026, regulators across the US, EU, UK, Japan, South Korea, and Singapore built a layered regime around Bitcoin custodians, exchanges, payment processors, and miners. **If you operate a Bitcoin business and miss FinCEN MSB registration, or get the FATF Travel Rule wrong, or misclassify a swap on Form 8949, the penalty is not theoretical — it is corporate-existential.** This module gives you the regulatory and tax map that every certified Bitcoin professional must carry.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - [Module 1 (Foundations & Genesis)](../Module-01-Foundations-Genesis/Reading.md) — Bitcoin's pseudonymous-but-transparent model
+> - [Module 1 (Foundations & Genesis)](../Module-01-Bitcoin-White-Paper-Origins/Reading.md) — Bitcoin's pseudonymous-but-transparent model
 > - [Module 4 (Wallets, Keys & Self-Custody)](../Module-04-Wallets-Keys-Self-Custody/Reading.md) — custodial vs self-custodial distinction (it is now a regulatory line)
-> - [Module 5 (Mining & Economics)](../Module-05-Mining-Economics/Reading.md) — miner-as-MSB question
+> - [Module 5 (Mining & Economics)](../Module-05-Mining-Proof-of-Work-Economics/Reading.md) — miner-as-MSB question
 > - [Module 7 (Lightning & Layer-2)](../Module-07-Lightning-Network-Layer-2/Reading.md) — Lightning's regulatory ambiguity
-> - Cross-course: [09-CompTIA Security+ Module 9 (GRC, risk & compliance)](../../09-CompTIA-Security-Plus/Module-09-Governance-Risk-Compliance/Reading.md)
-> - Cross-course: [13-ISM CPSM Module 7 (Risk & Compliance)](../../13-ISM-CPSM/Module-07-Risk-Compliance-Sustainability/Reading.md)
+> - Cross-course: [09-CompTIA Security+ Module 9 (GRC, risk & compliance)](../../09-CompTIA-Security-Plus/Module-09-GRC-Risk-Compliance/Reading.md)
+> - Cross-course: [13-ISM CPSM Module 7 (Risk & Compliance)](../../13-ISM-CPSM/Module-07-Risk-Compliance-Ethics/Reading.md)
 >
 > If any of these are shaky, pause and review before continuing.
 
@@ -549,7 +549,7 @@ You now know:
 1. 🎥 Watch [Videos.md](./Videos.md)
 2. ✏️ Take the [Quiz](./Quiz.md)
 3. 📋 Print the [Cheat Sheet](./Cheat-Sheet.md)
-4. ➡️ Move to [Module 9: Institutional Adoption & Treasury Strategy](../Module-09-Institutional-Adoption-Treasury/Reading.md)
+4. ➡️ Move to [Module 9: Institutional Adoption & Treasury Strategy](../Module-09-Trading-Custody-Institutional/Reading.md)
 
 ---
 

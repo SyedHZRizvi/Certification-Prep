@@ -393,7 +393,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: Module 7 returns to CRO when discussing landing pages for paid traffic; Module 8 returns when discussing email/SMS subject-line testing; Module 9 returns for measurement infrastructure.
-> - Cross-course: [15-AI-Marketing-Practitioner Module 7](../../15-AI-Marketing-Practitioner/Module-07-CRO-Landing-Pages-Personalization/Reading.md) covers Mutiny/Optimizely deeper; [04-AWS-Solutions-Architect-Associate Module 5](../../04-AWS-Solutions-Architect-Associate/Module-05-Compute-Networking/Reading.md) covers performance/CDN architecture.
+> - Cross-course: [15-AI-Marketing-Practitioner Module 7](../../15-AI-Marketing-Practitioner/Module-07-CRO-Landing-Pages-Personalization/Reading.md) covers Mutiny/Optimizely deeper; [04-AWS-Solutions-Architect-Associate Module 5](../../04-AWS-Solutions-Architect-Associate/Module-05-S3-Deep-Dive/Reading.md) covers performance/CDN architecture.
 > - Practice: Practice Exam 2 has ~7 questions drawn from this module (sample-size, CWV thresholds, PDP anatomy, peeking, SRM).
 
 ---

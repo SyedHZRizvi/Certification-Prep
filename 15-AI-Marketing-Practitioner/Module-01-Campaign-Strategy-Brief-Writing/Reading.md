@@ -15,8 +15,8 @@ Compare that to the average campaign brief: "Drive awareness for the brand, targ
 The brief isn't paperwork. **The brief is the campaign.** If the brief is sharp, mediocre creative will still work. If the brief is fuzzy, brilliant creative will fail. We're going to learn how to write the sharp kind.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - Basic marketing vocabulary (audience, channel, conversion, KPI) — covered in [14-AI-Marketing-Foundations Module 1](../../14-AI-Marketing-Foundations/Module-01-Marketing-Fundamentals/Reading.md)
-> - The funnel concept (awareness / consideration / conversion / retention) — covered in [14-AI-Marketing-Foundations Module 2](../../14-AI-Marketing-Foundations/Module-02-Customer-Journey-Funnel/Reading.md)
+> - Basic marketing vocabulary (audience, channel, conversion, KPI) — covered in [14-AI-Marketing-Foundations Module 1](../../14-AI-Marketing-Foundations/Module-01-Digital-Marketing-Landscape-2026/Reading.md)
+> - The funnel concept (awareness / consideration / conversion / retention) — covered in [14-AI-Marketing-Foundations Module 2](../../14-AI-Marketing-Foundations/Module-02-AI-Fundamentals-for-Marketers/Reading.md)
 > - Comfort writing in plain English; this module is writing-heavy
 > If any of these are shaky, pause and review before continuing.
 
@@ -397,7 +397,7 @@ Use these to test your own thinking. None has a single right answer — defend y
 
 > **Where this leads.**
 > - Inside this course: Module 2 builds a Google Search campaign FROM the brief you wrote here; Module 10 (Capstone) reuses the Sunday Studio brief as a real $200 launch.
-> - Cross-course: [14-AI-Marketing-Foundations Module 3](../../14-AI-Marketing-Foundations/Module-03-Goals-KPIs-Measurement/Reading.md) deepens KPI-by-funnel theory; [18-AI-Marketing-Capstone-Portfolio](../../18-AI-Marketing-Capstone-Portfolio/) collects briefs into a portfolio.
+> - Cross-course: [14-AI-Marketing-Foundations Module 3](../../14-AI-Marketing-Foundations/Module-03-SEO-in-the-AI-Era/Reading.md) deepens KPI-by-funnel theory; [18-AI-Marketing-Capstone-Portfolio](../../../18-AI-Marketing-Capstone-Portfolio/) collects briefs into a portfolio.
 > - Practice: Practice Exam 1 has ~6 questions drawn from this module (5W's, ICP tests, KPI hierarchy, anti-patterns).
 
 ---

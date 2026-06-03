@@ -5,7 +5,7 @@
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [The 5 finished capstones](../Module-02-Capstone-SEO-Content-Audit/Reading.md) — Modules 2–6 should all be drafted (it's OK if 1–2 are still polishing, but you need substance to package)
 > - [Portfolio strategy / 3 audience paths](../Module-01-Portfolio-Strategy-What-To-Build/Reading.md) — covered earlier in this course
-> - Basic copywriting for the platform you're posting on (LinkedIn voice ≠ Twitter voice ≠ Substack voice) — touched on in [14-AI-Marketing-Foundations Module 4](../../14-AI-Marketing-Foundations/Module-04-Brand-Voice-Positioning/Reading.md)
+> - Basic copywriting for the platform you're posting on (LinkedIn voice ≠ Twitter voice ≠ Substack voice) — touched on in [14-AI-Marketing-Foundations Module 4](../../14-AI-Marketing-Foundations/Module-04-Content-Marketing-Generative-AI/Reading.md)
 > If you arrived at Module 7 without finishing 4+ capstones, pause — there's nothing to package yet.
 
 ---
@@ -564,5 +564,5 @@ These prompts probe the tension between "ship the wrapper fast" and "build a bra
 
 > **Where this leads.**
 > - Inside this course: Module 8 (First-Client Pitch) uses the rebuilt LinkedIn and portfolio site as the surface area for cold-outreach replies — and the 7-slide pitch deck builds on the case-study writeups you packaged here.
-> - Cross-course: The "build in public" mindset is the discipline that the Foundations course's brand-voice module sets up, applied to your own work. Returning to [14-AI-Marketing-Foundations Module 4](../../14-AI-Marketing-Foundations/Module-04-Brand-Voice-Positioning/Reading.md) is worth it once you've drafted 5 posts.
+> - Cross-course: The "build in public" mindset is the discipline that the Foundations course's brand-voice module sets up, applied to your own work. Returning to [14-AI-Marketing-Foundations Module 4](../../14-AI-Marketing-Foundations/Module-04-Content-Marketing-Generative-AI/Reading.md) is worth it once you've drafted 5 posts.
 > - Practice: Practice Exam 2 has 7 questions on this module (Q3–Q5, Q24, Q26, Q30, Q42). The Final Mock's Q28 ("Walk me through your portfolio site") grades against the deliverables here.

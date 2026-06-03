@@ -160,4 +160,4 @@ Originator + beneficiary info travels with VASP-to-VASP transfers. Scope = **VAS
 
 ---
 
-➡️ [Module 9: Institutional Adoption & Treasury Strategy](../Module-09-Institutional-Adoption-Treasury/Reading.md)
+➡️ [Module 9: Institutional Adoption & Treasury Strategy](../Module-09-Trading-Custody-Institutional/Reading.md)

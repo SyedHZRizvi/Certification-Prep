@@ -5,7 +5,7 @@
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Module 1 (resource model, SDKs, auth)
 > - Module 3 (the Vision Read API — Document Intelligence extends it)
-> - Vector / embedding intuition at the "vectors are arrays of floats and cosine similarity measures angle" level — see [`07-AWS-AI-Practitioner` Module 5](../../07-AWS-AI-Practitioner/Module-05-Generative-AI-Foundations/Reading.md) for a primer
+> - Vector / embedding intuition at the "vectors are arrays of floats and cosine similarity measures angle" level — see [`07-AWS-AI-Practitioner` Module 5](../../07-AWS-AI-Practitioner/Module-05-Prompt-Engineering-RAG/Reading.md) for a primer
 > - The transformer foundation from Vaswani et al. (2017) — embedding models trace to the same line
 >
 > Optional: skim the original BM25 ranking paper (Robertson & Walker, 1994) for context — Azure AI Search's keyword scoring uses a BM25 variant.
@@ -397,7 +397,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: Module 7 (Azure OpenAI) deeply integrates with the index you build here through **"On Your Data"**; Module 8 (Foundry) builds the prompt flow + evaluation layer that consumes this retrieval surface.
-> - Cross-course: [`04-AWS-Solutions-Architect-Associate`](../../04-AWS-Solutions-Architect-Associate/) Module 6 covers OpenSearch + Kendra for AWS comparison; [`06-Azure-Administrator`](../../06-Azure-Administrator/) deepens Storage + networking for the Blob / Private Endpoint side.
+> - Cross-course: [`04-AWS-Solutions-Architect-Associate`](../../../04-AWS-Solutions-Architect-Associate/) Module 6 covers OpenSearch + Kendra for AWS comparison; [`06-Azure-Administrator`](../../../06-Azure-Administrator/) deepens Storage + networking for the Blob / Private Endpoint side.
 > - Practice: Practice Exam 2 has ~12 questions from this module (the largest single share in PE2); Final Mock revisits with multi-step case studies.
 
 ---

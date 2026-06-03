@@ -486,7 +486,7 @@ Each prompt forces a judgment call. Argue from the frameworks in this module.
 
 > **Where this leads.**
 > - Inside this course: Module 10 (Capstone) uses your automations to nurture the leads your live campaign generates; the deliverable post-mortem includes an automation-effectiveness section.
-> - Cross-course: [14-AI-Marketing-Foundations Module 8](../../14-AI-Marketing-Foundations/Module-08-Email-CRM-Lifecycle/Reading.md) provides the lifecycle-email baseline; [17-AI-Performance-Marketer](../../17-AI-Performance-Marketer/) covers marketing-mix-modeling that incorporates downstream automation lift.
+> - Cross-course: [14-AI-Marketing-Foundations Module 8](../../14-AI-Marketing-Foundations/Module-08-Analytics-Measurement-Basics/Reading.md) provides the lifecycle-email baseline; [17-AI-Marketing-Entrepreneur](../../../17-AI-Marketing-Entrepreneur/) covers marketing-mix-modeling that incorporates downstream automation lift.
 > - Practice: Practice Exam 2 has ~12 questions from this module (workflows vs flows, speed-to-lead, SPF/DKIM/DMARC, Klaviyo flow set, AI tool use).
 
 ---

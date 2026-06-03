@@ -240,7 +240,7 @@ You now know:
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - **Cost baselines and scope baselines** — covered in [Module 03: Process Domain](../Module-03-Process-Domain/Reading.md).
 > - **Basic algebra** — division, percentages, the concept of a ratio. No calculus required.
-> - **Optional cross-course preparation:** [10-ASCM-CSCP Module 06: Supply Chain Performance Management](../../10-ASCM-CSCP/Module-06-Supply-Chain-Performance-Management/Reading.md) covers KPI/dashboard structures that complement EVM thinking.
+> - **Optional cross-course preparation:** [10-ASCM-CSCP Module 06: Supply Chain Performance Management](../../10-ASCM-CSCP/Module-06-Sourcing-Supplier-Management/Reading.md) covers KPI/dashboard structures that complement EVM thinking.
 >
 > If any of these are shaky, pause and review before continuing.
 
@@ -248,7 +248,7 @@ You now know:
 
 > **Where this leads.**
 > - **Inside this course:** [Module 07 — Risk](../Module-07-Risk/Reading.md) connects EVM to Contingency Reserve usage; [Module 08 — Quality](../Module-08-Quality/Reading.md) extends measurement to quality metrics.
-> - **Cross-course:** [10-ASCM-CSCP Module 06](../../10-ASCM-CSCP/Module-06-Supply-Chain-Performance-Management/Reading.md) extends performance-measurement thinking to supply-chain dashboards.
+> - **Cross-course:** [10-ASCM-CSCP Module 06](../../10-ASCM-CSCP/Module-06-Sourcing-Supplier-Management/Reading.md) extends performance-measurement thinking to supply-chain dashboards.
 > - **Practice:** [Practice Exam 1](../Practice-Exams/Practice-Exam-1.md), [Practice Exam 2](../Practice-Exams/Practice-Exam-2.md), and [Final Mock Exam](../Practice-Exams/Final-Mock-Exam.md) draw ~5–10 questions each from EVM (formula-heavy).
 
 ---

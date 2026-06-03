@@ -295,4 +295,4 @@ Standard compliance pattern for small/mid cross-border sellers entering EU.
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then the [Capstone-Project.md](../Capstone-Project.md) and the three [Practice Exams](../Practice-Exams/).
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then the [Capstone-Project.md](../Capstone-Project.md) and the three [Practice Exams](../../../Practice-Exams/).

@@ -402,7 +402,7 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: Module 6 covers Defender for Endpoint, which interacts with apps via attack surface reduction rules and app control. Module 8 covers monitoring + reporting, which is how you'd notice app deployment failures in production.
-> - Cross-course: [`05-Azure-Fundamentals` Module 3](../../05-Azure-Fundamentals/Module-03-Compute/Reading.md) covers Windows VM provisioning, useful context for app testing labs.
+> - Cross-course: [`05-Azure-Fundamentals` Module 3](../../05-Azure-Fundamentals/Module-03-Core-Services/Reading.md) covers Windows VM provisioning, useful context for app testing labs.
 > - Practice: Practice Exam 2 has roughly 5–7 questions from this module (Win32 vs LOB, detection rules, dependencies, supersedence, ACP). Final Mock Exam revisits with troubleshooting scenarios.
 
 ---
