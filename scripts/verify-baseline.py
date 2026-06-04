@@ -57,11 +57,19 @@ EXPECTED_COURSES = {
     "30-Generative-AI-Engineer":                10,
     "31-AWS-ML-Specialty":                      10,
     "32-Google-AI-Pro":                         10,
+    # Animation & Motion Design track (7-course ladder, foundation → advanced)
+    "33-Animation-Foundations":                 10,
+    "34-2D-Digital-Animation":                  10,
+    "35-Motion-Graphics-UI-Animation":          10,
+    "36-3D-Animation-Blender":                  10,
+    "37-Advanced-Character-Animation":          10,
+    "38-VFX-Compositing":                       10,
+    "39-Game-UI-Animation":                     8,
 }
-EXPECTED_TOTAL_MODULES = sum(EXPECTED_COURSES.values())  # 276 + 10 = 286
-EXPECTED_TOTAL_PRACTICE_EXAMS = len(EXPECTED_COURSES) * 3  # 32 × 3 = 96
-MIN_TOTAL_COURSE_MD_FILES = 1330  # was 1280 with 31 courses; ~50 added with Google AI Pro
-MIN_YT_SEARCH_URLS = 2580         # was 2500; ~80 added with 10 new modules × ~8-10 cards each
+EXPECTED_TOTAL_MODULES = sum(EXPECTED_COURSES.values())  # 286 + 68 = 354
+EXPECTED_TOTAL_PRACTICE_EXAMS = len(EXPECTED_COURSES) * 3  # 39 × 3 = 117
+MIN_TOTAL_COURSE_MD_FILES = 1650  # was 1330 with 32 courses; ~320 added with 7 animation courses
+MIN_YT_SEARCH_URLS = 3100         # was 2580; ~520 added with 68 new modules × ~8 cards each
 
 PROTECTED_FILES = [
     "_layouts/default.html",

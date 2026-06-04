@@ -1,9 +1,9 @@
 # 🎓 The Cert Hub — 32 Certification Study Courses
 
-![Certifications: 32](https://img.shields.io/badge/Certifications-32-blueviolet.svg)
-![Modules: 286](https://img.shields.io/badge/Modules-286-blue.svg)
-![Mock Exams: 96](https://img.shields.io/badge/Mock_Exams-96-orange.svg)
-![Questions: 13000+](https://img.shields.io/badge/Practice_Questions-13%2C000%2B-green.svg)
+![Certifications: 32](https://img.shields.io/badge/Certifications-39-blueviolet.svg)
+![Modules: 286](https://img.shields.io/badge/Modules-354-blue.svg)
+![Mock Exams: 96](https://img.shields.io/badge/Mock_Exams-117-orange.svg)
+![Questions: 13000+](https://img.shields.io/badge/Practice_Questions-16%2C000%2B-green.svg)
 
 ## 🌐 [Visit the live course site →](https://cert-hub.pages.dev/)
 

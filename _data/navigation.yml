@@ -1518,6 +1518,400 @@ tracks:
         single_file: true
 
   # ============= Generative & Agentic AI Track =============
+  # ============= Animation & Motion Design Track =============
+  - id: animation-foundations
+    title: Animation Foundations
+    subtitle: 12 Principles · Storyboarding · Digital Basics
+    color: purple
+    color_from: "#7c3aed"
+    color_to: "#4f46e5"
+    icon: "🎬"
+    base: "/33-Animation-Foundations/"
+    modules:
+      - num: 1
+        title: The 12 Principles of Animation
+        slug: Module-01-12-Principles
+      - num: 2
+        title: Animation History & Visual Language
+        slug: Module-02-History-Visual-Language
+      - num: 3
+        title: Drawing Fundamentals for Animators
+        slug: Module-03-Drawing-Fundamentals
+      - num: 4
+        title: Storyboarding & Animatics
+        slug: Module-04-Storyboarding-Animatics
+      - num: 5
+        title: Timing, Spacing & Rhythm
+        slug: Module-05-Timing-Spacing-Rhythm
+      - num: 6
+        title: Character Design for Animation
+        slug: Module-06-Character-Design
+      - num: 7
+        title: Color Theory & Composition
+        slug: Module-07-Color-Theory-Composition
+      - num: 8
+        title: Digital Workflow & Industry Tools Overview
+        slug: Module-08-Digital-Workflow-Tools
+      - num: 9
+        title: Building Your First Animated Short
+        slug: Module-09-First-Animated-Short
+      - num: 10
+        title: Portfolio Development & Career Paths
+        slug: Module-10-Portfolio-Career
+    extras:
+      - num: 11
+        title: Practice Exam 1
+        slug: Practice-Exams/Practice-Exam-1
+        single_file: true
+      - num: 12
+        title: Practice Exam 2
+        slug: Practice-Exams/Practice-Exam-2
+        single_file: true
+      - num: 13
+        title: Final Mock Exam (60q / 90min)
+        slug: Practice-Exams/Final-Mock-Exam
+        single_file: true
+      - num: 14
+        title: Master Flashcards
+        slug: Flashcards
+        single_file: true
+
+  - id: 2d-animation
+    title: 2D Digital Animation
+    subtitle: Adobe Animate · After Effects · Character Rigging
+    color: pink
+    color_from: "#ec4899"
+    color_to: "#db2777"
+    icon: "✏️"
+    base: "/34-2D-Digital-Animation/"
+    modules:
+      - num: 1
+        title: Adobe Animate Interface & Workflow
+        slug: Module-01-Animate-Interface-Workflow
+      - num: 2
+        title: Frame-by-Frame Animation Techniques
+        slug: Module-02-Frame-by-Frame
+      - num: 3
+        title: Tweening & Motion Paths
+        slug: Module-03-Tweening-Motion-Paths
+      - num: 4
+        title: Character Rigging in Adobe Animate
+        slug: Module-04-Character-Rigging-Animate
+      - num: 5
+        title: After Effects for 2D Animation
+        slug: Module-05-After-Effects-2D
+      - num: 6
+        title: Puppet & Bone Tools
+        slug: Module-06-Puppet-Bone-Tools
+      - num: 7
+        title: Lip Sync & Dialogue Animation
+        slug: Module-07-Lip-Sync-Dialogue
+      - num: 8
+        title: Walk Cycles & Action Sequences
+        slug: Module-08-Walk-Cycles-Action
+      - num: 9
+        title: Exporting for Web, Social & Broadcast
+        slug: Module-09-Exporting-Delivery
+      - num: 10
+        title: 2D Animation Production Pipeline
+        slug: Module-10-Production-Pipeline
+    extras:
+      - num: 11
+        title: Practice Exam 1
+        slug: Practice-Exams/Practice-Exam-1
+        single_file: true
+      - num: 12
+        title: Practice Exam 2
+        slug: Practice-Exams/Practice-Exam-2
+        single_file: true
+      - num: 13
+        title: Final Mock Exam (60q / 90min)
+        slug: Practice-Exams/Final-Mock-Exam
+        single_file: true
+      - num: 14
+        title: Master Flashcards
+        slug: Flashcards
+        single_file: true
+
+  - id: motion-graphics
+    title: Motion Graphics & UI Animation
+    subtitle: After Effects Advanced · Motion Design · Lottie · CSS
+    color: orange
+    color_from: "#f97316"
+    color_to: "#ea580c"
+    icon: "🎞️"
+    base: "/35-Motion-Graphics-UI-Animation/"
+    modules:
+      - num: 1
+        title: Motion Design Principles & Theory
+        slug: Module-01-Motion-Design-Principles
+      - num: 2
+        title: After Effects Advanced — Expressions & Scripts
+        slug: Module-02-AE-Expressions-Scripts
+      - num: 3
+        title: Kinetic Typography & Text Animation
+        slug: Module-03-Typography-Text-Animation
+      - num: 4
+        title: Logo Animation & Brand Motion
+        slug: Module-04-Logo-Brand-Motion
+      - num: 5
+        title: Infographic Animation & Data Visualization
+        slug: Module-05-Infographic-Data-Viz
+      - num: 6
+        title: UI/UX Micro-Interactions & Prototyping
+        slug: Module-06-UI-Micro-Interactions
+      - num: 7
+        title: Lottie & Web Animation (JSON, CSS, GSAP)
+        slug: Module-07-Lottie-Web-Animation
+      - num: 8
+        title: Social Media Animation (Reels, TikTok, YouTube)
+        slug: Module-08-Social-Media-Animation
+      - num: 9
+        title: Sound Design for Motion
+        slug: Module-09-Sound-Design-Motion
+      - num: 10
+        title: Motion Graphics Showreel & Client Work
+        slug: Module-10-Showreel-Client-Work
+    extras:
+      - num: 11
+        title: Practice Exam 1
+        slug: Practice-Exams/Practice-Exam-1
+        single_file: true
+      - num: 12
+        title: Practice Exam 2
+        slug: Practice-Exams/Practice-Exam-2
+        single_file: true
+      - num: 13
+        title: Final Mock Exam (60q / 90min)
+        slug: Practice-Exams/Final-Mock-Exam
+        single_file: true
+      - num: 14
+        title: Master Flashcards
+        slug: Flashcards
+        single_file: true
+
+  - id: 3d-blender
+    title: 3D Animation with Blender
+    subtitle: Blender · 3D Modeling · Rigging · Character Animation
+    color: blue
+    color_from: "#2563eb"
+    color_to: "#1e40af"
+    icon: "🧊"
+    base: "/36-3D-Animation-Blender/"
+    modules:
+      - num: 1
+        title: Blender Interface & 3D Fundamentals
+        slug: Module-01-Blender-Interface-Fundamentals
+      - num: 2
+        title: 3D Modeling for Animation
+        slug: Module-02-3D-Modeling
+      - num: 3
+        title: Materials, Texturing & Shading (PBR)
+        slug: Module-03-Materials-Texturing-Shading
+      - num: 4
+        title: Lighting & HDRI for Animation
+        slug: Module-04-Lighting-HDRI
+      - num: 5
+        title: Rigging & Armatures in Blender
+        slug: Module-05-Rigging-Armatures
+      - num: 6
+        title: Weight Painting & Skinning
+        slug: Module-06-Weight-Painting-Skinning
+      - num: 7
+        title: Keyframe Animation & Graph Editor
+        slug: Module-07-Keyframe-Graph-Editor
+      - num: 8
+        title: Physics Simulations (Cloth, Fluid, Particles)
+        slug: Module-08-Physics-Simulations
+      - num: 9
+        title: Rendering (Cycles, EEVEE) & Output
+        slug: Module-09-Rendering-Output
+      - num: 10
+        title: 3D Animation Short Project
+        slug: Module-10-Short-Project
+    extras:
+      - num: 11
+        title: Practice Exam 1
+        slug: Practice-Exams/Practice-Exam-1
+        single_file: true
+      - num: 12
+        title: Practice Exam 2
+        slug: Practice-Exams/Practice-Exam-2
+        single_file: true
+      - num: 13
+        title: Final Mock Exam (65q / 90min)
+        slug: Practice-Exams/Final-Mock-Exam
+        single_file: true
+      - num: 14
+        title: Master Flashcards
+        slug: Flashcards
+        single_file: true
+
+  - id: advanced-character
+    title: Advanced Character Animation
+    subtitle: Acting · Performance · Creature Animation · Film Pipeline
+    color: teal
+    color_from: "#0891b2"
+    color_to: "#0e7490"
+    icon: "🎭"
+    base: "/37-Advanced-Character-Animation/"
+    modules:
+      - num: 1
+        title: Acting & Performance Principles for Animators
+        slug: Module-01-Acting-Performance
+      - num: 2
+        title: Body Mechanics & Weight
+        slug: Module-02-Body-Mechanics-Weight
+      - num: 3
+        title: Facial Animation & Expressions
+        slug: Module-03-Facial-Animation
+      - num: 4
+        title: Advanced Lip Sync & Phoneme Mapping
+        slug: Module-04-Advanced-Lip-Sync
+      - num: 5
+        title: Creature & Non-Human Character Animation
+        slug: Module-05-Creature-Animation
+      - num: 6
+        title: Crowd Simulation & Secondary Characters
+        slug: Module-06-Crowd-Simulation
+      - num: 7
+        title: Motion Capture Integration & Cleanup
+        slug: Module-07-Motion-Capture
+      - num: 8
+        title: Advanced Graph Editor & Curve Refinement
+        slug: Module-08-Graph-Editor-Advanced
+      - num: 9
+        title: Working with Directors & the Film Pipeline
+        slug: Module-09-Directors-Film-Pipeline
+      - num: 10
+        title: Advanced Character Demo Reel
+        slug: Module-10-Demo-Reel
+    extras:
+      - num: 11
+        title: Practice Exam 1
+        slug: Practice-Exams/Practice-Exam-1
+        single_file: true
+      - num: 12
+        title: Practice Exam 2
+        slug: Practice-Exams/Practice-Exam-2
+        single_file: true
+      - num: 13
+        title: Final Mock Exam (65q / 90min)
+        slug: Practice-Exams/Final-Mock-Exam
+        single_file: true
+      - num: 14
+        title: Master Flashcards
+        slug: Flashcards
+        single_file: true
+
+  - id: vfx-compositing
+    title: VFX & Compositing
+    subtitle: After Effects · Nuke · Green Screen · Particle FX · Film VFX
+    color: yellow
+    color_from: "#ca8a04"
+    color_to: "#a16207"
+    icon: "✨"
+    base: "/38-VFX-Compositing/"
+    modules:
+      - num: 1
+        title: VFX Pipeline & Industry Overview
+        slug: Module-01-VFX-Pipeline-Overview
+      - num: 2
+        title: Green Screen & Chroma Keying
+        slug: Module-02-Green-Screen-Keying
+      - num: 3
+        title: Rotoscoping & Masking
+        slug: Module-03-Rotoscoping-Masking
+      - num: 4
+        title: Tracking — 2D, 3D & Planar
+        slug: Module-04-Tracking-2D-3D-Planar
+      - num: 5
+        title: Particle Systems & Simulations in After Effects
+        slug: Module-05-Particle-Systems-AE
+      - num: 6
+        title: Nuke Fundamentals for Compositing
+        slug: Module-06-Nuke-Fundamentals
+      - num: 7
+        title: Color Grading & Look Development
+        slug: Module-07-Color-Grading
+      - num: 8
+        title: Practical & Digital FX Integration
+        slug: Module-08-Practical-Digital-FX
+      - num: 9
+        title: Destruction, Explosions & Action FX
+        slug: Module-09-Destruction-Action-FX
+      - num: 10
+        title: VFX Breakdown Reel & Studio Workflow
+        slug: Module-10-VFX-Breakdown-Reel
+    extras:
+      - num: 11
+        title: Practice Exam 1
+        slug: Practice-Exams/Practice-Exam-1
+        single_file: true
+      - num: 12
+        title: Practice Exam 2
+        slug: Practice-Exams/Practice-Exam-2
+        single_file: true
+      - num: 13
+        title: Final Mock Exam (65q / 90min)
+        slug: Practice-Exams/Final-Mock-Exam
+        single_file: true
+      - num: 14
+        title: Master Flashcards
+        slug: Flashcards
+        single_file: true
+
+  - id: game-ui-animation
+    title: Game & UI Animation
+    subtitle: Unity · Unreal · Spine · CSS · GSAP · Real-Time Animation
+    color: green
+    color_from: "#16a34a"
+    color_to: "#15803d"
+    icon: "🕹️"
+    base: "/39-Game-UI-Animation/"
+    modules:
+      - num: 1
+        title: Game Animation vs Film — Key Differences
+        slug: Module-01-Game-vs-Film
+      - num: 2
+        title: Real-Time Animation in Unity
+        slug: Module-02-Unity-Animation
+      - num: 3
+        title: Unreal Engine Animation Blueprint
+        slug: Module-03-Unreal-Animation-Blueprint
+      - num: 4
+        title: Spine 2D for Games — Skeletal Animation
+        slug: Module-04-Spine-2D-Games
+      - num: 5
+        title: State Machines & Blend Trees
+        slug: Module-05-State-Machines-Blend-Trees
+      - num: 6
+        title: UI Animation in Figma, After Effects & GSAP
+        slug: Module-06-UI-Animation-Figma-GSAP
+      - num: 7
+        title: CSS & Lottie for Production Web Animation
+        slug: Module-07-CSS-Lottie-Web
+      - num: 8
+        title: Game VFX — Particles & Shader Graphs
+        slug: Module-08-Game-VFX-Shaders
+    extras:
+      - num: 9
+        title: Practice Exam 1
+        slug: Practice-Exams/Practice-Exam-1
+        single_file: true
+      - num: 10
+        title: Practice Exam 2
+        slug: Practice-Exams/Practice-Exam-2
+        single_file: true
+      - num: 11
+        title: Final Mock Exam (60q / 90min)
+        slug: Practice-Exams/Final-Mock-Exam
+        single_file: true
+      - num: 12
+        title: Master Flashcards
+        slug: Flashcards
+        single_file: true
+
 module_pages:
   - id: Reading
     label: 📖 Lesson

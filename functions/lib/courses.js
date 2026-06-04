@@ -1,5 +1,5 @@
 /**
- * Canonical list of all 32 courses on The Cert Hub.
+ * Canonical list of all 39 courses on The Cert Hub.
  *
  * Must stay in sync with EXPECTED_COURSES in scripts/verify-baseline.py.
  *
@@ -42,6 +42,14 @@ export const COURSES = [
   { id: "30-Generative-AI-Engineer",                slug: "Generative AI Engineer",         icon: "⚡", category: "Generative & Agentic AI" },
   { id: "31-AWS-ML-Specialty",                      slug: "AWS ML Specialty (MLS-C01)",     icon: "🔬", category: "Generative & Agentic AI" },
   { id: "32-Google-AI-Pro",                         slug: "Google AI Pro",                  icon: "💎", category: "Generative & Agentic AI" },
+  // Animation & Motion Design track (7-course ladder, foundation → advanced)
+  { id: "33-Animation-Foundations",                 slug: "Animation Foundations",          icon: "🎬", category: "Animation & Motion Design" },
+  { id: "34-2D-Digital-Animation",                  slug: "2D Digital Animation",           icon: "✏️", category: "Animation & Motion Design" },
+  { id: "35-Motion-Graphics-UI-Animation",          slug: "Motion Graphics & UI Animation", icon: "🎞️", category: "Animation & Motion Design" },
+  { id: "36-3D-Animation-Blender",                  slug: "3D Animation with Blender",      icon: "🧊", category: "Animation & Motion Design" },
+  { id: "37-Advanced-Character-Animation",          slug: "Advanced Character Animation",   icon: "🎭", category: "Animation & Motion Design" },
+  { id: "38-VFX-Compositing",                       slug: "VFX & Compositing",              icon: "✨", category: "Animation & Motion Design" },
+  { id: "39-Game-UI-Animation",                     slug: "Game & UI Animation",            icon: "🕹️", category: "Animation & Motion Design" },
 ];
 
 export const COURSE_IDS = COURSES.map(c => c.id);
