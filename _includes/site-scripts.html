@@ -112,8 +112,10 @@
         var target = parseInt(el.getAttribute('data-count-to'), 10);
         var suffix = el.getAttribute('data-count-suffix') || '';
         if (isNaN(target)) return;
+        // If a pre-formatted final display value is provided, use it at end of animation
+        var finalDisplay = el.getAttribute('data-count-display') || (formatInt(target) + suffix);
         if (prefersReduced || !('requestAnimationFrame' in window)) {
-          el.textContent = formatInt(target) + suffix;
+          el.textContent = finalDisplay;
           return;
         }
         var duration = 1400 + Math.min(target, 8000) / 10; // longer for bigger numbers
@@ -127,7 +129,7 @@
           var val = Math.floor(eased * target);
           el.textContent = formatInt(val) + suffix;
           if (progress < 1) requestAnimationFrame(step);
-          else el.textContent = formatInt(target) + suffix;
+          else el.textContent = finalDisplay;  // snap to exact formatted value at end
         }
         requestAnimationFrame(step);
       }
