@@ -5,7 +5,7 @@ title: International Certifications Catalog
 
 # 🏆 International Certifications Catalog
 
-> Every international cert that the 32 courses on this site map to — with issuing body, exam format, fee in USD, full registration procedure, designation earned, market standing, and renewal rules.
+> Every international cert that the 39 courses on this site map to — with issuing body, exam format, fee in USD, full registration procedure, designation earned, market standing, and renewal rules.
 
 **Resources** · Certifications Catalog
 *Last updated: 2026-05*
@@ -20,7 +20,7 @@ An "industry certification" is a credential issued by a recognized standards bod
 2. **Real proctoring or honor-system with a recognized brand.** Pearson VUE, Prometric, OnVUE, vendor portals (HubSpot, Google Skillshop, Meta Blueprint). The exam isn't just a marketing quiz.
 3. **Documented market standing.** You can find recent salary surveys (Robert Half, PMI Earning Power, Global Knowledge) listing the cert. You can find recruiters in your city searching for it on LinkedIn.
 
-**How to use this page:** Every section starts with one of our 32 courses. After you complete that course, you're ready to sit for the certifications listed under it — with the issuing body, exam format, fee in USD, full registration procedure, the benefits the credential unlocks, the designation you carry after passing, and the renewal rules.
+**How to use this page:** Every section starts with one of our 39 courses. After you complete that course, you're ready to sit for the certifications listed under it — with the issuing body, exam format, fee in USD, full registration procedure, the benefits the credential unlocks, the designation you carry after passing, and the renewal rules.
 
 Pick the course. Finish it. Pay for the exam. Walk in confident.
 
@@ -30,7 +30,7 @@ Pick the course. Finish it. Pay for the exam. Walk in confident.
 
 ## 📑 Quick Map — Course → Recommended Certifications
 
-Courses appear in the same canonical order used on the homepage and sidebar: **Project Management → IT, Cloud & Systems Administration → Generative & Agentic AI → Supply Chain & Operations → AI Digital Marketing → Bitcoin & E-Commerce.**
+Courses appear in the same canonical order used on the homepage and sidebar: **Project Management → IT, Cloud & Systems Administration → Generative & Agentic AI → Supply Chain & Operations → AI Digital Marketing → Bitcoin & E-Commerce → Animation & Motion Design.**
 
 ### Project Management
 
@@ -107,6 +107,18 @@ Courses appear in the same canonical order used on the homepage and sidebar: **P
 |------------|--------------------------------------|-----------|------------|
 | Bitcoin & Cryptocurrency | **CBP** (C4) · CBSA (BTA) · CCAS (ACAMS) | $150 · $300 · $1,395 | [Start prep →](../../19-Bitcoin-Cryptocurrency/) |
 | E-Commerce | **Google D-M & E-C Certificate** · **Adobe Commerce BP** · Salesforce B2C | $300 · $225 · $200+ | [Start prep →](../../20-E-Commerce/) |
+
+### Animation & Motion Design
+
+| Our Course | Recommended Cert (After Completion) | Fee (USD) | Start Prep |
+|------------|--------------------------------------|-----------|------------|
+| Animation Foundations | **Adobe Certified Professional — Visual Design** (Adobe/Certiport) | $180 | [Start prep →](../../33-Animation-Foundations/) |
+| 2D Digital Animation | **Adobe Certified Professional — Animate** (Adobe/Certiport) · Toon Boom Harmony User Certification | $180 · $99 | [Start prep →](../../34-2D-Digital-Animation/) |
+| Motion Graphics & UI Animation | **Adobe Certified Professional — After Effects** (Adobe/Certiport) | $180 | [Start prep →](../../35-Motion-Graphics-UI-Animation/) |
+| 3D Animation with Blender | **Autodesk Maya Certified User** (Autodesk/Certiport) · Unity Certified Associate (Unity Technologies) | $50 · $199 | [Start prep →](../../36-3D-Animation-Blender/) |
+| Advanced Character Animation | **Autodesk Maya Certified Professional** (Autodesk) | $250 | [Start prep →](../../37-Advanced-Character-Animation/) |
+| VFX & Compositing | **Adobe Certified Professional — After Effects** · Foundry NUKE User Certification | $180 · $99 | [Start prep →](../../38-VFX-Compositing/) |
+| Game & UI Animation | **Unity Certified Professional — Technical Artist** (Unity Technologies) · Unreal Engine Online Learning Certificate (Epic Games) | $199 · Free | [Start prep →](../../39-Game-UI-Animation/) |
 
 ---
 
@@ -962,6 +974,307 @@ After completing this course, you are ready to sit for:
 
 ---
 
+## 📘 Animation Foundations
+
+[Open the course →](../33-Animation-Foundations/README.md)
+
+*A ground-up introduction to animation principles, design fundamentals, and Adobe's core creative tools — built for complete beginners and career-changers entering the creative industry.*
+
+### ➡️ Adobe Certified Professional — Visual Design (Adobe/Certiport)
+
+**Designation earned after passing:** *Adobe Certified Professional in Visual Design*
+
+- **Issuing body:** **Adobe** (credential delivered through **Certiport**, a Pearson VUE company) — Adobe's professional-tier certification line, one step above the entry-level Adobe Certified Associate. Recognized by creative agencies, educational institutions, and design studios that run Adobe workflows.
+- **Market standing:** Tier-1 for Adobe-centric creative roles. Hiring managers at agencies, media companies, and in-house brand teams treat ACP Visual Design as the benchmark for proof of Adobe fluency. Cited in job postings for Graphic Designer, Visual Designer, Motion Designer (junior), and Creative Coordinator roles.
+- **Benefits of passing:** Validates working knowledge of Photoshop, Illustrator, and design principles in a single credential. Average junior Visual Designer salary in the US is $55K–$75K; holding an ACP credential measurably shortens the hiring process for studio and agency roles. Gateway to the ACP — Animate and ACP — After Effects credentials that map to more advanced courses in this track.
+- **Exam format:** ~50 questions · 50 minutes · multiple-choice and live-application tasks · scored pass/fail · proctored at Certiport/Pearson VUE testing centers or via online remote proctoring.
+- **Fee:** **$180 USD.** Academic pricing may be lower if your institution is a Certiport Authorized Testing Center.
+- **Eligibility:** None. The exam is open to anyone.
+- **How to register:**
+  1. Create a free account at [certiport.com](https://www.certiport.com/)
+  2. Search for "Adobe Certified Professional" → select *Visual Design*
+  3. Find a nearby Certiport Authorized Testing Center or select online remote proctoring
+  4. Pay $180 and schedule your session
+  5. Take the exam; results appear on screen immediately after submission
+  6. Digital badge delivered via Credly within a few business days of passing
+- **Renewal:** Adobe product cycle — typically every 2–3 years as major product versions release. Adobe will notify credential holders when a renewal exam becomes available.
+
+### ➡️ Adobe Certified Associate — Visual Design (Entry-Level Alternative)
+
+**Designation earned after passing:** *Adobe Certified Associate in Visual Design*
+
+- **Issuing body:** Adobe/Certiport — same family as ACP but one tier lower. Ideal if you are still building fluency and want a credential before you are ready for the Professional exam.
+- **Market standing:** Tier-2 entry-level. Well-recognized at educational institutions and for entry-level studio positions. Frequently required for community-college and secondary-school design programs.
+- **Benefits of passing:** Demonstrates foundational Adobe tool knowledge. Lower bar to entry — good stepping stone while building your portfolio toward the ACP.
+- **Exam format:** ~45 questions · 50 minutes · proctored at Certiport centers.
+- **Fee:** **$45–$75 USD** (varies by testing center; academic pricing often applies).
+- **Eligibility:** None.
+- **How to register:** Same process as ACP — via certiport.com → Adobe Certified Associate → Visual Design.
+- **Renewal:** Tied to Adobe product release cycle.
+
+---
+
+## 📘 2D Digital Animation
+
+[Open the course →](../34-2D-Digital-Animation/README.md)
+
+*Hands-on production of 2D frame-by-frame and rigged animation using Adobe Animate and Toon Boom Harmony — the two dominant tools in broadcast, streaming, and studio 2D pipelines.*
+
+### ➡️ Adobe Certified Professional — Animate (Adobe/Certiport)
+
+**Designation earned after passing:** *Adobe Certified Professional in Animate*
+
+- **Issuing body:** **Adobe / Certiport** — the Animate-specific credential in Adobe's Professional certification line.
+- **Market standing:** Tier-1 for 2D digital animation roles at broadcast studios, streaming platforms, and advertising agencies. Adobe Animate is the standard for HTML5 banner animation, interactive web content, and 2D TV production. The ACP — Animate credential signals production-ready tool fluency to hiring studios.
+- **Benefits of passing:** Unlocks junior-to-mid animator, motion designer (2D), and interactive media developer roles. Average entry-level animator salary in the US is $50K–$70K; ACP credentials consistently reduce screening friction with HR. Direct preparation for the more advanced ACP — After Effects credential (Course 35).
+- **Exam format:** ~50 questions · 50 minutes · mix of multiple-choice and scenario-based tasks · proctored at Certiport centers or via online remote proctoring.
+- **Fee:** **$180 USD.**
+- **Eligibility:** None.
+- **How to register:**
+  1. Go to [certiport.com](https://www.certiport.com/) and sign in or create an account
+  2. Search for "Adobe Certified Professional — Animate"
+  3. Select a Certiport Authorized Testing Center or online proctoring
+  4. Pay and schedule
+  5. Results on screen immediately after completion; Credly badge within a few business days
+- **Renewal:** Adobe product cycle (approximately every 2–3 years).
+
+### ➡️ Toon Boom Harmony User Certification
+
+**Designation earned after passing:** *Toon Boom Certified Harmony User*
+
+- **Issuing body:** **Toon Boom Animation** — the Canadian software company that develops Harmony, the industry-standard 2D animation software used in professional TV and film production. Toon Boom operates its own vendor certification program independently of Certiport.
+- **Market standing:** Tier-1 for studio 2D animation. Toon Boom Harmony is used in production at **Disney Television Animation, Cartoon Network Studios, Studio Mir** (The Legend of Korra, Voltron), Nelvana, Gaumont, and dozens of other major houses. When a studio's job posting asks for "Harmony experience," this certification is the recognized proof. It carries more weight than Adobe credentials for roles specifically inside studio pipelines.
+- **Benefits of passing:** Signals production-ready Harmony proficiency to studio recruiters. Relevant job titles: 2D Animator, Character Animator, Storyboard Artist (digital), Clean-Up Animator. Average salary range for a staff 2D animator in a US studio is $65K–$100K.
+- **Exam format:** Online, vendor-proctored. Tests rigging, node-based compositing inside Harmony, cut-out animation, scene setup, and export pipelines. Approximately 60–90 minutes.
+- **Fee:** **~$99 USD** (confirm current pricing at Toon Boom's official learning portal, as vendor fees are updated periodically).
+- **Eligibility:** None formally required. Toon Boom recommends completing their official Harmony learning path before sitting the exam.
+- **How to register:**
+  1. Create an account at [learn.toonboom.com](https://learn.toonboom.com/)
+  2. Navigate to Certifications → Harmony User Certification
+  3. Complete any recommended preparatory modules
+  4. Purchase and schedule the proctored exam
+  5. Results provided after online submission
+- **Renewal:** Toon Boom issues updated exams when major Harmony versions release; check the portal for recertification requirements.
+
+### ➡️ Adobe Certified Associate — Animate (Entry-Level Alternative)
+
+**Designation earned after passing:** *Adobe Certified Associate in Animate*
+
+- **Issuing body:** Adobe/Certiport.
+- **Fee:** **~$45–$75 USD** (academic pricing common).
+- **When to choose this:** If you want a recognized Adobe credential before you feel fully exam-ready for the ACP level, the ACA — Animate is a solid intermediate milestone with the same Certiport delivery infrastructure.
+- **How to register:** Via certiport.com → Adobe Certified Associate → Animate.
+
+---
+
+## 📘 Motion Graphics & UI Animation
+
+[Open the course →](../35-Motion-Graphics-UI-Animation/README.md)
+
+*Production-level motion graphics, kinetic typography, and UI animation built with Adobe After Effects — the industry-standard tool for broadcast, streaming, and product animation workflows.*
+
+### ➡️ Adobe Certified Professional — After Effects (Adobe/Certiport)
+
+**Designation earned after passing:** *Adobe Certified Professional in After Effects*
+
+- **Issuing body:** **Adobe / Certiport.**
+- **Market standing:** Tier-1 — the single most-cited certification in motion graphics job postings. After Effects is the dominant tool in broadcast post-production, streaming title sequences, product advertising, and UI motion design. Major studios (Netflix, Disney+, Apple TV+), advertising agencies (Wieden+Kennedy, BBDO, Ogilvy), and in-house brand teams all list AE proficiency as required or strongly preferred. The ACP — After Effects is the recognized credential to prove that fluency.
+- **Benefits of passing:** Directly unlocks Motion Graphics Designer, Broadcast Designer, Visual Effects Artist (junior), and UI Motion Designer roles. Average Motion Graphics Designer salary in the US is $70K–$110K (mid-level); senior roles at top agencies reach $130K+. This is also the credential to hold when moving into the VFX track (Course 38).
+- **Exam format:** ~50 questions · 50 minutes · multiple-choice and live-application tasks · proctored at Certiport centers or via online remote proctoring.
+- **Fee:** **$180 USD.**
+- **Eligibility:** None.
+- **How to register:**
+  1. Sign in or create an account at [certiport.com](https://www.certiport.com/)
+  2. Search "Adobe Certified Professional — After Effects"
+  3. Select a testing center or online proctoring option
+  4. Pay $180 and schedule
+  5. Take the exam; immediate results on screen; Credly badge within a few business days
+- **Renewal:** Adobe product cycle (approximately every 2–3 years).
+
+### ➡️ Adobe Certified Professional — Premiere Pro (Adobe/Certiport)
+
+**Designation earned after passing:** *Adobe Certified Professional in Premiere Pro*
+
+- **Issuing body:** Adobe / Certiport.
+- **Market standing:** Tier-1 in broadcast, post-production, and content creation. Premiere Pro and After Effects are used together in nearly every professional video production workflow — After Effects handles motion graphics and compositing; Premiere Pro handles editorial and finishing. Holding both credentials makes a candidate dramatically more competitive for Editor/Motion Designer hybrid roles at broadcasters, streamers, and production companies.
+- **Benefits of passing:** Broadens your marketable profile from "motion graphics designer" to "full post-production generalist." Relevant for Video Editor, Content Creator, Post-Production Coordinator, and Creative Technologist roles. Average Video Editor salary in the US is $60K–$90K; dual ACP holders often command the upper end.
+- **Exam format:** ~50 questions · 50 minutes · proctored.
+- **Fee:** **$180 USD.**
+- **Eligibility:** None.
+- **How to register:** Same flow as ACP — After Effects via certiport.com.
+- **Renewal:** Adobe product cycle.
+
+---
+
+## 📘 3D Animation with Blender
+
+[Open the course →](../36-3D-Animation-Blender/README.md)
+
+*Full 3D animation production pipeline in Blender — modeling, rigging, skinning, lighting, rendering, and keyframe animation — plus the industry context to position your Blender skills alongside the Maya and Unity credentials that studios actually screen for.*
+
+> **Honest note on Blender certification:** The Blender Foundation does not offer a formal certification exam. Blender is open-source and community-governed; the credential landscape is therefore different from proprietary tools like Maya or Unity. The career-smart path is to demonstrate Blender proficiency through a polished portfolio while earning a recognized industry credential in a tool that overlaps with Blender's workflow. The two certifications below are specifically chosen because studios that use Blender almost always also use Maya (for character rigging and simulation) and Unity (for realtime rendering and game export). Holding a Maya or Unity credential alongside your Blender reel is the move that opens studio doors.
+
+### ➡️ Autodesk Maya Certified User (Autodesk/Certiport)
+
+**Designation earned after passing:** *Autodesk Certified User: Maya*
+
+- **Issuing body:** **Autodesk / Certiport.** Autodesk is the publisher of Maya, the dominant professional 3D animation and VFX tool used across game studios, VFX houses, and film production companies worldwide.
+- **Market standing:** Tier-1 foundational 3D credential. Maya is used at ILM, Pixar, Weta FX, Framestore, DNEG, Riot Games, Epic Games, and essentially every major studio that employs 3D animators. The Certified User credential demonstrates foundational Maya proficiency and is the entry-level rung of Autodesk's certification ladder, directly below the Certified Professional tier (Course 37).
+- **Benefits of passing:** Substantiates your 3D skills to employers who use Maya — even when your primary tool is Blender. Junior 3D Animator, Rigging Artist (junior), and 3D Generalist roles at mid-size studios commonly list Maya proficiency as required. Average junior 3D animator salary in the US is $55K–$80K.
+- **Exam format:** Performance-based tasks + multiple-choice · ~60 minutes · proctored at Certiport Authorized Testing Centers.
+- **Fee:** **~$50 USD** (Certiport exam fees for Autodesk products are among the most affordable; confirm current pricing at certiport.com).
+- **Eligibility:** None.
+- **How to register:**
+  1. Go to [certiport.com](https://www.certiport.com/) → Autodesk Certifications → Maya → Certified User
+  2. Find a nearby testing center or select online proctoring
+  3. Pay and schedule
+  4. Results delivered immediately on screen after the exam
+- **Renewal:** Tied to major Maya release cycles; Autodesk typically issues updated exams every 2–3 years.
+
+### ➡️ Unity Certified Associate — Game Developer (Unity Technologies)
+
+**Designation earned after passing:** *Unity Certified Associate: Game Developer*
+
+- **Issuing body:** **Unity Technologies** — publisher of the Unity game engine, the most widely used realtime 3D platform across game development, architectural visualization, VR/AR, and film previs.
+- **Market standing:** Tier-1 for realtime 3D pipelines. This credential is highly relevant for 3D-to-realtime workflows: exporting Blender assets into Unity, setting up animation rigs, and building interactive 3D scenes is exactly what junior Technical Artists and 3D Generalists do daily. Unity Certified Associate is the first rung of Unity's official certification ladder.
+- **Benefits of passing:** Unlocks Game Developer (junior), 3D Generalist, Technical Artist (junior), and Visualization Specialist roles. Game industry salaries for Unity developers average $75K–$110K at mid-level.
+- **Exam format:** Online proctored · multiple-choice and scenario-based questions · approximately 90 minutes · pass/fail.
+- **Fee:** **$199 USD.**
+- **Eligibility:** None formally, though Unity recommends 6+ months of hands-on Unity experience.
+- **How to register:**
+  1. Visit [unity.com/products/unity-certifications](https://unity.com/products/unity-certifications)
+  2. Select Unity Certified Associate → Game Developer
+  3. Create or log into your Unity ID
+  4. Purchase the exam voucher ($199)
+  5. Schedule via Examity (Unity's proctoring partner)
+  6. Take the online-proctored exam; results within a few business days
+- **Renewal:** Unity re-releases certification exams for major engine versions; check unity.com/certifications for the current version and recertification requirements.
+
+---
+
+## 📘 Advanced Character Animation
+
+[Open the course →](../37-Advanced-Character-Animation/README.md)
+
+*Mastery-level character animation in Autodesk Maya — advanced rigging, skin weighting, blend shapes, dynamics-driven simulation, and the animation workflow expectations of game studios, VFX houses, and broadcast/film production companies.*
+
+### ➡️ Autodesk Maya Certified Professional (Autodesk)
+
+**Designation earned after passing:** *Autodesk Certified Professional: Maya*
+
+- **Issuing body:** **Autodesk** — the advanced-tier Maya credential, above the Certified User exam (Course 36). Delivered directly through Autodesk's certification portal rather than Certiport; designed for experienced practitioners.
+- **Market standing:** Tier-1 advanced credential. The **gold standard for character animators** entering professional game studios, VFX houses, and broadcast/film production companies. Job postings at mid-to-senior animator level at studios like Riot Games, Naughty Dog, DreamWorks, Sony Pictures Imageworks, and Framestore commonly list Autodesk Maya Certified Professional as a differentiating or preferred credential. It is the clearest signal — separate from a portfolio — that a candidate can handle production-level rigging complexity, simulation pipelines, and animation-layer workflows.
+- **Benefits of passing:** Average Character Animator salary in the US is $85K–$130K at mid-to-senior level (Glassdoor/ArtStation surveys 2024–2025). Holding the Certified Professional designation alongside a strong reel measurably accelerates the progression from junior to lead animator title.
+- **Exam format:** Performance-based tasks + multiple-choice · tests advanced rigging, skin weighting, blend shapes, dynamics, motion path animation, and production-level character animation workflows · typically 90–120 minutes · proctored.
+- **Fee:** **~$250 USD** (confirm current pricing at Autodesk's official certification page, as fees are updated periodically).
+- **Eligibility:** Autodesk recommends holding the Certified User credential (or equivalent experience) before sitting the Professional exam. No formal gate — experienced practitioners can sit directly.
+- **How to register:**
+  1. Visit [autodesk.com/certification](https://www.autodesk.com/certification)
+  2. Navigate to Maya → Certified Professional
+  3. Create or log in to your Autodesk account
+  4. Register and pay the exam fee
+  5. Schedule via the Autodesk exam portal (Certiport for some regions; Autodesk direct for others — the portal will route you correctly)
+  6. Complete the proctored exam; results within a few business days
+- **Renewal:** Autodesk re-issues exams for major Maya versions; recertification is typically required every 2–3 years to stay on the current version designation.
+
+### ➡️ Autodesk Certified User: Maya (Entry-Level Alternative)
+
+**Designation earned after passing:** *Autodesk Certified User: Maya*
+
+- **Issuing body:** Autodesk / Certiport.
+- **Fee:** **~$50 USD** (via Certiport).
+- **When to choose this:** If you are completing this course without prior Maya experience and want a milestone credential before you are ready for the Professional exam, the Certified User is a recognized stepping stone — same issuing body, lower bar. See the full entry under Course 36 above.
+- **How to register:** Via certiport.com → Autodesk → Maya → Certified User.
+
+---
+
+## 📘 VFX & Compositing
+
+[Open the course →](../38-VFX-Compositing/README.md)
+
+*Professional visual effects and compositing production — keying, rotoscoping, tracking, color management, and node-based compositing workflows in Adobe After Effects and Foundry NUKE, the two tools that define the professional VFX pipeline.*
+
+### ➡️ Adobe Certified Professional — After Effects (Adobe/Certiport)
+
+**Designation earned after passing:** *Adobe Certified Professional in After Effects*
+
+- **Issuing body:** **Adobe / Certiport.**
+- **Market standing:** See full entry under Course 35 — Motion Graphics & UI Animation. In the VFX context specifically, ACP — After Effects validates your fluency in layer-based compositing, motion tracking, chroma keying, and effect stacking — workflows that are directly transferable to NUKE node-based compositing and that form the foundation for VFX Artist and Compositor (junior) roles.
+- **Benefits of passing:** Entry point to VFX Artist, Compositor (junior), and Post-Production Specialist roles at digital agencies, broadcast houses, and independent production companies. Pairs directly with the NUKE User Certification below for a full two-credential VFX profile.
+- **Exam format:** ~50 questions · 50 minutes · proctored.
+- **Fee:** **$180 USD.**
+- **Eligibility:** None.
+- **How to register:** Via [certiport.com](https://www.certiport.com/) → Adobe Certified Professional → After Effects. (Full instructions in Course 35's entry above.)
+- **Renewal:** Adobe product cycle (approximately every 2–3 years).
+
+### ➡️ Foundry NUKE User Certification
+
+**Designation earned after passing:** *Foundry Certified NUKE User*
+
+- **Issuing body:** **Foundry** — the UK-based software company that develops and publishes NUKE, the node-based compositing application that is the **industry standard for professional VFX compositing** at the world's top visual effects facilities.
+- **Market standing:** Tier-1 for the VFX industry. NUKE is the primary compositing tool at **ILM (Industrial Light & Magic), Framestore, DNEG, Weta FX, MPC, Cinesite,** and virtually every major VFX house in North America, the UK, Australia, and New Zealand. When a VFX studio advertises a Compositor role, NUKE proficiency is typically listed as required — not preferred. Foundry's own certification program is the recognized credential for proving that proficiency before you have production credits to show.
+- **Benefits of passing:** Compositor (junior), VFX Artist, Roto/Paint Artist, and Prep Artist roles at professional VFX studios. Average compositor salary at a major VFX house ranges from $65K (junior/roto) to $130K+ (senior compositor with specialty skills). Holding the NUKE User Certification alongside a demo reel is the combination that gets candidates past HR screens at Tier-1 VFX studios.
+- **Exam format:** Online, vendor-proctored. Tests NUKE node graph structure, rotoscoping, keying, tracking, color management, and multi-layer compositing workflows. Approximately 60–90 minutes.
+- **Fee:** **~$99 USD** (confirm current pricing at Foundry's official learning portal, as vendor exam fees are periodically revised).
+- **Eligibility:** None formally required. Foundry recommends completing their NUKE training path on learn.foundry.com before sitting the exam.
+- **How to register:**
+  1. Create an account at [learn.foundry.com](https://learn.foundry.com/)
+  2. Navigate to Certifications → NUKE User Certification
+  3. Complete any recommended preparatory courses
+  4. Purchase the exam and schedule a proctored session
+  5. Results provided upon completion of the online exam
+- **Renewal:** Foundry updates certification exams with major NUKE releases; check the portal for current version requirements.
+
+> **On Houdini (SideFX):** Houdini is widely used for procedural VFX, simulation, and Houdini-based pipeline tools at top studios. SideFX does not currently offer a formal proctored certification exam — their Houdini certification program has been in development and has not launched a publicly available exam at the time of this writing. **Your Houdini portfolio is the primary currency.** A strong Houdini demo reel demonstrating fluid simulation, particle systems, or procedural modeling carries more weight with studios than any available third-party credential.
+
+---
+
+## 📘 Game & UI Animation
+
+[Open the course →](../39-Game-UI-Animation/README.md)
+
+*Realtime animation systems for games and interactive applications — Unity's Animator Controller, state machines, Timeline, Cinemachine, and UI animation — plus a grounding in Unreal Engine 5's Sequencer and Blueprint animation tools for studios on the UE5 pipeline.*
+
+### ➡️ Unity Certified Professional — Technical Artist (Unity Technologies)
+
+**Designation earned after passing:** *Unity Certified Professional: Technical Artist*
+
+- **Issuing body:** **Unity Technologies** — the Professional tier of Unity's official certification program, above the Certified Associate credential (Course 36). This is the credential that directly validates the skills taught in this course: Unity's animation system, Shader Graph, VFX Graph, Cinemachine, and the technical art pipeline that bridges animation and engineering.
+- **Market standing:** Tier-1 for game and interactive media studios. Technical Artist is one of the most in-demand hybrid roles in game development — sitting at the intersection of animation, shaders, VFX, and engine optimization. Studios including **Electronic Arts, Activision Blizzard, Ubisoft, Bungie, 2K, and Insomniac Games** regularly hire for Technical Artist roles, and Unity Certified Professional is the recognized credential for candidates who do not yet have shipped-game credits to demonstrate their engine-level fluency.
+- **Benefits of passing:** Technical Artist, Animator (realtime), VFX Artist (game engine), UI Animator, and Shader Artist roles. Average Technical Artist salary in the US is $90K–$130K (mid-level); senior Technical Artists at AAA studios reach $150K+. This certification is also highly relevant for interactive film, architectural visualization, and XR (VR/AR) production roles.
+- **Exam format:** Online proctored via **Examity** · multiple-choice and scenario-based questions covering Unity's animation system, Shader Graph, VFX Graph, Cinemachine, and technical art pipeline workflows · approximately 90 minutes · pass/fail.
+- **Fee:** **$199 USD.**
+- **Eligibility:** None formally, though Unity recommends the Certified Associate credential or equivalent hands-on Unity experience before attempting the Professional exam.
+- **How to register:**
+  1. Visit [unity.com/products/unity-certifications](https://unity.com/products/unity-certifications)
+  2. Select Unity Certified Professional → Technical Artist
+  3. Log in to your Unity ID (or create one at id.unity.com)
+  4. Purchase the exam voucher ($199)
+  5. Schedule your session via Examity
+  6. Take the online-proctored exam; results within a few business days
+- **Renewal:** Unity issues updated certification exams for major LTS engine releases; check unity.com/certifications for the current version and any recertification timeline.
+
+### ➡️ Unreal Engine Online Learning Certificate of Completion (Epic Games)
+
+**Designation earned after passing:** *Unreal Engine Online Learning Certificate of Completion*
+
+- **Issuing body:** **Epic Games** — publisher of Unreal Engine 5, the dominant game and film/TV production engine used at studios working on AAA game titles, virtual production (The Mandalorian, The Batman), and cinematic animation.
+- **Market standing:** Tier-2 (vendor credential, not a proctored exam — but Epic's own official recognition). This is not a proctored certification like Unity Professional; it is a **completion credential** from Epic's own learning portal. However, in studios that run UE5 pipelines, an Epic-issued certificate of completion for Sequencer animation and Blueprint animation controllers carries genuine weight as a demonstrated learning signal. It is specifically valued when applying to studios like **CD Projekt Red, The Coalition (Xbox), Remedy Entertainment, and productions at Industrial Light & Magic** and Netflix's visual production teams that use Unreal for virtual production and cinematic content.
+- **Benefits of passing:** Supports applications for Animator (UE5), Technical Animator, Cinematic Artist, and Virtual Production Technician roles. Combined with the Unity Certified Professional above, this two-credential profile signals full-stack realtime animation capability across both major engines — a rare and marketable combination.
+- **Exam format:** Online learning modules (no proctored exam) · self-paced · covers UE5 Sequencer, animation Blueprint controllers, Control Rig, and cinematic tools · certificate awarded upon module completion.
+- **Fee:** **Free.** Epic's Unreal Online Learning portal is entirely free to access and complete.
+- **Eligibility:** None. Open to anyone with a free Epic Games account.
+- **How to register:**
+  1. Create a free account at [dev.epicgames.com/community/learning](https://dev.epicgames.com/community/learning)
+  2. Navigate to the Unreal Engine animation and Sequencer learning paths
+  3. Complete the relevant modules at your own pace
+  4. Download your certificate of completion from your Epic learning profile
+- **Renewal:** No renewal required for completion certificates. Epic updates learning paths with new engine versions; completing updated paths earns a new certificate.
+
+> **On UI motion design credentials:** If your focus is specifically on UI and product animation (motion design for apps, websites, and digital interfaces), Adobe XD and Figma both offer their own learning credentials. Neither is a proctored certification, but Adobe's XD learning path and Figma's community-issued credentials are recognized in product design and UX hiring. For roles in product animation, game UI, and interactive media, the Unity Certified Professional — Technical Artist above remains the strongest proctored credential; complement it with a Figma or Adobe XD learning certificate if your portfolio skews toward product/UX work.
+
+---
+
 
 ## 🗺️ "Which Cert Next?" — Career Path Matrix
 
@@ -1068,7 +1381,7 @@ Stay away from any cert sold by an organization without credible alumni on Linke
 
 You've chosen your cert. Now go earn it:
 
-1. ☑️ **Open the matching course README** — pick from the [32 tracks](../../) on the homepage
+1. ☑️ **Open the matching course README** — pick from the [39 tracks](../../) on the homepage
 2. ☑️ **Read the [Quick Start Guide](../../00-Study-Plan/Quick-Start-Guide/)** if you haven't already
 3. ☑️ **Follow the [12-Week Study Plan](../../00-Study-Plan/12-Week-Study-Plan/)** — adaptable to any cert
 4. ☑️ **Bookmark [Exam Day Tips](../../00-Study-Plan/Exam-Day-Tips/)** — read it the morning of your exam

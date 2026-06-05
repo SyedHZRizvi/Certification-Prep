@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificate Preview — The Cert Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@600;700;800;900&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <style>
+    /* ─────────────────────────────────────────────
+       PREVIEW SHELL  (hidden on print)
+    ───────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    @media screen {
+      body {
+        background: linear-gradient(160deg, #0f172a 0%, #1e1b4b 60%, #312e81 100%);
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 28px;
+        padding: 36px 20px 60px;
+        font-family: 'Inter', sans-serif;
+      }
+
+      .preview-bar {
+        width: 100%;
+        max-width: 1090px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      .preview-bar-left h1 {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-size: 18px;
+        font-weight: 800;
+        color: #fff;
+        letter-spacing: -0.01em;
+      }
+      .preview-bar-left p {
+        font-size: 12.5px;
+        color: #a5b4fc;
+        margin-top: 3px;
+      }
+
+      .preview-actions { display: flex; gap: 10px; align-items: center; }
+
+      .btn {
+        display: inline-flex; align-items: center; gap: 7px;
+        padding: 10px 20px;
+        border: none; border-radius: 9px;
+        font-size: 13px; font-weight: 700; letter-spacing: 0.03em;
+        cursor: pointer; text-decoration: none;
+        transition: filter .15s, transform .15s;
+      }
+      .btn:hover { filter: brightness(1.1); transform: translateY(-1px); }
+      .btn-primary { background: linear-gradient(135deg, #6366f1, #8b5cf6); color: #fff; }
+      .btn-secondary {
+        background: rgba(255,255,255,0.08); color: #e0e7ff;
+        border: 1px solid rgba(255,255,255,0.18);
+      }
+
+      /* Scale wrapper: keep cert at 1050px internally, scale to fit viewport */
+      .cert-scale-wrapper {
+        width: 100%;
+        max-width: 1090px;
+        display: flex;
+        justify-content: center;
+      }
+      .cert-scale-outer {
+        transform-origin: top center;
+        /* JS sets transform: scale() based on viewport */
+      }
+
+      .cert-drop-shadow {
+        box-shadow:
+          0 50px 120px -20px rgba(0,0,0,0.7),
+          0 0 0 1px rgba(255,255,255,0.07),
+          0 0 60px rgba(99,102,241,0.15);
+        border-radius: 3px;
+      }
+    }
+
+    /* ─────────────────────────────────────────────
+       CERTIFICATE  (1050 × 742 px — A4 landscape)
+    ───────────────────────────────────────────── */
+    .certificate {
+      width: 1050px;
+      height: 742px;
+      position: relative;
+      overflow: hidden;
+      background-color: #fffef7;
+      background-image:
+        radial-gradient(ellipse 55% 45% at 0% 0%,   rgba(251,191,36,0.09)  0%, transparent 100%),
+        radial-gradient(ellipse 55% 45% at 100% 0%,  rgba(99,102,241,0.06)  0%, transparent 100%),
+        radial-gradient(ellipse 55% 45% at 100% 100%,rgba(251,191,36,0.09)  0%, transparent 100%),
+        radial-gradient(ellipse 55% 45% at 0% 100%,  rgba(139,92,246,0.06)  0%, transparent 100%),
+        radial-gradient(ellipse 30% 30% at 50% 50%,  rgba(99,102,241,0.025) 0%, transparent 100%);
+    }
+
+    /* ── Borders ── */
+    .cert-frame-outer {
+      position: absolute; inset: 10px;
+      border: 2px solid #c07010;
+      /* Four-corner trick: border-image doesn't round, so we just use a solid mid-gold */
+    }
+    .cert-frame-inner {
+      position: absolute; inset: 16px;
+      border: 1px solid rgba(210,140,20,0.38);
+    }
+    /* Animated shimmer on outer border (digital only) */
+    @keyframes border-shimmer {
+      0%   { opacity: 0.75; }
+      50%  { opacity: 1; }
+      100% { opacity: 0.75; }
+    }
+    .cert-frame-outer { animation: border-shimmer 4s ease-in-out infinite; }
+
+    /* ── Corner ornaments ── */
+    .cert-corner {
+      position: absolute; width: 64px; height: 64px; z-index: 4;
+    }
+    .cert-corner-tl { top: 10px; left: 10px; }
+    .cert-corner-tr { top: 10px; right: 10px; transform: scaleX(-1); }
+    .cert-corner-bl { bottom: 10px; left: 10px; transform: scaleY(-1); }
+    .cert-corner-br { bottom: 10px; right: 10px; transform: scale(-1,-1); }
+
+    /* ── Subtle diagonal watermark ── */
+    .cert-watermark {
+      position: absolute; inset: 0; z-index: 1;
+      display: flex; align-items: center; justify-content: center;
+      pointer-events: none;
+    }
+    .cert-watermark span {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 88px; font-weight: 900;
+      color: #1e1b4b; opacity: 0.025;
+      transform: rotate(-28deg);
+      white-space: nowrap; letter-spacing: 0.18em;
+      user-select: none;
+    }
+
+    /* ── Main content layer ── */
+    .cert-body {
+      position: absolute; inset: 24px 28px 22px;
+      z-index: 3;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ── Top row: brand left, seal right ── */
+    .cert-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      flex-shrink: 0;
+    }
+
+    .cert-brand { display: flex; align-items: center; gap: 11px; }
+
+    .cert-brand-icon {
+      width: 46px; height: 46px;
+      background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%);
+      border-radius: 11px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 24px;
+      box-shadow: 0 4px 16px rgba(99,102,241,0.38), inset 0 1px 0 rgba(255,255,255,0.22);
+      flex-shrink: 0;
+    }
+    .cert-brand-name {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 19px; font-weight: 900;
+      letter-spacing: 0.07em; text-transform: uppercase;
+      color: #1e1b4b;
+      display: block;
+    }
+    .cert-brand-sub {
+      font-size: 9.5px; font-weight: 600;
+      letter-spacing: 0.16em; text-transform: uppercase;
+      color: #b45309; display: block; margin-top: 2px;
+    }
+
+    /* ── Gold horizontal rule ── */
+    .cert-rule {
+      flex-shrink: 0;
+      height: 1.5px;
+      margin: 0 0 12px;
+      background: linear-gradient(90deg,
+        transparent 0%,
+        rgba(210,140,20,0.4) 8%,
+        #d97706 35%,
+        #f59e0b 50%,
+        #d97706 65%,
+        rgba(210,140,20,0.4) 92%,
+        transparent 100%);
+      position: relative;
+    }
+    .cert-rule::after {
+      content: '✦';
+      position: absolute; left: 50%; top: 50%;
+      transform: translate(-50%, -50%);
+      background: #fffef7;
+      padding: 0 8px;
+      color: #d97706; font-size: 10px;
+      line-height: 1;
+    }
+
+    /* ── Title ── */
+    .cert-title {
+      text-align: center;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 11.5px; font-weight: 800;
+      letter-spacing: 0.42em; text-transform: uppercase;
+      background: linear-gradient(90deg, #4338ca, #6366f1, #7c3aed, #6366f1, #4338ca);
+      -webkit-background-clip: text; background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 4px;
+    }
+
+    /* ── Central content group: vertically centred in remaining space ── */
+    .cert-center {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 4px 0;
+    }
+
+    /* ── Presented-to line ── */
+    .cert-presented {
+      text-align: center;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 16.5px; font-weight: 500; font-style: italic;
+      color: #64748b;
+      margin-bottom: 4px;
+    }
+
+    /* ── Recipient name ── */
+    .cert-name {
+      text-align: center;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 56px; font-weight: 900;
+      letter-spacing: -0.025em; line-height: 1.05;
+      padding-bottom: 0.12em; /* stop descender clip */
+      background: linear-gradient(135deg,
+        #3730a3  0%,
+        #4f46e5 18%,
+        #6366f1 35%,
+        #8b5cf6 52%,
+        #a855f7 68%,
+        #d946ef 82%,
+        #ec4899 100%);
+      -webkit-background-clip: text; background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 6px;
+    }
+
+    /* ── Completion paragraph ── */
+    .cert-completion {
+      text-align: center;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 15.5px; font-weight: 500; font-style: italic;
+      color: #64748b;
+      margin-bottom: 6px;
+    }
+
+    /* ── Course name ── */
+    .cert-course {
+      text-align: center;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 23px; font-weight: 800;
+      letter-spacing: -0.01em;
+      color: #1e1b4b;
+      margin-bottom: 10px;
+    }
+
+    /* ── Distinction badge ── */
+    .cert-distinction {
+      text-align: center;
+    }
+    .cert-distinction-pill {
+      display: inline-flex; align-items: center; gap: 7px;
+      padding: 4px 18px;
+      border: 1px solid rgba(180,83,9,0.38);
+      border-radius: 999px;
+      background: linear-gradient(90deg, rgba(251,191,36,0.10), rgba(245,158,11,0.12), rgba(251,191,36,0.10));
+      font-size: 10px; font-weight: 700;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: #92400e;
+    }
+
+    /* ── Bottom bar ── */
+    .cert-bottom {
+      flex-shrink: 0;
+      padding-top: 10px;
+      border-top: 1px solid rgba(210,140,20,0.22);
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    /* meta: date + cert ID */
+    .cert-meta { display: flex; flex-direction: column; gap: 5px; }
+    .cert-meta-item {
+      display: flex; align-items: baseline; gap: 6px;
+      font-size: 9.5px;
+    }
+    .cert-meta-label {
+      font-weight: 700; letter-spacing: 0.1em;
+      text-transform: uppercase; color: #94a3b8;
+      white-space: nowrap;
+    }
+    .cert-meta-val {
+      font-weight: 700; color: #334155;
+      font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+      font-size: 10px;
+    }
+
+    /* gold standard line */
+    .cert-gs {
+      text-align: center;
+      font-size: 8.5px; font-weight: 600;
+      letter-spacing: 0.11em; text-transform: uppercase;
+      color: #94a3b8; line-height: 1.6;
+    }
+    .cert-gs strong { color: #c07010; font-weight: 700; }
+
+    /* signature */
+    .cert-sig {
+      display: flex; flex-direction: column;
+      align-items: flex-end; gap: 3px; text-align: right;
+    }
+    .cert-sig-flourish {
+      width: 170px; height: 28px; /* placeholder for actual signature */
+      position: relative; margin-bottom: 3px;
+    }
+    .cert-sig-line {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, rgba(30,27,75,0.08), #1e1b4b 40%, rgba(30,27,75,0.08));
+    }
+    /* SVG ink-style flourish above the line */
+    .cert-sig-ink {
+      position: absolute; bottom: 2px; left: 0; right: 0;
+    }
+    .cert-sig-name {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 13.5px; font-weight: 800; color: #1e1b4b;
+      letter-spacing: -0.01em;
+    }
+    .cert-sig-role {
+      font-size: 9px; font-weight: 600;
+      letter-spacing: 0.09em; text-transform: uppercase;
+      color: #64748b; line-height: 1.5;
+    }
+
+    /* ─────────────────────────────────────────────
+       PRINT
+    ───────────────────────────────────────────── */
+    @media print {
+      body { background: none !important; padding: 0 !important; gap: 0 !important; }
+      .preview-bar, .cert-note { display: none !important; }
+      .cert-scale-wrapper, .cert-scale-outer, .cert-drop-shadow { all: unset; display: block; }
+      .certificate {
+        width: 297mm; height: 210mm;
+        box-shadow: none !important;
+      }
+      @page { size: A4 landscape; margin: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── PREVIEW BAR ── -->
+  <div class="preview-bar">
+    <div class="preview-bar-left">
+      <h1>🎓 The Cert Hub — Certificate Preview</h1>
+      <p>Sample data shown. Click "Print / Save PDF" to export A4 landscape.</p>
+    </div>
+    <div class="preview-actions">
+      <button class="btn btn-secondary" onclick="toggleDark()">🌙 Toggle dark preview</button>
+      <button class="btn btn-primary" onclick="window.print()">🖨️ Print / Save as PDF</button>
+    </div>
+  </div>
+
+  <!-- ── CERTIFICATE ── -->
+  <div class="cert-scale-wrapper">
+    <div class="cert-scale-outer" id="scaleOuter">
+      <div class="cert-drop-shadow">
+
+        <div class="certificate" id="cert">
+
+          <!-- Watermark -->
+          <div class="cert-watermark"><span>THE CERT HUB</span></div>
+
+          <!-- Borders -->
+          <div class="cert-frame-outer"></div>
+          <div class="cert-frame-inner"></div>
+
+          <!-- Corner ornaments -->
+          <!-- Top-left -->
+          <svg class="cert-corner cert-corner-tl" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 60 L4 10 Q4 4 10 4 L60 4" stroke="#c07010" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M4 4 L4 22 M4 4 L22 4" stroke="#e8a020" stroke-width="0.8" opacity="0.55"/>
+            <circle cx="4" cy="4" r="4" fill="#d97706"/>
+            <circle cx="4" cy="4" r="2" fill="#fef3c7"/>
+            <path d="M10 4 L4 10 M17 4 L4 17 M24 4 L4 24" stroke="#d97706" stroke-width="0.5" opacity="0.35"/>
+            <path d="M4 10 L4 22" stroke="#c07010" stroke-width="0.5" stroke-dasharray="2 2" opacity="0.4"/>
+            <path d="M10 4 L22 4" stroke="#c07010" stroke-width="0.5" stroke-dasharray="2 2" opacity="0.4"/>
+          </svg>
+
+          <!-- Top-right -->
+          <svg class="cert-corner cert-corner-tr" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 60 L4 10 Q4 4 10 4 L60 4" stroke="#c07010" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M4 4 L4 22 M4 4 L22 4" stroke="#e8a020" stroke-width="0.8" opacity="0.55"/>
+            <circle cx="4" cy="4" r="4" fill="#d97706"/>
+            <circle cx="4" cy="4" r="2" fill="#fef3c7"/>
+            <path d="M10 4 L4 10 M17 4 L4 17 M24 4 L4 24" stroke="#d97706" stroke-width="0.5" opacity="0.35"/>
+          </svg>
+
+          <!-- Bottom-left -->
+          <svg class="cert-corner cert-corner-bl" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 60 L4 10 Q4 4 10 4 L60 4" stroke="#c07010" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M4 4 L4 22 M4 4 L22 4" stroke="#e8a020" stroke-width="0.8" opacity="0.55"/>
+            <circle cx="4" cy="4" r="4" fill="#d97706"/>
+            <circle cx="4" cy="4" r="2" fill="#fef3c7"/>
+            <path d="M10 4 L4 10 M17 4 L4 17 M24 4 L4 24" stroke="#d97706" stroke-width="0.5" opacity="0.35"/>
+          </svg>
+
+          <!-- Bottom-right -->
+          <svg class="cert-corner cert-corner-br" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 60 L4 10 Q4 4 10 4 L60 4" stroke="#c07010" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M4 4 L4 22 M4 4 L22 4" stroke="#e8a020" stroke-width="0.8" opacity="0.55"/>
+            <circle cx="4" cy="4" r="4" fill="#d97706"/>
+            <circle cx="4" cy="4" r="2" fill="#fef3c7"/>
+            <path d="M10 4 L4 10 M17 4 L4 17 M24 4 L4 24" stroke="#d97706" stroke-width="0.5" opacity="0.35"/>
+          </svg>
+
+          <!-- ── BODY ── -->
+          <div class="cert-body">
+
+            <!-- Top: brand + seal -->
+            <div class="cert-top">
+
+              <!-- Brand -->
+              <div class="cert-brand">
+                <div class="cert-brand-icon">🎓</div>
+                <div>
+                  <span class="cert-brand-name">The Cert Hub</span>
+                  <span class="cert-brand-sub">Toronto, Canada &nbsp;·&nbsp; Humayun Zafar</span>
+                </div>
+              </div>
+
+              <!-- Circular seal (SVG) -->
+              <svg width="108" height="108" viewBox="0 0 108 108" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="gRing" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%"   stop-color="#92400e"/>
+                    <stop offset="40%"  stop-color="#d97706"/>
+                    <stop offset="70%"  stop-color="#f59e0b"/>
+                    <stop offset="100%" stop-color="#92400e"/>
+                  </linearGradient>
+                  <linearGradient id="gInner" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%"  stop-color="#6366f1"/>
+                    <stop offset="50%" stop-color="#8b5cf6"/>
+                    <stop offset="100%" stop-color="#a855f7"/>
+                  </linearGradient>
+                  <!-- Path for top arc text -->
+                  <path id="topArc" d="M 10,54 A 44,44 0 0,1 98,54"/>
+                  <!-- Path for bottom arc text -->
+                  <path id="botArc" d="M 14,58 A 40,40 0 0,0 94,58"/>
+                </defs>
+
+                <!-- Outer decorative ring background -->
+                <circle cx="54" cy="54" r="52" fill="url(#gRing)" opacity="0.12"/>
+                <!-- Main outer ring stroke -->
+                <circle cx="54" cy="54" r="52" fill="none" stroke="url(#gRing)" stroke-width="2.2"/>
+                <!-- Tick marks on ring -->
+                <circle cx="54" cy="54" r="48" fill="none" stroke="#d97706" stroke-width="0.5" stroke-dasharray="2 4.2" opacity="0.5"/>
+
+                <!-- Stars at compass points -->
+                <text x="54" y="5.5"  text-anchor="middle" font-size="7" fill="#c07010">✦</text>
+                <text x="54" y="106" text-anchor="middle" font-size="7" fill="#c07010">✦</text>
+                <text x="4"  y="56.5" text-anchor="middle" font-size="6" fill="#c07010">✦</text>
+                <text x="104" y="56.5" text-anchor="middle" font-size="6" fill="#c07010">✦</text>
+
+                <!-- Circular text — top arc -->
+                <text font-family="'Inter', sans-serif" font-size="8.5" font-weight="800" letter-spacing="3.2" fill="#92400e">
+                  <textPath href="#topArc" startOffset="6%">THE CERT HUB</textPath>
+                </text>
+                <!-- Circular text — bottom arc -->
+                <text font-family="'Inter', sans-serif" font-size="7.2" font-weight="700" letter-spacing="1.4" fill="#92400e">
+                  <textPath href="#botArc" startOffset="3%">CERTIFICATE OF COMPLETION</textPath>
+                </text>
+
+                <!-- Inner indigo circle -->
+                <circle cx="54" cy="54" r="32" fill="url(#gInner)" opacity="0.10"/>
+                <circle cx="54" cy="54" r="32" fill="none" stroke="url(#gInner)" stroke-width="1.2"/>
+                <circle cx="54" cy="54" r="29" fill="none" stroke="rgba(99,102,241,0.25)" stroke-width="0.6"/>
+
+                <!-- Graduation cap -->
+                <text x="54" y="50" text-anchor="middle" font-size="20">🎓</text>
+                <!-- Year -->
+                <text x="54" y="63" text-anchor="middle"
+                      font-family="'Plus Jakarta Sans', sans-serif"
+                      font-size="8.5" font-weight="900" fill="#4338ca" letter-spacing="1.5">2026</text>
+              </svg>
+            </div>
+
+            <!-- Gold rule with diamond -->
+            <div class="cert-rule"></div>
+
+            <!-- Title -->
+            <div class="cert-title">Certificate &nbsp;of &nbsp;Completion</div>
+
+            <!-- ── Central group: vertically centred in the remaining height ── -->
+            <div class="cert-center">
+
+              <!-- Presented to -->
+              <div class="cert-presented">This is to certify that</div>
+
+              <!-- Recipient name -->
+              <div class="cert-name" id="certName">Jane Doe</div>
+
+              <!-- Completion text -->
+              <div class="cert-completion">has successfully completed all modules and passed the final assessment in</div>
+
+              <!-- Course name -->
+              <div class="cert-course" id="certCourse">AI Digital Marketing — Strategist</div>
+
+              <!-- Distinction -->
+              <div class="cert-distinction">
+                <span class="cert-distinction-pill">✦ &nbsp; With Distinction &nbsp; ✦</span>
+              </div>
+
+            </div><!-- /cert-center -->
+
+            <!-- Bottom row -->
+            <div class="cert-bottom">
+
+              <!-- Meta -->
+              <div class="cert-meta">
+                <div class="cert-meta-item">
+                  <span class="cert-meta-label">Date Issued</span>
+                  <span class="cert-meta-val" id="certDate">June 5, 2026</span>
+                </div>
+                <div class="cert-meta-item">
+                  <span class="cert-meta-label">Certificate ID</span>
+                  <span class="cert-meta-val" id="certId">CHC-2026-00001</span>
+                </div>
+                <div class="cert-meta-item">
+                  <span class="cert-meta-label">Verify at</span>
+                  <span class="cert-meta-val">cert-hub.pages.dev/verify</span>
+                </div>
+              </div>
+
+              <!-- Gold standard -->
+              <div class="cert-gs">
+                Built to the gold standard of<br>
+                <strong>Cornell · Harvard · Princeton · Stanford</strong>
+              </div>
+
+              <!-- Signature -->
+              <div class="cert-sig">
+                <div class="cert-sig-flourish">
+                  <!-- Ink flourish SVG -->
+                  <svg class="cert-sig-ink" viewBox="0 0 170 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M 5 22 C 20 8, 35 4, 55 12 C 70 18, 80 6, 100 10 C 118 13, 130 5, 155 14"
+                          stroke="#1e1b4b" stroke-width="1.8" fill="none" stroke-linecap="round" opacity="0.75"/>
+                    <path d="M 90 10 C 96 4, 104 3, 108 8"
+                          stroke="#1e1b4b" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.5"/>
+                  </svg>
+                  <div class="cert-sig-line"></div>
+                </div>
+                <div class="cert-sig-name">Humayun Zafar</div>
+                <div class="cert-sig-role">Founder &amp; Lead Instructor · The Cert Hub</div>
+              </div>
+
+            </div>
+          </div><!-- /cert-body -->
+
+        </div><!-- /certificate -->
+      </div><!-- /drop-shadow -->
+    </div><!-- /scale-outer -->
+  </div><!-- /scale-wrapper -->
+
+  <!-- Small note below -->
+  <p class="cert-note" style="font-size:12px; color:#6366f1; opacity:0.65; text-align:center; max-width:600px;">
+    Preview only — not for production use. Once approved, this template will be integrated into the site and populated per student.
+  </p>
+
+  <script>
+    /* Scale certificate to fit viewport width */
+    function scaleCert() {
+      var outer = document.getElementById('scaleOuter');
+      var certW = 1050;
+      var available = Math.min(window.innerWidth - 40, 1090);
+      var scale = available / certW;
+      if (scale >= 1) { outer.style.transform = ''; outer.style.marginBottom = ''; return; }
+      outer.style.transform = 'scale(' + scale + ')';
+      outer.style.transformOrigin = 'top center';
+      /* collapse dead space after the scaled element */
+      var certH = 742;
+      var gap = certH - certH * scale;
+      outer.style.marginBottom = '-' + gap + 'px';
+    }
+    scaleCert();
+    window.addEventListener('resize', scaleCert);
+
+    /* Toggle dark preview shell */
+    function toggleDark() {
+      var cert = document.getElementById('cert');
+      if (cert.style.background === 'rgb(15, 23, 42)') {
+        cert.style.background = '';
+        cert.style.colorScheme = '';
+      } else {
+        cert.style.background = '#0f172a';
+      }
+    }
+  </script>
+</body>
+</html>
