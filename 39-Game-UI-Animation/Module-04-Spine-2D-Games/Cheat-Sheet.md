@@ -116,3 +116,57 @@ e.Complete += _ => skeletonAnim.AnimationState.ClearTrack(1);
 | IK is always better | FK gives more control over arc and timing; use IK for endpoints |
 | 4 influences on mobile | Mobile GPU limit is 2 — exceeding it moves to CPU (slow) |
 | Spine is indie-only | Hollow Knight, Dead Cells, Fate/Grand Order disprove this |
+| JSON in production builds | Use .skel binary — 3–5× smaller, faster load |
+| Non-power-of-two atlas | GPU can't compress it — wastes VRAM; always use power-of-two |
+
+---
+
+## 📊 Spine Bone Count Case Studies
+
+| Game | Character | Bone Count | Key Extra Bones | Rationale |
+|---|---|---|---|---|
+| Hollow Knight | The Knight | 28 | 8 for cloak (3-tier sweep) | Cloak = visual signature; earned its cost |
+| Dead Cells | Enemies | 15–25 | Minimal secondary | Crisp silhouette at speed; secondary is procedural |
+| Fate/Grand Order | Servants | ~20 (standard) | Standardized archetype | 2MB budget per servant; archetypes enforced |
+| Cuphead | Cuphead | N/A (frame-by-frame) | — | Spine used for some effects only |
+
+---
+
+## 🔄 Spine Track System — Quick Reference
+
+| Track | Role | Alpha | Typical Content |
+|---|---|---|---|
+| 0 | Base animation | 1.0 | idle, walk, run — looping |
+| 1 | Action overlay | 0.0–1.0 | attack, interact — one-shot |
+| 2+ | Additional overlays | 0.0–1.0 | face expression, gear equip |
+
+```csharp
+// One-shot attack on track 1, then clear
+TrackEntry e = skeletonAnim.AnimationState.SetAnimation(1, "attack", false);
+e.Alpha = 1f;          // full override
+e.Complete += _ => skeletonAnim.AnimationState.ClearTrack(1);
+```
+
+---
+
+## 📦 Atlas Page Size Budget
+
+| Platform | Max Atlas Page | GPU Compression Format |
+|---|---|---|
+| iOS | 2048×2048 (target: 1024) | ASTC |
+| Android | 2048×2048 (target: 1024) | ETC2 |
+| PC / Console | 4096×4096 | DXT (BCn) |
+| Web | 2048×2048 | WebP or PNG |
+
+> Always power-of-two. Non-PoT textures cannot be GPU-compressed.
+
+---
+
+## ⚡ Dead Cells Procedural Hybrid Breakdown
+
+| Layer | System | What It Does |
+|---|---|---|
+| Keyframe | Spine 2D animation | Defines action archetype (attack swing, walk cycle) |
+| Procedural squash | Code (root bone scale) | ×1.3 width / ×0.7 height on hit impact |
+| Procedural lean | Code (root bone rotate) | Angle proportional to velocity during fast movement |
+| Draw call batch | Custom C runtime | Groups enemies sharing same atlas into one GPU call |

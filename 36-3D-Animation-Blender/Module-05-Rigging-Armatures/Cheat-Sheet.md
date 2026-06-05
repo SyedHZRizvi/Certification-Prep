@@ -93,3 +93,81 @@ title: "Module 5 Cheat Sheet: Rigging & Armatures"
 - Toggle visibility per collection from Armature Properties
 - Rigify uses: DEF, ORG, MCH, and named CTRL collections
 - Create custom collections: Armature Properties → Bone Collections → "+"
+
+---
+
+## Bone Constraint Reference
+
+| Constraint | Use Case |
+|---|---|
+| Inverse Kinematics | Foot/hand planting; chain solver |
+| Copy Rotation | Eye tracking, secondary follow |
+| Limit Rotation | Prevent hyperextension |
+| Track To | Eye aim, camera tracking |
+| Stretch To | Stretchy IK limbs |
+| Child Of | Character holding a prop |
+| Spline IK | Tails, tentacles, hair chains |
+| Floor | Foot not clipping through ground |
+
+---
+
+## NLA Editor Key Terms
+
+| Term | Definition |
+|---|---|
+| Action | Named set of F-Curves (one performance) |
+| Strip | Instance of an Action on the NLA timeline |
+| Push Down | Commit action to NLA, free action slot |
+| Tweak Mode | Edit strip's keyframes in Action Editor |
+| Blend In / Out | Frame fade at strip start/end |
+| Extrapolation | Behavior beyond strip bounds |
+
+**NLA Blend Types:** Replace (override lower) → Combine (additive, most useful) → Add → Subtract → Multiply
+
+---
+
+## Rigging Method Comparison
+
+| Method | Setup Time | Best For |
+|---|---|---|
+| Manual FK bones | Fast | Props, cameras |
+| Manual IK chains | Medium | Small characters |
+| Rigify | 30–60 min | All humanoids |
+| Spline IK | 30 min | Tails, snakes, hair |
+| Shape key only | Variable | Facial morphs |
+
+---
+
+## Python API for Armatures
+
+| Expression | Result |
+|---|---|
+| `rig.pose.bones["UpperArm.L"]` | Pose bone access (animated state) |
+| `rig.data.bones["UpperArm.L"]` | Edit bone access (rest pose geometry) |
+| `bpy.ops.pose.rot_clear()` | Clear all rotation on selected pose bones |
+| `pbone.rotation_mode = 'QUATERNION'` | Switch to quaternion rotation (no gimbal lock) |
+
+---
+
+## Face Rigging Region Assignment
+
+| Face Region | Control Type |
+|---|---|
+| Jaw | Bone (jaw bone) |
+| Eyelid blink | Shape key (driven by bone) |
+| Brow raise/lower | Bone + shape key for detail |
+| Lip corners | Shape key only |
+| Nostril flare | Shape key only |
+| Cheek puff | Shape key only |
+
+---
+
+## Gotcha Quick Reference
+
+| Gotcha | Fix |
+|---|---|
+| IK/FK popping on switch | Use Rigify Snap IK→FK before switching |
+| Rigify rig wrong scale | Apply Scale on both mesh and Meta-Rig before Generate |
+| Bone roll incorrect | Edit Mode → Ctrl+N → Recalculate Roll |
+| Pole angle wrong | Test in T-pose; adjust Pole Angle on IK constraint |
+| Applying Armature modifier mid-animation | Never apply it during animation; only for game export |

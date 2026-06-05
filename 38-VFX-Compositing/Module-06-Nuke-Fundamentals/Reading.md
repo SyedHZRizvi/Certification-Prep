@@ -73,7 +73,7 @@ The fundamental compositing operation. Merges two image streams (A and B) using 
 | **from** | B − A | Subtraction |
 | **difference** | |A − B| | Difference matte generation |
 
-> 🎯 **Exam Tip:** The **over** operation is `A + B × (1 − alpha_A)`. This is the mathematical foundation of compositing — alpha defines how much of B shows through where A is transparent. **MEMORIZE THIS.**
+> 🎯 **What the exam tests:** The **over** operation is `A + B × (1 − alpha_A)`. This is the mathematical foundation of compositing — alpha defines how much of B shows through where A is transparent. **MEMORIZE THIS.**
 
 ### Grade Node
 
@@ -168,6 +168,59 @@ Multi-channel EXR files contain all AOV passes in a single file. In Nuke:
 
 ---
 
+## 🎬 Case Study: Avatar — Nuke at Scale in a 400-Node Script
+
+The *Avatar* production at Weta Digital established the practices that define professional Nuke organization today. With hero shots containing hundreds of CG elements, a disorganized Nuke script was functionally unusable. Weta's compositing department developed organizational conventions that are now industry standard:
+
+### The Weta Script Organization Model
+
+| Section | Color-Coded Backdrop | Contents |
+|---------|---------------------|---------|
+| INPUTS | Blue | All Read nodes — plate, CG beauty, all AOV passes, DMP elements |
+| PREP | Yellow | Plate undistortion, color space conversions, lens distortion removal |
+| KEYING | Orange | All keyer nodes, holdout mattes, roto nodes |
+| CG INTEGRATION | Green | Shuffle nodes for AOV extraction, Grade nodes for CG matching, Merge-over operations |
+| ATMOSPHERICS | Purple | Haze, depth-fog, Z-depth-based blur, atmospheric elements |
+| GRADING | Red | Final technical color grade — matching composite to plate |
+| OUTPUT | White | Write nodes, deliverable transforms |
+
+> 🎯 **What the exam tests:** In professional Nuke scripts, backdrops organize sections by color; Dot nodes route wires without operations; Groups encapsulate complex multi-node operations into single boxes; Gizmos are reusable custom tools shared across productions.
+
+### Node Tree Optimization for Large Shots
+
+A 400-node Nuke script without optimization renders slowly and is hard to navigate. Weta's and ILM's compositing supervisors enforce optimization rules:
+
+| Problem | Symptom | Fix |
+|---------|---------|-----|
+| Redundant Grade nodes | Three Grades in series where one would do | Merge Grade parameters into a single node |
+| Un-cached heavy operations | Blur/defocus recalculating every frame | Enable caching on expensive nodes |
+| Unnecessary high-res processing | Full-res ops on elements that will be small in frame | Process at 1/2 res, then scale up for output |
+| Long wire chains without labels | Impossible to trace what channel flows where | Insert Dot nodes with text labels at branch points |
+| Untrimmed Read nodes | Read node loads entire multi-channel EXR even if only one pass is needed | Shuffle immediately after Read; route only needed channels |
+
+---
+
+## 🖥️ GPU vs CPU Compositing: Performance Trade-offs
+
+Modern Nuke versions (13+) support GPU acceleration for select operations. Understanding the performance model is an exam-level topic:
+
+| Operation | GPU Accelerated | CPU Only | Notes |
+|-----------|----------------|---------|-------|
+| Blur (Gaussian) | Yes | Fallback | GPU substantially faster at large radii |
+| Merge | Yes | Fallback | GPU benefits most at 4K+ resolution |
+| Grade / ColorCorrect | Yes | Fallback | Simple math — GPU bandwidth advantage |
+| Deep compositing | No | Yes | Deep image processing is CPU-bound |
+| Keyer (Keylight equivalent) | Yes | Fallback | |
+| Z-depth defocus (ZDefocus) | Yes | Fallback | High GPU VRAM requirement |
+| Python scripting / automation | No | Yes | Python runs on CPU only |
+| Roto/RotoPaint | No | Yes | Bezier spline math is CPU-bound |
+
+> 🎯 **What the exam tests:** GPU acceleration in Nuke is not universal — deep compositing and roto are CPU-bound regardless of GPU. A render farm running Nuke without GPU acceleration is still fully functional for complex pipeline work; GPU acceleration primarily benefits final-output rendering speed, not script development.
+
+> ⚠️ **Rookie mistake:** Assuming Nuke GPU mode makes the entire comp faster. GPU acceleration only applies to specific nodes. A script bottlenecked on a CPU-bound operation (heavy roto, deep comp, Python) will not benefit from GPU acceleration.
+
+---
+
 ## 🔑 Why Nuke Dominates Film VFX
 
 | Factor | After Effects | Nuke |
@@ -182,7 +235,7 @@ Multi-channel EXR files contain all AOV passes in a single file. In Nuke:
 | GPU rendering | Some effects | Full GPU acceleration |
 | Industry adoption | Broadcast / commercial | Film / high-end streaming (ILM, Weta, Framestore, MPC, Dneg) |
 
-> 🚨 **Industry Trap:** The Foundry offers a **Nuke Non-Commercial** license — free for learning. This gives access to the full Nuke toolset with a watermark on renders. Every serious VFX student should download Nuke Non-Commercial immediately and practice in it alongside After Effects work. Employers at film studios expect Nuke fluency.
+> ⚠️ **Industry Trap:** The Foundry offers a **Nuke Non-Commercial** license — free for learning. This gives access to the full Nuke toolset with a watermark on renders. Every serious VFX student should download Nuke Non-Commercial immediately and practice in it alongside After Effects work. Employers at film studios expect Nuke fluency.
 
 ---
 
@@ -198,6 +251,21 @@ A well-organized Nuke script at a professional studio follows standards that all
 | **Gizmos** | Custom encapsulated tools shared across productions (e.g., a studio's standard light-wrap Gizmo) |
 | **Naming** | Read nodes named after the element they carry (e.g., `Read_plate_hero`, `Read_CG_beast_beauty`) |
 | **Disabled nodes** | Experimental nodes left in the script are disabled (not deleted) during review |
+
+---
+
+## 🎯 What the Exam Tests — Module 6
+
+1. **Over operation formula:** `A + B × (1 − alpha_A)`. Alpha defines how much of B shows through where A is transparent.
+2. **Shuffle node purpose:** Extracts specific named channels from a multi-channel EXR into an RGB image. Required for AOV pass workflow.
+3. **Grade vs ColorCorrect:** Grade = raw gain/offset/gamma controls; ColorCorrect = shadow/midtone/highlight tonal zones. ColorCorrect is more intuitive for colorists.
+4. **Nuke vs AE for film:** Nuke is the film standard because of native scene-linear workflow, multi-channel EXR handling, node graph, Python API, deep compositing, and team collaboration.
+5. **GPU acceleration scope:** Blur, Merge, Grade, Keyer are GPU-accelerated. Deep compositing and Roto/RotoPaint are CPU-only. Python is CPU-only.
+6. **Backdrop purpose:** Organizational color-coded sections in Nuke scripts. Not a compositing operation — purely for navigation and team communication.
+7. **Gizmo definition:** A reusable, encapsulated Nuke tool package shared across productions. Studios build standard Gizmos for light wrap, lens flare, etc.
+8. **Read node colorspace parameter:** Critical — must match the actual encoding of the input file. Wrong colorspace setting causes all downstream color operations to be incorrect.
+9. **Viewer gain/gamma:** Temporary display-only adjustments for checking shadow detail in the Viewer. Do NOT affect the render output.
+10. **Deep compositing:** Available in Nuke; not in After Effects. Used for volumetric renders where multiple CG elements have overlapping depth values (clouds, fog, subsurface-scattering materials).
 
 ---
 
@@ -225,10 +293,76 @@ Module 7 covers color grading — the science and art of the final color pass. Y
 
 ---
 
+## 📊 Full Nuke Vocabulary Reference
+
+| Term | Definition |
+|------|-----------|
+| DAG | Directed Acyclic Graph — the mathematical model for Nuke's node graph |
+| Node | A single image-processing operation with one or more inputs and one output |
+| Wire | The connection between nodes carrying an image stream |
+| Backdrop | Non-processing node used to label and color-code sections of the graph |
+| Dot | A wire routing node that carries an image stream without processing it |
+| Group | A container encapsulating multiple nodes into a single box |
+| Gizmo | A reusable custom tool package; a Group with a locked interface |
+| AOV | Arbitrary Output Variable — a named channel in a multi-channel EXR |
+| Shuffle | A node that extracts and reroutes specific channels from an EXR stream |
+| Pre-multiply | RGB channels multiplied by alpha — standard for EXR from renderers |
+| Half-float | 16-bit floating point precision — standard for EXR intermediate files |
+| Full-float | 32-bit floating point — used for critical calculations (deep comp, relighting) |
+| Scene-linear | Color encoding where values are proportional to physical light — required for all compositing math |
+| Deep compositing | Compositing using per-pixel depth information for correct volumetric rendering |
+| Viewer LUT | Display transform applied only in the Viewer — does NOT affect the render |
+| Expression linking | Driving one node's parameter by the value of another node's parameter |
+| Python API | Nuke's full Python scripting interface for automation and pipeline tools |
+| Write node | Renders the upstream node graph to image sequences on disk |
+
+---
+
 ## 📚 Further Reading
 
 - **The Foundry Nuke User Guide** — official documentation; free at learn.foundry.com/nuke
 - **"The VES Handbook of Visual Effects" — Chapter 4: Compositing** — professional pipeline context for Nuke workflows
 - **"Digital Compositing for Film and Video" — Steve Wright** — the mathematical foundations behind Nuke's Merge operations
-- **NukeX tutorials by The Foundry (YouTube)** — official tutorial series covering every major node and workflow
+- **NukeX tutorials by The Foundry** — official tutorial series covering every major node and workflow
 - **nukepedia.com** — community resource for Nuke gizmos, scripts, and tutorials
+
+
+---
+
+## 🏭 Production Context: When and Why
+
+### The Professional Decision Framework
+
+Every technique in this module gets applied within a production pipeline that has three hard constraints:
+1. **Time** — Everything has a deadline; perfection isn't the goal, ship quality is
+2. **Budget** — Software licenses, render time, and revision cycles all cost money
+3. **Compatibility** — Your output must integrate with other departments' workflows
+
+Understanding this framework shapes how professionals apply the techniques you've learned:
+
+| Context | Priority order | How this module's technique adapts |
+|---|---|---|
+| AAA game studio | Performance, then quality | Approximations and LODs |
+| Feature film | Quality, then time | Extensive iteration |
+| Ad agency | Time, then client satisfaction | Templates and presets |
+| Indie/solo | Budget, then quality | Smart shortcuts |
+
+### Career Progression Map for This Skill
+
+**Junior level ($45K–$75K):** Execute the technique correctly following direction. Output matches specifications. Few errors.
+
+**Mid level ($75K–$110K):** Make judgment calls about technique selection. Lead small projects. Train junior staff.
+
+**Senior level ($110K–$160K):** Define the technical approach for a project. Solve novel problems. Set quality standards.
+
+**Lead/Director ($160K+):** Own the creative vision. Balance creative and business constraints. Hire for the role.
+
+### How This Has Changed in 2025–2026
+
+The techniques in this module are stable — the fundamentals haven't changed — but the tools have evolved significantly:
+- **AI-assisted pre-production** reduces planning time by 20–40% at studios that have adopted it
+- **Real-time rendering** has made interactive feedback loops possible at higher fidelity
+- **Remote collaboration** tools have changed how feedback travels from supervisors to animators
+- **Subscription software** has changed the cost structure for small studios and freelancers
+
+---

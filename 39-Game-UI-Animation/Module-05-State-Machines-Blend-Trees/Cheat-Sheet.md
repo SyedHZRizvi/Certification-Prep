@@ -111,3 +111,57 @@ Coyote Time:  Grace window 0.1–0.15s at ledge before fall state
 | Additive uses full pose | Author additive clips as deltas from reference pose |
 | Freeform 2D for stylized anim | Use Simple Directional if you control exact directions |
 | Coyote time not animated | Add edge-peek state; don't snap walk → fall |
+| Bool for death state | Use Trigger — Bool keeps re-triggering death loop |
+| Same blend time for all transitions | Use asymmetric blend times — raise ≠ lower; dodge ≠ walk |
+
+---
+
+## 🎮 Hades Enemy Interrupt Budget Reference
+
+| Enemy Type | Attack | Interrupt Budget |
+|---|---|---|
+| Wretched Butcher | Shield bash | 12 frames |
+| Inferno Bomb | Explosion | 18 frames |
+| Blood-Drunk Thug | Overhead smash | 6 frames |
+| Skull-Crusher | Charge | 10 frames |
+| Boss (Megaera) | Multi-hit whip | 4 frames per hit |
+| Studio minimum | Any attack | **4 frames** (below this feels like hitscan) |
+
+---
+
+## 🎯 Transition Priority Design Guide
+
+| Action | Interruption Source | Blend Time | Priority |
+|---|---|---|---|
+| Dodge / Roll | Current State | 0.04–0.07s | High |
+| Attack (light) | Current State | 0.05–0.10s | Medium-high |
+| Attack (heavy/committed) | None | 0.05s | Medium |
+| Death | None (terminal) | 0.10s | Highest via AnyState |
+| Knockdown | None | 0.10s | High via AnyState |
+| Idle → Walk | Current State | 0.15–0.20s | Low |
+| Walk → Run | Current State | 0.10–0.15s | Low |
+
+---
+
+## 📊 State Machine Architecture Decision Table
+
+| Architecture | States | Transitions | Maintainability | Use When |
+|---|---|---|---|---|
+| Flat FSM | All root-level | Direct | Low above 15 states | Prototype / simple character |
+| Hub-and-spoke | Central idle/loco + action branches | Hub as source | Medium | Most action games |
+| Hierarchical Sub-State | Grouped in sub-machines | Fewer visible | High | Complex locomotion (Grounded/Airborne) |
+| Layered | Per-layer FSMs | Independent | High | Body + upper body; weapon layers |
+| Pushdown Automaton | Stack-based | Push/pop | Medium | Menus, dialogue trees |
+
+---
+
+## ⚡ Destiny 2 ADS State Machine Reference
+
+```
+Hip Fire Idle
+  → [ADS trigger] → ADS Raise (0.20s blend) → ADS Idle (loop)
+  → [Fire trigger in ADS] → ADS Fire (0.10s blend, 0.15s clip)
+  → [ADS release] → ADS Lower (0.15s) → Hip Fire Idle
+```
+
+Key: Raise > Lower in blend time (deliberate feel difference = asymmetric blend times)

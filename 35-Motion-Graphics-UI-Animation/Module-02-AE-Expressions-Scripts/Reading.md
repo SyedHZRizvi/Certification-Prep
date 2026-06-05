@@ -267,6 +267,36 @@ random(0, 100)
 
 ---
 
+## 🎯 What the Exam Tests: Expressions
+
+> 🎯 **Exam Callout 1:** `time` is always in **seconds**, never frames. A common exam trap: "what does `time * 24` return in a 24fps comp?" Answer: the current frame number — but it's a calculation, not a built-in property.
+
+> 🎯 **Exam Callout 2:** `wiggle(frequency, amplitude)` — the exam tests parameter order. Frequency FIRST, amplitude SECOND. Not the other way. `wiggle(2, 30)` = 2 cycles per second, ±30 units. `wiggle(30, 2)` = 30 cycles per second, ±2 units — a very fast, tiny vibration.
+
+> 🎯 **Exam Callout 3:** `loopOut("cycle")` loops AFTER the last keyframe. `loopIn("cycle")` loops BEFORE the first keyframe. The exam may ask which function creates a loop before keyframes begin — it's `loopIn()`, not `loopOut()`.
+
+> 🎯 **Exam Callout 4:** `valueAtTime(t)` evaluates a property at any composition time `t`. When `t = time - 0.3`, you get the value from 300ms ago — creating a delayed echo effect. The exam tests whether `t` is in seconds or frames: it's always **seconds**.
+
+> 🎯 **Exam Callout 5:** The `index` property starts at **1**, not 0. The topmost layer in the AE stack has `index = 1`. This trips up developers who expect 0-based indexing.
+
+> 🎯 **Exam Callout 6:** Expression Controls (Slider, Color, Checkbox, etc.) are applied as **Effects**, not as Properties. They live under the layer's Effect property in the timeline. Expressions reference them via `effect("Name")("attribute")`.
+
+> 🎯 **Exam Callout 7:** `seedRandom(seed, timeless)` with `timeless = true` returns the same random value every frame. Without `timeless` (or with `false`), it returns a different value every frame. The exam tests: which parameter makes random values stable?
+
+---
+
+## ⚠️ Common Traps: Expressions
+
+**Trap 1 — String Quotes in `loopOut()`:** `loopOut(cycle)` without quotes is a JavaScript error — AE will look for a variable named `cycle` and fail. Always quote the loop type: `loopOut("cycle")`.
+
+**Trap 2 — The `rotation` vs `transform.rotation` distinction:** In expressions, you reference properties by their internal name. From another layer: `thisComp.layer("Name").transform.rotation`. On the same layer: just `rotation`. Students frequently write `transform.rotation` when referencing the current layer's own rotation, which fails.
+
+**Trap 3 — `wiggle()` on Multi-Value Properties:** `wiggle(2, 30)` on a Position property returns a 2D array `[x, y]`. On a 1D property (Rotation, Opacity), it returns a single number. If you apply a 2D wiggle to a 1D property without unpacking it, you get an error.
+
+**Trap 4 — Performance with Complex Expressions:** Expressions run on every frame during RAM preview and render. Complex expressions (especially those referencing many other layers via `thisComp.layer()`) can make previews extremely slow. The exam may ask how to improve expression performance — the answer is to bake expressions to keyframes once the animation is locked (Layer > Pre-compose or Keyframe Assistant > Convert Expressions to Keyframes).
+
+---
+
 ## 🔨 Scriptlets for Animators
 
 Scriptlets are AE scripts (ExtendScript) that automate repetitive tasks. Unlike expressions (which run live on every frame), scripts run once when executed.
@@ -340,6 +370,23 @@ value.toLocaleString()
 
 ---
 
+## 📊 Plugin and Script Matrix
+
+| Tool | Type | Cost | Best For | Replaces |
+|------|------|------|----------|---------|
+| **Ease and Wizz** | Script | Free | One-click spring/bounce easing expressions | Manual graph editor work |
+| **Motion2** | Script | Free | Graph editor UI overlay | AE's built-in graph editor |
+| **Spring (Jake In Motion)** | Script | Free | Single spring expression application | Writing spring expressions manually |
+| **aescripts Motion Tools** | Script | $49 | Keyframe management, graph editor | Multiple individual scripts |
+| **Keysmith** | Script | $69 | Master controller builder with UI | Custom expression rigs |
+| **Overlord** | Script | $45 | Illustrator → AE shape transfer | Manual recreation of AI artwork |
+| **Flow** | Script | $39 | Custom easing curve library | Custom bezier expressions |
+| **Rubberhose 3** | Script | $99 | Character rigging in AE | Manual IK rigging expressions |
+| **Duik Ángela** | Script | Free | Full character rigging and IK | Manual rigging |
+| **ButtCapper** | Script | Free | Stroke cap/join control | Expression-based stroke tricks |
+
+---
+
 ## 🔗 Practical Expression Workflow
 
 1. **Build first with keyframes.** Test the timing and feel before adding expressions. Expressions are harder to debug than keyframes.
@@ -370,10 +417,25 @@ value.toLocaleString()
 
 ---
 
+## 🗣️ Socratic Discussion Questions
+
+1. Expressions run on every frame during render. Keyframes are pre-computed. If you're building a 47-lower-third broadcast package, when would you choose to bake your expressions to keyframes vs keep them live?
+
+2. The Master Controller pattern uses a single null object to drive dozens of layers. What happens when that null is accidentally deleted? How do you build expression systems that degrade gracefully?
+
+3. `wiggle()` uses Perlin noise — deterministic pseudo-random numbers. If two elements use `wiggle(2, 30)` with no seed offset, they will wiggle identically. Is that a bug or a feature in most use cases?
+
+4. The `index` property changes when layers are reordered. How does this affect index-based stagger systems? What happens to a 20-layer stagger system when you add a new layer in the middle?
+
+5. Scripts run once; expressions run every frame. If you needed to build a system where 200 layers each respond to a different external data value (from a CSV), would you use scripts or expressions, and why?
+
+---
+
 ## 📚 Further Reading
 
-- [After Effects Expression Language Reference (Adobe)](https://ae-expressions.docsforadobe.dev/)
-- *After Effects Expressions* — Marcus Geduld (Focal Press)
-- [Jake In Motion YouTube — Expression Series](https://www.youtube.com/@JakeinMotion)
-- [Mobox Graphics — Expression Essentials Playlist](https://www.youtube.com/@moboxgraphics)
-- [Ease and Wizz Free Script (Vimeo)](https://www.youtube.com/results?search_query=ease+and+wizz+after+effects+free+script)
+- [After Effects Expression Language Reference (Adobe)](https://ae-expressions.docsforadobe.dev/) — the canonical technical reference; bookmark it
+- *After Effects Expressions* — Marcus Geduld (Focal Press, 2010) — the most comprehensive book on AE expressions; covers ECMAScript fundamentals as well as AE-specific APIs
+- *The VES Handbook of Visual Effects* — Jeffrey A. Okun & Susan Zwerman (Focal Press) — covers technical compositing workflows that inform advanced expression use
+- [Jake In Motion YouTube — Expression Series](https://www.youtube.com/@JakeinMotion) — the best free expression tutorials online; start with his loopOut and valueAtTime series
+- [Mobox Graphics — Expression Essentials Playlist](https://www.youtube.com/@moboxgraphics) — dense, practical; each video covers one expression concept in under 10 minutes
+- [Ease and Wizz Free Script](https://www.youtube.com/results?search_query=ease+and+wizz+after+effects+free+script) — the most-used free AE script; learn how its expressions work, not just how to apply them

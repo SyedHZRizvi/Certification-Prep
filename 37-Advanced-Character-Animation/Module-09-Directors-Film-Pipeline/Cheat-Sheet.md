@@ -104,3 +104,85 @@ HANDLES: Add 4–8f held pose at start AND end of every shot
 | Approved | Director signed off; technically/creatively complete |
 | ShotGrid | Industry-standard shot tracking software |
 | Anim Sup | Animation Supervisor — your primary pipeline contact |
+
+---
+
+## ShotGrid Status Reference
+
+| Status Code | Meaning | Animator Action |
+|------------|---------|----------------|
+| wtg | Waiting — not yet started | Monitor for assignment |
+| ip | In progress | Update daily with new version |
+| rev | Ready for review | Upload latest version; notify supervisor |
+| fin | Final — approved | DO NOT mark without supervisor approval |
+| hld | On hold | Confirm hold reason with supervisor |
+
+**CRITICAL:** Marking `fin` prematurely triggers downstream departments (FX, lighting, comp) to begin work on unfinished animation. This creates pipeline debt.
+
+---
+
+## Director Communication Style Taxonomy
+
+| Director Background | Communication Style | Translation Approach |
+|-------------------|-------------------|---------------------|
+| Former animator | Technical precision | Take the note exactly as stated |
+| Writer/story | Story language ("character wouldn't do that") | Ask: what objective makes this wrong? |
+| Live-action | Performance language ("more vulnerability") | Translate: which AUs + body posture? |
+| First-time director | Uncertain notes | One clarifying question is critical |
+| Perfectionist | Multiple simultaneous notes | Priority-rank: what affects performance story first? |
+
+---
+
+## Note Conflict Escalation Protocol
+
+```
+SCENARIO: Supervisor note conflicts with Director note
+    ↓
+STEP 1: Do NOT implement either note until conflict surfaced
+    ↓
+STEP 2: Go to supervisor: "Director note asks X; your note asks Y. Can you reconcile?"
+    ↓
+SUPERVISOR RESPONDS:
+  (a) Clarifies misunderstanding → implement clarified version
+  (b) Escalates to Director of Animation for adjudication
+  (c) Schedules 3-party meeting with director
+
+NEVER:  Implement both conflicting notes
+NEVER:  Implement only director note without supervisor awareness
+NEVER:  Ignore either note and submit unchanged
+```
+
+---
+
+## Pixar Dailies Culture Reference
+
+```
+PIXAR EXPECTATION:
+  - All work shown in-progress; ugly early work is normal
+  - Notes are collaborative, not critical in tone
+  - Show something every 1–2 days (hiding = career problem)
+  - Supervisor sees shot 3–5 times before director review
+  - Director should NEVER be surprised by what they see
+
+APPROVED SHOT REVISION PASSES (documented):
+  - Best performances: 5–12 revision passes
+  - Editorial changes force revisions even after approval
+  - First approved pass rarely survives to final film
+```
+
+---
+
+## Module 9 Exam Rapid-Fire
+
+| Question | Answer |
+|---------|--------|
+| "It's too much" translation | Reduce secondary motion; simplify performance |
+| One clarifying question | "Can you point to a specific moment that isn't working?" |
+| How many review sessions to director approval | 3–4 distinct reviews in standard feature pipeline |
+| Rule 2 of revision etiquette | Implement the EXACT note first, even if you disagree |
+| Handles: how many frames | 4–8 frames at shot start AND end |
+| ShotGrid "fin" risk | Triggers downstream departments to begin work on unfinished animation |
+| Approval chain order | Anim Sup → Director of Animation → Director → Producer |
+| Note conflict resolution | Escalate to Director of Animation — do not implement conflicting notes |
+| "Animating to editorial" means | Edit length and cut points confirmed BEFORE blocking begins |
+| Pixar dailies culture key feature | Ugly early work expected; no career stigma for showing in-progress work |

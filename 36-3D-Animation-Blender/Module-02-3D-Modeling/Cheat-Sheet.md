@@ -97,3 +97,55 @@ title: "Module 2 Cheat Sheet: 3D Modeling for Animation"
 | N-gon | Five or more vertex face |
 | Pole | Vertex where more or fewer than 4 edges meet |
 | Loop | Continuous ring or row of edges |
+
+---
+
+## Modifier Stack Order (Top to Bottom)
+
+| Modifier | When to Apply |
+|---|---|
+| **Mirror** | First; work symmetrically |
+| **Boolean** | Early (blocking); retopo result afterward |
+| **Shrinkwrap** | After base mesh is shaped |
+| **Solidify** | Before Subdivision |
+| **Bevel** | Before or after Subdivision (adjust Segments) |
+| **Subdivision Surface** | Near the end; keep unapplied until render |
+| **Armature** | Last (never apply; controls animation) |
+
+> Apply order = top to bottom. A Boolean above Subdivision cuts before smoothing. Reverse the order and Subdivision smooths away the cut.
+
+---
+
+## Catmull-Clark Pole Rules
+
+| Pole Type | Edges at Vertex | Behavior |
+|---|---|---|
+| 3-pole | 3 | Slight pinch; use at end of loops only |
+| 4-pole | 4 | Standard; no artifact |
+| 5-pole | 5 | Slight hardening; acceptable in low-curve areas |
+| 6-pole+ | 6+ | Visible crease artifact; restructure the mesh |
+
+---
+
+## Environment Modeling Shortcuts
+
+| Shortcut | Action |
+|---|---|
+| **Shift+R** | Repeat last action |
+| **Alt+E** | Extrude along normals |
+| **Ctrl+Shift+B** | Vertex bevel |
+| **J** | Connect two verts with edge inside face |
+| **Shift+E** | Set edge crease (sharpen under subsurf) |
+
+---
+
+## Gotcha Quick Reference
+
+| Gotcha | Fix |
+|---|---|
+| Boolean cuts disappear | Boolean must be above Subdivision in stack |
+| Sculpting breaks weight painting | Complete rigging before detailed sculpting |
+| N-gon at joint | Retopo with quads before rigging |
+| Scale not applied before rigging | Ctrl+A → Apply Scale (both mesh and armature) |
+
+*Module complete. See Reading.md for full reference.*

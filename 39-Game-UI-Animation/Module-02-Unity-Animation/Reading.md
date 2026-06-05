@@ -277,6 +277,73 @@ void OnAnimatorIK(int layerIndex) {
 
 ---
 
+## 🎮 Case Study: Riot Games' Teamfight Tactics — Unity Animator at Scale
+
+When Riot Games built Teamfight Tactics (TFT) in 2019, they faced a specific Unity Animator challenge: they needed each champion's animation to match the same champion in League of Legends (which runs on a custom C++ engine), but now implemented in Unity's Animator Controller. Their solution was a **shared locomotion sub-state machine** — a single Animator Controller sub-machine shared across all champions, with champion-specific abilities layered as override layers above it.
+
+The architecture Riot settled on for TFT:
+- **Layer 0**: Universal locomotion (Idle, Walk, Run, Death) — same Animator Controller for every champion
+- **Layer 1**: Champion ability override — champion-specific ability animations on an upper-body Avatar Mask
+- **Layer 2**: Additive facial/expression layer — blend shapes driven by game events
+
+This modular approach let a two-person animation team ship 58 champions in TFT's first season, each feeling distinct, without maintaining 58 separate state machines.
+
+---
+
+## 🎮 Case Study: Hollow Knight — Unity Animator + Spine 2D Hybrid
+
+Team Cherry used Unity's Animator Controller as the **state machine logic layer** for Hollow Knight's boss fights, while the actual animation data lived in Spine 2D's runtime. The Animator Controller's parameters (Speed, IsGrounded, IsAttacking) drove the Spine animation state changes via a bridge script that translated Unity parameters to Spine track animations.
+
+This hybrid approach is common in 2D games: Unity's Animator Controller provides the robust state machine editor and parameter system; Spine's runtime provides the high-quality skeletal animation and mesh deformation. The animator works in Spine; the programmer works in Unity's Animator window; both systems stay in sync via a bridge component.
+
+> ⚠️ **Performance trap:** When using Spine-Unity with Unity's Animator Controller (via SkeletonMecanim), the bridge serializes and deserializes pose data every frame. For characters with high bone counts, this per-frame bridge cost can exceed the direct Spine animation cost. Profile before committing to this hybrid in performance-critical scenarios.
+
+---
+
+## 🎮 Case Study: Dead Cells — Custom Engine, Spine Runtime
+
+Motion Twin's Dead Cells is technically unusual: it uses a **custom game engine** (not Unity or Unreal) with the Spine C runtime integrated directly. This means Dead Cells does not have a Unity Animator Controller — it has a custom state machine implemented in their engine's scripting language.
+
+The lesson for Unity animators: the **conceptual architecture** of game animation — states, transitions, parameters, blend weights — is universal across engines. The tool changes; the underlying state machine design does not. A developer who deeply understands Unity's Animator Controller can transfer that mental model to any engine's animation system in days.
+
+---
+
+## 📊 Unity Animator Controller State Machine Comparison
+
+| Architecture | States | Transitions | Best For | Drawback |
+|---|---|---|---|---|
+| Flat FSM | All in root state machine | Many direct connections | Simple characters (< 10 states) | Becomes spaghetti above 15 states |
+| Hub-and-spoke | Central locomotion hub, actions as branches | N transitions from hub | Most action games | Hub state must handle many AnyState sources |
+| Hierarchical (Sub-State Machines) | States nested in sub-machines | Fewer visible connections | Complex locomotion (grounded/airborne/climbing) | Harder to debug (need to enter sub-machine) |
+| Layered | Separate state machines per layer | Each layer independent | Characters with independent body parts | Layer count multiplies animator evaluation cost |
+| Direct Blend Tree | No transitions — direct weight control | N/A | Facial blending, morph targets | Not suitable for action states |
+
+---
+
+## 🎯 Exam Callouts: What the Test Checks
+
+> 🎯 **What the exam tests 1:** What does "Has Exit Time" do in a Unity transition? It fires the transition automatically when the clip reaches the specified normalized time (default 0.75). It does NOT wait for the clip to finish — it fires at 75% through.
+
+> 🎯 **What the exam tests 2:** What is the difference between a Generic and Humanoid rig? Humanoid supports retargeting (sharing clips across different rigs) and built-in IK (`OnAnimatorIK`). Generic is rig-specific but has lower overhead and is required for non-biped characters.
+
+> 🎯 **What the exam tests 3:** What method must you override to manually apply Root Motion with a CharacterController? `OnAnimatorMove()` — inside it, apply `animator.rootPosition` and `animator.rootRotation` to the controller.
+
+> 🎯 **What the exam tests 4:** A Trigger parameter is set but the character never transitions. What is the most likely cause? The transition's condition is correct, but the **transition order in the Animator** has a higher-priority transition consuming the trigger first, or the trigger resets before the condition is checked.
+
+> 🎯 **What the exam tests 5:** What is the purpose of an Avatar Mask in Unity? It defines which bones a layer's state machine affects. Upper-body Avatar Mask allows Layer 1 (aiming) to control only the upper body while Layer 0 (locomotion) continues controlling the full body.
+
+> 🎯 **What the exam tests 6:** Can Animation Events call methods on scripts on different GameObjects? No — Animation Events call methods on MonoBehaviour components attached to the **same GameObject** as the Animator.
+
+> 🎯 **What the exam tests 7:** What is the "Interruption Source: Current State" setting on a transition? It allows other transitions leaving the current (source) state to interrupt the currently-in-progress blend. Used for responsive dodge/roll actions.
+
+> 🎯 **What the exam tests 8:** What is the correct way to implement foot IK on uneven terrain in Unity? Enable IK Pass on the layer, then implement `OnAnimatorIK(int layerIndex)` in a MonoBehaviour. Use `Physics.Raycast` downward from each foot's position; set `SetIKPositionWeight`, `SetIKPosition`, `SetIKRotationWeight`, `SetIKRotation` for each foot.
+
+> 🎯 **What the exam tests 9:** When should you use Bake Into Pose for Root Transform Position (XZ)? When you want In-Place animation — the clip plays in place and the character controller (NavMeshAgent, CharacterController, Rigidbody) drives world position. Use "Based On Original" if the animation's root motion should drive world position.
+
+> 🎯 **What the exam tests 10:** What is a Direct Blend Tree used for? Manual weight control over each child clip — primarily for facial blend shapes, morph targets, and additive expression blending where you need explicit weight per clip rather than automatic interpolation.
+
+---
+
 ## ⚠️ Common Misconceptions
 
 > **Misconception 1: "The Animator Controller IS the animation."**

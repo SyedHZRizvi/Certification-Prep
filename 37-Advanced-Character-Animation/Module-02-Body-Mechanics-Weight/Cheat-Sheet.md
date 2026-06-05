@@ -99,3 +99,67 @@ COG shifts BEFORE every major action (lift, jump, punch, push)
 | Staged fall | Animated fall 2–3× longer than real |
 | Animated physics | Exaggerated real physics for emotional feel |
 | Ground reaction | Feet press harder into ground at force initiation |
+
+---
+
+## IK / FK Switching Reference
+
+| Situation | Use IK | Use FK |
+|-----------|--------|--------|
+| Foot or hand on surface | YES — stays planted | No |
+| Arm swinging freely | Rarely | YES — natural arc |
+| Jump apex (mid-air) | Hip IK only for root | Limbs in FK |
+| Picking up object | IK at contact frame | FK for reach arc |
+| Quadruped walk | IK on contact frames | FK for swing phase |
+
+**Switch rule:** Always switch on a HELD POSE, never during motion.
+
+---
+
+## Fur/Cloth Simulation Awareness (RenderMan / Brave)
+
+```
+SIMULATION ADDS:
+  → Apparent delay in secondary motion
+  → 10–20 frames of additional settle after contact
+  → Amplification of any foot slides in base animation
+
+COMPENSATE BY:
+  → Reducing anticipation amplitude (sim adds its own pre-tension)
+  → Ending settle frames cleanly (sim adds its own trailing settle)
+  → Eliminating all foot slides BEFORE simulation (sim amplifies them)
+
+BRAVE / MERIDA PIPELINE:
+  1. Block with low-res proxy hair
+  2. Run sim → review interpretation
+  3. Return to animation to adjust timing
+  4. Iterate 2–3 times before final
+```
+
+---
+
+## Arcs vs. Straight Lines Reference
+
+| Situation | Arc Required | Straight Line / Smear OK |
+|-----------|-------------|------------------------|
+| Naturalistic acting | Always | Never |
+| Object in air (parabola) | Required | Never |
+| Fast impact (speed lines) | Sometimes | 1–2 frames maximum |
+| Stylized / Spider-Verse | Per style guide | Per style guide |
+| Hand during fast swing | Arc visible throughout | Smear at peak speed |
+
+---
+
+## Module 2 Exam Rapid-Fire
+
+| Question | Answer |
+|---------|--------|
+| COG location (biped) | Pelvis, ~55% of total body height |
+| COG path during walk (vertical) | Inverted arc — rises at mid-stride, falls at contact |
+| Most common COG miss in walk | Lateral translation without vertical arc |
+| Drag vs. follow-through | Drag resists motion starting; follow-through resists motion stopping |
+| Punch power source | Ground → foot → hip → torso → shoulder → arm (arm is LAST) |
+| Gallop aerial error analogy | Placing aerial at stretched position not gathered |
+| Pancake error | Rigid-unit fall; fix: hips lead, head trails 4–6f |
+| RenderMan fur effect on animation | Adds apparent lag; amplifies foot slides; animator must compensate upstream |
+| IK/FK switch timing | Always on a held pose, never during motion |

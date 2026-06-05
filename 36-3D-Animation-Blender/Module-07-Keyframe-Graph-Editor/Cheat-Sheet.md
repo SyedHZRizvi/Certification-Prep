@@ -98,3 +98,53 @@ title: "Module 7 Cheat Sheet: Keyframe Animation & Graph Editor"
 2. **Step 2 — Director approval:** Timing and poses locked
 3. **Step 3 — Spline conversion:** Switch to Bezier; clean Graph Editor curves
 4. **Step 4 — Polish:** Adjust handles; add overlap, follow-through, secondary motion
+
+---
+
+## F-Curve Modifiers Reference
+
+| Modifier | Key Use | Mode Options |
+|---|---|---|
+| **Cycles** | Loop walk cycles, repeat any action | Repeat / Repeat with Offset / Mirrored |
+| **Noise** | Camera shake, organic jitter, cloth pre-sim | Scale, Strength, Phase |
+| **Envelope** | Fade secondary motion in/out | Min/Max curve |
+| **Stepped Interpolation** | Stop-motion aesthetic, stepped blocking view | Step Size (frames) |
+| **Limits** | Clamp output to anatomical range | Min Value / Max Value |
+
+**Cycles modifier — Repeat vs. Repeat with Offset:**
+- **Repeat:** Character teleports back to start position each cycle
+- **Repeat with Offset:** Character moves forward by stride distance each cycle (correct for locomotion)
+
+---
+
+## 12 Principles: Blender Tools
+
+| Principle | Blender Implementation |
+|---|---|
+| Squash & Stretch | Scale keyframes on Y (up) / Y (down) |
+| Anticipation | Small reverse key 4–8 frames before main action |
+| Follow Through | Overshoot past final value → settle back |
+| Overlapping Action | Secondary parts keyframed 4–8 frames later |
+| Slow In / Slow Out | Flat handles at keyframes (Auto handle type) |
+| Arcs | Review in viewport playback; use Onion Skin |
+| Exaggeration | Push curve values 120–150% beyond realistic |
+| Timing | Dope Sheet spacing: more frames = slower |
+
+---
+
+## NLA Track Priority Rule
+
+Higher tracks override lower tracks (Blend Type: Replace).
+- **Bottom tracks:** repeating cycles (breathing, idle)
+- **Top tracks:** specific shot gestures and actions
+
+---
+
+## Gotcha Quick Reference
+
+| Gotcha | Fix |
+|---|---|
+| Interpolation change only affects one key | Press A first (select all), then T |
+| Cycles modifier moves character backward | Use Repeat with Offset, not Repeat |
+| NLA track order wrong | Higher tracks have priority — reorder with drag |
+| Auto Keying creates unexpected channels | Disable Auto Keying after blocking; clean Dope Sheet |

@@ -51,18 +51,31 @@ title: "Module 1 Cheat Sheet: Animate Interface & Workflow"
 
 ---
 
-## Key Shortcuts
+## Key Shortcuts — Complete Reference
 
 | Action | Windows | Mac |
 |--------|---------|-----|
 | Selection Tool | V | V |
 | Free Transform | Q | Q |
+| Subselection Tool | A | A |
+| Lasso Tool | L | L |
+| Pen Tool | P | P |
+| Text Tool | T | T |
+| Toggle Object Drawing | J | J |
+| Zoom In | Ctrl++ | Cmd++ |
+| Zoom Out | Ctrl+- | Cmd+- |
+| Fit Stage in Window | Ctrl+Shift+H | Cmd+Shift+H |
 | New Keyframe | F6 | F6 |
 | Blank Keyframe | F7 | F7 |
 | Extend Frame | F5 | F5 |
+| Remove Frame | Shift+F5 | Shift+F5 |
+| Remove Keyframe | Shift+F6 | Shift+F6 |
 | Convert to Symbol | F8 | F8 |
 | Break Apart | Ctrl+B | Cmd+B |
 | Group | Ctrl+G | Cmd+G |
+| Ungroup | Ctrl+Shift+G | Cmd+Shift+G |
+| Select All | Ctrl+A | Cmd+A |
+| Undo | Ctrl+Z | Cmd+Z |
 | Play/Stop | Enter | Return |
 | Enter Symbol Edit | Dbl-click | Dbl-click |
 | Exit Symbol Edit | Esc | Esc |
@@ -80,15 +93,27 @@ title: "Module 1 Cheat Sheet: Animate Interface & Workflow"
 
 ## Common Frame Rates
 
-| FPS | Standard |
-|-----|---------|
-| 12 | "On twos" — anime / classic cartoon look |
-| 24 | Cinema standard |
-| 25 | PAL (Europe, Australia) |
-| 30 | NTSC / YouTube standard |
-| 60 | Games / UI animation |
+| FPS | Standard | Productions |
+|-----|---------|------------|
+| 12 | "On twos" — anime / classic cartoon | Cuphead, classic anime |
+| 24 | Cinema standard | Spider-Verse, Avatar TLAB |
+| 25 | PAL (Europe, Australia) | BBC, European animation |
+| 30 | NTSC / YouTube standard | US TV, YouTube |
+| 60 | Games / UI animation | Game UI, web apps |
 
 **On twos at 24fps** = 12 unique drawings per second.
+
+---
+
+## Software Comparison Quick Reference
+
+| Software | Price | Industry Use | Best For |
+|----------|-------|-------------|---------|
+| Adobe Animate | CC subscription | Commercial, indie, YouTube | Cut-out, web animation |
+| Toon Boom Harmony | $109–$239/mo | Major broadcast studios | Full pipeline, TV series |
+| TVPaint | ~$600 perpetual | Boutique/feature studios | Hand-drawn frame-by-frame |
+| Clip Studio Paint | ~$50 perpetual | Indie animators | Drawing, manga-style |
+| Blender Grease Pencil | Free | Indie films | 2D-in-3D hybrid |
 
 ---
 
@@ -119,6 +144,17 @@ Prefix = character name. Always use folders per character.
 - Leg → register at hip
 - Head → register at neck base
 - Hand → register at wrist
+
+---
+
+## Properties Panel — Context Guide
+
+| What Is Selected | Panel Shows |
+|-----------------|------------|
+| Nothing | Document settings (fps, stage size, background) |
+| Frame | Label, tweening, sound, motion guide |
+| Symbol instance | X/Y, W/H, color effect, alpha, tint |
+| Shape/drawing | Fill color, stroke color, stroke width |
 
 ---
 

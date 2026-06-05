@@ -140,3 +140,62 @@ Flip.from(state, {                      // 3. Animate old → new
 | `height: 'auto'` in GSAP | Measure px height first; animate 0 → px value |
 | Linear easing for UI | Use `power2.out` — linear reads as mechanical |
 | Exit easing = entrance easing | Exits = ease-out; entrances = ease-in-out |
+| `elastic.out` on 100+ stagger elements | Substitute `back.out(1.7)` — same visual, far less CPU |
+| `filter: blur()` animation on mobile | Blur is CPU-rendered on Android/iOS WebView — animate opacity of pre-blurred version instead |
+
+---
+
+## 📊 GSAP Ease Function CPU Cost Reference
+
+| Ease | Cost | Best For |
+|---|---|---|
+| `linear` | Very low | Progress bars, clock hands |
+| `power1–4.out` | Very low | Most UI transitions |
+| `expo.out` / `circ.out` | Low | Mobile sheets, drawers |
+| `back.out(1.7)` | Low-medium | Playful menus, large stagger sets |
+| `elastic.out(1, 0.3)` | Medium | Game UI, small element count (< 30) |
+| `bounce.out` | Medium | Prefer `elastic` for smoother feel |
+
+---
+
+## 📊 GSAP ScrollTrigger Parameter Reference
+
+```javascript
+scrollTrigger: {
+  trigger: '.element',      // element that triggers the animation
+  start: 'top 80%',         // [trigger-edge] [viewport-edge]
+  end: 'bottom 20%',        // when animation ends
+  scrub: true,              // tie animation to scroll position (boolean or 0.5s lag)
+  scrub: 0.5,               // 0.5s smoothing lag for scrub
+  pin: true,                // pin the element during scroll
+  pinSpacing: true,         // add space below pinned element
+  toggleActions: 'play none none reverse',  // enter exit enterBack leaveBack
+  toggleClass: 'active',    // add/remove CSS class instead of animation
+  markers: true,            // debug markers (dev only)
+  once: true,               // play once, never reverse
+  id: 'hero-reveal',        // for debugging
+}
+```
+
+**toggleActions values (in order):** onEnter, onLeave, onEnterBack, onLeaveBack
+- `play` = play from current progress
+- `pause` = pause at current progress
+- `reverse` = play backwards
+- `reset` = reset to start
+- `none` = do nothing
+
+---
+
+## 📊 Framer Motion vs. GSAP — Full Comparison
+
+| Feature | GSAP | Framer Motion |
+|---|---|---|
+| Framework | Vanilla JS | React only |
+| Bundle size | ~30KB core | ~50KB |
+| Scroll animation | ScrollTrigger plugin | `useScroll` + `useTransform` |
+| Layout animation | Flip plugin | `layout` prop (auto) |
+| Spring physics | `elastic.out` ease | `type: 'spring'` (first-class) |
+| Stagger | `stagger: 0.06` | `staggerChildren` in variants |
+| Timeline | `gsap.timeline()` | `useAnimate` hook |
+| Exit animation | Manual reverse/remove | `exit` prop + `AnimatePresence` |
+| Best for | Complex timelines, marketing sites | React component transitions |

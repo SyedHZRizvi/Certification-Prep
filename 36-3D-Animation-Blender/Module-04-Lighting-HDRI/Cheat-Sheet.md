@@ -84,3 +84,70 @@ title: "Module 4 Cheat Sheet: Lighting & HDRI"
 - HDRI strength: 0.3–0.6 (forest environment)
 - Per-character rim lights in all group shots
 - Key: 4,000K–5,000K | Rim: 6,500K (sky bounce)
+
+---
+
+## Cycles vs. EEVEE Lighting Capability Matrix
+
+| Feature | Cycles | EEVEE |
+|---|---|---|
+| Global illumination | Physically accurate | Irradiance Volume (baked) |
+| Caustics (glass/water) | Yes | No |
+| Accurate soft shadows | Yes | Shadow maps only |
+| HDRI ambient | Perfect | Needs baked probe |
+| Bloom / glow | Compositor Glare | Native post-effect |
+| Light Linking (4.1+) | Yes | Yes |
+| Volume scatter | Full volumetric | Screen-space only |
+
+---
+
+## Volume Lighting Setup
+
+1. Shift+A → Mesh → Cube → resize to fill scene
+2. Add material → Shader Editor → Volume Scatter node → connect to Volume socket
+3. Density: 0.01–0.05 (subtle haze) / 0.1+ (thick fog)
+4. Scatter Color: slight warm for sunset, cool blue for overcast
+
+---
+
+## Lighting Shortcuts
+
+| Shortcut | Action |
+|---|---|
+| Shift+A → Light | Add any light type |
+| G → Z | Move light vertically |
+| R → X | Rotate Sun light elevation |
+| H | Hide selected light |
+| M | Move to collection |
+
+---
+
+## Light Type Selection Table
+
+| Question | Light Type |
+|---|---|
+| Outdoor sun? | Sun (rotation only) |
+| Candle or small practical? | Point |
+| Theatrical spotlight? | Spot |
+| Studio softbox / window? | Area (Rectangle) |
+| Environment ambient? | HDRI (World) |
+| Glowing emissive object? | Emission material (not a light) |
+| Only affects selected objects? | Any + Light Linking (4.1+) |
+
+---
+
+## IES Profiles Quick Note
+
+IES (.ies) files describe real-world light distributions. Load via: Object Data → Light Nodes → IES Texture node → Open .ies file. Use for architectural photorealism; not needed for stylized animation.
+
+---
+
+## Gotcha Quick Reference
+
+| Gotcha | Fix |
+|---|---|
+| Sun position doesn't change shadows | Sun uses rotation only — R → X to tilt |
+| HDRI doesn't light interior (EEVEE) | Add Irradiance Volume probe + bake irradiance |
+| Rim light too strong / washes out | Reduce to 75–120% of key; move further behind subject |
+| Fireflies in Cycles | Enable Clamp Indirect (10); reduce Emission Strength |
+| Light affects wrong objects | Use Light Linking (Object Properties → Light Linking) |

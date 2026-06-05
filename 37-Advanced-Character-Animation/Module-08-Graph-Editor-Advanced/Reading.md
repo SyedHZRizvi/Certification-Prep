@@ -172,6 +172,197 @@ Expressions are deterministic — they always produce the same result from the s
 
 ---
 
+## 📚 Part 7 — Curve Shape Reference: What Common Arcs Look Like
+
+Understanding what specific motion types look like as curves in the graph editor is the core skill of graph editor fluency. The following reference describes the curve shapes for the most common animation scenarios:
+
+### Reference: Y-Translation (Vertical Movement) Curve Shapes
+
+| Motion Type | Curve Shape Description | Graph Editor Signature |
+|------------|------------------------|----------------------|
+| Gravity fall (realistic) | Concave curve — accelerates throughout | Exponentially steepening slope, never flattening |
+| Ball bounce (contact) | Spike pattern — fast approach, sharp contact, fast exit | V-shape spike at each contact; progressively smaller |
+| Jump apex | Flat plateau at the peak — brief slow-in | Convex arch at top; slope near-zero at peak for 2–3f |
+| Walk cycle COG | Sinusoidal wave — rises at mid-stride, falls at contact | Smooth oscillating curve, 1 full cycle per 2 steps |
+| Character settling | Damped oscillation — decreasing amplitude waves | Oscillating curve where each peak is 60–70% of previous |
+| Floating/hover | Flat line with micro-oscillation | Near-horizontal with subtle noise layer |
+
+### Reference: Rotation Curve Shapes
+
+| Motion Type | Curve Shape Description | Graph Editor Signature |
+|------------|------------------------|----------------------|
+| Torso breathing | Slow, low-amplitude sinusoid | Gentle, regular wave — period 36–72f |
+| Blink (upper lid) | Asymmetric spike — fast close, slower open | Steep downward slope; gentler return slope |
+| Head turn (direct) | S-curve — ease in, peak speed mid-turn, ease out | Classic S on the rotation channel |
+| Snappy head turn | Modified S — very long ease-in, very short ease-out | Almost flat → sudden steep → flat again |
+| Follow-through (tail tip) | Offset S-curve with overshoot | S-curve + secondary oscillation after main move |
+| Eye saccade | Step function — instant jump, then hold | Vertical drop to new value; flat hold; vertical drop |
+
+### Reference: Scale Curve Shapes (Squash and Stretch)
+
+| Motion Type | Curve Shape Description | Graph Editor Signature |
+|------------|------------------------|----------------------|
+| Ball squash on landing | Spike outward in X/Z, spike inward in Y, synchronized | X/Z spike up simultaneously with Y spike down |
+| Character body on jump | Y scale increases at apex (stretch) | Single peak at frame of jump apex |
+| Cartoon snap | Flat → instant spike → flat | Rectangle pulse in scale channel |
+| Weight settle (heavy object) | Compressed squash: small Y dip, small X/Z rise | Small synchronized spikes, then damped return |
+
+---
+
+## 📚 Part 8 — The Graph Editor Diagnostic Workflow
+
+When a shot has timing problems that are not immediately visible in the viewport, the graph editor diagnostic workflow isolates the problem:
+
+```
+SYMPTOM: Animation feels wrong but cause is unclear
+    ↓
+STEP 1: Isolate channels
+    - Select only the translation channels
+    - Does the COG path look correct?
+    YES → Translation is not the problem; continue
+    NO  → Focus here first
+    ↓
+STEP 2: Check rotation channels
+    - Is there a linear curve where there should be an S-curve?
+    YES → Add ease-in/ease-out; switch tangent type from linear to spline
+    NO  → Continue
+    ↓
+STEP 3: Check for tangent breaks
+    - Look for sharp angle changes in curves (broken tangents)
+    - Each broken tangent is a potential "pop"
+    YES → Smooth the tangent or add an inbetween
+    NO  → Continue
+    ↓
+STEP 4: Check timing of secondary channels vs. primary
+    - Do the secondary parts (hair, clothing, tail tip) move before the primary?
+    YES → Offset secondary channels later (they must follow, not lead)
+    NO  → Continue
+    ↓
+STEP 5: Check the hold frames
+    - Do the flat (held) sections have any drift?
+    - Is there a subtle slope where there should be no movement?
+    YES → Add an additional anchor keyframe at the hold
+    NO  → Problem may be in the blocking logic, not the curve shapes
+```
+
+---
+
+## 📚 Part 9 — Advanced Expression Systems: Driven Keys and Set Driven Keys
+
+Beyond offset expressions, Maya's Set Driven Key (SDK) system allows complex relationship-driven secondary motion that responds to primary animation:
+
+### Set Driven Key Examples in Production
+
+| Primary Control (Driver) | Secondary Control (Driven) | Behavior |
+|------------------------|--------------------------|---------|
+| Hip height (COG drops) | Cheek squash scale | Cheeks squash slightly as character crouches |
+| Spine bend Y rotation | Shirt wrinkle blend shape | Shirt wrinkles increase as spine bends |
+| Arm raise rotation | Shoulder clothing tension | Clothing tightens as arm rises above shoulder |
+| Jaw open (AU26) | Cheek droop | Cheek sags slightly as jaw drops (gravity) |
+| Brow raise (AU1) | Forehead skin wrinkle | Horizontal forehead creases appear |
+
+**SDK vs. Expression:** Set Driven Keys use animation curves (not mathematical formulas) to define the relationship. They are non-linear — the secondary control can have any arbitrary mapping to the primary. This makes them more flexible but harder to predict than mathematical expressions.
+
+### The Corrective Shape System
+
+Studios use corrective blend shapes — secondary shapes that only activate at specific joint poses to fix known rig deformation problems. These are implemented as Set Driven Keys:
+
+```
+When arm_rotate_Z = 180° (arm fully overhead):
+    corrective_shoulder_shape = 1.0
+    (fixes the candy-wrapper twist that appears at extreme arm overhead)
+
+When leg_rotate_X = -90° (leg fully forward in kick):
+    corrective_hip_shape = 0.85
+    (restores hip volume lost during extreme leg extension)
+```
+
+---
+
+## 📚 Part 10 — Graph Editor in Production: Workflow Efficiency
+
+Senior animators have developed specific workflows to move through the graph editor efficiently in a production environment:
+
+### The Curve Audit Process (Pre-Submission)
+
+Before submitting any shot for review, run this curve audit:
+
+```
+[ ] All held poses have explicit flat sections (no drift)
+[ ] All action frames have S-curve ease-in/ease-out (except impacts)
+[ ] Impact frames use linear or near-linear tangent on approach
+[ ] All secondary channels (hair, clothing) are offset by appropriate frames
+[ ] No channels have the default "spline + auto" tangent that produces unintended overshoots
+[ ] Scale channels have inverted X/Z relationship to Y during squash/stretch
+[ ] Rotation channels for eye saccades use stepped tangents
+[ ] No channels have a perfectly flat slope where there should be gradual approach
+[ ] The overall COG path is smooth and consistent with the character's mass
+```
+
+### Graph Editor Keyboard Shortcuts (Maya)
+
+| Action | Shortcut | Why It Matters |
+|--------|---------|----------------|
+| Open Graph Editor | Shift+Alt+G | Fastest access during animation |
+| Frame all curves | A | See the full picture before diagnosing |
+| Frame selected | F | Zoom to the problem area |
+| Flat tangent | Shift+E | Set holds; use for cartoon snaps |
+| Spline tangent | Shift+S | Default organic motion |
+| Linear tangent | Shift+L | Impact frames |
+| Stepped tangent | — (manual) | Blocking phase |
+| Break tangent | — (right-click) | When in/out handles need independence |
+| Isolate channel | — (curve list selection) | Focus on one channel at a time |
+
+---
+
+## 🎯 What the Exam Tests
+
+1. What is an S-curve — and why does it represent Newton's First Law in animation terms?
+2. What is the difference between a "spline" tangent and a "clamped" tangent — and when should each be used?
+3. In the stepped workflow, what are the three phases — and why does switching from stepped to spline produce "swimming" poses?
+4. What is the graph editor signature of a ball bounce on the Y-translation channel?
+5. What is a saccade in eye animation — and which tangent type must be used to represent it correctly in the graph editor?
+6. In the expression offset pattern, what is the Maya expression syntax for "tail tip follows tail base with a 5-frame delay"?
+7. What curve error produces the "character floats before landing" symptom — and how is it fixed?
+8. What is a Set Driven Key — and how does it differ from a mathematical expression?
+9. What curve shape represents a "damped oscillation settle" — and what amplitude relationship describes each successive peak?
+10. What is the "spline switch moment" — and why is the resulting swimming motion normal rather than a sign of wrong blocking?
+
+---
+
+## ⚠️ Director's Note Traps — Common Misinterpretations
+
+**Trap 1: "Fix the timing" means move keyframes.**
+Timing problems are often tangent problems — the keyframes are in the right place but the curve shape between them is wrong. Moving keyframes when the tangents need adjustment shifts the problem rather than solving it.
+
+**Trap 2: "Spline tangents are always correct for organic motion."**
+Spline tangents produce smooth curves that can overshoot keyframe values — creating forward motion before the action begins (pre-shoot) or continuation past a stopped pose. For character animation, clamped tangents or manually broken tangents are often more appropriate than unconstrained spline.
+
+**Trap 3: Stepped blocking should be "clean" before switching to spline.**
+Stepped blocking captures poses and timing. The switch to spline will inevitably produce problems. The stepped phase should capture the intent; the spline phase is where the work of shaping the curves happens. Trying to "perfect" the stepped phase delays the real work.
+
+**Trap 4: More keyframes always give more control.**
+Too many keyframes in a curve create a dense, bumpy path that is difficult to clean up. Fewer, well-placed keyframes with correct tangent handles produce smoother, more manageable curves. The principle: minimum keyframes necessary to produce the intended curve shape.
+
+**Trap 5: Expression-driven secondary motion removes the need for manual keyframe refinement.**
+Expressions are deterministic — they produce mathematically consistent results. Performance requires irregular, human-feeling timing variation that expressions cannot provide. Expressions establish the base; manual keyframe refinement makes it alive.
+
+---
+
+## 🔬 Socratic Questions
+
+1. A character's walk cycle Y-translation curve should be a smooth sinusoid. You inherit a shot where this curve is a bumpy, irregular path. Walk through the diagnostic workflow to identify whether the problem is in the keyframe placement, the tangent types, the spine animation, or all three.
+
+2. The expression offset system (`delay(value, nFrames)`) produces perfectly mechanical secondary motion. Describe three techniques for adding organic irregularity on top of expression-driven motion — using both the graph editor and additional keyframe layers.
+
+3. A senior animator says: "Show me a character's curve and I'll tell you their personality." Take three character types (a nervous villain, a confident hero, a grieving parent) and describe the specific curve shapes — tangent types, overshoot presence, settle duration — that would characterize each personality.
+
+4. The Set Driven Key system maps primary controls to secondary controls using animation curves. Design an SDK system for a character's cape: what are the primary drivers (hip, spine, arm), what are the driven attributes (cape bend shapes, cape spread), and what curve mappings would you use?
+
+5. You are asked to animate a robot character and a living creature performing the same action (picking up a heavy box). Compare the graph editor curves for this action between the two characters — specifically the COG curve, the arm rotation curve, and the settle curve — describing what is different and what fundamental principle drives that difference.
+
+---
+
 ## 🚀 Next Steps
 
 Module 9 takes you out of the software and into the production environment — the director's note, the feedback loop, the revision process, and how the best animators navigate studio politics to deliver their best work.
@@ -186,3 +377,13 @@ Module 9 takes you out of the software and into the production environment — t
 - Animation Mentor — Graph Editor Mastery Workshop (animationmentor.com)
 - Lango, K. — "Reading Curves" (keithlango.com blog series)
 - Cotter, A. — "The Stepped Workflow" (Animation Career Review contributions)
+- SideFX Houdini — Channel Editor documentation (equivalent to Maya Graph Editor in Houdini pipeline)
+- Autodesk — Maya Set Driven Key documentation and tutorials (autodesk.com/maya)
+
+*[Module complete — see README for next steps and related tracks.]*
+
+> *Key point: The principle covered in this module applies across every major production pipeline — from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
+
+> *Key point: The principle covered in this module applies across every major production pipeline — from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
+
+> *Key point: The principle covered in this module applies across every major production pipeline — from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*

@@ -36,7 +36,33 @@ Professional roto artists are trained to use the **minimum effort to achieve the
 3. **Rotobrush 2.0** — for subjects on moderate-complexity backgrounds
 4. **Manual spline animation** — frame-by-frame; only when the above fail
 
-> 🎯 **Exam Tip:** Professional roto work is evaluated by the density of keyframes. Sparse keyframes (shape holds for many frames) = good roto technique. Dense keyframes (re-drawn every frame) = amateur technique that is also harder to correct later.
+> 🎯 **What the exam tests:** Professional roto work is evaluated by the density of keyframes. Sparse keyframes (shape holds for many frames) = good roto technique. Dense keyframes (re-drawn every frame) = amateur technique that is also harder to correct later.
+
+---
+
+## 🎬 Case Study: The Irishman — De-Aging and the Roto Challenge
+
+Martin Scorsese's *The Irishman* (2019, ILM and Technicolor VFX) presented a roto challenge unlike any previous de-aging project: ILM had to digitally de-age Robert De Niro, Al Pacino, and Joe Pesci across a 3.5-hour film, with actors in their 70s playing characters in their 30s, 40s, and 50s.
+
+### ILM's FLUX De-Aging Pipeline
+
+ILM built a specialized pipeline called **FLUX** (Facial Look Update eXchange System) that combined:
+
+1. **Reference scans** — ILM scanned each actor at multiple ages using photogrammetry rigs (multiple synchronized cameras capturing the face from 180 degrees)
+2. **Performance tracking** — On set, a special rig captured the actors' facial performances without greenscreen or markers — the actors could perform naturally
+3. **2D and 3D blend** — The younger face was rendered as a 3D CG face, then blended with the 2D performance plate; the blend ratio varied per frame
+4. **Roto per shot** — Every shot required roto of the face region to apply the FLUX blend precisely at the skin boundary, handling hair, stubble, and glasses transitions
+
+| Challenge | Solution |
+|-----------|---------|
+| Glasses arms crossing over skin | Per-frame roto of glasses/skin boundary; FLUX blend applied only inside glasses-free region |
+| Stubble on the de-aged face | ILM's grooming system applied age-appropriate hair density to the CG face layer |
+| Director demands actor's real performance | No motion capture dots — FLUX tracked the performance directly from the clean plate |
+| 3.5 hours of feature runtime | ILM used automation to identify every de-aging shot and apply a base FLUX blend; artists then refined per shot |
+
+> 🎯 **What the exam tests:** De-aging compositing is built on clean roto of the face region. The CG de-aged face is applied as a comp layer, and roto defines exactly where the CG face blends into the real plate. Imprecise roto produces visible facial boundary artifacts.
+
+> ⚠️ **Rookie mistake:** Roto artists new to face work often trace the hard geometry of the face outline — the jaw, the hairline. Professional face roto uses a soft feather that allows the skin blend to transition gradually, matching the soft edge of real skin at any facial contour.
 
 ---
 
@@ -69,6 +95,24 @@ After the base Rotobrush matte is established, the **Refine Edge** feature proce
 1. Paint over fine-detail edges (hair strands, fur, feathers) with the Refine Edge tool
 2. After Effects analyzes these pixels and preserves the semi-transparent detail
 3. This is similar to Keylight's edge softness — it protects the gray transition pixels that make edges look photographic
+
+---
+
+## 🔬 Roto Tool Comparison: AE vs Silhouette vs Nuke RotoPaint
+
+For exam purposes, understanding which roto environment to use for which job is critical:
+
+| Feature | AE Rotobrush 2.0 | AE Manual Masks | Silhouette | Nuke RotoPaint |
+|---------|-----------------|-----------------|-----------|----------------|
+| Automation level | High (ML propagation) | Manual | Medium (tracking assist) | Low (manual) |
+| Best scale | Commercial, broadcast | Short clips, commercial | Feature film | Feature film |
+| Team collaboration | Single artist | Single artist | Multi-artist | Multi-artist |
+| Spline control | Basic | Good | Advanced (B-spline, Catmull-Rom) | Good |
+| Pipeline integration | AE native | AE native | Exports EXR/Nuke | Nuke native |
+| Performance | Fast | Fast | Optimized render engine | Native to Nuke |
+| Industry standard for | TV/streaming | Quick jobs | Film roto departments | Integrated film comp |
+
+> 🎯 **What the exam tests:** Silhouette is the film roto standard because it is purpose-built for deep spline stacks and multi-artist collaboration. AE Rotobrush 2.0 is appropriate for broadcast and commercial. Nuke RotoPaint integrates directly into the compositing workflow for shots where roto and comp happen in the same environment.
 
 ---
 
@@ -107,6 +151,8 @@ Professional roto artists use a layered approach to build complex mattes efficie
 | Layer 5 (−) | Fine negatives | Hair gaps, between fingers |
 
 Each layer is independently animated, and the matte is the Boolean result of all layers combined. This is more efficient than animating a single complex spline with 100+ control points.
+
+> ⚠️ **Rookie mistake:** Drawing a single complex spline with 100+ control points for a full figure roto is the most common beginner error. A single-spline approach is exponentially harder to correct. Professional roto artists always use layered shapes — each shape has few points and animates independently.
 
 ---
 
@@ -162,6 +208,103 @@ The workflow in After Effects:
 
 ---
 
+## 🔬 Roto in the Film Pipeline: Workflow Integration
+
+Professional roto work doesn't exist in isolation — it integrates with the compositing pipeline. Understanding how roto mattes flow through the Nuke script is an advanced but testable topic.
+
+### Roto-to-Comp Integration in Nuke
+
+| Stage | Tool | Output |
+|-------|------|--------|
+| Roto is created | Silhouette (film) or Nuke RotoPaint | Alpha channel EXR sequence |
+| Matte is delivered | Silhouette exports → Nuke Read node | Single-channel EXR (alpha only) |
+| Matte applied in comp | Nuke Copy node routes alpha → plate | Plate gains the roto alpha |
+| Matte refined | Grade node on matte (erode/dilate) | Edge quality adjustment without re-rooing |
+| Matte tested | Viewer channel display (A channel) | Visual inspection of matte quality |
+
+### Professional Roto Review Criteria
+
+When a roto matte is submitted for review at a film studio, supervisors check:
+
+| Criteria | Pass | Fail |
+|---------|------|------|
+| Keyframe density | Shape holds for 4–12 frames between keyframes | Re-drawn every frame (too dense) |
+| Edge quality | Semi-transparent zone at all soft edges | Hard cut-out edge on hair |
+| Coverage completeness | No holes in solid areas | Gray patches in interior |
+| Motion consistency | Smooth motion between keyframes | Jittery edges (over-corrected) |
+| Feather appropriateness | Hard on solid body; soft on hair/edge | Uniform hard edge throughout |
+
+> ⚠️ **Rookie mistake:** Submitting a roto where the silhouette "pops" (sudden shape changes between adjacent keyframes). Popping mattes indicate over-correction — the artist manually adjusted too many points per frame instead of letting fewer keyframes define the interpolated motion.
+
+---
+
+## 🎯 What the Exam Tests — Module 3
+
+1. **Rotobrush 2.0 propagation direction:** Propagates forward only. Backward propagation requires starting a new pass from an earlier frame.
+2. **Keyframe density:** Sparse keyframes = professional technique. Dense (every-frame) keyframes = amateur approach. Good roto holds shape for multiple frames between keyframes.
+3. **Silhouette vs AE for film:** Silhouette is the film roto standard; AE Rotobrush is appropriate for broadcast/commercial.
+4. **Cheat roto stack logic:** Multiple simple shapes (addition and subtraction layers) are more efficient and correctable than one complex spline.
+5. **Refine Edge function:** Within Rotobrush, Refine Edge preserves semi-transparent detail at hair/fur/feather edges — the ML equivalent of Keylight's edge softness.
+6. **When roto is required:** No greenscreen available; key fails on complex edges; body-part isolation; legacy footage.
+7. **Variable feather in AE:** Vertex-level feathering allows hard edges on solid body areas and soft edges on hair — the professional approach to mask feathering.
+8. **De-aging roto requirement:** De-aging compositing requires per-frame face region roto to blend the CG de-aged face with the real plate at the skin boundary.
+9. **Silhouette export targets:** Exports EXR alpha sequences or directly to Nuke node graph — not limited to After Effects.
+10. **Roto for color isolation:** Masks and roto mattes are used not only for foreground/background separation but also for selective color grading (sky darkening, car color changes, skin tone isolation).
+
+---
+
+## 🔬 Roto Quality Standards by Production Type
+
+Different productions have different roto quality standards based on intended viewing conditions and proximity of the subject to the camera:
+
+| Production Type | Roto Quality Standard | Feather Tolerance | Keyframe Density |
+|-----------------|----------------------|-------------------|-----------------|
+| Feature film (hero shot) | Sub-pixel accuracy; variable feather | 0–3px body; 4–12px hair | 8–12 frames between KFs |
+| Feature film (mid/background) | Pixel-accurate; uniform feather acceptable | 2–6px | 4–8 frames between KFs |
+| TV drama / streaming | Clean matte; some edge softness acceptable | 3–8px | 4–8 frames between KFs |
+| Broadcast commercial | Clean matte; edges reviewed at delivery res | 4–12px | 2–6 frames between KFs |
+| Social media / web | Clean enough for small screen | 6–20px | 2–4 frames between KFs |
+
+> 🎯 **What the exam tests:** Roto quality standards are proportional to the resolution and prominence of the subject. A background extra in a wide shot requires significantly less roto precision than a hero character in a close-up. Professional roto artists calibrate their effort to the shot's review conditions.
+
+### Common Roto Terminology
+
+| Term | Definition |
+|------|-----------|
+| **Keyframe** | A frame where the roto artist defines the spline shape manually |
+| **Interpolation** | The automatic calculation of spline positions between keyframes |
+| **Choke/Erode** | Shrinking the matte inward to remove edge contamination |
+| **Dilate/Expand** | Growing the matte outward to add coverage |
+| **Hold-out matte** | A matte that prevents an effect from affecting a specific area |
+| **Garbage matte** | A rough hand-drawn mask that eliminates areas outside the VFX frame |
+| **Core matte** | The solid, interior part of a roto matte (no semi-transparent values) |
+| **Edge matte** | The semi-transparent transition zone of a roto matte |
+
+---
+
+## 📊 Full Rotoscoping Vocabulary Reference
+
+| Term | Definition |
+|------|-----------|
+| Rotoscoping | Frame-by-frame hand-tracing of a subject to create an alpha matte |
+| Alpha matte | Grayscale image defining opacity: white=opaque, black=transparent |
+| Spline | The mathematical curve used to define a roto shape (Bezier, B-spline) |
+| Bezier spline | Curve type with tangent handles; precise control at each vertex |
+| B-spline | Smooth curve type without tangent handles; good for organic shapes |
+| Catmull-Rom | Spline type that passes through each vertex; predictable behavior |
+| Keyframe | A frame where the roto artist manually defines the spline position |
+| Interpolation | Automatic calculation of spline positions between keyframes |
+| Feather | Softening the matte edge — controlled globally or per vertex |
+| Choke / Erode | Shrink the matte inward to remove edge contamination |
+| Dilate / Expand | Grow the matte outward to recover edge coverage |
+| Hold-out matte | A matte protecting a region from effects (e.g., protecting actor from key) |
+| Garbage matte | Rough mask eliminating areas that don't need precise roto (screen edges, props) |
+| Core matte | Solid interior of the roto — no semi-transparent values |
+| Roto-patch | A roto shape applied specifically to fix a failing keyer edge on a per-frame basis |
+| Propagation | ML-based forward tracking of a roto matte through time (Rotobrush 2.0) |
+
+---
+
 ## 📊 Summary: Roto Tool Selection Guide
 
 | Situation | Best Tool |
@@ -173,6 +316,27 @@ The workflow in After Effects:
 | Color isolation, stationary subject | Shape mask + feather |
 | Key patch (fix failing Keylight edge) | Combined Keylight + Roto matte |
 | Archival footage | Manual spline (only option) |
+| De-aging face blend | Per-frame face roto with soft feather at skin boundary |
+
+---
+
+## 🔬 Mask Operations: Boolean Logic in Compositing
+
+After Effects and Nuke both support multiple mask layers on a single element. The combination of these masks uses Boolean logic — and understanding it prevents compositing errors:
+
+| Mask Mode (AE) | Nuke Equivalent | Effect |
+|---------------|----------------|--------|
+| Add | Merge-over | Adds to the alpha — expands visible area |
+| Subtract | Merge-from | Subtracts from alpha — cuts out visible area |
+| Intersect | Merge-multiply | Only areas covered by BOTH shapes are visible |
+| Difference | Merge-difference | Areas covered by one shape but NOT both |
+| None | (disabled) | Mask defined but not applied |
+
+**The Cheat Roto Stack uses Add and Subtract exclusively.** Intersect is used for creating mattes that apply effects only to specific overlapping regions (e.g., a color correction that affects only the intersection of a sky matte and a building silhouette).
+
+> 🎯 **What the exam tests:** Mask Intersect in AE (Nuke's Merge-multiply equivalent) produces a matte covering ONLY the area both shapes share. Mask Difference produces a matte covering areas that one shape covers but NOT both. Both are used in advanced color isolation workflows.
+
+ — Add to expand coverage over complex areas (hair, hands), Subtract to cut gaps (arm gaps, between legs).
 
 ---
 
@@ -182,9 +346,83 @@ Module 4 covers tracking — the technology that allows you to attach a digital 
 
 ---
 
+## 📊 Roto in Context: What Percentage of VFX Work Is Roto?
+
+Roto is often described as the most labor-intensive discipline in film VFX. Industry data illustrates the scale:
+
+| Production | Estimated Roto Frames | Notes |
+|------------|----------------------|-------|
+| *Life of Pi* (2012) | 1,000,000+ frames | 500 roto artists; Richard Parker tiger integration |
+| *The Irishman* (2019) | Hundreds of thousands | Per-frame face region roto for de-aging across 3.5 hours |
+| *Avengers: Endgame* (2019) | 500,000+ frames | Battle sequence background + hero character isolation |
+| *Gravity* (2013) | Extensive | Near-every frame required helmet visor roto |
+
+These numbers explain why dedicated roto departments at major studios employ 50–200 artists on a single feature film, why Silhouette exists as a standalone application (to maximize roto artist productivity), and why roto-as-a-service studios (based in India, Canada, and Eastern Europe) form a significant part of the VFX industry.
+
+> 🎯 **Industry Reality:** Roto is where most entry-level VFX artists begin their careers. A junior roto artist at a facility like DNEG or MPC India traces mattes under the direction of a roto supervisor. Becoming fast, accurate, and consistent at roto opens doors to compositing, paint, and visual development roles.
+
+---
+
+---
+
+## 📊 Quick Exam Summary: Roto Numbers and Standards
+
+| Standard | Value |
+|---------|-------|
+| Rotobrush 2.0 review interval | Every 5–10 frames |
+| Feature film keyframe density (hero) | 8–12 frames between keyframes |
+| Broadcast keyframe density | 2–6 frames between keyframes |
+| Minimum mask feather (body) | 0px (hard edge acceptable on flat matte objects) |
+| Recommended edge feather (hair) | 4–12px depending on hair fineness |
+| *Life of Pi* roto frames | 1,000,000+ frames; 500 roto artists |
+| Mask Boolean for cheat roto | Add (expand) + Subtract (cut) |
+
+---
+
 ## 📚 Further Reading
 
 - **"The Art and Science of Digital Compositing" — Ron Brinkmann** — Chapter 5 (Rotoscoping); written by a Nuke developer; technically rigorous
 - **Boris FX Silhouette documentation** — official tutorials for every tool and workflow
 - **Corridor Crew: "VFX Artists React" series** — often discusses when roto is used vs keying on specific shots
 - **After Effects Help: Rotobrush and Refine Edge tool** — Adobe's own documentation is excellent for AE-specific parameter behavior
+
+---
+
+## 📋 Exam Readiness Checklist
+
+Before moving on, verify you can answer each of these without notes:
+
+- [ ] Define the core concept of this module in one sentence
+- [ ] Name three real-world productions that demonstrate it
+- [ ] Identify the two most common mistakes students make
+- [ ] Describe when you would use each major tool/technique covered
+- [ ] Explain the trade-offs between the primary approaches discussed
+- [ ] State the exam-relevant numbers, ratios, or standards from memory
+
+## 🎯 Five High-Frequency Exam Questions
+
+These patterns appear repeatedly in industry certification and portfolio assessments:
+
+1. **"Why not X?"** — Every technique has a cheaper/faster alternative; know when NOT to use the primary approach.
+2. **"What's the production order?"** — Many mistakes happen when steps are applied out of sequence; understand the dependency chain.
+3. **"Name a production that did this differently."** — Spider-Verse, Cuphead, Arcane each broke conventions intentionally; knowing *why* shows mastery.
+4. **"What file format and settings?"** — Every deliverable context has specific requirements; memorize the key numbers (frame rate, bit depth, codec).
+5. **"What's the fastest way to fix [common problem]?"** — Troubleshooting speed is a professional skill; know the diagnostic hierarchy.
+
+## 📚 Canonical Further Reading
+
+**Essential:**
+- *The Animator's Survival Kit* — Richard Williams (2001, revised 2012). The most-assigned animation reference in university curricula worldwide. Every principle in this module has a Williams illustration.
+- *The Illusion of Life: Disney Animation* — Frank Thomas & Ollie Johnston (1981). The primary source for the 12 Principles. Expensive but irreplaceable.
+
+**Industry-Standard:**
+- *Computer Animation: Algorithms and Techniques* — Rick Parent (3rd ed., 2012). The mathematical foundation behind every digital animation system.
+- *3D Art Essentials* — Ami Chopine (2011). Bridge between artistic intent and technical execution.
+
+**Online:**
+- Animation Career Review salary surveys — updated annually, the most-cited compensation benchmark for animation professionals
+- School of Motion blog — free, research-backed articles on the business of motion design and animation
+
+---
+
+*Next module →*

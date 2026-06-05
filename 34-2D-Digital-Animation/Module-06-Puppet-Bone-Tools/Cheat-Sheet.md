@@ -12,7 +12,7 @@ title: "Module 6 Cheat Sheet: Puppet & Bone Tools — DUIK Rigging"
 | Version | Status |
 |---------|--------|
 | **DUIK Bassel** (16.x) | Stable, widely-used, all major rigs work |
-| **DUIK Angela** (17.x) | Current; faster auto-rig workflow |
+| **DUIK Angela** (17.x) | Current; faster auto-rig, walk cycle generator |
 | Both | Free, open-source, from RxLaboratory |
 
 ---
@@ -27,6 +27,7 @@ title: "Module 6 Cheat Sheet: Puppet & Bone Tools — DUIK Rigging"
 5. AE generates: foot goal controller + knee pole vector
 6. Animate: Move foot goal controller only
 7. DUIK solves: hip and knee angles automatically
+   → Never keyframe bone layers directly
 ```
 
 ---
@@ -54,7 +55,8 @@ title: "Module 6 Cheat Sheet: Puppet & Bone Tools — DUIK Rigging"
 | **Stiffness** | Floppy, slow return | Rigid, fast return |
 | **Damping** | Bounces long | Snaps back quickly |
 
-**Common spring uses:** Ponytail, loose clothing, antenna, belly, ears.
+**Common spring uses:** Ponytail, loose clothing, antenna, belly, ears, cape.
+**Key fact:** Spring rigs need NO keyframes — procedural only.
 
 ---
 
@@ -62,9 +64,9 @@ title: "Module 6 Cheat Sheet: Puppet & Bone Tools — DUIK Rigging"
 
 | Style | Appearance | Example Shows |
 |-------|-----------|--------------|
-| Rubber Hose | Continuous curve, no joint break | Classic cartoons, Mickey |
+| Rubber Hose | Continuous curve, no joint break | Classic cartoons, Mickey Mouse |
 | Straight Segment | Rigid, defined elbow/knee | Gravity Falls, Steven Universe |
-| Bezier IK (DUIK) | Slight organic curve throughout | Hazbin Hotel, modern 2D |
+| Bezier IK (DUIK) | Slight organic curve throughout | Hazbin Hotel, modern 2D commercial |
 
 ---
 
@@ -103,3 +105,63 @@ If knee bends wrong direction:
 | IK chain | Select chain → IK |
 | Spring | Select layer → Automations → Spring |
 | Auto-Rig | Select all bones → Auto-Rig |
+| Walk cycle | Automations → Walk Cycle (Angela only) |
+
+---
+
+## J+S vs. Manual Face Layer Swaps
+
+| Method | When to Use | Pros | Cons |
+|--------|------------|------|------|
+| Joysticks 'n Sliders | Broad head turns and directional looks | Smooth interpolation; fast to animate | Requires ~$49 plugin |
+| Manual swap (visibility) | Extreme expressions, mouth shapes | Free; total control | More keyframes |
+| Symbol swap (in Animate) | Cut-out lip sync | Per-frame control | Only in Animate |
+
+---
+
+## IK vs. FK Quick Reference
+
+| | IK | FK |
+|-|----|-----|
+| What you animate | End effector (hand/foot) | Each joint in chain |
+| Joint solving | Automatic | Manual |
+| Best for | Planted feet, reaching | Arms, tails, hair |
+| In DUIK | Goal controller | Rotate bone controllers |
+
+
+---
+
+## ✅ Module Sign-Off Checklist
+
+- [ ] Can explain core concept without notes
+- [ ] Can name 3 industry examples
+- [ ] Know the 2 most common mistakes
+- [ ] Understand when to use each technique
+
+**Key formula / ratio / number to memorize:**
+See the exam callouts (🎯) in the Reading.md for this module.
+
+---
+
+## Expressions Quick Reference
+
+| Expression | What It Does |
+|-----------|-------------|
+| `loopOut("cycle")` | Loops keyframes indefinitely (walk cycles) |
+| `wiggle(freq, amp)` | Adds random procedural jitter |
+| `linear(t, t1, t2, v1, v2)` | Maps value ranges (joystick to layer) |
+| `value + [offset_x, offset_y]` | Adds constant offset to position |
+
+Apply to: Time Remap property for walk cycle loop (enable via right-click → Time → Enable Time Remapping).
+
+---
+
+## Numbers to Memorize
+
+| Value | Meaning |
+|-------|---------|
+| ~10 | Controllers in a full-body DUIK rig |
+| 40+ | Bone/layer relationships those controllers drive |
+| ~$49 | Cost of Joysticks 'n Sliders plugin |
+| Free | Cost of DUIK (both Bassel and Angela) |
+| 5 | Head positions needed for J+S joystick setup |

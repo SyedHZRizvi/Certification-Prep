@@ -146,3 +146,31 @@ title: "Module 1 Cheat Sheet: Blender Interface & Fundamentals"
 - [ ] Set resolution scale for your display (Interface)
 - [ ] Emulate numpad if on laptop (Input)
 - [ ] Set render output path (File Paths)
+
+---
+
+## Python API Quick Reference
+
+| Expression | Returns / Does |
+|---|---|
+| `bpy.context.active_object` | Active object |
+| `bpy.context.selected_objects` | All selected objects (list) |
+| `bpy.data.objects["Cube"]` | Object by name |
+| `bpy.ops.object.delete()` | Delete selected |
+
+---
+
+## Key Workspaces
+
+**Layout** — Object Mode · **Modeling** — Edit Mode · **Shading** — Shader Editor · **Animation** — Dope Sheet + Graph Editor · **Geometry Nodes** — GN editor · **Scripting** — Python console
+
+---
+
+## Gotcha Quick Reference
+
+| Gotcha | Fix |
+|---|---|
+| No numpad on laptop | Preferences → Input → Emulate Numpad |
+| Gimbal lock on bone rotation | Switch Rotation Mode to Quaternion |
+| Geometry Nodes applied = irreversible | Keep an un-applied version |
+| Sun light won't move scene | Sun position irrelevant; rotate only |

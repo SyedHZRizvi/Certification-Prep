@@ -97,3 +97,62 @@ title: "Module 10 Cheat Sheet: Short Film Project"
 | Resolution | 1920×1080 |
 | Frame rate | 24fps |
 | Final encode | H.264, CRF 18–23 |
+
+---
+
+## Open Movie Pipeline Comparison
+
+| Film | Team | Duration | Key Technique |
+|---|---|---|---|
+| *Coffee Run* (2020) | 2 artists | 2 min | Solo character; proxy-weight pipeline |
+| *Charge* (2022) | ~5 artists | 3 min | Hard-surface robot; HDRI-zone lighting |
+| *Sprite Fright* (2021) | 14 artists | 13 min | Organic characters; multi-layer render |
+
+For a 10-second solo project, match *Coffee Run* scale: 1 character, 1 set, 4–6 shots.
+
+---
+
+## Material Strategy Decision
+
+| Priority | Approach |
+|---|---|
+| Fastest (stylized) | Toon BSDF or flat vertex color |
+| Moderate (no UVs) | Principled BSDF + procedural Noise textures |
+| Best (photo-quality) | Principled BSDF + 2048px texture maps (requires UV unwrap) |
+
+---
+
+## Pre-Render Checklist
+
+- [ ] Renderer: Cycles; GPU Compute enabled in System Preferences
+- [ ] Samples: 256 with OptiX or OIDN denoising
+- [ ] Output: PNG sequence, absolute path, 1920×1080
+- [ ] Frame range: 1–240 (10 seconds at 24fps)
+- [ ] All simulations baked
+- [ ] No broken texture links (pink materials)
+- [ ] Color management: Filmic (not Standard)
+- [ ] Statistics checked: RAM usage within GPU VRAM limit
+
+---
+
+## Color Management Reference
+
+| Setting | Value | Effect |
+|---|---|---|
+| View Transform | Filmic | Tone-mapping; prevents overexposed highlights |
+| Look | None | Clean Filmic without additional grade |
+| Exposure | 0 | Neutral; adjust in Compositor |
+| Gamma | 1.0 | Neutral |
+
+**Never use Standard view transform** — clips bright values to white; looks CG and flat.
+
+---
+
+## Gotcha Quick Reference
+
+| Gotcha | Fix |
+|---|---|
+| Interpolation change only on one key | A (select all in Dope Sheet) → T to change all |
+| Walk cycle character teleports | Cycles modifier → Repeat with Offset (not Repeat) |
+| Colors look flat after render | Switch View Transform from Standard to Filmic |
+| Render crashes mid-sequence | PNG sequences restart at last frame; MP4 must restart from frame 1 |

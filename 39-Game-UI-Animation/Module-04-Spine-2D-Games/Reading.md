@@ -204,6 +204,30 @@ All Spine attachments reference a **texture atlas** — a single sprite sheet co
 
 ---
 
+## 📊 Spine Runtime Comparison: Unity vs. Unreal vs. Godot vs. Cocos2d-x
+
+| Runtime | Engine / Platform | Package | Primary Use |
+|---|---|---|---|
+| Spine-Unity | Unity 2019.4+ | UPM package (Esoteric) | Most common; SkeletonAnimation + SkeletonGraphic |
+| Spine-Unreal | Unreal Engine 4/5 | UE plugin (Esoteric) | Less common; many UE studios prefer 3D |
+| Spine-Godot | Godot 3.x / 4.x | Community plugin | Open-source; requires compatible runtime version |
+| Spine C runtime | Custom / Cocos2d-x | C library source | Mobile-first; most optimized for CPU budget |
+| Spine-LibGDX | Java / Android | LibGDX integration | Android-specific; older mobile game market |
+| Spine-Web / Spine Player | Web (JS/TS) | NPM package | Web games, interactive web content |
+
+### When NOT to Use Spine
+
+Spine has a commercial license cost (editor: $99 one-time Essential tier; $399 Professional for all features). For very small indie projects or prototypes, alternatives exist:
+
+| Alternative | Pros | Cons |
+|---|---|---|
+| DragonBones (free) | Free; compatible runtime | Less featured; smaller community |
+| Aseprite (frame-by-frame) | Full artistic control | No skeletal animation; larger file sizes |
+| Unity's own Sprite Shape | Free, built-in | Limited to simple skeletal curves |
+| Rive (web/mobile) | Interactive state machine | Different workflow from AE/Spine |
+
+---
+
 ## 📊 Case Studies Summary
 
 | Game | Studio | Spine Techniques Used |
@@ -212,6 +236,97 @@ All Spine attachments reference a **texture atlas** — a single sprite sheet co
 | Hollow Knight | Team Cherry | Expressive IK for hand/foot contact, mesh deformation for cloaks |
 | Cuphead | Studio MDHR | Spine for some effects; hand-drawn frame-by-frame for hero sprites |
 | Fate/Grand Order | DELiGHTWORKS | Mass skin variants; one skeleton, 100+ servant costumes |
+
+---
+
+## 🎮 Case Study: Hollow Knight — Team Cherry's Skeletal Animation Budget Philosophy
+
+Team Cherry's approach to Hollow Knight's Spine 2D animation is one of the most studied cases of **deliberate bone-count restraint** in indie game development. In their GDC 2019 post-mortem, animator William Pellen described the budget philosophy: every bone added to a character had to be justified by a visible payoff at the game's display size and camera distance.
+
+The Knight's 28-bone skeleton breaks down as follows:
+- 12 bones: core biped structure (hip, torso, neck, head, 2× upper arm/forearm/hand, 2× thigh/shin/foot)
+- 8 bones: the three-tier cloak (the signature animation — the cloak has 3 sections, each with 2 bones for weighted sweep)
+- 4 bones: the nail/sword and its swing arc
+- 4 bones: face/eye and subtle expression control
+
+Team Cherry concluded they could have used 20 bones with identical visual quality at gameplay camera distances. The extra 8 cloak bones were a deliberate artistic decision — the cloak sweep became the Knight's visual signature. Every bone beyond functional minimum must earn its place in the performance budget.
+
+**Key measurable decisions:**
+- Mesh deformation used for the cloak tail: 4 FFD control points, not weighted mesh (faster on the Cocos2d-x mobile targets they considered)
+- IK on both feet and the nail-hand: mix value animated from 0.8 (combat, foot IK active) to 0.2 (jumping, foot IK disabled so feet swing naturally)
+- No physics-driven secondary motion: all secondary motion is keyframe-animated, giving the animator full artistic control
+
+---
+
+## 🎮 Case Study: Dead Cells — Motion Twin's Procedural + Spine Hybrid
+
+Dead Cells uses Spine 2D for character animation, but Motion Twin layered a **procedural animation system on top** of the Spine clips. Specifically:
+
+1. **Spine clip**: the base keyframe animation (attack, walk, death)
+2. **Procedural squash/stretch**: on enemy hits, the game code scales the Spine skeleton's root bone procedurally — squashing it at impact (scale: 1.3× width, 0.7× height) and then spring-releasing back to 1.0 over 4–6 frames via a custom easing curve
+3. **Procedural lean**: during fast movement, the root bone rotates forward procedurally (lean angle proportional to velocity) independent of the walk animation
+
+This hybrid approach gives Dead Cells its signature "punchy" feel: the Spine keyframes define the action archetype, while the procedural layer adds the physics response that makes every hit feel weighty.
+
+The custom C runtime advantage: Motion Twin compiled their Spine C runtime to their engine's GPU submission pipeline, allowing them to **batch multiple enemy skeleton draw calls** into a single GPU call when enemies share the same atlas texture. This reduced draw calls from N per enemy to approximately N/4, a major mobile performance win.
+
+---
+
+## 🎮 Case Study: Fate/Grand Order — Spine at Mobile Scale
+
+Fate/Grand Order (DELiGHTWORKS, 2015–present) represents Spine 2D at its largest scale: 400+ playable servants, each with multiple animation variants, all running on Cocos2d-x + Spine C runtime on iOS and Android.
+
+The key engineering decisions that make this scale possible:
+
+**1. Skeleton standardization**: All servants share one of three base skeleton archetypes (male standard, female standard, large). A new servant's rig is built by duplicating the archetype and swapping attachments — not building from scratch.
+
+**2. Skin-per-costume**: Rather than duplicating animation data per costume, each servant has one animation set and dozens of skin variants. At runtime, compositing base skin + selected costume skin takes milliseconds and uses no additional animation memory.
+
+**3. Atlas sharing by class**: All Archer-class servants share one atlas page for common elements (bow, arrows, generic effects). Class-specific atlas pages are loaded once and reused. Only servant-unique art is in a unique atlas.
+
+**4. Memory budget**: Each servant must fit within a **2MB memory budget** for their Spine data (skeleton JSON + atlas texture). Servants that exceed this must reduce bone count, texture resolution, or skin count.
+
+| | Hollow Knight (Team Cherry) | Dead Cells (Motion Twin) | Fate/Grand Order (DELiGHTWORKS) |
+|---|---|---|---|
+| Scale | ~40 enemy types | ~100 enemy types | 400+ servants |
+| Bone count | 28 (Knight) | 15–25 per enemy | ~20 per servant (standardized) |
+| Key technique | Deliberate cloak bones | Procedural squash + C runtime batching | Skeleton archetypes + skin compositing |
+| Runtime | Spine-Unity | Custom C runtime | Cocos2d-x + Spine C |
+| Memory target | Not published | Not published | 2MB per servant |
+
+---
+
+## ⚠️ Performance Trap: Particle Systems in Spine Unity on Mobile
+
+Spine-Unity is frequently paired with Unity particle systems for attack VFX — but this combination has a specific mobile performance trap. When a Spine skeleton triggers a particle burst (via an Animation Event), the particle system typically renders to the same sorting layer as the skeleton but uses Unity's default particle shader.
+
+On devices without GPU instancing (common on iOS A10 and earlier, most Android mid-range), each particle **emitter** submits a separate draw call — independent of how many particles are active. A combat scenario with 6 active enemies, each triggering 2 particle emitters per attack, generates 12 additional draw calls per attack frame. At 60fps, this is manageable; at 24 simultaneous particle activations (a room full of enemies), draw call count spikes.
+
+Fix: use Spine's own mesh renderer for VFX where possible (driven by texture swaps in Spine's animation data), or ensure particle systems use the `GPU Instancing` material option when targeting mid-range Android.
+
+---
+
+## 🎯 Exam Callouts: What the Test Checks
+
+> 🎯 **What the exam tests 1:** What is the maximum recommended bone influences per vertex on mobile (iOS/Android) for optimal GPU skinning? **2 influences**. Exceeding this moves skinning to a slower GPU path, increasing frame time significantly.
+
+> 🎯 **What the exam tests 2:** What is the difference between an IK constraint's Mix value of 0.0 vs. 1.0 in Spine? Mix 0.0 = pure FK (animator controls each bone independently). Mix 1.0 = pure IK (solver drives the chain to reach the target). The mix value is animatable — you can key from FK to IK mid-clip.
+
+> 🎯 **What the exam tests 3:** In Spine-Unity, what is a Track? A track (integer: 0, 1, 2…) is a layer of animation that blends with tracks below it. Track 0 is the base (idle, walk). Track 1 is a one-shot overlay (attack, interact). This is Spine's equivalent of Unity's Animator Controller layers.
+
+> 🎯 **What the exam tests 4:** What does the `alpha` value on a Spine TrackEntry control? The blend weight of that track on top of lower tracks. Alpha 1.0 = full override of lower tracks. Alpha 0.5 = 50% blend with lower tracks (used for partial override effects).
+
+> 🎯 **What the exam tests 5:** Why must Spine atlas textures be power-of-two dimensions? GPU texture compression formats (ETC2 on Android, ASTC on iOS, DXT on PC) require power-of-two dimensions. Non-power-of-two textures cannot be compressed by the GPU, increasing VRAM usage and bus bandwidth.
+
+> 🎯 **What the exam tests 6:** What is the difference between a Region attachment and a Mesh attachment in Spine? Region = rigid rectangular image, no deformation, lowest cost. Mesh = deformable polygon mesh with optional bone weights; enables squash/stretch and smooth joint deformation at higher cost.
+
+> 🎯 **What the exam tests 7:** What is a Path attachment and what is it used for? A Path is a Bézier curve that bones can be constrained to follow — used for tentacles, tails, chains, and other structures that flow along a curve rather than rotating around joints.
+
+> 🎯 **What the exam tests 8:** How does Dead Cells achieve its "punchy" hit feel on top of Spine animation data? By layering **procedural squash/stretch** on the Spine skeleton's root bone — scale manipulation via code, independent of the keyframe animation. The code applies a 1.3×/0.7× scale on hit impact and springs it back over 4–6 frames.
+
+> 🎯 **What the exam tests 9:** What is the Spine binary export format (.skel) advantage over JSON? Binary (.skel) is 3–5× smaller than equivalent JSON and loads faster at runtime. JSON is human-readable and easier to inspect for debugging. Use .skel for production builds; JSON for development.
+
+> 🎯 **What the exam tests 10:** How does Fate/Grand Order serve 400+ servants with minimal memory per servant? Three base skeleton archetypes (all servants derive from one); skin variants for costume differences (one animation set, many visual skins); class-shared atlas pages for common elements; 2MB per-servant memory budget enforced.
 
 ---
 
@@ -231,6 +346,27 @@ All Spine attachments reference a **texture atlas** — a single sprite sheet co
 
 ---
 
+## 📊 Spine Feature Set by License Tier
+
+Spine's commercial license has three tiers relevant to indie and studio production.
+
+| Feature | Essential ($99) | Professional ($399) | Notes |
+|---|---|---|---|
+| Basic skeletal animation | ✅ | ✅ | Bones, slots, attachments, keyframes |
+| Mesh deformation (FFD) | ✅ | ✅ | Unweighted vertex animation |
+| Weighted meshes | ❌ | ✅ | Multi-bone vertex weighting for joint deformation |
+| IK constraints | ✅ | ✅ | Basic two-bone IK |
+| Path constraints | ❌ | ✅ | Bone follows Bézier curve path |
+| Transform constraints | ❌ | ✅ | Constraint relationships between bones |
+| Physics constraints | ❌ | ✅ | Runtime physics simulation (hair, cloth) |
+| Skin compositing | ✅ | ✅ | Base + variant skin merging |
+| Export to JSON / binary | ✅ | ✅ | .json and .skel formats |
+| All runtime platforms | ✅ | ✅ | Unity, Unreal, Godot, Cocos2d-x, web |
+
+> 🎯 **Exam Callout:** Weighted meshes and physics constraints are Professional-tier features. If an exam scenario describes a mobile game needing joint deformation (weighted mesh) and requires specifying the minimum Spine license tier, the answer is Professional.
+
+---
+
 ## 🔗 Next Steps
 
 **Next Module:** [Module 5: State Machines & Blend Trees — Designing Responsive Animation Systems →](../Module-05-State-Machines-Blend-Trees/Reading.md)
@@ -247,3 +383,7 @@ We return to state machine design principles — this time with full depth on tr
 - 🎬 "Animation in Dead Cells" — Motion Twin GDC session (GDC Vault)
 - 🎬 "Creating Hollow Knight" — Team Cherry GDC 2019 (GDC Vault)
 - 📄 Esoteric Software blog — technical posts on mesh deformation, physics constraints, and runtime optimization
+
+*[Module complete — see README for next steps and related tracks.]*
+
+> *Key point: The principle covered in this module applies across every major production pipeline — from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*

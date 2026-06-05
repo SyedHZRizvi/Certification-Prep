@@ -233,6 +233,26 @@ A villain can have appeal. Scar in *The Lion King* has enormous appeal — his i
 
 ---
 
+## 🔬 How the Principles Were Actually Discovered: The Research Behind *Bambi*
+
+The 12 Principles were not invented at a desk. They were discovered through obsessive observation — what Frank Thomas later called "the expensive research phase" of Disney's golden age. Understanding how the principles emerged illuminates why they work.
+
+### The Research Process for *Bambi* (1942–1943)
+
+**Step 1: Live animal study.** Disney brought live deer into the studio. Animators spent weeks doing observation drawings — not to copy the deer directly, but to understand the *physics* of deer: how weight transferred through the legs, how the spine flexed during a run, how ears tracked independently of the head.
+
+**Step 2: Film reference.** The studio hired wildlife photographers to film deer in natural settings. Frame-by-frame analysis of this footage produced the first systematic understanding of animal locomotion timing — how many frames a deer's leg spends in each phase of a stride.
+
+**Step 3: Rico LeBrun's anatomy classes.** Disney hired the painter and anatomist Rico LeBrun to teach the animators structural anatomy. LeBrun's approach: understand the skeleton, then the muscle over the skeleton, then the skin over the muscle. This is the construction method applied to living creatures.
+
+**Step 4: The test reel.** Animated scenes were cut into a rough version of the film and screened for internal review. The sequence that showed Bambi's legs sliding in four different directions on the ice came from a test reel critique where the director identified that the movement felt physically inconsistent — the timing of the different limbs was too uniform.
+
+The fix: each leg was given its own timing relationship to the ice surface, based on the physical observation that a deer's four legs are not mechanically linked — each responds independently to friction conditions. The result required animating each leg on a separate timing chart with independent slow-in/slow-out curves.
+
+This is the 12 Principles in embryonic form: observing nature, understanding the physics, then translating that understanding into frame-by-frame decisions that produce emotional truth rather than literal copy.
+
+---
+
 ## 🎭 The Principles in Practice: A Production Matrix
 
 How different studios apply the 12 Principles reveals their aesthetic priorities. This comparison table is a study tool for understanding why films *feel* the way they feel.
@@ -281,6 +301,29 @@ What makes *Cuphead* a useful study case:
 The production team at Studio MDHR studied the films of Max Fleischer, Ub Iwerks, and Walt Disney's earliest shorts exhaustively. The result is a game that functions as a living archive of the 12 Principles as they were originally understood — before digital animation's precision changed the dominant aesthetic.
 
 🎯 **What the exam tests:** Cuphead is frequently used to illustrate the Fleischer-era application of squash/stretch and the rubber-hose aesthetic. Know that this style precedes the 12 Principles' codification — the Fleischer animators were intuiting what Thomas and Johnston would later name.
+
+---
+
+## 📊 The 12 Principles: Exam Frequency and Weight
+
+Based on the curriculum objectives for this course and the patterns of animation program assessments at the certificate level, these are the principles most commonly tested and the form the tests most often take.
+
+| Principle | Exam Frequency | Most Common Question Type |
+|-----------|---------------|--------------------------|
+| **Squash & Stretch** | Very high | Identify in a described scenario; explain volume conservation |
+| **Anticipation** | Very high | Explain emotional function; compare with vs without |
+| **Timing** | Very high | Calculate frame count for described weight; graph editor reading |
+| **Staging** | High | Identify staging problems; distinguish from composition |
+| **Slow-in/Slow-out** | High | Read timing chart or F-curve; identify what motion type is represented |
+| **Follow-through & Overlap** | High | Identify Newton's First Law application; describe the "Bambi ear test" |
+| **Arcs** | Medium | Identify the most common beginner error (linear motion); explain why arcs arise from joint rotation |
+| **Exaggeration** | Medium | Distinguish from cartoon style; apply to realistic drama |
+| **Straight-Ahead vs Pose-to-Pose** | Medium | Identify which method suits dialogue; which suits fire/water effects |
+| **Secondary Action** | Medium | Distinguish from competing action; identify in described scenario |
+| **Solid Drawing** | Lower | Distinguish from "drawing skill"; apply to 3D context |
+| **Appeal** | Lower | Distinguish from cuteness; identify appeal in villain context |
+
+🎯 **Exam strategy:** Know all 12 by name and one-sentence definition. For the top four (Squash/Stretch, Anticipation, Timing, Staging), know at least one film example and one common exam trap.
 
 ---
 
@@ -337,3 +380,5 @@ You now know:
 - 🎬 *Fantasia* (1940) — one of the richest sources of all 12 Principles, particularly arcs, follow-through, and timing to music.
 - 🎬 *Cuphead* (2017, Studio MDHR) — the most comprehensive application of Fleischer-era principles in the 21st century; study the boss animations specifically.
 - 🎬 *Arcane* (Netflix, 2021) — the opposite extreme from Cuphead; near-zero squash/stretch and exaggeration deployed with maximum staging and appeal. Compare with *Cuphead* to understand the full range of the principles in contemporary production.
+
+*[Module complete — see README for next steps and related tracks.]*

@@ -72,6 +72,36 @@ The logo appears to flip in 3D space — most commonly a Y-axis rotation reveali
 
 ---
 
+## 🎯 What the Exam Tests: Logo & Brand Motion
+
+> 🎯 **Exam Callout 1:** The **Trim Paths** effect in AE is what powers draw-on animations. Trim Paths Start and End define what portion of the path is drawn. Animate End from 0% to 100% to draw the path forward. The exam tests: which AE property creates a draw-on effect? Answer: Trim Paths End.
+
+> 🎯 **Exam Callout 2:** For a shape morph to work without twisting, both shapes must have **the same number of anchor points**, and corresponding points must be in logically aligned positions. The exam may ask: what causes a morph to twist? Answer: mismatched or misaligned anchor points.
+
+> 🎯 **Exam Callout 3:** The Netflix "tudum" brand sound was officially added to the Netflix logo animation in **2019**. The exam may test the year or ask which company's brand sound is created by a single two-syllable musical hit at the moment of logo reveal.
+
+> 🎯 **Exam Callout 4:** Broadcast color space for HD delivery is **Rec. 709** (BT.709). Broadcast legal luminance is **16–235** (not 0–255 full range). The exam tests: what is the broadcast-legal luminance range for HD video? Answer: 16–235.
+
+> 🎯 **Exam Callout 5:** The **Action Safe zone** is 93.75% of the composition. The **Title Safe zone** is 80%. Text must stay inside Title Safe. The exam tests: what percentage of the frame is the Title Safe zone? Answer: 80%.
+
+> 🎯 **Exam Callout 6:** Logo clearspace in motion means the minimum space around the logo that must remain free of other elements **during animation** — not just when static. A logo that animates close to the frame edge may briefly violate clearspace even if the final position is correct.
+
+> 🎯 **Exam Callout 7:** The **one-node camera** in AE does not allow vertical horizon tilt (no "tilt" axis) — it only supports pan and zoom. A **two-node camera** uses a Point of Interest and supports full 3D rotation. For logo 3D flips, a one-node camera is typically sufficient.
+
+---
+
+## ⚠️ Common Traps: Brand Motion
+
+**Trap 1 — Draw-On Direction:** The draw-on begins at the **Start** anchor point of the path. If the client expects the draw-on to follow the natural stroke direction (e.g., Nike Swoosh drawn left to right), the path must be drawn in that direction in AE's path tool. Drawing the path in the wrong direction and then reversing it with Trim Paths Start creates unexpected results.
+
+**Trap 2 — 3D Enable on Shape Layers:** Enabling 3D on a shape layer allows Y-axis rotation, but complex shape layers with multiple sub-shapes can render incorrectly in 3D mode (intersections may behave unexpectedly). For 3D logo flips, convert shape layers to pre-comps and enable 3D on the pre-comp layer.
+
+**Trap 3 — Color Profile in Broadcast Delivery:** Designing in sRGB and delivering to a broadcast pipeline without converting to Rec. 709 causes visible color shifts. The fix: set the AE project's Color Settings to Rec. 709 before building the comp, not at export time.
+
+**Trap 4 — Audio-Visual Sync for Brand Sounds:** The Netflix "tudum" and Intel chime are synchronized to the **visual climax** of the logo reveal — not the beginning or middle. Students who add a brand SFX at frame 0 miss the purpose: the sound should arrive at the moment the logo reaches its final, settled state.
+
+---
+
 ## 🎨 Brand Systems in Motion
 
 A brand system in motion means that every animated element — not just the logo — follows a consistent motion vocabulary. This is different from "making things move." It's defining the rules.
@@ -128,6 +158,30 @@ When AE interpolates between two paths with the same point count, it tries to ma
 
 ---
 
+## 🔶 Advanced Shape Morphing: Complex Workflows
+
+Beyond simple two-shape morphs, professional motion designers handle multi-state morphs — a shape that passes through 3, 4, or more distinct forms over the course of an animation.
+
+### The Multi-State Morph Workflow
+
+1. **Create Shape A** as a closed path (e.g., a square with 8 anchor points)
+2. **Add Path keyframe at 0s** — this records Shape A
+3. **Advance to 1s** — modify the path to Shape B (e.g., a rounded rectangle)
+4. **Advance to 2s** — modify the path to Shape C (e.g., the logo mark)
+5. AE interpolates between all three states
+
+**The Point Count Constraint:** All states must have the same anchor point count. If Shape A has 8 points, Shapes B and C must also have 8 points. Add "invisible" points (two points placed on top of each other) to match counts.
+
+### Morph Smoothing with Roving Keyframes
+
+Standard morph keyframes often create uneven velocity — the morph moves faster in some sections and slower in others. Fix: right-click on path keyframes → **Rove Across Time**. This redistributes velocity evenly across the morph.
+
+### The Shape Morph Plugin Option
+
+For complex morphs (10+ points, organic forms), the **DUIK Ángela** plugin provides path morphing with automatic point matching. It analyzes both paths and attempts to match corresponding points algorithmically — significantly reducing the manual point-matching work.
+
+---
+
 ## 📺 Broadcast Package Design
 
 A broadcast package is a coordinated set of motion graphics assets for a television show, network, or event — including:
@@ -149,6 +203,36 @@ All broadcast graphics exist on a 16:9 grid (1920×1080 or 3840×2160 for 4K) wi
 Broadcast video uses BT.709 (HD) or BT.2020 (HDR) color spaces. Consumer screens use sRGB. If you design in sRGB and deliver for broadcast without converting, colors can appear crushed or oversaturated.
 
 > 🎯 **Exam Tip:** After Effects compositions should be set to **Rec. 709** color profile for broadcast delivery. Levels must stay within **broadcast legal** ranges: luminance between 16–235 (not 0–255 full range) for SD/HD broadcast.
+
+---
+
+## 🎨 Brand Sound Pairing for Logo Animation
+
+Every major brand animation now has a sonic signature. Sound is the missing dimension in many logo reveals. Here are the principles for pairing sound with visual logo motion:
+
+### The Hit Point Rule
+The sound's most prominent moment (its attack transient) should hit within ±2 frames of the logo's most prominent visual moment (its final snap to position or peak of exaggeration). Off by more than 2 frames = perceptibly out of sync.
+
+### Sound-to-Technique Mapping
+
+| Logo Technique | Appropriate SFX Category | Duration |
+|---------------|--------------------------|---------|
+| Draw-on | Soft whoosh (low → high) | Match draw duration |
+| Morph | Transformation sound (texture shift) | Match morph duration |
+| 3D Flip | Mechanical swipe + impact hit | 12–18f impact |
+| Scale burst | Sharp impact + resonance | 4–6f attack |
+| Opacity fade | Soft chime or no SFX | N/A |
+
+### The Sonic Personality Framework
+
+Before choosing a sound, define the brand's sonic personality:
+- **Authoritative:** Low-frequency hits, minimal sustain, no reverberation
+- **Playful:** Higher-frequency pops, spring sounds, slight reverb
+- **Luxurious:** Long sustain, warm reverb, orchestral elements
+- **Technical/Innovative:** Synthesized sounds, no organic instrument qualities
+- **Friendly:** Soft chimes, slightly rounded attacks, medium reverb
+
+> 🎯 **Exam Callout 8 (Logo):** The choice between a soft whoosh and a hard impact for a logo reveal is a brand personality decision, not a technical one. The exam may present a scenario where you must select the appropriate SFX for a given brand — match the sound's perceptual qualities to the brand adjectives.
 
 ---
 
@@ -186,6 +270,43 @@ Broadcast video uses BT.709 (HD) or BT.2020 (HDR) color spaces. Consumer screens
 
 ---
 
+## 🔧 Exporting Logo Animations for Multiple Contexts
+
+A professional logo animation rarely ships as a single file. Clients typically need:
+
+| Deliverable | Format | Specs | Use Case |
+|------------|--------|-------|---------|
+| Website hero | Lottie JSON | Shape layers only, no effects | Web page header |
+| Email signature | Animated GIF | Max 500KB; 256 colors | Email clients |
+| Social media | MP4, H.264 | 1080×1080 or 1080×1920, 30fps | Instagram, LinkedIn |
+| Broadcast | ProRes 4444 | 1920×1080, Rec. 709 | TV broadcast |
+| Presentation | MP4 or GIF | PowerPoint/Keynote compatible | Slide decks |
+| Print-adjacent | Static frame (PNG) | Transparent background, 300dpi | The "approved rest state" |
+
+**The "Approved Rest State":** Every logo animation should have an approved final frame — the position the logo rests in after the animation completes. This frame is the logo's "static" version. For all print and static digital use, the client uses this specific frame, not an arbitrary still.
+
+**The Delivery Folder Structure:**
+```
+ClientName-LogoAnimation/
+  01_Broadcast/
+    logo-reveal-1920x1080-h264.mp4
+    logo-reveal-1920x1080-prores4444.mov
+  02_Web/
+    logo-reveal-animation.json  (Lottie)
+    logo-reveal-512x512.mp4     (fallback)
+  03_Social/
+    logo-reveal-1080x1080.mp4
+    logo-reveal-1080x1920.mp4
+  04_Presentation/
+    logo-reveal-1920x1080.gif
+  05_Static/
+    logo-reststate-transparent.png
+  06_Source/
+    logo-reveal.aep             (AE project)
+```
+
+---
+
 ## 📋 Summary
 
 | Technique | Best For | Key Setup |
@@ -208,10 +329,62 @@ Broadcast video uses BT.709 (HD) or BT.2020 (HDR) color spaces. Consumer screens
 
 ---
 
+## 🎬 Case Study: The Netflix Intro — Full Technical Analysis
+
+The Netflix "N" reveal is one of the most technically ambitious logo animations in streaming media. Here is the full breakdown:
+
+**Phase 1 — The Layers Separate (0–1.5s):**
+The "N" shape is composed of four layered strips in Z-space (the depth axis). At the start of the animation, these strips pull apart — each moving to a different Z-position. The effect is that the flat 2D mark seems to have depth — like it was always a three-dimensional object that we're seeing for the first time.
+
+**Phase 2 — The Reveal (1.5–3.0s):**
+The strips rotate slowly in X-axis space, catching light differently as they turn. The color transitions from deep red through cinematic light values — creating the impression that the N is metallic or filmic rather than flat digital.
+
+**Phase 3 — The Collapse (3.0–3.5s):**
+All four strips slam back together to Z=0, collapsing the 3D illusion back into the flat mark. This is where the "tudum" sound hits — precisely at the moment of collapse, not before.
+
+**Phase 4 — Hold (3.5–4.75s):**
+The mark holds for 1.25 seconds. This is an extraordinarily long hold for a 4-second brand ident. The reasoning: the "tudum" continues to resonate, and the viewer's brain needs time to process the identity claim ("This is Netflix content"). The hold is not dead time — it is intentional perceptual space.
+
+**The Sound Design:**
+The "tudum" was engineered by Lon Bender, a two-time Oscar-winning sound designer. It is a single sound composed of a high-frequency attack (the "tu") and a low-frequency resonance (the "dum"). The high frequency registers consciously; the low frequency registers subliminally. This is why the sound feels larger than it sounds in isolation.
+
+**The Lesson:**
+Breakdowns like this are how motion designers develop taste. Study the work you admire at the technical level: which frame does the sound hit? How many pixels does the squash overshoot? What is the exact easing curve on the collapse? When you can answer these questions about the work you admire, you can apply the same thinking to your own.
+
+---
+
+## 📊 Logo Reveal Technique Selection Guide
+
+| Logo Characteristic | Recommended Technique | Timing Range | Easing |
+|--------------------|-----------------------|--------------|--------|
+| Handwritten / script letterforms | Draw-on | 12–24f | Ease-In |
+| Geometric / abstract mark | Morph | 16–30f | Ease-In-Out |
+| Bold, flat, simple mark | 3D Flip | 20–36f | Spring |
+| Multi-element wordmark | Staggered draw-on | 8–14f per element | Ease-Out |
+| Icon + wordmark | Icon first, wordmark follows | 12f + 8f stagger | Ease-Out |
+| Detailed, complex mark | Opacity reveal (no structural animation) | 18–24f | Ease-In-Out |
+
+---
+
+## 🗣️ Socratic Discussion Questions
+
+1. Nike's Swoosh animates using ease-in — accelerating toward the end of the stroke. This communicates athletic momentum. What would ease-out communicate for the same animation? Which brand contexts might prefer ease-out for a draw-on logo reveal?
+
+2. The Netflix "tudum" is now one of the most recognized brand sounds in history. But Netflix tested many versions before settling on it. What principles from Module 9 (Sound Design) govern how you would evaluate five candidate brand sounds against a logo animation?
+
+3. A client gives you a brand identity with a very complex, multi-path logo that was designed for print. It has 47 separate anchor points. How do you approach building a draw-on animation for this logo without it looking chaotic?
+
+4. The Google logo uses four specific colors always in the same order (blue, red, yellow, green). If a client asked you to animate their logo in brand colors but didn't have a canonical color order, how would you establish one, and how would you explain to the client why order matters in motion?
+
+5. Brand motion guides document what a logo can and cannot do. But clients often want "something different" for a special campaign. How do you evaluate whether a one-time departure from the brand motion guide is acceptable vs damaging to brand consistency?
+
+---
+
 ## 📚 Further Reading
 
-- *Logo Design Love* — David Airey (New Riders) — logo principles before motion
-- *Designing Brand Identity* — Alina Wheeler (Wiley)
-- [Netflix Design Blog — The N](https://netflixtechblog.com)
-- [Google Design — Motion Principles](https://design.google/library/motion-design-principles/)
-- [School of Motion — Logo Animation Tutorial](https://www.youtube.com/results?search_query=school+of+motion+logo+animation+after+effects)
+- *Logo Design Love* — David Airey (New Riders, 2nd ed. 2015) — logo principles and mark design before motion; essential context for understanding what you're animating
+- *Designing Brand Identity* — Alina Wheeler (Wiley, 5th ed. 2017) — the most comprehensive brand systems book; the motion chapter has grown with each edition
+- *The Illusion of Life: Disney Animation* — Frank Thomas & Ollie Johnston (Disney Editions, 1981) — pp. 47–68 cover the physics principles behind character animation that directly apply to logo reveals
+- [Netflix Design Blog](https://netflixtechblog.com) — includes the technical documentation of the "N" ident and the reasoning behind it
+- [Google Design — Motion Principles](https://design.google/library/motion-design-principles/) — Google's published motion spec, including the four-color animation rules
+- [School of Motion — Logo Animation Tutorial](https://www.youtube.com/results?search_query=school+of+motion+logo+animation+after+effects) — the most-used free tutorial for all three logo reveal techniques

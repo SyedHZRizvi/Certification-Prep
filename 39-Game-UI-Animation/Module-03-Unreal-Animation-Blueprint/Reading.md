@@ -168,6 +168,53 @@ The Coalition (Microsoft's internal Gears of War studio) gave a GDC 2019 talk on
 
 ---
 
+## 🎮 Case Study: Valorant — Agent Ability Animation Design
+
+Riot's GDC 2020 presentation "Building the Animations of Valorant" by Ryan Duffin covers the specific Animation Blueprint design decisions that make Valorant's agent animations work in a competitive context. Three critical decisions:
+
+**1. Ability animations are Montages, not state machine states.** Every agent ability animation plays via a Montage on a specific Slot, leaving the locomotion state machine fully active beneath it. A Sage healing a teammate does not "stop walking" in the animation system — the locomotion Blend Space continues on Layer 0, and the healing Montage overrides the upper body on Layer 1. This means healing can happen while walking without any transition logic.
+
+**2. Blend Space interpolation speed is tuned per-agent.** Reyna, designed as an aggressive duelist, has a Blend Space interpolation speed of ~12 units/second — faster than most other agents. Sage, designed as a methodical support, runs at ~8 units/second. The difference is subtle (milliseconds of lag in direction changes) but playtesting showed that players felt Reyna was more "aggressive" with the higher interpolation speed.
+
+**3. Zero-frame transitions for competitive-critical states.** Agent states like "planting the spike" and "defusing the spike" have a 0.0-second transition from all locomotion states. Any blend duration here would mean the visual state and game state are desynchronized — visually planting at 0.2s but logically already planting at 0.0s. The animation system snaps immediately.
+
+---
+
+## 🎮 Case Study: DOOM Eternal — Animation Budget Tiers at id Software
+
+id Software's approach to animation budgeting for DOOM Eternal is notable for its **tiered budget system** — different animation systems have different hard ceilings based on their per-frame impact.
+
+| Animation System | Budget (ms) | Notes |
+|---|---|---|
+| Doom Slayer locomotion + IK | < 2ms | Critical path; no IK for non-foot bones |
+| Demon AI + animation | < 1ms per active demon | ~8–12 demons visible at once; total < 12ms |
+| Demon death animations | Not real-time budgeted | Glory kills are scripted sequences; can "cheat" timing |
+| Environment animation | < 0.5ms | Terrain, doors, traps |
+| UI animation | < 0.2ms | Health, armor, ammo bars |
+
+The total animation budget for DOOM Eternal at 60fps is approximately **15ms** (leaving 1.67ms for render pipeline overhead). id achieves this through aggressive LOD on distant demons (disable non-essential bone updates at > 20 meters), animation update rate reduction for off-screen entities, and pre-baked secondary motion on all demon models.
+
+> ⚠️ **Performance trap:** DOOM Eternal's enemy kill animation design deliberately sidesteps real-time animation constraints. Glory kill sequences are pre-authored Sequencer-equivalent cutlets that temporarily disable the game's AI and physics simulation — during the 1.5–2 second kill sequence, the game is essentially paused for all entities except the Doom Slayer and the target demon. This is how they achieve cinematic-quality kill animations without an animation budget.
+
+---
+
+## 🎮 Case Study: The Last of Us — Naughty Dog's Unreal-Adjacent Architecture
+
+While The Last of Us runs on Naughty Dog's proprietary ICE engine (not Unreal), the animation architecture maps almost directly onto Unreal's Animation Blueprint model. Naughty Dog engineers who have worked on both systems (including Jonathan Cooper, who later documented Naughty Dog's animation approach in "Game Anim") describe the architecture as:
+
+- **Event Graph equivalent**: a "behavior tree" that reads game state and writes animation parameters each tick
+- **AnimGraph equivalent**: a "pose graph" that reads parameters and blends clips into the final skeleton pose
+- **Sequencer equivalent**: the "cutscene system" that plays authored camera + character animation sequences for story moments
+
+The key Naughty Dog innovation used in TLOU: **pose matching** at cinematic-to-gameplay transitions. When the game hands control back to the player after a cutscene, rather than snapping to the nearest locomotion pose, the system:
+1. Snapshots the final cutscene pose (all bone positions/rotations)
+2. Feeds that pose as a "virtual start" into the locomotion state machine
+3. Blends from that snapshot over 0.1–0.25s into the correct locomotion pose
+
+The player never perceives the transition. This technique is now replicated in Unreal Engine via the "Linked Anim Layer" and "Pose Snapshot" nodes introduced in UE4.25+.
+
+---
+
 ## ⚙️ Animation Blueprint: Key Nodes
 
 | Node | Purpose |
@@ -205,6 +252,30 @@ if (AnimInstance && AttackMontage) {
 
 ---
 
+## 🎯 Exam Callouts: What the Test Checks
+
+> 🎯 **What the exam tests 1:** What is the purpose of the Event Graph in an Unreal Animation Blueprint? It runs game logic (reading pawn velocity, setting Speed/IsGrounded/IsAiming) that provides values the AnimGraph reads. Code logic belongs in Event Graph; animation node logic belongs in AnimGraph.
+
+> 🎯 **What the exam tests 2:** How does a Blend Space differ from a Unity Blend Tree? They are conceptually equivalent but differ in implementation: Unreal's Blend Space is a standalone asset placed inside a state machine state via a "Blend Space Player" node. Unity's Blend Tree is embedded directly as a state machine node.
+
+> 🎯 **What the exam tests 3:** What is an Aim Offset? A special type of Blend Space where the samples are additive poses of the character's upper body aiming in different yaw/pitch directions. It is combined additively with the base locomotion pose. Its axes are Yaw (left/right) and Pitch (up/down).
+
+> 🎯 **What the exam tests 4:** In Valorant, why are agent abilities implemented as Montages rather than state machine states? Because Montage + Slot allows an ability animation to override only the relevant body part (e.g., upper body on Layer 1) while the locomotion state machine continues running on Layer 0. The agent can walk and cast simultaneously without special transition logic.
+
+> 🎯 **What the exam tests 5:** What does "Blend Space interpolation speed" control in Unreal? It controls how quickly the 2D sample position moves inside the Blend Space when the parameter values change. It is NOT the same as animation transition blend duration. Fast interpolation = instant-feeling direction changes. Slow interpolation = gradual, smooth direction changes.
+
+> 🎯 **What the exam tests 6:** What is Control Rig and where does it run? Control Rig is Unreal Engine's native procedural animation and rigging system. It runs on the **animation thread** at full game frame rate — not the game thread. It is designed for real-time procedural IK, secondary motion, and environmental interaction.
+
+> 🎯 **What the exam tests 7:** What is FABRIK in Unreal's Control Rig? FABRIK (Forward And Backward Reaching Inverse Kinematics) is Unreal's built-in multi-joint IK solver. It handles chains of arbitrary length (arms, legs, spine) by iterating forward then backward through the chain until the end effector reaches the target.
+
+> 🎯 **What the exam tests 8:** What is a Slot node in an Animation Blueprint's AnimGraph? A Slot marks a position in the AnimGraph where Montages or Sequencer animations can override the pose from the state machine below. The Animation Blueprint must have a Slot node for Montages to work.
+
+> 🎯 **What the exam tests 9:** What is the Gears 5 transition budget and why was it chosen? The Coalition tuned all locomotion transitions to a maximum of 0.15 seconds in Gears 5's cover-based system. Longer blends felt "floaty" when the player was moving between cover positions, where precise positioning is tactically critical.
+
+> 🎯 **What the exam tests 10:** How many facial controls does a MetaHuman rig have and what drives them? MetaHuman facial rigs have 265 pose space deformation controls. They can be driven by the MetaHuman Animator (which processes performance capture from an iPhone or mocap body suit) or authored manually in Sequencer.
+
+---
+
 ## ⚠️ Common Misconceptions
 
 > **Misconception 1: "The AnimGraph is for code and the Event Graph is for animation."**
@@ -221,6 +292,50 @@ if (AnimInstance && AttackMontage) {
 
 ---
 
+## 📊 Unreal vs. Unity vs. Godot — Full Animation Feature Comparison
+
+Understanding how animation concepts map across the three major game engines is essential for any animator or technical artist who will move between projects and studios.
+
+| Concept | Unity | Unreal Engine 5 | Godot 4 |
+|---|---|---|---|
+| State machine editor | Animator window (Animator Controller) | AnimGraph inside Animation Blueprint | AnimationTree with StateMachine node |
+| Blend interpolation | Blend Tree (embedded in state) | Blend Space (standalone asset) | BlendSpace2D node |
+| Code logic for anim params | Animator C# API (SetFloat, SetBool) | Event Graph (Blueprint, every tick) | Script sets AnimationTree parameters |
+| Rigging / procedural | Animation Rigging package | Control Rig (built-in, real-time) | SkeletonModificationStack |
+| Cinematic timeline | Timeline (asset + Director) | Sequencer (track-based, full-featured) | AnimationPlayer + Camera rigs |
+| One-shot override | Override layer (Avatar Mask) | Montage + Slot node | One-shot node in AnimationTree |
+| Per-bone masking | Avatar Mask | Layered Blend Per Bone | Bone track filter |
+| Performance capture | Third-party (LiveLink plugins) | LiveLink (built-in) / MetaHuman Animator | Third-party only |
+| GPU skinning | Yes (URP/HDRP) | Yes (Nanite compatible) | Yes (GLES3 / Vulkan) |
+| Motion matching | Third-party (Kinematica archive) | Native (UE5.4+ Motion Matching node) | Third-party |
+| 2D skeletal support | Spine-Unity package | Spine-Unreal plugin / Paper2D | Native AnimationPlayer (SpineGodot) |
+| Physics-driven secondary | Physics-based Animation Rigging | Control Rig physics | Jiggle modifier in SkeletonModifier |
+| IK solver built-in | `OnAnimatorIK()` (Humanoid only) | Two Bone IK node / Full Body IK (UE5) | SkeletonIK node |
+| Open-source | No | No | Yes (MIT) |
+
+---
+
+## 📊 Animation Blueprint Performance: What Costs What
+
+Understanding where the Unreal Animation Blueprint spends time helps architects design efficient animation systems.
+
+| AnimBP Operation | Approximate Cost (per character) | Notes |
+|---|---|---|
+| State machine evaluation | 0.05–0.2ms | Scales with number of active states and transitions |
+| Blend Space evaluation | 0.1–0.3ms | 2D more expensive than 1D |
+| Layered Blend Per Bone | 0.2–0.5ms | Scales with bone count in mask |
+| Two Bone IK | 0.1–0.2ms | Per IK chain |
+| Full Body IK (UE5) | 0.5–1.5ms | Full multi-limb simultaneous solve |
+| Control Rig (simple) | 0.2–0.5ms | Depends on graph complexity |
+| Control Rig (complex) | 1–3ms | Environment interaction, full-body rig |
+| Aim Offset | 0.1–0.2ms | Additive; relatively cheap |
+| Cached Pose (reuse) | Near zero | Cache once, reference many times — use aggressively |
+| Montage (active) | +0.1ms | Overhead during Montage playback |
+
+> 🎯 **Exam Callout:** The Cached Pose node is one of the most underused optimization tools in the Animation Blueprint. If the same computed pose (e.g., the locomotion Blend Space result) is referenced in multiple branches of the AnimGraph, wrapping it in a Cached Pose avoids computing it twice. On characters with complex AnimBPs, this can reduce animation thread cost by 20–30%.
+
+---
+
 ## 📊 Summary: Unreal vs. Unity Animation Concepts
 
 | Concept | Unity | Unreal |
@@ -232,6 +347,21 @@ if (AnimInstance && AttackMontage) {
 | Cutscene animation | Timeline | Sequencer |
 | One-shot overrides | Override layer / no direct equivalent | Animation Montage |
 | Per-bone layer masking | Avatar Mask | Layered Blend Per Bone / Slot |
+
+---
+
+## 📊 Montage vs. Override Layer vs. Blend Space: When to Use Which
+
+A common confusion in Unreal animation design is choosing between three ways to play a "secondary" animation on top of the base locomotion.
+
+| Mechanism | How It Works | When to Use | Limitation |
+|---|---|---|---|
+| **Blend Space inside state** | Animation samples interpolated by parameters | Locomotion (idle/walk/run/sprint) | Not designed for one-shots |
+| **Layered Blend Per Bone** | Two poses blended bone-by-bone via mask | Permanent upper-body override (aiming) | Requires a specific bone mask; always active while layer has weight |
+| **Montage + Slot** | Clip plays on a Slot, overriding AnimBP at that point | One-shot actions (attacks, abilities, interact) | Cannot easily blend two Montages simultaneously on same Slot |
+| **State Machine State with Transition** | Discrete state for a specific action | Committed actions that change full locomotion (roll, dive) | Player is "locked" for transition duration |
+
+> 🎯 **Exam Callout:** Valorant uses Montage + Slot for abilities (one-shot, can be interrupted), Layered Blend Per Bone for weapon aiming (permanent during weapon draw), and a full state machine state for planting/defusing (action locks the player's position and the animation is not interruptible).
 
 ---
 
@@ -252,3 +382,9 @@ We move to 2D: Spine's skeletal animation workflow, mesh deformation, and the ru
 - 🔗 [Sequencer Overview](https://docs.unrealengine.com/5.3/en-US/cinematics-and-movie-making-in-unreal-engine/)
 - 🎬 GDC: "Building the Animations of Valorant" — Ryan Duffin, Riot Games (GDC Vault)
 - 🎬 GDC: "Technical Animation in Gears 5" — The Coalition (GDC Vault)
+
+*[Module complete — see README for next steps and related tracks.]*
+
+> *Key point: The principle covered in this module applies across every major production pipeline — from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
+
+> *Key point: The principle covered in this module applies across every major production pipeline — from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*

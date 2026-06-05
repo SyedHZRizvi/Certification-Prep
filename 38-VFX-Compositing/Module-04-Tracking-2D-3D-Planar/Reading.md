@@ -64,7 +64,22 @@ Use it to:
 4. Apply to a Null Object
 5. Use the track data to drive **Corner Pin** on the replacement element
 
-> 🚨 **Trap:** Two-point tracking assumes the surface is **planar** and **rigid**. Tracking a waving flag or a curved surface with two-point tracking produces incorrect results. For non-flat surfaces, use a planar tracker or roto.
+> ⚠️ **Rookie mistake:** Two-point tracking assumes the surface is **planar** and **rigid**. Tracking a waving flag or a curved surface with two-point tracking produces incorrect results. For non-flat surfaces, use a planar tracker or roto.
+
+---
+
+## 📊 Tracking Algorithm Comparison
+
+Understanding how tracking algorithms work — and why each fails — is an exam-level topic:
+
+| Algorithm | How It Works | Best Scene | Failure Mode |
+|-----------|-------------|-----------|-------------|
+| **Correlation** (AE built-in) | Compares feature region texture across frames; finds best match by correlation score | Distinct texture, consistent lighting | Motion blur, low contrast, similar-texture features |
+| **Optical Flow** (Mocha planar) | Models the motion of a coherent plane of pixels using the Lucas-Kanade algorithm | Any textured surface | Feature-poor surfaces (clear glass, uniform walls) |
+| **Structure from Motion** (3DE, SynthEyes) | Recovers 3D camera from multiple 2D feature tracks; solves camera matrix mathematically | Feature-rich scenes with clear parallax | Purely 2D camera moves (no parallax = unsolvable) |
+| **Machine Learning** (AE Warp Stabilizer optical flow) | Neural network estimates motion fields across the frame | Uniform motion, short clips | Complex motion, overlapping objects |
+
+> 🎯 **What the exam tests:** Structure from Motion requires parallax — the camera must translate (move in 3D space) for the 3D solve to work. A shot where the camera only rotates (pans/tilts) cannot be solved with SfM because there is no parallax to establish 3D depth.
 
 ---
 
@@ -101,7 +116,7 @@ Warp Stabilizer (built into After Effects as an effect) is a reverse tracker —
 | **Framing: Stabilize, Crop** | Crops into the frame to compensate; fastest |
 | **Framing: Synthesize Edges** | Fills the edges using content-aware fill (AE 2019+) |
 
-> 🎯 **Exam Tip:** Warp Stabilizer and the 2D Tracker both perform tracking, but in opposite directions. The 2D tracker attaches elements TO the camera movement. Warp Stabilizer removes the camera movement from the footage.
+> 🎯 **What the exam tests:** Warp Stabilizer and the 2D Tracker both perform tracking, but in opposite directions. The 2D tracker attaches elements TO the camera movement. Warp Stabilizer removes the camera movement from the footage.
 
 ---
 
@@ -134,18 +149,35 @@ For film-quality 3D camera solves, **3DEqualizer** (by Science-D-Visions) is the
 
 AE's 3D Camera Tracker is sufficient for broadcast and commercial work. For film pipeline work, 3DEqualizer is expected.
 
-### Blender Camera Solving
+### Solver Comparison: Which Tool for Which Job
 
-Blender's **Motion Tracking workspace** provides a free 3D camera solver:
+| Factor | AE 3D Camera Tracker | SynthEyes | 3DEqualizer |
+|--------|---------------------|----------|------------|
+| Cost | Included with AE | ~$400 one-time | ~$700/year |
+| Accuracy | Good for broadcast | Film-quality | Film-industry standard |
+| Lens distortion | Basic | Comprehensive | Full anamorphic + spherical |
+| On-set survey data input | No | Yes | Yes (primary use case) |
+| Export targets | AE native | Maya, Nuke, Blender, C4D | Maya, Houdini, Nuke |
+| Learning curve | Low | Medium | High |
+| Used at | Broadcast, commercial | Indie film, mid-tier | ILM, Weta, Framestore, MPC |
 
-1. Import footage into the **Movie Clip Editor**
-2. Place tracking markers on distinctive features
-3. Run **Track Markers** forward
-4. In the **Solve** panel, click **Solve Camera Motion**
-5. The solve produces a camera in Blender's 3D viewport
-6. Export: render 3D elements from the solved camera, composite in AE or Nuke
+---
 
-Blender's solver is adequate for low-to-mid complexity shots and excellent for learning the workflow.
+## 🎬 Case Study: Jurassic World — Tracking CG Dinosaurs to Live Plates
+
+The modern Jurassic franchise uses *Jurassic Park*'s original insight — that tracking must be precise to create believable creature integration — with updated tools that were not available in 1993.
+
+### The Jurassic World Pipeline
+
+For creature shots in *Jurassic World: Dominion* (2022, ILM and Territory Studio), the matchmove workflow was:
+
+1. **On set:** Tracking markers placed on every surface the dinosaur would touch or shadow — the ground, vehicle hoods, actor costumes when practical
+2. **3DEqualizer solve:** The TD (Technical Director) built a precise camera solve using both the visual feature points and the physical survey data (measured marker positions from set)
+3. **Scene geometry reconstruction:** 3DE generated a point cloud of the environment; the 3D department used this to build collision geometry for creature foot-plants
+4. **Creature animation:** ILM animators worked in Maya against the solved camera, blocking creature movement so that foot contacts, shadow directions, and scale all matched the plate
+5. **Compositing:** Nuke compositors matched the dinosaur renders to the plate using interactive light, depth-of-field matching from the Z-pass, and contact shadows on the tracked ground plane
+
+> 🎯 **What the exam tests:** The reason on-set survey data (measured marker positions in world space) is critical for creature shots is that without it, the 3D solve produces a camera that may be mathematically consistent but at the wrong scale. A Velociraptor rendered at 6 feet tall against a 3D solve that thinks the camera is 3 feet from the ground will appear too large or too small in the plate.
 
 ---
 
@@ -177,7 +209,95 @@ Screen replacement (replacing a phone screen, TV monitor, or computer display in
 3. Drive the four Corner Pin coordinates from the tracking data
 4. Add a **Screen** or **Multiply** blend mode on the replacement to simulate the screen's self-illumination and glass reflections
 
-> 🚨 **Trap:** A replacement screen that doesn't pick up the glare and reflections from the room looks wrong even if the tracking is perfect. A quick tip: use the Add blend mode at ~80% opacity on a Screen texture overlay to simulate the glass's reflective surface.
+> ⚠️ **Rookie mistake:** A replacement screen that doesn't pick up the glare and reflections from the room looks wrong even if the tracking is perfect. Use the Add blend mode at ~80% opacity on a Screen texture overlay to simulate the glass's reflective surface.
+
+---
+
+## 🔬 When Tracking Fails: Diagnosis and Recovery
+
+Professional tracking rarely succeeds perfectly on the first pass. Understanding why a track fails — and how to recover — is a critical skill:
+
+### Common Track Failure Modes
+
+| Failure Symptom | Most Likely Cause | Recovery |
+|-----------------|------------------|---------|
+| Track drifts off feature | Feature texture changes (lighting, motion blur) | Relocate track point to a more stable feature; use manual keyframes where drift occurs |
+| Track jumps on specific frames | Motion blur or object passes in front of feature | Manually key the track point position on affected frames |
+| 3D solve produces too many track errors | Insufficient feature points, or too-short track duration | Add more manual tracking points; extend track coverage |
+| 3D solve gives wrong scale | No survey data; only visual features used | Input on-set measured marker positions as world-space constraints |
+| Planar track loses track | Surface texture changes (specular shift, object passing in front) | Draw smaller tracking region; avoid specular hotspots |
+| Warp Stabilizer over-smooths | Smooth Motion settings too aggressive | Reduce Smoothness percentage; switch to Stabilize Only if needed |
+
+### Manual Track Correction
+
+When automated tracking fails on specific frames:
+1. Identify the failing frame range (track data shows sudden position jump)
+2. Delete keyframes for the failing range
+3. Manually key the feature position at the first and last frame of the range
+4. Let AE or Mocha interpolate between the correct manual keyframes
+5. Refine if the interpolation path doesn't match the actual motion
+
+> 🎯 **What the exam tests:** A track that "mostly works" with a few bad frames is corrected by manual keyframing at the correct feature position — not by re-tracking the entire shot. Isolated track failures require targeted correction, not a full restart.
+
+---
+
+## 🔬 Full Tracking Vocabulary Reference
+
+| Term | Definition |
+|------|-----------|
+| Track point | A pixel region the tracker analyzes to recover motion data |
+| Feature region | The inner tracking box — the template pixel pattern |
+| Search region | The outer tracking box — the area searched each frame |
+| Matchmove | The process of recovering a 3D camera from 2D footage |
+| Parallax | Apparent relative motion between near and far objects as camera translates |
+| Corner Pin | A 4-corner perspective transform driven by tracking data |
+| Structure from Motion | Algorithm recovering 3D camera from 2D motion via parallax |
+| Survey data | Physically measured real-world positions of tracking markers on set |
+| Lens undistortion | Removing optical distortion from footage before tracking |
+| Solve residual | The average pixel error of a 3D camera solve — lower = more accurate |
+| World space | 3D coordinate system of the real environment |
+
+---
+
+## 🎬 Screen Replacement at Scale: Production Workflow
+
+Screen replacement — replacing phone, computer, and monitor screens in live-action footage — is one of the most common tracking tasks in episodic and feature production.
+
+### The Production Workflow for Screen Replacement at Scale
+
+For a feature film with 50+ screen replacement shots, the pipeline must be standardized:
+
+1. **On set:** The prop screen shows a neutral gray card or a placeholder graphic. The brightness of the placeholder matches the intended final screen brightness.
+2. **Mocha Pro tracking:** Every screen is tracked with Mocha Pro's planar tracker. The data is exported as AE Corner Pin coordinates.
+3. **Screen template delivery:** The art department delivers final screen graphics as 1920×1080 or 4K video files.
+4. **Composite:** Each screen receives the Corner Pin track, the replacement graphic, and a Screen blend at ~70–85% opacity to simulate screen glow and glass overlay.
+5. **Reflection layer:** A low-opacity blurred environment reflection at 5–15% Screen blend simulates the physical glass.
+
+> 🎯 **What the exam tests:** The Screen blend mode on a screen replacement simulates the screen's self-emission of light through the glass. The reflection pass simulates physical glass. A screen replacement without these two elements looks pasted-on regardless of tracking accuracy.
+
+### Screen Replacement Blend Mode Decision
+
+| Blend Mode | Result | When to Use |
+|-----------|--------|------------|
+| Normal | Full replacement, no glass simulation | Prop screen has no glass or bezel |
+| Screen | Additive blend; simulates self-illuminating screen | Most phone/tablet/monitor replacements |
+| Multiply | Darkens; simulates a projected display | Projected screen on a wall |
+| Add | Very bright blend | Neon signage, LED display in outdoor scenes |
+
+---
+
+## 🎯 What the Exam Tests — Module 4
+
+1. **Structure from Motion requires parallax:** A purely rotational camera move cannot be solved with SfM because no parallax is generated — 3D depth cannot be established.
+2. **Mocha vs AE point tracker:** Mocha uses planar optical flow — it tracks the entire surface plane, not individual points. It continues tracking when points go off-screen.
+3. **Warp Stabilizer direction:** Warp Stabilizer removes camera motion. The 2D tracker attaches elements TO camera motion. Opposite applications of the same tracking math.
+4. **3DEqualizer's input data:** Takes both visual feature points AND physical on-set survey measurements (marker positions in 3D world space) to achieve sub-pixel accuracy.
+5. **Why survey data matters:** Without real-world scale from survey data, a camera solve may be mathematically consistent but at wrong scale — CG elements will be the wrong size.
+6. **Two-point tracking limitation:** Assumes a planar, rigid surface. Fails on curved or deforming surfaces (flags, faces, cloth).
+7. **Good tracking features:** High contrast, unique texture (corners/edges), stays visible throughout shot, not on deforming surfaces.
+8. **Corner pin four-point requirement:** Screen replacement requires tracking all four corners of the screen. Two-point tracking does not capture perspective skew.
+9. **Object tracking:** After camera solve, object tracking recovers the 3D position of a moving object within the scene — used for creature foot-plants, vehicle attachment, actor eyeline matching.
+10. **AE 3D tracker output:** Creates AE native camera + Null objects at selected world-space positions. Elements parented to Nulls follow 3D camera perspective correctly.
 
 ---
 
@@ -191,12 +311,62 @@ Screen replacement (replacing a phone screen, TV monitor, or computer display in
 | Attach CG element to real environment | AE 3D Camera Tracker (commercial) or 3DEqualizer (film) |
 | High-precision film matchmove | 3DEqualizer + on-set measurements |
 | Free/indie 3D camera solve | Blender Motion Tracking |
+| Creature on-set integration | 3DEqualizer + survey data + Maya animation |
 
 ---
 
 ## 🎯 Next Steps
 
 Module 5 moves from tracking (attaching elements to footage) to creating elements from scratch — particle systems. Trapcode Particular's physics simulation engine lets you build fire, smoke, dust, and magical effects with physical accuracy.
+
+---
+
+## 📊 Tracking Quick-Reference: What Each Tool Solves
+
+| Need | Degrees of Freedom Solved | Tool |
+|------|--------------------------|------|
+| Pin a logo to a wall (no camera move) | X/Y translation | AE 1-point track |
+| Replace a sign, match rotation as it turns | Translation + rotation + scale | AE 2-point track |
+| Replace a phone screen with perspective shift | Full 2D perspective (4 DOF) | Mocha AE planar track → Corner Pin |
+| Stabilize shaky handheld documentary footage | Remove all camera shake | AE Warp Stabilizer |
+| Add a CG car to a driving plate (broadcast) | Full 3D camera + world position | AE 3D Camera Tracker |
+| Add a CG creature to a driving plate (film) | Full 3D camera + sub-pixel accuracy + survey scale | 3DEqualizer |
+| Add moving CG creature that runs in scene | Moving 3D object + camera | 3DEqualizer object tracking + Maya |
+
+---
+
+## 📊 On-Set Tracking Marker Best Practices
+
+| Practice | Why |
+|---------|-----|
+| Use high-contrast markers (black X on white) | Maximum contrast = reliable visual feature for tracking |
+| Place markers every 1–2 meters in VFX area | More markers = more feature points = more stable 3D solve |
+| Photograph markers with measurement tape | On-set position measurements enable absolute scale in 3DE |
+| Avoid placing markers on deforming surfaces | Deforming surfaces (cloth, faces) produce tracking data that cannot inform a rigid solve |
+| Keep markers within the final VFX frame | Out-of-frame markers cannot be tracked but their measured positions can still constrain the solve |
+| Record which takes are VFX plates in camera report | Plate department needs to know which takes are used for VFX |
+
+---
+
+## 📊 Full Tracking Vocabulary Reference
+
+| Term | Definition |
+|------|-----------|
+| Track point | The pixel region the tracker analyzes each frame to recover motion |
+| Feature region | Inner tracking box — the template pixel pattern |
+| Search region | Outer tracking box — the area searched each frame |
+| Optical flow | Motion estimation algorithm that computes per-pixel velocity across a frame |
+| Planar tracking | Tracking the motion of a flat surface using optical flow on the entire plane |
+| Matchmove | Recovering a 3D camera from 2D footage; synonym for camera solve |
+| Parallax | Apparent relative shift between near and far objects as camera translates |
+| Corner Pin | A 4-corner perspective transform; the output of planar tracking |
+| Structure from Motion | Algorithm recovering 3D camera from multiple 2D views using parallax |
+| Survey data | Real-world measured positions of tracking markers; provides absolute scale |
+| Lens undistortion | Removing optical barrel/pincushion distortion before tracking |
+| Solve residual | Average pixel error across all track points in a 3D camera solve |
+| World space | The 3D coordinate system of the real physical environment |
+| Object tracking | Tracking a specific moving object within an already-solved 3D scene |
+| SfM | Structure from Motion — requires translational (not just rotational) camera movement |
 
 ---
 

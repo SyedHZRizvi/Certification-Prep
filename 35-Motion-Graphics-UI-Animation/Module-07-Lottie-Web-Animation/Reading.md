@@ -13,6 +13,36 @@ They built Lottie to solve this. The framework converted AE animations to a JSON
 
 ---
 
+## 🎯 What the Exam Tests: Lottie & Web Animation
+
+> 🎯 **Exam Callout 1:** Lottie animations are exported from After Effects using the **Bodymovin** plugin (also called LottieFiles for After Effects). The output is a **.json** file. The exam tests: what file format does Lottie use? Answer: JSON.
+
+> 🎯 **Exam Callout 2:** Lottie does NOT support: raster effects (Blur via the Effect menu), 3D camera animations, certain expressions, layer effects (glows, shadows via effects). It DOES support: shape layers, masks, trim paths, path animations. The exam presents a list and asks which one is NOT supported.
+
+> 🎯 **Exam Callout 3:** The Airbnb engineering team built Lottie in **2015** to solve the problem of high-quality animations on mobile that couldn't be delivered via GIF (quality loss) or MP4 (no programmatic control). The exam may test the year or the specific problem Lottie was built to solve.
+
+> 🎯 **Exam Callout 4:** In the GSAP ScrollTrigger API, `scrub: true` links animation progress directly to scroll position. `scrub: 1` adds a 1-second lag between scroll position and animation progress — it smooths the animation. The exam tests: what does `scrub: true` do vs `scrub: 1`?
+
+> 🎯 **Exam Callout 5:** The Web Animations API (WAAPI) is a **native browser API** — no library required. GSAP, Framer Motion, and React Spring are all libraries that sit on top of browser APIs. The exam may test: which animation approach requires no external library?
+
+> 🎯 **Exam Callout 6:** Framer Motion uses `initial`, `animate`, and `exit` props for state-based animation. React Spring uses physics parameters (mass, tension, friction). The exam tests: which library uses spring physics parameters directly in the component API?
+
+> 🎯 **Exam Callout 7:** GSAP's `gsap.timeline()` allows animations to be sequenced relative to each other using position parameters: `"-=0.2"` means overlap the previous animation by 200ms. The exam tests GSAP timeline position parameter syntax.
+
+---
+
+## ⚠️ Common Traps: Lottie & Web Animation
+
+**Trap 1 — Raster Effects in Lottie Exports:** A Gaussian Blur applied via Effect > Blur > Gaussian Blur will not export correctly to Lottie. The Lottie-compatible alternative is a Blur applied via the shape layer's built-in blur property, or by pre-rendering the blur as a separate PNG sequence. Students who add Blur effects through the Effect panel find their Lottie animations render blank layers.
+
+**Trap 2 — GSAP Licensing for Commercial Use:** GSAP is free for non-commercial use. For commercial projects, a paid "Business Green" or Club GSAP membership is required. The exam may test: is GSAP free for all projects? Answer: free for personal/non-commercial; paid license required for commercial.
+
+**Trap 3 — CSS `transition` vs `animation`:** `transition` responds to state changes (hover, class change). `animation` runs on load or via JavaScript class toggle. Students use `animation` when they want hover behavior — `transition` is the correct tool. The exam may present a scenario where the correct choice between the two must be identified.
+
+**Trap 4 — React Spring Physics vs Duration:** React Spring uses mass/tension/friction — not duration in milliseconds. There is no "duration: 300" in React Spring's default physics model. Students who move from GSAP to React Spring frequently try to set duration directly, which overrides the physics model and creates linear animation.
+
+---
+
 ## 🔬 The LottieFiles Workflow: AE → JSON
 
 ### Step 1: Build the Animation in After Effects
@@ -296,10 +326,63 @@ function Card() {
 
 ---
 
+## 📊 Web Animation Library Comparison Matrix
+
+| Library | Paradigm | Bundle Size | Spring Physics | ScrollTrigger | React Integration | Learning Curve |
+|---------|----------|-------------|----------------|---------------|-------------------|----------------|
+| **GSAP** | Timeline / duration | ~67KB (core) | Via `Elastic` ease | Yes (plugin) | Works; not React-native | Medium |
+| **Framer Motion** | State-based / spring | ~140KB | Yes (native) | Via `useScroll` | React-first | Low-Medium |
+| **React Spring** | Physics (spring) | ~85KB | Yes (native) | Via `useScroll` | React-first | Medium |
+| **CSS Keyframes** | Declarative | 0KB | No | No | Works everywhere | Low |
+| **WAAPI** | Programmatic | 0KB | No | Manual | Works everywhere | Medium |
+| **Lottie** | AE JSON playback | ~90KB | Via AE workflow | Manual | `lottie-react` | Low (if AE known) |
+| **Motion One** | WAAPI wrapper | ~18KB | No | Yes | Works everywhere | Low |
+
+---
+
+## 🎬 Case Study: The Airbnb Lottie Origin — Engineering a Workflow
+
+Lottie was not conceived as a product. It was an internal tool that escaped.
+
+**The Problem (2015):**
+Airbnb's design team had invested weeks building their iOS app onboarding animations in After Effects. The animations were subtle, physics-based, and brand-appropriate. The engineering team had three options for implementation: GIF (quality loss, large files), MP4 (no interactivity), or native code (expensive, imprecise, non-maintainable).
+
+**The Solution:**
+Brandon Withrow parsed the After Effects JSON output format (which AE uses internally). He wrote a renderer that could take that JSON and draw it frame-by-frame using Core Animation on iOS. The result: a pixel-perfect reproduction of the AE animation, rendered at 60fps, with full programmatic control.
+
+**The Open-Source Decision:**
+Airbnb released Lottie as open-source in 2015. The decision was competitive calculus: animation tooling was not Airbnb's competitive advantage; their product (travel bookings) was. Open-sourcing Lottie got them free engineering contributions from the community and built goodwill with designers and engineers globally.
+
+**The Community's Response:**
+Within 6 months, the open-source community had built Lottie renderers for Android, React Native, and the web (lottie-web). LottieFiles launched as a marketplace and hosting platform. By 2018, Lottie JSON had become a de facto standard for cross-platform animation.
+
+**The 2024 State:**
+Lottie is now maintained by LottieFiles (which acquired the original library from Airbnb). The dotLottie format (a zipped version of the JSON plus assets) reduces file sizes by 60–80% for complex animations. The format is supported in Figma, Rive, and Adobe products.
+
+**What This Teaches:**
+The motion/engineering boundary is where the most valuable skills live. A motion designer who understands the Lottie workflow (what exports cleanly, what doesn't, how programmatic control works) is 10x more valuable to a product team than one who only understands After Effects.
+
+---
+
+## 🗣️ Socratic Discussion Questions
+
+1. Airbnb built Lottie in 2015 to solve the GIF/MP4 problem on mobile. But in 2026, native iOS and Android animation APIs are significantly more capable than in 2015. Under what circumstances would you still choose Lottie over native platform animation?
+
+2. GSAP timelines allow precise control of animation sequences. Framer Motion uses a declarative, state-based model. Both can achieve the same visual result. Which paradigm is better for a team that includes both designers who prototype in Figma and developers who build in React?
+
+3. The Web Animations API requires no library and is supported in all modern browsers. Yet most developers reach for GSAP or Framer Motion immediately. What is the legitimate case for using a library instead of the native WAAPI?
+
+4. `prefers-reduced-motion` was covered in Module 6. How does it apply to Lottie animations specifically? LottieFiles provides a `speed` prop — setting it to 0 stops the animation, but doesn't fade out or replace it with a still. How would you correctly implement reduced-motion support for a Lottie animation?
+
+5. GSAP requires a commercial license for commercial projects, but many studios use it without paying. What is the ethical position here, and how does using unlicensed tools affect your relationship with clients and your professional reputation?
+
+---
+
 ## 📚 Further Reading
 
-- [LottieFiles Documentation](https://docs.lottiefiles.com/)
-- [GSAP Documentation](https://gsap.com/docs/v3/)
-- [Framer Motion Documentation](https://www.framer.com/motion/)
-- [React Spring Documentation](https://www.react-spring.dev/)
-- [Web Animations API — MDN](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API)
+- [LottieFiles Documentation](https://docs.lottiefiles.com/) — the full AE-to-Lottie workflow reference; covers Bodymovin options and supported/unsupported AE features
+- [GSAP Documentation](https://gsap.com/docs/v3/) — the best animation library documentation in frontend development; the ScrollTrigger and Timeline docs are particularly thorough
+- [Framer Motion Documentation](https://www.framer.com/motion/) — declarative API reference; the "gestures" and "transitions" sections are most exam-relevant
+- [React Spring Documentation](https://www.react-spring.dev/) — physics-based animation reference; the `useSpring` and `useTrail` hooks cover 80% of use cases
+- [Web Animations API — MDN](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API) — the native browser reference; understanding WAAPI makes all animation libraries make more sense
+- *JavaScript for Web Designers* — Mat Marquis (A Book Apart, 2016) — the JavaScript fundamentals needed to understand GSAP and WAAPI without a full development background

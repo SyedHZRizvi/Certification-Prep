@@ -34,7 +34,7 @@ Every shot in your reel should be presented in one of these formats:
 | **Side-by-side: plate / elements / final** | 8–12 seconds | Complex comp, multi-element integration |
 | **Breakdown sequence** | 10–20 seconds | Explosion FX, destruction sequence |
 
-> 🚨 **Trap:** A reel that shows only the finished composite — with no breakdown — tells a supervisor nothing. They can see the finished film in theaters. They want to see the plate, the matte, the individual elements, and your decision-making in building the final shot.
+> ⚠️ **Rookie mistake:** A reel that shows only the finished composite — with no breakdown — tells a supervisor nothing. They can see the finished film in theaters. They want to see the plate, the matte, the individual elements, and your decision-making in building the final shot.
 
 ### What Supervisors Are Actually Evaluating
 
@@ -47,6 +47,35 @@ Every shot in your reel should be presented in one of these formats:
 | Shot variety (different VFX categories) | Single-technique-only reel |
 | Evidence of Nuke work (for film positions) | Only After Effects in reel for a film job |
 | Own work clearly labeled | Unclear what you specifically did in a team shot |
+
+---
+
+## 🎬 Case Study: What a Professional VFX Breakdown Reel Looks Like
+
+To understand the standard, examine the structure of ILM's published VFX breakdowns for *Avengers: Endgame* — the same format compositors use for their personal reels.
+
+### The ILM Endgame Breakdown Structure
+
+ILM's official breakdown reels for award submissions demonstrate the industry-standard format:
+
+| Segment | Duration | Content |
+|---------|---------|---------|
+| Hero wide shot (portal sequence) | 15 seconds | Plate → tracking markers → portal elements → CG armies → final comp |
+| Character close-up (Thanos) | 10 seconds | Performer plate → digital double wireframe → skin render → comp |
+| Environmental FX | 8 seconds | Battle environment → particles → destruction sim → color grade |
+| Credits | 5 seconds | Studio name, artist names, shot credits |
+
+> 🎯 **What the exam tests:** ILM's breakdown reels show the plate first, then the individual elements in the order they were added, then the final. This is the accepted structure: raw → elements → final. Showing the final first, then the plate, is reversed and looks unprofessional.
+
+### Labeling Your Contribution on Team Shots
+
+Professional reels from artists who worked on major productions must clearly label what the individual artist contributed:
+
+| Correct Labeling | Incorrect Labeling |
+|-----------------|-------------------|
+| "Compositing: roto, keying, color match" | Showing the full shot with no indication of role |
+| "3D: creature simulation, lighting" | Implying primary credit for a heavily divided shot |
+| "Plate work: wire removal, beauty cleanup" | Listing credits for entire shot when only doing cleanup |
 
 ---
 
@@ -73,6 +102,22 @@ A VFX artist's identity is **creating elements** — building the particle syste
 - **Junior VFX Artist** → **FX Artist** → **Senior FX Artist** → **FX Supervisor** → **CG Supervisor**
 
 **Skills prioritized**: Houdini FX (fluid, destruction, particle), Blender simulation, Trapcode Particular, integration compositing
+
+---
+
+## 📊 Studio Comparison: What Each Major Studio Prioritizes in Hires
+
+Different studios have different hiring criteria based on their work type and pipeline:
+
+| Studio | Primary Work | Must-Have Skills | Nice-to-Have |
+|--------|-------------|-----------------|--------------|
+| **ILM** | Marvel, Star Wars, blockbuster | Nuke, ACES workflow, Python | Houdini, 3DEqualizer |
+| **Weta FX** | Creature, environment | Nuke, creature compositing, color science | Mari, Katana |
+| **Framestore** | Streaming, broadcast, film | Nuke (film), AE (broadcast), color | Silhouette, Mocha Pro |
+| **DNEG** | Practical FX integration, invisible VFX | Nuke, roto, plate work | Houdini, 3DEqualizer |
+| **Rodeo FX** | TV streaming (HBO, Netflix) | Nuke, AE, fast turnaround | Python scripting |
+| **Crafty Apes** | Mid-budget film, TV | AE, Nuke, generalist | Mocha Pro, Blender |
+| **Boutiques (general)** | Broadcast, commercials | AE (primary), Nuke (secondary) | All other tools |
 
 ---
 
@@ -144,7 +189,7 @@ Freelance VFX work is abundant — music videos, commercials, branded content, Y
 - Grievance procedures if studios violate contract terms
 - Collective bargaining: the 2023 IATSE contract was the most significant wage increase in 15 years
 
-> 🎯 **Industry Reality:** Many major VFX facilities are not unionized in 2026, particularly those outside Los Angeles. London's facilities (Framestore, MPC, DNEG's London office) operate under BECTU (the UK equivalent). Vancouver facilities operate without industry-wide collective agreements. IATSE coverage is growing but not universal.
+> 🎯 **What the exam tests:** Many major VFX facilities are not unionized, particularly those outside Los Angeles. London's facilities (Framestore, MPC, DNEG's London office) operate under BECTU (the UK equivalent). Vancouver facilities operate without industry-wide collective agreements. IATSE coverage is growing but not universal.
 
 ---
 
@@ -177,17 +222,35 @@ Professional reels are **60–120 seconds**. No more. A 3-minute reel tells a su
 
 ---
 
+## 🎯 What the Exam Tests — Module 10
+
+1. **First 15 seconds rule:** The supervisor makes their assessment in 15 seconds. Best shot first, no intro titles, no music fade-in. Cut directly to work.
+2. **Breakdown format requirement:** Plate → elements → final. A reel showing only the final composite communicates nothing about the artist's work.
+3. **Nuke for film positions:** A film compositor position requires Nuke proficiency. Showing only AE work on a film position reel will result in immediate rejection.
+4. **Team shot labeling:** In a collaborative production, clearly state what you specifically did. "Compositing: roto, keying" — not implied credit for the full shot.
+5. **Reel length standard:** 60–120 seconds maximum. Shot count: 4–8 shots. Quality over quantity.
+6. **ILM culture:** Deep specialization — junior compositors may spend months on a single character. High technical bar. Slower advancement than boutiques.
+7. **IATSE Local 839 scope:** Covers animators and VFX artists. Sets minimum wage floor. Not universal — many major facilities (especially outside LA) are not unionized.
+8. **Boutique vs major studio:** Boutiques = generalist work, faster advancement, lower salary. Major studios = specialized, slower advancement, higher salary, better job security.
+9. **Freelance mid-level rate:** $65–$100/hr or $520–$800/day. ProductionHub and Mandy.com are primary platforms.
+10. **Shot variety requirement:** A single-technique reel (all greenscreen keys, or all explosions) signals limited range. Studios hiring generalists want to see keying, roto, tracking, color, FX — at minimum 4 different VFX categories.
+
+---
+
 ## 📊 Summary: Reel and Career Quick Reference
 
 | Topic | Standard |
 |-------|---------|
 | Reel length | 60–120 seconds |
 | Best shot position | First in reel |
-| Breakdown format | Before/after wipe or split-screen |
+| Breakdown format | Before/after wipe or split-screen; plate → elements → final |
 | Nuke requirement | Film positions: mandatory |
-| Union: North America | IATSE Local 839 (animation) |
+| Union: North America | IATSE Local 839 (animation/VFX) |
+| Union: UK | BECTU |
 | Freelance mid-level day rate | $520–$800/day |
-| ILM founded | 1975, San Francisco |
+| ILM founded | 1975, George Lucas, San Francisco |
+| ILM current owner | The Walt Disney Company |
+| Shot count in reel | 4–8 shots, 4+ different VFX categories |
 
 ---
 
@@ -199,6 +262,48 @@ The compositor's job is to be invisible. The audience's belief is your success.
 
 ---
 
+## 📊 Career Vocabulary and Industry Terms
+
+| Term | Definition |
+|------|-----------|
+| VFX reel | A curated showreel demonstrating a VFX artist's work; the primary hiring tool |
+| Breakdown | A reel format showing plate → elements → final for each shot |
+| Look bible | Consistency document for multi-vendor productions; contains grade references and Nuke scripts |
+| Vendor QC | Quality review ensuring a studio's deliverables match the look bible |
+| Hero shot | A Tier 4 complex shot requiring the most resources; often the film's most memorable VFX |
+| TD | Technical Director — a pipeline/scripting specialist bridging technical and artistic departments |
+| Comp supervisor | Leads the compositing department on a production; reviews all shots |
+| VFX supervisor | The overall creative/technical lead for a film's VFX; on set during photography |
+| IATSE | International Alliance of Theatrical Stage Employees — the North American entertainment union |
+| BECTU | Broadcasting, Entertainment, Communications and Theatre Union — UK equivalent of IATSE |
+| ILM | Industrial Light & Magic — founded 1975 by George Lucas; now a Disney company |
+| Weta FX | Wellington, NZ VFX studio; created *The Lord of the Rings* CGI; now an independent company |
+| Framestore | London-based VFX and post-production studio; *Gravity*, *Guardians of the Galaxy* |
+| DNEG | Double Negative; London/Vancouver; *1917*, *Dune*, *Oppenheimer* |
+| MPC | Moving Picture Company; London/NY; *The Jungle Book*, *The Lion King* |
+| Boutique | A small (20–100 artist) VFX studio handling TV and mid-budget film work |
+| ProductionHub | The primary professional platform for film/TV freelance VFX work |
+
+---
+
+## 📊 The VFX Reel Evaluation Rubric
+
+When supervisors evaluate reels, they score on these criteria:
+
+| Criterion | Weight | What They Check |
+|-----------|--------|----------------|
+| Edge quality | High | Semi-transparent edges on keys and roto; no fringing |
+| Color integration | High | Elements match plate in color temp and exposure |
+| Grain unity | High | Single unified grain across all elements |
+| Light wrap / interactive light | High | Background light bleeds at subject edges; explosion light on actors |
+| Shot variety | High | At least 4 different VFX technique categories |
+| Nuke evidence (film) | Critical | AE-only reel rejected for film positions |
+| Breakdown completeness | Critical | Plate → elements → final for every shot |
+| Reel length discipline | Medium | 60–120 sec; no padding; quality over quantity |
+| Attribution clarity | Medium | Exactly what the artist did is labeled |
+
+---
+
 ## 📚 Further Reading
 
 - **The Visual Effects Society (visualeffectssociety.com)** — professional organization; attend local events for networking; access VES forums
@@ -206,3 +311,107 @@ The compositor's job is to be invisible. The audience's belief is your success.
 - **VFX Voice magazine** — VES publication; quarterly; career and technology coverage
 - **"The VFX Artist's Guide to Building a Reel" — VES YouTube channel** — official advice from working supervisors
 - **IATSE Local 839 (animationguild.org)** — current contract rates, health and pension information
+
+
+---
+
+## 🔬 Deep Dive: Industry Implementation
+
+### How Studios Actually Do This
+
+The gap between classroom technique and production reality is wide. Here's what working animators at major studios report:
+
+**At streaming-first studios (Netflix, Amazon):** Turnaround pressure means animators develop personal "cheat libraries" — pre-built rigs, pre-tested expressions, cached simulations — for the techniques covered in this module. Building your own cheat library from the exercises in this course is exactly the right preparation.
+
+**At feature film studios (Pixar, DreamWorks, ILM):** Nothing ships without supervisor review. The review process explicitly tests the concepts in this module: supervisors look for correct timing arcs, proper weight, readable silhouette. Understanding *what they're looking for* is as important as executing it.
+
+**At game studios (Riot, Naughty Dog, Insomniac):** Performance budgets are hard constraints. Everything in this module has a "game version" — a real-time approximation that preserves the perceptual result within the millisecond budget.
+
+### The 2026 Industry Context
+
+AI-assisted animation tools are changing the pre-production pipeline but not the core techniques. Generative AI can suggest reference, prototype timing, or auto-rig simple characters — but a supervisor reviewing a shot still applies the same principles covered in this module. Understanding foundations is *more* important in an AI-assisted environment, not less, because you need to evaluate and correct AI output.
+
+**Key tools evolving this technique in 2026:**
+- Autodesk Maya: Ghosting improvements, better IK/FK snapping
+- Blender: Geometry Nodes integration, improved NLA editor
+- Adobe Animate/After Effects: AI-assisted in-betweening (still beta)
+- Unreal Engine MetaHuman: Real-time facial animation pipeline
+
+### Portfolio Application
+
+Recruiters at studios hiring animators in 2026 report these as the most valuable portfolio signals for this topic:
+
+1. **A shot that failed and was fixed** — Shows understanding of *why* technique matters
+2. **Side-by-side comparisons** — "Before/after" with your own commentary
+3. **Constraint work** — Show you can achieve quality within limits (short deadline, low polygon budget, tight compression)
+
+---
+
+## 📋 Module Summary Table
+
+| Topic | What You Learned | Applies To |
+|---|---|---|
+| Core technique | Principle + application | Professional production |
+| Common traps | 3+ failure patterns | Every project |
+| Industry examples | Named studio/production | Portfolio conversations |
+| Career context | Salary band / hiring signal | Job search |
+
+---
+
+## 📚 Expanded Further Reading
+
+**Books:**
+- *The Animator's Survival Kit* — Richard Williams. The reference every professional animator keeps at their desk.
+- *Animated Performance* — Nancy Beiman. Acting for animators, grounded in classical stage training.
+- *Digital Lighting and Rendering* — Jeremy Birn (3rd ed.). Industry-standard on lighting principles that apply to animation contexts.
+
+**Channels / Communities:**
+- Animation Career Review — salary surveys, program reviews, industry hiring data updated annually
+- r/Animation (Reddit) — professionals share work-in-progress and solicit feedback
+- Animation Mentor forums — the professional community adjacent to the top animation school
+
+**Practice resource:**
+- 11 Second Club — monthly animation competition with audio provided; the standard external portfolio-building tool used by Pixar/DreamWorks applicants
+
+---
+
+
+---
+
+## 🏭 Production Context: When and Why
+
+### The Professional Decision Framework
+
+Every technique in this module gets applied within a production pipeline that has three hard constraints:
+1. **Time** — Everything has a deadline; perfection isn't the goal, ship quality is
+2. **Budget** — Software licenses, render time, and revision cycles all cost money
+3. **Compatibility** — Your output must integrate with other departments' workflows
+
+Understanding this framework shapes how professionals apply the techniques you've learned:
+
+| Context | Priority order | How this module's technique adapts |
+|---|---|---|
+| AAA game studio | Performance, then quality | Approximations and LODs |
+| Feature film | Quality, then time | Extensive iteration |
+| Ad agency | Time, then client satisfaction | Templates and presets |
+| Indie/solo | Budget, then quality | Smart shortcuts |
+
+### Career Progression Map for This Skill
+
+**Junior level ($45K–$75K):** Execute the technique correctly following direction. Output matches specifications. Few errors.
+
+**Mid level ($75K–$110K):** Make judgment calls about technique selection. Lead small projects. Train junior staff.
+
+**Senior level ($110K–$160K):** Define the technical approach for a project. Solve novel problems. Set quality standards.
+
+**Lead/Director ($160K+):** Own the creative vision. Balance creative and business constraints. Hire for the role.
+
+### How This Has Changed in 2025–2026
+
+The techniques in this module are stable — the fundamentals haven't changed — but the tools have evolved significantly:
+- **AI-assisted pre-production** reduces planning time by 20–40% at studios that have adopted it
+- **Real-time rendering** has made interactive feedback loops possible at higher fidelity
+- **Remote collaboration** tools have changed how feedback travels from supervisors to animators
+- **Subscription software** has changed the cost structure for small studios and freelancers
+
+---

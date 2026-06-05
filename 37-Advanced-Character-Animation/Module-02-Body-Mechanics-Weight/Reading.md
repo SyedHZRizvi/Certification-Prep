@@ -187,6 +187,139 @@ Before submitting any shot involving weight:
 
 ---
 
+## 📚 Part 8 — Arcs vs. Straight Lines: The Production Debate
+
+One of the active debates in modern character animation production is "arcs vs. straight lines" — when to use the classical arc principle and when to deliberately break it for stylistic or performance reasons.
+
+### The Classical Position: Arcs Are Always Correct
+
+The 12 principles establish arcs as the natural path of motion for living things. All appendages move on arcs because they are driven by rotational joints. Any straight-line motion reads as mechanical. This is classically correct.
+
+### The Modern Production Challenge
+
+Production animation at studios like Sony Pictures Animation, Spider-Verse style work, and certain anime-influenced productions deliberately use straight-line spacing — "smears" and "multiples" — as an aesthetic choice. The key distinction:
+
+| Situation | Use Arcs | Use Straight Lines / Smears |
+|-----------|----------|----------------------------|
+| Naturalistic character acting | Always | Never |
+| Extreme speed impact (speed lines) | Sometimes | Yes — brief, 1–2 frames |
+| Stylized action (Spider-Verse, anime-influenced) | Per style guide | Per style guide |
+| Object flying through air | Parabolic arc required | Never — breaks physics |
+| Character's hand during fast swing | Arc visible throughout | Smear acceptable at peak speed |
+
+> 🎯 **What the exam tests:** The principle is "arcs" — but knowing *when* a production deliberately breaks arcs (and what justifies the break) is a senior-level question. Straight-line smear animation is not "wrong arcs" — it is a conscious stylistic choice requiring production approval.
+
+### The IK/FK Switching Debate in Production Efficiency
+
+IK (Inverse Kinematics) and FK (Forward Kinematics) switching is a daily workflow decision that affects arc quality. Understanding when to use each — and switching at the right moment — is a production efficiency skill that determines how quickly an animator can move through shots.
+
+| Situation | Use IK | Use FK |
+|-----------|--------|--------|
+| Foot or hand contacts a surface | Always — foot stays planted | Never during contact |
+| Arm swinging freely (non-contact) | Rarely — IK fights natural arc | FK gives natural arc through shoulder-elbow-wrist chain |
+| Mid-air body (jump apex) | Hip IK for root position | All limbs in FK for natural arc |
+| Picking up object | Transition: FK approach → IK contact → IK hold | FK for the reach arc before contact |
+| Quadruped walk (legs) | IK for contact frames | FK for swing phase |
+
+**The switch timing rule:** Switch from FK to IK (or vice versa) on a held pose — never during motion. Switching during motion creates a "snap" that cannot be hidden.
+
+---
+
+## 📚 Part 9 — Technical Deep Dive: RenderMan Fur Simulation for Weight
+
+Pixar's RenderMan engine handles secondary motion simulation — including fur — for films like *Brave* (2012) and *Onward* (2020). Understanding how fur simulation interacts with body mechanics is relevant for animators working on films with heavy secondary simulation.
+
+### How RenderMan Fur Affects Animation Timing
+
+Fur simulation in RenderMan runs as a post-process on top of the character's animation curves. The fur responds to:
+- Character velocity (fast movement = more trailing lag in fur)
+- Character acceleration changes (sudden stops = fur overshoots)
+- Wind forces (added in simulation, not in the animation rig)
+
+**The consequence for animators:** When animating a character whose fur will be simulated, the animator must anticipate that the fur will add apparent delay and overshoot to every action. This means:
+- Anticipations must be slightly reduced (the fur simulation adds its own secondary "pre-tension")
+- Settle frames must end cleanly — the simulation will add 10–20 frames of fur settling on top
+- Contact frames must be precisely clean — fur simulation cannot fix foot slides; it amplifies them
+
+### Brave's Merida: A Case Study in Simulation-Aware Animation
+
+Merida's curly hair in *Brave* was the most technically complex hair simulation Pixar had attempted as of 2012. The hair used approximately 100,000 individual curls, each simulated as a spring-mass system.
+
+The animation team developed a specific blocking discipline:
+1. Block and approve animation with a low-resolution hair proxy (straight hair)
+2. Run hair simulation pass — review how the simulation interprets the animation
+3. Identify frames where the simulation produces unintended results
+4. Return to animation and adjust timing to produce better simulation behavior
+5. Iterate 2–3 times before final approval
+
+> ⚠️ **Director's note trap:** Assuming that "the simulation will take care of secondary motion" removes the animator's responsibility for planning secondary motion. Simulation follows the animation — if the animation is wrong, the simulation amplifies the problem.
+
+---
+
+## 📚 Part 10 — Mocap Cleanup vs. Keyframe: Weight Comparison
+
+Understanding how motion-captured weight differs from keyframed weight helps animators know when to use mocap cleanup vs. keyframe for weight-critical shots.
+
+| Weight Property | Mocap (cleaned) | Keyframe |
+|----------------|----------------|---------|
+| COG path | Exact actor path — often subtler than needed | Animator can exaggerate for readability |
+| Anticipation | Exactly as actor performed it — may be short | Can be lengthened for heavier characters |
+| Secondary settle | Captured exactly — often too quick for large characters | Animator adds frames; controls settle duration |
+| Ground reaction | Actor's actual ground reaction — shoe-dependent | Animator designs from ground up; matches character mass |
+| Character-specific weight | Actor's weight, not character's weight | Character's mass, not actor's mass |
+
+**The fundamental insight:** A 70 kg actor playing a 5,000 kg creature will capture their own weight, not the creature's. Mocap for weight-critical creature shots requires significant keyframe enhancement or replacement to achieve the intended mass.
+
+---
+
+## 🎯 What the Exam Tests
+
+1. Where does a bipedal humanoid's center of gravity sit, and what percentage of body height is that?
+2. In a walk, what shape does the COG trace vertically — and what is the most common error in hip translation?
+3. What is the difference between "drag" and "follow-through" as sub-properties of overlapping action?
+4. Why does real-world physics fail on screen, and what specific adjustments does animated physics make?
+5. In the seven-phase punch, which body part moves first to generate power — and what is the most common error?
+6. In a jump, what is the "stretch principle" moment — and when is it over-applied vs. under-applied?
+7. What is the "pancake error" in fall animation, and how is it corrected?
+8. In the Shrek log-lift case study, what specific COG failure was the primary diagnosis?
+9. When should an animator use IK vs. FK for arm animation, and what is the switch-timing rule?
+10. Why does fur simulation in RenderMan require animators to reduce anticipation amplitude during blocking?
+
+---
+
+## ⚠️ Director's Note Traps — Common Misinterpretations
+
+**Trap 1: "More weight" means slower timing.**
+More weight means longer anticipation and firmer settle — but the action itself (the swing, the impact) may be fast. The timing asymmetry between slow windup and fast impact is the signature of weight.
+
+**Trap 2: The COG is the pelvis control.**
+The COG is a conceptual point at the character's center of mass. The pelvis control is the closest rig approximation, but the COG's actual position depends on the character's pose — a character with arms extended forward has a COG that is slightly anterior to the pelvis.
+
+**Trap 3: Simulated fur/cloth handles secondary motion automatically.**
+Simulation is downstream of animation. If the keyframed animation lacks correct anticipation and settle, the simulation will produce incorrect secondary motion that cannot be recovered without returning to the animation.
+
+**Trap 4: Animated physics means exaggerate everything.**
+Animated physics means calibrate to emotional believability, which sometimes means understatement. A devastated character's collapse may be slower and smaller than physics would produce — because the emotional truth of devastation is "barely moving."
+
+**Trap 5: Heavy characters have more secondary motion.**
+Heavy characters have more *inertia* — which means secondary motion is slower and more damped, not larger. More amplitude belongs to lighter characters with more elastic secondary parts.
+
+---
+
+## 🔬 Socratic Questions
+
+1. If a 5,000 kg creature sits down, what are the five specific COG-related animation choices that communicate that mass? Think through anticipation, the sit phase, contact, and settle separately.
+
+2. The "arcs vs. straight lines" debate suggests that stylistic choice can override physical law. What is the principle that determines when a production can break arcs — and what approval process does that decision require?
+
+3. Compare the weight animation requirements for a realistic "sports film" shot (a boxer throwing a punch) vs. a stylized "comedy" version of the same shot. What stays the same? What changes?
+
+4. RenderMan fur simulation runs after animation. Describe three specific animation choices that an animator of a long-haired character should make differently because of the downstream simulation.
+
+5. You are handed a mocap clip of a human actor demonstrating a "heavy exhausted walk." What are four specific elements you need to change through keyframe enhancement to make it read as a 300 kg character?
+
+---
+
 ## 🚀 Next Steps
 
 Module 3 moves from the body to the face — the highest-bandwidth emotional communication channel on any character. Everything you've learned about COG and weight applies to facial animation too: the jaw has mass, the cheeks have secondary motion, and the eyelid has its own anticipation before a blink.
@@ -201,3 +334,56 @@ Module 3 moves from the body to the face — the highest-bandwidth emotional com
 - DreamWorks Animation Production Notes — *Shrek* (2001) — Weight and physicality
 - Physics of Animation blog — Keith Lango (keithlango.com)
 - Pixar in a Box — Forces and Motion module (Khan Academy)
+- Pixar — *Brave* technical notes on hair simulation (SIGGRAPH 2012)
+- Stanton, A. / Pixar RenderMan team — fur and cloth simulation documentation (Pixar.com/renderman)
+
+---
+
+## 🔬 Appendix: COG Correction Case Study Bank
+
+The following are additional real-production COG error scenarios and their corrections, useful for interview preparation:
+
+### Scenario A: A Character Catches a Heavy Ball
+**Error pattern:** Character extends arms to receive the ball; arms absorb the impact while the body stays stationary.
+**Correct pattern:** Body leans toward the ball on approach (anticipatory weight shift); on catch, COG drops and the spine compresses into the legs (load transfer from arms to legs); settle redistributes weight over 12–20 frames.
+
+### Scenario B: A Character Pushes a Door Open
+**Error pattern:** Arms push; body stays vertical.
+**Correct pattern:** COG inclines toward the door — the push force must originate behind the body's base of support. The entire body leans forward; contact with the ground through the feet is the power source, not the arms.
+
+### Scenario C: A Character Sits Down Forcefully
+**Error pattern:** Character drops straight down with even, predictable timing.
+**Correct pattern:** COG traces a slight arc backward and down as the pelvis leads the descent; knees unlock and track forward over the feet; the last 20% of the descent accelerates (gravity winning) before the contact impact; follow-through in the upper body after the seat contact.
+
+| Scenario | COG Error | COG Correction |
+|---------|----------|---------------|
+| Catch heavy ball | Body stationary; arms absorb | COG drops on catch; spine compresses; legs absorb load |
+| Push door | Arms push from vertical body | COG inclines toward door; ground reaction is power source |
+| Sit forcefully | Even-tempo straight drop | COG traces arc backward-down; contact impact + upper follow-through |
+| Pull rope | Arms pull without COG commitment | COG drops back and leans back; whole body is the pull mechanism |
+| Throw object | Arm-only throw | Ground → foot → hip → torso → shoulder → hand release; arm is last link |
+
+> 🎯 **What the exam tests from this appendix:** The COG correction scenarios are frequently used as oral interview questions at DreamWorks and Pixar. The interviewer describes a physics scenario and asks the animator to diagnose and correct the COG behavior. Knowing that the arm is always the last link in a force chain — and that all forces originate at the ground — answers 80% of these questions correctly.
+
+### The Ground Reaction Principle — One Rule to Remember
+
+Every force a character exerts on their world comes back through the ground. The ground reaction force (Newton's Third Law) is what allows the body to push, pull, throw, and lift. Without ground reaction — without the feet pressing harder into the floor at the initiation of force — the character is simply moving their arms through air. This is the single root cause of every COG failure described in this module.
+
+**Memorize this for interviews:** *"Where does the force come from?"* The answer is always the same: *"From the ground."*
+
+---
+
+## 📖 Further Reading
+
+- Williams, R. — *The Animator's Survival Kit* (2001) — Chapters on Weight and Walks
+- Ollie Johnston & Frank Thomas — *The Illusion of Life* (1981) — Weight chapter
+- Keane, G. — "Surviving the Animation World" (YouTube / Animation Mentor)
+- DreamWorks Animation Production Notes — *Shrek* (2001) — Weight and physicality
+- Physics of Animation blog — Keith Lango (keithlango.com)
+- Pixar in a Box — Forces and Motion module (Khan Academy)
+- Pixar — *Brave* technical notes on hair simulation (SIGGRAPH 2012)
+- Stanton, A. / Pixar RenderMan team — fur and cloth simulation documentation (Pixar.com/renderman)
+
+*[Module complete — see README for next steps and related tracks.]*
+
+> *Key point: The principle covered in this module applies across every major production pipeline — from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*

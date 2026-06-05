@@ -97,6 +97,65 @@ The digital animation graph editor (present in Maya, Blender, After Effects, Uni
 
 ---
 
+## 🎬 Case Study: *Grave of the Fireflies* and Timing as Grief
+
+Isao Takahata's *Grave of the Fireflies* (1988, Studio Ghibli) is one of the most emotionally devastating animated films ever made, and its power is almost entirely a function of timing choices that are the opposite of what students typically learn to value.
+
+Where most animation seeks to demonstrate motion mastery — showing the animator's skill through fluid, well-timed movement — *Grave of the Fireflies* uses timing to communicate the *absence* of energy. The film is about two children surviving in the aftermath of the Allied firebombing of Kobe in 1945. As they grow weaker from malnutrition, the animation makes a choice that is technically demanding precisely because it seems simple: **the characters move less, not more**.
+
+**Specific timing choices in the film:**
+
+- **Long holds on still frames**: where a well-fed character might show 15–20 secondary action drawings in a 2-second hold, the starving children hold with almost no secondary movement. The stillness communicates exhaustion beyond what any drawn expression could.
+
+- **Slow-in without slow-out**: actions begin with the normal gradual acceleration of slow-in but stop abruptly — without the slow-out deceleration that communicates control. This communicates a body that is beginning to lack the muscular coordination to control its own stops.
+
+- **Reduced follow-through**: clothing and hair follow-through diminish as the film progresses. In the early sequences, clothing shows normal secondary action. In the later sequences, the children's clothing barely moves when they move — communicating that the garments are stiff from dirt and lack of care, and that the children no longer have energy to generate the movements that would produce follow-through.
+
+The professional lesson: **timing can be used to remove life as effectively as to add it.** The principles describe how to animate living things — *Grave of the Fireflies* demonstrates that the same principles, applied in reverse, can communicate the presence of death.
+
+---
+
+## 🔬 Case Study: How *Bambi* Used Timing as Physics
+
+The deer-on-ice sequence in *Bambi* (1942) is the single most analyzed timing study in animation history. Understanding *why* this sequence is extraordinary requires looking at the specific frame-counting decisions, not just the overall impression.
+
+### The Frame Analysis
+
+Milt Kahl and Eric Larson — two of Disney's Nine Old Men — animated the majority of Bambi's physical sequences. Their approach to the ice scene was grounded in reference study: the animators observed live deer on intentionally slippery surfaces and then made the following specific choices:
+
+**The slide:** A real deer beginning to lose footing on ice takes approximately 8–12 frames (1/3 to 1/2 second) to go from "stable" to "actively slipping." Kahl and Larson extended this to 18–24 frames — nearly double — because the extended slow-in communicates the *tentative quality* of the deer's movement (it knows it might slip) rather than just the physical fact of slipping.
+
+**The recovery:** After each near-fall, real deer recover in 4–6 frames. The animation uses 10–14 frames, slowing the recovery enough that the audience can read the deer's expression changing from alarm to relief before the next slip begins.
+
+**The ears:** The timing chart for Bambi's ears runs on a 3-frame offset from the head timing — the ears begin their movement 3 frames after the head begins, and stop 3 frames after the head stops. This is a direct application of overlapping action with a specific, documented frame decision.
+
+The result is a scene that does not just look like ice — it *feels* like ice, in the way that only animation can: by taking the physics of the moment and extending them enough to let the audience inhabit the experience, rather than merely observe it.
+
+---
+
+## 🎵 Music and Timing: Mickey-Mousing vs Counterpoint
+
+One of the most important timing decisions in animation is whether the action synchronizes with the music or works against it.
+
+**Mickey-Mousing:** The practice of precisely synchronizing every action in an animation to the music beat — a character steps on the downbeat, a door slams on the accent, a hit lands on the cymbal crash. Named after the early Disney practice of scoring animation action to exact musical cues.
+
+**The Mickey-Mousing table:**
+
+| Approach | Character | Effect | Best Used When |
+|----------|-----------|--------|----------------|
+| **Full sync** (Mickey-Mousing) | Action matches every beat | Rhythmic, comic, mechanical precision | Musical sequences; comedy; dance |
+| **Loose sync** | Major actions hit major beats | Natural, organic | Action scenes with music |
+| **Counterpoint** | Action deliberately avoids beats | Tension, unease, or unexpected grace | Dramatic moments; character interiority |
+| **No music** | Action stands alone | Silence as dramatic weight | Death; grief; extreme tension |
+
+**The *Bambi* opening sequence** uses full sync with the orchestral score — the deer moving through the forest land on musical phrases, the raindrops match the pizzicato strings. This was standard Disney practice.
+
+**The *Into the Spider-Verse* "Leap of Faith" sequence** uses counterpoint: the action of Miles falling is deliberately slightly off the musical beat, so the animation feels uncanny and suspended rather than rhythmically resolved. The musical resolution comes slightly after Miles's web connects — so the music *confirms* the action rather than predicting it.
+
+🎯 **What the exam tests:** The distinction between Mickey-Mousing (exact sync) and counterpoint (deliberate offset) and the creative effect of each. You may be given a scenario and asked which approach would be most appropriate.
+
+---
+
 ## 🎭 How Timing Creates Emotion: The Ladder
 
 This is the key insight that separates the 12 Principles from the timing module. Every principle has a timing component, but timing itself operates independently as a creative tool.
@@ -123,6 +182,27 @@ The *Incredibles* final fight uses very fast timing — 4–8 frame hits, rapid-
 
 ---
 
+## ⚠️ Holds: The Most Underused Timing Tool
+
+A **hold** in animation is a period where a character appears to be still — not moving, or moving minimally. Holds are the timing tool that most beginning animators underuse, because the instinct is to keep the character moving to demonstrate skill.
+
+The professional understanding: **holds are not the absence of animation — they are a specific timing choice that creates meaning.**
+
+### Types of Holds and Their Function
+
+| Hold Type | Appearance | Duration | Emotional Function |
+|-----------|-----------|---------|-------------------|
+| **Dead hold** | Character is completely still; no secondary action | 4–24 frames | Shock; paralysis; the moment before reaction; machine-like stillness |
+| **Living hold / breathing hold** | Character has minimal secondary action — slight breath, subtle weight shift | 12–96 frames | Thinking; observing; emotional processing; hesitation |
+| **Forced hold** | Character's body is still but one element moves (e.g., only the eyes shift) | Varies | Suppressed emotion; the character is controlling themselves |
+| **Settle** | Character comes to rest after action; small diminishing movements | 6–18 frames | Completion of action; transition to next state |
+
+**Miyazaki's long holds:** Studio Ghibli films use holds of 10–30 seconds with only minimal secondary action. In *My Neighbor Totoro*, a scene of Totoro standing in the rain waiting for a bus holds for nearly 40 seconds — far longer than any Western animated film would allow. This hold communicates Totoro's fundamental nature (patient, ancient, unconcerned with human time) more powerfully than any action could.
+
+🎯 **What the exam tests:** The living hold vs dead hold distinction. A dead hold reads as mechanical or shocked; a living hold reads as thinking or processing. The difference is minimal secondary action (breathing, micro-shifts in weight).
+
+---
+
 ## 🎵 Rhythm in Animation
 
 **Rhythm** in animation is the pattern of timing across multiple actions. Just as musical rhythm creates expectation and variation, animation rhythm creates a visual pulse that the audience senses even if they cannot articulate it.
@@ -134,6 +214,147 @@ The *Incredibles* final fight uses very fast timing — 4–8 frame hits, rapid-
 - The synchronization of action to music (or deliberate non-synchronization)
 
 **The rule of three:** Audiences unconsciously expect patterns to complete. Three repetitions of a timing pattern (a character tripping three times, a door knocking three times, a joke set up three times) create expectation; varying the fourth element creates surprise. This is the structural basis of physical comedy.
+
+---
+
+## 📊 Timing Reference: Real-World Action Frame Counts
+
+These are the actual frame counts (at 24fps) for common actions, documented from motion study and professional animation reference. Compare these with what you would intuitively guess — the discrepancy between intuition and reality is why timing study matters.
+
+| Action | Real-World Frames @24fps | Note |
+|--------|------------------------|------|
+| **Eye blink** | 3–5 frames | Faster than most beginners draw it; 8-frame blinks look tired/slow |
+| **Head turn (90°)** | 8–12 frames | Character looking from left to right; varies by weight of head |
+| **Arm swing in walk** | 12–16 frames per half-swing | Depends on walk speed; tied to stride timing |
+| **Sit down** | 16–24 frames | More frames if character is tired/old; fewer if energetic |
+| **Reach for object** | 8–16 frames | Varies significantly by distance and character weight |
+| **Throw (baseball)** | 8–12 frames from wind-up to release | The windup is longer; the throw itself is extremely fast |
+| **Fall (gravity)** | ~10 frames to fall 6 feet | Gravity doesn't vary; what varies is the anticipation and landing |
+| **Impact reaction** | 2–4 frames | Fastest action in animation; hitting is instantaneous |
+| **Surprise (face)** | 4–6 frames for the snap | The hold afterward is longer (12–48 frames depending on magnitude) |
+| **Lifting heavy object** | 24–48 frames | Weight is communicated by the slow-in of the lift beginning |
+
+🎯 **What the exam tests:** You may be given a real-world action and asked to predict the appropriate frame count, or given a frame count and asked what weight or emotion it communicates. Use this table as a calibration reference, not an absolute rule — timing is always in service of the scene's specific emotional goal.
+
+---
+
+## ⚠️ Graph Editor Deep Dive: Reading F-Curves
+
+The graph editor is the professional animator's primary timing tool in digital animation. Understanding how to read and manipulate F-curves (function curves) is not optional for any animator working in Maya, Blender, After Effects, or Unreal Engine.
+
+### F-Curve Shape Reference
+
+| F-Curve Shape | Motion Type | When to Use |
+|--------------|-------------|-------------|
+| **Straight diagonal line** | Constant velocity (linear) | Mechanical objects; robots; conveyor belts |
+| **S-curve (flat-steep-flat)** | Slow-in AND slow-out | Standard organic motion; most natural movement |
+| **Steep-then-flat curve** | Fast-in, slow-out (ease out) | Incoming impact; catching; landing |
+| **Flat-then-steep curve** | Slow-in, fast-out (ease in) | Launching; throwing; explosions |
+| **Wave pattern** | Oscillating; bouncing | Bouncing ball; springs; tail wagging |
+| **Flat line** | No movement; hold | Pause; decision moment; anticipation hold |
+
+**The most common digital animation error:** Accepting the software's default tangent type, which is usually "auto" or "spline" — a smooth curve that produces motion that *looks* smooth but *feels* mushy because the easing is mathematically regular rather than performance-driven. Professional animators spend significant time breaking tangents and adjusting individual handles to match the intended emotional quality.
+
+🚨 **Trap:** "Smooth" in the graph editor does not mean "good." The most effective animation often has abrupt shifts in the F-curve that correspond to specific dramatic moments: a sudden stop, a snap to a new position, a sharp impact. Avoid the impulse to smooth every curve.
+
+---
+
+## 🌍 How Different Studios Approach Timing: A Comparison
+
+Understanding the characteristic timing choices of different studios allows you to identify stylistic influences and make deliberate choices in your own work.
+
+| Studio / Tradition | Timing Signature | Key Example |
+|-------------------|-----------------|-------------|
+| **Disney (Golden Age)** | Heavy weight; extended slow-outs; deliberate holds on emotion | Bambi; Dumbo; Fantasia |
+| **Warner Bros / Looney Tunes** | Extreme fast-and-slow contrast; holds with frozen expression | Wile E. Coyote; Daffy Duck |
+| **Anime (Kyoto Animation)** | Long holds on still frames; sudden bursts of fast action | *Violet Evergarden*; *K-On!* |
+| **Spider-Verse (Sony)** | Extreme frame-rate differentiation between characters | Miles at 12fps; Gwen at 24fps |
+| **Studio Ghibli** | Extended contemplative holds; no rush to action | Nearly all Miyazaki films |
+| **Pixar** | Precise performance sync; technically clean ease-in/out | All Pixar features from *Toy Story* onward |
+| **Arcane (Fortiche)** | Cinematic; dramatic holds; action bursts | Fight sequences in Acts 2–3 |
+
+---
+
+## 🔬 Lip Sync Timing: The Technical Craft of Dialogue Animation
+
+Lip sync — animating a character's mouth movements to match recorded dialogue — is one of the most technically specific timing challenges in character animation, and one of the most frequently evaluated skills in studio hiring.
+
+### Phoneme Groups and Mouth Shapes
+
+Dialogue animation does not require a unique drawing for every sound. Phonemes group into visually similar mouth shapes:
+
+| Phoneme Group | Sounds | Mouth Shape | Key Characteristic |
+|--------------|--------|-------------|-------------------|
+| **M/B/P** | m, b, p | Lips together (closed) | Bilabial closure; must be a full close |
+| **F/V** | f, v | Upper teeth on lower lip | Very distinctive; audience notices if missed |
+| **Th** | th (thin/this) | Tongue slightly visible between teeth | Can be subtle; often simplified |
+| **D/T/N/L** | d, t, n, l | Mouth slightly open; tongue tip up | Similar shapes; differentiated by duration |
+| **CH/SH/ZH** | ch, sh, zh | Lips slightly pursed forward | Rounded corners; slightly forward |
+| **R** | r | Lips slightly rounded, open | Less distinctive than F/V; often simplified |
+| **EE** | ee, e | Lips spread wide, teeth visible | Maximum horizontal width |
+| **AH** | ah, a | Jaw open, neutral lips | Maximum vertical opening |
+| **OO** | oo, o | Lips rounded, pushed forward | Maximum forward protrusion |
+| **Rest position** | breath, pause | Slight opening or closed | Often confused — breaths need a frame of closure |
+
+**The timing rule for lip sync:** Mouth shapes should *lead* the sound by 1–2 frames — the mouth opens into the vowel slightly before the audio hits, because visual and audio processing in the brain have different latencies.
+
+🎯 **What the exam tests:** Know that M/B/P require a full lip closure (missed closures are the most common lip sync error), that F/V require teeth-on-lip contact, and that mouth shapes should lead audio by 1–2 frames.
+
+---
+
+## 💬 Socratic Questions for Discussion
+
+1. Richard Williams claimed timing was the animator's most important skill. If motion capture technology can accurately capture the timing of a live actor's performance, does Williams's statement still hold? What does the animator contribute to a timing decision that mocap cannot?
+2. The *Into the Spider-Verse* use of different frame rates (12fps vs 24fps) as a character differentiator is widely considered innovative. What other animation parameters could theoretically function as character differentiators in the same way?
+3. The "rule of three" in comedy timing relies on audience expectation of pattern. In an era of short-form social media content, where audience attention is highly fragmented, does the rule of three still function? How might comedy timing need to adapt?
+4. *Studio Ghibli* films routinely use 10–30 second holds with minimal animation while characters simply exist in an environment. Western animation rarely uses holds this long without dialogue. What does this suggest about the different cultural assumptions each tradition makes about the audience's patience and relationship to time?
+
+---
+
+## ⚠️ Timing Exam Traps
+
+These are the specific misunderstandings about timing that appear most frequently in assessments.
+
+| Trap | Correct Understanding |
+|------|-----------------------|
+| "Slow timing always means heavy/serious" | Timing must match the specific emotional goal. Extreme slowness can be comedic (slow-burn). Extreme speed can be tragic (a very brief horror beat). |
+| "Fast timing means energetic/happy" | Fast timing on the wrong moment communicates incompetence or carelessness. A sad scene with fast timing feels disrespectful to the emotion. |
+| "More frames = better animation" | More frames means slower motion. The right frame count is the one that communicates the intended emotional quality — not the maximum possible smoothness. |
+| "Slow-in/slow-out is always correct" | Mechanical characters, impacts, and specific comedy beats use linear or abrupt timing deliberately. Always ease-in/out is a crutch that flattens variety. |
+| "Timing charts only apply to 2D animation" | The timing chart's logic — drawing clustering near key poses, spread through the middle of movements — directly translates to graph editor F-curve shapes in 3D. |
+| "Mickey-Mousing is old-fashioned and should be avoided" | Mickey-Mousing is a stylistic choice, not an error. It is appropriate for musical sequences, comedy, and deliberately stylized productions. *Fantasia* is the greatest animation production ever made in terms of critical regard, and it is built entirely on Mickey-Mousing. |
+
+🎯 **Timing summary principle:** Timing is always in service of the specific emotional goal of the specific scene. There is no universally "correct" timing — only timing that serves or undermines the scene's intention.
+
+---
+
+## 💬 The Timing of Emotion vs the Timing of Physics
+
+One of the deepest distinctions in professional animation timing is between timing that is physically accurate and timing that is emotionally accurate — and understanding that these are often different, and emotion wins.
+
+**Physical timing** is what happens in reality: a ball falls for a specific number of frames based on gravity; a person blinks for 3–5 frames; a head turn takes 10–14 frames.
+
+**Emotional timing** is what the scene requires to land correctly on an audience: the same head turn might take 6 frames in a comedy (snappy awareness) or 24 frames in a drama (slow dawning realization), with both departing from physical reality in opposite directions.
+
+The professional animator's craft is in knowing which departure to make and how far to push it. Timing that is physically exact but emotionally wrong fails the scene. Timing that is emotionally appropriate but physically implausible serves the scene.
+
+Richard Williams's formulation: "Timing is everything. And everything is timing." He was not talking about accuracy to physics. He was talking about accuracy to the emotional moment.
+
+---
+
+## 🎯 Module 5 Quick Reference: Timing Decision Framework
+
+Use this framework when making timing decisions for any animation shot.
+
+| Question | Slower Timing → | Faster Timing → |
+|----------|----------------|----------------|
+| **What is the weight?** | Heavier mass = more frames | Lighter mass = fewer frames |
+| **What is the emotion?** | Grief, exhaustion, awe = more frames | Surprise, fear, comedy = fewer frames |
+| **Is this comedy or drama?** | Drama benefits from deliberate timing | Comedy often uses fast snaps with long holds |
+| **Is this planned or impulsive?** | Deliberate action = slow-in emphasizes intention | Impulsive action = fast start; slow-out as character realizes what they did |
+| **Does this need emphasis?** | Slowing the timing draws attention to the action | Speeding the timing makes action feel incidental |
+| **Is the character tired/ill?** | Yes = longer timing throughout; reduced follow-through | No = use standard timing for the character's personality |
+| **Is this a hold?** | Long hold = contemplation, grief, awe | Short hold = check, recognition, transition |
 
 ---
 
@@ -162,3 +383,11 @@ You now know:
 - 📘 Halas, J. & Whitaker, H. (1981). *Timing for Animation.* Focal Press. — Dedicated entirely to this topic.
 - 🎬 Bambi (1942) — deer-on-ice, the opening; watch frame by frame
 - 🎬 *The Incredibles* (2004) — opening fight sequence
+
+**Advanced / Supplementary:**
+- 📘 Whitaker, H. & Halas, J. (2009). *Timing for Animation, 2nd ed.* Focal Press. — The definitive single-topic treatment; every type of timing problem with worked examples.
+- 📘 Hooks, E. (2000). *Acting for Animators: A Complete Guide to Performance Animation, 3rd ed.* Heinemann. — The performance theory behind timing decisions; essential complement to Williams's technical approach.
+- 🎬 *Steamboat Willie* (1928, Disney) — the first successful synchronized-sound animation; a primary historical source for understanding how timing and sound were first unified.
+- 🎬 *Fantasia* (1940, Disney) — the definitive study of animation timing to music, including both Mickey-Mousing and more complex musical-visual relationships.
+- 🎬 *Violet Evergarden* (2018, Kyoto Animation, available on Netflix) — one of the finest modern examples of anime timing conventions; extended holds used for emotional effect.
+- 🌐 [Spungella Timing Studies](https://www.youtube.com/results?search_query=spungella+animation+timing) — Jean-Denis Haas (Pixar/DreamWorks animator) breakdown videos on timing in professional shots.

@@ -90,3 +90,66 @@ Maps exported: BaseColor, Metallic, Roughness, Normal, Emissive, AO
 | Indie short | 2048×2048 | 2048×2048 |
 | Broadcast | 4096×4096 | 2048×2048 |
 | Feature animation | 4096×4096 | 4096×4096 |
+
+---
+
+## PBR Parameter Ranges by Material
+
+| Material | Metallic | Roughness | IOR | Sub-Weight |
+|---|---|---|---|---|
+| Polished chrome | 1.0 | 0.02–0.05 | — | 0 |
+| Brushed aluminum | 1.0 | 0.3–0.5 | — | 0 |
+| Matte plastic | 0 | 0.7–0.9 | 1.45 | 0 |
+| Glossy plastic | 0 | 0.05–0.2 | 1.45 | 0 |
+| Glass | 0 | 0.0 | 1.45–1.52 | 0 |
+| Water | 0 | 0.0 | 1.33 | 0 |
+| Human skin | 0 | 0.4–0.6 | 1.4 | 0.1–0.4 |
+| Car paint | 0 | 0.3–0.5 | 1.5 | 0 |
+| Wood (raw) | 0 | 0.7–0.9 | 1.5 | 0 |
+
+---
+
+## Node Connection Rules
+
+| From | To | Valid? |
+|---|---|---|
+| BSDF output | Material Output → Surface | Yes |
+| Color output | BSDF input (e.g., Base Color) | Yes |
+| Float output | Numeric BSDF input (e.g., Roughness) | Yes |
+| BSDF output | Base Color socket | No — type mismatch |
+| Color output | Material Output → Surface | No — need shader first |
+
+---
+
+## Shader to RGB: Toon Shading Recipe
+
+```
+Diffuse BSDF → Shader to RGB → Color Ramp → Emission → Material Output
+                                (set to Constant interpolation)
+```
+This creates flat cel-shaded bands — no Principled BSDF needed.
+
+---
+
+## EEVEE Blend Mode Reference
+
+| Blend Mode | Visual Effect | When to Use |
+|---|---|---|
+| Opaque | Fully solid; no transparency | Default for all solid surfaces |
+| Alpha Clip | Hard-edge cutout (binary) | Foliage, fences, alpha decals |
+| Alpha Blend | Smooth transparency | Glass, water, ghosts |
+| Alpha Hashed | Dithered transparency (noisy but accurate) | When Alpha Blend has sorting artifacts |
+
+**Alpha Blend vs. Alpha Hashed:** Alpha Blend has sorting artifacts when transparent objects overlap. Alpha Hashed avoids sorting but adds noise (requires higher samples or temporal accumulation).
+
+---
+
+## Gotcha Quick Reference
+
+| Gotcha | Fix |
+|---|---|
+| Roughness/Metallic maps washed out | Set Image Texture Color Space to Non-Color |
+| Metallic = 0.5 looks wrong | Use only 0 or 1; 0.5 has no physical basis |
+| UV seam visible in render | Move seam to hidden area; lower angle = less visible |
+| BlenderKit asset needs license | Check per-asset license in BlenderKit panel before commercial use |
+| EEVEE glass shows solid gray | Set Blend Mode: Alpha Blend; enable Screen Space Refraction |

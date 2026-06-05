@@ -129,3 +129,81 @@ void OnAnimatorIK(int layer) {
 | **Any State** | Source of transitions that can fire from any state |
 | **Exit** | Exits a Sub-State Machine back to parent |
 | **Default state** (orange) | First state that plays on Animator Enable |
+
+---
+
+## 📊 Animator Controller Architecture Comparison
+
+| Architecture | States | Best For | Drawback |
+|---|---|---|---|
+| Flat FSM | All in root | Simple chars (< 10 states) | Spaghetti above 15 states |
+| Hub-and-spoke | Central hub → action branches | Most action games | Hub must handle many AnyState sources |
+| Hierarchical | Sub-State Machines nested | Complex locomotion (Grounded/Airborne) | Harder to debug |
+| Layered | Independent per-layer FSMs | Independent body-part control | Multiplies evaluation cost |
+
+---
+
+## 🏃 FBX Import Rig Settings Quick Reference
+
+| Setting | Option | When to Use |
+|---|---|---|
+| Animation Type | Humanoid | Biped characters; retargeting needed |
+| Animation Type | Generic | Quads, vehicles, custom rigs |
+| Root Transform Pos (XZ) | Bake Into Pose | In-Place animation; code drives position |
+| Root Transform Pos (XZ) | Based On Original | Root Motion drives world position |
+| Loop Time | On | Looping clips (idle, walk, run) |
+| Loop Time | Off | One-shot clips (jump, attack, die) |
+
+---
+
+## ⚡ Animator C# API — Full Reference
+
+```csharp
+// Set parameters
+anim.SetFloat("Speed", speed);           // continuous value
+anim.SetBool("IsGrounded", isGrounded);  // persistent state
+anim.SetInteger("WeaponIndex", 2);       // discrete value
+anim.SetTrigger("Jump");                 // one-shot, auto-resets
+anim.ResetTrigger("Jump");              // cancel before consumed
+
+// Query state
+AnimatorStateInfo si = anim.GetCurrentAnimatorStateInfo(0);
+si.IsName("Run");          // check active state by name
+si.IsTag("Locomotion");    // check state tag
+si.normalizedTime;         // 0.0–1.0 in current clip
+si.length;                 // clip length in seconds
+anim.IsInTransition(0);   // true if currently blending
+
+// Layer weight
+anim.SetLayerWeight(1, 1f);  // set layer 1 to full weight
+
+// Root Motion override
+void OnAnimatorMove() {
+    controller.Move(anim.rootPosition - transform.position);
+    transform.rotation = anim.rootRotation;
+}
+
+// Foot IK
+void OnAnimatorIK(int layer) {
+    anim.SetIKPositionWeight(AvatarIKGoal.LeftFoot, 1f);
+    anim.SetIKPosition(AvatarIKGoal.LeftFoot, leftFootTarget);
+    anim.SetIKRotationWeight(AvatarIKGoal.LeftFoot, 1f);
+    anim.SetIKRotation(AvatarIKGoal.LeftFoot, leftFootRotation);
+    anim.SetLookAtPosition(headLookTarget);
+    anim.SetLookAtWeight(1f);
+}
+```
+
+---
+
+## 🎮 Transition Settings Decision Guide
+
+| Action Type | Has Exit Time | Transition Duration | Interruption Source |
+|---|---|---|---|
+| Idle → Walk | No | 0.15–0.20s | Current State |
+| Walk → Run | No | 0.10–0.15s | Current State |
+| Any → Dodge | No | 0.04–0.07s | Current State |
+| Attack (committed) | Yes (0.9) | 0.05s | None |
+| Any → Death | No | 0.10s | None (death is terminal) |
+| Jump Start → Loop | Yes (0.8) | 0.10s | None |
+| Land → Idle | Yes (1.0) | 0.15s | Current State |

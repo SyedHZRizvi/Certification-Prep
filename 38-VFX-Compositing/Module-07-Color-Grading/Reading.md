@@ -28,9 +28,11 @@ Camera sensors capture light linearly — double the photons, double the signal.
 
 **The VFX workflow:** Cameras shoot in Log (ARRI LogC3/C4, RED Log3G10, Sony S-Log3). This is the "flat-looking" footage you see from professional cameras. Log footage must be converted to **scene-linear** before any image math (compositing, keying, color operations) is performed, because only scene-linear math is physically correct.
 
-> 🎯 **Exam Tip:** All compositing math (Merge/over operations, blending, defocus) must be done in **scene-linear** color space. Performing compositing operations in Log or gamma-encoded footage produces incorrect results — color fringing, incorrect blending at edges, wrong exposure math.
+> 🎯 **What the exam tests:** All compositing math (Merge/over operations, blending, defocus) must be done in **scene-linear** color space. Performing compositing operations in Log or gamma-encoded footage produces incorrect results — color fringing, incorrect blending at edges, wrong exposure math.
 
-### ACES: Academy Color Encoding System
+---
+
+## 🔬 ACES: Academy Color Encoding System — Step by Step
 
 ACES is the color management standard developed by the Academy of Motion Picture Arts and Sciences. It is used on virtually every major Hollywood film production and increasingly in high-end streaming.
 
@@ -41,15 +43,52 @@ ACES is the color management standard developed by the Academy of Motion Picture
 | **ACEScct** | Log-encoded ACES for color grading tools | DaVinci Resolve grading |
 | **Output Transform** | Converts ACEScg → display (Rec.709 or P3 or HDR) | Final output for cinema/streaming |
 
-**The ACES pipeline:**
+### The ACES Workflow Step by Step
+
 ```
-Camera RAW → Input Transform (IDT) → ACES2065-1 → ACEScg (working space)
-→ [Compositing + CG rendering] → Output Transform (ODT) → Display (Rec.709/P3/HDR)
+Step 1: Camera RAW → Input Transform (IDT)
+        [ARRI ALEXA plates → ACES2065-1 via ARRI IDT]
+
+Step 2: ACES2065-1 → ACEScg (working space)
+        [All compositing and CG rendering happens in ACEScg]
+
+Step 3: ACEScg [Nuke compositing / Houdini rendering]
+        [Every Merge, Grade, Blur operates in ACEScg linear]
+
+Step 4: Compositor delivers ACEScg EXR to DI facility
+
+Step 5: DI: ACEScg → ACEScct (for grading tools)
+        [Colorist grades in ACEScct in DaVinci Resolve]
+
+Step 6: Output Transform (ODT): ACEScg → Display
+        [Rec.709 for streaming/broadcast, P3 for cinema, HDR10 for HDR]
 ```
 
-> 🚨 **Trap:** A CG render in linear sRGB looks different from the same render in ACEScg — the gamut and tone mapping differ. If a VFX studio's renders are in ACEScg but the compositor applies a Rec.709 display transform, the output will be incorrectly color-managed. Always confirm the color pipeline before beginning work.
+> 🎯 **What the exam tests:** The IDT (Input Device Transform) converts camera-specific log footage into the ACES interchange space. The ODT (Output Device Transform) converts the graded master to the delivery color space. These are different transforms for different purposes.
 
-### LUTs (Look-Up Tables)
+> ⚠️ **Rookie mistake:** A CG render in linear sRGB looks different from the same render in ACEScg — the gamut and tone mapping differ. If a VFX studio's renders are in ACEScg but the compositor applies a Rec.709 display transform, the output will be incorrectly color-managed. Always confirm the color pipeline before beginning work.
+
+---
+
+## 📊 Color Space Conversion Table
+
+Compositors regularly need to convert between color spaces. This table covers the most common conversions in production:
+
+| Source Space | Target Space | Transform | When Used |
+|-------------|-------------|-----------|----------|
+| ARRI LogC3 | ACEScg linear | ARRI LogC3 IDT | ALEXA plates into ACES pipeline |
+| ARRI LogC4 | ACEScg linear | ARRI LogC4 IDT | ALEXA 35 plates (2022+) |
+| RED Log3G10 | ACEScg linear | RED IDT | RED KOMODO / EPIC plates |
+| Sony S-Log3 | ACEScg linear | Sony IDT | Sony VENICE plates |
+| ACEScg linear | Rec.709 | sRGB ODT | Streaming/broadcast delivery |
+| ACEScg linear | DCI P3 D65 | P3 ODT | Cinema digital projection |
+| ACEScg linear | HDR10 (PQ) | HDR10 ODT | HDR streaming delivery |
+| Rec.709 (gamma) | Scene-linear | Gamma decode | Bringing old footage into a linear pipeline |
+| Any log | Linear (approx) | Cineon/DPX log-to-lin curve | Legacy film scan conversion |
+
+---
+
+## 🎨 LUTs (Look-Up Tables)
 
 A LUT is a pre-computed table that maps one set of color values to another. LUTs are used for:
 
@@ -101,6 +140,39 @@ Secondary correction targets a specific color range or region of the frame.
 
 ---
 
+## 🎬 Case Study: Oppenheimer — Nolan's Minimal CGI Philosophy
+
+Christopher Nolan is the most prominent director working in 2023–2024 who actively argues against reliance on digital VFX. *Oppenheimer* (2023) is his most committed expression of this philosophy.
+
+### What Nolan Did Practically
+
+| Effect | Practical Approach |
+|--------|------------------|
+| Trinity Test nuclear explosion | Practical miniature explosions, burning gasoline, pyrotechnics — no nuclear simulation in CG |
+| The bomb flash (blinding white) | Overexposed film deliberately — IMAX film stock burned into pure white |
+| Gadget assembly (the bomb itself) | Practical practical prop — built by prop department |
+| 1945 New Mexico landscape | Shot on location in New Mexico — minimal digital set extension |
+| Quantum mechanics visualization | Abstract practical elements — colored dyes in water, microscopic photography |
+| Crowd at Trinity | Real extras plus minimal digital crowd extension for wide shots |
+
+> 🎯 **What the exam tests:** Nolan's Trinity explosion used practical fire, magnesium powder, and burning gasoline — not CGI. The "fireball" was a miniature photographed on IMAX film. Understanding that practical effects still produce superior photorealism to CG in many scenarios is a key concept in VFX philosophy.
+
+### The Color Design of Oppenheimer
+
+Nolan and colorist Natasha Leonnet designed a three-period color language:
+
+| Period | Color Language | Technique |
+|--------|---------------|-----------|
+| **1920s–30s European physics** | Cold, intellectual: blue-gray, desaturated, high contrast | Extended tonal contrast, reduced saturation in midtones |
+| **Manhattan Project / New Mexico** | Amber, dust, heat: warm shadows, golden highlights | Warm lift in shadows, boosted orange/red tones |
+| **Trinity Test + bomb flash** | Extreme overexposure transitioning to pure white | Blow-out highlights; the film stock's actual chemical burn-in |
+| **1954 Hearing (color sequences)** | High saturation, aggressive contrast | Increased vibrance, crushed blacks |
+| **Black-and-white flashbacks (Strauss)** | Literal B&W shot on B&W IMAX film — not digitally desaturated | Orthographic-feel; high contrast B&W print |
+
+> 🎯 **What the exam tests:** The Trinity test explosion's "blind white flash" was a deliberate creative decision to show the audience what the scientists described — a light beyond what any camera could capture. This is VFX color grading as storytelling: the grade communicates an idea, not just a look.
+
+---
+
 ## 👤 Matching Shots in a Sequence
 
 The most common color grading task for a compositor is **shot matching** — making adjacent shots in a sequence look like they were photographed under the same conditions:
@@ -118,19 +190,33 @@ The **vectorscope** is essential for shot matching: it shows the distribution of
 
 ---
 
-## 🎬 Case Study: Oppenheimer's Color Design
+## 📊 Delivery Specification Tables
 
-Nolan and colorist Natasha Leonnet designed a three-period color language for *Oppenheimer*:
+Compositors must know the delivery requirements for different distribution channels:
 
-| Period | Color Language | Technique |
-|--------|---------------|-----------|
-| **1920s–30s European physics** | Cold, intellectual: blue-gray, desaturated, high contrast | Extended tonal contrast, reduced saturation in midtones |
-| **Manhattan Project / New Mexico** | Amber, dust, heat: warm shadows, golden highlights | Warm lift in shadows, boosted orange/red tones |
-| **Trinity Test + bomb flash** | Extreme overexposure transitioning to pure white | Blow-out highlights; the film stock's actual chemical burn-in |
-| **1954 Hearing (color sequences)** | High saturation, aggressive contrast | Increased vibrance, crushed blacks |
-| **Black-and-white flashbacks (Strauss)** | Literal B&W shot on B&W IMAX film — not digitally desaturated | Orthographic-feel; high contrast B&W print |
+### Broadcast Delivery Specifications
 
-> 🎯 **Industry Insight:** The Trinity test explosion's "blind white flash" was a deliberate creative decision to show the audience what the scientists described — a light beyond what any camera could capture. It is one of the most effectively designed VFX color moments in recent cinema: not because of complexity, but because it is exactly right.
+| Specification | Broadcast (Rec.709) | Streaming (Rec.709) | Digital Cinema (DCI P3) |
+|--------------|---------------------|---------------------|------------------------|
+| Color space | Rec.709 | Rec.709 | DCI P3 |
+| Gamma | 2.4 (BT.1886) | sRGB (~2.2) | Gamma 2.6 |
+| Max luminance | 100 nits | 100 nits | 48 cd/m² |
+| White point | D65 | D65 | DCI white |
+| Bit depth | 8–10 bit | 8 bit (H.264) to 10 bit (H.265) | 12 bit (JPEG2000) |
+| Max legal levels | 16–235 (8-bit) | 0–255 | 0–4095 |
+| Safe action area | 90% of frame | No broadcast safe requirement | No broadcast safe requirement |
+
+### Streaming Platform Codec Reference
+
+| Platform | Video Codec | Max Bitrate | Color Space | HDR Support |
+|----------|-------------|------------|-------------|-------------|
+| Netflix | H.264/H.265/AV1 | Up to 100 Mbps (master) | Rec.709 / HDR10 / Dolby Vision | Yes |
+| Disney+ | H.265 | Up to 40 Mbps | Rec.709 / HDR10 | Yes |
+| Apple TV+ | H.265 (HEVC) | Up to 40 Mbps | Rec.709 / HDR10 / Dolby Vision | Yes |
+| Amazon Prime | H.265 | Up to 25 Mbps | Rec.709 / HDR10 | Yes |
+| YouTube (4K) | VP9 / AV1 | Variable | Rec.709 / HDR10 | Yes |
+
+> 🎯 **What the exam tests:** Delivery specs are part of the compositor's job — not just the DI facility's. Understanding that Netflix accepts HDR10 and Dolby Vision, while standard broadcast requires Rec.709 at 100 nits max, affects every color decision in the composite.
 
 ---
 
@@ -140,7 +226,22 @@ A compositor does a **technical grade**: adjusting each element to match the pla
 
 The colorist does a **creative grade**: applying the director and DP's intended "look" — the warmth, the contrast, the saturation, the mood. This happens in the DI facility on the entire sequence, not on individual elements.
 
-> 🚨 **Trap:** A compositor who applies a heavy creative look to their composite before delivery is making the colorist's job harder. Deliver composites in a neutral, log-encoded state (close to the camera's original color) so the colorist can apply the look globally.
+> ⚠️ **Rookie mistake:** A compositor who applies a heavy creative look to their composite before delivery is making the colorist's job harder. Deliver composites in a neutral, log-encoded state (close to the camera's original color) so the colorist can apply the look globally.
+
+---
+
+## 🎯 What the Exam Tests — Module 7
+
+1. **Scene-linear requirement:** All compositing math must be in scene-linear. Log or gamma-encoded compositing produces color fringing, wrong blending, and incorrect exposure math.
+2. **ACES workflow stages:** Camera RAW → IDT → ACES2065-1 → ACEScg (compositing) → ODT → Display. Know the sequence and the abbreviations.
+3. **IDT vs ODT:** IDT = Input Device Transform (camera log → ACES). ODT = Output Device Transform (ACES → display). Different transforms, different directions.
+4. **1D vs 3D LUT capability:** 1D LUT = per-channel only. 3D LUT = captures cross-channel interactions (warm shadows, teal highlights). 3D LUTs are required for creative grades.
+5. **Primary vs secondary correction:** Primary = global (all pixels). Secondary = targeted (specific hue or masked region). Qualifiers, Power Windows, and Hue vs Saturation are secondary tools.
+6. **Vectorscope skin-tone line:** All human skin tones cluster at a consistent angle on the vectorscope. Shot-to-shot skin tone matching uses the vectorscope, not visual judgment.
+7. **Technical vs creative grade:** Compositor does the technical grade (match elements to plate). Colorist does the creative grade (the "look"). Different people, different stage, different software.
+8. **Oppenheimer practical effects:** Trinity explosion was practical pyrotechnics — not CGI. The bomb flash was over-exposed film stock. Understanding practical-first philosophy is testable.
+9. **Log encoding purpose:** Compresses dynamic range for storage efficiency. "Flat-looking" footage is correctly exposed — the log curve must be converted to linear for compositing.
+10. **Parade scope reading:** R, G, B channels as separate waveforms. Balanced channels = neutral image. Unequal channels = color cast. Black levels at 0, white at 700–800 mV for broadcast.
 
 ---
 
@@ -159,12 +260,44 @@ The colorist does a **creative grade**: applying the director and DP's intended 
 | Creative grade | Applying the "look" — the colorist's grade at the DI |
 | Vectorscope | Circular display of color distribution; skin-tone line for shot matching |
 | Parade scope | Waveform display of R, G, B channels separately |
+| IDT | Input Device Transform — converts camera log to ACES |
+| ODT | Output Device Transform — converts ACES to display color space |
 
 ---
 
 ## 🎯 Next Steps
 
 Module 8 covers the "invisible" category of VFX — practical digital FX integration, set extensions, sky replacement, and cleanup work. This is where the best VFX artists work: creating effects so seamlessly real that audiences never know they're there.
+
+---
+
+## 📊 Full Color Grading Vocabulary Reference
+
+| Term | Definition |
+|------|-----------|
+| Scene-linear | Color encoding proportional to physical photon count — required for compositing math |
+| Log encoding | Logarithmic compression of scene-linear data; camera-native format |
+| Display-referred | Color encoding optimized for a specific display (Rec.709, sRGB) |
+| ACES | Academy Color Encoding System — Hollywood film color management standard |
+| ACES2065-1 | The archival ACES interchange space; extremely wide gamut |
+| ACEScg | Linear ACES working space for VFX compositing and CG rendering |
+| ACEScct | Log-encoded ACES for use in color grading tools (DaVinci Resolve) |
+| IDT | Input Device Transform — converts camera log footage into ACES |
+| ODT | Output Device Transform — converts ACES to the target display standard |
+| LUT | Look-Up Table — a pre-computed color transform |
+| 1D LUT | Per-channel LUT — cannot capture cross-channel interactions |
+| 3D LUT | RGB-triplet LUT — captures all cross-channel color interactions |
+| Primary correction | Global color/exposure adjustment affecting all pixels equally |
+| Secondary correction | Targeted adjustment — specific hue, region, or qualifier |
+| Qualifier | A tool that isolates a specific color in the image for secondary correction |
+| Power Window | A shape-based secondary — applies correction only within a masked region |
+| Parade scope | Side-by-side R, G, B waveform display — used for color balance and exposure matching |
+| Vectorscope | Circular hue/saturation display — skin-tone line is key reference |
+| Skin-tone line | Consistent angle on vectorscope for all human skin tones |
+| Technical grade | Compositor's grade — matching elements to each other; neutral |
+| Creative grade | Colorist's grade — applying the director/DP's intended look |
+| DI | Digital Intermediate — facility and process for final color grading |
+| Film emulation LUT | A 3D LUT simulating the look of a specific film stock |
 
 ---
 
@@ -175,3 +308,4 @@ Module 8 covers the "invisible" category of VFX — practical digital FX integra
 - **ACES Central (acescentral.com)** — all ACES specification documents, pipeline guides, and forum discussions
 - **Cullen Kelly's YouTube channel** — broadcast colorist; detailed, technically rigorous color science tutorials
 - **Mixing Light (mixinglight.com)** — professional colorist community; tutorials on DaVinci Resolve grading and color science
+

@@ -259,6 +259,42 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 ---
 
+## 📊 GSAP Ease Function Performance Table
+
+Not all GSAP ease functions have identical CPU cost. The differences are small at low element counts but compound with large stagger sets or high-frequency scroll animations.
+
+| Ease Function | Relative CPU Cost | Notes |
+|---|---|---|
+| `linear` | Very low | Simple lerp; zero math overhead |
+| `power1.out` / `power2.out` | Very low | Polynomial; one multiplication per frame |
+| `power3.out` / `power4.out` | Low | Higher polynomial; negligible difference in practice |
+| `expo.out` / `circ.out` | Low | Trigonometric; slightly more expensive than polynomial |
+| `back.out(1.7)` | Low-medium | Involves cubic solve for overshoot; stable cost |
+| `elastic.out(1, 0.3)` | Medium | Sine + exponential per frame; avoid for > 100 simultaneous elements |
+| `bounce.out` | Medium | Multiple conditional branches per frame; prefer `elastic` for smoother feel |
+| Custom `cubic-bezier` | Low | Same polynomial cost as `power2`; GSAP solves cubic at construction, not per frame |
+| `steps(N)` | Very low | Integer division; used for sprite sheets |
+
+> 🎯 **Exam Callout:** For large stagger animations (60+ elements entering simultaneously), `elastic.out` is the most common cause of dropped frames. Substitute `back.out(1.7)` for near-identical visual feel at significantly lower CPU cost.
+
+---
+
+## 📊 Platform-Specific Web Animation Performance Budgets
+
+Web animation must target the same 16.67ms frame budget as games — but the constraints differ significantly across platforms.
+
+| Platform | Frame Budget | Safe Animation Properties | Performance Risk |
+|---|---|---|---|
+| Desktop (Chrome/Firefox/Safari) | 16.67ms | transform, opacity, filter | Low — typically GPU composited |
+| Mobile Chrome (Android) | 16.67ms | transform, opacity only | Medium — filter is CPU on many devices |
+| Mobile Safari (iOS) | 16.67ms | transform, opacity | Medium-high — `-webkit-transform` path; filter is CPU |
+| Mobile WebView (Cordova/Capacitor) | 16.67ms | transform, opacity only | High — reduced GPU access |
+| TV/SmartTV (Tizen, WebOS) | 33.33ms | transform, opacity only | Very high — old GPU compositors |
+
+> ⚠️ **Performance trap:** `filter: blur()` is GPU-composited on Chrome desktop but **CPU-rendered on most mid-range Android devices and all iOS WebViews**. Animating blur on mobile is one of the fastest ways to drop below 60fps. If you need blur animation on mobile, use a pre-rendered blurred version and animate opacity instead.
+
+---
+
 ## 🏢 Case Studies: Stripe, Linear, Raycast
 
 | Company | Key Technique | GSAP/CSS Tool |
@@ -281,6 +317,43 @@ import { motion, AnimatePresence } from 'framer-motion';
    ```
 4. **Implement in GSAP or Framer Motion** using the documented spec
 5. **Add `prefers-reduced-motion`** media query (covered in Module 7)
+
+---
+
+## 🎯 Exam Callouts: What the Test Checks
+
+> 🎯 **What the exam tests 1:** What does GSAP's `x` property actually set on a DOM element? `transform: translateX(value)`. GSAP `x` and `y` always map to CSS transform translate, never to `left`/`top`. This is why GSAP `x`/`y` animations are GPU-composited and do not trigger layout.
+
+> 🎯 **What the exam tests 2:** What is the FLIP technique and what does the acronym stand for? First, Last, Invert, Play. You record the element's position (First), make the DOM change (Last), calculate the inversion transform (Invert), then animate to identity (Play). GSAP's Flip plugin automates this for layout-change animations.
+
+> 🎯 **What the exam tests 3:** In a GSAP Timeline, what does `'-=0.2'` as the position parameter mean? It means "start this tween 0.2 seconds before the end of the previous tween" — a 0.2-second overlap with the preceding tween, creating a stagger effect.
+
+> 🎯 **What the exam tests 4:** When should you use `scrub: true` in ScrollTrigger vs. `toggleActions`? Use `scrub: true` when the animation progress should be directly tied to the scroll position (parallax, progress bars). Use `toggleActions` when the animation should play as a one-shot when the trigger enters the viewport.
+
+> 🎯 **What the exam tests 5:** What is Figma Smart Animate's layer name requirement? Layers in both frames must have **identical names**. If a layer is named "Card" in Frame A and "card" (lowercase) in Frame B, Smart Animate cannot match them and the layer disappears/appears instantly instead of tweening.
+
+> 🎯 **What the exam tests 6:** Which GSAP ease is recommended for mobile bottom sheet swipe animations and why? `expo.out` — it starts very fast (giving the immediate tactile response of a physical gesture release) and decelerates to a very slow end (natural deceleration of inertia). It matches the physics of a flick gesture.
+
+> 🎯 **What the exam tests 7:** What does `AnimatePresence` do in Framer Motion that standard React cannot achieve? It allows exit animations (the `exit` prop) to play before a component unmounts. Without `AnimatePresence`, React immediately removes the DOM element on state change, so exit animations have no time to play.
+
+> 🎯 **What the exam tests 8:** What is the `will-change: transform` CSS property doing at a rendering level? It promotes the element to a dedicated GPU compositing layer before the animation starts. This eliminates the first-frame paint cost of compositing, preventing the "flash" that can occur on complex elements at the start of an animation.
+
+> 🎯 **What the exam tests 9:** Stripe's homepage gradient animation was built before CSS `@property` existed. What CSS feature introduced in 2021+ would be an alternative? `@property` (CSS Houdini Properties and Values API) allows animating custom CSS properties (CSS variables) with type information, enabling CSS-only smooth animation of gradient hue values that previously required JavaScript.
+
+> 🎯 **What the exam tests 10:** What is the `elastic.out` ease most suitable for and what is its performance risk? Best for game UI elements, playful micro-interactions, and notification pop-in animations. Performance risk: it runs sine + exponential calculation per frame — for sets of > 100 simultaneously animated elements, this can cause dropped frames. Substitute `back.out(1.7)` for large stagger sets.
+
+---
+
+## 📊 Web Animation Performance Budget by Context
+
+| Context | Frame Budget | Key Constraint | Safe Properties |
+|---|---|---|---|
+| Desktop marketing page | 16.67ms | GPU compositing bottleneck | transform, opacity |
+| Mobile marketing page | 16.67ms | CPU fill rate; filter=CPU | transform, opacity only |
+| React SPA component | 16.67ms | JS thread competition | transform, opacity, layout (Framer Motion) |
+| Game UI overlay (WebGL) | 8.33ms (120fps target) | Sharing GPU with game render | Minimal — defer to Rive |
+| E-commerce product page | 16.67ms | LCP / CLS impact | opacity; no layout-shift animations |
+| TV / SmartTV browser | 33.33ms | Old GPU compositor | transform only; no filter |
 
 ---
 

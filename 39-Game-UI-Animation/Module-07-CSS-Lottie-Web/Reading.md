@@ -265,6 +265,54 @@ if (!prefersReducedMotion) {
 
 ---
 
+## 📊 Lottie vs. Rive vs. CSS Animation — Full Comparison Matrix
+
+Choosing the wrong animation tool for a given scenario is a common cause of both performance problems and unnecessary development complexity. This matrix covers the five key decision factors.
+
+| Factor | CSS Animation | Lottie | Rive |
+|---|---|---|---|
+| **Source tool** | Code editor / Figma → CSS | After Effects + Bodymovin plugin | Rive editor (web-based) |
+| **Runtime** | Browser native (zero library) | lottie-web JS library (~150KB) | @rive-app runtime (~40KB) |
+| **File format** | CSS in stylesheet | JSON (text; 20–200KB typical) | .riv binary (5–30KB typical) |
+| **File size** | N/A (CSS) | 20–80KB (optimized), 200KB+ (unoptimized) | 5–30KB |
+| **Interactivity** | Via JS class manipulation | None natively | First-class state machine inputs |
+| **Looping control** | `animation-iteration-count` | `loop: true/false` + `playSegments()` | State machine drives loop |
+| **Scroll control** | Via JS + Intersection Observer | Manual frame seek with JS | Input values drive state machine |
+| **Vector quality** | CSS-defined (always crisp) | Fully vector (SVG renderer) | Fully vector |
+| **Text support** | Full | Limited (export restrictions) | Yes |
+| **3D support** | CSS 3D transforms (not real 3D) | No | No |
+| **Accessibility** | Full (ARIA, prefers-reduced-motion) | Partial (add aria-label to container) | Partial |
+| **After Effects workflow** | No | Yes (primary use case) | No |
+| **State machine** | No | No | Yes |
+| **Best for** | Hover states, transitions, loaders | Complex AE illustrations, icon animation, onboarding | Interactive buttons, game UI, animated logos |
+| **Performance risk** | Layout-triggering properties | Large/complex JSON files; SVG renderer on complex paths | Canvas rendering on very old browsers |
+
+---
+
+## ⚠️ Performance Trap: Particle Systems and Complex Filters on Mobile Web
+
+Two specific web animation patterns that appear safe but cause severe mobile performance problems:
+
+**1. CSS `filter: blur()` animation**
+
+Animating `filter: blur()` is GPU-composited on Chrome desktop and Firefox desktop. On iOS (all browsers use WebKit) and most Android WebViews, `filter: blur()` is rendered by the CPU — the browser repaints the filtered layer every frame. A single animated blur element can consume 3–5ms per frame on mid-range Android, leaving only 11–13ms for the rest of the render pipeline.
+
+Fix: Pre-render a blurred version of the element (as a separate DOM element or a background-image), then animate `opacity` to cross-fade between the sharp and blurred versions.
+
+**2. Lottie SVG renderer with complex paths**
+
+The Lottie SVG renderer draws paths to SVG elements in the DOM. Complex AE animations with 50+ shape layers generate 50+ SVG elements, each re-drawn every frame. On mobile Safari, SVG path rendering is significantly slower than Canvas 2D rendering.
+
+Fix: For complex Lottie animations on mobile, switch to `renderer: 'canvas'` instead of `renderer: 'svg'`. Canvas rendering batches all draw operations into a single `<canvas>` element, dramatically reducing browser overhead. Tradeoff: Canvas output is not DOM-inspectable and cannot be styled with CSS.
+
+| Renderer | DOM Elements | Mobile Performance | Accessibility | Crisp at HiDPI |
+|---|---|---|---|---|
+| SVG | N (one per layer) | Medium — struggles with complex paths | Yes (SVG is accessible) | Yes |
+| Canvas | 1 (canvas element) | High — single bitmap draw target | No (use aria-label) | Requires `devicePixelRatio` scaling |
+| HTML | N (div per layer) | Low — complex layout recalcs | Yes | Yes |
+
+---
+
 ## 📊 Summary: Web Animation Tool Decision Matrix
 
 | Scenario | Best Tool |
@@ -277,6 +325,30 @@ if (!prefersReducedMotion) {
 | Complex JavaScript-driven timeline | GSAP Timeline |
 | Layout animation (card expand, grid reorder) | GSAP Flip or Framer Motion layout prop |
 | Animated icon that responds to user input | Rive |
+
+---
+
+## 🎯 Exam Callouts: What the Test Checks
+
+> 🎯 **What the exam tests 1:** What does `animation-fill-mode: forwards` do and why is it important? It holds the final keyframe values after the animation completes. Without it, the animated element snaps back to its original CSS-defined values. This is the most commonly tested CSS animation property after `animation-duration`.
+
+> 🎯 **What the exam tests 2:** What is the rendering stage difference between `transform` and `top/left` in CSS animation? `transform` triggers only the Composite stage (GPU). `top`/`left` trigger Layout + Paint + Composite — three stages instead of one. This is why `transform` is always preferred for animations.
+
+> 🎯 **What the exam tests 3:** What After Effects features cannot be exported to Lottie? 3D layers, 3D cameras, complex expressions (must be baked to keyframes), raster effects (Gaussian Blur in AE → use shape blur layer), and video footage layers.
+
+> 🎯 **What the exam tests 4:** When should you use Lottie `renderer: 'canvas'` vs. `'svg'`? Canvas for mobile and complex animations — better performance, single DOM element. SVG for desktop and animations that need CSS styling or DOM accessibility. HTML renderer for text-heavy animations with browser typography requirements.
+
+> 🎯 **What the exam tests 5:** What Rive input type maps to Unity's Trigger parameter concept? The **Trigger** input type in Rive — it fires once (`input.fire()`) and does not persist, equivalent to Unity's Trigger parameter that auto-resets after consuming a transition.
+
+> 🎯 **What the exam tests 6:** What WCAG guideline covers `prefers-reduced-motion` implementation? WCAG 2.1 Guideline 2.3.3 (AAA level) — users can disable motion lasting > 5 seconds or repeating motion. WCAG 2.3.1 (AA level) covers content flashing > 3× per second (seizure risk, stricter).
+
+> 🎯 **What the exam tests 7:** What is `animation-delay: -0.5s` (negative delay) used for? It starts the animation 0.5 seconds **into** the clip immediately — the animation appears to have already been playing for 0.5 seconds when the element renders. Used for staggered entry of pre-playing looping animations (e.g., a waving flag that appears already in motion).
+
+> 🎯 **What the exam tests 8:** What is the Lottie production target file size and how do you achieve it? Under 50KB. Achieved via: LottieFiles Optimizer (lossily reduces keyframe precision), removing hidden layers from AE before export, reducing keyframe count in AE's Graph Editor, simplifying shape paths (fewer anchor points).
+
+> 🎯 **What the exam tests 9:** Why does `will-change: transform` hurt performance when applied globally? Each element with `will-change: transform` is promoted to a dedicated GPU compositing layer. GPU layers consume VRAM. Promoting every element on a page (via a global rule) can exhaust VRAM on mobile devices, causing the GPU to fall back to software rendering — the opposite of the intended effect.
+
+> 🎯 **What the exam tests 10:** What is the key difference between `animation-direction: alternate` and `animation-direction: reverse`? `reverse` plays the keyframes from 100% to 0% on every iteration. `alternate` plays 0%→100% on odd iterations and 100%→0% on even iterations — creating a ping-pong effect that is smoother for looping animations like pulses and breathes.
 
 ---
 
@@ -312,3 +384,7 @@ We return to game engines for the final module: Unity VFX Graph, Unreal Niagara,
 - 🔗 [MDN Web Docs — prefers-reduced-motion](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion)
 - 📄 Brandon Withrow, "Lottie: Bringing Animations to Native Apps" (2017) — Airbnb Engineering Blog
 - 📄 Google Developers — "FLIP Your Animations: CSS Transforms vs JavaScript" (Paul Lewis)
+
+*[Module complete — see README for next steps and related tracks.]*
+
+> *Key point: The principle covered in this module applies across every major production pipeline — from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*

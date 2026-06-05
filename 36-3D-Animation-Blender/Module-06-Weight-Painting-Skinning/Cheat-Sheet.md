@@ -83,3 +83,72 @@ title: "Module 6 Cheat Sheet: Weight Painting & Skinning"
 | Day 2 | Per-limb testing; armpits, hips, fingers |
 | Day 3 | Corrective shape keys + drivers |
 | Day 4 (if needed) | Facial range-of-motion verification |
+
+---
+
+## Automatic Weight Failure Patterns
+
+| Symptom | Cause | Fix |
+|---|---|---|
+| Vertex doesn't move (blue) | No weight from any bone | Draw brush, weight 1.0 on correct bone |
+| Vertex captured by wrong bone | Auto-weight heat map error | Reduce wrong bone; increase correct bone |
+| Armpit collapse | UpperArm.L dominates armpit | Redistribute to Chest + Shoulder bones |
+| Fingers all move together | Tips captured by one bone | Limit each tip to its phalanx bone group |
+| Clothes captured by wrong bone | Garment overlaps wrong bone | Re-run with correct selection only |
+
+---
+
+## X Mirror Weight Painting Requirements
+
+For X Mirror to work during weight painting:
+- Bone names must use `.L` / `.R` suffix exactly
+- Mesh must be symmetric (use Symmetrize in Edit Mode)
+- Enable in Weight Paint header → Options → X Mirror
+- Painting `UpperArm.L` automatically updates `UpperArm.R`
+
+---
+
+## Data Transfer Modifier (Weight Copy)
+
+1. Select **target** mesh (high-poly or retopo)
+2. Add Modifier → Generate → Data Transfer
+3. Source Object: proxy/source mesh
+4. Enable Vertex Data → Vertex Groups
+5. Apply → vertex groups transfer by surface proximity
+
+Used in *Coffee Run* pipeline: paint on 1,200-poly proxy → transfer to 45,000-poly final.
+
+---
+
+## Vertex Group Operations Reference
+
+| Operation | Where | Effect |
+|---|---|---|
+| **Clean** | Vertex Groups → Dropdown → Clean | Remove near-zero weights (< threshold) |
+| **Limit Total** | Vertex Groups → Dropdown → Limit Total | Max N bone influences per vertex (4 for games) |
+| **Sort Alphabetically** | Vertex Groups → Dropdown → Sort | Alphabetical order for easier navigation |
+| **Copy Vertex Group** | Edit Mode → Mesh → Vertices | Copy active group to same-named group on other objects |
+| **Remove from All** | Edit Mode → Mesh → Vertices | Remove selected verts from all vertex groups |
+
+**Limit Total = required before FBX export to Unity/Unreal (max 4 influences per vertex).**
+
+---
+
+## Quadruped Skinning Notes
+
+- Spine: 5–7 bones; FK primary; more range of motion than biped
+- Tail: Spline IK along Bezier curve; control curve control points
+- Neck-body junction: 3–4 vertebra transition; abrupt = "snake swallowing" artifact
+- Mechanical joints: weight 1.0 hard assignments (no blending); sharp panel separation
+
+---
+
+## Gotcha Quick Reference
+
+| Gotcha | Fix |
+|---|---|
+| Vertex group name mismatch | Names are case-sensitive: "UpperArm.L" ≠ "upperarm.L" |
+| Auto Normalize off | Always enable before any stroke |
+| Editing Basis vs. shape key | Select shape key in list first; Pin for clarity |
+| Shape keys fighting | Conflicting shapes: use driver to prevent simultaneous activation |
+| Asymmetric sculpt breaks X Mirror | Complete weight painting before asymmetric sculpt detail |

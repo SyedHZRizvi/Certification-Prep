@@ -91,3 +91,66 @@ title: "Module 9 Cheat Sheet: Rendering & Output"
 - Resolution: 2048×858 (2K DCI Scope)
 - Output: EXR → Compositor → PNG → H.265
 - Farm: 500+ CPUs + 50+ NVIDIA RTX GPUs
+
+---
+
+## Full Cycles vs. EEVEE Comparison
+
+| Feature | Cycles | EEVEE |
+|---|---|---|
+| Rendering method | Path tracing | Rasterization |
+| Light accuracy | Physically correct | Approximated |
+| Caustics | Yes | No |
+| HDRI ambient | Perfect (no setup) | Needs Irradiance Volume |
+| Render speed | 10–120s/frame | 0.5–2s/frame |
+| GPU backend (NVIDIA) | CUDA / OptiX | OpenGL |
+| GPU backend (AMD) | HIP | OpenGL |
+| GPU backend (Apple) | Metal | Metal |
+| Motion blur | Camera + Object | Camera only |
+| Workbench (third engine) | Previz only | Previz only |
+
+---
+
+## Denoising Strategy by Production Type
+
+| Setup | Denoiser | Samples |
+|---|---|---|
+| NVIDIA GPU (indie) | OptiX | 128–256 |
+| AMD GPU (indie) | OIDN | 256–512 |
+| CPU only | OIDN | 256–512 |
+| Render farm | OIDN via Compositor | 512–1024 |
+
+**Firefly fix:** Enable Clamp Indirect (10) in Render → Light Paths. Do NOT just increase samples.
+
+---
+
+## View Layer Multi-Quality Pipeline
+
+| Layer | Objects | Samples | Purpose |
+|---|---|---|---|
+| Characters | Hero characters | 512 | High quality foreground |
+| Background | Env, props | 64–128 | Fast background pass |
+| FX | Particles, sim | 256 | Effects |
+
+Compositor blends all layers. Total render time reduced ~40% vs. single layer at max samples.
+
+---
+
+## Codec Reference for Final Output
+
+| Codec | Blender Setting | Use Case |
+|---|---|---|
+| H.264 CRF 18 | FFmpeg → H.264 | Web, social, client preview |
+| H.265 CRF 20 | FFmpeg → H.265 | Archival, streaming |
+| ProRes 4444 | FFmpeg → ProRes | Broadcast color-grade pipeline |
+
+---
+
+## Gotcha Quick Reference
+
+| Gotcha | Fix |
+|---|---|
+| MP4 render crashes at frame 180 | Always render PNG sequences; encode MP4 after |
+| Fireflies (bright pixel speckles) | Clamp Indirect = 10; reduce Emission Strength |
+| Colors look flat / CG | Keep Filmic view transform (never use Standard) |
+| Render different on farm nodes | Bake all simulations before distributing |

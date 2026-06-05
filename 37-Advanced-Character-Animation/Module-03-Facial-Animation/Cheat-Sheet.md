@@ -103,3 +103,77 @@ Frame 4+:    Maintained surface expression
 Audience:    Subconsciously reads suppression as "they're lying/hiding"
 Duration:    1-5 frames at 24fps
 ```
+
+---
+
+## Full AU Priority Reference (Critical → Medium → Low)
+
+| Priority | AUs | Why |
+|---------|-----|-----|
+| **Critical** | AU1, AU2, AU4, AU5, AU6, AU12, AU15, AU25, AU26, AU45 | Every dialogue/performance shot uses these |
+| **High** | AU7, AU9, AU16, AU17, AU20, AU23, AU24, AU43 | Emotional complexity; anger/fear/sadness depth |
+| **Medium** | AU10, AU22, AU27, AU31, AU32, AU41 | Nuance and specificity |
+| **Low** | AU8, AU18, AU28, AU33, AU38, AU39, AU46 | Specialty use; comedy; extreme emotion |
+
+---
+
+## Dead Eye Diagnostic Flowchart
+
+```
+Eyes feel wrong?
+  ↓
+Are they completely still between blinks?  YES → Add saccades (stepped tangents)
+  ↓ NO
+Are all blinks the same duration?          YES → Vary 3–8f; randomize intervals
+  ↓ NO
+Do both eyes move simultaneously?          YES → Add 1-frame offset (one eye leads)
+  ↓ NO
+Does upper lid stay level on downward gaze? YES → Lid droops 30% looking down
+  ↓ NO
+Is character at full lid opening always?   YES → Add AU7 micro-squint on concentration
+  ↓ NO
+Check pupil dilation (if rig supports) + iris plane orientation
+```
+
+---
+
+## FACS Surrogate System (For Non-Human Faces)
+
+The perceptual signals of AUs can be mimicked through anatomically incorrect but perceptually correct surrogates:
+
+| FACS AU | Standard Mechanism | Non-Human Surrogate |
+|---------|-------------------|-------------------|
+| AU1 Inner brow | Medial frontalis | Ear rotation forward + medial eye elevation |
+| AU6 Cheek raise | Orbital orbicularis | Lateral body curvature into smile direction |
+| AU12 Lip corner | Zygomaticus major | Mouth line angle upward |
+| AU15 Lip depression | Depressor anguli | Mouth line angle downward |
+| AU4 Brow lower | Corrugator | Stripe / marking pattern shifted forward |
+
+**Principle:** FACS is a perceptual system. Any visual element that mimics the output signal of an AU will be read as that expression — regardless of the anatomy producing it.
+
+---
+
+## Blink Personality Parameters Quick Reference
+
+| Character Type | Rate | Duration | Special |
+|---------------|------|----------|---------|
+| Alert/intelligent | Every 3–4s | 3–4f close / 4–5f open | Rare partial |
+| Thoughtful | Every 6–8s | 4f close / 5–6f open | Occasional partial |
+| Nervous/anxious | Every 1–2s | Quick: 3f / 3f | Frequent partial |
+| Tired/bored | Every 8–12s | Long: 6f / 8f | Frequent double blink |
+| Withholding/lying | Every 8–12s | Normal | Suppressed (not increased) |
+
+---
+
+## Module 3 Exam Rapid-Fire
+
+| Question | Answer |
+|---------|--------|
+| AU for Duchenne smile cheek raise | AU6 (Cheek Raiser — orbicularis oculi orbital) |
+| Contempt: which side | Right side (character's right) — uniquely asymmetric |
+| Blink: upper vs lower lid travel | Upper lid 75%, lower lid 25% |
+| Saccade tangent type | Stepped — eyes jump, never glide |
+| Marlin paradox | FACS is perceptual not anatomical — surrogates produce same perception |
+| Blink: close or open faster | Close (4f) is faster than open (5–6f) |
+| Concentration: which AUs | AU7 (lid tighten) + AU4 (brow lower) — without AU23 anger component |
+| Lying person's blink rate | Suppressed (slower), not increased |

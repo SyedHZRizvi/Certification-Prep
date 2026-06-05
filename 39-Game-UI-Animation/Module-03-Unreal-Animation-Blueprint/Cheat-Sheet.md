@@ -113,3 +113,46 @@ AnimInstance->Montage_Stop(0.2f, AttackMontage);   // blend out over 0.2s
 | Control Rig = Sequencer only | No — Control Rig is real-time, runs on animation thread |
 | Montage = new state machine state | No — Montage is a Slot override, not a state |
 | Aim Offset = camera aim | No — Aim Offset is an additive pose overlay for weapon aiming |
+| Blend Space axes unequal range | Normalise both axes — unequal ranges bias interpolation toward the wider axis |
+
+---
+
+## 📊 Game Engine Animation Feature Comparison
+
+| Feature | Unity | Unreal Engine | Godot 4 |
+|---|---|---|---|
+| State machine editor | Animator window | AnimGraph (AnimBP) | AnimationTree (built-in) |
+| Blend interpolation | Blend Tree (1D, 2D, Direct) | Blend Space 1D / 2D | BlendSpace2D node |
+| Procedural/IK | Animation Rigging package | Control Rig | SkeletonModificationStack |
+| Cinematic timeline | Timeline | Sequencer | AnimationPlayer + Path |
+| One-shot overrides | Override layer | Montage + Slot | AnimationNode one-shot |
+| Per-bone masking | Avatar Mask | Layered Blend Per Bone | Bone filter on track |
+| Performance capture | Third-party (LiveLink) | LiveLink / MetaHuman Animator | Third-party |
+| GPU skinning | Yes (URP/HDRP) | Yes (Nanite-compatible) | Yes (GLES3 / Vulkan) |
+| Motion matching | Third-party packages | Native (UE5.4+) | Third-party |
+| 2D skeletal animation | Spine-Unity package | Spine-Unreal plugin | Native AnimationPlayer |
+
+---
+
+## 🎮 Valorant Competitive Animation Specs
+
+| Parameter | Value | Reason |
+|---|---|---|
+| Blend Space interpolation (Reyna) | ~12 u/s | Aggressive duelist feel |
+| Blend Space interpolation (Sage) | ~8 u/s | Methodical support feel |
+| Ability animation → Montage | Slot-based | Agent walks + casts simultaneously |
+| Plant/defuse transition | 0.0s (snap) | Visual must sync to game state exactly |
+
+---
+
+## ⚙️ Unreal AnimBP Shortcuts
+
+| Action | Method |
+|---|---|
+| Get character speed | `Try Get Pawn Owner → GetVelocity → VectorLength` |
+| Set state variable | `Event Tick → calculate → set variable` |
+| Read variable in AnimGraph | Variable nodes (same as Blueprint variable access) |
+| Add state machine | AnimGraph → right-click → Add State Machine |
+| Add Blend Space to state | Double-click state → drag Blend Space asset in |
+| Enable IK on foot | Add Two Bone IK node; set end bone + IK Bone + effector |
+| Add Montage slot | Output Pose → Slot node → (rest of graph) |

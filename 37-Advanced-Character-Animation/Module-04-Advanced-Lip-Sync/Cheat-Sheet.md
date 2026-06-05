@@ -92,3 +92,73 @@ STEP 5:  Full phoneme detail ONLY if hero character in close-up.
 | On 2s | 12 positions/second (one drawing per 2 frames) |
 | On 1s | 24 positions/second (one drawing per frame) |
 | Puppety mouth | Over-animation of every phoneme; too much movement |
+
+---
+
+## Viseme-to-AU Cross-Reference
+
+| Viseme | Phonemes | Primary AUs |
+|--------|---------|-------------|
+| Closed | M, B, P | AU25 closed (lips together) |
+| F/V | F, V | AU10 upper lip + lower lip to teeth |
+| Ah | Ah | AU26 full jaw drop + AU25 |
+| Oh | Oh | AU22 funnel + AU26 medium |
+| Ee | Ee | AU20 lip stretcher + AU25 |
+| Oo | Oo | AU18 pucker + AU22 |
+| Rest | (default) | AU25 very slight separation |
+
+**Note:** Ee uses AU20 (lip stretcher), NOT AU12 (smile) — a common confusion.
+
+---
+
+## Dialogue Performance Hierarchy
+
+| Layer | Content | Priority |
+|-------|---------|---------|
+| 1. Sync accuracy | M/B/P closures; 2f lead | Baseline — non-negotiable |
+| 2. Emotional performance | FACS expression; brow state; eye direction | Essential |
+| 3. Thought rhythm | Micro-pauses; mid-word hesitations | Senior |
+| 4. Involuntary signals | Swallows; micro-expressions; moisture changes | Master level |
+
+**The Lion King diagnosis:** Layer 1 correct. Layer 2 surface-level. Layers 3–4 absent. Supervisor note: "character isn't listening to himself."
+
+---
+
+## 2-Frame Lead Across Frame Rates
+
+| Frame Rate | Lead Frames | Time Equivalent |
+|-----------|------------|----------------|
+| 24fps (theatrical) | 2 frames | 83ms |
+| 30fps (television) | 2–3 frames | 67–100ms |
+| 60fps (game) | 3–4 frames | 50–67ms |
+| 48fps (HFR theatrical) | 2–3 frames | 42–63ms |
+
+**Underlying principle constant:** ~40–80ms auditory-visual processing gap.
+
+---
+
+## Syllables Per Minute: Language Reference
+
+| Language | Approx. Syllables/Minute | Sync Implication |
+|---------|------------------------|-----------------|
+| English | ~220 | Animation baseline |
+| Spanish | ~250 | Faster — English animation runs slow |
+| French | ~280 | More mouth movement required |
+| Mandarin | ~230 | Comparable; tonal structure differs |
+| Italian | ~260 | Similar to French challenge |
+| Japanese | ~320–350 | Significantly more — simplify or re-time |
+
+---
+
+## Module 4 Exam Rapid-Fire
+
+| Question | Answer |
+|---------|--------|
+| Only fully closed viseme | M, B, P — the only lip-to-lip contact |
+| Why 2-frame lead is neurological | Auditory processing is 40–80ms faster than visual (~2f at 24fps) |
+| Why keyframing every phoneme fails | Creates "puppety" mouth — excessive movement |
+| 1s vs 2s: fast dialogue threshold | Above 180 wpm → use 1s |
+| Performance-first step 1 | Block body, head, eyes — NO MOUTH |
+| Japanese dubbing simplification | Syllable density too high — use open/close only |
+| F/V viseme mechanism | Lower lip under UPPER TEETH (not lip-to-lip) |
+| Ee viseme AU | AU20 lip stretcher (not AU12 smile) |

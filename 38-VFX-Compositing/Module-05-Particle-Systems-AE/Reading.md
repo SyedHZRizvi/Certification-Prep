@@ -80,7 +80,7 @@ Fire is a layered effect: the fireball, the inner flame, the outer glow, and the
 - Particle Type: Sprite (a small bright spot or star shape)
 - Physics: Gravity Y = 200 (embers fall after initial upward burst); Air Resistance: 0.3
 
-> 🎯 **Exam Tip:** Fire in Trapcode Particular is always at least 3 layers: core flame, outer flame, and smoke. Most professional setups add embers and sometimes a ground glow. The Aux System (secondary emitter from dead particles) is excellent for sparks spawning from dying ember particles.
+> 🎯 **What the exam tests:** Fire in Trapcode Particular is always at least 3 layers: core flame, outer flame, and smoke. Most professional setups add embers and sometimes a ground glow. The Aux System (secondary emitter from dead particles) is excellent for sparks spawning from dying ember particles.
 
 ### Building Dust and Debris
 
@@ -103,6 +103,23 @@ Magic effects (think: Dr. Strange's portal rings, the Infinity Gauntlet snap):
 - Size over Life: Rapid growth then fade
 - Turbulence: Medium-high; small scale (creates individual swirling paths)
 - Physics: Gravity disabled or very low; Wind drives directional drift
+
+---
+
+## 📊 Particle Physics Parameter Ranges at a Glance
+
+Professional compositors learn these ranges so they can dial in realistic effects without iterating from scratch:
+
+| Effect | Gravity Y | Air Turbulence | Turbulence Scale | Particles/sec |
+|--------|-----------|----------------|-----------------|--------------|
+| Fire core | −200 to −350 | 100–200 | 0.5–1.0 | 200–400 |
+| Fire smoke | −20 to −50 | 50–100 | 1.5–2.5 | 50–100 |
+| Dust cloud | −5 to −20 | 150–300 | 3.0–6.0 | 500–2000 |
+| Rain | 350–500 | 0–30 | — | 1000–3000 |
+| Snow | 30–80 | 10–50 | 2.0–4.0 | 200–600 |
+| Embers | 150–250 | 30–80 | 0.8–1.5 | 20–60 |
+| Magic sparks | −10 to 10 | 80–150 | 0.3–0.8 | 50–200 |
+| Underwater bubbles | −100 to −200 | 20–60 | 1.0–2.0 | 80–200 |
 
 ---
 
@@ -142,6 +159,33 @@ Magic effects (think: Dr. Strange's portal rings, the Infinity Gauntlet snap):
 
 ---
 
+## 🎬 Case Study: Mad Max: Fury Road — Practical vs Digital Dust
+
+*Mad Max: Fury Road* (2015) stands as a case study in combining practical and digital FX. Director George Miller's philosophy was to photograph real vehicles doing real stunts in the Namib Desert — and VFX studio Iloura's job was to extend, enhance, and multiply the reality that existed in the plates.
+
+### The Dust Storm Sequence
+
+The film's iconic sandstorm wall — a 5,000-foot wall of orange dust consuming everything — combined three techniques:
+
+1. **Practical dust:** Real dust generated on location by explosives and wind machines — photographed against real desert sky
+2. **Trapcode Particular dust simulation:** Digital dust particles extending the practical elements further into the frame, filling in areas where the practical dust was too sparse
+3. **Houdini volume simulation:** The large-scale volume of the dust wall itself — a physically simulated fluid simulation rendered in V-Ray and composited in Nuke
+
+The key insight: the digital dust particles had to match the **color** and **opacity profile** of the practical dust photographed on the day. Iloura's compositors color-sampled the practical dust from the plate and used that as the target for the digital Particular emitters.
+
+> 🎯 **What the exam tests:** Matching digital particles to practical elements requires sampling the color and opacity characteristics of the real element from the plate. Never create a particle color from memory — always reference the plate.
+
+### The Practical-to-Digital Handoff Workflow
+
+| Stage | Element | Source |
+|-------|---------|--------|
+| Ground level (0–20 ft) | Real dust, real fire, real vehicles | Practical, photographed on location |
+| Mid level (20–200 ft) | Extended dust cloud, vehicle explosion debris | Trapcode Particular in AE |
+| Upper level (200–5000 ft) | Sandstorm wall volume | Houdini fluid sim + V-Ray render |
+| Integration | All three levels composited together | Nuke with color matching to practical reference |
+
+---
+
 ## 🔥 Building Fire Without Plugins
 
 For productions without access to Trapcode Particular, professional-looking fire can be built using AE's native tools:
@@ -177,6 +221,98 @@ Understanding the physics controls in Trapcode Particular makes the difference b
 
 ---
 
+## 🔬 Rendering Particles: Performance and Quality
+
+Trapcode Particular's rendering performance significantly affects production workflow. Understanding the performance trade-offs helps manage project timelines:
+
+### Performance Optimization Strategies
+
+| Strategy | When to Use | Quality Impact |
+|---------|-------------|--------------|
+| Reduce Particles/sec | When render is slow but effect size doesn't change | Minimal if amount isn't the bottleneck |
+| Use Sprite instead of OBJ model | When using custom 3D particle models | Sprites render 10–50× faster than OBJ |
+| Enable GPU acceleration (Particular 6+) | On machines with CUDA or Metal GPU | No quality impact; 2–5× speed increase |
+| Reduce motion blur quality | Low-motion particle effects | Minor quality reduction at low-motion |
+| Pre-render particle layers to disk | During final composite assembly | No quality impact; eliminates interactive recalculation |
+| Lower Render Quality to Draft | During animation iteration | Visible quality reduction; good for timing checks only |
+
+### Pre-rendering Particle Elements
+
+In professional production, particle layers are almost always **pre-rendered to disk** before the final composite is assembled. This workflow:
+1. Prevents re-simulation on every comp adjustment
+2. Allows the Nuke compositor to work with fixed EXR sequences (same as CG renders)
+3. Enables quality review and approval before the element is locked into the composite
+4. Allows the particle artist and the compositor to work simultaneously
+
+> 🎯 **What the exam tests:** In a professional pipeline, particle elements are rendered to EXR sequences and delivered to the compositor — they are NOT re-simulated within the live Nuke script. This mirrors the CG render workflow: the particle artist delivers an EXR; the compositor assembles the final shot.
+
+---
+
+## 🔬 Full Particle System Vocabulary Reference
+
+| Term | Definition |
+|------|-----------|
+| Emitter | The source of particle birth (point, line, plane, sphere, layer) |
+| Particle lifecycle | Birth → physics applied → death |
+| Sprite | A flat texture image assigned to each particle |
+| OBJ model | A 3D geometry shape assigned to each particle (slower to render) |
+| Aux System | Secondary emitter that spawns particles when parent particles die |
+| Air Turbulence | Random chaotic force field applied to all particles |
+| Turbulence Scale | Size of turbulence force cells — large = billowing, small = flickering |
+| Air Resistance | Drag force decelerating particles over time |
+| Size over Life | A curve controlling particle size from birth to death |
+| Opacity over Life | A curve controlling particle visibility from birth to death |
+| Color over Life | A gradient controlling particle color from birth to death |
+| Velocity | Initial speed at which particles are emitted |
+| Spread | The angular cone width of the emission direction |
+| Gravity Y | Vertical force: positive = falls, negative = rises |
+
+---
+
+## 🎬 Case Study: Doctor Strange — MCU Sorcery Particle Systems
+
+The sorcery VFX in *Doctor Strange* (2016, Framestore) established the visual language for magic in the MCU. The gold-orange mandala circles and geometric shields were built using a combination of Houdini simulations for hero close-up shots and Trapcode Particular in After Effects for background elements and supporting shots.
+
+### The Layer Emitter Technique for Magic
+
+The key to the MCU mandala ring look is Particular's **Layer Emitter** type:
+
+1. Draw a circular shape layer in AE (or import the ring geometry as a pre-comp)
+2. Set Particular's Emitter Type to **Layer** → select the ring shape layer
+3. Particles emit along the shape of the ring in 3D space
+4. Glow sprites with Color over Life transitioning from gold → white → gold
+5. High Turbulence + small Turbulence Scale creates individual particle swirling
+6. Add blend mode + a separate Glow effect on the particle layer creates the luminous quality
+
+> 🎯 **What the exam tests:** The Layer Emitter type emits particles along the shape of any AE layer — a spline, a shape, a footage layer. This is the correct tool for effects where particles must follow a geometric path or shape, not a point or sphere origin.
+
+### Particle-Based Energy Effects: Parameter Summary
+
+| Effect | Emitter Type | Color | Blend Mode |
+|--------|-------------|-------|-----------|
+| Sorcerer ring | Layer (circle shape) | Gold → white → gold | Add |
+| Portal shards | Sphere (expanding) | Blue → white → fade | Add + Screen |
+| Infinity Gauntlet dust | Sphere (emitting from body) | Warm gray → dust brown | Screen |
+| Wand sparks | Point | Gold → orange → off | Add |
+| Force field impact | Layer (impact shape) | Blue → cyan → white | Add |
+
+---
+
+## 🎯 What the Exam Tests — Module 5
+
+1. **Three-part particle system anatomy:** Emitter, Particles, Physics — every particle system in every tool is built on these three components.
+2. **Fire layering requirement:** Professional fire is always at minimum 3 layers: core flame, outer flame, smoke. Single-layer fire looks flat and unrealistic.
+3. **Aux System purpose:** Spawns secondary particles from dead primary particles — used for sparks from dying embers, smoke from dying fire particles.
+4. **Gravity direction convention:** In Trapcode Particular, positive Y gravity pulls down; negative Y pulls up. Fire uses negative Y (flames rise). Debris uses positive Y (falls after initial upward burst).
+5. **CC Particle World limitations:** No Aux System; basic physics only; limited particle types. Appropriate for snow, ash, simple atmospheric — not fire or complex simulations.
+6. **Dust vs fire Turbulence Scale:** Dust uses large Scale (3–6) for billowing motion. Fire uses small Scale (0.5–1.0) for flickering.
+7. **Layer emitter use case:** Layer Emitter type emits particles from a specific AE layer (a shape layer, mask, or footage) — used for magic effects where particles trail from a specific shape or logo.
+8. **Matching digital to practical:** Digital particles must be color-sampled from the practical plate element — never invent a color for digital dust or smoke.
+9. **Fractal Noise fire technique:** A no-plugin alternative using Fractal Noise + Curves + Glow + animated Evolution. 2D texture approach vs particle simulation.
+10. **Air Resistance effect:** Decelerates particles over time. Essential for realistic embers (slows after initial blast) and dust (drifts rather than linear flight).
+
+---
+
 ## 📊 Summary: Effect-to-Technique Map
 
 | Effect | Tool | Key Parameters |
@@ -188,12 +324,50 @@ Understanding the physics controls in Trapcode Particular makes the difference b
 | Simple snow | CC Particle World | Low birth rate, long longevity, faded sphere |
 | Fire (no plugins) | Fractal Noise + Curves | Animated evolution, color remap |
 | Bokeh lights | CC Particle World | Lens type; Birth/Death color = light colors |
+| Sandstorm wall | Particular + Houdini | Practical color reference; volume sim for scale |
 
 ---
 
 ## 🎯 Next Steps
 
 Module 6 introduces Nuke — the node-based compositing paradigm that is the industry standard for film VFX. Nuke takes every concept from Modules 1–5 (keying, roto, tracking, particles) and builds them into a non-linear, reusable node network that can handle the complexity of a 400-element hero composite.
+
+---
+
+## 📊 Effect Recipe: Professional Atmospheric Haze
+
+Atmospheric haze is one of the most-used but least-discussed particle techniques. It makes composited elements look like they exist in a real environment with real air.
+
+### Building Atmospheric Haze in AE Using Particular
+
+| Parameter | Value | Rationale |
+|-----------|-------|-----------|
+| Emitter Type | Box (fills entire frame depth) | Distributes haze particles across the 3D space |
+| Particles/sec | 5–20 | Very sparse — individual haze particles are large and translucent |
+| Life | 10–30 seconds | Particles persist for many frames (slow-drifting haze) |
+| Particle Type | Sphere | Simple shape for soft volumetric quality |
+| Size | 200–500 (very large) | Haze particles are large soft blobs |
+| Size Random | 60–80% | Irregular sizes prevent pattern repetition |
+| Opacity over Life | Fade in → Hold → Fade out | Avoids popping as particles are born and die |
+| Birth/Death Opacity | 0% | Particles must fade in and out |
+| Max Opacity | 3–8% | Very low — cumulative effect creates the haze |
+| Gravity Y | −5 to +5 | Nearly neutral; slight drift |
+| Air Turbulence | 20–50 | Slow gentle motion |
+| Turbulence Scale | 3–6 | Large slow swirling |
+
+**Composite over the plate using Screen blend mode at 30–70% opacity.** Multiple overlapping haze layers at different depths create convincing volumetric depth.
+
+---
+
+## 📊 Quick Reference: Effect Complexity Scale
+
+| Effect | Complexity | Min Layers | Approx Render Time |
+|--------|-----------|-----------|-------------------|
+| Simple snow (CC Particle World) | Low | 1 | Real-time |
+| Dust cloud (Particular) | Low-medium | 1 | 5–15 min/frame |
+| Atmospheric haze | Low | 1–3 | 5–30 min/frame |
+| Fire (professional, 4 layers) | High | 4 | 30–120 min/frame |
+| Hero explosion (Houdini pyro) | Very high | 8+ | Hours/frame |
 
 ---
 

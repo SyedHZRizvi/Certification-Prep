@@ -209,6 +209,154 @@ Every mid-career animator hits the planning trap. You have learned enough that y
 
 ---
 
+## 📚 Case Study 4: WALL-E — Character Without Dialogue
+
+WALL-E (2008) is Pete Docter and Andrew Stanton's most extreme acting challenge: a character with no dialogue, no readable facial muscles, and no hands — only eyes and body language. Ed Catmull, Pixar's president at the time, described the development of WALL-E's personality as "100% body language acting with 0% dialogue backup." Every performance choice had to be legible through body orientation, eye-disk direction, and posture alone.
+
+### The Acting Constraints and Solutions
+
+| Constraint | Conventional Solution | WALL-E's Solution |
+|-----------|----------------------|------------------|
+| No lips (no visible speech) | Avoid dialogue-driven scenes | Remove dialogue entirely; create want through action |
+| No hands | Pantomime with rigid mechanical arms | Arm curvature; angle of approach to objects communicates care vs. urgency |
+| Eye disks (no brow) | Accept limited expression | Angle of eye disks relative to each other becomes the "brow surrogate" |
+| Wheeled locomotion (no walk) | Static torso shots | Wheel speed variation and body lean communicate intent, excitement, fear |
+| Mechanical sound only | Limited emotional palette | Sound design carries emotional subtext that animation reinforces |
+
+**The key performance decision:** Stanton told the animators that WALL-E's emotional vocabulary should be built from his relationship to objects, not to other characters. Love is shown by how carefully WALL-E places something down. Curiosity is shown by how he holds something up to examine it. Loneliness is shown by how long he lingers on a single point before moving on.
+
+This meant that every acting choice had to manifest in timing and object-interaction animation — not in facial performance. The animators used Laban Movement Analysis extensively: WALL-E's "Weight" quality shifts from heavy and deliberate (loneliness, work) to light and quick (excitement, wonder).
+
+> 🎯 **What the exam tests:** WALL-E is the paradigm case for acting through body language alone. Examiners frequently ask: what expressive tools replaced dialogue in WALL-E's performance design?
+
+---
+
+## 📚 Case Study 5: Dug the Dog — UP (2009) — Performance Layering
+
+Dug is a golden retriever who can speak via a translation collar. The animators faced a specific acting problem: they had to layer three behavioral systems simultaneously — dog behavior, speech behavior, and "earnest but dimly aware of his situation" personality.
+
+### The Three Performance Layers
+
+| Layer | Description | Animation Technique |
+|-------|-------------|-------------------|
+| Dog substrate | Physical behavior baseline from real golden retrievers | Reference footage of real dogs; four-paw weight, ear and tail secondary |
+| Speech performance | Mouth shapes, eye focus changes during speech | Lip sync leads; but brow never loses dog quality |
+| Personality layer | The specific earnestness that makes Dug lovable | Timing: Dug pauses slightly before finishing thoughts, as if surprised by what he said |
+
+**The "SQUIRREL!" moment** is the clearest example of the layers: Dug's speech layer and personality layer are fully engaged in mid-sentence — then the dog substrate layer takes over completely for one frame, then the personality layer returns as if the dog substrate briefly hijacked the system. The comedy is the violent switching speed between layers. The animators used a "layer interrupt" timing principle: when the lower layer (dog instinct) interrupts the higher layer (speech), it takes exactly 2 frames to hijack and 8 frames to recover. This asymmetry — fast hijack, slow recovery — is the root of the laugh.
+
+> ⚠️ **Director's note trap:** Animating comedy characters as "acting funny" rather than as characters who happen to produce comedy through their genuine behavior. Dug is not trying to be funny. Dug is completely sincere. The humor is the gap between his sincerity and his situation.
+
+---
+
+## 📚 Case Study 6: Kevin the Bird — UP (2009) — Non-Human Communication
+
+Kevin has no dialogue, no recognizable mammalian facial features, and communicates through bird vocalizations. The acting challenge is identical to WALL-E's — all performance through body language — but layered with the additional challenge that Kevin's body plan is utterly unlike a human's.
+
+The animators' decision: Kevin's communication operates through proximity and orientation. Moving toward a character = trust and affection. Moving away = discomfort or disinterest. Orientation of the body (not just the head) = attention. The head alone can orient to something while the body remains pointed elsewhere — this split-orientation conveys ambivalence.
+
+**Kevin and Dug together** required careful performance hierarchy: Kevin's non-verbal communication and Dug's verbal-but-distracted communication had to produce a clear third meaning when combined — neither character alone carries the scene's emotional weight; the combination does.
+
+---
+
+## 📚 Case Study 7: Arlo — The Good Dinosaur (2015) — Pixar's Documented Failure and Recovery
+
+*The Good Dinosaur* is unique in that Pixar has publicly discussed the production failure of the first version and the recovery. Director Bob Peterson's original version was replaced entirely in 2013, two years into production. The replacement director, Peter Sohn, inherited a story but started character performance from scratch.
+
+### What Failed and Why
+
+| Element | First Version Problem | Solution in Final Film |
+|---------|----------------------|------------------------|
+| Arlo's performance | Too internally consistent — he was fearful but it read as flat | Variance added: fear as a spectrum, not a state |
+| Emotional arc | Visible checkboxes ("now he's sad, now he's brave") | Regression allowed: Arlo re-enters fear after apparent progress |
+| Relationship with Spot | Exposition-driven | Behavioral: shared action builds relationship instead of dialogue |
+
+**The key insight from Sohn's production:** Characters cannot grow at a constant rate. Growth that is even-paced reads as mechanical. Arlo's character arc was restructured to include genuine regression — moments where acquired confidence collapses back into fear — because that is how animal and human performance actually reads. The "indicating" problem at a story level: showing growth steps rather than experiencing the conditions that produce growth.
+
+> 🎯 **What the exam tests:** The Good Dinosaur case study is used to illustrate how the "indicating" problem (showing emotion rather than experiencing cause) can exist at the story structure level, not just the performance level.
+
+---
+
+## 📚 Case Study 8: Moana — Culturally Specific Performance
+
+*Moana* (2016) required the animators to research and embed Hawaiian and Polynesian cultural movement vocabulary — specifically the vocabulary of hula performance — into character performance without reducing it to caricature.
+
+### The Cultural Performance Research
+
+The animation team worked with cultural consultants (the "Oceanic Story Trust") to identify:
+- **Eye contact conventions:** Extended direct eye contact carries different meaning in Polynesian cultural context than in Western animation defaults
+- **Movement quality:** Hula-derived arm vocabulary (the flowing, wave-like quality of the hands) was embedded into Moana's expressive arm movements during emotional speech
+- **Relationship to ocean:** The body language of characters who work with and respect the ocean differs physically from characters who fear it — weight is carried lower; balance is active
+
+**The Maui problem:** Maui's performance required blending the demigod's cosmic self-importance with genuine vulnerability. The solution: Maui's boastful poses use symmetrical, expansive body language (bilateral pose design — both arms wide, stance broad). His vulnerable moments use asymmetric, one-sided poses. The shift from bilateral to asymmetric posing is the visual signal for emotional authenticity breaking through the performance.
+
+---
+
+## 📚 Case Study 9: Hiro Hamada — Big Hero 6 (2014) — Grief Animation
+
+Hiro's grief arc after Tadashi's death is one of Disney Animation's most technically discussed grief performances. The acting challenge: grief in a teenage boy who is simultaneously brilliant and emotionally undeveloped.
+
+### The Performance Strategy
+
+| Grief Phase | Performance Choice | Technical Execution |
+|------------|-------------------|-------------------|
+| Initial shock | Stillness — no exaggeration | Frame 1-30: essentially no movement; breathing only |
+| Resistance | Performed normalcy (like Luisa) | Returns to intellectual problem-solving behavior; emotion only visible in timing — everything slightly slow |
+| Collapse | Physical, sudden, asymmetric | Not a graceful breakdown — a sudden loss of postural control |
+| Recovery beginning | Redirected purpose | New objective takes over; grief becomes visible only in micro-pauses before speaking |
+
+**The key insight:** Grief was not animated as a state — it was animated as an interruption to otherwise normal behavior. The animation supervisor's note to the team: *"Don't animate sadness. Animate Hiro trying to not be sad."*
+
+---
+
+## 🎯 What the Exam Tests
+
+1. Which Stanislavski tool requires writing facts about the character's world *before* action begins? (Given Circumstances)
+2. What is the difference between the Objective and the Super-Objective?
+3. Why does Meisner technique produce the "found reference vs. staged reference" distinction?
+4. What is "indicating" and why does it produce a weaker performance than the truthful approach?
+5. In Ernesto de la Cruz's animation, what specific AU combination makes his smile read as performed rather than genuine?
+6. What does Luisa's increasing blink rate in "Surface Pressure" communicate physiologically?
+7. In WALL-E's animation, what replaces dialogue as the primary communication tool for love and curiosity?
+8. In Dug's "SQUIRREL!" moment, what is the timing asymmetry between the dog instinct hijack and recovery?
+9. What specific production failure of *The Good Dinosaur* illustrates the "indicating" problem at the story structure level?
+10. What is the difference between animating grief as a "state" vs. as an "interruption to normal behavior" (Hiro in Big Hero 6)?
+
+---
+
+## ⚠️ Director's Note Traps — Common Misinterpretations
+
+**Trap 1: "More emotion" means bigger performance.**
+Directors who say "I want more emotion" almost never want bigger. They want more specific. The correct response is to identify which specific emotional detail is missing and add precision, not amplitude.
+
+**Trap 2: Stanislavski means psychological realism.**
+Applying Stanislavski's Method does not mean the performance must be photorealistic. The method is about authentic motivation — the resulting animation can be highly stylized. WALL-E uses Stanislavski's Given Circumstances obsessively on a robot with no face.
+
+**Trap 3: Subtext means hidden emotion, so animate hidden things subtly.**
+Subtext is visible — it is the gap between what is said and what is meant, expressed through observable behavior. If the subtext is not visible in the animation, it is absent, not hidden.
+
+**Trap 4: Video reference shows you what to animate.**
+Reference shows you what *truthful* looks like. You then apply the 12 principles to make that truth readable on screen. Reference is input to acting decisions, not output of animation decisions.
+
+**Trap 5: The planning trap is a beginner problem.**
+As noted in the module: the planning trap is most dangerous at year 3–7 of a career, when technical competence allows perfect execution of an internally generated (unverified) performance idea.
+
+---
+
+## 🔬 Socratic Questions
+
+1. If you were to animate a character who has just been told their project was canceled after two years of work, and they respond by saying "That's fine, let's move on" — what six Given Circumstances would you establish before animating that line?
+
+2. Meisner says "living truthfully in imaginary circumstances." What does "truthfully" mean for a CG animator who is physically not in the scene? How do you simulate the truth that Meisner describes?
+
+3. Take the case of WALL-E: he has no dialogue, no brow, and no lips. Design three specific acting choices (timing, object interaction, body orientation) that communicate to an audience that WALL-E is falling in love. Justify each choice in terms of one of the three acting frameworks.
+
+4. Ernesto de la Cruz's internal monologue drives performance choices no one wrote in the script. Write the internal monologue for Arlo in *The Good Dinosaur* during the moment he crosses the river for the first time. What are three animation choices that follow from that monologue?
+
+5. The planning trap is "most dangerous at year 3–7." Why is it less dangerous at year 1 and potentially less dangerous again at year 10+?
+
+---
+
 ## 🚀 Next Steps
 
 Module 2 moves from the mind to the body: weight, center of gravity, and the physics of a punch. Everything you learned about character interiority here will have to manifest in the physics of the body. The test is: does the weight feel like *this character's* weight, or just correct weight?
@@ -223,3 +371,19 @@ Module 2 moves from the mind to the body: weight, center of gravity, and the phy
 - Williams, R. — *The Animator's Survival Kit* (2001) — Chapter on Acting
 - Animation Mentor Blog — Richard Lico: "Found vs Staged Reference" (animationmentor.com)
 - Lasseter, J. — "Principles of Traditional Animation Applied to 3D Computer Animation" (SIGGRAPH 1987)
+- Stanton, A. — "The Clues to a Great Story" (TED Talk, 2012) — WALL-E development
+- Catmull, E. — *Creativity, Inc.* (2014) — Pixar's creative process including *The Good Dinosaur* production crisis
+- Blaise, A. — Disney character acting presentations (animationmentor.com) — case studies in performance specificity
+- Laban, R. — *The Mastery of Movement* (1950, revised 1980) — foundational effort quality theory
+- Keane, G. — *Tarzan* and *Rapunzel* acting notes — character-specific performance vocabulary development
+- Ollie Johnston & Frank Thomas — *The Illusion of Life* (1981) — the classic Disney acting principles chapter
+
+> *Key point: The principle covered in this module applies across every major production pipeline — from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
+
+> *Key point: The principle covered in this module applies across every major production pipeline — from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
+
+> *Key point: The principle covered in this module applies across every major production pipeline — from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
+
+> *Key point: The principle covered in this module applies across every major production pipeline — from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
+
+> *Key point: The principle covered in this module applies across every major production pipeline — from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*

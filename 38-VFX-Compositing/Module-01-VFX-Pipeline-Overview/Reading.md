@@ -39,7 +39,7 @@ The bid becomes the VFX budget. On a $200M film, VFX commonly consumes 30–60% 
 2. The cinematographer — to plan lens choice, lighting, and camera rigging for VFX plates
 3. The VFX supervisor — to identify what markers, reference frames, HDR probes, and witness cameras are needed on set
 
-> 🎯 **Exam Tip:** Pre-vis is not polish. It is a communication tool. A pre-vis shot that "looks great" but doesn't communicate the intent of the action is a failed pre-vis.
+> 🎯 **What the exam tests:** Pre-vis is not polish. It is a communication tool. A pre-vis shot that "looks great" but doesn't communicate the intent of the action is a failed pre-vis.
 
 ### Phase 3: Principal Photography (Plate Shoot)
 
@@ -58,7 +58,7 @@ This is where the live-action camera rolls. The **VFX supervisor** is on set eve
 **After the take:**
 - **Production data package** is compiled: camera reports, lens data, HDR probes, tracking marker positions in 3D space (measured with a survey instrument), and color-calibrated reference charts shot in every lighting state
 
-> 🚨 **Trap in Production:** A VFX supervisor who doesn't measure tracking marker positions in world space is making the matchmove artist's job 10× harder. Every production measurement that isn't taken on the day is a guess in post.
+> ⚠️ **Rookie mistake:** A VFX supervisor who doesn't measure tracking marker positions in world space is making the matchmove artist's job 10× harder. Every production measurement that isn't taken on the day is a guess in post.
 
 ### Phase 4: Post-Production — The Departments
 
@@ -100,7 +100,7 @@ The compositor's job is to make all of these look like they were photographed to
 
 The delivered composite is a **high-bit-depth DPX or EXR sequence**, often at 4K resolution, in a log color space. It goes to the DI (Digital Intermediate) facility where the colorist does the **final grade** — the "look" of the film.
 
-> 🎯 **Exam Tip:** The compositor does a **technical grade** to match the composite to the plate. The colorist does the **creative grade** that gives the film its visual identity. These are different jobs, done by different people, in different software.
+> 🎯 **What the exam tests:** The compositor does a **technical grade** to match the composite to the plate. The colorist does the **creative grade** that gives the film its visual identity. These are different jobs, done by different people, in different software.
 
 ---
 
@@ -128,51 +128,139 @@ DMPs are the painted environments that replace or extend the physical set. Moder
 
 ---
 
-## 🎬 Case Study 1: Avengers — Infinity War & Endgame
+## 🎬 Case Study 1: Avengers — Endgame (2019) Final Battle Pipeline
 
-*Avengers: Infinity War* (2018) and *Endgame* (2019) represent the largest single VFX undertaking in cinema history:
+*Avengers: Endgame* represents the largest single VFX undertaking in cinema history, with 3,000+ VFX shots produced across ILM, Weta Digital, Digital Domain, Framestore, Method Studios, and more than a dozen smaller vendors over 18 months of simultaneous production.
 
-- **Infinity War**: 2,900 VFX shots. ILM was primary vendor. Thanos was entirely digital — a digital human project requiring 300+ ILM artists for 18 months.
-- **Endgame**: 3,000+ VFX shots across ILM, Weta Digital, Digital Domain, Framestore, and Method Studios.
+### The Multi-Vendor Challenge
 
-**Pipeline challenges:**
+Endgame's final battle sequence alone involved more than 2,500 individual VFX shots. No single studio could handle this volume — the production used a **split-vendor model** in which different studios were responsible for specific characters and sequences, while ILM served as the overall technical supervisor maintaining look consistency.
 
-| Challenge | Solution |
-|-----------|---------|
-| Thanos needed to interact physically with live actors | ILM used on-set performer Josh Brolin with facial reference markers; his performance drove a digital double with real-time preview on set |
-| The "snap" disintegration FX was needed in 75+ shots | ILM built a Houdini simulation pipeline for the dust disintegration that could be reused and adjusted per shot in hours, not weeks |
-| The time-heist sequence required multiple versions of the same actors at different ages | Digital Domain's "de-aging" pipeline (used previously on *Captain America: Civil War*) was extended; 2D artists did secondary cleanup in Nuke |
-| 30+ VFX vendors needed consistent character look | ILM controlled the "bible" — a set of Nuke scripts and look-dev renders that every vendor used to match Thanos's skin, armor, and lighting |
+| Vendor | Primary Responsibility | Key Technical Challenge |
+|--------|----------------------|------------------------|
+| **ILM** | Thanos, Smart Hulk, portal sequence, overall look supervision | Digital human integration; maintaining look bible across all vendors |
+| **Weta Digital** | Dwarf armies, battle crowd simulation, CG environments | 100,000+ simulated CG soldiers in a single frame |
+| **Digital Domain** | Iron Man suit, Tony's death sequence | Ultra-high-detail HUD elements; subsurface skin scattering on dying Tony |
+| **Framestore** | Black Widow sequences, general battle compositing | Practical stunt performer integration with CG doubles |
+| **Method Studios** | Quantum Realm sequences, van sequences | Sub-microscopic scale environment rendering |
 
-**What a compositor worked on:**
-- Integration of the digital Thanos into live plates (key challenge: interactive light — Thanos's energy glow illuminating real actor faces)
-- The "portal" sequence in Endgame — each portal was a separate comp element; the "A" team at ILM spent 14 weeks on the master portal wide shot
-- Blending digital stunt doubles into fight choreography
+### The "Look Bible" System
 
-> 🎯 **Industry Insight:** ILM uses Nuke almost exclusively for compositing. The lead compositor on an ILM hero shot may have 400+ nodes in a single Nuke script. Understanding node graph organization (groups, dots, backdrops) is not optional — it's how you survive a production.
+With 12+ vendors all touching the same characters, Endgame's pipeline team at ILM created a **look bible** — a document package containing:
+
+- Nuke scripts with the exact Grade node settings for each character
+- Reference renders in multiple lighting conditions (interior, exterior, overcast, golden hour)
+- Approved skin shaders, texture maps, and lighting rigs for CG characters
+- Approved matte line treatments for edge blending
+
+Every vendor was required to match their deliverables to the look bible before submission. Shots failing the look bible were returned for revision. This process — called **vendor QC** — added weeks to the schedule but was essential for visual coherence.
+
+> 🎯 **What the exam tests:** The look bible system is how large productions maintain visual consistency across multiple VFX vendors. A compositor at any vendor studio must match their work to the look bible, not to their own aesthetic judgment.
+
+### The Portal Sequence Technical Breakdown
+
+The final battle's portal sequence — where 50+ portals open to deliver the full Avengers roster — was ILM's most complex single sequence:
+
+- **Shot count:** 14 weeks for a single wide establishing shot (the "A" plate of all portals opening simultaneously)
+- **Each portal:** A separate compositing element with unique lighting, depth, atmosphere, and character integration
+- **Compositor's workflow:** Each portal was pre-comped individually, then nested into a master Nuke script; the master script combined 47 separate pre-comps
+- **Interactive light:** Every character arriving through a portal cast a unique colored light that had to interact with every adjacent character and environment surface
+
+> ⚠️ **Rookie mistake:** On large multi-vendor shots, compositors sometimes apply their own creative color grading instead of matching the look bible. This creates inconsistency that requires expensive rework. Match the reference, not your personal preference.
 
 ---
 
-## 🎬 Case Study 2: The Mandalorian — The LED Volume Stage
+## 🎬 Case Study 2: The Mandalorian — The LED Volume Stage (StageCraft)
 
 *The Mandalorian* (2019–present, Disney+/Lucasfilm) represents the most significant paradigm shift in live-action VFX production since the green screen.
 
 **The technology:** Industrial Light & Magic built a 270° LED video wall — 20 feet tall, 75 feet in diameter — called **The Volume**. Instead of filming against a greenscreen and adding a digital background in post, actors film in front of a photorealistic, parallax-correct background rendered in real time by Unreal Engine.
 
-| Traditional Green Screen | LED Volume |
+| Traditional Green Screen | LED Volume (StageCraft) |
 |--------------------------|-----------|
 | Filmed on green; background added in post | Background plays live during photography |
 | Reflective surfaces require complex comp work (glass, chrome) | Reflections are real — chrome helmet reflects the Unreal environment |
 | Interactive light requires comp simulation | Interactive light is physical — the LED panels light the actors |
 | Compositing work: weeks per shot | Compositing work: hours per shot (cleanup only) |
 | Director sees final comp weeks after shoot | Director sees the final image on set in real time |
+| Requires large greenscreen stage | Volume stage is reconfigurable per episode |
+
+### How StageCraft Eliminates Green Screen Problems
+
+The three most expensive problems in greenscreen production are spill contamination, reflective surfaces, and interactive light. StageCraft eliminates all three:
+
+1. **Spill:** Because there is no greenscreen, there is no spill suppression needed. The actor is simply illuminated by the LED walls.
+2. **Reflections:** Din Djarin's Beskar armor reflects the actual Unreal Engine environment in real time. No comp artist needs to paint fake reflections.
+3. **Interactive light:** When the Mando holds a flare, the LED wall dims slightly and warms in response. The actor's face is lit by the wall's actual color change.
 
 **What VFX artists do on a Volume production:**
 - **Environment artists** build and light the Unreal Engine environments
 - **Real-time VFX artists** handle interactive FX elements (fire, particles) that run in Unreal Engine
-- **Compositors** handle cleanup, sky replacements when the LED ceiling is out-of-frame, and integration of CG characters (the Grogu puppet is a physical prop, but fully digital sequences require integration)
+- **Compositors** handle cleanup, sky replacements when the LED ceiling is out-of-frame, and integration of CG characters (Grogu digital sequences require integration)
 
-> 🚨 **Industry Trap:** The LED Volume does not eliminate compositing. It shifts compositing work upstream and downstream. Environmental art and real-time FX become pre-production work. Cleanup, CG character integration, and final color become post work. A compositor who understands the Volume pipeline is more hireable in 2025 than one who doesn't.
+> 🎯 **What the exam tests:** The LED Volume does not eliminate compositing. It shifts compositing work upstream and downstream. Environmental art and real-time FX become pre-production work. Cleanup, CG character integration, and final color become post work. A compositor who understands the Volume pipeline is more hireable in 2025 than one who doesn't.
+
+---
+
+## 🎬 Case Study 3: 1917 — The One-Shot Film's VFX Challenge
+
+Sam Mendes's *1917* (2019, DNEG) appears to be a single continuous take from beginning to end — two British soldiers running across World War I battlefields in real time. In reality, the film is assembled from dozens of shots, seamlessly stitched together by DNEG's compositing team to appear unbroken.
+
+### The Compositing Invisible Stitch Technique
+
+DNEG's approach to building the seamless one-shot illusion:
+
+| Challenge | Solution |
+|-----------|---------|
+| Camera can't actually run for 90 minutes without cutting | Cuts hidden in natural transition points (dark tunnel, pan through a crowd, fast camera move) |
+| Each "reel" was a separate plate shoot | Digital blending at every cut point — match-move analysis of both plates, then a 15–30 frame crossblend in Nuke |
+| Lighting changes between reel setups | Comprehensive HDR probes at every shoot day; DNEG compositors matched all lighting transitions |
+| The ruined city of Écoust (now a parking lot) | DMP extensions added entire blocks of destroyed French architecture to the limited standing set |
+| Nighttime flare sequence required practical fire | 200 practical fire elements composited into a single continuous sequence with CG foreground fire |
+
+> 🎯 **What the exam tests:** "One-shot" films are not one shot. They are a compositing achievement. Every invisible stitch requires: matching camera moves, matching color, matching grain, and matching atmospheric depth between two separately shot plates.
+
+### What Makes a Digital Stitch Work
+
+A believable invisible stitch in Nuke requires:
+1. **Camera solve on both plates** — precise tracking so the geometry of both shots is aligned
+2. **Color match** — primary grade adjustment so both plates match in exposure, color temperature, and contrast
+3. **Grain unification** — both plates receive a unified grain layer at the top of the comp
+4. **Atmospheric match** — haze, mist, and depth-of-field must be consistent at the stitch frame
+5. **Motion blur** — the stitch is hidden during a frame with significant camera motion blur, which masks any remaining edge artifacts
+
+> ⚠️ **Rookie mistake:** Compositors new to invisible stitches often color-match the midtones but forget the shadows and highlights. A shadow that is warm in one plate and cool in the next reads as a cut even when motion-blurred.
+
+---
+
+## 🎬 Case Study 3: Everything Everywhere All at Once — Low-Budget Pipeline
+
+*Everything Everywhere All at Once* (2022, A24) earned $69 million against a $14.3 million production budget — and won the Academy Award for Best Picture. Its VFX required creative solutions to achieve multiverse complexity with a fraction of a studio blockbuster's budget.
+
+### The Low-Budget VFX Pipeline
+
+Directors Daniel Kwan and Daniel Scheinert (the Daniels) and VFX supervisor Zak Stoltz built a pipeline around After Effects as the primary compositing tool, rather than Nuke. This was a deliberate cost-driven decision:
+
+| Production Choice | Rationale |
+|------------------|----------|
+| After Effects primary (not Nuke) | Lower licensing cost; faster iteration for 2D-heavy effects |
+| Practical FX first | Hot dog hands, googly eyes were prosthetics — no CG modeling needed |
+| Abstract animation over simulation | The bagel void used 2D compositing, not a 3D fluid simulation |
+| Color grading as storytelling | Each universe's color palette was distinct and low-cost to differentiate |
+| Short-duration FX over sustained simulation | Universe transitions were fast cuts, not 10-second simulation renders |
+
+> 🎯 **What the exam tests:** EEAAO demonstrates that a strong VFX pipeline uses the minimum tool for the required quality. After Effects is appropriate for 2D-heavy, fast-turnaround projects. Nuke is required when pipeline depth, team collaboration, or scene-linear multi-channel EXR workflow is essential. The right tool depends on the project — not prestige.
+
+### The EEAAO Pipeline vs a Marvel Production
+
+| Factor | EEAAO ($14.3M) | Avengers: Endgame ($356M) |
+|--------|---------------|--------------------------|
+| Primary comp tool | After Effects | Nuke |
+| VFX vendors | 1–2 small studios | 12+ major studios |
+| Simulation tool | Trapcode Particular | Houdini |
+| VFX shots | ~500 | 3,000+ |
+| Hero pipeline | AE comp + practical | Full 3D pipeline (Arnold/Houdini/Nuke) |
+| Creative approach | Constraints as design choices | Unlimited technical resources |
 
 ---
 
@@ -202,6 +290,59 @@ The following checklist is representative of what an on-set VFX supervisor manag
 
 ---
 
+## 🔬 File Formats in the VFX Pipeline
+
+Understanding which file format is used at each pipeline stage — and why — is a professional-level skill tested at the exam.
+
+### The Dominant Formats
+
+| Format | Full Name | Bit Depth | Color Space | Primary Use |
+|--------|----------|-----------|------------|------------|
+| **ARRIRAW** | ARRI RAW | 12–16 bit log | LogC3 / LogC4 | Camera original — sensor data before demosaicing |
+| **DPX** | Digital Picture Exchange | 10–16 bit | Log or linear | Traditional scan delivery; VFX plate format |
+| **OpenEXR** | Extended Dynamic Range | 16–32 bit float | Linear, ACES, or scene-linear | VFX working format — multi-channel CG renders |
+| **ProRes 4444** | Apple ProRes 4444 | 12 bit float | Log or Rec.709 | High-quality intermediate; editorial and comp |
+| **H.264/H.265** | AVC / HEVC | 8–10 bit | Rec.709 | Final delivery — streaming, distribution |
+
+### Why OpenEXR Dominates VFX Post-Production
+
+OpenEXR (developed by ILM and open-sourced in 2003) is the universal VFX intermediate format because:
+- **Multi-channel support:** A single .exr file can contain 30+ named channels (beauty, diffuse, specular, shadow, depth, normal) in one file
+- **Float precision:** 16-bit float (half-float) provides adequate precision; 32-bit float for critical operations
+- **Lossless compression:** EXR supports lossless ZIP compression — no quality loss between pipeline stages
+- **Wide adoption:** Supported natively in Nuke, Houdini, Arnold, RenderMan, V-Ray, Blender, and DaVinci Resolve
+
+> 🎯 **What the exam tests:** OpenEXR is the VFX pipeline's native format because of multi-channel support (AOV passes), float precision, and lossless compression. DPX is the older format used for film scans and some plate deliveries. H.264 is only for final delivery — never used for intermediate VFX work.
+
+### The GPU vs CPU Rendering Decision
+
+At the rendering stage, studios must choose between CPU and GPU rendering:
+
+| Factor | CPU Rendering (Arnold, RenderMan) | GPU Rendering (Redshift, Octane, Karma XPU) |
+|--------|----------------------------------|---------------------------------------------|
+| Memory | Large scene geometry possible (terabytes of RAM available) | Limited by VRAM (24–80GB per GPU) |
+| Speed | Slower per-core; benefits from many cores | Dramatically faster (10–50× for compatible scenes) |
+| Compatibility | Full feature set (all shaders, all AOVs) | Some features not yet GPU-supported |
+| Industry adoption | Film standard (ILM, Weta use Arnold/RenderMan) | Growing (Redshift popular in commercial/broadcast) |
+| Cost per frame | Higher (large CPU farm) | Lower (GPU farm smaller) |
+
+---
+
+## 🎯 What the Exam Tests — Module 1
+
+1. **Pre-vis purpose:** Pre-vis communicates director intent — it is not a finished product. "Looks great" is not the standard.
+2. **On-set data package contents:** tracking markers, HDR probes, witness camera, lens data, color charts, clean plates — know all six.
+3. **Technical vs creative grade:** compositor does the technical grade (matching elements); colorist does the creative grade (the "look"). Two different people, two different stages.
+4. **Pipeline order:** Editorial → Scanning → Matchmove → 3D/FX → Lighting → Comp → DI. Know this sequence.
+5. **Look bible role:** The mechanism by which multi-vendor productions maintain visual consistency across studios. Each vendor must match the look bible.
+6. **LED Volume advantages:** eliminates spill, provides real reflections, provides physical interactive light. Does NOT eliminate compositing.
+7. **Tier 4 shots:** Digital humans and destruction sequences; the most expensive and complex category.
+8. **AOV definition:** Arbitrary Output Variable — named channels within a multi-channel EXR file (diffuse, specular, shadow, depth, etc.).
+9. **Clean plate requirement:** Required on every wire/rig shot; the VFX supervisor must ensure it is captured on set.
+10. **Witness camera function:** Captures reference data of the full set from an off-axis angle, documenting lighting and environment that cannot be recovered from the primary camera plate.
+
+---
+
 ## 📊 Summary: The VFX Pipeline at a Glance
 
 | Phase | Who Owns It | Key Output |
@@ -220,6 +361,27 @@ The following checklist is representative of what an on-set VFX supervisor manag
 ## 🎯 Next Steps
 
 You now understand the factory. In Module 2, you will enter the compositing department at the most fundamental skill: pulling a key. Green screen keying is the entry point for almost every VFX artist — and the three-step Keylight workflow is the foundation of professional-grade compositing in After Effects.
+
+---
+
+## 📊 Full VFX Vocabulary: Module 1
+
+| Term | Definition |
+|------|-----------|
+| Beat sheet | Shot-by-shot list of all expected VFX in a film, used for bidding |
+| Bid | A VFX studio's cost and timeline estimate for a production |
+| Pre-vis | Low-resolution animated preview of VFX sequences for director planning |
+| VFX pull | Editorial department's extraction of specific frames needing VFX work |
+| DPX | Digital Picture Exchange — a film scan format; 10–16 bit log or linear |
+| OpenEXR | Industry-standard multi-channel float format for VFX intermediate files |
+| ARRIRAW | ARRI's proprietary camera RAW format from ALEXA cameras |
+| AOV | Arbitrary Output Variable — a named channel in a multi-channel EXR file |
+| IDT | Input Device Transform — converts camera log footage to ACES |
+| ODT | Output Device Transform — converts ACES to a target display color space |
+| Look bible | Consistency document (Nuke scripts + reference renders) for multi-vendor productions |
+| Vendor QC | Quality check ensuring vendor deliverables match the look bible before acceptance |
+| Plate | The live-action footage that forms the base of a composite shot |
+| Data package | Set of reference data captured on set (HDR probes, lens data, survey, charts) |
 
 ---
 

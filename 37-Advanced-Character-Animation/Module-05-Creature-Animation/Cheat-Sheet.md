@@ -89,3 +89,90 @@ Amplitude = Emotion:
 | Fish head and tail opposing | Wave always travels head → tail |
 | Pectoral fins extended at high speed | Fold fins flat at speed |
 | No creature bible | Document behavioral vocabulary before production |
+
+---
+
+## Quadruped Gait Timing Charts (24-Frame Baseline)
+
+### Walk (24f cycle, 6f offset per foot)
+```
+FRAME   LH (Left Hind)    RH (Right Hind)   LF (Left Front)   RF (Right Front)
+1       Contact           Mid-swing         Follow-through    Mid-swing
+7       Mid-swing         Contact           Mid-swing         Follow-through
+13      Follow-through    Mid-swing         Contact           Mid-swing
+19      Mid-swing         Follow-through    Mid-swing         Contact
+≥2 feet on ground at all times  |  Spine oscillates: flexes 7–13, extends 1–7
+```
+
+### Gallop (8f cycle — aerial at GATHERED position, frame 4–5)
+```
+FRAME   RF     LF     RH     LH     PHASE
+1       Con    Swing  Swing  Swing  Lead foot strike
+2       Push   Con    Swing  Swing  Second foot
+3       Swing  Push   Con    Swing  Hind sequence
+4       AERIAL AERIAL Push   Con    Gathered aerial begins
+5       AERIAL AERIAL AERIAL AERIAL FULL AERIAL — GATHERED (tucked)
+6       App    AERIAL AERIAL Push   Stretch aerial
+7       Con    App    AERIAL AERIAL Return
+8       Push   Con    App    AERIAL Back to lead foot
+```
+
+**#1 error:** Placing aerial at frame 5 of a stretched pose. Correct: aerial at GATHERED.
+
+---
+
+## Mocap Cleanup Checklist for Creature Shots
+
+```
+PRE-RETARGET:
+[ ] Confirm actor mass vs. character intended mass
+[ ] Confirm foot type: plantigrade / digitigrade / unguligrade
+[ ] Identify all contact events in raw data
+
+RETARGETING:
+[ ] Leg length ratio adjusted
+[ ] Contact intent preserved at frame level
+[ ] Foot type conversion applied (plantigrade → digitigrade adds heel lift)
+
+POST-RETARGET:
+[ ] Foot locking at all contact frames
+[ ] No ground penetration in any frame
+[ ] COG path reflects character mass (not actor mass)
+[ ] Spine flexibility matches species (horse: rigid / cat: highly flexible)
+[ ] All secondary (tail, ears, jowls) has appropriate lag + amplitude
+
+PERFORMANCE:
+[ ] Anticipation duration matches character mass
+[ ] Behavioral library (creature bible) consulted
+```
+
+---
+
+## Quadruped Expression Substitution Table
+
+| FACS AU | Human Expression | Quadruped Equivalent |
+|---------|----------------|---------------------|
+| AU1 Inner brow | Concern/sadness | Ear rotation forward + head lowered |
+| AU4 Brow lower | Anger | Ears back + muzzle wrinkle |
+| AU6+12 Genuine smile | Happy | Soft eye + mouth open + panting rhythm |
+| AU15 Depression | Sadness | Head lowered + weight back + tail low |
+| AU5 Lid raise | Fear/surprise | Eyes wide + ears pinned back |
+
+**Rule:** Ears, tail, and weight distribution are PRIMARY expression channels in quadrupeds. The muzzle is secondary.
+
+---
+
+## Module 5 Exam Rapid-Fire
+
+| Question | Answer |
+|---------|--------|
+| Walk: minimum feet on ground | ≥2 at all times |
+| Walk: foot phase offset (24f cycle) | 6 frames per foot (25% cycle) |
+| Gallop aerial phase position | GATHERED (tucked), NOT stretched |
+| Rotary gallop species | Cats, cheetahs |
+| Transverse gallop species | Horses, dogs |
+| Bird downstroke forces | Lift + forward thrust (upstroke = recovery only) |
+| Fish wave direction | Head → tail (posteriorly) |
+| Toothless primary reference | Domestic cat |
+| Primary expression channels (quadruped) | Ears, tail, weight distribution — NOT muzzle first |
+| Creature bible purpose | Document behavioral vocabulary before production starts |

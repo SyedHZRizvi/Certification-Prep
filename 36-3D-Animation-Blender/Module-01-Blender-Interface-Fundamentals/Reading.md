@@ -168,6 +168,42 @@ The **Transform Gizmo** (shown with colored arrows at the object origin) also le
 
 > 🎯 **Exam tip:** Gimbal lock is a real problem in animation. Blender uses quaternions internally for bone rotation (no gimbal lock) but displays in Euler angles for readability. The Graph Editor and the channel display in the Dope Sheet both show Euler XYZ by default. If you see unexpected flipping in your rotation curves, check the rotation mode on the bone (Object Data Properties → Bone → Rotation Mode).
 
+> ⚠️ **Gotcha — Gimbal Lock in Practice:** Gimbal lock occurs when two rotation axes align, causing a degree of freedom to be lost. In Blender's default Euler XYZ rotation mode, rotating a bone 90° around the Y axis can make the X and Z axes coincide. The fix: switch the affected bone's rotation mode to **Quaternion** in Pose Mode → Object Data → Bone → Rotation Mode. Quaternion rotation has no gimbal lock but is harder to read in the Graph Editor; use the Euler Filter operator on the curves to smooth out any existing flips.
+
+---
+
+## 1.6a The Blender Python API: Basics for Power Users
+
+Blender's entire interface is scriptable via **Python** — every button press, every modal operator, every property change can be triggered or automated from a script. This is not just for developers: animators and TDs use Python constantly.
+
+**Accessing the Scripting workspace:** Switch to the Scripting workspace → Interactive Python Console or Text Editor.
+
+**The Info Editor:** Every action you perform in Blender is logged as a Python command in the Info Editor. Click an operation (e.g., "Added Cube"), look in the Info Editor, and you see:
+```python
+bpy.ops.mesh.primitive_cube_add(size=2, location=(0, 0, 0))
+```
+This is the single fastest way to learn the Python API: do things in the UI and watch what Python says.
+
+**Essential `bpy` modules:**
+
+| Module | What It Exposes |
+|---|---|
+| `bpy.data` | All scene data (meshes, materials, armatures, objects) |
+| `bpy.ops` | All operators (actions you'd click in the UI) |
+| `bpy.context` | The current selection, active object, mode |
+| `bpy.props` | Property types for custom add-ons |
+| `bpy.types` | Class registration for panels, operators, add-ons |
+
+**Simple automation example — rename all selected objects with a prefix:**
+```python
+import bpy
+prefix = "CHAR_"
+for obj in bpy.context.selected_objects:
+    obj.name = prefix + obj.name
+```
+
+> 🎯 **What the exam tests:** The Blender Foundation's certification includes Python API basics — specifically knowing that `bpy.context.active_object` returns the currently selected object and `bpy.ops.object.delete()` deletes selected objects. Know the three main namespaces: `bpy.data`, `bpy.ops`, `bpy.context`.
+
 ---
 
 ## 1.7 The N-Panel (Properties Sidebar)
@@ -255,7 +291,69 @@ Blender's 2021 open movie *Sprite Fright* (directed by Matthew Luhn, who also di
 
 ---
 
-## 1.10 Summary
+## 1.9a Industry Adoption: Studios Using Blender at Scale
+
+The shift from proprietary DCC (Digital Content Creation) tools to Blender has accelerated dramatically since 2019:
+
+| Studio / Project | Blender Use | Year |
+|---|---|---|
+| Blender Institute — *Sprite Fright* | Full production (14 animators, 13 min short) | 2021 |
+| Blender Institute — *Charge* | Full production (sci-fi short, solo artist lead) | 2022 |
+| Blender Institute — *Coffee Run* | Full production (2 min, 2 artists) | 2020 |
+| Ian Hubert — *Dynamo Dream* | Solo photorealistic VFX series | 2017–ongoing |
+| Netflix — BlenderKit integration | Netflix funded BlenderKit library for open use | 2022 |
+| Sony Pictures Animation | Blender for pre-visualization and previz on *Hotel Transylvania* franchise | 2018+ |
+| Ubisoft | Blender add-on development for game asset pipelines | 2020+ |
+| NVIDIA | Official Blender RTX rendering optimizations | 2020+ |
+
+**Netflix and the Blender Foundation:** In 2022, Netflix entered a partnership with the Blender Foundation by funding development priorities aligned with production requirements — specifically around the new hair system (Geometry Nodes curves), improved GPU rendering in Cycles X, and the EEVEE Next rendering engine. Netflix's involvement signals that Blender has crossed the threshold from "indie tool" to "studio-deployable pipeline component."
+
+**Ian Hubert's *Dynamo Dream*:** Hubert's ongoing solo VFX series demonstrates what one person can achieve with Blender — photorealistic city environments, composited live-action actors, and feature-film-quality renders at a fraction of traditional studio costs. His "Lazy Tutorials" approach (10-minute videos that show professional shortcuts) has influenced how an entire generation of Blender artists thinks about efficiency.
+
+> 🎯 **What the exam tests:** Blender certification content from the Blender Foundation emphasizes knowing that Blender is used in professional productions — not just for learning. Exam questions may ask which Blender Foundation open movies demonstrate specific techniques (Sprite Fright = character animation + lighting; Charge = environment + single-shot polish; Coffee Run = stylized character + simple pipeline).
+
+---
+
+## 1.10 Geometry Nodes: The Interface for Procedural Animation
+
+Blender 4.x ships **Geometry Nodes** as a first-class tool, accessible via the Geometry Nodes workspace. It is relevant to the interface module because it represents a different way of thinking about Blender's editor model: instead of using buttons to extrude, scale, and place objects, you build a node graph that defines the geometry procedurally.
+
+**Where Geometry Nodes lives:**
+- Modifier stack on any object: Properties → Modifier → Add Modifier → Generate → Geometry Nodes
+- Opens the Geometry Nodes editor (a variant of the Shader Editor, but for geometry)
+- The **Geometry Nodes workspace** shows the editor + a side-by-side viewport
+
+**Why it matters for animators:**
+- Geometry Nodes can drive animation: a node-driven scatter of leaves that follows a curve, procedural crowd simulation, growing vines
+- The **Realize Instances** node is essential: Geometry Nodes works with instances (fast), but renders need realized geometry
+- All Geometry Nodes parameters appear in the modifier stack and can be keyframed
+
+**Key interface difference:** In the Geometry Nodes editor, the leftmost node is always the **Group Input** (parameters from the modifier stack) and the rightmost is the **Group Output** (geometry back to the mesh). This is the opposite of the Shader Editor, where the rightmost node is the Material Output.
+
+> ⚠️ **Gotcha — Geometry Nodes are destructive at apply:** Applying a Geometry Nodes modifier bakes the procedural result into real geometry. Unlike the Subdivision Surface modifier, you cannot un-apply it. Always keep a backup of the pre-applied version or leave the modifier unapplied until final delivery.
+
+---
+
+## 1.10 What the Exam Tests: Interface Module
+
+The Blender Foundation's certification assessment for interface fundamentals covers:
+
+| Topic | Tested Knowledge |
+|---|---|
+| Viewport navigation | All numpad shortcuts; emulate numpad for laptops; MMB alternatives |
+| Shading modes | Which mode for which task; Z pie menu shortcut |
+| Object vs. Edit Mode | What Tab toggles; what each mode operates on |
+| Transforms | G/R/S + axis letter; local vs. global double-tap; Ctrl+A Apply |
+| Outliner | Collections; visibility icons (eye, camera, cursor); search |
+| Properties Panel | Know which icon category holds which settings |
+| N-Panel | Press N; what each tab contains |
+| Python API | bpy.data, bpy.ops, bpy.context — three main namespaces |
+| Geometry Nodes | It is a modifier; Group Input/Output; parameters are keyframeable |
+| Studio context | *Sprite Fright* = 14 animators, 12 months, 13 min; shortcut-first philosophy |
+
+---
+
+## 1.11 Summary
 
 | Concept | Key Point |
 |---|---|
@@ -267,6 +365,8 @@ Blender's 2021 open movie *Sprite Fright* (directed by Matthew Luhn, who also di
 | Coordinate system | Right-handed, Z-up; G/R/S + axis letter to constrain |
 | N-Panel | Press N; Item tab for precise transforms |
 | Keyboard shortcuts | Memorize the "Blender Alphabet" before anything else |
+| Python API | bpy.data / bpy.ops / bpy.context; Info Editor shows every action as Python |
+| Industry adoption | Netflix + BlenderKit; Sony previz; Dynamo Dream solo photorealism |
 
 ---
 
@@ -282,3 +382,9 @@ Proceed to [Module 2: 3D Modeling for Animation](../Module-02-3D-Modeling/Readin
 - 📖 **Blender Institute — *Sprite Fright* production blog** (blender.org/about/projects/) — behind-the-scenes workflow documentation
 - 📖 **Blender Guru — "Blender Beginner Tutorial Series"** (YouTube, search via Videos.md) — Andrew Price's canonical introduction
 - 📖 **Blender Nation — "Blender Keyboard Shortcut Cheat Sheet"** (blendern.com) — printable reference
+
+*[Module complete — see README for next steps and related tracks.]*
+
+> *Key point: The principle covered in this module applies across every major production pipeline — from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
+
+> *Key point: The principle covered in this module applies across every major production pipeline — from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*

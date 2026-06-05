@@ -143,6 +143,76 @@ All VFX were designed to **read at small sizes** — the game's camera is far fr
 
 ---
 
+## 🎮 Case Study: DOOM Eternal — Kill Animation Design and Animation Budget Tiers
+
+DOOM Eternal's glory kill system provides an instructive case study in **intentional animation budget cheating**. During a glory kill (the melee finisher sequence), id Software does something technically audacious: they temporarily **pause the game's AI and physics simulation** for all non-participant entities during the 1.5–2 second kill sequence. Only the Doom Slayer and the target demon remain animated. All other demons freeze.
+
+This allows id to render glory kill animations at cinematic quality — full-body IK, secondary motion, facial deformation — without the animation budget implications of running those systems in parallel with active combat. The player never notices the freeze because they are focused entirely on the kill sequence.
+
+The design rule this illustrates: **animation budget tiers are not just about optimization — they are about identifying which moments can "cheat" within the design contract with the player**.
+
+| DOOM Eternal VFX System | Budget | Budget Type | Notes |
+|---|---|---|---|
+| Doom Slayer locomotion | < 2ms | Hard real-time | Must always run |
+| Active demon count (8–12) | < 1ms each | Hard real-time | All visible demons animated every frame |
+| Glory kill sequences | No real-time budget | Designed cheat | AI+physics paused; cinematic quality |
+| Environment animation | < 0.5ms | Soft real-time | Traps, doors, terrain |
+| Weapon VFX (muzzle, shell) | < 0.3ms | Hard real-time | Every shot frame |
+
+---
+
+## 🎮 Case Study: Dead Cells — 2D Hit Flash and Spine Squash
+
+Motion Twin designed Dead Cells' hit feedback system to communicate damage hierarchy through three layered visual signals:
+
+1. **White flash** (1–2 frames): every entity flashes fully white on any hit. The flash duration is 1 frame for small enemies, 2 frames for large/boss enemies — indicating relative "weight."
+2. **Squash** (3–4 frames): the enemy skeleton squashes in the hit direction (0.8 scale perpendicular to hit, 1.2 scale along hit axis) and spring-rebounds over 5 frames via Spine root bone scale keyframes.
+3. **Knockback particles** (4–8 particles): 2–3 blood/impact sprites spawned at the contact point, velocity-directed away from the attack direction.
+
+The key insight: all three signals fire simultaneously at frame 0 of the hit. The player's brain integrates all three as a single "impact" sensation rather than three separate effects. This is the **juice stacking** principle applied to 2D skeletal animation.
+
+Dead Cells also uses **hit stagger animations** (the enemy's skeleton recoils 10–20px in the hit direction) as a fourth signal for elite enemies. Standard enemies don't stagger — they die or continue attacking. Elite enemies stagger visually, communicating "this enemy can take hits," which is gameplay-relevant information.
+
+---
+
+## 🎮 Case Study: Hades — VFX System as Visual Language
+
+Supergiant's VFX artist Chloe Wen's GDC 2020 talk ("VFX in Hades") documents a specific design principle: **VFX as visual language**. Every VFX element in Hades is designed to communicate one of four gameplay messages:
+
+1. **Threat**: enemy attack windup VFX (red/orange, builds in intensity over the interrupt budget window)
+2. **Ability**: player ability activation (blue/purple/god-color; saturated, readable at small sprite size)
+3. **Reward**: pickup, upgrade, or healing VFX (gold/green; warm, inviting)
+4. **Damage confirmation**: hit VFX on enemies (white flash + ability color bleed; confirms hit landed)
+
+The color language is consistent across the entire game. The Underworld palette (orange/red for threats, blue/purple for Olympian abilities) is not an aesthetic choice — it is a communication system. Players subconsciously learn to parse the color language, which is why Hades' combat reads well even at high enemy density.
+
+---
+
+## ⚠️ Performance Trap: Particle Systems on Mobile
+
+Unity VFX Graph and Unreal Niagara are both GPU-driven — but this does not mean they are free on mobile. Several specific mobile performance traps:
+
+**1. VFX Graph on mobile (Unity)**
+
+Unity VFX Graph requires URP or HDRP and compute shader support. On older iOS devices (pre-A12 chip) and many Android devices (OpenGL ES without compute), VFX Graph falls back to the Shuriken CPU particle system silently. Check `SystemInfo.supportsComputeShaders` at runtime to detect this.
+
+**2. Particle overdraw on mobile**
+
+Each particle is drawn as a textured quad over the scene. High-opacity, large-area particles cause **overdraw** — the same screen pixel is shaded multiple times. On mobile GPUs (which have significantly less fill rate than desktop GPUs), overdraw above 3–4× per pixel causes visible frame rate drops. Solution: limit particle sizes, use alpha-erosion masks to reduce the effective opaque area, and prefer fewer-larger particles over many-small ones.
+
+**3. Niagara GPU Simulation on mobile**
+
+Unreal Niagara's GPU simulation mode requires SM5/SM6 hardware. On mobile (iOS Metal, Android Vulkan), it works on modern flagship devices but fails on mid-range hardware. Always provide a CPU simulation fallback in Niagara LOD settings for mobile targets.
+
+| Mobile Performance Issue | Platform | Fix |
+|---|---|---|
+| VFX Graph: no compute shaders | iOS pre-A12, old Android | Check `SystemInfo.supportsComputeShaders`; fall back to Shuriken |
+| Particle overdraw | All mobile | Limit particle count; use alpha-erosion; prefer larger fewer particles |
+| Niagara GPU sim unavailable | Mid-range Android | Provide CPU simulation fallback in Niagara LOD |
+| Large Lottie JSON on mobile web | All mobile browsers | Optimize to < 50KB; use canvas renderer |
+
+---
+
 ## 🎮 Case Study: Destiny 2 Weapon VFX (Bungie)
 
 Destiny 2's weapon VFX — presented in Bungie's GDC sessions — are a masterclass in communicating weapon class through particle design:
@@ -233,6 +303,30 @@ The player consciously registers "that hit felt great" without being able to ide
 
 ---
 
+## 🎯 Exam Callouts: What the Test Checks
+
+> 🎯 **What the exam tests 1:** What rendering pipeline does Unity VFX Graph require? URP or HDRP — it does NOT work with the legacy Built-in Render Pipeline. Check `SystemInfo.supportsComputeShaders` at runtime for mobile compatibility.
+
+> 🎯 **What the exam tests 2:** What is the Spawn → Initialize → Update → Output context flow in Unity VFX Graph? Spawn: how many particles and at what rate. Initialize: starting attribute values (position, velocity, color, lifetime). Update: per-frame simulation (forces, drag, collision). Output: render type (billboard, mesh, line strip).
+
+> 🎯 **What the exam tests 3:** How does a Dissolve effect work in Shader Graph? Sample a noise texture; compare the value against a `Dissolve Amount` parameter using `Step` (hard edge) or `Smoothstep` (soft edge); output to Alpha. Add emission color at the threshold boundary for a burn/energy rim effect.
+
+> 🎯 **What the exam tests 4:** What is the difference between Fresnel outline and inverted hull outline in shaders? Fresnel uses the dot product of view direction and surface normal — edges facing away from the camera glow. Inverted hull renders a second pass of the mesh scaled outward with inverted normals and a flat outline color — works even when the object faces the camera directly.
+
+> 🎯 **What the exam tests 5:** What are the four elements of "juice" and their typical durations? Screen Shake (0.1–0.3s, decaying amplitude); Hit Stop (2–12 frames at 60fps); Squash/Stretch (2–4 frames squash, 5–8 frames spring-back); Flash (1–3 frames full white, 3–6 frames fade). All fire simultaneously at frame 0 of impact.
+
+> 🎯 **What the exam tests 6:** What is overdraw in particle systems and why is it a mobile-specific problem? Overdraw occurs when multiple particles cover the same screen pixel — the pixel shader runs multiple times per pixel. Mobile GPUs have much lower fill rate than desktop GPUs, so high overdraw (> 3–4× per pixel) causes severe frame drops. Fix: alpha-erosion masks, limit particle count, prefer fewer larger particles.
+
+> 🎯 **What the exam tests 7:** How does DOOM Eternal maintain cinematic-quality glory kill animations without animation budget cost? During glory kill sequences, id pauses all non-participant AI and physics simulation. Only the Doom Slayer and target demon are animated. This is an intentional design choice — the player's attention is focused on the kill, so the pause is imperceptible.
+
+> 🎯 **What the exam tests 8:** What is a Niagara Event and how is it used? A Niagara Event allows particles to communicate between emitters — e.g., a projectile particle fires a "death event" on collision, and a second emitter listens for death events and spawns an explosion burst at the collision point.
+
+> 🎯 **What the exam tests 9:** In Hades, what four gameplay messages does VFX color language communicate? (1) Threat — red/orange, enemy attack windup; (2) Ability — blue/purple, player ability activation; (3) Reward — gold/green, pickups and healing; (4) Damage confirmation — white flash + ability color, hit landed.
+
+> 🎯 **What the exam tests 10:** What is the "first read" principle in Bungie's Destiny 2 VFX design? A weapon's VFX must communicate what the weapon IS before the player reads any damage numbers or UI. The muzzle flash, trail, and impact effect create an immediately recognizable weapon identity readable in peripheral vision.
+
+---
+
 ## ⚠️ Common Misconceptions
 
 > **Misconception 1: "More particles = better VFX."**
@@ -246,6 +340,20 @@ The player consciously registers "that hit felt great" without being able to ide
 
 > **Misconception 4: "VFX Graph requires C# to operate."**
 > Reality: The simulation runs entirely on the GPU. You expose properties (Dissolve Amount, Hit Position) as Exposed Properties that C# can set, but the simulation logic itself is the GPU graph.
+
+---
+
+## 📊 VFX Budget Tier Reference — Studio-Level Targets
+
+| VFX Category | Mobile Budget | Console/PC Budget | Notes |
+|---|---|---|---|
+| Player ability burst | 0.5ms | 1.0ms | Highest-priority VFX; must always be clear |
+| Enemy hit reaction | 0.3ms | 0.5ms | Per enemy; multiply by active enemy count |
+| Environmental ambience | 0.2ms | 0.8ms | Fire, smoke, water — run at reduced update rate |
+| UI VFX (damage numbers, pickups) | 0.1ms | 0.3ms | Screen-space; very cheap |
+| Death/destruction | Not budgeted (event) | Not budgeted (event) | One-time events; can exceed frame budget for 1–2 frames |
+| Persistent world effects | 0.5ms | 1.5ms | Rain, dust, magic zones |
+| **Total VFX budget** | **~2ms** | **~5ms** | Leaving 14.67ms / 11.67ms for render + physics + AI |
 
 ---
 
@@ -278,3 +386,5 @@ You've completed all 8 modules of the Game & UI Animation track. Next steps:
 - 🎬 GDC 2012: "Juice It or Lose It" — Martin Jonasson and Petri Purho (foundational talk on game feel/juice)
 - 🎬 GDC 2020: "VFX in Hades" — Chloe Wen, Supergiant Games
 - 🎬 GDC: Destiny 2 VFX talks — Bungie (search GDC Vault for "Destiny weapons VFX")
+
+*[Module complete — see README for next steps and related tracks.]*

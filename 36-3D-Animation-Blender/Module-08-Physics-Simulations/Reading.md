@@ -65,6 +65,33 @@ Blender's simulation systems — Rigid Body, Cloth, Fluid (FLIP/APIC), Soft Body
 
 ---
 
+## 8.2b Cloth Simulation: Parameter Reference
+
+Blender's cloth system exposes many parameters. These ranges reflect real production settings:
+
+| Preset | Tension | Compression | Bending | Mass (kg/m²) | Real Material |
+|---|---|---|---|---|---|
+| Cotton | 15 | 15 | 0.5 | 0.3 | T-shirt, light fabric |
+| Wool | 10 | 10 | 1.0 | 0.4 | Sweater, thick fabric |
+| Silk | 5 | 5 | 0.05 | 0.1 | Flowing dress, scarf |
+| Leather | 80 | 80 | 10.0 | 0.86 | Jacket, shoe upper |
+| Denim | 40 | 40 | 5.0 | 0.5 | Jeans, canvas |
+| Rubber | 15 | 15 | 0.5 | 2.0 | Wetsuit, rubber sheet |
+
+**Cloth collision parameters:**
+
+| Parameter | Default | Effect |
+|---|---|---|
+| **Distance (Self Collision)** | 0.015m | Minimum distance between cloth faces (prevents self-penetration) |
+| **Distance (Object Collision)** | 0.015m | Minimum distance from character mesh |
+| **Friction (Object)** | 5 | How much the character mesh slows cloth sliding |
+| **Impulse Clamping** | 100 | Limits explosive forces at collision boundaries |
+| **Quality Steps** | 5 | Higher = more stable but slower; increase if cloth explodes |
+
+> ⚠️ **Gotcha — Cloth Exploding:** Cloth "explosion" (vertices flying off to infinity) is caused by collision mesh overlap or extreme pinning forces. The three most common causes: (1) the cloth mesh and the character mesh start intersecting at frame 0 — move the cloth slightly outward in Edit Mode so it begins outside the character; (2) the Quality Steps are too low — increase to 15–30 for complex folding; (3) the pinning vertex group has weight 1.0 on vertices that are also colliding — reduce pin weight near the collision zone.
+
+---
+
 ## 8.3 Fluid Simulation (FLIP and APIC)
 
 Blender's fluid system uses **Mantaflow** (integrated since Blender 2.82) with two fluid algorithms:
@@ -93,6 +120,31 @@ Blender's fluid system uses **Mantaflow** (integrated since Blender 2.82) with t
 
 ---
 
+## 8.3b Fluid Simulation Settings Reference
+
+| Setting | Range | Low Value Effect | High Value Effect |
+|---|---|---|---|
+| **Resolution** | 32–256+ | Fast but blocky; low detail | Slow but detailed splashing |
+| **Time Scale** | 0.1–5.0 | Slow motion | Fast-forward (water falls faster) |
+| **Viscosity** | 0.0–∞ | Water-like, free-flowing | Honey, lava — high viscosity |
+| **Surface Tension** | 0.0–1.0 | Droplets splash widely | Droplets hold together (mercury-like) |
+| **Particle Radius** | 0.1–3.0 | Fine detail, many particles | Coarse appearance, fewer particles |
+| **Sampling (CFL)** | 1–4 | Faster, less stable | Slower, more stable for fast flows |
+
+**Gas simulation (smoke/fire) key settings:**
+
+| Setting | Use |
+|---|---|
+| **Buoyancy Density** | Negative = sinks (cold smoke, CO₂); Positive = rises (hot smoke) |
+| **Temperature** | Drives fire color; higher = blue-white flame; lower = orange |
+| **Dissolve** | Smoke fades over time (set in frames) |
+| **Noise** | Adds turbulence detail to smoke columns |
+| **Fire Reaction Speed** | Controls how quickly fuel converts to flame |
+
+> ⚠️ **Gotcha — Fluid Domain Must Enclose the Entire Simulation:** The fluid simulation domain box must be large enough to contain all fluid movement — if a water stream exits the domain boundary, it disappears (clipped at the boundary). Size the domain generously: 20–30% larger than you think you need. Increasing domain size significantly increases memory usage and bake time, so find the minimum practical size.
+
+---
+
 ## 8.4 The Cache System
 
 > 🚨 **Critical production rule:** **Always bake your simulations before rendering.** An unbaked simulation recalculates from scratch on every frame during rendering — if the renderer renders frame 47 before frame 46 (during distributed rendering), the simulation will be different. Baking pre-calculates every frame and writes it to disk.
@@ -110,6 +162,26 @@ Blender's fluid system uses **Mantaflow** (integrated since Blender 2.82) with t
 - **Fluid (Mantaflow):** OpenVDB (.vdb) format — excellent for Compositing in Nuke or Blender's Compositor
 
 **Cache invalidation:** Changing any physics parameter (mass, friction, resolution) after baking requires re-baking from scratch. Partial re-bakes starting from a specific frame are possible but may introduce discontinuities.
+
+---
+
+## 8.4b Simulation Performance: Cache Formats and Strategy
+
+| Cache Format | Used By | File Size | Portability |
+|---|---|---|---|
+| **.bphys** | Rigid Body, Cloth, Particles | Medium | Blender-only |
+| **OpenVDB (.vdb)** | Fluid (Mantaflow smoke/liquid) | Large | Industry-standard (Houdini, Nuke, Maya compatible) |
+| **MDD / PC2** | Vertex cache (baked animation) | Very large | Maya, Max compatible |
+| **Alembic (.abc)** | Full scene animation export | Large | Broadest industry compatibility |
+
+**Render farm strategy for simulations:**
+When using distributed rendering (network render farm), the cache must be accessible by all render nodes via a shared network drive. If each node recalculates the simulation independently, results will differ due to floating-point non-determinism. The correct workflow:
+1. Bake all simulations on a single machine
+2. Copy the `//cache_files/` directory to the shared network drive
+3. On render nodes, set the Blender file's relative paths to point to the shared drive
+4. Each render node reads the same pre-baked cache — guaranteed identical frames
+
+> 🎯 **What the exam tests:** Baking simulations before rendering on distributed farms is a core certification topic. The exam may specifically ask: "What happens if you render an unbaked fluid simulation across multiple computers?" — the answer is "each machine produces different results because the simulation recalculates from random seed."
 
 ---
 
@@ -134,6 +206,34 @@ Blender's **Particle System** can generate hair strands, grass, or scattered obj
 
 **Blender 4.x Hair:**
 Blender 4.0 introduced the new **Hair curves** object type (Geometry Nodes-based), replacing the older particle hair workflow for new projects. Both systems coexist in 4.x. The new system supports curve-based grooming tools directly in Object Mode.
+
+---
+
+## 8.5b Geometry Nodes for Animation: Procedural Simulation Alternatives
+
+Blender 4.x's Geometry Nodes can replicate some physics behaviors procedurally — without baking, without cache files, and often faster:
+
+**Geometry Nodes physics alternatives:**
+
+| Physical Behavior | GN Alternative | Advantage |
+|---|---|---|
+| Rigid body scatter | **Distribute Points on Faces** + **Instance on Points** | No baking; positions driven by noise |
+| Cloth draping (static) | **Subdivision + Displacement** | Instant; no solver needed |
+| Particle scatter (static) | **Distribute Points + Instance** | Realtime; controllable density |
+| Trailing particles (smoke trail) | **Curve to Mesh** + animated offset | Deterministic; reproducible |
+| Crowd simulation (simple) | **Instance on Points** + **Rotate Instances** | Thousands of instances at near-zero cost |
+
+**When to use Geometry Nodes instead of physics:**
+- The simulation is static (baked to a final shape, not animated) — GN displacement is faster
+- The effect doesn't require frame-to-frame continuity — a scatter of leaves doesn't need to "fall"
+- Render farm compatibility is required without a shared cache drive
+
+**When physics simulation is still required:**
+- Dynamic cloth that reacts to character motion
+- Fluid that responds to collision objects
+- Rigid bodies that interact with each other via collision
+
+> 🎯 **What the exam tests:** Blender 4.x certification increasingly covers Geometry Nodes as an animation tool — not just a modeling tool. Know that Geometry Nodes parameters can be keyframed (they appear as properties in the modifier stack and can have F-Curves applied via the Drivers system or right-click → Insert Keyframe).
 
 ---
 
@@ -164,6 +264,115 @@ Sony Pictures Animation's *The Mitchells vs. the Machines* was made primarily in
 | Fluid (FLIP/APIC) | Water, smoke, fire | Domain resolution; Time Scale; Viscosity |
 | Particles (Hair) | Fur, grass, scatter | Number; Children → Interpolated; Particle Edit Mode |
 | Cache | ALL simulations | Always bake before rendering |
+
+---
+
+## 8.7b Spray Fright's Physics: Documented Simulation Choices
+
+The *Sprite Fright* forest environment contained numerous physics-simulated elements, documented in the production blog:
+
+**Mushroom cluster physics:** The forest floor's mushroom clusters — which featured prominently in multiple shots — used a **rigid body "domino" setup**. Rather than animating each mushroom falling over individually, the TDs used:
+1. All mushrooms set as Active rigid bodies
+2. A single keyframed sphere (an invisible "trigger ball") animated to roll through the mushroom cluster
+3. As the sphere rolled, its rigid body collisions knocked over mushrooms realistically
+4. The simulation was baked and then used as a vertex cache (applied to the mushroom mesh via Bake action → Apply as Shape Keys workflow)
+
+This hybrid approach — physics for the "chaos" and baked vertex cache for reproducible render output — is a production standard technique. The randomness of physics is tamed by baking.
+
+**Leaf/debris particle systems:** Falling leaves and ground debris were Geometry Nodes scatters (Blender 3.x) with animation-offset parameters per instance (each leaf's rotation was animated with a different Phase offset on a Noise modifier). This produced the appearance of independently moving leaves without any physics simulation — faster to render and deterministic.
+
+**The lesson from *Sprite Fright*:** The production team explicitly avoided live physics whenever possible, preferring baked caches or Geometry Nodes procedural animation. The reason: unpredictable physics on a render farm = inconsistent frames. Deterministic systems = production reliability.
+
+---
+
+## 8.7c Geometry Nodes vs. Physics: Decision Framework
+
+When to choose Geometry Nodes procedural animation vs. physics simulation:
+
+| Scenario | Use GN | Use Physics | Reason |
+|---|---|---|---|
+| Static scatter of props on terrain | GN | — | No movement; instantaneous; no baking |
+| Falling leaves (must react to wind) | — | Cloth/Particles | Dynamic response to forces needed |
+| Falling leaves (pre-animated, deterministic) | GN | — | Noise modifier on GN offset = cheaper |
+| Crowd of walking characters | GN (instances) | — | Instance many copies cheaply |
+| Crowd of physically colliding characters | — | Physics (rigid body) | Collision requires solver |
+| Cloth draping to a final rest pose (static) | GN (displacement) | — | Use noise displacement for static drape |
+| Cloth animated over character motion | — | Cloth sim | Dynamic deformation requires solver |
+| Water pouring out of a cup | — | Fluid (FLIP) | Free surface dynamics require solver |
+| Static water surface with ripples | GN (displacement) | — | Animated noise = water-like without solver |
+| Rope hanging between two points | GN (Curve + Catenary) | Cloth or Soft Body | Static rope = GN; swinging = physics |
+
+**The deciding question:** Does the effect require frame-to-frame state continuity (where what happened in frame N affects frame N+1)? If yes → physics. If the result is predictable from parameters alone, without history → Geometry Nodes.
+
+> 🎯 **What the exam tests:** The boundary between physics simulation and procedural Geometry Nodes is an increasingly important conceptual distinction in Blender 4.x certification. Know the word "deterministic" — GN results are deterministic (same inputs always = same output); physics results are not (tiny floating-point variations cause divergence over many frames on different machines).
+
+---
+
+## 8.8 What the Exam Tests: Physics Module
+
+| Topic | Tested Knowledge |
+|---|---|
+| Rigid body types | Active (physics-driven) vs. Passive (fixed collider) |
+| Collision shape priority | Convex Hull for most props; Mesh for thin flat objects |
+| Cloth presets | Cotton, Silk, Leather (know approximate stiffness differences) |
+| Cloth self-collision | Enable to prevent cloth passing through itself |
+| Pinning | Vertex group at weight 1.0 anchors cloth to body |
+| Fluid objects | Domain (bounding box), Flow (emitter), Effector (obstacle) |
+| FLIP vs. APIC | FLIP = splashing; APIC = swirling, angular momentum |
+| Mantaflow | Fluid engine integrated since Blender 2.82 |
+| Cache baking | Always bake before rendering; changing params = full re-bake |
+| Cache formats | Rigid Body/Cloth = .bphys; Fluid = OpenVDB (.vdb) |
+| Render farm caching | Pre-bake on one machine; share cache to all nodes |
+| GN as physics alternative | Distribute Points = static scatter; no baking needed |
+| Cloth explosion fix | Separate mesh from body; increase Quality Steps; reduce pin weight |
+| Fluid domain sizing | 20–30% larger than needed to prevent boundary clipping |
+
+---
+
+## 8.8b Dynamic Paint: Surface Interaction Simulation
+
+**Dynamic Paint** is an underused physics system in Blender that allows objects to "paint" onto surfaces they contact — creating effects like footprints in snow, water spreading across a surface, or tire tracks in mud.
+
+**Dynamic Paint roles:**
+- **Canvas:** The surface that receives the paint (the snow, the mud)
+- **Brush:** The object that paints onto the canvas (the foot, the tire)
+
+**Setting up dynamic paint footprints:**
+1. Select the ground mesh → Physics → Dynamic Paint → Enable → Type: Canvas
+2. Output: Image Sequence (bakes per-frame texture) or Vertex Colors (faster, lower resolution)
+3. Select the character's foot mesh → Physics → Dynamic Paint → Enable → Type: Brush
+4. Brush Source: Proximity (paint in a radius) or Mesh Volume (exact contact)
+5. Bake the Dynamic Paint canvas from the Canvas settings
+6. The output image sequence can then be used as a texture driving displacement or roughness on the ground material
+
+**Production use cases documented:** *The Mitchells vs. the Machines* equivalent technique (Maya-based but concept identical) was used for the camping scene's mud interaction — characters walking through mud produced trailing footprint impressions via a similar canvas/brush system.
+
+> ⚠️ **Gotcha — Dynamic Paint and Non-Manifold Meshes:** The Dynamic Paint brush requires a watertight (manifold) mesh to function correctly in "Mesh Volume" mode. A mesh with holes, non-manifold edges, or internal geometry will produce unpredictable brush coverage. Use a simplified collision proxy mesh (a clean capsule or rounded box shape) as the brush rather than the detailed character mesh.
+
+---
+
+## 8.9 Soft Body Simulation
+
+**Soft Bodies** are objects that deform under forces while maintaining volume — unlike cloth (which is a surface) or rigid bodies (which don't deform at all). Soft bodies are used for:
+
+- Bouncy balls and jiggly cartoon elements
+- Organic blobs and slime
+- Secondary jiggle on character body parts (belly, cheeks, breasts)
+
+**Setting up a soft body:**
+1. Select the mesh object
+2. Physics Properties → Soft Body → Enable
+3. Key settings:
+
+| Setting | Range | Effect |
+|---|---|---|
+| **Goal → Strength** | 0–1 | How strongly vertices return to their original position |
+| **Goal → Damping** | 0–50 | How quickly oscillation settles (high = less bouncy) |
+| **Edges → Stiffness** | 0.1–1.0 | Resistance to stretching along edges |
+| **Edges → Damping** | 0–50 | Damping of edge spring forces |
+| **Mass** | 0.01–50 | Heavier objects have more inertia |
+
+> ⚠️ **Gotcha — Soft Body vs. Cloth for Jiggle:** Both Soft Body and Cloth can be used for secondary jiggle, but they have different approaches. Soft Body maintains volume and supports pressure settings (good for balls). Cloth is pure surface — no volume preservation. For character belly jiggle, Soft Body with high Goal strength (0.8–0.9) and moderate Damping (20) is more controllable than cloth.
 
 ---
 

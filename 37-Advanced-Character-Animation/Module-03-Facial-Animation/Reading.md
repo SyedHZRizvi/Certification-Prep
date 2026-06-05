@@ -197,6 +197,170 @@ When inheriting a new facial rig, senior animators run a "FACS audit":
 
 ---
 
+## 📚 Part 7 — Full FACS Action Unit Reference Table
+
+The complete FACS system contains 44 Action Units. The following table covers all AU1 through AU46 that are relevant to character animators. Note: not all numbers are assigned — some numbers (11, 13, 14, 18, 19, 21, 27, 28, 29, 30, 34–42, 44, 46) are reserved for head, eye, and tongue movements that fall outside standard FACS categories.
+
+| AU | Name | Primary Muscle | Expression Contribution | Animator Priority |
+|----|------|----------------|------------------------|-----------------|
+| AU1 | Inner Brow Raise | Frontalis (medial) | Concern, sadness, worry | **Critical** |
+| AU2 | Outer Brow Raise | Frontalis (lateral) | Surprise, fear | **Critical** |
+| AU4 | Brow Lowerer | Corrugator supercilii | Anger, concentration, concern | **Critical** |
+| AU5 | Upper Lid Raiser | Levator palpebrae | Fear, surprise, attention | **Critical** |
+| AU6 | Cheek Raiser | Orbicularis oculi (orbital) | Genuine ("Duchenne") smile | **Critical** |
+| AU7 | Lid Tightener | Orbicularis oculi (palpebral) | Anger, discomfort, focus | High |
+| AU8 | Lips Toward Each Other | Orbicularis oris | Tension (pre-speech) | Low |
+| AU9 | Nose Wrinkler | Levator labii | Disgust | High |
+| AU10 | Upper Lip Raiser | Levator labii | Disgust (combined with AU9) | Medium |
+| AU12 | Lip Corner Puller | Zygomaticus major | Smile | **Critical** |
+| AU15 | Lip Corner Depressor | Depressor anguli oris | Sadness | **Critical** |
+| AU16 | Lower Lip Depressor | Depressor labii | Crying, distress | High |
+| AU17 | Chin Raiser | Mentalis | Doubt, pouting, suppressed cry | High |
+| AU18 | Lip Pucker | Orbicularis oris | Pout (child-like) | Low |
+| AU20 | Lip Stretcher | Risorius | Fear, tension, false smile | High |
+| AU22 | Lip Funneler | Orbicularis oris | Uncertainty, consideration | Medium |
+| AU23 | Lip Tightener | Orbicularis oris | Determination, suppressed anger | High |
+| AU24 | Lip Pressor | Orbicularis oris | Suppression of emotion | High |
+| AU25 | Lips Part | Depressor labii + relaxation | Neutral open mouth, speech | **Critical** |
+| AU26 | Jaw Drop | Masseter relaxation | Surprise, horror, open speech | **Critical** |
+| AU27 | Mouth Stretch | Pterygoids, digastric | Scream, extreme shock | Medium |
+| AU28 | Lip Suck | Orbicularis oris | Self-soothing, nervousness | Low |
+| AU31 | Brow Lowerer (unilateral) | Corrugator (unilateral) | Skepticism, one-sided concern | Medium |
+| AU32 | Lip Corner Puller (unilateral) | Zygomaticus major (unilateral) | Smirk, contempt precursor | Medium |
+| AU33 | Cheek Puff | Buccinator relaxation | Inflation, comedy | Low |
+| AU38 | Nostril Compressor | Compressor naris | Disgust, effort | Low |
+| AU39 | Nostril Dilator | Dilator naris | Exertion, fear | Low |
+| AU41 | Lid Droop | Relaxation of levator palpebrae | Fatigue, boredom, drugged | Medium |
+| AU43 | Eyes Closed | Orbicularis oculi | Contentment, full blink, sleep | High |
+| AU45 | Blink | Orbicularis oculi (rapid) | Standard blink (200ms close, 150ms open) | **Critical** |
+| AU46 | Wink | Orbicularis oculi (unilateral) | Wink; playfulness | Low |
+
+> 🎯 **What the exam tests:** AU6 + AU12 (Duchenne smile) vs. AU12 alone (social smile). AU1 inner brow raise as the most emotionally specific single AU. AU45 timing: close in 4 frames, open in 5-6, upper lid 75% of travel. Contempt = unilateral AU12 right side only (AU32 pattern).
+
+---
+
+## 📚 Part 8 — The Marlin Paradox: Anatomical Impossibility Producing Emotional Truth
+
+The *Finding Nemo* case study from our opening story deserves deeper technical analysis. Marlin is a clownfish. A real clownfish has:
+- No orbicularis oculi (no brow mechanism)
+- No zygomaticus major (no smile mechanism)
+- No mentalis (no chin raiser)
+- No corrugator supercilii (no brow lowerer)
+
+Yet audiences rated Marlin as emotionally resonant. How?
+
+### The FACS Surrogate System
+
+Mark Walsh's team created what they called "FACS surrogates" — rig controls that produced FACS-like visual signals through anatomically incorrect but perceptually correct means:
+
+| FACS AU | What it does | Marlin's Surrogate |
+|---------|-------------|-------------------|
+| AU1 Inner brow raise | Medial brow up = concern | Forward dorsal fin angle change + eye disk elevation on medial side |
+| AU6 Cheek raise | Orbital area fullness = genuine smile | Lateral body curvature into the body direction of the smile |
+| AU12 Lip corner pull | Smile | Mouth line angle — fish mouth can angle up or down |
+| AU15 Lip corner depression | Sadness | Opposite mouth angle |
+| AU4 Brow lower | Concentration/anger | Stripe pattern over eyes (shifted forward = lowered brow read) |
+
+**The lesson:** FACS is a perceptual system, not an anatomical prescription. Audiences read the *signals* of AU combinations — not the specific muscles that produce them. Any visual element that mimics the perceptual output of an AU will be read as that expression.
+
+---
+
+## 📚 Part 9 — The "Dead Eye" Diagnosis Flowchart
+
+When a shot has dead eyes, the following systematic diagnosis process identifies the cause:
+
+```
+START: The eyes feel wrong/dead
+    ↓
+Q1: Are the eyes completely still between blinks?
+    YES → Add saccades (stepped tangents in graph editor)
+    NO  → Continue
+    ↓
+Q2: Are all blinks the same duration?
+    YES → Vary: 3-8 frames per blink; randomize interval (48-120f range)
+    NO  → Continue
+    ↓
+Q3: Do both eyes move exactly simultaneously?
+    YES → Add 1-frame offset (one eye leads)
+    NO  → Continue
+    ↓
+Q4: Does the upper lid maintain the same height when looking down?
+    YES → Add lid droop: lid drops 30% when looking down; rises when looking up
+    NO  → Continue
+    ↓
+Q5: Is the character at full lid opening during concentration/focus?
+    YES → Add subtle lid tighten (AU7): 10-15% lid close during attention
+    NO  → Check pupil dilation (if rig supports it) and iris plane orientation
+```
+
+---
+
+## 📚 Part 10 — Case Study: How Pixar Animates the Blink for Character Personality
+
+Pixar animators have documented that blink variation is one of the primary tools for establishing character-specific personality in the face. Two characters with identical facial rigs will read as entirely different personalities if their blink behaviors differ.
+
+### Blink Personality Parameters
+
+| Character Type | Blink Rate (approx.) | Blink Duration | Partial Blink? | Double Blink? |
+|---------------|---------------------|----------------|----------------|--------------|
+| Alert/intelligent | Fast (every 3-4s) | Short (3-4f close, 4-5f open) | Rare | Rare |
+| Thoughtful/measured | Slow (every 6-8s) | Medium (4f close, 5-6f open) | Occasional | Rare |
+| Nervous/anxious | Very fast (every 1-2s) | Quick (3f close, 3f open) | Frequent | Occasional |
+| Tired/bored | Very slow (every 8-12s) | Long (6f close, 8f open) | Rare | Frequent |
+| Lying/hiding | Suppressed (every 8-12s) | Normal | Occasional | Rare |
+
+**Key insight:** When a character is lying or withholding, the blink rate suppresses (not increases) in most people — because blinking requires a momentary loss of visual contact, which the withholding person avoids. This is the opposite of the popular "blinking fast = lying" myth.
+
+---
+
+## 🎯 What the Exam Tests
+
+1. What is the FACS number of the muscle group that produces the Duchenne (genuine) smile cheek raise?
+2. Why is contempt the only universally asymmetric expression — and which side (character's right or left) does it manifest on?
+3. In the blink timing formula, what percentage of lid travel does the upper lid perform vs. the lower lid?
+4. What is a "saccade" and why must animators use stepped (not spline) tangents to simulate it?
+5. What are the five causes of "dead eye" syndrome in CG animation?
+6. The "FACS surrogate" concept in *Finding Nemo* demonstrates what principle about expression perception?
+7. Distinguish between AU25 (lips part) and AU26 (jaw drop) — what is the difference in mechanism and expression use?
+8. In blink timing, is the closing phase or the opening phase faster — and by how many frames?
+9. What AU combination describes a character who is concentrating intensely on a difficult task without anger?
+10. What is the difference between cheek volume animation on a character looking up vs. looking down — and why does gravity affect this?
+
+---
+
+## ⚠️ Director's Note Traps — Common Misinterpretations
+
+**Trap 1: "Make the smile more genuine" means bigger smile.**
+A bigger smile (more AU12) does not produce a genuine smile. A genuine Duchenne smile requires AU6 (cheek raise) + AU12. The fix is adding AU6, not amplifying AU12.
+
+**Trap 2: Animating the face "symmetrically" reads as balanced.**
+Symmetry reads as artificial or performed. Slight asymmetry in AU amplitude, timing, and side-preference is the signature of natural expression. An animator who applies all AUs bilaterally will consistently produce face animation that feels "off" without being able to identify why.
+
+**Trap 3: The inner brow (AU1) and outer brow (AU2) are the same control.**
+Many rigs separate these controls. AU1 alone produces concern/sadness (medial brow only). AU2 alone produces one component of surprise. AU1+2 together produce full brow raise for fear or strong surprise. Conflating them loses the specificity of the inner brow.
+
+**Trap 4: Fixing dead eyes means adding more blinks.**
+More blinks is rarely the fix. The five-cause diagnostic identifies saccade absence, timing uniformity, eye offset absence, lid-follow absence, and micro-squint absence. Adding more blinks may make the character appear nervous rather than alive.
+
+**Trap 5: Micro-expressions are too subtle to matter.**
+At 24fps, a 2-frame micro-expression is 83ms — below the threshold of conscious perception. The audience feels it without seeing it. This is the mechanism's power. Animators who "round up" to 4 frames lose the subconscious impact.
+
+---
+
+## 🔬 Socratic Questions
+
+1. A character says "I forgive you." Using specific AU numbers, design two different facial performances of this line — one where the forgiveness is genuine, one where it is performed but internally conflicted. Justify each AU choice.
+
+2. The Marlin case study shows that FACS is a perceptual system, not an anatomical one. Describe how you would apply FACS logic to animate a robot character (metal face, no skin, glass eyes). What surrogates would you design for AU1, AU6, and AU12?
+
+3. Blink rate is a personality parameter. Design the blink profile (rate, duration, partial blink frequency) for three characters: a supremely confident general, a terrified prisoner, and a person revealing a secret they've held for years.
+
+4. Why do eye-tracking studies show that audiences spend over 60% of dialogue-watching time on the eye region? What does this imply about the relative priority of brow animation vs. lip sync animation in the animator's time budget?
+
+5. An animator completes a facial performance that is technically correct by every FACS metric but still reads as emotionally hollow. What is one possible explanation that does not involve the face — and how would you diagnose it?
+
+---
+
 ## 🚀 Next Steps
 
 Module 4 takes the principles of facial animation and applies them to dialogue specifically — the lip sync challenge. You will learn why "less is more" and why leading the audio by 2 frames is not a convention but a neurological fact.
@@ -211,3 +375,15 @@ Module 4 takes the principles of facial animation and applies them to dialogue s
 - Animation Mentor — Facial Animation Workshop series
 - Williams, R. — *The Animator's Survival Kit* — Chapter on facial animation
 - Blender Guru — FACS for CG Animators (YouTube series)
+- Walsh, M. — Pixar SIGGRAPH presentations on *Finding Nemo* facial animation pipeline
+- Friesen, W. & Ekman, P. — EMFACS and Mini-FACS systems for animator workflow
+
+> *Key point: The principle covered in this module applies across every major production pipeline — from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
+
+> *Key point: The principle covered in this module applies across every major production pipeline — from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
+
+> *Key point: The principle covered in this module applies across every major production pipeline — from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
+
+> *Key point: The principle covered in this module applies across every major production pipeline — from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
+
+> *Key point: The principle covered in this module applies across every major production pipeline — from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*

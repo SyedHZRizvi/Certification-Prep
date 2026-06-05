@@ -97,9 +97,55 @@ title: "Module 1 Cheat Sheet: Game vs. Film Animation"
 
 ## 📌 Studio Case Studies
 
-| Game | Studio | Key Philosophy |
-|------|--------|---------------|
-| Hades | Supergiant Games | Readability, exaggeration, hit stop 4–8f |
-| DOOM Eternal | id Software | Momentum, motion matching, interrupt |
-| Last of Us II | Naughty Dog | Expressive blend layers, complex FSM |
-| Dead Cells | Motion Twin | Spine 2D, fast-feel 2D action |
+| Game | Studio | Key Philosophy | Bone/Animation Detail |
+|------|--------|---------------|----------------------|
+| Hades | Supergiant Games | Readability, exaggeration, hit stop 4–8f | 2-frame minimum enemy windup; Spine 2D |
+| DOOM Eternal | id Software | Momentum, motion matching, interruption | < 2ms animation budget at 60fps; minimal IK |
+| Hollow Knight | Team Cherry | Indie budget philosophy — ≤ 30 bones | 28-bone Knight; mesh deform for cloak |
+| Dead Cells | Motion Twin | Low bone count for crisp silhouette | 15–25 bones per enemy; custom C runtime |
+| Valorant | Riot Games | Competitive fairness; silhouette clarity | 16ms input lag budget; hitbox/visual sync |
+| The Last of Us II | Naughty Dog | Seamless cinematic-to-gameplay transitions | Pose matching at transition; 0.1–0.25s blend |
+
+---
+
+## 📊 Platform Performance Budget Reference
+
+| Platform | FPS Target | Frame Budget | Anim Budget | GPU Bone Influences |
+|---|---|---|---|---|
+| PC (high-end) | 60–120 | 8.33–16.67ms | 1–3ms | 4 |
+| PS5 / Xbox Series X | 60–120 | 8.33–16.67ms | 1–2ms | 4 |
+| PS4 / Xbox One | 30–60 | 16.67–33.33ms | 2–4ms | 4 |
+| Nintendo Switch | 30–60 | 16.67–33.33ms | 2–3ms | 4 |
+| iOS (modern) | 60 | 16.67ms | 1–2ms | **2** |
+| Android (mid-range) | 60 | 16.67ms | 2–4ms | **2** |
+| Web (desktop) | 60 | 16.67ms | N/A | N/A |
+
+> **Mobile rule:** Max **2 bone influences per vertex** on iOS/Android. Exceeding this drops to a slower GPU skinning path.
+
+---
+
+## 🎮 Game Feel — Quantified Parameters
+
+| Parameter | Typical Range | Too Low Effect | Too High Effect |
+|-----------|--------------|----------------|-----------------|
+| Hit stop duration | 2–12 frames | Lacks impact weight | Interrupts game flow |
+| Transition blend time | 0.05–0.25s | Visible pop | Laggy, floaty |
+| Coyote time window | 0.1–0.15s | Misses ledge jumps | Feels like floating |
+| Enemy windup (Hades min) | 2 frames min | Feels cheap/unfair | Too easy to read |
+| Input-to-response latency (Valorant) | < 16ms | — | Competitive disadvantage |
+
+---
+
+## 🔁 Motion Matching vs. State Machine
+
+| | State Machine | Motion Matching |
+|--|--------------|----------------|
+| How clips play | Pre-scripted transitions | Database: best pose match per frame |
+| Input | Parameters trigger transitions | Velocity + direction drive pose selection |
+| Used in | Most games | DOOM Eternal, FIFA, Assassin's Creed |
+| Complexity | Manageable for small teams | Requires large motion capture database |
+| Foot sliding | Possible if clip speed ≠ move speed | Minimal — pose is velocity-matched |
+
+> **Key exam fact:** Motion matching databases typically require 15–60 minutes of recorded motion capture per character type to provide sufficient pose coverage at all velocities and directions.
+
+*Module complete. See Reading.md for full reference.*

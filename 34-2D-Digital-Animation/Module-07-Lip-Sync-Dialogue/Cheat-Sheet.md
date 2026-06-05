@@ -7,7 +7,7 @@ title: "Module 7 Cheat Sheet: Lip Sync & Dialogue"
 
 ---
 
-## Preston Blair Phoneme Set
+## Preston Blair Phoneme Set — MEMORIZE
 
 | Group | Sounds | Mouth Shape |
 |-------|--------|-------------|
@@ -22,7 +22,7 @@ title: "Module 7 Cheat Sheet: Lip Sync & Dialogue"
 | **REST** | Silence, exhale | Relaxed, slight opening |
 | **WQ** | W, Q | Small round pucker |
 
-**MEMORIZE THIS.**
+**10 groups. Memorize all of them.**
 
 ---
 
@@ -69,30 +69,90 @@ title: "Module 7 Cheat Sheet: Lip Sync & Dialogue"
 
 ---
 
+## Preston Blair vs. Character Animator
+
+| | Preston Blair | Ch Equivalent |
+|-|--------------|--------------|
+| AI group | AI | Open |
+| E group | E | EE |
+| CDG group | CDG | D-G-K-Ch |
+| REST | REST | Rest |
+
+---
+
 ## Character Animator Puppet File Requirements
 
 - Layered Photoshop (.psd) or Illustrator (.ai)
-- Layer names must match Ch phoneme group names
+- Layer names must match Ch phoneme group names exactly
 - Mouth layers set as **Exclusive** (only one shows at a time)
 - All face features under a head group
 
 ---
 
-## Performance Checklist (Beyond Technical Sync)
+## Phoneme Breakdown Examples
 
-- ✅ Eyes react BEFORE mouth begins to speak
-- ✅ Brows animate independently for emotion
-- ✅ Body weight shifts during speech emphasis
-- ✅ Held poses between words (no constant jiggle)
-- ✅ Natural pause before answering
-
----
-
-## "People" = Example Phoneme Breakdown
-
+**"People":**
 ```
 P  → MBP
 ee → E
 p  → MBP
 l  → L
 ```
+
+**"Animation":**
+```
+an  → AI
+i   → E
+may → AI
+shun → U
+```
+
+---
+
+## Performance Checklist (Beyond Technical Sync)
+
+- Eyes react BEFORE mouth begins to speak
+- Brows animate independently for emotion
+- Body weight shifts during speech emphasis
+- Held poses between words (no constant jiggle)
+- Natural pause before answering
+- Character "means" what they say — acting, not reciting
+
+---
+
+## Lip Sync by Production Type
+
+| Type | Method |
+|------|--------|
+| Major TV (Disney, Nick) | Manual Preston Blair, frame-by-frame |
+| YouTube animation | Mix of manual and Ch automation |
+| Explainer / corporate | Character Animator (automation priority) |
+| Game cinematics (2D) | Ch auto + manual cleanup |
+
+---
+
+## Dope Sheet Structure (Lip Sync)
+
+| Frame | Sound | Mouth Shape |
+|-------|-------|------------|
+| 1–3 | breath | REST |
+| 4–6 | stressed vowel | AI or E |
+| 7–9 | transition | CDG or MBP |
+| 10–12 | next syllable | per phoneme |
+| 13+ | trailing off | REST |
+
+Waveform amplitude peaks = stressed open sounds (AI, E, O).
+Flat waveform = REST shape.
+
+
+---
+
+## ✅ Module Sign-Off Checklist
+
+- [ ] Can explain core concept without notes
+- [ ] Can name 3 industry examples
+- [ ] Know the 2 most common mistakes
+- [ ] Understand when to use each technique
+
+**Key formula / ratio / number to memorize:**
+See the exam callouts (🎯) in the Reading.md for this module.

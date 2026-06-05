@@ -155,6 +155,36 @@ For a 400ms animation, items would stagger at 0ms, 60ms, 120ms, 180ms, etc.
 
 ---
 
+## 🎯 What the Exam Tests: Disney's 12 Principles
+
+> 🎯 **Exam Callout 1:** The exam frequently asks which principle explains why elements entering the screen should use **Ease-Out** (not Ease-In). The answer: Slow Out for entrances — the element is decelerating into view, mimicking the physics of an object arriving.
+
+> 🎯 **Exam Callout 2:** Squash and Stretch is the one principle that is **always optional in UI design** but mandatory in character animation. The exam may test: which principle is MOST violated in pure typographic motion graphics? Answer: Squash and Stretch — most designers don't apply it to text.
+
+> 🎯 **Exam Callout 3:** Staging, not Anticipation, is the principle that governs **how many things can move simultaneously**. Know the distinction: Anticipation = wind-up before an action. Staging = one primary motion at a time.
+
+> 🎯 **Exam Callout 4:** The principle of **Follow-Through and Overlapping Action** is the foundation of stagger animation in CSS and GSAP. When you write `stagger: 0.1` in GSAP, you are applying Follow-Through to a list of elements.
+
+> 🎯 **Exam Callout 5:** Appeal is the most subjective of the 12 principles and the only one with no formula. The exam will not ask you to define it quantitatively — it will ask you to identify which principle is being violated when a motion graphic "doesn't feel worth watching."
+
+> 🎯 **Exam Callout 6:** The principle of **Arcs** is the most violated in digital motion work. CSS `transition: left 300ms ease` moves an element in a straight line. Creating true arc motion requires either Motion Path (AE) or transform-based JavaScript animation. The exam may ask which CSS property creates arc motion — the answer is `offset-path` (motion path spec), not `transition`.
+
+> 🎯 **Exam Callout 7:** Secondary Action should never be added until the primary animation is locked. If secondary action distracts, the staging is wrong — not the secondary action itself.
+
+---
+
+## ⚠️ Common Traps: Principles in Practice
+
+**Trap 1 — Easing Direction Confusion:** Ease-In accelerates INTO the motion (slow start, fast end). Ease-Out decelerates OUT of the motion (fast start, slow end). The names are counterintuitive: Ease-In *starts* slow, not ends slow. This trips up almost every exam-taker.
+
+**Trap 2 — Exaggeration Calibration:** Students routinely over-exaggerate UI animations. Adding 40% squash to a button press creates a cartoon, not a product. The Module 1 calibration table (10–20% for UI) is the rule.
+
+**Trap 3 — Timing Units:** Disney's principles were expressed in **frames**. Modern motion design uses **milliseconds**. 8 frames at 24fps = 333ms. 12 frames at 24fps = 500ms. The exam may present both; know the conversion.
+
+**Trap 4 — Spring vs Bezier:** Spring animations can't be expressed as cubic bezier curves. When the exam asks for the CSS syntax for spring-based animation, there is no correct CSS answer — springs require JavaScript (GSAP Elastic, React Spring, Framer Motion). CSS has `linear()` function easing (CSS 2023) but not true spring physics.
+
+---
+
 ## 🏢 Buck's 5 Principles of Motion Design
 
 Buck (the studio behind Google's motion identity, Headspace, and Apple TV+) has articulated five principles that extend the Disney framework for the motion graphics context:
@@ -204,6 +234,41 @@ For their product UI (the dashboard), Stripe uses completely conventional motion
 Airbnb's motion work is defined by their open-source contribution: **Lottie**. The framework was built by their engineering team when they needed high-quality animations that could ship on mobile without destroying performance.
 
 Airbnb's motion philosophy: **motion should feel like the product, not like a demo.** Their animations are subtle, their timings are short, and their vocabulary is consistent. The one area where they push: map animations and place thumbnails. Those transitions use slightly longer durations (350–450ms) and more pronounced easing because the subject matter (travel, places, discovery) warrants a more emotional quality.
+
+### Linear.app's Motion Language
+
+Linear has become one of the most-cited motion design references in product design circles. Their motion vocabulary is defined by three commitments: speed, consistency, and deliberate character expression.
+
+Linear's published motion spec breaks all animations into three categories: **quick** (80–150ms, for hover states and micro-reactions), **comfortable** (200–300ms, for panel transitions and modal dialogs), and **deliberate** (300–500ms, for onboarding moments and feature discoveries). Every designer on their team is required to reference this taxonomy before specifying any animation.
+
+Their easing signature is a custom cubic bezier that sits between ease-out and spring — fast start, slight overshoot, precise settle — giving the product a "snappy but physical" feel without the playfulness of a full spring.
+
+### The Apple Keynote Motion System in Practice
+
+The Apple keynote slide transition system is one of the most studied motion systems in the industry. Key rules observed across 2019–2025 keynotes:
+
+- **Product photography enters before copy** — always. The rule is iron-clad across all slides.
+- **Text enters per-word, not per-character** — character-by-character animation would be too slow for keynote pacing.
+- **Exit animations are slower than entrances** — elements leaving get 30–40% more time than elements arriving.
+- **No two slides use the same transition type consecutively** — alternating dissolves with slide transitions prevents monotony.
+- **Color reveals always go from light to dark** — warm hues before cool, saturated before neutral.
+
+> 🎯 **Exam Callout 8:** The Apple HIG (Human Interface Guidelines) specifies that reduced motion must be supported as a system setting. Any animation that cannot be replaced with a simple opacity fade when the user enables reduced motion is non-compliant. This is a design requirement, not an accessibility suggestion.
+
+---
+
+## 📊 Ease Curve Comparison Table
+
+| Curve | CSS Syntax | AE Equivalent | GSAP Equivalent | Perceived Feel | Best Use Case |
+|-------|-----------|---------------|-----------------|----------------|---------------|
+| Linear | `linear` | Linear keyframe | `"none"` | Robotic, mechanical | Progress bars, countdowns |
+| Ease | `ease` | Default AE | `"power1.inOut"` | Gentle, generic | Fallback when unsure |
+| Ease-In | `ease-in` | Ease-In AE | `"power2.in"` | Accelerates away | Exit animations |
+| Ease-Out | `ease-out` | Ease-Out AE | `"power2.out"` | Decelerates into | Entrance animations |
+| Ease-In-Out | `ease-in-out` | Easy Ease AE | `"power2.inOut"` | Smooth, natural | Cross-screen movement |
+| Spring (approx.) | `cubic-bezier(.34,1.56,.64,1)` | None (expression) | `"elastic.out(1,.75)"` | Bouncy, alive | Playful UI, app icons |
+| Bounce | N/A (complex) | Expression only | `"bounce.out"` | Cartoon, playful | Gamification, rewards |
+| Custom | `cubic-bezier(x1,y1,x2,y2)` | Graph Editor | `CustomEase.create()` | Variable | Brand signature |
 
 ---
 
@@ -256,6 +321,48 @@ Rhythm in motion design works like rhythm in music: it's the relationship betwee
 
 ---
 
+## 🎬 Case Study: The Spotify Wrapped Motion System
+
+Every December, Spotify Wrapped becomes the most-shared animated content on social media. The motion system behind it is a masterclass in applying the 12 principles at scale.
+
+**The Core Motion Vocabulary:**
+- **Squash and Stretch:** Every number reveal uses a scale-bounce (105% overshoot, settle to 100%)
+- **Staging:** Each "your top artist" card reveals one stat at a time, never two simultaneously
+- **Follow-Through:** Confetti elements continue moving after the card settles — heavy pieces fall slower
+- **Slow In and Slow Out:** All transitions use ease-in-out; nothing is linear
+- **Appeal:** The bold color system (oversaturated, high-contrast) makes every frame feel like a poster
+
+**The Structural Decision:** Spotify Wrapped is designed for portrait orientation (9:16), scroll-driven, and built to be screen-recorded and shared. Every design decision optimizes for a 3-second viewership window. This is why the stats are enormous and typography is never subtle.
+
+**What to Learn:** Large type + high contrast + one stat per screen + spring animations = sharable social content. The 12 principles don't change — only the calibration does.
+
+**The Airbnb Lottie Origin Story — Full Case Study:**
+
+In 2015, Airbnb's design team built a loading animation for their iOS app. When they shipped it:
+- As a **GIF**: colors degraded to 256 colors; the animation looked nothing like the After Effects source
+- As **MP4**: playback couldn't be paused, reversed, or speed-controlled; the animation played whether or not the user needed it
+- **Native iOS code**: engineering rebuilt the animation from scratch; it took 2 weeks and still didn't match the design exactly
+
+Brandon Withrow, an iOS engineer, proposed a different approach: parse the After Effects project file and render it natively. He built the first version of Bodymovin (the AE exporter) and the Lottie iOS renderer over a weekend. Within months, the entire Airbnb design team was using it. It shipped open-source in 2015.
+
+**The key insight:** Lottie solved not just a technical problem but a **workflow problem**. The designer makes the decision in After Effects; the engineer implements it by dropping in a JSON file. No translation layer. No approximation. This is why Lottie adoption spread so rapidly — it eliminated an entire category of designer-developer friction.
+
+---
+
+## 🗣️ Socratic Discussion Questions
+
+1. Disney's principle of Exaggeration tells you to push the extremes. Apple's motion philosophy tells you to be invisible. Are these contradictory? How do you reconcile them for a product launch video that needs both brand character and UI clarity?
+
+2. The principle of Timing says 200–400ms is "comfortable" for most UI transitions. But Linear uses 80–150ms for the same interactions. What context factors would lead you to choose 80ms over 300ms for the same transition type?
+
+3. Follow-Through and Overlapping Action was developed for character animation. How does it apply to a list of dashboard cards animating onto screen in a web app? What changes when the list has 100 items instead of 6?
+
+4. Staging says one primary motion at a time. But modern UI often needs to animate a sidebar opening AND content loading simultaneously. Where is the line between "coordinated motion" and "violating staging"?
+
+5. Appeal is the hardest principle to teach and the most important to develop. What is the relationship between studying other designers' work and developing appeal? Can it be taught, or only exposed to?
+
+---
+
 ## 📋 Summary
 
 | Principle | Core Idea | Motion Graphics Application |
@@ -283,9 +390,10 @@ Rhythm in motion design works like rhythm in music: it's the relationship betwee
 
 ## 📚 Further Reading
 
-- *The Illusion of Life* — Frank Thomas and Ollie Johnston (Disney)
-- *The Animator's Survival Kit* — Richard Williams (Faber & Faber)
-- *Designing Interface Animation* — Val Head (Rosenfeld Media)
-- [Google Material Motion Guidelines](https://m3.material.io/styles/motion/overview)
-- [Apple Human Interface Guidelines — Motion](https://developer.apple.com/design/human-interface-guidelines/motion)
-- [School of Motion — Principles of Animation Series](https://www.schoolofmotion.com/blog/principles-of-animation)
+- *The Illusion of Life: Disney Animation* — Frank Thomas and Ollie Johnston (Disney Editions, 1981) — the original 12 principles documented from 50 years of Disney animation; the bible for any motion designer
+- *The Animator's Survival Kit* — Richard Williams (Faber & Faber, 2001) — the most practical book ever written on timing and spacing; every principle covered with frame-by-frame diagrams
+- *Designing Interface Animation* — Val Head (Rosenfeld Media, 2016) — the only book that applies Disney's principles directly to UI design with web-specific examples
+- *CSS Animation Pocket Guide* — Val Head (A Book Apart, 2015) — concise, practical; covers CSS easing, keyframes, and performance in under 100 pages
+- [Google Material Motion Guidelines](https://m3.material.io/styles/motion/overview) — the world's most comprehensive published UI motion specification; free to read and apply
+- [Apple Human Interface Guidelines — Motion](https://developer.apple.com/design/human-interface-guidelines/motion) — Apple's principles, including the reduced-motion policy and specific timing recommendations
+- [School of Motion — Principles of Animation Series](https://www.schoolofmotion.com/blog/principles-of-animation) — the best free text-based coverage of the 12 principles in a motion graphics context

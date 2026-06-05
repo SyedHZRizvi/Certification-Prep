@@ -107,3 +107,79 @@ Then: animate the gap between thought and behavior
 - **Staged reference** — confirms a predetermined plan
 - **Planning trap** — technique enabling you to execute a mediocre plan perfectly
 - **Given Circumstances** — facts about the world before action begins
+
+---
+
+## Case Study Performance Checklist
+
+### WALL-E — Acting Without Dialogue
+```
+CONSTRAINT: No dialogue / No brow / No lips / Wheeled locomotion
+TOOLS:       Eye-disk angle + body orientation + object interaction + timing
+
+Love     → How carefully WALL-E places something down
+Curiosity → How long he holds object up; angle of disk convergence
+Loneliness → Duration of lingering before moving; slow wheel speed
+Excitement → Fast wheel acceleration; body lean forward; rapid disk convergence
+```
+
+### Dug (UP) — Performance Layer Interrupts
+```
+DOG LAYER:     Physical behavior baseline (four-paw weight, ear/tail secondary)
+SPEECH LAYER:  Mouth shapes, eye focus during speech
+PERSONALITY:   Timing pause before finishing thoughts
+SQUIRREL:      Layer interrupt — dog layer hijacks in 2f; recovery takes 8f
+```
+
+### Ernesto de la Cruz (Coco) — Villain Performance
+```
+Smile delay: Mouth reaches smile BEFORE eyes (+0.5s to upper face)
+Hand on shoulder: Wrist torques to STEER, not embrace
+Eye behavior: Scans audience; does not genuinely connect with Miguel
+Mask crack: Stillness → micro-swallow → eyes flick down-left → recovery (18f total)
+```
+
+### Luisa (Encanto) — Performed Strength vs. Felt Exhaustion
+```
+Spine: LOCKED STRAIGHT (performed strength)
+Scapulae: PULLED IN TIGHT (hidden tension)
+Eyes: WIDE + FORWARD (projecting confidence)
+Blink rate: INCREASES in second verse (physiological anxiety signal)
+Hands: Fists in confident sections → fingers UNCURL during emotional breaks
+```
+
+---
+
+## Laban Effort Qualities Quick Reference
+
+| Effort Factor | Strong Pole | Light Pole | Animation Application |
+|-------------|------------|-----------|----------------------|
+| Weight | Heavy, firm impact | Light, delicate touch | Character mass; how they contact objects |
+| Time | Sustained, deliberate | Quick, sudden | Timing of actions; impulse vs. sustained |
+| Space | Direct, single-focus | Indirect, multi-focus | Where attention and body aim |
+| Flow | Bound, controlled | Free, released | How tightly movement is controlled |
+
+---
+
+## The Planning Trap — Career Stage Risk
+
+| Career Stage | Planning Trap Risk | Why |
+|-------------|-------------------|-----|
+| Year 0–2 | Low | Not enough technique to execute a bad plan convincingly |
+| Year 3–7 | **HIGHEST** | Enough technique to execute mediocre plans perfectly |
+| Year 8–12 | Moderate | Experience creates awareness of the trap |
+| Year 12+ | Low | Deep reference library prevents reliance on planning alone |
+
+---
+
+## Module 1 Exam Rapid-Fire
+
+| Question | Answer |
+|---------|--------|
+| Stanislavski's central device | Magic "If" — what would I truthfully do in this situation? |
+| WALL-E's primary acting tool | Body orientation + timing + object interaction (no dialogue) |
+| Dug's layer-interrupt timing | 2f hijack / 8f recovery (asymmetric) |
+| Arlo failure in Good Dinosaur | Indicating at story level — growth shown as checkboxes, not experienced |
+| Luisa's anxiety signal | Increasing blink rate in second verse |
+| Moana's arm vocabulary source | Hula movement (flowing, wave-like hands during emotional speech) |
+| Hiro's grief animation principle | Animate trying NOT to be sad, not sadness itself |
