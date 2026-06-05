@@ -112,24 +112,30 @@
         var target = parseInt(el.getAttribute('data-count-to'), 10);
         var suffix = el.getAttribute('data-count-suffix') || '';
         if (isNaN(target)) return;
-        // If a pre-formatted final display value is provided, use it at end of animation
+        // If the element contains a .stat-num-val child, animate that child only
+        // (the sibling .stat-num-suffix span stays permanently visible — never clipped)
+        var valEl = el.querySelector('.stat-num-val') || el;
         var finalDisplay = el.getAttribute('data-count-display') || (formatInt(target) + suffix);
         if (prefersReduced || !('requestAnimationFrame' in window)) {
-          el.textContent = finalDisplay;
+          valEl.textContent = finalDisplay;
           return;
         }
-        var duration = 1400 + Math.min(target, 8000) / 10; // longer for bigger numbers
+        var duration = 1400 + Math.min(target, 8000) / 10;
         var start = null;
         function step(t) {
           if (start === null) start = t;
           var elapsed = t - start;
           var progress = Math.min(elapsed / duration, 1);
-          // easeOutCubic
           var eased = 1 - Math.pow(1 - progress, 3);
           var val = Math.floor(eased * target);
-          el.textContent = formatInt(val) + suffix;
-          if (progress < 1) requestAnimationFrame(step);
-          else el.textContent = finalDisplay;  // snap to exact formatted value at end
+          // During animation: write number to val child; suffix span handles "+"
+          valEl.textContent = formatInt(val);
+          if (progress < 1) {
+            requestAnimationFrame(step);
+          } else {
+            // Snap to exact final display (without suffix — suffix span is separate)
+            valEl.textContent = el.getAttribute('data-count-display') || formatInt(target);
+          }
         }
         requestAnimationFrame(step);
       }
