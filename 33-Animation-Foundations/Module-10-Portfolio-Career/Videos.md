@@ -20,7 +20,7 @@
 ## ⭐ Essential Watching (~60 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=animation+demo+reel+tips+how+to+make+studio+advice" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="9ZEu_I-ido4" href="https://www.youtube.com/results?search_query=animation+demo+reel+tips+how+to+make+studio+advice" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>💼</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -29,7 +29,7 @@
       <span class="vg-duration">⏱ 20 min · Best shot first, no filler, 90 second rule</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=how+to+get+a+job+in+animation+industry+advice+2024" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="9ZEu_I-ido4" href="https://www.youtube.com/results?search_query=how+to+get+a+job+in+animation+industry+advice+2024" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>💼</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
 ## 📚 Recommended (~45 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=freelance+vs+studio+animation+pros+cons+career+advice" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="uDqjIdI4bF4" href="https://www.youtube.com/results?search_query=freelance+vs+studio+animation+pros+cons+career+advice" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>💼</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>

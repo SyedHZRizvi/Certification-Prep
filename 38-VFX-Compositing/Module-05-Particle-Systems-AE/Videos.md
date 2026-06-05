@@ -10,7 +10,7 @@ title: "Module 5 Videos: Particle Systems in After Effects"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Trapcode+Particular+tutorial+After+Effects+beginner+fire+smoke" data-video-id="part-01">
+<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=Trapcode+Particular+tutorial+After+Effects+beginner+fire+smoke">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Trapcode Particular: Complete Beginner Tutorial — Fire and Smoke</div>

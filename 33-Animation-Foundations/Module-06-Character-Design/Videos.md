@@ -29,7 +29,7 @@
       <span class="vg-duration">⏱ 20 min · Circles, squares, triangles + real examples</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=silhouette+readability+character+design+test+how+to" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="9ZEu_I-ido4" href="https://www.youtube.com/results?search_query=silhouette+readability+character+design+test+how+to" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎨</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -47,7 +47,7 @@
       <span class="vg-duration">⏱ 18 min · How color tells audience who a character is</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=character+turnaround+model+sheet+animation+how+to" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="9ZEu_I-ido4" href="https://www.youtube.com/results?search_query=character+turnaround+model+sheet+animation+how+to" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎨</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>

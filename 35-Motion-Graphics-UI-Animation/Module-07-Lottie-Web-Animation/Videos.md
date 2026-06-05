@@ -11,7 +11,7 @@ title: "Module 7: Videos — Lottie & Web Animation"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=lottie+after+effects+bodymovin+export+tutorial" data-video-id="gRrVmWbUJCQ">
+<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=lottie+after+effects+bodymovin+export+tutorial">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/gRrVmWbUJCQ/mqdefault.jpg" alt="Lottie Export AE" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">After Effects to Lottie — Complete Export Tutorial with Bodymovin</div>
@@ -19,7 +19,7 @@ title: "Module 7: Videos — Lottie & Web Animation"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=gsap+scrolltrigger+tutorial+beginners+2024" data-video-id="X7IBa7vZjmo">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=gsap+scrolltrigger+tutorial+beginners+2024">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/X7IBa7vZjmo/mqdefault.jpg" alt="GSAP ScrollTrigger" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">GSAP ScrollTrigger — The Complete Beginner Tutorial</div>
@@ -27,7 +27,7 @@ title: "Module 7: Videos — Lottie & Web Animation"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=framer+motion+react+animation+tutorial" data-video-id="2V1WK-3HQNk">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=framer+motion+react+animation+tutorial">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/2V1WK-3HQNk/mqdefault.jpg" alt="Framer Motion React" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Framer Motion for React — Animation Tutorial</div>
@@ -35,7 +35,7 @@ title: "Module 7: Videos — Lottie & Web Animation"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=lottie+react+component+implementation+web+animation" data-video-id="E0oGHRNEKT8">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=lottie+react+component+implementation+web+animation">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/E0oGHRNEKT8/mqdefault.jpg" alt="Lottie React" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Lottie in React — AE Animation to React Component</div>
@@ -51,7 +51,7 @@ title: "Module 7: Videos — Lottie & Web Animation"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=gsap+timeline+animation+tutorial+javascript" data-video-id="m6PDUIF24v4">
+<a class="vg-card" data-video-id="i_23KUAEtUM" href="https://www.youtube.com/results?search_query=gsap+timeline+animation+tutorial+javascript">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/m6PDUIF24v4/mqdefault.jpg" alt="GSAP Timeline" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">GSAP Timelines — Sequencing and Coordinating Animations</div>
@@ -59,7 +59,7 @@ title: "Module 7: Videos — Lottie & Web Animation"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=css+keyframes+animation+tutorial+custom+properties" data-video-id="YszONjKpgg4">
+<a class="vg-card" data-video-id="i_23KUAEtUM" href="https://www.youtube.com/results?search_query=css+keyframes+animation+tutorial+custom+properties">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/YszONjKpgg4/mqdefault.jpg" alt="CSS Keyframes Custom Properties" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">CSS Keyframe Animations with Custom Properties</div>
@@ -67,7 +67,7 @@ title: "Module 7: Videos — Lottie & Web Animation"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=web+animations+api+waapi+javascript+tutorial" data-video-id="aFIBdRk5jPs">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=web+animations+api+waapi+javascript+tutorial">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/aFIBdRk5jPs/mqdefault.jpg" alt="Web Animations API" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Web Animations API — Native Browser Animation Control</div>
@@ -75,7 +75,7 @@ title: "Module 7: Videos — Lottie & Web Animation"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=react+spring+useSpring+physics+animation+tutorial" data-video-id="bIAM8vJeJBM">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=react+spring+useSpring+physics+animation+tutorial">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/bIAM8vJeJBM/mqdefault.jpg" alt="React Spring" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">React Spring — Physics-Based Animation Tutorial</div>
@@ -91,7 +91,7 @@ title: "Module 7: Videos — Lottie & Web Animation"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=lottie+interactivity+scroll+cursor+animation+control" data-video-id="GkVzF50O0NA">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=lottie+interactivity+scroll+cursor+animation+control">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/GkVzF50O0NA/mqdefault.jpg" alt="Lottie Interactivity" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Lottie Interactivity — Scroll-Driven and Cursor-Driven Animation</div>
@@ -99,7 +99,7 @@ title: "Module 7: Videos — Lottie & Web Animation"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=gsap+animation+library+vs+framer+motion+comparison" data-video-id="6BrBIGWN5pA">
+<a class="vg-card" data-video-id="uDqjIdI4bF4" href="https://www.youtube.com/results?search_query=gsap+animation+library+vs+framer+motion+comparison">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/6BrBIGWN5pA/mqdefault.jpg" alt="GSAP vs Framer Motion" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">GSAP vs Framer Motion — When to Use Which</div>
@@ -107,7 +107,7 @@ title: "Module 7: Videos — Lottie & Web Animation"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=after+effects+lottie+troubleshooting+common+issues" data-video-id="kFUHbLg2Agw">
+<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=after+effects+lottie+troubleshooting+common+issues">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/kFUHbLg2Agw/mqdefault.jpg" alt="Lottie Troubleshooting" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Lottie Troubleshooting — Common AE Export Issues and Fixes</div>
@@ -115,7 +115,7 @@ title: "Module 7: Videos — Lottie & Web Animation"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=airbnb+lottie+history+mobile+animation+engineering" data-video-id="vJQ3m_8_YVQ">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=airbnb+lottie+history+mobile+animation+engineering">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/vJQ3m_8_YVQ/mqdefault.jpg" alt="Airbnb Lottie History" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Why Airbnb Built Lottie — The Engineering Story</div>

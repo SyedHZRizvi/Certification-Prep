@@ -72,7 +72,7 @@
       <span class="vg-duration">⏱ 18 min · Head-to-body ratios across animation styles</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=life+drawing+animation+benefits+how+to+practice" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="9ZEu_I-ido4" href="https://www.youtube.com/results?search_query=life+drawing+animation+benefits+how+to+practice" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>✏️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -104,7 +104,7 @@
       <span class="vg-duration">⏱ 18 min · How to improve with 20 min/day</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=drawing+from+imagination+vs+reference+animation+technique" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="uDqjIdI4bF4" href="https://www.youtube.com/results?search_query=drawing+from+imagination+vs+reference+animation+technique" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>✏️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

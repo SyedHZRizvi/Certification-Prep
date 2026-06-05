@@ -10,7 +10,7 @@ title: "Module 2 Videos: Green Screen Keying"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Keylight+After+Effects+green+screen+keying+tutorial+professional" data-video-id="GS-key-01">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Keylight+After+Effects+green+screen+keying+tutorial+professional">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Keylight in After Effects: Professional Green Screen Workflow</div>
@@ -19,7 +19,7 @@ title: "Module 2 Videos: Green Screen Keying"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=three+step+key+green+screen+After+Effects+rough+refined+fine" data-video-id="GS-key-02">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=three+step+key+green+screen+After+Effects+rough+refined+fine">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">The Three-Step Key: Rough, Refined, Fine in After Effects</div>
@@ -28,7 +28,7 @@ title: "Module 2 Videos: Green Screen Keying"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=spill+suppression+green+screen+After+Effects+advanced+spill+suppressor" data-video-id="GS-key-03">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=spill+suppression+green+screen+After+Effects+advanced+spill+suppressor">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Spill Suppression in After Effects: Advanced Spill Suppressor Deep Dive</div>
@@ -37,7 +37,7 @@ title: "Module 2 Videos: Green Screen Keying"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=light+wrap+after+effects+composite+integration+tutorial" data-video-id="GS-key-04">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=light+wrap+after+effects+composite+integration+tutorial">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Light Wrap in After Effects: Making Composites Look Real</div>
@@ -54,7 +54,7 @@ title: "Module 2 Videos: Green Screen Keying"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=keying+hair+green+screen+After+Effects+difficult+subjects" data-video-id="GS-key-05">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=keying+hair+green+screen+After+Effects+difficult+subjects">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Keying Hair and Difficult Subjects in After Effects</div>
@@ -63,7 +63,7 @@ title: "Module 2 Videos: Green Screen Keying"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=difference+matte+after+effects+no+greenscreen+clean+plate" data-video-id="GS-key-06">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=difference+matte+after+effects+no+greenscreen+clean+plate">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Difference Mattes: Compositing Without a Greenscreen</div>
@@ -72,7 +72,7 @@ title: "Module 2 Videos: Green Screen Keying"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=color+matching+composite+after+effects+match+plate+background" data-video-id="GS-key-07">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=color+matching+composite+after+effects+match+plate+background">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Color Matching Your Composite: Plate to Background</div>
@@ -81,7 +81,7 @@ title: "Module 2 Videos: Green Screen Keying"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=VFX+artists+react+bad+good+greenscreen+compositing+Corridor+Crew" data-video-id="GS-key-08">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=VFX+artists+react+bad+good+greenscreen+compositing+Corridor+Crew">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">VFX Artists React: Bad and Good Green Screen Compositing</div>
@@ -98,7 +98,7 @@ title: "Module 2 Videos: Green Screen Keying"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=green+screen+vs+blue+screen+when+to+use+which+VFX" data-video-id="GS-key-09">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=green+screen+vs+blue+screen+when+to+use+which+VFX">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Green Screen vs Blue Screen: When to Use Which</div>
@@ -107,7 +107,7 @@ title: "Module 2 Videos: Green Screen Keying"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=how+to+shoot+greenscreen+properly+on+set+lighting+setup" data-video-id="GS-key-10">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=how+to+shoot+greenscreen+properly+on+set+lighting+setup">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">How to Shoot Greenscreen Properly: Lighting and Setup</div>

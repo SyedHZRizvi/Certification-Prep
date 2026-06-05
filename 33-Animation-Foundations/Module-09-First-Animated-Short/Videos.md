@@ -61,7 +61,7 @@
       <span class="vg-duration">⏱ 18 min · Golf ball vs bowling ball vs water balloon</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=animation+self+critique+feedback+how+to+evaluate+your+work" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="9ZEu_I-ido4" href="https://www.youtube.com/results?search_query=animation+self+critique+feedback+how+to+evaluate+your+work" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🔍</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>

@@ -10,7 +10,7 @@ title: "Module 3 Videos: Rotoscoping & Masking"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Rotobrush+2+After+Effects+tutorial+rotoscoping" data-video-id="roto-01">
+<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=Rotobrush+2+After+Effects+tutorial+rotoscoping">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Rotobrush 2.0 in After Effects: Complete Tutorial</div>
@@ -19,7 +19,7 @@ title: "Module 3 Videos: Rotoscoping & Masking"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=manual+rotoscoping+mask+animation+After+Effects+spline" data-video-id="roto-02">
+<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=manual+rotoscoping+mask+animation+After+Effects+spline">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Manual Rotoscoping: Spline Mask Animation in After Effects</div>
@@ -28,7 +28,7 @@ title: "Module 3 Videos: Rotoscoping & Masking"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=rotoscoping+tips+professional+cheat+roto+stack+VFX" data-video-id="roto-03">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=rotoscoping+tips+professional+cheat+roto+stack+VFX">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Professional Roto Tips: The Cheat Stack and Efficiency Techniques</div>
@@ -37,7 +37,7 @@ title: "Module 3 Videos: Rotoscoping & Masking"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=masking+color+isolation+After+Effects+selective+grading" data-video-id="roto-04">
+<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=masking+color+isolation+After+Effects+selective+grading">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Masking for Color Isolation in After Effects</div>
@@ -54,7 +54,7 @@ title: "Module 3 Videos: Rotoscoping & Masking"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Silhouette+FX+rotoscoping+software+tutorial+professional" data-video-id="roto-05">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Silhouette+FX+rotoscoping+software+tutorial+professional">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Silhouette FX: Professional Rotoscoping Workflow</div>
@@ -63,7 +63,7 @@ title: "Module 3 Videos: Rotoscoping & Masking"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=roto+hair+fine+detail+refine+edge+After+Effects" data-video-id="roto-06">
+<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=roto+hair+fine+detail+refine+edge+After+Effects">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Rotoscoping Hair and Fine Detail with Refine Edge</div>
@@ -72,7 +72,7 @@ title: "Module 3 Videos: Rotoscoping & Masking"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=track+matte+After+Effects+explained+luma+alpha" data-video-id="roto-07">
+<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=track+matte+After+Effects+explained+luma+alpha">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Track Mattes in After Effects: Alpha, Luma, and Inverted Explained</div>
@@ -81,7 +81,7 @@ title: "Module 3 Videos: Rotoscoping & Masking"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=how+much+roto+is+in+blockbuster+films+VFX+artists+react" data-video-id="roto-08">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=how+much+roto+is+in+blockbuster+films+VFX+artists+react">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">How Much Roto Is in Blockbuster Films? VFX Artists React</div>
@@ -98,7 +98,7 @@ title: "Module 3 Videos: Rotoscoping & Masking"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=variable+feather+mask+After+Effects+advanced+technique" data-video-id="roto-09">
+<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=variable+feather+mask+After+Effects+advanced+technique">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Variable Feather Masks in After Effects</div>
@@ -107,7 +107,7 @@ title: "Module 3 Videos: Rotoscoping & Masking"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=roto+artist+career+VFX+industry+salary+pipeline" data-video-id="roto-10">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=roto+artist+career+VFX+industry+salary+pipeline">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">The Roto Artist: A VFX Career Path</div>

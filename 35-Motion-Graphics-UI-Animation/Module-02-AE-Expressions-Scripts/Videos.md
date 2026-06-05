@@ -11,7 +11,7 @@ title: "Module 2: Videos — AE Expressions & Scripts"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=after+effects+expressions+beginners+wiggle+time+loopOut" data-video-id="0sTZUHfUHQA">
+<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=after+effects+expressions+beginners+wiggle+time+loopOut">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/0sTZUHfUHQA/mqdefault.jpg" alt="AE Expressions for Beginners" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">After Effects Expressions for Beginners — wiggle, time, loopOut</div>
@@ -19,7 +19,7 @@ title: "Module 2: Videos — AE Expressions & Scripts"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=after+effects+master+controller+expression+controls+tutorial" data-video-id="yWI7E-JpBJI">
+<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=after+effects+master+controller+expression+controls+tutorial">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/yWI7E-JpBJI/mqdefault.jpg" alt="AE Master Controller" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Building a Master Controller in After Effects</div>
@@ -27,7 +27,7 @@ title: "Module 2: Videos — AE Expressions & Scripts"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=after+effects+wiggle+expression+advanced+tips" data-video-id="BqVBQxQTDxk">
+<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=after+effects+wiggle+expression+advanced+tips">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/BqVBQxQTDxk/mqdefault.jpg" alt="Wiggle Expression Advanced" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">The wiggle() Expression — Every Parameter Explained</div>
@@ -35,7 +35,7 @@ title: "Module 2: Videos — AE Expressions & Scripts"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=after+effects+loopOut+expression+loopIn+cycle+pingpong" data-video-id="3fWBUxfaKfk">
+<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=after+effects+loopOut+expression+loopIn+cycle+pingpong">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/3fWBUxfaKfk/mqdefault.jpg" alt="loopOut Expression AE" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">loopOut() and loopIn() — Every Type Explained</div>
@@ -51,7 +51,7 @@ title: "Module 2: Videos — AE Expressions & Scripts"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=after+effects+index+expression+stagger+layers" data-video-id="9JIm7mNL3rA">
+<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=after+effects+index+expression+stagger+layers">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/9JIm7mNL3rA/mqdefault.jpg" alt="Index Expression AE Stagger" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">The Index Expression — Procedural Stagger and Offsets</div>
@@ -59,7 +59,7 @@ title: "Module 2: Videos — AE Expressions & Scripts"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=after+effects+valueAtTime+expression+motion+trail+delay" data-video-id="OMqFcGa1RdU">
+<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=after+effects+valueAtTime+expression+motion+trail+delay">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/OMqFcGa1RdU/mqdefault.jpg" alt="valueAtTime AE" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">valueAtTime() — Motion Trails and Echo Effects</div>
@@ -67,7 +67,7 @@ title: "Module 2: Videos — AE Expressions & Scripts"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=after+effects+ease+and+wizz+script+spring+bounce" data-video-id="W1_HvhkBPW8">
+<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=after+effects+ease+and+wizz+script+spring+bounce">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/W1_HvhkBPW8/mqdefault.jpg" alt="Ease and Wizz Script" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Ease and Wizz — Spring and Bounce Easing for AE</div>
@@ -75,7 +75,7 @@ title: "Module 2: Videos — AE Expressions & Scripts"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=after+effects+expression+scripting+productivity+workflow" data-video-id="vXkPdDPaGao">
+<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=after+effects+expression+scripting+productivity+workflow">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/vXkPdDPaGao/mqdefault.jpg" alt="AE Scripting Workflow" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">After Effects Scripting Workflow — Automate Everything</div>
@@ -91,7 +91,7 @@ title: "Module 2: Videos — AE Expressions & Scripts"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=after+effects+javascript+extendscript+writing+scripts" data-video-id="OTiSKVrWsBs">
+<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=after+effects+javascript+extendscript+writing+scripts">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/OTiSKVrWsBs/mqdefault.jpg" alt="ExtendScript AE" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Writing Your Own After Effects Scripts with ExtendScript</div>
@@ -99,7 +99,7 @@ title: "Module 2: Videos — AE Expressions & Scripts"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=after+effects+advanced+expressions+clamp+ease+linear" data-video-id="YDsMm2PzNO4">
+<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=after+effects+advanced+expressions+clamp+ease+linear">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/YDsMm2PzNO4/mqdefault.jpg" alt="Advanced AE Expressions" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Advanced After Effects Expressions — clamp, ease, linear</div>
@@ -107,7 +107,7 @@ title: "Module 2: Videos — AE Expressions & Scripts"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=after+effects+expression+showreel+case+study+build" data-video-id="X7fTbQO7j3o">
+<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=after+effects+expression+showreel+case+study+build">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/X7fTbQO7j3o/mqdefault.jpg" alt="AE Expression Showreel Build" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Build a Showreel Piece Using 3 Core Expressions</div>
@@ -115,7 +115,7 @@ title: "Module 2: Videos — AE Expressions & Scripts"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=after+effects+spring+expression+physics+based+animation" data-video-id="Z1vMBxoLlJc">
+<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=after+effects+spring+expression+physics+based+animation">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/Z1vMBxoLlJc/mqdefault.jpg" alt="Spring Expression AE" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Spring Physics Expression in After Effects</div>

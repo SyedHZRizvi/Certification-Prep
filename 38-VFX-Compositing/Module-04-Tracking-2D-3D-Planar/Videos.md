@@ -10,7 +10,7 @@ title: "Module 4 Videos: Tracking — 2D, 3D & Planar"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=After+Effects+2D+tracker+one+point+two+point+tutorial" data-video-id="track-01">
+<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=After+Effects+2D+tracker+one+point+two+point+tutorial">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">After Effects 2D Tracker: One-Point and Two-Point Tracking</div>
@@ -19,7 +19,7 @@ title: "Module 4 Videos: Tracking — 2D, 3D & Planar"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Mocha+AE+planar+tracking+tutorial+corner+pin+screen+replacement" data-video-id="track-02">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Mocha+AE+planar+tracking+tutorial+corner+pin+screen+replacement">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Mocha AE Planar Tracking: Screen Replacement Tutorial</div>
@@ -28,7 +28,7 @@ title: "Module 4 Videos: Tracking — 2D, 3D & Planar"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=After+Effects+3D+camera+tracker+tutorial+attaching+elements" data-video-id="track-03">
+<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=After+Effects+3D+camera+tracker+tutorial+attaching+elements">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">After Effects 3D Camera Tracker: Placing Elements in a Scene</div>
@@ -37,7 +37,7 @@ title: "Module 4 Videos: Tracking — 2D, 3D & Planar"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=warp+stabilizer+After+Effects+smooth+handheld+footage" data-video-id="track-04">
+<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=warp+stabilizer+After+Effects+smooth+handheld+footage">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Warp Stabilizer in After Effects: Smoothing Handheld Footage</div>
@@ -54,7 +54,7 @@ title: "Module 4 Videos: Tracking — 2D, 3D & Planar"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Mocha+Pro+advanced+planar+tracking+VFX+tutorial" data-video-id="track-05">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Mocha+Pro+advanced+planar+tracking+VFX+tutorial">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Mocha Pro: Advanced Planar Tracking for VFX</div>
@@ -63,7 +63,7 @@ title: "Module 4 Videos: Tracking — 2D, 3D & Planar"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+camera+tracking+3D+matchmove+tutorial" data-video-id="track-06">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+camera+tracking+3D+matchmove+tutorial">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Camera Tracking: Free 3D Camera Solve Tutorial</div>
@@ -72,7 +72,7 @@ title: "Module 4 Videos: Tracking — 2D, 3D & Planar"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=corner+pin+tracking+After+Effects+screen+replacement+advanced" data-video-id="track-07">
+<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=corner+pin+tracking+After+Effects+screen+replacement+advanced">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Corner Pin Tracking: Advanced Screen Replacements in AE</div>
@@ -81,7 +81,7 @@ title: "Module 4 Videos: Tracking — 2D, 3D & Planar"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=matchmove+VFX+artist+career+3DEqualizer+film+pipeline" data-video-id="track-08">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=matchmove+VFX+artist+career+3DEqualizer+film+pipeline">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Matchmove in Film VFX: Career and Pipeline Overview</div>
@@ -98,7 +98,7 @@ title: "Module 4 Videos: Tracking — 2D, 3D & Planar"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=tracking+markers+on+set+VFX+supervisor+placement" data-video-id="track-09">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=tracking+markers+on+set+VFX+supervisor+placement">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">On-Set Tracking Markers: Placement and Best Practices</div>
@@ -107,7 +107,7 @@ title: "Module 4 Videos: Tracking — 2D, 3D & Planar"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=object+tracking+After+Effects+mocha+attaching+3D+CG" data-video-id="track-10">
+<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=object+tracking+After+Effects+mocha+attaching+3D+CG">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Object Tracking: Attaching CG to Moving Objects</div>

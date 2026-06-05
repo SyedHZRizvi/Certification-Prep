@@ -29,7 +29,7 @@
       <span class="vg-duration">⏱ 25 min · Shot types, format, arrow conventions</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=animatic+tutorial+how+to+make+story+reel+animation" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="9ZEu_I-ido4" href="https://www.youtube.com/results?search_query=animatic+tutorial+how+to+make+story+reel+animation" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎞️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -70,7 +70,7 @@
       <span class="vg-duration">⏱ 20 min · Industry tool introduction</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=how+to+pitch+storyboards+director+animation+professional" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="9ZEu_I-ido4" href="https://www.youtube.com/results?search_query=how+to+pitch+storyboards+director+animation+professional" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎞️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>

@@ -11,7 +11,7 @@ title: "Module 1: Videos — Motion Design Principles"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=12+principles+of+animation+motion+graphics+explained" data-video-id="uDqjIdI4bF4">
+<a class="vg-card" data-video-id="9bZkp7q19f0" href="https://www.youtube.com/results?search_query=12+principles+of+animation+motion+graphics+explained">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/uDqjIdI4bF4/mqdefault.jpg" alt="12 Principles of Animation" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">The 12 Principles of Animation Explained</div>
@@ -19,7 +19,7 @@ title: "Module 1: Videos — Motion Design Principles"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=easing+animation+curves+explained+motion+design" data-video-id="o3QxSCEPUfA">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=easing+animation+curves+explained+motion+design">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/o3QxSCEPUfA/mqdefault.jpg" alt="Easing Curves Explained" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Easing Curves Explained — Ease In, Out, Spring, Bounce</div>
@@ -27,7 +27,7 @@ title: "Module 1: Videos — Motion Design Principles"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=ben+marriott+motion+design+principles+timing+spacing" data-video-id="hjjJZMdGJFI">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=ben+marriott+motion+design+principles+timing+spacing">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/hjjJZMdGJFI/mqdefault.jpg" alt="Motion Design Principles Ben Marriott" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Motion Design Principles: Timing and Spacing</div>
@@ -35,7 +35,7 @@ title: "Module 1: Videos — Motion Design Principles"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=apple+human+interface+guidelines+animation+motion" data-video-id="LU47MnUiNG4">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=apple+human+interface+guidelines+animation+motion">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/LU47MnUiNG4/mqdefault.jpg" alt="Apple Motion Design Language" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">How Apple Designs Motion — iOS Animation Language</div>
@@ -51,7 +51,7 @@ title: "Module 1: Videos — Motion Design Principles"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=squash+stretch+animation+motion+graphics+after+effects" data-video-id="2LFSj_XmrAI">
+<a class="vg-card" data-video-id="9bZkp7q19f0" href="https://www.youtube.com/results?search_query=squash+stretch+animation+motion+graphics+after+effects">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/2LFSj_XmrAI/mqdefault.jpg" alt="Squash Stretch After Effects" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Squash & Stretch in After Effects — The Right Way</div>
@@ -59,7 +59,7 @@ title: "Module 1: Videos — Motion Design Principles"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=motion+design+buck+studio+principles+process" data-video-id="mOBCTg0jMDQ">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=motion+design+buck+studio+principles+process">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/mOBCTg0jMDQ/mqdefault.jpg" alt="Buck Studio Motion Design Process" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Inside Buck Studio — Motion Design Process and Principles</div>
@@ -67,7 +67,7 @@ title: "Module 1: Videos — Motion Design Principles"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=anticipation+animation+motion+graphics+tutorial" data-video-id="3V0vCEtAKkM">
+<a class="vg-card" data-video-id="9bZkp7q19f0" href="https://www.youtube.com/results?search_query=anticipation+animation+motion+graphics+tutorial">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/3V0vCEtAKkM/mqdefault.jpg" alt="Anticipation in Motion Graphics" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Anticipation — The Most Overlooked Animation Principle</div>
@@ -75,7 +75,7 @@ title: "Module 1: Videos — Motion Design Principles"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=stripe+airbnb+animation+design+system+motion" data-video-id="QGMmJuFEBwM">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=stripe+airbnb+animation+design+system+motion">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/QGMmJuFEBwM/mqdefault.jpg" alt="Stripe Airbnb Motion Systems" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">How Stripe and Airbnb Build Motion Systems</div>
@@ -91,7 +91,7 @@ title: "Module 1: Videos — Motion Design Principles"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=spring+animation+physics+damping+stiffness+explained" data-video-id="bF4MRCGkQgw">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=spring+animation+physics+damping+stiffness+explained">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/bF4MRCGkQgw/mqdefault.jpg" alt="Spring Physics Animation" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Spring Physics in Animation — Mass, Damping, Stiffness</div>
@@ -99,7 +99,7 @@ title: "Module 1: Videos — Motion Design Principles"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=motion+design+rhythm+contrast+composition+principles" data-video-id="RXkW7sHNcDQ">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=motion+design+rhythm+contrast+composition+principles">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/RXkW7sHNcDQ/mqdefault.jpg" alt="Rhythm and Contrast Motion Design" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Rhythm and Contrast in Motion Design</div>
@@ -107,7 +107,7 @@ title: "Module 1: Videos — Motion Design Principles"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=disney+12+principles+animation+history+illusion+of+life" data-video-id="haa7n3UGyDc">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=disney+12+principles+animation+history+illusion+of+life">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/haa7n3UGyDc/mqdefault.jpg" alt="History Disney 12 Principles" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">The History Behind Disney's 12 Principles</div>
@@ -115,7 +115,7 @@ title: "Module 1: Videos — Motion Design Principles"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=google+material+design+motion+guidelines+animation" data-video-id="3Wp4m5acbHY">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=google+material+design+motion+guidelines+animation">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/3Wp4m5acbHY/mqdefault.jpg" alt="Google Material Design Motion" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Google Material Design Motion — The Complete Guide</div>

@@ -47,7 +47,7 @@
       <span class="vg-duration">⏱ 18 min · Reading and writing timing charts</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=animation+timing+emotion+comedy+vs+drama+frame+rate" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="uDqjIdI4bF4" href="https://www.youtube.com/results?search_query=animation+timing+emotion+comedy+vs+drama+frame+rate" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>⏱️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>

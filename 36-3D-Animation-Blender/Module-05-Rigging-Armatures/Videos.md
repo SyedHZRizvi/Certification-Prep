@@ -11,7 +11,7 @@ title: "Module 5 Videos: Rigging & Armatures"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+character+rigging+tutorial+armature+beginner+complete" target="_blank" rel="noopener">
+<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=Blender+character+rigging+tutorial+armature+beginner+complete" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Character Rigging — Complete Armature Tutorial</div>
