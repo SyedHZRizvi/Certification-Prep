@@ -3,7 +3,7 @@
 ![Certifications: 32](https://img.shields.io/badge/Certifications-39-blueviolet.svg)
 ![Modules: 286](https://img.shields.io/badge/Modules-354-blue.svg)
 ![Mock Exams: 96](https://img.shields.io/badge/Mock_Exams-117-orange.svg)
-![Questions: 13000+](https://img.shields.io/badge/Practice_Questions-16%2C000%2B-green.svg)
+![Questions: 19000+](https://img.shields.io/badge/Practice_Questions-16%2C000%2B-green.svg)
 
 ## 🌐 [Visit the live course site →](https://cert-hub.pages.dev/)
 
@@ -83,7 +83,7 @@ Each track is a **guided journey** built on three pillars:
 | 26 | [`19-Bitcoin-Cryptocurrency/`](./19-Bitcoin-Cryptocurrency/README.md) | Bitcoin & Cryptocurrency (CBP, CBSA, CCAS, UNIC MSc) | 10 | 80 Q / 90 min |
 | 27 | [`20-E-Commerce/`](./20-E-Commerce/README.md) | E-Commerce (Google D-M, Adobe Commerce, Shopify) | 10 | 80 Q / 90 min |
 
-**Totals:** 32 certifications · 286 modules · 96 full-length mock exams · 13,000+ practice questions · ~1,050 hours of focused content.
+**Totals:** 32 certifications · 286 modules · 96 full-length mock exams · 19,000+ practice questions · ~1,050 hours of focused content.
 
 ---
 
