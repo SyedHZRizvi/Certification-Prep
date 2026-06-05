@@ -197,6 +197,36 @@ The following effects appear in major films — audiences typically have no idea
 
 ---
 
+## 🎬 Case Study: Gravity — Framestore's Invisible Pipeline
+
+Alfonso Cuarón's *Gravity* (2013, Framestore) is the most comprehensive invisible VFX film in cinema history. Over 80% of the film is digital; the practical elements are remarkably few. Framestore received an Academy Award for Visual Effects.
+
+### What Was Real vs Digital
+
+| Element | Real | Digital |
+|---------|------|---------|
+| Astronaut faces | Real (filmed in controlled light box) | N/A |
+| Astronaut suits (outer) | Digital CG in 90%+ of shots | Practical for close-ups only |
+| Earth (as seen from space) | NASA reference photography | Fully digital at correct orbital altitude |
+| ISS exterior | NASA blueprints + digital model | Fully digital |
+| Debris field | Practical reference scaled | Fully digital simulation |
+| Sandra Bullock weightlessness | Puppet rig + face + motion control (complex hybrid) | Digital suit + environment in most shots |
+| Helmet visor reflections | Composited in Nuke | Every reflection was a separate comp element |
+
+### The Key Compositing Challenge: Helmet Visor Reflections
+
+Every shot in which an astronaut is visible in a spacesuit required separate compositing for the visor. Framestore's approach:
+
+1. The visor was shot clean (no reflections) under controlled studio lighting
+2. A 3D render of the environment — Earth, ISS, stars, fellow astronauts — was produced from the correct camera perspective
+3. The render was treated with a chrome/spherical distortion to simulate the convex visor geometry
+4. The distorted environment was composited over the visor area with a Merge-Screen blend at ~60–80% opacity
+5. A separate specular highlight was added for the lens/lighting point sources
+
+> 🎯 **What the exam tests:** Every reflective surface in a composite requires its own separate reflection pass or composite layer. The Screen blend mode is used for reflections because it brightens without clipping — identical to how real reflections add light to a surface.
+
+---
+
 ## 🔬 Digital Matte Painting: Techniques and Workflow
 
 Digital Matte Painting (DMP) is the craft of extending, replacing, or creating entire environments that don't exist in camera. It is the backbone of set extension work.
@@ -283,9 +313,69 @@ Not all invisible VFX shots are equal in complexity. This table gives a realisti
 
 ---
 
+## 📊 Invisible VFX Quick Vocabulary
+
+| Term | Definition |
+|------|-----------|
+| Set extension (DSX) | Expanding a physical set into a larger digital environment |
+| Digital Matte Painting (DMP) | Hand-painted environment extension; projected onto 3D geometry for parallax |
+| Invisible stitch | A seamlessly joined transition between two separately shot plates |
+| De-aging | Making an actor appear younger using a combination of ML pipeline and 2D integration |
+| Clean plate | A take of the same shot without the principal subject; used for cleanup |
+| Wire removal | Removing physical support rigs (wires, cranes, dollies) from footage |
+| Beauty work | Cosmetic corrections to talent: blemishes, hair strays, tattoos |
+| Digital crowd | CG background characters added to multiply the apparent size of a crowd |
+| Atmospheric depth | Haze, reduced contrast, and reduced saturation added to distant elements |
+| FLUX | ILM's Facial Look Update eXchange System — the de-aging pipeline for *The Irishman* |
+| Anyma | Digital Domain's de-aging pipeline |
+| Content-Aware Fill | AE's ML-based in-painting tool for removing objects from footage |
+| RotoPaint | Nuke's painting tool for clone, paint, and cleanup operations |
+| Light wrap | Simulating background light scattering around the edges of a foreground subject |
+
+---
+
 ## 🎯 Next Steps
 
 Module 9 is where the spectacle lives. Destruction sequences, explosion layering, the "rule of 7 layers," muzzle flashes, and bringing Blender destruction simulations into AE compositing. The invisible work of Module 8 and the visible spectacle of Module 9 are two ends of the same craft.
+
+---
+
+## 📊 Integration Quality Self-Check: Invisible VFX
+
+Before delivering any invisible VFX shot, confirm each of these five elements:
+
+| Check | Standard | Common Error |
+|-------|---------|-------------|
+| Atmospheric depth | Background elements softer, lower contrast, more haze | Background extension at full sharpness |
+| Light source consistency | All lighting matches plate's key light direction and color temperature | CG/DMP element lit from wrong direction |
+| Motion naturalism | Trees, leaves, flags, water — all have appropriate motion | Static DMP with zero movement |
+| Grain unity | Single Adjustment Layer grain over entire comp | Per-element grain with mismatched noise |
+| Edge invisibility | Mask edges feathered; color matched; light wrapped | Hard edges at plate/extension boundary |
+
+---
+
+## 📊 Invisible VFX Integration Decision Tree
+
+```
+Is the subject visible against the background?
+  └─ Greenscreen → Pull a key (Module 2)
+  └─ No greenscreen → Roto (Module 3) or Difference Matte (clean plate required)
+
+Is the background correct?
+  └─ No → Sky replacement: roto sky + replacement plate + light wrap
+  └─ Set too small → Set extension: DMP or 3D render + camera track if moving
+
+Are there visible production elements (wires, rigs)?
+  └─ Yes, clean plate available → RotoPaint clone from clean plate
+  └─ Yes, no clean plate → AE Content-Aware Fill or manual paint per frame
+
+Does talent need beauty work?
+  └─ Simple (blemishes, hair strays) → RotoPaint paint/clone per frame
+  └─ Complex (de-aging) → ML pipeline (FLUX/Anyma) + 2D roto integration
+
+Are two shots being joined as one continuous take?
+  └─ Yes → 5-point match: camera geometry + color + grain + atmosphere + motion blur
+```
 
 ---
 
@@ -295,107 +385,3 @@ Module 9 is where the spectacle lives. Destruction sequences, explosion layering
 - **Cinefex Issue 139** (*Gravity*) — extraordinary detail on Framestore's pipeline for the film
 - **Film Riot — "Practical VFX" series** — affordable practical integration techniques for independent filmmakers
 - **Art of VFX (artofvfx.com)** — interviews with VFX supervisors from *1917*, *The Batman*, and other cleanup-heavy productions
-
-
----
-
-## 🔬 Deep Dive: Industry Implementation
-
-### How Studios Actually Do This
-
-The gap between classroom technique and production reality is wide. Here's what working animators at major studios report:
-
-**At streaming-first studios (Netflix, Amazon):** Turnaround pressure means animators develop personal "cheat libraries" — pre-built rigs, pre-tested expressions, cached simulations — for the techniques covered in this module. Building your own cheat library from the exercises in this course is exactly the right preparation.
-
-**At feature film studios (Pixar, DreamWorks, ILM):** Nothing ships without supervisor review. The review process explicitly tests the concepts in this module: supervisors look for correct timing arcs, proper weight, readable silhouette. Understanding *what they're looking for* is as important as executing it.
-
-**At game studios (Riot, Naughty Dog, Insomniac):** Performance budgets are hard constraints. Everything in this module has a "game version" — a real-time approximation that preserves the perceptual result within the millisecond budget.
-
-### The 2026 Industry Context
-
-AI-assisted animation tools are changing the pre-production pipeline but not the core techniques. Generative AI can suggest reference, prototype timing, or auto-rig simple characters — but a supervisor reviewing a shot still applies the same principles covered in this module. Understanding foundations is *more* important in an AI-assisted environment, not less, because you need to evaluate and correct AI output.
-
-**Key tools evolving this technique in 2026:**
-- Autodesk Maya: Ghosting improvements, better IK/FK snapping
-- Blender: Geometry Nodes integration, improved NLA editor
-- Adobe Animate/After Effects: AI-assisted in-betweening (still beta)
-- Unreal Engine MetaHuman: Real-time facial animation pipeline
-
-### Portfolio Application
-
-Recruiters at studios hiring animators in 2026 report these as the most valuable portfolio signals for this topic:
-
-1. **A shot that failed and was fixed** — Shows understanding of *why* technique matters
-2. **Side-by-side comparisons** — "Before/after" with your own commentary
-3. **Constraint work** — Show you can achieve quality within limits (short deadline, low polygon budget, tight compression)
-
----
-
-## 📋 Module Summary Table
-
-| Topic | What You Learned | Applies To |
-|---|---|---|
-| Core technique | Principle + application | Professional production |
-| Common traps | 3+ failure patterns | Every project |
-| Industry examples | Named studio/production | Portfolio conversations |
-| Career context | Salary band / hiring signal | Job search |
-
----
-
-## 📚 Expanded Further Reading
-
-**Books:**
-- *The Animator's Survival Kit* — Richard Williams. The reference every professional animator keeps at their desk.
-- *Animated Performance* — Nancy Beiman. Acting for animators, grounded in classical stage training.
-- *Digital Lighting and Rendering* — Jeremy Birn (3rd ed.). Industry-standard on lighting principles that apply to animation contexts.
-
-**Channels / Communities:**
-- Animation Career Review — salary surveys, program reviews, industry hiring data updated annually
-- r/Animation (Reddit) — professionals share work-in-progress and solicit feedback
-- Animation Mentor forums — the professional community adjacent to the top animation school
-
-**Practice resource:**
-- 11 Second Club — monthly animation competition with audio provided; the standard external portfolio-building tool used by Pixar/DreamWorks applicants
-
----
-
-
----
-
-## 🏭 Production Context: When and Why
-
-### The Professional Decision Framework
-
-Every technique in this module gets applied within a production pipeline that has three hard constraints:
-1. **Time** — Everything has a deadline; perfection isn't the goal, ship quality is
-2. **Budget** — Software licenses, render time, and revision cycles all cost money
-3. **Compatibility** — Your output must integrate with other departments' workflows
-
-Understanding this framework shapes how professionals apply the techniques you've learned:
-
-| Context | Priority order | How this module's technique adapts |
-|---|---|---|
-| AAA game studio | Performance, then quality | Approximations and LODs |
-| Feature film | Quality, then time | Extensive iteration |
-| Ad agency | Time, then client satisfaction | Templates and presets |
-| Indie/solo | Budget, then quality | Smart shortcuts |
-
-### Career Progression Map for This Skill
-
-**Junior level ($45K–$75K):** Execute the technique correctly following direction. Output matches specifications. Few errors.
-
-**Mid level ($75K–$110K):** Make judgment calls about technique selection. Lead small projects. Train junior staff.
-
-**Senior level ($110K–$160K):** Define the technical approach for a project. Solve novel problems. Set quality standards.
-
-**Lead/Director ($160K+):** Own the creative vision. Balance creative and business constraints. Hire for the role.
-
-### How This Has Changed in 2025–2026
-
-The techniques in this module are stable — the fundamentals haven't changed — but the tools have evolved significantly:
-- **AI-assisted pre-production** reduces planning time by 20–40% at studios that have adopted it
-- **Real-time rendering** has made interactive feedback loops possible at higher fidelity
-- **Remote collaboration** tools have changed how feedback travels from supervisors to animators
-- **Subscription software** has changed the cost structure for small studios and freelancers
-
----

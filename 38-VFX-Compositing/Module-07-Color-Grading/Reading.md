@@ -245,6 +245,33 @@ The colorist does a **creative grade**: applying the director and DP's intended 
 
 ---
 
+## 🔬 HDR Color Grading: What Changes in HDR
+
+High Dynamic Range (HDR) delivery has become increasingly common as streaming platforms support HDR10 and Dolby Vision. Understanding how HDR changes the compositor's workflow is an exam-level topic.
+
+### SDR vs HDR: Key Differences
+
+| Factor | SDR (Rec.709) | HDR10 | Dolby Vision |
+|--------|-------------|-------|-------------|
+| Peak luminance | 100 nits | Up to 10,000 nits | Up to 10,000 nits |
+| Color gamut | Rec.709 | Rec.2020 | Rec.2020 |
+| Transfer function | Gamma 2.4 | PQ (SMPTE ST.2084) | PQ + Dolby metadata |
+| Bit depth | 8–10 bit | 10 bit | 12 bit |
+| White point | D65 | D65 | D65 |
+
+### Impact on Compositing for HDR
+
+When delivering to HDR:
+1. **Compositing still done in ACEScg linear** — the working space does not change
+2. **Output transform changes** — ODT targets HDR10 or Dolby Vision instead of Rec.709
+3. **Highlight detail is preserved longer** — the PQ curve captures more sky and practical fire detail
+4. **Spill on bright areas** — green spill is more visible on HDR displays; spill suppression must be more thorough
+5. **Interactive light range** — an explosion can now be graded brighter than 100 nits, matching its real physical brightness
+
+> 🎯 **What the exam tests:** The ACEScg working space is identical for SDR and HDR productions. What changes is the ODT (Output Device Transform) — the conversion from ACEScg to the delivery standard. Compositors deliver log EXR to the DI regardless of SDR or HDR target.
+
+---
+
 ## 📊 Summary: Color Science Quick Reference
 
 | Term | Definition |
@@ -262,6 +289,22 @@ The colorist does a **creative grade**: applying the director and DP's intended 
 | Parade scope | Waveform display of R, G, B channels separately |
 | IDT | Input Device Transform — converts camera log to ACES |
 | ODT | Output Device Transform — converts ACES to display color space |
+
+---
+
+## 📊 Color Pipeline Quick Reference: Who Does What
+
+Confusion between the compositor's grade and the colorist's grade is one of the most common sources of miscommunication in post-production:
+
+| Stage | Who | Tool | Purpose | When |
+|-------|-----|------|---------|------|
+| Plate prep | DIT / Plate Dept | ARRIRAW SDK | Transcode log footage to working format | On set / Day 1 post |
+| VFX technical grade | Compositor | Nuke Grade nodes | Match elements to plate; neutral delivery | During compositing |
+| Conform / EDL | Editor / Online | Avid / Resolve | Assemble comps with offline cut | Post-VFX picture lock |
+| Creative grade | Colorist | DaVinci Resolve | Apply the film's look globally | DI facility |
+| QC | Deliverable team | Resolve + scopes | Verify specs met | Before delivery |
+
+**The compositor must never bake a creative look into the composite delivery. Deliver neutral log.**
 
 ---
 
@@ -298,6 +341,39 @@ Module 8 covers the "invisible" category of VFX — practical digital FX integra
 | Creative grade | Colorist's grade — applying the director/DP's intended look |
 | DI | Digital Intermediate — facility and process for final color grading |
 | Film emulation LUT | A 3D LUT simulating the look of a specific film stock |
+
+---
+
+## 📊 Color Correction Decision Tree
+
+When approaching any composite that requires color grading, use this decision tree:
+
+```
+Is footage log-encoded?
+  └─ Yes → Apply IDT / OCIOColorSpace to convert to scene-linear FIRST
+  └─ No (already linear) → Proceed
+
+Is CG render in correct color space?
+  └─ Yes (ACEScg) → Grade directly
+  └─ No (wrong space) → Apply colorspace conversion node before grading
+
+Are all elements matching each other?
+  └─ No → Start with shadows (Lift/Blackpoint)
+           → Then match exposure (Gain/Gamma)
+           → Then match color balance (per-channel R/G/B)
+           → Then match secondary (skin tone on vectorscope)
+  └─ Yes → Proceed to light wrap and grain
+
+Does the composite need interactive light from a CG element?
+  └─ Yes → Add Adjustment Layer with color-matched Curves + masked radial near affected surfaces
+  └─ No → Proceed to final output
+
+Is the deliverable for broadcast?
+  └─ Yes → Ensure blacks ≥ 16 (8-bit legal), whites ≤ 235 (8-bit legal)
+            → Apply Rec.709 output transform
+  └─ Cinema → Apply P3 D65 ODT
+  └─ VFX delivery → Deliver in log (ACEScct or LogC3); no creative look baked in
+```
 
 ---
 

@@ -221,6 +221,28 @@ Modern Nuke versions (13+) support GPU acceleration for select operations. Under
 
 ---
 
+## 🔬 Nuke's 3D Compositing Environment
+
+Unlike After Effects, which treats 3D as a 2.5D simulation, Nuke contains a full 3D compositing environment. This allows:
+
+- **3D camera integration:** Import a tracked camera from 3DEqualizer or Maya; render CG elements from the exact camera and composite in true 3D perspective
+- **Scene reconstruction:** Create a point cloud of the environment from tracked features; build collision planes for CG elements
+- **Card geometry:** Project DMP paintings onto 3D cards that receive correct parallax as the camera moves
+- **Deep compositing:** Process EXR files with per-pixel depth information for correct handling of overlapping volumetric renders
+
+### When to Use Nuke's 3D Compositor
+
+| Use Case | 3D Compositor Advantage |
+|----------|------------------------|
+| CG element at exact camera position | Import camera directly from 3DE; no second-guess on perspective |
+| DMP with camera movement | Project painted texture onto 3D cards; automatic parallax |
+| Multiple CG elements at different depths | Depth compositing with correct overlap using Z-depth |
+| Shadow catcher integration | Place a 3D ground plane at the real-world position to receive CG shadows |
+
+> 🎯 **What the exam tests:** Nuke's 3D environment is not a replacement for Maya or Houdini 3D animation — it is a 3D compositing layer. It allows correct camera-perspective placement of 2D elements (DMP, matte paintings) and correct integration of CG renders using imported 3D cameras.
+
+---
+
 ## 🔑 Why Nuke Dominates Film VFX
 
 | Factor | After Effects | Nuke |
@@ -318,6 +340,42 @@ Module 7 covers color grading — the science and art of the final color pass. Y
 
 ---
 
+## 📊 Nuke Workflow Quick Reference: From Raw Plate to Deliverable
+
+The following represents the standard node structure for a typical film composite in Nuke — a concise map of how a real production script is organized:
+
+```
+[Read: ARRIRAW plate]
+        ↓
+[OCIOColorSpace: LogC3 → ACEScg linear]
+        ↓
+[LensDistortion: undistort]
+        ↓
+[Keyer: greenscreen pull]  [Read: CG beauty EXR]
+        ↓                         ↓
+[Grade: plate match]        [Shuffle: extract diffuse/spec/shadow AOVs]
+        ↓                         ↓
+        └────── Merge (over) ──────┘
+                       ↓
+               [Grade: technical match]
+                       ↓
+               [Read: DMP element] ──── Merge (over, behind plate)
+                       ↓
+               [Read: FX particle EXR] ── Merge (plus, foreground smoke)
+                       ↓
+               [LensFlare: tracked to sun]
+                       ↓
+               [AddGrain: match to plate grain]
+                       ↓
+               [OCIOColorSpace: ACEScg → Log]
+                       ↓
+               [Write: deliverable EXR sequence]
+```
+
+This graph represents approximately 25–40 nodes for a moderately complex shot. A hero shot at ILM may have 400+ nodes following the same structural logic at greater depth.
+
+---
+
 ## 📚 Further Reading
 
 - **The Foundry Nuke User Guide** — official documentation; free at learn.foundry.com/nuke
@@ -327,42 +385,3 @@ Module 7 covers color grading — the science and art of the final color pass. Y
 - **nukepedia.com** — community resource for Nuke gizmos, scripts, and tutorials
 
 
----
-
-## 🏭 Production Context: When and Why
-
-### The Professional Decision Framework
-
-Every technique in this module gets applied within a production pipeline that has three hard constraints:
-1. **Time** — Everything has a deadline; perfection isn't the goal, ship quality is
-2. **Budget** — Software licenses, render time, and revision cycles all cost money
-3. **Compatibility** — Your output must integrate with other departments' workflows
-
-Understanding this framework shapes how professionals apply the techniques you've learned:
-
-| Context | Priority order | How this module's technique adapts |
-|---|---|---|
-| AAA game studio | Performance, then quality | Approximations and LODs |
-| Feature film | Quality, then time | Extensive iteration |
-| Ad agency | Time, then client satisfaction | Templates and presets |
-| Indie/solo | Budget, then quality | Smart shortcuts |
-
-### Career Progression Map for This Skill
-
-**Junior level ($45K–$75K):** Execute the technique correctly following direction. Output matches specifications. Few errors.
-
-**Mid level ($75K–$110K):** Make judgment calls about technique selection. Lead small projects. Train junior staff.
-
-**Senior level ($110K–$160K):** Define the technical approach for a project. Solve novel problems. Set quality standards.
-
-**Lead/Director ($160K+):** Own the creative vision. Balance creative and business constraints. Hire for the role.
-
-### How This Has Changed in 2025–2026
-
-The techniques in this module are stable — the fundamentals haven't changed — but the tools have evolved significantly:
-- **AI-assisted pre-production** reduces planning time by 20–40% at studios that have adopted it
-- **Real-time rendering** has made interactive feedback loops possible at higher fidelity
-- **Remote collaboration** tools have changed how feedback travels from supervisors to animators
-- **Subscription software** has changed the cost structure for small studios and freelancers
-
----

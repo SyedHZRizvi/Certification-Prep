@@ -79,6 +79,38 @@ Professional reels from artists who worked on major productions must clearly lab
 
 ---
 
+## 🔬 How Supervisors Actually Review Reels: Behind the Scenes
+
+Understanding the supervisor's perspective helps you build a reel that passes the initial 15-second triage. Here is what experienced supervisors report:
+
+### The Supervisor's Mental Checklist
+
+When a supervisor opens a reel submission, they process approximately this sequence:
+
+| Second | Supervisor's Question | Pass/Fail Signal |
+|--------|----------------------|-----------------|
+| 0–3 | Is this reel starting immediately or wasting my time? | Immediate work = Pass; title card/music intro = warning |
+| 3–8 | Is this shot the real work or a setup? | Plate or raw in split-screen = Pass; just the final = questionable |
+| 8–15 | Can I see evidence of the technique I need? | Visible edge quality, light integration = Pass; generic result = ambiguous |
+| 15–30 | What is the technical range of this artist? | Multiple categories visible = Pass; one-trick = limited hiring fit |
+| 30–60 | Is there evidence of Nuke? | Nuke composite visible = Pass for film (film-only AE = immediate reject) |
+| 60–90 | Is there at least one shot I'd consider for my current production? | Yes = strong shortlist; No = polite decline |
+
+> 🎯 **What the exam tests:** Supervisors make their initial judgment in 15 seconds. The reel's first shot is the most important shot. No intro, no title card, no music build-up — cut directly to your best work with a plate-to-comp split immediately visible.
+
+### What "Not Enough Nuke" Means
+
+For film compositor positions, "not enough Nuke" is the single most common reason a reel is rejected at the shortlisting stage. Specifically:
+
+| Situation | Outcome |
+|-----------|---------|
+| AE-only reel for film position | Immediate reject — film studios use Nuke exclusively |
+| AE-heavy with one Nuke shot | May pass for TV/streaming; weak for feature film |
+| Nuke-primary reel with some AE for particles | Strong for film positions; fine for TV |
+| Nuke-only reel | Strong for all film and premium streaming positions |
+
+---
+
 ## 🏢 The VFX Artist vs Compositor Career Path
 
 Two distinct career tracks emerge from this course:
@@ -304,6 +336,38 @@ When supervisors evaluate reels, they score on these criteria:
 
 ---
 
+## 📊 Career Self-Assessment: Where Are You in the VFX Pipeline?
+
+Use this table to identify your current level and what to build next:
+
+| Skill | Junior (0–2 yr) | Mid (2–5 yr) | Senior (5–10 yr) |
+|-------|----------------|-------------|-----------------|
+| Greenscreen keying | 3-step workflow | Primatte + multi-zone keying | Teaches and reviews others' keys |
+| Rotoscoping | Rotobrush 2.0 | Silhouette; cheat stacks | Roto supervisor; pipeline integration |
+| Tracking | AE built-in + Mocha | 3D Camera Tracker; SynthEyes | 3DEqualizer; survey data workflows |
+| Nuke | Basic nodes; Merge/Grade | AOV pass workflows; Python basics | Script optimization; Gizmo creation |
+| Color science | Log vs linear concept | ACES workflow; shot matching | DI collaboration; color pipeline setup |
+| Particle FX | CC Particle World | Trapcode Particular; 4-layer fire | Houdini particles; simulation delivery |
+| Invisible FX | Wire removal; sky replacement | Set extension; 1917-style stitches | De-aging pipelines; DMP integration |
+| Action FX | 7-layer explosion | Blender rigid body; muzzle flash | Houdini FLIP/Pyro; full FX supervision |
+
+---
+
+## 📊 The VFX Hiring Timeline
+
+Understanding how studios hire helps you plan your career entry:
+
+| Month | Activity |
+|-------|---------|
+| January–March | Award season; studios evaluate reel submissions for upcoming productions |
+| April–June | Major hiring push for summer blockbuster post-production |
+| July–September | Mid-cycle hiring; TV streaming productions ramp up |
+| October–December | End of fiscal year; staff reviews; reduced hiring |
+
+**Best time to apply for a junior position:** March–April, when studios are staffing up for summer productions. Have your reel finalized before February.
+
+---
+
 ## 📚 Further Reading
 
 - **The Visual Effects Society (visualeffectssociety.com)** — professional organization; attend local events for networking; access VES forums
@@ -311,107 +375,3 @@ When supervisors evaluate reels, they score on these criteria:
 - **VFX Voice magazine** — VES publication; quarterly; career and technology coverage
 - **"The VFX Artist's Guide to Building a Reel" — VES YouTube channel** — official advice from working supervisors
 - **IATSE Local 839 (animationguild.org)** — current contract rates, health and pension information
-
-
----
-
-## 🔬 Deep Dive: Industry Implementation
-
-### How Studios Actually Do This
-
-The gap between classroom technique and production reality is wide. Here's what working animators at major studios report:
-
-**At streaming-first studios (Netflix, Amazon):** Turnaround pressure means animators develop personal "cheat libraries" — pre-built rigs, pre-tested expressions, cached simulations — for the techniques covered in this module. Building your own cheat library from the exercises in this course is exactly the right preparation.
-
-**At feature film studios (Pixar, DreamWorks, ILM):** Nothing ships without supervisor review. The review process explicitly tests the concepts in this module: supervisors look for correct timing arcs, proper weight, readable silhouette. Understanding *what they're looking for* is as important as executing it.
-
-**At game studios (Riot, Naughty Dog, Insomniac):** Performance budgets are hard constraints. Everything in this module has a "game version" — a real-time approximation that preserves the perceptual result within the millisecond budget.
-
-### The 2026 Industry Context
-
-AI-assisted animation tools are changing the pre-production pipeline but not the core techniques. Generative AI can suggest reference, prototype timing, or auto-rig simple characters — but a supervisor reviewing a shot still applies the same principles covered in this module. Understanding foundations is *more* important in an AI-assisted environment, not less, because you need to evaluate and correct AI output.
-
-**Key tools evolving this technique in 2026:**
-- Autodesk Maya: Ghosting improvements, better IK/FK snapping
-- Blender: Geometry Nodes integration, improved NLA editor
-- Adobe Animate/After Effects: AI-assisted in-betweening (still beta)
-- Unreal Engine MetaHuman: Real-time facial animation pipeline
-
-### Portfolio Application
-
-Recruiters at studios hiring animators in 2026 report these as the most valuable portfolio signals for this topic:
-
-1. **A shot that failed and was fixed** — Shows understanding of *why* technique matters
-2. **Side-by-side comparisons** — "Before/after" with your own commentary
-3. **Constraint work** — Show you can achieve quality within limits (short deadline, low polygon budget, tight compression)
-
----
-
-## 📋 Module Summary Table
-
-| Topic | What You Learned | Applies To |
-|---|---|---|
-| Core technique | Principle + application | Professional production |
-| Common traps | 3+ failure patterns | Every project |
-| Industry examples | Named studio/production | Portfolio conversations |
-| Career context | Salary band / hiring signal | Job search |
-
----
-
-## 📚 Expanded Further Reading
-
-**Books:**
-- *The Animator's Survival Kit* — Richard Williams. The reference every professional animator keeps at their desk.
-- *Animated Performance* — Nancy Beiman. Acting for animators, grounded in classical stage training.
-- *Digital Lighting and Rendering* — Jeremy Birn (3rd ed.). Industry-standard on lighting principles that apply to animation contexts.
-
-**Channels / Communities:**
-- Animation Career Review — salary surveys, program reviews, industry hiring data updated annually
-- r/Animation (Reddit) — professionals share work-in-progress and solicit feedback
-- Animation Mentor forums — the professional community adjacent to the top animation school
-
-**Practice resource:**
-- 11 Second Club — monthly animation competition with audio provided; the standard external portfolio-building tool used by Pixar/DreamWorks applicants
-
----
-
-
----
-
-## 🏭 Production Context: When and Why
-
-### The Professional Decision Framework
-
-Every technique in this module gets applied within a production pipeline that has three hard constraints:
-1. **Time** — Everything has a deadline; perfection isn't the goal, ship quality is
-2. **Budget** — Software licenses, render time, and revision cycles all cost money
-3. **Compatibility** — Your output must integrate with other departments' workflows
-
-Understanding this framework shapes how professionals apply the techniques you've learned:
-
-| Context | Priority order | How this module's technique adapts |
-|---|---|---|
-| AAA game studio | Performance, then quality | Approximations and LODs |
-| Feature film | Quality, then time | Extensive iteration |
-| Ad agency | Time, then client satisfaction | Templates and presets |
-| Indie/solo | Budget, then quality | Smart shortcuts |
-
-### Career Progression Map for This Skill
-
-**Junior level ($45K–$75K):** Execute the technique correctly following direction. Output matches specifications. Few errors.
-
-**Mid level ($75K–$110K):** Make judgment calls about technique selection. Lead small projects. Train junior staff.
-
-**Senior level ($110K–$160K):** Define the technical approach for a project. Solve novel problems. Set quality standards.
-
-**Lead/Director ($160K+):** Own the creative vision. Balance creative and business constraints. Hire for the role.
-
-### How This Has Changed in 2025–2026
-
-The techniques in this module are stable — the fundamentals haven't changed — but the tools have evolved significantly:
-- **AI-assisted pre-production** reduces planning time by 20–40% at studios that have adopted it
-- **Real-time rendering** has made interactive feedback loops possible at higher fidelity
-- **Remote collaboration** tools have changed how feedback travels from supervisors to animators
-- **Subscription software** has changed the cost structure for small studios and freelancers
-
----
