@@ -16,11 +16,14 @@ title: Courses — The Cert Hub
 {% include site-nav.html %}
 
   <!-- ============== PAGE HERO ============== -->
-  <section class="hero">
-    <div class="relative max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-10 md:pt-20 md:pb-14 text-center">
-      <p class="text-base md:text-lg font-bold tracking-[0.22em] uppercase text-indigo-300 mb-4">— Curriculum —</p>
-      <h1 class="display text-5xl md:text-6xl lg:text-7xl font-extrabold text-white mb-5 leading-tight">Browse All 32 Courses</h1>
-      <p class="text-xl md:text-2xl text-slate-300 max-w-3xl mx-auto leading-relaxed">Foundation tier to specialty — pick a single course or the full ladder. Cornell · Harvard · Princeton · Stanford pedagogical standard, one author, one voice.</p>
+  <section style="background: linear-gradient(135deg, #1e1b4b 0%, #312e81 40%, #4338ca 100%); padding: 5rem 1rem 3.5rem;">
+    <div class="relative max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p style="font-size:0.875rem; font-weight:800; letter-spacing:0.22em; text-transform:uppercase; color:#a5b4fc; margin-bottom:1rem;">— Curriculum —</p>
+      <h1 class="display" style="font-size:clamp(2.5rem,6vw,4.5rem); font-weight:900; color:#ffffff; margin-bottom:1.25rem; line-height:1.1;">Browse All 39 Courses</h1>
+      <p style="font-size:clamp(1.1rem,2.5vw,1.375rem); color:#e0e7ff; max-width:48rem; margin:0 auto; line-height:1.65; font-weight:400;">
+        Foundation tier to specialist — pick a single course or the full ladder.<br />
+        <strong style="color:#ffffff; font-weight:700;">Cornell · Harvard · Princeton · Stanford</strong> pedagogical standard, one author, one voice.
+      </p>
     </div>
   </section>
 
@@ -28,9 +31,9 @@ title: Courses — The Cert Hub
   <section id="curriculum" class="curriculum-bg">
     <div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
     <div class="reveal text-center mb-14">
-      <h2 class="text-4xl md:text-5xl font-extrabold mb-4">What You'll Master</h2>
-      <p class="text-xl md:text-2xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-        {{ total_modules }} modules across {{ cert_count }} certifications · ~{{ site.data.site_stats.total_hours_estimate }} hours of focused content. Click any topic to start.
+      <h2 class="text-4xl md:text-5xl font-extrabold mb-4" style="color:#0f172a;">All {{ cert_count }} Courses</h2>
+      <p class="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed" style="color:#334155; font-weight:500;">
+        {{ total_modules }} modules · ~{{ site.data.site_stats.total_hours_estimate }} hours of focused content. Click any course card to open it.
       </p>
     </div>
 
