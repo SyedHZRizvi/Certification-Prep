@@ -137,33 +137,15 @@ title: The Cert Hub — 32 Certifications
         Already a member? <a href="login/" class="text-indigo-300 hover:text-white font-semibold underline-offset-4 hover:underline transition">Sign in <span aria-hidden="true">→</span></a>
       </p>
 
-      <!-- inline hero stats — auto-computed from _data/navigation.yml + _data/site_stats.yml -->
-      {% assign cert_count = site.data.navigation.tracks | size %}
-      {% assign mock_exam_count = cert_count | times: 3 %}
-      {% assign total_modules = 0 %}
-      {% for t in site.data.navigation.tracks %}{% assign m = t.modules | size %}{% assign total_modules = total_modules | plus: m %}{% endfor %}
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto mt-16 pt-12 border-t border-white/10">
-        <div>
-          <div class="text-4xl md:text-5xl font-extrabold gradient-text-blue">{{ cert_count }}</div>
-          <div class="text-base text-slate-400 mt-2">Industry certifications</div>
-        </div>
-        <div>
-          <div class="text-4xl md:text-5xl font-extrabold gradient-text-blue">{{ total_modules }}</div>
-          <div class="text-base text-slate-400 mt-2">In-depth modules</div>
-        </div>
-        <div>
-          <div class="text-4xl md:text-5xl font-extrabold gradient-text-blue">{{ mock_exam_count }}</div>
-          <div class="text-base text-slate-400 mt-2">Full-length mock exams</div>
-        </div>
-        <div>
-          <div class="text-4xl md:text-5xl font-extrabold gradient-text-blue">{{ site.data.site_stats.practice_question_estimate }}</div>
-          <div class="text-base text-slate-400 mt-2">Practice questions</div>
-        </div>
-      </div>
+      <!-- Stats are shown in the "A serious study hub" section below — no duplicate here -->
     </div>
   </section>
 
   <!-- ============== SOCIAL PROOF STATS BAR (animated counters on scroll) ============== -->
+  {% assign cert_count = site.data.navigation.tracks | size %}
+  {% assign mock_exam_count = cert_count | times: 3 %}
+  {% assign total_modules = 0 %}
+  {% for t in site.data.navigation.tracks %}{% assign m = t.modules | size %}{% assign total_modules = total_modules | plus: m %}{% endfor %}
   <section class="stats-bar">
     <div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
       <div class="reveal text-center mb-10">
