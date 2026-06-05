@@ -13,7 +13,7 @@ title: "Module 1 Videos: Blender Interface & Fundamentals"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+beginner+tutorial+complete+interface+overview+2024" target="_blank" rel="noopener">
+<a class="vg-card" data-video-id="z-Xl9tGqH14" href="https://www.youtube.com/results?search_query=Blender+beginner+tutorial+complete+interface+overview+2024" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Beginner Tutorial — Complete Interface Overview</div>
@@ -119,7 +119,7 @@ title: "Module 1 Videos: Blender Interface & Fundamentals"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+properties+panel+all+tabs+explained+beginner" target="_blank" rel="noopener">
+<a class="vg-card" data-video-id="z-Xl9tGqH14" href="https://www.youtube.com/results?search_query=Blender+properties+panel+all+tabs+explained+beginner" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Properties Panel — All 16 Tabs Explained</div>

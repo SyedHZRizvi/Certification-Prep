@@ -39,7 +39,7 @@ title: "Module 8 Videos: Game VFX & Shaders"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Unreal+Engine+Niagara+tutorial+beginner+2023+particle+effects" data-video-id="">
+<a class="vg-card" data-video-id="oJ0DG3INCEk" href="https://www.youtube.com/results?search_query=Unreal+Engine+Niagara+tutorial+beginner+2023+particle+effects" data-video-id="">
   <div class="vg-card-thumb">🔵</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Unreal Engine Niagara — Complete Beginner Tutorial</div>
@@ -100,7 +100,7 @@ title: "Module 8 Videos: Game VFX & Shaders"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Unreal+Niagara+events+collision+burst+VFX+tutorial" data-video-id="">
+<a class="vg-card" data-video-id="NxKz7Pnww54" href="https://www.youtube.com/results?search_query=Unreal+Niagara+events+collision+burst+VFX+tutorial" data-video-id="">
   <div class="vg-card-thumb">💥</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Unreal Niagara Events — Collision-Triggered Burst VFX</div>

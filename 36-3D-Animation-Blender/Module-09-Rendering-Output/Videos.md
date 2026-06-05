@@ -55,7 +55,7 @@ title: "Module 9 Videos: Rendering & Output"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+output+format+PNG+EXR+MP4+sequence+rendering" target="_blank" rel="noopener">
+<a class="vg-card" data-video-id="WobATxh3i-g" href="https://www.youtube.com/results?search_query=Blender+output+format+PNG+EXR+MP4+sequence+rendering" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Output Formats — PNG Sequences vs. EXR vs. MP4</div>
@@ -64,7 +64,7 @@ title: "Module 9 Videos: Rendering & Output"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+sprite+fright+rendering+pipeline+cycles+production" target="_blank" rel="noopener">
+<a class="vg-card" data-video-id="WobATxh3i-g" href="https://www.youtube.com/results?search_query=Blender+sprite+fright+rendering+pipeline+cycles+production" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Sprite Fright Rendering Pipeline — Cycles Production Settings</div>
@@ -73,7 +73,7 @@ title: "Module 9 Videos: Rendering & Output"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+EEVEE+lighting+settings+optimization+animation" target="_blank" rel="noopener">
+<a class="vg-card" data-video-id="ENnEYoUpFfU" href="https://www.youtube.com/results?search_query=Blender+EEVEE+lighting+settings+optimization+animation" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender EEVEE Settings Optimization for Animation</div>

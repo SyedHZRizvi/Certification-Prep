@@ -10,7 +10,7 @@ title: "Module 3 Videos: Rotoscoping & Masking"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=Rotobrush+2+After+Effects+tutorial+rotoscoping">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Rotobrush+2+After+Effects+tutorial+rotoscoping">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Rotobrush 2.0 in After Effects: Complete Tutorial</div>
@@ -19,7 +19,7 @@ title: "Module 3 Videos: Rotoscoping & Masking"
   </div>
 </a>
 
-<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=manual+rotoscoping+mask+animation+After+Effects+spline">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=manual+rotoscoping+mask+animation+After+Effects+spline">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Manual Rotoscoping: Spline Mask Animation in After Effects</div>
@@ -37,7 +37,7 @@ title: "Module 3 Videos: Rotoscoping & Masking"
   </div>
 </a>
 
-<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=masking+color+isolation+After+Effects+selective+grading">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=masking+color+isolation+After+Effects+selective+grading">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Masking for Color Isolation in After Effects</div>
@@ -63,7 +63,7 @@ title: "Module 3 Videos: Rotoscoping & Masking"
   </div>
 </a>
 
-<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=roto+hair+fine+detail+refine+edge+After+Effects">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=roto+hair+fine+detail+refine+edge+After+Effects">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Rotoscoping Hair and Fine Detail with Refine Edge</div>
@@ -72,7 +72,7 @@ title: "Module 3 Videos: Rotoscoping & Masking"
   </div>
 </a>
 
-<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=track+matte+After+Effects+explained+luma+alpha">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=track+matte+After+Effects+explained+luma+alpha">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Track Mattes in After Effects: Alpha, Luma, and Inverted Explained</div>
@@ -98,7 +98,7 @@ title: "Module 3 Videos: Rotoscoping & Masking"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=variable+feather+mask+After+Effects+advanced+technique">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=variable+feather+mask+After+Effects+advanced+technique">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Variable Feather Masks in After Effects</div>

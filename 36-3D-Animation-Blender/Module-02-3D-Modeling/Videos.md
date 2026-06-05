@@ -11,7 +11,7 @@ title: "Module 2 Videos: 3D Modeling for Animation"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+low+poly+character+modeling+tutorial+beginner+topology" target="_blank" rel="noopener">
+<a class="vg-card" data-video-id="z-Xl9tGqH14" href="https://www.youtube.com/results?search_query=Blender+low+poly+character+modeling+tutorial+beginner+topology" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Low-Poly Character Modeling — Complete Tutorial</div>
@@ -55,7 +55,7 @@ title: "Module 2 Videos: 3D Modeling for Animation"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+proportional+editing+tutorial+organic+modeling" target="_blank" rel="noopener">
+<a class="vg-card" data-video-id="9OA2asQdi_U" href="https://www.youtube.com/results?search_query=Blender+proportional+editing+tutorial+organic+modeling" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Proportional Editing — Organic Modeling</div>

@@ -11,7 +11,7 @@ title: "Module 6 Videos: Weight Painting & Skinning"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+weight+painting+tutorial+character+complete+beginner" target="_blank" rel="noopener">
+<a class="vg-card" data-video-id="z-Xl9tGqH14" href="https://www.youtube.com/results?search_query=Blender+weight+painting+tutorial+character+complete+beginner" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Weight Painting — Complete Beginner Tutorial</div>

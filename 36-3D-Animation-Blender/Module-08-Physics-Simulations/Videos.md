@@ -11,7 +11,7 @@ title: "Module 8 Videos: Physics & Simulations"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+rigid+body+simulation+tutorial+beginner+physics" target="_blank" rel="noopener">
+<a class="vg-card" data-video-id="z-Xl9tGqH14" href="https://www.youtube.com/results?search_query=Blender+rigid+body+simulation+tutorial+beginner+physics" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Rigid Body Simulation — Beginner Tutorial</div>
@@ -20,7 +20,7 @@ title: "Module 8 Videos: Physics & Simulations"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+cloth+simulation+tutorial+cape+character+pinning" target="_blank" rel="noopener">
+<a class="vg-card" data-video-id="6VeVMtpEekg" href="https://www.youtube.com/results?search_query=Blender+cloth+simulation+tutorial+cape+character+pinning" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Cloth Simulation — Cape and Character Pinning</div>
@@ -29,7 +29,7 @@ title: "Module 8 Videos: Physics & Simulations"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+fluid+simulation+water+FLIP+solver+tutorial" target="_blank" rel="noopener">
+<a class="vg-card" data-video-id="6VeVMtpEekg" href="https://www.youtube.com/results?search_query=Blender+fluid+simulation+water+FLIP+solver+tutorial" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Fluid Simulation — Water with FLIP Solver</div>
@@ -55,7 +55,7 @@ title: "Module 8 Videos: Physics & Simulations"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+physics+cache+baking+render+simulation+production" target="_blank" rel="noopener">
+<a class="vg-card" data-video-id="6VeVMtpEekg" href="https://www.youtube.com/results?search_query=Blender+physics+cache+baking+render+simulation+production" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Physics Cache & Baking — Production Workflow</div>
@@ -64,7 +64,7 @@ title: "Module 8 Videos: Physics & Simulations"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+smoke+fire+simulation+quick+effects+tutorial" target="_blank" rel="noopener">
+<a class="vg-card" data-video-id="6VeVMtpEekg" href="https://www.youtube.com/results?search_query=Blender+smoke+fire+simulation+quick+effects+tutorial" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Smoke and Fire Simulation — Quick Effects</div>
@@ -99,7 +99,7 @@ title: "Module 8 Videos: Physics & Simulations"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+soft+body+simulation+jelly+blob+organic" target="_blank" rel="noopener">
+<a class="vg-card" data-video-id="6VeVMtpEekg" href="https://www.youtube.com/results?search_query=Blender+soft+body+simulation+jelly+blob+organic" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Soft Body Simulation — Jelly and Organic Effects</div>

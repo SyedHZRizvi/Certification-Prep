@@ -56,7 +56,7 @@ title: "Module 5 Videos: State Machines & Blend Trees"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Unreal+Engine+state+machine+transitions+interrupt+conditions" data-video-id="">
+<a class="vg-card" data-video-id="dpvAIeBv6Ck" href="https://www.youtube.com/results?search_query=Unreal+Engine+state+machine+transitions+interrupt+conditions" data-video-id="">
   <div class="vg-card-thumb">🔵</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Unreal Engine State Machine Transition Rules — Advanced</div>
@@ -109,7 +109,7 @@ title: "Module 5 Videos: State Machines & Blend Trees"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Unreal+Engine+inertialization+animation+blending+tutorial" data-video-id="">
+<a class="vg-card" data-video-id="oJ0DG3INCEk" href="https://www.youtube.com/results?search_query=Unreal+Engine+inertialization+animation+blending+tutorial" data-video-id="">
   <div class="vg-card-thumb">🌊</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Unreal Engine Inertialization — Better Animation Blending</div>
@@ -118,7 +118,7 @@ title: "Module 5 Videos: State Machines & Blend Trees"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=hierarchical+state+machine+sub+state+machine+Unity+Unreal" data-video-id="">
+<a class="vg-card" data-video-id="dpvAIeBv6Ck" href="https://www.youtube.com/results?search_query=hierarchical+state+machine+sub+state+machine+Unity+Unreal" data-video-id="">
   <div class="vg-card-thumb">🏗️</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Hierarchical State Machines — Sub-State Machines in Unity & Unreal</div>

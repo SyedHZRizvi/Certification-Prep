@@ -26,11 +26,24 @@ This course bridges that gap. By the end, you will have a showreel, a working Lo
 
 ### 💼 Career Outcomes After Completing
 
-- **Motion Designer** ($70K–$110K) — studios, agencies, in-house creative teams; AE is your daily tool
-- **Brand Animator** ($80K–$120K) — broadcast, streaming, sports graphics; package design
-- **UI Motion Lead** ($95K–$145K) — product design orgs at tech companies; Figma + GSAP + Lottie stack
-- **Creative Technologist** ($100K–$145K) — bridge between design and engineering; React + Framer Motion
+- **Motion Designer** ($70K–$145K) — studios, agencies, in-house creative teams; AE is your daily tool
+- **Brand Animator** ($65K–$120K) — broadcast, streaming, sports graphics; package design
+- **UI Motion Designer** ($75K–$160K) — product design orgs at tech companies; Figma + GSAP + Lottie stack
+- **Creative Director** ($120K–$200K) — leads motion strategy and team execution at studios or in-house
+- **Senior AE Artist** ($90K–$150K) — advanced AE expression and design systems work; often agency-side
 - **Freelance Motion Designer** ($50–$250/hr) — showreel-driven; Module 10 covers pricing and client work directly
+
+#### 📊 2026 Salary Ranges by Role
+
+| Role | Entry | Mid-Level | Senior | Top-of-Market |
+|------|-------|-----------|--------|---------------|
+| **Motion Designer** | $70K | $95K | $125K | $145K |
+| **Brand Animator** | $65K | $85K | $105K | $120K |
+| **UI Motion Designer** | $75K | $110K | $140K | $160K |
+| **Creative Director** | $120K | $150K | $175K | $200K |
+| **Senior AE Artist** | $90K | $115K | $135K | $150K |
+
+*Salary ranges reflect U.S. market data (2025–2026). Top-of-market figures represent major metro (NYC, SF, LA) or FAANG-adjacent in-house roles. Remote roles at product-led companies track 10–20% below top-of-market for most roles. Freelance day rates vary widely by specialization and client type — see Module 10 for benchmarks.*
 
 The rise of LLM-generated static content is, paradoxically, *increasing* demand for human motion designers. Brands need animated content to stand out. Video content consumption is at an all-time high. Motion is the last thing AI reliably can't do well at a professional level.
 

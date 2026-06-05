@@ -10,7 +10,7 @@ title: "Module 8 Videos: Practical Digital FX"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=set+extension+After+Effects+tutorial+digital+matte+painting+composite" data-video-id="pdfx-01">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=set+extension+After+Effects+tutorial+digital+matte+painting+composite">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Set Extensions in After Effects: Digital Matte Painting Composite</div>
@@ -19,7 +19,7 @@ title: "Module 8 Videos: Practical Digital FX"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=sky+replacement+After+Effects+tutorial+realistic+integration" data-video-id="pdfx-02">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=sky+replacement+After+Effects+tutorial+realistic+integration">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Realistic Sky Replacement in After Effects</div>
@@ -30,7 +30,7 @@ title: "Module 8 Videos: Practical Digital FX"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=wire+removal+VFX+After+Effects+Nuke+clean+plate+content+aware" data-video-id="pdfx-03">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=wire+removal+VFX+After+Effects+Nuke+clean+plate+content+aware">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Wire Removal: Clean Plate and Content-Aware Methods</div>
@@ -39,7 +39,7 @@ title: "Module 8 Videos: Practical Digital FX"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=VFX+artists+react+invisible+effects+gravity+1917+revenant" data-video-id="pdfx-04">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=VFX+artists+react+invisible+effects+gravity+1917+revenant">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">VFX Artists React: Invisible Effects in Gravity, 1917, and The Revenant</div>
@@ -56,7 +56,7 @@ title: "Module 8 Videos: Practical Digital FX"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Gareth+Edwards+practical+VFX+monsters+filmmaking+approach" data-video-id="pdfx-05">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Gareth+Edwards+practical+VFX+monsters+filmmaking+approach">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Gareth Edwards: Practical VFX Philosophy and Monsters Making-Of</div>
@@ -65,7 +65,7 @@ title: "Module 8 Videos: Practical Digital FX"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=beauty+cleanup+VFX+After+Effects+Nuke+digital+retouching" data-video-id="pdfx-06">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=beauty+cleanup+VFX+After+Effects+Nuke+digital+retouching">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Beauty and Cleanup Work in VFX: Digital Retouching Techniques</div>
@@ -74,7 +74,7 @@ title: "Module 8 Videos: Practical Digital FX"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=digital+crowd+extension+VFX+compositing+Mad+Max+Fury+Road" data-video-id="pdfx-07">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=digital+crowd+extension+VFX+compositing+Mad+Max+Fury+Road">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Digital Crowd Extensions: How VFX Studios Populate Scenes</div>
@@ -83,7 +83,7 @@ title: "Module 8 Videos: Practical Digital FX"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=atmospheric+haze+depth+fog+VFX+compositing+set+extension+integration" data-video-id="pdfx-08">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=atmospheric+haze+depth+fog+VFX+compositing+set+extension+integration">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Atmospheric Depth: Haze and Fog Integration in Compositing</div>
@@ -100,7 +100,7 @@ title: "Module 8 Videos: Practical Digital FX"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=how+Gravity+VFX+Framestore+making+of+Alfonso+Cuaron" data-video-id="pdfx-09">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=how+Gravity+VFX+Framestore+making+of+Alfonso+Cuaron">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Making of Gravity: Framestore's Complete VFX Breakdown</div>
@@ -109,7 +109,7 @@ title: "Module 8 Videos: Practical Digital FX"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=1917+invisible+VFX+single+take+digital+stitching+DNEG" data-video-id="pdfx-10">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=1917+invisible+VFX+single+take+digital+stitching+DNEG">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">1917: The Invisible VFX — How DNEG Stitched a "Single-Take" Film</div>

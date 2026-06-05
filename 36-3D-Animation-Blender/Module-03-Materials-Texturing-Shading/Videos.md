@@ -20,7 +20,7 @@ title: "Module 3 Videos: Materials, Texturing & Shading"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+UV+unwrapping+tutorial+character+beginner+seams" target="_blank" rel="noopener">
+<a class="vg-card" data-video-id="z-Xl9tGqH14" href="https://www.youtube.com/results?search_query=Blender+UV+unwrapping+tutorial+character+beginner+seams" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender UV Unwrapping for Characters — Seam Placement</div>
@@ -108,7 +108,7 @@ title: "Module 3 Videos: Materials, Texturing & Shading"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+procedural+textures+node+materials+no+UV" target="_blank" rel="noopener">
+<a class="vg-card" data-video-id="5Xlu2zwbJd0" href="https://www.youtube.com/results?search_query=Blender+procedural+textures+node+materials+no+UV" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Procedural Textures — Node-Based Materials Without UVs</div>

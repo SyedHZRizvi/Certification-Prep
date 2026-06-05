@@ -233,6 +233,68 @@ A villain can have appeal. Scar in *The Lion King* has enormous appeal — his i
 
 ---
 
+## 🎭 The Principles in Practice: A Production Matrix
+
+How different studios apply the 12 Principles reveals their aesthetic priorities. This comparison table is a study tool for understanding why films *feel* the way they feel.
+
+| Studio / Production | Squash & Stretch | Exaggeration | Timing Style | Dominant Principles |
+|---------------------|-----------------|--------------|-------------|---------------------|
+| **Pixar (The Incredibles)** | Moderate on humans, high on cartoon characters | Story-driven; pushed for emotion | Precise, synced to performance | Anticipation, staging, secondary action |
+| **Disney (Bambi, 1942)** | Naturalistic | Subtle — naturalism is the goal | Slow, deliberate, weight-heavy | Follow-through, slow-in/slow-out, arcs |
+| **Sony (Spider-Verse, 2018)** | Extreme on Miles; minimal on Gwen | Maximum — every frame is a graphic choice | Mixed (12fps/24fps per character) | Exaggeration, timing, solid drawing |
+| **Studio Ghibli (Spirited Away)** | Minimal — Miyazaki avoids it for realism | Subtle weight; not cartoon excess | Contemplative; holds are very long | Staging, secondary action, timing |
+| **DreamWorks (Kung Fu Panda)** | Exaggerated for comedy | High, especially in action | Fast action, slow emotion | Exaggeration, anticipation, appeal |
+| **Netflix (Arcane, 2021)** | Very low — near-realistic | Almost none — cinematic realism | Film-like; dramatic holds | Staging, solid drawing, appeal |
+| **Cartoon Saloon (Wolfwalkers)** | Moderate | Stylized but not cartoony | Fluid, music-driven | Arcs, follow-through, appeal |
+
+🎯 **What the exam tests:** You may be given a description of an animation style and asked to identify which principles are most emphasized. Arcane-style realism emphasizes staging, solid drawing, and appeal while minimizing squash/stretch and exaggeration. Spider-Verse maximizes exaggeration and uses timing as a character differentiator.
+
+---
+
+## ⚠️ Common Traps: The 12 Principles Exam Pitfalls
+
+These are the misconceptions that appear most often in assessments at the certificate and portfolio review level.
+
+| Common Mistake | The Correct Understanding |
+|----------------|--------------------------|
+| "Squash and stretch means making characters rubbery" | It means deforming volume under force while maintaining mass — can be subtle |
+| "Anticipation just means winding up before action" | Anticipation is any preparation signal — even a flicker of the eyes counts |
+| "Solid drawing only applies to 2D" | In 3D animation, solid drawing means posing that reads three-dimensionally, not flat to camera |
+| "Slow-in/slow-out is always the right choice" | Mechanical characters (robots, machines) should use linear timing — no ease-in/out |
+| "Appeal means cuteness" | Appeal is engagement — a terrifying villain has enormous appeal if designed and performed with clarity |
+| "Straight-ahead is better for emotional scenes" | Pose-to-pose is better for dialogue because it allows precise control of timing; straight-ahead is better for effects and action |
+| "Arcs only apply to character limbs" | Arcs apply to camera moves, thrown objects, the path of an entire character's center of mass |
+
+---
+
+## 🔬 Cuphead (2017): The Principles Pushed to Their Limit
+
+Studio MDHR's *Cuphead* is not a film but a game that represents one of the most principled applications of classical animation in the 21st century. The development team at Studio MDHR hand-drew every frame of animation in the style of 1930s Fleischer-era cartoons, then rebuilt the 12 Principles from scratch under those constraints.
+
+What makes *Cuphead* a useful study case:
+- **Every frame is a distinct drawing** — the game runs entirely on 1s, not 2s, meaning the animation is as fluid as theatrical film
+- **Squash and stretch is extreme** — the rubber-hose limb style of the 1930s allows body-wide squash and stretch that would be rejected in a naturalistic production
+- **Anticipation is often comically exaggerated** — characters wind up for three times longer than physics would require, then hit in a single frame, producing the characteristic "cartoon snap" of the era
+- **Secondary action is continuous** — the cup head itself wobbles, the straw bounces, liquid sloshes during every action
+- **Appeal is the dominant principle** — the entire aesthetic is constructed around making characters that are impossible not to look at, even (especially) the menacing bosses
+
+The production team at Studio MDHR studied the films of Max Fleischer, Ub Iwerks, and Walt Disney's earliest shorts exhaustively. The result is a game that functions as a living archive of the 12 Principles as they were originally understood — before digital animation's precision changed the dominant aesthetic.
+
+🎯 **What the exam tests:** Cuphead is frequently used to illustrate the Fleischer-era application of squash/stretch and the rubber-hose aesthetic. Know that this style precedes the 12 Principles' codification — the Fleischer animators were intuiting what Thomas and Johnston would later name.
+
+---
+
+## 💬 Socratic Questions for Discussion
+
+These questions have no single correct answer — they are the questions that working animators and animation scholars continue to debate:
+
+1. The 12 Principles were developed for 2D hand-drawn animation at 24fps on film. Which principles become *harder* to apply in 3D digital animation, and which become *easier*? Why?
+2. Studio Ghibli films often use long holds with no secondary action — Miyazaki sometimes uses complete stillness for dramatic effect. Does this "violate" the principle of secondary action, or does stillness function as its own type of performance?
+3. *Into the Spider-Verse* gives Miles Morales different animation timing from other Spider-People as a character choice. Could the same technique — using frame rate as a character differentiator — be used to distinguish emotional states within a single character?
+4. The principle of "appeal" was defined for 1981's audience. How has the definition of "appeal" changed as animation audiences have diversified globally? Does appeal look different for Studio Ghibli's Japanese audience than for a Pixar global release?
+
+---
+
 ## ✅ Module 1 Summary
 
 You now know:
@@ -268,3 +330,10 @@ You now know:
 **Online:**
 - 🌐 [Alan Becker's "12 Principles of Animation" YouTube series](https://www.youtube.com/results?search_query=Alan+Becker+12+principles+animation) — the most-watched explanation of the principles on the internet
 - 🌐 [Aaron Blaise YouTube Channel](https://www.youtube.com/results?search_query=Aaron+Blaise+animation+principles) — Disney animator demonstrating the principles with professional-grade examples
+
+**Advanced / Supplementary:**
+- 📘 Whitaker, H. & Halas, J. (2009). *Timing for Animation, 2nd ed.* Focal Press. — Deep dive on timing, spacing, and rhythm across a range of animation styles.
+- 📘 Kerlow, I. (2003). *The Art of 3D Computer Animation and Effects, 3rd ed.* Wiley. — How the 12 Principles translate into the 3D software environment.
+- 🎬 *Fantasia* (1940) — one of the richest sources of all 12 Principles, particularly arcs, follow-through, and timing to music.
+- 🎬 *Cuphead* (2017, Studio MDHR) — the most comprehensive application of Fleischer-era principles in the 21st century; study the boss animations specifically.
+- 🎬 *Arcane* (Netflix, 2021) — the opposite extreme from Cuphead; near-zero squash/stretch and exaggeration deployed with maximum staging and appeal. Compare with *Cuphead* to understand the full range of the principles in contemporary production.

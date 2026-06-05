@@ -12,7 +12,7 @@ title: "Module 3 Videos: Unreal Animation Blueprint"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Unreal+Engine+Animation+Blueprint+tutorial+beginner+locomotion" data-video-id="">
+<a class="vg-card" data-video-id="oJ0DG3INCEk" href="https://www.youtube.com/results?search_query=Unreal+Engine+Animation+Blueprint+tutorial+beginner+locomotion" data-video-id="">
   <div class="vg-card-thumb">🔵</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Unreal Engine Animation Blueprint — Complete Beginner Tutorial</div>
@@ -21,7 +21,7 @@ title: "Module 3 Videos: Unreal Animation Blueprint"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Unreal+Engine+Blend+Space+locomotion+1D+2D+setup+tutorial" data-video-id="">
+<a class="vg-card" data-video-id="oJ0DG3INCEk" href="https://www.youtube.com/results?search_query=Unreal+Engine+Blend+Space+locomotion+1D+2D+setup+tutorial" data-video-id="">
   <div class="vg-card-thumb">🗺️</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Unreal Engine Blend Spaces — 1D and 2D Locomotion</div>
@@ -39,7 +39,7 @@ title: "Module 3 Videos: Unreal Animation Blueprint"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Unreal+Engine+Control+Rig+tutorial+beginner+2023+2024" data-video-id="">
+<a class="vg-card" data-video-id="oJ0DG3INCEk" href="https://www.youtube.com/results?search_query=Unreal+Engine+Control+Rig+tutorial+beginner+2023+2024" data-video-id="">
   <div class="vg-card-thumb">🔧</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Unreal Engine Control Rig — Beginner Tutorial</div>
@@ -56,7 +56,7 @@ title: "Module 3 Videos: Unreal Animation Blueprint"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Unreal+Engine+animation+montage+attack+tutorial" data-video-id="">
+<a class="vg-card" data-video-id="oJ0DG3INCEk" href="https://www.youtube.com/results?search_query=Unreal+Engine+animation+montage+attack+tutorial" data-video-id="">
   <div class="vg-card-thumb">⚔️</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Unreal Engine Animation Montages — Attack & One-Shot Actions</div>
@@ -65,7 +65,7 @@ title: "Module 3 Videos: Unreal Animation Blueprint"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Unreal+Engine+Sequencer+tutorial+cinematic+animation" data-video-id="">
+<a class="vg-card" data-video-id="oJ0DG3INCEk" href="https://www.youtube.com/results?search_query=Unreal+Engine+Sequencer+tutorial+cinematic+animation" data-video-id="">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Unreal Engine Sequencer — Cinematic Animation Tutorial</div>
@@ -74,7 +74,7 @@ title: "Module 3 Videos: Unreal Animation Blueprint"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Unreal+Fest+Fortnite+animation+locomotion+2022+2023" data-video-id="">
+<a class="vg-card" data-video-id="6OsEei-gG3w" href="https://www.youtube.com/results?search_query=Unreal+Fest+Fortnite+animation+locomotion+2022+2023" data-video-id="">
   <div class="vg-card-thumb">🎮</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Unreal Fest: Fortnite Animation Architecture</div>
@@ -83,7 +83,7 @@ title: "Module 3 Videos: Unreal Animation Blueprint"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Unreal+Engine+MetaHuman+animation+tutorial+2024" data-video-id="">
+<a class="vg-card" data-video-id="oJ0DG3INCEk" href="https://www.youtube.com/results?search_query=Unreal+Engine+MetaHuman+animation+tutorial+2024" data-video-id="">
   <div class="vg-card-thumb">👤</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Unreal Engine MetaHuman — Animation & Sequencer Integration</div>
@@ -109,7 +109,7 @@ title: "Module 3 Videos: Unreal Animation Blueprint"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Unreal+Engine+full+body+IK+solver+UE5+tutorial" data-video-id="">
+<a class="vg-card" data-video-id="aq8SfHcclbU" href="https://www.youtube.com/results?search_query=Unreal+Engine+full+body+IK+solver+UE5+tutorial" data-video-id="">
   <div class="vg-card-thumb">🦾</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Unreal Engine 5 Full Body IK Solver — Setup & Tutorial</div>
@@ -118,7 +118,7 @@ title: "Module 3 Videos: Unreal Animation Blueprint"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Unreal+Engine+animation+optimization+performance+tips+2023" data-video-id="">
+<a class="vg-card" data-video-id="oJ0DG3INCEk" href="https://www.youtube.com/results?search_query=Unreal+Engine+animation+optimization+performance+tips+2023" data-video-id="">
   <div class="vg-card-thumb">⚡</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Unreal Engine Animation Performance Optimization</div>

@@ -81,7 +81,7 @@ title: "Module 2 Videos: Green Screen Keying"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=VFX+artists+react+bad+good+greenscreen+compositing+Corridor+Crew">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=VFX+artists+react+bad+good+greenscreen+compositing+Corridor+Crew" data-video-id="l6tDUPSoEQo">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">VFX Artists React: Bad and Good Green Screen Compositing</div>
@@ -107,7 +107,7 @@ title: "Module 2 Videos: Green Screen Keying"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=how+to+shoot+greenscreen+properly+on+set+lighting+setup">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=how+to+shoot+greenscreen+properly+on+set+lighting+setup" data-video-id="TFj4P3GS-EQ">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">How to Shoot Greenscreen Properly: Lighting and Setup</div>

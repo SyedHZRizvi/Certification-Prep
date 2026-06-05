@@ -10,7 +10,7 @@ title: "Module 9 Videos: Destruction & Action FX"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=explosion+VFX+After+Effects+layers+tutorial+fireball+smoke" data-video-id="dest-01">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=explosion+VFX+After+Effects+layers+tutorial+fireball+smoke" data-video-id="wvFOKMVlGFg">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Explosion VFX in After Effects: Layered Fireball, Smoke, and Debris</div>
@@ -19,7 +19,7 @@ title: "Module 9 Videos: Destruction & Action FX"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=muzzle+flash+VFX+After+Effects+tutorial+gun+effect" data-video-id="dest-02">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=muzzle+flash+VFX+After+Effects+tutorial+gun+effect">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Muzzle Flash VFX in After Effects: Professional Tutorial</div>
@@ -28,7 +28,7 @@ title: "Module 9 Videos: Destruction & Action FX"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=lens+flare+After+Effects+optical+flares+video+copilot+tutorial" data-video-id="dest-03">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=lens+flare+After+Effects+optical+flares+video+copilot+tutorial" data-video-id="5l2DWxbL-h8">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Lens Flares in After Effects: Optical Flares Tutorial</div>
@@ -37,7 +37,7 @@ title: "Module 9 Videos: Destruction & Action FX"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+destruction+simulation+rigid+body+fracture+VFX" data-video-id="dest-04">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+destruction+simulation+rigid+body+fracture+VFX">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Destruction Simulation: Rigid Body and Cell Fracture</div>
@@ -54,7 +54,7 @@ title: "Module 9 Videos: Destruction & Action FX"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=chromatic+aberration+After+Effects+tutorial+lens+distortion" data-video-id="dest-05">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=chromatic+aberration+After+Effects+tutorial+lens+distortion">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Chromatic Aberration in After Effects: Simulating Real Lens Distortion</div>
@@ -63,7 +63,7 @@ title: "Module 9 Videos: Destruction & Action FX"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=film+grain+overlay+After+Effects+organic+noise+tutorial" data-video-id="dest-06">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=film+grain+overlay+After+Effects+organic+noise+tutorial">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Film Grain in After Effects: Organic Noise for Compositing</div>
@@ -72,7 +72,7 @@ title: "Module 9 Videos: Destruction & Action FX"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=interactive+light+explosion+After+Effects+VFX+face+illumination" data-video-id="dest-07">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=interactive+light+explosion+After+Effects+VFX+face+illumination">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Interactive Light: Explosion Illuminating Actors in After Effects</div>
@@ -81,7 +81,7 @@ title: "Module 9 Videos: Destruction & Action FX"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Corridor+Crew+explosion+VFX+artists+react+action+movies" data-video-id="dest-08">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Corridor+Crew+explosion+VFX+artists+react+action+movies">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">VFX Artists React: Explosions in Action Movies</div>
@@ -98,7 +98,7 @@ title: "Module 9 Videos: Destruction & Action FX"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+render+EXR+passes+compositing+After+Effects+Nuke" data-video-id="dest-09">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+render+EXR+passes+compositing+After+Effects+Nuke">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender to After Effects: EXR Pass Compositing Workflow</div>
@@ -107,7 +107,7 @@ title: "Module 9 Videos: Destruction & Action FX"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=shockwave+ring+explosion+VFX+After+Effects+distortion" data-video-id="dest-10">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=shockwave+ring+explosion+VFX+After+Effects+distortion">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Explosion Shockwave Ring Effect in After Effects</div>

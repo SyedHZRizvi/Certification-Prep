@@ -70,7 +70,7 @@
       <span class="vg-duration">⏱ 12 min · 3-2-1 backup rule explained</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+animation+beginner+tutorial+2024+overview" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="z-Xl9tGqH14" href="https://www.youtube.com/results?search_query=Blender+animation+beginner+tutorial+2024+overview" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>💻</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>

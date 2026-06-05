@@ -10,7 +10,7 @@ title: "Module 6 Videos: Nuke Fundamentals"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Nuke+beginners+tutorial+node+graph+compositing+Foundry" data-video-id="nuke-01">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Nuke+beginners+tutorial+node+graph+compositing+Foundry">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Nuke for Beginners: The Node Graph Paradigm Explained</div>
@@ -19,7 +19,7 @@ title: "Module 6 Videos: Nuke Fundamentals"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Nuke+vs+After+Effects+node+based+layer+based+compositing+comparison" data-video-id="nuke-02">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Nuke+vs+After+Effects+node+based+layer+based+compositing+comparison">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Nuke vs After Effects: Node-Based vs Layer-Based Compositing</div>
@@ -28,7 +28,7 @@ title: "Module 6 Videos: Nuke Fundamentals"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Nuke+core+nodes+tutorial+Merge+Grade+Keyer+ColorCorrect" data-video-id="nuke-03">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Nuke+core+nodes+tutorial+Merge+Grade+Keyer+ColorCorrect">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Nuke Core Nodes: Merge, Grade, Keyer, and ColorCorrect</div>
@@ -37,7 +37,7 @@ title: "Module 6 Videos: Nuke Fundamentals"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Nuke+multi-channel+EXR+Shuffle+node+AOV+passes+tutorial" data-video-id="nuke-04">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Nuke+multi-channel+EXR+Shuffle+node+AOV+passes+tutorial">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Reading Multi-Channel EXR in Nuke: Shuffle Node and AOV Passes</div>
@@ -54,7 +54,7 @@ title: "Module 6 Videos: Nuke Fundamentals"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Nuke+viewer+workflow+tips+RGBA+channels+wipe+compare" data-video-id="nuke-05">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Nuke+viewer+workflow+tips+RGBA+channels+wipe+compare">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Nuke Viewer Workflow: RGBA Channels, Wipe, and Gain</div>
@@ -63,7 +63,7 @@ title: "Module 6 Videos: Nuke Fundamentals"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Nuke+script+organization+backdrops+groups+production+workflow" data-video-id="nuke-06">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Nuke+script+organization+backdrops+groups+production+workflow">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Organizing a Nuke Script: Backdrops, Groups, and Production Standards</div>
@@ -72,7 +72,7 @@ title: "Module 6 Videos: Nuke Fundamentals"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Nuke+keying+tutorial+Keyer+node+greenscreen+despill" data-video-id="nuke-07">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Nuke+keying+tutorial+Keyer+node+greenscreen+despill">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Keying in Nuke: Keyer Node, Primatte, and Despill</div>
@@ -81,7 +81,7 @@ title: "Module 6 Videos: Nuke Fundamentals"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Nuke+non-commercial+free+download+install+tutorial+beginners" data-video-id="nuke-08">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Nuke+non-commercial+free+download+install+tutorial+beginners">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Nuke Non-Commercial: Download, Install, and First Steps</div>
@@ -98,7 +98,7 @@ title: "Module 6 Videos: Nuke Fundamentals"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Nuke+Python+scripting+automation+pipeline+VFX" data-video-id="nuke-09">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Nuke+Python+scripting+automation+pipeline+VFX">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Nuke Python Scripting: Automation for VFX Pipelines</div>
@@ -107,7 +107,7 @@ title: "Module 6 Videos: Nuke Fundamentals"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=deep+compositing+Nuke+DeepMerge+volumetrics+explained" data-video-id="nuke-10">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=deep+compositing+Nuke+DeepMerge+volumetrics+explained">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Deep Compositing in Nuke: DeepMerge and Volumetric Renders</div>

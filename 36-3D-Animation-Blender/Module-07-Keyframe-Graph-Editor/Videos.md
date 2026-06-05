@@ -11,7 +11,7 @@ title: "Module 7 Videos: Keyframe Animation & Graph Editor"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+animation+tutorial+keyframes+dope+sheet+beginner" target="_blank" rel="noopener">
+<a class="vg-card" data-video-id="z-Xl9tGqH14" href="https://www.youtube.com/results?search_query=Blender+animation+tutorial+keyframes+dope+sheet+beginner" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Animation — Keyframes and Dope Sheet Tutorial</div>

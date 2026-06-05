@@ -6,7 +6,7 @@
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Massive+software+crowd+simulation+WETA+Lord+of+the+Rings">
+<a class="vg-card" data-video-id="ZP6Bh3iWklQ" href="https://www.youtube.com/results?search_query=Massive+software+crowd+simulation+WETA+Lord+of+the+Rings">
   <div class="vg-card-title">Massive — WETA Digital Crowd Simulation Software</div>
   <div class="vg-card-meta">WETA Digital / VFX Education · ~30 min</div>
   <div class="vg-card-desc">Overview of Massive's agent architecture, fuzzy logic brain, and motion library system. Includes the LOTR Pelennor Fields case study — 200,000 agents and the emergent routing behavior.</div>
@@ -18,7 +18,7 @@
   <div class="vg-card-desc">End-to-end Houdini CROWDS workflow: setting up agents, clip transition graphs, terrain following, and instancing for render performance. The practical alternative to Massive for pipeline-integrated production.</div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Lord+of+the+Rings+VFX+crowd+simulation+Pelennor+Fields+breakdown">
+<a class="vg-card" data-video-id="ZP6Bh3iWklQ" href="https://www.youtube.com/results?search_query=Lord+of+the+Rings+VFX+crowd+simulation+Pelennor+Fields+breakdown">
   <div class="vg-card-title">Lord of the Rings — Pelennor Fields VFX Breakdown</div>
   <div class="vg-card-meta">WETA Digital / VFX Analysis · ~25 min</div>
   <div class="vg-card-desc">Technical breakdown of the largest crowd simulation in film history (200,000 agents). Covers the behavioral layer structure, the emergent orc routing story, and how editorial drove simulation parameters.</div>
