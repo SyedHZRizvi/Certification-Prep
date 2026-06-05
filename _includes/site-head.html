@@ -509,6 +509,11 @@
     /* ====== Rainbow hero headline: every word gets its own vivid gradient ====== */
     .hero-rainbow .rb {
       display: inline-block;
+      /* padding-bottom extends the box below the baseline so descenders
+         (g, y, p, q) fall inside the span's paint area — without this,
+         -webkit-background-clip:text clips gradient at the baseline and
+         the bottom of letters like "g" in "Big" disappears. */
+      padding-bottom: 0.18em;
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
