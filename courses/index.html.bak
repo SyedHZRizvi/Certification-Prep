@@ -48,24 +48,22 @@ title: Courses — The Cert Hub
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-[1100px] mx-auto">
 
       <!-- Scrum Master card -->
-      <a href="{{ '/01-Scrum-Master/' | relative_url }}" class="cert-card group relative block rounded-2xl border border-slate-200 bg-gradient-to-br from-blue-600 to-violet-700 text-white p-8 md:p-10 text-center">
-        <span class="cert-code-badge">PSM I · Scrum.org</span>
+      <a href="{{ '/01-Scrum-Master/' | relative_url }}" class="cert-card group block rounded-2xl border border-slate-200 bg-gradient-to-br from-blue-600 to-violet-700 text-white p-8 md:p-10 text-center">
         <span class="shine-overlay"></span>
         <span class="cert-card-icon block text-7xl md:text-8xl mb-5 drop-shadow-2xl">🏃</span>
         <h3 class="display text-3xl md:text-4xl font-extrabold mb-2">Scrum Master</h3>
-        <p class="text-blue-100 text-base md:text-lg mb-6">8 modules · ~30 hours · Professional Scrum Master I</p>
+        <p class="text-blue-100 text-base md:text-lg mb-6">8 modules · ~30 hours</p>
         <span class="cert-card-cta inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/15 ring-1 ring-white/30 backdrop-blur-sm text-sm md:text-base font-semibold">
           Open course <span aria-hidden="true">→</span>
         </span>
       </a>
 
       <!-- PMP card -->
-      <a href="{{ '/02-PMP/' | relative_url }}" class="cert-card group relative block rounded-2xl border border-slate-200 bg-gradient-to-br from-orange-500 to-red-600 text-white p-8 md:p-10 text-center">
-        <span class="cert-code-badge">PMP · PMI</span>
+      <a href="{{ '/02-PMP/' | relative_url }}" class="cert-card group block rounded-2xl border border-slate-200 bg-gradient-to-br from-orange-500 to-red-600 text-white p-8 md:p-10 text-center">
         <span class="shine-overlay"></span>
         <span class="cert-card-icon block text-7xl md:text-8xl mb-5 drop-shadow-2xl">🧭</span>
         <h3 class="display text-3xl md:text-4xl font-extrabold mb-2">PMP</h3>
-        <p class="text-orange-100 text-base md:text-lg mb-6">10 modules · ~115 hours · Project Management Professional</p>
+        <p class="text-orange-100 text-base md:text-lg mb-6">10 modules · ~115 hours · PMP</p>
         <span class="cert-card-cta inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/15 ring-1 ring-white/30 backdrop-blur-sm text-sm md:text-base font-semibold">
           Open course <span aria-hidden="true">→</span>
         </span>
@@ -279,7 +277,7 @@ title: Courses — The Cert Hub
           </a>
 
           <a href="{{ '/29-Prompt-Engineering-Specialist/' | relative_url }}" class="cert-card cert-card-mini group relative block rounded-2xl border border-slate-200 bg-gradient-to-br from-fuchsia-600 to-pink-800 text-white p-7 text-center">
-            <span class="cert-code-badge">Certificate of Completion</span>
+            <span class="cert-code-badge">Cert Hub Original</span>
             <span class="shine-overlay"></span>
             <span class="cert-card-icon block text-6xl mb-4 drop-shadow-2xl">✍️</span>
             <h3 class="display text-2xl md:text-3xl font-extrabold mb-2">Prompt Engineering Specialist</h3>
@@ -307,7 +305,7 @@ title: Courses — The Cert Hub
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[1500px] mx-auto">
 
           <a href="{{ '/28-Claude-Architect/' | relative_url }}" class="cert-card group relative block rounded-2xl border border-slate-200 bg-gradient-to-br from-indigo-600 to-violet-900 text-white p-8 md:p-10 text-center">
-            <span class="cert-code-badge">Certificate of Completion</span>
+            <span class="cert-code-badge">Cert Hub Original</span>
             <span class="shine-overlay"></span>
             <span class="cert-card-icon block text-7xl md:text-8xl mb-5 drop-shadow-2xl">🧬</span>
             <h3 class="display text-3xl md:text-4xl font-extrabold mb-2">Claude Architect</h3>
@@ -318,7 +316,7 @@ title: Courses — The Cert Hub
           </a>
 
           <a href="{{ '/30-Generative-AI-Engineer/' | relative_url }}" class="cert-card group relative block rounded-2xl border border-slate-200 bg-gradient-to-br from-yellow-500 to-orange-700 text-white p-8 md:p-10 text-center">
-            <span class="cert-code-badge">Certificate of Completion</span>
+            <span class="cert-code-badge">Cert Hub Original</span>
             <span class="shine-overlay"></span>
             <span class="cert-card-icon block text-7xl md:text-8xl mb-5 drop-shadow-2xl">⚡</span>
             <h3 class="display text-3xl md:text-4xl font-extrabold mb-2">Generative AI Engineer</h3>
@@ -495,7 +493,7 @@ title: Courses — The Cert Hub
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[1500px] mx-auto mb-10">
 
           <a href="{{ '/33-Animation-Foundations/' | relative_url }}" class="cert-card group relative block rounded-2xl border border-slate-200 bg-gradient-to-br from-violet-600 to-purple-900 text-white p-8 md:p-10 text-center">
-            <span class="cert-code-badge">Certificate of Completion</span>
+            <span class="cert-code-badge">Cert Hub Original</span>
             <span class="shine-overlay"></span>
             <span class="cert-card-icon block text-7xl md:text-8xl mb-5 drop-shadow-2xl">🎬</span>
             <h3 class="display text-3xl md:text-4xl font-extrabold mb-2">Animation Foundations</h3>
