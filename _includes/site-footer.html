@@ -22,7 +22,7 @@
         <p class="text-base font-extrabold text-slate-900 mb-4 tracking-wide">Courses &amp; Tracks</p>
         <ul class="text-base space-y-2 text-slate-600">
           {% for t in site.data.navigation.tracks %}
-          <li><a href="{{ t.base | relative_url }}" class="hover:text-indigo-600 transition">{{ t.icon }} {{ t.title }}</a></li>
+          <li><a href="{{ t.base | relative_url }}" class="hover:text-indigo-600 transition"><span style="display:inline-block;width:1.4em;text-align:center;vertical-align:middle;line-height:1">{{ t.icon }}</span> {{ t.title }}</a></li>
           {% endfor %}
         </ul>
       </div>
