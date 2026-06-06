@@ -22,10 +22,10 @@
 
 Each module has the same 4-file pattern as your existing courses:
 
-- `Reading.md` — story-driven lesson (250–550 lines)
-- `Videos.md` — curated YouTube **search-URL** cards (8–10 per module)
-- `Quiz.md` — ≥24 questions in the engine's `### Qn.` format with answers + explanations
-- `Cheat-Sheet.md` — printable 1–2-page summary
+- `Reading.md`, story-driven lesson (250–550 lines)
+- `Videos.md`, curated YouTube **search-URL** cards (8–10 per module)
+- `Quiz.md`, ≥24 questions in the engine's `### Qn.` format with answers + explanations
+- `Cheat-Sheet.md`, printable 1–2-page summary
 
 Plus per course: `README.md`, `Flashcards.md` (60–150 cards using your existing widget), `Practice-Exams/Practice-Exam-1.md`, `Practice-Exam-2.md`, `Final-Mock-Exam.md`.
 
@@ -50,7 +50,7 @@ Plus per course: `README.md`, `Flashcards.md` (60–150 cards using your existin
 | Every course has 3 practice exams + Flashcards | ✅ |
 | Internal `.md` link integrity | ✅ 0 broken |
 | YouTube URLs are search-only (no rot) | ✅ 578 search URLs, 0 direct |
-| Answer-position bias in practice exams | ✅ Fixed — distributions now ~25% each across A/B/C/D |
+| Answer-position bias in practice exams | ✅ Fixed, distributions now ~25% each across A/B/C/D |
 | Mock exam Q-count + time-limit matches real cert | ✅ |
 | All practice exams have an answer key block | ✅ |
 
@@ -58,7 +58,7 @@ Plus per course: `README.md`, `Flashcards.md` (60–150 cards using your existin
 
 ## How to preview locally
 
-You need Ruby ≥ 2.7 + Bundler. System Ruby on macOS is 2.6 — not new enough. One-time setup:
+You need Ruby ≥ 2.7 + Bundler. System Ruby on macOS is 2.6, not new enough. One-time setup:
 
 ```bash
 brew install ruby
@@ -78,7 +78,7 @@ Opens at **http://127.0.0.1:4000/Certification-Prep/**
 
 Test plan:
 
-1. Visit the homepage — confirm the 7 new course cards appear under the existing Scrum/PMP.
+1. Visit the homepage, confirm the 7 new course cards appear under the existing Scrum/PMP.
 2. Click into each course → walk through a module's Reading/Videos/Quiz/Cheat-Sheet.
 3. Take Module 1 Quiz on each course (confirm engine picks it up, options randomize on Try Again).
 4. Open Final-Mock-Exam.md on at least 2 courses, confirm Q-count matches the table above.
@@ -103,7 +103,7 @@ git push -u origin main
 #    Wait ~2 min, then visit https://syedhzrizvi.github.io/Certification-Prep-Preview/
 ```
 
-The baseurl in `_config.yml` is `/Certification-Prep`. For the preview repo it would need to be `/Certification-Prep-Preview` — change that line before pushing, or live URLs will 404. (Local preview is fine because Jekyll uses whatever baseurl is set.)
+The baseurl in `_config.yml` is `/Certification-Prep`. For the preview repo it would need to be `/Certification-Prep-Preview`, change that line before pushing, or live URLs will 404. (Local preview is fine because Jekyll uses whatever baseurl is set.)
 
 ---
 
@@ -123,7 +123,7 @@ When you're satisfied, the path to production is a single targeted PR:
    git push origin add-cloud-ai-security-tracks
    ```
 2. Open a PR on GitHub for final review.
-3. Merge — production site updates automatically via GitHub Pages.
+3. Merge, production site updates automatically via GitHub Pages.
 
 Or I can do this for you once you give the green light (you'd just need to set up auth so I can push).
 
@@ -131,9 +131,9 @@ Or I can do this for you once you give the green light (you'd just need to set u
 
 ## Known limitations / decisions to revisit
 
-1. **Videos are YouTube search URLs, not direct video URLs.** This matches your existing pattern and is durable against dead-link rot — but it means students see a search-results page, not a single specific video. Quality is high because each query is curated (channel + topic), so the top result is consistently the right video.
+1. **Videos are YouTube search URLs, not direct video URLs.** This matches your existing pattern and is durable against dead-link rot, but it means students see a search-results page, not a single specific video. Quality is high because each query is curated (channel + topic), so the top result is consistently the right video.
 2. **No automated link-checker is wired into CI.** I verified search URLs are well-formed but the live YouTube results depend on YouTube. Strongly recommend periodically re-running a check.
-3. **The CompTIA Security+ Final Mock has 90 questions but the parser counted 85** — that's because 5 questions are multi-part PBQs (Q86–Q90), with sub-parts. That matches the real Security+ exam format.
+3. **The CompTIA Security+ Final Mock has 90 questions but the parser counted 85**, that's because 5 questions are multi-part PBQs (Q86–Q90), with sub-parts. That matches the real Security+ exam format.
 4. **AI-102 Final Mock** uses sub-numbered case-study questions (51A, 51B, etc.) which mirrors Microsoft's actual case-study format on AI-102.
 5. **Quiz answers retain "as written" letter positions in source files**, but your existing engine (`assets/quiz.js`) randomizes options on each render and on Try Again, so students never see source-file bias. Practice exams (which render statically) have been re-shuffled to uniform distribution.
 
@@ -141,9 +141,9 @@ Or I can do this for you once you give the green light (you'd just need to set u
 
 ## Files & directories you can ignore for review
 
-- `_dev/` — spec doc, the shuffler script, and 21 backup copies of pre-shuffle practice exams. Not part of the published site (you can `git rm -r _dev/` before the production PR).
-- `Gemfile` and `start-preview.sh` — local dev tooling; safe to keep in production repo or delete before PR.
-- `.preview-marker` — sentinel file flagging this as the preview clone.
+- `_dev/`, spec doc, the shuffler script, and 21 backup copies of pre-shuffle practice exams. Not part of the published site (you can `git rm -r _dev/` before the production PR).
+- `Gemfile` and `start-preview.sh`, local dev tooling; safe to keep in production repo or delete before PR.
+- `.preview-marker`, sentinel file flagging this as the preview clone.
 
 ---
 
@@ -155,4 +155,4 @@ Or I can do this for you once you give the green light (you'd just need to set u
 4. Do the **video search queries** return the right video as the top result when you click? (Spot-check a few per course.)
 5. Should the **homepage messaging** lean more heavily into the new tracks or keep Scrum/PMP as the primary value prop?
 
-Reply with any findings — happy to iterate before we touch production.
+Reply with any findings, happy to iterate before we touch production.

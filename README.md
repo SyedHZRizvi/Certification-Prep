@@ -1,4 +1,4 @@
-# 🎓 The Cert Hub — 32 Certification Study Courses
+# 🎓 The Cert Hub, 32 Certification Study Courses
 
 ![Certifications: 32](https://img.shields.io/badge/Certifications-39-blueviolet.svg)
 ![Modules: 286](https://img.shields.io/badge/Modules-354-blue.svg)
@@ -7,11 +7,11 @@
 
 ## 🌐 [Visit the live course site →](https://cert-hub.pages.dev/)
 
-This repository contains the raw markdown for **32 story-driven self-study courses** across project management, IT systems administration, cloud, AI/GenAI, cybersecurity, supply chain, AI-based digital marketing, and Bitcoin/e-commerce. The polished site is at **[cert-hub.pages.dev](https://cert-hub.pages.dev/)** — same content, prettier UI, auth-gated.
+This repository contains the raw markdown for **32 story-driven self-study courses** across project management, IT systems administration, cloud, AI/GenAI, cybersecurity, supply chain, AI-based digital marketing, and Bitcoin/e-commerce. The polished site is at **[cert-hub.pages.dev](https://cert-hub.pages.dev/)**, same content, prettier UI, auth-gated.
 
 ---
 
-> **Goal:** Take you from zero (or rusty) to *passing* your chosen industry certification — without falling asleep or drowning in jargon.
+> **Goal:** Take you from zero (or rusty) to *passing* your chosen industry certification, without falling asleep or drowning in jargon.
 
 > 📤 **Share this with anyone preparing for these exams.** Built to make studying actually enjoyable.
 
@@ -24,7 +24,7 @@ Each track is a **guided journey** built on three pillars:
 | Pillar | What It Looks Like | Why It Matters |
 |--------|-------------------|----------------|
 | 🍿 **Stories & Analogies** | Pizza shops, road trips, Netflix shows, sports teams | Research supports narrative as a stronger retention aid than rote memorization |
-| 🎯 **Exam-Focused** | Every concept tagged with "What the exam tests" | You're not here to write a thesis — you're here to *pass* |
+| 🎯 **Exam-Focused** | Every concept tagged with "What the exam tests" | You're not here to write a thesis, you're here to *pass* |
 | 🔁 **Spaced Repetition** | Quizzes → flashcards → mock exams → real exam | The science says this beats re-reading by 50%+ |
 
 ---
@@ -57,7 +57,7 @@ Each track is a **guided journey** built on three pillars:
 | 15 | [`26-Microsoft-Endpoint-Admin/`](./26-Microsoft-Endpoint-Admin/README.md) | Microsoft Endpoint Administrator (MD-102) | 10 | 60 Q / 100 min |
 | 16 | [`27-Microsoft-Identity-Access-Admin/`](./27-Microsoft-Identity-Access-Admin/README.md) | Microsoft Identity & Access Admin (SC-300) | 10 | 60 Q / 100 min |
 
-### 🔗 Supply Chain & Operations — international standards
+### 🔗 Supply Chain & Operations, international standards
 
 | # | Folder | Cert | Modules | Mock-Exam Length |
 |---|--------|------|---------|------------------|
@@ -89,7 +89,7 @@ Each track is a **guided journey** built on three pillars:
 
 ## ⏱️ Suggested Path
 
-There's no single right order — pick whichever cert moves your career forward. Some natural ladders:
+There's no single right order, pick whichever cert moves your career forward. Some natural ladders:
 
 | If your goal is… | Recommended ladder |
 |---|---|
@@ -98,8 +98,8 @@ There's no single right order — pick whichever cert moves your career forward.
 | **Azure cloud career** | AZ-900 → AZ-104 |
 | **GenAI / ML on cloud** | AWS CLF or AZ-900 first → AIF-C01 or AI-102 |
 | **Cybersecurity** | CompTIA Security+ → (later) CISSP / CEH / cloud security specialty |
-| **Supply chain — strategic** | CSCP (broad) → CPIM (operations deep dive) |
-| **Supply chain — logistics** | CLTD (logistics deep dive) |
+| **Supply chain, strategic** | CSCP (broad) → CPIM (operations deep dive) |
+| **Supply chain, logistics** | CLTD (logistics deep dive) |
 | **Procurement** | ISM CPSM (US standard) |
 
 📅 See the [Quick Start Guide](./00-Study-Plan/Quick-Start-Guide.md) for a decision tree, or the [12-Week Study Plan](./00-Study-Plan/12-Week-Study-Plan.md) for pacing templates.
@@ -120,17 +120,17 @@ Module-XX-Topic/
 
 Each course folder ALSO has:
 
-- `README.md` — overview, exam facts, recommended path
-- `Flashcards.md` — interactive widget with 60–150 Q/A cards
-- `Practice-Exams/` — 2 partial practice exams + 1 full-length mock matching the real cert format
+- `README.md`, overview, exam facts, recommended path
+- `Flashcards.md`, interactive widget with 60–150 Q/A cards
+- `Practice-Exams/`, 2 partial practice exams + 1 full-length mock matching the real cert format
 
 **Recommended flow per module:**
 1. ☕ Read the `Reading.md` (with coffee)
 2. 🎥 Watch 1–2 videos from `Videos.md`
 3. ✏️ Take the `Quiz.md` *without peeking*
 4. 📋 Review the `Cheat-Sheet.md`
-5. 🃏 Add new terms to your flashcards (Anki recommended — see [Resources](./Resources/index.md))
-6. 😴 Sleep — that's literally when memory consolidates
+5. 🃏 Add new terms to your flashcards (Anki recommended, see [Resources](./Resources/index.md))
+6. 😴 Sleep, that's literally when memory consolidates
 
 ---
 
@@ -155,7 +155,7 @@ Day 4:  Take Module 1's quiz and watch the videos
 
 ## 🎯 Final Promise
 
-If you complete every module of your chosen track, take every quiz, do all three practice exams, and review your wrong answers — **you will pass**. Not because of magic, but because you'll have done what most test-takers don't: *deliberate practice*.
+If you complete every module of your chosen track, take every quiz, do all three practice exams, and review your wrong answers, **you will pass**. Not because of magic, but because you'll have done what most test-takers don't: *deliberate practice*.
 
 Good luck. Let's go.
 
@@ -165,4 +165,4 @@ Good luck. Let's go.
 
 ## 🔒 License & Use
 
-© 2026 Humayun Zafar. All Rights Reserved. This material is provided for enrolled-student personal study use only — copying, reproduction, or redistribution of the rendered site content is prohibited without prior written consent. All trademarks (PSM, PMP, AWS, Azure, CompTIA A+/Network+/Linux+/Server+/Security+, AZ-800/801, MD-102, SC-300, CSCP, CPIM, CLTD, CPSM, HubSpot Inbound/Content Marketing, Google Ads/GA4 IQ/AI Pro, Meta Blueprint, DMI Professional Diploma, OMCP, CXL, CBP/CBSA/CCAS, Adobe Certified Professional, Blender, Unity, Unreal Engine, Wharton, Shopify, Salesforce) belong to their respective owners (Scrum.org, PMI, Amazon Web Services, Microsoft, CompTIA, ASCM, Institute for Supply Management, HubSpot, Google, Meta, Digital Marketing Institute, Online Marketing Certified Professional, CXL Institute, C4/BTA/UNic, Adobe/Certiport, Blender Foundation, Unity Technologies, Epic Games, Wharton School, Shopify, Salesforce). Not affiliated with any certification body.
+© 2026 Humayun Zafar. All Rights Reserved. This material is provided for enrolled-student personal study use only, copying, reproduction, or redistribution of the rendered site content is prohibited without prior written consent. All trademarks (PSM, PMP, AWS, Azure, CompTIA A+/Network+/Linux+/Server+/Security+, AZ-800/801, MD-102, SC-300, CSCP, CPIM, CLTD, CPSM, HubSpot Inbound/Content Marketing, Google Ads/GA4 IQ/AI Pro, Meta Blueprint, DMI Professional Diploma, OMCP, CXL, CBP/CBSA/CCAS, Adobe Certified Professional, Blender, Unity, Unreal Engine, Wharton, Shopify, Salesforce) belong to their respective owners (Scrum.org, PMI, Amazon Web Services, Microsoft, CompTIA, ASCM, Institute for Supply Management, HubSpot, Google, Meta, Digital Marketing Institute, Online Marketing Certified Professional, CXL Institute, C4/BTA/UNic, Adobe/Certiport, Blender Foundation, Unity Technologies, Epic Games, Wharton School, Shopify, Salesforce). Not affiliated with any certification body.
