@@ -239,7 +239,7 @@ You now know:
 
 ---
 
-## 🎓 Cornell/Harvard/Stanford Elevation Layer
+## 🎓 graduate-level professional Elevation Layer
 
 ### Prerequisites for this module
 

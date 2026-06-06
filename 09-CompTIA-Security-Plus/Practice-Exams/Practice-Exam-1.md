@@ -318,7 +318,7 @@ The events already constitute detection. The NEXT phase is containment (isolate 
 
 ## Detailed answer rationales
 
-> Every question explained: why the correct answer is right and why each distractor is wrong. This is the differentiator from textbook-style prep — Harvard-Law-style discernment training.
+> Every question explained: why the correct answer is right and why each distractor is wrong. This is the differentiator from textbook-style prep — discernment training: not just recall, but reasoning through why each distractor is wrong.
 
 **Q1. Answer: C — Availability.** **Why C is correct.** Ransomware encryption denies authorized users the *use* of their data — that is, by definition, an availability impact (NIST SP 800-12 Rev 1). **Why others are wrong.** A (Confidentiality) is hit only if there's data exfil/leak; classic ransomware encrypts in place. B (Integrity) is *not* violated — the data is unchanged once decrypted; modification was not the goal. D (Non-repudiation) is unrelated. **Exam-takeaway.** Match the CIA letter to *what the user can no longer do*: read = C, trust = I, use = A.
 

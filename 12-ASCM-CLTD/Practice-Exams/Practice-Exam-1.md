@@ -507,7 +507,7 @@ For EACH wrong answer:
 
 ## Detailed answer rationales
 
-> Use these to learn the *discrimination* logic — why the right answer is right AND why each distractor is wrong. This is the case-method discipline that distinguishes Harvard Law-style learning from rote memorization.
+> Use these to learn the *discrimination* logic — why the right answer is right AND why each distractor is wrong. This is the case-method discipline that distinguishes analytical reasoning from rote memorization.
 
 **Q1. Answer: A — Inventory carrying cost.**
 *Why A is correct.* Adding DCs multiplies safety stock per the square-root rule (√N rule) — inventory carrying is the cost that rises most steeply in proportion to network nodes.

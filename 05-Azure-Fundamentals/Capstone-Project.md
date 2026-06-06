@@ -124,7 +124,7 @@ Total length: roughly 25–35 pages of written deliverable plus the supporting s
 
 A 110-person law firm sits in the gravity well between "small business with one IT generalist" and "enterprise with a security team." It's the *most common* size class of new Azure customer in 2025–2026 — the segment Microsoft itself targets most actively with M365 + Azure Files + Sentinel bundles. The constraints (GDPR, state bar, retention, capex avoidance) are *real* — they were paraphrased from multiple Microsoft customer-case write-ups in the 2024 Verticals: Legal series.
 
-When you finish this capstone, you'll be able to walk into a real engagement of this size and contribute substantively — not just pass an exam. That's the Cornell/Harvard/Stanford pedagogical bar.
+When you finish this capstone, you'll be able to walk into a real engagement of this size and contribute substantively — not just pass an exam. That's the graduate-level professional standard.
 
 ---
 

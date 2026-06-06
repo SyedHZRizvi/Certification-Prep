@@ -1,6 +1,6 @@
 # Recommended Readings — E-Commerce Track
 
-> **Purpose:** This curated list extends the per-module "Further Reading" sections with the canonical bibliography for an e-commerce operator who wants to think at the Wharton/Kellogg/Stanford level — not just pass a certification. Use it during preparation, after passing the Adobe Commerce / Google Shopping / Amazon Ads credentials, and as the foundation of a personal reference library.
+> **Purpose:** This curated list extends the per-module "Further Reading" sections with the canonical bibliography for an e-commerce operator who wants to reason from first principles, not just pass a certification. Use it during preparation, after passing the Adobe Commerce / Google Shopping / Amazon Ads credentials, and as the foundation of a personal reference library.
 
 > **How to use:** Engage each item at the point in the course indicated. The single most important academic anchor is the Wharton Online Digital Marketing & E-Commerce Specialization, taught by Peter Fader and David Bell — read alongside Modules 1, 7, and 9.
 

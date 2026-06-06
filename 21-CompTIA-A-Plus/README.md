@@ -33,7 +33,7 @@ A+ is the universal gateway. It ladders directly into **Network+ (course 22)**, 
 
 ### 🏛️ Why The Cert Hub's version is different
 
-- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — hardware taught from first principles (von Neumann architecture, OSI model, RAID math), not memorize-the-port-pinout
+- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies** — 
 - **Story-driven lessons (not flashcard punishment)** — every troubleshooting scenario introduced through a real ticket-room narrative
 - **Original questions only** — every quiz and practice exam written from CompTIA's published 220-1101 and 220-1102 exam objectives; no copyrighted dumps
 - **Real-world case studies** — POST beep diagnostics on legacy fleet, Windows 11 deployment lessons from a regional school district, an MSP's BYOD security retrofit, a ransomware-incident first-responder timeline

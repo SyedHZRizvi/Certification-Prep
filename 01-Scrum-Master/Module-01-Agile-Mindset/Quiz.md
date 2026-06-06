@@ -310,7 +310,7 @@ Empirical process control means deciding based on what is observed, not predicte
 
 ## 🧠 Bloom's-taxonomy mapping (existing Q1–Q24)
 
-Each existing question above is mapped to Bloom's cognitive level. The Cornell/Harvard/Stanford bar targets ≤25% Remember, ~25% Understand, ~25% Apply, ~20% Analyze/Evaluate, and ~5% Create. This module is currently weighted toward Remember/Understand; the new questions below rebalance toward Apply/Analyze/Evaluate.
+Each existing question above is mapped to Bloom's cognitive level. The graduate-level professional bar targets ≤25% Remember, ~25% Understand, ~25% Apply, ~20% Analyze/Evaluate, and ~5% Create. This module is currently weighted toward Remember/Understand; the new questions below rebalance toward Apply/Analyze/Evaluate.
 
 | Q# | Bloom level | Why |
 |---|---|---|

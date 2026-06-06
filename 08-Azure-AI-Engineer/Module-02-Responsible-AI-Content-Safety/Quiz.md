@@ -311,7 +311,7 @@ The RAI dashboard has error analysis, interpretability, counterfactuals, causal 
 The Microsoft RAI Standard v2 explicitly requires *measurement before mitigation*, and Azure OpenAI exposes per-category + per-direction thresholds *because* different domains have different harm distributions. An evidence-backed configuration, defended in writing in an Impact Assessment, is the EU-AI-Act-defensible path. A, C, and D each violate a specific principle (Accountability, Reliability, jurisdiction-respect).
 
 ### Q27: **B. The layered stack**
-Each layer maps to a principle (Transparency = badge, Privacy = PII detection + grounding, Reliability = custom filters + groundedness, Measure = Foundry evaluation, Accountability = Title-IX runbook). A, C, D each violate one or more principles outright. This is the "compose, don't pick one" pattern Cornell/Harvard programs reinforce as the only honest answer in a RAI design exercise.
+Each layer maps to a principle (Transparency = badge, Privacy = PII detection + grounding, Reliability = custom filters + groundedness, Measure = Foundry evaluation, Accountability = Title-IX runbook). A, C, D each violate one or more principles outright. This is the "compose, don't pick one" pattern graduate-level programs reinforce as the only honest answer in a RAI design exercise.
 
 ---
 

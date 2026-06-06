@@ -471,7 +471,7 @@ For EACH wrong answer:
 
 ## Detailed answer rationales (selected)
 
-> Per the Cornell/Harvard/Stanford bar spec, key answers explained.
+> Per the graduate-level professional bar spec, key answers explained.
 
 **Q1. Answer: B.** Arc-enabled servers project as `Microsoft.HybridCompute/machines`. Distinct from native Azure VMs (`Microsoft.Compute/virtualMachines`).
 

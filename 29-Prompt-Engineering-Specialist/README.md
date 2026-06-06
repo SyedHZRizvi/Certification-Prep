@@ -36,7 +36,7 @@ The Cert-Hub Prompt Engineering Specialist ladders directly into **Claude Archit
 
 ### 🏛️ Why The Cert Hub's version is different
 
-- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — every pattern justified with the underlying research paper (Brown et al. 2020 in-context learning, Wei et al. 2022 chain-of-thought, Yao et al. 2022 ReAct, Bai et al. 2022 Constitutional AI, the OpenAI System Card and Anthropic's Responsible Scaling Policy)
+- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies** — 
 - **Vendor-neutral by design** — every concept demonstrated on Claude, GPT, Gemini, AND Llama, with explicit notes on where the patterns diverge
 - **Story-driven, real-incident-grounded** — DeepSeek R1 jailbreak (Jan 2025), Bing's "Sydney" prompt leak (Feb 2023), the indirect-prompt-injection wave of 2024, the OpenAI o1/Anthropic Extended Thinking reasoning-model split, Microsoft Tay (2016) as the canonical adversarial cautionary tale
 - **Original questions only** — every quiz and practice exam question written from first principles against the published research and vendor docs; no copyrighted dumps

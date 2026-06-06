@@ -261,7 +261,7 @@ For EACH wrong answer:
 
 ## Detailed answer rationales
 
-> Per the Cornell/Harvard/Stanford bar spec, every wrong option is explained. Use these to retire concepts you missed, not just to "see what's correct."
+> Per the graduate-level professional bar spec, every wrong option is explained. Use these to retire concepts you missed, not just to "see what's correct."
 
 **Q1. Answer: B.** *Why B is correct.* The canonical Azure hierarchy is Tenant (Entra ID) → Management Group → Subscription → Resource Group → Resource (Microsoft Learn AZ-104 chapter 1; CAF Enterprise-Scale, 2020). *Why the other options are wrong.* **A**: subscriptions don't sit above tenants. **C**: tenant is the identity boundary, not a child of a management group. **D**: management groups are *above* subscriptions, not below. *Exam-takeaway.* Memorize: T-M-S-R-R (Tenant, Mgmt group, Subscription, Resource group, Resource).
 

@@ -142,6 +142,6 @@ You're not submitting this to anyone — it is for your own learning. Keep all s
 
 ## Why this capstone exists
 
-The PMP exam tests *judgment* via situational questions. Reading-and-quiz study can prepare you to *recognize* good judgment when it appears among four options. Producing artifacts like the ones above is the only way to develop the underlying judgment in the first place. Cornell's executive PM programs, MIT's System Design & Management curriculum, and Stanford's SCPD Project Management certificate all close with an analogous integrative project precisely for this reason — the goal is not to pass the exam but to be the kind of PM who shouldn't need to take it twice.
+The PMP exam tests *judgment* via situational questions. Reading-and-quiz study can prepare you to *recognize* good judgment when it appears among four options. Producing artifacts like the ones above is the only way to develop the underlying judgment in the first place. Professional and executive PM programs all close with an analogous integrative project precisely for this reason — the goal is not to pass the exam but to be the kind of PM who shouldn't need to take it twice.
 
 Good luck. Re-read your Charter at hour 0 and again at hour 60 — you'll be amazed how much your judgment will have sharpened.

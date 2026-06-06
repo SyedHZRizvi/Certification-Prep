@@ -29,7 +29,7 @@ PSM I sits at the top of nearly every Agile job posting alongside CSM, but it ha
 
 ### 🏛️ Why The Cert Hub's version is different
 
-- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — story-driven modules, named-source citations (Takeuchi & Nonaka 1986, Tuckman 1965, the Manifesto 2001), and Socratic discussion prompts that build judgment, not just recall
+- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies** — story-driven modules, named-source citations (Takeuchi & Nonaka 1986, Tuckman 1965, the Manifesto 2001), and Socratic discussion prompts that build judgment, not just recall
 - **Story-driven lessons (not flashcard punishment)** — every module opens with a narrative (Tony's pizza shop, real product teams) so the framework sticks the first time
 - **Original questions only** — every quiz and practice exam is written from the published exam objectives in the spirit of the Scrum Guide; no copyrighted dumps
 - **Real-world case studies** — Spotify's tribes/squads model, ING Netherlands' bank-wide Agile transformation, John Deere ISG, Microsoft's Windows 7 turnaround

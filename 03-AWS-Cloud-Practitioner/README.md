@@ -32,7 +32,7 @@ CLF-C02 is the bottom rung of a ladder that pays compound returns: it ladders di
 
 ### 🏛️ Why The Cert Hub's version is different
 
-- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — concept-first lessons that explain *why* AWS works the way it does, not just what to click
+- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies** — 
 - **Story-driven lessons (not flashcard punishment)** — every module opens with a real-world scenario you actually care about
 - **Original questions only** — every quiz and practice exam written from the AWS Exam Guide; no recycled dumps
 - **Real-world case studies** — Netflix migration, Capital One re-platforming, Pinterest growth architecture, Airbnb seasonal scaling

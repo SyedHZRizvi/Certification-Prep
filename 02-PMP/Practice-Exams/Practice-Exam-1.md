@@ -343,7 +343,7 @@ D. Project will fail
 
 ## Detailed answer rationales
 
-These per-question rationales explain why each correct answer is correct AND why each distractor is wrong. This is the "Harvard-case-method layer" on top of the existing letter-only answer key — both coexist. Q numbers match the questions above.
+These per-question rationales explain why each correct answer is correct AND why each distractor is wrong. This is the detailed-rationale layer on top of the existing letter-only answer key — both coexist. Q numbers match the questions above.
 
 **Q1. Answer: B**
 

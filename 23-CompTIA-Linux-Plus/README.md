@@ -34,7 +34,7 @@ Linux+ pairs cleanly with **Network+ (course 22)** and **Security+ (course 09)**
 
 ### 🏛️ Why The Cert Hub's version is different
 
-- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — Unix design philosophy taught from named sources (Thompson & Ritchie 1974 on Unix, Stevens 1992 on advanced programming, Kerrisk's *The Linux Programming Interface*, Nemeth et al. on system administration)
+- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies** — 
 - **Story-driven lessons (not flashcard punishment)** — every command introduced through a real ops scenario (a load-balancer fix at 3am, a kernel-panic forensic walkthrough, a systemd unit-file rescue)
 - **Original questions only** — every quiz and practice exam written from CompTIA's published XK0-005 exam objectives; no copyrighted dumps
 - **Real-world case studies** — the Heartbleed disclosure timeline, the Dirty COW kernel exploit lifecycle, a real outage post-mortem from a SaaS company, systemd vs sysvinit migration battle stories

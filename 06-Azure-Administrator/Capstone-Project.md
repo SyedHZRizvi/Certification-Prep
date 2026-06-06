@@ -202,4 +202,4 @@ Every module is exercised. That's the design.
 
 ## Closing note
 
-This capstone is the Cornell/Harvard/Stanford case-method version of AZ-104: you are not just passing a test, you are designing a real architecture under real constraints. The exam is in 14 weeks; if you ship this capstone in 14 weeks, you will pass the exam and you will be hireable as a Senior Azure Administrator. That's the target.
+This capstone is the the case method version of AZ-104: you are not just passing a test, you are designing a real architecture under real constraints. The exam is in 14 weeks; if you ship this capstone in 14 weeks, you will pass the exam and you will be hireable as a Senior Azure Administrator. That's the target.

@@ -295,7 +295,7 @@ For EACH wrong answer:
 
 ## 🧠 Detailed answer rationales
 
-Below is the wrong-answer rationale for every question — *why* the correct answer is correct AND *why each other option fails*. This is the Harvard-style discernment layer that turns recall into reasoning.
+Below is the wrong-answer rationale for every question — *why* the correct answer is correct AND *why each other option fails*. This is the case-method discernment layer that turns recall into reasoning.
 
 ### Q1. Answer: B (lightweight framework)
 **Why B is correct.** The Scrum Guide's opening definition: "Scrum is a lightweight framework that helps people, teams, and organizations generate value..."

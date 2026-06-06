@@ -188,6 +188,6 @@ If you want external feedback: post the executive summary (2 pages) to a study g
 
 ## A final note
 
-If you can produce a substantively complete version of this capstone, you will exit the CPIM program able to *do the job*, not just pass the exam. That's the bar Cornell, Harvard, Stanford, and MIT all teach to. It's also what hiring managers at Polaris (and every other industrial manufacturer in 2026) are actually paying for.
+If you can produce a substantively complete version of this capstone, you will exit the CPIM program able to *do the job*, not just pass the exam. That's the bar a graduate-level professional program teaches to. It's also what hiring managers at Polaris (and every other industrial manufacturer in 2026) are actually paying for.
 
 Trust the work. The exam will feel easy once the capstone feels finished.

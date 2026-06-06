@@ -34,7 +34,7 @@ This is course **2 of 5** in the AI Digital Marketing ladder: **Foundations (14)
 
 ### 🏛️ Why The Cert Hub's version is different
 
-- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — auction theory taught from first principles (Vickrey 1961, Edelman/Ostrovsky/Schwarz 2007 on GSP auctions), attribution science from Shapley 1953
+- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies** — 
 - **Story-driven lessons (not flashcard punishment)** — every channel introduced through a real campaign teardown before any tactics
 - **Original questions only** — every quiz and practice exam written from official Google / Meta / TikTok exam outlines; no copyrighted dumps
 - **Real-world case studies + a real capstone** — 12-week scenario as the new Senior Performance Marketer at a $20M DTC e-commerce brand cutting CAC 25% in 90 days

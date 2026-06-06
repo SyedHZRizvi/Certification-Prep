@@ -33,7 +33,7 @@ ISM's own Salary Survey (annual) shows CPSM holders earn an average **~$30K more
 
 ### 🏛️ Why The Cert Hub's version is different
 
-- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — negotiation taught from first principles (Fisher & Ury 1981 *Getting to Yes*, Lax & Sebenius 1986, Raiffa 1982), with named-source citations throughout
+- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies** — 
 - **Story-driven lessons (not flashcard punishment)** — concepts grounded in real procurement (Apple's component sourcing, Toyota's keiretsu, P&G's supplier development, Walmart's "Made in USA" pledge)
 - **Original questions only** — every quiz and practice exam written from ISM's published exam content; no copyrighted dumps
 - **Real-world case studies** — semiconductor supply crisis 2020–2023, Boeing's outsourcing lessons, Nike's Pakistan supplier transparency, Patagonia's regenerative sourcing

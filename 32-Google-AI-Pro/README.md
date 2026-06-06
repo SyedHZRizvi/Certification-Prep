@@ -51,7 +51,7 @@ This track ladders directly into:
 
 ### 🏛️ Why The Cert Hub's version is different
 
-- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — the Transformer taught from the *Vaswani et al. (2017)* paper, RLHF from Christiano et al. (2017), and Constitutional vs Google's safety story explained from primary sources, not from a marketing blog
+- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies** — 
 - **Google-aligned by construction** — every prompting pattern matches Google's published [Gemini prompt engineering documentation](https://ai.google.dev/gemini-api/docs/prompting-strategies), every Vertex AI pattern matches the canonical reference architectures, every responsible-AI section reflects Google's [AI Principles](https://ai.google/responsibility/principles/) and [Secure AI Framework (SAIF)](https://safety.google/cybersecurity-advancements/saif/)
 - **Story-driven lessons (not API-reference recitation)** — the Transformer introduced through the *story of why Google's eight 2017-era researchers (the "Attention Is All You Need" authors) reshaped AI*; Vertex AI introduced through *Mercado Libre's seller assistant pivot*; Agent Builder introduced through *Wendy's FreshAI drive-thru postmortem*
 - **Original questions only** — every quiz and practice exam written from scratch in the spirit of Google's published exam guides for Generative AI Leader and PMLE; no copied dumps

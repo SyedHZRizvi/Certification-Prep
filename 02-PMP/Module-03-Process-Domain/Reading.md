@@ -376,7 +376,7 @@ You now know:
 
 ---
 
-## 🎓 Cornell/Harvard/Stanford Elevation Layer
+## 🎓 graduate-level professional Elevation Layer
 
 > The sections below add the elevated, university-grade content for this module. They preserve everything above and add a real-world case study, Socratic prompts, prerequisites, cross-course pointers, and named-source citations.
 

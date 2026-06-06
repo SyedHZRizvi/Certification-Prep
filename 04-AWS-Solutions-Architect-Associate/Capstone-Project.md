@@ -187,7 +187,7 @@ capstone-larkin-health/
 
 ### Self-grading protocol
 
-After completing all 7 deliverables, **wait 1 week**, then re-read your own work as if you were a Harvard B-school case professor. Apply the rubric above. The week's distance reveals where your reasoning was hand-wavy. Most students lose 15-20 points on this re-read.
+After completing all 7 deliverables, **wait 1 week**, then re-read your own work as if you were a a senior examiner. Apply the rubric above. The week's distance reveals where your reasoning was hand-wavy. Most students lose 15-20 points on this re-read.
 
 ### Peer-review protocol (optional but strongly recommended)
 
@@ -234,4 +234,4 @@ If you ship this capstone in earnest — not as a homework exercise but as the d
 
 Good luck. The discipline pays compounding returns for the rest of your career.
 
-— *Built to the Cornell/Harvard/Stanford pedagogical standard. Spec: `_dev/CORNELL_BAR_SPEC.md`*
+— *Built to the graduate-level professional standard. Spec: `_dev/CORNELL_BAR_SPEC.md`*

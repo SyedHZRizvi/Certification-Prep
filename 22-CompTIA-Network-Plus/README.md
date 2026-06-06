@@ -34,7 +34,7 @@ Network+ sits on the second rung of CompTIA's "Infrastructure" and "Cybersecurit
 
 ### 🏛️ Why The Cert Hub's version is different
 
-- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — networking taught from first principles (Kleinrock 1961 on queueing, Cerf & Kahn 1974 on TCP, the OSI model, Perlman 1985 on spanning tree, Mockapetris 1983 on DNS)
+- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies** — 
 - **Story-driven lessons (not flashcard punishment)** — every protocol introduced through a real network-failure narrative
 - **Original questions only** — every quiz and practice exam written from CompTIA's published N10-009 exam objectives; no copyrighted dumps
 - **Real-world case studies** — the AT&T 1990 long-distance outage (SS7 cascading failure), Cloudflare's 2019 BGP route-leak, the 2021 Fastly CDN configuration outage, a regional hospital's Wi-Fi-roaming disaster and fix

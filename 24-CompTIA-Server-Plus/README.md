@@ -34,7 +34,7 @@ Server+ pairs naturally with **Linux+ (course 23)**, **Network+ (course 22)**, a
 
 ### 🏛️ Why The Cert Hub's version is different
 
-- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — server architecture taught from CS first principles (Patterson 1988 on RAID, the CAP theorem, Lamport on distributed time, Saltzer & Schroeder's design principles)
+- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies** — 
 - **Story-driven lessons (not flashcard punishment)** — every concept introduced through a real data-center scenario (a failed RAID rebuild, a SAN multi-path outage, a hypervisor host failure during patching)
 - **Original questions only** — every quiz and practice exam written from CompTIA's published SK0-005 exam objectives; no copyrighted dumps
 - **Real-world case studies** — Knight Capital's 2012 server-deploy disaster, the AWS S3 2017 typo outage, a real hospital's disaster-recovery failover drill, Fukushima Daiichi's data-center power lessons

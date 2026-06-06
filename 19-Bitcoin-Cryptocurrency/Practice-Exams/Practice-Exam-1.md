@@ -297,7 +297,7 @@ D. The 21M supply cap
 
 ## 🎯 Detailed answer rationales
 
-> Every question explained: why the correct answer is right and why each distractor is wrong. This is the Cornell/Harvard discernment bar — not just "B is correct," but *what concept the wrong answers confuse with*.
+> Every question explained: why the correct answer is right and why each distractor is wrong. This is the professional-grade discernment standard — not just "B is correct," but *what concept the wrong answers confuse with*.
 
 **Q1. Answer: B**
 - **Why B is correct.** Satoshi Nakamoto posted *"Bitcoin: A Peer-to-Peer Electronic Cash System"* on October 31, 2008 to the metzdowd.com Cryptography Mailing List — a low-traffic cypherpunk forum (Nakamoto, 2008).

@@ -38,7 +38,7 @@ Average freelance rate for a credentialed Blender animator on Contra or Arc.dev:
 
 ### 🏛️ Why This Course Is Different
 
-- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — topology, PBR physics, quaternion bone math, and Fourier-basis interpolation taught from first principles, not just "click here"
+- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies** — 
 - **Open-movie case studies woven through every module** — *Sprite Fright*, *Charge*, *Wing It!*, *Coffee Run* are all documented publicly; we use them like Harvard Business School uses company filings
 - **Keyboard-first workflow enforced from day one** — the gap between a student animator and a studio animator is almost entirely shortcut fluency
 - **Real production benchmarks** — render time targets, polygon budgets, texture resolution constraints drawn from actual studio pipelines

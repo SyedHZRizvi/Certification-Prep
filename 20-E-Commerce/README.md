@@ -35,7 +35,7 @@ This track pairs cleanly with the AI Marketing ladder (courses 14–18) for the 
 
 ### 🏛️ Why The Cert Hub's version is different
 
-- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — unit economics from named sources (Fader 2012 *Customer Centricity*, Bell 2014 on omnichannel, the Bezos 1997 shareholder letter, Bryar & Carr 2021 *Working Backwards*, Anderson 2006 *The Long Tail*, Kohavi/Tang/Xu 2020 on experimentation)
+- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies** — 
 - **Story-driven lessons (not flashcard punishment)** — every module begins with a real brand teardown (Allbirds, Warby Parker, Glossier, Patagonia, Bombas, Liquid Death)
 - **Original questions only** — every quiz and practice exam written from public exam outlines; no copyrighted dumps
 - **A real Capstone** — 18-week scenario as Director of E-Commerce at a $90M Series-B home-goods DTC brand chartered with growing GMV from $90M to $160M while protecting 38% contribution margin

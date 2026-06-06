@@ -49,11 +49,11 @@ The rise of LLM-generated static content is, paradoxically, *increasing* demand 
 
 ### 🏛️ Why The Cert Hub's Version Is Different
 
-- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — timing curves derived from physics, not "drag the easy-ease handle"
+- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies** — timing curves derived from physics, not "drag the easy-ease handle"
 - **Story-driven lessons with 2024–2026 case studies** — every module opens with a real creative scenario (Apple's Vision Pro launch animation, Stripe's homepage redesign, the Stranger Things title sequence)
-- **Original questions only** — every quiz, practice exam, and mock exam written from the Adobe ACE exam objectives, School of Motion curriculum, and Motion Design School syllabi
+- **Original questions only** — every quiz, practice exam, and mock exam written from the Adobe Certified Professional (ACP) exam objectives, School of Motion curriculum, and Motion Design School syllabi
 - **One author, one voice** — coherent vocabulary across all 10 modules (a "keyframe" is always a keyframe; "easing" always refers to the interpolation curve, never the handle type)
-- **Target certifications:** Adobe Certified Professional in After Effects · School of Motion accreditation track · Certified Motion Designer (CMD) pathway
+- **Target certification:** Adobe Certified Professional in After Effects (Adobe/Certiport). Note: School of Motion offers paid course certificates (not industry certifications with exam-based assessment).
 
 ### 🚀 Ready to Start?
 
@@ -144,7 +144,7 @@ Multiple credentialing paths exist for motion designers:
 | **Buck Design — Mentorship** | Buck | Selective; portfolio-based; no exam but highest industry signal |
 | **Coursera — Motion Graphics Specialization** | Coursera / CalArts | $50–$200; beginner-accessible; not industry-recognized at the same level |
 
-This course's Final Mock Exam is designed to be harder than the Adobe ACE exam because the bar for working at a top studio (Buck, Gentleman Scholar, Oddfellows, Giant Ant) is higher than any certification exam. Pass this final mock at 85%+, and you're prepared for both.
+This course's Final Mock Exam is designed to be harder than the Adobe Certified Professional (ACP) exam because the bar for working at a top studio (Buck, Gentleman Scholar, Oddfellows, Giant Ant) is higher than any certification exam. Pass this final mock at 85%+, and you're prepared for both.
 
 ---
 

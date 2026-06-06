@@ -35,7 +35,7 @@ The market is hot enough that **mid-level GenAI engineers are out-earning senior
 
 ### 🏛️ Why The Cert Hub's version is different
 
-- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — transformer attention derived from first principles, not "it's a neural net trust me"
+- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies** — 
 - **Story-driven lessons with 2024–2026 case studies** — every module opens with a real production scenario (the Cursor team's autocomplete tail-latency war, Klarna replacing 700 support reps, the Khanmigo content-safety design)
 - **Original questions only** — every quiz, practice exam, and mock exam written from the published curricula of the major GenAI courses (Stanford CS25, DeepLearning.AI's GenAI specializations, Anthropic's prompt-engineering tutorial, the LangChain academy, the RAGAS paper, the Gao et al. 2024 RAG survey); no copyrighted dumps
 - **One author, one voice** — coherent vocabulary across all 10 modules (LLM = decoder-only transformer unless otherwise noted; "RAG" = retrieval-augmented generation specifically; we never confuse "agent" with "tool-using LLM")

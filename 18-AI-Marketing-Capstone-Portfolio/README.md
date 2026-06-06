@@ -33,7 +33,7 @@ This is course **5 of 5** — the bow on the ladder: **Foundations (14) → Prac
 
 ### 🏛️ Why The Cert Hub's version is different
 
-- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — portfolio standards modeled on the case competitions and capstone studios of top-tier MBA programs (Wharton, MIT Sloan, HBS, Stanford GSB)
+- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies** — portfolio standards built around real deliverables, peer-review rubrics, and employer-facing presentation format
 - **Story-driven lessons (not flashcard punishment)** — every portfolio piece begins with a real client problem narrative
 - **Original frameworks only** — rubrics, scorecards, deliverable templates are all original to The Cert Hub
 - **5 real artifacts at the end** — a full-funnel audit, a campaign post-mortem, an automation walkthrough video, an attribution dashboard, a working AI agent — each portfolio-grade on its own

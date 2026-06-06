@@ -34,7 +34,7 @@ MD-102 pairs cleanly with **SC-300 (course 27, Identity & Access Admin)**, **AZ-
 
 ### 🏛️ Why The Cert Hub's version is different
 
-- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — endpoint security taught from first principles (Saltzer & Schroeder 1975 on least privilege, the Zero Trust architecture papers, the NIST SP 800-46 telework guidance)
+- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies** — 
 - **Story-driven lessons (not flashcard punishment)** — every Intune feature introduced through a real enterprise scenario (a global Windows 11 Autopilot rollout, a BYOD MAM design, a Conditional-Access wedge for a contractor population)
 - **Original questions only** — every quiz and practice exam written from Microsoft's published MD-102 skills-measured outline; no copyrighted dumps
 - **Real-world case studies** — Maersk's NotPetya endpoint disaster, the 2020 SolarWinds endpoint forensics, a K-12 district's 1:1 Chromebook-to-Windows-11 transition, a regional law firm's Intune + Defender rollout

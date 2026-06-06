@@ -207,4 +207,4 @@ AWS services change quarterly. **Verification date for the above list: 2026-05.*
 
 ---
 
-— *Built to the Cornell/Harvard/Stanford pedagogical standard. Spec: `_dev/CORNELL_BAR_SPEC.md`*
+— *Built to the graduate-level professional standard. Spec: `_dev/CORNELL_BAR_SPEC.md`*

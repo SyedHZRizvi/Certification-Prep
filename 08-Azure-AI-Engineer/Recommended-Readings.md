@@ -26,7 +26,7 @@ Industry-flavored NLP — covers the same problems Azure AI Language solves, wit
 ## 📰 Seminal papers (read these in this order)
 
 ### 1. Vaswani et al. (2017). *"Attention Is All You Need."* NeurIPS 2017. [arxiv.org/abs/1706.03762](https://arxiv.org/abs/1706.03762)
-The transformer paper. Every model in Modules 3–8 descends from it. **Why it matters:** if you cannot explain attention in your own words you cannot pass a Cornell/Stanford-grade architecture interview, however well you do on AI-102.
+The transformer paper. Every model in Modules 3–8 descends from it. **Why it matters:** if you cannot explain attention in your own words you cannot pass a senior ML-engineer architecture interview, however well you do on AI-102.
 
 ### 2. Devlin et al. (2018). *"BERT: Pre-training of Deep Bidirectional Transformers."* NAACL 2019.
 The encoder-only lineage that powers many of Azure AI Language's classification and NER models. **Why it matters:** explains why "Language understanding" works differently from "language generation."

@@ -169,7 +169,7 @@ Submit a single zipped folder named `northwind-fnol-capstone.zip` containing:
 | §5 Security Review | Modules 8 (IAM, PrivateLink, KMS, invocation logging, threats), 7 (Guardrails) |
 | §6 ROI Model | Modules 4 (Bedrock pricing modes), 6 (cost-optimization), all (use-case patterns) |
 
-This capstone integrates ≥ 60% of the course material and forces the *argue-your-choice* deliverable Cornell/Harvard MBA case-method pedagogy demands.
+This capstone integrates ≥ 60% of the course material and forces the *argue-your-choice* deliverable Cornell/case-method pedagogy demands.
 
 ---
 

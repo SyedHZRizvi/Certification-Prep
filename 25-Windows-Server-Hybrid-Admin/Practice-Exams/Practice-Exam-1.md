@@ -328,7 +328,7 @@ For EACH wrong answer:
 
 ## Detailed answer rationales
 
-> Per the Cornell/Harvard/Stanford bar spec, every wrong option is explained. Use these to retire concepts you missed, not just to "see what's correct."
+> Per the graduate-level professional bar spec, every wrong option is explained. Use these to retire concepts you missed, not just to "see what's correct."
 
 **Q1. Answer: B.** *Why B is correct.* The canonical AD hierarchy is Forest → Tree → Domain → OU → Object (Microsoft Learn, AD DS Logical Structure; Brian Desmond et al., *Active Directory*, 5th ed., 2013). *Why the other options are wrong.* **A**: Domain isn't above Forest. **C**: Tree is below Forest. **D**: Tree is between Forest and Domain. *Exam-takeaway.* Memorize F-T-D-O-O.
 

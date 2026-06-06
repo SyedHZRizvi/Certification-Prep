@@ -35,7 +35,7 @@ Average compensation uplift after passing: **18–28%** in the 6–12 months fol
 
 ### 🏛️ Why The Cert Hub's version is different
 
-- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — gradient descent, attention, bias-variance, ROC AUC, and SHAP all taught from first principles with the source papers cited (LeCun, Hinton, Vaswani, Lundberg) — not glossed over
+- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies** — 
 - **Story-driven lessons (not flashcard punishment)** — every module is anchored in a real production case study: **Netflix's recommendation engine**, **Capital One's real-time fraud detection on SageMaker**, **Airbnb's dynamic-pricing models**, **Toyota's computer-vision factory inspection**, **JPMorgan's COiN document AI**, **Stripe Radar**, and **NASA JPL's anomaly detection** all appear in worked-example form
 - **Original questions only** — every quiz, practice exam, and final mock is written from the published MLS-C01 Exam Guide; no copyrighted dumps
 - **Real-world code** — Python + Boto3 + SageMaker Python SDK snippets at the level you'd write in production, not pseudocode
@@ -188,7 +188,7 @@ Week 5: Flashcards + Final Mock + REAL EXAM
 
 ## 🏗️ Capstone Project
 
-🔗 **[Capstone Project — Atlas Health Pre-Authorization Triage Platform](./Capstone-Project.md)** — Once you've finished all 10 modules, the capstone is the Cornell/Harvard/Princeton/Stanford-grade synthesis exercise: a 7-deliverable production-ML design for a Series-C health-tech company (~$1.8M Year 1 budget, 9-month timeline, HIPAA + SOC 2 + bias controls + 2-second p95 latency). Rubric scored out of 100. This is the difference between "I passed MLS-C01" and "I could lead this at a real company on Monday."
+🔗 **[Capstone Project — Atlas Health Pre-Authorization Triage Platform](./Capstone-Project.md)** — Once you've finished all 10 modules, the capstone is the graduate-level professional standard synthesis exercise: a 7-deliverable production-ML design for a Series-C health-tech company (~$1.8M Year 1 budget, 9-month timeline, HIPAA + SOC 2 + bias controls + 2-second p95 latency). Rubric scored out of 100. This is the difference between "I passed MLS-C01" and "I could lead this at a real company on Monday."
 
 ---
 

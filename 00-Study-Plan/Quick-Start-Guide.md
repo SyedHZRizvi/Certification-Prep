@@ -60,7 +60,7 @@ Pick ONE. The detailed week-by-week plan in [12-Week Study Plan](./12-Week-Study
 - **Path N — "Procurement & sourcing"** → [ISM CPSM](../13-ISM-CPSM/README.md) · Plan: ~12-16 weeks (3 modules). Eligibility: Bachelor's + 3 years SCM experience OR 5 years experience.
 
 ### AI Digital Marketing
-A 5-course ladder built to the Cornell/Harvard/Stanford bar — fundamentals → execution → strategy → entrepreneurship → portfolio. Each course aligns with at least one real industry credential (HubSpot Inbound, Google Ads, Meta Blueprint, etc.).
+A 5-course ladder built to the graduate-level professional bar — fundamentals → execution → strategy → entrepreneurship → portfolio. Each course aligns with at least one real industry credential (HubSpot Inbound, Google Ads, Meta Blueprint, etc.).
 - **Path O — "I'm new to AI marketing"** → [AI Digital Marketing Foundations](../14-AI-Marketing-Foundations/README.md) · Plan: ~6-8 weeks. Best starting point for non-marketers.
 - **Path P — "I run campaigns — make me dangerous with AI"** → [AI Digital Marketing Practitioner](../15-AI-Marketing-Practitioner/README.md) · Plan: ~8-10 weeks. Google Ads, Meta Ads, AI-augmented creative & copy.
 - **Path Q — "Strategy, analytics & attribution"** → [AI Digital Marketing Strategist](../16-AI-Marketing-Strategist/README.md) · Plan: ~10-12 weeks. GA4, CDP, MMM, predictive analytics, privacy-first measurement.

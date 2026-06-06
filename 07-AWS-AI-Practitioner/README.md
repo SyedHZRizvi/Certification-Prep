@@ -33,7 +33,7 @@ AIF-C01 is the bottom rung of AWS's new AI ladder: **AIF-C01 (this course) → M
 
 ### 🏛️ Why The Cert Hub's version is different
 
-- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — transformer math, embedding geometry, and RAG architecture taught from first principles, not as buzzword soup
+- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies** — 
 - **Story-driven lessons (not flashcard punishment)** — every module solves a real GenAI problem (customer-support copilot, document search, agent workflow) before introducing services
 - **Original questions only** — quizzes and practice exams written from the AWS Exam Guide; no copyrighted dumps
 - **Real-world case studies** — Anthropic Claude on Bedrock at enterprises, Amazon Q Business deployments, Stripe's internal RAG, Bloomberg GPT lessons
@@ -88,7 +88,7 @@ By the end of this track, you'll be able to:
 | [Practice-Exam-2](./Practice-Exams/Practice-Exam-2.md) | After Modules 5–8 | 50 Q · 90 min | ⭐⭐⭐⭐ |
 | [Final-Mock-Exam](./Practice-Exams/Final-Mock-Exam.md) | 2–3 days before the real exam | 65 Q · 120 min | ⭐⭐⭐⭐⭐ |
 
-Every practice exam now includes a **Detailed answer rationales** section explaining why each correct answer is correct *and* why each distractor is wrong — Harvard Law's case-method discernment training, applied to AIF-C01.
+Every practice exam now includes a **Detailed answer rationales** section explaining why each correct answer is correct *and* why each distractor is wrong — case-method discernment training, applied to AIF-C01.
 
 **Plus:** Take the [AWS Official Practice Question Set for AIF-C01](https://explore.skillbuilder.aws/learn) on AWS Skill Builder. It's free and the closest you'll get to real exam wording.
 

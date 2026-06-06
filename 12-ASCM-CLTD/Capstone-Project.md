@@ -1,6 +1,6 @@
 # Capstone Project — ASCM CLTD (Logistics & Distribution Transformation)
 
-> **Purpose.** This capstone integrates Modules 1–8 into one end-to-end case. You play a newly-hired Director of Global Logistics walking into a real-feeling transformation mandate. The deliverables mirror what a Cornell / MIT Sloan / Stanford GSB operations capstone — or a McKinsey / Bain / Deloitte logistics engagement — would actually require.
+> **Purpose.** This capstone integrates Modules 1–8 into one end-to-end case. You play a newly-hired Director of Global Logistics walking into a real-feeling transformation mandate. The deliverables mirror what a graduate-level operations capstone — or a top-tier consulting engagement — would actually require.
 
 ---
 
@@ -98,7 +98,7 @@ Additional constraints:
 | Reverse logistics & sustainability (Module 8) | 10 | Returns redesign integrates third-party; Scope 1/2/3 quantified; SBTi alignment; closed-loop opportunities specific | Most elements but not all integrated | One paragraph on sustainability |
 | Communication & executive presence | 10 | Board-ready exec summary; defensible numbers; written narrative shows operations + financial fluency | Mostly clear but some sections need polish | Inaccessible to non-logistics readers |
 
-**Passing threshold: 70.** **Excellent: 85+.** **Stanford GSB-grade: 92+.**
+**Passing threshold: 70.** **Excellent: 85+.** **Expert-grade: 92+.**
 
 ---
 
@@ -168,7 +168,7 @@ This is what you would actually walk into a Board meeting with.
 4. "Your Scope 3 estimate uses GLEC default factors. The Board's external auditor flagged that auditors want supplier-specific data, not defaults. How do you respond?"
 5. "Your Incoterms restructure shifts liability *to* Holloway for the European glass leg. What's your insurance and exposure analysis?"
 
-If you can answer all five convincingly with numbers, you're at Stanford GSB grade. If you stumble on three or more, re-read the corresponding modules and revise.
+If you can answer all five convincingly with numbers, you're at graduate-level standard. If you stumble on three or more, re-read the corresponding modules and revise.
 
 ---
 

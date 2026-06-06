@@ -7,7 +7,7 @@ title: AI Digital Marketing Foundations Track
 
 **📣 AI Marketing** › Course 1 of 5 — Foundations
 
-> **Goal:** Build a Cornell/Harvard-quality grounding in digital marketing AND in how generative AI is rewriting every channel — then pass three real industry exams.
+> **Goal:** Build a thorough, graduate-level grounding in digital marketing AND in how generative AI is rewriting every channel — then pass three real industry exams.
 > **Duration:** 6–8 weeks part-time (≈3–5 hrs/week)
 > **Cost:** Free (this credential) + $0–$99 for the three real industry exams below
 > **Difficulty:** Entry-level · no marketing experience required
@@ -33,7 +33,7 @@ This is course **1 of 5** in The Cert Hub's AI Digital Marketing ladder: **Found
 
 ### 🏛️ Why The Cert Hub's version is different
 
-- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — every framework grounded in named sources (McCarthy 1960 on the 4 Ps, Kotler, Godin 1999 on permission marketing, Christensen on jobs-to-be-done)
+- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies** — 
 - **Story-driven lessons (not flashcard punishment)** — concepts taught through real campaign teardowns
 - **Original questions only** — quizzes and practice exams written from the three official industry exam outlines; no copyrighted dumps
 - **Real-world case studies** — Liquid Death's positioning, Patagonia's storytelling, Duolingo's TikTok, Glossier's community, and the early Klaviyo flows that built Allbirds

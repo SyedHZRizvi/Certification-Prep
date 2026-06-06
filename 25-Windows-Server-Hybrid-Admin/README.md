@@ -34,7 +34,7 @@ This is the senior credential in the most coherent Microsoft sysadmin ladder: **
 
 ### 🏛️ Why The Cert Hub's version is different
 
-- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — AD design taught from named sources (Lamport on distributed time, the Kerberos 1988 paper, Microsoft's design papers on FSMO and replication topology, Saltzer & Schroeder on least privilege)
+- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies** — 
 - **Story-driven lessons (not flashcard punishment)** — every module begins with a real enterprise scenario (an AD forest recovery after ransomware, a Hyper-V cluster split-brain, a file-server migration of 4,200 user mailboxes)
 - **Original questions only** — every quiz and practice exam written from Microsoft's published skills-measured outlines for both AZ-800 and AZ-801; no copyrighted dumps
 - **Real-world case studies** — Maersk's NotPetya AD recovery, SolarWinds 2020 (AD as the target), a real hospital's Storage Spaces Direct migration, a regional bank's Azure Arc rollout

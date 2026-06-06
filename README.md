@@ -23,7 +23,7 @@ Each track is a **guided journey** built on three pillars:
 
 | Pillar | What It Looks Like | Why It Matters |
 |--------|-------------------|----------------|
-| 🍿 **Stories & Analogies** | Pizza shops, road trips, Netflix shows, sports teams | Your brain remembers stories 22× better than facts |
+| 🍿 **Stories & Analogies** | Pizza shops, road trips, Netflix shows, sports teams | Research supports narrative as a stronger retention aid than rote memorization |
 | 🎯 **Exam-Focused** | Every concept tagged with "What the exam tests" | You're not here to write a thesis — you're here to *pass* |
 | 🔁 **Spaced Repetition** | Quizzes → flashcards → mock exams → real exam | The science says this beats re-reading by 50%+ |
 
@@ -165,4 +165,4 @@ Good luck. Let's go.
 
 ## 🔒 License & Use
 
-© 2026 Humayun Zafar. All Rights Reserved. This material is provided for enrolled-student personal study use only — copying, reproduction, or redistribution of the rendered site content is prohibited without prior written consent. All trademarks (PSM, PMP, AWS, Azure, CompTIA A+/Network+/Linux+/Server+/Security+, AZ-800/801, MD-102, SC-300, CSCP, CPIM, CLTD, CPSM) belong to their respective owners (Scrum.org, PMI, Amazon Web Services, Microsoft, CompTIA, ASCM, Institute for Supply Management). Not affiliated with any certification body.
+© 2026 Humayun Zafar. All Rights Reserved. This material is provided for enrolled-student personal study use only — copying, reproduction, or redistribution of the rendered site content is prohibited without prior written consent. All trademarks (PSM, PMP, AWS, Azure, CompTIA A+/Network+/Linux+/Server+/Security+, AZ-800/801, MD-102, SC-300, CSCP, CPIM, CLTD, CPSM, HubSpot Inbound/Content Marketing, Google Ads/GA4 IQ/AI Pro, Meta Blueprint, DMI Professional Diploma, OMCP, CXL, CBP/CBSA/CCAS, Adobe Certified Professional, Blender, Unity, Unreal Engine, Wharton, Shopify, Salesforce) belong to their respective owners (Scrum.org, PMI, Amazon Web Services, Microsoft, CompTIA, ASCM, Institute for Supply Management, HubSpot, Google, Meta, Digital Marketing Institute, Online Marketing Certified Professional, CXL Institute, C4/BTA/UNic, Adobe/Certiport, Blender Foundation, Unity Technologies, Epic Games, Wharton School, Shopify, Salesforce). Not affiliated with any certification body.

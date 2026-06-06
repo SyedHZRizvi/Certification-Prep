@@ -31,10 +31,10 @@ PMI's own salary study (Earning Power, 11th edition) puts the median PMP salary 
 
 ### 🏛️ Why The Cert Hub's version is different
 
-- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — every module includes named-source citations (PMBOK 7, Kotter 1996, Flyvbjerg 2003/2023, Tuckman 1965, Maslow 1943, Kahneman) and Bloom's-taxonomy-tagged questions
+- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies** — 
 - **Story-driven lessons (not flashcard punishment)** — concepts taught through narrative, not bullet lists
 - **Original questions only** — quizzes and practice exams written from the published Exam Content Outline; no copyrighted dumps
-- **Real Harvard-case-method studies** — Boeing 737 MAX, Knight Capital, Channel Tunnel, HealthCare.gov, NASA Mars Climate Orbiter, Denver Airport baggage system, Hubble, Big Dig, Sydney Opera House, Spotify
+- **Real-world case studies in case-method format** — Boeing 737 MAX, Knight Capital, Channel Tunnel, HealthCare.gov, NASA Mars Climate Orbiter, Denver Airport baggage system, Hubble, Big Dig, Sydney Opera House, Spotify
 - **A real Capstone** — a $14M digital-transformation rollout at a regional bank acquiring a fintech, producing 6 portfolio-grade PM artifacts (Charter, Stakeholder Register, Risk Register, Comms Plan, EVM Dashboard, Lessons-Learned design)
 - **One author, one voice** — coherent across all 10 modules, three practice exams, and the Capstone
 - **Updated for the current PMP-2021 mindset** — agile and hybrid content built in, not bolted on
@@ -199,9 +199,9 @@ Buckle up. PMP is hard. But everyone who studies smart passes. So will you. 💪
 
 ## 📚 What's New in This Elevation Pass
 
-The PMP track has been augmented to the Cornell/Harvard/Stanford pedagogical bar. **All existing module content, quiz questions, and practice-exam questions are preserved unchanged** — these additions are layered *on top* of what you've been studying:
+The PMP track has been augmented to the graduate-level professional standard. **All existing module content, quiz questions, and practice-exam questions are preserved unchanged** — these additions are layered *on top* of what you've been studying:
 
-- 📊 **Real-world case studies** in every module — Boeing 737 MAX, Spotify, Knight Capital, Channel Tunnel, HealthCare.gov, NASA Mars Climate Orbiter, Big Dig, Hubble, Denver Airport baggage system, and Sydney Opera House — each in the Harvard-case-method format with situation/decision/outcome/lesson and Socratic discussion questions.
+- 📊 **Real-world case studies** in every module — Boeing 737 MAX, Spotify, Knight Capital, Channel Tunnel, HealthCare.gov, NASA Mars Climate Orbiter, Big Dig, Hubble, Denver Airport baggage system, and Sydney Opera House — each in case-method format (situation/decision/outcome/lesson) with Socratic discussion questions.
 - 💬 **Socratic discussion prompts** appended to each Reading, designed to force reasoning from principles rather than recall.
 - 📚 **Named-source citations** for every framework — Tuckman 1965, Maslow 1943, Kotter 1996, Flyvbjerg 2003/2023, the PMBOK editions, PMI Pulse of the Profession 2024, Standish CHAOS 2024, and more.
 - 🧠 **Bloom's-taxonomy tags** on every existing quiz question, plus 4–6 higher-Bloom bonus questions per module (Apply / Analyze / Evaluate / Create) to stretch your reasoning.

@@ -41,7 +41,7 @@ The crossover is real: the game animator who can write GSAP, or the front-end en
 
 ## 🏛️ Why The Cert Hub's Version Is Different
 
-- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — the 16ms frame budget explained from first principles, Spine's mesh deformation from the Esoteric Software architecture docs, GSAP's easing from the original Flash-era Penner equations
+- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies** — 
 - **Story-driven lessons** — every module opens with a case study from a real studio: Supergiant's *Hades* locomotion feel, Riot's *Valorant* agent animations, Motion Twin's *Dead Cells* Spine workflow, Stripe's web motion system
 - **Real-time is different from film** — this course never pretends game animation is a slower version of Maya rendering; every concept is grounded in the constraints of interactive playback, state machines, and performance budgets
 - **Tool-complete** — Unity + Unreal + Spine 2D + GSAP + CSS + Lottie + Rive; the full stack, not just one engine

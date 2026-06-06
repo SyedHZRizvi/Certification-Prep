@@ -33,7 +33,7 @@ ASCM data shows CLTD holders earn approximately **15–25% more** than non-certi
 
 ### 🏛️ Why The Cert Hub's version is different
 
-- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — network design taught from first principles (center-of-gravity, Weber 1909 location theory, Hau Lee 2004 on the Triple-A supply chain)
+- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies** — 
 - **Story-driven lessons (not flashcard punishment)** — concepts grounded in real distribution networks (Amazon's fulfillment topology, UPS ORION routing, Walmart's cross-docking) before introducing terminology
 - **Original questions only** — every quiz and practice exam written from the published ASCM Exam Content Manual; no copyrighted dumps
 - **Real-world case studies** — Amazon's two-day Prime promise, FedEx's hub-and-spoke origin story, Suez Canal blockage of 2021, the COVID port crisis, last-mile drone pilots
@@ -94,7 +94,7 @@ By the end of this track, you'll be able to:
 
 ## 🎓 Capstone & Deep Readings
 
-- **[Capstone Project](./Capstone-Project.md)** — End-to-end logistics transformation case. You play newly-hired Director of Global Logistics at a $720M building-materials distributor; deliver 7 artifacts in 8 weeks (network optimization, TMS RFP, carrier scorecard, reverse-logistics redesign, trade-compliance baseline, risk register, sustainability scorecard). Cornell / MIT Sloan / Stanford GSB-grade rubric (90+ = excellent).
+- **[Capstone Project](./Capstone-Project.md)** — End-to-end logistics transformation case. You play newly-hired Director of Global Logistics at a $720M building-materials distributor; deliver 7 artifacts in 8 weeks (network optimization, TMS RFP, carrier scorecard, reverse-logistics redesign, trade-compliance baseline, risk register, sustainability scorecard). graduate-level professional rubric (90+ = excellent).
 - **[Recommended Readings](./Recommended-Readings.md)** — Canonical textbooks (Christopher, Bowersox, Coyle, Frazelle, Tompkins), seminal HBR/Sloan papers (Forrester 1958, Lee 1997, Lee 2004 Triple-A), the GLEC Framework, *The Box* and *Ninety Percent of Everything*, industry resources (CSCMP, FreightWaves, Gartner, Loadstar), and free MIT/Stanford courses.
 
 ---

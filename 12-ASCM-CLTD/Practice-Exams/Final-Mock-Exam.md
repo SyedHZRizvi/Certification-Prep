@@ -1011,7 +1011,7 @@ Then take the [ASCM CLTD Practice Test](https://www.ascm.org/) bundled in the Le
 
 ## Detailed answer rationales
 
-> 150 questions, 150 rationales. For each: why the correct answer wins AND why each distractor fails. This is the Harvard case-method discipline applied to certification prep.
+> 150 questions, 150 rationales. For each: why the correct answer wins AND why each distractor fails. This is the question-by-question analysis discipline applied to certification prep.
 
 **Q1. A — Inventory carrying.** Square-root rule. Outbound transport (B) falls; order processing (C) flat; stockouts (D) improve.
 

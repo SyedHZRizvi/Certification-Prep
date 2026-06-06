@@ -32,7 +32,7 @@ AZ-900 is the *first rung* on the most coherent ladder in cloud: **AZ-900 → AZ
 
 ### 🏛️ Why The Cert Hub's version is different
 
-- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — concepts taught from CS-fundamentals upward, not bullet-list memorization
+- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies** — 
 - **Story-driven lessons (not flashcard punishment)** — every module opens with a scenario that makes the abstraction concrete
 - **Original questions only** — every quiz and practice exam written from Microsoft's published skills-measured outline; no copyrighted dumps
 - **Real-world case studies** — Walmart's hybrid cloud, Heineken's Azure-native data platform, BMW's manufacturing IoT
@@ -163,7 +163,7 @@ Days 9–10: Flashcards + Final Mock + REAL EXAM
 
 ## 🎯 Capstone & Recommended Reading
 
-This course is built to the Cornell / Harvard / Stanford pedagogical bar. Two cross-module resources extend the course beyond the multiple-choice exam:
+This course is built to a graduate-level professional standard. Two cross-module resources extend the course beyond the multiple-choice exam:
 
 - 📋 [**Capstone Project**](./Capstone-Project.md) — a 6-week scenario engagement for a 110-person law firm choosing between on-prem renewal and Azure + M365. Seven deliverables (architecture, TCO, compliance, identity, runbook, change plan, risk register) scored against a 100-point rubric. Integrates all 6 modules.
 - 📚 [**Recommended Readings**](./Recommended-Readings.md) — 20 curated resources (4 canonical books, 8 seminal papers, 5 industry resources, 3 free academic courses) with a "when to read what" sequence aligned to the modules.

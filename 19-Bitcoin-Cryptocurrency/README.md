@@ -34,7 +34,7 @@ The Bitcoin career ladder pairs with course 09 (Security+) for the security-engi
 
 ### 🏛️ Why The Cert Hub's version is different
 
-- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — cryptography taught from primary sources (Nakamoto 2008 whitepaper, Diffie-Hellman 1976, Schnorr 1991, Lamport 1981 on hash chains, Castro & Liskov 1999 on PBFT)
+- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies** — 
 - **Story-driven lessons (not flashcard punishment)** — every module opens with a story (Pizza Day 2010, Mt. Gox, the Bitcoin Cash fork, the Taproot activation, the BlackRock ETF approval)
 - **Original questions only** — every quiz and practice exam written from public exam outlines; no copyrighted dumps
 - **Real-world case studies** — Mt. Gox custody failure, Silk Road forensics, the Colonial Pipeline ransom recovery, MicroStrategy's treasury thesis, El Salvador's legal-tender adoption, the FTX collapse

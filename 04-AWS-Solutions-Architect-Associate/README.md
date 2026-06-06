@@ -33,7 +33,7 @@ Average compensation uplift after passing: **15–25%** in the 6–12 months fol
 
 ### 🏛️ Why The Cert Hub's version is different
 
-- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — Well-Architected Framework taught from first principles, not bullet recitation
+- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies** — 
 - **Story-driven lessons (not flashcard punishment)** — every module solves a real architecture problem before introducing services
 - **Original questions only** — no copyrighted dumps; every quiz and practice exam written from the AWS Exam Guide
 - **Real-world case studies** — Pinterest's growth architecture, Netflix's chaos engineering, Capital One's all-in migration, Airbnb's global multi-region design
@@ -180,7 +180,7 @@ Week 4: Flashcards + Final Mock + REAL EXAM
 
 ## 🏗️ Capstone Project
 
-🔗 **[Capstone Project — Larkin Health Analytics migration](./Capstone-Project.md)** — Once you've finished all 10 modules, the capstone is the Cornell/Harvard/Stanford-grade synthesis exercise: a 7-deliverable migration design for a Series-C healthcare SaaS (~$2.8M budget, 9-month deadline, HIPAA + GDPR + SOC 2). Rubric scored out of 100. This is the difference between "I passed SAA" and "I could lead this at a real company on Monday."
+🔗 **[Capstone Project — Larkin Health Analytics migration](./Capstone-Project.md)** — Once you've finished all 10 modules, the capstone is the graduate-level professional standard synthesis exercise: a 7-deliverable migration design for a Series-C healthcare SaaS (~$2.8M budget, 9-month deadline, HIPAA + GDPR + SOC 2). Rubric scored out of 100. This is the difference between "I passed SAA" and "I could lead this at a real company on Monday."
 
 ---
 

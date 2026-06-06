@@ -219,7 +219,7 @@ D. CloudFront + Shield + WAF
 
 ## 📚 Detailed answer rationales
 
-Treat these as a teaching pass — every question gets a why-right + why-each-wrong + exam-takeaway, in the spirit of Harvard Law's case method.
+Treat these as a teaching pass — in case-method style: every question gets a why-right + why-each-wrong + exam-takeaway.
 
 **Q1. Answer: D**
 

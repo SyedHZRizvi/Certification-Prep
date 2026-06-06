@@ -47,7 +47,7 @@ This track ladders directly into:
 
 ### 🏛️ Why The Cert Hub's version is different
 
-- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — Constitutional AI taught from the *original Bai et al. (2022)* paper, not from a marketing blog
+- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies** — 
 - **Anthropic-aligned by construction** — every prompting pattern matches Anthropic's published [prompt engineering documentation](https://docs.anthropic.com/claude/docs/prompt-engineering), every tool-use schema matches the Messages API, every safety pattern reflects the [Responsible Scaling Policy](https://www.anthropic.com/responsible-scaling-policy)
 - **Story-driven lessons (not API-reference recitation)** — Constitutional AI introduced through the *story of why Anthropic exists*; MCP introduced through the *Cursor/Claude Desktop integration*; agentic patterns introduced through real Replit Agent / Lindy postmortems
 - **Original questions only** — every quiz and practice exam written from scratch in the spirit of Anthropic's documented APIs and the published research; no copied dumps

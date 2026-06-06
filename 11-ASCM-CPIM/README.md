@@ -33,7 +33,7 @@ ASCM's own member salary data shows CPIM holders earning **a 15–22% premium** 
 
 ### 🏛️ Why The Cert Hub's version is different
 
-- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — every planning algorithm derived from first principles (Wagner-Whitin 1958, Wilson 1934 EOQ, Orlicky 1975 MRP, Goldratt 1984 TOC)
+- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies** — 
 - **Story-driven lessons (not flashcard punishment)** — concepts grounded in real factories (Toyota TPS, Boeing 787, Tesla Gigafactory) before introducing terminology
 - **Original questions only** — every quiz, calculation question, and practice exam written from the published ASCM Exam Content Manual; no copyrighted dumps
 - **Real-world case studies** — Toyota's heijunka and kanban, the 787 Dreamliner outsourcing lessons, Boeing's MRO planning, Caterpillar's lean rollout, COVID-era ventilator production
@@ -180,4 +180,4 @@ Two additional resources sit at the course root:
 | [**Capstone-Project.md**](./Capstone-Project.md) | A 6–8 week applied capstone in which you act as the newly hired Director of Production & Inventory Control at a $480M industrial-equipment manufacturer. Integrates every module of the course — S&OP design, MRP→DDMRP transition, capacity re-baseline, top-50 SKU kanban pilot, S&OE control tower, 12-month change-management roadmap. Self-graded against a 100-point rubric. |
 | [**Recommended-Readings.md**](./Recommended-Readings.md) | Curated reading list — canonical textbooks (Vollmann/Berry, Hill, Wallace, Goldratt's *The Goal*, Ohno's *Toyota Production System*), seminal HBR/Sloan papers (Lee-Padmanabhan-Whang on bullwhip, Skinner on manufacturing strategy, the HP postponement case), industry resources, and free academic courses (MIT MicroMasters SCM, Stanford OPS, Wharton OM). |
 
-The capstone is what separates "passed the exam" from "could walk into a Harvard Business School Operations case discussion and contribute." Strong students engage with the capstone for portfolio value even when the exam is the immediate goal.
+The capstone is what separates "passed the exam" from "could walk into a graduate-level case discussion and contribute." Strong students engage with the capstone for portfolio value even when the exam is the immediate goal.

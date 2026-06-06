@@ -76,7 +76,7 @@ Outside the walls: **Microsoft Advertising** (B2B via LinkedIn), **The Trade Des
 
 ---
 
-## 📜 Frameworks Cornell/Harvard Drill
+## 📜 Core Marketing Frameworks
 
 - **4Ps** (Kotler/McCarthy) — Product, Price, Place, Promotion
 - **4Cs** (Lauterborn) — Customer, Cost, Convenience, Communication

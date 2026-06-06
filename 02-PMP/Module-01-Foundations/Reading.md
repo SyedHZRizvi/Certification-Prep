@@ -329,9 +329,9 @@ You now know:
 
 ---
 
-## 🎓 Cornell/Harvard/Stanford Elevation Layer
+## 🎓 graduate-level professional Elevation Layer
 
-> The sections below are the elevated, university-grade additions to this module. They preserve everything above and add a real-world case study, Socratic discussion prompts, prerequisites, cross-course pointers, and named-source citations — the same bar used in Cornell eCornell, HBS exec-ed, and Stanford SCPD PM programs.
+> The sections below are the elevated additions to this module. They preserve everything above and add a real-world case study, Socratic discussion prompts, prerequisites, cross-course pointers, and named-source citations.
 
 ### Prerequisites for this module
 

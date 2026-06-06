@@ -32,7 +32,7 @@ This is course **4 of 5** in the ladder: **Foundations (14) → Practitioner (15
 
 ### 🏛️ Why The Cert Hub's version is different
 
-- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — agency economics from named sources (Hormozi's *$100M Offers*, Bogusky's *Win Without Pitching*, Warrillow's *Built to Sell*, Christensen on disruption, Christensen/Allworth/Dillon on jobs-to-be-done)
+- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies** — 
 - **Story-driven lessons (not flashcard punishment)** — every module includes the launch story of a real boutique AI marketing operator
 - **Original frameworks only** — every template, contract clause, pricing model, and one-page proposal is original
 - **A real Capstone** — 12-week scenario launching your own AI marketing agency with 7 deliverables (positioning memo, productized service spec, client-acquisition pipeline, contracts, tech-stack architecture, first contractor JD, 12-month P&L projection)

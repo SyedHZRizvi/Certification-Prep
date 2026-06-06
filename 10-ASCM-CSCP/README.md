@@ -33,7 +33,7 @@ ASCM publishes salary data showing CSCP holders earn an average **20–30% more*
 
 ### 🏛️ Why The Cert Hub's version is different
 
-- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — frameworks taught from named sources (Forrester 1961 on bullwhip, Lee/Padmanabhan/Whang 1997, Christopher 2016, Goldratt 1984 on TOC)
+- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies** — 
 - **Story-driven lessons (not flashcard punishment)** — every module solves a real supply-chain problem (Toyota's keiretsu, Zara's fast-fashion network, Apple's component-level mastery) before introducing terminology
 - **Original questions only** — every quiz and practice exam written from the published ASCM Exam Content Manual; no copyrighted dumps
 - **Real-world case studies** — Toyota Production System, Walmart's cross-docking revolution, Unilever's sustainability sourcing, Apple's supply-chain design, the COVID-era semiconductor crisis

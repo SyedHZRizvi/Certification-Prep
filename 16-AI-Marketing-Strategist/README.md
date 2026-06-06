@@ -41,7 +41,7 @@ This is course **3 of 5** in the ladder: **Foundations (14) → Practitioner (15
 
 ### 🏛️ Why The Cert Hub's version is different
 
-- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — measurement science taught from named sources (Hanssens/Parsons/Schultz 2001 on MMM, Fader & Hardie's BG/NBD 2005, Kohavi/Tang/Xu 2020 on online controlled experiments, Shapley 1953 on attribution)
+- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies** — 
 - **Story-driven lessons (not flashcard punishment)** — measurement architectures introduced through real CMO scenarios
 - **Original questions only** — every quiz and practice exam written from public exam outlines; no copyrighted dumps
 - **A real Capstone** — 6-month scenario as the new Director of Marketing Analytics & Strategy at a $400M B2B SaaS company, unifying GA4 + CRM + product data into a CDP and shipping MMM-informed budget allocation

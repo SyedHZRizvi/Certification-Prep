@@ -724,7 +724,7 @@ For EACH wrong answer:
 
 ## Detailed answer rationales
 
-> Use these to drill the *discrimination* logic — why the right answer beats each distractor. Format inspired by Harvard Law's case method.
+> Use these to drill the *discrimination* logic — why the right answer beats each distractor. Format: discriminate why the right answer beats each distractor.
 
 **Q1. C — Inventory carrying.** Square-root rule: SS scales √N with DCs. (Outbound transport actually falls.) **Distractors:** A (outbound) falls; B (order processing) is roughly flat; D (stockouts) improves.
 

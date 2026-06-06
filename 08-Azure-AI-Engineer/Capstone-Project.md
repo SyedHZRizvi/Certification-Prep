@@ -57,7 +57,7 @@ You have just been hired as the **Azure AI Engineer** at **Harbor Mutual Insuran
 | **Go/no-go review** | 10 | Honest red/yellow/green; phase-2 plan; cross-referenced to AI-102 blueprint sections | Some sections scored; partial blueprint mapping | Generic "we're ready" or "nothing's ready" |
 | **Written argument quality** | 5 | Defends every controversial choice with named-source citations | Some defense; few citations | Assertions without justification |
 
-**Pass mark:** 75/100. **"Excellent" — Cornell/Harvard MBA case-study quality:** 90+/100.
+**Pass mark:** 75/100. **"Excellent — graduate-level professional quality:** 90+/100.
 
 ---
 
@@ -100,7 +100,7 @@ You should produce, in `~/capstone-azure-ai-engineer/`:
 
 **Length expectations.** Architecture doc 6–10 pages. Each of the other docs 2–5 pages. The eval harness should run (or pseudo-run) on real Azure resources for at least 50 of the golden rows.
 
-**Self-grading.** Score yourself against the rubric. Strong capstones share with a peer group for a Harvard-style discussion: each peer reads one deliverable cold and asks one Socratic question per criterion.
+**Self-grading.** Score yourself against the rubric. Strong capstones share with a peer group for a peer-review discussion: each peer reads one deliverable cold and asks one Socratic question per criterion.
 
 ---
 
@@ -114,7 +114,7 @@ You should produce, in `~/capstone-azure-ai-engineer/`:
 
 ---
 
-## Why this Capstone passes the Cornell/Harvard bar
+## Why this Capstone passes the graduate-level standard
 
 - **Integrates ≥ 60% of the course modules** (Modules 1, 2, 5, 7, 8 are load-bearing; Modules 3, 4, 6 surface in extensions).
 - **Requires technical work AND written justification** — the rubric rewards the "argue your choice" pedagogy Harvard MBA cases use.

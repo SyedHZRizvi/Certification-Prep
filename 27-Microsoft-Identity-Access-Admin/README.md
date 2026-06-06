@@ -34,7 +34,7 @@ SC-300 pairs cleanly with **MD-102 (course 26)**, **AZ-104 (course 06)**, **AZ-8
 
 ### 🏛️ Why The Cert Hub's version is different
 
-- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — identity taught from first principles (Saltzer & Schroeder 1975 on least privilege, the Kerberos 1988 paper, the OAuth 2.0 RFC, OIDC, Microsoft's own Zero Trust architecture papers)
+- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies** — 
 - **Story-driven lessons (not flashcard punishment)** — every Entra feature introduced through a real attack-response scenario (a B2B guest with too much access, a Conditional Access wedge that locks out the admins, a PIM elevation gone wrong, a credential-phishing IR walkthrough)
 - **Original questions only** — every quiz and practice exam written from Microsoft's published SC-300 skills-measured outline; no copyrighted dumps
 - **Real-world case studies** — the SolarWinds 2020 SAML-token forgery technique (Golden SAML), the Maersk NotPetya AD recovery, an M&A identity-merge scenario, the 2023 Storm-0558 token-signing-key compromise

@@ -33,7 +33,7 @@ Sec+ is the foundation of the most diverse cybersecurity ladder in the industry:
 
 ### 🏛️ Why The Cert Hub's version is different
 
-- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — security taught from CS first principles (Saltzer & Schroeder 1975, Diffie-Hellman 1976, RSA 1978, Kerberos 1988), with named-source citations throughout
+- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies** — 
 - **Story-driven lessons (not flashcard punishment)** — attacks introduced through real breach narratives (Equifax, SolarWinds, Colonial Pipeline, MOVEit), not bullet definitions
 - **Original questions only** — every quiz, practice exam, and PBQ written in the spirit of the published exam objectives; no copyrighted dumps
 - **A real Capstone** — the CMCU Credit Union scenario, a 6-week integrative project where you stand up a security program from scratch after a peer-institution breach, with 7 deliverables including a NIST CSF 2.0 gap assessment and a board-level metrics dashboard

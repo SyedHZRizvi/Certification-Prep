@@ -330,7 +330,7 @@ For EACH wrong answer:
 
 ## Detailed Answer Rationales
 
-> Per the Cornell / Harvard / Stanford bar, every wrong option is explained. Use these to retire concepts you missed, not just to "see what's correct."
+> Every wrong option is explained to graduate-level professional standard. Use these to retire concepts you missed, not just to "see what's correct."
 
 **Q1. Answer: B.** *Why B is correct.* Microsoft Entra ID is the post-2023 brand of Azure Active Directory; SC-300 uses both interchangeably. *Why the other options are wrong.* **A** MIM is the legacy hybrid identity manager. **C** AD DS is on-prem. **D** Microsoft Account is the consumer identity (formerly Live ID). *Exam-takeaway.* Old name = Azure AD; new name = Microsoft Entra ID.
 

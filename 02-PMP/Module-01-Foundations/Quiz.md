@@ -290,7 +290,7 @@ These tags map each existing Q1–Q27 to a Bloom's-taxonomy level. Use them to g
 | Q26 | Understand | Identify PM authority inside a named org structure. |
 | Q27 | Analyze | Reason through tailoring criteria rather than picking a default. |
 
-**Bloom distribution for Q1–Q27:** Remember 6 (~22%) · Understand 14 (~52%) · Apply 5 (~19%) · Analyze 2 (~7%). The bonus questions below push Apply / Analyze / Evaluate / Create higher so the module as a whole meets the Cornell/Stanford distribution target.
+**Bloom distribution for Q1–Q27:** Remember 6 (~22%) · Understand 14 (~52%) · Apply 5 (~19%) · Analyze 2 (~7%). The bonus questions below push Apply / Analyze / Evaluate / Create higher so the module as a whole meets the Bloom's-taxonomy distribution recommended for professional-exam prep (Apply/Analyze/Evaluate/Create > 40%).
 
 ---
 

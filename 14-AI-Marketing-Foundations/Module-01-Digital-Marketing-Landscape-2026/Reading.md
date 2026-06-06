@@ -211,7 +211,7 @@ The combination of iOS 14.5 + cookie deprecation + AI-driven bidding (Performanc
 
 ---
 
-## 📜 The Frameworks Cornell/Harvard Programs Drill
+## 📜 Core Marketing Frameworks
 
 You should be able to name, draw, and apply each of these. They are the spine of every marketing exam.
 
@@ -314,7 +314,7 @@ You now know:
 - 💸 The eight load-bearing marketing-math acronyms (CAC, LTV, ROAS, ROI, AOV, CPA, CPC, CPM)
 - 🏰 The four walled gardens (Google, Meta, Amazon, TikTok) and where the open web survives
 - 🌊 The five seismic shifts (AI Overviews, cookie deprecation, walled-garden consolidation, GenAI content economics, probabilistic attribution)
-- 📜 The classic frameworks Cornell/Harvard programs teach (4Ps, 4Cs, JTBD, OKR/KPI, SOSTAC)
+- 📜 The classic frameworks taught in graduate marketing programs (4Ps, 4Cs, JTBD, OKR/KPI, SOSTAC)
 - 📊 At least one canonical 2023+ GenAI campaign (Coca-Cola "Create Real Magic")
 
 **Next steps:**

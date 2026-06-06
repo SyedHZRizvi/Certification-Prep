@@ -177,7 +177,7 @@ Each entry includes a 1–2 sentence note on why it's worth your time and *when*
 
 ### 32. *Stanford SCPD Engineering Management*
 **Institution:** Stanford Center for Professional Development.
-- *Why:* Stanford's engineering management resources include free lecture videos on project portfolio management, organizational change, and systems-thinking applied to delivery. Useful for the "Cornell/Harvard/Stanford" level of project thinking beyond PMP.
+- *Why:* Stanford's engineering management resources include free lecture videos on project portfolio management, organizational change, and systems-thinking applied to delivery. Useful for the "graduate-level professional" level of project thinking beyond PMP.
 - *When:* After the exam.
 
 ### 33. *Google Project Management Certificate* (Coursera)
@@ -187,7 +187,7 @@ Each entry includes a 1–2 sentence note on why it's worth your time and *when*
 
 ### 34. *Harvard Business School Online: Strategy Execution* (HBS Online)
 **Platform:** HBS Online (paid: ~$1,750 for the full 8-week course).
-- *Why:* Not free, but worth listing because it's the single best executive-level treatment of how to actually *execute* on a strategic project — Cornell/Harvard's flagship cross between general management and project leadership.
+- *Why:* Not free, but worth listing because it's the single best executive-level treatment of how to actually *execute* on a strategic project — the single best executive-level treatment of general management and project leadership.
 - *When:* For senior PMs in the 1–3 years after passing the PMP.
 
 ### 35. *PMI Educational Foundation / Earned Value Management Practice Standard (free PDF for PMI members)*

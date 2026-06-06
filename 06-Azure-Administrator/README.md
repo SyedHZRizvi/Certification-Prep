@@ -33,10 +33,10 @@ Average compensation uplift after passing: **15–25%** in the 6–12 months fol
 
 ### 🏛️ Why The Cert Hub's version is different
 
-- **Engineered to the Cornell · Harvard · Princeton · Stanford pedagogical standard** — networking, storage, identity, and governance taught from CS first principles (CAP, Saltzer & Schroeder, Brewer)
+- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies** — 
 - **Story-driven lessons (not flashcard punishment)** — concepts grounded in real customer scenarios before any service is named
 - **Original questions only** — every quiz and practice exam written from Microsoft's published skills-measured outline; no copyrighted dumps
-- **Real Harvard-case-method capstone** — a 14-week scenario standing up a HIPAA + HITRUST production Azure landing zone for a 4,200-person regional health system on a $1.6M budget
+- **Real-world capstone scenario** — a 14-week scenario standing up a HIPAA + HITRUST production Azure landing zone for a 4,200-person regional health system on a $1.6M budget
 - **One author, one voice** — coherent vocabulary across all 10 modules, three practice exams, and the capstone
 - **Updated for the 2026 AZ-104 blueprint** — including Microsoft Entra terminology, current VPN Gateway/ExpressRoute pricing tiers, and the latest Azure Monitor + Policy posture
 
@@ -96,9 +96,9 @@ By the end of this track, you'll be able to:
 
 ## 🎓 Capstone & Recommended Readings
 
-Two new course-root resources extend this AZ-104 program beyond exam prep into Cornell/Harvard/Stanford-grade case-method learning:
+Two new course-root resources extend this AZ-104 program beyond exam prep into graduate-level professional standard case-method learning:
 
-- **[Capstone Project](./Capstone-Project.md)** — a 14-week, 7-deliverable scenario where you stand up a HIPAA + HITRUST production Azure landing zone for a 4,200-person regional health system on a $1.6M budget. Integrates every module via a 100-point rubric. Built for the elevation spec's "Cornell/Harvard/Stanford" bar.
+- **[Capstone Project](./Capstone-Project.md)** — a 14-week, 7-deliverable scenario where you stand up a HIPAA + HITRUST production Azure landing zone for a 4,200-person regional health system on a $1.6M budget. Integrates every module via a 100-point rubric. Built for the elevation spec's "graduate-level professional" bar.
 - **[Recommended Readings](./Recommended-Readings.md)** — the canonical textbooks (Exam Ref AZ-104 / CAF / Nadella's *Hit Refresh*), seminal papers (Saltzer & Schroeder 1975 on least privilege; Brewer 2000 on CAP), industry channels (John Savill, Adam Marczak, Microsoft Mechanics, Tim Warner), and free academic courses (MIT 6.824, Stanford CS-144) that reinforce the underlying CS.
 
 ---
