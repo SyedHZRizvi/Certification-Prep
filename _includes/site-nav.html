@@ -1,3 +1,21 @@
+  <!-- Skip-to-main (AODA / ADA WCAG 2.1 SC 2.4.1) -->
+  <a href="#main-content"
+     style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;"
+     onfocus="this.style.cssText='position:fixed;top:0.75rem;left:0.75rem;z-index:9999;padding:0.5rem 1rem;background:#fff;color:#4338ca;font-weight:700;border-radius:0.5rem;box-shadow:0 4px 12px rgba(0,0,0,0.25);outline:2px solid #4338ca;width:auto;height:auto;overflow:visible;'"
+     onblur="this.style.cssText='position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;'"
+  >Skip to main content</a>
+  <script>
+  (function(){
+    document.addEventListener('DOMContentLoaded',function(){
+      var nav=document.querySelector('nav.sticky');
+      if(!nav) return;
+      var el=nav.nextElementSibling;
+      while(el&&(el.tagName==='SCRIPT'||el.tagName==='STYLE'||el.tagName==='LINK'))el=el.nextElementSibling;
+      if(el&&!el.id)el.id='main-content';
+    });
+  })();
+  </script>
+
   <!-- ============== NAV (sleek dark bar — admin-tool inspired) ============== -->
   <nav class="sticky top-0 z-50 border-b" style="background:#1e1b4b; border-bottom:1px solid rgba(129,140,248,0.2);">
     <div class="max-w-[1700px] mx-auto px-4 sm:px-6 lg:px-8 h-14 flex items-center justify-between">

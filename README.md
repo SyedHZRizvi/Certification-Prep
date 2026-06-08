@@ -83,7 +83,7 @@ Each track is a **guided journey** built on three pillars:
 | 26 | [`19-Bitcoin-Cryptocurrency/`](./19-Bitcoin-Cryptocurrency/README.md) | Bitcoin & Cryptocurrency (CBP, CBSA, CCAS, UNIC MSc) | 10 | 80 Q / 90 min |
 | 27 | [`20-E-Commerce/`](./20-E-Commerce/README.md) | E-Commerce (Google D-M, Adobe Commerce, Shopify) | 10 | 80 Q / 90 min |
 
-**Totals:** 32 certifications · 286 modules · 96 full-length mock exams · 19,000+ practice questions · ~1,050 hours of focused content.
+**Totals:** 39 courses · 354 modules · 117 full-length mock exams · thousands of practice questions · ~1,250+ hours of focused content.
 
 ---
 
